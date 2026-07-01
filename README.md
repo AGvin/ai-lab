@@ -4,7 +4,7 @@ Practical AI lab for models, tools, local inference, benchmarks, hardware notes,
 
 ## Sections
 
-- [`doc/`](./doc/) — main documentation.
+- [`docs/`](./docs/) — main documentation.
 
 ## License
 
