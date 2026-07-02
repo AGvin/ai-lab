@@ -1,0 +1,43 @@
+# Normalize text files by default.
+* text=auto
+
+# Documentation and text
+*.md text eol=lf diff=markdown
+*.txt text eol=lf
+README* text eol=lf
+LICENSE text eol=lf
+
+# Source and config
+*.js text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sh text eol=lf
+*.py text eol=lf diff=python
+.editorconfig text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# Lock files
+package-lock.json text eol=lf -diff
+pnpm-lock.yaml text eol=lf -diff
+yarn.lock text eol=lf -diff
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.7z binary
+*.gz binary
+*.tar binary
+*.mp3 binary
+*.mp4 binary
+*.mov binary
+*.woff binary
+*.woff2 binary
