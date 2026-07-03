@@ -2,9 +2,9 @@
 
 Practical AI lab for models, tools, local inference, benchmarks, hardware notes, and automation workflows.
 
-## Sections
+## Documentation
 
-- [`docs/`](./docs/) — main documentation.
+- [`docs/overview/`](./docs/overview/) — documentation overview and planned documentation nodes.
 
 ## License
 
