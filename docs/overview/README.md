@@ -31,8 +31,59 @@ Do not create `docs/README.md`.
 - [`concepts/`](../notes/sub/concepts/) — AI concept explanations.
 - [`benchmarks/`](../notes/sub/benchmarks/) — benchmark and leaderboard references.
 
+## Assets
+
+Use `assets/` inside a documentation node for supporting files used by that node.
+
+Prefer typed subdirectories:
+
+```text
+assets/
+  images/
+  screenshots/
+  diagrams/
+  samples/
+  exports/
+  files/
+```
+
+Folder roles:
+
+- `images/` — general images used by documentation.
+- `screenshots/` — UI screenshots.
+- `diagrams/` — diagrams, charts, schemas, and visual explanations.
+- `samples/` — small sample inputs, configs, prompts, datasets, or examples.
+- `exports/` — exported artifacts produced by tools or workflows.
+- `files/` — other supporting files that do not fit the typed folders.
+
+Example:
+
+```text
+docs/software/sub/code-editors/sub/vs-code/
+  README.md
+  assets/
+    images/
+      interface.png
+    screenshots/
+      extension-settings.png
+    files/
+      uncommon-reference-file.ext
+```
+
+Guidelines:
+
+- Store assets next to the documentation node that uses them.
+- Use typed asset folders instead of placing files directly in `assets/`.
+- Use `files/` for rare or miscellaneous file types instead of creating one-off folders.
+- Create only folders that contain real files.
+- Use shared parent-level assets only when the same file is reused by multiple child pages.
+
 ## Expansion Rules
 
 Create new documentation nodes only when real content exists.
+
+Create `assets/` and typed asset subdirectories only when a documentation node has real supporting files.
+
+Use `assets/files/` for uncommon supporting file types that do not justify a dedicated typed folder.
 
 Use one canonical page per product, model, platform, assistant, agent, editor, extension, or tool. Add child nodes only when a specific usage scenario has enough content to justify a separate page.
