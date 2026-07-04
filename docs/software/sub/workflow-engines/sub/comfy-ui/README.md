@@ -5,18 +5,14 @@ ComfyUI is a node-based workflow engine and UI for AI image generation workflows
 ## Metadata
 
 ```text
-Cost model: Unknown
-Source model: Unknown
-License: Unknown
+Resource type: workflow engine
+Primary use case: node-based AI image generation workflows
+Access model: local or self-hosted software
 Operational requirement: local workstation or self-hosted server
-Verified: 2026-07-04
+Integration modes: web UI, workflow files, custom nodes
+Hardware acceleration: CPU; NVIDIA CUDA or other acceleration depends on installation
 Source: https://comfy.org/download
-Origin: Unknown
-Maintainer: Unknown
-Organization: Comfy
-Country: Unknown
-Jurisdiction: Unknown
-Risk assessment: Verify installation source, extension provenance, custom node trust, and model licensing before production use.
+Risk notes: Verify installation source, extension provenance, custom node trust, and model licensing before production use.
 ```
 
 ## Purpose
