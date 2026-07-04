@@ -5,6 +5,7 @@ Agent-like AI systems where agent behavior is the main documented role.
 ## Child nodes
 
 - [`hermes-agent/`](./sub/hermes-agent/) — AI agent entry requiring source confirmation.
+- [`openclaw/`](./sub/openclaw/) — AI agent entry with Pi integration notes requiring source confirmation.
 
 ## Scope
 
