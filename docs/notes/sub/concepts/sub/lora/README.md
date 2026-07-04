@@ -38,7 +38,3 @@ Compatibility must be verified for each base model, format, runtime, and workflo
 - Domain adaptation.
 - Task-specific tuning.
 - Personal or project-specific adapters.
-
-## References
-
-- Source: Unknown
