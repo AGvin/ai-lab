@@ -5,18 +5,12 @@ Continue is an AI coding assistant extension for editor workflows.
 ## Metadata
 
 ```text
-Cost model: Unknown
-Source model: Unknown
-License: Unknown
+Resource type: AI coding assistant
+Access model: editor extension with local or hosted model backend
 Operational requirement: editor extension and model backend
-Verified: 2026-07-04
+Integration modes: editor extension, local model backend, hosted model backend
 Source: https://www.continue.dev/
-Origin: Unknown
-Maintainer: Unknown
-Organization: Continue
-Country: Unknown
-Jurisdiction: Unknown
-Risk assessment: Verify extension source, model backend, code access scope, and telemetry/data handling before using with sensitive repositories.
+Risk notes: Verify extension source, model backend, code access scope, and telemetry or data handling before using with non-public code.
 ```
 
 ## Purpose
