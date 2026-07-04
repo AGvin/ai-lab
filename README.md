@@ -5,6 +5,8 @@ Practical AI lab for models, tools, local inference, benchmarks, hardware notes,
 ## Documentation
 
 - [`docs/overview/`](./docs/overview/) — documentation overview and planned documentation nodes.
+- [`docs/software/`](./docs/software/) — AI-related software, inference tools, workflow engines, code editors, agents, assistants, automation tools, platforms, and models.
+- [`docs/notes/`](./docs/notes/) — concepts, benchmarks, and practical AI notes.
 
 ## License
 
