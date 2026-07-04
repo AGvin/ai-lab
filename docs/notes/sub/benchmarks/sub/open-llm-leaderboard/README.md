@@ -5,18 +5,11 @@ Open LLM Leaderboard is a leaderboard view available through LLM Stats.
 ## Metadata
 
 ```text
-Cost model: Unknown
-Source model: Unknown
-License: Unknown
+Resource type: leaderboard
+Scope: open LLM comparison
 Operational requirement: hosted service
-Verified: 2026-07-04
 Source: https://llm-stats.com/leaderboards/open-llm-leaderboard
-Origin: Unknown
-Maintainer: Unknown
-Organization: LLM Stats
-Country: Unknown
-Jurisdiction: Unknown
-Risk assessment: Verify methodology, model inclusion criteria, update cadence, and benchmark limitations before using rankings for decisions.
+Risk notes: Review methodology, model inclusion criteria, update cadence, and benchmark limitations before using rankings for decisions.
 ```
 
 ## Purpose
