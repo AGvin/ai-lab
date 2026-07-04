@@ -4,7 +4,7 @@ Conversational AI assistants and assistant products.
 
 ## Child nodes
 
-- [`pi/`](./sub/pi/) — conversational AI assistant.
+No assistant-specific child nodes are documented yet.
 
 ## Scope
 
