@@ -5,18 +5,12 @@ Playwright is a browser automation and end-to-end web testing framework.
 ## Metadata
 
 ```text
-Cost model: Unknown
-Source model: Unknown
-License: Unknown
+Resource type: browser automation tool
+Primary use case: automated website testing and browser automation
 Operational requirement: development environment and browser runtime
-Verified: 2026-07-04
+Integration modes: CLI, test runner, browser automation library, CI workflow
 Source: https://playwright.dev/
-Origin: Unknown
-Maintainer: Unknown
-Organization: Microsoft / Playwright project
-Country: Unknown
-Jurisdiction: Unknown
-Risk assessment: Verify test environment isolation, browser permissions, secrets handling, and CI exposure before using in sensitive workflows.
+Risk notes: Verify test environment isolation, browser permissions, secrets handling, and CI exposure before using in non-public workflows.
 ```
 
 ## Purpose
