@@ -5,18 +5,11 @@ LiveBench is an AI model benchmark resource.
 ## Metadata
 
 ```text
-Cost model: Unknown
-Source model: Unknown
-License: Unknown
+Resource type: benchmark
+Scope: AI model performance comparison
 Operational requirement: hosted service
-Verified: 2026-07-04
 Source: https://livebench.ai/
-Origin: Unknown
-Maintainer: Unknown
-Organization: Unknown
-Country: Unknown
-Jurisdiction: Unknown
-Risk assessment: Verify methodology, update cadence, model coverage, data contamination controls, and benchmark limitations before using rankings for decisions.
+Risk notes: Review methodology, update cadence, model coverage, contamination controls, and benchmark limitations before using rankings for decisions.
 ```
 
 ## Purpose
