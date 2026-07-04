@@ -5,18 +5,11 @@ Artificial Analysis is a provider and model analysis leaderboard resource.
 ## Metadata
 
 ```text
-Cost model: Unknown
-Source model: Unknown
-License: Unknown
+Resource type: leaderboard
+Scope: provider and model analysis
 Operational requirement: hosted service
-Verified: 2026-07-04
 Source: https://artificialanalysis.ai/leaderboards/providers?is_open_weights=open_source&reasoning=reasoning
-Origin: Unknown
-Maintainer: Unknown
-Organization: Artificial Analysis
-Country: Unknown
-Jurisdiction: Unknown
-Risk assessment: Verify methodology, provider coverage, pricing assumptions, benchmark coverage, and leaderboard limitations before using results for decisions.
+Risk notes: Review methodology, provider coverage, pricing assumptions, benchmark coverage, and leaderboard limitations before using results for decisions.
 ```
 
 ## Purpose
