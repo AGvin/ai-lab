@@ -5,18 +5,12 @@ Hugging Face is a platform for AI models, datasets, Spaces, and related tooling.
 ## Metadata
 
 ```text
-Cost model: Unknown
-Source model: mixed
-License: Unknown
-Operational requirement: hosted service and optional local usage of hosted assets
-Verified: 2026-07-04
+Resource type: model platform
+Access model: hosted platform and local usage of downloaded assets
+Hosted assets: models, datasets, Spaces, and related tooling
+Provider: Hugging Face
 Source: https://huggingface.co/
-Origin: Unknown
-Maintainer: Hugging Face
-Organization: Hugging Face
-Country: Unknown
-Jurisdiction: Unknown
-Risk assessment: Verify model licenses, dataset licenses, provenance, unsafe model risks, and hosted service data exposure before adoption.
+Risk notes: Verify model licenses, dataset licenses, provenance, unsafe model risks, and hosted service exposure before adoption.
 ```
 
 ## Purpose
