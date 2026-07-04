@@ -5,18 +5,11 @@ BenchLM is an AI benchmark resource.
 ## Metadata
 
 ```text
-Cost model: Unknown
-Source model: Unknown
-License: Unknown
+Resource type: benchmark
+Scope: AI model evaluation
 Operational requirement: hosted service
-Verified: 2026-07-04
 Source: https://benchlm.ai/
-Origin: Unknown
-Maintainer: Unknown
-Organization: Unknown
-Country: Unknown
-Jurisdiction: Unknown
-Risk assessment: Verify methodology, model coverage, update cadence, and benchmark limitations before using results for decisions.
+Risk notes: Review methodology, model coverage, update cadence, and benchmark limitations before using results for decisions.
 ```
 
 ## Purpose
