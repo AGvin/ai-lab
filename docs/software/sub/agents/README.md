@@ -1,13 +1,13 @@
 # Agents
 
-AI coding agents, development assistants, and agentic coding tools.
+Agent-like AI systems where agent behavior is the main documented role.
 
 ## Child nodes
 
-- [`cursor/`](./sub/cursor/) — AI coding editor and development assistant.
-- [`continue/`](./sub/continue/) — AI coding assistant extension for editor workflows.
-- [`hermes-agent/`](./sub/hermes-agent/) — AI agent entry requiring source verification.
+- [`hermes-agent/`](./sub/hermes-agent/) — AI agent entry requiring source confirmation.
 
 ## Scope
 
-Use this node for AI tools whose main documented role is agentic assistance, coding assistance, editor assistance, or development workflow automation.
+Use this node for AI tools whose main documented role is autonomous or semi-autonomous agent behavior.
+
+Do not place code editors or editor-specific extensions here only because they have AI features. Use `code-editors/` for those resources.
