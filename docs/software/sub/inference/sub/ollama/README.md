@@ -5,18 +5,14 @@ Ollama is a model runtime for local and self-hosted model execution.
 ## Metadata
 
 ```text
-Cost model: Unknown
-Source model: Unknown
-License: Unknown
+Resource type: inference tool
+Primary use case: local and self-hosted model execution
+Access model: local software
 Operational requirement: local workstation or self-hosted server
-Verified: 2026-07-04
+Integration modes: CLI, HTTP API, local service
+Hardware acceleration: CPU; GPU support depends on platform and model
 Source: https://ollama.com/
-Origin: Unknown
-Maintainer: Unknown
-Organization: Ollama
-Country: Unknown
-Jurisdiction: Unknown
-Risk assessment: Verify license, model sources, and deployment exposure before production use.
+Risk notes: Verify license, model sources, and deployment exposure before production use.
 ```
 
 ## Purpose
