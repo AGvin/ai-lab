@@ -42,6 +42,7 @@ assets/
   images/
   screenshots/
   diagrams/
+  pdf/
   samples/
   exports/
   files/
@@ -52,6 +53,7 @@ Folder roles:
 - `images/` — general images used by documentation.
 - `screenshots/` — UI screenshots.
 - `diagrams/` — diagrams, charts, schemas, and visual explanations.
+- `pdf/` — PDF files.
 - `samples/` — small sample inputs, configs, prompts, datasets, or examples.
 - `exports/` — exported artifacts produced by tools or workflows.
 - `files/` — other supporting files that do not fit the typed folders.
@@ -66,6 +68,8 @@ docs/software/sub/code-editors/sub/vs-code/
       interface.png
     screenshots/
       extension-settings.png
+    pdf/
+      reference.pdf
     files/
       uncommon-reference-file.ext
 ```
