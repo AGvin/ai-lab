@@ -5,18 +5,12 @@ Cursor is an AI coding editor and development assistant.
 ## Metadata
 
 ```text
-Cost model: Unknown
-Source model: Unknown
-License: Unknown
-Operational requirement: desktop application and/or hosted service
-Verified: 2026-07-04
+Resource type: AI coding assistant
+Access model: desktop application and/or hosted service
+Operational requirement: local workstation and account/service access
+Integration modes: desktop UI, editor workflow, model/provider integrations
 Source: https://cursor.com/
-Origin: Unknown
-Maintainer: Unknown
-Organization: Cursor
-Country: Unknown
-Jurisdiction: Unknown
-Risk assessment: Verify pricing, source availability, data handling, model providers, and repository access behavior before use with sensitive code.
+Risk notes: Verify pricing, source availability, data handling, model providers, and repository access behavior before use with sensitive code.
 ```
 
 ## Purpose
@@ -34,7 +28,7 @@ Cursor is relevant to AI Lab as an AI-native coding environment and agentic deve
 
 ## Hardware acceleration
 
-- Unknown
+- Not usually relevant to the local environment
 
 ## Integration modes
 
