@@ -7,8 +7,6 @@ LiveBench is an AI model benchmark resource.
 ```text
 Resource type: benchmark
 Scope: AI model performance comparison
-Methodology: Verify current methodology from the official benchmark source before using results
-Update cadence: Verify from the official benchmark source
 Operational requirement: hosted service
 Source: https://livebench.ai/
 Risk notes: Review methodology, update cadence, model coverage, contamination controls, and benchmark limitations before using rankings for decisions.
