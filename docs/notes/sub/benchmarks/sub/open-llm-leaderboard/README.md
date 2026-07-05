@@ -7,6 +7,8 @@ Open LLM Leaderboard is a leaderboard view available through LLM Stats.
 ```text
 Resource type: leaderboard
 Scope: open LLM comparison
+Methodology: Verify current methodology from the official leaderboard source before using results
+Update cadence: Verify from the official leaderboard source
 Operational requirement: hosted service
 Source: https://llm-stats.com/leaderboards/open-llm-leaderboard
 Risk notes: Review methodology, model inclusion criteria, update cadence, and benchmark limitations before using rankings for decisions.
