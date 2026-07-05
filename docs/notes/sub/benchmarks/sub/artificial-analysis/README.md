@@ -7,6 +7,8 @@ Artificial Analysis is a provider and model analysis leaderboard resource.
 ```text
 Resource type: leaderboard
 Scope: provider and model analysis
+Methodology: Verify current methodology from the official leaderboard source before using results
+Update cadence: Verify from the official leaderboard source
 Operational requirement: hosted service
 Source: https://artificialanalysis.ai/leaderboards/providers?is_open_weights=open_source&reasoning=reasoning
 Risk notes: Review methodology, provider coverage, pricing assumptions, benchmark coverage, and leaderboard limitations before using results for decisions.
