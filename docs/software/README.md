@@ -1,6 +1,6 @@
 # Software
 
-Software documentation for AI-related model platforms, inference tools, workflow engines, code editors, agents, assistants, automation tools, and models.
+Software documentation for AI-related model platforms, inference tools, workflow engines, code editors, agents, agent orchestration systems, assistants, automation tools, and models.
 
 ## Child nodes
 
@@ -8,6 +8,7 @@ Software documentation for AI-related model platforms, inference tools, workflow
 - [`workflow-engines/`](./sub/workflow-engines/) — tools that build or execute AI workflows.
 - [`code-editors/`](./sub/code-editors/) — code editors and editor extension ecosystems used for AI-assisted development.
 - [`agents/`](./sub/agents/) — agent-like AI systems where agent behavior is the main documented role.
+- [`agent-orchestration/`](./sub/agent-orchestration/) — systems, frameworks, runtimes, and control planes for coordinating or running AI agents.
 - [`assistants/`](./sub/assistants/) — conversational AI assistants.
 - [`automation/`](./sub/automation/) — automation tools that can support AI-adjacent workflows.
 - [`model-platforms/`](./sub/model-platforms/) — platforms for model discovery, hosting, datasets, or related tooling.
@@ -15,6 +16,6 @@ Software documentation for AI-related model platforms, inference tools, workflow
 
 ## Documentation model
 
-Each product, model, platform, assistant, agent, editor, extension, or tool should have one canonical documentation node.
+Each product, model, platform, assistant, agent, orchestration system, editor, extension, or tool should have one canonical documentation node.
 
 Use child nodes under that canonical node only when a specific usage scenario has enough real content to justify a separate page.

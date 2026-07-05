@@ -1,0 +1,23 @@
+# Agent Orchestration
+
+Systems, frameworks, runtimes, and control planes for creating, coordinating, supervising, or running AI agents and multi-agent workflows.
+
+## Scope
+
+Use this node for tools where the main documented role is agent orchestration rather than a single standalone agent.
+
+Examples include:
+
+- developer control centers for coding agents;
+- multi-agent frameworks;
+- stateful agent workflow runtimes;
+- platforms that coordinate agents, tools, backends, tasks, or approval gates.
+
+Use `agents/` instead when the canonical object is a standalone agent or agent-like system.
+
+## Tools
+
+- [`autogen/`](./sub/autogen/) — multi-agent conversation framework for conversable agents, tools, code execution, and human-in-the-loop workflows.
+- [`crewai/`](./sub/crewai/) — multi-agent orchestration framework and platform for collaborative AI agents and controlled workflows.
+- [`langgraph/`](./sub/langgraph/) — low-level orchestration framework and runtime for long-running, stateful agents.
+- [`openhands/`](./sub/openhands/) — self-hosted developer control center for coding agents and automations.

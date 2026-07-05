@@ -21,6 +21,7 @@ Do not create `docs/README.md`.
 - [`workflow-engines/`](../software/sub/workflow-engines/) — AI workflow engines and UIs.
 - [`code-editors/`](../software/sub/code-editors/) — code editors and editor extension ecosystems.
 - [`agents/`](../software/sub/agents/) — agent-like AI systems.
+- [`agent-orchestration/`](../software/sub/agent-orchestration/) — systems, frameworks, runtimes, and control planes for coordinating or running AI agents.
 - [`assistants/`](../software/sub/assistants/) — conversational AI assistants.
 - [`automation/`](../software/sub/automation/) — automation tools relevant to AI-adjacent workflows.
 - [`model-platforms/`](../software/sub/model-platforms/) — model, dataset, and AI tooling platforms.
