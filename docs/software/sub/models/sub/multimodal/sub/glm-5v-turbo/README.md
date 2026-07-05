@@ -8,6 +8,11 @@ GLM-5V-Turbo is a multimodal foundation model for agentic workflows.
 Resource type: multimodal model
 Model type: multimodal foundation model
 Provider: Z.ai / Zhipu AI
+Access model: Unknown
+License: Unknown
+Source model: Unknown
+Deployment modes: Unknown
+Hardware requirement: Unknown
 Source: https://arxiv.org/abs/2604.26752
 Origin: China
 Organization: Z.ai / Zhipu AI
