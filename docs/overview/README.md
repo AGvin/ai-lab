@@ -31,6 +31,10 @@ Do not create `docs/README.md`.
 - [`concepts/`](../notes/sub/concepts/) — AI concept explanations.
 - [`benchmarks/`](../notes/sub/benchmarks/) — benchmark and leaderboard references.
 
+## Operational Notes
+
+- [`github-safety/`](./sub/github-safety/) — GitHub trust-boundary rules for AI-assisted repository work.
+
 ## Assets
 
 Use `assets/` inside a documentation node for supporting files used by that node.
