@@ -8,11 +8,13 @@ Ollama is a model runtime for local and self-hosted model execution.
 Resource type: inference tool
 Primary use case: local and self-hosted model execution
 Access model: local software
+License: MIT
+Source model: Open source
 Operational requirement: local workstation or self-hosted server
 Integration modes: CLI, HTTP API, local service
 Hardware acceleration: CPU; GPU support depends on platform and model
 Source: https://ollama.com/
-Risk notes: Verify license, model sources, and deployment exposure before production use.
+Risk notes: Verify model sources, model licenses, local service exposure, network binding, and deployment permissions before production use.
 ```
 
 ## Purpose
@@ -42,3 +44,4 @@ Ollama is relevant to AI Lab as a local and self-hosted inference option for exp
 ## References
 
 - https://ollama.com/
+- https://github.com/ollama/ollama
