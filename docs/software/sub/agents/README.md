@@ -4,6 +4,7 @@ Agent-like AI systems where agent behavior is the main documented role.
 
 ## Child nodes
 
+- [`aider/`](./sub/aider/) — terminal-based AI pair programming tool and coding agent for local Git repositories.
 - [`hermes-agent/`](./sub/hermes-agent/) — self-improving AI agent system by Nous Research.
 - [`openclaw/`](./sub/openclaw/) — personal AI assistant that runs on user-controlled devices.
 - [`pi/`](./sub/pi/) — terminal coding-agent harness documented at pi.dev.
