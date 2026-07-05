@@ -8,8 +8,11 @@ Continue is an AI coding assistant extension for editor workflows.
 Resource type: VS Code extension
 Primary use case: AI-assisted coding in editor workflows
 Access model: editor extension with local or hosted model backend
+License: Apache-2.0
+Source model: Open source
 Operational requirement: Visual Studio Code and model backend
 Integration modes: editor extension, local model backend, hosted model backend
+Hardware acceleration: Depends on selected model backend
 Source: https://www.continue.dev/
 Risk notes: Verify extension source, model backend, code access scope, and telemetry or data handling before using with non-public code.
 ```
@@ -51,3 +54,4 @@ Continue is relevant to AI Lab as an editor extension that can connect VS Code t
 
 - https://www.continue.dev/
 - https://youtu.be/UngVdAsQEiU
+- https://github.com/continuedev/continue
