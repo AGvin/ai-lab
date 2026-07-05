@@ -17,6 +17,7 @@ Use `agents/` instead when the canonical object is a standalone agent or agent-l
 
 ## Tools
 
+- [`autogen/`](./sub/autogen/) — multi-agent conversation framework for conversable agents, tools, code execution, and human-in-the-loop workflows.
 - [`crewai/`](./sub/crewai/) — multi-agent orchestration framework and platform for collaborative AI agents and controlled workflows.
 - [`langgraph/`](./sub/langgraph/) — low-level orchestration framework and runtime for long-running, stateful agents.
 - [`openhands/`](./sub/openhands/) — self-hosted developer control center for coding agents and automations.
