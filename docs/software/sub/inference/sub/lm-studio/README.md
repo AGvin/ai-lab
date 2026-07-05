@@ -7,12 +7,14 @@ LM Studio is a desktop application and local server for running AI models on a w
 ```text
 Resource type: inference tool
 Primary use case: local model execution and local model serving
-Access model: local desktop application
+Access model: local desktop application with optional local server behavior
+License: Proprietary application terms; verify current terms before use
+Source model: Proprietary
 Operational requirement: local workstation
 Integration modes: desktop UI, local server, OpenAI-compatible API
-Hardware acceleration: CPU; GPU support depends on platform and model
+Hardware acceleration: CPU; GPU support depends on platform, runtime, and model
 Source: https://lmstudio.ai/
-Risk notes: Verify license, model sources, privacy behavior, and local server exposure before production use.
+Risk notes: Verify license terms, model sources, privacy behavior, local server exposure, network binding, and API compatibility before production use.
 ```
 
 ## Purpose
