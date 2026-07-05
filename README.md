@@ -4,14 +4,14 @@ Practical AI lab for models, tools, local inference, benchmarks, hardware notes,
 
 ## Documentation Map
 
-### Orientation
+### Start here
 
-- [`docs/overview/`](./docs/overview/) — documentation overview and planned documentation nodes.
+- [`overview/`](./docs/overview/) — documentation overview and planned documentation nodes.
 
-### Main knowledge areas
+### Knowledge areas
 
-- [`docs/software/`](./docs/software/) — AI-related software, inference tools, workflow engines, code editors, agents, assistants, automation tools, platforms, and models.
-- [`docs/notes/`](./docs/notes/) — concepts, benchmarks, and practical AI notes.
+- [`software/`](./docs/software/) — AI-related software, inference tools, workflow engines, code editors, agents, assistants, automation tools, platforms, and models.
+- [`notes/`](./docs/notes/) — concepts, benchmarks, and practical AI notes.
 
 ## License
 
