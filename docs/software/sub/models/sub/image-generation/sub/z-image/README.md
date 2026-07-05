@@ -8,6 +8,11 @@ Z-Image is an Alibaba image generation model.
 Resource type: image generation model
 Model type: image generation
 Provider: Alibaba
+Access model: Unknown
+License: Unknown
+Source model: Unknown
+Deployment modes: Unknown
+Hardware requirement: Unknown
 Source: https://tongyi-mai.github.io/Z-Image-blog/
 Origin: China
 Organization: Alibaba
