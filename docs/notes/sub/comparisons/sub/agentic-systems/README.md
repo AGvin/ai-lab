@@ -21,6 +21,24 @@ Comparison values must come from the canonical resource pages. Update a canonica
 
 Use `Unknown` only when the signal has not been evaluated or the canonical page does not support a stronger value.
 
+## Comparison design
+
+This page is a decision-support matrix, not a metadata dump.
+
+Do not include columns that have the same value for every row. If an important adoption signal is shared by all compared resources, move it to [`Shared assumptions`](#shared-assumptions) instead of repeating it across the table.
+
+## Shared assumptions
+
+For the current resource set, the following adoption signals are effectively shared:
+
+| Signal | Shared value | Why it is not a table column |
+| --- | --- | --- |
+| Deployment | Hybrid | All listed systems mix local, self-hosted, hosted, external API, model-provider, cloud, or integration components depending on configuration. |
+| Data exposure | High | All listed systems may handle prompts, repositories, files, tool outputs, credentials, browser sessions, terminals, automations, or production-like context. |
+| Risk level | High | All listed systems require sandboxing, permission boundaries, credential review, and human approval gates before sensitive use. |
+
+These shared values still matter for adoption. They are omitted from the comparison table only because they do not differentiate the current options.
+
 ## Comparison dimensions
 
 Use a compact set of fields so the table remains readable in GitHub Markdown.
@@ -28,17 +46,16 @@ Use a compact set of fields so the table remains readable in GitHub Markdown.
 | Field | Meaning |
 | --- | --- |
 | Resource | Canonical documentation page for the resource. |
-| Category | Practical resource category used for comparison. |
+| Best fit | Practical adoption scenario where the resource is most likely to be useful. |
+| Operating model | How the resource is normally used or integrated. |
 | Use rights | Personal and commercial usage signal for the documented core resource. |
 | Cost model | Main cost pattern or payment trigger. |
-| Deployment | Local, self-hosted, hosted, or hybrid operation. |
-| Data exposure | Expected exposure of prompts, repositories, files, credentials, or tool outputs. |
-| Risk level | Compact adoption risk signal for sensitive personal or business use. |
 | Adoption | Rough maturity and ecosystem signal. |
+| Main review focus | The first thing to review before using the resource for personal, private, or business work. |
 
 ## Controlled values
 
-Prefer stable labels over free-form prose.
+Prefer stable labels over free-form prose when a field is categorical.
 
 ### Use rights
 
@@ -57,28 +74,6 @@ Prefer stable labels over free-form prose.
 - `BYO cost` — tool may be free, but useful operation requires paid model/API/infrastructure/channel credentials or self-managed runtime costs.
 - `Unknown` — cost model has not been confirmed.
 
-### Deployment
-
-- `Local` — runs on a local workstation.
-- `Self-hosted` — runs on owned or controlled infrastructure.
-- `Hosted` — provider-operated service.
-- `Hybrid` — mixes local/self-hosted components with hosted services, external APIs, model providers, messaging channels, integrations, or cloud backends.
-- `Unknown` — deployment model has not been confirmed.
-
-### Data exposure
-
-- `Low` — local-only or self-hosted use with no expected third-party data transfer.
-- `Medium` — external model/API calls or hosted features may receive prompts, files, state, traces, or outputs.
-- `High` — resource may access repositories, browser sessions, credentials, tools, terminals, messaging channels, files, automations, device nodes, or production-like systems.
-- `Unknown` — exposure has not been confirmed.
-
-### Risk level
-
-- `Low` — reasonable candidate for low-sensitivity use after normal review.
-- `Medium` — needs configuration review before sensitive personal or business use.
-- `High` — needs sandboxing, permission boundaries, credential review, and human approval gates.
-- `Unknown` — insufficient information for a useful risk signal.
-
 ### Adoption
 
 - `Mainstream` — widely adopted, highly visible, or explicitly production-positioned in its category.
@@ -87,30 +82,32 @@ Prefer stable labels over free-form prose.
 - `Niche` — narrow or specialized adoption.
 - `Unknown` — adoption has not been evaluated.
 
-## Comparison table
+## Comparison matrix
 
-| Resource | Category | Use rights | Cost model | Deployment | Data exposure | Risk level | Adoption |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| [Hermes Agent](../../../../../software/sub/agents/sub/hermes-agent/) | Standalone agent | Permissive | BYO cost | Hybrid | High | High | Popular |
-| [OpenClaw](../../../../../software/sub/agents/sub/openclaw/) | Standalone personal agent | Permissive core | BYO cost | Hybrid | High | High | Mainstream |
-| [AutoGen](../../../../../software/sub/agent-orchestration/sub/autogen/) | Agent orchestration framework | Permissive core | BYO cost | Hybrid | High | High | Popular |
-| [CrewAI](../../../../../software/sub/agent-orchestration/sub/crewai/) | Agent orchestration framework and platform | Permissive core | Open core | Hybrid | High | High | Popular |
-| [LangGraph](../../../../../software/sub/agent-orchestration/sub/langgraph/) | Stateful agent orchestration runtime | Permissive core | Open core | Hybrid | High | High | Mainstream |
-| [OpenHands](../../../../../software/sub/agent-orchestration/sub/openhands/) | Coding-agent control center | Permissive core | Open core | Hybrid | High | High | Mainstream |
+| Resource | Best fit | Operating model | Use rights | Cost model | Adoption | Main review focus |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Hermes Agent](../../../../../software/sub/agents/sub/hermes-agent/) | Personal or project-specific autonomous assistant experiments. | Standalone agent using external models, tools, and integrations. | Permissive | BYO cost | Popular | Source trust, runtime permissions, and tool access boundaries. |
+| [OpenClaw](../../../../../software/sub/agents/sub/openclaw/) | Browser-use personal agent workflows and task automation. | Standalone browser-focused agent with local and external dependencies. | Permissive core | BYO cost | Mainstream | Browser/session access, credential handling, and site-side effects. |
+| [AutoGen](../../../../../software/sub/agent-orchestration/sub/autogen/) | Researching and prototyping multi-agent conversations and workflows. | Framework for composing agents, tools, models, and conversation patterns. | Permissive core | BYO cost | Popular | Model/API configuration, experiment isolation, and orchestration complexity. |
+| [CrewAI](../../../../../software/sub/agent-orchestration/sub/crewai/) | Role-based multi-agent workflows with optional managed platform features. | Open-core framework plus optional hosted or managed services. | Permissive core | Open core | Popular | Boundary between open-source core, paid services, and third-party integrations. |
+| [LangGraph](../../../../../software/sub/agent-orchestration/sub/langgraph/) | Stateful, controllable, production-oriented agent graphs. | Runtime/framework for graph-based agent state, control flow, and integrations. | Permissive core | Open core | Mainstream | State persistence, observability, deployment architecture, and managed-service terms. |
+| [OpenHands](../../../../../software/sub/agent-orchestration/sub/openhands/) | Coding-agent control center for repository and development-environment tasks. | Developer-facing agent control plane connected to repositories, shells, and tools. | Permissive core | Open core | Mainstream | Repository write access, shell permissions, sandboxing, and approval gates. |
 
-## Reading the table
+## Reading the matrix
 
-Use the table as a triage surface, not as a final procurement or deployment decision.
+Use this matrix as a triage surface, not as a final procurement or deployment decision.
 
-- Start with `Use rights` and `Cost model` to identify whether personal, revenue-generating, or company use is likely acceptable.
-- Check `Deployment`, `Data exposure`, and `Risk level` before connecting a resource to private files, repositories, browsers, terminals, credentials, messaging channels, automations, device nodes, or business systems.
-- Use `Adoption` as a rough maturity signal, not as a substitute for security, architecture, license, or procurement review.
+- Start with `Best fit` to decide whether the resource matches the intended workflow.
+- Use `Operating model` to distinguish standalone agents, browser agents, orchestration frameworks, stateful runtimes, and coding-agent control centers.
+- Check `Use rights` and `Cost model` before personal, revenue-generating, or company use.
+- Treat the shared `Hybrid`, `High data exposure`, and `High risk` assumptions as baseline safety requirements for every listed resource.
 - Open the canonical resource page for detailed notes, references, and context before adopting the resource.
 
 ## Maintenance rules
 
-- Update canonical pages before updating this comparison table.
+- Update canonical pages before updating this comparison matrix.
 - Prefer concrete values when the canonical page already supports them.
 - Use `Unknown` only when the signal has not been evaluated or the canonical page does not support a stronger value.
 - Keep table cells short enough to scan.
+- Do not repeat identical values across every row; move shared signals into `Shared assumptions`.
 - Put detailed license, pricing, provenance, security, and operational notes on canonical resource pages.
