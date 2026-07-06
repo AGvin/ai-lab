@@ -23,7 +23,7 @@ Use a compact set of fields so the table remains readable in GitHub Markdown.
 | --- | --- |
 | Resource | Canonical documentation page for the resource. |
 | Category | Practical resource category used for comparison. |
-| Use rights | Personal and commercial usage signal. |
+| Use rights | Personal and commercial usage signal for the documented core resource. |
 | Cost model | Main cost pattern or payment trigger. |
 | Deployment | Local, self-hosted, hosted, or hybrid operation. |
 | Data exposure | Expected exposure of prompts, repositories, files, credentials, or tool outputs. |
@@ -36,11 +36,11 @@ Prefer stable labels over free-form prose.
 
 ### Use rights
 
-- `Permissive` — personal and commercial use appear broadly allowed by the license or terms.
-- `Personal-friendly` — personal use appears straightforward, but commercial use needs review.
+- `Permissive` — personal and commercial use appear broadly allowed by the documented license or terms.
+- `Permissive core` — the documented core appears permissive, but optional hosted, enterprise, marketplace, or managed services need separate review.
 - `Commercial review` — business or revenue-generating use requires explicit license, pricing, or terms review.
 - `Restricted` — important use cases are limited by license, terms, geography, or access model.
-- `Verify` — current usage rights have not been confirmed.
+- `Unknown` — current usage rights have not been confirmed.
 
 ### Cost model
 
@@ -49,21 +49,21 @@ Prefer stable labels over free-form prose.
 - `Open core` — open-source or source-available core with paid platform, cloud, enterprise, or managed features.
 - `Paid` — payment required for normal useful operation.
 - `BYO cost` — tool may be free, but useful operation requires paid model/API/infrastructure credentials.
-- `Verify` — cost model has not been confirmed.
+- `Unknown` — cost model has not been confirmed.
 
 ### Deployment
 
 - `Local` — runs on a local workstation.
 - `Self-hosted` — runs on owned or controlled infrastructure.
 - `Hosted` — provider-operated service.
-- `Hybrid` — mixes local/self-hosted components with hosted services or external APIs.
-- `Verify` — deployment model has not been confirmed.
+- `Hybrid` — mixes local/self-hosted components with hosted services, external APIs, model providers, messaging channels, or integrations.
+- `Unknown` — deployment model has not been confirmed.
 
 ### Data exposure
 
 - `Low` — local-only or self-hosted use with no expected third-party data transfer.
-- `Medium` — external model/API calls or hosted features may receive prompts, files, or outputs.
-- `High` — resource may access repositories, browser sessions, credentials, tools, terminals, or production-like systems.
+- `Medium` — external model/API calls or hosted features may receive prompts, files, state, or outputs.
+- `High` — resource may access repositories, browser sessions, credentials, tools, terminals, messaging channels, files, or production-like systems.
 - `Unknown` — exposure has not been confirmed.
 
 ### Risk level
@@ -85,25 +85,26 @@ Prefer stable labels over free-form prose.
 
 | Resource | Category | Use rights | Cost model | Deployment | Data exposure | Risk level | Adoption |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [Hermes Agent](../../../../../software/sub/agents/sub/hermes-agent/) | Standalone agent | Verify | Verify | Verify | Unknown | Unknown | Unknown |
-| [OpenClaw](../../../../../software/sub/agents/sub/openclaw/) | Standalone browser-use agent | Verify | Verify | Verify | High | High | Verify |
-| [AutoGen](../../../../../software/sub/agent-orchestration/sub/autogen/) | Agent orchestration framework | Verify | Verify | Verify | Medium | Medium | Verify |
-| [CrewAI](../../../../../software/sub/agent-orchestration/sub/crewai/) | Agent orchestration framework | Verify | Verify | Hybrid | Medium | Medium | Verify |
-| [LangGraph](../../../../../software/sub/agent-orchestration/sub/langgraph/) | Stateful agent orchestration runtime | Verify | Verify | Hybrid | Medium | Medium | Verify |
-| [OpenHands](../../../../../software/sub/agent-orchestration/sub/openhands/) | Coding-agent control center | Verify | Verify | Hybrid | High | High | Verify |
+| [Hermes Agent](../../../../../software/sub/agents/sub/hermes-agent/) | Standalone agent | Permissive | BYO cost | Hybrid | High | High | Unknown |
+| [OpenClaw](../../../../../software/sub/agents/sub/openclaw/) | Standalone browser-use agent | Permissive | BYO cost | Hybrid | High | High | Unknown |
+| [AutoGen](../../../../../software/sub/agent-orchestration/sub/autogen/) | Agent orchestration framework | Permissive | BYO cost | Hybrid | High | High | Unknown |
+| [CrewAI](../../../../../software/sub/agent-orchestration/sub/crewai/) | Agent orchestration framework | Permissive core | Open core | Hybrid | High | High | Unknown |
+| [LangGraph](../../../../../software/sub/agent-orchestration/sub/langgraph/) | Stateful agent orchestration runtime | Permissive core | Open core | Hybrid | High | High | Unknown |
+| [OpenHands](../../../../../software/sub/agent-orchestration/sub/openhands/) | Coding-agent control center | Permissive | BYO cost | Hybrid | High | High | Unknown |
 
 ## Reading the table
 
 Use the table as a triage surface, not as a final procurement or deployment decision.
 
 - Start with `Use rights` and `Cost model` to identify whether personal, revenue-generating, or company use is likely acceptable.
-- Check `Deployment`, `Data exposure`, and `Risk level` before connecting a resource to private files, repositories, browsers, terminals, credentials, or business systems.
-- Use `Adoption` to estimate ecosystem maturity, but do not treat popularity as a substitute for security or license review.
+- Check `Deployment`, `Data exposure`, and `Risk level` before connecting a resource to private files, repositories, browsers, terminals, credentials, messaging channels, or business systems.
+- Use `Adoption` only when it has been explicitly evaluated; do not treat popularity as a substitute for security or license review.
 - Open the canonical resource page for detailed notes, references, and context before adopting the resource.
 
 ## Maintenance rules
 
-- Use `Verify` or `Unknown` instead of guessing.
+- Prefer concrete values when the canonical page already supports them.
+- Use `Unknown` only when the signal has not been evaluated or the canonical page does not support a stronger value.
 - Keep table cells short enough to scan.
 - Put detailed license, pricing, provenance, security, and operational notes on canonical resource pages.
 - Update this comparison only when the corresponding canonical page has enough information to support the comparison signal.
