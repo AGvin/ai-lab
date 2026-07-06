@@ -91,7 +91,7 @@ Prefer stable labels over free-form prose.
 
 | Resource | Category | Use rights | Cost model | Deployment | Data exposure | Risk level | Adoption |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [Hermes Agent](../../../../../software/sub/agents/sub/hermes-agent/) | Standalone agent | Permissive | BYO cost | Hybrid | High | High | Popular |
+| [Hermes Agent](../../../../../software/sub/agents/sub/hermes-agent/) | Standalone agent | Permissive core | BYO cost | Hybrid | High | High | Mainstream |
 | [OpenClaw](../../../../../software/sub/agents/sub/openclaw/) | Standalone personal agent | Permissive core | BYO cost | Hybrid | High | High | Mainstream |
 | [AutoGen](../../../../../software/sub/agent-orchestration/sub/autogen/) | Agent orchestration framework | Permissive core | BYO cost | Hybrid | High | High | Popular |
 | [CrewAI](../../../../../software/sub/agent-orchestration/sub/crewai/) | Agent orchestration framework and platform | Permissive core | Open core | Hybrid | High | High | Popular |
