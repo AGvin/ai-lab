@@ -13,7 +13,7 @@ Source model: Open source
 Use rights signal: Permissive core; model providers, hosted infrastructure, channels, and third-party services must be reviewed separately
 Cost model signal: BYO cost; runtime may be self-managed, but useful operation depends on selected model/provider, infrastructure, and channel credentials
 Deployment model: Hybrid; supports local, VPS, container, SSH, Singularity, Modal, Daytona, serverless-style, and gateway-based messaging use
-Adoption signal: Popular; GitHub-visible adoption is high, but production maturity still requires project-specific review
+Adoption signal: Mainstream; GitHub-visible adoption is very high, but production maturity still requires project-specific review
 Operational requirement: Hermes runtime plus selected model/provider credentials and optional messaging gateway credentials
 Integration modes: CLI, terminal UI, gateway process, Telegram, Discord, Slack, WhatsApp, Signal, local/Docker/SSH/Singularity/Modal/Daytona terminal backends, model providers, skills, scheduled automations, subagents, and RPC-style tool use
 Source: https://github.com/NousResearch/hermes-agent
