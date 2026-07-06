@@ -85,12 +85,12 @@ Prefer stable labels over free-form prose.
 
 | Resource | Category | Use rights | Cost model | Deployment | Data exposure | Risk level | Adoption |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [Hermes Agent](../../../software/sub/agents/sub/hermes-agent/) | Standalone agent | Verify | Verify | Verify | Unknown | Unknown | Unknown |
-| [OpenClaw](../../../software/sub/agents/sub/openclaw/) | Standalone browser-use agent | Verify | Verify | Verify | High | High | Verify |
-| [AutoGen](../../../software/sub/agent-orchestration/sub/autogen/) | Agent orchestration framework | Verify | Verify | Verify | Medium | Medium | Verify |
-| [CrewAI](../../../software/sub/agent-orchestration/sub/crewai/) | Agent orchestration framework | Verify | Verify | Hybrid | Medium | Medium | Verify |
-| [LangGraph](../../../software/sub/agent-orchestration/sub/langgraph/) | Stateful agent orchestration runtime | Verify | Verify | Hybrid | Medium | Medium | Verify |
-| [OpenHands](../../../software/sub/agent-orchestration/sub/openhands/) | Coding-agent control center | Verify | Verify | Hybrid | High | High | Verify |
+| [Hermes Agent](../../../../../software/sub/agents/sub/hermes-agent/) | Standalone agent | Verify | Verify | Verify | Unknown | Unknown | Unknown |
+| [OpenClaw](../../../../../software/sub/agents/sub/openclaw/) | Standalone browser-use agent | Verify | Verify | Verify | High | High | Verify |
+| [AutoGen](../../../../../software/sub/agent-orchestration/sub/autogen/) | Agent orchestration framework | Verify | Verify | Verify | Medium | Medium | Verify |
+| [CrewAI](../../../../../software/sub/agent-orchestration/sub/crewai/) | Agent orchestration framework | Verify | Verify | Hybrid | Medium | Medium | Verify |
+| [LangGraph](../../../../../software/sub/agent-orchestration/sub/langgraph/) | Stateful agent orchestration runtime | Verify | Verify | Hybrid | Medium | Medium | Verify |
+| [OpenHands](../../../../../software/sub/agent-orchestration/sub/openhands/) | Coding-agent control center | Verify | Verify | Hybrid | High | High | Verify |
 
 ## Reading the table
 
