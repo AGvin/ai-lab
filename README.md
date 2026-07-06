@@ -12,6 +12,12 @@ This repository is an active public documentation lab. Content is added incremen
 
 - [`overview/`](./docs/overview/) — repository documentation model, current layout, asset rules, and expansion guidance.
 
+### Decision support
+
+- [`agents/`](./docs/software/sub/agents/) — agent index and future comparison surface for cost, origin, adoption, maturity, privacy risk, safety posture, and business suitability.
+- [`agent-orchestration/`](./docs/software/sub/agent-orchestration/) — orchestration index for frameworks, runtimes, and control planes that coordinate or run AI agents.
+- [`benchmarks/`](./docs/notes/sub/benchmarks/) — benchmark and leaderboard references for evaluating models, providers, and AI systems.
+
 ### Software
 
 - [`software/`](./docs/software/) — AI-related software, model platforms, inference tools, workflow engines, code editors, agents, assistants, automation tools, and models.
