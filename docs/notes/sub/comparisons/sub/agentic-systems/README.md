@@ -1,0 +1,109 @@
+# Agentic Systems Comparison
+
+Cross-category comparison of standalone agents, agent orchestration systems, coding-agent control centers, and adjacent agentic AI tools.
+
+## Scope
+
+Use this page when the decision question is practical adoption rather than taxonomy placement.
+
+Canonical resource pages remain under their natural documentation category. This page should summarize adoption signals and link back to those canonical pages instead of duplicating full resource descriptions.
+
+Included resource categories:
+
+- standalone agent-like AI systems;
+- agent orchestration frameworks and runtimes;
+- coding-agent control centers;
+- adjacent tools when agentic behavior is central to the adoption decision.
+
+## Comparison dimensions
+
+Use a compact set of fields so the table remains readable in GitHub Markdown.
+
+| Field | Meaning |
+| --- | --- |
+| Resource | Canonical documentation page for the resource. |
+| Category | Practical resource category used for comparison. |
+| Use rights | Personal and commercial usage signal. |
+| Cost model | Main cost pattern or payment trigger. |
+| Deployment | Local, self-hosted, hosted, or hybrid operation. |
+| Data exposure | Expected exposure of prompts, repositories, files, credentials, or tool outputs. |
+| Risk level | Compact adoption risk signal for sensitive personal or business use. |
+| Adoption | Rough maturity and ecosystem signal. |
+
+## Controlled values
+
+Prefer stable labels over free-form prose.
+
+### Use rights
+
+- `Permissive` — personal and commercial use appear broadly allowed by the license or terms.
+- `Personal-friendly` — personal use appears straightforward, but commercial use needs review.
+- `Commercial review` — business or revenue-generating use requires explicit license, pricing, or terms review.
+- `Restricted` — important use cases are limited by license, terms, geography, or access model.
+- `Verify` — current usage rights have not been confirmed.
+
+### Cost model
+
+- `Free` — no payment expected for normal documented use.
+- `Freemium` — free tier with paid limits, seats, hosted features, or usage tiers.
+- `Open core` — open-source or source-available core with paid platform, cloud, enterprise, or managed features.
+- `Paid` — payment required for normal useful operation.
+- `BYO cost` — tool may be free, but useful operation requires paid model/API/infrastructure credentials.
+- `Verify` — cost model has not been confirmed.
+
+### Deployment
+
+- `Local` — runs on a local workstation.
+- `Self-hosted` — runs on owned or controlled infrastructure.
+- `Hosted` — provider-operated service.
+- `Hybrid` — mixes local/self-hosted components with hosted services or external APIs.
+- `Verify` — deployment model has not been confirmed.
+
+### Data exposure
+
+- `Low` — local-only or self-hosted use with no expected third-party data transfer.
+- `Medium` — external model/API calls or hosted features may receive prompts, files, or outputs.
+- `High` — resource may access repositories, browser sessions, credentials, tools, terminals, or production-like systems.
+- `Unknown` — exposure has not been confirmed.
+
+### Risk level
+
+- `Low` — reasonable candidate for low-sensitivity use after normal review.
+- `Medium` — needs configuration review before sensitive personal or business use.
+- `High` — needs sandboxing, permission boundaries, credential review, and human approval gates.
+- `Unknown` — insufficient information for a useful risk signal.
+
+### Adoption
+
+- `Mainstream` — widely adopted and mature in its category.
+- `Popular` — visible adoption and active ecosystem.
+- `Growing` — meaningful momentum but still evolving.
+- `Niche` — narrow or specialized adoption.
+- `Unknown` — adoption has not been evaluated.
+
+## Comparison table
+
+| Resource | Category | Use rights | Cost model | Deployment | Data exposure | Risk level | Adoption |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Hermes Agent](../../../../../software/sub/agents/sub/hermes-agent/) | Standalone agent | Verify | Verify | Verify | Unknown | Unknown | Unknown |
+| [OpenClaw](../../../../../software/sub/agents/sub/openclaw/) | Standalone browser-use agent | Verify | Verify | Verify | High | High | Verify |
+| [AutoGen](../../../../../software/sub/agent-orchestration/sub/autogen/) | Agent orchestration framework | Verify | Verify | Verify | Medium | Medium | Verify |
+| [CrewAI](../../../../../software/sub/agent-orchestration/sub/crewai/) | Agent orchestration framework | Verify | Verify | Hybrid | Medium | Medium | Verify |
+| [LangGraph](../../../../../software/sub/agent-orchestration/sub/langgraph/) | Stateful agent orchestration runtime | Verify | Verify | Hybrid | Medium | Medium | Verify |
+| [OpenHands](../../../../../software/sub/agent-orchestration/sub/openhands/) | Coding-agent control center | Verify | Verify | Hybrid | High | High | Verify |
+
+## Reading the table
+
+Use the table as a triage surface, not as a final procurement or deployment decision.
+
+- Start with `Use rights` and `Cost model` to identify whether personal, revenue-generating, or company use is likely acceptable.
+- Check `Deployment`, `Data exposure`, and `Risk level` before connecting a resource to private files, repositories, browsers, terminals, credentials, or business systems.
+- Use `Adoption` to estimate ecosystem maturity, but do not treat popularity as a substitute for security or license review.
+- Open the canonical resource page for detailed notes, references, and context before adopting the resource.
+
+## Maintenance rules
+
+- Use `Verify` or `Unknown` instead of guessing.
+- Keep table cells short enough to scan.
+- Put detailed license, pricing, provenance, security, and operational notes on canonical resource pages.
+- Update this comparison only when the corresponding canonical page has enough information to support the comparison signal.

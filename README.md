@@ -12,6 +12,12 @@ This repository is an active public documentation lab. Content is added incremen
 
 - [`overview/`](./docs/overview/) — repository documentation model, current layout, asset rules, and expansion guidance.
 
+### Decision support
+
+- [`agentic-systems/`](./docs/notes/sub/comparisons/sub/agentic-systems/) — cross-category comparison of agents, orchestration systems, coding-agent control centers, and adjacent agentic AI tools.
+- [`comparisons/`](./docs/notes/sub/comparisons/) — decision-support comparisons across models, tools, workflows, platforms, and AI systems.
+- [`benchmarks/`](./docs/notes/sub/benchmarks/) — benchmark and leaderboard references for evaluating models, providers, and AI systems.
+
 ### Software
 
 - [`software/`](./docs/software/) — AI-related software, model platforms, inference tools, workflow engines, code editors, agents, assistants, automation tools, and models.
@@ -47,7 +53,7 @@ This repository is an active public documentation lab. Content is added incremen
 
 ### Notes
 
-- [`notes/`](./docs/notes/) — concepts, benchmarks, and practical AI notes that are not themselves software or hardware documentation.
+- [`notes/`](./docs/notes/) — concepts, benchmarks, comparisons, and practical AI notes that are not themselves software or hardware documentation.
   - [`concepts/`](./docs/notes/sub/concepts/) — explanations of AI concepts.
     - [`lora/`](./docs/notes/sub/concepts/sub/lora/) — Low-Rank Adaptation concept.
   - [`benchmarks/`](./docs/notes/sub/benchmarks/) — benchmark and leaderboard notes for AI models, providers, and systems.
@@ -56,6 +62,8 @@ This repository is an active public documentation lab. Content is added incremen
     - [`benchlm/`](./docs/notes/sub/benchmarks/sub/benchlm/) — AI benchmark resource.
     - [`arena/`](./docs/notes/sub/benchmarks/sub/arena/) — AI leaderboard resource.
     - [`artificial-analysis/`](./docs/notes/sub/benchmarks/sub/artificial-analysis/) — provider and model analysis leaderboard.
+  - [`comparisons/`](./docs/notes/sub/comparisons/) — decision-support comparisons across models, tools, workflows, platforms, and AI systems.
+    - [`agentic-systems/`](./docs/notes/sub/comparisons/sub/agentic-systems/) — cross-category comparison of agents, orchestration systems, coding-agent control centers, and adjacent agentic AI tools.
 
 ## License
 
