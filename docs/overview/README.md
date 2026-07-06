@@ -13,7 +13,7 @@ Do not create `docs/README.md`.
 ## Documentation Nodes
 
 - [`docs/software/`](../software/) — AI-related software, inference tools, workflow engines, code editors, agents, assistants, automation tools, platforms, and models.
-- [`docs/notes/`](../notes/) — concepts, benchmarks, and practical AI notes.
+- [`docs/notes/`](../notes/) — concepts, benchmarks, comparisons, and practical AI notes.
 
 ## Current Software Areas
 
@@ -31,6 +31,7 @@ Do not create `docs/README.md`.
 
 - [`concepts/`](../notes/sub/concepts/) — AI concept explanations.
 - [`benchmarks/`](../notes/sub/benchmarks/) — benchmark and leaderboard references.
+- [`comparisons/`](../notes/sub/comparisons/) — decision-support comparisons across models, tools, workflows, platforms, and AI systems.
 
 ## Assets
 
