@@ -17,7 +17,7 @@ Included resource categories:
 
 ## Evidence policy
 
-Comparison values must come from the canonical resource pages. Update a canonical page first, then update this table.
+Comparison values should come from the canonical resource pages. The comparison should stay concise, reader-facing, and focused on adoption decisions.
 
 Use `Unknown` only when the signal has not been evaluated or the canonical page does not support a stronger value.
 
@@ -123,13 +123,3 @@ Use these matrices as a triage surface, not as a final procurement or deployment
 - Check `Adoption and cost matrix` before personal, revenue-generating, or company use.
 - Treat the shared `Hybrid`, `High data exposure`, and `High risk` assumptions as baseline safety requirements for every listed resource.
 - Open the canonical resource page for detailed notes, references, and context before adopting the resource.
-
-## Maintenance rules
-
-- Update canonical pages before updating this comparison.
-- Prefer concrete values when the canonical page already supports them.
-- Use `Unknown` only when the signal has not been evaluated or the canonical page does not support a stronger value.
-- Keep table cells short enough to scan.
-- Do not repeat identical values across every row; move shared signals into `Shared assumptions`.
-- Split large comparisons into separate decision matrices instead of creating one unreadable wide table.
-- Put detailed license, pricing, provenance, security, and operational notes on canonical resource pages.
