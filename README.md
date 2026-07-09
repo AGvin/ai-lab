@@ -1,6 +1,17 @@
 # AI Lab
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Practical AI lab for models, tools, local inference, benchmarks, hardware notes, and automation workflows.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
