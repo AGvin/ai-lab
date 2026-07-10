@@ -6,20 +6,34 @@ ai_content:
   l10n: true
 -->
 
-Detecting or restricting content according to safety, legal, or platform policies.
+Content moderation detects, labels, restricts, or routes content according to safety, legal, platform, or community policies.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+Moderation may apply before model processing, after generation, or both. Systems combine rules, classifiers, model judgments, user reports, and human review. Policies must define categories and actions explicitly because “unsafe” is context-dependent.
 
 ## Practical use
 
-- Use the concept to define controls around data, tools, permissions, and model behavior.
-- Separate trusted instructions from untrusted user, web, email, document, or retrieval content.
-- Test abuse cases and failure modes before granting broader access or autonomy.
+- Filter prohibited user input.
+- Review generated public content.
+- Protect minors or workplace environments.
+- Route uncertain cases to human moderators.
+- Enforce product-specific policy boundaries.
+
+## Trade-offs and limitations
+
+Moderation systems produce false positives and false negatives. Language, culture, sarcasm, quoted material, and educational context complicate classification. Overly broad filtering can suppress legitimate content.
+
+## Common mistakes
+
+- Using one global threshold for every category.
+- Hiding moderation decisions without an appeal path.
+- Treating quoted harmful content the same as endorsement.
+- Applying text moderation to tool actions without separate controls.
 
 ## Related concepts
 
 - [Safety, Privacy, and Reliability](../../)
-- [Provenance](../provenance/)
-- [Jailbreaking](../jailbreaking/)
+- [Guardrails](../guardrails/)
+- [Human in the Loop](../../../agents-and-automation/sub/human-in-the-loop/)
+- [Model Alignment](../model-alignment/)

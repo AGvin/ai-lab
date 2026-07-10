@@ -6,20 +6,33 @@ ai_content:
   l10n: true
 -->
 
-Training a smaller or simpler model to imitate a stronger teacher model.
+Distillation trains a smaller or simpler student model to reproduce useful behavior from a stronger teacher model.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+The teacher may provide probability distributions, generated answers, reasoning examples, labels, or synthetic tasks. The student learns from these signals and may retain part of the teacher's capability at lower inference cost.
 
 ## Practical use
 
-- Use the concept to decide whether model adaptation is necessary beyond prompting, tools, or retrieval.
-- Check base-model, dataset, format, runtime, and license compatibility before training.
-- Evaluate the adapted model against an unchanged baseline on representative tasks.
+- Create smaller models for local or edge deployment.
+- Transfer task behavior from an expensive model.
+- Generate training labels where human annotation is limited.
+- Specialize a compact model for a narrow workflow.
+
+## Trade-offs and limitations
+
+The student also inherits teacher errors and biases. Distillation cannot preserve every capability when model capacity is reduced. Generated training data may violate provider terms or model licenses, so provenance and usage rights matter.
+
+## Common mistakes
+
+- Evaluating only on teacher-generated examples.
+- Treating the teacher as ground truth.
+- Ignoring data contamination and licensing.
+- Expecting a much smaller student to match every teacher capability.
 
 ## Related concepts
 
 - [Training and Adaptation](../../)
-- [DPO](../dpo/)
-- [Pruning](../pruning/)
+- [Synthetic Data](../synthetic-data/)
+- [Model Selection](../../../evaluation-and-operations/sub/model-selection/)
+- [Quantization](../../../inference-and-serving/sub/quantization/)

@@ -6,20 +6,30 @@ ai_content:
   l10n: true
 -->
 
-A compressed learned representation in which generative models encode and manipulate information.
+A latent space is a learned compressed representation in which a model encodes and manipulates information.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+Instead of operating directly on raw pixels or audio samples, a model may encode data into lower-dimensional latent variables that preserve important structure. Generative models then sample, interpolate, or transform these variables before decoding them back into media.
 
-## Practical use
+## Practical significance
 
-- Use the concept when choosing a model or workflow for image, audio, video, or mixed-modality tasks.
-- Validate input constraints, output artifacts, and editing fidelity on representative media.
-- Track provenance, privacy, safety, and licensing for generated or transformed content.
+Latent diffusion reduces computation because denoising happens on smaller tensors. Similar inputs may occupy nearby regions, enabling interpolation and semantic editing. However, dimensions usually do not correspond to simple human-readable attributes.
+
+## Trade-offs and limitations
+
+Compression can discard fine detail. The decoder may reconstruct plausible rather than exact information. Latent arithmetic can produce useful transitions but does not guarantee clean control of one isolated property.
+
+## Common mistakes
+
+- Treating every latent dimension as an interpretable feature.
+- Assuming encoding and decoding are lossless.
+- Confusing text embeddings with image latent tensors.
+- Expecting interpolation to preserve identity and geometry perfectly.
 
 ## Related concepts
 
 - [Multimodal and Generative Media](../../)
-- [Video Generation](../video-generation/)
-- [Audio Generation](../audio-generation/)
+- [Diffusion Models](../diffusion-models/)
+- [Image Embeddings](../image-embeddings/)
+- [Image-to-Image](../image-to-image/)

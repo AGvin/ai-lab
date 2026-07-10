@@ -6,20 +6,34 @@ ai_content:
   l10n: true
 -->
 
-Vector representations used to compare, retrieve, or classify visual content.
+Image embeddings are vectors that represent visual content for comparison, retrieval, clustering, or classification.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+An image encoder maps an image into a fixed-length vector. Multimodal encoders may place image and text representations in a shared space, allowing natural-language search over images. The embedding captures features useful to its training objective, not every visual detail.
 
 ## Practical use
 
-- Use the concept when choosing a model or workflow for image, audio, video, or mixed-modality tasks.
-- Validate input constraints, output artifacts, and editing fidelity on representative media.
-- Track provenance, privacy, safety, and licensing for generated or transformed content.
+- Search image libraries by text or reference image.
+- Detect near-duplicates.
+- Cluster visual assets.
+- Recommend visually similar products.
+- Retrieve images for multimodal RAG.
+
+## Trade-offs and limitations
+
+Embeddings may emphasize overall semantics while ignoring exact text, counts, or small differences. Cropping, resolution, and preprocessing influence results. Similarity can also reflect unwanted dataset biases.
+
+## Common mistakes
+
+- Using similarity as proof that two images depict the same object.
+- Mixing vectors from different encoders.
+- Ignoring orientation and crop effects.
+- Expecting image embeddings to replace OCR or precise visual inspection.
 
 ## Related concepts
 
 - [Multimodal and Generative Media](../../)
-- [Outpainting](../outpainting/)
-- [Speech-to-Text](../speech-to-text/)
+- [Embeddings](../../../retrieval-and-knowledge/sub/embeddings/)
+- [Vision-Language Models](../vision-language-models/)
+- [Semantic Search](../../../retrieval-and-knowledge/sub/semantic-search/)

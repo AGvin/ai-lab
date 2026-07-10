@@ -6,20 +6,34 @@ ai_content:
   l10n: true
 -->
 
-Balancing response time against the amount of work completed per unit of time.
+Latency and throughput describe two related but competing dimensions of system performance: how long one request takes and how much total work the system completes over time.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+Interactive applications usually prioritize time to first token and response smoothness. Batch systems prioritize total tokens or requests completed. Increasing batch size and queue depth can improve throughput while making individual users wait longer.
 
 ## Practical use
 
-- Use the concept to define measurable requirements before optimizing an AI workflow.
-- Evaluate with representative datasets, explicit criteria, and observable execution traces.
-- Track regressions, cost, latency, and reliability as models or configurations change.
+- Define service-level objectives for p50, p95, and p99 latency.
+- Measure throughput at the required latency target.
+- Test realistic prompt and output lengths.
+- Separate queue, retrieval, model, tool, and network time.
+- Evaluate sustained load rather than short bursts.
+
+## Trade-offs and limitations
+
+Hardware utilization, concurrency, batching, context length, and output length all affect the relationship. One “tokens per second” number cannot represent multi-user service quality.
+
+## Common mistakes
+
+- Maximizing throughput with no latency limit.
+- Comparing systems with different workloads.
+- Reporting averages without tail behavior.
+- Ignoring failed and timed-out requests.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Cost Management](../cost-management/)
-- [Quality and Cost Trade-Offs](../quality-cost-tradeoffs/)
+- [Latency](../../../inference-and-serving/sub/latency/)
+- [Throughput](../../../inference-and-serving/sub/throughput/)
+- [Continuous Batching](../../../inference-and-serving/sub/continuous-batching/)

@@ -6,20 +6,34 @@ ai_content:
   l10n: true
 -->
 
-Shaping model behavior toward intended goals, values, policies, or preferences.
+Model alignment is the effort to shape model behavior toward intended goals, policies, values, and user expectations.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+Alignment can involve instruction tuning, preference optimization, constitutional rules, safety training, system prompts, guardrails, and application controls. It is not one solved property; behavior may differ across tasks, languages, and adversarial conditions.
 
-## Practical use
+## Practical dimensions
 
-- Use the concept to define controls around data, tools, permissions, and model behavior.
-- Separate trusted instructions from untrusted user, web, email, document, or retrieval content.
-- Test abuse cases and failure modes before granting broader access or autonomy.
+- Helpfulness and instruction following.
+- Honesty and uncertainty communication.
+- Harmlessness and policy compliance.
+- Respect for user intent and authorization.
+- Resistance to manipulation.
+
+## Trade-offs and limitations
+
+Different stakeholders may disagree about preferred behavior. Optimizing broad safety can create over-refusal, while optimizing compliance can increase misuse risk. Model-level alignment does not replace permissions or secure application architecture.
+
+## Common mistakes
+
+- Treating alignment as identical to censorship.
+- Assuming one preference dataset represents all users.
+- Measuring only refusal rates.
+- Relying on aligned behavior to protect secrets or tools.
 
 ## Related concepts
 
 - [Safety, Privacy, and Reliability](../../)
+- [Preference Optimization](../../../training-and-adaptation/sub/preference-optimization/)
+- [Guardrails](../guardrails/)
 - [Jailbreaking](../jailbreaking/)
-- [Data Poisoning](../data-poisoning/)

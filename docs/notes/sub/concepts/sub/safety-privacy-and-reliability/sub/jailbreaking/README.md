@@ -6,20 +6,33 @@ ai_content:
   l10n: true
 -->
 
-Attempts to bypass a model's configured safety or policy constraints.
+Jailbreaking is an attempt to bypass a model's configured safety, policy, or behavior restrictions through crafted inputs or interaction patterns.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+Jailbreaks may use role-play, obfuscation, translation, encoding, fictional framing, multi-turn pressure, or conflicting instructions. They target the model's behavior layer, but successful jailbreaks become operationally dangerous only when the surrounding system grants sensitive data or tools.
 
-## Practical use
+## Defensive use
 
-- Use the concept to define controls around data, tools, permissions, and model behavior.
-- Separate trusted instructions from untrusted user, web, email, document, or retrieval content.
-- Test abuse cases and failure modes before granting broader access or autonomy.
+- Red-team prompts and interaction flows.
+- Measure refusal consistency.
+- Test multilingual and encoded inputs.
+- Evaluate whether tool permissions remain protected after policy bypass.
+
+## Trade-offs and limitations
+
+No static prompt filter blocks every jailbreak. Stronger refusal behavior may reduce useful responses in legitimate safety, research, or educational contexts. Continuous evaluation is required as models and attacks change.
+
+## Common mistakes
+
+- Testing only famous public jailbreak prompts.
+- Treating model refusal as protection for external systems.
+- Ignoring indirect and multimodal attack paths.
+- Publishing sensitive bypass details without a clear defensive purpose.
 
 ## Related concepts
 
 - [Safety, Privacy, and Reliability](../../)
-- [Content Moderation](../content-moderation/)
+- [Prompt Injection](../prompt-injection/)
 - [Model Alignment](../model-alignment/)
+- [Evals](../../../evaluation-and-operations/sub/evals/)

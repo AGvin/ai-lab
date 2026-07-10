@@ -6,20 +6,35 @@ ai_content:
   l10n: true
 -->
 
-Choosing an acceptable balance between output quality and operational expense.
+Quality and cost trade-offs describe how model capability, context, inference settings, validation, and operational controls affect both result quality and total expense.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+Higher spending does not always improve useful quality. A larger model may solve difficult tasks with fewer retries, while a smaller model may handle routine extraction more efficiently. Retrieval, tools, and good workflow design can outperform simply increasing model size.
 
-## Practical use
+## Practical strategies
 
-- Use the concept to define measurable requirements before optimizing an AI workflow.
-- Evaluate with representative datasets, explicit criteria, and observable execution traces.
-- Track regressions, cost, latency, and reliability as models or configurations change.
+- Define minimum quality thresholds before optimizing cost.
+- Route tasks by capability requirement.
+- Use deterministic tools for exact operations.
+- Reduce irrelevant context rather than truncating critical evidence.
+- Cache stable results.
+- Escalate only failures or high-risk cases.
+
+## Trade-offs and limitations
+
+Cost includes API usage, hardware, latency, engineering, human review, and error impact. A low-cost workflow that creates expensive mistakes is not economical. Conversely, using the strongest model everywhere may provide little additional value.
+
+## Common mistakes
+
+- Comparing price per token without success rate.
+- Treating benchmark score differences as business value.
+- Removing validation to save latency.
+- Ignoring operational complexity of local deployment.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Latency and Throughput](../latency-and-throughput/)
-- [Benchmarks](../benchmarks/)
+- [Cost Management](../cost-management/)
+- [Model Selection](../model-selection/)
+- [Model Routing](../model-routing/)

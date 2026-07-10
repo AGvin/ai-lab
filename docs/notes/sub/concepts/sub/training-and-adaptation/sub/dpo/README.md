@@ -6,20 +6,32 @@ ai_content:
   l10n: true
 -->
 
-Direct Preference Optimization trains directly on preferred and rejected response pairs.
+Direct Preference Optimization, or DPO, trains a model directly from preferred and rejected response pairs without first fitting a separate reward model and running a full reinforcement-learning loop.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+DPO increases the relative likelihood of preferred responses while constraining the adapted model against a reference model. It simplifies preference training and is often easier to implement than RLHF.
 
 ## Practical use
 
-- Use the concept to decide whether model adaptation is necessary beyond prompting, tools, or retrieval.
-- Check base-model, dataset, format, runtime, and license compatibility before training.
-- Evaluate the adapted model against an unchanged baseline on representative tasks.
+- Refine an instruction-tuned model using comparison data.
+- Adjust style, refusal behavior, or task preferences.
+- Experiment with preference alignment using a simpler pipeline.
+
+## Trade-offs and limitations
+
+DPO still depends on high-quality preference pairs and an appropriate reference model. It can overfit annotation artifacts, reduce response diversity, or optimize subjective style instead of correctness.
+
+## Common mistakes
+
+- Using weak or inconsistent rejected responses.
+- Assuming DPO removes the need for evaluation.
+- Comparing DPO and RLHF without matching data and objectives.
+- Training on preference pairs that contain hidden factual errors.
 
 ## Related concepts
 
 - [Training and Adaptation](../../)
+- [Preference Optimization](../preference-optimization/)
 - [RLHF](../rlhf/)
-- [Distillation](../distillation/)
+- [Evaluation Datasets](../../../evaluation-and-operations/sub/evaluation-datasets/)
