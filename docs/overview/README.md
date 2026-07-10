@@ -12,13 +12,14 @@ Do not create `docs/README.md`.
 
 ## Documentation Nodes
 
-- [`docs/software/`](../software/) — AI-related software, inference tools, workflow engines, code editors, agents, assistants, automation tools, platforms, and models.
+- [`docs/software/`](../software/) — AI-related software, inference tools, workflow engines, development workflows, code editors, agents, assistants, automation tools, platforms, and models.
 - [`docs/notes/`](../notes/) — concepts, benchmarks, comparisons, and practical AI notes.
 
 ## Current Software Areas
 
 - [`inference/`](../software/sub/inference/) — local and self-hosted model execution.
 - [`workflow-engines/`](../software/sub/workflow-engines/) — AI workflow engines and UIs.
+- [`development-workflows/`](../software/sub/development-workflows/) — tools that structure AI-assisted software delivery through durable specifications, plans, tasks, validation, and implementation stages.
 - [`code-editors/`](../software/sub/code-editors/) — code editors and editor extension ecosystems.
 - [`agents/`](../software/sub/agents/) — agent-like AI systems.
 - [`agent-orchestration/`](../software/sub/agent-orchestration/) — systems, frameworks, runtimes, and control planes for coordinating or running AI agents.
