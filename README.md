@@ -67,6 +67,7 @@ This repository is an active public documentation lab. Content is added incremen
 - [`notes/`](./docs/notes/) — concepts, benchmarks, comparisons, and practical AI notes that are not themselves software or hardware documentation.
   - [`concepts/`](./docs/notes/sub/concepts/) — explanations of AI concepts.
     - [`lora/`](./docs/notes/sub/concepts/sub/lora/) — Low-Rank Adaptation concept.
+    - [`rag/`](./docs/notes/sub/concepts/sub/rag/) — Retrieval-Augmented Generation concept.
   - [`benchmarks/`](./docs/notes/sub/benchmarks/) — benchmark and leaderboard notes for AI models, providers, and systems.
     - [`livebench/`](./docs/notes/sub/benchmarks/sub/livebench/) — AI model benchmark.
     - [`open-llm-leaderboard/`](./docs/notes/sub/benchmarks/sub/open-llm-leaderboard/) — Open LLM leaderboard view from LLM Stats.
