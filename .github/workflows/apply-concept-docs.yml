@@ -4,6 +4,13 @@ on:
   push:
     branches:
       - docs/add-rag-concept
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - reopened
+      - synchronize
 
 permissions:
   contents: write
@@ -15,6 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: docs/add-rag-concept
           fetch-depth: 0
 
       - name: Generate documentation
