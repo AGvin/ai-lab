@@ -1,13 +1,13 @@
-# AI Lab
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:2702c063b80c162f695a96cb1933f73a80a95c4e
   mode: translated
 -->
+
+# AI Lab
 
 Практична AI lab для моделей, інструментів, локального inference, benchmarks, hardware notes та automation workflows.
 
@@ -24,21 +24,21 @@ l10n:
 
 ### Почати звідси
 
-- [`overview/`](../../docs/overview/l10n/uk_UA/) — documentation model репозиторію, поточна структура, asset rules та expansion guidance.
+- [`overview/`](../../docs/overview/l10n/uk_UA/) — модель документації репозиторію, поточна структура, правила assets та настанови щодо розширення.
 
-### Decision support
+### Підтримка рішень
 
-- [`agentic-systems/`](../../docs/notes/sub/comparisons/sub/agentic-systems/l10n/uk_UA/) — cross-category comparison agents, orchestration systems, coding-agent control centers та суміжних agentic AI tools.
-- [`comparisons/`](../../docs/notes/sub/comparisons/l10n/uk_UA/) — decision-support comparisons для моделей, інструментів, workflows, platforms та AI systems.
-- [`benchmarks/`](../../docs/notes/sub/benchmarks/l10n/uk_UA/) — benchmark and leaderboard references для оцінювання моделей, providers та AI systems.
+- [`agentic-systems/`](../../docs/notes/sub/comparisons/sub/agentic-systems/l10n/uk_UA/) — міжкатегорійне порівняння агентів, orchestration systems, coding-agent control centers та суміжних agentic AI tools.
+- [`comparisons/`](../../docs/notes/sub/comparisons/l10n/uk_UA/) — порівняння для прийняття рішень щодо моделей, інструментів, workflows, platforms та AI systems.
+- [`benchmarks/`](../../docs/notes/sub/benchmarks/l10n/uk_UA/) — benchmark і leaderboard references для оцінювання моделей, providers та AI systems.
 
 ### Software
 
 - [`software/`](../../docs/software/l10n/uk_UA/) — AI-related software, model platforms, inference tools, workflow engines, code editors, agents, assistants, automation tools та models.
-  - [`inference/`](../../docs/software/sub/inference/l10n/uk_UA/) — tools для local або self-hosted model execution.
+  - [`inference/`](../../docs/software/sub/inference/l10n/uk_UA/) — інструменти для локального або self-hosted model execution.
     - [`ollama/`](../../docs/software/sub/inference/sub/ollama/l10n/uk_UA/) — local та self-hosted model runtime.
     - [`lm-studio/`](../../docs/software/sub/inference/sub/lm-studio/l10n/uk_UA/) — desktop model runner та local model server.
-  - [`workflow-engines/`](../../docs/software/sub/workflow-engines/l10n/uk_UA/) — tools, що build, arrange або execute AI workflows.
+  - [`workflow-engines/`](../../docs/software/sub/workflow-engines/l10n/uk_UA/) — інструменти, що будують, компонують або виконують AI workflows.
     - [`comfy-ui/`](../../docs/software/sub/workflow-engines/sub/comfy-ui/l10n/uk_UA/) — node-based AI image generation workflow UI.
   - [`code-editors/`](../../docs/software/sub/code-editors/l10n/uk_UA/) — code editors та editor extension ecosystems для AI-assisted development.
     - [`cursor/`](../../docs/software/sub/code-editors/sub/cursor/l10n/uk_UA/) — AI-enabled code editor.
