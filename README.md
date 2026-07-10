@@ -35,7 +35,7 @@ This repository is an active public documentation lab. Content is added incremen
   - [`inference/`](./docs/software/sub/inference/) — tools for local or self-hosted model execution.
     - [`ollama/`](./docs/software/sub/inference/sub/ollama/) — local and self-hosted model runtime.
     - [`lm-studio/`](./docs/software/sub/inference/sub/lm-studio/) — desktop model runner and local model server.
-  - [`workflow-engines/`](./docs/software/sub/workflow-engines/) — tools that build, arranges, or executes AI workflows.
+  - [`workflow-engines/`](./docs/software/sub/workflow-engines/) — tools that build, arrange, or execute AI workflows.
     - [`comfy-ui/`](./docs/software/sub/workflow-engines/sub/comfy-ui/) — node-based AI image generation workflow UI.
   - [`code-editors/`](./docs/software/sub/code-editors/) — code editors and editor extension ecosystems used for AI-assisted development.
     - [`cursor/`](./docs/software/sub/code-editors/sub/cursor/) — AI-enabled code editor.
