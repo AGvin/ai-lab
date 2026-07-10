@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:9d547deaae42b56dab44ed5ce6f8b049e5a84bbbaa9166b7c2c60027d5ef292f
+  source_hash: sha256:6442a713f133fe3586820a408581de9b324de4f9b9a94eb2b09230bdab998772
   mode: translated
 -->
 
@@ -14,7 +14,7 @@ l10n:
 ## Переклади
 
 - [English](../../)
-- Українська — поточна
+- Українська
 
 ## Статус
 
