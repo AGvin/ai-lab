@@ -1,59 +1,36 @@
 # Few-Shot Prompting
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Prompting that includes a small number of examples to demonstrate desired behavior.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Few-shot prompting guides a model by including a small number of input-output examples that demonstrate the desired behavior.
 
 ## Core idea
 
-Prompting that includes a small number of examples to demonstrate desired behavior. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Examples communicate patterns that are difficult to specify fully in prose, such as classification boundaries, formatting conventions, terminology, or transformation style. The model infers the task pattern from the demonstrations and applies it to a new input without updating its weights.
 
-## How it works
+## Practical use
 
-- Few-shot prompting includes a small set of input-output examples before the new task.
-- Examples communicate formatting, classification boundaries, terminology, and edge-case behavior more concretely than abstract instructions alone.
-- The model infers a temporary pattern from the examples without changing its stored weights.
+- Demonstrate a required output structure.
+- Clarify edge cases in classification or extraction.
+- Establish domain-specific terminology or labeling conventions.
+- Show how to handle missing, ambiguous, or invalid input.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Design guidance
 
-## Why it matters
-
-Few-Shot Prompting affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Stabilize labels, style, or transformations when a schema alone is insufficient.
-- Demonstrate how ambiguous or exceptional cases should be handled.
-
-## Example
-
-A support triage prompt can show examples of urgent, normal, and informational messages before asking the model to classify a new email.
+Choose examples that are representative rather than merely easy. Include positive and negative cases when the distinction matters. Keep formatting consistent, and ensure examples do not contain accidental instructions that conflict with the task. For classification, balance labels enough that the model does not learn a misleading majority pattern.
 
 ## Trade-offs and limitations
 
-- Examples consume context and can accidentally teach unintended patterns.
-- A small example set may not cover the real input distribution.
+Examples consume context and may anchor the model too strongly to superficial wording. Poor examples can reduce performance more than no examples. Few-shot prompting also does not provide durable knowledge or guarantee identical behavior across model versions.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Few-Shot Prompting expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Providing examples that contradict the written instructions.
+- Using only ideal cases and omitting important failures.
+- Allowing the model to copy sensitive data from demonstrations.
+- Assuming more examples always improve results.
 
 ## Related concepts
 
 - [Model Usage and Generation](../../)
-- [Hallucinations](../hallucinations/)
-- [Sampling Parameters](../sampling-parameters/)
+- [Prompting](../prompting/)
+- [Context Window](../context-window/)
+- [Evaluation Datasets](../../../evaluation-and-operations/sub/evaluation-datasets/)

@@ -1,59 +1,32 @@
 # Attention
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-A mechanism that weights which input elements are most relevant for a model operation.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Attention is a mechanism that computes how strongly one representation should use information from other representations.
 
 ## Core idea
 
-A mechanism that weights which input elements are most relevant for a model operation. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+A query is compared with keys to produce attention scores. The scores are normalized and used to combine corresponding values. In transformers, many attention heads learn different patterns of interaction in parallel.
 
-## How it works
+## Practical roles
 
-- Attention compares query representations with key representations and uses the resulting scores to combine value representations.
-- Multiple attention heads can learn different relationships, such as local syntax, long-range references, or modality alignment.
-- Masks control which positions are visible, for example preventing an autoregressive decoder from reading future tokens.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Attention affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Understand how models connect information across a prompt or between modalities.
-- Interpret optimizations such as FlashAttention, grouped-query attention, and attention masks.
-
-## Example
-
-When resolving a pronoun, attention can combine the current token representation with an earlier noun phrase that is relevant to the prediction.
+- Connect a generated token to relevant earlier tokens.
+- Align text with image regions or audio features.
+- Combine encoder information during sequence generation.
+- Represent long-range dependencies more directly than simple recurrence.
 
 ## Trade-offs and limitations
 
-- High attention weight is not a complete explanation of why a model produced an answer.
-- Long context can still dilute or misprioritize relevant information.
+Standard full attention compares many pairs of positions and becomes expensive for long sequences. Attention scores are internal computation, not calibrated evidence of causal importance or human-readable reasoning.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Attention expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Interpreting the largest attention weight as the model's explanation.
+- Assuming attention alone stores permanent memory.
+- Ignoring masking and positional encoding.
+- Treating all attention implementations as computationally identical.
 
 ## Related concepts
 
 - [Foundations and Architecture](../../)
+- [Self-Attention](../self-attention/)
 - [Transformers](../transformers/)
-- [Mixture of Experts](../mixture-of-experts/)
+- [FlashAttention](../../../inference-and-serving/sub/flash-attention/)

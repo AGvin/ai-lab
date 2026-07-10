@@ -1,59 +1,37 @@
 # Video Generation
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Producing or transforming sequences of visual frames with generative models.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Video generation creates or transforms sequences of visual frames from text, images, video references, motion controls, or other conditioning.
 
 ## Core idea
 
-Producing or transforming sequences of visual frames with generative models. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+A useful video model must generate individual frame quality while maintaining temporal consistency. Models often operate in compressed spatiotemporal latent spaces and may use image references to anchor appearance or composition.
 
-## How it works
+## Practical use
 
-- Video generation extends image generation across time and must preserve motion and identity between frames.
-- Models may generate from text, an initial frame, keyframes, depth, pose, or reference video.
-- Temporal attention, latent representations, and motion modules help coordinate frames.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Video Generation affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Create short clips, animate images, prototype scenes, or transform video style.
-- Generate transitions and visual effects.
-
-## Example
-
-A still illustration is animated into a short camera movement while preserving the main character.
+- Short concept clips and storyboards.
+- Image animation.
+- Visual effects and background generation.
+- Video-to-video restyling.
+- Product and scene visualization.
 
 ## Trade-offs and limitations
 
-- Long clips can suffer from identity drift, inconsistent physics, and flicker.
-- Resolution, duration, and compute requirements are significant.
+Characters, objects, text, and geometry can drift between frames. Longer duration increases consistency difficulty and compute cost. Camera motion may conflict with object motion or prompt intent.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Good practice
 
-## Practical checklist
+Plan shots as short segments, use reference frames or controls where available, and inspect frame continuity before editing clips together. Preserve editable source assets and prompts for regeneration.
 
-- What problem is Video Generation expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+## Common mistakes
+
+- Requesting a complex multi-scene narrative in one generation.
+- Judging only a thumbnail or selected frame.
+- Ignoring flicker, identity drift, and physical continuity.
+- Treating generated footage as evidence of real events.
 
 ## Related concepts
 
 - [Multimodal and Generative Media](../../)
-- [Text-to-Speech](../text-to-speech/)
-- [Latent Space](../latent-space/)
+- [Image Generation](../image-generation/)
+- [Multimodal Context](../multimodal-context/)
+- [Provenance](../../../safety-privacy-and-reliability/sub/provenance/)

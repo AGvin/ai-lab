@@ -1,59 +1,34 @@
 # Secret Handling
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Protecting credentials, tokens, keys, and other sensitive operational data.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Secret handling covers the storage, delivery, use, rotation, and redaction of credentials, tokens, keys, and other sensitive operational values.
 
 ## Core idea
 
-Protecting credentials, tokens, keys, and other sensitive operational data. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Models should receive only the minimum secret-derived capability needed for a task, not raw long-lived credentials. The execution layer can use a credential without exposing it in prompt context or tool output.
 
-## How it works
+## Good practice
 
-- Secret handling keeps credentials out of prompts, logs, source control, and model-visible context unless strictly required.
-- Secrets are injected at execution time through controlled stores and redacted from errors and traces.
-- Tools use scoped credentials without returning secret values to the model.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Secret Handling affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Protect API keys, tokens, passwords, certificates, and private configuration.
-- Build agents that act on services without learning reusable credentials.
-
-## Example
-
-A GitHub connector executes an authenticated request while the model receives only the normalized result, not the token.
+- Store secrets in a dedicated secret manager.
+- Use short-lived, scoped credentials.
+- Redact logs, traces, errors, and tool results.
+- Prevent secrets from entering prompts or embeddings.
+- Rotate credentials after suspected exposure.
+- Separate production and development credentials.
 
 ## Trade-offs and limitations
 
-- Redaction can miss transformed or partial secrets.
-- A highly privileged tool can expose data even if the credential string itself is hidden.
+Secret brokers and short-lived tokens add infrastructure and integration work. Redaction must balance security with enough diagnostic information for operators.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Secret Handling expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Placing API keys in system prompts.
+- Including `.env` files in model context.
+- Logging complete HTTP headers or connection strings.
+- Assuming a private model provider makes secret exposure harmless.
 
 ## Related concepts
 
 - [Safety, Privacy, and Reliability](../../)
-- [Sandboxing](../sandboxing/)
+- [Least Privilege](../least-privilege/)
 - [Data Privacy](../data-privacy/)
+- [Tracing](../../../evaluation-and-operations/sub/tracing/)

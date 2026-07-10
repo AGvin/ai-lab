@@ -1,59 +1,37 @@
 # Trust Boundaries
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Explicit separation between trusted instructions, trusted systems, users, and untrusted data.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+A trust boundary separates components, identities, instructions, and data that have different levels of authority or reliability.
 
 ## Core idea
 
-Explicit separation between trusted instructions, trusted systems, users, and untrusted data. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+AI systems should distinguish application policy, authenticated user intent, tool results, retrieved documents, public web content, and model-generated text. Crossing a trust boundary requires validation rather than assuming all context is equally authoritative.
 
-## How it works
+## Examples
 
-- A trust boundary marks where data, authority, identity, or permissions change.
-- System instructions, authenticated application state, user input, retrieved documents, and tool output should have distinct trust levels.
-- Crossing a boundary requires validation and often authorization.
+- System policy versus user input.
+- Authenticated account data versus public documents.
+- Read-only retrieval versus write-capable tools.
+- Model proposals versus executed operations.
+- One tenant's data versus another tenant's context.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Practical use
 
-## Why it matters
-
-Trust Boundaries affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Design agent architectures that do not let documents become policy.
-- Identify where secrets or write permissions must be isolated.
-
-## Example
-
-Repository files are trusted as project data but not allowed to override owner-approved Git workflow rules.
+Represent trust in architecture and code, not only prompt wording. Attach identity and provenance to data. Perform authorization at tool execution time. Strip or isolate instruction-like content when a component needs only facts.
 
 ## Trade-offs and limitations
 
-- Implicit boundaries are easily missed as integrations grow.
-- A trusted service can still return compromised or stale data.
+More boundaries increase implementation complexity and can reduce workflow convenience. Poorly designed boundaries may still leak data through logs, caches, or shared state.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Trust Boundaries expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Treating all retrieved content as trusted.
+- Letting the model decide authorization.
+- Passing raw tool output between tenants.
+- Combining public data and secrets in one prompt without isolation.
 
 ## Related concepts
 
 - [Safety, Privacy, and Reliability](../../)
-- [Indirect Prompt Injection](../indirect-prompt-injection/)
 - [Least Privilege](../least-privilege/)
+- [Prompt Injection](../prompt-injection/)
+- [Data Privacy](../data-privacy/)

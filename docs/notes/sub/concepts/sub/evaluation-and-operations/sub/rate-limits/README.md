@@ -1,59 +1,37 @@
 # Rate Limits
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Controls that restrict request volume over a period of time.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Rate limits restrict the number or volume of requests allowed during a time period.
 
 ## Core idea
 
-Controls that restrict request volume over a period of time. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Limits protect providers and applications from overload, runaway agents, abuse, and unexpected cost. They may be expressed as requests per minute, input or output tokens per minute, concurrent requests, tool actions, or monetary budgets.
 
-## How it works
+## Practical use
 
-- Rate limits cap requests, tokens, concurrency, or spend over a time interval.
-- Clients handle limits with queues, backoff, prioritization, and budgets.
-- Limits may apply per account, model, project, region, or endpoint.
+- Bound model and tool consumption per user or tenant.
+- Prevent agent loops from exhausting quotas.
+- Protect downstream databases and APIs.
+- Separate interactive and batch traffic.
+- Enforce fair use across shared infrastructure.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Good practice
 
-## Why it matters
-
-Rate Limits affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Protect infrastructure and control cost.
-- Design graceful behavior under provider quotas.
-
-## Example
-
-An agent queue pauses low-priority tasks when the model provider returns a retry-after value.
+Return clear retry information, use exponential backoff with jitter, and queue only work that remains useful after waiting. Apply limits at several layers: user, workflow, model provider, and sensitive tool.
 
 ## Trade-offs and limitations
 
-- Burst traffic can exceed limits even when daily volume is low.
-- Retries without backoff can worsen throttling.
+Strict limits can reduce usability during legitimate bursts. Queues smooth load but increase latency and may process stale requests. Distributed enforcement requires shared counters or coordinated gateways.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Rate Limits expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Retrying immediately after a rate-limit response.
+- Limiting requests but not tokens or generated output.
+- Sharing one quota across critical and non-critical workloads.
+- Allowing model-generated loops to bypass user-level limits.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Caching](../caching/)
-- [LLM as a Judge](../llm-as-a-judge/)
+- [Retries](../../../agents-and-automation/sub/retries/)
+- [Cost Management](../cost-management/)
+- [Model Serving](../../../inference-and-serving/sub/model-serving/)

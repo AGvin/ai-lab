@@ -1,29 +1,18 @@
 # Safety, Privacy, and Reliability
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Concepts for controlling model behavior, protecting data, and reducing operational risk in AI systems.
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Essential
 
 - [`prompt-injection/`](./sub/prompt-injection/) — Input designed to override or manipulate an AI system's intended instructions.
-- [`indirect-prompt-injection/`](./sub/indirect-prompt-injection/) — Malicious or conflicting instructions embedded in external content processed by an AI system.
+- [`indirect-prompt-injection/`](./sub/indirect-prompt-injection/) — Malicious or conflicting instructions embedded in external content.
 - [`trust-boundaries/`](./sub/trust-boundaries/) — Explicit separation between trusted instructions, trusted systems, users, and untrusted data.
 - [`least-privilege/`](./sub/least-privilege/) — Granting an AI system only the permissions required for its current task.
 - [`sandboxing/`](./sub/sandboxing/) — Isolating execution so failures or malicious behavior have limited impact.
 - [`secret-handling/`](./sub/secret-handling/) — Protecting credentials, tokens, keys, and other sensitive operational data.
-- [`data-privacy/`](./sub/data-privacy/) — Controlling how personal, confidential, or sensitive data is collected, processed, retained, and shared.
+- [`data-privacy/`](./sub/data-privacy/) — Controlling how personal or confidential data is collected, processed, retained, and shared.
 - [`retrieval-poisoning/`](./sub/retrieval-poisoning/) — Manipulating indexed knowledge so retrieval supplies misleading or malicious context.
 
 ## Useful

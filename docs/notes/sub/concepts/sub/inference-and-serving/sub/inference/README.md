@@ -1,59 +1,37 @@
 # Inference
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Running a trained model to process input and produce output.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Inference is the process of running a trained model on input data to produce predictions, embeddings, classifications, or generated output.
 
 ## Core idea
 
-Running a trained model to process input and produce output. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Training changes model parameters; inference uses the resulting parameters. For autoregressive language models, inference usually has two phases: prompt processing, often called prefill, and token-by-token generation, often called decode. These phases stress hardware differently.
 
-## How it works
+## Main resource factors
 
-- Inference applies trained model weights to new input without performing ordinary training updates.
-- The runtime tokenizes or encodes input, executes model layers, and decodes output.
-- Autoregressive generation repeats forward passes while reusing cached state.
+- Model weight size and numerical precision.
+- Context length and KV-cache size.
+- Batch size and number of concurrent requests.
+- CPU, GPU, accelerator, and memory bandwidth.
+- Runtime kernels and model architecture.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Practical use
 
-## Why it matters
-
-Inference affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Run local or hosted models for chat, embeddings, classification, vision, or generation.
-- Compare runtime and hardware configurations for the same model.
-
-## Example
-
-Ollama loads a GGUF model and performs inference locally when a chat request arrives.
+Inference configuration determines whether a model fits in available RAM or VRAM, how quickly the first token appears, and how many tokens or requests can be served. Benchmark the actual model, quantization, context length, and workload instead of relying on theoretical hardware throughput.
 
 ## Trade-offs and limitations
 
-- Inference quality is constrained by the trained model and supplied context.
-- Memory, latency, and throughput depend on precision, context, batching, and hardware.
+Reducing precision can lower memory use but may affect quality. Increasing batch size often improves throughput while increasing latency. Longer context increases processing cost and cache memory. Some models require runtime-specific features or unsupported operators.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Inference expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Comparing tokens per second across different models or context lengths.
+- Measuring only generation speed and ignoring prompt processing.
+- Assuming a model that fits in storage also fits in memory.
+- Ignoring warm-up and model-loading time.
 
 ## Related concepts
 
 - [Inference and Serving](../../)
-- [Speculative Decoding](../speculative-decoding/)
+- [Model Loading](../model-loading/)
+- [Performance Metrics](../performance-metrics/)
 - [Quantization](../quantization/)

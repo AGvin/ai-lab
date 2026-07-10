@@ -1,59 +1,34 @@
 # Reproducibility
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-The ability to repeat an evaluation or workflow with comparable conditions and results.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Reproducibility is the ability to repeat an experiment or workflow under documented conditions and obtain comparable results.
 
 ## Core idea
 
-The ability to repeat an evaluation or workflow with comparable conditions and results. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Generative systems are probabilistic and providers may update models, so byte-identical output is not always possible. Practical reproducibility means recording enough information to explain and compare changes: model version, prompt, parameters, data, tools, runtime, hardware, and evaluation method.
 
-## How it works
+## Practical requirements
 
-- Reproducibility records versions, prompts, seeds, datasets, runtime settings, hardware, and dependencies needed to repeat a result.
-- Deterministic decoding can reduce variation, but hosted services and parallel hardware may still introduce nondeterminism.
-- Artifacts and manifests preserve the exact evaluation inputs.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Reproducibility affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Compare experiments and investigate regressions.
-- Share benchmark results with enough context for independent verification.
-
-## Example
-
-A benchmark records model revision, quantization, runtime commit, prompt set, seed, and GPU.
+- Pin model and dependency versions where possible.
+- Store prompts and schemas in version control.
+- Version datasets and retrieval indexes.
+- Record seeds and sampling parameters.
+- Capture hardware and runtime configuration for performance tests.
+- Preserve raw results before aggregation.
 
 ## Trade-offs and limitations
 
-- Some provider implementations cannot be reproduced exactly.
-- Reproduction of output does not prove the conclusion generalizes.
+Hosted models may change behind stable names. Parallel hardware kernels can be nondeterministic. Exact reproducibility may be expensive or impossible, so define acceptable tolerance for the task.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Reproducibility expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Recording only the model family name.
+- Changing prompts and datasets in the same comparison.
+- Assuming a seed guarantees identical hosted output.
+- Publishing aggregate scores without raw configuration.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Retrieval Evaluation](../retrieval-evaluation/)
 - [Evals](../evals/)
+- [Tracing](../tracing/)
+- [Sampling Parameters](../../../model-usage-and-generation/sub/sampling-parameters/)

@@ -1,59 +1,37 @@
 # Constrained Generation
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Generation restricted by a grammar, schema, token set, or other formal constraint.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Constrained generation restricts which tokens a model may emit so the output follows a grammar, schema, regular language, or permitted value set.
 
 ## Core idea
 
-Generation restricted by a grammar, schema, token set, or other formal constraint. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Instead of asking the model to imitate a format, the decoder masks invalid token choices during generation. This can ensure syntactically valid JSON, match a formal grammar, or restrict a field to known values. The constraint controls form, not factual accuracy or business validity.
 
-## How it works
+## Practical use
 
-- Constrained generation modifies token selection so output must follow an allowed grammar, regular expression, finite set, or schema.
-- At each step, invalid next tokens are masked before sampling.
-- This can guarantee structural validity while leaving factual and semantic validity to application checks.
+- JSON or typed API payloads.
+- SQL or domain-specific languages with a defined grammar.
+- Enumerated classifications.
+- Configuration files that must parse reliably.
+- Tool arguments that will be validated before execution.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Design considerations
 
-## Why it matters
-
-Constrained Generation affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Produce parsable JSON, SQL fragments, command arguments, or domain-specific syntax.
-- Prevent output outside an enumerated set of labels.
-
-## Example
-
-A router can constrain the model to one of `search`, `calculate`, or `respond` instead of parsing an unrestricted sentence.
+Keep the grammar aligned with the tokenizer and runtime implementation. Avoid schemas with excessive nesting or ambiguous alternatives. Apply semantic validation after decoding, because a structurally valid date, path, or identifier may still be invalid or unsafe.
 
 ## Trade-offs and limitations
 
-- Strong constraints can make generation slower or impossible when the schema conflicts with the task.
-- Valid syntax does not prove safe or correct meaning.
+Constraints reduce formatting failures but can slow decoding or force the model into an allowed structure even when it lacks enough information. Very strict grammars may also prevent useful explanations or uncertainty fields.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Constrained Generation expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Treating valid syntax as verified meaning.
+- Allowing unrestricted strings in fields later used as commands or paths.
+- Using a schema so complex that the model cannot populate it reliably.
+- Omitting fallback behavior when generation cannot satisfy the constraint.
 
 ## Related concepts
 
 - [Model Usage and Generation](../../)
-- [Model Capabilities and Limitations](../model-capabilities-and-limitations/)
-- [Chain of Thought](../chain-of-thought/)
+- [Structured Output](../structured-output/)
+- [Function Calling](../../../agents-and-automation/sub/function-calling/)
+- [Guardrails](../../../safety-privacy-and-reliability/sub/guardrails/)

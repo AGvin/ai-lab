@@ -1,59 +1,37 @@
 # Knowledge Graphs
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Structured representations of entities and their relationships.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+A knowledge graph represents entities and their relationships as structured nodes and edges, often with types, properties, and provenance.
 
 ## Core idea
 
-Structured representations of entities and their relationships. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Graphs make relationships directly queryable. Instead of searching only for text that mentions two concepts, a graph can represent that one service depends on another, a person owns a project, or a document supersedes an older version.
 
-## How it works
+## Practical use
 
-- A knowledge graph stores entities and typed relationships, often with attributes and provenance.
-- Queries follow edges or patterns to answer structured relationship questions.
-- Graphs may be curated manually, extracted from text, synchronized from databases, or built from several sources.
+- Organizational and asset relationships.
+- Dependency and impact analysis.
+- Entity resolution across multiple datasets.
+- Multi-hop queries and graph-based retrieval.
+- Integrating structured and unstructured knowledge.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Design considerations
 
-## Why it matters
-
-Knowledge Graphs affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Represent dependencies, ownership, taxonomies, and multi-hop relationships.
-- Provide structured context for search, analytics, and GraphRAG.
-
-## Example
-
-A project graph can connect repositories to services, teams, environments, and deployment pipelines.
+Define an ontology or schema that explains entity and relationship types. Assign stable identifiers. Track where every fact came from and when it was valid. Separate asserted facts from inferred relationships.
 
 ## Trade-offs and limitations
 
-- The graph can become stale or encode extraction errors.
-- A rigid schema may fail to capture nuance present in source documents.
+Knowledge graphs require governance, entity resolution, and continuous updates. Automatically extracted graphs can contain duplicates and incorrect edges. A rigid ontology may also fail to represent evolving domain knowledge.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Knowledge Graphs expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Creating nodes from every noun without a stable identity strategy.
+- Omitting temporal validity and source provenance.
+- Treating graph completeness as guaranteed.
+- Using a graph where a relational table or document index would be simpler.
 
 ## Related concepts
 
 - [Retrieval and Knowledge](../../)
 - [GraphRAG](../graph-rag/)
-- [RAG (Retrieval-Augmented Generation)](../rag/)
+- [Metadata Filtering](../metadata-filtering/)
+- [Provenance](../../../safety-privacy-and-reliability/sub/provenance/)

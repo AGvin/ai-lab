@@ -1,59 +1,35 @@
 # Encoder and Decoder Architectures
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
+Encoders transform input into contextual representations, while decoders generate or predict output from prior context and optional encoded input.
 
-Model structures that encode inputs, generate outputs, or combine both roles.
+## Main forms
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+- **Encoder-only:** reads the full input bidirectionally and produces representations for classification, retrieval, or extraction.
+- **Decoder-only:** predicts tokens autoregressively and is widely used for general-purpose language generation.
+- **Encoder-decoder:** encodes an input sequence and generates a separate output sequence, common in translation and summarization.
 
 ## Core idea
 
-Model structures that encode inputs, generate outputs, or combine both roles. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Architecture influences training objectives, inference behavior, and suitability for tasks. Decoder-only models are flexible generators, while encoder models can be efficient for embeddings and classification.
 
-## How it works
+## Practical use
 
-- An encoder converts input into contextual representations; a decoder generates or reconstructs output from representations and prior output tokens.
-- Encoder-only models are common for understanding tasks, decoder-only models for open-ended generation, and encoder-decoder models for input-to-output transformations.
-- Cross-attention allows a decoder to consult encoder representations while producing each output step.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Encoder and Decoder Architectures affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Choose model families suited to classification, embedding, translation, summarization, or generation.
-- Understand why some models expose only embeddings while others support free-form text generation.
-
-## Example
-
-A translation model can encode the source sentence once and decode the target sentence while attending to the encoded source.
+Choose architecture based on the operation rather than model popularity. A small encoder may outperform a large generator for embeddings or reranking. Encoder-decoder models may provide efficient controlled transformations.
 
 ## Trade-offs and limitations
 
-- The labels describe architecture, not task quality or deployment efficiency.
-- Modern systems may combine components in ways that do not fit a simple three-way classification.
+Different architectures use context and cache memory differently. Parameter counts are not directly comparable when model roles differ. A generative decoder can emulate classification but may be slower and less deterministic than a dedicated encoder.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Encoder and Decoder Architectures expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Using a chat model for every text-processing task.
+- Comparing encoder and decoder benchmark scores without task context.
+- Assuming decoder-only architecture means no internal representations are learned.
+- Confusing model architecture with product interface.
 
 ## Related concepts
 
 - [Foundations and Architecture](../../)
-- [Self-Attention](../self-attention/)
-- [Dense and Sparse Models](../dense-and-sparse-models/)
+- [Transformers](../transformers/)
+- [Embeddings](../../../retrieval-and-knowledge/sub/embeddings/)
+- [Large Language Models](../large-language-models/)

@@ -1,59 +1,32 @@
 # Preference Optimization
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Training methods that favor responses judged better according to preference data.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Preference optimization adjusts model behavior using comparisons or scores that indicate which responses are preferred.
 
 ## Core idea
 
-Training methods that favor responses judged better according to preference data. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Supervised fine-tuning teaches the model to imitate target answers. Preference optimization instead uses relative judgments, such as one response being more helpful, safe, concise, or accurate than another. Methods include RLHF, DPO, and related objectives.
 
-## How it works
+## Practical use
 
-- Preference optimization uses comparisons or scores indicating which responses are preferred.
-- The method adjusts behavior toward preferred outputs while usually constraining divergence from a reference model.
-- Implementations include reinforcement-learning and direct optimization approaches.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Preference Optimization affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Improve helpfulness, style, safety, and response ranking after SFT.
-- Align model behavior with explicit product criteria.
-
-## Example
-
-Annotators choose the clearer of two support replies and those pairs train the model’s response preference.
+- Improve instruction following and conversational usefulness.
+- Shape refusal and safety behavior.
+- Reduce undesirable styles or verbosity.
+- Align output with task-specific quality criteria.
 
 ## Trade-offs and limitations
 
-- Preference data can encode annotator bias or reward superficial traits.
-- Optimizing one preference metric can reduce other useful capabilities.
+Preference labels are subjective and can encode annotator or policy bias. Optimizing a proxy preference score may reduce diversity, cause over-refusal, or reward persuasive wording over factual correctness.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Preference Optimization expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Treating preferences as objective truth.
+- Collecting comparisons without clear criteria.
+- Using one judge model as the only source of labels.
+- Evaluating only preference win rate and ignoring factual or task metrics.
 
 ## Related concepts
 
 - [Training and Adaptation](../../)
-- [Pretraining](../pretraining/)
 - [RLHF](../rlhf/)
+- [DPO](../dpo/)
+- [Human Evaluation](../../../evaluation-and-operations/sub/human-evaluation/)

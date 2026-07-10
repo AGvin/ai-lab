@@ -1,59 +1,38 @@
 # Neural Networks
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Parameterized computational structures composed of connected layers or processing units.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+A neural network is a parameterized function composed of layers that transform input values into outputs.
 
 ## Core idea
 
-Parameterized computational structures composed of connected layers or processing units. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Each layer applies weighted operations and nonlinear transformations. During training, optimization adjusts the weights so the network produces outputs that reduce a chosen loss. The word “neural” is historical inspiration; artificial networks are mathematical systems rather than biological replicas.
 
-## How it works
+## Main components
 
-- A neural network transforms input through layers of weighted operations and nonlinear functions.
-- Weights are learned during training; activations are the intermediate values produced for a particular input.
-- Architectures differ in connectivity and computation, including feed-forward, convolutional, recurrent, transformer, and graph-based networks.
+- Input representations.
+- Trainable weights and biases.
+- Linear or convolutional operations.
+- Nonlinear activation functions.
+- Normalization and residual connections.
+- An output layer suited to the task.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Practical use
 
-## Why it matters
-
-Neural Networks affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Interpret terms such as weights, layers, activations, parameters, and hidden representations.
-- Relate model size and architecture to memory, compute, and adaptation choices.
-
-## Example
-
-A small classifier may transform numeric features through several layers and output probabilities for each class.
+Neural networks can approximate complex functions and learn representations directly from data. Different architectures specialize in sequences, images, graphs, audio, control, or multimodal data.
 
 ## Trade-offs and limitations
 
-- The biological analogy is loose and should not be treated as a literal model of the brain.
-- Internal representations can be difficult to interpret and may encode unwanted correlations.
+Large networks require substantial data and compute. Their behavior is distributed across many parameters, which complicates interpretation and debugging. Training can be unstable without appropriate initialization, normalization, and optimization.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Neural Networks expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Interpreting individual parameters as human-readable knowledge.
+- Assuming a larger parameter count guarantees better task performance.
+- Ignoring preprocessing and data distribution.
+- Treating model confidence as calibrated probability.
 
 ## Related concepts
 
 - [Foundations and Architecture](../../)
 - [Deep Learning](../deep-learning/)
-- [Self-Attention](../self-attention/)
+- [Attention](../attention/)
+- [Dense and Sparse Models](../dense-and-sparse-models/)

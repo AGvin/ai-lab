@@ -1,59 +1,32 @@
 # Multi-Agent Systems
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Systems in which multiple agents coordinate, compete, review, or specialize.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+A multi-agent system coordinates several agents that may specialize, collaborate, compete, delegate, or review one another.
 
 ## Core idea
 
-Systems in which multiple agents coordinate, compete, review, or specialize. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Multiple agents are useful when tasks have genuinely different roles, tools, permissions, or parallel workstreams. Examples include a research agent gathering evidence, an implementation agent producing changes, and a reviewer checking the result. The agents still require a shared protocol, state model, and conflict-resolution mechanism.
 
-## How it works
+## Practical use
 
-- A multi-agent system assigns different roles, tools, contexts, or objectives to several agents.
-- Agents may collaborate sequentially, debate, review one another, or coordinate through shared state.
-- An orchestrator controls message flow, permissions, termination, and conflict resolution.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Multi-Agent Systems affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Separate planning, implementation, review, and domain-specialist roles.
-- Parallelize independent research or evaluation tasks.
-
-## Example
-
-One agent proposes a code change, another runs targeted review checks, and an orchestrator decides whether the result needs human attention.
+- Parallelize independent document or repository analysis.
+- Separate generation from review.
+- Assign domain-specific tools and prompts to specialized roles.
+- Simulate alternative proposals before selecting one.
 
 ## Trade-offs and limitations
 
-- Multiple agents increase token use, latency, and coordination failure modes.
-- Agents can amplify each other’s errors instead of providing independent verification.
+Multi-agent systems multiply model calls, coordination overhead, and failure modes. Agents can reinforce one another's errors because they share similar models or context. More agents do not automatically produce independent evidence.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Multi-Agent Systems expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Using multiple agents for a task that can be a simple loop.
+- Giving every agent the same role and information.
+- Allowing agents to modify shared state without coordination.
+- Treating agent agreement as proof of correctness.
 
 ## Related concepts
 
 - [Agents and Automation](../../)
-- [Autonomy Levels](../autonomy-levels/)
-- [AI Agents](../ai-agents/)
+- [Task Decomposition](../task-decomposition/)
+- [Agent State](../agent-state/)
+- [Verification and Reflection](../verification-and-reflection/)

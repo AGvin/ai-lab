@@ -1,59 +1,36 @@
 # CPU Inference
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Running model computation primarily on general-purpose processors.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+CPU inference runs most model computation on general-purpose processor cores and system memory.
 
 ## Core idea
 
-Running model computation primarily on general-purpose processors. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Large language-model inference is often limited by memory bandwidth rather than only arithmetic throughput. CPUs can run quantized models efficiently enough for development, low-volume services, embeddings, or devices without suitable GPUs. Vector instruction support and memory-channel bandwidth strongly affect performance.
 
-## How it works
+## Practical use
 
-- CPU inference executes model kernels on general-purpose processor cores and uses system RAM.
-- Vector instruction sets, memory bandwidth, thread count, NUMA layout, and quantization strongly affect speed.
-- CPU runtimes often use optimized matrix libraries and memory-mapped GGUF files.
+- Run local models on hardware without a discrete GPU.
+- Serve low-concurrency workloads with large system RAM.
+- Execute small embedding, classification, or reranking models.
+- Use CPU layers alongside partial GPU offloading.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Design considerations
 
-## Why it matters
-
-CPU Inference affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Run smaller or quantized models without a supported GPU.
-- Deploy embeddings, classifiers, or low-traffic services on ordinary servers.
-
-## Example
-
-A mini PC can serve a small four-bit model entirely from RAM for occasional home automation requests.
+Match thread count to physical cores and runtime behavior. Excessive threads can create contention. Use fast memory, appropriate NUMA placement on multi-socket systems, and optimized kernels for the processor architecture.
 
 ## Trade-offs and limitations
 
-- Large generative models may be much slower than on a suitable GPU.
-- Adding threads can stop helping when memory bandwidth is saturated.
+CPU inference usually has lower generation throughput than a capable GPU, but system RAM can hold larger models at lower cost. High utilization may affect other workloads and increase power consumption.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is CPU Inference expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Assuming more threads always improve speed.
+- Comparing laptop burst performance with sustained server operation.
+- Ignoring memory bandwidth and NUMA topology.
+- Using an unoptimized generic build without vector extensions.
 
 ## Related concepts
 
 - [Inference and Serving](../../)
-- [Model Loading](../model-loading/)
 - [GPU Inference](../gpu-inference/)
+- [GPU Offloading](../gpu-offloading/)
+- [Quantization](../quantization/)

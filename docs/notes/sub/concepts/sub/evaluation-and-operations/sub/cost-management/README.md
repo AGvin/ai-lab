@@ -1,59 +1,38 @@
 # Cost Management
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
+Cost management measures, attributes, forecasts, and controls spending across models, infrastructure, storage, retrieval, and tools.
 
-Measuring and controlling model, infrastructure, storage, and tool expenses.
+## Cost sources
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+- Input, output, cached, and reasoning tokens.
+- GPU or CPU runtime and idle capacity.
+- Embedding and reranking operations.
+- Vector storage, logs, and traces.
+- External APIs and tool calls.
+- Human review and operational maintenance.
 
 ## Core idea
 
-Measuring and controlling model, infrastructure, storage, and tool expenses. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+The cheapest model request is not necessarily the cheapest successful workflow. A weak model may require more retries, human correction, or larger prompts. Cost should therefore be measured per accepted task result.
 
-## How it works
+## Practical use
 
-- Cost management attributes spend to models, tokens, tools, storage, compute, and workflows.
-- Budgets and alerts operate at user, project, task, or environment level.
-- Optimization considers quality and engineering time rather than token price alone.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Cost Management affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Choose model routes and context sizes economically.
-- Detect unexpected loops, retries, or high-volume users.
-
-## Example
-
-A workflow records estimated cost per successful task and blocks runs that exceed a configured budget.
+Tag usage by user, project, model, and workflow. Set budgets and alerts. Cache stable work, route simple tasks to smaller models, limit context, and monitor anomalous agent loops.
 
 ## Trade-offs and limitations
 
-- Cheaper models can increase total cost if they require more retries or human correction.
-- Provider pricing changes and hidden infrastructure costs complicate estimates.
+Aggressive cost reduction can lower quality, reliability, or privacy. Local infrastructure replaces API charges with hardware, electricity, maintenance, and capacity-planning costs.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Cost Management expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Counting model tokens but ignoring tool and human costs.
+- Comparing local and hosted inference only by marginal request price.
+- Optimizing average cost while rare failures are extremely expensive.
+- Allowing unlimited output and retries.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Tracing](../tracing/)
-- [Latency and Throughput](../latency-and-throughput/)
+- [Quality and Cost Trade-Offs](../quality-cost-tradeoffs/)
+- [Model Routing](../model-routing/)
+- [Observability](../observability/)

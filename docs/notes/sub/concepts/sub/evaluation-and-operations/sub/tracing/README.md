@@ -1,59 +1,38 @@
 # Tracing
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Recording the sequence of model, tool, retrieval, and workflow operations for one execution.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Tracing records the ordered sequence of model calls, retrieval operations, tool executions, validations, and state transitions for one workflow execution.
 
 ## Core idea
 
-Recording the sequence of model, tool, retrieval, and workflow operations for one execution. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+A trace shows causal structure that aggregate metrics cannot. It can reveal that a poor answer began with a weak retrieval query, a tool timeout, a malformed argument, or a model decision based on stale state.
 
-## How it works
+## Typical trace data
 
-- Tracing records the ordered spans of one request across retrieval, model calls, tools, and workflow nodes.
-- Each span contains timing, status, identifiers, and selected metadata.
-- Trace correlation connects retries and nested operations to the initiating request.
+- Start and end time for each span.
+- Parent-child relationships between operations.
+- Model, prompt, tool, and configuration versions.
+- Token, cost, latency, and status metadata.
+- Source identifiers and validation outcomes.
+- Redacted errors and retry history.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Practical use
 
-## Why it matters
-
-Tracing affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Find where an agent spent time or made a wrong decision.
-- Reconstruct multi-step execution for debugging and audit.
-
-## Example
-
-A trace shows that retrieval returned the correct file but a later prompt omitted it before generation.
+Use traces to debug agent loops, compare model versions, analyze latency, and build evaluation datasets from real failures. Retain enough context to reproduce the issue without storing unnecessary sensitive content.
 
 ## Trade-offs and limitations
 
-- Full prompts and outputs can create privacy and storage risks.
-- Sampling traces can miss rare failures.
+High-cardinality trace data is expensive. Full prompt capture improves diagnosis but increases privacy risk. Sampling may miss rare failures, so critical errors should be retained separately.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Tracing expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Logging tool calls without results or status.
+- Omitting parent-child relationships.
+- Storing raw credentials in trace attributes.
+- Using traces as permanent memory for the agent.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
 - [Observability](../observability/)
-- [Cost Management](../cost-management/)
+- [Agent State](../../../agents-and-automation/sub/agent-state/)
+- [Reproducibility](../reproducibility/)

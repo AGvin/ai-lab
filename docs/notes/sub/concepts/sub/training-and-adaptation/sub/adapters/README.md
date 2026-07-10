@@ -1,59 +1,32 @@
 # Adapters
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Small trainable modules attached to a base model for reusable specialization.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Adapters are small trainable components attached to a frozen or mostly frozen base model to provide reusable specialization.
 
 ## Core idea
 
-Small trainable modules attached to a base model for reusable specialization. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+An adapter inserts additional parameters into selected model layers or modifies their computation. Different adapters can be loaded for different tasks without storing a complete model copy. LoRA is one widely used adapter-style technique, but adapter methods can use other architectures.
 
-## How it works
+## Practical use
 
-- Adapters are small trainable components inserted into or attached to a frozen base network.
-- Different adapters can be selected, composed, or swapped at runtime when supported.
-- Their architecture may use bottleneck layers, low-rank updates, or other parameter-efficient structures.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Adapters affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Maintain modular specializations for one base model.
-- Distribute task-specific changes as compact artifacts.
-
-## Example
-
-A single base model can load separate adapters for legal summarization and customer-support tone.
+- Maintain task-specific model variants.
+- Switch domain behavior at runtime.
+- Distribute small adaptation artifacts.
+- Combine a stable base model with tenant or product specialization.
 
 ## Trade-offs and limitations
 
-- Adapter formats are not universally interchangeable.
-- Loading many adapters can complicate serving and testing.
+Adapters remain coupled to the base-model architecture and revision. Runtime support for loading, merging, stacking, or switching adapters varies. Combining several adapters may produce interference rather than additive capabilities.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Adapters expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Treating adapters as independent of the base model.
+- Loading incompatible module names or dimensions.
+- Stacking adapters without evaluating interactions.
+- Publishing an adapter without documenting required base weights and license.
 
 ## Related concepts
 
 - [Training and Adaptation](../../)
-- [Supervised Fine-Tuning](../supervised-fine-tuning/)
-- [Instruction Tuning](../instruction-tuning/)
+- [Parameter-Efficient Fine-Tuning](../parameter-efficient-fine-tuning/)
+- [LoRA](../lora/)
+- [Model Formats](../../../inference-and-serving/sub/model-formats/)

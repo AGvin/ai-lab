@@ -1,59 +1,32 @@
 # Instruction Tuning
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Training a model on instruction-and-response examples to improve task following.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Instruction tuning trains a model on diverse instruction-and-response examples so it becomes better at following natural-language tasks.
 
 ## Core idea
 
-Training a model on instruction-and-response examples to improve task following. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+A pretrained language model is optimized mainly to continue text. Instruction tuning reshapes that behavior toward responding to requests, respecting task descriptions, and generalizing across many instruction formats. It is usually implemented through supervised fine-tuning and may be followed by preference optimization.
 
-## How it works
+## Practical use
 
-- Instruction tuning uses datasets of tasks described in natural language with expected responses.
-- Diverse tasks encourage the model to generalize from the requested instruction rather than one fixed input format.
-- It is usually implemented as supervised fine-tuning and may be followed by preference optimization.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Instruction Tuning affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Turn a base language model into a more useful assistant.
-- Improve zero-shot and few-shot task following.
-
-## Example
-
-Training examples include summarization, extraction, rewriting, and question answering expressed as user instructions.
+- Create general assistant behavior from a base model.
+- Improve zero-shot task following.
+- Teach response formats and refusal patterns.
+- Adapt a model to a domain's common instructions.
 
 ## Trade-offs and limitations
 
-- The model can learn superficial instruction patterns or undesirable dataset conventions.
-- Instruction following remains sensitive to prompt clarity and conflicting context.
+Instruction tuning can reduce raw completion behavior and introduce the biases or limitations of the instruction dataset. A model may learn superficial response patterns without becoming more factually reliable.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Instruction Tuning expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Using a narrow instruction set and expecting broad generalization.
+- Confusing helpful tone with correctness.
+- Omitting difficult or ambiguous examples.
+- Ignoring the tokenizer and chat template expected by the model.
 
 ## Related concepts
 
 - [Training and Adaptation](../../)
-- [Adapters](../adapters/)
-- [Synthetic Data](../synthetic-data/)
+- [Supervised Fine-Tuning](../supervised-fine-tuning/)
+- [Preference Optimization](../preference-optimization/)
+- [Prompting](../../../model-usage-and-generation/sub/prompting/)

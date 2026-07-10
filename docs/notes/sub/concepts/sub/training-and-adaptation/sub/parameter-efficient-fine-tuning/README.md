@@ -1,59 +1,32 @@
 # Parameter-Efficient Fine-Tuning
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Adaptation methods that train only a small subset of model parameters or added components.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Parameter-Efficient Fine-Tuning, or PEFT, adapts a model by training a small subset of parameters or additional modules while keeping most base weights frozen.
 
 ## Core idea
 
-Adaptation methods that train only a small subset of model parameters or added components. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Full fine-tuning stores gradients and optimizer state for the entire model. PEFT reduces training memory and produces smaller adaptation artifacts. Methods include LoRA, adapters, prefix tuning, prompt tuning, and selective parameter updates.
 
-## How it works
+## Practical use
 
-- PEFT methods train a small parameter subset or added modules while freezing most base weights.
-- Adapters, LoRA, prompt tuning, and related methods reduce optimizer state and storage requirements.
-- The resulting artifact is normally used together with the exact compatible base model.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Parameter-Efficient Fine-Tuning affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Adapt large models with limited training hardware.
-- Maintain several task-specific variants without storing full model copies.
-
-## Example
-
-A project trains a 100 MB adapter instead of publishing another multi-gigabyte copy of the base model.
+- Adapt large models on limited hardware.
+- Maintain several task-specific adapters for one base model.
+- Distribute small adaptation files instead of complete checkpoints.
+- Experiment with domain or style changes at lower cost.
 
 ## Trade-offs and limitations
 
-- Compatibility depends on architecture, layer names, tokenizer, and runtime.
-- Parameter efficiency does not guarantee data efficiency or good generalization.
+PEFT can approach full fine-tuning quality for many tasks but is not universally equivalent. The adapter depends on a specific base model and often a specific architecture or module naming scheme. Serving several adapters may add runtime complexity.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Parameter-Efficient Fine-Tuning expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Loading an adapter on the wrong base-model revision.
+- Assuming a small trainable parameter count prevents overfitting.
+- Comparing methods without matching data and evaluation.
+- Forgetting that adapter and base-model licenses both matter.
 
 ## Related concepts
 
 - [Training and Adaptation](../../)
-- [Fine-Tuning](../fine-tuning/)
 - [LoRA](../lora/)
+- [QLoRA](../qlora/)
+- [Adapters](../adapters/)

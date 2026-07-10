@@ -1,59 +1,36 @@
 # Reranking
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-A second-stage relevance model that reorders retrieved candidates.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Reranking applies a more precise relevance model to a small set of candidates returned by an initial retriever.
 
 ## Core idea
 
-A second-stage relevance model that reorders retrieved candidates. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Fast retrievers optimize recall and may return many weak candidates. A reranker examines the query and each candidate more deeply, then reorders or filters them. Cross-encoder rerankers often provide better relevance because they process the query and passage together, but they are slower than embedding similarity.
 
-## How it works
+## Practical use
 
-- A reranker receives the query and a smaller set of retrieved candidates.
-- It computes a more precise relevance score, often using a cross-encoder that jointly reads query and document.
-- Only the highest-ranked passages are sent to the generator, reducing context noise.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Reranking affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Improve precision after fast vector, lexical, or hybrid candidate retrieval.
-- Reduce irrelevant evidence before answer generation.
-
-## Example
-
-A retriever returns 50 documentation chunks and a reranker selects the best 6 for the final prompt.
+- Improve the evidence passed to a RAG model.
+- Combine candidates from semantic and lexical search.
+- Remove near-duplicate or weakly related chunks.
+- Select the best few passages under a tight context budget.
 
 ## Trade-offs and limitations
 
-- Reranking adds latency and model cost.
-- It cannot recover a relevant passage that the first-stage retriever never returned.
+Reranking adds latency and compute proportional to the number of candidates. If the initial retriever fails to include the correct document, the reranker cannot recover it. Reranker scores are also task- and model-specific.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Good practice
 
-## Practical checklist
+Tune the initial candidate count and final context count separately. Evaluate retrieval recall before reranking and precision after reranking. Preserve diversity when a question requires evidence from several documents.
 
-- What problem is Reranking expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+## Common mistakes
+
+- Reranking only the top two or three weak candidates.
+- Passing every reranked result to the model regardless of score.
+- Optimizing reranker metrics without measuring final answer quality.
+- Removing supporting passages because they repeat a topic from another source.
 
 ## Related concepts
 
 - [Retrieval and Knowledge](../../)
-- [Keyword Search](../keyword-search/)
-- [Citations](../citations/)
+- [Hybrid Search](../hybrid-search/)
+- [Retrieval Evaluation](../../../evaluation-and-operations/sub/retrieval-evaluation/)
+- [Context Window](../../../model-usage-and-generation/sub/context-window/)

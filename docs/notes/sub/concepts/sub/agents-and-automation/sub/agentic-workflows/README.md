@@ -1,59 +1,37 @@
 # Agentic Workflows
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Controlled multi-step processes that combine model decisions with deterministic workflow logic.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+An agentic workflow combines model-driven decisions with explicit workflow structure, deterministic steps, tools, state, and validation.
 
 ## Core idea
 
-Controlled multi-step processes that combine model decisions with deterministic workflow logic. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Unlike an open-ended autonomous loop, an agentic workflow defines known stages and permits the model to make bounded decisions inside them. For example, a workflow may retrieve data, ask a model to classify it, call an approved tool, validate the result, and request human approval before publishing.
 
-## How it works
+## Practical patterns
 
-- An agentic workflow combines model-driven decisions with explicit workflow nodes, transitions, and state.
-- Deterministic steps handle validation, persistence, permissions, and side effects, while models handle interpretation or planning.
-- The workflow can branch, retry, pause for approval, or resume from stored state.
+- Route tasks to different tools or models.
+- Generate a plan and execute only approved steps.
+- Retrieve evidence before drafting an answer.
+- Review generated code before applying changes.
+- Pause for human approval at consequential boundaries.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Design guidance
 
-## Why it matters
-
-Agentic Workflows affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Build predictable multi-step automation without giving one model unrestricted control.
-- Represent long-running processes in systems such as LangGraph, workflow engines, or custom state machines.
-
-## Example
-
-A document pipeline extracts facts, validates the schema, asks a human to approve uncertain fields, and then writes the accepted result.
+Make state transitions explicit. Define inputs, outputs, retry rules, and failure states for every stage. Use deterministic validation for schemas, permissions, and side effects. Record a trace that explains which model, prompt, tool, and data produced each result.
 
 ## Trade-offs and limitations
 
-- More nodes and branches increase maintenance and testing complexity.
-- A workflow can still fail if state contracts or tool outputs are ambiguous.
+Structured workflows are easier to operate and audit than fully autonomous agents, but they require more upfront design. Too much rigidity can reduce the benefit of model flexibility, while too little structure recreates an unpredictable agent loop.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Agentic Workflows expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Hiding workflow state inside conversation history.
+- Retrying non-idempotent actions blindly.
+- Allowing the model to skip mandatory validation.
+- Mixing planning, execution, and approval into one prompt.
 
 ## Related concepts
 
 - [Agents and Automation](../../)
 - [AI Agents](../ai-agents/)
-- [Tool Calling](../tool-calling/)
+- [Agent State](../agent-state/)
+- [Human in the Loop](../human-in-the-loop/)

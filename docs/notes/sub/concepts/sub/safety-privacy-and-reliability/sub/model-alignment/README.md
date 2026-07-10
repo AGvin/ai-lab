@@ -1,59 +1,33 @@
 # Model Alignment
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Shaping model behavior toward intended goals, values, policies, or preferences.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Model alignment is the effort to shape model behavior toward intended goals, policies, values, and user expectations.
 
 ## Core idea
 
-Shaping model behavior toward intended goals, values, policies, or preferences. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Alignment can involve instruction tuning, preference optimization, constitutional rules, safety training, system prompts, guardrails, and application controls. It is not one solved property; behavior may differ across tasks, languages, and adversarial conditions.
 
-## How it works
+## Practical dimensions
 
-- Model alignment attempts to make behavior follow intended goals, policies, and preferences.
-- Methods include instruction tuning, preference optimization, constitutional rules, filtering, and system-level controls.
-- Alignment is evaluated through behavior across normal, adversarial, and ambiguous cases.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Model Alignment affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Configure assistants to be useful, policy-compliant, and appropriately cautious.
-- Study conflicts between user goals, provider policy, and system safety.
-
-## Example
-
-An assistant is trained and configured to refuse credential theft while still explaining defensive security practices.
+- Helpfulness and instruction following.
+- Honesty and uncertainty communication.
+- Harmlessness and policy compliance.
+- Respect for user intent and authorization.
+- Resistance to manipulation.
 
 ## Trade-offs and limitations
 
-- Human values and policies are incomplete and sometimes conflicting.
-- Behavior can change unexpectedly outside evaluation distributions.
+Different stakeholders may disagree about preferred behavior. Optimizing broad safety can create over-refusal, while optimizing compliance can increase misuse risk. Model-level alignment does not replace permissions or secure application architecture.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Model Alignment expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Treating alignment as identical to censorship.
+- Assuming one preference dataset represents all users.
+- Measuring only refusal rates.
+- Relying on aligned behavior to protect secrets or tools.
 
 ## Related concepts
 
 - [Safety, Privacy, and Reliability](../../)
+- [Preference Optimization](../../../training-and-adaptation/sub/preference-optimization/)
+- [Guardrails](../guardrails/)
 - [Jailbreaking](../jailbreaking/)
-- [Data Poisoning](../data-poisoning/)

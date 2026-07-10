@@ -1,59 +1,37 @@
 # Autonomy Levels
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
+Autonomy levels describe how much independent decision-making and action an AI system is allowed to perform.
 
-The degree of independent decision-making and action granted to an AI system.
+## Example spectrum
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+- **Advisory:** the model suggests information or actions but cannot execute them.
+- **Drafting:** the system prepares artifacts for human review.
+- **Approval-gated:** selected actions execute only after confirmation.
+- **Bounded autonomous:** the agent acts independently inside predefined tools, budgets, and policies.
+- **Broad autonomous:** the system can plan and act across many capabilities with limited supervision.
 
 ## Core idea
 
-The degree of independent decision-making and action granted to an AI system. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Autonomy should be assigned per capability and risk, not as one label for the whole system. An agent may autonomously read public documentation while requiring approval to modify a repository or send email.
 
-## How it works
+## Practical use
 
-- Autonomy level describes how much the system can decide and execute without human intervention.
-- A spectrum can range from suggestion-only, through approval-gated actions, to bounded autonomous operation.
-- Permissions, budgets, tool allowlists, and escalation rules should match the chosen level.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Autonomy Levels affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Choose appropriate control for low-risk versus high-risk tasks.
-- Communicate what an agent is allowed to do rather than using the vague label “autonomous.”
-
-## Example
-
-A repository assistant may autonomously read and analyze, require approval to commit, and never merge without an explicit owner instruction.
+Choose the lowest autonomy that still provides useful efficiency. Increase autonomy only after measuring reliability, adding observability, narrowing permissions, and defining recovery procedures.
 
 ## Trade-offs and limitations
 
-- Autonomy labels are meaningless without concrete permissions and boundaries.
-- A low-risk task can become high-risk when connected to broader credentials or data.
+Higher autonomy reduces manual effort but increases the impact of incorrect assumptions, prompt injection, compromised tools, and repeated side effects.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Autonomy Levels expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Equating model intelligence with operational trust.
+- Granting the same autonomy to read and write actions.
+- Removing approval without first improving validation.
+- Failing to communicate the actual autonomy level to users.
 
 ## Related concepts
 
 - [Agents and Automation](../../)
-- [Retries](../retries/)
-- [Multi-Agent Systems](../multi-agent-systems/)
+- [Human in the Loop](../human-in-the-loop/)
+- [Least Privilege](../../../safety-privacy-and-reliability/sub/least-privilege/)
+- [AI Agents](../ai-agents/)

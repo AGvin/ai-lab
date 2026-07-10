@@ -1,59 +1,37 @@
 # Latency
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
+Latency is the elapsed time required for an inference system to reach a defined response milestone.
 
-The elapsed time required to produce a response or reach a defined output milestone.
+## Useful latency measures
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+- **Queue latency:** time spent waiting before processing starts.
+- **Model-loading latency:** time needed to make the model ready.
+- **Time to first token:** delay before the first generated token is returned.
+- **Inter-token latency:** delay between generated tokens.
+- **End-to-end latency:** total time until the complete response is available.
 
 ## Core idea
 
-The elapsed time required to produce a response or reach a defined output milestone. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+A single average hides important user experience differences. Interactive chat prioritizes time to first token and smooth token delivery, while batch processing may prioritize total completion time.
 
-## How it works
+## Practical use
 
-- Latency measures elapsed time for a request or stage, such as queue time, prompt processing, time to first token, or total completion.
-- Different stages depend on model size, input length, hardware, batching, and provider load.
-- Percentiles such as p50 and p95 reveal variation hidden by averages.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Latency affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Set responsiveness targets for interactive assistants and APIs.
-- Find whether delays come from queueing, retrieval, prompt processing, or generation.
-
-## Example
-
-A chat UI may feel responsive with a low time to first token even when the full response takes several seconds.
+Measure percentiles such as p50, p95, and p99 under realistic concurrency. Separate prompt-processing time from decode time. Include network, queue, retrieval, and tool latency when evaluating an application.
 
 ## Trade-offs and limitations
 
-- One benchmark number rarely represents real traffic.
-- Optimizing average latency can worsen tail latency or throughput.
+Batching can improve throughput while increasing individual request latency. Larger models and longer prompts usually increase latency. Caching reduces repeated work but adds memory and invalidation complexity.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Latency expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Reporting only the fastest isolated request.
+- Using average latency without tail percentiles.
+- Excluding queue and retrieval time from user-facing measurements.
+- Comparing latency with different output lengths.
 
 ## Related concepts
 
 - [Inference and Serving](../../)
-- [KV Cache](../kv-cache/)
 - [Throughput](../throughput/)
+- [Performance Metrics](../performance-metrics/)
+- [Continuous Batching](../continuous-batching/)

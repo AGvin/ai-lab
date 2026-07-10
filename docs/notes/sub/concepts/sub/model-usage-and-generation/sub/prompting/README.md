@@ -1,59 +1,41 @@
 # Prompting
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-The practice of supplying instructions, context, examples, and constraints to guide a model.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Prompting is the practice of supplying instructions, context, examples, and constraints that guide a model toward a useful result.
 
 ## Core idea
 
-The practice of supplying instructions, context, examples, and constraints to guide a model. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+A strong prompt defines the task clearly enough that the model does not need to infer essential requirements. It separates instructions from source material, states the desired output, and provides only the context needed to complete the task. Prompt quality matters, but it cannot compensate for missing knowledge, insufficient model capability, unavailable tools, or unreliable source data.
 
-## How it works
+## Useful prompt components
 
-- A prompt combines the requested task with instructions, context, examples, constraints, and completion criteria.
-- Clear separation between instructions and untrusted data reduces ambiguity and prompt-injection risk.
-- Good prompts specify what a successful result looks like and what the model should do when information is missing.
+- **Goal:** what must be accomplished.
+- **Context:** facts and source material required for the task.
+- **Constraints:** boundaries, exclusions, safety rules, and acceptance criteria.
+- **Output contract:** format, length, language, schema, or audience.
+- **Examples:** demonstrations when the desired pattern is difficult to describe.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Practical use
 
-## Why it matters
-
-Prompting affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Turn an informal request into a reproducible task definition.
-- Control tone, scope, format, assumptions, and verification behavior without changing model weights.
-
-## Example
-
-A repository-review prompt can define the target branch, allowed files, required tests, prohibited actions, and expected final summary.
+- Put the most important requirement in direct language.
+- Delimit untrusted documents or quoted content so they are not confused with instructions.
+- Ask for explicit uncertainty when evidence is incomplete.
+- Break complex work into verifiable stages or use an agentic workflow.
+- Evaluate prompts against a fixed set of representative cases before treating them as production configuration.
 
 ## Trade-offs and limitations
 
-- Prompting cannot make an incapable model reliably perform a task or know unavailable facts.
-- Very long or contradictory instructions can reduce compliance rather than improve it.
+Highly prescriptive prompts improve consistency but may reduce flexibility. Long prompts consume context and can introduce conflicting instructions. Prompt behavior also changes across model families and versions, so prompts require regression testing.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Prompting expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Mixing task instructions with untrusted source text.
+- Requesting vague qualities such as “better” without criteria.
+- Adding many redundant rules that conflict with each other.
+- Expecting prompting alone to provide current or private knowledge.
 
 ## Related concepts
 
 - [Model Usage and Generation](../../)
-- [Context Window](../context-window/)
 - [System Prompts](../system-prompts/)
+- [Few-Shot Prompting](../few-shot-prompting/)
+- [Structured Output](../structured-output/)

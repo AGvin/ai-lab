@@ -1,59 +1,33 @@
 # Multimodal Models
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Models that process or generate more than one modality, such as text, images, audio, or video.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Multimodal models process or generate more than one data modality, such as text, images, audio, video, documents, or sensor signals.
 
 ## Core idea
 
-Models that process or generate more than one modality, such as text, images, audio, or video. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+A multimodal system converts different inputs into representations that can interact in a shared model or coordinated components. A vision-language model may encode an image and combine it with text tokens; a generative system may condition image or video output on text and reference media.
 
-## How it works
+## Practical use
 
-- A multimodal model maps two or more data types into representations that can be processed jointly or translated between modalities.
-- Some models use dedicated encoders for images or audio and a language-model backbone for reasoning and output; others use more unified token representations.
-- Capability depends on which modalities are accepted, how much media can fit in context, and whether the model can only analyze or also generate a modality.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Multimodal Models affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Analyze screenshots, diagrams, documents, audio, or video together with text instructions.
-- Build workflows where one model extracts information across several media types.
-
-## Example
-
-A vision-language model can inspect a UI screenshot, read visible text, and explain which element likely caused a layout problem.
+- Image and document question answering.
+- Screenshot and diagram analysis.
+- Speech transcription and synthesis.
+- Text-guided image or video generation.
+- Cross-modal search using shared embeddings.
 
 ## Trade-offs and limitations
 
-- A model advertised as multimodal may support only limited resolutions, durations, formats, or output modalities.
-- Cross-modal mistakes can be difficult to notice because the textual explanation may remain confident.
+Each modality introduces its own preprocessing, context cost, and failure modes. Image resolution, audio duration, frame sampling, and document layout can determine what information the model actually receives. Strong text performance does not imply equally strong visual reasoning.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Multimodal Models expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Assuming the model sees every pixel or video frame at full fidelity.
+- Ignoring OCR, compression, or sampling artifacts.
+- Treating a generated description as exact measurement.
+- Evaluating only one modality independently.
 
 ## Related concepts
 
 - [Foundations and Architecture](../../)
-- [Large Language Models](../large-language-models/)
-- [Transformers](../transformers/)
+- [Vision-Language Models](../../../multimodal-and-generative-media/sub/vision-language-models/)
+- [Multimodal Context](../../../multimodal-and-generative-media/sub/multimodal-context/)
+- [Image Embeddings](../../../multimodal-and-generative-media/sub/image-embeddings/)

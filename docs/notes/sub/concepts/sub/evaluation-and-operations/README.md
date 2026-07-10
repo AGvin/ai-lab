@@ -1,19 +1,8 @@
 # Evaluation and Operations
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Concepts for selecting, testing, observing, and operating AI systems under real quality, cost, and reliability constraints.
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
 
 ## Essential
 
@@ -31,7 +20,7 @@ Concepts are grouped by practical priority. Priority affects reading order, not 
 - [`benchmarks/`](./sub/benchmarks/) — Standardized tasks or datasets used to compare models or systems.
 - [`evaluation-datasets/`](./sub/evaluation-datasets/) — Curated examples used to test quality, safety, retrieval, or task performance.
 - [`human-evaluation/`](./sub/human-evaluation/) — People assessing model outputs against explicit criteria.
-- [`fallback-models/`](./sub/fallback-models/) — Alternative models used when the preferred model fails, is unavailable, or exceeds policy limits.
+- [`fallback-models/`](./sub/fallback-models/) — Alternative models used when the preferred model fails or is unavailable.
 - [`caching/`](./sub/caching/) — Reusing prior results or processed data to reduce repeated work.
 - [`rate-limits/`](./sub/rate-limits/) — Controls that restrict request volume over a period of time.
 

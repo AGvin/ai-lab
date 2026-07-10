@@ -1,59 +1,37 @@
 # Text-to-Speech
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Synthesizing spoken audio from written text.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Text-to-speech synthesizes spoken audio from written text, optionally conditioned on a selected or reference voice.
 
 ## Core idea
 
-Synthesizing spoken audio from written text. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+A TTS system predicts pronunciation, timing, emphasis, and acoustic features, then generates a waveform through a vocoder or end-to-end model. Modern systems can produce highly natural speech and may support style, emotion, speed, and multilingual output.
 
-## How it works
+## Practical use
 
-- Text-to-speech systems convert text into acoustic representations and synthesize a waveform.
-- Models may control voice identity, prosody, emotion, speed, and language.
-- Some systems clone a voice from reference audio.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Text-to-Speech affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Generate narration, accessibility audio, assistants, and localized speech.
-- Create consistent voices for applications and prototypes.
-
-## Example
-
-An application synthesizes Ukrainian narration from approved text using a selected voice profile.
+- Accessibility and screen reading.
+- Narration, announcements, and prototypes.
+- Voice interfaces.
+- Localized audio content.
+- Assistive communication.
 
 ## Trade-offs and limitations
 
-- Pronunciation, emotion, and long-form consistency can vary.
-- Voice cloning creates consent, impersonation, and fraud risks.
+Names, abbreviations, numbers, and mixed-language text can be pronounced incorrectly. Expressive models may introduce unexpected pauses or emphasis. Voice cloning raises consent, impersonation, and fraud risks.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Good practice
 
-## Practical checklist
+Use pronunciation dictionaries or phonetic controls where supported. Disclose synthetic speech when context requires it. Obtain explicit permission for cloned or identifiable voices and protect reference recordings.
 
-- What problem is Text-to-Speech expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+## Common mistakes
+
+- Cloning a voice without consent.
+- Publishing unreviewed pronunciation of critical information.
+- Assuming punctuation alone gives precise prosody control.
+- Ignoring audio licensing and platform disclosure rules.
 
 ## Related concepts
 
 - [Multimodal and Generative Media](../../)
 - [Speech-to-Text](../speech-to-text/)
-- [Video Generation](../video-generation/)
+- [Audio Generation](../audio-generation/)
+- [Content Moderation](../../../safety-privacy-and-reliability/sub/content-moderation/)

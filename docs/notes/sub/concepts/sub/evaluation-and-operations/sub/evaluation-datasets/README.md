@@ -1,59 +1,33 @@
 # Evaluation Datasets
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Curated examples used to test quality, safety, retrieval, or task performance.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+An evaluation dataset is a curated set of inputs, expected properties, reference answers, labels, or scoring criteria used to test a model or system.
 
 ## Core idea
 
-Curated examples used to test quality, safety, retrieval, or task performance. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+The dataset should represent the distribution and risk of actual use. It may include ordinary cases, difficult edge cases, invalid inputs, adversarial examples, and historical incidents. The expected result can be exact, rubric-based, or open to human judgment depending on the task.
 
-## How it works
+## Practical design
 
-- An evaluation dataset contains representative inputs, references, labels, metadata, and sometimes rubrics.
-- Cases should cover normal behavior, edge cases, adversarial inputs, and known failure modes.
-- The dataset must remain separated from training and prompt-development data when unbiased measurement matters.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Evaluation Datasets affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Measure model, retrieval, and workflow quality consistently.
-- Track behavior across versions and providers.
-
-## Example
-
-A support-agent dataset includes routine questions, ambiguous requests, policy conflicts, and escalation cases.
+- Separate development, validation, and held-out test sets.
+- Record source, license, date, and data transformations.
+- Remove duplicates and near-duplicates from training data where possible.
+- Include examples for every important failure category.
+- Version the dataset and scoring rules together.
 
 ## Trade-offs and limitations
 
-- Static datasets age as products, data, and user behavior change.
-- Reference answers may be incomplete for open-ended tasks.
+A static dataset becomes stale as user behavior and models change. Small sets are easy to review but have high variance; large sets improve coverage but are expensive to label and inspect.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Evaluation Datasets expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Reusing the test set for prompt tuning.
+- Including only previously successful examples.
+- Treating synthetic labels as ground truth.
+- Changing labels without recording a new version.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Benchmarks](../benchmarks/)
-- [Human Evaluation](../human-evaluation/)
+- [Evals](../evals/)
+- [Datasets](../../../training-and-adaptation/sub/datasets/)
+- [Reproducibility](../reproducibility/)

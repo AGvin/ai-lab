@@ -1,59 +1,33 @@
 # Provenance
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Information about the origin, ownership, transformation, and custody of data or model artifacts.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Provenance records the origin, ownership, transformation history, and custody of data, model artifacts, and generated outputs.
 
 ## Core idea
 
-Information about the origin, ownership, transformation, and custody of data or model artifacts. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+A useful provenance chain answers where an item came from, which version was used, how it was processed, and which system produced the result. This supports verification, licensing, incident response, and reproducibility.
 
-## How it works
+## Practical use
 
-- Provenance records where data, models, and generated outputs came from and how they were transformed.
-- Useful records include source identifiers, versions, licenses, timestamps, processing steps, and responsible systems.
-- Provenance should survive indexing, generation, export, and model updates.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Provenance affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Audit citations, dataset licensing, model supply chains, and generated media.
-- Trace errors back to a source document or processing step.
-
-## Example
-
-A generated answer stores the source document IDs, retrieval scores, model version, and prompt-template version.
+- Link RAG chunks to source documents and versions.
+- Record base models and adapters used for inference.
+- Track dataset sources and licenses.
+- Attach generation metadata to images or media.
+- Identify which tool result supported a claim.
 
 ## Trade-offs and limitations
 
-- Provenance metadata can itself be incomplete or falsified.
-- Detailed tracking adds storage and integration work.
+Complete provenance adds storage and operational complexity. Metadata can be lost during export, copying, screenshotting, or recompression. Provenance shows origin but does not prove that the source is correct.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Provenance expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Recording only a filename without version or source.
+- Treating provider branding as model provenance.
+- Losing links between transformed chunks and original documents.
+- Assuming metadata cannot be altered.
 
 ## Related concepts
 
 - [Safety, Privacy, and Reliability](../../)
-- [Data Residency](../data-residency/)
-- [Content Moderation](../content-moderation/)
+- [Citations](../../../retrieval-and-knowledge/sub/citations/)
+- [Reproducibility](../../../evaluation-and-operations/sub/reproducibility/)
+- [Datasets](../../../training-and-adaptation/sub/datasets/)

@@ -1,59 +1,37 @@
 # Retrieval Evaluation
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
+Retrieval evaluation measures whether a search or RAG system returns relevant, sufficient, correctly ranked, and authorized evidence.
 
-Measuring whether retrieval returns relevant, complete, and correctly ranked evidence.
+## Core metrics
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+- **Recall at k:** whether relevant evidence appears in the top `k` results.
+- **Precision at k:** how many retrieved items are relevant.
+- **Mean reciprocal rank:** how early the first relevant result appears.
+- **NDCG:** ranking quality when relevance has several levels.
+- **Context coverage:** whether retrieved evidence is sufficient to answer the question.
 
 ## Core idea
 
-Measuring whether retrieval returns relevant, complete, and correctly ranked evidence. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Final answer quality alone can hide retrieval failures because a model may answer from prior knowledge or hallucinate. Retrieval and generation should be evaluated separately, then together.
 
-## How it works
+## Practical use
 
-- Retrieval evaluation checks whether required evidence appears in candidate results and at what rank.
-- Metrics include recall@k, precision@k, mean reciprocal rank, and nDCG.
-- Queries need relevance labels or known supporting documents.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Retrieval Evaluation affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Tune chunking, embeddings, lexical search, filters, and reranking.
-- Separate retrieval failures from generation failures in RAG.
-
-## Example
-
-A test set records which documentation pages should answer each question and measures whether they appear in the top five results.
+Build query-document relevance labels from real tasks. Include exact identifiers, paraphrases, multi-document questions, no-answer cases, and access-control checks. Compare lexical, semantic, hybrid, and reranked systems.
 
 ## Trade-offs and limitations
 
-- Relevance labels can be subjective or incomplete.
-- High retrieval scores do not guarantee the generator uses evidence correctly.
+Relevance labels can be subjective, and one query may have many acceptable evidence sets. Offline metrics may not reflect how a generator uses the context.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Retrieval Evaluation expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Labeling only one passage as relevant when several support the answer.
+- Measuring top-one accuracy for multi-document questions.
+- Ignoring unauthorized but highly relevant results.
+- Tuning retrieval on the final test set.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [LLM as a Judge](../llm-as-a-judge/)
-- [Reproducibility](../reproducibility/)
+- [Reranking](../../../retrieval-and-knowledge/sub/reranking/)
+- [Hybrid Search](../../../retrieval-and-knowledge/sub/hybrid-search/)
+- [Grounding](../../../retrieval-and-knowledge/sub/grounding/)

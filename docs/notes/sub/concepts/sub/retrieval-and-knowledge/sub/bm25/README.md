@@ -1,59 +1,39 @@
 # BM25
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-A probabilistic lexical ranking method widely used in document retrieval.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+BM25 is a probabilistic lexical ranking function used to score how well a document matches query terms.
 
 ## Core idea
 
-A probabilistic lexical ranking method widely used in document retrieval. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+BM25 rewards documents containing important query terms while controlling for term frequency and document length. A term that appears in few documents receives more weight than a common term. Repeating a term helps only up to a saturation point, which prevents raw frequency from dominating the ranking.
 
-## How it works
+## Practical use
 
-- BM25 ranks documents using term frequency, inverse document frequency, and document-length normalization.
-- Rare query terms usually contribute more than common terms, while repeated occurrences have diminishing returns.
-- The method operates on lexical tokens and is commonly implemented by search engines such as Elasticsearch or OpenSearch.
+- Search for exact technical terminology.
+- Retrieve error messages, identifiers, and named entities.
+- Provide a lexical candidate set for hybrid search.
+- Establish a strong, inexpensive retrieval baseline.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Important parameters
 
-## Why it matters
+- `k1` controls how quickly term-frequency benefit saturates.
+- `b` controls document-length normalization.
 
-BM25 affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Rank exact and near-exact text matches.
-- Provide a strong baseline or lexical half of hybrid search.
-
-## Example
-
-A search for an uncommon configuration key ranks documents containing that exact key above semantically related but non-matching pages.
+Defaults are often reasonable, but analyzers, field weights, stop words, and document structure usually matter more than small parameter changes.
 
 ## Trade-offs and limitations
 
-- BM25 does not understand meaning beyond indexed terms and analyzer behavior.
-- Its tuning parameters and field weighting should be evaluated for the corpus.
+BM25 does not understand paraphrases or broader semantic similarity unless query expansion or synonyms are added. It can also overvalue rare terms that are not actually relevant.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is BM25 expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Tuning parameters before fixing tokenization and field design.
+- Using one combined field for titles, body text, and identifiers.
+- Assuming BM25 scores are comparable across different queries.
+- Discarding BM25 because embeddings perform better on a small demo set.
 
 ## Related concepts
 
 - [Retrieval and Knowledge](../../)
-- [Metadata Filtering](../metadata-filtering/)
-- [GraphRAG](../graph-rag/)
+- [Keyword Search](../keyword-search/)
+- [Hybrid Search](../hybrid-search/)
+- [Semantic Search](../semantic-search/)

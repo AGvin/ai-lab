@@ -1,59 +1,34 @@
 # Vector Databases
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Storage and indexing systems optimized for vectors and similarity search.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+A vector database stores embeddings and associated metadata, builds similarity indexes, and exposes operations for inserting, updating, filtering, and retrieving vectors.
 
 ## Core idea
 
-Storage and indexing systems optimized for vectors and similarity search. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+The database is infrastructure around vector search. Useful capabilities include approximate nearest-neighbor indexing, metadata filters, namespaces or tenants, persistence, replication, deletion, and integration with document ingestion pipelines.
 
-## How it works
+## Selection criteria
 
-- A vector database stores embeddings together with identifiers, payloads, and metadata.
-- It provides vector indexes, filtering, insertion and deletion, and often replication or persistence features.
-- The original source remains authoritative; the vector store is a derived search index that must be synchronized.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Vector Databases affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Operate semantic search or RAG over large and changing collections.
-- Combine vector retrieval with metadata filters and application-level access control.
-
-## Example
-
-A PostgreSQL application can add pgvector for embeddings while keeping document metadata and permissions in the same database.
+- Supported vector dimensions and distance metrics.
+- Filtering behavior and access-control integration.
+- Index build and update characteristics.
+- Memory, storage, and operational requirements.
+- Backup, replication, and disaster recovery.
+- Hybrid lexical and vector retrieval support.
 
 ## Trade-offs and limitations
 
-- A dedicated vector database may be unnecessary for small corpora that fit an existing database or in-memory index.
-- Index updates, deletes, backups, and tenant isolation add operational complexity.
+A dedicated vector database may simplify scale and operations but adds another system to maintain. General databases with vector extensions can be sufficient when data volume, latency, and update rates are moderate. The database cannot compensate for poor embeddings, chunking, or evaluation.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Vector Databases expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Choosing a database before measuring workload requirements.
+- Storing vectors without source IDs, versions, or deletion paths.
+- Treating tenant metadata as a substitute for enforced authorization.
+- Assuming faster nearest-neighbor search guarantees better RAG answers.
 
 ## Related concepts
 
 - [Retrieval and Knowledge](../../)
 - [Vector Search](../vector-search/)
-- [Keyword Search](../keyword-search/)
+- [Metadata Filtering](../metadata-filtering/)
+- [Embeddings](../embeddings/)

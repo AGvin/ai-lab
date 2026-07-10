@@ -1,59 +1,33 @@
 # Sampling Parameters
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
+Sampling parameters control how a generative model chooses the next token from its probability distribution.
 
-Controls such as temperature, top-p, top-k, and seed that influence token selection.
+## Main controls
 
-## Translations
+- **Temperature:** rescales token probabilities. Lower values usually make output more concentrated and repeatable; higher values increase variation.
+- **Top-p:** limits sampling to the smallest token set whose cumulative probability reaches a threshold.
+- **Top-k:** limits sampling to the highest-probability `k` tokens.
+- **Seed:** may make runs more reproducible when the provider, model, and execution path support deterministic seeding.
+- **Repetition or frequency penalties:** discourage repeated tokens or phrases.
 
-- English — current
-- [Українська](./l10n/uk_UA/)
+## Practical use
 
-## Core idea
-
-Controls such as temperature, top-p, top-k, and seed that influence token selection. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
-
-## How it works
-
-- Temperature rescales token probabilities; top-k limits selection to a fixed number of candidates; top-p limits selection to a probability mass.
-- A seed can improve repeatability only when the provider, model, runtime, and other settings remain compatible.
-- Repetition penalties and minimum-probability filters influence loops and vocabulary diversity.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Sampling Parameters affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Tune deterministic extraction differently from creative generation.
-- Reproduce experiments and compare decoding configurations.
-
-## Example
-
-A JSON extraction task may use deterministic decoding, while brainstorming may use a moderate temperature and broader candidate set.
+Use lower-variance settings for extraction, code edits, classification, and structured output. Use moderate variation for brainstorming, creative writing, or generating diverse candidates. Change one parameter at a time and evaluate results on a stable test set.
 
 ## Trade-offs and limitations
 
-- Sampling controls cannot compensate for a weak prompt, unsuitable model, or missing evidence.
-- Parameter meanings and defaults differ across runtimes.
+Low temperature does not make an answer factual, and high temperature does not create genuine knowledge. Parameter names and behavior vary across runtimes. Deterministic seeds may still produce different outputs after model, hardware, or provider changes.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Sampling Parameters expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Combining aggressive temperature, top-p, and top-k changes without measurement.
+- Using high randomness for tasks that require exact schemas.
+- Assuming temperature zero guarantees identical output.
+- Tuning sampling before fixing unclear instructions or missing context.
 
 ## Related concepts
 
 - [Model Usage and Generation](../../)
-- [Few-Shot Prompting](../few-shot-prompting/)
-- [Reasoning Models](../reasoning-models/)
+- [Tokens and Tokenization](../tokens-and-tokenization/)
+- [Hallucinations](../hallucinations/)
+- [Reproducibility](../../../evaluation-and-operations/sub/reproducibility/)

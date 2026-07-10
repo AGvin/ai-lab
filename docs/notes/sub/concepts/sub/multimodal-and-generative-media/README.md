@@ -1,19 +1,8 @@
 # Multimodal and Generative Media
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Concepts for models and workflows involving images, audio, video, and combinations of modalities.
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
 
 ## Essential
 
@@ -23,7 +12,7 @@ Concepts are grouped by practical priority. Priority affects reading order, not 
 - [`image-to-image/`](./sub/image-to-image/) — Generating a transformed image while conditioning on an existing image.
 - [`inpainting/`](./sub/inpainting/) — Regenerating selected masked regions of an image.
 - [`controlnet/`](./sub/controlnet/) — Conditioning diffusion models with structural controls such as edges, depth, or pose.
-- [`multimodal-context/`](./sub/multimodal-context/) — The combined text, image, audio, video, or document information available to a model request.
+- [`multimodal-context/`](./sub/multimodal-context/) — Combined text, image, audio, video, or document information available to a model request.
 
 ## Useful
 

@@ -1,59 +1,37 @@
 # Prompt Injection
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Input designed to override or manipulate an AI system's intended instructions.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Prompt injection is input designed to manipulate an AI system into ignoring intended instructions, revealing protected information, or performing unauthorized actions.
 
 ## Core idea
 
-Input designed to override or manipulate an AI system's intended instructions. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+A model processes instructions and data in the same general medium: tokens. An attacker can therefore place instruction-like text in a user message and attempt to override policy or redirect tool use. Prompt hierarchy helps, but it is not a complete security boundary.
 
-## How it works
+## Common goals
 
-- Prompt injection is an instruction inside user-controlled content that attempts to change the model’s intended behavior.
-- The attack exploits the model’s tendency to treat natural-language data and natural-language instructions similarly.
-- Defenses combine trust separation, tool restrictions, output validation, and minimizing sensitive context.
+- Override system or application rules.
+- Exfiltrate hidden prompts, secrets, or retrieved data.
+- Cause unsafe tool calls.
+- Bypass content or business-policy restrictions.
+- Manipulate the model's final answer.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Mitigation
 
-## Why it matters
-
-Prompt Injection affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Threat-model assistants, agents, and RAG systems that process untrusted text.
-- Design policies for which content may influence decisions or tool calls.
-
-## Example
-
-A user message tells an assistant to ignore its system policy and reveal hidden configuration; the application must not treat that request as authorized.
+Use least-privilege tools, deterministic authorization, strong trust boundaries, schema validation, output filtering, and human approval for consequential actions. Keep secrets out of model-visible context. Treat model output as untrusted input to every tool.
 
 ## Trade-offs and limitations
 
-- No prompt wording alone provides complete protection.
-- Detection models and filters can miss novel or obfuscated attacks.
+Prompt-based defenses can reduce simple attacks but cannot guarantee isolation. Aggressive filtering may also block legitimate instructions. Security must be enforced in the surrounding application.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Prompt Injection expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Asking the model to “ignore malicious instructions” and considering the problem solved.
+- Exposing unrestricted shell, database, or browser tools.
+- Returning secrets in tool results visible to the model.
+- Treating a refusal in tests as proof of security.
 
 ## Related concepts
 
 - [Safety, Privacy, and Reliability](../../)
-- [Data Poisoning](../data-poisoning/)
 - [Indirect Prompt Injection](../indirect-prompt-injection/)
+- [Trust Boundaries](../trust-boundaries/)
+- [Least Privilege](../least-privilege/)

@@ -1,59 +1,33 @@
 # Latency and Throughput
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Balancing response time against the amount of work completed per unit of time.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Latency and throughput describe two related but competing dimensions of system performance: how long one request takes and how much total work the system completes over time.
 
 ## Core idea
 
-Balancing response time against the amount of work completed per unit of time. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Interactive applications usually prioritize time to first token and response smoothness. Batch systems prioritize total tokens or requests completed. Increasing batch size and queue depth can improve throughput while making individual users wait longer.
 
-## How it works
+## Practical use
 
-- Latency measures delay for one request, while throughput measures aggregate completed work.
-- Batching, concurrency, queueing, and model size create trade-offs between them.
-- Service objectives use percentile latency and sustained throughput under realistic load.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Latency and Throughput affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Choose serving configurations for interactive and batch workloads.
-- Determine capacity and user experience targets.
-
-## Example
-
-Continuous batching raises total tokens per second but slightly increases time to first token for each user.
+- Define service-level objectives for p50, p95, and p99 latency.
+- Measure throughput at the required latency target.
+- Test realistic prompt and output lengths.
+- Separate queue, retrieval, model, tool, and network time.
+- Evaluate sustained load rather than short bursts.
 
 ## Trade-offs and limitations
 
-- Optimizing one metric can degrade the other.
-- Synthetic load may not represent real prompt and output lengths.
+Hardware utilization, concurrency, batching, context length, and output length all affect the relationship. One “tokens per second” number cannot represent multi-user service quality.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Latency and Throughput expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Maximizing throughput with no latency limit.
+- Comparing systems with different workloads.
+- Reporting averages without tail behavior.
+- Ignoring failed and timed-out requests.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Cost Management](../cost-management/)
-- [Quality and Cost Trade-Offs](../quality-cost-tradeoffs/)
+- [Latency](../../../inference-and-serving/sub/latency/)
+- [Throughput](../../../inference-and-serving/sub/throughput/)
+- [Continuous Batching](../../../inference-and-serving/sub/continuous-batching/)

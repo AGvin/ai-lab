@@ -1,59 +1,33 @@
 # Data Residency
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-The geographic or jurisdictional location where data is stored or processed.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Data residency specifies the geographic or jurisdictional location where data is stored or processed.
 
 ## Core idea
 
-The geographic or jurisdictional location where data is stored or processed. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+AI workflows may transmit prompts, files, embeddings, logs, and backups across several services and regions. Residency requirements therefore apply to the entire processing chain, not only the primary model endpoint.
 
-## How it works
+## Practical questions
 
-- Data residency identifies the physical or legal region where data is stored and processed.
-- Cloud providers may separate storage location, inference region, backups, logs, and support access.
-- Contracts and technical routing must align with the required jurisdiction.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Data Residency affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Meet organizational, contractual, or regulatory location requirements.
-- Evaluate whether a hosted AI provider is acceptable for a dataset.
-
-## Example
-
-An organization requires prompts and logs to remain within an approved European region.
+- Where are prompts and uploaded files processed?
+- Where are logs, caches, backups, and embeddings stored?
+- Can support staff access data from another jurisdiction?
+- Which subprocessors and regions are involved?
+- Is regional failover allowed?
 
 ## Trade-offs and limitations
 
-- A regional endpoint does not automatically guarantee every subprocess remains in that region.
-- Subprocessors and backups can complicate residency claims.
+Restricting regions can reduce provider choice, availability, or performance. A regional endpoint may still rely on globally operated control systems unless the provider contract explicitly defines boundaries.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Data Residency expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Confusing data residency with data privacy or sovereignty.
+- Checking only the model API and ignoring telemetry.
+- Assuming a company address determines processing location.
+- Failing to document backup and disaster-recovery regions.
 
 ## Related concepts
 
 - [Safety, Privacy, and Reliability](../../)
-- [Guardrails](../guardrails/)
+- [Data Privacy](../data-privacy/)
 - [Provenance](../provenance/)
+- [Model Selection](../../../evaluation-and-operations/sub/model-selection/)

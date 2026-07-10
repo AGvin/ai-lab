@@ -1,59 +1,36 @@
 # Planning
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Selecting and ordering actions needed to reach a goal.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Planning is the process of selecting and ordering actions needed to reach a goal under known constraints.
 
 ## Core idea
 
-Selecting and ordering actions needed to reach a goal. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+In agent systems, a plan may be generated once, revised after each observation, or represented as a graph of dependencies. Good plans identify prerequisites, expected outputs, validation points, and conditions that require replanning.
 
-## How it works
+## Practical use
 
-- Planning converts a goal into ordered steps, dependencies, required tools, and completion criteria.
-- Plans may be created once, revised after observations, or represented as a workflow graph.
-- Good plans distinguish reversible analysis from consequential actions that need approval.
+- Break a repository change into inspection, implementation, testing, and publication steps.
+- Decide which information must be retrieved before answering.
+- Schedule tool calls whose outputs depend on earlier results.
+- Identify actions that require human approval.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Design guidance
 
-## Why it matters
-
-Planning affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Manage complex coding, research, migration, and operations tasks.
-- Expose dependencies and validation steps before work begins.
-
-## Example
-
-A migration plan first inventories dependencies, then updates configuration, runs tests, and only afterward prepares deployment changes.
+Prefer short, testable steps over vague goals. Separate reversible exploration from consequential execution. Attach acceptance criteria to each step and keep the current plan in explicit state. Replan when evidence invalidates an assumption instead of forcing the original sequence.
 
 ## Trade-offs and limitations
 
-- A detailed plan can become obsolete after the first unexpected result.
-- Planning quality depends on correct assumptions and available tools.
+Detailed planning consumes tokens and can become obsolete quickly in dynamic environments. Models may produce plausible but impossible steps when they lack tool knowledge or current state.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Planning expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Treating the first plan as fixed.
+- Planning actions the system cannot actually execute.
+- Omitting validation and rollback steps.
+- Generating a long plan for a task that requires one deterministic operation.
 
 ## Related concepts
 
 - [Agents and Automation](../../)
-- [Agent Memory](../agent-memory/)
+- [Task Decomposition](../task-decomposition/)
 - [Verification and Reflection](../verification-and-reflection/)
+- [Agent State](../agent-state/)

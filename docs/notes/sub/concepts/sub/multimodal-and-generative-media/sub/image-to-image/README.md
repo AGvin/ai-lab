@@ -1,59 +1,33 @@
 # Image-to-Image
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Generating a transformed image while conditioning on an existing image.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Image-to-image generation transforms an existing image while using it as conditioning for composition, content, or style.
 
 ## Core idea
 
-Generating a transformed image while conditioning on an existing image. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+The source image is encoded and partially noised, then regenerated under prompt or structural guidance. A denoising-strength parameter commonly controls how closely the output remains tied to the source: lower strength preserves more detail, while higher strength permits larger changes.
 
-## How it works
+## Practical use
 
-- Image-to-image generation encodes an existing image and applies a controlled amount of transformation.
-- Denoising strength or similar controls determine how strongly the result follows the source versus the new prompt.
-- Additional masks, structure controls, or reference adapters can preserve selected features.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Image-to-Image affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Restyle, relight, clean up, or recompose an existing image.
-- Use sketches or photos as structural starting points.
-
-## Example
-
-A reference photo preserves the pose while the workflow changes clothing and background style.
+- Restyle a composition.
+- Improve a sketch or rough render.
+- Change lighting, materials, or environment.
+- Produce variations while preserving layout.
+- Prepare an image for focused inpainting.
 
 ## Trade-offs and limitations
 
-- High transformation strength can destroy identity or composition.
-- Low strength can preserve unwanted artifacts and limit requested changes.
+Strong transformations can alter identity, geometry, text, or small details. Low-strength transformations may preserve unwanted artifacts. Repeated image-to-image passes can accumulate drift and reduce fidelity.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Image-to-Image expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Using high denoising strength when identity must remain stable.
+- Expecting pixel-perfect preservation from generative editing.
+- Ignoring aspect-ratio and preprocessing changes.
+- Applying many successive transformations without returning to the best source.
 
 ## Related concepts
 
 - [Multimodal and Generative Media](../../)
-- [Diffusion Models](../diffusion-models/)
 - [Inpainting](../inpainting/)
+- [Outpainting](../outpainting/)
+- [Diffusion Models](../diffusion-models/)

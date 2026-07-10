@@ -1,59 +1,38 @@
 # Observability
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Using logs, metrics, traces, and events to understand AI system behavior.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Observability is the ability to understand an AI system's internal behavior from logs, metrics, traces, events, and recorded state.
 
 ## Core idea
 
-Using logs, metrics, traces, and events to understand AI system behavior. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+AI failures are often distributed across prompts, retrieval, model calls, tools, validation, and external services. Observability connects these stages so operators can determine what happened, why it happened, and which component requires correction.
 
-## How it works
+## Useful signals
 
-- Observability collects logs, metrics, traces, events, and structured metadata about model and workflow execution.
-- Useful dimensions include model version, prompt template, token counts, latency, cost, tool calls, errors, and validation outcomes.
-- Sensitive content is minimized or redacted according to privacy policy.
+- Request volume, latency, cost, and token usage.
+- Model and prompt versions.
+- Retrieval queries, candidate counts, and source IDs.
+- Tool calls, arguments, results, and failures.
+- Validation outcomes and retry counts.
+- User feedback and quality metrics.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Practical use
 
-## Why it matters
-
-Observability affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Diagnose failures and understand production behavior.
-- Track quality, cost, latency, and reliability over time.
-
-## Example
-
-A dashboard shows p95 latency, retrieval failures, tool errors, and cost by model route.
+Assign a correlation ID to each workflow execution. Record structured events rather than relying only on free-form logs. Build dashboards for operational health and alert on unusual error, cost, latency, or refusal patterns.
 
 ## Trade-offs and limitations
 
-- Detailed telemetry can expose private data or secrets.
-- Metrics without task context can lead to incorrect conclusions.
+Detailed telemetry can be expensive and may expose sensitive prompts or data. Redaction, sampling, retention, and access controls are required. Observability explains recorded behavior but cannot reconstruct data that was never captured.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Observability expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Logging full secrets and personal data.
+- Recording model output without model or prompt version.
+- Monitoring API uptime but not answer quality.
+- Aggregating metrics without preserving per-request traces for diagnosis.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Model Routing](../model-routing/)
 - [Tracing](../tracing/)
+- [Cost Management](../cost-management/)
+- [Data Privacy](../../../safety-privacy-and-reliability/sub/data-privacy/)

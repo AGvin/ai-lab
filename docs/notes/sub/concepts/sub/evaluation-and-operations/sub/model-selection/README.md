@@ -1,59 +1,35 @@
 # Model Selection
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Choosing a model based on task quality, capabilities, cost, latency, safety, and deployment constraints.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Model selection chooses a model and deployment configuration that best satisfy a task's quality, cost, latency, privacy, safety, and operational requirements.
 
 ## Core idea
 
-Choosing a model based on task quality, capabilities, cost, latency, safety, and deployment constraints. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+There is rarely one universally best model. A larger hosted model may provide stronger reasoning, while a smaller local model may offer lower cost, privacy, or offline operation. Selection should be based on measured workflow performance rather than reputation or parameter count.
 
-## How it works
+## Decision dimensions
 
-- Model selection compares candidate models against task requirements, quality evals, cost, latency, context, modalities, licensing, and deployment constraints.
-- The decision may choose different models for different stages rather than one universal model.
-- Selection should use current versions and representative inputs.
+- Task quality and failure severity.
+- Context and modality requirements.
+- Tool-calling and structured-output reliability.
+- Latency, throughput, and concurrency.
+- API cost or hardware requirement.
+- License, privacy, and data residency.
+- Provider stability and deployment control.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Practical use
 
-## Why it matters
+Define minimum acceptance thresholds, shortlist models using public evidence, then run the same internal evals. Test exact versions and quantizations. Record why the chosen model won and what conditions would trigger reconsideration.
 
-Model Selection affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+## Common mistakes
 
-## Practical uses
-
-- Choose hosted or local models for production workflows.
-- Avoid paying for capability that a task does not need.
-
-## Example
-
-A small local model handles private classification while a stronger hosted model is reserved for complex analysis.
-
-## Trade-offs and limitations
-
-- Provider models and pricing change, so decisions require periodic review.
-- A benchmark winner may fail operational or legal requirements.
-
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
-
-## Practical checklist
-
-- What problem is Model Selection expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Selecting from a single benchmark.
+- Comparing hosted and local models without total operating cost.
+- Ignoring version changes and provider deprecations.
+- Choosing the strongest model when a smaller one already meets requirements.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Evals](../evals/)
 - [Model Routing](../model-routing/)
+- [Benchmarks](../benchmarks/)
+- [Quality and Cost Trade-Offs](../quality-cost-tradeoffs/)

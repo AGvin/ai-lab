@@ -1,19 +1,8 @@
 # Model Usage and Generation
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Concepts for using trained models effectively through chats, APIs, applications, and local runtimes.
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
 
 ## Essential
 

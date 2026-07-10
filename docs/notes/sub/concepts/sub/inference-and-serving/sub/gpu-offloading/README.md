@@ -1,59 +1,36 @@
 # GPU Offloading
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Placing selected model computation or layers on a GPU while other work remains elsewhere.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+GPU offloading places some or all model computation and weights on a GPU while the remaining work stays on the CPU or another device.
 
 ## Core idea
 
-Placing selected model computation or layers on a GPU while other work remains elsewhere. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+When a model does not fit entirely in VRAM, runtimes may place selected layers on the GPU and keep the rest in system memory. More GPU-resident layers usually improve speed, but transfers and synchronization can reduce the benefit when the split is poorly chosen.
 
-## How it works
+## Practical use
 
-- GPU offloading places selected layers or operations on the GPU while the remainder runs on CPU or stays in system memory.
-- The runtime moves tensors across the interconnect and manages which weights fit in VRAM.
-- More offloaded layers usually improve speed until transfer overhead, VRAM pressure, or unsupported operations become limiting.
+- Run models larger than available VRAM.
+- Balance model weights against KV-cache and batch memory.
+- Use integrated GPUs or unified-memory systems efficiently.
+- Compare full GPU, partial GPU, and CPU-only configurations.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Design considerations
 
-## Why it matters
-
-GPU Offloading affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Run a model larger than available VRAM while still accelerating part of inference.
-- Tune llama.cpp-style deployments on mixed CPU/GPU systems.
-
-## Example
-
-A user can place most transformer layers on a 12 GB GPU and leave the remaining layers in RAM.
+Reserve VRAM for context, runtime buffers, and concurrent requests. Monitor actual allocation rather than trusting a configured layer count. PCIe bandwidth, memory bandwidth, and CPU performance all influence partial-offload speed.
 
 ## Trade-offs and limitations
 
-- PCIe transfers and CPU work can become bottlenecks.
-- Offloading settings are runtime-specific and do not map directly between tools.
+Partial offloading may be much slower than full GPU residency. Some layers or operations cannot be split efficiently. Unified-memory systems remove explicit transfer boundaries but still face bandwidth and capacity limits.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is GPU Offloading expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Filling VRAM with weights and leaving no room for the KV cache.
+- Assuming more offloaded layers always improve performance.
+- Comparing systems without matching context and batch size.
+- Ignoring thermal throttling and sustained power limits.
 
 ## Related concepts
 
 - [Inference and Serving](../../)
-- [Model Formats](../model-formats/)
+- [GPU Inference](../gpu-inference/)
+- [CPU Inference](../cpu-inference/)
 - [KV Cache](../kv-cache/)

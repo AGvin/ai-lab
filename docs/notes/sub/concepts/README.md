@@ -1,11 +1,5 @@
 # Concepts
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Practical and foundational AI concepts organized by topic and reading priority.
 
 Priority indicates the recommended learning order for a user who primarily consumes models, configures local inference, and builds or operates agent workflows.
@@ -33,7 +27,7 @@ Core concepts that explain what modern AI models are and how their main architec
 
 ### Specialized
 
-- [`artificial-intelligence/`](./sub/foundations-and-architecture/sub/artificial-intelligence/) — The broad field of building systems that perform tasks associated with perception, reasoning, generation, or decision-making.
+- [`artificial-intelligence/`](./sub/foundations-and-architecture/sub/artificial-intelligence/) — The broad field of systems that perform tasks associated with perception, reasoning, generation, or decision-making.
 - [`machine-learning/`](./sub/foundations-and-architecture/sub/machine-learning/) — Methods that learn patterns from data instead of relying only on explicitly programmed rules.
 - [`deep-learning/`](./sub/foundations-and-architecture/sub/deep-learning/) — Machine learning based on neural networks with many processing layers.
 - [`neural-networks/`](./sub/foundations-and-architecture/sub/neural-networks/) — Parameterized computational structures composed of connected layers or processing units.
@@ -85,13 +79,13 @@ Concepts for connecting models to external information, searchable documents, an
 - [`vector-databases/`](./sub/retrieval-and-knowledge/sub/vector-databases/) — Storage and indexing systems optimized for vectors and similarity search.
 - [`keyword-search/`](./sub/retrieval-and-knowledge/sub/keyword-search/) — Lexical retrieval based on terms that appear in the source text.
 - [`reranking/`](./sub/retrieval-and-knowledge/sub/reranking/) — A second-stage relevance model that reorders retrieved candidates.
-- [`citations/`](./sub/retrieval-and-knowledge/sub/citations/) — Links or references that connect generated statements to supporting sources.
+- [`citations/`](./sub/retrieval-and-knowledge/sub/citations/) — Links or references connecting generated statements to supporting sources.
 - [`metadata-filtering/`](./sub/retrieval-and-knowledge/sub/metadata-filtering/) — Restricting retrieval by attributes such as source, date, version, tenant, or access policy.
 
 ### Specialized
 
 - [`bm25/`](./sub/retrieval-and-knowledge/sub/bm25/) — A probabilistic lexical ranking method widely used in document retrieval.
-- [`graph-rag/`](./sub/retrieval-and-knowledge/sub/graph-rag/) — Retrieval-Augmented Generation that uses graph structures and relationships to assemble context.
+- [`graph-rag/`](./sub/retrieval-and-knowledge/sub/graph-rag/) — Retrieval-Augmented Generation using graph structures and relationships to assemble context.
 - [`knowledge-graphs/`](./sub/retrieval-and-knowledge/sub/knowledge-graphs/) — Structured representations of entities and their relationships.
 
 ## [Agents and Automation](./sub/agents-and-automation/)
@@ -101,22 +95,22 @@ Concepts for configuring AI systems that plan, use tools, maintain state, and pe
 ### Essential
 
 - [`ai-agents/`](./sub/agents-and-automation/sub/ai-agents/) — AI systems that pursue goals through model decisions, tools, state, and iterative actions.
-- [`agentic-workflows/`](./sub/agents-and-automation/sub/agentic-workflows/) — Controlled multi-step processes that combine model decisions with deterministic workflow logic.
-- [`tool-calling/`](./sub/agents-and-automation/sub/tool-calling/) — A model selecting a registered external operation and producing arguments for its execution.
-- [`agent-state/`](./sub/agents-and-automation/sub/agent-state/) — The explicit working data that tracks progress, decisions, and intermediate results.
-- [`agent-memory/`](./sub/agents-and-automation/sub/agent-memory/) — Mechanisms that preserve useful information beyond the immediate model request.
+- [`agentic-workflows/`](./sub/agents-and-automation/sub/agentic-workflows/) — Controlled multi-step processes combining model decisions with deterministic workflow logic.
+- [`tool-calling/`](./sub/agents-and-automation/sub/tool-calling/) — A model selecting a registered external operation and producing arguments for execution.
+- [`agent-state/`](./sub/agents-and-automation/sub/agent-state/) — Explicit working data tracking progress, decisions, and intermediate results.
+- [`agent-memory/`](./sub/agents-and-automation/sub/agent-memory/) — Mechanisms preserving useful information beyond the immediate request.
 - [`planning/`](./sub/agents-and-automation/sub/planning/) — Selecting and ordering actions needed to reach a goal.
-- [`verification-and-reflection/`](./sub/agents-and-automation/sub/verification-and-reflection/) — Checking results, identifying errors, and revising an approach when needed.
-- [`human-in-the-loop/`](./sub/agents-and-automation/sub/human-in-the-loop/) — Requiring human review, approval, or intervention at selected workflow points.
-- [`idempotency/`](./sub/agents-and-automation/sub/idempotency/) — Designing actions so safe repetition does not create unintended duplicate effects.
-- [`failure-recovery/`](./sub/agents-and-automation/sub/failure-recovery/) — Restoring progress safely after tool, model, network, or workflow failures.
+- [`verification-and-reflection/`](./sub/agents-and-automation/sub/verification-and-reflection/) — Checking results and revising an approach when needed.
+- [`human-in-the-loop/`](./sub/agents-and-automation/sub/human-in-the-loop/) — Human review, approval, or intervention at selected points.
+- [`idempotency/`](./sub/agents-and-automation/sub/idempotency/) — Designing actions so safe repetition does not create duplicate effects.
+- [`failure-recovery/`](./sub/agents-and-automation/sub/failure-recovery/) — Restoring progress safely after model, tool, network, or workflow failures.
 
 ### Useful
 
-- [`function-calling/`](./sub/agents-and-automation/sub/function-calling/) — A structured tool-calling interface where model output selects a function and arguments.
-- [`task-decomposition/`](./sub/agents-and-automation/sub/task-decomposition/) — Breaking a large task into smaller, verifiable units of work.
-- [`retries/`](./sub/agents-and-automation/sub/retries/) — Repeating eligible failed operations under bounded and observable rules.
-- [`autonomy-levels/`](./sub/agents-and-automation/sub/autonomy-levels/) — The degree of independent decision-making and action granted to an AI system.
+- [`function-calling/`](./sub/agents-and-automation/sub/function-calling/) — A structured tool interface where model output selects a function and arguments.
+- [`task-decomposition/`](./sub/agents-and-automation/sub/task-decomposition/) — Breaking a large task into smaller, verifiable units.
+- [`retries/`](./sub/agents-and-automation/sub/retries/) — Repeating eligible failed operations under bounded rules.
+- [`autonomy-levels/`](./sub/agents-and-automation/sub/autonomy-levels/) — The degree of independent decision-making granted to an AI system.
 
 ### Specialized
 
@@ -150,7 +144,7 @@ Concepts for running trained models locally or as services and understanding the
 
 - [`flash-attention/`](./sub/inference-and-serving/sub/flash-attention/) — Attention implementations optimized to reduce memory traffic and improve GPU efficiency.
 - [`continuous-batching/`](./sub/inference-and-serving/sub/continuous-batching/) — Dynamically combining active inference requests to improve serving utilization.
-- [`speculative-decoding/`](./sub/inference-and-serving/sub/speculative-decoding/) — Using a faster draft model or process to propose tokens for verification by a target model.
+- [`speculative-decoding/`](./sub/inference-and-serving/sub/speculative-decoding/) — Using a faster draft process to propose tokens for verification by a target model.
 
 ## [Training and Adaptation](./sub/training-and-adaptation/)
 
@@ -193,7 +187,7 @@ Concepts for models and workflows involving images, audio, video, and combinatio
 - [`image-to-image/`](./sub/multimodal-and-generative-media/sub/image-to-image/) — Generating a transformed image while conditioning on an existing image.
 - [`inpainting/`](./sub/multimodal-and-generative-media/sub/inpainting/) — Regenerating selected masked regions of an image.
 - [`controlnet/`](./sub/multimodal-and-generative-media/sub/controlnet/) — Conditioning diffusion models with structural controls such as edges, depth, or pose.
-- [`multimodal-context/`](./sub/multimodal-and-generative-media/sub/multimodal-context/) — The combined text, image, audio, video, or document information available to a model request.
+- [`multimodal-context/`](./sub/multimodal-and-generative-media/sub/multimodal-context/) — Combined text, image, audio, video, or document information available to a model request.
 
 ### Useful
 

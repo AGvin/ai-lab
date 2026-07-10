@@ -1,19 +1,8 @@
 # Inference and Serving
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Concepts for running trained models locally or as services and understanding their resource and performance behavior.
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
 
 ## Essential
 
@@ -39,4 +28,4 @@ Concepts are grouped by practical priority. Priority affects reading order, not 
 
 - [`flash-attention/`](./sub/flash-attention/) — Attention implementations optimized to reduce memory traffic and improve GPU efficiency.
 - [`continuous-batching/`](./sub/continuous-batching/) — Dynamically combining active inference requests to improve serving utilization.
-- [`speculative-decoding/`](./sub/speculative-decoding/) — Using a faster draft model or process to propose tokens for verification by a target model.
+- [`speculative-decoding/`](./sub/speculative-decoding/) — Using a faster draft process to propose tokens for verification by a target model.

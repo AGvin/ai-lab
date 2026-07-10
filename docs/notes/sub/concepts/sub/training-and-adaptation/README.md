@@ -1,19 +1,8 @@
 # Training and Adaptation
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Concepts for training models or adapting existing models to tasks, domains, preferences, and deployment constraints.
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
 
 ## Essential
 

@@ -1,59 +1,36 @@
 # Throughput
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
+Throughput measures how much inference work a system completes per unit of time.
 
-The amount of model work completed per unit of time.
+## Common measures
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+- Generated tokens per second.
+- Prompt tokens processed per second.
+- Requests completed per second.
+- Concurrent sessions sustained at a latency target.
 
 ## Core idea
 
-The amount of model work completed per unit of time. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Throughput is a system property, not only a model property. Batching, request length, hardware utilization, quantization, scheduler behavior, and concurrency all influence it. Per-request token speed may decrease while total system throughput increases.
 
-## How it works
+## Practical use
 
-- Throughput measures work completed per unit of time, such as tokens per second or requests per second.
-- Batching and concurrency often improve aggregate throughput by using hardware more fully.
-- Throughput must be reported with model, precision, context, output length, and hardware conditions.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Throughput affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Size servers for multiple users or batch processing.
-- Compare runtimes under sustained workload.
-
-## Example
-
-A server can generate more total tokens per second with continuous batching even though each user waits slightly longer.
+Measure throughput with the expected mix of prompt lengths, output lengths, and concurrent users. Report latency alongside throughput so a high number is not achieved by making individual users wait excessively.
 
 ## Trade-offs and limitations
 
-- Higher aggregate throughput can increase individual request latency.
-- Token throughput is not directly comparable across tokenizers or task shapes.
+Larger batches improve hardware utilization but consume more memory and can raise time to first token. Continuous batching improves serving efficiency but creates more complex scheduling behavior.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Throughput expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Comparing tokens per second from single-user and batched tests.
+- Mixing prompt and generation throughput.
+- Ignoring failed or timed-out requests.
+- Optimizing maximum throughput when the real requirement is interactive latency.
 
 ## Related concepts
 
 - [Inference and Serving](../../)
 - [Latency](../latency/)
+- [Continuous Batching](../continuous-batching/)
 - [Performance Metrics](../performance-metrics/)

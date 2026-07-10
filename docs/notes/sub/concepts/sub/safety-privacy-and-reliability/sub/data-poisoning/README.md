@@ -1,59 +1,34 @@
 # Data Poisoning
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Corrupting training or adaptation data to degrade or manipulate model behavior.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Data poisoning corrupts training or adaptation data to degrade model quality, create targeted behavior, or introduce hidden backdoors.
 
 ## Core idea
 
-Corrupting training or adaptation data to degrade or manipulate model behavior. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+An attacker may insert mislabeled examples, repeated propaganda, trigger phrases, malicious code, or subtly modified records. Poisoning can affect foundation-model pretraining, fine-tuning datasets, preference data, or evaluation sets.
 
-## How it works
+## Risk reduction
 
-- Data poisoning modifies training or adaptation data to influence learned behavior.
-- Attacks can degrade general performance, introduce targeted backdoors, or bias specific outputs.
-- Defenses include provenance, anomaly detection, deduplication, review, and robust evaluation.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Data Poisoning affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Threat-model third-party datasets and community-contributed training data.
-- Audit unexpected behavior after adaptation.
-
-## Example
-
-Malicious examples teach a model to produce a hidden response whenever a specific trigger phrase appears.
+- Control who can contribute data.
+- Preserve source provenance and signatures.
+- Detect duplicates, outliers, and unexpected label patterns.
+- Review high-impact or newly added sources.
+- Separate training, validation, and test data.
+- Rebuild and compare models after suspected compromise.
 
 ## Trade-offs and limitations
 
-- Small targeted poison samples can be difficult to detect.
-- Automated cleaning can remove legitimate rare examples.
+Large datasets make complete manual review impossible. Automated filters can miss subtle poisoning or remove legitimate rare cases. Some attacks become visible only after deployment.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Data Poisoning expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Trusting open contributions without provenance.
+- Using model-generated labels as unquestioned truth.
+- Evaluating with data from the same compromised source.
+- Treating retrieval poisoning and training poisoning as the same remediation problem.
 
 ## Related concepts
 
 - [Safety, Privacy, and Reliability](../../)
-- [Model Alignment](../model-alignment/)
-- [Prompt Injection](../prompt-injection/)
+- [Datasets](../../../training-and-adaptation/sub/datasets/)
+- [Retrieval Poisoning](../retrieval-poisoning/)
+- [Provenance](../provenance/)

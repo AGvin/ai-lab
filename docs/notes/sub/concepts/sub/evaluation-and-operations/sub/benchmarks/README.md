@@ -1,59 +1,38 @@
 # Benchmarks
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Standardized tasks or datasets used to compare models or systems.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+A benchmark is a standardized task, dataset, protocol, or workload used to compare models or systems under defined conditions.
 
 ## Core idea
 
-Standardized tasks or datasets used to compare models or systems. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Benchmarks support broad comparison, but their results are meaningful only when the tested model version, prompt, scoring method, hardware, and execution settings are understood. A benchmark score is evidence for the measured task, not a universal measure of intelligence.
 
-## How it works
+## Common benchmark types
 
-- A benchmark standardizes tasks, datasets, prompts, metrics, and reporting conditions for comparison.
-- Public leaderboards aggregate results across models, but implementation details and contamination controls differ.
-- Hardware and serving benchmarks also specify precision, batch size, context, and runtime.
+- Knowledge and reasoning question sets.
+- Coding and software-engineering tasks.
+- Multilingual and multimodal evaluations.
+- Safety and adversarial tests.
+- Inference latency, throughput, and memory workloads.
+- Human preference leaderboards.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Practical use
 
-## Why it matters
-
-Benchmarks affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Shortlist models and understand broad capability or performance trends.
-- Provide a repeatable baseline before workload-specific testing.
-
-## Example
-
-A reasoning benchmark can identify promising models, followed by internal tests on the actual repository tasks.
+Use public benchmarks to narrow candidates, then run task-specific evals on the real workflow. Check whether results are independently reproducible and whether training contamination or prompt optimization may affect the ranking.
 
 ## Trade-offs and limitations
 
-- Leaderboard rank may not predict performance on a private task.
-- Training contamination, prompt optimization, and inconsistent versions can distort comparisons.
+Popular benchmarks can become saturated, leaked into training data, or optimized indirectly. Different harnesses may produce materially different scores. Leaderboards also tend to simplify multi-dimensional trade-offs into one ranking.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Benchmarks expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Selecting a model from one aggregate rank.
+- Comparing scores produced by different harnesses as equivalent.
+- Ignoring cost and latency.
+- Treating benchmark names as stable methodology without checking versions.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Quality and Cost Trade-Offs](../quality-cost-tradeoffs/)
-- [Evaluation Datasets](../evaluation-datasets/)
+- [Evals](../evals/)
+- [Model Selection](../model-selection/)
+- [Performance Metrics](../../../inference-and-serving/sub/performance-metrics/)

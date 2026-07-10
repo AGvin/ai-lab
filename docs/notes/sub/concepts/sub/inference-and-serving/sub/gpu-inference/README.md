@@ -1,59 +1,37 @@
 # GPU Inference
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Running model computation primarily on graphics processors optimized for parallel workloads.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+GPU inference runs model operations on graphics processors designed for highly parallel matrix computation and high-bandwidth device memory.
 
 ## Core idea
 
-Running model computation primarily on graphics processors optimized for parallel workloads. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+GPUs can accelerate prompt processing and token generation when the model and runtime use optimized kernels. Available VRAM determines whether weights, the KV cache, batches, and temporary buffers fit without offloading.
 
-## How it works
+## Practical use
 
-- GPU inference uses highly parallel matrix and attention kernels on accelerator memory.
-- Weights and runtime buffers must fit or be partitioned, offloaded, or distributed.
-- Kernel support for precision and architecture determines whether theoretical hardware performance is realized.
+- Interactive local language models.
+- High-throughput model serving.
+- Image, audio, and video generation.
+- Embedding and reranking workloads at scale.
+- Fine-tuning with supported low-rank methods.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Design considerations
 
-## Why it matters
-
-GPU Inference affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Accelerate interactive generation and high-throughput serving.
-- Run larger models or longer contexts than practical on CPU alone.
-
-## Example
-
-A CUDA runtime can use tensor cores for FP16 or supported low-precision matrix multiplication.
+Evaluate VRAM capacity, memory bandwidth, supported numerical formats, software ecosystem, and power limits. Consumer and data-center GPUs may differ in memory size, reliability features, virtualization, and optimized precision support.
 
 ## Trade-offs and limitations
 
-- VRAM is often the primary capacity constraint.
-- Unsupported formats or transfer overhead can leave expensive hardware underutilized.
+GPUs offer high speed but can be expensive, power-hungry, and constrained by VRAM. A model split across several GPUs may incur communication overhead. Runtime support varies by vendor and architecture.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is GPU Inference expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Selecting a GPU only by compute-core count.
+- Ignoring VRAM needed for context and concurrency.
+- Assuming every low-precision format is accelerated.
+- Comparing peak specifications instead of measured model performance.
 
 ## Related concepts
 
 - [Inference and Serving](../../)
 - [CPU Inference](../cpu-inference/)
-- [Context Caching](../context-caching/)
+- [GPU Offloading](../gpu-offloading/)
+- [Numerical Precision](../numerical-precision/)

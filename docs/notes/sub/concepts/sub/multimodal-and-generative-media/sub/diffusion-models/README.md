@@ -1,59 +1,37 @@
 # Diffusion Models
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Generative models that learn to reverse a progressive noising process.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Diffusion models are generative models trained to reverse a process that progressively adds noise to data.
 
 ## Core idea
 
-Generative models that learn to reverse a progressive noising process. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+During generation, the model starts from random noise or a noised input and predicts how to remove noise over several steps. Conditioning such as text embeddings, images, masks, or structural controls guides the denoising trajectory. Many image systems operate in a compressed latent space instead of directly on pixels.
 
-## How it works
+## Practical use
 
-- A diffusion model is trained to predict and remove noise from progressively corrupted data.
-- Generation starts from noise or a noised input and iteratively applies denoising steps.
-- Conditioning such as text embeddings, images, masks, or ControlNet signals guides the denoising trajectory.
+- Text-to-image generation.
+- Image editing, inpainting, and outpainting.
+- Super-resolution and restoration.
+- Audio and video generation.
+- Controlled generation using edges, depth, or pose.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Important settings
 
-## Why it matters
-
-Diffusion Models affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Generate and edit images, audio, and video.
-- Support text-to-image, image-to-image, inpainting, and controlled generation.
-
-## Example
-
-A latent diffusion model denoises a random latent representation while following a text prompt and pose control.
+The sampler, number of steps, guidance strength, seed, resolution, and conditioning weights affect output. More steps do not always improve quality after the sampler reaches diminishing returns.
 
 ## Trade-offs and limitations
 
-- Sampling can require many iterative steps and substantial compute.
-- Results are stochastic and may drift from precise structural requirements.
+Diffusion generation is iterative and can be computationally expensive. High guidance may reduce diversity or create artifacts. Models can struggle with exact text, consistent characters, and complex spatial constraints.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Diffusion Models expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Treating seed alone as complete reproducibility.
+- Increasing steps without measuring improvement.
+- Using incompatible model, VAE, or conditioning components.
+- Assuming latent-space edits preserve every original detail.
 
 ## Related concepts
 
 - [Multimodal and Generative Media](../../)
+- [Latent Space](../latent-space/)
+- [ControlNet](../controlnet/)
 - [Image Generation](../image-generation/)
-- [Image-to-Image](../image-to-image/)

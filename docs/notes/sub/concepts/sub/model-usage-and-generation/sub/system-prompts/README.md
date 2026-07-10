@@ -1,59 +1,37 @@
 # System Prompts
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-High-priority instructions that define an assistant's role, behavior, and operational boundaries.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+A system prompt is a high-priority instruction layer that defines an assistant's role, operating rules, tool boundaries, and expected behavior for a session or application.
 
 ## Core idea
 
-High-priority instructions that define an assistant's role, behavior, and operational boundaries. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+System prompts establish policy and behavior before ordinary user input is processed. They are commonly used to define tone, task scope, safety constraints, tool-use rules, and output conventions. They should contain stable instructions, while dynamic user data and retrieved documents should remain separate.
 
-## How it works
+## Good system-prompt responsibilities
 
-- A system prompt provides high-priority instructions before ordinary user content in chat-oriented model APIs.
-- Applications use it to define role, policies, tool rules, output standards, and boundaries that should persist across requests.
-- The surrounding runtime—not the model alone—must preserve message roles and prevent untrusted content from being promoted to system authority.
+- Define the assistant's purpose and permitted scope.
+- Establish which instruction sources are trusted.
+- Specify when tools may or must be used.
+- Require validation before consequential actions.
+- Set durable output and communication conventions.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+## Practical use
 
-## Why it matters
-
-System Prompts affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Configure a reusable assistant or agent behavior layer.
-- Separate application-owned policy from per-request user instructions.
-
-## Example
-
-A coding agent system prompt can require feature branches, tests, explicit approval before merge, and refusal to expose credentials.
+Keep the prompt concise, explicit, and internally consistent. Separate policy from examples. Treat retrieved web pages, emails, and documents as untrusted data even when they contain instruction-like text. For tool-using systems, pair prompt rules with actual permission checks and sandboxing rather than relying on text alone.
 
 ## Trade-offs and limitations
 
-- System prompts are not a complete security boundary and can still be undermined by ambiguous design or tool permissions.
-- Different providers and models may follow the same system prompt with different consistency.
+System prompts guide behavior but are not a security boundary by themselves. They consume context, can become difficult to maintain when overloaded, and may interact differently with model updates. Enforcement that matters for safety or data access should also exist in application code.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is System Prompts expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Storing secrets directly in the prompt.
+- Using the system prompt as the only defense against prompt injection.
+- Combining stable policy with rapidly changing task data.
+- Adding conflicting rules without a clear priority model.
 
 ## Related concepts
 
 - [Model Usage and Generation](../../)
 - [Prompting](../prompting/)
-- [Structured Output](../structured-output/)
+- [Prompt Injection](../../../safety-privacy-and-reliability/sub/prompt-injection/)
+- [Trust Boundaries](../../../safety-privacy-and-reliability/sub/trust-boundaries/)

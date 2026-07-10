@@ -1,59 +1,32 @@
 # Mixture of Experts
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
-Sparse model architectures that route each input through selected expert components.
-
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
+Mixture of Experts is a sparse architecture in which a router selects a small subset of expert networks to process each token or input.
 
 ## Core idea
 
-Sparse model architectures that route each input through selected expert components. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+Experts are typically alternative feed-forward blocks. The router scores them and activates the top choices. This increases total model capacity without multiplying computation by the full number of experts.
 
-## How it works
+## Practical implications
 
-- A Mixture-of-Experts layer contains several expert networks and a router that assigns each token to one or more experts.
-- Only selected experts execute for a token, so active computation can be much smaller than the total parameter count.
-- Training and serving need load-balancing mechanisms so a small number of experts do not become bottlenecks.
-
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-Mixture of Experts affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
-
-## Practical uses
-
-- Understand sparse model specifications and active-parameter claims.
-- Evaluate whether a runtime and hardware topology support efficient expert routing.
-
-## Example
-
-A token related to programming may be routed differently from a token related to another domain, although experts are not guaranteed to have clean human-readable specializations.
+- Total parameter count can be much larger than active parameter count.
+- Storage and memory must still accommodate expert weights.
+- Inference efficiency depends on routing, batching, and device placement.
+- Training includes load-balancing objectives to avoid expert collapse.
 
 ## Trade-offs and limitations
 
-- All expert weights may still need to be stored or distributed across devices.
-- Routing overhead and uneven expert utilization can reduce theoretical efficiency gains.
+MoE models can achieve strong quality per unit of compute, but serving them across devices may require expensive communication. Small local batches may not utilize experts efficiently. Routing decisions can also make behavior harder to analyze.
 
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+## Common mistakes
 
-## Practical checklist
-
-- What problem is Mixture of Experts expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Assuming inactive experts consume no memory.
+- Comparing an MoE model with a dense model only by total parameters.
+- Expecting all runtimes to support the architecture efficiently.
+- Treating experts as clean human-understandable domains.
 
 ## Related concepts
 
 - [Foundations and Architecture](../../)
-- [Attention](../attention/)
-- [Artificial Intelligence](../artificial-intelligence/)
+- [Dense and Sparse Models](../dense-and-sparse-models/)
+- [Model Loading](../../../inference-and-serving/sub/model-loading/)
+- [Throughput](../../../inference-and-serving/sub/throughput/)
