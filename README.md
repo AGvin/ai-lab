@@ -4,7 +4,7 @@ Practical AI lab for models, tools, local inference, benchmarks, hardware notes,
 
 ## Translations
 
-- English — current
+- English
 - [Українська](./l10n/uk_UA/)
 
 ## Status
