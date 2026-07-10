@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:bc8c799ad8c630daa4b9d2e9beba24c475019a51
+  source_hash: gitblob:d42d3f9b4618748450952a3c8b9b5d0ecbc3ab1f
   mode: copy-through
 -->
 
@@ -74,8 +74,8 @@ An adapter created for one checkpoint should not be assumed to work correctly wi
 
 ## Related concepts
 
-- [Training and Adaptation](../../../../l10n/uk_UA/)
-- [Parameter-Efficient Fine-Tuning](../../../parameter-efficient-fine-tuning/l10n/uk_UA/)
-- [QLoRA](../../../qlora/l10n/uk_UA/)
-- [Fine-Tuning](../../../fine-tuning/l10n/uk_UA/)
-- [RAG](../../../../../retrieval-and-knowledge/sub/rag/l10n/uk_UA/)
+- [Training and Adaptation](../../../../README.md)
+- [Parameter-Efficient Fine-Tuning](../../../parameter-efficient-fine-tuning/README.md)
+- [QLoRA](../../../qlora/README.md)
+- [Fine-Tuning](../../../fine-tuning/README.md)
+- [RAG](../../../../../retrieval-and-knowledge/sub/rag/README.md)
