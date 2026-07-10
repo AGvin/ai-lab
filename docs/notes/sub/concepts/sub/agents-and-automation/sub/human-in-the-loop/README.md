@@ -1,0 +1,25 @@
+# Human in the Loop
+
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
+Requiring human review, approval, or intervention at selected workflow points.
+
+## Why it matters
+
+This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+
+## Practical use
+
+- Use the concept when defining agent control flow, tools, permissions, and stop conditions.
+- Keep important state explicit and make consequential actions reviewable.
+- Log actions and design safe recovery for partial failures or repeated execution.
+
+## Related concepts
+
+- [Agents and Automation](../../)
+- [Verification and Reflection](../verification-and-reflection/)
+- [Idempotency](../idempotency/)

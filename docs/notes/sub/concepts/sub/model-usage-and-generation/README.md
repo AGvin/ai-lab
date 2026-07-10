@@ -1,26 +1,32 @@
 # Model Usage and Generation
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Concepts for using trained models effectively through chats, APIs, applications, and local runtimes.
 
-The concept map below guides future pages. Existing pages are linked when available.
+Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
 ## Essential
 
-- Tokens and Tokenization — how model input and output are divided into processable units.
-- Context Window — the amount of information a model can consider in one request.
-- Prompting — practical construction of instructions, context, examples, and constraints.
-- System Prompts — high-priority instructions that define model behavior and boundaries.
-- Structured Output — generation constrained to JSON, schemas, or other machine-readable formats.
-- Hallucinations — unsupported or incorrect content presented as if it were reliable.
+- [`tokens-and-tokenization/`](./sub/tokens-and-tokenization/) — The process of splitting input and output into the units a model reads and generates.
+- [`context-window/`](./sub/context-window/) — The bounded amount of tokenized information a model can consider during one request.
+- [`prompting/`](./sub/prompting/) — The practice of supplying instructions, context, examples, and constraints to guide a model.
+- [`system-prompts/`](./sub/system-prompts/) — High-priority instructions that define an assistant's role, behavior, and operational boundaries.
+- [`structured-output/`](./sub/structured-output/) — Model output constrained to a machine-readable structure such as JSON or a schema.
+- [`hallucinations/`](./sub/hallucinations/) — Unsupported or incorrect model output presented in a plausible form.
 
 ## Useful
 
-- Few-Shot Prompting — guiding behavior through examples included in the prompt.
-- Sampling Parameters — controls such as temperature, top-p, top-k, and seed.
-- Reasoning Models — models optimized for multi-step analysis and problem solving.
-- Model Capabilities and Limitations — practical boundaries of a model, modality, or deployment.
+- [`few-shot-prompting/`](./sub/few-shot-prompting/) — Prompting that includes a small number of examples to demonstrate desired behavior.
+- [`sampling-parameters/`](./sub/sampling-parameters/) — Controls such as temperature, top-p, top-k, and seed that influence token selection.
+- [`reasoning-models/`](./sub/reasoning-models/) — Models optimized to spend additional computation on multi-step problem solving.
+- [`model-capabilities-and-limitations/`](./sub/model-capabilities-and-limitations/) — The practical strengths, boundaries, and failure modes of a specific model or deployment.
 
 ## Specialized
 
-- Constrained Generation — restricting output to an allowed grammar, schema, or token set.
-- Chain of Thought — intermediate reasoning patterns used to support multi-step tasks.
+- [`constrained-generation/`](./sub/constrained-generation/) — Generation restricted by a grammar, schema, token set, or other formal constraint.
+- [`chain-of-thought/`](./sub/chain-of-thought/) — Intermediate reasoning text or internal computation used to support multi-step answers.

@@ -1,27 +1,33 @@
 # Foundations and Architecture
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Core concepts that explain what modern AI models are and how their main architectural families relate.
 
-The concept map below guides future pages. Existing pages are linked when available.
+Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
 ## Essential
 
-- Foundation Models — reusable base models trained for adaptation across many tasks.
-- Large Language Models — models specialized in understanding and generating language.
-- Multimodal Models — models that work across text, images, audio, video, or other modalities.
+- [`foundation-models/`](./sub/foundation-models/) — Large reusable models trained on broad data and adapted to many downstream tasks.
+- [`large-language-models/`](./sub/large-language-models/) — Language-focused foundation models that predict and generate token sequences.
+- [`multimodal-models/`](./sub/multimodal-models/) — Models that process or generate more than one modality, such as text, images, audio, or video.
 
 ## Useful
 
-- Transformers — the dominant architecture behind modern language and multimodal models.
-- Attention — the mechanism used to weight relevant parts of model input.
-- Mixture of Experts — sparse architectures that activate selected expert components for each input.
+- [`transformers/`](./sub/transformers/) — Neural network architectures built around attention and parallel sequence processing.
+- [`attention/`](./sub/attention/) — A mechanism that weights which input elements are most relevant for a model operation.
+- [`mixture-of-experts/`](./sub/mixture-of-experts/) — Sparse model architectures that route each input through selected expert components.
 
 ## Specialized
 
-- Artificial Intelligence — the broad field of systems performing tasks associated with intelligence.
-- Machine Learning — systems that learn patterns from data.
-- Deep Learning — machine learning based on multi-layer neural networks.
-- Neural Networks — parameterized computational structures inspired by connected processing units.
-- Self-Attention — attention computed between positions in the same sequence.
-- Encoder and Decoder Architectures — model structures for representation, generation, or both.
-- Dense and Sparse Models — models that activate all parameters or only selected subsets during inference.
+- [`artificial-intelligence/`](./sub/artificial-intelligence/) — The broad field of building systems that perform tasks associated with perception, reasoning, generation, or decision-making.
+- [`machine-learning/`](./sub/machine-learning/) — Methods that learn patterns from data instead of relying only on explicitly programmed rules.
+- [`deep-learning/`](./sub/deep-learning/) — Machine learning based on neural networks with many processing layers.
+- [`neural-networks/`](./sub/neural-networks/) — Parameterized computational structures composed of connected layers or processing units.
+- [`self-attention/`](./sub/self-attention/) — Attention computed between positions within the same input sequence.
+- [`encoder-decoder/`](./sub/encoder-decoder/) — Model structures that encode inputs, generate outputs, or combine both roles.
+- [`dense-and-sparse-models/`](./sub/dense-and-sparse-models/) — Dense models activate most parameters for each input, while sparse models activate selected subsets.
