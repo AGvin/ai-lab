@@ -1,0 +1,330 @@
+name: Sync concept localizations
+
+on:
+  push:
+    branches:
+      - docs/add-rag-concept
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: docs/add-rag-concept
+          fetch-depth: 0
+
+      - name: Synchronize concept pages and localizations
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python3 <<'PY'
+          from __future__ import annotations
+
+          from pathlib import Path
+          import hashlib
+          import os
+          import re
+          import shutil
+
+          concept_root = Path('docs/notes/sub/concepts')
+          category_root = concept_root / 'sub'
+          allowed_categories = {
+              'foundations-and-architecture',
+              'model-usage-and-generation',
+              'retrieval-and-knowledge',
+              'agents-and-automation',
+              'inference-and-serving',
+              'training-and-adaptation',
+              'multimodal-and-generative-media',
+              'safety-privacy-and-reliability',
+              'evaluation-and-operations',
+          }
+
+          for child in category_root.iterdir():
+              if child.is_dir() and child.name not in allowed_categories:
+                  shutil.rmtree(child)
+
+          lora_source = category_root / 'training-and-adaptation/sub/lora/README.md'
+          lora_source.write_text('''# LoRA
+
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
+Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning method that learns compact low-rank updates while keeping the original model weights frozen.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
+
+## Core idea
+
+A full fine-tune updates a large portion of a model's parameters. LoRA instead represents the weight change for selected layers as the product of two much smaller matrices. The base model remains unchanged, while the adapter stores only the learned update.
+
+This makes it possible to keep one base model and load different adapters for different tasks, domains, characters, or visual styles.
+
+## How it works
+
+1. Select target modules, commonly attention or projection layers.
+2. Freeze the original model weights.
+3. Add a pair of trainable low-rank matrices to each selected module.
+4. Train only those added parameters on the adaptation dataset.
+5. Keep the adapter separate or merge it into compatible base weights for deployment.
+
+Important configuration values include the rank, scaling factor, target modules, learning rate, dropout, dataset quality, and number of training steps.
+
+## Practical uses
+
+- Adapt a language model to a domain, response format, or recurring task.
+- Add a visual style, subject, character, or product concept to an image model.
+- Maintain several small variants without storing a full model copy for each one.
+- Share adaptation artifacts while requiring users to obtain the compatible base model separately.
+
+## Example
+
+A team can keep one general-purpose coding model and train separate LoRA adapters for an internal framework, a documentation style, and a review workflow. The runtime loads the base model once and activates the adapter required for the current task.
+
+## Compatibility
+
+A LoRA adapter is tied to assumptions about the base model and training configuration. Verify at least:
+
+- exact base model family and revision;
+- tokenizer or text encoder compatibility;
+- target layer names and architecture;
+- adapter format and runtime support;
+- whether the runtime loads adapters dynamically or requires merged weights.
+
+An adapter created for one checkpoint should not be assumed to work correctly with another model that merely has a similar name.
+
+## Trade-offs and limitations
+
+- Low-rank capacity may be insufficient for large behavioral or knowledge changes.
+- Poor training data can introduce artifacts, regressions, or memorized errors.
+- Multiple adapters may interact unpredictably when combined.
+- Merging simplifies deployment but removes the ability to switch the adapter independently.
+- LoRA changes model behavior; it is not a dependable replacement for RAG when facts must remain current or traceable.
+
+## Practical checklist
+
+- Is adaptation necessary, or can prompting, tools, structured output, or RAG solve the problem?
+- Is the exact base model recorded and available?
+- Are training, validation, and holdout examples separated?
+- Which modules and rank are appropriate for the intended change?
+- How will the adapter be evaluated against the unchanged base model?
+- Will the adapter remain separate, be combined with others, or be merged for deployment?
+
+## Related concepts
+
+- [Training and Adaptation](../../)
+- [Parameter-Efficient Fine-Tuning](../parameter-efficient-fine-tuning/)
+- [QLoRA](../qlora/)
+- [Fine-Tuning](../fine-tuning/)
+- [RAG](../../../retrieval-and-knowledge/sub/rag/)
+''', encoding='utf-8')
+
+          AI_COMMENT_RE = re.compile(r'<!--\s*ai_content:.*?-->\s*', re.S)
+          TRANSLATIONS_RE = re.compile(
+              r'## Translations\n\n- English — current\n- \[Українська\]\(\./l10n/uk_UA/\)\n?', re.M
+          )
+          LINK_RE = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
+
+          def git_blob_sha(data: bytes) -> str:
+              header = b'blob ' + str(len(data)).encode('ascii') + b'\0'
+              return hashlib.sha1(header + data).hexdigest()
+
+          def ensure_translation_navigation(text: str) -> str:
+              if '## Translations' in text:
+                  return text
+              first_section = text.find('\n## ')
+              if first_section < 0:
+                  raise RuntimeError('Cannot locate first section for translation navigation')
+              navigation = (
+                  '\n## Translations\n\n'
+                  '- English — current\n'
+                  '- [Українська](./l10n/uk_UA/)\n'
+              )
+              return text[:first_section] + navigation + text[first_section:]
+
+          def localize_links(body: str, source: Path, localized: Path) -> str:
+              def replace(match: re.Match[str]) -> str:
+                  label, target = match.group(1), match.group(2)
+                  if target == './l10n/uk_UA/' or '://' in target or target.startswith(('#', 'mailto:')):
+                      return match.group(0)
+                  target_path = (source.parent / target).resolve()
+                  if target.endswith('/') or target_path.is_dir():
+                      target_source = target_path / 'README.md'
+                  else:
+                      target_source = target_path
+                  try:
+                      target_source.relative_to(concept_root.resolve())
+                  except ValueError:
+                      return match.group(0)
+                  if target_source.name != 'README.md':
+                      return match.group(0)
+                  target_localized_dir = target_source.parent / 'l10n/uk_UA'
+                  relative = os.path.relpath(target_localized_dir, localized.parent).replace(os.sep, '/')
+                  return f'[{label}]({relative}/)'
+              return LINK_RE.sub(replace, body)
+
+          source_pages = sorted(
+              page for page in concept_root.rglob('README.md')
+              if '/l10n/' not in page.as_posix()
+          )
+
+          for source in source_pages:
+              source_text = source.read_text(encoding='utf-8')
+              if 'l10n: true' not in source_text:
+                  continue
+              source_text = ensure_translation_navigation(source_text)
+              source.write_text(source_text, encoding='utf-8')
+
+              localized = source.parent / 'l10n/uk_UA/README.md'
+              localized.parent.mkdir(parents=True, exist_ok=True)
+              body = AI_COMMENT_RE.sub('', source_text, count=1)
+              body = localize_links(body, source, localized)
+              body = TRANSLATIONS_RE.sub(
+                  '## Переклади\n\n- [English](../../)\n- Українська — поточна\n',
+                  body,
+                  count=1,
+              )
+              source_hash = git_blob_sha(source.read_bytes())
+              metadata = (
+                  '<!--\n'
+                  'l10n:\n'
+                  '  locale: uk_UA\n'
+                  '  source_locale: default\n'
+                  '  source_path: ../../README.md\n'
+                  f'  source_hash: gitblob:{source_hash}\n'
+                  '  mode: copy-through\n'
+                  '-->\n\n'
+              )
+              localized.write_text(metadata + body, encoding='utf-8')
+
+          root_source = Path('README.md')
+          root_localized = Path('l10n/uk_UA/README.md')
+          source_lines = root_source.read_text(encoding='utf-8').splitlines()
+          start = next(
+              index for index, line in enumerate(source_lines)
+              if line.startswith('  - [`concepts/`](./docs/notes/sub/concepts/)')
+          )
+          end = next(
+              index for index, line in enumerate(source_lines[start + 1:], start + 1)
+              if line.startswith('  - [`benchmarks/`](./docs/notes/sub/benchmarks/)')
+          )
+          concepts_block = '\n'.join(source_lines[start:end])
+
+          def root_link(match: re.Match[str]) -> str:
+              label, target = match.group(1), match.group(2)
+              if not target.startswith('./docs/notes/sub/concepts/'):
+                  return match.group(0)
+              localized_target = '../../' + target[2:].rstrip('/') + '/l10n/uk_UA/'
+              return f'[{label}]({localized_target})'
+
+          concepts_block = LINK_RE.sub(root_link, concepts_block)
+          concepts_block = concepts_block.replace('      - Essential', '      - Основні')
+          concepts_block = concepts_block.replace('      - Useful', '      - Корисні')
+          concepts_block = concepts_block.replace('      - Specialized', '      - Спеціалізовані')
+          concepts_block = concepts_block.replace(
+              '— practical and foundational AI concepts organized by topic and priority.',
+              '— практичні та фундаментальні AI concepts, організовані за темою і пріоритетом.',
+          )
+
+          localized_text = root_localized.read_text(encoding='utf-8')
+          localized_lines = localized_text.splitlines()
+          localized_start = next(
+              index for index, line in enumerate(localized_lines)
+              if line.startswith('  - [`concepts/`](../../docs/notes/sub/concepts/')
+          )
+          localized_end = next(
+              index for index, line in enumerate(localized_lines[localized_start + 1:], localized_start + 1)
+              if line.startswith('  - [`benchmarks/`](../../docs/notes/sub/benchmarks/')
+          )
+          localized_lines[localized_start:localized_end] = concepts_block.splitlines()
+          localized_text = '\n'.join(localized_lines) + '\n'
+          root_hash = git_blob_sha(root_source.read_bytes())
+          localized_text = re.sub(
+              r'source_hash: (?:gitblob|sha256):[0-9a-f]+',
+              f'source_hash: gitblob:{root_hash}',
+              localized_text,
+              count=1,
+          )
+          root_localized.write_text(localized_text, encoding='utf-8')
+
+          errors: list[str] = []
+          for source in source_pages:
+              source_text = source.read_text(encoding='utf-8')
+              if 'l10n: true' not in source_text:
+                  continue
+              localized = source.parent / 'l10n/uk_UA/README.md'
+              if not localized.exists():
+                  errors.append(f'missing localization: {source}')
+                  continue
+              localized_text = localized.read_text(encoding='utf-8')
+              match = re.search(r'source_hash: gitblob:([0-9a-f]{40})', localized_text)
+              actual = git_blob_sha(source.read_bytes())
+              if not match or match.group(1) != actual:
+                  errors.append(f'hash mismatch: {localized}')
+
+          for page in concept_root.rglob('README.md'):
+              text = page.read_text(encoding='utf-8')
+              for target in re.findall(r'\[[^\]]*\]\(([^)]+)\)', text):
+                  if '://' in target or target.startswith(('#', 'mailto:')):
+                      continue
+                  resolved = (page.parent / target).resolve()
+                  if target.endswith('/') or resolved.is_dir():
+                      resolved = resolved / 'README.md'
+                  if not resolved.exists():
+                      errors.append(f'broken link: {page} -> {target}')
+
+          direct_children = {
+              child.name for child in category_root.iterdir() if child.is_dir()
+          }
+          if direct_children != allowed_categories:
+              errors.append(f'unexpected category folders: {sorted(direct_children - allowed_categories)}')
+
+          root_match = re.search(
+              r'source_hash: gitblob:([0-9a-f]{40})',
+              root_localized.read_text(encoding='utf-8'),
+          )
+          if not root_match or root_match.group(1) != git_blob_sha(root_source.read_bytes()):
+              errors.append('root localization hash mismatch')
+
+          if errors:
+              print('\n'.join(errors[:100]))
+              raise SystemExit(f'validation failed with {len(errors)} error(s)')
+
+          print(f'validated {len(source_pages)} source pages and their localization counterparts')
+          PY
+
+          rm -f .github/workflows/sync-concept-localizations.yml
+          rm -f .github/concept-generator.part-*
+          rm -f concept-docs-workflow.log
+
+      - name: Commit synchronized documentation
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          find docs/notes/sub/concepts -path '*/l10n/uk_UA/README.md' -print0 | xargs -0 git add -f --
+          git add l10n/uk_UA/README.md
+          git diff --cached --check
+          git commit -m "Synchronize detailed concept localizations"
+          git push origin HEAD:docs/add-rag-concept
