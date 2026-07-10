@@ -1,0 +1,223 @@
+name: Apply concept documentation
+
+on:
+  push:
+    branches:
+      - docs/add-rag-concept
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate documentation
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          cat .github/concept-generator.part-* | base64 -d > /tmp/concept-generator.tar.gz
+          rm -rf /tmp/concept-generator /tmp/concept-gen/out /tmp/concept-gen/manifest.json
+          mkdir -p /tmp/concept-generator
+          tar -xzf /tmp/concept-generator.tar.gz -C /tmp/concept-generator
+
+          PYTHONPATH=/tmp/concept-generator python3 /tmp/concept-generator/generate.py
+          python3 /tmp/concept-generator/validate.py
+          cp -a /tmp/concept-gen/out/. .
+
+          python3 <<'PY'
+          from pathlib import Path
+          import hashlib
+          import re
+          import shutil
+
+          def git_blob_sha(data: bytes) -> str:
+              return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
+
+          def add_translation_navigation(text: str) -> str:
+              if "## Translations" in text:
+                  return text
+              marker = (
+                  "Retrieval-Augmented Generation (RAG) is an architecture that gives a language model "
+                  "relevant external information before it generates an answer.\n"
+              )
+              navigation = "\n## Translations\n\n- English — current\n- [Українська](./l10n/uk_UA/)\n"
+              if marker not in text:
+                  raise RuntimeError("RAG introduction marker was not found")
+              return text.replace(marker, marker + navigation, 1)
+
+          rag_source = Path(
+              "docs/notes/sub/concepts/sub/retrieval-and-knowledge/sub/rag/README.md"
+          )
+          rag_text = add_translation_navigation(rag_source.read_text(encoding="utf-8"))
+          rag_source.write_text(rag_text, encoding="utf-8")
+          rag_hash = git_blob_sha(rag_source.read_bytes())
+
+          rag_localized = re.sub(
+              r"<!--\nai_content:\n  managed: true\n  l10n: true\n-->\n\n",
+              "",
+              rag_text,
+              count=1,
+          )
+          rag_localized = rag_localized.replace(
+              "## Translations\n\n- English — current\n- [Українська](./l10n/uk_UA/)",
+              "## Переклади\n\n- [English](../../)\n- Українська — поточна",
+              1,
+          )
+          rag_metadata = (
+              "<!--\n"
+              "l10n:\n"
+              "  locale: uk_UA\n"
+              "  source_locale: default\n"
+              "  source_path: ../../README.md\n"
+              f"  source_hash: gitblob:{rag_hash}\n"
+              "  mode: copy-through\n"
+              "-->\n\n"
+          )
+          rag_target = rag_source.parent / "l10n" / "uk_UA" / "README.md"
+          rag_target.parent.mkdir(parents=True, exist_ok=True)
+          rag_target.write_text(rag_metadata + rag_localized, encoding="utf-8")
+
+          old_lora = Path("docs/notes/sub/concepts/sub/lora")
+          if old_lora.exists():
+              shutil.rmtree(old_lora)
+
+          root_source = Path("README.md")
+          root_localized = Path("l10n/uk_UA/README.md")
+          source_text = root_source.read_text(encoding="utf-8")
+          localized_text = root_localized.read_text(encoding="utf-8")
+
+          source_lines = source_text.splitlines()
+          start = next(
+              i for i, line in enumerate(source_lines)
+              if line.startswith("  - [`concepts/`](./docs/notes/sub/concepts/)")
+          )
+          end = next(
+              i for i, line in enumerate(source_lines[start + 1 :], start + 1)
+              if line.startswith("  - [`benchmarks/`](./docs/notes/sub/benchmarks/)")
+          )
+          concepts_block = "\n".join(source_lines[start:end])
+
+          def localize_concept_link(match: re.Match[str]) -> str:
+              target = match.group(1)
+              if not target.startswith("./docs/notes/sub/concepts/"):
+                  return match.group(0)
+              localized_target = "../../" + target[2:].rstrip("/") + "/l10n/uk_UA/"
+              return f"]({localized_target})"
+
+          concepts_block = re.sub(
+              r"]\((\./docs/notes/sub/concepts/[^)]*)\)",
+              localize_concept_link,
+              concepts_block,
+          )
+          concepts_block = concepts_block.replace(
+              "— practical and foundational AI concepts organized by topic and priority.",
+              "— практичні та фундаментальні AI concepts, організовані за темою і пріоритетом.",
+              1,
+          )
+
+          localized_lines = localized_text.splitlines()
+          localized_start = next(
+              i for i, line in enumerate(localized_lines)
+              if line.startswith("  - [`concepts/`](../../docs/notes/sub/concepts/")
+          )
+          localized_end = next(
+              i for i, line in enumerate(localized_lines[localized_start + 1 :], localized_start + 1)
+              if line.startswith("  - [`benchmarks/`](../../docs/notes/sub/benchmarks/")
+          )
+          localized_lines[localized_start:localized_end] = concepts_block.splitlines()
+          localized_text = "\n".join(localized_lines) + "\n"
+          root_hash = git_blob_sha(root_source.read_bytes())
+          localized_text = re.sub(
+              r"source_hash: (?:gitblob|sha256):[0-9a-f]+",
+              f"source_hash: gitblob:{root_hash}",
+              localized_text,
+              count=1,
+          )
+          root_localized.write_text(localized_text, encoding="utf-8")
+          PY
+
+          python3 <<'PY'
+          from pathlib import Path
+          import hashlib
+          import re
+
+          errors = []
+
+          def git_blob_sha(path: Path) -> str:
+              data = path.read_bytes()
+              return hashlib.sha1(
+                  b"blob " + str(len(data)).encode() + b"\0" + data
+              ).hexdigest()
+
+          for localized in Path("docs/notes/sub/concepts").rglob("l10n/uk_UA/README.md"):
+              text = localized.read_text(encoding="utf-8")
+              match = re.search(r"source_hash: gitblob:([0-9a-f]{40})", text)
+              if not match:
+                  errors.append(f"missing source_hash: {localized}")
+                  continue
+              source = localized.parents[2] / "README.md"
+              if not source.exists():
+                  errors.append(f"missing source: {localized} -> {source}")
+                  continue
+              actual = git_blob_sha(source)
+              if actual != match.group(1):
+                  errors.append(f"hash mismatch: {localized}: {match.group(1)} != {actual}")
+
+          for source in Path("docs/notes/sub/concepts").rglob("README.md"):
+              if "/l10n/" in source.as_posix():
+                  continue
+              text = source.read_text(encoding="utf-8")
+              if "l10n: true" not in text:
+                  continue
+              localized = source.parent / "l10n" / "uk_UA" / "README.md"
+              if not localized.exists():
+                  errors.append(f"missing localization: {source}")
+
+          root_source = Path("README.md")
+          root_localized = Path("l10n/uk_UA/README.md")
+          root_match = re.search(
+              r"source_hash: gitblob:([0-9a-f]{40})",
+              root_localized.read_text(encoding="utf-8"),
+          )
+          if not root_match or root_match.group(1) != git_blob_sha(root_source):
+              errors.append("root localization hash mismatch")
+
+          for page in Path("docs/notes/sub/concepts").rglob("README.md"):
+              text = page.read_text(encoding="utf-8")
+              for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", text):
+                  if "://" in target or target.startswith(("#", "mailto:")):
+                      continue
+                  resolved = (page.parent / target).resolve()
+                  if target.endswith("/"):
+                      resolved = resolved / "README.md"
+                  elif resolved.is_dir():
+                      resolved = resolved / "README.md"
+                  if not resolved.exists():
+                      errors.append(f"broken link: {page} -> {target}")
+
+          if errors:
+              print("\n".join(errors[:100]))
+              raise SystemExit(f"validation failed with {len(errors)} error(s)")
+          print("validated concept localizations and links")
+          PY
+
+          rm -f .github/concept-generator.part-*
+          rm -f .github/workflows/apply-concept-docs.yml
+
+      - name: Commit generated documentation
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          git commit -m "Expand AI concept documentation"
+          git push origin HEAD:docs/add-rag-concept
