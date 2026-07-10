@@ -1,22 +1,17 @@
-# Models
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:b4eb37db06b8543d70fbd1907405e691f9120698
   mode: translated
 -->
 
-Model families та individual model artifacts.
+# Models
+
+Локалізована точка входу для model families and individual models.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Розділи
-
-- [`image-generation/`](../../sub/image-generation/l10n/uk_UA/) — image generation models.
-- [`multimodal/`](../../sub/multimodal/l10n/uk_UA/) — multimodal models.

@@ -1,21 +1,17 @@
-# OpenHands
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:f3d816f7126fab1fb73bf92fa1541824bd7de372
   mode: translated
 -->
 
-OpenHands — developer control center for coding agents and automations.
+# OpenHands
+
+Локалізована точка входу для developer control center for coding agents and automations.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Роль у AI Lab
-
-Ця сторінка фіксує notes про coding-agent control surfaces, automation boundaries, repository interaction risks та developer workflow use cases.

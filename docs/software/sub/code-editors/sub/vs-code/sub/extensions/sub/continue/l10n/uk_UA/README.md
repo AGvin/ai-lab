@@ -1,21 +1,17 @@
-# Continue
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:1ef2a1fd035f847679d83c0f3407f9c5a4af2f5d
   mode: translated
 -->
 
-Continue — AI coding assistant extension для Visual Studio Code.
+# Continue
+
+Локалізована точка входу для AI coding assistant extension.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Роль у AI Lab
-
-Ця сторінка фіксує notes про Continue як editor extension для AI-assisted coding, model configuration та development workflow integration.

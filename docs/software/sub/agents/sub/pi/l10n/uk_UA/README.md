@@ -3,13 +3,13 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:479750be2db9eaacc53f0d78dc9d6f3bebb92b9e
+  source_hash: gitblob:e0125e5f9c8b71680d9b225c0769748a1b849ac4
   mode: translated
 -->
 
-# Multimodal Models
+# Pi
 
-Локалізована точка входу для multimodal models.
+Локалізована точка входу для terminal coding-agent harness documented at pi.dev.
 
 ## Переклади
 

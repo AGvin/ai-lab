@@ -1,21 +1,17 @@
-# Visual Studio Code
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:62ee74c40145199dd45db6fc03f3adf644392630
   mode: translated
 -->
 
-Visual Studio Code — extensible code editor для AI-assisted workflows.
+# Visual Studio Code
+
+Локалізована точка входу для extensible code editor for AI-assisted workflows.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Розділи
-
-- [`extensions/`](../../sub/extensions/l10n/uk_UA/) — AI-related Visual Studio Code extensions.

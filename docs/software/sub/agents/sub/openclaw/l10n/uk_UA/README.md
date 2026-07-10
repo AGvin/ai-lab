@@ -1,21 +1,17 @@
-# OpenClaw
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:45dd4f0e3d651645c0092dedead528f8a124bcfc
   mode: translated
 -->
 
-OpenClaw — browser-use AI agent project.
+# OpenClaw
+
+Локалізована точка входу для browser-use AI agent project.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Роль у AI Lab
-
-Ця сторінка фіксує practical notes про browser-use agent behavior, automation scope, operational risks та evaluation criteria.

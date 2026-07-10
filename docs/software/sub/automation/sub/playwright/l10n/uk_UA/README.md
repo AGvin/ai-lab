@@ -1,21 +1,17 @@
-# Playwright
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:c7d86c9b1ae86462b07a15695cd14827c5415d5b
   mode: translated
 -->
 
-Playwright — browser automation and end-to-end web testing framework.
+# Playwright
+
+Локалізована точка входу для browser automation and end-to-end web testing framework.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Роль у AI Lab
-
-Ця сторінка зберігає notes про browser automation, test workflows, AI-adjacent automation use cases та operational constraints.

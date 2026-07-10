@@ -1,21 +1,17 @@
-# Automation
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:1c6d28bb1f2cbc30c4eff88af78774d316dbe36e
   mode: translated
 -->
 
-Automation tools, що можуть підтримувати AI-adjacent workflows.
+# Automation
+
+Локалізована точка входу для automation tools, що можуть підтримувати AI-adjacent workflows.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Tools
-
-- [`playwright/`](../../sub/playwright/l10n/uk_UA/) — browser automation and end-to-end web testing framework.

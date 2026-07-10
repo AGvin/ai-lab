@@ -1,21 +1,17 @@
-# Hugging Face
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:bcad33fbb5be5e11f6619999edb82852dffac4f4
   mode: translated
 -->
 
-Hugging Face — model, dataset, Spaces та AI tooling platform.
+# Hugging Face
+
+Локалізована точка входу для model, dataset, Spaces та AI tooling platform.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Роль у AI Lab
-
-Ця сторінка фіксує notes про model discovery, hosted assets, datasets, Spaces, licensing, provenance та adoption risks.

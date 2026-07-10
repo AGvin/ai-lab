@@ -1,21 +1,17 @@
-# Hermes Agent
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:14b21a5d8e5aa4a6731e27a6e1575dcc1208eb94
   mode: translated
 -->
 
-Hermes Agent — AI agent entry, для якого потрібне source confirmation.
+# Hermes Agent
+
+Локалізована точка входу для AI agent entry requiring source confirmation.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Роль у AI Lab
-
-Ця сторінка фіксує обережні notes про agent tool, provenance, source verification, risk notes та практичну придатність.

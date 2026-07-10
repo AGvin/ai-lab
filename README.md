@@ -45,13 +45,13 @@ This repository is an active public documentation lab. Content is added incremen
   - [`agents/`](./docs/software/sub/agents/) — standalone agent-like AI systems where agent behavior is the primary documented role.
     - [`hermes-agent/`](./docs/software/sub/agents/sub/hermes-agent/) — AI agent entry requiring source confirmation.
     - [`openclaw/`](./docs/software/sub/agents/sub/openclaw/) — browser-use AI agent project.
+    - [`pi/`](./docs/software/sub/agents/sub/pi/) — terminal coding-agent harness documented at pi.dev.
   - [`agent-orchestration/`](./docs/software/sub/agent-orchestration/) — systems, frameworks, runtimes, and control planes for coordinating or running AI agents.
     - [`autogen/`](./docs/software/sub/agent-orchestration/sub/autogen/) — multi-agent conversation framework.
     - [`crewai/`](./docs/software/sub/agent-orchestration/sub/crewai/) — collaborative multi-agent orchestration framework.
     - [`langgraph/`](./docs/software/sub/agent-orchestration/sub/langgraph/) — stateful agent orchestration framework and runtime.
     - [`openhands/`](./docs/software/sub/agent-orchestration/sub/openhands/) — developer control center for coding agents and automations.
   - [`assistants/`](./docs/software/sub/assistants/) — conversational AI assistants.
-    - [`pi/`](./docs/software/sub/assistants/sub/pi/) — conversational AI assistant.
   - [`automation/`](./docs/software/sub/automation/) — automation tools that can support AI-adjacent workflows.
     - [`playwright/`](./docs/software/sub/automation/sub/playwright/) — browser automation and end-to-end web testing framework.
   - [`model-platforms/`](./docs/software/sub/model-platforms/) — platforms for model discovery, hosting, datasets, Spaces, or related tooling.
