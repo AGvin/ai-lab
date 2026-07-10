@@ -13,7 +13,7 @@ High-priority instructions that define an assistant's role, behavior, and operat
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

@@ -13,7 +13,7 @@ A mechanism that weights which input elements are most relevant for a model oper
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

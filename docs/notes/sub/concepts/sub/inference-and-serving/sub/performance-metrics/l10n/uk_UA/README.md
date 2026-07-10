@@ -13,7 +13,7 @@ Measurements such as time to first token, tokens per second, latency, and memory
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

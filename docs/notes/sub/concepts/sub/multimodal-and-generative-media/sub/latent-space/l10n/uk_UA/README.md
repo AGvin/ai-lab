@@ -13,7 +13,7 @@ A compressed learned representation in which generative models encode and manipu
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

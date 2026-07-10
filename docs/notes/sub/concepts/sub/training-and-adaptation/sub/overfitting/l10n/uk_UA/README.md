@@ -13,7 +13,7 @@ When a model fits training data too closely and performs poorly on new examples.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

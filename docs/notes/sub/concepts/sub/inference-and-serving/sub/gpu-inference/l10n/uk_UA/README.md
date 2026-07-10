@@ -13,7 +13,7 @@ Running model computation primarily on graphics processors optimized for paralle
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

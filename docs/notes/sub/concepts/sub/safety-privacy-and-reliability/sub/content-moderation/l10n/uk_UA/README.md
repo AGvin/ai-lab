@@ -13,7 +13,7 @@ Detecting or restricting content according to safety, legal, or platform policie
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

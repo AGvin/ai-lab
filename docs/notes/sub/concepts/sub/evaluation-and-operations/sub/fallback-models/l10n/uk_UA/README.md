@@ -13,7 +13,7 @@ Alternative models used when the preferred model fails, is unavailable, or excee
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

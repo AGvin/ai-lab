@@ -13,7 +13,7 @@ Large-scale initial training that creates a broadly capable base model.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

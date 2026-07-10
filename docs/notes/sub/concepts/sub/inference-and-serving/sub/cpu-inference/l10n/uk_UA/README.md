@@ -13,7 +13,7 @@ Running model computation primarily on general-purpose processors.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

@@ -13,7 +13,7 @@ Reusing prior results or processed data to reduce repeated work.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

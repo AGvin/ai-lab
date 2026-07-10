@@ -13,7 +13,7 @@ Models that process or generate more than one modality, such as text, images, au
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

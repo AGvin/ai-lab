@@ -13,7 +13,7 @@ Language-focused foundation models that predict and generate token sequences.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

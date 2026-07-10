@@ -13,7 +13,7 @@ Numerical representations that place semantically related items near each other 
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

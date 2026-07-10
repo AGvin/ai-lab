@@ -13,7 +13,7 @@ The process of splitting input and output into the units a model reads and gener
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

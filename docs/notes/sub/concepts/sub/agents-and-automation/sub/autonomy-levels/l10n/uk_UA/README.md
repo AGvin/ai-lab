@@ -13,7 +13,7 @@ The degree of independent decision-making and action granted to an AI system.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

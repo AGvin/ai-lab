@@ -13,7 +13,7 @@ Model output constrained to a machine-readable structure such as JSON or a schem
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

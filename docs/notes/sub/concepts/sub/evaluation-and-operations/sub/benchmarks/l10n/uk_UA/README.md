@@ -13,7 +13,7 @@ Standardized tasks or datasets used to compare models or systems.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

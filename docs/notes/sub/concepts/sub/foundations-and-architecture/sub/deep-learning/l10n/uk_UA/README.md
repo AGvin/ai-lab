@@ -13,7 +13,7 @@ Machine learning based on neural networks with many processing layers.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

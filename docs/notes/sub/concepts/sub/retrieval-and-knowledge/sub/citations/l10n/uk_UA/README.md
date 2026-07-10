@@ -13,7 +13,7 @@ Links or references that connect generated statements to supporting sources.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

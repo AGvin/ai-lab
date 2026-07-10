@@ -13,7 +13,7 @@ Retrieval based on meaning rather than only exact word matches.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

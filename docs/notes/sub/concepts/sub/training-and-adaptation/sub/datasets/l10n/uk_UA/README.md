@@ -13,7 +13,7 @@ Organized collections of examples used for training, adaptation, or evaluation.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

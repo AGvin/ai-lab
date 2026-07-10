@@ -13,7 +13,7 @@ Producing images from text, images, layouts, masks, or other conditioning inputs
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

@@ -13,7 +13,7 @@ Malicious or conflicting instructions embedded in external content processed by 
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

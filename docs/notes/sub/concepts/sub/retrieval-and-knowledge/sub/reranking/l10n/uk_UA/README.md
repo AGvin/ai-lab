@@ -13,7 +13,7 @@ A second-stage relevance model that reorders retrieved candidates.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

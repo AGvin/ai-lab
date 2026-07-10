@@ -13,7 +13,7 @@ Systems in which multiple agents coordinate, compete, review, or specialize.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

@@ -13,7 +13,7 @@ Explicit separation between trusted instructions, trusted systems, users, and un
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

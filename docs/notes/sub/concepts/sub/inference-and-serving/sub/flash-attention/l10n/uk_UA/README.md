@@ -13,7 +13,7 @@ Attention implementations optimized to reduce memory traffic and improve GPU eff
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

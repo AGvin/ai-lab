@@ -13,7 +13,7 @@ The practical strengths, boundaries, and failure modes of a specific model or de
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

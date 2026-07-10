@@ -13,7 +13,7 @@ Training a model on instruction-and-response examples to improve task following.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

@@ -13,7 +13,7 @@ Training a smaller or simpler model to imitate a stronger teacher model.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

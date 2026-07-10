@@ -13,7 +13,7 @@ Using logs, metrics, traces, and events to understand AI system behavior.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

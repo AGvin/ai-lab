@@ -13,7 +13,7 @@ Dynamically combining active inference requests to improve serving utilization.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

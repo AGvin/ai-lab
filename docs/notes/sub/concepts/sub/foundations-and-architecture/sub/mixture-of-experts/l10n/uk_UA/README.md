@@ -13,7 +13,7 @@ Sparse model architectures that route each input through selected expert compone
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

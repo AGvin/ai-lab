@@ -13,7 +13,7 @@ A model selecting a registered external operation and producing arguments for it
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

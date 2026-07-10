@@ -13,7 +13,7 @@ Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning method that lear
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

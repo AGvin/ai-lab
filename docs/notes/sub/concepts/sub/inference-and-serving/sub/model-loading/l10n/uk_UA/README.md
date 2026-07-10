@@ -13,7 +13,7 @@ Moving model artifacts into RAM, VRAM, or runtime-managed memory for execution.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

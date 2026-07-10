@@ -13,7 +13,7 @@ Constraining generated claims to supplied evidence, tools, or authoritative sour
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

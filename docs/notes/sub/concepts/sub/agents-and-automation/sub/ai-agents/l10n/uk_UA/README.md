@@ -13,7 +13,7 @@ AI systems that pursue goals through model decisions, tools, state, and iterativ
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

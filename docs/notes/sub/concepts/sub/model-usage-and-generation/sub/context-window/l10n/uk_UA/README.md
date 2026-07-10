@@ -13,7 +13,7 @@ The bounded amount of tokenized information a model can consider during one requ
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

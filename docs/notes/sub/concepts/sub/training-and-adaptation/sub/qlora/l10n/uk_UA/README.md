@@ -13,7 +13,7 @@ LoRA-based adaptation performed with a quantized base model to reduce memory use
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

@@ -13,7 +13,7 @@ Measuring whether retrieval returns relevant, complete, and correctly ranked evi
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

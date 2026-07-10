@@ -13,7 +13,7 @@ Vector representations used to compare, retrieve, or classify visual content.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

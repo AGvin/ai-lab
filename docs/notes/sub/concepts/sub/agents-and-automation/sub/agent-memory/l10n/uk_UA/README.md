@@ -13,7 +13,7 @@ Mechanisms that preserve useful information beyond the immediate model request.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

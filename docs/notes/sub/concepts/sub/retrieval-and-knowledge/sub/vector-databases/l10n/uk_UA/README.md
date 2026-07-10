@@ -13,7 +13,7 @@ Storage and indexing systems optimized for vectors and similarity search.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

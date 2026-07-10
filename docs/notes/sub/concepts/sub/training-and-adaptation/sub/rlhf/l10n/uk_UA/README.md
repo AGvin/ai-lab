@@ -13,7 +13,7 @@ Reinforcement Learning from Human Feedback uses human preference signals to adju
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

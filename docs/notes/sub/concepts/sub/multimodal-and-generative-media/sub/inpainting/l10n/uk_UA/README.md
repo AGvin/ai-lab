@@ -13,7 +13,7 @@ Regenerating selected masked regions of an image.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

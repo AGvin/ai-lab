@@ -13,7 +13,7 @@ People assessing model outputs against explicit criteria.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

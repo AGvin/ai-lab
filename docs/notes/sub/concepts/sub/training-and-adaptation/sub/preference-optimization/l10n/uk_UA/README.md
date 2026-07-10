@@ -13,7 +13,7 @@ Training methods that favor responses judged better according to preference data
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

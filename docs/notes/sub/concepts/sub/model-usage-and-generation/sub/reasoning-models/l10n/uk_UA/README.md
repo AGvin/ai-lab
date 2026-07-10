@@ -13,7 +13,7 @@ Models optimized to spend additional computation on multi-step problem solving.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

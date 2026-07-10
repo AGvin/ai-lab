@@ -13,7 +13,7 @@ Exposing model inference through a managed process, API, queue, or runtime servi
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

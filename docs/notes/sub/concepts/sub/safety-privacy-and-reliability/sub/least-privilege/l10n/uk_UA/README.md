@@ -13,7 +13,7 @@ Granting an AI system only the permissions required for its current task.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

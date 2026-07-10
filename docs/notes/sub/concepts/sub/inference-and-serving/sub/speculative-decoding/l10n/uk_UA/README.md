@@ -13,7 +13,7 @@ Using a faster draft model or process to propose tokens for verification by a ta
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

@@ -13,7 +13,7 @@ Neural network architectures built around attention and parallel sequence proces
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

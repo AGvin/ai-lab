@@ -13,7 +13,7 @@ Intermediate reasoning text or internal computation used to support multi-step a
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

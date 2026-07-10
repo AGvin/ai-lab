@@ -13,7 +13,7 @@ Continuing model training on targeted data to modify behavior or task performanc
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

@@ -13,7 +13,7 @@ Shaping model behavior toward intended goals, values, policies, or preferences.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

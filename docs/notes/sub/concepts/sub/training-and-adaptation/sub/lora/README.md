@@ -1,5 +1,11 @@
 # LoRA
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning method that learns compact low-rank updates while keeping the original model weights frozen.
 
 ## Translations

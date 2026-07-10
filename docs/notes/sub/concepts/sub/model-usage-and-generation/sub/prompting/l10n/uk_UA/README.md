@@ -13,7 +13,7 @@ The practice of supplying instructions, context, examples, and constraints to gu
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

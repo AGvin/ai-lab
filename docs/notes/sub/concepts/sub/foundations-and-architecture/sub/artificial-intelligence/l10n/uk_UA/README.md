@@ -13,7 +13,7 @@ The broad field of building systems that perform tasks associated with perceptio
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

@@ -13,7 +13,7 @@ Generating a transformed image while conditioning on an existing image.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

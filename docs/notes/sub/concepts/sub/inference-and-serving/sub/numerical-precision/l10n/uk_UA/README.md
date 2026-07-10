@@ -13,7 +13,7 @@ The number format used for model weights, activations, and computation.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

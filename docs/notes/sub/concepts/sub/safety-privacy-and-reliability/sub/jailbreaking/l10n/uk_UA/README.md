@@ -13,7 +13,7 @@ Attempts to bypass a model's configured safety or policy constraints.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

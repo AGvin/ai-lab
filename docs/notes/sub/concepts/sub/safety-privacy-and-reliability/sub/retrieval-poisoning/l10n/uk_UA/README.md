@@ -13,7 +13,7 @@ Manipulating indexed knowledge so retrieval supplies misleading or malicious con
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

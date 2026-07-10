@@ -13,7 +13,7 @@ Breaking a large task into smaller, verifiable units of work.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

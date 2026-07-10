@@ -13,7 +13,7 @@ The ability to repeat an evaluation or workflow with comparable conditions and r
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

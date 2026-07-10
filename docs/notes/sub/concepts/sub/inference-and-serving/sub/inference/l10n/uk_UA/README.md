@@ -13,7 +13,7 @@ Running a trained model to process input and produce output.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

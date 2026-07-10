@@ -13,7 +13,7 @@ Generation restricted by a grammar, schema, token set, or other formal constrain
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

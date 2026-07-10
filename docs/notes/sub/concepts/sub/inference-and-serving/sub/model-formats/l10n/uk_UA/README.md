@@ -13,7 +13,7 @@ File and serialization formats used to store and load model artifacts.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

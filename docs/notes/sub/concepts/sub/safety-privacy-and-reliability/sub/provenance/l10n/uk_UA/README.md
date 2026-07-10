@@ -13,7 +13,7 @@ Information about the origin, ownership, transformation, and custody of data or 
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

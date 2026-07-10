@@ -13,7 +13,7 @@ Choosing a model based on task quality, capabilities, cost, latency, safety, and
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

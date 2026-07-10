@@ -13,7 +13,7 @@ A probabilistic lexical ranking method widely used in document retrieval.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

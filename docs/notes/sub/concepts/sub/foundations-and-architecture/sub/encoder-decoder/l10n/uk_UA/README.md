@@ -13,7 +13,7 @@ Model structures that encode inputs, generate outputs, or combine both roles.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

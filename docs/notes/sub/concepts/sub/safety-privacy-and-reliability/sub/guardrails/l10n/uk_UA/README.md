@@ -13,7 +13,7 @@ Controls that validate, restrict, or monitor model inputs, outputs, and actions.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

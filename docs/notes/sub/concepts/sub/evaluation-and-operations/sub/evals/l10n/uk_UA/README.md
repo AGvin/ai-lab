@@ -13,7 +13,7 @@ Repeatable tests that measure whether an AI model or system meets defined requir
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

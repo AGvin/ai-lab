@@ -15,7 +15,7 @@ Concepts are grouped by practical priority. Priority affects reading order, not 
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Essential

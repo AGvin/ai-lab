@@ -13,7 +13,7 @@ Restoring progress safely after tool, model, network, or workflow failures.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

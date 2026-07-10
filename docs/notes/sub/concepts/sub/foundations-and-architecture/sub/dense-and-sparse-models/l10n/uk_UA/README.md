@@ -13,7 +13,7 @@ Dense models activate most parameters for each input, while sparse models activa
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

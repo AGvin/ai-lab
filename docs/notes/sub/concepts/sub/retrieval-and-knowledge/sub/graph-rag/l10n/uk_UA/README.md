@@ -13,7 +13,7 @@ Retrieval-Augmented Generation that uses graph structures and relationships to a
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

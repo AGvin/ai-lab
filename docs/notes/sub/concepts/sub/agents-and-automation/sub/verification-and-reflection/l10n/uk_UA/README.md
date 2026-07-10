@@ -13,7 +13,7 @@ Checking results, identifying errors, and revising an approach when needed.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

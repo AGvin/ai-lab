@@ -13,7 +13,7 @@ Restricting retrieval by attributes such as source, date, version, tenant, or ac
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

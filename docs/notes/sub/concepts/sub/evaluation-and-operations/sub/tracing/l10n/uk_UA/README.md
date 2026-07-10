@@ -13,7 +13,7 @@ Recording the sequence of model, tool, retrieval, and workflow operations for on
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

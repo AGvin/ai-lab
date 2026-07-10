@@ -13,7 +13,7 @@ Producing music, speech, sound effects, or other audio with generative models.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

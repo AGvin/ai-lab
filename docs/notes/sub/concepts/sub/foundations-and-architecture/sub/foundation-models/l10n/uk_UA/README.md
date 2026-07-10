@@ -13,7 +13,7 @@ Large reusable models trained on broad data and adapted to many downstream tasks
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

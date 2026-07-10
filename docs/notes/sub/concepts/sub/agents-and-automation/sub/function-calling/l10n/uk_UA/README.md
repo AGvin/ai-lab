@@ -13,7 +13,7 @@ A structured tool-calling interface where model output selects a function and ar
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

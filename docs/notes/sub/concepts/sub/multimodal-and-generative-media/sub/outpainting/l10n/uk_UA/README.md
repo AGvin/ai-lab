@@ -13,7 +13,7 @@ Extending an image beyond its original boundaries.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

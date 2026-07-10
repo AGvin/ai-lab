@@ -13,7 +13,7 @@ Repeating eligible failed operations under bounded and observable rules.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

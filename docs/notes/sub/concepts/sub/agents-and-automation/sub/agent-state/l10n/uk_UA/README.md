@@ -13,7 +13,7 @@ The explicit working data that tracks progress, decisions, and intermediate resu
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

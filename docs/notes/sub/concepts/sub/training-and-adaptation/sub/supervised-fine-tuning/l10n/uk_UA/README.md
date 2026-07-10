@@ -13,7 +13,7 @@ Fine-tuning on labeled examples that pair inputs with desired outputs.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

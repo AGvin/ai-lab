@@ -13,7 +13,7 @@ Controlled multi-step processes that combine model decisions with deterministic 
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

@@ -13,7 +13,7 @@ Dividing source material into retrievable units while preserving enough context 
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

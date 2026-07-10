@@ -13,7 +13,7 @@ Conditioning diffusion models with structural controls such as edges, depth, or 
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

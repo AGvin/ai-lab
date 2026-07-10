@@ -13,7 +13,7 @@ Producing or transforming sequences of visual frames with generative models.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

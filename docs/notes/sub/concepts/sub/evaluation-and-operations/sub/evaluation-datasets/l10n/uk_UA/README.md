@@ -13,7 +13,7 @@ Curated examples used to test quality, safety, retrieval, or task performance.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

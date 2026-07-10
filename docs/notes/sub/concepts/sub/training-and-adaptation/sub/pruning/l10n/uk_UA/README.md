@@ -13,7 +13,7 @@ Removing model parameters or structures judged unnecessary for a target objectiv
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

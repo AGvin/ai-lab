@@ -13,7 +13,7 @@ Designing actions so safe repetition does not create unintended duplicate effect
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

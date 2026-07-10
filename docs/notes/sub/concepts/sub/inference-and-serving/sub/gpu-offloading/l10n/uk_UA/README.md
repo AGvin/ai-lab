@@ -13,7 +13,7 @@ Placing selected model computation or layers on a GPU while other work remains e
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

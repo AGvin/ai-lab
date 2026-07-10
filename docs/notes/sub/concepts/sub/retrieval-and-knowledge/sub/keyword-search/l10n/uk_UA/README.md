@@ -13,7 +13,7 @@ Lexical retrieval based on terms that appear in the source text.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

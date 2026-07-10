@@ -13,7 +13,7 @@ Using a language model to score, rank, or critique other model outputs.
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea

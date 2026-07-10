@@ -13,7 +13,7 @@ Controls such as temperature, top-p, top-k, and seed that influence token select
 
 ## Переклади
 
-- [English](../../../../l10n/uk_UA/)
+- [English](../../)
 - Українська — поточна
 
 ## Core idea
