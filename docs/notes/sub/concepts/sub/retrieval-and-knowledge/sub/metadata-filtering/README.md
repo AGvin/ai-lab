@@ -1,6 +1,17 @@
 # Metadata Filtering
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Restricting retrieval by attributes such as source, date, version, tenant, or access policy.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

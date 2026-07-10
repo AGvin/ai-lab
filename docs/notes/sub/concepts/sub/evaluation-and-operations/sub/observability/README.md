@@ -1,6 +1,17 @@
 # Observability
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Using logs, metrics, traces, and events to understand AI system behavior.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

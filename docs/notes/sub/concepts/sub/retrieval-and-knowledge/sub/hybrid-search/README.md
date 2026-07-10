@@ -1,6 +1,17 @@
 # Hybrid Search
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Retrieval that combines semantic and lexical search signals.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

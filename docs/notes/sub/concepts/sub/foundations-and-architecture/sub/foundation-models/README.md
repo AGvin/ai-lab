@@ -1,6 +1,17 @@
 # Foundation Models
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Large reusable models trained on broad data and adapted to many downstream tasks.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

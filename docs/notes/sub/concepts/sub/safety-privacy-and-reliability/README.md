@@ -1,8 +1,19 @@
 # Safety, Privacy, and Reliability
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Concepts for controlling model behavior, protecting data, and reducing operational risk in AI systems.
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Essential
 

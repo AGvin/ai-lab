@@ -1,6 +1,17 @@
 # Jailbreaking
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Attempts to bypass a model's configured safety or policy constraints.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

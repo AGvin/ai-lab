@@ -1,6 +1,17 @@
 # Pretraining
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Large-scale initial training that creates a broadly capable base model.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

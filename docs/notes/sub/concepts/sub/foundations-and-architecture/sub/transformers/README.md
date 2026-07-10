@@ -1,6 +1,17 @@
 # Transformers
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Neural network architectures built around attention and parallel sequence processing.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

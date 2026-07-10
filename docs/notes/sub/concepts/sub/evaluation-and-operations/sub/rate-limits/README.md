@@ -1,6 +1,17 @@
 # Rate Limits
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Controls that restrict request volume over a period of time.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

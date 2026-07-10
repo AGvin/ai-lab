@@ -1,6 +1,17 @@
 # FlashAttention
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Attention implementations optimized to reduce memory traffic and improve GPU efficiency.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

@@ -1,6 +1,17 @@
 # Verification and Reflection
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Checking results, identifying errors, and revising an approach when needed.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

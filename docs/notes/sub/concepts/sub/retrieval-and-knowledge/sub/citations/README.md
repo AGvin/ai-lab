@@ -1,6 +1,17 @@
 # Citations
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Links or references that connect generated statements to supporting sources.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

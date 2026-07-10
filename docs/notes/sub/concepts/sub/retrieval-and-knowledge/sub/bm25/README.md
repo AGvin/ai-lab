@@ -1,6 +1,17 @@
 # BM25
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 A probabilistic lexical ranking method widely used in document retrieval.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

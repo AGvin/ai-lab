@@ -1,6 +1,17 @@
 # Keyword Search
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Lexical retrieval based on terms that appear in the source text.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

@@ -1,6 +1,17 @@
 # Inpainting
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Regenerating selected masked regions of an image.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

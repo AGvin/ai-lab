@@ -1,6 +1,17 @@
 # Least Privilege
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Granting an AI system only the permissions required for its current task.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

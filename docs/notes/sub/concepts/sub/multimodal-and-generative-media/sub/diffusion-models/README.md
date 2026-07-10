@@ -1,6 +1,17 @@
 # Diffusion Models
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Generative models that learn to reverse a progressive noising process.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

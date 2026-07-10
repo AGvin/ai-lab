@@ -1,6 +1,17 @@
 # Neural Networks
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Parameterized computational structures composed of connected layers or processing units.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

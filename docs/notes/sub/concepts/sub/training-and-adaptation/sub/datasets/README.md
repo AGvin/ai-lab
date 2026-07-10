@@ -1,6 +1,17 @@
 # Datasets
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Organized collections of examples used for training, adaptation, or evaluation.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

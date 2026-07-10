@@ -1,6 +1,17 @@
 # Chain of Thought
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Intermediate reasoning text or internal computation used to support multi-step answers.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

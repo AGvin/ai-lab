@@ -1,6 +1,17 @@
 # Large Language Models
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Language-focused foundation models that predict and generate token sequences.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

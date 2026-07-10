@@ -1,6 +1,17 @@
 # Retrieval Evaluation
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Measuring whether retrieval returns relevant, complete, and correctly ranked evidence.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

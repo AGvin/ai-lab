@@ -1,6 +1,17 @@
 # Model Routing
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Selecting among models dynamically according to the request or operating policy.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

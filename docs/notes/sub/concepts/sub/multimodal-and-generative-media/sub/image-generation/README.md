@@ -1,6 +1,17 @@
 # Image Generation
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Producing images from text, images, layouts, masks, or other conditioning inputs.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

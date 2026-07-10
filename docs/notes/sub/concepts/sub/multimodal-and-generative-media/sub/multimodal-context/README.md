@@ -1,6 +1,17 @@
 # Multimodal Context
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 The combined text, image, audio, video, or document information available to a model request.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

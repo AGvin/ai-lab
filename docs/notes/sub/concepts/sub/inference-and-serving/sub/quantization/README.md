@@ -1,6 +1,17 @@
 # Quantization
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Reducing numerical precision to lower model memory and compute requirements.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

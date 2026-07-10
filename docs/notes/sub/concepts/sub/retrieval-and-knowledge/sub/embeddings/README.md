@@ -1,6 +1,17 @@
 # Embeddings
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Numerical representations that place semantically related items near each other in vector space.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

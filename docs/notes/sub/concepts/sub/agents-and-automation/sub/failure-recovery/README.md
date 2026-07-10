@@ -1,6 +1,17 @@
 # Failure Recovery
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Restoring progress safely after tool, model, network, or workflow failures.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

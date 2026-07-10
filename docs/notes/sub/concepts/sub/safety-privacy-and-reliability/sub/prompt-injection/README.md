@@ -1,6 +1,17 @@
 # Prompt Injection
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Input designed to override or manipulate an AI system's intended instructions.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

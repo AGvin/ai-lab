@@ -1,6 +1,17 @@
 # Machine Learning
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Methods that learn patterns from data instead of relying only on explicitly programmed rules.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

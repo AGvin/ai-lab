@@ -1,6 +1,17 @@
 # Throughput
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 The amount of model work completed per unit of time.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

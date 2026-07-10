@@ -1,6 +1,17 @@
 # Parameter-Efficient Fine-Tuning
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Adaptation methods that train only a small subset of model parameters or added components.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

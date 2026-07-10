@@ -1,8 +1,19 @@
 # Retrieval and Knowledge
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Concepts for connecting models to external information, searchable documents, and evidence-backed context.
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Essential
 

@@ -1,6 +1,17 @@
 # Speculative Decoding
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Using a faster draft model or process to propose tokens for verification by a target model.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

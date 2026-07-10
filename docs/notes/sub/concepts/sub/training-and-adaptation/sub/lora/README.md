@@ -1,6 +1,12 @@
 # LoRA
 
-Low-Rank Adaptation trains compact low-rank updates instead of all base model weights.
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
+Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning method that learns compact low-rank updates while keeping the original model weights frozen.
 
 ## Translations
 
@@ -9,45 +15,64 @@ Low-Rank Adaptation trains compact low-rank updates instead of all base model we
 
 ## Core idea
 
-Low-Rank Adaptation trains compact low-rank updates instead of all base model weights. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+A full fine-tune updates a large portion of a model's parameters. LoRA instead represents the update for selected layers as the product of two much smaller trainable matrices. The base model remains unchanged, while the adapter stores only the learned difference.
+
+This allows one base model to support multiple compact task, domain, character, or style variants.
 
 ## How it works
 
-- LoRA freezes the original weight matrix and learns a low-rank update represented by two smaller matrices.
-- The update can remain as a separate adapter or be merged into compatible base weights for deployment.
-- Rank, target modules, scaling, learning rate, and training data determine capacity and behavior.
+1. Select target modules, commonly attention or projection layers.
+2. Freeze the original model weights.
+3. Attach trainable low-rank matrices to the selected modules.
+4. Train only the adapter parameters on the adaptation dataset.
+5. Keep the adapter separate or merge it into compatible base weights for deployment.
 
-The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
-
-## Why it matters
-
-LoRA affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+Important settings include rank, scaling factor, target modules, learning rate, dropout, dataset quality, and training duration.
 
 ## Practical uses
 
-- Adapt language or image models to a task, style, character, or domain.
-- Share compact reusable adapters for a known base model.
+- Adapt a language model to a domain, output convention, or recurring task.
+- Add a visual style, subject, character, or product concept to an image model.
+- Maintain several small variants without storing a full model copy for each one.
+- Share adaptation artifacts while requiring users to obtain the compatible base model separately.
 
 ## Example
 
-A diffusion-model LoRA can add a consistent visual style while leaving the original checkpoint unchanged.
+A team can keep one general-purpose coding model and train separate LoRA adapters for an internal framework, documentation style, and review workflow. The runtime loads the base model once and activates the adapter needed for the current task.
+
+## Compatibility
+
+A LoRA adapter is tied to assumptions about the training setup. Verify:
+
+- exact base model family and revision;
+- tokenizer or text encoder compatibility;
+- target layer names and architecture;
+- adapter format and runtime support;
+- whether deployment loads adapters dynamically or requires merged weights.
+
+An adapter created for one checkpoint should not be assumed to work correctly with another model that merely has a similar name.
 
 ## Trade-offs and limitations
 
-- An adapter can behave incorrectly with the wrong base model or architecture revision.
 - Low-rank capacity may be insufficient for large behavioral changes.
-
-Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
+- Poor training data can introduce artifacts, regressions, or memorized errors.
+- Multiple adapters may interact unpredictably when combined.
+- Merging simplifies deployment but removes independent adapter switching.
+- LoRA changes behavior; it is not a dependable replacement for RAG when facts must remain current or traceable.
 
 ## Practical checklist
 
-- What problem is LoRA expected to solve in this workflow?
-- Which inputs, settings, or resources does it depend on?
-- How will success and failure be measured?
-- What changes when the model, runtime, dataset, or context size changes?
+- Can prompting, tools, structured output, or RAG solve the problem without training?
+- Is the exact base model recorded and available?
+- Are training, validation, and holdout examples separated?
+- Which target modules and rank fit the intended change?
+- How will the adapter be evaluated against the unchanged base model?
+- Will it remain separate, be combined with others, or be merged for deployment?
 
 ## Related concepts
 
 - [Training and Adaptation](../../)
 - [Parameter-Efficient Fine-Tuning](../parameter-efficient-fine-tuning/)
 - [QLoRA](../qlora/)
+- [Fine-Tuning](../fine-tuning/)
+- [RAG](../../../retrieval-and-knowledge/sub/rag/)

@@ -1,6 +1,17 @@
 # Speech-to-Text
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Converting spoken audio into written text.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

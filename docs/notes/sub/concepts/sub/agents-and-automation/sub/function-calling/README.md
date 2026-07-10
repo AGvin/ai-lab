@@ -1,6 +1,17 @@
 # Function Calling
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 A structured tool-calling interface where model output selects a function and arguments.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

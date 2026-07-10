@@ -1,6 +1,17 @@
 # Text-to-Image
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Generating images from natural-language descriptions.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

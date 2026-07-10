@@ -1,6 +1,17 @@
 # Reranking
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 A second-stage relevance model that reorders retrieved candidates.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

@@ -1,6 +1,17 @@
 # Autonomy Levels
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 The degree of independent decision-making and action granted to an AI system.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

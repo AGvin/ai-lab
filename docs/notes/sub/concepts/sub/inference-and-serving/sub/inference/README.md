@@ -1,6 +1,17 @@
 # Inference
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Running a trained model to process input and produce output.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

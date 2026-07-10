@@ -1,6 +1,17 @@
 # Task Decomposition
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Breaking a large task into smaller, verifiable units of work.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

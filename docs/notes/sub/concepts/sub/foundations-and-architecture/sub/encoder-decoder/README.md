@@ -1,6 +1,17 @@
 # Encoder and Decoder Architectures
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Model structures that encode inputs, generate outputs, or combine both roles.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

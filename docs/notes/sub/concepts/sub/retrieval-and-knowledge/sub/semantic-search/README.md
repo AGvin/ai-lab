@@ -1,6 +1,17 @@
 # Semantic Search
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Retrieval based on meaning rather than only exact word matches.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

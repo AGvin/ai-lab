@@ -1,8 +1,19 @@
 # Multimodal and Generative Media
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Concepts for models and workflows involving images, audio, video, and combinations of modalities.
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Essential
 

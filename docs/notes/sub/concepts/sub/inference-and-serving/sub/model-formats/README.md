@@ -1,6 +1,17 @@
 # Model Formats
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 File and serialization formats used to store and load model artifacts.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

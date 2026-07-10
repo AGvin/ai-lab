@@ -1,6 +1,17 @@
 # Video Generation
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Producing or transforming sequences of visual frames with generative models.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

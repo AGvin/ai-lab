@@ -1,6 +1,17 @@
 # Retries
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Repeating eligible failed operations under bounded and observable rules.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

@@ -1,6 +1,17 @@
 # GraphRAG
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Retrieval-Augmented Generation that uses graph structures and relationships to assemble context.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

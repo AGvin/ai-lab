@@ -1,6 +1,17 @@
 # RLHF
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Reinforcement Learning from Human Feedback uses human preference signals to adjust model behavior.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

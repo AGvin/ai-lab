@@ -1,6 +1,17 @@
 # Grounding
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Constraining generated claims to supplied evidence, tools, or authoritative sources.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

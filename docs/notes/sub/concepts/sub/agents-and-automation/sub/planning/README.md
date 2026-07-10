@@ -1,6 +1,17 @@
 # Planning
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Selecting and ordering actions needed to reach a goal.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

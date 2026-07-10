@@ -1,6 +1,17 @@
 # Vector Search
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Nearest-neighbor retrieval over embedding vectors.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

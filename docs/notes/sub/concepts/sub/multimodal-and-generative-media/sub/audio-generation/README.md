@@ -1,6 +1,17 @@
 # Audio Generation
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Producing music, speech, sound effects, or other audio with generative models.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

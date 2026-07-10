@@ -1,6 +1,17 @@
 # Cost Management
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Measuring and controlling model, infrastructure, storage, and tool expenses.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

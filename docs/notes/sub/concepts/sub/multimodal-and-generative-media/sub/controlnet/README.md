@@ -1,6 +1,17 @@
 # ControlNet
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Conditioning diffusion models with structural controls such as edges, depth, or pose.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

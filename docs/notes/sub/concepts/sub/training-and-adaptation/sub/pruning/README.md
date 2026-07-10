@@ -1,6 +1,17 @@
 # Pruning
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Removing model parameters or structures judged unnecessary for a target objective.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

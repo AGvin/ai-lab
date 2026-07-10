@@ -1,6 +1,17 @@
 # System Prompts
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 High-priority instructions that define an assistant's role, behavior, and operational boundaries.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

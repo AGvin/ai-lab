@@ -1,6 +1,17 @@
 # Text-to-Speech
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Synthesizing spoken audio from written text.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

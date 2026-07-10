@@ -1,6 +1,17 @@
 # Trust Boundaries
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Explicit separation between trusted instructions, trusted systems, users, and untrusted data.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

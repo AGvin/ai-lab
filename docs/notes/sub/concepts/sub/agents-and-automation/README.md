@@ -1,8 +1,19 @@
 # Agents and Automation
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Concepts for configuring AI systems that plan, use tools, maintain state, and perform controlled actions.
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Essential
 

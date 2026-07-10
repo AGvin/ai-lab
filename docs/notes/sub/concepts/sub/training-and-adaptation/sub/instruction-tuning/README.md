@@ -1,6 +1,17 @@
 # Instruction Tuning
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Training a model on instruction-and-response examples to improve task following.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

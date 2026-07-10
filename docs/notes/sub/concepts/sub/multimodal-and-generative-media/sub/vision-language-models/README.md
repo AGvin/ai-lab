@@ -1,6 +1,17 @@
 # Vision-Language Models
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Models that jointly process visual inputs and natural language.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

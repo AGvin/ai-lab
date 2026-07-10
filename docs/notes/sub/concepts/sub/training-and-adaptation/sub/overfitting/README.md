@@ -1,6 +1,17 @@
 # Overfitting
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 When a model fits training data too closely and performs poorly on new examples.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

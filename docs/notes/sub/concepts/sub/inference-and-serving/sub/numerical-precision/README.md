@@ -1,6 +1,17 @@
 # Numerical Precision
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 The number format used for model weights, activations, and computation.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

@@ -1,6 +1,17 @@
 # AI Agents
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 AI systems that pursue goals through model decisions, tools, state, and iterative actions.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

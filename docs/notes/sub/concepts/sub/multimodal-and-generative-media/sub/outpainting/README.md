@@ -1,6 +1,17 @@
 # Outpainting
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Extending an image beyond its original boundaries.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

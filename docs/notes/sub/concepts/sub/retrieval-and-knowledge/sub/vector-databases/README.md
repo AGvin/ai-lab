@@ -1,6 +1,17 @@
 # Vector Databases
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Storage and indexing systems optimized for vectors and similarity search.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

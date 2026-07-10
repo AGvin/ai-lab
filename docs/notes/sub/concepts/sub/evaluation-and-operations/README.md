@@ -1,8 +1,19 @@
 # Evaluation and Operations
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Concepts for selecting, testing, observing, and operating AI systems under real quality, cost, and reliability constraints.
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Essential
 

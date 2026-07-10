@@ -1,6 +1,17 @@
 # Data Privacy
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Controlling how personal, confidential, or sensitive data is collected, processed, retained, and shared.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

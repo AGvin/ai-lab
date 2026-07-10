@@ -1,6 +1,17 @@
 # Agentic Workflows
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Controlled multi-step processes that combine model decisions with deterministic workflow logic.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

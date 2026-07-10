@@ -1,6 +1,17 @@
 # Tokens and Tokenization
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 The process of splitting input and output into the units a model reads and generates.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

@@ -1,6 +1,17 @@
 # Provenance
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Information about the origin, ownership, transformation, and custody of data or model artifacts.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

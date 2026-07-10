@@ -1,6 +1,17 @@
 # RAG (Retrieval-Augmented Generation)
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Retrieval-Augmented Generation (RAG) is an architecture that gives a language model relevant external information before it generates an answer.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Purpose
 

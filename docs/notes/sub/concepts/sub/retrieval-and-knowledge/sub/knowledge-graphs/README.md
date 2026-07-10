@@ -1,6 +1,17 @@
 # Knowledge Graphs
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Structured representations of entities and their relationships.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

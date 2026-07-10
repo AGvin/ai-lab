@@ -1,6 +1,17 @@
 # Model Capabilities and Limitations
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 The practical strengths, boundaries, and failure modes of a specific model or deployment.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

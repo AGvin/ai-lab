@@ -1,6 +1,17 @@
 # Chunking
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Dividing source material into retrievable units while preserving enough context for use.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

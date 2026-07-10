@@ -1,6 +1,17 @@
 # DPO
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Direct Preference Optimization trains directly on preferred and rejected response pairs.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

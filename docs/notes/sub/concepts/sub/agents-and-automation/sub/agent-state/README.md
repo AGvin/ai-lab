@@ -1,6 +1,17 @@
 # Agent State
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 The explicit working data that tracks progress, decisions, and intermediate results.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

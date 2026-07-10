@@ -1,6 +1,17 @@
 # Model Alignment
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Shaping model behavior toward intended goals, values, policies, or preferences.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

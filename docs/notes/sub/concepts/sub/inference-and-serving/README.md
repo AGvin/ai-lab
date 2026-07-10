@@ -1,8 +1,19 @@
 # Inference and Serving
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Concepts for running trained models locally or as services and understanding their resource and performance behavior.
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Essential
 

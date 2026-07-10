@@ -1,6 +1,17 @@
 # Data Residency
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 The geographic or jurisdictional location where data is stored or processed.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

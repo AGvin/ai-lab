@@ -1,6 +1,17 @@
 # Caching
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Reusing prior results or processed data to reduce repeated work.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 

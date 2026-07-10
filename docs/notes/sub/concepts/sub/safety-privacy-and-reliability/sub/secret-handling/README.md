@@ -1,6 +1,17 @@
 # Secret Handling
 
+<!--
+ai_content:
+  managed: true
+  l10n: true
+-->
+
 Protecting credentials, tokens, keys, and other sensitive operational data.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
