@@ -6,7 +6,7 @@ Priority indicates the recommended learning order for a user who primarily consu
 
 ## Translations
 
-- English — current
+- English
 - [Українська](./l10n/uk_UA/)
 
 ## [Foundations and Architecture](./sub/foundations-and-architecture/)
