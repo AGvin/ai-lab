@@ -2,11 +2,6 @@
 
 Model output constrained to a machine-readable structure such as JSON or a schema.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Core idea
 
 Model output constrained to a machine-readable structure such as JSON or a schema. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.

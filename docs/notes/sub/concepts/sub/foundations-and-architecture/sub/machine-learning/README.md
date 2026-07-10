@@ -2,11 +2,6 @@
 
 Methods that learn patterns from data instead of relying only on explicitly programmed rules.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Core idea
 
 Methods that learn patterns from data instead of relying only on explicitly programmed rules. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.

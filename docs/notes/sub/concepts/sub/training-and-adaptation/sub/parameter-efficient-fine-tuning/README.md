@@ -2,11 +2,6 @@
 
 Adaptation methods that train only a small subset of model parameters or added components.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Core idea
 
 Adaptation methods that train only a small subset of model parameters or added components. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.

@@ -2,11 +2,6 @@
 
 Using a language model to score, rank, or critique other model outputs.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Core idea
 
 Using a language model to score, rank, or critique other model outputs. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.

@@ -2,11 +2,6 @@
 
 High-priority instructions that define an assistant's role, behavior, and operational boundaries.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Core idea
 
 High-priority instructions that define an assistant's role, behavior, and operational boundaries. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.

@@ -2,11 +2,6 @@
 
 Concepts for connecting models to external information, searchable documents, and evidence-backed context.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
 ## Essential

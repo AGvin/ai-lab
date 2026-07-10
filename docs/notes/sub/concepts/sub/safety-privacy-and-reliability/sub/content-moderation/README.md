@@ -2,11 +2,6 @@
 
 Detecting or restricting content according to safety, legal, or platform policies.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Core idea
 
 Detecting or restricting content according to safety, legal, or platform policies. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.

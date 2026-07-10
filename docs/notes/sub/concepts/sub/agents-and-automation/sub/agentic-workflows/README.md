@@ -2,11 +2,6 @@
 
 Controlled multi-step processes that combine model decisions with deterministic workflow logic.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Core idea
 
 Controlled multi-step processes that combine model decisions with deterministic workflow logic. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.

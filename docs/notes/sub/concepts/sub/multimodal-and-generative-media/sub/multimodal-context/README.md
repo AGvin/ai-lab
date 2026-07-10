@@ -2,11 +2,6 @@
 
 The combined text, image, audio, video, or document information available to a model request.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Core idea
 
 The combined text, image, audio, video, or document information available to a model request. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.

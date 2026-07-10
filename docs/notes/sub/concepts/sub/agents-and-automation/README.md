@@ -2,11 +2,6 @@
 
 Concepts for configuring AI systems that plan, use tools, maintain state, and perform controlled actions.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
 ## Essential

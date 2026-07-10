@@ -2,11 +2,6 @@
 
 LoRA-based adaptation performed with a quantized base model to reduce memory use.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Core idea
 
 LoRA-based adaptation performed with a quantized base model to reduce memory use. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.

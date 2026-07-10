@@ -2,11 +2,6 @@
 
 A probabilistic lexical ranking method widely used in document retrieval.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Core idea
 
 A probabilistic lexical ranking method widely used in document retrieval. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.

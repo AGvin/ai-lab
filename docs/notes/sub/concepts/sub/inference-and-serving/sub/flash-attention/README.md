@@ -2,11 +2,6 @@
 
 Attention implementations optimized to reduce memory traffic and improve GPU efficiency.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Core idea
 
 Attention implementations optimized to reduce memory traffic and improve GPU efficiency. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.

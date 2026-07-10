@@ -2,11 +2,6 @@
 
 Concepts for running trained models locally or as services and understanding their resource and performance behavior.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
 ## Essential

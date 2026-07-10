@@ -2,11 +2,6 @@
 
 Core concepts that explain what modern AI models are and how their main architectural families relate.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
 ## Essential

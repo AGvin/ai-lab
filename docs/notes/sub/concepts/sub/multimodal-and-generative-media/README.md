@@ -2,11 +2,6 @@
 
 Concepts for models and workflows involving images, audio, video, and combinations of modalities.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
 ## Essential

@@ -2,11 +2,6 @@
 
 The practice of supplying instructions, context, examples, and constraints to guide a model.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Core idea
 
 The practice of supplying instructions, context, examples, and constraints to guide a model. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.

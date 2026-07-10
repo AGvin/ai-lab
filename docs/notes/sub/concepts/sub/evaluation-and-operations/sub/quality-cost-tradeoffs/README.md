@@ -2,11 +2,6 @@
 
 Choosing an acceptable balance between output quality and operational expense.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Core idea
 
 Choosing an acceptable balance between output quality and operational expense. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
