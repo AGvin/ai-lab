@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - docs/add-rag-concept
+  pull_request:
+    branches:
+      - main
+    types:
+      - synchronize
 
 permissions:
   contents: write
