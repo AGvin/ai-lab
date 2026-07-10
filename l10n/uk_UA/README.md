@@ -69,7 +69,7 @@ l10n:
 
 - [`notes/`](../../docs/notes/l10n/uk_UA/) — concepts, benchmarks, comparisons та practical AI notes, які не є окремою software або hardware documentation.
   - [`concepts/`](../../docs/notes/sub/concepts/l10n/uk_UA/) — explanations of AI concepts.
-    - [`lora/`](../../docs/notes/sub/concepts/sub/lora/l10n/uk_UA/) — Low-Rank Adaptation concept.
+    - [`lora/`](../../docs/notes/sub/concepts/sub/training-and-adaptation/sub/lora/l10n/uk_UA/) — Low-Rank Adaptation concept.
   - [`benchmarks/`](../../docs/notes/sub/benchmarks/l10n/uk_UA/) — benchmark and leaderboard notes для AI models, providers та systems.
     - [`livebench/`](../../docs/notes/sub/benchmarks/sub/livebench/l10n/uk_UA/) — AI model benchmark.
     - [`open-llm-leaderboard/`](../../docs/notes/sub/benchmarks/sub/open-llm-leaderboard/l10n/uk_UA/) — Open LLM leaderboard view from LLM Stats.
