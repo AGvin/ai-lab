@@ -2,11 +2,6 @@
 
 Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning method that learns compact low-rank updates while keeping the original model weights frozen.
 
-## Translations
-
-- English — current
-- [Українська](./l10n/uk_UA/)
-
 ## Core idea
 
 A full fine-tune updates a large portion of a model's parameters. LoRA instead represents the update for selected layers as the product of two much smaller trainable matrices. The base model remains unchanged, while the adapter stores only the learned difference.
