@@ -5,6 +5,7 @@ Explanations of AI concepts.
 ## Child nodes
 
 - [`lora/`](./sub/lora/) — Low-Rank Adaptation concept.
+- [`rag/`](./sub/rag/) — Retrieval-Augmented Generation concept.
 
 ## Scope
 
