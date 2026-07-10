@@ -26,9 +26,12 @@ jobs:
           fetch-depth: 0
 
       - name: Generate documentation
+        id: generate
+        continue-on-error: true
         shell: bash
         run: |
           set -euo pipefail
+          exec > >(tee /tmp/concept-docs.log) 2>&1
 
           cat .github/concept-generator.part-* | base64 -d > /tmp/concept-generator.tar.gz
           rm -rf /tmp/concept-generator /tmp/concept-gen/out /tmp/concept-gen/manifest.json
@@ -119,11 +122,7 @@ jobs:
               localized_target = "../../" + target[2:].rstrip("/") + "/l10n/uk_UA/"
               return f"]({localized_target})"
 
-          concepts_block = re.sub(
-              r"]\((\./docs/notes/sub/concepts/[^)]*)\)",
-              localize_concept_link,
-              concepts_block,
-          )
+          concepts_block = re.sub(r"]\((\./docs/notes/sub/concepts/[^)]*)\)", localize_concept_link, concepts_block)
           concepts_block = concepts_block.replace(
               "— practical and foundational AI concepts organized by topic and priority.",
               "— практичні та фундаментальні AI concepts, організовані за темою і пріоритетом.",
@@ -220,6 +219,7 @@ jobs:
           rm -f .github/workflows/apply-concept-docs.yml
 
       - name: Commit generated documentation
+        if: steps.generate.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
@@ -229,3 +229,18 @@ jobs:
           git diff --cached --check
           git commit -m "Expand AI concept documentation"
           git push origin HEAD:docs/add-rag-concept
+
+      - name: Commit diagnostic log
+        if: steps.generate.outcome == 'failure'
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp /tmp/concept-docs.log /tmp/concept-docs-workflow.log
+          git reset --hard HEAD
+          cp /tmp/concept-docs-workflow.log concept-docs-workflow.log
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add concept-docs-workflow.log
+          git commit -m "Record concept documentation workflow failure"
+          git push origin HEAD:docs/add-rag-concept
+          exit 1
