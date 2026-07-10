@@ -1,11 +1,5 @@
 # Image Embeddings
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Vector representations used to compare, retrieve, or classify visual content.
 
 ## Translations

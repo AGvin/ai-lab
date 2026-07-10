@@ -1,11 +1,5 @@
 # Retrieval Poisoning
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Manipulating indexed knowledge so retrieval supplies misleading or malicious context.
 
 ## Translations

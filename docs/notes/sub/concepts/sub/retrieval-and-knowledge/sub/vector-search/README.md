@@ -1,11 +1,5 @@
 # Vector Search
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Nearest-neighbor retrieval over embedding vectors.
 
 ## Translations

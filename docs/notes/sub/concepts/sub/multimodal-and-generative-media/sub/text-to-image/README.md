@@ -1,11 +1,5 @@
 # Text-to-Image
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Generating images from natural-language descriptions.
 
 ## Translations

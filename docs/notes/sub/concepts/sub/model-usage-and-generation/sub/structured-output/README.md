@@ -1,11 +1,5 @@
 # Structured Output
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Model output constrained to a machine-readable structure such as JSON or a schema.
 
 ## Translations

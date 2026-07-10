@@ -1,11 +1,5 @@
 # Cost Management
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Measuring and controlling model, infrastructure, storage, and tool expenses.
 
 ## Translations

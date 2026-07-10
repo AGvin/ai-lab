@@ -1,11 +1,5 @@
 # Sandboxing
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Isolating execution so failures or malicious behavior have limited impact.
 
 ## Translations

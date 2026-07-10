@@ -1,11 +1,5 @@
 # Training and Adaptation
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Concepts for training models or adapting existing models to tasks, domains, preferences, and deployment constraints.
 
 ## Translations

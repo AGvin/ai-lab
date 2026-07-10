@@ -1,11 +1,5 @@
 # Few-Shot Prompting
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Prompting that includes a small number of examples to demonstrate desired behavior.
 
 ## Translations

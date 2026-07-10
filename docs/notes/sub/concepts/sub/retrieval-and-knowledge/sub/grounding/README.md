@@ -1,11 +1,5 @@
 # Grounding
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Constraining generated claims to supplied evidence, tools, or authoritative sources.
 
 ## Translations

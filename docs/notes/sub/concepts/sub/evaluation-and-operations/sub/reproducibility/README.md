@@ -1,11 +1,5 @@
 # Reproducibility
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 The ability to repeat an evaluation or workflow with comparable conditions and results.
 
 ## Translations

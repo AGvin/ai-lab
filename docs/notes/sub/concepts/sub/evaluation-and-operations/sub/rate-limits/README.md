@@ -1,11 +1,5 @@
 # Rate Limits
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Controls that restrict request volume over a period of time.
 
 ## Translations

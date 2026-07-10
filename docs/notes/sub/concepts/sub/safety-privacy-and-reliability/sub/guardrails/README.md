@@ -1,11 +1,5 @@
 # Guardrails
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Controls that validate, restrict, or monitor model inputs, outputs, and actions.
 
 ## Translations

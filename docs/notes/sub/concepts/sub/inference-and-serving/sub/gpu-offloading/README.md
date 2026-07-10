@@ -1,11 +1,5 @@
 # GPU Offloading
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Placing selected model computation or layers on a GPU while other work remains elsewhere.
 
 ## Translations

@@ -1,11 +1,5 @@
 # Image Generation
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Producing images from text, images, layouts, masks, or other conditioning inputs.
 
 ## Translations

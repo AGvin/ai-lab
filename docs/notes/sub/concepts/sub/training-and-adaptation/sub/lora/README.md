@@ -1,11 +1,5 @@
 # LoRA
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Low-Rank Adaptation trains compact low-rank updates instead of all base model weights.
 
 ## Translations

@@ -1,11 +1,5 @@
 # Agent Memory
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Mechanisms that preserve useful information beyond the immediate model request.
 
 ## Translations

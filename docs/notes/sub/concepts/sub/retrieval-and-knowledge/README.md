@@ -1,11 +1,5 @@
 # Retrieval and Knowledge
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Concepts for connecting models to external information, searchable documents, and evidence-backed context.
 
 ## Translations

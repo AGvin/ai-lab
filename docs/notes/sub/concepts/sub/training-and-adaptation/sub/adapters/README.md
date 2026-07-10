@@ -1,11 +1,5 @@
 # Adapters
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Small trainable modules attached to a base model for reusable specialization.
 
 ## Translations

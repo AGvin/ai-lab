@@ -1,11 +1,5 @@
 # Supervised Fine-Tuning
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Fine-tuning on labeled examples that pair inputs with desired outputs.
 
 ## Translations

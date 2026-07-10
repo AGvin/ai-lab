@@ -1,11 +1,5 @@
 # Safety, Privacy, and Reliability
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Concepts for controlling model behavior, protecting data, and reducing operational risk in AI systems.
 
 ## Translations

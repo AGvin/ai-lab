@@ -1,11 +1,5 @@
 # Deep Learning
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Machine learning based on neural networks with many processing layers.
 
 ## Translations

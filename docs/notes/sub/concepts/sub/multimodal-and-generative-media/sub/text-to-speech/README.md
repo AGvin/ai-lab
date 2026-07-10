@@ -1,11 +1,5 @@
 # Text-to-Speech
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Synthesizing spoken audio from written text.
 
 ## Translations

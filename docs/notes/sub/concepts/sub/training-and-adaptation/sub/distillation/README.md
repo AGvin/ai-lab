@@ -1,11 +1,5 @@
 # Distillation
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Training a smaller or simpler model to imitate a stronger teacher model.
 
 ## Translations

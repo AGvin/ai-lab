@@ -1,11 +1,5 @@
 # Evaluation and Operations
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Concepts for selecting, testing, observing, and operating AI systems under real quality, cost, and reliability constraints.
 
 ## Translations

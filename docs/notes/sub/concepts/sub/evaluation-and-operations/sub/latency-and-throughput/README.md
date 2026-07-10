@@ -1,11 +1,5 @@
 # Latency and Throughput
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Balancing response time against the amount of work completed per unit of time.
 
 ## Translations

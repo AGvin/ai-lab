@@ -1,11 +1,5 @@
 # Outpainting
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Extending an image beyond its original boundaries.
 
 ## Translations

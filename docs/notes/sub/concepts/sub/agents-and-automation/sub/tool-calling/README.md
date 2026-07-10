@@ -1,11 +1,5 @@
 # Tool Calling
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 A model selecting a registered external operation and producing arguments for its execution.
 
 ## Translations

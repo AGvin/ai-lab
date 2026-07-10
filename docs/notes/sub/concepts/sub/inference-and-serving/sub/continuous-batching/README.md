@@ -1,11 +1,5 @@
 # Continuous Batching
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Dynamically combining active inference requests to improve serving utilization.
 
 ## Translations

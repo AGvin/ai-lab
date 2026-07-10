@@ -1,11 +1,5 @@
 # Human in the Loop
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Requiring human review, approval, or intervention at selected workflow points.
 
 ## Translations

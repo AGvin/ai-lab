@@ -1,11 +1,5 @@
 # Inpainting
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Regenerating selected masked regions of an image.
 
 ## Translations

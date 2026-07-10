@@ -1,11 +1,5 @@
 # Multimodal Models
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Models that process or generate more than one modality, such as text, images, audio, or video.
 
 ## Translations

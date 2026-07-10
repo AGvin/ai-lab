@@ -1,11 +1,5 @@
 # Data Residency
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 The geographic or jurisdictional location where data is stored or processed.
 
 ## Translations

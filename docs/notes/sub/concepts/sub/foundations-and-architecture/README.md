@@ -1,11 +1,5 @@
 # Foundations and Architecture
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Core concepts that explain what modern AI models are and how their main architectural families relate.
 
 ## Translations

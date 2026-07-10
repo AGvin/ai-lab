@@ -1,11 +1,5 @@
 # Idempotency
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Designing actions so safe repetition does not create unintended duplicate effects.
 
 ## Translations

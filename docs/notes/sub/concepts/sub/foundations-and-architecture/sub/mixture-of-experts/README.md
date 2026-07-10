@@ -1,11 +1,5 @@
 # Mixture of Experts
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Sparse model architectures that route each input through selected expert components.
 
 ## Translations

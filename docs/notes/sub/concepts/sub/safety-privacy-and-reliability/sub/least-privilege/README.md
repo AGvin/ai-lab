@@ -1,11 +1,5 @@
 # Least Privilege
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Granting an AI system only the permissions required for its current task.
 
 ## Translations

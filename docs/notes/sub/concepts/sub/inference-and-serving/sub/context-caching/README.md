@@ -1,11 +1,5 @@
 # Context Caching
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Reusing previously processed prompt context to reduce repeated computation.
 
 ## Translations

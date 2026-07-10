@@ -1,11 +1,5 @@
 # Reasoning Models
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Models optimized to spend additional computation on multi-step problem solving.
 
 ## Translations

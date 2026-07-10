@@ -1,11 +1,5 @@
 # Performance Metrics
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Measurements such as time to first token, tokens per second, latency, and memory use.
 
 ## Translations

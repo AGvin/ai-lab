@@ -1,11 +1,5 @@
 # Indirect Prompt Injection
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Malicious or conflicting instructions embedded in external content processed by an AI system.
 
 ## Translations

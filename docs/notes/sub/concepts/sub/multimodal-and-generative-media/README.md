@@ -1,11 +1,5 @@
 # Multimodal and Generative Media
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Concepts for models and workflows involving images, audio, video, and combinations of modalities.
 
 ## Translations

@@ -1,11 +1,5 @@
 # Model Alignment
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Shaping model behavior toward intended goals, values, policies, or preferences.
 
 ## Translations

@@ -1,11 +1,5 @@
 # Benchmarks
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Standardized tasks or datasets used to compare models or systems.
 
 ## Translations

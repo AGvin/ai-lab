@@ -1,11 +1,5 @@
 # Context Window
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 The bounded amount of tokenized information a model can consider during one request.
 
 ## Translations

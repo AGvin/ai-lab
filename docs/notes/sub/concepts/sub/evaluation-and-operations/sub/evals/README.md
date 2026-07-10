@@ -1,11 +1,5 @@
 # Evals
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Repeatable tests that measure whether an AI model or system meets defined requirements.
 
 ## Translations

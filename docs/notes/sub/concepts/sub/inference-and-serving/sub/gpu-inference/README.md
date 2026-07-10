@@ -1,11 +1,5 @@
 # GPU Inference
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Running model computation primarily on graphics processors optimized for parallel workloads.
 
 ## Translations

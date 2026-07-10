@@ -1,11 +1,5 @@
 # Evaluation Datasets
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Curated examples used to test quality, safety, retrieval, or task performance.
 
 ## Translations

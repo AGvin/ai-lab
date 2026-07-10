@@ -1,11 +1,5 @@
 # Quality and Cost Trade-Offs
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Choosing an acceptable balance between output quality and operational expense.
 
 ## Translations

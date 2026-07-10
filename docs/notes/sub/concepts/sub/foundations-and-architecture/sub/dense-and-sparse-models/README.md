@@ -1,11 +1,5 @@
 # Dense and Sparse Models
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Dense models activate most parameters for each input, while sparse models activate selected subsets.
 
 ## Translations

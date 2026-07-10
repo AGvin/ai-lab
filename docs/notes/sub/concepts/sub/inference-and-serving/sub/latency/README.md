@@ -1,11 +1,5 @@
 # Latency
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 The elapsed time required to produce a response or reach a defined output milestone.
 
 ## Translations

@@ -1,11 +1,5 @@
 # Concepts
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Practical and foundational AI concepts organized by topic and reading priority.
 
 Priority indicates the recommended learning order for a user who primarily consumes models, configures local inference, and builds or operates agent workflows.

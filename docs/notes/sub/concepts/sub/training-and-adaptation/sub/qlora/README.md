@@ -1,11 +1,5 @@
 # QLoRA
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 LoRA-based adaptation performed with a quantized base model to reduce memory use.
 
 ## Translations

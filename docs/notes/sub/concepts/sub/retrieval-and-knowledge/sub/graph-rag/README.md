@@ -1,11 +1,5 @@
 # GraphRAG
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Retrieval-Augmented Generation that uses graph structures and relationships to assemble context.
 
 ## Translations

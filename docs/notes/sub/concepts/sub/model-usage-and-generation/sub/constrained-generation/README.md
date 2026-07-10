@@ -1,11 +1,5 @@
 # Constrained Generation
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Generation restricted by a grammar, schema, token set, or other formal constraint.
 
 ## Translations

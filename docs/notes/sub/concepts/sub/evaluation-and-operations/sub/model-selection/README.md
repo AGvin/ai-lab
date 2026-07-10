@@ -1,11 +1,5 @@
 # Model Selection
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Choosing a model based on task quality, capabilities, cost, latency, safety, and deployment constraints.
 
 ## Translations

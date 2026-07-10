@@ -1,11 +1,5 @@
 # Model Serving
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Exposing model inference through a managed process, API, queue, or runtime service.
 
 ## Translations

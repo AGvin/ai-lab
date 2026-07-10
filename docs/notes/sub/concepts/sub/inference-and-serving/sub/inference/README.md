@@ -1,11 +1,5 @@
 # Inference
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Running a trained model to process input and produce output.
 
 ## Translations

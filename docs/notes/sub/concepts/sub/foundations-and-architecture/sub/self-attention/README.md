@@ -1,11 +1,5 @@
 # Self-Attention
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Attention computed between positions within the same input sequence.
 
 ## Translations

@@ -1,11 +1,5 @@
 # Transformers
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Neural network architectures built around attention and parallel sequence processing.
 
 ## Translations

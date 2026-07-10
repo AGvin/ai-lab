@@ -1,11 +1,5 @@
 # Function Calling
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 A structured tool-calling interface where model output selects a function and arguments.
 
 ## Translations

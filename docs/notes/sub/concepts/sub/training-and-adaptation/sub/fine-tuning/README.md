@@ -1,11 +1,5 @@
 # Fine-Tuning
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Continuing model training on targeted data to modify behavior or task performance.
 
 ## Translations

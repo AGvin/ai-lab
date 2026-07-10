@@ -1,11 +1,5 @@
 # Pruning
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Removing model parameters or structures judged unnecessary for a target objective.
 
 ## Translations

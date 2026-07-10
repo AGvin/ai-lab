@@ -1,11 +1,5 @@
 # Image-to-Image
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Generating a transformed image while conditioning on an existing image.
 
 ## Translations

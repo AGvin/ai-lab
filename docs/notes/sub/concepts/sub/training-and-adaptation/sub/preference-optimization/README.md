@@ -1,11 +1,5 @@
 # Preference Optimization
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Training methods that favor responses judged better according to preference data.
 
 ## Translations

@@ -1,11 +1,5 @@
 # Chunking
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Dividing source material into retrievable units while preserving enough context for use.
 
 ## Translations

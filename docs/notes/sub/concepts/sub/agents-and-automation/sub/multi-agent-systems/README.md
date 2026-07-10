@@ -1,11 +1,5 @@
 # Multi-Agent Systems
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Systems in which multiple agents coordinate, compete, review, or specialize.
 
 ## Translations

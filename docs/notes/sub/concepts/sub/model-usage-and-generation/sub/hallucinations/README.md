@@ -1,11 +1,5 @@
 # Hallucinations
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Unsupported or incorrect model output presented in a plausible form.
 
 ## Translations

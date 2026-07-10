@@ -1,11 +1,5 @@
 # Content Moderation
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Detecting or restricting content according to safety, legal, or platform policies.
 
 ## Translations

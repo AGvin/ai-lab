@@ -1,11 +1,5 @@
 # Model Usage and Generation
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Concepts for using trained models effectively through chats, APIs, applications, and local runtimes.
 
 ## Translations

@@ -1,11 +1,5 @@
 # KV Cache
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Cached attention keys and values reused during autoregressive generation.
 
 ## Translations

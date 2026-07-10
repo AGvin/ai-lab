@@ -1,11 +1,5 @@
 # Sampling Parameters
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Controls such as temperature, top-p, top-k, and seed that influence token selection.
 
 ## Translations

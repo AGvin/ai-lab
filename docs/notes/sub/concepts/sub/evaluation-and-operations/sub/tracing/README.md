@@ -1,11 +1,5 @@
 # Tracing
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Recording the sequence of model, tool, retrieval, and workflow operations for one execution.
 
 ## Translations

@@ -1,11 +1,5 @@
 # Inference and Serving
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Concepts for running trained models locally or as services and understanding their resource and performance behavior.
 
 ## Translations

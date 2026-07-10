@@ -1,11 +1,5 @@
 # Data Poisoning
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Corrupting training or adaptation data to degrade or manipulate model behavior.
 
 ## Translations

@@ -1,11 +1,5 @@
 # Fallback Models
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Alternative models used when the preferred model fails, is unavailable, or exceeds policy limits.
 
 ## Translations

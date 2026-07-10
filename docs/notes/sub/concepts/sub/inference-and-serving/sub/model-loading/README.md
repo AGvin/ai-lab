@@ -1,11 +1,5 @@
 # Model Loading
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Moving model artifacts into RAM, VRAM, or runtime-managed memory for execution.
 
 ## Translations

@@ -1,11 +1,5 @@
 # Attention
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 A mechanism that weights which input elements are most relevant for a model operation.
 
 ## Translations

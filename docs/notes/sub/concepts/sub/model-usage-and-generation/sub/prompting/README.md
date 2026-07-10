@@ -1,11 +1,5 @@
 # Prompting
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 The practice of supplying instructions, context, examples, and constraints to guide a model.
 
 ## Translations

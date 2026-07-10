@@ -1,11 +1,5 @@
 # Vector Databases
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Storage and indexing systems optimized for vectors and similarity search.
 
 ## Translations

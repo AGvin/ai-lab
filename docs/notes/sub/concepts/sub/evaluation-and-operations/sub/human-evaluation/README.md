@@ -1,11 +1,5 @@
 # Human Evaluation
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 People assessing model outputs against explicit criteria.
 
 ## Translations

@@ -1,11 +1,5 @@
 # LLM as a Judge
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Using a language model to score, rank, or critique other model outputs.
 
 ## Translations

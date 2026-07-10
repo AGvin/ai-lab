@@ -1,11 +1,5 @@
 # Artificial Intelligence
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 The broad field of building systems that perform tasks associated with perception, reasoning, generation, or decision-making.
 
 ## Translations

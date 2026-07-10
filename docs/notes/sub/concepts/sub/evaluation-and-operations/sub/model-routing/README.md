@@ -1,11 +1,5 @@
 # Model Routing
 
-<!--
-ai_content:
-  managed: true
-  l10n: true
--->
-
 Selecting among models dynamically according to the request or operating policy.
 
 ## Translations
