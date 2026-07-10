@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:2702c063b80c162f695a96cb1933f73a80a95c4e
+  source_hash: sha256:9d547deaae42b56dab44ed5ce6f8b049e5a84bbbaa9166b7c2c60027d5ef292f
   mode: translated
 -->
 
@@ -48,13 +48,13 @@ l10n:
   - [`agents/`](../../docs/software/sub/agents/l10n/uk_UA/) — standalone agent-like AI systems, де agent behavior є primary documented role.
     - [`hermes-agent/`](../../docs/software/sub/agents/sub/hermes-agent/l10n/uk_UA/) — AI agent entry requiring source confirmation.
     - [`openclaw/`](../../docs/software/sub/agents/sub/openclaw/l10n/uk_UA/) — browser-use AI agent project.
+    - [`pi/`](../../docs/software/sub/agents/sub/pi/l10n/uk_UA/) — terminal coding-agent harness, documented at pi.dev.
   - [`agent-orchestration/`](../../docs/software/sub/agent-orchestration/l10n/uk_UA/) — systems, frameworks, runtimes та control planes для coordinating або running AI agents.
     - [`autogen/`](../../docs/software/sub/agent-orchestration/sub/autogen/l10n/uk_UA/) — multi-agent conversation framework.
     - [`crewai/`](../../docs/software/sub/agent-orchestration/sub/crewai/l10n/uk_UA/) — collaborative multi-agent orchestration framework.
     - [`langgraph/`](../../docs/software/sub/agent-orchestration/sub/langgraph/l10n/uk_UA/) — stateful agent orchestration framework and runtime.
     - [`openhands/`](../../docs/software/sub/agent-orchestration/sub/openhands/l10n/uk_UA/) — developer control center for coding agents and automations.
   - [`assistants/`](../../docs/software/sub/assistants/l10n/uk_UA/) — conversational AI assistants.
-    - [`pi/`](../../docs/software/sub/assistants/sub/pi/l10n/uk_UA/) — conversational AI assistant.
   - [`automation/`](../../docs/software/sub/automation/l10n/uk_UA/) — automation tools, що можуть підтримувати AI-adjacent workflows.
     - [`playwright/`](../../docs/software/sub/automation/sub/playwright/l10n/uk_UA/) — browser automation and end-to-end web testing framework.
   - [`model-platforms/`](../../docs/software/sub/model-platforms/l10n/uk_UA/) — platforms для model discovery, hosting, datasets, Spaces або related tooling.

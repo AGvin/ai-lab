@@ -1,21 +1,17 @@
-# LiveBench
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:007a5ebf3463b4dea1f8ddeea1d5196119866a10
   mode: translated
 -->
 
-LiveBench — AI model benchmark.
+# LiveBench
+
+Локалізована точка входу для AI model benchmark.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Роль у AI Lab
-
-Ця сторінка фіксує notes про benchmark scope, methodology, update cadence, strengths, limitations та usefulness for model evaluation.

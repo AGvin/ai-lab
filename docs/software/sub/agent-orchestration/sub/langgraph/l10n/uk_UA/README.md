@@ -1,21 +1,17 @@
-# LangGraph
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:5f43588c510d7f4d81f706c1e53d4c66d76f53db
   mode: translated
 -->
 
-LangGraph — stateful agent orchestration framework and runtime.
+# LangGraph
+
+Локалізована точка входу для stateful agent orchestration framework and runtime.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Роль у AI Lab
-
-Ця сторінка фіксує notes про stateful agent workflows, graph-based orchestration, runtime behavior та practical integration constraints.

@@ -1,21 +1,17 @@
-# Z-Image
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:dad2fd02d7d76c885c5657de522e03ee94e1ff5e
   mode: translated
 -->
 
-Z-Image — Alibaba image generation model.
+# Z-Image
+
+Локалізована точка входу для Alibaba image generation model.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Роль у AI Lab
-
-Ця сторінка фіксує notes про image generation model capabilities, provider context, deployment modes, licensing та practical evaluation.

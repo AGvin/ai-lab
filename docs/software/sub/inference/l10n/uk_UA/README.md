@@ -1,22 +1,17 @@
-# Inference
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:9d2c9bfdedd607189078785dd1243ad2adcbd831
   mode: translated
 -->
 
-Software для local або self-hosted model execution.
+# Inference
+
+Локалізована точка входу для інструментів локального або self-hosted model execution.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Інструменти
-
-- [`ollama/`](../../sub/ollama/l10n/uk_UA/) — local та self-hosted model runtime.
-- [`lm-studio/`](../../sub/lm-studio/l10n/uk_UA/) — desktop model runner та local model server.

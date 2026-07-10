@@ -1,21 +1,17 @@
-# Workflow Engines
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:15ce2051826fcc57d1fa1e7c5e435ac6b22f87c0
   mode: translated
 -->
 
-Tools, що build, arrange або execute AI workflows.
+# Workflow Engines
+
+Локалізована точка входу для tools, що build, arrange або execute AI workflows.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Інструменти
-
-- [`comfy-ui/`](../../sub/comfy-ui/l10n/uk_UA/) — node-based AI image generation workflow UI.

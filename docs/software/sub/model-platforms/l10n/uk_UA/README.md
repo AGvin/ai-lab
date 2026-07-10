@@ -1,21 +1,17 @@
-# Model Platforms
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:f3f157d7ba7c6b264cd360a3a2225462833566f0
   mode: translated
 -->
 
-Platforms для model discovery, hosting, datasets, Spaces або related AI tooling.
+# Model Platforms
+
+Локалізована точка входу для platforms for model discovery, hosting, datasets, Spaces або related tooling.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Platforms
-
-- [`hugging-face/`](../../sub/hugging-face/l10n/uk_UA/) — model, dataset, Spaces та AI tooling platform.

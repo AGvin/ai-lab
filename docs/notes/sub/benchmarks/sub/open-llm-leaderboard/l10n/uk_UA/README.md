@@ -1,21 +1,17 @@
-# Open LLM Leaderboard
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:df9f98505cd1ce72f86d059895ab02a9737600b6
   mode: translated
 -->
 
-Open LLM Leaderboard view from LLM Stats.
+# Open LLM Leaderboard
+
+Локалізована точка входу для Open LLM leaderboard view from LLM Stats.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Роль у AI Lab
-
-Ця сторінка фіксує notes про leaderboard scope, ranking interpretation, methodology limits та practical use for model comparison.

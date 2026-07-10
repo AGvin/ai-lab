@@ -1,21 +1,17 @@
-# ComfyUI
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:dcaea757e614294921e03d5c169477abc502a75f
   mode: translated
 -->
 
-ComfyUI — node-based AI image generation workflow UI.
+# ComfyUI
+
+Локалізована точка входу для node-based AI image generation workflow UI.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Роль у AI Lab
-
-Ця сторінка фіксує practical notes про node-based workflows, image generation pipelines, model integration та operational tradeoffs.

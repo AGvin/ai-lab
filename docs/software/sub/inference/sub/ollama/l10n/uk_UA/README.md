@@ -1,21 +1,17 @@
-# Ollama
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:aaf9c9951fff9c6df085f1ae14193d9e445a797e
   mode: translated
 -->
 
-Ollama — local та self-hosted model runtime для запуску моделей на власному обладнанні.
+# Ollama
+
+Локалізована точка входу для local та self-hosted model runtime.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Роль у AI Lab
-
-Ця сторінка фіксує practical notes щодо використання Ollama для local inference, model serving, workflow integration та hardware-aware setup decisions.

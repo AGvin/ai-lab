@@ -1,26 +1,17 @@
-# Огляд
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:b4ceb60dd96bc63f2a258ebd9f207d1b35758abf
   mode: translated
 -->
 
-Ця сторінка описує documentation model репозиторію AI Lab, його поточну структуру, asset rules та expansion guidance.
+# Огляд
+
+Локалізована точка входу для моделі документації репозиторію, поточної структури, asset rules та настанов щодо розширення.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Призначення
-
-Огляд допомагає зрозуміти, як організовані практичні AI notes, software entries, hardware notes, benchmarks, comparisons та reusable workflows.
-
-## Навігація
-
-- [`software/`](../../software/l10n/uk_UA/) — AI-related software та tools.
-- [`notes/`](../../notes/l10n/uk_UA/) — concepts, benchmarks, comparisons та practical notes.

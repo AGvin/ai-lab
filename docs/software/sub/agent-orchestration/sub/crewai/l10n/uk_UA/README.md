@@ -1,21 +1,17 @@
-# CrewAI
-
 <!--
 l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:pending
+  source_hash: gitblob:e237a9a5d74a29f76b3e0e2fd7b995402f1aff57
   mode: translated
 -->
 
-CrewAI — collaborative multi-agent orchestration framework.
+# CrewAI
+
+Локалізована точка входу для collaborative multi-agent orchestration framework.
 
 ## Переклади
 
 - [English](../../)
 - Українська — поточна
-
-## Роль у AI Lab
-
-Ця сторінка фіксує notes про role-based agents, multi-agent collaboration, workflow design та operational limitations.
