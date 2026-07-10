@@ -6,38 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Metadata filtering restricts retrieval using structured attributes such as source, date, language, tenant, product, document version, or access policy.
+Restricting retrieval by attributes such as source, date, version, tenant, or access policy.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Semantic or lexical similarity alone cannot express every retrieval requirement. Filters reduce the candidate space before or during search and help ensure that results belong to the correct user, project, time range, or document class.
+Restricting retrieval by attributes such as source, date, version, tenant, or access policy. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Enforce tenant and repository boundaries.
-- Retrieve only current document versions.
-- Restrict results by product, locale, or content type.
-- Exclude archived or unapproved sources.
-- Search within a user-selected collection.
+- Metadata filtering restricts candidates by structured attributes before or during retrieval.
+- Common attributes include tenant, access level, source path, language, date, product, version, and document status.
+- Filters should be derived from trusted application state rather than model-generated values alone.
 
-## Design considerations
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-Distinguish search convenience filters from security authorization. Security-sensitive filters must be enforced by the data layer and must not depend on model-generated metadata. Normalize metadata values and define update behavior when source documents change.
+## Why it matters
+
+Metadata Filtering affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Enforce scope and permissions and improve retrieval precision.
+- Select current versions or domain-specific subsets of a knowledge base.
+
+## Example
+
+A repository assistant filters to the requested branch and excludes archived documentation before vector search.
 
 ## Trade-offs and limitations
 
-Strict filters can reduce recall when metadata is missing or incorrect. Complex filter expressions may also limit index performance or behave differently across vector databases.
+- Missing or inconsistent metadata can silently exclude the correct source.
+- Filters are not a substitute for document-level authorization checks.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Letting the model choose an unrestricted tenant ID.
-- Storing inconsistent dates or category labels.
-- Applying filters after unauthorized content has already been returned.
-- Forgetting to update metadata when documents are replaced.
+## Practical checklist
+
+- What problem is Metadata Filtering expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Retrieval and Knowledge](../../)
-- [Vector Databases](../vector-databases/)
-- [Trust Boundaries](../../../safety-privacy-and-reliability/sub/trust-boundaries/)
-- [Data Privacy](../../../safety-privacy-and-reliability/sub/data-privacy/)
+- [Citations](../citations/)
+- [BM25](../bm25/)

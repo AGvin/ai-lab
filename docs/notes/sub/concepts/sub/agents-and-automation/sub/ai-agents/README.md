@@ -6,39 +6,54 @@ ai_content:
   l10n: true
 -->
 
-An AI agent is a system that uses a model to pursue a goal through observations, decisions, tool calls, state changes, and repeated actions.
+AI systems that pursue goals through model decisions, tools, state, and iterative actions.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-A model becomes part of an agent when it can do more than produce a single response. The surrounding application gives it tools, working state, control flow, stopping rules, permissions, and feedback from previous actions. The agent is therefore the complete system, not only the language model.
+AI systems that pursue goals through model decisions, tools, state, and iterative actions. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Typical components
+## How it works
 
-- A goal or task description.
-- A model that selects or proposes actions.
-- Tools such as APIs, search, code execution, or file operations.
-- State that records progress and intermediate results.
-- A loop that observes results and decides what to do next.
-- Policies for approval, failure handling, and termination.
+- An AI agent combines a model with goals, state, tools, observations, and a control loop.
+- The model proposes decisions or actions; application code validates and executes them; results return as new observations.
+- A stopping rule determines when the goal is complete, blocked, unsafe, or requires human input.
 
-## Practical use
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-Agents are useful for tasks where the next action depends on earlier results: repository maintenance, research, multi-system administration, data processing, or customer-support workflows. Keep deterministic steps outside the model when possible and use the model where interpretation or flexible decisions are needed.
+## Why it matters
+
+AI Agents affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Automate work that requires selecting among tools or adapting to intermediate results.
+- Coordinate research, coding, data processing, and operational workflows.
+
+## Example
+
+A coding agent reads an issue, inspects files, edits a feature branch, runs tests, and opens a draft pull request under explicit repository rules.
 
 ## Trade-offs and limitations
 
-More autonomy increases flexibility but also cost, latency, and the possibility of incorrect or unsafe actions. Agent behavior can be difficult to reproduce because every tool result changes subsequent decisions.
+- Autonomy amplifies model mistakes when permissions and verification are weak.
+- Open-ended loops can waste time, money, or API calls without budgets and stop conditions.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Calling a single model request an agent.
-- Granting broad credentials without least-privilege controls.
-- Omitting stop conditions or maximum action budgets.
-- Treating model-generated plans as trusted instructions.
+## Practical checklist
+
+- What problem is AI Agents expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Agents and Automation](../../)
+- [Multi-Agent Systems](../multi-agent-systems/)
 - [Agentic Workflows](../agentic-workflows/)
-- [Tool Calling](../tool-calling/)
-- [Autonomy Levels](../autonomy-levels/)

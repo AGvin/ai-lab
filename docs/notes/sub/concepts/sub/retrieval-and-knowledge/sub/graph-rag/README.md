@@ -6,37 +6,54 @@ ai_content:
   l10n: true
 -->
 
-GraphRAG is a Retrieval-Augmented Generation approach that uses entities, relationships, communities, or graph traversal to assemble context.
+Retrieval-Augmented Generation that uses graph structures and relationships to assemble context.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Conventional RAG usually retrieves independent text chunks. GraphRAG adds structure that can connect information distributed across documents, such as people linked to projects, services linked to incidents, or concepts linked through citations. The graph may be created from an existing knowledge graph or extracted from text.
+Retrieval-Augmented Generation that uses graph structures and relationships to assemble context. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Questions requiring multi-hop relationships.
-- Summaries across many connected entities or documents.
-- Investigation of dependencies, ownership, or causal chains.
-- Navigation through organizational or technical knowledge.
+- GraphRAG represents entities, concepts, or passages as nodes connected by relationships.
+- Queries can traverse the graph, retrieve relevant neighborhoods, or use graph-derived summaries before generation.
+- It is especially useful when relationships across documents matter more than isolated passage similarity.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+GraphRAG affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Answer multi-hop questions across organizations, systems, dependencies, or events.
+- Combine knowledge-graph structure with text evidence.
+
+## Example
+
+A system can trace a service through owners, dependencies, incidents, and runbooks before generating an operational summary.
 
 ## Trade-offs and limitations
 
-Graph construction is expensive and error-prone. Entity extraction, deduplication, and relationship typing can introduce false links. Graph traversal may also retrieve structurally connected but semantically irrelevant information.
+- Entity extraction and graph construction can be expensive and error-prone.
+- GraphRAG is not automatically better than simpler hybrid retrieval for ordinary document lookup.
 
-## Good practice
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-Preserve source evidence for every node and edge. Evaluate graph extraction separately from answer generation. Use graph retrieval only where relationships add value; simple factual lookups may work better with ordinary hybrid search.
+## Practical checklist
 
-## Common mistakes
-
-- Treating automatically extracted relationships as verified facts.
-- Building a graph without a question class that needs it.
-- Losing document provenance after entity consolidation.
-- Assuming graph traversal replaces lexical and semantic retrieval.
+- What problem is GraphRAG expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Retrieval and Knowledge](../../)
+- [BM25](../bm25/)
 - [Knowledge Graphs](../knowledge-graphs/)
-- [RAG](../rag/)
-- [Provenance](../../../safety-privacy-and-reliability/sub/provenance/)

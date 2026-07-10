@@ -6,36 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Model serving exposes inference through a managed process, API, queue, or runtime that handles requests, resources, scheduling, and results.
+Exposing model inference through a managed process, API, queue, or runtime service.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-A serving layer turns a loaded model into an operational service. It manages request parsing, batching, concurrency, authentication, timeouts, observability, model versions, and sometimes routing across several replicas or accelerators.
+Exposing model inference through a managed process, API, queue, or runtime service. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical responsibilities
+## How it works
 
-- Load and keep models resident.
-- Validate input size and supported parameters.
-- Schedule and batch requests.
-- Stream tokens or return completed outputs.
-- Enforce quotas and rate limits.
-- Record latency, usage, and failures.
-- Roll out new model versions safely.
+- Model serving keeps one or more models loaded and exposes inference through an API or queue.
+- The server schedules requests, manages batching, caches, timeouts, authentication, and resource limits.
+- Production serving may use replicas, load balancing, autoscaling, and model routing.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Model Serving affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Share local or cloud-hosted models among applications.
+- Centralize observability, access control, and hardware utilization.
+
+## Example
+
+A vLLM server exposes an OpenAI-compatible endpoint to several internal tools while continuously batching requests.
 
 ## Trade-offs and limitations
 
-A local desktop runtime is simple but may not support multi-user isolation. Production servers improve utilization and observability but add deployment and capacity-management complexity. Model replicas may require large amounts of duplicated accelerator memory.
+- Serving adds operational complexity beyond running a desktop model.
+- Concurrency can create memory spikes and unpredictable latency.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Exposing a development server directly to untrusted networks.
-- Allowing unlimited context or output lengths.
-- Deploying a new model version without regression tests.
-- Measuring model speed while ignoring queue and network latency.
+## Practical checklist
+
+- What problem is Model Serving expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Inference and Serving](../../)
-- [Continuous Batching](../continuous-batching/)
-- [Rate Limits](../../../evaluation-and-operations/sub/rate-limits/)
-- [Observability](../../../evaluation-and-operations/sub/observability/)
+- [Performance Metrics](../performance-metrics/)
+- [Model Loading](../model-loading/)

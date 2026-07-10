@@ -6,34 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Vision-language models process visual information together with natural-language instructions or questions.
+Models that jointly process visual inputs and natural language.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Images are converted into visual features or tokens and combined with a language model. The system can describe scenes, answer questions, read screenshots, interpret diagrams, compare images, or extract structured information. The model does not necessarily process every pixel at original resolution; preprocessing and visual-token budgets determine available detail.
+Models that jointly process visual inputs and natural language. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Screenshot and UI analysis.
-- Document and chart question answering.
-- Image classification and captioning.
-- Visual inspection assistance.
-- Multimodal agents that use cameras or browser screenshots.
+- A vision-language model encodes images or video frames and aligns them with language-model representations.
+- Visual tokens, patches, or features are inserted into the model context alongside text.
+- The model can answer questions, describe content, extract text, or reason over visual and textual evidence.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Vision-Language Models affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Analyze screenshots, diagrams, product images, and scanned documents.
+- Build assistants that combine visual inspection with natural-language instructions.
+
+## Example
+
+A model inspects a checkout screenshot and explains which validation message is visible and where it appears.
 
 ## Trade-offs and limitations
 
-Small text, exact counts, spatial relations, and fine visual details can be unreliable. OCR quality, image resizing, cropping, and compression affect results. A plausible description is not a precise measurement or verified observation.
+- Small text, precise counting, spatial relationships, and dense charts can remain unreliable.
+- Image resizing and preprocessing may remove important detail.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Assuming the model reads all visible text perfectly.
-- Using one low-resolution image for detailed inspection.
-- Treating visual inference as evidence without checking the source image.
-- Ignoring prompt injection embedded in screenshots or documents.
+## Practical checklist
+
+- What problem is Vision-Language Models expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Multimodal and Generative Media](../../)
-- [Multimodal Models](../../../foundations-and-architecture/sub/multimodal-models/)
-- [Multimodal Context](../multimodal-context/)
-- [Indirect Prompt Injection](../../../safety-privacy-and-reliability/sub/indirect-prompt-injection/)
+- [Audio Generation](../audio-generation/)
+- [Image Generation](../image-generation/)

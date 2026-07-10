@@ -6,39 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Artificial intelligence is the broad field of building systems that perform tasks associated with perception, language, reasoning, prediction, generation, planning, or decision-making.
+The broad field of building systems that perform tasks associated with perception, reasoning, generation, or decision-making.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-AI is an umbrella term rather than one implementation technique. A rule-based expert system, a machine-learning classifier, a large language model, and a robot-control system can all be described as AI even though they operate differently.
+The broad field of building systems that perform tasks associated with perception, reasoning, generation, or decision-making. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Major approaches
+## How it works
 
-- Symbolic systems based on explicit rules and representations.
-- Machine learning that learns patterns from data.
-- Search and planning algorithms.
-- Probabilistic models for reasoning under uncertainty.
-- Generative models for text, images, audio, or video.
-- Hybrid systems combining learned and deterministic components.
+- Artificial intelligence is an umbrella field rather than one model architecture. It includes rule-based systems, search, planning, machine learning, generative models, robotics, and combinations of these approaches.
+- An AI system normally combines a decision-producing component with data, software controls, interfaces, and an operating environment.
+- Claims about intelligence should be evaluated at the task and system level: a component may perform one task well while remaining unreliable outside that scope.
 
-## Practical use
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-Use the term precisely enough to identify the actual capability and mechanism. For a product or architecture decision, ask which model, data, tools, rules, and human controls produce the behavior rather than accepting “AI-powered” as a technical description.
+## Why it matters
+
+Artificial Intelligence affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Classify whether a product is actually using AI and which part of the system performs the AI-related work.
+- Separate broad AI capabilities from narrower machine-learning or generative-model features.
+
+## Example
+
+A support platform may combine deterministic routing rules, a language model for drafting, and human approval; the overall system is AI-enabled even though not every component is a learned model.
 
 ## Trade-offs and limitations
 
-AI systems can automate complex work but inherit limitations from data, objectives, model architecture, deployment conditions, and human design. Performance on one task does not imply general intelligence or reliability on unrelated tasks.
+- The term is so broad that it says little about quality, autonomy, or safety without additional detail.
+- Marketing language often labels ordinary automation as AI, so implementation evidence matters.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Treating AI as synonymous with large language models.
-- Assuming autonomous behavior from a generative interface.
-- Describing statistical output as understanding without defining the claim.
-- Ignoring deterministic alternatives that are simpler and safer.
+## Practical checklist
+
+- What problem is Artificial Intelligence expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Foundations and Architecture](../../)
+- [Mixture of Experts](../mixture-of-experts/)
 - [Machine Learning](../machine-learning/)
-- [Foundation Models](../foundation-models/)
-- [AI Agents](../../../agents-and-automation/sub/ai-agents/)

@@ -6,35 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Least privilege grants an AI system only the permissions and data access required for the current task.
+Granting an AI system only the permissions required for its current task.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-A capable model should not automatically receive broad operational authority. Permissions should be narrow in scope, time, resource, and action. Read, draft, approve, and execute capabilities should be separated where practical.
+Granting an AI system only the permissions required for its current task. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical controls
+## How it works
 
-- Use task-specific service accounts.
-- Prefer read-only access for analysis.
-- Limit tools to explicit business operations.
-- Restrict file paths, repositories, recipients, and tenants.
-- Use short-lived credentials.
-- Require approval for sensitive writes.
+- Least privilege grants only the permissions needed for a task and only for the required duration and scope.
+- Read and write capabilities are separated, and credentials are limited to specific repositories, paths, APIs, or actions.
+- Privilege escalation requires an explicit policy or approval.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Least Privilege affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Reduce impact when an agent is manipulated or makes a mistake.
+- Create safer tokens, service accounts, and tool allowlists.
+
+## Example
+
+A documentation agent receives read access to the repository and write access only to its feature branch, not production deployment credentials.
 
 ## Trade-offs and limitations
 
-Fine-grained permissions require more configuration and may create workflow interruptions. However, the operational cost is usually lower than the impact of a compromised or mistaken high-privilege agent.
+- Very narrow permissions can make workflows brittle and increase operational overhead.
+- Permissions must be reviewed as task scope changes.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Giving an agent administrator credentials for convenience.
-- Reusing a human user's unrestricted session.
-- Allowing a generic shell when a narrow API is sufficient.
-- Granting permanent access for a one-time task.
+## Practical checklist
+
+- What problem is Least Privilege expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Safety, Privacy, and Reliability](../../)
+- [Trust Boundaries](../trust-boundaries/)
 - [Sandboxing](../sandboxing/)
-- [Human in the Loop](../../../agents-and-automation/sub/human-in-the-loop/)
-- [Autonomy Levels](../../../agents-and-automation/sub/autonomy-levels/)

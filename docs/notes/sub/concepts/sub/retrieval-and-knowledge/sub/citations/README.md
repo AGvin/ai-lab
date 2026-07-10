@@ -6,40 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Citations connect generated statements to the sources or evidence used to support them.
+Links or references that connect generated statements to supporting sources.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-A useful citation is traceable, specific, and attached to the claim it supports. It should identify the source and, when possible, a page, section, line range, record ID, or timestamp. Citation generation must be based on retrieved source metadata rather than invented reference text.
+Links or references that connect generated statements to supporting sources. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Evidence-backed research summaries.
-- Answers over policy, legal, or technical documentation.
-- Audit trails for data extracted from files or databases.
-- User interfaces that let readers inspect supporting passages.
+- A citation associates an answer span or claim with a source identifier and location.
+- Reliable systems preserve source IDs through retrieval and generate citations from selected evidence rather than asking the model to invent links.
+- Citation validation checks that the source exists and actually supports the adjacent claim.
 
-## Citation quality checks
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-- **Correctness:** the cited passage supports the claim.
-- **Completeness:** important factual claims have evidence.
-- **Specificity:** the reference points to the relevant location.
-- **Provenance:** source identity and version are preserved.
+## Why it matters
+
+Citations affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Make research, documentation, policy, and support answers auditable.
+- Let readers inspect context and resolve uncertainty.
+
+## Example
+
+A model answer links a hardware recommendation to the exact benchmark note and quantization section used as evidence.
 
 ## Trade-offs and limitations
 
-A citation can point to a low-quality or outdated source. Excessive citations reduce readability, while sparse citations make verification difficult. Some generated claims combine several sources and require more than one reference.
+- A citation can be present but irrelevant or insufficient.
+- Generated page numbers, URLs, or quotes must be validated against the source.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Allowing the model to invent URLs, titles, or page numbers.
-- Citing a document that discusses the topic but not the claim.
-- Losing citation offsets after document preprocessing.
-- Treating citations as a substitute for source evaluation.
+## Practical checklist
+
+- What problem is Citations expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Retrieval and Knowledge](../../)
-- [Grounding](../grounding/)
-- [Provenance](../../../safety-privacy-and-reliability/sub/provenance/)
-- [Retrieval Evaluation](../../../evaluation-and-operations/sub/retrieval-evaluation/)
+- [Reranking](../reranking/)
+- [Metadata Filtering](../metadata-filtering/)

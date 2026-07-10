@@ -6,35 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Quality and cost trade-offs describe how model capability, context, inference settings, validation, and operational controls affect both result quality and total expense.
+Choosing an acceptable balance between output quality and operational expense.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Higher spending does not always improve useful quality. A larger model may solve difficult tasks with fewer retries, while a smaller model may handle routine extraction more efficiently. Retrieval, tools, and good workflow design can outperform simply increasing model size.
+Choosing an acceptable balance between output quality and operational expense. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical strategies
+## How it works
 
-- Define minimum quality thresholds before optimizing cost.
-- Route tasks by capability requirement.
-- Use deterministic tools for exact operations.
-- Reduce irrelevant context rather than truncating critical evidence.
-- Cache stable results.
-- Escalate only failures or high-risk cases.
+- Quality-cost analysis compares task success against money, compute, latency, and human-review effort.
+- The efficient frontier contains configurations where improving one dimension requires sacrificing another.
+- Routing and escalation can use cheap models first and stronger models only when needed.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Quality and Cost Trade-Offs affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Select a practical model portfolio and operating policy.
+- Decide whether higher quality justifies additional latency or expense.
+
+## Example
+
+A small model handles 80% of routine requests and escalates low-confidence cases to a larger model.
 
 ## Trade-offs and limitations
 
-Cost includes API usage, hardware, latency, engineering, human review, and error impact. A low-cost workflow that creates expensive mistakes is not economical. Conversely, using the strongest model everywhere may provide little additional value.
+- Quality must be measured on the actual task, not assumed from model size.
+- Hidden failure costs can dominate API price.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Comparing price per token without success rate.
-- Treating benchmark score differences as business value.
-- Removing validation to save latency.
-- Ignoring operational complexity of local deployment.
+## Practical checklist
+
+- What problem is Quality and Cost Trade-Offs expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Cost Management](../cost-management/)
-- [Model Selection](../model-selection/)
-- [Model Routing](../model-routing/)
+- [Latency and Throughput](../latency-and-throughput/)
+- [Benchmarks](../benchmarks/)

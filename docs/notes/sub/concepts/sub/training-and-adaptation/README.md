@@ -8,6 +8,11 @@ ai_content:
 
 Concepts for training models or adapting existing models to tasks, domains, preferences, and deployment constraints.
 
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
+
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
 ## Essential

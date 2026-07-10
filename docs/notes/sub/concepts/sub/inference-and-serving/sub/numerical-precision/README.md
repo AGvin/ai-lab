@@ -6,38 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Numerical precision defines the number format used to represent model weights, activations, gradients, and caches.
+The number format used for model weights, activations, and computation.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Precision affects memory consumption, numerical range, rounding error, and hardware performance. FP32 provides broad compatibility and precision but uses more memory. FP16, BF16, FP8, and integer formats reduce storage or compute requirements with different range and accuracy characteristics.
+The number format used for model weights, activations, and computation. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Important distinctions
+## How it works
 
-- **Weight precision:** how model parameters are stored.
-- **Compute precision:** the format used during matrix operations.
-- **Activation precision:** how intermediate values are represented.
-- **Accumulation precision:** the format used when summing many products.
-- **KV-cache precision:** the format used for attention cache values.
+- Numerical precision defines formats such as FP32, FP16, BF16, FP8, INT8, or INT4 used for weights and computation.
+- Lower precision reduces storage and bandwidth but provides less numeric range or resolution.
+- Mixed-precision systems keep sensitive operations at higher precision while using lower precision elsewhere.
 
-## Practical use
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-Check which formats the model, runtime, and hardware support natively. Mixed-precision inference may store weights at low precision while accumulating at a higher precision to preserve stability.
+## Why it matters
+
+Numerical Precision affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Interpret model requirements and hardware compatibility.
+- Choose trade-offs between accuracy, speed, and memory.
+
+## Example
+
+BF16 retains a wide exponent range while using fewer mantissa bits than FP32, making it useful for many training and inference workloads.
 
 ## Trade-offs and limitations
 
-Lower precision can increase speed and reduce memory, but unsupported formats may fall back to slower conversion paths. A format with fewer bits may have a wider numerical range than another format because exponent and mantissa layouts differ.
+- Different formats with the same bit width can have different range and accuracy.
+- Hardware support determines whether a format is efficient or emulated.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Treating BF16 and FP16 as interchangeable.
-- Assuming stored precision equals compute precision.
-- Ignoring accumulation precision in stability-sensitive operations.
-- Comparing “8-bit” formats without identifying the actual representation.
+## Practical checklist
+
+- What problem is Numerical Precision expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Inference and Serving](../../)
 - [Quantization](../quantization/)
 - [Model Formats](../model-formats/)
-- [KV Cache](../kv-cache/)

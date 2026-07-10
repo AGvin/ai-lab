@@ -6,38 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Function calling is a structured form of tool calling in which a model selects a named function and supplies arguments that match a declared schema.
+A structured tool-calling interface where model output selects a function and arguments.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-The word “function” describes the interface exposed to the model; the underlying implementation may call an API, queue a job, query a database, or invoke local code. The host application remains responsible for authentication, authorization, validation, execution, and error handling.
+A structured tool-calling interface where model output selects a function and arguments. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Extract typed arguments from natural-language requests.
-- Route requests to application capabilities.
-- Connect chat interfaces to business operations.
-- Produce structured data for a workflow step.
-- Let a model choose among a small set of approved actions.
+- Function calling is a structured form of tool calling modeled as selecting a named function and producing arguments.
+- Providers may constrain the model to a supplied function schema and return the selection separately from ordinary text.
+- The host application remains responsible for execution and error handling.
 
-## Design guidance
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-Use descriptive names and precise parameter descriptions. Prefer enumerations and typed fields over free-form strings. Keep functions narrow enough that permission checks are meaningful. Return compact, structured results that distinguish success, failure, and partial completion.
+## Why it matters
+
+Function Calling affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Build typed integrations with APIs and internal services.
+- Reduce parsing ambiguity compared with extracting commands from free-form prose.
+
+## Example
+
+An assistant returns a `create_calendar_event` call with title and timestamps, but the application asks for confirmation before writing.
 
 ## Trade-offs and limitations
 
-A valid function-call object does not mean the intent is safe or correct. Function schemas can become large, and many similar functions may reduce selection accuracy. Provider implementations differ in how strictly they enforce schemas.
+- Function schemas can be provider-specific and may not express all authorization rules.
+- The model can choose the wrong function or invent semantically incorrect arguments.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Treating the model as the authorization layer.
-- Passing generated file paths, SQL, or commands directly to execution.
-- Failing to report tool errors back to the workflow.
-- Confusing a proposed function call with completed execution.
+## Practical checklist
+
+- What problem is Function Calling expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Agents and Automation](../../)
-- [Tool Calling](../tool-calling/)
-- [Structured Output](../../../model-usage-and-generation/sub/structured-output/)
-- [Guardrails](../../../safety-privacy-and-reliability/sub/guardrails/)
+- [Failure Recovery](../failure-recovery/)
+- [Task Decomposition](../task-decomposition/)

@@ -6,34 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Outpainting extends an image beyond its original boundaries by generating new surrounding content.
+Extending an image beyond its original boundaries.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-The original image provides visual context while a larger canvas contains masked empty regions. The model continues textures, perspective, lighting, and scene content into the new area. Overlap between original and generated regions helps avoid visible seams.
+Extending an image beyond its original boundaries. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Change image aspect ratio.
-- Expand backgrounds for banners or layouts.
-- Reveal more environment around a subject.
-- Reframe a composition without cropping.
-- Create panoramic extensions.
+- Outpainting extends the canvas and asks the model to generate content outside the original boundary.
+- The original image provides visual context while prompts or controls guide the new area.
+- Overlap and gradual expansion help maintain continuity.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Outpainting affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Change aspect ratio, reveal more background, or create space for layout text.
+- Extend artwork beyond its original crop.
+
+## Example
+
+A square illustration is expanded horizontally to create a banner while preserving the central subject.
 
 ## Trade-offs and limitations
 
-The model may invent inconsistent geometry or repeat objects. Large extensions have less original context and are more likely to drift. Faces and central subjects near the boundary may be altered unless protected carefully.
+- Repeated expansion can accumulate style and perspective drift.
+- New areas may invent inconsistent objects or lighting.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Extending too much in a single pass.
-- Providing no prompt for the new scene area.
-- Using a hard mask boundary without overlap.
-- Expecting hidden parts of real objects to be reconstructed factually.
+## Practical checklist
+
+- What problem is Outpainting expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Multimodal and Generative Media](../../)
-- [Inpainting](../inpainting/)
-- [Image-to-Image](../image-to-image/)
-- [Image Generation](../image-generation/)
+- [Text-to-Image](../text-to-image/)
+- [Image Embeddings](../image-embeddings/)

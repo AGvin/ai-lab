@@ -6,30 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Self-attention is attention in which queries, keys, and values are derived from positions in the same sequence or representation set.
+Attention computed between positions within the same input sequence.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Each position can combine information from other positions according to learned relevance scores. In causal language models, masking prevents a token from attending to future tokens during generation. Bidirectional encoders may allow attention in both directions.
+Attention computed between positions within the same input sequence. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical significance
+## How it works
 
-Self-attention lets models connect pronouns with earlier nouns, relate code references across a function, or combine distant parts of a document. Multiple layers progressively transform these relationships into higher-level representations.
+- Self-attention derives queries, keys, and values from the same sequence of hidden representations.
+- Each token can therefore update its representation using information from other permitted positions in that sequence.
+- Causal self-attention restricts access to earlier positions, while bidirectional self-attention can use context on both sides.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Self-Attention affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Distinguish transformer sequence processing from cross-attention between separate inputs.
+- Understand why causal and encoder-style models have different visibility rules.
+
+## Example
+
+In a sentence encoder, the representation of a word can incorporate both preceding and following words through bidirectional self-attention.
 
 ## Trade-offs and limitations
 
-Full self-attention becomes expensive as sequence length grows. Sparse, sliding-window, or grouped mechanisms reduce cost but change which positions interact directly. Attention may also focus on statistically useful patterns that are not semantically trustworthy.
+- The mechanism can be computationally expensive for long sequences.
+- It does not itself provide persistent memory beyond the active context.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Forgetting the difference between causal and bidirectional masking.
-- Assuming every token attends equally to the full advertised context.
-- Treating attention maps as definitive interpretability.
-- Confusing self-attention with cross-attention between modalities or sequences.
+## Practical checklist
+
+- What problem is Self-Attention expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Foundations and Architecture](../../)
-- [Attention](../attention/)
-- [Transformers](../transformers/)
-- [Context Window](../../../model-usage-and-generation/sub/context-window/)
+- [Neural Networks](../neural-networks/)
+- [Encoder and Decoder Architectures](../encoder-decoder/)

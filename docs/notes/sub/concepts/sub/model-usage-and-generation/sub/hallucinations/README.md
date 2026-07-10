@@ -6,41 +6,54 @@ ai_content:
   l10n: true
 -->
 
-A hallucination is unsupported, incorrect, or fabricated model output presented in a plausible form.
+Unsupported or incorrect model output presented in a plausible form.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Language models generate likely token sequences; they do not automatically verify every statement against a trusted source. Hallucinations can appear as invented facts, citations, API methods, quotations, file paths, numerical results, or claims that overstate uncertain evidence.
+Unsupported or incorrect model output presented in a plausible form. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Common causes
+## How it works
 
-- The requested information is absent, ambiguous, or outside the model's reliable knowledge.
-- The prompt encourages an answer even when evidence is missing.
-- Retrieved context is incomplete, outdated, or contradictory.
-- The model is asked for exact identifiers or quotations without access to a source.
-- A long context hides the most relevant evidence.
+- A hallucination occurs when generated content is unsupported, incorrect, or invented while remaining linguistically plausible.
+- It can arise from missing knowledge, ambiguous context, weak retrieval, conflicting sources, sampling, or pressure to answer instead of abstaining.
+- Detection requires evidence checks, tool verification, deterministic validation, or evaluation against known answers.
 
-## Mitigation
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-- Use retrieval, tools, or authoritative data sources for verifiable claims.
-- Require citations that can be checked, not merely citation-shaped text.
-- Ask the model to distinguish evidence, inference, and uncertainty.
-- Validate calculations, URLs, code, and structured values with deterministic systems.
-- Evaluate hallucination rates on representative tasks.
+## Why it matters
+
+Hallucinations affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Design refusal and uncertainty behavior.
+- Decide where citations, retrieval, calculators, code execution, or human review are required.
+
+## Example
+
+A model may invent an API method that follows a library naming pattern even though the method does not exist.
 
 ## Trade-offs and limitations
 
-Lower temperature may improve consistency but does not guarantee truth. RAG can reduce unsupported answers but may introduce retrieval errors or poisoned evidence. Refusal-heavy policies can lower hallucinations while reducing answer coverage.
+- Lower temperature does not eliminate hallucinations.
+- A confident style or detailed explanation is not evidence of correctness.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Assuming confident wording indicates correctness.
-- Treating a valid JSON response as verified data.
-- Asking the model to “never hallucinate” without supplying evidence or validation.
+## Practical checklist
+
+- What problem is Hallucinations expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Model Usage and Generation](../../)
-- [Grounding](../../../retrieval-and-knowledge/sub/grounding/)
-- [Citations](../../../retrieval-and-knowledge/sub/citations/)
-- [Evals](../../../evaluation-and-operations/sub/evals/)
+- [Structured Output](../structured-output/)
+- [Few-Shot Prompting](../few-shot-prompting/)

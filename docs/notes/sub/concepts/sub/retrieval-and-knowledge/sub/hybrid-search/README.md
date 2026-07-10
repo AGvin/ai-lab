@@ -6,37 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Hybrid search combines semantic vector retrieval with lexical retrieval so results benefit from both meaning and exact-term matching.
+Retrieval that combines semantic and lexical search signals.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-The two retrievers produce candidate lists or scores that must be merged. Common methods include weighted score fusion, reciprocal rank fusion, or retrieving separate candidate sets and passing them to a reranker. The best method depends on whether exact identifiers, natural-language meaning, or both are important.
+Retrieval that combines semantic and lexical search signals. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Enterprise document search with technical terms.
-- Code and log retrieval.
-- Product catalogs containing descriptions and SKUs.
-- RAG systems that must handle both questions and exact references.
+- Hybrid search combines lexical scores with vector-similarity scores.
+- Results may be merged by weighted scoring, reciprocal-rank fusion, or a reranking stage.
+- Metadata filters can be applied before or after candidate generation depending on the index.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Hybrid Search affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Retrieve both semantic paraphrases and exact model names, error messages, or configuration keys.
+- Improve robustness for mixed natural-language and technical queries.
+
+## Example
+
+A query containing an exact error code and a natural-language symptom can benefit from BM25 plus vector retrieval.
 
 ## Trade-offs and limitations
 
-Hybrid retrieval adds indexing, tuning, and evaluation complexity. Raw vector and lexical scores are usually on different scales and should not be added without normalization or a rank-based fusion method. Poor fusion can reduce the strengths of both systems.
+- Score calibration and fusion settings need evaluation on the real corpus.
+- Combining two weak retrievers does not automatically produce a strong system.
 
-## Good practice
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-Evaluate lexical-only, semantic-only, and hybrid baselines separately. Inspect which query types improve or regress. Apply metadata and permission filters consistently to both retrieval paths.
+## Practical checklist
 
-## Common mistakes
-
-- Using an arbitrary 50/50 score weight without testing.
-- Returning duplicate chunks from both retrievers.
-- Evaluating only final answer quality and hiding retrieval failures.
-- Applying different access-control rules to each index.
+- What problem is Hybrid Search expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Retrieval and Knowledge](../../)
 - [Semantic Search](../semantic-search/)
-- [Keyword Search](../keyword-search/)
-- [Reranking](../reranking/)
+- [Grounding](../grounding/)

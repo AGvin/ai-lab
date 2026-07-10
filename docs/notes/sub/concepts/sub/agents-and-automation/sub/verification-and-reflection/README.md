@@ -6,34 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Verification checks whether a result satisfies evidence and acceptance criteria. Reflection is a model-driven review of the approach, assumptions, or likely errors before continuing.
+Checking results, identifying errors, and revising an approach when needed.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-The two concepts are related but not equivalent. Verification should use objective checks where possible: tests, schemas, calculations, source comparison, or permission rules. Reflection is useful for discovering omissions or proposing revisions, but it remains another model output and can repeat the original mistake.
+Checking results, identifying errors, and revising an approach when needed. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Run tests after generating code.
-- Compare claims against retrieved evidence.
-- Validate structured output against a schema and domain rules.
-- Ask a second pass to identify missing cases or contradictions.
-- Require human review for high-impact changes.
+- Verification checks outputs against tests, schemas, sources, constraints, or expected state.
+- Reflection uses observed failures to reconsider assumptions or revise a plan.
+- Reliable systems prefer external checks over asking the same model whether its answer looks correct.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Verification and Reflection affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Catch code errors, missing requirements, unsupported claims, and incomplete workflows.
+- Improve iterative tasks where the first attempt is unlikely to be final.
+
+## Example
+
+After editing documentation, an agent validates every internal link and compares the branch against main for unrelated changes.
 
 ## Trade-offs and limitations
 
-Additional review increases latency and cost. Self-review is correlated with the original generation and is weaker than independent evidence. Repeated reflection can also cause unnecessary changes to an already correct result.
+- Self-critique can repeat the original mistake.
+- Verification adds cost and may require independent tools or models.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Using “check your work” as the only validation.
-- Treating a second model answer as independent proof.
-- Failing to define what success means.
-- Re-running generation instead of inspecting deterministic test failures.
+## Practical checklist
+
+- What problem is Verification and Reflection expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Agents and Automation](../../)
 - [Planning](../planning/)
-- [Evals](../../../evaluation-and-operations/sub/evals/)
 - [Human in the Loop](../human-in-the-loop/)

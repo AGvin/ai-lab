@@ -6,41 +6,54 @@ ai_content:
   l10n: true
 -->
 
-The context window is the maximum tokenized information a model can consider during one request, including instructions, conversation history, retrieved documents, tool results, and generated output.
+The bounded amount of tokenized information a model can consider during one request.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-A larger advertised context window allows more material to be supplied, but it does not guarantee that every detail will be used equally well. Relevant facts can be diluted by unrelated content, repeated instructions, or information placed far from the current question. Effective context is therefore both a capacity constraint and an information-selection problem.
+The bounded amount of tokenized information a model can consider during one request. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## What occupies context
+## How it works
 
-- System and developer instructions.
-- User and assistant conversation history.
-- Tool schemas, tool results, files, images, and retrieved chunks.
-- The model's planned or generated completion.
+- The context window contains the tokenized system instructions, conversation history, supplied documents, tool results, and usually the generated output budget.
+- A model may support a large nominal limit while using information near the beginning, middle, and end with different reliability.
+- Longer context also increases prompt-processing time and KV-cache memory, especially with concurrent requests.
 
-## Practical use
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-- Reserve output space instead of filling the entire window with input.
-- Summarize or remove stale conversation history.
-- Retrieve only evidence relevant to the current task.
-- Place critical constraints clearly and repeat them only when necessary.
-- Test long-context behavior with realistic documents rather than relying only on the published limit.
+## Why it matters
+
+Context Window affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Plan how much conversation history, code, or retrieved evidence can be sent in one request.
+- Decide when to summarize, retrieve selectively, split a task, or use persistent external state.
+
+## Example
+
+A coding assistant may accept an entire repository snapshot but miss a requirement buried among unrelated files; targeted retrieval can be more reliable.
 
 ## Trade-offs and limitations
 
-Longer context generally increases memory use, processing time, and cost. Some runtimes use a larger KV cache as context grows. Models may also show degraded recall or instruction adherence near their practical limits.
+- Fitting text into the limit does not guarantee the model will attend to every detail.
+- Large contexts can increase latency and cost and may introduce more irrelevant or conflicting information.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Treating the context limit as a reliable working capacity.
-- Appending every available document instead of retrieving selectively.
-- Forgetting that the expected output also consumes tokens.
-- Assuming old chat messages remain available after truncation or summarization.
+## Practical checklist
+
+- What problem is Context Window expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Model Usage and Generation](../../)
 - [Tokens and Tokenization](../tokens-and-tokenization/)
-- [Context Caching](../../../inference-and-serving/sub/context-caching/)
-- [Chunking](../../../retrieval-and-knowledge/sub/chunking/)
+- [Prompting](../prompting/)

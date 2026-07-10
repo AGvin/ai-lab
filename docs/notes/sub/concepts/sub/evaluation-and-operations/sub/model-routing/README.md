@@ -6,38 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Model routing dynamically selects a model or configuration for each request according to task type, risk, cost, latency, or capability requirements.
+Selecting among models dynamically according to the request or operating policy.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-A router may use explicit rules, user choices, classifiers, confidence estimates, or staged escalation. Simple tasks go to a fast inexpensive model, while difficult or high-risk tasks use a stronger model or human review.
+Selecting among models dynamically according to the request or operating policy. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical patterns
+## How it works
 
-- Route images only to multimodal models.
-- Send extraction to a small structured-output model.
-- Escalate failed or low-confidence tasks.
-- Prefer local models for sensitive data.
-- Use a fallback provider during outages.
+- Model routing applies rules or a classifier to send each request to an appropriate model.
+- Signals can include task type, complexity, modality, privacy, budget, latency target, and prior failure.
+- Fallback logic handles unavailable or low-confidence results.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Model Routing affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Reduce cost while preserving quality for difficult requests.
+- Keep sensitive tasks local and route permitted tasks to hosted models.
+
+## Example
+
+Simple extraction goes to a fast model, while multi-file code analysis goes to a reasoning model.
 
 ## Trade-offs and limitations
 
-Routing adds classification errors and operational complexity. A cheap model may incorrectly judge a task as easy. Different models can produce inconsistent style, schemas, or safety behavior.
+- Misclassification can send a hard task to a weak model or expose data to the wrong provider.
+- Routing adds another component that needs evaluation and observability.
 
-## Good practice
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-Log routing decisions and outcomes. Evaluate the complete policy against a single-model baseline. Define hard capability constraints before cost optimization and prevent sensitive requests from crossing prohibited boundaries.
+## Practical checklist
 
-## Common mistakes
-
-- Routing only by prompt length.
-- Letting an untrusted prompt choose a privileged model or toolset.
-- Measuring cost reduction without quality regressions.
-- Omitting version and availability handling.
+- What problem is Model Routing expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
 - [Model Selection](../model-selection/)
-- [Fallback Models](../fallback-models/)
-- [Autonomy Levels](../../../agents-and-automation/sub/autonomy-levels/)
+- [Observability](../observability/)

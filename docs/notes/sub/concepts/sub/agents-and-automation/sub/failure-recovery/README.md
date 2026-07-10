@@ -6,35 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Failure recovery restores a workflow to a known safe state after model, tool, network, infrastructure, or validation failures.
+Restoring progress safely after tool, model, network, or workflow failures.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Recovery is broader than retrying. It may resume from a checkpoint, skip a non-critical step, switch to a fallback, compensate for a completed side effect, request human intervention, or stop safely with enough information for later continuation.
+Restoring progress safely after tool, model, network, or workflow failures. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical design
+## How it works
 
-- Persist checkpoints after meaningful completed stages.
-- Classify failures as transient, permanent, partial, or ambiguous.
-- Record which external effects definitely occurred.
-- Use compensating actions when rollback is impossible.
-- Preserve enough diagnostic context for operators.
-- Define terminal states instead of looping indefinitely.
+- Failure recovery records enough state to determine what completed and what remains.
+- The system may retry, resume, roll back, compensate, or hand control to a human.
+- Recovery logic should account for partial side effects and uncertain remote responses.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Failure Recovery affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Resume long-running workflows after process or service failures.
+- Avoid restarting completed expensive steps or repeating consequential actions.
+
+## Example
+
+If a deployment update succeeds but notification fails, the workflow records deployment completion and retries only the notification.
 
 ## Trade-offs and limitations
 
-Robust recovery adds workflow complexity and storage requirements. Distributed systems may not offer a single authoritative answer about whether a timed-out operation completed.
+- Rollback is impossible for some external actions.
+- Recovery paths are often less tested than normal execution paths.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Restarting the entire task after every error.
-- Losing state when the process exits.
-- Assuming all actions can be rolled back.
-- Continuing after validation failure without marking the result as unsafe.
+## Practical checklist
+
+- What problem is Failure Recovery expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Agents and Automation](../../)
-- [Retries](../retries/)
 - [Idempotency](../idempotency/)
-- [Fallback Models](../../../evaluation-and-operations/sub/fallback-models/)
+- [Function Calling](../function-calling/)

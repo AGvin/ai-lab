@@ -6,39 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Tool calling allows a model to select a registered external operation and produce arguments for that operation.
+A model selecting a registered external operation and producing arguments for its execution.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-The model does not execute the tool directly. It emits a structured request, the host application validates and executes it, and the result is returned to the model or workflow. This separation is essential because model output is untrusted input to the execution layer.
+A model selecting a registered external operation and producing arguments for its execution. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Typical flow
+## How it works
 
-1. The application exposes tool names, descriptions, and argument schemas.
-2. The model chooses a tool or responds without one.
-3. The application validates permissions and arguments.
-4. The tool runs in a controlled environment.
-5. The result is added to state or context.
-6. The model decides whether more work is required.
+- The application registers tools with names, descriptions, and argument schemas.
+- The model selects a tool and proposes structured arguments instead of directly performing the external action.
+- Application code authorizes, validates, executes, and returns the result to the model.
 
-## Practical use
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-Tool calling connects models to search, databases, calendars, email, source control, code execution, and internal services. Tools should be narrow, clearly named, and designed around business capabilities rather than unrestricted shell access.
+## Why it matters
+
+Tool Calling affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Connect models to search, databases, calendars, code execution, or business APIs.
+- Separate natural-language decisions from deterministic side effects.
+
+## Example
+
+A model chooses `searchIssues` and supplies a repository and query, while the host checks access before calling GitHub.
 
 ## Trade-offs and limitations
 
-Tool descriptions consume context, and overlapping tools can confuse selection. Even valid arguments may be semantically wrong or unsafe. Network failures and partial side effects require explicit recovery logic.
+- A valid tool call can still be inappropriate or unsafe.
+- Tool descriptions, schemas, and returned data become part of the model’s attack surface.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Executing model arguments without validation.
-- Exposing powerful generic tools instead of bounded operations.
-- Returning huge unfiltered tool results to the model.
-- Assuming a tool call means the requested action succeeded.
+## Practical checklist
+
+- What problem is Tool Calling expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Agents and Automation](../../)
-- [Function Calling](../function-calling/)
-- [Least Privilege](../../../safety-privacy-and-reliability/sub/least-privilege/)
-- [Structured Output](../../../model-usage-and-generation/sub/structured-output/)
+- [Agentic Workflows](../agentic-workflows/)
+- [Agent State](../agent-state/)

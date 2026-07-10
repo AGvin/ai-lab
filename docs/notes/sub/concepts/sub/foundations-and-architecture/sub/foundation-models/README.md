@@ -6,38 +6,54 @@ ai_content:
   l10n: true
 -->
 
-A foundation model is a broadly trained model that can support many downstream tasks through prompting, retrieval, tools, fine-tuning, or adapters.
+Large reusable models trained on broad data and adapted to many downstream tasks.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Instead of training a separate model from scratch for every task, a foundation model learns reusable representations from large and diverse data. Language models, vision-language models, and general image-generation models are common examples.
+Large reusable models trained on broad data and adapted to many downstream tasks. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Adaptation methods
+## How it works
 
-- Zero-shot and few-shot prompting.
-- System prompts and structured outputs.
-- Retrieval-Augmented Generation.
-- Tool calling and agent workflows.
-- Fine-tuning, LoRA, or other adapters.
+- A foundation model is trained broadly enough to support many downstream tasks rather than one narrowly specified application.
+- The same base model can be adapted through prompting, retrieval, tools, fine-tuning, or task-specific heads.
+- Its practical behavior depends on the model weights together with the tokenizer, context handling, inference runtime, and system-level controls.
 
-## Practical use
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-Foundation models reduce the cost of building new applications because one model can support summarization, extraction, coding, search, generation, and many other tasks. Selection should consider capability, license, privacy, deployment options, and evaluation results.
+## Why it matters
+
+Foundation Models affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Choose a reusable base model for assistants, agents, extraction, coding, or multimodal workflows.
+- Decide whether prompting, RAG, adapters, or fine-tuning is the appropriate adaptation layer.
+
+## Example
+
+A general language model can serve as the base for a coding assistant, documentation search tool, and customer-support agent with different surrounding workflows.
 
 ## Trade-offs and limitations
 
-Broad capability does not guarantee domain accuracy. Pretraining data may be outdated, biased, incomplete, or legally restricted. Large models also require substantial inference resources or provider dependence.
+- Broad capability does not imply equal quality across languages, domains, or tasks.
+- Base-model licenses and provider restrictions can constrain deployment and derivative work.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Assuming a general model needs no task-specific evaluation.
-- Fine-tuning before testing prompting and retrieval.
-- Ignoring model and dataset licensing.
-- Treating the model as a complete application without controls or tools.
+## Practical checklist
+
+- What problem is Foundation Models expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Foundations and Architecture](../../)
+- [Dense and Sparse Models](../dense-and-sparse-models/)
 - [Large Language Models](../large-language-models/)
-- [Multimodal Models](../multimodal-models/)
-- [Fine-Tuning](../../../training-and-adaptation/sub/fine-tuning/)

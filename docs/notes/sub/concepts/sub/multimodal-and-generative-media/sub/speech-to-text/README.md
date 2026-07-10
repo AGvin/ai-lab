@@ -6,38 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Speech-to-text converts spoken audio into written transcripts and may also identify language, timestamps, speakers, or confidence values.
+Converting spoken audio into written text.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-An automatic speech-recognition system processes acoustic features and predicts text tokens. Accuracy depends on language, accent, microphone quality, noise, overlapping speakers, domain vocabulary, and audio compression.
+Converting spoken audio into written text. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Meeting and interview transcription.
-- Voice interfaces and commands.
-- Subtitle generation.
-- Search and summarization of recordings.
-- Accessibility workflows.
+- Speech-to-text models convert audio features into text tokens.
+- Pipelines may include voice activity detection, language identification, diarization, and punctuation.
+- Streaming systems decode partial audio while the speaker continues.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Speech-to-Text affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Transcribe meetings, calls, videos, and voice commands.
+- Create searchable text for downstream summarization or RAG.
+
+## Example
+
+A meeting recording is transcribed with timestamps and speaker labels before summarization.
 
 ## Trade-offs and limitations
 
-Transcripts can omit punctuation, confuse names, or produce plausible words for unclear audio. Speaker diarization and word-level timestamps are separate capabilities and may have different error rates.
+- Noise, overlapping speakers, accents, and domain terminology reduce accuracy.
+- Transcripts may contain confident substitutions that require review.
 
-## Good practice
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-Preserve the original audio for verification. Provide domain vocabulary where supported. Mark low-confidence sections and review names, numbers, dates, and consequential statements.
+## Practical checklist
 
-## Common mistakes
-
-- Treating a transcript as a verbatim legal record.
-- Discarding audio after transcription.
-- Ignoring consent and privacy requirements.
-- Summarizing before correcting critical transcription errors.
+- What problem is Speech-to-Text expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Multimodal and Generative Media](../../)
+- [Image Embeddings](../image-embeddings/)
 - [Text-to-Speech](../text-to-speech/)
-- [Multimodal Context](../multimodal-context/)
-- [Data Privacy](../../../safety-privacy-and-reliability/sub/data-privacy/)

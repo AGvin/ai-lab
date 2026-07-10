@@ -6,37 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Supervised Fine-Tuning, or SFT, trains a model on examples that pair an input or instruction with a desired output.
+Fine-tuning on labeled examples that pair inputs with desired outputs.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-The model learns to assign higher probability to target responses supplied in the dataset. For chat models, examples usually include roles, instructions, context, and assistant answers formatted with the model's chat template.
+Fine-tuning on labeled examples that pair inputs with desired outputs. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Convert a base model into an instruction-following model.
-- Teach task-specific formats and terminology.
-- Improve behavior on curated domain examples.
-- Prepare a model before preference optimization.
+- SFT trains on explicit input-output examples and minimizes error against the desired output tokens or labels.
+- Data formatting and masking determine which tokens contribute to the loss.
+- High-quality examples establish instruction following, style, and task patterns.
 
-## Dataset requirements
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-High-quality, diverse examples are more valuable than large volumes of repetitive text. Include realistic failures, edge cases, and desired uncertainty behavior. Remove secrets, accidental personal data, and incorrect synthetic answers.
+## Why it matters
+
+Supervised Fine-Tuning affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Teach consistent task responses and domain-specific formats.
+- Prepare an instruction-following model before preference optimization.
+
+## Example
+
+A dataset pairs bug reports with concise triage summaries and recommended next actions.
 
 ## Trade-offs and limitations
 
-SFT teaches imitation of examples, not independent factual verification. It can overfit style, memorize examples, or reduce performance outside the training distribution. The model may also learn undesirable patterns hidden in seemingly correct answers.
+- The model can imitate errors and biases in the demonstrations.
+- Coverage gaps remain when deployment inputs differ from training examples.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Training on raw documents instead of instruction-response examples for an instruction task.
-- Using generated answers without validation.
-- Mixing incompatible chat templates.
-- Evaluating on near-duplicates of training data.
+## Practical checklist
+
+- What problem is Supervised Fine-Tuning expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Training and Adaptation](../../)
-- [Instruction Tuning](../instruction-tuning/)
-- [Datasets](../datasets/)
-- [Preference Optimization](../preference-optimization/)
+- [QLoRA](../qlora/)
+- [Adapters](../adapters/)

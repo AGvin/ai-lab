@@ -6,33 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Distillation trains a smaller or simpler student model to reproduce useful behavior from a stronger teacher model.
+Training a smaller or simpler model to imitate a stronger teacher model.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-The teacher may provide probability distributions, generated answers, reasoning examples, labels, or synthetic tasks. The student learns from these signals and may retain part of the teacher's capability at lower inference cost.
+Training a smaller or simpler model to imitate a stronger teacher model. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Create smaller models for local or edge deployment.
-- Transfer task behavior from an expensive model.
-- Generate training labels where human annotation is limited.
-- Specialize a compact model for a narrow workflow.
+- Distillation trains a student model to imitate outputs, probabilities, representations, or reasoning behavior from a teacher.
+- The student is usually smaller, faster, or specialized for a narrower deployment.
+- Training can combine teacher supervision with original labels.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Distillation affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Compress capabilities into a cheaper model.
+- Create specialized models for classification, extraction, or edge deployment.
+
+## Example
+
+A small classifier learns from a large model’s labels and confidence scores on a domain corpus.
 
 ## Trade-offs and limitations
 
-The student also inherits teacher errors and biases. Distillation cannot preserve every capability when model capacity is reduced. Generated training data may violate provider terms or model licenses, so provenance and usage rights matter.
+- The student inherits teacher errors and cannot reproduce all capacity.
+- Teacher-generated data may hide uncertainty or diversity.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Evaluating only on teacher-generated examples.
-- Treating the teacher as ground truth.
-- Ignoring data contamination and licensing.
-- Expecting a much smaller student to match every teacher capability.
+## Practical checklist
+
+- What problem is Distillation expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Training and Adaptation](../../)
-- [Synthetic Data](../synthetic-data/)
-- [Model Selection](../../../evaluation-and-operations/sub/model-selection/)
-- [Quantization](../../../inference-and-serving/sub/quantization/)
+- [DPO](../dpo/)
+- [Pruning](../pruning/)

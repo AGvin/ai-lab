@@ -6,34 +6,54 @@ ai_content:
   l10n: true
 -->
 
-ControlNet conditions diffusion generation with structural information such as edges, depth, pose, segmentation, line art, or surface normals.
+Conditioning diffusion models with structural controls such as edges, depth, or pose.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-A control model processes a structural map and injects its guidance into the diffusion network. This lets the prompt determine appearance while the control signal constrains layout or geometry. Different ControlNet models are trained for different map types and base-model families.
+Conditioning diffusion models with structural controls such as edges, depth, or pose. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Preserve pose or composition from a reference.
-- Convert sketches or line art into rendered images.
-- Maintain room geometry using depth maps.
-- Follow edge structure while changing style.
-- Generate consistent layouts from segmentation maps.
+- ControlNet adds a trainable conditioning branch to a diffusion model while preserving the base model.
+- It accepts structural maps such as edges, depth, pose, segmentation, or line art.
+- Control weight and schedule determine how strongly generation follows the structure.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+ControlNet affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Preserve pose, composition, perspective, or outlines during image generation.
+- Convert sketches, depth maps, or reference poses into controlled outputs.
+
+## Example
+
+An OpenPose control map keeps a person’s body position while the prompt changes clothing and style.
 
 ## Trade-offs and limitations
 
-Strong control can reduce creativity or conflict with the prompt. Weak control may not preserve structure. Preprocessor errors become generation constraints, and mismatched model families can produce poor results.
+- Control maps can contain errors and constrain creativity too strongly.
+- Compatibility depends on the base model family and control model.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Using a control model built for another base model.
-- Applying excessive control strength throughout all denoising steps.
-- Treating a noisy depth or pose map as accurate geometry.
-- Combining several controls without balancing their influence.
+## Practical checklist
+
+- What problem is ControlNet expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Multimodal and Generative Media](../../)
-- [Diffusion Models](../diffusion-models/)
-- [Image-to-Image](../image-to-image/)
-- [Latent Space](../latent-space/)
+- [Inpainting](../inpainting/)
+- [Multimodal Context](../multimodal-context/)

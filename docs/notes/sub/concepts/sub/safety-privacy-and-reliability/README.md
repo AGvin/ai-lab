@@ -8,6 +8,11 @@ ai_content:
 
 Concepts for controlling model behavior, protecting data, and reducing operational risk in AI systems.
 
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
+
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
 ## Essential

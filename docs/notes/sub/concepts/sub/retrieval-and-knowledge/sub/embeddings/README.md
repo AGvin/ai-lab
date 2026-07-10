@@ -6,38 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Embeddings are numerical vectors that represent the semantic or structural properties of text, images, audio, users, products, or other objects.
+Numerical representations that place semantically related items near each other in vector space.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-An embedding model maps an input into a fixed-length vector. Items with similar meaning or usage are usually placed closer together according to a distance measure such as cosine similarity or dot product. The vector itself is not a human-readable explanation; it is a learned representation optimized for particular tasks and training data.
+Numerical representations that place semantically related items near each other in vector space. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Semantic document and code search.
-- Retrieval-Augmented Generation.
-- Clustering and duplicate detection.
-- Recommendation and similarity matching.
-- Classification using nearest examples or lightweight models.
+- An embedding model converts an item into a fixed-length numeric vector.
+- Similarity metrics such as cosine similarity or dot product estimate how close two vectors are in the learned representation space.
+- Embedding models, vector dimensions, normalization, and input prefixes must remain compatible between indexing and querying.
 
-## Design considerations
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-Use the same embedding model and preprocessing for indexed documents and incoming queries. Record the model version and vector dimension. Evaluate retrieval on domain-specific queries, because a generally strong embedding model may perform poorly on product codes, legal terminology, or source code.
+## Why it matters
+
+Embeddings affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Semantic search, clustering, duplicate detection, recommendations, and retrieval.
+- Compare differently worded text or cross-modal items when the embedding model supports them.
+
+## Example
+
+Questions about reducing GPU memory can retrieve a passage about four-bit quantization even when the wording differs.
 
 ## Trade-offs and limitations
 
-Embeddings compress information and can lose exact wording, dates, identifiers, or negation. Changing the embedding model normally requires re-embedding the index. Similarity scores are not calibrated probabilities and should not be interpreted as confidence without evaluation.
+- Vector closeness is model-dependent and does not prove factual relevance.
+- Embeddings can lose exact identifiers, dates, negation, or access-control context unless combined with other signals.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Mixing vectors from incompatible embedding models.
-- Using semantic retrieval for exact IDs without lexical search.
-- Assuming a high similarity score proves factual relevance.
-- Ignoring language, domain, and chunk-size effects.
+## Practical checklist
+
+- What problem is Embeddings expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Retrieval and Knowledge](../../)
-- [Vector Search](../vector-search/)
-- [Semantic Search](../semantic-search/)
-- [RAG](../rag/)
+- [RAG (Retrieval-Augmented Generation)](../rag/)
+- [Chunking](../chunking/)

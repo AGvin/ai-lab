@@ -6,42 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Structured output is model-generated data that follows a defined machine-readable format, such as JSON, a JSON Schema, XML, CSV, or a typed function-call argument object.
+Model output constrained to a machine-readable structure such as JSON or a schema.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Applications often need values that can be parsed and validated rather than prose that merely looks structured. Reliable structured output combines a clear schema, model or decoder support, validation, and error handling. The schema describes shape and types; it does not guarantee that the values are factually correct.
+Model output constrained to a machine-readable structure such as JSON or a schema. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Extract entities, classifications, or action parameters.
-- Produce inputs for APIs and workflow steps.
-- Enforce required fields and enumerated values.
-- Separate machine-readable results from user-facing explanations.
-- Validate output before executing any consequential action.
+- Structured-output systems define an expected object shape, often with JSON Schema or a provider-specific schema interface.
+- Some runtimes only instruct the model to emit JSON, while stronger implementations constrain decoding so invalid structures cannot be produced.
+- The application still validates semantic rules such as allowed values, cross-field consistency, and authorization.
 
-## Implementation considerations
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-- Prefer native schema-constrained generation when the provider supports it.
-- Keep schemas small and avoid deeply ambiguous unions.
-- Define optional fields intentionally instead of accepting arbitrary missing data.
-- Reject or repair invalid output through a bounded retry policy.
-- Apply domain validation after syntax validation, such as date ranges or permitted identifiers.
+## Why it matters
+
+Structured Output affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Integrate model output with APIs, databases, workflows, and typed application code.
+- Reduce fragile parsing of prose for extraction, classification, and tool arguments.
+
+## Example
+
+An extraction workflow can require `{title, date, risks[]}` to validate against a schema before the data enters a project tracker.
 
 ## Trade-offs and limitations
 
-Strict schemas improve integration reliability but can make nuanced answers harder to represent. Large schemas consume context and may reduce model accuracy. A syntactically valid object may still contain invented IDs, unsupported claims, or unsafe values.
+- Syntactically valid JSON can still contain incorrect or fabricated values.
+- Complex schemas can increase latency, failures, or provider-specific coupling.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Parsing free-form prose with fragile regular expressions.
-- Executing generated arguments without validation.
-- Treating schema compliance as factual verification.
-- Requesting both unrestricted prose and strict JSON in the same output channel.
+## Practical checklist
+
+- What problem is Structured Output expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Model Usage and Generation](../../)
-- [Constrained Generation](../constrained-generation/)
-- [Function Calling](../../../agents-and-automation/sub/function-calling/)
-- [Guardrails](../../../safety-privacy-and-reliability/sub/guardrails/)
+- [System Prompts](../system-prompts/)
+- [Hallucinations](../hallucinations/)

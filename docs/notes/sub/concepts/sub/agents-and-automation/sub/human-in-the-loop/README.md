@@ -6,38 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Human in the loop means that selected workflow decisions or actions require human review, input, approval, or correction.
+Requiring human review, approval, or intervention at selected workflow points.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Human involvement should be placed at meaningful control points rather than added as a vague final review. Approval is especially valuable before irreversible, financial, legal, public, security-sensitive, or high-impact actions.
+Requiring human review, approval, or intervention at selected workflow points. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Common patterns
+## How it works
 
-- Approve a proposed plan before execution.
-- Review generated code or document changes before publication.
-- Resolve low-confidence classifications.
-- Confirm recipients, amounts, or permissions before an external action.
-- Escalate repeated failures or policy conflicts.
+- Human-in-the-loop design inserts review, approval, correction, or escalation points into an automated workflow.
+- The system should present enough evidence and context for the person to make the decision.
+- Approval state must be explicit and bound to the exact action or artifact being approved.
 
-## Design guidance
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-Show the reviewer the evidence, proposed action, expected effect, and known uncertainty. Make approve, reject, and modify paths explicit. Preserve the decision in workflow state and prevent the model from bypassing it.
+## Why it matters
+
+Human in the Loop affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Control merges, deployments, payments, messages, deletions, or other consequential actions.
+- Resolve ambiguity that cannot be safely automated.
+
+## Example
+
+An agent may prepare a pull request automatically but require the repository owner to approve merge.
 
 ## Trade-offs and limitations
 
-Human review slows throughput and can become a rubber-stamp process when alerts are too frequent or poorly explained. Reviewers may also lack the context needed to detect subtle errors.
+- Poorly placed approvals create fatigue and become rubber stamps.
+- A human cannot meaningfully review hidden or overly complex state.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Requesting approval after the action has already occurred.
-- Showing only a model summary instead of source evidence.
-- Treating silence or timeout as approval.
-- Using humans to compensate for missing deterministic validation.
+## Practical checklist
+
+- What problem is Human in the Loop expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Agents and Automation](../../)
-- [Autonomy Levels](../autonomy-levels/)
-- [Least Privilege](../../../safety-privacy-and-reliability/sub/least-privilege/)
 - [Verification and Reflection](../verification-and-reflection/)
+- [Idempotency](../idempotency/)

@@ -8,6 +8,11 @@ ai_content:
 
 Concepts for selecting, testing, observing, and operating AI systems under real quality, cost, and reliability constraints.
 
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
+
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
 ## Essential

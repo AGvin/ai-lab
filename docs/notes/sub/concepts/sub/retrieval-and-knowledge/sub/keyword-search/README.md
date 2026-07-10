@@ -6,38 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Keyword search retrieves documents using lexical evidence: terms, phrases, field matches, and statistical importance of words in the corpus.
+Lexical retrieval based on terms that appear in the source text.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Lexical retrieval is strong when exact wording matters. It can find product codes, API names, error messages, quotations, and domain-specific terminology that semantic models may blur. Search engines commonly apply tokenization, stemming, field weights, and ranking functions such as BM25.
+Lexical retrieval based on terms that appear in the source text. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Exact identifiers and technical strings.
-- Legal citations, version numbers, and named entities.
-- Search with required or excluded terms.
-- Filtering by structured document fields.
-- Providing the lexical half of hybrid retrieval.
+- Keyword search matches terms or normalized variants that occur in indexed text.
+- Inverted indexes map terms to documents and support ranking, phrase queries, fields, and filters.
+- Tokenization, stemming, stop-word behavior, and analyzer configuration affect which matches are found.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Keyword Search affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Find exact names, identifiers, API methods, version strings, and error messages.
+- Provide a lexical component for hybrid retrieval.
+
+## Example
+
+Searching for `IndexOutOfBoundsException` is usually more reliable lexically than through semantic similarity alone.
 
 ## Trade-offs and limitations
 
-Keyword search may fail when the query uses different wording from the source. Stemming and analyzers can also damage exact identifiers. A query with common terms may return many superficially matching results.
+- It can miss relevant passages expressed with different wording.
+- Poor analyzers can break code symbols, multilingual text, or product identifiers.
 
-## Good practice
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-Use field-aware indexing and preserve non-analyzed fields for exact matches. Support phrase queries where word order matters. Measure both precision and recall with real queries instead of tuning only on a few examples.
+## Practical checklist
 
-## Common mistakes
-
-- Applying aggressive stemming to codes or names.
-- Assuming keyword frequency equals answer relevance.
-- Ignoring synonyms and spelling variation.
-- Replacing lexical retrieval entirely with embeddings.
+- What problem is Keyword Search expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Retrieval and Knowledge](../../)
-- [BM25](../bm25/)
-- [Hybrid Search](../hybrid-search/)
-- [Metadata Filtering](../metadata-filtering/)
+- [Vector Databases](../vector-databases/)
+- [Reranking](../reranking/)

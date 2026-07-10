@@ -6,36 +6,54 @@ ai_content:
   l10n: true
 -->
 
-QLoRA adapts a model with LoRA while keeping the frozen base model in a low-bit quantized representation during training.
+LoRA-based adaptation performed with a quantized base model to reduce memory use.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-The base weights are loaded in a memory-efficient quantized form, while LoRA parameters and selected computations use higher precision. This substantially lowers memory requirements compared with full-precision fine-tuning and can make large-model adaptation possible on a single high-memory GPU.
+LoRA-based adaptation performed with a quantized base model to reduce memory use. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Fine-tune models that would not fit in full training precision.
-- Create domain or instruction adapters on constrained hardware.
-- Compare several task adapters against one frozen base model.
+- QLoRA keeps the base model in a low-bit quantized form while training LoRA adapters with higher-precision computation where needed.
+- Paged optimizers and quantization-aware handling reduce peak memory.
+- Only adapter parameters are updated; the quantized base remains frozen.
 
-## Important considerations
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-Training quantization is not identical to distributing a quantized inference file. The resulting LoRA adapter must still be applied to a compatible base model, and the deployed model may be quantized separately. Dataset quality and evaluation remain more important than the memory-saving method.
+## Why it matters
+
+QLoRA affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Fine-tune larger language models on a single or smaller set of GPUs.
+- Reduce memory requirements for experimentation.
+
+## Example
+
+A 4-bit base model can be adapted with LoRA on hardware that cannot hold the full FP16 model and optimizer state.
 
 ## Trade-offs and limitations
 
-QLoRA reduces memory but not all compute cost. Training may be slower due to quantization and dequantization overhead. Very aggressive settings, poor learning rates, or incompatible kernels can produce unstable results.
+- Training support depends on quantization libraries and hardware.
+- Memory savings do not remove dataset, evaluation, or optimization challenges.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Treating QLoRA as a standalone model format.
-- Applying the adapter to a different base checkpoint.
-- Assuming low memory requirements eliminate data-quality needs.
-- Evaluating only training loss.
+## Practical checklist
+
+- What problem is QLoRA expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Training and Adaptation](../../)
 - [LoRA](../lora/)
-- [Quantization](../../../inference-and-serving/sub/quantization/)
-- [Fine-Tuning](../fine-tuning/)
+- [Supervised Fine-Tuning](../supervised-fine-tuning/)

@@ -6,35 +6,54 @@ ai_content:
   l10n: true
 -->
 
-LLM as a judge uses a language model to score, rank, critique, or compare outputs from another model or system.
+Using a language model to score, rank, or critique other model outputs.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-A judge model can evaluate qualities that are difficult to encode as exact rules, such as relevance, completeness, style, or adherence to a rubric. Pairwise comparison is often more stable than assigning an absolute numerical score.
+Using a language model to score, rank, or critique other model outputs. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Good practice
+## How it works
 
-- Provide a precise rubric and evidence required for scoring.
-- Randomize answer order to detect position bias.
-- Hide model identity where possible.
-- Calibrate against human-reviewed examples.
-- Use several judges or repeated runs for high-impact evaluation.
-- Keep deterministic checks for facts and schemas.
+- An LLM judge receives candidate output, criteria, and sometimes reference material, then assigns scores or preferences.
+- Pairwise comparison can be more stable than absolute scoring.
+- Calibration uses human-reviewed examples and checks for position, verbosity, and self-preference bias.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+LLM as a Judge affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Scale evaluation of open-ended text when exact matching is unsuitable.
+- Rank several candidate responses for further review.
+
+## Example
+
+A judge model scores whether a summary is faithful to supplied source text, while a sample is audited by humans.
 
 ## Trade-offs and limitations
 
-Judge models have their own biases, preferences, and blind spots. They may favor verbose answers, familiar styles, or outputs from related model families. A judge can also be influenced by prompt injection inside the answer being evaluated.
+- The judge can make factual errors and inherit model biases.
+- Using the same model family as generator and judge can reduce independence.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Using the same model to generate and judge without calibration.
-- Treating judge scores as objective ground truth.
-- Asking for factual validation without providing sources.
-- Ignoring inconsistent results across repeated judgments.
+## Practical checklist
+
+- What problem is LLM as a Judge expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Human Evaluation](../human-evaluation/)
-- [Evals](../evals/)
-- [Prompt Injection](../../../safety-privacy-and-reliability/sub/prompt-injection/)
+- [Rate Limits](../rate-limits/)
+- [Retrieval Evaluation](../retrieval-evaluation/)

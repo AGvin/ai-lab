@@ -6,33 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Reinforcement Learning from Human Feedback, or RLHF, uses human preference data to train a model toward behavior judged more desirable.
+Reinforcement Learning from Human Feedback uses human preference signals to adjust model behavior.
 
-## Typical pipeline
+## Translations
 
-1. Supervised fine-tuning creates an instruction-following model.
-2. Humans compare or rank candidate responses.
-3. A reward model learns to predict those preferences.
-4. Reinforcement learning updates the language model to increase predicted reward.
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-RLHF optimizes model behavior through a learned reward signal rather than direct target-token imitation alone. It has been widely used to improve helpfulness and safety behavior in assistant models.
+Reinforcement Learning from Human Feedback uses human preference signals to adjust model behavior. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
+
+## How it works
+
+- RLHF collects human preference judgments, trains a reward model, and optimizes a policy against that reward.
+- A reference or penalty often limits how far the policy moves from the starting model.
+- The pipeline is normally applied after supervised instruction tuning.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+RLHF affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Shape assistant behavior where exact target text is difficult to specify.
+- Optimize responses using comparative human feedback.
+
+## Example
+
+Humans rank several answers and a reward model learns to predict those rankings for policy optimization.
 
 ## Trade-offs and limitations
 
-Reward models are imperfect proxies. The policy may exploit weaknesses in the reward model, become overly cautious, or learn preferred style without improved truthfulness. RLHF is operationally complex and requires careful control of training stability.
+- Reward models can be exploited and may not represent real user values.
+- The pipeline is expensive and operationally complex.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Assuming human preference equals factual correctness.
-- Using vague annotation criteria.
-- Failing to monitor reward hacking and regressions.
-- Treating RLHF as necessary for small domain adaptations.
+## Practical checklist
+
+- What problem is RLHF expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Training and Adaptation](../../)
 - [Preference Optimization](../preference-optimization/)
 - [DPO](../dpo/)
-- [Model Alignment](../../../safety-privacy-and-reliability/sub/model-alignment/)

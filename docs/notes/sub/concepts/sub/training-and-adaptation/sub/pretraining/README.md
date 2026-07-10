@@ -6,34 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Pretraining is the large-scale initial training phase that creates a broadly capable base model before task-specific adaptation.
+Large-scale initial training that creates a broadly capable base model.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Language models commonly learn by predicting missing or next tokens from massive corpora. Vision and multimodal models use related self-supervised or paired-data objectives. Pretraining teaches broad representations, patterns, and capabilities that later stages refine.
+Large-scale initial training that creates a broadly capable base model. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Main requirements
+## How it works
 
-- Large, diverse, and carefully processed datasets.
-- Distributed compute and storage infrastructure.
-- Stable optimization across many training steps.
-- Tokenization and architecture decisions made before training.
-- Evaluation for capability, safety, contamination, and bias.
+- Pretraining learns broad representations from very large corpora before task-specific adaptation.
+- Language models commonly use self-supervised next-token or masked-token objectives.
+- Data mixture, tokenizer, architecture, scale, and optimization shape the resulting base capabilities.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Pretraining affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Understand where foundation-model knowledge and general capabilities originate.
+- Distinguish creating a base model from adapting an existing one.
+
+## Example
+
+A base LLM is pretrained on a broad multilingual corpus before any assistant instruction tuning.
 
 ## Trade-offs and limitations
 
-Pretraining is expensive and difficult to reproduce. Data provenance and licensing can be hard to audit at scale. The resulting model reflects historical data and does not automatically know events after the training period.
+- Pretraining requires substantial data, compute, and engineering.
+- Training data may be outdated, biased, duplicated, or legally restricted.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Treating pretraining as ordinary fine-tuning at larger scale.
-- Assuming more tokens always improve quality.
-- Ignoring duplicated or low-quality web data.
-- Expecting pretraining to provide current, attributable knowledge.
+## Practical checklist
+
+- What problem is Pretraining expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Training and Adaptation](../../)
-- [Foundation Models](../../../foundations-and-architecture/sub/foundation-models/)
-- [Instruction Tuning](../instruction-tuning/)
-- [Datasets](../datasets/)
+- [Overfitting](../overfitting/)
+- [Preference Optimization](../preference-optimization/)

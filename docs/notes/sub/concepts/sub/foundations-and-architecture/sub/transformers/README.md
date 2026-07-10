@@ -6,37 +6,54 @@ ai_content:
   l10n: true
 -->
 
-A transformer is a neural network architecture built around attention, feed-forward layers, residual connections, and normalization.
+Neural network architectures built around attention and parallel sequence processing.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Transformers process token representations in parallel during training and prompt processing. Attention lets each position combine information from other relevant positions, while feed-forward layers transform each position independently. Positional information preserves sequence order.
+Neural network architectures built around attention and parallel sequence processing. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Common forms
+## How it works
 
-- Encoder-only models for representation and classification.
-- Decoder-only models for autoregressive generation.
-- Encoder-decoder models for sequence-to-sequence tasks.
-- Multimodal transformers that integrate visual or audio tokens.
+- Transformers process token representations through repeated attention and feed-forward blocks.
+- Attention lets each position combine information from other relevant positions, while positional information preserves sequence order.
+- The architecture supports parallel prompt processing, although autoregressive output generation still proceeds token by token.
 
-## Practical use
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-Transformers underlie most modern language models and many vision, audio, and multimodal systems. Runtime requirements are influenced by number of layers, hidden dimensions, attention configuration, vocabulary size, and context length.
+## Why it matters
+
+Transformers affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Understand the architecture behind most current LLMs and many vision, audio, and multimodal models.
+- Interpret context length, attention optimization, KV cache, and model-family documentation.
+
+## Example
+
+A decoder-only transformer reads a prompt, builds contextual token representations, and then generates the response one token at a time.
 
 ## Trade-offs and limitations
 
-Standard attention cost grows strongly with sequence length. Long contexts therefore require substantial computation and KV-cache memory. Transformers can also learn statistical shortcuts and do not inherently provide factual verification or persistent memory.
+- Attention cost and cache memory can grow substantially with long context and concurrency.
+- Transformer is an architecture family, not a guarantee of reasoning quality or factual reliability.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Treating transformer as synonymous with LLM.
-- Assuming attention weights provide a complete explanation.
-- Ignoring architecture variants when comparing parameter counts.
-- Expecting longer context to guarantee better recall.
+## Practical checklist
+
+- What problem is Transformers expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Foundations and Architecture](../../)
+- [Multimodal Models](../multimodal-models/)
 - [Attention](../attention/)
-- [Self-Attention](../self-attention/)
-- [Encoder and Decoder Architectures](../encoder-decoder/)

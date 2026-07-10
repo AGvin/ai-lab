@@ -6,33 +6,54 @@ ai_content:
   l10n: true
 -->
 
-The KV cache stores attention keys and values from previously processed tokens so an autoregressive model does not recompute them for every new token.
+Cached attention keys and values reused during autoregressive generation.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-During generation, each new token attends to earlier tokens. Caching their key and value tensors makes decoding practical, but cache memory grows with context length, batch size, number of layers, attention dimensions, and cache precision.
+Cached attention keys and values reused during autoregressive generation. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Estimate how much context fits after model weights are loaded.
-- Choose batch and concurrency limits for a server.
-- Evaluate lower-precision cache formats when supported.
-- Reuse prompt state through prefix or context caching.
+- Autoregressive attention stores key and value tensors for previously processed tokens.
+- New tokens attend to the cache instead of recomputing all earlier states.
+- Cache size grows with context length, layer count, hidden dimensions, precision, batch size, and concurrency.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+KV Cache affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Estimate memory needed for long prompts and simultaneous users.
+- Tune cache precision and context limits in local inference servers.
+
+## Example
+
+A model that fits in 10 GB of VRAM may still exceed a 12 GB card when a long context and several concurrent requests allocate cache.
 
 ## Trade-offs and limitations
 
-A larger cache enables longer context or more concurrent sessions but consumes significant RAM or VRAM. Quantized caches save memory but may affect quality. Sliding-window and grouped-query attention architectures change cache behavior but do not eliminate it.
+- KV cache can consume more memory than expected even when model weights fit.
+- Cache quantization may save memory but can affect quality or kernel support.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Calculating fit from model weights alone.
-- Benchmarking short context and deploying long context.
-- Assuming the advertised context limit fits on all hardware.
-- Confusing persistent context caching with the in-memory KV cache of an active request.
+## Practical checklist
+
+- What problem is KV Cache expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Inference and Serving](../../)
-- [Context Window](../../../model-usage-and-generation/sub/context-window/)
-- [Context Caching](../context-caching/)
 - [GPU Offloading](../gpu-offloading/)
+- [Latency](../latency/)

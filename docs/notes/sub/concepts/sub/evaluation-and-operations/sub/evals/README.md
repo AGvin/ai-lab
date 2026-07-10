@@ -6,38 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Evals are repeatable tests that measure whether a model or AI system meets defined quality, safety, reliability, and operational requirements.
+Repeatable tests that measure whether an AI model or system meets defined requirements.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-An evaluation starts with a concrete task and success criteria. It supplies representative inputs, runs a fixed configuration, and scores outputs through deterministic checks, human review, model judges, or a combination. Evals should measure the complete system when prompts, retrieval, tools, and post-processing materially affect results.
+Repeatable tests that measure whether an AI model or system meets defined requirements. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Compare candidate models for a workflow.
-- Detect regressions after prompt or model changes.
-- Measure tool-calling and structured-output reliability.
-- Test hallucination, safety, and prompt-injection behavior.
-- Establish release gates for production changes.
+- Evals define inputs, expected properties, scoring methods, and pass criteria for an AI system.
+- They can test model output, retrieval, tool use, safety, latency, or complete workflows.
+- A useful eval suite is versioned and rerun whenever models, prompts, data, or tools change.
 
-## Good evaluation design
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-Use realistic examples, include difficult and negative cases, preserve a held-out set, and record model and configuration versions. Report both aggregate metrics and important failure categories.
+## Why it matters
+
+Evals affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Detect regressions and compare configurations before deployment.
+- Turn subjective expectations into repeatable evidence.
+
+## Example
+
+A coding-agent eval checks branch use, file scope, test execution, and whether the final patch satisfies the issue.
 
 ## Trade-offs and limitations
 
-Evals approximate real use and can become stale. A model may overfit public benchmarks or a repeatedly used internal set. Automated scores can miss subtle factual, stylistic, or safety problems.
+- An eval only measures what its cases and scoring capture.
+- Overfitting to a fixed suite can improve scores without improving real users.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Testing only easy happy-path prompts.
-- Changing the dataset while comparing model versions.
-- Using one average score without failure analysis.
-- Evaluating the model but not retrieval and tool execution.
+## Practical checklist
+
+- What problem is Evals expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Evaluation Datasets](../evaluation-datasets/)
-- [Human Evaluation](../human-evaluation/)
 - [Reproducibility](../reproducibility/)
+- [Model Selection](../model-selection/)

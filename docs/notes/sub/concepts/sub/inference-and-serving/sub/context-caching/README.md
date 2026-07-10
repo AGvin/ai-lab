@@ -6,38 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Context caching reuses previously processed prompt prefixes so repeated requests do not recompute the same input tokens.
+Reusing previously processed prompt context to reduce repeated computation.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Many requests share a stable prefix such as a system prompt, tool definitions, a long document, or a conversation history. A runtime or provider can store the processed representation and continue from it when a later request uses an identical or compatible prefix.
+Reusing previously processed prompt context to reduce repeated computation. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Repeated queries over the same document.
-- Long system prompts and tool schemas.
-- Multi-turn conversations.
-- Batch tasks sharing a common instruction prefix.
-- Agent workflows that revisit stable context.
+- Context caching stores processed representations for a reusable prompt prefix.
+- Later requests that share the exact or compatible prefix can skip some prompt computation.
+- Caches may live in provider infrastructure, server memory, or persisted storage depending on the runtime.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Context Caching affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Reduce cost and latency for repeated system prompts, documents, or agent instructions.
+- Serve many requests against a stable shared context.
+
+## Example
+
+A support assistant caches a long policy manual prefix used for every request in the same session.
 
 ## Trade-offs and limitations
 
-Caching reduces prompt-processing latency and cost but consumes memory or storage. Cache keys must account for the exact model, tokenizer, prompt bytes, configuration, and sometimes position. Small changes may invalidate the cache.
+- Small changes can invalidate the reusable prefix.
+- Cached context consumes storage or memory and can introduce privacy and eviction concerns.
 
-## Security considerations
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-Cache entries must be isolated between users and tenants. Sensitive prompts require appropriate retention and encryption policies. A cache hit must never expose another user's context.
+## Practical checklist
 
-## Common mistakes
-
-- Confusing provider prompt caching with the active request's KV cache.
-- Assuming semantically similar text produces a cache hit.
-- Reusing cached state after changing the model or system prompt.
-- Ignoring cache invalidation and privacy boundaries.
+- What problem is Context Caching expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Inference and Serving](../../)
-- [KV Cache](../kv-cache/)
-- [Caching](../../../evaluation-and-operations/sub/caching/)
-- [Data Privacy](../../../safety-privacy-and-reliability/sub/data-privacy/)
+- [GPU Inference](../gpu-inference/)
+- [FlashAttention](../flash-attention/)

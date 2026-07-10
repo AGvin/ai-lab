@@ -6,33 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Multimodal context is the combined text, image, audio, video, document, and tool information available to a model during a request.
+The combined text, image, audio, video, or document information available to a model request.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Each modality is converted into tokens or learned features and consumes part of a limited context or compute budget. A high-resolution image, long audio recording, or large PDF may be compressed, sampled, split, or summarized before the model sees it.
+The combined text, image, audio, video, or document information available to a model request. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Combine screenshots with technical questions.
-- Analyze documents containing text, tables, and diagrams.
-- Use audio transcripts together with speaker metadata.
-- Ground an agent in browser screenshots and tool results.
+- Multimodal context is the combined set of text, images, audio, video, documents, and tool results supplied to a request.
+- Each modality is encoded and consumes model-specific context or processing capacity.
+- The application must preserve ordering, labels, provenance, and relationships between media and instructions.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Multimodal Context affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Ask questions about documents with diagrams or screenshots.
+- Build agents that combine visual observation with text and tools.
+
+## Example
+
+A debugging request includes source code, an error log, and a screenshot of the failed page in one model call.
 
 ## Trade-offs and limitations
 
-Adding modalities does not guarantee that the model integrates them correctly. Important details may be lost during OCR, frame sampling, resizing, or transcription. Conflicting evidence across modalities requires explicit handling.
+- Large or numerous media inputs can exceed limits or hide important details.
+- The model may confuse which instruction or claim belongs to which attachment.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Assuming uploaded media is processed at full fidelity.
-- Providing many irrelevant images and diluting attention.
-- Ignoring context-window consumption from media.
-- Trusting instructions embedded inside untrusted documents or screenshots.
+## Practical checklist
+
+- What problem is Multimodal Context expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Multimodal and Generative Media](../../)
-- [Vision-Language Models](../vision-language-models/)
-- [Context Window](../../../model-usage-and-generation/sub/context-window/)
-- [Indirect Prompt Injection](../../../safety-privacy-and-reliability/sub/indirect-prompt-injection/)
+- [ControlNet](../controlnet/)
+- [Text-to-Image](../text-to-image/)

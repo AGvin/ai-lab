@@ -6,37 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Semantic search retrieves content by comparing learned representations of meaning rather than relying only on exact word matches.
+Retrieval based on meaning rather than only exact word matches.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-A query and candidate documents are embedded into vectors, then a vector index finds nearby items. This allows retrieval when the user and source use different wording, abbreviations, or paraphrases.
+Retrieval based on meaning rather than only exact word matches. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical strengths
+## How it works
 
-- Natural-language questions over documents.
-- Cross-lingual or paraphrase-heavy retrieval.
-- Finding conceptually related code, tickets, or notes.
-- Matching user intent to products or support articles.
+- Semantic search embeds the query and candidate content into a shared vector space.
+- Nearest-neighbor search returns items with representations close to the query even when exact words differ.
+- Filters and reranking are commonly added to improve precision and enforce scope.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Semantic Search affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Find conceptually related documentation and natural-language answers.
+- Handle paraphrases, synonyms, and user vocabulary that differs from source terminology.
+
+## Example
+
+A query for “make the model use less memory” can retrieve notes titled “Quantization and GPU offloading.”
 
 ## Trade-offs and limitations
 
-Semantic search may miss exact identifiers, rare names, version numbers, or negated phrases. It can also retrieve topically similar passages that do not contain the required answer. Results depend heavily on the embedding model, chunking, and domain.
+- It may miss exact identifiers or rank generally related passages above the precise answer.
+- Quality depends strongly on the embedding model and domain.
 
-## Good practice
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-Combine semantic search with metadata filters and, when exact terms matter, lexical search. Evaluate recall at several candidate counts rather than inspecting only the top result. Use reranking when initial vector similarity is too coarse.
+## Practical checklist
 
-## Common mistakes
-
-- Treating nearest neighbors as verified answers.
-- Using semantic search alone for SKUs, error codes, or legal citations.
-- Comparing similarity scores across unrelated models or indexes.
-- Ignoring access controls during retrieval.
+- What problem is Semantic Search expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Retrieval and Knowledge](../../)
-- [Embeddings](../embeddings/)
+- [Chunking](../chunking/)
 - [Hybrid Search](../hybrid-search/)
-- [Vector Search](../vector-search/)

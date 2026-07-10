@@ -6,40 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Agent memory preserves information beyond the immediate request so it can influence future steps or future sessions.
+Mechanisms that preserve useful information beyond the immediate model request.
 
-## Types of memory
+## Translations
 
-- **Working memory:** temporary information needed for the current task.
-- **Episodic memory:** records of prior interactions or completed tasks.
-- **Semantic memory:** durable facts, preferences, or learned domain knowledge.
-- **Procedural memory:** reusable instructions, workflows, or skills.
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-Memory is usually implemented through databases, retrieval systems, summaries, or structured profiles rather than changes to model weights. A memory system must decide what to store, when to retrieve it, how to update it, and when to forget it.
+Mechanisms that preserve useful information beyond the immediate model request. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Practical use
+## How it works
 
-- Preserve user preferences with explicit consent.
-- Reuse validated findings across a long-running project.
-- Resume work after context truncation or process restarts.
-- Retrieve prior decisions that are relevant to the current task.
+- Agent memory stores information beyond the immediate context window.
+- Short-term memory may summarize the current task, while long-term memory may use databases, vector search, profiles, or event histories.
+- Memory retrieval should be scoped, permission-aware, and treated as fallible external data.
+
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
+
+## Why it matters
+
+Agent Memory affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Remember user preferences, past decisions, or project facts across sessions.
+- Reduce repeated discovery work in long-lived assistants.
+
+## Example
+
+An assistant remembers that a repository uses squash merges but rechecks current repository rules before acting.
 
 ## Trade-offs and limitations
 
-Incorrect memory can repeatedly contaminate future decisions. Long retention raises privacy and security risks. Retrieval adds latency and may surface irrelevant or outdated facts.
+- Stored memories can become stale, incorrect, or privacy-sensitive.
+- Memory is not the same as authoritative knowledge and should not silently override current instructions.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Storing every conversation message permanently.
-- Treating a generated summary as authoritative fact.
-- Failing to record provenance, timestamps, or confidence.
-- Retrieving memories without checking whether they are still applicable.
+## Practical checklist
+
+- What problem is Agent Memory expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Agents and Automation](../../)
 - [Agent State](../agent-state/)
-- [Retrieval-Augmented Generation](../../../retrieval-and-knowledge/sub/rag/)
-- [Data Privacy](../../../safety-privacy-and-reliability/sub/data-privacy/)
+- [Planning](../planning/)

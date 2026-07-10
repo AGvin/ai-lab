@@ -6,38 +6,54 @@ ai_content:
   l10n: true
 -->
 
-Tokens are the units a model reads and generates. Tokenization converts text, code, punctuation, and sometimes whitespace into token identifiers from a fixed vocabulary.
+The process of splitting input and output into the units a model reads and generates.
+
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
 
 ## Core idea
 
-A token is not the same as a word or character. Common words may map to one token, while uncommon words, identifiers, URLs, or non-Latin text may be split into several. Models operate on token sequences rather than raw text, so tokenization directly affects context usage, generation cost, latency, and how reliably a model handles unusual strings.
+The process of splitting input and output into the units a model reads and generates. In practical AI work, the term is useful because it names a specific part of the system rather than treating the model as a single opaque component. Understanding where it appears in the workflow makes configuration choices and failure analysis more precise.
 
-## Key points
+## How it works
 
-- Different model families may tokenize the same text differently.
-- Input tokens, generated output tokens, and hidden reasoning tokens may be counted separately by an API.
-- Code, JSON, long numbers, and repeated whitespace can consume more context than their visual length suggests.
-- Token boundaries can influence spelling, copying, arithmetic, and exact-string tasks.
+- A tokenizer converts text, code, or special control markers into integer token IDs from a fixed vocabulary.
+- Token boundaries do not necessarily match words: common fragments may be one token, while rare words, punctuation, or non-English text may be split into several tokens.
+- The model processes token IDs and generates token probabilities; the runtime decodes selected IDs back into text.
 
-## Practical use
+The exact implementation varies by model family, provider, and runtime. The important distinction is the role the concept plays in the end-to-end system and which inputs, state, or resources it changes.
 
-- Estimate whether a prompt and expected answer fit inside the model context window.
-- Compare API costs using token counts rather than character counts.
-- Inspect unexpectedly expensive prompts, especially logs, source code, and large documents.
-- Design chunk sizes for retrieval systems using the tokenizer of the generation or embedding model.
+## Why it matters
+
+Tokens and Tokenization affects how an AI system should be selected, configured, tested, or operated. It can influence output quality, resource requirements, reliability, or the amount of control available to the surrounding application.
+
+## Practical uses
+
+- Estimate context usage, API cost, and maximum output length.
+- Diagnose why code, JSON, Ukrainian text, or unusual identifiers consume different amounts of context.
+
+## Example
+
+A long function name may be split into several tokens even though a common English word of similar length is represented by one token.
 
 ## Trade-offs and limitations
 
-Larger vocabularies can represent frequent strings efficiently but require larger embedding tables. Smaller vocabularies split more text into pieces and may increase sequence length. Token count is therefore model-specific and should not be estimated with a tokenizer from an unrelated model.
+- Token counts vary between model families because tokenizers differ.
+- Character or word counts are only rough proxies for model context usage.
 
-## Common mistakes
+Do not evaluate this concept in isolation. Test it together with the actual model, data, runtime, tools, and workload that will be used in production or local experiments.
 
-- Treating one word as one token.
-- Assuming the same token count across providers.
-- Ignoring output and reasoning-token budgets when sizing a request.
+## Practical checklist
+
+- What problem is Tokens and Tokenization expected to solve in this workflow?
+- Which inputs, settings, or resources does it depend on?
+- How will success and failure be measured?
+- What changes when the model, runtime, dataset, or context size changes?
 
 ## Related concepts
 
 - [Model Usage and Generation](../../)
+- [Chain of Thought](../chain-of-thought/)
 - [Context Window](../context-window/)
-- [Sampling Parameters](../sampling-parameters/)

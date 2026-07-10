@@ -8,6 +8,11 @@ ai_content:
 
 Concepts for using trained models effectively through chats, APIs, applications, and local runtimes.
 
+## Translations
+
+- English — current
+- [Українська](./l10n/uk_UA/)
+
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
 ## Essential
