@@ -6,20 +6,33 @@ ai_content:
   l10n: true
 -->
 
-Cached attention keys and values reused during autoregressive generation.
+The KV cache stores attention keys and values from previously processed tokens so an autoregressive model does not recompute them for every new token.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+During generation, each new token attends to earlier tokens. Caching their key and value tensors makes decoding practical, but cache memory grows with context length, batch size, number of layers, attention dimensions, and cache precision.
 
 ## Practical use
 
-- Use the concept when selecting runtimes, hardware, model variants, or serving settings.
-- Measure memory use, latency, throughput, and output quality on the real workload.
-- Benchmark configuration changes instead of assuming a theoretical optimization will help.
+- Estimate how much context fits after model weights are loaded.
+- Choose batch and concurrency limits for a server.
+- Evaluate lower-precision cache formats when supported.
+- Reuse prompt state through prefix or context caching.
+
+## Trade-offs and limitations
+
+A larger cache enables longer context or more concurrent sessions but consumes significant RAM or VRAM. Quantized caches save memory but may affect quality. Sliding-window and grouped-query attention architectures change cache behavior but do not eliminate it.
+
+## Common mistakes
+
+- Calculating fit from model weights alone.
+- Benchmarking short context and deploying long context.
+- Assuming the advertised context limit fits on all hardware.
+- Confusing persistent context caching with the in-memory KV cache of an active request.
 
 ## Related concepts
 
 - [Inference and Serving](../../)
+- [Context Window](../../../model-usage-and-generation/sub/context-window/)
+- [Context Caching](../context-caching/)
 - [GPU Offloading](../gpu-offloading/)
-- [Latency](../latency/)

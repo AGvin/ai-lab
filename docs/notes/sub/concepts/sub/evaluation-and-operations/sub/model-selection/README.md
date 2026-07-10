@@ -6,20 +6,36 @@ ai_content:
   l10n: true
 -->
 
-Choosing a model based on task quality, capabilities, cost, latency, safety, and deployment constraints.
+Model selection chooses a model and deployment configuration that best satisfy a task's quality, cost, latency, privacy, safety, and operational requirements.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+There is rarely one universally best model. A larger hosted model may provide stronger reasoning, while a smaller local model may offer lower cost, privacy, or offline operation. Selection should be based on measured workflow performance rather than reputation or parameter count.
+
+## Decision dimensions
+
+- Task quality and failure severity.
+- Context and modality requirements.
+- Tool-calling and structured-output reliability.
+- Latency, throughput, and concurrency.
+- API cost or hardware requirement.
+- License, privacy, and data residency.
+- Provider stability and deployment control.
 
 ## Practical use
 
-- Use the concept to define measurable requirements before optimizing an AI workflow.
-- Evaluate with representative datasets, explicit criteria, and observable execution traces.
-- Track regressions, cost, latency, and reliability as models or configurations change.
+Define minimum acceptance thresholds, shortlist models using public evidence, then run the same internal evals. Test exact versions and quantizations. Record why the chosen model won and what conditions would trigger reconsideration.
+
+## Common mistakes
+
+- Selecting from a single benchmark.
+- Comparing hosted and local models without total operating cost.
+- Ignoring version changes and provider deprecations.
+- Choosing the strongest model when a smaller one already meets requirements.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Evals](../evals/)
 - [Model Routing](../model-routing/)
+- [Benchmarks](../benchmarks/)
+- [Quality and Cost Trade-Offs](../quality-cost-tradeoffs/)

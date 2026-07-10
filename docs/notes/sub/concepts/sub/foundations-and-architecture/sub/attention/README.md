@@ -6,20 +6,33 @@ ai_content:
   l10n: true
 -->
 
-A mechanism that weights which input elements are most relevant for a model operation.
+Attention is a mechanism that computes how strongly one representation should use information from other representations.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+A query is compared with keys to produce attention scores. The scores are normalized and used to combine corresponding values. In transformers, many attention heads learn different patterns of interaction in parallel.
 
-## Practical use
+## Practical roles
 
-- Use the concept to interpret model cards, architecture names, and capability claims.
-- Connect architecture choices to likely capabilities, constraints, and resource behavior.
-- Avoid treating an architecture label as a substitute for task-specific evaluation.
+- Connect a generated token to relevant earlier tokens.
+- Align text with image regions or audio features.
+- Combine encoder information during sequence generation.
+- Represent long-range dependencies more directly than simple recurrence.
+
+## Trade-offs and limitations
+
+Standard full attention compares many pairs of positions and becomes expensive for long sequences. Attention scores are internal computation, not calibrated evidence of causal importance or human-readable reasoning.
+
+## Common mistakes
+
+- Interpreting the largest attention weight as the model's explanation.
+- Assuming attention alone stores permanent memory.
+- Ignoring masking and positional encoding.
+- Treating all attention implementations as computationally identical.
 
 ## Related concepts
 
 - [Foundations and Architecture](../../)
+- [Self-Attention](../self-attention/)
 - [Transformers](../transformers/)
-- [Mixture of Experts](../mixture-of-experts/)
+- [FlashAttention](../../../inference-and-serving/sub/flash-attention/)

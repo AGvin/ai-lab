@@ -6,20 +6,34 @@ ai_content:
   l10n: true
 -->
 
-Curated examples used to test quality, safety, retrieval, or task performance.
+An evaluation dataset is a curated set of inputs, expected properties, reference answers, labels, or scoring criteria used to test a model or system.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+The dataset should represent the distribution and risk of actual use. It may include ordinary cases, difficult edge cases, invalid inputs, adversarial examples, and historical incidents. The expected result can be exact, rubric-based, or open to human judgment depending on the task.
 
-## Practical use
+## Practical design
 
-- Use the concept to define measurable requirements before optimizing an AI workflow.
-- Evaluate with representative datasets, explicit criteria, and observable execution traces.
-- Track regressions, cost, latency, and reliability as models or configurations change.
+- Separate development, validation, and held-out test sets.
+- Record source, license, date, and data transformations.
+- Remove duplicates and near-duplicates from training data where possible.
+- Include examples for every important failure category.
+- Version the dataset and scoring rules together.
+
+## Trade-offs and limitations
+
+A static dataset becomes stale as user behavior and models change. Small sets are easy to review but have high variance; large sets improve coverage but are expensive to label and inspect.
+
+## Common mistakes
+
+- Reusing the test set for prompt tuning.
+- Including only previously successful examples.
+- Treating synthetic labels as ground truth.
+- Changing labels without recording a new version.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
-- [Benchmarks](../benchmarks/)
-- [Human Evaluation](../human-evaluation/)
+- [Evals](../evals/)
+- [Datasets](../../../training-and-adaptation/sub/datasets/)
+- [Reproducibility](../reproducibility/)

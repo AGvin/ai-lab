@@ -6,20 +6,34 @@ ai_content:
   l10n: true
 -->
 
-Designing actions so safe repetition does not create unintended duplicate effects.
+An idempotent operation can be repeated without creating additional unintended effects after the first successful application.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+Agent workflows frequently retry after timeouts or ambiguous failures. Without idempotency, a retry may send the same email twice, create duplicate records, charge twice, or apply the same repository change repeatedly. Idempotency is normally implemented in the tool or application layer rather than through prompting.
 
-## Practical use
+## Practical techniques
 
-- Use the concept when defining agent control flow, tools, permissions, and stop conditions.
-- Keep important state explicit and make consequential actions reviewable.
-- Log actions and design safe recovery for partial failures or repeated execution.
+- Attach a stable idempotency key to each logical action.
+- Use upsert or compare-and-set operations where appropriate.
+- Record completed side effects in durable state.
+- Check the current external state before retrying.
+- Separate read-only planning from write operations.
+
+## Trade-offs and limitations
+
+Idempotency requires storage, key design, and clear action boundaries. Some operations cannot be made perfectly idempotent and instead need compensation or manual reconciliation.
+
+## Common mistakes
+
+- Assuming a timeout means nothing happened.
+- Generating a new request identifier on every retry.
+- Retrying an entire workflow when only one step failed.
+- Relying on the model to remember whether an action was completed.
 
 ## Related concepts
 
 - [Agents and Automation](../../)
-- [Human in the Loop](../human-in-the-loop/)
+- [Retries](../retries/)
 - [Failure Recovery](../failure-recovery/)
+- [Agent State](../agent-state/)

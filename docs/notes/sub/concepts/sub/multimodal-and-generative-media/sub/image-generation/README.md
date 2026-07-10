@@ -6,20 +6,34 @@ ai_content:
   l10n: true
 -->
 
-Producing images from text, images, layouts, masks, or other conditioning inputs.
+Image generation creates new images from text, reference images, masks, layouts, depth maps, poses, or other conditioning signals.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+Modern systems commonly use diffusion or related generative architectures that begin from noise or a latent representation and progressively construct an image. The prompt and conditioning guide composition, subject, style, lighting, and other attributes, but generation remains probabilistic.
 
 ## Practical use
 
-- Use the concept when choosing a model or workflow for image, audio, video, or mixed-modality tasks.
-- Validate input constraints, output artifacts, and editing fidelity on representative media.
-- Track provenance, privacy, safety, and licensing for generated or transformed content.
+- Concept art and visual ideation.
+- Marketing and social media assets.
+- Product mockups and storyboards.
+- Controlled image editing and restoration.
+- Synthetic visual datasets.
+
+## Trade-offs and limitations
+
+Models may produce anatomical errors, inconsistent text, duplicated objects, or details that do not match the prompt. Exact identity, logos, typography, and multi-image consistency often require reference conditioning or manual editing.
+
+## Common mistakes
+
+- Expecting a long prompt to control every detail independently.
+- Using generated images as factual evidence.
+- Ignoring model, dataset, and output licensing.
+- Publishing without inspecting hands, text, reflections, and repeated objects.
 
 ## Related concepts
 
 - [Multimodal and Generative Media](../../)
-- [Vision-Language Models](../vision-language-models/)
 - [Diffusion Models](../diffusion-models/)
+- [Text-to-Image](../text-to-image/)
+- [Image-to-Image](../image-to-image/)

@@ -6,20 +6,35 @@ ai_content:
   l10n: true
 -->
 
-People assessing model outputs against explicit criteria.
+Human evaluation uses people to assess model outputs against explicit criteria or compare alternative responses.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+Humans are needed when quality depends on nuanced meaning, domain expertise, usability, tone, or real-world consequences that automated metrics do not capture. Reliable human evaluation requires a clear rubric and consistent annotation process.
 
-## Practical use
+## Practical design
 
-- Use the concept to define measurable requirements before optimizing an AI workflow.
-- Evaluate with representative datasets, explicit criteria, and observable execution traces.
-- Track regressions, cost, latency, and reliability as models or configurations change.
+- Define criteria with positive and negative examples.
+- Train evaluators and measure agreement.
+- Randomize and blind model identity.
+- Separate factual correctness from style preferences.
+- Record uncertainty and reasons for difficult judgments.
+- Escalate specialist topics to domain experts.
+
+## Trade-offs and limitations
+
+Human evaluation is expensive, slow, and influenced by fatigue, culture, preference, and presentation order. Agreement can be low when the rubric is vague or the task is genuinely subjective.
+
+## Common mistakes
+
+- Asking which answer is “better” without criteria.
+- Using one evaluator for high-impact conclusions.
+- Showing model names or expected rankings.
+- Treating majority preference as factual correctness.
 
 ## Related concepts
 
 - [Evaluation and Operations](../../)
+- [LLM as a Judge](../llm-as-a-judge/)
+- [Preference Optimization](../../../training-and-adaptation/sub/preference-optimization/)
 - [Evaluation Datasets](../evaluation-datasets/)
-- [Fallback Models](../fallback-models/)

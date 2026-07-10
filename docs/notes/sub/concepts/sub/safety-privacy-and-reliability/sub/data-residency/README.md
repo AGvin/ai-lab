@@ -6,20 +6,34 @@ ai_content:
   l10n: true
 -->
 
-The geographic or jurisdictional location where data is stored or processed.
+Data residency specifies the geographic or jurisdictional location where data is stored or processed.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+AI workflows may transmit prompts, files, embeddings, logs, and backups across several services and regions. Residency requirements therefore apply to the entire processing chain, not only the primary model endpoint.
 
-## Practical use
+## Practical questions
 
-- Use the concept to define controls around data, tools, permissions, and model behavior.
-- Separate trusted instructions from untrusted user, web, email, document, or retrieval content.
-- Test abuse cases and failure modes before granting broader access or autonomy.
+- Where are prompts and uploaded files processed?
+- Where are logs, caches, backups, and embeddings stored?
+- Can support staff access data from another jurisdiction?
+- Which subprocessors and regions are involved?
+- Is regional failover allowed?
+
+## Trade-offs and limitations
+
+Restricting regions can reduce provider choice, availability, or performance. A regional endpoint may still rely on globally operated control systems unless the provider contract explicitly defines boundaries.
+
+## Common mistakes
+
+- Confusing data residency with data privacy or sovereignty.
+- Checking only the model API and ignoring telemetry.
+- Assuming a company address determines processing location.
+- Failing to document backup and disaster-recovery regions.
 
 ## Related concepts
 
 - [Safety, Privacy, and Reliability](../../)
-- [Guardrails](../guardrails/)
+- [Data Privacy](../data-privacy/)
 - [Provenance](../provenance/)
+- [Model Selection](../../../evaluation-and-operations/sub/model-selection/)

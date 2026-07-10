@@ -6,20 +6,38 @@ ai_content:
   l10n: true
 -->
 
-The elapsed time required to produce a response or reach a defined output milestone.
+Latency is the elapsed time required for an inference system to reach a defined response milestone.
 
-## Why it matters
+## Useful latency measures
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+- **Queue latency:** time spent waiting before processing starts.
+- **Model-loading latency:** time needed to make the model ready.
+- **Time to first token:** delay before the first generated token is returned.
+- **Inter-token latency:** delay between generated tokens.
+- **End-to-end latency:** total time until the complete response is available.
+
+## Core idea
+
+A single average hides important user experience differences. Interactive chat prioritizes time to first token and smooth token delivery, while batch processing may prioritize total completion time.
 
 ## Practical use
 
-- Use the concept when selecting runtimes, hardware, model variants, or serving settings.
-- Measure memory use, latency, throughput, and output quality on the real workload.
-- Benchmark configuration changes instead of assuming a theoretical optimization will help.
+Measure percentiles such as p50, p95, and p99 under realistic concurrency. Separate prompt-processing time from decode time. Include network, queue, retrieval, and tool latency when evaluating an application.
+
+## Trade-offs and limitations
+
+Batching can improve throughput while increasing individual request latency. Larger models and longer prompts usually increase latency. Caching reduces repeated work but adds memory and invalidation complexity.
+
+## Common mistakes
+
+- Reporting only the fastest isolated request.
+- Using average latency without tail percentiles.
+- Excluding queue and retrieval time from user-facing measurements.
+- Comparing latency with different output lengths.
 
 ## Related concepts
 
 - [Inference and Serving](../../)
-- [KV Cache](../kv-cache/)
 - [Throughput](../throughput/)
+- [Performance Metrics](../performance-metrics/)
+- [Continuous Batching](../continuous-batching/)

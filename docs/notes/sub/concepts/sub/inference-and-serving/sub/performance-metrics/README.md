@@ -6,20 +6,40 @@ ai_content:
   l10n: true
 -->
 
-Measurements such as time to first token, tokens per second, latency, and memory use.
+Performance metrics describe how an inference system uses time, memory, compute, and capacity under a defined workload.
 
-## Why it matters
+## Important metrics
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+- Time to first token and inter-token latency.
+- Prompt-processing and generation throughput.
+- End-to-end latency percentiles.
+- RAM, VRAM, and storage usage.
+- Concurrent request capacity.
+- Power consumption and sustained thermals.
+- Error, timeout, and retry rates.
+
+## Core idea
+
+A benchmark is meaningful only when the model, quantization, runtime, context length, batch size, output length, and hardware are recorded. A single tokens-per-second number cannot describe interactive quality or serving capacity.
 
 ## Practical use
 
-- Use the concept when selecting runtimes, hardware, model variants, or serving settings.
-- Measure memory use, latency, throughput, and output quality on the real workload.
-- Benchmark configuration changes instead of assuming a theoretical optimization will help.
+Create a workload profile before testing. Run warm-up iterations, then collect enough samples to show variability. Measure both isolated and concurrent operation. Keep quality evaluation separate so an optimization that harms output is not reported as a pure improvement.
+
+## Trade-offs and limitations
+
+Optimizing one metric often harms another. Larger batches increase throughput but may worsen latency. Lower precision reduces memory but may alter quality. Power-limited devices can perform well in short tests and throttle during sustained use.
+
+## Common mistakes
+
+- Comparing results with different prompt or output lengths.
+- Omitting model and runtime versions.
+- Reporting averages without percentiles.
+- Ignoring failed requests and quality regressions.
 
 ## Related concepts
 
 - [Inference and Serving](../../)
+- [Latency](../latency/)
 - [Throughput](../throughput/)
-- [Model Serving](../model-serving/)
+- [Benchmarks](../../../evaluation-and-operations/sub/benchmarks/)

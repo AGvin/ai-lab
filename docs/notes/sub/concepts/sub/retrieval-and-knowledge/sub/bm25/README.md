@@ -6,20 +6,40 @@ ai_content:
   l10n: true
 -->
 
-A probabilistic lexical ranking method widely used in document retrieval.
+BM25 is a probabilistic lexical ranking function used to score how well a document matches query terms.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+BM25 rewards documents containing important query terms while controlling for term frequency and document length. A term that appears in few documents receives more weight than a common term. Repeating a term helps only up to a saturation point, which prevents raw frequency from dominating the ranking.
 
 ## Practical use
 
-- Use the concept when connecting models to documents, repositories, databases, or external knowledge.
-- Evaluate retrieval quality separately from final answer quality.
-- Preserve source provenance, access control, and resistance to malicious content.
+- Search for exact technical terminology.
+- Retrieve error messages, identifiers, and named entities.
+- Provide a lexical candidate set for hybrid search.
+- Establish a strong, inexpensive retrieval baseline.
+
+## Important parameters
+
+- `k1` controls how quickly term-frequency benefit saturates.
+- `b` controls document-length normalization.
+
+Defaults are often reasonable, but analyzers, field weights, stop words, and document structure usually matter more than small parameter changes.
+
+## Trade-offs and limitations
+
+BM25 does not understand paraphrases or broader semantic similarity unless query expansion or synonyms are added. It can also overvalue rare terms that are not actually relevant.
+
+## Common mistakes
+
+- Tuning parameters before fixing tokenization and field design.
+- Using one combined field for titles, body text, and identifiers.
+- Assuming BM25 scores are comparable across different queries.
+- Discarding BM25 because embeddings perform better on a small demo set.
 
 ## Related concepts
 
 - [Retrieval and Knowledge](../../)
-- [Metadata Filtering](../metadata-filtering/)
-- [GraphRAG](../graph-rag/)
+- [Keyword Search](../keyword-search/)
+- [Hybrid Search](../hybrid-search/)
+- [Semantic Search](../semantic-search/)

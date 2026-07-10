@@ -6,20 +6,34 @@ ai_content:
   l10n: true
 -->
 
-Extending an image beyond its original boundaries.
+Outpainting extends an image beyond its original boundaries by generating new surrounding content.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+The original image provides visual context while a larger canvas contains masked empty regions. The model continues textures, perspective, lighting, and scene content into the new area. Overlap between original and generated regions helps avoid visible seams.
 
 ## Practical use
 
-- Use the concept when choosing a model or workflow for image, audio, video, or mixed-modality tasks.
-- Validate input constraints, output artifacts, and editing fidelity on representative media.
-- Track provenance, privacy, safety, and licensing for generated or transformed content.
+- Change image aspect ratio.
+- Expand backgrounds for banners or layouts.
+- Reveal more environment around a subject.
+- Reframe a composition without cropping.
+- Create panoramic extensions.
+
+## Trade-offs and limitations
+
+The model may invent inconsistent geometry or repeat objects. Large extensions have less original context and are more likely to drift. Faces and central subjects near the boundary may be altered unless protected carefully.
+
+## Common mistakes
+
+- Extending too much in a single pass.
+- Providing no prompt for the new scene area.
+- Using a hard mask boundary without overlap.
+- Expecting hidden parts of real objects to be reconstructed factually.
 
 ## Related concepts
 
 - [Multimodal and Generative Media](../../)
-- [Text-to-Image](../text-to-image/)
-- [Image Embeddings](../image-embeddings/)
+- [Inpainting](../inpainting/)
+- [Image-to-Image](../image-to-image/)
+- [Image Generation](../image-generation/)

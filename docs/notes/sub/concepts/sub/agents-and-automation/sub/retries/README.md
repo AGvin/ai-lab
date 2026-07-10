@@ -6,20 +6,35 @@ ai_content:
   l10n: true
 -->
 
-Repeating eligible failed operations under bounded and observable rules.
+Retries repeat an eligible failed operation under bounded rules intended to recover from transient problems.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+A retry policy should distinguish transient failures from permanent errors. Network timeouts, rate limits, or temporary service unavailability may succeed later; invalid arguments, denied permissions, and unsupported operations usually will not.
 
-## Practical use
+## Good retry policy
 
-- Use the concept when defining agent control flow, tools, permissions, and stop conditions.
-- Keep important state explicit and make consequential actions reviewable.
-- Log actions and design safe recovery for partial failures or repeated execution.
+- Limit the maximum number of attempts.
+- Use exponential backoff and jitter.
+- Respect provider retry-after guidance.
+- Retry only idempotent or safely deduplicated actions.
+- Record every attempt and final outcome.
+- Escalate or switch strategy after the budget is exhausted.
+
+## Trade-offs and limitations
+
+Retries increase latency and can amplify outages when many workers retry simultaneously. A model retry may produce a different answer but does not correct missing data or invalid assumptions.
+
+## Common mistakes
+
+- Retrying every exception with no classification.
+- Immediately repeating requests in a tight loop.
+- Retrying non-idempotent writes after an ambiguous timeout.
+- Hiding repeated failures from observability systems.
 
 ## Related concepts
 
 - [Agents and Automation](../../)
-- [Task Decomposition](../task-decomposition/)
-- [Autonomy Levels](../autonomy-levels/)
+- [Idempotency](../idempotency/)
+- [Failure Recovery](../failure-recovery/)
+- [Rate Limits](../../../evaluation-and-operations/sub/rate-limits/)

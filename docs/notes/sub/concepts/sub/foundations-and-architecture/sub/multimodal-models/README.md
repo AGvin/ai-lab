@@ -6,20 +6,34 @@ ai_content:
   l10n: true
 -->
 
-Models that process or generate more than one modality, such as text, images, audio, or video.
+Multimodal models process or generate more than one data modality, such as text, images, audio, video, documents, or sensor signals.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+A multimodal system converts different inputs into representations that can interact in a shared model or coordinated components. A vision-language model may encode an image and combine it with text tokens; a generative system may condition image or video output on text and reference media.
 
 ## Practical use
 
-- Use the concept to interpret model cards, architecture names, and capability claims.
-- Connect architecture choices to likely capabilities, constraints, and resource behavior.
-- Avoid treating an architecture label as a substitute for task-specific evaluation.
+- Image and document question answering.
+- Screenshot and diagram analysis.
+- Speech transcription and synthesis.
+- Text-guided image or video generation.
+- Cross-modal search using shared embeddings.
+
+## Trade-offs and limitations
+
+Each modality introduces its own preprocessing, context cost, and failure modes. Image resolution, audio duration, frame sampling, and document layout can determine what information the model actually receives. Strong text performance does not imply equally strong visual reasoning.
+
+## Common mistakes
+
+- Assuming the model sees every pixel or video frame at full fidelity.
+- Ignoring OCR, compression, or sampling artifacts.
+- Treating a generated description as exact measurement.
+- Evaluating only one modality independently.
 
 ## Related concepts
 
 - [Foundations and Architecture](../../)
-- [Large Language Models](../large-language-models/)
-- [Transformers](../transformers/)
+- [Vision-Language Models](../../../multimodal-and-generative-media/sub/vision-language-models/)
+- [Multimodal Context](../../../multimodal-and-generative-media/sub/multimodal-context/)
+- [Image Embeddings](../../../multimodal-and-generative-media/sub/image-embeddings/)

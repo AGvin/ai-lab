@@ -6,20 +6,37 @@ ai_content:
   l10n: true
 -->
 
-Breaking a large task into smaller, verifiable units of work.
+Task decomposition divides a large objective into smaller units that can be executed, validated, and recombined.
 
-## Why it matters
+## Core idea
 
-This concept helps users make more informed decisions when selecting, configuring, or evaluating AI models and workflows.
+Decomposition reduces cognitive and context load by isolating responsibilities. A useful subtask has a clear input, expected output, dependencies, and completion criterion. Subtasks may run sequentially or in parallel when they do not share mutable state.
 
 ## Practical use
 
-- Use the concept when defining agent control flow, tools, permissions, and stop conditions.
-- Keep important state explicit and make consequential actions reviewable.
-- Log actions and design safe recovery for partial failures or repeated execution.
+- Split research into source discovery, evidence extraction, comparison, and synthesis.
+- Separate code changes by component or responsibility.
+- Divide document processing into independent files or sections.
+- Assign specialized subtasks to different tools or agents.
+
+## Design guidance
+
+Decompose around meaningful boundaries, not arbitrary token sizes. Preserve enough context for each subtask to make correct decisions. Define how conflicts and duplicate work will be reconciled before running subtasks in parallel.
+
+## Trade-offs and limitations
+
+Excessive decomposition creates coordination overhead and loses global context. Poorly separated tasks can produce incompatible outputs or repeat the same work.
+
+## Common mistakes
+
+- Creating subtasks with vague completion criteria.
+- Splitting work that depends on shared hidden assumptions.
+- Merging outputs without validation.
+- Using multiple agents when a deterministic loop would be simpler.
 
 ## Related concepts
 
 - [Agents and Automation](../../)
-- [Function Calling](../function-calling/)
-- [Retries](../retries/)
+- [Planning](../planning/)
+- [Multi-Agent Systems](../multi-agent-systems/)
+- [Agentic Workflows](../agentic-workflows/)
