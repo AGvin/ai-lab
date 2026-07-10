@@ -163,6 +163,8 @@ jobs:
                   b"blob " + str(len(data)).encode() + b"\0" + data
               ).hexdigest()
 
+          roots = [Path("docs/notes/sub/concepts"), Path("l10n/uk_UA")]
+
           for localized in Path("docs/notes/sub/concepts").rglob("l10n/uk_UA/README.md"):
               text = localized.read_text(encoding="utf-8")
               match = re.search(r"source_hash: gitblob:([0-9a-f]{40})", text)
@@ -218,6 +220,14 @@ jobs:
           rm -f .github/concept-generator.part-*
           rm -f .github/workflows/apply-concept-docs.yml
 
+      - name: Upload diagnostic log
+        if: steps.generate.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: concept-docs-diagnostics
+          path: /tmp/concept-docs.log
+          if-no-files-found: error
+
       - name: Commit generated documentation
         if: steps.generate.outcome == 'success'
         shell: bash
@@ -229,18 +239,3 @@ jobs:
           git diff --cached --check
           git commit -m "Expand AI concept documentation"
           git push origin HEAD:docs/add-rag-concept
-
-      - name: Commit diagnostic log
-        if: steps.generate.outcome == 'failure'
-        shell: bash
-        run: |
-          set -euo pipefail
-          cp /tmp/concept-docs.log /tmp/concept-docs-workflow.log
-          git reset --hard HEAD
-          cp /tmp/concept-docs-workflow.log concept-docs-workflow.log
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add concept-docs-workflow.log
-          git commit -m "Record concept documentation workflow failure"
-          git push origin HEAD:docs/add-rag-concept
-          exit 1
