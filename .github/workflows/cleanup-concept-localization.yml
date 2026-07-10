@@ -1,0 +1,102 @@
+name: Cleanup concept localization artifacts
+
+on:
+  push:
+    branches:
+      - docs/add-rag-concept
+    paths:
+      - .cleanup-concept-localization-trigger
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: docs/add-rag-concept
+          fetch-depth: 0
+
+      - name: Remove unintended localization artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+
+          root = Path('docs/notes/sub/concepts')
+          allowed_localizations = {
+              root / 'l10n/uk_UA/README.md',
+              root / 'sub/training-and-adaptation/sub/lora/l10n/uk_UA/README.md',
+          }
+
+          for path in list(root.rglob('l10n/uk_UA/README.md')):
+              if path not in allowed_localizations:
+                  path.unlink()
+
+          for directory in sorted(root.rglob('*'), key=lambda p: len(p.parts), reverse=True):
+              if directory.is_dir() and directory != root:
+                  try:
+                      directory.rmdir()
+                  except OSError:
+                      pass
+
+          marker = re.compile(
+              r'\n?<!--\s*\nai_content:\s*\n\s*managed:\s*true\s*\n\s*l10n:\s*true\s*\n-->\s*\n?',
+              re.M,
+          )
+          translations = re.compile(
+              r'\n## Translations\n\n- English — current\n- \[Українська\]\(\./l10n/uk_UA/\)\n?',
+              re.M,
+          )
+
+          for source in root.rglob('README.md'):
+              if '/l10n/' in source.as_posix():
+                  continue
+              text = source.read_text(encoding='utf-8')
+              text = marker.sub('\n', text)
+              localized = source.parent / 'l10n/uk_UA/README.md'
+              if not localized.exists():
+                  text = translations.sub('', text, count=1)
+              while '\n\n\n' in text:
+                  text = text.replace('\n\n\n', '\n\n')
+              source.write_text(text, encoding='utf-8')
+
+          concepts_l10n = root / 'l10n/uk_UA/README.md'
+          concepts_l10n.parent.mkdir(parents=True, exist_ok=True)
+          concepts_l10n.write_text('''<!--
+l10n:
+  locale: uk_UA
+  source_locale: default
+  source_path: ../../README.md
+  source_hash: gitblob:fda9c65f89532e3505c61a21ff50bdeec9252c3c
+  mode: translated
+-->
+
+# Concepts
+
+Локалізована точка входу для explanations of AI concepts.
+
+## Переклади
+
+- [English](../../)
+- Українська — поточна
+''', encoding='utf-8')
+          PY
+
+          rm -f .github/workflows/cleanup-concept-localization.yml
+          rm -f .cleanup-concept-localization-trigger
+
+      - name: Commit cleanup
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          git commit -m "Remove unintended concept localizations"
+          git push origin HEAD:docs/add-rag-concept
