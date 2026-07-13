@@ -15,3 +15,11 @@ l10n:
 
 - [English](../../)
 - Українська
+
+## Дочірні вузли
+
+- [`continue/`](../../sub/continue/l10n/uk_UA/) — AI coding assistant extension.
+
+## Область
+
+Використовуйте цей вузол для розширень Visual Studio Code, релевантних розробленню за допомогою ШІ.
