@@ -15,3 +15,25 @@ l10n:
 
 - [English](../../)
 - Українська
+
+## Metadata
+
+```text
+Тип ресурсу: leaderboard
+Область: порівняння open LLM
+Експлуатаційна вимога: хостинговий сервіс
+Джерело: https://llm-stats.com/leaderboards/open-llm-leaderboard
+Примітки щодо ризиків: Перевірте методологію, критерії включення моделей, частоту оновлень та обмеження benchmark до використання rankings для рішень.
+```
+
+## Призначення
+
+Використовуйте цю сторінку для відстеження Open LLM Leaderboard від LLM Stats.
+
+## Релевантність для ШІ
+
+Цей leaderboard релевантний AI Lab як довідковий ресурс для порівняння open LLMs.
+
+## Посилання
+
+- https://llm-stats.com/leaderboards/open-llm-leaderboard

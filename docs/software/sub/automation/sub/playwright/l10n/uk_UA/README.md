@@ -15,3 +15,48 @@ l10n:
 
 - [English](../../)
 - Українська
+
+## Metadata
+
+```text
+Тип ресурсу: інструмент автоматизації браузера
+Основний сценарій: автоматизоване тестування вебсайтів і автоматизація браузера
+Модель доступу: локальна development dependency та CI tool
+Ліцензія: Apache-2.0
+Модель вихідного коду: Open source
+Експлуатаційна вимога: development environment і browser runtime
+Режими інтеграції: CLI, test runner, browser automation library, CI workflow
+Апаратне прискорення: Зазвичай не стосується
+Джерело: https://playwright.dev/
+Примітки щодо ризиків: До використання в непублічних workflows перевірте ізоляцію test environment, browser permissions, роботу із секретами, network access і CI exposure.
+```
+
+## Призначення
+
+Використовуйте Playwright для контрольованої автоматизації браузера й автоматизованого тестування вебсайтів.
+
+## Релевантність для ШІ
+
+Playwright сам не є інструментом ШІ. У цьому репозиторії його задокументовано, бо автоматизація браузера може підтримувати суміжні зі ШІ workflows: автоматизоване тестування вебсайтів, AI-assisted test generation, керування браузером, validation workflows і можливу інтеграцію з AI workflows.
+
+## Режими розгортання
+
+- Локальна робоча станція
+- Self-hosted сервер
+- CI environment
+
+## Апаратне прискорення
+
+- Зазвичай не стосується
+
+## Режими інтеграції
+
+- CLI
+- Test runner
+- Browser automation library
+- CI workflow
+
+## Посилання
+
+- https://playwright.dev/
+- https://github.com/microsoft/playwright
