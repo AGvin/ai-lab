@@ -26,27 +26,27 @@ l10n:
 
 ## Вузли документації
 
-- [`docs/software/`](../../software/l10n/uk_UA/) — пов’язане зі ШІ ПЗ, inference tools, workflow engines, development workflows, редактори коду, агенти, assistants, automation tools, платформи й моделі.
-- [`docs/notes/`](../../notes/l10n/uk_UA/) — поняття, benchmarks, порівняння та практичні нотатки про ШІ.
+- [`docs/software/`](../../../software/l10n/uk_UA/) — пов’язане зі ШІ ПЗ, inference tools, workflow engines, development workflows, редактори коду, агенти, assistants, automation tools, платформи й моделі.
+- [`docs/notes/`](../../../notes/l10n/uk_UA/) — поняття, benchmarks, порівняння та практичні нотатки про ШІ.
 
 ## Поточні області software
 
-- [`inference/`](../../software/sub/inference/l10n/uk_UA/) — локальне й self-hosted виконання моделей.
-- [`workflow-engines/`](../../software/sub/workflow-engines/l10n/uk_UA/) — AI workflow engines та UIs.
-- [`development-workflows/`](../../software/sub/development-workflows/l10n/uk_UA/) — інструменти, що структурують розроблення ПЗ за допомогою ШІ через довговічні специфікації, плани, задачі, валідацію та етапи реалізації.
-- [`code-editors/`](../../software/sub/code-editors/l10n/uk_UA/) — редактори коду й екосистеми editor extensions.
-- [`agents/`](../../software/sub/agents/l10n/uk_UA/) — агентоподібні системи ШІ.
-- [`agent-orchestration/`](../../software/sub/agent-orchestration/l10n/uk_UA/) — системи, frameworks, runtimes і control planes для координації чи запуску агентів ШІ.
-- [`assistants/`](../../software/sub/assistants/l10n/uk_UA/) — розмовні assistants ШІ.
-- [`automation/`](../../software/sub/automation/l10n/uk_UA/) — засоби автоматизації для суміжних зі ШІ workflows.
-- [`model-platforms/`](../../software/sub/model-platforms/l10n/uk_UA/) — платформи моделей, datasets та інструментів ШІ.
-- [`models/`](../../software/sub/models/l10n/uk_UA/) — сімейства моделей та окремі моделі ШІ.
+- [`inference/`](../../../software/sub/inference/l10n/uk_UA/) — локальне й self-hosted виконання моделей.
+- [`workflow-engines/`](../../../software/sub/workflow-engines/l10n/uk_UA/) — AI workflow engines та UIs.
+- [`development-workflows/`](../../../software/sub/development-workflows/l10n/uk_UA/) — інструменти, що структурують розроблення ПЗ за допомогою ШІ через довговічні специфікації, плани, задачі, валідацію та етапи реалізації.
+- [`code-editors/`](../../../software/sub/code-editors/l10n/uk_UA/) — редактори коду й екосистеми editor extensions.
+- [`agents/`](../../../software/sub/agents/l10n/uk_UA/) — агентоподібні системи ШІ.
+- [`agent-orchestration/`](../../../software/sub/agent-orchestration/l10n/uk_UA/) — системи, frameworks, runtimes і control planes для координації чи запуску агентів ШІ.
+- [`assistants/`](../../../software/sub/assistants/l10n/uk_UA/) — розмовні assistants ШІ.
+- [`automation/`](../../../software/sub/automation/l10n/uk_UA/) — засоби автоматизації для суміжних зі ШІ workflows.
+- [`model-platforms/`](../../../software/sub/model-platforms/l10n/uk_UA/) — платформи моделей, datasets та інструментів ШІ.
+- [`models/`](../../../software/sub/models/l10n/uk_UA/) — сімейства моделей та окремі моделі ШІ.
 
 ## Поточні області notes
 
-- [`concepts/`](../../notes/sub/concepts/l10n/uk_UA/) — пояснення понять ШІ.
-- [`benchmarks/`](../../notes/sub/benchmarks/l10n/uk_UA/) — довідкові ресурси benchmark і leaderboard.
-- [`comparisons/`](../../notes/sub/comparisons/l10n/uk_UA/) — порівняння для підтримки рішень щодо моделей, інструментів, workflows, платформ і систем ШІ.
+- [`concepts/`](../../../notes/sub/concepts/l10n/uk_UA/) — пояснення понять ШІ.
+- [`benchmarks/`](../../../notes/sub/benchmarks/l10n/uk_UA/) — довідкові ресурси benchmark і leaderboard.
+- [`comparisons/`](../../../notes/sub/comparisons/l10n/uk_UA/) — порівняння для підтримки рішень щодо моделей, інструментів, workflows, платформ і систем ШІ.
 
 ## Assets
 
