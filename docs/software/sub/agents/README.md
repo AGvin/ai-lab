@@ -2,6 +2,11 @@
 
 Agent-like AI systems where agent behavior is the main documented role.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Child nodes
 
 - [`aider/`](./sub/aider/) — terminal-based AI pair programming tool and coding agent for local Git repositories.
@@ -20,6 +25,8 @@ Agent-like AI systems where agent behavior is the main documented role.
 - [`mini-swe-agent/`](./sub/mini-swe-agent/) — minimal software-engineering agent for local or sandboxed shell-driven coding tasks.
 - [`openai-codex/`](./sub/openai-codex/) — OpenAI coding agent for software-engineering workflows across app, IDE, CLI, web, and automation surfaces.
 - [`openclaw/`](./sub/openclaw/) — personal AI assistant that runs on user-controlled devices.
+- [`opencode/`](./sub/opencode/) — open-source coding-agent application and runtime for terminal, desktop, IDE, and automated workflows.
+- [`omp/`](./sub/omp/) — terminal coding agent derived from Pi with integrated editing, LSP, DAP, runtime, browser, and subagent tools.
 - [`pi/`](./sub/pi/) — terminal coding-agent harness documented at pi.dev.
 - [`qodo/`](./sub/qodo/) — AI code-review agent suite integrated into Git pull-request workflows.
 - [`replit-agent/`](./sub/replit-agent/) — AI app-building agent for turning natural-language prompts into apps and websites inside Replit.
