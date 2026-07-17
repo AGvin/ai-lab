@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:549e7d4d96d70f24a8385a3b2c9a933e255dbeeb
+  source_hash: gitblob:c41225a0e93ffe487ff2e8e106b0bdcb3a83b754
   mode: translated
 -->
 
@@ -26,15 +26,17 @@ l10n:
 
 ## Вузли документації
 
-- [`docs/software/`](../../../software/l10n/uk_UA/) — пов’язане зі ШІ ПЗ, inference tools, workflow engines, development workflows, редактори коду, агенти, assistants, automation tools, платформи й моделі.
+- [`docs/software/`](../../../software/l10n/uk_UA/) — пов’язане зі ШІ ПЗ, інструменти розробки, inference tools, workflow engines, агенти, assistants, automation tools, платформи й моделі.
 - [`docs/notes/`](../../../notes/l10n/uk_UA/) — поняття, benchmarks, порівняння та практичні нотатки про ШІ.
 
 ## Поточні області software
 
+- [`development/`](../../../software/sub/development/l10n/uk_UA/) — програмне забезпечення для створення, структурування, інспектування й перевірки змін у розробці за допомогою ШІ.
+  - [`code-editors/`](../../../software/sub/development/sub/code-editors/l10n/uk_UA/) — редактори коду й екосистеми editor extensions.
+  - [`development-workflows/`](../../../software/sub/development/sub/development-workflows/l10n/uk_UA/) — інструменти, що структурують розроблення ПЗ через довговічні специфікації, плани, задачі, валідацію та реалізацію.
+  - [`code-review-tools/`](../../../software/sub/development/sub/code-review-tools/l10n/uk_UA/) — неагентні інструменти для інспектування, навігації, анотування й перевірки наборів змін коду.
 - [`inference/`](../../../software/sub/inference/l10n/uk_UA/) — локальне й self-hosted виконання моделей.
 - [`workflow-engines/`](../../../software/sub/workflow-engines/l10n/uk_UA/) — AI workflow engines та UIs.
-- [`development-workflows/`](../../../software/sub/development-workflows/l10n/uk_UA/) — інструменти, що структурують розроблення ПЗ за допомогою ШІ через довговічні специфікації, плани, задачі, валідацію та етапи реалізації.
-- [`code-editors/`](../../../software/sub/code-editors/l10n/uk_UA/) — редактори коду й екосистеми editor extensions.
 - [`agents/`](../../../software/sub/agents/l10n/uk_UA/) — агентоподібні системи ШІ.
 - [`agent-orchestration/`](../../../software/sub/agent-orchestration/l10n/uk_UA/) — системи, frameworks, runtimes і control planes для координації чи запуску агентів ШІ.
 - [`assistants/`](../../../software/sub/assistants/l10n/uk_UA/) — розмовні assistants ШІ.
@@ -78,7 +80,7 @@ assets/
 Приклад:
 
 ```text
-docs/software/sub/code-editors/sub/vs-code/
+docs/software/sub/development/sub/code-editors/sub/vs-code/
   README.md
   assets/
     images/
