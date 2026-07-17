@@ -12,15 +12,17 @@ Do not create `docs/README.md`.
 
 ## Documentation Nodes
 
-- [`docs/software/`](../software/) — AI-related software, inference tools, workflow engines, development workflows, code editors, agents, assistants, automation tools, platforms, and models.
+- [`docs/software/`](../software/) — AI-related software, development tooling, inference tools, workflow engines, agents, assistants, automation tools, platforms, and models.
 - [`docs/notes/`](../notes/) — concepts, benchmarks, comparisons, and practical AI notes.
 
 ## Current Software Areas
 
+- [`development/`](../software/sub/development/) — software used to create, structure, inspect, and review changes in AI-assisted development workflows.
+  - [`code-editors/`](../software/sub/development/sub/code-editors/) — code editors and editor extension ecosystems.
+  - [`development-workflows/`](../software/sub/development/sub/development-workflows/) — tools that structure AI-assisted software delivery through durable specifications, plans, tasks, validation, and implementation stages.
+  - [`code-review-tools/`](../software/sub/development/sub/code-review-tools/) — non-agent tools for inspecting, navigating, annotating, and reviewing code changesets.
 - [`inference/`](../software/sub/inference/) — local and self-hosted model execution.
 - [`workflow-engines/`](../software/sub/workflow-engines/) — AI workflow engines and UIs.
-- [`development-workflows/`](../software/sub/development-workflows/) — tools that structure AI-assisted software delivery through durable specifications, plans, tasks, validation, and implementation stages.
-- [`code-editors/`](../software/sub/code-editors/) — code editors and editor extension ecosystems.
 - [`agents/`](../software/sub/agents/) — agent-like AI systems.
 - [`agent-orchestration/`](../software/sub/agent-orchestration/) — systems, frameworks, runtimes, and control planes for coordinating or running AI agents.
 - [`assistants/`](../software/sub/assistants/) — conversational AI assistants.
@@ -64,7 +66,7 @@ Folder roles:
 Example:
 
 ```text
-docs/software/sub/code-editors/sub/vs-code/
+docs/software/sub/development/sub/code-editors/sub/vs-code/
   README.md
   assets/
     images/
