@@ -2,6 +2,11 @@
 
 Software used for AI-assisted software development, including code editors, development lifecycle tooling, and code-review utilities.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Child nodes
 
 - [`code-editors/`](./sub/code-editors/) — code editors and editor extension ecosystems used for AI-assisted development.

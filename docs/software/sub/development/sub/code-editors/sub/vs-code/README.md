@@ -2,6 +2,11 @@
 
 Visual Studio Code is a code editor with an extension ecosystem for AI-assisted development workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
@@ -24,7 +29,7 @@ Visual Studio Code is relevant to AI Lab because its extension ecosystem can hos
 
 ## Extension ecosystem
 
-Document editor-specific extensions under the `extensions/` child node.
+Document editor-specific extensions under the [`extensions/`](./sub/extensions/) child node.
 
 ## References
 

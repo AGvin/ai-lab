@@ -2,6 +2,11 @@
 
 Hunk is an open-source, review-first terminal diff viewer designed for interactively inspecting multi-file changesets, including changes authored by coding agents.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

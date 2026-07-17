@@ -2,6 +2,11 @@
 
 Practical AI lab for models, tools, local inference, benchmarks, hardware notes, and automation workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Documentation Layout
 
 Use `docs/` as the repository-level documentation container.

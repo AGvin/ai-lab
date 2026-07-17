@@ -2,6 +2,11 @@
 
 Continue is an AI coding assistant extension for editor workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

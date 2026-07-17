@@ -2,6 +2,11 @@
 
 Non-agent tools for visualizing, navigating, inspecting, annotating, and reviewing code diffs and changesets in AI-assisted development workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Tools
 
 - [`hunk/`](./sub/hunk/) — review-first terminal diff viewer for agent-authored and human-authored changesets.

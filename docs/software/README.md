@@ -2,6 +2,11 @@
 
 Software documentation for AI-related development tooling, model platforms, inference tools, workflow engines, agents, agent orchestration systems, assistants, automation tools, and models.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Child nodes
 
 - [`development/`](./sub/development/) — software used to create, structure, inspect, and review changes in AI-assisted development workflows.

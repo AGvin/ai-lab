@@ -2,6 +2,11 @@
 
 GitHub Spec Kit is an open-source toolkit and CLI for Spec-Driven Development (SDD) with AI coding agents. It turns product intent into durable specifications, technical plans, task breakdowns, validation artifacts, and implementation workflows instead of relying on one-shot coding prompts.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
