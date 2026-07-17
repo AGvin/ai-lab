@@ -2,6 +2,11 @@
 
 Cursor is an AI-enabled code editor with built-in AI integration.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
