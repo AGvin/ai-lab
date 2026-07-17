@@ -1,13 +1,17 @@
 # Software
 
-Software documentation for AI-related model platforms, inference tools, workflow engines, development workflows, code editors, agents, agent orchestration systems, assistants, automation tools, and models.
+Software documentation for AI-related development tooling, model platforms, inference tools, workflow engines, agents, agent orchestration systems, assistants, automation tools, and models.
+
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
 
 ## Child nodes
 
+- [`development/`](./sub/development/) — software used to create, structure, inspect, and review changes in AI-assisted development workflows.
 - [`inference/`](./sub/inference/) — tools for local or self-hosted model execution.
 - [`workflow-engines/`](./sub/workflow-engines/) — tools that build or execute AI workflows.
-- [`development-workflows/`](./sub/development-workflows/) — tools that structure AI-assisted software delivery through specifications, plans, tasks, validation, and implementation stages.
-- [`code-editors/`](./sub/code-editors/) — code editors and editor extension ecosystems used for AI-assisted development.
 - [`agents/`](./sub/agents/) — agent-like AI systems where agent behavior is the main documented role.
 - [`agent-orchestration/`](./sub/agent-orchestration/) — systems, frameworks, runtimes, and control planes for coordinating or running AI agents.
 - [`assistants/`](./sub/assistants/) — conversational AI assistants.

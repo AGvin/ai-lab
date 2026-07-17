@@ -3,13 +3,13 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:7310d3012d008e6bb9538e2567f5a998e7c818f7
+  source_hash: gitblob:2396e5fab7834976292dcf79e6375818645de0f2
   mode: translated
 -->
 
 # Software
 
-Документація про пов’язані зі ШІ платформи моделей, inference tools, workflow engines, development workflows, редактори коду, агенти, системи оркестрації агентів, assistants, засоби автоматизації та моделі.
+Документація про пов’язані зі ШІ інструменти розробки, платформи моделей, inference tools, workflow engines, агенти, системи оркестрації агентів, assistants, засоби автоматизації та моделі.
 
 ## Переклади
 
@@ -18,10 +18,9 @@ l10n:
 
 ## Дочірні вузли
 
+- [`development/`](../../sub/development/l10n/uk_UA/) — програмне забезпечення для створення, структурування, інспектування й перевірки змін у розробці за допомогою ШІ.
 - [`inference/`](../../sub/inference/l10n/uk_UA/) — інструменти для локального або self-hosted виконання моделей.
 - [`workflow-engines/`](../../sub/workflow-engines/l10n/uk_UA/) — інструменти для створення чи виконання AI workflows.
-- [`development-workflows/`](../../sub/development-workflows/l10n/uk_UA/) — інструменти, що структурують розроблення ПЗ за допомогою ШІ через специфікації, плани, задачі, валідацію та етапи реалізації.
-- [`code-editors/`](../../sub/code-editors/l10n/uk_UA/) — редактори коду й екосистеми розширень для розроблення за допомогою ШІ.
 - [`agents/`](../../sub/agents/l10n/uk_UA/) — агентоподібні системи ШІ, де поведінка агента є основною задокументованою роллю.
 - [`agent-orchestration/`](../../sub/agent-orchestration/l10n/uk_UA/) — системи, frameworks, runtimes і control planes для координації чи запуску агентів ШІ.
 - [`assistants/`](../../sub/assistants/l10n/uk_UA/) — розмовні assistants ШІ.
