@@ -108,6 +108,7 @@ Concepts for configuring AI systems that plan, use tools, maintain state, and pe
 ### Useful
 
 - [`function-calling/`](./sub/agents-and-automation/sub/function-calling/) — A structured tool interface where model output selects a function and arguments.
+- [`model-context-protocol/`](./sub/agents-and-automation/sub/model-context-protocol/) — An open client-server protocol for exposing tools, resources, prompts, and related capabilities to AI applications.
 - [`task-decomposition/`](./sub/agents-and-automation/sub/task-decomposition/) — Breaking a large task into smaller, verifiable units.
 - [`retries/`](./sub/agents-and-automation/sub/retries/) — Repeating eligible failed operations under bounded rules.
 - [`autonomy-levels/`](./sub/agents-and-automation/sub/autonomy-levels/) — The degree of independent decision-making granted to an AI system.

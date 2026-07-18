@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:05046fed360a4072c37505f1b0d564190d4353b3
+  source_hash: gitblob:607fa9cb73165ae78b0fba20678cd0094bc48163
   mode: translated
 -->
 
@@ -59,8 +59,8 @@ l10n:
 
 ### Корисні
 
-- [`few-shot-prompting/`](../../sub/model-usage-and-generation/sub/few-shot-prompting/l10n/uk_UA/) — промптинг із невеликою кількістю прикладів бажаної поведінки.
-- [`sampling-parameters/`](../../sub/model-usage-and-generation/sub/sampling-parameters/l10n/uk_UA/) — параметри на кшталт температури, top-p, top-k і seed, що впливають на вибір токенів.
+- [`few-shot-prompting/`](../../sub/model-usage-and-generation/sub/few-shot-prompting/l10n/uk_UA/) — prompting із невеликою кількістю прикладів бажаної поведінки.
+- [`sampling-parameters/`](../../sub/model-usage-and-generation/sub/sampling-parameters/l10n/uk_UA/) — параметри на кшталт temperature, top-p, top-k і seed, що впливають на вибір токенів.
 - [`reasoning-models/`](../../sub/model-usage-and-generation/sub/reasoning-models/l10n/uk_UA/) — моделі, оптимізовані витрачати додаткові обчислення на багатоетапне розв’язання задач.
 - [`model-capabilities-and-limitations/`](../../sub/model-usage-and-generation/sub/model-capabilities-and-limitations/l10n/uk_UA/) — практичні сильні сторони, межі й режими відмови конкретної моделі або розгортання.
 
@@ -72,8 +72,6 @@ l10n:
 ## [Retrieval і знання](../../sub/retrieval-and-knowledge/l10n/uk_UA/)
 
 Поняття для під’єднання моделей до зовнішньої інформації, придатних до пошуку документів і контексту, підкріпленого свідченнями.
-
-Поняття згруповано за практичним пріоритетом. Пріоритет впливає на порядок читання, а не на тематичне розміщення.
 
 ### Основні
 
@@ -119,6 +117,7 @@ l10n:
 ### Корисні
 
 - [`function-calling/`](../../sub/agents-and-automation/sub/function-calling/l10n/uk_UA/) — структурований інтерфейс інструментів, у якому вихід моделі визначає функцію та аргументи.
+- [`model-context-protocol/`](../../sub/agents-and-automation/sub/model-context-protocol/l10n/uk_UA/) — відкритий client-server protocol для надання AI-застосункам tools, resources, prompts та пов’язаних capabilities.
 - [`task-decomposition/`](../../sub/agents-and-automation/sub/task-decomposition/l10n/uk_UA/) — поділ великої задачі на менші одиниці, які можна перевірити.
 - [`retries/`](../../sub/agents-and-automation/sub/retries/l10n/uk_UA/) — повторення допустимих невдалих операцій за обмеженими правилами.
 - [`autonomy-levels/`](../../sub/agents-and-automation/sub/autonomy-levels/l10n/uk_UA/) — ступінь самостійності в ухваленні рішень, наданий системі ШІ.
@@ -149,19 +148,17 @@ l10n:
 - [`model-loading/`](../../sub/inference-and-serving/sub/model-loading/l10n/uk_UA/) — переміщення артефактів моделі до RAM, VRAM або керованої середовищем пам’яті для виконання.
 - [`cpu-inference/`](../../sub/inference-and-serving/sub/cpu-inference/l10n/uk_UA/) — виконання обчислень моделі переважно на процесорах загального призначення.
 - [`gpu-inference/`](../../sub/inference-and-serving/sub/gpu-inference/l10n/uk_UA/) — виконання обчислень моделі переважно на графічних процесорах для паралельних навантажень.
-- [`context-caching/`](../../sub/inference-and-serving/sub/context-caching/l10n/uk_UA/) — повторне використання раніше обробленого контексту промпту для зменшення повторних обчислень.
+- [`context-caching/`](../../sub/inference-and-serving/sub/context-caching/l10n/uk_UA/) — повторне використання раніше обробленого контексту prompt для зменшення повторних обчислень.
 
 ### Спеціалізовані
 
 - [`flash-attention/`](../../sub/inference-and-serving/sub/flash-attention/l10n/uk_UA/) — реалізації уваги, оптимізовані для зменшення обміну з пам’яттю й підвищення ефективності GPU.
-- [`continuous-batching/`](../../sub/inference-and-serving/sub/continuous-batching/l10n/uk_UA/) — динамічне об’єднання активних запитів інференсу для ефективнішого обслуговування.
+- [`continuous-batching/`](../../sub/inference-and-serving/sub/continuous-batching/l10n/uk_UA/) — динамічне об’єднання активних inference-запитів для ефективнішого обслуговування.
 - [`speculative-decoding/`](../../sub/inference-and-serving/sub/speculative-decoding/l10n/uk_UA/) — використання швидшого чернеткового процесу для пропонування токенів, які перевіряє цільова модель.
 
 ## [Навчання й адаптація](../../sub/training-and-adaptation/l10n/uk_UA/)
 
 Поняття для навчання моделей або адаптації наявних моделей до задач, доменів, переваг та обмежень розгортання.
-
-Поняття згруповано за практичним пріоритетом. Пріоритет впливає на порядок читання, а не на тематичне розміщення.
 
 ### Основні
 
@@ -199,7 +196,7 @@ l10n:
 - [`diffusion-models/`](../../sub/multimodal-and-generative-media/sub/diffusion-models/l10n/uk_UA/) — генеративні моделі, які навчаються обертати поступове додавання шуму.
 - [`image-to-image/`](../../sub/multimodal-and-generative-media/sub/image-to-image/l10n/uk_UA/) — генерація перетвореного зображення з урахуванням наявного.
 - [`inpainting/`](../../sub/multimodal-and-generative-media/sub/inpainting/l10n/uk_UA/) — повторна генерація вибраних замаскованих ділянок зображення.
-- [`controlnet/`](../../sub/multimodal-and-generative-media/sub/controlnet/l10n/uk_UA/) — зумовлення дифузійних моделей структурними засобами: краями, глибиною чи позою.
+- [`controlnet/`](../../sub/multimodal-and-generative-media/sub/controlnet/l10n/uk_UA/) — зумовлення diffusion-моделей структурними засобами: краями, глибиною чи позою.
 - [`multimodal-context/`](../../sub/multimodal-and-generative-media/sub/multimodal-context/l10n/uk_UA/) — сукупна текстова, візуальна, аудіо-, відео- чи документна інформація в запиті моделі.
 
 ### Корисні
@@ -220,18 +217,16 @@ l10n:
 
 Поняття для керування поведінкою моделей, захисту даних і зменшення операційних ризиків систем ШІ.
 
-Поняття згруповано за практичним пріоритетом. Пріоритет визначає порядок читання, а не тематичне розміщення.
-
 ### Основні
 
 - [`prompt-injection/`](../../sub/safety-privacy-and-reliability/sub/prompt-injection/l10n/uk_UA/) — вхід, створений для перевизначення чи маніпулювання інструкціями системи ШІ.
-- [`indirect-prompt-injection/`](../../sub/safety-privacy-and-reliability/sub/indirect-prompt-injection/l10n/uk_UA/) — шкідливі або суперечливі інструкції в зовнішньому вмісті.
+- [`indirect-prompt-injection/`](../../sub/safety-privacy-and-reliability/sub/indirect-prompt-injection/l10n/uk_UA/) — шкідливі або суперечливі інструкції в зовнішньому вмісті, який обробляє система ШІ.
 - [`trust-boundaries/`](../../sub/safety-privacy-and-reliability/sub/trust-boundaries/l10n/uk_UA/) — явне розділення довірених інструкцій, систем, користувачів і недовірених даних.
-- [`least-privilege/`](../../sub/safety-privacy-and-reliability/sub/least-privilege/l10n/uk_UA/) — надання системі лише дозволів для поточної задачі.
+- [`least-privilege/`](../../sub/safety-privacy-and-reliability/sub/least-privilege/l10n/uk_UA/) — надання системі ШІ лише дозволів, потрібних для поточної задачі.
 - [`sandboxing/`](../../sub/safety-privacy-and-reliability/sub/sandboxing/l10n/uk_UA/) — ізоляція виконання для обмеження наслідків збоїв або шкідливої поведінки.
-- [`secret-handling/`](../../sub/safety-privacy-and-reliability/sub/secret-handling/l10n/uk_UA/) — захист облікових даних, токенів, ключів та інших чутливих даних.
-- [`data-privacy/`](../../sub/safety-privacy-and-reliability/sub/data-privacy/l10n/uk_UA/) — контроль збирання, оброблення, зберігання й передавання особистих або конфіденційних даних.
-- [`retrieval-poisoning/`](../../sub/safety-privacy-and-reliability/sub/retrieval-poisoning/l10n/uk_UA/) — маніпулювання індексованими знаннями для повернення оманливого чи шкідливого контексту.
+- [`secret-handling/`](../../sub/safety-privacy-and-reliability/sub/secret-handling/l10n/uk_UA/) — захист облікових даних, токенів, ключів та інших чутливих операційних даних.
+- [`data-privacy/`](../../sub/safety-privacy-and-reliability/sub/data-privacy/l10n/uk_UA/) — контроль збирання, оброблення, зберігання й передавання особистих, конфіденційних або чутливих даних.
+- [`retrieval-poisoning/`](../../sub/safety-privacy-and-reliability/sub/retrieval-poisoning/l10n/uk_UA/) — маніпулювання індексованими знаннями, щоб retrieval надавав оманливий або шкідливий контекст.
 
 ### Корисні
 
@@ -242,9 +237,9 @@ l10n:
 
 ### Спеціалізовані
 
-- [`jailbreaking/`](../../sub/safety-privacy-and-reliability/sub/jailbreaking/l10n/uk_UA/) — спроби обійти налаштовані обмеження моделі.
-- [`model-alignment/`](../../sub/safety-privacy-and-reliability/sub/model-alignment/l10n/uk_UA/) — спрямування поведінки моделі до визначених цілей, цінностей і політик.
-- [`data-poisoning/`](../../sub/safety-privacy-and-reliability/sub/data-poisoning/l10n/uk_UA/) — псування навчальних даних для погіршення чи маніпулювання поведінкою моделі.
+- [`jailbreaking/`](../../sub/safety-privacy-and-reliability/sub/jailbreaking/l10n/uk_UA/) — спроби обійти налаштовані обмеження безпеки або політик моделі.
+- [`model-alignment/`](../../sub/safety-privacy-and-reliability/sub/model-alignment/l10n/uk_UA/) — спрямування поведінки моделі до визначених цілей, цінностей, політик або переваг.
+- [`data-poisoning/`](../../sub/safety-privacy-and-reliability/sub/data-poisoning/l10n/uk_UA/) — псування даних навчання або адаптації для погіршення чи маніпулювання поведінкою моделі.
 
 ## [Оцінювання та експлуатація](../../sub/evaluation-and-operations/l10n/uk_UA/)
 
@@ -266,12 +261,12 @@ l10n:
 - [`benchmarks/`](../../sub/evaluation-and-operations/sub/benchmarks/l10n/uk_UA/) — стандартизовані задачі чи datasets для порівняння моделей або систем.
 - [`evaluation-datasets/`](../../sub/evaluation-and-operations/sub/evaluation-datasets/l10n/uk_UA/) — добірки прикладів для тестування якості, безпеки, retrieval або виконання задач.
 - [`human-evaluation/`](../../sub/evaluation-and-operations/sub/human-evaluation/l10n/uk_UA/) — оцінювання результатів моделі людьми за явними критеріями.
-- [`fallback-models/`](../../sub/evaluation-and-operations/sub/fallback-models/l10n/uk_UA/) — альтернативні моделі, коли бажана модель не працює або недоступна.
+- [`fallback-models/`](../../sub/evaluation-and-operations/sub/fallback-models/l10n/uk_UA/) — альтернативні моделі, коли бажана модель не працює, недоступна або перевищує межі політики.
 - [`caching/`](../../sub/evaluation-and-operations/sub/caching/l10n/uk_UA/) — повторне використання попередніх результатів чи оброблених даних для зменшення повторної роботи.
 - [`rate-limits/`](../../sub/evaluation-and-operations/sub/rate-limits/l10n/uk_UA/) — controls, що обмежують обсяг запитів за певний час.
 
 ### Спеціалізовані
 
 - [`llm-as-a-judge/`](../../sub/evaluation-and-operations/sub/llm-as-a-judge/l10n/uk_UA/) — використання мовної моделі для оцінювання, ранжування чи критики результатів інших моделей.
-- [`retrieval-evaluation/`](../../sub/evaluation-and-operations/sub/retrieval-evaluation/l10n/uk_UA/) — вимірювання релевантності, повноти й правильності ранжування evidence у retrieval.
+- [`retrieval-evaluation/`](../../sub/evaluation-and-operations/sub/retrieval-evaluation/l10n/uk_UA/) — вимірювання того, чи повертає retrieval релевантні, повні й правильно ранжовані свідчення.
 - [`reproducibility/`](../../sub/evaluation-and-operations/sub/reproducibility/l10n/uk_UA/) — можливість повторити оцінювання чи workflow за порівнюваних умов і результатів.

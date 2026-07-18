@@ -35,7 +35,7 @@ Agent-like AI systems where agent behavior is the main documented role.
 
 Use this node for AI tools whose main documented role is autonomous or semi-autonomous agent behavior.
 
-Do not place code editors or editor-specific extensions here only because they have AI features. Use `code-editors/` for those resources.
+Do not place code editors or editor-specific extensions here only because they have AI features. Use [`development/code-editors/`](../development/sub/code-editors/) for those resources.
 
 ## Skipped or secondary candidates
 
