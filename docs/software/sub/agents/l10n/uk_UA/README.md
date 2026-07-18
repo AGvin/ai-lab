@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:ae00faee278be3ffca46565a7e7490391c677e30
+  source_hash: gitblob:e83e5a6e18e5adf6b0b50344338398222b121713
   mode: translated
 -->
 
@@ -34,6 +34,8 @@ l10n:
 - [`mini-swe-agent/`](../../sub/mini-swe-agent/l10n/uk_UA/) — мінімальний software-engineering agent для shell-driven задач.
 - [`openai-codex/`](../../sub/openai-codex/l10n/uk_UA/) — coding agent OpenAI для software-engineering workflows.
 - [`openclaw/`](../../sub/openclaw/l10n/uk_UA/) — персональний assistant ШІ на керованих користувачем пристроях.
+- [`opencode/`](../../sub/opencode/l10n/uk_UA/) — open-source застосунок і runtime coding-agent для terminal, desktop, IDE та automated workflows.
+- [`omp/`](../../sub/omp/l10n/uk_UA/) — terminal coding-agent на основі Pi з інтегрованими editing, LSP, DAP, runtime, browser і subagent tools.
 - [`pi/`](../../sub/pi/l10n/uk_UA/) — terminal coding-agent harness, задокументований на pi.dev.
 - [`qodo/`](../../sub/qodo/l10n/uk_UA/) — набір AI code-review agents для pull-request workflows.
 - [`replit-agent/`](../../sub/replit-agent/l10n/uk_UA/) — AI app-building agent у Replit.
@@ -42,7 +44,7 @@ l10n:
 
 Використовуйте цей вузол для інструментів ШІ, основна задокументована роль яких — автономна чи напівавтономна агентна поведінка.
 
-Не розміщуйте тут редактори коду або спеціалізовані для редактора розширення лише через функції ШІ. Для них використовуйте `code-editors/`.
+Не розміщуйте тут редактори коду або спеціалізовані для редактора розширення лише через функції ШІ. Для них використовуйте [`development/code-editors/`](../../sub/development/sub/code-editors/l10n/uk_UA/).
 
 ## Пропущені або другорядні кандидати
 

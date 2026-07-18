@@ -4,6 +4,11 @@ Concepts for configuring AI systems that plan, use tools, maintain state, and pe
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Essential
 
 - [`ai-agents/`](./sub/ai-agents/) — AI systems that pursue goals through model decisions, tools, state, and iterative actions.
@@ -19,7 +24,8 @@ Concepts are grouped by practical priority. Priority affects reading order, not 
 
 ## Useful
 
-- [`function-calling/`](./sub/function-calling/) — A structured tool interface where model output selects a function and arguments.
+- [`function-calling/`](./sub/function-calling/) — A structured model interface where output selects a function and provides arguments.
+- [`model-context-protocol/`](./sub/model-context-protocol/) — An open client-server protocol for exposing tools, resources, prompts, and related context capabilities to AI applications.
 - [`task-decomposition/`](./sub/task-decomposition/) — Breaking a large task into smaller, verifiable units.
 - [`retries/`](./sub/retries/) — Repeating eligible failed operations under bounded rules.
 - [`autonomy-levels/`](./sub/autonomy-levels/) — The degree of independent decision-making granted to an AI system.
