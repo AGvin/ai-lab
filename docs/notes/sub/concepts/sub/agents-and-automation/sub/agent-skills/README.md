@@ -7,6 +7,7 @@ A skill is procedural knowledge. It describes **how to work**, while tools provi
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Learning path
 
