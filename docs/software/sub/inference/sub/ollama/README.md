@@ -2,6 +2,11 @@
 
 Ollama is a model runtime for local and self-hosted model execution.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
