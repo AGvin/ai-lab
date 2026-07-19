@@ -2,6 +2,11 @@
 
 This tutorial explains how to design and build an AI plugin when a standalone Agent Skill is not enough. It starts from the common architectural model and then shows a complete Claude Code example because plugin manifests are platform-specific.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Learning objectives
 
 After completing this guide, you should be able to:
