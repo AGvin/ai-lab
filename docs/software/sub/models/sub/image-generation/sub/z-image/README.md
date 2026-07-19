@@ -2,6 +2,11 @@
 
 Z-Image is an Alibaba image generation model.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
