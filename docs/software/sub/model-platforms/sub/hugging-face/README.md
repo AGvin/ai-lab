@@ -2,6 +2,11 @@
 
 Hugging Face is a platform for AI models, datasets, Spaces, and related tooling.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
