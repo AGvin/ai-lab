@@ -2,6 +2,11 @@
 
 Multi-agent orchestration framework and platform for collaborative AI agents and controlled workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
