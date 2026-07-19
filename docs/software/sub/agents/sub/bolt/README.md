@@ -2,6 +2,11 @@
 
 AI app and website builder for creating software by chatting with an agent.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
