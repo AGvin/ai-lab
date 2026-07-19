@@ -2,6 +2,11 @@
 
 Proprietary autonomous software-engineering agent for ticket-driven development workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
