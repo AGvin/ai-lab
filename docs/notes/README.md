@@ -2,6 +2,11 @@
 
 Practical notes that are not themselves software or hardware documentation.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Child nodes
 
 - [`concepts/`](./sub/concepts/) — explanations of AI concepts.
