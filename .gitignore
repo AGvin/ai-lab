@@ -67,8 +67,21 @@ __pycache__/
 .venv/
 venv/
 
-# Package output
+# Archives and packaged output
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
 *.tgz
+*.tar.bz2
+*.tbz2
+*.tar.xz
+*.txz
+*.gz
+*.bz2
+*.xz
+*.zst
 
 # Temporary backups
 *.tmp
