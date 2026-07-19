@@ -2,6 +2,11 @@
 
 Decision-support comparisons for models, tools, workflows, platforms, and AI systems.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Child nodes
 
 - [`agentic-systems/`](./sub/agentic-systems/) — cross-category comparison of agents, orchestration systems, coding-agent control centers, and adjacent agentic AI tools.
