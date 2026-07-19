@@ -2,6 +2,11 @@
 
 Model families and individual AI models.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Child nodes
 
 - [`image-generation/`](./sub/image-generation/) — image generation models.
