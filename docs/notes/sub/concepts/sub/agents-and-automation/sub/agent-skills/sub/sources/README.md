@@ -4,6 +4,11 @@ Agent Skills can come from official vendor catalogs, open standards, community r
 
 Last verified: 2026-07-19.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Source types
 
 | Source type | Main role | What it does not guarantee |
@@ -336,6 +341,5 @@ For every source or collection:
 - skills.sh CLI: https://www.skills.sh/docs/cli
 - Superpowers: https://github.com/obra/superpowers
 - Matt Pocock skills: https://github.com/mattpocock/skills
-- Platform support: ../platform-support/
 - Using Agent Skills: ../using/
 - Plugins: ../../../plugins/
