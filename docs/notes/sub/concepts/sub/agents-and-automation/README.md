@@ -26,6 +26,8 @@ Concepts are grouped by practical priority. Priority affects reading order, not 
 
 - [`function-calling/`](./sub/function-calling/) — A structured model interface where output selects a function and provides arguments.
 - [`model-context-protocol/`](./sub/model-context-protocol/) — An open client-server protocol for exposing tools, resources, prompts, and related context capabilities to AI applications.
+- [`agent-skills/`](./sub/agent-skills/) — Portable procedural knowledge packages discovered and loaded when a task requires them.
+- [`plugins/`](./sub/plugins/) — Platform-specific extension packages that can distribute skills, agents, hooks, connectors, and MCP configuration.
 - [`task-decomposition/`](./sub/task-decomposition/) — Breaking a large task into smaller, verifiable units.
 - [`retries/`](./sub/retries/) — Repeating eligible failed operations under bounded rules.
 - [`autonomy-levels/`](./sub/autonomy-levels/) — The degree of independent decision-making granted to an AI system.
