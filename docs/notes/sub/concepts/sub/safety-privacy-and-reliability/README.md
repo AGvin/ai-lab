@@ -4,6 +4,11 @@ Concepts for controlling model behavior, protecting data, and reducing operation
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Essential
 
 - [`prompt-injection/`](./sub/prompt-injection/) — Input designed to override or manipulate an AI system's intended instructions.
