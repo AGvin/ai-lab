@@ -2,6 +2,11 @@
 
 BenchLM is an AI benchmark resource.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
