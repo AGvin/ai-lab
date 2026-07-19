@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:f3f157d7ba7c6b264cd360a3a2225462833566f0
+  source_hash: gitblob:93a759f64143e750b7c4bc9b82be6aa7449bce87
   mode: translated
 -->
 
