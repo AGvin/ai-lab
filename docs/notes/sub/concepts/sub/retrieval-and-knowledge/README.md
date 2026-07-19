@@ -4,6 +4,11 @@ Concepts for connecting models to external information, searchable documents, an
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Essential
 
 - [`rag/`](./sub/rag/) — Retrieval-Augmented Generation combines external retrieval with model generation.
