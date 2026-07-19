@@ -4,6 +4,11 @@ This tutorial builds a small Model Context Protocol server from first principles
 
 The examples use Python and the official MCP Python SDK. The architecture and safety rules apply to other official SDKs as well.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Learning objectives
 
 After completing this guide, you should be able to:
@@ -328,7 +333,6 @@ def test_status_reports_readme(tmp_path: Path, monkeypatch) -> None:
     monkeypatch.setenv("PROJECT_ROOT", str(tmp_path))
 
     result = server.get_project_status()
-
     assert result["project"] == tmp_path.name
     assert result["has_readme"] is True
 
@@ -418,8 +422,6 @@ Maintain fixtures for every supported client and protocol version.
 - [ ] Input schemas are narrow and validated.
 - [ ] Filesystem and network access use least privilege.
 - [ ] Stdio logging never writes ordinary output to stdout.
-- [ ] Mutations have authorization, approval, idempotency, and verification.
-- [ ] Resources and tool results are treated as untrusted data.
 - [ ] Errors are actionable but sanitized.
 - [ ] Protocol, business-logic, security, and failure tests pass.
 - [ ] Transport and authentication match the deployment model.
