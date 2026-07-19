@@ -4,6 +4,11 @@ Concepts for using trained models effectively through chats, APIs, applications,
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Essential
 
 - [`tokens-and-tokenization/`](./sub/tokens-and-tokenization/) — The process of splitting input and output into the units a model reads and generates.
