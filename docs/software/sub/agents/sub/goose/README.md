@@ -2,6 +2,11 @@
 
 Open-source local AI agent for coding, research, automation, writing, and workflow tasks.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
