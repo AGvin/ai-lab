@@ -2,6 +2,11 @@
 
 ComfyUI is a node-based workflow engine and UI for AI image generation workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
