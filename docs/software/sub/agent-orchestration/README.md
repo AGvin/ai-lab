@@ -2,6 +2,11 @@
 
 Systems, frameworks, runtimes, and control planes for creating, coordinating, supervising, or running AI agents and multi-agent workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Scope
 
 Use this node for tools where the main documented role is agent orchestration rather than a single standalone agent.
