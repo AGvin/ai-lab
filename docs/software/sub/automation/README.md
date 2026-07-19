@@ -2,6 +2,11 @@
 
 Automation tools that can support AI-adjacent workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Child nodes
 
 - [`playwright/`](./sub/playwright/) — browser automation and end-to-end web testing framework.
