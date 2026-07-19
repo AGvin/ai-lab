@@ -4,7 +4,7 @@ Conversational AI assistants and assistant products.
 
 ## Child nodes
 
-No assistant-specific child nodes are documented yet.
+- [`chatgpt/`](./sub/chatgpt/) — OpenAI's conversational assistant product, including links to centralized skills, plugins, and MCP guidance.
 
 ## Scope
 
