@@ -3,13 +3,13 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:2b1562a60a7b8d16f1b5f92a44d5e7816f0ffcc4
+  source_hash: gitblob:1f8dfc92440ad83ec69f43d1a53b310d58a74afa
   mode: translated
 -->
 
 # VS Code Extensions
 
-Локалізована точка входу для AI-related Visual Studio Code extensions.
+Розширення Visual Studio Code, пов’язані зі ШІ та призначені для workflows розроблення за допомогою ШІ.
 
 ## Переклади
 
