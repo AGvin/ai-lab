@@ -2,6 +2,11 @@
 
 Playwright is a browser automation and end-to-end web testing framework.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
