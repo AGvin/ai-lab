@@ -8,7 +8,7 @@ ChatGPT is OpenAI's conversational AI product for chat, research, files, multimo
 
 ## Product role
 
-Use this page for ChatGPT as an assistant product. Use the [OpenAI Codex](../../agents/sub/openai-codex/) page for the repository-oriented coding agent and development workflow.
+Use this page for ChatGPT as an assistant product. Use the [OpenAI Codex](../../../agents/sub/openai-codex/) page for the repository-oriented coding agent and development workflow.
 
 ChatGPT capabilities vary by plan, workspace policy, region, selected model, and product surface. Verify the active account and workspace settings before assuming that a particular connector, plugin, skill, or administrative control is available.
 
@@ -18,10 +18,10 @@ ChatGPT supports reusable skills on eligible plans and surfaces. A skill can be 
 
 Use the centralized documentation instead of duplicating setup details here:
 
-- [Agent Skills overview](../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/)
-- [Using Agent Skills](../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/using/)
-- [Creating Agent Skills](../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/creating/)
-- [Platform support](../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/platform-support/)
+- [Agent Skills overview](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/)
+- [Using Agent Skills](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/using/)
+- [Creating Agent Skills](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/creating/)
+- [Platform support](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/platform-support/)
 
 ## Plugins and connected capabilities
 
@@ -29,10 +29,10 @@ OpenAI plugins are installable capability packages that may contain skills, apps
 
 Before installation, review the publisher, source, bundled skills, connected accounts, OAuth scopes, MCP servers, network destinations, and update policy.
 
-- [Plugins overview](../../../../notes/sub/concepts/sub/agents-and-automation/sub/plugins/)
-- [Using Plugins](../../../../notes/sub/concepts/sub/agents-and-automation/sub/plugins/sub/using/)
-- [Creating Plugins](../../../../notes/sub/concepts/sub/agents-and-automation/sub/plugins/sub/creating/)
-- [Model Context Protocol](../../../../notes/sub/concepts/sub/agents-and-automation/sub/model-context-protocol/)
+- [Plugins overview](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/plugins/)
+- [Using Plugins](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/plugins/sub/using/)
+- [Creating Plugins](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/plugins/sub/creating/)
+- [Model Context Protocol](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/model-context-protocol/)
 
 ## Evaluation notes
 
