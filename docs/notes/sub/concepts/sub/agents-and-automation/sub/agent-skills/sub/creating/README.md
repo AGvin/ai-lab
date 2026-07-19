@@ -4,6 +4,11 @@ This tutorial teaches how to design, implement, test, and publish an Agent Skill
 
 A good skill turns a repeatable way of working into a small, inspectable package. The goal is not to hide reasoning behind a large prompt. The goal is to make the workflow discoverable, predictable, maintainable, and safe.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Learning objectives
 
 After completing this guide, you should be able to:
@@ -424,8 +429,6 @@ def main() -> int:
                 if not resolved.exists():
                     failures += 1
                     print(f"{source}:{line_number}: missing {raw_target}")
-
-    print(f"broken links: {failures}")
     return 1 if failures else 0
 
 
