@@ -2,6 +2,11 @@
 
 GLM-5V-Turbo is a multimodal foundation model for agentic workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
