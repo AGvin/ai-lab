@@ -5,6 +5,7 @@ ChatGPT is OpenAI's conversational AI product for chat, research, files, multimo
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Product role
 
