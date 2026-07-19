@@ -16,6 +16,8 @@ $RECYCLE.BIN/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+# Cursor project files are intentionally version-controlled.
+# Keep .cursor/, .cursorignore, and .cursorindexingignore trackable.
 .idea/
 .history/
 *.swp
@@ -67,8 +69,21 @@ __pycache__/
 .venv/
 venv/
 
-# Package output
+# Archives and packaged output
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
 *.tgz
+*.tar.bz2
+*.tbz2
+*.tar.xz
+*.txz
+*.gz
+*.bz2
+*.xz
+*.zst
 
 # Temporary backups
 *.tmp
