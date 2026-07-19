@@ -2,6 +2,11 @@
 
 Self-hosted developer control center for coding agents and automations.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
