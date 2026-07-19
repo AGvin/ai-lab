@@ -2,6 +2,11 @@
 
 Multi-agent conversation framework for building agent systems with conversable agents, tools, code execution, and human-in-the-loop workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
