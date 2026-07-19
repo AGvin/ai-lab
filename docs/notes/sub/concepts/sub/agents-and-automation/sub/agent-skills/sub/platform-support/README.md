@@ -6,6 +6,11 @@ This page centralizes platform-specific instructions so product pages can link h
 
 Last verified: 2026-07-19.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Support matrix
 
 | Platform | Native Agent Skills | Project-local skills | User-global skills | Explicit invocation | Automatic invocation | Plugin distribution |
