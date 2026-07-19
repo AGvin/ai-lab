@@ -2,6 +2,11 @@
 
 This guide explains how to select, configure, verify, operate, and remove an MCP server safely. It is written for users who understand basic command-line and configuration concepts but have not used MCP before.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## 1. Start from the capability you need
 
 Do not begin by installing a popular server. Define the required capability first:
