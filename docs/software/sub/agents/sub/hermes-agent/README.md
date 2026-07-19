@@ -2,6 +2,11 @@
 
 Hermes Agent is a self-improving AI agent system built by Nous Research.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
