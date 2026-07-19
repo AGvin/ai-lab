@@ -37,6 +37,15 @@ Use Claude Code as a reference point for:
 - background, scheduled, CI/CD, and SDK-based agent workflows;
 - comparison with open-source coding agents such as Aider, Cline, Goose, and mini-SWE-agent.
 
+## Skills, plugins, and MCP
+
+Claude Code supports standalone Agent Skills, Claude-specific plugins, and MCP servers. Centralized guides:
+
+- [Agent Skills](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/)
+- [Claude Code skill installation and invocation](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/platform-support/#claude-code)
+- [Plugins](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/plugins/)
+- [Model Context Protocol](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/model-context-protocol/)
+
 ## Evaluation notes
 
 Evaluate before adoption:
