@@ -4,6 +4,11 @@ Core concepts that explain what modern AI models are and how their main architec
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Essential
 
 - [`foundation-models/`](./sub/foundation-models/) — Large reusable models trained on broad data and adapted to many downstream tasks.
