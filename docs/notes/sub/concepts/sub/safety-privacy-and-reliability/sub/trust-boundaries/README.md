@@ -2,6 +2,11 @@
 
 A trust boundary separates components, identities, instructions, and data that have different levels of authority or reliability.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 AI systems should distinguish application policy, authenticated user intent, tool results, retrieved documents, public web content, and model-generated text. Crossing a trust boundary requires validation rather than assuming all context is equally authoritative.
