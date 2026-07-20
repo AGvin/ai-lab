@@ -2,6 +2,11 @@
 
 Text-to-speech synthesizes spoken audio from written text, optionally conditioned on a selected or reference voice.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A TTS system predicts pronunciation, timing, emphasis, and acoustic features, then generates a waveform through a vocoder or end-to-end model. Modern systems can produce highly natural speech and may support style, emotion, speed, and multilingual output.
