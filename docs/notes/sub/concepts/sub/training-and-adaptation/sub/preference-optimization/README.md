@@ -2,6 +2,11 @@
 
 Preference optimization adjusts model behavior using comparisons or scores that indicate which responses are preferred.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Supervised fine-tuning teaches the model to imitate target answers. Preference optimization instead uses relative judgments, such as one response being more helpful, safe, concise, or accurate than another. Methods include RLHF, DPO, and related objectives.
