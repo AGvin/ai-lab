@@ -2,6 +2,11 @@
 
 A vector database stores embeddings and associated metadata, builds similarity indexes, and exposes operations for inserting, updating, filtering, and retrieving vectors.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 The database is infrastructure around vector search. Useful capabilities include approximate nearest-neighbor indexing, metadata filters, namespaces or tenants, persistence, replication, deletion, and integration with document ingestion pipelines.
