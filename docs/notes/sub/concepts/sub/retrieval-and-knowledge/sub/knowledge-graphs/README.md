@@ -2,6 +2,11 @@
 
 A knowledge graph represents entities and their relationships as structured nodes and edges, often with types, properties, and provenance.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Graphs make relationships directly queryable. Instead of searching only for text that mentions two concepts, a graph can represent that one service depends on another, a person owns a project, or a document supersedes an older version.
