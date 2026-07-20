@@ -2,6 +2,11 @@
 
 Speech-to-text converts spoken audio into written transcripts and may also identify language, timestamps, speakers, or confidence values.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 An automatic speech-recognition system processes acoustic features and predicts text tokens. Accuracy depends on language, accent, microphone quality, noise, overlapping speakers, domain vocabulary, and audio compression.
