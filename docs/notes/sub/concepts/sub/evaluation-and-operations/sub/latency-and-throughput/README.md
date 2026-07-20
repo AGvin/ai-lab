@@ -2,6 +2,11 @@
 
 Latency and throughput describe two related but competing dimensions of system performance: how long one request takes and how much total work the system completes over time.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Interactive applications usually prioritize time to first token and response smoothness. Batch systems prioritize total tokens or requests completed. Increasing batch size and queue depth can improve throughput while making individual users wait longer.
