@@ -2,6 +2,11 @@
 
 Supervised Fine-Tuning, or SFT, trains a model on examples that pair an input or instruction with a desired output.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 The model learns to assign higher probability to target responses supplied in the dataset. For chat models, examples usually include roles, instructions, context, and assistant answers formatted with the model's chat template.
