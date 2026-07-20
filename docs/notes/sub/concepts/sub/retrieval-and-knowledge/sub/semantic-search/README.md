@@ -2,6 +2,11 @@
 
 Semantic search retrieves content by comparing learned representations of meaning rather than relying only on exact word matches.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A query and candidate documents are embedded into vectors, then a vector index finds nearby items. This allows retrieval when the user and source use different wording, abbreviations, or paraphrases.
