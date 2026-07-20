@@ -2,6 +2,11 @@
 
 Model alignment is the effort to shape model behavior toward intended goals, policies, values, and user expectations.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Alignment can involve instruction tuning, preference optimization, constitutional rules, safety training, system prompts, guardrails, and application controls. It is not one solved property; behavior may differ across tasks, languages, and adversarial conditions.
