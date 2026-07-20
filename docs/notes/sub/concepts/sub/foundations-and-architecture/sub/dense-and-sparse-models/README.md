@@ -2,6 +2,11 @@
 
 Dense models activate most model parameters for each input, while sparse models activate only selected parameters or components.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A dense transformer runs every feed-forward block for every token. A sparse architecture such as Mixture of Experts may route each token through a small subset of experts. This allows a high total parameter count without using every parameter for each token.
