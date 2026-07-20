@@ -2,6 +2,11 @@
 
 Model serving exposes inference through a managed process, API, queue, or runtime that handles requests, resources, scheduling, and results.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A serving layer turns a loaded model into an operational service. It manages request parsing, batching, concurrency, authentication, timeouts, observability, model versions, and sometimes routing across several replicas or accelerators.
