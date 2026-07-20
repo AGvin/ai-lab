@@ -2,6 +2,11 @@
 
 Vector search finds items whose embedding vectors are nearest to a query vector according to a similarity or distance metric.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Exact nearest-neighbor search compares a query with every vector and becomes expensive at scale. Approximate nearest-neighbor indexes trade a small amount of recall for much faster search. Common index families organize vectors into graphs, clusters, or compressed partitions.
