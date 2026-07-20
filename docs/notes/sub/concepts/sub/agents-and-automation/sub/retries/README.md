@@ -2,6 +2,11 @@
 
 Retries repeat an eligible failed operation under bounded rules intended to recover from transient problems.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A retry policy should distinguish transient failures from permanent errors. Network timeouts, rate limits, or temporary service unavailability may succeed later; invalid arguments, denied permissions, and unsupported operations usually will not.
