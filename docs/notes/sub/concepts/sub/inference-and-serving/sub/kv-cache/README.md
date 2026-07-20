@@ -2,6 +2,11 @@
 
 The KV cache stores attention keys and values from previously processed tokens so an autoregressive model does not recompute them for every new token.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 During generation, each new token attends to earlier tokens. Caching their key and value tensors makes decoding practical, but cache memory grows with context length, batch size, number of layers, attention dimensions, and cache precision.
