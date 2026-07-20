@@ -2,6 +2,11 @@
 
 Citations connect generated statements to the sources or evidence used to support them.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A useful citation is traceable, specific, and attached to the claim it supports. It should identify the source and, when possible, a page, section, line range, record ID, or timestamp. Citation generation must be based on retrieved source metadata rather than invented reference text.
