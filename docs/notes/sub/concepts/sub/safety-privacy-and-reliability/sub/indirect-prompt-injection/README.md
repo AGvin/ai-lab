@@ -2,6 +2,11 @@
 
 Indirect prompt injection occurs when malicious or conflicting instructions are embedded in external content that an AI system reads, such as web pages, emails, documents, code comments, or retrieved knowledge.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 The user may ask an agent to summarize a page, but the page can contain text telling the model to reveal data or call a tool. Because the model sees both task instructions and page content as tokens, it may follow the untrusted content unless the application constrains its behavior.
