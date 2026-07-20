@@ -2,6 +2,11 @@
 
 Retrieval evaluation measures whether a search or RAG system returns relevant, sufficient, correctly ranked, and authorized evidence.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core metrics
 
 - **Recall at k:** whether relevant evidence appears in the top `k` results.
