@@ -2,6 +2,11 @@
 
 Outpainting extends an image beyond its original boundaries by generating new surrounding content.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 The original image provides visual context while a larger canvas contains masked empty regions. The model continues textures, perspective, lighting, and scene content into the new area. Overlap between original and generated regions helps avoid visible seams.
