@@ -2,6 +2,11 @@
 
 Audio generation creates music, speech, sound effects, ambience, or other waveforms from text, reference audio, symbolic input, or learned latent representations.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Models may generate audio directly, predict compressed audio tokens, or use diffusion in a waveform or spectrogram representation. Conditioning can control content, duration, style, instrumentation, voice, or environmental characteristics.
