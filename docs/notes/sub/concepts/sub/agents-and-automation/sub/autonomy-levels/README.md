@@ -2,6 +2,11 @@
 
 Autonomy levels describe how much independent decision-making and action an AI system is allowed to perform.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Example spectrum
 
 - **Advisory:** the model suggests information or actions but cannot execute them.
