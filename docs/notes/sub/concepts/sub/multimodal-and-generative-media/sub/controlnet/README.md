@@ -2,6 +2,11 @@
 
 ControlNet conditions diffusion generation with structural information such as edges, depth, pose, segmentation, line art, or surface normals.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A control model processes a structural map and injects its guidance into the diffusion network. This lets the prompt determine appearance while the control signal constrains layout or geometry. Different ControlNet models are trained for different map types and base-model families.
