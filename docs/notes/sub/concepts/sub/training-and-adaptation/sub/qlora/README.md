@@ -2,6 +2,11 @@
 
 QLoRA adapts a model with LoRA while keeping the frozen base model in a low-bit quantized representation during training.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 The base weights are loaded in a memory-efficient quantized form, while LoRA parameters and selected computations use higher precision. This substantially lowers memory requirements compared with full-precision fine-tuning and can make large-model adaptation possible on a single high-memory GPU.
