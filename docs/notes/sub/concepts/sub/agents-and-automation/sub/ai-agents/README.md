@@ -2,6 +2,11 @@
 
 An AI agent is a system that uses a model to pursue a goal through observations, decisions, tool calls, state changes, and repeated actions.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A model becomes part of an agent when it can do more than produce a single response. The surrounding application gives it tools, working state, control flow, stopping rules, permissions, and feedback from previous actions. The agent is therefore the complete system, not only the language model.
