@@ -2,6 +2,11 @@
 
 Embeddings are numerical vectors that represent the semantic or structural properties of text, images, audio, users, products, or other objects.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 An embedding model maps an input into a fixed-length vector. Items with similar meaning or usage are usually placed closer together according to a distance measure such as cosine similarity or dot product. The vector itself is not a human-readable explanation; it is a learned representation optimized for particular tasks and training data.
