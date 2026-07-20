@@ -2,6 +2,11 @@
 
 Text-to-image generation creates an image conditioned primarily on a natural-language description.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 The prompt is encoded into a representation that guides a generative model. Different parts of the prompt influence subject, composition, environment, style, color, camera, and lighting, but the model does not interpret text as a deterministic scene specification.
