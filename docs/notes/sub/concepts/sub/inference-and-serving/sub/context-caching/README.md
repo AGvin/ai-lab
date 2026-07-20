@@ -2,6 +2,11 @@
 
 Context caching reuses previously processed prompt prefixes so repeated requests do not recompute the same input tokens.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Many requests share a stable prefix such as a system prompt, tool definitions, a long document, or a conversation history. A runtime or provider can store the processed representation and continue from it when a later request uses an identical or compatible prefix.
