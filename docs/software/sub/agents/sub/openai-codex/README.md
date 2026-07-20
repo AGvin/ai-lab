@@ -2,6 +2,11 @@
 
 OpenAI coding agent for software-engineering workflows across app, IDE, CLI, web, and automation surfaces.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
