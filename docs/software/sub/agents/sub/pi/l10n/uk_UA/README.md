@@ -3,13 +3,13 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:e0125e5f9c8b71680d9b225c0769748a1b849ac4
+  source_hash: gitblob:c98812bb62abc5fa48972cf27bde1ced93b40508
   mode: translated
 -->
 
 # Pi
 
-Локалізована точка входу для terminal coding-agent harness documented at pi.dev.
+Pi — малий terminal runtime для створення й запуску налаштованого coding-agent.
 
 ## Переклади
 
