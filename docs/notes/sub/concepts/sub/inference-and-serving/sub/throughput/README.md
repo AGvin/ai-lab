@@ -2,6 +2,11 @@
 
 Throughput measures how much inference work a system completes per unit of time.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Common measures
 
 - Generated tokens per second.
