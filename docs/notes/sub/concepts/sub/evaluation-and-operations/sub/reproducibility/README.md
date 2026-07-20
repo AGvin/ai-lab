@@ -2,6 +2,11 @@
 
 Reproducibility is the ability to repeat an experiment or workflow under documented conditions and obtain comparable results.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Generative systems are probabilistic and providers may update models, so byte-identical output is not always possible. Practical reproducibility means recording enough information to explain and compare changes: model version, prompt, parameters, data, tools, runtime, hardware, and evaluation method.
