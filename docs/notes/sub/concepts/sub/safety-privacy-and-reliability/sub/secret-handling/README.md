@@ -2,6 +2,11 @@
 
 Secret handling covers the storage, delivery, use, rotation, and redaction of credentials, tokens, keys, and other sensitive operational values.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Models should receive only the minimum secret-derived capability needed for a task, not raw long-lived credentials. The execution layer can use a credential without exposing it in prompt context or tool output.
