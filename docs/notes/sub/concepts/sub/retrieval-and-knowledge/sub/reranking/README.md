@@ -2,6 +2,11 @@
 
 Reranking applies a more precise relevance model to a small set of candidates returned by an initial retriever.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Fast retrievers optimize recall and may return many weak candidates. A reranker examines the query and each candidate more deeply, then reorders or filters them. Cross-encoder rerankers often provide better relevance because they process the query and passage together, but they are slower than embedding similarity.
