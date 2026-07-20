@@ -2,6 +2,11 @@
 
 Function calling is a structured form of tool calling in which a model selects a named function and supplies arguments that match a declared schema.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 The word “function” describes the interface exposed to the model; the underlying implementation may call an API, queue a job, query a database, or invoke local code. The host application remains responsible for authentication, authorization, validation, execution, and error handling.
