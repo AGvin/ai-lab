@@ -2,6 +2,11 @@
 
 Jailbreaking is an attempt to bypass a model's configured safety, policy, or behavior restrictions through crafted inputs or interaction patterns.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Jailbreaks may use role-play, obfuscation, translation, encoding, fictional framing, multi-turn pressure, or conflicting instructions. They target the model's behavior layer, but successful jailbreaks become operationally dangerous only when the surrounding system grants sensitive data or tools.
