@@ -2,6 +2,11 @@
 
 A neural network is a parameterized function composed of layers that transform input values into outputs.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Each layer applies weighted operations and nonlinear transformations. During training, optimization adjusts the weights so the network produces outputs that reduce a chosen loss. The word “neural” is historical inspiration; artificial networks are mathematical systems rather than biological replicas.
