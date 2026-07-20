@@ -2,6 +2,11 @@
 
 Keyword search retrieves documents using lexical evidence: terms, phrases, field matches, and statistical importance of words in the corpus.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Lexical retrieval is strong when exact wording matters. It can find product codes, API names, error messages, quotations, and domain-specific terminology that semantic models may blur. Search engines commonly apply tokenization, stemming, field weights, and ranking functions such as BM25.
