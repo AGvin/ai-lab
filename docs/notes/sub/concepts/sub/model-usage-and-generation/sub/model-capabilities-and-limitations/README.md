@@ -2,6 +2,11 @@
 
 Model capabilities and limitations describe what a specific model and deployment can do reliably, under which conditions, and where it tends to fail.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A model name alone is not a complete capability description. Behavior depends on the exact version, context size, modalities, tool access, system prompt, inference settings, provider restrictions, and workload. Capabilities should therefore be treated as measured properties of a configured system rather than permanent labels.
