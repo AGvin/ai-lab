@@ -2,6 +2,11 @@
 
 Failure recovery restores a workflow to a known safe state after model, tool, network, infrastructure, or validation failures.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Recovery is broader than retrying. It may resume from a checkpoint, skip a non-critical step, switch to a fallback, compensate for a completed side effect, request human intervention, or stop safely with enough information for later continuation.
