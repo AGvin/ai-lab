@@ -2,6 +2,11 @@
 
 A dataset is an organized collection of examples and metadata used for training, adaptation, evaluation, or analysis.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Dataset quality includes more than correctness. Relevant properties include coverage, balance, provenance, licensing, consent, deduplication, freshness, labeling consistency, and separation between training and evaluation data.

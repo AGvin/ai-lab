@@ -2,6 +2,11 @@
 
 Tools that build or execute AI workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Child nodes
 
 - [`comfy-ui/`](./sub/comfy-ui/) — node-based workflow engine and UI for AI image generation workflows.

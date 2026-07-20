@@ -2,6 +2,11 @@
 
 Machine learning is a set of methods that learn patterns or decision rules from data instead of relying only on manually programmed logic.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A learning algorithm adjusts model parameters to reduce an objective on training data. The resulting model is then evaluated on unseen data to estimate how well it generalizes beyond the examples used to fit it.

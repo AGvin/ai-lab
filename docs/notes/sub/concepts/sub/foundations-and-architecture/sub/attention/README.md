@@ -2,6 +2,11 @@
 
 Attention is a mechanism that computes how strongly one representation should use information from other representations.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A query is compared with keys to produce attention scores. The scores are normalized and used to combine corresponding values. In transformers, many attention heads learn different patterns of interaction in parallel.

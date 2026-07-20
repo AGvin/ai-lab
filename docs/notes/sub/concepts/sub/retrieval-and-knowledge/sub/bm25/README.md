@@ -2,6 +2,11 @@
 
 BM25 is a probabilistic lexical ranking function used to score how well a document matches query terms.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 BM25 rewards documents containing important query terms while controlling for term frequency and document length. A term that appears in few documents receives more weight than a common term. Repeating a term helps only up to a saturation point, which prevents raw frequency from dominating the ranking.

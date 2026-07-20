@@ -2,6 +2,11 @@
 
 Fallback models are alternative models used when the preferred model is unavailable, exceeds policy limits, fails validation, or cannot satisfy a request.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A fallback is part of reliability design, not merely a second API key. The alternative may differ in capability, context size, schema behavior, safety policy, cost, or data location, so the workflow must define when substitution is acceptable.

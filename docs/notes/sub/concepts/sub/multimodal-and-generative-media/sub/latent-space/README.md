@@ -2,6 +2,11 @@
 
 A latent space is a learned compressed representation in which a model encodes and manipulates information.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Instead of operating directly on raw pixels or audio samples, a model may encode data into lower-dimensional latent variables that preserve important structure. Generative models then sample, interpolate, or transform these variables before decoding them back into media.

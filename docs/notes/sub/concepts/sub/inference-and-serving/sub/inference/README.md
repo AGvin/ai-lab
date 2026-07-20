@@ -2,6 +2,11 @@
 
 Inference is the process of running a trained model on input data to produce predictions, embeddings, classifications, or generated output.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Training changes model parameters; inference uses the resulting parameters. For autoregressive language models, inference usually has two phases: prompt processing, often called prefill, and token-by-token generation, often called decode. These phases stress hardware differently.

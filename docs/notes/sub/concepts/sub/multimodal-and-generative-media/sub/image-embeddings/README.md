@@ -2,6 +2,11 @@
 
 Image embeddings are vectors that represent visual content for comparison, retrieval, clustering, or classification.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 An image encoder maps an image into a fixed-length vector. Multimodal encoders may place image and text representations in a shared space, allowing natural-language search over images. The embedding captures features useful to its training objective, not every visual detail.

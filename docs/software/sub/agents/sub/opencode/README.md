@@ -41,11 +41,20 @@ Typical roles include:
 
 Agents can be configured in `opencode.json` or as Markdown files in global or project-local agent directories.
 
-## Tools, skills, and MCP
+## Tools, skills, plugins, and MCP
 
-OpenCode includes tools for repository inspection, file editing, search, shell execution, language-server queries, and related coding operations. It can also load reusable skills, custom tools, and Model Context Protocol servers.
+OpenCode includes tools for repository inspection, file editing, search, shell execution, language-server queries, and related coding operations. It can also load reusable skills, custom tools, OpenCode-specific plugins, and Model Context Protocol servers.
 
-MCP support allows external servers to expose additional tools to OpenCode. Tool availability does not imply trust: each MCP server and its credentials, network access, data exposure, and command surface should be reviewed independently. See [Model Context Protocol](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/model-context-protocol/) for the protocol model.
+Use the centralized guides for concepts and cross-platform workflows:
+
+- [Agent Skills](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/)
+- [OpenCode skill installation, invocation, and permissions](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/platform-support/#opencode)
+- [Plugins](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/plugins/)
+- [Model Context Protocol](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/model-context-protocol/)
+
+OpenCode plugins are executable JavaScript or TypeScript extensions and are not interchangeable with Agent Skills or another platform's plugin packages. Prefer a neutral skill directory when no OpenCode-specific lifecycle or runtime extension is needed.
+
+MCP support allows external servers to expose additional tools to OpenCode. Tool availability does not imply trust: each MCP server and its credentials, network access, data exposure, and command surface should be reviewed independently.
 
 ## Permissions and safety boundary
 
@@ -87,7 +96,7 @@ Use this page as a reference for:
 - repository-local `AGENTS.md` instructions;
 - configurable primary agents and subagents;
 - granular command, path, tool, and agent permissions;
-- MCP-enabled development tools;
+- skills, plugins, and MCP-enabled development tools;
 - comparison with Pi, OMP, Cline, Claude Code, and OpenAI Codex.
 
 ## Evaluation checklist
@@ -97,7 +106,7 @@ Before adopting OpenCode, verify:
 - installation and update behavior on the target operating system;
 - support and quality for the selected models and providers;
 - repository instruction precedence and trust boundaries;
-- approval behavior for file edits, shell commands, external directories, skills, and MCP tools;
+- approval behavior for file edits, shell commands, external directories, skills, plugins, and MCP tools;
 - diff review and rollback workflow;
 - behavior in non-interactive or automated execution;
 - credential storage and network-data exposure;
@@ -108,6 +117,8 @@ Before adopting OpenCode, verify:
 - OpenCode website: https://opencode.ai/
 - OpenCode documentation: https://opencode.ai/docs/
 - Agents: https://opencode.ai/docs/agents/
+- Skills: https://opencode.ai/docs/skills/
+- Plugins: https://opencode.ai/docs/plugins/
 - Permissions: https://opencode.ai/docs/permissions/
 - Tools: https://opencode.ai/docs/tools/
 - Source repository: https://github.com/anomalyco/opencode

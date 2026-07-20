@@ -2,6 +2,11 @@
 
 Terminal-based AI pair programming tool and coding agent for working directly with local Git repositories.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

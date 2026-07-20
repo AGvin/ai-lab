@@ -2,6 +2,11 @@
 
 Diffusion models are generative models trained to reverse a process that progressively adds noise to data.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 During generation, the model starts from random noise or a noised input and predicts how to remove noise over several steps. Conditioning such as text embeddings, images, masks, or structural controls guides the denoising trajectory. Many image systems operate in a compressed latent space instead of directly on pixels.

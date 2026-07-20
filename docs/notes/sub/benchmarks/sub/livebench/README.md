@@ -2,6 +2,11 @@
 
 LiveBench is an AI model benchmark resource.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

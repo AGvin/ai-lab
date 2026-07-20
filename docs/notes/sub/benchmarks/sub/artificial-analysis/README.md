@@ -2,6 +2,11 @@
 
 Artificial Analysis is a provider and model analysis leaderboard resource.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

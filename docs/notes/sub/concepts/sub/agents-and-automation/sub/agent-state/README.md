@@ -2,6 +2,11 @@
 
 Agent state is the explicit data that records a workflow's current position, intermediate results, decisions, pending actions, and execution metadata.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 State should not exist only inside a model conversation. Explicit state makes an agent resumable, inspectable, testable, and safer to retry. It may be stored in memory for short tasks or persisted in a database, workflow engine, or event log for long-running work.

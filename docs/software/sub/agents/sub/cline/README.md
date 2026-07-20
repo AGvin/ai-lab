@@ -2,6 +2,11 @@
 
 Open-source coding agent and agent runtime for editor, terminal, SDK, and automation workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

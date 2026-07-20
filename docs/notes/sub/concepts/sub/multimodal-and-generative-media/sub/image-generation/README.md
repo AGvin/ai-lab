@@ -2,6 +2,11 @@
 
 Image generation creates new images from text, reference images, masks, layouts, depth maps, poses, or other conditioning signals.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Modern systems commonly use diffusion or related generative architectures that begin from noise or a latent representation and progressively construct an image. The prompt and conditioning guide composition, subject, style, lighting, and other attributes, but generation remains probabilistic.

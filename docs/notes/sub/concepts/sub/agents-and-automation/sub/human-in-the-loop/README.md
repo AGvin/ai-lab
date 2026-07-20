@@ -2,6 +2,11 @@
 
 Human in the loop means that selected workflow decisions or actions require human review, input, approval, or correction.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Human involvement should be placed at meaningful control points rather than added as a vague final review. Approval is especially valuable before irreversible, financial, legal, public, security-sensitive, or high-impact actions.

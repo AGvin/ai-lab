@@ -4,6 +4,11 @@ Concepts for models and workflows involving images, audio, video, and combinatio
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Essential
 
 - [`vision-language-models/`](./sub/vision-language-models/) — Models that jointly process visual inputs and natural language.

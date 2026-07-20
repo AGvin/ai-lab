@@ -2,6 +2,11 @@
 
 Hybrid search combines semantic vector retrieval with lexical retrieval so results benefit from both meaning and exact-term matching.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 The two retrievers produce candidate lists or scores that must be merged. Common methods include weighted score fusion, reciprocal rank fusion, or retrieving separate candidate sets and passing them to a reranker. The best method depends on whether exact identifiers, natural-language meaning, or both are important.

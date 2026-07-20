@@ -4,6 +4,11 @@ Concepts for running trained models locally or as services and understanding the
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Essential
 
 - [`inference/`](./sub/inference/) — Running a trained model to process input and produce output.

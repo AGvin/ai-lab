@@ -2,6 +2,11 @@
 
 Model formats define how weights, metadata, tokenizer files, computation graphs, and configuration are stored and exchanged.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Common format roles
 
 - **Safetensors:** a safe tensor serialization format commonly used for model weights.

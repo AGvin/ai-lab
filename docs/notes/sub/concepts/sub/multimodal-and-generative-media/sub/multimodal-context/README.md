@@ -2,6 +2,11 @@
 
 Multimodal context is the combined text, image, audio, video, document, and tool information available to a model during a request.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Each modality is converted into tokens or learned features and consumes part of a limited context or compute budget. A high-resolution image, long audio recording, or large PDF may be compressed, sampled, split, or summarized before the model sees it.

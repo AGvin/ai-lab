@@ -2,6 +2,11 @@
 
 Sandboxing isolates code, tools, files, or processes so failures and malicious behavior have limited impact on the host system.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A sandbox restricts resources such as filesystem paths, network access, process creation, devices, environment variables, and execution time. It is especially important when a model generates or selects code to execute.

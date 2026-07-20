@@ -2,6 +2,11 @@
 
 Pi is a small terminal runtime for building and running a customized coding agent.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

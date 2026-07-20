@@ -2,6 +2,11 @@
 
 Observability is the ability to understand an AI system's internal behavior from logs, metrics, traces, events, and recorded state.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 AI failures are often distributed across prompts, retrieval, model calls, tools, validation, and external services. Observability connects these stages so operators can determine what happened, why it happened, and which component requires correction.

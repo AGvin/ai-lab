@@ -2,6 +2,11 @@
 
 GitHub-native cloud coding agent for issue-driven software changes and pull-request workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

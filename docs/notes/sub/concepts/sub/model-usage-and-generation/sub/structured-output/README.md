@@ -2,6 +2,11 @@
 
 Structured output is model-generated data that follows a defined machine-readable format, such as JSON, a JSON Schema, XML, CSV, or a typed function-call argument object.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Applications often need values that can be parsed and validated rather than prose that merely looks structured. Reliable structured output combines a clear schema, model or decoder support, validation, and error handling. The schema describes shape and types; it does not guarantee that the values are factually correct.

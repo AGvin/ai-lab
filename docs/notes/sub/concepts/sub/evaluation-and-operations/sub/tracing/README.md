@@ -2,6 +2,11 @@
 
 Tracing records the ordered sequence of model calls, retrieval operations, tool executions, validations, and state transitions for one workflow execution.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A trace shows causal structure that aggregate metrics cannot. It can reveal that a poor answer began with a weak retrieval query, a tool timeout, a malformed argument, or a model decision based on stale state.

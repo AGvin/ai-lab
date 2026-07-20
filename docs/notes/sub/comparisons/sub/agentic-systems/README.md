@@ -2,6 +2,11 @@
 
 Cross-category comparison of standalone agents, agent orchestration systems, coding-agent control centers, and adjacent agentic AI tools.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Scope
 
 Use this page when the decision question is practical adoption rather than taxonomy placement.

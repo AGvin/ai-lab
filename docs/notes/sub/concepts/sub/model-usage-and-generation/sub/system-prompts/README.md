@@ -2,6 +2,11 @@
 
 A system prompt is a high-priority instruction layer that defines an assistant's role, operating rules, tool boundaries, and expected behavior for a session or application.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 System prompts establish policy and behavior before ordinary user input is processed. They are commonly used to define tone, task scope, safety constraints, tool-use rules, and output conventions. They should contain stable instructions, while dynamic user data and retrieved documents should remain separate.

@@ -2,6 +2,11 @@
 
 GPU inference runs model operations on graphics processors designed for highly parallel matrix computation and high-bandwidth device memory.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 GPUs can accelerate prompt processing and token generation when the model and runtime use optimized kernels. Available VRAM determines whether weights, the KV cache, batches, and temporary buffers fit without offloading.

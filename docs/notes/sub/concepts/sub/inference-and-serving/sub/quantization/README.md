@@ -2,6 +2,11 @@
 
 Quantization represents model weights, activations, or cache values with lower-precision numbers to reduce memory use and computation cost.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A model trained in floating-point precision can often be converted to formats using fewer bits per value. Weight-only quantization is common for local language-model inference, while server runtimes may also quantize activations or the KV cache.

@@ -2,6 +2,11 @@
 
 Low-level orchestration framework and runtime for long-running, stateful agents.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

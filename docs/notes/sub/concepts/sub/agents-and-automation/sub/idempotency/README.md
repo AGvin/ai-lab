@@ -2,6 +2,11 @@
 
 An idempotent operation can be repeated without creating additional unintended effects after the first successful application.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Agent workflows frequently retry after timeouts or ambiguous failures. Without idempotency, a retry may send the same email twice, create duplicate records, charge twice, or apply the same repository change repeatedly. Idempotency is normally implemented in the tool or application layer rather than through prompting.

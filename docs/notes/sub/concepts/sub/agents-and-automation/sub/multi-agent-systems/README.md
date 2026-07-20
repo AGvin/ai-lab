@@ -2,6 +2,11 @@
 
 A multi-agent system coordinates several agents that may specialize, collaborate, compete, delegate, or review one another.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Multiple agents are useful when tasks have genuinely different roles, tools, permissions, or parallel workstreams. Examples include a research agent gathering evidence, an implementation agent producing changes, and a reviewer checking the result. The agents still require a shared protocol, state model, and conflict-resolution mechanism.

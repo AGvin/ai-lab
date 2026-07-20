@@ -2,6 +2,11 @@
 
 Tool calling allows a model to select a registered external operation and produce arguments for that operation.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 The model does not execute the tool directly. It emits a structured request, the host application validates and executes it, and the result is returned to the model or workflow. This separation is essential because model output is untrusted input to the execution layer.

@@ -2,6 +2,11 @@
 
 Models that work across text, image, document, webpage, GUI, video, audio, or other modalities.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Child nodes
 
 - [`glm-5v-turbo/`](./sub/glm-5v-turbo/) — multimodal foundation model for agentic workflows.

@@ -2,6 +2,11 @@
 
 Verification checks whether a result satisfies evidence and acceptance criteria. Reflection is a model-driven review of the approach, assumptions, or likely errors before continuing.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 The two concepts are related but not equivalent. Verification should use objective checks where possible: tests, schemas, calculations, source comparison, or permission rules. Reflection is useful for discovering omissions or proposing revisions, but it remains another model output and can repeat the original mistake.

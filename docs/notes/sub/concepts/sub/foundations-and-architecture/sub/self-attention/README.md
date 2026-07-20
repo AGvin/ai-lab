@@ -2,6 +2,11 @@
 
 Self-attention is attention in which queries, keys, and values are derived from positions in the same sequence or representation set.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Each position can combine information from other positions according to learned relevance scores. In causal language models, masking prevents a token from attending to future tokens during generation. Bidirectional encoders may allow attention in both directions.

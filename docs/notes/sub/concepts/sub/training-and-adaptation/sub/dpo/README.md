@@ -2,6 +2,11 @@
 
 Direct Preference Optimization, or DPO, trains a model directly from preferred and rejected response pairs without first fitting a separate reward model and running a full reinforcement-learning loop.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 DPO increases the relative likelihood of preferred responses while constraining the adapted model against a reference model. It simplifies preference training and is often easier to implement than RLHF.

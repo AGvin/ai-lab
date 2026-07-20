@@ -2,6 +2,11 @@
 
 Tools for local workstation and self-hosted model execution.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Child nodes
 
 - [`ollama/`](./sub/ollama/) — model runtime for local and self-hosted execution.

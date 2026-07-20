@@ -2,6 +2,11 @@
 
 Metadata filtering restricts retrieval using structured attributes such as source, date, language, tenant, product, document version, or access policy.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Semantic or lexical similarity alone cannot express every retrieval requirement. Filters reduce the candidate space before or during search and help ensure that results belong to the correct user, project, time range, or document class.

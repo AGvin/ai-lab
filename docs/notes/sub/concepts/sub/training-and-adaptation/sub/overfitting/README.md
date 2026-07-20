@@ -2,6 +2,11 @@
 
 Overfitting occurs when a model learns training examples or noise too specifically and performs worse on new, representative data.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Training loss can continue to improve while validation performance stops improving or declines. In language-model adaptation, overfitting may appear as memorized phrases, repetitive style, reduced general ability, or brittle behavior outside the training format.

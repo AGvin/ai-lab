@@ -2,6 +2,11 @@
 
 Open LLM Leaderboard is a leaderboard view available through LLM Stats.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

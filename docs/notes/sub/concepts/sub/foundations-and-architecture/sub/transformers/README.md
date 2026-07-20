@@ -2,6 +2,11 @@
 
 A transformer is a neural network architecture built around attention, feed-forward layers, residual connections, and normalization.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Transformers process token representations in parallel during training and prompt processing. Attention lets each position combine information from other relevant positions, while feed-forward layers transform each position independently. Positional information preserves sequence order.

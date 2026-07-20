@@ -2,6 +2,11 @@
 
 Few-shot prompting guides a model by including a small number of input-output examples that demonstrate the desired behavior.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Examples communicate patterns that are difficult to specify fully in prose, such as classification boundaries, formatting conventions, terminology, or transformation style. The model infers the task pattern from the demonstrations and applies it to a new input without updating its weights.

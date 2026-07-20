@@ -3,13 +3,13 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:338f7fd067ce2a845db2ac64a7fce685b567c011
+  source_hash: gitblob:4310dbb96ebe2a87a70dbcfe35609027f9f2ec8c
   mode: translated
 -->
 
 # Claude Code
 
-Coding-agent Anthropic для термінала, редактора, desktop, browser і процесів автоматизації.
+Coding-agent Anthropic для terminal, editor, desktop, browser і automation workflows.
 
 ## Переклади
 
@@ -19,53 +19,62 @@ Coding-agent Anthropic для термінала, редактора, desktop, b
 ## Метадані
 
 ```text
-Тип ресурсу: coding-agent
-Основний сценарій використання: читати, редагувати, тестувати й перевіряти зміни codebase через керовані Anthropic агентні coding-процеси
-Модель доступу: пропрієтарний продукт Anthropic із доступом через обліковий запис, підписку або організацію
+Тип ресурсу: Coding agent
+Основний сценарій використання: читання, редагування, тестування й перевірка змін codebase через керовані Anthropic агентні coding workflows
+Модель доступу: пропрієтарний продукт Anthropic із доступом через account, subscription або organization
 Ліцензія: пропрієтарна
-Модель вихідного коду: продукт із закритим кодом, пов’язаними клієнтськими інструментами й документацією
-Операційні вимоги: доступ Claude Code, entitlement облікового запису чи організації Anthropic, доступ до локального проєкту або віддаленого workspace, налаштовані дозволи інструментів і shell та необов’язкові інтеграції IDE, MCP, CI/CD або автоматизації
-Режими інтеграції: terminal, VS Code, JetBrains IDEs, desktop app, browser, Slack, Git repositories, shell commands, MCP servers, GitHub Actions, GitLab CI, background agents, scheduled tasks, Agent SDK
+Модель вихідного коду: продукт із закритим кодом, пов’язаними client tools і documentation
+Операційні вимоги: доступ Claude Code, entitlement account або organization Anthropic, доступ до local project чи remote workspace, налаштовані permissions tools і shell та необов’язкові integrations IDE, MCP, CI/CD або automation
+Режими інтеграції: Terminal, VS Code, JetBrains IDEs, desktop app, browser, Slack, Git repositories, shell commands, MCP servers, GitHub Actions, GitLab CI, background agents, scheduled tasks, Agent SDK
 Джерело: https://code.claude.com/docs/en/overview
-Примітки щодо ризиків: пропрієтарний coding-agent з високим рівнем довіри, доступом на читання й запис до репозиторію, виконанням shell, інтеграціями MCP/інструментів, фоновим або запланованим виконанням і хмарними межами облікового запису; перед використанням із чутливими репозиторіями перевірте схвалення команд, створені diffs, дозволи облікового запису, інструкції репозиторію, розкриття секретів, поведінку віддалених сесій і контрольні точки review людиною.
+Примітки щодо ризиків: пропрієтарний coding-agent із високим рівнем довіри, доступом на читання й запис до repository, виконанням shell, integrations MCP/tools, background або scheduled execution і межами cloud/account; перед використанням із sensitive repositories перевіряйте command approvals, generated diffs, permissions provider account, repository instructions, exposure secrets, behavior remote sessions і human review gates.
 ```
 
 ## Огляд
 
-Claude Code — агентний coding-інструмент Anthropic для процесів розробки ПЗ.
+Claude Code — агентний coding tool Anthropic для workflows розроблення ПЗ.
 
-Він працює через terminal, IDE, desktop, browser та automation surfaces. Його роль ширша за inline code completion: він може досліджувати codebase, редагувати файли, запускати команди чи тести, допомагати з Git-процесами, використовувати налаштовані інструменти й підтримувати агентні coding-процеси, що поширюються на CI/CD, фонову роботу, заплановані задачі та SDK-інтеграції.
+Він працює через terminal, IDE, desktop, browser та automation surfaces. Його роль ширша за inline code completion: він може досліджувати codebase, редагувати files, запускати commands чи tests, допомагати з Git workflows, використовувати configured tools і підтримувати agentic coding workflows, що поширюються на CI/CD, background work, scheduled tasks та SDK integrations.
 
 ## Відповідність AI Lab
 
-Claude Code належить до `agents/`, оскільки його основна задокументована роль — агентоподібна coding-система, що безпосередньо працює з репозиторіями, інструментами, командами й процесами розробника.
+Claude Code належить до `agents/`, оскільки його основна задокументована роль — agent-like coding system, що безпосередньо працює з repositories, tools, commands і developer workflows.
 
-Це не фреймворк оркестрації агентів. Використовуйте `agent-orchestration/` для frameworks, runtimes або control planes, які координують кілька агентів чи агентних процесів.
+Це не framework оркестрації агентів. Використовуйте `agent-orchestration/` для frameworks, runtimes або control planes, які координують кілька agents чи agent workflows.
 
 Використовуйте Claude Code як орієнтир для:
 
-- пропрієтарних агентних coding-продуктів;
-- процесів coding-agent у terminal та IDE;
-- редагування репозиторію з виконанням shell і тестів;
-- доступу coding-agent до інструментів через MCP;
-- фонових, запланованих, CI/CD та SDK-процесів агентів;
-- порівняння з агентами відкритого коду Aider, Cline, Goose і mini-SWE-agent.
+- proprietary agentic coding products;
+- terminal та IDE coding-agent workflows;
+- редагування repository з виконанням shell і tests;
+- доступу coding-agent до tools через MCP;
+- background, scheduled, CI/CD та SDK-based agent workflows;
+- порівняння з open-source coding agents, зокрема Aider, Cline, Goose і mini-SWE-agent.
+
+## Skills, plugins і MCP
+
+Claude Code підтримує standalone Agent Skills, Claude-specific plugins і MCP servers. Централізовані посібники:
+
+- [Agent Skills](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/l10n/uk_UA/)
+- [Установлення й виклик skills у Claude Code](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/platform-support/l10n/uk_UA/#claude-code)
+- [Plugins](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/plugins/l10n/uk_UA/)
+- [Model Context Protocol](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/model-context-protocol/l10n/uk_UA/)
 
 ## Примітки щодо оцінювання
 
-Перед впровадженням оцініть:
+Перед упровадженням оцініть:
 
-- модель доступу через обліковий запис, підписку й організацію;
-- межі доступу до репозиторію та workspace;
-- поведінку схвалення й виконання shell-команд;
-- review створених diffs перед commit, push або створенням PR;
-- межі довіри інструкцій і пам’яті репозиторію;
-- дозволи MCP servers та області інструментів;
+- модель доступу account, subscription і organization;
+- межі доступу до repository та workspace;
+- behavior схвалення й виконання shell commands;
+- review generated diffs перед commit, push або створенням PR;
+- межі довіри repository instructions і memory;
+- permissions MCP servers і tool scopes;
 - межі background agent, scheduled task, desktop, browser і cloud sessions;
-- розкриття вихідного коду, облікових даних, журналів і приватного контексту проєкту.
+- exposure source code, credentials, logs і private project context.
 
 ## Джерела
 
 - Огляд Claude Code: https://code.claude.com/docs/en/overview
 - Швидкий старт Claude Code: https://code.claude.com/docs/en/quickstart
-- Вебточка входу Claude Code: https://claude.ai/code
+- Web entry point Claude Code: https://claude.ai/code

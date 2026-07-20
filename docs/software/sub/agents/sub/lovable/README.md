@@ -2,6 +2,11 @@
 
 Full-stack AI development platform for building and iterating web applications from natural language.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

@@ -2,6 +2,11 @@
 
 Constrained generation restricts which tokens a model may emit so the output follows a grammar, schema, regular language, or permitted value set.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Instead of asking the model to imitate a format, the decoder masks invalid token choices during generation. This can ensure syntactically valid JSON, match a formal grammar, or restrict a field to known values. The constraint controls form, not factual accuracy or business validity.

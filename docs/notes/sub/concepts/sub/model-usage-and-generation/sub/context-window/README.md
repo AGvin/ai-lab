@@ -2,6 +2,11 @@
 
 The context window is the maximum tokenized information a model can consider during one request, including instructions, conversation history, retrieved documents, tool results, and generated output.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A larger advertised context window allows more material to be supplied, but it does not guarantee that every detail will be used equally well. Relevant facts can be diluted by unrelated content, repeated instructions, or information placed far from the current question. Effective context is therefore both a capacity constraint and an information-selection problem.

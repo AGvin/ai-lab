@@ -2,6 +2,11 @@
 
 Performance metrics describe how an inference system uses time, memory, compute, and capacity under a defined workload.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Important metrics
 
 - Time to first token and inter-token latency.

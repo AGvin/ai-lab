@@ -7,6 +7,13 @@ Model Context Protocol is an open protocol for connecting AI applications to ext
 - English
 - [Українська](./l10n/uk_UA/)
 
+## Learning path
+
+- [Using Model Context Protocol](./sub/using/) — select, configure, verify, secure, update, and remove MCP servers.
+- [Creating MCP Servers](./sub/creating/) — build a server with tools, resources, prompts, tests, authorization, and deployment safeguards.
+- [Agent Skills](../agent-skills/) — reusable workflows that may orchestrate capabilities exposed through MCP.
+- [Plugins](../plugins/) — platform-specific packages that may configure or distribute MCP integrations.
+
 ## Purpose
 
 Without a shared protocol, every AI application and external integration needs a custom adapter. MCP defines common discovery, invocation, lifecycle, and transport behavior so compatible hosts and servers can interoperate without a bespoke connector for every pair.
@@ -32,6 +39,14 @@ MCP servers can expose three main primitives:
 - **Prompts** — reusable interaction templates, instructions, or examples.
 
 Clients discover capabilities through protocol methods rather than assuming that a fixed list is available. Servers can also notify clients when supported lists change.
+
+Control normally differs by primitive:
+
+- prompts are generally user-selected;
+- resources are generally selected and managed by the application;
+- tools are generally selected by the model under host and user policy.
+
+The host remains responsible for consent, authorization, presentation, and approval.
 
 ## Client capabilities
 
@@ -60,6 +75,8 @@ The transport layer carries those messages. The principal transports are:
 
 The same server concept can run locally or remotely. “MCP server” describes its protocol role, not its physical location.
 
+For stdio servers, ordinary logging must not be written to stdout because stdout carries protocol messages. Use stderr or a file for diagnostics.
+
 ## MCP versus tool calling
 
 [Tool calling](../tool-calling/) is the model-facing behavior of selecting an available operation and supplying arguments. MCP is one way an AI application can discover and expose external operations and context to that tool-calling layer.
@@ -72,11 +89,28 @@ A model can use tools without MCP, and an MCP server can expose more than execut
 
 MCP operates at a wider application-integration boundary. It defines client-server discovery, lifecycle, capability negotiation, context primitives, invocation, notifications, and transports. An MCP host may translate discovered MCP tools into the function- or tool-calling format expected by a selected model provider.
 
-## MCP versus ordinary APIs and plugins
+## MCP versus Agent Skills
+
+An [Agent Skill](../agent-skills/) packages procedural knowledge: when a workflow applies, which steps to follow, what evidence to collect, and where approvals are required.
+
+MCP supplies capabilities and context. A skill may instruct an agent to use one or more MCP tools or resources, but the skill does not create the connection or grant permissions.
+
+Example:
+
+- an MCP server exposes `list_failed_jobs` and `retry_job`;
+- a troubleshooting skill defines diagnosis, evidence collection, approval before retry, and post-action verification.
+
+## MCP versus plugins
+
+A [plugin](../plugins/) is a platform-specific installation and distribution package. It may contain skills, hooks, agents, commands, connector declarations, or MCP server configuration.
+
+MCP is a protocol; a plugin is packaging. Installing a plugin that configures MCP creates separate trust boundaries for the plugin and the server.
+
+## MCP versus ordinary APIs
 
 An MCP server often wraps an ordinary API, local application, database, filesystem, or service. MCP does not replace the underlying API; it provides a standardized AI-facing integration layer around it.
 
-Compared with a platform-specific plugin system, MCP is intended to be reusable across compatible hosts. Actual portability still depends on protocol-version support, authentication, optional capabilities, tool schemas, host policies, and implementation quality.
+Actual portability depends on protocol-version support, authentication, optional capabilities, tool schemas, host policies, and implementation quality.
 
 ## Security and trust boundaries
 
@@ -93,6 +127,8 @@ Connecting an MCP server expands the host's trust boundary. Review:
 - how server updates, dependencies, and supply-chain risks are controlled.
 
 Protocol compatibility is not a security endorsement. Hosts should apply least privilege, explicit approval gates, input and output validation, logging, and isolation according to the consequence of each capability.
+
+Servers must implement real authorization for protected actions. Session identifiers are not authentication. Hosts must not rely only on tool descriptions or model judgment to enforce access control.
 
 ## Practical example
 
@@ -125,4 +161,6 @@ Treat MCP as an interoperability protocol that still requires product-level secu
 - MCP documentation: https://modelcontextprotocol.io/docs/
 - Architecture overview: https://modelcontextprotocol.io/docs/learn/architecture
 - MCP specification: https://modelcontextprotocol.io/specification/
+- Build an MCP server: https://modelcontextprotocol.io/docs/develop/build-server
+- Security best practices: https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices
 - MCP GitHub organization: https://github.com/modelcontextprotocol

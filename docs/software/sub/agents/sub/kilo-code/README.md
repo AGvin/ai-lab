@@ -2,6 +2,11 @@
 
 AI coding-agent platform with VS Code, JetBrains, CLI, gateway, and hosted-agent infrastructure surfaces.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

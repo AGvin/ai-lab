@@ -3,13 +3,13 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:eb1b9626ba620b6e63a70e321f340c6120bf40b5
+  source_hash: gitblob:7bfac1840579069b9e34c6ffc4d7a00a7c96cc56
   mode: translated
 -->
 
-# Assistants
+# Асистенти
 
-Локалізована точка входу для conversational AI assistants and assistant products.
+Розмовні AI assistants і продукти-асистенти.
 
 ## Переклади
 
@@ -18,8 +18,8 @@ l10n:
 
 ## Дочірні вузли
 
-Окремі дочірні вузли для assistants ще не задокументовано.
+- [`chatgpt/`](../../sub/chatgpt/l10n/uk_UA/) — розмовний продукт-асистент OpenAI з посиланнями на централізовані матеріали про skills, plugins і MCP.
 
 ## Область
 
-Використовуйте цей вузол для продуктів-assistants, основний задокументований сценарій яких — розмовна взаємодія, а не локальний inference, хостинг моделей чи поведінка development agent.
+Використовуйте цей вузол для продуктів-асистентів, основним задокументованим сценарієм яких є розмовна взаємодія, а не локальний inference, hosting моделей або поведінка development agent.

@@ -2,6 +2,11 @@
 
 Reasoning models are optimized to spend additional computation on multi-step problem solving before producing a final answer.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Compared with ordinary low-latency chat models, reasoning-oriented models may allocate more internal work to planning, checking intermediate steps, exploring alternatives, or using tools. They are often useful for difficult coding, mathematics, analysis, and tasks with several dependent constraints.

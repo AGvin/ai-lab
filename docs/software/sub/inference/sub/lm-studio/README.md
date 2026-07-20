@@ -2,6 +2,11 @@
 
 LM Studio is a desktop application and local server for running AI models on a workstation.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

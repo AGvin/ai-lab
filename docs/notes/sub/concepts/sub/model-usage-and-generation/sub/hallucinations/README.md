@@ -2,6 +2,11 @@
 
 A hallucination is unsupported, incorrect, or fabricated model output presented in a plausible form.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Language models generate likely token sequences; they do not automatically verify every statement against a trusted source. Hallucinations can appear as invented facts, citations, API methods, quotations, file paths, numerical results, or claims that overstate uncertain evidence.

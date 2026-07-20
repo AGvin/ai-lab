@@ -2,6 +2,11 @@
 
 Instruction tuning trains a model on diverse instruction-and-response examples so it becomes better at following natural-language tasks.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A pretrained language model is optimized mainly to continue text. Instruction tuning reshapes that behavior toward responding to requests, respecting task descriptions, and generalizing across many instruction formats. It is usually implemented through supervised fine-tuning and may be followed by preference optimization.

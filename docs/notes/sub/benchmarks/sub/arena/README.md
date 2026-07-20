@@ -2,6 +2,11 @@
 
 Arena is an AI leaderboard resource.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

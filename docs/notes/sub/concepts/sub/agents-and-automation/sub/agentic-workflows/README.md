@@ -2,6 +2,11 @@
 
 An agentic workflow combines model-driven decisions with explicit workflow structure, deterministic steps, tools, state, and validation.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Unlike an open-ended autonomous loop, an agentic workflow defines known stages and permits the model to make bounded decisions inside them. For example, a workflow may retrieve data, ask a model to classify it, call an approved tool, validate the result, and request human approval before publishing.

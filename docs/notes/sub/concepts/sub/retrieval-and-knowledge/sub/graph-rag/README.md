@@ -2,6 +2,11 @@
 
 GraphRAG is a Retrieval-Augmented Generation approach that uses entities, relationships, communities, or graph traversal to assemble context.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Conventional RAG usually retrieves independent text chunks. GraphRAG adds structure that can connect information distributed across documents, such as people linked to projects, services linked to incidents, or concepts linked through citations. The graph may be created from an existing knowledge graph or extracted from text.

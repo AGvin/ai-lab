@@ -2,6 +2,11 @@
 
 Minimal software-engineering agent for local or sandboxed shell-driven coding tasks.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

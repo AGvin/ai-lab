@@ -2,6 +2,11 @@
 
 Encoders transform input into contextual representations, while decoders generate or predict output from prior context and optional encoded input.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Main forms
 
 - **Encoder-only:** reads the full input bidirectionally and produces representations for classification, retrieval, or extraction.

@@ -2,6 +2,11 @@
 
 An evaluation dataset is a curated set of inputs, expected properties, reference answers, labels, or scoring criteria used to test a model or system.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 The dataset should represent the distribution and risk of actual use. It may include ordinary cases, difficult edge cases, invalid inputs, adversarial examples, and historical incidents. The expected result can be exact, rubric-based, or open to human judgment depending on the task.

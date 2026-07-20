@@ -2,6 +2,11 @@
 
 Content moderation detects, labels, restricts, or routes content according to safety, legal, platform, or community policies.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Moderation may apply before model processing, after generation, or both. Systems combine rules, classifiers, model judgments, user reports, and human review. Policies must define categories and actions explicitly because “unsafe” is context-dependent.

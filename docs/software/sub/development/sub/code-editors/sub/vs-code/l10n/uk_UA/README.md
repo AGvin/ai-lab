@@ -3,13 +3,13 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:62ee74c40145199dd45db6fc03f3adf644392630
+  source_hash: gitblob:4b3a454655b2b857d918f526d6c847e4115c7239
   mode: translated
 -->
 
 # Visual Studio Code
 
-Локалізована точка входу для extensible code editor for AI-assisted workflows.
+Visual Studio Code — редактор коду з екосистемою розширень для workflows розроблення за допомогою ШІ.
 
 ## Переклади
 
@@ -38,7 +38,7 @@ Visual Studio Code релевантний AI Lab, бо його екосисте
 
 ## Екосистема розширень
 
-Документуйте спеціалізовані для редактора extensions у дочірньому вузлі `extensions/`.
+Документуйте спеціалізовані для редактора extensions у дочірньому вузлі [`extensions/`](../../sub/extensions/l10n/uk_UA/).
 
 ## Посилання
 

@@ -2,6 +2,11 @@
 
 Factory AI software-development agent for team engineering workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

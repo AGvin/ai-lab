@@ -2,6 +2,11 @@
 
 Google autonomous coding agent for asynchronous software-development tasks.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

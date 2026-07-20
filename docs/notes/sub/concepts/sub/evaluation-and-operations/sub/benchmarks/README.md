@@ -2,6 +2,11 @@
 
 A benchmark is a standardized task, dataset, protocol, or workload used to compare models or systems under defined conditions.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Benchmarks support broad comparison, but their results are meaningful only when the tested model version, prompt, scoring method, hardware, and execution settings are understood. A benchmark score is evidence for the measured task, not a universal measure of intelligence.

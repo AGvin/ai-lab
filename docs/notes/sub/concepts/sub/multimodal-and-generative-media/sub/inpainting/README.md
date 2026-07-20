@@ -2,6 +2,11 @@
 
 Inpainting regenerates selected masked regions of an image while using the surrounding image as context.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A mask identifies which pixels may change. The model fills the masked region according to the prompt, neighboring content, and optional reference controls. Mask blur and padding help blend the generated region into its surroundings.

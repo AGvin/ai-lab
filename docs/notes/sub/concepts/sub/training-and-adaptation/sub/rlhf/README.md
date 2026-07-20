@@ -2,6 +2,11 @@
 
 Reinforcement Learning from Human Feedback, or RLHF, uses human preference data to train a model toward behavior judged more desirable.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Typical pipeline
 
 1. Supervised fine-tuning creates an instruction-following model.

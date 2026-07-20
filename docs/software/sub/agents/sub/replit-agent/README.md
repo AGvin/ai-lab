@@ -2,6 +2,11 @@
 
 AI app-building agent for turning natural-language prompts into apps and websites inside Replit.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

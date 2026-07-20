@@ -2,6 +2,11 @@
 
 Least privilege grants an AI system only the permissions and data access required for the current task.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A capable model should not automatically receive broad operational authority. Permissions should be narrow in scope, time, resource, and action. Read, draft, approve, and execute capabilities should be separated where practical.

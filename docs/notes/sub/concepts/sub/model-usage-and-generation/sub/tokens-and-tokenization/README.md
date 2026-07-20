@@ -2,6 +2,11 @@
 
 Tokens are the units a model reads and generates. Tokenization converts text, code, punctuation, and sometimes whitespace into token identifiers from a fixed vocabulary.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A token is not the same as a word or character. Common words may map to one token, while uncommon words, identifiers, URLs, or non-Latin text may be split into several. Models operate on token sequences rather than raw text, so tokenization directly affects context usage, generation cost, latency, and how reliably a model handles unusual strings.

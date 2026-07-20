@@ -2,6 +2,11 @@
 
 AI code-review, planning, and development workflow agent for pull requests, Slack, IDE, and CLI usage.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

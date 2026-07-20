@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: sha256:46c3dee95304acf3e2e4e1d736be891f1106c40736451bdef87564d580ddd766
+  source_hash: gitblob:c6e4a720c9b3f64b9d4cc27b56692ff26c0f6bac
   mode: translated
 -->
 
@@ -33,8 +33,10 @@ l10n:
 
 ## Корисні
 
-- [`function-calling/`](../../sub/function-calling/l10n/uk_UA/) — структурований model interface, у якому output визначає function та arguments.
+- [`function-calling/`](../../sub/function-calling/l10n/uk_UA/) — структурований інтерфейс моделі, у якому output визначає function та arguments.
 - [`model-context-protocol/`](../../sub/model-context-protocol/l10n/uk_UA/) — відкритий client-server protocol для надання AI applications tools, resources, prompts і пов’язаних context capabilities.
+- [`agent-skills/`](../../sub/agent-skills/l10n/uk_UA/) — переносні пакети процедурних знань, які виявляються й завантажуються, коли вони потрібні для задачі.
+- [`plugins/`](../../sub/plugins/l10n/uk_UA/) — платформоспецифічні пакети розширень, що можуть поширювати skills, agents, hooks, connectors і конфігурацію MCP.
 - [`task-decomposition/`](../../sub/task-decomposition/l10n/uk_UA/) — поділ великої задачі на менші одиниці, які можна перевірити.
 - [`retries/`](../../sub/retries/l10n/uk_UA/) — повторення допустимих невдалих операцій за обмеженими правилами.
 - [`autonomy-levels/`](../../sub/autonomy-levels/l10n/uk_UA/) — ступінь самостійності в ухваленні рішень, наданий системі ШІ.

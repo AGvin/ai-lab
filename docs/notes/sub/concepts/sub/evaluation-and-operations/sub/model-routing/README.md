@@ -2,6 +2,11 @@
 
 Model routing dynamically selects a model or configuration for each request according to task type, risk, cost, latency, or capability requirements.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A router may use explicit rules, user choices, classifiers, confidence estimates, or staged escalation. Simple tasks go to a fast inexpensive model, while difficult or high-risk tasks use a stronger model or human review.

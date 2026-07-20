@@ -2,6 +2,11 @@
 
 Continuous batching dynamically combines active inference requests so new work can enter the batch as other requests finish.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Static batching waits for a fixed group and processes it together, which wastes capacity when sequences have different lengths. Continuous batching schedules tokens or sequence blocks across requests, keeping the accelerator busy while allowing requests to start and finish independently.

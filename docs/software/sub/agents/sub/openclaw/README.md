@@ -2,6 +2,11 @@
 
 OpenClaw is a personal AI assistant that runs on user-controlled devices and connects to messaging channels.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

@@ -4,6 +4,11 @@ Concepts for selecting, testing, observing, and operating AI systems under real 
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Essential
 
 - [`evals/`](./sub/evals/) — Repeatable tests that measure whether an AI model or system meets defined requirements.

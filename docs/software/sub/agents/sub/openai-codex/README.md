@@ -2,6 +2,11 @@
 
 OpenAI coding agent for software-engineering workflows across app, IDE, CLI, web, and automation surfaces.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
@@ -35,6 +40,17 @@ Use OpenAI Codex as a reference point for:
 - repository editing and review workflows;
 - agent configuration, rules, hooks, skills, MCP, and plugin surfaces;
 - comparison with Claude Code, GitHub Copilot coding agent, Devin, Cursor, Cline, and Aider.
+
+## Skills, plugins, and MCP
+
+Codex supports reusable Agent Skills and platform-specific plugins, and it can connect to MCP servers. Keep general explanations and tutorials centralized:
+
+- [Agent Skills](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/)
+- [Codex skill installation and invocation](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/platform-support/#openai-codex)
+- [Plugins](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/plugins/)
+- [Model Context Protocol](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/model-context-protocol/)
+
+Use this product page for Codex-specific evaluation notes rather than duplicating the full learning guides.
 
 ## Evaluation notes
 

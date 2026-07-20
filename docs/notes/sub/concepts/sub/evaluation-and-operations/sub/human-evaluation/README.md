@@ -2,6 +2,11 @@
 
 Human evaluation uses people to assess model outputs against explicit criteria or compare alternative responses.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Humans are needed when quality depends on nuanced meaning, domain expertise, usability, tone, or real-world consequences that automated metrics do not capture. Reliable human evaluation requires a clear rubric and consistent annotation process.

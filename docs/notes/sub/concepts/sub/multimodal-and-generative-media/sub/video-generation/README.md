@@ -2,6 +2,11 @@
 
 Video generation creates or transforms sequences of visual frames from text, images, video references, motion controls, or other conditioning.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A useful video model must generate individual frame quality while maintaining temporal consistency. Models often operate in compressed spatiotemporal latent spaces and may use image references to anchor appearance or composition.

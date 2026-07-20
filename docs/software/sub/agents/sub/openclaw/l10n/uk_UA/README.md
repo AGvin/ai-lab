@@ -3,13 +3,13 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:45dd4f0e3d651645c0092dedead528f8a124bcfc
+  source_hash: gitblob:764cafbe76e0db634ac6af0797f6cd1658b56bd1
   mode: translated
 -->
 
 # OpenClaw
 
-Локалізована точка входу для browser-use AI agent project.
+OpenClaw — персональний assistant ШІ, що працює на пристроях під контролем користувача й під’єднується до messaging channels.
 
 ## Переклади
 

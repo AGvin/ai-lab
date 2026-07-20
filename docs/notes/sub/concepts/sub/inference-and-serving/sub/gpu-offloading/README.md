@@ -2,6 +2,11 @@
 
 GPU offloading places some or all model computation and weights on a GPU while the remaining work stays on the CPU or another device.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 When a model does not fit entirely in VRAM, runtimes may place selected layers on the GPU and keep the rest in system memory. More GPU-resident layers usually improve speed, but transfers and synchronization can reduce the benefit when the split is poorly chosen.

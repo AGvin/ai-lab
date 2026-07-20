@@ -4,6 +4,11 @@ Concepts for training models or adapting existing models to tasks, domains, pref
 
 Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Essential
 
 - [`fine-tuning/`](./sub/fine-tuning/) — Continuing model training on targeted data to modify behavior or task performance.

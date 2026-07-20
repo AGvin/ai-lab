@@ -2,6 +2,11 @@
 
 Cost management measures, attributes, forecasts, and controls spending across models, infrastructure, storage, retrieval, and tools.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Cost sources
 
 - Input, output, cached, and reasoning tokens.

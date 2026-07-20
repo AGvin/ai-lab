@@ -2,6 +2,11 @@
 
 Evals are repeatable tests that measure whether a model or AI system meets defined quality, safety, reliability, and operational requirements.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 An evaluation starts with a concrete task and success criteria. It supplies representative inputs, runs a fixed configuration, and scores outputs through deterministic checks, human review, model judges, or a combination. Evals should measure the complete system when prompts, retrieval, tools, and post-processing materially affect results.

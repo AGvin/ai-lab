@@ -2,6 +2,11 @@
 
 Data residency specifies the geographic or jurisdictional location where data is stored or processed.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 AI workflows may transmit prompts, files, embeddings, logs, and backups across several services and regions. Residency requirements therefore apply to the entire processing chain, not only the primary model endpoint.

@@ -2,6 +2,11 @@
 
 Chain of thought refers to intermediate reasoning steps used to support multi-step problem solving. These steps may appear as generated text, remain internal to a reasoning model, or be represented through explicit workflow state.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Breaking a difficult problem into intermediate steps can improve planning and error detection. However, a fluent reasoning trace is not proof that the conclusion is correct. Some systems deliberately do not expose private internal reasoning and instead provide concise explanations, calculations, evidence, or verifiable intermediate results.

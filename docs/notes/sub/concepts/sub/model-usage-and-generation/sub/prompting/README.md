@@ -2,6 +2,11 @@
 
 Prompting is the practice of supplying instructions, context, examples, and constraints that guide a model toward a useful result.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A strong prompt defines the task clearly enough that the model does not need to infer essential requirements. It separates instructions from source material, states the desired output, and provides only the context needed to complete the task. Prompt quality matters, but it cannot compensate for missing knowledge, insufficient model capability, unavailable tools, or unreliable source data.

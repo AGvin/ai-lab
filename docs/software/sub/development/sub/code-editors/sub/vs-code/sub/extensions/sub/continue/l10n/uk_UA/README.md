@@ -3,13 +3,13 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:1ef2a1fd035f847679d83c0f3407f9c5a4af2f5d
+  source_hash: gitblob:d9aaa8c247160099ecc883f695b59b178aeb55cc
   mode: translated
 -->
 
 # Continue
 
-Локалізована точка входу для AI coding assistant extension.
+Continue — розширення-помічник для програмування за допомогою ШІ в editor workflows.
 
 ## Переклади
 

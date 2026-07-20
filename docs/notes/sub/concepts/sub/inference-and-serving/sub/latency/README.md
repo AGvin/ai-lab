@@ -2,6 +2,11 @@
 
 Latency is the elapsed time required for an inference system to reach a defined response milestone.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Useful latency measures
 
 - **Queue latency:** time spent waiting before processing starts.

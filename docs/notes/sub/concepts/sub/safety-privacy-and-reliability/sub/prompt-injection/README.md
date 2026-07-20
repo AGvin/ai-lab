@@ -2,6 +2,11 @@
 
 Prompt injection is input designed to manipulate an AI system into ignoring intended instructions, revealing protected information, or performing unauthorized actions.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A model processes instructions and data in the same general medium: tokens. An attacker can therefore place instruction-like text in a user message and attempt to override policy or redirect tool use. Prompt hierarchy helps, but it is not a complete security boundary.

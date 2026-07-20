@@ -2,6 +2,11 @@
 
 Rate limits restrict the number or volume of requests allowed during a time period.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Limits protect providers and applications from overload, runaway agents, abuse, and unexpected cost. They may be expressed as requests per minute, input or output tokens per minute, concurrent requests, tool actions, or monetary budgets.

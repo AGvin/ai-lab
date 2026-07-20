@@ -2,6 +2,11 @@
 
 Agent memory preserves information beyond the immediate request so it can influence future steps or future sessions.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Types of memory
 
 - **Working memory:** temporary information needed for the current task.

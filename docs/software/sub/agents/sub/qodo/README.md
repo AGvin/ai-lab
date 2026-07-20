@@ -2,6 +2,11 @@
 
 AI code-review agent suite integrated into Git pull-request workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text

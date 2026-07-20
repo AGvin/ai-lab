@@ -2,6 +2,11 @@
 
 Guardrails are controls that validate, restrict, monitor, or redirect model inputs, outputs, and actions.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Types of guardrails
 
 - Input validation and content classification.

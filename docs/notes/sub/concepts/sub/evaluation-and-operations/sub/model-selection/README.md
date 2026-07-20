@@ -2,6 +2,11 @@
 
 Model selection chooses a model and deployment configuration that best satisfy a task's quality, cost, latency, privacy, safety, and operational requirements.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 There is rarely one universally best model. A larger hosted model may provide stronger reasoning, while a smaller local model may offer lower cost, privacy, or offline operation. Selection should be based on measured workflow performance rather than reputation or parameter count.
