@@ -2,6 +2,11 @@
 
 Chunking divides source material into smaller retrievable units that can be indexed, ranked, and placed into a model context.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A chunk should be small enough to retrieve precisely but large enough to preserve the information needed to understand it. Good boundaries usually follow document structure such as headings, paragraphs, functions, table rows, or conversation turns rather than arbitrary character counts.
