@@ -2,6 +2,11 @@
 
 A large language model is a neural network trained to model and generate token sequences at substantial scale.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Most modern LLMs are trained through next-token prediction or related objectives. This produces broad language, coding, reasoning, and pattern-completion capabilities. Instruction tuning and preference optimization then shape the base model into a more useful assistant or task model.
