@@ -2,6 +2,11 @@
 
 Retrieval poisoning manipulates indexed knowledge so a search or RAG system supplies misleading, malicious, or instruction-bearing content.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 An attacker may add documents containing false claims, optimized keywords, hidden text, or prompt-injection instructions. Because the system retrieves these documents as evidence, the model may repeat or act on them with apparent grounding.
