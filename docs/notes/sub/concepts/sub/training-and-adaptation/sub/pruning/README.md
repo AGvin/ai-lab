@@ -2,6 +2,11 @@
 
 Pruning removes model weights, neurons, attention heads, layers, or other structures judged unnecessary for a target objective.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Unstructured pruning sets individual weights to zero, while structured pruning removes larger units that hardware and runtimes can exploit more easily. Pruned models are often fine-tuned afterward to recover quality.
