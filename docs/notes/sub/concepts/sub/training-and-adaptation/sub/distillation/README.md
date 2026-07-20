@@ -2,6 +2,11 @@
 
 Distillation trains a smaller or simpler student model to reproduce useful behavior from a stronger teacher model.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 The teacher may provide probability distributions, generated answers, reasoning examples, labels, or synthetic tasks. The student learns from these signals and may retain part of the teacher's capability at lower inference cost.
