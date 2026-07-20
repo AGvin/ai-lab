@@ -2,6 +2,11 @@
 
 CPU inference runs most model computation on general-purpose processor cores and system memory.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Large language-model inference is often limited by memory bandwidth rather than only arithmetic throughput. CPUs can run quantized models efficiently enough for development, low-volume services, embeddings, or devices without suitable GPUs. Vector instruction support and memory-channel bandwidth strongly affect performance.
