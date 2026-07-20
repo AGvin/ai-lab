@@ -2,6 +2,11 @@
 
 Artificial intelligence is the broad field of building systems that perform tasks associated with perception, language, reasoning, prediction, generation, planning, or decision-making.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 AI is an umbrella term rather than one implementation technique. A rule-based expert system, a machine-learning classifier, a large language model, and a robot-control system can all be described as AI even though they operate differently.
