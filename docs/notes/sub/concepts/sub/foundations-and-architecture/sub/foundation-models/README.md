@@ -2,6 +2,11 @@
 
 A foundation model is a broadly trained model that can support many downstream tasks through prompting, retrieval, tools, fine-tuning, or adapters.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Instead of training a separate model from scratch for every task, a foundation model learns reusable representations from large and diverse data. Language models, vision-language models, and general image-generation models are common examples.
