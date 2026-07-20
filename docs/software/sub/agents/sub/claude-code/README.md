@@ -2,6 +2,11 @@
 
 Anthropic coding agent for terminal, editor, desktop, browser, and automation workflows.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Metadata
 
 ```text
