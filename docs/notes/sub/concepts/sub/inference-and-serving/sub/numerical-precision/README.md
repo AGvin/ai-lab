@@ -2,6 +2,11 @@
 
 Numerical precision defines the number format used to represent model weights, activations, gradients, and caches.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Precision affects memory consumption, numerical range, rounding error, and hardware performance. FP32 provides broad compatibility and precision but uses more memory. FP16, BF16, FP8, and integer formats reduce storage or compute requirements with different range and accuracy characteristics.
