@@ -2,6 +2,11 @@
 
 Image-to-image generation transforms an existing image while using it as conditioning for composition, content, or style.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 The source image is encoded and partially noised, then regenerated under prompt or structural guidance. A denoising-strength parameter commonly controls how closely the output remains tied to the source: lower strength preserves more detail, while higher strength permits larger changes.
