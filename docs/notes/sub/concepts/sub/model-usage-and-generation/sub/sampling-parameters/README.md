@@ -2,6 +2,11 @@
 
 Sampling parameters control how a generative model chooses the next token from its probability distribution.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Main controls
 
 - **Temperature:** rescales token probabilities. Lower values usually make output more concentrated and repeatable; higher values increase variation.
