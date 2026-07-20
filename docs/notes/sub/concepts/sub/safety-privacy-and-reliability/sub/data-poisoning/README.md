@@ -2,6 +2,11 @@
 
 Data poisoning corrupts training or adaptation data to degrade model quality, create targeted behavior, or introduce hidden backdoors.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 An attacker may insert mislabeled examples, repeated propaganda, trigger phrases, malicious code, or subtly modified records. Poisoning can affect foundation-model pretraining, fine-tuning datasets, preference data, or evaluation sets.
