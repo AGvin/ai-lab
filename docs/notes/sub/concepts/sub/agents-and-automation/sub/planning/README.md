@@ -2,6 +2,11 @@
 
 Planning is the process of selecting and ordering actions needed to reach a goal under known constraints.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 In agent systems, a plan may be generated once, revised after each observation, or represented as a graph of dependencies. Good plans identify prerequisites, expected outputs, validation points, and conditions that require replanning.
