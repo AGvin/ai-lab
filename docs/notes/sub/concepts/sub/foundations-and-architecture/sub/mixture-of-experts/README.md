@@ -2,6 +2,11 @@
 
 Mixture of Experts is a sparse architecture in which a router selects a small subset of expert networks to process each token or input.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Experts are typically alternative feed-forward blocks. The router scores them and activates the top choices. This increases total model capacity without multiplying computation by the full number of experts.
