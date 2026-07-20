@@ -2,6 +2,11 @@
 
 Adapters are small trainable components attached to a frozen or mostly frozen base model to provide reusable specialization.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 An adapter inserts additional parameters into selected model layers or modifies their computation. Different adapters can be loaded for different tasks without storing a complete model copy. LoRA is one widely used adapter-style technique, but adapter methods can use other architectures.
