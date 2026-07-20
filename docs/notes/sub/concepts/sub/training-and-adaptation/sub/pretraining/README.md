@@ -2,6 +2,11 @@
 
 Pretraining is the large-scale initial training phase that creates a broadly capable base model before task-specific adaptation.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Language models commonly learn by predicting missing or next tokens from massive corpora. Vision and multimodal models use related self-supervised or paired-data objectives. Pretraining teaches broad representations, patterns, and capabilities that later stages refine.
