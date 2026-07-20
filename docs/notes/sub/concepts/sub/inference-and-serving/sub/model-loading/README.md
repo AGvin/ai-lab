@@ -2,6 +2,11 @@
 
 Model loading moves model artifacts from storage into RAM, VRAM, accelerator memory, or memory-mapped address space so inference can begin.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Loading includes reading files, allocating memory, initializing runtime structures, transferring layers to devices, and sometimes compiling kernels. The amount of required memory is larger than the model file alone because the runtime also needs buffers, caches, metadata, and temporary workspaces.
