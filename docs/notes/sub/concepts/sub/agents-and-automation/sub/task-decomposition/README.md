@@ -2,6 +2,11 @@
 
 Task decomposition divides a large objective into smaller units that can be executed, validated, and recombined.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Decomposition reduces cognitive and context load by isolating responsibilities. A useful subtask has a clear input, expected output, dependencies, and completion criterion. Subtasks may run sequentially or in parallel when they do not share mutable state.
