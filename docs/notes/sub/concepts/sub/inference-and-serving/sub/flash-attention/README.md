@@ -2,6 +2,11 @@
 
 FlashAttention is a family of attention implementations designed to reduce memory traffic and improve accelerator efficiency while computing exact attention results within supported numerical behavior.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Standard attention may materialize large intermediate matrices in high-bandwidth memory. FlashAttention reorganizes the computation into tiles that fit in faster on-chip memory, reducing reads and writes. The improvement is primarily an implementation optimization rather than a different model architecture.
