@@ -2,6 +2,11 @@
 
 Provenance records the origin, ownership, transformation history, and custody of data, model artifacts, and generated outputs.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A useful provenance chain answers where an item came from, which version was used, how it was processed, and which system produced the result. This supports verification, licensing, incident response, and reproducibility.
