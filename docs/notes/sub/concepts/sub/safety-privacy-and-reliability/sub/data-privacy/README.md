@@ -2,6 +2,11 @@
 
 Data privacy governs how personal, confidential, or sensitive information is collected, processed, retained, shared, and deleted.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 An AI workflow can expose data through prompts, model-provider logs, embeddings, caches, traces, training datasets, or tool results. Privacy must therefore be designed across the full data path rather than evaluated only at the model endpoint.
