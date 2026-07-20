@@ -2,6 +2,11 @@
 
 Vision-language models process visual information together with natural-language instructions or questions.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Images are converted into visual features or tokens and combined with a language model. The system can describe scenes, answer questions, read screenshots, interpret diagrams, compare images, or extract structured information. The model does not necessarily process every pixel at original resolution; preprocessing and visual-token budgets determine available detail.
