@@ -2,6 +2,11 @@
 
 LLM as a judge uses a language model to score, rank, critique, or compare outputs from another model or system.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A judge model can evaluate qualities that are difficult to encode as exact rules, such as relevance, completeness, style, or adherence to a rubric. Pairwise comparison is often more stable than assigning an absolute numerical score.
