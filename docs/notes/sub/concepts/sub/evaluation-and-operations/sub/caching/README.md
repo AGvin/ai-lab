@@ -2,6 +2,11 @@
 
 Caching reuses previously computed results or processed data to reduce latency, cost, and repeated work.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Common cache targets
 
 - Complete model responses.
