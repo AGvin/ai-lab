@@ -2,6 +2,11 @@
 
 Quality and cost trade-offs describe how model capability, context, inference settings, validation, and operational controls affect both result quality and total expense.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Higher spending does not always improve useful quality. A larger model may solve difficult tasks with fewer retries, while a smaller model may handle routine extraction more efficiently. Retrieval, tools, and good workflow design can outperform simply increasing model size.
