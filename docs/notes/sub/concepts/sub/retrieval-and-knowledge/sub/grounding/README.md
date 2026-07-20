@@ -2,6 +2,11 @@
 
 Grounding ties generated claims to supplied evidence, tool results, or authoritative data instead of relying only on the model's internal statistical knowledge.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 A grounded answer should be supported by information available to the system at generation time. Grounding may use retrieved documents, database records, calculations, code execution, sensors, or APIs. The application should preserve the relationship between claims and evidence so the result can be checked.
