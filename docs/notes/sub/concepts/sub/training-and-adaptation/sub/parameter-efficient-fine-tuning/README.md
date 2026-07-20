@@ -2,6 +2,11 @@
 
 Parameter-Efficient Fine-Tuning, or PEFT, adapts a model by training a small subset of parameters or additional modules while keeping most base weights frozen.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Full fine-tuning stores gradients and optimizer state for the entire model. PEFT reduces training memory and produces smaller adaptation artifacts. Methods include LoRA, adapters, prefix tuning, prompt tuning, and selective parameter updates.
