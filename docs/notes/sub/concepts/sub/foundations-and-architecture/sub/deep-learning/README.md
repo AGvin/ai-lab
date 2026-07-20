@@ -2,6 +2,11 @@
 
 Deep learning is machine learning based on neural networks with many layers that learn hierarchical representations from data.
 
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
 ## Core idea
 
 Earlier layers often learn local or simple patterns, while later layers combine them into more abstract features. In language models, layers transform token representations through attention and feed-forward operations. In vision models, layers may learn edges, textures, shapes, and semantic objects.
