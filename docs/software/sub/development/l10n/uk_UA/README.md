@@ -3,13 +3,13 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:741a701c8c8c5e62ff2822ae6d843ba1aeed439d
+  source_hash: gitblob:0b71057c38c05bcef67a772ecf7e669db006af0a
   mode: translated
 -->
 
 # Розробка
 
-Програмне забезпечення для розроблення за допомогою ШІ, зокрема редактори коду, інструменти життєвого циклу розробки та засоби перевірки коду.
+Інструменти для створення, перевірки й захисту ПЗ за допомогою ШІ.
 
 ## Переклади
 
@@ -18,14 +18,11 @@ l10n:
 
 ## Дочірні вузли
 
-- [`code-editors/`](../../sub/code-editors/l10n/uk_UA/) — редактори коду й екосистеми розширень для розроблення за допомогою ШІ.
-- [`development-workflows/`](../../sub/development-workflows/l10n/uk_UA/) — інструменти, що структурують розробку через специфікації, плани, завдання, перевірку й етапи реалізації.
-- [`code-review-tools/`](../../sub/code-review-tools/l10n/uk_UA/) — неагентні інструменти для перегляду, навігації, анотування та перевірки наборів змін коду.
+- [`code-editors/`](../../sub/code-editors/l10n/uk_UA/)
+- [`development-workflows/`](../../sub/development-workflows/l10n/uk_UA/)
+- [`code-review-tools/`](../../sub/code-review-tools/l10n/uk_UA/)
+- [`application-security-tools/`](../../sub/application-security-tools/l10n/uk_UA/)
 
 ## Область
 
-Використовуйте цей вузол для програмного забезпечення, основна задокументована роль якого полягає у створенні, структуруванні, інспектуванні або перевірці змін програмного забезпечення в процесах розробки за допомогою ШІ.
-
-Зберігайте самостійні агентоподібні системи у [`agents/`](../../../agents/l10n/uk_UA/), навіть коли їхній основний сценарій — розробка програмного забезпечення. Загальне конструювання workflows належить до [`workflow-engines/`](../../../workflow-engines/l10n/uk_UA/), а загальна автоматизація — до [`automation/`](../../../automation/l10n/uk_UA/).
-
-Створюйте додаткові категорії розробки, наприклад testing, debugging або version-control tooling, лише коли для них існує реальний документаційний вміст.
+Цей вузол охоплює розробку й безпеку ПЗ. Самостійні агенти належать до [`agents/`](../../../agents/l10n/uk_UA/), конструктори процесів — до [`workflow-engines/`](../../../workflow-engines/l10n/uk_UA/), а загальна автоматизація — до [`automation/`](../../../automation/l10n/uk_UA/).

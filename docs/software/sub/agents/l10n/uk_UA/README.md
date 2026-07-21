@@ -3,11 +3,11 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:e83e5a6e18e5adf6b0b50344338398222b121713
+  source_hash: gitblob:705508b6c20e2b51ae3a50515dd3e02745eaef02
   mode: translated
 -->
 
-# Agents
+# Агенти
 
 Агентоподібні системи ШІ, де поведінка агента є основною задокументованою роллю.
 
@@ -18,37 +18,38 @@ l10n:
 
 ## Дочірні вузли
 
-- [`aider/`](../../sub/aider/l10n/uk_UA/) — terminal-based AI pair programming tool і coding agent для локальних Git-репозиторіїв.
-- [`bolt/`](../../sub/bolt/l10n/uk_UA/) — AI builder застосунків і вебсайтів через розмову з агентом.
-- [`claude-code/`](../../sub/claude-code/l10n/uk_UA/) — coding agent Anthropic для terminal, editor, desktop, browser та automation workflows.
-- [`cline/`](../../sub/cline/l10n/uk_UA/) — open-source coding agent і runtime для editor, terminal, SDK та automation workflows.
-- [`coderabbit/`](../../sub/coderabbit/l10n/uk_UA/) — агент ШІ для code review, планування й development workflows.
-- [`devin/`](../../sub/devin/l10n/uk_UA/) — proprietary автономний software-engineering agent.
-- [`factory-droid/`](../../sub/factory-droid/l10n/uk_UA/) — software-development agent Factory AI.
-- [`github-copilot-coding-agent/`](../../sub/github-copilot-coding-agent/l10n/uk_UA/) — хмарний coding agent, інтегрований із GitHub.
-- [`goose/`](../../sub/goose/l10n/uk_UA/) — open-source локальний агент ШІ для програмування й автоматизації.
+- [`aider/`](../../sub/aider/l10n/uk_UA/) — консольний інструмент парного програмування з ШІ та агент програмування для локальних Git-репозиторіїв.
+- [`bolt/`](../../sub/bolt/l10n/uk_UA/) — засіб створення застосунків і вебсайтів за допомогою ШІ через розмову з агентом.
+- [`claude-code/`](../../sub/claude-code/l10n/uk_UA/) — агент програмування Anthropic для термінала, редактора, настільного застосунку, браузера та процесів автоматизації.
+- [`cline/`](../../sub/cline/l10n/uk_UA/) — агент програмування з відкритим кодом і середовище виконання для редактора, термінала, SDK та процесів автоматизації.
+- [`coderabbit/`](../../sub/coderabbit/l10n/uk_UA/) — агент ШІ для перевірки коду, планування й процесів розроблення.
+- [`devin/`](../../sub/devin/l10n/uk_UA/) — пропрієтарний автономний агент розроблення програмного забезпечення.
+- [`factory-droid/`](../../sub/factory-droid/l10n/uk_UA/) — агент розроблення програмного забезпечення від Factory AI.
+- [`github-copilot-coding-agent/`](../../sub/github-copilot-coding-agent/l10n/uk_UA/) — хмарний агент програмування, інтегрований із GitHub.
+- [`goose/`](../../sub/goose/l10n/uk_UA/) — локальний агент ШІ з відкритим кодом для програмування й автоматизації.
 - [`hermes-agent/`](../../sub/hermes-agent/l10n/uk_UA/) — самовдосконалювана система агента ШІ від Nous Research.
-- [`jules/`](../../sub/jules/l10n/uk_UA/) — автономний coding agent Google.
-- [`kilo-code/`](../../sub/kilo-code/l10n/uk_UA/) — платформа coding agents із editor, CLI, gateway та hosted infrastructure.
-- [`lovable/`](../../sub/lovable/l10n/uk_UA/) — full-stack платформа розроблення вебзастосунків природною мовою.
-- [`mini-swe-agent/`](../../sub/mini-swe-agent/l10n/uk_UA/) — мінімальний software-engineering agent для shell-driven задач.
-- [`openai-codex/`](../../sub/openai-codex/l10n/uk_UA/) — coding agent OpenAI для software-engineering workflows.
-- [`openclaw/`](../../sub/openclaw/l10n/uk_UA/) — персональний assistant ШІ на керованих користувачем пристроях.
-- [`opencode/`](../../sub/opencode/l10n/uk_UA/) — open-source застосунок і runtime coding-agent для terminal, desktop, IDE та automated workflows.
-- [`omp/`](../../sub/omp/l10n/uk_UA/) — terminal coding-agent на основі Pi з інтегрованими editing, LSP, DAP, runtime, browser і subagent tools.
-- [`pi/`](../../sub/pi/l10n/uk_UA/) — terminal coding-agent harness, задокументований на pi.dev.
-- [`qodo/`](../../sub/qodo/l10n/uk_UA/) — набір AI code-review agents для pull-request workflows.
-- [`replit-agent/`](../../sub/replit-agent/l10n/uk_UA/) — AI app-building agent у Replit.
+- [`jules/`](../../sub/jules/l10n/uk_UA/) — автономний агент програмування Google.
+- [`kilo-code/`](../../sub/kilo-code/l10n/uk_UA/) — платформа агентів програмування з редактором, CLI, шлюзом і хостинговою інфраструктурою.
+- [`lovable/`](../../sub/lovable/l10n/uk_UA/) — повностекова платформа розроблення вебзастосунків природною мовою.
+- [`mini-swe-agent/`](../../sub/mini-swe-agent/l10n/uk_UA/) — мінімальний агент розроблення програмного забезпечення для задач, керованих через командну оболонку.
+- [`openai-codex/`](../../sub/openai-codex/l10n/uk_UA/) — агент програмування OpenAI для процесів розроблення програмного забезпечення.
+- [`openclaw/`](../../sub/openclaw/l10n/uk_UA/) — персональний асистент ШІ на керованих користувачем пристроях.
+- [`opencode/`](../../sub/opencode/l10n/uk_UA/) — застосунок із відкритим кодом і середовище виконання агента програмування для термінала, настільного застосунку, IDE та автоматизованих процесів.
+- [`omp/`](../../sub/omp/l10n/uk_UA/) — консольний агент програмування на основі Pi з інтегрованими засобами редагування, LSP, DAP, середовищем виконання, браузером та інструментами підагентів.
+- [`pi/`](../../sub/pi/l10n/uk_UA/) — консольне середовище агента програмування, задокументоване на pi.dev.
+- [`qodo/`](../../sub/qodo/l10n/uk_UA/) — набір агентів ШІ для перевірки коду в процесах pull request.
+- [`replit-agent/`](../../sub/replit-agent/l10n/uk_UA/) — агент ШІ для створення застосунків у Replit.
+- [`shannon/`](../../sub/shannon/l10n/uk_UA/) — автономний агент пентестингу вебзастосунків і API з відкритим кодом та доступом до вихідного коду цілі.
 
 ## Область
 
 Використовуйте цей вузол для інструментів ШІ, основна задокументована роль яких — автономна чи напівавтономна агентна поведінка.
 
-Не розміщуйте тут редактори коду або спеціалізовані для редактора розширення лише через функції ШІ. Для них використовуйте [`development/code-editors/`](../../sub/development/sub/code-editors/l10n/uk_UA/).
+Не розміщуйте тут редактори коду або спеціалізовані для редактора розширення лише через функції ШІ. Для них використовуйте [`development/code-editors/`](../../../development/sub/code-editors/l10n/uk_UA/). Ширші платформи безпеки застосунків належать до [`development/application-security-tools/`](../../../development/sub/application-security-tools/l10n/uk_UA/).
 
 ## Пропущені або другорядні кандидати
 
 | Інструмент | Причина |
 | --- | --- |
-| [`Roo Code`](https://docs.roocode.com/) | Extension закрито; зберігайте як історичне посилання на лінію Cline. |
+| [`Roo Code`](https://docs.roocode.com/) | Розширення закрито; зберігайте як історичне посилання на лінію Cline. |
 | [`SWE-agent`](https://github.com/SWE-agent/SWE-agent) | Замінено на `mini-swe-agent`; історичне або дослідницьке посилання. |
