@@ -30,12 +30,13 @@ Agent-like AI systems where agent behavior is the main documented role.
 - [`pi/`](./sub/pi/) — terminal coding-agent harness documented at pi.dev.
 - [`qodo/`](./sub/qodo/) — AI code-review agent suite integrated into Git pull-request workflows.
 - [`replit-agent/`](./sub/replit-agent/) — AI app-building agent for turning natural-language prompts into apps and websites inside Replit.
+- [`shannon/`](./sub/shannon/) — autonomous open-source white-box AI pentesting agent for web applications and APIs.
 
 ## Scope
 
 Use this node for AI tools whose main documented role is autonomous or semi-autonomous agent behavior.
 
-Do not place code editors or editor-specific extensions here only because they have AI features. Use [`development/code-editors/`](../development/sub/code-editors/) for those resources.
+Do not place code editors or editor-specific extensions here only because they have AI features. Use [`development/code-editors/`](../development/sub/code-editors/) for those resources. Broader application security platforms belong under [`development/application-security-tools/`](../development/sub/application-security-tools/).
 
 ## Skipped or secondary candidates
 
