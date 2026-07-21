@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:142a1b559df8318d2767dd8ccc5ed4bf3d4e6f8b
+  source_hash: gitblob:a66261dd34bffef33f689a788dbf9cefa73a062c
   mode: translated
 -->
 
@@ -39,6 +39,12 @@ l10n:
 ### Нотатки й підтримка рішень
 
 - [`concepts/`](../../docs/notes/sub/concepts/l10n/uk_UA/) — практичні й фундаментальні поняття ШІ за темою та пріоритетом читання.
+  - [`agents-and-automation/`](../../docs/notes/sub/concepts/sub/agents-and-automation/l10n/uk_UA/) — поняття для систем ШІ, які планують, використовують інструменти, підтримують стан і виконують контрольовані дії.
+    - [`agent-skills/`](../../docs/notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/l10n/uk_UA/) — переносні пакети процедурних знань, які виявляються й завантажуються, коли вони потрібні для задачі.
+      - [`using/`](../../docs/notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/using/l10n/uk_UA/) — установлення, виклик, оновлення, видалення, перевірка й діагностика skills.
+      - [`creating/`](../../docs/notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/creating/l10n/uk_UA/) — проєктування й побудова skill від мінімального `SKILL.md` до scripts, references, testing і publication.
+      - [`platform-support/`](../../docs/notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/platform-support/l10n/uk_UA/) — порівняння підтримуваних clients та їхніх моделей установлення й виклику.
+      - [`sources/`](../../docs/notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/sources/l10n/uk_UA/) — standards, catalogs, installers і рекомендовані сторонні collections.
 - [`benchmarks/`](../../docs/notes/sub/benchmarks/l10n/uk_UA/) — довідкові ресурси benchmark і leaderboard для оцінювання моделей, провайдерів і систем ШІ.
 - [`comparisons/`](../../docs/notes/sub/comparisons/l10n/uk_UA/) — порівняння для підтримки рішень щодо моделей, інструментів, workflows, платформ і систем ШІ.
 
