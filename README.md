@@ -15,23 +15,23 @@ This repository is an active public documentation lab. Content is added incremen
 
 ### Start here
 
-- [`overview/`](./docs/overview/) — repository documentation model, current layout, asset rules, and expansion guidance.
+- [`overview/`](./docs/sub/overview/) — repository documentation model, current layout, asset rules, and expansion guidance.
 
 ### Software
 
-- [`software/`](./docs/software/) — AI-related software, development tooling, model platforms, inference tools, agents, automation tools, and executable workflows.
-  - [`development/`](./docs/software/sub/development/) — software used to create, structure, inspect, and review changes in AI-assisted development workflows.
-    - [`code-editors/`](./docs/software/sub/development/sub/code-editors/) — code editors and editor extension ecosystems for AI-assisted development.
-    - [`development-workflows/`](./docs/software/sub/development/sub/development-workflows/) — tools that structure delivery through specifications, plans, tasks, validation, and implementation stages.
-    - [`code-review-tools/`](./docs/software/sub/development/sub/code-review-tools/) — non-agent tools for inspecting, navigating, annotating, and reviewing code changesets.
-  - [`inference/`](./docs/software/sub/inference/) — tools for local or self-hosted model execution.
-  - [`workflow-engines/`](./docs/software/sub/workflow-engines/) — tools that build or execute AI workflows.
-  - [`agents/`](./docs/software/sub/agents/) — agent-like AI systems where agent behavior is the primary documented role.
-  - [`agent-orchestration/`](./docs/software/sub/agent-orchestration/) — systems, frameworks, runtimes, and control planes for coordinating or running AI agents.
-  - [`assistants/`](./docs/software/sub/assistants/) — conversational AI assistants.
-  - [`automation/`](./docs/software/sub/automation/) — automation tools that support AI-adjacent workflows.
-  - [`model-platforms/`](./docs/software/sub/model-platforms/) — platforms for model discovery, hosting, datasets, and related AI tooling.
-  - [`models/`](./docs/software/sub/models/) — model families and individual model artifacts.
+- [`software/`](./docs/sub/software/) — AI-related software, development tooling, model platforms, inference tools, agents, automation tools, and executable workflows.
+  - [`development/`](./docs/sub/software/sub/development/) — software used to create, structure, inspect, and review changes in AI-assisted development workflows.
+    - [`code-editors/`](./docs/sub/software/sub/development/sub/code-editors/) — code editors and editor extension ecosystems for AI-assisted development.
+    - [`development-workflows/`](./docs/sub/software/sub/development/sub/development-workflows/) — tools that structure delivery through specifications, plans, tasks, validation, and implementation stages.
+    - [`code-review-tools/`](./docs/sub/software/sub/development/sub/code-review-tools/) — non-agent tools for inspecting, navigating, annotating, and reviewing code changesets.
+  - [`inference/`](./docs/sub/software/sub/inference/) — tools for local or self-hosted model execution.
+  - [`workflow-engines/`](./docs/sub/software/sub/workflow-engines/) — tools that build or execute AI workflows.
+  - [`agents/`](./docs/sub/software/sub/agents/) — agent-like AI systems where agent behavior is the primary documented role.
+  - [`agent-orchestration/`](./docs/sub/software/sub/agent-orchestration/) — systems, frameworks, runtimes, and control planes for coordinating or running AI agents.
+  - [`assistants/`](./docs/sub/software/sub/assistants/) — conversational AI assistants.
+  - [`automation/`](./docs/sub/software/sub/automation/) — automation tools that support AI-adjacent workflows.
+  - [`model-platforms/`](./docs/sub/software/sub/model-platforms/) — platforms for model discovery, hosting, datasets, and related AI tooling.
+  - [`models/`](./docs/sub/software/sub/models/) — model families and individual model artifacts.
 
 ### Notes and decision support
 
