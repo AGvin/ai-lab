@@ -42,24 +42,8 @@ Before applying commands, configurations, models, code, workflows, or operationa
 
 Use of the repository and its material is entirely at your own risk.
 
-## No Warranties
+## License and Legal Terms
 
-The repository and its material are provided on an **"as is"** and **"as available"** basis, without warranties or guarantees of any kind, whether express or implied, to the extent permitted by applicable law.
+The repository is distributed under the [MIT License](../../../LICENSE). The [`LICENSE`](../../../LICENSE) file is the authoritative source for licensing terms, warranty disclaimers, and limitations of liability.
 
-This includes, without limitation, warranties or guarantees concerning accuracy, reliability, availability, merchantability, fitness for a particular purpose, non-infringement, compatibility, security, or the absence of harmful effects.
-
-## Limitation of Liability
-
-To the maximum extent permitted by applicable law, the author and contributors are not liable for claims, damages, losses, costs, or other consequences arising from or connected with the use of, inability to use, or reliance on this repository or its material.
-
-This includes, without limitation, direct or indirect loss, loss or corruption of data, financial loss, service interruption, security incidents, hardware or software damage, legal or regulatory consequences, and third-party claims.
-
-## License
-
-This repository is distributed under the [MIT License](../../../LICENSE).
-
-In practical terms, the MIT License permits broad use, copying, modification, publication, distribution, sublicensing, and sale of copies, provided that its copyright notice and permission notice are retained as required by the license. It also states that the covered material is provided **"as is"**, without warranty, and contains a limitation of liability for the authors and copyright holders.
-
-The complete and authoritative licensing terms are contained in the [`LICENSE`](../../../LICENSE) file. This summary is provided only for orientation; it does not replace or modify the license text and is not legal advice.
-
-This disclaimer supplements the repository license by explaining the limitations specific to rankings, comparisons, recommendations, and practical use of the documented material. It does not alter the rights or conditions granted by the MIT License.
+This disclaimer only adds repository-specific context for informational material, subjective evaluations, recommendations, and practical use. It does not replace or modify the license.
