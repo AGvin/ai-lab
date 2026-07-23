@@ -16,6 +16,7 @@ This repository is an active public documentation lab. Content is added incremen
 ### Start here
 
 - [`overview/`](./docs/sub/overview/) — repository documentation model, current layout, asset rules, and expansion guidance.
+- [`disclaimer/`](./docs/sub/disclaimer/) — limitations of repository information, subjective evaluations, warranties, liability, and practical use.
 
 ### Software
 
@@ -217,6 +218,8 @@ This repository is an active public documentation lab. Content is added incremen
 
 ## License
 
-This repository is licensed under the MIT License.
+This repository is licensed under the [MIT License](./LICENSE).
 
-When reusing or adapting materials from this repository, please keep the original copyright notice and reference this repository as the source.
+See the [`LICENSE`](./LICENSE) file for the complete terms, including the warranty disclaimer and limitation of liability. For repository-specific limitations concerning informational material, subjective evaluations, recommendations, and practical use, see the [Disclaimer](./docs/sub/disclaimer/).
+
+When reusing or adapting materials from this repository, retain the copyright and permission notices as required by the license.
