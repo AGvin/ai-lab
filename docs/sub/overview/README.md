@@ -17,8 +17,8 @@ Do not create `docs/README.md`.
 
 ## Documentation Nodes
 
-- [`docs/software/`](../software/) — AI-related software, development tooling, inference tools, workflow engines, agents, assistants, automation tools, platforms, and models.
-- [`docs/notes/`](../notes/) — concepts, benchmarks, comparisons, and practical AI notes.
+- [`docs/sub/software/`](../software/) — AI-related software, development tooling, inference tools, workflow engines, agents, assistants, automation tools, platforms, and models.
+- [`docs/sub/notes/`](../notes/) — concepts, benchmarks, comparisons, and practical AI notes.
 
 ## Current Software Areas
 
@@ -71,7 +71,7 @@ Folder roles:
 Example:
 
 ```text
-docs/software/sub/development/sub/code-editors/sub/vs-code/
+docs/sub/software/sub/development/sub/code-editors/sub/vs-code/
   README.md
   assets/
     images/
