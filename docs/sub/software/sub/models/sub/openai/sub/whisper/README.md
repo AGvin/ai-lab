@@ -45,7 +45,7 @@ Architecture, checkpoint list, access model, and license are provider-documented
 
 - [OpenAI models](../..)
 - [Models](../../../..)
-- [Speech and Conversation](../../../../../../notes/sub/comparisons/sub/model-selection/sub/speech-and-conversation/)
+- [Speech and Conversation](../../../../../../../notes/sub/comparisons/sub/model-selection/sub/speech-and-conversation/)
 
 ## Sources
 
