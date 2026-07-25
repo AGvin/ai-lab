@@ -298,6 +298,7 @@ The task-oriented guides are:
 - [`perception-and-evaluation/`](./sub/perception-and-evaluation/) — image, audio, video, and document understanding, including model-output evaluation.
 - [`speech-and-conversation/`](./sub/speech-and-conversation/) — speech-to-text, speaker diarization, speaker identification, and conversational transcription.
 - [`combined-workloads/`](./sub/combined-workloads/) — portfolio-level team design, role assignment, model residency, routing, and cost optimization across several tasks.
+- [`reliability-profiles/`](./sub/reliability-profiles/) — assignment-specific reliability evidence, retry budgets, verification, escalation, and degraded-operation rules.
 
 Create each guide only with real evaluation criteria or recommendations; do not add empty category pages.
 

@@ -398,5 +398,6 @@ Avoid:
 - [Choosing Models for AI Agents](../agents/)
 - [Choosing Models for Coding](../coding/)
 - [Choosing Models for Orchestration](../orchestration/)
+- [Defining Model Reliability Profiles](../reliability-profiles/)
 - [Multi-Agent Systems](../../../../../concepts/sub/agents-and-automation/sub/multi-agent-systems/)
 - [Models](../../../../../../../software/sub/models/)

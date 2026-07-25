@@ -551,4 +551,5 @@ Avoid:
 - [Choosing Models for AI Agents](../agents/)
 - [Choosing Models for Orchestration](../orchestration/)
 - [Choosing Model Portfolios for Combined Workloads](../combined-workloads/)
+- [Defining Model Reliability Profiles](../reliability-profiles/)
 - [Multi-Agent Systems](../../../../../concepts/sub/agents-and-automation/sub/multi-agent-systems/)

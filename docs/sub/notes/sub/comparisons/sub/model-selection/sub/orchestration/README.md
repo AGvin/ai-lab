@@ -235,5 +235,6 @@ Record at least:
 - [Model Selection and Team Design](../../)
 - [Agent Models](../agents/)
 - [Combined Workloads](../combined-workloads/)
+- [Defining Model Reliability Profiles](../reliability-profiles/)
 - [Multi-Agent Systems](../../../../../concepts/sub/agents-and-automation/sub/multi-agent-systems/)
 - [Agent Orchestration Tools](../../../../../../../software/sub/agent-orchestration/)
