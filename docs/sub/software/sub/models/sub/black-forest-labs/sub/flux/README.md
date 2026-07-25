@@ -29,8 +29,8 @@ Document each exact FLUX variant separately. Do not transfer license, output rig
 ## Related pages
 
 - [Black Forest Labs models](../..)
-- [Image Generation Models](../../image-generation/)
-- [Generative Media](../../../../../notes/sub/comparisons/sub/model-selection/sub/generative-media/)
+- [Image Generation Models](../../../image-generation/)
+- [Generative Media](../../../../../../../notes/sub/comparisons/sub/model-selection/sub/generative-media/)
 
 ## Sources
 
