@@ -10,10 +10,11 @@ Models developed and operated by OpenAI.
 ## Model families
 
 - [`gpt/`](./sub/gpt/) — general-purpose GPT models for reasoning, coding, tool use, multimodal work, and professional workflows.
+- [`whisper/`](./sub/whisper/) — downloadable multilingual speech-recognition models for transcription, speech translation, and language identification.
 
 ## Access
 
-OpenAI models are primarily available through hosted products and APIs. Exact availability, pricing, safeguards, and supported features depend on the model tier and product surface.
+OpenAI models include hosted API models and downloadable model families. Exact availability, pricing, license, safeguards, supported features, and deployment requirements depend on the specific model or artifact.
 
 ## Related pages
 
@@ -23,3 +24,4 @@ OpenAI models are primarily available through hosted products and APIs. Exact av
 ## Sources
 
 - [OpenAI model catalog](https://developers.openai.com/api/docs/models)
+- [OpenAI Whisper repository](https://github.com/openai/whisper)
