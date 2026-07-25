@@ -1,6 +1,6 @@
 # Qwen Model Family
 
-Qwen is the Alibaba and Qwen Team model family containing general generations and specialized workload-oriented lines.
+Qwen is the Alibaba and Qwen Team model family containing general language-model generations and specialized workload-oriented lines.
 
 ## Translations
 
@@ -9,11 +9,17 @@ Qwen is the Alibaba and Qwen Team model family containing general generations an
 
 ## Scope
 
-This page records the family taxonomy. Hosted aliases, exact downloadable artifacts, quantizations, runtime support, and concrete architecture details belong to specialized-line or model pages.
+This page records the family taxonomy. Hosted aliases, exact downloadable artifacts, quantizations, runtime support, and concrete architecture details belong to generation, specialized-line, or model pages.
+
+## General generations
+
+- [Qwen3](./sub/qwen3/) — dense and mixture-of-experts language models with thinking and non-thinking modes, multilingual support, coding, reasoning, and agent-oriented capabilities.
 
 ## Specialized lines
 
 - [Qwen3-Coder](./sub/qwen3-coder/) — the Qwen3 coding and agentic model line.
+
+Additional specialized branches such as QwQ, QVQ, and image or audio models should be added only when real documentation or comparisons require them.
 
 The documented child set was verified on 2026-07-25.
 
@@ -24,5 +30,7 @@ The documented child set was verified on 2026-07-25.
 
 ## Sources
 
+- [Qwen3 technical report](https://arxiv.org/abs/2505.09388)
+- [Qwen3 model collection](https://huggingface.co/collections/Qwen/qwen3-67dd247413f0e2e4f653967f)
 - [Qwen3-Coder launch](https://qwenlm.github.io/blog/qwen3-coder/)
 - [Qwen3-Coder-Next model card](https://huggingface.co/Qwen/Qwen3-Coder-Next)
