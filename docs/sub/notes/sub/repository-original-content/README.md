@@ -5,6 +5,7 @@ This index tracks proposals first documented in this repository and separates re
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Interpretation
 
@@ -34,59 +35,55 @@ Git history records technical provenance. Concept pages should use neutral statu
 - **Novelty scope:** Unresolved exact integration of organization, model portfolio, quality control, runtime residency, on-demand resources, escalation, stopping, and verified infrastructure closure. The individual mechanisms substantially overlap existing literature and engineering practice.
 - **Current conclusion:** No novelty claim. Absence of an exact equivalent from a bounded review is not evidence of novelty.
 
-Public TODOs are maintained on the concept page and include broader literature and prior-art review, a falsifiable hypothesis, implementation, benchmark workloads, baselines, ablations, failure injection, diagrams, comparisons, open research questions, and independent review.
+Public TODOs remain on the concept page and include broader literature and prior-art review, a falsifiable hypothesis, implementation, benchmark workloads, baselines, ablations, failure injection, diagrams, comparisons, open research questions, and independent review.
 
 ## Admission requirements
 
-Add an item to this index only when:
+Add an item only when:
 
 1. the proposal has a canonical page in its proper thematic location;
 2. repository provenance is stated without implying novelty;
-3. the page distinguishes component mechanisms from the proposed synthesis;
-4. a public-literature search has been performed and documented;
+3. component mechanisms are separated from the proposed synthesis;
+4. a public-literature search is documented;
 5. status, implementation, validation, production use, evidence, and novelty scope are explicit;
 6. limitations and unresolved overlap are visible;
 7. research TODOs are public;
 8. navigation links the canonical page and this index.
 
-Do not add ordinary repository-authored guidance, templates, taxonomies, summaries, or integrations merely because their wording is original. This index is for proposals whose possible research contribution is being evaluated.
+Do not add ordinary repository-authored guidance, templates, taxonomies, summaries, or integrations merely because their wording is original.
 
 ## Status vocabulary
 
-Use restrained labels:
-
-- **Proposal** — a documented idea without a completed literature review.
-- **Research candidate** — a proposal with a bounded initial review and unresolved research question.
+- **Proposal** — documented idea without a completed literature review.
+- **Research candidate** — proposal with a bounded initial review and unresolved research question.
 - **Under implementation** — an executable reference system is being built; this does not imply validation.
 - **Experimental** — implementation and defined experiments exist; results and limitations must be linked.
 - **Validated for a declared scope** — pre-registered gates and evidence passed for an exact environment and workload; this is not a universal claim.
-- **Archived** — the proposal is no longer active or a distinct contribution was not supported.
+- **Archived** — the proposal is inactive or a distinct contribution was not supported.
 
-Do not use **novel**, **original architecture**, **safe**, **reliable**, **better**, **efficient**, **production-ready**, or similar evaluative labels without evidence adequate for the exact claim.
+Do not use **novel**, **original architecture**, **safe**, **reliable**, **better**, **efficient**, **production-ready**, or similar labels without evidence adequate for the exact claim.
 
 ## Literature-review minimum
 
-A research-candidate page should record:
+Record:
 
 - review date and search themes;
 - source classes and evidence quality;
 - mechanism-by-mechanism overlap;
-- explicit limitations of the search;
+- explicit search limitations;
 - unresolved novelty boundary;
-- sources sufficient to reproduce the initial comparison;
+- reproducible initial-comparison sources;
 - the conclusion that missing search results do not prove novelty.
 
-Before a formal novelty claim, conduct a substantially broader review appropriate to the claim, including scholarly databases, patents, theses, systems and framework publications, proprietary prior art where accessible, non-English sources, and independent expert review.
+Before a formal novelty claim, conduct a substantially broader review appropriate to the claim, including scholarly databases, patents, theses, systems and framework publications, accessible proprietary prior art, non-English sources, and independent expert review.
 
 ## Evidence progression
-
-Keep evidence classes separate:
 
 1. **Design only** — architecture and rationale.
 2. **Implementation evidence** — code, reproducible configuration, and execution traces.
 3. **Functional validation** — declared acceptance gates on representative workloads.
 4. **Comparative evidence** — reproducible baselines, ablations, and statistical treatment.
-5. **Operational evidence** — reliability, failure recovery, cost, security, privacy, and lifecycle behavior in a declared environment.
+5. **Operational evidence** — reliability, recovery, cost, security, privacy, and lifecycle behavior in a declared environment.
 6. **Independent evidence** — review or replication by parties not responsible for the proposal.
 
 Do not infer later classes from an earlier one.
@@ -94,9 +91,9 @@ Do not infer later classes from an earlier one.
 ## Repository policy
 
 - Store each candidate in the correct thematic section.
-- Link it here rather than duplicating its complete content.
+- Link it here instead of duplicating its complete content.
 - Keep established patterns on their own canonical pages.
-- Preserve negative results and findings that weaken the research hypothesis.
+- Preserve negative results and findings that weaken the hypothesis.
 - Date material literature and status updates.
 - Name exact implementations, models, versions, hardware, datasets, and evidence when they exist.
 - Reassess classification when prior overlap is discovered.
