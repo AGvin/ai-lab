@@ -9,7 +9,7 @@ Use this guide to select the smallest practical set of models for a workload tha
 
 ## Status
 
-Initial framework. Concrete model assignments must be added only when the exact model version, access conditions, hardware profile, evidence, and verification date are known.
+Initial framework with concrete candidate environment profiles. Exact assignments become recommendations only after the model version, access conditions, hardware profile, workload evidence, and verification date are recorded and the complete assignment passes its gates.
 
 ## Purpose
 
@@ -336,6 +336,12 @@ Keep a generalist, router, or orchestrator available locally. Start or call spec
 
 This topology is suitable for home labs and constrained servers when specialist demand is intermittent.
 
+## Concrete candidate portfolios
+
+- [`environment-profiles/`](./sub/environment-profiles/) — exact candidate assignments for one or two 24 GB GPUs, CPU-only, cloud-only, hybrid, always-on local, on-demand image POD, low-budget, low-latency, and maximum-quality environments.
+
+Treat these as evaluation profiles. Each assignment must pass the workload-specific quality, reliability, privacy, latency, hardware, and accepted-result-cost gates before it becomes a recommendation.
+
 ## Portfolio recommendation record
 
 Use a compact record such as:
@@ -395,6 +401,7 @@ Avoid:
 ## Related pages
 
 - [AI Model Selection and Team Design](../..)
+- [Concrete Model Portfolio Profiles](./sub/environment-profiles/)
 - [Choosing Models for AI Agents](../agents/)
 - [Choosing Models for Coding](../coding/)
 - [Choosing Models for Orchestration](../orchestration/)
