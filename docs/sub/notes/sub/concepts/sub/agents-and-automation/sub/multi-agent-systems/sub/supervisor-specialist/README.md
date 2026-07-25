@@ -5,6 +5,7 @@ A supervisor-specialist architecture uses one stateful supervising agent to reta
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
