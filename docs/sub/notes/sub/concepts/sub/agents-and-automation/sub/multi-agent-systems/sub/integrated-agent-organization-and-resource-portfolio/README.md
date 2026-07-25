@@ -184,4 +184,4 @@ The evaluation should test whether the integrated composition improves the compl
 - [Resource Lifecycle Controller Architecture](../resource-lifecycle-controller/)
 - [Choosing Model Portfolios for Combined Workloads](../../../../../../../comparisons/sub/model-selection/sub/combined-workloads/)
 - [Resource Lifecycle Orchestration](../../../../../../../comparisons/sub/model-selection/sub/orchestration/sub/resource-lifecycle/)
-- [Repository-Original Content Index](../../../../../../../../repository-original-content/)
+- [Repository-Original Content Index](../../../../../../../repository-original-content/)
