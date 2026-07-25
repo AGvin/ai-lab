@@ -5,6 +5,7 @@ A planner-executor architecture separates creation and maintenance of an executi
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
