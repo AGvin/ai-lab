@@ -5,6 +5,7 @@ A map-reduce agent architecture partitions a workload into independent map tasks
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
