@@ -5,6 +5,7 @@ A human approval gate pauses an agent workflow before a declared consequential t
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
