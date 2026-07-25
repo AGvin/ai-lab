@@ -31,7 +31,7 @@ Evaluate diarization together with the transcription and alignment pipeline. A l
 ## Related pages
 
 - [pyannote models](../..)
-- [Speech and Conversation](../../../../../notes/sub/comparisons/sub/model-selection/sub/speech-and-conversation/)
+- [Speech and Conversation](../../../../../../../notes/sub/comparisons/sub/model-selection/sub/speech-and-conversation/)
 
 ## Sources
 
