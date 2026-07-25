@@ -66,7 +66,7 @@ Use the Responses API for reasoning, tool calling, and multi-turn workflows.
 
 - [GPT-5.6 Sol](./sub/sol/)
 - [GPT-5.6 Terra](./sub/terra/)
-- GPT-5.6 Luna — canonical page not yet created.
+- [GPT-5.6 Luna](./sub/luna/)
 
 ## Related pages
 
