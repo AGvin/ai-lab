@@ -31,10 +31,10 @@ Published GGUF file size is not peak VRAM. Runtime buffers, KV cache, context le
 
 ### Hosted text and multimodal candidates
 
-- `deepseek-v4-flash`: economical long-context reasoning and tool-use candidate; exact API identity and price snapshot are recorded on the [DeepSeek V4 Flash](../../../../../../../../software/sub/models/sub/deepseek/sub/deepseek-v4/sub/flash/) page.
-- `gpt-5.6-luna`, `gpt-5.6-terra`, and `gpt-5.6-sol`: fast, balanced, and flagship hosted tiers; exact family characteristics and price snapshot are recorded on the [GPT-5.6](../../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/) page.
-- `claude-sonnet-5`: hosted coding, agentic, reasoning, and knowledge-work candidate; exact access, context, and time-bounded price snapshot are recorded on the [Claude Sonnet 5](../../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/) page.
-- `gemini-3.6-flash`: hosted text, image, video, audio, and PDF input candidate with text output; exact capabilities are recorded on the [Gemini 3.6 Flash](../../../../../../../../software/sub/models/sub/google/sub/gemini/sub/gemini-3-6-flash/) page.
+- `deepseek-v4-flash`: economical long-context reasoning and tool-use candidate; exact API identity and price snapshot are recorded on the [DeepSeek V4 Flash](../../../../../../../../../software/sub/models/sub/deepseek/sub/deepseek-v4/sub/flash/) page.
+- `gpt-5.6-luna`, `gpt-5.6-terra`, and `gpt-5.6-sol`: fast, balanced, and flagship hosted tiers; exact family characteristics and price snapshot are recorded on the [GPT-5.6](../../../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/) page.
+- `claude-sonnet-5`: hosted coding, agentic, reasoning, and knowledge-work candidate; exact access, context, and time-bounded price snapshot are recorded on the [Claude Sonnet 5](../../../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/) page.
+- `gemini-3.6-flash`: hosted text, image, video, audio, and PDF input candidate with text output; exact capabilities are recorded on the [Gemini 3.6 Flash](../../../../../../../../../software/sub/models/sub/google/sub/gemini/sub/gemini-3-6-flash/) page.
 
 ### Local and hosted specialists
 
@@ -398,7 +398,7 @@ A profile becomes a recommendation only after the complete assignment passes its
 ## Related pages
 
 - [Choosing Model Portfolios for Combined Workloads](../..)
-- [AI Model Selection and Team Design](../../..)
+- [AI Model Selection and Team Design](../../../..)
 - [Choosing Models for Coding](../../../coding/)
 - [Translation and Localization](../../../translation-and-localization/)
 - [Generative Media](../../../generative-media/)
@@ -406,4 +406,4 @@ A profile becomes a recommendation only after the complete assignment passes its
 - [Perception and Evaluation](../../../perception-and-evaluation/)
 - [Agent Role Selection](../../../agent-role-selection/)
 - [Defining Model Reliability Profiles](../../../reliability-profiles/)
-- [Models](../../../../../../../../software/sub/models/)
+- [Models](../../../../../../../../../software/sub/models/)
