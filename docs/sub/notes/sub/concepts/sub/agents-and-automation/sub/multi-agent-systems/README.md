@@ -29,7 +29,14 @@ Use the simplest pattern that meets the workload. Several named agents do not au
 - [Graph or DAG Workflow Architecture](./sub/graph-dag-workflow/) — explicit state, nodes, edges, branches, joins, loops, checkpoints, and terminal conditions govern execution.
 - [Planner-Executor Architecture](./sub/planner-executor/) — a planner creates and revises an inspectable plan while executors perform bounded ready tasks.
 - [Pipeline Architecture](./sub/pipeline/) — predefined stages transform validated artifacts through a fixed sequence.
+- [Map-Reduce Agent Architecture](./sub/map-reduce/) — homogeneous partitioned map tasks emit structured records that are grouped and reduced into a verified result.
 - [Evaluator-Optimizer Architecture](./sub/evaluator-optimizer/) — an optimizer revises an artifact from structured evaluator findings under a bounded correction loop.
+
+### Shared state and distributed execution
+
+- [Blackboard Architecture](./sub/blackboard/) — knowledge sources contribute evidence and hypotheses to a structured shared problem state under controller policy.
+- [Event-Driven Agent Architecture](./sub/event-driven/) — typed events trigger asynchronous handlers with explicit delivery, ordering, idempotency, and terminal semantics.
+- [Resource Lifecycle Controller Architecture](./sub/resource-lifecycle-controller/) — a deterministic control-plane role owns provisioning, readiness, leases, residency, teardown, and billing closure.
 
 ### Review and authority
 
@@ -43,6 +50,7 @@ Use the simplest pattern that meets the workload. Several named agents do not au
 - Assign domain-specific tools, permissions, prompts, or models to specialized roles.
 - Route work according to modality, risk, quality tier, and resource availability.
 - Preserve workflow state across asynchronous jobs, interruptions, or failures.
+- Share structured problem state without copying a complete conversation to every specialist.
 - Simulate alternative proposals and retain disagreements before a decision.
 - Place human authority before declared irreversible or high-risk actions.
 
@@ -60,11 +68,15 @@ Prefer:
 - **graph or DAG** when dependencies, branching, persistence, retries, and side effects require explicit execution state;
 - **planner-executor** when a dynamic versioned plan should be inspected and revised separately from task execution;
 - **pipeline** when fixed stages and artifact contracts fully describe the process;
+- **map-reduce** when a complete workload can be partitioned into contract-compatible independent units and aggregated through a declared reducer;
 - **evaluator-optimizer** when clear criteria support measurable iterative correction;
+- **blackboard** when specialists should contribute opportunistically to a structured shared problem state;
+- **event-driven** when asynchronous decoupled handlers and external callbacks are central;
+- a **resource lifecycle controller** when model or infrastructure residency, cost, and teardown require authoritative control-plane state;
 - an **advisory council or review board** when several distinct review perspectives materially improve a decision;
 - a **human approval gate** when accountable authority must remain human before a consequential action.
 
-Patterns may be composed, but every additional controller, reviewer, or transition must justify its latency, cost, permissions, and failure modes.
+Patterns may be composed, but every additional controller, reviewer, event, shared object, or transition must justify its latency, cost, permissions, and failure modes.
 
 ## Required controls
 
@@ -73,7 +85,7 @@ A production design should define:
 - authoritative goal, requirements, and acceptance criteria;
 - roles, authority, tools, permissions, and data boundaries;
 - state schema, artifact ownership, and evidence provenance;
-- dependency, routing, handoff, speaking, and merge rules;
+- dependency, routing, handoff, speaking, event, and merge rules;
 - retry, revision, escalation, and fallback budgets;
 - loop, cycle, and terminal conditions;
 - resource residency and lifecycle;
@@ -93,6 +105,7 @@ A complex architecture may reduce quality when:
 - review loops are unbounded;
 - routing is less reliable than the workers;
 - agreement is mistaken for verification;
+- events or contributions are duplicated, stale, or unordered;
 - infrastructure remains active after model work completes.
 
 ## Common mistakes
@@ -104,7 +117,7 @@ A complex architecture may reduce quality when:
 - Omitting termination, cycle detection, or human escalation.
 - Letting a worker approve its own high-risk output.
 - Relying on model-generated prose as the authoritative workflow or resource state.
-- Hiding orchestration, review, latency, and retry cost from evaluation.
+- Hiding orchestration, review, latency, infrastructure, and retry cost from evaluation.
 
 ## Related concepts and guidance
 
@@ -112,6 +125,6 @@ A complex architecture may reduce quality when:
 - [Task Decomposition](../task-decomposition/)
 - [Agent State](../agent-state/)
 - [Verification and Reflection](../verification-and-reflection/)
-- [Choosing Models for Agent Orchestration](../../../../comparisons/sub/model-selection/sub/orchestration/)
-- [Agent Role Selection](../../../../comparisons/sub/model-selection/sub/agent-role-selection/)
-- [Resource Lifecycle Orchestration](../../../../comparisons/sub/model-selection/sub/orchestration/sub/resource-lifecycle/)
+- [Choosing Models for Agent Orchestration](../../../../../comparisons/sub/model-selection/sub/orchestration/)
+- [Agent Role Selection](../../../../../comparisons/sub/model-selection/sub/agent-role-selection/)
+- [Resource Lifecycle Orchestration](../../../../../comparisons/sub/model-selection/sub/orchestration/sub/resource-lifecycle/)
