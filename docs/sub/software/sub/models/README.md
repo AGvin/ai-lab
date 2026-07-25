@@ -11,10 +11,10 @@ Canonical documentation for AI model providers, families, generations, specializ
 
 Organize canonical model documentation from broad ownership to the exact model being evaluated:
 
-1. **Provider** — the organization that develops or publishes the models, such as OpenAI, Anthropic, Google, Alibaba, DeepSeek, Mistral AI, or Meta.
-2. **Family** — the provider's main model family or ecosystem, such as GPT, Claude, Gemini, Qwen, DeepSeek, Mistral, or Llama.
-3. **Generation or specialized line** — a numbered generation or a distinct workload-oriented branch, such as Qwen3, Qwen2.5, Qwen Coder, QwQ, or QVQ.
-4. **Version or named model** — a concrete released model generation or named variant, such as Qwen3-Coder, Qwen3-Coder-Next, GPT-5.6 Sol, or Claude Sonnet 5.
+1. **Provider** — the organization that develops or publishes the models, such as OpenAI, Anthropic, Google, Alibaba, DeepSeek, Mistral AI, Black Forest Labs, or pyannoteAI.
+2. **Family** — the provider's main model family or ecosystem, such as GPT, Claude, Gemini, Qwen, DeepSeek, Mistral, FLUX, or Whisper.
+3. **Generation or specialized line** — a numbered generation or a distinct workload-oriented branch, such as Qwen3, GPT-5.6, Qwen3-Coder, or speaker diarization.
+4. **Version or named model** — a concrete released model or named variant, such as Qwen3 14B, GPT-5.6 Sol, Claude Sonnet 5, FLUX.1-schnell, or Community-1.
 5. **Artifact or deployment variant** — an exact downloadable artifact, quantization, hosted API snapshot, or deployment-specific variant when that distinction materially affects evaluation or operation.
 
 Each level owns only the information shared by its descendants. Comparison and recommendation pages should link to these canonical pages instead of duplicating model descriptions.
@@ -38,20 +38,20 @@ Maintain the canonical model inventory before comparison and recommendation page
 5. keep quantizations and deployment variants attached to the correct base model unless a distinct artifact needs its own page;
 6. update affected comparisons, evidence dates, and limitations whenever the canonical model identity or operating facts change.
 
-The current inventory includes OpenAI GPT models, Anthropic Claude models, Google Gemini models, DeepSeek models, Alibaba Qwen families and versions, and Mistral models referenced by the selection guides.
-
-For Qwen, preserve the family taxonomy rather than documenting only isolated coding models. The canonical Qwen branch should cover the general Qwen generations and specialized lines such as Qwen Coder, QwQ, and QVQ, including the concrete Qwen3-Coder and Qwen3-Coder-Next pages required by the current comparisons.
+The current inventory covers the exact hosted and local candidates used by the model-selection and environment-profile guides, including GPT-5.6 tiers, Claude Sonnet 5, Gemini 3.6 Flash, DeepSeek V4 Flash, Qwen3 and Qwen3-Coder variants, Mistral Small 4, Whisper, FLUX.1-schnell, and pyannote Community-1.
 
 ## Child nodes
 
-- [`openai/`](./sub/openai/) — OpenAI model families and versions.
-- [`anthropic/`](./sub/anthropic/) — Anthropic model families and versions.
-- [`google/`](./sub/google/) — Google model families and versions.
+- [`openai/`](./sub/openai/) — GPT and Whisper model families and versions.
+- [`anthropic/`](./sub/anthropic/) — Anthropic Claude models.
+- [`google/`](./sub/google/) — Google Gemini models.
 - [`deepseek/`](./sub/deepseek/) — DeepSeek model families and versions.
 - [`alibaba/`](./sub/alibaba/) — Alibaba and Qwen Team model families and versions.
-- [`mistral-ai/`](./sub/mistral-ai/) — Mistral AI model families and versions.
-- [`image-generation/`](./sub/image-generation/) — image generation models.
-- [`multimodal/`](./sub/multimodal/) — multimodal models.
+- [`mistral-ai/`](./sub/mistral-ai/) — Mistral AI models.
+- [`black-forest-labs/`](./sub/black-forest-labs/) — FLUX image-generation models.
+- [`pyannote/`](./sub/pyannote/) — speech-processing and speaker-diarization models.
+- [`image-generation/`](./sub/image-generation/) — capability-oriented navigation for image-generation models.
+- [`multimodal/`](./sub/multimodal/) — capability-oriented navigation for multimodal models.
 
 ## Scope
 
