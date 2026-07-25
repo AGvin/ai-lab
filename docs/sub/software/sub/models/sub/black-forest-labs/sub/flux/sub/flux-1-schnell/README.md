@@ -67,8 +67,8 @@ Model identity, architecture class, parameter count, license, and low-step guida
 
 - [FLUX](../..)
 - [Black Forest Labs models](../../../..)
-- [Generative Media](../../../../../../../notes/sub/comparisons/sub/model-selection/sub/generative-media/)
-- [Resource Lifecycle Orchestration](../../../../../../../notes/sub/comparisons/sub/model-selection/sub/orchestration/sub/resource-lifecycle/)
+- [Generative Media](../../../../../../../../../notes/sub/comparisons/sub/model-selection/sub/generative-media/)
+- [Resource Lifecycle Orchestration](../../../../../../../../../notes/sub/comparisons/sub/model-selection/sub/orchestration/sub/resource-lifecycle/)
 
 ## Sources
 
