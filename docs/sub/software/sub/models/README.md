@@ -27,19 +27,20 @@ Each level owns only the information shared by its descendants. Comparison and r
 - The concrete model page records capabilities, modalities, architecture where documented, context limits, deployment options, licensing, hardware requirements, limitations, evidence, and evaluation date.
 - Quantization and deployment-specific details normally remain on the concrete model page unless a distinct artifact requires its own canonical page.
 
-## Current implementation order
+## Maintenance workflow
 
-Build the canonical model inventory before refactoring comparison pages:
+Maintain the canonical model inventory before comparison and recommendation pages depend on it:
 
-1. inventory every model referenced by existing comparison and recommendation pages;
-2. create the required provider pages;
-3. create family pages;
-4. create generation, specialized-line, and concrete model pages;
-5. update comparison pages to link to the canonical model documentation.
+1. audit every model referenced by task guides, portfolio profiles, benchmarks, and recommendations;
+2. add or update the required provider, family, generation, specialized-line, concrete-model, and artifact nodes;
+3. record exact hosted API identities and downloadable artifacts separately when their behavior or operating constraints differ;
+4. preserve aliases, dated snapshots, replacements, and deprecations without creating duplicate canonical identities;
+5. keep quantizations and deployment variants attached to the correct base model unless a distinct artifact needs its own page;
+6. update affected comparisons, evidence dates, and limitations whenever the canonical model identity or operating facts change.
 
-The initial inventory includes OpenAI GPT models, Anthropic Claude models, Google Gemini models, DeepSeek models, Alibaba Qwen families and versions, and Mistral models referenced by the current selection guides.
+The current inventory includes OpenAI GPT models, Anthropic Claude models, Google Gemini models, DeepSeek models, Alibaba Qwen families and versions, and Mistral models referenced by the selection guides.
 
-For Qwen, preserve the family taxonomy rather than documenting only isolated coding models. The canonical Qwen branch should cover the general Qwen generations and specialized lines such as Qwen Coder, QwQ, and QVQ, including the concrete Qwen3-Coder and Qwen3-Coder-Next pages required by the existing comparisons.
+For Qwen, preserve the family taxonomy rather than documenting only isolated coding models. The canonical Qwen branch should cover the general Qwen generations and specialized lines such as Qwen Coder, QwQ, and QVQ, including the concrete Qwen3-Coder and Qwen3-Coder-Next pages required by the current comparisons.
 
 ## Child nodes
 
