@@ -64,18 +64,16 @@ Use the Responses API for reasoning, tool calling, and multi-turn workflows.
 
 ## Child nodes
 
-Create separate pages for:
-
-- GPT-5.6 Sol;
-- GPT-5.6 Terra;
-- GPT-5.6 Luna.
+- [GPT-5.6 Sol](./sub/sol/)
+- [GPT-5.6 Terra](./sub/terra/)
+- GPT-5.6 Luna — canonical page not yet created.
 
 ## Related pages
 
 - [GPT model family](../../)
 - [OpenAI models](../../../..)
 - [Models](../../../../../..)
-- [General repository disclaimer](../../../../../../../../disclaimer/)
+- [General repository disclaimer](../../../../../../../../../disclaimer/)
 
 ## Sources
 

@@ -44,6 +44,11 @@ For Qwen, preserve the family taxonomy rather than documenting only isolated cod
 ## Child nodes
 
 - [`openai/`](./sub/openai/) — OpenAI model families and versions.
+- [`anthropic/`](./sub/anthropic/) — Anthropic model families and versions.
+- [`google/`](./sub/google/) — Google model families and versions.
+- [`deepseek/`](./sub/deepseek/) — DeepSeek model families and versions.
+- [`alibaba/`](./sub/alibaba/) — Alibaba and Qwen Team model families and versions.
+- [`mistral-ai/`](./sub/mistral-ai/) — Mistral AI model families and versions.
 - [`image-generation/`](./sub/image-generation/) — image generation models.
 - [`multimodal/`](./sub/multimodal/) — multimodal models.
 
