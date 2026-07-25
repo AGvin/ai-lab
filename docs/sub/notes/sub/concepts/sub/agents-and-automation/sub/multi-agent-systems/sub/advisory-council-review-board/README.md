@@ -5,6 +5,7 @@ This architecture asks several agents or reviewers to assess a proposal, artifac
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
