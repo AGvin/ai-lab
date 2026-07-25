@@ -1,6 +1,6 @@
 # Choosing Models for Agent Orchestration
 
-Use this guide to select the model or model hierarchy that decomposes work, assigns tasks to agents, controls execution order, manages expensive resources, evaluates quality, and decides when a workflow is complete.
+Select the model or model hierarchy that decomposes work, assigns agents and tools, controls execution order, manages resources, evaluates quality, and decides when a workflow is complete.
 
 ## Translations
 
@@ -9,235 +9,197 @@ Use this guide to select the model or model hierarchy that decomposes work, assi
 
 ## Status
 
-Draft methodology with detailed resource-lifecycle guidance. Concrete orchestrator recommendations require repeatable portfolio-level evaluations rather than chat benchmarks alone.
+Implemented guidance verified on 2026-07-25. Concrete orchestrator assignments still require repeatable portfolio-level evaluation under the exact tools, permissions, models, workload, and resource constraints.
 
 ## Terminology
 
-A **generalist model** is a model with useful capability across several task domains. It describes breadth of capability, not authority in a system.
+A **generalist model** has useful capability across several domains. It describes breadth, not system authority.
 
-An **orchestrator agent** or **manager agent** is a system role responsible for coordinating other agents, models, tools, and resources. The orchestrator may use a generalist model, a reasoning-specialized model, or a hierarchy of several manager models.
+An **orchestrator** or **manager agent** owns workflow coordination. It may use a generalist, a reasoning specialist, or a hierarchy of manager models. The best worker is not automatically the best orchestrator.
 
-A generalist can be used as a worker without orchestration responsibilities. An orchestrator can also delegate most domain work and therefore does not need to be the best model at every worker task.
+## Orchestrator contract
 
-## Primary responsibilities
+Evaluate whether the orchestrator can:
 
-An orchestrator should be evaluated on its ability to:
-
-- translate a user goal into explicit deliverables and acceptance criteria;
-- decompose work into bounded tasks and subtasks;
+- translate a goal into deliverables and acceptance criteria;
+- decompose work into bounded tasks;
 - identify dependencies, shared state, and conflict risks;
-- select suitable agents, models, tools, permissions, and quality tiers;
-- decide which tasks may run in parallel and which must run sequentially;
-- create isolation or merge plans for parallel work that touches shared resources;
-- monitor progress, failures, costs, and resource state;
-- validate worker reports against actual results;
-- request targeted corrections without restarting unaffected work;
-- stop when the required quality is reached or a budget limit is met;
-- produce a final result, decision record, and unresolved-risk summary.
+- select models, agents, tools, permissions, quality tiers, and retry policies;
+- decide which tasks may run concurrently and which must remain sequential;
+- monitor progress, failures, cost, and resource state;
+- validate worker reports against observable evidence;
+- request targeted correction without discarding valid work;
+- escalate or stop when retries, cost, or quality limits are reached;
+- preserve concise state, evidence, decisions, and unresolved risks;
+- verify that external and billable resources actually stopped.
 
-The orchestrator is a control function, not merely a model router.
+The orchestrator is a control function, not merely a router.
 
-## Planning execution order
+## Execution graph
 
-### Parallel execution
+### Parallel work
 
-Use parallel execution when tasks are independent or can be isolated safely.
+Use parallel execution only when tasks are independent or safely isolated. Before launch, record:
 
-Examples:
+- inputs and dependencies;
+- files, records, services, and resources each task may modify;
+- collision and ordering risks;
+- branch, workspace, namespace, or output isolation;
+- merge, consolidation, and conflict-resolution ownership.
 
-- translating different independent documents;
-- researching unrelated alternatives;
-- evaluating several generated images without modifying shared state;
-- creating competing design proposals;
-- running tests on separate immutable snapshots.
+### Sequential work
 
-Before parallel launch, the orchestrator should identify:
+Use sequential execution when one result feeds another, tasks modify the same state, or later decisions require validated earlier output.
 
-- files, records, services, or resources each task may modify;
-- ordering dependencies and required inputs;
-- collision risks;
-- branch, workspace, namespace, or output-directory isolation;
-- the merge and conflict-resolution owner.
+### Graph workflow
 
-### Sequential execution
+Represent substantial work as a directed graph with explicit nodes, dependencies, branches, joins, conditions, bounded loops, retries, checkpoints, and terminal states. Launch a node only when dependencies, permissions, and resources are ready.
 
-Use sequential execution when one task consumes another task's result, when several tasks modify the same state, or when a later decision depends on validated earlier work.
+Avoid false parallelism that creates merge conflicts, inconsistent assumptions, duplicate work, or repeated cost.
 
-The orchestrator should avoid false parallelism that creates rework, merge conflicts, inconsistent assumptions, or duplicate costs.
+## Model and agent assignment
 
-### Hybrid execution graph
+For every candidate, record:
 
-Most substantial workflows are directed dependency graphs rather than fully parallel or fully sequential lists. The orchestrator should launch each ready task when its dependencies and resource requirements are satisfied.
+- demonstrated quality for the exact role and task class;
+- modalities, tools, language, context, and structured-output requirements;
+- omission, premature-completion, and tool-failure risk;
+- expected retries and independent-review requirements;
+- residency, startup latency, throughput, and concurrency;
+- privacy, provider, license, policy, and permission constraints;
+- total cost per accepted result.
 
-## Agent and model assignment
+Use a cheaper or smaller route when it reliably meets the requested tier. Reserve stronger or specialist models for declared capability gaps, repeated failure, high-risk work, or final review.
 
-Assignment should consider more than the task label. For every worker candidate, record:
+## Quality and stopping
 
-- demonstrated quality for the exact task class;
-- tool, modality, language, and context requirements;
-- cost and expected number of retries;
-- reliability and common failure modes;
-- whether outputs require independent review;
-- whether the model tends to stop early, omit cleanup, or report success without verification;
-- model residency, startup latency, and concurrency limits;
-- data-handling, permission, and policy constraints.
+Use the shared quality tiers:
 
-The orchestrator should know when a weaker model is sufficient for a draft and when a stronger model is required for a final deliverable.
+1. **Exploration** — feasibility and alternatives.
+2. **Concept draft** — coherent intermediate result for discussion.
+3. **Working result** — functionally acceptable with known limitations.
+4. **Production quality** — verified, maintainable, documented, and ready for use.
+5. **Exceptional quality** — additional depth or polish justified by value.
 
-## Quality targets
+Define the tier before assignment. Stop when:
 
-Quality is a workflow requirement, not a single universal score.
+- every required criterion passes;
+- accepted limitations are documented;
+- the retry or review budget is exhausted;
+- revisions no longer improve measured quality;
+- the requirement is impossible or contradictory;
+- human judgment has higher expected value than another model round.
 
-Define the requested level before assigning work:
+## Reliability and retry control
 
-- **Exploration** — fast alternatives, rough estimates, or feasibility checks.
-- **Concept draft** — coherent intermediate result suitable for discussion but not publication or production.
-- **Working result** — functionally correct output with acceptable presentation and bounded known limitations.
-- **Production quality** — verified, maintainable, documented, and ready for operational use.
-- **Exceptional quality** — additional refinement, originality, polish, or performance justified by the task value.
+Attach a [Reliability Profile](../reliability-profiles/) to each exact worker assignment. Include common failures, useful retry count, escalation route, quality ceiling, unsuitable tasks, and degraded-operation behavior.
 
-The orchestrator should not spend frontier-model tokens or launch expensive infrastructure to create exceptional quality when an exploratory result is sufficient. It should also not accept a merely functional result when visual quality, writing quality, safety, maintainability, or user trust is a material requirement.
+Retry only failures likely to improve under the same assignment. Use issue identifiers, revision comparison, repeated-criticism detection, and cycle detection. Repeating the same prompt to the same unsuitable model is not a recovery strategy.
 
-## Resource and service lifecycle
+The worker must not be the sole authority on its own completion. Prefer deterministic verification; use independent model or human review when judgment is required.
 
-Some workers are continuously available; others require expensive on-demand infrastructure such as a GPU pod, temporary service, or remote model endpoint.
+## Resource lifecycle
 
-For every on-demand worker, the orchestrator should execute a lifecycle state machine:
+Classify each component as:
 
-1. Confirm that the task requires the resource and that budget is available.
-2. Start or request the resource through an approved API, MCP server, workflow tool, or control plane.
-3. Wait for a verified ready state rather than assuming that the start request completed.
-4. Execute the assigned work and preserve required outputs outside ephemeral storage.
-5. Validate that the result is complete before releasing the resource.
-6. Request shutdown, termination, or scale-to-zero.
-7. Re-check provider state until termination is confirmed.
-8. Escalate or retry cleanup when billing or resource state remains active.
+- always running and resident;
+- reachable but lazy-loaded;
+- retained for a bounded idle timeout;
+- launched temporarily for one task;
+- remote hosted service;
+- mutually exclusive with another local service because of memory constraints.
 
-A worker report that says the task is complete does not prove that the paid resource was stopped.
+For every on-demand resource:
 
-Use [Resource Lifecycle Orchestration](./sub/resource-lifecycle/) for resource classes, authoritative state records, leases, idempotency, readiness proof, mutually exclusive models, artifact persistence, billing reconciliation, cleanup recovery, metrics, and fault-injection tests.
+1. confirm need, authorization, data eligibility, and budget;
+2. select the exact service, model, hardware, storage, and timeout;
+3. start with idempotency and ownership records;
+4. verify provider state and endpoint readiness;
+5. execute bounded work and persist artifacts outside ephemeral storage;
+6. verify results before release;
+7. request shutdown, termination, or scale-to-zero;
+8. independently confirm provider and billing state;
+9. retry cleanup or escalate when teardown fails.
 
-## Always-on and resident components
+A successful start request is not readiness, and a worker completion report is not proof that a billable resource stopped.
 
-A team design should state which components are:
-
-- always running and always resident in RAM or VRAM;
-- always reachable but loaded on first use;
-- retained for a bounded idle period;
-- launched only for one task;
-- remote hosted services with no local residency;
-- unavailable concurrently because they compete for the same hardware.
-
-This information affects scheduling. The orchestrator must not assign simultaneous local tasks to models that cannot coexist within available memory.
-
-## Reliability profiles and retries
-
-The orchestrator should maintain a profile for each worker model:
-
-- expected task quality;
-- common omissions or formatting defects;
-- probability of premature completion claims;
-- need for retries or stronger prompts;
-- tasks that require an independent checker;
-- maximum useful retry count;
-- escalation model when repeated correction does not improve the result.
-
-Retries must be bounded and evidence-driven. Repeating the same prompt to the same unsuitable model is not a recovery strategy.
+Use [Resource Lifecycle Orchestration](./sub/resource-lifecycle/) for leases, fencing, readiness proof, artifact persistence, teardown, billing reconciliation, cleanup recovery, metrics, and fault injection.
 
 ## Hierarchical orchestration
 
-Large portfolios may use several management levels:
+Use hierarchy when it reduces context overload, separates policies, or enables meaningful parallel work:
 
-- a top-level orchestrator owns the global goal, budget, dependencies, and final acceptance;
-- department or domain managers own a coherent workstream such as software, localization, design, research, or operations;
-- team leads coordinate smaller units such as frontend, support, UX, image evaluation, or test automation;
-- workers execute bounded tasks and report evidence to their direct manager.
+- top-level orchestrator owns global scope, budget, dependencies, and acceptance;
+- department or domain manager owns a coherent workstream;
+- team lead coordinates a smaller specialist unit;
+- worker executes a bounded task and reports evidence upward.
 
-Each manager should receive an explicit scope, authority, budget, quality threshold, and reporting contract. The upper manager should not need every low-level execution detail, but it must receive enough evidence to validate progress and resolve cross-unit dependencies.
+Every managed unit needs an explicit scope, authority, budget, quality target, escalation path, and reporting contract. Do not add management layers when a simple graph is clearer.
 
-Use hierarchy when it reduces context overload, separates specialized policies, or permits meaningful parallel work. Do not add management layers when a simple workflow graph is clearer.
+## Councils and review boards
 
-## Advisory council and review board
+Several independent models may advise or review a proposal:
 
-A manager may consult several independent models before accepting a plan or result. Suitable names include **advisory council** for non-binding recommendations and **review board** for approval or rejection authority.
+- **advisor or council** — non-binding options, risks, or specialist analysis;
+- **review board** — acceptance, rejection, or correction authority;
+- **jury or vote** — structured comparison under an explicit rule;
+- **human gate** — final authorization for consequential work.
 
-A council can include roles such as:
+Preserve concise proposals, evidence, disagreements, decision, requested corrections, responsible authority, and residual uncertainty. Do not expose or depend on private hidden chain-of-thought.
 
-- domain expert;
-- risk reviewer;
-- cost and infrastructure reviewer;
-- quality or design critic;
-- adversarial reviewer;
-- user-requirement representative.
+Bound review rounds. Escalate when repeated revisions do not improve the result. Permit acceptance with known limitations only when the selected tier and authorized decision-maker allow it.
 
-The orchestrator should receive structured findings rather than unrestricted debate. Preserve a user-visible decision summary containing:
+## Conflict and failure handling
 
-- proposals considered;
-- principal arguments and evidence;
-- disagreements;
-- final decision and responsible decision-maker;
-- requested corrections;
-- remaining uncertainty.
+The orchestrator must distinguish:
 
-Do not expose or depend on private hidden chain-of-thought. Record concise decision rationale and inspectable evidence.
+- correctable execution defect;
+- unsuitable worker or model;
+- missing input or unavailable dependency;
+- conflicting concurrent changes;
+- impossible or contradictory requirement;
+- reviewer preference outside the approved scope;
+- resource, network, provider, or budget failure.
 
-## Preventing review loops
+Use immutable inputs, versioned artifacts, idempotent actions, checkpoints, leases, fencing, rollback where possible, and explicit terminal states. Do not hide partial failure behind a narrative success message.
 
-A review board can waste time and money by repeatedly rejecting an output that the assigned worker cannot materially improve.
+## Evaluation suite
 
-Use controls such as:
+Evaluate complete workflows requiring:
 
-- explicit acceptance criteria;
-- bounded review and rework rounds;
-- issue identifiers so the same unresolved criticism is detected;
-- comparison of revisions to determine whether quality is improving;
-- escalation to another worker model after repeated failure;
-- permission to accept a known limitation when the required quality tier allows it;
-- human approval when reviewers disagree or the budget threshold is reached;
-- cycle detection for repeated task, reviewer, and feedback states.
-
-The orchestrator should distinguish between a correctable execution defect, an unsuitable worker, an impossible requirement, and a reviewer preference that is outside scope.
-
-## Orchestrator selection criteria
-
-Evaluate candidate orchestrator models using complete workflows that require:
-
-- task decomposition and dependency graph construction;
+- decomposition and dependency-graph construction;
 - conflict-aware parallelization;
-- model and tool assignment under budget and hardware constraints;
-- adaptation when a worker fails or becomes unavailable;
-- resource startup and verified teardown;
-- draft-versus-final quality decisions;
-- selective escalation rather than universal use of the strongest model;
-- concise state and decision records;
+- role and tool assignment under cost and hardware constraints;
+- recovery when a worker or service fails;
+- selective escalation rather than universal flagship use;
+- resource startup, readiness, persistence, teardown, and billing verification;
+- state retention across retries and model changes;
+- correct quality-tier and stopping decisions;
+- concise auditable decision records;
 - termination without unnecessary loops.
 
-The best worker model is not automatically the best orchestrator. Orchestration rewards consistency, planning, structured state management, verification discipline, and cost-aware judgment.
+Report portfolio completion, criterion coverage, dependency and conflict errors, assignment accuracy, unnecessary expensive calls, retries, repeated feedback cycles, resource leaks, peak RAM and VRAM, total API and infrastructure cost, wall-clock time, human interventions, and final quality tier.
 
-## Evaluation metrics
+## Decision record
 
-Record at least:
-
-- portfolio completion rate;
-- acceptance-criteria coverage;
-- dependency and conflict errors;
-- parallelism achieved without rework;
-- worker assignment accuracy;
-- unnecessary expensive-model calls;
-- retries and repeated feedback cycles;
-- resource leak incidents;
-- peak RAM and VRAM;
-- total API and infrastructure cost;
-- wall-clock completion time;
-- human interventions;
-- final quality tier reached.
+```text
+Workflow, scope, acceptance criteria, quality tier, and risk:
+Graph, dependencies, parallelism, shared state, and isolation:
+Models, agents, tools, permissions, roles, and evidence:
+Residency, readiness, lifecycle, budget, and concurrency:
+Retry, review, escalation, fallback, and stopping rules:
+Completion, quality, latency, cost, resource, and failure outcomes:
+Known limitations, responsible authority, verified date, and triggers:
+```
 
 ## Related pages
 
-- [Model Selection and Team Design](../../)
+- [AI Model Selection and Team Design](../..)
 - [Agent Models](../agents/)
+- [Agent Role Selection](../agent-role-selection/)
 - [Combined Workloads](../combined-workloads/)
-- [Defining Model Reliability Profiles](../reliability-profiles/)
+- [Reliability Profiles](../reliability-profiles/)
 - [Resource Lifecycle Orchestration](./sub/resource-lifecycle/)
 - [Multi-Agent Systems](../../../../../concepts/sub/agents-and-automation/sub/multi-agent-systems/)
 - [Agent Orchestration Tools](../../../../../../../software/sub/agent-orchestration/)
+- [General repository disclaimer](../../../../../../../disclaimer/)
