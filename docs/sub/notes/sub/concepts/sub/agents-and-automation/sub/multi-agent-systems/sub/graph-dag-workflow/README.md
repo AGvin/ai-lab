@@ -5,6 +5,7 @@ A graph workflow represents an agent system as explicit state, executable nodes,
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
