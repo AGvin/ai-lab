@@ -5,6 +5,7 @@ Use this guide to record how reliably one exact model or service assignment perf
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
@@ -346,7 +347,7 @@ Every profile must define operational boundaries:
 
 The worker must not expand its own authority, approve its own high-impact action, or treat a successful tool request as proof that the intended external state was reached.
 
-## Source basis
+## Sources
 
 The profile fields, failure taxonomy, thresholds, and operating rules in this page are repository-authored guidance. They apply established evaluation and reliability principles and make no claim of novelty.
 
