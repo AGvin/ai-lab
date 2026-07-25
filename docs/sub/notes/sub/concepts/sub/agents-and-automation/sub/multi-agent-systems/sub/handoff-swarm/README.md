@@ -5,6 +5,7 @@ A handoff or swarm architecture lets the currently active agent transfer control
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
