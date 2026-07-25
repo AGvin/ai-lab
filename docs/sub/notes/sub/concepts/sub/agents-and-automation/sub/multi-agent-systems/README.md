@@ -43,6 +43,13 @@ Use the simplest pattern that meets the workload. Several named agents do not au
 - [Advisory Council, Jury, and Review Board Architecture](./sub/advisory-council-review-board/) — distinct reviewers provide structured findings, optional bounded deliberation, and a declared aggregation or decision process.
 - [Human Approval Gate Architecture](./sub/human-approval-gates/) — a workflow pauses before a consequential transition and requires exact-scope authorization from an accountable person.
 
+## Research candidates
+
+- [Integrated Agent Organization and Resource Portfolio](./sub/integrated-agent-organization-and-resource-portfolio/) — repository-origin synthesis with an initial bounded literature review, no implementation or validation, and no novelty claim. It remains a research candidate for the exact integration of organization, model portfolio, quality control, resource lifecycle, and verified closure.
+- [Repository-Original Content and Research Candidates](../../../../repository-original-content/) — global status, evidence, novelty-boundary, and public-TODO index.
+
+Research candidates are not implemented architecture patterns and should not be recommended as established designs without separately declared evidence.
+
 ## Practical use
 
 - Parallelize independent document or repository analysis.
