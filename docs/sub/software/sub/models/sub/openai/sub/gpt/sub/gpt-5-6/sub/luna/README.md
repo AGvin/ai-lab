@@ -42,7 +42,7 @@ Specifications, capabilities, availability, and pricing were verified against th
 
 - [GPT-5.6](../..)
 - [GPT model family](../../../..)
-- [OpenAI models](../../../../..)
+- [OpenAI models](../../../../../..)
 
 ## Sources
 
