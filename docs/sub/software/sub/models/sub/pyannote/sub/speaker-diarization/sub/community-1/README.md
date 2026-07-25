@@ -38,7 +38,7 @@ Artifact identity, access form, license, and intended diarization role are provi
 
 - [Speaker Diarization](../..)
 - [pyannote models](../../../..)
-- [Speech and Conversation](../../../../../../../notes/sub/comparisons/sub/model-selection/sub/speech-and-conversation/)
+- [Speech and Conversation](../../../../../../../../../notes/sub/comparisons/sub/model-selection/sub/speech-and-conversation/)
 
 ## Sources
 
