@@ -5,6 +5,7 @@ A router-specialist architecture classifies an input or task and dispatches it t
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
