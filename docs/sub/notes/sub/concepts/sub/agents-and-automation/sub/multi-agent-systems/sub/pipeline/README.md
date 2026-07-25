@@ -5,6 +5,7 @@ A pipeline architecture processes an input through a predefined sequence of boun
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
