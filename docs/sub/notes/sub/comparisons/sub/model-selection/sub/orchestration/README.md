@@ -9,7 +9,7 @@ Use this guide to select the model or model hierarchy that decomposes work, assi
 
 ## Status
 
-Draft methodology. Concrete orchestrator recommendations require repeatable portfolio-level evaluations rather than chat benchmarks alone.
+Draft methodology with detailed resource-lifecycle guidance. Concrete orchestrator recommendations require repeatable portfolio-level evaluations rather than chat benchmarks alone.
 
 ## Terminology
 
@@ -114,6 +114,8 @@ For every on-demand worker, the orchestrator should execute a lifecycle state ma
 8. Escalate or retry cleanup when billing or resource state remains active.
 
 A worker report that says the task is complete does not prove that the paid resource was stopped.
+
+Use [Resource Lifecycle Orchestration](./sub/resource-lifecycle/) for resource classes, authoritative state records, leases, idempotency, readiness proof, mutually exclusive models, artifact persistence, billing reconciliation, cleanup recovery, metrics, and fault-injection tests.
 
 ## Always-on and resident components
 
@@ -236,5 +238,6 @@ Record at least:
 - [Agent Models](../agents/)
 - [Combined Workloads](../combined-workloads/)
 - [Defining Model Reliability Profiles](../reliability-profiles/)
+- [Resource Lifecycle Orchestration](./sub/resource-lifecycle/)
 - [Multi-Agent Systems](../../../../../concepts/sub/agents-and-automation/sub/multi-agent-systems/)
 - [Agent Orchestration Tools](../../../../../../../software/sub/agent-orchestration/)
