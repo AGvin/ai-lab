@@ -5,6 +5,7 @@ A resource lifecycle controller treats model processes, GPU pods, endpoints, sto
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
