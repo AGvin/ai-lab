@@ -12,7 +12,8 @@ Practical notes that are not themselves software or hardware documentation.
 - [`concepts/`](./sub/concepts/) — explanations of AI concepts.
 - [`benchmarks/`](./sub/benchmarks/) — benchmark and leaderboard notes.
 - [`comparisons/`](./sub/comparisons/) — decision-support comparisons across models, tools, workflows, platforms, and AI systems.
+- [`repository-original-content/`](./sub/repository-original-content/) — research-candidate provenance, literature-review status, evidence boundaries, and public TODOs without unsupported novelty claims.
 
 ## Scope
 
-Use this node for conceptual explanations, benchmark references, comparisons, findings, and other practical notes.
+Use this node for conceptual explanations, benchmark references, comparisons, findings, research candidates, and other practical notes.

@@ -35,6 +35,16 @@ Before installation, review the publisher, source, bundled skills, connected acc
 - [Creating Plugins](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/plugins/sub/creating/)
 - [Model Context Protocol](../../../../../notes/sub/concepts/sub/agents-and-automation/sub/model-context-protocol/)
 
+## Author's note
+
+**First-hand repository-owner observation — 2026-07-25. Model context: earlier ChatGPT model generations and the current repository-documented flagship reasoning model, [GPT-5.6 Sol](../../../models/sub/openai/sub/gpt/sub/gpt-5-6/sub/sol/).**
+
+In the repository owner's repeated practical experience, ChatGPT has frequently failed to follow supplied instructions even when requirements, edge cases, repository conventions, and workflow rules were documented in detail. In that experience, correcting hallucinations, reasserting constraints, and verifying whether the instructions were actually followed has sometimes taken more time than completing the underlying task.
+
+The repository owner has also found Skills exposed to ordinary ChatGPT conversations, rather than only to dedicated agent workflows, unreliable in practice: they have often appeared not to trigger or have provided no observable evidence that they were applied.
+
+This is a dated first-hand observation, not an OpenAI claim, benchmark result, or universal statement about every ChatGPT session, account, deployment, model, or later version. Reassess it when later ChatGPT generations or materially changed Skills behavior are documented.
+
 ## Evaluation notes
 
 When evaluating a ChatGPT workflow, record:

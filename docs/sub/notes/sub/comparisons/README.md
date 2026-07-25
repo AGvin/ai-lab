@@ -10,6 +10,7 @@ Decision-support comparisons for models, tools, workflows, platforms, and AI sys
 ## Child nodes
 
 - [`agentic-systems/`](./sub/agentic-systems/) — cross-category comparison of agents, orchestration systems, coding-agent control centers, and adjacent agentic AI tools.
+- [`model-selection/`](./sub/model-selection/) — task-oriented model selection, portfolio design, agent role assignment, and reliability profiles.
 
 ## Scope
 
