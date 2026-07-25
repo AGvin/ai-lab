@@ -18,7 +18,7 @@ Exact access, license, gating requirements, telemetry behavior, runtime dependen
 ## Related pages
 
 - [Models](../../)
-- [Speech and Conversation](../../../../notes/sub/comparisons/sub/model-selection/sub/speech-and-conversation/)
+- [Speech and Conversation](../../../../../notes/sub/comparisons/sub/model-selection/sub/speech-and-conversation/)
 
 ## Sources
 
