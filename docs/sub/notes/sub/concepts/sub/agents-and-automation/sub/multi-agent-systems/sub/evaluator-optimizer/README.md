@@ -5,6 +5,7 @@ An evaluator-optimizer architecture alternates between a generator or optimizer 
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
