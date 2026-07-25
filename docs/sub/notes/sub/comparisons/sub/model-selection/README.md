@@ -9,7 +9,7 @@ Practical decision support for choosing individual AI models or an economical te
 
 ## Status
 
-Draft. The selection framework and task taxonomy are defined here first. Concrete recommendations must be added only when the exact model version, evidence, access conditions, and evaluation date can be recorded.
+Implemented initial selection framework, task guides, role and reliability guidance, architecture references, and concrete candidate environment profiles. Concrete recommendations remain assignment-specific and require exact model identity, evidence, access conditions, and an evaluation date.
 
 ## Purpose
 
@@ -292,15 +292,18 @@ For a model team, evaluate the complete end-to-end workflow rather than summing 
 The task-oriented guides are:
 
 - [`agents/`](./sub/agents/) — agent reasoning, planning, tool use, structured output, and long-running workflows.
+- [`agent-role-selection/`](./sub/agent-role-selection/) — orchestrator, planner, router, worker, reviewer, verifier, evaluator, advisor, memory-manager, and context-manager assignments.
+- [`orchestration/`](./sub/orchestration/) — decomposition, scheduling, delegation, resource lifecycle, verification, stopping, and hierarchical control.
 - [`coding/`](./sub/coding/) — code generation, modification, debugging, review, and repository-scale work.
 - [`translation-and-localization/`](./sub/translation-and-localization/) — translation quality, terminology, formatting, and localization workflows.
 - [`generative-media/`](./sub/generative-media/) — image, video, music, sound, speech, and voice generation.
-- [`perception-and-evaluation/`](./sub/perception-and-evaluation/) — image, audio, video, and document understanding, including model-output evaluation.
-- [`speech-and-conversation/`](./sub/speech-and-conversation/) — speech-to-text, speaker diarization, speaker identification, and conversational transcription.
+- [`speech-and-conversation/`](./sub/speech-and-conversation/) — speech-to-text, diarization, synthesis, and real-time conversational systems.
+- [`perception-and-evaluation/`](./sub/perception-and-evaluation/) — image, audio, video, and document understanding, grounded extraction, and model-output evaluation.
 - [`combined-workloads/`](./sub/combined-workloads/) — portfolio-level team design, role assignment, model residency, routing, and cost optimization across several tasks.
+- [`combined-workloads/sub/environment-profiles/`](./sub/combined-workloads/sub/environment-profiles/) — concrete candidate portfolios for one or two 24 GB GPUs, CPU-only, cloud-only, hybrid, always-on local, on-demand image POD, low-budget, low-latency, and maximum-quality environments.
 - [`reliability-profiles/`](./sub/reliability-profiles/) — assignment-specific reliability evidence, retry budgets, verification, escalation, and degraded-operation rules.
 
-Create each guide only with real evaluation criteria or recommendations; do not add empty category pages.
+Maintain each guide with real evaluation criteria, explicit evidence boundaries, and exact candidate assignments where evidence supports them; do not add empty category pages.
 
 ## High-risk synthetic media
 
@@ -312,4 +315,5 @@ Voice cloning, face replacement, impersonation, and other deepfake workflows req
 - [Model Selection](../../../concepts/sub/evaluation-and-operations/sub/model-selection/)
 - [Benchmarks](../../../benchmarks/)
 - [Agentic Systems](../agentic-systems/)
+- [Repository-Original Content and Research Candidates](../../../repository-original-content/)
 - [Disclaimer](../../../../disclaimer/)
