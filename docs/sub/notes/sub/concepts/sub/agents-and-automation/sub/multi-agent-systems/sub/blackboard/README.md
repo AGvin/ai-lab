@@ -5,6 +5,7 @@ A blackboard architecture coordinates specialized knowledge sources through a sh
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
