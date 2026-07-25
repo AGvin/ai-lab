@@ -5,6 +5,7 @@ An event-driven agent architecture coordinates agents and services through typed
 ## Translations
 
 - English
+- [Українська](./l10n/uk_UA/)
 
 ## Status
 
