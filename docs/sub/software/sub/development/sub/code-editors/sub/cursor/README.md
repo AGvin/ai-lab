@@ -58,9 +58,8 @@ Cursor plugin packaging is platform-specific. Do not assume that an OpenAI, Clau
 - MCP servers
 - Model/provider integrations: verify current options
 
-<!-- Stable cross-locale anchor; do not translate or remove. -->
+<!-- doc-anchor: cursor-data-safety; target: next-heading -->
 <a id="cursor-data-safety"></a>
-
 ## Data path and privacy
 
 Verified on 2026-07-26.
