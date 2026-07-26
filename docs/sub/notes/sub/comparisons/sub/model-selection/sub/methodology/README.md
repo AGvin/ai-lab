@@ -26,7 +26,7 @@ Add a specialist only when its measured improvement justifies additional memory,
 3. Set the required quality tier and failure severity.
 4. Record modality, privacy, license, access, latency, concurrency, and budget constraints.
 5. Shortlist exact model versions or artifacts.
-6. Record scale, architecture, frontier status, and ecosystem status only when those fields materially improve the decision.
+6. Record model type, scale, architecture, frontier status, and ecosystem status only when those fields materially improve the decision.
 7. Test whether one model can cover several compatible tasks or roles.
 8. Define fallback, retry, escalation, and human-approval rules.
 9. Measure terminal acceptance and total cost on the complete workflow.
@@ -67,6 +67,7 @@ Classification fields describe independent model properties. Use them only when 
 
 | Field | Values | Canonical meaning |
 | --- | --- | --- |
+| Model type | `General-purpose`, `Coding-specialized`, `Reasoning-specialized`, `Multimodal`, `Embedding`, `Reranker`, `Speech`, `Image`, or another explicit role | The model's primary task specialization or operating role. Model type is independent from scale, architecture, deployment, and quality. |
 | Scale class | `SLM`, `LLM`, `Unclear` | Relative language-model scale in the stated comparison context. There is no universal parameter threshold. See [Small and Large Language Models](../../../../../concepts/sub/model-classification/sub/language-model-scale/). |
 | Architecture | `Dense`, `Sparse — MoE`, `Other sparse`, `Unknown` | Parameter activation architecture, independent from scale and deployment. See [Dense and Sparse Architectures](../../../../../concepts/sub/model-architectures/sub/dense-and-sparse-architectures/) and [Mixture of Experts](../../../../../concepts/sub/model-architectures/sub/mixture-of-experts/). |
 | Frontier status | `Supported`, `Not supported`, `Unclear`, `Not assessed` | Date- and scope-bounded evidence that a model is near the current capability frontier. See [Frontier Models](../../../../../concepts/sub/model-classification/sub/frontier-models/). |
@@ -74,6 +75,7 @@ Classification fields describe independent model properties. Use them only when 
 
 Do not infer one field from another:
 
+- A coding-specialized or reasoning-specialized model can be either an SLM or an LLM and can use a dense or sparse architecture.
 - SLM does not mean local-only, and LLM does not mean provider-hosted-only.
 - Quantization changes representation and resource requirements but does not reclassify an underlying LLM as an SLM.
 - Dense does not mean small, and MoE does not automatically mean faster, frontier, or locally practical.
@@ -81,6 +83,22 @@ Do not infer one field from another:
 - Mainstream does not mean frontier or highest quality.
 
 For an MoE model, record total and active parameters separately when reliable values are available. Active parameters must not be used as a storage or VRAM estimate, and undocumented active counts must not be derived from expert count or naming conventions.
+
+### SLM-only economic comparison views
+
+Purpose-specific language-model comparisons should provide a separate SLM-only table when useful SLM candidates exist and economical inference, constrained hardware, low latency, local execution, or high request volume are material reader concerns.
+
+Rules:
+
+- include only models classified as SLMs in the stated comparison context;
+- do not admit an LLM because it has few active MoE parameters, a small quantized file, or inexpensive hosted pricing;
+- retain model type so readers can distinguish general-purpose, coding-specialized, reasoning-specialized, and other SLM roles;
+- compare exact models and artifacts rather than family names;
+- include quality, parameter count, architecture, access, licensing, practical hardware or latency evidence, limitations, and accepted-result cost when reliable evidence exists;
+- state clearly that SLM status is an economy-oriented filter, not proof of lower total cost or adequate quality;
+- keep broader SLM-and-LLM tables separate so the economic shortlist remains easy to scan.
+
+If no useful SLM satisfies the workload threshold, say so rather than filling the table with unsuitable candidates.
 
 Do not collapse recommendation, deployment fit, evidence state, or classification fields into a single score. A capable model may still have poor deployment fit, weak evidence, immature tooling, or unacceptable data handling.
 
@@ -127,6 +145,7 @@ A concrete recommendation may record:
 
 ```text
 Model and exact version or artifact:
+Model type and task specialization:
 Primary and secondary workloads:
 Modalities:
 Scale class and comparison context:
@@ -166,6 +185,12 @@ Do not include empty fields merely to satisfy a template.
 ### Quality and reliability
 
 Record task success, failure severity, omission risk, factual grounding, reasoning consistency, structured-output and tool-call reliability, recovery behavior, premature-completion risk, useful retry count, escalation point, independent-review requirement, quality ceiling, and unsuitable tasks.
+
+### Model type and specialization
+
+Record whether the candidate is general-purpose or specialized for coding, reasoning, multimodal understanding, embeddings, reranking, speech, image generation, or another concrete role. Verify that the exact model or artifact, not merely its family, has the claimed specialization.
+
+A specialist label does not prove superiority for every task in that domain. Compare the specialist with credible generalists on representative acceptance criteria.
 
 ### Modalities
 
