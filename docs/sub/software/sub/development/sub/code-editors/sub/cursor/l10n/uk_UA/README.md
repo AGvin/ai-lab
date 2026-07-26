@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:6b5af97b1dd1ba2d50291eb541bd1d231a34a443
+  source_hash: gitblob:53217d03015bcbaee0a6a2bedbe0442bddce6891
   mode: translated
 -->
 
@@ -67,6 +67,27 @@ Plugin packaging Cursor є platform-specific. Не припускайте, що 
 - MCP servers
 - Model/provider integrations: перевірте поточні options
 
+<!-- Stable cross-locale anchor; do not translate or remove. -->
+<a id="cursor-data-safety"></a>
+
+## Шлях даних і приватність
+
+Перевірено 2026-07-26.
+
+Cursor документує, що AI requests проходять через інфраструктуру Cursor навіть тоді, коли користувач указує окремий API key постачальника моделі. Запити можуть містити історію розмови, нещодавно переглянуті файли та релевантний код, після чого можуть передаватися вибраному inference provider.
+
+Privacy Mode змінює гарантії зберігання та використання для навчання, але не робить шлях запиту прямим або повністю локальним. Під час індексації codebase фрагменти коду також завантажуються для обчислення embeddings, а embeddings і пов’язані metadata можуть зберігатися відповідно до поточної архітектури сервісу.
+
+Для чутливих repositories:
+
+- за потреби примусово ввімкніть Privacy Mode на рівні workspace;
+- погодьте Cursor, вибраного model provider, subprocessors, regions і retention terms;
+- видаліть secrets і виключіть контент, якому заборонено залишати device;
+- окремо перевірте indexing, background requests, plugins, skills, MCP servers і remote execution;
+- не використовуйте Cursor, якщо політика організації забороняє third-party processing або посередника в шляху до моделі.
+
+Перед упровадженням повторно перевірте актуальну product behavior і contracts, оскільки routing, providers, retention і enterprise controls можуть змінюватися.
+
 ## Примітки щодо оцінювання
 
 Зафіксуйте точну surface і version Cursor, вибрану model, repository access, увімкнені skills і plugins, MCP servers, remote або background execution, approval behavior і дату перевірки. Desktop, CLI, SSH та hosted surfaces можуть надавати різні capabilities.
@@ -75,5 +96,7 @@ Plugin packaging Cursor є platform-specific. Не припускайте, що 
 
 - Cursor: https://cursor.com/
 - Документація Cursor: https://cursor.com/docs
+- Використання даних і приватність Cursor: https://cursor.com/data-use
+- Безпека Cursor: https://cursor.com/security
 - Agent Skills: https://cursor.com/docs/skills
 - Plugins: https://cursor.com/docs/plugins
