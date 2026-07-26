@@ -52,9 +52,8 @@ Codex supports reusable Agent Skills and platform-specific plugins, and it can c
 
 Use this product page for Codex-specific evaluation notes rather than duplicating the full learning guides.
 
-<!-- Stable cross-locale anchor; do not translate or remove. -->
+<!-- doc-anchor: codex-data-safety; target: next-heading -->
 <a id="codex-data-safety"></a>
-
 ## Data path and privacy
 
 Verified on 2026-07-26.
