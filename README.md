@@ -45,7 +45,7 @@ This repository is an active public documentation lab. Content is added incremen
     - Useful
       - [`transformers/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/transformers/) — neural network architectures built around attention and parallel sequence processing.
       - [`attention/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/attention/) — a mechanism that weights which input elements are most relevant for a model operation.
-      - [`mixture-of-experts/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/mixture-of-experts/) — sparse model architectures that route each input through selected expert components.
+      - [`mixture-of-experts/`](./docs/sub/notes/sub/concepts/sub/model-architectures/sub/mixture-of-experts/) — a sparse architecture that routes each input through selected expert components.
     - Specialized
       - [`artificial-intelligence/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/artificial-intelligence/) — the broad field of systems that perform tasks associated with perception, reasoning, generation, or decision-making.
       - [`machine-learning/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/machine-learning/) — methods that learn patterns from data instead of relying only on explicitly programmed rules.
@@ -53,7 +53,7 @@ This repository is an active public documentation lab. Content is added incremen
       - [`neural-networks/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/neural-networks/) — parameterized computational structures composed of connected layers or processing units.
       - [`self-attention/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/self-attention/) — attention computed between positions within the same input sequence.
       - [`encoder-decoder/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/encoder-decoder/) — model structures that encode inputs, generate outputs, or combine both roles.
-      - [`dense-and-sparse-models/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/dense-and-sparse-models/) — dense models activate most parameters for each input, while sparse models activate selected subsets.
+      - [`dense-and-sparse-architectures/`](./docs/sub/notes/sub/concepts/sub/model-architectures/sub/dense-and-sparse-architectures/) — dense and sparse parameter activation and their operational implications.
   - [`model-usage-and-generation/`](./docs/sub/notes/sub/concepts/sub/model-usage-and-generation/) — concepts for using trained models through chats, APIs, applications, and local runtimes.
     - Essential
       - [`tokens-and-tokenization/`](./docs/sub/notes/sub/concepts/sub/model-usage-and-generation/sub/tokens-and-tokenization/) — splitting input and output into the units a model reads and generates.
