@@ -1,15 +1,56 @@
 # Choosing Perception and Evaluation Models and Workflows
 
-Select an exact model, service, deployment, or smallest practical workflow for image, screenshot, document, video, audio, multimodal understanding, and output evaluation.
+Select the smallest practical perception and evaluation workflow that reaches the required coverage, grounding, calibration, privacy, and cost target for image, screenshot, document, video, audio, multimodal, or judging work.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Status
+**Status:** Comparison structure updated on 2026-07-26. Accepted media, resolution handling, context, endpoints, prices, licenses, regional availability, and evaluator behavior change; verify the complete assignment before adoption.
 
-Guidance verified on 2026-07-25. Accepted media, resolution handling, context, endpoints, prices, licenses, regional availability, and evaluator behavior change; verify the complete assignment before adoption.
+## Quick picks
+
+| Need | Start with | AI or model type | Scale | Route | Main reason |
+| --- | --- | --- | --- | --- | --- |
+| Fast hosted multimodal analysis | [Gemini 3.6 Flash](../../../../../../../software/sub/models/sub/google/sub/gemini/sub/gemini-3-6-flash/) | Multimodal general-purpose model | LLM | Hosted | Broad modality support, long context, native tools, and lower-latency loops |
+| High-capability document or screenshot reasoning | [GPT-5.6 Sol](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/sol/) or [Claude Sonnet 5](../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/) | General-purpose multimodal reasoning model | LLM | Hosted | Strong reasoning, long-document handling, and complex instruction following |
+| Private or offline extraction | Deterministic OCR, parsers, and exact local vision or audio models | Specialist tools and models | Varies | Local or self-hosted | Reproducibility, privacy, provenance, and control over the complete data path |
+| Model-based output evaluation | Independent calibrated judge plus deterministic validators | Evaluation workflow | Varies | Hosted, local, or hybrid | One model score is not proof; calibration and independent evidence are required |
+| High-risk acceptance decision | Deterministic checks plus independent model and qualified human review | Hybrid evaluation workflow | Mixed | Hybrid | Separates measurable properties, ambiguous interpretation, and accountable approval |
+
+These are starting routes, not universal rankings. The complete modality, sampling, evidence, and judge configuration is part of the evaluated assignment.
+
+## Economical SLM candidates
+
+No SLM currently meets the evidence threshold for a general recommendation as the primary model across the broad perception and evaluation scope of this page.
+
+Small specialist models can still be the correct choice for bounded OCR, classification, embedding, detection, audio tagging, extraction, or scoring tasks. Evaluate them inside the exact pipeline rather than assuming a compact general-purpose model can replace dedicated deterministic or specialist components.
+
+A model that accepts images or audio is not automatically suitable as a calibrated evaluator. Perception capability, judge reliability, scale class, deployment, and cost are independent properties.
+
+## Broader candidate routes
+
+| Route | AI or model type | Best fit | Main limitation | Evidence to recheck |
+| --- | --- | --- | --- | --- |
+| [Gemini 3.6 Flash](../../../../../../../software/sub/models/sub/google/sub/gemini/sub/gemini-3-6-flash/) | Multimodal general-purpose model | High-frequency multimodal analysis, files, images, video, audio, structured output, and Google-native tools | Hosted data path, changing API behavior, preview features, and assignment-specific precision | Exact model alias, modalities, resolution and file limits, tools, region, data terms, price, and task evidence |
+| [GPT-5.6 Sol](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/sol/) | General-purpose multimodal reasoning model | Difficult document, screenshot, chart, UI, and mixed-evidence reasoning where maximum capability matters | Paid hosted access, provider limits, and need for exact endpoint and workflow validation | Exact endpoint, accepted modalities, context, region, data terms, price, and evaluation evidence |
+| [Claude Sonnet 5](../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/) | General-purpose multimodal and agentic model | Long documents, screenshots, technical analysis, review, and instruction-heavy evaluation | Hosted access, provider terms, and unproven calibration on the target rubric | Exact model, modality support, context, data terms, price, rubric, and bias tests |
+| Deterministic OCR and document parsers | Specialist deterministic software | Native text extraction, OCR, layout parsing, tables, forms, schemas, and reproducible provenance | Cannot resolve all semantic ambiguity or judge task compliance | Exact engine and version, language support, layout coverage, confidence behavior, and error distribution |
+| Local vision, audio, or document models | Specialist or multimodal local models | Offline, private, low-latency, reproducible, or controlled processing | Hardware, artifact, runtime, modality, and quality ceiling are pipeline-specific | Exact artifact, precision, runtime, resolution, sampling, hardware, license, and benchmark evidence |
+| Independent model judge or jury | Evaluation model or multi-model workflow | Pairwise comparison, rubric scoring, triage, and scalable review after calibration | Position, style, verbosity, identity, self-preference, and correlated-error bias | Exact judge model, prompt, order randomization, calibration set, abstention policy, and human-overturn rate |
+
+## Workload view
+
+| Workload | Prefer | Escalate or reject when |
+| --- | --- | --- |
+| Image and screenshot description | Validated hosted multimodal model or exact local vision model | Small text, counts, relations, crop boundaries, or required state cannot be grounded reliably |
+| UI, chart, diagram, and visual debugging | Multimodal model plus DOM, accessibility, screenshot, or geometry evidence | The model produces a plausible description without proving the expected state or defect |
+| OCR and structured extraction | Native text extraction, OCR, layout parser, schema validation, then model interpretation | Reading order, fields, tables, checkboxes, page linkage, or provenance cannot be preserved |
+| Long document understanding | Hosted multimodal model or staged parser-and-model workflow | Pages, figures, citations, or required cross-page relationships are skipped or hallucinated |
+| Video or audio event understanding | Exact multimodal or specialist model with explicit sampling and timestamps | Sampling cannot cover the event, timing is material, or evidence localization is missing |
+| Generated-media review | Deterministic technical checks plus independent multimodal review | The generator is the sole evaluator or required identity, consent, provenance, or rights checks are absent |
+| Model-output judging | Calibrated independent judge, jury, deterministic metrics, or human review | Bias tests fail, disagreement is high, evidence is unavailable, or severity exceeds model authority |
 
 ## Define the assignment
 
@@ -88,22 +129,6 @@ Do not use one model score as proof of quality. Combine deterministic metrics, c
 | Working result | Required extraction, grounding, and task-compliance thresholds met |
 | Production quality | Deterministic checks, calibrated independent review, provenance, and documented limitations |
 | Exceptional quality | Additional specialist review, subgroup analysis, and deeper evidence coverage |
-
-## Candidate routes
-
-### Hosted multimodal models
-
-Evaluate exact [Gemini 3.6 Flash](../../../../../../../software/sub/models/sub/google/sub/gemini/sub/gemini-3-6-flash/), [GPT-5.6](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/), [Claude Sonnet 5](../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/), or another approved model when their current modality, context, file, region, retention, and tool support matches the assignment.
-
-Hosted breadth does not prove OCR precision, temporal coverage, judge calibration, or data eligibility.
-
-### Local models and tools
-
-Use local OCR, document parsers, computer-vision models, audio tools, or downloadable multimodal models when offline operation, privacy, latency, or reproducibility matters. Name every exact artifact, runtime, precision, resolution, sampling rule, and hardware profile.
-
-### Hybrid workflow
-
-A practical route often uses deterministic extraction and validation first, a multimodal model for interpretation, and an independent reviewer or human for disputed or high-impact decisions.
 
 ## Generated-media evaluation
 
