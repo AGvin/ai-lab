@@ -9,7 +9,18 @@ Select models for completion, implementation, debugging, review, refactoring, te
 
 ## Status
 
-Initial guidance verified on 2026-07-24. Model availability, pricing, tools, and benchmark results can change; validate the exact model, scaffold, and repository before adoption.
+Initial guidance verified on 2026-07-24. Model availability, pricing, tools, benchmark results, frontier status, and ecosystem maturity can change; validate the exact model, scaffold, and repository before adoption.
+
+## Classification vocabulary
+
+Use independent classification fields only when they improve a coding decision:
+
+- [SLM or LLM](../../../../../concepts/sub/model-classification/sub/language-model-scale/) describes relative language-model scale in the stated comparison context, not local or hosted deployment.
+- [Dense, sparse, or MoE](../../../../../concepts/sub/model-architectures/sub/dense-and-sparse-architectures/) describes parameter activation architecture, not capability tier or hardware fit.
+- [Frontier status](../../../../../concepts/sub/model-classification/sub/frontier-models/) requires current, task-scoped evidence and a verification date.
+- [Ecosystem status](../../../../../glossary/#model-ecosystem-status) describes adoption and tooling maturity, not coding quality.
+
+For MoE models, record total and active parameters separately. Active parameters are not a storage or VRAM estimate and do not determine whether the model is an SLM or LLM.
 
 ## Start with the coding task
 
@@ -94,6 +105,8 @@ Canonical page: [Claude Sonnet 5](../../../../../../../software/sub/models/sub/a
 
 Name the exact version, format, quantization, runtime, context, hardware, and tool template. Family-level claims do not establish the quality of a smaller or quantized artifact.
 
+The current [Qwen3-Coder-Next](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3-coder/sub/qwen3-coder-next/) page records it as an LLM with sparse MoE architecture, 80B total parameters, and 3B active parameters. Its frontier and ecosystem status remain unassessed rather than inferred from architecture or release position.
+
 Canonical pages: [Qwen3-Coder](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3-coder/) and [Qwen3-Coder-Next](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3-coder/sub/qwen3-coder-next/).
 
 ## Selection by workload
@@ -114,7 +127,9 @@ Use a reviewer independent from the implementation pass when defect cost is mate
 Record:
 
 - exact base model, artifact, format, and quantization;
-- total and activated parameters for mixture-of-experts models;
+- [scale class](../../../../../concepts/sub/model-classification/sub/language-model-scale/) and comparison context;
+- [architecture](../../../../../concepts/sub/model-architectures/sub/dense-and-sparse-architectures/);
+- total and active parameters for [Mixture of Experts](../../../../../concepts/sub/model-architectures/sub/mixture-of-experts/) models;
 - runtime and prompt or tool template;
 - practical context length;
 - model memory, KV cache, peak RAM and VRAM;
@@ -122,7 +137,7 @@ Record:
 - cold-start and reload time;
 - acceptance rate on representative tasks.
 
-Do not treat a quantized artifact as equivalent to the full model without task-specific evidence.
+Do not treat a quantized artifact as equivalent to the full model without task-specific evidence. Quantization does not change the underlying SLM or LLM label or dense versus MoE architecture.
 
 ## Recommended evaluation set
 
@@ -150,6 +165,11 @@ Do not retry the same unsuitable model indefinitely. Retry cost, engineer review
 ## Related pages
 
 - [AI Model Selection and Team Design](../../)
+- [Model Selection Methodology](../methodology/)
+- [Small and Large Language Models](../../../../../concepts/sub/model-classification/sub/language-model-scale/)
+- [Dense and Sparse Architectures](../../../../../concepts/sub/model-architectures/sub/dense-and-sparse-architectures/)
+- [Mixture of Experts](../../../../../concepts/sub/model-architectures/sub/mixture-of-experts/)
+- [Frontier Models](../../../../../concepts/sub/model-classification/sub/frontier-models/)
 - [Choosing Models for AI Agents](../agents/)
 - [Choosing Models for Orchestration](../orchestration/)
 - [Models](../../../../../../../software/sub/models/)
