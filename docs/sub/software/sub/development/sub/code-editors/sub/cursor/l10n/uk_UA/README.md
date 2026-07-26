@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:53217d03015bcbaee0a6a2bedbe0442bddce6891
+  source_hash: gitblob:bb6d427c7ac187c26260589c1369447183a72783
   mode: translated
 -->
 
@@ -67,9 +67,8 @@ Plugin packaging Cursor є platform-specific. Не припускайте, що 
 - MCP servers
 - Model/provider integrations: перевірте поточні options
 
-<!-- Stable cross-locale anchor; do not translate or remove. -->
+<!-- doc-anchor: cursor-data-safety; target: next-heading -->
 <a id="cursor-data-safety"></a>
-
 ## Шлях даних і приватність
 
 Перевірено 2026-07-26.
