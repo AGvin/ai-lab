@@ -1,15 +1,60 @@
 # Choosing Speech and Conversation Models and Workflows
 
-Select an exact model, service, deployment, or smallest practical workflow for speech recognition, transcription, diarization, speech synthesis, or real-time voice interaction.
+Select the smallest practical speech workflow that reaches the required transcription, speaker, synthesis, latency, privacy, and rights target for batch or real-time use.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Status
+**Status:** Comparison structure updated on 2026-07-26. Language coverage, endpoints, prices, latency, licenses, and provider data controls change; verify the complete assignment before adoption.
 
-Guidance verified on 2026-07-25. Language coverage, endpoints, prices, latency, licenses, and provider data controls change; verify the complete assignment before adoption.
+## Quick picks
+
+| Need | Start with | AI or model type | Scale | Route | Main reason |
+| --- | --- | --- | --- | --- | --- |
+| Private local transcription | [Whisper](../../../../../../../software/sub/models/sub/openai/sub/whisper/) with an exact checkpoint and runtime | Speech recognition model | Varies | Local or self-hosted | Mature open ASR family, offline operation, and reproducible local processing |
+| Local speaker diarization | [pyannote Community-1](../../../../../../../software/sub/models/sub/pyannote/sub/speaker-diarization/sub/community-1/) | Speaker diarization model | Specialist | Local or self-hosted | Purpose-built speaker segmentation and local control over recordings |
+| Managed batch transcription | Approved hosted speech endpoint | Speech recognition service | Not applicable | Hosted | Fast adoption, scaling, language support, timestamps, and provider-managed operations |
+| Low-latency voice assistant | Streaming ASR, fast reasoning model, streaming TTS, and explicit interruption control | Multi-component voice workflow | Mixed | Hosted or hybrid | End-to-end latency depends on the complete turn, not one component |
+| Sensitive conversational workflow | Local ASR and diarization, approved reasoning route, and rights-cleared TTS | Hybrid speech workflow | Mixed | Local, self-hosted, or hybrid | Keeps raw audio local while allowing controlled escalation of sanitized text |
+
+These are starting routes, not universal rankings. The exact checkpoint, language, recording conditions, voice, streaming configuration, and data path are part of the evaluated assignment.
+
+## Economical specialist candidates
+
+Speech selection is usually specialist-first rather than SLM-first. ASR, diarization, TTS, and conversational reasoning are distinct roles, and parameter-scale labels do not compare them meaningfully across tasks.
+
+| Candidate | Model type | Scale signal | Access | Best fit | Main limitation |
+| --- | --- | --- | --- | --- | --- |
+| [Whisper](../../../../../../../software/sub/models/sub/openai/sub/whisper/) exact checkpoint | Automatic speech recognition model | Checkpoint-dependent | Open-source model family | Private transcription, subtitles, multilingual ASR, and local batch processing | Family-level claims do not establish language quality, speed, memory, or timestamp behavior for a specific checkpoint and runtime |
+| [pyannote Community-1](../../../../../../../software/sub/models/sub/pyannote/sub/speaker-diarization/sub/community-1/) | Speaker diarization model | Specialist | Gated local model | Speaker segmentation and transcript alignment | Does not transcribe or establish real-world identity; access, license, dependencies, overlap, and correction effort require review |
+
+Do not force a language-model SLM table onto ASR, diarization, or TTS. Use model scale only within comparable model classes and only when it improves the actual selection decision.
+
+## Broader route comparison
+
+| Route | Component type | Best fit | Main limitation | Evidence to recheck |
+| --- | --- | --- | --- | --- |
+| Local Whisper pipeline | ASR model plus runtime | Offline, private, reproducible transcription and subtitles | Hardware, checkpoint, runtime, language, timestamps, and long-recording behavior vary | Exact checkpoint, runtime, precision, language, real-time factor, memory, and error profile |
+| Hosted ASR endpoint | Managed speech recognition service | Fast integration, elastic throughput, streaming, timestamps, and provider features | Mutable pricing, quotas, region, retention, language support, and vendor dependency | Exact model ID, language, timestamps, diarization, streaming, region, data terms, quota, and current price |
+| Local pyannote pipeline | Speaker diarization model | Private speaker segmentation, overlap analysis, and transcript alignment | Gated access, specialist dependencies, speaker-count assumptions, and correction effort | Exact checkpoint, license, dependencies, long-recording behavior, overlap, and DER evidence |
+| Hosted TTS endpoint | Managed speech synthesis service | Broad voice catalog, streaming, low setup cost, and production scaling | Voice rights, retention, region, mutable price, and provider availability | Exact voice and model, language, first-audio latency, streaming, license, permitted use, and price |
+| Local TTS artifact | Speech synthesis model | Offline or private synthesis, provider independence, and controlled deployment | Voice quality, language support, hardware, license, and operational burden vary widely | Exact artifact, runtime, voice rights, language, latency, memory, quality, and maintenance status |
+| Real-time voice stack | VAD, ASR, reasoning, tools, TTS, and interruption control | Interactive assistants and live workflows | Tail latency, turn detection, cancellation, duplicated responses, and tool delays compound | Complete p50/p95/p99 latency, failure modes, data route, concurrency, and accepted-turn quality |
+
+## Workload view
+
+| Workload | Prefer | Escalate or reject when |
+| --- | --- | --- |
+| Plain batch transcription | Exact local Whisper checkpoint or approved hosted ASR | Language, omissions, names, numbers, long recordings, or throughput miss the target |
+| Subtitle transcription | ASR route with validated segment boundaries and timestamps | Reading speed, line length, timing, omissions, or synchronization fail |
+| Speaker diarization | pyannote Community-1 or another exact diarization model | Overlap, short turns, speaker count, long recordings, or ASR alignment are unreliable |
+| Batch TTS | Approved hosted or exact local TTS artifact | Pronunciation, consistency, rights, long-form continuity, or correction effort are unacceptable |
+| Streaming TTS | Streaming endpoint or measured local artifact | First-audio latency, cancellation, jitter, or concurrency misses the target |
+| Real-time voice agent | Separately validated VAD, ASR, reasoning, tools, and TTS components | End-to-end tail latency, interruption, tool delay, privacy, or recovery cannot meet requirements |
+| Multilingual or code-switched speech | Route evaluated for every language, accent, and switch pattern | Language identification, mixed segments, terminology, or fallback behavior is unreliable |
+| Confidential or regulated recordings | Local or explicitly approved contracted route | Complete retention, transfer, consent, access, and deletion controls are not proven |
 
 ## Define the assignment
 
