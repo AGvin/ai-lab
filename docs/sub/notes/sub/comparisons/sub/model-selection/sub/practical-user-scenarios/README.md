@@ -103,7 +103,7 @@ These scenarios are short decision examples, not fixed product bundles. Use the 
 
 **Watch:** keep human brand review and check rights, disclosure, platform rules, and moderation requirements.
 
-> OpenRouter is convenient, but sensitive data needs explicit privacy controls. [Details](../../../../../../../software/sub/model-platforms/sub/openrouter/#security-and-privacy).
+> OpenRouter is convenient, but sensitive data needs explicit privacy controls. [Details](../../../../../../../software/sub/model-platforms/sub/openrouter/#openrouter-data-safety).
 
 ## 8. Software development company
 
@@ -117,7 +117,9 @@ These scenarios are short decision examples, not fixed product bundles. Use the 
 
 **Watch:** isolate coding agents in virtual machines, containers, or other sandboxes with least privilege. A self-hosted model does not prove that the IDE or agent client keeps code local; verify the complete data path.
 
-See [Choosing Models for AI Agents](../agents/#safety-and-operations) for execution safeguards.
+> Cursor and Codex can send code or context to vendor infrastructure. Local execution or a self-hosted model endpoint does not prove the complete client path is local. [Cursor details](../../../../../../../software/sub/development/sub/code-editors/sub/cursor/#cursor-data-safety) · [Codex details](../../../../../../../software/sub/agents/sub/openai-codex/#codex-data-safety).
+
+See [Choosing Models for AI Agents](../agents/) for execution safeguards.
 
 ## 9. Business knowledge assistant
 
