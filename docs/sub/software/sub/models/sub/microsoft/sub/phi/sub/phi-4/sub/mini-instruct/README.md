@@ -47,7 +47,7 @@ Model identity, parameter count, architecture, context, training stages, license
 
 - [Phi-4](../..)
 - [Phi model family](../../../..)
-- [Microsoft models](../../../../..)
+- [Microsoft models](../../../../../..)
 - [Small and Large Language Models](../../../../../../../../../../../notes/sub/concepts/sub/model-classification/sub/language-model-scale/)
 - [Dense and Sparse Architectures](../../../../../../../../../../../notes/sub/concepts/sub/model-architectures/sub/dense-and-sparse-architectures/)
 - [Choosing Models for Coding](../../../../../../../../../../../notes/sub/comparisons/sub/model-selection/sub/coding/)
