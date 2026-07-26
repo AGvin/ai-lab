@@ -13,6 +13,19 @@ Choose a solution from the person, tasks, hardware, budget, skills, and data bou
 | Local | The model runs on the user's own device |
 | Self-hosted | The user or organization operates the model server |
 | Cloud GPU | A rented GPU computer that must be stopped when no longer needed |
+| Quantized model | A compressed model variant that uses less memory but must be evaluated separately |
+| RAG | A workflow that retrieves documents before generating an answer; retrieval does not guarantee correctness |
+
+## Data boundary
+
+| Data | Default route | [OpenRouter](../../../../../../../software/sub/model-platforms/sub/openrouter/#openrouter-data-safety) |
+| --- | --- | --- |
+| Public | Any route that meets cost and quality needs | Usually acceptable after checking the selected provider and terms |
+| Internal | Organization-approved assistant or API | Use only with approved providers, logging policy, routing controls, and ZDR where required |
+| Confidential | Contracted direct provider, private deployment, or local processing | Use only when both OpenRouter and the downstream provider are explicitly approved |
+| Regulated | Local processing or a specifically approved contracted architecture | Usually avoid unless compliance and legal review approve the complete provider chain |
+
+OpenRouter is a routing service, not a model. Use it when access to several providers or controlled fallback is valuable, not as a default extra intermediary.
 
 ## Quick map
 
