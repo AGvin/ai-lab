@@ -1,13 +1,18 @@
 # Foundations and Architecture
 
-Core concepts that explain what modern AI models are and how their main architectural families relate.
+Legacy mixed grouping for foundational AI, model-scope, transformer, attention, and encoder-decoder concepts that have not yet been assigned to the final documentation structure.
 
-Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
+New model classification and parameter-activation architecture documentation now has dedicated canonical nodes. Do not add new classification or activation-architecture concepts here.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
+
+## Canonical destinations
+
+- [Model Classification](../model-classification/) — language-model scale, frontier status, and related classification dimensions.
+- [Model Architectures](../model-architectures/) — dense and sparse activation plus Mixture of Experts.
 
 ## Essential
 
@@ -19,7 +24,6 @@ Concepts are grouped by practical priority. Priority affects reading order, not 
 
 - [`transformers/`](./sub/transformers/) — Neural network architectures built around attention and parallel sequence processing.
 - [`attention/`](./sub/attention/) — A mechanism that weights which input elements are most relevant for a model operation.
-- [`mixture-of-experts/`](./sub/mixture-of-experts/) — Sparse model architectures that route each input through selected expert components.
 
 ## Specialized
 
@@ -29,4 +33,3 @@ Concepts are grouped by practical priority. Priority affects reading order, not 
 - [`neural-networks/`](./sub/neural-networks/) — Parameterized computational structures composed of connected layers or processing units.
 - [`self-attention/`](./sub/self-attention/) — Attention computed between positions within the same input sequence.
 - [`encoder-decoder/`](./sub/encoder-decoder/) — Model structures that encode inputs, generate outputs, or combine both roles.
-- [`dense-and-sparse-models/`](./sub/dense-and-sparse-models/) — Dense models activate most parameters for each input, while sparse models activate selected subsets.
