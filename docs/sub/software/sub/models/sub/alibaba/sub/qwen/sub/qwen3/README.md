@@ -9,8 +9,8 @@ Qwen3 is a Qwen language-model generation that includes dense and mixture-of-exp
 
 ## Classification
 
-- Scale class: [LLM](../../../../../../../notes/sub/concepts/sub/model-classification/sub/language-model-scale/) for the documented 8B, 14B, and 30B-A3B family variants in the current repository context.
-- Architecture: [Dense](../../../../../../../notes/sub/concepts/sub/model-architectures/sub/dense-and-sparse-architectures/) and [Sparse — MoE](../../../../../../../notes/sub/concepts/sub/model-architectures/sub/mixture-of-experts/), depending on the exact variant.
+- Scale class: [LLM](../../../../../../../../../notes/sub/concepts/sub/model-classification/sub/language-model-scale/) for the documented 8B, 14B, and 30B-A3B family variants in the current repository context.
+- Architecture: [Dense](../../../../../../../../../notes/sub/concepts/sub/model-architectures/sub/dense-and-sparse-architectures/) and [Sparse — MoE](../../../../../../../../../notes/sub/concepts/sub/model-architectures/sub/mixture-of-experts/), depending on the exact variant.
 - Frontier status: not assessed at the generation level; evaluate an exact model, task scope, evidence set, and verification date.
 - Ecosystem status: not assigned at the generation level without a dated adoption and tooling review.
 
@@ -58,10 +58,10 @@ The current VRAM-oriented comparison treats official `Q4_K_M` GGUF files as plan
 - [Qwen](../..)
 - [Alibaba models](../../../..)
 - [Models](../../../../../..)
-- [Small and Large Language Models](../../../../../../../notes/sub/concepts/sub/model-classification/sub/language-model-scale/)
-- [Dense and Sparse Architectures](../../../../../../../notes/sub/concepts/sub/model-architectures/sub/dense-and-sparse-architectures/)
-- [Mixture of Experts](../../../../../../../notes/sub/concepts/sub/model-architectures/sub/mixture-of-experts/)
-- [Frontier Models](../../../../../../../notes/sub/concepts/sub/model-classification/sub/frontier-models/)
+- [Small and Large Language Models](../../../../../../../../../notes/sub/concepts/sub/model-classification/sub/language-model-scale/)
+- [Dense and Sparse Architectures](../../../../../../../../../notes/sub/concepts/sub/model-architectures/sub/dense-and-sparse-architectures/)
+- [Mixture of Experts](../../../../../../../../../notes/sub/concepts/sub/model-architectures/sub/mixture-of-experts/)
+- [Frontier Models](../../../../../../../../../notes/sub/concepts/sub/model-classification/sub/frontier-models/)
 
 ## Sources
 
