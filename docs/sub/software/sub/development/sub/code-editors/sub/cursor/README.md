@@ -58,6 +58,27 @@ Cursor plugin packaging is platform-specific. Do not assume that an OpenAI, Clau
 - MCP servers
 - Model/provider integrations: verify current options
 
+<!-- Stable cross-locale anchor; do not translate or remove. -->
+<a id="cursor-data-safety"></a>
+
+## Data path and privacy
+
+Verified on 2026-07-26.
+
+Cursor documents that AI requests pass through Cursor infrastructure even when a user supplies a separate model API key. Requests can include conversation history, recently viewed files, and relevant code, and can then be forwarded to the selected inference provider.
+
+Privacy Mode changes retention and training guarantees; it does not make the request path direct or fully local. Codebase indexing also uploads code chunks to compute embeddings, while embeddings and related metadata may remain stored according to the current service design.
+
+For sensitive repositories:
+
+- enforce Privacy Mode through the workspace where applicable;
+- approve Cursor, the selected model provider, subprocessors, regions, and retention terms;
+- remove secrets and exclude content that is not permitted to leave the device;
+- review indexing, background requests, plugins, skills, MCP servers, and remote execution separately;
+- do not use Cursor when organizational policy prohibits third-party processing or an intermediary in the model path.
+
+Recheck the current product behavior and contracts before adoption because routing, providers, retention, and enterprise controls can change.
+
 ## Evaluation notes
 
 Record the exact Cursor surface, version, selected model, repository access, enabled skills and plugins, MCP servers, remote or background execution, approval behavior, and date of verification. Desktop, CLI, SSH, and hosted surfaces may not provide identical capabilities.
@@ -66,5 +87,7 @@ Record the exact Cursor surface, version, selected model, repository access, ena
 
 - Cursor: https://cursor.com/
 - Cursor documentation: https://cursor.com/docs
+- Cursor data use and privacy: https://cursor.com/data-use
+- Cursor security: https://cursor.com/security
 - Agent Skills: https://cursor.com/docs/skills
 - Plugins: https://cursor.com/docs/plugins
