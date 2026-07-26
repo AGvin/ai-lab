@@ -11,6 +11,7 @@ Choose an AI model or the smallest practical model portfolio for a concrete task
 
 | Need | Open |
 | --- | --- |
+| Start from a realistic user, hardware, budget, and skill profile | [Practical AI User Scenarios](./sub/practical-user-scenarios/) |
 | Select one model for a bounded task | Use the matching [task guide](#task-guides) |
 | Select models for several connected tasks | [Combined Workloads](./sub/combined-workloads/) |
 | Choose a local model by available GPU memory | [Local Model Selection by VRAM](./sub/local-models-by-vram/) |
