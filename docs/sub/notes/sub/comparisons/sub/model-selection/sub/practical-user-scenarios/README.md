@@ -4,6 +4,16 @@ Choose a solution from the person, tasks, hardware, budget, skills, and data bou
 
 **Verified:** 2026-07-26. These are starting routes, not permanent rankings. Recheck current limits, prices, availability, and data terms.
 
+## Terms
+
+| Term | Meaning |
+| --- | --- |
+| Managed assistant | A ready website or app operated by a provider |
+| API | A paid or limited service called by another application |
+| Local | The model runs on the user's own device |
+| Self-hosted | The user or organization operates the model server |
+| Cloud GPU | A rented GPU computer that must be stopped when no longer needed |
+
 ## Quick map
 
 | Scenario | Start here | Upgrade when |
@@ -96,8 +106,8 @@ Include electricity, storage, remote-access security, backups, updates, and oper
 | Route | Concrete implementation | Hardware or access | Main limit |
 | --- | --- | --- | --- |
 | Manual managed | Use ChatGPT, Claude, or Gemini for text and an approved hosted image tool | Managed subscriptions | Manual repetition and inconsistent brand output |
-| API workflow | Use Gemini 3.6 Flash, GPT-5.6 Luna or [GPT-5.6 Terra](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/terra/) for text and multimodal steps; add OpenRouter only when multi-provider routing is useful | API budget and workflow engine | Retries, generated volume, moderation, and review cost |
-| Hybrid production | Keep Qwen3 14B resident and use [FLUX.1-schnell](../../../../../../../software/sub/models/sub/black-forest-labs/sub/flux/sub/flux-1-schnell/) on a separately measured 24 GB+ worker or temporary GPU | Local or rented GPU operations | Rights, disclosure, brand review, and media-worker lifecycle |
+| API workflow | Use Gemini 3.6 Flash, GPT-5.6 Luna or [GPT-5.6 Terra](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/terra/) for text and multimodal steps; add [OpenRouter](../../../../../../../software/sub/model-platforms/sub/openrouter/) only when multi-provider routing is useful | API budget and workflow engine | Retries, generated volume, moderation, and review cost |
+| Hybrid production | Keep Qwen3 14B resident and use [FLUX.1-schnell](../../../../../../../software/sub/models/sub/black-forest-labs/sub/flux/sub/flux-1-schnell/) on a separately measured image worker or temporary GPU | A 24 GB-class GPU is a conservative starting point, not a universal minimum | Rights, disclosure, brand review, and media-worker lifecycle |
 
 > OpenRouter is convenient, but sensitive data needs explicit privacy controls. [Details](../../../../../../../software/sub/model-platforms/sub/openrouter/#openrouter-data-safety).
 
@@ -107,7 +117,7 @@ Include electricity, storage, remote-access security, backups, updates, and oper
 
 | Route | Concrete implementation | Hardware or access | Main limit |
 | --- | --- | --- | --- |
-| Managed pilot | Pilot Cursor, Codex, or Claude Code with representative repositories and users | Per-seat or bundled access | Included usage, client data routing, and weak cost attribution |
+| Managed pilot | Pilot [Cursor](../../../../../../../software/sub/development/sub/code-editors/sub/cursor/), [Codex](../../../../../../../software/sub/agents/sub/openai-codex/), or [Claude Code](../../../../../../../software/sub/agents/sub/claude-code/) with representative repositories and users | Per-seat or bundled access | Included usage, client data routing, and weak cost attribution |
 | Central hosted routing | Use approved enterprise APIs such as GPT-5.6 Terra or Sol, [Claude Sonnet 5](../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/), and Gemini 3.6 Flash through a controlled gateway | Central identity, budgets, logs, and vendor contracts | Gateway operation and provider dependency |
 | Shared self-hosted | Use Qwen2.5-Coder 7B for low-risk bounded work and evaluate [Qwen3-Coder-Next](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3-coder/sub/qwen3-coder-next/) on a large-memory or multi-GPU server; retain hosted escalation | Dedicated AI platform and operations team | Hardware fit is unproven until exact artifacts, context, concurrency, and accepted-result quality are measured |
 
