@@ -45,6 +45,9 @@ Common controls include:
 - `zdr` — require a Zero Data Retention endpoint;
 - `sort` — prefer price, throughput, or latency.
 
+<!-- Stable cross-locale anchor; do not translate or remove. -->
+<a id="openrouter-data-safety"></a>
+
 ## Security and privacy
 
 The effective path is:
