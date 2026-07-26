@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:9058d5a483c2b41fcebaa820e3a604fd78c1ec43
+  source_hash: gitblob:d9e01f5aea9ef518280eb60e15b66af54f9ee3dc
   mode: translated
 -->
 
@@ -61,9 +61,8 @@ Codex підтримує повторно використовувані Agent S
 
 Використовуйте цю product page для Codex-specific evaluation notes замість дублювання повних learning guides.
 
-<!-- Stable cross-locale anchor; do not translate or remove. -->
+<!-- doc-anchor: codex-data-safety; target: next-heading -->
 <a id="codex-data-safety"></a>
-
 ## Шлях даних і приватність
 
 Перевірено 2026-07-26.
