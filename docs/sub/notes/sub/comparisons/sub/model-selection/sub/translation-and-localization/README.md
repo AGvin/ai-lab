@@ -1,19 +1,63 @@
 # Choosing Translation and Localization Models and Workflows
 
-Select an exact model, service, deployment, or smallest practical workflow for a defined language pair, direction, content type, quality tier, privacy boundary, and budget.
+Select the least expensive validated model, service, deployment, or workflow that reaches the required quality tier for a defined language pair, direction, content type, privacy boundary, and budget.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Status
+**Status:** Comparison structure updated on 2026-07-26. Language support, features, prices, terms, and model behavior change; verify the complete assignment before adoption.
 
-Guidance verified on 2026-07-25. Language support, features, prices, terms, and model behavior change; verify the complete assignment before adoption.
+## Quick picks
+
+| Need | Start with | AI or model type | Scale | Route | Main reason |
+| --- | --- | --- | --- | --- | --- |
+| Compact private or offline draft route | [Phi-4 Mini Instruct](../../../../../../../software/sub/models/sub/microsoft/sub/phi/sub/phi-4/sub/mini-instruct/) | General-purpose multilingual instruct model | SLM | Local or self-hosted | Compact, multilingual, MIT-licensed candidate for constrained environments |
+| Stronger local multilingual baseline | [Qwen3 8B](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3/sub/8b/) | General-purpose multilingual reasoning and instruct model | SLM | Local or self-hosted | Open-weight baseline for private preprocessing, drafts, and terminology-aware experiments |
+| High-volume conventional translation | DeepL API, Google Cloud Translation Advanced, or Azure AI Translator | Dedicated translation service | Not applicable | Hosted | Purpose-built language-pair, glossary, document, and batch features |
+| Context-heavy or mixed-content translation | [GPT-5.6 Terra](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/terra/), [Claude Sonnet 5](../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/), or [Gemini 3.6 Flash](../../../../../../../software/sub/models/sub/google/sub/gemini/sub/gemini-3-6-flash/) | General-purpose language or multimodal model | LLM | Hosted | Document context, terminology reasoning, rewriting, review, and mixed-content handling |
+| Production localization | Primary translation route plus deterministic validators and qualified bilingual review | Hybrid workflow | Mixed | Hosted, local, or hybrid | Structural checks, terminology control, escalation, and human approval are separable responsibilities |
+
+These are starting routes, not universal rankings. Evaluate each language direction and content distribution separately.
+
+## Economical SLM candidates
+
+| Candidate | Model type | Scale | Architecture | Access | Best fit | Main limitation |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Phi-4 Mini Instruct](../../../../../../../software/sub/models/sub/microsoft/sub/phi/sub/phi-4/sub/mini-instruct/) | General-purpose multilingual instruct model | SLM | Dense; 3.8B parameters | Open-weight; MIT | Compact local drafts, terminology-aware experiments, structured assistant workflows, and resource-constrained deployments | Not translation-specialized; quality, directionality, long-document behavior, and hardware fit require exact evaluation |
+| [Qwen3 8B](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3/sub/8b/) | General-purpose multilingual reasoning and instruct model | SLM | Dense; 8.2B total parameters | Open-weight; Apache-2.0 | Private preprocessing, summarization, draft translation, mixed technical content, and a stronger local baseline | Larger local cost than Phi-4 Mini; translation quality and accepted-result cost remain pair- and artifact-specific |
+
+SLM is an economy-oriented filter, not proof of lower total cost. A smaller local model can lose its apparent saving through omissions, terminology errors, retries, slow inference, or bilingual correction effort.
+
+Do not classify a quantized artifact as a separate smaller model. Quantization changes deployment characteristics, not the underlying model scale or translation evidence.
+
+## Broader hosted routes
+
+| Route | AI or model type | Best fit | Main limitation | Evidence to recheck |
+| --- | --- | --- | --- | --- |
+| DeepL API | Dedicated translation service | Supported language pairs, glossaries, document translation, and conventional production workflows | Pair, feature, region, document, retention, and pricing coverage vary | Exact API resource, supported languages, glossary/document behavior, terms, region, and current price |
+| Google Cloud Translation Advanced | Dedicated translation service | Cloud-managed batch, glossary, document, and enterprise integration routes | Cloud configuration, region, data terms, and feature coverage require review | Exact edition, model/resource, region, glossary support, quotas, terms, and current price |
+| Azure AI Translator | Dedicated translation service | Azure-centered enterprise translation, document, glossary, and workflow integration | Service configuration and supported features vary by operation and region | Exact resource, region, language pair, document support, terms, quotas, and current price |
+| [GPT-5.6 Terra](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/terra/) | General-purpose reasoning and language model | Context-heavy technical documents, terminology reasoning, rewriting, review, and mixed-content workflows | Hosted data path, mutable access and price, and need for structural validators | Exact endpoint, snapshot, region, context, data terms, price, and task evidence |
+| [Claude Sonnet 5](../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/) | General-purpose language and agentic model | Long documents, technical prose, review, rewriting, and instruction-heavy workflows | Hosted access, provider terms, and pair-specific quality require validation | Exact model, context, data terms, price, language direction, and reviewer evidence |
+| [Gemini 3.6 Flash](../../../../../../../software/sub/models/sub/google/sub/gemini/sub/gemini-3-6-flash/) | Multimodal general-purpose model | Mixed text, image, PDF, audio, or document inputs and high-frequency hosted workflows | API behavior, supported operations, data terms, and output consistency change | Exact model alias, modalities, region, tools, data terms, price, and direction-specific evidence |
+
+A dedicated translation service is not automatically better than a general model, and a general model is not automatically better because it handles more context. Compare the exact assignment, language direction, document structure, terminology, correction effort, and cost per accepted result.
+
+## Workload view
+
+| Workload | Prefer | Escalate or reject when |
+| --- | --- | --- |
+| Short general prose | Dedicated service or validated SLM route | Meaning, tone, directionality, or edit effort misses the required tier |
+| Technical documentation | Terminology-controlled hosted model, dedicated service, or hybrid workflow | Protected literals, code, links, terminology, or document context are damaged |
+| UI strings and resource files | Format-aware pipeline with dedicated or general model behind deterministic validators | Placeholders, plural branches, keys, escapes, or length constraints fail |
+| High-volume batch translation | Lowest-cost route that passes a frozen representative suite | Retry, correction, latency, or review cost erases the unit-price advantage |
+| Confidential or offline material | Validated local SLM or approved private deployment | Local quality cannot reach the required tier or hardware latency is unacceptable |
+| High-risk legal, medical, financial, or public material | Approved route plus independent qualified bilingual review | Required expertise, accountability, or human approval is unavailable |
+| Multimodal or mixed-content documents | Validated multimodal hosted route or staged extraction and translation workflow | Required modality, layout, extraction, data boundary, or rendering support is missing |
 
 ## Define the assignment
-
-Separate general prose, technical documentation, software resources, UI strings, structured documents, high-volume batch work, high-risk material, and multilingual review.
 
 Record:
 
@@ -99,17 +143,6 @@ Report eligible segment and document populations plus:
 - consistency, edit effort, reviewer time, latency, and cost per accepted result.
 
 Use an explicit human error taxonomy such as a tailored MQM-style rubric. Automatic metrics and model judges may screen candidates only after calibration for the exact pair, direction, domain, and error cost.
-
-## Candidate routes
-
-- **Dedicated hosted translation:** evaluate exact DeepL API, Google Cloud Translation Advanced, or Azure AI Translator resources when current pair, glossary, document, batch, region, retention, and pricing support match.
-- **General hosted models:** evaluate exact GPT-5.6, Claude Sonnet 5, Gemini 3.6 Flash, or another model when document context, terminology reasoning, rewriting, review, or mixed-content handling is required.
-- **Local models:** evaluate exact Qwen3 or other downloadable artifacts when offline operation, privacy, or provider independence matters; name artifact, quantization, runtime, context, hardware, and language direction.
-- **Hybrid workflow:** deterministic preprocessing and memory retrieval, one primary route, deterministic checks, independently validated review for failures, and qualified human approval at required coverage.
-
-Retry only transient failures likely to improve under the same assignment. Escalate repeated semantic, terminology, pair, context, or capability failures to a different assignment. A fallback must pass the same data, format, quality, and risk gates.
-
-Do not describe output as certified, professionally translated, or human-reviewed unless that process occurred and evidence is retained.
 
 ## Decision record
 
