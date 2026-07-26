@@ -10,6 +10,7 @@ Platforms for model discovery, datasets, model hosting, Spaces, and related AI t
 ## Child nodes
 
 - [`hugging-face/`](./sub/hugging-face/) — model, dataset, Spaces, and AI tooling platform.
+- [`openrouter/`](./sub/openrouter/) — unified multi-provider model API with routing and privacy controls.
 
 ## Scope
 
