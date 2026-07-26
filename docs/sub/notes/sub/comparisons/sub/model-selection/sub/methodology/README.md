@@ -89,7 +89,7 @@ Do not collapse recommendation, deployment fit, evidence state, or classificatio
 - **Single generalist** — one model covers all validated tasks; useful when simplicity, privacy, or residency dominates.
 - **Generalist with specialist fallback** — one resident route handles routine work and escalates declared gaps.
 - **Specialist team** — separate models handle task classes when measured gains justify additional services and switching.
-- **Router with quality tiers** — routine cases start on a cheaper validated route and escalates by explicit policy.
+- **Router with quality tiers** — routine cases start on a cheaper validated route and escalate by explicit policy.
 
 Evaluate the router independently because incorrect routing can erase expected savings.
 
