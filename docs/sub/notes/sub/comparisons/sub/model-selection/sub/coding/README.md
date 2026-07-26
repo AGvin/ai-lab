@@ -87,6 +87,7 @@ Record the exact model and artifact, model type, scale, architecture, scaffold, 
 ## Related pages
 
 - [AI Model Selection and Team Design](../../)
+- [Practical AI User Scenarios](../practical-user-scenarios/)
 - [Model Selection Methodology](../methodology/)
 - [Small and Large Language Models](../../../../../concepts/sub/model-classification/sub/language-model-scale/)
 - [Dense and Sparse Architectures](../../../../../concepts/sub/model-architectures/sub/dense-and-sparse-architectures/)
