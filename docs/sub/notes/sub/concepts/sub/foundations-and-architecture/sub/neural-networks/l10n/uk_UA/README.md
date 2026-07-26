@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:88fb040199dbe474ee082708c8bd03ed036660f9
+  source_hash: gitblob:37287ba795cf3cd5cfb230852be6be0b120e63a0
   mode: translated
 -->
 
@@ -49,4 +49,4 @@ l10n:
 - [Основи й архітектура](../../../../l10n/uk_UA/)
 - [Глибоке навчання](../../../../sub/deep-learning/l10n/uk_UA/)
 - [Увага](../../../../sub/attention/l10n/uk_UA/)
-- [Щільні й розріджені моделі](../../../../sub/dense-and-sparse-models/l10n/uk_UA/)
+- [Щільні й розріджені архітектури](../../../../../model-architectures/sub/dense-and-sparse-architectures/l10n/uk_UA/)
