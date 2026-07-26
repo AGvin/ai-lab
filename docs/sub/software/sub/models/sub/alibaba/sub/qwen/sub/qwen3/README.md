@@ -7,6 +7,15 @@ Qwen3 is a Qwen language-model generation that includes dense and mixture-of-exp
 - English
 - [Українська](./l10n/uk_UA/)
 
+## Classification
+
+- Scale class: [LLM](../../../../../../../notes/sub/concepts/sub/model-classification/sub/language-model-scale/) for the documented 8B, 14B, and 30B-A3B family variants in the current repository context.
+- Architecture: [Dense](../../../../../../../notes/sub/concepts/sub/model-architectures/sub/dense-and-sparse-architectures/) and [Sparse — MoE](../../../../../../../notes/sub/concepts/sub/model-architectures/sub/mixture-of-experts/), depending on the exact variant.
+- Frontier status: not assessed at the generation level; evaluate an exact model, task scope, evidence set, and verification date.
+- Ecosystem status: not assigned at the generation level without a dated adoption and tooling review.
+
+Scale, architecture, frontier status, ecosystem maturity, deployment mode, and access are independent fields. Do not infer one from another.
+
 ## Shared characteristics
 
 Official model cards describe Qwen3 post-trained variants as supporting:
@@ -21,16 +30,16 @@ Native context for the documented 8B, 14B, and 30B-A3B variants is 32,768 tokens
 
 ## Architecture variants
 
-- **Dense** — all model parameters participate in each token computation. Qwen3 8B and 14B are dense variants.
-- **Mixture of experts** — a subset of experts is activated per token. Qwen3 30B-A3B has 30.5 billion total parameters and 3.3 billion activated parameters according to its official model card.
+- **Dense** — most core model parameters participate in each token computation. Qwen3 8B and 14B are dense variants.
+- **Mixture of Experts** — a router activates a subset of experts per token. Qwen3 30B-A3B has 30.5 billion total parameters and 3.3 billion active parameters according to its official model card.
 
-Parameter count and activated-parameter count do not determine practical quality or memory use by themselves. Runtime, precision, quantization, context, KV cache, batching, and implementation remain material.
+Parameter count and active-parameter count do not determine practical quality or memory use by themselves. Runtime, precision, quantization, context, KV cache, batching, routing overhead, and implementation remain material.
 
 ## Documented versions
 
 - [Qwen3 8B](./sub/8b/) — dense 8.2B-parameter variant and official GGUF artifacts.
 - [Qwen3 14B](./sub/14b/) — dense 14.8B-parameter variant and official GGUF artifacts.
-- [Qwen3 30B-A3B](./sub/30b-a3b/) — mixture-of-experts variant with 30.5B total and 3.3B activated parameters.
+- [Qwen3 30B-A3B](./sub/30b-a3b/) — mixture-of-experts variant with 30.5B total and 3.3B active parameters.
 
 ## Selection guidance
 
@@ -49,6 +58,10 @@ The current VRAM-oriented comparison treats official `Q4_K_M` GGUF files as plan
 - [Qwen](../..)
 - [Alibaba models](../../../..)
 - [Models](../../../../../..)
+- [Small and Large Language Models](../../../../../../../notes/sub/concepts/sub/model-classification/sub/language-model-scale/)
+- [Dense and Sparse Architectures](../../../../../../../notes/sub/concepts/sub/model-architectures/sub/dense-and-sparse-architectures/)
+- [Mixture of Experts](../../../../../../../notes/sub/concepts/sub/model-architectures/sub/mixture-of-experts/)
+- [Frontier Models](../../../../../../../notes/sub/concepts/sub/model-classification/sub/frontier-models/)
 
 ## Sources
 
