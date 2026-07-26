@@ -1,15 +1,59 @@
 # Choosing Generative Media Models and Workflows
 
-Select an exact model, service, deployment, or smallest practical workflow for image, video, music, sound, speech, or voice-generation work.
+Select the smallest practical generative-media workflow that reaches the required creative, technical, rights, provenance, latency, and cost target for image, video, music, sound, speech, or voice work.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Status
+**Status:** Comparison structure updated on 2026-07-26. Models, endpoints, prices, licenses, provider policies, watermarking, and generation behavior change quickly; verify the complete assignment before adoption.
 
-Guidance verified on 2026-07-25. Models, endpoints, prices, licenses, provider policies, watermarking, and generation behavior change quickly; verify the complete assignment before adoption.
+## Quick picks
+
+| Need | Start with | AI or model type | Scale | Route | Main reason |
+| --- | --- | --- | --- | --- | --- |
+| Fast local image concepts | [FLUX.1-schnell](../../../../../../../software/sub/models/sub/black-forest-labs/sub/flux/sub/flux-1-schnell/) | Image-generation model | Specialist | Local, self-hosted, or temporary cloud GPU | Downloadable rapid-generation candidate with controllable local workflow |
+| Managed production image generation | Exact approved hosted image endpoint | Image-generation service | Not applicable | Hosted | Fast adoption, editing features, scaling, and provider-managed infrastructure |
+| Production image editing | Exact endpoint or local workflow with inpainting, masks, and protected-region validation | Image editing workflow | Varies | Hosted, local, or hybrid | Editing quality depends on change locality and preservation, not only overall image quality |
+| Video generation | Exact text-to-video or image-to-video endpoint with bounded duration and review | Video-generation model or service | Specialist | Usually hosted | High infrastructure cost, rapid model change, and need for temporal-quality evaluation |
+| Music, sound, or TTS | Exact specialist model or service for the required language, style, duration, rights, and latency | Audio-generation model or service | Specialist | Hosted, local, or hybrid | Separate specialist roles need separate quality, license, and rights validation |
+| Sensitive or private concepts | Local generation plus deterministic checks and independent review | Hybrid media workflow | Mixed | Local or self-hosted | Keeps private references local and preserves control over storage and provenance |
+
+These are starting routes, not universal rankings. The exact model revision, runtime, precision, dimensions, duration, adapters, provider deployment, and review process are part of the assignment.
+
+## Economical specialist candidates
+
+Generative-media selection is specialist-first rather than SLM-first. Language-model scale labels do not compare image, video, music, sound, and speech generators meaningfully.
+
+| Candidate | Model type | Access | Best fit | Main limitation |
+| --- | --- | --- | --- | --- |
+| [FLUX.1-schnell](../../../../../../../software/sub/models/sub/black-forest-labs/sub/flux/sub/flux-1-schnell/) | Text-to-image model | Downloadable | Rapid local concepts, temporary GPU generation, and private image workflows | Hardware fit, license, exact revision, runtime, text encoders, VAE, resolution, quality, and accepted-result cost require measurement |
+
+Do not infer economical deployment from parameter count, checkpoint size, active parameters, or one successful low-resolution generation. Measure peak memory, load time, generation latency, retries, candidate count, edit effort, and total cost per accepted artifact.
+
+## Broader route comparison
+
+| Route | Model or workflow type | Best fit | Main limitation | Evidence to recheck |
+| --- | --- | --- | --- | --- |
+| Local FLUX.1-schnell workflow | Image-generation model | Fast concepts, privacy, provider independence, and temporary GPU workers | Local infrastructure, model loading, storage, artifact handling, and quality ceiling | Exact revision, license, runtime, precision, text encoders, VAE, resolution, peak memory, and generation evidence |
+| Hosted image endpoint | Managed image-generation or editing service | Production candidates, managed scaling, editing operations, and lower setup burden | Mutable price, provider policy, retention, rights terms, region, quotas, and service dependency | Exact model ID, endpoint, supported operations, region, data terms, rights terms, watermarking, quota, and current price |
+| Hosted video endpoint | Managed video-generation service | Text-to-video, image-to-video, short production candidates, and rapid access to current models | High cost, temporal defects, duration limits, policy restrictions, and rapid model turnover | Exact model, duration, frame rate, resolution, audio support, rights, region, price, and temporal-quality evidence |
+| Local TTS, music, or sound artifact | Specialist audio model | Offline, private, provider-independent, or low-latency audio generation | Model quality, language, hardware, voice rights, license, and maintenance vary widely | Exact artifact, runtime, language, voice or style rights, latency, memory, quality, and support status |
+| Hosted TTS, music, or sound service | Managed audio-generation service | Broad voices or styles, streaming, scaling, and low setup cost | Provider data path, mutable pricing, rights, identity controls, retention, and vendor dependency | Exact model or voice, language, streaming, permitted use, data terms, price, quotas, and output rights |
+| Hybrid production workflow | Local concepts, hosted specialists, deterministic validators, and independent review | Balancing privacy, quality, cost, and production reliability | More routing, provenance, storage, rights, and lifecycle complexity | Complete data path, handoff formats, reviewer independence, lifecycle, and accepted-result cost |
+
+## Workload view
+
+| Workload | Prefer | Escalate or reject when |
+| --- | --- | --- |
+| Text-to-image concepts | FLUX.1-schnell or approved hosted image model | Prompt adherence, anatomy, typography, composition, or candidate cost misses the target |
+| Production images | Hosted or local route with independent review, rights checks, and editing | Required consistency, resolution, provenance, rights, or defect thresholds cannot be met |
+| Inpainting and object changes | Workflow with masks, protected regions, and before/after validation | Unrequested areas change or edit boundaries, identity, lighting, or geometry become inconsistent |
+| Text-to-video or image-to-video | Exact hosted video model with bounded duration and temporal review | Motion, continuity, identity, camera, frame defects, audio, or cost are unacceptable |
+| Music and sound effects | Exact specialist generator evaluated for structure, timing, rights, and originality risk | Required duration, loop quality, stems, loudness, transitions, or rights cannot be verified |
+| Speech synthesis | Exact TTS artifact or endpoint with language, voice, rights, and latency validation | Pronunciation, speaker consistency, long-form quality, consent, streaming, or permitted use fails |
+| Authorized identity-conditioned media | Explicit consent, purpose boundary, provenance, and independent approval | Authorization, disclosure, identity protection, or anti-deception controls are incomplete |
 
 ## Define the assignment
 
@@ -63,24 +107,6 @@ Measure intelligibility, pronunciation, terminology, prosody, emotion, speaker c
 ### Workflow outcomes
 
 Report first-pass acceptance, accepted candidates per generation budget, retries, edit effort, reviewer time, latency to terminal artifact, compute or API cost, storage, transfer, and total cost per accepted result.
-
-## Candidate routes
-
-### Local image generation
-
-[FLUX.1-schnell](../../../../../../../software/sub/models/sub/black-forest-labs/sub/flux/sub/flux-1-schnell/) is the current downloadable image candidate for rapid local or temporary generation. Name the exact revision, runtime, precision, offload policy, text encoders, VAE, resolution, and batch. Do not infer 24 GB fit from parameter count or one file size.
-
-### Hosted image and video
-
-Evaluate exact current OpenAI, Adobe Firefly, Google, Azure, or other approved endpoints only after checking region, model identifier, input and output policy, retention, rights terms, watermarking, price units, quotas, and supported editing operations.
-
-### Local and hosted audio
-
-Evaluate exact TTS, music, sound, and voice models by language, speaker inventory, streaming support, license, consent, identity controls, latency, and output rights. A provider product name is not an exact assignment.
-
-### Hybrid workflow
-
-A practical workflow may use a local model for private concepts, a hosted specialist for production candidates, deterministic media validators, and an independent human or calibrated model reviewer.
 
 ## Local and on-demand deployment
 
