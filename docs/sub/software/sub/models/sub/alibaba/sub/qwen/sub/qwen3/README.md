@@ -9,12 +9,12 @@ Qwen3 is a Qwen language-model generation that includes dense and mixture-of-exp
 
 ## Classification
 
-- Scale class: [LLM](../../../../../../../../../notes/sub/concepts/sub/model-classification/sub/language-model-scale/) for the documented 8B, 14B, and 30B-A3B family variants in the current repository context.
+- Scale class: varies by exact variant in the current AI Lab comparison context — [Qwen3 8B](./sub/8b/) is treated as an [SLM](../../../../../../../../../notes/sub/concepts/sub/model-classification/sub/language-model-scale/), while [Qwen3 14B](./sub/14b/) and [Qwen3 30B-A3B](./sub/30b-a3b/) are treated as LLMs.
 - Architecture: [Dense](../../../../../../../../../notes/sub/concepts/sub/model-architectures/sub/dense-and-sparse-architectures/) and [Sparse — MoE](../../../../../../../../../notes/sub/concepts/sub/model-architectures/sub/mixture-of-experts/), depending on the exact variant.
 - Frontier status: not assessed at the generation level; evaluate an exact model, task scope, evidence set, and verification date.
 - Ecosystem status: not assigned at the generation level without a dated adoption and tooling review.
 
-Scale, architecture, frontier status, ecosystem maturity, deployment mode, and access are independent fields. Do not infer one from another.
+Scale, architecture, frontier status, ecosystem maturity, deployment mode, and access are independent fields. The scale labels above are repository comparison conventions, not universal parameter thresholds.
 
 ## Shared characteristics
 
@@ -37,9 +37,9 @@ Parameter count and active-parameter count do not determine practical quality or
 
 ## Documented versions
 
-- [Qwen3 8B](./sub/8b/) — dense 8.2B-parameter variant and official GGUF artifacts.
-- [Qwen3 14B](./sub/14b/) — dense 14.8B-parameter variant and official GGUF artifacts.
-- [Qwen3 30B-A3B](./sub/30b-a3b/) — mixture-of-experts variant with 30.5B total and 3.3B active parameters.
+- [Qwen3 8B](./sub/8b/) — dense 8.2B-parameter SLM in the current local comparison context and official GGUF artifacts.
+- [Qwen3 14B](./sub/14b/) — dense 14.8B-parameter LLM and official GGUF artifacts.
+- [Qwen3 30B-A3B](./sub/30b-a3b/) — MoE LLM with 30.5B total and 3.3B active parameters.
 
 ## Selection guidance
 
