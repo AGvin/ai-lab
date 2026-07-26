@@ -67,10 +67,10 @@ Classification fields describe independent model properties. Use them only when 
 
 | Field | Values | Canonical meaning |
 | --- | --- | --- |
-| Scale class | `SLM`, `LLM`, `Unclear` | Relative language-model scale in the stated comparison context. There is no universal parameter threshold. See [Small and Large Language Models](../../../../concepts/sub/model-classification/sub/language-model-scale/). |
-| Architecture | `Dense`, `Sparse — MoE`, `Other sparse`, `Unknown` | Parameter activation architecture, independent from scale and deployment. See [Dense and Sparse Architectures](../../../../concepts/sub/model-architectures/sub/dense-and-sparse-architectures/) and [Mixture of Experts](../../../../concepts/sub/model-architectures/sub/mixture-of-experts/). |
-| Frontier status | `Supported`, `Not supported`, `Unclear`, `Not assessed` | Date- and scope-bounded evidence that a model is near the current capability frontier. See [Frontier Models](../../../../concepts/sub/model-classification/sub/frontier-models/). |
-| Ecosystem status | `Experimental`, `Emerging`, `Mainstream`, `Legacy`, `Unclear` | Adoption, tooling support, documentation maturity, and operational familiarity. See the [AI Glossary](../../../../glossary/#model-ecosystem-status). |
+| Scale class | `SLM`, `LLM`, `Unclear` | Relative language-model scale in the stated comparison context. There is no universal parameter threshold. See [Small and Large Language Models](../../../../../concepts/sub/model-classification/sub/language-model-scale/). |
+| Architecture | `Dense`, `Sparse — MoE`, `Other sparse`, `Unknown` | Parameter activation architecture, independent from scale and deployment. See [Dense and Sparse Architectures](../../../../../concepts/sub/model-architectures/sub/dense-and-sparse-architectures/) and [Mixture of Experts](../../../../../concepts/sub/model-architectures/sub/mixture-of-experts/). |
+| Frontier status | `Supported`, `Not supported`, `Unclear`, `Not assessed` | Date- and scope-bounded evidence that a model is near the current capability frontier. See [Frontier Models](../../../../../concepts/sub/model-classification/sub/frontier-models/). |
+| Ecosystem status | `Experimental`, `Emerging`, `Mainstream`, `Legacy`, `Unclear` | Adoption, tooling support, documentation maturity, and operational familiarity. See the [AI Glossary](../../../../../glossary/#model-ecosystem-status). |
 
 Do not infer one field from another:
 
@@ -89,7 +89,7 @@ Do not collapse recommendation, deployment fit, evidence state, or classificatio
 - **Single generalist** — one model covers all validated tasks; useful when simplicity, privacy, or residency dominates.
 - **Generalist with specialist fallback** — one resident route handles routine work and escalates declared gaps.
 - **Specialist team** — separate models handle task classes when measured gains justify additional services and switching.
-- **Router with quality tiers** — routine cases start on a cheaper validated route and escalate by explicit policy.
+- **Router with quality tiers** — routine cases start on a cheaper validated route and escalates by explicit policy.
 
 Evaluate the router independently because incorrect routing can erase expected savings.
 
@@ -200,11 +200,11 @@ Voice cloning, face replacement, impersonation, and other deepfake workflows req
 ## Related pages
 
 - [AI Model Selection and Team Design](../..)
-- [Model Classification](../../../../concepts/sub/model-classification/)
-- [Small and Large Language Models](../../../../concepts/sub/model-classification/sub/language-model-scale/)
-- [Frontier Models](../../../../concepts/sub/model-classification/sub/frontier-models/)
-- [Model Architectures](../../../../concepts/sub/model-architectures/)
-- [AI Glossary](../../../../glossary/)
+- [Model Classification](../../../../../concepts/sub/model-classification/)
+- [Small and Large Language Models](../../../../../concepts/sub/model-classification/sub/language-model-scale/)
+- [Frontier Models](../../../../../concepts/sub/model-classification/sub/frontier-models/)
+- [Model Architectures](../../../../../concepts/sub/model-architectures/)
+- [AI Glossary](../../../../../glossary/)
 - [Local Model Selection by VRAM](../local-models-by-vram/)
 - [Reliability Profiles](../reliability-profiles/)
 - [Combined Workloads](../combined-workloads/)
