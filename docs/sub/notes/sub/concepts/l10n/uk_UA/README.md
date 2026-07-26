@@ -32,7 +32,7 @@ l10n:
 
 - [`transformers/`](../../sub/foundations-and-architecture/sub/transformers/l10n/uk_UA/) — архітектури нейронних мереж, побудовані навколо уваги й паралельного оброблення послідовностей.
 - [`attention/`](../../sub/foundations-and-architecture/sub/attention/l10n/uk_UA/) — механізм, що зважує важливість елементів вхідних даних для операції моделі.
-- [`mixture-of-experts/`](../../sub/foundations-and-architecture/sub/mixture-of-experts/l10n/uk_UA/) — розріджені архітектури моделей, які спрямовують кожен вхід через вибрані експертні компоненти.
+- [`mixture-of-experts/`](../../sub/model-architectures/sub/mixture-of-experts/l10n/uk_UA/) — розріджена архітектура, у якій маршрутизатор активує вибрані експертні компоненти.
 
 ### Спеціалізовані
 
@@ -42,7 +42,7 @@ l10n:
 - [`neural-networks/`](../../sub/foundations-and-architecture/sub/neural-networks/l10n/uk_UA/) — параметризовані обчислювальні структури зі з’єднаних шарів або блоків оброблення.
 - [`self-attention/`](../../sub/foundations-and-architecture/sub/self-attention/l10n/uk_UA/) — увага, обчислена між позиціями однієї послідовності.
 - [`encoder-decoder/`](../../sub/foundations-and-architecture/sub/encoder-decoder/l10n/uk_UA/) — структури моделей, що кодують вхідні дані, генерують вихідні або поєднують обидві ролі.
-- [`dense-and-sparse-models/`](../../sub/foundations-and-architecture/sub/dense-and-sparse-models/l10n/uk_UA/) — щільні моделі активують більшість параметрів для кожного входу, а розріджені — вибрані підмножини.
+- [`dense-and-sparse-architectures/`](../../sub/model-architectures/sub/dense-and-sparse-architectures/l10n/uk_UA/) — щільна й розріджена активація параметрів та її операційні наслідки.
 
 ## [Використання моделей і генерація](../../sub/model-usage-and-generation/l10n/uk_UA/)
 
