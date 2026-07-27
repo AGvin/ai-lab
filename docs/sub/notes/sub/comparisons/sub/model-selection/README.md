@@ -28,6 +28,7 @@ Comparison tables may use the following independent fields when they improve the
 
 | Field | Canonical documentation |
 | --- | --- |
+| Model or AI type: general-purpose, coding, reasoning, multimodal, embedding, reranking, speech, image, or another task role | Canonical model pages under [Models](../../../../../software/sub/models/) and the applicable task guide |
 | Scale class: SLM or LLM | [Small and Large Language Models](../../../concepts/sub/model-classification/sub/language-model-scale/) |
 | Architecture: dense, sparse, or MoE | [Dense and Sparse Architectures](../../../concepts/sub/model-architectures/sub/dense-and-sparse-architectures/) and [Mixture of Experts](../../../concepts/sub/model-architectures/sub/mixture-of-experts/) |
 | Frontier status | [Frontier Models](../../../concepts/sub/model-classification/sub/frontier-models/) |
