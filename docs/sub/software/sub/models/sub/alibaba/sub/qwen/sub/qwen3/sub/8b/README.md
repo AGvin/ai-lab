@@ -51,7 +51,7 @@ Do not assume that 8B is a reliable orchestrator, reviewer, or autonomous coding
 
 ## Evidence boundary
 
-The architecture, parameter count, context, license, and published artifact size are provider-documented facts. The SLM label is a repository comparison convention for the current context. Deployment fit, agent-role suitability, quality ceiling, frontier status, ecosystem status, and accepted-result cost remain unverified until assessed explicitly.
+The architecture, parameter count, context, license, and published artifact size were rechecked from the official Qwen3 release and Hugging Face repositories on 2026-07-27. The SLM label is a repository comparison convention for the current context. Deployment fit, agent-role suitability, quality ceiling, frontier status, ecosystem status, and accepted-result cost remain unverified until assessed explicitly.
 
 ## Related pages
 
@@ -63,6 +63,7 @@ The architecture, parameter count, context, license, and published artifact size
 
 ## Sources
 
-- [Qwen3-8B model card](https://huggingface.co/Qwen/Qwen3-8B)
+- [Qwen3 release](https://qwenlm.github.io/blog/qwen3/)
+- [Qwen3-8B on Hugging Face](https://huggingface.co/Qwen/Qwen3-8B)
 - [Qwen3-8B-GGUF repository](https://huggingface.co/Qwen/Qwen3-8B-GGUF)
 - [Qwen3-8B Q4_K_M file](https://huggingface.co/Qwen/Qwen3-8B-GGUF/blob/main/Qwen3-8B-Q4_K_M.gguf)
