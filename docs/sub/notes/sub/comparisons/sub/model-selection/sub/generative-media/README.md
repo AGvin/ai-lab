@@ -7,18 +7,18 @@ Select the smallest practical generative-media workflow that reaches the require
 - English
 - [Українська](./l10n/uk_UA/)
 
-**Status:** Comparison structure updated on 2026-07-26. Models, endpoints, prices, licenses, provider policies, watermarking, and generation behavior change quickly; verify the complete assignment before adoption.
+**Status:** Comparison structure updated on 2026-07-27. Models, endpoints, prices, licenses, provider policies, watermarking, and generation behavior change quickly; verify the complete assignment before adoption.
 
 ## Quick picks
 
-| Need | Start with | AI or model type | Scale | Route | Main reason |
-| --- | --- | --- | --- | --- | --- |
-| Fast local image concepts | [FLUX.1-schnell](../../../../../../../software/sub/models/sub/black-forest-labs/sub/flux/sub/flux-1-schnell/) | Image-generation model | Specialist | Local, self-hosted, or temporary cloud GPU | Downloadable rapid-generation candidate with controllable local workflow |
-| Managed production image generation | Exact approved hosted image endpoint | Image-generation service | Not applicable | Hosted | Fast adoption, editing features, scaling, and provider-managed infrastructure |
-| Production image editing | Exact endpoint or local workflow with inpainting, masks, and protected-region validation | Image editing workflow | Varies | Hosted, local, or hybrid | Editing quality depends on change locality and preservation, not only overall image quality |
-| Video generation | Exact text-to-video or image-to-video endpoint with bounded duration and review | Video-generation model or service | Specialist | Usually hosted | High infrastructure cost, rapid model change, and need for temporal-quality evaluation |
-| Music, sound, or TTS | Exact specialist model or service for the required language, style, duration, rights, and latency | Audio-generation model or service | Specialist | Hosted, local, or hybrid | Separate specialist roles need separate quality, license, and rights validation |
-| Sensitive or private concepts | Local generation plus deterministic checks and independent review | Hybrid media workflow | Mixed | Local or self-hosted | Keeps private references local and preserves control over storage and provenance |
+| Need | Start with | AI or model type | Route | Main reason |
+| --- | --- | --- | --- | --- |
+| Fast local image concepts | [FLUX.1-schnell](../../../../../../../software/sub/models/sub/black-forest-labs/sub/flux/sub/flux-1-schnell/) | Image-generation model | Local, self-hosted, or temporary cloud GPU | Downloadable rapid-generation candidate with controllable local workflow |
+| Managed production image generation | Exact approved hosted image endpoint | Image-generation service | Hosted | Fast adoption, editing features, scaling, and provider-managed infrastructure |
+| Production image editing | Exact endpoint or local workflow with inpainting, masks, and protected-region validation | Image editing workflow | Hosted, local, or hybrid | Editing quality depends on change locality and preservation, not only overall image quality |
+| Video generation | Exact text-to-video or image-to-video endpoint with bounded duration and review | Video-generation model or service | Usually hosted | High infrastructure cost, rapid model change, and need for temporal-quality evaluation |
+| Music, sound, or TTS | Exact specialist model or service for the required language, style, duration, rights, and latency | Audio-generation model or service | Hosted, local, or hybrid | Separate specialist roles need separate quality, license, and rights validation |
+| Sensitive or private concepts | Local generation plus deterministic checks and independent review | Hybrid media workflow | Local or self-hosted | Keeps private references local and preserves control over storage and provenance |
 
 These are starting routes, not universal rankings. The exact model revision, runtime, precision, dimensions, duration, adapters, provider deployment, and review process are part of the assignment.
 
