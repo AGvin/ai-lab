@@ -7,10 +7,18 @@ Decision-support comparisons for models, tools, workflows, platforms, and AI sys
 - English
 - [Українська](./l10n/uk_UA/)
 
+## Start here
+
+| Need | Open |
+| --- | --- |
+| Choose an AI route from realistic tasks, hardware, budget, skills, and data boundaries | [Practical AI User Scenarios](./sub/model-selection/sub/practical-user-scenarios/) |
+| Compare models for coding, agents, translation, media, speech, or perception | [AI Model Selection and Team Design](./sub/model-selection/) |
+| Compare agent products, orchestration systems, control centers, and adjacent tooling | [Agentic Systems](./sub/agentic-systems/) |
+
 ## Child nodes
 
+- [`model-selection/`](./sub/model-selection/) — table-first task guides, economical SLM views where useful, hosted and local routes, hardware-aware portfolios, agent roles, reliability, and practical user scenarios.
 - [`agentic-systems/`](./sub/agentic-systems/) — cross-category comparison of agents, orchestration systems, coding-agent control centers, and adjacent agentic AI tools.
-- [`model-selection/`](./sub/model-selection/) — task-oriented model selection, portfolio design, agent role assignment, and reliability profiles.
 
 ## Scope
 
