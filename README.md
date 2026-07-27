@@ -15,6 +15,8 @@ This repository is an active public documentation lab. Content is added incremen
 
 ### Start here
 
+- [`model-selection/`](./docs/sub/notes/sub/comparisons/sub/model-selection/) — table-first model and workflow selection by task, hardware, access, quality, privacy, and cost.
+- [`practical-user-scenarios/`](./docs/sub/notes/sub/comparisons/sub/model-selection/sub/practical-user-scenarios/) — concrete starting routes for realistic users, teams, budgets, skills, and data boundaries.
 - [`overview/`](./docs/sub/overview/) — repository documentation model, current layout, asset rules, and expansion guidance.
 - [`disclaimer/`](./docs/sub/disclaimer/) — limitations of repository information, subjective evaluations, warranties, liability, and practical use.
 
