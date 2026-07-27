@@ -55,7 +55,7 @@ Do not infer that mixture-of-experts activation makes the model equivalent to a 
 
 ## Evidence boundary
 
-Architecture, total and active parameter counts, context, license, and published artifact size are provider-documented. The LLM label is a repository comparison convention for the current context. The current 24 GB classification is a planning inference and must not be presented as a benchmarked production fit. Frontier status, ecosystem status, quality, and accepted-result cost remain unassessed.
+Architecture, total and active parameter counts, context, license, and published artifact size were rechecked from the official Qwen3 release and Hugging Face repositories on 2026-07-27. The LLM label is a repository comparison convention for the current context. The current 24 GB classification is a planning inference and must not be presented as a benchmarked production fit. Frontier status, ecosystem status, quality, and accepted-result cost remain unassessed.
 
 ## Related pages
 
@@ -68,5 +68,6 @@ Architecture, total and active parameter counts, context, license, and published
 
 ## Sources
 
-- [Qwen3-30B-A3B model card](https://huggingface.co/Qwen/Qwen3-30B-A3B)
+- [Qwen3 release](https://qwenlm.github.io/blog/qwen3/)
+- [Qwen3-30B-A3B on Hugging Face](https://huggingface.co/Qwen/Qwen3-30B-A3B)
 - [Qwen3-30B-A3B-GGUF repository](https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF)
