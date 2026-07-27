@@ -1,6 +1,6 @@
 # Choosing Models for Coding
 
-Select models for completion, implementation, debugging, review, refactoring, testing, architecture, and repository-scale agentic work.
+Choose the least expensive model and scaffold that reliably reaches the required coding quality tier within bounded retries.
 
 ## Translations
 
@@ -9,147 +9,94 @@ Select models for completion, implementation, debugging, review, refactoring, te
 
 ## Status
 
-Initial guidance verified on 2026-07-24. Model availability, pricing, tools, and benchmark results can change; validate the exact model, scaffold, and repository before adoption.
+Table-first comparison and economical SLM inventory updated on 2026-07-27. Model availability, pricing, artifacts, benchmarks, ecosystem maturity, and task quality can change; validate the exact model and deployment before adoption.
 
-## Start with the coding task
+## Quick picks
 
-Distinguish:
+| Need | First route | Model type | Why start here | Escalate when |
+| --- | --- | --- | --- | --- |
+| Lowest-footprint local coding assistant | [Qwen2.5-Coder 3B Instruct](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen2-5-coder/sub/3b-instruct/) | Coding-specialized instruct model | Compact open-weight baseline for bounded generation, explanations, tests, and small edits | Repeated omissions, weak repository understanding, or multi-step tool work increase review cost |
+| Stronger compact local coding route | [Qwen2.5-Coder 7B Instruct](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen2-5-coder/sub/7b-instruct/) | Coding-specialized instruct model | More capacity than the 3B route while remaining in the SLM comparison group | Architecture, high-risk changes, or autonomous repository work exceed measured reliability |
+| Compact multilingual mixed assistant | [Phi-4 Mini Instruct](../../../../../../../software/sub/models/sub/microsoft/sub/phi/sub/phi-4/sub/mini-instruct/) | General-purpose instruct model with reasoning and coding capability | Useful when coding is combined with multilingual instructions, reasoning, and general assistant work | A coding specialist wins representative tests or the compact route needs repeated correction |
+| Compact multimodal local coding route | [Gemma 4 E4B Instruct](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e4b-instruct/) | General-purpose multimodal instruct model with coding and function calling | Adds image, UI, document, and short-audio context to a compact local coding assistant | Coding-only quality trails a specialist, multimodal runtime support is incomplete, or tool loops are unreliable |
+| Balanced hosted professional coding | [GPT-5.6 Terra](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/terra/) | General-purpose reasoning, coding, and tool-use model | Hosted balance for implementation, debugging, tests, review, and tool-assisted workflows | Difficult architecture, repeated failure, or high consequence justifies a stronger route |
+| Difficult repository-scale or architecture work | [GPT-5.6 Sol](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/sol/) | Flagship general-purpose reasoning and coding model | Capability-first route for complex multi-file, multi-tool, and high-risk work | Use a specialist or independent reviewer when domain or defect risk requires it |
+| Anthropic-centered coding agents | [Claude Sonnet 5](../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/) | General-purpose agentic coding and reasoning model | Natural candidate for Claude Code and Anthropic-compatible tool workflows | Cost, availability, scaffold behavior, or task evidence favors another route |
+| Self-hosted long-horizon coding agent | [Qwen3-Coder-Next](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3-coder/sub/qwen3-coder-next/) | Coding-agent specialist | Open-weight agentic route with long context and explicit tool-work orientation | Infrastructure, memory residency, runtime support, or quality does not justify the 80B MoE model |
 
-- inline completion or short generation;
-- bounded edits in one or several files;
-- debugging from logs, tests, or runtime behavior;
-- repository-scale implementation and refactoring;
-- code review and defect detection;
-- test generation and repair;
-- architecture and migration planning;
-- long-running agentic coding with shell, browser, issue tracker, and repository tools.
+## Economical SLM candidates
 
-The best architecture model may not be the best low-latency completion model. A fast model may still be unsuitable for autonomous changes when it omits requirements, mishandles tools, or reports completion before verification.
+This table contains only [Small Language Models](../../../../../concepts/sub/model-classification/sub/language-model-scale/) in the current AI Lab coding context. SLM is an economy-oriented filter, not proof of lower total cost: measure hardware, hosted price when applicable, throughput, quality, retries, engineer review, and accepted-result cost.
 
-## Required evaluation dimensions
+| Model | Model type | Parameters | [Architecture](../../../../../concepts/sub/model-architectures/sub/dense-and-sparse-architectures/) | Access and license | Best fit | Main limitation | Sources |
+| --- | --- | ---: | --- | --- | --- | --- | --- |
+| [Gemma 4 E2B Instruct](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e2b-instruct/) | General-purpose multimodal instruct with coding and function calling | 2.3B effective; 5.1B including embeddings | Dense | Open-weight; Apache-2.0 | Lowest-footprint multimodal coding experiments, UI or screenshot context, bounded code generation, and edge prototypes | Lowest coding ceiling in this expanded shortlist; exact multimodal runtime and tool behavior need validation | [Official model card](https://ai.google.dev/gemma/docs/core/model_card_4) · [Hugging Face](https://huggingface.co/google/gemma-4-E2B-it) |
+| [Qwen2.5-Coder 3B Instruct](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen2-5-coder/sub/3b-instruct/) | Coding-specialized instruct | 3.09B | Dense | Open-weight; Qwen Research License | Small local assistant, bounded edits, code explanation, test drafts, repetitive transformations | Lowest capability ceiling among the coding-specialized routes; verify instruction retention and repository context | [Official release](https://qwenlm.github.io/blog/qwen2.5-coder-family/) · [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct) |
+| [Phi-4 Mini Instruct](../../../../../../../software/sub/models/sub/microsoft/sub/phi/sub/phi-4/sub/mini-instruct/) | General-purpose instruct with reasoning and coding capability | 3.8B | Dense | Open-weight; MIT | Multilingual mixed workloads, compact reasoning, function-calling experiments, coding plus general assistance | Not coding-specialized; a code model may deliver better accepted-result quality | [Official report](https://www.microsoft.com/en-us/research/publication/phi-4-mini-technical-report-compact-yet-powerful-multimodal-language-models-via-mixture-of-loras/) · [Hugging Face](https://huggingface.co/microsoft/Phi-4-mini-instruct) |
+| [Gemma 4 E4B Instruct](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e4b-instruct/) | General-purpose multimodal instruct with coding and function calling | 4.5B effective; 8B including embeddings | Dense | Open-weight; Apache-2.0 | Stronger compact multimodal coding, document or UI analysis, multilingual assistance, and function-calling experiments | Not coding-specialized; stored parameter size and multimodal components are larger than the effective count suggests | [Official model card](https://ai.google.dev/gemma/docs/core/model_card_4) · [Hugging Face](https://huggingface.co/google/gemma-4-E4B-it) |
+| [Qwen2.5-Coder 7B Instruct](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen2-5-coder/sub/7b-instruct/) | Coding-specialized instruct | 7.61B | Dense | Open-weight; Apache-2.0 | Stronger compact coding assistant, debugging, bounded multi-file changes, tests, and repair | Higher memory and latency than 3B-class routes; still requires human review for repository-scale work | [Official release](https://qwenlm.github.io/blog/qwen2.5-coder-family/) · [Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct) |
 
-### Correctness and acceptance
+Do not mix an LLM into this table because it has a small active-parameter count, a compact quantization, or a low hosted price. For example, Qwen3-Coder-Next remains an LLM with 80B total and 3B active parameters; active parameters do not represent storage or memory residency.
 
-Measure functional correctness, compilation, type checking, linting, tests, regressions, edge cases, security, maintainability, repository conventions, and cost per accepted result.
+## Broader coding candidates
 
-A patch is not complete until relevant checks pass or unresolved limitations are reported explicitly.
+| Model | Model type | [Scale](../../../../../concepts/sub/model-classification/sub/language-model-scale/) | Architecture | Access | Best fit | Main trade-off |
+| --- | --- | --- | --- | --- | --- | --- |
+| [GPT-5.6 Terra](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/terra/) | General-purpose reasoning, coding, multimodal, and tool-use model | Unclear; provider does not publish a parameter-based classification | Undisclosed | Hosted proprietary API | Routine professional implementation, debugging, tests, review, and tool workflows | Usage cost and data exposure; weaker accepted-result quality than a stronger route can erase token savings |
+| [Claude Sonnet 5](../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/) | General-purpose agentic coding and reasoning model | Unclear; provider does not publish a parameter-based classification | Undisclosed | Hosted proprietary API and products | Tool-heavy coding agents, Claude Code, long-context implementation and review | Hosted-only operation, mutable pricing and limits, scaffold-specific behavior |
+| [GPT-5.6 Sol](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/sol/) | Flagship general-purpose reasoning and coding model | Unclear; provider does not publish a parameter-based classification | Undisclosed | Hosted proprietary API | Difficult architecture, complex debugging, repository-scale implementation, and high-consequence work | Highest request price among the listed hosted routes; capability must justify the premium |
+| [Qwen3-Coder-Next](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3-coder/sub/qwen3-coder-next/) | Coding-agent specialist | LLM | Sparse — MoE; 80B total, 3B active | Open-weight; self-hosted | Long-horizon coding agents, complex tool use, private deployment, and runtime control | Large memory residency and infrastructure burden despite low active-parameter count; [technical report](https://github.com/QwenLM/Qwen3-Coder/blob/main/qwen3_coder_next_tech_report.pdf) · [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-Next) |
 
-### Repository understanding
+## Workload view
 
-Evaluate whether the model can locate the right implementation and tests, preserve architecture and conventions, distinguish generated or vendored files, reason across call sites and configuration, update documentation or localization when required, and keep unrelated files out of the diff.
+| Workload | Start with | Required evidence before adoption |
+| --- | --- | --- |
+| Bounded generation, explanation, or test draft | Economical SLM table | Correctness, formatting, latency, review time, and failure rate on representative prompts |
+| Debugging from logs and tests | Qwen2.5-Coder 7B, Phi-4 Mini, Gemma 4 E4B, or a balanced hosted route | Hypothesis revision, evidence use, resistance to invented causes, and test-backed repair |
+| UI, screenshot, or document-assisted coding | Gemma 4 E4B or a validated hosted multimodal route | Visual grounding, small-text recognition, code-context linkage, and protected-data handling |
+| Multi-file implementation | Balanced hosted model or validated stronger local model | Instruction retention, dependency handling, conventions, tests, and clean final diff |
+| Repository-scale refactoring or migration | GPT-5.6 Terra, Claude Sonnet 5, or GPT-5.6 Sol according to risk | Behavior-preservation tests, staging, rollback, architecture consistency, and accepted-result cost |
+| High-risk architecture, security, or repeated failure | GPT-5.6 Sol plus independent review where justified | Explicit threat or failure analysis, verification, regression coverage, and approval boundaries |
+| Self-hosted agentic coding | Qwen3-Coder-Next or another validated agent specialist | Runtime support, tool-call accuracy, memory residency, recovery, stopping behavior, and final-diff verification |
 
-Large context helps only when retrieval, prioritization, and instruction retention remain reliable.
+## Classification and table rules
 
-### Tool and agent reliability
+- **Model type** describes task specialization, such as coding-specialized, general-purpose, reasoning, multimodal, embedding, or reranking. It is independent from scale and architecture.
+- **[SLM or LLM](../../../../../concepts/sub/model-classification/sub/language-model-scale/)** describes relative language-model scale in the stated comparison context, not local versus hosted deployment.
+- **[Dense, sparse, or MoE](../../../../../concepts/sub/model-architectures/sub/dense-and-sparse-architectures/)** describes parameter activation architecture, not quality or hardware fit.
+- For [Mixture of Experts](../../../../../concepts/sub/model-architectures/sub/mixture-of-experts/) models, record total and active parameters separately.
+- [Frontier status](../../../../../concepts/sub/model-classification/sub/frontier-models/) requires current task-scoped evidence and a verification date.
+- [Ecosystem status](../../../../../glossary/#model-ecosystem-status) describes adoption and tooling maturity, not coding quality.
 
-Test shell and patch accuracy, function calls, structured output, recovery from failed checks, bounded retries, final-diff inspection, remote-state verification, and respect for approval boundaries.
+## Decision and escalation rule
 
-Evaluate the complete scaffold: tool schemas, prompts, repository instructions, permissions, runtime, and environment feedback materially affect results.
+Start with the smallest credible route for the required quality tier. Include model or API cost, infrastructure, prompt processing, retries, failed tool actions, engineer review, and regression risk in total cost.
 
-### Framework and language fit
+Escalate when the task exceeds demonstrated capability, repeated attempts fail the same criterion, review finds material omissions or regressions, or architecture and security risk justify a stronger independent route. Do not retry an unsuitable economical model indefinitely.
 
-Use representative work from the actual languages, framework versions, build tools, generated code, legacy patterns, domain APIs, and repository structure. Common-language benchmark strength does not prove quality on a specialized or older stack.
+## Evaluation minimum
 
-## Coding quality tiers
-
-- **Exploration** — feasibility, examples, and rough alternatives; manual review required.
-- **Concept draft** — plans, prototypes, test ideas, and migration sketches not ready to merge.
-- **Working result** — builds or executes, satisfies primary criteria, and passes focused tests.
-- **Production quality** — conventions, regression checks, security where relevant, tests, documentation, and clean diff.
-- **Exceptional quality** — additional architecture, performance, maintainability, security, or UX polish justified by value.
-
-## Candidate routes
-
-These are starting candidates, not universal rankings.
-
-### GPT-5.6 Sol
-
-**Recommendation:** Preferred frontier candidate for difficult repository-scale work, architecture, complex debugging, and long-running agents when accepted-result quality matters more than minimum request price.
-
-Use when work spans many files, tools, or repositories; architecture and implementation must be handled together; or failure cost justifies a flagship route.
-
-Limitations: hosted, paid, provider-moderated, and sensitive to the exact reasoning level, tools, retrieval, and approval scaffold.
-
-Canonical page: [GPT-5.6 Sol](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/sol/).
-
-### GPT-5.6 Terra
-
-**Recommendation:** Preferred balanced candidate for routine professional implementation, debugging, tests, and review when Sol-level capability is not economically justified.
-
-Use a measured escalation policy to Sol for architecture, repeated failure, or high-risk work. Lower token price is not lower accepted-result cost when retries and review increase.
-
-Canonical page: [GPT-5.6 Terra](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/terra/).
-
-### Claude Sonnet 5
-
-**Recommendation:** Preferred balanced candidate for coding-heavy and tool-heavy agents, especially in Claude Code or Anthropic-compatible workflows.
-
-Validate on the actual repository, permissions, terminal and browser tools, prompt-injection boundaries, rate limits, and price snapshot.
-
-Canonical page: [Claude Sonnet 5](../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/).
-
-### Qwen3-Coder
-
-**Recommendation:** Preferred open-model family candidate when self-hosting, inspectability, offline operation, or deployment control matters.
-
-Name the exact version, format, quantization, runtime, context, hardware, and tool template. Family-level claims do not establish the quality of a smaller or quantized artifact.
-
-Canonical pages: [Qwen3-Coder](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3-coder/) and [Qwen3-Coder-Next](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3-coder/sub/qwen3-coder-next/).
-
-## Selection by workload
-
-| Workload | Prioritize |
-| --- | --- |
-| Inline completion | latency, interruption cost, formatting, editor integration |
-| Debugging | evidence use, hypothesis revision, logs, tests, resistance to invented causes |
-| Repository implementation | instruction retention, dependencies, tools, test iteration, final diff |
-| Code review | true-positive value, false-positive burden, severity, independence |
-| Refactoring and migration | behavior-preservation tests, compatibility, staging, rollback |
-| Agentic coding | planning, safe editing, verification, failure recovery, correct stopping |
-
-Use a reviewer independent from the implementation pass when defect cost is material. Reusing the same model with another prompt offers weaker independence and must be labeled accordingly.
-
-## Local deployment and quantization
-
-Record:
-
-- exact base model, artifact, format, and quantization;
-- total and activated parameters for mixture-of-experts models;
-- runtime and prompt or tool template;
-- practical context length;
-- model memory, KV cache, peak RAM and VRAM;
-- prompt-processing and generation throughput;
-- cold-start and reload time;
-- acceptance rate on representative tasks.
-
-Do not treat a quantized artifact as equivalent to the full model without task-specific evidence.
-
-## Recommended evaluation set
-
-Include:
+Test at least:
 
 1. a bounded bug fix with a failing test;
 2. a multi-file feature with explicit criteria;
 3. a behavior-preserving refactor;
 4. a review task with seeded defects;
 5. a framework-specific task;
-6. a documentation or localization change;
-7. a tool-failure recovery scenario;
-8. a final-diff audit for unrelated changes.
+6. a tool-failure recovery scenario;
+7. a final-diff audit for unrelated changes.
 
-Record model version, scaffold, prompts, tools, permissions, reasoning settings, runtime, hardware, and date.
-
-## Decision rule
-
-Choose the least expensive model and scaffold that consistently reaches the required quality tier within bounded retries.
-
-Escalate when the task exceeds demonstrated capability, repeated attempts fail the same criterion, review finds material omissions or regressions, or architecture and security risk justify a stronger independent route.
-
-Do not retry the same unsuitable model indefinitely. Retry cost, engineer review time, and failed tool actions belong in total cost.
+Record the exact model and artifact, model type, scale, architecture, scaffold, prompts, tools, permissions, runtime, hardware, context, date, acceptance rate, and total accepted-result cost.
 
 ## Related pages
 
 - [AI Model Selection and Team Design](../../)
+- [Practical AI User Scenarios](../practical-user-scenarios/)
+- [Model Selection Methodology](../methodology/)
+- [Small and Large Language Models](../../../../../concepts/sub/model-classification/sub/language-model-scale/)
+- [Dense and Sparse Architectures](../../../../../concepts/sub/model-architectures/sub/dense-and-sparse-architectures/)
+- [Mixture of Experts](../../../../../concepts/sub/model-architectures/sub/mixture-of-experts/)
+- [Frontier Models](../../../../../concepts/sub/model-classification/sub/frontier-models/)
 - [Choosing Models for AI Agents](../agents/)
 - [Choosing Models for Orchestration](../orchestration/)
 - [Models](../../../../../../../software/sub/models/)

@@ -2,6 +2,8 @@
 
 A large language model is a neural network trained to model and generate token sequences at substantial scale.
 
+`LLM` is a relative scale classification. The canonical comparison of Small Language Models and Large Language Models is maintained in [Small and Large Language Models](../../../model-classification/sub/language-model-scale/).
+
 ## Translations
 
 - English
@@ -33,10 +35,14 @@ LLMs can hallucinate, mishandle exact calculations, and reproduce training-data 
 - Assuming the model knows current private information.
 - Using an LLM for deterministic tasks without validation.
 - Comparing models only by parameter count.
+- Treating LLM as a synonym for provider-hosted or cluster-only deployment.
+- Reclassifying a quantized LLM as an SLM because its artifact is smaller.
 
 ## Related concepts
 
 - [Foundations and Architecture](../../)
+- [Small and Large Language Models](../../../model-classification/sub/language-model-scale/)
+- [Model Classification](../../../model-classification/)
 - [Transformers](../transformers/)
 - [Tokens and Tokenization](../../../model-usage-and-generation/sub/tokens-and-tokenization/)
 - [Hallucinations](../../../model-usage-and-generation/sub/hallucinations/)

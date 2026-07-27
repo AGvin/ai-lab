@@ -9,9 +9,31 @@ Priority indicates the recommended learning order for a user who primarily consu
 - English
 - [Українська](./l10n/uk_UA/)
 
+## [Model Classification](./sub/model-classification/)
+
+Independent dimensions used to describe model scope, relative scale, capability-frontier position, and ecosystem maturity.
+
+### Essential
+
+- [`language-model-scale/`](./sub/model-classification/sub/language-model-scale/) — Small Language Models and Large Language Models as relative scale classes rather than fixed deployment categories.
+- [`frontier-models/`](./sub/model-classification/sub/frontier-models/) — Time-sensitive, evidence-backed capability-frontier status.
+
+### Related
+
+- [`glossary/`](../glossary/) — Short definitions for ecosystem status, including experimental, emerging, mainstream, and legacy.
+
+## [Model Architectures](./sub/model-architectures/)
+
+Concepts that describe how model computation, components, and parameter activation are organized.
+
+### Essential
+
+- [`dense-and-sparse-architectures/`](./sub/model-architectures/sub/dense-and-sparse-architectures/) — Dense and sparse parameter activation, total parameters, active parameters, memory, and compute implications.
+- [`mixture-of-experts/`](./sub/model-architectures/sub/mixture-of-experts/) — Router-selected expert networks and the operational distinction between total and active parameters.
+
 ## [Foundations and Architecture](./sub/foundations-and-architecture/)
 
-Core concepts that explain what modern AI models are and how their main architectural families relate.
+Legacy mixed grouping retained during the staged documentation redesign. It still owns foundational AI, model-scope, transformer, attention, and encoder-decoder pages that have not yet been assigned to the final structure.
 
 ### Essential
 
@@ -23,7 +45,6 @@ Core concepts that explain what modern AI models are and how their main architec
 
 - [`transformers/`](./sub/foundations-and-architecture/sub/transformers/) — Neural network architectures built around attention and parallel sequence processing.
 - [`attention/`](./sub/foundations-and-architecture/sub/attention/) — A mechanism that weights which input elements are most relevant for a model operation.
-- [`mixture-of-experts/`](./sub/foundations-and-architecture/sub/mixture-of-experts/) — Sparse model architectures that route each input through selected expert components.
 
 ### Specialized
 
@@ -33,7 +54,6 @@ Core concepts that explain what modern AI models are and how their main architec
 - [`neural-networks/`](./sub/foundations-and-architecture/sub/neural-networks/) — Parameterized computational structures composed of connected layers or processing units.
 - [`self-attention/`](./sub/foundations-and-architecture/sub/self-attention/) — Attention computed between positions within the same input sequence.
 - [`encoder-decoder/`](./sub/foundations-and-architecture/sub/encoder-decoder/) — Model structures that encode inputs, generate outputs, or combine both roles.
-- [`dense-and-sparse-models/`](./sub/foundations-and-architecture/sub/dense-and-sparse-models/) — Dense models activate most parameters for each input, while sparse models activate selected subsets.
 
 ## [Model Usage and Generation](./sub/model-usage-and-generation/)
 

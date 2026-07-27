@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:2dba28f3cb725565e42653697ab512f711a89be9
+  source_hash: gitblob:d9e01f5aea9ef518280eb60e15b66af54f9ee3dc
   mode: translated
 -->
 
@@ -61,6 +61,25 @@ Codex підтримує повторно використовувані Agent S
 
 Використовуйте цю product page для Codex-specific evaluation notes замість дублювання повних learning guides.
 
+<!-- doc-anchor: codex-data-safety; target: next-heading -->
+<a id="codex-data-safety"></a>
+## Шлях даних і приватність
+
+Перевірено 2026-07-26.
+
+Codex має кілька surfaces із різними execution boundaries. CLI та IDE workflows можуть читати файли й запускати дозволені commands у локальному environment, але hosted model requests усе одно передають завдання та релевантний context до OpenAI. Cloud tasks Codex виконуються в керованих OpenAI environments і можуть отримувати доступ до repositories та environment configuration, підключених до завдання.
+
+Тому локальне виконання команд або робота з локальними файлами не означає, що inference чи task context залишаються локальними.
+
+Щодо використання даних:
+
+- для індивідуальних планів ChatGPT контент Codex може використовуватися для покращення моделей, якщо відповідні data controls не вимкнені;
+- controls навчання на повних environments Codex є окремими та мають бути перевірені в налаштуваннях Codex;
+- inputs і outputs Business, Enterprise, Edu та API за замовчуванням не використовуються для навчання, якщо придатна organization явно не ввімкне передавання даних;
+- retention, residency, permissions підключених repositories і contractual controls потребують окремого review.
+
+Для чутливих repositories використовуйте погоджений organization account, обмежте доступ до repository й environment, приберіть secrets із доступного context, застосовуйте sandboxing і least privilege та вимагайте review перед commit, push, deployment або іншою зовнішньою дією.
+
 ## Примітки щодо оцінювання
 
 Перед упровадженням оцініть:
@@ -77,3 +96,6 @@ Codex підтримує повторно використовувані Agent S
 
 - Документація OpenAI Codex: https://developers.openai.com/codex
 - Швидкий старт Codex: https://developers.openai.com/codex/quickstart
+- Використання Codex із планом ChatGPT: https://help.openai.com/uk-ua/articles/11369540
+- Налаштування використання даних OpenAI: https://help.openai.com/en/articles/5722486
+- Посібник адміністратора Enterprise для Codex: https://help.openai.com/en/articles/11390924

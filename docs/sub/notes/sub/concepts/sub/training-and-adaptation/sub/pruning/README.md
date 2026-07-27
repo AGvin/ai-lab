@@ -32,6 +32,6 @@ Sparse weights do not guarantee speedup unless the runtime and hardware support 
 ## Related concepts
 
 - [Training and Adaptation](../../)
-- [Dense and Sparse Models](../../../foundations-and-architecture/sub/dense-and-sparse-models/)
+- [Dense and Sparse Architectures](../../../model-architectures/sub/dense-and-sparse-architectures/)
 - [Distillation](../distillation/)
 - [Quantization](../../../inference-and-serving/sub/quantization/)

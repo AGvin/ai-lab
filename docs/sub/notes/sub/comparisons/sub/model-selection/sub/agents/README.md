@@ -7,186 +7,94 @@ Use this guide to shortlist models for tool-using agents, multi-step workflows, 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Status
+**Status:** Shortlist and canonical model identities updated on 2026-07-27. Provider claims, model access, pricing, and behavior change; production adoption requires task-specific evaluation.
 
-Initial shortlist verified on 2026-07-23. Provider claims and model availability can change; production adoption requires task-specific evaluation.
+## Quick picks
 
-## What matters most
+| Need | First candidate | Model type | Scale | Route | Main reason |
+| --- | --- | --- | --- | --- | --- |
+| Maximum hosted capability | [GPT-5.6 Sol](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/sol/) | General-purpose reasoning and agent model | LLM | Hosted | Difficult, long-running professional workflows across coding, research, documents, and computer use |
+| Balanced coding and tool use | [Claude Sonnet 5](../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/) | General-purpose agentic model with strong coding capability | LLM | Hosted | Strong repository, terminal, browser, and professional-work fit without the highest hosted tier |
+| Fast multimodal loops | [Gemini 3.6 Flash](../../../../../../../software/sub/models/sub/google/sub/gemini/sub/gemini-3-6-flash/) | Multimodal general-purpose agent model | LLM | Hosted | Multimodal inputs, native tools, long context, and lower-latency loops |
+| Cost-oriented hosted execution | [DeepSeek V4 Flash](../../../../../../../software/sub/models/sub/deepseek/sub/deepseek-v4/sub/flash/) | General-purpose reasoning and tool-use model | LLM | Hosted | Low token price, tool calls, structured output, and high concurrency |
+| Controlled coding-agent experiment | [Qwen3-Coder-Next](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3-coder/sub/qwen3-coder-next/) | Coding-specialized agent model | LLM | Self-hosted | Open weights, coding-agent focus, long context, and provider independence |
+| Self-hosted multimodal generalist | [Mistral Small 4](../../../../../../../software/sub/models/sub/mistral-ai/sub/mistral-small/sub/mistral-small-4/) | Multimodal general-purpose agent model | LLM | Self-hosted | Apache-2.0, text, image understanding, reasoning, and coding in one model |
 
-Agent quality is not the same as chat quality. Evaluate the complete loop:
+These are starting candidates, not a universal ranking.
 
-- planning and task decomposition;
-- tool selection and argument accuracy;
-- structured-output reliability;
-- recovery after tool or environment failures;
-- context retention during long workflows;
-- unnecessary loops, repeated actions, and token use;
-- compliance with permissions and human approval boundaries;
-- latency and cost across the complete run, not one response.
+## Economical SLM candidates
 
-A model marketed as agentic may still require a strong scaffold, explicit state, bounded retries, and verification steps.
+No SLM currently meets the evidence threshold for a general recommendation as the primary model for long-running, tool-using agent workflows on this page.
 
-## Initial recommendations
+Small models can still be useful as bounded workers, classifiers, routers, extractors, formatters, or multimodal preprocessors. [Gemma 4 E2B](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e2b-instruct/) and [E4B Instruct](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e4b-instruct/) add compact multimodal and function-calling options, but their addition does not establish long-horizon planning, recovery, stopping, or autonomous execution reliability.
 
-### Frontier hosted agents
+Do not promote an SLM to the primary agent role solely because it is inexpensive or fits local hardware. Validate planning, tool selection, argument accuracy, recovery, context retention, stopping behavior, and accepted-result cost on the complete loop.
 
-#### GPT-5.6 Sol
+A sparse model with a low active-parameter count is not automatically an SLM. Classify scale from the canonical model definition rather than active MoE parameters, quantization size, latency, or hosted price.
 
-**Recommendation:** Preferred candidate for difficult, long-running professional agents where maximum capability is more important than lowest cost.
+## Hosted candidates
 
-OpenAI describes GPT-5.6 Sol as its flagship model for complex work across coding, research, cybersecurity, science, computer use, and design. The GPT-5.6 family is available through the OpenAI API, Codex, and selected ChatGPT surfaces.
+| Candidate | Model type | Scale | Best fit | Main limitation | Official evidence |
+| --- | --- | --- | --- | --- | --- |
+| [GPT-5.6 Sol](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/sol/) | General-purpose reasoning and agent model | LLM | Maximum-capability professional agents spanning coding, research, documents, and computer use | Paid hosted access, provider limits, and workflow-specific tool validation | [Launch](https://openai.com/index/gpt-5-6/) · [Availability](https://help.openai.com/en/articles/20001354-gpt-56-in-chatgpt/) |
+| [Claude Sonnet 5](../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/) | General-purpose agentic model with strong coding capability | LLM | Coding-heavy and tool-heavy agents using repositories, terminals, browsers, and knowledge-work tools | Hosted data path, provider moderation, and independent validation of comparative claims | [Announcement](https://www.anthropic.com/news/claude-sonnet-5) |
+| [Gemini 3.6 Flash](../../../../../../../software/sub/models/sub/google/sub/gemini/sub/gemini-3-6-flash/) | Multimodal general-purpose agent model | LLM | Rapid multimodal loops, function calling, structured output, code execution, grounding, and Google integrations | Preview capabilities, changing API behavior, and release monitoring | [Model page](https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash) · [Latest models](https://ai.google.dev/gemini-api/docs/latest-model) |
+| [DeepSeek V4 Flash](../../../../../../../software/sub/models/sub/deepseek/sub/deepseek-v4/sub/flash/) | General-purpose reasoning and tool-use model | LLM | High-volume tool calling and structured output where API cost is a primary constraint | Jurisdiction, data handling, instruction following, and retry cost require explicit evaluation | [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/) |
 
-**Use when:**
+## Open-weight and self-hosted candidates
 
-- the workflow spans coding, research, documents, and computer use;
-- failures are expensive enough to justify a frontier model;
-- configurable reasoning depth is useful;
-- hosted provider safeguards and data handling are acceptable.
+| Candidate | Model type | Scale | Architecture signal | Best fit | Main limitation | Official evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Qwen3-Coder-Next](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3-coder/sub/qwen3-coder-next/) | Coding-specialized agent model | LLM | Sparse MoE; 80B total and 3B active parameters | Controlled coding-agent experiments with local deployment, customization, or provider independence | Memory use depends on artifact, precision, context, and runtime; official claims need scaffold-specific validation | [Technical report](https://github.com/QwenLM/Qwen3-Coder/blob/main/qwen3_coder_next_tech_report.pdf) · [Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-Next) |
+| [Mistral Small 4](../../../../../../../software/sub/models/sub/mistral-ai/sub/mistral-small/sub/mistral-small-4/) | Multimodal general-purpose agent model | LLM | Sparse MoE; 119B total and 6.5B activated per token | Organizations needing one self-hostable model for text, image understanding, reasoning, and agentic coding | Large-model infrastructure and full operator responsibility for safety and reliability | [Official documentation](https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03) · [Hugging Face](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603) |
 
-**Limitations:**
+Open weights do not imply unrestricted use, low deployment cost, or safe autonomous execution.
 
-- paid hosted access;
-- provider moderation and operational limits apply;
-- availability and product-specific access can differ between Sol, Terra, and Luna;
-- verify tool-call behavior in the exact API and agent scaffold.
+## Workload view
 
-Source: [GPT-5.6 launch](https://openai.com/index/gpt-5-6/) and [GPT-5.6 availability](https://help.openai.com/en/articles/20001354-gpt-56-in-chatgpt/).
-
-#### Claude Sonnet 5
-
-**Recommendation:** Preferred balanced candidate for coding-heavy and tool-heavy agents that need strong autonomy without Opus-class cost.
-
-Anthropic presents Sonnet 5 as its most agentic Sonnet model, with planning, browser and terminal tool use, coding, and professional-work capabilities. Anthropic states that its performance is close to Opus 4.8 at a lower price.
-
-**Use when:**
-
-- the agent works primarily with repositories, terminals, browsers, and knowledge-work tools;
-- long-running instruction following and tool use are central;
-- Claude Code or Anthropic-compatible agent infrastructure is already in use.
-
-**Limitations:**
-
-- hosted and provider-moderated;
-- official comparative claims require independent validation on the target workflow;
-- prompt-injection resistance does not remove the need for trust boundaries and least privilege.
-
-Source: [Introducing Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5).
-
-#### Gemini 3.6 Flash
-
-**Recommendation:** Preferred price-performance candidate for rapid agent loops, multimodal inputs, code execution, and native Google tools.
-
-Google documents Gemini 3.6 Flash as a stable model optimized for agentic execution, code generation, multimodal and spatial reasoning. It supports function calling, structured output, code execution, search grounding, file search, and preview computer use with a 1M-token input context.
-
-**Use when:**
-
-- the agent processes text, images, video, audio, PDFs, or mixed inputs;
-- high-frequency tool loops need lower latency and cost than flagship models;
-- Google grounding, file search, or computer-use integrations are useful.
-
-**Limitations:**
-
-- hosted and provider-moderated;
-- computer use remains a preview capability;
-- current Gemini 3.x API behavior differs from earlier generations, including deprecated sampling controls;
-- stable model aliases still need release monitoring.
-
-Source: [Gemini 3.6 Flash model page](https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash) and [latest Gemini models](https://ai.google.dev/gemini-api/docs/latest-model).
-
-### Cost-oriented hosted agents
-
-#### DeepSeek V4 Flash
-
-**Recommendation:** Alternative for high-volume tool-calling and structured-output workloads where API cost is a primary constraint.
-
-DeepSeek documents V4 Flash with thinking and non-thinking modes, a 1M-token context, JSON output, tool calls, and high concurrency.
-
-**Use when:**
-
-- the workflow can tolerate additional validation around tool execution and output quality;
-- cost and throughput dominate the selection;
-- an OpenAI-compatible or Anthropic-compatible API is useful.
-
-**Limitations:**
-
-- hosted provider and jurisdictional considerations require review;
-- low token price does not guarantee lower total workflow cost if retries increase;
-- do not select it without evaluating instruction following, tool-call accuracy, and data-handling requirements.
-
-Source: [DeepSeek models and pricing](https://api-docs.deepseek.com/quick_start/pricing/).
-
-### Open-weight and self-hosted agents
-
-#### Qwen3-Coder-Next
-
-**Recommendation:** Preferred open-weight candidate for local or controlled coding-agent experiments when infrastructure can support the model.
-
-Qwen describes Qwen3-Coder-Next as an open-weight coding-agent model with 80B total parameters, 3B active parameters, 256K context, long-horizon reasoning, complex tool use, and recovery from execution failures.
-
-**Use when:**
-
-- local deployment, customization, or provider independence matters;
-- the main workload is software development;
-- integration with agent CLIs or IDE scaffolds is required.
-
-**Limitations:**
-
-- open weights do not mean unrestricted, unaligned, or inexpensive deployment;
-- practical memory use depends on format, precision, quantization, context, and runtime;
-- official benchmark claims need verification on the chosen quantization and scaffold.
-
-Source: [Qwen3-Coder-Next model card](https://huggingface.co/Qwen/Qwen3-Coder-Next).
-
-#### Mistral Small 4
-
-**Recommendation:** Alternative open model for organizations that need one self-hostable model for text, image understanding, reasoning, and agentic coding.
-
-Mistral Small 4 is released under Apache 2.0 and combines reasoning, multimodal input, general chat, and agentic coding. Mistral documents 119B total parameters with 6B active parameters per token, a 256K context window, and demanding multi-GPU infrastructure recommendations.
-
-**Use when:**
-
-- Apache 2.0 licensing and self-hosting are important;
-- one model must cover general assistance, image input, reasoning, and code;
-- substantial server infrastructure is available.
-
-**Limitations:**
-
-- despite the name, the documented deployment requirement is not small for consumer hardware;
-- local operation requires runtime, quantization, throughput, and context testing;
-- self-hosting shifts moderation, security, observability, and reliability responsibilities to the operator.
-
-Source: [Introducing Mistral Small 4](https://mistral.ai/news/mistral-small-4/).
-
-## Selection table
-
-| Requirement | First candidates | Why |
+| Agent workload | Prefer | Escalate or reject when |
 | --- | --- | --- |
-| Maximum hosted capability | GPT-5.6 Sol, Claude Sonnet 5 | Long-running professional, coding, and tool-heavy work |
-| Fast multimodal agent loops | Gemini 3.6 Flash | Multimodal input, native tools, long context, stable production model |
-| Low-cost hosted execution | DeepSeek V4 Flash | Tool calls, JSON output, long context, high concurrency |
-| Local coding agent | Qwen3-Coder-Next | Open-weight model designed for coding agents and IDE/CLI scaffolds |
-| Self-hosted general multimodal agent | Mistral Small 4 | Apache 2.0, reasoning, images, coding, and general chat |
+| Repository and terminal work | Claude Sonnet 5, GPT-5.6 Sol, or Qwen3-Coder-Next under a controlled scaffold | The model repeatedly misuses tools, skips verification, or cannot recover from execution failures |
+| Browser and computer use | GPT-5.6 Sol or a validated hosted route with explicit computer-use support | The capability is preview-only, the environment cannot be isolated, or approval boundaries are unclear |
+| Multimodal document or media workflows | Gemini 3.6 Flash or another validated multimodal route | Required modalities, file sizes, context, grounding, or data terms are unsupported |
+| High-volume bounded tool loops | Gemini 3.6 Flash or DeepSeek V4 Flash after validation | Retry rate, human correction, or failed actions erase the apparent token-price saving |
+| Private or provider-independent coding agent | Qwen3-Coder-Next on measured infrastructure | Hardware, context, concurrency, or accepted-result quality cannot meet the target |
+| Bounded subagent task | A validated smaller specialist may be used | The task requires long-horizon planning, broad context, destructive actions, or independent judgment |
 
-This table is a shortlist, not a universal ranking.
+## What to measure
 
-## Evaluation protocol
+Agent quality is not chat quality. Evaluate the complete loop:
 
-Run each candidate through the same workflow suite:
+1. planning and task decomposition;
+2. tool selection and argument accuracy;
+3. structured-output reliability;
+4. recovery after tool or environment failures;
+5. context retention during long workflows;
+6. unnecessary loops, repeated actions, and token use;
+7. compliance with permissions and human approval boundaries;
+8. terminal acceptance, wall-clock time, retries, human corrections, and total cost per accepted result.
 
-1. Provide the same tools, permissions, repository snapshot, and initial context.
-2. Measure task completion, human corrections, tool-call errors, retries, wall-clock time, and total tokens.
-3. Include failure cases: missing files, tool timeouts, conflicting instructions, stale documentation, and prompt injection.
-4. Check whether the model verifies its own changes instead of only reporting success.
-5. Repeat with the exact production model version and reasoning configuration.
-6. Record when a cheaper model can act as a subagent while a stronger model handles planning or review.
+Use the same tools, permissions, repository or environment snapshot, initial context, and stopping rules for each candidate. Include missing files, timeouts, conflicting instructions, stale documentation, prompt injection, and failed verification in the evaluation suite.
+
+## Decision and escalation rule
+
+Use the least expensive validated route that consistently reaches the required acceptance tier. A lower token price, smaller active parameter count, local deployment, or open weights are not enough by themselves.
+
+Escalate to a stronger model, different specialist, deterministic validator, or human reviewer when the current assignment repeatedly fails for capability reasons. Retry only failures likely to improve under the same assignment.
 
 ## Safety and operations
 
 Agents that browse, execute code, modify repositories, send messages, or operate accounts need explicit trust boundaries. Use least privilege, sandbox untrusted code, require approval for destructive or external actions, and keep auditable logs. Model safeguards are not a substitute for application-level controls.
 
+A model marketed as agentic still requires explicit state, bounded retries, verification, stopping rules, and resource lifecycle controls.
+
 ## Related guides
 
 - [Coding](../coding/)
 - [Combined Workloads](../combined-workloads/)
+- [Agent Role Selection](../agent-role-selection/)
+- [Reliability Profiles](../reliability-profiles/)
+- [Orchestration](../orchestration/)
 - [Agentic Systems](../../../agentic-systems/)
-- [Model Selection Framework](../../)
+- [Model Selection Methodology](../methodology/)
+- [AI Model Selection and Team Design](../../)

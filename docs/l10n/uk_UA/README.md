@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../../README.md
-  source_hash: gitblob:f9aadbe72d3ea3ed64d595bb5d7facc9103c8522
+  source_hash: gitblob:e01574e222b5fd1a30b38fde68976799873a6067
   mode: translated
 -->
 
@@ -54,7 +54,7 @@ l10n:
     - Корисне
       - [`transformers/`](../../sub/notes/sub/concepts/sub/foundations-and-architecture/sub/transformers/l10n/uk_UA/) — архітектури нейронних мереж, побудовані навколо механізму уваги та паралельної обробки послідовностей.
       - [`attention/`](../../sub/notes/sub/concepts/sub/foundations-and-architecture/sub/attention/l10n/uk_UA/) — механізм, що визначає вагу елементів входу відповідно до їхньої релевантності для операції моделі.
-      - [`mixture-of-experts/`](../../sub/notes/sub/concepts/sub/foundations-and-architecture/sub/mixture-of-experts/l10n/uk_UA/) — розріджені архітектури моделей, що спрямовують кожний вхід через вибрані експертні компоненти.
+      - [`mixture-of-experts/`](../../sub/notes/sub/concepts/sub/model-architectures/sub/mixture-of-experts/l10n/uk_UA/) — розріджена архітектура, що спрямовує кожний вхід через вибрані експертні компоненти.
     - Спеціалізоване
       - [`artificial-intelligence/`](../../sub/notes/sub/concepts/sub/foundations-and-architecture/sub/artificial-intelligence/l10n/uk_UA/) — широка галузь систем, що виконують задачі, пов’язані зі сприйняттям, міркуванням, генерацією або ухваленням рішень.
       - [`machine-learning/`](../../sub/notes/sub/concepts/sub/foundations-and-architecture/sub/machine-learning/l10n/uk_UA/) — методи, що навчаються закономірностей із даних замість використання лише явно запрограмованих правил.
@@ -62,7 +62,7 @@ l10n:
       - [`neural-networks/`](../../sub/notes/sub/concepts/sub/foundations-and-architecture/sub/neural-networks/l10n/uk_UA/) — параметризовані обчислювальні структури, що складаються з пов’язаних шарів або обчислювальних елементів.
       - [`self-attention/`](../../sub/notes/sub/concepts/sub/foundations-and-architecture/sub/self-attention/l10n/uk_UA/) — увага, обчислена між позиціями в межах однієї вхідної послідовності.
       - [`encoder-decoder/`](../../sub/notes/sub/concepts/sub/foundations-and-architecture/sub/encoder-decoder/l10n/uk_UA/) — структури моделей, що кодують входи, генерують виходи або поєднують обидві ролі.
-      - [`dense-and-sparse-models/`](../../sub/notes/sub/concepts/sub/foundations-and-architecture/sub/dense-and-sparse-models/l10n/uk_UA/) — щільні моделі активують більшість параметрів для кожного входу, а розріджені — вибрані підмножини.
+      - [`dense-and-sparse-architectures/`](../../sub/notes/sub/concepts/sub/model-architectures/sub/dense-and-sparse-architectures/l10n/uk_UA/) — щільна й розріджена активація параметрів та її операційні наслідки.
   - [`model-usage-and-generation/`](../../sub/notes/sub/concepts/sub/model-usage-and-generation/l10n/uk_UA/) — поняття для використання навчених моделей через чати, API, застосунки та локальні середовища виконання.
     - Основне
       - [`tokens-and-tokenization/`](../../sub/notes/sub/concepts/sub/model-usage-and-generation/sub/tokens-and-tokenization/l10n/uk_UA/) — поділ входу й виходу на одиниці, які модель читає та генерує.

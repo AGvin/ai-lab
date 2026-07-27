@@ -3,7 +3,7 @@ l10n:
   locale: uk_UA
   source_locale: default
   source_path: ../../README.md
-  source_hash: gitblob:a4a31d3eaa86917a381adbf00b851ef3b7d9cb07
+  source_hash: gitblob:c826dc739050598b9c58acaab1c617c45c33da6c
   mode: translated
 -->
 
@@ -41,6 +41,6 @@ Pruning вилучає ваги, нейрони, attention heads, шари чи 
 ## Пов’язані поняття
 
 - [Навчання й адаптація](../../../../l10n/uk_UA/)
-- [Щільні та розріджені моделі](../../../../../foundations-and-architecture/sub/dense-and-sparse-models/l10n/uk_UA/)
+- [Щільні й розріджені архітектури](../../../../../model-architectures/sub/dense-and-sparse-architectures/l10n/uk_UA/)
 - [Дистиляція](../../../../sub/distillation/l10n/uk_UA/)
 - [Квантування](../../../../../inference-and-serving/sub/quantization/l10n/uk_UA/)

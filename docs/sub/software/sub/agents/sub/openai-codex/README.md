@@ -52,6 +52,25 @@ Codex supports reusable Agent Skills and platform-specific plugins, and it can c
 
 Use this product page for Codex-specific evaluation notes rather than duplicating the full learning guides.
 
+<!-- doc-anchor: codex-data-safety; target: next-heading -->
+<a id="codex-data-safety"></a>
+## Data path and privacy
+
+Verified on 2026-07-26.
+
+Codex has several surfaces with different execution boundaries. CLI and IDE workflows can read files and run approved commands in a local environment, while hosted model requests still send the task and relevant context to OpenAI. Codex cloud tasks run in OpenAI-managed environments and can access the repositories and environment configuration connected to the task.
+
+Local file or command execution therefore does not mean that inference or task context remains local.
+
+For data use:
+
+- individual ChatGPT plans can allow Codex content to be used for model improvement unless the applicable data controls are disabled;
+- Codex full-environment training controls are separate and must be reviewed in Codex settings;
+- Business, Enterprise, Edu, and API inputs and outputs are excluded from training by default unless an eligible organization explicitly opts in;
+- retention, residency, connected-repository permissions, and contractual controls still require separate review.
+
+For sensitive repositories, use the approved organization account, restrict repository and environment access, remove secrets from available context, use sandboxing and least privilege, and require review before commit, push, deployment, or other external action.
+
 ## Evaluation notes
 
 Evaluate before adoption:
@@ -68,3 +87,6 @@ Evaluate before adoption:
 
 - OpenAI Codex documentation: https://developers.openai.com/codex
 - Codex quickstart: https://developers.openai.com/codex/quickstart
+- Using Codex with a ChatGPT plan: https://help.openai.com/en/articles/11369540
+- OpenAI data-use controls: https://help.openai.com/en/articles/5722486
+- Enterprise admin guide for Codex: https://help.openai.com/en/articles/11390924

@@ -11,6 +11,7 @@ Choose an AI model or the smallest practical model portfolio for a concrete task
 
 | Need | Open |
 | --- | --- |
+| Start from a realistic user, hardware, budget, and skill profile | [Practical AI User Scenarios](./sub/practical-user-scenarios/) |
 | Select one model for a bounded task | Use the matching [task guide](#task-guides) |
 | Select models for several connected tasks | [Combined Workloads](./sub/combined-workloads/) |
 | Choose a local model by available GPU memory | [Local Model Selection by VRAM](./sub/local-models-by-vram/) |
@@ -18,7 +19,22 @@ Choose an AI model or the smallest practical model portfolio for a concrete task
 | Define retries, escalation, and unsuitable-task boundaries | [Reliability Profiles](./sub/reliability-profiles/) |
 | Design decomposition, scheduling, and resource control | [Orchestration](./sub/orchestration/) |
 | Understand comparison labels, evidence, and cost accounting | [Model Selection Methodology](./sub/methodology/) |
+| Understand SLM, LLM, frontier, dense, sparse, MoE, and ecosystem labels | [Model Classification](../../../concepts/sub/model-classification/) and [Model Architectures](../../../concepts/sub/model-architectures/) |
 | Inspect canonical provider, family, version, and artifact facts | [Models](../../../../../software/sub/models/) |
+
+## Classification fields
+
+Comparison tables may use the following independent fields when they improve the decision:
+
+| Field | Canonical documentation |
+| --- | --- |
+| Model or AI type: general-purpose, coding, reasoning, multimodal, embedding, reranking, speech, image, or another task role | Canonical model pages under [Models](../../../../../software/sub/models/) and the applicable task guide |
+| Scale class: SLM or LLM | [Small and Large Language Models](../../../concepts/sub/model-classification/sub/language-model-scale/) |
+| Architecture: dense, sparse, or MoE | [Dense and Sparse Architectures](../../../concepts/sub/model-architectures/sub/dense-and-sparse-architectures/) and [Mixture of Experts](../../../concepts/sub/model-architectures/sub/mixture-of-experts/) |
+| Frontier status | [Frontier Models](../../../concepts/sub/model-classification/sub/frontier-models/) |
+| Ecosystem status: experimental, emerging, mainstream, or legacy | [AI Glossary](../../../glossary/#model-ecosystem-status) |
+
+These fields are orthogonal. Do not infer deployment, access, hardware fit, quality, licensing, or safety from one classification label. Link table headings, legends, or the first meaningful use to the canonical concept page instead of repeating complete definitions in each comparison.
 
 ## Fast decision path
 
@@ -77,6 +93,9 @@ Voice cloning, face replacement, impersonation, and other deepfake workflows req
 
 ## Related pages
 
+- [Model Classification](../../../concepts/sub/model-classification/)
+- [Model Architectures](../../../concepts/sub/model-architectures/)
+- [AI Glossary](../../../glossary/)
 - [Model Selection concept](../../../concepts/sub/evaluation-and-operations/sub/model-selection/)
 - [Benchmarks](../../../benchmarks/)
 - [Agentic Systems](../agentic-systems/)
