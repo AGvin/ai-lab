@@ -11,7 +11,7 @@ Select the least expensive validated model, service, deployment, or workflow tha
 
 ## Quick picks
 
-| Need | Start with | AI or model type | Scale | Route | Main reason |
+| Need | Start with | AI or model type | Language-model scale where applicable | Route | Main reason |
 | --- | --- | --- | --- | --- | --- |
 | Lowest-footprint private multimodal draft route | [Gemma 4 E2B Instruct](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e2b-instruct/) | General-purpose multimodal multilingual instruct model | SLM | Local or self-hosted | Compact text, image, and short-audio candidate with official QAT local artifacts |
 | Compact private text-first draft route | [Phi-4 Mini Instruct](../../../../../../../software/sub/models/sub/microsoft/sub/phi/sub/phi-4/sub/mini-instruct/) | General-purpose multilingual instruct model | SLM | Local or self-hosted | Compact, multilingual, MIT-licensed candidate for constrained text workflows |
@@ -19,7 +19,7 @@ Select the least expensive validated model, service, deployment, or workflow tha
 | Stronger local text baseline | [Qwen3 8B](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3/sub/8b/) | General-purpose multilingual reasoning and instruct model | SLM | Local or self-hosted | Open-weight baseline for private preprocessing, drafts, and terminology-aware experiments |
 | High-volume conventional translation | DeepL API, Google Cloud Translation Advanced, or Azure AI Translator | Dedicated translation service | Not applicable | Hosted | Purpose-built language-pair, glossary, document, and batch features |
 | Context-heavy or mixed-content translation | [GPT-5.6 Terra](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/terra/), [Claude Sonnet 5](../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/), or [Gemini 3.6 Flash](../../../../../../../software/sub/models/sub/google/sub/gemini/sub/gemini-3-6-flash/) | General-purpose language or multimodal model | LLM | Hosted | Document context, terminology reasoning, rewriting, review, and mixed-content handling |
-| Production localization | Primary translation route plus deterministic validators and qualified bilingual review | Hybrid workflow | Mixed | Hosted, local, or hybrid | Structural checks, terminology control, escalation, and human approval are separable responsibilities |
+| Production localization | Primary translation route plus deterministic validators and qualified bilingual review | Hybrid workflow | Not applicable | Hosted, local, or hybrid | Structural checks, terminology control, escalation, and human approval are separable responsibilities |
 
 These are starting routes, not universal rankings. Evaluate each language direction and content distribution separately.
 
