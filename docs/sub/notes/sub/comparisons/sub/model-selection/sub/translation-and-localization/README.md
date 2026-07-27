@@ -7,14 +7,16 @@ Select the least expensive validated model, service, deployment, or workflow tha
 - English
 - [Українська](./l10n/uk_UA/)
 
-**Status:** Comparison structure updated on 2026-07-26. Language support, features, prices, terms, and model behavior change; verify the complete assignment before adoption.
+**Status:** Economical local candidates and comparison structure updated on 2026-07-27. Language support, features, prices, terms, and model behavior change; verify the complete assignment before adoption.
 
 ## Quick picks
 
 | Need | Start with | AI or model type | Scale | Route | Main reason |
 | --- | --- | --- | --- | --- | --- |
-| Compact private or offline draft route | [Phi-4 Mini Instruct](../../../../../../../software/sub/models/sub/microsoft/sub/phi/sub/phi-4/sub/mini-instruct/) | General-purpose multilingual instruct model | SLM | Local or self-hosted | Compact, multilingual, MIT-licensed candidate for constrained environments |
-| Stronger local multilingual baseline | [Qwen3 8B](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3/sub/8b/) | General-purpose multilingual reasoning and instruct model | SLM | Local or self-hosted | Open-weight baseline for private preprocessing, drafts, and terminology-aware experiments |
+| Lowest-footprint private multimodal draft route | [Gemma 4 E2B Instruct](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e2b-instruct/) | General-purpose multimodal multilingual instruct model | SLM | Local or self-hosted | Compact text, image, and short-audio candidate with official QAT local artifacts |
+| Compact private text-first draft route | [Phi-4 Mini Instruct](../../../../../../../software/sub/models/sub/microsoft/sub/phi/sub/phi-4/sub/mini-instruct/) | General-purpose multilingual instruct model | SLM | Local or self-hosted | Compact, multilingual, MIT-licensed candidate for constrained text workflows |
+| Stronger compact multimodal local route | [Gemma 4 E4B Instruct](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e4b-instruct/) | General-purpose multimodal multilingual instruct model | SLM | Local or self-hosted | Stronger compact model for mixed text, image, document, and short-audio assignments |
+| Stronger local text baseline | [Qwen3 8B](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3/sub/8b/) | General-purpose multilingual reasoning and instruct model | SLM | Local or self-hosted | Open-weight baseline for private preprocessing, drafts, and terminology-aware experiments |
 | High-volume conventional translation | DeepL API, Google Cloud Translation Advanced, or Azure AI Translator | Dedicated translation service | Not applicable | Hosted | Purpose-built language-pair, glossary, document, and batch features |
 | Context-heavy or mixed-content translation | [GPT-5.6 Terra](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/terra/), [Claude Sonnet 5](../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/), or [Gemini 3.6 Flash](../../../../../../../software/sub/models/sub/google/sub/gemini/sub/gemini-3-6-flash/) | General-purpose language or multimodal model | LLM | Hosted | Document context, terminology reasoning, rewriting, review, and mixed-content handling |
 | Production localization | Primary translation route plus deterministic validators and qualified bilingual review | Hybrid workflow | Mixed | Hosted, local, or hybrid | Structural checks, terminology control, escalation, and human approval are separable responsibilities |
@@ -23,10 +25,12 @@ These are starting routes, not universal rankings. Evaluate each language direct
 
 ## Economical SLM candidates
 
-| Candidate | Model type | Scale | Architecture | Access | Best fit | Main limitation |
-| --- | --- | --- | --- | --- | --- | --- |
-| [Phi-4 Mini Instruct](../../../../../../../software/sub/models/sub/microsoft/sub/phi/sub/phi-4/sub/mini-instruct/) | General-purpose multilingual instruct model | SLM | Dense; 3.8B parameters | Open-weight; MIT | Compact local drafts, terminology-aware experiments, structured assistant workflows, and resource-constrained deployments | Not translation-specialized; quality, directionality, long-document behavior, and hardware fit require exact evaluation |
-| [Qwen3 8B](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3/sub/8b/) | General-purpose multilingual reasoning and instruct model | SLM | Dense; 8.2B total parameters | Open-weight; Apache-2.0 | Private preprocessing, summarization, draft translation, mixed technical content, and a stronger local baseline | Larger local cost than Phi-4 Mini; translation quality and accepted-result cost remain pair- and artifact-specific |
+| Candidate | Model type | Parameters | Architecture | Access | Best fit | Main limitation | Sources |
+| --- | --- | ---: | --- | --- | --- | --- | --- |
+| [Gemma 4 E2B Instruct](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e2b-instruct/) | General-purpose multimodal multilingual instruct model | 2.3B effective; 5.1B including embeddings | Dense | Open-weight; Apache-2.0 | Lowest-footprint private multimodal drafts, image or document context, short audio, and constrained translation experiments | Not translation-specialized; compact quality ceiling, 30-second audio limit, and pair-specific behavior require evaluation | [Official model card](https://ai.google.dev/gemma/docs/core/model_card_4) · [Hugging Face](https://huggingface.co/google/gemma-4-E2B-it) |
+| [Phi-4 Mini Instruct](../../../../../../../software/sub/models/sub/microsoft/sub/phi/sub/phi-4/sub/mini-instruct/) | General-purpose multilingual instruct model | 3.8B | Dense | Open-weight; MIT | Compact local text drafts, terminology-aware experiments, structured assistant workflows, and resource-constrained deployments | Not translation-specialized; quality, directionality, long-document behavior, and hardware fit require exact evaluation | [Official report](https://www.microsoft.com/en-us/research/publication/phi-4-mini-technical-report-compact-yet-powerful-multimodal-language-models-via-mixture-of-loras/) · [Hugging Face](https://huggingface.co/microsoft/Phi-4-mini-instruct) |
+| [Gemma 4 E4B Instruct](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e4b-instruct/) | General-purpose multimodal multilingual instruct model | 4.5B effective; 8B including embeddings | Dense | Open-weight; Apache-2.0 | Stronger compact mixed-content translation, OCR-assisted documents, short speech translation, and local multilingual review experiments | Stored parameter size and multimodal components exceed the effective count; pair and document evidence remain required | [Official model card](https://ai.google.dev/gemma/docs/core/model_card_4) · [Hugging Face](https://huggingface.co/google/gemma-4-E4B-it) |
+| [Qwen3 8B](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3/sub/8b/) | General-purpose multilingual reasoning and instruct model | 8.2B total | Dense | Open-weight; Apache-2.0 | Private preprocessing, summarization, draft translation, mixed technical content, and a stronger text-first local baseline | Larger local cost than smaller SLM routes; translation quality and accepted-result cost remain pair- and artifact-specific | [Official model card](https://huggingface.co/Qwen/Qwen3-8B) · [Official GGUF](https://huggingface.co/Qwen/Qwen3-8B-GGUF) |
 
 SLM is an economy-oriented filter, not proof of lower total cost. A smaller local model can lose its apparent saving through omissions, terminology errors, retries, slow inference, or bilingual correction effort.
 
@@ -54,8 +58,9 @@ A dedicated translation service is not automatically better than a general model
 | UI strings and resource files | Format-aware pipeline with dedicated or general model behind deterministic validators | Placeholders, plural branches, keys, escapes, or length constraints fail |
 | High-volume batch translation | Lowest-cost route that passes a frozen representative suite | Retry, correction, latency, or review cost erases the unit-price advantage |
 | Confidential or offline material | Validated local SLM or approved private deployment | Local quality cannot reach the required tier or hardware latency is unacceptable |
+| Image, scanned document, or short audio translation | Gemma 4 E2B or E4B for bounded local experiments; validated hosted multimodal route for harder work | OCR, layout, audio coverage, language direction, or rendering cannot meet the required tier |
 | High-risk legal, medical, financial, or public material | Approved route plus independent qualified bilingual review | Required expertise, accountability, or human approval is unavailable |
-| Multimodal or mixed-content documents | Validated multimodal hosted route or staged extraction and translation workflow | Required modality, layout, extraction, data boundary, or rendering support is missing |
+| Multimodal or mixed-content documents | Validated multimodal route or staged extraction and translation workflow | Required modality, layout, extraction, data boundary, or rendering support is missing |
 
 ## Define the assignment
 
@@ -163,14 +168,20 @@ Retry, stop, escalation, fallback, evidence, and verified date:
 
 - [AI Model Selection and Team Design](../..)
 - [Coding](../coding/)
+- [Perception and Evaluation](../perception-and-evaluation/)
+- [Speech and Conversation](../speech-and-conversation/)
 - [Combined Workloads](../combined-workloads/)
 - [Reliability Profiles](../reliability-profiles/)
+- [Gemma 4](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/)
 - [Models](../../../../../../../software/sub/models/)
 - [Benchmarks](../../../../../benchmarks/)
 - [General repository disclaimer](../../../../../../../disclaimer/)
 
 ## Sources
 
+- [Gemma 4 model card](https://ai.google.dev/gemma/docs/core/model_card_4)
+- [Gemma 4 E2B Instruct](https://huggingface.co/google/gemma-4-E2B-it)
+- [Gemma 4 E4B Instruct](https://huggingface.co/google/gemma-4-E4B-it)
 - [Unicode CLDR](https://cldr.unicode.org/)
 - [XLIFF 2.2](https://docs.oasis-open.org/xliff/xliff-core/v2.2/cs01/xliff-core-v2.2-cs01-part1.html)
 - [W3C ITS 2.0](https://www.w3.org/TR/its20/)
