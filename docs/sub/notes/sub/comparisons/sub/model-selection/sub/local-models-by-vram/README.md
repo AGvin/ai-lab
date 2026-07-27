@@ -1,19 +1,30 @@
 # Local Model Selection by VRAM
 
-Use available VRAM as an operational constraint, not as a proxy for model quality. This guide defines practical capacity classes and an initial fit matrix for the local artifacts used by the current portfolio profiles.
+Use available VRAM as an operational constraint, not as a proxy for model quality. This guide defines practical capacity classes and planning matrices for exact official local artifacts used by current comparison and portfolio pages.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Status and evidence boundary
+**Status:** Artifact identities and published file sizes verified on 2026-07-27 from official Google and Qwen repositories. Fit labels are planning classifications, not measured benchmarks.
 
-Verified on 2026-07-25 against official GPU specifications and official Qwen GGUF repositories.
+Published model-file size is not peak VRAM. Runtime buffers, KV cache, context length, batching, GPU layers, drivers, graph capture, multimodal projections, encoders, and concurrent services can materially change memory use.
 
-The fit labels below are **planning classifications**, not measured benchmark results. Published model-file size is not peak VRAM. Runtime buffers, KV cache, context length, batching, GPU layers, drivers, graph capture, multimodal components, and concurrent services can materially change memory use.
+Before adoption, measure the exact artifact, runtime, context, batch size, offload policy, modalities, and concurrency on the target machine.
 
-Before adoption, measure the exact artifact, runtime, context, batch size, offload policy, and concurrency on the target machine.
+## Quick starting points
+
+| VRAM class | Starting candidate | Model type | Scale | Published artifact size | Main boundary |
+| ---: | --- | --- | --- | ---: | --- |
+| 8 GB | [Gemma 4 E2B Instruct](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e2b-instruct/) official QAT Q4_0 GGUF | Multimodal general-purpose instruct model | SLM | 3.35 GB model plus 987 MB multimodal projection | Constrained once long context, multimodal processing, or other GPU consumers are included |
+| 12 GB | [Gemma 4 E4B Instruct](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e4b-instruct/) QAT Q4_0 or [Qwen3 8B](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3/sub/8b/) Q4_K_M | Multimodal or text general-purpose instruct model | SLM | 5.15 GB plus 992 MB projection, or 5.03 GB text model | Choose by required modalities and measured accepted-result quality |
+| 16 GB | [Qwen3 14B](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3/sub/14b/) Q4_K_M | General-purpose reasoning and instruct model | LLM | About 9 GB | Practical medium local baseline; context and concurrency still require measurement |
+| 24 GB | Qwen3 14B resident; [Qwen3 30B-A3B](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3/sub/30b-a3b/) Q4_K_M as a sequential candidate | General-purpose dense or MoE language model | LLM | About 9 GB or 18.6 GB | The 30B-A3B route has limited headroom and should not be assumed concurrent with another resident model |
+| 32–48 GB | Qwen3 30B-A3B Q4_K_M or measured higher-precision smaller models | General-purpose MoE language model | LLM | About 18.6 GB | Extra VRAM may be better spent on context, batching, or independent services than a larger model |
+| 96 GB or multi-GPU | Exact large artifact selected from workload evidence | Workload-specific | Varies | Varies | Do not sum VRAM automatically; verify sharding, interconnect, throughput, and failure recovery |
+
+This table provides starting experiments, not universal rankings. A smaller model that requires more retries and correction can cost more per accepted result than a larger route.
 
 ## Capacity classes
 
@@ -33,7 +44,20 @@ The classes reflect materially common consumer and workstation capacities rather
 
 Exact GPU examples are secondary. Runtime support, compute capability, memory bandwidth, interconnect, power, cooling, and software compatibility can make two cards with the same VRAM behave very differently.
 
-## Initial Qwen3 GGUF fit matrix
+## Compact official QAT artifacts
+
+Google publishes official Gemma 4 Quantization-Aware Training Q4_0 GGUF artifacts for local runtimes.
+
+| Artifact | Model type | Scale | Architecture | Model file | Additional component | 8 GB planning fit | 12 GB planning fit |
+| --- | --- | --- | --- | ---: | ---: | --- | --- |
+| [Gemma 4 E2B Instruct QAT Q4_0](https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf) | Multimodal general-purpose instruct model | SLM | Dense; 2.3B effective, 5.1B including embeddings | 3.35 GB | 987 MB multimodal projection | Constrained candidate | Comfortable candidate |
+| [Gemma 4 E4B Instruct QAT Q4_0](https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf) | Multimodal general-purpose instruct model | SLM | Dense; 4.5B effective, 8B including embeddings | 5.15 GB | 992 MB multimodal projection | Highly constrained | Comfortable candidate |
+
+The projection files are required for multimodal use. Text-only runtime behavior and memory may differ, but do not omit required components when evaluating image or audio workflows.
+
+`Comfortable candidate` means only that published files leave materially more nominal memory headroom. It does not establish a safe 128K context, concurrent service capacity, modality throughput, or acceptable task quality.
+
+## Qwen3 GGUF fit matrix
 
 The current portfolio profiles use the official `Q4_K_M` GGUF files below:
 
@@ -59,9 +83,10 @@ The 24 GB class is a distinct recommendation boundary because it includes widely
 
 For the current candidate set:
 
-- Qwen3 14B Q4_K_M is the safer resident generalist starting point;
+- Qwen3 14B Q4_K_M is the safer resident text-generalist starting point;
 - Qwen3 30B-A3B Q4_K_M is a constrained higher-capacity candidate;
 - loading the 30B-A3B artifact should normally be treated as a sequential transition after unloading another resident model;
+- Gemma 4 E2B or E4B can provide a smaller multimodal lane when exact runtime and modality tests pass;
 - image generation, ASR, diarization, or perception services require their own measured memory budget;
 - a successful model load is not evidence that the target context, batching, and concurrent workload are safe.
 
@@ -84,6 +109,7 @@ GPU model and VRAM:
 Driver and runtime:
 Model repository and revision:
 Artifact and quantization:
+Required projection, encoder, or auxiliary files:
 Context and KV-cache configuration:
 Batch size and concurrency:
 GPU layers and CPU offload:
@@ -92,7 +118,7 @@ Peak host RAM:
 Load and warm-up time:
 Time to first token:
 Steady-state throughput:
-Quality and acceptance result:
+Modality and quality acceptance result:
 Failure or out-of-memory boundary:
 Verified:
 ```
@@ -105,7 +131,7 @@ Measure both normal and worst expected requests. Include service restarts, model
 - Preserve at least the runtime and context headroom demonstrated by measurement.
 - Prefer a smaller resident model when model swapping dominates workflow latency.
 - Use partial GPU offload only when the resulting latency and host-RAM use meet the workload threshold.
-- Re-test after runtime, driver, quantization, context, batch, or model revision changes.
+- Re-test after runtime, driver, quantization, context, batch, model revision, or modality changes.
 - Treat multimodal encoders, projectors, diffusion components, and auxiliary services as separate memory consumers.
 - Mark unsupported or unmeasured combinations as `Unknown`, not `Comfortable`.
 
@@ -114,6 +140,7 @@ Measure both normal and worst expected requests. Include service restarts, model
 - [AI Model Selection and Team Design](../..)
 - [Model Selection Methodology](../methodology/)
 - [Concrete Model Portfolio Profiles](../combined-workloads/sub/environment-profiles/)
+- [Gemma 4](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/)
 - [Qwen3](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3/)
 - [Models](../../../../../../../software/sub/models/)
 - [General repository disclaimer](../../../../../../../disclaimer/)
@@ -125,6 +152,9 @@ Measure both normal and worst expected requests. Include service restarts, model
 - [NVIDIA GeForce RTX 5090 specifications](https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/)
 - [NVIDIA RTX PRO 6000 Blackwell specifications](https://www.nvidia.com/en-eu/products/workstations/professional-desktop-gpus/rtx-pro-6000-family/)
 - [AMD Radeon PRO workstation GPU specifications](https://www.amd.com/en/products/graphics/workstations/radeon-pro.html)
+- [Gemma 4 model card](https://ai.google.dev/gemma/docs/core/model_card_4)
+- [Gemma 4 E2B QAT Q4_0 GGUF](https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf)
+- [Gemma 4 E4B QAT Q4_0 GGUF](https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf)
 - [Qwen3-8B-GGUF](https://huggingface.co/Qwen/Qwen3-8B-GGUF)
 - [Qwen3-14B-GGUF](https://huggingface.co/Qwen/Qwen3-14B-GGUF)
 - [Qwen3-30B-A3B-GGUF](https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF)
