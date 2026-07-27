@@ -11,15 +11,15 @@ Select the smallest practical perception and evaluation workflow that reaches th
 
 ## Quick picks
 
-| Need | Start with | AI or model type | Scale | Route | Main reason |
+| Need | Start with | AI or model type | Language-model scale where applicable | Route | Main reason |
 | --- | --- | --- | --- | --- | --- |
 | Compact private multimodal analysis | [Gemma 4 E2B Instruct](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e2b-instruct/) | Multimodal general-purpose instruct model | SLM | Local or self-hosted | Lowest-footprint current canonical route for bounded image, document, UI, and short-audio experiments |
 | Stronger compact local multimodal analysis | [Gemma 4 E4B Instruct](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e4b-instruct/) | Multimodal general-purpose instruct model | SLM | Local or self-hosted | More compact-model capacity while retaining text, image, audio, OCR, document, and function-calling support |
 | Fast hosted multimodal analysis | [Gemini 3.6 Flash](../../../../../../../software/sub/models/sub/google/sub/gemini/sub/gemini-3-6-flash/) | Multimodal general-purpose model | LLM | Hosted | Broad modality support, long context, native tools, and lower-latency loops |
 | High-capability document or screenshot reasoning | [GPT-5.6 Sol](../../../../../../../software/sub/models/sub/openai/sub/gpt/sub/gpt-5-6/sub/sol/) or [Claude Sonnet 5](../../../../../../../software/sub/models/sub/anthropic/sub/claude/sub/sonnet-5/) | General-purpose multimodal reasoning model | LLM | Hosted | Strong reasoning, long-document handling, and complex instruction following |
-| Reproducible extraction | Deterministic OCR, parsers, and exact specialist models | Specialist tools and models | Varies | Local or self-hosted | Provenance, repeatability, and measurable field or region accuracy |
-| Model-based output evaluation | Independent calibrated judge plus deterministic validators | Evaluation workflow | Varies | Hosted, local, or hybrid | One model score is not proof; calibration and independent evidence are required |
-| High-risk acceptance decision | Deterministic checks plus independent model and qualified human review | Hybrid evaluation workflow | Mixed | Hybrid | Separates measurable properties, ambiguous interpretation, and accountable approval |
+| Reproducible extraction | Deterministic OCR, parsers, and exact specialist models | Specialist tools and models | Not applicable | Local or self-hosted | Provenance, repeatability, and measurable field or region accuracy |
+| Model-based output evaluation | Independent calibrated judge plus deterministic validators | Evaluation workflow | Not applicable | Hosted, local, or hybrid | One model score is not proof; calibration and independent evidence are required |
+| High-risk acceptance decision | Deterministic checks plus independent model and qualified human review | Hybrid evaluation workflow | Not applicable | Hybrid | Separates measurable properties, ambiguous interpretation, and accountable approval |
 
 These are starting routes, not universal rankings. The complete modality, sampling, evidence, and judge configuration is part of the evaluated assignment.
 
