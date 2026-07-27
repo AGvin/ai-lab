@@ -51,7 +51,7 @@ On a 24 GB GPU, Qwen3 14B generally offers more operational headroom than the of
 
 ## Evidence boundary
 
-The architecture, parameter count, context, license, and published artifact size are provider-documented. The LLM label is a repository comparison convention for the current context. Deployment fit, role suitability, reliability, frontier status, ecosystem status, and cost per accepted result remain workload-specific and require measurement.
+The architecture, parameter count, context, license, and published artifact size were rechecked from the official Qwen3 release and Hugging Face repositories on 2026-07-27. The LLM label is a repository comparison convention for the current context. Deployment fit, role suitability, reliability, frontier status, ecosystem status, and cost per accepted result remain workload-specific and require measurement.
 
 ## Related pages
 
@@ -63,5 +63,6 @@ The architecture, parameter count, context, license, and published artifact size
 
 ## Sources
 
-- [Qwen3-14B model card](https://huggingface.co/Qwen/Qwen3-14B)
+- [Qwen3 release](https://qwenlm.github.io/blog/qwen3/)
+- [Qwen3-14B on Hugging Face](https://huggingface.co/Qwen/Qwen3-14B)
 - [Qwen3-14B-GGUF repository](https://huggingface.co/Qwen/Qwen3-14B-GGUF)
