@@ -7,7 +7,7 @@ Use this guide to shortlist models for tool-using agents, multi-step workflows, 
 - English
 - [Українська](./l10n/uk_UA/)
 
-**Status:** Shortlist structure updated on 2026-07-26. Provider claims, model access, pricing, and behavior change; production adoption requires task-specific evaluation.
+**Status:** Shortlist and canonical model identities updated on 2026-07-27. Provider claims, model access, pricing, and behavior change; production adoption requires task-specific evaluation.
 
 ## Quick picks
 
@@ -26,7 +26,9 @@ These are starting candidates, not a universal ranking.
 
 No SLM currently meets the evidence threshold for a general recommendation as the primary model for long-running, tool-using agent workflows on this page.
 
-Small models can still be useful as bounded workers, classifiers, routers, extractors, or formatters. Do not promote one to the primary agent role solely because it is inexpensive or fits local hardware. Validate planning, tool selection, argument accuracy, recovery, context retention, stopping behavior, and accepted-result cost on the complete loop.
+Small models can still be useful as bounded workers, classifiers, routers, extractors, formatters, or multimodal preprocessors. [Gemma 4 E2B](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e2b-instruct/) and [E4B Instruct](../../../../../../../software/sub/models/sub/google/sub/gemma/sub/gemma-4/sub/e4b-instruct/) add compact multimodal and function-calling options, but their addition does not establish long-horizon planning, recovery, stopping, or autonomous execution reliability.
+
+Do not promote an SLM to the primary agent role solely because it is inexpensive or fits local hardware. Validate planning, tool selection, argument accuracy, recovery, context retention, stopping behavior, and accepted-result cost on the complete loop.
 
 A sparse model with a low active-parameter count is not automatically an SLM. Classify scale from the canonical model definition rather than active MoE parameters, quantization size, latency, or hosted price.
 
@@ -44,7 +46,7 @@ A sparse model with a low active-parameter count is not automatically an SLM. Cl
 | Candidate | Model type | Scale | Architecture signal | Best fit | Main limitation | Official evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Qwen3-Coder-Next](../../../../../../../software/sub/models/sub/alibaba/sub/qwen/sub/qwen3-coder/sub/qwen3-coder-next/) | Coding-specialized agent model | LLM | Sparse MoE; 80B total and 3B active parameters | Controlled coding-agent experiments with local deployment, customization, or provider independence | Memory use depends on artifact, precision, context, and runtime; official claims need scaffold-specific validation | [Model card](https://huggingface.co/Qwen/Qwen3-Coder-Next) |
-| [Mistral Small 4](../../../../../../../software/sub/models/sub/mistral-ai/sub/mistral-small/sub/mistral-small-4/) | Multimodal general-purpose agent model | LLM | Sparse MoE; 119B total and 6B active parameters | Organizations needing one self-hostable model for text, image understanding, reasoning, and agentic coding | Demanding multi-GPU infrastructure and full operator responsibility for safety and reliability | [Announcement](https://mistral.ai/news/mistral-small-4/) |
+| [Mistral Small 4](../../../../../../../software/sub/models/sub/mistral-ai/sub/mistral-small/sub/mistral-small-4/) | Multimodal general-purpose agent model | LLM | Sparse MoE; 119B total and 6.5B activated per token | Organizations needing one self-hostable model for text, image understanding, reasoning, and agentic coding | Large-model infrastructure and full operator responsibility for safety and reliability | [Official documentation](https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03) · [Hugging Face](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603) |
 
 Open weights do not imply unrestricted use, low deployment cost, or safe autonomous execution.
 
