@@ -42,7 +42,7 @@ The model does not generate thinking blocks and supports only non-thinking mode.
 
 ## Evidence
 
-Artifact metadata, architecture, total and active parameters, context, license, and runtime guidance were verified on 2026-07-25. The LLM label is a repository comparison convention for the current context. Frontier status, ecosystem status, consumer-hardware fit, and task-specific quality remain unassessed.
+Artifact metadata, architecture, total and active parameters, context, license, and runtime guidance were rechecked from the official technical report and model card on 2026-07-27. The LLM label is a repository comparison convention for the current context. Frontier status, ecosystem status, consumer-hardware fit, and task-specific quality remain unassessed.
 
 ## Related pages
 
@@ -55,4 +55,5 @@ Artifact metadata, architecture, total and active parameters, context, license, 
 
 ## Sources
 
-- [Qwen3-Coder-Next model card](https://huggingface.co/Qwen/Qwen3-Coder-Next)
+- [Qwen3-Coder-Next technical report](https://github.com/QwenLM/Qwen3-Coder/blob/main/qwen3_coder_next_tech_report.pdf)
+- [Qwen3-Coder-Next on Hugging Face](https://huggingface.co/Qwen/Qwen3-Coder-Next)
