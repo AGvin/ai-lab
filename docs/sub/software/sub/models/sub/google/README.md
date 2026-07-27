@@ -9,13 +9,14 @@ This node documents canonical AI model families developed or published by Google
 
 ## Provider boundary
 
-Google is the provider; Gemini is a model family. The Gemini API and Google AI Studio are access products, while model codes identify concrete API models.
+Google is the provider. Gemini and Gemma are separate model families. Gemini APIs and Google AI Studio are hosted access products, while Gemma also publishes open-weight artifacts for local and self-hosted deployment.
 
 ## Model families
 
-- [Gemini](./sub/gemini/) — Google's multimodal Gemini model family.
+- [Gemini](./sub/gemini/) — Google's provider-hosted multimodal model family.
+- [Gemma](./sub/gemma/) — Google's open-weight language and multimodal model family for local, edge, self-hosted, and research use.
 
-The family inventory and access naming were verified on 2026-07-25.
+The documented family inventory and access boundaries were verified on 2026-07-27.
 
 ## Related pages
 
@@ -24,3 +25,5 @@ The family inventory and access naming were verified on 2026-07-25.
 ## Sources
 
 - [Gemini 3.6 Flash model documentation](https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash)
+- [Gemma documentation](https://ai.google.dev/gemma/)
+- [Google models on Hugging Face](https://huggingface.co/google)
