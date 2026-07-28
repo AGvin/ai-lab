@@ -1,215 +1,209 @@
 # Documentation Tree
 
-Complete documentation hierarchy with a short description of each listed node.
+Complete hierarchy of the repository documentation.
 
-## Start here
+## Translations
 
-- [`model-selection/`](../notes/sub/comparisons/sub/model-selection/) — table-first model and workflow selection by task, hardware, access, quality, privacy, and cost.
-- [`practical-user-scenarios/`](../notes/sub/comparisons/sub/model-selection/sub/practical-user-scenarios/) — concrete starting routes for realistic users, teams, budgets, skills, and data boundaries.
-- [`overview/`](../overview/) — repository documentation model, current layout, asset rules, and expansion guidance.
-- [`disclaimer/`](../disclaimer/) — limitations of repository information, subjective evaluations, warranties, liability, and practical use.
+- English
+- [Українська](./l10n/uk_UA/)
 
-## Software
+## Tree
 
-- [`software/`](../software/) — AI-related software, development tooling, model platforms, inference tools, agents, automation tools, and executable workflows.
-  - [`development/`](../software/sub/development/) — software used to create, structure, inspect, and review changes in AI-assisted development workflows.
-    - [`code-editors/`](../software/sub/development/sub/code-editors/) — code editors and editor extension ecosystems for AI-assisted development.
-    - [`development-workflows/`](../software/sub/development/sub/development-workflows/) — tools that structure delivery through specifications, plans, tasks, validation, and implementation stages.
-    - [`code-review-tools/`](../software/sub/development/sub/code-review-tools/) — non-agent tools for inspecting, navigating, annotating, and reviewing code changesets.
-  - [`inference/`](../software/sub/inference/) — tools for local or self-hosted model execution.
-  - [`workflow-engines/`](../software/sub/workflow-engines/) — tools that build or execute AI workflows.
-  - [`agents/`](../software/sub/agents/) — agent-like AI systems where agent behavior is the primary documented role.
-  - [`agent-orchestration/`](../software/sub/agent-orchestration/) — systems, frameworks, runtimes, and control planes for coordinating or running AI agents.
-  - [`assistants/`](../software/sub/assistants/) — conversational AI assistants.
-  - [`automation/`](../software/sub/automation/) — automation tools that support AI-adjacent workflows.
-  - [`model-platforms/`](../software/sub/model-platforms/) — platforms for model discovery, hosting, datasets, and related AI tooling.
-  - [`models/`](../software/sub/models/) — model families and individual model artifacts.
-
-## Notes and decision support
-
-- [`notes/`](../notes/) — practical notes, concepts, benchmarks, comparisons, findings, recipes, and glossary material.
-  - [`concepts/`](../notes/sub/concepts/) — practical and foundational AI concepts organized by topic and reading priority.
-    - [`foundations-and-architecture/`](../notes/sub/concepts/sub/foundations-and-architecture/) — core concepts that explain modern AI models and their main architectural families.
-      - Essential
-        - [`foundation-models/`](../notes/sub/concepts/sub/foundations-and-architecture/sub/foundation-models/) — large reusable models trained on broad data and adapted to many downstream tasks.
-        - [`large-language-models/`](../notes/sub/concepts/sub/foundations-and-architecture/sub/large-language-models/) — language-focused foundation models that predict and generate token sequences.
-        - [`multimodal-models/`](../notes/sub/concepts/sub/foundations-and-architecture/sub/multimodal-models/) — models that process or generate more than one modality.
-      - Useful
-        - [`transformers/`](../notes/sub/concepts/sub/foundations-and-architecture/sub/transformers/) — neural network architectures built around attention and parallel sequence processing.
-        - [`attention/`](../notes/sub/concepts/sub/foundations-and-architecture/sub/attention/) — a mechanism that weights which input elements are most relevant for a model operation.
-        - [`mixture-of-experts/`](../notes/sub/concepts/sub/model-architectures/sub/mixture-of-experts/) — a sparse architecture that routes each input through selected expert components.
-      - Specialized
-        - [`artificial-intelligence/`](../notes/sub/concepts/sub/foundations-and-architecture/sub/artificial-intelligence/) — the broad field of systems that perform tasks associated with perception, reasoning, generation, or decision-making.
-        - [`machine-learning/`](../notes/sub/concepts/sub/foundations-and-architecture/sub/machine-learning/) — methods that learn patterns from data instead of relying only on explicitly programmed rules.
-        - [`deep-learning/`](../notes/sub/concepts/sub/foundations-and-architecture/sub/deep-learning/) — machine learning based on neural networks with many processing layers.
-        - [`neural-networks/`](../notes/sub/concepts/sub/foundations-and-architecture/sub/neural-networks/) — parameterized computational structures composed of connected layers or processing units.
-        - [`self-attention/`](../notes/sub/concepts/sub/foundations-and-architecture/sub/self-attention/) — attention computed between positions within the same input sequence.
-        - [`encoder-decoder/`](../notes/sub/concepts/sub/foundations-and-architecture/sub/encoder-decoder/) — model structures that encode inputs, generate outputs, or combine both roles.
-        - [`dense-and-sparse-architectures/`](../notes/sub/concepts/sub/model-architectures/sub/dense-and-sparse-architectures/) — dense and sparse parameter activation and their operational implications.
-    - [`model-usage-and-generation/`](../notes/sub/concepts/sub/model-usage-and-generation/) — concepts for using trained models through chats, APIs, applications, and local runtimes.
-      - Essential
-        - [`tokens-and-tokenization/`](../notes/sub/concepts/sub/model-usage-and-generation/sub/tokens-and-tokenization/) — splitting input and output into the units a model reads and generates.
-        - [`context-window/`](../notes/sub/concepts/sub/model-usage-and-generation/sub/context-window/) — the bounded amount of tokenized information a model can consider during one request.
-        - [`prompting/`](../notes/sub/concepts/sub/model-usage-and-generation/sub/prompting/) — supplying instructions, context, examples, and constraints to guide a model.
-        - [`system-prompts/`](../notes/sub/concepts/sub/model-usage-and-generation/sub/system-prompts/) — high-priority instructions that define an assistant's role, behavior, and boundaries.
-        - [`structured-output/`](../notes/sub/concepts/sub/model-usage-and-generation/sub/structured-output/) — model output constrained to a machine-readable structure.
-        - [`hallucinations/`](../notes/sub/concepts/sub/model-usage-and-generation/sub/hallucinations/) — unsupported or incorrect model output presented in a plausible form.
-      - Useful
-        - [`few-shot-prompting/`](../notes/sub/concepts/sub/model-usage-and-generation/sub/few-shot-prompting/) — prompting that includes examples to demonstrate desired behavior.
-        - [`sampling-parameters/`](../notes/sub/concepts/sub/model-usage-and-generation/sub/sampling-parameters/) — controls such as temperature, top-p, top-k, and seed.
-        - [`reasoning-models/`](../notes/sub/concepts/sub/model-usage-and-generation/sub/reasoning-models/) — models optimized to spend additional computation on multi-step problem solving.
-        - [`model-capabilities-and-limitations/`](../notes/sub/concepts/sub/model-usage-and-generation/sub/model-capabilities-and-limitations/) — practical strengths, boundaries, and failure modes.
-      - Specialized
-        - [`constrained-generation/`](../notes/sub/concepts/sub/model-usage-and-generation/sub/constrained-generation/) — generation restricted by a grammar, schema, token set, or another formal constraint.
-        - [`chain-of-thought/`](../notes/sub/concepts/sub/model-usage-and-generation/sub/chain-of-thought/) — intermediate reasoning text or internal computation used to support multi-step answers.
-    - [`retrieval-and-knowledge/`](../notes/sub/concepts/sub/retrieval-and-knowledge/) — concepts for connecting models to external information and searchable documents.
-      - Essential
-        - [`rag/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/rag/) — Retrieval-Augmented Generation combines external retrieval with model generation.
-        - [`embeddings/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/embeddings/) — numerical representations that place semantically related items near each other.
-        - [`chunking/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/chunking/) — dividing source material into retrievable units.
-        - [`semantic-search/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/semantic-search/) — retrieval based on meaning rather than only exact word matches.
-        - [`hybrid-search/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/hybrid-search/) — retrieval that combines semantic and lexical signals.
-        - [`grounding/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/grounding/) — constraining generated claims to supplied evidence, tools, or authoritative sources.
-      - Useful
-        - [`vector-search/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/vector-search/) — nearest-neighbor retrieval over embedding vectors.
-        - [`vector-databases/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/vector-databases/) — storage and indexing systems optimized for vectors and similarity search.
-        - [`keyword-search/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/keyword-search/) — lexical retrieval based on terms that appear in source text.
-        - [`reranking/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/reranking/) — a second-stage relevance model that reorders retrieved candidates.
-        - [`citations/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/citations/) — references connecting generated statements to supporting sources.
-        - [`metadata-filtering/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/metadata-filtering/) — restricting retrieval by source, date, version, tenant, or policy.
-      - Specialized
-        - [`bm25/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/bm25/) — a probabilistic lexical ranking method.
-        - [`graph-rag/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/graph-rag/) — Retrieval-Augmented Generation using graph structures and relationships.
-        - [`knowledge-graphs/`](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/knowledge-graphs/) — structured representations of entities and their relationships.
-    - [`agents-and-automation/`](../notes/sub/concepts/sub/agents-and-automation/) — concepts for AI systems that plan, use tools, maintain state, and perform controlled actions.
-      - Essential
-        - [`ai-agents/`](../notes/sub/concepts/sub/agents-and-automation/sub/ai-agents/) — AI systems that pursue goals through model decisions, tools, state, and iterative actions.
-        - [`agentic-workflows/`](../notes/sub/concepts/sub/agents-and-automation/sub/agentic-workflows/) — controlled multi-step processes combining model decisions with deterministic workflow logic.
-        - [`tool-calling/`](../notes/sub/concepts/sub/agents-and-automation/sub/tool-calling/) — a model selecting a registered external operation and producing arguments for execution.
-        - [`agent-state/`](../notes/sub/concepts/sub/agents-and-automation/sub/agent-state/) — explicit working data tracking progress, decisions, and intermediate results.
-        - [`agent-memory/`](../notes/sub/concepts/sub/agents-and-automation/sub/agent-memory/) — mechanisms preserving useful information beyond the immediate request.
-        - [`planning/`](../notes/sub/concepts/sub/agents-and-automation/sub/planning/) — selecting and ordering actions needed to reach a goal.
-        - [`verification-and-reflection/`](../notes/sub/concepts/sub/agents-and-automation/sub/verification-and-reflection/) — checking results and revising an approach when needed.
-        - [`human-in-the-loop/`](../notes/sub/concepts/sub/agents-and-automation/sub/human-in-the-loop/) — human review, approval, or intervention at selected points.
-        - [`idempotency/`](../notes/sub/concepts/sub/agents-and-automation/sub/idempotency/) — designing actions so safe repetition does not create duplicate effects.
-        - [`failure-recovery/`](../notes/sub/concepts/sub/agents-and-automation/sub/failure-recovery/) — restoring progress safely after failures.
-      - Useful
-        - [`function-calling/`](../notes/sub/concepts/sub/agents-and-automation/sub/function-calling/) — a structured tool interface where model output selects a function and arguments.
-        - [`agent-skills/`](../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/) — portable procedural knowledge packages loaded when a task requires them.
-          - [`using/`](../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/using/) — install, invoke, update, remove, inspect, and troubleshoot skills.
-          - [`creating/`](../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/creating/) — design and build a skill from a minimal definition through testing and publication.
-          - [`platform-support/`](../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/platform-support/) — compare supported clients and their installation and invocation models.
-          - [`sources/`](../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/sources/) — standards, catalogs, installers, and recommended third-party collections.
-        - [`task-decomposition/`](../notes/sub/concepts/sub/agents-and-automation/sub/task-decomposition/) — breaking a large task into smaller, verifiable units.
-        - [`retries/`](../notes/sub/concepts/sub/agents-and-automation/sub/retries/) — repeating eligible failed operations under bounded rules.
-        - [`autonomy-levels/`](../notes/sub/concepts/sub/agents-and-automation/sub/autonomy-levels/) — the degree of independent decision-making granted to an AI system.
-      - Specialized
-        - [`multi-agent-systems/`](../notes/sub/concepts/sub/agents-and-automation/sub/multi-agent-systems/) — systems in which multiple agents coordinate, compete, review, or specialize.
-    - [`inference-and-serving/`](../notes/sub/concepts/sub/inference-and-serving/) — concepts for running trained models locally or as services.
-      - Essential
-        - [`inference/`](../notes/sub/concepts/sub/inference-and-serving/sub/inference/) — running a trained model to process input and produce output.
-        - [`quantization/`](../notes/sub/concepts/sub/inference-and-serving/sub/quantization/) — reducing numerical precision to lower model memory and compute requirements.
-        - [`numerical-precision/`](../notes/sub/concepts/sub/inference-and-serving/sub/numerical-precision/) — number formats used for weights, activations, and computation.
-        - [`model-formats/`](../notes/sub/concepts/sub/inference-and-serving/sub/model-formats/) — file and serialization formats used to store and load model artifacts.
-        - [`gpu-offloading/`](../notes/sub/concepts/sub/inference-and-serving/sub/gpu-offloading/) — placing selected model computation or layers on a GPU.
-        - [`kv-cache/`](../notes/sub/concepts/sub/inference-and-serving/sub/kv-cache/) — cached attention keys and values reused during autoregressive generation.
-        - [`latency/`](../notes/sub/concepts/sub/inference-and-serving/sub/latency/) — elapsed time required to produce a response.
-        - [`throughput/`](../notes/sub/concepts/sub/inference-and-serving/sub/throughput/) — the amount of model work completed per unit of time.
-        - [`performance-metrics/`](../notes/sub/concepts/sub/inference-and-serving/sub/performance-metrics/) — measurements such as time to first token, tokens per second, latency, and memory use.
-      - Useful
-        - [`model-serving/`](../notes/sub/concepts/sub/inference-and-serving/sub/model-serving/) — exposing inference through a managed process, API, queue, or runtime service.
-        - [`model-loading/`](../notes/sub/concepts/sub/inference-and-serving/sub/model-loading/) — moving model artifacts into RAM, VRAM, or runtime-managed memory.
-        - [`cpu-inference/`](../notes/sub/concepts/sub/inference-and-serving/sub/cpu-inference/) — running model computation primarily on general-purpose processors.
-        - [`gpu-inference/`](../notes/sub/concepts/sub/inference-and-serving/sub/gpu-inference/) — running model computation primarily on graphics processors.
-        - [`context-caching/`](../notes/sub/concepts/sub/inference-and-serving/sub/context-caching/) — reusing previously processed prompt context.
-      - Specialized
-        - [`flash-attention/`](../notes/sub/concepts/sub/inference-and-serving/sub/flash-attention/) — attention implementations optimized for GPU efficiency.
-        - [`continuous-batching/`](../notes/sub/concepts/sub/inference-and-serving/sub/continuous-batching/) — dynamically combining active inference requests.
-        - [`speculative-decoding/`](../notes/sub/concepts/sub/inference-and-serving/sub/speculative-decoding/) — using a faster draft process to propose tokens for verification.
-    - [`training-and-adaptation/`](../notes/sub/concepts/sub/training-and-adaptation/) — concepts for training models or adapting them to tasks and domains.
-      - Essential
-        - [`fine-tuning/`](../notes/sub/concepts/sub/training-and-adaptation/sub/fine-tuning/) — continuing model training on targeted data.
-        - [`parameter-efficient-fine-tuning/`](../notes/sub/concepts/sub/training-and-adaptation/sub/parameter-efficient-fine-tuning/) — adaptation methods that train only a small subset of parameters.
-        - [`lora/`](../notes/sub/concepts/sub/training-and-adaptation/sub/lora/) — Low-Rank Adaptation trains compact low-rank updates.
-        - [`qlora/`](../notes/sub/concepts/sub/training-and-adaptation/sub/qlora/) — LoRA-based adaptation with a quantized base model.
-      - Useful
-        - [`supervised-fine-tuning/`](../notes/sub/concepts/sub/training-and-adaptation/sub/supervised-fine-tuning/) — fine-tuning on labeled input-output examples.
-        - [`adapters/`](../notes/sub/concepts/sub/training-and-adaptation/sub/adapters/) — small trainable modules attached to a base model.
-        - [`instruction-tuning/`](../notes/sub/concepts/sub/training-and-adaptation/sub/instruction-tuning/) — training on instruction-and-response examples.
-        - [`synthetic-data/`](../notes/sub/concepts/sub/training-and-adaptation/sub/synthetic-data/) — training or evaluation data generated by rules, simulations, or models.
-        - [`datasets/`](../notes/sub/concepts/sub/training-and-adaptation/sub/datasets/) — organized collections used for training, adaptation, or evaluation.
-        - [`overfitting/`](../notes/sub/concepts/sub/training-and-adaptation/sub/overfitting/) — fitting training data too closely and performing poorly on new examples.
-      - Specialized
-        - [`pretraining/`](../notes/sub/concepts/sub/training-and-adaptation/sub/pretraining/) — large-scale initial training that creates a broadly capable base model.
-        - [`preference-optimization/`](../notes/sub/concepts/sub/training-and-adaptation/sub/preference-optimization/) — training methods that favor preferred responses.
-        - [`rlhf/`](../notes/sub/concepts/sub/training-and-adaptation/sub/rlhf/) — Reinforcement Learning from Human Feedback.
-        - [`dpo/`](../notes/sub/concepts/sub/training-and-adaptation/sub/dpo/) — Direct Preference Optimization using preferred and rejected response pairs.
-        - [`distillation/`](../notes/sub/concepts/sub/training-and-adaptation/sub/distillation/) — training a smaller model to imitate a stronger teacher.
-        - [`pruning/`](../notes/sub/concepts/sub/training-and-adaptation/sub/pruning/) — removing model parameters or structures judged unnecessary.
-    - [`multimodal-and-generative-media/`](../notes/sub/concepts/sub/multimodal-and-generative-media/) — concepts for models and workflows involving images, audio, video, and multiple modalities.
-      - Essential
-        - [`vision-language-models/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/vision-language-models/) — models that jointly process visual inputs and natural language.
-        - [`image-generation/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/image-generation/) — producing images from text, images, layouts, masks, or other conditioning inputs.
-        - [`diffusion-models/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/diffusion-models/) — generative models that learn to reverse a progressive noising process.
-        - [`image-to-image/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/image-to-image/) — generating a transformed image while conditioning on an existing image.
-        - [`inpainting/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/inpainting/) — regenerating selected masked regions of an image.
-        - [`controlnet/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/controlnet/) — conditioning diffusion models with structural controls.
-        - [`multimodal-context/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/multimodal-context/) — combined text, image, audio, video, or document information available to a request.
-      - Useful
-        - [`text-to-image/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/text-to-image/) — generating images from natural-language descriptions.
-        - [`outpainting/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/outpainting/) — extending an image beyond its original boundaries.
-        - [`image-embeddings/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/image-embeddings/) — vector representations used to compare, retrieve, or classify visual content.
-        - [`speech-to-text/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/speech-to-text/) — converting spoken audio into written text.
-        - [`text-to-speech/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/text-to-speech/) — synthesizing spoken audio from written text.
-        - [`video-generation/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/video-generation/) — producing or transforming sequences of visual frames.
-      - Specialized
-        - [`latent-space/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/latent-space/) — a compressed learned representation used by generative models.
-        - [`audio-generation/`](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/audio-generation/) — producing music, speech, sound effects, or other audio.
-    - [`safety-privacy-and-reliability/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/) — concepts for controlling model behavior, protecting data, and reducing operational risk.
-      - Essential
-        - [`prompt-injection/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/prompt-injection/) — input designed to override or manipulate intended instructions.
-        - [`indirect-prompt-injection/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/indirect-prompt-injection/) — malicious or conflicting instructions embedded in external content.
-        - [`trust-boundaries/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/trust-boundaries/) — separation between trusted instructions, systems, users, and untrusted data.
-        - [`least-privilege/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/least-privilege/) — granting only the permissions required for the current task.
-        - [`sandboxing/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/sandboxing/) — isolating execution so failures or malicious behavior have limited impact.
-        - [`secret-handling/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/secret-handling/) — protecting credentials, tokens, keys, and other sensitive data.
-        - [`data-privacy/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/data-privacy/) — controlling how sensitive data is collected, processed, retained, and shared.
-        - [`retrieval-poisoning/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/retrieval-poisoning/) — manipulating indexed knowledge so retrieval supplies misleading context.
-      - Useful
-        - [`guardrails/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/guardrails/) — controls that validate, restrict, or monitor model inputs, outputs, and actions.
-        - [`data-residency/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/data-residency/) — the geographic or jurisdictional location where data is stored or processed.
-        - [`provenance/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/provenance/) — information about the origin, ownership, transformation, and custody of data or artifacts.
-        - [`content-moderation/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/content-moderation/) — detecting or restricting content according to policies.
-      - Specialized
-        - [`jailbreaking/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/jailbreaking/) — attempts to bypass configured safety or policy constraints.
-        - [`model-alignment/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/model-alignment/) — shaping model behavior toward intended goals, values, or policies.
-        - [`data-poisoning/`](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/data-poisoning/) — corrupting training or adaptation data to degrade or manipulate behavior.
-    - [`evaluation-and-operations/`](../notes/sub/concepts/sub/evaluation-and-operations/) — concepts for selecting, testing, observing, and operating AI systems.
-      - Essential
-        - [`evals/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/evals/) — repeatable tests that measure whether a model or system meets defined requirements.
-        - [`model-selection/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/model-selection/) — choosing a model based on quality, capabilities, cost, latency, safety, and deployment constraints.
-        - [`model-routing/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/model-routing/) — selecting among models dynamically according to the request or operating policy.
-        - [`observability/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/observability/) — using logs, metrics, traces, and events to understand system behavior.
-        - [`tracing/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/tracing/) — recording the sequence of model, tool, retrieval, and workflow operations.
-        - [`cost-management/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/cost-management/) — measuring and controlling model, infrastructure, storage, and tool expenses.
-        - [`latency-and-throughput/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/latency-and-throughput/) — balancing response time against completed work.
-        - [`quality-cost-tradeoffs/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/quality-cost-tradeoffs/) — choosing an acceptable balance between output quality and expense.
-      - Useful
-        - [`benchmarks/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/benchmarks/) — standardized tasks or datasets used to compare models or systems.
-        - [`evaluation-datasets/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/evaluation-datasets/) — curated examples used to test quality, safety, retrieval, or task performance.
-        - [`human-evaluation/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/human-evaluation/) — people assessing outputs against explicit criteria.
-        - [`fallback-models/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/fallback-models/) — alternative models used when the preferred model fails or is unavailable.
-        - [`caching/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/caching/) — reusing prior results or processed data to reduce repeated work.
-        - [`rate-limits/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/rate-limits/) — controls that restrict request volume over a period of time.
-      - Specialized
-        - [`llm-as-a-judge/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/llm-as-a-judge/) — using a language model to score, rank, or critique other outputs.
-        - [`retrieval-evaluation/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/retrieval-evaluation/) — measuring whether retrieval returns relevant, complete, and correctly ranked evidence.
-        - [`reproducibility/`](../notes/sub/concepts/sub/evaluation-and-operations/sub/reproducibility/) — the ability to repeat an evaluation or workflow under comparable conditions.
-  - [`benchmarks/`](../notes/sub/benchmarks/) — benchmark and leaderboard references for evaluating models, providers, and AI systems.
-  - [`comparisons/`](../notes/sub/comparisons/) — decision-support comparisons across models, tools, workflows, platforms, and AI systems.
-
-## Repository information
-
-- [`documentation-catalog/`](../documentation-catalog/) — broader, human-oriented descriptions of the main documentation areas.
-- [`overview/`](../overview/) — repository documentation structure and maintenance guidance.
-- [`disclaimer/`](../disclaimer/) — repository-specific limitations and practical-use guidance.
+- [← AI Lab](../../../)
+  - [Documentation Catalog](../documentation-catalog/)
+  - Documentation Tree
+  - [Overview](../overview/)
+  - [Disclaimer](../disclaimer/)
+  - [Software](../software/)
+    - [Development](../software/sub/development/)
+      - [Code Editors](../software/sub/development/sub/code-editors/)
+      - [Development Workflows](../software/sub/development/sub/development-workflows/)
+      - [Code Review Tools](../software/sub/development/sub/code-review-tools/)
+    - [Inference](../software/sub/inference/)
+    - [Workflow Engines](../software/sub/workflow-engines/)
+    - [Agents](../software/sub/agents/)
+    - [Agent Orchestration](../software/sub/agent-orchestration/)
+    - [Assistants](../software/sub/assistants/)
+    - [Automation](../software/sub/automation/)
+    - [Model Platforms](../software/sub/model-platforms/)
+    - [Models](../software/sub/models/)
+  - [Notes](../notes/)
+    - [Concepts](../notes/sub/concepts/)
+      - [Foundations and Architecture](../notes/sub/concepts/sub/foundations-and-architecture/)
+        - Essential
+          - [Foundation Models](../notes/sub/concepts/sub/foundations-and-architecture/sub/foundation-models/)
+          - [Large Language Models](../notes/sub/concepts/sub/foundations-and-architecture/sub/large-language-models/)
+          - [Multimodal Models](../notes/sub/concepts/sub/foundations-and-architecture/sub/multimodal-models/)
+        - Useful
+          - [Transformers](../notes/sub/concepts/sub/foundations-and-architecture/sub/transformers/)
+          - [Attention](../notes/sub/concepts/sub/foundations-and-architecture/sub/attention/)
+          - [Mixture of Experts](../notes/sub/concepts/sub/model-architectures/sub/mixture-of-experts/)
+        - Specialized
+          - [Artificial Intelligence](../notes/sub/concepts/sub/foundations-and-architecture/sub/artificial-intelligence/)
+          - [Machine Learning](../notes/sub/concepts/sub/foundations-and-architecture/sub/machine-learning/)
+          - [Deep Learning](../notes/sub/concepts/sub/foundations-and-architecture/sub/deep-learning/)
+          - [Neural Networks](../notes/sub/concepts/sub/foundations-and-architecture/sub/neural-networks/)
+          - [Self-Attention](../notes/sub/concepts/sub/foundations-and-architecture/sub/self-attention/)
+          - [Encoder-Decoder](../notes/sub/concepts/sub/foundations-and-architecture/sub/encoder-decoder/)
+          - [Dense and Sparse Architectures](../notes/sub/concepts/sub/model-architectures/sub/dense-and-sparse-architectures/)
+      - [Model Usage and Generation](../notes/sub/concepts/sub/model-usage-and-generation/)
+        - Essential
+          - [Tokens and Tokenization](../notes/sub/concepts/sub/model-usage-and-generation/sub/tokens-and-tokenization/)
+          - [Context Window](../notes/sub/concepts/sub/model-usage-and-generation/sub/context-window/)
+          - [Prompting](../notes/sub/concepts/sub/model-usage-and-generation/sub/prompting/)
+          - [System Prompts](../notes/sub/concepts/sub/model-usage-and-generation/sub/system-prompts/)
+          - [Structured Output](../notes/sub/concepts/sub/model-usage-and-generation/sub/structured-output/)
+          - [Hallucinations](../notes/sub/concepts/sub/model-usage-and-generation/sub/hallucinations/)
+        - Useful
+          - [Few-Shot Prompting](../notes/sub/concepts/sub/model-usage-and-generation/sub/few-shot-prompting/)
+          - [Sampling Parameters](../notes/sub/concepts/sub/model-usage-and-generation/sub/sampling-parameters/)
+          - [Reasoning Models](../notes/sub/concepts/sub/model-usage-and-generation/sub/reasoning-models/)
+          - [Model Capabilities and Limitations](../notes/sub/concepts/sub/model-usage-and-generation/sub/model-capabilities-and-limitations/)
+        - Specialized
+          - [Constrained Generation](../notes/sub/concepts/sub/model-usage-and-generation/sub/constrained-generation/)
+          - [Chain of Thought](../notes/sub/concepts/sub/model-usage-and-generation/sub/chain-of-thought/)
+      - [Retrieval and Knowledge](../notes/sub/concepts/sub/retrieval-and-knowledge/)
+        - Essential
+          - [RAG](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/rag/)
+          - [Embeddings](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/embeddings/)
+          - [Chunking](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/chunking/)
+          - [Semantic Search](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/semantic-search/)
+          - [Hybrid Search](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/hybrid-search/)
+          - [Grounding](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/grounding/)
+        - Useful
+          - [Vector Search](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/vector-search/)
+          - [Vector Databases](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/vector-databases/)
+          - [Keyword Search](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/keyword-search/)
+          - [Reranking](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/reranking/)
+          - [Citations](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/citations/)
+          - [Metadata Filtering](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/metadata-filtering/)
+        - Specialized
+          - [BM25](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/bm25/)
+          - [Graph RAG](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/graph-rag/)
+          - [Knowledge Graphs](../notes/sub/concepts/sub/retrieval-and-knowledge/sub/knowledge-graphs/)
+      - [Agents and Automation](../notes/sub/concepts/sub/agents-and-automation/)
+        - Essential
+          - [AI Agents](../notes/sub/concepts/sub/agents-and-automation/sub/ai-agents/)
+          - [Agentic Workflows](../notes/sub/concepts/sub/agents-and-automation/sub/agentic-workflows/)
+          - [Tool Calling](../notes/sub/concepts/sub/agents-and-automation/sub/tool-calling/)
+          - [Agent State](../notes/sub/concepts/sub/agents-and-automation/sub/agent-state/)
+          - [Agent Memory](../notes/sub/concepts/sub/agents-and-automation/sub/agent-memory/)
+          - [Planning](../notes/sub/concepts/sub/agents-and-automation/sub/planning/)
+          - [Verification and Reflection](../notes/sub/concepts/sub/agents-and-automation/sub/verification-and-reflection/)
+          - [Human in the Loop](../notes/sub/concepts/sub/agents-and-automation/sub/human-in-the-loop/)
+          - [Idempotency](../notes/sub/concepts/sub/agents-and-automation/sub/idempotency/)
+          - [Failure Recovery](../notes/sub/concepts/sub/agents-and-automation/sub/failure-recovery/)
+        - Useful
+          - [Function Calling](../notes/sub/concepts/sub/agents-and-automation/sub/function-calling/)
+          - [Agent Skills](../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/)
+            - [Using](../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/using/)
+            - [Creating](../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/creating/)
+            - [Platform Support](../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/platform-support/)
+            - [Sources](../notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/sources/)
+          - [Task Decomposition](../notes/sub/concepts/sub/agents-and-automation/sub/task-decomposition/)
+          - [Retries](../notes/sub/concepts/sub/agents-and-automation/sub/retries/)
+          - [Autonomy Levels](../notes/sub/concepts/sub/agents-and-automation/sub/autonomy-levels/)
+        - Specialized
+          - [Multi-Agent Systems](../notes/sub/concepts/sub/agents-and-automation/sub/multi-agent-systems/)
+      - [Inference and Serving](../notes/sub/concepts/sub/inference-and-serving/)
+        - Essential
+          - [Inference](../notes/sub/concepts/sub/inference-and-serving/sub/inference/)
+          - [Quantization](../notes/sub/concepts/sub/inference-and-serving/sub/quantization/)
+          - [Numerical Precision](../notes/sub/concepts/sub/inference-and-serving/sub/numerical-precision/)
+          - [Model Formats](../notes/sub/concepts/sub/inference-and-serving/sub/model-formats/)
+          - [GPU Offloading](../notes/sub/concepts/sub/inference-and-serving/sub/gpu-offloading/)
+          - [KV Cache](../notes/sub/concepts/sub/inference-and-serving/sub/kv-cache/)
+          - [Latency](../notes/sub/concepts/sub/inference-and-serving/sub/latency/)
+          - [Throughput](../notes/sub/concepts/sub/inference-and-serving/sub/throughput/)
+          - [Performance Metrics](../notes/sub/concepts/sub/inference-and-serving/sub/performance-metrics/)
+        - Useful
+          - [Model Serving](../notes/sub/concepts/sub/inference-and-serving/sub/model-serving/)
+          - [Model Loading](../notes/sub/concepts/sub/inference-and-serving/sub/model-loading/)
+          - [CPU Inference](../notes/sub/concepts/sub/inference-and-serving/sub/cpu-inference/)
+          - [GPU Inference](../notes/sub/concepts/sub/inference-and-serving/sub/gpu-inference/)
+          - [Context Caching](../notes/sub/concepts/sub/inference-and-serving/sub/context-caching/)
+        - Specialized
+          - [Flash Attention](../notes/sub/concepts/sub/inference-and-serving/sub/flash-attention/)
+          - [Continuous Batching](../notes/sub/concepts/sub/inference-and-serving/sub/continuous-batching/)
+          - [Speculative Decoding](../notes/sub/concepts/sub/inference-and-serving/sub/speculative-decoding/)
+      - [Training and Adaptation](../notes/sub/concepts/sub/training-and-adaptation/)
+        - Essential
+          - [Fine-Tuning](../notes/sub/concepts/sub/training-and-adaptation/sub/fine-tuning/)
+          - [Parameter-Efficient Fine-Tuning](../notes/sub/concepts/sub/training-and-adaptation/sub/parameter-efficient-fine-tuning/)
+          - [LoRA](../notes/sub/concepts/sub/training-and-adaptation/sub/lora/)
+          - [QLoRA](../notes/sub/concepts/sub/training-and-adaptation/sub/qlora/)
+        - Useful
+          - [Supervised Fine-Tuning](../notes/sub/concepts/sub/training-and-adaptation/sub/supervised-fine-tuning/)
+          - [Adapters](../notes/sub/concepts/sub/training-and-adaptation/sub/adapters/)
+          - [Instruction Tuning](../notes/sub/concepts/sub/training-and-adaptation/sub/instruction-tuning/)
+          - [Synthetic Data](../notes/sub/concepts/sub/training-and-adaptation/sub/synthetic-data/)
+          - [Datasets](../notes/sub/concepts/sub/training-and-adaptation/sub/datasets/)
+          - [Overfitting](../notes/sub/concepts/sub/training-and-adaptation/sub/overfitting/)
+        - Specialized
+          - [Pretraining](../notes/sub/concepts/sub/training-and-adaptation/sub/pretraining/)
+          - [Preference Optimization](../notes/sub/concepts/sub/training-and-adaptation/sub/preference-optimization/)
+          - [RLHF](../notes/sub/concepts/sub/training-and-adaptation/sub/rlhf/)
+          - [DPO](../notes/sub/concepts/sub/training-and-adaptation/sub/dpo/)
+          - [Distillation](../notes/sub/concepts/sub/training-and-adaptation/sub/distillation/)
+          - [Pruning](../notes/sub/concepts/sub/training-and-adaptation/sub/pruning/)
+      - [Multimodal and Generative Media](../notes/sub/concepts/sub/multimodal-and-generative-media/)
+        - Essential
+          - [Vision-Language Models](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/vision-language-models/)
+          - [Image Generation](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/image-generation/)
+          - [Diffusion Models](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/diffusion-models/)
+          - [Image to Image](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/image-to-image/)
+          - [Inpainting](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/inpainting/)
+          - [ControlNet](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/controlnet/)
+          - [Multimodal Context](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/multimodal-context/)
+        - Useful
+          - [Text to Image](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/text-to-image/)
+          - [Outpainting](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/outpainting/)
+          - [Image Embeddings](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/image-embeddings/)
+          - [Speech to Text](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/speech-to-text/)
+          - [Text to Speech](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/text-to-speech/)
+          - [Video Generation](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/video-generation/)
+        - Specialized
+          - [Latent Space](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/latent-space/)
+          - [Audio Generation](../notes/sub/concepts/sub/multimodal-and-generative-media/sub/audio-generation/)
+      - [Safety, Privacy, and Reliability](../notes/sub/concepts/sub/safety-privacy-and-reliability/)
+        - Essential
+          - [Prompt Injection](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/prompt-injection/)
+          - [Indirect Prompt Injection](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/indirect-prompt-injection/)
+          - [Trust Boundaries](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/trust-boundaries/)
+          - [Least Privilege](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/least-privilege/)
+          - [Sandboxing](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/sandboxing/)
+          - [Secret Handling](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/secret-handling/)
+          - [Data Privacy](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/data-privacy/)
+          - [Retrieval Poisoning](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/retrieval-poisoning/)
+        - Useful
+          - [Guardrails](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/guardrails/)
+          - [Data Residency](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/data-residency/)
+          - [Provenance](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/provenance/)
+          - [Content Moderation](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/content-moderation/)
+        - Specialized
+          - [Jailbreaking](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/jailbreaking/)
+          - [Model Alignment](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/model-alignment/)
+          - [Data Poisoning](../notes/sub/concepts/sub/safety-privacy-and-reliability/sub/data-poisoning/)
+      - [Evaluation and Operations](../notes/sub/concepts/sub/evaluation-and-operations/)
+        - Essential
+          - [Evals](../notes/sub/concepts/sub/evaluation-and-operations/sub/evals/)
+          - [Model Selection](../notes/sub/concepts/sub/evaluation-and-operations/sub/model-selection/)
+          - [Model Routing](../notes/sub/concepts/sub/evaluation-and-operations/sub/model-routing/)
+          - [Observability](../notes/sub/concepts/sub/evaluation-and-operations/sub/observability/)
+          - [Tracing](../notes/sub/concepts/sub/evaluation-and-operations/sub/tracing/)
+          - [Cost Management](../notes/sub/concepts/sub/evaluation-and-operations/sub/cost-management/)
+          - [Latency and Throughput](../notes/sub/concepts/sub/evaluation-and-operations/sub/latency-and-throughput/)
+          - [Quality-Cost Trade-Offs](../notes/sub/concepts/sub/evaluation-and-operations/sub/quality-cost-tradeoffs/)
+        - Useful
+          - [Benchmarks](../notes/sub/concepts/sub/evaluation-and-operations/sub/benchmarks/)
+          - [Evaluation Datasets](../notes/sub/concepts/sub/evaluation-and-operations/sub/evaluation-datasets/)
+          - [Human Evaluation](../notes/sub/concepts/sub/evaluation-and-operations/sub/human-evaluation/)
+          - [Fallback Models](../notes/sub/concepts/sub/evaluation-and-operations/sub/fallback-models/)
+          - [Caching](../notes/sub/concepts/sub/evaluation-and-operations/sub/caching/)
+          - [Rate Limits](../notes/sub/concepts/sub/evaluation-and-operations/sub/rate-limits/)
+        - Specialized
+          - [LLM as a Judge](../notes/sub/concepts/sub/evaluation-and-operations/sub/llm-as-a-judge/)
+          - [Retrieval Evaluation](../notes/sub/concepts/sub/evaluation-and-operations/sub/retrieval-evaluation/)
+          - [Reproducibility](../notes/sub/concepts/sub/evaluation-and-operations/sub/reproducibility/)
+    - [Benchmarks](../notes/sub/benchmarks/)
+    - [Comparisons](../notes/sub/comparisons/)
