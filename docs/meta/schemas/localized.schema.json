@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "localized.schema.json",
+  "title": "Localized documentation metadata",
+  "description": "Validates localized metadata containing only the source content hash.",
+  "allOf": [
+    {
+      "$ref": "./default.schema.json#/$defs/metadata_document"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "node": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "localization"
+          ],
+          "properties": {
+            "localization": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "source_hash"
+              ],
+              "properties": {
+                "source_hash": {
+                  "$ref": "./default.schema.json#/$defs/source_hash"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
