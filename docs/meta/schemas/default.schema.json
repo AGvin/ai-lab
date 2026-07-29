@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "default.schema.json",
+  "title": "Default documentation metadata",
+  "description": "Base schema and reusable definitions for default-locale documentation-node metadata.",
+  "$defs": {
+    "metadata_document": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node"
+      ],
+      "properties": {
+        "node": {
+          "type": "object"
+        }
+      }
+    },
+    "schema_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "template_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "locale_id": {
+      "type": "string",
+      "pattern": "^[a-z]{2}_[A-Z]{2}$"
+    },
+    "source_hash": {
+      "type": "string",
+      "oneOf": [
+        {
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        {
+          "pattern": "^gitblob:[0-9a-f]{40}$"
+        }
+      ]
+    },
+    "node_common": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "$ref": "#/$defs/schema_id"
+        },
+        "template": {
+          "$ref": "#/$defs/template_id"
+        }
+      }
+    },
+    "default_localization": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "$ref": "#/$defs/schema_id"
+        },
+        "disabled": {
+          "const": true
+        }
+      },
+      "minProperties": 1
+    },
+    "default_node_open": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/node_common"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "children": {
+              "$ref": "#/$defs/default_node"
+            },
+            "localization": {
+              "$ref": "#/$defs/default_localization"
+            }
+          }
+        }
+      ]
+    },
+    "default_node": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/default_node_open"
+        }
+      ],
+      "unevaluatedProperties": false,
+      "minProperties": 1
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/$defs/metadata_document"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "node": {
+          "$ref": "#/$defs/default_node"
+        }
+      }
+    }
+  ]
+}
