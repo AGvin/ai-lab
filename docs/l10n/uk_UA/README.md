@@ -1,12 +1,3 @@
-<!--
-l10n:
-  locale: uk_UA
-  source_locale: default
-  source_path: ../../../README.md
-  source_hash: gitblob:e01574e222b5fd1a30b38fde68976799873a6067
-  mode: translated
--->
-
 # AI Lab
 
 Практична лабораторія ШІ для моделей, інструментів, локального інференсу, бенчмарків, нотаток про обладнання та робочих процесів автоматизації.
