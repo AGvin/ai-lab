@@ -13,15 +13,27 @@ AI Lab is a public, continuously evolving knowledge base for practical AI work. 
 
 ## Documentation
 
-- [`Catalog`](./docs/sub/documentation-catalog/) — Browse topics with section summaries.
-- [`Tree`](./docs/sub/documentation-tree/) — View the full documentation hierarchy.
+- [`Catalog`](./docs/sub/documentation-catalog/) — browse documentation areas with summaries and curated entry points.
+- [`Tree`](./docs/sub/documentation-tree/) — view the complete implemented documentation hierarchy.
 
 ## Main areas
 
-- [`Software`](./docs/sub/software/) — models, inference tools, development tooling, agents, assistants, automation, workflow engines, and model platforms.
-- [`Concepts`](./docs/sub/notes/sub/concepts/) — foundational and practical AI concepts organized by topic and reading priority.
-- [`Benchmarks`](./docs/sub/notes/sub/benchmarks/) — benchmark and leaderboard references for evaluating models, providers, and AI systems.
-- [`Comparisons`](./docs/sub/notes/sub/comparisons/) — decision-support comparisons across models, tools, workflows, platforms, hardware, and deployment options.
+- [`Software`](./docs/sub/software/) — AI-related software, development tooling, inference runtimes, agents, assistants, automation, model platforms, and model documentation.
+  - [`Development`](./docs/sub/software/sub/development/) — editors, development workflows, code-review tools, and application-security tooling.
+  - [`Inference`](./docs/sub/software/sub/inference/) — local and self-hosted model runtimes.
+  - [`Workflow engines`](./docs/sub/software/sub/workflow-engines/) — tools for building and executing AI workflows.
+  - [`Agents`](./docs/sub/software/sub/agents/) — standalone agent-like AI systems.
+  - [`Agent orchestration`](./docs/sub/software/sub/agent-orchestration/) — frameworks, runtimes, and control planes for coordinating agents.
+  - [`Assistants`](./docs/sub/software/sub/assistants/) — conversational AI assistant products.
+  - [`Automation`](./docs/sub/software/sub/automation/) — automation tools used in AI-adjacent workflows.
+  - [`Model platforms`](./docs/sub/software/sub/model-platforms/) — platforms for model discovery, hosting, datasets, and related tooling.
+  - [`Models`](./docs/sub/software/sub/models/) — canonical provider, family, generation, version, and artifact documentation.
+- [`Notes`](./docs/sub/notes/) — concepts, terminology, evidence resources, comparisons, and repository research records.
+  - [`Concepts`](./docs/sub/notes/sub/concepts/) — practical and foundational AI concepts organized by topic and reading priority.
+  - [`Glossary`](./docs/sub/notes/sub/glossary/) — short reusable definitions used across the repository.
+  - [`Benchmarks`](./docs/sub/notes/sub/benchmarks/) — benchmark and leaderboard resources.
+  - [`Comparisons`](./docs/sub/notes/sub/comparisons/) — decision-support comparisons and selection guidance.
+  - [`Repository-original content`](./docs/sub/notes/sub/repository-original-content/) — provenance and evidence boundaries for repository-authored research candidates.
 
 ## Start here
 
