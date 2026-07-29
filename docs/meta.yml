@@ -1,0 +1,11 @@
+node:
+  schema: root
+
+  children:
+    schema: default
+
+  localization:
+    schema: localized
+    default_locale: en_US
+    locales:
+      - uk_UA
