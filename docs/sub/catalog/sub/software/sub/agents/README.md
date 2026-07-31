@@ -1,8 +1,8 @@
 # Agents
 
-Installable and hybrid agent products. Hosted-only agents are documented under [development services](../../../services/sub/development/sub/agents/).
+Local and hybrid agent products. Here, local describes where agent actions execute, not whether models or dependencies are hosted. Hosted-only agents are documented under [development services](../../../services/sub/development/sub/agents/).
 
 ## Child pages
 
-- [`installable/`](./sub/installable/)
+- [`local/`](./sub/local/)
 - [`hybrid/`](./sub/hybrid/)

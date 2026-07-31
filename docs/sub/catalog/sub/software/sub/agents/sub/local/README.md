@@ -1,4 +1,6 @@
-# Installable Agents
+# Local Agents
+
+Local agent products execute agent actions in the user's environment. They may still use hosted models or services.
 
 ## Child pages
 
