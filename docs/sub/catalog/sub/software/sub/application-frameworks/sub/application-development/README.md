@@ -1,6 +1,8 @@
 # Application Development Frameworks
 
-General frameworks and SDK layers for integrating models and AI capabilities into applications.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+General application-development frameworks and SDKs that integrate models, tools, structured outputs, streaming, and AI-specific application patterns.
 
 ## Child pages
 

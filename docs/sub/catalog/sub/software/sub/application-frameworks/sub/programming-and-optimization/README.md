@@ -1,6 +1,8 @@
 # Programming and Optimization Frameworks
 
-Frameworks that represent AI systems as composable programs and support systematic or automated optimization.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Frameworks that treat prompts, model calls, and language-model pipelines as programmable components that can be composed, evaluated, and optimized.
 
 ## Child pages
 

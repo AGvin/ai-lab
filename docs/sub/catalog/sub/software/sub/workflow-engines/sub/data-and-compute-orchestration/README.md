@@ -1,6 +1,8 @@
 # Data and Compute Orchestration
 
-Workflow engines focused on data pipelines, machine-learning and AI workloads, batch processing, or distributed compute orchestration.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Workflow systems for scheduling, coordinating, observing, and reproducing data pipelines, machine-learning jobs, and distributed compute tasks.
 
 ## Child pages
 

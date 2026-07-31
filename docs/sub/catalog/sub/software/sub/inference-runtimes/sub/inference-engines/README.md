@@ -1,6 +1,8 @@
 # Inference Engines
 
-Engines and serving runtimes whose primary role is executing models and exposing inference workloads.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Runtime engines and serving implementations focused on efficient model execution rather than a complete end-user platform.
 
 ## Child pages
 

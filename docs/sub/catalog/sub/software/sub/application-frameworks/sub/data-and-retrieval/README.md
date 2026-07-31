@@ -1,6 +1,8 @@
 # Data and Retrieval Frameworks
 
-Application frameworks centered on data ingestion, indexing, retrieval, RAG, and data-oriented pipelines.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Frameworks focused on connecting AI applications to documents, indexes, retrieval systems, knowledge sources, and data-processing pipelines.
 
 ## Child pages
 

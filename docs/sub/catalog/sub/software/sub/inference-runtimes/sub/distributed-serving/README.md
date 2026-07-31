@@ -1,6 +1,8 @@
 # Distributed Serving
 
-Distributed inference systems that coordinate model servers, routing, cache-aware scheduling, disaggregated execution, or autoscaling across multiple workers or nodes.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Systems that coordinate model serving across multiple processes, nodes, accelerators, or independently scaled inference components.
 
 ## Child pages
 

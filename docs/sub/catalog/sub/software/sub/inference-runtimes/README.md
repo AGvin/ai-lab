@@ -1,6 +1,8 @@
 # Inference Runtimes
 
-Software whose primary role is executing or serving AI models for inference.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Software that loads models and executes inference locally, on servers, or across distributed serving infrastructure.
 
 ## Child pages
 

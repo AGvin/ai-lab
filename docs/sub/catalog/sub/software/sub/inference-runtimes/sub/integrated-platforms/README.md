@@ -1,6 +1,8 @@
 # Integrated Inference Platforms
 
-Integrated products that combine model management and inference with user-facing APIs, CLI tools, or desktop interfaces.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Products that combine model acquisition or management with a user-facing runtime, local API, or operational interface.
 
 ## Child pages
 

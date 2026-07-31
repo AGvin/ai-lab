@@ -1,6 +1,8 @@
 # Application Orchestration
 
-Programmatic workflow and durable-execution systems for coordinating long-running, stateful, event-driven, or failure-resilient application logic.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Durable execution and application workflow systems for coordinating long-running functions, state transitions, events, retries, and background jobs.
 
 ## Child pages
 
