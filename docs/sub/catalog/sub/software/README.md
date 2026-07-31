@@ -8,3 +8,4 @@
 - [`inference-runtimes/`](./sub/inference-runtimes/)
 - [`application-frameworks/`](./sub/application-frameworks/)
 - [`workflow-engines/`](./sub/workflow-engines/)
+- [`interfaces-and-workspaces/`](./sub/interfaces-and-workspaces/)
