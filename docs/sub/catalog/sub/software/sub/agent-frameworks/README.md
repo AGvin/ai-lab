@@ -14,3 +14,4 @@ Frameworks, SDKs, and orchestration runtimes whose primary purpose is building a
 - [`openai-agents-sdk/`](./sub/openai-agents-sdk/)
 - [`pydantic-ai/`](./sub/pydantic-ai/)
 - [`smolagents/`](./sub/smolagents/)
+- [`strands-agents/`](./sub/strands-agents/)
