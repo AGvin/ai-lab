@@ -1,8 +1,8 @@
 # Agents
 
-Local and hybrid agent products. Here, local describes where agent actions execute, not whether models or dependencies are hosted. Hosted-only agents are documented under [development services](../../../services/sub/development/sub/agents/).
+Agent products are grouped by where their agent actions can run:
 
-## Child pages
+- [`local/`](./sub/local/) — actions run in the user's environment, even when the agent uses hosted models or services;
+- [`hybrid/`](./sub/hybrid/) — the same product supports both local execution and a separate producer-operated cloud execution environment.
 
-- [`local/`](./sub/local/)
-- [`hybrid/`](./sub/hybrid/)
+This separation distinguishes the execution model without treating every agent that calls a hosted model as hybrid. Hosted-only agents are documented under [development services](../../../services/sub/development/sub/agents/).
