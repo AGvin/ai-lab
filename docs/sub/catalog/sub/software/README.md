@@ -7,3 +7,4 @@
 - [`agent-frameworks/`](./sub/agent-frameworks/)
 - [`inference-runtimes/`](./sub/inference-runtimes/)
 - [`application-frameworks/`](./sub/application-frameworks/)
+- [`workflow-engines/`](./sub/workflow-engines/)
