@@ -1,6 +1,8 @@
 # Integration Automation
 
-Automation platforms centered on connecting applications and APIs through triggers, actions, conditions, approvals, and scheduled workflows.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Low-code and visual automation products that connect applications, APIs, data sources, triggers, and AI capabilities.
 
 ## Child pages
 

@@ -1,6 +1,8 @@
 # Model Clients
 
-User-facing clients whose primary role is connecting users to local or hosted models through a focused interaction surface.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Desktop or browser clients focused on connecting users to one or more local or hosted model APIs through a unified chat interface.
 
 ## Child pages
 

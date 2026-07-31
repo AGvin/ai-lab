@@ -1,6 +1,8 @@
 # Evaluation and Observability
 
-Software for tracing, inspecting, testing, measuring, and comparing AI applications, agents, RAG systems, prompts, and model behavior.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Software whose primary role is tracing, inspecting, testing, measuring, benchmarking, or comparing AI applications, agents, retrieval systems, prompts, and model behavior.
 
 ## Child pages
 

@@ -1,6 +1,8 @@
 # Integrated Workspaces
 
-Broader user-facing environments that combine conversation with projects, knowledge, model management, agents, workflows, or other persistent workspace capabilities.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Applications that combine model interaction with knowledge management, agents, document workflows, local runtime integration, or broader personal and team workspaces.
 
 ## Child pages
 

@@ -1,6 +1,8 @@
 # Observability Platforms
 
-Self-hostable platforms for traces, production inspection, datasets, experiments, and evaluation workflows.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Self-hostable platforms for collecting AI traces, inspecting production behavior, managing datasets or experiments, and applying evaluations to recorded activity.
 
 ## Child pages
 

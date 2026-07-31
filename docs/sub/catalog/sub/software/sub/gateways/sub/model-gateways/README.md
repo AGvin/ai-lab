@@ -1,6 +1,8 @@
 # Model Gateways
 
-Gateways designed primarily for model-provider abstraction, unified model APIs, routing, fallback, and model-specific access policy.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Gateways designed primarily around model-provider abstraction, unified model APIs, aliases, routing, fallback, budgets, and model-specific access policies.
 
 ## Child pages
 
