@@ -1,6 +1,6 @@
 # Hosted Agents
 
-Hosted-only agent products. Installable and hybrid agents are documented under the software catalog.
+Hosted-only agent products. Installable and hybrid agents are documented under [software agents](../../../../../software/sub/agents/).
 
 ## Child pages
 
