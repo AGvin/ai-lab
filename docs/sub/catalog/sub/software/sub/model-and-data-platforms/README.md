@@ -1,6 +1,8 @@
 # Model and Data Platforms
 
-Installable or self-managed software for model and data lifecycle management, versioning, curation, Hub access, model libraries, data libraries, and model-development tooling.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Software for managing, preparing, developing, versioning, curating, publishing, or programmatically using model and data assets.
 
 ## Child pages
 

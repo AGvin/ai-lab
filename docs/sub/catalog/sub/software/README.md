@@ -1,5 +1,9 @@
 # Software
 
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed software-catalog introduction.
+
+The software catalog contains installable or self-managed products grouped by their primary role. Hosted-only offerings belong under services, while models, datasets, hardware, and producers have separate canonical sections.
+
 ## Child pages
 
 - [`development-tools/`](./sub/development-tools/)

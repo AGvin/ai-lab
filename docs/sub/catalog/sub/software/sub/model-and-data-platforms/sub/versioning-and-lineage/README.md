@@ -1,6 +1,8 @@
 # Versioning and Lineage
 
-Tools whose primary role is versioning and tracing model, data, pipeline, or experiment assets.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Tools primarily used to version, reproduce, and trace datasets, models, pipelines, experiments, and generated artifacts.
 
 ## Child pages
 
