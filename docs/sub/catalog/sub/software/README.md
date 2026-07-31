@@ -12,3 +12,4 @@
 - [`automation/`](./sub/automation/)
 - [`model-and-data-platforms/`](./sub/model-and-data-platforms/)
 - [`evaluation-and-observability/`](./sub/evaluation-and-observability/)
+- [`gateways/`](./sub/gateways/)
