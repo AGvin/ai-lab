@@ -1,6 +1,8 @@
-# Hosted Agents
+# Hosted Development Agents
 
-Hosted-only agent products. Local and hybrid agents are documented under [software agents](../../../../../software/sub/agents/).
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Vendor-operated agents and AI application builders whose primary execution environment is a hosted service rather than a self-managed local product.
 
 ## Child pages
 
