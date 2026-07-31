@@ -1,6 +1,8 @@
 # Hybrid Agents
 
-Agent products with both local execution and a separate producer-operated cloud execution environment.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Agent products that provide an installable local client or workspace integration while materially relying on a vendor-operated service, account, or managed execution capability.
 
 ## Child pages
 

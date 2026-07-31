@@ -1,8 +1,10 @@
 # Agents
 
-Agent products are grouped by where their agent actions can run:
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
 
-- [`local/`](./sub/local/) — actions run in the user's environment, even when the agent uses hosted models or services;
-- [`hybrid/`](./sub/hybrid/) — the same product supports both local execution and a separate producer-operated cloud execution environment.
+Ready-to-use AI agent products that perform development or general computer tasks. Products are grouped by whether their core execution can be run locally or materially depends on a vendor-operated service.
 
-This separation distinguishes the execution model without treating every agent that calls a hosted model as hybrid. Hosted-only agents are documented under [development services](../../../services/sub/development/sub/agents/).
+## Child pages
+
+- [`local/`](./sub/local/)
+- [`hybrid/`](./sub/hybrid/)

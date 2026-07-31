@@ -1,6 +1,8 @@
 # Local Agents
 
-Local agent products execute agent actions in the user's environment. They may still use hosted models or services.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Installable agent products whose primary agent loop and workspace interaction run under the user's control, even when they call remote model APIs.
 
 ## Child pages
 

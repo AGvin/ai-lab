@@ -1,6 +1,8 @@
 # Agent Frameworks
 
-Frameworks, SDKs, and orchestration runtimes whose primary purpose is building agent systems.
+> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+
+Libraries, SDKs, and programming frameworks used to construct custom AI agents, tool-calling loops, multi-agent systems, and agent execution graphs.
 
 ## Child pages
 
