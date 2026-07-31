@@ -10,3 +10,5 @@
 - [`workflow-engines/`](./sub/workflow-engines/)
 - [`interfaces-and-workspaces/`](./sub/interfaces-and-workspaces/)
 - [`automation/`](./sub/automation/)
+- [`model-and-data-platforms/`](./sub/model-and-data-platforms/)
+- [`evaluation-and-observability/`](./sub/evaluation-and-observability/)
