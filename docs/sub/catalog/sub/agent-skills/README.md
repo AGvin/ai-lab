@@ -4,23 +4,13 @@
 
 Agent Skills are portable, named packages of procedural instructions and optional scripts, references, and assets that a compatible AI host can discover and load for repeatable work.
 
-This catalog separates individual skills from named repositories or curated collections that distribute several skills. Plugins and host-specific packages are delivery or integration mechanisms unless they have a distinct canonical identity.
-
 ## Child pages
 
-- [`skills/`](./sub/skills/) — individual Agent Skills.
-- [`collections/`](./sub/collections/) — named catalogs and coordinated skill collections.
+- [`skills/`](./sub/skills/) — independently published Agent Skills.
+- [`collections/`](./sub/collections/) — named repositories and coordinated skill collections.
+- [`other/`](./sub/other/) — temporary classification for related installers, directories, registries, marketplaces, mirrors, and adapters.
 
-## Relationship requirements
-
-Every selected skill and collection should link bidirectionally:
-
-- skill → collection;
-- collection → selected skills;
-- skill or collection → canonical producer;
-- producer → produced collections and selected skills.
-
-Every skill profile must also describe verified dependencies, distinguishing required Agent Skills, collection or setup requirements, runtime/tool dependencies, bundled resources, and reverse dependants where useful.
+The current RC structure is intentionally minimal. Skills contained only inside a collection are documented through that collection rather than duplicated under `skills/`. Favorite status does not create a separate filesystem category.
 
 ## Legacy content preservation
 
