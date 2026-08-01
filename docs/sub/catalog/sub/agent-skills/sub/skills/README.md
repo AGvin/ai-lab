@@ -7,9 +7,14 @@ Canonical profiles for selected individual Agent Skills. A skill can be distribu
 ## Child pages
 
 - [`skill-creator/`](./sub/skill-creator/)
+- [`skill-card-generator/`](./sub/skill-card-generator/)
 - [`grill-me/`](./sub/grill-me/)
 - [`grill-with-docs/`](./sub/grill-with-docs/)
 - [`writing-great-skills/`](./sub/writing-great-skills/)
 - [`brainstorming/`](./sub/brainstorming/)
 - [`systematic-debugging/`](./sub/systematic-debugging/)
 - [`verification-before-completion/`](./sub/verification-before-completion/)
+- [`docx/`](./sub/docx/)
+- [`pdf/`](./sub/pdf/)
+- [`pptx/`](./sub/pptx/)
+- [`xlsx/`](./sub/xlsx/)

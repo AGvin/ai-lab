@@ -4,6 +4,10 @@
 
 NVIDIA Skills is NVIDIA's catalog of verified Agent Skills for CUDA-X libraries, AI Blueprints, and platform tools. The catalog adds provenance, signatures, skill cards, evaluation data, and automated synchronization from product repositories.
 
+## Selected skills
+
+- [`skill-card-generator`](../../../skills/sub/skill-card-generator/)
+
 ## Official resources
 
 - [Official repository](https://github.com/NVIDIA/skills)
