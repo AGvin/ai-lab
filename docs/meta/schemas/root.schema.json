@@ -10,7 +10,7 @@
       "properties": {
         "node": {
           "allOf": [
-            { "$ref": "./default.schema.json#/$defs/default_node_open" },
+            { "$ref": "./default.schema.json#/$defs/node_common" },
             {
               "type": "object",
               "required": ["schema", "children", "localization"],
