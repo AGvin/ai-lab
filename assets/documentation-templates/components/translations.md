@@ -8,8 +8,10 @@ Localized pages do not reapply page templates.
 
 ## Parameters
 
-- `default-locale`: defaults to the repository localization context;
-- `locales`: defaults to configured localization locales;
+- `default-locale`: required locale ID;
+- `locales`: required locale-ID array;
+- `current-locale`: required locale ID;
+- `page`: required canonical page reference;
 - `title`: default `Translations`;
 - `heading-level`: integer, default `2`;
 - `hide-when-empty`: boolean, default `true`.
@@ -17,31 +19,18 @@ Localized pages do not reapply page templates.
 ## Template
 
 ```html
-<set name="available-locales"
-     value="{{ locale-set(parameters.default-locale, parameters.locales)
-              | exclude: render.locale }}"/>
-
-<if test="{{ available-locales | not-empty
-             or parameters.hide-when-empty == false }}">
-  <md-heading level="{{ parameters.heading-level | default: 2 }}">
-    {{ parameters.title | default: 'Translations' }}
-  </md-heading>
-
-  <md-list>
-    <for each="locale in available-locales">
-      <md-list-item>
-        <md-link href="{{ localized-page-url(node, locale) }}">
-          <locale-label
-            locale="{{ locale }}"
-            output-locale="{{ render.locale }}"
-            form="translation-target"/>
-        </md-link>
-      </md-list-item>
-    </for>
-  </md-list>
-</if>
+<render-translation-links
+  default-locale="{{ component.attributes.default-locale }}"
+  locales="{{ component.attributes.locales }}"
+  current-locale="{{ component.attributes.current-locale }}"
+  page="{{ component.attributes.page }}"
+  title="{{ component.attributes.title | default: 'Translations' }}"
+  heading-level="{{ component.attributes.heading-level | default: 2 }}"
+  label-form="translation-target"
+  hide-when-empty="{{ component.attributes.hide-when-empty | default: true }}"
+/>
 ```
 
 ## Label Rule
 
-The `translation-target` form produces locale-natural wording, including `Українською`, `Англійською`, and `Німецькою` in Ukrainian output.
+The semantic `translation-target` form produces locale-natural wording, including `Українською`, `Англійською`, and `Німецькою` in Ukrainian output.

@@ -1,15 +1,17 @@
-# AI Lab Documentation Templates
+# AI Lab Documentation Template Package
 
-This directory contains the Markdown-oriented template set used by the new RC documentation tree.
+This directory is the distributable copy of the authoritative runtime registry under [`docs/templates/`](../../docs/templates/).
 
-The executable snippets use HTML-like renderer tags, but their output is Markdown.
+The package preserves registry-relative paths so it can be copied or synchronized into another repository's `docs/templates/` directory.
 
-## Registry
+The renderer produces Markdown. HTML-like tags are declarative template instructions, not HTML output.
 
-- `layouts/` — outer page composition;
-- `templates/` — page-type composition;
-- `partials/` — shared multi-component fragments;
-- `components/` — reusable generated Markdown blocks;
-- `manifest.yml` — package identity, version, and definition inventory.
+## Package Groups
 
-These files are the AI Lab working copy. Common definitions may later be synchronized from `AGvin/ai-directives`; AI Lab-specific definitions remain local.
+- `pages/` — page templates;
+- `layouts/` — outer page compositions;
+- `partials/` — reusable composition fragments;
+- `components/` — isolated parameterized renderable units;
+- `manifest.yml` — package identity, inventory, source revision, and destination.
+
+The files in this package must remain content-equivalent to the active AI Lab registry for the same package version.

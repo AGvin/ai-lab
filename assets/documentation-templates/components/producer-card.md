@@ -4,13 +4,15 @@
 
 Renders compact outgoing producer, publisher, maintainer, or operator relations.
 
-The summary is derived from the canonical producer page and is not duplicated in item metadata.
+Producer summaries are derived from canonical producer pages and are not duplicated in item metadata.
 
 ## Parameters
 
-- `title`: singular or plural default selected automatically;
+- `relations`: required relation array;
+- `entity-index`: required canonical entity index;
+- `title`: automatically singular or plural when omitted;
 - `heading-level`: integer, default `2`;
-- `roles`: default producer-like roles;
+- `roles`: optional producer-like role filter;
 - `summary-max-length`: integer, default `180`;
 - `show-role`: boolean or `auto`, default `auto`;
 - `hide-when-empty`: boolean, default `true`.
@@ -18,15 +20,14 @@ The summary is derived from the canonical producer page and is not duplicated in
 ## Template
 
 ```html
-<set name="producer-relations"
-     value="{{ outgoing-relations(node)
-              | roles: parameters.roles | default: producer-like }}"/>
-
-<relationship-cards
-  relations="{{ producer-relations }}"
-  title="{{ parameters.title }}"
-  heading-level="{{ parameters.heading-level | default: 2 }}"
-  summary-max-length="{{ parameters.summary-max-length | default: 180 }}"
-  show-role="{{ parameters.show-role | default: 'auto' }}"
-  hide-when-empty="{{ parameters.hide-when-empty | default: true }}"/>
+<render-producer-cards
+  relations="{{ component.attributes.relations }}"
+  entity-index="{{ component.attributes.entity-index }}"
+  title="{{ component.attributes.title }}"
+  heading-level="{{ component.attributes.heading-level | default: 2 }}"
+  roles="{{ component.attributes.roles }}"
+  summary-max-length="{{ component.attributes.summary-max-length | default: 180 }}"
+  show-role="{{ component.attributes.show-role | default: 'auto' }}"
+  hide-when-empty="{{ component.attributes.hide-when-empty | default: true }}"
+/>
 ```

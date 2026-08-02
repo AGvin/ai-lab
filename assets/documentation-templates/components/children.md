@@ -2,10 +2,12 @@
 
 ## Description
 
-Renders structural child documentation nodes as a Markdown list or tree.
+Renders structural descendants as a Markdown list or tree.
 
 ## Parameters
 
+- `root`: required documentation-node reference;
+- `enabled`: boolean, default `true`;
 - `title`: default `Child pages`;
 - `heading-level`: integer, default `2`;
 - `start-level`: integer, default `1`;
@@ -17,20 +19,15 @@ Renders structural child documentation nodes as a Markdown list or tree.
 ## Template
 
 ```html
-<set name="child-nodes"
-     value="{{ descendants(node,
-                           start-level: parameters.start-level | default: 1,
-                           depth: parameters.depth | default: 1) }}"/>
-
-<if test="{{ child-nodes | not-empty
-             or parameters.hide-when-empty == false }}">
-  <md-heading level="{{ parameters.heading-level | default: 2 }}">
-    {{ parameters.title | default: 'Child pages' }}
-  </md-heading>
-
-  <entity-link-list
-    entities="{{ child-nodes }}"
-    mode="{{ parameters.mode | default: 'list' }}"
-    include-summaries="{{ parameters.include-summaries | default: false }}"/>
-</if>
+<render-documentation-children
+  root="{{ component.attributes.root }}"
+  enabled="{{ component.attributes.enabled | default: true }}"
+  title="{{ component.attributes.title | default: 'Child pages' }}"
+  heading-level="{{ component.attributes.heading-level | default: 2 }}"
+  start-level="{{ component.attributes.start-level | default: 1 }}"
+  depth="{{ component.attributes.depth | default: 1 }}"
+  mode="{{ component.attributes.mode | default: 'list' }}"
+  include-summaries="{{ component.attributes.include-summaries | default: false }}"
+  hide-when-empty="{{ component.attributes.hide-when-empty | default: true }}"
+/>
 ```

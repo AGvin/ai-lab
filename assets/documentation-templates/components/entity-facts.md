@@ -6,6 +6,7 @@ Renders schema-approved structured facts as a Markdown definition list or table.
 
 ## Parameters
 
+- `facts`: required facts object;
 - `title`: default `Details`;
 - `heading-level`: integer, default `2`;
 - `groups`: optional fact-group filter;
@@ -16,12 +17,13 @@ Renders schema-approved structured facts as a Markdown definition list or table.
 ## Template
 
 ```html
-<fact-block
-  facts="{{ node.facts }}"
-  groups="{{ parameters.groups }}"
-  fields="{{ parameters.fields }}"
-  mode="{{ parameters.mode | default: 'definition-list' }}"
-  title="{{ parameters.title | default: 'Details' }}"
-  heading-level="{{ parameters.heading-level | default: 2 }}"
-  hide-when-empty="{{ parameters.hide-when-empty | default: true }}"/>
+<render-entity-facts
+  facts="{{ component.attributes.facts }}"
+  title="{{ component.attributes.title | default: 'Details' }}"
+  heading-level="{{ component.attributes.heading-level | default: 2 }}"
+  groups="{{ component.attributes.groups }}"
+  fields="{{ component.attributes.fields }}"
+  mode="{{ component.attributes.mode | default: 'definition-list' }}"
+  hide-when-empty="{{ component.attributes.hide-when-empty | default: true }}"
+/>
 ```
