@@ -1,14 +1,15 @@
 node:
-  entity:
-    id: skill-collection/anthropic-skills
-    kind: skill-collection
+  local:
+    entity:
+      id: skill-collection/anthropic-skills
+      kind: skill-collection
 
-  relations:
-    - type: producer
-      target: producer/anthropic
-      role: producer
+    relations:
+      - type: producer
+        target: producer/anthropic
+        role: producer
 
-  resources:
-    - type: repository
-      scope: official
-      url: https://github.com/anthropics/skills
+    resources:
+      - type: repository
+        scope: official
+        url: https://github.com/anthropics/skills

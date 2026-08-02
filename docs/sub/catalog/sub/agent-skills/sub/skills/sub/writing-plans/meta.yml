@@ -1,12 +1,13 @@
 node:
-  entity:
-    id: agent-skill/writing-plans
-    kind: agent-skill
+  local:
+    entity:
+      id: agent-skill/writing-plans
+      kind: agent-skill
 
-  relations:
-    - type: producer
-      target: producer/prime-radiant
-      role: producer
-    - type: collection
-      target: skill-collection/superpowers
-      role: member
+    relations:
+      - type: producer
+        target: producer/prime-radiant
+        role: producer
+      - type: collection
+        target: skill-collection/superpowers
+        role: member

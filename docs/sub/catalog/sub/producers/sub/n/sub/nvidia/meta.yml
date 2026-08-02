@@ -1,12 +1,13 @@
 node:
-  entity:
-    id: producer/nvidia
-    kind: producer
+  local:
+    entity:
+      id: producer/nvidia
+      kind: producer
 
-  resources:
-    - type: website
-      scope: official
-      url: https://www.nvidia.com/
-    - type: repository
-      scope: official
-      url: https://github.com/NVIDIA
+    resources:
+      - type: website
+        scope: official
+        url: https://www.nvidia.com/
+      - type: repository
+        scope: official
+        url: https://github.com/NVIDIA

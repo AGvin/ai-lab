@@ -1,12 +1,13 @@
 node:
-  entity:
-    id: producer/anthropic
-    kind: producer
+  local:
+    entity:
+      id: producer/anthropic
+      kind: producer
 
-  resources:
-    - type: website
-      scope: official
-      url: https://www.anthropic.com/
-    - type: repository
-      scope: official
-      url: https://github.com/anthropics
+    resources:
+      - type: website
+        scope: official
+        url: https://www.anthropic.com/
+      - type: repository
+        scope: official
+        url: https://github.com/anthropics

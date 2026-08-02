@@ -1,14 +1,15 @@
 node:
-  entity:
-    id: producer/matt-pocock
-    kind: producer
+  local:
+    entity:
+      id: producer/matt-pocock
+      kind: producer
 
-  resources:
-    - type: repository
-      scope: official
-      label: Official skills repository
-      url: https://github.com/mattpocock/skills
-    - type: profile
-      scope: official
-      label: GitHub profile
-      url: https://github.com/mattpocock
+    resources:
+      - type: repository
+        scope: official
+        label: Official skills repository
+        url: https://github.com/mattpocock/skills
+      - type: profile
+        scope: official
+        label: GitHub profile
+        url: https://github.com/mattpocock

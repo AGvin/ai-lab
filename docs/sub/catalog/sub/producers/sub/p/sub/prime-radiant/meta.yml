@@ -1,13 +1,14 @@
 node:
-  entity:
-    id: producer/prime-radiant
-    kind: producer
+  local:
+    entity:
+      id: producer/prime-radiant
+      kind: producer
 
-  resources:
-    - type: website
-      scope: official
-      url: https://primeradiant.com/
-    - type: repository
-      scope: official
-      label: Superpowers repository
-      url: https://github.com/obra/superpowers
+    resources:
+      - type: website
+        scope: official
+        url: https://primeradiant.com/
+      - type: repository
+        scope: official
+        label: Superpowers repository
+        url: https://github.com/obra/superpowers

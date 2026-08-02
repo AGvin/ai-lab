@@ -1,17 +1,18 @@
 node:
-  entity:
-    id: skill-collection/nvidia-skills
-    kind: skill-collection
+  local:
+    entity:
+      id: skill-collection/nvidia-skills
+      kind: skill-collection
 
-  relations:
-    - type: producer
-      target: producer/nvidia
-      role: producer
+    relations:
+      - type: producer
+        target: producer/nvidia
+        role: producer
 
-  resources:
-    - type: repository
-      scope: official
-      url: https://github.com/NVIDIA/skills
-    - type: documentation
-      scope: official
-      url: https://docs.nvidia.com/skills/
+    resources:
+      - type: repository
+        scope: official
+        url: https://github.com/NVIDIA/skills
+      - type: documentation
+        scope: official
+        url: https://docs.nvidia.com/skills/

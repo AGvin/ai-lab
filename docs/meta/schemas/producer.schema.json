@@ -8,13 +8,18 @@
       "type": "object",
       "properties": {
         "node": {
-          "required": ["entity"],
+          "required": ["local"],
           "properties": {
-            "entity": {
+            "local": {
+              "required": ["entity"],
               "properties": {
-                "kind": { "const": "producer" }
-              },
-              "required": ["id", "kind"]
+                "entity": {
+                  "properties": {
+                    "kind": { "const": "producer" }
+                  },
+                  "required": ["id", "kind"]
+                }
+              }
             }
           }
         }

@@ -1,14 +1,15 @@
 node:
-  entity:
-    id: skill-collection/matt-pocock-skills
-    kind: skill-collection
+  local:
+    entity:
+      id: skill-collection/matt-pocock-skills
+      kind: skill-collection
 
-  relations:
-    - type: producer
-      target: producer/matt-pocock
-      role: producer
+    relations:
+      - type: producer
+        target: producer/matt-pocock
+        role: producer
 
-  resources:
-    - type: repository
-      scope: official
-      url: https://github.com/mattpocock/skills
+    resources:
+      - type: repository
+        scope: official
+        url: https://github.com/mattpocock/skills
