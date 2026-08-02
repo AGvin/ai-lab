@@ -1,15 +1,22 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/AGvin/ai-lab/docs/meta/schemas/catalog-index.schema.json",
+  "$id": "catalog-index.schema.json",
+  "title": "AI Lab catalog index metadata",
   "allOf": [
     { "$ref": "./default.schema.json" },
     {
+      "type": "object",
       "properties": {
-        "entity": {
-          "properties": { "kind": { "const": "catalog-index" } }
+        "node": {
+          "properties": {
+            "entity": {
+              "properties": {
+                "kind": { "const": "catalog-index" }
+              }
+            }
+          }
         }
       }
     }
-  ],
-  "title": "AI Lab catalog index node"
+  ]
 }

@@ -1,17 +1,24 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/AGvin/ai-lab/docs/meta/schemas/producer.schema.json",
+  "$id": "producer.schema.json",
+  "title": "AI Lab canonical producer metadata",
   "allOf": [
     { "$ref": "./default.schema.json" },
     {
+      "type": "object",
       "properties": {
-        "entity": {
-          "properties": { "kind": { "const": "producer" } },
-          "required": ["id", "kind"]
+        "node": {
+          "required": ["entity"],
+          "properties": {
+            "entity": {
+              "properties": {
+                "kind": { "const": "producer" }
+              },
+              "required": ["id", "kind"]
+            }
+          }
         }
-      },
-      "required": ["entity"]
+      }
     }
-  ],
-  "title": "AI Lab canonical producer"
+  ]
 }
