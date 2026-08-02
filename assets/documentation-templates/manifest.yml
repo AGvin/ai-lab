@@ -1,0 +1,31 @@
+id: agvin/ai-lab-documentation-templates
+version: 0.1.0
+status: draft
+output: markdown
+source:
+  repository: AGvin/ai-directives
+  branch: docs/design-documentation-template-system
+  revision: 8ffd8e1610244f032fb944bb69659b9db1ac0456
+layouts:
+  - empty
+  - default
+templates:
+  - common/article
+  - common/index
+  - catalog/item
+  - catalog/collection
+  - catalog/producer
+partials:
+  - default/header
+  - default/footer
+components:
+  - page-intro
+  - translations
+  - favorites
+  - children
+  - resources
+  - producer-card
+  - produced-items
+  - relations
+  - dependencies
+  - entity-facts

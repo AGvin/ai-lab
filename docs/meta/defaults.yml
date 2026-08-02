@@ -1,0 +1,15 @@
+node:
+  schema: root
+
+  template:
+    layout:
+      id: default
+
+  children:
+    schema: default
+
+  localization:
+    schema: localized
+    default_locale: en_US
+    locales:
+      - uk_UA
