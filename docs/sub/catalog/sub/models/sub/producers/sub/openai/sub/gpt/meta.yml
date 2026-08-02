@@ -1,12 +1,13 @@
 node:
-  entity:
-    id: model-family/gpt
-    kind: model-family
+  local:
+    entity:
+      id: model-family/gpt
+      kind: model-family
 
-  relations:
-    - type: producer
-      target: producer/openai
-      role: producer
+    relations:
+      - type: producer
+        target: producer/openai
+        role: producer
 
   children:
     schema: catalog-collection

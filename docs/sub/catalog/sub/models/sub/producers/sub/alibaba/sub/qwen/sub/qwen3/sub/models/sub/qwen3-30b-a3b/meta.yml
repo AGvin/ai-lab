@@ -1,17 +1,18 @@
 node:
-  entity:
-    id: model/qwen3-30b-a3b
-    kind: model
+  local:
+    entity:
+      id: model/qwen3-30b-a3b
+      kind: model
 
-  relations:
-    - type: family
-      target: model-family/qwen3
+    relations:
+      - type: family
+        target: model-family/qwen3
 
-  resources:
-    - type: model-page
-      scope: official
-      label: Initial official model page
-      url: https://huggingface.co/Qwen/Qwen3-30B-A3B
+    resources:
+      - type: model-page
+        scope: official
+        label: Initial official model page
+        url: https://huggingface.co/Qwen/Qwen3-30B-A3B
 
   children:
     schema: catalog-index

@@ -1,10 +1,11 @@
 node:
-  entity:
-    id: model/qwen3-the-xiaolong-josiefied-omega-directive-22b
-    kind: model
+  local:
+    entity:
+      id: model/qwen3-the-xiaolong-josiefied-omega-directive-22b
+      kind: model
 
-  relations:
-    - type: family
-      target: model-family/qwen3-derived-davidau
-    - type: lineage
-      target: model-family/qwen3
+    relations:
+      - type: family
+        target: model-family/qwen3-derived-davidau
+      - type: lineage
+        target: model-family/qwen3
