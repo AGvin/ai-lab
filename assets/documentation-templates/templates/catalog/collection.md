@@ -15,7 +15,7 @@ Template for meaningful collections, families, catalogs, and distribution bundle
   <component id="entity-facts"/>
   <component id="dependencies"/>
   <component id="relations"
-             types="{{ ['member', 'contains', 'model', 'skill'] }}"
+             types="{{ ['collection', 'member', 'contains', 'family', 'lineage', 'model', 'skill'] }}"
              direction="both"
              title="Members"/>
   <component id="children"/>

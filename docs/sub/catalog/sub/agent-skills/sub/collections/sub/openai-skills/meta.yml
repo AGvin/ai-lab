@@ -1,0 +1,14 @@
+node:
+  entity:
+    id: skill-collection/openai-skills
+    kind: skill-collection
+
+  relations:
+    - type: producer
+      target: producer/openai
+      role: producer
+
+  resources:
+    - type: repository
+      scope: official
+      url: https://github.com/openai/skills

@@ -1,4 +1,13 @@
 node:
+  entity:
+    id: model-family/qwen3
+    kind: model-family
+
+  resources:
+    - type: repository
+      scope: official
+      url: https://github.com/QwenLM/Qwen3
+
   children:
     schema: catalog-index
     template: common/index

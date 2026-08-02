@@ -1,0 +1,13 @@
+node:
+  entity:
+    id: model/qwen3-coder-480b-a35b-instruct
+    kind: model
+
+  relations:
+    - type: family
+      target: model-family/qwen3-coder
+
+  resources:
+    - type: model-page
+      scope: official
+      url: https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct

@@ -1,0 +1,12 @@
+node:
+  entity:
+    id: agent-skill/verification-before-completion
+    kind: agent-skill
+
+  relations:
+    - type: producer
+      target: producer/prime-radiant
+      role: producer
+    - type: collection
+      target: skill-collection/superpowers
+      role: member

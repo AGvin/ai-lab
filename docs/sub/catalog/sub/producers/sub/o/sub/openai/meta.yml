@@ -1,0 +1,12 @@
+node:
+  entity:
+    id: producer/openai
+    kind: producer
+
+  resources:
+    - type: website
+      scope: official
+      url: https://openai.com/
+    - type: repository
+      scope: official
+      url: https://github.com/openai

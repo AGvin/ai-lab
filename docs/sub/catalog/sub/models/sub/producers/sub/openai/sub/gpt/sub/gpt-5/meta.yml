@@ -1,13 +1,11 @@
 node:
   entity:
-    id: model-family/gpt
+    id: model-family/gpt-5
     kind: model-family
 
   relations:
+    - type: family
+      target: model-family/gpt
     - type: producer
       target: producer/openai
       role: producer
-
-  children:
-    schema: catalog-collection
-    template: catalog/collection

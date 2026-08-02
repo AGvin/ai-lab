@@ -1,0 +1,13 @@
+node:
+  entity:
+    id: model/qwen3-8b
+    kind: model
+
+  relations:
+    - type: family
+      target: model-family/qwen3
+
+  resources:
+    - type: model-page
+      scope: official
+      url: https://huggingface.co/Qwen/Qwen3-8B
