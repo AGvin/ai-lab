@@ -14,11 +14,25 @@
               "required": ["entity"],
               "properties": {
                 "entity": {
-                  "properties": {
-                    "kind": { "const": "producer" }
-                  },
-                  "required": ["id", "kind"]
-                }
+                  "allOf": [
+                    { "$ref": "./default.schema.json#/$defs/entity" },
+                    {
+                      "properties": {
+                        "kind": { "const": "producer" }
+                      }
+                    }
+                  ]
+                },
+                "relations": {
+                  "type": "array",
+                  "items": { "$ref": "./default.schema.json#/$defs/relation" }
+                },
+                "resources": {
+                  "type": "array",
+                  "items": { "$ref": "./default.schema.json#/$defs/resource" }
+                },
+                "dependencies": { "type": "array" },
+                "facts": { "type": "object" }
               }
             }
           }
