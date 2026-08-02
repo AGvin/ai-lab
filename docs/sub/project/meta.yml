@@ -1,0 +1,7 @@
+node:
+  schema: catalog-index
+  template: common/index
+
+  children:
+    schema: catalog-index
+    template: common/index
