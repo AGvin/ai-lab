@@ -10,9 +10,25 @@ This directory contains canonical defaults and JSON Schemas for AI Lab documenta
 - `schemas/localized.schema.json` — localized source-hash metadata;
 - specialized schemas — catalog index, item, collection, and producer contracts.
 
+## Requirements Document
+
+`docs/meta/defaults.yml` defines the inherited requirements-document location:
+
+```yaml
+node:
+  requirements:
+    path: requirements/README.md
+```
+
+The effective `node.requirements.path` is resolved relative to each documentation node directory. A nearer `meta.yml` may override the inherited path when a node intentionally uses a different location.
+
+The configured path is a discovery location, not a declaration that the file must exist. If the file is absent, the node has no local requirements document and processing continues with any requirements inherited from ancestors.
+
+Requirements-related assets may be stored under `requirements/assets/` and referenced directly by the requirement that uses them. They do not require a separate asset inventory section.
+
 ## Inheritance Boundary
 
-Schema, template, layout, template parameters, and `children` baselines are ordinary inheritable metadata.
+Schema, requirements-document path, template, layout, template parameters, and `children` baselines are ordinary inheritable metadata.
 
 Canonical entity-instance data is current-node-only and must be declared under `node.local`:
 
