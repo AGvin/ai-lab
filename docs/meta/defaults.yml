@@ -1,6 +1,9 @@
 node:
   schema: root
 
+  requirements:
+    path: requirements/README.md
+
   template:
     layout:
       id: default
