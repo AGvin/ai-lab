@@ -18,6 +18,6 @@ Preserve existing valid documentation and update only the content affected by th
 
 Preserve valid headings, anchors, links, ordering, and surrounding authored content whenever they are outside the requested scope. Avoid unnecessary rewrites and structural churn that create noisy diffs, break inbound references, or obscure the substantive change.
 
-## Informative, non-clickbait headings
+## Informative, non-clickbait writing
 
-Use precise, descriptive headings that accurately represent the section or document content. Do not use sensational, manipulative, exaggerated, misleading, curiosity-gap, or tabloid-style wording designed primarily to attract clicks. Search optimization must never justify clickbait language or claims stronger than the supporting evidence.
+Write headings, summaries, and introductory text so they accurately represent the document or section content. Avoid sensational, manipulative, exaggerated, misleading, curiosity-gap, or tabloid-style wording intended primarily to attract attention or increase click-through rates. Search optimization must never take precedence over factual accuracy, technical precision, evidence strength, or reader trust. Do not make claims stronger than the supporting evidence.
