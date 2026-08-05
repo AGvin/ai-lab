@@ -1,0 +1,6 @@
+node:
+  schema: producer
+  template: catalog/producer
+  local:
+    labels:
+      - parent-organization
