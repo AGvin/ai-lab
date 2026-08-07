@@ -10,7 +10,7 @@ entity:
         - identification
         - research
       authority: official
-    - type: repository
+    - type: other
       source:
         url: https://github.com/QwenLM
       purposes:
