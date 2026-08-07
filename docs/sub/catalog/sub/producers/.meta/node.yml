@@ -1,8 +1,5 @@
 node:
   children:
-    schema: catalog-index
     template: common/index
-
     children:
-      schema: producer
       template: catalog/producer
