@@ -1,8 +1,10 @@
-# Qwen3 Coder
+# Qwen3-Coder
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed model-line profile.
+Qwen3-Coder is Qwen's code-focused model line developed by Qwen Team for coding and agentic software-development tasks.
 
-Qwen3 Coder is Qwen's code-focused model line for repository-scale understanding, tool use, agentic coding, and software-development tasks.
+## Canonical producer
+
+- [Qwen Team](../../../../../../../../../../producers/sub/q/sub/qwen-team/)
 
 ## Official resources
 
@@ -10,4 +12,4 @@ Qwen3 Coder is Qwen's code-focused model line for repository-scale understanding
 
 ## Child pages
 
-- [`models/`](./sub/models/)
+- [Models](./sub/models/)

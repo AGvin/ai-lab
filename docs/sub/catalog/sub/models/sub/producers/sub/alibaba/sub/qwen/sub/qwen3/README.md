@@ -1,8 +1,10 @@
 # Qwen3
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed model-line profile.
+Qwen3 is a Qwen language-model generation developed by Qwen Team at Alibaba Cloud, with dense and mixture-of-experts models represented in this catalog.
 
-Qwen3 is a Qwen model generation containing dense and mixture-of-experts language models in several sizes and release variants.
+## Canonical producer
+
+- [Qwen Team](../../../../../../../../../../producers/sub/q/sub/qwen-team/)
 
 ## Official resources
 
@@ -10,4 +12,4 @@ Qwen3 is a Qwen model generation containing dense and mixture-of-experts languag
 
 ## Child pages
 
-- [`models/`](./sub/models/)
+- [Models](./sub/models/)

@@ -1,5 +1,9 @@
 # Producers — A
 
-> **Temporary catalog summary:** Alphabetical producer index for the RC catalog.
+Canonical producer profiles whose names begin with **A**.
 
-- [`Anthropic`](./sub/anthropic/)
+## Producers
+
+- [Alibaba Cloud](./sub/alibaba-cloud/)
+- [Alibaba Group](./sub/alibaba-group/)
+- [Anthropic](./sub/anthropic/)

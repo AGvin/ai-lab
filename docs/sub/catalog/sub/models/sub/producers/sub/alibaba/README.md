@@ -1,13 +1,12 @@
-# Alibaba
+# Alibaba models
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed producer-specific model index.
+This model-domain view groups Qwen model families developed by Qwen Team at Alibaba Cloud.
 
-This branch groups model families produced by Alibaba's Qwen team.
+## Canonical producers
 
-## Official resources
+- [Alibaba Cloud](../../../../../producers/sub/a/sub/alibaba-cloud/)
+- [Qwen Team](../../../../../producers/sub/q/sub/qwen-team/)
 
-- [Qwen official website](https://qwen.ai/)
+## Model families
 
-## Child pages
-
-- [`qwen/`](./sub/qwen/)
+- [Qwen](./sub/qwen/)

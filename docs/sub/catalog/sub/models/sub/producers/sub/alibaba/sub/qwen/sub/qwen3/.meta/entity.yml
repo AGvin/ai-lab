@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/producers/alibaba/qwen/qwen3
+  type: model-family
+  name: Qwen3
+  references:
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen3
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target:
+        path: ../..
+    - type: produced-by
+      target:
+        path: ../../../../../../../../../../producers/sub/q/sub/qwen-team
