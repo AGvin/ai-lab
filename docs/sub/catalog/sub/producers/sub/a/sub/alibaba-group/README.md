@@ -1,6 +1,6 @@
 # Alibaba Group
 
-Alibaba Group is the parent organization represented in this catalog for Alibaba Cloud and related producer relationships.
+Alibaba Group is the broader organization represented in this catalog for Alibaba Cloud and related producer relationships.
 
 ## Related producers
 
