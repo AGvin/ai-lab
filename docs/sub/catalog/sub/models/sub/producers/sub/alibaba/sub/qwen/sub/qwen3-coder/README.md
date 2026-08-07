@@ -4,7 +4,7 @@ Qwen3-Coder is Qwen's code-focused model line developed by Qwen Team for coding 
 
 ## Canonical producer
 
-- [Qwen Team](../../../../../../../../../../producers/sub/q/sub/qwen-team/)
+- [Qwen Team](../../../../../../../../../producers/sub/q/sub/qwen-team/)
 
 ## Official resources
 

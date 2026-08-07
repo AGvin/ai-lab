@@ -13,7 +13,7 @@ entity:
   relations:
     - type: member-of
       target:
-        path: ../..
+        path: ../../..
     - type: produced-by
       target:
         path: ../../../../../../../../../../producers/sub/q/sub/qwen-team

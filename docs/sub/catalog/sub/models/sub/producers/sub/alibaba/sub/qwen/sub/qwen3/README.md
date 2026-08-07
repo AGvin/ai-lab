@@ -4,7 +4,7 @@ Qwen3 is a Qwen language-model generation developed by Qwen Team at Alibaba Clou
 
 ## Canonical producer
 
-- [Qwen Team](../../../../../../../../../../producers/sub/q/sub/qwen-team/)
+- [Qwen Team](../../../../../../../../../producers/sub/q/sub/qwen-team/)
 
 ## Official resources
 
