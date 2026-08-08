@@ -1,0 +1,18 @@
+entity:
+  id: catalog/producers/g/google
+  type: organization
+  name: Google
+  references:
+    - type: official-site
+      source:
+        url: https://ai.google.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/google
+      purposes:
+        - research
+      authority: official
