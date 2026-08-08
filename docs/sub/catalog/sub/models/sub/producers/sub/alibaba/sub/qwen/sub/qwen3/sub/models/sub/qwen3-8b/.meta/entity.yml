@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/producers/alibaba/qwen/qwen3/models/qwen3-8b
+  type: model
+  name: Qwen3 8B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen3-8B
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: artifact
+      source:
+        url: https://huggingface.co/Qwen/Qwen3-8B-GGUF
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target:
+        path: ../../../../..
