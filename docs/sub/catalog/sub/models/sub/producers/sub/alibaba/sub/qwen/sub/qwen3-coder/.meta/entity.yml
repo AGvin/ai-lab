@@ -10,6 +10,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://qwenlm.github.io/blog/qwen3-coder/
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target:
