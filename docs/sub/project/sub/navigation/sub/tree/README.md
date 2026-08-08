@@ -50,6 +50,7 @@ Complete implemented RC documentation hierarchy. This page mirrors materialized 
           - [`qwen3-coder/`](../../../../../catalog/sub/models/sub/producers/sub/alibaba/sub/qwen/sub/qwen3-coder/)
             - [`models/`](../../../../../catalog/sub/models/sub/producers/sub/alibaba/sub/qwen/sub/qwen3-coder/sub/models/)
               - [`qwen3-coder-480b-a35b-instruct/`](../../../../../catalog/sub/models/sub/producers/sub/alibaba/sub/qwen/sub/qwen3-coder/sub/models/sub/qwen3-coder-480b-a35b-instruct/)
+              - [`qwen3-coder-next/`](../../../../../catalog/sub/models/sub/producers/sub/alibaba/sub/qwen/sub/qwen3-coder/sub/models/sub/qwen3-coder-next/)
       - [`davidau/`](../../../../../catalog/sub/models/sub/producers/sub/davidau/)
         - [`qwen3-derived/`](../../../../../catalog/sub/models/sub/producers/sub/davidau/sub/qwen3-derived/)
           - [`models/`](../../../../../catalog/sub/models/sub/producers/sub/davidau/sub/qwen3-derived/sub/models/)
