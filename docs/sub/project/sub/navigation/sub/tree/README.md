@@ -92,7 +92,7 @@ Complete implemented RC documentation hierarchy. This page mirrors materialized 
       - [`hugging-face-spaces/`](../../../../../catalog/sub/services/sub/infrastructure/sub/hugging-face-spaces/)
       - [`hugging-face-inference-endpoints/`](../../../../../catalog/sub/services/sub/infrastructure/sub/hugging-face-inference-endpoints/)
     - [`model-apis/`](../../../../../catalog/sub/services/sub/model-apis/)
-      - [`hugging-face-inference-providers/`](../../../../../catalog/sub/services/sub/model-apis/sub/model-apis/sub/hugging-face-inference-providers/)
+      - [`hugging-face-inference-providers/`](../../../../../catalog/sub/services/sub/model-apis/sub/hugging-face-inference-providers/)
   - [`software/`](../../../../../catalog/sub/software/)
     - [`development-tools/`](../../../../../catalog/sub/software/sub/development-tools/)
       - [`code-editors/`](../../../../../catalog/sub/software/sub/development-tools/sub/code-editors/)
