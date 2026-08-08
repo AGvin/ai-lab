@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/producers/anthropic/claude
+  type: model-family
+  name: Claude
+  references:
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/about-claude/models/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.anthropic.com/research/claude-sonnet-5
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/a/sub/anthropic
