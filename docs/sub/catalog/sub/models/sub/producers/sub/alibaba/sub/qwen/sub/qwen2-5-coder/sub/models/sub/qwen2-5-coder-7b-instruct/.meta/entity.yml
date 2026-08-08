@@ -1,0 +1,16 @@
+entity:
+  id: catalog/models/producers/alibaba/qwen/qwen2-5-coder/models/qwen2-5-coder-7b-instruct
+  type: model
+  name: Qwen2.5-Coder 7B Instruct
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target:
+        path: ../../../../..
