@@ -1,0 +1,13 @@
+node:
+  local:
+    entity:
+      id: service/hugging-face-hub
+      kind: service
+
+    resources:
+      - type: website
+        scope: official
+        url: https://huggingface.co/
+      - type: documentation
+        scope: official
+        url: https://huggingface.co/docs/hub/

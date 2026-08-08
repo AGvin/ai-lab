@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/producers/alibaba/qwen/qwen2-5-coder
+  type: model-family
+  name: Qwen2.5-Coder
+  references:
+    - type: article
+      source:
+        url: https://qwenlm.github.io/blog/qwen2.5-coder-family/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://qwenlm.github.io/blog/qwen2.5-coder/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target:
+        path: ../../..
+    - type: produced-by
+      target:
+        path: ../../../../../../../../../../producers/sub/q/sub/qwen-team

@@ -1,0 +1,5 @@
+node:
+  children:
+    template: common/index
+    children:
+      template: catalog/producer

@@ -1,0 +1,15 @@
+node:
+  local:
+    entity:
+      id: model/huihui-qwen3-coder-30b-a3b-instruct-abliterated
+      kind: model
+
+    relations:
+      - type: family
+        target: model-family/qwen3-coder-derived-huihui-ai
+      - type: lineage
+        target: model-family/qwen3-coder
+
+  children:
+    schema: catalog-index
+    template: common/index

@@ -1,0 +1,18 @@
+entity:
+  id: catalog/producers/m/microsoft
+  type: organization
+  name: Microsoft
+  references:
+    - type: official-site
+      source:
+        url: https://www.microsoft.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/microsoft
+      purposes:
+        - research
+      authority: official

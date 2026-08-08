@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/producers/alibaba/qwen
+  type: model-family
+  name: Qwen
+  references:
+    - type: official-site
+      source:
+        url: https://qwen.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/q/sub/qwen-team

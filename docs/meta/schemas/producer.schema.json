@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "producer.schema.json",
+  "title": "AI Lab canonical producer metadata",
+  "allOf": [
+    { "$ref": "./default.schema.json" },
+    {
+      "type": "object",
+      "properties": {
+        "node": {
+          "required": ["local"],
+          "properties": {
+            "local": {
+              "required": ["entity"],
+              "properties": {
+                "entity": {
+                  "allOf": [
+                    { "$ref": "./default.schema.json#/$defs/entity" },
+                    {
+                      "properties": {
+                        "kind": { "const": "producer" }
+                      }
+                    }
+                  ]
+                },
+                "relations": {
+                  "type": "array",
+                  "items": { "$ref": "./default.schema.json#/$defs/relation" }
+                },
+                "resources": {
+                  "type": "array",
+                  "items": { "$ref": "./default.schema.json#/$defs/resource" }
+                },
+                "dependencies": { "type": "array" },
+                "facts": { "type": "object" }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

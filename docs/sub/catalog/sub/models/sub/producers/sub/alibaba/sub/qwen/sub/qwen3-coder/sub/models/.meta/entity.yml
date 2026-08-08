@@ -1,0 +1,3 @@
+entity:
+  id: catalog/models/producers/alibaba/qwen/qwen3-coder/models
+  name: Qwen3-Coder Models

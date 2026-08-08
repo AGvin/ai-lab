@@ -1,0 +1,4 @@
+node:
+  children:
+    schema: catalog-collection
+    template: catalog/collection

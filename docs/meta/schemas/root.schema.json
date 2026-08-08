@@ -4,65 +4,37 @@
   "title": "Root documentation metadata",
   "description": "Extends the default metadata model with repository-root localization settings.",
   "allOf": [
-    {
-      "$ref": "./default.schema.json#/$defs/metadata_document"
-    },
+    { "$ref": "./default.schema.json#/$defs/metadata_document" },
     {
       "type": "object",
       "properties": {
         "node": {
           "allOf": [
-            {
-              "$ref": "./default.schema.json#/$defs/node_common"
-            },
+            { "$ref": "./default.schema.json#/$defs/node_common" },
             {
               "type": "object",
-              "required": [
-                "schema",
-                "children",
-                "localization"
-              ],
+              "required": ["schema", "children", "localization"],
               "properties": {
-                "schema": {
-                  "const": "root"
-                },
+                "schema": { "const": "root" },
                 "children": {
                   "allOf": [
-                    {
-                      "$ref": "./default.schema.json#/$defs/default_node"
-                    },
-                    {
-                      "required": [
-                        "schema"
-                      ]
-                    }
+                    { "$ref": "./default.schema.json#/$defs/default_node" },
+                    { "required": ["schema"] }
                   ]
                 },
                 "localization": {
                   "type": "object",
                   "additionalProperties": false,
-                  "required": [
-                    "schema",
-                    "default_locale",
-                    "locales"
-                  ],
+                  "required": ["schema", "default_locale", "locales"],
                   "properties": {
-                    "schema": {
-                      "$ref": "./default.schema.json#/$defs/schema_id"
-                    },
-                    "default_locale": {
-                      "$ref": "./default.schema.json#/$defs/locale_id"
-                    },
+                    "schema": { "$ref": "./default.schema.json#/$defs/schema_id" },
+                    "default_locale": { "$ref": "./default.schema.json#/$defs/locale_id" },
                     "locales": {
                       "type": "array",
-                      "items": {
-                        "$ref": "./default.schema.json#/$defs/locale_id"
-                      },
+                      "items": { "$ref": "./default.schema.json#/$defs/locale_id" },
                       "uniqueItems": true
                     },
-                    "disabled": {
-                      "const": true
-                    }
+                    "disabled": { "const": true }
                   }
                 }
               }

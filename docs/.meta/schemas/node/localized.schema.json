@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "localized",
+  "title": "Localized documentation node metadata",
+  "description": "Structural contract for localized metadata containing only the canonical source fingerprint.",
+  "$defs": {
+    "source_hash": {
+      "type": "string",
+      "oneOf": [
+        {
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        {
+          "pattern": "^gitblob:[0-9a-f]{40}$"
+        }
+      ]
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "node"
+  ],
+  "properties": {
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "localization"
+      ],
+      "properties": {
+        "localization": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source_hash"
+          ],
+          "properties": {
+            "source_hash": {
+              "$ref": "#/$defs/source_hash"
+            }
+          }
+        }
+      }
+    }
+  }
+}

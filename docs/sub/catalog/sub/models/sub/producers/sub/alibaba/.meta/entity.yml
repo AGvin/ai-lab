@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/producers/alibaba
+  type: model-producer-view
+  name: Alibaba models

@@ -1,0 +1,13 @@
+node:
+  local:
+    entity:
+      id: agent-skill/grill-with-docs
+      kind: agent-skill
+
+    relations:
+      - type: producer
+        target: producer/matt-pocock
+        role: producer
+      - type: collection
+        target: skill-collection/matt-pocock-skills
+        role: member

@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/producers/alibaba/qwen/qwen3-coder/models/qwen3-coder-next
+  type: model
+  name: Qwen3-Coder-Next
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen3-Coder-Next
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://github.com/QwenLM/Qwen3-Coder/blob/main/qwen3_coder_next_tech_report.pdf
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target:
+        path: ../../../../..

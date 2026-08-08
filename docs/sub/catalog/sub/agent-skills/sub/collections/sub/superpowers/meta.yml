@@ -1,0 +1,15 @@
+node:
+  local:
+    entity:
+      id: skill-collection/superpowers
+      kind: skill-collection
+
+    relations:
+      - type: producer
+        target: producer/prime-radiant
+        role: producer
+
+    resources:
+      - type: repository
+        scope: official
+        url: https://github.com/obra/superpowers
