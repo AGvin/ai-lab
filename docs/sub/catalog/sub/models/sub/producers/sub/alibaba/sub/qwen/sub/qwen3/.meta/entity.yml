@@ -10,6 +10,19 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2505.09388
+      purposes:
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/collections/Qwen/qwen3-67dd247413f0e2e4f653967f
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target:
