@@ -1,0 +1,19 @@
+entity:
+  id: catalog/producers/o/openai
+  type: organization
+  name: OpenAI
+  references:
+    - type: official-site
+      source:
+        url: https://openai.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/openai
+      purposes:
+        - identification
+        - research
+      authority: official
