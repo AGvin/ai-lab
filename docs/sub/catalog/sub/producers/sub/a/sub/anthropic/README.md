@@ -1,19 +1,26 @@
 # Anthropic
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed producer profile.
+Anthropic is an AI research and product company represented in this catalog as a producer of documented models and Agent Skill resources.
 
-Anthropic is an AI research and product company and the producer of the Anthropic Skills collection represented in this catalog.
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
+## Models
+
+- [Anthropic models](../../../../../models/sub/producers/sub/anthropic/) — Claude model-domain navigation.
 
 ## Agent Skill collections
 
-- [`Anthropic Skills`](../../../../../agent-skills/sub/collections/sub/anthropic-skills/)
+- [Anthropic Skills](../../../../../agent-skills/sub/collections/sub/anthropic-skills/)
 
 ## Selected Agent Skills
 
-- [`DOCX`](../../../../../agent-skills/sub/skills/sub/docx/)
-- [`PDF`](../../../../../agent-skills/sub/skills/sub/pdf/)
-- [`PPTX`](../../../../../agent-skills/sub/skills/sub/pptx/)
-- [`XLSX`](../../../../../agent-skills/sub/skills/sub/xlsx/)
+- [DOCX](../../../../../agent-skills/sub/skills/sub/docx/)
+- [PDF](../../../../../agent-skills/sub/skills/sub/pdf/)
+- [PPTX](../../../../../agent-skills/sub/skills/sub/pptx/)
+- [XLSX](../../../../../agent-skills/sub/skills/sub/xlsx/)
 
 ## Official resources
 
