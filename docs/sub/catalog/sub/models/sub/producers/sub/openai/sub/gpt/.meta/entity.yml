@@ -1,0 +1,16 @@
+entity:
+  id: catalog/models/producers/openai/gpt
+  type: model-family
+  name: GPT
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/o/sub/openai
