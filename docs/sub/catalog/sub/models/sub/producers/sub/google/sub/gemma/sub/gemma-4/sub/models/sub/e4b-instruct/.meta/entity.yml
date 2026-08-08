@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/producers/google/gemma/gemma-4/models/e4b-instruct
+  type: model
+  name: Gemma 4 E4B Instruct
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/google/gemma-4-e4b-it
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: artifact
+      source:
+        url: https://huggingface.co/google/gemma-4-e4b-it-qat-q4_0-unquantized
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target:
+        path: ../../../../..
