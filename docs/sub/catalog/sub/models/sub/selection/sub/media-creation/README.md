@@ -21,8 +21,30 @@ Also measure the workflow outcome: first-pass acceptance, accepted candidates pe
 
 The generator must not be the sole approver of its own output. Use deterministic technical checks plus an independent QC model or human reviewer calibrated to the assignment.
 
+### Speech synthesis and dubbing
+
+For text-to-speech, dubbing, voice conversion, or other speech-generation candidates, define the exact model/artifact, language, voice or identity boundary, input text/audio conditions, output format, quality tier, and permitted use. Depending on the assignment, evaluate:
+
+- intelligibility and pronunciation;
+- language, accent, terminology, names, numbers, and abbreviations;
+- naturalness, prosody, pace, emotion, and style control;
+- speaker or character consistency and long-form continuity;
+- clipping, noise, breaths, silence, loudness, and delivery-format validity;
+- first-audio latency, streaming stability, cancellation, and synthesis duration when those properties affect the model decision;
+- correction effort, reviewer time, and accepted-result rate.
+
+A pleasant short sample does not prove consistent long-form or production behavior. Streaming latency and concurrency are deployment-dependent evidence, not immutable model facts.
+
+For multilingual speech generation, evaluate each language/accent separately. Ukrainian production claims should include pronunciation and stress for representative names, terminology, numerals, dates, abbreviations, and qualified native review where appropriate.
+
 ## Rights and provenance
 
-Record applicable rights, consent, identity restrictions, privacy constraints, provenance, disclosure requirements, and permitted use before adoption. Technical capability does not establish a right to create or publish an output.
+Record applicable rights, consent, identity restrictions, privacy constraints, provenance, disclosure requirements, voice/model license, and permitted use before adoption. Technical capability does not establish a right to clone, imitate, publish, or commercially use a voice or other identity-conditioned output.
+
+## Ownership boundary
+
+A real-time voice assistant is a multi-component solution that may combine VAD, ASR, reasoning, tools, TTS, networking, interruption control, and recovery. Selecting the complete conversational stack is broader workflow/service selection and does not belong in this model-selection subtree.
+
+Hosted voice catalogs, provider pricing/retention/regions, runtime choice, hardware planning, and end-to-end operational architecture remain outside model-selection ownership. They may be recorded only as evidence conditions when comparing exact generation models.
 
 Operational infrastructure lifecycle and broader service/hardware selection belong outside model-selection ownership. Link intrinsic model facts from [Model Reference](../../../reference/).
