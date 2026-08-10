@@ -1,0 +1,10 @@
+node:
+  local:
+    entity:
+      id: software/ollama
+      kind: software
+
+    resources:
+      - type: website
+        scope: official
+        url: https://ollama.com/

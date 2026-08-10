@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/q/qwen-team
+  type: team
+  name: Qwen Team
+  references:
+    - type: official-site
+      source:
+        url: https://qwen.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/QwenLM
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: part-of
+      target:
+        path: ../../../../a/sub/alibaba-cloud

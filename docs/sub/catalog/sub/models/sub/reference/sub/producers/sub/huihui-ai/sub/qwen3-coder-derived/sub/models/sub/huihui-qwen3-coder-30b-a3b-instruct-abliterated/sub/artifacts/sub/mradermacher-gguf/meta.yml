@@ -1,0 +1,14 @@
+node:
+  local:
+    entity:
+      id: model-artifact/huihui-qwen3-coder-30b-a3b-instruct-abliterated-mradermacher-gguf
+      kind: model-artifact
+
+    relations:
+      - type: artifact-of
+        target: model/huihui-qwen3-coder-30b-a3b-instruct-abliterated
+
+    resources:
+      - type: artifact-repository
+        scope: official
+        url: https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF

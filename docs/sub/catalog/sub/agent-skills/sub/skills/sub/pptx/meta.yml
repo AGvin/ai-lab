@@ -1,0 +1,13 @@
+node:
+  local:
+    entity:
+      id: agent-skill/pptx
+      kind: agent-skill
+
+    relations:
+      - type: producer
+        target: producer/anthropic
+        role: producer
+      - type: collection
+        target: skill-collection/anthropic-skills
+        role: member

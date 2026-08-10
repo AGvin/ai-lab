@@ -1,0 +1,3 @@
+entity:
+  id: catalog/models/producers/alibaba/qwen/qwen2-5-coder/models
+  name: Qwen2.5-Coder Models

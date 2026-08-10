@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/producers/alibaba/qwen/qwen3/models/qwen3-30b-a3b
+  type: model
+  name: Qwen3 30B-A3B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen3-30B-A3B
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: artifact
+      source:
+        url: https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target:
+        path: ../../../../..

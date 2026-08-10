@@ -1,0 +1,13 @@
+node:
+  local:
+    entity:
+      id: model-family/qwen3-derived-davidau
+      kind: model-family
+
+    relations:
+      - type: lineage
+        target: model-family/qwen3
+
+  children:
+    schema: catalog-index
+    template: common/index

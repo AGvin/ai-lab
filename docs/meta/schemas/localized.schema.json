@@ -4,29 +4,21 @@
   "title": "Localized documentation metadata",
   "description": "Validates localized metadata containing only the source content hash.",
   "allOf": [
-    {
-      "$ref": "./default.schema.json#/$defs/metadata_document"
-    },
+    { "$ref": "./default.schema.json#/$defs/metadata_document" },
     {
       "type": "object",
       "properties": {
         "node": {
           "type": "object",
           "additionalProperties": false,
-          "required": [
-            "localization"
-          ],
+          "required": ["localization"],
           "properties": {
             "localization": {
               "type": "object",
               "additionalProperties": false,
-              "required": [
-                "source_hash"
-              ],
+              "required": ["source_hash"],
               "properties": {
-                "source_hash": {
-                  "$ref": "./default.schema.json#/$defs/source_hash"
-                }
+                "source_hash": { "$ref": "./default.schema.json#/$defs/source_hash" }
               }
             }
           }
