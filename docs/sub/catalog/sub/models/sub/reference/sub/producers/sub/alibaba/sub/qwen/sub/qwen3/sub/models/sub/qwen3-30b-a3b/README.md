@@ -1,13 +1,13 @@
 # Qwen3 30B-A3B
 
-Qwen3 30B-A3B is a post-trained Mixture of Experts (MoE) language model in the Qwen3 generation.
+Qwen3 30B-A3B is a post-trained Mixture of Experts (MoE) language model in the Qwen3 series.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Model family
+## Model series
 
 - [Qwen3](../../../..)
 
@@ -42,7 +42,7 @@ Version-specific naming, behavior, and context differences belong on the corresp
 
 ## Scope boundary
 
-This canonical page owns Qwen3 30B-A3B identity, intrinsic architecture and release-family facts, official references, artifact identity, and navigation to versions. Hardware-fit recommendations, sequential or multi-GPU loading strategy, comparisons against smaller or hosted models, runtime performance, and production-fit conclusions belong to future decision-support, deployment/workflow, or evidence documentation.
+This canonical page owns Qwen3 30B-A3B identity, intrinsic architecture facts, official references, artifact identity, and navigation to versions. Hardware-fit recommendations, loading strategy, comparisons against smaller or hosted models, runtime performance, and production-fit conclusions belong to selection, deployment/workflow, or evidence documentation.
 
 ## Official resources
 
