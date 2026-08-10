@@ -17,11 +17,11 @@ Gemini models are accessed through provider-hosted products such as the Gemini A
 
 ## Models
 
-- [Gemini 3.6 Flash](./sub/gemini-3-6-flash/) — represented hosted multimodal model.
+- [Gemini 3.6 Flash](./sub/models/sub/gemini-3-6-flash/) — stable provider-hosted multimodal model with model code `gemini-3.6-flash`.
 
 ## Scope boundary
 
-This canonical page owns Gemini family identity, Google producer relation, hosted-access boundary, and concrete-model navigation. Exact model IDs, context limits, supported modalities and features belong to the concrete model; pricing, service limits, AI Studio behavior, deployment workflow, and model-selection conclusions belong to product/service, guide/workflow, decision-support, or evidence documentation.
+This canonical page owns Gemini family identity, Google producer relation, hosted-access boundary, and concrete-model navigation. Exact model IDs, context limits, supported modalities and model-specific features belong to concrete models; pricing, service limits, AI Studio behavior, deployment workflow, and selection conclusions belong to service/product, workflow, selection, or evidence documentation.
 
 ## Official resources
 
