@@ -1,11 +1,11 @@
 entity:
-  id: catalog/models/reference/producers/anthropic/claude
-  type: model-family
-  name: Claude
+  id: catalog/models/reference/producers/anthropic/claude/sonnet/models/sonnet-5
+  type: model
+  name: Claude Sonnet 5
   references:
     - type: documentation
       source:
-        url: https://platform.claude.com/docs/en/about-claude/models/overview
+        url: https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5
       purposes:
         - identification
         - research
@@ -17,6 +17,6 @@ entity:
         - research
       authority: official
   relations:
-    - type: produced-by
+    - type: member-of
       target:
-        path: ../../../../../../../../producers/sub/a/sub/anthropic
+        path: ../../../../..

@@ -2,22 +2,20 @@
 
 ## Requirements
 
-- Identify Claude as Anthropic's hosted language-model family.
-- Preserve family-level facts from the legacy Claude documentation without duplicating concrete model specifications.
-- Keep API model IDs, exact context limits, behavior changes, pricing, and product availability on concrete models or product/service owners.
-- Keep Claude Code, Claude Platform, Anthropic plans, and supported cloud platforms distinct from the Claude model family.
+- Identify Claude as Anthropic's long-lived hosted model family.
+- Preserve family-level facts without duplicating series or concrete-model specifications.
+- Represent durable lines such as Sonnet as series when that grouping clarifies multiple distinct releases.
+- Keep product surfaces, pricing, cloud availability, and migration behavior outside family identity.
 
 ## Content Specification
 
-- Use `Claude` as the page title.
-- Link Anthropic through the canonical `produced-by` relation.
-- Describe Claude at family level for conversational, reasoning, coding, and tool-using workloads as provider positioning rather than an AI Lab quality ranking.
-- Link Claude Sonnet 5 as the represented concrete model.
-- Preserve the identity boundary between the model family and Anthropic's product/deployment surfaces.
-- Include the official model overview and Sonnet 5 announcement as research references.
+- Use `Claude` as the page title and link Anthropic through the canonical `produced-by` relation.
+- Link Sonnet as the materialized model series.
+- Keep Claude Code, Claude Platform, Anthropic plans, and cloud integrations distinct from model identity.
+- Include official model-overview and model-ID/versioning documentation.
 
 ## Validation
 
-- Concrete model IDs, context limits, pricing, and migration notes are not generalized to the whole Claude family.
-- Claude Code and Claude Platform are not treated as model aliases.
-- The Anthropic producer and Sonnet 5 links resolve to canonical nodes.
+- Claude Sonnet 5 is not linked directly as an arbitrary family child.
+- Sonnet is not treated as a second top-level family.
+- Concrete model IDs, context limits, pricing, and migration notes are not generalized to all Claude models.
