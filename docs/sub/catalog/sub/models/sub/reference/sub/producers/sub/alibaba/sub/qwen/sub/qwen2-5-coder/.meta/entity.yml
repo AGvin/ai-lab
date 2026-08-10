@@ -1,6 +1,6 @@
 entity:
-  id: catalog/models/producers/alibaba/qwen/qwen2-5-coder
-  type: model-family
+  id: catalog/models/reference/producers/alibaba/qwen/qwen2-5-coder
+  type: model-series
   name: Qwen2.5-Coder
   references:
     - type: article

@@ -1,6 +1,6 @@
 entity:
-  id: catalog/models/producers/alibaba/qwen/qwen3
-  type: model-family
+  id: catalog/models/reference/producers/alibaba/qwen/qwen3
+  type: model-series
   name: Qwen3
   references:
     - type: repository
