@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/software-development
+  type: catalog-index
+  name: Software Development Model Selection
