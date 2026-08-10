@@ -19,6 +19,7 @@ Producer-oriented navigation for canonical model families, series, concrete mode
 - [`microsoft/`](./sub/microsoft/) — Phi family and represented Phi-4 models.
 - [`mistral-ai/`](./sub/mistral-ai/) — Mistral Small family and represented models.
 - [`openai/`](./sub/openai/) — GPT and Whisper families and represented descendants.
+- [`tongyi-mai/`](./sub/tongyi-mai/) — Z-Image family and represented models.
 
 ## Ownership boundary
 
