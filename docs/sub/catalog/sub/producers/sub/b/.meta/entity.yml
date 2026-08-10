@@ -1,0 +1,4 @@
+entity:
+  id: catalog/producers/b
+  type: catalog-index
+  name: Producers — B
