@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/producers/google/gemma/gemma-4/models/e2b-instruct
+  id: catalog/models/reference/producers/google/gemma/gemma-4/models/e2b-instruct
   type: model
   name: Gemma 4 E2B Instruct
   references:

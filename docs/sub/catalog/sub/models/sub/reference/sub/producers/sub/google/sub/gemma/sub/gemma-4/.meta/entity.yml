@@ -1,11 +1,11 @@
 entity:
-  id: catalog/models/producers/google/gemma/gemma-4
-  type: model-family
+  id: catalog/models/reference/producers/google/gemma/gemma-4
+  type: model-series
   name: Gemma 4
   references:
     - type: documentation
       source:
-        url: https://ai.google.dev/gemma/docs/core/gemma_4
+        url: https://ai.google.dev/gemma/docs/core/model_card_4
       purposes:
         - identification
         - research

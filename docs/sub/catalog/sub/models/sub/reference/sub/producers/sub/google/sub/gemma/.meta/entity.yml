@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/producers/google/gemma
+  id: catalog/models/reference/producers/google/gemma
   type: model-family
   name: Gemma
   references:
