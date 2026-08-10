@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/language-and-research/translation-and-localization
+  type: catalog-index
+  name: Translation and Localization Model Selection

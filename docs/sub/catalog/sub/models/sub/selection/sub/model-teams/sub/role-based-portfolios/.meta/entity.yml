@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/model-teams/role-based-portfolios
+  type: catalog-index
+  name: Models for Different Roles
