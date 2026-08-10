@@ -1,6 +1,6 @@
 # Qwen Team
 
-Qwen Team develops the Qwen model series at Alibaba Cloud, including the Qwen3 and Qwen3-Coder lines represented in this catalog.
+Qwen Team develops the Qwen model family at Alibaba Cloud, including the Qwen3, Qwen3-Coder, and Qwen2.5-Coder series represented in this catalog.
 
 ## Organization
 
@@ -8,7 +8,7 @@ Qwen Team develops the Qwen model series at Alibaba Cloud, including the Qwen3 a
 
 ## Model navigation
 
-- [Qwen model family](../../../../../models/sub/producers/sub/alibaba/sub/qwen/)
+- [Qwen model family](../../../../../models/sub/reference/sub/producers/sub/alibaba/sub/qwen/)
 
 ## Official resources
 

@@ -5,6 +5,9 @@ Canonical profiles for organizations, teams, individuals, and other stable ident
 ## Producer indexes
 
 - [`a/`](./sub/a/)
+- [`b/`](./sub/b/)
+- [`d/`](./sub/d/)
+- [`g/`](./sub/g/)
 - [`m/`](./sub/m/)
 - [`n/`](./sub/n/)
 - [`o/`](./sub/o/)

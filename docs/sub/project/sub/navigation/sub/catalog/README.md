@@ -7,7 +7,7 @@ Curated entry points into the implemented RC documentation. This page explains t
 - [Agent Skills](../../../../../catalog/sub/agent-skills/) — published skill collections and independently published skills when such standalone ownership is verified.
 - [Datasets](../../../../../catalog/sub/datasets/) — canonical dataset entities selected for AI Lab documentation.
 - [Hardware](../../../../../catalog/sub/hardware/) — canonical hardware entities and hardware-specific catalog material.
-- [Models](../../../../../catalog/sub/models/) — model families, concrete models, versions, artifacts, derivatives, and model-domain producer views.
+- [Models](../../../../../catalog/sub/models/) — canonical model reference plus task-oriented model-selection guidance, with families, series, concrete models, versions, artifacts, derivatives, and model-domain producer views kept distinct from decision support.
 - [Producers](../../../../../catalog/sub/producers/) — canonical companies, organizations, teams, communities, individuals, and other stable publishing or producing identities.
 - [Services](../../../../../catalog/sub/services/) — externally operated AI assets, development services, infrastructure, and model APIs.
 - [Software](../../../../../catalog/sub/software/) — installable or self-operated AI software, development tools, agents, frameworks, runtimes, workflow engines, interfaces, automation, model/data tooling, evaluation/observability software, and gateways.
@@ -20,4 +20,4 @@ Curated entry points into the implemented RC documentation. This page explains t
 
 ## Scope
 
-The current RC primarily materializes the selected `catalog/` and `project/` architecture. Other knowledge domains such as concepts, learning material, reusable workflows, evidence, decision support, research, and reference material are still being designed and migrated; they are not omitted here because they were rejected.
+The current RC primarily materializes the selected `catalog/` and `project/` architecture. Other knowledge domains such as concepts, learning material, reusable workflows, evidence, decision support outside model-specific selection, research, and reference material are still being designed and migrated; they are not omitted here because they were rejected.
