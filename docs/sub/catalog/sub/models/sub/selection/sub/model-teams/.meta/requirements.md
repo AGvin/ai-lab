@@ -10,7 +10,7 @@
 - Present retained concrete portfolios as evaluation hypotheses rather than copied environment recommendations, and state the role, escalation relationship, evidence basis, and missing workflow evidence for each participating model.
 - Avoid duplicating full task shortlists: use model-team entries only when the value is the combination or role relationship between models, and link task-specific candidate guidance for individual roles.
 - Treat a family-level specialist such as Whisper as a discovery placeholder only; pin an exact checkpoint/model/artifact before a material portfolio recommendation or evaluation result.
-- Keep non-model pipeline components such as a diarization pipeline outside model-team candidate identities while preserving them as unresolved pipeline/software residuals when they remain part of the legacy workflow hypothesis.
+- Keep non-model pipeline components such as `pyannote/speaker-diarization-community-1` outside model-team candidate identities; when needed, link them through their proper software/pipeline owner such as `catalog/software/model-and-data-platforms/model-libraries/pyannote-audio/` rather than relabeling them as models.
 - Require specialists or additional models to justify their coordination/review cost through measured quality, independence, task coverage, or accepted-result benefit.
 - Require fallback and escalation triggers to be explicit and testable rather than depending only on worker self-assessment.
 - Evaluate routing quality separately when a router chooses among model tiers or specialists.
@@ -34,5 +34,5 @@
 - Specialist roles require a documented benefit or independence need.
 - Team complexity, routing errors, retries, and verification cost are included in the decision.
 - Worker self-assessment is not the sole fallback/escalation mechanism when independent evidence is material.
-- Non-model pipelines are not silently relabeled as models.
+- Non-model pipelines are not silently relabeled as models and do not remain unresolved when a proper software owner exists.
 - Infrastructure lifecycle and environment design are not migrated into this subtree.
