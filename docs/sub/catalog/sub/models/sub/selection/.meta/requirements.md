@@ -21,6 +21,10 @@
 - Treat worker self-report as insufficient proof of terminal acceptance when artifacts, deterministic checks, tool results, provider state, or independent QC can verify the claim.
 - Treat repeated materially similar failures after targeted correction as possible capability-gap evidence rather than justification for unlimited retries.
 - Keep model-team escalation logic under `model-teams/`; keep infrastructure retry/backoff, provider failover, GPU/runtime degraded operation, and service recovery outside model-selection ownership.
+- When local resource fit affects a recommendation, require the exact model/artifact/revision plus relevant runtime, quantization/precision, context, batch/concurrency, auxiliary-file, offload, and measured memory conditions.
+- State that published artifact/weight size is not peak runtime VRAM and that a successful model load does not prove useful context headroom, concurrency, latency, or workload quality.
+- Treat unmeasured local model/resource combinations as `Unknown`; do not infer fit from nominal VRAM or by simply summing multi-GPU memory.
+- Keep GPU hardware choice, VRAM capacity-class design, sharding topology, runtime selection, resident-service scheduling, and host-memory architecture outside model-selection ownership; allow them only as frozen evidence constraints when they materially affect a model choice.
 - Compare cost per accepted result, including material retries and verification/reviewer calls, rather than isolated request price or raw inference speed.
 - Require material recommendations to record evaluation date, exact evaluated identity, relevant runtime/hosted conditions, prompt/tool/context assumptions, limitations, conflicting evidence, and re-evaluation triggers.
 - Require mutable pricing, availability, hosted features, limits, aliases, and provider terms to be rechecked when they materially affect the decision.
@@ -35,5 +39,7 @@
 - Provider claims are not presented as independent AI Lab benchmark evidence.
 - Recommendation and reliability labels are scoped to explicit task, conditions, constraints, and evidence.
 - Worker self-assessment is not used as sole completion evidence when independent validation is material.
+- Published artifact size, nominal VRAM, or a successful load is not presented as proof of practical local fit.
+- No GPU-buying, runtime-architecture, sharding, or resident-service scheduling guide is migrated into model selection merely because it constrains a candidate model.
 - No broad infrastructure lifecycle, failover architecture, or solution-architecture guide is migrated into model selection merely because models are components.
 - No practical user-scenario page is created, moved, or rewritten by this migration.
