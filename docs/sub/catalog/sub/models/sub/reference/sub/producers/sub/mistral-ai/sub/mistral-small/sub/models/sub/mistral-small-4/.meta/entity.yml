@@ -10,6 +10,18 @@ entity:
         - identification
         - research
       authority: official
+    - type: artifact
+      source:
+        url: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-NVFP4
+      purposes:
+        - research
+      authority: official
+    - type: artifact
+      source:
+        url: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-eagle
+      purposes:
+        - research
+      authority: official
     - type: documentation
       source:
         url: https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03
