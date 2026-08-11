@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/reference/producers/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated
+  type: model
+  name: Huihui Qwen3 Coder 30B A3B Instruct Abliterated
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: lineage
+      source:
+        url: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../../../../../../producers/sub/h/sub/huihui-ai
+    - type: derived-from
+      target:
+        path: ../../../../../../../alibaba/sub/qwen/sub/qwen3-coder/sub/models/sub/qwen3-coder-30b-a3b-instruct
