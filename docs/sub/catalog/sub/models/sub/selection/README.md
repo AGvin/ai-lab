@@ -17,6 +17,10 @@ Choose models or model portfolios for a concrete task using explicit acceptance 
 - [`evaluation-and-quality-control/`](./sub/evaluation-and-quality-control/) — independent model-assisted evaluation and QC tasks.
 - [`model-teams/`](./sub/model-teams/) — model portfolios, role assignment, routing, ensembles, and consensus.
 
+## Cross-cutting selection lenses
+
+- [`local-resource-fit/`](./sub/local-resource-fit/) — evaluate exact local model artifacts under stated memory constraints without turning VRAM into a quality rank or hardware-selection guide.
+
 ## Decision boundary
 
 Start from the task: `I want a model to <task>`. Compare exact model identities, versions, or artifacts that could perform that task. Link canonical technical facts from [Model Reference](../reference/) instead of copying full model profiles here.
@@ -95,6 +99,8 @@ When local fit affects a model recommendation, record the exact model and artifa
 Do not classify a candidate as locally suitable solely because its weight file appears smaller than available VRAM, and do not infer multi-GPU fit by summing device memory without validating the actual serving strategy. Mark unmeasured combinations as **Unknown** rather than converting nominal headroom into a recommendation.
 
 Choosing GPU hardware, capacity classes, sharding topology, runtime software, resident-service schedules, or host-memory architecture is broader deployment/hardware selection and remains outside this subtree. Those facts may appear here only as frozen evidence conditions that materially constrain a model choice.
+
+Use [Local Model Resource Fit](./sub/local-resource-fit/) for the materialized cross-cutting artifact-fit guidance.
 
 ### Cost and trade-offs
 
