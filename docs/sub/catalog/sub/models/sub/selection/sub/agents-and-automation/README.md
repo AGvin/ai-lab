@@ -30,6 +30,23 @@ Include adversarial and degraded cases such as missing files, timeouts, conflict
 
 Use application-level trust boundaries, least privilege, explicit stopping rules, and independent verification where risk requires it. Model safeguards are not a substitute for those controls.
 
+## Candidate evaluation set
+
+These candidates preserve useful hypotheses from the legacy agent guide after current first-party identity/capability revalidation. They are **starting points for controlled evaluation, not a universal agent ranking**.
+
+| Candidate | Evaluate for | Evidence state | Main boundary |
+| --- | --- | --- | --- |
+| [GPT-5.6 Sol](../../../reference/sub/producers/sub/openai/sub/gpt/sub/gpt-5-6/sub/models/sub/sol/) | Complex hosted agents spanning coding, research, documents, tool use, and computer-use workflows | Current provider positioning for high-capability reasoning/coding/tool work; AI Lab loop reliability unverified here | Provider capability does not establish safe autonomy, best accepted-result cost, or reliable completion decisions |
+| [Claude Sonnet 5](../../../reference/sub/producers/sub/anthropic/sub/claude/sub/sonnet/sub/models/sub/sonnet-5/) | Coding-heavy and tool-heavy agents using repositories, terminals, browsers, and knowledge-work tools | Current provider-documented coding and agentic strengths; AI Lab loop reliability unverified here | Exact scaffold, tool surface, correction behavior, stopping, and provider-specific constraints must be tested |
+| [Gemini 3.6 Flash](../../../reference/sub/producers/sub/google/sub/gemini/sub/models/sub/gemini-3-6-flash/) | Rapid multimodal agent loops, structured output, function calling, code execution, files, and grounded workflows | Current provider-documented multimodal and agentic/tool capabilities; AI Lab loop reliability unverified here | Some capabilities can be preview or surface-dependent; recheck the exact API/tool surface before evaluation |
+| [DeepSeek V4 Flash](../../../reference/sub/producers/sub/deepseek/sub/deepseek/sub/deepseek-v4/sub/models/sub/deepseek-v4-flash/) | High-volume bounded reasoning/tool workflows where economical hosted execution is a material hypothesis | Current provider-documented reasoning, JSON, tool-call, and agent-oriented API capabilities; AI Lab loop reliability unverified here | Data/privacy boundary, instruction following, retry rate, provider surface, and accepted-result economics require explicit evaluation |
+| [Qwen3-Coder-Next](../../../reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3-coder/sub/models/sub/qwen3-coder-next/) | Self-hosted coding-agent experiments, long-horizon code work, complex tool use, and recovery from execution failures | Provider-documented coding-agent model intended for local development; AI Lab loop reliability unverified here | Large total-weight footprint and runtime requirements can dominate deployment; active parameters are not a residency estimate |
+| [Mistral Small 4](../../../reference/sub/producers/sub/mistral-ai/sub/mistral-small/sub/models/sub/mistral-small-4/) | Self-hosted multimodal generalist agents combining text/image understanding, reasoning, coding, and tool use | Current provider-documented multimodal, reasoning, coding, and agentic capabilities; AI Lab loop reliability unverified here | Large-model infrastructure and operator responsibility remain material; open weights do not prove economical or reliable autonomy |
+
+Compact [Gemma 4 E2B Instruct](../../../reference/sub/producers/sub/google/sub/gemma/sub/gemma-4/sub/models/sub/e2b-instruct/) and [E4B Instruct](../../../reference/sub/producers/sub/google/sub/gemma/sub/gemma-4/sub/models/sub/e4b-instruct/) remain useful **bounded worker, router, extractor, or multimodal-preprocessor candidates**. Their provider-documented multimodal/function capabilities do not establish long-horizon planning, recovery, stopping, or primary-agent reliability.
+
+Candidate membership does not imply a recommendation state. Pin the exact model/version/artifact or hosted ID, freeze the tool/application surface, record the evaluation date, and recheck mutable availability, preview features, limits, and prices before a material decision.
+
 ## Orchestrator or manager model
 
 The best worker model is not automatically the best orchestrator. When selecting a model to coordinate agents or tools, evaluate whether the exact model can reliably perform the **control role** under the intended workflow constraints.
