@@ -14,3 +14,4 @@ Canonical profiles for organizations, teams, individuals, and other stable ident
 - [`p/`](./sub/p/)
 - [`q/`](./sub/q/)
 - [`t/`](./sub/t/)
+- [`z/`](./sub/z/)
