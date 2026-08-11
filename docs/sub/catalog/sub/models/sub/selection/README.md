@@ -86,6 +86,16 @@ Worker self-report is not completion evidence. Verify acceptance against produce
 
 Repeatedly similar failures after targeted correction should be treated as evidence of a capability gap rather than justification for unlimited retries. Model-team escalation rules belong under [Model Teams](./sub/model-teams/); infrastructure retry/backoff, provider failover, GPU/runtime degradation, and service recovery belong outside model-selection ownership.
 
+### Local resource-fit evidence
+
+Treat local memory capacity as a **constraint on an exact evaluated model artifact**, not as a proxy for model quality or a standalone task category. Published weight or artifact size is not peak runtime VRAM: context/KV cache, runtime buffers, batching, graph capture, GPU offload, multimodal encoders or projectors, and concurrent services can materially change memory use.
+
+When local fit affects a model recommendation, record the exact model and artifact/revision together with the runtime, quantization or precision, context, batch/concurrency assumptions, required auxiliary files, offload policy, and measured peak memory under the intended workload. A successful load does not establish useful context headroom, production concurrency, target latency, or acceptable task quality.
+
+Do not classify a candidate as locally suitable solely because its weight file appears smaller than available VRAM, and do not infer multi-GPU fit by summing device memory without validating the actual serving strategy. Mark unmeasured combinations as **Unknown** rather than converting nominal headroom into a recommendation.
+
+Choosing GPU hardware, capacity classes, sharding topology, runtime software, resident-service schedules, or host-memory architecture is broader deployment/hardware selection and remains outside this subtree. Those facts may appear here only as frozen evidence conditions that materially constrain a model choice.
+
 ### Cost and trade-offs
 
 Compare total cost **per accepted result**, not isolated request price or raw inference speed. Include model calls, retries, verification/reviewer calls, failed attempts, and any model-specific switching or access overhead that materially changes the candidate comparison. Broader infrastructure ownership and lifecycle economics remain outside this subtree.
