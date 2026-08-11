@@ -306,6 +306,7 @@ Complete implemented RC documentation hierarchy. This page mirrors materialized 
       - [`model-libraries/`](../../../../../catalog/sub/software/sub/model-and-data-platforms/sub/model-libraries/)
         - [`transformers/`](../../../../../catalog/sub/software/sub/model-and-data-platforms/sub/model-libraries/sub/transformers/)
         - [`diffusers/`](../../../../../catalog/sub/software/sub/model-and-data-platforms/sub/model-libraries/sub/diffusers/)
+        - [`pyannote-audio/`](../../../../../catalog/sub/software/sub/model-and-data-platforms/sub/model-libraries/sub/pyannote-audio/)
       - [`data-libraries/`](../../../../../catalog/sub/software/sub/model-and-data-platforms/sub/data-libraries/)
         - [`datasets/`](../../../../../catalog/sub/software/sub/model-and-data-platforms/sub/data-libraries/sub/datasets/)
       - [`model-development/`](../../../../../catalog/sub/software/sub/model-and-data-platforms/sub/model-development/)
