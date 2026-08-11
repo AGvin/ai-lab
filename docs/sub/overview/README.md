@@ -43,19 +43,30 @@ Do not create `docs/README.md`.
 
 ## Assets
 
-Use `assets/` inside a documentation node for supporting files used by that node.
+Store reader-facing assets next to the documentation node that uses them.
 
-Prefer typed subdirectories:
+Default-locale source assets belong under `assets/default/`. Localized reader-facing variants belong under `assets/<locale-id>/` only when the asset materially differs by language or region. Keep processing and control inputs separate under `.meta/assets/`; those files are not reader-facing assets.
+
+Prefer typed subdirectories inside each reader-facing locale directory:
 
 ```text
 assets/
-  images/
-  screenshots/
-  diagrams/
-  pdf/
-  samples/
-  exports/
-  files/
+  default/
+    images/
+    screenshots/
+    diagrams/
+    pdf/
+    samples/
+    exports/
+    files/
+  <locale-id>/
+    images/
+    screenshots/
+    diagrams/
+    pdf/
+    samples/
+    exports/
+    files/
 ```
 
 Folder roles:
@@ -74,21 +85,24 @@ Example:
 docs/sub/software/sub/development/sub/code-editors/sub/vs-code/
   README.md
   assets/
-    images/
-      interface.png
-    screenshots/
-      extension-settings.png
-    pdf/
-      reference.pdf
-    files/
-      uncommon-reference-file.ext
+    default/
+      images/
+        interface.png
+      screenshots/
+        extension-settings.png
+      pdf/
+        reference.pdf
+      files/
+        uncommon-reference-file.ext
 ```
 
 Guidelines:
 
-- Store assets next to the documentation node that uses them.
-- Use typed asset folders instead of placing files directly in `assets/`.
+- Store default-locale reader-facing assets under `assets/default/`.
+- Store a localized reader-facing asset under `assets/<locale-id>/` only when a language- or region-specific variant is needed.
+- Use typed asset folders inside the applicable locale directory instead of placing files directly in `assets/`, `assets/default/`, or `assets/<locale-id>/`.
 - Use `files/` for rare or miscellaneous file types instead of creating one-off folders.
+- Keep `.meta/assets/` for control inputs referenced by canonical metadata or requirements, not for reader-facing files.
 - Create only folders that contain real files.
 - Use shared parent-level assets only when the same file is reused by multiple child pages.
 
@@ -96,8 +110,8 @@ Guidelines:
 
 Create new documentation nodes only when real content exists.
 
-Create `assets/` and typed asset subdirectories only when a documentation node has real supporting files.
+Create reader-facing asset directories and typed subdirectories only when a documentation node has real supporting files.
 
-Use `assets/files/` for uncommon supporting file types that do not justify a dedicated typed folder.
+Use `assets/default/files/` for uncommon default-locale supporting files that do not justify a dedicated typed folder. Use the corresponding `assets/<locale-id>/files/` path only for a materially localized variant.
 
 Use one canonical page per product, model, platform, assistant, agent, editor, extension, or tool. Add child nodes only when a specific usage scenario has enough content to justify a separate page.
