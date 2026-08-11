@@ -171,6 +171,6 @@ The evaluation should test whether the integrated composition improves the compl
 - [Advisory Council, Jury, and Review Board](../advisory-council-review-board/)
 - [Human Approval Gates](../human-approval-gates/)
 - [Resource Lifecycle Controller Architecture](../resource-lifecycle-controller/)
-- [Combined Workloads](../../../../../../../comparisons/sub/model-selection/sub/combined-workloads/)
-- [Resource Lifecycle Orchestration](../../../../../../../comparisons/sub/model-selection/sub/orchestration/sub/resource-lifecycle/)
+- [Model Teams](../../../../../../../../../catalog/sub/models/sub/selection/sub/model-teams/)
+- [Local Resource Fit](../../../../../../../../../catalog/sub/models/sub/selection/sub/local-resource-fit/)
 - [Repository-Original Content Index](../../../../../../../repository-original-content/)
