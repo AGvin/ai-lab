@@ -104,4 +104,4 @@ Do not infer later classes from an earlier one.
 - [Notes](../..)
 - [Concepts](../concepts/)
 - [Multi-Agent Systems](../concepts/sub/agents-and-automation/sub/multi-agent-systems/)
-- [AI Model Selection and Team Design](../comparisons/sub/model-selection/)
+- [Model Teams](../../catalog/sub/models/sub/selection/sub/model-teams/)
