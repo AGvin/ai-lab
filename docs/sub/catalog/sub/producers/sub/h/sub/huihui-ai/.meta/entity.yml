@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/h/huihui-ai
+  type: organization
+  name: huihui.ai
+  aliases:
+    - huihui-ai
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/huihui-ai
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/huihui-support
+      purposes:
+        - identification
+        - research
+      authority: official
