@@ -5,14 +5,20 @@ entity:
   references:
     - type: registry
       source:
-        url: https://huggingface.co/google/gemma-4-e4b-it
+        url: https://huggingface.co/google/gemma-4-E4B-it
       purposes:
         - identification
         - research
       authority: official
     - type: artifact
       source:
-        url: https://huggingface.co/google/gemma-4-e4b-it-qat-q4_0-unquantized
+        url: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
+      purposes:
+        - research
+      authority: official
+    - type: artifact
+      source:
+        url: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf
       purposes:
         - research
       authority: official
