@@ -12,7 +12,7 @@
 - Preserve speech-recognition evaluation dimensions when applicable: WER/CER, omissions/insertions/repetitions, terminology/names/numbers, timestamps/segments, long-recording stability, accents/noise/overlap/channel conditions, and failed/no-output cases.
 - Preserve diarization evaluation dimensions when applicable: diarization error rate, overlap, short turns, speaker-count assumptions, segment stability, long recordings, transcript alignment, and correction effort.
 - State that diarization does not establish real-world identity and that an older pipeline placement under `models/` does not prove canonical model identity.
-- Preserve useful legacy diarization-pipeline selection material as an explicit non-model residual when its canonical pipeline/software owner is unresolved; do not relabel a pipeline as a model merely to fit this subtree.
+- Treat `pyannote/speaker-diarization-community-1` as a pretrained diarization pipeline used through the canonical `pyannote.audio` software/library owner under `catalog/software/model-and-data-platforms/model-libraries/pyannote-audio/`; do not relabel the pipeline as a model merely to fit this subtree.
 - For short-audio multimodal models, distinguish audio-input support from evidence for streaming, timestamps, diarization, long-form ASR, or target-language quality.
 - Require per-language/accent/code-switch evaluation rather than transferring speech results across languages or recording conditions.
 - Distinguish accepting an input modality from being reliable for a specific understanding task.
@@ -30,5 +30,6 @@
 - Family-level or modality-support claims are not treated as proof of exact speech-task quality.
 - A family-level candidate is not presented as a concrete recommendation without pinning an exact model/checkpoint/artifact.
 - Diarization is not conflated with transcription, speaker identification, authentication, or canonical model identity.
+- Community-1 is not retained as an unresolved model residual after `pyannote.audio` software ownership has been materialized.
 - Evaluation/QC task guidance is separated from content-understanding task guidance.
 - No complete voice-agent workflow or hosted-service comparison is migrated into this page.
