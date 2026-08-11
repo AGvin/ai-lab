@@ -1,0 +1,12 @@
+entity:
+  id: catalog/models/reference/producers/huihui-ai
+  type: model-producer-view
+  name: huihui.ai Models
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/huihui-ai
+      purposes:
+        - identification
+        - research
+      authority: official
