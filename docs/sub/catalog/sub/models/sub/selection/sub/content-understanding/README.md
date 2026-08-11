@@ -19,6 +19,25 @@ Define the exact modality, resolution, page/frame/clip sampling, audio condition
 
 For documents and OCR-adjacent work, preserve reading order, table/form structure, page linkage, figure/caption association, and source-region provenance. For video/audio, define temporal sampling and do not infer absence of an event outside sampled regions.
 
+## Candidate evaluation set
+
+These candidates preserve useful hypotheses from the legacy perception and speech guides after current first-party identity/capability revalidation. Provider modality support establishes **eligibility to test**, not reliability for the stated understanding task.
+
+| Candidate | Evaluate for | Evidence state | Main boundary |
+| --- | --- | --- | --- |
+| [Gemma 4 E2B Instruct](../../../reference/sub/producers/sub/google/sub/gemma/sub/gemma-4/sub/models/sub/e2b-instruct/) | Lowest-footprint bounded local/private image, document, UI, or short-audio understanding experiments | Provider-documented multimodal model; legacy AI Lab candidate hypothesis | Compact size and accepted modalities do not establish OCR, grounding, ASR, timestamp, diarization, or target-language quality |
+| [Gemma 4 E4B Instruct](../../../reference/sub/producers/sub/google/sub/gemma/sub/gemma-4/sub/models/sub/e4b-instruct/) | Stronger compact local multimodal experiments for OCR-adjacent document, chart, UI, image, and short-audio understanding | Provider-documented multimodal model; legacy AI Lab candidate hypothesis | Stored/runtime footprint and task-specific accuracy must be measured; it is not a calibrated evaluator by default |
+| [Gemini 3.6 Flash](../../../reference/sub/producers/sub/google/sub/gemini/sub/models/sub/gemini-3-6-flash/) | High-frequency hosted analysis of mixed text, image, PDF, video, or audio inputs where broad modality/tool support matters | Current provider-documented multimodal capabilities; AI Lab task accuracy unverified here | Exact API surface, preview features, data path, sampling/coverage, and assignment-specific precision require current evaluation |
+| [GPT-5.6 Sol](../../../reference/sub/producers/sub/openai/sub/gpt/sub/gpt-5-6/sub/models/sub/sol/) | Difficult document, screenshot, chart, UI, and mixed-evidence reasoning where a capability-first hosted route is worth testing | Current provider positioning for complex multimodal reasoning/tool work; AI Lab task accuracy unverified here | Provider positioning does not establish grounding, coverage, or best accepted-result cost and requires independent evidence |
+| [Claude Sonnet 5](../../../reference/sub/producers/sub/anthropic/sub/claude/sub/sonnet/sub/models/sub/sonnet-5/) | Long documents, screenshots, technical analysis, and instruction-heavy multimodal understanding | Current provider-documented knowledge-work, vision, coding, and agentic capabilities; AI Lab task accuracy unverified here | Long context and provider claims do not prove complete page/figure coverage, grounding, or judge calibration |
+| [Whisper](../../../reference/sub/producers/sub/openai/sub/whisper/) | Discovery baseline for local/private multilingual ASR, transcription, speech translation, and language-identification experiments | Provider-documented ASR family; legacy AI Lab candidate hypothesis | A material evaluation or recommendation must pin an exact checkpoint/model/artifact and runtime; family-level capability does not establish language, timestamp, speed, or memory outcomes |
+
+Candidate membership does not imply recommendation state. Pin the exact identity used by the evaluation, record the modality/input distribution and date, and recheck mutable hosted surfaces when they materially affect the comparison.
+
+### Non-model diarization residual
+
+The legacy `pyannote/speaker-diarization-community-1` candidate remains useful selection input for local speaker diarization, but current first-party material identifies it as a **pretrained pyannote.audio pipeline**, not one canonical trained-model identity. It is therefore intentionally **not** inserted into this model-candidate table or `Model Reference` as a model. Its task-fit hypothesis, gated access/license information, and diarization evaluation dimensions remain preserved in the legacy corpus until the pipeline/software selection owner is materialized.
+
 ### Speech recognition and transcription
 
 Evaluate an exact model/checkpoint and artifact against representative audio for the target language and domain. Depending on the assignment, measure:
