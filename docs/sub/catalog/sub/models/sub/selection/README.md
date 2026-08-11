@@ -25,6 +25,57 @@ A recommendation must state the workload, acceptance criteria, evidence basis, i
 
 Broader solution selection that chooses software, services, hardware, runtimes, deployment topology, or operational processes in addition to models does not belong here merely because models are involved.
 
+## Selection method
+
+Define the assignment before naming candidates. Record the relevant input/output contract, quality target, failure severity, modalities, data/privacy boundary, latency or throughput requirements, budget constraint, and any model-specific access or deployment condition that can change the decision.
+
+Shortlist exact model identities, versions, or materially distinct artifacts. Do not compare a vague family name when the decision actually depends on a concrete model, hosted ID, revision, fine-tune, quantization, or conversion. A derived artifact remains related to its base model; it becomes a separately evaluated selection unit only when its behavior or operating constraints materially differ.
+
+Use deterministic validators before model judgment when they can directly prove a required property. Evaluate terminal acceptance on representative work rather than converting one leaderboard score, parameter count, token price, or provider claim into a recommendation.
+
+### Evidence states
+
+Keep the evidence basis visible. Useful states include:
+
+- **Provider-documented** — an official model card, specification, documentation, or provider measurement; useful for identity and provider claims but not independent task validation.
+- **AI Lab tested** — a reproducible AI Lab evaluation under recorded assignment conditions.
+- **External benchmark** — an independent evaluation with methodology and scope that can be inspected.
+- **Community report** — operational signal that still requires validation before material adoption decisions.
+- **Inference** — an explicitly labeled conclusion derived from cited facts rather than a directly measured result.
+- **Untested** — no qualifying evidence for the stated assignment.
+
+Conflicting evidence should remain visible rather than being flattened into a single confidence-free score.
+
+### Recommendation states
+
+Use compact decision labels only after the assignment and evidence are explicit:
+
+- **Preferred** — strongest practical default for the stated constraints and evidence.
+- **Alternative** — credible option with a materially different trade-off.
+- **Specialized** — appropriate for a narrower task or subtask rather than general default use.
+- **Experimental** — promising but insufficiently verified or operationally unstable for the target quality level.
+- **Not recommended** — fails a material requirement; state the failed requirement.
+
+A recommendation label is not an intrinsic model property and must not be copied across tasks or environments.
+
+### Quality and acceptance
+
+When useful, distinguish exploration, concept-draft, working-result, production-quality, and exceptional-quality targets. The same model may be acceptable at one quality tier and fail another.
+
+Measure the dimensions that actually determine acceptance: task success, omissions, unsupported output, factual grounding where relevant, structured-output or tool-call reliability, recovery behavior, useful retry count, required independent review, quality ceiling, and unsuitable tasks. Add modality-specific dimensions on the corresponding task page.
+
+### Cost and trade-offs
+
+Compare total cost **per accepted result**, not isolated request price or raw inference speed. Include model calls, retries, verification/reviewer calls, failed attempts, and any model-specific switching or access overhead that materially changes the candidate comparison. Broader infrastructure ownership and lifecycle economics remain outside this subtree.
+
+Prefer the smallest or cheapest candidate only when it still passes the required acceptance gate. Conversely, a stronger model is not automatically preferred if its measured improvement does not justify the additional cost, latency, privacy exposure, or operational dependency for the stated task.
+
+## Evidence maintenance
+
+Every material recommendation should record the exact evaluated model/version/artifact, evaluation date, relevant runtime or hosted configuration when it affects results, prompt/tool/context assumptions, limitations, conflicting evidence, and re-evaluation triggers.
+
+Re-evaluate when the exact model or artifact changes, a provider silently changes an alias or hosted surface, pricing/access materially changes the decision, the workload or acceptance criteria change, or new evidence invalidates a prior conclusion.
+
 ## Recycled legacy guidance
 
 The earlier model-selection section is an input corpus, not the target taxonomy. Broad legacy pages may split across several task areas, and stale recommendations are not carried forward without current evidence. Practical user-scenario material is intentionally outside this migration scope.
