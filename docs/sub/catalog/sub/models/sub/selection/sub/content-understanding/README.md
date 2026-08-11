@@ -35,9 +35,9 @@ These candidates preserve useful hypotheses from the legacy perception, speech, 
 
 Candidate membership does not imply recommendation state. Pin the exact identity used by the evaluation, record the modality/input distribution and date, and recheck mutable hosted surfaces when they materially affect the comparison.
 
-### Non-model diarization residual
+### Non-model diarization pipeline
 
-The legacy `pyannote/speaker-diarization-community-1` candidate remains useful selection input for local speaker diarization, but current first-party material identifies it as a **pretrained pyannote.audio pipeline**, not one canonical trained-model identity. It is therefore intentionally **not** inserted into this model-candidate table or `Model Reference` as a model. Its task-fit hypothesis, gated access/license information, and diarization evaluation dimensions remain preserved in the legacy corpus until the pipeline/software selection owner is materialized.
+`pyannote/speaker-diarization-community-1` remains useful for evaluating local speaker diarization, but upstream identifies it as a **pretrained `pyannote.audio` pipeline**, not one canonical trained-model identity. It is therefore intentionally absent from this model-candidate table and from Model Reference. Its software/pipeline ownership now lives under [`pyannote.audio`](../../../../../../sub/software/sub/model-and-data-platforms/sub/model-libraries/sub/pyannote-audio/), where access, licensing, offline use, telemetry, and pipeline boundaries are documented.
 
 ### Speech recognition and transcription
 
@@ -57,7 +57,7 @@ Family-level speech-recognition claims do not establish the quality of a particu
 
 Diarization answers who spoke when inside a recording; it does not transcribe speech or establish a person's real-world identity. For a candidate model or pipeline component, evaluate diarization error rate, overlap, short turns, speaker-count assumptions, segment stability, long recordings, alignment with the chosen transcript, and correction effort.
 
-Do not force a diarization pipeline into the canonical model taxonomy merely because an older page lived under `models/`. Exact model/pipeline ownership must be established separately before reference material is created.
+Do not force a diarization pipeline into the canonical model taxonomy merely because an older page lived under `models/`. Use its proper software/pipeline owner and keep model selection limited to actual model identities.
 
 ### Short-audio multimodal understanding
 
