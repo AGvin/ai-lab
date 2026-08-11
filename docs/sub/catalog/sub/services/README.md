@@ -1,12 +1,14 @@
 # Services
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed service-catalog introduction.
+Canonical profiles for hosted or externally operated products whose primary identity is a service.
 
-Hosted or externally operated products are documented here when their primary identity is a service rather than installable software.
+Installable or self-managed products belong under [`software/`](../software/). Durable model identity and model facts remain under Model Reference rather than being duplicated as service facts.
 
-## Child pages
+## Service categories
 
-- [`ai-assets/`](./sub/ai-assets/)
-- [`development/`](./sub/development/)
-- [`infrastructure/`](./sub/infrastructure/)
-- [`model-apis/`](./sub/model-apis/)
+- [`ai-assets/`](./sub/ai-assets/) — externally hosted AI asset and model/data platform access.
+- [`development/`](./sub/development/) — hosted development products and agent services.
+- [`infrastructure/`](./sub/infrastructure/) — externally operated AI infrastructure and execution services.
+- [`model-apis/`](./sub/model-apis/) — hosted APIs and provider routes for model access.
+
+Concrete service pages own provider/product-specific facts. Mutable availability, pricing, aliases, limits, terms, and API behavior require current source verification at the concrete node.
