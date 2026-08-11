@@ -28,7 +28,7 @@ Local or offline inference does not by itself establish the privacy posture of t
 ## Related pages
 
 - [Model Libraries](../..)
-- [Content Understanding Model Selection](../../../../../../models/sub/selection/sub/content-understanding/)
+- [Content Understanding Model Selection](../../../../../../../models/sub/selection/sub/content-understanding/)
 
 ## Sources
 
