@@ -21,17 +21,27 @@ The fit labels below preserve bounded planning judgments from the legacy guide. 
 
 | VRAM constraint | Exact candidate artifact | Published artifact footprint | Planning fit | Main boundary |
 | ---: | --- | ---: | --- | --- |
-| 8 GB | [Gemma 4 E2B Instruct](../../../reference/sub/producers/sub/google/sub/gemma/sub/gemma-4/sub/models/sub/e2b-instruct/) official QAT Q4_0 GGUF | 3.35 GB model + 987 MB multimodal projector | Constrained candidate | Long context, multimodal processing, runtime buffers, and other GPU consumers can remove the nominal headroom |
-| 12 GB | [Gemma 4 E4B Instruct](../../../reference/sub/producers/sub/google/sub/gemma/sub/gemma-4/sub/models/sub/e4b-instruct/) official QAT Q4_0 GGUF | 5.15 GB model + 992 MB multimodal projector | Comfortable candidate | Exact modality workload and runtime memory still require measurement |
-| 12 GB | [Qwen3 8B](../../../reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3/sub/models/sub/qwen3-8b/) official `Q4_K_M` GGUF | 5.03 GB | Comfortable candidate | Context, batch size, offload, and concurrent services remain unmeasured here |
-| 16 GB | [Qwen3 14B](../../../reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3/sub/models/sub/qwen3-14b/) official `Q4_K_M` GGUF | approximately 9 GB | Comfortable candidate | Fit does not establish coding, reasoning, or other task quality |
-| 24 GB | Qwen3 14B official `Q4_K_M` GGUF | approximately 9 GB | Comfortable candidate | Additional headroom may be required for long context or other GPU consumers |
-| 24 GB | [Qwen3 30B-A3B](../../../reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3/sub/models/sub/qwen3-30b-a3b/) official `Q4_K_M` GGUF | approximately 18.6 GB | Constrained candidate | Nominal file-size headroom is limited; do not assume useful context or concurrent residency |
-| 32 GB | Qwen3 30B-A3B official `Q4_K_M` GGUF | approximately 18.6 GB | Comfortable candidate | Runtime and workload conditions still determine practical fit |
-| 48 GB | Qwen3 30B-A3B official `Q4_K_M` GGUF | approximately 18.6 GB | Comfortable candidate | Extra memory may be used for context or other services, but concurrency is not implied |
-| 96 GB | Exact larger or higher-precision artifact selected from workload evidence | Varies | Unknown until measured | Do not promote a model merely because the nominal capacity permits a larger artifact |
+| 8 GB | [Gemma 4 E2B Instruct](../../../reference/sub/producers/sub/google/sub/gemma/sub/gemma-4/sub/models/sub/e2b-instruct/) official QAT Q4_0 GGUF | 3.35 GB model + 987 MB multimodal projector | Constrained | Long context, multimodal processing, runtime buffers, and other GPU consumers can remove the nominal headroom |
+| 12 GB | [Gemma 4 E4B Instruct](../../../reference/sub/producers/sub/google/sub/gemma/sub/gemma-4/sub/models/sub/e4b-instruct/) official QAT Q4_0 GGUF | 5.15 GB model + 992 MB multimodal projector | Comfortable | Exact modality workload and runtime memory still require measurement |
+| 12 GB | [Qwen3 8B](../../../reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3/sub/models/sub/qwen3-8b/) official `Q4_K_M` GGUF | 5.03 GB | Comfortable | Context, batch size, offload, and concurrent services remain unmeasured here |
+| 16 GB | [Qwen3 14B](../../../reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3/sub/models/sub/qwen3-14b/) official `Q4_K_M` GGUF | approximately 9 GB | Comfortable | Fit does not establish coding, reasoning, or other task quality |
+| 24 GB | Qwen3 14B official `Q4_K_M` GGUF | approximately 9 GB | Comfortable | Additional headroom may be required for long context or other GPU consumers |
+| 24 GB | [Qwen3 30B-A3B](../../../reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3/sub/models/sub/qwen3-30b-a3b/) official `Q4_K_M` GGUF | approximately 18.6 GB | Constrained | Nominal file-size headroom is limited; do not assume useful context or concurrent residency |
+| 32 GB | Qwen3 30B-A3B official `Q4_K_M` GGUF | approximately 18.6 GB | Comfortable | Runtime and workload conditions still determine practical fit |
+| 48 GB | Qwen3 30B-A3B official `Q4_K_M` GGUF | approximately 18.6 GB | Comfortable | Extra memory may be used for context or other services, but concurrency is not implied |
+| 96 GB | Exact larger or higher-precision artifact selected from workload evidence | Varies | Unknown | Do not promote a model merely because the nominal capacity permits a larger artifact |
 
-`Comfortable candidate` means the published artifact footprint leaves materially more nominal memory headroom than `Constrained candidate`. Neither label proves a safe context size, production concurrency, throughput, latency, or task acceptance. Use `Unknown` when the represented conditions have not been measured or the artifact identity is not pinned precisely enough.
+## Fit vocabulary
+
+Use deployment-fit labels only for the exact recorded model artifact and conditions:
+
+- **Comfortable** — measured or bounded evidence supports practical memory headroom under the stated assumptions.
+- **Constrained** — the candidate may meet the minimum only with explicit compromises or limited nominal headroom.
+- **Sequential only** — the candidate is credible only when a conflicting resident model or service is unloaded first; this label does not choose the scheduling architecture.
+- **Impractical** — the represented artifact does not fit or misses a material operating threshold under the stated conditions.
+- **Unknown** — evidence is insufficient; do not infer fit from parameter count, active MoE parameters, nominal artifact size, or available VRAM alone.
+
+A planning label based only on published artifact footprint is weaker than a measured deployment-fit label and must say so. None of these labels proves a safe context size, production concurrency, throughput, latency, or task acceptance.
 
 ## Required evidence for a material fit conclusion
 
