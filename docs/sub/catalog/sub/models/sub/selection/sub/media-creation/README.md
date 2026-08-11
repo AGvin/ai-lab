@@ -21,6 +21,16 @@ Also measure the workflow outcome: first-pass acceptance, accepted candidates pe
 
 The generator must not be the sole approver of its own output. Use deterministic technical checks plus an independent QC model or human reviewer calibrated to the assignment.
 
+## Candidate evaluation set
+
+The current retained concrete media candidate from the legacy corpus is deliberately narrow. It is a **starting point for a text-to-image experiment, not a cross-media ranking**.
+
+| Candidate | Evaluate for | Evidence state | Main boundary |
+| --- | --- | --- | --- |
+| [FLUX.1-schnell](../../../reference/sub/producers/sub/black-forest-labs/sub/flux/sub/flux-1/sub/models/sub/flux-1-schnell/) | Rapid local/private text-to-image concept generation and comparison against another exact approved image route | Current provider-published downloadable text-to-image model with Apache-2.0 license and low-step inference guidance; legacy AI Lab candidate hypothesis | Exact revision, runtime, precision, encoders/VAE, resolution, peak memory, prompt adherence, defect rate, rights workflow, and cost per accepted artifact require assignment-level measurement |
+
+A legacy page calling another model a general “candidate for comparison” is not enough to add it here. A candidate entry requires a concrete task-fit hypothesis and current evidence sufficient to define what should be evaluated. New image/video/audio models can be added when that threshold is met without creating a universal ranking.
+
 ### Speech synthesis and dubbing
 
 For text-to-speech, dubbing, voice conversion, or other speech-generation candidates, define the exact model/artifact, language, voice or identity boundary, input text/audio conditions, output format, quality tier, and permitted use. Depending on the assignment, evaluate:
