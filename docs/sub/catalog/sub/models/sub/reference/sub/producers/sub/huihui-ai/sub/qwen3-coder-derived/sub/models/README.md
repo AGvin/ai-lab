@@ -1,9 +1,7 @@
-# Huihui AI Qwen3 Coder-Derived Model Releases
+# huihui.ai Qwen3-Coder-Derived Model Releases
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by reviewed model navigation.
+Concrete reviewed model identities published by huihui.ai in the Qwen3-Coder-derived navigation group.
 
-Concrete huihui-ai Qwen3 Coder-derived releases represented in the catalog.
+## Models
 
-## Child pages
-
-- [`huihui-qwen3-coder-30b-a3b-instruct-abliterated/`](./sub/huihui-qwen3-coder-30b-a3b-instruct-abliterated/)
+- [`Huihui Qwen3 Coder 30B A3B Instruct Abliterated`](./sub/huihui-qwen3-coder-30b-a3b-instruct-abliterated/)
