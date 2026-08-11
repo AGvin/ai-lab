@@ -64,6 +64,28 @@ When useful, distinguish exploration, concept-draft, working-result, production-
 
 Measure the dimensions that actually determine acceptance: task success, omissions, unsupported output, factual grounding where relevant, structured-output or tool-call reliability, recovery behavior, useful retry count, required independent review, quality ceiling, and unsuitable tasks. Add modality-specific dimensions on the corresponding task page.
 
+### Reliability profile
+
+Treat reliability as an **assignment-specific evidence profile**, not a universal model score. A profile binds an exact model/version/artifact or hosted snapshot to one bounded task class, target quality tier, representative input distribution, acceptance criteria, verification design, and the runtime/hosted conditions that materially affect behavior.
+
+Create a separate profile when a material part of that unit changes. Do not transfer reliability from one quantization to another, from hosted to local execution, from one task class to another, or from a lower quality tier to production use without evidence that the result still applies.
+
+Record observable behavior that changes a model-selection decision, including:
+
+- demonstrated strengths under the stated assignment;
+- recurring error signatures rather than vague impressions;
+- omitted-requirement risk against an explicit checklist;
+- premature-completion risk when the model claims success before required artifacts or checks exist;
+- useful retry count observed before additional same-assignment attempts stop improving acceptance;
+- correction/recovery behavior after targeted feedback;
+- quality ceiling under the recorded conditions;
+- forbidden or unsuitable tasks and failure-severity limits;
+- required deterministic validators, independent reviewer, or human approval gate.
+
+Worker self-report is not completion evidence. Verify acceptance against produced artifacts, deterministic checks, tool results, provider state when relevant, or an independent QC/reviewer path.
+
+Repeatedly similar failures after targeted correction should be treated as evidence of a capability gap rather than justification for unlimited retries. Model-team escalation rules belong under [Model Teams](./sub/model-teams/); infrastructure retry/backoff, provider failover, GPU/runtime degradation, and service recovery belong outside model-selection ownership.
+
 ### Cost and trade-offs
 
 Compare total cost **per accepted result**, not isolated request price or raw inference speed. Include model calls, retries, verification/reviewer calls, failed attempts, and any model-specific switching or access overhead that materially changes the candidate comparison. Broader infrastructure ownership and lifecycle economics remain outside this subtree.
