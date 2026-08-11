@@ -15,9 +15,9 @@ This repository is an active public documentation lab. Content is added incremen
 
 ### Start here
 
-- [`model-selection/`](./docs/sub/notes/sub/comparisons/sub/model-selection/) — table-first model and workflow selection by task, hardware, access, quality, privacy, and cost.
+- [`model-selection/`](./docs/sub/catalog/sub/models/sub/selection/) — task-oriented model selection by exact identity, evidence, quality, deployment constraints, and accepted-result cost.
 - [`practical-user-scenarios/`](./docs/sub/notes/sub/comparisons/sub/model-selection/sub/practical-user-scenarios/) — concrete starting routes for realistic users, teams, budgets, skills, and data boundaries.
-- [`overview/`](./docs/sub/overview/) — repository documentation model, current layout, asset rules, and expansion guidance.
+- [`overview/`](./docs/sub/project/sub/overview/) — current RC documentation architecture, node ownership, asset rules, and expansion guidance.
 - [`disclaimer/`](./docs/sub/disclaimer/) — limitations of repository information, subjective evaluations, warranties, liability, and practical use.
 
 ### Software
@@ -34,7 +34,7 @@ This repository is an active public documentation lab. Content is added incremen
   - [`assistants/`](./docs/sub/software/sub/assistants/) — conversational AI assistants.
   - [`automation/`](./docs/sub/software/sub/automation/) — automation tools that support AI-adjacent workflows.
   - [`model-platforms/`](./docs/sub/software/sub/model-platforms/) — platforms for model discovery, hosting, datasets, and related AI tooling.
-  - [`models/`](./docs/sub/software/sub/models/) — model families and individual model artifacts.
+  - [`models/`](./docs/sub/catalog/sub/models/sub/reference/) — canonical model producers, families, models, versions, and artifacts.
 
 ### Notes and decision support
 
