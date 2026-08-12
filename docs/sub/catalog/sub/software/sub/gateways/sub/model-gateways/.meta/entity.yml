@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/gateways/model-gateways
+  type: catalog-index
+  name: Model Gateways

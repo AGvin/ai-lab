@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/evaluation-and-observability/observability-platforms
+  type: catalog-index
+  name: Observability Platforms
