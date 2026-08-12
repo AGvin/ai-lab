@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Present `catalog/` as the canonical entry point for concrete AI Lab entities rather than as a temporary RC placeholder.
+- Present `catalog/` as the canonical entry point for concrete AI Lab entities.
 - Explain that catalog nodes own stable entity identity and source-backed facts, while project policies, reader journeys, and other non-entity knowledge belong to their separate canonical owners.
 - Link every currently materialized direct catalog domain: Agent Skills, datasets, hardware, models, producers, services, and software.
 - Keep the introduction concise and descriptive; exhaustive physical hierarchy belongs to the Documentation Tree and detailed navigation belongs to child indexes.

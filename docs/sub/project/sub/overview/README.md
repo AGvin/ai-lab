@@ -1,26 +1,26 @@
 # Overview
 
-AI Lab's RC documentation separates reader-facing catalog content from repository-owned navigation, policies, and overview material.
+AI Lab's documentation separates reader-facing catalog content from repository-owned navigation, policies, and overview material.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## RC documentation architecture
+## Documentation architecture
 
-The RC documentation lives under `docs/` and uses `sub/` for child documentation nodes.
+The documentation lives under `docs/` and uses `sub/` for child documentation nodes.
 
-Its top-level domains are:
+Its currently materialized top-level domains are:
 
 - [`catalog/`](../../catalog/) — documented entities, tools, services, software, models, and task-oriented catalog guidance;
 - [`project/`](../..) — repository-owned navigation, policies, and overview material.
 
 Navigation has three distinct responsibilities:
 
-- [`README_rc.md`](../../../../README_rc.md) — concise RC landing page;
+- [`README.md`](../../../../README.md) — concise repository landing page;
 - [`navigation/catalog/`](../navigation/sub/catalog/) — curated descriptive discovery;
-- [`navigation/tree/`](../navigation/sub/tree/) — exhaustive implemented RC hierarchy.
+- [`navigation/tree/`](../navigation/sub/tree/) — exhaustive implemented hierarchy.
 
 The overview does not duplicate the complete tree. Use the curated catalog to discover useful areas and the tree when the exact physical hierarchy matters.
 

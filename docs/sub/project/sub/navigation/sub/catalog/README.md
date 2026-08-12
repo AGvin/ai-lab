@@ -1,6 +1,6 @@
 # Documentation Catalog
 
-Curated entry points into the implemented RC documentation. This page explains the main documentation areas; use the [Documentation Tree](../tree/) for the complete physical hierarchy.
+Curated entry points into the implemented documentation. This page explains the main documentation areas; use the [Documentation Tree](../tree/) for the complete physical hierarchy.
 
 ## Canonical entity catalog
 
@@ -16,8 +16,8 @@ Curated entry points into the implemented RC documentation. This page explains t
 
 - [Project overview](../../../overview/) — orientation and project-level documentation that does not belong to a canonical AI subject entity.
 - [Policies](../../../policies/) — AI Lab project policies and reader-facing limitations.
-- [Documentation Tree](../tree/) — exhaustive view of the currently materialized RC documentation hierarchy.
+- [Documentation Tree](../tree/) — exhaustive view of the currently materialized documentation hierarchy.
 
 ## Scope
 
-The current RC primarily materializes the selected `catalog/` and `project/` architecture. Other knowledge domains such as concepts, learning material, reusable workflows, evidence, decision support outside model-specific selection, research, and reference material are still being designed and migrated; they are not omitted here because they were rejected.
+The current documentation structure primarily materializes the selected `catalog/` and `project/` architecture. Other knowledge domains such as concepts, learning material, reusable workflows, evidence, decision support outside model-specific selection, research, and reference material are still being designed and migrated; they are not omitted here because they were rejected.
