@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models
+  type: catalog-index
+  name: Models

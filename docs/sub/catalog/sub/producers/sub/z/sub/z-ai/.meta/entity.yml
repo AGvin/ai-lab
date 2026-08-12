@@ -1,0 +1,18 @@
+entity:
+  id: catalog/producers/z/z-ai
+  type: organization
+  name: Z.AI
+  references:
+    - type: official-site
+      source:
+        url: https://z.ai/company
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.z.ai/guides/overview/overview
+      purposes:
+        - research
+      authority: official

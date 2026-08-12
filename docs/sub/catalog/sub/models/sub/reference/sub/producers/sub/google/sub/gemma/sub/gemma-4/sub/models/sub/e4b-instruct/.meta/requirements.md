@@ -2,38 +2,26 @@
 
 ## Requirements
 
-- Identify Gemma 4 E4B Instruct as a concrete dense instruction-tuned multimodal model in the Gemma 4 generation.
-- Preserve intrinsic model facts and official artifact identity from the legacy E4B documentation.
-- Keep contextual scale classification, hardware fit, runtime behavior, VRAM planning, and model-selection conclusions outside the canonical model profile.
-- Do not invent a total-parameter value when the current migration pass has not independently confirmed one.
+- Identify Gemma 4 E4B Instruct as a concrete dense instruction-tuned multimodal model in the Gemma 4 series.
+- Preserve current source-backed model facts and distinct official artifact identities.
+- Keep hardware fit, runtime behavior, VRAM planning, and selection conclusions outside the canonical model profile.
 
 ## Content Specification
 
-- Use `Gemma 4 E4B Instruct` as the page title.
-- Link the canonical Gemma 4 generation.
-- Preserve the dense architecture classification and the 4B effective-parameter identity.
-- Preserve the 128K context length.
-- Preserve text, image, and audio input with text output.
-- Preserve Apache-2.0 licensing from the represented Gemma 4 release.
-- Preserve the official `google/gemma-4-e4b-it` model page.
-- Preserve the official `google/gemma-4-e4b-it-qat-q4_0-unquantized` QAT distribution and the legacy published size of approximately 3.68 GB.
-- Explain that the QAT file includes model tensors plus multimodal components such as the vision encoder; file size is therefore an artifact property and not a complete RAM/VRAM estimate.
-- State that `E4B` denotes effective parameters and that a distinct total-parameter figure should be added only when independently verified.
-
-## Excluded Residual Content
-
-Preserve outside this canonical model profile:
-
-- contextual AI Lab `SLM` classification;
-- RAM/VRAM, KV-cache, runtime-buffer, encoder, concurrency, and hardware-fit conclusions;
-- recommendations for local, edge, or other deployment classes;
-- runtime compatibility, quantization-performance, throughput, latency, or quality conclusions;
-- model-selection and accepted-result-cost guidance.
+- Use `Gemma 4 E4B Instruct` as the page title and link the Gemma 4 series.
+- Preserve 4.5B effective parameters and 8B parameters including embeddings as distinct values.
+- Preserve 42 layers, 512-token sliding window, 128K context, text/image/audio input, text output, approximately 150M vision-encoder parameters, and approximately 300M audio-encoder parameters.
+- Preserve Apache-2.0 licensing from the current Gemma 4 model card.
+- Preserve the official base-model page, the QAT-trained unquantized Safetensors repository, and the separate official QAT Q4_0 GGUF repository.
+- Keep artifact identities separate: the QAT-trained unquantized repository is not the GGUF Q4_0 package.
+- Record current Hub file evidence with verification scope/date when useful: the unquantized QAT repository exposes a 15.9 GB `model.safetensors`; the official GGUF repository exposes a 5.15 GB Q4_0 model file plus a 992 MB multimodal projector in the verified 2026-08-11 tree.
+- Treat repository/file size only as artifact evidence, never as peak RAM/VRAM or complete runtime-memory requirement.
 
 ## Validation
 
-- Effective parameter count is not presented as total model size.
-- Published QAT file size is not equated with runtime memory requirement.
-- No total-parameter value is inferred without source confirmation.
+- Effective parameters are not presented as complete total-parameter identity.
+- Parameters including embeddings are not equated with artifact size or VRAM requirements.
+- The unquantized QAT repository is not assigned the legacy GGUF size and the GGUF artifact is not omitted.
+- The GGUF model file and required multimodal projector remain distinct components.
+- Published artifact/file size is not equated with runtime memory requirement.
 - Hardware and selection conclusions are not presented as intrinsic model facts.
-- The `member-of` relation resolves to Gemma 4.

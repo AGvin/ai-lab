@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/producers/openai
+  id: catalog/models/reference/producers/openai
   type: model-producer-view
   name: OpenAI models
   references:

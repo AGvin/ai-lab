@@ -1,9 +1,11 @@
 # Huihui Qwen3 Coder 30B A3B Artifacts
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by reviewed artifact navigation.
+Reviewed downloadable representations of the canonical huihui.ai Qwen3-Coder 30B-A3B Instruct Abliterated model.
 
-Converted, quantized, or otherwise packaged artifacts derived from this concrete model release.
+## Artifacts
 
-## Child pages
+- [`mradermacher GGUF`](./sub/mradermacher-gguf/) — static GGUF quantizations published by mradermacher.
 
-- [`mradermacher-gguf/`](./sub/mradermacher-gguf/)
+## Boundary
+
+An artifact changes representation, quantization, packaging, or runtime compatibility without becoming a new trained model identity. Exact quant type, file size, split layout, runtime behavior, and measured memory/quality belong to the artifact and its evaluation context.

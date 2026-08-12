@@ -1,6 +1,6 @@
 # Google
 
-Google is represented in this catalog as the producer organization for the migrated Google model-domain documentation.
+Google is represented in this catalog as the producer organization for the documented Google model-domain material.
 
 ## Translations
 
@@ -9,11 +9,11 @@ Google is represented in this catalog as the producer organization for the migra
 
 ## Models
 
-- [Google models](../../../../../models/sub/producers/sub/google/) — Gemini and Gemma model-domain navigation.
+- [Google models](../../../../../models/sub/reference/sub/producers/sub/google/) — Gemini and Gemma model-domain navigation.
 
 ## Provenance boundary
 
-Some legacy Gemma 4 material attributes that generation specifically to Google DeepMind. The current catalog does not yet model Google DeepMind as a separate producer entity, so that provenance statement is preserved on the Gemma 4 documentation rather than silently collapsed into a stronger Google producer relation.
+Current Gemma material attributes Gemma development to Google DeepMind. The catalog does not yet model Google DeepMind as a separate canonical producer entity, so that source-specific provenance remains on Gemma documentation rather than being silently collapsed into a stronger second producer relation.
 
 ## Official resources
 

@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/producers/alibaba/qwen/qwen3/models/qwen3-30b-a3b/versions/2507
+  id: catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-30b-a3b/versions/2507
   type: model-version
   name: Qwen3 30B-A3B Instruct 2507
   references:

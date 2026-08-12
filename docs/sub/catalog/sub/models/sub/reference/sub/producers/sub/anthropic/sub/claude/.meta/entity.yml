@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/producers/anthropic/claude
+  id: catalog/models/reference/producers/anthropic/claude
   type: model-family
   name: Claude
   references:
@@ -10,9 +10,9 @@ entity:
         - identification
         - research
       authority: official
-    - type: article
+    - type: documentation
       source:
-        url: https://www.anthropic.com/research/claude-sonnet-5
+        url: https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions
       purposes:
         - research
       authority: official

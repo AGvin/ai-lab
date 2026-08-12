@@ -1,0 +1,18 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-libraries/pyannote-audio
+  type: model-library
+  name: pyannote.audio
+  references:
+    - type: repository
+      source:
+        url: https://github.com/pyannote/pyannote-audio
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/pyannote/speaker-diarization-community-1
+      purposes:
+        - research
+      authority: official

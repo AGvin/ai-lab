@@ -1,13 +1,20 @@
-# Huihui AI
+# huihui.ai Models
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed producer-specific model index.
+This model-domain view groups reviewed model releases published under the Hugging Face handle `huihui-ai`. Canonical producer identity remains on the [huihui.ai producer page](../../../../../../../producers/sub/h/sub/huihui-ai/).
 
-This branch groups community-derived and modified models published by the Hugging Face producer huihui-ai.
+## Translations
+
+- English
+- [Українська](./l10n/uk_UA/)
+
+## Reviewed navigation
+
+- [`qwen3-coder-derived/`](./sub/qwen3-coder-derived/) — catalog grouping for reviewed huihui.ai models derived from Qwen3-Coder sources.
+
+## Ownership boundary
+
+`qwen3-coder-derived` is navigation rather than a claimed model family or series. Each concrete model owns its exact base lineage, modification method, license, model facts, and artifact navigation. Quantized repositories remain artifacts when they package the same trained weights in another representation.
 
 ## Official resources
 
-- [Hugging Face profile](https://huggingface.co/huihui-ai)
-
-## Child pages
-
-- [`qwen3-coder-derived/`](./sub/qwen3-coder-derived/)
+- [huihui-ai on Hugging Face](https://huggingface.co/huihui-ai)

@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/reference/producers/tongyi-mai/z-image/models/z-image
+  type: model
+  name: Z-Image
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/Tongyi-MAI/Z-Image
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Tongyi-MAI/Z-Image
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target:
+        path: ../../../../..

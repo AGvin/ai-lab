@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/producers/openai/whisper
+  id: catalog/models/reference/producers/openai/whisper
   type: model-family
   name: Whisper
   references:
@@ -13,6 +13,12 @@ entity:
     - type: article
       source:
         url: https://cdn.openai.com/papers/whisper.pdf
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/whisper-1
       purposes:
         - research
       authority: official

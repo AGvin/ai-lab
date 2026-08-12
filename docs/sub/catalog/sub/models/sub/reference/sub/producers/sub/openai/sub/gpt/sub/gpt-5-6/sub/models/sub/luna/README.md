@@ -1,39 +1,38 @@
 # GPT-5.6 Luna
 
-GPT-5.6 Luna is the fastest and most cost-efficient hosted model tier in the GPT-5.6 generation in the documented OpenAI positioning.
+GPT-5.6 Luna is the cost-sensitive high-volume hosted model in the GPT-5.6 series.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Generation
+## Model series
 
 - [GPT-5.6](../../../..)
 
 ## Model profile
 
 - Model ID: `gpt-5.6-luna`
-- Access form: hosted OpenAI API model
 - Input: text and images
 - Output: text
 - Context window: 1,050,000 tokens
 - Maximum output: 128,000 tokens
 - Knowledge cutoff: February 16, 2026
-- Reasoning: configurable reasoning-token support
+- Reasoning-token support: documented
 - Fine-tuning: not supported
 
-OpenAI positions Luna as the fastest and most cost-efficient GPT-5.6 tier. That positioning is provider guidance rather than independent AI Lab quality evidence.
+OpenAI positions Luna for cost-sensitive, high-volume workloads. That positioning is provider guidance rather than independent AI Lab quality evidence.
 
 ## Hosted capabilities
 
-The legacy official profile records streaming, function calling, structured outputs, web search, file search, code interpreter, hosted shell, apply patch, computer use, MCP, and tool search as supported hosted capabilities.
+Current provider documentation lists streaming, function calling, structured outputs, web search, file search, code interpreter, hosted shell, apply patch, computer use, MCP, and tool search among supported hosted capabilities. Feature state can evolve and is not an architectural property of downloadable weights.
 
-The cited official model page does not publish downloadable Luna weights or a local hardware profile. No VRAM requirement should be inferred from the hosted model identity.
+The current model page does not publish downloadable Luna weights or a local hardware profile. No VRAM requirement is inferred from the hosted model identity.
 
 ## Scope boundary
 
-This canonical page owns Luna's exact model identity and provider-documented model/API profile. Pricing, rate limits, regional availability, tool charges, caching rules, low-cost routing recommendations, cross-tier comparisons, and workload-specific reliability, quality, latency, retries, verification cost, escalation frequency, or accepted-result conclusions belong to product/service, decision-support, deployment/workflow, or evidence documentation.
+This page owns Luna's model identity and source-backed current model/API profile. Pricing, rate limits, regional availability, tool charges, caching rules, low-cost routing recommendations, cross-tier comparisons, and workload-specific acceptance conclusions belong to product/service, selection, deployment/workflow, or evidence documentation.
 
 ## Official resources
 

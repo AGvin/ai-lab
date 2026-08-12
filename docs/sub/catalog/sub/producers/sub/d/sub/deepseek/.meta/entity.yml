@@ -1,0 +1,24 @@
+entity:
+  id: catalog/producers/d/deepseek
+  type: organization
+  name: DeepSeek
+  references:
+    - type: official-site
+      source:
+        url: https://www.deepseek.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://api-docs.deepseek.com/
+      purposes:
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/deepseek-ai
+      purposes:
+        - research
+      authority: official

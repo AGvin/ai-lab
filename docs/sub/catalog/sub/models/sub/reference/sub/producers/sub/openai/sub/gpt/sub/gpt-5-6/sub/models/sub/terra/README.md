@@ -1,13 +1,13 @@
 # GPT-5.6 Terra
 
-GPT-5.6 Terra is the balanced hosted model tier in the GPT-5.6 generation for professional workloads where capability and cost both matter.
+GPT-5.6 Terra is the balanced hosted model in the GPT-5.6 series for workloads where capability and cost both matter.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Generation
+## Model series
 
 - [GPT-5.6](../../../..)
 
@@ -20,19 +20,17 @@ GPT-5.6 Terra is the balanced hosted model tier in the GPT-5.6 generation for pr
 - Maximum output: 128,000 tokens
 - Knowledge cutoff: February 16, 2026
 - Reasoning-token support: documented
-- Fine-tuning: not supported in the documented profile
+- Fine-tuning: not supported in the current profile
 
-OpenAI positions Terra as the balanced capability-and-cost tier for professional hosted workloads. That positioning is provider guidance rather than independent AI Lab quality evidence.
+OpenAI positions Terra as the GPT-5.6 model balancing intelligence and cost. That positioning is provider guidance rather than independent AI Lab quality evidence.
 
 ## Hosted capabilities
 
-The legacy official profile records streaming, function calling, structured outputs, web search, file search, image generation, code interpreter, hosted shell, apply patch, computer use, MCP, and tool search as supported hosted capabilities.
-
-These capabilities describe the hosted model/API surface and should not be confused with architectural properties of downloadable weights.
+Current provider documentation lists streaming, function calling, structured outputs, web search, file search, image generation, code interpreter, hosted shell, apply patch, computer use, MCP, and tool search among supported hosted capabilities. Feature state can evolve and is not an architectural property of downloadable weights.
 
 ## Scope boundary
 
-This canonical page owns Terra's exact model identity and provider-documented model/API profile. Token pricing, long-context pricing multipliers, primary-workload or fallback recommendations, and workload-specific quality, latency, reliability, escalation frequency, or accepted-result conclusions belong to product/service, decision-support, or evidence documentation.
+This page owns Terra's model identity and source-backed current model/API profile. Pricing, long-context pricing multipliers, fallback recommendations, and workload-specific quality, latency, reliability, or accepted-result conclusions belong to product/service, selection, or evidence documentation.
 
 ## Official resources
 

@@ -1,9 +1,7 @@
 # DavidAU Qwen3-Derived Model Releases
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by reviewed model navigation.
+Concrete reviewed model identities published by DavidAU in the Qwen3-derived navigation group.
 
-Concrete DavidAU Qwen3-derived model releases represented in the catalog.
+## Models
 
-## Child pages
-
-- [`qwen3-the-xiaolong-josiefied-omega-directive-22b/`](./sub/qwen3-the-xiaolong-josiefied-omega-directive-22b/)
+- [`Qwen3 The Xiaolong Josiefied Omega Directive 22B`](./sub/qwen3-the-xiaolong-josiefied-omega-directive-22b/)

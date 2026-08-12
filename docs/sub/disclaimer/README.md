@@ -2,11 +2,6 @@
 
 This page explains the limitations of the information, evaluations, recommendations, and practical materials published in this repository.
 
-## Translations
-
-- English
-- [Українська](./l10n/uk_UA/)
-
 ## Informational and Experimental Material
 
 The repository is an informational and experimental project. Its documentation, examples, comparisons, rankings, configuration notes, and recommendations are intended to support research, learning, and independent technical evaluation.

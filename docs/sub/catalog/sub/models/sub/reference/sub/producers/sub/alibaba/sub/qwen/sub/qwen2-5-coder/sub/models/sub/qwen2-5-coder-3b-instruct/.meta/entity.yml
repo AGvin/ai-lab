@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/producers/alibaba/qwen/qwen2-5-coder/models/qwen2-5-coder-3b-instruct
+  id: catalog/models/reference/producers/alibaba/qwen/qwen2-5-coder/models/qwen2-5-coder-3b-instruct
   type: model
   name: Qwen2.5-Coder 3B Instruct
   references:

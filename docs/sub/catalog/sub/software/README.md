@@ -1,19 +1,21 @@
 # Software
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed software-catalog introduction.
+Canonical profiles for installable or self-managed software, grouped by primary role.
 
-The software catalog contains installable or self-managed products grouped by their primary role. Hosted-only offerings belong under services, while models, datasets, hardware, and producers have separate canonical sections.
+Hosted-only or externally operated products belong under [`services/`](../services/). Models, datasets, hardware, and producers retain their separate canonical catalog ownership.
 
-## Child pages
+## Software categories
 
-- [`development-tools/`](./sub/development-tools/)
-- [`agents/`](./sub/agents/)
-- [`agent-frameworks/`](./sub/agent-frameworks/)
-- [`inference-runtimes/`](./sub/inference-runtimes/)
-- [`application-frameworks/`](./sub/application-frameworks/)
-- [`workflow-engines/`](./sub/workflow-engines/)
-- [`interfaces-and-workspaces/`](./sub/interfaces-and-workspaces/)
-- [`automation/`](./sub/automation/)
-- [`model-and-data-platforms/`](./sub/model-and-data-platforms/)
-- [`evaluation-and-observability/`](./sub/evaluation-and-observability/)
-- [`gateways/`](./sub/gateways/)
+- [`development-tools/`](./sub/development-tools/) — tools used to create, inspect, test, and review software changes.
+- [`agents/`](./sub/agents/) — software whose primary documented role is agent-like autonomous or semi-autonomous work.
+- [`agent-frameworks/`](./sub/agent-frameworks/) — frameworks and SDKs for building agent systems.
+- [`inference-runtimes/`](./sub/inference-runtimes/) — local or self-managed model execution runtimes.
+- [`application-frameworks/`](./sub/application-frameworks/) — frameworks for building AI-enabled applications.
+- [`workflow-engines/`](./sub/workflow-engines/) — software for defining or executing multi-step workflows.
+- [`interfaces-and-workspaces/`](./sub/interfaces-and-workspaces/) — user interfaces, workspaces, and interaction environments.
+- [`automation/`](./sub/automation/) — automation software supporting AI-adjacent workflows.
+- [`model-and-data-platforms/`](./sub/model-and-data-platforms/) — installable or self-managed model/data libraries, tooling, and platforms.
+- [`evaluation-and-observability/`](./sub/evaluation-and-observability/) — software for evaluation, tracing, monitoring, and observability.
+- [`gateways/`](./sub/gateways/) — gateways and routing software between AI clients, models, providers, or runtimes.
+
+Category placement records primary ownership; it does not imply that a product has only one capability.

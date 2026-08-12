@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/producers/google/gemini
+  id: catalog/models/reference/producers/google/gemini
   type: model-family
   name: Gemini
   references:

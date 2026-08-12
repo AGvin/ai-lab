@@ -1,13 +1,13 @@
 # Qwen3 14B
 
-Qwen3 14B is a dense post-trained language model in the Qwen3 generation.
+Qwen3 14B is a dense post-trained language model in the Qwen3 series.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Model family
+## Model series
 
 - [Qwen3](../../../..)
 
@@ -31,7 +31,7 @@ Published artifact size is not peak VRAM or total runtime memory. Runtime buffer
 
 ## Scope boundary
 
-This canonical page owns Qwen3 14B identity, intrinsic architecture and release facts, official references, and artifact identity useful for understanding the model. Hardware-fit recommendations, resident-model strategy, orchestration suitability, hybrid-routing advice, runtime performance, and accepted-result conclusions belong to future decision-support, deployment/workflow, or evidence documentation.
+This canonical page owns Qwen3 14B identity, intrinsic architecture and release facts, official references, and artifact identity useful for understanding the model. Hardware-fit recommendations, resident-model strategy, orchestration suitability, hybrid-routing advice, runtime performance, and accepted-result conclusions belong to selection, deployment/workflow, or evidence documentation.
 
 ## Official resources
 

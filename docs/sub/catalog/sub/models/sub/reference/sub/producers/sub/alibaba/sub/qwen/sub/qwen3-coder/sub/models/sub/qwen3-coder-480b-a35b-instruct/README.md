@@ -1,13 +1,13 @@
 # Qwen3-Coder 480B-A35B Instruct
 
-Qwen3-Coder 480B-A35B Instruct is a Mixture of Experts (MoE) coding model introduced as the first flagship artifact in the Qwen3-Coder line.
+Qwen3-Coder 480B-A35B Instruct is a Mixture of Experts (MoE) coding model in the Qwen3-Coder series.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Model line
+## Model series
 
 - [Qwen3-Coder](../../../..)
 
@@ -15,8 +15,9 @@ Qwen3-Coder 480B-A35B Instruct is a Mixture of Experts (MoE) coding model introd
 
 - Architecture: Mixture of Experts (MoE)
 - Parameters: 480B total; 35B active
-- Native context: 256,000 tokens
+- Native context: 256K tokens
 - Extended context: the launch material describes extrapolation methods supporting up to one million tokens
+- License: Apache-2.0
 
 The active-parameter count does not represent the model's total storage, memory requirement, or scale by itself.
 
@@ -24,7 +25,7 @@ Qwen Team positions this model for coding agents, tool use, and repository-scale
 
 ## Scope boundary
 
-This canonical page owns the model's identity, represented architecture/parameter/context facts, official references, and Qwen3-Coder membership. Contextual LLM/frontier/ecosystem classifications, hosted deployment details, infrastructure and hardware fit, runtime behavior, cost, and cross-model selection conclusions belong to future classification/reference, service/deployment, decision-support, or evidence documentation.
+This canonical page owns the model's identity, architecture/parameter/context/license facts, official references, and Qwen3-Coder series membership. Hosted deployment details, infrastructure and hardware fit, runtime behavior, cost, and cross-model selection conclusions belong to service/deployment, selection, or evidence documentation.
 
 ## Official resources
 

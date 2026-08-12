@@ -15,17 +15,17 @@ GPT is OpenAI's general-purpose language and multimodal model family for reasoni
 
 ChatGPT is a hosted assistant product that can route requests across different model configurations; it is not the canonical name of the GPT model family.
 
-Exact API identifiers and mutable aliases belong to the corresponding generation or concrete model. ChatGPT routing and reasoning labels such as Instant, Medium, High, Extra High, and Pro describe product-level configurations rather than separate GPT families. Likewise, a mutable alias such as `chat-latest` is not a stable canonical GPT model identity.
+Exact API identifiers and mutable aliases belong to the corresponding series or concrete model. ChatGPT routing and reasoning labels describe product-level configurations rather than separate GPT families. Likewise, a mutable alias is not automatically a stable canonical GPT model identity.
 
-## Generations
+## Model series
 
-- [GPT-5.6](./sub/gpt-5-6/) — represented generation with Sol, Terra, and Luna tiers.
+- [GPT-5.6](./sub/gpt-5-6/) — represented series with Sol, Terra, and Luna concrete models.
 
-Earlier GPT generations and specialized model lines remain separate identities when they are materially documented; they should not be collapsed into GPT-5.6 merely for navigation convenience.
+Earlier GPT generations and specialized model lines remain separate identities when materially documented; they should not be collapsed into GPT-5.6 for navigation convenience.
 
 ## Scope boundary
 
-This canonical page owns GPT family identity, producer relationship, family-level naming boundaries, and generation navigation. Product-plan availability, ChatGPT model-picker behavior, pricing, safeguards, regional rollout, API migration advice, reasoning-setting recommendations, and workload-specific quality/cost judgments belong to product/service, guide/workflow, decision-support, or evidence documentation.
+This canonical page owns GPT family identity, producer relationship, family-level naming boundaries, and series navigation. Product-plan availability, ChatGPT model-picker behavior, pricing, safeguards, regional rollout, API migration advice, reasoning-setting recommendations, and workload-specific quality/cost judgments belong to product/service, workflow, selection, or evidence documentation.
 
 ## Official resources
 

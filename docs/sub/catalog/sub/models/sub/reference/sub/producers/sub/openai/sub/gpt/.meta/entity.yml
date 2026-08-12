@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/producers/openai/gpt
+  id: catalog/models/reference/producers/openai/gpt
   type: model-family
   name: GPT
   references:

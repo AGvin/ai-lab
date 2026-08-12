@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/producers/alibaba/qwen
+  id: catalog/models/reference/producers/alibaba/qwen
   type: model-family
   name: Qwen
   references:

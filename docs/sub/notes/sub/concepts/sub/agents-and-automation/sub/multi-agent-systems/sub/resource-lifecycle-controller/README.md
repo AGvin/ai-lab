@@ -262,10 +262,6 @@ Record:
 - useful, idle, provisioning, draining, and leaked cost;
 - infrastructure cost per accepted result.
 
-## Detailed operational guidance
-
-Use the canonical [Resource Lifecycle Orchestration](../../../../../../../comparisons/sub/model-selection/sub/orchestration/sub/resource-lifecycle/) guide for the complete state machine, authoritative record, leases, idempotency, readiness proof, persistence, billing reconciliation, fault injection, and compact lifecycle record.
-
 ## Evidence and established usage
 
 Agent runtimes such as AutoGen's manage agent communication, identity, and lifecycle across standalone or distributed environments. The broader controller pattern applies established control-plane, distributed-systems, and infrastructure lifecycle practices to model and agent resources.

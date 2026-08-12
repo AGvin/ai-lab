@@ -1,15 +1,17 @@
 # Catalog
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed catalog introduction.
+Canonical entry point for concrete AI Lab entities and their source-backed documentation.
 
-The catalog contains canonical documentation for concrete AI Lab entities: Agent Skills, datasets, hardware, models, producers, hosted services, and installable software.
+Catalog nodes own stable entity identity and facts. Project policies, reader journeys, and other non-entity knowledge remain with their separate canonical owners.
 
-## Child pages
+## Catalog domains
 
-- [`agent-skills/`](./sub/agent-skills/)
-- [`datasets/`](./sub/datasets/)
-- [`hardware/`](./sub/hardware/)
-- [`models/`](./sub/models/)
-- [`producers/`](./sub/producers/)
-- [`services/`](./sub/services/)
-- [`software/`](./sub/software/)
+- [`agent-skills/`](./sub/agent-skills/) — published Agent Skill collections and independently published skills where standalone ownership is verified.
+- [`datasets/`](./sub/datasets/) — concrete datasets used, evaluated, or referenced by AI Lab documentation.
+- [`hardware/`](./sub/hardware/) — compute systems, accelerators, processors, storage, networking, power, cooling, and related hardware entities.
+- [`models/`](./sub/models/) — canonical model reference and task-oriented model selection.
+- [`producers/`](./sub/producers/) — organizations, teams, individuals, and other stable producing or publishing identities.
+- [`services/`](./sub/services/) — externally operated products whose primary identity is a hosted service.
+- [`software/`](./sub/software/) — installable or self-managed AI software grouped by primary role.
+
+The catalog is materialized incrementally from reviewed evidence. The [Documentation Tree](../project/sub/navigation/sub/tree/) owns the exhaustive implemented hierarchy.

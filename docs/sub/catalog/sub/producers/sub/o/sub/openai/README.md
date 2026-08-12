@@ -9,7 +9,7 @@ OpenAI is an AI research and product company represented in this catalog as a pr
 
 ## Models
 
-- [OpenAI models](../../../../../models/sub/producers/sub/openai/) — GPT and Whisper model-domain navigation.
+- [OpenAI models](../../../../../models/sub/reference/sub/producers/sub/openai/) — GPT and Whisper model-domain navigation.
 
 ## Agent Skill collections
 

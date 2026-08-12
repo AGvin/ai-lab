@@ -9,7 +9,7 @@ Anthropic is an AI research and product company represented in this catalog as a
 
 ## Models
 
-- [Anthropic models](../../../../../models/sub/producers/sub/anthropic/) — Claude model-domain navigation.
+- [Anthropic models](../../../../../models/sub/reference/sub/producers/sub/anthropic/) — Claude model-domain navigation.
 
 ## Agent Skill collections
 

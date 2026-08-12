@@ -1,13 +1,13 @@
 # Qwen2.5-Coder 7B Instruct
 
-Qwen2.5-Coder 7B Instruct is a coding-specialized instruction-tuned language model in the Qwen2.5-Coder line.
+Qwen2.5-Coder 7B Instruct is a coding-specialized instruction-tuned language model in the Qwen2.5-Coder series.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Model line
+## Model series
 
 - [Qwen2.5-Coder](../../../..)
 
@@ -23,7 +23,7 @@ Qwen2.5-Coder 7B Instruct is a coding-specialized instruction-tuned language mod
 
 ## Scope boundary
 
-This canonical page owns Qwen2.5-Coder 7B Instruct identity and intrinsic model facts. The contextual AI Lab `SLM` label, stronger-compact-local positioning, local/self-hosted recommendations, hardware and runtime fit, autonomous repository-work suitability, validation guidance, throughput, ecosystem maturity, frontier status, and accepted-result cost belong to future classification/reference, decision-support, deployment/workflow, or evidence documentation.
+This canonical page owns Qwen2.5-Coder 7B Instruct identity and intrinsic model facts. The contextual AI Lab `SLM` label, stronger-compact-local positioning, local/self-hosted recommendations, hardware and runtime fit, autonomous repository-work suitability, validation guidance, throughput, ecosystem maturity, frontier status, and accepted-result cost belong to classification/reference, selection, deployment/workflow, or evidence documentation.
 
 ## Official resources
 

@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/content-understanding
+  type: catalog-index
+  name: Content Understanding Model Selection

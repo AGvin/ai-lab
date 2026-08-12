@@ -2,19 +2,19 @@
 
 ## Requirements
 
-- Identify Qwen2.5-Coder 3B Instruct as a concrete instruction-tuned coding model in the Qwen2.5-Coder line.
-- Preserve concrete-model facts from the legacy page that describe the model itself.
+- Identify Qwen2.5-Coder 3B Instruct as a concrete instruction-tuned coding model in the Qwen2.5-Coder series.
+- Preserve concrete-model facts that describe the model itself.
 - Keep contextual scale classification, local-baseline recommendations, autonomous-coding suitability, hardware fit, and accepted-result conclusions outside the canonical model profile.
 
 ## Content Specification
 
 - Use `Qwen2.5-Coder 3B Instruct` as the page title.
-- Link the canonical Qwen2.5-Coder line.
+- Link the canonical Qwen2.5-Coder series.
 - Describe the model as a coding-specialized instruction-tuned language model using a dense decoder-only Transformer architecture.
 - Preserve 3.09B total parameters and 2.77B parameters excluding embeddings.
 - Preserve 36 layers and a 32,768-token context length.
 - Preserve pretraining and post-training as the documented training stages.
-- Preserve the Qwen Research License and text-input/text-output modality description from the legacy profile.
+- Preserve the Qwen Research License and text-input/text-output modality description from the official model card.
 - Include the official `Qwen/Qwen2.5-Coder-3B-Instruct` model page.
 
 ## Excluded Residual Content

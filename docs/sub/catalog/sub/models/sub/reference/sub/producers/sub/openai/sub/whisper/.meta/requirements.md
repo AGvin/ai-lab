@@ -3,32 +3,21 @@
 ## Requirements
 
 - Identify Whisper as OpenAI's downloadable multilingual automatic-speech-recognition model family.
-- Preserve model-family facts from the legacy Whisper page without inventing concrete release nodes that are not currently needed by the catalog.
-- Keep inference software, model-selection comparisons, deployment instructions, and practical integration guidance outside the canonical model-family profile.
+- Preserve family facts without inventing concrete release nodes that are not currently needed by reviewed destinations.
+- Distinguish the hosted `whisper-1` API model identity from the broader downloadable Whisper family.
+- Keep inference software, model-selection comparisons, deployment instructions, and practical integration guidance outside the canonical family profile.
 
 ## Content Specification
 
-- Use `Whisper` as the page title.
-- Link the canonical OpenAI producer page through the `produced-by` relation.
-- Preserve transcription, speech translation, and language identification as the core documented tasks.
-- Preserve the encoder-decoder Transformer architecture family and the documented scale range from approximately 39 million to 1.55 billion parameters across released model sizes.
-- Preserve the distinction between English-only and multilingual variants.
-- Mention `large-v3` and `turbo` as notable upstream family variants without creating separate canonical child nodes in this migration pass.
-- Include the official Whisper repository and paper.
-- Explain that exact release lineage, checkpoints, and download variants remain tracked upstream until a concrete Whisper release is needed by comparisons, deployment notes, or evaluation evidence.
-
-## Excluded Residual Content
-
-Preserve outside this canonical family profile:
-
-- installation and inference-tool instructions;
-- runtime, hardware, quantization, and deployment guidance;
-- speech-model comparisons and task-specific model selection;
-- integration examples and workflow recommendations.
+- Use `Whisper` as the page title and link the canonical OpenAI producer.
+- Preserve transcription, speech translation, language identification, encoder-decoder Transformer architecture, approximate 39M–1.55B family scale range, and English-only/multilingual variant distinction.
+- Mention `large-v3` and `turbo` as upstream family variants without creating child nodes solely for completeness.
+- State that `whisper-1` is a concrete hosted API model rather than an alias for the whole family.
+- Include the official Whisper repository, paper, and current `whisper-1` model documentation.
 
 ## Validation
 
-- Whisper is not treated as a hosted API product identity.
-- Family variants are not materialized as canonical child nodes without a real downstream documentation need.
-- Software/runtime documentation is not duplicated on the model-family page.
-- Producer and source links resolve correctly.
+- Whisper family identity is not collapsed into `whisper-1`.
+- `whisper-1` is not silently generalized to downloadable checkpoints.
+- Family variants are not materialized without real downstream documentation need.
+- Software/runtime guidance is not duplicated on the family page.

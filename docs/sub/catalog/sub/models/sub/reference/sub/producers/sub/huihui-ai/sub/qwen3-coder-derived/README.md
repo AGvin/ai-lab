@@ -1,9 +1,16 @@
-# Huihui AI Qwen3 Coder-Derived Models
+# huihui.ai Qwen3-Coder-Derived Models
 
-> **Temporary catalog summary:** This overview is a placeholder for a future reviewed derivative-family description.
+Reviewed navigation for huihui.ai model releases whose documented base lineage descends from Qwen3-Coder models.
 
-Community model variants derived from Qwen3 Coder bases and published by huihui-ai.
+## Translations
 
-## Child pages
+- English
+- [Українська](./l10n/uk_UA/)
 
-- [`models/`](./sub/models/)
+## Models
+
+- [`Huihui Qwen3 Coder 30B A3B Instruct Abliterated`](./sub/models/sub/huihui-qwen3-coder-30b-a3b-instruct-abliterated/) — distinct abliterated model derived from `Qwen/Qwen3-Coder-30B-A3B-Instruct`.
+
+## Taxonomy boundary
+
+This node is a catalog grouping, not a model family or series. The concrete model remains a separately published trained/modified weight identity; its GGUF repositories are artifacts rather than sibling models when they are conversions of those weights.

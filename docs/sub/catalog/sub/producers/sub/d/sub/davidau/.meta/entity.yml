@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/d/davidau
+  type: individual
+  name: David Belton
+  aliases:
+    - DavidAU
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/DavidAU
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/David-AU-github
+      purposes:
+        - identification
+        - research
+      authority: official

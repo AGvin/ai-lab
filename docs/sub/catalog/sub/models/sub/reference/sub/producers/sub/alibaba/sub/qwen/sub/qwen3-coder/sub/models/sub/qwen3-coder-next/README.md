@@ -1,13 +1,13 @@
 # Qwen3-Coder-Next
 
-Qwen3-Coder-Next is a concrete open-weight coding-agent model in the Qwen3-Coder line.
+Qwen3-Coder-Next is a concrete open-weight coding-agent model in the Qwen3-Coder series.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Model line
+## Model series
 
 - [Qwen3-Coder](../../../..)
 
@@ -26,7 +26,7 @@ Qwen Team positions Qwen3-Coder-Next for coding agents, long-horizon coding task
 
 ## Scope boundary
 
-This canonical page owns the model's identity, intrinsic architecture/parameter/context/reasoning/license facts, official references, and Qwen3-Coder membership. Direct-use and serving instructions, tensor-parallel deployment, context-reduction troubleshooting, consumer-hardware fit, quantized-artifact behavior, contextual LLM/frontier/ecosystem labels, and task-specific evaluation belong to future deployment/workflow, classification/reference, decision-support, or evidence documentation.
+This canonical page owns the model's identity, intrinsic architecture/parameter/context/reasoning/license facts, official references, and Qwen3-Coder series membership. Serving instructions, tensor-parallel deployment, hardware fit, quantized-artifact behavior, and task-specific evaluation belong to deployment/workflow, artifact, selection, or evidence documentation.
 
 ## Official resources
 
