@@ -1,6 +1,6 @@
 # Documentation Tree
 
-Complete implemented RC documentation hierarchy. This page mirrors materialized documentation nodes; it is not the curated descriptive catalog.
+Complete implemented documentation hierarchy. This page mirrors materialized documentation nodes; it is not the curated descriptive catalog.
 
 - [`catalog/`](../../../../../catalog/)
   - [`agent-skills/`](../../../../../catalog/sub/agent-skills/)
