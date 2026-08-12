@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/model-and-data-platforms/dataset-curation
+  type: catalog-index
+  name: Dataset Curation
