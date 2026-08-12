@@ -131,7 +131,7 @@ Complete implemented documentation hierarchy. This page mirrors materialized doc
       - [`prime-radiant/`](../../../../../catalog/sub/producers/sub/p/sub/prime-radiant/)
     - [`q/`](../../../../../catalog/sub/producers/sub/q/)
       - [`qwen-team/`](../../../../../catalog/sub/producers/sub/q/sub/qwen-team/)
-    - [`t/`](../../../../../catalog/sub/producers/sub/t/sub/tongyi-mai/)
+    - [`t/`](../../../../../catalog/sub/producers/sub/t/)
       - [`tongyi-mai/`](../../../../../catalog/sub/producers/sub/t/sub/tongyi-mai/)
     - [`z/`](../../../../../catalog/sub/producers/sub/z/)
       - [`z-ai/`](../../../../../catalog/sub/producers/sub/z/sub/z-ai/)
