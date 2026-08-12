@@ -1,0 +1,12 @@
+entity:
+  id: catalog/services/development/agents/jules
+  type: service
+  name: Jules
+  references:
+    - type: official-site
+      source:
+        url: https://jules.google/
+      purposes:
+        - identification
+        - research
+      authority: official

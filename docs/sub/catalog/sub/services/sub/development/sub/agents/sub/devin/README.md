@@ -1,8 +1,6 @@
 # Devin
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-Devin is Cognition's managed software-engineering agent for planning and executing coding tasks in a hosted development environment.
+Devin is a hosted software-development agent for planning and executing coding work in a managed development environment.
 
 ## Official resources
 

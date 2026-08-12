@@ -1,0 +1,12 @@
+entity:
+  id: catalog/services/development/agents/bolt
+  type: service
+  name: Bolt
+  references:
+    - type: official-site
+      source:
+        url: https://bolt.new/
+      purposes:
+        - identification
+        - research
+      authority: official

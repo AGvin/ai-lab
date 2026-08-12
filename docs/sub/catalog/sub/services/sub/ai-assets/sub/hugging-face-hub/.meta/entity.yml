@@ -1,0 +1,18 @@
+entity:
+  id: catalog/services/ai-assets/hugging-face-hub
+  type: service
+  name: Hugging Face Hub
+  references:
+    - type: official-site
+      source:
+        url: https://huggingface.co/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/hub/
+      purposes:
+        - research
+      authority: official

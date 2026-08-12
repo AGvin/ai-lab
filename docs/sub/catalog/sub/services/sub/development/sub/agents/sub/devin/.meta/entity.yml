@@ -1,0 +1,12 @@
+entity:
+  id: catalog/services/development/agents/devin
+  type: service
+  name: Devin
+  references:
+    - type: official-site
+      source:
+        url: https://devin.ai/
+      purposes:
+        - identification
+        - research
+      authority: official

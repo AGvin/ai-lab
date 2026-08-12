@@ -1,0 +1,13 @@
+# Documentation Requirements
+
+## Requirements
+
+- Identify Devin as the canonical hosted development-service profile represented at this path.
+- Include the official product site as the identity and research reference.
+- Keep mutable capabilities, pricing, limits, execution behavior, and availability source-backed and time-scoped when added.
+- Keep repository, model, runtime, and development-tool facts with their respective canonical owners.
+
+## Validation
+
+- The page contains no temporary-summary or placeholder wording.
+- The official resource link matches canonical entity metadata.

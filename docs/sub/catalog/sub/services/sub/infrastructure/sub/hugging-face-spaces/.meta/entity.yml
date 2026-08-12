@@ -1,0 +1,12 @@
+entity:
+  id: catalog/services/infrastructure/hugging-face-spaces
+  type: service
+  name: Hugging Face Spaces
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/hub/spaces
+      purposes:
+        - identification
+        - research
+      authority: official
