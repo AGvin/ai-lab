@@ -1,8 +1,6 @@
 # NVIDIA
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed producer profile.
-
-NVIDIA is a computing-platform company and the producer of the NVIDIA Skills catalog represented here.
+NVIDIA is a producer represented in the catalog through the NVIDIA Skills collection and related materialized entities.
 
 ## Agent Skill collections
 

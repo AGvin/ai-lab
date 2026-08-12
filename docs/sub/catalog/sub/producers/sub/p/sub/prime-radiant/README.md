@@ -1,8 +1,6 @@
 # Prime Radiant
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed producer profile.
-
-Prime Radiant is the producer behind the Superpowers skill collection. The project is led by Jesse Vincent and distributed through multiple coding-agent plugin and package systems.
+Prime Radiant is represented in the catalog as the producer identity associated with the Superpowers skill collection.
 
 ## Agent Skill collections
 

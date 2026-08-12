@@ -1,0 +1,20 @@
+entity:
+  id: catalog/producers/p/prime-radiant
+  type: organization
+  name: Prime Radiant
+  references:
+    - type: official-site
+      source:
+        url: https://primeradiant.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/obra/superpowers
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official Superpowers repository associated with this producer profile.

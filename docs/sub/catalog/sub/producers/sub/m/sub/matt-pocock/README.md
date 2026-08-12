@@ -1,8 +1,6 @@
 # Matt Pocock
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed producer profile.
-
-Matt Pocock is the producer and maintainer of the Matt Pocock Skills collection.
+Matt Pocock is the producer and maintainer associated with the Matt Pocock Skills collection represented in this catalog.
 
 ## Agent Skill collections
 

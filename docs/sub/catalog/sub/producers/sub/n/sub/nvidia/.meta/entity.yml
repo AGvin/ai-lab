@@ -1,0 +1,19 @@
+entity:
+  id: catalog/producers/n/nvidia
+  type: organization
+  name: NVIDIA
+  references:
+    - type: official-site
+      source:
+        url: https://www.nvidia.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA
+      purposes:
+        - identification
+        - research
+      authority: official
