@@ -1,0 +1,18 @@
+entity:
+  id: catalog/agent-skills
+  type: catalog-index
+  name: Agent Skills
+  references:
+    - type: official-site
+      source:
+        url: https://agentskills.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: specification
+      source:
+        url: https://agentskills.io/specification
+      purposes:
+        - research
+      authority: official

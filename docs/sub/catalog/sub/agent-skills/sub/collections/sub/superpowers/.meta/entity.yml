@@ -1,0 +1,16 @@
+entity:
+  id: catalog/agent-skills/collections/superpowers
+  type: skill-collection
+  name: Superpowers
+  references:
+    - type: repository
+      source:
+        url: https://github.com/obra/superpowers
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../producers/sub/p/sub/prime-radiant
