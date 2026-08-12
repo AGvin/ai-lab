@@ -1,4 +1,0 @@
-node:
-  children:
-    schema: catalog-item
-    template: catalog/item
