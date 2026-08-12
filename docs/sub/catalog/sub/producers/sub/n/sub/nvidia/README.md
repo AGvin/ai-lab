@@ -4,11 +4,7 @@ NVIDIA is a producer represented in the catalog through the NVIDIA Skills collec
 
 ## Agent Skill collections
 
-- [`NVIDIA Skills`](../../../../../agent-skills/sub/collections/sub/nvidia-skills/)
-
-## Selected Agent Skills
-
-- [`Skill Card Generator`](../../../../../agent-skills/sub/skills/sub/skill-card-generator/)
+- [NVIDIA Skills](../../../../../agent-skills/sub/collections/sub/nvidia-skills/)
 
 ## Official resources
 
