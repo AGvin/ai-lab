@@ -1,7 +1,5 @@
 # Hardware
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed hardware-catalog introduction.
+Canonical catalog area for concrete compute systems, accelerators, processors, modules, storage, networking, power, cooling, and other hardware relevant to AI Lab documentation.
 
-This section will contain canonical profiles for compute systems, accelerators, processors, modules, storage, networking, power, cooling, and other relevant hardware.
-
-No concrete hardware inventory is materialized in the current RC package yet.
+No concrete hardware profiles are materialized yet. Hardware entries should be added when there is enough source-backed information to maintain a stable canonical profile.
