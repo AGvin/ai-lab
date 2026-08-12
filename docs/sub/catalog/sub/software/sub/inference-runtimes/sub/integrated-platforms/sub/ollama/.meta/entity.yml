@@ -1,0 +1,12 @@
+entity:
+  id: catalog/software/inference-runtimes/integrated-platforms/ollama
+  type: software
+  name: Ollama
+  references:
+    - type: official-site
+      source:
+        url: https://ollama.com/
+      purposes:
+        - identification
+        - research
+      authority: official
