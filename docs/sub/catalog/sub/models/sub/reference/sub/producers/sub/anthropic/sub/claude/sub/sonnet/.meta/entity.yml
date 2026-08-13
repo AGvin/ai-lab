@@ -13,4 +13,4 @@ entity:
   relations:
     - type: member-of
       target:
-        path: ../..
+        path: ../../..
