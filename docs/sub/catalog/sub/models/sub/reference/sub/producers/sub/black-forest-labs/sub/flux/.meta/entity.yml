@@ -10,3 +10,7 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../../../producers/sub/b/sub/black-forest-labs
