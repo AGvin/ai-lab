@@ -1,7 +1,5 @@
 # Agents
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
-
 Ready-to-use AI agent products that perform development or general computer tasks. Products are grouped by whether their core execution can be run locally or materially depends on a vendor-operated service.
 
 ## Child pages

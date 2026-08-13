@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces
+  type: catalog-index
+  name: Interfaces and Workspaces
