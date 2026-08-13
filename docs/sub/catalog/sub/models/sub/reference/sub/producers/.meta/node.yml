@@ -1,0 +1,6 @@
+node:
+  template: catalog/category
+  children:
+    template: catalog/models/reference/producer
+    children:
+      template: catalog/models/reference/family

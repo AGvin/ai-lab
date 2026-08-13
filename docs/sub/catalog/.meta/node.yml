@@ -1,0 +1,4 @@
+node:
+  template: catalog/landing
+  children:
+    template: catalog/domain
