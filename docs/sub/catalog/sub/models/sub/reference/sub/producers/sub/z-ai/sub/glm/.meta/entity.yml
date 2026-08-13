@@ -13,4 +13,4 @@ entity:
   relations:
     - type: produced-by
       target:
-        path: ../../../../../../../../producers/sub/z/sub/z-ai
+        path: ../../../../../../../../../../producers/sub/z/sub/z-ai
