@@ -19,4 +19,4 @@ entity:
   relations:
     - type: produced-by
       target:
-        path: ../../../../../../../../producers/sub/a/sub/anthropic
+        path: ../../../../../../../../../../producers/sub/a/sub/anthropic
