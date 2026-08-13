@@ -20,4 +20,4 @@ entity:
   relations:
     - type: produced-by
       target:
-        path: ../../../../../../../../producers/sub/t/sub/tongyi-mai
+        path: ../../../../../../../../../../producers/sub/t/sub/tongyi-mai
