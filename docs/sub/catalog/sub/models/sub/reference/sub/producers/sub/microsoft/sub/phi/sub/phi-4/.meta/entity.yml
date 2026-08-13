@@ -10,3 +10,7 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: member-of
+      target:
+        path: ../../..
