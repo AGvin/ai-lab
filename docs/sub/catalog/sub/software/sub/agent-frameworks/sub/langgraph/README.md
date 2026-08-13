@@ -1,9 +1,7 @@
 # LangGraph
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-LangGraph is a graph-based orchestration framework for stateful, long-running, and controllable agent workflows.
+LangGraph is a low-level orchestration framework and runtime for building and managing long-running, stateful agents and workflows, with an emphasis on durable execution and control.
 
 ## Official resources
 
-- [Official documentation](https://langchain-ai.github.io/langgraph/)
+- [Official documentation](https://docs.langchain.com/oss/python/langgraph/overview)

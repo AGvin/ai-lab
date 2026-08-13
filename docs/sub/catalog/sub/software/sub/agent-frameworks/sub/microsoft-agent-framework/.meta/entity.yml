@@ -1,0 +1,18 @@
+entity:
+  id: catalog/software/agent-frameworks/microsoft-agent-framework
+  type: software
+  name: Microsoft Agent Framework
+  references:
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/agent-framework/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/microsoft/agent-framework
+      purposes:
+        - research
+      authority: official

@@ -1,0 +1,18 @@
+entity:
+  id: catalog/software/agent-frameworks/agno
+  type: software
+  name: Agno
+  references:
+    - type: official-site
+      source:
+        url: https://www.agno.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.agno.com/
+      purposes:
+        - research
+      authority: official

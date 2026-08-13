@@ -1,8 +1,6 @@
 # Google Agent Development Kit
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-Google Agent Development Kit (ADK) is an open-source framework for constructing, evaluating, and deploying tool-using and multi-agent applications.
+Google Agent Development Kit (ADK) is an open-source framework for building tool-using and multi-agent applications, with supporting paths for evaluation and deployment.
 
 ## Official resources
 

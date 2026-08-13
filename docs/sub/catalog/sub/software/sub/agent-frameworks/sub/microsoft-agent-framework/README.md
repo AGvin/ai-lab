@@ -1,9 +1,8 @@
 # Microsoft Agent Framework
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-Microsoft Agent Framework is an open-source SDK and runtime project for building tool-using, conversational, and multi-agent applications across Microsoft-supported development stacks.
+Microsoft Agent Framework is an open-source framework for building tool-using, conversational, multi-agent, and workflow-based AI applications across Microsoft-supported development stacks.
 
 ## Official resources
 
+- [Official documentation](https://learn.microsoft.com/en-us/agent-framework/)
 - [Official repository](https://github.com/microsoft/agent-framework)
