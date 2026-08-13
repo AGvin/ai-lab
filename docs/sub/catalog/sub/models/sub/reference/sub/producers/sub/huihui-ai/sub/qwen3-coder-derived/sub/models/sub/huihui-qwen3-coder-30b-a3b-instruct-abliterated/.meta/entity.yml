@@ -10,12 +10,13 @@ entity:
         - identification
         - research
       authority: official
-    - type: lineage
+    - type: registry
       source:
         url: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
       purposes:
         - research
-      authority: official
+      authority: upstream
+      note: Canonical upstream base model for this derivative.
   relations:
     - type: produced-by
       target:
