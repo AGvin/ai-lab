@@ -1,0 +1,19 @@
+entity:
+  id: catalog/producers/h/hugging-face-inc
+  type: organization
+  name: Hugging Face, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://huggingface.co/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://huggingface.co/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
