@@ -1,0 +1,19 @@
+entity:
+  id: catalog/producers/r/replit-inc
+  type: organization
+  name: Replit, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://replit.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://replit.com/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
