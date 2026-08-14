@@ -3,7 +3,7 @@
 ## Requirements
 
 - List only materialized canonical producer profiles beginning with G.
-- Keep the index concise and link Google.
+- Keep the index concise and link Google and Google DeepMind.
 
 ## Validation
 

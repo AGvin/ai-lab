@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/agents/hybrid/openai-codex
+  type: software
+  name: OpenAI Codex
+  references:
+    - type: official-site
+      source:
+        url: https://openai.com/codex/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://help.openai.com/en/articles/11369540-using-codex-with-chatgpt
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/o/sub/openai

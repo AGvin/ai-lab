@@ -1,0 +1,18 @@
+entity:
+  id: catalog/producers/g/google-deepmind
+  type: organization
+  name: Google DeepMind
+  references:
+    - type: official-site
+      source:
+        url: https://deepmind.google/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://deepmind.google/models/model-cards/
+      purposes:
+        - research
+      authority: official

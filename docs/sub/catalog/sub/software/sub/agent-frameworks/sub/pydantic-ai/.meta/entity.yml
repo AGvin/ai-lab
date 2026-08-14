@@ -1,0 +1,18 @@
+entity:
+  id: catalog/software/agent-frameworks/pydantic-ai
+  type: software
+  name: Pydantic AI
+  references:
+    - type: documentation
+      source:
+        url: https://pydantic.dev/docs/ai/overview/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/pydantic/pydantic-ai
+      purposes:
+        - research
+      authority: official

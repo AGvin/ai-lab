@@ -15,13 +15,6 @@ Anthropic is an AI research and product company represented in this catalog as a
 
 - [Anthropic Skills](../../../../../agent-skills/sub/collections/sub/anthropic-skills/)
 
-## Selected Agent Skills
-
-- [DOCX](../../../../../agent-skills/sub/skills/sub/docx/)
-- [PDF](../../../../../agent-skills/sub/skills/sub/pdf/)
-- [PPTX](../../../../../agent-skills/sub/skills/sub/pptx/)
-- [XLSX](../../../../../agent-skills/sub/skills/sub/xlsx/)
-
 ## Official resources
 
 - [Official website](https://www.anthropic.com/)

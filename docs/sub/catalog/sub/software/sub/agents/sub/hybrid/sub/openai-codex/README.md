@@ -1,9 +1,12 @@
 # OpenAI Codex
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+OpenAI Codex is OpenAI's coding agent for writing, reviewing, and shipping code across ChatGPT, editor, terminal, and cloud workflows. Codex supports local client workflows such as CLI and IDE use while delegated cloud tasks run in OpenAI-managed environments.
 
-OpenAI Codex is an agentic software-development product available through command-line, application, and managed execution surfaces for repository tasks, code changes, and reviews.
+## Related
+
+- [OpenAI](../../../../../../../producers/sub/o/sub/openai/) — canonical producer organization.
 
 ## Official resources
 
-- [Official website](https://openai.com/codex/)
+- [OpenAI Codex](https://openai.com/codex/)
+- [Using Codex with ChatGPT](https://help.openai.com/en/articles/11369540-using-codex-with-chatgpt)

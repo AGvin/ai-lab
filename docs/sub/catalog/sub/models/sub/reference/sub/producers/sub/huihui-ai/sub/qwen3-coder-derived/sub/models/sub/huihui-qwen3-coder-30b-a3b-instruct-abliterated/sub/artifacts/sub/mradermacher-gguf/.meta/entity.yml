@@ -10,9 +10,14 @@ entity:
         - identification
         - research
       authority: official
-    - type: lineage
+    - type: registry
       source:
         url: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
       purposes:
         - research
-      authority: official
+      authority: upstream
+      note: Source model for this GGUF artifact collection.
+  relations:
+    - type: artifact-of
+      target:
+        path: ../../../../..

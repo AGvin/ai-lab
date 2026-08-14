@@ -1,0 +1,12 @@
+entity:
+  id: catalog/software/agent-frameworks/smolagents
+  type: software
+  name: smolagents
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/smolagents/
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -15,10 +15,6 @@ OpenAI is an AI research and product company represented in this catalog as a pr
 
 - [OpenAI Skills](../../../../../agent-skills/sub/collections/sub/openai-skills/)
 
-## Selected Agent Skills
-
-- [Skill Creator](../../../../../agent-skills/sub/skills/sub/skill-creator/)
-
 ## Official resources
 
 - [Official website](https://openai.com/)

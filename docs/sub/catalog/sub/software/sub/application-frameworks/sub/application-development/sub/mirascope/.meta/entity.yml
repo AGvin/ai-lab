@@ -1,0 +1,18 @@
+entity:
+  id: catalog/software/application-frameworks/application-development/mirascope
+  type: software
+  name: Mirascope
+  references:
+    - type: documentation
+      source:
+        url: https://mirascope.com/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://mirascope.com/
+      purposes:
+        - identification
+      authority: official

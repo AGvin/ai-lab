@@ -1,7 +1,5 @@
 # Development Tools
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
-
 Tools and systems that support AI-assisted software development, including editors, review tools, specification workflows, and structured agentic development processes.
 
 ## Child pages

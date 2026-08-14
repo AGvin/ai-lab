@@ -1,24 +1,28 @@
 # NVIDIA Skills
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed collection profile.
-
-NVIDIA Skills is NVIDIA's catalog of verified Agent Skills for CUDA-X libraries, AI Blueprints, and platform tools. The catalog adds provenance, signatures, skill cards, evaluation data, and automated synchronization from product repositories.
+NVIDIA Skills is NVIDIA's official verified Agent Skills catalog for NVIDIA software and platform workflows. The catalog includes NVIDIA-authored and product-repository skills and uses a synchronization pipeline to keep catalog entries aligned with their sources.
 
 ## Producer
 
-- [`NVIDIA`](../../../../../producers/sub/n/sub/nvidia/)
+- [NVIDIA](../../../../../producers/sub/n/sub/nvidia/)
 
 ## Selected skills
 
-- [`Skill Card Generator`](../../../skills/sub/skill-card-generator/)
+| Skill | Purpose | Official source |
+| --- | --- | --- |
+| Skill Card Generator | Generate or update a draft NVIDIA governance card for an existing Agent Skill directory. | [Source](https://github.com/NVIDIA/skills/tree/main/skills/skill-card-generator) |
 
-## Installation and dependencies
+### Skill Card Generator
 
-- Skills are selectively installable through compatible installers.
-- The selected Skill Card Generator requires Python, Jinja2, bundled scripts and references, and explicit file/shell permissions.
-- Cryptographic verification and catalog membership do not replace review of the selected skill's runtime permissions and dependencies.
+Skill Card Generator gathers source signals from an existing skill, helps build grounded card context, renders the governance card, and validates that review markers have been resolved before submission. It is not a general skill-authoring tool and does not replace required human legal, safety, or owner review.
+
+Current prerequisites include Python 3, `jinja2`, an existing target skill directory, and the declared file/shell permissions. The bundled workflow uses `discover_assets.py`, `render_card.py`, and `validate_submission.py` together with the style guide, card template, and supporting governance catalogs.
+
+## Installation
+
+The NVIDIA catalog supports selective installation through the `skills` CLI. Catalog contents evolve over time, so use the official catalog rather than a hardcoded skill count when selecting additional skills.
 
 ## Official resources
 
-- [Official repository](https://github.com/NVIDIA/skills)
-- [Official documentation](https://docs.nvidia.com/skills/)
+- [NVIDIA Skills repository](https://github.com/NVIDIA/skills)
+- [NVIDIA Skills documentation](https://docs.nvidia.com/skills/)

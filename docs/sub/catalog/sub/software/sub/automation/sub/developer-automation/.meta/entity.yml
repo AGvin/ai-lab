@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/automation/developer-automation
+  type: catalog-index
+  name: Developer Automation

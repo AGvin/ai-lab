@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/agents/local/openclaw
+  type: software
+  name: OpenClaw
+  references:
+    - type: repository
+      source:
+        url: https://github.com/openclaw/openclaw
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://openclaw.ai/
+      purposes:
+        - identification
+        - research
+      authority: official

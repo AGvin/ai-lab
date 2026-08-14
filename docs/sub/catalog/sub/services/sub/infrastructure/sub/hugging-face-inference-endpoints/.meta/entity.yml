@@ -1,0 +1,18 @@
+entity:
+  id: catalog/services/infrastructure/hugging-face-inference-endpoints
+  type: service
+  name: Hugging Face Inference Endpoints
+  references:
+    - type: official-site
+      source:
+        url: https://huggingface.co/inference-endpoints/dedicated
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/inference-endpoints/
+      purposes:
+        - research
+      authority: official

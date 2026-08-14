@@ -1,0 +1,12 @@
+entity:
+  id: catalog/software/agents/local/pi
+  type: software
+  name: Pi
+  references:
+    - type: documentation
+      source:
+        url: https://pi.dev/docs/latest
+      purposes:
+        - identification
+        - research
+      authority: official

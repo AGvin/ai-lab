@@ -13,7 +13,7 @@ Concrete Gemma 4 models currently represented in the migrated catalog.
 
 ## Models
 
-- [Gemma 4 E2B Instruct](./sub/e2b-instruct/) — dense instruction-tuned multimodal model with 2B effective parameters.
-- [Gemma 4 E4B Instruct](./sub/e4b-instruct/) — dense instruction-tuned multimodal model with 4B effective parameters.
+- [Gemma 4 E2B Instruct](./sub/e2b-instruct/) — dense instruction-tuned multimodal model with 2.3B effective parameters.
+- [Gemma 4 E4B Instruct](./sub/e4b-instruct/) — dense instruction-tuned multimodal model with 4.5B effective parameters.
 
 `E` denotes effective parameters. Exact total parameters, artifact distributions, context and modality details remain on the corresponding concrete model pages; contextual scale classification, hardware fit, and deployment guidance remain outside this index.

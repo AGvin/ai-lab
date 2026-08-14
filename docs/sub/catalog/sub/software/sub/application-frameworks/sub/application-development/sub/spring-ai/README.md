@@ -1,9 +1,8 @@
 # Spring AI
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-Spring AI provides Spring-based abstractions and integrations for models, embeddings, vector stores, tools, structured outputs, and retrieval-augmented applications.
+Spring AI is an application framework for integrating AI models and generative-AI patterns into Java and Spring applications. Its current framework surface includes portable model APIs, chat clients, embeddings, vector-store integrations, tool calling, structured output, Advisors, MCP, data ingestion, and retrieval-augmented generation.
 
 ## Official resources
 
-- [Official project page](https://spring.io/projects/spring-ai)
+- [Spring AI reference](https://docs.spring.io/spring-ai/reference/)
+- [Spring AI project](https://spring.io/projects/spring-ai)

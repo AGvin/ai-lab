@@ -1,0 +1,18 @@
+entity:
+  id: catalog/software/agents/local/opencode
+  type: software
+  name: OpenCode
+  references:
+    - type: documentation
+      source:
+        url: https://opencode.ai/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://opencode.ai/
+      purposes:
+        - identification
+      authority: official

@@ -1,0 +1,12 @@
+entity:
+  id: catalog/software/agents/local/kiro-cli
+  type: software
+  name: Kiro CLI
+  references:
+    - type: documentation
+      source:
+        url: https://kiro.dev/docs/cli/
+      purposes:
+        - identification
+        - research
+      authority: official

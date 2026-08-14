@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/automation/integration-automation
+  type: catalog-index
+  name: Integration Automation

@@ -1,6 +1,6 @@
 # Google
 
-Google is represented in this catalog as the producer organization for the documented Google model-domain material.
+Google is represented in this catalog as the broader producer organization for the documented Google model-domain material.
 
 ## Translations
 
@@ -11,9 +11,13 @@ Google is represented in this catalog as the producer organization for the docum
 
 - [Google models](../../../../../models/sub/reference/sub/producers/sub/google/) — Gemini and Gemma model-domain navigation.
 
+## Related producer
+
+- [Google DeepMind](../google-deepmind/) — separate canonical producer identity for model provenance attributed specifically to Google DeepMind.
+
 ## Provenance boundary
 
-Current Gemma material attributes Gemma development to Google DeepMind. The catalog does not yet model Google DeepMind as a separate canonical producer entity, so that source-specific provenance remains on Gemma documentation rather than being silently collapsed into a stronger second producer relation.
+Google and Google DeepMind remain distinct organization identities. Current official Gemma documentation describes Gemma development by Google DeepMind and other teams across Google, so model provenance may reference both without collapsing one identity into the other.
 
 ## Official resources
 

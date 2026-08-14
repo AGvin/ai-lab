@@ -1,9 +1,8 @@
 # OpenHands
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-OpenHands is an open-source platform for software-development agents that can work with code, terminals, browsers, and isolated execution environments, with both self-hosted and managed usage options.
+OpenHands is an open-source AI-driven software-development platform whose current product surface includes a Software Agent SDK, CLI, Local GUI, hosted OpenHands Cloud, and enterprise self-hosting. Agent workflows can run locally or use managed cloud execution, so the platform is not tied to one mandatory runtime or deployment model.
 
 ## Official resources
 
-- [Official website](https://www.all-hands.dev/)
+- [OpenHands documentation](https://docs.openhands.dev/overview/introduction)
+- [OpenHands repository](https://github.com/OpenHands/OpenHands)

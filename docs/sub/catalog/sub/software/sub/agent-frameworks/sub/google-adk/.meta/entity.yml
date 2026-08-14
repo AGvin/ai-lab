@@ -1,0 +1,14 @@
+entity:
+  id: catalog/software/agent-frameworks/google-adk
+  type: software
+  name: Google Agent Development Kit
+  aliases:
+    - Google ADK
+  references:
+    - type: documentation
+      source:
+        url: https://google.github.io/adk-docs/
+      purposes:
+        - identification
+        - research
+      authority: official

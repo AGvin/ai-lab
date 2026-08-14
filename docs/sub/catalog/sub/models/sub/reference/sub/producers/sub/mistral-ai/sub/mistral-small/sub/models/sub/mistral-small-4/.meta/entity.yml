@@ -34,3 +34,7 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: member-of
+      target:
+        path: ../../../../..

@@ -1,0 +1,18 @@
+entity:
+  id: catalog/software/agents/hybrid/github-copilot
+  type: software
+  name: GitHub Copilot
+  references:
+    - type: official-site
+      source:
+        url: https://github.com/features/copilot
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.github.com/en/copilot/concepts/agents
+      purposes:
+        - research
+      authority: official

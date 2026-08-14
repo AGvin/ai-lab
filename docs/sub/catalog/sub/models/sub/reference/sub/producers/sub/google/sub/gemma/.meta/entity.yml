@@ -19,4 +19,7 @@ entity:
   relations:
     - type: produced-by
       target:
-        path: ../../../../../../../../producers/sub/g/sub/google
+        path: ../../../../../../../../../../producers/sub/g/sub/google
+    - type: produced-by
+      target:
+        path: ../../../../../../../../../../producers/sub/g/sub/google-deepmind

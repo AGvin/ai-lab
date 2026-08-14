@@ -1,9 +1,8 @@
 # OpenCode
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-OpenCode is an open-source coding agent for terminal and editor workflows with multi-provider model support, repository tools, sessions, and extensibility.
+OpenCode is an open-source AI coding agent available through terminal, desktop, and IDE-extension surfaces. It works with project code in the user's development environment and supports configurable model providers, including local or externally hosted model access.
 
 ## Official resources
 
-- [Official website](https://opencode.ai/)
+- [OpenCode documentation](https://opencode.ai/docs)
+- [OpenCode](https://opencode.ai/)

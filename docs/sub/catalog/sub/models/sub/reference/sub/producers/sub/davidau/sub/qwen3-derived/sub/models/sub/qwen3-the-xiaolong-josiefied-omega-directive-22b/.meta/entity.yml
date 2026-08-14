@@ -10,19 +10,21 @@ entity:
         - identification
         - research
       authority: official
-    - type: lineage
+    - type: registry
       source:
         url: https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Omega-Directive-22B-uncensored-abliterated
       purposes:
         - research
-      authority: official
-    - type: lineage
+      authority: upstream
+      note: Immediate parent model in the published merge lineage.
+    - type: registry
       source:
         url: https://huggingface.co/DavidAU/Qwen3-The-Josiefied-Omega-Directive-22B-uncensored-abliterated
       purposes:
         - research
-      authority: official
+      authority: upstream
+      note: Immediate parent model in the published merge lineage.
   relations:
     - type: produced-by
       target:
-        path: ../../../../../../../../../../../../../producers/sub/d/sub/davidau
+        path: ../../../../../../../../../../../../../../producers/sub/d/sub/davidau

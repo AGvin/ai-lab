@@ -1,0 +1,18 @@
+entity:
+  id: catalog/software/agents/local/cline
+  type: software
+  name: Cline
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cline.bot/cline-overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://cline.bot/
+      purposes:
+        - identification
+      authority: official

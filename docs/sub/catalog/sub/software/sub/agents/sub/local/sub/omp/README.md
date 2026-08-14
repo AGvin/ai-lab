@@ -1,9 +1,12 @@
 # OMP
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+OMP, also known as Oh My Pi, is a terminal-first AI coding agent derived from Pi. It expands the Pi lineage into a coding-oriented surface with integrated editing and developer tools, language tooling, browser capabilities, subagents, sessions, and extensions.
 
-OMP, also known as Oh My Pi, is a terminal coding agent derived from Pi with integrated editing tools, language-server support, subagents, browser tooling, and a plugin system.
+## Related
+
+- [Pi](../pi/) — upstream agent lineage.
 
 ## Official resources
 
-- [Official website](https://omp.sh/)
+- [OMP](https://omp.sh/)
+- [Oh My Pi repository](https://github.com/can1357/oh-my-pi)

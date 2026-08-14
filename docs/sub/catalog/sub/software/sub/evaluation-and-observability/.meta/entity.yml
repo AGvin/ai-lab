@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/evaluation-and-observability
+  type: catalog-index
+  name: Evaluation and Observability

@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/development-tools
+  type: catalog-index
+  name: Development Tools

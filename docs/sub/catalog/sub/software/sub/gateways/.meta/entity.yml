@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/gateways
+  type: catalog-index
+  name: Gateways

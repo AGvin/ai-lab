@@ -1,0 +1,18 @@
+entity:
+  id: catalog/producers/b/block
+  type: organization
+  name: Block
+  references:
+    - type: official-site
+      source:
+        url: https://block.xyz/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://opensource.block.xyz/
+      purposes:
+        - research
+      authority: official

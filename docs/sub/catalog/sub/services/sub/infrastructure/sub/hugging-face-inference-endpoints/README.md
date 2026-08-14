@@ -1,8 +1,6 @@
 # Hugging Face Inference Endpoints
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-Hugging Face Inference Endpoints provides dedicated managed deployments for serving selected models on configurable cloud infrastructure.
+Hugging Face Inference Endpoints is a hosted service for dedicated managed model deployments on configurable infrastructure.
 
 ## Official resources
 

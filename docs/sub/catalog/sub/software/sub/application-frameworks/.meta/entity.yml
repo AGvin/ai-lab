@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/application-frameworks
+  type: catalog-index
+  name: Application Frameworks

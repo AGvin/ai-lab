@@ -1,7 +1,5 @@
 # Datasets
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed dataset-catalog introduction.
+Canonical catalog area for concrete datasets used, evaluated, or referenced by AI Lab documentation.
 
-This section will contain canonical profiles for concrete datasets used, evaluated, or referenced by AI Lab documentation.
-
-No concrete dataset inventory is materialized in the current RC package yet.
+No concrete dataset profiles are materialized yet. Dataset entries should be added when there is enough source-backed information to maintain a stable canonical profile.

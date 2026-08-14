@@ -1,8 +1,6 @@
 # Replit Agent
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-Replit Agent is a managed development agent that builds, modifies, runs, and deploys applications inside the Replit hosted development platform.
+Replit Agent is a hosted development agent for building, modifying, running, and deploying applications in the Replit environment.
 
 ## Official resources
 

@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/application-frameworks/application-development/genkit
+  type: software
+  name: Genkit
+  references:
+    - type: documentation
+      source:
+        url: https://genkit.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://firebase.google.com/docs/genkit/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/g/sub/google

@@ -1,0 +1,4 @@
+node:
+  template: catalog/child-index
+  children:
+    template: catalog/models/reference/artifact

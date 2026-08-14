@@ -1,0 +1,18 @@
+entity:
+  id: catalog/software/agent-frameworks/langchain
+  type: software
+  name: LangChain
+  references:
+    - type: official-site
+      source:
+        url: https://www.langchain.com/langchain
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.langchain.com/oss/python/langchain/overview
+      purposes:
+        - research
+      authority: official

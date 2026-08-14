@@ -1,8 +1,6 @@
 # OpenAI Agents SDK
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-OpenAI Agents SDK is a lightweight framework for building tool-using agents with handoffs, guardrails, sessions, tracing, and model-provider integrations.
+OpenAI Agents SDK is a lightweight SDK for building agentic applications with agents, tools and handoffs, guardrails, sessions, tracing, and extensible runtime behavior.
 
 ## Official resources
 

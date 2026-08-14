@@ -1,9 +1,7 @@
 # Pi
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-Pi is a minimal terminal coding-agent harness designed to be extended through TypeScript extensions, skills, prompt templates, themes, and reusable Pi packages.
+Pi is a minimal local terminal coding harness designed to keep its core small while moving workflow-specific behavior into reusable extensions and resources. Its extensibility includes TypeScript extensions, skills, prompt templates, themes, Pi packages, provider configuration, and programmatic integration surfaces.
 
 ## Official resources
 
-- [Official documentation](https://pi.dev/docs/latest)
+- [Pi documentation](https://pi.dev/docs/latest)

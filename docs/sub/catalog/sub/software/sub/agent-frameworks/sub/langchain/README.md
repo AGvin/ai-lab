@@ -1,9 +1,8 @@
 # LangChain
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-LangChain is a framework and integration ecosystem for building applications and agents that combine language models with tools, retrieval, memory, and external systems.
+LangChain is an open-source framework with prebuilt agent architecture and integrations for models and tools, intended as the higher-level agent framework in the LangChain ecosystem.
 
 ## Official resources
 
-- [Official website](https://www.langchain.com/)
+- [Official website](https://www.langchain.com/langchain)
+- [Official documentation](https://docs.langchain.com/oss/python/langchain/overview)

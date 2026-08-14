@@ -1,0 +1,5 @@
+node:
+  children:
+    template: catalog/category
+    children:
+      template: catalog/agent-skills/collection

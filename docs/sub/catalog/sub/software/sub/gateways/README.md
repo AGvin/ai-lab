@@ -1,7 +1,5 @@
 # Gateways
 
-> **Temporary catalog summary:** This practical overview is approved for the RC structure but remains a placeholder for a future fully reviewed category document.
-
 Gateways provide a stable control point between AI clients or applications and one or more model backends.
 
 They do not execute models themselves and are not remote model providers. Instead, they receive requests, normalize or proxy traffic, choose a backend, and apply shared access and traffic policies before forwarding the request.

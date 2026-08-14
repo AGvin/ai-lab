@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/model-clients
+  type: catalog-index
+  name: Model Clients

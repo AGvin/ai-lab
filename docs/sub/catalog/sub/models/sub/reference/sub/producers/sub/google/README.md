@@ -1,15 +1,16 @@
 # Google models
 
-This model-domain view groups the Gemini and Gemma model families represented in the migrated catalog. Canonical producer identity remains on the Google producer page.
+This model-domain view groups the Gemini and Gemma model families represented in the migrated catalog. Canonical organization identities remain in the producer catalog.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Canonical producer
+## Canonical producers
 
-- [Google](../../../../../producers/sub/g/sub/google/)
+- [Google](../../../../../producers/sub/g/sub/google/) — broader Google organization identity.
+- [Google DeepMind](../../../../../producers/sub/g/sub/google-deepmind/) — separate producer identity for provenance attributed specifically to Google DeepMind.
 
 ## Model families
 

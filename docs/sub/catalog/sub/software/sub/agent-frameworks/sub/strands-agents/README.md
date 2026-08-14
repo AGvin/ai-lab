@@ -1,9 +1,7 @@
 # Strands Agents
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-Strands Agents is an open-source SDK for building model-driven agents with tools, memory, multi-agent patterns, and deployment integrations.
+Strands Agents is an open-source SDK for building and operating AI agents with tools, model-provider integrations, memory, evaluation, and multi-agent patterns. The SDK supports Python and TypeScript.
 
 ## Official resources
 
-- [Official website](https://strandsagents.com/)
+- [Official website and documentation](https://strandsagents.com/)

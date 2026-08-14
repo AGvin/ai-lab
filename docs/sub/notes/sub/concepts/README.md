@@ -163,6 +163,7 @@ Concepts for running trained models locally or as services and understanding the
 
 ### Specialized
 
+- [`context-extension/`](./sub/inference-and-serving/sub/context-extension/) — Techniques that extend a model's usable context length beyond its native or default configuration.
 - [`flash-attention/`](./sub/inference-and-serving/sub/flash-attention/) — Attention implementations optimized to reduce memory traffic and improve GPU efficiency.
 - [`continuous-batching/`](./sub/inference-and-serving/sub/continuous-batching/) — Dynamically combining active inference requests to improve serving utilization.
 - [`speculative-decoding/`](./sub/inference-and-serving/sub/speculative-decoding/) — Using a faster draft process to propose tokens for verification by a target model.

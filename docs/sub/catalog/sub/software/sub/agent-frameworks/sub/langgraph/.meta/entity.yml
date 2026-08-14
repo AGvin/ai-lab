@@ -1,0 +1,12 @@
+entity:
+  id: catalog/software/agent-frameworks/langgraph
+  type: software
+  name: LangGraph
+  references:
+    - type: documentation
+      source:
+        url: https://docs.langchain.com/oss/python/langgraph/overview
+      purposes:
+        - identification
+        - research
+      authority: official

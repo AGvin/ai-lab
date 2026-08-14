@@ -1,10 +1,10 @@
 # Agents
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+Ready-to-use AI agent products for development or general computer work. This catalog groups software agents by where the agent execution is primarily operated, rather than by whether the product can call a remote model API.
 
-Ready-to-use AI agent products that perform development or general computer tasks. Products are grouped by whether their core execution can be run locally or materially depends on a vendor-operated service.
+## Agent categories
 
-## Child pages
+- [Local Agents](./sub/local/) — installable or self-managed agents whose primary execution environment is controlled by the user.
+- [Hybrid Agents](./sub/hybrid/) — products whose supported product surface materially spans both user-controlled local or self-managed execution and managed or hosted execution.
 
-- [`local/`](./sub/local/)
-- [`hybrid/`](./sub/hybrid/)
+Hosted-first products whose primary execution environment is vendor-operated are cataloged separately under [Hosted Development Agents](../../../services/sub/development/sub/agents/).

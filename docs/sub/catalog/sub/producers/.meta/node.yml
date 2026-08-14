@@ -1,0 +1,5 @@
+node:
+  children:
+    template: catalog/alphabetical-index
+    children:
+      template: catalog/producers/profile

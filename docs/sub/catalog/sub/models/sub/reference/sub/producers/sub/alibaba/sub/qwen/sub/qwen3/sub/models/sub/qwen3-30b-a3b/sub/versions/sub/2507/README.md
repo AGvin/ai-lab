@@ -1,6 +1,6 @@
 # Qwen3 30B-A3B Instruct 2507
 
-The represented `2507` release retains the Qwen3 30B-A3B concrete-model identity while recording release-specific behavior.
+Qwen3 30B-A3B Instruct 2507 is an updated instruction-tuned release of Qwen3 30B-A3B.
 
 ## Translations
 
@@ -14,9 +14,9 @@ The represented `2507` release retains the Qwen3 30B-A3B concrete-model identity
 
 ## Release behavior
 
-The current RC source describes Qwen3 30B-A3B Instruct 2507 as an updated non-thinking instruction release with expanded capabilities and a longer native context window.
+This release supports non-thinking mode only and has a native context length of 262,144 tokens.
 
-The current migration source does not establish the exact longer native context value or enumerate those expanded capabilities, so this page preserves the claim without adding unsupported detail. Model-wide architecture, parameter counts, and artifact context remain on the parent model page.
+Model-wide architecture and parameter counts remain on the parent Qwen3 30B-A3B page.
 
 ## Official resources
 
