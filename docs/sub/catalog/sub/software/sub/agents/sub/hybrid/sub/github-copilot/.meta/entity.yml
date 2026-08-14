@@ -16,3 +16,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/g/sub/github-inc

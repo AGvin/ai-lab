@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/g/github-inc
+  type: organization
+  name: GitHub, Inc.
+  aliases:
+    - GitHub
+  references:
+    - type: official-site
+      source:
+        url: https://github.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: legal
+      source:
+        url: https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
