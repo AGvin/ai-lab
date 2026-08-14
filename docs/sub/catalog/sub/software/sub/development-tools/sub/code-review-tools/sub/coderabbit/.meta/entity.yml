@@ -1,0 +1,23 @@
+entity:
+  id: catalog/software/development-tools/code-review-tools/coderabbit
+  type: software
+  name: CodeRabbit
+  references:
+    - type: official-site
+      source:
+        url: https://www.coderabbit.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.coderabbit.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/c/sub/coderabbit-inc

@@ -9,10 +9,11 @@
 ## Content Specification
 
 - Link Cline Bot Inc.
+- Link CodeRabbit Inc.
 - Link CrewAI, Inc.
 
 ## Validation
 
-- Cline Bot Inc. and CrewAI, Inc. are listed and resolve to their canonical producer nodes.
+- Cline Bot Inc., CodeRabbit Inc., and CrewAI, Inc. are listed and resolve to their canonical producer nodes.
 - No producer outside the C index is listed.
 - The index does not duplicate model, software, or service profiles.
