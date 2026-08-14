@@ -12,6 +12,6 @@
 
 ## Validation
 
-- NVIDIA is listed and resolves to its materialized producer node.
+- Nous Research and NVIDIA are listed and resolve to their materialized producer nodes.
 - No producer outside the N index is listed.
 - The page contains no temporary-summary or RC wording.

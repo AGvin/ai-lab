@@ -1,0 +1,19 @@
+entity:
+  id: catalog/producers/n/nous-research
+  type: organization
+  name: Nous Research
+  references:
+    - type: official-site
+      source:
+        url: https://nousresearch.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/NousResearch
+      purposes:
+        - identification
+        - research
+      authority: official

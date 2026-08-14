@@ -3,6 +3,13 @@ entity:
   type: software
   name: Hermes Agent
   references:
+    - type: official-site
+      source:
+        url: https://hermes-agent.nousresearch.com/
+      purposes:
+        - identification
+        - research
+      authority: official
     - type: documentation
       source:
         url: https://hermes-agent.nousresearch.com/docs/
@@ -10,9 +17,14 @@ entity:
         - identification
         - research
       authority: official
-    - type: official-site
+    - type: repository
       source:
-        url: https://hermes-agent.nousresearch.com/
+        url: https://github.com/NousResearch/hermes-agent
       purposes:
         - identification
+        - research
       authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/n/sub/nous-research
