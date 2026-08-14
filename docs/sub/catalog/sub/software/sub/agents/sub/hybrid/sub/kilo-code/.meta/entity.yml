@@ -3,11 +3,17 @@ entity:
   type: software
   name: Kilo Code
   references:
-    - type: documentation
+    - type: official-site
       source:
-        url: https://kilo.ai/docs/code-with-ai
+        url: https://kilo.ai/
       purposes:
         - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://kilo.ai/docs/code-with-ai/platforms/cli
+      purposes:
         - research
       authority: official
     - type: documentation
@@ -23,3 +29,7 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/k/sub/kilo-code-inc
