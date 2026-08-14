@@ -1,13 +1,20 @@
 # Visual Studio Code
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Visual Studio Code (VS Code) is Microsoft's extensible code editor and development environment. Its extension ecosystem and built-in integration surfaces make it a common host for AI-assisted development without changing the editor itself into a single coding-agent product.
 
-Visual Studio Code is a cross-platform source-code editor with a large extension ecosystem and built-in support for debugging, source control, terminals, and AI-assisted development integrations.
+## Extension and execution boundary
+
+Extensions, terminal/tasks/debugger access, remote-development targets, Workspace Trust, and connected AI services can all expand what a VS Code session can read or execute. Review extension provenance and permissions, workspace trust, repository and secret access, telemetry/privacy settings, remote hosts, and external model services independently.
+
+GitHub Copilot and third-party coding agents can integrate deeply with VS Code, but they remain separate product identities where the catalog represents them separately.
+
+## Related
+
+- [Extensions](./sub/extensions/) — editor-specific extension navigation.
+- [Microsoft](../../../../../../../producers/sub/m/sub/microsoft/) — canonical producer organization.
 
 ## Official resources
 
-- [Official website](https://code.visualstudio.com/)
-
-## Child pages
-
-- [`extensions/`](./sub/extensions/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Documentation](https://code.visualstudio.com/docs)
+- [Repository](https://github.com/microsoft/vscode)
