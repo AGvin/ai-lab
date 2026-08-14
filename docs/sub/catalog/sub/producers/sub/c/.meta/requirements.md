@@ -8,6 +8,7 @@
 
 ## Content Specification
 
+- Link Can Bölük.
 - Link Cline Bot Inc.
 - Link CodeRabbit Inc.
 - Link Cognition AI, Inc.
@@ -15,6 +16,6 @@
 
 ## Validation
 
-- Cline Bot Inc., CodeRabbit Inc., Cognition AI, Inc., and CrewAI, Inc. are listed and resolve to their canonical producer nodes.
+- Can Bölük, Cline Bot Inc., CodeRabbit Inc., Cognition AI, Inc., and CrewAI, Inc. are listed and resolve to their canonical producer nodes.
 - No producer outside the C index is listed.
 - The index does not duplicate model, software, or service profiles.

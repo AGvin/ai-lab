@@ -1,0 +1,20 @@
+entity:
+  id: catalog/producers/c/can-boluk
+  type: person
+  name: Can Bölük
+  aliases:
+    - can1357
+  references:
+    - type: profile
+      source:
+        url: https://github.com/can1357
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/can1357/oh-my-pi
+      purposes:
+        - research
+      authority: official

@@ -20,6 +20,9 @@ entity:
         - research
       authority: official
   relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/c/sub/can-boluk
     - type: derived-from
       target:
         path: ../../pi
