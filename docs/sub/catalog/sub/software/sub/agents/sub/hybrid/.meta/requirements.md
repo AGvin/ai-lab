@@ -12,7 +12,7 @@
 ## Content Specification
 
 - Explain the Hybrid Agents boundary before the child list.
-- Describe Claude Code, Factory Droid, GitHub Copilot, OpenAI Codex, and OpenHands concisely from current official sources.
+- Describe Claude Code, Factory Droid, GitHub Copilot, Kilo Code, OpenAI Codex, and OpenHands concisely from current official sources.
 - Link the sibling Local Agents index and the Hosted Development Agents service index as adjacent ownership boundaries.
 
 ## Validation
