@@ -8,10 +8,11 @@
 
 ## Content Specification
 
+- Link Keygraph.
 - Link Kilo Code Inc.
 
 ## Validation
 
-- Kilo Code Inc. is listed and resolves to its canonical producer node.
+- Keygraph and Kilo Code Inc. are listed and resolve to canonical producer nodes.
 - No producer outside the K index is listed.
 - The index does not duplicate model, software, or service profiles.
