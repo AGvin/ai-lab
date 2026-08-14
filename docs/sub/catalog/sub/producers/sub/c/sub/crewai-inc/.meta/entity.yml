@@ -1,7 +1,9 @@
 entity:
-  id: catalog/software/agent-frameworks/crewai
-  type: software
-  name: CrewAI
+  id: catalog/producers/c/crewai-inc
+  type: organization
+  name: CrewAI, Inc.
+  aliases:
+    - CrewAI
   references:
     - type: official-site
       source:
@@ -10,20 +12,16 @@ entity:
         - identification
         - research
       authority: official
-    - type: documentation
+    - type: terms
       source:
-        url: https://docs.crewai.com/
+        url: https://www.crewai.com/terms-of-use
       purposes:
+        - identification
         - research
       authority: official
     - type: repository
       source:
         url: https://github.com/crewAIInc/crewAI
       purposes:
-        - identification
         - research
       authority: official
-  relations:
-    - type: produced-by
-      target:
-        path: ../../../../../../producers/sub/c/sub/crewai-inc
