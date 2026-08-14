@@ -1,0 +1,19 @@
+entity:
+  id: catalog/producers/o/ollama-inc
+  type: organization
+  name: Ollama Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://ollama.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://ollama.com/terms
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -1,36 +1,29 @@
 entity:
-  id: catalog/software/inference-runtimes/integrated-platforms/ollama
+  id: catalog/software/inference-runtimes/integrated-platforms/lm-studio
   type: software
-  name: Ollama
+  name: LM Studio
   references:
     - type: official-site
       source:
-        url: https://ollama.com/
+        url: https://lmstudio.ai/
       purposes:
         - identification
         - research
       authority: official
     - type: documentation
       source:
-        url: https://docs.ollama.com/
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: repository
-      source:
-        url: https://github.com/ollama/ollama
+        url: https://lmstudio.ai/docs/app
       purposes:
         - identification
         - research
       authority: official
     - type: privacy-policy
       source:
-        url: https://ollama.com/privacy
+        url: https://lmstudio.ai/app-privacy
       purposes:
         - research
       authority: official
   relations:
     - type: produced-by
       target:
-        path: ../../../../../../../../producers/sub/o/sub/ollama-inc
+        path: ../../../../../../../../producers/sub/e/sub/element-labs-inc

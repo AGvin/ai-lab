@@ -9,9 +9,10 @@
 ## Content Specification
 
 - Link Earendil Inc.
+- Link Element Labs, Inc.
 
 ## Validation
 
-- Earendil Inc. is listed and resolves to its canonical producer node.
+- Earendil Inc. and Element Labs, Inc. are listed and resolve to canonical producer nodes.
 - No producer outside the E index is listed.
 - The index does not duplicate software or service profiles.
