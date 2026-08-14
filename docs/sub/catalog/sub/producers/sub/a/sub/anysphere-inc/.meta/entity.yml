@@ -1,0 +1,19 @@
+entity:
+  id: catalog/producers/a/anysphere-inc
+  type: organization
+  name: Anysphere, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://cursor.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://cursor.com/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official

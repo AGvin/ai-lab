@@ -1,0 +1,35 @@
+entity:
+  id: catalog/software/development-tools/code-editors/cursor
+  type: software
+  name: Cursor
+  references:
+    - type: official-site
+      source:
+        url: https://cursor.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://cursor.com/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: privacy-policy
+      source:
+        url: https://cursor.com/privacy
+      purposes:
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://cursor.com/terms-of-service
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/a/sub/anysphere-inc
