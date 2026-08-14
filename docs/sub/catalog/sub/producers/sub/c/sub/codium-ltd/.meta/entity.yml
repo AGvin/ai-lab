@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/c/codium-ltd
+  type: organization
+  name: Codium Ltd.
+  aliases:
+    - Qodo
+    - CodiumAI
+  references:
+    - type: official-site
+      source:
+        url: https://www.qodo.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://www.qodo.ai/terms/
+      purposes:
+        - identification
+        - research
+      authority: official
