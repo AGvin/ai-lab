@@ -16,7 +16,8 @@ Qwen2.5-Coder 3B Instruct is a coding-specialized instruction-tuned language mod
 - Architecture: dense decoder-only Transformer
 - Parameters: 3.09B total; 2.77B excluding embeddings
 - Layers: 36
-- Context length: 32,768 tokens
+- Configured/default context: 32,768 tokens
+- Extended context: up to 131,072 tokens with YaRN (factor 4; original context 32,768)
 - Training stage: pretraining and post-training
 - License: Qwen Research License
 - Inputs and outputs: text input and generated text output
