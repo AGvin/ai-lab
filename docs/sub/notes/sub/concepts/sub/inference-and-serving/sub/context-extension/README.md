@@ -7,3 +7,6 @@ This category includes methods that adapt positional encoding or related context
 ## Methods
 
 - [`yarn/`](./sub/yarn/) — YaRN extends the usable context window of RoPE-based transformer models.
+- [`ntk-aware-scaling/`](./sub/ntk-aware-scaling/) — NTK-aware scaling extends RoPE context by rescaling the rotary frequency base.
+- [`longrope/`](./sub/longrope/) — LongRoPE uses non-uniform positional interpolation and searched rescaling factors for longer contexts.
+- [`position-interpolation/`](./sub/position-interpolation/) — Position Interpolation rescales position indices so longer sequences fit within the original positional range.
