@@ -9,9 +9,10 @@
 ## Content Specification
 
 - Link StackBlitz, Inc.
+- Link SWE-agent.
 
 ## Validation
 
-- StackBlitz, Inc. is listed and resolves to its canonical producer node.
+- StackBlitz, Inc. and SWE-agent are listed and resolve to their canonical producer nodes.
 - No producer outside the S index is listed.
 - The index does not duplicate software or service profiles.
