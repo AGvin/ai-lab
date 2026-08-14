@@ -1,0 +1,12 @@
+entity:
+  id: catalog/software/agents/local/shannon
+  type: software
+  name: Shannon
+  references:
+    - type: repository
+      source:
+        url: https://github.com/KeygraphHQ/shannon
+      purposes:
+        - identification
+        - research
+      authority: official
