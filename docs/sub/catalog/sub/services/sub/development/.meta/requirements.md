@@ -2,8 +2,8 @@
 
 ## Requirements
 
-- Present `development/` as the services catalog index for hosted products whose primary role is assisting software creation or managed development-agent execution.
-- Link the `agents/` child index and keep concrete hosted-agent identity with child service profiles.
+- Present `development/` as the services catalog index for hosted products whose primary role is assisting software creation, managed development-agent execution, or hosted development-security workflows.
+- Link the `agents/` and `security/` child indexes and keep concrete service identity with child profiles.
 - Keep installable or self-managed development software under `catalog/software/`.
 
 ## Validation

@@ -1,0 +1,23 @@
+entity:
+  id: catalog/services/development/security/keygraph
+  type: service
+  name: Keygraph
+  references:
+    - type: official-site
+      source:
+        url: https://keygraph.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://keygraph.io/docs/explanations/keygraph-platform/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/k/sub/keygraph
