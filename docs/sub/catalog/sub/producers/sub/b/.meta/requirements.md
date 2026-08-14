@@ -2,9 +2,16 @@
 
 ## Requirements
 
-- List only materialized canonical producer profiles beginning with B.
-- Keep the index concise and link Black Forest Labs.
+- Provide the alphabetical producer index for canonical producer names beginning with B.
+- List every materialized canonical producer under this index exactly once.
+- Keep the page concise and navigational.
+
+## Content Specification
+
+- Link Black Forest Labs and Block.
 
 ## Validation
 
-- The index does not duplicate model or service profiles.
+- Black Forest Labs and Block are listed and resolve to canonical producer nodes.
+- No producer outside the B index is listed.
+- The index does not duplicate model, software, or service profiles.
