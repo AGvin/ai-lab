@@ -1,0 +1,23 @@
+entity:
+  id: catalog/software/development-tools/code-review-tools/hunk
+  type: software
+  name: Hunk
+  references:
+    - type: official-site
+      source:
+        url: https://www.hunk.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/modem-dev/hunk
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/m/sub/modem

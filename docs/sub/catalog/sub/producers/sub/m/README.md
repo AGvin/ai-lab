@@ -7,3 +7,4 @@ Canonical producer profiles beginning with M.
 - [`Matt Pocock`](./sub/matt-pocock/)
 - [`Microsoft`](./sub/microsoft/)
 - [`Mistral AI`](./sub/mistral-ai/)
+- [`Modem`](./sub/modem/)

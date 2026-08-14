@@ -1,0 +1,18 @@
+entity:
+  id: catalog/producers/m/modem
+  type: organization
+  name: Modem
+  references:
+    - type: official-site
+      source:
+        url: https://modem.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/modem-dev/hunk
+      purposes:
+        - research
+      authority: official
