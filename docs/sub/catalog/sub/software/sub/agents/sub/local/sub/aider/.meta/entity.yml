@@ -1,0 +1,12 @@
+entity:
+  id: catalog/software/agents/local/aider
+  type: software
+  name: Aider
+  references:
+    - type: documentation
+      source:
+        url: https://aider.chat/docs/
+      purposes:
+        - identification
+        - research
+      authority: official
