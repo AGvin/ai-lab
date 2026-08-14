@@ -16,3 +16,7 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../producers/sub/l/sub/langchain-inc

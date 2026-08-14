@@ -10,3 +10,14 @@ entity:
         - identification
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/langchain-ai/langgraph
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../producers/sub/l/sub/langchain-inc
