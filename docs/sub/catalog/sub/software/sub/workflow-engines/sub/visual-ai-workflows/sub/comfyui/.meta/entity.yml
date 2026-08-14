@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/workflow-engines/visual-ai-workflows/comfyui
+  type: software
+  name: ComfyUI
+  references:
+    - type: official-site
+      source:
+        url: https://www.comfy.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.comfy.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Comfy-Org/ComfyUI
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/c/sub/comfy-organization-inc

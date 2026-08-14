@@ -1,0 +1,19 @@
+entity:
+  id: catalog/producers/c/comfy-organization-inc
+  type: organization
+  name: Comfy Organization Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://www.comfy.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.comfy.org/
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -5,5 +5,6 @@
 - [CodeRabbit Inc.](./sub/coderabbit-inc/)
 - [Codium Ltd.](./sub/codium-ltd/)
 - [Cognition AI, Inc.](./sub/cognition-ai-inc/)
+- [Comfy Organization Inc.](./sub/comfy-organization-inc/)
 - [Continue Dev, Inc.](./sub/continue-dev-inc/)
 - [CrewAI, Inc.](./sub/crewai-inc/)
