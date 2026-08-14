@@ -20,4 +20,4 @@ entity:
   relations:
     - type: artifact-of
       target:
-        path: ../../../..
+        path: ../../../../..
