@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/agents/local/continue
+  type: software
+  name: Continue
+  references:
+    - type: official-site
+      source:
+        url: https://continue.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.continue.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/continuedev/continue
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/c/sub/continue-dev-inc

@@ -13,10 +13,11 @@
 - Link CodeRabbit Inc.
 - Link Codium Ltd.
 - Link Cognition AI, Inc.
+- Link Continue Dev, Inc.
 - Link CrewAI, Inc.
 
 ## Validation
 
-- Can Bölük, Cline Bot Inc., CodeRabbit Inc., Codium Ltd., Cognition AI, Inc., and CrewAI, Inc. are listed and resolve to their canonical producer nodes.
+- Can Bölük, Cline Bot Inc., CodeRabbit Inc., Codium Ltd., Cognition AI, Inc., Continue Dev, Inc., and CrewAI, Inc. are listed and resolve to their canonical producer nodes.
 - No producer outside the C index is listed.
 - The index does not duplicate model, software, or service profiles.
