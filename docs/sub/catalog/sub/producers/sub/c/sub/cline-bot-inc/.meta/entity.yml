@@ -1,7 +1,9 @@
 entity:
-  id: catalog/software/agents/local/cline
-  type: software
-  name: Cline
+  id: catalog/producers/c/cline-bot-inc
+  type: organization
+  name: Cline Bot Inc.
+  aliases:
+    - Cline
   references:
     - type: official-site
       source:
@@ -10,9 +12,9 @@ entity:
         - identification
         - research
       authority: official
-    - type: documentation
+    - type: privacy-policy
       source:
-        url: https://docs.cline.bot/cline-overview
+        url: https://cline.bot/privacy
       purposes:
         - identification
         - research
@@ -21,10 +23,5 @@ entity:
       source:
         url: https://github.com/cline/cline
       purposes:
-        - identification
         - research
       authority: official
-  relations:
-    - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/c/sub/cline-bot-inc
