@@ -1,0 +1,27 @@
+entity:
+  id: catalog/producers/c/cognition-ai-inc
+  type: organization
+  name: Cognition AI, Inc.
+  aliases:
+    - Cognition
+  references:
+    - type: official-site
+      source:
+        url: https://cognition.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: legal
+      source:
+        url: https://cognition.ai/Cognition-DPA.pdf
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: trust-center
+      source:
+        url: https://trust.cognition.ai/
+      purposes:
+        - research
+      authority: official
