@@ -1,9 +1,15 @@
-# Goose
+# goose
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+goose is an open-source, local-first general-purpose AI agent with desktop, CLI, and API surfaces. It runs on the user's machine and can support coding, research, writing, automation, data analysis, and other tool-driven workflows with configurable model providers and extensions.
 
-Goose is an open-source local agent from Block that can modify code, execute commands, and extend its capabilities through tools and MCP servers.
+Goose was founded and originally developed by Block and is now stewarded by the Agentic AI Foundation (AAIF) at the Linux Foundation.
+
+## Related
+
+- [Block](../../../../../../../producers/sub/b/sub/block/) — original producer.
+- [Agentic AI Foundation](../../../../../../../producers/sub/a/sub/agentic-ai-foundation/) — current project steward.
 
 ## Official resources
 
-- [Official documentation](https://block.github.io/goose/)
+- [goose repository](https://github.com/aaif-goose/goose)
+- [goose documentation](https://block.github.io/goose/)
