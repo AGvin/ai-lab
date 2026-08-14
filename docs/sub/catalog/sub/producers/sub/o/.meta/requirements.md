@@ -12,6 +12,6 @@
 
 ## Validation
 
-- Ollama Inc., OpenAI, and OpenClaw Foundation are listed and resolve to their materialized producer nodes.
+- Ollama Inc., OpenAI, OpenClaw Foundation, and OpenRouter, Inc. are listed and resolve to their materialized producer nodes.
 - No producer outside the O index is listed.
 - The page contains no temporary-summary or RC wording.

@@ -1,28 +1,35 @@
 entity:
-  id: catalog/services/ai-assets/hugging-face-hub
+  id: catalog/services/model-apis/openrouter
   type: service
-  name: Hugging Face Hub
+  name: OpenRouter
   references:
     - type: official-site
       source:
-        url: https://huggingface.co/
+        url: https://openrouter.ai/
       purposes:
         - identification
         - research
       authority: official
     - type: documentation
       source:
-        url: https://huggingface.co/docs/hub/
+        url: https://openrouter.ai/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: privacy-policy
+      source:
+        url: https://openrouter.ai/privacy/
       purposes:
         - research
       authority: official
     - type: terms-of-service
       source:
-        url: https://huggingface.co/terms-of-service
+        url: https://openrouter.ai/terms
       purposes:
         - research
       authority: official
   relations:
     - type: produced-by
       target:
-        path: ../../../../../../producers/sub/h/sub/hugging-face-inc
+        path: ../../../../../../producers/sub/o/sub/openrouter-inc

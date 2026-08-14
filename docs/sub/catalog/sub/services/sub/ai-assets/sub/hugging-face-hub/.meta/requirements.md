@@ -2,13 +2,17 @@
 
 ## Requirements
 
-- Identify Hugging Face Hub as the canonical service profile for the hosted Hugging Face asset repository and collaboration surface represented in this catalog.
-- Include the official site and Hub documentation as source references.
-- Keep model, dataset, application, and producer identity with their respective canonical owners instead of duplicating those profiles here.
-- Keep mutable hosted-service behavior, limits, availability, and pricing explicitly scoped and source-verified when added.
+- Identify Hugging Face Hub as Hugging Face, Inc.'s hosted repository and collaboration service for versioned model, dataset, and machine-learning application repositories.
+- Preserve the legacy umbrella-platform value by describing discovery, hosting, sharing, versioning, collaboration, and local download/use workflows at the Hub boundary without absorbing the identities of concrete models, datasets, Spaces, Inference services, or open-source libraries.
+- Distinguish hosted Hub asset/repository services from local execution of downloaded artifacts and from Hugging Face open-source client/runtime libraries.
+- Preserve useful adoption boundaries around repository visibility, access tokens, gated/private assets, model/dataset licenses, provenance, remote code or custom model code, and third-party artifact trust.
+- Keep storage, pricing, limits, feature availability, repository counts, and other mutable hosted-service facts source-backed and time-scoped when expanded.
+- Link the canonical Hugging Face, Inc. producer profile.
+- Include current official Hub and Terms references.
 
 ## Validation
 
-- The page contains no temporary-summary or placeholder wording.
-- Official resource links match canonical entity references.
-- The page does not absorb concrete model or dataset profiles.
+- The page does not recreate a single umbrella Hugging Face software/platform entity.
+- Downloaded-asset execution is not described as Hub-hosted inference.
+- Concrete model/dataset/service/library identities remain with their canonical owners.
+- The producer relation resolves to Hugging Face, Inc.

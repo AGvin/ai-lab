@@ -3,7 +3,7 @@
 ## Requirements
 
 - Present `model-apis/` as the services catalog index for hosted remote API access to models, providers, or routing backends.
-- Link Hugging Face Inference Providers as the currently materialized direct child.
+- Link Hugging Face Inference Providers and OpenRouter as the currently materialized direct children.
 - Keep concrete model identity and durable model facts with Model Reference.
 - Keep API pricing, limits, provider availability, routing behavior, and other mutable hosted state source-backed and time-scoped when added.
 
