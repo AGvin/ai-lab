@@ -5,7 +5,7 @@
 - Present `services/` as the canonical catalog owner for hosted or externally operated products whose primary identity is a service.
 - Keep the ownership boundary with installable or self-managed software explicit; those products belong under `catalog/software/`.
 - Keep underlying model identity and durable model facts with Model Reference rather than duplicating them as service facts.
-- Link every currently materialized direct service category: AI assets, development, infrastructure, and model APIs.
+- Link every currently materialized direct service category: AI assets, assistant workspaces, development, infrastructure, and model APIs.
 - Keep the page concise; detailed provider/product facts and mutable hosted-state claims belong to concrete child nodes and must be source-verified there.
 
 ## Validation
