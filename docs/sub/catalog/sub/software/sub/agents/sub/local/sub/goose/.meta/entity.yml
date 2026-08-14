@@ -12,7 +12,7 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://block.github.io/goose/
+        url: https://goose-docs.ai/
       purposes:
         - identification
         - research
