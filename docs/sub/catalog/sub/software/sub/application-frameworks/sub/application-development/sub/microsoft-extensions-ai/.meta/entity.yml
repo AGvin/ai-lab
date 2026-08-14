@@ -1,0 +1,16 @@
+entity:
+  id: catalog/software/application-frameworks/application-development/microsoft-extensions-ai
+  type: software
+  name: Microsoft.Extensions.AI
+  references:
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/m/sub/microsoft
