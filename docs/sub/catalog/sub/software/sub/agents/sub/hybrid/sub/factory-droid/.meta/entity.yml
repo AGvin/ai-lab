@@ -3,6 +3,13 @@ entity:
   type: software
   name: Factory Droid
   references:
+    - type: official-site
+      source:
+        url: https://factory.ai/product/droids
+      purposes:
+        - identification
+        - research
+      authority: official
     - type: documentation
       source:
         url: https://docs.factory.ai/cli/getting-started/overview
@@ -16,3 +23,7 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/f/sub/san-francisco-ai-factory-inc
