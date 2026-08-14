@@ -9,9 +9,10 @@
 ## Content Specification
 
 - Link LangChain Inc.
+- Link Lovable Labs Incorporated.
 
 ## Validation
 
-- LangChain Inc. is listed and resolves to its canonical producer node.
+- LangChain Inc. and Lovable Labs Incorporated are listed and resolve to their canonical producer nodes.
 - No producer outside the L index is listed.
 - The index does not duplicate model, software, or service profiles.
