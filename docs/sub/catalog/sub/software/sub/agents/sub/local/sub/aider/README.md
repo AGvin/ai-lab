@@ -1,9 +1,7 @@
 # Aider
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-Aider is a terminal-based AI pair-programming agent that edits files in a Git repository and can work with multiple model providers.
+Aider is an AI pair-programming tool for terminal workflows that works directly with code in local Git repositories. It can edit project files, integrate changes with Git history, and work with multiple model providers while the coding workflow remains under the user's control.
 
 ## Official resources
 
-- [Official website](https://aider.chat/)
+- [Aider documentation](https://aider.chat/docs/)

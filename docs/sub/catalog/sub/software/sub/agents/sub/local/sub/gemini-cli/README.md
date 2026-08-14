@@ -1,9 +1,11 @@
 # Gemini CLI
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Gemini CLI is Google's open-source, terminal-first AI agent for code understanding, generation, task automation, and tool-driven workflows with Gemini models. The CLI runs against local project context and provides file, shell, web, and MCP tooling while normal current use authenticates to Google services for Gemini model access.
 
-Gemini CLI is Google's open-source terminal agent for repository-aware coding, command execution, tool use, and automation with Gemini models.
+## Related
+
+- [Google](../../../../../../../producers/sub/g/sub/google/) — canonical producer organization.
 
 ## Official resources
 
-- [Official repository](https://github.com/google-gemini/gemini-cli)
+- [Gemini CLI repository](https://github.com/google-gemini/gemini-cli)

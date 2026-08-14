@@ -1,9 +1,7 @@
 # Kiro CLI
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-Kiro CLI is a terminal coding agent that can inspect and modify repositories, run commands, use custom agents and subagents, and integrate external tools through MCP.
+Kiro CLI is a terminal AI development agent for interactive coding and automation workflows. It supports custom agents, parallel subagents, granular tool approvals, MCP integrations, steering, hooks, and non-interactive execution while the CLI agent runs from the user's development environment.
 
 ## Official resources
 
-- [Official documentation](https://kiro.dev/docs/cli/)
+- [Kiro CLI documentation](https://kiro.dev/docs/cli/)
