@@ -20,7 +20,7 @@ entity:
   relations:
     - type: produced-by
       target:
-        path: ../../../../../../../../../../../../../producers/sub/h/sub/huihui-ai
+        path: ../../../../../../..
     - type: derived-from
       target:
         path: ../../../../../../../alibaba/sub/qwen/sub/qwen3-coder/sub/models/sub/qwen3-coder-30b-a3b-instruct
