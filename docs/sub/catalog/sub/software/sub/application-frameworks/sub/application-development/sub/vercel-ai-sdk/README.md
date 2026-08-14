@@ -1,9 +1,8 @@
 # Vercel AI SDK
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-Vercel AI SDK is a TypeScript toolkit for building AI applications with provider-independent model calls, streaming interfaces, structured data, tools, and UI integrations.
+Vercel AI SDK is Vercel's TypeScript toolkit for building AI-powered applications across server and UI application frameworks. It provides provider-agnostic model access together with streaming, structured outputs, tool calling, multimodal generation, and application/UI integration surfaces without making a specific model provider part of the SDK identity.
 
 ## Official resources
 
-- [Official documentation](https://ai-sdk.dev/)
+- [Vercel AI SDK documentation](https://vercel.com/docs/ai-sdk)
+- [AI SDK](https://ai-sdk.dev/)

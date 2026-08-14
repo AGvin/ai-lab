@@ -1,9 +1,7 @@
 # LangChain4j
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-LangChain4j is a Java library for integrating language models, tools, retrieval, memory, and AI services into JVM applications.
+LangChain4j is a Java-oriented framework for integrating language models and vector stores into JVM applications. It exposes lower-level model and retrieval primitives together with higher-level AI Services, and includes application patterns for tools, chat memory, streaming, structured outputs, retrieval-augmented generation, and agents.
 
 ## Official resources
 
-- [Official documentation](https://docs.langchain4j.dev/)
+- [LangChain4j documentation](https://docs.langchain4j.dev/)

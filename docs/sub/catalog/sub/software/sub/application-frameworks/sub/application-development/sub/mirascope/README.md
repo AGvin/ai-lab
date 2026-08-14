@@ -1,9 +1,8 @@
 # Mirascope
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-Mirascope is a Python library for building model-powered applications with typed prompts, tools, structured outputs, provider integrations, and reusable components.
+Mirascope is a Python toolkit for building LLM-powered applications with provider-agnostic, type-oriented abstractions. Its current application surface includes reusable prompts and model calls, tools, structured outputs, streaming and async workflows, agents, context and chaining, local-model support, MCP, and observability.
 
 ## Official resources
 
-- [Official website](https://mirascope.com/)
+- [Mirascope documentation](https://mirascope.com/docs)
+- [Mirascope](https://mirascope.com/)

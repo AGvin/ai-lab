@@ -1,9 +1,13 @@
 # Genkit
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Genkit is Google's open-source framework for building full-stack AI-powered and agentic applications. It provides cross-language SDKs and unified abstractions for model access, multimodal generation, structured output, tools, workflows, retrieval, and agents, while applications can be deployed on Google infrastructure or other environments supported by their chosen runtime.
 
-Genkit is an open-source application framework for building, testing, observing, and deploying AI-powered features with models, tools, flows, and retrieval.
+## Related
+
+- [Google](../../../../../../../producers/sub/g/sub/google/) — canonical producer organization.
+- [Google ADK](../../../../../agent-frameworks/sub/google-adk/) — adjacent Google framework whose primary role is agent development and orchestration.
 
 ## Official resources
 
-- [Official website](https://genkit.dev/)
+- [Genkit](https://genkit.dev/)
+- [Genkit on Firebase](https://firebase.google.com/docs/genkit/)
