@@ -1,9 +1,9 @@
 # Kilo Code
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
-
-Kilo Code is an open-source coding agent for editor and terminal workflows, with repository access, multiple operating modes, model-provider choice, and tool integrations.
+Kilo Code is an open-source AI coding product with local editor and terminal surfaces plus a separate hosted Cloud Agent execution mode. Local coding sessions run through Kilo's local CLI runtime on the developer machine, while Cloud Agent runs repository work in hosted cloud environments without relying on the local machine.
 
 ## Official resources
 
-- [Official website](https://kilocode.ai/)
+- [Kilo Code documentation](https://kilo.ai/docs/code-with-ai)
+- [Cloud Agent documentation](https://kilo.ai/docs/code-with-ai/platforms/cloud-agent)
+- [Kilo Code repository](https://github.com/Kilo-Org/kilocode)
