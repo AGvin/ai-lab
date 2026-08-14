@@ -12,6 +12,6 @@
 
 ## Validation
 
-- Agentic AI Foundation, Aider AI, Alibaba Cloud, Alibaba Group, All Hands AI, Inc., and Anthropic are listed and resolve to canonical producer nodes.
+- Agentic AI Foundation, Aider AI, Alibaba Cloud, Alibaba Group, All Hands AI, Inc., Anomaly Innovations, Inc., and Anthropic are listed and resolve to canonical producer nodes.
 - No producer outside the A index is listed.
 - The page contains no temporary-summary or placeholder wording.

@@ -9,4 +9,5 @@ Canonical producer profiles whose names begin with **A**.
 - [Alibaba Cloud](./sub/alibaba-cloud/)
 - [Alibaba Group](./sub/alibaba-group/)
 - [All Hands AI, Inc.](./sub/all-hands-ai-inc/)
+- [Anomaly Innovations, Inc.](./sub/anomaly-innovations-inc/)
 - [Anthropic](./sub/anthropic/)
