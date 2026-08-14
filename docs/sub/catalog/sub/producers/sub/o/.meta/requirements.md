@@ -12,6 +12,6 @@
 
 ## Validation
 
-- OpenAI is listed and resolves to its canonical producer node.
+- OpenAI and OpenClaw Foundation are listed and resolve to their materialized producer nodes.
 - No producer outside the O index is listed.
 - The page contains no temporary-summary or RC wording.

@@ -1,0 +1,19 @@
+entity:
+  id: catalog/producers/o/openclaw-foundation
+  type: organization
+  name: OpenClaw Foundation
+  references:
+    - type: official-site
+      source:
+        url: https://openclaw.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.openclaw.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
