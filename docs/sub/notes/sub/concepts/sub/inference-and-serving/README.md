@@ -31,6 +31,7 @@ Concepts are grouped by practical priority. Priority affects reading order, not 
 
 ## Specialized
 
+- [`context-extension/`](./sub/context-extension/) — Techniques that extend a model's usable context length beyond its native or default configuration.
 - [`flash-attention/`](./sub/flash-attention/) — Attention implementations optimized to reduce memory traffic and improve GPU efficiency.
 - [`continuous-batching/`](./sub/continuous-batching/) — Dynamically combining active inference requests to improve serving utilization.
 - [`speculative-decoding/`](./sub/speculative-decoding/) — Using a faster draft process to propose tokens for verification by a target model.
