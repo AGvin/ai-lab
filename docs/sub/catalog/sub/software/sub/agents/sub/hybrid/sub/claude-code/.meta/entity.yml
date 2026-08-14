@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/agents/hybrid/claude-code
+  type: software
+  name: Claude Code
+  references:
+    - type: official-site
+      source:
+        url: https://www.anthropic.com/product/claude-code
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.anthropic.com/en/docs/claude-code/getting-started
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target:
+        path: ../../../../../../../../producers/sub/a/sub/anthropic
