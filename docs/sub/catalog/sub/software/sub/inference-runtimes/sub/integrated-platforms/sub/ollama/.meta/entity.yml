@@ -32,5 +32,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/o/sub/ollama-inc
+      target: catalog/producers/o/ollama-inc
