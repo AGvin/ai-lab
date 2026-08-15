@@ -25,3 +25,7 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: produces
+      target:
+        path: ../../../../../../services/sub/development/sub/agents/sub/devin
