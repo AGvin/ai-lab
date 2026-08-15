@@ -25,5 +25,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../producers/sub/c/sub/crewai-inc
+      target: catalog/producers/c/crewai-inc
