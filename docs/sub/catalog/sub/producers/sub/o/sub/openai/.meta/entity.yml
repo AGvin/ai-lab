@@ -26,3 +26,5 @@ entity:
       target: catalog/agent-skills/collections/openai-skills
     - type: produces
       target: catalog/services/assistant-workspaces/chatgpt
+    - type: produces
+      target: catalog/software/agents/hybrid/openai-codex
