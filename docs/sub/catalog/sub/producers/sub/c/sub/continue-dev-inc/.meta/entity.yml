@@ -19,5 +19,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target:
-        path: ../../../../../../software/sub/agents/sub/local/sub/continue
+      target: catalog/software/agents/local/continue
