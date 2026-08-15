@@ -18,5 +18,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target:
-        path: ../../../../../../models/sub/reference/sub/producers/sub/microsoft/sub/phi
+      target: catalog/models/reference/producers/microsoft/phi
