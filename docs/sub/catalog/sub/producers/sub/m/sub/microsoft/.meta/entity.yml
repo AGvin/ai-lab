@@ -23,3 +23,5 @@ entity:
       target: catalog/software/agent-frameworks/autogen
     - type: produces
       target: catalog/software/application-frameworks/application-development/microsoft-extensions-ai
+    - type: produces
+      target: catalog/software/development-tools/code-editors/vs-code
