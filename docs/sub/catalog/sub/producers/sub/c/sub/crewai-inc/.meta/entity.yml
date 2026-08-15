@@ -27,5 +27,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target:
-        path: ../../../../../../software/sub/agent-frameworks/sub/crewai
+      target: catalog/software/agent-frameworks/crewai
