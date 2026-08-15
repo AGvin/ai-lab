@@ -18,8 +18,8 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../../../producers/sub/g/sub/google
+      target: catalog/producers/g/google
     - type: produced-by
-      target:
-        path: ../../../../../../../../../../producers/sub/g/sub/google-deepmind
+      target: catalog/producers/g/google-deepmind
+    - type: has-member
+      target: catalog/models/reference/producers/google/gemma/gemma-4
