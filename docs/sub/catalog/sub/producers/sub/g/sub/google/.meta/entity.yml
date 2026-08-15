@@ -23,3 +23,5 @@ entity:
       target: catalog/models/reference/producers/google/gemma
     - type: produces
       target: catalog/services/development/agents/jules
+    - type: produces
+      target: catalog/software/agents/local/gemini-cli
