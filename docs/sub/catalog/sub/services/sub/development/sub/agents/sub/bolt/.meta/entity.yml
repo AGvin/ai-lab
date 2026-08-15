@@ -18,5 +18,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/s/sub/stackblitz-inc
+      target: catalog/producers/s/stackblitz-inc
