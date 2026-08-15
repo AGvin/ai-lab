@@ -25,3 +25,8 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agent-frameworks/langchain
+    - type: produces
+      target: catalog/software/agent-frameworks/langgraph
