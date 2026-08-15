@@ -12,5 +12,6 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../../../producers/sub/m/sub/microsoft
+      target: catalog/producers/m/microsoft
+    - type: has-member
+      target: catalog/models/reference/producers/microsoft/phi/phi-4
