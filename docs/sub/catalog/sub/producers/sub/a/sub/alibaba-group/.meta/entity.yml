@@ -16,3 +16,7 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: has-part
+      target:
+        path: ../../alibaba-cloud
