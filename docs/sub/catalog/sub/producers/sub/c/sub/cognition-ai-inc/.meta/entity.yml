@@ -27,5 +27,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target:
-        path: ../../../../../../services/sub/development/sub/agents/sub/devin
+      target: catalog/services/development/agents/devin
