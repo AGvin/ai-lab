@@ -18,5 +18,6 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../../../producers/sub/a/sub/anthropic
+      target: catalog/producers/a/anthropic
+    - type: has-member
+      target: catalog/models/reference/producers/anthropic/claude/sonnet
