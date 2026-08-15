@@ -19,3 +19,7 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: produces
+      target:
+        path: ../../../../../../models/sub/reference/sub/producers/sub/huihui-ai/sub/qwen3-coder-derived/sub/models/sub/huihui-qwen3-coder-30b-a3b-instruct-abliterated
