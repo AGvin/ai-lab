@@ -21,5 +21,4 @@ entity:
       authority: official
   relations:
     - type: maintains
-      target:
-        path: ../../../../../../software/sub/agents/sub/local/sub/goose
+      target: catalog/software/agents/local/goose
