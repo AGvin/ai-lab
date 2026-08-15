@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/model-and-data-platforms/data-libraries/datasets
+  type: software
+  name: Hugging Face Datasets
+  aliases:
+    - Datasets
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/datasets/en/index
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/huggingface/datasets
+      purposes:
+        - identification
+        - research
+      authority: official

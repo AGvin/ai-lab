@@ -1,9 +1,10 @@
 # TRL
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Hugging Face TRL is an open-source post-training library for language and multimodal models. Its current scope includes supervised fine-tuning, preference optimization, reward modeling, reinforcement-learning-style training, and related alignment workflows.
 
-TRL is Hugging Face's library for transformer post-training, including supervised fine-tuning, preference optimization, reward modeling, and reinforcement-learning workflows.
+Although the name expands to Transformers Reinforcement Learning, current TRL is broader than reinforcement learning alone and remains model-development/post-training tooling.
 
 ## Official resources
 
-- [Official documentation](https://huggingface.co/docs/trl/)
+- [TRL documentation](https://huggingface.co/docs/trl/en/index)
+- [TRL repository](https://github.com/huggingface/trl)

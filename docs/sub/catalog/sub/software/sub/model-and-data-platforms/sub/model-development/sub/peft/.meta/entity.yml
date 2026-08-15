@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-development/peft
+  type: software
+  name: PEFT
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/peft/index
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/huggingface/peft
+      purposes:
+        - identification
+        - research
+      authority: official

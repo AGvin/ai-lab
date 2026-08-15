@@ -1,9 +1,10 @@
 # Label Studio
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Label Studio is an open-source data-labeling platform for annotating many data types and integrating machine-learning predictions into human review workflows. Its ML backend can provide pre-annotations and interactive suggestions while the labeling interface remains the primary product surface.
 
-Label Studio is an open-source data-labeling platform for annotating text, images, audio, video, time series, and other data types with optional model assistance.
+Label Studio Enterprise and hosted/cloud capabilities add separate commercial operating boundaries beyond the open-source Community Edition.
 
 ## Official resources
 
-- [Official website](https://labelstud.io/)
+- [Label Studio documentation](https://labelstud.io/guide/get_started.html)
+- [Label Studio repository](https://github.com/HumanSignal/label-studio)

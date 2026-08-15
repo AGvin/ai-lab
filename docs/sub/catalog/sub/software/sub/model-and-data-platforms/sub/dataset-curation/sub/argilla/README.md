@@ -1,9 +1,10 @@
 # Argilla
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Argilla is an open-source collaboration and data-curation platform for AI engineers and domain experts to collect, review, structure, and improve training or evaluation data through human and model feedback.
 
-Argilla is an open-source collaboration platform for collecting, reviewing, and curating human and model feedback into high-quality AI datasets.
+Its current dataset model is configurable around fields, questions, metadata, vectors, suggestions, and responses rather than the legacy task-specific dataset classes from Argilla 1.x. Argilla can be self-hosted or deployed through supported hosting surfaces such as Hugging Face Spaces.
 
 ## Official resources
 
-- [Official website](https://argilla.io/)
+- [Argilla documentation](https://docs.argilla.io/latest/)
+- [Argilla repository](https://github.com/argilla-io/argilla)

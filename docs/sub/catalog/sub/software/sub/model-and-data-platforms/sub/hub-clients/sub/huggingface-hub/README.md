@@ -1,9 +1,10 @@
 # huggingface_hub
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+`huggingface_hub` is Hugging Face's official Python client library for interacting with Hub repositories, files, models, datasets, Spaces, jobs, endpoints, and related resources. The package also provides the `hf` command-line interface.
 
-`huggingface_hub` is the official Python client library for the Hugging Face Hub and includes the `hf` command-line interface for downloading, uploading, and managing Hub assets.
+The Python library and `hf` CLI are one canonical software item. They are clients for hosted Hugging Face services rather than the hosted services themselves.
 
 ## Official resources
 
-- [Official documentation](https://huggingface.co/docs/huggingface_hub/)
+- [`huggingface_hub` documentation](https://huggingface.co/docs/huggingface_hub/en/index)
+- [`huggingface_hub` repository](https://github.com/huggingface/huggingface_hub)

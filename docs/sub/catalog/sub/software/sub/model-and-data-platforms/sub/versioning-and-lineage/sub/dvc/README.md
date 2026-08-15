@@ -1,9 +1,10 @@
 # DVC
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+DVC (Data Version Control) is an open-source, Git-oriented command-line tool for versioning data and model artifacts, defining reproducible data or ML pipelines, managing experiments, and synchronizing large artifacts with remote storage.
 
-DVC is a Git-oriented data and model versioning tool with reproducible pipelines, experiment tracking, and remote artifact storage.
+DVC extends a Git repository with data/model provenance and reproducibility without storing large artifacts directly in Git history. DVC Studio and other Iterative-hosted products are separate operating surfaces.
 
 ## Official resources
 
-- [Official website](https://dvc.org/)
+- [DVC documentation](https://dvc.org/doc)
+- [DVC repository](https://github.com/iterative/dvc)

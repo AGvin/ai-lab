@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-libraries/transformers
+  type: software
+  name: Transformers
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/transformers/en/index
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/huggingface/transformers
+      purposes:
+        - identification
+        - research
+      authority: official
