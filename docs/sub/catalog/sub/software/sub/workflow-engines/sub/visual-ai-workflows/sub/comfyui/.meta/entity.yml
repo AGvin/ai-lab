@@ -26,5 +26,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/c/sub/comfy-organization-inc
+      target: catalog/producers/c/comfy-organization-inc
