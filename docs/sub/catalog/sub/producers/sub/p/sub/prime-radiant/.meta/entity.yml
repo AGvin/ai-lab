@@ -18,3 +18,6 @@ entity:
         - research
       authority: official
       note: Official Superpowers repository associated with this producer profile.
+  relations:
+    - type: produces
+      target: catalog/agent-skills/collections/superpowers
