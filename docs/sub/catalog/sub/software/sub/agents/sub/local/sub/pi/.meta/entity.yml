@@ -26,8 +26,6 @@ entity:
       authority: official
   relations:
     - type: maintained-by
-      target:
-        path: ../../../../../../../../producers/sub/e/sub/earendil-inc
+      target: catalog/producers/e/earendil-inc
     - type: has-derivative
-      target:
-        path: ../../omp
+      target: catalog/software/agents/local/omp
