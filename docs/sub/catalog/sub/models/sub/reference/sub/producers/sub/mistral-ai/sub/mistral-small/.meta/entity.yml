@@ -12,5 +12,6 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../../../producers/sub/m/sub/mistral-ai
+      target: catalog/producers/m/mistral-ai
+    - type: has-member
+      target: catalog/models/reference/producers/mistral-ai/mistral-small/models/mistral-small-4
