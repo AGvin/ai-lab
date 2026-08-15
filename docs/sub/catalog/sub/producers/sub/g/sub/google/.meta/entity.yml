@@ -16,3 +16,10 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: produces
+      target:
+        path: ../../../../../../models/sub/reference/sub/producers/sub/google/sub/gemini
+    - type: produces
+      target:
+        path: ../../../../../../models/sub/reference/sub/producers/sub/google/sub/gemma
