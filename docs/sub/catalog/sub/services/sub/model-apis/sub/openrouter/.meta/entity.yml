@@ -31,5 +31,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../producers/sub/o/sub/openrouter-inc
+      target: catalog/producers/o/openrouter-inc
