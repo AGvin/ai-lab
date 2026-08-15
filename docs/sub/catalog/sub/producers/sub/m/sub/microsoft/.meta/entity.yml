@@ -19,3 +19,5 @@ entity:
   relations:
     - type: produces
       target: catalog/models/reference/producers/microsoft/phi
+    - type: produces
+      target: catalog/software/agent-frameworks/autogen
