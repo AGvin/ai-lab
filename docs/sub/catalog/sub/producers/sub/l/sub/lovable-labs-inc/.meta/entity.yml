@@ -26,3 +26,6 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: produces
+      target: catalog/services/development/agents/lovable
