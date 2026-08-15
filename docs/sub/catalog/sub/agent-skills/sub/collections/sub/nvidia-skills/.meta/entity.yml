@@ -18,5 +18,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../producers/sub/n/sub/nvidia
+      target: catalog/producers/n/nvidia
