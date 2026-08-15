@@ -25,3 +25,7 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: maintains
+      target:
+        path: ../../../../../../software/sub/agents/sub/local/sub/pi
