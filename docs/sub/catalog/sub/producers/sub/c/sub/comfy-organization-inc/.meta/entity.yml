@@ -17,3 +17,7 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: produces
+      target:
+        path: ../../../../../../software/sub/workflow-engines/sub/visual-ai-workflows/sub/comfyui
