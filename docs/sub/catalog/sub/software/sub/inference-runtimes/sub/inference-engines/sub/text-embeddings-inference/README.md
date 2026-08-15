@@ -1,9 +1,10 @@
 # Text Embeddings Inference
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Text Embeddings Inference (TEI) is Hugging Face's open-source inference toolkit for deploying and serving text-embedding models together with supported reranking and sequence-classification workloads.
 
-Text Embeddings Inference is Hugging Face's high-performance server for text embeddings, reranking, and related encoder-model workloads.
+TEI is a self-managed runtime. Hosted Hugging Face inference products that may operate TEI are separate service surfaces rather than the same canonical entity.
 
 ## Official resources
 
-- [Official repository](https://github.com/huggingface/text-embeddings-inference)
+- [TEI documentation](https://huggingface.co/docs/text-embeddings-inference/en/index)
+- [TEI repository](https://github.com/huggingface/text-embeddings-inference)

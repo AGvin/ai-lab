@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/mlc-llm
+  type: software
+  name: MLC LLM
+  references:
+    - type: documentation
+      source:
+        url: https://llm.mlc.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/mlc-ai/mlc-llm
+      purposes:
+        - identification
+        - research
+      authority: official

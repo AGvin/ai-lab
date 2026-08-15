@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/vllm
+  type: software
+  name: vLLM
+  references:
+    - type: documentation
+      source:
+        url: https://docs.vllm.ai/en/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/vllm-project/vllm
+      purposes:
+        - identification
+        - research
+      authority: official

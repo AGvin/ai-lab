@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/inference-runtimes/distributed-serving/llm-d
+  type: software
+  name: llm-d
+  references:
+    - type: official-site
+      source:
+        url: https://llm-d.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/llm-d/llm-d
+      purposes:
+        - identification
+        - research
+      authority: official

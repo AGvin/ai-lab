@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/text-embeddings-inference
+  type: software
+  name: Text Embeddings Inference
+  aliases:
+    - TEI
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/text-embeddings-inference/en/index
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/huggingface/text-embeddings-inference
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -1,9 +1,10 @@
 # llm-d
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+llm-d is an open-source, Kubernetes-native stack for distributed LLM inference. It coordinates and optimizes model servers such as vLLM and SGLang across production clusters rather than replacing their inference engines.
 
-llm-d is a Kubernetes-oriented distributed serving project for operating large language model inference with independent scaling and infrastructure-aware scheduling.
+Its role includes cluster-level serving concerns such as routing, cache-aware orchestration, disaggregated serving, and deployment patterns.
 
 ## Official resources
 
-- [Official website](https://llm-d.ai/)
+- [llm-d](https://llm-d.ai/)
+- [llm-d repository](https://github.com/llm-d/llm-d)

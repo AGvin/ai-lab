@@ -1,0 +1,12 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/mlx-lm
+  type: software
+  name: MLX LM
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ml-explore/mlx-lm
+      purposes:
+        - identification
+        - research
+      authority: official

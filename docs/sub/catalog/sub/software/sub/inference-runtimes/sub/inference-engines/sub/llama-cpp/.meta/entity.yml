@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/llama-cpp
+  type: software
+  name: llama.cpp
+  references:
+    - type: official-site
+      source:
+        url: https://llama.app/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ggml-org/llama.cpp
+      purposes:
+        - identification
+        - research
+      authority: official

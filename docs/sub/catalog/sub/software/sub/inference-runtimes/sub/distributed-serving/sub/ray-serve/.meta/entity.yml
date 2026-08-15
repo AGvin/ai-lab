@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/inference-runtimes/distributed-serving/ray-serve
+  type: software
+  name: Ray Serve
+  references:
+    - type: documentation
+      source:
+        url: https://docs.ray.io/en/latest/serve/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ray-project/ray
+      purposes:
+        - identification
+        - research
+      authority: official

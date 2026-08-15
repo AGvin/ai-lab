@@ -1,9 +1,10 @@
 # SGLang
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+SGLang is an open-source high-performance serving framework and runtime for large language, multimodal, and related generative models. It supports deployments ranging from individual accelerators to distributed serving environments.
 
-SGLang is a high-performance serving and programming system for language and multimodal models, with optimized runtimes and structured generation support.
+Its broader ecosystem integrations remain secondary to the core model-inference and serving role used for catalog placement.
 
 ## Official resources
 
-- [Official documentation](https://docs.sglang.ai/)
+- [SGLang](https://sglang.io/)
+- [SGLang repository](https://github.com/sgl-project/sglang)

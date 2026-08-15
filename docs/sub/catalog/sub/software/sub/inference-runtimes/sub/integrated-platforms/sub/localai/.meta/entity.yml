@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/inference-runtimes/integrated-platforms/localai
+  type: software
+  name: LocalAI
+  references:
+    - type: official-site
+      source:
+        url: https://localai.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/mudler/LocalAI
+      purposes:
+        - identification
+        - research
+      authority: official

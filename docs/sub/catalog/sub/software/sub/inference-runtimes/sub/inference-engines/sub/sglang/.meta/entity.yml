@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/sglang
+  type: software
+  name: SGLang
+  references:
+    - type: official-site
+      source:
+        url: https://sglang.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/sgl-project/sglang
+      purposes:
+        - identification
+        - research
+      authority: official

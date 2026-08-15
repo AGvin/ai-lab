@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/tensorrt-llm
+  type: software
+  name: TensorRT-LLM
+  references:
+    - type: documentation
+      source:
+        url: https://nvidia.github.io/TensorRT-LLM/overview.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA/TensorRT-LLM
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -1,9 +1,10 @@
 # llama.cpp
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+llama.cpp is an open-source local inference engine and toolchain for running GGUF-format language models across consumer and server hardware. Its project surface includes local CLI use, an HTTP server, model conversion/quantization tooling, and hardware-specific acceleration backends.
 
-llama.cpp is a portable C/C++ inference engine for running quantized and full-precision language models across CPUs, GPUs, and varied hardware platforms.
+The current canonical upstream repository is maintained under `ggml-org`.
 
 ## Official resources
 
-- [Official repository](https://github.com/ggml-org/llama.cpp)
+- [llama.cpp](https://llama.app/)
+- [llama.cpp repository](https://github.com/ggml-org/llama.cpp)

@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/inference-runtimes/distributed-serving/nvidia-dynamo
+  type: software
+  name: NVIDIA Dynamo
+  references:
+    - type: documentation
+      source:
+        url: https://docs.dynamo.nvidia.com/dynamo/dev/getting-started/introduction
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ai-dynamo/dynamo
+      purposes:
+        - identification
+        - research
+      authority: official
