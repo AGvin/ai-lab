@@ -19,3 +19,7 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: produces
+      target:
+        path: ../../../../../../models/sub/reference/sub/producers/sub/davidau/sub/qwen3-derived/sub/models/sub/qwen3-the-xiaolong-josiefied-omega-directive-22b
