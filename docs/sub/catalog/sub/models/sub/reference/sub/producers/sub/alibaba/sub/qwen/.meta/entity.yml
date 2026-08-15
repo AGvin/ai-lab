@@ -20,4 +20,4 @@ entity:
   relations:
     - type: produced-by
       target:
-        path: ../../../../../../../../producers/sub/q/sub/qwen-team
+        path: ../../../../../../../../../../producers/sub/q/sub/qwen-team
