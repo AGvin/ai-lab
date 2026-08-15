@@ -4,12 +4,13 @@
 
 - Identify All Hands AI, Inc. as the for-profit organization that supports and develops the OpenHands ecosystem.
 - Preserve the distinction between the broader OpenHands open-source community/project and the supporting company; do not describe the community itself as identical to the company.
-- Link the canonical OpenHands software profile.
+- Link the canonical OpenHands software profile from the physically materialized `produces` relation when the reciprocal OpenHands `produced-by` relation resolves successfully.
 - Include official OpenHands community and company-origin references sufficient to establish provenance.
 - Keep funding, staffing, pricing, enterprise terms, and other mutable corporate/commercial details outside this concise producer profile unless they become relevant to represented catalog entities.
 
 ## Validation
 
 - The page does not collapse All Hands AI, Inc. and OpenHands into one entity.
+- The All Hands AI/OpenHands `produces` / `produced-by` relation pair is physically present at both endpoints and semantically consistent.
 - The OpenHands link resolves to the canonical Hybrid Agent profile.
 - Official resource links match canonical entity metadata.
