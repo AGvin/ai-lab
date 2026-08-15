@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/application-frameworks/data-and-retrieval/haystack
+  type: software
+  name: Haystack
+  references:
+    - type: documentation
+      source:
+        url: https://docs.haystack.deepset.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/deepset-ai/haystack
+      purposes:
+        - identification
+        - research
+      authority: official

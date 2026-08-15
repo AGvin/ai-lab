@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/application-frameworks/programming-and-optimization/dspy
+  type: software
+  name: DSPy
+  references:
+    - type: documentation
+      source:
+        url: https://dspy.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/stanfordnlp/dspy
+      purposes:
+        - identification
+        - research
+      authority: official
