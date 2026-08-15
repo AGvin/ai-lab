@@ -19,5 +19,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../producers/sub/l/sub/langchain-inc
+      target: catalog/producers/l/langchain-inc
