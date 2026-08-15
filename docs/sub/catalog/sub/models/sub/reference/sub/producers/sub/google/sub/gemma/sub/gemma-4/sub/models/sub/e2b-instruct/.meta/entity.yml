@@ -24,5 +24,4 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target:
-        path: ../../../../..
+      target: catalog/models/reference/producers/google/gemma/gemma-4
