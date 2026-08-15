@@ -25,5 +25,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/g/sub/google
+      target: catalog/producers/g/google
