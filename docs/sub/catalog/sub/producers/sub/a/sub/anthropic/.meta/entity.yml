@@ -21,3 +21,6 @@ entity:
     - type: produces
       target:
         path: ../../../../../../models/sub/reference/sub/producers/sub/anthropic/sub/claude
+    - type: produces
+      target:
+        path: ../../../../../../agent-skills/sub/collections/sub/anthropic-skills
