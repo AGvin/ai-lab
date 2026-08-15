@@ -16,3 +16,6 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: produces
+      target: catalog/software/development-tools/code-review-tools/hunk
