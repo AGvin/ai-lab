@@ -19,5 +19,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/r/sub/replit-inc
+      target: catalog/producers/r/replit-inc
