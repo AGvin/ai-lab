@@ -22,5 +22,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target:
-        path: ../../../../../../software/sub/development-tools/sub/code-review-tools/sub/qodo
+      target: catalog/software/development-tools/code-review-tools/qodo
