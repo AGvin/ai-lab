@@ -12,5 +12,6 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target:
-        path: ../../..
+      target: catalog/models/reference/producers/anthropic/claude
+    - type: has-member
+      target: catalog/models/reference/producers/anthropic/claude/sonnet/models/sonnet-5
