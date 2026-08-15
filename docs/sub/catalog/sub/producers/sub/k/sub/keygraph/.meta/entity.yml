@@ -17,3 +17,8 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agents/local/shannon
+    - type: produces
+      target: catalog/services/development/security/keygraph
