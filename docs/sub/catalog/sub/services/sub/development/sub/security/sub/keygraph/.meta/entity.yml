@@ -19,5 +19,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/k/sub/keygraph
+      target: catalog/producers/k/keygraph
