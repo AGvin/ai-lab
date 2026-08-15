@@ -19,5 +19,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target:
-        path: ../../../../../../models/sub/reference/sub/producers/sub/tongyi-mai/sub/z-image
+      target: catalog/models/reference/producers/tongyi-mai/z-image
