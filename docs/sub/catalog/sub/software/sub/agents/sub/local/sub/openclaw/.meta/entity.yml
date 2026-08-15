@@ -26,5 +26,4 @@ entity:
       authority: official
   relations:
     - type: maintained-by
-      target:
-        path: ../../../../../../../../producers/sub/o/sub/openclaw-foundation
+      target: catalog/producers/o/openclaw-foundation
