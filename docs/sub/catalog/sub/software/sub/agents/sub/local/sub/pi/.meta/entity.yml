@@ -28,3 +28,6 @@ entity:
     - type: maintained-by
       target:
         path: ../../../../../../../../producers/sub/e/sub/earendil-inc
+    - type: has-derivative
+      target:
+        path: ../../omp
