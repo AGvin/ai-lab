@@ -18,5 +18,10 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target:
-        path: ../../..
+      target: catalog/models/reference/producers/openai/gpt
+    - type: has-member
+      target: catalog/models/reference/producers/openai/gpt/gpt-5-6/models/luna
+    - type: has-member
+      target: catalog/models/reference/producers/openai/gpt/gpt-5-6/models/sol
+    - type: has-member
+      target: catalog/models/reference/producers/openai/gpt/gpt-5-6/models/terra
