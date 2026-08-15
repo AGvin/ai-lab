@@ -12,5 +12,6 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target:
-        path: ../../..
+      target: catalog/models/reference/producers/black-forest-labs/flux
+    - type: has-member
+      target: catalog/models/reference/producers/black-forest-labs/flux/flux-1/models/flux-1-schnell
