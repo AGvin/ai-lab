@@ -21,3 +21,5 @@ entity:
       target: catalog/models/reference/producers/google/gemini
     - type: produces
       target: catalog/models/reference/producers/google/gemma
+    - type: produces
+      target: catalog/services/development/agents/jules
