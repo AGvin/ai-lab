@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/integrated-workspaces/khoj
+  type: software
+  name: Khoj
+  references:
+    - type: documentation
+      source:
+        url: https://docs.khoj.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/khoj-ai/khoj
+      purposes:
+        - identification
+        - research
+      authority: official

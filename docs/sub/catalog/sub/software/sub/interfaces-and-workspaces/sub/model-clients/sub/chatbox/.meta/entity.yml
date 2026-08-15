@@ -1,0 +1,18 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/model-clients/chatbox
+  type: software
+  name: Chatbox
+  references:
+    - type: official-site
+      source:
+        url: https://chatboxai.app/
+      purposes:
+        - identification
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/chatboxai/chatbox
+      purposes:
+        - identification
+        - research
+      authority: official

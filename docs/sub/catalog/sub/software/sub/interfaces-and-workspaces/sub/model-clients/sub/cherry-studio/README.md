@@ -1,9 +1,9 @@
 # Cherry Studio
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Cherry Studio is an open-source desktop AI client and productivity studio for Windows, macOS, and Linux. It connects to multiple hosted LLM providers as well as local runtimes such as Ollama and LM Studio, and includes assistants, conversations, document workflows, and tool integrations.
 
-Cherry Studio is an open-source desktop client for working with multiple model providers, assistants, documents, and local or remote AI services.
+Those integrations remain client capabilities; the connected providers and inference runtimes retain their own canonical identities.
 
 ## Official resources
 
-- [Official repository](https://github.com/CherryHQ/cherry-studio)
+- [Cherry Studio repository](https://github.com/CherryHQ/cherry-studio)

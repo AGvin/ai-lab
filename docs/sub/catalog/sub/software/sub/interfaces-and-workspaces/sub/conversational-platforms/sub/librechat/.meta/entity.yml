@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/conversational-platforms/librechat
+  type: software
+  name: LibreChat
+  references:
+    - type: documentation
+      source:
+        url: https://www.librechat.ai/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/danny-avila/LibreChat
+      purposes:
+        - identification
+        - research
+      authority: official

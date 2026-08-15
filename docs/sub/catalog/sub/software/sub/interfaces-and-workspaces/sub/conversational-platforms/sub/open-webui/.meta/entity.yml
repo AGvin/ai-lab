@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/conversational-platforms/open-webui
+  type: software
+  name: Open WebUI
+  references:
+    - type: documentation
+      source:
+        url: https://docs.openwebui.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/open-webui/open-webui
+      purposes:
+        - identification
+        - research
+      authority: official
