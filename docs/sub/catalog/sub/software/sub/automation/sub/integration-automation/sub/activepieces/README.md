@@ -1,9 +1,10 @@
 # Activepieces
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Activepieces is an open-source, extensible automation platform for building integration flows from triggers, actions, and reusable pieces. Its platform also supports AI-enabled automation while retaining a broader integration-automation identity.
 
-Activepieces is an open-source automation platform for building integration flows from triggers, actions, reusable pieces, and AI-enabled steps.
+Activepieces can be self-hosted; hosted and enterprise operating surfaces are separate deployment and service boundaries rather than a different canonical software identity.
 
 ## Official resources
 
-- [Official website](https://www.activepieces.com/)
+- [Activepieces](https://www.activepieces.com/)
+- [Activepieces documentation](https://www.activepieces.com/docs/overview/welcome)

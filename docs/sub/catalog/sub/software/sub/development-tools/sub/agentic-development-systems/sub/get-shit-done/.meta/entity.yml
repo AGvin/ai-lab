@@ -1,0 +1,14 @@
+entity:
+  id: catalog/software/development-tools/agentic-development-systems/get-shit-done
+  type: software
+  name: Get Shit Done
+  aliases:
+    - GSD
+  references:
+    - type: repository
+      source:
+        url: https://github.com/gsd-build/get-shit-done
+      purposes:
+        - identification
+        - research
+      authority: official

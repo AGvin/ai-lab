@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/development-tools/spec-driven-development/openspec
+  type: software
+  name: OpenSpec
+  references:
+    - type: official-site
+      source:
+        url: https://openspec.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Fission-AI/OpenSpec
+      purposes:
+        - identification
+        - research
+      authority: official

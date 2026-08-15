@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/automation/developer-automation/windmill
+  type: software
+  name: Windmill
+  references:
+    - type: official-site
+      source:
+        url: https://www.windmill.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/windmill-labs/windmill
+      purposes:
+        - identification
+        - research
+      authority: official

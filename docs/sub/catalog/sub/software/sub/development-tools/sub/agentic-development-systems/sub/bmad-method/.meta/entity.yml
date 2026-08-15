@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/development-tools/agentic-development-systems/bmad-method
+  type: software
+  name: BMad Method
+  references:
+    - type: documentation
+      source:
+        url: https://docs.bmad-method.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/bmad-code-org/BMAD-METHOD
+      purposes:
+        - identification
+        - research
+      authority: official

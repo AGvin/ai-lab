@@ -1,9 +1,9 @@
 # Agent OS
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Agent OS is a spec-driven development support system focused on establishing codebase standards, injecting relevant standards into AI-tool context, and shaping stronger specifications.
 
-Agent OS is a system for capturing codebase standards, injecting relevant conventions, and shaping better specifications for AI-assisted development.
+Current Agent OS works alongside coding assistants and their planning capabilities rather than replacing them with its own implementation-orchestration runtime.
 
 ## Official resources
 
-- [Official repository](https://github.com/buildermethods/agent-os)
+- [Agent OS repository](https://github.com/buildermethods/agent-os)
