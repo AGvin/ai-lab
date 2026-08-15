@@ -26,3 +26,7 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: produces
+      target:
+        path: ../../../../../../software/sub/development-tools/sub/code-review-tools/sub/coderabbit
