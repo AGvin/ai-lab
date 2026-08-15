@@ -21,3 +21,5 @@ entity:
       target: catalog/models/reference/producers/microsoft/phi
     - type: produces
       target: catalog/software/agent-frameworks/autogen
+    - type: produces
+      target: catalog/software/application-frameworks/application-development/microsoft-extensions-ai
