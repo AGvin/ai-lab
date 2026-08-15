@@ -31,5 +31,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/a/sub/anysphere-inc
+      target: catalog/producers/a/anysphere-inc
