@@ -26,5 +26,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/c/sub/cline-bot-inc
+      target: catalog/producers/c/cline-bot-inc
