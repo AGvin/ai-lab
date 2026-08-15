@@ -25,3 +25,5 @@ entity:
       target: catalog/services/development/agents/jules
     - type: produces
       target: catalog/software/agents/local/gemini-cli
+    - type: produces
+      target: catalog/software/application-frameworks/application-development/genkit
