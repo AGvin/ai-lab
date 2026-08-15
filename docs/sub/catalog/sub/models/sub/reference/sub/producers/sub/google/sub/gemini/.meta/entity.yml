@@ -18,5 +18,6 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../../../producers/sub/g/sub/google
+      target: catalog/producers/g/google
+    - type: has-member
+      target: catalog/models/reference/producers/google/gemini/models/gemini-3-6-flash
