@@ -18,8 +18,6 @@ entity:
       authority: official
   relations:
     - type: produces
-      target:
-        path: ../../../../../../models/sub/reference/sub/producers/sub/google/sub/gemini
+      target: catalog/models/reference/producers/google/gemini
     - type: produces
-      target:
-        path: ../../../../../../models/sub/reference/sub/producers/sub/google/sub/gemma
+      target: catalog/models/reference/producers/google/gemma
