@@ -20,3 +20,6 @@ entity:
     - type: part-of
       target:
         path: ../../alibaba-group
+    - type: has-part
+      target:
+        path: ../../../../q/sub/qwen-team
