@@ -21,3 +21,15 @@ entity:
     - type: part-of
       target:
         path: ../../../../a/sub/alibaba-cloud
+    - type: produces
+      target:
+        path: ../../../../../../models/sub/reference/sub/producers/sub/alibaba/sub/qwen
+    - type: produces
+      target:
+        path: ../../../../../../models/sub/reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen2-5-coder
+    - type: produces
+      target:
+        path: ../../../../../../models/sub/reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3-coder
+    - type: produces
+      target:
+        path: ../../../../../../models/sub/reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3
