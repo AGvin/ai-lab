@@ -18,5 +18,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target:
-        path: ../../../../../../models/sub/reference/sub/producers/sub/black-forest-labs/sub/flux
+      target: catalog/models/reference/producers/black-forest-labs/flux
