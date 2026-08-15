@@ -17,3 +17,10 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: produces
+      target:
+        path: ../../../../../../models/sub/reference/sub/producers/sub/openai/sub/gpt
+    - type: produces
+      target:
+        path: ../../../../../../models/sub/reference/sub/producers/sub/openai/sub/whisper
