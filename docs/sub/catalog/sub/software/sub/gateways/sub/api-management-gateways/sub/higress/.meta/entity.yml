@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/gateways/api-management-gateways/higress
+  type: software
+  name: Higress
+  references:
+    - type: documentation
+      source:
+        url: https://higress.cn/en/docs/latest/overview/what-is-higress
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/alibaba/higress
+      purposes:
+        - identification
+        - research
+      authority: official

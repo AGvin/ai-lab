@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/gateways/model-gateways/bifrost
+  type: software
+  name: Bifrost
+  references:
+    - type: documentation
+      source:
+        url: https://www.getmaxim.ai/docs/bifrost/overview/get-started
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/maximhq/bifrost
+      purposes:
+        - identification
+        - research
+      authority: official

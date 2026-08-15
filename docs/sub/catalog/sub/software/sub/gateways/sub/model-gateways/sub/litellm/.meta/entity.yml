@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/gateways/model-gateways/litellm
+  type: software
+  name: LiteLLM
+  references:
+    - type: documentation
+      source:
+        url: https://docs.litellm.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/BerriAI/litellm
+      purposes:
+        - identification
+        - research
+      authority: official

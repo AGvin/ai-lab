@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/evaluation-and-observability/observability-platforms/langfuse
+  type: software
+  name: Langfuse
+  references:
+    - type: documentation
+      source:
+        url: https://langfuse.com/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/langfuse/langfuse
+      purposes:
+        - identification
+        - research
+      authority: official

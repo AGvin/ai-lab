@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/evaluation-and-observability/observability-platforms/arize-phoenix
+  type: software
+  name: Arize Phoenix
+  aliases:
+    - Phoenix
+  references:
+    - type: documentation
+      source:
+        url: https://arize.com/docs/phoenix
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Arize-ai/phoenix
+      purposes:
+        - identification
+        - research
+      authority: official

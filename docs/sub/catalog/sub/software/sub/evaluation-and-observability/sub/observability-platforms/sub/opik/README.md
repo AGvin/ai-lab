@@ -1,9 +1,10 @@
 # Opik
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Opik is an open-source AI engineering platform for observing LLM and agent behavior, evaluating application quality, running experiments, managing prompts, and optimizing AI workflows.
 
-Opik is an open-source platform for tracing, evaluating, testing, and optimizing language-model and agent applications.
+It supports self-hosted deployments as well as Comet-operated hosting. Those deployment choices share one software identity but have distinct operating and data boundaries.
 
 ## Official resources
 
-- [Official documentation](https://www.comet.com/docs/opik/)
+- [Opik documentation](https://www.comet.com/docs/opik/)
+- [Opik repository](https://github.com/comet-ml/opik)

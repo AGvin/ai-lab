@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/gateways/api-management-gateways/kong-gateway
+  type: software
+  name: Kong Gateway
+  references:
+    - type: documentation
+      source:
+        url: https://developer.konghq.com/gateway/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Kong/kong
+      purposes:
+        - identification
+        - research
+      authority: official

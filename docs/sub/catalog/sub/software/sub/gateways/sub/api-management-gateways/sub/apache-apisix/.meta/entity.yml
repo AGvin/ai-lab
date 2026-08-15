@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/gateways/api-management-gateways/apache-apisix
+  type: software
+  name: Apache APISIX
+  references:
+    - type: documentation
+      source:
+        url: https://apisix.apache.org/docs/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/apache/apisix
+      purposes:
+        - identification
+        - research
+      authority: official

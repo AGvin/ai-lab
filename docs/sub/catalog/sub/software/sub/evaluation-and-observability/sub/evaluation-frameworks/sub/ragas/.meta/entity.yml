@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/ragas
+  type: software
+  name: Ragas
+  references:
+    - type: documentation
+      source:
+        url: https://docs.ragas.io/en/stable/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/vibrantlabsai/ragas
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -1,9 +1,10 @@
 # Ragas
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Ragas is an open-source toolkit for creating systematic evaluation loops for LLM applications. It supports metrics, experiments, test-data workflows, and evaluation patterns that extend beyond its original RAG-focused use cases.
 
-Ragas is an evaluation library for retrieval-augmented generation and agentic systems, with metrics, datasets, experiments, and configurable evaluation workflows.
+The current upstream repository is maintained under VibrantLabs.
 
 ## Official resources
 
-- [Official documentation](https://docs.ragas.io/)
+- [Ragas documentation](https://docs.ragas.io/en/stable/)
+- [Ragas repository](https://github.com/vibrantlabsai/ragas)

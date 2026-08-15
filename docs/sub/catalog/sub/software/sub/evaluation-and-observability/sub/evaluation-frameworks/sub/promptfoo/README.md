@@ -1,9 +1,10 @@
 # Promptfoo
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Promptfoo is an open-source, local-first CLI and library for evaluating and red-teaming LLM applications. It supports systematic tests of prompts, models, RAG systems, and application behavior in development and CI workflows.
 
-Promptfoo is an open-source CLI and library for model and prompt evaluations, regression testing, provider comparisons, red teaming, and CI integration.
+Its adversarial testing and security checks extend the same evaluation surface rather than turning Promptfoo into a separate hosted security product.
 
 ## Official resources
 
-- [Official website](https://www.promptfoo.dev/)
+- [Promptfoo documentation](https://www.promptfoo.dev/docs/intro/)
+- [Promptfoo repository](https://github.com/promptfoo/promptfoo)

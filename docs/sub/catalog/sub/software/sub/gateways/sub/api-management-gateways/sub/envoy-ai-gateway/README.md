@@ -1,9 +1,10 @@
 # Envoy AI Gateway
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Envoy AI Gateway is an open-source gateway built on Envoy Gateway for routing and managing GenAI and LLM traffic. It adds AI-specific provider integration, routing, policy, rate-limiting, failover, and security concerns to the Envoy gateway model.
 
-Envoy AI Gateway extends Kubernetes Gateway API and Envoy-based infrastructure with model-provider routing, authentication, traffic policy, and AI-aware backend management.
+It is gateway infrastructure rather than a model provider or hosted model API.
 
 ## Official resources
 
-- [Official documentation](https://aigateway.envoyproxy.io/)
+- [Envoy AI Gateway documentation](https://aigateway.envoyproxy.io/docs/)
+- [Envoy AI Gateway repository](https://github.com/envoyproxy/ai-gateway)

@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/deepeval
+  type: software
+  name: DeepEval
+  references:
+    - type: documentation
+      source:
+        url: https://deepeval.com/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/confident-ai/deepeval
+      purposes:
+        - identification
+        - research
+      authority: official
