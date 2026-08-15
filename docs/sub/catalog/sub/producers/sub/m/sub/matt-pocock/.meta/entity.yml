@@ -16,3 +16,6 @@ entity:
       purposes:
         - identification
       authority: official
+  relations:
+    - type: produces
+      target: catalog/agent-skills/collections/matt-pocock-skills
