@@ -12,5 +12,4 @@ entity:
       authority: official
   relations:
     - type: version-of
-      target:
-        path: ../../../../..
+      target: catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-30b-a3b
