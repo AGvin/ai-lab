@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/data-infrastructure/vector-search/qdrant
+  type: software
+  name: Qdrant
+  references:
+    - type: documentation
+      source:
+        url: https://qdrant.tech/documentation/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/qdrant/qdrant
+      purposes:
+        - identification
+        - research
+      authority: official

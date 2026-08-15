@@ -7,3 +7,4 @@ User-facing applications for interacting with models, conversations, knowledge b
 - [`model-clients/`](./sub/model-clients/)
 - [`conversational-platforms/`](./sub/conversational-platforms/)
 - [`integrated-workspaces/`](./sub/integrated-workspaces/)
+- [`knowledge-workspaces/`](./sub/knowledge-workspaces/)

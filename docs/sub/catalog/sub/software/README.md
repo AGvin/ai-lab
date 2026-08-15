@@ -17,5 +17,6 @@ Hosted-only or externally operated products belong under [`services/`](../servic
 - [`model-and-data-platforms/`](./sub/model-and-data-platforms/) — installable or self-managed model/data libraries, tooling, and platforms.
 - [`evaluation-and-observability/`](./sub/evaluation-and-observability/) — software for evaluation, tracing, monitoring, and observability.
 - [`gateways/`](./sub/gateways/) — gateways and routing software between AI clients, models, providers, or runtimes.
+- [`data-infrastructure/`](./sub/data-infrastructure/) — self-managed operational storage, search, retrieval, memory, and context infrastructure for AI applications.
 
 Category placement records primary ownership; it does not imply that a product has only one capability.

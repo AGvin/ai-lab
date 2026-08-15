@@ -10,7 +10,7 @@
 
 ## Content Specification
 
-- List: development tools, agents, agent frameworks, inference runtimes, application frameworks, workflow engines, interfaces and workspaces, automation, model and data platforms, evaluation and observability, and gateways.
+- List: development tools, agents, agent frameworks, inference runtimes, application frameworks, workflow engines, interfaces and workspaces, automation, model and data platforms, evaluation and observability, gateways, and data infrastructure.
 
 ## Validation
 
