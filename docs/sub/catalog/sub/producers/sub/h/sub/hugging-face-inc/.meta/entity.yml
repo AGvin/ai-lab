@@ -17,3 +17,6 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: produces
+      target: catalog/services/ai-assets/hugging-face-hub
