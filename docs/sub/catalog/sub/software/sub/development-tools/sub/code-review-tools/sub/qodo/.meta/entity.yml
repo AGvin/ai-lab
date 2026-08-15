@@ -25,5 +25,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/c/sub/codium-ltd
+      target: catalog/producers/c/codium-ltd
