@@ -18,5 +18,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target:
-        path: ../../../../../../models/sub/reference/sub/producers/sub/z-ai/sub/glm
+      target: catalog/models/reference/producers/z-ai/glm
