@@ -1,9 +1,10 @@
 # Inngest
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Inngest is an event-driven durable-execution platform for reliable background jobs, multi-step functions, scheduled work, and application workflows.
 
-Inngest is an event-driven durable execution platform for background jobs, multi-step functions, scheduled work, retries, and application workflows.
+Application functions run on user-controlled compute while Inngest coordinates events, steps, retries, timing, and workflow state. Inngest can be used through managed or self-hosted operating surfaces.
 
 ## Official resources
 
-- [Official website](https://www.inngest.com/)
+- [Inngest documentation](https://www.inngest.com/docs)
+- [Inngest repository](https://github.com/inngest/inngest)

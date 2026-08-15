@@ -1,0 +1,18 @@
+entity:
+  id: catalog/software/workflow-engines/application-orchestration/dbos
+  type: software
+  name: DBOS
+  references:
+    - type: official-site
+      source:
+        url: https://www.dbos.dev/
+      purposes:
+        - identification
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.dbos.dev/
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -1,9 +1,10 @@
 # Kubeflow Pipelines
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Kubeflow Pipelines (KFP) is the Kubeflow project for authoring, compiling, executing, and tracking portable machine-learning workflows and reusable pipeline components.
 
-Kubeflow Pipelines is a Kubeflow project for defining, executing, and tracking portable machine-learning workflows on Kubernetes.
+KFP is a distinct workflow product within the broader Kubeflow ecosystem rather than a synonym for the complete Kubeflow platform.
 
 ## Official resources
 
-- [Official documentation](https://www.kubeflow.org/docs/components/pipelines/)
+- [Kubeflow Pipelines documentation](https://www.kubeflow.org/docs/components/pipelines/)
+- [Kubeflow Pipelines repository](https://github.com/kubeflow/pipelines)

@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/workflow-engines/data-and-compute-orchestration/dagster
+  type: software
+  name: Dagster
+  references:
+    - type: documentation
+      source:
+        url: https://docs.dagster.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/dagster-io/dagster
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/workflow-engines/data-and-compute-orchestration/metaflow
+  type: software
+  name: Metaflow
+  references:
+    - type: documentation
+      source:
+        url: https://docs.metaflow.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Netflix/metaflow
+      purposes:
+        - identification
+        - research
+      authority: official

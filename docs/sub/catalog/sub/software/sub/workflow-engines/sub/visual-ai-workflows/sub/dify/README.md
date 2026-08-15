@@ -1,9 +1,10 @@
 # Dify
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Dify is a self-hostable LLM and agentic application-development platform combining a visual workflow canvas with RAG pipelines, agent capabilities, model management, observability, and application APIs.
 
-Dify is an open-source platform for visually building, testing, deploying, and operating model-powered applications, workflows, agents, and retrieval pipelines.
+Its broader application platform is organized around visually authored AI workflows. Dify Cloud is a separate hosted operating surface from self-hosted Community Edition deployment.
 
 ## Official resources
 
-- [Official website](https://dify.ai/)
+- [Dify documentation](https://docs.dify.ai/)
+- [Dify repository](https://github.com/langgenius/dify)

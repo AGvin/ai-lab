@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/workflow-engines/application-orchestration/restate
+  type: software
+  name: Restate
+  references:
+    - type: documentation
+      source:
+        url: https://docs.restate.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/restatedev/restate
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -1,9 +1,10 @@
 # Metaflow
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Metaflow is an open-source Python framework for developing, executing, deploying, and operating data-intensive applications and workflows, especially across data science, machine learning, and AI workloads.
 
-Metaflow is a human-friendly framework for developing, versioning, executing, and deploying data-science and machine-learning workflows.
+Originally developed at Netflix, Metaflow provides workflow and data-artifact abstractions that can run across local and cloud compute environments.
 
 ## Official resources
 
-- [Official website](https://metaflow.org/)
+- [Metaflow documentation](https://docs.metaflow.org/)
+- [Metaflow repository](https://github.com/Netflix/metaflow)

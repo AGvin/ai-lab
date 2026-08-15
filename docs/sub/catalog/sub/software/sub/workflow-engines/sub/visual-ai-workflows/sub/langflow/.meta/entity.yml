@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/workflow-engines/visual-ai-workflows/langflow
+  type: software
+  name: Langflow
+  references:
+    - type: documentation
+      source:
+        url: https://docs.langflow.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/langflow-ai/langflow
+      purposes:
+        - identification
+        - research
+      authority: official

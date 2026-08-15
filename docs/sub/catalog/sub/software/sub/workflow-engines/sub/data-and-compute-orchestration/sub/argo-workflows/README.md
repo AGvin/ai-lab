@@ -1,9 +1,10 @@
 # Argo Workflows
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Argo Workflows is an open-source, container-native workflow engine for orchestrating parallel jobs on Kubernetes. Workflows are represented through Kubernetes custom resources and can coordinate DAG or step-based container workloads.
 
-Argo Workflows is a Kubernetes-native workflow engine that represents multi-step jobs as container-based directed acyclic graphs or step sequences.
+It is distinct from other Argo projects such as Argo CD.
 
 ## Official resources
 
-- [Official documentation](https://argo-workflows.readthedocs.io/)
+- [Argo Workflows documentation](https://argo-workflows.readthedocs.io/en/latest/)
+- [Argo Workflows repository](https://github.com/argoproj/argo-workflows)

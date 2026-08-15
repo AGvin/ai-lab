@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/workflow-engines/application-orchestration/inngest
+  type: software
+  name: Inngest
+  references:
+    - type: documentation
+      source:
+        url: https://www.inngest.com/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/inngest/inngest
+      purposes:
+        - identification
+        - research
+      authority: official

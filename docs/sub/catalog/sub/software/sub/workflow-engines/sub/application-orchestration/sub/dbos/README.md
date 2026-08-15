@@ -1,9 +1,10 @@
 # DBOS
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+DBOS is an open-source durable-execution library family for making ordinary application code resilient to failures. Its libraries use Postgres-backed workflows and steps together with queues, scheduling, and related primitives so interrupted programs can resume from persisted execution state.
 
-DBOS provides durable workflow execution and application state management using database-backed persistence and ordinary programming-language functions.
+DBOS currently supports multiple programming languages. DBOS Cloud is a separate hosted operating surface from the self-managed libraries.
 
 ## Official resources
 
-- [Official website](https://www.dbos.dev/)
+- [DBOS](https://www.dbos.dev/)
+- [DBOS documentation](https://docs.dbos.dev/)

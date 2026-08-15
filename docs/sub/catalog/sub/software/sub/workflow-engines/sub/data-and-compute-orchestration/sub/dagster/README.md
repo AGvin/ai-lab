@@ -1,9 +1,10 @@
 # Dagster
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Dagster is an open-source data orchestrator for building, testing, observing, and operating data pipelines and data assets. Its model includes software-defined assets, lineage, testing, and operational observability around data workflows.
 
-Dagster is a data orchestration platform centered on software-defined assets, typed pipelines, testing, observability, and operational lineage.
+Dagster Plus is a separate managed operating surface from the open-source software.
 
 ## Official resources
 
-- [Official website](https://dagster.io/)
+- [Dagster documentation](https://docs.dagster.io/)
+- [Dagster repository](https://github.com/dagster-io/dagster)

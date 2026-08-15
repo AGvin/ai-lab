@@ -1,9 +1,10 @@
 # Langflow
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Langflow is an open-source Python-based platform and framework for visually building and deploying AI applications, agents, and workflows from reusable components. Flows can be tested interactively and served through APIs or MCP interfaces.
 
-Langflow is a visual framework for designing and serving AI workflows composed from models, prompts, tools, agents, data sources, and custom components.
+Langflow remains model- and vector-store-agnostic; connected providers and data systems keep their own canonical identities.
 
 ## Official resources
 
-- [Official website](https://www.langflow.org/)
+- [Langflow documentation](https://docs.langflow.org/)
+- [Langflow repository](https://github.com/langflow-ai/langflow)

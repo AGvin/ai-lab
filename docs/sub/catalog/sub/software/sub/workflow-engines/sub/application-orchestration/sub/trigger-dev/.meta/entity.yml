@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/workflow-engines/application-orchestration/trigger-dev
+  type: software
+  name: Trigger.dev
+  references:
+    - type: documentation
+      source:
+        url: https://trigger.dev/docs/introduction
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/triggerdotdev/trigger.dev
+      purposes:
+        - identification
+        - research
+      authority: official
