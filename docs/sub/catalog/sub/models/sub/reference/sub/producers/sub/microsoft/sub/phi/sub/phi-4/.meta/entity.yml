@@ -12,5 +12,6 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target:
-        path: ../../..
+      target: catalog/models/reference/producers/microsoft/phi
+    - type: has-member
+      target: catalog/models/reference/producers/microsoft/phi/phi-4/models/phi-4-mini-instruct
