@@ -18,5 +18,8 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target:
-        path: ../../../../..
+      target: catalog/models/reference/producers/alibaba/qwen/qwen3
+    - type: has-version
+      target: catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-30b-a3b/versions/initial
+    - type: has-version
+      target: catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-30b-a3b/versions/2507
