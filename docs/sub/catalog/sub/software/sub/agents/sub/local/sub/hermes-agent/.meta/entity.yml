@@ -26,5 +26,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/n/sub/nous-research
+      target: catalog/producers/n/nous-research
