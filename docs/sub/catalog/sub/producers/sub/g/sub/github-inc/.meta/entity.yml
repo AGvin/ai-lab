@@ -22,3 +22,5 @@ entity:
   relations:
     - type: produces
       target: catalog/software/agents/hybrid/github-copilot
+    - type: produces
+      target: catalog/software/development-tools/spec-driven-development/spec-kit
