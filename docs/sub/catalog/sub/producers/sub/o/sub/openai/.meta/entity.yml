@@ -24,3 +24,5 @@ entity:
       target: catalog/models/reference/producers/openai/whisper
     - type: produces
       target: catalog/agent-skills/collections/openai-skills
+    - type: produces
+      target: catalog/services/assistant-workspaces/chatgpt
