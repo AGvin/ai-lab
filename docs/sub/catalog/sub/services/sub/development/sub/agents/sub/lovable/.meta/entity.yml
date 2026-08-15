@@ -19,5 +19,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/l/sub/lovable-labs-inc
+      target: catalog/producers/l/lovable-labs-inc
