@@ -19,5 +19,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/c/sub/coderabbit-inc
+      target: catalog/producers/c/coderabbit-inc
