@@ -10,11 +10,12 @@
 - Use `Alibaba Cloud` as the page title.
 - Start with a concise description focused on its role in the documented producer hierarchy.
 - Link Alibaba Group from the canonical `part-of` relation.
-- Link Qwen Team through the derived inverse `has-part` view when the Qwen Team relation resolves successfully.
+- Link Qwen Team from the physically materialized `has-part` relation when the reciprocal Qwen Team `part-of` relation resolves successfully.
 - Include the official Alibaba Cloud site and the authoritative Alibaba Group business page supporting the organizational context.
 
 ## Validation
 
 - The page does not render `owned-by`, `owns`, `parent-of`, or `child-of` unless separately supported by validated evidence.
+- The Alibaba Group `part-of/has-part` and Qwen Team `has-part/part-of` relation pairs are physically present at both endpoints and semantically consistent.
 - Every internal producer link resolves to a canonical producer node.
 - The description does not duplicate detailed Qwen model-family documentation.
