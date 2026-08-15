@@ -18,5 +18,6 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target:
-        path: ../../..
+      target: catalog/models/reference/producers/deepseek/deepseek
+    - type: has-member
+      target: catalog/models/reference/producers/deepseek/deepseek/deepseek-v4/models/deepseek-v4-flash
