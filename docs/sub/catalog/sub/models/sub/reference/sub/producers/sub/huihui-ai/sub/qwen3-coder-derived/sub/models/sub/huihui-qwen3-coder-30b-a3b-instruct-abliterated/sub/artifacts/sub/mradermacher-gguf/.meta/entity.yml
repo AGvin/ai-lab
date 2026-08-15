@@ -19,5 +19,4 @@ entity:
       note: Source model for this GGUF artifact collection.
   relations:
     - type: artifact-of
-      target:
-        path: ../../../../..
+      target: catalog/models/reference/producers/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated
