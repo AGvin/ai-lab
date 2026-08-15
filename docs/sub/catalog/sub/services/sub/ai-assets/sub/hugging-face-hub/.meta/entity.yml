@@ -24,5 +24,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../producers/sub/h/sub/hugging-face-inc
+      target: catalog/producers/h/hugging-face-inc
