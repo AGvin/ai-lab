@@ -21,8 +21,6 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/c/sub/can-boluk
+      target: catalog/producers/c/can-boluk
     - type: derived-from
-      target:
-        path: ../../pi
+      target: catalog/software/agents/local/pi
