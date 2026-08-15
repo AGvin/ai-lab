@@ -100,6 +100,37 @@
         }
       }
     },
+    "entity_target": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/entity_id"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/entity_id"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path"
+          ],
+          "properties": {
+            "path": {
+              "$ref": "#/$defs/non_empty_string"
+            }
+          }
+        }
+      ]
+    },
     "relation": {
       "type": "object",
       "additionalProperties": false,
@@ -113,16 +144,7 @@
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
         },
         "target": {
-          "type": "object",
-          "additionalProperties": false,
-          "required": [
-            "path"
-          ],
-          "properties": {
-            "path": {
-              "$ref": "#/$defs/non_empty_string"
-            }
-          }
+          "$ref": "#/$defs/entity_target"
         }
       }
     }
