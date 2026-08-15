@@ -19,3 +19,6 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agents/hybrid/github-copilot
