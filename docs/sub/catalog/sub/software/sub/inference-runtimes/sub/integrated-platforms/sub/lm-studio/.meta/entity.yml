@@ -25,5 +25,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/e/sub/element-labs-inc
+      target: catalog/producers/e/element-labs-inc
