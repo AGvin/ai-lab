@@ -27,5 +27,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target:
-        path: ../../../../../../software/sub/agents/sub/local/sub/opencode
+      target: catalog/software/agents/local/opencode
