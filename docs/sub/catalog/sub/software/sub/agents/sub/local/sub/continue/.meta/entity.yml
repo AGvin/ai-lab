@@ -26,5 +26,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/c/sub/continue-dev-inc
+      target: catalog/producers/c/continue-dev-inc
