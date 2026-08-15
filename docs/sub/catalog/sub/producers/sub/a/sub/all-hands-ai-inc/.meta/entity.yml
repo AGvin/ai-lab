@@ -27,5 +27,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target:
-        path: ../../../../../../software/sub/agents/sub/hybrid/sub/openhands
+      target: catalog/software/agents/hybrid/openhands
