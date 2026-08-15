@@ -19,5 +19,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/c/sub/cognition-ai-inc
+      target: catalog/producers/c/cognition-ai-inc
