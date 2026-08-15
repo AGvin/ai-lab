@@ -25,3 +25,6 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: produces
+      target: catalog/services/development/agents/bolt
