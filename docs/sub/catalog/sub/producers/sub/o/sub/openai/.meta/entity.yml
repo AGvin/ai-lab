@@ -22,3 +22,5 @@ entity:
       target: catalog/models/reference/producers/openai/gpt
     - type: produces
       target: catalog/models/reference/producers/openai/whisper
+    - type: produces
+      target: catalog/agent-skills/collections/openai-skills
