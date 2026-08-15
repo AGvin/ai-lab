@@ -31,5 +31,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/k/sub/kilo-code-inc
+      target: catalog/producers/k/kilo-code-inc
