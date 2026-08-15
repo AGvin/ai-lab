@@ -19,8 +19,6 @@ entity:
       authority: official
   relations:
     - type: produces
-      target:
-        path: ../../../../../../models/sub/reference/sub/producers/sub/openai/sub/gpt
+      target: catalog/models/reference/producers/openai/gpt
     - type: produces
-      target:
-        path: ../../../../../../models/sub/reference/sub/producers/sub/openai/sub/whisper
+      target: catalog/models/reference/producers/openai/whisper
