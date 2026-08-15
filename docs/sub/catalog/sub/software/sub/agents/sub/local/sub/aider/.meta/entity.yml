@@ -25,5 +25,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/a/sub/aider-ai
+      target: catalog/producers/a/aider-ai
