@@ -10,3 +10,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://kiro.dev/docs/billing/managing-taxes/
+      purposes:
+        - research
+      authority: official
+      note: Official Kiro documentation identifying Amazon Web Services, Inc. as the Kiro service provider.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/amazon-web-services
