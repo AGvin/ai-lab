@@ -2,15 +2,15 @@
 
 ## Requirements
 
-- Identify Amazon Web Services (AWS) as the producer organization for the Strands Agents SDK represented in this catalog.
-- Base that producer relation on current first-party AWS material describing Strands Agents as an open-source framework from AWS.
-- Keep AWS organization identity distinct from the Strands Agents framework and from individual AWS services used to host or integrate agents.
-- Link the canonical Strands Agents agent-framework profile from the physically materialized `produces` relation when the reciprocal Strands Agents `produced-by` relation resolves successfully.
-- Include the official AWS site and AWS Open Source launch article as provenance references.
+- Identify Amazon Web Services (AWS) as the producer organization for the represented Strands Agents SDK and Kiro CLI entities.
+- Base Strands provenance on first-party AWS material and Kiro provenance on first-party Kiro material identifying Amazon Web Services, Inc. as the Kiro service provider.
+- Keep AWS organization identity distinct from Strands Agents, Kiro CLI, and individual AWS services used to host or integrate agents.
+- Link Strands Agents and Kiro CLI only from physically materialized `produces` relations whose reciprocal `produced-by` relations resolve successfully.
+- Include the official AWS site and AWS Open Source launch article as organization/provenance references; keep product-specific provenance with the product entity where appropriate.
 
 ## Validation
 
-- The page does not collapse AWS, Strands Agents, and AWS hosting/services into one entity.
-- The AWS/Strands Agents `produces` / `produced-by` relation pair is physically present at both endpoints and semantically consistent.
-- The Strands Agents link resolves to the canonical software node.
+- The AWS/Strands Agents and AWS/Kiro CLI `produces` / `produced-by` relation pairs are physically present at both endpoints and semantically consistent.
+- Both related software targets resolve to canonical nodes.
+- The page does not collapse AWS, agent software, and AWS hosting/services into one entity.
 - Official resource links match canonical entity metadata.
