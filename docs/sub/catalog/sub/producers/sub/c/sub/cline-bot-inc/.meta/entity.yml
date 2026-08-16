@@ -12,13 +12,14 @@ entity:
         - identification
         - research
       authority: official
-    - type: privacy-policy
+    - type: other
       source:
         url: https://cline.bot/privacy
       purposes:
         - identification
         - research
       authority: official
+      note: Official privacy notice identifying Cline Bot Inc.
     - type: repository
       source:
         url: https://github.com/cline/cline
