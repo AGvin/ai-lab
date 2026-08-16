@@ -27,3 +27,5 @@ entity:
       target: catalog/software/development-tools/code-editors/vs-code
     - type: produces
       target: catalog/software/development-tools/testing/playwright
+    - type: produces
+      target: catalog/software/agent-frameworks/microsoft-agent-framework
