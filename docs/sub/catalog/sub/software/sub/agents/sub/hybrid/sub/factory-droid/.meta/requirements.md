@@ -10,11 +10,12 @@
 - Preserve useful legacy operational boundaries around repository and organization permissions, generated diffs, integrations, credentials/secrets, model/provider routing, session/cloud sync, remote-access relays, automation scopes, and human approval for merge/deploy/release workflows.
 - Keep mutable enterprise, security/compliance, integration, pricing, managed-compute, and model-provider claims source-backed when expanded.
 - Include current official Factory Droid product, CLI, and deployment documentation.
-- Link the canonical The San Francisco AI Factory Inc. producer.
+- Preserve The San Francisco AI Factory Inc. as the canonical producer through the physically materialized `produced-by` relation when the reciprocal producer `produces` relation resolves successfully.
 
 ## Validation
 
 - The profile reflects that Droid can run on laptops, CI infrastructure, VMs/containers/Kubernetes, managed computers, and airgapped environments when configured accordingly.
 - Cloud-managed and fully self-contained deployment modes are not collapsed into one execution model.
 - Factory cloud/session synchronization and remote-access services are not presented as mandatory for all deployments.
+- The Factory/Factory Droid `produces` / `produced-by` relation pair is physically present at both endpoints, semantically consistent, and resolves to canonical profiles.
 - Official resource links match canonical entity metadata.
