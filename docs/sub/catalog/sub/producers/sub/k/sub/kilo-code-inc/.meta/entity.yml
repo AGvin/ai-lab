@@ -10,13 +10,14 @@ entity:
         - identification
         - research
       authority: official
-    - type: terms
+    - type: other
       source:
         url: https://kilo.ai/terms
       purposes:
         - identification
         - research
       authority: official
+      note: Official Kilo Terms of Service identifying Kilo Code Inc. as the product operator.
     - type: repository
       source:
         url: https://github.com/Kilo-Org/kilocode
