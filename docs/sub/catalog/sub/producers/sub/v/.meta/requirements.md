@@ -2,18 +2,16 @@
 
 ## Requirements
 
-- Provide the alphabetical producer index for canonical producer names beginning with D.
+- Provide the alphabetical producer index for canonical producer names beginning with V.
 - List every materialized canonical producer under this index exactly once.
 - Keep the page concise and navigational.
 
 ## Content Specification
 
-- Link David Belton (DavidAU).
-- Link deepset GmbH.
-- Link DeepSeek.
+- Link Vercel Inc.
 
 ## Validation
 
-- Every listed producer link resolves to a canonical producer node.
-- No producer outside the D index is listed.
+- Vercel Inc. is listed and resolves to its canonical producer node.
+- No producer outside the V index is listed.
 - The index does not duplicate model, software, or service profiles.

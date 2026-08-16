@@ -8,11 +8,14 @@
 
 ## Content Specification
 
+- Link Spring.
 - Link StackBlitz, Inc.
+- Link Stanford NLP Group.
 - Link SWE-agent.
+- Link SylphAI, Inc.
 
 ## Validation
 
-- StackBlitz, Inc. and SWE-agent are listed and resolve to their canonical producer nodes.
+- Every listed producer link resolves to a canonical producer node.
 - No producer outside the S index is listed.
-- The index does not duplicate software or service profiles.
+- The index does not duplicate model, software, or service profiles.

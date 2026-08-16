@@ -1,7 +1,7 @@
 entity:
-  id: catalog/software/application-frameworks/programming-and-optimization/adalflow
-  type: software
-  name: AdalFlow
+  id: catalog/producers/s/sylphai-inc
+  type: organization
+  name: SylphAI, Inc.
   references:
     - type: documentation
       source:
@@ -10,6 +10,7 @@ entity:
         - identification
         - research
       authority: official
+      note: Official AdalFlow documentation identifies SylphAI, Inc. in the current copyright surface.
     - type: repository
       source:
         url: https://github.com/SylphAI-Inc/AdalFlow
@@ -18,5 +19,5 @@ entity:
         - research
       authority: official
   relations:
-    - type: produced-by
-      target: catalog/producers/s/sylphai-inc
+    - type: produces
+      target: catalog/software/application-frameworks/programming-and-optimization/adalflow

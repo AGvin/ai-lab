@@ -1,6 +1,6 @@
 entity:
-  id: catalog/software/application-frameworks/application-development/langchain4j
-  type: software
+  id: catalog/producers/l/langchain4j
+  type: organization
   name: LangChain4j
   references:
     - type: documentation
@@ -18,5 +18,5 @@ entity:
         - research
       authority: official
   relations:
-    - type: produced-by
-      target: catalog/producers/l/langchain4j
+    - type: produces
+      target: catalog/software/application-frameworks/application-development/langchain4j

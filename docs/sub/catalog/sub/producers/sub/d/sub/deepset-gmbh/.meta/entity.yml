@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/d/deepset-gmbh
+  type: organization
+  name: deepset GmbH
+  references:
+    - type: official-site
+      source:
+        url: https://www.deepset.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.deepset.ai/imprint
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official imprint identifying deepset GmbH.
+    - type: other
+      source:
+        url: https://www.deepset.ai/about
+      purposes:
+        - research
+      authority: official
+      note: First-party company history describing deepset's development of Haystack.
+  relations:
+    - type: produces
+      target: catalog/software/application-frameworks/data-and-retrieval/haystack
