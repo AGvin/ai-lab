@@ -9,11 +9,12 @@
 - Preserve useful legacy operational boundaries around provider/gateway credentials, repository/filesystem permissions, custom rules/agents/skills, MCP server scopes, browser/terminal execution, remote-control account security, hosted-agent execution, generated diffs, and human review before commit/push/merge.
 - Keep model-provider, credit, beta, retention, organization-policy, cloud-trigger, source-availability, acquisition, and other mutable product/service claims source-backed and time-scoped when expanded.
 - Include current official Kilo site, CLI/Cloud Agent documentation, and repository references.
-- Link the canonical Kilo Code Inc. producer.
+- Preserve Kilo Code Inc. as the canonical producer through the physically materialized `produced-by` relation when the reciprocal producer `produces` relation resolves successfully.
 
 ## Validation
 
 - The page does not describe Cloud Agent as merely a remote UI for a local process; hosted Cloud Agent execution is distinguished from Remote Connections to local CLI sessions.
 - The page does not imply that local editor or CLI coding runs inside Kilo Cloud.
 - Remote Connections explicitly preserve the local-compute trust boundary and account-access risk.
+- The Kilo Code Inc./Kilo Code `produces` / `produced-by` relation pair is physically present at both endpoints, semantically consistent, and resolves to canonical profiles.
 - Official resource links match canonical entity metadata.
