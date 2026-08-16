@@ -12,20 +12,22 @@ entity:
         - identification
         - research
       authority: official
-    - type: terms
+    - type: other
       source:
         url: https://lovable.dev/terms
       purposes:
         - identification
         - research
       authority: official
-    - type: privacy-policy
+      note: Official Lovable Terms of Service identifying Lovable Labs Incorporated.
+    - type: other
       source:
         url: https://lovable.dev/privacy
       purposes:
         - identification
         - research
       authority: official
+      note: Official Lovable Privacy Policy identifying Lovable Labs Incorporated.
   relations:
     - type: produces
       target: catalog/services/development/agents/lovable
