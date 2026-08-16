@@ -13,20 +13,22 @@ entity:
         - identification
         - research
       authority: official
-    - type: terms
+    - type: other
       source:
         url: https://factory.ai/legal/terms
       purposes:
         - identification
         - research
       authority: official
-    - type: privacy-policy
+      note: Official Factory Product Terms identifying The San Francisco AI Factory Inc.
+    - type: other
       source:
         url: https://factory.ai/legal/privacy-policy
       purposes:
         - identification
         - research
       authority: official
+      note: Official Factory Privacy Policy identifying the current product operator.
   relations:
     - type: produces
       target: catalog/software/agents/hybrid/factory-droid
