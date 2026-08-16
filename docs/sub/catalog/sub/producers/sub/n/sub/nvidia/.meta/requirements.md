@@ -2,15 +2,14 @@
 
 ## Requirements
 
-- Identify NVIDIA as the canonical producer organization associated with the documented NVIDIA Skills collection.
-- Link the NVIDIA Skills collection from the physically materialized `produces` relation when the reciprocal collection `produced-by` relation resolves successfully, without duplicating its selected-skill details.
-- Include NVIDIA's official website and GitHub organization as identity and research references.
+- Identify NVIDIA as the canonical producer organization for the represented NVIDIA Skills collection, NVIDIA Dynamo, and TensorRT-LLM entities.
+- Link those canonical profiles only from physically materialized `produces` relations whose reciprocal `produced-by` relations resolve successfully, without duplicating their detailed content.
+- Include NVIDIA's official website and GitHub organization as identity and research references; keep product-specific documentation with the product entities.
 - Keep concrete hardware, software, model, service, and Agent Skill facts with their respective canonical owners.
 
 ## Validation
 
-- The producer page contains no temporary-summary or placeholder wording.
-- The NVIDIA/NVIDIA Skills `produces` / `produced-by` relation pair is physically present at both endpoints and semantically consistent.
-- The NVIDIA Skills collection link resolves to its canonical node.
+- The NVIDIA/NVIDIA Skills, NVIDIA/NVIDIA Dynamo, and NVIDIA/TensorRT-LLM `produces` / `produced-by` relation pairs are physically present at both endpoints and semantically consistent.
+- All three relation targets resolve to canonical catalog nodes.
 - Skill Card Generator is not linked as a local standalone catalog node.
 - Product or skill descriptions are not duplicated into the producer profile.
