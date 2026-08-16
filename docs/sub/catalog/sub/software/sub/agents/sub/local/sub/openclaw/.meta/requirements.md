@@ -6,10 +6,10 @@
 - Preserve the product boundary that the Gateway is the user-operated control plane connecting the assistant to messaging/channel surfaces, Web/Control UI, tools, skills/plugins, sessions, memory, mobile/device nodes, and agent workflows.
 - Preserve multi-channel and model-provider flexibility at a high level without freezing current channel/provider counts.
 - Preserve current governance accurately: OpenClaw is developed and stewarded in the open by the non-profit OpenClaw Foundation.
+- Preserve the OpenClaw Foundation as the canonical maintainer/steward through the physically materialized `maintained-by` relation when the reciprocal foundation `maintains` relation resolves successfully; do not reinterpret stewardship as product origination without separate evidence.
 - Preserve useful legacy trust boundaries around channel credentials and DM policies, persistent gateway/daemon operation, filesystem/workspace access, browser/tool execution, device-node permissions, third-party skills/plugins, scheduled tasks, external model providers, and inbound untrusted messages.
 - Do not misclassify OpenClaw as a hosted assistant service merely because it integrates remote messaging or model services; current agent loops, tools, and inference orchestration remain centered on the user-operated Gateway even when external providers or channels are used.
 - Keep foundation/governance details, platform inventories, runtime versions, provider/channel lists, plugin inventories, mobile-client capabilities, and other mutable state source-backed when expanded.
-- Link the canonical OpenClaw Foundation producer/steward profile.
 - Include the current official OpenClaw repository, site, and documentation.
 
 ## Validation
@@ -19,4 +19,4 @@
 - Remote channels and mobile clients are not misrepresented as hosted execution of the agent itself.
 - Skills/plugins, channels, browser/tools, device nodes, scheduled work, and provider credentials are treated as explicit trust boundaries.
 - Mutable integration counts are not treated as stable identity facts.
-- The foundation relation resolves to the canonical producer node.
+- The OpenClaw Foundation/OpenClaw `maintains` / `maintained-by` relation pair is physically present at both endpoints, semantically consistent, and resolves to canonical profiles.
