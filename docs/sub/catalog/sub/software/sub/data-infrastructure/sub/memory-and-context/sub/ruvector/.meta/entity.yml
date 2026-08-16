@@ -5,8 +5,11 @@ entity:
   references:
     - type: repository
       source:
-        url: https://github.com/ruvnet/ruvector
+        url: https://github.com/ruvnet/RuVector
       purposes:
         - identification
         - research
       authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/r/ruv

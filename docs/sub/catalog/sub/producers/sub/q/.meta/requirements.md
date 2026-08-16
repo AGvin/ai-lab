@@ -3,14 +3,16 @@
 ## Requirements
 
 - Provide the alphabetical producer index for canonical producer names beginning with Q.
+- List every materialized canonical producer under this index exactly once.
+- Keep the page concise and navigational.
 
 ## Content Specification
 
-- Use `Producers — Q` as the page title.
-- List every materialized canonical producer under this index exactly once.
-- Keep the page navigational and do not duplicate producer descriptions.
+- Link Qdrant Solutions GmbH.
+- Link Qwen Team.
 
 ## Validation
 
-- Qwen Team is listed and resolves to its canonical producer node.
+- Every listed producer link resolves to a canonical producer node.
 - No producer outside the Q index is listed.
+- The index does not duplicate model, software, or service profiles.

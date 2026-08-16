@@ -3,15 +3,26 @@
 ## Requirements
 
 - Provide the alphabetical producer index for canonical producer names beginning with A.
+- List every materialized canonical producer under this index exactly once.
+- Keep the page concise and navigational.
 
 ## Content Specification
 
-- Use `Producers — A` as the page title.
-- List every materialized canonical producer under this index exactly once.
-- Keep the page navigational and do not duplicate producer descriptions.
+- Link Activepieces Inc.
+- Link Agentic AI Foundation.
+- Link Agno.
+- Link Aider AI.
+- Link Alibaba Cloud.
+- Link Alibaba Group.
+- Link All Hands AI, Inc.
+- Link Amazon Web Services.
+- Link Andrew Kane.
+- Link Anomaly Innovations, Inc.
+- Link Anthropic.
+- Link Anysphere, Inc.
 
 ## Validation
 
-- Agentic AI Foundation, Aider AI, Alibaba Cloud, Alibaba Group, All Hands AI, Inc., Anomaly Innovations, Inc., Anysphere, Inc., and Anthropic are listed and resolve to canonical producer nodes.
+- Every listed producer link resolves to a canonical producer node.
 - No producer outside the A index is listed.
-- The page contains no temporary-summary or placeholder wording.
+- The index does not duplicate model, software, or service profiles.

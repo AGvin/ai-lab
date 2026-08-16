@@ -2,16 +2,18 @@
 
 ## Requirements
 
-- Provide the alphabetical producer index for materialized producer names beginning with N.
+- Provide the alphabetical producer index for canonical producer names beginning with N.
+- List every materialized canonical producer under this index exactly once.
+- Keep the page concise and navigational.
 
 ## Content Specification
 
-- Use `Producers — N` as the page title.
-- List every materialized producer under this index exactly once.
-- Keep the page navigational and do not duplicate producer descriptions.
+- Link n8n GmbH.
+- Link Nous Research.
+- Link NVIDIA.
 
 ## Validation
 
-- Nous Research and NVIDIA are listed and resolve to their materialized producer nodes.
+- Every listed producer link resolves to a canonical producer node.
 - No producer outside the N index is listed.
-- The page contains no temporary-summary or RC wording.
+- The index does not duplicate model, software, or service profiles.

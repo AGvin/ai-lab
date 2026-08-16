@@ -1,0 +1,25 @@
+entity:
+  id: catalog/producers/r/ruv
+  type: person
+  name: rUv
+  aliases:
+    - ruvnet
+  references:
+    - type: other
+      source:
+        url: https://github.com/ruvnet
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official GitHub profile whose public display name is rUv.
+    - type: repository
+      source:
+        url: https://github.com/ruvnet/RuVector
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/data-infrastructure/memory-and-context/ruvector
