@@ -3,15 +3,17 @@
 ## Requirements
 
 - Identify LangGraph as LangChain Inc.'s open-source low-level orchestration framework and runtime for long-running, stateful agents and workflows.
+- Link LangChain Inc. from the physically materialized `produced-by` relation when the reciprocal producer `produces` relation resolves successfully.
 - Preserve the current upstream distinction between LangGraph's low-level orchestration/runtime role and LangChain's higher-level agent framework abstractions.
 - Preserve useful legacy operational boundaries around durable execution, streaming, persistence/checkpointing, human-in-the-loop control, state storage, tool permissions, credentials, and sensitive state or trace data.
 - Distinguish the open-source LangGraph runtime from optional LangSmith tracing, evaluation, deployment, Studio, and other hosted platform capabilities.
 - Keep supported languages, package versions, persistence backends, deployment products, and other mutable implementation/platform facts source-backed when expanded.
 - Include current official LangGraph documentation and repository references.
-- Link the canonical LangChain Inc. producer and the related LangChain framework profile.
+- Link the related LangChain framework profile.
 
 ## Validation
 
+- The LangChain Inc./LangGraph `produces` / `produced-by` relation pair is physically present at both endpoints and semantically consistent.
 - The page characterizes LangGraph as a low-level orchestration runtime rather than a synonym for LangChain.
 - The page does not imply that LangSmith is required for local/open-source LangGraph use.
 - Durable execution and persistence are described as runtime capabilities rather than guarantees that remove the need for application-level operational design.
