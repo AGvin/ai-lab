@@ -18,8 +18,9 @@
 - Link Amazon Web Services.
 - Link Andrew Kane.
 - Link Anomaly Innovations, Inc.
-- Link Anthropic.
 - Link Anysphere, Inc.
+- Link Anthropic.
+- Link Arize AI, Inc.
 
 ## Validation
 

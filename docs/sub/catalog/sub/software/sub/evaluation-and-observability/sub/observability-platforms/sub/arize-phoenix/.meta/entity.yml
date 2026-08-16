@@ -19,3 +19,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://arize.com/docs/phoenix/self-hosting/license
+      purposes:
+        - research
+      authority: official
+      note: Current first-party Phoenix license documentation identifying Elastic License 2.0.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/arize-ai-inc

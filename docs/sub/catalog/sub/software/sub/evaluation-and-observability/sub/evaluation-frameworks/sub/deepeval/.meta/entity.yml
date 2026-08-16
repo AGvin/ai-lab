@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://www.confident-ai.com/frameworks/deepeval
+      purposes:
+        - research
+      authority: official
+      note: Current first-party framework page documenting Python and TypeScript use and Confident AI provenance.
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/confident-ai-inc

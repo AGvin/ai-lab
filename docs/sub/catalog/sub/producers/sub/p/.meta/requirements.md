@@ -2,16 +2,17 @@
 
 ## Requirements
 
-- Provide the alphabetical producer index for materialized producer names beginning with P.
+- Provide the alphabetical producer index for canonical producer names beginning with P.
+- List every materialized canonical producer under this index exactly once.
+- Keep the page concise and navigational.
 
 ## Content Specification
 
-- Use `Producers — P` as the page title.
-- List every materialized producer under this index exactly once.
-- Keep the page navigational and do not duplicate producer descriptions.
+- Link Prime Radiant.
+- Link Promptfoo Inc.
 
 ## Validation
 
-- Prime Radiant is listed and resolves to its materialized producer node.
+- Every listed producer link resolves to a canonical producer node.
 - No producer outside the P index is listed.
-- The page contains no temporary-summary or RC wording.
+- The index does not duplicate model, software, or service profiles.

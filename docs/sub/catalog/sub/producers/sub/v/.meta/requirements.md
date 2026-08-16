@@ -9,9 +9,10 @@
 ## Content Specification
 
 - Link Vercel Inc.
+- Link Vibrant Labs.
 
 ## Validation
 
-- Vercel Inc. is listed and resolves to its canonical producer node.
+- Every listed producer link resolves to a canonical producer node.
 - No producer outside the V index is listed.
 - The index does not duplicate model, software, or service profiles.

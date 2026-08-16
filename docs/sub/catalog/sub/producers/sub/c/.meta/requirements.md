@@ -9,16 +9,19 @@
 ## Content Specification
 
 - Link Can Bölük.
+- Link ClickHouse, Inc.
 - Link Cline Bot Inc.
 - Link CodeRabbit Inc.
 - Link Codium Ltd.
 - Link Cognition AI, Inc.
+- Link Comet ML Inc.
 - Link Comfy Organization Inc.
+- Link Confident AI, Inc.
 - Link Continue Dev, Inc.
 - Link CrewAI, Inc.
 
 ## Validation
 
-- Can Bölük, Cline Bot Inc., CodeRabbit Inc., Codium Ltd., Cognition AI, Inc., Comfy Organization Inc., Continue Dev, Inc., and CrewAI, Inc. are listed and resolve to their canonical producer nodes.
+- Every listed producer link resolves to a canonical producer node.
 - No producer outside the C index is listed.
 - The index does not duplicate model, software, or service profiles.

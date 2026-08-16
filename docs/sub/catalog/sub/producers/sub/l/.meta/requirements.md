@@ -10,6 +10,7 @@
 
 - Link LangChain Inc.
 - Link LangChain4j.
+- Link Langfuse GmbH.
 - Link LlamaIndex, Inc.
 - Link Lovable Labs Incorporated.
 

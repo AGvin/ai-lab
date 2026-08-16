@@ -17,3 +17,6 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/comet-ml-inc
