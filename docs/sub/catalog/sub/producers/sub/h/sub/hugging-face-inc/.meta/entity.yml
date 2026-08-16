@@ -10,13 +10,14 @@ entity:
         - identification
         - research
       authority: official
-    - type: terms-of-service
+    - type: other
       source:
         url: https://huggingface.co/terms-of-service
       purposes:
         - identification
         - research
       authority: official
+      note: Official Hugging Face Terms of Service identifying Hugging Face, Inc.
   relations:
     - type: produces
       target: catalog/services/ai-assets/hugging-face-hub
