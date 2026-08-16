@@ -21,3 +21,5 @@ entity:
   relations:
     - type: produces
       target: catalog/services/ai-assets/hugging-face-hub
+    - type: produces
+      target: catalog/software/agent-frameworks/smolagents
