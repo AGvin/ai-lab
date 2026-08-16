@@ -19,5 +19,7 @@ entity:
   relations:
     - type: produced-by
       target: catalog/producers/g/google
+    - type: produced-by
+      target: catalog/producers/g/google-deepmind
     - type: has-member
       target: catalog/models/reference/producers/google/gemini/models/gemini-3-6-flash
