@@ -1,7 +1,7 @@
 entity:
   id: catalog/producers/c/coderabbit-inc
   type: organization
-  name: CodeRabbit Inc.
+  name: CodeRabbit, Inc.
   aliases:
     - CodeRabbit
   references:
@@ -12,20 +12,22 @@ entity:
         - identification
         - research
       authority: official
-    - type: terms
+    - type: other
       source:
         url: https://www.coderabbit.ai/terms-of-service
       purposes:
         - identification
         - research
       authority: official
-    - type: privacy-policy
+      note: Official Terms of Service identifying CodeRabbit, Inc.
+    - type: other
       source:
         url: https://www.coderabbit.ai/privacy-policy
       purposes:
         - identification
         - research
       authority: official
+      note: Official Privacy Policy identifying CodeRabbit, Inc.
   relations:
     - type: produces
       target: catalog/software/development-tools/code-review-tools/coderabbit
