@@ -13,13 +13,14 @@ entity:
         - identification
         - research
       authority: official
-    - type: terms-of-service
+    - type: other
       source:
         url: https://www.qodo.ai/terms/
       purposes:
         - identification
         - research
       authority: official
+      note: Official Qodo General Terms of Service identifying Codium Ltd. as a Qodo legal entity.
   relations:
     - type: produces
       target: catalog/software/development-tools/code-review-tools/qodo
