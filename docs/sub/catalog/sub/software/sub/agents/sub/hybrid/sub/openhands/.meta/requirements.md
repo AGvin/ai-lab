@@ -9,7 +9,7 @@
 - Preserve the current licensing boundary at a high level: core OpenHands content and core images are MIT-licensed while the `enterprise/` directory has separate enterprise licensing; keep exact license terms source-backed when expanded.
 - Keep mutable hosted-service, enterprise-license, integration, model-provider, deployment, and pricing details source-backed when expanded.
 - Include current official OpenHands documentation and repository references.
-- Preserve All Hands AI, Inc. as the canonical producer through the physically materialized `produced-by` relation when the reciprocal producer `produces` relation resolves successfully.
+- Preserve All Hands AI, Inc. as the canonical producer through the `produced-by` relation.
 
 ## Validation
 
@@ -17,5 +17,4 @@
 - The profile does not treat the Software Agent SDK as a separate replacement identity for the OpenHands product represented here.
 - The page does not imply that Enterprise licensing applies to the MIT-licensed core.
 - The Hybrid classification remains supported by explicit local and hosted execution surfaces.
-- The All Hands AI/OpenHands `produces` / `produced-by` relation pair is physically present at both endpoints, semantically consistent, and resolves to canonical profiles.
 - Official resource links match canonical entity metadata.

@@ -10,7 +10,7 @@
 - Keep Cline product identity distinct from individual SDK/runtime/component identities and do not describe optional automation surfaces as mandatory.
 - Keep model-provider support, plans, integration availability, preview states, package versions, and other mutable product-state claims source-backed when expanded.
 - Include current official Cline site, documentation, and repository references.
-- Preserve Cline Bot Inc. as the canonical producer through the physically materialized `produced-by` relation when the reciprocal producer `produces` relation resolves successfully.
+- Preserve Cline Bot Inc. as the canonical producer through the `produced-by` relation.
 
 ## Validation
 
@@ -19,5 +19,4 @@
 - Remote hub support is treated as an operator-controlled deployment option rather than evidence of a Cline-managed cloud agent.
 - Approval controls are described as product behavior without promising a universal security guarantee.
 - MCP, browser/network, shell, filesystem, hub/remote exposure, and unattended execution are treated as explicit trust boundaries.
-- The Cline Bot Inc./Cline `produces` / `produced-by` relation pair is physically present at both endpoints, semantically consistent, and resolves to canonical profiles.
 - Official resource links match canonical entity metadata.

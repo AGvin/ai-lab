@@ -8,12 +8,11 @@
 - Preserve useful legacy operational boundaries around source-code and secret exposure to model providers, local filesystem access, generated-code execution, provider credentials, and review of generated diffs before push or publication.
 - Keep model recommendations, provider support, benchmark results, package versions, and other mutable implementation facts source-backed when expanded.
 - Include current official Aider website, documentation, and repository references.
-- Preserve Aider AI as the canonical producer identity through the physically materialized `produced-by` relation when the reciprocal producer `produces` relation resolves successfully.
+- Preserve Aider AI as the canonical producer identity through the `produced-by` relation.
 
 ## Validation
 
 - The page presents Aider as a user-controlled terminal coding tool rather than a hosted agent service.
 - Git integration is not generalized into unsupported repository-hosting behavior.
 - Local model support is not described as making all Aider workflows offline or private by default.
-- The Aider AI/Aider `produces` / `produced-by` relation pair is physically present at both endpoints, semantically consistent, and resolves to canonical profiles.
 - Official resource links match canonical entity metadata.

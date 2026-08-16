@@ -10,12 +10,11 @@
 - Preserve that mini-SWE-agent has superseded SWE-agent for the upstream project's general recommendation, without turning historical SWE-agent details into mini-SWE-agent identity.
 - Do not freeze line-count claims, benchmark scores, adoption lists, or performance comparisons in the canonical profile.
 - Include current official mini-SWE-agent documentation and repository references.
-- Preserve SWE-agent as the canonical producer/team identity through the physically materialized `produced-by` relation when the reciprocal producer `produces` relation resolves successfully.
+- Preserve SWE-agent as the canonical producer/team identity through the `produced-by` relation.
 
 ## Validation
 
 - The profile does not turn benchmark positioning into intrinsic product identity.
 - The page distinguishes current v2 identity from historical-version details.
 - Research/benchmark usefulness is not presented as a production-security guarantee.
-- The SWE-agent/mini-SWE-agent `produces` / `produced-by` relation pair is physically present at both endpoints, semantically consistent, and resolves to canonical profiles.
 - Official resource links match canonical entity metadata.

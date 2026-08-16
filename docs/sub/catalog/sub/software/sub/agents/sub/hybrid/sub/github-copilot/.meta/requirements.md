@@ -11,7 +11,7 @@
 - Preserve the broader product boundary without reducing GitHub Copilot to only code completion or only the cloud agent.
 - Keep model availability, plan eligibility, billing, preview status, repository policy details, automation limits, and other mutable product/service-state claims source-backed and time-scoped when expanded.
 - Include the official GitHub Copilot product page and current official agent/cloud-agent documentation.
-- Preserve GitHub, Inc. as the canonical producer through the physically materialized `produced-by` relation when the reciprocal GitHub `produces` relation resolves successfully.
+- Preserve GitHub, Inc. as the canonical producer through the `produced-by` relation.
 
 ## Validation
 
@@ -19,5 +19,4 @@
 - The page does not conflate IDE/local or Copilot-app execution with GitHub Copilot cloud agent.
 - Hosted agent execution is described as a GitHub-managed surface rather than as local execution.
 - Scheduled/event automation and custom tools do not remove repository policy, secret, branch-protection, or human-review boundaries.
-- The GitHub/GitHub Copilot `produces` / `produced-by` relation pair is physically present at both endpoints, semantically consistent, and resolves to canonical profiles.
 - Official resource links match canonical entity metadata.
