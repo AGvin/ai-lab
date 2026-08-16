@@ -10,13 +10,14 @@ entity:
         - identification
         - research
       authority: official
-    - type: terms-of-service
+    - type: other
       source:
         url: https://lmstudio.ai/app-terms
       purposes:
         - identification
         - research
       authority: official
+      note: Official LM Studio Desktop App Terms identifying Element Labs, Inc.
   relations:
     - type: produces
       target: catalog/software/inference-runtimes/integrated-platforms/lm-studio
