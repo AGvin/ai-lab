@@ -12,13 +12,14 @@ entity:
         - identification
         - research
       authority: official
-    - type: terms
+    - type: other
       source:
         url: https://www.crewai.com/terms-of-use
       purposes:
         - identification
         - research
       authority: official
+      note: Official Terms of Use identifying CrewAI, Inc. as a Delaware corporation.
     - type: repository
       source:
         url: https://github.com/crewAIInc/crewAI
