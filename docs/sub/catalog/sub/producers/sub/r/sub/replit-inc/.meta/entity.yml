@@ -10,13 +10,14 @@ entity:
         - identification
         - research
       authority: official
-    - type: terms-of-service
+    - type: other
       source:
         url: https://replit.com/terms-of-service
       purposes:
         - identification
         - research
       authority: official
+      note: Official Replit Terms of Service identifying Replit, Inc.
   relations:
     - type: produces
       target: catalog/services/development/agents/replit-agent
