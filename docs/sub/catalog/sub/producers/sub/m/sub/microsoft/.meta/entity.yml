@@ -16,6 +16,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: other
+      source:
+        url: https://www.microsoft.com/investor/reports/ar19/
+      purposes:
+        - research
+      authority: official
+      note: Official Microsoft annual report documenting the acquisition of GitHub, Inc.
   relations:
     - type: produces
       target: catalog/models/reference/producers/microsoft/phi
@@ -29,3 +36,5 @@ entity:
       target: catalog/software/development-tools/testing/playwright
     - type: produces
       target: catalog/software/agent-frameworks/microsoft-agent-framework
+    - type: owns
+      target: catalog/producers/g/github-inc
