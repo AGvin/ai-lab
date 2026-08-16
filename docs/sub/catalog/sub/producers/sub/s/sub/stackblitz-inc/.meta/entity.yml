@@ -12,13 +12,14 @@ entity:
         - identification
         - research
       authority: official
-    - type: privacy-policy
+    - type: other
       source:
         url: https://stackblitz.com/privacy-policy
       purposes:
         - identification
         - research
       authority: official
+      note: Official StackBlitz Privacy Policy identifying StackBlitz, Inc.
     - type: documentation
       source:
         url: https://support.bolt.new/building/intro-bolt
