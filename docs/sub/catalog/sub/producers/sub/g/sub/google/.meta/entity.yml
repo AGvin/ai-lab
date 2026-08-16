@@ -29,3 +29,5 @@ entity:
       target: catalog/software/application-frameworks/application-development/genkit
     - type: produces
       target: catalog/software/agent-frameworks/google-adk
+    - type: has-part
+      target: catalog/producers/g/google-deepmind
