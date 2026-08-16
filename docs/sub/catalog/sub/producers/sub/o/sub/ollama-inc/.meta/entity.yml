@@ -10,13 +10,14 @@ entity:
         - identification
         - research
       authority: official
-    - type: terms-of-service
+    - type: other
       source:
         url: https://ollama.com/terms
       purposes:
         - identification
         - research
       authority: official
+      note: Official Ollama Terms of Service identifying Ollama Inc.
   relations:
     - type: produces
       target: catalog/software/inference-runtimes/integrated-platforms/ollama
