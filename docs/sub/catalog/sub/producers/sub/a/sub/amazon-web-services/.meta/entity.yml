@@ -23,3 +23,5 @@ entity:
   relations:
     - type: produces
       target: catalog/software/agent-frameworks/strands-agents
+    - type: produces
+      target: catalog/software/agents/local/kiro-cli
