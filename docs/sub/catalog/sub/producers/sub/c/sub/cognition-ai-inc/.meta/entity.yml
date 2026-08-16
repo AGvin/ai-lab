@@ -7,24 +7,34 @@ entity:
   references:
     - type: official-site
       source:
-        url: https://cognition.ai/
+        url: https://cognition.com/
       purposes:
         - identification
         - research
       authority: official
-    - type: legal
+    - type: other
       source:
-        url: https://cognition.ai/Cognition-DPA.pdf
+        url: https://cognition.com/legal/platform-terms-of-service
       purposes:
         - identification
         - research
       authority: official
-    - type: trust-center
+      note: Current official Platform Terms of Service identifying Cognition AI, Inc.
+    - type: other
+      source:
+        url: https://cognition.com/legal/data-processing-statement
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current official Data Processing Agreement identifying Cognition AI, Inc.
+    - type: other
       source:
         url: https://trust.cognition.ai/
       purposes:
         - research
       authority: official
+      note: Official Cognition Trust Center.
   relations:
     - type: produces
       target: catalog/services/development/agents/devin
