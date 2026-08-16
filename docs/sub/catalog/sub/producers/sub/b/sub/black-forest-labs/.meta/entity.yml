@@ -5,7 +5,7 @@ entity:
   references:
     - type: official-site
       source:
-        url: https://blackforestlabs.ai/
+        url: https://bfl.ai/
       purposes:
         - identification
         - research
