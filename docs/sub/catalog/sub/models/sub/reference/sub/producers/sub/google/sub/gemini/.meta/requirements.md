@@ -18,7 +18,6 @@
 
 ## Validation
 
-- The Google/Gemini and Google DeepMind/Gemini `produces` / `produced-by` relation pairs are physically present at both endpoints and semantically consistent.
 - Concrete model IDs, context limits, modalities, pricing, and service behavior are not generalized to the whole Gemini family.
 - Gemini API and Google AI Studio are not treated as model aliases.
 - The model collection, producer, and Gemini 3.6 Flash links resolve to canonical nodes.

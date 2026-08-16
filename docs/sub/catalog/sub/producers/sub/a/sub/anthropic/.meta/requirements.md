@@ -13,7 +13,7 @@
 
 - Use `Anthropic` as the page title.
 - Describe Anthropic concisely as an AI research and product company represented here as a producer of documented models, Agent Skill resources, and Claude Code.
-- Link the Claude model family, Anthropic Skills collection, and Claude Code from the producer's physically materialized `produces` relations; do not link collection-owned DOCX, PDF, PPTX, or XLSX skills as standalone catalog nodes.
+- Link the Claude model family, Anthropic Skills collection, and Claude Code through the producer's `produces` relations; do not link collection-owned DOCX, PDF, PPTX, or XLSX skills as standalone catalog nodes.
 - Preserve the Anthropic model-domain view under `catalog/models/reference/producers/anthropic/` as navigation rather than treating the view node itself as a produced entity.
 - Include the official website and GitHub organization.
 
@@ -21,6 +21,5 @@
 
 - The page does not duplicate Claude, concrete model, individual Agent Skill, or Claude Code product documentation.
 - Product and service properties are not generalized into producer identity.
-- The Anthropic/Claude, Anthropic/Anthropic Skills, and Anthropic/Claude Code `produces` / `produced-by` relation pairs are physically present at both endpoints and semantically consistent.
 - Model-domain, collection, and Claude Code links resolve to canonical catalog nodes.
 - No link targets the removed `agent-skills/skills/` branch.

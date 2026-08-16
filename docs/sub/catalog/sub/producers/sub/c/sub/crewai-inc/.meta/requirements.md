@@ -4,13 +4,12 @@
 
 - Identify CrewAI, Inc. as the organization behind the CrewAI open-source framework and related CrewAI platform offerings.
 - Keep the organization identity distinct from the CrewAI software framework profile and from hosted/enterprise platform capabilities.
-- Link the canonical CrewAI agent-framework profile from the physically materialized `produces` relation when the reciprocal CrewAI `produced-by` relation resolves successfully.
+- Link the canonical CrewAI agent-framework profile through the `produces` relation.
 - Include official CrewAI website, legal terms, and repository references sufficient to establish organization and product provenance.
 - Keep broader corporate, funding, staffing, pricing, and mutable commercial details outside this concise producer profile unless they become relevant to represented catalog entities.
 
 ## Validation
 
 - The page does not collapse the producer organization and CrewAI software into one entity.
-- The CrewAI, Inc./CrewAI `produces` / `produced-by` relation pair is physically present at both endpoints and semantically consistent.
 - The CrewAI software link resolves to the canonical agent-framework node.
 - Official resource links match canonical entity metadata.
