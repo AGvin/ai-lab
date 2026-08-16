@@ -10,7 +10,7 @@
 - Mention that current Hermes provides approval/gating mechanisms for some memory/skill writes without presenting those controls as a universal security guarantee.
 - Keep provider lists, platform counts, tool counts, model availability, hosted gateway options, and other mutable product-state claims source-backed when expanded.
 - Include current official Hermes Agent site, documentation, and repository references.
-- Link the canonical Nous Research producer.
+- Preserve Nous Research as the canonical producer through the physically materialized `produced-by` relation when the reciprocal Nous Research `produces` relation resolves successfully.
 
 ## Validation
 
@@ -18,4 +18,5 @@
 - The profile remains about Hermes Agent rather than the Hermes model family.
 - Memory, skills, scheduled jobs, subagents, and external tools are treated as explicit persistence/execution trust boundaries.
 - Mutable capability counts are not frozen into the canonical identity.
+- The Nous Research/Hermes Agent `produces` / `produced-by` relation pair is physically present at both endpoints, semantically consistent, and resolves to canonical profiles.
 - Official resource links match canonical entity metadata.
