@@ -2,15 +2,15 @@
 
 ## Requirements
 
-- Identify Hugging Face, Inc. as the organization operating Hugging Face services and publishing the related open-source software cataloged separately in AI Lab.
-- Keep the producer organization distinct from Hugging Face Hub, Inference Providers, Spaces, Inference Endpoints, and Hugging Face open-source libraries.
-- Link the canonical Hugging Face Hub service from the physically materialized `produces` relation when the reciprocal Hub `produced-by` relation resolves successfully.
+- Identify Hugging Face, Inc. as the organization operating Hugging Face services and publishing related open-source software represented in AI Lab.
+- Keep the producer organization distinct from Hugging Face Hub, Inference Providers, Spaces, Inference Endpoints, smolagents, and other Hugging Face open-source libraries.
+- Link the canonical Hugging Face Hub service and smolagents agent-framework profile from the physically materialized `produces` relations when their reciprocal `produced-by` relations resolve successfully.
 - Include current official Hugging Face site and Terms references establishing the legal organization identity.
 - Keep mutable corporate, pricing, staffing, funding, and product-availability details outside this concise producer profile.
 
 ## Validation
 
-- The page does not collapse the producer, hosted services, and open-source libraries into one entity.
-- The Hugging Face/Hugging Face Hub `produces` / `produced-by` relation pair is physically present at both endpoints and semantically consistent.
-- The Hub link resolves to the canonical service profile.
+- The page does not collapse the producer, hosted services, smolagents, and other open-source libraries into one entity.
+- The Hugging Face/Hugging Face Hub and Hugging Face/smolagents `produces` / `produced-by` relation pairs are physically present at both endpoints and semantically consistent.
+- Represented service/software links resolve to canonical profiles.
 - Official resource links match canonical entity metadata.
