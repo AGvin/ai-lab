@@ -27,3 +27,5 @@ entity:
       target: catalog/software/agents/local/gemini-cli
     - type: produces
       target: catalog/software/application-frameworks/application-development/genkit
+    - type: produces
+      target: catalog/software/agent-frameworks/google-adk
