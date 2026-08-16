@@ -3,14 +3,15 @@
 ## Requirements
 
 - Identify Hugging Face, Inc. as the organization operating Hugging Face services and publishing related open-source software represented in AI Lab.
-- Keep the producer organization distinct from Hugging Face Hub, Inference Providers, Spaces, Inference Endpoints, smolagents, and other Hugging Face open-source libraries.
-- Link the canonical Hugging Face Hub service and smolagents agent-framework profile from the physically materialized `produces` relations when their reciprocal `produced-by` relations resolve successfully.
-- Include current official Hugging Face site and Terms references establishing the legal organization identity.
+- Keep the producer organization distinct from Hugging Face Hub, Inference Endpoints, Spaces, Inference Providers, smolagents, and the represented Hugging Face open-source libraries and runtimes.
+- Link the represented Hugging Face service and software profiles only from physically materialized `produces` relations whose reciprocal `produced-by` relations resolve successfully.
+- Cover the current represented producer surface: Hugging Face Hub, Inference Endpoints, Spaces, Inference Providers, smolagents, Datasets, `huggingface_hub`, Accelerate, PEFT, TRL, Diffusers, Transformers, and Text Embeddings Inference.
+- Include current official Hugging Face site and Terms references establishing the organization identity.
 - Keep mutable corporate, pricing, staffing, funding, and product-availability details outside this concise producer profile.
 
 ## Validation
 
-- The page does not collapse the producer, hosted services, smolagents, and other open-source libraries into one entity.
-- The Hugging Face/Hugging Face Hub and Hugging Face/smolagents `produces` / `produced-by` relation pairs are physically present at both endpoints and semantically consistent.
-- Represented service/software links resolve to canonical profiles.
+- The page does not collapse the producer, hosted services, frameworks, libraries, and runtimes into one entity.
+- Every represented Hugging Face `produces` / `produced-by` relation pair is physically present at both endpoints, semantically consistent, and resolves to a canonical profile.
+- No represented Hugging Face service or software listed above is linked only textually without the canonical relation pair.
 - Official resource links match canonical entity metadata.
