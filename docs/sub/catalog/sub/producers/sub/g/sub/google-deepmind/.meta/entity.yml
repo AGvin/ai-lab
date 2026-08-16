@@ -16,8 +16,17 @@ entity:
       purposes:
         - research
       authority: official
+    - type: article
+      source:
+        url: https://blog.google/innovation-and-ai/technology/ai/april-ai-update/
+      purposes:
+        - research
+      authority: official
+      note: Official Google announcement creating Google DeepMind as a focused unit combining Google Brain and DeepMind.
   relations:
     - type: produces
       target: catalog/models/reference/producers/google/gemini
     - type: produces
       target: catalog/models/reference/producers/google/gemma
+    - type: part-of
+      target: catalog/producers/g/google
