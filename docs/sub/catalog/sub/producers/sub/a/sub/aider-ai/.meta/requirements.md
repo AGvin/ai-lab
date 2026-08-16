@@ -2,14 +2,15 @@
 
 ## Requirements
 
-- Identify Aider AI as the stable project/organization identity that publishes and maintains the Aider project through the official Aider website and GitHub organization.
-- Do not imply a specific legal-company form that is not established by the cited official sources.
+- Identify Aider AI LLC as the legal producer organization behind Aider, with `Aider AI` preserved as the concise public-facing alias.
+- Use the official Aider privacy policy as identification evidence for the legal organization name and keep the official Aider site and GitHub organization as primary product/project provenance sources.
 - Link the canonical Aider software profile from the physically materialized `produces` relation when the reciprocal Aider `produced-by` relation resolves successfully.
 - Keep broader contributor, funding, staffing, and mutable project details outside this concise producer profile unless they become relevant to represented catalog entities.
 
 ## Validation
 
-- The page distinguishes the producer identity from the Aider software entity.
+- The page distinguishes the producer organization from the Aider software entity.
+- The page does not invent a legal form beyond the cited official Aider legal source.
 - The Aider AI/Aider `produces` / `produced-by` relation pair is physically present at both endpoints and semantically consistent.
 - The Aider link resolves to the canonical Local Agent profile.
 - Official resource links match canonical entity metadata.
