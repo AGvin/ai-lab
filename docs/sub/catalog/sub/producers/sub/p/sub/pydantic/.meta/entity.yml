@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/p/pydantic
+  type: organization
+  name: Pydantic
+  references:
+    - type: official-site
+      source:
+        url: https://pydantic.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/pydantic/pydantic-ai
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agent-frameworks/pydantic-ai
