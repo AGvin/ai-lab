@@ -9,8 +9,8 @@
 - Preserve useful legacy trust boundaries around repository instructions, generated diffs, shell execution, external directories, plugins, skills, MCP servers, provider credentials, network-data exposure, background/headless execution, and external actions.
 - Do not treat OpenCode Zen or another first-party hosted model-access/inference service as the OpenCode agent identity itself; hosted model access does not make the user-run OpenCode agent a hosted agent runtime.
 - Keep provider counts, model availability, Zen catalog contents, usage metrics, billing, desktop beta state, exact permission syntax, package/runtime versions, and other mutable product-state claims source-backed and time-scoped when expanded.
-- Link the canonical Anomaly Innovations, Inc. producer profile.
-- Include current official OpenCode site, documentation, repository, and relevant official legal reference.
+- Preserve Anomaly Innovations, Inc. as the canonical producer through the physically materialized `produced-by` relation when the reciprocal producer `produces` relation resolves successfully.
+- Include current official OpenCode site, documentation, repository, and official legal identity reference.
 
 ## Validation
 
@@ -19,4 +19,5 @@
 - Permissions are not described as sandboxing or containment.
 - Skills, plugins/custom tools, and MCP servers remain distinct extension/trust mechanisms.
 - Terminal, desktop, IDE, SDK, automation, and remote-control surfaces are represented as clients/interfaces around the same OpenCode product identity.
-- The producer relation resolves to the canonical Anomaly Innovations, Inc. node.
+- The Anomaly Innovations, Inc./OpenCode `produces` / `produced-by` relation pair is physically present at both endpoints, semantically consistent, and resolves to canonical profiles.
+- Official resource links match canonical entity metadata.
