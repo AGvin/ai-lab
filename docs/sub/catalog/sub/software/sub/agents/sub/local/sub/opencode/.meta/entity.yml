@@ -24,6 +24,14 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://opencode.ai/legal/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official OpenCode Terms of Use identifying Anomaly Innovations, Inc.
   relations:
     - type: produced-by
       target: catalog/producers/a/anomaly-innovations-inc
