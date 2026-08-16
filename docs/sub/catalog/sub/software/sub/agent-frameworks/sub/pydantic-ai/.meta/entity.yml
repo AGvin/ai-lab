@@ -16,3 +16,6 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/pydantic
