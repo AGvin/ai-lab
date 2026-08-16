@@ -23,3 +23,25 @@ entity:
       target: catalog/services/ai-assets/hugging-face-hub
     - type: produces
       target: catalog/software/agent-frameworks/smolagents
+    - type: produces
+      target: catalog/services/infrastructure/hugging-face-inference-endpoints
+    - type: produces
+      target: catalog/services/infrastructure/hugging-face-spaces
+    - type: produces
+      target: catalog/services/model-apis/hugging-face-inference-providers
+    - type: produces
+      target: catalog/software/model-and-data-platforms/data-libraries/datasets
+    - type: produces
+      target: catalog/software/model-and-data-platforms/hub-clients/huggingface-hub
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/accelerate
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/peft
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/trl
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-libraries/diffusers
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-libraries/transformers
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/text-embeddings-inference
