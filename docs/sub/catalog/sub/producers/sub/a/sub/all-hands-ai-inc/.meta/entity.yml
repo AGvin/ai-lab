@@ -19,7 +19,7 @@ entity:
         - identification
         - research
       authority: official
-    - type: official-site
+    - type: article
       source:
         url: https://www.openhands.dev/blog/introducing-all-hands-ai
       purposes:
