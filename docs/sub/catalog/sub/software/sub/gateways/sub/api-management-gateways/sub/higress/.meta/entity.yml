@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://www.alibabacloud.com/blog/602578
+      purposes:
+        - research
+      authority: official
+      note: Official Alibaba Cloud Community article identifying Higress as born within Alibaba Group.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/alibaba-group
