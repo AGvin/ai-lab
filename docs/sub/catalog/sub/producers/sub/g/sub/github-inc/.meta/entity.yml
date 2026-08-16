@@ -12,13 +12,14 @@ entity:
         - identification
         - research
       authority: official
-    - type: legal
+    - type: other
       source:
         url: https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
       purposes:
         - identification
         - research
       authority: official
+      note: Official GitHub Terms of Service identifying GitHub, Inc.
   relations:
     - type: produces
       target: catalog/software/agents/hybrid/github-copilot
