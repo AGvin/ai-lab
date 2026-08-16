@@ -8,10 +8,11 @@
 
 ## Content Specification
 
+- Link Fission.
 - Link The San Francisco AI Factory Inc.
 
 ## Validation
 
-- The San Francisco AI Factory Inc. is listed and resolves to its canonical producer node.
+- Every listed producer link resolves to a canonical producer node.
 - No producer outside the F index is listed.
 - The index does not duplicate model, software, or service profiles.

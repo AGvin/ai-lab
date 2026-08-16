@@ -8,10 +8,13 @@
 
 ## Content Specification
 
-- Link Black Forest Labs and Block.
+- Link Black Forest Labs.
+- Link Block.
+- Link BMad Code, LLC.
+- Link Builder Methods.
 
 ## Validation
 
-- Black Forest Labs and Block are listed and resolve to canonical producer nodes.
+- Every listed producer link resolves to a canonical producer node.
 - No producer outside the B index is listed.
 - The index does not duplicate model, software, or service profiles.

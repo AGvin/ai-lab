@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/b/builder-methods
+  type: organization
+  name: Builder Methods
+  references:
+    - type: other
+      source:
+        url: https://github.com/buildermethods
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official GitHub organization profile identifying Builder Methods.
+    - type: repository
+      source:
+        url: https://github.com/buildermethods/agent-os
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/development-tools/spec-driven-development/agent-os

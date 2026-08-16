@@ -1,14 +1,29 @@
 entity:
   id: catalog/software/development-tools/agentic-development-systems/get-shit-done
   type: software
-  name: Get Shit Done
+  name: GSD Core
   aliases:
+    - Get Shit Done
     - GSD
   references:
     - type: repository
+      source:
+        url: https://github.com/open-gsd/gsd-core
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current active upstream repository for the GSD project continuation.
+    - type: other
       source:
         url: https://github.com/gsd-build/get-shit-done
       purposes:
         - identification
         - research
       authority: official
+      note: Archived original upstream repository that redirects current development to Open GSD / GSD Core.
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/taches
+    - type: maintained-by
+      target: catalog/producers/o/open-gsd
