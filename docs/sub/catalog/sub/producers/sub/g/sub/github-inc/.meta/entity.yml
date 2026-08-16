@@ -19,9 +19,11 @@ entity:
         - identification
         - research
       authority: official
-      note: Official GitHub Terms of Service identifying GitHub, Inc.
+      note: Official GitHub Terms of Service identifying GitHub, Inc. and Microsoft as a GitHub affiliate.
   relations:
     - type: produces
       target: catalog/software/agents/hybrid/github-copilot
     - type: produces
       target: catalog/software/development-tools/spec-driven-development/spec-kit
+    - type: owned-by
+      target: catalog/producers/m/microsoft
