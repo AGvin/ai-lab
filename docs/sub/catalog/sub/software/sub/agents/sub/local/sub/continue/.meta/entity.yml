@@ -24,6 +24,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: distribution
+      source:
+        url: https://marketplace.visualstudio.com/items?itemName=Continue.continue
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/c/continue-dev-inc
