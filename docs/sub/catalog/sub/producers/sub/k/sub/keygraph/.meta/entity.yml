@@ -10,13 +10,14 @@ entity:
         - identification
         - research
       authority: official
-    - type: organization-profile
+    - type: other
       source:
         url: https://github.com/KeygraphHQ
       purposes:
         - identification
         - research
       authority: official
+      note: Official Keygraph GitHub organization profile.
   relations:
     - type: produces
       target: catalog/software/agents/local/shannon
