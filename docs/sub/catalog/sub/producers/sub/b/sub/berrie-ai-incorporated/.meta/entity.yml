@@ -1,0 +1,25 @@
+entity:
+  id: catalog/producers/b/berrie-ai-incorporated
+  type: organization
+  name: Berrie AI Incorporated
+  aliases:
+    - BerriAI
+  references:
+    - type: official-site
+      source:
+        url: https://www.litellm.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current LiteLLM first-party site identifying Berrie AI Incorporated in the site footer.
+    - type: repository
+      source:
+        url: https://github.com/BerriAI/litellm
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/gateways/model-gateways/litellm

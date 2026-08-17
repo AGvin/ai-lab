@@ -17,3 +17,14 @@ entity:
         - identification
         - research
       authority: official
+    - type: terms-of-service
+      source:
+        url: https://konghq.com/legal/kong-customer-agreement
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Kong agreement identifying Kong Inc. as the product company.
+  relations:
+    - type: produced-by
+      target: catalog/producers/k/kong-inc

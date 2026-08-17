@@ -17,3 +17,14 @@ entity:
         - identification
         - research
       authority: official
+    - type: privacy-policy
+      source:
+        url: https://www.getmaxim.ai/privacy-policy
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Maxim AI privacy policy identifying H3 Labs Inc. as the company.
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/h3-labs-inc

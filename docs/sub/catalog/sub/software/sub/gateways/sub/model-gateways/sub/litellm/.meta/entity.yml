@@ -17,3 +17,14 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://www.litellm.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current first-party LiteLLM site identifying Berrie AI Incorporated.
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/berrie-ai-incorporated

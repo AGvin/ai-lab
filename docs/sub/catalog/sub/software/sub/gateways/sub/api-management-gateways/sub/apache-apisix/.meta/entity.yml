@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://apisix.apache.org/blog/2025/02/21/why-reinvent-api-gateways/
+      purposes:
+        - research
+      authority: official
+      note: Official project history documenting API7.ai origin and donation to the Apache Software Foundation.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/api7-ai

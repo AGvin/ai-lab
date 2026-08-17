@@ -17,3 +17,14 @@ entity:
         - identification
         - research
       authority: official
+    - type: terms-of-service
+      source:
+        url: https://portkey.ai/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Portkey terms identifying Portkey, Inc.
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/portkey-inc
