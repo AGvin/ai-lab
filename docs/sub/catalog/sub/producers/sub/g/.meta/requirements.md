@@ -2,10 +2,12 @@
 
 ## Requirements
 
-- List only materialized canonical producer profiles beginning with G.
-- Keep the index concise and link GitHub, Inc., Google, and Google DeepMind.
+- Provide the alphabetical producer index for canonical producer names beginning with G.
+- Render the standard child-navigation block from the validated direct-child projection so every materialized canonical producer under this index appears exactly once.
+- Keep the page concise and navigational.
 
 ## Validation
 
-- GitHub, Inc., Google, and Google DeepMind are listed and resolve to materialized canonical producer profiles.
+- The child-navigation block matches the validated materialized direct-child projection and every destination resolves to a materialized canonical producer profile.
+- No producer outside the G index is presented.
 - The index does not duplicate model, software, or service profiles.

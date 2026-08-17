@@ -3,17 +3,11 @@
 ## Requirements
 
 - Provide the alphabetical producer index for canonical producer names beginning with D.
-- List every materialized canonical producer under this index exactly once.
+- Render the standard child-navigation block from the validated direct-child projection so every materialized canonical producer under this index appears exactly once.
 - Keep the page concise and navigational.
-
-## Content Specification
-
-- Link David Belton (DavidAU).
-- Link deepset GmbH.
-- Link DeepSeek.
 
 ## Validation
 
-- Every listed producer link resolves to a canonical producer node.
-- No producer outside the D index is listed.
+- The child-navigation block matches the validated materialized direct-child projection and every destination resolves to a canonical producer node.
+- No producer outside the D index is presented.
 - The index does not duplicate model, software, or service profiles.
