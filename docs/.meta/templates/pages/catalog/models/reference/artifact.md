@@ -19,8 +19,7 @@ Do not use for the trained model, a model version, a runtime installation guide,
 ## Owns
 
 - artifact identity and representation/format;
-- canonical source-model relation;
-- artifact publisher/provenance;
+- relation-block placement and reader wording when applicable requirements authorize relation presentation;
 - artifact-specific repository/license/file inventory when current and supported;
 - quantization/package descriptors and publisher guidance with evidence boundaries.
 
@@ -30,16 +29,17 @@ Do not use for the trained model, a model version, a runtime installation guide,
 - runtime installation/integration procedures;
 - hardware-fit conclusions;
 - measured quality unless AI Lab evidence specifically owns it;
-- peak RAM/VRAM inferred from published file size.
+- peak RAM/VRAM inferred from published file size;
+- per-relation membership, visibility, or ordering, which come from the validated current entity projection.
 
 ## Expected Inputs
 
-Requirement-approved artifact title/orientation, source-model and publisher relations, representation/quantization/package facts, explicit artifact resources, and evidence distinctions.
+Requirement-approved artifact title/orientation, representation/quantization/package facts, explicit artifact resources, evidence distinctions, and the validated current-entity relation projection when the page requirements call for the relation block.
 
 ## Composition
 
 1. default header;
-2. artifact-of/publisher relations;
+2. `entity-relations` when applicable requirements call for relation presentation;
 3. artifact identity and representation overview;
 4. artifact-specific inventory or descriptors when useful;
 5. interpretation/evidence boundaries;
@@ -57,4 +57,6 @@ Static quant collections, weighted/imatrix variants, split-file packages, and ot
 
 - representing a quantization repository as independently trained weights;
 - translating file size directly into runtime memory;
-- presenting publisher qualitative labels as independent AI Lab benchmark conclusions.
+- presenting publisher qualitative labels as independent AI Lab benchmark conclusions;
+- enumerating or approving individual relation targets in page requirements when the standard relation block is intended;
+- filtering visible canonical relation entries inside the template instead of using entity `hidden` controls.
