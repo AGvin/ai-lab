@@ -24,6 +24,9 @@ entity:
         - identification
         - research
       authority: official
+      note: Current upstream README identifies OpenClaw as built by Peter Steinberger and the community.
   relations:
+    - type: produced-by
+      target: catalog/producers/p/peter-steinberger
     - type: maintained-by
       target: catalog/producers/o/openclaw-foundation
