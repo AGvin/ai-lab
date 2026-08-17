@@ -9,7 +9,7 @@
 - Preserve useful legacy trust boundaries around custom-node provenance and executable dependencies, workflow/template provenance, model sources/licenses, local API/network exposure, filesystem/model access, external API-node credentials, cloud data paths, and generated outputs.
 - Make clear that core/local execution can run offline while explicitly selected online/API/cloud nodes have separate network/data boundaries.
 - Keep exact supported model lists, hardware backends, installation packages, platform availability, cloud pricing/limits, and other mutable details source-backed when expanded.
-- Link the canonical Comfy Organization Inc. producer profile.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official documentation and repository.
 
 ## Validation
@@ -17,4 +17,4 @@
 - ComfyUI remains a Visual AI Workflow Engine software identity despite optional Comfy Cloud availability.
 - The profile is not restricted to Stable Diffusion or image-only workflows.
 - Custom nodes are treated as independently trusted executable extensions.
-- The producer relation resolves to Comfy Organization Inc.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
