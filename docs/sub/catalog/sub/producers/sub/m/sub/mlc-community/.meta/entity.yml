@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/m/mlc-community
+  type: organization
+  name: MLC Community
+  references:
+    - type: official-site
+      source:
+        url: https://mlc.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://llm.mlc.ai/docs/community/guideline.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://blog.mlc.ai/2023/05/01/bringing-accelerated-llm-to-consumer-hardware
+      purposes:
+        - research
+      authority: official
+      note: Early first-party MLC LLM provenance identifies initiating contributors from CMU Catalyst, UW SAMPL, SJTU, OctoML, and the MLC community.
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/mlc-llm

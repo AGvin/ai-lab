@@ -45,3 +45,5 @@ entity:
       target: catalog/software/model-and-data-platforms/model-libraries/transformers
     - type: produces
       target: catalog/software/inference-runtimes/inference-engines/text-embeddings-inference
+    - type: owns
+      target: catalog/producers/g/ggml-ai

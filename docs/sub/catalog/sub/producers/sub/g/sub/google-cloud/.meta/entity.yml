@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/g/google-cloud
+  type: organization
+  name: Google Cloud
+  references:
+    - type: official-site
+      source:
+        url: https://cloud.google.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/llm-d/llm-d
+      purposes:
+        - research
+      authority: official
+      note: Current llm-d project README identifies Google Cloud as one of the founding organizations.
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/distributed-serving/llm-d

@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://www.lmsys.org/projects/
+      purposes:
+        - research
+      authority: official
+      note: Current LMSYS projects page lists SGLang among projects incubated by LMSYS.
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/lmsys-org

@@ -17,3 +17,15 @@ entity:
         - identification
         - research
       authority: official
+      note: Current project README identifies Red Hat, Google Cloud, IBM Research, CoreWeave, and NVIDIA as founding organizations.
+  relations:
+    - type: produced-by
+      target: catalog/producers/r/red-hat
+    - type: produced-by
+      target: catalog/producers/g/google-cloud
+    - type: produced-by
+      target: catalog/producers/i/ibm-research
+    - type: produced-by
+      target: catalog/producers/c/coreweave
+    - type: produced-by
+      target: catalog/producers/n/nvidia

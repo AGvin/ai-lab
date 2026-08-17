@@ -17,3 +17,20 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://www.anyscale.com/blog/presentations-from-the-jan-30-2020-ray-meetup-in-san-francisco
+      purposes:
+        - research
+      authority: official
+      note: First-party Anyscale record of Ray.Serve as a new scalable model-serving library presented by Simon Mo of Anyscale in January 2020.
+    - type: other
+      source:
+        url: https://pytorch.org/projects/ray/
+      purposes:
+        - research
+      authority: official
+      note: Current PyTorch Foundation project page documents Ray's later contribution to neutral foundation governance.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/anyscale-inc

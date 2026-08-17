@@ -17,3 +17,15 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://github.com/ggml-org/llama.cpp/discussions/19759
+      purposes:
+        - research
+      authority: official
+      note: First-party 2026 announcement identifies ggml.ai as the founding team and continuing maintainer of llama.cpp after joining Hugging Face.
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/ggml-ai
+    - type: maintained-by
+      target: catalog/producers/g/ggml-ai

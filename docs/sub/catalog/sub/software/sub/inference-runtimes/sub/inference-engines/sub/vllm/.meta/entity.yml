@@ -17,3 +17,20 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://sky.cs.berkeley.edu/project/vllm/
+      purposes:
+        - research
+      authority: official
+      note: UC Berkeley Sky Computing Lab project page documents vLLM's origin and contributors.
+    - type: other
+      source:
+        url: https://pytorch.org/projects/vllm/
+      purposes:
+        - research
+      authority: official
+      note: Current PyTorch Foundation project page documents vLLM's later contribution to neutral foundation hosting.
+  relations:
+    - type: produced-by
+      target: catalog/producers/u/uc-berkeley-sky-computing-lab

@@ -17,3 +17,16 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://localai.io/docs/overview/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current LocalAI overview identifies Ettore Di Giacinto as creator/original author/project lead and the LocalAI team as maintainer.
+  relations:
+    - type: produced-by
+      target: catalog/producers/e/ettore-di-giacinto
+    - type: maintained-by
+      target: catalog/producers/l/localai-team
