@@ -24,5 +24,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../../../producers/sub/o/sub/openai
+      target: catalog/producers/o/openai

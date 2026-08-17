@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/model-and-data-platforms/dataset-curation/label-studio
+  type: software
+  name: Label Studio
+  references:
+    - type: documentation
+      source:
+        url: https://labelstud.io/guide/get_started.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/HumanSignal/label-studio
+      purposes:
+        - identification
+        - research
+      authority: official

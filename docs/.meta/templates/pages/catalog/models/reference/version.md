@@ -19,7 +19,7 @@ Do not use when the child is actually a different parameter-size model, family/s
 ## Owns
 
 - version/release identity;
-- canonical `version-of` orientation;
+- relation-block placement and reader wording when applicable requirements authorize relation presentation;
 - release-specific naming, behavior, context, capability, or source changes;
 - release-specific authoritative references;
 - explicit source-coverage limitations when facts are incomplete.
@@ -29,16 +29,17 @@ Do not use when the child is actually a different parameter-size model, family/s
 - unchanged model-wide architecture and parameter facts;
 - generic family/series capabilities;
 - artifact packaging/quantization;
-- selection or deployment conclusions.
+- selection or deployment conclusions;
+- per-relation membership, visibility, or ordering, which come from the validated current entity projection.
 
 ## Expected Inputs
 
-Requirement-approved release title/orientation, parent model relation, supported release-specific delta, authoritative release resources, and any source-coverage boundary.
+Requirement-approved release title/orientation, supported release-specific delta, authoritative release resources, any source-coverage boundary, and the validated current-entity relation projection when the page requirements call for the relation block.
 
 ## Composition
 
 1. default header;
-2. parent model relation;
+2. `entity-relations` when applicable requirements call for relation presentation;
 3. concise release identity;
 4. release-specific changes/delta;
 5. evidence or source-coverage boundary when material;
@@ -57,4 +58,6 @@ A release with very small delta remains concise. A richer release may have multi
 
 - presenting a revision as a different concrete model without identity evidence;
 - restating the full parent profile;
-- inventing exact values when the release source only supports qualitative change.
+- inventing exact values when the release source only supports qualitative change;
+- enumerating or approving individual relation targets in page requirements when the standard relation block is intended;
+- filtering visible canonical relation entries inside the template instead of using entity `hidden` controls.

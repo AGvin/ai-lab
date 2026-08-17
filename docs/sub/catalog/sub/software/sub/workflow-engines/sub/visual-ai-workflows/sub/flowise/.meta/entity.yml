@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/workflow-engines/visual-ai-workflows/flowise
+  type: software
+  name: Flowise
+  references:
+    - type: documentation
+      source:
+        url: https://docs.flowiseai.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/FlowiseAI/Flowise
+      purposes:
+        - identification
+        - research
+      authority: official

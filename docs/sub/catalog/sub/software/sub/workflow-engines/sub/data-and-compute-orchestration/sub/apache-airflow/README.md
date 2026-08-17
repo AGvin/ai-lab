@@ -1,9 +1,10 @@
 # Apache Airflow
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Apache Airflow is an open-source platform for developing, scheduling, and monitoring batch-oriented workflows as code. Workflows are authored in Python and operated through Airflow's scheduling and execution infrastructure.
 
-Apache Airflow is a workflow orchestration platform for defining, scheduling, and monitoring batch-oriented data pipelines as code.
+Its primary boundary is finite batch workflow orchestration rather than continuously running streaming or event-processing systems.
 
 ## Official resources
 
-- [Official website](https://airflow.apache.org/)
+- [Apache Airflow documentation](https://airflow.apache.org/docs/)
+- [Apache Airflow repository](https://github.com/apache/airflow)

@@ -1,9 +1,10 @@
 # DeepEval
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+DeepEval is an open-source evaluation framework for testing LLM applications and AI systems. It provides a pytest-like workflow together with LLM-specific evaluation metrics for applications such as agents, RAG pipelines, and chatbots.
 
-DeepEval is a Python evaluation framework for testing language-model applications, retrieval systems, agents, conversations, and multimodal outputs with reusable metrics.
+The framework can run independently; Confident AI provides a related hosted quality platform and optional synchronization surface rather than defining the local DeepEval software identity.
 
 ## Official resources
 
-- [Official documentation](https://deepeval.com/)
+- [DeepEval documentation](https://deepeval.com/docs)
+- [DeepEval repository](https://github.com/confident-ai/deepeval)

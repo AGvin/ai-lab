@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/development-tools/code-editors/vs-code
+  type: software
+  name: Visual Studio Code
+  aliases:
+    - VS Code
+  references:
+    - type: official-site
+      source:
+        url: https://code.visualstudio.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://code.visualstudio.com/docs
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/microsoft/vscode
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

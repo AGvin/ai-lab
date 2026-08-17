@@ -1,0 +1,26 @@
+entity:
+  id: catalog/producers/l/lmsys-org
+  type: organization
+  name: LMSYS Org
+  aliases:
+    - Large Model Systems
+    - LMSYS Corp.
+  references:
+    - type: official-site
+      source:
+        url: https://www.lmsys.org/about/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current LMSYS about page identifies Large Model Systems (LMSYS Corp.) as the nonprofit organization.
+    - type: official-site
+      source:
+        url: https://www.lmsys.org/projects/
+      purposes:
+        - research
+      authority: official
+      note: Current LMSYS projects page lists SGLang as an incubated flagship systems project.
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/sglang

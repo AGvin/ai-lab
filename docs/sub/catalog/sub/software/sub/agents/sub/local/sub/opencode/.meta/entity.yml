@@ -3,6 +3,13 @@ entity:
   type: software
   name: OpenCode
   references:
+    - type: official-site
+      source:
+        url: https://opencode.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
     - type: documentation
       source:
         url: https://opencode.ai/docs
@@ -10,9 +17,21 @@ entity:
         - identification
         - research
       authority: official
-    - type: official-site
+    - type: repository
       source:
-        url: https://opencode.ai/
+        url: https://github.com/anomalyco/opencode
       purposes:
         - identification
+        - research
       authority: official
+    - type: other
+      source:
+        url: https://opencode.ai/legal/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official OpenCode Terms of Use identifying Anomaly Innovations, Inc.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/anomaly-innovations-inc

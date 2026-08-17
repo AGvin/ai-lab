@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/workflow-engines/visual-ai-workflows/dify
+  type: software
+  name: Dify
+  references:
+    - type: documentation
+      source:
+        url: https://docs.dify.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/langgenius/dify
+      purposes:
+        - identification
+        - research
+      authority: official

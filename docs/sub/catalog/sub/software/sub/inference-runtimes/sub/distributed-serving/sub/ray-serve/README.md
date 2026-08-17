@@ -1,9 +1,10 @@
 # Ray Serve
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Ray Serve is Ray's scalable, programmable serving library for deploying and composing model and Python inference applications on distributed Ray infrastructure.
 
-Ray Serve is a scalable Python serving library for composing and deploying model inference and application workloads on Ray clusters.
+It is framework-agnostic and can serve LLM and non-LLM workloads. Ray Serve remains part of the broader Ray project while its primary catalog role here is distributed model serving.
 
 ## Official resources
 
-- [Official documentation](https://docs.ray.io/en/latest/serve/)
+- [Ray Serve documentation](https://docs.ray.io/en/latest/serve/)
+- [Ray repository](https://github.com/ray-project/ray)

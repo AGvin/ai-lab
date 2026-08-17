@@ -3,13 +3,6 @@ entity:
   type: software
   name: OpenClaw
   references:
-    - type: repository
-      source:
-        url: https://github.com/openclaw/openclaw
-      purposes:
-        - identification
-        - research
-      authority: official
     - type: official-site
       source:
         url: https://openclaw.ai/
@@ -17,3 +10,20 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.openclaw.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/openclaw/openclaw
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: maintained-by
+      target: catalog/producers/o/openclaw-foundation

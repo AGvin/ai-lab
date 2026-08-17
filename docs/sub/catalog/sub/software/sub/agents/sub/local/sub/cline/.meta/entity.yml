@@ -3,6 +3,13 @@ entity:
   type: software
   name: Cline
   references:
+    - type: official-site
+      source:
+        url: https://cline.bot/
+      purposes:
+        - identification
+        - research
+      authority: official
     - type: documentation
       source:
         url: https://docs.cline.bot/cline-overview
@@ -10,9 +17,13 @@ entity:
         - identification
         - research
       authority: official
-    - type: official-site
+    - type: repository
       source:
-        url: https://cline.bot/
+        url: https://github.com/cline/cline
       purposes:
         - identification
+        - research
       authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cline-bot-inc

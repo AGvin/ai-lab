@@ -1,9 +1,10 @@
 # n8n
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+n8n is a fair-code workflow and integration automation platform that combines a visual workflow builder with custom code and native AI capabilities.
 
-n8n is a workflow automation platform for connecting applications and APIs through triggers, visual nodes, code steps, credentials, and AI integrations.
+It can run self-hosted or through n8n's hosted service. The software profile owns the self-managed product identity; n8n Cloud is a separate operating surface rather than a reason to classify the software as hosted-only.
 
 ## Official resources
 
-- [Official website](https://n8n.io/)
+- [n8n](https://n8n.io/)
+- [n8n repository](https://github.com/n8n-io/n8n)

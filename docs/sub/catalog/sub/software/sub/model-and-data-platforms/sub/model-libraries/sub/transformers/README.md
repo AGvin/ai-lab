@@ -1,9 +1,10 @@
 # Transformers
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Hugging Face Transformers is an open-source model-definition framework and library for state-of-the-art text, vision, audio, video, and multimodal models across inference and training.
 
-Transformers is Hugging Face's library for loading, training, and running pretrained transformer and related model architectures across text, vision, audio, and multimodal tasks.
+Its centralized model definitions underpin high-level APIs such as Pipeline, Trainer, and generation while also interoperating with external training frameworks and inference engines. Those external runtimes and individual pretrained model artifacts remain separate canonical products or artifacts.
 
 ## Official resources
 
-- [Official documentation](https://huggingface.co/docs/transformers/)
+- [Transformers documentation](https://huggingface.co/docs/transformers/en/index)
+- [Transformers repository](https://github.com/huggingface/transformers)

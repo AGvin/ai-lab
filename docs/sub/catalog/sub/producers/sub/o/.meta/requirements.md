@@ -3,15 +3,11 @@
 ## Requirements
 
 - Provide the alphabetical producer index for canonical producer names beginning with O.
-
-## Content Specification
-
-- Use `Producers — O` as the page title.
-- List every materialized producer under this index exactly once.
-- Keep the page navigational and do not duplicate producer descriptions.
+- Render the standard child-navigation block from the validated direct-child projection so every materialized canonical producer under this index appears exactly once.
+- Keep the page concise and navigational.
 
 ## Validation
 
-- OpenAI is listed and resolves to its canonical producer node.
-- No producer outside the O index is listed.
-- The page contains no temporary-summary or RC wording.
+- The child-navigation block matches the validated materialized direct-child projection and every destination resolves to a canonical producer node.
+- No producer outside the O index is presented.
+- The index does not duplicate model, software, or service profiles.

@@ -12,5 +12,6 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../../../producers/sub/o/sub/openai
+      target: catalog/producers/o/openai
+    - type: has-member
+      target: catalog/models/reference/producers/openai/gpt/gpt-5-6

@@ -1,0 +1,20 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/integrated-workspaces/big-agi
+  type: software
+  name: Big-AGI
+  aliases:
+    - big-AGI
+  references:
+    - type: official-site
+      source:
+        url: https://big-agi.com/
+      purposes:
+        - identification
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/enricoros/big-AGI
+      purposes:
+        - identification
+        - research
+      authority: official

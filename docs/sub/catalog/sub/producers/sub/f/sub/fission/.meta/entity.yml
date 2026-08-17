@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/f/fission
+  type: organization
+  name: Fission
+  references:
+    - type: other
+      source:
+        url: https://github.com/Fission-AI
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official GitHub organization profile whose display name is Fission.
+    - type: repository
+      source:
+        url: https://github.com/Fission-AI/OpenSpec
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/development-tools/spec-driven-development/openspec

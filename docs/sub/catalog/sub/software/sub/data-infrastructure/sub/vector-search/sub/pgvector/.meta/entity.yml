@@ -1,0 +1,15 @@
+entity:
+  id: catalog/software/data-infrastructure/vector-search/pgvector
+  type: software
+  name: pgvector
+  references:
+    - type: repository
+      source:
+        url: https://github.com/pgvector/pgvector
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/andrew-kane

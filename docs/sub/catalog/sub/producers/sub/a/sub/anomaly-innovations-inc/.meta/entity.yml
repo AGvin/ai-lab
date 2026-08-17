@@ -1,0 +1,31 @@
+entity:
+  id: catalog/producers/a/anomaly-innovations-inc
+  type: organization
+  name: Anomaly Innovations, Inc.
+  aliases:
+    - Anomaly
+  references:
+    - type: official-site
+      source:
+        url: https://opencode.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://opencode.ai/legal/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official terms identifying Anomaly Innovations, Inc. as the organization behind OpenCode services.
+    - type: repository
+      source:
+        url: https://github.com/anomalyco/opencode
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agents/local/opencode

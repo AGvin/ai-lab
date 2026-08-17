@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/a/activepieces-inc
+  type: organization
+  name: Activepieces Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://www.activepieces.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.activepieces.com/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official terms identifying Activepieces Inc.
+    - type: repository
+      source:
+        url: https://github.com/activepieces/activepieces
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/automation/integration-automation/activepieces

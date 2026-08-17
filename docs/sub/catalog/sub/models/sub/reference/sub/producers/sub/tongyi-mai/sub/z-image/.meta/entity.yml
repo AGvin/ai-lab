@@ -19,5 +19,6 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../../../producers/sub/t/sub/tongyi-mai
+      target: catalog/producers/t/tongyi-mai
+    - type: has-member
+      target: catalog/models/reference/producers/tongyi-mai/z-image/models/z-image

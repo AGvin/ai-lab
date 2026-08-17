@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/c/comet-ml-inc
+  type: organization
+  name: Comet ML Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://www.comet.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.comet.com/site/enterprise-terms/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current first-party platform terms identifying Comet ML Inc.
+    - type: documentation
+      source:
+        url: https://www.comet.com/docs/opik/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/observability-platforms/opik

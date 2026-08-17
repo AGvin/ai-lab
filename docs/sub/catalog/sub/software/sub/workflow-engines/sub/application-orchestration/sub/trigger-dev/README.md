@@ -1,9 +1,10 @@
 # Trigger.dev
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Trigger.dev is an open-source framework and platform for reliable background jobs, scheduled tasks, long-running workflows, and asynchronous application work including AI workloads.
 
-Trigger.dev is an open-source platform for reliable background tasks, scheduled jobs, long-running workflows, and development-oriented task observability.
+It supplies task execution, retries, waits, observability, and operational workflow infrastructure around application code. Trigger.dev Cloud and self-hosted deployment are separate operating surfaces.
 
 ## Official resources
 
-- [Official website](https://trigger.dev/)
+- [Trigger.dev documentation](https://trigger.dev/docs/introduction)
+- [Trigger.dev repository](https://github.com/triggerdotdev/trigger.dev)

@@ -17,3 +17,10 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: produces
+      target: catalog/models/reference/producers/anthropic/claude
+    - type: produces
+      target: catalog/agent-skills/collections/anthropic-skills
+    - type: produces
+      target: catalog/software/agents/hybrid/claude-code

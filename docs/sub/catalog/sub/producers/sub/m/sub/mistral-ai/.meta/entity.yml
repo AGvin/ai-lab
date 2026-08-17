@@ -22,3 +22,6 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: produces
+      target: catalog/models/reference/producers/mistral-ai/mistral-small

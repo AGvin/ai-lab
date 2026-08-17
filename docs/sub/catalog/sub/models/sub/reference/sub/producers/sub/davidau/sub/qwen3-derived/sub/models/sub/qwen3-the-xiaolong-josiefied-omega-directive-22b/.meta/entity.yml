@@ -26,5 +26,4 @@ entity:
       note: Immediate parent model in the published merge lineage.
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../../../../../../../producers/sub/d/sub/davidau
+      target: catalog/producers/d/davidau

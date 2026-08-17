@@ -16,3 +16,18 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: produces
+      target: catalog/models/reference/producers/google/gemini
+    - type: produces
+      target: catalog/models/reference/producers/google/gemma
+    - type: produces
+      target: catalog/services/development/agents/jules
+    - type: produces
+      target: catalog/software/agents/local/gemini-cli
+    - type: produces
+      target: catalog/software/application-frameworks/application-development/genkit
+    - type: produces
+      target: catalog/software/agent-frameworks/google-adk
+    - type: has-part
+      target: catalog/producers/g/google-deepmind

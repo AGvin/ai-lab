@@ -1,0 +1,12 @@
+entity:
+  id: catalog/software/model-and-data-platforms/lifecycle-platforms/kubeflow
+  type: software
+  name: Kubeflow
+  references:
+    - type: documentation
+      source:
+        url: https://www.kubeflow.org/docs/started/introduction/
+      purposes:
+        - identification
+        - research
+      authority: official

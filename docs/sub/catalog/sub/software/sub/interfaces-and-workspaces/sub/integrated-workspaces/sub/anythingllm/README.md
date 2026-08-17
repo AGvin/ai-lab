@@ -1,9 +1,10 @@
 # AnythingLLM
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+AnythingLLM is an open-source, local-first AI workspace combining model chat, document and knowledge retrieval, agents, tools, vector-storage integrations, and multi-user workflows.
 
-AnythingLLM is a desktop and self-hostable AI workspace combining chat, document retrieval, agents, tools, and multiple local or hosted model providers.
+It is available as a standalone desktop application and as self-hosted server software. AnythingLLM Cloud is a separate hosted operating surface, and desktop/self-hosted modes should not be assumed to share state automatically.
 
 ## Official resources
 
-- [Official website](https://anythingllm.com/)
+- [AnythingLLM documentation](https://docs.anythingllm.com/)
+- [AnythingLLM repository](https://github.com/Mintplex-Labs/anything-llm)

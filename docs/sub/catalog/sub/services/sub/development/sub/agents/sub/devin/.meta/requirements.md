@@ -2,12 +2,20 @@
 
 ## Requirements
 
-- Identify Devin as the canonical hosted development-service profile represented at this path.
-- Include the official product site as the identity and research reference.
-- Keep mutable capabilities, pricing, limits, execution behavior, and availability source-backed and time-scoped when added.
-- Keep repository, model, runtime, and development-tool facts with their respective canonical owners.
+- Identify Devin as Cognition AI, Inc.'s hosted software-development agent represented by the canonical development-agent service profile at this path.
+- Preserve the service boundary: Devin work executes in managed sessions/workspaces and is not a standalone local coding-agent installation.
+- Preserve its ticket/task-driven development role across repository access, code changes, testing, pull requests, review, and other software-delivery workflows.
+- Preserve current integration classes at a stable high level: GitHub, GitLab, Bitbucket, Azure DevOps, Jira, Linear, Slack, Microsoft Teams, API/CI workflows, MCP-connected tools, and organization secrets.
+- Preserve current automation surfaces at a high level, including scheduled sessions and managed parallel Devin sessions, while treating their exact behavior, limits, and availability as mutable.
+- Preserve useful legacy operational boundaries around repository and organization permissions, cloud workspace/session isolation, secrets and credentials, terminal/browser/MCP/API access, scheduled/background execution, deployment permissions, human takeover, and merge/release approval gates.
+- Keep pricing, plan limits, model/runtime details, exact integration availability, execution limits, and other mutable service-state claims source-backed and time-scoped when expanded.
+- Include current official Devin site and documentation references.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 
 ## Validation
 
-- The page contains no temporary-summary or placeholder wording.
-- The official resource link matches canonical entity metadata.
+- The page describes Devin as a hosted development-agent service rather than local agent software.
+- Scheduled/parallel automation does not remove the need for explicit permission, secret, and review boundaries.
+- Integrations are described as access surfaces, not as unlimited permissions.
+- Official resource links match canonical entity metadata.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

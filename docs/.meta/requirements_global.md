@@ -10,13 +10,17 @@ Write documentation so that search engines can understand and index it effective
 
 When an authoritative resource provides multiple localized versions, prefer the version that matches the locale of the generated document. For example, use an English (United States) resource for `en_US` and a Ukrainian resource for `uk_UA` when those official variants exist and are equivalent. When no matching official localization exists, use the closest authoritative version and do not substitute a lower-quality unofficial translation solely to match the locale.
 
-## Incremental updates by default
+## Adaptive render scope
 
-Preserve existing valid documentation and update only the content affected by the requested change. Do not regenerate an entire document merely because a local section changed. Perform full-document regeneration only when it is explicitly required or when an incremental update cannot produce a coherent and correct result.
+When updating an existing rendered document, analyze the current document against the current canonical inputs and determine what is already valid, what is stale or missing, and what reader-facing scope is actually affected.
+
+By default, make the smallest coherent semantic change that produces a correct, coherent, well-formed complete document. Preserve valid unaffected content. Expand the scope from an item or block to a section, several dependent sections, or the whole document whenever canonical changes, dependencies, structure, or document quality require it.
+
+A full-document scope does not by itself require rewriting every valid sentence. However, the repository owner may explicitly request a full-document refresh; in that case ordinary renderer-authored wording and structure may be regenerated without the default preservation preference, while canonical authored content and all current requirements and rendering constraints remain authoritative.
 
 ## Stable document structure
 
-Preserve valid headings, anchors, links, ordering, and surrounding authored content whenever they are outside the requested scope. Avoid unnecessary rewrites and structural churn that create noisy diffs, break inbound references, or obscure the substantive change.
+Preserve valid headings, anchors, links, ordering, and surrounding renderer-authored content when they remain outside the coherent affected scope. Broaden or rebuild structure when required for correctness, coherence, or an explicit full-document refresh. Avoid unnecessary structural churn that creates noisy diffs, breaks inbound references, or obscures the substantive change.
 
 ## Informative, non-clickbait writing
 

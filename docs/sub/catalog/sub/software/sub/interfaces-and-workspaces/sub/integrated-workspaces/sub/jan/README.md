@@ -1,9 +1,10 @@
 # Jan
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Jan is an open-source, local-first AI desktop and workstation application for downloading and running local models, connecting cloud providers, managing assistants and conversations, and exposing local compatible APIs.
 
-Jan is an open-source desktop AI workspace for running local models, connecting remote providers, and exposing a local model API.
+Jan also provides a CLI for serving installed models and wiring separately installed agent programs to local inference. Current Jan Desktop does not run those external coding agents inside the application itself.
 
 ## Official resources
 
-- [Official website](https://jan.ai/)
+- [Jan documentation](https://www.jan.ai/docs)
+- [Jan repository](https://github.com/janhq/jan)

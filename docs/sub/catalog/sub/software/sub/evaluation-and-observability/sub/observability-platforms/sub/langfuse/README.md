@@ -1,9 +1,10 @@
 # Langfuse
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Langfuse is an open-source, self-hostable AI engineering platform combining LLM observability and tracing with prompt management, evaluation, datasets, and experiments.
 
-Langfuse is an open-source platform for tracing, evaluating, experimenting with, and managing prompts and datasets for language-model applications.
+Its integrated capabilities form one product surface; the canonical catalog placement remains observability-oriented rather than duplicating Langfuse across multiple software categories. Langfuse Cloud is a separate hosted operating surface.
 
 ## Official resources
 
-- [Official website](https://langfuse.com/)
+- [Langfuse documentation](https://langfuse.com/docs)
+- [Langfuse repository](https://github.com/langfuse/langfuse)

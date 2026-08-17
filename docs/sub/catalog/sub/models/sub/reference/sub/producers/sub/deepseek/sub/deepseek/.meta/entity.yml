@@ -12,5 +12,6 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../../../producers/sub/d/sub/deepseek
+      target: catalog/producers/d/deepseek
+    - type: has-member
+      target: catalog/models/reference/producers/deepseek/deepseek/deepseek-v4

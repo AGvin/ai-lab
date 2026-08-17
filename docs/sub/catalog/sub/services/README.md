@@ -7,6 +7,7 @@ Installable or self-managed products belong under [`software/`](../software/). D
 ## Service categories
 
 - [`ai-assets/`](./sub/ai-assets/) — externally hosted AI asset and model/data platform access.
+- [`assistant-workspaces/`](./sub/assistant-workspaces/) — hosted conversational assistant and workspace products.
 - [`development/`](./sub/development/) — hosted development products and agent services.
 - [`infrastructure/`](./sub/infrastructure/) — externally operated AI infrastructure and execution services.
 - [`model-apis/`](./sub/model-apis/) — hosted APIs and provider routes for model access.

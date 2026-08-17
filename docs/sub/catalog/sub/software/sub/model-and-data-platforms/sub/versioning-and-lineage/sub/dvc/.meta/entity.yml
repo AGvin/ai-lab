@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/model-and-data-platforms/versioning-and-lineage/dvc
+  type: software
+  name: DVC
+  aliases:
+    - Data Version Control
+  references:
+    - type: documentation
+      source:
+        url: https://dvc.org/doc
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/iterative/dvc
+      purposes:
+        - identification
+        - research
+      authority: official

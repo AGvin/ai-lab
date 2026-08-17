@@ -1,9 +1,10 @@
 # Diffusers
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Hugging Face Diffusers is an open-source library of pretrained diffusion-model pipelines and components for generative workloads including images, video, and audio. Its `DiffusionPipeline` abstraction combines reusable model components and schedulers while supporting adapters, training, and memory/performance optimizations.
 
-Diffusers is Hugging Face's library for pretrained diffusion models and pipelines used in image, video, audio, and other generative workloads.
+Individual pretrained models remain separate artifacts from the Diffusers software library that loads and runs them.
 
 ## Official resources
 
-- [Official documentation](https://huggingface.co/docs/diffusers/)
+- [Diffusers documentation](https://huggingface.co/docs/diffusers/en/index)
+- [Diffusers repository](https://github.com/huggingface/diffusers)

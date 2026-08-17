@@ -12,5 +12,4 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target:
-        path: ../../../../..
+      target: catalog/models/reference/producers/black-forest-labs/flux/flux-1

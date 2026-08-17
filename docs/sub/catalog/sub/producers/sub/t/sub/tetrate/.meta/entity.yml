@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/t/tetrate
+  type: organization
+  name: Tetrate
+  references:
+    - type: official-site
+      source:
+        url: https://tetrate.io/about
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://aigateway.envoyproxy.io/blog/introducing-envoy-ai-gateway
+      purposes:
+        - research
+      authority: official
+      note: Official Envoy AI Gateway introduction documenting the joint Tetrate and Bloomberg project origin.
+  relations:
+    - type: produces
+      target: catalog/software/gateways/api-management-gateways/envoy-ai-gateway

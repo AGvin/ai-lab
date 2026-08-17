@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/gateways/model-gateways/portkey-ai-gateway
+  type: software
+  name: Portkey AI Gateway
+  references:
+    - type: documentation
+      source:
+        url: https://portkey.ai/docs/product/ai-gateway
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Portkey-AI/gateway
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://portkey.ai/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Portkey terms identifying Portkey, Inc.
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/portkey-inc

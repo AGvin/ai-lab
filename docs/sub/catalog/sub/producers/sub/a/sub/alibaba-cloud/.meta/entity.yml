@@ -18,5 +18,6 @@ entity:
       authority: official
   relations:
     - type: part-of
-      target:
-        path: ../../alibaba-group
+      target: catalog/producers/a/alibaba-group
+    - type: has-part
+      target: catalog/producers/q/qwen-team

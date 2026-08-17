@@ -12,11 +12,17 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://help.openai.com/en/articles/11369540-using-codex-with-chatgpt
+        url: https://developers.openai.com/codex
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://help.openai.com/en/articles/11369540
       purposes:
         - research
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/o/sub/openai
+      target: catalog/producers/o/openai

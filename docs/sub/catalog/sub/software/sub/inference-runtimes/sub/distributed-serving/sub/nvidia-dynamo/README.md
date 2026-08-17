@@ -1,9 +1,10 @@
 # NVIDIA Dynamo
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+NVIDIA Dynamo is an open-source, datacenter-scale distributed inference framework for generative-AI serving. It is an orchestration layer above inference engines such as SGLang, TensorRT-LLM, and vLLM, coordinating them into multi-node serving systems.
 
-NVIDIA Dynamo is a distributed inference framework for composing and scaling model-serving components across GPU infrastructure.
+That orchestration role determines its placement under distributed serving rather than alongside the engines it coordinates.
 
 ## Official resources
 
-- [Official repository](https://github.com/ai-dynamo/dynamo)
+- [NVIDIA Dynamo documentation](https://docs.dynamo.nvidia.com/dynamo/dev/getting-started/introduction)
+- [Dynamo repository](https://github.com/ai-dynamo/dynamo)

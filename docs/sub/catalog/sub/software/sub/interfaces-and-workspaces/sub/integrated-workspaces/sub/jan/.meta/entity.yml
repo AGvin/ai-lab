@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/integrated-workspaces/jan
+  type: software
+  name: Jan
+  references:
+    - type: documentation
+      source:
+        url: https://www.jan.ai/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/janhq/jan
+      purposes:
+        - identification
+        - research
+      authority: official

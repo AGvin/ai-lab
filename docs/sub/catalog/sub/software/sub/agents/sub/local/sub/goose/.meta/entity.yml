@@ -12,15 +12,13 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://block.github.io/goose/
+        url: https://goose-docs.ai/
       purposes:
         - identification
         - research
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/b/sub/block
+      target: catalog/producers/b/block
     - type: maintained-by
-      target:
-        path: ../../../../../../../../producers/sub/a/sub/agentic-ai-foundation
+      target: catalog/producers/a/agentic-ai-foundation

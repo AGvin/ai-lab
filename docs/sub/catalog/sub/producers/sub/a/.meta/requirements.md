@@ -3,15 +3,11 @@
 ## Requirements
 
 - Provide the alphabetical producer index for canonical producer names beginning with A.
-
-## Content Specification
-
-- Use `Producers — A` as the page title.
-- List every materialized canonical producer under this index exactly once.
-- Keep the page navigational and do not duplicate producer descriptions.
+- Render the standard child-navigation block from the validated direct-child projection so every materialized canonical producer under this index appears exactly once.
+- Keep the page concise and navigational.
 
 ## Validation
 
-- Agentic AI Foundation, Alibaba Cloud, Alibaba Group, and Anthropic are listed and resolve to canonical producer nodes.
-- No producer outside the A index is listed.
-- The page contains no temporary-summary or placeholder wording.
+- The child-navigation block matches the validated materialized direct-child projection and every destination resolves to a canonical producer node.
+- No producer outside the A index is presented.
+- The index does not duplicate model, software, or service profiles.

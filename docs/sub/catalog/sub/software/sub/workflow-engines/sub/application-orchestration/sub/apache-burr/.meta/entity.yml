@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/workflow-engines/application-orchestration/apache-burr
+  type: software
+  name: Apache Burr
+  references:
+    - type: documentation
+      source:
+        url: https://burr.apache.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/apache/burr
+      purposes:
+        - identification
+        - research
+      authority: official

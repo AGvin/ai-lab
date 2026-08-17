@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/e/element-labs-inc
+  type: organization
+  name: Element Labs, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://lmstudio.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://lmstudio.ai/app-terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official LM Studio Desktop App Terms identifying Element Labs, Inc.
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/integrated-platforms/lm-studio

@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/model-and-data-platforms/dataset-curation/argilla
+  type: software
+  name: Argilla
+  references:
+    - type: documentation
+      source:
+        url: https://docs.argilla.io/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/argilla-io/argilla
+      purposes:
+        - identification
+        - research
+      authority: official

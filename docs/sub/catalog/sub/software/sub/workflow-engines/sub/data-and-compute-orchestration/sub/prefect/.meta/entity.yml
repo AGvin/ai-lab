@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/workflow-engines/data-and-compute-orchestration/prefect
+  type: software
+  name: Prefect
+  references:
+    - type: documentation
+      source:
+        url: https://docs.prefect.io/v3/get-started
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/PrefectHQ/prefect
+      purposes:
+        - identification
+        - research
+      authority: official

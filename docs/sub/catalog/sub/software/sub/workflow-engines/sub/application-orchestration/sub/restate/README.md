@@ -1,9 +1,10 @@
 # Restate
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Restate is an open-source durable application runtime for building resilient services, workflows, stateful functions, and AI-agent or application backends. It provides persisted execution together with durable state, timers, and reliable communication.
 
-Restate is a durable application runtime for building resilient services, workflows, and stateful functions with persisted execution and reliable messaging.
+Its runtime model belongs to application orchestration rather than data-pipeline scheduling.
 
 ## Official resources
 
-- [Official website](https://restate.dev/)
+- [Restate documentation](https://docs.restate.dev/)
+- [Restate repository](https://github.com/restatedev/restate)

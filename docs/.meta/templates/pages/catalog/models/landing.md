@@ -20,11 +20,12 @@ Do not use for Model Reference, Model Selection, a model producer, family, serie
 
 - the distinction between the `reference/` and `selection/` reader journeys;
 - concise explanation of what each journey is for;
-- primary navigation into both journeys;
+- child-navigation placement and reader wording for the materialized direct model journeys;
 - ownership boundary preventing recommendation conclusions from becoming canonical model facts.
 
 ## Does Not Own
 
+- direct-child membership or ordering, which come from the validated current-node navigation projection;
 - complete model taxonomy;
 - concrete model facts;
 - recommendations, rankings, benchmark conclusions, or deployment guidance;
@@ -32,13 +33,13 @@ Do not use for Model Reference, Model Selection, a model producer, family, serie
 
 ## Expected Inputs
 
-Requirement-approved title and orientation, links and concise descriptions for `reference/` and `selection/`, and any required ownership-boundary explanation.
+Requirement-approved title and orientation, authorization for the primary child-navigation block, the validated current-node direct-child projection, and any required ownership-boundary explanation.
 
 ## Composition
 
 1. default header;
-2. one concise explanation of the two reader intents;
-3. prominent navigation to Reference and Selection;
+2. one concise explanation of the factual-reference and decision-support reader intents;
+3. prominent `child-navigation` to the materialized direct model journeys using the validated direct-child projection;
 4. short ownership boundary when needed.
 
 ## Variants
@@ -51,6 +52,8 @@ The detail of each journey may grow, but this page stays concise and does not ex
 
 ## Anti-patterns
 
+- enumerating the direct model journeys in page requirements when the standard child-navigation block is intended;
+- filtering direct model journeys inside the template instead of using the canonical navigation projection;
 - mixing factual model identity with recommendation claims;
 - reproducing the complete reference taxonomy;
 - burying the Reference/Selection distinction below long background prose.

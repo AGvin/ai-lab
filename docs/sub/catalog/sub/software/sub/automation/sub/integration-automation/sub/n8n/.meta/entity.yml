@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/automation/integration-automation/n8n
+  type: software
+  name: n8n
+  references:
+    - type: official-site
+      source:
+        url: https://n8n.io/
+      purposes:
+        - identification
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/n8n-io/n8n
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/n8n-gmbh

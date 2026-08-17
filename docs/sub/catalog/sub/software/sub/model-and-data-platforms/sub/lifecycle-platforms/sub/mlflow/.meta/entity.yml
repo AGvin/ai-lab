@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/model-and-data-platforms/lifecycle-platforms/mlflow
+  type: software
+  name: MLflow
+  references:
+    - type: documentation
+      source:
+        url: https://mlflow.org/docs/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/mlflow/mlflow
+      purposes:
+        - identification
+        - research
+      authority: official

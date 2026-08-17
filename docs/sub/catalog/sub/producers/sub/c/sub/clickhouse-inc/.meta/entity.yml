@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/c/clickhouse-inc
+  type: organization
+  name: ClickHouse, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://clickhouse.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://clickhouse.com/legal/clickhouse-general-terms-and-conditions
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current ClickHouse general terms identifying ClickHouse, Inc. and the continuing Langfuse GmbH service entity.
+    - type: other
+      source:
+        url: https://clickhouse.com/blog/clickhouse-acquires-langfuse-open-source-llm-observability
+      purposes:
+        - research
+      authority: official
+      note: First-party announcement that ClickHouse acquired Langfuse.
+  relations:
+    - type: owns
+      target: catalog/producers/l/langfuse-gmbh

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/workflow-engines/data-and-compute-orchestration/kubeflow-pipelines
+  type: software
+  name: Kubeflow Pipelines
+  aliases:
+    - KFP
+  references:
+    - type: documentation
+      source:
+        url: https://www.kubeflow.org/docs/components/pipelines/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/kubeflow/pipelines
+      purposes:
+        - identification
+        - research
+      authority: official

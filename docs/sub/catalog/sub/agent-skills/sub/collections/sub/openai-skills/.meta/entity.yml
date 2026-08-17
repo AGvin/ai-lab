@@ -21,5 +21,4 @@ entity:
       note: Current successor repository for Codex plugin examples as directed by openai/skills.
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../producers/sub/o/sub/openai
+      target: catalog/producers/o/openai

@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/workflow-engines/data-and-compute-orchestration/kestra
+  type: software
+  name: Kestra
+  references:
+    - type: documentation
+      source:
+        url: https://kestra.io/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/kestra-io/kestra
+      purposes:
+        - identification
+        - research
+      authority: official

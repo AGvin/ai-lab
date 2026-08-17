@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/a/arize-ai-inc
+  type: organization
+  name: Arize AI, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://arize.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://arize.com/terms-of-service/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current first-party terms identifying Arize AI, Inc.
+    - type: documentation
+      source:
+        url: https://arize.com/docs/phoenix
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/observability-platforms/arize-phoenix

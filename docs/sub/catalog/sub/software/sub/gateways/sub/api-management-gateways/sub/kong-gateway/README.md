@@ -1,9 +1,10 @@
 # Kong Gateway
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Kong Gateway is a cloud-native API gateway and reverse-proxy layer for managing, securing, configuring, and routing API traffic across distributed systems.
 
-Kong Gateway is an API gateway and management platform whose plugin ecosystem includes AI proxying, routing, caching, rate limiting, and model-traffic governance.
+Its AI-gateway plugins and LLM-oriented use cases extend the broader API-management product. Konnect and other Kong-operated control-plane services are separate operating surfaces.
 
 ## Official resources
 
-- [Official website](https://konghq.com/products/kong-gateway)
+- [Kong Gateway documentation](https://developer.konghq.com/gateway/)
+- [Kong Gateway repository](https://github.com/Kong/kong)

@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/v/vercel-inc
+  type: organization
+  name: Vercel Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://vercel.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://vercel.com/legal/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official legal terms identifying Vercel Inc.
+    - type: documentation
+      source:
+        url: https://vercel.com/docs/ai-sdk
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/application-frameworks/application-development/vercel-ai-sdk

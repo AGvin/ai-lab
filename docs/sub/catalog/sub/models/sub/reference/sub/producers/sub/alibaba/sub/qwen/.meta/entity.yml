@@ -19,5 +19,10 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/q/sub/qwen-team
+      target: catalog/producers/q/qwen-team
+    - type: has-member
+      target: catalog/models/reference/producers/alibaba/qwen/qwen2-5-coder
+    - type: has-member
+      target: catalog/models/reference/producers/alibaba/qwen/qwen3-coder
+    - type: has-member
+      target: catalog/models/reference/producers/alibaba/qwen/qwen3

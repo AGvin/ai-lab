@@ -1,9 +1,10 @@
 # LiteLLM
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+LiteLLM is an open-source AI gateway and Python SDK that provides a unified interface to many model providers, commonly through OpenAI-compatible request formats.
 
-LiteLLM provides a unified model API and self-hostable proxy with provider routing, retries, fallbacks, virtual keys, budgets, and usage tracking.
+The centralized proxy/gateway and direct SDK are two usage surfaces of the same software identity. Hosted proxy and enterprise operating surfaces remain distinct from self-managed LiteLLM deployment.
 
 ## Official resources
 
-- [Official documentation](https://docs.litellm.ai/)
+- [LiteLLM documentation](https://docs.litellm.ai/)
+- [LiteLLM repository](https://github.com/BerriAI/litellm)

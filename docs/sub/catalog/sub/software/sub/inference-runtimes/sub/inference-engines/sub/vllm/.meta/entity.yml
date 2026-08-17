@@ -1,0 +1,36 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/vllm
+  type: software
+  name: vLLM
+  references:
+    - type: documentation
+      source:
+        url: https://docs.vllm.ai/en/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/vllm-project/vllm
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://sky.cs.berkeley.edu/project/vllm/
+      purposes:
+        - research
+      authority: official
+      note: UC Berkeley Sky Computing Lab project page documents vLLM's origin and contributors.
+    - type: other
+      source:
+        url: https://pytorch.org/projects/vllm/
+      purposes:
+        - research
+      authority: official
+      note: Current PyTorch Foundation project page documents vLLM's later contribution to neutral foundation hosting.
+  relations:
+    - type: produced-by
+      target: catalog/producers/u/uc-berkeley-sky-computing-lab

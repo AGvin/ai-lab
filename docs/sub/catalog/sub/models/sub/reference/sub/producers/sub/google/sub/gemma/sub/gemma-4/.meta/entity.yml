@@ -19,5 +19,8 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target:
-        path: ../../..
+      target: catalog/models/reference/producers/google/gemma
+    - type: has-member
+      target: catalog/models/reference/producers/google/gemma/gemma-4/models/e2b-instruct
+    - type: has-member
+      target: catalog/models/reference/producers/google/gemma/gemma-4/models/e4b-instruct

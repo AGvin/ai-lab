@@ -1,0 +1,31 @@
+entity:
+  id: catalog/producers/p/portkey-inc
+  type: organization
+  name: Portkey, Inc.
+  aliases:
+    - Portkey
+  references:
+    - type: official-site
+      source:
+        url: https://portkey.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://portkey.ai/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Portkey terms identifying Portkey, Inc.
+    - type: repository
+      source:
+        url: https://github.com/Portkey-AI/gateway
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/gateways/model-gateways/portkey-ai-gateway

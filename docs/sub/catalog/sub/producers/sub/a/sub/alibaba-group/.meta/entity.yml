@@ -16,3 +16,8 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: has-part
+      target: catalog/producers/a/alibaba-cloud
+    - type: produces
+      target: catalog/software/gateways/api-management-gateways/higress

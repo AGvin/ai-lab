@@ -1,0 +1,35 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/mlc-llm
+  type: software
+  name: MLC LLM
+  references:
+    - type: documentation
+      source:
+        url: https://llm.mlc.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/mlc-ai/mlc-llm
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://mlc.ai/
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://blog.mlc.ai/2023/05/01/bringing-accelerated-llm-to-consumer-hardware
+      purposes:
+        - research
+      authority: official
+      note: First-party origin history identifies initiating contributors from CMU Catalyst, UW SAMPL, SJTU, OctoML, and the MLC community.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mlc-community

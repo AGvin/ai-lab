@@ -1,9 +1,10 @@
 # ClearML
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+ClearML is an open-source MLOps and AI platform family spanning experiment tracking, data and model management, remote execution and orchestration, pipelines, serving, and infrastructure control.
 
-ClearML is an open-source MLOps platform for experiment tracking, data and model management, orchestration, remote execution, and serving.
+Its SDK, server, agents, data tools, serving components, and current platform layers form one broader lifecycle surface. Commercial and hosted ClearML features remain separate edition and operating boundaries from the open-source components.
 
 ## Official resources
 
-- [Official website](https://clear.ml/)
+- [ClearML](https://clear.ml/)
+- [ClearML documentation](https://clear.ml/docs/latest/docs/)

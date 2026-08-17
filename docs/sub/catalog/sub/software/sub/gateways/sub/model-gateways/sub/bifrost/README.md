@@ -1,9 +1,10 @@
 # Bifrost
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Bifrost by Maxim is an open-source AI model gateway that provides a unified interface across multiple model providers and supports routing and operational gateway concerns.
 
-Bifrost is a self-hostable model gateway with unified APIs, routing, fallbacks, load balancing, caching, governance, and provider integrations.
+It can be embedded as a Go package or used through an HTTP gateway surface. Bifrost mediates access to model providers rather than providing the underlying models itself.
 
 ## Official resources
 
-- [Official repository](https://github.com/maximhq/bifrost)
+- [Bifrost documentation](https://www.getmaxim.ai/docs/bifrost/overview/get-started)
+- [Bifrost repository](https://github.com/maximhq/bifrost)

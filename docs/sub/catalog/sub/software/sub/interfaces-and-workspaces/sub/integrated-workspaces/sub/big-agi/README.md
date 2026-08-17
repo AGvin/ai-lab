@@ -1,9 +1,10 @@
-# big-AGI
+# Big-AGI
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Big-AGI is a local-first, multi-model AI workspace for advanced conversations and expert workflows. Its open-source foundation includes personas, multi-model interaction, files, media, and other AI-workspace capabilities while retaining user-selected model providers.
 
-big-AGI is an open-source web workspace for multi-model conversations, personas, tools, documents, and advanced AI interaction workflows.
+Big-AGI Open can be self-hosted; the hosted Free and Pro surfaces at `big-agi.com` add separate service and subscription boundaries within the same product family.
 
 ## Official resources
 
-- [Official website](https://big-agi.com/)
+- [Big-AGI](https://big-agi.com/)
+- [Big-AGI repository](https://github.com/enricoros/big-AGI)

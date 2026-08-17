@@ -1,9 +1,10 @@
 # OpenSpec
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+OpenSpec is a lightweight spec-driven development framework for aligning humans and AI coding assistants on what a software change should do before and during implementation.
 
-OpenSpec is a lightweight specification-driven workflow that helps humans and AI coding assistants agree on intended changes before implementation.
+It separates the current specification of a system from proposed change artifacts and supports an iterative workflow in which plans, specs, designs, tasks, and implementation can be reconciled as the work evolves.
 
 ## Official resources
 
-- [Official website](https://openspec.dev/)
+- [OpenSpec](https://openspec.dev/)
+- [OpenSpec repository](https://github.com/Fission-AI/OpenSpec)

@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/workflow-engines/data-and-compute-orchestration/apache-airflow
+  type: software
+  name: Apache Airflow
+  references:
+    - type: documentation
+      source:
+        url: https://airflow.apache.org/docs/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/apache/airflow
+      purposes:
+        - identification
+        - research
+      authority: official

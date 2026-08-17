@@ -1,0 +1,33 @@
+entity:
+  id: catalog/producers/l/langchain-inc
+  type: organization
+  name: LangChain Inc.
+  aliases:
+    - LangChain
+  references:
+    - type: official-site
+      source:
+        url: https://www.langchain.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.langchain.com/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official LangChain Terms of Service identifying LangChain Inc.
+    - type: repository
+      source:
+        url: https://github.com/langchain-ai
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agent-frameworks/langchain
+    - type: produces
+      target: catalog/software/agent-frameworks/langgraph

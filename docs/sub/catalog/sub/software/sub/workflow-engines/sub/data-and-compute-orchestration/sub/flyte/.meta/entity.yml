@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/workflow-engines/data-and-compute-orchestration/flyte
+  type: software
+  name: Flyte
+  references:
+    - type: documentation
+      source:
+        url: https://www.union.ai/docs/v2/flyte/user-guide/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/flyteorg/flyte
+      purposes:
+        - identification
+        - research
+      authority: official

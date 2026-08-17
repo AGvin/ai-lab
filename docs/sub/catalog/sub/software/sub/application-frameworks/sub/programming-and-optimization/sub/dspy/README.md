@@ -1,9 +1,10 @@
 # DSPy
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+DSPy is an open-source Python framework for programming language-model systems with structured signatures and modules, then optimizing those programs against explicit metrics.
 
-DSPy is a framework for programming and optimizing language-model systems through declarative modules, signatures, examples, and evaluation-driven compilation.
+Its core design replaces hand-maintained prompt-template workflows with composable LM programs whose instructions, demonstrations, and related parameters can be tuned by DSPy optimizers.
 
 ## Official resources
 
-- [Official documentation](https://dspy.ai/)
+- [DSPy documentation](https://dspy.ai/)
+- [DSPy repository](https://github.com/stanfordnlp/dspy)

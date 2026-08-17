@@ -20,26 +20,28 @@ Do not use for the canonical producer organization profile, model family, hosted
 
 - model-domain navigation for the producer;
 - concise context shared across the producer's represented model families when requirements explicitly place it here;
-- links to canonical model families/lines;
-- link to the canonical producer profile.
+- child-navigation placement and reader wording for materialized direct model-family destinations;
+- relation-block placement and reader wording when applicable requirements authorize relation presentation.
 
 ## Does Not Own
 
 - company history or organization facts already owned by `catalog/producers/`;
 - hosted plans, APIs, pricing, or service availability;
 - detailed family/model/version facts;
-- provider identity merely because it offers access to the models.
+- provider identity merely because it offers access to the models;
+- direct-child membership or ordering, which come from the validated current-node navigation projection;
+- per-relation membership, visibility, or ordering, which come from the validated current entity projection.
 
 ## Expected Inputs
 
-Requirement-approved producer-view title and summary, canonical producer relation, explicit materialized model-family destinations, and any genuinely shared model-domain context.
+Requirement-approved producer-view title and summary, authorization for family child navigation, the validated current-node direct-child projection, any genuinely shared model-domain context, and the validated current-entity relation projection when the page requirements call for the relation block.
 
 ## Composition
 
 1. default header;
-2. canonical producer relation through `entity-relations`;
+2. `entity-relations` when applicable requirements call for relation presentation;
 3. concise model-domain orientation;
-4. family navigation through `child-navigation`;
+4. family navigation through `child-navigation` using the validated direct-child projection;
 5. optional `official-resources` only when requirements need model-domain sources distinct from the producer profile.
 
 ## Variants
@@ -57,4 +59,8 @@ A producer may expose one or many families. Community-derived producer views may
 
 - copying the canonical producer profile;
 - listing hosted providers as model owners;
+- enumerating individual model-family children in page requirements when the standard child-navigation block is intended;
+- filtering direct model-family children inside the template instead of using the canonical navigation projection;
+- enumerating or approving individual relation targets in page requirements when the standard relation block is intended;
+- filtering visible canonical relation entries inside the template instead of using entity `hidden` controls;
 - turning family navigation into recommendation ranking.

@@ -4,7 +4,7 @@ AI Lab is an informational and experimental documentation repository for researc
 
 ## Evidence and evaluation limits
 
-Model, tool, service, and workflow assessments are valid only within their stated evidence and operating conditions. Results can change with the exact model, version, artifact, or hosted snapshot; provider or runtime; hardware and deployment configuration; numerical precision or quantization; prompts and system instructions; context and tool access; representative inputs and datasets; evaluation method and acceptance criteria; and evaluation date.
+Model, tool, service, and workflow assessments are valid only within their stated evidence and operating conditions. Results can change with the exact model, version, artifact, or hosted snapshot; provider or runtime; hardware, operating system, drivers, and deployment configuration; numerical precision or quantization; prompts, system instructions, sampling parameters, context, and tool access; representative inputs and datasets; evaluation method and acceptance criteria; and evaluation date.
 
 Provider or vendor claims, AI Lab tests, independent evidence, community reports, and inference are different evidence classes. One must not be presented as another, and a ranking or recommendation for one workload must not be treated as an intrinsic or universal property of the evaluated system.
 

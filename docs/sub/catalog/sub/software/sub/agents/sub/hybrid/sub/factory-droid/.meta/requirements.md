@@ -2,15 +2,20 @@
 
 ## Requirements
 
-- Identify Factory Droid as Factory's software-development agent and runtime for development workflows across developer machines, CI, and enterprise infrastructure.
-- Preserve its end-to-end development scope at a high level, including planning, implementation, testing, and integration with engineering systems, without turning the catalog profile into setup guidance.
+- Identify Factory Droid as Factory's software-development agent and runtime for development workflows across developer machines, CI, remote computers, and enterprise infrastructure.
+- Preserve its end-to-end development scope at a high level, including planning, implementation, testing, review, and integration with engineering systems, without turning the catalog profile into setup guidance.
 - Distinguish Factory's documented deployment patterns: cloud-managed, hybrid enterprise, and fully airgapped deployment.
-- Do not imply that Droid requires Factory cloud, Factory-brokered model access, or outbound internet in every supported deployment mode.
-- Keep mutable enterprise, security, integration, and model-provider claims source-backed when expanded.
-- Include current official Factory Droid and deployment documentation.
+- Preserve the current computer/runtime boundary at a stable high level: Droid can run on user-managed laptops, CI runners, VPS/VMs, containers, remote development environments, or Factory-managed computers.
+- Do not imply that Droid requires Factory cloud, Factory-brokered model access, outbound internet, or Factory-managed compute in every supported deployment mode.
+- Preserve useful legacy operational boundaries around repository and organization permissions, generated diffs, integrations, credentials/secrets, model/provider routing, session/cloud sync, remote-access relays, automation scopes, and human approval for merge/deploy/release workflows.
+- Keep mutable enterprise, security/compliance, integration, pricing, managed-compute, and model-provider claims source-backed when expanded.
+- Include current official Factory Droid product, CLI, and deployment documentation.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 
 ## Validation
 
-- The profile reflects that Droid can run on laptops, CI infrastructure, VMs or Kubernetes, and in airgapped environments when configured accordingly.
+- The profile reflects that Droid can run on laptops, CI infrastructure, VMs/containers/Kubernetes, managed computers, and airgapped environments when configured accordingly.
 - Cloud-managed and fully self-contained deployment modes are not collapsed into one execution model.
+- Factory cloud/session synchronization and remote-access services are not presented as mandatory for all deployments.
 - Official resource links match canonical entity metadata.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

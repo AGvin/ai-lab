@@ -20,8 +20,7 @@ Do not use for hosted-only services, model identities, producer profiles, generi
 
 - software identity and primary role;
 - stable capability/interface overview;
-- producer/project relations when useful;
-- ecosystem and compatibility relations when requirements authorize them;
+- relation-block placement and reader wording when applicable requirements authorize relation presentation;
 - authoritative software resources;
 - concise usage orientation sufficient to route readers to deeper setup/operations content.
 
@@ -30,17 +29,18 @@ Do not use for hosted-only services, model identities, producer profiles, generi
 - hosted-service state that belongs to a service entity;
 - long step-by-step installation/configuration tutorials unless the architecture explicitly assigns them here;
 - universal comparisons or selection conclusions;
-- duplicated model/dataset/hardware facts.
+- duplicated model/dataset/hardware facts;
+- per-relation membership, visibility, or ordering, which come from the validated current entity projection.
 
 ## Expected Inputs
 
-Requirement-approved title/orientation, canonical identity and relations, stable role/capability facts, important interfaces/integrations/compatibility boundaries, and authoritative resources.
+Requirement-approved title/orientation, canonical software identity, stable role/capability facts, important interfaces/integrations/compatibility boundaries, authoritative resources, and the validated current-entity relation projection when the page requirements call for the relation block.
 
 ## Composition
 
 1. default header;
 2. concise software identity and role;
-3. producer/project relation when useful;
+3. `entity-relations` when applicable requirements call for relation presentation;
 4. capability and interface overview;
 5. important compatibility/ecosystem boundaries;
 6. clear next-step links for setup, usage, or related services when materialized elsewhere;
@@ -62,4 +62,6 @@ Frameworks, runtimes, libraries, developer tools, interfaces, gateways, and plat
 
 - using one generic `catalog/item` contract that erases software-specific reader expectations;
 - mixing hosted-only mutable service behavior into the stable software profile;
+- enumerating or approving individual relation targets in page requirements when the standard relation block is intended;
+- filtering visible canonical relation entries inside the template instead of using entity `hidden` controls;
 - turning the profile into a long setup tutorial by default.

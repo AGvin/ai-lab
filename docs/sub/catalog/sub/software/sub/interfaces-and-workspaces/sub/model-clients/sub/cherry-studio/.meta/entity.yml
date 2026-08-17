@@ -1,0 +1,12 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/model-clients/cherry-studio
+  type: software
+  name: Cherry Studio
+  references:
+    - type: repository
+      source:
+        url: https://github.com/CherryHQ/cherry-studio
+      purposes:
+        - identification
+        - research
+      authority: official

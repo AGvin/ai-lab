@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/n/n8n-gmbh
+  type: organization
+  name: n8n GmbH
+  references:
+    - type: official-site
+      source:
+        url: https://n8n.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://n8n.io/legal/eula/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current official EULA identifying n8n GmbH as the software provider.
+    - type: repository
+      source:
+        url: https://github.com/n8n-io/n8n
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/automation/integration-automation/n8n

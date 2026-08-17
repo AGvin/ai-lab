@@ -4,18 +4,18 @@
 
 - Identify Google DeepMind as a separate canonical producer organization when official model material attributes authorship or development specifically to Google DeepMind.
 - Keep broader Google organization identity separate rather than silently collapsing Google DeepMind provenance into Google.
-- Link Gemma as a represented model family with explicit Google DeepMind provenance.
+- Preserve the documented structural/provenance boundary between Google DeepMind and Google without interpreting structural inclusion as ownership.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
+- Include the official Google DeepMind site, model-card index, and official Google organizational announcement supporting the structural context.
 
 ## Content Specification
 
 - Use `Google DeepMind` as the page title.
 - Describe the organization concisely as the canonical producer identity for model provenance attributed specifically to Google DeepMind.
-- Link the canonical Gemma family.
-- Preserve the broader Google provenance boundary: current official Gemma documentation describes development by Google DeepMind and other teams across Google.
-- Include the official Google DeepMind site and model-card index.
+- Preserve the broader Google provenance boundary without interpreting structural inclusion as ownership.
 
 ## Validation
 
 - Google DeepMind and Google remain distinct canonical organization identities.
-- The page does not duplicate Gemma model-family or concrete-model facts.
-- The Gemma link resolves to the canonical model-family node.
+- The page does not duplicate represented model-family or concrete-model facts.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

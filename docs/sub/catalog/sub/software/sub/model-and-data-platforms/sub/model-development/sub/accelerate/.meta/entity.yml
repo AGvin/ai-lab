@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-development/accelerate
+  type: software
+  name: Accelerate
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/accelerate/en/index
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/huggingface/accelerate
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/hugging-face-inc

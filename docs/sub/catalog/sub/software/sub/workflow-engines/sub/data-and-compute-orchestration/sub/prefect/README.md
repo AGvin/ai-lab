@@ -1,9 +1,10 @@
 # Prefect
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+Prefect is an open-source Python workflow-orchestration engine for turning Python functions into observable, schedulable, and recoverable production workflows and data pipelines.
 
-Prefect is a Python workflow orchestration platform for building, scheduling, observing, and recovering data and application flows.
+Prefect can be operated with self-managed server components or through Prefect Cloud; those operating surfaces share one software identity but different service boundaries.
 
 ## Official resources
 
-- [Official website](https://www.prefect.io/)
+- [Prefect documentation](https://docs.prefect.io/v3/get-started)
+- [Prefect repository](https://github.com/PrefectHQ/prefect)

@@ -1,9 +1,10 @@
 # vLLM
 
-> **Temporary catalog summary:** This short description is a placeholder for a future reviewed catalog profile.
+vLLM is an open-source library and serving engine for high-throughput, memory-efficient large-language-model inference.
 
-vLLM is a high-throughput language-model inference and serving engine with continuous batching, distributed execution, and OpenAI-compatible APIs.
+It can be used directly for model serving or as an inference backend beneath higher-level distributed orchestration systems such as llm-d and NVIDIA Dynamo.
 
 ## Official resources
 
-- [Official website](https://vllm.ai/)
+- [vLLM documentation](https://docs.vllm.ai/en/latest/)
+- [vLLM repository](https://github.com/vllm-project/vllm)

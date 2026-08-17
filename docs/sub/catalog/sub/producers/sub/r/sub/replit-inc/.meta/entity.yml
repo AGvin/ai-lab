@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/r/replit-inc
+  type: organization
+  name: Replit, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://replit.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://replit.com/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official Replit Terms of Service identifying Replit, Inc.
+  relations:
+    - type: produces
+      target: catalog/services/development/agents/replit-agent

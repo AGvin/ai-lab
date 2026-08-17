@@ -20,10 +20,11 @@ Do not use for broad conceptual categories, domain roots, alphabetical partition
 
 - minimal parent orientation;
 - explanation of the child type when it is not obvious;
-- navigation to implemented children of that type.
+- child-navigation placement and reader wording for implemented direct children of that type.
 
 ## Does Not Own
 
+- direct-child membership or ordering, which come from the validated current-node navigation projection;
 - parent profile facts;
 - full child facts;
 - speculative future children;
@@ -31,18 +32,18 @@ Do not use for broad conceptual categories, domain roots, alphabetical partition
 
 ## Expected Inputs
 
-Requirement-approved title, canonical parent link/context, child-type meaning, and the explicit materialized child entries.
+Requirement-approved title, canonical parent link/context, child-type meaning, authorization for the child-navigation block, and the validated current-node direct-child projection.
 
 ## Composition
 
 1. default header;
 2. one short parent-context statement;
 3. child-type explanation only when needed;
-4. `child-navigation` immediately as the primary reader action.
+4. `child-navigation` immediately as the primary reader action using the validated direct-child projection.
 
 ## Variants
 
-`models`, `versions`, and `artifacts` are semantic variants of this one family. Their wording and child descriptions come from requirements; they do not justify separate templates by themselves.
+`models`, `versions`, and `artifacts` are semantic variants of this one family. Their page-level wording comes from requirements; child membership and default ordering come from the canonical navigation projection and do not justify separate templates by themselves.
 
 ## Representative Examples
 
@@ -52,6 +53,8 @@ Requirement-approved title, canonical parent link/context, child-type meaning, a
 
 ## Anti-patterns
 
+- enumerating individual direct children in page requirements when the standard child-navigation block is intended;
+- filtering materialized direct children inside the template instead of using the canonical navigation projection;
 - re-describing the parent entity;
 - presenting children that are not materialized;
 - turning the index into a comparison table without a decision-support requirement;

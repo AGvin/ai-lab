@@ -3,14 +3,11 @@
 ## Requirements
 
 - Provide the alphabetical producer index for canonical producer names beginning with Q.
-
-## Content Specification
-
-- Use `Producers — Q` as the page title.
-- List every materialized canonical producer under this index exactly once.
-- Keep the page navigational and do not duplicate producer descriptions.
+- Render the standard child-navigation block from the validated direct-child projection so every materialized canonical producer under this index appears exactly once.
+- Keep the page concise and navigational.
 
 ## Validation
 
-- Qwen Team is listed and resolves to its canonical producer node.
-- No producer outside the Q index is listed.
+- The child-navigation block matches the validated materialized direct-child projection and every destination resolves to a canonical producer node.
+- No producer outside the Q index is presented.
+- The index does not duplicate model, software, or service profiles.

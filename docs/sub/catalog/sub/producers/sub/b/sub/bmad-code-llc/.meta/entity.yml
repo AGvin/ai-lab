@@ -1,0 +1,31 @@
+entity:
+  id: catalog/producers/b/bmad-code-llc
+  type: organization
+  name: BMad Code, LLC
+  references:
+    - type: repository
+      source:
+        url: https://github.com/bmad-code-org/BMAD-METHOD
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/bmad-code-org/BMAD-METHOD/blob/main/CONTRIBUTORS.md
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: First-party contributor and copyright notice identifying BMad Code, LLC as the copyright holder of BMad Method.
+    - type: other
+      source:
+        url: https://github.com/bmad-code-org/BMAD-METHOD/blob/main/TRADEMARK.md
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: First-party trademark notice identifying BMad Code, LLC as owner of the BMad Method marks.
+  relations:
+    - type: produces
+      target: catalog/software/development-tools/agentic-development-systems/bmad-method

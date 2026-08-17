@@ -12,5 +12,4 @@ entity:
       authority: official
   relations:
     - type: produced-by
-      target:
-        path: ../../../../../../../../producers/sub/m/sub/microsoft
+      target: catalog/producers/m/microsoft

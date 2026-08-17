@@ -12,5 +12,4 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target:
-        path: ../../../../..
+      target: catalog/models/reference/producers/alibaba/qwen/qwen2-5-coder
