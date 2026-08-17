@@ -20,7 +20,7 @@ Do not use for a producer-specific model-domain view, a hosted service, software
 
 - producer identity and concise stable description;
 - authoritative producer resources;
-- requirement-approved reader-relevant relationships to produced or maintained entities;
+- relation-block placement and reader wording when applicable requirements authorize relation presentation;
 - minimal context needed to distinguish the producer from similarly named entities.
 
 ## Does Not Own
@@ -28,17 +28,18 @@ Do not use for a producer-specific model-domain view, a hosted service, software
 - detailed model-family facts;
 - hosted product state, pricing, plans, or mutable service availability;
 - full software/service profiles merely because the producer owns them;
-- duplicated facts already owned by child or related canonical entities.
+- duplicated facts already owned by child or related canonical entities;
+- per-relation membership, visibility, or ordering, which come from the validated current entity projection.
 
 ## Expected Inputs
 
-Requirement-approved display title and summary, canonical producer identity, explicit authoritative resources, and reader-relevant relations.
+Requirement-approved display title and summary, canonical producer identity, explicit authoritative resources, and the validated current-entity relation projection when the page requirements call for the relation block.
 
 ## Composition
 
 1. default header;
 2. concise producer identity/orientation;
-3. `entity-relations` when canonical relationships materially help orientation;
+3. `entity-relations` when applicable requirements call for relation presentation;
 4. focused navigation to important represented entities when requirements call for it;
 5. `official-resources`.
 
@@ -55,5 +56,6 @@ Organizations, teams, and individuals reuse this family. Differences in legal fo
 
 - duplicating model or product catalogs in the producer profile;
 - treating provider access as producer identity;
-- rendering every internal relation merely because it exists;
+- enumerating or approving individual relation targets in page requirements when the standard relation block is intended;
+- filtering visible canonical relation entries inside the template instead of using entity `hidden` controls;
 - allowing mutable commercial state to dominate a stable identity page.
