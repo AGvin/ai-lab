@@ -37,3 +37,7 @@ entity:
   relations:
     - type: produced-by
       target: catalog/producers/d/dmitry-petrov
+    - type: owned-by
+      target: catalog/producers/t/treeverse-inc
+    - type: maintained-by
+      target: catalog/producers/t/treeverse-inc
