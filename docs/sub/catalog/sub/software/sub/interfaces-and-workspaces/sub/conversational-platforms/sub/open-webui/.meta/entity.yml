@@ -17,3 +17,15 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://github.com/open-webui/open-webui/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
+      note: Current upstream license identifies Open WebUI Inc. as copyright holder and Timothy Jaeryang Baek as creator.
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/timothy-jaeryang-baek
+    - type: owned-by
+      target: catalog/producers/o/open-webui-inc

@@ -10,4 +10,4 @@
 
 - The child-navigation block matches the validated materialized direct-child projection and every destination resolves to a canonical producer node.
 - No producer outside the E index is presented.
-- The index does not duplicate software or service profiles.
+- The index does not duplicate model, software, or service profiles.

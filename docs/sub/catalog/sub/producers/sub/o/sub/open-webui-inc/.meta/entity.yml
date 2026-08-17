@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/o/open-webui-inc
+  type: organization
+  name: Open WebUI Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://openwebui.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/open-webui/open-webui/blob/main/LICENSE
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current upstream license identifies Open WebUI Inc. as the copyright holder while separately crediting Timothy Jaeryang Baek as creator.
+  relations:
+    - type: owns
+      target: catalog/software/interfaces-and-workspaces/conversational-platforms/open-webui

@@ -25,6 +25,15 @@ entity:
         - research
       authority: official
       note: First-party announcement that ClickHouse acquired Langfuse.
+    - type: article
+      source:
+        url: https://clickhouse.com/blog/clickhouse-acquires-librechat
+      purposes:
+        - research
+      authority: official
+      note: First-party announcement that ClickHouse acquired LibreChat and welcomed founder Danny Avila and the LibreChat team.
   relations:
     - type: owns
       target: catalog/producers/l/langfuse-gmbh
+    - type: owns
+      target: catalog/software/interfaces-and-workspaces/conversational-platforms/librechat
