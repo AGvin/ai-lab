@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://khoj.dev/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/k/khoj-inc

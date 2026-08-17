@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/m/mediocre-llc
+  type: organization
+  name: Mediocre, LLC
+  references:
+    - type: official-site
+      source:
+        url: https://chatboxai.app/en/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://chatboxai.app/en/help-center/feedback
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current first-party Chatbox support page identifies Chatbox AI as operated by Mediocre, LLC.
+  relations:
+    - type: produces
+      target: catalog/software/interfaces-and-workspaces/model-clients/chatbox
