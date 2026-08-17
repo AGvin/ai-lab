@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=345377613
+      purposes:
+        - research
+      authority: upstream
+      note: The Apache Incubator proposal records Burr's original DAGWorks-hosted source and transition into Apache incubation.
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/dagworks-inc

@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://www.inngest.com/blog/open-source-event-driven-queue
+      purposes:
+        - research
+      authority: official
+      note: First-party history documents the open-sourcing of Inngest's core platform components.
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/inngest-inc
