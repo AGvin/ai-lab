@@ -19,6 +19,7 @@ Do not use for the family itself, a concrete parameter-size model, a chronologic
 ## Owns
 
 - series identity and family membership;
+- relation-block placement and reader wording when applicable requirements authorize relation presentation;
 - facts shared across the represented series;
 - series-level lineage/history;
 - series-wide capabilities/boundaries with correct source scope;
@@ -29,16 +30,17 @@ Do not use for the family itself, a concrete parameter-size model, a chronologic
 - facts true only of one concrete model;
 - revision-specific changes;
 - artifact identity;
-- selection/hardware-fit conclusions.
+- selection/hardware-fit conclusions;
+- per-relation membership, visibility, or ordering, which come from the validated current entity projection.
 
 ## Expected Inputs
 
-Requirement-approved series orientation, family and producer relations when reader-relevant, series-scoped facts, concrete-model index navigation, and authoritative series resources.
+Requirement-approved series orientation, series-scoped facts, concrete-model index navigation, authoritative series resources, and the validated current-entity relation projection when the page requirements call for the relation block.
 
 ## Composition
 
 1. default header;
-2. family/producer orientation through `entity-relations` as needed;
+2. `entity-relations` when applicable requirements call for relation presentation;
 3. concise series identity and shared characteristics;
 4. important series-level distinctions and boundaries;
 5. navigation to concrete models, often through a child-index node;
@@ -56,4 +58,6 @@ Dense-only, MoE-only, or mixed series can reuse this family. Technical sections 
 
 - collapsing concrete models into the series identity;
 - treating version-specific facts as series-wide;
-- inferring a series level solely from naming.
+- inferring a series level solely from naming;
+- enumerating or approving individual relation targets in page requirements when the standard relation block is intended;
+- filtering visible canonical relation entries inside the template instead of using entity `hidden` controls.
