@@ -3,7 +3,6 @@
 ## Requirements
 
 - Identify MLX LM as Apple's MLX-based Python package for generating text and fine-tuning large language models, primarily on Apple silicon.
-- Preserve Apple Inc. as the canonical producer through the standard relation projection.
 - Preserve its selected placement under `inference-runtimes/inference-engines`; fine-tuning, quantization, conversion, and local HTTP serving are additional capabilities of the same MLX LM package.
 - Preserve the boundary between MLX LM and the lower-level MLX array framework.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
