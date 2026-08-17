@@ -17,3 +17,32 @@ entity:
         - identification
         - research
       authority: official
+      note: Current upstream package metadata lists active maintainers including Rodrigo Nader and Gabriel Almeida.
+    - type: article
+      source:
+        url: https://www.langflow.org/blog/langflow-datastax-better-together
+      purposes:
+        - research
+      authority: official
+      note: First-party project history records Rodrigo Nader and Gabriel Almeida as the co-origin team and Langflow's 2024 move into DataStax.
+    - type: article
+      source:
+        url: https://www.langflow.org/blog/big-news-for-langflow
+      purposes:
+        - research
+      authority: official
+      note: First-party Langflow announcement identifies DataStax as Langflow's parent company when IBM announced its planned DataStax acquisition in 2025.
+    - type: article
+      source:
+        url: https://community.ibm.com/community/user/blogs/datastax-pm-team-datastax-pm-team/2025/10/02/ibm-datastax
+      purposes:
+        - research
+      authority: upstream
+      note: IBM/DataStax transition material records the November 2025 IBM acquisition transition and the migration of Langflow support into IBM offerings.
+  relations:
+    - type: produced-by
+      target: catalog/producers/r/rodrigo-nader
+    - type: produced-by
+      target: catalog/producers/g/gabriel-almeida
+    - type: maintained-by
+      target: catalog/producers/l/langflow-dev-team
