@@ -10,7 +10,7 @@
 - Treat Shannon as active offensive-security tooling: require ownership or explicit written authorization for the target, prefer isolated non-production targets, scoped test credentials, recovery/backup readiness, and human review of findings and proof-of-concept evidence.
 - Preserve prompt-injection/source-content, network access, target-state mutation, provider-safeguard interruption, credential exposure, and false-negative/false-positive risks as material evaluation boundaries.
 - Keep provider lists, vulnerability counts, benchmark results, edition feature matrices, model recommendations, runtime versions, installation commands, pricing, and other mutable details source-backed and time-scoped when expanded.
-- Preserve Keygraph as the canonical producer through the `produced-by` relation.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include the current official Shannon repository/open-source references.
 
 ## Validation
@@ -20,3 +20,4 @@
 - Authorization and non-production/isolation guidance is explicit.
 - Read-only repository mounting is not misrepresented as preventing mutation of the running target application.
 - Open-source white-box coverage is not presented as automatically equivalent to comprehensive pentesting coverage.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

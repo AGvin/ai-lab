@@ -9,8 +9,8 @@
 - Preserve useful legacy operational boundaries around repository instructions/rules, shell execution, generated diff review, provider credentials, MCP/tool permissions, browser/network access, filesystem access, sandboxing, hub/remote exposure, and unattended/headless execution.
 - Keep Cline product identity distinct from individual SDK/runtime/component identities and do not describe optional automation surfaces as mandatory.
 - Keep model-provider support, plans, integration availability, preview states, package versions, and other mutable product-state claims source-backed when expanded.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official Cline site, documentation, and repository references.
-- Preserve Cline Bot Inc. as the canonical producer through the `produced-by` relation.
 
 ## Validation
 
@@ -20,3 +20,4 @@
 - Approval controls are described as product behavior without promising a universal security guarantee.
 - MCP, browser/network, shell, filesystem, hub/remote exposure, and unattended execution are treated as explicit trust boundaries.
 - Official resource links match canonical entity metadata.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

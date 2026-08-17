@@ -5,7 +5,7 @@
 - Identify Windmill as an open-source, self-hostable developer platform for turning code and scripts into jobs, workflows, APIs, internal applications, and related operational automation.
 - Preserve its primary placement under `automation/developer-automation`; its workflow engine is part of a broader developer-facing automation platform rather than the sole product identity.
 - Distinguish self-managed Windmill software from separately operated hosted service surfaces.
-- Preserve Windmill Labs, Inc. as the canonical producer through the `produced-by` relation.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Keep supported languages, deployment modes, performance claims, enterprise features, and other mutable implementation details source-backed when expanded.
 - Include current official Windmill site and repository references.
 
@@ -13,6 +13,6 @@
 
 - The page presents Windmill as developer automation software rather than a generic AI agent or a hosted-only service.
 - Hosted and self-managed operating boundaries are not conflated.
-- The producer link resolves to the canonical Windmill Labs, Inc. profile.
 - Official resource links match canonical entity metadata.
 - The page contains no temporary-placeholder wording.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

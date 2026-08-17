@@ -6,8 +6,8 @@
 - Preserve its normal interactive terminal use plus programmatic/non-interactive surfaces such as print/JSON modes, SDK embedding, RPC/JSONL integration, and custom interfaces without turning those surfaces into separate product identities.
 - Preserve project-local instructions/context and the distinction between Pi's small core and executable extensions/packages that can add tools, commands, UI, hooks, subagents, or other behavior.
 - Preserve current stewardship accurately: Pi moved to the Earendil Works organization and `@earendil-works` package scope in May 2026 while retaining the same product identity and direction.
-- Preserve Earendil Inc. as the canonical maintainer through the `maintained-by` relation.
-- Preserve the OMP lineage through Pi's canonical `has-derivative` relation; keep Pi and OMP as separate software identities.
+- Preserve OMP as a separate derived product in reader-facing lineage context rather than a Pi version or alias.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Preserve useful legacy trust boundaries around shell/file access, project instructions, provider credentials, extensions, skills, prompt templates, packages, custom tools, and programmatic/non-interactive operation.
 - Reflect the current project-trust boundary: project-local extensions, skills, prompts, themes, and package-managed extensions are code/content trust inputs; non-interactive modes do not present the ordinary interactive project-trust prompt, so automation requires explicit environment/repository trust controls.
 - Make clear that third-party Pi packages can execute code and influence agent behavior; package availability does not imply trust or sandboxing.
@@ -22,3 +22,4 @@
 - Extensions, skills, templates, themes, and packages remain distinct mechanisms and executable package/extension trust is not understated.
 - Non-interactive operation is not described as inheriting an interactive project-trust prompt that it does not show.
 - The OMP derived product remains a separate sibling identity.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

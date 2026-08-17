@@ -9,8 +9,8 @@
 - Preserve useful legacy operational boundaries around model/provider credentials, messaging-channel credentials, terminal/browser/file access, memory retention, skill creation/update, MCP server trust, scheduled unattended tasks, subagent access, remote execution, and human approval gates.
 - Mention that current Hermes provides approval/gating mechanisms for some memory/skill writes without presenting those controls as a universal security guarantee.
 - Keep provider lists, platform counts, tool counts, model availability, hosted gateway options, and other mutable product-state claims source-backed when expanded.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official Hermes Agent site, documentation, and repository references.
-- Preserve Nous Research as the canonical producer through the `produced-by` relation.
 
 ## Validation
 
@@ -19,3 +19,4 @@
 - Memory, skills, scheduled jobs, subagents, and external tools are treated as explicit persistence/execution trust boundaries.
 - Mutable capability counts are not frozen into the canonical identity.
 - Official resource links match canonical entity metadata.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

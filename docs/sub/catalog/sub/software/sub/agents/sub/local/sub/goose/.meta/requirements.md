@@ -8,8 +8,7 @@
 - Preserve the current protocol boundary at a high level: ACP is used for agent/client interoperability while MCP remains the primary extension/tool integration mechanism.
 - Preserve useful legacy operational boundaries around local filesystem and shell access, extension/tool scopes, provider credentials and data flow, desktop/API exposure, prompt-injection risk, human approval controls, and sandboxing for sensitive repositories or private data.
 - Record provenance accurately: goose was founded and originally developed by Block and is now stewarded by the Agentic AI Foundation at the Linux Foundation.
-- Preserve Block as the producer/origin through the canonical `produced-by` relation.
-- Preserve Agentic AI Foundation as the maintainer/steward through the canonical `maintained-by` relation.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include the current official goose repository and documentation references.
 
 ## Validation
@@ -19,3 +18,4 @@
 - The page does not describe goose as coding-only or as requiring one model provider.
 - ACP and MCP are not conflated into the same integration role.
 - Local-first execution is not described as eliminating provider, tool, or extension data-exposure risks.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

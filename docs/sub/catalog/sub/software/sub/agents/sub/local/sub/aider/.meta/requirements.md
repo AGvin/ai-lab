@@ -7,8 +7,8 @@
 - Preserve support for both cloud and local model backends at a high level without implying that Aider itself is a hosted agent service.
 - Preserve useful legacy operational boundaries around source-code and secret exposure to model providers, local filesystem access, generated-code execution, provider credentials, and review of generated diffs before push or publication.
 - Keep model recommendations, provider support, benchmark results, package versions, and other mutable implementation facts source-backed when expanded.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official Aider website, documentation, and repository references.
-- Preserve Aider AI as the canonical producer identity through the `produced-by` relation.
 
 ## Validation
 
@@ -16,3 +16,4 @@
 - Git integration is not generalized into unsupported repository-hosting behavior.
 - Local model support is not described as making all Aider workflows offline or private by default.
 - Official resource links match canonical entity metadata.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

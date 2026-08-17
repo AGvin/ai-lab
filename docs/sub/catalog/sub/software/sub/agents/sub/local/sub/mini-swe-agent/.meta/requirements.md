@@ -9,8 +9,8 @@
 - Preserve useful legacy operational boundaries around repository write access, shell/test execution, sandbox isolation, generated patch review, model-provider credentials, source/log/secret exposure, and benchmark-versus-production assumptions.
 - Preserve that mini-SWE-agent has superseded SWE-agent for the upstream project's general recommendation, without turning historical SWE-agent details into mini-SWE-agent identity.
 - Do not freeze line-count claims, benchmark scores, adoption lists, or performance comparisons in the canonical profile.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official mini-SWE-agent documentation and repository references.
-- Preserve SWE-agent as the canonical producer/team identity through the `produced-by` relation.
 
 ## Validation
 
@@ -18,3 +18,4 @@
 - The page distinguishes current v2 identity from historical-version details.
 - Research/benchmark usefulness is not presented as a production-security guarantee.
 - Official resource links match canonical entity metadata.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

@@ -9,11 +9,11 @@
 - Preserve extension/customization boundaries for integrations, skills/commands, presets, extensions, bundles, and project-local overrides while keeping current integration counts and agent lists mutable.
 - Preserve useful legacy trust boundaries: initialization writes repository files; generated specs/plans/tasks/code remain model-assisted output; scripts, integrations, extensions, selected coding-agent permissions, shell access, and implementation actions require normal source-control, review, testing, and security controls.
 - Keep installation versions, supported-agent matrices, command inventories, packaging details, and other mutable product state source-backed when expanded.
-- Link the canonical GitHub, Inc. producer profile.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official repository and documentation.
 
 ## Validation
 
 - Spec Kit remains under Spec-Driven Development rather than Agents or Workflow Engines.
 - Generated documentation artifacts are not treated as authoritative merely because they are detailed.
-- The producer relation resolves to GitHub, Inc.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
