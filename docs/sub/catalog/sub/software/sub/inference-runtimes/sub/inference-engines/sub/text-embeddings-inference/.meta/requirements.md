@@ -4,7 +4,7 @@
 
 - Identify Hugging Face Text Embeddings Inference (TEI) as an open-source inference toolkit for deploying and serving text-embedding, reranking, and supported sequence-classification models.
 - Preserve its primary placement under `inference-runtimes/inference-engines`; hosted Hugging Face Inference Endpoints that may use TEI remain separate service identities.
-- Preserve Hugging Face, Inc. as the canonical producer through the `produced-by` relation.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Keep model architecture coverage, hardware support, image tags, performance benchmarks, and other mutable implementation facts source-backed when expanded.
 - Include current official TEI documentation and repository references.
 
@@ -14,3 +14,4 @@
 - The page does not reduce TEI to generation-oriented LLM serving.
 - Official resource links match canonical entity metadata.
 - The page contains no temporary-placeholder wording.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

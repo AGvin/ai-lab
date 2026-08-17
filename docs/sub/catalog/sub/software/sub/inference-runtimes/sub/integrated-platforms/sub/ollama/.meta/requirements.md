@@ -8,7 +8,7 @@
 - Preserve current integration surfaces at a stable high level: CLI, local HTTP API, Python/JavaScript libraries, model creation/customization, model library/publishing, Docker/system-service deployment, and launch/integration workflows with other AI tools.
 - Preserve useful legacy trust boundaries around local API/network exposure, authentication when cloud/private/publishing features are used, model provenance and licenses, model files/storage, external tool integrations, cloud credentials, and deployment permissions.
 - Keep cloud pricing/limits, exact supported models/integrations, API details, hardware/platform support, release versions, and other mutable product-state claims source-backed and time-scoped when expanded.
-- Link the canonical Ollama Inc. producer profile.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official Ollama site, documentation, repository, privacy, and Terms references.
 
 ## Validation
@@ -17,4 +17,4 @@
 - Local prompt privacy claims are scoped to local processing.
 - Cloud-model invocation through the local client/API is not described as local inference.
 - CLI, API, libraries, and model-management surfaces remain one Ollama software identity.
-- The producer relation resolves to Ollama Inc.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
