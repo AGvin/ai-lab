@@ -19,5 +19,5 @@ entity:
       authority: official
       note: Current first-party Chatbox support page identifies Chatbox AI as operated by Mediocre, LLC.
   relations:
-    - type: produces
+    - type: maintains
       target: catalog/software/interfaces-and-workspaces/model-clients/chatbox

@@ -16,6 +16,7 @@ entity:
         - identification
         - research
       authority: official
+      note: Current upstream package metadata identifies bennhuang as author.
     - type: other
       source:
         url: https://chatboxai.app/en/help-center/feedback
@@ -26,4 +27,6 @@ entity:
       note: Current official support page identifies Chatbox AI as operated by Mediocre, LLC.
   relations:
     - type: produced-by
+      target: catalog/producers/b/benn-huang
+    - type: maintained-by
       target: catalog/producers/m/mediocre-llc
