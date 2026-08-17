@@ -47,3 +47,5 @@ entity:
       target: catalog/software/inference-runtimes/inference-engines/text-embeddings-inference
     - type: owns
       target: catalog/producers/g/ggml-ai
+    - type: owns
+      target: catalog/software/model-and-data-platforms/dataset-curation/argilla

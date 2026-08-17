@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/c/clearml-inc
+  type: organization
+  name: ClearML Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://clear.ml/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://clear.ml/terms-of-use
+      purposes:
+        - identification
+      authority: official
+      note: Current ClearML terms identify ClearML Inc. as the owner of the ClearML website and marks.
+    - type: repository
+      source:
+        url: https://github.com/clearml/clearml
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/lifecycle-platforms/clearml
+    - type: maintains
+      target: catalog/software/model-and-data-platforms/lifecycle-platforms/clearml
