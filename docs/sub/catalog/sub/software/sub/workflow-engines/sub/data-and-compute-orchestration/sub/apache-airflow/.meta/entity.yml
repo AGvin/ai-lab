@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://airflow.apache.org/docs/apache-airflow/stable/project.html
+      purposes:
+        - research
+      authority: official
+      note: Current project history records Maxime Beauchemin starting Airflow at Airbnb in October 2014 and the later Apache incubation/TLP transition.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/maxime-beauchemin
