@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://restate.dev/blog/why-we-built-restate
+      purposes:
+        - research
+      authority: official
+      note: First-party project history documents the Restate team's origin and product direction.
+  relations:
+    - type: produced-by
+      target: catalog/producers/r/restate-gmbh

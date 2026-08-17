@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://temporal.io/about
+      purposes:
+        - research
+      authority: official
+      note: Current Temporal history describes the Cadence lineage, company founders, and open-source project boundary.
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/temporal-technologies-inc
