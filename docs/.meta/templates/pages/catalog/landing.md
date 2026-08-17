@@ -20,11 +20,12 @@ Do not use for a single domain, a taxonomy category, an alphabetical lookup page
 
 - concise explanation of the Catalog as the canonical entity/reference layer;
 - high-level distinctions among materialized catalog domains;
-- navigation to those domains;
+- child-navigation placement and reader wording for the materialized direct catalog domains;
 - links to adjacent non-catalog journeys only when needed to prevent reader confusion.
 
 ## Does Not Own
 
+- direct-child membership or ordering, which come from the validated current-node navigation projection;
 - complete taxonomy or physical-tree reproduction;
 - detailed entity facts;
 - model-selection conclusions;
@@ -32,13 +33,13 @@ Do not use for a single domain, a taxonomy category, an alphabetical lookup page
 
 ## Expected Inputs
 
-A requirement-approved title and orientation, the currently materialized direct catalog domains, short domain descriptions, and any explicit boundary links to adjacent documentation journeys.
+A requirement-approved title and orientation, authorization for the primary child-navigation block, the validated current-node direct-child projection, and any explicit boundary links to adjacent documentation journeys.
 
 ## Composition
 
 1. default header;
 2. short plain-language Catalog orientation;
-3. primary domain navigation using `child-navigation`;
+3. primary domain navigation through `child-navigation` using the validated direct-child projection;
 4. concise boundary note only where readers are likely to confuse Catalog with another documentation journey.
 
 ## Variants
@@ -51,6 +52,8 @@ The number of materialized domains may change. The page remains useful with a sm
 
 ## Anti-patterns
 
+- enumerating individual direct catalog domains in page requirements when the standard child-navigation block is intended;
+- filtering materialized direct domains inside the template instead of using the canonical navigation projection;
 - dumping the complete documentation tree;
 - turning the landing page into an encyclopedia article;
 - duplicating descriptions and facts owned by domain or entity pages;
