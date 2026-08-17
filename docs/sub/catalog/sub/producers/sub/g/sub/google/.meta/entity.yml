@@ -29,5 +29,7 @@ entity:
       target: catalog/software/application-frameworks/application-development/genkit
     - type: produces
       target: catalog/software/agent-frameworks/google-adk
+    - type: produces
+      target: catalog/software/model-and-data-platforms/lifecycle-platforms/kubeflow
     - type: has-part
       target: catalog/producers/g/google-deepmind

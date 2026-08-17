@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/d/databricks-inc
+  type: organization
+  name: Databricks, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://www.databricks.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Databricks site identifies Databricks Inc. as the operating company.
+    - type: official-site
+      source:
+        url: https://mlflow.org/classical-ml/
+      purposes:
+        - research
+      authority: official
+      note: Current MLflow site identifies MLflow as created by Databricks.
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/lifecycle-platforms/mlflow

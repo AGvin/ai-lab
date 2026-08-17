@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://mlflow.org/classical-ml/
+      purposes:
+        - research
+      authority: official
+      note: Current MLflow site identifies MLflow as created by Databricks.
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/databricks-inc
