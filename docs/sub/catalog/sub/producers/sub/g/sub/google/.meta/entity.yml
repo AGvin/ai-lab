@@ -16,6 +16,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: article
+      source:
+        url: https://opensource.googleblog.com/2022/10/kubeflow-applies-to-become-a-cncf-incubating-project.html
+      purposes:
+        - research
+      authority: official
+      note: Google records that it created and open-sourced Kubeflow and identifies Kubeflow Pipelines as one of the project components.
   relations:
     - type: produces
       target: catalog/models/reference/producers/google/gemini
@@ -31,5 +38,7 @@ entity:
       target: catalog/software/agent-frameworks/google-adk
     - type: produces
       target: catalog/software/model-and-data-platforms/lifecycle-platforms/kubeflow
+    - type: produces
+      target: catalog/software/workflow-engines/data-and-compute-orchestration/kubeflow-pipelines
     - type: has-part
       target: catalog/producers/g/google-deepmind
