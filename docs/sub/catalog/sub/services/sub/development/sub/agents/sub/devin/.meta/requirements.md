@@ -10,7 +10,7 @@
 - Preserve useful legacy operational boundaries around repository and organization permissions, cloud workspace/session isolation, secrets and credentials, terminal/browser/MCP/API access, scheduled/background execution, deployment permissions, human takeover, and merge/release approval gates.
 - Keep pricing, plan limits, model/runtime details, exact integration availability, execution limits, and other mutable service-state claims source-backed and time-scoped when expanded.
 - Include current official Devin site and documentation references.
-- Link the canonical Cognition AI, Inc. producer.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 
 ## Validation
 
@@ -18,3 +18,4 @@
 - Scheduled/parallel automation does not remove the need for explicit permission, secret, and review boundaries.
 - Integrations are described as access surfaces, not as unlimited permissions.
 - Official resource links match canonical entity metadata.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

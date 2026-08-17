@@ -10,7 +10,7 @@
 - Preserve useful legacy operational boundaries around repository and organization permissions, generated diffs, integrations, credentials/secrets, model/provider routing, session/cloud sync, remote-access relays, automation scopes, and human approval for merge/deploy/release workflows.
 - Keep mutable enterprise, security/compliance, integration, pricing, managed-compute, and model-provider claims source-backed when expanded.
 - Include current official Factory Droid product, CLI, and deployment documentation.
-- Preserve The San Francisco AI Factory Inc. as the canonical producer through the `produced-by` relation.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 
 ## Validation
 
@@ -18,3 +18,4 @@
 - Cloud-managed and fully self-contained deployment modes are not collapsed into one execution model.
 - Factory cloud/session synchronization and remote-access services are not presented as mandatory for all deployments.
 - Official resource links match canonical entity metadata.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

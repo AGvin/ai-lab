@@ -9,7 +9,7 @@
 - Preserve checkpoints/review as an operational boundary: generated output and successful Agent execution do not remove the need to test, inspect changes, and control publishing/deployment.
 - Keep Agent Skills and other integration mechanisms as configurable product surfaces rather than separate canonical Replit Agent identities.
 - Keep plan eligibility, usage limits, pricing, model choice, exact artifact types, feature inventories, deployment products, and other mutable platform-state claims source-backed and time-scoped when expanded.
-- Link the canonical Replit, Inc. producer profile.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official Replit Agent/product documentation and Replit legal reference.
 
 ## Validation
@@ -18,4 +18,4 @@
 - Replit project/runtime, Agent, deployment, database, and integration surfaces are not collapsed into one entity.
 - Generated code and successful previews are not described as a production-readiness guarantee.
 - Secrets, external integrations, publishing, and production data remain explicit trust boundaries.
-- The producer relation resolves to Replit, Inc.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

@@ -3,7 +3,7 @@
 ## Requirements
 
 - Identify CrewAI as the open-source Python agent framework represented by the canonical software profile at this path.
-- Link CrewAI, Inc. through the canonical `produced-by` relation.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Preserve the current upstream distinction between Crews, which coordinate autonomous role-based agent teams, and Flows, which provide structured event-driven control, state, branching, and integration with ordinary Python logic.
 - Explain that the open-source CrewAI framework and CrewAI's managed/enterprise platform are related but distinct adoption surfaces; do not present hosted platform capabilities as intrinsic requirements of the open-source framework.
 - Preserve relevant legacy adoption boundaries around tools, delegated task permissions, provider credentials, memory and knowledge-source data, observability, execution controls, and human approval when discussing operational use.
@@ -17,3 +17,4 @@
 - The page does not imply that the open-source framework requires CrewAI's hosted platform.
 - Hosted/enterprise capabilities are clearly distinguished from the framework identity.
 - The page contains no temporary-placeholder wording.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

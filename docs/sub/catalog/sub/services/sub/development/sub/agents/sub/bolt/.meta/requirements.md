@@ -8,7 +8,7 @@
 - Mention major integration classes only at a stable high level; current official examples include GitHub, Figma, Supabase, Bolt-managed database/hosting, and MCP connectors.
 - Keep token budgets, model routing, pricing, plan features, individual integration availability, platform limits, and other mutable service facts source-backed and time-scoped when expanded.
 - Include current official Bolt site and help-center references.
-- Link the canonical StackBlitz, Inc. producer.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 
 ## Validation
 
@@ -17,3 +17,4 @@
 - Integration descriptions do not imply unlimited permissions or permanent availability.
 - Official resource links match canonical entity metadata.
 - The page contains no temporary-summary or placeholder wording.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

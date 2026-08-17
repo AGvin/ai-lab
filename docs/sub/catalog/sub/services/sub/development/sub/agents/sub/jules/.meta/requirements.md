@@ -10,7 +10,7 @@
 - Preserve useful legacy operational boundaries around GitHub repository permissions, API keys, account access, generated changes and tests, task scope, external workflow integrations, and human review before merge/deploy/release.
 - Keep model versions, plan eligibility, quotas, pricing, API versions, integration availability, and other mutable service-state claims source-backed and time-scoped when expanded.
 - Include current official Jules site, documentation, CLI/API references.
-- Link the canonical Google producer.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 
 ## Validation
 
@@ -18,3 +18,4 @@
 - CLI and API access are described as control/integration surfaces for managed Jules sessions, not as evidence of local Jules execution.
 - API keys, repository permissions, and plan/merge approvals remain explicit trust boundaries.
 - Official resource links match canonical entity metadata.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

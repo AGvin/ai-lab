@@ -11,7 +11,7 @@
 - Preserve customer ownership of Customer Data and AI Output only as scoped by current Lovable terms; do not imply that this transfers ownership of the Lovable platform or third-party model/service rights.
 - Keep plans, credits, model routing, limits, connector availability, cloud features, beta states, and other mutable service facts source-backed and time-scoped when expanded.
 - Include current official Lovable site and documentation references.
-- Link the canonical Lovable Labs Incorporated producer.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 
 ## Validation
 
@@ -19,3 +19,4 @@
 - Generated application/code ownership is not conflated with ownership of the Lovable platform or third-party services.
 - GitHub synchronization, Cloud state, external deployment, and MCP/API integrations remain distinct data/permission boundaries.
 - Official resource links match canonical entity metadata.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

@@ -9,7 +9,7 @@
 - Preserve useful legacy operational boundaries around provider/gateway credentials, repository/filesystem permissions, custom rules/agents/skills, MCP server scopes, browser/terminal execution, remote-control account security, hosted-agent execution, generated diffs, and human review before commit/push/merge.
 - Keep model-provider, credit, beta, retention, organization-policy, cloud-trigger, source-availability, acquisition, and other mutable product/service claims source-backed and time-scoped when expanded.
 - Include current official Kilo site, CLI/Cloud Agent documentation, and repository references.
-- Preserve Kilo Code Inc. as the canonical producer through the `produced-by` relation.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 
 ## Validation
 
@@ -17,3 +17,4 @@
 - The page does not imply that local editor or CLI coding runs inside Kilo Cloud.
 - Remote Connections explicitly preserve the local-compute trust boundary and account-access risk.
 - Official resource links match canonical entity metadata.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

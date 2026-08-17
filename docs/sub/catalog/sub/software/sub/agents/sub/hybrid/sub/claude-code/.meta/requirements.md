@@ -9,7 +9,7 @@
 - Preserve the product's extensibility surfaces at a stable high level: project instructions and memory, Agent Skills, hooks, MCP servers/connectors, CI/CD integrations, and the separate Agent SDK.
 - Preserve useful legacy operational boundaries around repository read/write access, shell execution, command approvals, generated diff review, repository instructions and memory, secrets, MCP/tool scopes, remote sessions, background or scheduled execution, and human review gates.
 - Keep authentication, subscriptions, model-provider options, availability, scheduling limits, integration availability, and other mutable product-state claims source-backed when expanded.
-- Preserve Anthropic as the canonical producer through the `produced-by` relation.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official Claude Code documentation and product references.
 
 ## Validation
@@ -18,3 +18,4 @@
 - The page does not imply that local/desktop sessions and Anthropic-managed cloud routines have the same filesystem or permission model.
 - MCP, skills, hooks, instructions, and related extension mechanisms are described as configurable product surfaces rather than inherently trusted capabilities.
 - Reader-facing capability and execution-boundary claims remain supported by current official Claude Code documentation.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

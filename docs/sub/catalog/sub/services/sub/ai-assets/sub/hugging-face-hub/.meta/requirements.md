@@ -7,7 +7,7 @@
 - Distinguish hosted Hub asset/repository services from local execution of downloaded artifacts and from Hugging Face open-source client/runtime libraries.
 - Preserve useful adoption boundaries around repository visibility, access tokens, gated/private assets, model/dataset licenses, provenance, remote code or custom model code, and third-party artifact trust.
 - Keep storage, pricing, limits, feature availability, repository counts, and other mutable hosted-service facts source-backed and time-scoped when expanded.
-- Link the canonical Hugging Face, Inc. producer profile.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official Hub and Terms references.
 
 ## Validation
@@ -15,4 +15,4 @@
 - The page does not recreate a single umbrella Hugging Face software/platform entity.
 - Downloaded-asset execution is not described as Hub-hosted inference.
 - Concrete model/dataset/service/library identities remain with their canonical owners.
-- The producer relation resolves to Hugging Face, Inc.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

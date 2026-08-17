@@ -3,7 +3,7 @@
 ## Requirements
 
 - Identify LangGraph as LangChain Inc.'s open-source low-level orchestration framework and runtime for long-running, stateful agents and workflows.
-- Link LangChain Inc. through the canonical `produced-by` relation.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Preserve the current upstream distinction between LangGraph's low-level orchestration/runtime role and LangChain's higher-level agent framework abstractions.
 - Preserve useful legacy operational boundaries around durable execution, streaming, persistence/checkpointing, human-in-the-loop control, state storage, tool permissions, credentials, and sensitive state or trace data.
 - Distinguish the open-source LangGraph runtime from optional LangSmith tracing, evaluation, deployment, Studio, and other hosted platform capabilities.
@@ -18,3 +18,4 @@
 - Durable execution and persistence are described as runtime capabilities rather than guarantees that remove the need for application-level operational design.
 - Official resource links match canonical entity metadata.
 - The page contains no temporary-placeholder wording.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

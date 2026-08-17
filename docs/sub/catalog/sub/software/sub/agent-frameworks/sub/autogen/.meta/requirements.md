@@ -3,7 +3,7 @@
 ## Requirements
 
 - Identify AutoGen as Microsoft's open-source framework for creating agentic and multi-agent applications.
-- Link Microsoft through the canonical `produced-by` relation.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - State the current upstream lifecycle accurately: AutoGen is in maintenance mode, is community managed, and is expected to receive bug fixes, security fixes, and documentation improvements rather than new feature development.
 - Distinguish AutoGen from Microsoft Agent Framework. Explain that Microsoft Agent Framework is the production-ready successor recommended by Microsoft for new projects, while AutoGen remains available for existing users and migration.
 - Describe the current layered framework at a high level: Core for message passing and local/distributed agent runtime, AgentChat for higher-level multi-agent patterns, and Extensions for model/tool integrations.
@@ -20,3 +20,4 @@
 - Microsoft Agent Framework is described as a distinct successor rather than as the same software identity.
 - AutoGen Studio is not described as a production-ready end-user application.
 - Official resource links match canonical entity metadata.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
