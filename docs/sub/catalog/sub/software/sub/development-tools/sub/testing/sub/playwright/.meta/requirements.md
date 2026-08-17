@@ -8,7 +8,7 @@
 - Preserve useful legacy trust boundaries around browser/session permissions, network access, authentication state/cookies, downloaded browser runtimes, test secrets, CI credentials, target-environment isolation, destructive browser actions, and reuse of existing logged-in browser profiles.
 - Distinguish isolated test browser contexts from explicit integrations that connect to an existing user browser/profile; do not generalize one privacy/security boundary to all modes.
 - Keep exact browser versions, language bindings, command names, AI-agent integrations, release behavior, and other mutable compatibility details source-backed when expanded.
-- Link the canonical Microsoft producer profile.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official Playwright site, docs, and repository.
 
 ## Validation
@@ -16,4 +16,4 @@
 - Playwright is not classified as generic workflow automation or as an AI-agent product.
 - Agent/MCP integration is represented as an interface to Playwright browser tooling.
 - Existing-browser/profile access is treated as a higher-trust boundary when enabled.
-- The producer relation resolves to Microsoft.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

@@ -8,11 +8,11 @@
 - Represent current AI/agent customization only at a stable high level and link the official Agent Customization overview (`https://code.visualstudio.com/docs/agent-customization/overview`) as the canonical feature guide; describe instructions, Agent Skills, custom agents, MCP servers, hooks, plugins, and prompt files without making GitHub Copilot or a third-party coding agent part of VS Code's producer identity.
 - Keep exact bundled features, extension inventory, release versions, platform support, telemetry defaults, and mutable AI availability source-backed when expanded.
 - Keep editor-specific extensions under the canonical `extensions/` child node.
-- Link the canonical Microsoft producer profile.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official VS Code site, documentation, and repository.
 
 ## Validation
 
 - VS Code remains a code-editor identity, not a GitHub Copilot or coding-agent duplicate.
 - Extension and workspace trust are explicit operational boundaries.
-- The producer relation resolves to Microsoft.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

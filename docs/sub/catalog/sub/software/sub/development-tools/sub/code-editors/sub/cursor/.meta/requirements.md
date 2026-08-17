@@ -9,7 +9,7 @@
 - Preserve useful legacy trust boundaries around repository access, codebase indexing, prompts/context sent for AI features, downstream model providers, background/cloud execution, skills/plugins/MCP, shell/tool permissions, secrets, approval policy, and generated changes.
 - Keep exact plans, model/provider lists, pricing, retention periods, feature availability, platform versions, and other mutable service state source-backed and time-scoped when expanded.
 - Keep editor extensions under the editor-owned extension subtree rather than duplicating them in the Cursor profile.
-- Link the canonical Anysphere, Inc. producer profile.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official Cursor documentation, privacy/data-use, security, and Terms references.
 
 ## Validation
@@ -18,4 +18,4 @@
 - VS Code is represented as Cursor's upstream codebase foundation without claiming 1:1 agent-customization compatibility.
 - Hosted/background agent execution is not described as local execution.
 - Privacy Mode is represented as a data-handling control, not a fully local inference guarantee.
-- The producer relation resolves to Anysphere, Inc.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

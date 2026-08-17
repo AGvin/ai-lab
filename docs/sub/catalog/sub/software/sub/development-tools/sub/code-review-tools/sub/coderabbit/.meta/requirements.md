@@ -8,7 +8,7 @@
 - Preserve useful legacy operational boundaries around repository and organization permissions, service accounts or credentials, generated comments/fixes, planning outputs, team knowledge, Slack/IDE/CLI access, issue-tracker integrations, automation triggers, and required human review before merge or execution.
 - Keep pricing, plan limits, model behavior, platform availability, integration details, and other mutable service-state claims source-backed and time-scoped when expanded.
 - Include current official CodeRabbit site and documentation references.
-- Link the canonical CodeRabbit Inc. producer.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 
 ## Validation
 
@@ -16,3 +16,4 @@
 - Pull-request, IDE, CLI, and Slack surfaces are treated as product surfaces with different permission and data-flow boundaries.
 - Generated review comments, plans, or fixes are not presented as substitutes for human review.
 - Official resource links match canonical entity metadata.
+- The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
