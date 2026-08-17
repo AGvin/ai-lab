@@ -19,7 +19,7 @@ Do not use for a family, series, version/checkpoint, downloadable representation
 ## Owns
 
 - concrete model identity;
-- parent family/series and producer relationships;
+- relation-block placement and reader wording when applicable requirements authorize relation presentation;
 - architecture and parameter structure at model scope;
 - stable licensing/training-stage facts when supported;
 - model-scoped capability statements with source attribution boundaries;
@@ -31,16 +31,17 @@ Do not use for a family, series, version/checkpoint, downloadable representation
 - quantization/package identity;
 - runtime memory as inferred from artifact size;
 - hardware-fit, workload suitability, rankings, or deployment strategy;
-- mutable hosted-provider behavior unless explicitly scoped as external access context.
+- mutable hosted-provider behavior unless explicitly scoped as external access context;
+- per-relation membership, visibility, or ordering, which come from the validated current entity projection.
 
 ## Expected Inputs
 
-Requirement-approved display values, canonical relations, stable model facts, source-scoped technical claims, version/artifact navigation, and authoritative resources.
+Requirement-approved display values, stable model facts, source-scoped technical claims, version/artifact navigation, authoritative resources, and the validated current-entity relation projection when the page requirements call for the relation block.
 
 ## Composition
 
 1. default header;
-2. parent/producer relations;
+2. `entity-relations` when applicable requirements call for relation presentation;
 3. model identity and architecture overview;
 4. key stable technical facts in a scan-friendly structure when requirements justify them;
 5. important interpretation boundaries and limitations;
@@ -60,4 +61,6 @@ Dense, MoE, multimodal, specialist, base, instruct, or derivative models reuse t
 - treating active parameters as total model size or dense-model equivalence;
 - flattening version deltas into the model page;
 - using published file size as peak RAM/VRAM;
+- enumerating or approving individual relation targets in page requirements when the standard relation block is intended;
+- filtering visible canonical relation entries inside the template instead of using entity `hidden` controls;
 - inserting selection guidance as intrinsic model fact.
