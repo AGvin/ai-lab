@@ -24,3 +24,5 @@ entity:
       target: catalog/agent-skills/collections/anthropic-skills
     - type: produces
       target: catalog/software/agents/hybrid/claude-code
+    - type: produces
+      target: catalog/services/assistant-workspaces/claude
