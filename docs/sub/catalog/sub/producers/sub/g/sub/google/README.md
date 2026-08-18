@@ -1,6 +1,6 @@
 # Google
 
-Google is represented in this catalog as the broader producer organization for the documented Google model-domain material.
+Google is represented in this catalog as the broader producer organization for the documented Google model, service, agent, framework, and software surfaces. Google DeepMind remains a separate canonical producer identity where provenance is attributed specifically to it.
 
 ## Translations
 
@@ -11,13 +11,24 @@ Google is represented in this catalog as the broader producer organization for t
 
 - [Google models](../../../../../models/sub/reference/sub/producers/sub/google/) — Gemini and Gemma model-domain navigation.
 
-## Related producer
+## Produces
 
-- [Google DeepMind](../google-deepmind/) — separate canonical producer identity for model provenance attributed specifically to Google DeepMind.
+- [Gemini](../../../../../models/sub/reference/sub/producers/sub/google/sub/gemini/) — Google model family.
+- [Gemini CLI](../../../../../software/sub/agents/sub/local/sub/gemini-cli/) — local coding/agent CLI.
+- [Gemma](../../../../../models/sub/reference/sub/producers/sub/google/sub/gemma/) — Google model family.
+- [Genkit](../../../../../software/sub/application-frameworks/sub/application-development/sub/genkit/) — application-development framework.
+- [Google ADK](../../../../../software/sub/agent-frameworks/sub/google-adk/) — agent-development framework.
+- [Jules](../../../../../services/sub/development/sub/agents/sub/jules/) — development-agent service.
+- [Kubeflow](../../../../../software/sub/model-and-data-platforms/sub/lifecycle-platforms/sub/kubeflow/) — open-source Kubernetes AI-platform foundation created by Google.
+- [Kubeflow Pipelines](../../../../../software/sub/workflow-engines/sub/data-and-compute-orchestration/sub/kubeflow-pipelines/) — workflow-orchestration subproject with distinct canonical identity.
+
+## Organization structure
+
+- [Google DeepMind](../google-deepmind/) — canonical organization represented as part of Google; this structural relation is not rendered as ownership.
 
 ## Provenance boundary
 
-Google and Google DeepMind remain distinct organization identities. Current official Gemma documentation describes Gemma development by Google DeepMind and other teams across Google, so model provenance may reference both without collapsing one identity into the other.
+Google and Google DeepMind remain distinct organization identities. Current official Gemma documentation attributes development across Google DeepMind and other Google teams, so model provenance can reference both without collapsing one identity into the other.
 
 ## Official resources
 
