@@ -1,0 +1,28 @@
+entity:
+  id: catalog/services/assistant-workspaces/claude
+  type: service
+  name: Claude
+  references:
+    - type: official-site
+      source:
+        url: https://claude.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.anthropic.com/claude
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://support.anthropic.com/en/articles/8114487-what-interfaces-can-i-use-to-access-claude
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/anthropic
