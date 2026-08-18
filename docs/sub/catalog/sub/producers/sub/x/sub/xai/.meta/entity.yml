@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/x/xai
+  type: organization
+  name: xAI
+  references:
+    - type: official-site
+      source:
+        url: https://x.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.x.ai/grok/overview
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/assistant-workspaces/grok
