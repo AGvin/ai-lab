@@ -14,7 +14,7 @@ Model classification describes independent dimensions of a model, such as scope,
 | Model scope or modality | Foundation model, language model, multimodal model | The broad kind of inputs, outputs, and downstream uses the model supports. |
 | [Language-model scale](./sub/language-model-scale/) | SLM, LLM | Relative model scale and operational footprint. |
 | [Capability-frontier position](./sub/frontier-models/) | Frontier, non-frontier | Whether current evidence places the model near the leading capability boundary at a stated time. |
-| [Ecosystem maturity](../../../glossary/#model-ecosystem-status) | Experimental, emerging, mainstream, legacy | Adoption, tooling support, documentation maturity, and operational familiarity. |
+| Ecosystem maturity | Experimental, emerging, mainstream, legacy | Adoption, tooling support, documentation maturity, and operational familiarity. |
 | [Parameter activation architecture](../model-architectures/) | Dense, sparse, MoE | How model computation and parameter activation are organized. |
 | Deployment mode | Local, self-hosted, provider-hosted | Where and by whom inference is operated. |
 | Access and licensing | Free, paid, open-weight, open-source, proprietary | How the model or service can be accessed, modified, and redistributed. |
