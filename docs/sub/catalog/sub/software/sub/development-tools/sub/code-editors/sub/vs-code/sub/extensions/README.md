@@ -1,12 +1,10 @@
 # Visual Studio Code Extensions
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by reviewed extension guidance.
+Extension guidance specific to Visual Studio Code.
 
-This section owns documentation that is specific to extensions running in Visual Studio Code. Shared product facts should remain on the extension's canonical page when one exists.
+This index is the [Visual Studio Code](../..) editor's home for extension installation, configuration, compatibility, limitations, and troubleshooting. Shared product facts remain on canonical extension profiles rather than being duplicated here.
 
-## Canonical extension profiles
-
-- [Continue](../../../../../../../agents/sub/local/sub/continue/) — canonical profile for the cross-client Local Agent; its Visual Studio Marketplace listing is documented there rather than duplicated as a VS Code-only product node.
+[Continue](../../../../../../../agents/sub/local/sub/continue/) is a cross-client Local Agent; its product and marketplace facts remain on the canonical Continue profile rather than forming a VS Code-only product node.
 
 ## Official resources
 

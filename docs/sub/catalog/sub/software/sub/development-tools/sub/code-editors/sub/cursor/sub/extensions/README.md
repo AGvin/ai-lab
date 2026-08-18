@@ -1,9 +1,9 @@
 # Cursor Extensions
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by reviewed extension guidance.
+Extension guidance specific to the Cursor editor.
 
-This section owns Cursor-specific extension configuration, compatibility notes, limitations, and troubleshooting. Inherited Visual Studio Code extension information should be linked rather than duplicated.
+This index is the [Cursor](../..) editor's home for extension-specific configuration, compatibility, limitations, and troubleshooting. For inherited or shared extension behavior, use the [Visual Studio Code Extensions](../../../vs-code/sub/extensions/) context instead of duplicating Visual Studio Code guidance here.
 
 ## Official resources
 
-- [Cursor documentation](https://docs.cursor.com/)
+- [Cursor documentation](https://cursor.com/docs)
