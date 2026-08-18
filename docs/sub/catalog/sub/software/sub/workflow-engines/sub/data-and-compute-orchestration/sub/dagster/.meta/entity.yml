@@ -17,3 +17,28 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://dagster.io/eula
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Dagster legal material identifies Elementl, Inc. d/b/a Dagster Labs as the provider/company identity.
+    - type: article
+      source:
+        url: https://dagster.io/prefect
+      purposes:
+        - research
+      authority: official
+      note: July 2026 first-party acquisition-transition announcement states that Prefect is acquiring Dagster Labs while Dagster remains supported under its existing name and open-source license.
+    - type: other
+      source:
+        url: https://dagster.io/dagster-customer-faq
+      purposes:
+        - research
+      authority: official
+      note: First-party FAQ describes the transaction close as pending, so legal ownership should not be inferred solely from acquisition-announcement wording until close status is unambiguous.
+  relations:
+    - type: produced-by
+      target: catalog/producers/e/elementl-inc

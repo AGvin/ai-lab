@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://www.cncf.io/reports/argo-project-journey-report/
+      purposes:
+        - research
+      authority: upstream
+      note: CNCF records that Argo Workflows began at Applatix, which was later acquired by Intuit, before Argo entered CNCF governance.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/applatix

@@ -16,3 +16,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://www.dbos.dev/blog/announcing-dbos
+      purposes:
+        - research
+      authority: official
+      note: First-party DBOS history records the formation of DBOS, Inc. around the DBOS product direction.
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/dbos-inc

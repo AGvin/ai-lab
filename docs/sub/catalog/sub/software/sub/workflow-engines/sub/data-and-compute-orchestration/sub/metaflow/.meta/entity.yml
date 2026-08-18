@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://metaflow.org/
+      purposes:
+        - research
+      authority: official
+      note: Current Metaflow site states that Metaflow was originally developed at Netflix and open-sourced by Netflix in 2019.
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/netflix-inc

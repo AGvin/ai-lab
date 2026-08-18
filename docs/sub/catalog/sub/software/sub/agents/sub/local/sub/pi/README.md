@@ -10,10 +10,11 @@ Those extension points are also trust boundaries. Project-local extensions, skil
 
 Pi moved to the Earendil Works organization and `@earendil-works` package scope in May 2026 without becoming a new product identity.
 
-## Related
+## Provenance and lineage
 
-- [OMP](../omp/) — separate Pi-derived coding agent with a more batteries-included tool surface.
+- [Mario Zechner](../../../../../../../producers/sub/m/sub/mario-zechner/) — original/current author and producer of Pi.
 - [Earendil Inc.](../../../../../../../producers/sub/e/sub/earendil-inc/) — current organizational home and maintainer.
+- [OMP](../omp/) — separate Pi-derived coding agent with a more batteries-included tool surface.
 
 ## Official resources
 

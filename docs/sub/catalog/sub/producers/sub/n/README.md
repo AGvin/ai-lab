@@ -1,4 +1,6 @@
 # Producers — N
 
-- [`Nous Research`](./sub/nous-research/)
-- [`NVIDIA`](./sub/nvidia/)
+- [n8n GmbH](./sub/n8n-gmbh/)
+- [Netflix, Inc.](./sub/netflix-inc/)
+- [Nous Research](./sub/nous-research/)
+- [NVIDIA](./sub/nvidia/)

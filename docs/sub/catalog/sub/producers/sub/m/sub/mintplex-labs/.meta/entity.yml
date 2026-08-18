@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/m/mintplex-labs
+  type: organization
+  name: Mintplex Labs
+  references:
+    - type: official-site
+      source:
+        url: https://mintplexlabs.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Mintplex Labs' official site identifies AnythingLLM as a product it builds.
+    - type: repository
+      source:
+        url: https://github.com/Mintplex-Labs/anything-llm
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/interfaces-and-workspaces/integrated-workspaces/anythingllm

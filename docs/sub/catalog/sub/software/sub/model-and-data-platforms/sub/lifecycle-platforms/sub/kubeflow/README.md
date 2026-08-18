@@ -4,6 +4,11 @@ Kubeflow is an open-source foundation and modular project ecosystem for building
 
 Kubeflow Pipelines remains a distinct canonical workflow product within this ecosystem rather than a synonym for the full Kubeflow platform.
 
+## Origin
+
+- [Google](../../../../../../../producers/sub/g/sub/google/) — origin producer that created and open-sourced Kubeflow in 2017; current CNCF/community governance remains distinct from that origin provenance.
+
 ## Official resources
 
 - [Kubeflow introduction](https://www.kubeflow.org/docs/started/introduction/)
+- [Kubeflow joins CNCF incubation](https://www.cncf.io/blog/2023/07/25/kubeflow-brings-mlops-to-the-cncf-incubator/)

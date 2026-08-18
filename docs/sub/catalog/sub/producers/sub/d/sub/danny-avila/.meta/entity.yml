@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/d/danny-avila
+  type: individual
+  name: Danny Avila
+  references:
+    - type: other
+      source:
+        url: https://github.com/danny-avila
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://clickhouse.com/blog/clickhouse-acquires-librechat
+      purposes:
+        - research
+      authority: official
+      note: ClickHouse's first-party acquisition announcement identifies Danny Avila as LibreChat's founder.
+  relations:
+    - type: produces
+      target: catalog/software/interfaces-and-workspaces/conversational-platforms/librechat

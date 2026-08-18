@@ -10,3 +10,14 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://github.com/CherryHQ/cherry-studio-website/blob/main/src/i18n/lang/en.json
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current official website source identifies Shanghai Qianhui Technology Co., Ltd. as copyright holder.
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/shanghai-qianhui-technology-co-ltd

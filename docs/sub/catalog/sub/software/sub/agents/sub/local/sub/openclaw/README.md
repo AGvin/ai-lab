@@ -8,9 +8,10 @@ OpenClaw's current product boundary remains local/self-hosted even when it uses 
 
 Treat channel credentials and DM policies, persistent Gateway operation, filesystem/workspace access, browser and tool execution, device-node permissions, third-party skills/plugins, scheduled work, model-provider credentials, and inbound untrusted messages as explicit trust boundaries. Use isolation and least privilege appropriate to the accounts, repositories, devices, and data connected to the assistant.
 
-## Stewardship
+## Provenance and stewardship
 
-- [OpenClaw Foundation](../../../../../../../producers/sub/o/sub/openclaw-foundation/) — non-profit project steward.
+- [Peter Steinberger](../../../../../../../producers/sub/p/sub/peter-steinberger/) — original creator and producer of OpenClaw together with the project's community.
+- [OpenClaw Foundation](../../../../../../../producers/sub/o/sub/openclaw-foundation/) — current non-profit project steward.
 
 ## Official resources
 

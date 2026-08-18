@@ -16,3 +16,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://obsidian.md/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/dynalist-inc

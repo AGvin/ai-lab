@@ -1,0 +1,25 @@
+entity:
+  id: catalog/producers/z/zenml-gmbh
+  type: organization
+  name: ZenML GmbH
+  references:
+    - type: official-site
+      source:
+        url: https://www.zenml.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.zenml.io/reference/global-settings
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ZenML documentation explicitly identifies ZenML GmbH as the startup that creates and maintains ZenML.
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/lifecycle-platforms/zenml
+    - type: maintains
+      target: catalog/software/model-and-data-platforms/lifecycle-platforms/zenml

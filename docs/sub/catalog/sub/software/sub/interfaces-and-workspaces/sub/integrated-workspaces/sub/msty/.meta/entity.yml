@@ -13,3 +13,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://msty.ai/terms/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cloudstack-llc

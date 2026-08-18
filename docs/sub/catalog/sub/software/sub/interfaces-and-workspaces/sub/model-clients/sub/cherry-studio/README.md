@@ -4,6 +4,11 @@ Cherry Studio is an open-source desktop AI client and productivity studio for Wi
 
 Those integrations remain client capabilities; the connected providers and inference runtimes retain their own canonical identities.
 
+## Provenance
+
+- [Shanghai Qianhui Technology Co., Ltd.](../../../../../../../producers/sub/s/sub/shanghai-qianhui-technology-co-ltd/) — legal organization behind Cherry Studio; CherryHQ remains the project organization surface rather than a separate legal identity.
+
 ## Official resources
 
 - [Cherry Studio repository](https://github.com/CherryHQ/cherry-studio)
+- [Cherry Studio website identity source](https://github.com/CherryHQ/cherry-studio-website/blob/main/src/i18n/lang/en.json)

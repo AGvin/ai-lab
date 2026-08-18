@@ -17,3 +17,15 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.zenml.io/reference/global-settings
+      purposes:
+        - research
+      authority: official
+      note: ZenML documentation identifies ZenML GmbH as the startup that creates and maintains ZenML.
+  relations:
+    - type: produced-by
+      target: catalog/producers/z/zenml-gmbh
+    - type: maintained-by
+      target: catalog/producers/z/zenml-gmbh

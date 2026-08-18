@@ -17,3 +17,21 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://www.prefect.io/legal/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Prefect legal terms identify Prefect Technologies, Inc. as the company behind Prefect services.
+    - type: documentation
+      source:
+        url: https://docs.prefect.io/v3/get-started/index
+      purposes:
+        - research
+      authority: official
+      note: Current Prefect documentation records the project's 2018 origin and Python-native orchestration design.
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/prefect-technologies-inc

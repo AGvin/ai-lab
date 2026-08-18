@@ -4,7 +4,13 @@ Open WebUI is a self-hosted, extensible AI platform centered on a web conversati
 
 Those capabilities form one conversational platform; the underlying model providers and inference runtimes remain separate products and services.
 
+## Provenance and ownership
+
+- [Timothy Jaeryang Baek](../../../../../../../producers/sub/t/sub/timothy-jaeryang-baek/) — creator and original producer of Open WebUI.
+- [Open WebUI Inc.](../../../../../../../producers/sub/o/sub/open-webui-inc/) — current corporate copyright/ownership layer.
+
 ## Official resources
 
 - [Open WebUI documentation](https://docs.openwebui.com/)
 - [Open WebUI repository](https://github.com/open-webui/open-webui)
+- [Open WebUI license](https://github.com/open-webui/open-webui/blob/main/LICENSE)

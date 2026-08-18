@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://huggingface.co/posts/dvilasuero/203008804842390
+      purposes:
+        - research
+      authority: official
+      note: Argilla co-founder Daniel Vila announced the 2024 Hugging Face acquisition and described the Argilla team as joining Hugging Face.
+  relations:
+    - type: owned-by
+      target: catalog/producers/h/hugging-face-inc

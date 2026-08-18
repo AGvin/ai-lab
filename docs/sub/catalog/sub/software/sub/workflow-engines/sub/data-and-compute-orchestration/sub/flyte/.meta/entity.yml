@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://www.union.ai/company
+      purposes:
+        - research
+      authority: upstream
+      note: Union.ai's current company history states that its founders built Flyte internally at Lyft in 2016, before Flyte was open-sourced and later joined LF AI & Data.
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/lyft-inc

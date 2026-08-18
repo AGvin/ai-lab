@@ -10,7 +10,9 @@ entity:
         url: https://big-agi.com/
       purposes:
         - identification
+        - research
       authority: official
+      note: Current site distinguishes Big-AGI Open from hosted Free/Pro tiers and identifies Token Fabrics as the company surface.
     - type: repository
       source:
         url: https://github.com/enricoros/big-AGI
@@ -18,3 +20,8 @@ entity:
         - identification
         - research
       authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/e/enrico-ros
+    - type: operated-by
+      target: catalog/producers/t/token-fabrics

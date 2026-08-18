@@ -4,7 +4,12 @@ Obsidian is a local-first knowledge-base and workspace application built around 
 
 That user-facing knowledge-workspace identity determines its catalog placement. Plugins, AI integrations, CLI access, and direct agent edits can extend how the vault is used without making Obsidian a backend memory service. Optional synchronization is a separate operating boundary; local vaults remain usable without it.
 
+## Provenance
+
+- [Dynalist Inc.](../../../../../../../producers/sub/d/sub/dynalist-inc/) — legal organization producing and providing Obsidian.
+
 ## Official resources
 
 - [Obsidian](https://obsidian.md/)
 - [Obsidian Help](https://obsidian.md/help)
+- [Obsidian terms](https://obsidian.md/terms)

@@ -17,3 +17,14 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://trigger.dev/legal/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current terms identify API Hero Ltd as the legal provider trading as Trigger.dev and describe the open-source platform and managed service boundary.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/api-hero-ltd

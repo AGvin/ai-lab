@@ -17,3 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://mintplexlabs.com/
+      purposes:
+        - research
+      authority: official
+      note: Mintplex Labs identifies AnythingLLM as a product it builds.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mintplex-labs

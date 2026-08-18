@@ -17,3 +17,15 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://humansignal.com/about/
+      purposes:
+        - research
+      authority: official
+      note: HumanSignal identifies Label Studio as its open-source data-labeling tool and describes its origin within the founding company.
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/humansignal-inc
+    - type: maintained-by
+      target: catalog/producers/h/humansignal-inc
