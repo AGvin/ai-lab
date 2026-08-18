@@ -18,10 +18,6 @@ Independent dimensions used to describe model scope, relative scale, capability-
 - [`language-model-scale/`](./sub/model-classification/sub/language-model-scale/) — Small Language Models and Large Language Models as relative scale classes rather than fixed deployment categories.
 - [`frontier-models/`](./sub/model-classification/sub/frontier-models/) — Time-sensitive, evidence-backed capability-frontier status.
 
-### Related
-
-- [`glossary/`](../glossary/) — Short definitions for ecosystem status, including experimental, emerging, mainstream, and legacy.
-
 ## [Model Architectures](./sub/model-architectures/)
 
 Concepts that describe how model computation, components, and parameter activation are organized.
