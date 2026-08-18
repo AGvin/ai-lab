@@ -46,7 +46,6 @@ Use the simplest pattern that meets the workload. Several named agents do not au
 ## Research candidates
 
 - [Integrated Agent Organization and Resource Portfolio](./sub/integrated-agent-organization-and-resource-portfolio/) — repository-origin synthesis with an initial bounded literature review, no implementation or validation, and no novelty claim. It remains a research candidate for the exact integration of organization, model portfolio, quality control, resource lifecycle, and verified closure.
-- [Repository-Original Content and Research Candidates](../../../../repository-original-content/) — global status, evidence, novelty-boundary, and public-TODO index.
 
 Research candidates are not implemented architecture patterns and should not be recommended as established designs without separately declared evidence.
 

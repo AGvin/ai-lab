@@ -7,8 +7,6 @@ Catalog nodes own stable entity identity and facts. Project policies, reader jou
 ## Catalog domains
 
 - [`agent-skills/`](./sub/agent-skills/) — published Agent Skill collections and independently published skills where standalone ownership is verified.
-- [`datasets/`](./sub/datasets/) — concrete datasets used, evaluated, or referenced by AI Lab documentation.
-- [`hardware/`](./sub/hardware/) — compute systems, accelerators, processors, storage, networking, power, cooling, and related hardware entities.
 - [`models/`](./sub/models/) — canonical model reference and task-oriented model selection.
 - [`producers/`](./sub/producers/) — organizations, teams, individuals, and other stable producing or publishing identities.
 - [`services/`](./sub/services/) — externally operated products whose primary identity is a hosted service.

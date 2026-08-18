@@ -10,8 +10,6 @@ Complete implemented documentation hierarchy. This page mirrors materialized doc
       - [`nvidia-skills/`](../../../../../catalog/sub/agent-skills/sub/collections/sub/nvidia-skills/)
       - [`superpowers/`](../../../../../catalog/sub/agent-skills/sub/collections/sub/superpowers/)
       - [`matt-pocock-skills/`](../../../../../catalog/sub/agent-skills/sub/collections/sub/matt-pocock-skills/)
-  - [`datasets/`](../../../../../catalog/sub/datasets/)
-  - [`hardware/`](../../../../../catalog/sub/hardware/)
   - [`models/`](../../../../../catalog/sub/models/)
     - [`reference/`](../../../../../catalog/sub/models/sub/reference/)
       - [`producers/`](../../../../../catalog/sub/models/sub/reference/sub/producers/)

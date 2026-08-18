@@ -173,4 +173,3 @@ The evaluation should test whether the integrated composition improves the compl
 - [Resource Lifecycle Controller Architecture](../resource-lifecycle-controller/)
 - [Model Teams](../../../../../../../../../catalog/sub/models/sub/selection/sub/model-teams/)
 - [Local Resource Fit](../../../../../../../../../catalog/sub/models/sub/selection/sub/local-resource-fit/)
-- [Repository-Original Content Index](../../../../../../../repository-original-content/)
