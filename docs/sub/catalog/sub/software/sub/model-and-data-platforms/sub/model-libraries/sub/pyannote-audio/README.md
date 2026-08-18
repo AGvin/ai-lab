@@ -7,6 +7,10 @@
 - English
 - [Українська](./l10n/uk_UA/)
 
+## Provenance
+
+- [Hervé Bredin](../../../../../../../producers/sub/h/sub/herve-bredin/) — original/current package author and producer of `pyannote.audio`; this authorship is not rendered as corporate ownership of the library.
+
 ## Software boundary
 
 `pyannote.audio` is software, not a canonical trained-model identity. Pretrained artifacts loaded through the library remain distinct entities or pipeline artifacts.
@@ -32,5 +36,6 @@ Local or offline inference does not by itself establish the privacy posture of t
 
 ## Sources
 
+- [pyannote.audio package metadata](https://github.com/pyannote/pyannote-audio/blob/main/pyproject.toml)
 - [pyannote.audio repository](https://github.com/pyannote/pyannote-audio)
 - [Community-1 pipeline](https://huggingface.co/pyannote/speaker-diarization-community-1)
