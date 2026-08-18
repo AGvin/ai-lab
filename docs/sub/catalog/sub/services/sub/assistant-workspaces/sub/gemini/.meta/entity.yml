@@ -1,0 +1,28 @@
+entity:
+  id: catalog/services/assistant-workspaces/gemini
+  type: service
+  name: Gemini
+  references:
+    - type: official-site
+      source:
+        url: https://gemini.google.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://support.google.com/gemini/answer/13275745
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://support.google.com/gemini/answer/13594961
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google
