@@ -19,3 +19,5 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/reference/producers/tongyi-mai/z-image
+    - type: has-derivative
+      target: catalog/models/reference/producers/tongyi-mai/z-image/models/z-image-turbo
