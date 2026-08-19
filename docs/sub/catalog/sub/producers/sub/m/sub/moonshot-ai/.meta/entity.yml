@@ -1,0 +1,28 @@
+entity:
+  id: catalog/producers/m/moonshot-ai
+  type: organization
+  name: Moonshot AI
+  references:
+    - type: official-site
+      source:
+        url: https://www.moonshot.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/MoonshotAI
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/moonshotai
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/reference/producers/moonshot-ai/kimi
