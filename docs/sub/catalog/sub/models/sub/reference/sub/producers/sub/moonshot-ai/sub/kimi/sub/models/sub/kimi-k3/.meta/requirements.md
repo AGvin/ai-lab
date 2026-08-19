@@ -3,7 +3,7 @@
 ## Requirements
 
 - Identify the exact Moonshot AI Kimi K3 model as a concrete Kimi-family model, not as a provider service, model series, version alias, or weight artifact.
-- Preserve the source-backed July 16, 2026 model release and distinguish it from the later public full-weight availability where that date is relevant.
+- Preserve the source-backed July 16, 2026 model release and distinguish it from the July 27, 2026 public full-weight release where weight availability timing is relevant.
 - Identify Kimi K3 as an open-weight native multimodal agentic model; do not relabel its custom Kimi K3 License as Apache/MIT-style or OSI open source.
 - Preserve the source-backed 2.8T total parameters and 104B activated parameters separately; never use activated parameters as a proxy for storage, memory residency, or local deployment fit.
 - Preserve the source-backed MoE architecture context, including Kimi Delta Attention (KDA), Gated MLA/Attention Residuals, sparse expert activation, native vision, and the 1,048,576-token context window at a stable level.
