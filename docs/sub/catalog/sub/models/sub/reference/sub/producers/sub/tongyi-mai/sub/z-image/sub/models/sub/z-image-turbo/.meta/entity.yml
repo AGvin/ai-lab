@@ -1,0 +1,30 @@
+entity:
+  id: catalog/models/reference/producers/tongyi-mai/z-image/models/z-image-turbo
+  type: model
+  name: Z-Image-Turbo
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Tongyi-MAI/Z-Image
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2511.22699
+      purposes:
+        - research
+      authority: upstream
+  relations:
+    - type: member-of
+      target: catalog/models/reference/producers/tongyi-mai/z-image
+    - type: derived-from
+      target: catalog/models/reference/producers/tongyi-mai/z-image/models/z-image
