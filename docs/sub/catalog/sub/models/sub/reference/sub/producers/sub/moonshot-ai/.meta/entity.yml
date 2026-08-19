@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/reference/producers/moonshot-ai
+  type: model-producer-view
+  name: Moonshot AI Models
+  references:
+    - type: official-site
+      source:
+        url: https://www.moonshot.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/moonshotai
+      purposes:
+        - research
+      authority: official
