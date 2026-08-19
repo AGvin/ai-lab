@@ -22,3 +22,5 @@ entity:
       target: catalog/producers/t/tongyi-mai
     - type: has-member
       target: catalog/models/reference/producers/tongyi-mai/z-image/models/z-image
+    - type: has-member
+      target: catalog/models/reference/producers/tongyi-mai/z-image/models/z-image-turbo
