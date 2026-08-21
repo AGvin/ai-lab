@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/local-resource-fit
+  id: catalog/models/selection/decision-guides/local-resource-fit
   type: catalog-index
   name: Local Model Resource Fit
