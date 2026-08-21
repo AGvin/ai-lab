@@ -11,7 +11,7 @@ Use local memory capacity as a constraint on an exact model artifact, not as a m
 
 This page preserves the model-selection portion of the legacy `local-models-by-vram` guide. It answers whether an exact local model artifact is a credible candidate under a stated VRAM constraint.
 
-Canonical model identities, artifact names, and published artifact sizes belong to [Model Reference](../../../reference/). Task quality, role suitability, and recommendation state belong to the applicable task-selection page. GPU purchasing, hardware capacity taxonomy, sharding topology, runtime choice, resident-service scheduling, and broader deployment architecture remain outside this subtree.
+Canonical model identities, artifact names, and published artifact sizes belong to [Model Reference](../../../../../reference/). Task quality, role suitability, and recommendation state belong to the applicable task-selection page. GPU purchasing, hardware capacity taxonomy, sharding topology, runtime choice, resident-service scheduling, and broader deployment architecture remain outside this subtree.
 
 Published model-file size is not peak runtime VRAM. Runtime buffers, KV cache, context length, batching, graph capture, GPU offload, multimodal projectors or encoders, and concurrent services can materially change memory use. A successful load does not prove useful context headroom, target latency, concurrency, or accepted task quality.
 
@@ -21,12 +21,12 @@ The fit labels below preserve bounded planning judgments from the legacy guide. 
 
 | VRAM constraint | Exact candidate artifact | Published artifact footprint | Planning fit | Main boundary |
 | ---: | --- | ---: | --- | --- |
-| 8 GB | [Gemma 4 E2B Instruct](../../../reference/sub/producers/sub/google/sub/gemma/sub/gemma-4/sub/models/sub/e2b-instruct/) official QAT Q4_0 GGUF | 3.35 GB model + 987 MB multimodal projector | Constrained | Long context, multimodal processing, runtime buffers, and other GPU consumers can remove the nominal headroom |
-| 12 GB | [Gemma 4 E4B Instruct](../../../reference/sub/producers/sub/google/sub/gemma/sub/gemma-4/sub/models/sub/e4b-instruct/) official QAT Q4_0 GGUF | 5.15 GB model + 992 MB multimodal projector | Comfortable | Exact modality workload and runtime memory still require measurement |
-| 12 GB | [Qwen3 8B](../../../reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3/sub/models/sub/qwen3-8b/) official `Q4_K_M` GGUF | 5.03 GB | Comfortable | Context, batch size, offload, and concurrent services remain unmeasured here |
-| 16 GB | [Qwen3 14B](../../../reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3/sub/models/sub/qwen3-14b/) official `Q4_K_M` GGUF | approximately 9 GB | Comfortable | Fit does not establish coding, reasoning, or other task quality |
+| 8 GB | [Gemma 4 E2B Instruct](../../../../../reference/sub/producers/sub/google/sub/gemma/sub/gemma-4/sub/models/sub/e2b-instruct/) official QAT Q4_0 GGUF | 3.35 GB model + 987 MB multimodal projector | Constrained | Long context, multimodal processing, runtime buffers, and other GPU consumers can remove the nominal headroom |
+| 12 GB | [Gemma 4 E4B Instruct](../../../../../reference/sub/producers/sub/google/sub/gemma/sub/gemma-4/sub/models/sub/e4b-instruct/) official QAT Q4_0 GGUF | 5.15 GB model + 992 MB multimodal projector | Comfortable | Exact modality workload and runtime memory still require measurement |
+| 12 GB | [Qwen3 8B](../../../../../reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3/sub/models/sub/qwen3-8b/) official `Q4_K_M` GGUF | 5.03 GB | Comfortable | Context, batch size, offload, and concurrent services remain unmeasured here |
+| 16 GB | [Qwen3 14B](../../../../../reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3/sub/models/sub/qwen3-14b/) official `Q4_K_M` GGUF | approximately 9 GB | Comfortable | Fit does not establish coding, reasoning, or other task quality |
 | 24 GB | Qwen3 14B official `Q4_K_M` GGUF | approximately 9 GB | Comfortable | Additional headroom may be required for long context or other GPU consumers |
-| 24 GB | [Qwen3 30B-A3B](../../../reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3/sub/models/sub/qwen3-30b-a3b/) official `Q4_K_M` GGUF | approximately 18.6 GB | Constrained | Nominal file-size headroom is limited; do not assume useful context or concurrent residency |
+| 24 GB | [Qwen3 30B-A3B](../../../../../reference/sub/producers/sub/alibaba/sub/qwen/sub/qwen3/sub/models/sub/qwen3-30b-a3b/) official `Q4_K_M` GGUF | approximately 18.6 GB | Constrained | Nominal file-size headroom is limited; do not assume useful context or concurrent residency |
 | 32 GB | Qwen3 30B-A3B official `Q4_K_M` GGUF | approximately 18.6 GB | Comfortable | Runtime and workload conditions still determine practical fit |
 | 48 GB | Qwen3 30B-A3B official `Q4_K_M` GGUF | approximately 18.6 GB | Comfortable | Extra memory may be used for context or other services, but concurrency is not implied |
 | 96 GB | Exact larger or higher-precision artifact selected from workload evidence | Varies | Unknown | Do not promote a model merely because the nominal capacity permits a larger artifact |
@@ -82,8 +82,8 @@ The legacy `local-models-by-vram` page also contains concrete GPU examples, VRAM
 
 ## Related pages
 
-- [Model Selection](../..)
-- [Model Reference](../../../reference/)
+- [Model Selection](../../../..)
+- [Model Reference](../../../../../reference/)
 - [Software Development Model Selection](../software-development/)
 - [Language and Research Model Selection](../language-and-research/)
 - [Agents and Automation Model Selection](../agents-and-automation/)
