@@ -24,7 +24,7 @@
 - Require role-specific evaluation rather than one aggregate benchmark or popularity ranking.
 - Require exact model/version/artifact and evidence boundaries for role assignments.
 - Require each material role assignment to record the role, responsibilities, quality tier, failure severity, exact candidate identity, relevant runtime/scaffold, context, tools/permissions, observed strengths/failures, verification method, retry limit, escalation target, independence constraints, latency/resource evidence, and verification date; omit empty fields that add no evidence.
-- Link canonical model facts from `../../../../../reference/`.
+- Link canonical model facts from `../../../../../../../reference/`.
 - Materialize specific portfolio shapes only when they have distinct selection evidence or reader value.
 
 ## Validation
