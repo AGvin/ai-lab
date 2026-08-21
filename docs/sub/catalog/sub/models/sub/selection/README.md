@@ -7,19 +7,11 @@ Choose models or model portfolios for a concrete task using explicit acceptance 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Current task areas
+## Current selection journeys
 
-- [`software-development/`](./sub/software-development/) — coding, debugging, testing, review, architecture, and repository-scale software work.
-- [`language-and-research/`](./sub/language-and-research/) — language work, research, writing, translation, summarization, and related text tasks.
-- [`agents-and-automation/`](./sub/agents-and-automation/) — tool use, planning, long-running execution, computer use, and agent workloads.
-- [`media-creation/`](./sub/media-creation/) — image, video, speech, music, sound, and other generative-media tasks.
-- [`content-understanding/`](./sub/content-understanding/) — image, video, speech, audio, and document understanding.
-- [`evaluation-and-quality-control/`](./sub/evaluation-and-quality-control/) — independent model-assisted evaluation and QC tasks.
-- [`model-teams/`](./sub/model-teams/) — model portfolios, role assignment, routing, ensembles, and consensus.
+- [`decision-guides/`](./sub/decision-guides/) — task-, need-, constraint-, and model-portfolio-oriented model selection guidance.
 
-## Cross-cutting selection lenses
-
-- [`local-resource-fit/`](./sub/local-resource-fit/) — evaluate exact local model artifacts under stated memory constraints without turning VRAM into a quality rank or hardware-selection guide.
+A separate `user-scenarios/` journey is planned for broader situations that combine persona, tasks, hardware, budget, skills, privacy/data boundaries, and deployment preferences. It is not materialized until its legacy scenario content is explicitly migrated.
 
 ## Decision boundary
 
@@ -88,7 +80,7 @@ Record observable behavior that changes a model-selection decision, including:
 
 Worker self-report is not completion evidence. Verify acceptance against produced artifacts, deterministic checks, tool results, provider state when relevant, or an independent QC/reviewer path.
 
-Repeatedly similar failures after targeted correction should be treated as evidence of a capability gap rather than justification for unlimited retries. Model-team escalation rules belong under [Model Teams](./sub/model-teams/); infrastructure retry/backoff, provider failover, GPU/runtime degradation, and service recovery belong outside model-selection ownership.
+Repeatedly similar failures after targeted correction should be treated as evidence of a capability gap rather than justification for unlimited retries. Model-team escalation rules belong under [Model Teams](./sub/decision-guides/sub/model-teams/); infrastructure retry/backoff, provider failover, GPU/runtime degradation, and service recovery belong outside model-selection ownership.
 
 ### Local resource-fit evidence
 
@@ -100,7 +92,7 @@ Do not classify a candidate as locally suitable solely because its weight file a
 
 Choosing GPU hardware, capacity classes, sharding topology, runtime software, resident-service schedules, or host-memory architecture is broader deployment/hardware selection and remains outside this subtree. Those facts may appear here only as frozen evidence conditions that materially constrain a model choice.
 
-Use [Local Model Resource Fit](./sub/local-resource-fit/) for the materialized cross-cutting artifact-fit guidance.
+Use [Local Model Resource Fit](./sub/decision-guides/sub/local-resource-fit/) for the materialized cross-cutting artifact-fit guidance.
 
 ### Cost and trade-offs
 
@@ -116,4 +108,4 @@ Re-evaluate when the exact model or artifact changes, a provider silently change
 
 ## Recycled legacy guidance
 
-The earlier model-selection section is an input corpus, not the target taxonomy. Broad legacy pages may split across several task areas, and stale recommendations are not carried forward without current evidence. Practical user-scenario material is intentionally outside this migration scope.
+The earlier model-selection section is an input corpus, not the target taxonomy. Broad legacy pages may split across several decision guides, and stale recommendations are not carried forward without current evidence. Practical user-scenario material remains in its legacy source until the separate `user-scenarios/` migration is explicitly executed.
