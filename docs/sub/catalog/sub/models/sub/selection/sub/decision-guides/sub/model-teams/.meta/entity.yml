@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/model-teams
+  id: catalog/models/selection/decision-guides/model-teams
   type: catalog-index
   name: Model Teams
