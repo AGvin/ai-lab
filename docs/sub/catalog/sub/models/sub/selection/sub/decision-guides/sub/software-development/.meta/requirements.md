@@ -19,7 +19,7 @@
 - Treat provider positioning and benchmark claims as provider-documented evidence, not independent AI Lab proof of task superiority.
 - Treat tool/function-calling availability as runtime or hosted-surface dependent when official sources distinguish model capability from a deployment surface.
 - Recheck mutable hosted availability, aliases, prices, limits, and provider features at decision time rather than copying them into a durable candidate ranking.
-- Link canonical model facts from `../../../reference/` and keep task findings in selection.
+- Link canonical model facts from `../../../../../reference/` and keep task findings in selection.
 - Materialize more specific selected child nodes only when their shortlist, evaluation dimensions, or acceptance criteria materially differ.
 
 ## Validation
