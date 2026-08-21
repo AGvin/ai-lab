@@ -14,7 +14,7 @@
 - Treat provider positioning, long context, multilingual capability, tool support, or low token price as eligibility evidence only; require workload evidence before assigning a recommendation state.
 - Recheck mutable hosted aliases, prices, limits, availability, reasoning-effort controls, tool surfaces, and data-path constraints at decision time rather than embedding them in a durable ranking.
 - Keep translation/localization-specific candidates and acceptance rules in `sub/translation-and-localization/` when that child has the more specific owner.
-- Link canonical model facts from `../../../reference/` instead of duplicating model profiles.
+- Link canonical model facts from `../../../../../reference/` instead of duplicating model profiles.
 - Materialize a more specific selected child only when its shortlist, rubric, or acceptance criteria materially differ.
 
 ## Validation
