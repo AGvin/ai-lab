@@ -39,4 +39,4 @@ Provider benchmark claims, self-evaluation claims, long context, multimodal supp
 
 Test position, order, verbosity, style, identity, and self-preference bias. Randomize or normalize irrelevant presentation features where appropriate and measure agreement, calibration, false approval, false rejection, abstention, and human-overturn rates.
 
-Do not treat one model score as proof of quality. Link intrinsic evaluator-model facts from [Model Reference](../../../reference/) and keep calibration and task evidence here.
+Do not treat one model score as proof of quality. Link intrinsic evaluator-model facts from [Model Reference](../../../../../reference/) and keep calibration and task evidence here.
