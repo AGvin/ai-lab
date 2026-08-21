@@ -27,7 +27,7 @@ The current retained concrete media candidate from the legacy corpus is delibera
 
 | Candidate | Evaluate for | Evidence state | Main boundary |
 | --- | --- | --- | --- |
-| [FLUX.1-schnell](../../../reference/sub/producers/sub/black-forest-labs/sub/flux/sub/flux-1/sub/models/sub/flux-1-schnell/) | Rapid local/private text-to-image concept generation and comparison against another exact approved image route | Current provider-published downloadable text-to-image model with Apache-2.0 license and low-step inference guidance; legacy AI Lab candidate hypothesis | Exact revision, runtime, precision, encoders/VAE, resolution, peak memory, prompt adherence, defect rate, rights workflow, and cost per accepted artifact require assignment-level measurement |
+| [FLUX.1-schnell](../../../../../reference/sub/producers/sub/black-forest-labs/sub/flux/sub/flux-1/sub/models/sub/flux-1-schnell/) | Rapid local/private text-to-image concept generation and comparison against another exact approved image route | Current provider-published downloadable text-to-image model with Apache-2.0 license and low-step inference guidance; legacy AI Lab candidate hypothesis | Exact revision, runtime, precision, encoders/VAE, resolution, peak memory, prompt adherence, defect rate, rights workflow, and cost per accepted artifact require assignment-level measurement |
 
 A legacy page calling another model a general “candidate for comparison” is not enough to add it here. A candidate entry requires a concrete task-fit hypothesis and current evidence sufficient to define what should be evaluated. New image/video/audio models can be added when that threshold is met without creating a universal ranking.
 
@@ -57,4 +57,4 @@ A real-time voice assistant is a multi-component solution that may combine VAD, 
 
 Hosted voice catalogs, provider pricing/retention/regions, runtime choice, hardware planning, and end-to-end operational architecture remain outside model-selection ownership. They may be recorded only as evidence conditions when comparing exact generation models.
 
-Operational infrastructure lifecycle and broader service/hardware selection belong outside model-selection ownership. Link intrinsic model facts from [Model Reference](../../../reference/).
+Operational infrastructure lifecycle and broader service/hardware selection belong outside model-selection ownership. Link intrinsic model facts from [Model Reference](../../../../../reference/).
