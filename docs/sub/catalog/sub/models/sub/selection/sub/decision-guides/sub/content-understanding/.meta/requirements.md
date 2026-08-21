@@ -19,7 +19,7 @@
 - Recheck mutable hosted availability, aliases, preview capabilities, limits, prices, and provider surfaces at decision time when they materially affect a candidate comparison.
 - Keep QC/judging ownership in `../evaluation-and-quality-control/` rather than mixing it into content-understanding pages.
 - Keep complete voice-agent stacks, hosted speech-service selection, runtime/software selection, hardware planning, privacy operations, and end-to-end conversational architecture outside this model-selection subtree.
-- Link canonical model facts from `../../../reference/`.
+- Link canonical model facts from `../../../../../reference/`.
 
 ## Validation
 
