@@ -26,7 +26,7 @@
 - Link model-team topology/routing/escalation guidance from `../model-teams/` rather than duplicating portfolio design here.
 - Keep workflow-engine design, orchestration software selection, branch/workspace mechanics, service/resource lifecycle, GPU residency, provider startup/teardown, billing reconciliation, and infrastructure fault recovery outside model-selection ownership.
 - Allow operational conditions to be recorded only as frozen evidence context when they materially affect the evaluated model behavior.
-- Link canonical model facts from `../../../reference/`.
+- Link canonical model facts from `../../../../../reference/`.
 
 ## Validation
 
