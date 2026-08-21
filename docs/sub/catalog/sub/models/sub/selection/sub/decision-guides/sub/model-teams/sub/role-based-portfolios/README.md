@@ -50,4 +50,4 @@ Use tests that match the role instead of one aggregate benchmark:
 
 For a material role assignment, record the role, responsibilities, quality tier, failure severity, exact model/version/artifact, relevant runtime or scaffold, context, tools and permissions, observed strengths and failure modes, verification method, retry limit, escalation target, independence constraints, latency/resource evidence, and verification date. Omit fields that add no evidence.
 
-Link model facts from [Model Reference](../../../../../reference/). More specific portfolio-shape pages are materialized only when their selection evidence differs enough to justify a dedicated node.
+Link model facts from [Model Reference](../../../../../../../reference/). More specific portfolio-shape pages are materialized only when their selection evidence differs enough to justify a dedicated node.
