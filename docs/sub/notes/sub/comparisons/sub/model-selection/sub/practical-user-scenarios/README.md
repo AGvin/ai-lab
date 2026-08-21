@@ -146,7 +146,7 @@ Coding agents can execute commands and modify files. Isolate them in VMs, contai
 
 > Cursor and Codex can send code or context to vendor infrastructure. Local execution or a self-hosted model endpoint does not prove the complete client path is local. [Cursor details](../../../../../../../software/sub/development/sub/code-editors/sub/cursor/#cursor-data-safety) · [Codex details](../../../../../../../software/sub/agents/sub/openai-codex/#codex-data-safety).
 
-See [Agents and Automation Model Selection](../../../../../../../catalog/sub/models/sub/selection/sub/agents-and-automation/) for model-selection safeguards.
+See [Agents and Automation Model Selection](../../../../../../../catalog/sub/models/sub/selection/sub/decision-guides/sub/agents-and-automation/) for model-selection safeguards.
 
 ## 9. Business knowledge assistant
 
@@ -184,7 +184,7 @@ Do not choose a free consumer service, aggregator, or coding client only because
 - A multimodal model does not replace deterministic extraction, schema validation, or qualified review.
 - Compare total cost per accepted result, including retries and human correction.
 
-For model-specific local resource-fit evidence, use [Local Resource Fit](../../../../../../../catalog/sub/models/sub/selection/sub/local-resource-fit/). For the current model-selection method, see [Model Selection](../../../../../../../catalog/sub/models/sub/selection/).
+For model-specific local resource-fit evidence, use [Local Resource Fit](../../../../../../../catalog/sub/models/sub/selection/sub/decision-guides/sub/local-resource-fit/). For the current model-selection method, see [Model Selection](../../../../../../../catalog/sub/models/sub/selection/).
 
 ## Sources
 
