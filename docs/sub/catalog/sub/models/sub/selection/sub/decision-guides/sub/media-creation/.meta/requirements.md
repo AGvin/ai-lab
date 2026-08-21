@@ -20,7 +20,7 @@
 - State explicitly that technical voice-generation capability does not establish permission to clone, imitate, publish, or commercially use an identity-conditioned output.
 - Keep complete real-time voice-agent stacks, hosted speech-service selection, runtime/software selection, hardware planning, provider pricing/retention/regions, and end-to-end operational architecture outside this model-selection subtree.
 - Keep infrastructure lifecycle and broader service/hardware selection outside this model-selection subtree.
-- Link canonical model facts from `../../../reference/`.
+- Link canonical model facts from `../../../../../reference/`.
 
 ## Validation
 
