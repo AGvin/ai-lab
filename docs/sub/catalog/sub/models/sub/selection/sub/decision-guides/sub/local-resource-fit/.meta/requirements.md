@@ -4,7 +4,7 @@
 
 - Treat local resource fit as a cross-cutting model-selection lens, not as a standalone task category or a proxy for model quality.
 - Start from an exact model, version, artifact, or materially distinct quantization and evaluate whether it is a credible candidate under a stated local memory constraint.
-- Link intrinsic model and artifact facts from `../../../reference/` instead of duplicating canonical model profiles or maintaining a second source of artifact identity.
+- Link intrinsic model and artifact facts from `../../../../../reference/` instead of duplicating canonical model profiles or maintaining a second source of artifact identity.
 - Preserve useful artifact-specific fit judgments from the legacy `local-models-by-vram` guide when their evidence boundary remains clear and their canonical model identity is available.
 - Treat Z-Image-Turbo as a current validation candidate for a 16-GB-class local image-generation route because Tongyi-MAI currently claims comfortable operation within 16 GB consumer VRAM; keep the fit state `Unknown` until the exact checkpoint, runtime, precision, resolution, batch, offload policy, auxiliary components, and measured peak memory are pinned and tested.
 - Do not infer a practical local Kimi K3 route from open-weight availability or the 104B activated-parameter figure. Its 2.8T total scale and exact distributed artifacts/runtime requirements must be evaluated directly before any local-fit label is assigned.
