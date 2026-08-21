@@ -14,7 +14,7 @@
 - Keep content-understanding candidate eligibility under `../content-understanding/`; promote a model here only when evidence supports the distinct evaluator/QC assignment.
 - Treat provider benchmark or self-evaluation claims as provider-documented evidence, not independent proof of judge reliability.
 - Recheck mutable hosted model identities, aliases, tool/features, limits, and availability when they materially affect a future QC candidate evaluation.
-- Link canonical model facts from `../../../reference/`.
+- Link canonical model facts from `../../../../../reference/`.
 
 ## Validation
 
