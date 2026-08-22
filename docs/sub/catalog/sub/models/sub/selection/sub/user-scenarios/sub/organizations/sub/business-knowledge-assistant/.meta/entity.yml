@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/organizations/business-knowledge-assistant
+  type: catalog-index
+  name: Business Knowledge Assistant
