@@ -42,5 +42,7 @@ entity:
       target: catalog/software/workflow-engines/data-and-compute-orchestration/kubeflow-pipelines
     - type: produces
       target: catalog/services/assistant-workspaces/gemini
+    - type: produces
+      target: catalog/services/knowledge-workspaces/gemini-notebook
     - type: has-part
       target: catalog/producers/g/google-deepmind
