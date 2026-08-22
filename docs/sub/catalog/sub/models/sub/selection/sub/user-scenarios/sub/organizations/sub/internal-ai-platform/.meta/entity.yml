@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/organizations/internal-ai-platform
+  type: catalog-index
+  name: Internal AI Platform
