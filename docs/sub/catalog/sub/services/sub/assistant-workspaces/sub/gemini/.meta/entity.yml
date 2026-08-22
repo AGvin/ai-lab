@@ -23,6 +23,12 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://support.google.com/gemini/answer/16275805
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/g/google
