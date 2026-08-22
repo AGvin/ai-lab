@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/teams/software-development-team
+  type: catalog-index
+  name: Software Development Team
