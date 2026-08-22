@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/personal/everyday-home-user
+  type: catalog-index
+  name: Everyday Home User
