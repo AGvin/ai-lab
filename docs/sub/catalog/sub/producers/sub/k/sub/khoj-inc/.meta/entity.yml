@@ -20,6 +20,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target: catalog/software/interfaces-and-workspaces/integrated-workspaces/khoj
-    - type: produces
       target: catalog/software/interfaces-and-workspaces/knowledge-workspaces/khoj
