@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/personal/gamer-with-existing-gpu
+  type: catalog-index
+  name: Gamer with an Existing GPU
