@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/personal/home-lab-owner
+  type: catalog-index
+  name: Home-Lab Owner
