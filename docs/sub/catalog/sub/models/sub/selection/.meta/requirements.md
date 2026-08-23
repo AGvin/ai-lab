@@ -2,10 +2,10 @@
 
 ## Requirements
 
-- Present model selection through distinct reader journeys rather than one flat list of selection pages.
+- Present `catalog/models/selection/` as model-specific decision support rather than as the owner of every broader decision journey that happens to involve models.
 - Use `decision-guides/` for task-, need-, constraint-, and model-portfolio-oriented selection guidance; use the natural-intent test `I want a model to <task>` where task intent is the governing axis.
-- Use the sibling `user-scenarios/` journey for broader situations that combine persona, tasks, hardware, budget, skills, privacy/data boundaries, and deployment preferences; materialize only reviewed scenario content with a distinct route.
-- Materialize only selection areas that have real reviewed content; do not create the complete selected skeleton preemptively.
+- Keep combined-context user scenarios under `decision-support/user-scenarios/`. Link that journey when persona, multiple tasks, hardware, budget, skills, privacy/data boundaries, services, deployment, or operations jointly determine the route; do not duplicate those scenario pages under model selection.
+- Materialize only model-selection areas that have real reviewed content; do not create the complete selected skeleton preemptively.
 - Link canonical model facts from `../reference/` instead of duplicating full model descriptions.
 - Require concrete recommendations to identify exact model/version/artifact scope, acceptance criteria, evidence basis, material deployment assumptions, and trade-offs.
 - Define the assignment before candidate choice, including relevant input/output contract, quality target, failure severity, modalities, privacy/data boundary, latency or throughput requirement, budget, and model-specific access/deployment conditions when they affect the decision.
@@ -32,12 +32,11 @@
 - Require mutable pricing, availability, hosted features, limits, aliases, and provider terms to be rechecked when they materially affect the decision.
 - Keep broader software/service/hardware/runtime/deployment/operations selection outside this subtree when the decision is not model-specific.
 - Treat legacy model-selection pages as recycling input rather than destination-preserving migration source.
-- Treat the legacy practical user-scenario page as preservation input for the canonical `user-scenarios/` journey; remove it only after shared/scenario content and repository-owned inbound references are verified at their selected destinations.
 
 ## Validation
 
-- Every materialized child corresponds to an approved destination in the selected model-selection target tree.
-- `decision-guides/` and `user-scenarios/` are not conflated into one reader journey.
+- Every materialized child corresponds to an approved model-specific destination in the selected model-selection target tree.
+- Combined-context user scenarios are not materialized under `catalog/models/selection/`; they resolve to `decision-support/user-scenarios/` instead.
 - Selection pages do not become alternate sources of canonical model identity or technical facts.
 - Provider claims are not presented as independent AI Lab benchmark evidence.
 - Recommendation and reliability labels are scoped to explicit task, conditions, constraints, and evidence.
@@ -45,4 +44,3 @@
 - Published artifact size, nominal VRAM, or a successful load is not presented as proof of practical local fit.
 - No GPU-buying, runtime-architecture, sharding, or resident-service scheduling guide is migrated into model selection merely because it constrains a candidate model.
 - No broad infrastructure lifecycle, failover architecture, or solution-architecture guide is migrated into model selection merely because models are components.
-- The legacy practical user-scenario source is removed only after useful content is accounted for and every repository-owned inbound reference has a valid canonical target.

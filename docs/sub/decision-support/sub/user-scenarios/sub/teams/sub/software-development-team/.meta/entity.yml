@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/user-scenarios/teams/software-development-team
+  type: user-scenario
+  name: Software Development Team

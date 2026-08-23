@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/user-scenarios/organizations/business-knowledge-assistant
+  type: user-scenario
+  name: Business Knowledge Assistant

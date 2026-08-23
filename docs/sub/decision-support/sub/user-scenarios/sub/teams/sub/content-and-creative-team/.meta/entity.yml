@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/user-scenarios/teams/content-and-creative-team
+  type: user-scenario
+  name: Content and Creative Team

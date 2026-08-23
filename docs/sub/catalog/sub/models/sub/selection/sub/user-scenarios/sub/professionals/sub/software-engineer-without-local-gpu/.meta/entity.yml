@@ -1,4 +1,0 @@
-entity:
-  id: catalog/models/selection/user-scenarios/professionals/software-engineer-without-local-gpu
-  type: catalog-index
-  name: Software Engineer without a Local GPU

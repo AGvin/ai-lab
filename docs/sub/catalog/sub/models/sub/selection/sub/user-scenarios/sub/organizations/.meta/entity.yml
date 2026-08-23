@@ -1,4 +1,0 @@
-entity:
-  id: catalog/models/selection/user-scenarios/organizations
-  type: catalog-index
-  name: Organization Model Selection Scenarios

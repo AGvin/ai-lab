@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/user-scenarios/personal/student-on-a-budget
+  type: user-scenario
+  name: Student on a Budget

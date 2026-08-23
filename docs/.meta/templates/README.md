@@ -70,33 +70,38 @@ docs/.meta/templates/
 │   ├── entity-relations.md
 │   └── discovery-resources.md
 └── pages/
-    └── catalog/
+    ├── catalog/
+    │   ├── landing.md
+    │   ├── domain.md
+    │   ├── category.md
+    │   ├── child-index.md
+    │   ├── alphabetical-index.md
+    │   ├── producers/
+    │   │   └── profile.md
+    │   ├── models/
+    │   │   ├── landing.md
+    │   │   ├── reference/
+    │   │   │   ├── landing.md
+    │   │   │   ├── producer.md
+    │   │   │   ├── family.md
+    │   │   │   ├── series.md
+    │   │   │   ├── model.md
+    │   │   │   ├── version.md
+    │   │   │   └── artifact.md
+    │   │   └── selection/
+    │   │       ├── landing.md
+    │   │       └── guide.md
+    │   ├── agent-skills/
+    │   │   └── collection.md
+    │   ├── services/
+    │   │   └── service.md
+    │   └── software/
+    │       └── software.md
+    └── decision-support/
         ├── landing.md
-        ├── domain.md
-        ├── category.md
-        ├── child-index.md
-        ├── alphabetical-index.md
-        ├── producers/
-        │   └── profile.md
-        ├── models/
-        │   ├── landing.md
-        │   ├── reference/
-        │   │   ├── landing.md
-        │   │   ├── producer.md
-        │   │   ├── family.md
-        │   │   ├── series.md
-        │   │   ├── model.md
-        │   │   ├── version.md
-        │   │   └── artifact.md
-        │   └── selection/
-        │       ├── landing.md
-        │       └── guide.md
-        ├── agent-skills/
-        │   └── collection.md
-        ├── services/
-        │   └── service.md
-        └── software/
-            └── software.md
+        └── user-scenarios/
+            ├── index.md
+            └── scenario.md
 ```
 
 Concrete dataset and hardware profile templates are intentionally deferred until representative concrete nodes exist. Their current domain landing pages use the shared `catalog/domain` family.
@@ -111,7 +116,7 @@ Concrete dataset and hardware profile templates are intentionally deferred until
 
 ## Specialized Page Families
 
-Specialized families exist only where reader goals or ownership differ materially: canonical producer profiles; model reference producer/family/series/model/version/artifact identities; model-selection decision support; Agent Skill collections; hosted services; and installable/self-managed software.
+Specialized families exist only where reader goals or ownership differ materially: canonical producer profiles; model reference producer/family/series/model/version/artifact identities; model-specific selection decision support; combined-context user-scenario decision support; Agent Skill collections; hosted services; and installable/self-managed software.
 
 ## Output Boundary
 
@@ -121,4 +126,4 @@ The complete `README.md` remains renderer-owned. Durable corrections belong in c
 
 ## Selection Boundary
 
-This change materializes template definitions only. It does not assign or change `node.template`, `node.children.template`, layouts, schemas, catalog metadata, or generated README output. Selector migration is a separate bounded change after representative template validation.
+Template definitions and `node.template` selectors are separate canonical inputs. A bounded migration may introduce or update both together when the semantic contract and representative nodes are reviewed in the same package. Changing a template definition does not by itself authorize unrelated selector migration, generated README edits, or broader taxonomy materialization.

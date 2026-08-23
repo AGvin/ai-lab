@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/user-scenarios/professionals
+  type: user-scenario-index
+  name: Professional User Scenarios

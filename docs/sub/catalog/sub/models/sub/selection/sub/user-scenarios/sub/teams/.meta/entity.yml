@@ -1,4 +1,0 @@
-entity:
-  id: catalog/models/selection/user-scenarios/teams
-  type: catalog-index
-  name: Team Model Selection Scenarios

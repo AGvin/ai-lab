@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/user-scenarios/personal/home-lab-owner
+  type: user-scenario
+  name: Home-Lab Owner

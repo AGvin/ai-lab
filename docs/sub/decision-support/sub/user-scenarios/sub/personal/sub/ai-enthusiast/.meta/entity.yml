@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/user-scenarios/personal/ai-enthusiast
+  type: user-scenario
+  name: AI Enthusiast
