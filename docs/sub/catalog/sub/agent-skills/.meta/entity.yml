@@ -16,3 +16,6 @@ entity:
       purposes:
         - research
       authority: official
+  relations:
+    - type: has-discovery-resource
+      target: catalog/services/ai-assets/claude-code-templates
