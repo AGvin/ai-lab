@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/hardware
+  type: model-selection-index
+  name: Hardware-Constrained Model Selection

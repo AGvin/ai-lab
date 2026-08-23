@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/selection/hardware/single-board/rockchip
+  type: model-selection-hardware-target
+  name: Rockchip NPU Model Selection
+  references:
+    - type: repository
+      source:
+        url: https://github.com/airockchip/rknn-llm
+      purposes: [research]
+      authority: upstream
+    - type: repository
+      source:
+        url: https://github.com/airockchip/rknn-toolkit2
+      purposes: [research]
+      authority: upstream

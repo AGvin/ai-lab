@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/hardware/servers/cpu
+  type: model-selection-hardware-target
+  name: CPU Server Model Selection

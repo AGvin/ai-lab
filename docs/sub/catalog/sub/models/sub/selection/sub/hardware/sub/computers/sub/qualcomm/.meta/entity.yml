@@ -1,0 +1,10 @@
+entity:
+  id: catalog/models/selection/hardware/computers/qualcomm
+  type: model-selection-hardware-target
+  name: Qualcomm Computer Model Selection
+  references:
+    - type: official-site
+      source:
+        url: https://aihub.qualcomm.com/
+      purposes: [research]
+      authority: official

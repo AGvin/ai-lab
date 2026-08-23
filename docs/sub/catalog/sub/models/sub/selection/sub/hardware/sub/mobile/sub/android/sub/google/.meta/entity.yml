@@ -1,0 +1,10 @@
+entity:
+  id: catalog/models/selection/hardware/mobile/android/google
+  type: model-selection-hardware-target
+  name: Google Tensor Android Model Selection
+  references:
+    - type: documentation
+      source:
+        url: https://developer.android.com/ai/gemini-nano
+      purposes: [research]
+      authority: official

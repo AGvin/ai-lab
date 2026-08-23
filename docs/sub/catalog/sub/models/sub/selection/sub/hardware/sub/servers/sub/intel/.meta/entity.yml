@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/selection/hardware/servers/intel
+  type: model-selection-hardware-target
+  name: Intel Server Model Selection
+  references:
+    - type: documentation
+      source:
+        url: https://docs.habana.ai/
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.openvino.ai/
+      purposes: [research]
+      authority: official

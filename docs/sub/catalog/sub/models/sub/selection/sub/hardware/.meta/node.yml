@@ -1,0 +1,8 @@
+node:
+  template: catalog/models/selection/hardware/index
+  children:
+    template: catalog/models/selection/hardware/index
+    children:
+      template: catalog/models/selection/hardware/target
+      children:
+        template: catalog/models/selection/hardware/target

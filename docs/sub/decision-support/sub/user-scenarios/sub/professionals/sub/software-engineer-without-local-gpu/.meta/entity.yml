@@ -1,4 +1,0 @@
-entity:
-  id: decision-support/user-scenarios/professionals/software-engineer-without-local-gpu
-  type: user-scenario
-  name: Software Engineer without a Local GPU

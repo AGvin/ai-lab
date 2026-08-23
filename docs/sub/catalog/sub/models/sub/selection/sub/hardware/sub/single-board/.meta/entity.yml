@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/hardware/single-board
+  type: model-selection-hardware-group
+  name: Single-Board Model Selection

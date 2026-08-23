@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/selection/hardware/mobile/android
+  type: model-selection-hardware-target
+  name: Android Mobile Model Selection
+  references:
+    - type: documentation
+      source:
+        url: https://developer.android.com/ai/gemini-nano
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/edge/litert
+      purposes: [research]
+      authority: official

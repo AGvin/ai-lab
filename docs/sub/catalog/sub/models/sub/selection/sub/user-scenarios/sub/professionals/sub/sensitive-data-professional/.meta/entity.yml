@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/professionals/sensitive-data-professional
+  type: user-scenario
+  name: Sensitive-Data Professional

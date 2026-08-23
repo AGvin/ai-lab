@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/professionals
+  type: user-scenario-index
+  name: Professional User Scenarios

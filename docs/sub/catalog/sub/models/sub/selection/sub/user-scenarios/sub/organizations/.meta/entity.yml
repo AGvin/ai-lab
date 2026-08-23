@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/organizations
+  type: user-scenario-index
+  name: Organization User Scenarios

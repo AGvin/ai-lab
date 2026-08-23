@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/personal
+  type: user-scenario-index
+  name: Personal User Scenarios

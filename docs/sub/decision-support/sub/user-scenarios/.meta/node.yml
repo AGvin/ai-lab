@@ -1,6 +1,0 @@
-node:
-  template: decision-support/user-scenarios/index
-  children:
-    template: decision-support/user-scenarios/index
-    children:
-      template: decision-support/user-scenarios/scenario

@@ -1,0 +1,10 @@
+entity:
+  id: catalog/models/selection/hardware/servers/nvidia
+  type: model-selection-hardware-target
+  name: NVIDIA Server Model Selection
+  references:
+    - type: documentation
+      source:
+        url: https://developer.nvidia.com/tensorrt-llm
+      purposes: [research]
+      authority: official

@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/hardware/servers
+  type: model-selection-hardware-group
+  name: Server Model Selection

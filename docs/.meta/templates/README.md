@@ -70,41 +70,42 @@ docs/.meta/templates/
 │   ├── entity-relations.md
 │   └── discovery-resources.md
 └── pages/
-    ├── catalog/
-    │   ├── landing.md
-    │   ├── domain.md
-    │   ├── category.md
-    │   ├── child-index.md
-    │   ├── alphabetical-index.md
-    │   ├── producers/
-    │   │   └── profile.md
-    │   ├── models/
-    │   │   ├── landing.md
-    │   │   ├── reference/
-    │   │   │   ├── landing.md
-    │   │   │   ├── producer.md
-    │   │   │   ├── family.md
-    │   │   │   ├── series.md
-    │   │   │   ├── model.md
-    │   │   │   ├── version.md
-    │   │   │   └── artifact.md
-    │   │   └── selection/
-    │   │       ├── landing.md
-    │   │       └── guide.md
-    │   ├── agent-skills/
-    │   │   └── collection.md
-    │   ├── services/
-    │   │   └── service.md
-    │   └── software/
-    │       └── software.md
-    └── decision-support/
+    └── catalog/
         ├── landing.md
-        └── user-scenarios/
-            ├── index.md
-            └── scenario.md
+        ├── domain.md
+        ├── category.md
+        ├── child-index.md
+        ├── alphabetical-index.md
+        ├── producers/
+        │   └── profile.md
+        ├── models/
+        │   ├── landing.md
+        │   ├── reference/
+        │   │   ├── landing.md
+        │   │   ├── producer.md
+        │   │   ├── family.md
+        │   │   ├── series.md
+        │   │   ├── model.md
+        │   │   ├── version.md
+        │   │   └── artifact.md
+        │   └── selection/
+        │       ├── landing.md
+        │       ├── guide.md
+        │       ├── user-scenarios/
+        │       │   ├── index.md
+        │       │   └── scenario.md
+        │       └── hardware/
+        │           ├── index.md
+        │           └── target.md
+        ├── agent-skills/
+        │   └── collection.md
+        ├── services/
+        │   └── service.md
+        └── software/
+            └── software.md
 ```
 
-Concrete dataset and hardware profile templates are intentionally deferred until representative concrete nodes exist. Their current domain landing pages use the shared `catalog/domain` family.
+Concrete canonical dataset and hardware **profile** templates remain deferred until representative concrete catalog entities justify them. `catalog/models/selection/hardware/*` is not a canonical hardware-profile family; it is model-specific decision support for a fixed hardware target.
 
 ## Shared Page Families
 
@@ -116,13 +117,19 @@ Concrete dataset and hardware profile templates are intentionally deferred until
 
 ## Specialized Page Families
 
-Specialized families exist only where reader goals or ownership differ materially: canonical producer profiles; model reference producer/family/series/model/version/artifact identities; model-specific selection decision support; combined-context user-scenario decision support; Agent Skill collections; hosted services; and installable/self-managed software.
+Specialized families exist only where reader goals or ownership differ materially: canonical producer profiles; model reference producer/family/series/model/version/artifact identities; task/portfolio model-selection decision support; combined-context model user scenarios; hardware-constrained model selection; Agent Skill collections; hosted services; and installable/self-managed software.
+
+The three model-selection template families remain siblings under the same semantic owner:
+
+- `catalog/models/selection/guide` — task/need/portfolio or model-first bounded decisions;
+- `catalog/models/selection/user-scenarios/*` — combined-context reader situations;
+- `catalog/models/selection/hardware/*` — device-first model selection for owned/fixed compute.
 
 ## Output Boundary
 
 A render is constrained by validated global context, effective node metadata, validated current-node entity data, applicable requirements, selected registry definitions, and explicit authored fragments when used. Templates must not scrape reader-facing facts from an existing `README.md`, infer presentation solely from entity-field presence, or invent undocumented children, relations, claims, recommendations, or resources.
 
-The complete `README.md` remains renderer-owned. Durable corrections belong in canonical inputs or template definitions and are applied through the normal validation/render/check workflow when executable support is available.
+The complete `README.md` remains renderer-owned. Durable corrections belong in canonical inputs or template definitions and are applied through the normal validation/render/check workflow when executable support is available. A target-specific migration-phase render deferral may temporarily postpone that workflow without transferring README ownership.
 
 ## Selection Boundary
 

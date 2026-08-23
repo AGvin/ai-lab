@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/hardware/computers
+  type: model-selection-hardware-group
+  name: Computer Model Selection

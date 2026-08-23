@@ -1,0 +1,6 @@
+node:
+  template: catalog/models/selection/user-scenarios/index
+  children:
+    template: catalog/models/selection/user-scenarios/index
+    children:
+      template: catalog/models/selection/user-scenarios/scenario

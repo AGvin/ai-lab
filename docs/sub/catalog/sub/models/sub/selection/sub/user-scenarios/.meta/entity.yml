@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios
+  type: user-scenario-index
+  name: Model Selection User Scenarios

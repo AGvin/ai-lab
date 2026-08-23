@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/professionals/general-knowledge-worker
+  type: user-scenario
+  name: General Knowledge Worker

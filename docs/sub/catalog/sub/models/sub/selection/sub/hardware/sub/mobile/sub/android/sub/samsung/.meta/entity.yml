@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/selection/hardware/mobile/android/samsung
+  type: model-selection-hardware-target
+  name: Samsung Exynos Android Model Selection
+  references:
+    - type: official-site
+      source:
+        url: https://semiconductor.samsung.com/processor/mobile-processor/
+      purposes: [research]
+      authority: official
+    - type: official-site
+      source:
+        url: https://developer.samsung.com/
+      purposes: [research]
+      authority: official

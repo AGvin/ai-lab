@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/personal/ai-enthusiast
+  type: user-scenario
+  name: AI Enthusiast
