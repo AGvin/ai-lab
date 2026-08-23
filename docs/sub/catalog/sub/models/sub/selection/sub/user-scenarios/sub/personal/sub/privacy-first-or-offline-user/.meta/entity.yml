@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/personal/privacy-first-or-offline-user
+  type: user-scenario
+  name: Privacy-First or Offline User
