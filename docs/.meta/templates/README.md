@@ -67,7 +67,8 @@ docs/.meta/templates/
 │   ├── translations.md
 │   ├── child-navigation.md
 │   ├── official-resources.md
-│   └── entity-relations.md
+│   ├── entity-relations.md
+│   └── discovery-resources.md
 └── pages/
     └── catalog/
         ├── landing.md
