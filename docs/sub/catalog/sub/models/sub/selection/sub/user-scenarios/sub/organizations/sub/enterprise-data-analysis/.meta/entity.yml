@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/organizations/enterprise-data-analysis
+  type: user-scenario
+  name: Enterprise Data Analysis
