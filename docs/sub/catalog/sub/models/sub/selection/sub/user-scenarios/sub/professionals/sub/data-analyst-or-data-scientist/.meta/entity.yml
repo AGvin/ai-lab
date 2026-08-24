@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/professionals/data-analyst-or-data-scientist
+  type: user-scenario
+  name: Data Analyst or Data Scientist
