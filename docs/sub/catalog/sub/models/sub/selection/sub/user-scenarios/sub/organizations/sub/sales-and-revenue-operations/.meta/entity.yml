@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/organizations/sales-and-revenue-operations
+  type: user-scenario
+  name: Sales and Revenue Operations
