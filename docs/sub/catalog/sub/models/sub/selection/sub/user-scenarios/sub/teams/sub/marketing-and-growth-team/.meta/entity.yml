@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/teams/marketing-and-growth-team
+  type: user-scenario
+  name: Marketing and Growth Team
