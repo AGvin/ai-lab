@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/teams/data-analysis-team
+  type: user-scenario
+  name: Data Analysis Team
