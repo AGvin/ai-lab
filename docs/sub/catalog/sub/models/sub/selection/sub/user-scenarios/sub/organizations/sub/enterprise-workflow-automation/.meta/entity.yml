@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/organizations/enterprise-workflow-automation
+  type: user-scenario
+  name: Enterprise Workflow Automation
