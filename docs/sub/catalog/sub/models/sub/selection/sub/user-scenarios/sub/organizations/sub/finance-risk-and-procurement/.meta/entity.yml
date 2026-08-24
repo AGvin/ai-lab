@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/organizations/finance-risk-and-procurement
+  type: user-scenario
+  name: Finance, Risk, and Procurement
