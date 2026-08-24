@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/teams/research-and-insights-team
+  type: user-scenario
+  name: Research and Insights Team
