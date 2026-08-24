@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/organizations/customer-service-and-contact-center
+  type: user-scenario
+  name: Customer Service and Contact Center
