@@ -36,14 +36,14 @@
 - Use metrics suited to the business distribution and decision; avoid one metric that hides intermittent/low-volume/high-value errors.
 - Keep forecast bias and asymmetric stockout/overstock cost visible.
 - Treat generative AI explanations as interpretive aids; validate claimed drivers against actual data/features/events.
-- Current Dynamics 365 Copilot can analyze shifts, trends, anomalies, and forecast accuracy; Microsoft documents limitations including truncated result lists and mandates human review, so do not treat the summary as exhaustive. citeturn556128search8turn556128search9
+- Current Dynamics 365 Copilot can analyze shifts, trends, anomalies, and forecast accuracy; Microsoft documents limitations including truncated result lists and mandates human review, so do not treat the summary as exhaustive.
 
 ## Supply and Inventory Planning
 
 - Keep inventory targets, safety stock, lead time, service targets, MOQ/lot sizes, sourcing rules, capacities, material constraints, allocation policy, shelf life, and transportation constraints explicit.
 - Use deterministic optimization/planning engines to calculate feasible supply/inventory plans where the process requires them.
 - AI can explain constraint violations, identify drivers, compare runs, and propose scenarios; it must not invent available capacity, supplier lead time, inventory, or replenishment policy.
-- Current SAP IBP Joule can explain planning-run KPIs, unfulfilled demand, missed inventory targets, and compare runs; preserve the run/source as evidence. citeturn556128search2
+- Current SAP IBP Joule can explain planning-run KPIs, unfulfilled demand, missed inventory targets, and compare runs; preserve the run/source as evidence.
 - Do not accept a recommended mitigation until the planning engine or authoritative operational systems confirm feasibility.
 
 ## Exception Management
@@ -52,7 +52,7 @@
 - Use AI to cluster, prioritize, summarize, explain, and propose mitigations from the validated exception set.
 - Avoid using model-generated urgency as the sole priority signal; include customer/service/financial/operational impact and confidence.
 - Preserve exception ID/source/run and the recommendation/approval/action taken.
-- Current SAP Planning Assistant supports exception monitoring, context creation, what-if scenarios, and plan-change recommendations; treat recommendation as planner decision support, not automatic authority. citeturn556128search7
+- Current SAP Planning Assistant supports exception monitoring, context creation, what-if scenarios, and plan-change recommendations; treat recommendation as planner decision support, not automatic authority.
 
 ## Scenario and What-If Planning
 
@@ -66,7 +66,7 @@
 
 - Treat supplier/PO changes as transactional operational events with downstream inventory, production, customer commitment, and cash implications.
 - Use AI impact analysis to surface affected demand/orders/locations/capacity where supported, while preserving deterministic source-system facts.
-- Current Dynamics 365 2026 planning features include Procurement Agent impact analysis for downstream effects of PO changes; treat preview/availability state as mutable and verify exact behavior before production use. citeturn556128search0turn556128search1
+- Current Dynamics 365 2026 planning features include Procurement Agent impact analysis for downstream effects of PO changes; treat preview/availability state as mutable and verify exact behavior before production use.
 - Do not autonomously modify PO quantities/dates/suppliers based solely on generated recommendations without the required procurement/planning approvals.
 
 ## Demand Signals and External Data
@@ -174,7 +174,7 @@
 ## Evidence and Freshness
 
 - Re-evaluated on **2026-08-24** using current first-party SAP Integrated Business Planning/Joule/Planning Assistant documentation, current Microsoft Dynamics 365 Demand Planning/Copilot and 2026 release-wave documentation, and current Oracle Fusion Cloud Supply Chain Planning/agentic SCM material.
-- Current evidence establishes generative demand analysis, optimizer-run explanations, planning exception/scenario assistance, inventory/demand fulfillment recommendations, and emerging supply-chain agents. It also explicitly preserves planner review and deterministic planning-system context. citeturn556128search2turn556128search7turn556128search9turn556128search13turn556128search18
+- Current evidence establishes generative demand analysis, optimizer-run explanations, planning exception/scenario assistance, inventory/demand fulfillment recommendations, and emerging supply-chain agents. It also explicitly preserves planner review and deterministic planning-system context.
 - Planning assistant features, preview/GA state, forecast inputs, models, entitlements, quotas, optimizer behavior, integrations, and product pricing are mutable; recheck them before rendering current guidance.
 - Forecast/optimizer/planning systems, planner decision rights, and organization-specific backtests/scenarios remain the acceptance authority.
 
