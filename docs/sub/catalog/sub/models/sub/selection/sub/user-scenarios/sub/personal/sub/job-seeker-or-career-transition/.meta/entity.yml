@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/personal/job-seeker-or-career-transition
+  type: user-scenario
+  name: Job Seeker or Career Transition
