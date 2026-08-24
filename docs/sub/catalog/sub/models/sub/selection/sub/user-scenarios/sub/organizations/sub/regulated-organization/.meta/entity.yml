@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/selection/user-scenarios/organizations/regulated-organization
+  type: user-scenario
+  name: Regulated Organization
