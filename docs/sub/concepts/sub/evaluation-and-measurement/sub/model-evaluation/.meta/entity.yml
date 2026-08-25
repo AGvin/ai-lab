@@ -1,0 +1,18 @@
+entity:
+  id: concepts/evaluation-and-measurement/model-evaluation
+  name: Model Evaluation
+  references:
+    - type: article
+      source:
+        url: https://doi.org/10.1111/nyas.15007
+      purposes:
+        - research
+      authority: independent
+      note: HELM provides a standardized multi-scenario, multi-metric framework for evaluating language models under explicit conditions rather than collapsing capability into one score.
+    - type: documentation
+      source:
+        url: https://doi.org/10.6028/NIST.AI.100-1
+      purposes:
+        - research
+      authority: official
+      note: NIST AI RMF establishes evaluation and measurement boundaries around validity, reliability, documented conditions, limitations, and generalizability of AI system behavior.
