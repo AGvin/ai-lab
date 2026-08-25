@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/interaction/prompting
+  name: Prompting
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2402.07927
+      purposes:
+        - research
+      authority: independent
+      note: Systematic prompt-engineering survey covering instructions, demonstrations, reasoning-oriented prompts, and other prompt-based methods without changing the core model for ordinary inference-time prompting.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2005.14165
+      purposes:
+        - research
+      authority: independent
+      note: GPT-3 work established influential zero-shot and few-shot in-context task specification through textual prompts without gradient updates during task inference.
