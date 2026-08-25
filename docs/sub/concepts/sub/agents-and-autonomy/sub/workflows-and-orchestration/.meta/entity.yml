@@ -1,0 +1,11 @@
+entity:
+  id: concepts/agents-and-autonomy/workflows-and-orchestration
+  name: Workflows and Orchestration
+  references:
+    - type: article
+      source:
+        url: https://www.anthropic.com/engineering/building-effective-agents
+      purposes:
+        - research
+      authority: official
+      note: Anthropic documents composable workflow patterns and distinguishes predefined orchestration from model-directed agent control while acknowledging broader terminology variation.
