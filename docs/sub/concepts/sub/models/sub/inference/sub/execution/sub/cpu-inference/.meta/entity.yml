@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/inference/execution/cpu-inference
+  name: CPU Inference
+  references:
+    - type: documentation
+      source:
+        url: https://onnxruntime.ai/docs/execution-providers/
+      purposes:
+        - research
+      authority: official
+      note: ONNX Runtime execution-provider architecture treats CPU execution as one runtime provider among CPU, GPU, and specialized accelerators rather than an intrinsic model class.
+    - type: documentation
+      source:
+        url: https://www.intel.com/content/www/us/en/developer/tools/oneapi/onednn.html
+      purposes:
+        - research
+      authority: official
+      note: oneDNN documents optimized CPU and accelerator primitives for deep-learning execution, illustrating the importance of architecture-specific kernels and data types to CPU inference performance.
