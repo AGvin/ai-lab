@@ -18,7 +18,7 @@ entity:
       note: Current UK AI Security Institute evidence on the evolving frontier of model and system capabilities across multiple evaluation domains.
     - type: article
       source:
-        url: https://www.ncsc.gov.uk/blog-post/why-cyber-defenders-need-to-be-ready-for-frontier-ai
+        url: https://www.ncsc.gov.uk/blogs/why-cyber-defenders-need-to-be-ready-for-frontier-ai
       purposes:
         - research
       authority: official
