@@ -1,0 +1,20 @@
+entity:
+  id: concepts/models/classification/language-models
+  name: Language Models
+  aliases:
+    - LM
+  references:
+    - type: article
+      source:
+        url: https://nlp.stanford.edu/IR-book/html/htmledition/finite-automata-and-language-models-1.html
+      purposes:
+        - research
+      authority: independent
+      note: Stanford IR reference presents the classical probabilistic language-model concept as a probability measure over linguistic strings.
+    - type: other
+      source:
+        url: https://web.stanford.edu/~jurafsky/slp3/
+      purposes:
+        - research
+      authority: independent
+      note: Current 2026 Speech and Language Processing manuscript covers n-gram, large autoregressive, and masked language models as distinct language-model forms.
