@@ -1,0 +1,18 @@
+entity:
+  id: concepts/information-retrieval/vector-search
+  name: Vector Search
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2401.08281
+      purposes:
+        - research
+      authority: independent
+      note: Current Faiss library paper describes vector similarity search, exact and approximate indexing methods, compression, and the practical trade-off space of large vector collections.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1702.08734
+      purposes:
+        - research
+      authority: independent
+      note: Established large-scale similarity-search work covers exact, approximate, and compressed-domain nearest-neighbor search over high-dimensional vectors.
