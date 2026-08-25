@@ -1,0 +1,20 @@
+entity:
+  id: concepts/agents-and-autonomy/multiagent-systems
+  name: Multi-Agent Systems
+  aliases:
+    - MAS
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2501.06322
+      purposes:
+        - research
+      authority: independent
+      note: Current survey of LLM multi-agent collaboration characterizes systems by actors, collaboration type, interaction structure, strategy, and coordination mechanisms rather than one orchestration pattern.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2412.17481
+      purposes:
+        - research
+      authority: independent
+      note: Survey of LLM-based multi-agent systems covers multi-agent definitions, application classes, interaction, and system-level challenges across contemporary agent designs.
