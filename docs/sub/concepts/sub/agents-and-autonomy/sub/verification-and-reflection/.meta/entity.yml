@@ -1,0 +1,25 @@
+entity:
+  id: concepts/agents-and-autonomy/verification-and-reflection
+  name: Verification and Reflection
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2303.17651
+      purposes:
+        - research
+      authority: independent
+      note: Self-Refine demonstrates iterative model feedback and revision as a reflection/refinement mechanism without making the feedback independent verification.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2303.11366
+      purposes:
+        - research
+      authority: independent
+      note: Reflexion uses linguistic reflection over task feedback and episodic memory to influence later agent decisions.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2310.01798
+      purposes:
+        - research
+      authority: independent
+      note: ICLR work shows that intrinsic self-correction without external feedback can fail or degrade reasoning performance, supporting a strict boundary between reflection and independent verification.
