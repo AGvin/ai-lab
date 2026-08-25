@@ -3,7 +3,7 @@
 ## Requirements
 
 - Use the reader-facing title `Reranking`.
-- Define reranking as a later retrieval stage that rescoring or reorders an already generated candidate set using additional relevance evidence or a model that is practical only over a smaller set than the full corpus.
+- Define reranking as a later retrieval stage that rescores or reorders an already generated candidate set using additional relevance evidence or a model that is practical only over a smaller set than the full corpus.
 - Distinguish first-stage retrieval from reranking. The initial retriever determines candidate recall; a reranker cannot promote an item that was never included unless the reranking stage also performs a separate retrieval/search operation.
 - Present cross-encoder neural reranking as an important modern pattern in which query and candidate are processed jointly, while avoiding the claim that every reranker must be a cross-encoder, Transformer, LLM, or neural model.
 - Explain that reranking can use lexical, semantic, learned, feature-based, rule-based, or combined evidence and can reorder, rescore, or prune candidates according to the stage contract.
