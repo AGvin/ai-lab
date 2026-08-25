@@ -1,0 +1,21 @@
+entity:
+  id: concepts/models/inference/memory-and-context/context-caching
+  name: Context Caching
+  aliases:
+    - Prefix Caching
+    - Prompt Caching
+  references:
+    - type: documentation
+      source:
+        url: https://docs.vllm.ai/en/stable/design/prefix_caching/
+      purposes:
+        - research
+      authority: upstream
+      note: vLLM Automatic Prefix Caching reuses cached KV blocks for compatible shared token prefixes across requests and documents cache identity, eviction, and isolation concerns.
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/transformers/kv_cache
+      purposes:
+        - research
+      authority: official
+      note: Transformers cache strategies show that previously computed model state can be retained and reused for iterative or advanced context-caching workflows while remaining distinct from source context itself.
