@@ -1,0 +1,25 @@
+entity:
+  id: concepts/models/architectures/encoder-decoder
+  name: Encoder-Decoder Architectures
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1409.3215
+      purposes:
+        - research
+      authority: independent
+      note: Foundational sequence-to-sequence work using one neural network to encode an input sequence representation and another to decode an output sequence.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1409.0473
+      purposes:
+        - research
+      authority: independent
+      note: Early attention-based encoder-decoder work showing that encoded source information need not be compressed into one fixed-length vector.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1706.03762
+      purposes:
+        - research
+      authority: independent
+      note: Transformer provides a modern attention-based encoder-decoder realization and helps distinguish the general pattern from one concrete architecture family.
