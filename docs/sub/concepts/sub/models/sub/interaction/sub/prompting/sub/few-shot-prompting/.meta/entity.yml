@@ -1,0 +1,25 @@
+entity:
+  id: concepts/models/interaction/prompting/few-shot-prompting
+  name: Few-Shot Prompting
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2005.14165
+      purposes:
+        - research
+      authority: independent
+      note: GPT-3 work popularized few-shot in-context task specification using demonstrations supplied at inference without gradient updates.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2202.12837
+      purposes:
+        - research
+      authority: independent
+      note: Study of in-context demonstrations shows that format, input distribution, and label-space information can materially affect behavior beyond a simplistic imitation account.
+    - type: article
+      source:
+        url: https://aclanthology.org/2022.acl-long.556/
+      purposes:
+        - research
+      authority: independent
+      note: ACL study demonstrates substantial sensitivity of few-shot prompting to demonstration ordering, supporting an evaluation rather than universal-best-practice boundary.
