@@ -1,0 +1,20 @@
+entity:
+  id: concepts/models/training-and-adaptation/fine-tuning/supervised-fine-tuning
+  name: Supervised Fine-Tuning
+  aliases:
+    - SFT
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2203.02155
+      purposes:
+        - research
+      authority: independent
+      note: InstructGPT uses a supervised fine-tuning stage on human demonstrations before reward modeling/RLHF and provides a canonical modern LLM SFT example.
+    - type: documentation
+      source:
+        url: https://csrc.nist.gov/glossary/term/fine_tuning
+      purposes:
+        - research
+      authority: official
+      note: NIST fine-tuning terminology provides the broader supervised-adaptation lifecycle boundary beyond instruction-following language models.
