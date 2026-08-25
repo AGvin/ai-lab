@@ -1,0 +1,13 @@
+entity:
+  id: concepts/machine-learning
+  name: Machine Learning
+  aliases:
+    - ML
+  references:
+    - type: documentation
+      source:
+        url: https://csrc.nist.gov/glossary/term/machine_learning
+      purposes:
+        - research
+      authority: official
+      note: Current NIST terminology describes machine learning as systems that adapt and learn from data to improve task accuracy.
