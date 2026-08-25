@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/inference/execution/gpu-inference
+  name: GPU Inference
+  references:
+    - type: documentation
+      source:
+        url: https://onnxruntime.ai/docs/execution-providers/
+      purposes:
+        - research
+      authority: official
+      note: ONNX Runtime documents GPU execution providers alongside CPU and other accelerators and supports provider fallback/heterogeneous graph execution.
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/deeplearning/tensorrt/latest/
+      purposes:
+        - research
+      authority: official
+      note: Current TensorRT documentation demonstrates GPU inference optimization across kernels, numerical formats, memory, graph execution, and supported accelerator features rather than treating GPU placement alone as a performance guarantee.
