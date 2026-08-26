@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/interaction/context/multimodal-context
+  name: Multimodal Context
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2204.14198
+      purposes:
+        - research
+      authority: independent
+      note: Flamingo demonstrates model interaction over arbitrarily interleaved visual and textual inputs, providing a canonical example of multiple modalities participating in one in-context sequence.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2403.05530
+      purposes:
+        - research
+      authority: independent
+      note: Gemini 1.5 technical report demonstrates long-context processing across documents, video, audio, and text and illustrates that modality-bearing inputs share finite context and runtime resources in concrete systems.
