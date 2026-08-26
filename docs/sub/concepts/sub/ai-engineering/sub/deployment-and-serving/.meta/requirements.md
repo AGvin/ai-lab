@@ -12,7 +12,7 @@
 - Validate and bound resource-intensive request dimensions before expensive execution when possible, including context/media size, output limits, batch/concurrency, tool loops, and other workload parameters that can cause resource exhaustion or denial of service.
 - Explain resource placement/scheduling as workload-dependent. CPU/GPU/accelerator allocation, replica placement, memory reservation, model residency, multi-node/disaggregated execution, and affinity/topology can materially affect capacity/performance but are concrete platform/runtime choices rather than universal serving structure.
 - Distinguish serving replicas from model identity. Multiple replicas can serve one immutable model/configuration, while one service can host or route among several versions/models; replica count does not define a model version.
-- Treat batching, queueing, concurrency control, scheduling, routing, and caching as serving mechanisms that interact with `performance-and-scalability/` and `cost-and-capacity/`; do not duplicate their generic semantics or infer unselected children such as `continuous-batching/`.
+- Treat batching, queueing, concurrency control, scheduling, routing, and caching as serving mechanisms that interact with `performance-and-scalability/` and `cost-and-capacity/`. Keep generic mechanism boundaries at this parent and delegate dynamically changing iterative-request scheduling semantics to the selected `continuous-batching/` child.
 - Define admission, backpressure, quota/rate-limit, timeout, and load-shedding behavior for overload as part of the service contract where required. Unlimited request acceptance/queue growth is not a production serving strategy.
 - Explain scaling as both capacity and lifecycle behavior. Scaling out/in/up/down can be fixed, scheduled, reactive, predictive, or event/metric-driven; model startup/loading/warm-up and accelerator availability can make scale-out materially slower than ordinary stateless services.
 - Distinguish health/liveness from readiness. A process can be alive while its model is unloaded, warming, unhealthy, incompatible, or unable to serve required dependencies; traffic should only reach instances that satisfy the deployment's readiness contract.
@@ -33,6 +33,6 @@
 - Authentication/authorization and input/resource limits are deterministic service controls rather than delegated to model behavior.
 - Loaded/alive processes are not automatically treated as ready/healthy serving replicas.
 - Version identity covers materially coupled runtime/configuration artifacts, not only a model name.
-- Scaling/queueing/batching/rate-limit mechanisms are linked to their canonical engineering owners without creating unselected child concepts.
+- Generic scaling/queueing/batching/rate-limit mechanisms stay at their applicable engineering owners; only explicitly selected descendants such as `continuous-batching/` are materialized rather than inferred from terminology.
 - Rollout success is not inferred from transport/process health alone and includes model/system regression evidence.
 - Concrete serving platforms, manifests, endpoints, thresholds, hardware, provider limits, and runbooks remain outside the reusable concept owner.
