@@ -11,6 +11,13 @@ entity:
       note: The 2026 NIST/IEEE work treats AI guardrails broadly as policies, technical controls, and monitoring mechanisms across data, model, application, and infrastructure layers and establishes limitations of fixed finite guardrail sets against adaptive adversarial prompts.
     - type: documentation
       source:
+        url: https://doi.org/10.6028/NIST.AI.600-1
+      purposes:
+        - research
+      authority: official
+      note: The NIST Generative AI Profile separates organizational content-moderation roles, rule- or model-based input/output content filters, human moderation, feedback, and appeal/override processes, supporting a layered moderation-control boundary rather than treating content moderation as one model classifier.
+    - type: documentation
+      source:
         url: https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html
       purposes:
         - research
