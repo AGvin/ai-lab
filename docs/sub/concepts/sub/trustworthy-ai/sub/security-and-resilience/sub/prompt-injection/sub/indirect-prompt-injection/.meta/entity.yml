@@ -1,0 +1,18 @@
+entity:
+  id: concepts/trustworthy-ai/security-and-resilience/prompt-injection/indirect-prompt-injection
+  name: Indirect Prompt Injection
+  references:
+    - type: documentation
+      source:
+        url: https://doi.org/10.6028/NIST.AI.100-2e2025
+      purposes:
+        - research
+      authority: official
+      note: NIST AI 100-2 E2025 identifies indirect prompt injection as a Generative-AI attack enabled through attacker control of resources/content processed by the target system, distinct from direct prompting through primary query access.
+    - type: article
+      source:
+        url: https://doi.org/10.1145/3605764.3623985
+      purposes:
+        - research
+      authority: independent
+      note: Greshake et al. introduce and analyze indirect prompt injection against LLM-integrated applications, where adversarial instructions are planted in data/resources later retrieved or processed by a victim application, enabling remote influence without direct attacker interaction with the target model session.
