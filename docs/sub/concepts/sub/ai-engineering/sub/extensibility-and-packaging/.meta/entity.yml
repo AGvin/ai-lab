@@ -9,6 +9,13 @@ entity:
         - research
       authority: official
       note: The open Agent Skills project describes a portable format for packaging specialized knowledge and workflows that AI systems discover and load on demand, providing one cross-client extensibility model within the broader domain.
+    - type: specification
+      source:
+        url: https://agent-plugins.org/specification
+      purposes:
+        - research
+      authority: official
+      note: Agent Plugins 1.0.0 defines a published vendor-neutral portable plugin package floor for Agent Skills and MCP servers while leaving distribution, installation, permissions, user experience, and client-specific extension behavior outside the shared core.
     - type: documentation
       source:
         url: https://docs.github.com/en/copilot/concepts/agents/about-plugins
