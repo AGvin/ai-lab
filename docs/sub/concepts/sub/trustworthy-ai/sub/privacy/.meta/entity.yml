@@ -1,0 +1,20 @@
+entity:
+  id: concepts/trustworthy-ai/privacy
+  name: AI Privacy
+  aliases:
+    - Data Privacy
+  references:
+    - type: documentation
+      source:
+        url: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/
+      purposes:
+        - research
+      authority: official
+      note: NIST AI RMF treats privacy-enhanced AI as a contextual trustworthiness characteristic and notes privacy risks from training data, system inference, and re-identification as well as trade-offs with other characteristics.
+    - type: documentation
+      source:
+        url: https://www.nist.gov/privacy-framework
+      purposes:
+        - research
+      authority: official
+      note: The NIST Privacy Framework treats privacy as enterprise risk management around data processing and resulting effects on individuals rather than reducing privacy to confidentiality or cybersecurity alone.
