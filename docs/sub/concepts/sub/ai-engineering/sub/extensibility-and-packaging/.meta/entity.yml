@@ -1,0 +1,18 @@
+entity:
+  id: concepts/ai-engineering/extensibility-and-packaging
+  name: AI Extensibility and Packaging
+  references:
+    - type: documentation
+      source:
+        url: https://agentskills.io/home
+      purposes:
+        - research
+      authority: official
+      note: The open Agent Skills project describes a portable format for packaging specialized knowledge and workflows that AI systems discover and load on demand, providing one cross-client extensibility model within the broader domain.
+    - type: documentation
+      source:
+        url: https://docs.github.com/en/copilot/concepts/agents/about-plugins
+      purposes:
+        - research
+      authority: official
+      note: Current GitHub Copilot documentation defines plugins as installable packages that can bundle agents, skills, hooks, and integrations, illustrating a host-specific extension/package model distinct from the portable Agent Skills format and from runtime interoperability protocols.
