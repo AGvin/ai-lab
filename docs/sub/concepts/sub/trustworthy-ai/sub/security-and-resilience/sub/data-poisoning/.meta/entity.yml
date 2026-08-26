@@ -1,0 +1,18 @@
+entity:
+  id: concepts/trustworthy-ai/security-and-resilience/data-poisoning
+  name: Data Poisoning
+  references:
+    - type: documentation
+      source:
+        url: https://doi.org/10.6028/NIST.AI.100-2e2025
+      purposes:
+        - research
+      authority: official
+      note: NIST AI 100-2 E2025 classifies poisoning as an adversarial-machine-learning attack family affecting data and learning/update stages, distinguishing attacker control, attack objectives, backdoors, availability/degradation, and related lifecycle threats.
+    - type: documentation
+      source:
+        url: https://genai.owasp.org/llmrisk/llm042025-data-and-model-poisoning/
+      purposes:
+        - research
+      authority: independent
+      note: OWASP LLM04:2025 describes manipulation of pretraining, fine-tuning, embedding, and other model-development data as a poisoning risk that can introduce vulnerabilities, backdoors, bias, or degraded behavior, while recommending layered provenance, validation, access, and monitoring controls.
