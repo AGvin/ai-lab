@@ -1,0 +1,21 @@
+entity:
+  id: concepts/modalities/vision/image-to-image
+  name: Image-to-Image Generation
+  aliases:
+    - Image-to-Image Translation
+    - Image-to-Image
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1611.07004
+      purposes:
+        - research
+      authority: independent
+      note: pix2pix frames image-to-image translation as learning a conditional mapping from an input image representation to a corresponding output image across diverse tasks such as label-to-photo, edge-to-object, and colorization.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1703.10593
+      purposes:
+        - research
+      authority: independent
+      note: CycleGAN demonstrates unpaired image-to-image translation and shows that the concept is broader than paired supervision or diffusion-style partial noising of a source image.
