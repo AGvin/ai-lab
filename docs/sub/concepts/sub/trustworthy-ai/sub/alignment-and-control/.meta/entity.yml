@@ -1,0 +1,28 @@
+entity:
+  id: concepts/trustworthy-ai/alignment-and-control
+  name: AI Alignment and Control
+  aliases:
+    - Model Alignment
+    - Alignment
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2203.02155
+      purposes:
+        - research
+      authority: independent
+      note: InstructGPT demonstrates supervised instruction tuning plus human-preference reinforcement learning as one influential method for improving correspondence between language-model behavior and stated user intent while documenting remaining errors/limitations.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2212.08073
+      purposes:
+        - research
+      authority: independent
+      note: Constitutional AI demonstrates rule/principle-guided self-critique and AI-feedback preference training as a different alignment approach, reinforcing that alignment is not synonymous with one human-feedback pipeline.
+    - type: documentation
+      source:
+        url: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/
+      purposes:
+        - research
+      authority: official
+      note: NIST AI RMF frames trustworthy AI as contextual and socio-technical, requiring lifecycle controls/evidence and trade-offs rather than treating desired model behavior as a complete security or safety boundary.
