@@ -1,0 +1,18 @@
+entity:
+  id: concepts/trustworthy-ai/information-integrity/citations
+  name: Citations
+  references:
+    - type: article
+      source:
+        url: https://doi.org/10.18653/v1/2023.emnlp-main.398
+      purposes:
+        - research
+      authority: independent
+      note: Gao et al. formalize citation-enabled generation and evaluate citation correctness and completeness separately, demonstrating that citation presence alone is not sufficient evidence quality.
+    - type: documentation
+      source:
+        url: https://doi.org/10.6028/NIST.AI.600-1
+      purposes:
+        - research
+      authority: official
+      note: The NIST Generative AI Profile recommends reviewing and verifying sources and citations in generated outputs, supporting citation verification as an information-integrity control rather than decorative attribution.
