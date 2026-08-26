@@ -1,0 +1,25 @@
+entity:
+  id: concepts/trustworthy-ai/alignment-and-control/guardrails
+  name: Guardrails
+  references:
+    - type: article
+      source:
+        url: https://www.nist.gov/publications/robust-ai-security-and-alignment-sisyphean-endeavor
+      purposes:
+        - research
+      authority: official
+      note: The 2026 NIST/IEEE work treats AI guardrails broadly as policies, technical controls, and monitoring mechanisms across data, model, application, and infrastructure layers and establishes limitations of fixed finite guardrail sets against adaptive adversarial prompts.
+    - type: documentation
+      source:
+        url: https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html
+      purposes:
+        - research
+      authority: independent
+      note: Current OWASP LLM application guidance distinguishes model-based input/output guardrails from deterministic controls and places guardrail models alongside rather than in place of authorization and other security enforcement.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2408.02205
+      purposes:
+        - research
+      authority: independent
+      note: The systematic-literature-review-based Swiss Cheese Model develops an AI-agent runtime guardrail taxonomy across multiple pipeline stages and artifacts, supporting treatment of guardrails as a reusable multi-layer control concept rather than a single safety filter.
