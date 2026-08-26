@@ -1,0 +1,25 @@
+entity:
+  id: concepts/machine-learning/representation-learning/embeddings
+  name: Embeddings
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1310.4546
+      purposes:
+        - research
+      authority: independent
+      note: Word2Vec work demonstrates learned distributed vector representations whose geometry captures task/training-dependent syntactic and semantic relationships rather than merely storing symbolic identifiers.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1908.10084
+      purposes:
+        - research
+      authority: independent
+      note: Sentence-BERT demonstrates sentence-level embeddings trained so cosine comparison is useful for semantic textual similarity and search, illustrating that useful geometry depends on the representation objective and evaluation task.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2103.00020
+      purposes:
+        - research
+      authority: independent
+      note: CLIP demonstrates learned image and text representations in a shared comparison space, supporting modality-neutral embeddings and cross-modal alignment without making visual embeddings a separate canonical concept.
