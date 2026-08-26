@@ -1,0 +1,18 @@
+entity:
+  id: concepts/ai-engineering/system-design
+  name: AI System Design
+  references:
+    - type: documentation
+      source:
+        url: https://doi.org/10.6028/NIST.AI.100-1
+      purposes:
+        - research
+      authority: official
+      note: NIST AI RMF treats AI systems across lifecycle stages, components, dependencies, deployment contexts, risks, and stakeholder requirements, supporting a system-level design owner broader than any single model or runtime.
+    - type: article
+      source:
+        url: https://papers.nips.cc/paper_files/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf
+      purposes:
+        - research
+      authority: independent
+      note: Sculley et al. identify hidden technical debt in ML systems through data dependencies, feedback loops, undeclared consumers, configuration, boundary erosion, and external changes, illustrating why AI system design must own cross-component interfaces and coupling rather than model code alone.
