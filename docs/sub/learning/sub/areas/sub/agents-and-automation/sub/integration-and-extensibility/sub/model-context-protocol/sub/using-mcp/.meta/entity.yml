@@ -1,0 +1,28 @@
+entity:
+  id: learning/areas/agents-and-automation/integration-and-extensibility/model-context-protocol/using-mcp
+  name: Using MCP
+  references:
+    - type: documentation
+      source:
+        url: https://modelcontextprotocol.io/docs/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://modelcontextprotocol.io/docs/develop/connect-local-servers
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://modelcontextprotocol.io/docs/develop/connect-remote-servers
+      purposes:
+        - research
+      authority: official
+    - type: specification
+      source:
+        url: https://modelcontextprotocol.io/specification/latest/basic/security_best_practices
+      purposes:
+        - research
+      authority: official
