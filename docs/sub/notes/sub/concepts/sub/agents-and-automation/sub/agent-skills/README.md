@@ -11,8 +11,6 @@ A skill is procedural knowledge. It describes **how to work**, while tools provi
 
 ## Learning path
 
-- [Using Agent Skills](./sub/using/) — install, invoke, update, remove, inspect, and troubleshoot skills.
-- [Creating Agent Skills](./sub/creating/) — design and build a skill from a minimal `SKILL.md` through scripts, references, testing, and publication.
 - [Platform support](./sub/platform-support/) — compare supported clients and their installation and invocation models.
 - [Sources and collections](./sub/sources/) — standards, catalogs, installers, and recommended third-party collections.
 
