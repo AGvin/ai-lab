@@ -2,28 +2,14 @@
 
 Legacy residual for Agent Skills source material that has not yet been fully assigned to the final documentation structure. Generic source-trust/adoption guidance, collection facts, workflow examples, and collection-selection guidance have moved to existing canonical learning/catalog owners.
 
+> **Migration note:** This legacy page is intentionally fragmentary during the active consolidation. The former `Agent Skills standard` section was removed after its useful specification and portability content was verified in the existing [Agent Skills](../../) owner. The remaining `skills.sh` block stays here because no approved existing canonical destination has been verified yet.
+
 Last verified: 2026-07-19.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
-
-## Agent Skills standard
-
-The portable specification is published at `agentskills.io`.
-
-Use it as the canonical source for:
-
-- the required directory and `SKILL.md` entrypoint;
-- YAML frontmatter fields;
-- naming and description constraints;
-- progressive disclosure;
-- optional `scripts/`, `references/`, and `assets/` directories;
-- client implementation guidance;
-- validation expectations.
-
-A skill that follows the specification can be portable, but a client may still differ in installation paths, invocation syntax, permissions, optional metadata, and supported tools. See [Platform support](../platform-support/).
 
 ## skills.sh
 
@@ -57,6 +43,5 @@ For consequential workflows, pin a reviewed commit instead of blindly following 
 
 ## References
 
-- Agent Skills: https://agentskills.io/
 - skills.sh: https://skills.sh/
 - skills.sh CLI: https://www.skills.sh/docs/cli
