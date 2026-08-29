@@ -1,8 +1,8 @@
 # Agent Skills Platform Support
 
-Agent Skills use a portable `SKILL.md` format, but each host chooses its own discovery paths, installation UI, invocation syntax, permission model, and plugin system.
+Legacy residual for current host-specific Agent Skills support facts that have not yet been reconciled into their catalog/platform/evidence owners.
 
-This page centralizes platform-specific instructions so product pages can link here instead of duplicating setup steps.
+> **Migration note:** This page is intentionally fragmentary during the active consolidation. Transferable multi-platform layout, maintenance, synchronization, and verification guidance moved to the canonical `learning/.../agent-skills/platform-support-and-portability/` owner. The remaining material is kept here because exact host paths, commands, availability, invocation, permissions, plugin behavior, and support matrices are mutable product facts and do not belong in timeless learning content.
 
 Last verified: 2026-07-19.
 
@@ -22,29 +22,6 @@ Last verified: 2026-07-19.
 | OpenCode | Yes | `.opencode/skills/`, `.claude/skills/`, or `.agents/skills/` | Corresponding user configuration roots | Ask for the skill or let the agent call the native `skill` tool | Yes | OpenCode plugins exist, but are not the same format as OpenAI or Claude Code plugins |
 
 Support is not identical across surfaces of the same product. Verify the current product documentation before standardizing an organization-wide installation.
-
-## Portable project layout
-
-For repositories used by several compatible agents, prefer the neutral Agent Skills root when every selected client supports it:
-
-```text
-project/
-└── .agents/
-    └── skills/
-        └── release-notes/
-            ├── SKILL.md
-            ├── references/
-            └── scripts/
-```
-
-When one client does not scan the neutral root, use one of these approaches:
-
-1. keep the canonical skill under `.agents/skills/` and create reviewed symlinks from client-specific roots;
-2. use an installer that copies the same source into each selected client;
-3. package the skill separately in each client's plugin format;
-4. maintain generated client adapters while keeping `SKILL.md` as the source of truth.
-
-Do not maintain several manually edited copies without an explicit synchronization and review process.
 
 ## ChatGPT
 
@@ -369,33 +346,6 @@ Skills can also be disabled per agent by disabling the `skill` tool.
 ### Plugins
 
 OpenCode supports plugins, but its plugin API and package model are OpenCode-specific. Prefer the neutral Agent Skills directory for portable instructions. Use an OpenCode plugin only when the workflow requires OpenCode lifecycle hooks, JavaScript/TypeScript extension code, or another host-specific capability.
-
-## Multi-platform maintenance strategy
-
-For a skill used across several clients:
-
-1. choose one canonical source directory;
-2. keep the portable workflow in `SKILL.md` and standard support folders;
-3. isolate host-specific metadata and manifests;
-4. generate or copy installations through a documented process;
-5. pin or record the source revision;
-6. run the same discovery and execution fixtures on every supported host;
-7. document known surface-specific limitations;
-8. review update diffs before deployment.
-
-## Verification checklist
-
-For every platform installation:
-
-- [ ] The skill appears in the platform's discovery list or UI.
-- [ ] A positive prompt activates it.
-- [ ] A nearby negative prompt does not activate it.
-- [ ] Explicit invocation works.
-- [ ] Supporting files resolve correctly.
-- [ ] Required scripts and tools are available.
-- [ ] Denied permissions fail visibly.
-- [ ] Consequential actions stop for approval.
-- [ ] Removal or disabling removes it from discovery.
 
 ## References
 
