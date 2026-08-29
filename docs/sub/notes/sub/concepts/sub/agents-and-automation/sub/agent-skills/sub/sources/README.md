@@ -103,23 +103,6 @@ It supports multiple agent harnesses through a mixture of plugins, marketplaces,
 6. `requesting-code-review`
 7. `finishing-a-development-branch`
 
-### Residual unselected skills list
-
-#### Collaboration and delivery
-
-- `executing-plans` — execute approved plans in batches with checkpoints.
-- `dispatching-parallel-agents` — coordinate independent tasks concurrently.
-- `requesting-code-review` — prepare and request a structured review.
-- `receiving-code-review` — evaluate and respond to review feedback.
-- `using-git-worktrees` — create isolated workspaces for feature work.
-- `finishing-a-development-branch` — verify completion and select the branch disposition.
-- `subagent-driven-development` — execute tasks with fresh subagents and staged review.
-
-#### Meta
-
-- `writing-skills` — create and test skills using the collection's methodology.
-- `using-superpowers` — bootstrap and explain the Superpowers workflow.
-
 ### Recommended starting set
 
 Start with these skills rather than enabling the entire methodology blindly:
@@ -156,33 +139,6 @@ The collection also provides a managed Claude Code plugin:
 /plugin marketplace add mattpocock/skills
 /plugin install mattpocock-skills@mattpocock
 ```
-
-### Residual unselected skills list
-
-#### Engineering: user-invoked
-
-- `ask-matt` — route a situation to an appropriate workflow.
-- `triage` — move issues through a structured triage process.
-- `improve-codebase-architecture` — identify and discuss architectural deepening opportunities.
-- `to-spec` — turn the current discussion into a durable specification.
-- `to-tickets` — decompose a plan or specification into dependency-aware tasks.
-- `implement` — implement an accepted specification with TDD seams and review.
-- `wayfinder` — plan a body of work too large for one agent session as investigation tickets.
-
-#### Engineering: model-invoked
-
-- `prototype` — build a disposable prototype to answer a design question.
-- `diagnosing-bugs` — reproduce, minimize, hypothesize, instrument, fix, and regression-test.
-- `research` — investigate primary sources and save cited findings.
-- `tdd` — implement one vertical slice at a time through red-green-refactor.
-- `codebase-design` — design deep modules behind small, testable interfaces.
-- `code-review` — review a diff independently for standards and specification fidelity.
-- `resolving-merge-conflicts` — resolve conflicts by tracing the intent of both sides.
-
-#### Productivity: user-invoked
-
-- `handoff` — compact the current session into a continuation document.
-- `teach` — manage a multi-session learning workflow.
 
 ### Recommended starting set
 
