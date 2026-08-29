@@ -4,6 +4,8 @@
 
 - Use the reader-facing title `Using Agent Skills` and preserve the source guide's complete adoption lifecycle: evaluate a skill, install it through an appropriate mechanism, verify discovery/activation, invoke it explicitly or automatically where supported, compose it carefully, update it, disable/remove it, and troubleshoot portability/runtime failures.
 - Before installation, require readers to confirm target-client support, inspect the skill instructions and bundled scripts/resources, review license/maintenance/compatibility/update mechanism, identify required tools/credentials/network destinations/writable paths, and choose project-local versus user-global scope deliberately.
+- Teach source-type distinctions before adoption: formal specifications define format/behavior but do not certify a concrete skill; vendor catalogs provide maintained or curated distribution but not universal suitability; community collections package author workflows without independent-review guarantees; installers/leaderboards improve discovery but popularity is not correctness or safety; plugin marketplaces provide managed host-specific distribution but do not imply cross-host portability or complete runtime transparency.
+- Explain that source type, marketplace presence, popularity, or automated scanning are discovery/governance signals rather than trust endorsements. Readers must still review the selected revision, complete instructions, scripts, dependencies, license, network use, writable paths, credentials, and update model.
 - Explain project-local versus user-global installation as a scope/review decision, not a universal path rule. Project-local is appropriate for repository-owned reviewed workflow; user-global for safe personal workflows across projects, subject to host support.
 - Preserve three installation models: copy the complete skill directory, use an installer, or install a plugin/managed bundle that contains skills. Explain that copying only the entrypoint can break referenced resources and that installers/marketplaces do not make a source trusted.
 - Current examples such as `npx skills@latest add owner/repository`, skill-root paths, plugin commands, or UI mechanisms must be marked platform/install-tool-specific and freshness-sensitive rather than timeless requirements.
@@ -16,7 +18,7 @@
 - Preserve disable/removal responsibilities: remove/disable directory/plugin/UI/permission rule as appropriate, reload host if required, verify discovery metadata disappears, remove bundled hooks/MCP configuration, and revoke credentials created only for the skill.
 - Preserve troubleshooting coverage for: not discovered; not automatically activated; over-activation; script failure; different behavior across clients. Include checks for location/current spec requirements, discovery description quality, runtime/working directory/dependencies/env/network, permissions, invocation syntax, supported metadata/extensions, and host-specific differences.
 - When teaching current structural facts such as the uppercase entrypoint filename, YAML/frontmatter fields, directory-name constraints, or host-specific metadata, source them from the current Agent Skills specification/platform documentation and clearly separate normative specification from learning guidance.
-- Preserve the safe-adoption checklist: source/revision, instruction review, script/dependency review, minimized permissions, positive and negative activation tests, failure/rollback test, and selected update policy.
+- Preserve the safe-adoption checklist: identify source type; record source/revision/license/maintainer; review instructions/scripts/dependencies; confirm client/install-root support; choose update policy; test positive and negative activation; resolve overlapping workflow ownership; minimize tools/credentials/writable paths; and verify failure, removal, and rollback behavior.
 - Cross-link the Agent Skills learning root, creating tutorial, portability/platform-support continuation, abstract concept, formal specification, and concrete catalog sources where applicable.
 
 ## Validation
@@ -24,4 +26,5 @@
 - The guide can be followed by a first-time skill user without assuming one host-specific directory/UI.
 - It gives observable tests for discovery/activation rather than relying on subjective answer similarity.
 - Installation/update/removal and permission/trust boundaries remain explicit.
+- Source categories are explained without treating catalog, marketplace, installer, popularity, or scanning as a security endorsement.
 - Current specification and platform facts are freshness-bound/source-backed.
