@@ -19,7 +19,7 @@ Last verified: 2026-07-19.
 | Installer or leaderboard | Helps discover and copy skills into clients | That popularity means correctness or safety |
 | Plugin marketplace | Distributes a host-specific managed package | Portability to another host or transparency of every runtime behavior |
 
-Before adopting a skill, inspect the source revision, complete `SKILL.md`, scripts, dependencies, license, network use, writable paths, credentials, and update model. See [Using Agent Skills](../using/).
+Before adopting a skill, inspect the source revision, complete `SKILL.md`, scripts, dependencies, license, network use, writable paths, credentials, and update model.
 
 ## Agent Skills standard
 
@@ -341,5 +341,4 @@ For every source or collection:
 - skills.sh CLI: https://www.skills.sh/docs/cli
 - Superpowers: https://github.com/obra/superpowers
 - Matt Pocock skills: https://github.com/mattpocock/skills
-- Using Agent Skills: ../using/
 - Plugins: ../../../plugins/
