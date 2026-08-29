@@ -103,21 +103,10 @@ It supports multiple agent harnesses through a mixture of plugins, marketplaces,
 6. `requesting-code-review`
 7. `finishing-a-development-branch`
 
-### Complete skills list
-
-#### Testing
-
-- `test-driven-development` — enforce a red-green-refactor implementation loop.
-
-#### Debugging
-
-- `systematic-debugging` — investigate root causes through a structured multi-phase process.
-- `verification-before-completion` — require evidence that a fix or task is actually complete.
+### Residual unselected skills list
 
 #### Collaboration and delivery
 
-- `brainstorming` — refine an idea through questions and design validation.
-- `writing-plans` — produce detailed, small implementation tasks with verification steps.
 - `executing-plans` — execute approved plans in batches with checkpoints.
 - `dispatching-parallel-agents` — coordinate independent tasks concurrently.
 - `requesting-code-review` — prepare and request a structured review.
@@ -168,15 +157,13 @@ The collection also provides a managed Claude Code plugin:
 /plugin install mattpocock-skills@mattpocock
 ```
 
-### Complete skills list
+### Residual unselected skills list
 
 #### Engineering: user-invoked
 
 - `ask-matt` — route a situation to an appropriate workflow.
-- `grill-with-docs` — interview the user while building domain documentation and architectural decisions.
 - `triage` — move issues through a structured triage process.
 - `improve-codebase-architecture` — identify and discuss architectural deepening opportunities.
-- `setup-matt-pocock-skills` — configure repository-specific issue tracking, labels, and documentation paths.
 - `to-spec` — turn the current discussion into a durable specification.
 - `to-tickets` — decompose a plan or specification into dependency-aware tasks.
 - `implement` — implement an accepted specification with TDD seams and review.
@@ -188,21 +175,14 @@ The collection also provides a managed Claude Code plugin:
 - `diagnosing-bugs` — reproduce, minimize, hypothesize, instrument, fix, and regression-test.
 - `research` — investigate primary sources and save cited findings.
 - `tdd` — implement one vertical slice at a time through red-green-refactor.
-- `domain-modeling` — maintain project terminology, edge cases, and architectural decisions.
 - `codebase-design` — design deep modules behind small, testable interfaces.
 - `code-review` — review a diff independently for standards and specification fidelity.
 - `resolving-merge-conflicts` — resolve conflicts by tracing the intent of both sides.
 
 #### Productivity: user-invoked
 
-- `grill-me` — interview the user until a plan or decision is sufficiently resolved.
 - `handoff` — compact the current session into a continuation document.
 - `teach` — manage a multi-session learning workflow.
-- `writing-great-skills` — explain principles for predictable skill authoring.
-
-#### Productivity: model-invoked
-
-- `grilling` — reusable interview discipline behind the explicit grilling workflows.
 
 ### Recommended starting set
 
