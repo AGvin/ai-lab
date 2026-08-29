@@ -4,6 +4,8 @@
 
 - Identify Anthropic Skills through Anthropic's official `anthropics/skills` repository and link the canonical Anthropic producer profile.
 - Explain that the repository contains Anthropic's implementation of skills for Claude and includes the source-available document skills used to demonstrate production-scale document capabilities.
+- Preserve the broader collection context that the repository also includes specification/template material and examples spanning creative/design, development/technical, enterprise, and communication workflows; treat this as collection-level breadth rather than a requirement to materialize every example as a local catalog node.
+- Preserve the per-path licensing boundary: repository presence does not imply one license for every example or production document implementation, so readers must verify the license at the selected source path.
 - Present the selected collection-owned skills with one compact overview followed by concise per-skill detail sections; do not create duplicate standalone catalog pages for them.
 - Selected skills are DOCX, PDF, PPTX, and XLSX.
 - For DOCX, describe Word-document creation, reading, editing, tracked-change/comment workflows, and visual verification; retain the current upstream dependencies on the `docx` package, Pandoc, LibreOffice, and Poppler where relevant, plus the bundled office/XML/comment/validation helpers.
@@ -11,7 +13,7 @@
 - For PPTX, describe PowerPoint creation, reading, editing, rendering, and visual/structural verification; retain the current `pptxgenjs`, Python, LibreOffice, Poppler, and `markitdown` requirements where applicable and the bundled thumbnail, slide-manipulation, cleanup, and validation helpers.
 - For XLSX, describe spreadsheet creation, reading, editing, formatting, recalculation, and validation; retain the current `openpyxl`, `pandas`, `markitdown`, and LibreOffice requirements where applicable and the bundled recalculation/validation helpers.
 - Link each selected skill to its official source directory under `https://github.com/anthropics/skills/tree/main/skills/`.
-- Explain collection-level installation only at the level supported by the official repository: the `document-skills` plugin can install the document-skill set, while runtime dependencies remain skill- and operation-specific.
+- Explain collection-level installation only at the level supported by the official repository: the repository can be registered as a Claude Code plugin marketplace, the example-skill bundle and `document-skills` bundle are distinct installable surfaces where currently supported, and runtime dependencies remain skill- and operation-specific.
 
 ## Selected Skill Sources
 
@@ -23,6 +25,8 @@
 ## Validation
 
 - All four selected skills are represented exactly once in the collection page.
+- Collection breadth is described without implying that every upstream example is a locally selected catalog entity.
+- License wording remains path-specific where upstream terms differ.
 - Dependency wording remains operation-scoped where upstream does not require every tool for every task.
 - No selected document skill is linked as a local standalone catalog node.
 - Reader-facing claims are consistent with the current official repository and selected `SKILL.md` files.
