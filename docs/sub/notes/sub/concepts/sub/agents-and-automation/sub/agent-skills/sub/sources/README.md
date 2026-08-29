@@ -37,33 +37,7 @@ Use it as the canonical source for:
 
 A skill that follows the specification can be portable, but a client may still differ in installation paths, invocation syntax, permissions, optional metadata, and supported tools. See [Platform support](../platform-support/).
 
-## Anthropic Skills repository
-
-Repository: `anthropics/skills`
-
-Anthropic's public repository combines:
-
-- Agent Skills examples;
-- the specification and template material;
-- creative and design examples;
-- development and technical examples;
-- enterprise and communication examples;
-- complex document skills for DOCX, PDF, PPTX, and XLSX.
-
-Many examples are open source, while some production document implementations are source-available under their own terms. Check the license at the relevant path rather than assuming one license for the entire catalog.
-
-Claude Code can register the repository as a plugin marketplace:
-
-```text
-/plugin marketplace add anthropics/skills
-/plugin install example-skills@anthropic-agent-skills
-```
-
-The document collection can be installed separately:
-
-```text
-/plugin install document-skills@anthropic-agent-skills
-```
+## Anthropic Skills repository — residual decision guidance
 
 Recommended use:
 
@@ -72,29 +46,7 @@ Recommended use:
 - use the template as a starting point;
 - compare standalone skills with Claude Code plugin packaging.
 
-## NVIDIA verified skills
-
-Repository: `NVIDIA/skills`
-
-NVIDIA publishes a catalog of skills for NVIDIA libraries, AI Blueprints, and platform tools. Skills are maintained in product repositories and mirrored into the catalog through an automated pipeline.
-
-The catalog adds governance artifacts beyond the base Agent Skills format, including:
-
-- `skill-card.md` identity and governance documentation;
-- detached `skill.oms.sig` signatures;
-- evaluation datasets;
-- generated benchmark reports where available;
-- a published trust anchor for signature verification.
-
-Install through the Skills CLI:
-
-```bash
-npx skills add nvidia/skills
-```
-
-The installer prompts for the selected skills and destination clients.
-
-Cryptographic verification can confirm that published files match the signed NVIDIA package. It does not prove that a skill is appropriate for a particular repository, credential scope, or production environment. Review capability and permissions separately.
+## NVIDIA verified skills — residual decision guidance
 
 Recommended use:
 
