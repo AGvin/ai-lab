@@ -8,10 +8,8 @@ Unlike Agent Skills and Model Context Protocol, **plugin is not one universal cr
 
 - English
 
-## Learning path
+## Related concepts
 
-- [Using Plugins](./sub/using/) — evaluate, install, update, disable, remove, and audit third-party plugins.
-- [Creating Plugins](./sub/creating/) — design and build a platform-specific plugin with complete examples and validation steps.
 - [Agent Skills](../agent-skills/) — portable procedural workflows that a plugin may distribute.
 - [Model Context Protocol](../model-context-protocol/) — a standard protocol that a plugin may configure or bundle.
 

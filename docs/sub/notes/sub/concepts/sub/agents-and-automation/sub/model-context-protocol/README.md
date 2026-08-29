@@ -7,10 +7,8 @@ Model Context Protocol is an open protocol for connecting AI applications to ext
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Learning path
+## Related concepts
 
-- [Using Model Context Protocol](./sub/using/) — select, configure, verify, secure, update, and remove MCP servers.
-- [Creating MCP Servers](./sub/creating/) — build a server with tools, resources, prompts, tests, authorization, and deployment safeguards.
 - [Agent Skills](../agent-skills/) — reusable workflows that may orchestrate capabilities exposed through MCP.
 - [Plugins](../plugins/) — platform-specific packages that may configure or distribute MCP integrations.
 
