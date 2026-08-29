@@ -104,7 +104,7 @@ This repository is an active public documentation lab. Content is added incremen
       - [`idempotency/`](./docs/sub/notes/sub/concepts/sub/agents-and-automation/sub/idempotency/) — designing actions so safe repetition does not create duplicate effects.
       - [`failure-recovery/`](./docs/sub/notes/sub/concepts/sub/agents-and-automation/sub/failure-recovery/) — restoring progress safely after model, tool, network, or workflow failures.
     - Useful
-      - [`function-calling/`](./docs/sub/notes/sub/concepts/sub/agents-and-automation/sub/function-calling/) — a structured model interface where output selects a function and provides arguments.
+      - [`function-calling/`](./docs/sub/notes/sub/concepts/sub/agents-and-automation/sub/function-calling/) — a structured tool interface where model output selects a function and arguments.
       - [`agent-skills/`](./docs/sub/notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/) — portable procedural knowledge packages discovered and loaded when a task requires them.
         - [`platform-support/`](./docs/sub/notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/platform-support/) — compare supported clients and their installation and invocation models.
         - [`sources/`](./docs/sub/notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/sources/) — standards, catalogs, installers, and recommended third-party collections.
