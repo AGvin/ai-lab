@@ -37,39 +37,6 @@ Use it as the canonical source for:
 
 A skill that follows the specification can be portable, but a client may still differ in installation paths, invocation syntax, permissions, optional metadata, and supported tools. See [Platform support](../platform-support/).
 
-## OpenAI Skills catalog
-
-Repository: `openai/skills`
-
-OpenAI's catalog contains skills for Codex and follows the Agent Skills standard. The repository separates skills into categories such as:
-
-- `.system` — skills bundled with current Codex distributions;
-- `.curated` — reviewed skills installable by name through `$skill-installer`;
-- `.experimental` — examples and workflows that require explicit source selection and additional evaluation.
-
-Typical installation inside Codex:
-
-```text
-$skill-installer gh-address-comments
-```
-
-Or from a specific repository path:
-
-```text
-$skill-installer install https://github.com/openai/skills/tree/main/skills/.experimental/create-plan
-```
-
-Restart Codex after installation when required by the current surface.
-
-Treat the license and trust boundary per skill. OpenAI's catalog explicitly allows individual skills to carry their own license files.
-
-Recommended use:
-
-- learn current OpenAI-specific skill patterns;
-- install curated Codex workflows;
-- inspect `agents/openai.yaml` and other OpenAI presentation metadata;
-- compare system, curated, and experimental distribution policies.
-
 ## Anthropic Skills repository
 
 Repository: `anthropics/skills`
