@@ -6,6 +6,8 @@
 - Present the collection as small, composable engineering and productivity skills that can be installed as a managed Claude Code plugin or selectively through the `skills` CLI, using current upstream wording rather than the older RC description.
 - Present the selected collection-owned skills with one compact overview followed by concise per-skill detail sections; do not create duplicate standalone catalog pages for them.
 - Selected skills are Grill Me, Grill With Docs, Grilling, Domain Modeling, Setup Matt Pocock Skills, and Writing for Agents.
+- Treat the selected skills as a curated AI Lab subset rather than an exhaustive mirror of the upstream repository. The upstream collection is mutable and currently contains additional engineering/productivity skills plus separate deprecated, in-progress, and miscellaneous areas; link the official repository for the current complete inventory instead of copying a point-in-time full list into AI Lab.
+- When mentioning non-selected skills, do so only when needed for a dependency, setup flow, comparison, or other substantive context; upstream presence alone does not select a skill as a local catalog entity.
 - Grill Me is a user-invoked wrapper that starts a `grilling` session and therefore depends on the Grilling skill being available.
 - Grill With Docs is a user-invoked wrapper that runs Grilling with Domain Modeling; preserve those two explicit skill dependencies.
 - Grilling is the reusable interview discipline. Reflect the current upstream behavior: work a decision tree in rounds and ask the currently unblocked frontier of questions in each round; do not preserve the stale RC claim that it always asks exactly one question at a time.
@@ -39,4 +41,5 @@ grill-with-docs
 - The six current selected skills are represented exactly once.
 - `writing-great-skills` appears only when needed to explain the upstream rename and is never presented as an active alias or separate skill.
 - Grilling behavior matches the current frontier-by-round source rather than the stale RC one-question description.
+- The page does not present a copied point-in-time list as the complete current Matt Pocock Skills inventory; current full inventory is delegated to the official repository.
 - No selected skill is linked as a local standalone catalog node.
