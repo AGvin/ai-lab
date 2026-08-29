@@ -1,6 +1,6 @@
 # Agent Skills Sources and Collections
 
-Agent Skills can come from official vendor catalogs, open standards, community repositories, installation indexes, or platform-specific plugin marketplaces. These sources solve different problems and should not be treated as equivalent trust signals.
+Legacy residual for Agent Skills source material that has not yet been fully assigned to the final documentation structure. Generic source-trust/adoption guidance and selected collection facts have moved to existing canonical learning/catalog owners.
 
 Last verified: 2026-07-19.
 
@@ -8,18 +8,6 @@ Last verified: 2026-07-19.
 
 - English
 - [Українська](./l10n/uk_UA/)
-
-## Source types
-
-| Source type | Main role | What it does not guarantee |
-|---|---|---|
-| Specification | Defines the portable format and behavior model | Quality, safety, maintenance, or client support for a particular skill |
-| Vendor catalog | Publishes skills maintained or curated by a platform or technology vendor | Suitability for every environment or permission policy |
-| Community collection | Packages an author's workflows and opinions | Independent review, long-term compatibility, or organizational approval |
-| Installer or leaderboard | Helps discover and copy skills into clients | That popularity means correctness or safety |
-| Plugin marketplace | Distributes a host-specific managed package | Portability to another host or transparency of every runtime behavior |
-
-Before adopting a skill, inspect the source revision, complete `SKILL.md`, scripts, dependencies, license, network use, writable paths, credentials, and update model.
 
 ## Agent Skills standard
 
@@ -36,24 +24,6 @@ Use it as the canonical source for:
 - validation expectations.
 
 A skill that follows the specification can be portable, but a client may still differ in installation paths, invocation syntax, permissions, optional metadata, and supported tools. See [Platform support](../platform-support/).
-
-## Anthropic Skills repository — residual decision guidance
-
-Recommended use:
-
-- study simple and complex skill structures;
-- inspect production-scale use of scripts, references, and assets;
-- use the template as a starting point;
-- compare standalone skills with Claude Code plugin packaging.
-
-## NVIDIA verified skills — residual decision guidance
-
-Recommended use:
-
-- NVIDIA CUDA-X and AI platform guidance;
-- studying signed skill distribution and provenance;
-- studying skill cards, evaluation artifacts, and governance controls;
-- organization-level allow-listing based on verified revisions.
 
 ## skills.sh
 
@@ -172,26 +142,9 @@ Install `setup-matt-pocock-skills` before the repository-dependent workflows whe
 
 Do not install both complete methodologies and allow overlapping workflows to activate automatically without testing precedence. Prefer a small reviewed subset with clear ownership of each stage.
 
-## Adoption checklist
-
-For every source or collection:
-
-- [ ] Identify whether it is a standard, catalog, installer, collection, or plugin marketplace.
-- [ ] Record repository, revision, license, and maintainer.
-- [ ] Review all selected skills and bundled scripts.
-- [ ] Confirm supported clients and installation roots.
-- [ ] Define whether updates are pinned, copied, forked, or managed.
-- [ ] Test positive and negative activation prompts.
-- [ ] Resolve overlapping workflow ownership.
-- [ ] Restrict tools, credentials, and writable paths.
-- [ ] Verify removal and rollback.
-
 ## References
 
 - Agent Skills: https://agentskills.io/
-- OpenAI Skills: https://github.com/openai/skills
-- Anthropic Skills: https://github.com/anthropics/skills
-- NVIDIA Skills: https://github.com/NVIDIA/skills
 - skills.sh: https://skills.sh/
 - skills.sh CLI: https://www.skills.sh/docs/cli
 - Superpowers: https://github.com/obra/superpowers
