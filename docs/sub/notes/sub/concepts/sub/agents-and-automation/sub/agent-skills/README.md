@@ -1,17 +1,13 @@
 # Agent Skills
 
-Legacy residual for Agent Skills material whose remaining ownership is formal specification or still-active mixed-source routing.
+Legacy residual for Agent Skills material whose remaining ownership is formal specification.
 
-> **Migration note:** This page is intentionally fragmentary during the active consolidation. Durable Agent Skills purpose, discovery/activation/execution semantics, host-versus-skill authority, related-concept boundaries, portability principles, and security/trust implications are already preserved in the canonical `concepts/ai-engineering/extensibility-and-packaging/agent-skills/` owner, with portability teaching additionally materialized under `learning/.../agent-skills/platform-support-and-portability/`. Former host-specific platform-support material has been reconciled into each product's canonical `sub/integrations/sub/agent-skills/` owner, so that child residual is no longer retained. The remaining package-layout and `SKILL.md` details stay here until the exact formal specification-artifact owner is selected; the sources/collections child remains linked while its installer/catalog fragment is still unresolved.
+> **Migration note:** This page is intentionally fragmentary during the active consolidation. Durable Agent Skills purpose, discovery/activation/execution semantics, host-versus-skill authority, related-concept boundaries, portability principles, and security/trust implications are already preserved in the canonical `concepts/ai-engineering/extensibility-and-packaging/agent-skills/` owner, with portability teaching additionally materialized under `learning/.../agent-skills/platform-support-and-portability/`. Former host-specific platform-support material has been reconciled into each product's canonical `sub/integrations/sub/agent-skills/` owner. Former sources/collections material has likewise been reconciled into canonical collection owners and the selected `catalog/agent-skills/registries/` taxonomy, including `registries/sub/skills-sh/`; those child residuals are no longer retained. The remaining package-layout and `SKILL.md` details stay here until the exact formal specification-artifact owner is selected.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
-
-## Residual sources
-
-- [Sources and collections](./sub/sources/) — remaining installer/catalog material pending an approved canonical destination.
 
 ## Formal package residual
 
