@@ -1,0 +1,10 @@
+entity:
+  id: catalog/software/agents/hybrid/openai-codex/integrations/agent-skills
+  name: OpenAI Codex Agent Skills
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/codex/skills
+      purposes:
+        - research
+      authority: official
