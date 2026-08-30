@@ -2,7 +2,7 @@
 
 Legacy residual for Agent Skills material whose remaining ownership is formal specification or still-active mixed-source routing.
 
-> **Migration note:** This page is intentionally fragmentary during the active consolidation. Durable Agent Skills purpose, discovery/activation/execution semantics, host-versus-skill authority, related-concept boundaries, portability principles, and security/trust implications are already preserved in the canonical `concepts/ai-engineering/extensibility-and-packaging/agent-skills/` owner, with portability teaching additionally materialized under `learning/.../agent-skills/platform-support-and-portability/`. The remaining package-layout and `SKILL.md` details stay here until the exact formal specification-artifact owner is selected; the two child residual pages remain linked while their catalog/platform/evidence fragments are still being reconciled.
+> **Migration note:** This page is intentionally fragmentary during the active consolidation. Durable Agent Skills purpose, discovery/activation/execution semantics, host-versus-skill authority, related-concept boundaries, portability principles, and security/trust implications are already preserved in the canonical `concepts/ai-engineering/extensibility-and-packaging/agent-skills/` owner, with portability teaching additionally materialized under `learning/.../agent-skills/platform-support-and-portability/`. Former host-specific platform-support material has been reconciled into each product's canonical `sub/integrations/sub/agent-skills/` owner, so that child residual is no longer retained. The remaining package-layout and `SKILL.md` details stay here until the exact formal specification-artifact owner is selected; the sources/collections child remains linked while its installer/catalog fragment is still unresolved.
 
 ## Translations
 
@@ -11,7 +11,6 @@ Legacy residual for Agent Skills material whose remaining ownership is formal sp
 
 ## Residual sources
 
-- [Platform support](./sub/platform-support/) — current host-specific support, installation, invocation, permission, and plugin facts pending catalog/platform/evidence reconciliation.
 - [Sources and collections](./sub/sources/) — remaining installer/catalog material pending an approved canonical destination.
 
 ## Formal package residual
