@@ -1,0 +1,4 @@
+entity:
+  id: catalog/agent-skills/registries
+  type: catalog-index
+  name: Agent Skill Registries
