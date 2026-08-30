@@ -1,0 +1,14 @@
+entity:
+  id: catalog/agent-skills/registries/skillhub
+  type: skill-registry
+  name: SkillHub
+  aliases:
+    - skill-marketplace.com
+  references:
+    - type: official-site
+      source:
+        url: https://www.skill-marketplace.com/
+      purposes:
+        - identification
+        - research
+      authority: official
