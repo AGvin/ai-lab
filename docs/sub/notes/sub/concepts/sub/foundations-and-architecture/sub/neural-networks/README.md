@@ -38,6 +38,6 @@ Large networks require substantial data and compute. Their behavior is distribut
 ## Related concepts
 
 - [Foundations and Architecture](../../)
-- [Deep Learning](../deep-learning/)
+- [Deep Learning](../../../../../../../concepts/sub/machine-learning/sub/deep-learning/)
 - [Attention](../attention/)
 - [Dense and Sparse Architectures](../../../model-architectures/sub/dense-and-sparse-architectures/)
