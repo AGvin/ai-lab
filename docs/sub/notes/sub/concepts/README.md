@@ -45,7 +45,6 @@ Legacy mixed grouping retained during the staged documentation redesign. It stil
 ### Specialized
 
 - [`machine-learning/`](./sub/foundations-and-architecture/sub/machine-learning/) — Methods that learn patterns from data instead of relying only on explicitly programmed rules.
-- [`deep-learning/`](./sub/foundations-and-architecture/sub/deep-learning/) — Machine learning based on neural networks with many processing layers.
 - [`neural-networks/`](./sub/foundations-and-architecture/sub/neural-networks/) — Parameterized computational structures composed of connected layers or processing units.
 - [`self-attention/`](./sub/foundations-and-architecture/sub/self-attention/) — Attention computed between positions within the same input sequence.
 - [`encoder-decoder/`](./sub/foundations-and-architecture/sub/encoder-decoder/) — Model structures that encode inputs, generate outputs, or combine both roles.

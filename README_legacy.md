@@ -50,7 +50,6 @@ This repository is an active public documentation lab. Content is added incremen
       - [`mixture-of-experts/`](./docs/sub/notes/sub/concepts/sub/model-architectures/sub/mixture-of-experts/) — a sparse architecture that routes each input through selected expert components.
     - Specialized
       - [`machine-learning/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/machine-learning/) — methods that learn patterns from data instead of relying only on explicitly programmed rules.
-      - [`deep-learning/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/deep-learning/) — machine learning based on neural networks with many processing layers.
       - [`neural-networks/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/neural-networks/) — parameterized computational structures composed of connected layers or processing units.
       - [`self-attention/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/self-attention/) — attention computed between positions within the same input sequence.
       - [`encoder-decoder/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/encoder-decoder/) — model structures that encode inputs, generate outputs, or combine both roles.

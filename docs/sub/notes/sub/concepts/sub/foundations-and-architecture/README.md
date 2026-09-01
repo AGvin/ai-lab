@@ -28,7 +28,6 @@ New model classification and parameter-activation architecture documentation now
 ## Specialized
 
 - [`machine-learning/`](./sub/machine-learning/) — Methods that learn patterns from data instead of relying only on explicitly programmed rules.
-- [`deep-learning/`](./sub/deep-learning/) — Machine learning based on neural networks with many processing layers.
 - [`neural-networks/`](./sub/neural-networks/) — Parameterized computational structures composed of connected layers or processing units.
 - [`self-attention/`](./sub/self-attention/) — Attention computed between positions within the same input sequence.
 - [`encoder-decoder/`](./sub/encoder-decoder/) — Model structures that encode inputs, generate outputs, or combine both roles.
