@@ -36,6 +36,6 @@ A model may fit historical data while failing after conditions change. Data qual
 ## Related concepts
 
 - [Foundations and Architecture](../../)
-- [Deep Learning](../deep-learning/)
+- [Deep Learning](../../../../../../../concepts/sub/machine-learning/sub/deep-learning/)
 - [Evaluation Datasets](../../../evaluation-and-operations/sub/evaluation-datasets/)
 - [Overfitting](../../../training-and-adaptation/sub/overfitting/)
