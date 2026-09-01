@@ -98,7 +98,10 @@ docs/.meta/templates/
         │           ├── index.md
         │           └── target.md
         ├── agent-skills/
-        │   └── collection.md
+        │   ├── collection.md
+        │   └── registry.md
+        ├── integrations/
+        │   └── integration.md
         ├── services/
         │   └── service.md
         └── software/
@@ -117,7 +120,7 @@ Concrete canonical dataset and hardware **profile** templates remain deferred un
 
 ## Specialized Page Families
 
-Specialized families exist only where reader goals or ownership differ materially: canonical producer profiles; model reference producer/family/series/model/version/artifact identities; task/portfolio model-selection decision support; combined-context model user scenarios; hardware-constrained model selection; Agent Skill collections; hosted services; and installable/self-managed software.
+Specialized families exist only where reader goals or ownership differ materially: canonical producer profiles; model reference producer/family/series/model/version/artifact identities; task/portfolio model-selection decision support; combined-context model user scenarios; hardware-constrained model selection; Agent Skill collections and registries; product-specific integrations; hosted services; and installable/self-managed software.
 
 The three model-selection template families remain siblings under the same semantic owner:
 
