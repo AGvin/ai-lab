@@ -1,38 +1,22 @@
 # Multimodal Models
 
-Multimodal models process or generate more than one data modality, such as text, images, audio, video, documents, or sensor signals.
+Legacy residual retained for multimodal application examples and practical evaluation guidance that are intentionally outside the canonical multimodal-model classification owner.
+
+> **Migration note:** Multimodal-model identity, model-versus-system boundaries, modality/representation/fusion variability, input-versus-output-versus-reasoning distinctions, modality-specific information constraints, and classification boundaries are already preserved in `docs/sub/concepts/sub/models/sub/classification/sub/multimodal-models/`. The remaining material below stays here until its exact learning or evaluation owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application examples residual
 
-A multimodal system converts different inputs into representations that can interact in a shared model or coordinated components. A vision-language model may encode an image and combine it with text tokens; a generative system may condition image or video output on text and reference media.
+Common multimodal applications include image and document question answering, screenshot and diagram analysis, speech transcription and synthesis, text-guided image or video generation, and cross-modal search using related representations.
 
-## Practical use
+These are pedagogical usage examples rather than part of the canonical classification definition.
 
-- Image and document question answering.
-- Screenshot and diagram analysis.
-- Speech transcription and synthesis.
-- Text-guided image or video generation.
-- Cross-modal search using shared embeddings.
+## Evaluation and operational residual
 
-## Trade-offs and limitations
+Practical evaluation should account for what information actually reaches the model. Image resolution, OCR or compression artifacts, audio duration, frame sampling, and document layout can materially affect results; nominal modality support does not imply that every pixel, frame, token, or signal is processed at full fidelity.
 
-Each modality introduces its own preprocessing, context cost, and failure modes. Image resolution, audio duration, frame sampling, and document layout can determine what information the model actually receives. Strong text performance does not imply equally strong visual reasoning.
-
-## Common mistakes
-
-- Assuming the model sees every pixel or video frame at full fidelity.
-- Ignoring OCR, compression, or sampling artifacts.
-- Treating a generated description as exact measurement.
-- Evaluating only one modality independently.
-
-## Related concepts
-
-- [Foundations and Architecture](../../)
-- [Vision-Language Models](../../../multimodal-and-generative-media/sub/vision-language-models/)
-- [Multimodal Context](../../../multimodal-and-generative-media/sub/multimodal-context/)
-- [Image Embeddings](../../../multimodal-and-generative-media/sub/image-embeddings/)
+Do not treat a generated description as exact measurement, and do not evaluate only one modality when the target behavior depends on cross-modal interaction. These operational/evaluation points remain migration source material until their exact learning or evaluation owner is verified.
