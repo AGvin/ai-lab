@@ -1,40 +1,20 @@
 # Encoder and Decoder Architectures
 
-Encoders transform input into contextual representations, while decoders generate or predict output from prior context and optional encoded input.
+Legacy residual retained for task-selection, runtime, and comparative guidance that is intentionally outside the canonical encoder-decoder architecture concept owner.
+
+> **Migration note:** General encoder/decoder roles, encoder-decoder composition, Transformer-versus-general architecture boundaries, fixed-bottleneck and cross-attention variants, encoder-only/decoder-only distinctions, autoregressive versus other output mechanisms, and architecture-versus-training-objective boundaries are already preserved in `docs/sub/concepts/sub/models/sub/architectures/sub/encoder-decoder/`. The remaining material below stays here until its exact learning, inference, evaluation, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Main forms
+## Task-selection and runtime residual
 
-- **Encoder-only:** reads the full input bidirectionally and produces representations for classification, retrieval, or extraction.
-- **Decoder-only:** predicts tokens autoregressively and is widely used for general-purpose language generation.
-- **Encoder-decoder:** encodes an input sequence and generates a separate output sequence, common in translation and summarization.
+In practice, encoder-only models are commonly used for classification, retrieval, extraction, embeddings, or reranking; decoder-only models are common for autoregressive generation; and encoder-decoder models are common for transformations such as translation or summarization. These are usage patterns rather than architectural guarantees.
 
-## Core idea
+Choose architecture based on the operation rather than model popularity. A small encoder can be a better fit than a large generator for embeddings, reranking, or other representation-heavy tasks, while encoder-decoder models can be effective for controlled source-to-target transformations.
 
-Architecture influences training objectives, inference behavior, and suitability for tasks. Decoder-only models are flexible generators, while encoder models can be efficient for embeddings and classification.
+Different architecture roles can use context and cache memory differently, and parameter counts are not directly comparable when model roles differ. A generative decoder can emulate classification but may be slower or less deterministic than a dedicated encoder-oriented solution. Benchmark comparisons therefore need task and runtime context.
 
-## Practical use
-
-Choose architecture based on the operation rather than model popularity. A small encoder may outperform a large generator for embeddings or reranking. Encoder-decoder models may provide efficient controlled transformations.
-
-## Trade-offs and limitations
-
-Different architectures use context and cache memory differently. Parameter counts are not directly comparable when model roles differ. A generative decoder can emulate classification but may be slower and less deterministic than a dedicated encoder.
-
-## Common mistakes
-
-- Using a chat model for every text-processing task.
-- Comparing encoder and decoder benchmark scores without task context.
-- Assuming decoder-only architecture means no internal representations are learned.
-- Confusing model architecture with product interface.
-
-## Related concepts
-
-- [Foundations and Architecture](../../)
-- [Transformers](../transformers/)
-- [Embeddings](../../../retrieval-and-knowledge/sub/embeddings/)
-- [Large Language Models](../large-language-models/)
+These practical consequences remain migration source material until their exact learning, inference/serving, evaluation, or decision-support owner is verified.
