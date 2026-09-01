@@ -1,41 +1,16 @@
 # Transformers
 
-A transformer is a neural network architecture built around attention, feed-forward layers, residual connections, and normalization.
+Legacy residual retained for Transformer runtime/resource and model-selection guidance that is intentionally outside the canonical architecture concept owner.
+
+> **Migration note:** Transformer identity, attention-centered architecture structure, encoder/decoder family variants, positional-information requirements, architecture-versus-objective boundaries, scoped attention complexity, and non-guarantees around factuality, interpretability, memory, and long-context quality are already preserved in `docs/sub/concepts/sub/models/sub/architectures/sub/transformers/`. The remaining material below stays here until its exact inference, AI-engineering, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Runtime and model-selection residual
 
-Transformers process token representations in parallel during training and prompt processing. Attention lets each position combine information from other relevant positions, while feed-forward layers transform each position independently. Positional information preserves sequence order.
+Runtime requirements can vary materially with layer count, hidden dimensions, attention configuration, vocabulary size, context length, architecture variant, and runtime implementation. Longer contexts can substantially increase computation and KV-cache memory for architectures and runtimes that use such caching.
 
-## Common forms
-
-- Encoder-only models for representation and classification.
-- Decoder-only models for autoregressive generation.
-- Encoder-decoder models for sequence-to-sequence tasks.
-- Multimodal transformers that integrate visual or audio tokens.
-
-## Practical use
-
-Transformers underlie most modern language models and many vision, audio, and multimodal systems. Runtime requirements are influenced by number of layers, hidden dimensions, attention configuration, vocabulary size, and context length.
-
-## Trade-offs and limitations
-
-Standard attention cost grows strongly with sequence length. Long contexts therefore require substantial computation and KV-cache memory. Transformers can also learn statistical shortcuts and do not inherently provide factual verification or persistent memory.
-
-## Common mistakes
-
-- Treating transformer as synonymous with LLM.
-- Assuming attention weights provide a complete explanation.
-- Ignoring architecture variants when comparing parameter counts.
-- Expecting longer context to guarantee better recall.
-
-## Related concepts
-
-- [Foundations and Architecture](../../)
-- [Attention](../attention/)
-- [Self-Attention](../self-attention/)
-- [Encoder and Decoder Architectures](../encoder-decoder/)
+When comparing or selecting models, parameter counts alone can obscure architectural differences and should not be treated as a complete proxy for runtime cost or deployment fit. These practical consequences remain migration source material until their exact inference/serving or decision-support owner is verified.
