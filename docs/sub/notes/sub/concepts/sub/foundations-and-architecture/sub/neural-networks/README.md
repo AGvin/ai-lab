@@ -1,43 +1,28 @@
 # Neural Networks
 
-A neural network is a parameterized function composed of layers that transform input values into outputs.
+Legacy residual retained for neural-network training, resource, debugging, and evaluation guidance that is intentionally outside the canonical architecture concept owner.
+
+> **Migration note:** Neural-network identity, common computational building blocks, architectural variability, the distinction from deep learning, historical biological inspiration, dominant gradient/backpropagation context, and parameter/size interpretation boundaries are already preserved in `docs/sub/concepts/sub/models/sub/architectures/sub/neural-networks/`. The remaining material below stays here until its exact learning, evaluation, or AI-engineering owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Training and resource residual
 
-Each layer applies weighted operations and nonlinear transformations. During training, optimization adjusts the weights so the network produces outputs that reduce a chosen loss. The word “neural” is historical inspiration; artificial networks are mathematical systems rather than biological replicas.
+Training adjusts model parameters against an objective and in practice depends on choices such as initialization, normalization, optimization, preprocessing, and data distribution. Large networks can require substantial data and compute, while concrete requirements vary with architecture, task, transfer/pretraining strategy, and training setup.
 
-## Main components
+Training can become unstable when initialization, normalization, optimization, or input preparation is unsuitable. These operational/troubleshooting details are not part of the canonical neural-network architecture definition and remain migration source material until their exact learning or engineering owner is verified.
 
-- Input representations.
-- Trainable weights and biases.
-- Linear or convolutional operations.
-- Nonlinear activation functions.
-- Normalization and residual connections.
-- An output layer suited to the task.
+## Evaluation residual
 
-## Practical use
+Do not infer task quality from parameter count alone, and do not treat model confidence as calibrated probability without appropriate evaluation or calibration evidence. Data distribution and preprocessing can materially affect observed behavior and generalization.
 
-Neural networks can approximate complex functions and learn representations directly from data. Different architectures specialize in sequences, images, graphs, audio, control, or multimodal data.
-
-## Trade-offs and limitations
-
-Large networks require substantial data and compute. Their behavior is distributed across many parameters, which complicates interpretation and debugging. Training can be unstable without appropriate initialization, normalization, and optimization.
-
-## Common mistakes
-
-- Interpreting individual parameters as human-readable knowledge.
-- Assuming a larger parameter count guarantees better task performance.
-- Ignoring preprocessing and data distribution.
-- Treating model confidence as calibrated probability.
+These evaluation/calibration points remain here until their exact evaluation or learning owner is verified.
 
 ## Related concepts
 
-- [Foundations and Architecture](../../)
 - [Deep Learning](../../../../../../../concepts/sub/machine-learning/sub/deep-learning/)
 - [Attention](../attention/)
 - [Dense and Sparse Architectures](../../../model-architectures/sub/dense-and-sparse-architectures/)
