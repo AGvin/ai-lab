@@ -106,8 +106,6 @@ This repository is an active public documentation lab. Content is added incremen
     - Useful
       - [`function-calling/`](./docs/sub/notes/sub/concepts/sub/agents-and-automation/sub/function-calling/) — a structured tool interface where model output selects a function and arguments.
       - [`agent-skills/`](./docs/sub/notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/) — portable procedural knowledge packages discovered and loaded when a task requires them.
-        - [`platform-support/`](./docs/sub/notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/platform-support/) — compare supported clients and their installation and invocation models.
-        - [`sources/`](./docs/sub/notes/sub/concepts/sub/agents-and-automation/sub/agent-skills/sub/sources/) — standards, catalogs, installers, and recommended third-party collections.
       - [`task-decomposition/`](./docs/sub/notes/sub/concepts/sub/agents-and-automation/sub/task-decomposition/) — breaking a large task into smaller, verifiable units.
       - [`retries/`](./docs/sub/notes/sub/concepts/sub/agents-and-automation/sub/retries/) — repeating eligible failed operations under bounded rules.
       - [`autonomy-levels/`](./docs/sub/notes/sub/concepts/sub/agents-and-automation/sub/autonomy-levels/) — the degree of independent decision-making granted to an AI system.
