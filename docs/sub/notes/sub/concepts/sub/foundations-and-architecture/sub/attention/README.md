@@ -1,37 +1,16 @@
 # Attention
 
-Attention is a mechanism that computes how strongly one representation should use information from other representations.
+Legacy residual retained for pedagogical application examples that are intentionally outside the canonical attention concept owner.
+
+> **Migration note:** Attention identity, query/key/value framing, score-versus-value aggregation, self-attention versus cross-attention boundaries, masking/connectivity variants, complexity qualification, interpretability limits, and non-memory/non-retrieval boundaries are already preserved in `docs/sub/concepts/sub/models/sub/architectures/sub/attention/`. The remaining examples below stay here until their exact learning owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application examples residual
 
-A query is compared with keys to produce attention scores. The scores are normalized and used to combine corresponding values. In transformers, many attention heads learn different patterns of interaction in parallel.
+Attention mechanisms can connect a generated token to relevant earlier tokens, align text with image regions or audio features, combine encoder information during sequence generation, and represent long-range dependencies more directly than simple recurrence.
 
-## Practical roles
-
-- Connect a generated token to relevant earlier tokens.
-- Align text with image regions or audio features.
-- Combine encoder information during sequence generation.
-- Represent long-range dependencies more directly than simple recurrence.
-
-## Trade-offs and limitations
-
-Standard full attention compares many pairs of positions and becomes expensive for long sequences. Attention scores are internal computation, not calibrated evidence of causal importance or human-readable reasoning.
-
-## Common mistakes
-
-- Interpreting the largest attention weight as the model's explanation.
-- Assuming attention alone stores permanent memory.
-- Ignoring masking and positional encoding.
-- Treating all attention implementations as computationally identical.
-
-## Related concepts
-
-- [Foundations and Architecture](../../)
-- [Self-Attention](../self-attention/)
-- [Transformers](../transformers/)
-- [FlashAttention](../../../inference-and-serving/sub/flash-attention/)
+These examples are pedagogical usage illustrations rather than additional canonical definition. Keep them here until the applicable learning topic explicitly owns them.
