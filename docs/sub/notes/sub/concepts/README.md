@@ -44,7 +44,6 @@ Legacy mixed grouping retained during the staged documentation redesign. It stil
 
 ### Specialized
 
-- [`artificial-intelligence/`](./sub/foundations-and-architecture/sub/artificial-intelligence/) — The broad field of systems that perform tasks associated with perception, reasoning, generation, or decision-making.
 - [`machine-learning/`](./sub/foundations-and-architecture/sub/machine-learning/) — Methods that learn patterns from data instead of relying only on explicitly programmed rules.
 - [`deep-learning/`](./sub/foundations-and-architecture/sub/deep-learning/) — Machine learning based on neural networks with many processing layers.
 - [`neural-networks/`](./sub/foundations-and-architecture/sub/neural-networks/) — Parameterized computational structures composed of connected layers or processing units.

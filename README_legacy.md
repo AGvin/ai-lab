@@ -49,7 +49,6 @@ This repository is an active public documentation lab. Content is added incremen
       - [`attention/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/attention/) — a mechanism that weights which input elements are most relevant for a model operation.
       - [`mixture-of-experts/`](./docs/sub/notes/sub/concepts/sub/model-architectures/sub/mixture-of-experts/) — a sparse architecture that routes each input through selected expert components.
     - Specialized
-      - [`artificial-intelligence/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/artificial-intelligence/) — the broad field of systems that perform tasks associated with perception, reasoning, generation, or decision-making.
       - [`machine-learning/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/machine-learning/) — methods that learn patterns from data instead of relying only on explicitly programmed rules.
       - [`deep-learning/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/deep-learning/) — machine learning based on neural networks with many processing layers.
       - [`neural-networks/`](./docs/sub/notes/sub/concepts/sub/foundations-and-architecture/sub/neural-networks/) — parameterized computational structures composed of connected layers or processing units.
