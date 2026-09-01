@@ -1,0 +1,4 @@
+entity:
+  id: catalog/services/assistant-workspaces
+  type: catalog-index
+  name: Assistant Workspaces
