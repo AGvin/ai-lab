@@ -1,41 +1,34 @@
 # Fallback Models
 
-Fallback models are alternative models used when the preferred model is unavailable, exceeds policy limits, fails validation, or cannot satisfy a request.
+Legacy residual retained for model-substitution eligibility, compatibility, trust-boundary, and degraded-service guidance that is intentionally outside the reusable Reliability and Resilience concept and outside concrete model-selection recommendations.
+
+> **Migration note:** Fallback/degraded-mode recovery as a general reliability mechanism is already preserved in `docs/sub/concepts/sub/ai-engineering/sub/reliability-and-resilience/`. The canonical model-selection owner explicitly keeps provider failover, infrastructure recovery, and service lifecycle outside model-selection ownership. The remaining material below therefore stays here until its exact system-design, deployment/reliability, governance, or decision owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Substitution-eligibility residual
 
-A fallback is part of reliability design, not merely a second API key. The alternative may differ in capability, context size, schema behavior, safety policy, cost, or data location, so the workflow must define when substitution is acceptable.
+A fallback model is useful only when it can satisfy the minimum contract required by the specific workflow. Before substitution, verify the dimensions that matter to that route, such as:
 
-## Practical use
+- input and output modalities;
+- usable context and output limits;
+- structured-output or schema behavior;
+- required tool/function interfaces;
+- safety or policy behavior;
+- latency, cost, and deployment constraints;
+- privacy, data-location, licensing, and provider trust boundaries.
 
-- Continue service during provider outages.
-- Escalate from a small model to a stronger model after failure.
-- Switch to a local model when sensitive data cannot leave the environment.
-- Use a text-only fallback when no image input is present.
+A second reachable model or API endpoint is not automatically an eligible fallback.
 
-## Trade-offs and limitations
+## Operational residual
 
-Fallbacks can produce inconsistent answers and may violate assumptions made for the primary model. A cross-provider fallback can introduce different privacy, residency, or licensing conditions.
+Fallback activation can respond to provider/service outages, validation failure, capability gaps, policy/data-boundary constraints, or another explicitly defined failure condition. Avoid indefinite retries before fallback and avoid using fallback success to hide a persistent primary-path defect.
 
-## Good practice
+Test fallback paths with the same relevant contracts and failure cases used by the workflow, including prompt/schema/tool compatibility. When the alternate route materially reduces quality, modality support, context, or another user-visible capability, communicate the degraded mode where the product/workflow requires it.
 
-Test fallback paths regularly. Validate schemas and prompt compatibility. Communicate degraded capability when relevant. Do not silently route sensitive data to a less trusted provider.
+Do not silently move sensitive data to a provider, region, or deployment environment that is less trusted or otherwise ineligible merely to preserve availability.
 
-## Common mistakes
-
-- Configuring a fallback that has never been tested.
-- Retrying indefinitely before switching.
-- Assuming equivalent context and tool support.
-- Using fallback success to hide persistent primary failures.
-
-## Related concepts
-
-- [Evaluation and Operations](../../)
-- [Model Routing](../model-routing/)
-- [Failure Recovery](../../../agents-and-automation/sub/failure-recovery/)
-- [Data Residency](../../../safety-privacy-and-reliability/sub/data-residency/)
+These model-substitution and degraded-service constraints remain migration source material until their exact system-design, deployment/reliability, governance, or decision owners are verified.
