@@ -1,42 +1,30 @@
 # Diffusion Models
 
-Diffusion models are generative models trained to reverse a process that progressively adds noise to data.
+Legacy residual retained for application examples and practical generation-workflow guidance that is intentionally outside the canonical Diffusion Models architecture owner.
+
+> **Migration note:** Diffusion-model identity, forward/reverse process semantics, discrete and continuous formulations, latent-space boundary, conditioning families, sampler-versus-model distinction, step-count and seed caveats, and general limitations are already preserved in `docs/sub/concepts/sub/models/sub/architectures/sub/diffusion-models/`. The remaining material below stays here until its exact learning, generative-media workflow, runtime, evidence, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application residual
 
-During generation, the model starts from random noise or a noised input and predicts how to remove noise over several steps. Conditioning such as text embeddings, images, masks, or structural controls guides the denoising trajectory. Many image systems operate in a compressed latent space instead of directly on pixels.
+Diffusion-family models are commonly applied to workflows such as:
 
-## Practical use
+- text-to-image generation;
+- image editing, inpainting, and outpainting;
+- super-resolution and restoration;
+- audio and video generation;
+- controlled generation using edges, depth, pose, masks, or other conditioning signals.
 
-- Text-to-image generation.
-- Image editing, inpainting, and outpainting.
-- Super-resolution and restoration.
-- Audio and video generation.
-- Controlled generation using edges, depth, or pose.
+These are application examples rather than part of the canonical diffusion-model definition.
 
-## Important settings
+## Workflow and settings residual
 
-The sampler, number of steps, guidance strength, seed, resolution, and conditioning weights affect output. More steps do not always improve quality after the sampler reaches diminishing returns.
+Concrete generation workflows can expose sampler or solver choice, step count, guidance strength, seed, resolution, conditioning weights, latent autoencoder selection, and related runtime controls. Their useful values depend on the specific model, scheduler/solver, conditioning pipeline, numerical/runtime environment, and target task.
 
-## Trade-offs and limitations
+More sampling steps do not inherently produce better output, and a seed alone is not a complete reproducibility contract. Workflow validation should also check component compatibility, including the concrete model, latent autoencoder or VAE where applicable, conditioning components, preprocessing, scheduler, and runtime.
 
-Diffusion generation is iterative and can be computationally expensive. High guidance may reduce diversity or create artifacts. Models can struggle with exact text, consistent characters, and complex spatial constraints.
-
-## Common mistakes
-
-- Treating seed alone as complete reproducibility.
-- Increasing steps without measuring improvement.
-- Using incompatible model, VAE, or conditioning components.
-- Assuming latent-space edits preserve every original detail.
-
-## Related concepts
-
-- [Multimodal and Generative Media](../../)
-- [Latent Space](../latent-space/)
-- [ControlNet](../controlnet/)
-- [Image Generation](../image-generation/)
+These practical settings and workflow choices remain migration source material until their exact learning, runtime, evidence, generative-media workflow, or decision-support owners are verified.
