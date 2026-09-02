@@ -1,37 +1,30 @@
 # Instruction Tuning
 
-Instruction tuning trains a model on diverse instruction-and-response examples so it becomes better at following natural-language tasks.
+Legacy residual retained for instruction-dataset design, generalization evaluation, template/interface consistency, ambiguity handling, and post-training handoff guidance that are intentionally outside the canonical Instruction Tuning concept owner.
+
+> **Migration note:** Instruction-tuning identity, SFT relationship and terminology overlap, data-source diversity, task-diversity versus dataset-size boundary, prompting and preference-optimization distinctions, interface-authority separation, and factuality/safety non-guarantees are already preserved in `docs/sub/concepts/sub/models/sub/training-and-adaptation/sub/fine-tuning/sub/instruction-tuning/`. The remaining material below stays here until its exact learning, dataset-engineering, training-engineering, evaluation, or post-training-workflow owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Instruction-dataset residual
 
-A pretrained language model is optimized mainly to continue text. Instruction tuning reshapes that behavior toward responding to requests, respecting task descriptions, and generalizing across many instruction formats. It is usually implemented through supervised fine-tuning and may be followed by preference optimization.
+Design the instruction mixture around the range of tasks, phrasings, domains, formats, and failure modes the adapted model is expected to handle. Include difficult, ambiguous, underspecified, and refusal/uncertainty cases when those behaviors are part of the acceptance criteria instead of training only clean success examples.
 
-## Practical use
+Review synthetic or transformed instruction-response pairs for correctness, hidden prompt artifacts, duplicate templates, leakage, unsafe targets, and superficial stylistic shortcuts before adding them to the mixture.
 
-- Create general assistant behavior from a base model.
-- Improve zero-shot task following.
-- Teach response formats and refusal patterns.
-- Adapt a model to a domain's common instructions.
+## Template and interface residual
 
-## Trade-offs and limitations
+Keep roles, chat templates, system/user/assistant formatting, tool-call examples, special tokens, and preprocessing aligned with the intended inference interface. Do not assume a model trained under one conversation schema will preserve behavior under another provider/runtime template without verification.
 
-Instruction tuning can reduce raw completion behavior and introduce the biases or limitations of the instruction dataset. A model may learn superficial response patterns without becoming more factually reliable.
+Treat learned instruction following separately from actual application permissions and instruction hierarchy; interface formatting can teach patterns but does not become a security control.
 
-## Common mistakes
+## Generalization and handoff residual
 
-- Using a narrow instruction set and expecting broad generalization.
-- Confusing helpful tone with correctness.
-- Omitting difficult or ambiguous examples.
-- Ignoring the tokenizer and chat template expected by the model.
+Evaluate unseen instruction wording, unseen task combinations, edge cases, and important retained base capabilities rather than measuring only imitation of the training distribution. Helpful tone and compliant formatting are not substitutes for task correctness or factual reliability.
 
-## Related concepts
+If instruction tuning is followed by preference optimization or another alignment stage, preserve the exact instruction-tuned artifact and its evaluation baseline so later behavior changes can be attributed to the correct stage.
 
-- [Training and Adaptation](../../)
-- [Supervised Fine-Tuning](../supervised-fine-tuning/)
-- [Preference Optimization](../preference-optimization/)
-- [Prompting](../../../model-usage-and-generation/sub/prompting/)
+These dataset, interface, generalization, and handoff practices remain migration source material until their exact learning, dataset-engineering, training-engineering, evaluation, or post-training-workflow owners are verified.
