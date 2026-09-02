@@ -1,0 +1,17 @@
+entity:
+  id: catalog/specifications/formats/gguf
+  name: GGUF
+  references:
+    - type: specification
+      source:
+        url: https://github.com/ggml-org/ggml/blob/master/docs/gguf.md
+      purposes:
+        - identification
+        - research
+      authority: upstream
+    - type: repository
+      source:
+        url: https://github.com/ggml-org/ggml
+      purposes:
+        - research
+      authority: upstream
