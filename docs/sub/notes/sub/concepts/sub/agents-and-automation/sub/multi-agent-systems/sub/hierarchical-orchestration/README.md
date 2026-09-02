@@ -1,88 +1,36 @@
 # Hierarchical Agent Orchestration
 
-Hierarchical agent orchestration organizes multiple agents into management levels, where supervisors coordinate specialist teams and may themselves report to higher-level supervisors.
+Legacy residual retained for hierarchy-selection guidance and exact legacy framework/evidence provenance that are intentionally outside the canonical Manager-Worker Orchestration concept owner.
+
+> **Migration note:** Hierarchical orchestration is already preserved canonically as a composable manager-worker topology: managers can supervise workers or subordinate managers at several levels while the same retain-and-delegate ownership invariant remains in force. Manager/worker contracts, scope/authority, context isolation, delegation, dependency/parallelism, integration, terminal responsibility, retries/escalation, and system-level trade-offs are already preserved in `docs/sub/concepts/sub/agents-and-autonomy/sub/workflows-and-orchestration/sub/manager-worker-orchestration/`. The remaining material below stays here until its exact learning/decision owner and legacy evidence provenance are verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Status
+## Hierarchy-selection residual
 
-Established multi-agent architecture pattern.
+Hierarchy can be useful when one manager would otherwise need to retain too much domain context, coordinate too many workers, apply materially different policy/permission boundaries, or own several large parallel workstreams. Intermediate managers can then own bounded scopes while the top-level owner retains global objective, cross-team dependencies, budget, and final acceptance.
 
-## Core idea
+Useful reasons to introduce another management level include:
 
-A hierarchy is useful when one coordinator would otherwise need to retain too much domain context, manage too many workers, or enforce several distinct policies. Each manager owns a bounded scope and reports structured results to the manager above it.
+- reducing context overload;
+- isolating specialized policies, tools, permissions, or infrastructure;
+- creating meaningful parallel ownership of large work areas; and
+- allowing local decisions while preserving explicit global dependency/acceptance control.
 
-Typical levels may include:
+Do not add hierarchy merely because many agents exist. Prefer one manager-worker loop or an explicit workflow graph when it remains easier to inspect and operate. Additional layers consume latency/cost, can hide evidence in summaries, propagate errors upward, duplicate/abandon work when scopes are unclear, and obscure accountability when local optimization conflicts with the global objective.
 
-- a top-level orchestrator responsible for the global objective, budget, dependencies, and final acceptance;
-- domain or department managers responsible for coherent workstreams such as software, localization, design, research, or operations;
-- team leads responsible for smaller units such as frontend, UX, testing, or image evaluation;
-- worker agents responsible for bounded execution tasks.
+For cross-team resources/dependencies, keep ownership, read/write boundaries, handoff artifacts, version/snapshot rules, merge/conflict responsibility, and escalation paths explicit rather than relying on managerial summaries alone.
 
-## Management contract
+## Legacy evidence-provenance residual
 
-Every manager should receive:
-
-- an explicit scope and objective;
-- authority and permission boundaries;
-- budget and resource constraints;
-- quality and completion criteria;
-- the agents, models, and tools it may use;
-- a reporting schema for progress, evidence, risks, and unresolved work;
-- escalation conditions.
-
-Managers should summarize subordinate work without hiding evidence required for validation.
-
-## When hierarchy helps
-
-Use hierarchy when it:
-
-- reduces context overload;
-- separates specialized policies and toolsets;
-- enables meaningful parallel execution;
-- isolates permissions or infrastructure;
-- provides clear ownership for large project areas;
-- allows local decisions without losing global coordination.
-
-Do not add management layers when a simple workflow graph or one orchestrator-worker loop is easier to inspect and operate.
-
-## Cross-team dependencies
-
-The top-level orchestrator should own dependencies between units. Lower-level managers should not silently modify another unit's state or assumptions.
-
-For shared resources, define:
-
-- the owning unit;
-- read and write boundaries;
-- handoff artifacts;
-- version or snapshot rules;
-- merge and conflict-resolution responsibility;
-- escalation paths.
-
-## Trade-offs
-
-- additional managers consume tokens and execution time;
-- summaries may lose important detail;
-- errors can propagate upward through trusted reports;
-- unclear scopes create duplicated or abandoned work;
-- excessive hierarchy can obscure accountability;
-- local optimization may conflict with the global objective.
-
-## Established usage
-
-LangGraph documents multi-level supervisor systems in which a top-level supervisor manages subordinate supervisor teams. AutoGen documents teams with planning agents and model-selected participants, demonstrating related manager-and-specialist coordination patterns.
-
-Sources:
+The legacy source cited:
 
 - [LangGraph Multi-Agent Supervisor](https://langchain-ai.github.io/langgraphjs/reference/modules/langgraph-supervisor.html)
 - [AutoGen Selector Group Chat](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/selector-group-chat.html)
 
-## Related concepts
+Canonical Manager-Worker metadata currently uses other current sources. Preserve these exact legacy framework references until their historical/implementation evidence relationship is explicitly resolved.
 
-- [Multi-Agent Systems](../../)
-- [Orchestrator-Worker Architecture](../orchestrator-worker/)
-- [Task Decomposition](../../../task-decomposition/)
-- [Agent State](../../../agent-state/)
+These hierarchy-selection and evidence-provenance fragments remain migration source material until their exact learning, decision, or research/evidence owners are verified.
