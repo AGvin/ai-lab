@@ -1,45 +1,32 @@
 # Context Window
 
-The context window is the maximum tokenized information a model can consider during one request, including instructions, conversation history, retrieved documents, tool results, and generated output.
+Legacy residual retained for application-level context composition, prompt/retrieval budgeting, and conversation-truncation guidance that are intentionally outside the canonical Context Window concept owner.
+
+> **Migration note:** Context-window identity, nominal-versus-effective capacity, provider accounting boundaries, tokenization/modality effects, separation from persistent memory/retrieval/cache/history, long-context capability limits, and qualified compute/memory/latency/cost implications are already preserved in `docs/sub/concepts/sub/models/sub/interaction/sub/context/sub/context-window/`. The remaining material below stays here until its exact learning, application-engineering, retrieval, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application-context composition residual
 
-A larger advertised context window allows more material to be supplied, but it does not guarantee that every detail will be used equally well. Relevant facts can be diluted by unrelated content, repeated instructions, or information placed far from the current question. Effective context is therefore both a capacity constraint and an information-selection problem.
+In a concrete chat, agent, or retrieval application, the supplied model context may include system/developer instructions, conversation turns, tool schemas and tool results, files or multimodal inputs, retrieved chunks, and capacity reserved for generation. Which of these items count toward which service limit depends on the concrete model, representation, runtime, and provider interface.
 
-## What occupies context
+This application-level composition is not part of the generic context-window definition and remains migration source material until its exact application-engineering or learning owner is verified.
 
-- System and developer instructions.
-- User and assistant conversation history.
-- Tool schemas, tool results, files, images, and retrieved chunks.
-- The model's planned or generated completion.
+## Prompt and retrieval budgeting residual
 
-## Practical use
+Useful operational practices include:
 
-- Reserve output space instead of filling the entire window with input.
-- Summarize or remove stale conversation history.
-- Retrieve only evidence relevant to the current task.
-- Place critical constraints clearly and repeat them only when necessary.
-- Test long-context behavior with realistic documents rather than relying only on the published limit.
+- reserve enough generation capacity instead of filling the available request budget entirely with input when the concrete interface requires a shared or reserved budget;
+- summarize or remove stale conversation material when it no longer helps the current task;
+- retrieve only evidence that is relevant to the current request instead of appending every available document;
+- present critical constraints clearly and avoid unnecessary repetition;
+- test long-context behavior with representative documents and workloads rather than assuming the published capacity equals reliable working capacity.
 
-## Trade-offs and limitations
+## Session and truncation residual
 
-Longer context generally increases memory use, processing time, and cost. Some runtimes use a larger KV cache as context grows. Models may also show degraded recall or instruction adherence near their practical limits.
+Do not assume old conversation turns remain available to the model after an application truncates, summarizes, replaces, or otherwise compacts history. Persistent application state and model-visible context are separate concerns.
 
-## Common mistakes
-
-- Treating the context limit as a reliable working capacity.
-- Appending every available document instead of retrieving selectively.
-- Forgetting that the expected output also consumes tokens.
-- Assuming old chat messages remain available after truncation or summarization.
-
-## Related concepts
-
-- [Model Usage and Generation](../../)
-- [Tokens and Tokenization](../tokens-and-tokenization/)
-- [Context Caching](../../../inference-and-serving/sub/context-caching/)
-- [Chunking](../../../retrieval-and-knowledge/sub/chunking/)
+These operational context-management practices remain migration source material until their exact learning, retrieval, memory/context-engineering, or decision-support owners are verified.
