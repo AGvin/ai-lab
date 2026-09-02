@@ -1,67 +1,36 @@
 # LoRA
 
-Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning method that learns compact low-rank updates while keeping the original model weights frozen.
+Legacy residual retained for experiment workflow, base/adapter versioning, multi-adapter deployment, holdout evaluation, and operational selection guidance that are intentionally outside the canonical Low-Rank Adaptation concept owner.
 
-## Core idea
+> **Migration note:** LoRA identity, low-rank update semantics, PEFT/adapters/quantization distinctions, target-module variability, rank/scaling/configuration boundaries, base-coupled artifact identity, merge semantics, resource limits, and behavioral-regression risks are already preserved in `docs/sub/concepts/sub/models/sub/training-and-adaptation/sub/fine-tuning/sub/parameter-efficient/sub/lora/`. The remaining material below stays here until its exact learning, training-engineering, runtime, evaluation, artifact-management, or decision-support owner is verified.
 
-A full fine-tune updates a large portion of a model's parameters. LoRA instead represents the update for selected layers as the product of two much smaller trainable matrices. The base model remains unchanged, while the adapter stores only the learned difference.
+## Translations
 
-This allows one base model to support multiple compact task, domain, character, or style variants.
+- English
+- [Українська](./l10n/uk_UA/)
 
-## How it works
+## Experiment workflow residual
 
-1. Select target modules, commonly attention or projection layers.
-2. Freeze the original model weights.
-3. Attach trainable low-rank matrices to the selected modules.
-4. Train only the adapter parameters on the adaptation dataset.
-5. Keep the adapter separate or merge it into compatible base weights for deployment.
+Start from a concrete adaptation objective and establish an unchanged-base baseline before choosing rank, target modules, learning rate, regularization, or training duration. Use separate validation and holdout examples so a visually or behaviorally appealing training sample does not become the evaluation evidence for the adapter.
 
-Important settings include rank, scaling factor, target modules, learning rate, dropout, dataset quality, and training duration.
+Record the exact base model/revision, tokenizer or text/image processor, target modules, rank/scaling convention, dataset version, training configuration, and resulting adapter identity needed to reproduce the experiment.
 
-## Practical uses
+## Adapter lifecycle residual
 
-- Adapt a language model to a domain, output convention, or recurring task.
-- Add a visual style, subject, character, or product concept to an image model.
-- Maintain several small variants without storing a full model copy for each one.
-- Share adaptation artifacts while requiring users to obtain the compatible base model separately.
+Treat a LoRA artifact as versioned state coupled to a specific base and target-module mapping. Revalidate after base-model, processor, library/runtime, quantization, or architecture changes instead of relying on family-name compatibility.
 
-## Example
+Keep provenance when an adapter is merged into base weights so the resulting derivative can be traced back to the base and adaptation artifact. If adapters remain separate, keep activation/switching rules and rollback explicit.
 
-A team can keep one general-purpose coding model and train separate LoRA adapters for an internal framework, documentation style, and review workflow. The runtime loads the base model once and activates the adapter needed for the current task.
+## Multi-adapter deployment residual
 
-## Compatibility
+When one base serves several LoRA variants, measure load/switch latency, memory overhead, concurrency behavior, cache interactions, and runtime support on the actual serving path. Test combinations explicitly before composing adapters; independently useful deltas can interfere when activated or merged together.
 
-A LoRA adapter is tied to assumptions about the training setup. Verify:
+Choose separate versus merged deployment according to switching, provenance, distribution, runtime, and operational requirements rather than assuming one form is universally simpler.
 
-- exact base model family and revision;
-- tokenizer or text encoder compatibility;
-- target layer names and architecture;
-- adapter format and runtime support;
-- whether deployment loads adapters dynamically or requires merged weights.
+## Evaluation and selection residual
 
-An adapter created for one checkpoint should not be assumed to work correctly with another model that merely has a similar name.
+Compare the adapted model against the unchanged base on both the target behavior and important retained capabilities. Include representative failure cases and check for memorization, style/task regressions, safety changes, or artifacts introduced by the training data.
 
-## Trade-offs and limitations
+Before training, verify that prompting, tools, structured outputs, retrieval, or another application-level technique cannot satisfy the requirement more cheaply or with better freshness/provenance. LoRA changes learned behavior; it is not a dependable factual-update mechanism for rapidly changing attributable knowledge.
 
-- Low-rank capacity may be insufficient for large behavioral changes.
-- Poor training data can introduce artifacts, regressions, or memorized errors.
-- Multiple adapters may interact unpredictably when combined.
-- Merging simplifies deployment but removes independent adapter switching.
-- LoRA changes behavior; it is not a dependable replacement for RAG when facts must remain current or traceable.
-
-## Practical checklist
-
-- Can prompting, tools, structured output, or RAG solve the problem without training?
-- Is the exact base model recorded and available?
-- Are training, validation, and holdout examples separated?
-- Which target modules and rank fit the intended change?
-- How will the adapter be evaluated against the unchanged base model?
-- Will it remain separate, be combined with others, or be merged for deployment?
-
-## Related concepts
-
-- [Training and Adaptation](../../)
-- [Parameter-Efficient Fine-Tuning](../parameter-efficient-fine-tuning/)
-- [QLoRA](../qlora/)
-- [Fine-Tuning](../fine-tuning/)
-- [RAG](../../../retrieval-and-knowledge/sub/rag/)
+These experiment, lifecycle, deployment, evaluation, and selection practices remain migration source material until their exact learning, training-engineering, runtime, evaluation, artifact-management, or decision-support owners are verified.
