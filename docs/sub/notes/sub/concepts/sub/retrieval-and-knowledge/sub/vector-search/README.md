@@ -1,38 +1,30 @@
 # Vector Search
 
-Vector search finds items whose embedding vectors are nearest to a query vector according to a similarity or distance metric.
+Legacy residual retained for ANN evaluation, index/candidate tuning, representation-migration, and retrieval-lifecycle guidance that are intentionally outside the canonical Vector Search concept owner.
+
+> **Migration note:** Vector-search identity, semantic-retrieval separation, exact-versus-approximate nearest-neighbor boundaries, index-family variability, metric/representation compatibility, score non-comparability, and separation from the canonical Embeddings and Vector Databases owners are already preserved in `docs/sub/concepts/sub/information-retrieval/sub/vector-search/`. The remaining material below stays here until its exact learning, retrieval-engineering, evaluation, vector-database, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## ANN evaluation residual
 
-Exact nearest-neighbor search compares a query with every vector and becomes expensive at scale. Approximate nearest-neighbor indexes trade a small amount of recall for much faster search. Common index families organize vectors into graphs, clusters, or compressed partitions.
+Measure approximate-nearest-neighbor behavior against an exact-search or otherwise appropriate reference on representative data when recall loss matters to the workload. Evaluate under the concrete vector distribution, metric, filters, candidate budget, concurrency, and hardware rather than selecting index settings from synthetic benchmarks alone.
 
-## Practical considerations
+Keep nearest-neighbor recall separate from application relevance or answer quality: recovering the mathematically nearest vectors does not prove that those items contain the evidence the downstream task needs.
 
-- Choose a metric compatible with how the embedding model was trained.
-- Measure recall against an exact-search baseline on representative data.
-- Tune candidate count, index parameters, and memory use together.
-- Apply metadata and authorization filters before returning content.
-- Rebuild or migrate indexes when vector dimensions or models change.
+## Index and candidate-tuning residual
 
-## Trade-offs and limitations
+Tune search/candidate breadth, index parameters, memory/storage use, latency, and target recall together. More aggressive approximation can reduce resource use or latency while missing useful neighbors; wider candidate exploration can improve recall while increasing computation and downstream reranking cost.
 
-Approximate indexes may miss the true nearest items. High-dimensional vectors consume substantial memory. Similarity search also returns what is mathematically close, which is not always what is useful for the final task.
+Use the similarity/distance metric and normalization contract required by the stored representation rather than choosing a metric by convention.
 
-## Common mistakes
+## Representation and lifecycle residual
 
-- Using Euclidean distance when the model expects normalized cosine similarity.
-- Comparing scores across different indexes as though they were calibrated.
-- Choosing index settings from synthetic benchmarks only.
-- Forgetting deletion, versioning, or stale-vector cleanup.
+Treat embedding/model version, vector dimension, preprocessing, normalization, and other representation-contract changes as index lifecycle events. Re-encode and rebuild or migrate stored vector state when compatibility is not explicitly preserved, and keep source/version identity sufficient to remove stale derived vectors.
 
-## Related concepts
+Apply metadata and authorization constraints through their canonical filtering/access-control contracts, and account for deletion, replacement, versioning, and stale-index cleanup so obsolete vectors do not remain retrievable after source changes.
 
-- [Retrieval and Knowledge](../../)
-- [Embeddings](../embeddings/)
-- [Vector Databases](../vector-databases/)
-- [Reranking](../reranking/)
+These evaluation, tuning, representation-migration, and lifecycle practices remain migration source material until their exact learning, retrieval-engineering, evaluation, vector-database, or decision-support owners are verified.
