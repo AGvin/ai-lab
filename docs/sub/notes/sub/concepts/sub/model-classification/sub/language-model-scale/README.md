@@ -1,82 +1,45 @@
 # Small and Large Language Models
 
-Small Language Models (SLMs) and Large Language Models (LLMs) are relative language-model scale classes. They describe model scale and operational footprint, not a universal parameter-count threshold or deployment mode.
+Legacy residual retained for operational deployment tendencies, model-selection workflow, portfolio strategy, and classification practice that are intentionally outside the canonical SLM/LLM scale concept owner.
+
+> **Migration note:** SLM/LLM relative-scale semantics, the absence of one universal parameter threshold, scale-versus-deployment separation, quantization non-reclassification, dense/MoE independence, modality/frontier independence, and the need to qualify resource/capability comparisons are already preserved in `docs/sub/concepts/sub/models/sub/classification/sub/language-model-scale/`. The remaining material below stays here until its exact learning, deployment, model-selection, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core distinction
+## Operational-pattern residual
 
-An SLM is relatively compact within the relevant model generation or comparison context. It is commonly selected when latency, memory use, cost, offline operation, device deployment, or high request volume matters.
+In practice, relatively smaller language models are often considered when memory pressure, latency, cost, offline operation, constrained-device deployment, or high request volume matters. Relatively larger models are often considered when broader capacity or stronger measured task performance justifies additional memory, computation, serving infrastructure, or provider cost.
 
-An LLM is relatively large within that context. It commonly provides greater capacity and broader capability, but usually requires more memory, computation, serving infrastructure, or provider cost.
+These are deployment and decision tendencies rather than SLM/LLM definitions. A smaller model may be provider-hosted, and a larger model may run locally when the concrete artifact, representation, runtime, and hardware make that feasible.
 
-There is no universal parameter boundary that permanently separates SLMs from LLMs. Model generations, architectures, modalities, and deployment techniques change what counts as small or large in practice.
+Ecosystem maturity is also independent from scale: either class may be experimental, emerging, mainstream, or legacy.
 
-## Typical operational patterns
+## Selection-workflow residual
 
-| Dimension | SLM tendency | LLM tendency |
-| --- | --- | --- |
-| Relative scale | Smaller within the relevant comparison set | Larger within the relevant comparison set |
-| Resource demand | Lower memory and compute requirements | Higher memory and compute requirements |
-| Deployment fit | Edge devices, laptops, workstations, constrained services, high-volume routes | Powerful workstations, multi-GPU systems, data centers, or provider-hosted services |
-| Latency and throughput | Often easier to optimize for low latency or high volume | Often trades more resources for capability |
-| Task fit | Bounded, repetitive, specialized, privacy-sensitive, or cost-sensitive work | Complex, broad, ambiguous, or high-capability work |
+A practical selection workflow is to:
 
-These are tendencies, not definitions. An SLM can be provider-hosted, and an LLM can run locally when hardware, quantization, and runtime support make that practical.
+1. define the task, acceptance threshold, failure cost, privacy boundary, latency target, and budget;
+2. test the smallest plausible model on representative inputs in the real target environment;
+3. retain it when measured accepted-result quality is sufficient;
+4. escalate difficult or uncertain cases to a stronger model only when the measured improvement justifies the additional cost or constraints;
+5. validate the complete route rather than assuming parameter count or a scale label predicts success.
 
-## Independent dimensions
+Possible portfolio patterns include one generalist larger model, one specialized smaller model, or a cascade in which a smaller model handles routine work and a stronger model handles exceptions.
 
-Scale must be recorded separately from other model properties:
+This workflow and portfolio guidance remain decision-support material rather than scale-concept truth.
 
-- **Deployment:** local, self-hosted, and provider-hosted describe where inference runs.
-- **Representation:** quantization reduces numerical precision and deployment cost but does not convert the underlying LLM into an SLM.
-- **Architecture:** dense and Mixture of Experts describe parameter activation, not scale class.
-- **Capability position:** an SLM or LLM may or may not be a frontier model.
-- **Ecosystem maturity:** either class may be experimental, emerging, mainstream, or legacy.
-- **Modality:** text-only and multimodal models may exist in either relative scale class.
+## Classification-practice residual
 
-## Selection guidance
+When a concrete comparison uses `SLM` or `LLM`:
 
-Prefer the smallest model that consistently satisfies the required acceptance criteria in the real environment.
+- classify the exact model version or artifact rather than only the provider;
+- state the comparison context when the scale label could be ambiguous;
+- use `Unclear` rather than inventing a threshold that the evidence does not support;
+- record parameter counts separately when known and useful;
+- for MoE models, distinguish total from active parameters when both matter;
+- do not infer local feasibility, runtime cost, or task quality from the scale label alone.
 
-A practical workflow is:
-
-1. define the task, quality threshold, failure cost, privacy boundary, latency target, and budget;
-2. test an appropriate SLM against representative inputs;
-3. retain it when measured quality is sufficient;
-4. escalate difficult or uncertain cases to a stronger LLM when that improves accepted-result quality enough to justify the added cost;
-5. validate the complete route rather than assuming parameter count predicts success.
-
-Common portfolio patterns include one generalist LLM, one specialized SLM, or a cascade in which an SLM handles routine work and an LLM handles exceptions.
-
-## Classification guidance
-
-When a comparison uses `SLM` or `LLM`:
-
-- classify the exact model version or artifact, not only the provider;
-- explain the comparison context when the label could be ambiguous;
-- use `Unclear` rather than inventing a precise threshold;
-- record parameter counts separately when they are known and useful;
-- for MoE models, record total and active parameters separately;
-- do not infer local feasibility from the scale label alone.
-
-## Common mistakes
-
-- Defining one permanent parameter threshold for every model generation and modality.
-- Calling every locally runnable model an SLM.
-- Calling a quantized LLM an SLM because its file fits on one device.
-- Assuming every LLM requires a cluster or provider API.
-- Selecting a larger model without measuring whether it improves accepted results.
-- Comparing an MoE model's total parameters directly with a dense model's active parameters.
-
-## Related concepts
-
-- [Model Classification](../../)
-- [Model Architectures](../../../model-architectures/)
-- [Dense and Sparse Architectures](../../../model-architectures/sub/dense-and-sparse-architectures/)
-- [Mixture of Experts](../../../model-architectures/sub/mixture-of-experts/)
-- [Quantization](../../../inference-and-serving/sub/quantization/)
-- [Model Selection](../../../evaluation-and-operations/sub/model-selection/)
+These operational classification practices remain migration source material until their exact model-reference, learning, or decision-support owner is verified.
