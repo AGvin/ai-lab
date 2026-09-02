@@ -3,6 +3,7 @@
 ## Requirements
 
 - Use the reader-facing title `Frontier Models`.
+- Use `frontier model` as the canonical AI Lab term; do not introduce `FLM` as a repository abbreviation because it is ambiguous and is not part of the selected terminology.
 - Define a frontier model as a model whose demonstrated capabilities place it at or near the leading capability boundary for a stated scope and time; present frontier status as relative and time-sensitive rather than as a permanent intrinsic class.
 - Acknowledge that authoritative sources also use broader `frontier AI` terminology for particularly capable general-purpose AI systems; keep this node's model-level meaning explicit when terminology could otherwise include complete systems or scaffolds.
 - When applying frontier status to a concrete model, require the exact model/version or service snapshot, the capability scope being assessed, the supporting evidence, and the relevant verification date.
