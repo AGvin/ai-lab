@@ -1,41 +1,35 @@
 # Reranking
 
-Reranking applies a more precise relevance model to a small set of candidates returned by an initial retriever.
+Legacy residual retained for candidate-budget tuning, staged retrieval evaluation, diversity handling, and downstream-context selection guidance that are intentionally outside the canonical Reranking concept owner.
+
+> **Migration note:** Reranking identity, first-stage retrieval versus reranking boundaries, cross-encoder and alternative reranker families, hybrid-fusion distinction, score non-guarantees, and candidate-recall versus latency/precision trade-offs are already preserved in `docs/sub/concepts/sub/information-retrieval/sub/reranking/`. The remaining material below stays here until its exact learning, retrieval-engineering, evaluation, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Candidate-budget residual
 
-Fast retrievers optimize recall and may return many weak candidates. A reranker examines the query and each candidate more deeply, then reorders or filters them. Cross-encoder rerankers often provide better relevance because they process the query and passage together, but they are slower than embedding similarity.
+Tune the initial candidate count and the final retained count separately. A reranker cannot repair first-stage omissions, so candidate generation needs enough recall to contain the required evidence while the reranking stage remains small enough to satisfy latency and cost constraints.
 
-## Practical use
+Do not choose one top-k value as a universal default. The useful candidate budget depends on corpus size, retriever quality, reranker cost, query difficulty, and downstream context limits.
 
-- Improve the evidence passed to a RAG model.
-- Combine candidates from semantic and lexical search.
-- Remove near-duplicate or weakly related chunks.
-- Select the best few passages under a tight context budget.
+## Staged-evaluation residual
 
-## Trade-offs and limitations
+Evaluate retrieval stages independently enough to diagnose where failures enter the pipeline:
 
-Reranking adds latency and compute proportional to the number of candidates. If the initial retriever fails to include the correct document, the reranker cannot recover it. Reranker scores are also task- and model-specific.
+- measure first-stage recall before reranking;
+- measure ordering/precision or another appropriate relevance objective after reranking;
+- inspect whether reranking improves the evidence actually passed downstream;
+- measure final task quality separately when a generation or decision stage follows retrieval.
 
-## Good practice
+Optimizing a reranker metric alone can hide missing first-stage evidence or downstream failures.
 
-Tune the initial candidate count and final context count separately. Evaluate retrieval recall before reranking and precision after reranking. Preserve diversity when a question requires evidence from several documents.
+## Diversity and context-selection residual
 
-## Common mistakes
+When a task requires evidence from multiple documents, perspectives, sections, or time periods, avoid pruning every supporting passage merely because several candidates discuss the same topic. Distinguish true near-duplicates from complementary evidence before final context selection.
 
-- Reranking only the top two or three weak candidates.
-- Passing every reranked result to the model regardless of score.
-- Optimizing reranker metrics without measuring final answer quality.
-- Removing supporting passages because they repeat a topic from another source.
+Do not pass every reranked candidate downstream automatically. Apply the concrete application's relevance, diversity, evidence, context-budget, and access constraints after reranking.
 
-## Related concepts
-
-- [Retrieval and Knowledge](../../)
-- [Hybrid Search](../hybrid-search/)
-- [Retrieval Evaluation](../../../evaluation-and-operations/sub/retrieval-evaluation/)
-- [Context Window](../../../model-usage-and-generation/sub/context-window/)
+These candidate-budget, staged-evaluation, diversity, and context-selection practices remain migration source material until their exact learning, retrieval-engineering, evaluation, or decision-support owners are verified.
