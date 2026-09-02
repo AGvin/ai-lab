@@ -1,92 +1,34 @@
 # Multi-Agent Group Chat
 
-A multi-agent group chat places several agents in a shared conversation context and uses a turn-selection policy to decide which participant acts next.
+Legacy residual retained for practical pattern-fit guidance and exact legacy AutoGen evidence provenance that are intentionally outside the canonical Group Chat concept owner.
+
+> **Migration note:** Group-chat identity, shared-conversation and speaker-selection invariants, context synchronization/minimization, distinctions from handoffs/manager-worker/blackboard, participant authority and permissions, order/anchoring effects, disagreement, termination, side-effect coordination, context-growth controls, and system-level evaluation are already preserved in `docs/sub/concepts/sub/agents-and-autonomy/sub/coordination-and-communication/sub/group-chat/`. The remaining material below stays here until its exact learning/decision owner and legacy framework-evidence provenance are verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Status
+## Pattern-fit residual
 
-Established multi-agent interaction pattern.
+Group chat can be useful when collaboration genuinely depends on participants seeing and reacting to one another's evolving contributions, for example when:
 
-## Core idea
-
-All participants receive some or all of the same conversation history. A group-chat manager, deterministic rule, or model selects the next speaker. Agents may have different roles, prompts, tools, models, or permissions while collaborating through one shared thread.
-
-Common turn-selection policies include:
-
-- round robin;
-- fixed sequence;
-- model-selected next speaker;
-- rule-based selection;
-- manual or human selection;
-- termination after approval, consensus, a maximum number of turns, or an external event.
-
-## When it fits
-
-Use group chat when:
-
-- collaboration depends on seeing other participants' current contributions;
 - the next useful role cannot always be predetermined;
-- a writer, critic, domain expert, and editor need to iteratively refine one artifact;
-- a visible conversational transcript is useful for debugging or review;
-- agents must negotiate or clarify responsibility dynamically.
+- a writer, critic, domain expert, and editor iteratively refine one artifact;
+- visible conversational exchange is useful for review/debugging; or
+- participants need to negotiate, clarify responsibility, or preserve explicit disagreement.
 
-## Shared context trade-offs
+Prefer a simpler manager-worker, routing, parallel/advisory, or deterministic workflow when specialists do not need a shared evolving conversation, when parallel independence matters more than deliberation, or when broad shared context conflicts with least-privilege/data-isolation requirements.
 
-Shared context makes coordination simple but can become expensive and noisy. Every participant may receive irrelevant messages, repeated artifacts, or misleading claims from other agents.
+Shared conversation can create coordination simplicity at the cost of sequential latency, growing context, repeated artifacts, anchoring, correlated errors, and conversational activity that looks like progress without improving the result. Compare against a simpler coordination baseline before adopting the pattern.
 
-Control context growth through:
+## Legacy evidence-provenance residual
 
-- structured messages rather than unrestricted prose;
-- role-specific context filters;
-- summaries and checkpoints;
-- artifact references instead of repeated full content;
-- bounded turn counts;
-- explicit termination conditions.
-
-## Turn management
-
-A turn manager should prevent:
-
-- one agent monopolizing the conversation;
-- agents repeatedly handing work back and forth;
-- selection of agents that cannot contribute to the current state;
-- endless discussion after acceptance criteria are met;
-- accidental execution of consequential actions during an advisory discussion.
-
-Model-based speaker selection is flexible but adds another model decision that must be evaluated for routing quality and cost.
-
-## Strengths
-
-- straightforward collaboration model;
-- shared visibility into current reasoning artifacts and decisions;
-- flexible role composition;
-- supports critique and iterative refinement;
-- easy to prototype in common multi-agent frameworks.
-
-## Limitations
-
-- usually sequential rather than truly parallel;
-- context and token use grow with every turn;
-- participants can reinforce incorrect assumptions;
-- conversational activity can be mistaken for progress;
-- shared context may violate least-privilege or information-isolation requirements.
-
-## Established usage
-
-AutoGen documents group chat as a core design pattern with round-robin and model-selected speaker policies. It also supports nested teams, where a participant may itself be another team.
-
-Sources:
+The legacy source documented AutoGen group chat as an established implementation pattern and cited:
 
 - [AutoGen Group Chat design pattern](https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/design-patterns/group-chat.html)
 - [AutoGen teams](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tutorial/teams.html)
 
-## Related concepts
+The canonical Group Chat entity now uses current Microsoft Agent Framework documentation rather than these exact AutoGen references. Preserve the legacy links as provenance/migration evidence until their historical relationship and any remaining reusable evidence value are explicitly resolved.
 
-- [Multi-Agent Systems](../../)
-- [Hierarchical Orchestration](../hierarchical-orchestration/)
-- [Debate and Jury](../debate-and-jury/)
-- [Agent State](../../../agent-state/)
+These pattern-selection and evidence-provenance fragments remain migration source material until their exact learning, decision, or research/evidence owners are verified.
