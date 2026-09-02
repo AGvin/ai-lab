@@ -1,39 +1,27 @@
 # Quality and Cost Trade-Offs
 
-Quality and cost trade-offs describe how model capability, context, inference settings, validation, and operational controls affect both result quality and total expense.
+Legacy residual retained for practical quality-versus-cost decision strategies that are intentionally outside the reusable AI System Cost and Capacity concept owner and outside concrete model-selection recommendations.
+
+> **Migration note:** Cost per accepted result, acceptance-quality boundaries, full-system cost classes, caching and capacity trade-offs, and the rule that cost optimization must not silently weaken required quality, reliability, privacy, safety, or policy constraints are already preserved in `docs/sub/concepts/sub/ai-engineering/sub/cost-and-capacity/`. Concrete model-choice consequences and task-fit recommendations remain under `docs/sub/catalog/sub/models/sub/selection/`. The remaining material below stays here until its exact learning, workflow, evaluation, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Decision-strategy residual
 
-Higher spending does not always improve useful quality. A larger model may solve difficult tasks with fewer retries, while a smaller model may handle routine extraction more efficiently. Retrieval, tools, and good workflow design can outperform simply increasing model size.
+Define the minimum accepted quality and failure boundary before optimizing cost. Then compare eligible solutions by the total cost of accepted work, including retries, validation, human review, engineering/runtime overhead, and consequential errors where they materially change the decision.
 
-## Practical strategies
+Practical strategies can include:
 
-- Define minimum quality thresholds before optimizing cost.
-- Route tasks by capability requirement.
-- Use deterministic tools for exact operations.
-- Reduce irrelevant context rather than truncating critical evidence.
-- Cache stable results.
-- Escalate only failures or high-risk cases.
+- routing routine work to a cheaper eligible model or path;
+- escalating difficult, failed, or high-risk cases to stronger capability;
+- using deterministic tools for exact operations instead of paying for probabilistic generation;
+- reducing irrelevant context while preserving evidence required for correctness;
+- caching stable reusable results where correctness, privacy, and invalidation rules permit it;
+- retaining independent validation when removing it would materially increase failure cost or severity.
 
-## Trade-offs and limitations
+A stronger or more expensive model is not automatically the most economical choice, and a lower token/request price is not automatically cheaper when success rate, retries, human correction, operational complexity, or error impact differ. Likewise, benchmark deltas are not business value unless they map to the actual acceptance criteria and workload.
 
-Cost includes API usage, hardware, latency, engineering, human review, and error impact. A low-cost workflow that creates expensive mistakes is not economical. Conversely, using the strongest model everywhere may provide little additional value.
-
-## Common mistakes
-
-- Comparing price per token without success rate.
-- Treating benchmark score differences as business value.
-- Removing validation to save latency.
-- Ignoring operational complexity of local deployment.
-
-## Related concepts
-
-- [Evaluation and Operations](../../)
-- [Cost Management](../cost-management/)
-- [Model Selection](../model-selection/)
-- [Model Routing](../model-routing/)
+These quality/cost optimization strategies remain migration source material until their exact learning, workflow, evaluation, or decision-support owners are verified.
