@@ -1,43 +1,32 @@
 # Tool Calling
 
-Tool calling allows a model to select a registered external operation and produce arguments for that operation.
+Legacy residual retained for practical tool-interface design and application guidance that is intentionally outside the canonical Tool Use concept owner.
+
+> **Migration note:** Tool-use identity, tool request versus validated execution, host-owned authorization/validation/side effects/error handling, tool-result versus success semantics, schema/interface variability, and the narrower function-calling boundary are already preserved in `docs/sub/concepts/sub/agents-and-autonomy/sub/tool-use/`. The remaining material below stays here until its exact learning, tool-design, execution-security, reliability, or project owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application residual
 
-The model does not execute the tool directly. It emits a structured request, the host application validates and executes it, and the result is returned to the model or workflow. This separation is essential because model output is untrusted input to the execution layer.
+Tool interfaces can connect model-directed workflows to capabilities such as:
 
-## Typical flow
+- search and retrieval;
+- databases and internal services;
+- calendars, email, and source control;
+- code execution or file operations; and
+- bounded business/application operations.
 
-1. The application exposes tool names, descriptions, and argument schemas.
-2. The model chooses a tool or responds without one.
-3. The application validates permissions and arguments.
-4. The tool runs in a controlled environment.
-5. The result is added to state or context.
-6. The model decides whether more work is required.
+These are application examples rather than part of the universal tool-use definition.
 
-## Practical use
+## Tool-design residual
 
-Tool calling connects models to search, databases, calendars, email, source control, code execution, and internal services. Tools should be narrow, clearly named, and designed around business capabilities rather than unrestricted shell access.
+Prefer bounded capabilities with clear names, descriptions, argument contracts, permission scope, and result semantics over unnecessarily generic execution surfaces. Overlapping or ambiguous tools can reduce selection reliability, while very large tool descriptions/schemas can consume context and make routing harder.
 
-## Trade-offs and limitations
+Treat model-produced arguments as untrusted even when they satisfy a schema. Validate semantic constraints and authorization at execution time, and return compact structured results that distinguish successful completion, failure, partial completion, or ambiguous external state where the workflow needs those distinctions.
 
-Tool descriptions consume context, and overlapping tools can confuse selection. Even valid arguments may be semantically wrong or unsafe. Network failures and partial side effects require explicit recovery logic.
+Network failures, timeouts, and side effects require explicit retry/idempotency/reconciliation handling. A proposed or accepted tool call is not evidence that the external operation completed.
 
-## Common mistakes
-
-- Executing model arguments without validation.
-- Exposing powerful generic tools instead of bounded operations.
-- Returning huge unfiltered tool results to the model.
-- Assuming a tool call means the requested action succeeded.
-
-## Related concepts
-
-- [Agents and Automation](../../)
-- [Function Calling](../function-calling/)
-- [Least Privilege](../../../safety-privacy-and-reliability/sub/least-privilege/)
-- [Structured Output](../../../model-usage-and-generation/sub/structured-output/)
+These tool-interface and execution practices remain migration source material until their exact learning, engineering, security, reliability, or project owners are verified.
