@@ -1,48 +1,36 @@
 # Large Language Models
 
-A large language model is a neural network trained to model and generate token sequences at substantial scale.
+Legacy residual retained for post-training, application/system integration, model-selection, deployment, and failure guidance that is intentionally outside the canonical language-model identity and language-model-scale owners.
 
-`LLM` is a relative scale classification. The canonical comparison of Small Language Models and Large Language Models is maintained in [Small and Large Language Models](../../../model-classification/sub/language-model-scale/).
+> **Migration note:** General language-model identity and category boundaries are already preserved in `docs/sub/concepts/sub/models/sub/classification/sub/language-models/`. `LLM` as a relative scale descriptor, including the fact that scale is not defined by one universal parameter threshold and is independent from quantization or deployment location, is already preserved in `docs/sub/concepts/sub/models/sub/classification/sub/language-model-scale/`. The remaining material below stays here until its exact training, interaction, evaluation, engineering, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Post-training residual
 
-Most modern LLMs are trained through next-token prediction or related objectives. This produces broad language, coding, reasoning, and pattern-completion capabilities. Instruction tuning and preference optimization then shape the base model into a more useful assistant or task model.
+Modern language-model development often uses instruction tuning and preference-oriented post-training to shape a base model toward assistant or task behavior. These are training/adaptation concerns rather than intrinsic language-model or LLM-scale semantics.
 
-## Capabilities
+## Application and system-integration residual
 
-- Generate, summarize, transform, and classify text.
-- Produce and analyze code.
-- Use tools through structured calls.
-- Work with retrieved documents.
-- Follow natural-language instructions.
+Language models can support text generation, summarization, transformation, classification, code-related work, structured tool calls, retrieved-document workflows, and natural-language instruction following.
 
-## Practical use
+An application should treat the model as a probabilistic component rather than a database or complete system. Prompts, tools, retrieval, state, validation, permissions, and other application controls may be layered around it according to the target workflow.
 
-An LLM should be treated as a probabilistic component. Applications add prompts, tools, retrieval, state, validation, and permissions around it. Model selection depends on quality, context size, latency, cost, deployment, and safety requirements.
+These capabilities and scaffolding patterns remain migration source material until their exact interaction, learning, or AI-engineering owners are verified.
 
-## Trade-offs and limitations
+## Model-selection and deployment residual
 
-LLMs can hallucinate, mishandle exact calculations, and reproduce training-data biases. Their knowledge is not automatically current or attributable. Larger models often improve capability but increase cost and resource use.
+Model selection can depend on demonstrated quality, usable context, latency, cost, deployment constraints, resource requirements, and safety needs. Parameter count or an `LLM` label alone is not sufficient evidence of practical fit.
 
-## Common mistakes
+Larger models can require more resources, but actual capability, memory use, throughput, latency, and deployment feasibility must be evaluated for the concrete model, representation, runtime, hardware, and workload.
 
-- Treating generated text as database output.
-- Assuming the model knows current private information.
-- Using an LLM for deterministic tasks without validation.
-- Comparing models only by parameter count.
-- Treating LLM as a synonym for provider-hosted or cluster-only deployment.
-- Reclassifying a quantized LLM as an SLM because its artifact is smaller.
+## Failure and validation residual
 
-## Related concepts
+Language models can produce unsupported or incorrect content, mishandle exact calculations, reproduce biases, and lack current or attributable knowledge. Deterministic or high-precision workflows therefore require appropriate validation rather than treating generated output as authoritative state.
 
-- [Foundations and Architecture](../../)
-- [Small and Large Language Models](../../../model-classification/sub/language-model-scale/)
-- [Model Classification](../../../model-classification/)
-- [Transformers](../transformers/)
-- [Tokens and Tokenization](../../../model-usage-and-generation/sub/tokens-and-tokenization/)
-- [Hallucinations](../../../model-usage-and-generation/sub/hallucinations/)
+Do not assume a model has current private information, and do not infer deployment location or runtime topology merely from the `LLM` label.
+
+These operational and evaluation consequences remain migration source material until their exact trustworthy-AI, evaluation, engineering, or decision-support owners are verified.
