@@ -1,42 +1,30 @@
 # Keyword Search
 
-Keyword search retrieves documents using lexical evidence: terms, phrases, field matches, and statistical importance of words in the corpus.
+Legacy residual retained for analyzer/index design, exact-field handling, query-feature, and retrieval-evaluation guidance that are intentionally outside the canonical Lexical Retrieval concept owner.
+
+> **Migration note:** Lexical-retrieval identity, lexical evidence and ranked retrieval boundaries, analyzer/inverted-index foundations, exact-term strengths, normalization/stemming risks, BM25 ownership, semantic-retrieval distinction, and metadata-filtering separation are already preserved in `docs/sub/concepts/sub/information-retrieval/sub/lexical-retrieval/`. The remaining material below stays here until its exact learning, retrieval-engineering, evaluation, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Analyzer and index-design residual
 
-Lexical retrieval is strong when exact wording matters. It can find product codes, API names, error messages, quotations, and domain-specific terminology that semantic models may blur. Search engines commonly apply tokenization, stemming, field weights, and ranking functions such as BM25.
+Configure lexical analysis according to the corpus rather than applying one normalization pipeline to every field. Preserve exact or non-analyzed representations for identifiers, API names, product codes, version strings, legal citations, names, or other values where stemming or token normalization could destroy the evidence the user intends to match.
 
-## Practical use
+Use field-aware indexing when document fields carry different retrieval meaning, and preserve positional information or phrase-query capability where word order materially changes the requested match.
 
-- Exact identifiers and technical strings.
-- Legal citations, version numbers, and named entities.
-- Search with required or excluded terms.
-- Filtering by structured document fields.
-- Providing the lexical half of hybrid retrieval.
+## Query-feature residual
 
-## Trade-offs and limitations
+Useful application features can include required or excluded terms, exact phrases, field-scoped clauses, and carefully managed synonym or spelling-variation expansion. Treat such features as corpus- and search-engine-specific behavior to evaluate rather than universal lexical-search requirements.
 
-Keyword search may fail when the query uses different wording from the source. Stemming and analyzers can also damage exact identifiers. A query with common terms may return many superficially matching results.
+Do not interpret raw term frequency as answer relevance, and do not eliminate lexical retrieval merely because a semantic route is also available when exact surface evidence remains important.
 
-## Good practice
+## Evaluation residual
 
-Use field-aware indexing and preserve non-analyzed fields for exact matches. Support phrase queries where word order matters. Measure both precision and recall with real queries instead of tuning only on a few examples.
+Evaluate representative real queries across both precision and recall. Include exact identifiers, rare terminology, phrase/order-sensitive requests, common-term queries, synonyms, spelling variants, and cases where analyzers may over-normalize codes or names.
 
-## Common mistakes
+Inspect retrieval failures separately from downstream answer generation so an application does not hide lexical misses behind a superficially plausible final response.
 
-- Applying aggressive stemming to codes or names.
-- Assuming keyword frequency equals answer relevance.
-- Ignoring synonyms and spelling variation.
-- Replacing lexical retrieval entirely with embeddings.
-
-## Related concepts
-
-- [Retrieval and Knowledge](../../)
-- [BM25](../bm25/)
-- [Hybrid Search](../hybrid-search/)
-- [Metadata Filtering](../metadata-filtering/)
+These analyzer, index, query-feature, and evaluation practices remain migration source material until their exact learning, retrieval-engineering, evaluation, or decision-support owners are verified.
