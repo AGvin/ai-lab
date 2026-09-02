@@ -1,42 +1,35 @@
 # System Prompts
 
-A system prompt is a high-priority instruction layer that defines an assistant's role, operating rules, tool boundaries, and expected behavior for a session or application.
+Legacy residual retained for system-prompt design, maintenance, tool-policy, and security-implementation guidance that are intentionally outside the canonical System Prompts concept owner.
+
+> **Migration note:** System-prompt identity, provider/interface variability, instruction-hierarchy separation, stable-instruction versus dynamic-data boundaries, non-security-boundary semantics, conflict/injection/update limitations, and the need for external authorization enforcement are already preserved in `docs/sub/concepts/sub/models/sub/interaction/sub/prompting/sub/system-prompts/`. The remaining material below stays here until its exact learning, trustworthy-AI, application-engineering, or operational-policy owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Design and maintenance residual
 
-System prompts establish policy and behavior before ordinary user input is processed. They are commonly used to define tone, task scope, safety constraints, tool-use rules, and output conventions. They should contain stable instructions, while dynamic user data and retrieved documents should remain separate.
+Useful system-prompt design practices include:
 
-## Good system-prompt responsibilities
+- define the assistant's purpose, permitted scope, and durable behavioral constraints explicitly;
+- keep stable policy separate from rapidly changing task data, retrieved documents, and examples;
+- state tool-use expectations and consequential-action validation rules when they are part of the application contract;
+- keep durable output and communication conventions internally consistent;
+- avoid unnecessary rule duplication and conflicting instructions that make maintenance and effective priority harder to reason about;
+- do not store secrets in prompt text merely because the prompt is supplied through a privileged interface.
 
-- Define the assistant's purpose and permitted scope.
-- Establish which instruction sources are trusted.
-- Specify when tools may or must be used.
-- Require validation before consequential actions.
-- Set durable output and communication conventions.
+These are implementation and maintenance practices rather than universal System Prompts semantics.
 
-## Practical use
+## Security and enforcement residual
 
-Keep the prompt concise, explicit, and internally consistent. Separate policy from examples. Treat retrieved web pages, emails, and documents as untrusted data even when they contain instruction-like text. For tool-using systems, pair prompt rules with actual permission checks and sandboxing rather than relying on text alone.
+Treat retrieved web pages, emails, documents, tool results, and user-provided data as untrusted inputs even when they contain instruction-like text. For systems that can access data or perform consequential actions, pair model-facing instructions with actual application permissions, authorization checks, validation, isolation, or sandboxing as appropriate.
 
-## Trade-offs and limitations
+Do not use the system prompt as the sole defense against prompt injection or unauthorized actions.
 
-System prompts guide behavior but are not a security boundary by themselves. They consume context, can become difficult to maintain when overloaded, and may interact differently with model updates. Enforcement that matters for safety or data access should also exist in application code.
+## Regression and operational residual
 
-## Common mistakes
+System-prompt behavior can change when the model, provider interface, hidden platform context, tool contract, or context-construction pipeline changes. Re-evaluate important prompt behavior after such changes instead of assuming prior compliance remains unchanged.
 
-- Storing secrets directly in the prompt.
-- Using the system prompt as the only defense against prompt injection.
-- Combining stable policy with rapidly changing task data.
-- Adding conflicting rules without a clear priority model.
-
-## Related concepts
-
-- [Model Usage and Generation](../../)
-- [Prompting](../prompting/)
-- [Prompt Injection](../../../safety-privacy-and-reliability/sub/prompt-injection/)
-- [Trust Boundaries](../../../safety-privacy-and-reliability/sub/trust-boundaries/)
+These design, security, and maintenance practices remain migration source material until their exact learning, trustworthy-AI, application-engineering, or operational-policy owners are verified.
