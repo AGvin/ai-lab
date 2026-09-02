@@ -1,38 +1,30 @@
 # Audio Generation
 
-Audio generation creates music, speech, sound effects, ambience, or other waveforms from text, reference audio, symbolic input, or learned latent representations.
+Legacy residual retained for practical audio-generation applications, publication checks, and rights/consent workflow guidance that is intentionally outside the canonical Audio Generation concept owner.
+
+> **Migration note:** Audio-generation task identity, architecture neutrality, conditioning modes, content-category boundaries, distinction from TTS and non-generative audio tasks, representation diversity, long-term-versus-local quality challenges, conditioning uncertainty, evaluation dimensions, and adjacent rights/consent/provenance risks are already preserved in `docs/sub/concepts/sub/modalities/sub/audio-and-speech/sub/audio-generation/`. The remaining material below stays here until its exact learning, workflow, governance, evaluation, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application residual
 
-Models may generate audio directly, predict compressed audio tokens, or use diffusion in a waveform or spectrogram representation. Conditioning can control content, duration, style, instrumentation, voice, or environmental characteristics.
+Audio-generation systems can support workflows such as:
 
-## Practical use
+- sound effects and ambience for prototypes;
+- music ideation and backing tracks;
+- synthetic speech-like or character-voice material where the concrete system permits it;
+- audio continuation or generative reconstruction workflows;
+- dataset augmentation.
 
-- Sound effects and ambience for prototypes.
-- Music ideation and backing tracks.
-- Synthetic speech and character voices.
-- Audio restoration or continuation.
-- Dataset augmentation.
+These are application examples rather than part of the canonical task definition.
 
-## Trade-offs and limitations
+## Publication and governance residual
 
-Long-form structure, exact rhythm, intelligible lyrics, and consistent identity can be difficult. Generated material may resemble training styles or contain artifacts. Rights around training data, voice identity, and commercial use vary.
+Generated audio should not be assumed automatically free of rights, attribution, provenance, or consent obligations. Review the concrete model/data/license and intended commercial or publication context, and obtain appropriate permission before using an identifiable or cloned voice.
 
-## Common mistakes
+Before publication, evaluate the properties that matter to the workflow rather than only whether the clip sounds plausible. Long-form structure, rhythm, lyrics or speech intelligibility, speaker/instrument identity, artifacts, loudness, clipping, and mastering can require separate checks or post-processing.
 
-- Assuming generated music is automatically free of rights concerns.
-- Using cloned voices without consent.
-- Expecting one generation to maintain long-form musical structure.
-- Ignoring loudness, clipping, and mastering before publication.
-
-## Related concepts
-
-- [Multimodal and Generative Media](../../)
-- [Text-to-Speech](../text-to-speech/)
-- [Latent Space](../latent-space/)
-- [Video Generation](../video-generation/)
+These practical publication, quality-control, rights, and consent practices remain migration source material until their exact learning, workflow, governance, evaluation, or decision-support owners are verified.
