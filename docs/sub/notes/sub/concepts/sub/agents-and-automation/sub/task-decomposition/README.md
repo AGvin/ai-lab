@@ -1,41 +1,31 @@
 # Task Decomposition
 
-Task decomposition divides a large objective into smaller units that can be executed, validated, and recombined.
+Legacy residual retained for practical decomposition, parallelization, context-partitioning, and recombination guidance that is intentionally outside the canonical Planning and Scheduling concept owner.
+
+> **Migration note:** Task-decomposition identity, hierarchical/recursive decomposition, relationship to planning/execution, and non-universal decomposition order are already preserved in `docs/sub/concepts/sub/reasoning-and-decision-making/sub/planning-and-scheduling/`. The remaining material below stays here until its exact learning, agent-workflow, orchestration, or engineering owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application residual
 
-Decomposition reduces cognitive and context load by isolating responsibilities. A useful subtask has a clear input, expected output, dependencies, and completion criterion. Subtasks may run sequentially or in parallel when they do not share mutable state.
+Practical decomposition can separate work such as:
 
-## Practical use
+- research into source discovery, evidence extraction, comparison, and synthesis;
+- code changes by component or responsibility;
+- document processing by independent files or sections; and
+- specialized subtasks assigned to different tools, agents, or deterministic workers.
 
-- Split research into source discovery, evidence extraction, comparison, and synthesis.
-- Separate code changes by component or responsibility.
-- Divide document processing into independent files or sections.
-- Assign specialized subtasks to different tools or agents.
+These are workflow examples rather than part of the generic planning definition.
 
-## Design guidance
+## Decomposition-design residual
 
-Decompose around meaningful boundaries, not arbitrary token sizes. Preserve enough context for each subtask to make correct decisions. Define how conflicts and duplicate work will be reconciled before running subtasks in parallel.
+Decompose around meaningful responsibility, dependency, data, or verification boundaries rather than arbitrary token/size targets. A useful subtask should have enough relevant context to make correct decisions plus a clear input, expected output, dependencies, and completion/acceptance criterion.
 
-## Trade-offs and limitations
+Parallelize only units that can proceed safely without hidden dependency or uncontrolled shared mutable state. Define artifact ownership, conflict detection, duplicate-work handling, and recombination/validation before dispatch when outputs must later be merged.
 
-Excessive decomposition creates coordination overhead and loses global context. Poorly separated tasks can produce incompatible outputs or repeat the same work.
+Excessive decomposition can increase coordination cost, lose global context, duplicate work, and produce incompatible partial results. Prefer a simpler deterministic loop or single-owner workflow when it already satisfies the workload.
 
-## Common mistakes
-
-- Creating subtasks with vague completion criteria.
-- Splitting work that depends on shared hidden assumptions.
-- Merging outputs without validation.
-- Using multiple agents when a deterministic loop would be simpler.
-
-## Related concepts
-
-- [Agents and Automation](../../)
-- [Planning](../planning/)
-- [Multi-Agent Systems](../multi-agent-systems/)
-- [Agentic Workflows](../agentic-workflows/)
+These decomposition and recombination practices remain migration source material until their exact learning, orchestration, engineering, or project owners are verified.
