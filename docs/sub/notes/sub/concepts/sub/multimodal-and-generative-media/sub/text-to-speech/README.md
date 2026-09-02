@@ -1,42 +1,30 @@
 # Text-to-Speech
 
-Text-to-speech synthesizes spoken audio from written text, optionally conditioned on a selected or reference voice.
+Legacy residual retained for practical TTS applications, pronunciation review, consent, disclosure, and reference-voice handling guidance that is intentionally outside the canonical Text-to-Speech concept owner.
+
+> **Migration note:** TTS task identity, architecture neutrality, linguistic/frontend boundaries, distinction from general audio generation and voice conversion/cloning, prosody-control boundaries, pronunciation failure modes, evaluation dimensions, and adjacent consent/impersonation/privacy risks are already preserved in `docs/sub/concepts/sub/modalities/sub/audio-and-speech/sub/text-to-speech/`. The remaining material below stays here until its exact learning, workflow, governance/privacy, runtime, evidence, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application residual
 
-A TTS system predicts pronunciation, timing, emphasis, and acoustic features, then generates a waveform through a vocoder or end-to-end model. Modern systems can produce highly natural speech and may support style, emotion, speed, and multilingual output.
+Text-to-speech can support workflows such as:
 
-## Practical use
+- accessibility and screen reading;
+- narration, announcements, and prototypes;
+- voice interfaces;
+- localized audio content;
+- assistive communication.
 
-- Accessibility and screen reading.
-- Narration, announcements, and prototypes.
-- Voice interfaces.
-- Localized audio content.
-- Assistive communication.
+These are application examples rather than part of the canonical TTS definition.
 
-## Trade-offs and limitations
+## Review and governance residual
 
-Names, abbreviations, numbers, and mixed-language text can be pronounced incorrectly. Expressive models may introduce unexpected pauses or emphasis. Voice cloning raises consent, impersonation, and fraud risks.
+Where supported, pronunciation dictionaries, phonetic controls, SSML-like markup, or other runtime-specific controls can help with names, abbreviations, numbers, dates, domain vocabulary, and prosody, but their syntax and behavior are implementation-specific. Review pronunciation and meaning for critical information instead of assuming natural-sounding speech is correct.
 
-## Good practice
+For cloned or otherwise identifiable voices, obtain appropriate explicit permission, protect reference recordings and speaker-related data, and apply the relevant disclosure, impersonation, fraud-prevention, licensing, platform-policy, and publication rules. Synthetic-speech disclosure may be necessary depending on the context even when the generation itself is technically valid.
 
-Use pronunciation dictionaries or phonetic controls where supported. Disclose synthetic speech when context requires it. Obtain explicit permission for cloned or identifiable voices and protect reference recordings.
-
-## Common mistakes
-
-- Cloning a voice without consent.
-- Publishing unreviewed pronunciation of critical information.
-- Assuming punctuation alone gives precise prosody control.
-- Ignoring audio licensing and platform disclosure rules.
-
-## Related concepts
-
-- [Multimodal and Generative Media](../../)
-- [Speech-to-Text](../speech-to-text/)
-- [Audio Generation](../audio-generation/)
-- [Content Moderation](../../../safety-privacy-and-reliability/sub/content-moderation/)
+These operational and governance practices remain migration source material until their exact learning, workflow, governance/privacy, runtime, evidence, or decision-support owners are verified.
