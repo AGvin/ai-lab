@@ -1,78 +1,29 @@
 # Orchestrator-Worker Architecture
 
-An orchestrator-worker architecture uses a coordinating agent to plan and delegate work to specialized worker agents, then combine and validate their results.
+Legacy residual retained for broader orchestrator-worker pattern-fit guidance and exact legacy implementation/evidence provenance that are intentionally outside the canonical Manager-Worker Orchestration concept owner.
+
+> **Migration note:** The manager-retains-ownership invariant, dynamic decomposition/delegation, worker contracts, context/permission isolation, dependency/parallelism rules, result integration, validation, terminal responsibility, bounded retries/escalation, deterministic authorization, trade-offs, and system-level evaluation are already preserved in `docs/sub/concepts/sub/agents-and-autonomy/sub/workflows-and-orchestration/sub/manager-worker-orchestration/`. The remaining material below stays here until its exact learning/decision owner and legacy evidence provenance are verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Status
+## Variant-fit residual
 
-Established multi-agent pattern.
+Use the broader orchestrator-worker variant when the coordinating owner must dynamically decompose an open-ended objective into heterogeneous subtasks, choose workers/tools/models, manage dependencies or artifacts, run independent work in parallel where safe, and synthesize a terminal result after validating worker evidence.
 
-## Core idea
+Prefer a narrower supervisor-specialist pattern when one user-facing supervisor repeatedly calls a stable set of bounded specialists, or a deterministic graph/pipeline when the work structure is already known and does not benefit from model-directed decomposition.
 
-The orchestrator owns the overall objective, task decomposition, delegation, dependency tracking, and final synthesis. Workers receive bounded assignments and return results or artifacts.
+The orchestrator does not need to be the strongest model for every worker task, but it must reliably preserve requirements, dependency state, acceptance criteria, worker capability boundaries, and terminal responsibility. Weak decomposition or synthesis can waste otherwise capable workers.
 
-The orchestrator does not need to be the strongest model for every worker task. Its main requirements are reliable planning, routing, state management, verification, and termination decisions.
+## Legacy evidence-provenance residual
 
-## Typical responsibilities
-
-### Orchestrator
-
-- interpret the user goal and acceptance criteria;
-- decompose work into tasks;
-- select workers, tools, and models;
-- decide whether tasks may run in parallel;
-- track dependencies, budgets, and progress;
-- verify worker outputs rather than trusting completion claims;
-- request corrections or escalation;
-- synthesize the final result.
-
-### Worker
-
-- execute one bounded task;
-- use only the tools and permissions required for that task;
-- preserve artifacts in the agreed location;
-- report evidence, limitations, and unresolved failures;
-- avoid modifying unrelated shared state.
-
-## Parallel and sequential work
-
-Independent tasks may run concurrently. Tasks that consume another task's output or modify the same state should normally run sequentially or in isolated workspaces with an explicit merge plan.
-
-The orchestrator should build a dependency graph rather than assuming that all subtasks are either fully parallel or fully sequential.
-
-## Strengths
-
-- separates planning from execution;
-- supports specialized prompts, tools, and models;
-- enables parallel work on independent tasks;
-- reduces context pressure on the coordinating agent;
-- permits stronger review and escalation policies.
-
-## Limitations
-
-- delegation can omit requirements or duplicate work;
-- worker reports can be incomplete or misleading;
-- coordination and synthesis consume additional tokens;
-- shared-state conflicts require explicit controls;
-- a weak orchestrator can waste capable workers.
-
-## Evidence and established usage
-
-Anthropic describes an orchestrator-worker pattern in its multi-agent research system, where a lead agent creates specialized subagents that work in parallel and return findings for synthesis. LangChain documents a comparable subagents pattern in which a main agent coordinates specialized agents and routes work through itself.
-
-Sources:
+The legacy source cited:
 
 - [Anthropic: How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system)
 - [LangChain multi-agent patterns](https://langchain-ai.github.io/langgraph/tutorials/multi_agent/multi-agent-collaboration/)
 
-## Related concepts
+Canonical Manager-Worker metadata currently uses other supporting references, including Anthropic `Building effective agents`, OpenAI Agents SDK, and current LangChain multi-agent documentation. Preserve these exact legacy links until their historical/evidence relationship is explicitly resolved.
 
-- [Multi-Agent Systems](../../)
-- [Hierarchical Orchestration](../hierarchical-orchestration/)
-- [Task Decomposition](../../../task-decomposition/)
-- [Agent State](../../../agent-state/)
-- [Verification and Reflection](../../../verification-and-reflection/)
+These variant-selection and evidence-provenance fragments remain migration source material until their exact learning, decision, or research/evidence owners are verified.
