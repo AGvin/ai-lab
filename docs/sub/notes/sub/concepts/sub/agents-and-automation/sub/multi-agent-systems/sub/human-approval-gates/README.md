@@ -1,280 +1,96 @@
 # Human Approval Gate Architecture
 
-A human approval gate pauses an agent workflow before a declared consequential transition and requires an authorized person to approve, reject, modify, defer, or escalate the pending action.
+Legacy residual retained for approval-gate-specific workflow pedagogy, authorization-state design, and exact legacy framework evidence because the selected learning owner is not yet materialized on the active branch.
+
+> **Migration note:** Generic pause/transition/resume workflow semantics are already preserved in `docs/sub/concepts/sub/agents-and-autonomy/sub/workflows-and-orchestration/`; human authority, oversight/intervention capacity, reviewer limitations, and HITL taxonomy boundaries are preserved in `docs/sub/concepts/sub/human-ai-interaction/sub/oversight-and-intervention/`. The readiness design selects `learning/areas/agents-and-automation/workflows-and-orchestration/human-approval-gates/` for deeper procedural teaching, but that node is currently absent on the active AI Lab ref. Preserve the approval-specific material below until that exact owner is materialized and verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Status
+## Pending-action and approval-scope residual
 
-Established human-in-the-loop workflow pattern.
+A human approval gate should pause **before** a declared consequential transition and persist a deterministic pending-action record. Approval authorizes the exact reviewed action under the exact reviewed state; it is not blanket permission for the model, workflow, or future actions.
 
-## Core idea
+Where material, the pending record should identify:
 
-The workflow prepares a specific proposed action and durable evidence, then suspends before the side effect:
+- approval/workflow/task/state version;
+- exact action, normalized arguments, target system/account/environment/resource IDs;
+- user-visible effect, reversibility, evidence and validation results;
+- privacy/rights/consent classification, expected cost/duration/resource lifetime;
+- known risks, uncertainty, alternatives, requester/executor identity;
+- required approver role and any separation-of-duty rule;
+- creation/expiry/deadline, allowed decisions/modification schema;
+- post-approval verification and rollback/compensation plan.
 
-```text
-agent plan -> validation -> pending action -> human gate
-                                          -> approve -> execute -> verify
-                                          -> modify  -> revalidate
-                                          -> reject  -> stop or revise
-                                          -> expire  -> fail closed
-```
+Bind approval deterministically to the action type, normalized arguments, target identifiers, artifact revision/checksum, authoritative state version, cost/quantity bounds, execution deadline, and approver authority. A material change after review invalidates the approval and requires revalidation/reapproval.
 
-Approval is authorization for the exact reviewed action under the exact reviewed state. It is not a blanket endorsement of the model, workflow, or future actions.
+Do not expose private hidden chain-of-thought. Show the material facts, evidence, assumptions, diff/content, consequences, and uncertainty needed to make an accountable decision.
 
-## Use a gate for declared risk
+## Decision-state residual
 
-Examples include:
+Use explicit decision states rather than interpreting arbitrary free-form text as broad permission:
 
-- sending email or messages externally;
-- publishing content or synthetic media;
-- purchases, transfers, subscriptions, or billable resource allocation;
-- deleting, overwriting, deploying, merging, or modifying production data;
-- creating accounts, changing permissions, or exposing credentials;
-- medical, legal, financial, employment, safety, or public-facing decisions;
-- voice, face, identity, biometric, or consent-sensitive operations;
-- actions whose effects are difficult to reverse or independently verify.
+- **Approve** — authorize the exact pending action;
+- **Reject** — prohibit execution;
+- **Modify** — apply constrained changes, then revalidate and normally reapprove;
+- **Defer** — retain the request until a bounded deadline without execution;
+- **Escalate** — transfer to a more qualified/privileged authority;
+- **Expire** — invalidate automatically when time/state constraints fail;
+- **Cancel** — withdraw before execution.
 
-Do not add approval to every harmless step. Excessive low-value prompts create fatigue and encourage automatic approval.
+The workflow should make timeout/default and conflicting-approver behavior explicit rather than silently continuing.
 
-## Pending-action record
+## Pause, resume, and ambiguous-effect residual
 
-Persist a deterministic record before pausing:
-
-```text
-Approval ID:
-Workflow, task, and state version:
-Requested action and exact arguments:
-Target system, account, environment, and resource IDs:
-User-visible summary:
-Expected effect and reversible or irreversible status:
-Evidence and validation results:
-Data, privacy, rights, and consent classification:
-Estimated cost, duration, and resource lifetime:
-Known risks, uncertainty, and alternatives:
-Requester and executing identity:
-Required approver role and separation-of-duty rule:
-Created at, expires at, and maximum delay:
-Allowed decisions and modification schema:
-Post-approval verification and rollback plan:
-```
-
-The record must be understandable without exposing private hidden chain-of-thought. Show material facts, evidence, assumptions, and consequences.
-
-## Exact-scope approval
-
-Bind approval cryptographically or deterministically to:
-
-- action type;
-- normalized arguments;
-- target identifiers;
-- artifact checksums or revisions;
-- authoritative state version;
-- cost and quantity limits;
-- execution deadline;
-- approver identity and authority.
-
-If any material field changes after review, invalidate the approval and request a new one. Do not reuse approval after an agent edits the message, file, amount, recipient, deployment, permissions, or resource specification.
-
-## Decisions
-
-Support explicit outcomes:
-
-- **Approve:** authorize the exact pending action.
-- **Reject:** prohibit execution and record the reason where appropriate.
-- **Modify:** supply changes through a constrained schema, then re-run validation and usually re-approve the resulting action.
-- **Defer:** retain the pending request until a deadline without executing.
-- **Escalate:** transfer approval to a more qualified or privileged authority.
-- **Expire:** automatically invalidate the request when time or state constraints are no longer valid.
-- **Cancel:** requester or workflow withdraws the request before execution.
-
-Free-form human text should not be interpreted as permission for unrelated actions. Parse decisions through an explicit interface or schema.
-
-## Pause and resume
-
-Before pausing:
-
-- persist the workflow and pending action;
-- release resources that need not remain allocated;
-- retain or deliberately expire leases required for safe continuation;
-- prevent other workers from executing the same action;
-- define notification and escalation;
-- set expiry and fail-closed behavior.
+Before pausing, persist workflow/pending-action state, prevent duplicate execution, release unnecessary resources, deliberately retain/expire required leases, establish notification/escalation, and define expiry/fail-closed behavior.
 
 On resume:
 
-1. authenticate the approver and check authority;
-2. load the exact workflow and approval record;
-3. verify state, inputs, artifacts, permissions, cost, and deadlines have not materially changed;
-4. fence stale controllers and duplicate executions;
-5. re-run required deterministic checks;
-6. execute idempotently using a stable operation ID;
-7. verify the external result;
+1. authenticate the approver and verify authority;
+2. load the exact workflow/approval record;
+3. revalidate authoritative state, inputs, artifacts, permissions, cost, and deadlines;
+4. fence stale controllers/duplicate execution;
+5. rerun required deterministic checks;
+6. execute with a stable operation identity/idempotency contract where possible;
+7. verify the external effect;
 8. record actual effect, cost, and residual risk.
 
-A workflow engine acknowledging an approval does not prove that the external action executed successfully.
+Approval acknowledgement does not prove the external action completed. After timeout or lost acknowledgement, reconcile authoritative external state before asking for another approval or retrying a consequential write.
 
-## Separation of duties
+## Separation-of-duty and least-privilege residual
 
-For high-risk operations, require that the approver is not the same identity that:
+For sufficiently high-risk actions, policy may require the approver to be independent from identities that generated the proposal, control the evaluated system, own the target resource, benefit from bypassing the gate, or perform final verification. Two-person approval, role/value/environment thresholds, specialist review, or other separation rules are project/governance decisions rather than universal requirements.
 
-- generated the proposal;
-- controls the evaluated model;
-- owns the target resource;
-- benefits from bypassing the gate;
-- performs final verification.
+A second model is not a human approver when policy requires accountable human authorization.
 
-Possible controls include two-person approval, role-based authority, value thresholds, environment-specific approvers, or specialist review before executive approval.
+Approval should grant only the minimum authority needed for the pending action: one operation, bounded target/environment/amount/duration/scope, short expiry, no reusable credentials in model context, and no ability to mint broader approvals. Enforcement belongs to the execution/authorization layer independently from model prompts.
 
-Do not treat a second model as a human approver. Model review can prepare evidence but cannot satisfy a policy that explicitly requires accountable human authorization.
+## Approval-interface, fatigue, and failure residual
 
-## Least privilege
+The approval interface should make the material action, destination/recipient, content or diff, approval reason, cost/irreversibility, source evidence/validation, alternatives/rollback, uncertainty, and exact decision options inspectable. Avoid hidden recipients, truncated/collapsed material changes, ambiguous buttons, default approval, or summaries that prevent source inspection.
 
-Approval should grant only the minimum authority required for the pending action:
+Reserve human attention for material decisions. Excessive low-value prompts create fatigue and rubber-stamping; reducing prompt volume must not silently widen autonomous authority.
 
-- one operation rather than an open session;
-- one target and environment;
-- bounded amount, quantity, duration, or scope;
-- short expiry;
-- no reusable credentials in the model context;
-- no permission to create further approvals.
+Define behavior when no approver is available, approval expires, workflow state changes while paused, notification fails, authority is insufficient, approvers conflict, execution times out after approval, a side effect succeeds but acknowledgement is lost, rollback is unavailable, or the approval/audit store is unavailable. Consequential actions should normally fail closed when authorization state is unresolved.
 
-The execution service should enforce the authorization independently from the model's prompt.
+## Pattern-fit and evaluation residual
 
-## Presentation quality
+Approval gates fit consequential tool calls, publication/release, provisioning/teardown, deployment/merge, high-value financial actions, consent/identity-sensitive operations, exceptional escalation paths, and other transitions where accountable human authority must remain explicit.
 
-The approval interface should show:
+Prefer deterministic policy without a human gate for harmless/easily reversible actions when the reviewer would add no meaningful information or authority. A gate placed after an irreversible effect, or one used as a substitute for validation/security/least privilege, is not meaningful control.
 
-- what will happen;
-- where and to whom;
-- material content or diff;
-- why approval is required;
-- cost and irreversibility;
-- source evidence and validation;
-- alternatives, rollback, and uncertainty;
-- exact decision options.
+Evaluate approval/rejection/modification/escalation/expiry/cancellation rates, state-change invalidations, decision latency, unauthorized/bypass attempts, stale/duplicate execution incidents, post-approval validation/adverse outcomes, rollback/compensation success, approver workload/disagreement/fatigue, and cost per safely completed action.
 
-Prevent dark patterns, truncated diffs, hidden recipients, collapsed warnings, ambiguous buttons, or default approval. For long artifacts, show both summary and inspectable source.
+## Legacy evidence-provenance residual
 
-## Prevent approval fatigue
-
-Classify actions by risk and aggregate only when the bundle is coherent and bounded.
-
-Measure:
-
-- approval frequency;
-- time to decision;
-- rejection and modification rate;
-- incidents after approval;
-- repeated low-value requests;
-- approver disagreement;
-- expired or abandoned approvals.
-
-Use deterministic policy for harmless actions and reserve human attention for material decisions. Never reduce prompts by silently widening model authority.
-
-## Failure behavior
-
-Define behavior when:
-
-- no approver is available;
-- approval expires;
-- the workflow changes while paused;
-- notification fails;
-- the approver lacks authority;
-- two approvers conflict;
-- execution times out after approval;
-- the action succeeds but the response is lost;
-- rollback is unavailable;
-- the approval store or audit log is unavailable.
-
-Consequential action should normally fail closed. After ambiguous execution, reconcile external state before asking for another approval or retrying.
-
-## Human limitations
-
-Human approval reduces uncontrolled autonomy but does not guarantee correctness. Approvers can:
-
-- misunderstand technical details;
-- trust fluent but unsupported model summaries;
-- miss defects in large diffs or media;
-- approve under time pressure;
-- lack domain expertise;
-- become habituated to frequent prompts.
-
-Support approval with deterministic checks, qualified review, source evidence, usable interfaces, training, and post-action verification.
-
-## Suitable uses
-
-- tool calls with material external side effects;
-- publication and release workflows;
-- infrastructure provisioning or teardown;
-- deployment and repository merge gates;
-- high-value purchases and financial actions;
-- identity, voice, biometric, or consent-sensitive media;
-- exceptional cases routed from an otherwise automated workflow;
-- decisions where accountable authority must remain human.
-
-## Poor fits
-
-Avoid or simplify this pattern when:
-
-- the action is harmless, easily reversible, and already governed by deterministic policy;
-- the approver cannot inspect the evidence or understand the consequence;
-- the gate occurs after the irreversible action;
-- approval is treated as a substitute for validation, security, or least privilege;
-- the workflow presents hundreds of indistinguishable low-risk requests;
-- policy falsely assumes that any human click transfers all responsibility away from system designers.
-
-## Strengths
-
-- preserves accountable authority for consequential transitions;
-- creates a pause point for evidence and risk review;
-- limits autonomous side effects;
-- supports modification, escalation, and rejection;
-- produces an auditable authorization record;
-- integrates with graph, evaluator, and resource-lifecycle workflows.
-
-## Limitations
-
-- adds latency and operational dependency on approvers;
-- can create approval fatigue and rubber-stamping;
-- state may become stale during a pause;
-- poor interfaces can hide material changes;
-- human expertise and consistency vary;
-- approval cannot make an unsafe or invalid action safe by itself.
-
-## Evaluation metrics
-
-Record:
-
-- actions requiring approval and policy coverage;
-- unauthorized or bypassed-action attempts;
-- approval, rejection, modification, escalation, expiry, and cancellation rates;
-- state-change invalidations;
-- time to decision and workflow delay;
-- duplicate or stale execution incidents;
-- post-approval validation failures and adverse outcomes;
-- rollback success;
-- approver workload, disagreement, and fatigue indicators;
-- cost per safely completed action.
-
-## Evidence and established usage
-
-The OpenAI Agents SDK documents human-in-the-loop tool approval that pauses a run and resumes from stored state after approval or rejection. LangGraph documents interrupts that persist graph state and resume after human input.
-
-Sources:
+The legacy source cited:
 
 - [OpenAI Agents SDK: Human-in-the-loop](https://openai.github.io/openai-agents-python/human_in_the_loop/)
 - [LangGraph interrupts](https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/breakpoints/)
 - [LangGraph persistence](https://langchain-ai.github.io/langgraph/concepts/persistence/)
 
-## Related concepts
+Preserve these exact framework references until the selected human-approval-gates learning owner is materialized and their current/historical evidence disposition is verified.
 
-- [Multi-Agent Systems](../..)
-- [Graph or DAG Workflow](../graph-dag-workflow/)
-- [Evaluator-Optimizer Architecture](../evaluator-optimizer/)
-- [Advisory Council, Jury, and Review Board](../advisory-council-review-board/)
-- [Handoff or Swarm Architecture](../handoff-swarm/)
-- [Agent State](../../../agent-state/)
+These approval-specific pedagogical, operational, and evidence fragments remain migration source material until their exact learning owner is ready.
