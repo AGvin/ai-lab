@@ -1,38 +1,30 @@
 # Image-to-Image
 
-Image-to-image generation transforms an existing image while using it as conditioning for composition, content, or style.
+Legacy residual retained for practical editing workflows and runtime-specific transformation-strength guidance that is intentionally outside the canonical Image-to-Image Generation concept owner.
+
+> **Migration note:** Image-to-image task identity, architecture-neutral transformation semantics, paired/unpaired training boundary, preservation-versus-transformation behavior, and distinctions from inpainting/outpainting are already preserved in `docs/sub/concepts/sub/modalities/sub/vision/sub/image-to-image/`. Diffusion-specific partial noising and `denoising strength` are explicitly treated there as implementation/UI details rather than universal concept semantics. The remaining material below stays here until its exact learning, workflow, runtime, evidence, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Editing-workflow residual
 
-The source image is encoded and partially noised, then regenerated under prompt or structural guidance. A denoising-strength parameter commonly controls how closely the output remains tied to the source: lower strength preserves more detail, while higher strength permits larger changes.
+Image-to-image workflows can be used to:
 
-## Practical use
+- restyle an existing composition;
+- refine a sketch or rough render;
+- change lighting, materials, or environment;
+- produce variations while preserving selected layout/content;
+- prepare an image for more localized editing such as inpainting.
 
-- Restyle a composition.
-- Improve a sketch or rough render.
-- Change lighting, materials, or environment.
-- Produce variations while preserving layout.
-- Prepare an image for focused inpainting.
+These are workflow examples rather than part of the canonical task definition.
 
-## Trade-offs and limitations
+## Runtime-control residual
 
-Strong transformations can alter identity, geometry, text, or small details. Low-strength transformations may preserve unwanted artifacts. Repeated image-to-image passes can accumulate drift and reduce fidelity.
+Some diffusion-based tools expose a denoising or transformation-strength control. Lower values commonly preserve more source detail while higher values permit larger changes, but the exact meaning and useful range depend on the concrete model, scheduler, preprocessing, runtime, and implementation.
 
-## Common mistakes
+When identity, geometry, typography, or fine detail matters, validate the actual result rather than assuming the source image guarantees preservation. Aspect-ratio changes, resize/crop preprocessing, repeated generative passes, and strong transformation settings can accumulate drift or preserve unwanted artifacts in model-specific ways.
 
-- Using high denoising strength when identity must remain stable.
-- Expecting pixel-perfect preservation from generative editing.
-- Ignoring aspect-ratio and preprocessing changes.
-- Applying many successive transformations without returning to the best source.
-
-## Related concepts
-
-- [Multimodal and Generative Media](../../)
-- [Inpainting](../inpainting/)
-- [Outpainting](../outpainting/)
-- [Diffusion Models](../diffusion-models/)
+These operational editing choices remain migration source material until their exact learning, runtime, workflow, evidence, or decision-support owners are verified.
