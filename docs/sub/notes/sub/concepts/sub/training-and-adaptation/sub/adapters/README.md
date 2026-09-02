@@ -1,37 +1,34 @@
 # Adapters
 
-Adapters are small trainable components attached to a frozen or mostly frozen base model to provide reusable specialization.
+Legacy residual retained for adapter-fleet versioning, runtime switching/composition, compatibility validation, rollback, evaluation, and licensing guidance that are intentionally outside the canonical Adapters concept owner.
+
+> **Migration note:** Adapter identity, bottleneck/module-family semantics, PEFT/LoRA/prefix distinctions, placement/configuration variability, base-coupled artifact identity, runtime overhead/composition limits, and behavioral-regression risks are already preserved in `docs/sub/concepts/sub/models/sub/training-and-adaptation/sub/fine-tuning/sub/parameter-efficient/sub/adapters/`. The remaining material below stays here until its exact learning, training-engineering, runtime, evaluation, artifact-management, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Adapter-fleet residual
 
-An adapter inserts additional parameters into selected model layers or modifies their computation. Different adapters can be loaded for different tasks without storing a complete model copy. LoRA is one widely used adapter-style technique, but adapter methods can use other architectures.
+When one base model supports several adapters, version the base and every adapter as one compatibility matrix rather than as independent files. Record the insertion/configuration contract, processor/tokenizer assumptions, runtime/library support, and evaluation evidence needed to activate each variant safely.
 
-## Practical use
+Do not infer compatibility from matching dimensions or similar model-family names. Revalidate adapters after base-revision, architecture/module, runtime, processor, or quantization changes.
 
-- Maintain task-specific model variants.
-- Switch domain behavior at runtime.
-- Distribute small adaptation artifacts.
-- Combine a stable base model with tenant or product specialization.
+## Runtime and composition residual
 
-## Trade-offs and limitations
+Measure load/switch latency, memory overhead, inference throughput, batching/cache behavior, and concurrency on the intended serving path. Runtime support for hot switching, stacking, fusion, routing, or merging is method- and implementation-specific.
 
-Adapters remain coupled to the base-model architecture and revision. Runtime support for loading, merging, stacking, or switching adapters varies. Combining several adapters may produce interference rather than additive capabilities.
+Test multi-adapter composition explicitly. Individually useful adapters can interfere, override one another, amplify undesirable behavior, or create performance regressions when stacked or fused.
 
-## Common mistakes
+## Rollback and evaluation residual
 
-- Treating adapters as independent of the base model.
-- Loading incompatible module names or dimensions.
-- Stacking adapters without evaluating interactions.
-- Publishing an adapter without documenting required base weights and license.
+Keep the unchanged base and known-good adapter versions available for rollback. Evaluate each adapter against the base and against other production variants on both its target behavior and capabilities that must remain stable.
 
-## Related concepts
+If adapter routing is dynamic, verify the routing decision separately from the adapter's own quality so incorrect selection is not misdiagnosed as adaptation failure.
 
-- [Training and Adaptation](../../)
-- [Parameter-Efficient Fine-Tuning](../parameter-efficient-fine-tuning/)
-- [LoRA](../lora/)
-- [Model Formats](../../../inference-and-serving/sub/model-formats/)
+## Licensing and distribution residual
+
+Publish or distribute the required base identity, compatible runtime/configuration assumptions, artifact license, and any material base-model or dataset obligations together with the adapter. A small adaptation artifact does not become legally or operationally independent from its required base.
+
+These fleet, runtime, composition, rollback, evaluation, and licensing practices remain migration source material until their exact learning, training-engineering, runtime, evaluation, artifact-management, or decision-support owners are verified.
