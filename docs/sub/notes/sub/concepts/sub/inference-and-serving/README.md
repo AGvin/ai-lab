@@ -1,8 +1,8 @@
 # Inference and Serving
 
-Concepts for running trained models locally or as services and understanding their resource and performance behavior.
+Legacy residual retained only for deferred reading-priority metadata and temporary legacy child navigation.
 
-Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
+> **Migration note:** Most reusable meanings in this legacy group already have selected canonical owners across inference, model representation/optimization, runtime/deployment, performance/scalability, and AI engineering, and those leaf sources have been dispositioned individually. `Essential` / `Useful` / `Specialized` expresses pedagogical reading order rather than canonical ancestry. `model-formats/` remains intentionally high-risk mixed and is **not** treated as dispositioned by this index trim; preserve its legacy link alongside the other still-valid child links until its formal specification/catalog/learning/evidence owners and later navigation/source-removal gates are ready.
 
 ## Translations
 
@@ -11,27 +11,29 @@ Concepts are grouped by practical priority. Priority affects reading order, not 
 
 ## Essential
 
-- [`inference/`](./sub/inference/) — Running a trained model to process input and produce output.
-- [`quantization/`](./sub/quantization/) — Reducing numerical precision to lower model memory and compute requirements.
-- [`numerical-precision/`](./sub/numerical-precision/) — The number format used for model weights, activations, and computation.
-- [`model-formats/`](./sub/model-formats/) — File and serialization formats used to store and load model artifacts.
-- [`gpu-offloading/`](./sub/gpu-offloading/) — Placing selected model computation or layers on a GPU while other work remains elsewhere.
-- [`kv-cache/`](./sub/kv-cache/) — Cached attention keys and values reused during autoregressive generation.
-- [`latency/`](./sub/latency/) — The elapsed time required to produce a response or reach a defined output milestone.
-- [`throughput/`](./sub/throughput/) — The amount of model work completed per unit of time.
-- [`performance-metrics/`](./sub/performance-metrics/) — Measurements such as time to first token, tokens per second, latency, and memory use.
+- [`inference/`](./sub/inference/)
+- [`quantization/`](./sub/quantization/)
+- [`numerical-precision/`](./sub/numerical-precision/)
+- [`model-formats/`](./sub/model-formats/)
+- [`gpu-offloading/`](./sub/gpu-offloading/)
+- [`kv-cache/`](./sub/kv-cache/)
+- [`latency/`](./sub/latency/)
+- [`throughput/`](./sub/throughput/)
+- [`performance-metrics/`](./sub/performance-metrics/)
 
 ## Useful
 
-- [`model-serving/`](./sub/model-serving/) — Exposing model inference through a managed process, API, queue, or runtime service.
-- [`model-loading/`](./sub/model-loading/) — Moving model artifacts into RAM, VRAM, or runtime-managed memory for execution.
-- [`cpu-inference/`](./sub/cpu-inference/) — Running model computation primarily on general-purpose processors.
-- [`gpu-inference/`](./sub/gpu-inference/) — Running model computation primarily on graphics processors optimized for parallel workloads.
-- [`context-caching/`](./sub/context-caching/) — Reusing previously processed prompt context to reduce repeated computation.
+- [`model-serving/`](./sub/model-serving/)
+- [`model-loading/`](./sub/model-loading/)
+- [`cpu-inference/`](./sub/cpu-inference/)
+- [`gpu-inference/`](./sub/gpu-inference/)
+- [`context-caching/`](./sub/context-caching/)
 
 ## Specialized
 
-- [`context-extension/`](./sub/context-extension/) — Techniques that extend a model's usable context length beyond its native or default configuration.
-- [`flash-attention/`](./sub/flash-attention/) — Attention implementations optimized to reduce memory traffic and improve GPU efficiency.
-- [`continuous-batching/`](./sub/continuous-batching/) — Dynamically combining active inference requests to improve serving utilization.
-- [`speculative-decoding/`](./sub/speculative-decoding/) — Using a faster draft process to propose tokens for verification by a target model.
+- [`context-extension/`](./sub/context-extension/)
+- [`flash-attention/`](./sub/flash-attention/)
+- [`continuous-batching/`](./sub/continuous-batching/)
+- [`speculative-decoding/`](./sub/speculative-decoding/)
+
+This ordering/navigation residual remains migration source material until later learning-path/navigation and source-removal gates are activated; `model-formats/` remains separately unresolved.
