@@ -1,38 +1,30 @@
 # Image Generation
 
-Image generation creates new images from text, reference images, masks, layouts, depth maps, poses, or other conditioning signals.
+Legacy residual retained for application examples and practical output-review guidance that is intentionally outside the canonical Image Generation concept owner.
+
+> **Migration note:** Image-generation task identity, architecture neutrality, unconditional/conditional boundaries, text-to-image specialization, image-editing sibling boundaries, latent/direct generation distinctions, probabilistic controllability, factual-evidence caveats, and concrete model/runtime/license ownership are already preserved in `docs/sub/concepts/sub/modalities/sub/vision/sub/image-generation/`. The remaining material below stays here until its exact learning, workflow, evaluation, governance, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application residual
 
-Modern systems commonly use diffusion or related generative architectures that begin from noise or a latent representation and progressively construct an image. The prompt and conditioning guide composition, subject, style, lighting, and other attributes, but generation remains probabilistic.
+Image-generation systems can support workflows such as:
 
-## Practical use
+- concept art and visual ideation;
+- marketing and social-media assets;
+- product mockups and storyboards;
+- controlled image editing and restoration;
+- synthetic visual datasets.
 
-- Concept art and visual ideation.
-- Marketing and social media assets.
-- Product mockups and storyboards.
-- Controlled image editing and restoration.
-- Synthetic visual datasets.
+These are use-case examples rather than part of the canonical task definition.
 
-## Trade-offs and limitations
+## Output-review residual
 
-Models may produce anatomical errors, inconsistent text, duplicated objects, or details that do not match the prompt. Exact identity, logos, typography, and multi-image consistency often require reference conditioning or manual editing.
+Generated images can contain anatomical errors, malformed or inconsistent text, duplicated objects, implausible reflections, identity drift, or details that do not match the requested condition. Exact logos, typography, geometry, counts, identity, and cross-image consistency may require additional conditioning, editing, or verification.
 
-## Common mistakes
+Do not treat generated visuals as factual evidence merely because they appear realistic. Before publication or downstream use, inspect the properties that matter to the target workflow, including hands/anatomy, text, reflections, repeated objects, requested identities/geometry, and any licensing or usage constraints attached to the concrete model, data, or output context.
 
-- Expecting a long prompt to control every detail independently.
-- Using generated images as factual evidence.
-- Ignoring model, dataset, and output licensing.
-- Publishing without inspecting hands, text, reflections, and repeated objects.
-
-## Related concepts
-
-- [Multimodal and Generative Media](../../)
-- [Diffusion Models](../diffusion-models/)
-- [Text-to-Image](../text-to-image/)
-- [Image-to-Image](../image-to-image/)
+These practical review and workflow considerations remain migration source material until their exact learning, evaluation, governance, or decision-support owners are verified.
