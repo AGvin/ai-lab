@@ -1,8 +1,8 @@
 # Agents and Automation
 
-Concepts for configuring AI systems that plan, use tools, maintain state, and perform controlled actions.
+Legacy residual retained only for deferred reading-priority metadata and temporary legacy child navigation.
 
-Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
+> **Migration note:** Most reusable agent/workflow meanings in this legacy group already have selected canonical owners and their ordinary leaves have been individually dispositioned. `Essential` / `Useful` / `Specialized` expresses pedagogical reading order rather than canonical ancestry. `model-context-protocol/`, `agent-skills/`, and `plugins/` remain intentionally mixed/unresolved roots pending formal specification/catalog/evidence boundaries, and the `multi-agent-systems/` subtree still contains the deferred `integrated-agent-organization-and-resource-portfolio/` research/provenance candidate. Preserve those links without treating the unresolved roots/candidate as dispositioned until their separate gates are ready.
 
 ## Translations
 
@@ -11,27 +11,29 @@ Concepts are grouped by practical priority. Priority affects reading order, not 
 
 ## Essential
 
-- [`ai-agents/`](./sub/ai-agents/) — AI systems that pursue goals through model decisions, tools, state, and iterative actions.
-- [`agentic-workflows/`](./sub/agentic-workflows/) — Controlled multi-step processes combining model decisions with deterministic workflow logic.
-- [`tool-calling/`](./sub/tool-calling/) — A model selecting a registered external operation and producing arguments for execution.
-- [`agent-state/`](./sub/agent-state/) — Explicit working data tracking progress, decisions, and intermediate results.
-- [`agent-memory/`](./sub/agent-memory/) — Mechanisms preserving useful information beyond the immediate request.
-- [`planning/`](./sub/planning/) — Selecting and ordering actions needed to reach a goal.
-- [`verification-and-reflection/`](./sub/verification-and-reflection/) — Checking results and revising an approach when needed.
-- [`human-in-the-loop/`](./sub/human-in-the-loop/) — Human review, approval, or intervention at selected points.
-- [`idempotency/`](./sub/idempotency/) — Designing actions so safe repetition does not create duplicate effects.
-- [`failure-recovery/`](./sub/failure-recovery/) — Restoring progress safely after model, tool, network, or workflow failures.
+- [`ai-agents/`](./sub/ai-agents/)
+- [`agentic-workflows/`](./sub/agentic-workflows/)
+- [`tool-calling/`](./sub/tool-calling/)
+- [`agent-state/`](./sub/agent-state/)
+- [`agent-memory/`](./sub/agent-memory/)
+- [`planning/`](./sub/planning/)
+- [`verification-and-reflection/`](./sub/verification-and-reflection/)
+- [`human-in-the-loop/`](./sub/human-in-the-loop/)
+- [`idempotency/`](./sub/idempotency/)
+- [`failure-recovery/`](./sub/failure-recovery/)
 
 ## Useful
 
-- [`function-calling/`](./sub/function-calling/) — A structured model interface where output selects a function and provides arguments.
-- [`model-context-protocol/`](./sub/model-context-protocol/) — An open client-server protocol for exposing tools, resources, prompts, and related context capabilities to AI applications.
-- [`agent-skills/`](./sub/agent-skills/) — Portable procedural knowledge packages discovered and loaded when a task requires them.
-- [`plugins/`](./sub/plugins/) — Platform-specific extension packages that can distribute skills, agents, hooks, connectors, and MCP configuration.
-- [`task-decomposition/`](./sub/task-decomposition/) — Breaking a large task into smaller, verifiable units.
-- [`retries/`](./sub/retries/) — Repeating eligible failed operations under bounded rules.
-- [`autonomy-levels/`](./sub/autonomy-levels/) — The degree of independent decision-making granted to an AI system.
+- [`function-calling/`](./sub/function-calling/)
+- [`model-context-protocol/`](./sub/model-context-protocol/)
+- [`agent-skills/`](./sub/agent-skills/)
+- [`plugins/`](./sub/plugins/)
+- [`task-decomposition/`](./sub/task-decomposition/)
+- [`retries/`](./sub/retries/)
+- [`autonomy-levels/`](./sub/autonomy-levels/)
 
 ## Specialized
 
-- [`multi-agent-systems/`](./sub/multi-agent-systems/) — Systems in which multiple agents coordinate, compete, review, or specialize.
+- [`multi-agent-systems/`](./sub/multi-agent-systems/)
+
+This ordering/navigation residual remains migration source material until later learning-path/navigation and source-removal gates are activated; the mixed extension roots and research candidate remain separately unresolved.
