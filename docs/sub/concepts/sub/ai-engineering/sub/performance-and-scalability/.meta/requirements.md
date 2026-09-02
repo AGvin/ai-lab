@@ -14,7 +14,7 @@
 - Explain queueing/load leveling as a mechanism for decoupling bursty arrival rates from processing capacity. Queues can protect dependencies and improve utilization but add waiting time, can become stale/unbounded, and require admission, priority, deadline, cancellation, and backpressure semantics appropriate to the workload.
 - Explain backpressure/admission control/throttling as overload-management families. Systems can reject, defer, queue, shed, prioritize, or degrade work to protect bounded resources and preserve critical service; accepting every request and relying on an unbounded queue is not a scalable design by itself.
 - Relate rate limits to this owner as performance/capacity controls while retaining generic quota/economics semantics in `cost-and-capacity/` and retry/recovery behavior in `reliability-and-resilience/`. Do not materialize an inferred `rate-limits/` child.
-- Explain batching and scheduling as performance mechanisms. Larger or dynamic batches can improve accelerator utilization/aggregate throughput but can increase queueing and per-request latency or memory use. Do not materialize `continuous-batching/`; it remains an architecture gap until explicitly selected.
+- Explain batching and scheduling as performance mechanisms. Larger or dynamic batches can improve accelerator utilization/aggregate throughput but can increase queueing and per-request latency or memory use. Delegate dynamically changing iterative-request scheduling semantics to the selected `deployment-and-serving/continuous-batching/` child rather than duplicating them here.
 - Explain caching as a performance mechanism when it avoids repeated computation, retrieval, tool calls, model loading, or other stable work. Hit rate, lookup overhead, invalidation/staleness, storage/memory pressure, isolation, and correctness determine whether caching actually improves performance.
 - Distinguish generic result/data caching from `models/inference/memory-and-context/context-caching/`; do not duplicate model-prefix cache semantics here.
 - Present vertical scaling, horizontal scaling, partitioning/sharding, replication, autoscaling, model/service routing, parallelism, offloading, optimized kernels, batching, caching, precomputation, and asynchronous processing as mechanism families rather than universal prescriptions.
@@ -35,6 +35,6 @@
 - End-to-end critical-path and workload-shape effects are not reduced to model tokens-per-second alone.
 - Concurrency is not equated with throughput, and saturation/queueing/tail behavior remain explicit.
 - Queues, caching, batching, autoscaling, and throttling are treated as conditional mechanisms with trade-offs rather than universal optimizations.
-- `continuous-batching/` and other unselected child concepts are not inferred/materialized.
+- Unselected child concepts are not inferred or materialized merely because related terminology appears in performance guidance.
 - Performance optimization cannot silently discard required output quality, validation, privacy, safety, or reliability constraints.
 - Concrete performance targets, thresholds, tuning values, provider limits, benchmarks, and deployment settings remain outside the reusable concept owner.
