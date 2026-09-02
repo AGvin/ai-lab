@@ -1,44 +1,36 @@
 # Citations
 
-Citations connect generated statements to the sources or evidence used to support them.
+Legacy residual retained for citation-generation workflow, source-location preservation, quality evaluation, readability, and access-control guidance that are intentionally outside the canonical Citations concept owner.
+
+> **Migration note:** Citation identity, correctness/completeness/specificity/source-quality boundaries, trusted source metadata requirements, grounding/provenance/quotation distinctions, mutable-source versioning, multi-source and compound-claim support, citation resolvability, security boundaries, and evaluator limitations are already preserved in `docs/sub/concepts/sub/trustworthy-ai/sub/information-integrity/sub/citations/`. The remaining material below stays here until its exact learning, evidence-engineering, evaluation, UI/application, or security owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Citation-generation residual
 
-A useful citation is traceable, specific, and attached to the claim it supports. It should identify the source and, when possible, a page, section, line range, record ID, or timestamp. Citation generation must be based on retrieved source metadata rather than invented reference text.
+Generate source identity and locations from retrieved or deterministic metadata rather than asking the model to reconstruct titles, URLs, page numbers, IDs, or timestamps from memory. Preserve stable source/version identity together with the most specific practical support location such as page, section, line range, record/field, timestamp, query result, or tool run.
 
-## Practical use
+When preprocessing, chunking, OCR, document moves, or re-indexing changes intermediate representations, maintain a resolver or mapping that keeps citations attached to the intended source evidence instead of allowing offsets to drift silently.
 
-- Evidence-backed research summaries.
-- Answers over policy, legal, or technical documentation.
-- Audit trails for data extracted from files or databases.
-- User interfaces that let readers inspect supporting passages.
+## Quality-evaluation residual
 
-## Citation quality checks
+Evaluate at least the dimensions required by the task:
 
-- **Correctness:** the cited passage supports the claim.
-- **Completeness:** important factual claims have evidence.
-- **Specificity:** the reference points to the relevant location.
-- **Provenance:** source identity and version are preserved.
+- whether the cited evidence actually supports the claim;
+- whether material claims that require evidence are covered;
+- whether the location is specific enough for verification;
+- whether source identity/version remains resolvable;
+- whether the source itself is current and appropriate authority.
 
-## Trade-offs and limitations
+Use automatic citation or entailment evaluators as assistance rather than ground truth when the risk warrants calibration or human review.
 
-A citation can point to a low-quality or outdated source. Excessive citations reduce readability, while sparse citations make verification difficult. Some generated claims combine several sources and require more than one reference.
+## Readability and access residual
 
-## Common mistakes
+Choose citation density according to verification risk and reader needs. Excessive markers can degrade readability, while document-level or sparse references can make claim-level checking impractical. Multi-source or compound claims may require several references rather than one convenient citation.
 
-- Allowing the model to invent URLs, titles, or page numbers.
-- Citing a document that discusses the topic but not the claim.
-- Losing citation offsets after document preprocessing.
-- Treating citations as a substitute for source evaluation.
+Do not expose protected source content, signed URLs, internal record identifiers, tenant data, or other restricted evidence merely to make a response appear traceable; citation rendering must preserve the caller's authorization boundary.
 
-## Related concepts
-
-- [Retrieval and Knowledge](../../)
-- [Grounding](../grounding/)
-- [Provenance](../../../safety-privacy-and-reliability/sub/provenance/)
-- [Retrieval Evaluation](../../../evaluation-and-operations/sub/retrieval-evaluation/)
+These citation-generation, quality, readability, and access practices remain migration source material until their exact learning, evidence-engineering, evaluation, UI/application, or security owners are verified.
