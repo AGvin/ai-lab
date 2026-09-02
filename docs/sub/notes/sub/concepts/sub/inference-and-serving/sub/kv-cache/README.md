@@ -1,37 +1,24 @@
 # KV Cache
 
-The KV cache stores attention keys and values from previously processed tokens so an autoregressive model does not recompute them for every new token.
+Legacy residual retained for capacity planning, benchmarking, and deployment-selection guidance that is intentionally outside the canonical KV Cache concept owner.
+
+> **Migration note:** KV-cache identity, autoregressive reuse semantics, architecture-dependent memory growth, cache-strategy families, cache-precision boundaries, context-window distinction, and the distinction from cross-request context/prefix caching are already preserved in `docs/sub/concepts/sub/models/sub/inference/sub/memory-and-context/sub/kv-cache/`. The remaining material below stays here until its exact learning, performance, runtime, hardware-fit, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Capacity-planning residual
 
-During generation, each new token attends to earlier tokens. Caching their key and value tensors makes decoding practical, but cache memory grows with context length, batch size, number of layers, attention dimensions, and cache precision.
+KV-cache requirements should be included when estimating how much usable context, batch size, or concurrency fits after model weights and other runtime state are loaded. A weights-only fit calculation can substantially overestimate practical serving capacity.
 
-## Practical use
+Relevant workload variables include retained context length, batch/concurrency, architecture-specific cache shape, cache precision, and the runtime's allocation or paging strategy. The model's advertised context limit is not proof that the full length fits on a particular hardware/runtime configuration.
 
-- Estimate how much context fits after model weights are loaded.
-- Choose batch and concurrency limits for a server.
-- Evaluate lower-precision cache formats when supported.
-- Reuse prompt state through prefix or context caching.
+## Benchmark and deployment residual
 
-## Trade-offs and limitations
+Benchmark representative context lengths rather than only short prompts when the deployment is expected to serve long contexts. Evaluate lower-precision cache formats, offloading, paging, sliding-window behavior, and other runtime-specific strategies only where supported by the concrete model/runtime combination.
 
-A larger cache enables longer context or more concurrent sessions but consumes significant RAM or VRAM. Quantized caches save memory but may affect quality. Sliding-window and grouped-query attention architectures change cache behavior but do not eliminate it.
+Practical deployment decisions should consider the measured trade-off between memory headroom, concurrency, latency/throughput, context length, and any quality impact from cache quantization or other approximations.
 
-## Common mistakes
-
-- Calculating fit from model weights alone.
-- Benchmarking short context and deploying long context.
-- Assuming the advertised context limit fits on all hardware.
-- Confusing persistent context caching with the in-memory KV cache of an active request.
-
-## Related concepts
-
-- [Inference and Serving](../../)
-- [Context Window](../../../model-usage-and-generation/sub/context-window/)
-- [Context Caching](../context-caching/)
-- [GPU Offloading](../gpu-offloading/)
+These operational consequences remain migration source material until their exact performance, runtime, hardware-fit, learning, or decision-support owners are verified.
