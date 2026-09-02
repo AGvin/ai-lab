@@ -9,8 +9,8 @@
 - Present graph, inverted/clustered, quantized/compressed, and exhaustive methods as important families without making one index family or implementation universal.
 - Explain that the similarity/distance metric must match the representation contract. Cosine similarity, dot product, and Euclidean distance are not interchangeable by default, although normalization can make some rankings mathematically related in specific cases.
 - Make clear that vector-search scores/distances are representation- and index-specific signals rather than calibrated relevance probabilities and generally should not be compared across unrelated representation models, metrics, or indexes without validation.
-- Distinguish vector search from a `vector database` product/category. Storage, metadata management, replication, CRUD, filtering, persistence, and service interfaces are system/product concerns; the generic vector-database concept remains an architecture gap.
-- Keep the unresolved generic `embeddings/` concept as a gap; explain only that vector search consumes vector representations without materializing an unselected embedding owner.
+- Distinguish vector search from the canonical `ai-engineering/system-design/vector-databases/` concept. Vector search owns the retrieval/query mechanism over vector representations; a vector database owns persistent data management, indexing, query execution, updates, metadata, recovery, concurrency, and other DBMS responsibilities that may expose vector search as one capability.
+- Distinguish vector search from the canonical `machine-learning/representation-learning/embeddings/` concept. Embeddings are reusable learned representations that can support retrieval and many other downstream tasks; vector search consumes compatible vector representations but does not own how embeddings are learned or imply that every embedding use case is a search problem.
 - Keep concrete index parameters, hardware placement, vector dimensions, model migrations, benchmark measurements, filtering implementations, product features, and application-specific thresholds with their applicable engineering, catalog, evidence, or decision owners.
 - Use the canonical entity references as research inputs for exact/approximate similarity-search and indexing trade-off boundaries when reader-facing rendering is activated.
 
@@ -20,5 +20,5 @@
 - Exact and approximate nearest-neighbor search are distinguished without implying one ANN recall/speed trade-off is universal.
 - Similarity metrics are not treated as interchangeable without representation-specific assumptions.
 - Raw similarity/distance scores are not presented as calibrated or universally comparable relevance values.
-- The blocked `embeddings/` and `vector-databases/` leaves are not implicitly materialized.
+- The canonical Embeddings and Vector Databases concepts remain separate owners and are not collapsed into vector search.
 - Legacy operational tuning guidance is not copied into the canonical concept as universal configuration.
