@@ -1,38 +1,30 @@
 # Inpainting
 
-Inpainting regenerates selected masked regions of an image while using the surrounding image as context.
+Legacy residual retained for practical localized-edit workflows and mask/context handling guidance that is intentionally outside the canonical Image Inpainting concept owner.
+
+> **Migration note:** Inpainting task identity, architecture-neutral localized completion semantics, mask-region boundary, distinctions from image-to-image/outpainting, preservation and factual-recovery caveats, boundary-consistency factors, and the separation of workflow heuristics from concept semantics are already preserved in `docs/sub/concepts/sub/modalities/sub/vision/sub/inpainting/`. The remaining material below stays here until its exact learning, editing-workflow, runtime, evidence, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Editing-workflow residual
 
-A mask identifies which pixels may change. The model fills the masked region according to the prompt, neighboring content, and optional reference controls. Mask blur and padding help blend the generated region into its surroundings.
+Inpainting workflows can be useful for:
 
-## Practical use
+- removing or replacing objects;
+- correcting hands, faces, text, or localized artifacts;
+- repairing damaged regions;
+- changing clothing, background elements, or materials;
+- applying a focused edit without regenerating the full image.
 
-- Remove or replace objects.
-- Correct hands, faces, text, or small artifacts.
-- Repair damaged areas.
-- Change clothing, background elements, or materials.
-- Extend a local edit without regenerating the full image.
+These are workflow examples rather than part of the canonical task definition.
 
-## Trade-offs and limitations
+## Mask and context residual
 
-A mask that is too small may preserve the artifact's structure; a mask that is too large may unnecessarily alter surrounding content. Lighting, perspective, shadows, and texture must match the original image for a convincing result.
+Concrete tools can expose mask blur, feathering, dilation, padding, crop/context size, compositing, prompt, strength, or repeated-pass controls. Useful values are runtime/model specific.
 
-## Common mistakes
+A mask that is too narrow can preserve unwanted structure around an artifact, while an unnecessarily broad edit region can modify surrounding content. Include enough relevant context for perspective, lighting, shadows, reflections, texture, and object relationships when those properties must remain coherent. Repeated editing of already compressed or repeatedly regenerated content can accumulate artifacts.
 
-- Masking only the visible error and not its shadow or reflection.
-- Using no context padding around the region.
-- Expecting exact object placement from text alone.
-- Repeatedly editing a compressed image and accumulating artifacts.
-
-## Related concepts
-
-- [Multimodal and Generative Media](../../)
-- [Image-to-Image](../image-to-image/)
-- [Outpainting](../outpainting/)
-- [ControlNet](../controlnet/)
+These practical mask/context choices remain migration source material until their exact learning, editing-workflow, runtime, evidence, or decision-support owners are verified.
