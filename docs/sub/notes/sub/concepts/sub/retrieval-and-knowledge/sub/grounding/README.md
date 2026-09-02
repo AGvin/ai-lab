@@ -1,42 +1,30 @@
 # Grounding
 
-Grounding ties generated claims to supplied evidence, tool results, or authoritative data instead of relying only on the model's internal statistical knowledge.
+Legacy residual retained for evidence-acquisition workflow, provenance handling, critical-value validation, source-conflict handling, and abstention guidance that are intentionally outside the canonical Grounding concept owner.
+
+> **Migration note:** Grounding identity, claim-level support, distinction from factuality/citations/retrieval/source authority/provenance, evidence-form diversity, direct versus derived support, conflict/insufficient-evidence handling, temporal/security boundaries, and non-guarantees from RAG/tool/database access are already preserved in `docs/sub/concepts/sub/trustworthy-ai/sub/information-integrity/sub/grounding/`. The remaining material below stays here until its exact learning, evidence-engineering, evaluation, trustworthy-AI, or application-workflow owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Evidence-acquisition residual
 
-A grounded answer should be supported by information available to the system at generation time. Grounding may use retrieved documents, database records, calculations, code execution, sensors, or APIs. The application should preserve the relationship between claims and evidence so the result can be checked.
+Acquire evidence from the mechanism appropriate to the claim: internal documentation, structured records, authoritative APIs, deterministic calculations, code execution, tests, logs, sensors, or other verifiable sources. Retrieve narrowly enough that irrelevant material does not obscure the support relation, while preserving enough context to interpret qualifiers, scope, version, and exceptions correctly.
 
-## Practical use
+Keep untrusted evidence content separate from instruction authority. A retrieved page or document can contribute factual evidence without gaining permission to alter system behavior, tool permissions, or access policy.
 
-- Answer questions from internal documentation.
-- Produce current data from APIs or databases.
-- Generate summaries with source references.
-- Use calculators or code for exact computations.
-- Restrict recommendations to verified catalog data.
+## Provenance and validation residual
 
-## Trade-offs and limitations
+Preserve source identity, version/time, and the evidence location or tool/run result needed to reconstruct material claims. Distinguish direct source statements from deterministic calculations, inference, and synthesis when that distinction matters for verification.
 
-Grounding quality depends on evidence quality. Incorrect, outdated, or malicious sources can create confidently grounded but wrong answers. A model may also cite a relevant passage that does not actually support the specific claim.
+Validate critical values outside generative interpretation where feasible, especially identifiers, financial totals, permissions, transactions, legal/policy constraints, safety-relevant values, and exact computations. A plausible explanation or citation-shaped output is not a substitute for checking the actual source/result.
 
-## Good practice
+## Conflict and abstention residual
 
-Retrieve narrowly, record provenance, and distinguish direct evidence from inference. Validate critical values outside the model. Allow the system to state that evidence is insufficient.
+When sources disagree, surface the disagreement or apply an explicit authority/version policy instead of silently selecting the evidence that matches the generated conclusion. When available evidence cannot support a material claim, allow qualification, a request for more data, or abstention rather than filling the gap with plausible detail.
 
-## Common mistakes
+Evaluate grounding at the claim/evidence level and separately assess source quality, freshness, authority, and downstream task correctness.
 
-- Calling an answer grounded merely because documents were placed in context.
-- Accepting citation presence without checking citation support.
-- Mixing trusted data with untrusted instructions.
-- Hiding source conflicts instead of reporting them.
-
-## Related concepts
-
-- [Retrieval and Knowledge](../../)
-- [Citations](../citations/)
-- [RAG](../rag/)
-- [Hallucinations](../../../model-usage-and-generation/sub/hallucinations/)
+These evidence-acquisition, provenance, validation, conflict, and abstention practices remain migration source material until their exact learning, evidence-engineering, evaluation, trustworthy-AI, or application-workflow owners are verified.
