@@ -1,38 +1,34 @@
 # Pretraining
 
-Pretraining is the large-scale initial training phase that creates a broadly capable base model before task-specific adaptation.
+Legacy residual retained for training-program readiness, checkpoint/recovery operations, staged evaluation, reproducibility, and compute/data governance guidance that are intentionally outside the canonical Pretraining concept owner.
+
+> **Migration note:** Pretraining identity, lifecycle-role versus scale boundaries, objective/modality variability, continued-pretraining distinction, inference-time mechanism separation, downstream-stage relationships, data-quality/provenance risks, cutoff limits, and design-dimension variability are already preserved in `docs/sub/concepts/sub/models/sub/training-and-adaptation/sub/pretraining/`. The remaining material below stays here until its exact learning, training-engineering, infrastructure, evaluation, governance, or project-operations owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Program-readiness residual
 
-Language models commonly learn by predicting missing or next tokens from massive corpora. Vision and multimodal models use related self-supervised or paired-data objectives. Pretraining teaches broad representations, patterns, and capabilities that later stages refine.
+Before a long training run, verify the exact data mixture/version, tokenizer or processor, architecture/configuration, objective, optimizer/schedule, precision strategy, distributed topology, checkpoint format, storage capacity, monitoring, and recovery path. Small mismatches discovered late can invalidate expensive compute rather than merely reduce convenience.
 
-## Main requirements
+Estimate data-loading throughput, checkpoint I/O, network/collective performance, optimizer/model state memory, activation/workspace memory, and expected wall-clock/runtime cost on the actual cluster instead of extrapolating only from parameter count or accelerator peak throughput.
 
-- Large, diverse, and carefully processed datasets.
-- Distributed compute and storage infrastructure.
-- Stable optimization across many training steps.
-- Tokenization and architecture decisions made before training.
-- Evaluation for capability, safety, contamination, and bias.
+## Checkpoint and recovery residual
 
-## Trade-offs and limitations
+Define checkpoint cadence according to restart cost, storage overhead, and failure frequency. Preserve enough state to reproduce or safely resume the run, including model/optimizer/scheduler state, step/sample progress, RNG state where required, dataset/shuffle/version identity, configuration, and code/container/runtime versions.
 
-Pretraining is expensive and difficult to reproduce. Data provenance and licensing can be hard to audit at scale. The resulting model reflects historical data and does not automatically know events after the training period.
+Test restore/resume before the expensive stage rather than discovering that a nominal checkpoint cannot reconstruct the training state after a node or job failure.
 
-## Common mistakes
+## Staged-evaluation residual
 
-- Treating pretraining as ordinary fine-tuning at larger scale.
-- Assuming more tokens always improve quality.
-- Ignoring duplicated or low-quality web data.
-- Expecting pretraining to provide current, attributable knowledge.
+Evaluate during training at meaningful checkpoints for optimization stability, capability trends, contamination/leakage indicators, safety or bias regressions, and data-quality failures. Keep a sufficiently independent acceptance boundary so repeatedly observed benchmark results do not become an uncontrolled training/selection target.
 
-## Related concepts
+Compare scaling or curriculum changes against matched baselines and record compute/data differences explicitly; more tokens or compute should not be treated as the explanation for quality changes when the data mixture, objective, implementation, or evaluation also changed.
 
-- [Training and Adaptation](../../)
-- [Foundation Models](../../../foundations-and-architecture/sub/foundation-models/)
-- [Instruction Tuning](../instruction-tuning/)
-- [Datasets](../datasets/)
+## Governance and reproducibility residual
+
+Record training-data lineage and applicable rights/restrictions, run ownership, compute budget, artifact destinations, incident/restart history, and the exact checkpoint promoted downstream. Keep training logs and model artifacts connected strongly enough that later fine-tuning or evaluation results can be traced to the correct pretrained state.
+
+These program-readiness, recovery, evaluation, reproducibility, and governance practices remain migration source material until their exact learning, training-engineering, infrastructure, evaluation, governance, or project-operations owners are verified.
