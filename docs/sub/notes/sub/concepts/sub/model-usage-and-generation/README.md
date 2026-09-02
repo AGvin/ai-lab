@@ -1,8 +1,8 @@
 # Model Usage and Generation
 
-Concepts for using trained models effectively through chats, APIs, applications, and local runtimes.
+Legacy residual retained only for deferred reading-priority metadata and temporary legacy child navigation.
 
-Concepts are grouped by practical priority. Priority affects reading order, not thematic placement.
+> **Migration note:** The reusable subject meanings in this legacy group already have selected canonical owners across model interaction, generation controls, classification, behavior/failure modes, and evaluation/selection boundaries, and the underlying leaf sources have been dispositioned individually. `Essential` / `Useful` / `Specialized` expresses pedagogical reading order rather than canonical ancestry; the migration design intentionally defers that ordering to later learning-path/navigation work. Preserve the current grouping and child links only until those later gates are ready.
 
 ## Translations
 
@@ -11,21 +11,23 @@ Concepts are grouped by practical priority. Priority affects reading order, not 
 
 ## Essential
 
-- [`tokens-and-tokenization/`](./sub/tokens-and-tokenization/) — The process of splitting input and output into the units a model reads and generates.
-- [`context-window/`](./sub/context-window/) — The bounded amount of tokenized information a model can consider during one request.
-- [`prompting/`](./sub/prompting/) — The practice of supplying instructions, context, examples, and constraints to guide a model.
-- [`system-prompts/`](./sub/system-prompts/) — High-priority instructions that define an assistant's role, behavior, and operational boundaries.
-- [`structured-output/`](./sub/structured-output/) — Model output constrained to a machine-readable structure such as JSON or a schema.
-- [`hallucinations/`](./sub/hallucinations/) — Unsupported or incorrect model output presented in a plausible form.
+- [`tokens-and-tokenization/`](./sub/tokens-and-tokenization/)
+- [`context-window/`](./sub/context-window/)
+- [`prompting/`](./sub/prompting/)
+- [`system-prompts/`](./sub/system-prompts/)
+- [`structured-output/`](./sub/structured-output/)
+- [`hallucinations/`](./sub/hallucinations/)
 
 ## Useful
 
-- [`few-shot-prompting/`](./sub/few-shot-prompting/) — Prompting that includes a small number of examples to demonstrate desired behavior.
-- [`sampling-parameters/`](./sub/sampling-parameters/) — Controls such as temperature, top-p, top-k, and seed that influence token selection.
-- [`reasoning-models/`](./sub/reasoning-models/) — Models optimized to spend additional computation on multi-step problem solving.
-- [`model-capabilities-and-limitations/`](./sub/model-capabilities-and-limitations/) — The practical strengths, boundaries, and failure modes of a specific model or deployment.
+- [`few-shot-prompting/`](./sub/few-shot-prompting/)
+- [`sampling-parameters/`](./sub/sampling-parameters/)
+- [`reasoning-models/`](./sub/reasoning-models/)
+- [`model-capabilities-and-limitations/`](./sub/model-capabilities-and-limitations/)
 
 ## Specialized
 
-- [`constrained-generation/`](./sub/constrained-generation/) — Generation restricted by a grammar, schema, token set, or other formal constraint.
-- [`chain-of-thought/`](./sub/chain-of-thought/) — Intermediate reasoning text or internal computation used to support multi-step answers.
+- [`constrained-generation/`](./sub/constrained-generation/)
+- [`chain-of-thought/`](./sub/chain-of-thought/)
+
+This ordering/navigation residual remains migration source material until later learning-path/navigation and source-removal gates are activated.
