@@ -13,7 +13,7 @@
 - Make clear that RAG does not by itself guarantee factuality, faithfulness, grounding, citation correctness, prompt-injection resistance, authorization, confidentiality, or freshness. Those properties require evidence and controls at the relevant retrieval, context, generation, security, and evaluation layers.
 - Explain that source attribution is enabled only when provenance survives ingestion/retrieval/context construction and the application maps generated claims or answers back to evidence; citation-shaped output alone is not provenance.
 - Keep concrete vector stores/search engines, indexing/chunking recipes, top-k values, prompt templates, code examples, model/provider configurations, benchmark results, access-control implementations, and application-specific RAG recommendations with their applicable catalog, learning, evidence, engineering, or decision owners.
-- Keep `graph-rag/` blocked as an architecture gap. Graph-based retrieval can be mentioned as a possible RAG variation only without creating or implying an unselected canonical GraphRAG child.
+- Keep the canonical `rag/graph-rag/` concept as a distinct RAG specialization. Graph-based retrieval/organization can contribute to RAG when relationships or higher-order structure add value, but it does not redefine the generic RAG contract or make graph construction a universal requirement.
 - Use the canonical entity references as research inputs for foundational and modern RAG boundaries when reader-facing rendering is activated.
 
 ## Validation
@@ -23,5 +23,5 @@
 - RAG is not defined by an absence of training or weight updates; query-time external knowledge augmentation is distinguished from optional component training.
 - RAG is not presented as an automatic factuality, grounding, citation, security, or authorization guarantee.
 - Retrieval failures and generation failures remain separately diagnosable/evaluable.
-- `graph-rag/` is not implicitly materialized or treated as an already selected descendant.
+- `graph-rag/` is recognized as a canonical specialization without being treated as a universal RAG stage or requirement.
 - Legacy product lists, implementation code, and workflow recipes are not duplicated into this canonical architecture concept.
