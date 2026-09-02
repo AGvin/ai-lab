@@ -1,41 +1,33 @@
 # Few-Shot Prompting
 
-Few-shot prompting guides a model by including a small number of input-output examples that demonstrate the desired behavior.
+Legacy residual retained for example-design, evaluation, and privacy guidance that are intentionally outside the canonical Few-Shot Prompting concept owner.
+
+> **Migration note:** Few-shot identity, inference-time/in-context behavior, separation from weight updates and retrieval, context-relative example counts, demonstration capabilities and sensitivity, and copying/anchoring/bias/leakage limitations are already preserved in `docs/sub/concepts/sub/models/sub/interaction/sub/prompting/sub/few-shot-prompting/`. The remaining material below stays here until its exact learning, evaluation, retrieval, privacy, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Example-design residual
 
-Examples communicate patterns that are difficult to specify fully in prose, such as classification boundaries, formatting conventions, terminology, or transformation style. The model infers the task pattern from the demonstrations and applies it to a new input without updating its weights.
+Useful design practices include:
 
-## Practical use
+- choose demonstrations that are representative of the actual task rather than only easy or ideal cases;
+- include relevant edge, invalid, or failure cases when they materially affect the required behavior;
+- use positive and negative examples when the distinction helps communicate a boundary;
+- keep example formatting and labels internally consistent;
+- inspect demonstrations for accidental instruction-like content or contradictions with the current task;
+- treat label balance, example similarity, diversity, ordering, and count as task-specific variables to evaluate rather than universal rules.
 
-- Demonstrate a required output structure.
-- Clarify edge cases in classification or extraction.
-- Establish domain-specific terminology or labeling conventions.
-- Show how to handle missing, ambiguous, or invalid input.
+## Evaluation residual
 
-## Design guidance
+Evaluate few-shot prompts on representative held-out cases instead of assuming that adding demonstrations improves performance. Compare against simpler zero-shot or one-shot baselines when useful, and re-run relevant checks after material model, provider, prompt, or example-set changes.
 
-Choose examples that are representative rather than merely easy. Include positive and negative cases when the distinction matters. Keep formatting consistent, and ensure examples do not contain accidental instructions that conflict with the task. For classification, balance labels enough that the model does not learn a misleading majority pattern.
+Examples consume context and can anchor behavior to superficial patterns, so evaluate both accepted-result quality and the context/cost trade-off for the concrete workload.
 
-## Trade-offs and limitations
+## Privacy residual
 
-Examples consume context and may anchor the model too strongly to superficial wording. Poor examples can reduce performance more than no examples. Few-shot prompting also does not provide durable knowledge or guarantee identical behavior across model versions.
+Do not place sensitive or confidential example data into demonstrations unless the application has an appropriate data-handling basis and the concrete model/provider path is permitted for that data. Prefer synthetic or appropriately sanitized examples when they satisfy the learning objective.
 
-## Common mistakes
-
-- Providing examples that contradict the written instructions.
-- Using only ideal cases and omitting important failures.
-- Allowing the model to copy sensitive data from demonstrations.
-- Assuming more examples always improve results.
-
-## Related concepts
-
-- [Model Usage and Generation](../../)
-- [Prompting](../prompting/)
-- [Context Window](../context-window/)
-- [Evaluation Datasets](../../../evaluation-and-operations/sub/evaluation-datasets/)
+These example-design, evaluation, and privacy practices remain migration source material until their exact learning, evaluation, privacy, retrieval, or decision-support owners are verified.
