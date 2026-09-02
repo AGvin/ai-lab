@@ -1,0 +1,4 @@
+entity:
+  id: catalog/specifications
+  type: catalog-index
+  name: Specifications
