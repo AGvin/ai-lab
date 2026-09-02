@@ -1,46 +1,35 @@
 # Structured Output
 
-Structured output is model-generated data that follows a defined machine-readable format, such as JSON, a JSON Schema, XML, CSV, or a typed function-call argument object.
+Legacy residual retained for application integration, schema-design, validation, retry, and consequential-action guidance that are intentionally outside the canonical Structured Output concept owner.
+
+> **Migration note:** Structured-output identity, result-contract versus generation-mechanism separation, schema/parse/type/semantic/factual/authorization/safety validation layers, structured-output versus constrained-generation distinction, and tool-output versus actual execution boundaries are already preserved in `docs/sub/concepts/sub/models/sub/interaction/sub/generation-controls/sub/structured-output/`. The remaining material below stays here until its exact learning, application-engineering, trustworthy-AI, or provider-specific owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application-integration residual
 
-Applications often need values that can be parsed and validated rather than prose that merely looks structured. Reliable structured output combines a clear schema, model or decoder support, validation, and error handling. The schema describes shape and types; it does not guarantee that the values are factually correct.
+Structured outputs are commonly useful for entity extraction, classifications, workflow parameters, API inputs, required fields or enumerated values, and separating machine-readable results from reader-facing explanation.
 
-## Practical use
+Treat generated structured data as proposed application input. Validate it before using it in a consequential operation, and perform authorization or permission checks independently from schema compliance.
 
-- Extract entities, classifications, or action parameters.
-- Produce inputs for APIs and workflow steps.
-- Enforce required fields and enumerated values.
-- Separate machine-readable results from user-facing explanations.
-- Validate output before executing any consequential action.
+## Schema-design and provider residual
 
-## Implementation considerations
+Useful implementation practices include:
 
-- Prefer native schema-constrained generation when the provider supports it.
-- Keep schemas small and avoid deeply ambiguous unions.
-- Define optional fields intentionally instead of accepting arbitrary missing data.
-- Reject or repair invalid output through a bounded retry policy.
-- Apply domain validation after syntax validation, such as date ranges or permitted identifiers.
+- prefer a provider/runtime's native supported structured-output or schema-constrained mechanism when its guarantees fit the task, while verifying the exact supported schema subset;
+- keep schemas no more complex than the task requires and avoid deeply ambiguous alternatives when they reduce generation reliability;
+- define required and optional fields intentionally rather than treating arbitrary omission as acceptable;
+- avoid depending on fragile parsing of unrestricted prose when a supported machine-readable contract is required.
 
-## Trade-offs and limitations
+These choices are implementation-specific rather than universal Structured Output semantics.
 
-Strict schemas improve integration reliability but can make nuanced answers harder to represent. Large schemas consume context and may reduce model accuracy. A syntactically valid object may still contain invented IDs, unsupported claims, or unsafe values.
+## Validation and recovery residual
 
-## Common mistakes
+After structural validation, apply domain validation appropriate to the application, such as allowed identifiers, date ranges, state transitions, path restrictions, or other business constraints.
 
-- Parsing free-form prose with fragile regular expressions.
-- Executing generated arguments without validation.
-- Treating schema compliance as factual verification.
-- Requesting both unrestricted prose and strict JSON in the same output channel.
+When output is invalid, use a bounded repair, retry, or failure policy rather than silently accepting malformed or semantically invalid data. If a generated object will cause an external action, validate and authorize the action before execution even when the object is syntactically and structurally valid.
 
-## Related concepts
-
-- [Model Usage and Generation](../../)
-- [Constrained Generation](../constrained-generation/)
-- [Function Calling](../../../agents-and-automation/sub/function-calling/)
-- [Guardrails](../../../safety-privacy-and-reliability/sub/guardrails/)
+These integration, validation, and recovery practices remain migration source material until their exact learning, application-engineering, trustworthy-AI, or provider-specific owners are verified.
