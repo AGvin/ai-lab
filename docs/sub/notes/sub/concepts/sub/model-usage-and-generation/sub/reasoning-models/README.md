@@ -1,41 +1,30 @@
 # Reasoning Models
 
-Reasoning models are optimized to spend additional computation on multi-step problem solving before producing a final answer.
+Legacy residual retained for workload routing, operating-budget, verification, and cost/latency guidance that are intentionally outside the canonical Reasoning Models classification owner.
+
+> **Migration note:** Reasoning-model/configuration identity, configurable/adaptive test-time-compute semantics, distinction from generic reasoning capability and chain of thought, model-side versus external orchestration boundaries, hidden/visible reasoning independence, inference-budget and evaluation boundaries, non-monotonic compute scaling, and non-guarantees for factuality/correctness/safety/authorization are already preserved in `docs/sub/concepts/sub/models/sub/classification/sub/reasoning-models/`. The remaining material below stays here until its exact learning, routing, evaluation, application-engineering, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Workload-routing residual
 
-Compared with ordinary low-latency chat models, reasoning-oriented models may allocate more internal work to planning, checking intermediate steps, exploring alternatives, or using tools. They are often useful for difficult coding, mathematics, analysis, and tasks with several dependent constraints.
+Treat reasoning-oriented modes as one routing option rather than the default for every request. They are often candidates for difficult, multi-step, constraint-rich, analytical, coding, mathematical, planning, or review tasks, but actual benefit must be measured for the concrete model, mode, tools, and workload.
 
-## Practical use
+Simple extraction, classification, deterministic transformations, or latency-sensitive work can be better served by a lower-effort model/mode, a smaller model, or a deterministic program when those options satisfy the acceptance criteria.
 
-- Complex debugging and architecture decisions.
-- Multi-step calculations or constraint satisfaction.
-- Planning tool sequences for an agent.
-- Reviewing a proposed solution for contradictions or missing cases.
+## Operating-budget residual
 
-## Operating considerations
+Provide the complete objective, material constraints, and enough relevant context for the model or inference system to evaluate the task. When the platform exposes reasoning/thinking effort, time, token, latency, or monetary controls, set budgets according to task value and failure cost instead of maximizing deliberation automatically.
 
-Give the model a clear objective, complete constraints, and enough context to verify its result. Prefer requesting a concise final explanation or evidence rather than depending on unrestricted internal reasoning text. Set explicit time, token, or cost budgets when the platform supports them.
+Prefer concise final explanations, evidence, calculations, tool results, or other verifiable artifacts when they satisfy review needs; unrestricted hidden or visible reasoning text is not required as an audit trail.
 
-## Trade-offs and limitations
+## Verification and trade-off residual
 
-Reasoning models can be slower and more expensive. Additional reasoning does not guarantee correct premises, current information, or safe actions. They may also overcomplicate straightforward tasks where a smaller model or deterministic program is more appropriate.
+Validate material calculations, tool actions, external facts, and consequential outputs independently when the application requires it. Additional reasoning can increase latency and cost and can still pursue a wrong premise, use stale information, or produce an unsafe plan.
 
-## Common mistakes
+Evaluate accepted-result quality together with latency, compute/token use, tool cost, and failure rate so routing decisions reflect the complete workload trade-off rather than a provider label or reasoning-budget setting alone.
 
-- Using the most expensive reasoning mode for every request.
-- Treating a detailed explanation as proof of correctness.
-- Failing to validate tool calls, calculations, or external facts.
-- Expecting hidden internal reasoning to be available as an audit trail.
-
-## Related concepts
-
-- [Model Usage and Generation](../../)
-- [Chain of Thought](../chain-of-thought/)
-- [Planning](../../../agents-and-automation/sub/planning/)
-- [Model Routing](../../../evaluation-and-operations/sub/model-routing/)
+These routing, operating, verification, and cost/latency practices remain migration source material until their exact learning, routing, evaluation, engineering, or decision-support owners are verified.
