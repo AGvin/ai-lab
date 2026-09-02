@@ -1,43 +1,34 @@
 # Agent State
 
-Agent state is the explicit data that records a workflow's current position, intermediate results, decisions, pending actions, and execution metadata.
+Legacy residual retained for practical state-schema, transition-validation, artifact-reference, and recovery guidance that is intentionally outside the canonical State and Memory concept owner.
+
+> **Migration note:** Agent-state identity, distinction from memory/model context/conversation history, authoritative-current-state semantics, resumability boundary, persistence-versus-recovery caveat, and consistency with external side effects are already preserved in `docs/sub/concepts/sub/agents-and-autonomy/sub/state-and-memory/`. The remaining material below stays here until its exact learning, workflow-engineering, reliability, privacy, or project owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## State-schema residual
 
-State should not exist only inside a model conversation. Explicit state makes an agent resumable, inspectable, testable, and safer to retry. It may be stored in memory for short tasks or persisted in a database, workflow engine, or event log for long-running work.
+A practical workflow state can record fields such as:
 
-## Common state fields
+- task or execution identity and current stage;
+- validated inputs and outputs;
+- references to tool results or larger artifacts;
+- completed, pending, and blocked actions;
+- retry counters and error state;
+- human approvals, rejections, or escalation state; and
+- model, prompt, tool, schema, or configuration versions when they affect continuation or auditability.
 
-- Task identifier and current stage.
-- Inputs, validated outputs, and tool results.
-- Completed and pending actions.
-- Retry counters and error details.
-- Human approvals or rejected actions.
-- Model, prompt, and configuration versions.
+These are implementation examples rather than one universal state schema.
 
-## Practical use
+## Transition and recovery residual
 
-Use typed state objects and validate every transition. Store references to large artifacts instead of repeatedly placing them in model context. Separate authoritative application state from model-generated notes or summaries.
+Prefer explicit typed or otherwise validated state transitions over treating free-form model prose as the workflow ledger. Keep large artifacts in their authoritative stores and place stable references/identifiers in state when repeated copying into model context would be wasteful or ambiguous.
 
-## Trade-offs and limitations
+Persisted state introduces schema evolution, privacy/retention, concurrent-update, and consistency concerns. Update state and external effects under an explicit consistency/reconciliation contract: a model or worker must not mark a consequential action complete merely because it proposed the action or lost the acknowledgement from the external system.
 
-Persisted state improves recovery and auditability but introduces schema evolution, privacy, retention, and concurrency concerns. State may become inconsistent if external side effects occur without corresponding updates.
+When several workers can modify related state or side effects, define ownership, conflict/locking/idempotency/reconciliation rules appropriate to the system rather than relying on conversational coordination.
 
-## Common mistakes
-
-- Using chat history as the only source of truth.
-- Storing secrets or unnecessary personal data in state.
-- Updating state before confirming an external action succeeded.
-- Allowing several workers to modify the same task without coordination.
-
-## Related concepts
-
-- [Agents and Automation](../../)
-- [Agent Memory](../agent-memory/)
-- [Failure Recovery](../failure-recovery/)
-- [Tracing](../../../evaluation-and-operations/sub/tracing/)
+These state-engineering and recovery practices remain migration source material until their exact learning, engineering, reliability, privacy, or project owners are verified.
