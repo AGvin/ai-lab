@@ -1,42 +1,32 @@
 # Function Calling
 
-Function calling is a structured form of tool calling in which a model selects a named function and supplies arguments that match a declared schema.
+Legacy residual retained for practical function-interface design guidance that is intentionally outside the canonical Tool Use concept owner.
+
+> **Migration note:** Function calling as a narrower structured tool-interface pattern, the fact that the exposed function need not map one-to-one to a programming-language function, host-owned authentication/authorization/validation/execution/error handling, and schema-valid-versus-safe/correct distinctions are already preserved in `docs/sub/concepts/sub/agents-and-autonomy/sub/tool-use/`. The remaining material below stays here until its exact learning, API/interface-design, execution-security, or project owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application residual
 
-The word “function” describes the interface exposed to the model; the underlying implementation may call an API, queue a job, query a database, or invoke local code. The host application remains responsible for authentication, authorization, validation, execution, and error handling.
+Function-style interfaces can support workflows such as:
 
-## Practical use
+- extracting typed arguments from natural-language requests;
+- routing to bounded application capabilities;
+- connecting conversational interfaces to business operations;
+- producing structured records for a workflow step; and
+- selecting among a small approved set of actions.
 
-- Extract typed arguments from natural-language requests.
-- Route requests to application capabilities.
-- Connect chat interfaces to business operations.
-- Produce structured data for a workflow step.
-- Let a model choose among a small set of approved actions.
+These are interface/application examples rather than part of the canonical tool-use definition.
 
-## Design guidance
+## Interface-design residual
 
-Use descriptive names and precise parameter descriptions. Prefer enumerations and typed fields over free-form strings. Keep functions narrow enough that permission checks are meaningful. Return compact, structured results that distinguish success, failure, and partial completion.
+Use descriptive operation names and parameter descriptions. Prefer typed fields, enumerations, and explicit constraints where they improve validation and reduce ambiguity, but do not treat schema conformance as authorization or semantic correctness.
 
-## Trade-offs and limitations
+Keep function-like capabilities narrow enough that permission and business-rule checks are meaningful. Avoid passing model-generated file paths, SQL, shell commands, or similarly powerful free-form execution material directly into a privileged implementation unless a separate validated execution boundary explicitly permits it.
 
-A valid function-call object does not mean the intent is safe or correct. Function schemas can become large, and many similar functions may reduce selection accuracy. Provider implementations differ in how strictly they enforce schemas.
+Return compact structured results whose contract can distinguish success, failure, partial completion, and relevant error state. Provider/runtime implementations can differ in schema strictness and tool/function protocol details, so recipes must be validated for the concrete interface rather than assumed portable.
 
-## Common mistakes
-
-- Treating the model as the authorization layer.
-- Passing generated file paths, SQL, or commands directly to execution.
-- Failing to report tool errors back to the workflow.
-- Confusing a proposed function call with completed execution.
-
-## Related concepts
-
-- [Agents and Automation](../../)
-- [Tool Calling](../tool-calling/)
-- [Structured Output](../../../model-usage-and-generation/sub/structured-output/)
-- [Guardrails](../../../safety-privacy-and-reliability/sub/guardrails/)
+These function-interface practices remain migration source material until their exact learning, API/interface-design, security, or project owners are verified.
