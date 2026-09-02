@@ -1,41 +1,24 @@
 # Throughput
 
-Throughput measures how much inference work a system completes per unit of time.
+Legacy residual retained for workload-shaped measurement, capacity planning, and serving-optimization guidance that is intentionally outside the canonical metric-definition owner.
+
+> **Migration note:** Generic throughput semantics, work-unit distinctions, input/output token separation, concurrency/capacity boundaries, service-quality constraints, workload-condition disclosure, and failure-accounting requirements are already preserved in `docs/sub/concepts/sub/evaluation-and-measurement/sub/metrics/`. The remaining material below stays here until its exact learning, performance-engineering, benchmark, or evidence owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Common measures
+## Practical measurement residual
 
-- Generated tokens per second.
-- Prompt tokens processed per second.
-- Requests completed per second.
-- Concurrent sessions sustained at a latency target.
+Measure throughput with the expected distribution of prompt/input lengths, generated output lengths, batch sizes, concurrency, cache state, model/runtime configuration, and hardware topology. Report the work unit explicitly: generated tokens/s, prompt tokens/s, requests/s, samples/s, or another unit are not interchangeable.
 
-## Core idea
+When throughput is used as a service-capacity claim, report the associated latency, error/timeout/rejection behavior, queue policy, and quality target. Maximum unconstrained throughput can be materially different from usable throughput under an interactive or deadline-bound service objective.
 
-Throughput is a system property, not only a model property. Batching, request length, hardware utilization, quantization, scheduler behavior, and concurrency all influence it. Per-request token speed may decrease while total system throughput increases.
+## Performance-engineering residual
 
-## Practical use
+Throughput is shaped by the complete serving system rather than the model alone. Batching, scheduler behavior, request-length mix, quantization or precision, memory headroom, hardware utilization, and concurrency can increase aggregate work completed even while per-request generation speed or latency becomes worse.
 
-Measure throughput with the expected mix of prompt lengths, output lengths, and concurrent users. Report latency alongside throughput so a high number is not achieved by making individual users wait excessively.
+Larger or dynamic batches can improve accelerator utilization but consume more memory and may increase queueing or time to first output. Continuous batching and related scheduling strategies can improve utilization while adding scheduling, fairness, admission, and tail-latency trade-offs.
 
-## Trade-offs and limitations
-
-Larger batches improve hardware utilization but consume more memory and can raise time to first token. Continuous batching improves serving efficiency but creates more complex scheduling behavior.
-
-## Common mistakes
-
-- Comparing tokens per second from single-user and batched tests.
-- Mixing prompt and generation throughput.
-- Ignoring failed or timed-out requests.
-- Optimizing maximum throughput when the real requirement is interactive latency.
-
-## Related concepts
-
-- [Inference and Serving](../../)
-- [Latency](../latency/)
-- [Continuous Batching](../continuous-batching/)
-- [Performance Metrics](../performance-metrics/)
+These operational consequences remain migration source material until their exact performance/scalability, learning, benchmark, evidence, or decision-support owners are verified.
