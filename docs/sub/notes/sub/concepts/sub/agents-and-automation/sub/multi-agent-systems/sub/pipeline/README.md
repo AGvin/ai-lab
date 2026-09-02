@@ -1,218 +1,61 @@
 # Pipeline Architecture
 
-A pipeline architecture processes an input through a predefined sequence of bounded stages, where each stage consumes a declared artifact and produces the next artifact.
+Legacy residual retained for fixed-pipeline-specific workflow pedagogy and stage/artifact design because the selected workflow-fundamentals learning owner is not yet materialized on the active branch.
+
+> **Migration note:** Fixed staged control-flow semantics, deterministic ownership of sequencing/validation/retries/side effects, explicit workflow state, and the exact Anthropic `Building effective agents` research source are already preserved in `docs/sub/concepts/sub/agents-and-autonomy/sub/workflows-and-orchestration/`. The readiness design routes deeper pipeline teaching to `learning/areas/agents-and-automation/workflows-and-orchestration/workflow-fundamentals/`, but that node is currently absent on the active AI Lab ref. Preserve the pipeline-specific material below until that learning owner is materialized and verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Status
+## Pipeline and stage-contract residual
 
-Established workflow pattern.
+A pipeline processes input through a predefined sequence of bounded stages whose order and artifact contracts are known before execution. Models may implement individual stages without becoming owners of the overall control flow.
 
-## Core idea
+For a non-trivial pipeline, record where relevant:
 
-```text
-input -> prepare -> extract -> transform -> validate -> review -> publish
-```
+- pipeline/version identity plus input and terminal-output schemas;
+- ordered stage identities/versions and artifact contracts;
+- validation and approval gates;
+- side effects and stage-local retry/fallback behavior;
+- checkpoint/resume and partial-failure policy;
+- latency/cost budget and terminal acceptance criteria.
 
-The stage order and contracts are known before execution. Models may implement selected stages, but deterministic workflow code owns the sequence, validation, retries, and terminal state.
+Each stage should define its purpose, accepted input/output schema, implementation/model/tool/runtime parameters, deterministic preparation/validation, permitted data and effects, timeout/retry/fallback/escalation behavior, artifact persistence, characteristic failure modes, and success/failure/skip/abstention semantics.
 
-## Distinguish related patterns
+Make transformations such as normalization, truncation, translation, summarization, or redaction explicit rather than hiding them between stages. Stage artifacts should carry enough identity/version/schema/validation information to support traceability and safe resume.
 
-- **Pipeline:** fixed linear or mostly linear stages known in advance.
-- **Prompt chaining:** a pipeline whose stages are primarily LLM calls and whose outputs feed later prompts.
-- **Graph or DAG:** supports branches, joins, loops, dynamic edges, and more general dependencies.
-- **Planner-executor:** a planner dynamically creates or revises the steps.
-- **Orchestrator-worker:** a coordinator dynamically delegates work based on the specific task.
+## Validation-gate and implementation residual
 
-Prefer a pipeline when the process is stable and predictable. Do not add a dynamic agent where explicit code paths are sufficient.
+Place validation where a bad intermediate artifact would be amplified or hidden downstream: for example input/schema validation before model use, source/terminology checks after transformation, tests after code generation, media-format validation before export, approval before consequential publication, or artifact persistence before resource teardown.
 
-## Pipeline contract
+A later fluent model stage should not silently conceal an invalid earlier artifact without preserving the failure and correction path.
 
-Record:
+Use the simplest implementation that satisfies each stage contract: deterministic code, a specialized or general model, a hosted service, or qualified human review. One pipeline does not need one model, and each stage should be evaluated as part of the complete end-to-end workload.
 
-```text
-Pipeline ID and version:
-Input and terminal output schemas:
-Stage order and versions:
-Artifact contract between stages:
-Validation gates:
-Side effects and approval points:
-Retry and fallback policy by stage:
-Checkpoint and resume policy:
-Failure and partial-result policy:
-Latency and cost budget:
-Terminal acceptance criteria:
-```
+## Error-propagation and local-recovery residual
 
-Each artifact should identify its source stage, version, schema, checksum where relevant, and validation status.
+Preserve stage-level artifacts and evidence so defects can be attributed to source input, preparation/conversion, model perception/extraction, transformation, validation, review/approval, or publication/side effect without rerunning the entire workflow merely to discover origin.
 
-## Stage contract
+Do not evaluate only the final fluent artifact. A pipeline can appear successful while losing source evidence, corrupting protected content, or masking an upstream hallucination.
 
-Every stage should define:
+When inputs remain valid, retry or replace only the failed stage where possible. Define which failures are transient versus semantic, attempt limits, whether model/tool/parameters may change, manual correction/escalation, downstream invalidation, and partial/terminal failure behavior. Consequential effects still require idempotency or authoritative reconciliation under the canonical reliability contract.
 
-- purpose and supported inputs;
-- exact input and output schema;
-- model, tool, runtime, prompt, and parameters;
-- deterministic preparation and validation;
-- permitted data and side effects;
-- timeout, retry, fallback, and escalation;
-- artifact persistence;
-- quality ceiling and common failure modes;
-- success, failure, skip, and abstention semantics.
+## Checkpoint, resume, and bounded-parallelism residual
 
-Avoid implicit transformations between stages. Normalization, truncation, translation, summarization, and redaction should be explicit stages or declared parts of a contract.
+Checkpoint after expensive, validated, or externally sourced stages when interruption/recovery matters. On resume, load compatible pipeline/artifact versions, validate checkpoint dependencies, reconcile external jobs/effects, restart from the first incomplete/invalid stage, and invalidate downstream artifacts when upstream authoritative input changed.
 
-## Validation gates
+Do not silently resume persisted artifacts under incompatible stage logic without an explicit compatibility/migration rule.
 
-Place gates where downstream execution would amplify or hide an error:
+A linear pipeline can still parallelize independent items inside a stage, batch compatible inputs, prefetch deterministic dependencies, run independent validators concurrently, or embed a bounded fan-out/fan-in subworkflow. Preserve item identity/order and avoid parallel writes to shared mutable state without an explicit conflict contract.
 
-- file decode and schema validation before model input;
-- terminology, protected-token, or source-evidence checks after transformation;
-- tests after code generation;
-- dimensions, duration, and codec checks after media generation;
-- human approval before publication or irreversible side effects;
-- artifact persistence before resource teardown.
+## Pattern-fit and evaluation residual
 
-A later fluent stage must not silently repair or conceal an invalid earlier artifact without preserving the original failure and correction.
+Pipelines fit stable processes such as ingestion/extraction/indexing, translation/review/publishing, code generation/testing/scanning, media preparation/generation/validation/export, or other high-volume workflows with useful intermediate artifacts.
 
-## Stage selection
+Prefer a graph or another explicit orchestration form when conditional branches/joins, repeated loops, dynamic dependencies, or adaptive tool selection dominate. Prefer one deterministic operation when staging adds no useful control or observability.
 
-Use the simplest implementation that meets each contract:
+Evaluate end-to-end terminal acceptance together with stage first-pass success, defect origin/propagation, retries/fallbacks/manual corrections, per-stage and total latency/cost/resource use, checkpoint/resume success, duplicate side effects, artifact-validation/traceability failures, and cost per accepted terminal result.
 
-- deterministic parser, formatter, calculator, or validator;
-- specialized model;
-- general model with bounded prompt and schema;
-- hosted service;
-- human review or approval.
-
-The entire pipeline need not use one model. Select and evaluate each stage within the complete end-to-end workload.
-
-## Error propagation
-
-Track whether a defect originates from:
-
-- source input;
-- preparation or conversion;
-- model perception or extraction;
-- transformation;
-- validation;
-- review or approval;
-- publication or external side effect.
-
-Preserve stage-level artifacts and evidence so a downstream failure can be traced without rerunning the complete pipeline.
-
-Do not score only the final output. A pipeline may produce a plausible terminal artifact while losing source evidence, altering protected content, or hiding an earlier hallucination.
-
-## Retry and fallback
-
-Retry only the failed or invalid stage when its inputs remain valid. Define:
-
-- transient versus semantic failure;
-- maximum attempts;
-- whether parameters may change;
-- stronger model or alternative tool;
-- manual correction path;
-- downstream invalidation;
-- terminal failure and partial-result behavior.
-
-A retry must not create duplicate external side effects. Use idempotency and reconcile ambiguous outcomes.
-
-## Checkpoint and resume
-
-Checkpoint after expensive, validated, or externally sourced stages. On resume:
-
-1. load the exact pipeline and artifact versions;
-2. validate checkpoints and dependencies;
-3. reconcile external jobs and side effects;
-4. resume at the first incomplete or invalid stage;
-5. invalidate downstream artifacts when an upstream artifact changed;
-6. preserve earlier accepted outputs when still valid.
-
-Do not resume a pipeline with changed stage logic without explicit compatibility or migration rules.
-
-## Parallelism
-
-A simple pipeline is sequential, but safe optimizations may include:
-
-- processing independent items concurrently within one stage;
-- batching compatible inputs;
-- prefetching deterministic dependencies;
-- running independent validators in parallel;
-- using a map-reduce subworkflow inside a stage.
-
-Preserve ordering and item identity. Do not introduce parallelism where stages share mutable state or require validated prior output.
-
-## Suitable uses
-
-- document ingestion, extraction, normalization, and indexing;
-- translation, terminology checking, review, and publishing;
-- code generation, formatting, testing, security scanning, and merge preparation;
-- image, video, or audio preparation, generation, validation, and export;
-- speech transcription, diarization, normalization, and caption packaging;
-- high-volume stable workflows with observable intermediate artifacts.
-
-## Poor fits
-
-Avoid or generalize to a graph when:
-
-- execution requires many conditional branches or joins;
-- tasks and dependencies cannot be known in advance;
-- an agent must explore and select tools dynamically;
-- repeated correction loops dominate the process;
-- stages require shared deliberation rather than artifact transformation;
-- one deterministic operation is sufficient.
-
-## Strengths
-
-- predictable and inspectable control flow;
-- clear stage ownership and artifacts;
-- easy deterministic validation and testing;
-- local retries and failure isolation;
-- straightforward latency and cost attribution;
-- simpler than a general graph or autonomous agent.
-
-## Limitations
-
-- rigid order can be inefficient for variable tasks;
-- upstream errors propagate downstream;
-- stage boundaries add serialization and latency;
-- schema changes require compatibility management;
-- excessive stages create operational overhead;
-- a pipeline cannot adapt beyond its declared routes without explicit fallback.
-
-## Evaluation metrics
-
-Record:
-
-- end-to-end terminal acceptance;
-- first-pass success by stage;
-- defect origin and propagation;
-- retries, fallbacks, and manual corrections by stage;
-- stage and total latency;
-- cost and resource use by stage;
-- checkpoint and resume success;
-- duplicate side effects;
-- artifact-validation and traceability failures;
-- cost per accepted terminal result.
-
-Measure pipeline performance on representative complete inputs. Optimizing one stage can reduce end-to-end quality if its output no longer fits downstream contracts.
-
-## Evidence and established usage
-
-Anthropic documents prompt chaining as a workflow that decomposes a task into a sequence of calls, where each call processes the previous output and programmatic gates may validate intermediate stages. The broader pipeline pattern also includes deterministic and human stages.
-
-Source:
-
-- [Anthropic: Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
-
-## Related concepts
-
-- [Multi-Agent Systems](../..)
-- [Graph or DAG Workflow](../graph-dag-workflow/)
-- [Planner-Executor Architecture](../planner-executor/)
-- [Router-Specialist Architecture](../router-specialist/)
-- [Evaluator-Optimizer Architecture](../evaluator-optimizer/)
-- [Human Approval Gates](../human-approval-gates/)
+These pipeline-specific pedagogical fragments remain migration source material until the selected workflow-fundamentals learning owner is ready.
