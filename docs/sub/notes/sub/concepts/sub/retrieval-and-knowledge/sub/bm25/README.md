@@ -1,44 +1,28 @@
 # BM25
 
-BM25 is a probabilistic lexical ranking function used to score how well a document matches query terms.
+Legacy residual retained for baseline selection, analyzer/field tuning, and retrieval-evaluation guidance that are intentionally outside the canonical BM25 concept owner.
+
+> **Migration note:** BM25 identity, probabilistic lexical-ranking origin, inverse-document-frequency-style weighting, term-frequency saturation, document-length normalization, `k1`/`b` boundaries, score non-comparability, and separation from semantic/hybrid retrieval are already preserved in `docs/sub/concepts/sub/information-retrieval/sub/lexical-retrieval/sub/bm25/`. The remaining material below stays here until its exact learning, retrieval-engineering, evaluation, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Baseline and application residual
 
-BM25 rewards documents containing important query terms while controlling for term frequency and document length. A term that appears in few documents receives more weight than a common term. Repeating a term helps only up to a saturation point, which prevents raw frequency from dominating the ranking.
+BM25 is often a useful inexpensive lexical baseline for technical terminology, identifiers, error messages, named entities, and as one candidate source in a hybrid retrieval system. Treat these as workload patterns to evaluate rather than evidence that BM25 is universally the correct first-stage retriever.
 
-## Practical use
+## Analyzer and field-tuning residual
 
-- Search for exact technical terminology.
-- Retrieve error messages, identifiers, and named entities.
-- Provide a lexical candidate set for hybrid search.
-- Establish a strong, inexpensive retrieval baseline.
+Before tuning `k1` or `b`, verify that tokenization, stemming/normalization, stop-word behavior, field boundaries, and exact-field handling fit the corpus. Titles, body text, identifiers, and other fields can carry different retrieval meaning; a single combined field can hide those distinctions.
 
-## Important parameters
+Parameter tuning should follow representative retrieval evidence rather than default-value folklore. Small parameter changes can matter less than a broken analyzer or field design.
 
-- `k1` controls how quickly term-frequency benefit saturates.
-- `b` controls document-length normalization.
+## Evaluation residual
 
-Defaults are often reasonable, but analyzers, field weights, stop words, and document structure usually matter more than small parameter changes.
+Evaluate BM25 on representative queries and compare it against relevant lexical, semantic, or hybrid alternatives under the same corpus and acceptance criteria. Include exact strings, rare terms, common terms, long/short documents, and cases where rare lexical evidence is present but not actually relevant.
 
-## Trade-offs and limitations
+Do not compare raw BM25 scores across unrelated queries or indexes as though they were calibrated confidence values, and do not discard a lexical baseline solely because a small semantic-search demo looked stronger.
 
-BM25 does not understand paraphrases or broader semantic similarity unless query expansion or synonyms are added. It can also overvalue rare terms that are not actually relevant.
-
-## Common mistakes
-
-- Tuning parameters before fixing tokenization and field design.
-- Using one combined field for titles, body text, and identifiers.
-- Assuming BM25 scores are comparable across different queries.
-- Discarding BM25 because embeddings perform better on a small demo set.
-
-## Related concepts
-
-- [Retrieval and Knowledge](../../)
-- [Keyword Search](../keyword-search/)
-- [Hybrid Search](../hybrid-search/)
-- [Semantic Search](../semantic-search/)
+These baseline, tuning, and evaluation practices remain migration source material until their exact learning, retrieval-engineering, evaluation, or decision-support owners are verified.
