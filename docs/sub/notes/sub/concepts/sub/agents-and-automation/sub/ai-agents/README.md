@@ -1,43 +1,30 @@
 # AI Agents
 
-An AI agent is a system that uses a model to pursue a goal through observations, decisions, tool calls, state changes, and repeated actions.
+Legacy residual retained for application examples and practical model-versus-deterministic-control guidance that is intentionally outside the canonical Agents and Autonomy concept owner.
+
+> **Migration note:** Agent identity, the distinction between an agent and a single model/multi-step pipeline, the complete-system boundary, observations/state/tools/feedback, autonomy versus mere repetition, and the requirement for separate authorization/validation/stopping controls are already preserved in `docs/sub/concepts/sub/agents-and-autonomy/`. The remaining material below stays here until its exact learning, workflow-design, engineering, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application residual
 
-A model becomes part of an agent when it can do more than produce a single response. The surrounding application gives it tools, working state, control flow, stopping rules, permissions, and feedback from previous actions. The agent is therefore the complete system, not only the language model.
+Agent-style control can be useful when later actions genuinely depend on earlier observations or tool results, for example:
 
-## Typical components
+- repository maintenance and bounded implementation workflows;
+- evidence-gathering research;
+- administration across several external systems;
+- multi-stage data processing; and
+- customer-support or operations workflows whose next step depends on validated state.
 
-- A goal or task description.
-- A model that selects or proposes actions.
-- Tools such as APIs, search, code execution, or file operations.
-- State that records progress and intermediate results.
-- A loop that observes results and decides what to do next.
-- Policies for approval, failure handling, and termination.
+These are application examples rather than part of the canonical definition of an agent.
 
-## Practical use
+## Workflow-design residual
 
-Agents are useful for tasks where the next action depends on earlier results: repository maintenance, research, multi-system administration, data processing, or customer-support workflows. Keep deterministic steps outside the model when possible and use the model where interpretation or flexible decisions are needed.
+Prefer deterministic application logic for steps whose correct behavior can be expressed and validated directly. Use model-directed decisions where interpretation, ambiguity, flexible planning, classification, synthesis, or adaptation to newly observed results genuinely benefits from model behavior.
 
-## Trade-offs and limitations
+Do not use an agent label as justification for broad credentials, open-ended loops, or model-owned authorization. Explicit budgets, stopping conditions, permission boundaries, validation, and recovery remain system responsibilities even when the model chooses the next action.
 
-More autonomy increases flexibility but also cost, latency, and the possibility of incorrect or unsafe actions. Agent behavior can be difficult to reproduce because every tool result changes subsequent decisions.
-
-## Common mistakes
-
-- Calling a single model request an agent.
-- Granting broad credentials without least-privilege controls.
-- Omitting stop conditions or maximum action budgets.
-- Treating model-generated plans as trusted instructions.
-
-## Related concepts
-
-- [Agents and Automation](../../)
-- [Agentic Workflows](../agentic-workflows/)
-- [Tool Calling](../tool-calling/)
-- [Autonomy Levels](../autonomy-levels/)
+These application and workflow-design practices remain migration source material until their exact learning, engineering, or decision-support owners are verified.
