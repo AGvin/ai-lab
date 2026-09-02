@@ -1,38 +1,30 @@
 # Overfitting
 
-Overfitting occurs when a model learns training examples or noise too specifically and performs worse on new, representative data.
+Legacy residual retained for experiment monitoring, holdout discipline, remediation comparison, and adaptation-regression guidance that are intentionally outside the canonical Overfitting concept owner.
+
+> **Migration note:** Overfitting identity, generalization-gap semantics, training-loss and learning-curve boundaries, memorization/interpolation/capacity distinctions, leakage/shift/underfitting separation, selection-procedure overfitting, conditional mitigation families, and evaluation independence are already preserved in `docs/sub/concepts/sub/machine-learning/sub/learning-theory/sub/overfitting/`. The remaining material below stays here until its exact learning, training-engineering, evaluation, experiment-management, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Experiment-monitoring residual
 
-Training loss can continue to improve while validation performance stops improving or declines. In language-model adaptation, overfitting may appear as memorized phrases, repetitive style, reduced general ability, or brittle behavior outside the training format.
+Track training and validation behavior across checkpoints rather than only the final loss. Record the model/data/configuration state corresponding to each evaluation so an apparent regression can be reproduced and compared with earlier checkpoints or the unchanged base.
 
-## Causes
+Monitor target-task quality together with important retained capabilities. In adaptation work, narrowing to the training format, repetitive output, excessive imitation, or degradation on unrelated representative tasks can be useful warning signals even when the supervised objective continues improving.
 
-- Too little or highly repetitive data.
-- Excessive training steps or learning rate.
-- Data leakage between training and evaluation.
-- A model with much more capacity than the task requires.
-- Evaluation sets that are too similar to training data.
+## Holdout-discipline residual
 
-## Mitigation
+Use validation evidence for tuning and stopping while preserving a sufficiently independent final test/holdout boundary for the accepted configuration. Repeatedly choosing prompts, checkpoints, hyperparameters, data filters, or model variants against the same final test set turns that set into part of the selection process.
 
-Use held-out validation and test sets, early stopping, regularization, data augmentation, and stronger deduplication. Compare against the unchanged base model and evaluate both target and general capabilities.
+Check for exact and near-duplicate leakage, shared source documents/entities, synthetic derivatives, temporal look-ahead, and other dependence across splits before interpreting a small generalization gap as trustworthy.
 
-## Common mistakes
+## Remediation residual
 
-- Using training loss as the only success metric.
-- Testing with paraphrases of training examples.
-- Assuming PEFT methods cannot overfit.
-- Continuing training because loss still decreases.
+Compare plausible mitigations against the actual observed failure rather than applying every regularizer mechanically. Depending on the regime, useful changes can include data cleanup/diversification, deduplication, augmentation, early stopping, regularization, lower effective capacity, different optimization, stronger split independence, or a simpler baseline.
 
-## Related concepts
+Measure the remediation on the same acceptance criteria and preserve the previous checkpoint/configuration so a mitigation that improves one metric but damages target behavior, latency, cost, or retained capabilities is visible.
 
-- [Training and Adaptation](../../)
-- [Fine-Tuning](../fine-tuning/)
-- [Datasets](../datasets/)
-- [Evals](../../../evaluation-and-operations/sub/evals/)
+These monitoring, holdout, remediation, and adaptation-regression practices remain migration source material until their exact learning, training-engineering, evaluation, experiment-management, or decision-support owners are verified.
