@@ -1,42 +1,32 @@
 # Human in the Loop
 
-Human in the loop means that selected workflow decisions or actions require human review, input, approval, or correction.
+Legacy residual retained for practical approval, escalation, reviewer-context, and intervention-workflow guidance that is intentionally outside the canonical Oversight and Intervention concept owner.
+
+> **Migration note:** Human-oversight identity, HITL/HOTL/HIC taxonomy variability, monitoring/review/approval/intervention distinctions, meaningful-oversight requirements, autonomy relationship, and reviewer failure modes are already preserved in `docs/sub/concepts/sub/human-ai-interaction/sub/oversight-and-intervention/`. The remaining material below stays here until its exact learning, workflow-control, governance, security, or project owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Approval-pattern residual
 
-Human involvement should be placed at meaningful control points rather than added as a vague final review. Approval is especially valuable before irreversible, financial, legal, public, security-sensitive, or high-impact actions.
+Human control points can be useful to:
 
-## Common patterns
+- approve a proposed plan before consequential execution;
+- review generated code or document changes before publication;
+- resolve low-confidence or ambiguous classifications;
+- confirm recipients, amounts, permissions, or scope before an external action; and
+- handle repeated failures, policy conflicts, or escalations that exceed the automated workflow's authority.
 
-- Approve a proposed plan before execution.
-- Review generated code or document changes before publication.
-- Resolve low-confidence classifications.
-- Confirm recipients, amounts, or permissions before an external action.
-- Escalate repeated failures or policy conflicts.
+These are procedural examples rather than a universal requirement that every AI workflow use approval gates.
 
-## Design guidance
+## Reviewer-context and workflow residual
 
-Show the reviewer the evidence, proposed action, expected effect, and known uncertainty. Make approve, reject, and modify paths explicit. Preserve the decision in workflow state and prevent the model from bypassing it.
+Place approval/intervention before the consequential transition, not after the effect has already occurred. Show the reviewer enough source evidence, proposed action, expected effect, material uncertainty, and relevant context to make the decision rather than only a model-generated summary.
 
-## Trade-offs and limitations
+Define explicit approve, reject, modify, request-more-information, timeout/default, and escalation behavior where the workflow requires those states. Persist the human decision as authoritative workflow state and ensure model/tool execution cannot bypass the gate through a different path.
 
-Human review slows throughput and can become a rubber-stamp process when alerts are too frequent or poorly explained. Reviewers may also lack the context needed to detect subtle errors.
+Human review is not a substitute for deterministic validation that can directly establish the required property. Excessive alerts or poorly explained requests can create rubber-stamping and fatigue; reviewer competence, available time, evidence quality, and intervention authority determine whether the control is meaningful.
 
-## Common mistakes
-
-- Requesting approval after the action has already occurred.
-- Showing only a model summary instead of source evidence.
-- Treating silence or timeout as approval.
-- Using humans to compensate for missing deterministic validation.
-
-## Related concepts
-
-- [Agents and Automation](../../)
-- [Autonomy Levels](../autonomy-levels/)
-- [Least Privilege](../../../safety-privacy-and-reliability/sub/least-privilege/)
-- [Verification and Reflection](../verification-and-reflection/)
+These approval and intervention practices remain migration source material until their exact learning, workflow-control, governance, security, or project owners are verified.
