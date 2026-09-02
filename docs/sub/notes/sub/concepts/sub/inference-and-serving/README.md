@@ -2,7 +2,7 @@
 
 Legacy residual retained only for deferred reading-priority metadata and temporary legacy child navigation.
 
-> **Migration note:** Most reusable meanings in this legacy group already have selected canonical owners across inference, model representation/optimization, runtime/deployment, performance/scalability, and AI engineering, and those leaf sources have been dispositioned individually. `Essential` / `Useful` / `Specialized` expresses pedagogical reading order rather than canonical ancestry. `model-formats/` remains intentionally high-risk mixed and is **not** treated as dispositioned by this index trim; preserve its legacy link alongside the other still-valid child links until its formal specification/catalog/learning/evidence owners and later navigation/source-removal gates are ready.
+> **Migration note:** Reusable meanings in this legacy group have selected canonical owners across inference, model representation/optimization, runtime/deployment, performance/scalability, AI engineering, and selected learning owners, and every current leaf source is now dispositioned individually as residual-only or semantic deletion-ready. `Essential` / `Useful` / `Specialized` expresses pedagogical reading order rather than canonical ancestry. `model-formats/` is now residual-only: practical format-selection/conversion teaching is materialized under `learning/areas/models/inference-and-generation/execution/model-formats-and-conversion/`, while concrete formal specification and mutable catalog/evidence fragments remain explicitly preserved in the legacy leaf until those exact owners are materialized.
 
 ## Translations
 
@@ -36,4 +36,4 @@ Legacy residual retained only for deferred reading-priority metadata and tempora
 - [`continuous-batching/`](./sub/continuous-batching/)
 - [`speculative-decoding/`](./sub/speculative-decoding/)
 
-This ordering/navigation residual remains migration source material until later learning-path/navigation and source-removal gates are activated; `model-formats/` remains separately unresolved.
+This ordering/navigation residual remains migration source material until later learning-path/navigation and source-removal gates are activated.
