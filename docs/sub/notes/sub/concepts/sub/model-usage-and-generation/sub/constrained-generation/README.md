@@ -1,42 +1,33 @@
 # Constrained Generation
 
-Constrained generation restricts which tokens a model may emit so the output follows a grammar, schema, regular language, or permitted value set.
+Legacy residual retained for application use, constraint-design, semantic validation, and fallback guidance that are intentionally outside the canonical Constrained Generation concept owner.
+
+> **Migration note:** Constrained-generation identity, machine-checkable continuation restrictions, token-masking/logit-filtering as a common implementation pattern, prompting and structured-output distinctions, tokenizer/constraint interaction, supported-subset guarantee boundaries, and non-factual/non-semantic/non-authorization guarantees are already preserved in `docs/sub/concepts/sub/models/sub/interaction/sub/generation-controls/sub/constrained-generation/`. The remaining material below stays here until its exact learning, application-engineering, trustworthy-AI, or runtime/provider owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application-use residual
 
-Instead of asking the model to imitate a format, the decoder masks invalid token choices during generation. This can ensure syntactically valid JSON, match a formal grammar, or restrict a field to known values. The constraint controls form, not factual accuracy or business validity.
+Constrained generation can be useful when an application requires outputs such as typed API payloads, grammar-defined languages, enumerated classifications, parseable configuration, or tool arguments that will undergo application validation before use.
 
-## Practical use
+Treat these as application patterns rather than guarantees that any particular grammar, schema, tokenizer, or provider implementation supports the required constraint completely.
 
-- JSON or typed API payloads.
-- SQL or domain-specific languages with a defined grammar.
-- Enumerated classifications.
-- Configuration files that must parse reliably.
-- Tool arguments that will be validated before execution.
+## Constraint-design residual
 
-## Design considerations
+Useful implementation practices include:
 
-Keep the grammar aligned with the tokenizer and runtime implementation. Avoid schemas with excessive nesting or ambiguous alternatives. Apply semantic validation after decoding, because a structurally valid date, path, or identifier may still be invalid or unsafe.
+- keep the constraint no more complex than required by the task and the exact runtime's supported feature set;
+- account for tokenizer/runtime compatibility when a grammar, schema, byte/character rule, or permitted value set must map to valid generation continuations;
+- avoid unnecessarily ambiguous or deeply nested alternatives when they create avoidable dead ends or reduce reliable population of the allowed structure;
+- restrict command, path, identifier, or action fields to appropriate allowed forms where feasible instead of relying on unrestricted strings that will later be used consequentially.
 
-## Trade-offs and limitations
+## Validation and fallback residual
 
-Constraints reduce formatting failures but can slow decoding or force the model into an allowed structure even when it lacks enough information. Very strict grammars may also prevent useful explanations or uncertainty fields.
+Apply semantic and domain validation after constrained decoding. A structurally valid date, path, identifier, query, configuration, or tool argument may still be invalid, unsafe, unauthorized, or inappropriate for the intended operation.
 
-## Common mistakes
+Define explicit fallback or failure behavior when generation reaches a dead end, the runtime cannot satisfy the implemented constraint, or the resulting allowed value still fails application validation. Do not silently execute a constrained output merely because it passed syntax or grammar checks.
 
-- Treating valid syntax as verified meaning.
-- Allowing unrestricted strings in fields later used as commands or paths.
-- Using a schema so complex that the model cannot populate it reliably.
-- Omitting fallback behavior when generation cannot satisfy the constraint.
-
-## Related concepts
-
-- [Model Usage and Generation](../../)
-- [Structured Output](../structured-output/)
-- [Function Calling](../../../agents-and-automation/sub/function-calling/)
-- [Guardrails](../../../safety-privacy-and-reliability/sub/guardrails/)
+These application, design, validation, and fallback practices remain migration source material until their exact learning, application-engineering, trustworthy-AI, or runtime/provider owners are verified.
