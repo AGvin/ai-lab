@@ -1,42 +1,29 @@
 # Tokens and Tokenization
 
-Tokens are the units a model reads and generates. Tokenization converts text, code, punctuation, and sometimes whitespace into token identifiers from a fixed vocabulary.
+Legacy residual retained for provider accounting, practical request sizing, cost diagnostics, and retrieval chunking guidance that are intentionally outside the canonical tokenization concept owner.
+
+> **Migration note:** Token/tokenization identity, tokenizer-specific vocabularies and boundaries, non-word-equivalent token units, variation across model families, exact-string implications, tokenization-versus-embedding separation, and the generic relationship to context capacity are already preserved in `docs/sub/concepts/sub/models/sub/interaction/sub/tokens-and-tokenization/`. The remaining material below stays here until its exact provider-accounting, retrieval, learning, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Provider-accounting residual
 
-A token is not the same as a word or character. Common words may map to one token, while uncommon words, identifiers, URLs, or non-Latin text may be split into several. Models operate on token sequences rather than raw text, so tokenization directly affects context usage, generation cost, latency, and how reliably a model handles unusual strings.
+Provider APIs may expose different accounting categories for input, generated output, cached context, reasoning/internal computation, image/audio processing, or other service-specific units. These categories are mutable provider facts and should be checked against the concrete API rather than treated as universal token semantics.
 
-## Key points
+## Practical sizing and cost residual
 
-- Different model families may tokenize the same text differently.
-- Input tokens, generated output tokens, and hidden reasoning tokens may be counted separately by an API.
-- Code, JSON, long numbers, and repeated whitespace can consume more context than their visual length suggests.
-- Token boundaries can influence spelling, copying, arithmetic, and exact-string tasks.
+Useful operational practices include:
 
-## Practical use
+- estimate whether the prompt plus expected output fits the concrete model and service limits using the applicable tokenizer and accounting rules;
+- compare provider costs using the provider's current billable units rather than character counts or generic token heuristics;
+- inspect unexpectedly expensive prompts, especially logs, source code, structured data, and large documents;
+- include output and any provider-exposed internal/reasoning budgets when the concrete service counts or limits them separately.
 
-- Estimate whether a prompt and expected answer fit inside the model context window.
-- Compare API costs using token counts rather than character counts.
-- Inspect unexpectedly expensive prompts, especially logs, source code, and large documents.
-- Design chunk sizes for retrieval systems using the tokenizer of the generation or embedding model.
+## Retrieval and chunking residual
 
-## Trade-offs and limitations
+When retrieval or preprocessing is token-budget-sensitive, size chunks with the tokenizer or encoding rules relevant to the embedding/generation pipeline. Do not assume a tokenizer from an unrelated model reproduces the same sequence length or boundaries.
 
-Larger vocabularies can represent frequent strings efficiently but require larger embedding tables. Smaller vocabularies split more text into pieces and may increase sequence length. Token count is therefore model-specific and should not be estimated with a tokenizer from an unrelated model.
-
-## Common mistakes
-
-- Treating one word as one token.
-- Assuming the same token count across providers.
-- Ignoring output and reasoning-token budgets when sizing a request.
-
-## Related concepts
-
-- [Model Usage and Generation](../../)
-- [Context Window](../context-window/)
-- [Sampling Parameters](../sampling-parameters/)
+These practical sizing, accounting, and chunking rules remain migration source material until their exact retrieval, provider, learning, or decision-support owners are verified.
