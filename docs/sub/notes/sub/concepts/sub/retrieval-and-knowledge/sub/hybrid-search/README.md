@@ -1,41 +1,34 @@
 # Hybrid Search
 
-Hybrid search combines semantic vector retrieval with lexical retrieval so results benefit from both meaning and exact-term matching.
+Legacy residual retained for application patterns, fusion tuning, comparative evaluation, deduplication, and permission-consistency guidance that are intentionally outside the canonical Hybrid Retrieval concept owner.
+
+> **Migration note:** Hybrid-retrieval identity, multi-retriever composition, candidate-generation versus fusion versus reranking boundaries, raw-score comparability limits, rank-based fusion semantics, implementation-dependent tuning parameters, and non-guarantees of universal improvement are already preserved in `docs/sub/concepts/sub/information-retrieval/sub/hybrid-retrieval/`. The remaining material below stays here until its exact learning, retrieval-engineering, evaluation, security, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application-pattern residual
 
-The two retrievers produce candidate lists or scores that must be merged. Common methods include weighted score fusion, reciprocal rank fusion, or retrieving separate candidate sets and passing them to a reranker. The best method depends on whether exact identifiers, natural-language meaning, or both are important.
+Hybrid retrieval is often useful when one workload mixes natural-language intent with exact identifiers, technical terms, code/log strings, product codes, named entities, or other evidence that benefits from complementary retrieval signals. Representative examples include enterprise document search, code and log retrieval, product catalogs, and RAG systems that must answer both semantic questions and exact-reference queries.
 
-## Practical use
+Treat these as application patterns to evaluate rather than a rule that every search system should combine lexical and semantic retrieval.
 
-- Enterprise document search with technical terms.
-- Code and log retrieval.
-- Product catalogs containing descriptions and SKUs.
-- RAG systems that must handle both questions and exact references.
+## Fusion and evaluation residual
 
-## Trade-offs and limitations
+Useful implementation and evaluation practices include:
 
-Hybrid retrieval adds indexing, tuning, and evaluation complexity. Raw vector and lexical scores are usually on different scales and should not be added without normalization or a rank-based fusion method. Poor fusion can reduce the strengths of both systems.
+- establish lexical-only and semantic-only baselines before judging the combined route;
+- compare hybrid behavior on representative query classes and inspect both improvements and regressions rather than relying only on an aggregate score;
+- tune fusion weights, rank-fusion settings, candidate counts, and reranking stages against the target corpus instead of adopting an arbitrary fixed split such as 50/50;
+- do not add raw lexical and vector scores directly unless their normalization/calibration contract makes that comparison meaningful;
+- measure retrieval-stage quality separately from final answer quality so candidate-generation or fusion failures remain visible.
 
-## Good practice
+## Deduplication and permission residual
 
-Evaluate lexical-only, semantic-only, and hybrid baselines separately. Inspect which query types improve or regress. Apply metadata and permission filters consistently to both retrieval paths.
+When multiple retrievers can surface the same source unit, deduplicate results using stable source/chunk identity while preserving provenance needed for evaluation and downstream citation or grounding.
 
-## Common mistakes
+Apply metadata, tenant, and permission constraints consistently across every retrieval path. A hybrid route must not broaden access merely because one retriever or index applies a different filtering policy.
 
-- Using an arbitrary 50/50 score weight without testing.
-- Returning duplicate chunks from both retrievers.
-- Evaluating only final answer quality and hiding retrieval failures.
-- Applying different access-control rules to each index.
-
-## Related concepts
-
-- [Retrieval and Knowledge](../../)
-- [Semantic Search](../semantic-search/)
-- [Keyword Search](../keyword-search/)
-- [Reranking](../reranking/)
+These application, fusion, evaluation, deduplication, and permission-consistency practices remain migration source material until their exact learning, retrieval-engineering, evaluation, security, or decision-support owners are verified.
