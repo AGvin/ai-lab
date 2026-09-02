@@ -1,42 +1,32 @@
 # Video Generation
 
-Video generation creates or transforms sequences of visual frames from text, images, video references, motion controls, or other conditioning.
+Legacy residual retained for practical short-shot generation, continuity review, and regeneration-workflow guidance that is intentionally outside the canonical Video Generation concept owner.
+
+> **Migration note:** Video-generation task identity, architecture neutrality, conditioning modes, temporal-versus-spatial quality, identity/geometry drift, duration and temporal-resolution consequences, camera/object motion distinctions, synthetic-footage caveats, and concrete model/runtime/workflow ownership are already preserved in `docs/sub/concepts/sub/modalities/sub/video/sub/video-generation/`. The remaining material below stays here until its exact learning, editing-workflow, evaluation, provenance/governance, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application residual
 
-A useful video model must generate individual frame quality while maintaining temporal consistency. Models often operate in compressed spatiotemporal latent spaces and may use image references to anchor appearance or composition.
+Video-generation systems can support workflows such as:
 
-## Practical use
+- short concept clips and storyboards;
+- image animation;
+- visual-effects and background generation;
+- video-to-video restyling;
+- product and scene visualization.
 
-- Short concept clips and storyboards.
-- Image animation.
-- Visual effects and background generation.
-- Video-to-video restyling.
-- Product and scene visualization.
+These are application examples rather than part of the canonical task definition.
 
-## Trade-offs and limitations
+## Generation and review residual
 
-Characters, objects, text, and geometry can drift between frames. Longer duration increases consistency difficulty and compute cost. Camera motion may conflict with object motion or prompt intent.
+For complex material, short planned shots can be easier to control and validate than requesting a multi-scene narrative in one generation. Reference frames, motion/layout controls, or other conditioning can help when supported by the concrete model/runtime, but their availability and effect are implementation-specific.
 
-## Good practice
+Review the sequence rather than only a thumbnail or selected frame. Check flicker, identity/object persistence, geometry, text, lighting, physical continuity, camera motion, and transitions where they matter to the intended use. Preserve editable source assets, relevant prompts/controls, and other regeneration inputs when iterative editing or later correction is expected.
 
-Plan shots as short segments, use reference frames or controls where available, and inspect frame continuity before editing clips together. Preserve editable source assets and prompts for regeneration.
+Generated footage is synthetic; realism does not make it evidence of a real event or chronology.
 
-## Common mistakes
-
-- Requesting a complex multi-scene narrative in one generation.
-- Judging only a thumbnail or selected frame.
-- Ignoring flicker, identity drift, and physical continuity.
-- Treating generated footage as evidence of real events.
-
-## Related concepts
-
-- [Multimodal and Generative Media](../../)
-- [Image Generation](../image-generation/)
-- [Multimodal Context](../multimodal-context/)
-- [Provenance](../../../safety-privacy-and-reliability/sub/provenance/)
+These practical generation, continuity-review, provenance, and editing practices remain migration source material until their exact learning, workflow, evaluation, governance, or decision-support owners are verified.
