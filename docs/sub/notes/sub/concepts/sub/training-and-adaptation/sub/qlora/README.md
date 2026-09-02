@@ -1,40 +1,30 @@
 # QLoRA
 
-QLoRA adapts a model with LoRA while keeping the frozen base model in a low-bit quantized representation during training.
+Legacy residual retained for hardware-feasibility measurement, training-stability checks, deployment conversion/merge workflow, and matched evaluation guidance that are intentionally outside the canonical QLoRA concept owner.
+
+> **Migration note:** QLoRA identity, original NF4/double-quantization/paged-optimizer method boundary, broader ecosystem naming, low-bit base versus higher-precision computation, LoRA/quantization distinctions, complete-memory-model caveats, quality/feasibility non-guarantees, and artifact/base compatibility are already preserved in `docs/sub/concepts/sub/models/sub/training-and-adaptation/sub/fine-tuning/sub/parameter-efficient/sub/qlora/`. The remaining material below stays here until its exact learning, training-engineering, runtime, evaluation, artifact-management, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Hardware-feasibility residual
 
-The base weights are loaded in a memory-efficient quantized form, while LoRA parameters and selected computations use higher precision. This substantially lowers memory requirements compared with full-precision fine-tuning and can make large-model adaptation possible on a single high-memory GPU.
+Measure peak memory and throughput with the concrete base model, context length, batch/accumulation strategy, LoRA targets/rank, compute precision, optimizer, checkpointing/offload settings, kernels, and framework version. Do not infer feasibility from parameter count or a published single-GPU example alone.
 
-## Practical use
+Include activation memory, trainable-state/optimizer memory, temporary dequantization/compute buffers, runtime workspaces, dataloader overhead, and safety margin when planning the training environment.
 
-- Fine-tune models that would not fit in full training precision.
-- Create domain or instruction adapters on constrained hardware.
-- Compare several task adapters against one frozen base model.
+## Training-stability residual
 
-## Important considerations
+Monitor loss behavior, gradient/optimizer health, numerical issues, and validation quality rather than assuming a memory-efficient configuration is stable. Quantization scheme, compute precision, learning rate, target modules, rank, sequence length, and runtime kernels can interact with training quality.
 
-Training quantization is not identical to distributing a quantized inference file. The resulting LoRA adapter must still be applied to a compatible base model, and the deployed model may be quantized separately. Dataset quality and evaluation remain more important than the memory-saving method.
+Keep representative validation and holdout data separate from the training set and compare the QLoRA result with the unchanged base and, when decision-relevant, another adaptation baseline under matched evaluation conditions.
 
-## Trade-offs and limitations
+## Deployment residual
 
-QLoRA reduces memory but not all compute cost. Training may be slower due to quantization and dequantization overhead. Very aggressive settings, poor learning rates, or incompatible kernels can produce unstable results.
+Document whether deployment keeps a separate adapter, uses the same quantized base representation, dequantizes and merges the LoRA delta, or merges and then requantizes a derivative artifact. Treat each resulting representation as a versioned deployment artifact with its own runtime compatibility and evaluation evidence.
 
-## Common mistakes
+Do not assume a training-time quantized representation is directly interchangeable with a distribution-oriented inference format or that a merged/requantized model preserves the training-time behavior unchanged.
 
-- Treating QLoRA as a standalone model format.
-- Applying the adapter to a different base checkpoint.
-- Assuming low memory requirements eliminate data-quality needs.
-- Evaluating only training loss.
-
-## Related concepts
-
-- [Training and Adaptation](../../)
-- [LoRA](../lora/)
-- [Quantization](../../../inference-and-serving/sub/quantization/)
-- [Fine-Tuning](../fine-tuning/)
+These feasibility, stability, deployment, and evaluation practices remain migration source material until their exact learning, training-engineering, runtime, evaluation, artifact-management, or decision-support owners are verified.
