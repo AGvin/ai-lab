@@ -1,38 +1,20 @@
 # Text-to-Image
 
-Text-to-image generation creates an image conditioned primarily on a natural-language description.
+Legacy residual retained for practical prompting and iterative refinement guidance that is intentionally outside the canonical Text-to-Image Generation concept owner.
+
+> **Migration note:** T2I task identity, architecture-neutral language-conditioning semantics, probabilistic prompt interpretation, auxiliary-control boundaries, distinctions from generic prompting/image-to-image, and evaluation dimensions are already preserved in `docs/sub/concepts/sub/modalities/sub/vision/sub/image-generation/sub/text-to-image/`. The canonical owner explicitly keeps model-specific prompt recipes and refinement heuristics outside concept truth. The remaining material below stays here until its exact learning, workflow, runtime, evidence, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Prompting-workflow residual
 
-The prompt is encoded into a representation that guides a generative model. Different parts of the prompt influence subject, composition, environment, style, color, camera, and lighting, but the model does not interpret text as a deterministic scene specification.
+A practical T2I refinement workflow can start with the main subject/action, then add composition/viewpoint and the environment, lighting, medium, or style details that matter to the target image. Negative constraints can be useful when the concrete model/runtime supports them, but their syntax and effect are implementation-specific.
 
-## Practical prompting
+Generate and compare multiple candidates when stochastic variation is useful, then refine one or a small number of variables at a time so changes can be attributed to the edited condition rather than to several simultaneous prompt modifications.
 
-- State the main subject and action first.
-- Describe composition and viewpoint explicitly.
-- Add environment, lighting, and medium after the core scene.
-- Use negative constraints only when supported and necessary.
-- Generate several candidates and refine the strongest one.
+Text prompting provides flexible semantic control but usually weak exact control over geometry, identity, typography, counts, and spatial relationships. Prompt wording, tokenization, style/camera vocabulary, negative-prompt behavior, and useful ordering can vary across model families and versions, so recipes should be revalidated rather than copied blindly between systems.
 
-## Trade-offs and limitations
-
-Text prompts provide flexible high-level control but weak exact control over geometry, identity, typography, and object count. Prompt interpretation varies between model families and versions.
-
-## Common mistakes
-
-- Listing conflicting styles and camera directions.
-- Expecting exact spelling in generated text.
-- Changing many prompt elements at once during refinement.
-- Assuming prompt wording transfers unchanged across models.
-
-## Related concepts
-
-- [Multimodal and Generative Media](../../)
-- [Image Generation](../image-generation/)
-- [ControlNet](../controlnet/)
-- [Prompting](../../../model-usage-and-generation/sub/prompting/)
+These prompting and refinement practices remain migration source material until their exact learning, workflow, runtime, evidence, or decision-support owners are verified.
