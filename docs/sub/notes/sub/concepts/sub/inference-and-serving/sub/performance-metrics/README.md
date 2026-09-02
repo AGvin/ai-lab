@@ -1,44 +1,28 @@
 # Performance Metrics
 
-Performance metrics describe how an inference system uses time, memory, compute, and capacity under a defined workload.
+Legacy residual retained for workload profiling, benchmark execution, sustained-system measurement, and optimization-comparison guidance that is intentionally outside the canonical metric-definition owner.
+
+> **Migration note:** Generic metric semantics, latency/throughput definitions, workload-condition disclosure, aggregation/failure handling, and the distinction between metric definitions and concrete measured results are already preserved in `docs/sub/concepts/sub/evaluation-and-measurement/sub/metrics/`. Reusable system-performance mechanisms and trade-offs are owned by `docs/sub/concepts/sub/ai-engineering/sub/performance-and-scalability/`. The remaining material below stays here until its exact benchmark, learning, hardware-evidence, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Important metrics
+## Workload-profile residual
 
-- Time to first token and inter-token latency.
-- Prompt-processing and generation throughput.
-- End-to-end latency percentiles.
-- RAM, VRAM, and storage usage.
-- Concurrent request capacity.
-- Power consumption and sustained thermals.
-- Error, timeout, and retry rates.
+Define the intended workload before measuring: model and version, runtime, numerical representation or quantization, hardware/topology, context or input shape, output length, batch/concurrency, cache/warm state, and request mix can materially change results.
 
-## Core idea
+A single tokens-per-second number is not sufficient to describe interactive behavior, serving capacity, memory pressure, reliability, or quality. Relevant observations can include time-to-first output, inter-output latency, throughput, end-to-end percentiles, RAM/VRAM/storage use, concurrent capacity, power/thermal behavior, and error/timeout/retry outcomes.
 
-A benchmark is meaningful only when the model, quantization, runtime, context length, batch size, output length, and hardware are recorded. A single tokens-per-second number cannot describe interactive quality or serving capacity.
+## Benchmark-execution residual
 
-## Practical use
+Use warm-up where appropriate, then collect enough samples to expose variability and compare both isolated and representative concurrent operation. Record model/runtime versions and test conditions so measurements can be reproduced or interpreted later.
 
-Create a workload profile before testing. Run warm-up iterations, then collect enough samples to show variability. Measure both isolated and concurrent operation. Keep quality evaluation separate so an optimization that harms output is not reported as a pure improvement.
+For sustained deployments, short burst tests can hide thermal throttling, allocator growth, queue buildup, or other long-run effects. Include sustained/load/soak behavior when those effects matter to the target environment.
 
-## Trade-offs and limitations
+## Optimization-comparison residual
 
-Optimizing one metric often harms another. Larger batches increase throughput but may worsen latency. Lower precision reduces memory but may alter quality. Power-limited devices can perform well in short tests and throttle during sustained use.
+Keep output quality and correctness evaluation explicit when comparing performance changes. Larger batches can improve throughput while worsening request latency; lower precision can reduce memory or increase speed while changing output behavior; aggressive caching or reduced context can improve performance while changing freshness or task quality.
 
-## Common mistakes
-
-- Comparing results with different prompt or output lengths.
-- Omitting model and runtime versions.
-- Reporting averages without percentiles.
-- Ignoring failed requests and quality regressions.
-
-## Related concepts
-
-- [Inference and Serving](../../)
-- [Latency](../latency/)
-- [Throughput](../throughput/)
-- [Benchmarks](../../../evaluation-and-operations/sub/benchmarks/)
+These benchmark and comparison practices remain migration source material until their exact evaluation/benchmark, learning, hardware-evidence, or decision-support owners are verified.
