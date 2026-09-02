@@ -1,269 +1,40 @@
 # RAG (Retrieval-Augmented Generation)
 
-Retrieval-Augmented Generation (RAG) is an architecture that gives a language model relevant external information before it generates an answer.
+Legacy residual retained for implementation workflow, source-code retrieval, staged evaluation, and application-selection guidance that are intentionally outside the canonical Retrieval-Augmented Generation concept owner.
+
+> **Migration note:** RAG identity, retrieval-conditioned generation, non-universal component boundaries, query-time retrieval versus model adaptation, retrieval/generation failure separation, grounding/security/citation non-guarantees, provenance requirements, and the canonical GraphRAG specialization are already preserved in `docs/sub/concepts/sub/ai-engineering/sub/architectures-and-patterns/sub/rag/`. The remaining material below stays here until its exact learning, retrieval-engineering, evaluation, security, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Purpose
+## Implementation-workflow residual
 
-Use this page to understand RAG as a practical pattern for grounding large language model responses in private, current, or domain-specific data without retraining the model.
+A practical RAG implementation usually needs separate ingestion/indexing and query-time flows, but the exact components depend on the data and retrieval strategy.
 
-## What it is
+Typical ingestion concerns include parsing/normalization, source identity and versioning, segmentation, metadata/access-policy capture, optional learned representations, index updates, and removal of stale derived state.
 
-RAG combines two operations:
+Typical query-time concerns include query analysis, one or more retrieval routes, optional filtering/reranking, evidence/context assembly, generation, citation/grounding support, and explicit handling when the available evidence is insufficient.
 
-1. Retrieve relevant information from an external knowledge source.
-2. Generate an answer using the retrieved information as model context.
+Do not treat a vector store, embedding model, fixed chunk size, reranker, or one retrieve-once prompt shape as mandatory. Select each component because representative workload evidence shows it is useful.
 
-```text
-LLM + retrieval from external data = RAG
-```
+## Source-code retrieval residual
 
-RAG is not a separate model type. It is a system architecture built around a language model, one or more data sources, and a retrieval pipeline.
+Repository/code RAG often benefits from signals that generic prose retrieval does not preserve well, including file paths, symbols/signatures, classes/functions, imports/exports, exact strings, dependency relationships, language structure, and version/Git metadata.
 
-## How it works
+Route exact symbol, configuration-key, error-string, or identifier questions through lexical/symbol-aware retrieval when that evidence is stronger than semantic similarity. Use semantic or hybrid retrieval where conceptual matching adds value instead of forcing one retriever over every query class.
 
-A typical RAG system has an indexing flow and a query flow.
+## Staged-evaluation residual
 
-### Indexing flow
+Evaluate the pipeline at multiple layers so end-to-end answer quality does not hide retrieval defects.
 
-```text
-Documents
-    -> parsing and normalization
-    -> chunking
-    -> embeddings and metadata
-    -> search index
-```
+Retrieval-oriented checks can include whether required evidence enters the candidate/final context set, recall/precision/ranking quality, reranker effects, filter/access behavior, freshness, and retrieval latency. Generation-oriented checks can include factual correctness, support/faithfulness to supplied evidence, citation quality, completeness, appropriate abstention, latency, and cost.
 
-Documents are divided into smaller units called chunks. Each chunk is stored with useful metadata such as its source, title, section, path, version, or access policy.
+Preserve representative failure cases such as missing/unindexed evidence, broken segmentation, stale or contradictory sources, retrieval misses, prompt-injection content, ignored evidence, unsupported synthesis, and authorization mistakes. A stronger generator should not be used to mask a weak evidence pipeline.
 
-Many systems also create an embedding for each chunk. An embedding is a numerical representation used to find semantically similar content.
+## Application-selection residual
 
-### Query flow
+RAG is often useful for private, current, domain-specific, or frequently changing information, but compare it with simpler direct-context, structured-query/API, lexical search, fine-tuning, or deterministic application designs according to the actual requirement. Fine-tuning can adapt behavior without becoming a reliable searchable factual store, while small bounded source sets may not justify a full retrieval subsystem.
 
-```text
-User question
-    -> query analysis
-    -> retrieval
-    -> optional reranking
-    -> prompt context
-    -> LLM
-    -> grounded answer
-```
-
-The retriever searches for candidate chunks. An optional reranker then orders those candidates more precisely before the best results are added to the model context.
-
-## Core components
-
-| Component | Responsibility |
-| --- | --- |
-| Data source | Stores the original documents or records. |
-| Loader or parser | Extracts and normalizes text, structure, and metadata. |
-| Chunker | Divides large documents into retrievable units. |
-| Embedding model | Converts text into vector representations for semantic search. |
-| Search index | Stores searchable text, vectors, and metadata. |
-| Retriever | Selects candidate chunks for a query. |
-| Reranker | Reorders candidates by estimated relevance. |
-| Generator | Produces the final answer from the question and retrieved context. |
-
-Common search indexes include PostgreSQL with `pgvector`, Qdrant, Milvus, Weaviate, Pinecone, Elasticsearch, OpenSearch, and Chroma.
-
-## Retrieval strategies
-
-### Vector search
-
-Vector search is useful when the query and the relevant text express the same idea with different words.
-
-For example:
-
-```text
-Query: How can I reduce model memory usage?
-Document: Four-bit quantization lowers VRAM requirements.
-```
-
-### Keyword search
-
-Keyword or BM25 search is often better for exact identifiers such as:
-
-- model names;
-- function names;
-- version numbers;
-- configuration keys;
-- error messages;
-- product identifiers.
-
-### Hybrid search
-
-Practical RAG systems often combine semantic and keyword retrieval:
-
-```text
-vector search + keyword search + reranking
-```
-
-This improves recall for natural-language questions while preserving precision for exact terms.
-
-## Practical example
-
-Assume AI Lab contains notes about local models, quantization, GPUs, and inference runtimes.
-
-A user asks:
-
-```text
-Which model can I run on a GPU with 12 GB of VRAM?
-```
-
-A RAG pipeline can retrieve:
-
-- model memory requirements;
-- quantization notes;
-- runtime compatibility details;
-- local benchmark results;
-- hardware-specific findings.
-
-The language model then answers from those retrieved notes instead of relying only on its training data.
-
-## Minimal implementation flow
-
-```js
-const queryEmbedding = await embeddingModel.embed(question);
-
-const candidates = await vectorStore.search({
-    vector: queryEmbedding,
-    limit: 20
-});
-
-const rankedChunks = await reranker.rank({
-    query: question,
-    documents: candidates
-});
-
-const context = rankedChunks
-    .slice(0, 5)
-    .map((chunk) => chunk.content)
-    .join('\n\n');
-
-const answer = await llm.generate({
-    system: [
-        'Answer from the supplied context.',
-        'Do not invent facts that are absent from the sources.',
-        'State clearly when the available evidence is insufficient.'
-    ].join(' '),
-    prompt: `Context:\n${context}\n\nQuestion:\n${question}`
-});
-```
-
-This example omits production concerns such as access control, caching, observability, source citations, prompt injection defenses, and index synchronization.
-
-## RAG compared with related approaches
-
-| Approach | Primary purpose | Changes model weights | Best suited for |
-| --- | --- | --- | --- |
-| RAG | Supply external knowledge at query time | No | Current, private, or frequently changing information |
-| Fine-tuning | Adapt model behavior or task performance | Yes | Style, output format, domain behavior, or specialized tasks |
-| Prompt engineering | Guide behavior through instructions | No | Response constraints and task framing |
-| Long-context prompting | Send source material directly to the model | No | Small or bounded document sets that fit the context window |
-
-Fine-tuning is not a dependable replacement for a searchable factual knowledge base. RAG is generally easier to update because documents can be reindexed without retraining the model.
-
-## Advantages
-
-- Uses private or organization-specific information.
-- Supports information that changes after model training.
-- Allows source attribution and evidence inspection.
-- Avoids retraining for ordinary knowledge updates.
-- Can reduce unsupported answers when retrieval returns relevant evidence.
-- Can work with hosted or local language models.
-- Can enforce document-level access controls before context reaches the model.
-
-## Limitations
-
-RAG does not guarantee a correct answer.
-
-Typical failure modes include:
-
-- the required source was never indexed;
-- chunk boundaries removed important context;
-- retrieval returned irrelevant candidates;
-- the correct result did not enter the selected `top-k` set;
-- stale or contradictory documents were retrieved;
-- the model ignored or misinterpreted the supplied context;
-- retrieved content contained prompt injection or untrusted instructions;
-- the final answer made claims not supported by the retrieved evidence.
-
-A strong language model cannot reliably compensate for a weak retrieval pipeline.
-
-## RAG for source code
-
-Code retrieval often needs more than generic text embeddings.
-
-Useful signals include:
-
-- file paths;
-- symbols and signatures;
-- classes and functions;
-- imports and exports;
-- abstract syntax trees;
-- dependency graphs;
-- exact string search;
-- Git history and version metadata.
-
-A query such as `Where is createEmbedding defined?` is usually better served by symbol or keyword search than by vector similarity alone.
-
-## Evaluation
-
-Evaluate retrieval and generation separately.
-
-### Retrieval evaluation
-
-Measure whether the system returns the required evidence:
-
-- recall at `k`;
-- precision at `k`;
-- mean reciprocal rank;
-- normalized discounted cumulative gain;
-- reranker quality;
-- retrieval latency.
-
-### Answer evaluation
-
-Measure whether the final response is useful and supported:
-
-- factual correctness;
-- faithfulness to retrieved evidence;
-- citation accuracy;
-- completeness;
-- refusal when evidence is insufficient;
-- answer latency and cost.
-
-End-to-end answer quality can hide retrieval failures, so both layers should be tested independently.
-
-## Common use cases
-
-- Documentation assistants.
-- Repository and source-code search.
-- Internal company knowledge bases.
-- Customer-support assistants.
-- Contract and policy analysis.
-- Research assistants with source citations.
-- Product catalogs and technical support.
-- Personal knowledge bases.
-
-## Summary
-
-RAG connects a language model to external knowledge at query time.
-
-```text
-user question
-    + relevant retrieved evidence
-    + language model
-    = context-grounded answer
-```
-
-Its effectiveness depends on data quality, document structure, retrieval, reranking, prompt construction, and answer evaluation rather than on the language model alone.
-
-## References
-
-- Patrick Lewis et al., [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401), 2020.
+These implementation, source-code retrieval, evaluation, and application-selection practices remain migration source material until their exact learning, retrieval-engineering, evaluation, security, or decision-support owners are verified.
