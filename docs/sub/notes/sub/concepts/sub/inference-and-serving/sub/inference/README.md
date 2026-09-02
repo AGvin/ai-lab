@@ -1,42 +1,34 @@
 # Inference
 
-Inference is the process of running a trained model on input data to produce predictions, embeddings, classifications, or generated output.
+Legacy residual retained for workload benchmarking, capacity planning, warm-up/loading observation, and practical-fit evaluation guidance that are intentionally outside the canonical Model Inference concept owner.
+
+> **Migration note:** Model-inference identity, training/adaptation and serving separation, execution-condition dependence, autoregressive prefill/decode boundaries, loading/warm-up distinction, and supported-execution versus practical-fit semantics are already preserved in `docs/sub/concepts/sub/models/sub/inference/`. The remaining material below stays here until its exact learning, inference-engineering, performance-evaluation, capacity-planning, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Workload-benchmark residual
 
-Training changes model parameters; inference uses the resulting parameters. For autoregressive language models, inference usually has two phases: prompt processing, often called prefill, and token-by-token generation, often called decode. These phases stress hardware differently.
+Benchmark the exact model/artifact, numerical representation, runtime, kernels, device placement, context shape, batch/concurrency, and generation settings used by the target workload. Do not compare tokens-per-second or latency numbers across materially different prompt lengths, output lengths, batching, quantization, or hardware/runtime configurations as though they measured the same execution path.
 
-## Main resource factors
+For autoregressive workloads, measure prompt/prefill and decode behavior separately when both affect user experience. Include time to first useful output, steady-state generation rate, request latency distribution, throughput, and memory under representative concurrency rather than reporting only a single warm generation speed.
 
-- Model weight size and numerical precision.
-- Context length and KV-cache size.
-- Batch size and number of concurrent requests.
-- CPU, GPU, accelerator, and memory bandwidth.
-- Runtime kernels and model architecture.
+## Capacity-planning residual
 
-## Practical use
+Account for model weights, runtime workspaces, activations, KV/cache state where applicable, allocator fragmentation, batching/concurrency, device/offload buffers, and headroom. A file that fits on disk or a model that loads once does not establish that the production workload fits in RAM/VRAM under its real context and concurrency.
 
-Inference configuration determines whether a model fits in available RAM or VRAM, how quickly the first token appears, and how many tokens or requests can be served. Benchmark the actual model, quantization, context length, and workload instead of relying on theoretical hardware throughput.
+Measure the actual memory/capacity curve as context length, batch size, and concurrent requests grow. Keep accepted quality and service-level targets together with resource limits so a faster or smaller execution configuration is not treated as usable when it violates the workload requirement.
 
-## Trade-offs and limitations
+## Warm-up and operational residual
 
-Reducing precision can lower memory use but may affect quality. Increasing batch size often improves throughput while increasing latency. Longer context increases processing cost and cache memory. Some models require runtime-specific features or unsupported operators.
+Observe cold loading, compilation/kernel selection, cache initialization, first-request warm-up, and steady-state behavior separately. If a service scales to zero or frequently reloads models, cold-path latency and memory pressure can matter as much as steady-state inference.
 
-## Common mistakes
+Record runtime/model versions and benchmark conditions with measurements so later kernel, driver, firmware, model, or configuration changes can be compared meaningfully.
 
-- Comparing tokens per second across different models or context lengths.
-- Measuring only generation speed and ignoring prompt processing.
-- Assuming a model that fits in storage also fits in memory.
-- Ignoring warm-up and model-loading time.
+## Practical-fit residual
 
-## Related concepts
+Treat successful operator support as the start of evaluation, not the conclusion. Verify representative output quality, latency, throughput, memory, energy/power where relevant, concurrency, recovery behavior, and cost on the intended environment before selecting the execution route.
 
-- [Inference and Serving](../../)
-- [Model Loading](../model-loading/)
-- [Performance Metrics](../performance-metrics/)
-- [Quantization](../quantization/)
+These benchmarking, capacity, warm-up, and practical-fit practices remain migration source material until their exact learning, inference-engineering, performance-evaluation, capacity-planning, or decision-support owners are verified.
