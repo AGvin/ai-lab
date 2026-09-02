@@ -1,33 +1,30 @@
 # Foundations and Architecture
 
-Legacy mixed grouping for foundational AI, model-scope, transformer, attention, and encoder-decoder concepts that have not yet been assigned to the final documentation structure.
+Legacy residual retained only for deferred reading-priority metadata and temporary legacy child navigation.
 
-New model classification and parameter-activation architecture documentation now has dedicated canonical nodes. Do not add new classification or activation-architecture concepts here.
+> **Migration note:** The reusable subject meanings in this mixed legacy group already have selected canonical owners across foundations, machine learning, model classification, and model architectures, and the underlying leaf sources have been dispositioned individually. `Essential` / `Useful` / `Specialized` is pedagogical reading-order metadata rather than canonical ancestry; the migration design intentionally defers that ordering to later learning-path/navigation work. Preserve the current grouping and child links only until those later navigation/source-removal gates are ready.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Canonical destinations
-
-- [Model Classification](../model-classification/) — language-model scale, frontier status, and related classification dimensions.
-- [Model Architectures](../model-architectures/) — dense and sparse activation plus Mixture of Experts.
-
 ## Essential
 
-- [`foundation-models/`](./sub/foundation-models/) — Large reusable models trained on broad data and adapted to many downstream tasks.
-- [`large-language-models/`](./sub/large-language-models/) — Language-focused foundation models that predict and generate token sequences.
-- [`multimodal-models/`](./sub/multimodal-models/) — Models that process or generate more than one modality, such as text, images, audio, or video.
+- [`foundation-models/`](./sub/foundation-models/)
+- [`large-language-models/`](./sub/large-language-models/)
+- [`multimodal-models/`](./sub/multimodal-models/)
 
 ## Useful
 
-- [`transformers/`](./sub/transformers/) — Neural network architectures built around attention and parallel sequence processing.
-- [`attention/`](./sub/attention/) — A mechanism that weights which input elements are most relevant for a model operation.
+- [`transformers/`](./sub/transformers/)
+- [`attention/`](./sub/attention/)
 
 ## Specialized
 
-- [`machine-learning/`](./sub/machine-learning/) — Methods that learn patterns from data instead of relying only on explicitly programmed rules.
-- [`neural-networks/`](./sub/neural-networks/) — Parameterized computational structures composed of connected layers or processing units.
-- [`self-attention/`](./sub/self-attention/) — Attention computed between positions within the same input sequence.
-- [`encoder-decoder/`](./sub/encoder-decoder/) — Model structures that encode inputs, generate outputs, or combine both roles.
+- [`machine-learning/`](./sub/machine-learning/)
+- [`neural-networks/`](./sub/neural-networks/)
+- [`self-attention/`](./sub/self-attention/)
+- [`encoder-decoder/`](./sub/encoder-decoder/)
+
+This ordering/navigation residual remains migration source material until later learning-path/navigation and source-removal gates are activated.
