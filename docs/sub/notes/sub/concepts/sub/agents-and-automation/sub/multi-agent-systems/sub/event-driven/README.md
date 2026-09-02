@@ -1,247 +1,79 @@
 # Event-Driven Agent Architecture
 
-An event-driven agent architecture coordinates agents and services through typed events delivered by a runtime, broker, queue, or message bus rather than one central conversational loop.
+Legacy residual retained for event-specific workflow pedagogy, operational contracts, and exact legacy framework evidence because the selected learning owner is not yet materialized on the active branch.
+
+> **Migration note:** Generic workflow/event-driven control semantics are already preserved in `docs/sub/concepts/sub/agents-and-autonomy/sub/workflows-and-orchestration/`; generic synchronous/asynchronous system boundaries and explicit state/failure domains are preserved in `docs/sub/concepts/sub/ai-engineering/sub/system-design/`; reusable idempotency/retry/recovery semantics are preserved in `docs/sub/concepts/sub/ai-engineering/sub/reliability-and-resilience/`. The readiness design selects `learning/areas/agents-and-automation/workflows-and-orchestration/event-driven-workflows/` for deeper agent pedagogy, but that node is currently absent on the active AI Lab ref. Preserve the event-specific material below until that exact owner is materialized and verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Status
+## Event and handler contract residual
 
-Established distributed-systems and multi-agent architecture pattern.
+An event-driven agent workflow coordinates bounded agents/services through typed events delivered by a runtime, broker, queue, or message bus. The event stream should not become the implicit authoritative workflow state when replay, reconciliation, or audit requires a separate durable source of truth.
 
-## Core idea
+An event contract should make explicit, where relevant:
 
-```text
-producer -> event bus or runtime -> subscribed agent A -> new event
-                                -> subscribed agent B -> new event
-                                -> workflow or human gate
-```
+- event type and schema version;
+- event ID plus producer/version;
+- correlation, workflow, task, and causation IDs;
+- occurred/published timestamps and partition/ordering key;
+- payload and artifact references;
+- data classification and permissions;
+- expected consumers;
+- delivery/retention semantics, expiry, and replay policy.
 
-Agents react to declared event types, update durable state, perform bounded work, and emit new events. The runtime manages delivery, identity, lifecycle, and often local or distributed execution.
+Events should carry data rather than executable hidden control logic. Treat text, documents, media, and other payload content as untrusted handler input.
 
-## Distinguish related patterns
+Each handler/agent should declare its subscriptions and accepted versions, filtering/authorization, required state/artifacts, input/output schema, model/tools/permissions/side effects, idempotency/deduplication scope, timeout/retry/dead-letter behavior, emitted events/terminal result, and concurrency/ordering/resource assumptions. Reject unknown or incompatible schema versions rather than guessing.
 
-- **Event-driven:** typed events trigger decoupled handlers asynchronously.
-- **Graph or DAG:** explicit edges define allowed execution transitions; events may drive node activation.
-- **Blackboard:** specialists read and write shared problem state; events may announce state changes.
-- **Group chat:** agents exchange conversational messages under a speaking policy.
-- **Pipeline:** fixed stages pass artifacts in a known sequence.
+## Delivery, idempotency, and causality residual
 
-An event stream is not automatically an authoritative state store. Preserve durable workflow state separately when replay, reconciliation, or audit matters.
+Design explicitly for at-most-once, at-least-once, or effectively-once handling through idempotency/deduplication. Ordering is commonly scoped to a partition/key and should not be inferred across unrelated topics, agents, or network boundaries.
 
-## Event contract
+An `exactly once` broker claim is not enough for an end-to-end side effect. External APIs, files, databases, tools, and model calls can still duplicate work after timeout, retry, or ambiguous acknowledgement.
 
-Every event type should define:
+Use stable event/operation identities. Before a consequential effect, check prior processing, reserve/compare-and-set authoritative state where appropriate, use provider idempotency when available, persist the result and emitted-event intent atomically or through an outbox-style mechanism, and reconcile ambiguous outcomes before retrying. Model judgment that an event is "new" is not deduplication.
 
-```text
-Event type and schema version:
-Event ID:
-Producer and producer version:
-Correlation, workflow, task, and causation IDs:
-Occurred-at and published-at timestamps:
-Partition or ordering key:
-Payload and artifact references:
-Data classification and permissions:
-Expected consumers:
-Delivery and retention semantics:
-Expiry and replay policy:
-```
+Record correlation and causation and define how to handle out-of-order or stale updates, cancellation after completion, retries older than a newer version, conflicting concurrent updates, clock differences, and events targeting expired workflows. Use state versions, sequence/generation numbers, or domain-specific conflict rules where needed rather than wall-clock timestamps alone.
 
-Events should contain data, not executable prompt instructions or hidden logic. Treat payload content as untrusted input to handlers.
+## Backpressure and failure residual
 
-## Delivery semantics
+Event-driven model workloads need explicit queue/concurrency limits, tenant/workflow quotas, priority/admission policy, maximum event age, batch/capacity assumptions, shedding/delay/fail-closed behavior, and alert thresholds. Bursts must not create unbounded model/API cost, accelerator allocation, or context growth.
 
-Assume delivery behavior explicitly:
+Classify failures before retrying, including transient transport/provider failure, capacity/rate limits, malformed or unsupported events, stale/unauthorized state, semantic model failure, deterministic validation failure, and ambiguous irreversible effects.
 
-- at-most-once;
-- at-least-once;
-- effectively-once through idempotent handling and deduplication;
-- ordered only within a partition or key;
-- unordered across topics, agents, or network boundaries.
+Use bounded backoff for eligible transient failures. Poison or exhausted events need a dead-letter/quarantine path that records ownership, reason, attempts, cost exposure, and a safe replay procedure. Repeated semantic model failure usually calls for a different route/model, human review, or terminal failure rather than identical redelivery.
 
-“Exactly once” claims should be verified for the complete side effect, not only broker delivery. External APIs, files, databases, and model calls may still duplicate work after timeout or retry.
+## Replay and terminal-state residual
 
-## Handler contract
+Event retention can support audit or reconstruction, but replay is safe only when handler/version compatibility is understood, external effects are idempotent or suppressed, schema migrations are defined, secrets/expired permissions are not reintroduced, and current policy still permits the historical input.
 
-Each agent or handler should define:
+Model-based handlers can be nondeterministic even with the same apparent input. Pin exact model/runtime/prompt/tool artifacts and parameters when reproducibility matters, and preserve accepted terminal artifacts/decisions instead of assuming replay will regenerate identical outputs.
 
-- subscribed event types and versions;
-- filtering and authorization;
-- required state and artifacts;
-- input and output schema;
-- model, tools, permissions, and side effects;
-- idempotency key and deduplication window;
-- timeout, retry, backoff, and dead-letter policy;
-- emitted events and terminal result;
-- concurrency, ordering, and resource requirements.
+Define workflow completion explicitly through expected task/branch completion events, correlation/join rules, timeout and missing-event behavior, cancellation propagation, success/partial/failure/expired states, artifact/review gates, and resource/billing cleanup. An idle queue is not proof of completion: work may be delayed, lost under at-most-once delivery, quarantined, or waiting on an external system.
 
-A handler should reject unknown or incompatible schema versions rather than guessing.
+## Security residual
 
-## Idempotency and deduplication
+Authenticate producers and authorize event types/targets. Validate schemas, sizes, artifact references, and signatures where required. Preserve tenant/environment/data-class separation, avoid reusable credentials or unnecessary personal data in payloads, restrict handler tools/side effects independently from prompt content, and apply audit/deletion policy across brokers, logs, dead-letter queues, and artifacts.
 
-Use stable event and operation IDs. Before performing a side effect:
+## Pattern-fit and evaluation residual
 
-1. check whether the event or operation was processed;
-2. reserve or compare-and-set the target state;
-3. perform the action with provider idempotency where available;
-4. persist the result and emitted-event intent atomically or through an outbox pattern;
-5. mark completion;
-6. reconcile ambiguous outcomes before retrying.
+This pattern fits asynchronous/distributed multi-agent work, long-running workflows and callbacks, incident/monitoring automation, hosted jobs/resource lifecycle, high-volume independent tasks, and cross-process/language/machine integration where decoupled producers and consumers are valuable.
 
-A language model's statement that an event is new is not a deduplication mechanism.
+Prefer a synchronous call or simple fixed pipeline when broker/schema/replay/reconciliation machinery adds no material value, strict global ordering cannot be provided, every action requires complete shared context, latency is harmed by asynchronous hops, or side effects cannot be made idempotent or reconciled.
 
-## Ordering and causality
+For evaluation, distinguish accepted/rejected/duplicate/stale/dead-letter events; delivery/queue/handler/end-to-end latency; retry and semantic/transient failure rates; ordering/state-conflict incidents; duplicate-side-effect failures; backlog age/throughput/saturation/dropped work; terminal workflow outcomes; cleanup leaks; accepted-result cost; and replay/recovery success.
 
-Record correlation and causation. Define behavior when:
+## Legacy evidence-provenance residual
 
-- an update arrives before creation;
-- a cancellation arrives after completion;
-- a retry arrives after a newer version;
-- two agents emit conflicting updates;
-- clocks differ;
-- a late event targets an expired workflow.
-
-Use state versions, sequence numbers, monotonic generations, or vector and domain-specific conflict rules where appropriate. Do not rely on wall-clock timestamps alone for authority.
-
-## Backpressure and overload
-
-Define:
-
-- queue and concurrency limits;
-- per-tenant or per-workflow quotas;
-- priority classes;
-- shedding, delay, or fail-closed policy;
-- maximum event age;
-- batch size and model-service capacity;
-- expensive-resource admission;
-- alert thresholds.
-
-Model calls can be slower and less predictable than ordinary handlers. A burst of events must not create unbounded API cost, GPU allocation, or context growth.
-
-## Retry and dead-letter handling
-
-Classify failures:
-
-- transient transport or provider failure;
-- rate limit or capacity exhaustion;
-- malformed or unsupported event;
-- stale or unauthorized state;
-- semantic model failure;
-- deterministic validation failure;
-- irreversible side-effect ambiguity.
-
-Use bounded exponential backoff with jitter for eligible transient failures. Send poison or exhausted events to a dead-letter or quarantine path with owner, reason, attempts, cost exposure, and safe replay procedure.
-
-Repeated semantic model failure usually requires a different route, stronger model, human review, or terminal failure rather than more identical delivery attempts.
-
-## State and replay
-
-Events may be retained for audit or state reconstruction, but replay is safe only when:
-
-- handlers are deterministic enough or exact model artifacts and parameters are pinned;
-- external side effects are idempotent or suppressed;
-- schema migrations are defined;
-- secrets and expired permissions are not reintroduced;
-- current policy permits the historical input;
-- output differences are expected and recorded.
-
-For model-based handlers, preserve terminal artifacts and decisions rather than assuming replay will reproduce them.
-
-## Workflow completion
-
-Event-driven systems need explicit terminal state. Define:
-
-- expected task or branch completion events;
-- correlation and join rules;
-- timeout and missing-event behavior;
-- cancellation propagation;
-- success, partial success, failure, and expired outcomes;
-- artifact and review gates;
-- resource cleanup and billing reconciliation.
-
-Do not infer workflow completion from an idle queue. Events may be delayed, lost under at-most-once delivery, quarantined, or waiting on external systems.
-
-## Security boundaries
-
-- Authenticate producers and authorize event types and targets.
-- Validate schemas, sizes, artifact references, and signatures where required.
-- Separate tenant, environment, and data-class topics or enforce equivalent policy.
-- Do not place reusable credentials or unnecessary personal data in event payloads.
-- Restrict handler tools and side effects independently from prompt instructions.
-- Treat event text, documents, and media as untrusted data.
-- Preserve audit and deletion policies across broker, logs, dead-letter queues, and artifacts.
-
-## Suitable uses
-
-- asynchronous and distributed multi-agent systems;
-- long-running workflows and external callbacks;
-- incident, monitoring, and automation systems;
-- hosted model jobs and on-demand resource lifecycle;
-- high-volume independent tasks;
-- integration across languages, processes, or machines;
-- systems requiring decoupled producers and consumers.
-
-## Poor fits
-
-Avoid or simplify this pattern when:
-
-- one synchronous call or fixed local pipeline is sufficient;
-- strict global ordering is required but unavailable;
-- the team cannot operate broker, schema, replay, and reconciliation complexity;
-- every event requires the complete shared context;
-- low-latency interaction is harmed by asynchronous hops;
-- side effects cannot be made idempotent or reconciled.
-
-## Strengths
-
-- decouples producers, agents, runtimes, and scaling;
-- supports asynchronous and distributed execution;
-- absorbs bursts through queues and backpressure;
-- permits independent deployment and specialist subscriptions;
-- provides natural audit, retry, and dead-letter boundaries;
-- integrates external systems and callbacks.
-
-## Limitations
-
-- ordering, duplication, replay, and eventual consistency are difficult;
-- debugging requires correlation across many handlers;
-- stale or conflicting events can corrupt state;
-- brokers and queues become operational dependencies;
-- retries can multiply model cost or side effects;
-- terminal completion is less obvious than in a linear workflow.
-
-## Evaluation metrics
-
-Record:
-
-- accepted, rejected, duplicated, stale, and dead-letter events;
-- delivery, queue, handler, and end-to-end latency;
-- retry attempts and semantic versus transient failures;
-- ordering and state-conflict incidents;
-- idempotency and duplicate-side-effect failures;
-- backlog age, throughput, saturation, and dropped work;
-- workflow terminal success and timeout;
-- orphaned resources and incomplete cleanup;
-- infrastructure and model cost per accepted result;
-- replay and recovery success.
-
-## Evidence and established usage
-
-AutoGen Core describes itself as an event-driven programming framework for scalable multi-agent systems. Its runtime provides message delivery, agent identities and lifecycle management, and standalone or distributed execution, while messages remain serializable data handled by registered agents.
-
-Sources:
+The legacy source cited AutoGen Core as an established event-driven multi-agent framework and used these exact references:
 
 - [AutoGen Core](https://microsoft.github.io/autogen/stable/index.html)
 - [AutoGen agent runtime environments](https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/core-concepts/architecture.html)
 - [AutoGen messages and communication](https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/framework/message-and-communication.html)
 
-## Related concepts
+Preserve these exact framework references until the selected event-driven learning owner is materialized and their current/historical evidence disposition is verified.
 
-- [Multi-Agent Systems](../..)
-- [Blackboard Architecture](../blackboard/)
-- [Graph or DAG Workflow](../graph-dag-workflow/)
-- [Pipeline Architecture](../pipeline/)
-- [Resource Lifecycle Controller Architecture](../resource-lifecycle-controller/)
-- [Agent State](../../../agent-state/)
+These event-specific pedagogical, operational, and evidence fragments remain migration source material until their exact learning owner is ready.
