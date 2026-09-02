@@ -11,7 +11,7 @@
 - Distinguish CoT from externally verifiable workflow artifacts such as structured plans, tool calls/results, code execution, retrieved evidence, calculations, or state transitions. Those artifacts can support auditing even when internal reasoning remains inaccessible.
 - Explain that intermediate steps can propagate assumptions and errors as well as correct them; verification of the final result and material intermediate claims remains separate from producing more reasoning text.
 - Keep concrete provider policies on hidden reasoning, reasoning-token accounting, model-specific reasoning modes, benchmark gains, prompting recipes, and agent/workflow traces with their applicable catalog, evaluation, learning, or system owners.
-- Keep the unselected `reasoning-models/` classification separate; CoT usage or visibility does not by itself define a model as a canonical `reasoning model` class.
+- Keep the canonical `models/classification/reasoning-models/` classification separate; CoT usage or visibility does not by itself classify a model or mode as reasoning-oriented.
 - Use the canonical entity references as research inputs for CoT elicitation, performance, and faithfulness boundaries when reader-facing rendering is activated.
 
 ## Validation
@@ -20,5 +20,5 @@
 - Chain-of-thought as a trace is distinguished from chain-of-thought prompting as an elicitation technique.
 - CoT is not presented as universally improving accuracy or as proof of correctness, interpretability, or safety.
 - Hidden/private reasoning is not treated as something that must be disclosed for auditing; externally verifiable evidence and workflow artifacts remain separate.
-- CoT does not implicitly create or define the blocked `reasoning-models` classification leaf.
+- CoT usage or visibility does not by itself classify a model or mode under `models/classification/reasoning-models/`.
 - Legacy practical guidance is preserved only as conceptual verification boundaries rather than a universal instruction to expose or lengthen reasoning traces.
