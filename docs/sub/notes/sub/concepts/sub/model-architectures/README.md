@@ -1,54 +1,31 @@
 # Model Architectures
 
-Model architecture describes how model computation, components, and parameter activation are organized. Architecture is independent from model scale, deployment mode, access, and capability-frontier status.
+Legacy residual retained for architecture-reading pedagogy, model-selection interpretation, and temporary legacy child navigation because the selected architectures-and-representations learning owner is not yet materialized on the active branch.
+
+> **Migration note:** The reusable Model Architectures core is already preserved in `docs/sub/concepts/sub/models/sub/architectures/`: architecture describes computational components/connections/activation paths, stays distinct from model scale, training/adaptation, deployment, access/licensing, frontier status, numerical precision, and practical hardware fit, and can affect execution without guaranteeing one performance outcome. The selected `learning/areas/models/architectures-and-representations/` owner is currently absent on the active AI Lab ref. Preserve only the practical interpretation and temporary navigation below until learning/navigation owners are ready.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Parameter activation
+## Architecture-reading pedagogy residual
 
-- [`dense-and-sparse-architectures/`](./sub/dense-and-sparse-architectures/) — compares architectures that activate most parameters with architectures that activate selected subsets.
-- [`mixture-of-experts/`](./sub/mixture-of-experts/) — explains router-selected expert networks, total parameters, and active parameters.
+Keep architecture fields separate from other model properties when comparing concrete models:
 
-## Related existing architecture concepts
+- dense does not mean small, and sparse does not mean large;
+- MoE does not automatically mean faster, cheaper, locally practical, or frontier;
+- quantization changes numerical representation rather than the model's dense/sparse activation architecture;
+- pruning can introduce sparsity but is not equivalent to every sparse-activation architecture;
+- total parameter count, active parameter count, memory residency, and compute per token are distinct measurements when they affect workload fit.
 
-The broader concept structure is being migrated incrementally. These existing pages remain under the earlier mixed foundations node until their final placement is reviewed:
+When a concrete model is MoE, record reliable **total** and **active** parameter counts separately. Comparing an MoE and a dense model using only one of those counts can produce a misleading size/compute conclusion.
 
-- [Transformers](../foundations-and-architecture/sub/transformers/)
-- [Attention](../foundations-and-architecture/sub/attention/)
-- [Self-Attention](../foundations-and-architecture/sub/self-attention/)
-- [Encoder-Decoder Architectures](../foundations-and-architecture/sub/encoder-decoder/)
-- [Neural Networks](../foundations-and-architecture/sub/neural-networks/)
+Architecture can be a useful explanatory field for hardware fit, inference behavior, throughput, memory/communication patterns, or runtime compatibility, but concrete task-fit conclusions remain model-selection/evidence-owned rather than architecture truth.
 
-## Independent dimensions
+## Temporary legacy child navigation
 
-Architecture labels must not be used as substitutes for other model properties:
+- [`dense-and-sparse-architectures/`](./sub/dense-and-sparse-architectures/)
+- [`mixture-of-experts/`](./sub/mixture-of-experts/)
 
-- Dense does not mean small, and sparse does not mean large.
-- MoE does not automatically mean faster, cheaper, locally practical, or frontier.
-- Quantization changes numerical representation, not the model's dense or sparse architecture.
-- Pruning can introduce sparsity but is not equivalent to every sparse activation architecture.
-- Total parameter count, active parameter count, memory residency, and compute per token should be recorded separately when they affect selection.
-
-## Use in model selection
-
-Use architecture fields when they explain hardware fit, inference behavior, throughput, memory requirements, multi-device communication, or runtime compatibility.
-
-Recommended compact values include:
-
-```text
-Architecture: Dense
-Architecture: Sparse — MoE
-Architecture: Unknown
-```
-
-For an MoE model, also record reliable total and active parameter counts separately. Do not compare the model with a dense model using only one of those values.
-
-## Related concepts
-
-- [Model Classification](../model-classification/)
-- [Small and Large Language Models](../model-classification/sub/language-model-scale/)
-- [Quantization](../inference-and-serving/sub/quantization/)
-- [Pruning](../training-and-adaptation/sub/pruning/)
+These pedagogical/navigation fragments remain migration source material until the selected architectures-and-representations learning owner and later legacy-navigation/source-removal gates are ready.
