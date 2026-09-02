@@ -1,37 +1,28 @@
 # Chain of Thought
 
-Chain of thought refers to intermediate reasoning steps used to support multi-step problem solving. These steps may appear as generated text, remain internal to a reasoning model, or be represented through explicit workflow state.
+Legacy residual retained for decomposition, external verification, audit-artifact, and sensitive-trace handling guidance that are intentionally outside the canonical Chain of Thought concept owner.
+
+> **Migration note:** Chain-of-thought identity, trace-versus-prompting distinction, model/task-dependent performance effects, non-faithfulness and post-hoc limitations, visible-versus-hidden computation boundaries, and separation from externally verifiable workflow artifacts are already preserved in `docs/sub/concepts/sub/models/sub/behavior-and-failure-modes/sub/reasoning/sub/chain-of-thought/`. The remaining material below stays here until its exact learning, evaluation, agent-workflow, privacy, or audit owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Decomposition and verification residual
 
-Breaking a difficult problem into intermediate steps can improve planning and error detection. However, a fluent reasoning trace is not proof that the conclusion is correct. Some systems deliberately do not expose private internal reasoning and instead provide concise explanations, calculations, evidence, or verifiable intermediate results.
+For difficult multi-step work, prefer decomposition that produces independently checkable subproblems or intermediate results when that improves correctness or diagnosis. Ask for material assumptions, calculations, evidence, and a final conclusion when those artifacts are useful to verify the result.
 
-## Practical use
+Use deterministic or externally verifiable tools for arithmetic, code execution, retrieval, validation, or other operations where a tool result provides stronger evidence than additional free-form reasoning text.
 
-- Decompose a task into independently checkable subproblems.
-- Ask for assumptions, calculations, evidence, and a final conclusion.
-- Use external tools for arithmetic, code execution, retrieval, or validation.
-- Preserve an auditable workflow trace rather than relying on hidden reasoning.
+## Audit-artifact residual
 
-## Trade-offs and limitations
+When auditability matters, preserve structured plans, state transitions, tool calls/results, retrieved evidence, calculations, approvals, or other externally inspectable workflow artifacts rather than treating a verbose rationale as proof of what internally caused the answer.
 
-Long visible reasoning consumes tokens and may reveal sensitive prompt details or provide an unreliable post-hoc narrative. For production systems, structured plans and tool traces are often more useful than unrestricted reasoning text.
+A detailed reasoning-like narrative can still contain speculation or errors. Material intermediate claims should therefore be checked under the same evidence standard as the final conclusion.
 
-## Common mistakes
+## Sensitive-trace and efficiency residual
 
-- Treating a detailed rationale as guaranteed correctness.
-- Requiring disclosure of hidden internal reasoning as a security or audit mechanism.
-- Allowing intermediate speculation to be presented as established fact.
-- Using verbose reasoning where a deterministic calculation would be safer.
+Avoid requiring unrestricted visible reasoning merely for completeness. Long traces consume context and can expose sensitive prompt, policy, source, or intermediate information. For production workflows, concise explanations plus verifiable calculations, evidence, structured state, or tool traces may provide a better audit surface than unrestricted reasoning prose.
 
-## Related concepts
-
-- [Model Usage and Generation](../../)
-- [Reasoning Models](../reasoning-models/)
-- [Planning](../../../agents-and-automation/sub/planning/)
-- [Verification and Reflection](../../../agents-and-automation/sub/verification-and-reflection/)
+These decomposition, audit, privacy, and verification practices remain migration source material until their exact learning, evaluation, workflow, privacy, or audit owners are verified.
