@@ -1,37 +1,34 @@
 # Preference Optimization
 
-Preference optimization adjusts model behavior using comparisons or scores that indicate which responses are preferred.
+Legacy residual retained for preference-data collection, judge calibration/independence, multi-metric evaluation, regression monitoring, and rollback guidance that are intentionally outside the canonical Preference Optimization concept owner.
+
+> **Migration note:** Preference-optimization identity, SFT distinction, preference-signal source variability, RLHF-versus-direct-objective boundaries, context-dependent judgment semantics, proxy/reward limitations, reward-model versus policy quality, method-specific constraints, and RLHF/DPO descendant ownership are already preserved in `docs/sub/concepts/sub/models/sub/training-and-adaptation/sub/preference-optimization/`. The remaining material below stays here until its exact learning, post-training engineering, evaluation, governance, or experiment-management owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Preference-data residual
 
-Supervised fine-tuning teaches the model to imitate target answers. Preference optimization instead uses relative judgments, such as one response being more helpful, safe, concise, or accurate than another. Methods include RLHF, DPO, and related objectives.
+Define comparison criteria, prompt/context distribution, candidate-generation process, annotator/judge population, tie/abstain handling, and versioned policy instructions before collecting preference data. Preserve enough provenance to distinguish a change in the learned policy from a change in who or what supplied the judgments.
 
-## Practical use
+Include ambiguous, adversarial, safety-relevant, style-sensitive, and factual cases when those dimensions matter to the target behavior rather than collecting only easy quality comparisons.
 
-- Improve instruction following and conversational usefulness.
-- Shape refusal and safety behavior.
-- Reduce undesirable styles or verbosity.
-- Align output with task-specific quality criteria.
+## Judge and calibration residual
 
-## Trade-offs and limitations
+Measure agreement and systematic disagreement among human annotators, rule-based checks, or model judges when they materially determine the training signal. Do not use one related model or reward/judge pipeline as the only generator, labeler, and evaluator when independent evidence is needed.
 
-Preference labels are subjective and can encode annotator or policy bias. Optimizing a proxy preference score may reduce diversity, cause over-refusal, or reward persuasive wording over factual correctness.
+Calibrate judge preferences against task-grounded correctness or expert review where persuasive wording, verbosity, refusal style, or other superficial properties can dominate the proxy score.
 
-## Common mistakes
+## Multi-metric evaluation residual
 
-- Treating preferences as objective truth.
-- Collecting comparisons without clear criteria.
-- Using one judge model as the only source of labels.
-- Evaluating only preference win rate and ignoring factual or task metrics.
+Evaluate the preference objective together with task correctness, factuality/grounding, safety, refusal calibration, diversity, retained capabilities, latency/cost, and other acceptance criteria. A higher pairwise win rate can coexist with regressions that matter more to the application.
 
-## Related concepts
+Use representative holdout prompts and preserve a sufficiently independent final acceptance set so repeated preference tuning does not overfit the evaluation protocol itself.
 
-- [Training and Adaptation](../../)
-- [RLHF](../rlhf/)
-- [DPO](../dpo/)
-- [Human Evaluation](../../../evaluation-and-operations/sub/human-evaluation/)
+## Regression and rollback residual
+
+Version the base/SFT checkpoint, preference dataset, judge/reward artifacts, training configuration, and resulting policy together. Keep a known-good prior artifact and rollback path when post-training can change broad behavior beyond the targeted preference dimension.
+
+These data, judge, evaluation, regression, and rollback practices remain migration source material until their exact learning, post-training engineering, evaluation, governance, or experiment-management owners are verified.
