@@ -9,7 +9,7 @@
 - Distinguish semantic retrieval from lexical retrieval. Semantic methods can bridge paraphrases or related wording but can also miss exact identifiers, rare strings, negation, or other distinctions that lexical evidence preserves.
 - Explain that learned similarity or representation distance is a retrieval signal, not a calibrated probability that the candidate contains the answer, is factually correct, or satisfies the final task.
 - Make clear that representation model, training objective, query/document encoding, corpus/domain shift, segmentation, and evaluation set can materially change retrieval behavior.
-- Keep the unresolved generic `embeddings/` concept as an architecture gap; refer to learned vector representations descriptively without creating or implying an unselected embedding leaf.
+- Distinguish semantic retrieval from the canonical `machine-learning/representation-learning/embeddings/` concept: embeddings are reusable learned representations, while semantic retrieval is a retrieval objective/matching use of compatible representations; embeddings are not retrieval-only and semantic retrieval does not require every embedding use case to become part of this node.
 - Keep concrete embedding models, vector dimensions, similarity thresholds, indexes, product settings, benchmark results, access-control policy, and application-specific retrieval recommendations with their applicable catalog, evidence, engineering, or decision owners.
 - Use the canonical entity references as research inputs for learned dense retrieval and semantic-matching boundaries when reader-facing rendering is activated.
 
@@ -19,5 +19,5 @@
 - Semantic retrieval is not equated with vector search, embeddings, or one nearest-neighbor implementation.
 - Learned similarity is not presented as factuality or answer-correctness evidence.
 - The page preserves the lexical-versus-semantic distinction without claiming either class universally dominates the other.
-- The blocked `embeddings/` concept is not implicitly materialized.
+- The page does not treat embeddings as retrieval-only or collapse the canonical embeddings concept into semantic retrieval.
 - Legacy operational recommendations are not copied as universal guidance.
