@@ -1,41 +1,32 @@
 # GraphRAG
 
-GraphRAG is a Retrieval-Augmented Generation approach that uses entities, relationships, communities, or graph traversal to assemble context.
+Legacy residual retained for application selection, graph-construction verification, provenance maintenance, baseline comparison, and operational-cost guidance that are intentionally outside the canonical GraphRAG concept owner.
+
+> **Migration note:** GraphRAG identity, RAG-subtype ownership, knowledge-graph versus GraphRAG separation, graph-source variability, acquisition/indexing/retrieval/context stages, structural-connectivity versus relevance/causality boundaries, fallible extraction, freshness, staged evaluation, and non-guarantees for grounding or reasoning are already preserved in `docs/sub/concepts/sub/ai-engineering/sub/architectures-and-patterns/sub/rag/sub/graph-rag/`. The remaining material below stays here until its exact learning, graph/retrieval-engineering, evaluation, operations, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application-selection residual
 
-Conventional RAG usually retrieves independent text chunks. GraphRAG adds structure that can connect information distributed across documents, such as people linked to projects, services linked to incidents, or concepts linked through citations. The graph may be created from an existing knowledge graph or extracted from text.
+Use graph structure when the target questions materially depend on relationships, hierarchy, aggregation, topology, dependencies, ownership, provenance, or multi-hop context. Typical candidates include cross-document entity questions, dependency/impact investigation, organization/project relationships, code or service dependency analysis, and corpus-level sensemaking.
 
-## Practical use
+Compare against simpler lexical, semantic, hybrid, structured-query, or ordinary RAG baselines. A graph adds construction and maintenance cost and should not be introduced merely because the source corpus contains entities and relationships.
 
-- Questions requiring multi-hop relationships.
-- Summaries across many connected entities or documents.
-- Investigation of dependencies, ownership, or causal chains.
-- Navigation through organizational or technical knowledge.
+## Construction and provenance residual
 
-## Trade-offs and limitations
+When nodes or edges are extracted or generated automatically, preserve source evidence and extraction status so plausible but unsupported relationships do not silently become trusted facts. Entity resolution, deduplication, relation typing, temporal qualifiers, and graph updates need explicit validation appropriate to the domain.
 
-Graph construction is expensive and error-prone. Entity extraction, deduplication, and relationship typing can introduce false links. Graph traversal may also retrieve structurally connected but semantically irrelevant information.
+Retain provenance through entity consolidation, clustering/community summaries, graph compression, and derived graph artifacts so an answer can be traced back to the source evidence rather than only to a generated graph node or summary.
 
-## Good practice
+## Evaluation and operations residual
 
-Preserve source evidence for every node and edge. Evaluate graph extraction separately from answer generation. Use graph retrieval only where relationships add value; simple factual lookups may work better with ordinary hybrid search.
+Evaluate graph/source quality, entity/relation extraction, retrieval/subgraph selection, context organization, and final answer quality separately enough to diagnose failures. Compare GraphRAG with non-graph baselines under comparable context/model/budget conditions so gains are not incorrectly attributed to graph structure.
 
-## Common mistakes
+Track update/freshness behavior when underlying documents or records change. Derived edges, communities, summaries, embeddings, and indexes can become stale independently and need invalidation or rebuild rules.
 
-- Treating automatically extracted relationships as verified facts.
-- Building a graph without a question class that needs it.
-- Losing document provenance after entity consolidation.
-- Assuming graph traversal replaces lexical and semantic retrieval.
+Do not treat graph adjacency as relevance, a graph path as causality, or graph traversal as a replacement for lexical/semantic retrieval when those signals better match the query.
 
-## Related concepts
-
-- [Retrieval and Knowledge](../../)
-- [Knowledge Graphs](../knowledge-graphs/)
-- [RAG](../rag/)
-- [Provenance](../../../safety-privacy-and-reliability/sub/provenance/)
+These application-selection, construction, provenance, evaluation, and operational practices remain migration source material until their exact learning, graph/retrieval-engineering, evaluation, operations, or decision-support owners are verified.
