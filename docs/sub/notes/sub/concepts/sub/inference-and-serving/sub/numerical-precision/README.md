@@ -1,42 +1,34 @@
 # Numerical Precision
 
-Numerical precision defines the number format used to represent model weights, activations, gradients, and caches.
+Legacy residual retained for hardware/runtime capability verification, precision-path observability, stability testing, fallback diagnosis, and deployment benchmarking guidance that are intentionally outside the canonical Numerical Precision concept owner.
+
+> **Migration note:** Numerical-precision identity, bit-width versus format semantics, storage/compute/activation/accumulation/cache distinctions, mixed-precision boundaries, reduced floating point versus quantization separation, numerical range/error/stability limits, and hardware/runtime dependence are already preserved in `docs/sub/concepts/sub/models/sub/optimization-and-compression/sub/numerical-precision/`. The remaining material below stays here until its exact learning, inference-engineering, runtime, evaluation, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Capability-verification residual
 
-Precision affects memory consumption, numerical range, rounding error, and hardware performance. FP32 provides broad compatibility and precision but uses more memory. FP16, BF16, FP8, and integer formats reduce storage or compute requirements with different range and accuracy characteristics.
+Verify the exact model, runtime/kernel, accelerator/CPU, driver/firmware, and operation path before selecting a precision configuration. A device may advertise support for a numerical format while the required model operations fall back to conversion, emulation, or another precision path that changes performance or memory behavior.
 
-## Important distinctions
+Check weight/storage, activation, accumulation, cache, input/output, and intermediate precision separately where the runtime exposes them. Do not infer the effective compute path solely from the serialized artifact or a single `dtype` label.
 
-- **Weight precision:** how model parameters are stored.
-- **Compute precision:** the format used during matrix operations.
-- **Activation precision:** how intermediate values are represented.
-- **Accumulation precision:** the format used when summing many products.
-- **KV-cache precision:** the format used for attention cache values.
+## Stability and quality residual
 
-## Practical use
+Test representative inputs for numerical instability, overflow/underflow, NaN/Inf propagation, output-quality regressions, calibration changes, and long-context or high-dynamic-range edge cases when they are relevant to the workload. A lower-bit format can work well for common cases while failing on sensitive operations or model families.
 
-Check which formats the model, runtime, and hardware support natively. Mixed-precision inference may store weights at low precision while accumulating at a higher precision to preserve stability.
+Compare candidate precision configurations under matched runtime, model, context, batching, and workload conditions so quality or speed differences are not attributed to precision while another execution variable changed.
 
-## Trade-offs and limitations
+## Fallback diagnosis residual
 
-Lower precision can increase speed and reduce memory, but unsupported formats may fall back to slower conversion paths. A format with fewer bits may have a wider numerical range than another format because exponent and mantissa layouts differ.
+Use runtime/profiler/log evidence where available to confirm which kernels and data types actually execute. Unexpected latency, memory use, or device utilization can indicate hidden conversions, higher-precision accumulation, unsupported operators, host fallback, or mixed execution rather than the intended low-precision path.
 
-## Common mistakes
+Treat unsupported or partially supported paths as deployment constraints, not merely documentation inconsistencies. Prefer a well-supported higher-precision route over a nominally smaller format when the fallback path negates the expected benefit.
 
-- Treating BF16 and FP16 as interchangeable.
-- Assuming stored precision equals compute precision.
-- Ignoring accumulation precision in stability-sensitive operations.
-- Comparing “8-bit” formats without identifying the actual representation.
+## Deployment-benchmark residual
 
-## Related concepts
+Measure model load size, resident RAM/VRAM, runtime workspace, cache memory, prompt/prefill latency, decode speed, throughput, concurrency, and accepted-result quality on the actual target environment. Record model/runtime/hardware versions with the result so later precision support changes can be re-evaluated.
 
-- [Inference and Serving](../../)
-- [Quantization](../quantization/)
-- [Model Formats](../model-formats/)
-- [KV Cache](../kv-cache/)
+These capability, stability, fallback, and deployment-benchmark practices remain migration source material until their exact learning, inference-engineering, runtime, evaluation, or decision-support owners are verified.
