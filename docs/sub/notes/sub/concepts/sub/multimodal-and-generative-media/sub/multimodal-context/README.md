@@ -1,37 +1,31 @@
 # Multimodal Context
 
-Multimodal context is the combined text, image, audio, video, document, and tool information available to a model during a request.
+Legacy residual retained for practical multimodal-context applications and context-hygiene guidance that is intentionally outside the canonical Multimodal Context concept owner.
+
+> **Migration note:** Multimodal-context identity, distinction from multimodal/VLM model identity, modality and preprocessing boundaries, context-accounting differences, relationship/alignment requirements, fidelity loss, capacity-versus-effective-use distinction, persistent-memory/retrieval/cache boundaries, and trust-boundary concerns are already preserved in `docs/sub/concepts/sub/models/sub/interaction/sub/context/sub/multimodal-context/`. The remaining material below stays here until its exact learning, workflow, security, evaluation, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application residual
 
-Each modality is converted into tokens or learned features and consumes part of a limited context or compute budget. A high-resolution image, long audio recording, or large PDF may be compressed, sampled, split, or summarized before the model sees it.
+Multimodal context can support workflows such as:
 
-## Practical use
+- combining screenshots with technical questions;
+- analyzing documents that contain text, tables, and diagrams;
+- combining audio-derived text with speaker or timing metadata;
+- grounding an agent in browser screenshots together with tool results.
 
-- Combine screenshots with technical questions.
-- Analyze documents containing text, tables, and diagrams.
-- Use audio transcripts together with speaker metadata.
-- Ground an agent in browser screenshots and tool results.
+These are application examples rather than part of the canonical concept definition.
 
-## Trade-offs and limitations
+## Context-hygiene residual
 
-Adding modalities does not guarantee that the model integrates them correctly. Important details may be lost during OCR, frame sampling, resizing, or transcription. Conflicting evidence across modalities requires explicit handling.
+Provide only modality-bearing material that is relevant to the target task and preserve useful relationships between inputs when the concrete interface supports them. Excess irrelevant media can consume context/compute budget and make important evidence harder to use.
 
-## Common mistakes
+Do not assume uploaded media is processed at full fidelity or that accepted context size guarantees the model can retrieve and integrate every important detail. Validate source details when correctness matters, especially after OCR, transcription, resize/crop, frame sampling, compression, or document parsing.
 
-- Assuming uploaded media is processed at full fidelity.
-- Providing many irrelevant images and diluting attention.
-- Ignoring context-window consumption from media.
-- Trusting instructions embedded inside untrusted documents or screenshots.
+Treat instructions embedded in untrusted documents, screenshots, web content, or other media as untrusted input subject to the applicable indirect-prompt-injection and authorization controls.
 
-## Related concepts
-
-- [Multimodal and Generative Media](../../)
-- [Vision-Language Models](../vision-language-models/)
-- [Context Window](../../../model-usage-and-generation/sub/context-window/)
-- [Indirect Prompt Injection](../../../safety-privacy-and-reliability/sub/indirect-prompt-injection/)
+These practical context-construction, verification, and security practices remain migration source material until their exact learning, workflow, security, evaluation, or decision-support owners are verified.
