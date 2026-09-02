@@ -1,41 +1,34 @@
 # Supervised Fine-Tuning
 
-Supervised Fine-Tuning, or SFT, trains a model on examples that pair an input or instruction with a desired output.
+Legacy residual retained for dataset curation, template consistency, holdout evaluation, generalization checks, and post-training handoff guidance that are intentionally outside the canonical Supervised Fine-Tuning concept owner.
+
+> **Migration note:** SFT identity, broader-than-instruction-tuning scope, terminology overlap, supervised-target versus preference-objective distinction, loss/template variability, parameter-update independence, target-quality risks, and non-guarantees for generalization/factuality/safety are already preserved in `docs/sub/concepts/sub/models/sub/training-and-adaptation/sub/fine-tuning/sub/supervised-fine-tuning/`. The remaining material below stays here until its exact learning, training-engineering, dataset-engineering, evaluation, or post-training-workflow owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Dataset-curation residual
 
-The model learns to assign higher probability to target responses supplied in the dataset. For chat models, examples usually include roles, instructions, context, and assistant answers formatted with the model's chat template.
+Curate examples around the actual acceptance criteria rather than maximizing raw volume. Include representative ordinary cases, important edge/failure cases, desired uncertainty or abstention behavior, and the range of formats/domains the adapted model must handle.
 
-## Practical use
+Review generated or imported targets for correctness, hidden assumptions, unsafe patterns, duplicated/near-duplicated examples, leakage, secrets, and accidental personal data before treating them as supervised truth.
 
-- Convert a base model into an instruction-following model.
-- Teach task-specific formats and terminology.
-- Improve behavior on curated domain examples.
-- Prepare a model before preference optimization.
+## Template and preprocessing residual
 
-## Dataset requirements
+Keep the training representation compatible with the intended model/tokenizer/processor and inference path. For chat-style data, verify roles, separators, special tokens, masking, truncation, and chat-template behavior end to end; do not mix incompatible templates or preprocessing conventions silently.
 
-High-quality, diverse examples are more valuable than large volumes of repetitive text. Include realistic failures, edge cases, and desired uncertainty behavior. Remove secrets, accidental personal data, and incorrect synthetic answers.
+Record enough preprocessing and dataset-version information to reproduce which tokens/targets actually contributed to training.
 
-## Trade-offs and limitations
+## Evaluation residual
 
-SFT teaches imitation of examples, not independent factual verification. It can overfit style, memorize examples, or reduce performance outside the training distribution. The model may also learn undesirable patterns hidden in seemingly correct answers.
+Separate training, validation, and final holdout data sufficiently to detect memorization and near-duplicate leakage. Evaluate both the target behavior and important retained capabilities under representative inference settings rather than accepting low training loss as proof of success.
 
-## Common mistakes
+Inspect failures outside the supervised distribution and compare against the unchanged base or another relevant baseline under matched prompts, decoding, tools, and data when those factors affect the decision.
 
-- Training on raw documents instead of instruction-response examples for an instruction task.
-- Using generated answers without validation.
-- Mixing incompatible chat templates.
-- Evaluating on near-duplicates of training data.
+## Post-training handoff residual
 
-## Related concepts
+If SFT precedes preference optimization or another post-training stage, preserve the exact SFT artifact, dataset lineage, evaluation baseline, and behavioral changes so later gains/regressions can be attributed to the correct stage. Preference optimization should not be used to hide a poorly curated supervised foundation.
 
-- [Training and Adaptation](../../)
-- [Instruction Tuning](../instruction-tuning/)
-- [Datasets](../datasets/)
-- [Preference Optimization](../preference-optimization/)
+These dataset, template, evaluation, and handoff practices remain migration source material until their exact learning, training-engineering, dataset-engineering, evaluation, or post-training-workflow owners are verified.
