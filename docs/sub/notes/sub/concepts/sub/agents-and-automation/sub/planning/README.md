@@ -1,41 +1,31 @@
 # Planning
 
-Planning is the process of selecting and ordering actions needed to reach a goal under known constraints.
+Legacy residual retained for agent-specific planning workflow and replanning guidance that is intentionally outside the canonical Planning and Scheduling concept owner.
+
+> **Migration note:** Generic planning/scheduling identity, plan representations, task decomposition, planning-versus-execution, feasibility/authorization boundaries, method diversity, and replanning semantics are already preserved in `docs/sub/concepts/sub/reasoning-and-decision-making/sub/planning-and-scheduling/`. The remaining material below stays here until its exact agent-learning, workflow-design, engineering, or project owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Agent-planning application residual
 
-In agent systems, a plan may be generated once, revised after each observation, or represented as a graph of dependencies. Good plans identify prerequisites, expected outputs, validation points, and conditions that require replanning.
+Agent workflows can use planning to:
 
-## Practical use
+- break a repository change into inspection, implementation, testing, and publication stages;
+- identify information that must be retrieved before a later decision;
+- order tool operations whose inputs depend on earlier results; and
+- place human approval before consequential actions.
 
-- Break a repository change into inspection, implementation, testing, and publication steps.
-- Decide which information must be retrieved before answering.
-- Schedule tool calls whose outputs depend on earlier results.
-- Identify actions that require human approval.
+These are agent/workflow examples rather than part of the generic planning definition.
 
-## Design guidance
+## Planning-workflow residual
 
-Prefer short, testable steps over vague goals. Separate reversible exploration from consequential execution. Attach acceptance criteria to each step and keep the current plan in explicit state. Replan when evidence invalidates an assumption instead of forcing the original sequence.
+Prefer short, inspectable steps with clear prerequisites, expected outputs, and acceptance/verification points over vague action lists. Keep the currently actionable plan in explicit workflow state when continuation/recovery depends on it, rather than relying on conversational memory alone.
 
-## Trade-offs and limitations
+Separate reversible exploration from consequential execution and do not treat a plausible generated plan as evidence that required tools, permissions, data, or resources actually exist. Replan when observations, failures, resource state, or evidence invalidate a material assumption instead of forcing an obsolete sequence.
 
-Detailed planning consumes tokens and can become obsolete quickly in dynamic environments. Models may produce plausible but impossible steps when they lack tool knowledge or current state.
+Detailed planning has a cost: long plans can consume context, create unnecessary coordination, and become stale rapidly in dynamic environments. Use a deterministic operation or simpler workflow when it already satisfies the task.
 
-## Common mistakes
-
-- Treating the first plan as fixed.
-- Planning actions the system cannot actually execute.
-- Omitting validation and rollback steps.
-- Generating a long plan for a task that requires one deterministic operation.
-
-## Related concepts
-
-- [Agents and Automation](../../)
-- [Task Decomposition](../task-decomposition/)
-- [Verification and Reflection](../verification-and-reflection/)
-- [Agent State](../agent-state/)
+These agent-specific planning practices remain migration source material until their exact learning, workflow-design, engineering, or project owners are verified.
