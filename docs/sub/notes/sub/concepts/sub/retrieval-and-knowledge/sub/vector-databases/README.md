@@ -1,39 +1,30 @@
 # Vector Databases
 
-A vector database stores embeddings and associated metadata, builds similarity indexes, and exposes operations for inserting, updating, filtering, and retrieving vectors.
+Legacy residual retained for deployment selection, workload sizing, operational ownership, and system-evaluation guidance that are intentionally outside the canonical Vector Databases concept owner.
+
+> **Migration note:** Vector-database identity, separation from vector search/index libraries, persistent data-management responsibilities, representation compatibility, source identity, filtering/authorization boundaries, lifecycle/freshness, durability/consistency, scaling, tenancy, observability, benchmarking, and RAG separation are already preserved in `docs/sub/concepts/sub/ai-engineering/sub/system-design/sub/vector-databases/`. The remaining material below stays here until its exact learning, infrastructure-engineering, evaluation, operations, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Deployment-selection residual
 
-The database is infrastructure around vector search. Useful capabilities include approximate nearest-neighbor indexing, metadata filters, namespaces or tenants, persistence, replication, deletion, and integration with document ingestion pipelines.
+Choose a vector-database architecture after measuring the actual workload rather than assuming a dedicated product is required. A vector-specialized system can simplify some scale and operations problems, while a general-purpose database with vector capabilities can be sufficient when its measured latency, recall, filtering, update, durability, and operational behavior satisfy the application.
 
-## Selection criteria
+Evaluate the complete system fit, including supported representation dimensions/types and metrics, filtering/query behavior, update/delete semantics, ingestion rate, read/write mix, memory/storage footprint, backup/recovery needs, replication/availability, tenancy, hybrid-query requirements, and existing operational expertise.
 
-- Supported vector dimensions and distance metrics.
-- Filtering behavior and access-control integration.
-- Index build and update characteristics.
-- Memory, storage, and operational requirements.
-- Backup, replication, and disaster recovery.
-- Hybrid lexical and vector retrieval support.
+## Workload and benchmark residual
 
-## Trade-offs and limitations
+Benchmark candidate systems under representative vector distributions, dimensions, filters, concurrency, update rates, target recall, warm/cold conditions, network placement, and hardware. Do not extrapolate one public benchmark or synthetic nearest-neighbor result into a universal product ranking.
 
-A dedicated vector database may simplify scale and operations but adds another system to maintain. General databases with vector extensions can be sufficient when data volume, latency, and update rates are moderate. The database cannot compensate for poor embeddings, chunking, or evaluation.
+Measure database/search metrics separately from downstream retrieval relevance and RAG answer quality. A fast index cannot repair poor embeddings, segmentation, stale source data, bad metadata, or missing evidence.
 
-## Common mistakes
+## Operational ownership residual
 
-- Choosing a database before measuring workload requirements.
-- Storing vectors without source IDs, versions, or deletion paths.
-- Treating tenant metadata as a substitute for enforced authorization.
-- Assuming faster nearest-neighbor search guarantees better RAG answers.
+Preserve stable source IDs, representation versions, metadata versions, and explicit deletion/rebuild paths so derived vector state can be updated or regenerated safely. Define who owns backup/restore, index rebuilds, stale-vector cleanup, capacity planning, observability, access-control integration, and incident recovery before treating the database as production infrastructure.
 
-## Related concepts
+Treat namespaces, collections, or tenant metadata as data-organization mechanisms unless the concrete system's deterministic authorization layer makes them security boundaries.
 
-- [Retrieval and Knowledge](../../)
-- [Vector Search](../vector-search/)
-- [Metadata Filtering](../metadata-filtering/)
-- [Embeddings](../embeddings/)
+These deployment, workload, benchmark, and operational practices remain migration source material until their exact learning, infrastructure-engineering, evaluation, operations, or decision-support owners are verified.
