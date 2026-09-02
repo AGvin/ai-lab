@@ -1,41 +1,33 @@
 # Semantic Search
 
-Semantic search retrieves content by comparing learned representations of meaning rather than relying only on exact word matches.
+Legacy residual retained for retrieval-composition, candidate-evaluation, access-control, and application-guidance material that are intentionally outside the canonical Semantic Retrieval concept owner.
+
+> **Migration note:** Semantic-retrieval identity, learned-representation matching, dense-retrieval implementation boundaries, semantic-versus-vector and semantic-versus-lexical distinctions, similarity non-guarantees, and representation/domain/segmentation dependence are already preserved in `docs/sub/concepts/sub/information-retrieval/sub/semantic-retrieval/`. The remaining material below stays here until its exact learning, retrieval-engineering, evaluation, security, or decision-support owner is verified.
 
 ## Translations
 
 - English
 - [Українська](./l10n/uk_UA/)
 
-## Core idea
+## Application-pattern residual
 
-A query and candidate documents are embedded into vectors, then a vector index finds nearby items. This allows retrieval when the user and source use different wording, abbreviations, or paraphrases.
+Semantic retrieval is commonly useful for natural-language questions, paraphrase-heavy or cross-lingual search, conceptually related code/tickets/notes, and intent-oriented matching. Treat these as application patterns to evaluate rather than guarantees that semantic retrieval will outperform lexical or structured methods for every corpus.
 
-## Practical strengths
+When exact identifiers, rare names, version strings, error codes, legal citations, negation, or other surface-form evidence matters, combine semantic signals with lexical, structured, or hybrid retrieval as appropriate instead of forcing one retrieval mode to solve every query type.
 
-- Natural-language questions over documents.
-- Cross-lingual or paraphrase-heavy retrieval.
-- Finding conceptually related code, tickets, or notes.
-- Matching user intent to products or support articles.
+## Retrieval-composition residual
 
-## Trade-offs and limitations
+Useful application practices include:
 
-Semantic search may miss exact identifiers, rare names, version numbers, or negated phrases. It can also retrieve topically similar passages that do not contain the required answer. Results depend heavily on the embedding model, chunking, and domain.
+- apply metadata or structured filters when the task has explicit scope, tenant, type, date, permission, or other constraints;
+- use reranking when the initial semantic candidate set is broad and a stronger second-stage relevance model materially improves ordering;
+- preserve lexical or exact-match routes for identifiers and other evidence that representation similarity can blur;
+- enforce access-control filtering as part of the retrieval path rather than treating semantic relevance as authorization.
 
-## Good practice
+## Evaluation residual
 
-Combine semantic search with metadata filters and, when exact terms matter, lexical search. Evaluate recall at several candidate counts rather than inspecting only the top result. Use reranking when initial vector similarity is too coarse.
+Evaluate representative domain queries at several candidate counts instead of judging only the top result. Measure whether the candidate set contains answer-bearing evidence, not merely topically related passages, and inspect misses caused by representation choice, segmentation, filters, domain shift, or exact-term requirements.
 
-## Common mistakes
+Do not treat nearest neighbors or high similarity values as verified answers. The downstream system still needs whatever evidence, validation, grounding, or application checks the task requires.
 
-- Treating nearest neighbors as verified answers.
-- Using semantic search alone for SKUs, error codes, or legal citations.
-- Comparing similarity scores across unrelated models or indexes.
-- Ignoring access controls during retrieval.
-
-## Related concepts
-
-- [Retrieval and Knowledge](../../)
-- [Embeddings](../embeddings/)
-- [Hybrid Search](../hybrid-search/)
-- [Vector Search](../vector-search/)
+These composition, evaluation, security, and application practices remain migration source material until their exact learning, retrieval-engineering, evaluation, security, or decision-support owners are verified.
