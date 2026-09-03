@@ -152,3 +152,9 @@ This registry README documents the template system itself and is not generated r
 ## Selection Boundary
 
 Template definitions and `node.template` selectors are separate canonical inputs. A bounded migration may introduce or update both together when the semantic contract and representative nodes are reviewed in the same package. Changing a template definition does not by itself authorize unrelated selector migration, generated README edits, or broader taxonomy materialization.
+
+
+## Decision-Support Software Templates
+
+- `decision-support/selection/software/landing` — software-selection target landing page.
+- `decision-support/selection/software/guide` — bounded cross-category or within-category software adoption guide.

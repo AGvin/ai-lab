@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/selection/software
+  type: software-selection-index
+  name: Software Selection
