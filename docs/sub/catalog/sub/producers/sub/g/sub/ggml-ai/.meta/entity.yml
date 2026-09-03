@@ -32,5 +32,5 @@ entity:
       target: catalog/software/inference-runtimes/inference-engines/llama-cpp
     - type: maintains
       target: catalog/software/inference-runtimes/inference-engines/llama-cpp
-    - type: owned-by
+    - type: part-of
       target: catalog/producers/h/hugging-face-inc
