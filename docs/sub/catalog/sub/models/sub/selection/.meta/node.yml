@@ -1,6 +1,0 @@
-node:
-  template: catalog/models/selection/landing
-  children:
-    template: catalog/models/selection/guide
-    children:
-      template: catalog/models/selection/guide
