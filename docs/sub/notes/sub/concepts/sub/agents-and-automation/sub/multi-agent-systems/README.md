@@ -2,7 +2,7 @@
 
 Legacy residual retained only for the still-unresolved repository-origin research candidate under `integrated-agent-organization-and-resource-portfolio/`.
 
-> **Migration note:** Canonical Multi-Agent Systems identity remains in `docs/sub/concepts/sub/agents-and-autonomy/sub/multiagent-systems/`. Practical architecture selection, composition, production-control boundaries, complete-system evaluation, and simpler-baseline comparison are now preserved in `docs/sub/learning/sub/areas/sub/agents-and-automation/sub/coordination-and-multi-agent/sub/multi-agent-architectures/`. The other legacy pattern children have exact semantic dispositions; physical removal remains blocked by the active-branch inbound-reference/removal gate. Do not use this legacy root as the current pattern-navigation or architecture-selection authority.
+> **Migration note:** Canonical Multi-Agent Systems identity remains in `docs/sub/concepts/sub/agents-and-autonomy/sub/multiagent-systems/`. Practical architecture selection, composition, production-control boundaries, complete-system evaluation, and simpler-baseline comparison are now preserved in `docs/sub/learning/sub/areas/sub/agents-and-automation/sub/coordination-and-multi-agent/sub/multi-agent-architectures/`. The other legacy pattern children have exact semantic dispositions and no separate inbound-reference removal gate applies to migrated sources. This legacy root remains only because the research candidate below has not yet received an exact durable disposition. Do not use this legacy root as the current pattern-navigation or architecture-selection authority.
 
 ## Translations
 
