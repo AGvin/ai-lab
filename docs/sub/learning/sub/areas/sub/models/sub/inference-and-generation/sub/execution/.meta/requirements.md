@@ -6,7 +6,7 @@
 - Keep model loading, model formats/conversion, CPU/GPU/accelerator inference, and offloading as distinct selected learning topics because each has a separate practical workflow and failure surface.
 - Teach readers to treat a runnable model as a coordinated artifact set rather than a weight-file extension alone: architecture/configuration, weights, tokenizer/chat template, generation defaults, adapters, numerical representation, and runtime expectations may all affect successful execution.
 - Keep formal serialization/graph/package definitions specification-owned and keep concrete runtime/version/hardware compatibility and benchmark results catalog/evidence-owned.
-- Explain that the current materialized subset focuses on `model-formats-and-conversion/`; other selected execution children remain logical until source-backed content/configuration/navigation value justifies materialization.
+- Explain that the current materialized subset includes `model-formats-and-conversion/`, `cpu-inference/`, `gpu-inference/`, and `offloading/`; `model-loading/` and `accelerator-inference/` remain selected logical children until source-backed content/configuration/navigation value justifies materialization.
 - Distinguish successful loading/execution from practical workload fit; latency, throughput, memory, quality, energy, and concurrency require their own evidence and evaluation.
 
 ## Validation
