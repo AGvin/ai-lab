@@ -10,7 +10,8 @@
 - Preserve source artifact identity, conversion tool/version/options, output artifact identity, and enough provenance to reproduce or diagnose the conversion; retain the original artifact when rollback or re-conversion is operationally important.
 - Explain storage/deployment trade-offs: self-contained or runtime-oriented artifacts can simplify deployment, while maintaining multiple conversions/quantizations may duplicate large weight data and increase provenance/version-management burden.
 - Cover common failure modes including mismatched tokenizer or chat template, incompatible architecture/operator support, unsupported quantization/precision, missing companion metadata, silently changed defaults, incorrect context configuration, and redistribution without checking the source license.
-- Use concrete formats such as Safetensors, GGUF, ONNX, or framework checkpoints only as worked examples. Formal definitions, required fields/layouts, versioned normative behavior, and conformance belong to `catalog/specifications/formats/<concrete-format>/` when those owners are materialized.
+- Treat framework-native checkpoints as a family of implementation-specific representations rather than one universal interoperable format. Concrete PyTorch, TensorFlow, or other framework checkpoint serialization/version behavior belongs with the applicable framework/software owner when substantive; do not invent a generic `framework-checkpoints` formal specification artifact.
+- Use concrete formats such as Safetensors, GGUF, or ONNX as worked examples. Their formal definitions, required fields/layouts, versioned normative behavior, and conformance belong to the selected `catalog/specifications/formats/safetensors/`, `catalog/specifications/formats/gguf/`, and `catalog/specifications/formats/onnx/` owners.
 - Keep exact current runtime/provider/hardware support matrices, model-specific compatibility, conversion-tool bugs, benchmark results, and dated recommendations with their catalog/software/evidence/decision owners rather than freezing them as learning truth.
 - Link model loading, quantization/numerical precision, adapters, context/runtime configuration, and performance/evaluation topics where they provide prerequisite or follow-on depth instead of duplicating their canonical teaching.
 
@@ -20,3 +21,4 @@
 - Successful serialization/loading is not presented as proof of semantic equivalence, model quality, or practical workload fit.
 - No concrete format's mutable or normative specification is independently redefined by this learning node.
 - Compatibility/license claims that can change over time are explicitly treated as source-backed checks rather than timeless facts.
+- Framework-native checkpoints are not misrepresented as one cross-framework formal specification.

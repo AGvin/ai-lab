@@ -1,0 +1,17 @@
+entity:
+  id: catalog/specifications/formats/safetensors
+  name: Safetensors
+  references:
+    - type: specification
+      source:
+        url: https://huggingface.co/docs/safetensors/index
+      purposes:
+        - identification
+        - research
+      authority: upstream
+    - type: repository
+      source:
+        url: https://github.com/huggingface/safetensors
+      purposes:
+        - research
+      authority: upstream

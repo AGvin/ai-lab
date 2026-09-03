@@ -1,0 +1,17 @@
+entity:
+  id: catalog/specifications/formats/agent-skills
+  name: Agent Skills
+  references:
+    - type: specification
+      source:
+        url: https://agentskills.io/specification
+      purposes:
+        - identification
+        - research
+      authority: upstream
+    - type: repository
+      source:
+        url: https://github.com/agentskills/agentskills
+      purposes:
+        - research
+      authority: upstream
