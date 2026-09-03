@@ -1,0 +1,677 @@
+name: Temporary migration repair
+
+on:
+  push:
+    branches:
+      - batch/ai-lab-documentation-structure/005-add-assistant-workspaces
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Repair moved model and decision-support metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="$(git rev-parse HEAD)"
+          export BASE
+
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+          import shutil
+          import subprocess
+
+          ROOT = Path.cwd()
+
+          def run(*args):
+              subprocess.run(list(args), check=True)
+
+          def git_mv(src, dst):
+              src = Path(src)
+              dst = Path(dst)
+              if src.exists():
+                  dst.parent.mkdir(parents=True, exist_ok=True)
+                  run('git', 'mv', str(src), str(dst))
+              elif not dst.exists():
+                  raise SystemExit(f'Neither source nor destination exists: {src} -> {dst}')
+
+          def git_rm(path):
+              path = Path(path)
+              if path.exists():
+                  run('git', 'rm', '-f', str(path))
+
+          def write(path, content):
+              path = Path(path)
+              path.parent.mkdir(parents=True, exist_ok=True)
+              path.write_text(content.rstrip() + '\n', encoding='utf-8')
+
+          # 1. Put model selection under the approved selection/models grouping.
+          git_mv(
+              'docs/sub/decision-support/sub/models',
+              'docs/sub/decision-support/sub/selection/sub/models',
+          )
+
+          # 2. Move path-derived page templates to their new registry IDs.
+          factual_templates = ['producer', 'family', 'series', 'model', 'version', 'artifact']
+          for name in factual_templates:
+              git_mv(
+                  f'docs/.meta/templates/pages/catalog/models/reference/{name}.md',
+                  f'docs/.meta/templates/pages/catalog/models/{name}.md',
+              )
+          git_rm('docs/.meta/templates/pages/catalog/models/reference/landing.md')
+
+          git_mv(
+              'docs/.meta/templates/pages/catalog/models/selection/landing.md',
+              'docs/.meta/templates/pages/decision-support/selection/models/landing.md',
+          )
+          git_mv(
+              'docs/.meta/templates/pages/catalog/models/selection/guide.md',
+              'docs/.meta/templates/pages/decision-support/selection/models/guide.md',
+          )
+          git_mv(
+              'docs/.meta/templates/pages/catalog/models/selection/hardware/index.md',
+              'docs/.meta/templates/pages/decision-support/selection/models/hardware/index.md',
+          )
+          git_mv(
+              'docs/.meta/templates/pages/catalog/models/selection/hardware/target.md',
+              'docs/.meta/templates/pages/decision-support/selection/models/hardware/target.md',
+          )
+          git_mv(
+              'docs/.meta/templates/pages/catalog/models/selection/user-scenarios/index.md',
+              'docs/.meta/templates/pages/decision-support/scenarios/index.md',
+          )
+          git_mv(
+              'docs/.meta/templates/pages/catalog/models/selection/user-scenarios/scenario.md',
+              'docs/.meta/templates/pages/decision-support/scenarios/scenario.md',
+          )
+
+          # 3. Reconcile path-derived IDs, relation targets, template IDs, and canonical path references.
+          replacements = [
+              ('docs/sub/catalog/sub/models/sub/selection/sub/user-scenarios', 'docs/sub/decision-support/sub/scenarios'),
+              ('docs/sub/catalog/sub/models/sub/selection/sub/decision-guides', 'docs/sub/decision-support/sub/selection/sub/models/sub/decision-guides'),
+              ('docs/sub/catalog/sub/models/sub/selection/sub/hardware', 'docs/sub/decision-support/sub/selection/sub/models/sub/hardware'),
+              ('docs/sub/catalog/sub/models/sub/selection', 'docs/sub/decision-support/sub/selection/sub/models'),
+              ('docs/sub/catalog/sub/models/sub/reference/sub/producers', 'docs/sub/catalog/sub/models'),
+              ('docs/sub/catalog/sub/models/sub/reference', 'docs/sub/catalog/sub/models'),
+              ('docs/sub/decision-support/sub/models', 'docs/sub/decision-support/sub/selection/sub/models'),
+              ('catalog/models/selection/user-scenarios', 'decision-support/scenarios'),
+              ('catalog/models/selection/decision-guides', 'decision-support/selection/models/decision-guides'),
+              ('catalog/models/selection/hardware', 'decision-support/selection/models/hardware'),
+              ('catalog/models/selection', 'decision-support/selection/models'),
+              ('catalog/models/reference/producers', 'catalog/models'),
+              ('catalog/models/reference', 'catalog/models'),
+              ('decision-support/models', 'decision-support/selection/models'),
+          ]
+
+          for path in Path('docs').rglob('*'):
+              if not path.is_file() or '.meta' not in path.parts:
+                  continue
+              if path.suffix.lower() not in {'.md', '.yml', '.yaml'}:
+                  continue
+              text = path.read_text(encoding='utf-8')
+              updated = text
+              for old, new in replacements:
+                  updated = updated.replace(old, new)
+              if updated != text:
+                  path.write_text(updated, encoding='utf-8')
+
+          # 4. Restore factual model processing inheritance after removing reference/producers wrappers.
+          write('docs/sub/catalog/sub/models/.meta/node.yml', '''
+          node:
+            template: catalog/models/landing
+            children:
+              template: catalog/models/producer
+              children:
+                template: catalog/models/family
+          ''')
+
+          write('docs/sub/catalog/sub/models/.meta/requirements.md', '''
+          # Documentation Requirements
+
+          ## Requirements
+
+          - Own canonical factual model documentation directly under `catalog/models/`.
+          - Treat every first-level child as a model-domain producer or stable publishing/steward namespace; do not create task, modality, architecture, license, access, benchmark, recommendation, or lifecycle sibling roots.
+          - Preserve the producer -> family -> optional series -> model -> version/artifact identity hierarchy, omitting structural levels that are not meaningful.
+          - Keep the model-domain producer namespace distinct from the canonical producer profile under `catalog/producers/`; preserve explicit producer relations rather than inferring exclusive authorship from placement.
+          - Keep provider access, hosted offerings, runtimes, deployment routes, and other non-model entities with their canonical service/software owners.
+          - Keep model comparison, recommendation, hardware-fit, scenario, and portfolio decisions under `decision-support/` and link canonical model facts instead of duplicating them.
+          - Keep supported technical facts traceable to authoritative or upstream references.
+          - Preserve total and active parameters as distinct facts when both materially describe a model; do not infer unpublished expert/routing values from names or arithmetic.
+
+          ## Validation
+
+          - Every materialized producer/family/series/model/version/artifact entity has a path-derived `entity.id` matching its current canonical node.
+          - Model relations resolve to current canonical entity IDs and required bidirectional endpoints remain synchronized.
+          - No `catalog/models/reference/` or `catalog/models/selection/` ownership path remains in canonical metadata.
+          - Decision-support conclusions are not represented as intrinsic model facts.
+          ''')
+
+          # 5. Materialize canonical decision-support ownership inputs only; no rendered README output.
+          write('docs/sub/decision-support/.meta/entity.yml', '''
+          entity:
+            id: decision-support
+            type: decision-support-index
+            name: Decision Support
+          ''')
+          write('docs/sub/decision-support/.meta/node.yml', '''
+          node:
+            template: decision-support/landing
+          ''')
+          write('docs/sub/decision-support/.meta/requirements.md', '''
+          # Documentation Requirements
+
+          ## Requirements
+
+          - Own derived reader-oriented comparisons, selections, recommendations, scenarios, portfolios, and bounded trade-off material whose primary purpose is helping a reader make a decision.
+          - Keep canonical entity facts in `catalog/`, reusable abstract subjects in `concepts/`, pedagogy in `learning/`, and source evidence/results with their selected evidence owner.
+          - Group known decision targets under `selection/`; keep combined-context journeys under sibling `scenarios/`.
+          - Link canonical facts and evidence instead of copying them into a second factual source.
+          - Keep applicability, assumptions, uncertainty, verification conditions, and re-evaluation triggers explicit when mutable facts materially affect a decision.
+
+          ## Validation
+
+          - `selection/` and `scenarios/` remain semantically distinct starting journeys.
+          - Decision-support pages do not become alternate canonical entity profiles or evidence records.
+          - Empty child trees are not materialized for symmetry.
+          ''')
+
+          write('docs/sub/decision-support/sub/selection/.meta/entity.yml', '''
+          entity:
+            id: decision-support/selection
+            type: decision-support-selection-index
+            name: Selection
+          ''')
+          write('docs/sub/decision-support/sub/selection/.meta/node.yml', '''
+          node:
+            template: decision-support/selection/landing
+          ''')
+          write('docs/sub/decision-support/sub/selection/.meta/requirements.md', '''
+          # Documentation Requirements
+
+          ## Requirements
+
+          - Group decision support where the class of thing being selected is already known.
+          - Keep currently materialized model-selection content under `models/`.
+          - Treat `software/` as a logically selected future decision target, but do not materialize it or infer deeper software-selection children until its researched taxonomy is owner-approved.
+          - Do not add services, hardware, solutions, or another target merely for symmetry.
+
+          ## Validation
+
+          - Every physical selection target has substantive content or navigation value.
+          - Selection pages link canonical entity owners and evidence rather than duplicating them.
+          ''')
+
+          write('docs/sub/decision-support/sub/selection/sub/models/.meta/entity.yml', '''
+          entity:
+            id: decision-support/selection/models
+            type: model-selection-index
+            name: Model Selection
+          ''')
+          write('docs/sub/decision-support/sub/selection/sub/models/.meta/node.yml', '''
+          node:
+            template: decision-support/selection/models/landing
+            children:
+              template: decision-support/selection/models/guide
+              children:
+                template: decision-support/selection/models/guide
+          ''')
+          write('docs/sub/decision-support/sub/selection/sub/models/.meta/requirements.md', '''
+          # Documentation Requirements
+
+          ## Requirements
+
+          - Own model-specific selection through the materialized `decision-guides/` and `hardware/` journeys.
+          - Use `decision-guides/` when the reader already knows the task, need, material model constraint, or portfolio decision.
+          - Use `hardware/` when hardware is already owned/fixed and the primary question is which models are practically viable on it; do not turn this into hardware purchasing guidance.
+          - Route combined personal, professional, team, or organization situations to sibling `decision-support/scenarios/` rather than duplicating scenarios under model selection.
+          - Define assignment, acceptance criteria, constraints, exact candidate identity, evidence basis, material runtime/deployment assumptions, trade-offs, and re-evaluation triggers for concrete recommendations.
+          - Link canonical model facts from `catalog/models/` and preserve provider/evidence boundaries.
+          - Prefer the least complex and least costly plausible route that satisfies the defined acceptance contract; escalate only when evidence or another material constraint justifies it.
+
+          ## Validation
+
+          - `decision-guides/` and `hardware/` answer distinct starting questions.
+          - No user-scenario child is materialized under model selection.
+          - Canonical model/hardware/software/service facts are linked rather than duplicated.
+          ''')
+
+          # 6. Generalize scenario root ownership while preserving existing leaf material.
+          write('docs/sub/decision-support/sub/scenarios/.meta/entity.yml', '''
+          entity:
+            id: decision-support/scenarios
+            type: user-scenario-index
+            name: Decision Support Scenarios
+          ''')
+          write('docs/sub/decision-support/sub/scenarios/.meta/node.yml', '''
+          node:
+            template: decision-support/scenarios/index
+            children:
+              template: decision-support/scenarios/index
+              children:
+                template: decision-support/scenarios/scenario
+          ''')
+          write('docs/sub/decision-support/sub/scenarios/.meta/requirements.md', '''
+          # Documentation Requirements
+
+          ## Requirements
+
+          - Start from a recognizable combined situation rather than from a preselected entity class.
+          - Group scenarios by `personal/`, `professionals/`, `teams/`, and `organizations/` decision scale.
+          - Let material tasks, existing hardware, budget, skills, privacy/data boundaries, services, deployment preferences, operations, and failure severity jointly shape the recommended route.
+          - A scenario may coordinate models, software, services, hardware constraints, deployment choices, or operating policies when those are material to the decision.
+          - Keep canonical model/software/service/hardware facts with their catalog owners and link them instead of copying complete profiles.
+          - Keep mutable recommendation inputs source-backed and record verification/re-evaluation boundaries when availability, pricing, runtime support, limits, or provider terms matter.
+          - Do not create empty scenario leaves merely because they exist in the logical map.
+
+          ## Validation
+
+          - Scenario ancestry reflects audience/decision scale rather than a single constraint such as local/cloud, budget, privacy, or VRAM.
+          - Scenario pages do not become duplicate catalog profiles, benchmark records, or complete solution-architecture monoliths.
+          - Existing scenario leaves keep path-derived IDs under `decision-support/scenarios/...`.
+          ''')
+
+          # Keep group labels from falsely claiming model-only ownership after the owner move.
+          scenarios_root = Path('docs/sub/decision-support/sub/scenarios')
+          for entity_file in scenarios_root.glob('sub/*/.meta/entity.yml'):
+              text = entity_file.read_text(encoding='utf-8')
+              text = text.replace('Model Selection', 'Decision Support')
+              text = text.replace('Model User Scenarios', 'Decision Support Scenarios')
+              entity_file.write_text(text, encoding='utf-8')
+
+          # 7. Rewrite template contracts whose ownership changed semantically.
+          write('docs/.meta/templates/pages/catalog/models/landing.md', '''
+          # Models Catalog Landing Page
+
+          ## Description
+
+          Entry page for canonical factual model documentation.
+
+          ## Purpose
+
+          Orient readers to producer-namespaced model families, optional series, concrete models, versions, artifacts, lineage, and source-backed technical facts.
+
+          ## Use When
+
+          Use for `catalog/models/`.
+
+          ## Do Not Use When
+
+          Do not use for model recommendations, rankings, user scenarios, fixed-hardware selection, software/service choice, or benchmark-result ownership.
+
+          ## Owns
+
+          - factual model-catalog orientation;
+          - producer -> family -> optional series -> model -> version/artifact identity boundary;
+          - child navigation to materialized model-domain producer/steward namespaces;
+          - boundary to canonical producer profiles and external decision support.
+
+          ## Does Not Own
+
+          - recommendation conclusions or scenario routes;
+          - full producer organization profiles;
+          - provider/service or runtime/software identity;
+          - abstract model concepts or pedagogy.
+
+          ## Expected Inputs
+
+          Requirement-approved factual orientation, validated direct-child projection, and canonical ownership-boundary explanation.
+
+          ## Composition
+
+          1. default header;
+          2. concise factual model-catalog orientation;
+          3. producer-first identity boundary;
+          4. child navigation to materialized producer/steward namespaces;
+          5. concise links/boundaries to producer profiles and decision support when useful.
+
+          ## Representative Example
+
+          - `docs/sub/catalog/sub/models/`
+          ''')
+
+          # Rename remaining factual template language without changing its factual semantics.
+          for name in factual_templates:
+              path = Path(f'docs/.meta/templates/pages/catalog/models/{name}.md')
+              text = path.read_text(encoding='utf-8')
+              text = text.replace('Model Reference', 'Model Catalog')
+              path.write_text(text, encoding='utf-8')
+
+          write('docs/.meta/templates/pages/decision-support/landing.md', '''
+          # Decision Support Landing Page
+
+          ## Description
+
+          Entry page for AI Lab decision-oriented material.
+
+          ## Purpose
+
+          Route readers either to selection by a known decision target or to a combined-context scenario.
+
+          ## Use When
+
+          Use for `decision-support/`.
+
+          ## Owns
+
+          - concise distinction between `selection/` and `scenarios/`;
+          - decision-support ownership/evidence boundary;
+          - navigation to materialized decision journeys.
+
+          ## Does Not Own
+
+          - canonical entity facts;
+          - benchmark or experiment records;
+          - abstract concepts or pedagogy.
+          ''')
+
+          write('docs/.meta/templates/pages/decision-support/selection/landing.md', '''
+          # Selection Landing Page
+
+          ## Description
+
+          Entry page for decision support where the class of thing being selected is known.
+
+          ## Purpose
+
+          Route readers to materialized selection targets without mirroring factual catalog taxonomies.
+
+          ## Use When
+
+          Use for `decision-support/selection/`.
+
+          ## Owns
+
+          - known-target selection orientation;
+          - child navigation to substantive materialized targets;
+          - boundary to sibling combined-context scenarios.
+
+          ## Does Not Own
+
+          - canonical entity profiles;
+          - empty future targets created for symmetry.
+          ''')
+
+          write('docs/.meta/templates/pages/decision-support/selection/models/landing.md', '''
+          # Model Selection Landing Page
+
+          ## Description
+
+          Entry page for model-specific decision support.
+
+          ## Purpose
+
+          Route readers to task/need/portfolio decision guides or model selection for already-owned/fixed hardware.
+
+          ## Use When
+
+          Use for `decision-support/selection/models/`.
+
+          ## Do Not Use When
+
+          Do not use for canonical model facts, combined-context scenarios, hardware purchasing, software/service selection, or complete solution architecture.
+
+          ## Owns
+
+          - model-selection methodology at orientation level;
+          - distinction between `decision-guides/` and `hardware/`;
+          - evidence-state and exact-identity expectations;
+          - boundary to sibling `decision-support/scenarios/` and canonical `catalog/models/`.
+
+          ## Composition
+
+          1. default header;
+          2. concise model-selection orientation;
+          3. routing between task/need/portfolio and fixed-hardware journeys;
+          4. common evidence and exact-identity principles;
+          5. child navigation to materialized model-selection areas;
+          6. links to scenarios and canonical model facts when useful.
+          ''')
+
+          write('docs/.meta/templates/pages/decision-support/selection/models/guide.md', '''
+          # Model Selection Guide Page
+
+          ## Description
+
+          Reusable decision-support page for a concrete task family, model-team problem, portfolio decision, or other bounded model-selection assignment.
+
+          ## Purpose
+
+          Lead a reader from an explicit assignment and constraints through evidence and trade-offs to a bounded, reviewable recommendation or evaluation route.
+
+          ## Use When
+
+          Use when the primary job is choosing, evaluating, routing, or combining exact model identities for a defined purpose.
+
+          ## Does Not Own
+
+          - canonical model facts from `catalog/models/`;
+          - provider claims presented as independent verification;
+          - unrelated infrastructure architecture;
+          - universal model qualities detached from assignment conditions.
+
+          ## Composition
+
+          1. default header;
+          2. assignment and success criteria;
+          3. material constraints and assumptions;
+          4. evaluation dimensions and evidence rules;
+          5. exact candidates or portfolio roles linked to canonical model facts;
+          6. trade-offs, limitations, and conflicts;
+          7. bounded recommendation, shortlist, escalation route, or unresolved outcome;
+          8. re-evaluation triggers and date-sensitive assumptions.
+          ''')
+
+          write('docs/.meta/templates/pages/decision-support/scenarios/index.md', '''
+          # Decision Support Scenarios Index Page
+
+          ## Description
+
+          Index page for the scenario root and its audience/decision-scale groups.
+
+          ## Purpose
+
+          Help readers navigate from a combined real-world situation to a materialized scenario whose context genuinely changes the recommended route.
+
+          ## Use When
+
+          Use for `decision-support/scenarios/` and its `personal/`, `professionals/`, `teams/`, and `organizations/` group nodes.
+
+          ## Do Not Use When
+
+          Do not use for a concrete scenario leaf, known-target selection guide, or canonical catalog entity.
+
+          ## Owns
+
+          - scenario method or audience-group boundary appropriate to the current node;
+          - concise explanation of dimensions that distinguish scenarios;
+          - validated child navigation;
+          - routing to known-target selection when one entity class becomes the primary decision.
+
+          ## Does Not Own
+
+          - detailed recommendations belonging to child scenarios;
+          - canonical model/software/service/hardware facts;
+          - unmaterialized logical scenario destinations.
+          ''')
+
+          write('docs/.meta/templates/pages/decision-support/scenarios/scenario.md', '''
+          # Decision Support Scenario Page
+
+          ## Description
+
+          Combined-context decision-support page for one concrete user, professional, team, or organization scenario.
+
+          ## Purpose
+
+          Lead a reader from a recognizable situation and constraints through credible routes, trade-offs, boundaries, and escalation triggers while linking canonical owners instead of duplicating them.
+
+          ## Use When
+
+          Use when persona/scale plus multiple tasks, hardware, budget, skills, privacy/data boundaries, software/services, deployment preferences, or operational constraints materially change the recommended route.
+
+          ## Do Not Use When
+
+          Do not use when one known entity class and bounded task determines the choice, the page is a canonical entity profile, or it is a complete solution-architecture specification.
+
+          ## Owns
+
+          - scenario fit and starting environment;
+          - material goals, constraints, and success criteria;
+          - recommended starting route and credible alternatives;
+          - route-level trade-offs, data-boundary implications, cost/operations/review needs;
+          - escalation/change-route triggers;
+          - verification boundaries for mutable recommendation inputs.
+
+          ## Does Not Own
+
+          - canonical model/software/service/hardware identity or intrinsic facts;
+          - generic rankings;
+          - complete infrastructure or application architecture.
+
+          ## Composition
+
+          1. standard header and scenario fit;
+          2. starting environment, goals, and constraints;
+          3. recommended route and materially different alternatives;
+          4. trade-offs, data boundary, operations, cost, and verification needs;
+          5. relevant known-target selection continuations;
+          6. escalation/change-route triggers;
+          7. canonical entity and evidence links.
+          ''')
+
+          # Final replacement pass covers new/re-written files too.
+          for path in Path('docs').rglob('*'):
+              if not path.is_file() or '.meta' not in path.parts:
+                  continue
+              if path.suffix.lower() not in {'.md', '.yml', '.yaml'}:
+                  continue
+              text = path.read_text(encoding='utf-8')
+              updated = text
+              for old, new in replacements:
+                  updated = updated.replace(old, new)
+              if updated != text:
+                  path.write_text(updated, encoding='utf-8')
+          PY
+
+          # 8. Verify path-derived entity IDs and template resolution for affected roots.
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+          import sys
+
+          errors = []
+
+          def logical_id(entity_file):
+              node_dir = entity_file.parent.parent
+              rel = node_dir.relative_to(Path('docs/sub'))
+              return '/'.join(part for part in rel.parts if part != 'sub')
+
+          affected = [Path('docs/sub/catalog/sub/models'), Path('docs/sub/decision-support')]
+          for root in affected:
+              for entity_file in root.rglob('entity.yml'):
+                  if entity_file.parent.name != '.meta':
+                      continue
+                  text = entity_file.read_text(encoding='utf-8')
+                  m = re.search(r'^\s*id:\s*([^\s#]+)', text, re.M)
+                  if not m:
+                      errors.append(f'Missing entity id: {entity_file}')
+                      continue
+                  expected = logical_id(entity_file)
+                  actual = m.group(1)
+                  if actual != expected:
+                      errors.append(f'ID mismatch: {entity_file}: {actual} != {expected}')
+
+              for node_file in root.rglob('node.yml'):
+                  if node_file.parent.name != '.meta':
+                      continue
+                  text = node_file.read_text(encoding='utf-8')
+                  for template in re.findall(r'^\s*template:\s*([^\s#]+)', text, re.M):
+                      target = Path('docs/.meta/templates/pages') / f'{template}.md'
+                      if not target.exists():
+                          errors.append(f'Missing template {template} referenced by {node_file}')
+
+          old_markers = [
+              'catalog/models/reference',
+              'catalog/models/selection',
+              'docs/sub/catalog/sub/models/sub/reference',
+              'docs/sub/catalog/sub/models/sub/selection',
+              'docs/sub/decision-support/sub/models',
+          ]
+          for path in Path('docs').rglob('*'):
+              if not path.is_file() or '.meta' not in path.parts:
+                  continue
+              if path.suffix.lower() not in {'.md', '.yml', '.yaml'}:
+                  continue
+              text = path.read_text(encoding='utf-8')
+              for marker in old_markers:
+                  if marker in text:
+                      errors.append(f'Old canonical marker {marker!r} remains in {path}')
+
+          if Path('docs/sub/decision-support/sub/models').exists():
+              errors.append('Wrong decision-support/models path still exists')
+          if not Path('docs/sub/decision-support/sub/selection/sub/models').exists():
+              errors.append('Approved decision-support/selection/models path is missing')
+          if Path('docs/sub/catalog/sub/models/sub/reference').exists():
+              errors.append('Old catalog/models/reference wrapper still exists')
+          if Path('docs/sub/decision-support/sub/selection/sub/software').exists():
+              errors.append('Unapproved empty software-selection node was materialized')
+
+          if errors:
+              print('\n'.join(errors))
+              sys.exit(1)
+
+          print('Affected entity IDs and template references are consistent.')
+          PY
+
+          # 9. README/localization content must not be edited; structural R100 renames are allowed.
+          python3 <<'PY'
+          import os
+          import subprocess
+          import sys
+
+          base = os.environ['BASE']
+          out = subprocess.check_output(
+              ['git', 'diff', '--name-status', '-M100', base, '--'], text=True
+          )
+          errors = []
+          for line in out.splitlines():
+              parts = line.split('\t')
+              status = parts[0]
+              paths = parts[1:]
+              if any(p.endswith('/README.md') or p == 'README.md' for p in paths):
+                  if status != 'R100':
+                      errors.append(f'README content change is not allowed: {line}')
+              if any('/l10n/' in f'/{p}/' for p in paths):
+                  if status != 'R100':
+                      errors.append(f'Localization content change is not allowed: {line}')
+          if errors:
+              print('\n'.join(errors))
+              sys.exit(1)
+          print('README and localization contents were not edited.')
+          PY
+
+          # 10. Report remaining full-repository old-path references for follow-up classification.
+          echo '--- Remaining repository-wide old-path references (informational) ---'
+          git grep -n -E 'catalog/models/reference|catalog/models/selection|docs/sub/decision-support/sub/models' -- . ':!docs/**/.meta/**' || true
+
+          # The temporary workflow must not survive the repair commit.
+          git rm -f .github/workflows/temporary-migration-repair.yml
+
+          git diff --check
+          git status --short
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Repair model and decision-support migration metadata'
+          git push origin HEAD:batch/ai-lab-documentation-structure/005-add-assistant-workspaces
