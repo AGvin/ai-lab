@@ -2,9 +2,9 @@
 
 ## Requirements
 
-- Present AI Use and Interaction as the learning area for transferable skills for working effectively with AI systems as a user/practitioner: conversations, prompts/instructions, context, research/verification, repeatable workflows, and human-AI collaboration.
+- Present AI Use and Interaction as the learning area for transferable skills for working effectively with AI systems as a user/practitioner: conversations, prompts/instructions, context, research/verification, repeatable workflows, multimodal interaction, and human-AI collaboration.
 - Keep model internals with Models, agent implementation/control with Agents and Automation, and concrete ChatGPT/Claude/Grok/Cursor or other product behavior with Catalog/Evidence owners.
-- Explain that the currently materialized children include `workflow-design/` for source-backed review/approval workflow teaching, `context-engineering/` for source-backed context composition, compression, persistence, and retrieval-in-context teaching, and `prompting-and-instruction-design/` for source-backed prompt structure, examples/few-shot, structured outputs, and prompt evaluation/debugging teaching.
+- Explain that the currently materialized children include `assistants-and-conversations/` for source-backed multimodal assistant interaction, `workflow-design/` for source-backed review/approval workflow teaching, `context-engineering/` for source-backed context composition, compression, persistence, and retrieval-in-context teaching, and `prompting-and-instruction-design/` for source-backed prompt structure, examples/few-shot, structured outputs, and prompt evaluation/debugging teaching.
 - Do not imply that unmaterialized selected AI Use and Interaction branches are absent from the logical architecture; standard navigation reflects only physical children.
 - Teach AI use through explicit goals, source/evidence quality, context/constraints, verification, review, uncertainty, and automation boundaries rather than assuming fluent output is correct or ready for consequential use.
 - Keep mutable product limits, UI behavior, commands, prices, platform support, and current feature compatibility source-backed with catalog/evidence owners.

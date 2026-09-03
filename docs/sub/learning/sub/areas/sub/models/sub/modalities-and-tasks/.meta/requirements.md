@@ -6,7 +6,7 @@
 - Keep reusable architecture, training, inference, and optimization mechanisms with their model-lifecycle owners and link them as prerequisites rather than duplicating them here.
 - Teach task-specific inputs/outputs, workflows, control surfaces, quality dimensions, failure modes, and evaluation consequences.
 - Keep concrete model identities, product UI behavior, current runtime support, licensing, and benchmark evidence with catalog/evidence owners.
-- Materialize only source-backed selected modality/task groups; the current materialized subset includes `vision/` and `audio-and-speech/`.
+- Materialize only source-backed selected modality/task groups; the current materialized subset includes `vision/`, `audio-and-speech/`, `video/`, and `multimodal/`.
 
 ## Validation
 
