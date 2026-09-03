@@ -19,7 +19,7 @@
 - Do not collapse recommendation, evidence, deployment context, classification, price, benchmark, or reliability outcomes into one unsupported aggregate score.
 - Use recommendation labels only as task- and evidence-bounded conclusions, never intrinsic model properties.
 - Evaluate terminal acceptance and workload-specific failure modes rather than selecting from parameter count, one benchmark, token price, TOPS, or provider positioning alone.
-- Treat reliability as assignment-specific and bind it to exact model/version/artifact or hosted snapshot, task class, quality tier, representative input distribution, acceptance criteria, verification design, and behavior-affecting runtime conditions.
+- Treat reliability as assignment-specific and bound it to exact model/version/artifact or hosted snapshot, task class, quality tier, representative input distribution, acceptance criteria, verification design, and behavior-affecting runtime conditions.
 - Require separate reliability evidence when material profile conditions change; do not transfer reliability across quantizations, hosted/local routes, unrelated tasks, or quality tiers without evidence.
 - Preserve observable reliability dimensions where relevant: strengths, recurring failure signatures, omitted-requirement risk, premature-completion risk, correction behavior, useful retry count, quality ceiling, unsuitable tasks, failure-severity limits, and required independent validation.
 - Treat worker self-report as insufficient terminal-acceptance proof when artifacts, deterministic checks, tool results, provider state, or independent QC can verify the claim.
