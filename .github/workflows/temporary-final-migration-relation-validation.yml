@@ -1,0 +1,126 @@
+name: Temporary final migration and relation validation
+
+on:
+  push:
+    branches:
+      - batch/ai-lab-documentation-structure/005-add-assistant-workspaces
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate migration and complete relation graph
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --disable-pip-version-check -q pyyaml
+          python3 <<'PY'
+          from pathlib import Path
+          from collections import defaultdict, Counter
+          import re, sys, yaml, json
+
+          ROOT=Path.cwd(); DOCS=ROOT/'docs'
+          inverse={
+            'owns':'owned-by','owned-by':'owns','parent-of':'child-of','child-of':'parent-of',
+            'has-part':'part-of','part-of':'has-part','has-member':'member-of','member-of':'has-member',
+            'produces':'produced-by','produced-by':'produces','maintains':'maintained-by','maintained-by':'maintains',
+            'operates':'operated-by','operated-by':'operates','has-discovery-resource':'discovery-resource-for',
+            'discovery-resource-for':'has-discovery-resource','has-version':'version-of','version-of':'has-version',
+            'has-artifact':'artifact-of','artifact-of':'has-artifact','has-derivative':'derived-from','derived-from':'has-derivative',
+          }
+          errors=[]; entities=[]
+          for f in sorted(DOCS.rglob('entity.yml')):
+            relpath=f.relative_to(ROOT).as_posix()
+            if '/l10n/' in '/'+relpath+'/' or f.parent.name!='.meta': continue
+            try:
+              doc=yaml.safe_load(f.read_text(encoding='utf-8')) or {}
+            except Exception as e:
+              errors.append(f'YAML parse error {relpath}: {e}'); continue
+            ent=doc.get('entity')
+            if not isinstance(ent,dict): errors.append(f'Missing entity mapping: {relpath}'); continue
+            entities.append((f,relpath,ent))
+
+          byid=defaultdict(list)
+          for f,p,e in entities:
+            eid=e.get('id')
+            if not isinstance(eid,str): errors.append(f'Missing/string entity.id: {p}'); continue
+            byid[eid].append((f,p,e))
+            try:
+              rel=f.parent.parent.relative_to(DOCS/'sub')
+              expected='/'.join(x for x in rel.parts if x!='sub')
+              if eid!=expected: errors.append(f'Path/id mismatch: {p}: {eid} != {expected}')
+            except ValueError:
+              pass
+          for eid,xs in byid.items():
+            if len(xs)!=1: errors.append(f'Duplicate ID {eid}: {[x[1] for x in xs]}')
+          index={eid:xs[0] for eid,xs in byid.items() if len(xs)==1}
+
+          edges=[]; edgecount=defaultdict(int)
+          for f,p,e in entities:
+            src=e.get('id'); rels=e.get('relations') or []
+            if not isinstance(rels,list): errors.append(f'relations not list: {p}'); continue
+            for i,r in enumerate(rels):
+              if not isinstance(r,dict): errors.append(f'relation not mapping {p}#{i}'); continue
+              typ=r.get('type'); target=r.get('target')
+              if typ not in inverse: errors.append(f'Unknown relation type {typ} at {p}#{i}')
+              if not isinstance(target,str):
+                errors.append(f'Non-scalar canonical target at {p}#{i}: {target!r}'); continue
+              if target not in index: errors.append(f'Dangling target {target} from {src} --{typ}-->')
+              if src==target: errors.append(f'Self edge {src} --{typ}--> {target}')
+              key=(src,typ,target); edgecount[key]+=1; edges.append(key)
+          for k,n in edgecount.items():
+            if n!=1: errors.append(f'Duplicate relation endpoint {k} x{n}')
+          eset=set(edges)
+          for src,typ,target in edges:
+            if target in index and typ in inverse and (target,inverse[typ],src) not in eset:
+              errors.append(f'Missing inverse for {src} --{typ}--> {target}; expected {target} --{inverse[typ]}--> {src}')
+
+          for f in sorted(DOCS.rglob('node.yml')):
+            relpath=f.relative_to(ROOT).as_posix()
+            if '/l10n/' in '/'+relpath+'/': continue
+            try: txt=f.read_text(encoding='utf-8')
+            except Exception as e: errors.append(f'Cannot read node {relpath}: {e}'); continue
+            for t in re.findall(r'^\s*template:\s*([^\s#]+)',txt,re.M):
+              if not (DOCS/'.meta/templates/pages'/f'{t}.md').exists(): errors.append(f'Missing template {t} referenced by {relpath}')
+
+          if (DOCS/'sub/notes').exists(): errors.append('docs/sub/notes still exists')
+          required=[
+            DOCS/'sub/catalog/sub/services/sub/benchmarking/.meta/entity.yml',
+            DOCS/'sub/catalog/sub/services/sub/benchmarking/sub/llm-stats/.meta/entity.yml',
+            DOCS/'sub/decision-support/sub/selection/sub/software/.meta/entity.yml',
+            DOCS/'sub/decision-support/sub/selection/sub/software/sub/agentic-systems/.meta/entity.yml',
+          ]
+          for p in required:
+            if not p.exists(): errors.append(f'Missing migrated canonical node: {p}')
+
+          hf='catalog/producers/h/hugging-face-inc'; ggml='catalog/producers/g/ggml-ai'
+          if (hf,'has-part',ggml) not in eset or (ggml,'part-of',hf) not in eset:
+            errors.append('Corrected Hugging Face <-> ggml part relation is missing')
+          if (hf,'owns',ggml) in eset or (ggml,'owned-by',hf) in eset:
+            errors.append('Superseded Hugging Face <-> ggml ownership relation remains')
+
+          counts=Counter(t for _,t,_ in edges)
+          summary={'entities':len(entities),'relations':len(edges),'relation_type_counts':dict(sorted(counts.items())),'errors':len(errors)}
+          print(json.dumps(summary,indent=2))
+          if errors:
+            print('\n'.join(errors)); sys.exit(1)
+          print('FINAL_VALIDATION_OK')
+          PY
+          git grep -n -I -E 'docs/sub/notes|notes/sub/(benchmarks|comparisons)|(\.\./)+notes/|/notes/' -- . ':!README_legacy.md' ':!.github/workflows/temporary-final-migration-relation-validation.yml' && { echo 'Active notes reference remains' >&2; exit 1; } || true
+          git diff --check
+      - name: Remove temporary workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rm -f .github/workflows/temporary-final-migration-relation-validation.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Remove temporary final validation workflow'
+          git push origin HEAD:batch/ai-lab-documentation-structure/005-add-assistant-workspaces
