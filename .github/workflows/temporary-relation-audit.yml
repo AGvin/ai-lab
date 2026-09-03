@@ -1,0 +1,240 @@
+name: Temporary full relation audit
+
+on:
+  push:
+    branches:
+      - batch/ai-lab-documentation-structure/005-add-assistant-workspaces
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build full relation graph report
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --disable-pip-version-check -q pyyaml
+          python3 <<'PY'
+          from pathlib import Path
+          from collections import Counter, defaultdict
+          import json
+          import os
+          import yaml
+
+          ROOT = Path.cwd()
+          DOCS = ROOT / 'docs'
+          inverse = {
+              'owns': 'owned-by', 'owned-by': 'owns',
+              'parent-of': 'child-of', 'child-of': 'parent-of',
+              'has-part': 'part-of', 'part-of': 'has-part',
+              'has-member': 'member-of', 'member-of': 'has-member',
+              'produces': 'produced-by', 'produced-by': 'produces',
+              'maintains': 'maintained-by', 'maintained-by': 'maintains',
+              'operates': 'operated-by', 'operated-by': 'operates',
+              'has-discovery-resource': 'discovery-resource-for', 'discovery-resource-for': 'has-discovery-resource',
+              'has-version': 'version-of', 'version-of': 'has-version',
+              'has-artifact': 'artifact-of', 'artifact-of': 'has-artifact',
+              'has-derivative': 'derived-from', 'derived-from': 'has-derivative',
+          }
+
+          files = []
+          entities = []
+          parse_errors = []
+          for f in sorted(DOCS.rglob('entity.yml')):
+              rels = f.relative_to(ROOT).as_posix()
+              if '/l10n/' in '/' + rels + '/':
+                  continue
+              if f.parent.name != '.meta':
+                  continue
+              files.append(f)
+              try:
+                  doc = yaml.safe_load(f.read_text(encoding='utf-8')) or {}
+                  ent = doc.get('entity')
+                  if not isinstance(ent, dict):
+                      parse_errors.append({'file': rels, 'error': 'missing entity mapping'})
+                      continue
+                  entities.append({'file': f, 'path': rels, 'data': ent})
+              except Exception as e:
+                  parse_errors.append({'file': rels, 'error': str(e)})
+
+          by_id = defaultdict(list)
+          for item in entities:
+              eid = item['data'].get('id')
+              if isinstance(eid, str):
+                  by_id[eid].append(item)
+
+          duplicate_ids = {eid:[x['path'] for x in xs] for eid,xs in by_id.items() if len(xs)>1}
+          id_index = {eid:xs[0] for eid,xs in by_id.items() if len(xs)==1}
+
+          path_mismatches=[]
+          for item in entities:
+              f=item['file']; eid=item['data'].get('id')
+              node=f.parent.parent
+              try:
+                  rel=node.relative_to(DOCS/'sub')
+              except ValueError:
+                  continue
+              expected='/'.join(p for p in rel.parts if p!='sub')
+              if eid != expected:
+                  path_mismatches.append({'file':item['path'],'actual':eid,'expected':expected})
+
+          def resolve_path(owner_file, raw):
+              p=(owner_file.parent / raw).resolve()
+              candidates=[]
+              if p.name == 'entity.yml': candidates.append(p)
+              if p.name == '.meta': candidates.append(p/'entity.yml')
+              candidates.append(p/'.meta/entity.yml')
+              for c in candidates:
+                  if c.exists():
+                      try:
+                          d=yaml.safe_load(c.read_text(encoding='utf-8')) or {}
+                          e=d.get('entity') or {}
+                          return e.get('id'), c.relative_to(ROOT).as_posix()
+                      except Exception:
+                          return None, c.relative_to(ROOT).as_posix()
+              return None, p.as_posix()
+
+          edges=[]; dangling=[]; malformed=[]; duplicates=[]; self_edges=[]; unknown=[]
+          edge_keys=defaultdict(list)
+          for item in entities:
+              src=item['data'].get('id'); rels=item['data'].get('relations') or []
+              if not isinstance(rels,list):
+                  malformed.append({'file':item['path'],'error':'relations is not a list'})
+                  continue
+              for idx,r in enumerate(rels):
+                  if not isinstance(r,dict):
+                      malformed.append({'file':item['path'],'index':idx,'error':'relation is not a mapping'})
+                      continue
+                  typ=r.get('type'); target=r.get('target'); target_id=None; locator=''
+                  if isinstance(target,str):
+                      target_id=target; locator='scalar-id'
+                  elif isinstance(target,dict):
+                      keys=[k for k in ('id','path') if k in target]
+                      if len(keys)!=1:
+                          malformed.append({'file':item['path'],'index':idx,'error':'target object must contain exactly one of id/path','relation':r})
+                      elif keys[0]=='id':
+                          target_id=target.get('id'); locator='object-id'
+                      else:
+                          target_id,resolved=resolve_path(item['file'], target.get('path'))
+                          locator='object-path:'+str(target.get('path'))+' -> '+str(resolved)
+                  else:
+                      malformed.append({'file':item['path'],'index':idx,'error':'target must be scalar id or object','relation':r})
+                  edge={'source':src,'source_file':item['path'],'type':typ,'target':target_id,'locator':locator,'order':r.get('order'),'hidden':r.get('hidden')}
+                  edges.append(edge)
+                  if typ not in inverse:
+                      unknown.append(edge)
+                  if not isinstance(target_id,str) or target_id not in id_index:
+                      dangling.append(edge)
+                  if src == target_id and isinstance(src,str):
+                      self_edges.append(edge)
+                  key=(src,typ,target_id)
+                  edge_keys[key].append(edge)
+
+          for key,xs in edge_keys.items():
+              if len(xs)>1:
+                  duplicates.append({'key':key,'edges':xs})
+
+          missing_inverse=[]
+          edge_set={(e['source'],e['type'],e['target']) for e in edges if e['type'] in inverse and isinstance(e['target'],str)}
+          for e in edges:
+              if e['type'] not in inverse or e['target'] not in id_index:
+                  continue
+              want=(e['target'], inverse[e['type']], e['source'])
+              if want not in edge_set:
+                  missing_inverse.append({'edge':e,'expected':{'source':want[0],'type':want[1],'target':want[2]}})
+
+          counts=Counter(e['type'] for e in edges)
+          pair_groups=defaultdict(list)
+          canonical_pairs=[]
+          seen=set()
+          for a,b in inverse.items():
+              key=tuple(sorted((a,b)))
+              if key in seen: continue
+              seen.add(key); canonical_pairs.append((a,b))
+          for e in edges:
+              inv=inverse.get(e['type'])
+              pair='UNKNOWN:'+str(e['type']) if inv is None else ' / '.join(sorted((e['type'],inv)))
+              pair_groups[pair].append(e)
+
+          suspicious=[]
+          for e in edges:
+              s=e['source'] or ''; t=e['target'] or ''; typ=e['type']
+              reasons=[]
+              if typ=='produced-by' and not t.startswith('catalog/producers/'):
+                  reasons.append('produced-by target is outside catalog/producers')
+              if typ=='produces' and not s.startswith('catalog/producers/'):
+                  reasons.append('produces source is outside catalog/producers')
+              if typ in ('has-discovery-resource','discovery-resource-for'):
+                  reasons.append('provisional discovery-resource pair requires semantic review')
+              if typ in ('owns','owned-by','parent-of','child-of','has-part','part-of','maintains','maintained-by','operates','operated-by','has-derivative','derived-from'):
+                  reasons.append('high-semantic-specificity pair requires explicit review')
+              if reasons:
+                  suspicious.append({'edge':e,'reasons':reasons})
+
+          report={
+              'summary':{
+                  'entity_files':len(files), 'parsed_entities':len(entities), 'unique_ids':len(id_index),
+                  'relation_records':len(edges), 'relation_type_counts':dict(sorted(counts.items())),
+                  'parse_errors':len(parse_errors), 'duplicate_ids':len(duplicate_ids), 'path_mismatches':len(path_mismatches),
+                  'malformed_relations':len(malformed), 'dangling_targets':len(dangling), 'duplicate_endpoint_edges':len(duplicates),
+                  'self_edges':len(self_edges), 'unknown_relation_types':len(unknown), 'missing_inverses':len(missing_inverse),
+                  'semantic_review_candidates':len(suspicious),
+              },
+              'parse_errors':parse_errors,'duplicate_ids':duplicate_ids,'path_mismatches':path_mismatches,
+              'malformed_relations':malformed,'dangling_targets':dangling,'duplicate_endpoint_edges':duplicates,
+              'self_edges':self_edges,'unknown_relation_types':unknown,'missing_inverses':missing_inverse,
+              'semantic_review_candidates':suspicious,
+              'edges_by_pair':{k:v for k,v in sorted(pair_groups.items())},
+              'all_edges':edges,
+          }
+          Path('relation-audit.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf-8')
+
+          lines=[]
+          lines.append('FULL AI LAB RELATION AUDIT')
+          lines.append(json.dumps(report['summary'],indent=2,ensure_ascii=False))
+          lines.append('\nMECHANICAL DEFECTS')
+          for key in ('parse_errors','duplicate_ids','path_mismatches','malformed_relations','dangling_targets','duplicate_endpoint_edges','self_edges','unknown_relation_types','missing_inverses'):
+              lines.append(f'\n## {key}\n'+json.dumps(report[key],indent=2,ensure_ascii=False))
+          lines.append('\nSEMANTIC REVIEW CANDIDATES')
+          lines.append(json.dumps(suspicious,indent=2,ensure_ascii=False))
+          lines.append('\nALL EDGES BY PAIR')
+          for pair, vals in sorted(pair_groups.items()):
+              lines.append(f'\n## {pair} ({len(vals)})')
+              for e in vals:
+                  lines.append(f"{e['source']} --{e['type']}--> {e['target']} [{e['source_file']}]")
+          Path('relation-audit.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+
+          print('=== SUMMARY ===')
+          print(json.dumps(report['summary'],indent=2))
+          print('=== MECHANICAL DEFECT DETAILS ===')
+          print(json.dumps({k:report[k] for k in ('parse_errors','duplicate_ids','path_mismatches','malformed_relations','dangling_targets','duplicate_endpoint_edges','self_edges','unknown_relation_types','missing_inverses')},indent=2,ensure_ascii=False))
+          print('=== SEMANTIC REVIEW CANDIDATES ===')
+          print(json.dumps(suspicious,indent=2,ensure_ascii=False))
+          PY
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: relation-audit
+          path: |
+            relation-audit.json
+            relation-audit.txt
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Remove temporary workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rm -f .github/workflows/temporary-relation-audit.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Remove temporary relation audit workflow'
+          git push origin HEAD:batch/ai-lab-documentation-structure/005-add-assistant-workspaces
