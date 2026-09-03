@@ -9,15 +9,17 @@
 - Link canonical model facts from `../reference/` instead of duplicating full model descriptions.
 - Require concrete recommendations to identify exact model/version/artifact scope, acceptance criteria, evidence basis, material runtime/deployment assumptions, and trade-offs.
 - Define the assignment or route before candidate choice, including input/output contract, quality target, failure severity, modalities, privacy/data boundary, latency/throughput, budget, and access/deployment conditions when material.
+- Start from the least complex and least costly plausible model route that can satisfy the defined acceptance contract; escalate to a stronger or more complex route only when measured accepted-result improvement or another material constraint justifies the added cost, latency, infrastructure, or operational burden.
 - Compare exact model/version/artifact identities rather than vague family names when identity affects behavior or operation.
 - Treat derived artifacts as separate evaluated selection units only when their behavior/operating constraints materially differ, while preserving their relationship to the base model.
 - Use deterministic validators before model judgment when they directly prove an acceptance property.
 - Keep provider-documented claims distinct from independent AI Lab task evidence.
 - Preserve explicit evidence states such as provider-documented, AI Lab tested, external benchmark, community report, inference, and untested; keep conflicts visible.
+- When a compact comparison surface exposes a bounded claim such as current frontier position, use explicit claim-assessment states such as `Supported`, `Not supported`, `Unclear`, or `Not assessed`; keep the verification date, evidence, assumptions, scope, and limitations attached or linked rather than turning the status into an intrinsic model property.
 - Do not collapse recommendation, evidence, deployment context, classification, price, benchmark, or reliability outcomes into one unsupported aggregate score.
 - Use recommendation labels only as task- and evidence-bounded conclusions, never intrinsic model properties.
 - Evaluate terminal acceptance and workload-specific failure modes rather than selecting from parameter count, one benchmark, token price, TOPS, or provider positioning alone.
-- Treat reliability as assignment-specific and bound it to exact model/version/artifact or hosted snapshot, task class, quality tier, representative input distribution, acceptance criteria, verification design, and behavior-affecting runtime conditions.
+- Treat reliability as assignment-specific and bind it to exact model/version/artifact or hosted snapshot, task class, quality tier, representative input distribution, acceptance criteria, verification design, and behavior-affecting runtime conditions.
 - Require separate reliability evidence when material profile conditions change; do not transfer reliability across quantizations, hosted/local routes, unrelated tasks, or quality tiers without evidence.
 - Preserve observable reliability dimensions where relevant: strengths, recurring failure signatures, omitted-requirement risk, premature-completion risk, correction behavior, useful retry count, quality ceiling, unsuitable tasks, failure-severity limits, and required independent validation.
 - Treat worker self-report as insufficient terminal-acceptance proof when artifacts, deterministic checks, tool results, provider state, or independent QC can verify the claim.
@@ -39,6 +41,8 @@
 - Selection pages do not become alternate sources of canonical model or hardware identity/facts.
 - Provider claims are not presented as independent AI Lab benchmark evidence.
 - Recommendation/reliability labels are scoped to explicit task, conditions, constraints, and evidence.
+- A stronger or more complex model route is not preferred merely by scale or prestige when a simpler measured route satisfies the acceptance contract.
+- Compact claim-assessment status does not lose its evidence scope/date or convert `Unclear` / `Not assessed` into a positive or negative claim.
 - Published artifact size, nominal VRAM/RAM/TOPS, or successful load is not presented as practical local fit evidence.
 - `hardware/` selects models for fixed hardware; it does not become a GPU/PC/SBC purchase guide or canonical hardware catalog.
 - No broad infrastructure lifecycle/failover/solution architecture is migrated into model selection merely because models are components.
