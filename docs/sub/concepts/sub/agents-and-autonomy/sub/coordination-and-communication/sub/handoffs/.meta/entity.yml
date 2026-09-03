@@ -8,7 +8,7 @@ entity:
       purposes:
         - research
       authority: official
-      note: Current OpenAI Agents SDK documentation contrasts manager-style agents-as-tools with handoffs: in a handoff the selected specialist becomes the active agent/owner for the remainder of the transferred interaction scope.
+      note: "Current OpenAI Agents SDK documentation contrasts manager-style agents-as-tools with handoffs: in a handoff the selected specialist becomes the active agent/owner for the remainder of the transferred interaction scope."
     - type: documentation
       source:
         url: https://docs.langchain.com/oss/python/langchain/multi-agent/handoffs
@@ -22,4 +22,4 @@ entity:
       purposes:
         - research
       authority: official
-      note: Current Microsoft Agent Framework documentation explicitly distinguishes handoff from agent-as-tools by control flow, task ownership, and context management: the receiving agent takes full task ownership rather than returning a bounded result to a primary agent.
+      note: "Current Microsoft Agent Framework documentation explicitly distinguishes handoff from agent-as-tools by control flow, task ownership, and context management: the receiving agent takes full task ownership rather than returning a bounded result to a primary agent."
