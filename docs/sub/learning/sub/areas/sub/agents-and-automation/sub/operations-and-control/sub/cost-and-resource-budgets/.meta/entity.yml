@@ -1,0 +1,18 @@
+entity:
+  id: learning/areas/agents-and-automation/operations-and-control/cost-and-resource-budgets
+  name: Cost and Resource Budgets
+  references:
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/core-concepts/architecture.html
+      purposes:
+        - research
+      authority: official
+      note: Exact legacy AutoGen agent-runtime architecture reference preserved from Resource Lifecycle Controller source as agent runtime/lifecycle provenance; it does not by itself substantiate provider billing or cloud resource semantics.
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/framework/distributed-agent-runtime.html
+      purposes:
+        - research
+      authority: official
+      note: Exact legacy AutoGen distributed-agent-runtime reference preserved as historical framework evidence for distributed agent runtime identity/lifecycle; mutable implementation behavior must be re-checked before current claims.
