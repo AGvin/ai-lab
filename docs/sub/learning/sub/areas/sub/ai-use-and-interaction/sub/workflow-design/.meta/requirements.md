@@ -4,8 +4,8 @@
 
 - Present Workflow Design as practical teaching for turning AI-assisted work into repeatable, reviewable sequences with explicit inputs, outputs, checkpoints, validation, human review, and automation boundaries rather than one-off prompting.
 - Keep formal planning algorithms with Reasoning and Decision Making and agent runtime orchestration with Agents and Automation; this group teaches practitioner-facing workflow design independent from one implementation framework.
-- Explain that the current materialized subset focuses on `human-review-and-approval/` because legacy HITL material has source-backed practical review/approval teaching ready for migration.
-- Do not imply that unmaterialized selected siblings `problem-framing-and-work-breakdown/`, `repeatable-workflows/`, or `automation-boundaries/` are absent from the logical architecture; standard navigation reflects only physical children.
+- Explain that the current materialized subset includes `problem-framing-and-work-breakdown/` for source-backed decomposition/verification teaching and `human-review-and-approval/` for source-backed review/approval teaching.
+- Do not imply that unmaterialized selected siblings `repeatable-workflows/` or `automation-boundaries/` are absent from the logical architecture; standard navigation reflects only physical children.
 - Teach workflow steps through explicit purpose, inputs/source evidence, expected output/effect, verification/review point, and next-state/decision responsibility where material.
 - Place manual/review steps where they can still prevent or correct a material error; a review after an irreversible effect is evidence/audit, not preventive approval.
 - Keep system-specific runtime gates, tool authorization, idempotency/retries, and live agent intervention with Agents/Engineering owners, and keep project-specific policies with project/governance owners.
