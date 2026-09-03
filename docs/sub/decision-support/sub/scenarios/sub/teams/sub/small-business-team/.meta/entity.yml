@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/teams/small-business-team
+  id: decision-support/scenarios/teams/small-business-team
   type: user-scenario
   name: Small Business Team

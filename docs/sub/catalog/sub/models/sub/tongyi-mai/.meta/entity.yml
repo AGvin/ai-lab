@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/tongyi-mai
+  id: catalog/models/tongyi-mai
   type: model-producer-view
   name: Tongyi-MAI Models
   references:

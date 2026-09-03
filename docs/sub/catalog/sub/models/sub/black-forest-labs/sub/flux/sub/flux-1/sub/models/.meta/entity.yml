@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/reference/producers/black-forest-labs/flux/flux-1/models
+  id: catalog/models/black-forest-labs/flux/flux-1/models
   type: catalog-index
   name: FLUX.1 Models

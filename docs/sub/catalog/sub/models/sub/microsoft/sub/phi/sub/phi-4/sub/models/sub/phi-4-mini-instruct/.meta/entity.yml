@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/microsoft/phi/phi-4/models/phi-4-mini-instruct
+  id: catalog/models/microsoft/phi/phi-4/models/phi-4-mini-instruct
   type: model
   name: Phi-4 Mini Instruct
   references:
@@ -12,4 +12,4 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target: catalog/models/reference/producers/microsoft/phi/phi-4
+      target: catalog/models/microsoft/phi/phi-4

@@ -147,10 +147,10 @@
 
 ## Canonical Links
 
-- Link `Qwen3-Coder 30B-A3B Instruct` to `catalog/models/reference/producers/alibaba/qwen/qwen3-coder/models/qwen3-coder-30b-a3b-instruct` when named.
-- Link `Qwen3-Coder-Next` to `catalog/models/reference/producers/alibaba/qwen/qwen3-coder/models/qwen3-coder-next` when named.
+- Link `Qwen3-Coder 30B-A3B Instruct` to `catalog/models/alibaba/qwen/qwen3-coder/models/qwen3-coder-30b-a3b-instruct` when named.
+- Link `Qwen3-Coder-Next` to `catalog/models/alibaba/qwen/qwen3-coder/models/qwen3-coder-next` when named.
 - Link compact baselines such as `Qwen2.5-Coder 7B Instruct` to their exact canonical Model Reference identities when retained.
-- Link generic coding-model evaluation to `catalog/models/selection/decision-guides/software-development` and agent complete-loop evaluation to `catalog/models/selection/decision-guides/agents-and-automation` rather than duplicating their ranking/candidate ownership.
+- Link generic coding-model evaluation to `decision-support/selection/models/decision-guides/software-development` and agent complete-loop evaluation to `decision-support/selection/models/decision-guides/agents-and-automation` rather than duplicating their ranking/candidate ownership.
 
 ## Evidence and Freshness
 

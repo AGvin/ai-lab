@@ -1,0 +1,10 @@
+entity:
+  id: decision-support/selection/models/hardware/embedded/esp32
+  type: model-selection-hardware-target
+  name: ESP32 Embedded Model Selection
+  references:
+    - type: documentation
+      source:
+        url: https://docs.espressif.com/projects/esp-dl/en/latest/
+      purposes: [research]
+      authority: official

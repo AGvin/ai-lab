@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/google/gemini
+  id: catalog/models/google/gemini
   type: model-family
   name: Gemini
   references:
@@ -22,4 +22,4 @@ entity:
     - type: produced-by
       target: catalog/producers/g/google-deepmind
     - type: has-member
-      target: catalog/models/reference/producers/google/gemini/models/gemini-3-6-flash
+      target: catalog/models/google/gemini/models/gemini-3-6-flash

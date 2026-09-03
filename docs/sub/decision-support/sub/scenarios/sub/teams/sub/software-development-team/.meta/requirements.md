@@ -171,11 +171,11 @@
 
 ## Canonical Links
 
-- Link coding-model candidates to `catalog/models/selection/decision-guides/software-development`.
-- Link agent complete-loop safeguards to `catalog/models/selection/decision-guides/agents-and-automation`.
+- Link coding-model candidates to `decision-support/selection/models/decision-guides/software-development`.
+- Link agent complete-loop safeguards to `decision-support/selection/models/decision-guides/agents-and-automation`.
 - Link exact local models to canonical Model Reference owners when named.
 - Link managed coding products to their canonical software/service owners where materialized.
-- Link centralized platform concerns to `catalog/models/selection/user-scenarios/organizations/internal-ai-platform` instead of duplicating them here.
+- Link centralized platform concerns to `decision-support/scenarios/organizations/internal-ai-platform` instead of duplicating them here.
 
 ## Evidence and Freshness
 

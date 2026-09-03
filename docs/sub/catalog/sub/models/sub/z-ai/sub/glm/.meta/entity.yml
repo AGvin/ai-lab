@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/z-ai/glm
+  id: catalog/models/z-ai/glm
   type: model-family
   name: GLM
   references:
@@ -14,4 +14,4 @@ entity:
     - type: produced-by
       target: catalog/producers/z/z-ai
     - type: has-member
-      target: catalog/models/reference/producers/z-ai/glm/models/glm-5v-turbo
+      target: catalog/models/z-ai/glm/models/glm-5v-turbo

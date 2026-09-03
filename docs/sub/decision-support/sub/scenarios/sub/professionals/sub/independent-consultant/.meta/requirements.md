@@ -155,7 +155,7 @@
 ## Canonical Links
 
 - Link commercial managed assistants to their canonical service owners when named.
-- Link `Qwen3 8B` to `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-8b` when named.
+- Link `Qwen3 8B` to `catalog/models/alibaba/qwen/qwen3/models/qwen3-8b` when named.
 - Link `Gemma 4 E2B Instruct` and `Gemma 4 E4B Instruct` to their exact canonical Model Reference identities when named.
 - Link specialized workloads to their sibling scenario/decision-guide owners instead of duplicating their detailed contracts.
 

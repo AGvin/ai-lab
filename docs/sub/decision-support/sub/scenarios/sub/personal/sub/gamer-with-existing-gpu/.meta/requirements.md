@@ -111,8 +111,8 @@
 
 ## Canonical Links
 
-- Link named current general models to canonical Model Reference identities: `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-8b`, `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-14b`, `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-30b-a3b`, and `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-32b`.
-- Link current compact multimodal candidates to `catalog/models/reference/producers/google/gemma/gemma-4/models/e2b-instruct` and `catalog/models/reference/producers/google/gemma/gemma-4/models/e4b-instruct`.
+- Link named current general models to canonical Model Reference identities: `catalog/models/alibaba/qwen/qwen3/models/qwen3-8b`, `catalog/models/alibaba/qwen/qwen3/models/qwen3-14b`, `catalog/models/alibaba/qwen/qwen3/models/qwen3-30b-a3b`, and `catalog/models/alibaba/qwen/qwen3/models/qwen3-32b`.
+- Link current compact multimodal candidates to `catalog/models/google/gemma/gemma-4/models/e2b-instruct` and `catalog/models/google/gemma/gemma-4/models/e4b-instruct`.
 - Route coding-specific model choice to the canonical coding decision guide rather than freezing a legacy coder-model recommendation in this scenario.
 - Link local runtime/software products to canonical catalog owners when named; do not duplicate their installation, backend, or complete compatibility documentation here.
 

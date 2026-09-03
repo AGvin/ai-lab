@@ -159,8 +159,8 @@
 
 ## Canonical Links
 
-- Link individual research methodology to `catalog/models/selection/user-scenarios/professionals/researcher` where needed.
-- Link structured analysis to `catalog/models/selection/user-scenarios/teams/data-analysis-team`.
+- Link individual research methodology to `decision-support/scenarios/professionals/researcher` where needed.
+- Link structured analysis to `decision-support/scenarios/teams/data-analysis-team`.
 - Link managed assistant/deep-research services to their canonical service owners when named.
 - Link organization knowledge platforms to the applicable organization scenario rather than duplicating them here.
 

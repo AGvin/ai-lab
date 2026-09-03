@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/tongyi-mai/z-image/models/z-image
+  id: catalog/models/tongyi-mai/z-image/models/z-image
   type: model
   name: Z-Image
   references:
@@ -18,6 +18,6 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target: catalog/models/reference/producers/tongyi-mai/z-image
+      target: catalog/models/tongyi-mai/z-image
     - type: has-derivative
-      target: catalog/models/reference/producers/tongyi-mai/z-image/models/z-image-turbo
+      target: catalog/models/tongyi-mai/z-image/models/z-image-turbo

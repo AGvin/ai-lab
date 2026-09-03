@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/anthropic
+  id: catalog/models/anthropic
   type: model-producer-view
   name: Anthropic models
   references:

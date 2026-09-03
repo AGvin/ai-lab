@@ -164,7 +164,7 @@
 
 ## Canonical Links
 
-- Link modality-specific model selection to `catalog/models/selection/decision-guides/media-creation` rather than duplicating model rankings here.
+- Link modality-specific model selection to `decision-support/selection/models/decision-guides/media-creation` rather than duplicating model rankings here.
 - Link named managed creative services to their canonical catalog owners when materialized.
 - Link exact open media candidates to their canonical Model Reference identities when named in rendered guidance; if an exact candidate owner is not yet materialized, keep the concrete recommendation in `media-creation` until its canonical reference exists.
 - Link specialist professional/hardware scenarios instead of duplicating their detailed contracts.

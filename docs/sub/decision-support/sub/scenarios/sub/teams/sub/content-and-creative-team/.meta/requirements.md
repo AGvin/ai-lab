@@ -185,9 +185,9 @@
 
 ## Canonical Links
 
-- Link modality-specific model selection to `catalog/models/selection/decision-guides/media-creation`.
-- Link individual production constraints to `catalog/models/selection/user-scenarios/professionals/creative-professional` where useful.
-- Link campaign/growth concerns to `catalog/models/selection/user-scenarios/teams/marketing-and-growth-team`.
+- Link modality-specific model selection to `decision-support/selection/models/decision-guides/media-creation`.
+- Link individual production constraints to `decision-support/scenarios/professionals/creative-professional` where useful.
+- Link campaign/growth concerns to `decision-support/scenarios/teams/marketing-and-growth-team`.
 - Link named services/models to their canonical catalog owners only when materialized/current.
 
 ## Evidence and Freshness

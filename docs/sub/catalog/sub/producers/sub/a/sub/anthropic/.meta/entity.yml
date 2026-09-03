@@ -19,7 +19,7 @@ entity:
       authority: official
   relations:
     - type: produces
-      target: catalog/models/reference/producers/anthropic/claude
+      target: catalog/models/anthropic/claude
     - type: produces
       target: catalog/agent-skills/collections/anthropic-skills
     - type: produces

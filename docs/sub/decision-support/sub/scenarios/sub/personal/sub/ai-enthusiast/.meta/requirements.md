@@ -102,9 +102,9 @@
 
 ## Canonical Links
 
-- Link current Qwen3 candidates to canonical Model Reference identities: `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-8b`, `.../qwen3-14b`, `.../qwen3-30b-a3b`, and `.../qwen3-32b`.
-- Link compact multimodal baselines to `catalog/models/reference/producers/google/gemma/gemma-4/models/e2b-instruct` and `catalog/models/reference/producers/google/gemma/gemma-4/models/e4b-instruct`.
-- Link the MoE anti-shortcut/current larger experiment to `catalog/models/reference/producers/mistral-ai/mistral-small/models/mistral-small-4` when named.
+- Link current Qwen3 candidates to canonical Model Reference identities: `catalog/models/alibaba/qwen/qwen3/models/qwen3-8b`, `.../qwen3-14b`, `.../qwen3-30b-a3b`, and `.../qwen3-32b`.
+- Link compact multimodal baselines to `catalog/models/google/gemma/gemma-4/models/e2b-instruct` and `catalog/models/google/gemma/gemma-4/models/e4b-instruct`.
+- Link the MoE anti-shortcut/current larger experiment to `catalog/models/mistral-ai/mistral-small/models/mistral-small-4` when named.
 - Link runtimes, hosted services, and temporary cloud services to their canonical catalog owners when named; do not duplicate complete product/runtime profiles here.
 - Route task-specific model ranking to the relevant `decision-guides/` owner and exact fixed-hardware analysis to `../../../hardware/` rather than recreating either taxonomy inside this scenario.
 

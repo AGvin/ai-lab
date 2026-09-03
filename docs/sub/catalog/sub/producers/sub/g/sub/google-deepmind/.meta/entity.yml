@@ -25,8 +25,8 @@ entity:
       note: Official Google announcement creating Google DeepMind as a focused unit combining Google Brain and DeepMind.
   relations:
     - type: produces
-      target: catalog/models/reference/producers/google/gemini
+      target: catalog/models/google/gemini
     - type: produces
-      target: catalog/models/reference/producers/google/gemma
+      target: catalog/models/google/gemma
     - type: part-of
       target: catalog/producers/g/google

@@ -140,9 +140,9 @@
 
 ## Canonical Links
 
-- Link compact text candidates to `catalog/models/reference/producers/microsoft/phi/phi-4/models/phi-4-mini-instruct` and `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-8b` when named.
-- Link the larger text route to `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-14b` when named.
-- Link compact multimodal candidates to `catalog/models/reference/producers/google/gemma/gemma-4/models/e2b-instruct` and `catalog/models/reference/producers/google/gemma/gemma-4/models/e4b-instruct`.
+- Link compact text candidates to `catalog/models/microsoft/phi/phi-4/models/phi-4-mini-instruct` and `catalog/models/alibaba/qwen/qwen3/models/qwen3-8b` when named.
+- Link the larger text route to `catalog/models/alibaba/qwen/qwen3/models/qwen3-14b` when named.
+- Link compact multimodal candidates to `catalog/models/google/gemma/gemma-4/models/e2b-instruct` and `catalog/models/google/gemma/gemma-4/models/e4b-instruct`.
 - Link LM Studio, Ollama, llama.cpp, MLX-LM, MLC-LLM, or another named runtime/application to its canonical software owner rather than duplicating complete privacy/runtime documentation here.
 - Link hosted services to canonical service owners when discussing a controlled hosted/hybrid alternative.
 

@@ -208,7 +208,7 @@
 ## Canonical Links
 
 - Link domain-specific finance, sales, supply-chain, support, security, and other automation to their scenario owners.
-- Link centralized AI runtime/gateway concerns to `catalog/models/selection/user-scenarios/organizations/internal-ai-platform`.
+- Link centralized AI runtime/gateway concerns to `decision-support/scenarios/organizations/internal-ai-platform`.
 - Link exact agent platforms/services/models to canonical catalog owners when named/materialized.
 - Keep generic agent reasoning/tool-selection candidate ranking in applicable model decision guides rather than duplicating it here.
 

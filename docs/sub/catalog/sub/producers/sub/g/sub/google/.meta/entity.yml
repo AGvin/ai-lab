@@ -25,9 +25,9 @@ entity:
       note: Google records that it created and open-sourced Kubeflow and identifies Kubeflow Pipelines as one of the project components.
   relations:
     - type: produces
-      target: catalog/models/reference/producers/google/gemini
+      target: catalog/models/google/gemini
     - type: produces
-      target: catalog/models/reference/producers/google/gemma
+      target: catalog/models/google/gemma
     - type: produces
       target: catalog/services/development/agents/jules
     - type: produces

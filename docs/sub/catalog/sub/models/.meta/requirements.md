@@ -1,17 +1,20 @@
+
 # Documentation Requirements
 
 ## Requirements
 
-- Present the model catalog as two distinct reader journeys: canonical factual reference and task-oriented model selection.
-- Explain that factual reference owns model identity, family/series structure, concrete models, versions, artifacts, producers, relations, and source-backed technical facts, while selection owns task-specific comparisons, shortlists, rankings, trade-offs, evaluation dimensions, acceptance criteria, and model-team decisions.
-- Render the standard child-navigation block from the validated direct-child projection for the currently materialized model journeys.
-- State the ownership boundary explicitly so selection guidance links to canonical model profiles instead of duplicating them.
-- State that legacy page boundaries and wording are migration inputs rather than canonical ownership decisions.
-- Keep the page concise; detailed taxonomy and task navigation belong to the corresponding child journeys.
+- Own canonical factual model documentation directly under `catalog/models/`.
+- Treat every first-level child as a model-domain producer or stable publishing/steward namespace; do not create task, modality, architecture, license, access, benchmark, recommendation, or lifecycle sibling roots.
+- Preserve the producer -> family -> optional series -> model -> version/artifact identity hierarchy, omitting structural levels that are not meaningful.
+- Keep the model-domain producer namespace distinct from the canonical producer profile under `catalog/producers/`; preserve explicit producer relations rather than inferring exclusive authorship from placement.
+- Keep provider access, hosted offerings, runtimes, deployment routes, and other non-model entities with their canonical service/software owners.
+- Keep model comparison, recommendation, hardware-fit, scenario, and portfolio decisions under `decision-support/` and link canonical model facts instead of duplicating them.
+- Keep supported technical facts traceable to authoritative or upstream references.
+- Preserve total and active parameters as distinct facts when both materially describe a model; do not infer unpublished expert/routing values from names or arithmetic.
 
 ## Validation
 
-- The child-navigation block matches the validated materialized direct-child projection.
-- The page makes the factual-reference and task-oriented-selection reader journeys clear without duplicating child membership in requirements.
-- It does not present recommendation conclusions as canonical model facts.
-- It does not reproduce the complete reference taxonomy or selection tree.
+- Every materialized producer/family/series/model/version/artifact entity has a path-derived `entity.id` matching its current canonical node.
+- Model relations resolve to current canonical entity IDs and required bidirectional endpoints remain synchronized.
+- No `catalog/models/` or `decision-support/selection/models/` ownership path remains in canonical metadata.
+- Decision-support conclusions are not represented as intrinsic model facts.

@@ -136,9 +136,9 @@
 
 ## Canonical Links
 
-- Link compact local candidates to `catalog/models/reference/producers/alibaba/qwen/qwen2-5-coder/models/qwen2-5-coder-3b-instruct`, `catalog/models/reference/producers/alibaba/qwen/qwen2-5-coder/models/qwen2-5-coder-7b-instruct`, and `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-8b` when named.
+- Link compact local candidates to `catalog/models/alibaba/qwen/qwen2-5-coder/models/qwen2-5-coder-3b-instruct`, `catalog/models/alibaba/qwen/qwen2-5-coder/models/qwen2-5-coder-7b-instruct`, and `catalog/models/alibaba/qwen/qwen3/models/qwen3-8b` when named.
 - Link heavier local/rented candidates only through their exact canonical Model Reference identities after the current coding decision guide retains them for the intended role.
-- Link generic coding-model evaluation to `catalog/models/selection/decision-guides/software-development` and complete-loop agent evaluation to `catalog/models/selection/decision-guides/agents-and-automation` instead of duplicating their candidate rankings.
+- Link generic coding-model evaluation to `decision-support/selection/models/decision-guides/software-development` and complete-loop agent evaluation to `decision-support/selection/models/decision-guides/agents-and-automation` instead of duplicating their candidate rankings.
 - Product-specific coding-agent documentation remains owned by the applicable software/service catalog entities where materialized; this scenario records only the route implications needed for model selection.
 
 ## Evidence and Freshness

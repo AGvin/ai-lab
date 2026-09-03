@@ -154,10 +154,10 @@
 
 ## Canonical Links
 
-- Link individual analytical workflow details to `catalog/models/selection/user-scenarios/professionals/data-analyst-or-data-scientist` where needed.
+- Link individual analytical workflow details to `decision-support/scenarios/professionals/data-analyst-or-data-scientist` where needed.
 - Link managed assistant/warehouse products to their canonical service/software owners when named.
 - Link exact local model candidates only through canonical Model Reference owners when current evidence justifies them.
-- Link organization-scale analytics to `catalog/models/selection/user-scenarios/organizations/enterprise-data-analysis` rather than duplicating platform concerns.
+- Link organization-scale analytics to `decision-support/scenarios/organizations/enterprise-data-analysis` rather than duplicating platform concerns.
 
 ## Evidence and Freshness
 

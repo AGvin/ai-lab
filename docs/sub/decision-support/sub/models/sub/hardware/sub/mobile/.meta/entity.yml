@@ -1,4 +1,0 @@
-entity:
-  id: catalog/models/selection/hardware/mobile
-  type: model-selection-hardware-group
-  name: Mobile Model Selection

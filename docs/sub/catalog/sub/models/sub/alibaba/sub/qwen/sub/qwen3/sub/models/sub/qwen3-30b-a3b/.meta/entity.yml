@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-30b-a3b
+  id: catalog/models/alibaba/qwen/qwen3/models/qwen3-30b-a3b
   type: model
   name: Qwen3 30B-A3B
   references:
@@ -18,8 +18,8 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target: catalog/models/reference/producers/alibaba/qwen/qwen3
+      target: catalog/models/alibaba/qwen/qwen3
     - type: has-version
-      target: catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-30b-a3b/versions/initial
+      target: catalog/models/alibaba/qwen/qwen3/models/qwen3-30b-a3b/versions/initial
     - type: has-version
-      target: catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-30b-a3b/versions/2507
+      target: catalog/models/alibaba/qwen/qwen3/models/qwen3-30b-a3b/versions/2507

@@ -141,9 +141,9 @@
 ## Canonical Links
 
 - Link current managed assistant examples to canonical service owners such as `catalog/services/assistant-workspaces/chatgpt` and `catalog/services/assistant-workspaces/gemini` when named.
-- Link current compact local text candidates to `catalog/models/reference/producers/microsoft/phi/phi-4/models/phi-4-mini-instruct`, `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-8b`, and `.../qwen3-14b` when named.
-- Link compact local multimodal candidates to `catalog/models/reference/producers/google/gemma/gemma-4/models/e2b-instruct` and `.../e4b-instruct`.
-- Link deep model translation evaluation to `catalog/models/selection/decision-guides/language-and-research/translation-and-localization` instead of reproducing pair-specific model rankings here.
+- Link current compact local text candidates to `catalog/models/microsoft/phi/phi-4/models/phi-4-mini-instruct`, `catalog/models/alibaba/qwen/qwen3/models/qwen3-8b`, and `.../qwen3-14b` when named.
+- Link compact local multimodal candidates to `catalog/models/google/gemma/gemma-4/models/e2b-instruct` and `.../e4b-instruct`.
+- Link deep model translation evaluation to `decision-support/selection/models/decision-guides/language-and-research/translation-and-localization` instead of reproducing pair-specific model rankings here.
 - Dedicated translation applications/services remain outside this model-scenario owner unless/until their canonical catalog entities are explicitly used.
 
 ## Evidence and Freshness

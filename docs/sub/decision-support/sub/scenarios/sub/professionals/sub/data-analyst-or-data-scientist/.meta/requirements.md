@@ -156,8 +156,8 @@
 ## Canonical Links
 
 - Link managed assistant examples to their canonical service owners when named.
-- Link `Qwen3 8B` to `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-8b` when named.
-- Link coding-specific candidates through `catalog/models/selection/decision-guides/software-development` rather than duplicating their ranking here.
+- Link `Qwen3 8B` to `catalog/models/alibaba/qwen/qwen3/models/qwen3-8b` when named.
+- Link coding-specific candidates through `decision-support/selection/models/decision-guides/software-development` rather than duplicating their ranking here.
 - Link personal structured-data analysis to the sibling `personal-data-analysis/` owner only for boundary navigation, not duplicated content.
 
 ## Evidence and Freshness

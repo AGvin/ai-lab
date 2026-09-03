@@ -14,7 +14,7 @@
 
 - Use `OpenAI` as the page title.
 - Describe OpenAI concisely as the producer organization for the represented model, Agent Skill, assistant-workspace, coding-agent, and framework entities.
-- Preserve the OpenAI model-domain view under `catalog/models/reference/producers/openai/` as navigation.
+- Preserve the OpenAI model-domain view under `catalog/models/openai/` as navigation.
 - Keep Promptfoo product provenance on the Promptfoo Inc. producer profile.
 - Include the official website and GitHub organization.
 

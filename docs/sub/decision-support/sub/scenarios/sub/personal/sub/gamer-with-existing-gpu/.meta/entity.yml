@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/personal/gamer-with-existing-gpu
+  id: decision-support/scenarios/personal/gamer-with-existing-gpu
   type: user-scenario
   name: Gamer with an Existing GPU

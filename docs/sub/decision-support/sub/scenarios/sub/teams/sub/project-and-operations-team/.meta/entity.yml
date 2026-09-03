@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/teams/project-and-operations-team
+  id: decision-support/scenarios/teams/project-and-operations-team
   type: user-scenario
   name: Project and Operations Team

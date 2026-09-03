@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated/artifacts/mradermacher-gguf
+  id: catalog/models/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated/artifacts/mradermacher-gguf
   type: model-artifact
   name: mradermacher GGUF Artifacts
   references:
@@ -19,4 +19,4 @@ entity:
       note: Source model for this GGUF artifact collection.
   relations:
     - type: artifact-of
-      target: catalog/models/reference/producers/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated
+      target: catalog/models/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated

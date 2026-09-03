@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/black-forest-labs/flux/flux-1
+  id: catalog/models/black-forest-labs/flux/flux-1
   type: model-series
   name: FLUX.1
   references:
@@ -12,6 +12,6 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target: catalog/models/reference/producers/black-forest-labs/flux
+      target: catalog/models/black-forest-labs/flux
     - type: has-member
-      target: catalog/models/reference/producers/black-forest-labs/flux/flux-1/models/flux-1-schnell
+      target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-schnell

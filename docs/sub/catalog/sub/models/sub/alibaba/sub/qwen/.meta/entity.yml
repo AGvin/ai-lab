@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/alibaba/qwen
+  id: catalog/models/alibaba/qwen
   type: model-family
   name: Qwen
   references:
@@ -21,8 +21,8 @@ entity:
     - type: produced-by
       target: catalog/producers/q/qwen-team
     - type: has-member
-      target: catalog/models/reference/producers/alibaba/qwen/qwen2-5-coder
+      target: catalog/models/alibaba/qwen/qwen2-5-coder
     - type: has-member
-      target: catalog/models/reference/producers/alibaba/qwen/qwen3-coder
+      target: catalog/models/alibaba/qwen/qwen3-coder
     - type: has-member
-      target: catalog/models/reference/producers/alibaba/qwen/qwen3
+      target: catalog/models/alibaba/qwen/qwen3

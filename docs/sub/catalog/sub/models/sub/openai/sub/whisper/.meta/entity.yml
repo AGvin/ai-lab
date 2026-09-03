@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/openai/whisper
+  id: catalog/models/openai/whisper
   type: model-family
   name: Whisper
   references:

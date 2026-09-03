@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/reference/producers/google/gemma/gemma-4/models
+  id: catalog/models/google/gemma/gemma-4/models
   type: catalog-index
   name: Gemma 4 Models

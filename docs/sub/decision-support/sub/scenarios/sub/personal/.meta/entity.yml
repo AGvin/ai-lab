@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/personal
+  id: decision-support/scenarios/personal
   type: user-scenario-index
   name: Personal User Scenarios

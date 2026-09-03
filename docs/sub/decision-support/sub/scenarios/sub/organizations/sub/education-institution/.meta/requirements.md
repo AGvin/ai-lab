@@ -302,9 +302,9 @@
 
 ## Canonical Links
 
-- Link student privacy/regulatory governance to `catalog/models/selection/user-scenarios/organizations/regulated-organization` where it becomes organization-wide compliance architecture.
-- Link central model platform operations to `catalog/models/selection/user-scenarios/organizations/internal-ai-platform`.
-- Link disconnected research/teaching environments to `catalog/models/selection/user-scenarios/organizations/high-security-environment`.
+- Link student privacy/regulatory governance to `decision-support/scenarios/organizations/regulated-organization` where it becomes organization-wide compliance architecture.
+- Link central model platform operations to `decision-support/scenarios/organizations/internal-ai-platform`.
+- Link disconnected research/teaching environments to `decision-support/scenarios/organizations/high-security-environment`.
 - Link research, software development, data analysis, knowledge, and creative workflows to their canonical scenario/decision owners rather than duplicating them here.
 - Link named education AI services/models to canonical catalog owners only when materialized/current.
 

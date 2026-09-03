@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/professionals/software-engineer-without-local-gpu
+  id: decision-support/scenarios/professionals/software-engineer-without-local-gpu
   type: user-scenario
   name: Software Engineer without a Local GPU

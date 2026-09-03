@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/teams/product-management-team
+  id: decision-support/scenarios/teams/product-management-team
   type: user-scenario
   name: Product Management Team

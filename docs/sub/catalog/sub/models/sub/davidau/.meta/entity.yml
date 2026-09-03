@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/davidau
+  id: catalog/models/davidau
   type: model-producer-view
   name: DavidAU Models
   references:

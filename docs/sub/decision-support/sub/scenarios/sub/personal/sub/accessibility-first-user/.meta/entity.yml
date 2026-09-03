@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/personal/accessibility-first-user
+  id: decision-support/scenarios/personal/accessibility-first-user
   type: user-scenario
   name: Accessibility-First User

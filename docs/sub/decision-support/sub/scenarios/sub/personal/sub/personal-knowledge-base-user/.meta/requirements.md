@@ -186,7 +186,7 @@
 
 - Link hosted source-grounded service to `catalog/services/knowledge-workspaces/gemini-notebook` when named.
 - Link local-first/self-hosted software examples to `catalog/software/interfaces-and-workspaces/knowledge-workspaces/obsidian` and `catalog/software/interfaces-and-workspaces/knowledge-workspaces/khoj` when named.
-- Link local generator candidates to canonical Model Reference identities such as `catalog/models/reference/producers/microsoft/phi/phi-4/models/phi-4-mini-instruct`, `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-8b`, `.../qwen3-14b`, and `catalog/models/reference/producers/google/gemma/gemma-4/models/e2b-instruct` / `e4b-instruct` when applicable.
+- Link local generator candidates to canonical Model Reference identities such as `catalog/models/microsoft/phi/phi-4/models/phi-4-mini-instruct`, `catalog/models/alibaba/qwen/qwen3/models/qwen3-8b`, `.../qwen3-14b`, and `catalog/models/google/gemma/gemma-4/models/e2b-instruct` / `e4b-instruct` when applicable.
 - Link embedding/reranking/OCR/vector/database/runtime products to their canonical owners when materialized; do not invent duplicate identities inside this scenario.
 
 ## Evidence and Freshness

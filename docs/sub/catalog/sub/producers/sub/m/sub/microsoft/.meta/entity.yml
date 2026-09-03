@@ -25,7 +25,7 @@ entity:
       note: Official Microsoft annual report documenting the acquisition of GitHub, Inc.
   relations:
     - type: produces
-      target: catalog/models/reference/producers/microsoft/phi
+      target: catalog/models/microsoft/phi
     - type: produces
       target: catalog/software/agent-frameworks/autogen
     - type: produces

@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/tongyi-mai/z-image
+  id: catalog/models/tongyi-mai/z-image
   type: model-family
   name: Z-Image
   references:
@@ -21,6 +21,6 @@ entity:
     - type: produced-by
       target: catalog/producers/t/tongyi-mai
     - type: has-member
-      target: catalog/models/reference/producers/tongyi-mai/z-image/models/z-image
+      target: catalog/models/tongyi-mai/z-image/models/z-image
     - type: has-member
-      target: catalog/models/reference/producers/tongyi-mai/z-image/models/z-image-turbo
+      target: catalog/models/tongyi-mai/z-image/models/z-image-turbo

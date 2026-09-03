@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/personal/everyday-home-user
+  id: decision-support/scenarios/personal/everyday-home-user
   type: user-scenario
   name: Everyday Home User

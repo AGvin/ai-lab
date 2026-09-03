@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/google/gemini/models/gemini-3-6-flash
+  id: catalog/models/google/gemini/models/gemini-3-6-flash
   type: model
   name: Gemini 3.6 Flash
   references:
@@ -18,4 +18,4 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target: catalog/models/reference/producers/google/gemini
+      target: catalog/models/google/gemini

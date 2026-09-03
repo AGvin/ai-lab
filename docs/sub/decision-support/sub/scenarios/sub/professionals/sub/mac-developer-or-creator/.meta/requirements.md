@@ -142,10 +142,10 @@
 
 ## Canonical Links
 
-- Link `Phi-4 Mini Instruct` to `catalog/models/reference/producers/microsoft/phi/phi-4/models/phi-4-mini-instruct` when named.
+- Link `Phi-4 Mini Instruct` to `catalog/models/microsoft/phi/phi-4/models/phi-4-mini-instruct` when named.
 - Link `Qwen3 8B` and `Qwen3 14B` to their exact canonical Qwen3 model identities when named.
 - Link `Gemma 4 E2B Instruct` and `Gemma 4 E4B Instruct` to their exact canonical Gemma 4 model identities when named.
-- Link coding candidate selection to `catalog/models/selection/decision-guides/software-development` rather than duplicating a Mac-specific coding ranking.
+- Link coding candidate selection to `decision-support/selection/models/decision-guides/software-development` rather than duplicating a Mac-specific coding ranking.
 - Link modality-specific decision guides when creative/media generation becomes dominant.
 
 ## Evidence and Freshness

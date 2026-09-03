@@ -18,4 +18,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target: catalog/models/reference/producers/black-forest-labs/flux
+      target: catalog/models/black-forest-labs/flux

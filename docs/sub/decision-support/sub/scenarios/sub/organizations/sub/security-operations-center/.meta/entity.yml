@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/organizations/security-operations-center
+  id: decision-support/scenarios/organizations/security-operations-center
   type: user-scenario
   name: Security Operations Center

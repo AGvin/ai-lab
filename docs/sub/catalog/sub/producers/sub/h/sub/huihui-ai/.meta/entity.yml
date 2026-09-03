@@ -21,4 +21,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target: catalog/models/reference/producers/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated
+      target: catalog/models/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated

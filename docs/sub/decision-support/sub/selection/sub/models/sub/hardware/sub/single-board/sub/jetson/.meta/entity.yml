@@ -1,0 +1,10 @@
+entity:
+  id: decision-support/selection/models/hardware/single-board/jetson
+  type: model-selection-hardware-target
+  name: NVIDIA Jetson Model Selection
+  references:
+    - type: documentation
+      source:
+        url: https://developer.nvidia.com/embedded/jetpack/downloads
+      purposes: [research]
+      authority: official

@@ -242,8 +242,8 @@
 
 ## Canonical Links
 
-- Link regulatory governance to `catalog/models/selection/user-scenarios/organizations/regulated-organization`.
-- Link shared local platform/gateway operation to `catalog/models/selection/user-scenarios/organizations/internal-ai-platform`.
+- Link regulatory governance to `decision-support/scenarios/organizations/regulated-organization`.
+- Link shared local platform/gateway operation to `decision-support/scenarios/organizations/internal-ai-platform`.
 - Link SOC, manufacturing, legal, and other domain acceptance to their scenario owners.
 - Link exact runtimes/models/software to canonical catalog owners only when current evidence justifies them.
 

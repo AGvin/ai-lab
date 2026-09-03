@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/huihui-ai
+  id: catalog/models/huihui-ai
   type: model-producer-view
   name: huihui.ai Models
   references:

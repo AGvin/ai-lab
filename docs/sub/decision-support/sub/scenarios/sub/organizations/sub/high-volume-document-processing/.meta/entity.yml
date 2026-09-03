@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/organizations/high-volume-document-processing
+  id: decision-support/scenarios/organizations/high-volume-document-processing
   type: user-scenario
   name: High-Volume Document Processing

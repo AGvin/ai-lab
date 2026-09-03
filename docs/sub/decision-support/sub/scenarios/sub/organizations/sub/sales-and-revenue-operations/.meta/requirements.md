@@ -156,7 +156,7 @@
 
 ## Canonical Links
 
-- Link marketing/growth team context to `catalog/models/selection/user-scenarios/teams/marketing-and-growth-team` where relevant.
+- Link marketing/growth team context to `decision-support/scenarios/teams/marketing-and-growth-team` where relevant.
 - Link enterprise analytics/platform/automation concerns to their organization scenario owners.
 - Link named CRM/sales services and exact models to canonical catalog owners when materialized.
 

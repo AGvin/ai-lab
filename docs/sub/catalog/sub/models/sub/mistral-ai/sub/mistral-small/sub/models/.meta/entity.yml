@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/reference/producers/mistral-ai/mistral-small/models
+  id: catalog/models/mistral-ai/mistral-small/models
   type: catalog-index
   name: Mistral Small Models

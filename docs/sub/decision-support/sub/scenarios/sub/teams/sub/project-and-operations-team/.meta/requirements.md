@@ -164,8 +164,8 @@
 
 ## Canonical Links
 
-- Link product decisions to `catalog/models/selection/user-scenarios/teams/product-management-team` when appropriate.
-- Link structured analysis to `catalog/models/selection/user-scenarios/teams/data-analysis-team`.
+- Link product decisions to `decision-support/scenarios/teams/product-management-team` when appropriate.
+- Link structured analysis to `decision-support/scenarios/teams/data-analysis-team`.
 - Link work-management/services to their canonical software/service owners when materialized.
 - Link organization-scale agent automation to its organization scenario rather than duplicating platform concerns.
 

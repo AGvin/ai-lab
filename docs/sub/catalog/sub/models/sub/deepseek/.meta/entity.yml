@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/deepseek
+  id: catalog/models/deepseek
   type: model-producer-view
   name: DeepSeek Models
   references:

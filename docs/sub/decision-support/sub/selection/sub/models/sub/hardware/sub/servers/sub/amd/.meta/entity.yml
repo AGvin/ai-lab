@@ -1,0 +1,10 @@
+entity:
+  id: decision-support/selection/models/hardware/servers/amd
+  type: model-selection-hardware-target
+  name: AMD Server Model Selection
+  references:
+    - type: documentation
+      source:
+        url: https://rocm.docs.amd.com/
+      purposes: [research]
+      authority: official

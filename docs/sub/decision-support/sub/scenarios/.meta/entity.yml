@@ -1,4 +1,5 @@
+
 entity:
-  id: catalog/models/selection/user-scenarios
+  id: decision-support/scenarios
   type: user-scenario-index
-  name: Model Selection User Scenarios
+  name: Decision Support Scenarios

@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/personal/maker-or-hobby-developer
+  id: decision-support/scenarios/personal/maker-or-hobby-developer
   type: user-scenario
   name: Maker or Hobby Developer

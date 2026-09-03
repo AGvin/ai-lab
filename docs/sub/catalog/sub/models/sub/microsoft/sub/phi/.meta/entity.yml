@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/microsoft/phi
+  id: catalog/models/microsoft/phi
   type: model-family
   name: Phi
   references:
@@ -14,4 +14,4 @@ entity:
     - type: produced-by
       target: catalog/producers/m/microsoft
     - type: has-member
-      target: catalog/models/reference/producers/microsoft/phi/phi-4
+      target: catalog/models/microsoft/phi/phi-4

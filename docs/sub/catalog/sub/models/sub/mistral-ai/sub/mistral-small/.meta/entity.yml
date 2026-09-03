@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/mistral-ai/mistral-small
+  id: catalog/models/mistral-ai/mistral-small
   type: model-family
   name: Mistral Small
   references:
@@ -14,4 +14,4 @@ entity:
     - type: produced-by
       target: catalog/producers/m/mistral-ai
     - type: has-member
-      target: catalog/models/reference/producers/mistral-ai/mistral-small/models/mistral-small-4
+      target: catalog/models/mistral-ai/mistral-small/models/mistral-small-4

@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/personal/personal-knowledge-base-user
+  id: decision-support/scenarios/personal/personal-knowledge-base-user
   type: user-scenario
   name: Personal Knowledge Base User

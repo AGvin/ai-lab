@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/organizations/supply-chain-and-demand-planning
+  id: decision-support/scenarios/organizations/supply-chain-and-demand-planning
   type: user-scenario
   name: Supply Chain and Demand Planning

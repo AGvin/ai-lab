@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/professionals/researcher
+  id: decision-support/scenarios/professionals/researcher
   type: user-scenario
   name: Researcher

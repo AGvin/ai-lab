@@ -166,7 +166,7 @@
 - Link exact managed workspace/company-knowledge services to canonical service owners when named.
 - Link exact embedding/reranking/generation models to canonical Model Reference owners only when current pipeline evidence justifies them.
 - Link vector stores/retrieval software/data platforms to their canonical software/service owners rather than duplicating profiles here.
-- Link platform-wide concerns to `catalog/models/selection/user-scenarios/organizations/internal-ai-platform`.
+- Link platform-wide concerns to `decision-support/scenarios/organizations/internal-ai-platform`.
 
 ## Evidence and Freshness
 

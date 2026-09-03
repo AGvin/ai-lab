@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/personal/family-and-household-assistant
+  id: decision-support/scenarios/personal/family-and-household-assistant
   type: user-scenario
   name: Family and Household Assistant

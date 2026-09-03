@@ -86,7 +86,7 @@
 ## Canonical Links
 
 - Link named managed assistants to canonical service owners such as `catalog/services/assistant-workspaces/chatgpt`, `catalog/services/assistant-workspaces/claude`, and `catalog/services/assistant-workspaces/gemini`.
-- Link named local models to `catalog/models/reference/producers/microsoft/phi/phi-4/models/phi-4-mini-instruct`, `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-8b`, `catalog/models/reference/producers/google/gemma/gemma-4/models/e2b-instruct`, and `catalog/models/reference/producers/google/gemma/gemma-4/models/e4b-instruct`.
+- Link named local models to `catalog/models/microsoft/phi/phi-4/models/phi-4-mini-instruct`, `catalog/models/alibaba/qwen/qwen3/models/qwen3-8b`, `catalog/models/google/gemma/gemma-4/models/e2b-instruct`, and `catalog/models/google/gemma/gemma-4/models/e4b-instruct`.
 - Link sibling hardware selection only when the exact device materially constrains the route. Do not duplicate model/service profiles, product policy pages, hardware-fit matrices, or runtime installation instructions here.
 
 ## Evidence and Freshness

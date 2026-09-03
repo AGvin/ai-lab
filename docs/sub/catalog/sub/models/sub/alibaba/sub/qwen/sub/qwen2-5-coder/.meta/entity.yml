@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/alibaba/qwen/qwen2-5-coder
+  id: catalog/models/alibaba/qwen/qwen2-5-coder
   type: model-series
   name: Qwen2.5-Coder
   references:
@@ -18,10 +18,10 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target: catalog/models/reference/producers/alibaba/qwen
+      target: catalog/models/alibaba/qwen
     - type: produced-by
       target: catalog/producers/q/qwen-team
     - type: has-member
-      target: catalog/models/reference/producers/alibaba/qwen/qwen2-5-coder/models/qwen2-5-coder-3b-instruct
+      target: catalog/models/alibaba/qwen/qwen2-5-coder/models/qwen2-5-coder-3b-instruct
     - type: has-member
-      target: catalog/models/reference/producers/alibaba/qwen/qwen2-5-coder/models/qwen2-5-coder-7b-instruct
+      target: catalog/models/alibaba/qwen/qwen2-5-coder/models/qwen2-5-coder-7b-instruct

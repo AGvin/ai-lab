@@ -1,4 +1,0 @@
-entity:
-  id: catalog/models/selection/hardware/computers/cpu
-  type: model-selection-hardware-target
-  name: CPU-Only Computer Model Selection

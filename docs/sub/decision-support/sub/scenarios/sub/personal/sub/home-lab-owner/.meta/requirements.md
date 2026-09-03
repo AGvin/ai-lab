@@ -128,8 +128,8 @@
 
 ## Canonical Links
 
-- Link resident/generalist model candidates to canonical Model Reference identities such as `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-8b`, `.../qwen3-14b`, `.../qwen3-30b-a3b`, and `.../qwen3-32b` when named.
-- Link compact multimodal candidates to `catalog/models/reference/producers/google/gemma/gemma-4/models/e2b-instruct` and `catalog/models/reference/producers/google/gemma/gemma-4/models/e4b-instruct`.
+- Link resident/generalist model candidates to canonical Model Reference identities such as `catalog/models/alibaba/qwen/qwen3/models/qwen3-8b`, `.../qwen3-14b`, `.../qwen3-30b-a3b`, and `.../qwen3-32b` when named.
+- Link compact multimodal candidates to `catalog/models/google/gemma/gemma-4/models/e2b-instruct` and `catalog/models/google/gemma/gemma-4/models/e4b-instruct`.
 - Link named inference engines to canonical software owners such as `catalog/software/inference-runtimes/inference-engines/llama-cpp`, `.../vllm`, `.../sglang`, or `.../tensorrt-llm` rather than copying runtime documentation here.
 - Link hosted services, storage/RAG software, orchestration layers, networking/security tools, and hardware to their canonical owners when they materially affect the route.
 

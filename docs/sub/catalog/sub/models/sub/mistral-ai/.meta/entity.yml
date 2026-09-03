@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/mistral-ai
+  id: catalog/models/mistral-ai
   type: model-producer-view
   name: Mistral AI Models
   references:

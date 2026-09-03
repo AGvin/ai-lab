@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/moonshot-ai
+  id: catalog/models/moonshot-ai
   type: model-producer-view
   name: Moonshot AI Models
   references:

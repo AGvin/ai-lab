@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/professionals/creative-professional
+  id: decision-support/scenarios/professionals/creative-professional
   type: user-scenario
   name: Creative Professional

@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/organizations/education-institution
+  id: decision-support/scenarios/organizations/education-institution
   type: user-scenario
   name: Education Institution

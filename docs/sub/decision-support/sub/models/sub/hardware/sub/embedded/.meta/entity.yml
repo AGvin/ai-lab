@@ -1,4 +1,0 @@
-entity:
-  id: catalog/models/selection/hardware/embedded
-  type: model-selection-hardware-group
-  name: Embedded Model Selection

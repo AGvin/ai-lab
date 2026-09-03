@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/black-forest-labs
+  id: catalog/models/black-forest-labs
   type: model-producer-view
   name: Black Forest Labs Models
   references:

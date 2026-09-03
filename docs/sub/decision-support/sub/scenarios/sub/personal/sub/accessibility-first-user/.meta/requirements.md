@@ -140,9 +140,9 @@
 ## Canonical Links
 
 - Link current managed assistant examples to canonical service owners such as `catalog/services/assistant-workspaces/chatgpt` and `catalog/services/assistant-workspaces/gemini` when named.
-- Link compact local text candidates to `catalog/models/reference/producers/microsoft/phi/phi-4/models/phi-4-mini-instruct` and `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-8b` when named.
-- Link compact local visual/audio candidates to `catalog/models/reference/producers/google/gemma/gemma-4/models/e2b-instruct` and `.../e4b-instruct`.
-- Link local speech-recognition discussion to the canonical `catalog/models/reference/producers/openai/whisper` family until/if exact current Whisper artifacts are materialized as model leaves.
+- Link compact local text candidates to `catalog/models/microsoft/phi/phi-4/models/phi-4-mini-instruct` and `catalog/models/alibaba/qwen/qwen3/models/qwen3-8b` when named.
+- Link compact local visual/audio candidates to `catalog/models/google/gemma/gemma-4/models/e2b-instruct` and `.../e4b-instruct`.
+- Link local speech-recognition discussion to the canonical `catalog/models/openai/whisper` family until/if exact current Whisper artifacts are materialized as model leaves.
 - Link accessibility/OS/runtime products to their canonical owners when they exist; do not represent platform accessibility features as canonical model facts.
 
 ## Evidence and Freshness

@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/moonshot-ai/kimi
+  id: catalog/models/moonshot-ai/kimi
   type: model-family
   name: Kimi
   references:
@@ -26,4 +26,4 @@ entity:
     - type: produced-by
       target: catalog/producers/m/moonshot-ai
     - type: has-member
-      target: catalog/models/reference/producers/moonshot-ai/kimi/models/kimi-k3
+      target: catalog/models/moonshot-ai/kimi/models/kimi-k3

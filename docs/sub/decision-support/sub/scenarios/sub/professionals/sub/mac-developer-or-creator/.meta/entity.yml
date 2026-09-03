@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/professionals/mac-developer-or-creator
+  id: decision-support/scenarios/professionals/mac-developer-or-creator
   type: user-scenario
   name: Mac Developer or Creator

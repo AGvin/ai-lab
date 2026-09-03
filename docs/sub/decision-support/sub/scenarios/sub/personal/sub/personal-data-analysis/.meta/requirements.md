@@ -159,7 +159,7 @@
 ## Canonical Links
 
 - Link managed assistant examples to `catalog/services/assistant-workspaces/chatgpt` and `catalog/services/assistant-workspaces/gemini` when named.
-- Link local candidates to `catalog/models/reference/producers/microsoft/phi/phi-4/models/phi-4-mini-instruct` and `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-8b` when named.
+- Link local candidates to `catalog/models/microsoft/phi/phi-4/models/phi-4-mini-instruct` and `catalog/models/alibaba/qwen/qwen3/models/qwen3-8b` when named.
 - Link sibling scenario/hardware owners instead of duplicating complete product, model, runtime, or device-fit profiles.
 
 ## Evidence and Freshness

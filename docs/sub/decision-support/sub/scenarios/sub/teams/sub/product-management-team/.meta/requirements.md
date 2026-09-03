@@ -154,8 +154,8 @@
 
 ## Canonical Links
 
-- Link research workflow to `catalog/models/selection/user-scenarios/teams/research-and-insights-team`.
-- Link structured analysis to `catalog/models/selection/user-scenarios/teams/data-analysis-team`.
+- Link research workflow to `decision-support/scenarios/teams/research-and-insights-team`.
+- Link structured analysis to `decision-support/scenarios/teams/data-analysis-team`.
 - Link managed workspace/services to canonical service owners when named.
 - Link organization-scale knowledge/data/platform concerns to their organization scenario owners instead of duplicating them here.
 

@@ -186,7 +186,7 @@
 
 ## Canonical Links
 
-- Link bounded team support to `catalog/models/selection/user-scenarios/teams/customer-success-and-support-team`.
+- Link bounded team support to `decision-support/scenarios/teams/customer-success-and-support-team`.
 - Link centralized automation/platform concerns to their organization scenario owners.
 - Link named contact-center/support services and exact models to canonical catalog owners when materialized.
 

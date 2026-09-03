@@ -168,8 +168,8 @@
 
 ## Canonical Links
 
-- Link media model selection to `catalog/models/selection/decision-guides/media-creation`.
-- Link professional creative production to `catalog/models/selection/user-scenarios/professionals/creative-professional`.
+- Link media model selection to `decision-support/selection/models/decision-guides/media-creation`.
+- Link professional creative production to `decision-support/scenarios/professionals/creative-professional`.
 - Link research and data work to the applicable team scenario owners.
 - Link managed services/local models to canonical owners when named.
 

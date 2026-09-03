@@ -1,2 +1,7 @@
+
 node:
   template: catalog/models/landing
+  children:
+    template: catalog/models/producer
+    children:
+      template: catalog/models/family

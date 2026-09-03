@@ -202,8 +202,8 @@
 
 ## Canonical Links
 
-- Link organization-scale contact-center concerns to `catalog/models/selection/user-scenarios/organizations/customer-service-and-contact-center`.
-- Link customer-feedback research to `catalog/models/selection/user-scenarios/teams/research-and-insights-team` and analytics to `catalog/models/selection/user-scenarios/teams/data-analysis-team`.
+- Link organization-scale contact-center concerns to `decision-support/scenarios/organizations/customer-service-and-contact-center`.
+- Link customer-feedback research to `decision-support/scenarios/teams/research-and-insights-team` and analytics to `decision-support/scenarios/teams/data-analysis-team`.
 - Link managed support services and exact local models to their canonical catalog owners only when named/materialized.
 
 ## Evidence and Freshness

@@ -156,9 +156,9 @@
 ## Canonical Links
 
 - Link managed assistant/deep-research products to canonical service owners when named.
-- Link `Qwen3 8B` to `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-8b` when named.
+- Link `Qwen3 8B` to `catalog/models/alibaba/qwen/qwen3/models/qwen3-8b` when named.
 - Link `Gemma 4 E2B Instruct` and `Gemma 4 E4B Instruct` to their exact canonical Model Reference identities when named.
-- Link coding work to `catalog/models/selection/decision-guides/software-development` and structured-data work to the applicable scenario/decision owner instead of duplicating those contracts.
+- Link coding work to `decision-support/selection/models/decision-guides/software-development` and structured-data work to the applicable scenario/decision owner instead of duplicating those contracts.
 
 ## Evidence and Freshness
 

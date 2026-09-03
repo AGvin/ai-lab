@@ -24,4 +24,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target: catalog/models/reference/producers/deepseek/deepseek
+      target: catalog/models/deepseek/deepseek

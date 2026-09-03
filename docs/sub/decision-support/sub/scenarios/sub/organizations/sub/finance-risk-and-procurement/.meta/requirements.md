@@ -173,7 +173,7 @@
 
 ## Canonical Links
 
-- Link document extraction to `catalog/models/selection/user-scenarios/organizations/high-volume-document-processing` when relevant.
+- Link document extraction to `decision-support/scenarios/organizations/high-volume-document-processing` when relevant.
 - Link enterprise analytics/automation/platform concerns to their organization scenario owners.
 - Link named ERP/procurement services and exact models to canonical catalog owners when materialized.
 

@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/deepseek/deepseek/deepseek-v4
+  id: catalog/models/deepseek/deepseek/deepseek-v4
   type: model-series
   name: DeepSeek-V4
   references:
@@ -18,6 +18,6 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target: catalog/models/reference/producers/deepseek/deepseek
+      target: catalog/models/deepseek/deepseek
     - type: has-member
-      target: catalog/models/reference/producers/deepseek/deepseek/deepseek-v4/models/deepseek-v4-flash
+      target: catalog/models/deepseek/deepseek/deepseek-v4/models/deepseek-v4-flash

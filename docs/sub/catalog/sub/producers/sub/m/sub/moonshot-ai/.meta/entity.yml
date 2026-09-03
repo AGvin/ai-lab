@@ -25,4 +25,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target: catalog/models/reference/producers/moonshot-ai/kimi
+      target: catalog/models/moonshot-ai/kimi

@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/anthropic/claude/sonnet
+  id: catalog/models/anthropic/claude/sonnet
   type: model-series
   name: Sonnet
   references:
@@ -12,6 +12,6 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target: catalog/models/reference/producers/anthropic/claude
+      target: catalog/models/anthropic/claude
     - type: has-member
-      target: catalog/models/reference/producers/anthropic/claude/sonnet/models/sonnet-5
+      target: catalog/models/anthropic/claude/sonnet/models/sonnet-5

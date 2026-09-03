@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/organizations/manufacturing-quality-inspection
+  id: decision-support/scenarios/organizations/manufacturing-quality-inspection
   type: user-scenario
   name: Manufacturing Quality Inspection

@@ -1,4 +1,4 @@
 entity:
-  id: catalog/models/selection/user-scenarios/personal/traveler-or-multilingual-user
+  id: decision-support/scenarios/personal/traveler-or-multilingual-user
   type: user-scenario
   name: Traveler or Multilingual User

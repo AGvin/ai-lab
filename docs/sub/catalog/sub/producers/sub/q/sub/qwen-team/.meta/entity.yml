@@ -21,10 +21,10 @@ entity:
     - type: part-of
       target: catalog/producers/a/alibaba-cloud
     - type: produces
-      target: catalog/models/reference/producers/alibaba/qwen
+      target: catalog/models/alibaba/qwen
     - type: produces
-      target: catalog/models/reference/producers/alibaba/qwen/qwen2-5-coder
+      target: catalog/models/alibaba/qwen/qwen2-5-coder
     - type: produces
-      target: catalog/models/reference/producers/alibaba/qwen/qwen3-coder
+      target: catalog/models/alibaba/qwen/qwen3-coder
     - type: produces
-      target: catalog/models/reference/producers/alibaba/qwen/qwen3
+      target: catalog/models/alibaba/qwen/qwen3

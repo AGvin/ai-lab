@@ -148,8 +148,8 @@
 
 ## Canonical Links
 
-- Link team analysis to `catalog/models/selection/user-scenarios/teams/data-analysis-team` for bounded team context.
-- Link centralized AI platform concerns to `catalog/models/selection/user-scenarios/organizations/internal-ai-platform`.
+- Link team analysis to `decision-support/scenarios/teams/data-analysis-team` for bounded team context.
+- Link centralized AI platform concerns to `decision-support/scenarios/organizations/internal-ai-platform`.
 - Link managed data/BI services and exact models to canonical owners when named/materialized.
 - Do not duplicate warehouse/semantic/catalog product profiles here.
 

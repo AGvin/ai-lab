@@ -133,8 +133,8 @@
 ## Canonical Links
 
 - Route exact coding-model choice to the software-development decision guide instead of freezing a coding leaderboard here.
-- Link compact general local models to canonical Model Reference identities such as `catalog/models/reference/producers/microsoft/phi/phi-4/models/phi-4-mini-instruct` and `catalog/models/reference/producers/alibaba/qwen/qwen3/models/qwen3-8b` only when the target is Linux/workstation-class and current runtime evidence supports them.
-- Link compact multimodal candidates to `catalog/models/reference/producers/google/gemma/gemma-4/models/e2b-instruct` and `.../e4b-instruct` when named.
+- Link compact general local models to canonical Model Reference identities such as `catalog/models/microsoft/phi/phi-4/models/phi-4-mini-instruct` and `catalog/models/alibaba/qwen/qwen3/models/qwen3-8b` only when the target is Linux/workstation-class and current runtime evidence supports them.
+- Link compact multimodal candidates to `catalog/models/google/gemma/gemma-4/models/e2b-instruct` and `.../e4b-instruct` when named.
 - Link exact inference runtimes/software to canonical software owners when they exist; hardware-vendor toolchains named only as current platform evidence remain subordinate to their hardware route until/if canonical software identities are separately materialized.
 
 ## Evidence and Freshness

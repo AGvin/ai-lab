@@ -1,5 +1,5 @@
 entity:
-  id: catalog/models/reference/producers/alibaba/qwen/qwen3-coder/models/qwen3-coder-480b-a35b-instruct
+  id: catalog/models/alibaba/qwen/qwen3-coder/models/qwen3-coder-480b-a35b-instruct
   type: model
   name: Qwen3-Coder 480B-A35B Instruct
   references:
@@ -18,4 +18,4 @@ entity:
       authority: official
   relations:
     - type: member-of
-      target: catalog/models/reference/producers/alibaba/qwen/qwen3-coder
+      target: catalog/models/alibaba/qwen/qwen3-coder

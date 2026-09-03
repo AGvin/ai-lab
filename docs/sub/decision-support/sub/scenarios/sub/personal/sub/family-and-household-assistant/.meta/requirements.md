@@ -134,8 +134,8 @@
 ## Canonical Links
 
 - Link managed assistant examples to `catalog/services/assistant-workspaces/chatgpt` and `catalog/services/assistant-workspaces/gemini` when named.
-- Link local text candidates to `catalog/models/reference/producers/microsoft/phi/phi-4/models/phi-4-mini-instruct` when named.
-- Link local multimodal candidates to `catalog/models/reference/producers/google/gemma/gemma-4/models/e2b-instruct` and `catalog/models/reference/producers/google/gemma/gemma-4/models/e4b-instruct` when named.
+- Link local text candidates to `catalog/models/microsoft/phi/phi-4/models/phi-4-mini-instruct` when named.
+- Link local multimodal candidates to `catalog/models/google/gemma/gemma-4/models/e2b-instruct` and `catalog/models/google/gemma/gemma-4/models/e4b-instruct` when named.
 - Link sibling scenario/hardware owners rather than reproducing their detailed model, infrastructure, or device-fit guidance.
 
 ## Evidence and Freshness
