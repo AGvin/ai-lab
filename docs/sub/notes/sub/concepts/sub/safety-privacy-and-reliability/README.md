@@ -1,8 +1,8 @@
 # Safety, Privacy, and Reliability
 
-Legacy residual retained only for deferred reading-priority metadata and temporary legacy child navigation.
+Legacy residual retained only for deferred reading-priority metadata.
 
-> **Migration note:** The reusable meanings in this legacy group already have selected canonical trustworthy-AI owners, and all current content leaves have been semantically dispositioned behind the active-branch source-removal gate. `Essential` / `Useful` / `Specialized` expresses pedagogical reading order rather than canonical ancestry; preserve only this ordering and the still-valid legacy child links until later learning-path/navigation and source-removal gates are ready. This index trim does not change the deletion-gated status of its children.
+> **Migration note:** Reusable meanings already have selected canonical Trustworthy AI owners and the legacy leaf sources have been migrated/removed. `Essential` / `Useful` / `Specialized` is historical pedagogical ordering rather than canonical ancestry or current navigation. The former leaf names are kept as labels only. No separate source-removal gate applies to already-dispositioned migration sources.
 
 ## Translations
 
@@ -11,26 +11,26 @@ Legacy residual retained only for deferred reading-priority metadata and tempora
 
 ## Essential
 
-- [`prompt-injection/`](./sub/prompt-injection/)
-- [`indirect-prompt-injection/`](./sub/indirect-prompt-injection/)
-- [`trust-boundaries/`](./sub/trust-boundaries/)
-- [`least-privilege/`](./sub/least-privilege/)
-- [`sandboxing/`](./sub/sandboxing/)
-- [`secret-handling/`](./sub/secret-handling/)
-- [`data-privacy/`](./sub/data-privacy/)
-- [`retrieval-poisoning/`](./sub/retrieval-poisoning/)
+- `prompt-injection`
+- `indirect-prompt-injection`
+- `trust-boundaries`
+- `least-privilege`
+- `sandboxing`
+- `secret-handling`
+- `data-privacy`
+- `retrieval-poisoning`
 
 ## Useful
 
-- [`guardrails/`](./sub/guardrails/)
-- [`data-residency/`](./sub/data-residency/)
-- [`provenance/`](./sub/provenance/)
-- [`content-moderation/`](./sub/content-moderation/)
+- `guardrails`
+- `data-residency`
+- `provenance`
+- `content-moderation`
 
 ## Specialized
 
-- [`jailbreaking/`](./sub/jailbreaking/)
-- [`model-alignment/`](./sub/model-alignment/)
-- [`data-poisoning/`](./sub/data-poisoning/)
+- `jailbreaking`
+- `model-alignment`
+- `data-poisoning`
 
-This ordering/navigation residual remains migration source material until later learning-path/navigation and source-removal gates are activated.
+This ordering residual remains migration source material until a later owner-selected learning-path/navigation design gives it an exact durable disposition.

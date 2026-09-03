@@ -1,8 +1,8 @@
 # Retrieval and Knowledge
 
-Legacy residual retained only for deferred reading-priority metadata and temporary legacy child navigation.
+Legacy residual retained only for deferred reading-priority metadata.
 
-> **Migration note:** The reusable meanings in this legacy group already have selected canonical owners across RAG, information retrieval, embeddings/representation learning, vector databases, and trustworthy-AI information integrity, and the underlying leaf sources have been dispositioned individually. `Essential` / `Useful` / `Specialized` expresses pedagogical reading order rather than canonical ancestry; preserve only this ordering and the still-valid legacy child links until later learning-path/navigation and source-removal gates are ready.
+> **Migration note:** Reusable meanings already have selected canonical owners across RAG, information retrieval, embeddings/representation learning, vector databases, and information-integrity topics, and the legacy leaf sources have been migrated/removed. `Essential` / `Useful` / `Specialized` is historical pedagogical ordering rather than canonical ancestry or current navigation. Former leaf names are labels only.
 
 ## Translations
 
@@ -11,26 +11,26 @@ Legacy residual retained only for deferred reading-priority metadata and tempora
 
 ## Essential
 
-- [`rag/`](./sub/rag/)
-- [`embeddings/`](./sub/embeddings/)
-- [`chunking/`](./sub/chunking/)
-- [`semantic-search/`](./sub/semantic-search/)
-- [`hybrid-search/`](./sub/hybrid-search/)
-- [`grounding/`](./sub/grounding/)
+- `rag`
+- `embeddings`
+- `chunking`
+- `semantic-search`
+- `hybrid-search`
+- `grounding`
 
 ## Useful
 
-- [`vector-search/`](./sub/vector-search/)
-- [`vector-databases/`](./sub/vector-databases/)
-- [`keyword-search/`](./sub/keyword-search/)
-- [`reranking/`](./sub/reranking/)
-- [`citations/`](./sub/citations/)
-- [`metadata-filtering/`](./sub/metadata-filtering/)
+- `vector-search`
+- `vector-databases`
+- `keyword-search`
+- `reranking`
+- `citations`
+- `metadata-filtering`
 
 ## Specialized
 
-- [`bm25/`](./sub/bm25/)
-- [`graph-rag/`](./sub/graph-rag/)
-- [`knowledge-graphs/`](./sub/knowledge-graphs/)
+- `bm25`
+- `graph-rag`
+- `knowledge-graphs`
 
-This ordering/navigation residual remains migration source material until later learning-path/navigation and source-removal gates are activated.
+This ordering residual remains migration source material until a later owner-selected learning-path/navigation design gives it an exact durable disposition.

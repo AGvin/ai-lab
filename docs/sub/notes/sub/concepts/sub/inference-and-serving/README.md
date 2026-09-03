@@ -1,8 +1,8 @@
 # Inference and Serving
 
-Legacy residual retained only for deferred reading-priority metadata and temporary legacy child navigation.
+Legacy residual retained only for deferred reading-priority metadata.
 
-> **Migration note:** Reusable meanings in this legacy group have selected canonical owners across inference, model representation/optimization, runtime/deployment, performance/scalability, AI engineering, and selected learning owners, and every current leaf source is now dispositioned individually as residual-only or semantic deletion-ready. `Essential` / `Useful` / `Specialized` expresses pedagogical reading order rather than canonical ancestry. `model-formats/` is now residual-only: practical format-selection/conversion teaching is materialized under `learning/areas/models/inference-and-generation/execution/model-formats-and-conversion/`, while concrete formal specification and mutable catalog/evidence fragments remain explicitly preserved in the legacy leaf until those exact owners are materialized.
+> **Migration note:** Reusable meanings already have selected canonical owners across inference, model representation/optimization, runtime/deployment, performance/scalability, AI engineering, and learning. The former `model-formats` residual is now fully dispositioned through selected formal Safetensors/ONNX owners, model-format/conversion learning, and applicable software/evidence boundaries. All legacy leaf README sources in this group have been migrated/removed. `Essential` / `Useful` / `Specialized` is historical pedagogical ordering rather than canonical ancestry or current navigation.
 
 ## Translations
 
@@ -11,29 +11,29 @@ Legacy residual retained only for deferred reading-priority metadata and tempora
 
 ## Essential
 
-- [`inference/`](./sub/inference/)
-- [`quantization/`](./sub/quantization/)
-- [`numerical-precision/`](./sub/numerical-precision/)
-- [`model-formats/`](./sub/model-formats/)
-- [`gpu-offloading/`](./sub/gpu-offloading/)
-- [`kv-cache/`](./sub/kv-cache/)
-- [`latency/`](./sub/latency/)
-- [`throughput/`](./sub/throughput/)
-- [`performance-metrics/`](./sub/performance-metrics/)
+- `inference`
+- `quantization`
+- `numerical-precision`
+- `model-formats`
+- `gpu-offloading`
+- `kv-cache`
+- `latency`
+- `throughput`
+- `performance-metrics`
 
 ## Useful
 
-- [`model-serving/`](./sub/model-serving/)
-- [`model-loading/`](./sub/model-loading/)
-- [`cpu-inference/`](./sub/cpu-inference/)
-- [`gpu-inference/`](./sub/gpu-inference/)
-- [`context-caching/`](./sub/context-caching/)
+- `model-serving`
+- `model-loading`
+- `cpu-inference`
+- `gpu-inference`
+- `context-caching`
 
 ## Specialized
 
-- [`context-extension/`](./sub/context-extension/)
-- [`flash-attention/`](./sub/flash-attention/)
-- [`continuous-batching/`](./sub/continuous-batching/)
-- [`speculative-decoding/`](./sub/speculative-decoding/)
+- `context-extension`
+- `flash-attention`
+- `continuous-batching`
+- `speculative-decoding`
 
-This ordering/navigation residual remains migration source material until later learning-path/navigation and source-removal gates are activated.
+This ordering residual remains migration source material until a later owner-selected learning-path/navigation design gives it an exact durable disposition.

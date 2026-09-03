@@ -1,8 +1,8 @@
 # Foundations and Architecture
 
-Legacy residual retained only for deferred reading-priority metadata and temporary legacy child navigation.
+Legacy residual retained only for deferred reading-priority metadata.
 
-> **Migration note:** The reusable subject meanings in this mixed legacy group already have selected canonical owners across foundations, machine learning, model classification, and model architectures, and the underlying leaf sources have been dispositioned individually. `Essential` / `Useful` / `Specialized` is pedagogical reading-order metadata rather than canonical ancestry; the migration design intentionally defers that ordering to later learning-path/navigation work. Preserve the current grouping and child links only until those later navigation/source-removal gates are ready.
+> **Migration note:** Reusable subject meanings already have selected canonical owners across foundations, machine learning, model fundamentals, and model architectures, and the legacy leaf sources have been migrated/removed. `Essential` / `Useful` / `Specialized` is historical pedagogical ordering rather than canonical ancestry or current navigation. The former leaf names are kept as labels only so later learning-path/navigation design can preserve or revise the ordering intentionally.
 
 ## Translations
 
@@ -11,20 +11,20 @@ Legacy residual retained only for deferred reading-priority metadata and tempora
 
 ## Essential
 
-- [`foundation-models/`](./sub/foundation-models/)
-- [`large-language-models/`](./sub/large-language-models/)
-- [`multimodal-models/`](./sub/multimodal-models/)
+- `foundation-models`
+- `large-language-models`
+- `multimodal-models`
 
 ## Useful
 
-- [`transformers/`](./sub/transformers/)
-- [`attention/`](./sub/attention/)
+- `transformers`
+- `attention`
 
 ## Specialized
 
-- [`machine-learning/`](./sub/machine-learning/)
-- [`neural-networks/`](./sub/neural-networks/)
-- [`self-attention/`](./sub/self-attention/)
-- [`encoder-decoder/`](./sub/encoder-decoder/)
+- `machine-learning`
+- `neural-networks`
+- `self-attention`
+- `encoder-decoder`
 
-This ordering/navigation residual remains migration source material until later learning-path/navigation and source-removal gates are activated.
+This ordering residual remains migration source material until a later owner-selected learning-path/navigation design gives it an exact durable disposition.

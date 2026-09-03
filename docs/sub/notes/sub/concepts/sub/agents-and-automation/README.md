@@ -1,8 +1,8 @@
 # Agents and Automation
 
-Legacy residual retained only for deferred reading-priority metadata and temporary legacy child navigation.
+Legacy residual retained only for deferred reading-priority metadata plus the still-live multi-agent research residual.
 
-> **Migration note:** Most reusable agent/workflow meanings in this legacy group already have selected canonical owners and their ordinary leaves have been individually dispositioned. `Essential` / `Useful` / `Specialized` expresses pedagogical reading order rather than canonical ancestry. `model-context-protocol/`, `agent-skills/`, and `plugins/` remain intentionally mixed/unresolved roots pending formal specification/catalog/evidence boundaries, and the `multi-agent-systems/` subtree still contains the deferred `integrated-agent-organization-and-resource-portfolio/` research/provenance candidate. Preserve those links without treating the unresolved roots/candidate as dispositioned until their separate gates are ready.
+> **Migration note:** Reusable agent/workflow meanings have selected canonical owners and ordinary legacy leaf README sources have been migrated/removed. Formal Agent Skills and Agent Plugins specifications and mutable host/plugin facts now have exact selected owners. `Essential` / `Useful` / `Specialized` is historical pedagogical ordering rather than canonical ancestry or current navigation. Former leaf names are labels only except `multi-agent-systems/`, whose link remains live because it contains the intentionally unresolved research/provenance child.
 
 ## Translations
 
@@ -11,29 +11,29 @@ Legacy residual retained only for deferred reading-priority metadata and tempora
 
 ## Essential
 
-- [`ai-agents/`](./sub/ai-agents/)
-- [`agentic-workflows/`](./sub/agentic-workflows/)
-- [`tool-calling/`](./sub/tool-calling/)
-- [`agent-state/`](./sub/agent-state/)
-- [`agent-memory/`](./sub/agent-memory/)
-- [`planning/`](./sub/planning/)
-- [`verification-and-reflection/`](./sub/verification-and-reflection/)
-- [`human-in-the-loop/`](./sub/human-in-the-loop/)
-- [`idempotency/`](./sub/idempotency/)
-- [`failure-recovery/`](./sub/failure-recovery/)
+- `ai-agents`
+- `agentic-workflows`
+- `tool-calling`
+- `agent-state`
+- `agent-memory`
+- `planning`
+- `verification-and-reflection`
+- `human-in-the-loop`
+- `idempotency`
+- `failure-recovery`
 
 ## Useful
 
-- [`function-calling/`](./sub/function-calling/)
-- [`model-context-protocol/`](./sub/model-context-protocol/)
-- [`agent-skills/`](./sub/agent-skills/)
-- [`plugins/`](./sub/plugins/)
-- [`task-decomposition/`](./sub/task-decomposition/)
-- [`retries/`](./sub/retries/)
-- [`autonomy-levels/`](./sub/autonomy-levels/)
+- `function-calling`
+- `model-context-protocol`
+- `agent-skills`
+- `plugins`
+- `task-decomposition`
+- `retries`
+- `autonomy-levels`
 
 ## Specialized
 
 - [`multi-agent-systems/`](./sub/multi-agent-systems/)
 
-This ordering/navigation residual remains migration source material until later learning-path/navigation and source-removal gates are activated; the mixed extension roots and research candidate remain separately unresolved.
+This ordering residual remains migration source material until a later owner-selected learning-path/navigation design gives it an exact durable disposition. The multi-agent research candidate remains separately unresolved.
