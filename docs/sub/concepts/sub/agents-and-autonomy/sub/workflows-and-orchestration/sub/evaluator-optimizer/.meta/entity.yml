@@ -15,4 +15,4 @@ entity:
       purposes:
         - research
       authority: official
-      note: Current OpenAI Agents SDK documentation gives code-controlled evaluator loops as a common orchestration pattern: a task agent produces output, an evaluator assesses it and returns feedback, and the loop stops when declared criteria pass.
+      note: "Current OpenAI Agents SDK documentation gives code-controlled evaluator loops as a common orchestration pattern: a task agent produces output, an evaluator assesses it and returns feedback, and the loop stops when declared criteria pass."
