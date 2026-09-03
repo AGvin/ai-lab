@@ -1,0 +1,31 @@
+name: Temporary notes inbound scan
+
+on:
+  push:
+    branches:
+      - batch/ai-lab-documentation-structure/005-add-assistant-workspaces
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Scan active branch and remove temporary workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo '--- inbound references outside docs/sub/notes ---'
+          git grep -n -I -E 'docs/sub/notes|notes/sub/(benchmarks|comparisons)|notes/.*/(arena|artificial-analysis|benchlm|livebench|open-llm-leaderboard|agentic-systems)|open-llm-leaderboard|agentic-systems' -- . ':!docs/sub/notes/**' ':!.github/workflows/temporary-notes-inbound-scan.yml' || true
+          echo '--- path-like notes references outside docs/sub/notes ---'
+          git grep -n -I -E '(\.\./)+notes/|/notes/' -- . ':!docs/sub/notes/**' ':!.github/workflows/temporary-notes-inbound-scan.yml' || true
+          git rm -f .github/workflows/temporary-notes-inbound-scan.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Remove temporary notes inbound scan workflow'
+          git push origin HEAD:batch/ai-lab-documentation-structure/005-add-assistant-workspaces
