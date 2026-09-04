@@ -16,5 +16,5 @@
 
 - Every materialized producer/family/series/model/version/artifact entity has a path-derived `entity.id` matching its current canonical node.
 - Model relations resolve to current canonical entity IDs and required bidirectional endpoints remain synchronized.
-- No `catalog/models/` or `decision-support/selection/models/` ownership path remains in canonical metadata.
+- No `catalog/models/reference/` or `catalog/models/selection/` ownership path remains in canonical metadata.
 - Decision-support conclusions are not represented as intrinsic model facts.
