@@ -1,4 +1,0 @@
-entity:
-  id: catalog/models/reference/producers/google/gemini/models
-  type: catalog-index
-  name: Gemini Models

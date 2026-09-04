@@ -1,0 +1,25 @@
+entity:
+  id: concepts/evaluation-and-measurement/reproducibility
+  name: Reproducibility
+  references:
+    - type: official-site
+      source:
+        url: https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science
+      purposes:
+        - research
+      authority: official
+      note: National Academies consensus work separates computational reproducibility from replicability and explicitly recognizes that terminology and successful repetition criteria vary across scientific and engineering fields.
+    - type: official-site
+      source:
+        url: https://sigsim.acm.org/conf/pads/2024/blog/artifact-evaluation/
+      purposes:
+        - research
+      authority: official
+      note: ACM-style artifact/result evaluation emphasizes documented, complete, exercisable artifacts plus independent reproduction of computational results, including software, data, environment, and result-generation instructions.
+    - type: documentation
+      source:
+        url: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
+      purposes:
+        - research
+      authority: official
+      note: NIST AI RMF Measure requires test sets, metrics, tools, deployment-relevant conditions, and evaluation measures to be documented, providing an AI-system-specific evidence boundary for repeatable evaluation.

@@ -1,0 +1,25 @@
+entity:
+  id: concepts/evaluation-and-measurement/benchmarks
+  name: Benchmarks
+  references:
+    - type: official-site
+      source:
+        url: https://mlcommons.org/benchmarks/
+      purposes:
+        - research
+      authority: official
+      note: MLCommons defines benchmark suites through shared models/tasks, datasets, rules, and measurement procedures intended to support fair and reproducible comparison rather than treating published result tables as the benchmark itself.
+    - type: official-site
+      source:
+        url: https://mlcommons.org/benchmarks/inference-datacenter/
+      purposes:
+        - research
+      authority: official
+      note: MLPerf Inference shows concrete benchmark definitions combining datasets, quality targets, scenarios, load-generation rules, and scenario-specific metrics under versioned benchmark rules.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2211.09110
+      purposes:
+        - research
+      authority: independent
+      note: HELM demonstrates scenario-based, multi-metric benchmark design and highlights that benchmark coverage and standardized evaluation procedure are distinct from any single aggregate score or leaderboard rank.

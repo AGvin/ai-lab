@@ -8,7 +8,7 @@ Repository-owned semantic template registry for AI Lab reader-facing documentati
 docs/.meta/templates/
 ```
 
-This is AI Lab's single active template registry. Template IDs are derived from paths relative to their registry group and omit `.md`; for example, `pages/catalog/models/reference/model.md` has page-template ID `catalog/models/reference/model`.
+This is AI Lab's single active template registry. Template IDs are derived from paths relative to their registry group and omit `.md`; for example, `pages/catalog/models/model.md` has page-template ID `catalog/models/model`, while `pages/decision-support/selection/models/guide.md` has ID `decision-support/selection/models/guide`.
 
 ## Design Principle
 
@@ -67,38 +67,50 @@ docs/.meta/templates/
 │   ├── translations.md
 │   ├── child-navigation.md
 │   ├── official-resources.md
-│   └── entity-relations.md
+│   ├── entity-relations.md
+│   └── discovery-resources.md
 └── pages/
-    └── catalog/
+    ├── catalog/
+    │   ├── landing.md
+    │   ├── domain.md
+    │   ├── category.md
+    │   ├── child-index.md
+    │   ├── alphabetical-index.md
+    │   ├── producers/
+    │   │   └── profile.md
+    │   ├── models/
+    │   │   ├── landing.md
+    │   │   ├── producer.md
+    │   │   ├── family.md
+    │   │   ├── series.md
+    │   │   ├── model.md
+    │   │   ├── version.md
+    │   │   └── artifact.md
+    │   ├── agent-skills/
+    │   │   ├── collection.md
+    │   │   └── registry.md
+    │   ├── integrations/
+    │   │   └── integration.md
+    │   ├── services/
+    │   │   └── service.md
+    │   └── software/
+    │       └── software.md
+    └── decision-support/
         ├── landing.md
-        ├── domain.md
-        ├── category.md
-        ├── child-index.md
-        ├── alphabetical-index.md
-        ├── producers/
-        │   └── profile.md
-        ├── models/
+        ├── selection/
         │   ├── landing.md
-        │   ├── reference/
-        │   │   ├── landing.md
-        │   │   ├── producer.md
-        │   │   ├── family.md
-        │   │   ├── series.md
-        │   │   ├── model.md
-        │   │   ├── version.md
-        │   │   └── artifact.md
-        │   └── selection/
+        │   └── models/
         │       ├── landing.md
-        │       └── guide.md
-        ├── agent-skills/
-        │   └── collection.md
-        ├── services/
-        │   └── service.md
-        └── software/
-            └── software.md
+        │       ├── guide.md
+        │       └── hardware/
+        │           ├── index.md
+        │           └── target.md
+        └── scenarios/
+            ├── index.md
+            └── scenario.md
 ```
 
-Concrete dataset and hardware profile templates are intentionally deferred until representative concrete nodes exist. Their current domain landing pages use the shared `catalog/domain` family.
+Concrete canonical dataset and hardware **profile** templates remain deferred until representative concrete catalog entities justify them. `decision-support/selection/models/hardware/*` is model-specific decision support for a fixed hardware target, not a canonical hardware-profile family.
 
 ## Shared Page Families
 
@@ -110,14 +122,39 @@ Concrete dataset and hardware profile templates are intentionally deferred until
 
 ## Specialized Page Families
 
-Specialized families exist only where reader goals or ownership differ materially: canonical producer profiles; model reference producer/family/series/model/version/artifact identities; model-selection decision support; Agent Skill collections; hosted services; and installable/self-managed software.
+Specialized families exist only where reader goals or ownership differ materially:
+
+- canonical producer profiles;
+- factual model producer/family/series/model/version/artifact identities under `catalog/models/`;
+- model-selection decision support under `decision-support/selection/models/`;
+- combined-context scenarios under `decision-support/scenarios/`;
+- Agent Skill collections and registries;
+- product-specific integrations;
+- hosted services;
+- installable/self-managed software.
+
+Current decision-support template families are:
+
+- `decision-support/selection/models/guide` — task/need/portfolio or other bounded model-selection decisions;
+- `decision-support/selection/models/hardware/*` — device-first model selection for owned/fixed compute;
+- `decision-support/scenarios/*` — combined-context reader situations that may coordinate multiple entity classes.
+
+The logically selected `decision-support/selection/software/` target has no template family yet because its deeper taxonomy is not owner-approved and must not be materialized for symmetry.
 
 ## Output Boundary
 
 A render is constrained by validated global context, effective node metadata, validated current-node entity data, applicable requirements, selected registry definitions, and explicit authored fragments when used. Templates must not scrape reader-facing facts from an existing `README.md`, infer presentation solely from entity-field presence, or invent undocumented children, relations, claims, recommendations, or resources.
 
-The complete `README.md` remains renderer-owned. Durable corrections belong in canonical inputs or template definitions and are applied through the normal validation/render/check workflow when executable support is available.
+The complete reader-facing documentation `README.md` remains renderer-owned. Durable corrections belong in canonical inputs or template definitions and are applied through the normal validation/render/check workflow when executable support is available. A target-specific migration-phase render deferral may temporarily postpone that workflow without transferring README ownership.
+
+This registry README documents the template system itself and is not generated reader output for a documentation node.
 
 ## Selection Boundary
 
-This change materializes template definitions only. It does not assign or change `node.template`, `node.children.template`, layouts, schemas, catalog metadata, or generated README output. Selector migration is a separate bounded change after representative template validation.
+Template definitions and `node.template` selectors are separate canonical inputs. A bounded migration may introduce or update both together when the semantic contract and representative nodes are reviewed in the same package. Changing a template definition does not by itself authorize unrelated selector migration, generated README edits, or broader taxonomy materialization.
+
+
+## Decision-Support Software Templates
+
+- `decision-support/selection/software/landing` — software-selection target landing page.
+- `decision-support/selection/software/guide` — bounded cross-category or within-category software adoption guide.

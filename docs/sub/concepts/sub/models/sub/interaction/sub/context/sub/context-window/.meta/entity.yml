@@ -1,0 +1,25 @@
+entity:
+  id: concepts/models/interaction/context/context-window
+  name: Context Window
+  references:
+    - type: article
+      source:
+        url: https://aclanthology.org/2024.tacl-1.9/
+      purposes:
+        - research
+      authority: independent
+      note: Lost in the Middle demonstrates that nominal long-context capacity does not guarantee uniform or reliable use of information across the available context.
+    - type: article
+      source:
+        url: https://aclanthology.org/2025.acl-long.366/
+      purposes:
+        - research
+      authority: independent
+      note: Current long-context training study distinguishes supported sequence length from effective long-context task performance and evaluation.
+    - type: article
+      source:
+        url: https://www.ijcai.org/proceedings/2024/0917
+      purposes:
+        - research
+      authority: independent
+      note: Survey of context-length extension techniques across positional encoding, attention, training, and inference, illustrating that context limits depend on architecture and implementation rather than one universal mechanism.

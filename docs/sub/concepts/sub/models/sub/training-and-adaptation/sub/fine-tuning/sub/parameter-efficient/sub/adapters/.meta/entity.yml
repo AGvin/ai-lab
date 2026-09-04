@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/training-and-adaptation/fine-tuning/parameter-efficient/adapters
+  name: Adapters
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1902.00751
+      purposes:
+        - research
+      authority: independent
+      note: Foundational adapter work inserts compact trainable bottleneck modules into a frozen pretrained Transformer and stores task-specific parameters separately from the base model.
+    - type: article
+      source:
+        url: https://doi.org/10.1007/s10462-025-11236-4
+      purposes:
+        - research
+      authority: independent
+      note: Current PEFT survey treats adapters as one additive-module family distinct from low-rank reparameterization such as LoRA.

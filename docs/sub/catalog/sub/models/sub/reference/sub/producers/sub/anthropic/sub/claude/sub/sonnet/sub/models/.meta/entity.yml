@@ -1,4 +1,0 @@
-entity:
-  id: catalog/models/reference/producers/anthropic/claude/sonnet/models
-  type: catalog-index
-  name: Sonnet Models

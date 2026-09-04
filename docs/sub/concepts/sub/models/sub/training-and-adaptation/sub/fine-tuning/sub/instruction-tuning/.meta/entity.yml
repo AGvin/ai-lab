@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/training-and-adaptation/fine-tuning/instruction-tuning
+  name: Instruction Tuning
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2109.01652
+      purposes:
+        - research
+      authority: independent
+      note: FLAN demonstrates fine-tuning across diverse tasks expressed through natural-language instructions and evaluates generalization to unseen tasks.
+    - type: article
+      source:
+        url: https://doi.org/10.1145/3777411
+      purposes:
+        - research
+      authority: independent
+      note: Current 2026 survey defines instruction tuning through supervised instruction-output data while documenting the terminology overlap between instruction tuning and SFT in LLM literature.

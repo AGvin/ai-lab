@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/teams/small-business-team
+  type: user-scenario
+  name: Small Business Team

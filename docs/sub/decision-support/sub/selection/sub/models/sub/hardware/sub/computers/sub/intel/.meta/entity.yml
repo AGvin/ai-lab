@@ -1,0 +1,10 @@
+entity:
+  id: decision-support/selection/models/hardware/computers/intel
+  type: model-selection-hardware-target
+  name: Intel Computer Model Selection
+  references:
+    - type: documentation
+      source:
+        url: https://docs.openvino.ai/
+      purposes: [research]
+      authority: official

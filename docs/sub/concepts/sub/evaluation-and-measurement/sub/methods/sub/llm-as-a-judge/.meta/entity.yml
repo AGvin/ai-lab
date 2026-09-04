@@ -1,0 +1,28 @@
+entity:
+  id: concepts/evaluation-and-measurement/methods/llm-as-a-judge
+  name: LLM as a Judge
+  aliases:
+    - LLM-as-a-Judge
+    - Model-Based Evaluation
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2306.05685
+      purposes:
+        - research
+      authority: independent
+      note: Foundational MT-Bench/Chatbot Arena work studies language models as evaluators and documents position, verbosity, self-enhancement, and reasoning biases while calibrating judge agreement against human preferences.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2406.07791
+      purposes:
+        - research
+      authority: independent
+      note: Systematic position-bias study shows judge reliability varies across judge models and tasks and introduces repetition stability, position consistency, and preference-fairness views rather than treating one judgment as stable truth.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2601.17312
+      purposes:
+        - research
+      authority: independent
+      note: Current meta-judging survey consolidates continuing LLM-judge limitations including prompt sensitivity, systematic bias, verbosity effects, and unreliable rationales, reinforcing the need for external validation and calibration.

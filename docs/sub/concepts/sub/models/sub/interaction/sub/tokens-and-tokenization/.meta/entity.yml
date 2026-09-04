@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/interaction/tokens-and-tokenization
+  name: Tokens and Tokenization
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1808.06226
+      purposes:
+        - research
+      authority: independent
+      note: SentencePiece provides a widely used subword-tokenization approach that trains directly from raw text and illustrates that token boundaries are model/tokenizer-specific rather than word boundaries.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1508.07909
+      purposes:
+        - research
+      authority: independent
+      note: Neural machine translation work using byte-pair encoding established influential subword segmentation methods for open-vocabulary language modeling.

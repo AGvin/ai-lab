@@ -14,7 +14,7 @@
 
 - Use `Anthropic` as the page title.
 - Describe Anthropic concisely as an AI research and product company represented here as a producer of documented models, Agent Skill resources, and software.
-- Preserve the Anthropic model-domain view under `catalog/models/reference/producers/anthropic/` as navigation rather than treating the view node itself as a produced entity.
+- Preserve the Anthropic model-domain view under `catalog/models/anthropic/` as navigation rather than treating the view node itself as a produced entity.
 - Include the official website and GitHub organization.
 
 ## Validation

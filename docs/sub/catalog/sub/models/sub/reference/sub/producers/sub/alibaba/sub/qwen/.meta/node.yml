@@ -1,3 +1,0 @@
-node:
-  children:
-    template: catalog/models/reference/series

@@ -1,0 +1,4 @@
+node:
+  template: decision-support/selection/software/landing
+  children:
+    template: decision-support/selection/software/guide

@@ -1,0 +1,27 @@
+entity:
+  id: concepts/ai-engineering/cost-and-capacity
+  name: AI System Cost and Capacity
+  aliases:
+    - Cost and Capacity
+  references:
+    - type: documentation
+      source:
+        url: https://www.finops.org/framework/capabilities/unit-economics/
+      purposes:
+        - research
+      authority: official
+      note: Current FinOps Unit Economics guidance ties technology spending to explicit units of delivered value and supports cost-per-unit reasoning rather than optimizing aggregate spend or raw resource price in isolation.
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/capacity-planning
+      purposes:
+        - research
+      authority: official
+      note: Azure Well-Architected capacity-planning guidance defines capacity through resources required to meet workload performance targets under expected demand while avoiding both underprovisioning and unnecessary overprovisioning.
+    - type: documentation
+      source:
+        url: https://www.rfc-editor.org/rfc/rfc6585.html
+      purposes:
+        - research
+      authority: official
+      note: RFC 6585 defines HTTP 429 as one protocol-level representation of rate limiting and explicitly leaves identity/counting policy implementation-dependent, supporting separation of generic quota/capacity semantics from one provider/API limit format.

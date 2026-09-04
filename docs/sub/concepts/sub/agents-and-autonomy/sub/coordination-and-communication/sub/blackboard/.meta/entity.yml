@@ -1,0 +1,20 @@
+entity:
+  id: concepts/agents-and-autonomy/coordination-and-communication/blackboard
+  name: Blackboard Architecture
+  aliases:
+    - Blackboard
+  references:
+    - type: article
+      source:
+        url: https://doi.org/10.1016/0004-3702(85)90063-3
+      purposes:
+        - research
+      authority: independent
+      note: Hayes-Roth's 1985 Artificial Intelligence paper develops a blackboard control architecture that separates shared domain/problem state from control knowledge and scheduling, establishing blackboard as a durable AI architecture rather than a recent LLM-framework label.
+    - type: article
+      source:
+        url: https://doi.org/10.1609/aimag.v7i3.550
+      purposes:
+        - research
+      authority: independent
+      note: Nii's 1986 AI Magazine treatment defines and contrasts blackboard systems and emphasizes the underlying blackboard problem-solving model, its framework, and diverse application/system designs.

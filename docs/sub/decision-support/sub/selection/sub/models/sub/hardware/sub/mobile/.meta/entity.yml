@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/selection/models/hardware/mobile
+  type: model-selection-hardware-group
+  name: Mobile Model Selection

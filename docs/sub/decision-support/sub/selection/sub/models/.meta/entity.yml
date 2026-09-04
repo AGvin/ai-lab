@@ -1,0 +1,5 @@
+
+entity:
+  id: decision-support/selection/models
+  type: model-selection-index
+  name: Model Selection

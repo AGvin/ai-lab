@@ -1,0 +1,3 @@
+entity:
+  id: catalog/software/agents/hybrid/openai-codex/integrations
+  name: OpenAI Codex Integrations

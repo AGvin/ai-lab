@@ -1,4 +1,0 @@
-entity:
-  id: catalog/models/reference/producers/davidau/qwen3-derived/models
-  type: catalog-index
-  name: DavidAU Qwen3-Derived Model Releases

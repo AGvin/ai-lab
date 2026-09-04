@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated/artifacts/mradermacher-gguf
+  type: model-artifact
+  name: mradermacher GGUF Artifacts
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
+      purposes:
+        - research
+      authority: upstream
+      note: Source model for this GGUF artifact collection.
+  relations:
+    - type: artifact-of
+      target: catalog/models/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated

@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/huihui-ai/qwen3-coder-derived/models
+  type: catalog-index
+  name: huihui.ai Qwen3-Coder-Derived Model Releases

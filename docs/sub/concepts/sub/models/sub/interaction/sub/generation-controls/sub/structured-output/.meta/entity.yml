@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/interaction/generation-controls/structured-output
+  name: Structured Output
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2501.10868
+      purposes:
+        - research
+      authority: independent
+      note: Structured-output benchmark separates schema compliance, constrained-decoding efficiency/coverage, and generated-content quality across real JSON Schema workloads.
+    - type: documentation
+      source:
+        url: https://openai.com/index/introducing-structured-outputs-in-the-api/
+      purposes:
+        - research
+      authority: official
+      note: Official implementation example distinguishes model schema understanding from deterministic constrained decoding used to enforce valid structured output.

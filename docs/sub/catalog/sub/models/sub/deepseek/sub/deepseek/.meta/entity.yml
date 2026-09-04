@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/deepseek/deepseek
+  type: model-family
+  name: DeepSeek
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/deepseek-ai/collections
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/deepseek
+    - type: has-member
+      target: catalog/models/deepseek/deepseek/deepseek-v4

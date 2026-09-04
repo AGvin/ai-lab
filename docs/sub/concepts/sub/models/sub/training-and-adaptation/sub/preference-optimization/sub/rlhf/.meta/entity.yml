@@ -1,0 +1,27 @@
+entity:
+  id: concepts/models/training-and-adaptation/preference-optimization/rlhf
+  name: Reinforcement Learning from Human Feedback
+  aliases:
+    - RLHF
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2009.01325
+      purposes:
+        - research
+      authority: independent
+      note: Human-feedback summarization work trains a reward model from human comparisons and then fine-tunes a policy with reinforcement learning, providing a canonical modern language-model RLHF pipeline.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2203.02155
+      purposes:
+        - research
+      authority: independent
+      note: InstructGPT uses SFT demonstrations, human rankings, a learned reward model, and PPO-based reinforcement learning as a widely cited LLM RLHF implementation.
+    - type: official-site
+      source:
+        url: https://openai.com/index/learning-from-human-preferences/
+      purposes:
+        - research
+      authority: official
+      note: Early human-preference reinforcement-learning work illustrates the broader RLHF pattern beyond language models by learning a reward objective from human comparisons and optimizing behavior through RL.

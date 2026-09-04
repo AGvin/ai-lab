@@ -1,4 +1,0 @@
-entity:
-  id: catalog/models/reference/producers/microsoft/phi/phi-4/models
-  type: catalog-index
-  name: Phi-4 Models

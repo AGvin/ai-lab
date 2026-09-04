@@ -1,0 +1,16 @@
+entity:
+  id: learning/areas/agents-and-automation/integration-and-extensibility/agent-skills/using-agent-skills
+  name: Using Agent Skills
+  references:
+    - type: specification
+      source:
+        url: https://agentskills.io/specification
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://agentskills.io/skill-creation/optimizing-descriptions
+      purposes:
+        - research
+      authority: official

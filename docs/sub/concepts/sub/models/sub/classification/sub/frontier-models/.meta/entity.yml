@@ -1,0 +1,32 @@
+entity:
+  id: concepts/models/classification/frontier-models
+  name: Frontier Models
+  references:
+    - type: article
+      source:
+        url: https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026
+      purposes:
+        - research
+      authority: independent
+      note: Current international scientific-report terminology describes frontier AI relative to today's most advanced capabilities and particularly capable general-purpose AI.
+    - type: article
+      source:
+        url: https://www.aisi.gov.uk/frontier-ai-trends-report
+      purposes:
+        - research
+      authority: official
+      note: Current UK AI Security Institute evidence on the evolving frontier of model and system capabilities across multiple evaluation domains.
+    - type: article
+      source:
+        url: https://www.ncsc.gov.uk/blogs/why-cyber-defenders-need-to-be-ready-for-frontier-ai
+      purposes:
+        - research
+      authority: official
+      note: Current UK NCSC usage defines frontier AI models as the most capable models available at a given time.
+    - type: other
+      source:
+        url: https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng
+      purposes:
+        - research
+      authority: official
+      note: Current consolidated EU AI Act classification for general-purpose AI models with systemic risk; use to distinguish jurisdiction-specific legal criteria from generic frontier-model terminology.

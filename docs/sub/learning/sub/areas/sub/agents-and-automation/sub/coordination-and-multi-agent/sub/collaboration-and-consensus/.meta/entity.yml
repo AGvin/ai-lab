@@ -1,0 +1,25 @@
+entity:
+  id: learning/areas/agents-and-automation/coordination-and-multi-agent/collaboration-and-consensus
+  name: Collaboration and Consensus
+  references:
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2305.14325
+      purposes:
+        - research
+      authority: primary
+      note: Exact legacy multi-agent debate research reference preserved from the Advisory Council / Review Board source; use as empirical evidence with task/model/prompt/aggregation boundaries rather than universal proof of superiority.
+    - type: paper
+      source:
+        url: https://proceedings.iclr.cc/paper_files/paper/2024/hash/25cc3adf8c85f7c70989cb8a97a691a7-Abstract-Conference.html
+      purposes:
+        - research
+      authority: primary
+      note: Exact legacy ChatEval research reference preserved for multi-agent evaluator/debate provenance; conclusions remain evidence-bound rather than canonical coordination truth.
+    - type: paper
+      source:
+        url: https://aclanthology.org/2024.findings-acl.861/
+      purposes:
+        - research
+      authority: primary
+      note: Exact legacy DEBATE devil's-advocate evaluation reference preserved for adversarial-review provenance and calibrated use.

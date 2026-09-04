@@ -1,0 +1,18 @@
+entity:
+  id: concepts/reasoning-and-decision-making/knowledge-representation/knowledge-graphs
+  name: Knowledge Graphs
+  references:
+    - type: article
+      source:
+        url: https://doi.org/10.1145/3447772
+      purposes:
+        - research
+      authority: independent
+      note: Hogan et al. survey knowledge graphs across graph data models, query and validation languages, ontologies, deductive and inductive techniques, emphasizing the broader knowledge-representation family rather than one storage technology or serialization.
+    - type: specification
+      source:
+        url: https://www.w3.org/TR/rdf12-concepts/
+      purposes:
+        - research
+      authority: official
+      note: RDF 1.2 defines one standardized graph-based data model using subject-predicate-object triples and datasets; it is an important knowledge-graph representation option but not a universal requirement for all knowledge graphs.

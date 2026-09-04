@@ -1,0 +1,25 @@
+entity:
+  id: concepts/evaluation-and-measurement/retrieval-evaluation
+  name: Retrieval Evaluation
+  references:
+    - type: documentation
+      source:
+        url: https://www.nist.gov/publications/retrieval-system-evaluation
+      purposes:
+        - research
+      authority: official
+      note: NIST/TREC work establishes standardized information-retrieval evaluation through test collections, relevance judgments, ranked retrieval runs, and experimentally validated comparison procedures.
+    - type: documentation
+      source:
+        url: https://trec.nist.gov/data/reljudge_eng.html
+      purposes:
+        - research
+      authority: official
+      note: TREC relevance-judgment documentation shows that retrieval evaluation depends on a matching document collection, topics/queries, relevance judgments, and explicit treatment of assessed versus unassessed documents.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2104.08663
+      purposes:
+        - research
+      authority: independent
+      note: BEIR demonstrates heterogeneous cross-domain retrieval evaluation across lexical, sparse, dense, late-interaction, and reranking systems, reinforcing architecture-neutral retrieval-effectiveness evaluation.

@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/training-and-adaptation/pretraining
+  name: Pretraining
+  references:
+    - type: documentation
+      source:
+        url: https://csrc.nist.gov/glossary/term/pre_training
+      purposes:
+        - research
+      authority: official
+      note: Current NIST terminology describes pretraining as learning general patterns/features from broad data before downstream specialization or fine-tuning.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2108.07258
+      purposes:
+        - research
+      authority: independent
+      note: Stanford foundation-model report provides the broad-data pretraining and downstream adaptation context for modern reusable base/foundation models.

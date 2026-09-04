@@ -1,0 +1,3 @@
+entity:
+  id: learning/areas/models/adaptation-and-post-training/preference-and-alignment/dpo
+  name: Direct Preference Optimization

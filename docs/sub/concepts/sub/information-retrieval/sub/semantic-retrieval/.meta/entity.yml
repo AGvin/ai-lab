@@ -1,0 +1,13 @@
+entity:
+  id: concepts/information-retrieval/semantic-retrieval
+  name: Semantic Retrieval
+  aliases:
+    - Semantic Search
+  references:
+    - type: article
+      source:
+        url: https://aclanthology.org/2020.emnlp-main.550/
+      purposes:
+        - research
+      authority: independent
+      note: Dense Passage Retrieval demonstrates learned query/passage representations for retrieval beyond sparse lexical matching in open-domain QA.

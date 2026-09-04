@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/moonshot-ai/kimi/models
+  type: catalog-index
+  name: Kimi Models

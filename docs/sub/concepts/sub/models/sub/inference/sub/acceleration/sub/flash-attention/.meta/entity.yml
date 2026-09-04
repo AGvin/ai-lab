@@ -1,0 +1,28 @@
+entity:
+  id: concepts/models/inference/acceleration/flash-attention
+  name: FlashAttention
+  aliases:
+    - Flash Attention
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2205.14135
+      purposes:
+        - research
+      authority: independent
+      note: Original FlashAttention paper defines an IO-aware exact attention algorithm using tiling to reduce HBM reads/writes without approximating dense attention.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2307.08691
+      purposes:
+        - research
+      authority: independent
+      note: FlashAttention-2 improves parallelism and work partitioning while preserving the exact-attention and IO-aware design boundary.
+    - type: repository
+      source:
+        url: https://github.com/Dao-AILab/flash-attention
+      purposes:
+        - research
+        - identification
+      authority: upstream
+      note: Official implementation repository identifies FlashAttention generations and their concrete hardware/software support separately from the generic concept.

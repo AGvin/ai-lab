@@ -1,0 +1,19 @@
+entity:
+  id: catalog/services/benchmarking/arena
+  type: service
+  name: Arena
+  references:
+    - type: official-site
+      source:
+        url: https://arena.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://arena.ai/leaderboard
+      purposes:
+        - identification
+        - research
+      authority: official

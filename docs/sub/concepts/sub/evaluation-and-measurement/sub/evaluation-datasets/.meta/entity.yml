@@ -1,0 +1,18 @@
+entity:
+  id: concepts/evaluation-and-measurement/evaluation-datasets
+  name: Evaluation Datasets
+  references:
+    - type: documentation
+      source:
+        url: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
+      purposes:
+        - research
+      authority: official
+      note: NIST AI RMF Measure guidance requires test sets and evaluation conditions to be documented and ties meaningful evaluation to populations and conditions relevant to intended deployment.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1803.09010
+      purposes:
+        - research
+      authority: independent
+      note: Datasheets for Datasets establishes systematic documentation of dataset motivation, composition, collection process, preprocessing, uses, distribution, and maintenance as necessary context for interpreting dataset-based evidence.

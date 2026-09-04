@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/anthropic/claude/sonnet
+  type: model-series
+  name: Sonnet
+  references:
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/anthropic/claude
+    - type: has-member
+      target: catalog/models/anthropic/claude/sonnet/models/sonnet-5

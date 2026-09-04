@@ -1,0 +1,12 @@
+entity:
+  id: catalog/models/davidau
+  type: model-producer-view
+  name: DavidAU Models
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/DavidAU
+      purposes:
+        - identification
+        - research
+      authority: official

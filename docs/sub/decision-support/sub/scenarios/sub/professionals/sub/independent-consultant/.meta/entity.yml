@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/professionals/independent-consultant
+  type: user-scenario
+  name: Independent Consultant

@@ -5,8 +5,6 @@ Curated entry points into the implemented documentation. This page explains the 
 ## Canonical entity catalog
 
 - [Agent Skills](../../../../../catalog/sub/agent-skills/) — published skill collections and independently published skills when such standalone ownership is verified.
-- [Datasets](../../../../../catalog/sub/datasets/) — canonical dataset entities selected for AI Lab documentation.
-- [Hardware](../../../../../catalog/sub/hardware/) — canonical hardware entities and hardware-specific catalog material.
 - [Models](../../../../../catalog/sub/models/) — canonical model reference plus task-oriented model-selection guidance, with families, series, concrete models, versions, artifacts, derivatives, and model-domain producer views kept distinct from decision support.
 - [Producers](../../../../../catalog/sub/producers/) — canonical companies, organizations, teams, communities, individuals, and other stable publishing or producing identities.
 - [Services](../../../../../catalog/sub/services/) — externally operated AI assets, development services, infrastructure, and model APIs.

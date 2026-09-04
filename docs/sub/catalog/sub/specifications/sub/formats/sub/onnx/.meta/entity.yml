@@ -1,0 +1,17 @@
+entity:
+  id: catalog/specifications/formats/onnx
+  name: ONNX
+  references:
+    - type: specification
+      source:
+        url: https://onnx.ai/onnx/repo-docs/IR.html
+      purposes:
+        - identification
+        - research
+      authority: upstream
+    - type: repository
+      source:
+        url: https://github.com/onnx/onnx
+      purposes:
+        - research
+      authority: upstream

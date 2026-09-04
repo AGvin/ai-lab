@@ -5,3 +5,6 @@ Hosted conversational-assistant and workspace products that combine chat with fi
 ## Child pages
 
 - [`chatgpt/`](./sub/chatgpt/)
+- [`claude/`](./sub/claude/)
+- [`gemini/`](./sub/gemini/)
+- [`grok/`](./sub/grok/)

@@ -1,0 +1,25 @@
+entity:
+  id: concepts/agents-and-autonomy/workflows-and-orchestration
+  name: Workflows and Orchestration
+  references:
+    - type: article
+      source:
+        url: https://www.anthropic.com/engineering/building-effective-agents
+      purposes:
+        - research
+      authority: official
+      note: Anthropic documents composable workflow patterns including routing, orchestrator-workers, and evaluator-optimizer and distinguishes predefined orchestration from model-directed agent control while acknowledging terminology variation.
+    - type: documentation
+      source:
+        url: https://openai.github.io/openai-agents-python/multi_agent/
+      purposes:
+        - research
+      authority: official
+      note: Current OpenAI Agents SDK documentation distinguishes manager-style agents-as-tools from handoffs and separately documents code-controlled classification routing, chaining, evaluator loops, and parallel execution, supporting explicit workflow-control boundaries.
+    - type: documentation
+      source:
+        url: https://docs.langchain.com/oss/python/langchain/multi-agent
+      purposes:
+        - research
+      authority: official
+      note: Current LangChain documentation separates subagent/supervisor, handoff, router, skills, and custom-workflow patterns, providing an independent taxonomy for bounded routing versus ongoing manager control.

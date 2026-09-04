@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/architectures/attention/self-attention
+  name: Self-Attention
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1706.03762
+      purposes:
+        - research
+      authority: independent
+      note: Transformer paper defines self-attention as attention relating positions within a single sequence to compute sequence representations.
+    - type: other
+      source:
+        url: https://web.stanford.edu/~jurafsky/slp3/
+      purposes:
+        - research
+      authority: independent
+      note: Current 2026 Speech and Language Processing treatment covers causal and bidirectional Transformer attention patterns and masking distinctions.

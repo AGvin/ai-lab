@@ -1,0 +1,16 @@
+entity:
+  id: learning/areas/agents-and-automation/integration-and-extensibility/agent-skills
+  name: Agent Skills
+  references:
+    - type: documentation
+      source:
+        url: https://agentskills.io/home
+      purposes:
+        - research
+      authority: official
+    - type: specification
+      source:
+        url: https://agentskills.io/specification
+      purposes:
+        - research
+      authority: official

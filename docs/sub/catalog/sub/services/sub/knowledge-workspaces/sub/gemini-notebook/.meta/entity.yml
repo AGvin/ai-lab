@@ -1,0 +1,30 @@
+entity:
+  id: catalog/services/knowledge-workspaces/gemini-notebook
+  type: service
+  name: Gemini Notebook
+  aliases:
+    - NotebookLM
+  references:
+    - type: article
+      source:
+        url: https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://support.google.com/gemininotebook/answer/16164461
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://support.google.com/gemininotebook/answer/16206563
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google

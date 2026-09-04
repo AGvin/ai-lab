@@ -1,0 +1,25 @@
+entity:
+  id: concepts/modalities/video/video-generation
+  name: Video Generation
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2104.10157
+      purposes:
+        - research
+      authority: independent
+      note: VideoGPT demonstrates autoregressive generation over learned discrete spatiotemporal video representations, providing a non-diffusion video-generation family.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2204.03458
+      purposes:
+        - research
+      authority: independent
+      note: Video Diffusion Models establish a diffusion-based family for unconditional, prediction, and text-conditioned temporally coherent video generation.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2210.02399
+      purposes:
+        - research
+      authority: independent
+      note: Phenaki demonstrates masked-token generation over compressed video representations conditioned on sequences of text prompts and highlights duration/temporal structure as separate video-generation challenges.

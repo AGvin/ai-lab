@@ -1,0 +1,27 @@
+entity:
+  id: concepts/models/behavior-and-failure-modes/reasoning/chain-of-thought
+  name: Chain of Thought
+  aliases:
+    - CoT
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2201.11903
+      purposes:
+        - research
+      authority: independent
+      note: Foundational chain-of-thought prompting work defines CoT through generated intermediate reasoning steps and evaluates few-shot demonstrations that elicit such traces.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2305.04388
+      purposes:
+        - research
+      authority: independent
+      note: Empirical work demonstrates that visible chain-of-thought explanations can systematically fail to report factors that influence model predictions.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2307.13702
+      purposes:
+        - research
+      authority: independent
+      note: Faithfulness study shows that how strongly final answers depend on generated CoT varies materially by model and task.

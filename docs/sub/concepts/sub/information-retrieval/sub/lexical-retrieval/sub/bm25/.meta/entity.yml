@@ -1,0 +1,20 @@
+entity:
+  id: concepts/information-retrieval/lexical-retrieval/bm25
+  name: BM25
+  aliases:
+    - Okapi BM25
+  references:
+    - type: article
+      source:
+        url: https://doi.org/10.1561/1500000019
+      purposes:
+        - research
+      authority: independent
+      note: Robertson and Zaragoza review the probabilistic relevance framework, BM25 derivation, term-frequency saturation, document-length normalization, and related variants.
+    - type: documentation
+      source:
+        url: https://nlp.stanford.edu/IR-book/
+      purposes:
+        - research
+      authority: independent
+      note: Established information-retrieval reference provides surrounding lexical indexing, term weighting, ranking, and evaluation context.

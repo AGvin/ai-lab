@@ -1,0 +1,26 @@
+entity:
+  id: catalog/services/benchmarking/llm-stats
+  type: service
+  name: LLM Stats
+  references:
+    - type: official-site
+      source:
+        url: https://llm-stats.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://llm-stats.com/methodology
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://llm-stats.com/leaderboards/open-llm-leaderboard
+      purposes:
+        - identification
+        - research
+      authority: official

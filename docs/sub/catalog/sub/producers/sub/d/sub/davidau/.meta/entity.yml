@@ -21,4 +21,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target: catalog/models/reference/producers/davidau/qwen3-derived/models/qwen3-the-xiaolong-josiefied-omega-directive-22b
+      target: catalog/models/davidau/qwen3-derived/models/qwen3-the-xiaolong-josiefied-omega-directive-22b

@@ -1,0 +1,18 @@
+entity:
+  id: concepts/reasoning-and-decision-making/planning-and-scheduling
+  name: Planning and Scheduling
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2412.11642
+      purposes:
+        - research
+      authority: independent
+      note: Current introduction to AI planning presents planning through states, actions, goals, state-space search, constraints, hierarchical decomposition, and established planning representations.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2505.19683
+      purposes:
+        - research
+      authority: independent
+      note: Current LLM-planning survey connects modern language-model approaches to broader automated-planning foundations and distinguishes decomposition, search, external planning modules, and learning-based approaches.

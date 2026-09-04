@@ -1,0 +1,18 @@
+entity:
+  id: concepts/machine-learning/learning-theory/overfitting
+  name: Overfitting
+  references:
+    - type: book
+      source:
+        url: https://www.deeplearningbook.org/contents/ml.html
+      purposes:
+        - research
+      authority: independent
+      note: Goodfellow, Bengio, and Courville define overfitting through the relationship between training and generalization error/capacity rather than treating training fit alone as sufficient evidence.
+    - type: article
+      source:
+        url: https://doi.org/10.1073/pnas.1903070116
+      purposes:
+        - research
+      authority: independent
+      note: Belkin et al. show that modern overparameterized/interpolating models can exhibit double-descent behavior and strong test performance, bounding simplistic claims that high capacity or exact training fit necessarily implies overfitting.

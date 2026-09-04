@@ -1,4 +1,0 @@
-entity:
-  id: catalog/models/reference/producers/alibaba/qwen/qwen2-5-coder/models
-  type: catalog-index
-  name: Qwen2.5-Coder Models

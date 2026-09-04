@@ -1,0 +1,41 @@
+entity:
+  id: concepts/ai-engineering/extensibility-and-packaging/plugins
+  name: AI Plugins
+  aliases:
+    - Plugins
+  references:
+    - type: specification
+      source:
+        url: https://agent-plugins.org/specification
+      purposes:
+        - research
+      authority: official
+      note: Agent Plugins 1.0.0 is a published vendor-neutral standard for a portable plugin package containing Agent Skills and MCP server configuration, while intentionally leaving distribution, installation, permissions, UX, and client-specific extension behavior to clients.
+    - type: documentation
+      source:
+        url: https://developers.openai.com/plugins/concepts/plugins
+      purposes:
+        - research
+      authority: official
+      note: Current OpenAI plugin architecture defines plugins as packages people discover, install, share, and publish in ChatGPT and Codex and allows them to combine skills, MCP-backed capabilities, and optional UI, demonstrating a host package/bundle interpretation.
+    - type: documentation
+      source:
+        url: https://cursor.com/docs/plugins
+      purposes:
+        - research
+      authority: official
+      note: Current Cursor documentation supports both the Agent Plugins open standard and Cursor's own richer plugin format, demonstrating that a portable core can coexist with host-specific components, manifests, and marketplace behavior.
+    - type: documentation
+      source:
+        url: https://opencode.ai/docs/plugins/
+      purposes:
+        - research
+      authority: official
+      note: Current OpenCode documentation defines plugins as JavaScript or TypeScript modules that hook events and customize behavior, proving that the wider AI ecosystem term cannot be reduced to one manifest-directory or component-bundle format.
+    - type: documentation
+      source:
+        url: https://code.claude.com/docs/en/plugins
+      purposes:
+        - research
+      authority: official
+      note: Current Claude Code documentation uses a self-contained plugin directory to package and share skills, agents, hooks, MCP servers, and related extension components, providing another host-specific package model within the shared plugin concept.

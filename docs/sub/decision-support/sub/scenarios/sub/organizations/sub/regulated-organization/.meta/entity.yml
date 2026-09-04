@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/organizations/regulated-organization
+  type: user-scenario
+  name: Regulated Organization
