@@ -1,0 +1,10 @@
+entity:
+  id: decision-support/selection/models/hardware/single-board/raspberry-pi
+  type: model-selection-hardware-target
+  name: Raspberry Pi Model Selection
+  references:
+    - type: documentation
+      source:
+        url: https://www.raspberrypi.com/documentation/computers/ai.html
+      purposes: [research]
+      authority: official

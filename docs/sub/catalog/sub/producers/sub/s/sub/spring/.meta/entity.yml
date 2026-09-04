@@ -1,0 +1,28 @@
+entity:
+  id: catalog/producers/s/spring
+  type: organization
+  name: Spring
+  references:
+    - type: official-site
+      source:
+        url: https://spring.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://spring.io/projects/spring-ai
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/spring-projects/spring-ai
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/application-frameworks/application-development/spring-ai

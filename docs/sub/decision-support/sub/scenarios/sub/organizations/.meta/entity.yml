@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/organizations
+  type: user-scenario-index
+  name: Organization User Scenarios

@@ -1,0 +1,20 @@
+entity:
+  id: concepts/models/behavior-and-failure-modes/hallucinations
+  name: Hallucinations
+  aliases:
+    - Confabulation
+  references:
+    - type: documentation
+      source:
+        url: https://doi.org/10.6028/NIST.AI.600-1
+      purposes:
+        - research
+      authority: official
+      note: NIST Generative AI Profile uses `confabulation` for confidently presented erroneous, false, input-divergent, or context-inconsistent generated content and notes `hallucination` as a common alternative term.
+    - type: article
+      source:
+        url: https://doi.org/10.1145/3571730
+      purposes:
+        - research
+      authority: independent
+      note: ACM Computing Surveys review distinguishes hallucination phenomena across natural-language generation tasks, sources, evaluation methods, and mitigation settings.

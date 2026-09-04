@@ -1,0 +1,20 @@
+entity:
+  id: concepts/models/inference/memory-and-context/kv-cache
+  name: KV Cache
+  aliases:
+    - Key-Value Cache
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/transformers/cache_explanation
+      purposes:
+        - research
+      authority: official
+      note: Current Transformers documentation explains storing and reusing attention key/value tensors from previously processed positions during iterative generation.
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/transformers/kv_cache
+      purposes:
+        - research
+      authority: official
+      note: Current cache-strategy documentation distinguishes dynamic, static, offloaded, quantized, sliding/chunked, encoder-decoder, and model-specific cache behavior.

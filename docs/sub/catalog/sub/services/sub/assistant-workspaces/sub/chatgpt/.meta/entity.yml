@@ -1,0 +1,40 @@
+entity:
+  id: catalog/services/assistant-workspaces/chatgpt
+  type: service
+  name: ChatGPT
+  references:
+    - type: official-site
+      source:
+        url: https://chatgpt.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://openai.com/chatgpt/overview/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://openai.com/policies/terms-of-use/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://help.openai.com/en/collections/3742473-chatgpt
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

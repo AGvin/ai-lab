@@ -1,0 +1,10 @@
+entity:
+  id: decision-support/selection/models/hardware/embedded/nxp
+  type: model-selection-hardware-target
+  name: NXP Embedded Model Selection
+  references:
+    - type: official-site
+      source:
+        url: https://www.nxp.com/design/design-center/software/development-software/eiq-ml-development-environment:EIQ
+      purposes: [research]
+      authority: official

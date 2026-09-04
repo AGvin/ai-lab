@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated/artifacts
+  type: catalog-index
+  name: Huihui Qwen3 Coder 30B A3B Artifacts

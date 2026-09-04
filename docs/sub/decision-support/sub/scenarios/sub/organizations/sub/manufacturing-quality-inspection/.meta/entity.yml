@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/organizations/manufacturing-quality-inspection
+  type: user-scenario
+  name: Manufacturing Quality Inspection

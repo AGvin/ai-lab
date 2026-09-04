@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/agent-frameworks/autogen
+  type: software
+  name: AutoGen
+  references:
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/autogen/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/microsoft/autogen
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

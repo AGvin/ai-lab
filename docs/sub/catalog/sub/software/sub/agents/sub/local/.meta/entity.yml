@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/agents/local
+  type: catalog-index
+  name: Local Agents

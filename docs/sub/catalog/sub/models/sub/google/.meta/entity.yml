@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/google
+  type: model-producer-view
+  name: Google models
+  references:
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/models
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemma/
+      purposes:
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/google
+      purposes:
+        - research
+      authority: official

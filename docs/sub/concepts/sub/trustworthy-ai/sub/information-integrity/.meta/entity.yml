@@ -1,0 +1,13 @@
+entity:
+  id: concepts/trustworthy-ai/information-integrity
+  name: AI Information Integrity
+  aliases:
+    - Information Integrity
+  references:
+    - type: documentation
+      source:
+        url: https://doi.org/10.6028/NIST.AI.600-1
+      purposes:
+        - research
+      authority: official
+      note: The NIST Generative AI Profile identifies information integrity as a GAI risk area and recommends provenance, source/citation verification, grounded RAG/TEVV data, monitoring, and related controls across the AI lifecycle.

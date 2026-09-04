@@ -1,0 +1,28 @@
+entity:
+  id: catalog/services/knowledge-workspaces/tettra
+  type: service
+  name: Tettra
+  references:
+    - type: official-site
+      source:
+        url: https://tettra.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://tettra.com/product/
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://tettra.com/tos/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/tettra-inc

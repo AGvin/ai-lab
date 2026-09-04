@@ -1,0 +1,20 @@
+entity:
+  id: concepts/ai-engineering/observability
+  name: AI System Observability
+  aliases:
+    - Observability
+  references:
+    - type: documentation
+      source:
+        url: https://opentelemetry.io/docs/concepts/observability-primer/
+      purposes:
+        - research
+      authority: official
+      note: Current OpenTelemetry observability guidance defines telemetry signals including logs, metrics, spans, and distributed traces and explains trace/span context for reconstructing request paths through distributed systems.
+    - type: documentation
+      source:
+        url: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
+      purposes:
+        - research
+      authority: official
+      note: NIST AI RMF Measure requires production monitoring of AI-system functionality and behavior and documented evaluation/measurement conditions, grounding observability in ongoing evidence rather than infrastructure uptime alone.

@@ -1,0 +1,25 @@
+entity:
+  id: catalog/producers/a/andrew-kane
+  type: person
+  name: Andrew Kane
+  aliases:
+    - ankane
+  references:
+    - type: other
+      source:
+        url: https://github.com/ankane
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official GitHub profile for Andrew Kane.
+    - type: repository
+      source:
+        url: https://github.com/pgvector/pgvector
+      purposes:
+        - research
+      authority: official
+      note: Official pgvector repository; current extension metadata names Andrew Kane as maintainer and generator.
+  relations:
+    - type: produces
+      target: catalog/software/data-infrastructure/vector-search/pgvector

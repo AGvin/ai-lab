@@ -1,0 +1,12 @@
+entity:
+  id: catalog/agent-skills/registries/agentskills-to
+  type: skill-registry
+  name: AgentSkills.to
+  references:
+    - type: official-site
+      source:
+        url: https://www.agentskills.to/
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/z-ai/glm
+  type: model-family
+  name: GLM
+  references:
+    - type: documentation
+      source:
+        url: https://docs.z.ai/guides/overview/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/z/z-ai
+    - type: has-member
+      target: catalog/models/z-ai/glm/models/glm-5v-turbo

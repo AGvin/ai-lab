@@ -1,0 +1,25 @@
+entity:
+  id: concepts/trustworthy-ai/security-and-resilience/jailbreaking
+  name: Jailbreaking
+  references:
+    - type: documentation
+      source:
+        url: https://doi.org/10.6028/NIST.AI.100-2e2025
+      purposes:
+        - research
+      authority: official
+      note: NIST AI 100-2 E2025 defines a jailbreak as a direct prompting attack intended to circumvent restrictions placed on model outputs, providing the narrow prompt-based boundary used in current NIST adversarial-ML terminology.
+    - type: documentation
+      source:
+        url: https://github.com/mitre-atlas/atlas-data/blob/main/dist/v6/ATLAS-2026.07.yaml
+      purposes:
+        - research
+      authority: official
+      note: MITRE ATLAS 2026.07 models AML.T0054 LLM Jailbreak as a separate realized technique for bypassing safety/alignment behaviors or guardrails and explicitly includes both adversarial prompting and direct modification of model weights or safety mechanisms.
+    - type: documentation
+      source:
+        url: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+      purposes:
+        - research
+      authority: independent
+      note: OWASP LLM01:2025 treats jailbreaking as a form of prompt injection focused on causing a model to disregard safety protocols, providing an application-security taxonomy boundary that overlaps but is narrower than the current MITRE ATLAS technique.

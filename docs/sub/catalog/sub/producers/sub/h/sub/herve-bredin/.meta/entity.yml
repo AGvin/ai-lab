@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/h/herve-bredin
+  type: individual
+  name: Hervé Bredin
+  references:
+    - type: repository
+      source:
+        url: https://github.com/pyannote/pyannote-audio/blob/main/pyproject.toml
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current pyannote.audio package metadata identifies Hervé BREDIN as the author.
+    - type: official-site
+      source:
+        url: https://www.pyannote.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-libraries/pyannote-audio

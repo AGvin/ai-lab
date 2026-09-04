@@ -1,0 +1,18 @@
+entity:
+  id: concepts/ai-engineering/integration-and-interoperability
+  name: AI Integration and Interoperability
+  references:
+    - type: specification
+      source:
+        url: https://modelcontextprotocol.io/specification/2026-07-28
+      purposes:
+        - research
+      authority: official
+      note: The current MCP specification defines a standardized integration boundary between AI/LLM applications and external context, data, tools, and capabilities, providing one concrete interoperability standard within the broader AI-system domain.
+    - type: specification
+      source:
+        url: https://a2a-protocol.org/latest/
+      purposes:
+        - research
+      authority: official
+      note: The current A2A specification defines interoperable agent-to-agent communication and explicitly distinguishes its agent collaboration boundary from MCP's tool/data integration boundary, supporting a reusable AI integration/interoperability domain without conflating formal protocol contracts.

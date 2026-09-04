@@ -1,0 +1,26 @@
+entity:
+  id: catalog/producers/e/elementl-inc
+  type: organization
+  name: Elementl, Inc.
+  aliases:
+    - Dagster Labs
+  references:
+    - type: other
+      source:
+        url: https://dagster.io/eula
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Dagster's EULA identifies the legal provider as Elementl, Inc. d/b/a Dagster Labs.
+    - type: article
+      source:
+        url: https://dagster.io/blog/introducing-dagster-labs
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: First-party company history identifies Elementl/Dagster Labs as the company behind the Dagster open-source project and Dagster+.
+  relations:
+    - type: produces
+      target: catalog/software/workflow-engines/data-and-compute-orchestration/dagster

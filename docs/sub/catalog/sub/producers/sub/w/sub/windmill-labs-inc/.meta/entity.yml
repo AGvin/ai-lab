@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/w/windmill-labs-inc
+  type: organization
+  name: Windmill Labs, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://www.windmill.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.windmill.dev/terms_of_service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current official terms identifying Windmill Labs, Inc.
+    - type: repository
+      source:
+        url: https://github.com/windmill-labs/windmill
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/automation/developer-automation/windmill

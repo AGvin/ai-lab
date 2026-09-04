@@ -1,0 +1,6 @@
+node:
+  template: catalog/child-index
+  children:
+    template: decision-support/selection/models/guide
+    children:
+      template: decision-support/selection/models/guide

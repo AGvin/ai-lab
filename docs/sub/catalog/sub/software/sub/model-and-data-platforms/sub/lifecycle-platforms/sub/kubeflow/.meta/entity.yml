@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/model-and-data-platforms/lifecycle-platforms/kubeflow
+  type: software
+  name: Kubeflow
+  references:
+    - type: documentation
+      source:
+        url: https://www.kubeflow.org/docs/started/introduction/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.cncf.io/blog/2023/07/25/kubeflow-brings-mlops-to-the-cncf-incubator/
+      purposes:
+        - research
+      authority: upstream
+      note: CNCF records that Kubeflow was created by Google in 2017 and later entered CNCF governance.
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google

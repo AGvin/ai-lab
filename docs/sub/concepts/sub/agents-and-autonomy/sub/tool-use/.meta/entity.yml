@@ -1,0 +1,25 @@
+entity:
+  id: concepts/agents-and-autonomy/tool-use
+  name: Tool Use
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2210.03629
+      purposes:
+        - research
+      authority: independent
+      note: ReAct demonstrates model-generated actions that interact with external environments and feed observations back into subsequent model decisions.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2302.04761
+      purposes:
+        - research
+      authority: independent
+      note: Toolformer demonstrates language-model use of external tools through learned API-call insertion, illustrating that tool use is broader than one provider's function-calling interface.
+    - type: documentation
+      source:
+        url: https://help.openai.com/en/articles/8555517-function-calling-updates
+      purposes:
+        - research
+      authority: official
+      note: Current OpenAI documentation describes function calling as a provider-specific structured interface connecting models to external tools and systems.

@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/a/anysphere-inc
+  type: organization
+  name: Anysphere, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://cursor.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://cursor.com/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official terms identifying Anysphere, Inc. as the maker of Cursor.
+  relations:
+    - type: produces
+      target: catalog/software/development-tools/code-editors/cursor

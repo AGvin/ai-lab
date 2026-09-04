@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/t/tettra-inc
+  type: organization
+  name: Tettra, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://tettra.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://tettra.com/tos/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/knowledge-workspaces/tettra

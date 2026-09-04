@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/a/alibaba-cloud
+  type: organization
+  name: Alibaba Cloud
+  references:
+    - type: official-site
+      source:
+        url: https://www.alibabacloud.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.alibabagroup.com/en-US/about-alibaba-businesses-1747835448811585536
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: part-of
+      target: catalog/producers/a/alibaba-group
+    - type: has-part
+      target: catalog/producers/q/qwen-team

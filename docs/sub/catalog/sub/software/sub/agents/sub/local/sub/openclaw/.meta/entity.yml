@@ -1,0 +1,32 @@
+entity:
+  id: catalog/software/agents/local/openclaw
+  type: software
+  name: OpenClaw
+  references:
+    - type: official-site
+      source:
+        url: https://openclaw.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.openclaw.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/openclaw/openclaw
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current upstream README identifies OpenClaw as built by Peter Steinberger and the community.
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/peter-steinberger
+    - type: maintained-by
+      target: catalog/producers/o/openclaw-foundation

@@ -1,0 +1,51 @@
+entity:
+  id: catalog/producers/h/hugging-face-inc
+  type: organization
+  name: Hugging Face, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://huggingface.co/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://huggingface.co/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official Hugging Face Terms of Service identifying Hugging Face, Inc.
+  relations:
+    - type: produces
+      target: catalog/services/ai-assets/hugging-face-hub
+    - type: produces
+      target: catalog/software/agent-frameworks/smolagents
+    - type: produces
+      target: catalog/services/infrastructure/hugging-face-inference-endpoints
+    - type: produces
+      target: catalog/services/infrastructure/hugging-face-spaces
+    - type: produces
+      target: catalog/services/model-apis/hugging-face-inference-providers
+    - type: produces
+      target: catalog/software/model-and-data-platforms/data-libraries/datasets
+    - type: produces
+      target: catalog/software/model-and-data-platforms/hub-clients/huggingface-hub
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/accelerate
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/peft
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/trl
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-libraries/diffusers
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-libraries/transformers
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/text-embeddings-inference
+    - type: has-part
+      target: catalog/producers/g/ggml-ai
+    - type: owns
+      target: catalog/software/model-and-data-platforms/dataset-curation/argilla

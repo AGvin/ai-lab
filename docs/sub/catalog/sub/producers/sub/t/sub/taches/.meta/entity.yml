@@ -1,0 +1,24 @@
+entity:
+  id: catalog/producers/t/taches
+  type: person
+  name: TÂCHES
+  references:
+    - type: repository
+      source:
+        url: https://github.com/gsd-build/get-shit-done
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Archived original GSD repository whose metadata identifies the project as by TÂCHES.
+    - type: other
+      source:
+        url: https://github.com/gsd-build/get-shit-done/blob/main/package.json
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: First-party package metadata names TÂCHES as author.
+  relations:
+    - type: produces
+      target: catalog/software/development-tools/agentic-development-systems/get-shit-done

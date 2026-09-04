@@ -1,0 +1,26 @@
+entity:
+  id: catalog/producers/p/peter-steinberger
+  type: individual
+  name: Peter Steinberger
+  aliases:
+    - steipete
+  references:
+    - type: repository
+      source:
+        url: https://github.com/openclaw/openclaw
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current OpenClaw upstream README identifies OpenClaw as built by Peter Steinberger and the community.
+    - type: other
+      source:
+        url: https://github.com/openclaw/openclaw/releases
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current signed OpenClaw releases identify Peter Steinberger (steipete) as an active release author.
+  relations:
+    - type: produces
+      target: catalog/software/agents/local/openclaw

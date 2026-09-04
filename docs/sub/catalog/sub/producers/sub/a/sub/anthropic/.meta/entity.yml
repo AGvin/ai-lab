@@ -1,0 +1,28 @@
+entity:
+  id: catalog/producers/a/anthropic
+  type: organization
+  name: Anthropic
+  references:
+    - type: official-site
+      source:
+        url: https://www.anthropic.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/anthropics
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/anthropic/claude
+    - type: produces
+      target: catalog/agent-skills/collections/anthropic-skills
+    - type: produces
+      target: catalog/software/agents/hybrid/claude-code
+    - type: produces
+      target: catalog/services/assistant-workspaces/claude

@@ -1,0 +1,36 @@
+entity:
+  id: catalog/producers/g/ggml-ai
+  type: organization
+  name: ggml.ai
+  aliases:
+    - ggml
+    - ggml-org
+  references:
+    - type: official-site
+      source:
+        url: https://ggml.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ggml-org/llama.cpp
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://github.com/ggml-org/llama.cpp/discussions/19759
+      purposes:
+        - research
+      authority: official
+      note: First-party 2026 announcement identifies ggml.ai as the founding team of llama.cpp and states that the team continues to lead, maintain, and support the project after joining Hugging Face.
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/llama-cpp
+    - type: maintains
+      target: catalog/software/inference-runtimes/inference-engines/llama-cpp
+    - type: part-of
+      target: catalog/producers/h/hugging-face-inc

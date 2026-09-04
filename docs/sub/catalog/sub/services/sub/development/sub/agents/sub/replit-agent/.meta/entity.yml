@@ -1,0 +1,22 @@
+entity:
+  id: catalog/services/development/agents/replit-agent
+  type: service
+  name: Replit Agent
+  references:
+    - type: official-site
+      source:
+        url: https://replit.com/ai
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.replit.com/learn/build-with-agent
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/r/replit-inc

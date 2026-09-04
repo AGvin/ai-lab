@@ -1,0 +1,11 @@
+entity:
+  id: catalog/software/development-tools/code-editors/cursor/extensions
+  type: catalog-index
+  name: Cursor Extensions
+  references:
+    - type: documentation
+      source:
+        url: https://cursor.com/docs
+      purposes:
+        - research
+      authority: official

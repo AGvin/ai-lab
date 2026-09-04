@@ -1,0 +1,27 @@
+entity:
+  id: catalog/producers/a/amazon-web-services
+  type: organization
+  name: Amazon Web Services
+  aliases:
+    - AWS
+  references:
+    - type: official-site
+      source:
+        url: https://aws.amazon.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: AWS Open Source launch article establishing Strands Agents as an AWS open-source SDK.
+  relations:
+    - type: produces
+      target: catalog/software/agent-frameworks/strands-agents
+    - type: produces
+      target: catalog/software/agents/local/kiro-cli

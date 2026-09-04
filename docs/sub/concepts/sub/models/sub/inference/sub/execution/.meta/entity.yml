@@ -1,0 +1,11 @@
+entity:
+  id: concepts/models/inference/execution
+  name: Inference Execution
+  references:
+    - type: documentation
+      source:
+        url: https://onnxruntime.ai/docs/execution-providers/
+      purposes:
+        - research
+      authority: official
+      note: ONNX Runtime execution providers demonstrate that model graphs or subgraphs can execute across CPU, GPU, accelerators, or heterogeneous provider combinations according to runtime capabilities.

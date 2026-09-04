@@ -1,0 +1,29 @@
+entity:
+  id: catalog/software/workflow-engines/data-and-compute-orchestration/argo-workflows
+  type: software
+  name: Argo Workflows
+  references:
+    - type: documentation
+      source:
+        url: https://argo-workflows.readthedocs.io/en/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/argoproj/argo-workflows
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.cncf.io/reports/argo-project-journey-report/
+      purposes:
+        - research
+      authority: upstream
+      note: CNCF records that Argo Workflows began at Applatix, which was later acquired by Intuit, before Argo entered CNCF governance.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/applatix

@@ -1,0 +1,11 @@
+entity:
+  id: concepts/human-ai-interaction
+  name: Human-AI Interaction
+  references:
+    - type: documentation
+      source:
+        url: https://airc.nist.gov/airmf-resources/airmf/appendices/app-c-ai-risk-management-and-human-ai-interaction/
+      purposes:
+        - research
+      authority: official
+      note: NIST AI RMF human-AI interaction guidance distinguishes human roles, responsibilities, decision configurations, oversight needs, and human-factor limitations across AI systems.

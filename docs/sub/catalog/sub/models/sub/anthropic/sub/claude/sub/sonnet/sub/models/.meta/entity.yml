@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/anthropic/claude/sonnet/models
+  type: catalog-index
+  name: Sonnet Models

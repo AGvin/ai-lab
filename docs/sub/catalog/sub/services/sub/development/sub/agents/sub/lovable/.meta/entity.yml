@@ -1,0 +1,22 @@
+entity:
+  id: catalog/services/development/agents/lovable
+  type: service
+  name: Lovable
+  references:
+    - type: official-site
+      source:
+        url: https://lovable.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.lovable.dev/introduction/welcome
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/lovable-labs-inc

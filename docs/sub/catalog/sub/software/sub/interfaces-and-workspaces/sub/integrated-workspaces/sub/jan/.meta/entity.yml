@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/integrated-workspaces/jan
+  type: software
+  name: Jan
+  references:
+    - type: documentation
+      source:
+        url: https://www.jan.ai/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/janhq/jan
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.jan.ai/docs/desktop/privacy-policy
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: First-party privacy policy identifies Menlo Research Pte Ltd as the company providing Jan services.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/menlo-research-pte-ltd

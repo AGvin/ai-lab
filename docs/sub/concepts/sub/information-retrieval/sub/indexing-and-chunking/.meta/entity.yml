@@ -1,0 +1,25 @@
+entity:
+  id: concepts/information-retrieval/indexing-and-chunking
+  name: Indexing and Chunking
+  references:
+    - type: documentation
+      source:
+        url: https://nlp.stanford.edu/IR-book/
+      purposes:
+        - research
+      authority: independent
+      note: Established information-retrieval reference covers document/term representation, index construction, postings, and the role of indexed retrieval units.
+    - type: article
+      source:
+        url: https://aclanthology.org/2025.findings-acl.422/
+      purposes:
+        - research
+      authority: independent
+      note: Current document-segmentation study shows that retrieval behavior is materially affected by chunk boundaries and granularity rather than one universal chunk size.
+    - type: article
+      source:
+        url: https://aclanthology.org/2024.acl-long.71/
+      purposes:
+        - research
+      authority: independent
+      note: Chunking-free retrieval research demonstrates that explicit pre-segmentation is an implementation choice rather than a universal requirement of retrieval systems.

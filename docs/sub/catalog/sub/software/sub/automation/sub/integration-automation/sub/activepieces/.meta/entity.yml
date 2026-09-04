@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/automation/integration-automation/activepieces
+  type: software
+  name: Activepieces
+  references:
+    - type: official-site
+      source:
+        url: https://www.activepieces.com/
+      purposes:
+        - identification
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.activepieces.com/docs/overview/welcome
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/activepieces/activepieces
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/activepieces-inc

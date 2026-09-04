@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/s/swe-agent
+  type: organization
+  name: SWE-agent
+  references:
+    - type: official-site
+      source:
+        url: https://mini-swe-agent.com/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/SWE-agent
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agents/local/mini-swe-agent

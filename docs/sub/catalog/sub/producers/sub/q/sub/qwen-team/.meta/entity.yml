@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/q/qwen-team
+  type: team
+  name: Qwen Team
+  references:
+    - type: official-site
+      source:
+        url: https://qwen.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/QwenLM
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: part-of
+      target: catalog/producers/a/alibaba-cloud
+    - type: produces
+      target: catalog/models/alibaba/qwen
+    - type: produces
+      target: catalog/models/alibaba/qwen/qwen2-5-coder
+    - type: produces
+      target: catalog/models/alibaba/qwen/qwen3-coder
+    - type: produces
+      target: catalog/models/alibaba/qwen/qwen3

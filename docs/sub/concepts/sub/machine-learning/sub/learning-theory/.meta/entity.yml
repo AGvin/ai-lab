@@ -1,0 +1,11 @@
+entity:
+  id: concepts/machine-learning/learning-theory
+  name: Learning Theory
+  references:
+    - type: book
+      source:
+        url: https://www.deeplearningbook.org/contents/ml.html
+      purposes:
+        - research
+      authority: independent
+      note: Goodfellow, Bengio, and Courville frame machine-learning generalization through training versus generalization error, capacity, underfitting/overfitting, bias, variance, and regularization while making assumptions and target distributions part of the analysis.

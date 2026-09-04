@@ -1,0 +1,47 @@
+entity:
+  id: catalog/software/agents/local/pi
+  type: software
+  name: Pi
+  references:
+    - type: official-site
+      source:
+        url: https://pi.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://pi.dev/docs/latest
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/earendil-works/pi
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/earendil-works/pi/blob/main/packages/coding-agent/package.json
+      purposes:
+        - research
+      authority: official
+      note: Current coding-agent package metadata identifies Mario Zechner as the author.
+    - type: article
+      source:
+        url: https://pi.dev/news/2026/5/7/pi-has-a-new-home
+      purposes:
+        - research
+      authority: official
+      note: Official Pi announcement documenting the move to Earendil Works while preserving the product identity and direction.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mario-zechner
+    - type: maintained-by
+      target: catalog/producers/e/earendil-inc
+    - type: has-derivative
+      target: catalog/software/agents/local/omp

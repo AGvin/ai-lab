@@ -1,0 +1,22 @@
+entity:
+  id: concepts/modalities/vision/outpainting
+  name: Image Outpainting
+  aliases:
+    - Outpainting
+    - Image Extension
+    - Image Extrapolation
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1908.07007
+      purposes:
+        - research
+      authority: independent
+      note: Boundless formulates learned image extension as generating coherent visual content beyond existing image boundaries and explicitly distinguishes the weaker boundary constraints from ordinary internal inpainting.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2104.00675
+      purposes:
+        - research
+      authority: independent
+      note: In&Out defines image outpainting as semantically consistent extension beyond available image content and highlights its greater ambiguity/diversity relative to inpainting.

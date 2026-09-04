@@ -1,0 +1,25 @@
+entity:
+  id: concepts/models/classification/language-model-scale
+  name: Language Model Scale
+  references:
+    - type: documentation
+      source:
+        url: https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-are-small-language-models
+      purposes:
+        - research
+      authority: official
+      note: Current vendor definition of SLMs as smaller, lower-resource language models rather than a deployment-mode category.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2409.15790
+      purposes:
+        - research
+      authority: independent
+      note: Survey using a bounded 100M-5B study scope for SLMs, illustrating that numerical ranges need an explicit comparison context.
+    - type: article
+      source:
+        url: https://www.microsoft.com/en-us/research/uploads/prod/2025/01/WEF-2025_Leave-Behind_Phi-4.pdf
+      purposes:
+        - research
+      authority: official
+      note: Microsoft Research describes the 14B-parameter Phi-4 as an SLM, providing a materially different current scale usage from narrower research scopes.

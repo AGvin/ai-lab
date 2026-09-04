@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/organizations/legal-and-contract-operations
+  type: user-scenario
+  name: Legal and Contract Operations

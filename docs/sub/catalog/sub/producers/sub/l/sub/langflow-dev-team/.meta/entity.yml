@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/l/langflow-dev-team
+  type: organization
+  name: Langflow Dev Team
+  references:
+    - type: official-site
+      source:
+        url: https://www.langflow.org/people/langflow-dev-team
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Langflow site identifies the Langflow Dev Team and publishes current 2026 release posts under that team identity.
+    - type: repository
+      source:
+        url: https://github.com/langflow-ai/langflow/blob/main/pyproject.toml
+      purposes:
+        - research
+      authority: official
+      note: Current package metadata lists the active Langflow maintainers.
+  relations:
+    - type: maintains
+      target: catalog/software/workflow-engines/visual-ai-workflows/langflow

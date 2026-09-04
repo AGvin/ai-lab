@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/data-infrastructure
+  type: catalog-index
+  name: Data Infrastructure

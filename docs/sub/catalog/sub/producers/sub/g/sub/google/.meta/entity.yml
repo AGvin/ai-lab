@@ -1,0 +1,48 @@
+entity:
+  id: catalog/producers/g/google
+  type: organization
+  name: Google
+  references:
+    - type: official-site
+      source:
+        url: https://ai.google.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/google
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://opensource.googleblog.com/2022/10/kubeflow-applies-to-become-a-cncf-incubating-project.html
+      purposes:
+        - research
+      authority: official
+      note: Google records that it created and open-sourced Kubeflow and identifies Kubeflow Pipelines as one of the project components.
+  relations:
+    - type: produces
+      target: catalog/models/google/gemini
+    - type: produces
+      target: catalog/models/google/gemma
+    - type: produces
+      target: catalog/services/development/agents/jules
+    - type: produces
+      target: catalog/software/agents/local/gemini-cli
+    - type: produces
+      target: catalog/software/application-frameworks/application-development/genkit
+    - type: produces
+      target: catalog/software/agent-frameworks/google-adk
+    - type: produces
+      target: catalog/software/model-and-data-platforms/lifecycle-platforms/kubeflow
+    - type: produces
+      target: catalog/software/workflow-engines/data-and-compute-orchestration/kubeflow-pipelines
+    - type: produces
+      target: catalog/services/assistant-workspaces/gemini
+    - type: produces
+      target: catalog/services/knowledge-workspaces/gemini-notebook
+    - type: has-part
+      target: catalog/producers/g/google-deepmind

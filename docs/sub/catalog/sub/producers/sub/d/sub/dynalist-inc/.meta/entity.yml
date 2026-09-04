@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/d/dynalist-inc
+  type: organization
+  name: Dynalist Inc.
+  references:
+    - type: other
+      source:
+        url: https://obsidian.md/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Obsidian Terms of Service identify Dynalist Inc. as the legal company providing Obsidian software and services.
+    - type: other
+      source:
+        url: https://obsidian.md/privacy
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/interfaces-and-workspaces/knowledge-workspaces/obsidian

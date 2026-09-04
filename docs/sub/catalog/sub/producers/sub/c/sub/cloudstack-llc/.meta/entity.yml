@@ -1,0 +1,16 @@
+entity:
+  id: catalog/producers/c/cloudstack-llc
+  type: organization
+  name: CloudStack, LLC
+  references:
+    - type: other
+      source:
+        url: https://msty.ai/terms/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Msty Terms of Service identify CloudStack, LLC as owner and operator of Msty AI and governing Msty Studio.
+  relations:
+    - type: produces
+      target: catalog/software/interfaces-and-workspaces/integrated-workspaces/msty

@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/k/khoj-inc
+  type: organization
+  name: Khoj Inc.
+  references:
+    - type: other
+      source:
+        url: https://khoj.dev/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Khoj Terms of Service identify Khoj Inc. as the service provider.
+    - type: other
+      source:
+        url: https://khoj.dev/privacy-policy
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/interfaces-and-workspaces/knowledge-workspaces/khoj

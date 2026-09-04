@@ -1,0 +1,17 @@
+node:
+  schema: default
+
+  requirements:
+    path: requirements.md
+
+  children:
+    schema: default
+
+  localization:
+    schema: localized
+    default_locale: en_US
+    locales:
+      - uk_UA
+
+entity:
+  schema: default

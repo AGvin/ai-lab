@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/knowledge-workspaces
+  type: catalog-index
+  name: Knowledge Workspaces

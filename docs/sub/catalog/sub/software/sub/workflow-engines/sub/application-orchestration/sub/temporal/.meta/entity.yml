@@ -1,0 +1,29 @@
+entity:
+  id: catalog/software/workflow-engines/application-orchestration/temporal
+  type: software
+  name: Temporal
+  references:
+    - type: documentation
+      source:
+        url: https://docs.temporal.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/temporalio/temporal
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://temporal.io/about
+      purposes:
+        - research
+      authority: official
+      note: Current Temporal history describes the Cadence lineage, company founders, and open-source project boundary.
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/temporal-technologies-inc

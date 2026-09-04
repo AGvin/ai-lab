@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/mistral-ai/mistral-small
+  type: model-family
+  name: Mistral Small
+  references:
+    - type: release-notes
+      source:
+        url: https://mistral.ai/news/mistral-small-4/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai
+    - type: has-member
+      target: catalog/models/mistral-ai/mistral-small/models/mistral-small-4

@@ -1,0 +1,29 @@
+entity:
+  id: catalog/software/workflow-engines/application-orchestration/restate
+  type: software
+  name: Restate
+  references:
+    - type: documentation
+      source:
+        url: https://docs.restate.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/restatedev/restate
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://restate.dev/blog/why-we-built-restate
+      purposes:
+        - research
+      authority: official
+      note: First-party project history documents the Restate team's origin and product direction.
+  relations:
+    - type: produced-by
+      target: catalog/producers/r/restate-gmbh

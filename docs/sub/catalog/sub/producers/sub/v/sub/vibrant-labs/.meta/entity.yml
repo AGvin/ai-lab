@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/v/vibrant-labs
+  type: organization
+  name: Vibrant Labs
+  references:
+    - type: official-site
+      source:
+        url: https://vibrantlabs.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://vibrantlabs.com/about
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: First-party company history stating that the team created Ragas.
+    - type: repository
+      source:
+        url: https://github.com/vibrantlabsai/ragas
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/ragas

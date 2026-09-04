@@ -1,0 +1,12 @@
+entity:
+  id: catalog/services/benchmarking/benchlm
+  type: service
+  name: BenchLM
+  references:
+    - type: official-site
+      source:
+        url: https://benchlm.ai/
+      purposes:
+        - identification
+        - research
+      authority: official

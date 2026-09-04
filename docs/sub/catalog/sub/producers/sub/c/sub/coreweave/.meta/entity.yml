@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/c/coreweave
+  type: organization
+  name: CoreWeave
+  references:
+    - type: official-site
+      source:
+        url: https://www.coreweave.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/llm-d/llm-d
+      purposes:
+        - research
+      authority: official
+      note: Current llm-d project README identifies CoreWeave as one of the founding organizations.
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/distributed-serving/llm-d

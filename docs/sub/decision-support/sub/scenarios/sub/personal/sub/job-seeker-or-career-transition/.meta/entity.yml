@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/personal/job-seeker-or-career-transition
+  type: user-scenario
+  name: Job Seeker or Career Transition

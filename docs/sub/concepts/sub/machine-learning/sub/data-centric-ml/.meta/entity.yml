@@ -1,0 +1,20 @@
+entity:
+  id: concepts/machine-learning/data-centric-ml
+  name: Data-Centric Machine Learning
+  aliases:
+    - Data-Centric AI
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2303.10158
+      purposes:
+        - research
+      authority: independent
+      note: Zha et al. survey data-centric AI across training-data development, inference-data development, and data maintenance, framing systematic data engineering as a complementary focus to model-centric development rather than simply increasing dataset size.
+    - type: article
+      source:
+        url: https://doi.org/10.1038/s42256-022-00516-1
+      purposes:
+        - research
+      authority: independent
+      note: Sambasivan et al. discuss data design, cleaning, valuation, annotation, augmentation, and evaluation as lifecycle concerns that materially affect trustworthy AI systems.

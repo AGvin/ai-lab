@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/professionals/general-knowledge-worker
+  type: user-scenario
+  name: General Knowledge Worker

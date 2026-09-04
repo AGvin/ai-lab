@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/z-ai/glm/models/glm-5v-turbo
+  type: model
+  name: GLM-5V-Turbo
+  references:
+    - type: documentation
+      source:
+        url: https://docs.z.ai/guides/vlm/glm-5v-turbo
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.z.ai/release-notes/new-released
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/z-ai/glm

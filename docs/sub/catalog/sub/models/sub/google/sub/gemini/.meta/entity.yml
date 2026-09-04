@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/google/gemini
+  type: model-family
+  name: Gemini
+  references:
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/models
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google
+    - type: produced-by
+      target: catalog/producers/g/google-deepmind
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-3-6-flash

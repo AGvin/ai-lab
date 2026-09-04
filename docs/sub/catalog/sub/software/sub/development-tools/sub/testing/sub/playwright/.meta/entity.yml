@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/development-tools/testing/playwright
+  type: software
+  name: Playwright
+  references:
+    - type: official-site
+      source:
+        url: https://playwright.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/microsoft/playwright
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://playwright.dev/docs/intro
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

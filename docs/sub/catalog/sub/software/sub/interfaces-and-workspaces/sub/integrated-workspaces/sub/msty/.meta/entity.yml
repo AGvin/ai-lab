@@ -1,0 +1,25 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/integrated-workspaces/msty
+  type: software
+  name: Msty Studio
+  aliases:
+    - Msty
+    - Msty App
+  references:
+    - type: documentation
+      source:
+        url: https://docs.msty.ai/studio/getting-started/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://msty.ai/terms/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cloudstack-llc

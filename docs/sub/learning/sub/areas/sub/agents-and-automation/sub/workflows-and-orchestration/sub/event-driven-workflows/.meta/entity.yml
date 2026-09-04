@@ -1,0 +1,25 @@
+entity:
+  id: learning/areas/agents-and-automation/workflows-and-orchestration/event-driven-workflows
+  name: Event-Driven Workflows
+  references:
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/autogen/stable/index.html
+      purposes:
+        - research
+      authority: official
+      note: Exact AutoGen Core reference preserved from the legacy source for migration provenance; current framework behavior must be re-checked before making mutable implementation claims.
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/core-concepts/architecture.html
+      purposes:
+        - research
+      authority: official
+      note: Exact AutoGen runtime-architecture reference preserved from the legacy source for migration provenance.
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/framework/message-and-communication.html
+      purposes:
+        - research
+      authority: official
+      note: Exact AutoGen message/communication reference preserved from the legacy source for migration provenance.

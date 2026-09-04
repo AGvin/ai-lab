@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/m/mastra
+  type: organization
+  name: Mastra
+  references:
+    - type: official-site
+      source:
+        url: https://mastra.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/mastra-ai/mastra
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agent-frameworks/mastra

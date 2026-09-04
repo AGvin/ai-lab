@@ -1,0 +1,29 @@
+entity:
+  id: catalog/software/workflow-engines/data-and-compute-orchestration/metaflow
+  type: software
+  name: Metaflow
+  references:
+    - type: documentation
+      source:
+        url: https://docs.metaflow.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Netflix/metaflow
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://metaflow.org/
+      purposes:
+        - research
+      authority: official
+      note: Current Metaflow site states that Metaflow was originally developed at Netflix and open-sourced by Netflix in 2019.
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/netflix-inc

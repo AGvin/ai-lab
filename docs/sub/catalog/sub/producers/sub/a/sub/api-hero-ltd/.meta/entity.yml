@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/a/api-hero-ltd
+  type: organization
+  name: API Hero Ltd
+  references:
+    - type: official-site
+      source:
+        url: https://trigger.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://trigger.dev/legal/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Trigger.dev terms identify API Hero Ltd as the legal provider trading as Trigger.dev and explicitly include the open-source SDK/platform in the product boundary.
+  relations:
+    - type: produces
+      target: catalog/software/workflow-engines/application-orchestration/trigger-dev

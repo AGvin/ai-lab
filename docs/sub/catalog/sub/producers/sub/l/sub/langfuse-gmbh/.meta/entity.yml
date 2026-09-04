@@ -1,0 +1,38 @@
+entity:
+  id: catalog/producers/l/langfuse-gmbh
+  type: organization
+  name: Langfuse GmbH
+  references:
+    - type: official-site
+      source:
+        url: https://langfuse.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://langfuse.com/imprint
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current first-party imprint identifying Langfuse GmbH.
+    - type: other
+      source:
+        url: https://langfuse.com/blog/joining-clickhouse
+      purposes:
+        - research
+      authority: official
+      note: First-party announcement that ClickHouse acquired Langfuse and the team joined ClickHouse.
+    - type: repository
+      source:
+        url: https://github.com/langfuse/langfuse
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/observability-platforms/langfuse
+    - type: owned-by
+      target: catalog/producers/c/clickhouse-inc

@@ -1,0 +1,43 @@
+entity:
+  id: catalog/software/model-and-data-platforms/versioning-and-lineage/dvc
+  type: software
+  name: DVC
+  aliases:
+    - Data Version Control
+  references:
+    - type: documentation
+      source:
+        url: https://dvc.org/doc
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/treeverse/dvc
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current upstream repository is maintained under the Treeverse GitHub organization after the 2025 acquisition.
+    - type: article
+      source:
+        url: https://dvc.org/blog/dvc-1-0-release/
+      purposes:
+        - research
+      authority: official
+      note: DVC creator Dmitry Petrov states that he created DVC.
+    - type: article
+      source:
+        url: https://dvc.org/blog/dvc-joins-lakefs-your-questions-answered/
+      purposes:
+        - research
+      authority: official
+      note: First-party transition announcement states that lakeFS acquired DVC from Iterative.ai and took over stewardship and active development.
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/dmitry-petrov
+    - type: owned-by
+      target: catalog/producers/t/treeverse-inc
+    - type: maintained-by
+      target: catalog/producers/t/treeverse-inc

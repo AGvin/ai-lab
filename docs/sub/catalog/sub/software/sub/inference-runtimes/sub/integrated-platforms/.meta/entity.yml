@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/inference-runtimes/integrated-platforms
+  type: catalog-index
+  name: Integrated Platforms

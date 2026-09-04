@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/inference-runtimes/integrated-platforms/lm-studio
+  type: software
+  name: LM Studio
+  references:
+    - type: official-site
+      source:
+        url: https://lmstudio.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://lmstudio.ai/docs/app
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: privacy-policy
+      source:
+        url: https://lmstudio.ai/app-privacy
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/e/element-labs-inc

@@ -1,0 +1,39 @@
+entity:
+  id: catalog/producers/l/langgenius-inc
+  type: organization
+  name: LangGenius, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://dify.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://dify.ai/legal/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Dify terms identify LangGenius, Inc. as the Delaware corporation doing business as Dify.
+    - type: repository
+      source:
+        url: https://github.com/langgenius/dify
+      purposes:
+        - research
+      authority: official
+      note: Current upstream license identifies LangGenius, Inc. as the copyright holder/producer for Dify.
+    - type: other
+      source:
+        url: https://dify.ai/legal/marketplace-agreement
+      purposes:
+        - research
+      authority: official
+      note: Current marketplace agreement describes Dify as the open-source platform managed by LangGenius, Inc.
+  relations:
+    - type: produces
+      target: catalog/software/workflow-engines/visual-ai-workflows/dify
+    - type: maintains
+      target: catalog/software/workflow-engines/visual-ai-workflows/dify

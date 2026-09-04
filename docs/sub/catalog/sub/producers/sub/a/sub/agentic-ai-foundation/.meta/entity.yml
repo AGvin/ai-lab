@@ -1,0 +1,24 @@
+entity:
+  id: catalog/producers/a/agentic-ai-foundation
+  type: organization
+  name: Agentic AI Foundation
+  aliases:
+    - AAIF
+  references:
+    - type: official-site
+      source:
+        url: https://aaif.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/aaif
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: maintains
+      target: catalog/software/agents/local/goose

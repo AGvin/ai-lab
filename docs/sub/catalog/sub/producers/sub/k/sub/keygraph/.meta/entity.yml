@@ -1,0 +1,25 @@
+entity:
+  id: catalog/producers/k/keygraph
+  type: organization
+  name: Keygraph
+  references:
+    - type: official-site
+      source:
+        url: https://keygraph.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/KeygraphHQ
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official Keygraph GitHub organization profile.
+  relations:
+    - type: produces
+      target: catalog/software/agents/local/shannon
+    - type: produces
+      target: catalog/services/development/security/keygraph

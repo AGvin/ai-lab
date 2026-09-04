@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/architectures/diffusion-models
+  name: Diffusion Models
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2006.11239
+      purposes:
+        - research
+      authority: independent
+      note: Denoising Diffusion Probabilistic Models provide a canonical discrete-time diffusion formulation that learns to reverse a progressive noising process for generative modeling.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2011.13456
+      purposes:
+        - research
+      authority: independent
+      note: Score-based generative modeling through stochastic differential equations unifies diffusion probabilistic and score-based methods through continuous-time forward corruption and learned reverse dynamics.

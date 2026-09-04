@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/workflow-engines/application-orchestration/dbos
+  type: software
+  name: DBOS
+  references:
+    - type: official-site
+      source:
+        url: https://www.dbos.dev/
+      purposes:
+        - identification
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.dbos.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.dbos.dev/blog/announcing-dbos
+      purposes:
+        - research
+      authority: official
+      note: First-party DBOS history records the formation of DBOS, Inc. around the DBOS product direction.
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/dbos-inc

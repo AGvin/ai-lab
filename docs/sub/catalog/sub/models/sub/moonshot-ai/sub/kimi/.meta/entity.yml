@@ -1,0 +1,29 @@
+entity:
+  id: catalog/models/moonshot-ai/kimi
+  type: model-family
+  name: Kimi
+  references:
+    - type: official-site
+      source:
+        url: https://www.kimi.com/blog/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/MoonshotAI
+      purposes:
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/moonshotai
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/moonshot-ai
+    - type: has-member
+      target: catalog/models/moonshot-ai/kimi/models/kimi-k3

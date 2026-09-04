@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/c/continue-dev-inc
+  type: organization
+  name: Continue Dev, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://continue.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/continuedev/continue
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agents/local/continue

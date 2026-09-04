@@ -1,0 +1,12 @@
+entity:
+  id: catalog/agent-skills/registries/guildskills
+  type: skill-registry
+  name: GuildSkills
+  references:
+    - type: official-site
+      source:
+        url: https://guildskills.com/
+      purposes:
+        - identification
+        - research
+      authority: official

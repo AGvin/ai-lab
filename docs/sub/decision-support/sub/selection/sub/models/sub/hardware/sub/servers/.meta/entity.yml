@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/selection/models/hardware/servers
+  type: model-selection-hardware-group
+  name: Server Model Selection

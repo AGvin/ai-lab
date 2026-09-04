@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/architectures/dense-and-sparse-architectures
+  name: Dense and Sparse Architectures
+  references:
+    - type: article
+      source:
+        url: https://www.jmlr.org/papers/v23/21-0998.html
+      purposes:
+        - research
+      authority: independent
+      note: Switch Transformer formalizes sparse activation as conditional parameter selection and documents the resulting capacity, computation, communication, and routing trade-offs.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1701.06538
+      purposes:
+        - research
+      authority: independent
+      note: Foundational sparsely-gated Mixture-of-Experts work establishing conditional computation through per-input activation of selected expert subnetworks.

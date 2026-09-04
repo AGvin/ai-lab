@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/organizations/finance-risk-and-procurement
+  type: user-scenario
+  name: Finance, Risk, and Procurement

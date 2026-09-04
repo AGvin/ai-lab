@@ -1,0 +1,21 @@
+entity:
+  id: concepts/models/classification/vision-language-models
+  name: Vision-Language Models
+  aliases:
+    - VLMs
+    - Vision-Language Models
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2204.14198
+      purposes:
+        - research
+      authority: independent
+      note: Flamingo provides a representative visual-language model family that jointly handles visual and textual inputs, including arbitrarily interleaved image/video and text contexts, across captioning and visual question-answering tasks.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2402.12451
+      purposes:
+        - research
+      authority: independent
+      note: Current multimodal-language-model survey situates visual-language models across multimodal alignment, visual understanding, instruction following, grounding, generation, and architecture/training choices rather than reducing the category to one interface or task.

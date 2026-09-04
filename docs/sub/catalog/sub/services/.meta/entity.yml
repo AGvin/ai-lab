@@ -1,0 +1,4 @@
+entity:
+  id: catalog/services
+  type: catalog-index
+  name: Services

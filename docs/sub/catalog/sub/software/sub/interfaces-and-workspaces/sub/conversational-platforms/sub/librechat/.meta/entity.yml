@@ -1,0 +1,31 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/conversational-platforms/librechat
+  type: software
+  name: LibreChat
+  references:
+    - type: documentation
+      source:
+        url: https://www.librechat.ai/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/danny-avila/LibreChat
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://clickhouse.com/blog/clickhouse-acquires-librechat
+      purposes:
+        - research
+      authority: official
+      note: First-party ClickHouse announcement of the LibreChat acquisition and Danny Avila's founder role.
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/danny-avila
+    - type: owned-by
+      target: catalog/producers/c/clickhouse-inc

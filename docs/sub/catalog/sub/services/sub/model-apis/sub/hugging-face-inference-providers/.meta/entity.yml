@@ -1,0 +1,15 @@
+entity:
+  id: catalog/services/model-apis/hugging-face-inference-providers
+  type: service
+  name: Hugging Face Inference Providers
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/inference-providers/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/hugging-face-inc

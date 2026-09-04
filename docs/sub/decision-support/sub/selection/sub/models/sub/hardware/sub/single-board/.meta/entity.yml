@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/selection/models/hardware/single-board
+  type: model-selection-hardware-group
+  name: Single-Board Model Selection

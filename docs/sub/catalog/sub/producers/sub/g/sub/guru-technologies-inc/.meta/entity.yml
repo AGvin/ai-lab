@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/g/guru-technologies-inc
+  type: organization
+  name: Guru Technologies, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://www.getguru.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.getguru.com/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/knowledge-workspaces/guru

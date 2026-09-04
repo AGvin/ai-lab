@@ -1,0 +1,10 @@
+entity:
+  id: catalog/software/development-tools/code-editors/cursor/integrations/agent-skills
+  name: Cursor Agent Skills
+  references:
+    - type: documentation
+      source:
+        url: https://cursor.com/docs/context/skills
+      purposes:
+        - research
+      authority: official

@@ -1,0 +1,32 @@
+entity:
+  id: catalog/services/ai-assets/claude-code-templates
+  type: service
+  name: Claude Code Templates
+  aliases:
+    - AI Templates
+  references:
+    - type: official-site
+      source:
+        url: https://aitmpl.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aitmpl.com/
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/davila7/claude-code-templates
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/daniel-avila
+    - type: discovery-resource-for
+      target: catalog/agent-skills

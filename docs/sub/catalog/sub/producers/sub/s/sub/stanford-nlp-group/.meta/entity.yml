@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/s/stanford-nlp-group
+  type: team
+  name: Stanford NLP Group
+  references:
+    - type: official-site
+      source:
+        url: https://nlp.stanford.edu/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/stanfordnlp/dspy
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/application-frameworks/programming-and-optimization/dspy

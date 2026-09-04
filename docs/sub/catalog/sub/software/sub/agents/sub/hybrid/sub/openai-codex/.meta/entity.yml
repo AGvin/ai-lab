@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/agents/hybrid/openai-codex
+  type: software
+  name: OpenAI Codex
+  references:
+    - type: official-site
+      source:
+        url: https://openai.com/codex/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/codex
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://help.openai.com/en/articles/11369540
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

@@ -1,0 +1,27 @@
+entity:
+  id: catalog/producers/m/mistral-ai
+  type: organization
+  name: Mistral AI
+  references:
+    - type: official-site
+      source:
+        url: https://mistral.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/
+      purposes:
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/mistral-ai/mistral-small

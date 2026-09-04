@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/gateways/api-management-gateways/kong-gateway
+  type: software
+  name: Kong Gateway
+  references:
+    - type: documentation
+      source:
+        url: https://developer.konghq.com/gateway/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Kong/kong
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://konghq.com/legal/kong-customer-agreement
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Kong agreement identifying Kong Inc. as the product company.
+  relations:
+    - type: produced-by
+      target: catalog/producers/k/kong-inc

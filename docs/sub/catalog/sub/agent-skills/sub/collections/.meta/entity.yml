@@ -1,0 +1,4 @@
+entity:
+  id: catalog/agent-skills/collections
+  type: catalog-index
+  name: Agent Skill Collections

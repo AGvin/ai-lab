@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/t/tongyi-mai
+  type: organization
+  name: Tongyi-MAI
+  references:
+    - type: repository
+      source:
+        url: https://github.com/Tongyi-MAI
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/Tongyi-MAI
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/tongyi-mai/z-image

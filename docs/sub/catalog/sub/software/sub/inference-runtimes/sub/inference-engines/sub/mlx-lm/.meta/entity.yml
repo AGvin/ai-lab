@@ -1,0 +1,23 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/mlx-lm
+  type: software
+  name: MLX LM
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ml-explore/mlx-lm
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://machinelearning.apple.com/research/exploring-llms-mlx-m5
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Apple Machine Learning Research identifies MLX LM as an MLX package for LLM generation and fine-tuning.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/apple-inc

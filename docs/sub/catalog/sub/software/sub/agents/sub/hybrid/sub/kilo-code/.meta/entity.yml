@@ -1,0 +1,34 @@
+entity:
+  id: catalog/software/agents/hybrid/kilo-code
+  type: software
+  name: Kilo Code
+  references:
+    - type: official-site
+      source:
+        url: https://kilo.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://kilo.ai/docs/code-with-ai/platforms/cli
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://kilo.ai/docs/code-with-ai/platforms/cloud-agent
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Kilo-Org/kilocode
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/k/kilo-code-inc

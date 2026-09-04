@@ -1,0 +1,11 @@
+entity:
+  id: concepts/machine-learning/representation-learning
+  name: Representation Learning
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1206.5538
+      purposes:
+        - research
+      authority: independent
+      note: Bengio, Courville, and Vincent survey representation learning as learning useful transformations/features of data and distinguish representation quality from any one architecture, training paradigm, or downstream task.

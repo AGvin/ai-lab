@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/agents/local/kiro-cli
+  type: software
+  name: Kiro CLI
+  references:
+    - type: documentation
+      source:
+        url: https://kiro.dev/docs/cli/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://kiro.dev/docs/billing/managing-taxes/
+      purposes:
+        - research
+      authority: official
+      note: Official Kiro documentation identifying Amazon Web Services, Inc. as the Kiro service provider.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/amazon-web-services

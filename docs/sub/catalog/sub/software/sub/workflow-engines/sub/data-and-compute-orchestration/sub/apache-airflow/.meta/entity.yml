@@ -1,0 +1,29 @@
+entity:
+  id: catalog/software/workflow-engines/data-and-compute-orchestration/apache-airflow
+  type: software
+  name: Apache Airflow
+  references:
+    - type: documentation
+      source:
+        url: https://airflow.apache.org/docs/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/apache/airflow
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://airflow.apache.org/docs/apache-airflow/stable/project.html
+      purposes:
+        - research
+      authority: official
+      note: Current project history records Maxime Beauchemin starting Airflow at Airbnb in October 2014 and the later Apache incubation/TLP transition.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/maxime-beauchemin
