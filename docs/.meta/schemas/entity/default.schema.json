@@ -66,19 +66,8 @@
       ],
       "properties": {
         "type": {
-          "enum": [
-            "official-site",
-            "documentation",
-            "repository",
-            "specification",
-            "registry",
-            "distribution",
-            "artifact",
-            "release-notes",
-            "issue-tracker",
-            "article",
-            "other"
-          ]
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
         },
         "source": {
           "$ref": "#/$defs/reference_source"

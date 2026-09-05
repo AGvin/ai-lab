@@ -234,6 +234,60 @@ def test_repository_entity_schema_accepts_explicit_root_selector():
     assert errors == []
 
 
+def test_repository_entity_schema_accepts_extensible_reference_types():
+    import json
+    from jsonschema import Draft202012Validator
+    from pathlib import Path
+
+    schema_path = Path(__file__).parents[3] / "docs/.meta/schemas/entity/default.schema.json"
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    validator = Draft202012Validator(schema)
+    for reference_type in (
+        "privacy-policy",
+        "terms-of-service",
+        "product-page",
+        "book",
+        "paper",
+    ):
+        errors = list(validator.iter_errors({
+            "entity": {
+                "id": "example",
+                "name": "Example",
+                "references": [{
+                    "type": reference_type,
+                    "source": {"url": "https://example.com/reference"},
+                    "purposes": ["research"],
+                    "authority": "independent",
+                }],
+            }
+        }))
+        assert errors == [], (reference_type, errors)
+
+
+def test_repository_entity_schema_rejects_malformed_reference_type():
+    import json
+    from jsonschema import Draft202012Validator
+    from pathlib import Path
+
+    schema_path = Path(__file__).parents[3] / "docs/.meta/schemas/entity/default.schema.json"
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    validator = Draft202012Validator(schema)
+    for reference_type in ("privacy policy", "PrivacyPolicy", "privacy_policy", "-privacy"):
+        errors = list(validator.iter_errors({
+            "entity": {
+                "id": "example",
+                "name": "Example",
+                "references": [{
+                    "type": reference_type,
+                    "source": {"url": "https://example.com/reference"},
+                    "purposes": ["research"],
+                    "authority": "independent",
+                }],
+            }
+        }))
+        assert errors, reference_type
+
+
 def test_repository_node_schema_accepts_explicit_root_selector():
     import json
     from jsonschema import Draft202012Validator
