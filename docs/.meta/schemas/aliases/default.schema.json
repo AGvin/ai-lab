@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "repo:/:aliases:default",
+  "title": "Default documentation alias registry",
+  "description": "Repository-root schema and path-prefix aliases.",
+  "$defs": {
+    "alias_key": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "schema_selector": {
+      "type": "string",
+      "oneOf": [
+        {"pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*$"},
+        {"pattern": "^/:[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*$"}
+      ]
+    },
+    "schema_alias_target": {"type": "string", "pattern": "^/:[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*$"},
+    "schema_alias_map": {
+      "type": "object",
+      "propertyNames": {"$ref": "#/$defs/alias_key"},
+      "additionalProperties": {"$ref": "#/$defs/schema_alias_target"}
+    },
+    "path_alias_map": {
+      "type": "object",
+      "propertyNames": {"$ref": "#/$defs/alias_key"},
+      "additionalProperties": {"type": "string", "pattern": "^/.*/$"}
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["aliases"],
+  "properties": {
+    "aliases": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema"],
+      "properties": {
+        "schema": {"$ref": "#/$defs/schema_selector"},
+        "schemas": {
+          "type": "object",
+          "propertyNames": {"$ref": "#/$defs/alias_key"},
+          "additionalProperties": {"$ref": "#/$defs/schema_alias_map"}
+        },
+        "paths": {"$ref": "#/$defs/path_alias_map"}
+      }
+    }
+  }
+}
