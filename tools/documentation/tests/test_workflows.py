@@ -42,7 +42,8 @@ def test_cache_workflow_is_manual_only():
 def test_cache_workflow_inputs_and_defaults():
     workflow = load_workflow(CACHE_WORKFLOW)
     inputs = workflow["on"]["workflow_dispatch"]["inputs"]
-    assert inputs["source_branch"]["required"] == "true"
+    assert inputs["source_branch"]["required"] == "false"
+    assert inputs["source_branch"]["default"] == ""
     assert inputs["source_branch"]["type"] == "string"
     assert inputs["use_fingerprints"]["type"] == "boolean"
     assert inputs["use_fingerprints"]["default"] == "true"
@@ -59,6 +60,9 @@ def test_cache_workflow_has_only_required_write_permissions():
 def test_cache_workflow_invokes_cli_and_stable_cache_branch():
     text = CACHE_WORKFLOW.read_text(encoding="utf-8")
     assert "tools.documentation.metadata_tooling.cli cache" in text
+    assert 'SOURCE_BRANCH: ${{ inputs.source_branch || github.ref_name }}' in text
+    assert 'group: documentation-cache-${{ inputs.source_branch || github.ref_name }}' in text
+    assert 'ref: ${{ inputs.source_branch || github.ref_name }}' in text
     assert 'CACHE_BRANCH="cache/${SOURCE_BRANCH}"' in text
     assert '[[ "$SOURCE_BRANCH" == cache/* ]]' in text
     assert "**/.meta/cache.yml" in text
@@ -75,12 +79,13 @@ def test_validation_workflow_is_manual_only():
 def test_validation_workflow_inputs_default_enabled():
     workflow = load_workflow(VALIDATE_WORKFLOW)
     inputs = workflow["on"]["workflow_dispatch"]["inputs"]
-    assert inputs["source_branch"]["required"] == "true"
+    assert inputs["source_branch"]["required"] == "false"
+    assert inputs["source_branch"]["default"] == ""
     assert inputs["source_branch"]["type"] == "string"
     for name in ("validate_schemas", "validate_relations", "validate_cache"):
         assert inputs[name]["type"] == "boolean"
-        assert inputs[_name]["required"] == "true"
-        assert inputs[_name]["default"] == "true"
+        assert inputs[name]["required"] == "true"
+        assert inputs[name]["default"] == "true"
 
 
 def test_validation_workflow_is_read_only():
@@ -90,6 +95,8 @@ def test_validation_workflow_is_read_only():
 
 def test_validation_workflow_passes_each_switch_independently():
     text = VALIDATE_WORKFLOW.read_text(encoding="utf-8")
+    assert 'group: documentation-validate-${{ inputs.source_branch || github.ref_name }}' in text
+    assert 'ref: ${{ inputs.source_branch || github.ref_name }}' in text
     assert "tools.documentation.metadata_tooling.cli validate" in text
     assert '--validate-schemas "${{ inputs.validate_schemas }}"' in text
     assert '--validate-relations "${{ inputs.validate_relations }}"' in text

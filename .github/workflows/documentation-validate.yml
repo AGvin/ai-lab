@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       source_branch:
-        description: Source branch to validate
-        required: true
+        description: Source branch override; empty uses the workflow branch
+        required: false
+        default: ""
         type: string
       validate_schemas:
         description: Validate canonical metadata against selected schemas
@@ -27,7 +28,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: documentation-validate-${{ inputs.source_branch }}
+  group: documentation-validate-${{ inputs.source_branch || github.ref_name }}
   cancel-in-progress: false
 
 jobs:
@@ -38,7 +39,7 @@ jobs:
       - name: Check out source branch
         uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.source_branch }}
+          ref: ${{ inputs.source_branch || github.ref_name }}
           fetch-depth: 0
 
       - name: Set up Python

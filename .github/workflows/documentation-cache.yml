@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       source_branch:
-        description: Source branch to generate caches for
-        required: true
+        description: Source branch override; empty uses the workflow branch
+        required: false
+        default: ""
         type: string
       use_fingerprints:
         description: Use cache fingerprints to skip unchanged nodes
@@ -18,14 +19,14 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: documentation-cache-${{ inputs.source_branch }}
+  group: documentation-cache-${{ inputs.source_branch || github.ref_name }}
   cancel-in-progress: false
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     env:
-      SOURCE_BRANCH: ${{ inputs.source_branch }}
+      SOURCE_BRANCH: ${{ inputs.source_branch || github.ref_name }}
       USE_FINGERPRINTS: ${{ inputs.use_fingerprints }}
       GH_TOKEN: ${{ github.token }}
 
@@ -46,7 +47,7 @@ jobs:
       - name: Check out source branch
         uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.source_branch }}
+          ref: ${{ inputs.source_branch || github.ref_name }}
           fetch-depth: 0
 
       - name: Set up Python
