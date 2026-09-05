@@ -1,0 +1,67 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:154c5b8ac22271de98521ecffeb6f2a1d9cd8ad6
+    parent:
+      entity.yml: gitblob:5752d892eec6895e3767c7b7ca950244b9bc5fd0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/selection/models/hardware/target
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/selection/models/hardware/target
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: decision-support/selection/models/hardware/target
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: decision-support/selection/models/hardware/mobile/android/google
+        type: model-selection-hardware-target
+        name: Google Tensor Android Model Selection
+        references:
+        - type: documentation
+          source:
+            url: https://developer.android.com/ai/gemini-nano
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

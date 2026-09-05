@@ -1,0 +1,80 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bd3a0439894fdb058265d52a0f7f9059140d060e
+    parent:
+      entity.yml: gitblob:97660fd41cd4b40713c95dc332af0b981b5f0623
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/model-and-data-platforms/data-libraries/datasets
+        type: software
+        name: Hugging Face Datasets
+        aliases:
+        - Datasets
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/docs/datasets/en/index
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/huggingface/datasets
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/h/hugging-face-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

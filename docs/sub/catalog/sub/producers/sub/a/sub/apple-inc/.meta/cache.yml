@@ -1,0 +1,88 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a4e1e26f7b21a4238e838fab6d2f385fc41ae20d
+    parent:
+      entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/a/apple-inc
+        type: organization
+        name: Apple Inc.
+        aliases:
+        - Apple
+        references:
+        - type: official-site
+          source:
+            url: https://www.apple.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: terms-of-service
+          source:
+            url: https://www.apple.com/legal/internet-services/terms/site.html
+          purposes:
+          - identification
+          authority: official
+          note: Apple website terms identify Apple Inc.
+        - type: article
+          source:
+            url: https://machinelearning.apple.com/research/exploring-llms-mlx-m5
+          purposes:
+          - research
+          authority: official
+          note: Apple Machine Learning Research describes MLX LM as the MLX package
+            for LLM generation and fine-tuning.
+        relations:
+        - type: produces
+          target: catalog/software/inference-runtimes/inference-engines/mlx-lm
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,81 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bdf269d958320e445ce370e0460000723a35aaa5
+    parent:
+      entity.yml: gitblob:edcc0e47aa8e02f42b1b2a8bb087f7d6e2060c72
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/classification/language-model-scale
+        name: Language Model Scale
+        references:
+        - type: documentation
+          source:
+            url: https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-are-small-language-models
+          purposes:
+          - research
+          authority: official
+          note: Current vendor definition of SLMs as smaller, lower-resource language
+            models rather than a deployment-mode category.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2409.15790
+          purposes:
+          - research
+          authority: independent
+          note: Survey using a bounded 100M-5B study scope for SLMs, illustrating
+            that numerical ranges need an explicit comparison context.
+        - type: article
+          source:
+            url: https://www.microsoft.com/en-us/research/uploads/prod/2025/01/WEF-2025_Leave-Behind_Phi-4.pdf
+          purposes:
+          - research
+          authority: official
+          note: Microsoft Research describes the 14B-parameter Phi-4 as an SLM, providing
+            a materially different current scale usage from narrower research scopes.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

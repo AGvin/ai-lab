@@ -1,0 +1,85 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:1d8e7cc8256f730f4892ce45256bb0f40b36a0cd
+    parent:
+      entity.yml: gitblob:6907e20773222c3926bc2ca6714631589c406770
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/q/qdrant-solutions-gmbh
+        type: organization
+        name: Qdrant Solutions GmbH
+        references:
+        - type: official-site
+          source:
+            url: https://qdrant.tech/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://qdrant.tech/legal/impressum/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Official imprint identifying Qdrant Solutions GmbH.
+        - type: repository
+          source:
+            url: https://github.com/qdrant/qdrant
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/data-infrastructure/vector-search/qdrant
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

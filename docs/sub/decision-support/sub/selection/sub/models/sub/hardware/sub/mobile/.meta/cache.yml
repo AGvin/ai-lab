@@ -1,0 +1,63 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:e616a2ef72190b58705a916ff3c8046a91560b3f
+    parent:
+      entity.yml: gitblob:4ee5a07a6ade481a0eb1131d434739c4143c5db9
+      node.yml: gitblob:8bfa2d395f091f88cbf142f3da6056cb0c0cf2df
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/selection/models/hardware/index
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/selection/models/hardware/index
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: decision-support/selection/models/hardware/target
+          children:
+            template: decision-support/selection/models/hardware/target
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: decision-support/selection/models/hardware/mobile
+        type: model-selection-hardware-group
+        name: Mobile Model Selection
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

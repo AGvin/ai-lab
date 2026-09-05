@@ -1,0 +1,82 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:962aad9bcdd24dd63f7eb827472bff12371563e0
+    parent:
+      entity.yml: gitblob:d9a0ae13acc6852f70283efc169503fb18a037db
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/tongyi-mai/z-image
+        type: model-family
+        name: Z-Image
+        references:
+        - type: repository
+          source:
+            url: https://github.com/Tongyi-MAI/Z-Image
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Tongyi-MAI/Z-Image
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/t/tongyi-mai
+        - type: has-member
+          target: catalog/models/tongyi-mai/z-image/models/z-image
+        - type: has-member
+          target: catalog/models/tongyi-mai/z-image/models/z-image-turbo
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

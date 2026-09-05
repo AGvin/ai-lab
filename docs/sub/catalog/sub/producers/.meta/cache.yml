@@ -1,0 +1,64 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:cc3acaf818290b5a5764a268d036f3e2b1724aaa
+      node.yml: gitblob:2a9b81e5b7fca976b33c682f3afa46cfd07a1287
+    parent:
+      entity.yml: gitblob:7134ef0f8b872b75898605ed12736ad2e35017fe
+      node.yml: gitblob:3b331128c30e4908bf5e661ed62fc48e2f7a3308
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/alphabetical-index
+          children:
+            template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers
+        type: catalog-index
+        name: Producers
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

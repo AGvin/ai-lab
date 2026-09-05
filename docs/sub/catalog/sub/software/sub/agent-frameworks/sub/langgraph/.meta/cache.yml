@@ -1,0 +1,79 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:131bad696a1f753e311adb75b97f8e5b627df80f
+    parent:
+      entity.yml: gitblob:d76916cc6208401fd85eacd3a15da3a51743c755
+      node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/software/software
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/software/software
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/software/software
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/agent-frameworks/langgraph
+        type: software
+        name: LangGraph
+        references:
+        - type: documentation
+          source:
+            url: https://docs.langchain.com/oss/python/langgraph/overview
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/langchain-ai/langgraph
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/l/langchain-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

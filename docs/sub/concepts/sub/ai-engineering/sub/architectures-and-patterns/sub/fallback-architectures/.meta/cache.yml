@@ -1,0 +1,77 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:0dbb95ebd547569a94a77f1f78874d1397768be0
+    parent:
+      entity.yml: gitblob:ecce633eaf70a29f0388cbc3f9b541af6ebbb8fd
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/ai-engineering/architectures-and-patterns/fallback-architectures
+        name: Fallback Architectures
+        aliases:
+        - Fallback Models
+        references:
+        - type: documentation
+          source:
+            url: https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker
+          purposes:
+          - research
+          authority: official
+          note: Circuit Breaker guidance distinguishes persistent-failure handling
+            from ordinary retries and describes graceful degradation or alternative
+            operations as controlled responses when a dependency is likely to fail.
+        - type: documentation
+          source:
+            url: https://learn.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/partial-failure-strategies
+          purposes:
+          - research
+          authority: official
+          note: Partial-failure guidance separates retry, circuit breaking, and fallback
+            logic such as cached/default alternatives, providing a general reliability
+            boundary for AI-specific fallback paths.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,67 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:8538d23f71790102c475ea420c99c40a631c9e6b
+    parent:
+      entity.yml: gitblob:21a98944bc5ba471f10494d14135d19885537a46
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/selection/models/hardware/target
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/selection/models/hardware/target
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: decision-support/selection/models/hardware/target
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: decision-support/selection/models/hardware/servers/nvidia
+        type: model-selection-hardware-target
+        name: NVIDIA Server Model Selection
+        references:
+        - type: documentation
+          source:
+            url: https://developer.nvidia.com/tensorrt-llm
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

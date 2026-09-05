@@ -1,0 +1,86 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:c4a14c97508fc19c864548625757b633e50c9de0
+    parent:
+      entity.yml: gitblob:2f1e0b49da4e74d5be798e28b5ef97ff4b499581
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/k/kilo-code-inc
+        type: organization
+        name: Kilo Code Inc.
+        references:
+        - type: official-site
+          source:
+            url: https://kilo.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://kilo.ai/terms
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Official Kilo Terms of Service identifying Kilo Code Inc. as the product
+            operator.
+        - type: repository
+          source:
+            url: https://github.com/Kilo-Org/kilocode
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/agents/hybrid/kilo-code
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

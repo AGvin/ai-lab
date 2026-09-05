@@ -1,0 +1,80 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:07d4e04a9d48c6aa3a98a3a87670cd653403bcaa
+    parent:
+      entity.yml: gitblob:4789008a1a3ae54af51e5be16f5871ef48a92fe3
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/ai-engineering/system-design/vector-databases
+        name: Vector Databases
+        aliases:
+        - Vector Database Management Systems
+        - Vector DBMSs
+        references:
+        - type: article
+          source:
+            url: https://doi.org/10.1007/s00778-024-00864-x
+          purposes:
+          - research
+          authority: independent
+          note: Pan, Wang, and Li survey vector database management systems across
+            data organization, vector indexes, query processing and optimization,
+            system architectures, and both native vector-specialized and existing
+            DBMSs extended with vector capabilities.
+        - type: article
+          source:
+            url: https://doi.org/10.14778/3750601.3750700
+          purposes:
+          - research
+          authority: independent
+          note: Chronis et al. analyze filtered vector search as a database query-processing
+            problem whose execution strategies depend on filter selectivity, data
+            correlation, ANN behavior, and recall/performance trade-offs, illustrating
+            vector-aware query optimization beyond standalone nearest-neighbor algorithms.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

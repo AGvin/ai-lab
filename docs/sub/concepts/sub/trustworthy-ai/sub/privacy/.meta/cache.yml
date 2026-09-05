@@ -1,0 +1,106 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bd28de4343726830ac52608ead7ac702b46c75b1
+    parent:
+      entity.yml: gitblob:33c8134ea5594ae731a593bfd4dab117d1c4e0d0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/trustworthy-ai/privacy
+        name: AI Privacy
+        aliases:
+        - Data Privacy
+        references:
+        - type: documentation
+          source:
+            url: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/
+          purposes:
+          - research
+          authority: official
+          note: NIST AI RMF treats privacy-enhanced AI as a contextual trustworthiness
+            characteristic and notes privacy risks from training data, system inference,
+            and re-identification as well as trade-offs with other characteristics.
+        - type: documentation
+          source:
+            url: https://www.nist.gov/privacy-framework
+          purposes:
+          - research
+          authority: official
+          note: The NIST Privacy Framework treats privacy as enterprise risk management
+            around data processing and resulting effects on individuals rather than
+            reducing privacy to confidentiality or cybersecurity alone.
+        - type: documentation
+          source:
+            url: https://doi.org/10.6028/NIST.AI.600-1
+          purposes:
+          - research
+          authority: official
+          note: The NIST Generative AI Profile applies data privacy and localization-compliance
+            review to third-party GAI value-chain resources, supporting full-system
+            location and processor analysis rather than endpoint-only checks.
+        - type: documentation
+          source:
+            url: https://www.canada.ca/en/government/system/digital-government/guideline-service-digital.html
+          purposes:
+          - research
+          authority: official
+          note: Current Government of Canada digital guidance defines data residency
+            as the physical or geographic location of organizational data while at
+            rest and distinguishes it from data sovereignty, providing a precise reminder
+            that location and jurisdictional-control concepts are not synonyms.
+        - type: specification
+          source:
+            url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018R1807
+          purposes:
+          - research
+          authority: official
+          note: EU Regulation 2018/1807 defines a data-localisation requirement as
+            a legal or administrative obligation or constraint that imposes processing
+            in a specific territory or hinders processing elsewhere, separating localization
+            requirements from a data item's observed residency/location.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

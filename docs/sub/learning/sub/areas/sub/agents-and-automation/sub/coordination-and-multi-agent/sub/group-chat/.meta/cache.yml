@@ -1,0 +1,74 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:6720032ff403327cbb06ce770a8d5b5665afd986
+    parent:
+      entity.yml: gitblob:14ea8bfaf4d425225b943a6a70f6a5270a9dfa69
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: learning/areas/agents-and-automation/coordination-and-multi-agent/group-chat
+        name: Group Chat
+        references:
+        - type: documentation
+          source:
+            url: https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/design-patterns/group-chat.html
+          purposes:
+          - research
+          authority: official
+          note: Exact legacy AutoGen Group Chat design-pattern reference preserved
+            for migration provenance; stable group-chat semantics remain concept-owned.
+        - type: documentation
+          source:
+            url: https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tutorial/teams.html
+          purposes:
+          - research
+          authority: official
+          note: Exact legacy AutoGen teams reference preserved as implementation/evidence
+            provenance; mutable framework behavior must be re-checked against current
+            documentation before implementation claims.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

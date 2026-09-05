@@ -1,0 +1,89 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b91e8cdf67b59430b4533a52f945beeb33b4d216
+    parent:
+      entity.yml: gitblob:0c958ac9b06255323dd6f40493fd9f05736b939d
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/agents/local/openclaw
+        type: software
+        name: OpenClaw
+        references:
+        - type: official-site
+          source:
+            url: https://openclaw.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.openclaw.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/openclaw/openclaw
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current upstream README identifies OpenClaw as built by Peter Steinberger
+            and the community.
+        relations:
+        - type: produced-by
+          target: catalog/producers/p/peter-steinberger
+        - type: maintained-by
+          target: catalog/producers/o/openclaw-foundation
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

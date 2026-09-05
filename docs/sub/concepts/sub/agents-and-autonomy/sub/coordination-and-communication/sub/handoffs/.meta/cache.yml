@@ -1,0 +1,85 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:2b6c4bbbabdb29bd044d1d96f9951ca016f6fe0a
+    parent:
+      entity.yml: gitblob:c032bd27e9c6f49dacbf7a039554b8f8f098fe47
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/agents-and-autonomy/coordination-and-communication/handoffs
+        name: Handoffs
+        references:
+        - type: documentation
+          source:
+            url: https://openai.github.io/openai-agents-python/multi_agent/
+          purposes:
+          - research
+          authority: official
+          note: 'Current OpenAI Agents SDK documentation contrasts manager-style agents-as-tools
+            with handoffs: in a handoff the selected specialist becomes the active
+            agent/owner for the remainder of the transferred interaction scope.'
+        - type: documentation
+          source:
+            url: https://docs.langchain.com/oss/python/langchain/multi-agent/handoffs
+          purposes:
+          - research
+          authority: official
+          note: Current LangChain documentation models handoffs as state-driven transitions
+            that switch the active agent or agent configuration while preserving the
+            state needed for the next participant.
+        - type: documentation
+          source:
+            url: https://learn.microsoft.com/en-us/agent-framework/user-guide/workflows/orchestrations/handoff
+          purposes:
+          - research
+          authority: official
+          note: 'Current Microsoft Agent Framework documentation explicitly distinguishes
+            handoff from agent-as-tools by control flow, task ownership, and context
+            management: the receiving agent takes full task ownership rather than
+            returning a bounded result to a primary agent.'
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

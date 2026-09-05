@@ -1,0 +1,87 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:702600182861bb0f17a681333e84624991f2d756
+    parent:
+      entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/c/confident-ai-inc
+        type: organization
+        name: Confident AI, Inc.
+        references:
+        - type: official-site
+          source:
+            url: https://www.confident-ai.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.confident-ai.com/terms
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current first-party terms identifying Confident AI, Inc.
+        - type: official-site
+          source:
+            url: https://www.confident-ai.com/frameworks/deepeval
+          purposes:
+          - research
+          authority: official
+          note: First-party DeepEval product/framework page identifying Confident
+            AI as its creator and maintainer.
+        relations:
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/deepeval
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

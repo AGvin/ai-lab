@@ -1,0 +1,75 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b69edcb08d6ab6661b7910c6b1cbd7f7c5398a13
+    parent:
+      entity.yml: gitblob:71416bf419f6cb227ae7dfadedabbe06bc2f2f00
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/training-and-adaptation/preference-optimization
+        name: Preference Optimization
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2203.02155
+          purposes:
+          - research
+          authority: independent
+          note: InstructGPT provides a canonical preference-based post-training pipeline
+            using human rankings, a learned reward model, and reinforcement learning
+            after supervised fine-tuning.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2305.18290
+          purposes:
+          - research
+          authority: independent
+          note: Direct Preference Optimization derives a direct policy objective from
+            the standard KL-constrained reward/preference formulation and provides
+            a major alternative to explicit reward-model plus RL training.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,72 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:c22fe2539a92777550c1430234eedf19317905bf
+    parent:
+      entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
+      node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/agent-skills/collection
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/agent-skills/collection
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/agent-skills/collection
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/agent-skills/collections/matt-pocock-skills
+        type: skill-collection
+        name: Matt Pocock Skills
+        references:
+        - type: repository
+          source:
+            url: https://github.com/mattpocock/skills
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/matt-pocock
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,66 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:2b3a242c23328646a88b3b951fd20a8fb1996fb7
+    parent:
+      entity.yml: gitblob:399b63dbb397b0c8351cf3b6a5d35dc116a4408e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: learning/areas/agents-and-automation/workflows-and-orchestration/evaluator-optimizer
+        name: Evaluator-Optimizer
+        references:
+        - type: article
+          source:
+            url: https://www.anthropic.com/engineering/building-effective-agents
+          purposes:
+          - research
+          authority: official
+          note: Exact Anthropic evaluator-optimizer reference preserved from the legacy
+            source; stable pattern semantics are owned by the canonical Evaluator-Optimizer
+            concept.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

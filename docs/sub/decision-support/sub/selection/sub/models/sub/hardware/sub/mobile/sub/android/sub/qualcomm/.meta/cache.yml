@@ -1,0 +1,67 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bd9c50d85115d4c8294fc1f298491b54e7c201bd
+    parent:
+      entity.yml: gitblob:5752d892eec6895e3767c7b7ca950244b9bc5fd0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/selection/models/hardware/target
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/selection/models/hardware/target
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: decision-support/selection/models/hardware/target
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: decision-support/selection/models/hardware/mobile/android/qualcomm
+        type: model-selection-hardware-target
+        name: Qualcomm Android Model Selection
+        references:
+        - type: official-site
+          source:
+            url: https://aihub.qualcomm.com/
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

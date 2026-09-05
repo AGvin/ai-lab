@@ -1,0 +1,64 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:76d0efaa0968002247ee2f1666d4badbc5290bdd
+      node.yml: gitblob:8cde0cbb49b90792a5934bd386e436a22d6e1016
+    parent:
+      entity.yml: gitblob:e0ae29160585822fa2052bfa2b064c849ab856cd
+      node.yml: gitblob:9ef29e75258980c4205f792b98feb6d3ef61eb7a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/scenarios/index
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/scenarios/index
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: decision-support/scenarios/index
+          children:
+            template: decision-support/scenarios/scenario
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: decision-support/scenarios
+        type: user-scenario-index
+        name: Decision Support Scenarios
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

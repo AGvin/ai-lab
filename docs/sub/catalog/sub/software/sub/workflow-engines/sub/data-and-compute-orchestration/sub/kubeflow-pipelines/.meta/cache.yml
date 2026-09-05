@@ -1,0 +1,88 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:63194025eee0866f1cad3712a480d640a71a56da
+    parent:
+      entity.yml: gitblob:dbd446ab301de28bef71f8f1ea42e2bcaa014460
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/workflow-engines/data-and-compute-orchestration/kubeflow-pipelines
+        type: software
+        name: Kubeflow Pipelines
+        aliases:
+        - KFP
+        references:
+        - type: documentation
+          source:
+            url: https://www.kubeflow.org/docs/components/pipelines/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/kubeflow/pipelines
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://opensource.googleblog.com/2022/10/kubeflow-applies-to-become-a-cncf-incubating-project.html
+          purposes:
+          - research
+          authority: upstream
+          note: Google records that it created and open-sourced the Kubeflow project
+            and identifies Kubeflow Pipelines as a core project component.
+        relations:
+        - type: produced-by
+          target: catalog/producers/g/google
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

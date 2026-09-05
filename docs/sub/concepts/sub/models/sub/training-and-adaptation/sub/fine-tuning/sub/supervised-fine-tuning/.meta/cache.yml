@@ -1,0 +1,75 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:88107a677a596c2a9e8be4979de9a6544a0d1685
+    parent:
+      entity.yml: gitblob:65250b534375bfdd82f8bcfdec5d9cf9e0255a98
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/training-and-adaptation/fine-tuning/supervised-fine-tuning
+        name: Supervised Fine-Tuning
+        aliases:
+        - SFT
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2203.02155
+          purposes:
+          - research
+          authority: independent
+          note: InstructGPT uses a supervised fine-tuning stage on human demonstrations
+            before reward modeling/RLHF and provides a canonical modern LLM SFT example.
+        - type: documentation
+          source:
+            url: https://csrc.nist.gov/glossary/term/fine_tuning
+          purposes:
+          - research
+          authority: official
+          note: NIST fine-tuning terminology provides the broader supervised-adaptation
+            lifecycle boundary beyond instruction-following language models.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

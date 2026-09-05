@@ -1,0 +1,76 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:1d529fdc5e012e99fa5bdfca9e7091680d10c74b
+    parent:
+      entity.yml: gitblob:ecce633eaf70a29f0388cbc3f9b541af6ebbb8fd
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/ai-engineering/architectures-and-patterns/rag
+        name: Retrieval-Augmented Generation
+        aliases:
+        - RAG
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2005.11401
+          purposes:
+          - research
+          authority: independent
+          note: Foundational RAG work combines a generative model with retrieval from
+            explicit non-parametric memory and demonstrates that RAG can itself include
+            fine-tuned trainable components.
+        - type: article
+          source:
+            url: https://doi.org/10.1145/3637528.3671470
+          purposes:
+          - research
+          authority: independent
+          note: KDD 2024 survey covers retrieval-augmented large language models and
+            modern variations in retrievers, augmentation, and system integration.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

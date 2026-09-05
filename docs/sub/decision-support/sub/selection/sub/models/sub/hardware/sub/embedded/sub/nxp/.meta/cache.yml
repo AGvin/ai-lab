@@ -1,0 +1,67 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:7b8cbbf5cfeff2d9f711aa27ef1ac23faf9ce145
+    parent:
+      entity.yml: gitblob:7aa413465b6b02729bc20e2c619dda17eb0ef76b
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/selection/models/hardware/target
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/selection/models/hardware/target
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: decision-support/selection/models/hardware/target
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: decision-support/selection/models/hardware/embedded/nxp
+        type: model-selection-hardware-target
+        name: NXP Embedded Model Selection
+        references:
+        - type: official-site
+          source:
+            url: https://www.nxp.com/design/design-center/software/development-software/eiq-ml-development-environment:EIQ
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

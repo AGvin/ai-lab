@@ -1,0 +1,88 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:53dc3ad4fba5d533170edc79e70e9f9654078b55
+    parent:
+      entity.yml: gitblob:77a5459d5d17a56fe8b2b19f0e1494e3562e0255
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/interfaces-and-workspaces/conversational-platforms/open-webui
+        type: software
+        name: Open WebUI
+        references:
+        - type: documentation
+          source:
+            url: https://docs.openwebui.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/open-webui/open-webui
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/open-webui/open-webui/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+          note: Current upstream license identifies Open WebUI Inc. as copyright holder
+            and Timothy Jaeryang Baek as creator.
+        relations:
+        - type: produced-by
+          target: catalog/producers/t/timothy-jaeryang-baek
+        - type: owned-by
+          target: catalog/producers/o/open-webui-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,79 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:510e9ae7fac9c45e028d5fccefd775334f8953cf
+    parent:
+      entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/c/coreweave
+        type: organization
+        name: CoreWeave
+        references:
+        - type: official-site
+          source:
+            url: https://www.coreweave.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/llm-d/llm-d
+          purposes:
+          - research
+          authority: official
+          note: Current llm-d project README identifies CoreWeave as one of the founding
+            organizations.
+        relations:
+        - type: produces
+          target: catalog/software/inference-runtimes/distributed-serving/llm-d
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

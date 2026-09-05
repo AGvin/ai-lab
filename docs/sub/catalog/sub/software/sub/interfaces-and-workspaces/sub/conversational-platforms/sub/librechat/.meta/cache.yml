@@ -1,0 +1,88 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:97a173bae330cada5a5c06f2c2806098daec1c74
+    parent:
+      entity.yml: gitblob:77a5459d5d17a56fe8b2b19f0e1494e3562e0255
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/interfaces-and-workspaces/conversational-platforms/librechat
+        type: software
+        name: LibreChat
+        references:
+        - type: documentation
+          source:
+            url: https://www.librechat.ai/docs
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/danny-avila/LibreChat
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://clickhouse.com/blog/clickhouse-acquires-librechat
+          purposes:
+          - research
+          authority: official
+          note: First-party ClickHouse announcement of the LibreChat acquisition and
+            Danny Avila's founder role.
+        relations:
+        - type: produced-by
+          target: catalog/producers/d/danny-avila
+        - type: owned-by
+          target: catalog/producers/c/clickhouse-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

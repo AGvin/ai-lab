@@ -1,0 +1,82 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:abd8273316b6bf6f731dc046fffcec6bad5c90ef
+    parent:
+      entity.yml: gitblob:cdabbf9a83c46d7cf4c6c0f2ea6846dd564fad0a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/z/zenml-gmbh
+        type: organization
+        name: ZenML GmbH
+        references:
+        - type: official-site
+          source:
+            url: https://www.zenml.io/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.zenml.io/reference/global-settings
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: ZenML documentation explicitly identifies ZenML GmbH as the startup
+            that creates and maintains ZenML.
+        relations:
+        - type: produces
+          target: catalog/software/model-and-data-platforms/lifecycle-platforms/zenml
+        - type: maintains
+          target: catalog/software/model-and-data-platforms/lifecycle-platforms/zenml
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

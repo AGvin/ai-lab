@@ -1,0 +1,75 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:7a6bda49425965e2a960230de5da8e1c9c345d48
+    parent:
+      entity.yml: gitblob:bda2e6e5abb3c32a05cbcfe3fb4f81735339da19
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/interaction/context/multimodal-context
+        name: Multimodal Context
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2204.14198
+          purposes:
+          - research
+          authority: independent
+          note: Flamingo demonstrates model interaction over arbitrarily interleaved
+            visual and textual inputs, providing a canonical example of multiple modalities
+            participating in one in-context sequence.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2403.05530
+          purposes:
+          - research
+          authority: independent
+          note: Gemini 1.5 technical report demonstrates long-context processing across
+            documents, video, audio, and text and illustrates that modality-bearing
+            inputs share finite context and runtime resources in concrete systems.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,79 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:3f2d07417577a11cb7173a36baec77059a917d30
+    parent:
+      entity.yml: gitblob:46b91081ab3e21420c7289bb28e30b3d82f867a5
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/d/daniel-avila
+        type: individual
+        name: Daniel Avila
+        references:
+        - type: other
+          source:
+            url: https://github.com/davila7
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/davila7/claude-code-templates
+          purposes:
+          - research
+          authority: official
+          note: The project repository identifies Daniel Avila as the maintainer through
+            its security policy and links the davila7 profile as the maintainer identity.
+        relations:
+        - type: produces
+          target: catalog/services/ai-assets/claude-code-templates
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

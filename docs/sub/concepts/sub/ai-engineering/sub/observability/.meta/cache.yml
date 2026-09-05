@@ -1,0 +1,77 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:5ec1f94a615171158474a54c4a357f5c881fc04f
+    parent:
+      entity.yml: gitblob:fc72d175a8436c4b2c8b53a25629dadd8647a8f4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/ai-engineering/observability
+        name: AI System Observability
+        aliases:
+        - Observability
+        references:
+        - type: documentation
+          source:
+            url: https://opentelemetry.io/docs/concepts/observability-primer/
+          purposes:
+          - research
+          authority: official
+          note: Current OpenTelemetry observability guidance defines telemetry signals
+            including logs, metrics, spans, and distributed traces and explains trace/span
+            context for reconstructing request paths through distributed systems.
+        - type: documentation
+          source:
+            url: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
+          purposes:
+          - research
+          authority: official
+          note: NIST AI RMF Measure requires production monitoring of AI-system functionality
+            and behavior and documented evaluation/measurement conditions, grounding
+            observability in ongoing evidence rather than infrastructure uptime alone.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

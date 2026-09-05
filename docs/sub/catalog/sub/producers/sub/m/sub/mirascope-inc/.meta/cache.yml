@@ -1,0 +1,85 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:81d8f63c1fb683f2a85f5c40352e98baf9b13319
+    parent:
+      entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/m/mirascope-inc
+        type: organization
+        name: Mirascope, Inc.
+        references:
+        - type: official-site
+          source:
+            url: https://mirascope.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://mirascope.com/terms/use
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Official Terms of Use identifying Mirascope, Inc.
+        - type: repository
+          source:
+            url: https://github.com/Mirascope/mirascope
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/application-frameworks/application-development/mirascope
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

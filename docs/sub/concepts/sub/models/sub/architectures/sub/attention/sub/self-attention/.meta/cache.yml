@@ -1,0 +1,73 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a647bab92e017cead8dc2682034bb3a0027e6ccf
+    parent:
+      entity.yml: gitblob:25693031ebf9a42907e0de90f4397b605ec3b745
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/architectures/attention/self-attention
+        name: Self-Attention
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1706.03762
+          purposes:
+          - research
+          authority: independent
+          note: Transformer paper defines self-attention as attention relating positions
+            within a single sequence to compute sequence representations.
+        - type: other
+          source:
+            url: https://web.stanford.edu/~jurafsky/slp3/
+          purposes:
+          - research
+          authority: independent
+          note: Current 2026 Speech and Language Processing treatment covers causal
+            and bidirectional Transformer attention patterns and masking distinctions.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

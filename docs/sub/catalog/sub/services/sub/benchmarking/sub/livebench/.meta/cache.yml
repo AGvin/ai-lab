@@ -1,0 +1,68 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:9cf0f75d940b8f78c7ea7bf62e3a807e54c68d9f
+    parent:
+      entity.yml: gitblob:73ce23c26d635e2f5dd50fd287cc2d233d43f720
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/benchmarking/livebench
+        type: service
+        name: LiveBench
+        references:
+        - type: official-site
+          source:
+            url: https://livebench.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,76 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:56cb46ec54e5c8436d4a503f2156ec9a45655a6e
+    parent:
+      entity.yml: gitblob:c99faf9b447231a94e2b68450a8dbc4fa21826b8
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/machine-learning/learning-theory/overfitting
+        name: Overfitting
+        references:
+        - type: book
+          source:
+            url: https://www.deeplearningbook.org/contents/ml.html
+          purposes:
+          - research
+          authority: independent
+          note: Goodfellow, Bengio, and Courville define overfitting through the relationship
+            between training and generalization error/capacity rather than treating
+            training fit alone as sufficient evidence.
+        - type: article
+          source:
+            url: https://doi.org/10.1073/pnas.1903070116
+          purposes:
+          - research
+          authority: independent
+          note: Belkin et al. show that modern overparameterized/interpolating models
+            can exhibit double-descent behavior and strong test performance, bounding
+            simplistic claims that high capacity or exact training fit necessarily
+            implies overfitting.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

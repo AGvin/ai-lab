@@ -1,0 +1,67 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:e861a9cb4918ee45b4bc6a4f86a9ec713c7b05cf
+    parent:
+      entity.yml: gitblob:248eb2b3b950b1d16b80d0a0b74b409370d935bf
+      node.yml: gitblob:9a8688f2f267daccacc471878dd142c50ffbe010
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/integrations/integration
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/integrations/integration
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/integrations/integration
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/assistant-workspaces/chatgpt/integrations/agent-skills
+        name: ChatGPT Agent Skills
+        references:
+        - type: documentation
+          source:
+            url: https://help.openai.com/en/articles/20001069-skills-in-chatgpt
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

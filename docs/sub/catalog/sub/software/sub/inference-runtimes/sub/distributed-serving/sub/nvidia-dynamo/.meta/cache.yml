@@ -1,0 +1,78 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b523e429be2478c41bf98a5f40e815782cfa23b5
+    parent:
+      entity.yml: gitblob:b1378bdd8814f49a3247d97f1015b4ffd6e46ce6
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/inference-runtimes/distributed-serving/nvidia-dynamo
+        type: software
+        name: NVIDIA Dynamo
+        references:
+        - type: documentation
+          source:
+            url: https://docs.dynamo.nvidia.com/dynamo/dev/getting-started/introduction
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/ai-dynamo/dynamo
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/n/nvidia
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

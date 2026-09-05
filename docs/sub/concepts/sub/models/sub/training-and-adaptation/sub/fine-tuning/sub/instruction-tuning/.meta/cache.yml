@@ -1,0 +1,74 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b86f02abeb534529ac44f8e75ee2c02b4bbfdd36
+    parent:
+      entity.yml: gitblob:65250b534375bfdd82f8bcfdec5d9cf9e0255a98
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/training-and-adaptation/fine-tuning/instruction-tuning
+        name: Instruction Tuning
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2109.01652
+          purposes:
+          - research
+          authority: independent
+          note: FLAN demonstrates fine-tuning across diverse tasks expressed through
+            natural-language instructions and evaluates generalization to unseen tasks.
+        - type: article
+          source:
+            url: https://doi.org/10.1145/3777411
+          purposes:
+          - research
+          authority: independent
+          note: Current 2026 survey defines instruction tuning through supervised
+            instruction-output data while documenting the terminology overlap between
+            instruction tuning and SFT in LLM literature.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

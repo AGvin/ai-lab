@@ -1,0 +1,94 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:5cee9e963edd6c26d80b3ceb4b6d608358dfc687
+    parent:
+      entity.yml: gitblob:602acb679d0c76a713ee87e3eca52ba813e092f0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/inference-runtimes/inference-engines/vllm
+        type: software
+        name: vLLM
+        references:
+        - type: documentation
+          source:
+            url: https://docs.vllm.ai/en/latest/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/vllm-project/vllm
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://sky.cs.berkeley.edu/project/vllm/
+          purposes:
+          - research
+          authority: official
+          note: UC Berkeley Sky Computing Lab project page documents vLLM's origin
+            and contributors.
+        - type: other
+          source:
+            url: https://pytorch.org/projects/vllm/
+          purposes:
+          - research
+          authority: official
+          note: Current PyTorch Foundation project page documents vLLM's later contribution
+            to neutral foundation hosting.
+        relations:
+        - type: produced-by
+          target: catalog/producers/u/uc-berkeley-sky-computing-lab
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

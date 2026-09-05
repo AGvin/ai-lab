@@ -1,0 +1,75 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:5cad06e0202fba999da8a84a4bf4c8bd2c2b01d1
+    parent:
+      entity.yml: gitblob:f8e34d6a9e50e586137a31002cba863ff2dd8bda
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/interaction/prompting
+        name: Prompting
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2402.07927
+          purposes:
+          - research
+          authority: independent
+          note: Systematic prompt-engineering survey covering instructions, demonstrations,
+            reasoning-oriented prompts, and other prompt-based methods without changing
+            the core model for ordinary inference-time prompting.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2005.14165
+          purposes:
+          - research
+          authority: independent
+          note: GPT-3 work established influential zero-shot and few-shot in-context
+            task specification through textual prompts without gradient updates during
+            task inference.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

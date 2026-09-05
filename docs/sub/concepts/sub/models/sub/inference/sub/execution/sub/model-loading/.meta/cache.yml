@@ -1,0 +1,83 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:0ea6608a53f1e62af373db9cf9d55b9dfcab428c
+    parent:
+      entity.yml: gitblob:ffdc0359c4a42d1dca3fb05c6a0ac985048e85a1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/inference/execution/model-loading
+        name: Model Loading
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/docs/transformers/models
+          purposes:
+          - research
+          authority: official
+          note: Current Transformers documentation distinguishes model construction,
+            loading pretrained weights, sharded checkpoints, device dispatch, and
+            memory-efficient loading for large models.
+        - type: documentation
+          source:
+            url: https://docs.pytorch.org/docs/stable/generated/torch.load.html
+          purposes:
+          - research
+          authority: official
+          note: Current PyTorch loading documentation distinguishes ordinary storage
+            loading from memory-mapped lazy access and device remapping.
+        - type: documentation
+          source:
+            url: https://docs.pytorch.org/tutorials/recipes/recipes/module_load_state_dict_tips.html
+          purposes:
+          - research
+          authority: official
+          note: Current PyTorch guidance demonstrates checkpoint loading through state
+            dictionaries, memory mapping, meta-device initialization, and assignment
+            without assuming one fixed loading path.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

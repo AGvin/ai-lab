@@ -1,0 +1,82 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:98db0278f956c2fd56df37f350be236c7119dddf
+    parent:
+      entity.yml: gitblob:363511bc5385d513442d67c84ef64318618625e1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/agents-and-autonomy/tool-use
+        name: Tool Use
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2210.03629
+          purposes:
+          - research
+          authority: independent
+          note: ReAct demonstrates model-generated actions that interact with external
+            environments and feed observations back into subsequent model decisions.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2302.04761
+          purposes:
+          - research
+          authority: independent
+          note: Toolformer demonstrates language-model use of external tools through
+            learned API-call insertion, illustrating that tool use is broader than
+            one provider's function-calling interface.
+        - type: documentation
+          source:
+            url: https://help.openai.com/en/articles/8555517-function-calling-updates
+          purposes:
+          - research
+          authority: official
+          note: Current OpenAI documentation describes function calling as a provider-specific
+            structured interface connecting models to external tools and systems.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

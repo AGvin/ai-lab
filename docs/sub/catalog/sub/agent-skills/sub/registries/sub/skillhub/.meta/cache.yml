@@ -1,0 +1,71 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:7ae9b922ae8826e11a7f6963de002ee39a2cf2e1
+    parent:
+      entity.yml: gitblob:c0afadd5957d2edd75bba157fb68e13fd5d8a0a8
+      node.yml: gitblob:20b4ce2d2f27a54e2a5eecd1d049754e1eee022e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/agent-skills/registry
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/agent-skills/registry
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/agent-skills/registry
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/agent-skills/registries/skillhub
+        type: skill-registry
+        name: SkillHub
+        aliases:
+        - skill-marketplace.com
+        references:
+        - type: official-site
+          source:
+            url: https://www.skill-marketplace.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,60 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:46061231a6691d707811fd322f673879afaaece3
+    parent:
+      entity.yml: gitblob:acffa82dd28b576d9628d284ffbe418d65065413
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/scenarios/scenario
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/scenarios/scenario
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: decision-support/scenarios/scenario
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: decision-support/scenarios/personal/privacy-first-or-offline-user
+        type: user-scenario
+        name: Privacy-First or Offline User
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

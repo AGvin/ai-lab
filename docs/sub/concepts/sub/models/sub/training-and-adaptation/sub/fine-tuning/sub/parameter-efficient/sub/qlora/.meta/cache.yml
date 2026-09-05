@@ -1,0 +1,78 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:de3c9f6cb8b6a4b3810cbd887ad3998abf4e8964
+    parent:
+      entity.yml: gitblob:cc6767bf604e182ec90c6cee22144ceed459d19c
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/training-and-adaptation/fine-tuning/parameter-efficient/qlora
+        name: QLoRA
+        aliases:
+        - Quantized Low-Rank Adaptation
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2305.14314
+          purposes:
+          - research
+          authority: independent
+          note: Original QLoRA paper fine-tunes LoRA adapters through a frozen 4-bit
+            quantized base, introducing NF4, double quantization, and paged optimizers
+            as components of the method.
+        - type: repository
+          source:
+            url: https://github.com/artidoro/qlora
+          purposes:
+          - research
+          - identification
+          authority: upstream
+          note: Official QLoRA implementation provides the original training recipe
+            and concrete compatibility details separately from the abstract method
+            boundary.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

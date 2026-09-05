@@ -1,0 +1,80 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d4abd0204ca487d1c940056fe94ba08499b5dea9
+    parent:
+      entity.yml: gitblob:b36ca5bdc58da8f3782c6a5822573937ea2cd7d2
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/o/open-webui-inc
+        type: organization
+        name: Open WebUI Inc.
+        references:
+        - type: official-site
+          source:
+            url: https://openwebui.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/open-webui/open-webui/blob/main/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current upstream license identifies Open WebUI Inc. as the copyright
+            holder while separately crediting Timothy Jaeryang Baek as creator.
+        relations:
+        - type: owns
+          target: catalog/software/interfaces-and-workspaces/conversational-platforms/open-webui
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

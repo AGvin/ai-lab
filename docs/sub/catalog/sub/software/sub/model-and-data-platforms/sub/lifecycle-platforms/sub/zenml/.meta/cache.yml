@@ -1,0 +1,88 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a4940c1036088416d1ba3bc01441efe1423c7773
+    parent:
+      entity.yml: gitblob:bd13a6e0ed5fb822236524f57d9a9b0aa57d3cd3
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/model-and-data-platforms/lifecycle-platforms/zenml
+        type: software
+        name: ZenML
+        references:
+        - type: documentation
+          source:
+            url: https://docs.zenml.io/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/zenml-io/zenml
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.zenml.io/reference/global-settings
+          purposes:
+          - research
+          authority: official
+          note: ZenML documentation identifies ZenML GmbH as the startup that creates
+            and maintains ZenML.
+        relations:
+        - type: produced-by
+          target: catalog/producers/z/zenml-gmbh
+        - type: maintained-by
+          target: catalog/producers/z/zenml-gmbh
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

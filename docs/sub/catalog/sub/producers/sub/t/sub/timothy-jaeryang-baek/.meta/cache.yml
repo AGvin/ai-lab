@@ -1,0 +1,82 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:fa587f2aae511f9d1ef25708041ac5d1eda54c29
+    parent:
+      entity.yml: gitblob:28ad9dbbd921bafdc12d024f89757651c4767ef8
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/t/timothy-jaeryang-baek
+        type: individual
+        name: Timothy Jaeryang Baek
+        aliases:
+        - tjbck
+        references:
+        - type: other
+          source:
+            url: https://github.com/tjbck
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/open-webui/open-webui
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: The current upstream project identifies Open WebUI as created by Timothy
+            Jaeryang Baek.
+        relations:
+        - type: produces
+          target: catalog/software/interfaces-and-workspaces/conversational-platforms/open-webui
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

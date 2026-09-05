@@ -1,0 +1,73 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:166bb8a592814273d6be43531201ef6759eb952f
+    parent:
+      entity.yml: gitblob:3d17eabb382a9d546f5086a1fc38d04ff35c38a2
+      node.yml: gitblob:9a8688f2f267daccacc471878dd142c50ffbe010
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/integrations/integration
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/integrations/integration
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/integrations/integration
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/agents/hybrid/openai-codex/integrations/plugins
+        name: OpenAI Codex Plugins
+        references:
+        - type: documentation
+          source:
+            url: https://learn.chatgpt.com/docs/plugins
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://learn.chatgpt.com/docs/build-plugins
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,105 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:2eb5141b72fa1b08860eeba2cbc3ec05e4dfda91
+    parent:
+      entity.yml: gitblob:dbd446ab301de28bef71f8f1ea42e2bcaa014460
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/workflow-engines/data-and-compute-orchestration/dagster
+        type: software
+        name: Dagster
+        references:
+        - type: documentation
+          source:
+            url: https://docs.dagster.io/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/dagster-io/dagster
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://dagster.io/eula
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current Dagster legal material identifies Elementl, Inc. d/b/a Dagster
+            Labs as the provider/company identity.
+        - type: article
+          source:
+            url: https://dagster.io/prefect
+          purposes:
+          - research
+          authority: official
+          note: July 2026 first-party acquisition-transition announcement states that
+            Prefect is acquiring Dagster Labs while Dagster remains supported under
+            its existing name and open-source license.
+        - type: other
+          source:
+            url: https://dagster.io/dagster-customer-faq
+          purposes:
+          - research
+          authority: official
+          note: First-party FAQ describes the transaction close as pending, so legal
+            ownership should not be inferred solely from acquisition-announcement
+            wording until close status is unambiguous.
+        relations:
+        - type: produced-by
+          target: catalog/producers/e/elementl-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

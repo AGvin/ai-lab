@@ -1,0 +1,61 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a9a39572ff644b6c02a27e19a9eebc8bddc3c646
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+    parent:
+      entity.yml: gitblob:8297390219491c4adbd21da953681e0c1b9e6193
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/child-index
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/child-index
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/google/gemma/gemma-4/models
+        type: catalog-index
+        name: Gemma 4 Models
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

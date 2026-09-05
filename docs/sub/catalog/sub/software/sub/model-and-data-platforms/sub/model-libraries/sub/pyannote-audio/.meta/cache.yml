@@ -1,0 +1,80 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b7abc8be5d6c77c8f127981e626ffa4e1cd00af4
+      node.yml: gitblob:e3d77a9814d32678e285b60687d5f3e5320edd6d
+    parent:
+      entity.yml: gitblob:720220b8d61c1dab5192e55f91e6c93fbc6452ba
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/software/software
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/software/software
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/software/software
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/model-and-data-platforms/model-libraries/pyannote-audio
+        type: model-library
+        name: pyannote.audio
+        references:
+        - type: repository
+          source:
+            url: https://github.com/pyannote/pyannote-audio
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current package metadata identifies Hervé Bredin as the pyannote.audio
+            author.
+        - type: registry
+          source:
+            url: https://huggingface.co/pyannote/speaker-diarization-community-1
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/h/herve-bredin
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

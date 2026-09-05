@@ -1,0 +1,88 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:1528f16dc47596afabd92d9e2fbf0ec1be8ccf7a
+    parent:
+      entity.yml: gitblob:33c8134ea5594ae731a593bfd4dab117d1c4e0d0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/trustworthy-ai/alignment-and-control
+        name: AI Alignment and Control
+        aliases:
+        - Model Alignment
+        - Alignment
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2203.02155
+          purposes:
+          - research
+          authority: independent
+          note: InstructGPT demonstrates supervised instruction tuning plus human-preference
+            reinforcement learning as one influential method for improving correspondence
+            between language-model behavior and stated user intent while documenting
+            remaining errors/limitations.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2212.08073
+          purposes:
+          - research
+          authority: independent
+          note: Constitutional AI demonstrates rule/principle-guided self-critique
+            and AI-feedback preference training as a different alignment approach,
+            reinforcing that alignment is not synonymous with one human-feedback pipeline.
+        - type: documentation
+          source:
+            url: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/
+          purposes:
+          - research
+          authority: official
+          note: NIST AI RMF frames trustworthy AI as contextual and socio-technical,
+            requiring lifecycle controls/evidence and trade-offs rather than treating
+            desired model behavior as a complete security or safety boundary.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

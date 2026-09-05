@@ -1,0 +1,80 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:f8fe1e826d326a8a88aa4ede9feae30fd596c41c
+    parent:
+      entity.yml: gitblob:602acb679d0c76a713ee87e3eca52ba813e092f0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/inference-runtimes/inference-engines/text-embeddings-inference
+        type: software
+        name: Text Embeddings Inference
+        aliases:
+        - TEI
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/docs/text-embeddings-inference/en/index
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/huggingface/text-embeddings-inference
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/h/hugging-face-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

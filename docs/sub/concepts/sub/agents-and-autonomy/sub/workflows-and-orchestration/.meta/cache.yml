@@ -1,0 +1,86 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:3cde3def2c5bbe78a6d3acde1e3fd6916332ef1c
+    parent:
+      entity.yml: gitblob:363511bc5385d513442d67c84ef64318618625e1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/agents-and-autonomy/workflows-and-orchestration
+        name: Workflows and Orchestration
+        references:
+        - type: article
+          source:
+            url: https://www.anthropic.com/engineering/building-effective-agents
+          purposes:
+          - research
+          authority: official
+          note: Anthropic documents composable workflow patterns including routing,
+            orchestrator-workers, and evaluator-optimizer and distinguishes predefined
+            orchestration from model-directed agent control while acknowledging terminology
+            variation.
+        - type: documentation
+          source:
+            url: https://openai.github.io/openai-agents-python/multi_agent/
+          purposes:
+          - research
+          authority: official
+          note: Current OpenAI Agents SDK documentation distinguishes manager-style
+            agents-as-tools from handoffs and separately documents code-controlled
+            classification routing, chaining, evaluator loops, and parallel execution,
+            supporting explicit workflow-control boundaries.
+        - type: documentation
+          source:
+            url: https://docs.langchain.com/oss/python/langchain/multi-agent
+          purposes:
+          - research
+          authority: official
+          note: Current LangChain documentation separates subagent/supervisor, handoff,
+            router, skills, and custom-workflow patterns, providing an independent
+            taxonomy for bounded routing versus ongoing manager control.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

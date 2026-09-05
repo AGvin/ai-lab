@@ -1,0 +1,92 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:1beb2d4288f00357a91955da7b3f6989da55d784
+      node.yml: gitblob:e3d77a9814d32678e285b60687d5f3e5320edd6d
+    parent:
+      entity.yml: gitblob:0ef9bd1b1008623086461a66341cb136fac18f1e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/software/software
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/software/software
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/software/software
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/inference-runtimes/integrated-platforms/ollama
+        type: software
+        name: Ollama
+        references:
+        - type: official-site
+          source:
+            url: https://ollama.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.ollama.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/ollama/ollama
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: privacy-policy
+          source:
+            url: https://ollama.com/privacy
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/o/ollama-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,95 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:01c683eeab071ff030176b6a5cb845acdad0a0e3
+    parent:
+      entity.yml: gitblob:dbd446ab301de28bef71f8f1ea42e2bcaa014460
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/workflow-engines/data-and-compute-orchestration/kestra
+        type: software
+        name: Kestra
+        references:
+        - type: documentation
+          source:
+            url: https://kestra.io/docs
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/kestra-io/kestra
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://kestra.io/blogs/2022-02-01-kestra-opensource
+          purposes:
+          - research
+          authority: official
+          note: First-party history records Ludovic Dehon starting Kestra in 2019
+            from a Leroy Merlin consulting project before a company was created alongside
+            the open-source project.
+        - type: other
+          source:
+            url: https://kestra.io/privacy-policy
+          purposes:
+          - research
+          authority: official
+          note: Current legal/privacy material identifies Kestra Technologies as the
+            corporate layer for the current Kestra product surface.
+        relations:
+        - type: produced-by
+          target: catalog/producers/l/ludovic-dehon
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,79 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:6c6f23f6acf53256ebd59bd267bbf58f3589fd75
+    parent:
+      entity.yml: gitblob:0c958ac9b06255323dd6f40493fd9f05736b939d
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/agents/local/kiro-cli
+        type: software
+        name: Kiro CLI
+        references:
+        - type: documentation
+          source:
+            url: https://kiro.dev/docs/cli/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://kiro.dev/docs/billing/managing-taxes/
+          purposes:
+          - research
+          authority: official
+          note: Official Kiro documentation identifying Amazon Web Services, Inc.
+            as the Kiro service provider.
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/amazon-web-services
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

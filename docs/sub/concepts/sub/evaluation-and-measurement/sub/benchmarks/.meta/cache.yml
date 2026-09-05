@@ -1,0 +1,85 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:2de23eafad869950943122c1da74e60be48894d5
+    parent:
+      entity.yml: gitblob:bdd8e2902446ee1233777851a26d11b5a6858d88
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/evaluation-and-measurement/benchmarks
+        name: Benchmarks
+        references:
+        - type: official-site
+          source:
+            url: https://mlcommons.org/benchmarks/
+          purposes:
+          - research
+          authority: official
+          note: MLCommons defines benchmark suites through shared models/tasks, datasets,
+            rules, and measurement procedures intended to support fair and reproducible
+            comparison rather than treating published result tables as the benchmark
+            itself.
+        - type: official-site
+          source:
+            url: https://mlcommons.org/benchmarks/inference-datacenter/
+          purposes:
+          - research
+          authority: official
+          note: MLPerf Inference shows concrete benchmark definitions combining datasets,
+            quality targets, scenarios, load-generation rules, and scenario-specific
+            metrics under versioned benchmark rules.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2211.09110
+          purposes:
+          - research
+          authority: independent
+          note: HELM demonstrates scenario-based, multi-metric benchmark design and
+            highlights that benchmark coverage and standardized evaluation procedure
+            are distinct from any single aggregate score or leaderboard rank.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

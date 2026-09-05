@@ -1,0 +1,75 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:e98664334544c5e936316ae4af9dd5ec57a4803b
+    parent:
+      entity.yml: gitblob:a4ee2dcae1c5d737d8341a59e0c35e264801353e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/architectures/diffusion-models
+        name: Diffusion Models
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2006.11239
+          purposes:
+          - research
+          authority: independent
+          note: Denoising Diffusion Probabilistic Models provide a canonical discrete-time
+            diffusion formulation that learns to reverse a progressive noising process
+            for generative modeling.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2011.13456
+          purposes:
+          - research
+          authority: independent
+          note: Score-based generative modeling through stochastic differential equations
+            unifies diffusion probabilistic and score-based methods through continuous-time
+            forward corruption and learned reverse dynamics.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

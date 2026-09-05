@@ -1,0 +1,90 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:767e4e8f1259e8a41a5ef25091f36030f4c5efc7
+    parent:
+      entity.yml: gitblob:b36ca5bdc58da8f3782c6a5822573937ea2cd7d2
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/o/openai
+        type: organization
+        name: OpenAI
+        references:
+        - type: official-site
+          source:
+            url: https://openai.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/openai
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/models/openai/gpt
+        - type: produces
+          target: catalog/models/openai/whisper
+        - type: produces
+          target: catalog/agent-skills/collections/openai-skills
+        - type: produces
+          target: catalog/services/assistant-workspaces/chatgpt
+        - type: produces
+          target: catalog/software/agents/hybrid/openai-codex
+        - type: produces
+          target: catalog/software/agent-frameworks/openai-agents-sdk
+        - type: has-part
+          target: catalog/producers/p/promptfoo-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

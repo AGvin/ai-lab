@@ -1,0 +1,90 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b5a673d4eb8555e88c6384b58a9aa86d14f6eadd
+    parent:
+      entity.yml: gitblob:6ca851a8040ebee7d0a0b1879131062db6cca913
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/development-tools/code-editors/cursor
+        type: software
+        name: Cursor
+        references:
+        - type: official-site
+          source:
+            url: https://cursor.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://cursor.com/docs
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: privacy-policy
+          source:
+            url: https://cursor.com/privacy
+          purposes:
+          - research
+          authority: official
+        - type: terms-of-service
+          source:
+            url: https://cursor.com/terms-of-service
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/anysphere-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

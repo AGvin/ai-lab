@@ -1,0 +1,77 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:cc54dae8a17c2b6757b156454db7dc508535bbdc
+    parent:
+      entity.yml: gitblob:fc72d175a8436c4b2c8b53a25629dadd8647a8f4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/ai-engineering/deployment-and-serving
+        name: AI Deployment and Serving
+        aliases:
+        - Model Serving
+        references:
+        - type: documentation
+          source:
+            url: https://kserve.github.io/website/docs/admin-guide/overview
+          purposes:
+          - research
+          authority: official
+          note: Current KServe production guidance treats inference serving as an
+            operational layer covering deployment modes, networking, resources, scaling,
+            security, monitoring, timeouts, and predictive/generative inference workloads.
+        - type: documentation
+          source:
+            url: https://kserve.github.io/website/docs/model-serving/generative-inference/autoscaling
+          purposes:
+          - research
+          authority: official
+          note: KServe autoscaling guidance demonstrates serving capacity driven by
+            inference-specific signals such as concurrent/running requests and KV-cache/queue
+            state rather than treating a loaded model as a complete production service.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

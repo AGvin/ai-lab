@@ -1,0 +1,76 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:41a83aafa1b9b4cce30a0803f79722c7369b1bbd
+    parent:
+      entity.yml: gitblob:ffdc0359c4a42d1dca3fb05c6a0ac985048e85a1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/inference/execution/gpu-offloading
+        name: GPU Offloading
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/docs/accelerate/en/concept_guides/big_model_inference
+          purposes:
+          - research
+          authority: official
+          note: Hugging Face Big Model Inference documents explicit placement of model
+            layers/weights across GPU, CPU, and disk and illustrates that `offload`
+            terminology can describe movement away from GPU as well as heterogeneous
+            placement.
+        - type: documentation
+          source:
+            url: https://huggingface.co/docs/transformers/models
+          purposes:
+          - research
+          authority: official
+          note: Current Transformers loading documentation shows device maps spanning
+            GPU, CPU, and disk and distinguishes model placement from artifact sharding
+            and loading mechanics.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

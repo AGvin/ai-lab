@@ -1,0 +1,82 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:7ba4a2df19af7f4e4c846e8315ea0085323e88d0
+    parent:
+      entity.yml: gitblob:2f014c200c2282ae14ccd5407a676e2770042b54
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/b/benn-huang
+        type: individual
+        name: Benn Huang
+        aliases:
+        - bennhuang
+        - Bin-Huang
+        references:
+        - type: other
+          source:
+            url: https://github.com/Bin-Huang
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/chatboxai/chatbox
+          purposes:
+          - research
+          authority: official
+          note: Current upstream package metadata identifies bennhuang as the Chatbox
+            author.
+        relations:
+        - type: produces
+          target: catalog/software/interfaces-and-workspaces/model-clients/chatbox
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

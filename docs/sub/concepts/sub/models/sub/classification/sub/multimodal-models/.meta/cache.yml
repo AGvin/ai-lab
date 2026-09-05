@@ -1,0 +1,73 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:531ea77a11fb666992d74e05883917e717184a51
+    parent:
+      entity.yml: gitblob:edcc0e47aa8e02f42b1b2a8bb087f7d6e2060c72
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/classification/multimodal-models
+        name: Multimodal Models
+        references:
+        - type: documentation
+          source:
+            url: https://csrc.nist.gov/glossary/term/multimodal_models
+          purposes:
+          - research
+          authority: official
+          note: Current NIST terminology defines multimodal models through processing
+            and relating information from multiple modalities.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1705.09406
+          purposes:
+          - research
+          authority: independent
+          note: Established multimodal machine-learning taxonomy covering representation,
+            translation, alignment, fusion, and co-learning across modalities.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

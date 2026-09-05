@@ -1,0 +1,97 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a987057ea7e307b6f3a36839721eeeddc9bb17fd
+    parent:
+      entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/m/microsoft
+        type: organization
+        name: Microsoft
+        references:
+        - type: official-site
+          source:
+            url: https://www.microsoft.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/microsoft
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.microsoft.com/investor/reports/ar19/
+          purposes:
+          - research
+          authority: official
+          note: Official Microsoft annual report documenting the acquisition of GitHub,
+            Inc.
+        relations:
+        - type: produces
+          target: catalog/models/microsoft/phi
+        - type: produces
+          target: catalog/software/agent-frameworks/autogen
+        - type: produces
+          target: catalog/software/application-frameworks/application-development/microsoft-extensions-ai
+        - type: produces
+          target: catalog/software/development-tools/code-editors/vs-code
+        - type: produces
+          target: catalog/software/development-tools/testing/playwright
+        - type: produces
+          target: catalog/software/agent-frameworks/microsoft-agent-framework
+        - type: owns
+          target: catalog/producers/g/github-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

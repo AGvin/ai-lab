@@ -1,0 +1,78 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d123aa1543c7554a9e6bbd2f3587e4468803db20
+    parent:
+      entity.yml: gitblob:c032bd27e9c6f49dacbf7a039554b8f8f098fe47
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/agents-and-autonomy/coordination-and-communication/blackboard
+        name: Blackboard Architecture
+        aliases:
+        - Blackboard
+        references:
+        - type: article
+          source:
+            url: https://doi.org/10.1016/0004-3702(85)90063-3
+          purposes:
+          - research
+          authority: independent
+          note: Hayes-Roth's 1985 Artificial Intelligence paper develops a blackboard
+            control architecture that separates shared domain/problem state from control
+            knowledge and scheduling, establishing blackboard as a durable AI architecture
+            rather than a recent LLM-framework label.
+        - type: article
+          source:
+            url: https://doi.org/10.1609/aimag.v7i3.550
+          purposes:
+          - research
+          authority: independent
+          note: Nii's 1986 AI Magazine treatment defines and contrasts blackboard
+            systems and emphasizes the underlying blackboard problem-solving model,
+            its framework, and diverse application/system designs.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

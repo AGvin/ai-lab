@@ -1,0 +1,84 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:4f14bcd2ca0aaf5df454bfa3117b6dfb03c9d227
+    parent:
+      entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/a/amazon-web-services
+        type: organization
+        name: Amazon Web Services
+        aliases:
+        - AWS
+        references:
+        - type: official-site
+          source:
+            url: https://aws.amazon.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: AWS Open Source launch article establishing Strands Agents as an AWS
+            open-source SDK.
+        relations:
+        - type: produces
+          target: catalog/software/agent-frameworks/strands-agents
+        - type: produces
+          target: catalog/software/agents/local/kiro-cli
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

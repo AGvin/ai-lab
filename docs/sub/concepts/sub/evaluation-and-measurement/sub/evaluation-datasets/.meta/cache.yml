@@ -1,0 +1,75 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:8194962f4feded1ef55088cc859e91c22a1642cd
+    parent:
+      entity.yml: gitblob:bdd8e2902446ee1233777851a26d11b5a6858d88
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/evaluation-and-measurement/evaluation-datasets
+        name: Evaluation Datasets
+        references:
+        - type: documentation
+          source:
+            url: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
+          purposes:
+          - research
+          authority: official
+          note: NIST AI RMF Measure guidance requires test sets and evaluation conditions
+            to be documented and ties meaningful evaluation to populations and conditions
+            relevant to intended deployment.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1803.09010
+          purposes:
+          - research
+          authority: independent
+          note: Datasheets for Datasets establishes systematic documentation of dataset
+            motivation, composition, collection process, preprocessing, uses, distribution,
+            and maintenance as necessary context for interpreting dataset-based evidence.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

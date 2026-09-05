@@ -1,0 +1,78 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:23a8c2980bedc303b9ee828a139396fe42c3808a
+    parent:
+      entity.yml: gitblob:8a45666d63acb19c2f0355bf402455c1d9c963d4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/optimization-and-compression/distillation
+        name: Knowledge Distillation
+        aliases:
+        - Distillation
+        - Model Distillation
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1503.02531
+          purposes:
+          - research
+          authority: independent
+          note: Foundational modern knowledge-distillation work transfers information
+            from an ensemble or teacher into a deployable student using softened predictive
+            distributions rather than only hard labels.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2006.05525
+          purposes:
+          - research
+          authority: independent
+          note: Knowledge-distillation survey covers response-, feature-, and relation-based
+            knowledge, multiple teacher-student schemes, and applications beyond one
+            compression recipe.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,87 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:578726bf44030c2cd41a73365a8b31262cf64522
+    parent:
+      entity.yml: gitblob:b84aa1fed7b40086c41c6a810069a0babbf911ff
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/tongyi-mai/z-image/models/z-image-turbo
+        type: model
+        name: Z-Image-Turbo
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/Tongyi-MAI/Z-Image
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2511.22699
+          purposes:
+          - research
+          authority: upstream
+        relations:
+        - type: member-of
+          target: catalog/models/tongyi-mai/z-image
+        - type: derived-from
+          target: catalog/models/tongyi-mai/z-image/models/z-image
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

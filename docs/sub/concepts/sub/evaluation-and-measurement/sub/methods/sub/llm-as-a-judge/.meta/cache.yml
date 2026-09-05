@@ -1,0 +1,89 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:9696e1897c54edd9ec9309633f72a5a56d50a774
+    parent:
+      entity.yml: gitblob:cf7ff8681068bae4969e41fc700132fcac751676
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/evaluation-and-measurement/methods/llm-as-a-judge
+        name: LLM as a Judge
+        aliases:
+        - LLM-as-a-Judge
+        - Model-Based Evaluation
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2306.05685
+          purposes:
+          - research
+          authority: independent
+          note: Foundational MT-Bench/Chatbot Arena work studies language models as
+            evaluators and documents position, verbosity, self-enhancement, and reasoning
+            biases while calibrating judge agreement against human preferences.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2406.07791
+          purposes:
+          - research
+          authority: independent
+          note: Systematic position-bias study shows judge reliability varies across
+            judge models and tasks and introduces repetition stability, position consistency,
+            and preference-fairness views rather than treating one judgment as stable
+            truth.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2601.17312
+          purposes:
+          - research
+          authority: independent
+          note: Current meta-judging survey consolidates continuing LLM-judge limitations
+            including prompt sensitivity, systematic bias, verbosity effects, and
+            unreliable rationales, reinforcing the need for external validation and
+            calibration.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,90 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:3d55e1e3327f24c6d3e9fcd603d45d8e3f413786
+    parent:
+      entity.yml: gitblob:8172643c72a8f3ab86f7c3f94e2648b6bfc5d7f0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/knowledge-workspaces/sana-agents
+        type: service
+        name: Sana Agents
+        references:
+        - type: official-site
+          source:
+            url: https://sanalabs.com/products/sana/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://sanalabs.com/products/sana/integrations
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://sanalabs.com/download/legal/agents-product-terms.pdf
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: specification
+          source:
+            url: https://sanalabs.com/download/legal/agents-security-whitepaper.pdf
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/s/sana-labs-ab
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

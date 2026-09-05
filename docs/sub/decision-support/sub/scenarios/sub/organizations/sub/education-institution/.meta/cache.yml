@@ -1,0 +1,60 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:392f3dc5f1dd72df0e0ab59109279b2ecbf91ef0
+    parent:
+      entity.yml: gitblob:158a5611e76033a5719967d1b453e870a982890e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/scenarios/scenario
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/scenarios/scenario
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: decision-support/scenarios/scenario
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: decision-support/scenarios/organizations/education-institution
+        type: user-scenario
+        name: Education Institution
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

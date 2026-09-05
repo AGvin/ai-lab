@@ -1,0 +1,97 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:9a6a175977796dec31936736f93b11d5e476b2f4
+    parent:
+      entity.yml: gitblob:e875948a0a0ac5c0f5e7b8d02eb76165bfa9985a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/workflow-engines/visual-ai-workflows/flowise
+        type: software
+        name: Flowise
+        references:
+        - type: documentation
+          source:
+            url: https://docs.flowiseai.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/FlowiseAI/Flowise
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current upstream repository is archived following the announced August
+            2026 wind-down schedule.
+        - type: other
+          source:
+            url: https://flowiseai.com/terms
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current terms identify FlowiseAI Inc. as the legal provider of the
+            FlowiseAI platform and related services.
+        - type: article
+          source:
+            url: https://flowiseai.com/sunset
+          purposes:
+          - research
+          authority: official
+          note: First-party sunset notice records the July 29, 2026 code freeze, August
+            10 repository archival, and August 31, 2026 EOL milestone.
+        relations:
+        - type: produced-by
+          target: catalog/producers/f/flowiseai-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

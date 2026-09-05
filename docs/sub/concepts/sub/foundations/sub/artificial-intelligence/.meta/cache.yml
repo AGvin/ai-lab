@@ -1,0 +1,74 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:cabc58fe5b24b5c984a99a5317af3975ce855279
+    parent:
+      entity.yml: gitblob:7f60b95b5848c8379ea46e60add2796cf8e4cab1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/foundations/artificial-intelligence
+        name: Artificial Intelligence
+        aliases:
+        - AI
+        references:
+        - type: documentation
+          source:
+            url: https://csrc.nist.gov/glossary/term/artificial_intelligence
+          purposes:
+          - research
+          authority: official
+          note: Current NIST terminology for artificial intelligence and AI systems.
+        - type: article
+          source:
+            url: https://www.oecd.org/en/publications/explanatory-memorandum-on-the-updated-oecd-definition-of-an-ai-system_623da898-en.html
+          purposes:
+          - research
+          authority: official
+          note: OECD's updated AI-system definition distinguishes machine-based systems,
+            inferred outputs, objectives, autonomy, and adaptiveness.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

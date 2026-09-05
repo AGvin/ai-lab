@@ -1,0 +1,87 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a1c5b4a153c02e53502bc4e89ab2cc00f05a8192
+    parent:
+      entity.yml: gitblob:fc72d175a8436c4b2c8b53a25629dadd8647a8f4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/ai-engineering/extensibility-and-packaging
+        name: AI Extensibility and Packaging
+        references:
+        - type: documentation
+          source:
+            url: https://agentskills.io/home
+          purposes:
+          - research
+          authority: official
+          note: The open Agent Skills project describes a portable format for packaging
+            specialized knowledge and workflows that AI systems discover and load
+            on demand, providing one cross-client extensibility model within the broader
+            domain.
+        - type: specification
+          source:
+            url: https://agent-plugins.org/specification
+          purposes:
+          - research
+          authority: official
+          note: Agent Plugins 1.0.0 defines a published vendor-neutral portable plugin
+            package floor for Agent Skills and MCP servers while leaving distribution,
+            installation, permissions, user experience, and client-specific extension
+            behavior outside the shared core.
+        - type: documentation
+          source:
+            url: https://docs.github.com/en/copilot/concepts/agents/about-plugins
+          purposes:
+          - research
+          authority: official
+          note: Current GitHub Copilot documentation defines plugins as installable
+            packages that can bundle agents, skills, hooks, and integrations, illustrating
+            a host-specific extension/package model distinct from the portable Agent
+            Skills format and from runtime interoperability protocols.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,74 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:1af322d6412ff4e0efb296cd511fba838aa33b77
+    parent:
+      entity.yml: gitblob:cc6767bf604e182ec90c6cee22144ceed459d19c
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/training-and-adaptation/fine-tuning/parameter-efficient/adapters
+        name: Adapters
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1902.00751
+          purposes:
+          - research
+          authority: independent
+          note: Foundational adapter work inserts compact trainable bottleneck modules
+            into a frozen pretrained Transformer and stores task-specific parameters
+            separately from the base model.
+        - type: article
+          source:
+            url: https://doi.org/10.1007/s10462-025-11236-4
+          purposes:
+          - research
+          authority: independent
+          note: Current PEFT survey treats adapters as one additive-module family
+            distinct from low-rank reparameterization such as LoRA.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

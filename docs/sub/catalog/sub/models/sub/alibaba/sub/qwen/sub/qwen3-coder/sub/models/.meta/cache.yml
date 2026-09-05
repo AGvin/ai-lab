@@ -1,0 +1,61 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:2fc6b11d1b979f5bdd92cae7e84610093de2673d
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+    parent:
+      entity.yml: gitblob:c9a9e6137748275e4c7b2e4d8cef0a537ad9170c
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/child-index
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/child-index
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/alibaba/qwen/qwen3-coder/models
+        type: catalog-index
+        name: Qwen3-Coder Models
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

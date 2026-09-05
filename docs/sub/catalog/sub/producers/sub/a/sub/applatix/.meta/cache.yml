@@ -1,0 +1,81 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:3b94422608527fc5193303c4c72eebdae67f0f97
+    parent:
+      entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/a/applatix
+        type: organization
+        name: Applatix
+        references:
+        - type: article
+          source:
+            url: https://www.cncf.io/reports/argo-project-journey-report/
+          purposes:
+          - identification
+          - research
+          authority: upstream
+          note: CNCF records that Argo Workflows began at Applatix, later acquired
+            by Intuit.
+        - type: article
+          source:
+            url: https://www.intuit.com/blog/news-social/cloud-native-computing-foundation-accepts-argo-as-an-incubator-project/
+          purposes:
+          - research
+          authority: upstream
+          note: Intuit records that Applatix created Argo and that the project continued
+            after Intuit acquired the company.
+        relations:
+        - type: produces
+          target: catalog/software/workflow-engines/data-and-compute-orchestration/argo-workflows
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

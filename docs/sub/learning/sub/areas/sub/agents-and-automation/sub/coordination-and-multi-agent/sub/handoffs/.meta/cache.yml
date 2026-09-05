@@ -1,0 +1,83 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d1cf5631c9e3c9316bd1d09fa4ab1f0b6f38ab8c
+    parent:
+      entity.yml: gitblob:14ea8bfaf4d425225b943a6a70f6a5270a9dfa69
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: learning/areas/agents-and-automation/coordination-and-multi-agent/handoffs
+        name: Handoffs
+        references:
+        - type: documentation
+          source:
+            url: https://microsoft.github.io/autogen/stable/reference/python/autogen_agentchat.teams.html#autogen_agentchat.teams.Swarm
+          purposes:
+          - research
+          authority: official
+          note: Exact legacy AutoGen Swarm reference preserved from the Handoff/Swarm
+            source for migration provenance; stable handoff semantics remain concept-owned.
+        - type: documentation
+          source:
+            url: https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/swarm.html
+          purposes:
+          - research
+          authority: official
+          note: Exact legacy AutoGen handoffs/swarm guide preserved for migration
+            provenance; mutable framework behavior must be re-checked against current
+            documentation before implementation claims.
+        - type: documentation
+          source:
+            url: https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tutorial/termination.html
+          purposes:
+          - research
+          authority: official
+          note: Exact legacy AutoGen termination-conditions reference preserved because
+            handoff/swarm topology safety depends on explicit termination and loop
+            control.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

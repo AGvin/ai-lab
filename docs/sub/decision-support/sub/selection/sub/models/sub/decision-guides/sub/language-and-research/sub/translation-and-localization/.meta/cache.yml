@@ -1,0 +1,60 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:df2eb8da0a63d7fee94733a7f31a41cbe9ff42ba
+    parent:
+      entity.yml: gitblob:7f1b88d663d79abc90be2bbcbc5d0675fbb8c4ba
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/selection/models/guide
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/selection/models/guide
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: decision-support/selection/models/guide
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: decision-support/selection/models/decision-guides/language-and-research/translation-and-localization
+        type: catalog-index
+        name: Translation and Localization Model Selection
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

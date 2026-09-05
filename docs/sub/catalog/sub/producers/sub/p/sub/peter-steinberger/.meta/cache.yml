@@ -1,0 +1,84 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:cea75571ad1d11dccf0c2fdb9d7d8ef662e02e04
+    parent:
+      entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/p/peter-steinberger
+        type: individual
+        name: Peter Steinberger
+        aliases:
+        - steipete
+        references:
+        - type: repository
+          source:
+            url: https://github.com/openclaw/openclaw
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current OpenClaw upstream README identifies OpenClaw as built by Peter
+            Steinberger and the community.
+        - type: other
+          source:
+            url: https://github.com/openclaw/openclaw/releases
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current signed OpenClaw releases identify Peter Steinberger (steipete)
+            as an active release author.
+        relations:
+        - type: produces
+          target: catalog/software/agents/local/openclaw
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

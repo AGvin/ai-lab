@@ -1,0 +1,88 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:8de3fe8043f98aab6892a9605841884946106d40
+    parent:
+      entity.yml: gitblob:e19a99e0dd434a1f5367191cd3671f10c26d7a46
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/model-and-data-platforms/dataset-curation/label-studio
+        type: software
+        name: Label Studio
+        references:
+        - type: documentation
+          source:
+            url: https://labelstud.io/guide/get_started.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/HumanSignal/label-studio
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://humansignal.com/about/
+          purposes:
+          - research
+          authority: official
+          note: HumanSignal identifies Label Studio as its open-source data-labeling
+            tool and describes its origin within the founding company.
+        relations:
+        - type: produced-by
+          target: catalog/producers/h/humansignal-inc
+        - type: maintained-by
+          target: catalog/producers/h/humansignal-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

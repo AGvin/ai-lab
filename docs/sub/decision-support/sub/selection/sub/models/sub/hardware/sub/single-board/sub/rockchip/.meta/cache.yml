@@ -1,0 +1,73 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:92b047f27a0cf2a65b897524805ee565baafae8d
+    parent:
+      entity.yml: gitblob:b663680f52151355e4c464d24928aecf01ebd881
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/selection/models/hardware/target
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: decision-support/selection/models/hardware/target
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: decision-support/selection/models/hardware/target
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: decision-support/selection/models/hardware/single-board/rockchip
+        type: model-selection-hardware-target
+        name: Rockchip NPU Model Selection
+        references:
+        - type: repository
+          source:
+            url: https://github.com/airockchip/rknn-llm
+          purposes:
+          - research
+          authority: upstream
+        - type: repository
+          source:
+            url: https://github.com/airockchip/rknn-toolkit2
+          purposes:
+          - research
+          authority: upstream
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

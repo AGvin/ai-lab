@@ -1,0 +1,69 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:5fecf0c195041f422c1bb2196e51fe9606cfb56c
+      node.yml: gitblob:4abad5453851b2b57e6ad8cb5df1af164903855c
+    parent:
+      entity.yml: gitblob:a2809161ac0af63bd9b30fc13d00a4d66a26a841
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/child-index
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/child-index
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/child-index
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/development-tools/code-editors/vs-code/extensions
+        type: catalog-index
+        name: Visual Studio Code Extensions
+        references:
+        - type: registry
+          source:
+            url: https://marketplace.visualstudio.com/vscode
+          purposes:
+          - identification
+          - research
+          authority: official
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

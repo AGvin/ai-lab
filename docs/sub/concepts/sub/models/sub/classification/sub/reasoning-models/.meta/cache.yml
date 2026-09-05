@@ -1,0 +1,89 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:eedfae56e92f587a0c7560ec8f316bf31ff74ee9
+    parent:
+      entity.yml: gitblob:edcc0e47aa8e02f42b1b2a8bb087f7d6e2060c72
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/classification/reasoning-models
+        name: Reasoning Models
+        aliases:
+        - Reasoning-Oriented Models
+        - Thinking Models
+        references:
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/guides/latest-model
+          purposes:
+          - research
+          authority: official
+          note: Current OpenAI model guidance exposes reasoning effort and reasoning
+            modes on the same model family, demonstrating that reasoning-oriented
+            behavior can be configurable rather than an immutable binary model identity.
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemini-api/docs/generate-content/thinking
+          purposes:
+          - research
+          authority: official
+          note: Current Gemini guidance describes model-dependent adaptive thinking
+            and configurable thinking levels/budgets, reinforcing that inference-time
+            deliberation can vary by model and request rather than map to one universal
+            architecture class.
+        - type: article
+          source:
+            url: https://openreview.net/forum?id=4FWAwZtd2n
+          purposes:
+          - research
+          authority: independent
+          note: Snell et al. study scaling test-time compute for reasoning through
+            multiple inference mechanisms, supporting a broad reasoning-oriented/test-time-compute
+            boundary rather than equating reasoning with one visible chain-of-thought
+            procedure.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

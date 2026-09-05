@@ -1,0 +1,81 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:8ce22986d7492e27aa1d11eb5f4af5a088dc6fb7
+    parent:
+      entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/m/menlo-research-pte-ltd
+        type: organization
+        name: Menlo Research Pte Ltd
+        aliases:
+        - Menlo Research
+        references:
+        - type: other
+          source:
+            url: https://www.jan.ai/docs/desktop/privacy-policy
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Jan's first-party privacy policy identifies Menlo Research Pte Ltd
+            as the company providing Jan desktop and website services.
+        - type: official-site
+          source:
+            url: https://www.jan.ai/
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/interfaces-and-workspaces/integrated-workspaces/jan
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json
