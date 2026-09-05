@@ -1,0 +1,122 @@
+name: Documentation Cache
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_branch:
+        description: Source branch to generate caches for
+        required: true
+        type: string
+      use_fingerprints:
+        description: Use cache fingerprints to skip unchanged nodes
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: documentation-cache-${{ inputs.source_branch }}
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    env:
+      SOURCE_BRANCH: ${{ inputs.source_branch }}
+      USE_FINGERPRINTS: ${{ inputs.use_fingerprints }}
+      GH_TOKEN: ${{ github.token }}
+
+    steps:
+      - name: Validate source branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$SOURCE_BRANCH" ]]; then
+            echo "source_branch must not be empty" >&2
+            exit 2
+          fi
+          if [[ "$SOURCE_BRANCH" == cache/* ]]; then
+            echo "cache branches cannot be used as source branches" >&2
+            exit 2
+          fi
+
+      - name: Check out source branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_branch }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install metadata tooling
+        run: python -m pip install -r tools/documentation/requirements.txt
+
+      - name: Generate caches
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "$USE_FINGERPRINTS" == "true" ]]; then
+            python -m tools.documentation.metadata_tooling.cli cache --use-fingerprints
+          else
+            python -m tools.documentation.metadata_tooling.cli cache --no-use-fingerprints
+          fi
+
+      - name: Inspect generated changes
+        id: changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t changed < <(git status --porcelain --untracked-files=all | sed -E 's/^.. //')
+          if (( ${#changed[@]} == 0 )); then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          for path in "${changed[@]}"; do
+            if [[ "$path" != */.meta/cache.yml ]]; then
+              echo "cache workflow produced unauthorized change: $path" >&2
+              exit 1
+            fi
+          done
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          # Explicit generated-state pathspec owned by this workflow: **/.meta/cache.yml
+
+      - name: Commit generated caches
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          CACHE_BRANCH="cache/${SOURCE_BRANCH}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$CACHE_BRANCH"
+          git add -- ':(glob)**/.meta/cache.yml'
+          git commit -m "Refresh documentation cache for ${SOURCE_BRANCH}"
+          git push --force-with-lease origin "HEAD:${CACHE_BRANCH}"
+
+      - name: Create or reuse cache PR
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          CACHE_BRANCH="cache/${SOURCE_BRANCH}"
+          existing="$(gh pr list \
+            --head "$CACHE_BRANCH" \
+            --base "$SOURCE_BRANCH" \
+            --state open \
+            --json number \
+            --jq '.[0].number // empty')"
+          if [[ -n "$existing" ]]; then
+            echo "Updated existing cache PR #${existing}"
+            exit 0
+          fi
+          gh pr create \
+            --head "$CACHE_BRANCH" \
+            --base "$SOURCE_BRANCH" \
+            --title "Refresh documentation cache for ${SOURCE_BRANCH}" \
+            --body "Generated documentation cache refresh. Canonical .meta inputs remain authoritative."
