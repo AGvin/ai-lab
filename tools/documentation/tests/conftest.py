@@ -66,6 +66,7 @@ def cache_repo(repo):
         },
         "entity": {"schema": "default"},
     })
+    # localized is referenced by defaults, so materialize it for registry completeness.
     write_json(docs / ".meta" / "schemas" / "node" / "localized.schema.json", {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
         "$id": "repo:/:node:localized",
@@ -106,4 +107,45 @@ def cache_repo(repo):
         "entity": {"id": "catalog/producers/openai", "name": "OpenAI"}
     })
     (producer / "README.md").write_text("# OpenAI\n", encoding="utf-8")
+    return repo
+
+
+@pytest.fixture
+def validation_repo(repo):
+    docs = repo / "docs"
+    # Make the entity schema useful for switch-independence tests.
+    write_json(docs / ".meta" / "schemas" / "entity" / "default.schema.json", {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "repo:/:entity:default",
+        "type": "object",
+        "required": ["entity"],
+        "properties": {
+            "entity": {
+                "type": "object",
+                "required": ["id", "name"],
+                "properties": {
+                    "schema": {"type": "string"},
+                    "id": {"type": "string"},
+                    "name": {"type": "string"},
+                    "relations": {"type": "array"},
+                },
+            }
+        },
+    })
+    write_json(docs / ".meta" / "schemas" / "aliases" / "default.schema.json", {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "repo:/:aliases:default",
+        "type": "object",
+    })
+    cache_schema_source = Path(__file__).parents[3] / "docs/.meta/schemas/cache/default.schema.json"
+    cache_schema = json.loads(cache_schema_source.read_text(encoding="utf-8"))
+    write_json(docs / ".meta" / "schemas" / "cache" / "default.schema.json", cache_schema)
+    write_yaml(docs / ".meta" / "defaults.yml", {
+        "node": {"schema": "default", "children": {"schema": "default"}},
+        "entity": {"schema": "default"},
+    })
+    (docs / "README.md").write_text("# Docs\n", encoding="utf-8")
+    from tools.documentation.metadata_tooling.cache import CacheManager
+    from tools.documentation.metadata_tooling.common import Repository
+    CacheManager(Repository(repo)).refresh(use_fingerprints=False)
     return repo
