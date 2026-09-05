@@ -47,6 +47,9 @@ def test_cache_workflow_inputs_and_defaults():
     assert inputs["source_branch"]["type"] == "string"
     assert inputs["use_fingerprints"]["type"] == "boolean"
     assert inputs["use_fingerprints"]["default"] == "true"
+    assert inputs["reset_cache_branch"]["type"] == "boolean"
+    assert inputs["reset_cache_branch"]["required"] == "true"
+    assert inputs["reset_cache_branch"]["default"] == "true"
 
 
 def test_cache_workflow_has_only_required_write_permissions():
@@ -66,6 +69,28 @@ def test_cache_workflow_invokes_cli_and_stable_cache_branch():
     assert 'CACHE_BRANCH="cache/${SOURCE_BRANCH}"' in text
     assert '[[ "$SOURCE_BRANCH" == cache/* ]]' in text
     assert "**/.meta/cache.yml" in text
+
+
+def test_cache_workflow_supports_reset_and_preserve_history_modes():
+    workflow = load_workflow(CACHE_WORKFLOW)
+    steps = workflow["jobs"]["generate"]["steps"]
+    by_name = {step["name"]: step for step in steps}
+    text = CACHE_WORKFLOW.read_text(encoding="utf-8")
+
+    assert workflow["jobs"]["generate"]["env"]["RESET_CACHE_BRANCH"] == "${{ inputs.reset_cache_branch }}"
+    prepare = by_name["Prepare cache branch"]
+    assert prepare["id"] == "branch"
+    assert 'git ls-remote --exit-code --heads origin "refs/heads/${CACHE_BRANCH}"' in prepare["run"]
+    assert 'git checkout -B "$CACHE_BRANCH" "$SOURCE_SHA"' in prepare["run"]
+    assert 'git checkout -B "$CACHE_BRANCH" "origin/${CACHE_BRANCH}"' in prepare["run"]
+    assert 'git merge --no-edit "$SOURCE_SHA"' in prepare["run"]
+    assert "git rebase" not in prepare["run"]
+    assert 'git push origin "HEAD:${CACHE_BRANCH}"' in text
+    assert 'git push --force-with-lease origin "HEAD:${CACHE_BRANCH}"' in text
+
+    prepare_index = next(i for i, step in enumerate(steps) if step["name"] == "Prepare cache branch")
+    generate_index = next(i for i, step in enumerate(steps) if step["name"] == "Generate caches")
+    assert prepare_index < generate_index
 
 
 VALIDATE_WORKFLOW = ROOT / ".github/workflows/documentation-validate.yml"
@@ -137,6 +162,9 @@ def test_cache_workflow_exposes_agent_summary_contract():
     assert "$GITHUB_STEP_SUMMARY" in summary["run"]
     assert CACHE_WORKFLOW.read_text(encoding="utf-8").count("AGENT_SUMMARY_JSON=") == 1
     assert "actions/upload-artifact" not in CACHE_WORKFLOW.read_text(encoding="utf-8")
+    assert 'RESET_CACHE_BRANCH: ${{ inputs.reset_cache_branch }}' in CACHE_WORKFLOW.read_text(encoding="utf-8")
+    assert 'reset_branch: ($reset_cache_branch == "true")' in summary["run"]
+    assert "Reset cache branch" in summary["run"]
 
 
 def test_validation_workflow_exposes_agent_summary_contract():

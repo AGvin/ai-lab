@@ -13,6 +13,11 @@ on:
         required: true
         default: true
         type: boolean
+      reset_cache_branch:
+        description: Reset cache branch to source so the generated PR keeps one cache commit
+        required: true
+        default: true
+        type: boolean
 
 permissions:
   contents: write
@@ -28,6 +33,7 @@ jobs:
     env:
       SOURCE_BRANCH: ${{ inputs.source_branch || github.ref_name }}
       USE_FINGERPRINTS: ${{ inputs.use_fingerprints }}
+      RESET_CACHE_BRANCH: ${{ inputs.reset_cache_branch }}
       GH_TOKEN: ${{ github.token }}
 
     steps:
@@ -54,6 +60,34 @@ jobs:
         id: source
         shell: bash
         run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare cache branch
+        id: branch
+        shell: bash
+        env:
+          SOURCE_SHA: ${{ steps.source.outputs.sha }}
+        run: |
+          set -euo pipefail
+          CACHE_BRANCH="cache/${SOURCE_BRANCH}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [[ "$RESET_CACHE_BRANCH" == "true" ]]; then
+            echo "mode=reset" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if git ls-remote --exit-code --heads origin "refs/heads/${CACHE_BRANCH}" >/dev/null 2>&1; then
+            git fetch origin "${CACHE_BRANCH}:refs/remotes/origin/${CACHE_BRANCH}"
+            git checkout -B "$CACHE_BRANCH" "origin/${CACHE_BRANCH}"
+            if ! git merge-base --is-ancestor "$SOURCE_SHA" HEAD; then
+              git merge --no-edit "$SOURCE_SHA"
+            fi
+          else
+            git checkout -B "$CACHE_BRANCH" "$SOURCE_SHA"
+          fi
+          echo "mode=preserve" >> "$GITHUB_OUTPUT"
 
       - name: Set up Python
         uses: actions/setup-python@v7
@@ -118,17 +152,28 @@ jobs:
         id: commit
         if: steps.changes.outputs.changed == 'true'
         shell: bash
+        env:
+          SOURCE_SHA: ${{ steps.source.outputs.sha }}
         run: |
           set -euo pipefail
           CACHE_BRANCH="cache/${SOURCE_BRANCH}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -B "$CACHE_BRANCH"
+
+          if [[ "$RESET_CACHE_BRANCH" == "true" ]]; then
+            git checkout -B "$CACHE_BRANCH" "$SOURCE_SHA"
+          fi
+
           git add -- ':(glob)**/.meta/cache.yml'
           git commit -m "Refresh documentation cache for ${SOURCE_BRANCH}"
           commit=$(git rev-parse HEAD)
           echo "commit=${commit}" >> "$GITHUB_OUTPUT"
-          git push --force-with-lease origin "HEAD:${CACHE_BRANCH}"
+
+          if [[ "$RESET_CACHE_BRANCH" == "true" ]]; then
+            git push --force-with-lease origin "HEAD:${CACHE_BRANCH}"
+          else
+            git push origin "HEAD:${CACHE_BRANCH}"
+          fi
 
       - name: Create or reuse cache PR
         id: pr
@@ -173,6 +218,7 @@ jobs:
         shell: bash
         env:
           SOURCE_SHA: ${{ steps.source.outputs.sha }}
+          RESET_CACHE_BRANCH: ${{ inputs.reset_cache_branch }}
           GENERATE_STATUS: ${{ steps.generate.outputs.status }}
           GENERATE_CONCLUSION: ${{ steps.generate.conclusion }}
           DISCOVERED: ${{ steps.generate.outputs.discovered }}
@@ -214,6 +260,7 @@ jobs:
             --arg source_branch "$SOURCE_BRANCH" \
             --arg source_sha "$SOURCE_SHA" \
             --arg use_fingerprints "$USE_FINGERPRINTS" \
+            --arg reset_cache_branch "$RESET_CACHE_BRANCH" \
             --arg generation_status "$generation_status" \
             --arg discovered "$DISCOVERED" \
             --arg processed "$PROCESSED" \
@@ -247,7 +294,8 @@ jobs:
                },
                cache: {
                  branch: $cache_branch,
-                 commit: ($cache_commit | nullable)
+                 commit: ($cache_commit | nullable),
+                 reset_branch: ($reset_cache_branch == "true")
                },
                pull_request: {
                  status: $pr_status,
@@ -268,6 +316,7 @@ jobs:
             echo "| Source branch | \`$SOURCE_BRANCH\` |"
             echo "| Source SHA | \`$(display "$SOURCE_SHA")\` |"
             echo "| Fingerprints | \`$USE_FINGERPRINTS\` |"
+            echo "| Reset cache branch | \`$RESET_CACHE_BRANCH\` |"
             echo "| Generation | \`$generation_status\` |"
             echo "| Discovered | \`$(display "$DISCOVERED")\` |"
             echo "| Processed | \`$(display "$PROCESSED")\` |"
