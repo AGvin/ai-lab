@@ -162,3 +162,12 @@ def test_validation_workflow_exposes_agent_summary_contract():
     assert "$GITHUB_STEP_SUMMARY" in summary["run"]
     assert VALIDATE_WORKFLOW.read_text(encoding="utf-8").count("AGENT_SUMMARY_JSON=") == 1
     assert "actions/upload-artifact" not in VALIDATE_WORKFLOW.read_text(encoding="utf-8")
+
+
+def test_metadata_workflows_use_node24_compatible_action_majors():
+    for workflow_path in (CACHE_WORKFLOW, VALIDATE_WORKFLOW):
+        text = workflow_path.read_text(encoding="utf-8")
+        assert text.count("actions/checkout@v7") == 1
+        assert text.count("actions/setup-python@v7") == 1
+        assert "actions/checkout@v4" not in text
+        assert "actions/setup-python@v5" not in text
