@@ -37,15 +37,15 @@ jobs:
       GH_TOKEN: ${{ github.token }}
 
     steps:
-      - name: Validate source branch
-        shell: bash
-        run: scripts/github/workflows/documentation-cache/validate-source-branch.sh
-
       - name: Check out source branch
         uses: actions/checkout@v7
         with:
           ref: ${{ inputs.source_branch || github.ref_name }}
           fetch-depth: 0
+
+      - name: Validate source branch
+        shell: bash
+        run: scripts/github/workflows/documentation-cache/validate-source-branch.sh
 
       - name: Capture source revision
         id: source
