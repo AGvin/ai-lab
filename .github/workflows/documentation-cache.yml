@@ -1,0 +1,340 @@
+name: Documentation Cache
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_branch:
+        description: Source branch override; empty uses the workflow branch
+        required: false
+        default: ""
+        type: string
+      use_fingerprints:
+        description: Use cache fingerprints to skip unchanged nodes
+        required: true
+        default: true
+        type: boolean
+      reset_cache_branch:
+        description: Reset cache branch to source so the generated PR keeps one cache commit
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: documentation-cache-${{ inputs.source_branch || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    env:
+      SOURCE_BRANCH: ${{ inputs.source_branch || github.ref_name }}
+      USE_FINGERPRINTS: ${{ inputs.use_fingerprints }}
+      RESET_CACHE_BRANCH: ${{ inputs.reset_cache_branch }}
+      GH_TOKEN: ${{ github.token }}
+
+    steps:
+      - name: Validate source branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$SOURCE_BRANCH" ]]; then
+            echo "source_branch must not be empty" >&2
+            exit 2
+          fi
+          if [[ "$SOURCE_BRANCH" == cache/* ]]; then
+            echo "cache branches cannot be used as source branches" >&2
+            exit 2
+          fi
+
+      - name: Check out source branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.source_branch || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Capture source revision
+        id: source
+        shell: bash
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare cache branch
+        id: branch
+        shell: bash
+        env:
+          SOURCE_SHA: ${{ steps.source.outputs.sha }}
+        run: |
+          set -euo pipefail
+          CACHE_BRANCH="cache/${SOURCE_BRANCH}"
+          echo "source_updated=false" >> "$GITHUB_OUTPUT"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [[ "$RESET_CACHE_BRANCH" == "true" ]]; then
+            echo "mode=reset" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if git ls-remote --exit-code --heads origin "refs/heads/${CACHE_BRANCH}" >/dev/null 2>&1; then
+            git fetch origin "${CACHE_BRANCH}:refs/remotes/origin/${CACHE_BRANCH}"
+            git checkout -B "$CACHE_BRANCH" "origin/${CACHE_BRANCH}"
+            if ! git merge-base --is-ancestor "$SOURCE_SHA" HEAD; then
+              git merge --no-edit "$SOURCE_SHA"
+              echo "source_updated=true" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            git checkout -B "$CACHE_BRANCH" "$SOURCE_SHA"
+          fi
+          echo "mode=preserve" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install metadata tooling
+        run: python -m pip install -r tools/documentation/requirements.txt
+
+      - name: Generate caches
+        id: generate
+        shell: bash
+        run: |
+          set -uo pipefail
+          output_file="$RUNNER_TEMP/documentation-cache-output.txt"
+          set +e
+          if [[ "$USE_FINGERPRINTS" == "true" ]]; then
+            python -m tools.documentation.metadata_tooling.cli cache --use-fingerprints 2>&1 | tee "$output_file"
+            cli_status=${PIPESTATUS[0]}
+          else
+            python -m tools.documentation.metadata_tooling.cli cache --no-use-fingerprints 2>&1 | tee "$output_file"
+            cli_status=${PIPESTATUS[0]}
+          fi
+          set -e
+
+          if (( cli_status == 0 )); then
+            echo "status=success" >> "$GITHUB_OUTPUT"
+          else
+            echo "status=failure" >> "$GITHUB_OUTPUT"
+          fi
+
+          summary="$(grep -E '^cache: discovered=[0-9]+ processed=[0-9]+ rebuilt=[0-9]+ unchanged=[0-9]+ errors=[0-9]+$' "$output_file" | tail -n 1 || true)"
+          if [[ -n "$summary" ]]; then
+            for field in discovered processed rebuilt unchanged errors; do
+              value="$(sed -nE "s/.*${field}=([0-9]+).*/\\1/p" <<< "$summary")"
+              echo "${field}=${value}" >> "$GITHUB_OUTPUT"
+            done
+          fi
+
+          exit "$cli_status"
+
+      - name: Inspect generated changes
+        id: changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t changed < <(git status --porcelain --untracked-files=all | sed -E 's/^.. //')
+          if (( ${#changed[@]} == 0 )); then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          for path in "${changed[@]}"; do
+            if [[ "$path" != */.meta/cache.yml ]]; then
+              echo "cache workflow produced unauthorized change: $path" >&2
+              exit 1
+            fi
+          done
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          # Explicit generated-state pathspec owned by this workflow: **/.meta/cache.yml
+
+      - name: Commit generated caches
+        id: commit
+        if: steps.changes.outputs.changed == 'true' || steps.branch.outputs.source_updated == 'true'
+        shell: bash
+        env:
+          SOURCE_SHA: ${{ steps.source.outputs.sha }}
+          CACHE_CHANGED: ${{ steps.changes.outputs.changed }}
+        run: |
+          set -euo pipefail
+          CACHE_BRANCH="cache/${SOURCE_BRANCH}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [[ "$RESET_CACHE_BRANCH" == "true" ]]; then
+            git checkout -B "$CACHE_BRANCH" "$SOURCE_SHA"
+          fi
+
+          if [[ "$CACHE_CHANGED" == "true" ]]; then
+            git add -- ':(glob)**/.meta/cache.yml'
+            git commit -m "Refresh documentation cache for ${SOURCE_BRANCH}"
+          fi
+
+          commit=$(git rev-parse HEAD)
+          echo "commit=${commit}" >> "$GITHUB_OUTPUT"
+
+          if [[ "$RESET_CACHE_BRANCH" == "true" ]]; then
+            git push --force-with-lease origin "HEAD:${CACHE_BRANCH}"
+          else
+            git push origin "HEAD:${CACHE_BRANCH}"
+          fi
+
+      - name: Create or reuse cache PR
+        id: pr
+        if: steps.changes.outputs.changed == 'true' || steps.branch.outputs.source_updated == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          CACHE_BRANCH="cache/${SOURCE_BRANCH}"
+          existing="$(gh pr list \
+            --head "$CACHE_BRANCH" \
+            --base "$SOURCE_BRANCH" \
+            --state open \
+            --json number \
+            --jq '.[0].number // empty')"
+          if [[ -n "$existing" ]]; then
+            echo "status=updated" >> "$GITHUB_OUTPUT"
+            echo "number=${existing}" >> "$GITHUB_OUTPUT"
+            echo "Updated existing cache PR #${existing}"
+            exit 0
+          fi
+
+          gh pr create \
+            --head "$CACHE_BRANCH" \
+            --base "$SOURCE_BRANCH" \
+            --title "Refresh documentation cache for ${SOURCE_BRANCH}" \
+            --body "Generated documentation cache refresh. Canonical .meta inputs remain authoritative."
+          created="$(gh pr list \
+            --head "$CACHE_BRANCH" \
+            --base "$SOURCE_BRANCH" \
+            --state open \
+            --json number \
+            --jq '.[0].number // empty')"
+          if [[ -z "$created" ]]; then
+            echo "cache PR was created but its number could not be resolved" >&2
+            exit 1
+          fi
+          echo "status=created" >> "$GITHUB_OUTPUT"
+          echo "number=${created}" >> "$GITHUB_OUTPUT"
+
+      - name: Agent summary
+        if: always()
+        shell: bash
+        env:
+          SOURCE_SHA: ${{ steps.source.outputs.sha }}
+          RESET_CACHE_BRANCH: ${{ inputs.reset_cache_branch }}
+          SOURCE_UPDATED: ${{ steps.branch.outputs.source_updated }}
+          GENERATE_STATUS: ${{ steps.generate.outputs.status }}
+          GENERATE_CONCLUSION: ${{ steps.generate.conclusion }}
+          DISCOVERED: ${{ steps.generate.outputs.discovered }}
+          PROCESSED: ${{ steps.generate.outputs.processed }}
+          REBUILT: ${{ steps.generate.outputs.rebuilt }}
+          UNCHANGED: ${{ steps.generate.outputs.unchanged }}
+          ERRORS: ${{ steps.generate.outputs.errors }}
+          CHANGES_CONCLUSION: ${{ steps.changes.conclusion }}
+          CHANGED: ${{ steps.changes.outputs.changed }}
+          CACHE_COMMIT: ${{ steps.commit.outputs.commit }}
+          PR_STATUS: ${{ steps.pr.outputs.status }}
+          PR_NUMBER: ${{ steps.pr.outputs.number }}
+        run: |
+          set -euo pipefail
+
+          normalize_conclusion() {
+            case "$1" in
+              success|failure|skipped) printf '%s' "$1" ;;
+              *) printf 'unknown' ;;
+            esac
+          }
+
+          generation_status="$GENERATE_STATUS"
+          if [[ -z "$generation_status" ]]; then
+            generation_status="$(normalize_conclusion "$GENERATE_CONCLUSION")"
+          fi
+          changes_status="$(normalize_conclusion "$CHANGES_CONCLUSION")"
+
+          pr_status="$PR_STATUS"
+          if [[ -z "$pr_status" ]]; then
+            if [[ "$CHANGED" == "false" && "$changes_status" == "success" ]]; then
+              pr_status="none"
+            else
+              pr_status="unknown"
+            fi
+          fi
+
+          json="$(jq -cn \
+            --arg source_branch "$SOURCE_BRANCH" \
+            --arg source_sha "$SOURCE_SHA" \
+            --arg use_fingerprints "$USE_FINGERPRINTS" \
+            --arg reset_cache_branch "$RESET_CACHE_BRANCH" \
+            --arg source_updated "$SOURCE_UPDATED" \
+            --arg generation_status "$generation_status" \
+            --arg discovered "$DISCOVERED" \
+            --arg processed "$PROCESSED" \
+            --arg rebuilt "$REBUILT" \
+            --arg unchanged "$UNCHANGED" \
+            --arg errors "$ERRORS" \
+            --arg changes_status "$changes_status" \
+            --arg changed "$CHANGED" \
+            --arg cache_branch "cache/${SOURCE_BRANCH}" \
+            --arg cache_commit "$CACHE_COMMIT" \
+            --arg pr_status "$pr_status" \
+            --arg pr_number "$PR_NUMBER" \
+            'def n: if test("^[0-9]+$") then tonumber else null end;
+             def nullable: if length > 0 then . else null end;
+             {
+               workflow: "documentation-cache",
+               source_branch: $source_branch,
+               source_sha: ($source_sha | nullable),
+               use_fingerprints: ($use_fingerprints == "true"),
+               generation: {
+                 status: $generation_status,
+                 discovered: ($discovered | n),
+                 processed: ($processed | n),
+                 rebuilt: ($rebuilt | n),
+                 unchanged: ($unchanged | n),
+                 errors: ($errors | n)
+               },
+               changes: {
+                 status: $changes_status,
+                 changed: (if $changed == "true" then true elif $changed == "false" then false else null end)
+               },
+               cache: {
+                 branch: $cache_branch,
+                 commit: ($cache_commit | nullable),
+                 reset_branch: ($reset_cache_branch == "true"),
+                 source_updated: ($source_updated == "true")
+               },
+               pull_request: {
+                 status: $pr_status,
+                 number: ($pr_number | n)
+               }
+             }')"
+
+          printf 'AGENT_SUMMARY_JSON=%s\n' "$json"
+
+          display() {
+            if [[ -n "$1" ]]; then printf '%s' "$1"; else printf 'n/a'; fi
+          }
+          {
+            echo "## Documentation Cache"
+            echo
+            echo "| Field | Value |"
+            echo "| --- | --- |"
+            echo "| Source branch | \`$SOURCE_BRANCH\` |"
+            echo "| Source SHA | \`$(display "$SOURCE_SHA")\` |"
+            echo "| Fingerprints | \`$USE_FINGERPRINTS\` |"
+            echo "| Reset cache branch | \`$RESET_CACHE_BRANCH\` |"
+            echo "| Source updated | \`$SOURCE_UPDATED\` |"
+            echo "| Generation | \`$generation_status\` |"
+            echo "| Discovered | \`$(display "$DISCOVERED")\` |"
+            echo "| Processed | \`$(display "$PROCESSED")\` |"
+            echo "| Rebuilt | \`$(display "$REBUILT")\` |"
+            echo "| Unchanged | \`$(display "$UNCHANGED")\` |"
+            echo "| Errors | \`$(display "$ERRORS")\` |"
+            echo "| Changes | \`$changes_status / $(display "$CHANGED")\` |"
+            echo "| Cache branch | \`cache/${SOURCE_BRANCH}\` |"
+            echo "| Cache commit | \`$(display "$CACHE_COMMIT")\` |"
+            echo "| Pull request | \`$pr_status / $(display "$PR_NUMBER")\` |"
+          } >> "$GITHUB_STEP_SUMMARY"

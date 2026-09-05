@@ -1,12 +1,19 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "default",
+  "$id": "repo:/:entity:default",
   "title": "Default documentation entity",
   "description": "Base structural contract for current-node entity identity, references, and relations.",
   "$defs": {
     "schema_id": {
       "type": "string",
-      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      "oneOf": [
+        {
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*$"
+        },
+        {
+          "pattern": "^/:[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*$"
+        }
+      ]
     },
     "non_empty_string": {
       "type": "string",
