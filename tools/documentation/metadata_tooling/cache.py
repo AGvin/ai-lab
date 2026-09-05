@@ -107,9 +107,11 @@ class CacheManager:
         prefix = paths[alias]
         if not isinstance(prefix, str):
             raise ToolingError(f"path alias {alias} must be a string")
+        if not prefix.startswith("/docs/"):
+            raise ToolingError(
+                f"path alias {alias} must use a repository-root /docs/... prefix"
+            )
         expanded = f"{prefix}{suffix}"
-        if not expanded.startswith("/"):
-            raise ToolingError(f"path alias {alias} must expand from documentation root")
         parts: list[str] = []
         for part in expanded.split("/"):
             if part in ("", "."):
@@ -120,7 +122,10 @@ class CacheManager:
                 parts.pop()
             else:
                 parts.append(part)
-        return "/" + "/".join(parts)
+        normalized = "/" + "/".join(parts)
+        if normalized != "/docs" and not normalized.startswith("/docs/"):
+            raise ToolingError(f"path alias escapes documentation root: {value}")
+        return normalized
 
     def _load_entity(self, node: Path, aliases: dict[str, Any], defaults: dict[str, Any]) -> dict[str, Any]:
         path = node / ".meta" / "entity.yml"

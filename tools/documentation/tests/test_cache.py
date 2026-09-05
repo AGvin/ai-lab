@@ -1,8 +1,10 @@
 from pathlib import Path
+
+import pytest
 import yaml
 
 from tools.documentation.metadata_tooling.cache import CacheManager
-from tools.documentation.metadata_tooling.common import Repository
+from tools.documentation.metadata_tooling.common import Repository, ToolingError
 
 
 def load_cache(node: Path):
@@ -103,10 +105,20 @@ def test_alias_values_are_retained_but_relation_paths_are_expanded(cache_repo):
     root = load_cache(cache_repo / "docs")
     child = load_cache(cache_repo / "docs/sub/catalog/sub/item")
     assert root["state"]["aliases"]["effective"]["paths"]["producers"] == (
-        "/sub/catalog/sub/producers/sub/"
+        "/docs/sub/catalog/sub/producers/sub/"
     )
     relation_path = child["state"]["entity"]["effective"]["relations"][0]["target"]["path"]
-    assert relation_path == "/sub/catalog/sub/producers/sub/openai"
+    assert relation_path == "/docs/sub/catalog/sub/producers/sub/openai"
+
+
+def test_cache_rejects_legacy_docs_relative_absolute_path_alias(cache_repo):
+    aliases_path = cache_repo / "docs/.meta/aliases.yml"
+    aliases = yaml.safe_load(aliases_path.read_text(encoding="utf-8"))
+    aliases["aliases"]["paths"]["producers"] = "/sub/catalog/sub/producers/sub/"
+    aliases_path.write_text(yaml.safe_dump(aliases, sort_keys=False), encoding="utf-8")
+
+    with pytest.raises(ToolingError, match="repository-root /docs/\.\.\. prefix"):
+        CacheManager(Repository(cache_repo)).refresh(use_fingerprints=False)
 
 
 def test_nested_children_baseline_propagates(cache_repo):

@@ -21,7 +21,7 @@
     "path_alias_map": {
       "type": "object",
       "propertyNames": {"$ref": "#/$defs/alias_key"},
-      "additionalProperties": {"type": "string", "pattern": "^/.*/$"}
+      "additionalProperties": {"type": "string", "pattern": "^/docs/.*/$"}
     }
   },
   "type": "object",

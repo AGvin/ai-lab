@@ -86,13 +86,26 @@ def test_path_alias_target_resolves_to_entity_identity(repo):
     aliases = repo / "docs/.meta/aliases.yml"
     aliases.parent.mkdir(parents=True, exist_ok=True)
     aliases.write_text(
-        yaml.safe_dump({"aliases": {"schema": "default", "paths": {"targets": "/sub/target/sub/"}}}, sort_keys=False),
+        yaml.safe_dump({"aliases": {"schema": "default", "paths": {"targets": "/docs/sub/target/sub/"}}}, sort_keys=False),
         encoding="utf-8",
     )
     write_entity(repo, "source", [{"type": "has-part", "target": {"path": "targets:item"}}])
     write_entity(repo, "target/item", [{"type": "part-of", "target": "source"}])
     result = validate(repo)
     assert result.errors == []
+
+
+def test_path_alias_rejects_legacy_docs_relative_absolute_prefix(repo):
+    aliases = repo / "docs/.meta/aliases.yml"
+    aliases.parent.mkdir(parents=True, exist_ok=True)
+    aliases.write_text(
+        yaml.safe_dump({"aliases": {"schema": "default", "paths": {"targets": "/sub/target/sub/"}}}, sort_keys=False),
+        encoding="utf-8",
+    )
+    write_entity(repo, "source", [{"type": "has-part", "target": {"path": "targets:item"}}])
+    write_entity(repo, "target/item", [{"type": "part-of", "target": "source"}])
+    result = validate(repo)
+    assert any("repository-root /docs/... prefix" in error for error in result.errors)
 
 
 def test_path_inconsistent_entity_id_fails(repo):

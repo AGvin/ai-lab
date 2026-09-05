@@ -10,10 +10,10 @@ def test_repository_root_alias_registry_has_base_catalog_paths():
     assert aliases == {
         "schema": "default",
         "paths": {
-            "producers": "/sub/catalog/sub/producers/sub/",
-            "software": "/sub/catalog/sub/software/sub/",
-            "models": "/sub/catalog/sub/models/sub/",
-            "skills": "/sub/catalog/sub/agent-skills/sub/",
+            "producers": "/docs/sub/catalog/sub/producers/sub/",
+            "software": "/docs/sub/catalog/sub/software/sub/",
+            "models": "/docs/sub/catalog/sub/models/sub/",
+            "skills": "/docs/sub/catalog/sub/agent-skills/sub/",
         },
     }
 
@@ -25,10 +25,10 @@ def test_repository_aliases_are_loaded_and_fingerprinted():
     root = Path(__file__).parents[3]
     repo = Repository(root)
     assert repo.load_aliases()["paths"] == {
-        "producers": "/sub/catalog/sub/producers/sub/",
-        "software": "/sub/catalog/sub/software/sub/",
-        "models": "/sub/catalog/sub/models/sub/",
-        "skills": "/sub/catalog/sub/agent-skills/sub/",
+        "producers": "/docs/sub/catalog/sub/producers/sub/",
+        "software": "/docs/sub/catalog/sub/software/sub/",
+        "models": "/docs/sub/catalog/sub/models/sub/",
+        "skills": "/docs/sub/catalog/sub/agent-skills/sub/",
     }
     fingerprints = CacheManager(repo).current_self_fingerprints(root / "docs")
     assert set(fingerprints) == {"aliases.yml", "defaults.yml"}

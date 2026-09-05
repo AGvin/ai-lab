@@ -95,7 +95,7 @@ def cache_repo(repo):
     write_yaml(docs / ".meta" / "aliases.yml", {
         "aliases": {
             "schema": "default",
-            "paths": {"producers": "/sub/catalog/sub/producers/sub/"},
+            "paths": {"producers": "/docs/sub/catalog/sub/producers/sub/"},
         }
     })
     (docs / "README.md").write_text("# Docs\n", encoding="utf-8")

@@ -118,12 +118,16 @@ class RelationValidator:
         prefix = paths[alias]
         if not isinstance(prefix, str):
             raise ToolingError(f"path alias {alias!r} must be a string")
+        if not prefix.startswith("/docs/"):
+            raise ToolingError(
+                f"path alias {alias!r} must use a repository-root /docs/... prefix"
+            )
         return prefix + suffix
 
     def _normalize_node_path(self, source_node: Path, raw: str) -> Path:
         expanded = self._expand_path_alias(raw)
         if expanded.startswith("/"):
-            candidate = self.repo.docs_root / expanded.lstrip("/")
+            candidate = self.repo.root / expanded.lstrip("/")
         else:
             candidate = source_node / expanded
         resolved = candidate.resolve()
