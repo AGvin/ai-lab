@@ -1,0 +1,78 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:df5b4327f82e523e2d7b83ccaf1fdf08b716199f
+    parent:
+      entity.yml: gitblob:dc5dac8576a0c95669f9425b9f72793814da0223
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/machine-learning/data-centric-ml
+        name: Data-Centric Machine Learning
+        aliases:
+        - Data-Centric AI
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2303.10158
+          purposes:
+          - research
+          authority: independent
+          note: Zha et al. survey data-centric AI across training-data development,
+            inference-data development, and data maintenance, framing systematic data
+            engineering as a complementary focus to model-centric development rather
+            than simply increasing dataset size.
+        - type: article
+          source:
+            url: https://doi.org/10.1038/s42256-022-00516-1
+          purposes:
+          - research
+          authority: independent
+          note: Sambasivan et al. discuss data design, cleaning, valuation, annotation,
+            augmentation, and evaluation as lifecycle concerns that materially affect
+            trustworthy AI systems.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

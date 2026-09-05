@@ -1,0 +1,87 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:1e49e7948ee7d3674a1528ff37f8e150287a22c7
+    parent:
+      entity.yml: gitblob:dbd446ab301de28bef71f8f1ea42e2bcaa014460
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/workflow-engines/data-and-compute-orchestration/flyte
+        type: software
+        name: Flyte
+        references:
+        - type: documentation
+          source:
+            url: https://www.union.ai/docs/v2/flyte/user-guide/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/flyteorg/flyte
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://www.union.ai/company
+          purposes:
+          - research
+          authority: upstream
+          note: Union.ai's current company history states that its founders built
+            Flyte internally at Lyft in 2016, before Flyte was open-sourced and later
+            joined LF AI & Data.
+        relations:
+        - type: produced-by
+          target: catalog/producers/l/lyft-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

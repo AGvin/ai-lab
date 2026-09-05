@@ -1,0 +1,83 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:8b1b4f11770c7d8ec3889e50a632050564cdf246
+    parent:
+      entity.yml: gitblob:363511bc5385d513442d67c84ef64318618625e1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/agents-and-autonomy/verification-and-reflection
+        name: Verification and Reflection
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2303.17651
+          purposes:
+          - research
+          authority: independent
+          note: Self-Refine demonstrates iterative model feedback and revision as
+            a reflection/refinement mechanism without making the feedback independent
+            verification.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2303.11366
+          purposes:
+          - research
+          authority: independent
+          note: Reflexion uses linguistic reflection over task feedback and episodic
+            memory to influence later agent decisions.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2310.01798
+          purposes:
+          - research
+          authority: independent
+          note: ICLR work shows that intrinsic self-correction without external feedback
+            can fail or degrade reasoning performance, supporting a strict boundary
+            between reflection and independent verification.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,87 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:9e29d64b8456c147d70e5cac1073d031590e636d
+    parent:
+      entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/c/clearml-inc
+        type: organization
+        name: ClearML Inc.
+        references:
+        - type: official-site
+          source:
+            url: https://clear.ml/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://clear.ml/terms-of-use
+          purposes:
+          - identification
+          authority: official
+          note: Current ClearML terms identify ClearML Inc. as the owner of the ClearML
+            website and marks.
+        - type: repository
+          source:
+            url: https://github.com/clearml/clearml
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/model-and-data-platforms/lifecycle-platforms/clearml
+        - type: maintains
+          target: catalog/software/model-and-data-platforms/lifecycle-platforms/clearml
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

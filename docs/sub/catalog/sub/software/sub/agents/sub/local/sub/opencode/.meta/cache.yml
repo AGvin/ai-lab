@@ -1,0 +1,93 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d083035329b8299e572a685f689afdeeaf92fc56
+    parent:
+      entity.yml: gitblob:0c958ac9b06255323dd6f40493fd9f05736b939d
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/agents/local/opencode
+        type: software
+        name: OpenCode
+        references:
+        - type: official-site
+          source:
+            url: https://opencode.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://opencode.ai/docs
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/anomalyco/opencode
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://opencode.ai/legal/terms-of-service
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Official OpenCode Terms of Use identifying Anomaly Innovations, Inc.
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/anomaly-innovations-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

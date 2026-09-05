@@ -1,0 +1,96 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:853096a6b082d7b382843b2efef53fd91c610049
+    parent:
+      entity.yml: gitblob:cc9eac859b5fac0ed4b6aa1d708dd148d40d0e7e
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/mistral-ai/mistral-small/models/mistral-small-4
+        type: model
+        name: Mistral Small 4
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: artifact
+          source:
+            url: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-NVFP4
+          purposes:
+          - research
+          authority: official
+        - type: artifact
+          source:
+            url: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-eagle
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03
+          purposes:
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://mistral.ai/news/mistral-small-4/
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/mistral-ai/mistral-small
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,60 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:3d17eabb382a9d546f5086a1fc38d04ff35c38a2
+      node.yml: gitblob:9a8688f2f267daccacc471878dd142c50ffbe010
+    parent:
+      entity.yml: gitblob:a2c4999700868d3f26adca30e85506cbb10aab0c
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/integrations/integration
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/agents/hybrid/openai-codex/integrations
+        name: OpenAI Codex Integrations
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

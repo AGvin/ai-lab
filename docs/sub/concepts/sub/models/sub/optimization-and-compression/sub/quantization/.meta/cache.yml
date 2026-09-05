@@ -1,0 +1,85 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b857993a157fe562eb0e04706f3851d94b9d0a77
+    parent:
+      entity.yml: gitblob:8a45666d63acb19c2f0355bf402455c1d9c963d4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/optimization-and-compression/quantization
+        name: Quantization
+        references:
+        - type: article
+          source:
+            url: https://openaccess.thecvf.com/content_cvpr_2018/html/Jacob_Quantization_and_Training_CVPR_2018_paper.html
+          purposes:
+          - research
+          authority: independent
+          note: Foundational neural-network quantization work formalizes mapping floating-point
+            weights and activations to integer representations for efficient inference
+            and distinguishes quantization-aware training from ordinary floating-point
+            inference.
+        - type: documentation
+          source:
+            url: https://docs.nvidia.com/deeplearning/tensorrt/latest/inference-library/quantized-types-schemes.html
+          purposes:
+          - research
+          authority: official
+          note: Current TensorRT documentation demonstrates explicit quantize/dequantize
+            mappings and modern integer and low-bit floating quantization schemes
+            with tensor-, axis-, and block-level scaling.
+        - type: article
+          source:
+            url: https://pytorch.org/blog/introduction-to-quantization-on-pytorch/
+          purposes:
+          - research
+          authority: official
+          note: PyTorch overview distinguishes quantized tensors and lower-precision
+            quantized computation from floating-point execution and describes post-training
+            and training-aware quantization workflows.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

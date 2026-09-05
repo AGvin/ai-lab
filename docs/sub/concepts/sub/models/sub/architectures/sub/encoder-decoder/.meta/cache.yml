@@ -1,0 +1,83 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d495d38a136e89db3d6d776df4b06edcaad3df2f
+    parent:
+      entity.yml: gitblob:a4ee2dcae1c5d737d8341a59e0c35e264801353e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/architectures/encoder-decoder
+        name: Encoder-Decoder Architectures
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1409.3215
+          purposes:
+          - research
+          authority: independent
+          note: Foundational sequence-to-sequence work using one neural network to
+            encode an input sequence representation and another to decode an output
+            sequence.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1409.0473
+          purposes:
+          - research
+          authority: independent
+          note: Early attention-based encoder-decoder work showing that encoded source
+            information need not be compressed into one fixed-length vector.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1706.03762
+          purposes:
+          - research
+          authority: independent
+          note: Transformer provides a modern attention-based encoder-decoder realization
+            and helps distinguish the general pattern from one concrete architecture
+            family.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

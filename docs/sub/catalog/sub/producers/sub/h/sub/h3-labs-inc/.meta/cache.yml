@@ -1,0 +1,89 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:f5ec6aeec06ae815a2d9254255f906c6287ee2d5
+    parent:
+      entity.yml: gitblob:809c62e5e48565624df11ad5ab043ec1d16b9f4e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/h/h3-labs-inc
+        type: organization
+        name: H3 Labs Inc.
+        aliases:
+        - Maxim AI
+        references:
+        - type: privacy-policy
+          source:
+            url: https://www.getmaxim.ai/privacy-policy
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current Maxim AI privacy policy identifying H3 Labs Inc. as the company.
+        - type: official-site
+          source:
+            url: https://www.getmaxim.ai/bifrost
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: First-party Bifrost product surface published under H3 Labs Inc. /
+            Maxim AI.
+        - type: repository
+          source:
+            url: https://github.com/maximhq/bifrost
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/gateways/model-gateways/bifrost
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

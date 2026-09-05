@@ -1,0 +1,85 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:18afaa049b5d6bf73fb9eb0ab64bf8e47c93fd42
+    parent:
+      entity.yml: gitblob:c876a2b3a2e3140853595c1bce5e81c6382ac678
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/human-ai-interaction/oversight-and-intervention
+        name: Oversight and Intervention
+        aliases:
+        - Human Oversight
+        references:
+        - type: documentation
+          source:
+            url: https://airc.nist.gov/airmf-resources/airmf/appendices/app-c-ai-risk-management-and-human-ai-interaction/
+          purposes:
+          - research
+          authority: official
+          note: NIST AI RMF guidance distinguishes human roles, responsibilities,
+            oversight needs, and configurations ranging from autonomous to manual
+            decision-making.
+        - type: official-site
+          source:
+            url: https://www.oecd.org/en/topics/ai-principles.html
+          purposes:
+          - research
+          authority: official
+          note: OECD AI Principles call for context-appropriate mechanisms and safeguards
+            supporting human agency and oversight.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2603.19213
+          purposes:
+          - research
+          authority: independent
+          note: Current taxonomy shows that HITL, HOTL, and human oversight terminology
+            is ambiguous and distinguishes constitutive human participation from corrective
+            oversight/intervention.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

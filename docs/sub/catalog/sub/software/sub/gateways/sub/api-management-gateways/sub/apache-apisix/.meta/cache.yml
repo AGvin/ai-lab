@@ -1,0 +1,86 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:17e4a23ec7d5abf6f444a11d1871e69234c994d6
+    parent:
+      entity.yml: gitblob:97c89f13b46e2d335122b42b81931060174ee358
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/gateways/api-management-gateways/apache-apisix
+        type: software
+        name: Apache APISIX
+        references:
+        - type: documentation
+          source:
+            url: https://apisix.apache.org/docs/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/apache/apisix
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://apisix.apache.org/blog/2025/02/21/why-reinvent-api-gateways/
+          purposes:
+          - research
+          authority: official
+          note: Official project history documenting API7.ai origin and donation to
+            the Apache Software Foundation.
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/api7-ai
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,84 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:967979586adfbe873d092cadde2fa2a7dba13cf1
+    parent:
+      entity.yml: gitblob:8e617460aff173ce20389115c3d45cbaa3d2d2a7
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/architectures/dense-and-sparse-architectures/mixture-of-experts
+        name: Mixture of Experts
+        aliases:
+        - MoE
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1701.06538
+          purposes:
+          - research
+          authority: independent
+          note: Foundational sparsely-gated MoE architecture using a trainable gating
+            network to conditionally combine expert subnetworks.
+        - type: article
+          source:
+            url: https://www.jmlr.org/papers/v23/21-0998.html
+          purposes:
+          - research
+          authority: independent
+          note: Switch Transformer provides a well-established sparse MoE routing
+            design and documents communication, capacity, and training trade-offs.
+        - type: article
+          source:
+            url: https://research.google/blog/mixture-of-experts-with-expert-choice-routing/
+          purposes:
+          - research
+          authority: official
+          note: Expert-choice routing demonstrates that MoE routing is not universally
+            token-choice top-k expert selection and may assign tokens from the expert
+            side instead.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

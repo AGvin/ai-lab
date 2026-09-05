@@ -1,0 +1,83 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:9dbfc9f97447d7daacdc7cb538591666bfae90a9
+    parent:
+      entity.yml: gitblob:bda2e6e5abb3c32a05cbcfe3fb4f81735339da19
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/interaction/context/context-window
+        name: Context Window
+        references:
+        - type: article
+          source:
+            url: https://aclanthology.org/2024.tacl-1.9/
+          purposes:
+          - research
+          authority: independent
+          note: Lost in the Middle demonstrates that nominal long-context capacity
+            does not guarantee uniform or reliable use of information across the available
+            context.
+        - type: article
+          source:
+            url: https://aclanthology.org/2025.acl-long.366/
+          purposes:
+          - research
+          authority: independent
+          note: Current long-context training study distinguishes supported sequence
+            length from effective long-context task performance and evaluation.
+        - type: article
+          source:
+            url: https://www.ijcai.org/proceedings/2024/0917
+          purposes:
+          - research
+          authority: independent
+          note: Survey of context-length extension techniques across positional encoding,
+            attention, training, and inference, illustrating that context limits depend
+            on architecture and implementation rather than one universal mechanism.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

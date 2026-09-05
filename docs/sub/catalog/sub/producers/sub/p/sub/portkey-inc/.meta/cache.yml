@@ -1,0 +1,87 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:467b8a6b9013dfa01f0882a61e2c446b3ec151a2
+    parent:
+      entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/p/portkey-inc
+        type: organization
+        name: Portkey, Inc.
+        aliases:
+        - Portkey
+        references:
+        - type: official-site
+          source:
+            url: https://portkey.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: terms-of-service
+          source:
+            url: https://portkey.ai/terms
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current Portkey terms identifying Portkey, Inc.
+        - type: repository
+          source:
+            url: https://github.com/Portkey-AI/gateway
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/gateways/model-gateways/portkey-ai-gateway
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

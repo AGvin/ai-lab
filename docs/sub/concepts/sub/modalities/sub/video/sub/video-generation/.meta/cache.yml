@@ -1,0 +1,83 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:43b2f8b712460eb41af2a4f38ba7dc6a3b33af69
+    parent:
+      entity.yml: gitblob:ce3631e8a0f2a752e024519037eb12cdf4054428
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/modalities/video/video-generation
+        name: Video Generation
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2104.10157
+          purposes:
+          - research
+          authority: independent
+          note: VideoGPT demonstrates autoregressive generation over learned discrete
+            spatiotemporal video representations, providing a non-diffusion video-generation
+            family.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2204.03458
+          purposes:
+          - research
+          authority: independent
+          note: Video Diffusion Models establish a diffusion-based family for unconditional,
+            prediction, and text-conditioned temporally coherent video generation.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2210.02399
+          purposes:
+          - research
+          authority: independent
+          note: Phenaki demonstrates masked-token generation over compressed video
+            representations conditioned on sequences of text prompts and highlights
+            duration/temporal structure as separate video-generation challenges.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

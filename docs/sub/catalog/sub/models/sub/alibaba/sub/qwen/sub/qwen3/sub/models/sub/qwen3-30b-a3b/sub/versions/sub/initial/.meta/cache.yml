@@ -1,0 +1,72 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:5204ba68e8bd312f080cc25e2695bb4df9ec220f
+    parent:
+      entity.yml: gitblob:28fec744cd39497938122b177130cc28ed1b51b6
+      node.yml: gitblob:960c3fe8a5bb485d5602b86feeb76fb17c18d4d7
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/version
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/version
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/version
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/alibaba/qwen/qwen3/models/qwen3-30b-a3b/versions/initial
+        type: model-version
+        name: Qwen3 30B-A3B Initial Release
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen3-30B-A3B
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: version-of
+          target: catalog/models/alibaba/qwen/qwen3/models/qwen3-30b-a3b
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

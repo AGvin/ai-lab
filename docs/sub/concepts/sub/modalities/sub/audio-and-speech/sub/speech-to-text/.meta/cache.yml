@@ -1,0 +1,79 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:da0fe899fef22369dbea9c99145df864f6626805
+    parent:
+      entity.yml: gitblob:145de3f05fc20d5f05d6762a8473a2e871ef7f4e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/modalities/audio-and-speech/speech-to-text
+        name: Speech-to-Text
+        aliases:
+        - Automatic Speech Recognition
+        - ASR
+        - Speech Recognition
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2006.11477
+          purposes:
+          - research
+          authority: independent
+          note: wav2vec 2.0 demonstrates self-supervised speech representation learning
+            followed by supervised recognition, illustrating modern ASR beyond one
+            sequence-to-sequence architecture.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2212.04356
+          purposes:
+          - research
+          authority: independent
+          note: Whisper demonstrates large-scale multilingual speech recognition/transcription
+            with multitask capabilities, while keeping transcription conceptually
+            distinguishable from translation and other speech tasks.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

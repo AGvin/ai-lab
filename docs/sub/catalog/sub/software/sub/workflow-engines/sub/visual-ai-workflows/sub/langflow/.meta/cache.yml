@@ -1,0 +1,109 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:90b96f280d20690c5071b9e1b3fb2c3f1f4b26e2
+    parent:
+      entity.yml: gitblob:e875948a0a0ac5c0f5e7b8d02eb76165bfa9985a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/workflow-engines/visual-ai-workflows/langflow
+        type: software
+        name: Langflow
+        references:
+        - type: documentation
+          source:
+            url: https://docs.langflow.org/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/langflow-ai/langflow
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current upstream package metadata lists active maintainers including
+            Rodrigo Nader and Gabriel Almeida.
+        - type: article
+          source:
+            url: https://www.langflow.org/blog/langflow-datastax-better-together
+          purposes:
+          - research
+          authority: official
+          note: First-party project history records Rodrigo Nader and Gabriel Almeida
+            as the co-origin team and Langflow's 2024 move into DataStax.
+        - type: article
+          source:
+            url: https://www.langflow.org/blog/big-news-for-langflow
+          purposes:
+          - research
+          authority: official
+          note: First-party Langflow announcement identifies DataStax as Langflow's
+            parent company when IBM announced its planned DataStax acquisition in
+            2025.
+        - type: article
+          source:
+            url: https://community.ibm.com/community/user/blogs/datastax-pm-team-datastax-pm-team/2025/10/02/ibm-datastax
+          purposes:
+          - research
+          authority: upstream
+          note: IBM/DataStax transition material records the November 2025 IBM acquisition
+            transition and the migration of Langflow support into IBM offerings.
+        relations:
+        - type: produced-by
+          target: catalog/producers/r/rodrigo-nader
+        - type: produced-by
+          target: catalog/producers/g/gabriel-almeida
+        - type: maintained-by
+          target: catalog/producers/l/langflow-dev-team
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

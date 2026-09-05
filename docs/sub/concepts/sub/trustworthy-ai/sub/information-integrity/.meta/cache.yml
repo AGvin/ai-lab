@@ -1,0 +1,69 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:5578ac7de120f6da7dcd215c508a938f1a634a92
+    parent:
+      entity.yml: gitblob:33c8134ea5594ae731a593bfd4dab117d1c4e0d0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/trustworthy-ai/information-integrity
+        name: AI Information Integrity
+        aliases:
+        - Information Integrity
+        references:
+        - type: documentation
+          source:
+            url: https://doi.org/10.6028/NIST.AI.600-1
+          purposes:
+          - research
+          authority: official
+          note: The NIST Generative AI Profile identifies information integrity as
+            a GAI risk area and recommends provenance, source/citation verification,
+            grounded RAG/TEVV data, monitoring, and related controls across the AI
+            lifecycle.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

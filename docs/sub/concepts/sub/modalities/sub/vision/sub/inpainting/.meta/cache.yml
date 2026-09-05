@@ -1,0 +1,77 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:e021df7a784da47fa59ae5907b8ab08b866ffdf9
+    parent:
+      entity.yml: gitblob:87c17d18399cc3ccf7cc6dc99d8d60f6a1829338
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/modalities/vision/inpainting
+        name: Image Inpainting
+        aliases:
+        - Inpainting
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1801.07892
+          purposes:
+          - research
+          authority: independent
+          note: Generative Image Inpainting with Contextual Attention defines large-hole
+            image completion as synthesizing plausible missing-region structure and
+            texture using surrounding image context.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1804.07723
+          purposes:
+          - research
+          authority: independent
+          note: Partial Convolutions for irregular-hole inpainting demonstrate arbitrary
+            mask geometry and explicitly separate valid known pixels from missing
+            regions during learned completion.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

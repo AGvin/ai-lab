@@ -1,0 +1,75 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:e39c062114d11462fc6cc1413f844bc257f55dbe
+    parent:
+      entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/m/maxime-beauchemin
+        type: individual
+        name: Maxime Beauchemin
+        aliases:
+        - Max Beauchemin
+        references:
+        - type: documentation
+          source:
+            url: https://airflow.apache.org/docs/apache-airflow/stable/project.html
+          purposes:
+          - identification
+          - research
+          authority: upstream
+          note: Current Apache Airflow project history identifies Maxime Beauchemin
+            as the person who started Airflow at Airbnb in October 2014.
+        relations:
+        - type: produces
+          target: catalog/software/workflow-engines/data-and-compute-orchestration/apache-airflow
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

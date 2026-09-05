@@ -1,0 +1,88 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:3b7d18efeea121d2e3e1afcd5b86c14e8b23c760
+    parent:
+      entity.yml: gitblob:fc72d175a8436c4b2c8b53a25629dadd8647a8f4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/ai-engineering/cost-and-capacity
+        name: AI System Cost and Capacity
+        aliases:
+        - Cost and Capacity
+        references:
+        - type: documentation
+          source:
+            url: https://www.finops.org/framework/capabilities/unit-economics/
+          purposes:
+          - research
+          authority: official
+          note: Current FinOps Unit Economics guidance ties technology spending to
+            explicit units of delivered value and supports cost-per-unit reasoning
+            rather than optimizing aggregate spend or raw resource price in isolation.
+        - type: documentation
+          source:
+            url: https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/capacity-planning
+          purposes:
+          - research
+          authority: official
+          note: Azure Well-Architected capacity-planning guidance defines capacity
+            through resources required to meet workload performance targets under
+            expected demand while avoiding both underprovisioning and unnecessary
+            overprovisioning.
+        - type: documentation
+          source:
+            url: https://www.rfc-editor.org/rfc/rfc6585.html
+          purposes:
+          - research
+          authority: official
+          note: RFC 6585 defines HTTP 429 as one protocol-level representation of
+            rate limiting and explicitly leaves identity/counting policy implementation-dependent,
+            supporting separation of generic quota/capacity semantics from one provider/API
+            limit format.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

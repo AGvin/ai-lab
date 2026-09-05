@@ -1,0 +1,73 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:94760afeca04ef151f3cbab64a06c311057b7269
+    parent:
+      entity.yml: gitblob:eca4b1ce34ae3c8e37d9d20f55f25b72bc071b6f
+      node.yml: gitblob:9a8688f2f267daccacc471878dd142c50ffbe010
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/integrations/integration
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/integrations/integration
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/integrations/integration
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/agents/hybrid/claude-code/integrations/plugins
+        name: Claude Code Plugins
+        references:
+        - type: documentation
+          source:
+            url: https://code.claude.com/docs/en/plugins
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://code.claude.com/docs/en/plugin-marketplaces
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

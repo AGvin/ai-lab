@@ -1,0 +1,89 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:920ae35cb69fd8bb09ab7078138818ef1f0b39f6
+    parent:
+      entity.yml: gitblob:2f014c200c2282ae14ccd5407a676e2770042b54
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/b/bmad-code-llc
+        type: organization
+        name: BMad Code, LLC
+        references:
+        - type: repository
+          source:
+            url: https://github.com/bmad-code-org/BMAD-METHOD
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/bmad-code-org/BMAD-METHOD/blob/main/CONTRIBUTORS.md
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: First-party contributor and copyright notice identifying BMad Code,
+            LLC as the copyright holder of BMad Method.
+        - type: other
+          source:
+            url: https://github.com/bmad-code-org/BMAD-METHOD/blob/main/TRADEMARK.md
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: First-party trademark notice identifying BMad Code, LLC as owner of
+            the BMad Method marks.
+        relations:
+        - type: produces
+          target: catalog/software/development-tools/agentic-development-systems/bmad-method
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,68 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:2c1c389e7170f0b1a4cbc7024fbd025d1ed2b4a9
+      node.yml: gitblob:4abad5453851b2b57e6ad8cb5df1af164903855c
+    parent:
+      entity.yml: gitblob:b5a673d4eb8555e88c6384b58a9aa86d14f6eadd
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/child-index
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/child-index
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/child-index
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/development-tools/code-editors/cursor/extensions
+        type: catalog-index
+        name: Cursor Extensions
+        references:
+        - type: documentation
+          source:
+            url: https://cursor.com/docs
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

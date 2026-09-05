@@ -1,0 +1,78 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:867521bdae4cd3857aa6cc7aa304e9f7c105e94c
+    parent:
+      entity.yml: gitblob:8a45666d63acb19c2f0355bf402455c1d9c963d4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/optimization-and-compression/pruning
+        name: Model Pruning
+        aliases:
+        - Pruning
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1506.02626
+          purposes:
+          - research
+          authority: independent
+          note: Foundational modern pruning work removes low-importance neural-network
+            connections and retrains the remaining network, illustrating pruning as
+            learned parameter/connectivity reduction rather than merely changing numerical
+            precision.
+        - type: documentation
+          source:
+            url: https://docs.pytorch.org/tutorials/intermediate/pruning_tutorial.html
+          purposes:
+          - research
+          authority: official
+          note: Current PyTorch pruning documentation distinguishes unstructured parameter
+            sparsification from structured channel/unit pruning and exposes pruning
+            through masks/reparameterization before optional permanent materialization.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

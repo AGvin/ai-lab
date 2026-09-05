@@ -1,0 +1,77 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b7e30e89f68730803ba87dbbb0c4dae5aa7ec9fa
+    parent:
+      entity.yml: gitblob:b69edcb08d6ab6661b7910c6b1cbd7f7c5398a13
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/training-and-adaptation/preference-optimization/dpo
+        name: Direct Preference Optimization
+        aliases:
+        - DPO
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2305.18290
+          purposes:
+          - research
+          authority: independent
+          note: Original DPO paper derives a direct policy objective from the KL-constrained
+            reward-maximization formulation and trains from preferred/rejected response
+            pairs without a separately trained reward model or online RL loop.
+        - type: repository
+          source:
+            url: https://github.com/eric-mitchell/direct-preference-optimization
+          purposes:
+          - research
+          - identification
+          authority: upstream
+          note: Original implementation repository provides the concrete training
+            setup separately from the abstract direct-preference objective.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

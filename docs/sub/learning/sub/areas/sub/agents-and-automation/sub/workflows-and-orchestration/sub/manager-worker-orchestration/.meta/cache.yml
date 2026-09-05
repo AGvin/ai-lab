@@ -1,0 +1,106 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:561e02d49c946d6ada3e0ff8312975a54c647a05
+    parent:
+      entity.yml: gitblob:399b63dbb397b0c8351cf3b6a5d35dc116a4408e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: learning/areas/agents-and-automation/workflows-and-orchestration/manager-worker-orchestration
+        name: Manager-Worker Orchestration
+        references:
+        - type: article
+          source:
+            url: https://www.anthropic.com/engineering/multi-agent-research-system
+          purposes:
+          - research
+          authority: official
+          note: Exact legacy Anthropic multi-agent research-system reference preserved
+            from the Orchestrator-Worker source for migration provenance.
+        - type: documentation
+          source:
+            url: https://langchain-ai.github.io/langgraph/tutorials/multi_agent/multi-agent-collaboration/
+          purposes:
+          - research
+          authority: official
+          note: Exact legacy LangGraph multi-agent collaboration reference preserved
+            from the Orchestrator-Worker source.
+        - type: documentation
+          source:
+            url: https://docs.langchain.com/oss/python/langchain/multi-agent/subagents
+          purposes:
+          - research
+          authority: official
+          note: Exact legacy LangChain Subagents reference preserved from the Supervisor-Specialist
+            source; current canonical concept metadata uses the broader current multi-agent
+            documentation.
+        - type: documentation
+          source:
+            url: https://reference.langchain.com/python/langgraph-supervisor
+          purposes:
+          - research
+          authority: official
+          note: Exact legacy LangGraph Supervisor reference preserved from the Supervisor-Specialist
+            source.
+        - type: documentation
+          source:
+            url: https://langchain-ai.github.io/langgraphjs/reference/modules/langgraph-supervisor.html
+          purposes:
+          - research
+          authority: official
+          note: Exact legacy LangGraph JS Multi-Agent Supervisor reference preserved
+            from the Hierarchical Orchestration source.
+        - type: documentation
+          source:
+            url: https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/selector-group-chat.html
+          purposes:
+          - research
+          authority: official
+          note: Exact legacy AutoGen Selector Group Chat reference preserved from
+            the Hierarchical Orchestration source.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

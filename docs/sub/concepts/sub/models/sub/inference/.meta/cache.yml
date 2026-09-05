@@ -1,0 +1,74 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:541779a07ba9a8aa4637afffe809b08ae82c9886
+    parent:
+      entity.yml: gitblob:fa96cacef21b5c2d7c0fca2780aba8480c25fdc3
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/inference
+        name: Model Inference
+        references:
+        - type: documentation
+          source:
+            url: https://developers.google.com/machine-learning/glossary
+          purposes:
+          - research
+          authority: official
+          note: Google ML Glossary distinguishes inference as applying a trained model
+            to inputs to make predictions or, for language models, generate a response.
+        - type: documentation
+          source:
+            url: https://onnxruntime.ai/docs/
+          purposes:
+          - research
+          authority: official
+          note: ONNX Runtime separates trained-model inference from training and documents
+            model loading, execution, graph optimization, and hardware execution providers
+            as runtime concerns.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

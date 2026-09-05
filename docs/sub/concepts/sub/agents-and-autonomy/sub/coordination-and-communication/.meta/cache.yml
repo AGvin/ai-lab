@@ -1,0 +1,85 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:c032bd27e9c6f49dacbf7a039554b8f8f098fe47
+    parent:
+      entity.yml: gitblob:363511bc5385d513442d67c84ef64318618625e1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/agents-and-autonomy/coordination-and-communication
+        name: Coordination and Communication
+        references:
+        - type: documentation
+          source:
+            url: https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/
+          purposes:
+          - research
+          authority: official
+          note: Current Microsoft Agent Framework distinguishes multi-agent coordination
+            forms including Handoff and Group Chat from sequential/concurrent execution
+            and manager-led orchestration, providing a current implementation taxonomy
+            for control transfer and shared conversation.
+        - type: documentation
+          source:
+            url: https://openai.github.io/openai-agents-python/multi_agent/
+          purposes:
+          - research
+          authority: official
+          note: Current OpenAI Agents SDK documentation explicitly distinguishes manager-retained
+            delegation from handoffs where the specialist becomes the active owner,
+            supporting task-ownership transfer as a distinct coordination mechanism.
+        - type: documentation
+          source:
+            url: https://docs.langchain.com/oss/python/langchain/multi-agent
+          purposes:
+          - research
+          authority: official
+          note: Current LangChain documentation separates handoffs and router/supervisor
+            patterns and treats agent transitions as state/coordination choices rather
+            than one universal multi-agent topology.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,79 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d70b8d18b96c1d29eda97f1dbaaae057baf118c4
+    parent:
+      entity.yml: gitblob:cc54dae8a17c2b6757b156454db7dc508535bbdc
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/ai-engineering/deployment-and-serving/continuous-batching
+        name: Continuous Batching
+        aliases:
+        - Iteration-Level Batching
+        - Iteration-Level Scheduling
+        references:
+        - type: article
+          source:
+            url: https://www.usenix.org/conference/osdi22/presentation/yu
+          purposes:
+          - research
+          authority: independent
+          note: Orca introduces iteration-level scheduling for autoregressive model
+            serving, allowing the scheduler to change the active batch between execution
+            iterations instead of waiting for a whole static request batch to finish.
+        - type: documentation
+          source:
+            url: https://docs.vllm.ai/en/latest/api/vllm/config/scheduler/
+          purposes:
+          - research
+          authority: upstream
+          note: Current vLLM scheduler configuration exposes active-sequence, batched-token,
+            admission, policy, prefill, and asynchronous scheduling controls, illustrating
+            modern continuous serving schedulers without making one runtime's policy
+            the canonical definition.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

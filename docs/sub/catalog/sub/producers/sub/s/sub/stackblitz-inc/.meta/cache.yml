@@ -1,0 +1,87 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:e4226f6067e1d268678c8847c5afc8724b2bae58
+    parent:
+      entity.yml: gitblob:d2832a7979fe4d097b9404cc46ffd2fcc3b3eba6
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/s/stackblitz-inc
+        type: organization
+        name: StackBlitz, Inc.
+        aliases:
+        - StackBlitz
+        references:
+        - type: official-site
+          source:
+            url: https://stackblitz.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://stackblitz.com/privacy-policy
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Official StackBlitz Privacy Policy identifying StackBlitz, Inc.
+        - type: documentation
+          source:
+            url: https://support.bolt.new/building/intro-bolt
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/services/development/agents/bolt
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

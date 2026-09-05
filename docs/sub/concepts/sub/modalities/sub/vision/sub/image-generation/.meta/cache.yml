@@ -1,0 +1,84 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:26678c0268269d5e29049bd6542cebc3d3e34e13
+    parent:
+      entity.yml: gitblob:87c17d18399cc3ccf7cc6dc99d8d60f6a1829338
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/modalities/vision/image-generation
+        name: Image Generation
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1406.2661
+          purposes:
+          - research
+          authority: independent
+          note: Generative Adversarial Networks establish an adversarial learned generative-model
+            family widely used for image synthesis and demonstrate that image generation
+            is not tied to diffusion architectures.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1601.06759
+          purposes:
+          - research
+          authority: independent
+          note: PixelRNN/PixelCNN models demonstrate autoregressive image generation
+            by directly modeling image-pixel distributions, providing a second major
+            non-diffusion synthesis family.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2006.11239
+          purposes:
+          - research
+          authority: independent
+          note: Denoising Diffusion Probabilistic Models provide a major modern diffusion-based
+            image-generation family while remaining one architecture choice within
+            the broader image-generation concept.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

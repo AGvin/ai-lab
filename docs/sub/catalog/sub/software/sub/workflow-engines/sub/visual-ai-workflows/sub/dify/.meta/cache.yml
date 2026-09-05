@@ -1,0 +1,100 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:878fce20f10a039ff17811a026f650fade330b6b
+    parent:
+      entity.yml: gitblob:e875948a0a0ac5c0f5e7b8d02eb76165bfa9985a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/workflow-engines/visual-ai-workflows/dify
+        type: software
+        name: Dify
+        references:
+        - type: documentation
+          source:
+            url: https://docs.dify.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/langgenius/dify
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current upstream license identifies LangGenius, Inc. as Dify's copyright
+            holder/producer and defines the current modified Apache-2.0-based license
+            conditions.
+        - type: other
+          source:
+            url: https://dify.ai/legal/terms-of-service
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current Dify terms identify LangGenius, Inc. as the Delaware corporation
+            doing business as Dify.
+        - type: other
+          source:
+            url: https://dify.ai/legal/marketplace-agreement
+          purposes:
+          - research
+          authority: official
+          note: Current marketplace agreement describes Dify as the open-source platform
+            managed by LangGenius, Inc.
+        relations:
+        - type: produced-by
+          target: catalog/producers/l/langgenius-inc
+        - type: maintained-by
+          target: catalog/producers/l/langgenius-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

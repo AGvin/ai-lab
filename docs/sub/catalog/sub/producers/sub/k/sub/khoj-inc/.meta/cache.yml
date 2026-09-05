@@ -1,0 +1,79 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bdee24ee33514b145ec44982dd37c6d6aa089cf3
+    parent:
+      entity.yml: gitblob:2f1e0b49da4e74d5be798e28b5ef97ff4b499581
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/k/khoj-inc
+        type: organization
+        name: Khoj Inc.
+        references:
+        - type: other
+          source:
+            url: https://khoj.dev/terms-of-service
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current Khoj Terms of Service identify Khoj Inc. as the service provider.
+        - type: other
+          source:
+            url: https://khoj.dev/privacy-policy
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/interfaces-and-workspaces/knowledge-workspaces/khoj
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,88 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:675d92dd8867401324376fefabbed1560cfb262b
+    parent:
+      entity.yml: gitblob:834a848416cc4cbecc3cf2bbd5450eb5dd567415
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/f/flowiseai-inc
+        type: organization
+        name: FlowiseAI Inc.
+        references:
+        - type: official-site
+          source:
+            url: https://flowiseai.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://flowiseai.com/terms
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current Flowise terms identify the legal provider as FlowiseAI Inc.,
+            a Delaware corporation.
+        - type: article
+          source:
+            url: https://flowiseai.com/sunset
+          purposes:
+          - research
+          authority: official
+          note: First-party sunset notice records the 2026 code freeze, repository
+            archival, and end-of-life schedule for Flowise.
+        relations:
+        - type: produces
+          target: catalog/software/workflow-engines/visual-ai-workflows/flowise
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

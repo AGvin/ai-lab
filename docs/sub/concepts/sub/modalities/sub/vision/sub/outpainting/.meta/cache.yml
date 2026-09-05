@@ -1,0 +1,79 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:c5343d06ddf42b7c67d5dbca29185f1383fe3548
+    parent:
+      entity.yml: gitblob:87c17d18399cc3ccf7cc6dc99d8d60f6a1829338
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/modalities/vision/outpainting
+        name: Image Outpainting
+        aliases:
+        - Outpainting
+        - Image Extension
+        - Image Extrapolation
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1908.07007
+          purposes:
+          - research
+          authority: independent
+          note: Boundless formulates learned image extension as generating coherent
+            visual content beyond existing image boundaries and explicitly distinguishes
+            the weaker boundary constraints from ordinary internal inpainting.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2104.00675
+          purposes:
+          - research
+          authority: independent
+          note: In&Out defines image outpainting as semantically consistent extension
+            beyond available image content and highlights its greater ambiguity/diversity
+            relative to inpainting.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,75 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:5879e61a2fd32455a8eb23401806be3a5311ef1c
+    parent:
+      entity.yml: gitblob:f76cb6691e0c8a1d4150a987d83b87b7bd75d229
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/reasoning-and-decision-making/planning-and-scheduling
+        name: Planning and Scheduling
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2412.11642
+          purposes:
+          - research
+          authority: independent
+          note: Current introduction to AI planning presents planning through states,
+            actions, goals, state-space search, constraints, hierarchical decomposition,
+            and established planning representations.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2505.19683
+          purposes:
+          - research
+          authority: independent
+          note: Current LLM-planning survey connects modern language-model approaches
+            to broader automated-planning foundations and distinguishes decomposition,
+            search, external planning modules, and learning-based approaches.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

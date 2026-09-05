@@ -1,0 +1,84 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:673028f597439c6296095afc9046fb6ffad3e75c
+    parent:
+      entity.yml: gitblob:bdd8e2902446ee1233777851a26d11b5a6858d88
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/evaluation-and-measurement/reproducibility
+        name: Reproducibility
+        references:
+        - type: official-site
+          source:
+            url: https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science
+          purposes:
+          - research
+          authority: official
+          note: National Academies consensus work separates computational reproducibility
+            from replicability and explicitly recognizes that terminology and successful
+            repetition criteria vary across scientific and engineering fields.
+        - type: official-site
+          source:
+            url: https://sigsim.acm.org/conf/pads/2024/blog/artifact-evaluation/
+          purposes:
+          - research
+          authority: official
+          note: ACM-style artifact/result evaluation emphasizes documented, complete,
+            exercisable artifacts plus independent reproduction of computational results,
+            including software, data, environment, and result-generation instructions.
+        - type: documentation
+          source:
+            url: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
+          purposes:
+          - research
+          authority: official
+          note: NIST AI RMF Measure requires test sets, metrics, tools, deployment-relevant
+            conditions, and evaluation measures to be documented, providing an AI-system-specific
+            evidence boundary for repeatable evaluation.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

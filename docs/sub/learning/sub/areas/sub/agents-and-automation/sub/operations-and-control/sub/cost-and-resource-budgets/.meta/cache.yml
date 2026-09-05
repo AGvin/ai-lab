@@ -1,0 +1,76 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:8975741a83a649816d15933f046b54cdf846c2e0
+    parent:
+      entity.yml: gitblob:430e4a4a2ee288f7d313011074721bf2d5f5ced5
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: learning/areas/agents-and-automation/operations-and-control/cost-and-resource-budgets
+        name: Cost and Resource Budgets
+        references:
+        - type: documentation
+          source:
+            url: https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/core-concepts/architecture.html
+          purposes:
+          - research
+          authority: official
+          note: Exact legacy AutoGen agent-runtime architecture reference preserved
+            from Resource Lifecycle Controller source as agent runtime/lifecycle provenance;
+            it does not by itself substantiate provider billing or cloud resource
+            semantics.
+        - type: documentation
+          source:
+            url: https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/framework/distributed-agent-runtime.html
+          purposes:
+          - research
+          authority: official
+          note: Exact legacy AutoGen distributed-agent-runtime reference preserved
+            as historical framework evidence for distributed agent runtime identity/lifecycle;
+            mutable implementation behavior must be re-checked before current claims.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

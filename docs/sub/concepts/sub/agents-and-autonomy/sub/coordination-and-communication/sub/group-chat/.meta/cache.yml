@@ -1,0 +1,77 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:621b1ab562f2031f6cd7ae56d45d7d2753e9c56e
+    parent:
+      entity.yml: gitblob:c032bd27e9c6f49dacbf7a039554b8f8f098fe47
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/agents-and-autonomy/coordination-and-communication/group-chat
+        name: Group Chat
+        references:
+        - type: documentation
+          source:
+            url: https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/group-chat
+          purposes:
+          - research
+          authority: official
+          note: Current Microsoft Agent Framework documentation defines group-chat
+            orchestration through synchronized shared conversation history, broadcast
+            of each response to participants, explicit next-speaker selection, and
+            iterative collaboration until a termination condition.
+        - type: documentation
+          source:
+            url: https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/
+          purposes:
+          - research
+          authority: official
+          note: Current Agent Framework lists Group Chat as a distinct built-in multi-agent
+            orchestration pattern alongside Sequential, Concurrent, Handoff, and manager-led
+            Magentic coordination, establishing it as more than generic parallel multi-agent
+            execution.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

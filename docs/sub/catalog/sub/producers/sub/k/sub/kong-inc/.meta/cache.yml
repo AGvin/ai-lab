@@ -1,0 +1,87 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:8583e9dbcd1d8e251dbb70174685e592380cdfcd
+    parent:
+      entity.yml: gitblob:2f1e0b49da4e74d5be798e28b5ef97ff4b499581
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/k/kong-inc
+        type: organization
+        name: Kong Inc.
+        aliases:
+        - Kong
+        references:
+        - type: official-site
+          source:
+            url: https://konghq.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: terms-of-service
+          source:
+            url: https://konghq.com/legal/kong-customer-agreement
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current Kong customer agreement identifying Kong Inc.
+        - type: repository
+          source:
+            url: https://github.com/Kong/kong
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/gateways/api-management-gateways/kong-gateway
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

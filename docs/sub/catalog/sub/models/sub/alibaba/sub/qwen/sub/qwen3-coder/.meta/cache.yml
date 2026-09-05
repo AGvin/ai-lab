@@ -1,0 +1,87 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:c9a9e6137748275e4c7b2e4d8cef0a537ad9170c
+    parent:
+      entity.yml: gitblob:23d8587a0565b9e8ef2a6a406151436db422b7b1
+      node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/series
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/alibaba/qwen/qwen3-coder
+        type: model-series
+        name: Qwen3-Coder
+        references:
+        - type: repository
+          source:
+            url: https://github.com/QwenLM/Qwen3-Coder
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://qwenlm.github.io/blog/qwen3-coder/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/alibaba/qwen
+        - type: produced-by
+          target: catalog/producers/q/qwen-team
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-coder/models/qwen3-coder-30b-a3b-instruct
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-coder/models/qwen3-coder-480b-a35b-instruct
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-coder/models/qwen3-coder-next
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

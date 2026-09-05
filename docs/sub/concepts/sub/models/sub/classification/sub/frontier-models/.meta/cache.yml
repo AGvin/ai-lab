@@ -1,0 +1,91 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:88a988cc230ca7df76fa492162da067e6aff3413
+    parent:
+      entity.yml: gitblob:edcc0e47aa8e02f42b1b2a8bb087f7d6e2060c72
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/classification/frontier-models
+        name: Frontier Models
+        references:
+        - type: article
+          source:
+            url: https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026
+          purposes:
+          - research
+          authority: independent
+          note: Current international scientific-report terminology describes frontier
+            AI relative to today's most advanced capabilities and particularly capable
+            general-purpose AI.
+        - type: article
+          source:
+            url: https://www.aisi.gov.uk/frontier-ai-trends-report
+          purposes:
+          - research
+          authority: official
+          note: Current UK AI Security Institute evidence on the evolving frontier
+            of model and system capabilities across multiple evaluation domains.
+        - type: article
+          source:
+            url: https://www.ncsc.gov.uk/blogs/why-cyber-defenders-need-to-be-ready-for-frontier-ai
+          purposes:
+          - research
+          authority: official
+          note: Current UK NCSC usage defines frontier AI models as the most capable
+            models available at a given time.
+        - type: other
+          source:
+            url: https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/eng
+          purposes:
+          - research
+          authority: official
+          note: Current consolidated EU AI Act classification for general-purpose
+            AI models with systemic risk; use to distinguish jurisdiction-specific
+            legal criteria from generic frontier-model terminology.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

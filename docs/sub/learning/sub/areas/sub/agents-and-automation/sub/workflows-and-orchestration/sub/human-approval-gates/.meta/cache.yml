@@ -1,0 +1,82 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:50bc154cd5babba883ca365deed60d2b0175ed49
+    parent:
+      entity.yml: gitblob:399b63dbb397b0c8351cf3b6a5d35dc116a4408e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: learning/areas/agents-and-automation/workflows-and-orchestration/human-approval-gates
+        name: Human Approval Gates
+        references:
+        - type: documentation
+          source:
+            url: https://openai.github.io/openai-agents-python/human_in_the_loop/
+          purposes:
+          - research
+          authority: official
+          note: Exact OpenAI Agents SDK human-in-the-loop reference preserved from
+            the legacy source for migration provenance; current framework APIs must
+            be re-checked before making mutable implementation claims.
+        - type: documentation
+          source:
+            url: https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/breakpoints/
+          purposes:
+          - research
+          authority: official
+          note: Exact LangGraph interrupts/breakpoints reference preserved from the
+            legacy source for migration provenance.
+        - type: documentation
+          source:
+            url: https://langchain-ai.github.io/langgraph/concepts/persistence/
+          purposes:
+          - research
+          authority: official
+          note: Exact LangGraph persistence reference preserved from the legacy source
+            for migration provenance.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

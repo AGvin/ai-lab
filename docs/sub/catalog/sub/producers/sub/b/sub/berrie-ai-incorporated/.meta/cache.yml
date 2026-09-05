@@ -1,0 +1,82 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:3efbaf652bfcf112a50a86f187fa68c22c195548
+    parent:
+      entity.yml: gitblob:2f014c200c2282ae14ccd5407a676e2770042b54
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/b/berrie-ai-incorporated
+        type: organization
+        name: Berrie AI Incorporated
+        aliases:
+        - BerriAI
+        references:
+        - type: official-site
+          source:
+            url: https://www.litellm.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current LiteLLM first-party site identifying Berrie AI Incorporated
+            in the site footer.
+        - type: repository
+          source:
+            url: https://github.com/BerriAI/litellm
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/gateways/model-gateways/litellm
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

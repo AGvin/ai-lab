@@ -1,0 +1,86 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:435fbafb42e682ba17b3a4229085dbb3188dc168
+    parent:
+      entity.yml: gitblob:46b91081ab3e21420c7289bb28e30b3d82f867a5
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/d/dbos-inc
+        type: organization
+        name: DBOS, Inc.
+        references:
+        - type: official-site
+          source:
+            url: https://www.dbos.dev/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.dbos.dev/terms-of-service
+          purposes:
+          - identification
+          authority: official
+          note: Current terms identify the legal company as DBOS, Inc.
+        - type: article
+          source:
+            url: https://www.dbos.dev/blog/announcing-dbos
+          purposes:
+          - research
+          authority: official
+          note: The DBOS launch history records the formation of DBOS, Inc. to develop
+            the DBOS system/product direction.
+        relations:
+        - type: produces
+          target: catalog/software/workflow-engines/application-orchestration/dbos
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

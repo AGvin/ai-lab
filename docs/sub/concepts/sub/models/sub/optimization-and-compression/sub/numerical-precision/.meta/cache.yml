@@ -1,0 +1,75 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:5ce28d0dccfbc4273d8e37449dac3ad993fc5147
+    parent:
+      entity.yml: gitblob:8a45666d63acb19c2f0355bf402455c1d9c963d4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/optimization-and-compression/numerical-precision
+        name: Numerical Precision
+        references:
+        - type: documentation
+          source:
+            url: https://docs.nvidia.com/deeplearning/performance/mixed-precision-training/index.html
+          purposes:
+          - research
+          authority: official
+          note: NVIDIA mixed-precision documentation distinguishes numerical formats
+            and the use of different precisions for different parts of a neural-network
+            workload.
+        - type: documentation
+          source:
+            url: https://docs.nvidia.com/cuda/cuda-programming-guide/05-appendices/mathematical-functions.html
+          purposes:
+          - research
+          authority: official
+          note: Current CUDA documentation distinguishes supported floating-point
+            data types and alternate low-precision formats, illustrating that bit
+            width, exponent range, and significand precision are separate properties.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

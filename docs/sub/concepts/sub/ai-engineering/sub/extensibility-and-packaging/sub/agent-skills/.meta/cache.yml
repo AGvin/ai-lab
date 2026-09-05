@@ -1,0 +1,97 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:271b84cf57706c7168c85ee3073fe7b998093b8d
+    parent:
+      entity.yml: gitblob:a1c5b4a153c02e53502bc4e89ab2cc00f05a8192
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/ai-engineering/extensibility-and-packaging/agent-skills
+        name: Agent Skills
+        references:
+        - type: documentation
+          source:
+            url: https://agentskills.io/home
+          purposes:
+          - research
+          authority: official
+          note: The open Agent Skills project defines Agent Skills as a lightweight
+            cross-client format for extending AI systems with specialized knowledge
+            and workflows through discovery, activation, and execution with progressive
+            disclosure.
+        - type: specification
+          source:
+            url: https://agentskills.io/specification
+          purposes:
+          - research
+          authority: official
+          note: The current Agent Skills specification defines the portable skill-directory
+            and SKILL.md contract; concept documentation uses it to establish the
+            format boundary while leaving exact normative fields, filename/layout
+            constraints, validation, and conformance to the formal specification owner.
+        - type: documentation
+          source:
+            url: https://agentskills.io/client-implementation/adding-skills-support
+          purposes:
+          - research
+          authority: official
+          note: The official client implementation guide describes cross-host discovery,
+            progressive disclosure, activation, resource loading, trust checks, and
+            implementation variance, showing that skills are host-integrated capability
+            packages rather than one autonomous-agent architecture primitive.
+        - type: documentation
+          source:
+            url: https://docs.github.com/en/copilot/concepts/agents/about-agent-skills
+          purposes:
+          - research
+          authority: official
+          note: Current GitHub Copilot documentation implements the open Agent Skills
+            standard across multiple Copilot surfaces, providing independent vendor
+            evidence of the portable concept and separating it from GitHub's host-specific
+            plugin packaging.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

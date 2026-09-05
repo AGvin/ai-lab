@@ -1,0 +1,95 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:94f0b7a50b5cb10d027766516579eed8d636c8e9
+    parent:
+      entity.yml: gitblob:23d8587a0565b9e8ef2a6a406151436db422b7b1
+      node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/series
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/alibaba/qwen/qwen3
+        type: model-series
+        name: Qwen3
+        references:
+        - type: repository
+          source:
+            url: https://github.com/QwenLM/Qwen3
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2505.09388
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/collections/Qwen/qwen3-67dd247413f0e2e4f653967f
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/alibaba/qwen
+        - type: produced-by
+          target: catalog/producers/q/qwen-team
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3/models/qwen3-14b
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3/models/qwen3-30b-a3b
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3/models/qwen3-32b
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3/models/qwen3-8b
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

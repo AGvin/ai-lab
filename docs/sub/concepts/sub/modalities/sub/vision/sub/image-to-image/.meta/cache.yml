@@ -1,0 +1,78 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:190f7af20a27e64abb618148c05ffcdb14347c87
+    parent:
+      entity.yml: gitblob:87c17d18399cc3ccf7cc6dc99d8d60f6a1829338
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/modalities/vision/image-to-image
+        name: Image-to-Image Generation
+        aliases:
+        - Image-to-Image Translation
+        - Image-to-Image
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1611.07004
+          purposes:
+          - research
+          authority: independent
+          note: pix2pix frames image-to-image translation as learning a conditional
+            mapping from an input image representation to a corresponding output image
+            across diverse tasks such as label-to-photo, edge-to-object, and colorization.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1703.10593
+          purposes:
+          - research
+          authority: independent
+          note: CycleGAN demonstrates unpaired image-to-image translation and shows
+            that the concept is broader than paired supervision or diffusion-style
+            partial noising of a source image.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,81 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:25693031ebf9a42907e0de90f4397b605ec3b745
+    parent:
+      entity.yml: gitblob:a4ee2dcae1c5d737d8341a59e0c35e264801353e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/architectures/attention
+        name: Attention
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1409.0473
+          purposes:
+          - research
+          authority: independent
+          note: Foundational neural attention work using learned soft alignment to
+            select source information relevant to each decoder prediction.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1706.03762
+          purposes:
+          - research
+          authority: independent
+          note: Transformer paper formalizes scaled dot-product query/key/value attention
+            and multi-head attention in a widely used modern architecture.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/1902.10186
+          purposes:
+          - research
+          authority: independent
+          note: Empirical evidence that attention weights alone should not automatically
+            be treated as faithful explanations of model predictions.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

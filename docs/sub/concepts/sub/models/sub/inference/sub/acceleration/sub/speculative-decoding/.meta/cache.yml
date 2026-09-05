@@ -1,0 +1,75 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d9b249dff33be8cb7d38765fe8c58165008fc2e5
+    parent:
+      entity.yml: gitblob:cb9c1bada4c3fde23db32e0befa98f96ea13784e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/inference/acceleration/speculative-decoding
+        name: Speculative Decoding
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2211.17192
+          purposes:
+          - research
+          authority: independent
+          note: Foundational speculative-decoding work shows how an approximation/draft
+            path can propose several tokens while the target model verifies them in
+            parallel without changing the target output distribution under the algorithm.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2302.01318
+          purposes:
+          - research
+          authority: independent
+          note: Speculative sampling formalizes modified rejection sampling that preserves
+            the target model distribution within hardware numerics while reducing
+            sequential target-model decoding steps.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

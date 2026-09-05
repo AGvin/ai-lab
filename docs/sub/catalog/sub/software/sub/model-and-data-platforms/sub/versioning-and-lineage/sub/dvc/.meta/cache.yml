@@ -1,0 +1,101 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:79bbc52a6277e59e84f0f4d051f4402ac95ebd83
+    parent:
+      entity.yml: gitblob:6c017d30f4fa3463031451cae3d957a3396559a0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/model-and-data-platforms/versioning-and-lineage/dvc
+        type: software
+        name: DVC
+        aliases:
+        - Data Version Control
+        references:
+        - type: documentation
+          source:
+            url: https://dvc.org/doc
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/treeverse/dvc
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current upstream repository is maintained under the Treeverse GitHub
+            organization after the 2025 acquisition.
+        - type: article
+          source:
+            url: https://dvc.org/blog/dvc-1-0-release/
+          purposes:
+          - research
+          authority: official
+          note: DVC creator Dmitry Petrov states that he created DVC.
+        - type: article
+          source:
+            url: https://dvc.org/blog/dvc-joins-lakefs-your-questions-answered/
+          purposes:
+          - research
+          authority: official
+          note: First-party transition announcement states that lakeFS acquired DVC
+            from Iterative.ai and took over stewardship and active development.
+        relations:
+        - type: produced-by
+          target: catalog/producers/d/dmitry-petrov
+        - type: owned-by
+          target: catalog/producers/t/treeverse-inc
+        - type: maintained-by
+          target: catalog/producers/t/treeverse-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

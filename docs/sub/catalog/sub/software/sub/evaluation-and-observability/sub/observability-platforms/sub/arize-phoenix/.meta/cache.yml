@@ -1,0 +1,88 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:929a3309c556108d240656be52c0338f57573dd7
+    parent:
+      entity.yml: gitblob:0f9e361b25df194c1b4133d3d9f52a1680fa1d57
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/evaluation-and-observability/observability-platforms/arize-phoenix
+        type: software
+        name: Arize Phoenix
+        aliases:
+        - Phoenix
+        references:
+        - type: documentation
+          source:
+            url: https://arize.com/docs/phoenix
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/Arize-ai/phoenix
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://arize.com/docs/phoenix/self-hosting/license
+          purposes:
+          - research
+          authority: official
+          note: Current first-party Phoenix license documentation identifying Elastic
+            License 2.0.
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/arize-ai-inc
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

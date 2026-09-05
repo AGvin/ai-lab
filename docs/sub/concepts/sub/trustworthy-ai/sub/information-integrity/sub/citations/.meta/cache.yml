@@ -1,0 +1,75 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:e2a16ccb73b775372b9974c576df15e4a99f70c9
+    parent:
+      entity.yml: gitblob:5578ac7de120f6da7dcd215c508a938f1a634a92
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/trustworthy-ai/information-integrity/citations
+        name: Citations
+        references:
+        - type: article
+          source:
+            url: https://doi.org/10.18653/v1/2023.emnlp-main.398
+          purposes:
+          - research
+          authority: independent
+          note: Gao et al. formalize citation-enabled generation and evaluate citation
+            correctness and completeness separately, demonstrating that citation presence
+            alone is not sufficient evidence quality.
+        - type: documentation
+          source:
+            url: https://doi.org/10.6028/NIST.AI.600-1
+          purposes:
+          - research
+          authority: official
+          note: The NIST Generative AI Profile recommends reviewing and verifying
+            sources and citations in generated outputs, supporting citation verification
+            as an information-integrity control rather than decorative attribution.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

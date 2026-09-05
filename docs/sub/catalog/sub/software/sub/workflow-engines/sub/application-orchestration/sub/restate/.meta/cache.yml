@@ -1,0 +1,86 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:6d022fdde4a66f30c55cee52da5c8ee783df5110
+    parent:
+      entity.yml: gitblob:f9ac5a82bcdaf30d9fe417c76471f4a408683309
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/workflow-engines/application-orchestration/restate
+        type: software
+        name: Restate
+        references:
+        - type: documentation
+          source:
+            url: https://docs.restate.dev/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/restatedev/restate
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://restate.dev/blog/why-we-built-restate
+          purposes:
+          - research
+          authority: official
+          note: First-party project history documents the Restate team's origin and
+            product direction.
+        relations:
+        - type: produced-by
+          target: catalog/producers/r/restate-gmbh
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

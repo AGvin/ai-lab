@@ -1,0 +1,105 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:f21491476404e981d0dd3420729556fb78f26498
+    parent:
+      entity.yml: gitblob:0c958ac9b06255323dd6f40493fd9f05736b939d
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/agents/local/pi
+        type: software
+        name: Pi
+        references:
+        - type: official-site
+          source:
+            url: https://pi.dev/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://pi.dev/docs/latest
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/earendil-works/pi
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/earendil-works/pi/blob/main/packages/coding-agent/package.json
+          purposes:
+          - research
+          authority: official
+          note: Current coding-agent package metadata identifies Mario Zechner as
+            the author.
+        - type: article
+          source:
+            url: https://pi.dev/news/2026/5/7/pi-has-a-new-home
+          purposes:
+          - research
+          authority: official
+          note: Official Pi announcement documenting the move to Earendil Works while
+            preserving the product identity and direction.
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mario-zechner
+        - type: maintained-by
+          target: catalog/producers/e/earendil-inc
+        - type: has-derivative
+          target: catalog/software/agents/local/omp
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

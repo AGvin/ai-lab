@@ -1,0 +1,67 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:14efa645d025f97f919dce3fadfaade330d75d9e
+    parent:
+      entity.yml: gitblob:19a6c0adb7dda849e31cfc7cbcc26c56ab1bad67
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: learning/areas/agents-and-automation/planning-execution-and-reflection/agent-planning
+        name: Agent Planning
+        references:
+        - type: article
+          source:
+            url: https://www.langchain.com/blog/plan-and-execute-agents
+          purposes:
+          - research
+          authority: official
+          note: Exact historical LangChain Plan-and-Execute Agents reference preserved
+            from the legacy Planner-Executor source for migration provenance; mutable
+            framework APIs and current product behavior must be re-checked before
+            implementation claims.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

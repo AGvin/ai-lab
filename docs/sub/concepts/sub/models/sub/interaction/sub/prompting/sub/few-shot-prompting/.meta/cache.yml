@@ -1,0 +1,83 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:efb65af722ad27e3b271e27b8f9c50e1a5527f95
+    parent:
+      entity.yml: gitblob:5cad06e0202fba999da8a84a4bf4c8bd2c2b01d1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/interaction/prompting/few-shot-prompting
+        name: Few-Shot Prompting
+        references:
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2005.14165
+          purposes:
+          - research
+          authority: independent
+          note: GPT-3 work popularized few-shot in-context task specification using
+            demonstrations supplied at inference without gradient updates.
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2202.12837
+          purposes:
+          - research
+          authority: independent
+          note: Study of in-context demonstrations shows that format, input distribution,
+            and label-space information can materially affect behavior beyond a simplistic
+            imitation account.
+        - type: article
+          source:
+            url: https://aclanthology.org/2022.acl-long.556/
+          purposes:
+          - research
+          authority: independent
+          note: ACL study demonstrates substantial sensitivity of few-shot prompting
+            to demonstration ordering, supporting an evaluation rather than universal-best-practice
+            boundary.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

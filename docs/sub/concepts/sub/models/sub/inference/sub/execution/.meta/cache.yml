@@ -1,0 +1,66 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:ffdc0359c4a42d1dca3fb05c6a0ac985048e85a1
+    parent:
+      entity.yml: gitblob:541779a07ba9a8aa4637afffe809b08ae82c9886
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/models/inference/execution
+        name: Inference Execution
+        references:
+        - type: documentation
+          source:
+            url: https://onnxruntime.ai/docs/execution-providers/
+          purposes:
+          - research
+          authority: official
+          note: ONNX Runtime execution providers demonstrate that model graphs or
+            subgraphs can execute across CPU, GPU, accelerators, or heterogeneous
+            provider combinations according to runtime capabilities.
+    aliases:
+      effective: {}
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json
