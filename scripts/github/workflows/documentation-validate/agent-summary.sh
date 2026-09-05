@@ -50,6 +50,12 @@ printf 'AGENT_SUMMARY_JSON=%s\n' "$json"
 display() {
   if [[ -n "$1" ]]; then printf '%s' "$1"; else printf 'n/a'; fi
 }
+details_file="${RUNNER_TEMP:-}/documentation-validate-output.txt"
+validation_details=""
+if [[ -n "${RUNNER_TEMP:-}" && -f "$details_file" ]]; then
+  validation_details="$(sed -n '/^VALIDATION_DETAILS_BEGIN$/,/^VALIDATION_DETAILS_END$/p' "$details_file" | sed '1d;$d')"
+fi
+
 {
   echo "## Documentation Validate"
   echo
@@ -57,9 +63,16 @@ display() {
   echo "| --- | --- |"
   echo "| Source branch | \`$SOURCE_BRANCH\` |"
   echo "| Source SHA | \`$(display "$SOURCE_SHA")\` |"
-  echo "| Schemas | \`$REQUEST_SCHEMAS / $schemas_status\` |"
-  echo "| Relations | \`$REQUEST_RELATIONS / $relations_status\` |"
-  echo "| Cache | \`$REQUEST_CACHE / $cache_status\` |"
+  echo
+  echo "| Validation | Enabled | Result |"
+  echo "| --- | --- | --- |"
+  echo "| Schemas | \`$REQUEST_SCHEMAS\` | \`$schemas_status\` |"
+  echo "| Relations | \`$REQUEST_RELATIONS\` | \`$relations_status\` |"
+  echo "| Cache | \`$REQUEST_CACHE\` | \`$cache_status\` |"
+  if [[ -n "$validation_details" ]]; then
+    echo
+    printf '%s\n' "$validation_details"
+  fi
   if [[ -n "$RELATION_STATISTICS" ]]; then
     echo
     echo "### Relation statistics"

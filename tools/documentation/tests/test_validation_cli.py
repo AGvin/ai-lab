@@ -75,3 +75,38 @@ def test_cache_switch_is_independent(validation_repo):
     assert disabled.returncode == 0
     assert enabled.returncode != 0
     assert "cache: failed" in enabled.stdout
+
+
+def test_schema_diagnostics_group_reason_and_list_files(validation_repo):
+    for name in ("a", "b"):
+        entity = validation_repo / f"docs/sub/{name}/.meta/entity.yml"
+        entity.parent.mkdir(parents=True, exist_ok=True)
+        entity.write_text(
+            yaml.safe_dump(
+                {
+                    "entity": {
+                        "id": name,
+                        "name": name.upper(),
+                        "references": [
+                            {
+                                "type": "whitepaper",
+                                "source": {"url": "https://example.com/reference"},
+                                "purposes": ["research"],
+                                "authority": "independent",
+                            }
+                        ],
+                    }
+                },
+                sort_keys=False,
+            ),
+            encoding="utf-8",
+        )
+
+    result = run_validate(validation_repo, True, False, False)
+    assert result.returncode != 0
+    assert "schemas: failed" in result.stdout
+    assert "VALIDATION_DETAILS_BEGIN" in result.stdout
+    assert "VALIDATION_DETAILS_END" in result.stdout
+    assert result.stdout.count("unapproved reference type 'whitepaper'") == 1
+    assert "`docs/sub/a/.meta/entity.yml`" in result.stdout
+    assert "`docs/sub/b/.meta/entity.yml`" in result.stdout

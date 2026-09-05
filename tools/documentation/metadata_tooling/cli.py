@@ -1,12 +1,15 @@
 from __future__ import annotations
 
 import argparse
+from collections import defaultdict
 from pathlib import Path
+import re
 import sys
 
 from .cache import CacheManager
 from .cache_validation import CacheValidator
 from .common import Repository, ToolingError
+from .references import ReferenceValidator
 from .relations import RelationValidator
 from .schemas import SchemaValidator
 
@@ -50,21 +53,48 @@ def _run_cache(use_fingerprints: bool) -> int:
     return 0 if summary.errors == 0 else 1
 
 
-def _print_errors(errors: list[str]) -> None:
-    for error in errors:
-        print(f"error: {error}", file=sys.stderr)
+def _normalized_issue(error: str) -> tuple[str, str]:
+    path, separator, reason = error.partition(": ")
+    if not separator:
+        return "<unknown>", error
+    reason = re.sub(r"(?<=\.)\d+(?=\.)", "[]", reason)
+    reason = re.sub(r" \[selector=.*$", "", reason)
+    return path, reason
+
+
+def _print_grouped_errors(sections: list[tuple[str, list[str]]]) -> None:
+    if not sections:
+        return
+    print("VALIDATION_DETAILS_BEGIN")
+    for title, errors in sections:
+        grouped: dict[str, set[str]] = defaultdict(set)
+        for error in errors:
+            path, reason = _normalized_issue(error)
+            grouped[reason].add(path)
+        files = {path for paths in grouped.values() for path in paths}
+        print(f"### {title} validation issues ({len(errors)} issue(s) in {len(files)} file(s))")
+        print()
+        for reason in sorted(grouped):
+            print(f"- **{reason}**")
+            for path in sorted(grouped[reason]):
+                print(f"  - `{path}`")
+        print()
+    print("VALIDATION_DETAILS_END")
 
 
 def _run_validate(validate_schemas: bool, validate_relations: bool, validate_cache: bool) -> int:
     repo = Repository(Path.cwd())
     failed = False
+    diagnostic_sections: list[tuple[str, list[str]]] = []
 
     if validate_schemas:
-        result = SchemaValidator(repo).validate()
-        print(f"schemas: {'passed' if result.ok else 'failed'}")
-        if not result.ok:
+        schema_result = SchemaValidator(repo).validate()
+        reference_result = ReferenceValidator(repo).validate()
+        errors = [*schema_result.errors, *reference_result.errors]
+        print(f"schemas: {'passed' if not errors else 'failed'}")
+        if errors:
             failed = True
-            _print_errors(result.errors)
+            diagnostic_sections.append(("Schema and reference vocabulary", errors))
     else:
         print("schemas: skipped")
 
@@ -75,7 +105,7 @@ def _run_validate(validate_schemas: bool, validate_relations: bool, validate_cac
             print(line)
         if not result.ok:
             failed = True
-            _print_errors(result.errors)
+            diagnostic_sections.append(("Relation", result.errors))
     else:
         print("relations: skipped")
 
@@ -84,10 +114,11 @@ def _run_validate(validate_schemas: bool, validate_relations: bool, validate_cac
         print(f"cache: {'passed' if result.ok else 'failed'}")
         if not result.ok:
             failed = True
-            _print_errors(result.errors)
+            diagnostic_sections.append(("Cache", result.errors))
     else:
         print("cache: skipped")
 
+    _print_grouped_errors(diagnostic_sections)
     return 1 if failed else 0
 
 
