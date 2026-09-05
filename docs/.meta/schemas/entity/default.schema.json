@@ -6,7 +6,14 @@
   "$defs": {
     "schema_id": {
       "type": "string",
-      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      "oneOf": [
+        {
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*$"
+        },
+        {
+          "pattern": "^/:[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*$"
+        }
+      ]
     },
     "non_empty_string": {
       "type": "string",
@@ -18,82 +25,191 @@
     },
     "string_list": {
       "type": "array",
-      "items": {"$ref": "#/$defs/non_empty_string"},
+      "items": {
+        "$ref": "#/$defs/non_empty_string"
+      },
       "uniqueItems": true
     },
     "reference_source": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "url": {"type": "string", "format": "uri"},
-        "path": {"$ref": "#/$defs/non_empty_string"}
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "path": {
+          "$ref": "#/$defs/non_empty_string"
+        }
       },
-      "oneOf": [{"required": ["url"]}, {"required": ["path"]}]
+      "oneOf": [
+        {
+          "required": [
+            "url"
+          ]
+        },
+        {
+          "required": [
+            "path"
+          ]
+        }
+      ]
     },
     "reference": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["type", "source", "purposes", "authority"],
+      "required": [
+        "type",
+        "source",
+        "purposes",
+        "authority"
+      ],
       "properties": {
-        "type": {"enum": ["official-site", "documentation", "repository", "specification", "registry", "distribution", "artifact", "release-notes", "issue-tracker", "article", "other"]},
-        "source": {"$ref": "#/$defs/reference_source"},
+        "type": {
+          "enum": [
+            "official-site",
+            "documentation",
+            "repository",
+            "specification",
+            "registry",
+            "distribution",
+            "artifact",
+            "release-notes",
+            "issue-tracker",
+            "article",
+            "other"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/reference_source"
+        },
         "purposes": {
           "type": "array",
-          "items": {"enum": ["identification", "research"]},
+          "items": {
+            "enum": [
+              "identification",
+              "research"
+            ]
+          },
           "minItems": 1,
           "uniqueItems": true
         },
-        "authority": {"enum": ["official", "upstream", "independent", "community"]},
-        "note": {"$ref": "#/$defs/non_empty_string"}
+        "authority": {
+          "enum": [
+            "official",
+            "upstream",
+            "independent",
+            "community"
+          ]
+        },
+        "note": {
+          "$ref": "#/$defs/non_empty_string"
+        }
       }
     },
     "entity_target": {
       "oneOf": [
-        {"$ref": "#/$defs/entity_id"},
         {
-          "type": "object",
-          "additionalProperties": false,
-          "required": ["id"],
-          "properties": {"id": {"$ref": "#/$defs/entity_id"}}
+          "$ref": "#/$defs/entity_id"
         },
         {
           "type": "object",
           "additionalProperties": false,
-          "required": ["path"],
-          "properties": {"path": {"$ref": "#/$defs/non_empty_string"}}
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/entity_id"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path"
+          ],
+          "properties": {
+            "path": {
+              "$ref": "#/$defs/non_empty_string"
+            }
+          }
         }
       ]
     },
     "relation": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["type", "target"],
+      "required": [
+        "type",
+        "target"
+      ],
       "properties": {
-        "type": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
-        "target": {"$ref": "#/$defs/entity_target"},
-        "order": {"type": "integer"},
-        "hidden": {"type": "boolean"}
+        "type": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "target": {
+          "$ref": "#/$defs/entity_target"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "hidden": {
+          "type": "boolean"
+        }
       }
     }
   },
   "type": "object",
   "additionalProperties": false,
-  "required": ["entity"],
+  "required": [
+    "entity"
+  ],
   "properties": {
     "entity": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "name"],
+      "required": [
+        "id",
+        "name"
+      ],
       "properties": {
-        "schema": {"$ref": "#/$defs/schema_id"},
-        "id": {"$ref": "#/$defs/entity_id"},
-        "name": {"$ref": "#/$defs/non_empty_string"},
-        "type": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
-        "aliases": {"$ref": "#/$defs/string_list"},
-        "labels": {"$ref": "#/$defs/string_list"},
-        "identity_note": {"$ref": "#/$defs/non_empty_string"},
-        "references": {"type": "array", "items": {"$ref": "#/$defs/reference"}},
-        "relations": {"type": "array", "items": {"$ref": "#/$defs/relation"}}
+        "schema": {
+          "$ref": "#/$defs/schema_id"
+        },
+        "id": {
+          "$ref": "#/$defs/entity_id"
+        },
+        "name": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "type": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "aliases": {
+          "$ref": "#/$defs/string_list"
+        },
+        "labels": {
+          "$ref": "#/$defs/string_list"
+        },
+        "identity_note": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reference"
+          }
+        },
+        "relations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/relation"
+          }
+        }
       }
     }
   }

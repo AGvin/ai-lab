@@ -6,7 +6,14 @@
   "$defs": {
     "schema_id": {
       "type": "string",
-      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      "oneOf": [
+        {
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*$"
+        },
+        {
+          "pattern": "^/:[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*$"
+        }
+      ]
     },
     "registry_id": {
       "type": "string",
@@ -22,24 +29,42 @@
     },
     "string_list": {
       "type": "array",
-      "items": {"$ref": "#/$defs/non_empty_string"},
+      "items": {
+        "$ref": "#/$defs/non_empty_string"
+      },
       "uniqueItems": true
     },
     "requirements": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["path"],
-      "properties": {"path": {"$ref": "#/$defs/non_empty_string"}}
+      "required": [
+        "path"
+      ],
+      "properties": {
+        "path": {
+          "$ref": "#/$defs/non_empty_string"
+        }
+      }
     },
     "parameter_remove_rule": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["key"],
+      "required": [
+        "key"
+      ],
       "properties": {
-        "key": {"$ref": "#/$defs/non_empty_string"},
-        "before": {"type": "boolean"},
-        "after": {"type": "boolean"},
-        "prune": {"type": "boolean"}
+        "key": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "before": {
+          "type": "boolean"
+        },
+        "after": {
+          "type": "boolean"
+        },
+        "prune": {
+          "type": "boolean"
+        }
       }
     },
     "parameter_operation": {
@@ -47,21 +72,38 @@
         {
           "type": "object",
           "additionalProperties": false,
-          "required": ["op", "key", "value"],
+          "required": [
+            "op",
+            "key",
+            "value"
+          ],
           "properties": {
-            "op": {"const": "set"},
-            "key": {"$ref": "#/$defs/non_empty_string"},
+            "op": {
+              "const": "set"
+            },
+            "key": {
+              "$ref": "#/$defs/non_empty_string"
+            },
             "value": true
           }
         },
         {
           "type": "object",
           "additionalProperties": false,
-          "required": ["op", "key"],
+          "required": [
+            "op",
+            "key"
+          ],
           "properties": {
-            "op": {"const": "remove"},
-            "key": {"$ref": "#/$defs/non_empty_string"},
-            "prune": {"type": "boolean"}
+            "op": {
+              "const": "remove"
+            },
+            "key": {
+              "$ref": "#/$defs/non_empty_string"
+            },
+            "prune": {
+              "type": "boolean"
+            }
           }
         }
       ]
@@ -70,9 +112,24 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "before": {"type": "array", "items": {"$ref": "#/$defs/parameter_operation"}},
-        "local": {"type": "array", "items": {"$ref": "#/$defs/parameter_operation"}},
-        "after": {"type": "array", "items": {"$ref": "#/$defs/parameter_operation"}}
+        "before": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/parameter_operation"
+          }
+        },
+        "local": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/parameter_operation"
+          }
+        },
+        "after": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/parameter_operation"
+          }
+        }
       },
       "minProperties": 1
     },
@@ -80,39 +137,68 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "set": {"type": "object"},
+        "set": {
+          "type": "object"
+        },
         "remove": {
           "oneOf": [
-            {"$ref": "#/$defs/non_empty_string"},
-            {"type": "array", "items": {"$ref": "#/$defs/parameter_remove_rule"}}
+            {
+              "$ref": "#/$defs/non_empty_string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/parameter_remove_rule"
+              }
+            }
           ]
         },
-        "local": {"type": "object"},
-        "operations": {"$ref": "#/$defs/parameter_operations"}
+        "local": {
+          "type": "object"
+        },
+        "operations": {
+          "$ref": "#/$defs/parameter_operations"
+        }
       },
       "minProperties": 1
     },
     "layout": {
       "oneOf": [
-        {"$ref": "#/$defs/registry_id"},
+        {
+          "$ref": "#/$defs/registry_id"
+        },
         {
           "type": "object",
-          "required": ["id"],
-          "properties": {"id": {"$ref": "#/$defs/registry_id"}},
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/registry_id"
+            }
+          },
           "additionalProperties": true
         }
       ]
     },
     "template": {
       "oneOf": [
-        {"$ref": "#/$defs/registry_id"},
+        {
+          "$ref": "#/$defs/registry_id"
+        },
         {
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "id": {"$ref": "#/$defs/registry_id"},
-            "layout": {"$ref": "#/$defs/layout"},
-            "parameters": {"$ref": "#/$defs/parameters"}
+            "id": {
+              "$ref": "#/$defs/registry_id"
+            },
+            "layout": {
+              "$ref": "#/$defs/layout"
+            },
+            "parameters": {
+              "$ref": "#/$defs/parameters"
+            }
           },
           "minProperties": 1
         }
@@ -121,26 +207,47 @@
     "reset_rule": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["key"],
+      "required": [
+        "key"
+      ],
       "properties": {
-        "key": {"$ref": "#/$defs/non_empty_string"},
-        "before": {"type": "boolean"},
-        "after": {"type": "boolean"},
-        "exclude_default_matches": {"type": "boolean"}
+        "key": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "before": {
+          "type": "boolean"
+        },
+        "after": {
+          "type": "boolean"
+        },
+        "exclude_default_matches": {
+          "type": "boolean"
+        }
       }
     },
     "reset": {
       "oneOf": [
-        {"$ref": "#/$defs/non_empty_string"},
-        {"type": "array", "items": {"$ref": "#/$defs/reset_rule"}}
+        {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reset_rule"
+          }
+        }
       ]
     },
     "local": {
       "type": "object",
       "properties": {
         "local": false,
-        "favorites": {"type": "boolean"},
-        "labels": {"$ref": "#/$defs/string_list"}
+        "favorites": {
+          "type": "boolean"
+        },
+        "labels": {
+          "$ref": "#/$defs/string_list"
+        }
       },
       "additionalProperties": true,
       "minProperties": 1
@@ -150,7 +257,9 @@
       "properties": {
         "local": false,
         "favorites": false,
-        "labels": {"$ref": "#/$defs/string_list"}
+        "labels": {
+          "$ref": "#/$defs/string_list"
+        }
       },
       "additionalProperties": true,
       "minProperties": 1
@@ -159,10 +268,22 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "schema": {"$ref": "#/$defs/schema_id"},
-        "disabled": {"type": "boolean"},
-        "default_locale": {"$ref": "#/$defs/locale_id"},
-        "locales": {"type": "array", "items": {"$ref": "#/$defs/locale_id"}, "uniqueItems": true}
+        "schema": {
+          "$ref": "#/$defs/schema_id"
+        },
+        "disabled": {
+          "type": "boolean"
+        },
+        "default_locale": {
+          "$ref": "#/$defs/locale_id"
+        },
+        "locales": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/locale_id"
+          },
+          "uniqueItems": true
+        }
       },
       "minProperties": 1
     },
@@ -170,13 +291,27 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "schema": {"$ref": "#/$defs/schema_id"},
-        "requirements": {"$ref": "#/$defs/requirements"},
-        "template": {"$ref": "#/$defs/template"},
-        "children": {"$ref": "#/$defs/children"},
-        "local": {"$ref": "#/$defs/child_local"},
-        "reset": {"$ref": "#/$defs/reset"},
-        "localization": {"$ref": "#/$defs/localization"}
+        "schema": {
+          "$ref": "#/$defs/schema_id"
+        },
+        "requirements": {
+          "$ref": "#/$defs/requirements"
+        },
+        "template": {
+          "$ref": "#/$defs/template"
+        },
+        "children": {
+          "$ref": "#/$defs/children"
+        },
+        "local": {
+          "$ref": "#/$defs/child_local"
+        },
+        "reset": {
+          "$ref": "#/$defs/reset"
+        },
+        "localization": {
+          "$ref": "#/$defs/localization"
+        }
       },
       "minProperties": 1
     },
@@ -184,19 +319,39 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "schema": {"$ref": "#/$defs/schema_id"},
-        "requirements": {"$ref": "#/$defs/requirements"},
-        "template": {"$ref": "#/$defs/template"},
-        "children": {"$ref": "#/$defs/children"},
-        "local": {"$ref": "#/$defs/local"},
-        "reset": {"$ref": "#/$defs/reset"},
-        "localization": {"$ref": "#/$defs/localization"}
+        "schema": {
+          "$ref": "#/$defs/schema_id"
+        },
+        "requirements": {
+          "$ref": "#/$defs/requirements"
+        },
+        "template": {
+          "$ref": "#/$defs/template"
+        },
+        "children": {
+          "$ref": "#/$defs/children"
+        },
+        "local": {
+          "$ref": "#/$defs/local"
+        },
+        "reset": {
+          "$ref": "#/$defs/reset"
+        },
+        "localization": {
+          "$ref": "#/$defs/localization"
+        }
       },
       "minProperties": 1
     }
   },
   "type": "object",
   "additionalProperties": false,
-  "required": ["node"],
-  "properties": {"node": {"$ref": "#/$defs/node"}}
+  "required": [
+    "node"
+  ],
+  "properties": {
+    "node": {
+      "$ref": "#/$defs/node"
+    }
+  }
 }

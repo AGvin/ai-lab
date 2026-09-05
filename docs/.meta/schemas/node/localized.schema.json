@@ -7,25 +7,39 @@
     "source_hash": {
       "type": "string",
       "oneOf": [
-        {"pattern": "^sha256:[0-9a-f]{64}$"},
-        {"pattern": "^gitblob:[0-9a-f]{40}$"}
+        {
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        {
+          "pattern": "^gitblob:[0-9a-f]{40}$"
+        }
       ]
     }
   },
   "type": "object",
   "additionalProperties": false,
-  "required": ["node"],
+  "required": [
+    "node"
+  ],
   "properties": {
     "node": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["localization"],
+      "required": [
+        "localization"
+      ],
       "properties": {
         "localization": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["source_hash"],
-          "properties": {"source_hash": {"$ref": "#/$defs/source_hash"}}
+          "required": [
+            "source_hash"
+          ],
+          "properties": {
+            "source_hash": {
+              "$ref": "#/$defs/source_hash"
+            }
+          }
         }
       }
     }
