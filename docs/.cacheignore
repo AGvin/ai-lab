@@ -1,0 +1,15 @@
+# Ignore everything by default.
+*
+
+# Keep directory traversal available.
+!*/
+
+# Fingerprint canonical metadata trees.
+!**/.meta/
+!**/.meta/**
+
+# Generated / non-cache-relevant metadata.
+**/.meta/cache.yml
+**/.meta/schemas/**
+**/.meta/requirements.md
+**/.meta/requirements/reference-locks/**

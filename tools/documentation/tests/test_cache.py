@@ -9,13 +9,48 @@ def load_cache(node: Path):
     return yaml.safe_load((node / ".meta" / "cache.yml").read_text(encoding="utf-8"))["cache"]
 
 
-def test_root_fingerprint_includes_defaults_aliases_and_schemas(cache_repo):
+def test_root_fingerprint_excludes_schemas_via_cacheignore(cache_repo):
     manager = CacheManager(Repository(cache_repo))
     fingerprints = manager.current_self_fingerprints(cache_repo / "docs")
     assert "defaults.yml" in fingerprints
     assert "aliases.yml" in fingerprints
-    assert "schemas/entity/default.schema.json" in fingerprints
+    assert not any(key.startswith("schemas/") for key in fingerprints)
     assert all(value.startswith("gitblob:") for value in fingerprints.values())
+
+
+def test_schema_content_change_does_not_change_fingerprints(cache_repo):
+    manager = CacheManager(Repository(cache_repo))
+    root = cache_repo / "docs"
+    before = manager.current_self_fingerprints(root)
+    schema = root / ".meta/schemas/entity/default.schema.json"
+    schema.write_text(schema.read_text(encoding="utf-8") + "\n", encoding="utf-8")
+    after = manager.current_self_fingerprints(root)
+    assert after == before
+
+
+def test_cacheignore_can_reinclude_ignored_schema(cache_repo):
+    manager = CacheManager(Repository(cache_repo))
+    root = cache_repo / "docs"
+    before = manager.current_self_fingerprints(root)
+    assert "schemas/entity/default.schema.json" not in before
+
+    policy = root / ".cacheignore"
+    policy.write_text(
+        policy.read_text(encoding="utf-8")
+        + "\n!**/.meta/schemas/entity/default.schema.json\n",
+        encoding="utf-8",
+    )
+    after = CacheManager(Repository(cache_repo)).current_self_fingerprints(root)
+    assert "schemas/entity/default.schema.json" in after
+
+
+def test_future_meta_file_is_fingerprinted_without_python_allowlist(cache_repo):
+    node = cache_repo / "docs/sub/catalog"
+    custom = node / ".meta/custom.yml"
+    custom.write_text("custom: true\n", encoding="utf-8")
+    manager = CacheManager(Repository(cache_repo))
+    fingerprints = manager.current_self_fingerprints(node)
+    assert "custom.yml" in fingerprints
 
 
 def test_regular_node_fingerprint_tracks_node_and_entity_only(cache_repo):
@@ -60,4 +95,124 @@ def test_alias_values_are_retained_but_relation_paths_are_expanded(cache_repo):
 def test_nested_children_baseline_propagates(cache_repo):
     CacheManager(Repository(cache_repo)).refresh(use_fingerprints=False)
     parent = load_cache(cache_repo / "docs/sub/catalog")
-    child = load_caci•}É•Á¼€¼€‰‘½Ì½ÍÕˆ½…Ñ…±½œ½ÍÕˆ½¥Ñ•´ˆ¤(€€€…ÍÍ•ÉĞÁ…É•¹Ñl‰ÍÑ…Ñ”‰ul‰¹½‘”‰ul‰¡¥±‘É•¸‰ul‰½ÕÑ½¥¹œ‰ul‰Ñ•µÁ±…Ñ”‰t€ôô€‰…Ñ…±½œ½¥Ñ•´ˆ(€€€…ÍÍ•ÉĞ¡¥±‘l‰ÍÑ…Ñ”‰ul‰¹½‘”‰ul‰•™™•Ñ¥Ù”‰ul‰Ñ•µÁ±…Ñ”‰t€ôô€‰…Ñ…±½œ½¥Ñ•´ˆ(€€€…ÍÍ•ÉĞ¡¥±‘l‰ÍÑ…Ñ”‰ul‰¹½‘”‰ul‰¡¥±‘É•¸‰ul‰½ÕÑ½¥¹œ‰ul‰Ñ•µÁ±…Ñ”‰t€ôô€‰…Ñ…±½œ½¥Ñ•´½‘•Ñ…¥°ˆ(()‘•˜Ñ•ÍÑ}¥¹É•µ•¹Ñ…±}Í•½¹‘}ÉÕ¹}Í­¥ÁÍ}™É•Í¡}¹½‘•Ì¡…¡•}É•Á¼¤è(€€€µ…¹…•È€ô…¡•5…¹…•È¡I•Á½Í¥Ñ½Éä¡…¡•}É•Á¼¤¤(€€€µ…¹…•È¹É•™É•Í ¡ÕÍ•}™¥¹•ÉÁÉ¥¹ÑÌõ…±Í”¤(€€€Í•½¹€ôµ…¹…•È¹É•™É•Í ¡ÕÍ•}™¥¹•ÉÁÉ¥¹ÑÌõQÉÕ”¤(€€€…ÍÍ•ÉĞÍ•½¹¹É•‰Õ¥±Ğ€ôô€À(€€€…ÍÍ•ÉĞÍ•½¹¹Õ¹¡…¹•€ôôÍ•½¹¹‘¥Í½Ù•É•(()‘•˜Ñ•ÍÑ}Á…É•¹Ñ}¡…¹•}É•‰Õ¥±‘Í}Á…É•¹Ñ}…¹‘}‘•Í•¹‘…¹Ğ¡…¡•}É•Á¼¤è(€€€µ…¹…•È€ô…¡•5…¹…•È¡I•Á½Í¥Ñ½Éä¡…¡•}É•Á¼¤¤(€€€µ…¹…•È¹É•™É•Í ¡ÕÍ•}™¥¹•ÉÁÉ¥¹ÑÌõ…±Í”¤(€€€Á…É•¹Ñ}µ•Ñ„€ô…¡•}É•Á¼€¼€‰‘½Ì½ÍÕˆ½…Ñ…±½œ¼¹µ•Ñ„½¹½‘”¹åµ°ˆ(€€€‘…Ñ„€ôå…µ°¹Í…™•}±½…¡Á…É•¹Ñ}µ•Ñ„¹É•…‘}Ñ•áĞ¡•¹½‘¥¹œô‰ÕÑ˜´àˆ¤¤(€€€‘…Ñ…l‰¹½‘”‰ul‰Ñ•µÁ±…Ñ”‰t€ô€‰…Ñ…±½œ½¡…¹•ˆ(€€€Á…É•¹Ñ}µ•Ñ„¹İÉ¥Ñ•}Ñ•áĞ¡å…µ°¹Í…™•}‘ÕµÀ¡‘…Ñ„°Í½ÉÑ}­•åÌõ…±Í”¤°•¹½‘¥¹œô‰ÕÑ˜´àˆ¤(€€€Í•½¹€ôµ…¹…•È¹É•™É•Í ¡ÕÍ•}™¥¹•ÉÁÉ¥¹ÑÌõQÉÕ”¤(€€€€ŒI½½ĞÉ•µ…¥¹Ì™É•Í ì¡…¹•…Ñ…±½œÁ±ÕÌ‰½Ñ ‘¥Í½Ù•É•‘•Í•¹‘…¹ÑÌÉ•‰Õ¥±¸(€€€…ÍÍ•ÉĞÍ•½¹¹É•‰Õ¥±Ğ€ôô€Ì(()‘•˜Ñ•ÍÑ}™½É•‘}™Õ±±}É•‰Õ¥±‘}ÁÉ½•ÍÍ•Í}•Ù•Éå}¹½‘”¡…¡•}É•Á¼¤è(€€€µ…¹…•È€ô…¡•5…¹…•È¡I•Á½Í¥Ñ½Éä¡…¡•}É•Á¼¤¤(€€€™¥ÉÍĞ€ôµ…¹…•È¹É•™É•Í ¡ÕÍ•}™¥¹•ÉÁÉ¥¹ÑÌõ…±Í”¤(€€€Í•½¹€ôµ…¹…•È¹É•™É•Í ¡ÕÍ•}™¥¹•ÉÁÉ¥¹ÑÌõ…±Í”¤(€€€…ÍÍ•ÉĞÍ•½¹¹É•‰Õ¥±Ğ€ôô™¥ÉÍĞ¹‘¥Í½Ù•É•(€€€…ÍÍ•ÉĞÍ•½¹¹Õ¹¡…¹•€ôô€À(()‘•˜Ñ•ÍÑ}É•Á½Í¥Ñ½Éå}…¡•}Í¡•µ…}¡…Í}…¹½¹¥…±}¥‘•¹Ñ¥Ñä ¤è(€€€¥µÁ½ÉĞ©Í½¸(€€€Í¡•µ…}Á…Ñ €ôA…Ñ ¡}}™¥±•}|¤¹Á…É•¹ÑÍlÍt€¼€‰‘½Ì¼¹µ•Ñ„½Í¡•µ…Ì½…¡”½‘•™…Õ±Ğ¹Í¡•µ„¹©Í½¸ˆ(€€€Í¡•µ„€ô©Í½¸¹±½…‘Ì¡Í¡•µ…}Á…Ñ ¹É•…‘}Ñ•áĞ¡•¹½‘¥¹œô‰ÕÑ˜´àˆ¤¤(€€€…ÍÍ•ÉĞÍ¡•µ…lˆ‘Í¡•µ„‰t€ôô€‰¡ÑÑÁÌè¼½©Í½¸µÍ¡•µ„¹½Éœ½‘É…™Ğ¼ÈÀÈÀ´ÄÈ½Í¡•µ„ˆ(€€€…ÍÍ•ÉĞÍ¡•µ…lˆ‘¥‰t€ôô€‰É•Á¼è¼é…¡”é‘•™…Õ±Ğˆ(€€€…ÍÍ•ÉĞÍ¡•µ…l‰É•ÅÕ¥É•‰t€ôôl‰…¡”‰t(()‘•˜…¡•}Ù…±¥‘…Ñ”¡É•Á¼¤è(€€€™É½´Ñ½½±Ì¹‘½Õµ•¹Ñ…Ñ¥½¸¹µ•Ñ…‘…Ñ…}Ñ½½±¥¹œ¹…¡•}Ù…±¥‘…Ñ¥½¸¥µÁ½ÉĞ…¡•Y…±¥‘…Ñ½È(€€€É•ÑÕÉ¸…¡•Y…±¥‘…Ñ½È¡I•Á½Í¥Ñ½Éä¡É•Á¼¤¤¹Ù…±¥‘…Ñ” ¤(()‘•˜Ñ•ÍÑ}…¡•}Ù…±¥‘…Ñ¥½¹}…•ÁÑÍ}™É•Í¡}•¹•É…Ñ•‘}…¡”¡Ù…±¥‘…Ñ¥½¹}É•Á¼¤è(€€€É•ÍÕ±Ğ€ô…¡•}Ù…±¥‘…Ñ”¡Ù…±¥‘…Ñ¥½¹}É•Á¼¤(€€€…ÍÍ•ÉĞÉ•ÍÕ±Ğ¹•ÉÉ½ÉÌ€ôômt(€€€…ÍÍ•ÉĞÉ•ÍÕ±Ğ¹¡•­•€ôôÉ•ÍÕ±Ğ¹•áÁ•Ñ•(()‘•˜Ñ•ÍÑ}…¡•}Ù…±¥‘…Ñ¥½¹}É•©•ÑÍ}µ¥ÍÍ¥¹}…¡”¡Ù…±¥‘…Ñ¥½¹}É•Á¼¤è(€€€€¡Ù…±¥‘…Ñ¥½¹}É•Á¼€¼€‰‘½Ì¼¹µ•Ñ„½…¡”¹åµ°ˆ¤¹Õ¹±¥¹¬ ¤(€€€É•ÍÕ±Ğ€ô…¡•}Ù…±¥‘…Ñ”¡Ù…±¥‘…Ñ¥½¹}É•Á¼¤(€€€…ÍÍ•ÉĞ…¹ä ‰µ¥ÍÍ¥¹œ…¡”ˆ¥¸•ÉÉ½È™½È•ÉÉ½È¥¸É•ÍÕ±Ğ¹•ÉÉ½ÉÌ¤(()‘•˜Ñ•ÍÑ}…¡•}Ù…±¥‘…Ñ¥½¹}É•©•ÑÍ}µ…±™½Éµ•‘}…¡”¡Ù…±¥‘…Ñ¥½¹}É•Á¼¤è(€€€€¡Ù…±¥‘…Ñ¥½¹}É•Á¼€¼€‰‘½Ì¼¹µ•Ñ„½…¡”¹åµ°ˆ¤¹İÉ¥Ñ•}Ñ•áĞ ‰…¡”èmq¸ˆ°•¹½‘¥¹œô‰ÕÑ˜´àˆ¤(€€€É•ÍÕ±Ğ€ô…¡•}Ù…±¥‘…Ñ”¡Ù…±¥‘…Ñ¥½¹}É•Á¼¤(€€€…ÍÍ•ÉĞ…¹ä ‰µ…±™½Éµ•…¡”ˆ¥¸•ÉÉ½È™½È•ÉÉ½È¥¸É•ÍÕ±Ğ¹•ÉÉ½ÉÌ¤(()‘•˜Ñ•ÍÑ}…¡•}Ù…±¥‘…Ñ¥½¹}É•©•ÑÍ}ÍÑ…±•}Í•±™}™¥¹•ÉÁÉ¥¹Ğ¡Ù…±¥‘…Ñ¥½¹}É•Á¼¤è(€€€‘•™…Õ±ÑÌ€ôÙ…±¥‘…Ñ¥½¹}É•Á¼€¼€‰‘½Ì¼¹µ•Ñ„½‘•™…Õ±ÑÌ¹åµ°ˆ(€€€‘•™…Õ±ÑÌ¹İÉ¥Ñ•}Ñ•áĞ¡‘•™…Õ±ÑÌ¹É•…‘}Ñ•áĞ¡•¹½‘¥¹œô‰ÕÑ˜´àˆ¤€¬€‰q¸ˆ°•¹½‘¥¹œô‰ÕÑ˜´àˆ¤(€€€É•ÍÕ±Ğ€ô…¡•}Ù…±¥‘…Ñ”¡Ù…±¥‘…Ñ¥½¹}É•Á¼¤(€€€…ÍÍ•ÉĞ…¹ä ‰ÍÑ…±”Í•±˜™¥¹•ÉÁÉ¥¹ÑÌˆ¥¸•ÉÉ½È™½È•ÉÉ½È¥¸É•ÍÕ±Ğ¹•ÉÉ½ÉÌ¤(()‘•˜Ñ•ÍÑ}…¡•}Ù…±¥‘…Ñ¥½¹}É•©•ÑÍ}ÍÑ…±•}Á…É•¹Ñ}Í¹…ÁÍ¡½Ğ¡…¡•}É•Á¼¤è(€€€µ…¹…•È€ô…¡•5…¹…•È¡I•Á½Í¥Ñ½Éä¡…¡•}É•Á¼¤¤(€€€µ…¹…•È¹É•™É•Í ¡ÕÍ•}™¥¹•ÉÁÉ¥¹ÑÌõ…±Í”¤(€€€¡¥±‘}Á…Ñ €ô…¡•}É•Á¼€¼€‰‘½Ì½ÍÕˆ½…Ñ…±½œ½ÍÕˆ½¥Ñ•´¼¹µ•Ñ„½…¡”¹åµ°ˆ(€€€‘…Ñ„€ôå…µ°¹Í…™•}±½…¡¡¥±‘}Á…Ñ ¹É•…‘}Ñ•áĞ¡•¹½‘¥¹œô‰ÕÑ˜´àˆ¤¤(€€€‘…Ñ…l‰…¡”‰ul‰™¥¹•ÉÁÉ¥¹ÑÌ‰ul‰Á…É•¹Ğ‰t€ôì‰¹½‘”¹åµ°ˆè€‰¥Ñ‰±½ˆèˆ€¬€ˆÀˆ€¨€ĞÁô(€€€¡¥±‘}Á…Ñ ¹İÉ¥Ñ•}Ñ•áĞ¡å…µ°¹Í…™•}‘ÕµÀ¡‘…Ñ„°Í½ÉÑ}­•åÌõ…±Í”¤°•¹½‘¥¹œô‰ÕÑ˜´àˆ¤(€€€É•ÍÕ±Ğ€ô…¡•}Ù…±¥‘…Ñ”¡…¡•}É•Á¼¤(€€€…ÍÍ•ÉĞ…¹ä ‰ÍÑ…±”Á…É•¹Ğ™¥¹•ÉÁÉ¥¹ÑÌˆ¥¸•ÉÉ½È™½È•ÉÉ½È¥¸É•ÍÕ±Ğ¹•ÉÉ½ÉÌ¤(()‘•˜Ñ•ÍÑ}…¡•}Ù…±¥‘…Ñ¥½¹}É•©•ÑÍ}Í¡•µ…}É•¥ÍÑÉå}µ¥Íµ…Ñ ¡Ù…±¥‘…Ñ¥½¹}É•Á¼¤è(€€€…¡•}Á…Ñ €ôÙ…±¥‘…Ñ¥½¹}É•Á¼€¼€‰‘½Ì¼¹µ•Ñ„½…¡”¹åµ°ˆ(€€€‘…Ñ„€ôå…µ°¹Í…™•}±½…¡…¡•}Á…Ñ ¹É•…‘}Ñ•áĞ¡•¹½‘¥¹œô‰ÕÑ˜´àˆ¤¤(€€€‘…Ñ…l‰…¡”‰ul‰ÍÑ…Ñ”‰ul‰Í¡•µ…Ì‰ul‰É•¥ÍÑÉä‰t€ôíô(€€€…¡•}Á…Ñ ¹İÉ¥Ñ•}Ñ•áĞ¡å…µ°¹Í…™•}‘ÕµÀ¡‘…Ñ„°Í½ÉÑ}­•åÌõ…±Í”¤°•¹½‘¥¹œô‰ÕÑ˜´àˆ¤(€€€É•ÍÕ±Ğ€ô…¡•}Ù…±¥‘…Ñ”¡Ù…±¥‘…Ñ¥½¹}É•Á¼¤(€€€…ÍÍ•ÉĞ…¹ä ‰Í¡•µ„É•¥ÍÑÉäµ¥Íµ…Ñ ˆ¥¸•ÉÉ½È™½È•ÉÉ½È¥¸É•ÍÕ±Ğ¹•ÉÉ½ÉÌ¤(()‘•˜Ñ•ÍÑ}…¡•}Ù…±¥‘…Ñ¥½¹}É•©•ÑÍ}…±¥…Í}ÍÑ…Ñ•}µ¥Íµ…Ñ ¡…¡•}É•Á¼¤è(€€€…¡•5…¹…•È¡I•Á½Í¥Ñ½Éä¡…¡•}É•Á¼¤¤¹É•™É•Í ¡ÕÍ•}™¥¹•ÉÁÉ¥¹ÑÌõ…±Í”¤(€€€…¡•}Á…Ñ €ô…¡•}É•Á¼€¼€‰‘½Ì¼¹µ•Ñ„½…¡”¹åµ°ˆ(€€€‘…Ñ„€ôå…µ°¹Í…™•}±½…¡…¡•}Á…Ñ ¹É•…‘}Ñ•áĞ¡•¹½‘¥¹œô‰ÕÑ˜´àˆ¤¤(€€€‘…Ñ…l‰…¡”‰ul‰ÍÑ…Ñ”‰ul‰…±¥…Í•Ì‰ul‰•™™•Ñ¥Ù”‰t€ôíô(€€€…¡•}Á…Ñ ¹İÉ¥Ñ•}Ñ•áĞ¡å…µ°¹Í…™•}‘ÕµÀ¡‘…Ñ„°Í½ÉÑ}­•åÌõ…±Í”¤°•¹½‘¥¹œô‰ÕÑ˜´àˆ¤(€€€É•ÍÕ±Ğ€ô…¡•}Ù…±¥‘…Ñ”¡…¡•}É•Á¼¤(€€€…ÍÍ•ÉĞ…¹ä ‰…±¥…ÌÍÑ…Ñ”µ¥Íµ…Ñ ˆ¥¸•ÉÉ½È™½È•ÉÉ½È¥¸É•ÍÕ±Ğ¹•ÉÉ½ÉÌ¤(()‘•˜Ñ•ÍÑ}…¡•}Ù…±¥‘…Ñ¥½¹}É•©•ÑÍ}™½É‰¥‘‘•¹}¹½‘•}½¹ÑÉ½±Ì¡Ù…±¥‘…Ñ¥½¹}É•Á¼¤è(€€€…¡•}Á…Ñ €ôÙ…±¥‘…Ñ¥½¹}É•Á¼€¼€‰‘½Ì¼¹µ•Ñ„½…¡”¹åµ°ˆ(€€€‘…Ñ„€ôå…µ°¹Í…™•}±½…¡…¡•}Á…Ñ ¹É•…‘}Ñ•áĞ¡•¹½‘¥¹œô‰ÕÑ˜´àˆ¤¤(€€€‘…Ñ…l‰…¡”‰ul‰ÍÑ…Ñ”‰ul‰¹½‘”‰ul‰•™™•Ñ¥Ù”‰ul‰¹½Ñ¥™ä‰t€ômt(€€€…¡•}Á…Ñ ¹İÉ¥Ñ•}Ñ•áĞ¡å…µ°¹Í…™•}‘ÕµÀ¡‘…Ñ„°Í½ÉÑ}­•åÌõ…±Í”¤°•¹½‘¥¹œô‰ÕÑ˜´àˆ¤(€€€É•ÍÕ±Ğ€ô…¡•}Ù…±¥‘…Ñ”¡Ù…±¥‘…Ñ¥½¹}É•Á¼¤(€€€…ÍÍ•ÉĞ…¹ä ‰™½É‰¥‘‘•¸…¡•¹½‘”½¹ÑÉ½°ˆ¥¸•ÉÉ½È™½È•ÉÉ½È¥¸É•ÍÕ±Ğ¹•ÉÉ½ÉÌ¤(()‘•˜Ñ•ÍÑ}…¡•}Ù…±¥‘…Ñ¥½¹}É•©•ÑÍ}Õ¹É•Í½±Ù•‘}­¹½İ¹}Á…Ñ¡}…±¥…Ì¡…¡•}É•Á¼¤è(€€€…¡•5…¹…•È¡I•Á½Í¥Ñ½Éä¡…¡•}É•Á¼¤¤¹É•™É•Í ¡ÕÍ•}™¥¹•ÉÁÉ¥¹ÑÌõ…±Í”¤(€€€¡¥±€ô…¡•}É•Á¼€¼€‰‘½Ì½ÍÕˆ½…Ñ…±½œ½ÍÕˆ½¥Ñ•´¼¹µ•Ñ„½…¡”¹åµ°ˆ(€€€‘…Ñ„€ôå…µ°¹Í…™•}±½…¡¡¥±¹É•…‘}Ñ•áĞ¡•¹½‘¥¹œô‰ÕÑ˜´àˆ¤¤(€€€É•±…Ñ¥½¸€ô‘…Ñ…l‰…¡”‰ul‰ÍÑ…Ñ”‰ul‰•¹Ñ¥Ñä‰ul‰•™™•Ñ¥Ù”‰ul‰É•±…Ñ¥½¹Ì‰ulÁt(€€€É•±…Ñ¥½¹l‰Ñ…É•Ğ‰ul‰Á…Ñ ‰t€ô€‰ÁÉ½‘Õ•ÉÌé½Á•¹…¤ˆ(€€€¡¥±¹İÉ¥Ñ•}Ñ•áĞ¡å…µ°¹Í…™•}‘ÕµÀ¡‘…Ñ„°Í½ÉÑ}­•åÌõ…±Í¤°•¹½‘¥¹œô‰ÕÑ˜´àˆ¤(€€€É•ÍÕ±Ğ€ô…¡•}Ù…±¥‘…Ñ”¡…¡•}É•Á¼¤(€€€…ÍÍ•ÉĞ…¹ä ‰Õ¹É•Í½±Ù•Á…Ñ …±¥…Ìˆ¥¸•ÉÉ½È™½È•ÉÉ½È¥¸É•ÍÕ±Ğ¹•ÉÉ½ÉÌ¤
+    child = load_cache(cache_repo / "docs/sub/catalog/sub/item")
+    assert parent["state"]["node"]["children"]["outgoing"]["template"] == "catalog/item"
+    assert child["state"]["node"]["effective"]["template"] == "catalog/item"
+    assert child["state"]["node"]["children"]["outgoing"]["template"] == "catalog/item/detail"
+
+
+def test_incremental_second_run_skips_fresh_nodes(cache_repo):
+    manager = CacheManager(Repository(cache_repo))
+    manager.refresh(use_fingerprints=False)
+    second = manager.refresh(use_fingerprints=True)
+    assert second.rebuilt == 0
+    assert second.unchanged == second.discovered
+
+
+def test_parent_change_rebuilds_parent_and_descendant(cache_repo):
+    manager = CacheManager(Repository(cache_repo))
+    manager.refresh(use_fingerprints=False)
+    parent_meta = cache_repo / "docs/sub/catalog/.meta/node.yml"
+    data = yaml.safe_load(parent_meta.read_text(encoding="utf-8"))
+    data["node"]["template"] = "catalog/changed"
+    parent_meta.write_text(yaml.safe_dump(data, sort_keys=False), encoding="utf-8")
+    second = manager.refresh(use_fingerprints=True)
+    # Root remains fresh; changed catalog plus both discovered descendants rebuild.
+    assert second.rebuilt == 3
+
+
+def test_forced_full_rebuild_processes_every_node(cache_repo):
+    manager = CacheManager(Repository(cache_repo))
+    first = manager.refresh(use_fingerprints=False)
+    second = manager.refresh(use_fingerprints=False)
+    assert second.rebuilt == first.discovered
+    assert second.unchanged == 0
+
+
+def test_repository_cache_schema_has_canonical_identity():
+    import json
+    schema_path = Path(__file__).parents[3] / "docs/.meta/schemas/cache/default.schema.json"
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    assert schema["$schema"] == "https://json-schema.org/draft/2020-12/schema"
+    assert schema["$id"] == "repo:/:cache:default"
+    assert schema["required"] == ["cache"]
+
+
+def cache_validate(repo):
+    from tools.documentation.metadata_tooling.cache_validation import CacheValidator
+    return CacheValidator(Repository(repo)).validate()
+
+
+def test_cache_validation_accepts_fresh_generated_cache(validation_repo):
+    result = cache_validate(validation_repo)
+    assert result.errors == []
+    assert result.checked == result.expected
+
+
+def test_cache_validation_rejects_missing_cache(validation_repo):
+    (validation_repo / "docs/.meta/cache.yml").unlink()
+    result = cache_validate(validation_repo)
+    assert any("missing cache" in error for error in result.errors)
+
+
+def test_cache_validation_rejects_malformed_cache(validation_repo):
+    (validation_repo / "docs/.meta/cache.yml").write_text("cache: [\n", encoding="utf-8")
+    result = cache_validate(validation_repo)
+    assert any("malformed cache" in error for error in result.errors)
+
+
+def test_cache_validation_rejects_stale_self_fingerprint(validation_repo):
+    defaults = validation_repo / "docs/.meta/defaults.yml"
+    defaults.write_text(defaults.read_text(encoding="utf-8") + "\n", encoding="utf-8")
+    result = cache_validate(validation_repo)
+    assert any("stale self fingerprints" in error for error in result.errors)
+
+
+def test_cache_validation_rejects_stale_parent_snapshot(cache_repo):
+    manager = CacheManager(Repository(cache_repo))
+    manager.refresh(use_fingerprints=False)
+    child_path = cache_repo / "docs/sub/catalog/sub/item/.meta/cache.yml"
+    data = yaml.safe_load(child_path.read_text(encoding="utf-8"))
+    data["cache"]["fingerprints"]["parent"] = {"node.yml": "gitblob:" + "0" * 40}
+    child_path.write_text(yaml.safe_dump(data, sort_keys=False), encoding="utf-8")
+    result = cache_validate(cache_repo)
+    assert any("stale parent fingerprints" in error for error in result.errors)
+
+
+def test_cache_validation_rejects_schema_registry_mismatch(validation_repo):
+    cache_path = validation_repo / "docs/.meta/cache.yml"
+    data = yaml.safe_load(cache_path.read_text(encoding="utf-8"))
+    data["cache"]["state"]["schemas"]["registry"] = {}
+    cache_path.write_text(yaml.safe_dump(data, sort_keys=False), encoding="utf-8")
+    result = cache_validate(validation_repo)
+    assert any("schema registry mismatch" in error for error in result.errors)
+
+
+def test_cache_validation_rejects_alias_state_mismatch(cache_repo):
+    CacheManager(Repository(cache_repo)).refresh(use_fingerprints=False)
+    cache_path = cache_repo / "docs/.meta/cache.yml"
+    data = yaml.safe_load(cache_path.read_text(encoding="utf-8"))
+    data["cache"]["state"]["aliases"]["effective"] = {}
+    cache_path.write_text(yaml.safe_dump(data, sort_keys=False), encoding="utf-8")
+    result = cache_validate(cache_repo)
+    assert any("alias state mismatch" in error for error in result.errors)
+
+
+def test_cache_validation_rejects_forbidden_node_controls(validation_repo):
+    cache_path = validation_repo / "docs/.meta/cache.yml"
+    data = yaml.safe_load(cache_path.read_text(encoding="utf-8"))
+    data["cache"]["state"]["node"]["effective"]["notify"] = []
+    cache_path.write_text(yaml.safe_dump(data, sort_keys=False), encoding="utf-8")
+    result = cache_validate(validation_repo)
+    assert any("forbidden cached node control" in error for error in result.errors)
+
+
+def test_cache_validation_rejects_unresolved_known_path_alias(cache_repo):
+    CacheManager(Repository(cache_repo)).refresh(use_fingerprints=False)
+    child = cache_repo / "docs/sub/catalog/sub/item/.meta/cache.yml"
+    data = yaml.safe_load(child.read_text(encoding="utf-8"))
+    relation = data["cache"]["state"]["entity"]["effective"]["relations"][0]
+    relation["target"]["path"] = "producers:openai"
+    child.write_text(yaml.safe_dump(data, sort_keys=False), encoding="utf-8")
+    result = cache_validate(cache_repo)
+    assert any("unresolved path alias" in error for error in result.errors)

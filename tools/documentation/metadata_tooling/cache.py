@@ -9,6 +9,7 @@ from typing import Any
 
 import yaml
 
+from .cache_fingerprints import CacheFingerprintPolicy
 from .common import Repository, ToolingError
 
 
@@ -27,6 +28,7 @@ class CacheSummary:
 class CacheManager:
     def __init__(self, repo: Repository):
         self.repo = repo
+        self.fingerprint_policy = CacheFingerprintPolicy(repo)
 
     def _git_blob(self, path: Path) -> str:
         try:
@@ -45,22 +47,16 @@ class CacheManager:
     def current_self_fingerprints(self, node: Path) -> dict[str, str]:
         node = Path(node).resolve()
         meta = node / ".meta"
-        paths: list[Path] = []
-        for name in ("node.yml", "entity.yml"):
-            candidate = meta / name
-            if candidate.is_file():
-                paths.append(candidate)
-        if node == self.repo.docs_root.resolve():
-            for name in ("defaults.yml", "aliases.yml"):
-                candidate = meta / name
-                if candidate.is_file():
-                    paths.append(candidate)
-            schemas = meta / "schemas"
-            if schemas.is_dir():
-                paths.extend(sorted(schemas.rglob("*.schema.json")))
         fingerprints: dict[str, str] = {}
-        for path in sorted(paths):
-            key = path.relative_to(meta).as_posix()
+        for path in self.fingerprint_policy.files_for_node(node):
+            try:
+                key = path.relative_to(meta).as_posix()
+            except ValueError:
+                key = path.relative_to(node).as_posix()
+            if key in fingerprints:
+                raise ToolingError(
+                    f"duplicate cache fingerprint key at {self.repo.repo_path(node)}: {key}"
+                )
             fingerprints[key] = self._git_blob(path)
         return fingerprints
 
@@ -264,6 +260,7 @@ class CacheManager:
         return result
 
     def refresh(self, use_fingerprints: bool = True) -> CacheSummary:
+        self.fingerprint_policy = CacheFingerprintPolicy(self.repo)
         nodes = self.repo.discover_nodes()
         parents = self._parent_map(nodes)
         defaults = self._load_defaults()
