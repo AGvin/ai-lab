@@ -88,6 +88,32 @@ class Repository:
             by_type[schema_id] = self.repo_path(path)
         return registry
 
+    def discover_nodes(self) -> list[Path]:
+        """Return canonical default-locale documentation nodes in root-to-leaf order."""
+        nodes = {self.docs_root.resolve()}
+        if not self.docs_root.exists():
+            return []
+        for path in self.docs_root.rglob("*"):
+            if not path.is_dir():
+                continue
+            rel_parts = path.relative_to(self.docs_root).parts
+            if any(part == "l10n" or part.startswith(".") for part in rel_parts):
+                continue
+            meta = path / ".meta"
+            if (
+                (path / "README.md").is_file()
+                or (meta / "node.yml").is_file()
+                or (meta / "entity.yml").is_file()
+            ):
+                nodes.add(path.resolve())
+        return sorted(
+            nodes,
+            key=lambda item: (
+                len(item.relative_to(self.docs_root).parts),
+                item.as_posix(),
+            ),
+        )
+
     def load_aliases(self) -> dict[str, Any]:
         path = self.meta_root / "aliases.yml"
         if not path.exists():
