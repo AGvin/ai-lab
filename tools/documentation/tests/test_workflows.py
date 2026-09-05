@@ -62,3 +62,43 @@ def test_cache_workflow_invokes_cli_and_stable_cache_branch():
     assert 'CACHE_BRANCH="cache/${SOURCE_BRANCH}"' in text
     assert '[[ "$SOURCE_BRANCH" == cache/* ]]' in text
     assert "**/.meta/cache.yml" in text
+
+
+VALIDATE_WORKFLOW = ROOT / ".github/workflows/documentation-validate.yml"
+
+
+def test_validation_workflow_is_manual_only():
+    workflow = load_workflow(VALIDATE_WORKFLOW)
+    assert set(workflow["on"]) == {"workflow_dispatch"}
+
+
+def test_validation_workflow_inputs_default_enabled():
+    workflow = load_workflow(VALIDATE_WORKFLOW)
+    inputs = workflow["on"]["workflow_dispatch"]["inputs"]
+    assert inputs["source_branch"]["required"] == "true"
+    assert inputs["source_branch"]["type"] == "string"
+    for name in ("validate_schemas", "validate_relations", "validate_cache"):
+        assert inputs[name]["type"] == "boolean"
+        assert inputs[_name]["required"] == "true"
+        assert inputs[_name]["default"] == "true"
+
+
+def test_validation_workflow_is_read_only():
+    workflow = load_workflow(VALIDATE_WORKFLOW)
+    assert workflow["permissions"] == {"contents": "read"}
+
+
+def test_validation_workflow_passes_each_switch_independently():
+    text = VALIDATE_WORKFLOW.read_text(encoding="utf-8")
+    assert "tools.documentation.metadata_tooling.cli validate" in text
+    assert '--validate-schemas "${{ inputs.validate_schemas }}"' in text
+    assert '--validate-relations "${{ inputs.validate_relations }}"' in text
+    assert '--validate-cache "${{ inputs.validate_cache }}"' in text
+
+
+def test_validation_workflow_has_no_write_or_pr_commands():
+    text = VALIDATE_WORKFLOW.read_text(encoding="utf-8")
+    assert "contents: write" not in text
+    assert "pull-requests: write" not in text
+    assert "gh pr" not in text
+    assert "git push" not in text

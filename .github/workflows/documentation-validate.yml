@@ -1,0 +1,59 @@
+name: Documentation Validate
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_branch:
+        description: Source branch to validate
+        required: true
+        type: string
+      validate_schemas:
+        description: Validate canonical metadata against selected schemas
+        required: true
+        default: true
+        type: boolean
+      validate_relations:
+        description: Validate relation targets and inverse pairs
+        required: true
+        default: true
+        type: boolean
+      validate_cache:
+        description: Validate committed documentation cache state
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: documentation-validate-${{ inputs.source_branch }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out source branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_branch }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install metadata tooling
+        run: python -m pip install -r tools/documentation/requirements.txt
+
+      - name: Validate documentation metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m tools.documentation.metadata_tooling.cli validate \
+            --validate-schemas "${{ inputs.validate_schemas }}" \
+            --validate-relations "${{ inputs.validate_relations }}" \
+            --validate-cache "${{ inputs.validate_cache }}"
