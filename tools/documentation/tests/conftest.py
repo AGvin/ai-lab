@@ -23,22 +23,22 @@ def init_git(path: Path):
 def repo(tmp_path):
     init_git(tmp_path)
     docs = tmp_path / "docs"
-    (docs / ".cacheignore").parent.mkdir(parents=True, exist_ok=True)
-    (docs / ".cacheignore").write_text(
-        "# Ignore everything by default.\n"
-        "*\n\n"
-        "# Keep directory traversal available.\n"
+    root_policy = (
+        "# Ignore files by default while allowing directory traversal.\n"
+        "*\n"
         "!*/\n\n"
-        "# Fingerprint canonical metadata trees.\n"
-        "!**/.meta/\n"
-        "!**/.meta/**\n\n"
+        "# Fingerprint canonical documentation metadata.\n"
+        "!docs/**/.meta/\n"
+        "!docs/**/.meta/**\n\n"
         "# Generated / non-cache-relevant metadata.\n"
-        "**/.meta/cache.yml\n"
-        "**/.meta/schemas/**\n"
-        "**/.meta/requirements.md\n"
-        "**/.meta/requirements/reference-locks/**\n",
-        encoding="utf-8",
+        "docs/**/.meta/cache.yml\n"
+        "/docs/.meta/schemas/**\n"
+        "/docs/.meta/templates/**\n"
+        "docs/**/.meta/requirements.md\n"
+        "docs/**/.meta/requirements/reference-locks/**\n"
     )
+    (tmp_path / ".cacheignore").write_text(root_policy, encoding="utf-8")
+
     (docs / ".meta" / "schemas" / "entity").mkdir(parents=True)
     (docs / ".meta" / "schemas" / "node").mkdir(parents=True)
     write_json(docs / ".meta" / "schemas" / "entity" / "default.schema.json", {
@@ -56,6 +56,9 @@ def repo(tmp_path):
         "$id": "repo:/:node:default",
         "type": "object"
     })
+    template = docs / ".meta" / "templates" / "pages" / "example.md"
+    template.parent.mkdir(parents=True, exist_ok=True)
+    template.write_text("template v1\n", encoding="utf-8")
     return tmp_path
 
 

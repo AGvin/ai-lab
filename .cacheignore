@@ -1,0 +1,14 @@
+# Ignore files by default while allowing directory traversal.
+*
+!*/
+
+# Fingerprint canonical documentation metadata.
+!docs/**/.meta/
+!docs/**/.meta/**
+
+# Generated / non-cache-relevant metadata.
+docs/**/.meta/cache.yml
+/docs/.meta/schemas/**
+/docs/.meta/templates/**
+docs/**/.meta/requirements.md
+docs/**/.meta/requirements/reference-locks/**

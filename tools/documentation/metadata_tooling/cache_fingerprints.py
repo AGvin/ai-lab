@@ -8,11 +8,11 @@ from .common import Repository, ToolingError
 
 
 class CacheFingerprintPolicy:
-    """Resolve cache fingerprint inputs from docs/.cacheignore."""
+    """Resolve cache fingerprint inputs from repository-root .cacheignore."""
 
     def __init__(self, repo: Repository):
         self.repo = repo
-        self.policy_path = self.repo.docs_root / ".cacheignore"
+        self.policy_path = self.repo.root / ".cacheignore"
         self._spec = self._load_spec()
         self._files_by_node = self._index_files()
 
@@ -50,7 +50,7 @@ class CacheFingerprintPolicy:
         for path in sorted(self.repo.docs_root.rglob("*")):
             if not path.is_file() or path.resolve() == policy:
                 continue
-            relative = path.relative_to(self.repo.docs_root).as_posix()
+            relative = path.relative_to(self.repo.root).as_posix()
             if self._spec.match_file(relative):
                 continue
             owner = self._owner_for(path, node_set)

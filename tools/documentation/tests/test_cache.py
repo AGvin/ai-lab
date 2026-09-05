@@ -9,6 +9,23 @@ def load_cache(node: Path):
     return yaml.safe_load((node / ".meta" / "cache.yml").read_text(encoding="utf-8"))["cache"]
 
 
+def test_cacheignore_policy_is_loaded_from_repository_root(cache_repo):
+    manager = CacheManager(Repository(cache_repo))
+    assert manager.fingerprint_policy.policy_path == cache_repo / ".cacheignore"
+
+
+def test_root_templates_are_excluded_and_content_changes_do_not_change_fingerprints(cache_repo):
+    manager = CacheManager(Repository(cache_repo))
+    root = cache_repo / "docs"
+    before = manager.current_self_fingerprints(root)
+    assert not any(key.startswith("templates/") for key in before)
+
+    template = root / ".meta/templates/pages/example.md"
+    template.write_text("template v2\n", encoding="utf-8")
+    after = CacheManager(Repository(cache_repo)).current_self_fingerprints(root)
+    assert after == before
+
+
 def test_root_fingerprint_excludes_schemas_via_cacheignore(cache_repo):
     manager = CacheManager(Repository(cache_repo))
     fingerprints = manager.current_self_fingerprints(cache_repo / "docs")
@@ -34,7 +51,7 @@ def test_cacheignore_can_reinclude_ignored_schema(cache_repo):
     before = manager.current_self_fingerprints(root)
     assert "schemas/entity/default.schema.json" not in before
 
-    policy = root / ".cacheignore"
+    policy = cache_repo / ".cacheignore"
     policy.write_text(
         policy.read_text(encoding="utf-8")
         + "\n!**/.meta/schemas/entity/default.schema.json\n",
