@@ -19,7 +19,6 @@ def test_root_templates_are_excluded_and_content_changes_do_not_change_fingerpri
     root = cache_repo / "docs"
     before = manager.current_self_fingerprints(root)
     assert not any(key.startswith("templates/") for key in before)
-
     template = root / ".meta/templates/pages/example.md"
     template.write_text("template v2\n", encoding="utf-8")
     after = CacheManager(Repository(cache_repo)).current_self_fingerprints(root)
@@ -50,13 +49,8 @@ def test_cacheignore_can_reinclude_ignored_schema(cache_repo):
     root = cache_repo / "docs"
     before = manager.current_self_fingerprints(root)
     assert "schemas/entity/default.schema.json" not in before
-
     policy = cache_repo / ".cacheignore"
-    policy.write_text(
-        policy.read_text(encoding="utf-8")
-        + "\n!**/.meta/schemas/entity/default.schema.json\n",
-        encoding="utf-8",
-    )
+    policy.write_text(policy.read_text(encoding="utf-8") + "\n!**/.meta/schemas/entity/default.schema.json\n", encoding="utf-8")
     after = CacheManager(Repository(cache_repo)).current_self_fingerprints(root)
     assert "schemas/entity/default.schema.json" in after
 
@@ -93,18 +87,14 @@ def test_full_refresh_writes_root_and_child_parent_snapshot(cache_repo):
 def test_schema_registry_cache_uses_scalar_paths(cache_repo):
     CacheManager(Repository(cache_repo)).refresh(use_fingerprints=False)
     root = load_cache(cache_repo / "docs")
-    assert root["state"]["schemas"]["registry"]["entity"]["default"] == (
-        "docs/.meta/schemas/entity/default.schema.json"
-    )
+    assert root["state"]["schemas"]["registry"]["entity"]["default"] == "docs/.meta/schemas/entity/default.schema.json"
 
 
 def test_alias_values_are_retained_but_relation_paths_are_expanded(cache_repo):
     CacheManager(Repository(cache_repo)).refresh(use_fingerprints=False)
     root = load_cache(cache_repo / "docs")
     child = load_cache(cache_repo / "docs/sub/catalog/sub/item")
-    assert root["state"]["aliases"]["effective"]["paths"]["producers"] == (
-        "/sub/catalog/sub/producers/sub/"
-    )
+    assert root["state"]["aliases"]["effective"]["paths"]["producers"] == "/sub/catalog/sub/producers/sub/"
     relation_path = child["state"]["entity"]["effective"]["relations"][0]["target"]["path"]
     assert relation_path == "/sub/catalog/sub/producers/sub/openai"
 
@@ -134,7 +124,6 @@ def test_parent_change_rebuilds_parent_and_descendant(cache_repo):
     data["node"]["template"] = "catalog/changed"
     parent_meta.write_text(yaml.safe_dump(data, sort_keys=False), encoding="utf-8")
     second = manager.refresh(use_fingerprints=True)
-    # Root remains fresh; changed catalog plus both discovered descendants rebuild.
     assert second.rebuilt == 3
 
 
@@ -233,3 +222,16 @@ def test_cache_validation_rejects_unresolved_known_path_alias(cache_repo):
     child.write_text(yaml.safe_dump(data, sort_keys=False), encoding="utf-8")
     result = cache_validate(cache_repo)
     assert any("unresolved path alias" in error for error in result.errors)
+
+
+def test_root_global_requirements_are_excluded_and_content_changes_do_not_change_fingerprints(cache_repo):
+    root = cache_repo / "docs"
+    requirements = root / ".meta/requirements_global.md"
+    requirements.write_text("global requirements v1\n", encoding="utf-8")
+
+    before = CacheManager(Repository(cache_repo)).current_self_fingerprints(root)
+    assert "requirements_global.md" not in before
+
+    requirements.write_text("global requirements v2\n", encoding="utf-8")
+    after = CacheManager(Repository(cache_repo)).current_self_fingerprints(root)
+    assert after == before

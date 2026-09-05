@@ -10,5 +10,6 @@
 docs/**/.meta/cache.yml
 /docs/.meta/schemas/**
 /docs/.meta/templates/**
+/docs/.meta/requirements_global.md
 docs/**/.meta/requirements.md
 docs/**/.meta/requirements/reference-locks/**
