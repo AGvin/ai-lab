@@ -199,3 +199,28 @@ def test_metadata_workflows_use_node24_compatible_action_majors():
         assert text.count("actions/setup-python@v7") == 1
         assert "actions/checkout@v4" not in text
         assert "actions/setup-python@v5" not in text
+
+
+def test_preserve_source_merge_is_published_without_cache_diff():
+    workflow = load_workflow(CACHE_WORKFLOW)
+    steps = workflow["jobs"]["generate"]["steps"]
+    by_name = {step["name"]: step for step in steps}
+
+    prepare = by_name["Prepare cache branch"]
+    assert "source_updated=false" in prepare["run"]
+    assert "source_updated=true" in prepare["run"]
+
+    publish = by_name["Commit generated caches"]
+    expected = "steps.changes.outputs.changed == 'true' || steps.branch.outputs.source_updated == 'true'"
+    assert publish["if"] == expected
+    assert publish["env"]["CACHE_CHANGED"] == "${{ steps.changes.outputs.changed }}"
+    assert 'if [[ "$CACHE_CHANGED" == "true" ]]; then' in publish["run"]
+    assert 'git push origin "HEAD:${CACHE_BRANCH}"' in publish["run"]
+    assert 'git push --force-with-lease origin "HEAD:${CACHE_BRANCH}"' in publish["run"]
+
+    pr = by_name["Create or reuse cache PR"]
+    assert pr["if"] == expected
+
+    summary = by_name["Agent summary"]
+    assert summary["env"]["SOURCE_UPDATED"] == "${{ steps.branch.outputs.source_updated }}"
+    assert 'source_updated: ($source_updated == "true")' in summary["run"]
