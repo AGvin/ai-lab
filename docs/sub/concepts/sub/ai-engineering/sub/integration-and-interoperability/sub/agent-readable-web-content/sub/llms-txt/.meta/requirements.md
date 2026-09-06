@@ -23,7 +23,6 @@
   7. test every link and keep the file synchronized with the published corpus.
 - Recommend curation over exhaustive enumeration. Do not mechanically copy a full sitemap into `llms.txt`; prioritize authoritative entry points and task-relevant documentation that help an agent decide what to fetch next.
 - Explain Markdown alternatives from the current proposal at a practical level: publishers can expose clean `.md` representations of pages and advertise them through standard link relations. Keep exact URL and `Link`/HTML relation syntax with the formal proposal artifact.
-- Distinguish `llms.txt` from `llms-full.txt`: `llms.txt` is deliberately small and navigational; `llms-full.txt` is an ecosystem convention that aggregates much more or all documentation content in one file. The latter is useful in different context/ingestion scenarios and is not currently defined by llmstxt.org v2.
 - Distinguish `llms.txt` from `robots.txt`: it provides context/discovery rather than crawler permission or prohibition. Respect actual access-control, crawler-policy, legal, and authorization boundaries independently.
 - Distinguish `llms.txt` from `sitemap.xml`: the sitemap is primarily an enumeration for search/discovery systems, whereas `llms.txt` is curated and can point to agent-friendly or even relevant external resources with semantic descriptions.
 - Distinguish `llms.txt` from RAG/search/vector indexes: the file is publisher-side discovery metadata/content; a consuming agent may use any retrieval architecture after fetching it.
@@ -36,11 +35,29 @@
 - Preserve the trust boundary: an agent should not execute instructions, disclose secrets, or grant privileges merely because content is linked from `llms.txt`; normal source trust, prompt-injection defenses, authorization, and content validation still apply.
 - Include the current llmstxt.org proposal and upstream repository as primary research sources, and provide a clear link to the formal AI Lab proposal artifact for readers who need exact current format rules.
 
+### `llms-full.txt` companion convention
+
+- Cover `llms-full.txt` as a dedicated section of this page rather than a separate canonical node. Its current meaning is tightly coupled to `llms.txt`, it lacks an independent formal contract in the current llmstxt.org v2 proposal, and splitting it would add ownership/navigation overhead without a sufficiently independent lifecycle.
+- Identify `llms-full.txt` as an **ecosystem convention** for publishing a large single-file Markdown representation of a documentation corpus or substantial site content for AI ingestion/context use. Do not present it as a mandatory llmstxt.org file or formal companion specification unless upstream changes.
+- Explain the contrast clearly: `llms.txt` is a small curated index for selective discovery; `llms-full.txt` is a broad/full-corpus export intended for bulk ingestion, indexing, caching, search, or large-context use.
+- Explain appropriate uses for the full export: small-to-medium corpora that fit the consumer budget, offline or batch indexing, evaluation/research snapshots, single-document ingestion tools, and workflows where broad cross-page context is worth the extra size.
+- Explain when not to load it blindly: large sites, narrow questions, expensive context windows, rapidly changing corpora, bandwidth-sensitive clients, or cases where selective retrieval from `llms.txt` is cheaper and more precise.
+- Teach the consumption boundary: inspect source, freshness, visibility, and approximate size first; choose whole-corpus ingestion only when justified; preserve page/source boundaries and provenance; and refresh/invalidate derived indexes when the source corpus changes.
+- Teach the publishing boundary as deterministic **generation from canonical public content**, not duplicate hand-authoring. Preserve titles/source markers, exclude private/authenticated/draft/secret/tenant-specific material, regenerate on publication changes, and validate size/completeness/access behavior.
+- Explain that `full` is an implementation convention rather than a mathematical completeness guarantee. Material exclusions or unsupported page types should be documented when they affect interpretation.
+- Explain the principal scaling and security trade-offs: fewer fetches and easier bulk ingestion versus larger transfer/token cost, broader cache invalidation, stale snapshots, accidental sensitive aggregation, and amplified prompt-injection exposure.
+- Recommend pairing the two forms when useful: `llms.txt` remains the selective navigation surface while a generated `llms-full.txt` can serve bulk-context workflows. They are complementary, not mutually exclusive.
+- Include a concise comparison table covering purpose, typical size, consumption model, strengths, and principal risks for `llms.txt` versus `llms-full.txt`.
+- Use GitBook, Mintlify, and similar platform documentation only as ecosystem implementation evidence. Do not turn a vendor's exact path, output structure, size policy, or generation behavior into a universal `llms-full.txt` specification.
+- Keep `llms-full.txt` as section-level material unless future evidence gives it a genuinely independent specification, lifecycle, ownership boundary, or body of content large enough to justify a separate canonical node under the repository decomposition rules.
+
 ## Validation
 
 - The page teaches both what `llms.txt` is and how publishers/agents should use it without becoming the normative specification owner.
 - `llms.txt` is presented as a concise curated index rather than a mandatory full-site dump.
 - The page does not claim that `llms.txt` controls crawler access, replaces sitemaps, implements RAG, or provides runtime capabilities.
-- `llms-full.txt` remains clearly separate and is not described as a current llmstxt.org v2 requirement.
+- `llms-full.txt` is clearly explained as a closely related ecosystem convention, not as a current llmstxt.org v2 requirement or independent formal artifact.
+- The useful full-export guidance is preserved without requiring a separate `llms-full-txt/` documentation node.
+- Whole-corpus convenience is balanced against context size, bandwidth, freshness, duplication, privacy, and trust risks.
 - Mutable adoption/support/SEO claims are not treated as universal guarantees.
 - Practical advice remains compatible with the current upstream proposal and preserves access-control and trust boundaries.
