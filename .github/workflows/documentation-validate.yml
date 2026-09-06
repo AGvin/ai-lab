@@ -1,0 +1,83 @@
+name: Documentation Validate
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_branch:
+        description: Source branch override; empty uses the workflow branch
+        required: false
+        default: ""
+        type: string
+      validate_schemas:
+        description: Validate canonical metadata against selected schemas
+        required: true
+        default: true
+        type: boolean
+      validate_relations:
+        description: Validate relation targets and inverse pairs
+        required: true
+        default: true
+        type: boolean
+      validate_cache:
+        description: Validate committed documentation cache state
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: documentation-validate-${{ inputs.source_branch || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      SOURCE_BRANCH: ${{ inputs.source_branch || github.ref_name }}
+
+    steps:
+      - name: Check out source branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.source_branch || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Capture source revision
+        id: source
+        shell: bash
+        run: scripts/github/workflows/documentation-validate/capture-source-revision.sh
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install metadata tooling
+        shell: bash
+        run: scripts/github/workflows/documentation-validate/install-metadata-tooling.sh
+
+      - name: Validate documentation metadata
+        id: validate
+        shell: bash
+        env:
+          VALIDATE_SCHEMAS: ${{ inputs.validate_schemas }}
+          VALIDATE_RELATIONS: ${{ inputs.validate_relations }}
+          VALIDATE_CACHE: ${{ inputs.validate_cache }}
+        run: scripts/github/workflows/documentation-validate/validate-documentation-metadata.sh
+
+      - name: Agent summary
+        if: always()
+        shell: bash
+        env:
+          SOURCE_SHA: ${{ steps.source.outputs.sha }}
+          VALIDATE_CONCLUSION: ${{ steps.validate.conclusion }}
+          SCHEMAS_STATUS: ${{ steps.validate.outputs.schemas }}
+          RELATIONS_STATUS: ${{ steps.validate.outputs.relations }}
+          CACHE_STATUS: ${{ steps.validate.outputs.cache }}
+          RELATION_STATISTICS: ${{ steps.validate.outputs.relation_statistics }}
+          REQUEST_SCHEMAS: ${{ inputs.validate_schemas }}
+          REQUEST_RELATIONS: ${{ inputs.validate_relations }}
+          REQUEST_CACHE: ${{ inputs.validate_cache }}
+        run: scripts/github/workflows/documentation-validate/agent-summary.sh

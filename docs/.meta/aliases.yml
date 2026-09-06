@@ -1,0 +1,7 @@
+aliases:
+  schema: default
+  paths:
+    producers: /docs/sub/catalog/sub/producers/sub/
+    software: /docs/sub/catalog/sub/software/sub/
+    models: /docs/sub/catalog/sub/models/sub/
+    skills: /docs/sub/catalog/sub/agent-skills/sub/

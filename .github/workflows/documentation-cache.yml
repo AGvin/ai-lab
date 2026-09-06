@@ -1,0 +1,115 @@
+name: Documentation Cache
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_branch:
+        description: Source branch override; empty uses the workflow branch
+        required: false
+        default: ""
+        type: string
+      use_fingerprints:
+        description: Use cache fingerprints to skip unchanged nodes
+        required: true
+        default: true
+        type: boolean
+      reset_cache_branch:
+        description: Reset cache branch to source so the generated PR keeps one cache commit
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: documentation-cache-${{ inputs.source_branch || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    env:
+      SOURCE_BRANCH: ${{ inputs.source_branch || github.ref_name }}
+      USE_FINGERPRINTS: ${{ inputs.use_fingerprints }}
+      RESET_CACHE_BRANCH: ${{ inputs.reset_cache_branch }}
+      GH_TOKEN: ${{ github.token }}
+
+    steps:
+      - name: Check out source branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.source_branch || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Validate source branch
+        shell: bash
+        run: scripts/github/workflows/documentation-cache/validate-source-branch.sh
+
+      - name: Capture source revision
+        id: source
+        shell: bash
+        run: scripts/github/workflows/documentation-cache/capture-source-revision.sh
+
+      - name: Prepare cache branch
+        id: branch
+        shell: bash
+        env:
+          SOURCE_SHA: ${{ steps.source.outputs.sha }}
+        run: scripts/github/workflows/documentation-cache/prepare-cache-branch.sh
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install metadata tooling
+        shell: bash
+        run: scripts/github/workflows/documentation-cache/install-metadata-tooling.sh
+
+      - name: Generate caches
+        id: generate
+        shell: bash
+        run: scripts/github/workflows/documentation-cache/generate-caches.sh
+
+      - name: Inspect generated changes
+        id: changes
+        shell: bash
+        run: scripts/github/workflows/documentation-cache/inspect-generated-changes.sh
+
+      - name: Commit generated caches
+        id: commit
+        if: steps.changes.outputs.changed == 'true' || steps.branch.outputs.source_updated == 'true'
+        shell: bash
+        env:
+          SOURCE_SHA: ${{ steps.source.outputs.sha }}
+          CACHE_CHANGED: ${{ steps.changes.outputs.changed }}
+        run: scripts/github/workflows/documentation-cache/commit-generated-caches.sh
+
+      - name: Create or reuse cache PR
+        id: pr
+        if: steps.changes.outputs.changed == 'true' || steps.branch.outputs.source_updated == 'true'
+        shell: bash
+        run: scripts/github/workflows/documentation-cache/create-or-reuse-cache-pr.sh
+
+      - name: Agent summary
+        if: always()
+        shell: bash
+        env:
+          SOURCE_SHA: ${{ steps.source.outputs.sha }}
+          RESET_CACHE_BRANCH: ${{ inputs.reset_cache_branch }}
+          SOURCE_UPDATED: ${{ steps.branch.outputs.source_updated }}
+          GENERATE_STATUS: ${{ steps.generate.outputs.status }}
+          GENERATE_CONCLUSION: ${{ steps.generate.conclusion }}
+          DISCOVERED: ${{ steps.generate.outputs.discovered }}
+          PROCESSED: ${{ steps.generate.outputs.processed }}
+          REBUILT: ${{ steps.generate.outputs.rebuilt }}
+          UNCHANGED: ${{ steps.generate.outputs.unchanged }}
+          ERRORS: ${{ steps.generate.outputs.errors }}
+          CHANGES_CONCLUSION: ${{ steps.changes.conclusion }}
+          CHANGED: ${{ steps.changes.outputs.changed }}
+          CACHE_COMMIT: ${{ steps.commit.outputs.commit }}
+          PR_STATUS: ${{ steps.pr.outputs.status }}
+          PR_NUMBER: ${{ steps.pr.outputs.number }}
+        run: scripts/github/workflows/documentation-cache/agent-summary.sh

@@ -1,12 +1,19 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "default",
+  "$id": "repo:/:node:default",
   "title": "Default documentation node metadata",
   "description": "Base structural contract for default-locale documentation-node metadata.",
   "$defs": {
     "schema_id": {
       "type": "string",
-      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      "oneOf": [
+        {
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*$"
+        },
+        {
+          "pattern": "^/:[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*$"
+        }
+      ]
     },
     "registry_id": {
       "type": "string",

@@ -7,5 +7,5 @@ entity:
         url: https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/
       purposes:
         - research
-      authority: primary
+      authority: independent
       note: Exact foundational Google MapReduce reference preserved from the legacy Map-Reduce Agent Architecture source for partition/map/intermediate-key/reduce/runtime provenance; modern agent workflow adaptation remains pedagogical rather than a claim that the original system was agent-specific.
