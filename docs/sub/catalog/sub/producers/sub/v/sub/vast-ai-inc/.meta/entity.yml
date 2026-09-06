@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/v/vast-ai-inc
+  type: organization
+  name: Vast.ai Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://vast.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://console.vast.ai/terms/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Vast.ai legal terms identify Vast.ai Inc. as the company behind the service.
+    - type: privacy-policy
+      source:
+        url: https://vast.ai/privacy
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/infrastructure/vast-ai

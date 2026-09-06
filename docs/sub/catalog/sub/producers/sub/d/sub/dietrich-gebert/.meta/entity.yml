@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/d/dietrich-gebert
+  type: individual
+  name: Dietrich Gebert
+  references:
+    - type: official-site
+      source:
+        url: https://github.com/DietrichGebert
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/DietrichGebert/ponytail
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: The Ponytail package metadata and repository license identify Dietrich Gebert as author/copyright holder.
+  relations:
+    - type: produces
+      target: catalog/agent-skills/collections/ponytail
