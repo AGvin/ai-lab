@@ -14,8 +14,7 @@ Use this file as a concise discovery index. Follow only the resources relevant t
 ## Agent-readable web content
 
 - [Agent-readable web content](docs/sub/concepts/sub/ai-engineering/sub/integration-and-interoperability/sub/agent-readable-web-content/.meta/requirements.md): General principles for publishing low-noise content for AI agents.
-- [llms.txt](docs/sub/concepts/sub/ai-engineering/sub/integration-and-interoperability/sub/agent-readable-web-content/sub/llms-txt/.meta/requirements.md): What `llms.txt` is, how agents use it, and how to publish it effectively.
-- [llms-full.txt](docs/sub/concepts/sub/ai-engineering/sub/integration-and-interoperability/sub/agent-readable-web-content/sub/llms-full-txt/.meta/requirements.md): Full-corpus convention, appropriate uses, and scaling trade-offs.
+- [llms.txt](docs/sub/concepts/sub/ai-engineering/sub/integration-and-interoperability/sub/agent-readable-web-content/sub/llms-txt/.meta/requirements.md): What `llms.txt` is, how agents use and publish it, and how the related `llms-full.txt` ecosystem convention differs.
 - [llms.txt proposal](docs/sub/catalog/sub/specifications/sub/formats/sub/llms-txt/.meta/requirements.md): Current upstream proposal boundary and format requirements.
 
 ## Optional
