@@ -57,7 +57,7 @@
 - `llms.txt` is presented as a concise curated index rather than a mandatory full-site dump.
 - The page does not claim that `llms.txt` controls crawler access, replaces sitemaps, implements RAG, or provides runtime capabilities.
 - `llms-full.txt` is clearly explained as a closely related ecosystem convention, not as a current llmstxt.org v2 requirement or independent formal artifact.
-- The useful full-export guidance is preserved without requiring a separate `llms-full-txt/` documentation node.
+- The useful full-export guidance is preserved without requiring a separate documentation node for `llms-full.txt`.
 - Whole-corpus convenience is balanced against context size, bandwidth, freshness, duplication, privacy, and trust risks.
 - Mutable adoption/support/SEO claims are not treated as universal guarantees.
 - Practical advice remains compatible with the current upstream proposal and preserves access-control and trust boundaries.
