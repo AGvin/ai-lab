@@ -2,7 +2,7 @@ entity:
   id: concepts/machine-learning/learning-theory
   name: Learning Theory
   references:
-    - type: whitepaper
+    - type: book
       source:
         url: https://www.deeplearningbook.org/contents/ml.html
       purposes:

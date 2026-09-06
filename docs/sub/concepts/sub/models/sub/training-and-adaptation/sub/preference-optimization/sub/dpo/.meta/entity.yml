@@ -4,7 +4,7 @@ entity:
   aliases:
     - DPO
   references:
-    - type: whitepaper
+    - type: article
       source:
         url: https://arxiv.org/abs/2305.18290
       purposes:
