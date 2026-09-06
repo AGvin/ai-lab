@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/j/jeremy-howard
+  type: person
+  name: Jeremy Howard
+  references:
+    - type: official-site
+      source:
+        url: https://jeremy.fast.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/AnswerDotAI/llms-txt
+      purposes:
+        - research
+      authority: upstream
+      note: The current llms.txt proposal repository identifies Jeremy Howard as the proposal author.
+  relations:
+    - type: produces
+      target: catalog/specifications/formats/llms-txt

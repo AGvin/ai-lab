@@ -1,0 +1,26 @@
+entity:
+  id: concepts/ai-engineering/integration-and-interoperability/agent-readable-web-content/llms-full-txt
+  name: llms-full.txt
+  references:
+    - type: specification
+      source:
+        url: https://llmstxt.org/
+      purposes:
+        - research
+      authority: upstream
+      note: Current llmstxt.org v2 establishes the llms.txt proposal boundary; it does not currently define llms-full.txt.
+    - type: article
+      source:
+        url: https://www.gitbook.com/blog/what-is-llms-txt
+      purposes:
+        - identification
+        - research
+      authority: independent
+      note: Current GitBook guidance describes llms-full.txt as a fuller single-file documentation export and discusses its size trade-offs.
+    - type: article
+      source:
+        url: https://www.mintlify.com/blog/simplifying-docs-with-llms-txt
+      purposes:
+        - research
+      authority: independent
+      note: Mintlify documents an implementation that generates llms-full.txt as a single comprehensive Markdown documentation file.

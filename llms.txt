@@ -1,0 +1,23 @@
+# AI Lab
+
+> Public practical AI documentation covering models, software, agent systems, specifications, concepts, evaluation, and reusable workflows.
+
+Use this file as a concise discovery index. Follow only the resources relevant to the task instead of loading the entire repository. AI Lab is currently in an active documentation migration; for newly staged nodes, canonical `.meta/requirements.md` files may be more current than renderer-owned README output until the scheduled rendering phase.
+
+## Start here
+
+- [Repository overview](README.md): Concise human-facing entry point to AI Lab.
+- [Project overview](docs/sub/project/sub/overview/README.md): Documentation architecture and project-level orientation.
+- [Documentation catalog](docs/sub/project/sub/navigation/sub/catalog/README.md): Curated discovery entry points.
+- [Documentation tree](docs/sub/project/sub/navigation/sub/tree/README.md): Exhaustive materialized documentation hierarchy.
+
+## Agent-readable web content
+
+- [Agent-readable web content](docs/sub/concepts/sub/ai-engineering/sub/integration-and-interoperability/sub/agent-readable-web-content/.meta/requirements.md): General principles for publishing low-noise content for AI agents.
+- [llms.txt](docs/sub/concepts/sub/ai-engineering/sub/integration-and-interoperability/sub/agent-readable-web-content/sub/llms-txt/.meta/requirements.md): What `llms.txt` is, how agents use it, and how to publish it effectively.
+- [llms-full.txt](docs/sub/concepts/sub/ai-engineering/sub/integration-and-interoperability/sub/agent-readable-web-content/sub/llms-full-txt/.meta/requirements.md): Full-corpus convention, appropriate uses, and scaling trade-offs.
+- [llms.txt proposal](docs/sub/catalog/sub/specifications/sub/formats/sub/llms-txt/.meta/requirements.md): Current upstream proposal boundary and format requirements.
+
+## Optional
+
+- [Repository license](LICENSE): Repository licensing terms.

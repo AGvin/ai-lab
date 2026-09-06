@@ -1,0 +1,17 @@
+entity:
+  id: concepts/ai-engineering/integration-and-interoperability/agent-readable-web-content/llms-txt
+  name: llms.txt
+  references:
+    - type: specification
+      source:
+        url: https://llmstxt.org/
+      purposes:
+        - identification
+        - research
+      authority: upstream
+    - type: repository
+      source:
+        url: https://github.com/AnswerDotAI/llms-txt
+      purposes:
+        - research
+      authority: upstream
