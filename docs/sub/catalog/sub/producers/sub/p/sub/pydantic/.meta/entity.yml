@@ -20,3 +20,7 @@ entity:
   relations:
     - type: produces
       target: catalog/software/agent-frameworks/pydantic-ai
+    - type: produces
+      target: catalog/software/agent-frameworks/pydantic-ai-harness
+    - type: produces
+      target: catalog/software/evaluation-and-observability/observability-platforms/pydantic-logfire

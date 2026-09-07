@@ -27,3 +27,5 @@ entity:
   relations:
     - type: produces
       target: catalog/software/evaluation-and-observability/observability-platforms/arize-phoenix
+    - type: produces
+      target: catalog/software/evaluation-and-observability/observability-platforms/arize-ax

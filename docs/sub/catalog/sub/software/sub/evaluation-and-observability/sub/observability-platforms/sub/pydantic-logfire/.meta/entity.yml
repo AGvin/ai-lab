@@ -1,0 +1,23 @@
+entity:
+  id: catalog/software/evaluation-and-observability/observability-platforms/pydantic-logfire
+  type: software
+  name: Pydantic Logfire
+  aliases:
+    - Logfire
+  references:
+    - type: documentation
+      source:
+        url: https://pydantic.dev/docs/logfire/get-started/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/pydantic/logfire
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/pydantic

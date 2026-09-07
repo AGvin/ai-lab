@@ -1,0 +1,26 @@
+entity:
+  id: catalog/software/gateways/model-gateways/helicone
+  type: software
+  name: Helicone
+  references:
+    - type: documentation
+      source:
+        url: https://docs.helicone.ai/gateway/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Helicone/helicone
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.helicone.ai/blog/joining-mintlify
+      purposes:
+        - research
+      authority: official
+      note: Official 2026 acquisition and maintenance-mode lifecycle announcement.

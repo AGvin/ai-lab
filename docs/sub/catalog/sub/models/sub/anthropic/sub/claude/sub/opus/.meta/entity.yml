@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/anthropic/claude/opus
+  type: model-series
+  name: Opus
+  references:
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/models/opus-5/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/anthropic/claude
+    - type: has-member
+      target: catalog/models/anthropic/claude/opus/models/opus-5

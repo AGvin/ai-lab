@@ -4,18 +4,18 @@
 
 - Identify Claude as Anthropic's long-lived hosted model family.
 - Preserve family-level facts without duplicating series or concrete-model specifications.
-- Represent durable lines such as Sonnet as series when that grouping clarifies multiple distinct releases.
-- Keep product surfaces, pricing, cloud availability, and migration behavior outside family identity.
+- Represent the currently materialized Fable, Opus, Sonnet, Haiku, and Mythos lines as model series; keep their concrete release facts with the corresponding model nodes.
+- Keep product surfaces, pricing, cloud availability, and migration behavior outside family identity unless needed to explain a model-family boundary.
 
 ## Content Specification
 
 - Use `Claude` as the page title and link Anthropic through the canonical `produced-by` relation.
-- Link Sonnet as the materialized model series.
+- Link every materialized Claude series exactly once: Fable, Opus, Sonnet, Haiku, and Mythos.
 - Keep Claude Code, Claude Platform, Anthropic plans, and cloud integrations distinct from model identity.
-- Include official model-overview and model-ID/versioning documentation.
+- Include current official model-overview and model-ID/versioning documentation.
 
 ## Validation
 
-- Claude Sonnet 5 is not linked directly as an arbitrary family child.
-- Sonnet is not treated as a second top-level family.
-- Concrete model IDs, context limits, pricing, and migration notes are not generalized to all Claude models.
+- Concrete Claude models are reached through their materialized series rather than linked as arbitrary family children.
+- Series are not treated as second top-level families.
+- Concrete model IDs, context limits, pricing, availability constraints, and migration notes are not generalized to all Claude models.

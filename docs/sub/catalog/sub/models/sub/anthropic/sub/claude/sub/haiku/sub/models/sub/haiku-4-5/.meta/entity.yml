@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/anthropic/claude/haiku/models/haiku-4-5
+  type: model
+  name: Claude Haiku 4.5
+  references:
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/models/haiku-4-5/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/about-claude/models/choosing-a-model
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/anthropic/claude/haiku
