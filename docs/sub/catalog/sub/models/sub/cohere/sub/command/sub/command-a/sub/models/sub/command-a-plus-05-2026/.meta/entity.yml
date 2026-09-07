@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/cohere/command/command-a/models/command-a-plus-05-2026
+  type: model
+  name: Command A+
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/command-a-plus
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.cohere.com/v1/changelog/command-a-plus-05-2026
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere/command/command-a

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/nvidia/nemotron/models/nemotron-3-ultra
+  type: model
+  name: NVIDIA Nemotron 3 Ultra
+  references:
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developer.nvidia.com/topics/ai/nemotron
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/nvidia/nemotron

@@ -22,6 +22,8 @@ entity:
       note: AWS Open Source launch article establishing Strands Agents as an AWS open-source SDK.
   relations:
     - type: produces
+      target: catalog/models/amazon/nova
+    - type: produces
       target: catalog/software/agent-frameworks/strands-agents
     - type: produces
       target: catalog/software/agents/local/kiro-cli

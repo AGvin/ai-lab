@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/m/minimax
+  type: organization
+  name: MiniMax
+  references:
+    - type: official-site
+      source:
+        url: https://www.minimax.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.minimax.io/about
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/minimax/minimax-m

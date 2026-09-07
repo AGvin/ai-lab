@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/nvidia
+  type: model-producer-view
+  name: NVIDIA models
+  references:
+    - type: official-site
+      source:
+        url: https://developer.nvidia.com/topics/ai/nemotron
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/nvidia
+      purposes:
+        - research
+      authority: official

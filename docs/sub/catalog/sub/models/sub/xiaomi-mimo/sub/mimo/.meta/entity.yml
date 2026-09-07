@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/xiaomi-mimo/mimo
+  type: model-family
+  name: MiMo
+  references:
+    - type: official-site
+      source:
+        url: https://mimo.xiaomi.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/XiaomiMiMo
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/x/xiaomi-mimo-team
+    - type: has-member
+      target: catalog/models/xiaomi-mimo/mimo/mimo-v2-5
