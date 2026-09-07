@@ -16,8 +16,16 @@ entity:
       purposes:
         - research
       authority: official
+    - type: release-notes
+      source:
+        url: https://api-docs.deepseek.com/news/news260813/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/deepseek/deepseek
     - type: has-member
       target: catalog/models/deepseek/deepseek/deepseek-v4/models/deepseek-v4-flash
+    - type: has-member
+      target: catalog/models/deepseek/deepseek/deepseek-v4/models/deepseek-v4-pro

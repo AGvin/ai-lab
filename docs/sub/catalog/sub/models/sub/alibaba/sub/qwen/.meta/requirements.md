@@ -4,7 +4,7 @@
 
 - Introduce Qwen as the model family represented by the child model series.
 - Link the canonical Qwen Team producer rather than duplicating producer identity content.
-- Preserve every reviewed Qwen series from the legacy corpus that has a selected canonical model owner.
+- Preserve every reviewed Qwen series from the legacy corpus that has a selected canonical model owner and add newly researched series only from current authoritative evidence.
 
 ## Content Specification
 
@@ -12,7 +12,7 @@
 - Keep the introduction short and model-family focused.
 - Link Qwen Team from the canonical `produced-by` relation.
 - Include the official Qwen website and official Hugging Face organization.
-- Link Qwen2.5-Coder, Qwen3, and Qwen3-Coder as child model series.
+- Link Qwen2.5-Coder, Qwen3, Qwen3-Coder, and Qwen3.8 as child model series.
 - Do not infer missing Qwen branches merely from naming; materialize additional series when current source evidence and content justify them.
 
 ## Validation

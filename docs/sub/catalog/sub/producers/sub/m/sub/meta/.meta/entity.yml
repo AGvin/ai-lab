@@ -1,23 +1,21 @@
 entity:
-  id: catalog/producers/x/xai
+  id: catalog/producers/m/meta
   type: organization
-  name: xAI
+  name: Meta
   references:
     - type: official-site
       source:
-        url: https://x.ai/
+        url: https://ai.meta.com/
       purposes:
         - identification
         - research
       authority: official
-    - type: documentation
+    - type: article
       source:
-        url: https://docs.x.ai/grok/overview
+        url: https://ai.meta.com/blog/llama-4-multimodal-intelligence/
       purposes:
         - research
       authority: official
   relations:
     - type: produces
-      target: catalog/models/xai/grok
-    - type: produces
-      target: catalog/services/assistant-workspaces/grok
+      target: catalog/models/meta/llama

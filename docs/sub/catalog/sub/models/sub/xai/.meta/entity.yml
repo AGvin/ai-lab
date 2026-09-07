@@ -1,7 +1,7 @@
 entity:
-  id: catalog/producers/x/xai
-  type: organization
-  name: xAI
+  id: catalog/models/xai
+  type: model-producer-view
+  name: xAI models
   references:
     - type: official-site
       source:
@@ -12,12 +12,7 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://docs.x.ai/grok/overview
+        url: https://docs.x.ai/
       purposes:
         - research
       authority: official
-  relations:
-    - type: produces
-      target: catalog/models/xai/grok
-    - type: produces
-      target: catalog/services/assistant-workspaces/grok

@@ -1,23 +1,21 @@
 entity:
-  id: catalog/producers/x/xai
-  type: organization
-  name: xAI
+  id: catalog/models/xai/grok/models/grok-4-6
+  type: model
+  name: Grok 4.6
   references:
-    - type: official-site
+    - type: release-notes
       source:
-        url: https://x.ai/
+        url: https://x.ai/news/grok-4-6
       purposes:
         - identification
         - research
       authority: official
     - type: documentation
       source:
-        url: https://docs.x.ai/grok/overview
+        url: https://docs.x.ai/
       purposes:
         - research
       authority: official
   relations:
-    - type: produces
+    - type: member-of
       target: catalog/models/xai/grok
-    - type: produces
-      target: catalog/services/assistant-workspaces/grok

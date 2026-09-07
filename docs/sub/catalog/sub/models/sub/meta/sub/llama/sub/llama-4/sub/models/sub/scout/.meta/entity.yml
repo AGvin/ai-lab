@@ -1,0 +1,28 @@
+entity:
+  id: catalog/models/meta/llama/llama-4/models/scout
+  type: model
+  name: Llama 4 Scout
+  references:
+    - type: article
+      source:
+        url: https://ai.meta.com/blog/llama-4-multimodal-intelligence/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.meta.com/llama/get-started/
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://youtu.be/MCiZtNUsJbc
+      purposes:
+        - research
+      authority: community
+      note: User-supplied practical evaluation reference; treat as qualitative community evidence rather than authoritative model specification.
+  relations:
+    - type: member-of
+      target: catalog/models/meta/llama/llama-4

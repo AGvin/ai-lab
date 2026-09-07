@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/meta/llama
+  type: model-family
+  name: Llama
+  references:
+    - type: documentation
+      source:
+        url: https://ai.meta.com/llama/get-started/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://ai.meta.com/blog/llama-4-multimodal-intelligence/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/meta
+    - type: has-member
+      target: catalog/models/meta/llama/llama-4

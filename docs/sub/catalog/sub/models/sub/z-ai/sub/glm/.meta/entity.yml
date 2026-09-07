@@ -10,8 +10,18 @@ entity:
         - identification
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/zai-org/models
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/z/z-ai
     - type: has-member
       target: catalog/models/z-ai/glm/models/glm-5v-turbo
+    - type: has-member
+      target: catalog/models/z-ai/glm/models/glm-5-3
+    - type: has-member
+      target: catalog/models/z-ai/glm/models/glm-5-3-flash

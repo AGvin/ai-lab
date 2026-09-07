@@ -12,7 +12,7 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash
+        url: https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash
       purposes:
         - research
       authority: official
@@ -23,3 +23,5 @@ entity:
       target: catalog/producers/g/google-deepmind
     - type: has-member
       target: catalog/models/google/gemini/models/gemini-3-6-flash
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-3-8-flash
