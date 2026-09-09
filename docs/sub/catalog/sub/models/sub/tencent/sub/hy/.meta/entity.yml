@@ -3,6 +3,13 @@ entity:
   type: model-family
   name: Tencent Hy
   references:
+    - type: article
+      source:
+        url: https://www.tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/
+      purposes:
+        - identification
+        - research
+      authority: official
     - type: repository
       source:
         url: https://github.com/Tencent-Hunyuan/Hy4-preview
@@ -19,5 +26,7 @@ entity:
   relations:
     - type: produced-by
       target: catalog/producers/t/tencent-hy-team
+    - type: has-member
+      target: catalog/models/tencent/hy/models/hy3
     - type: has-member
       target: catalog/models/tencent/hy/models/hy4-preview

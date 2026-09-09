@@ -2,11 +2,12 @@
 
 ## Requirements
 
-- Identify Tencent Hy as the model family represented by the Hy4 preview release and preserve exact provenance to Tencent Hy Team.
-- Link Hy4 preview directly as a concrete model; do not create a Hy4 series until multiple independently materialized Hy4 siblings justify that layer.
+- Identify Tencent Hy as the model family containing the stable Hy3 production model and the newer Hy4 preview release, with exact provenance to Tencent Hy Team.
+- Link Hy3 and Hy4 preview directly as concrete models; do not create generation-level series until multiple independently materialized siblings justify an additional layer.
 - Keep Tencent application integrations, API providers, pricing, and benchmark rankings outside stable family identity.
 
 ## Validation
 
-- Hy4 preview remains a model identity inside the Hy family, not a hosted service.
-- Future announced Hy4 siblings do not appear until they are independently source-verified and materialized.
+- Hy3 and Hy4 preview remain model identities inside the Hy family, not hosted services.
+- Preview lifecycle wording for Hy4 is preserved independently from stable Hy3 lifecycle.
+- Future announced siblings do not appear until independently source-verified and materialized.

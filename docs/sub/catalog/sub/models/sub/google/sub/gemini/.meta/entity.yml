@@ -24,4 +24,6 @@ entity:
     - type: has-member
       target: catalog/models/google/gemini/models/gemini-3-6-flash
     - type: has-member
+      target: catalog/models/google/gemini/models/gemini-3-7-flash
+    - type: has-member
       target: catalog/models/google/gemini/models/gemini-3-8-flash

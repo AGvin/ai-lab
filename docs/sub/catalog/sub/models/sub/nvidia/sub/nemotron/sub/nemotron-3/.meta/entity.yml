@@ -20,6 +20,12 @@ entity:
     - type: member-of
       target: catalog/models/nvidia/nemotron
     - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-super
+    - type: has-member
       target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-ultra
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano-omni
     - type: has-member
       target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-lightning
