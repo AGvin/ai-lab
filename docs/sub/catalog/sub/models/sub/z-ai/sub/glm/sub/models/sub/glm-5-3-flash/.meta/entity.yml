@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/z-ai/glm/models/glm-5-3-flash
+  type: model
+  name: GLM-5.3-Flash
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/zai-org/GLM-5.3-Flash
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://autoclaw.z.ai/blog/model/glm-5.3-flash/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/z-ai/glm

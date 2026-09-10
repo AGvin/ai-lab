@@ -19,6 +19,8 @@ entity:
       authority: official
   relations:
     - type: produces
+      target: catalog/models/nvidia/nemotron
+    - type: produces
       target: catalog/agent-skills/collections/nvidia-skills
     - type: produces
       target: catalog/software/inference-runtimes/distributed-serving/nvidia-dynamo

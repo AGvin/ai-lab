@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/xai/grok/models/grok-4-6
+  type: model
+  name: Grok 4.6
+  references:
+    - type: release-notes
+      source:
+        url: https://x.ai/news/grok-4-6
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.x.ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/xai/grok

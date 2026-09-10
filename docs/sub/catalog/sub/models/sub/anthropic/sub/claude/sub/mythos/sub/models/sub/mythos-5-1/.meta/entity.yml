@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/anthropic/claude/mythos/models/mythos-5-1
+  type: model
+  name: Claude Mythos 5.1
+  references:
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/models/mythos-5-1/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/release-notes/overview
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/anthropic/claude/mythos

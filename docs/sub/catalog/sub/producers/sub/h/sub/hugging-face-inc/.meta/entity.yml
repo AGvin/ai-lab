@@ -18,6 +18,13 @@ entity:
         - research
       authority: official
       note: Official Hugging Face Terms of Service identifying Hugging Face, Inc.
+    - type: article
+      source:
+        url: https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/
+      purposes:
+        - research
+      authority: upstream
+      note: NVIDIA announced on 2026-09-03 that it agreed to acquire Hugging Face for $12.9303 billion. Treat this as an announced/pending acquisition, not completed NVIDIA ownership, until closing is authoritatively confirmed.
   relations:
     - type: produces
       target: catalog/services/ai-assets/hugging-face-hub

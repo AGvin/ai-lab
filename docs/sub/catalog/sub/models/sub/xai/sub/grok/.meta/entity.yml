@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/xai/grok
+  type: model-family
+  name: Grok
+  references:
+    - type: documentation
+      source:
+        url: https://docs.x.ai/grok/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://x.ai/news/grok-4-6
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/x/xai
+    - type: has-member
+      target: catalog/models/xai/grok/models/grok-4-6

@@ -1,0 +1,29 @@
+entity:
+  id: catalog/specifications/protocols/agent2agent-protocol
+  name: Agent2Agent Protocol
+  aliases:
+    - A2A
+    - Agent-to-Agent Protocol
+  references:
+    - type: specification
+      source:
+        url: https://a2a-protocol.org/latest/specification/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current stable A2A specification; re-check the latest released revision before updating normative requirements.
+    - type: repository
+      source:
+        url: https://github.com/a2aproject/A2A
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://github.com/a2aproject/A2A/blob/main/docs/announcing-1.0.md
+      purposes:
+        - research
+      authority: official
+      note: Official announcement of the first stable production-ready A2A v1.0 release.

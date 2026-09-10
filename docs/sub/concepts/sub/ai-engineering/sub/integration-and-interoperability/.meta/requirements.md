@@ -22,7 +22,7 @@
 - Treat protocol evolution as expected. Durable concept documentation should avoid freezing transient methods, lifecycle steps, transport choices, primitive lists, extension names, or deprecation status as timeless identity; mutable normative details belong to the versioned specification/evidence owners.
 - Explain trust and authorization boundaries as part of interoperable system design without implying that interoperability itself grants trust. Successful protocol communication or capability discovery does not authorize data access, tool execution, transactions, privilege escalation, or cross-tenant disclosure.
 - Distinguish identity/authentication from authorization. A standard can establish or carry identity/authentication information while the receiving application still owns policy decisions about which resources/capabilities/actions that identity may use under the applicable protocol requirements and system policy.
-- Treat descriptions, metadata, advertised capabilities, schemas, resource contents, tool annotations, agent cards, or extension metadata as claims/input whose trust level depends on source and protocol/system guarantees. Syntactic validity or successful discovery is not proof that advertised behavior is safe or truthful.
+- Treat descriptions, metadata, advertised capabilities, schemas, resource contents, tool annotations, agent cards, extension metadata, agent-readable indexes, and exported documentation as claims/input whose trust level depends on source and protocol/system guarantees. Syntactic validity or successful discovery is not proof that advertised behavior or published content is safe or truthful.
 - Explain isolation and least privilege across integration boundaries. Independently connected parties should receive only the context, resources, capabilities, credentials, network/data scopes, and side-effect authority required for the intended interaction; interoperability must not collapse security boundaries merely to make integration easier.
 - Explain observability and correlation as operational interoperability concerns where applicable. Requests, responses, tasks, streams, capability decisions, errors, authorization outcomes, and cross-component traces may need stable correlation/provenance while respecting privacy and secret-handling constraints.
 - Explain failure semantics. Network success, protocol success, application success, and task/business success are different layers; interoperable systems need explicit timeout, cancellation, retry/idempotency, partial-failure, asynchronous-result, and error interpretation where the standard/use case requires them.
@@ -31,17 +31,19 @@
 - Require interoperability claims to identify the relevant standard/concept, versions, implementation roles, transport/binding when material, required/optional capabilities, extensions, identity/auth assumptions, and tested interaction scope. `Supports protocol X` alone is insufficient for precise compatibility decisions.
 - Keep conformance/certification test results, support matrices, implementation bugs, current protocol-version adoption, provider feature availability, extension registries, interoperability incidents, and benchmark/test evidence with their applicable specification/catalog/evidence owners rather than making them timeless concept facts.
 - Keep tutorials, setup guides, server/client implementation walkthroughs, interoperability labs, migration how-tos, and procedural troubleshooting with `learning/` or concrete implementation owners rather than the canonical concept owner.
-- Keep `model-context-protocol/` as the currently selected direct child. Do not infer additional protocol/concept children merely because a formal specification or external standard exists; each new concept path requires architecture selection and a distinct reusable semantic need.
+- Treat `agent-readable-web-content/` as a publication/discovery boundary within this domain rather than a runtime protocol. Its `llms-txt/` child explains static agent-oriented content surfaces including the `llms.txt` proposal/convention and the closely related `llms-full.txt` ecosystem export pattern; these do not negotiate capabilities, authorize actions, or replace retrieval systems.
+- Keep `agent-readable-web-content/` and `model-context-protocol/` as the currently selected direct children. Do not infer additional protocol/concept children merely because a formal specification or external standard exists; each new concept path requires architecture selection and a distinct reusable semantic need.
 - Render the standard direct-child navigation from the validated materialized child set when reader-facing rendering is activated.
 - Use the canonical entity references as research inputs for complementary AI interoperability boundaries while keeping their normative specification details with the formal specification owners.
 
 ## Validation
 
-- Integration/interoperability is not used as a catch-all for generic APIs, ETL, networking, architecture patterns, tool use, or agent coordination.
-- Reusable concept semantics remain separate from normative formal protocol contracts and concrete implementations.
+- Integration/interoperability is not used as a catch-all for generic APIs, ETL, networking, architecture patterns, tool use, agent coordination, or web crawling.
+- Reusable concept semantics remain separate from normative formal protocol/format contracts and concrete implementations.
 - Interoperability is not reduced to syntactic message exchange when semantic/capability/identity/authorization compatibility matters.
+- Agent-readable static publication is not mislabeled as runtime protocol interoperability or authorization.
 - No single protocol is presented as the universal integration layer for every AI-system boundary.
-- Protocol communication, discovery, or advertised capability is not treated as authorization, trust, semantic correctness, or safety by itself.
+- Protocol communication, discovery, advertised capability, or publication in an agent-readable index is not treated as authorization, trust, semantic correctness, or safety by itself.
 - Mutable versions, transports/bindings, extension sets, conformance results, implementation support, and current ecosystem facts remain outside the reusable parent concept.
-- `model-context-protocol/` is the only currently selected direct child; additional standards are not materialized without separate architecture selection.
+- `agent-readable-web-content/` and `model-context-protocol/` are the only currently selected direct children; additional standards are not materialized without separate architecture selection.
 - Direct-child navigation contains only currently materialized selected descendants.

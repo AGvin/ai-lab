@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-8
+  type: model-series
+  name: Qwen3.8
+  references:
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen3.8
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen
+    - type: produced-by
+      target: catalog/producers/q/qwen-team
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-2-4t-a95b
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-27b
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-flash-next

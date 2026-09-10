@@ -1,0 +1,27 @@
+entity:
+  id: catalog/models/amazon/nova/nova-2
+  type: model-series
+  name: Amazon Nova 2
+  references:
+    - type: release-notes
+      source:
+        url: https://aws.amazon.com/about-aws/whats-new/2025/12/nova-2-foundation-models-amazon-bedrock/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/doc-history.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/amazon/nova
+    - type: has-member
+      target: catalog/models/amazon/nova/nova-2/models/nova-2-lite
+    - type: has-member
+      target: catalog/models/amazon/nova/nova-2/models/nova-2-pro
+    - type: has-member
+      target: catalog/models/amazon/nova/nova-2/models/nova-2-sonic

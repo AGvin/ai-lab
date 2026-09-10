@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/xiaomi-mimo/mimo/mimo-v2-5/models/mimo-v2-5
+  type: model
+  name: MiMo-V2.5
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/XiaomiMiMo/MiMo-V2.5
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/xiaomi-mimo/mimo/mimo-v2-5

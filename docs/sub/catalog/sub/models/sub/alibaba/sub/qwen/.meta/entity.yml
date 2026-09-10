@@ -26,3 +26,5 @@ entity:
       target: catalog/models/alibaba/qwen/qwen3-coder
     - type: has-member
       target: catalog/models/alibaba/qwen/qwen3
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-8

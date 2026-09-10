@@ -1,0 +1,18 @@
+entity:
+  id: catalog/services/gateways/model-gateways/cloudflare-ai-gateway
+  type: service
+  name: Cloudflare AI Gateway
+  references:
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/ai-gateway/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/ai-gateway/get-started/
+      purposes:
+        - research
+      authority: official

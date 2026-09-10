@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/development-tools/code-intelligence
+  type: catalog-index
+  name: Code Intelligence

@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/meta/llama/llama-4/models/behemoth
+  type: model
+  name: Llama 4 Behemoth
+  references:
+    - type: article
+      source:
+        url: https://ai.meta.com/blog/llama-4-multimodal-intelligence/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/meta/llama/llama-4

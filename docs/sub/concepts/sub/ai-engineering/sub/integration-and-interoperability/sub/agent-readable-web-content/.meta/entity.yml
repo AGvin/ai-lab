@@ -1,0 +1,18 @@
+entity:
+  id: concepts/ai-engineering/integration-and-interoperability/agent-readable-web-content
+  name: Agent-Readable Web Content
+  references:
+    - type: specification
+      source:
+        url: https://llmstxt.org/
+      purposes:
+        - research
+      authority: upstream
+      note: Current llms.txt v2 proposal is one concrete convention for agent-oriented web-content discovery and Markdown alternatives.
+    - type: article
+      source:
+        url: https://www.gitbook.com/blog/what-is-llms-txt
+      purposes:
+        - research
+      authority: independent
+      note: Documentation-platform guidance illustrating current llms.txt, llms-full.txt, and Markdown-export usage patterns.

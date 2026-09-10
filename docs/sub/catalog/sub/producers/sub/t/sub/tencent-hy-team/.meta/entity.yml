@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/t/tencent-hy-team
+  type: team
+  name: Tencent Hy Team
+  references:
+    - type: repository
+      source:
+        url: https://github.com/Tencent-Hunyuan/Hy4-preview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/tencent/hy

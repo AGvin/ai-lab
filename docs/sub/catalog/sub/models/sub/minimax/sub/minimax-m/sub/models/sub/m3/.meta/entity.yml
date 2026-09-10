@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/minimax/minimax-m/models/m3
+  type: model
+  name: MiniMax M3
+  references:
+    - type: article
+      source:
+        url: https://www.minimax.io/blog/minimax-m3
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.minimax.io/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/minimax/minimax-m

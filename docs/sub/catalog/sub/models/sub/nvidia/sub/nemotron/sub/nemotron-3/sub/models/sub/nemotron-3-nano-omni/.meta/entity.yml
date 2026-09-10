@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano-omni
+  type: model
+  name: NVIDIA Nemotron 3 Nano Omni
+  references:
+    - type: documentation
+      source:
+        url: https://developer.nvidia.com/topics/ai/nemotron
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: paper
+      source:
+        url: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Omni-report.pdf
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/nvidia/nemotron/nemotron-3

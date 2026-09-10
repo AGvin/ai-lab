@@ -31,3 +31,7 @@ entity:
       target: catalog/software/agent-frameworks/langchain
     - type: produces
       target: catalog/software/agent-frameworks/langgraph
+    - type: produces
+      target: catalog/software/agent-frameworks/deep-agents
+    - type: produces
+      target: catalog/software/evaluation-and-observability/observability-platforms/langsmith

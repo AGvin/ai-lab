@@ -1,0 +1,29 @@
+entity:
+  id: catalog/agent-skills/collections/ponytail
+  type: skill-collection
+  name: Ponytail
+  references:
+    - type: repository
+      source:
+        url: https://github.com/DietrichGebert/ponytail
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: distribution
+      source:
+        url: https://www.npmjs.com/package/@dietrichgebert/ponytail
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://github.com/DietrichGebert/ponytail/blob/main/benchmarks/results/2026-06-18-agentic.md
+      purposes:
+        - research
+      authority: official
+      note: Upstream agentic benchmark and limitations; treat its results as producer-reported evidence rather than independent evaluation.
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/dietrich-gebert

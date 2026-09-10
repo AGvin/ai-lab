@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/xai
+  type: model-producer-view
+  name: xAI models
+  references:
+    - type: official-site
+      source:
+        url: https://x.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.x.ai/
+      purposes:
+        - research
+      authority: official

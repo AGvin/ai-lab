@@ -5,7 +5,7 @@ entity:
   references:
     - type: documentation
       source:
-        url: https://platform.claude.com/docs/en/about-claude/models/overview
+        url: https://platform.claude.com/docs/en/models/overview
       purposes:
         - identification
         - research
@@ -20,4 +20,12 @@ entity:
     - type: produced-by
       target: catalog/producers/a/anthropic
     - type: has-member
+      target: catalog/models/anthropic/claude/fable
+    - type: has-member
+      target: catalog/models/anthropic/claude/opus
+    - type: has-member
       target: catalog/models/anthropic/claude/sonnet
+    - type: has-member
+      target: catalog/models/anthropic/claude/haiku
+    - type: has-member
+      target: catalog/models/anthropic/claude/mythos

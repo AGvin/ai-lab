@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano
+  type: model
+  name: NVIDIA Nemotron 3 Nano
+  references:
+    - type: documentation
+      source:
+        url: https://developer.nvidia.com/topics/ai/nemotron
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://research.nvidia.com/labs/nemotron/Nemotron-3/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/nvidia/nemotron/nemotron-3

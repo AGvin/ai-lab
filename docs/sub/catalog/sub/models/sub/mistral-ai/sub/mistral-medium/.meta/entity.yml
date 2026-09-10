@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/mistral-ai/mistral-medium
+  type: model-family
+  name: Mistral Medium
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/mistral-medium-3-5-26-04
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/collections/mistralai/mistral-medium-35
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai
+    - type: has-member
+      target: catalog/models/mistral-ai/mistral-medium/models/mistral-medium-3-5

@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/tencent
+  type: model-producer-view
+  name: Tencent models
+  references:
+    - type: article
+      source:
+        url: https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Tencent-Hunyuan/Hy4-preview
+      purposes:
+        - research
+      authority: official
