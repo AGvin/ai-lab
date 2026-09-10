@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/training-and-adaptation/fine-tuning
+  name: Fine-Tuning
+  references:
+    - type: documentation
+      source:
+        url: https://csrc.nist.gov/glossary/term/fine_tuning
+      purposes:
+        - research
+      authority: official
+      note: Current NIST terminology describes fine-tuning as adapting a pretrained model through further training for a target task or domain.
+    - type: documentation
+      source:
+        url: https://developers.google.com/machine-learning/glossary
+      purposes:
+        - research
+      authority: official
+      note: Current Google ML terminology distinguishes fine-tuning from pretraining and prompt-based learning and includes full, partial, and added-parameter adaptation strategies.

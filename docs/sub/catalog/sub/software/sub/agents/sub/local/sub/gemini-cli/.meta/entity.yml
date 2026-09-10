@@ -1,0 +1,15 @@
+entity:
+  id: catalog/software/agents/local/gemini-cli
+  type: software
+  name: Gemini CLI
+  references:
+    - type: repository
+      source:
+        url: https://github.com/google-gemini/gemini-cli
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google

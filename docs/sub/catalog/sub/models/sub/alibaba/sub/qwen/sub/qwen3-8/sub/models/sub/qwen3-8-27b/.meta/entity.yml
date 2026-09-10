@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-27b
+  type: model
+  name: Qwen3.8-27B
+  references:
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen3.8
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen3-8

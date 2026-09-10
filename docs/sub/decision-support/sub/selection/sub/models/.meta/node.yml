@@ -1,0 +1,7 @@
+
+node:
+  template: decision-support/selection/models/landing
+  children:
+    template: decision-support/selection/models/guide
+    children:
+      template: decision-support/selection/models/guide

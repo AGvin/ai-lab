@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/selection/models/decision-guides/language-and-research/translation-and-localization
+  type: catalog-index
+  name: Translation and Localization Model Selection

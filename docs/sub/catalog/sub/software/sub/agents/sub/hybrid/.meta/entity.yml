@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/agents/hybrid
+  type: catalog-index
+  name: Hybrid Agents

@@ -1,0 +1,25 @@
+entity:
+  id: concepts/ai-engineering/integration-and-interoperability/agent2agent-protocol
+  name: Agent2Agent Protocol
+  aliases:
+    - A2A
+    - Agent-to-Agent Protocol
+  references:
+    - type: specification
+      source:
+        url: https://a2a-protocol.org/latest/specification/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://a2a-protocol.org/latest/topics/a2a-and-mcp/
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://github.com/a2aproject/A2A/blob/main/docs/announcing-1.0.md
+      purposes:
+        - research
+      authority: official

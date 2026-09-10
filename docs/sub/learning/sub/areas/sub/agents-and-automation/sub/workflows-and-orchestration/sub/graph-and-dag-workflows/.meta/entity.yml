@@ -1,0 +1,32 @@
+entity:
+  id: learning/areas/agents-and-automation/workflows-and-orchestration/graph-and-dag-workflows
+  name: Graph and DAG Workflows
+  references:
+    - type: documentation
+      source:
+        url: https://langchain-ai.github.io/langgraph/concepts/low_level/
+      purposes:
+        - research
+      authority: official
+      note: Exact LangGraph low-level documentation reference preserved from the legacy source for migration provenance; current framework documentation may have moved and should be re-checked before making mutable framework claims.
+    - type: documentation
+      source:
+        url: https://langchain-ai.github.io/langgraph/concepts/persistence/
+      purposes:
+        - research
+      authority: official
+      note: Exact LangGraph persistence reference preserved from the legacy source for migration provenance.
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/graph-flow.html
+      purposes:
+        - research
+      authority: official
+      note: Exact AutoGen GraphFlow reference preserved from the legacy source for migration provenance.
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tutorial/termination.html
+      purposes:
+        - research
+      authority: official
+      note: Exact AutoGen termination reference preserved from the legacy source for migration provenance.

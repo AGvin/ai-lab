@@ -1,0 +1,28 @@
+entity:
+  id: catalog/services/infrastructure/runpod
+  type: service
+  name: Runpod
+  references:
+    - type: official-site
+      source:
+        url: https://www.runpod.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.runpod.io/overview
+      purposes:
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://www.runpod.io/legal/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/r/runpod-inc

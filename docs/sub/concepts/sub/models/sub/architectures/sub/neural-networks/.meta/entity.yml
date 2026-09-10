@@ -1,0 +1,14 @@
+entity:
+  id: concepts/models/architectures/neural-networks
+  name: Neural Networks
+  aliases:
+    - Artificial Neural Networks
+    - ANN
+  references:
+    - type: article
+      source:
+        url: https://www.nature.com/articles/nature14539
+      purposes:
+        - research
+      authority: independent
+      note: Widely cited review describing neural networks as layered computational models that learn representations and mappings through trainable parameters.

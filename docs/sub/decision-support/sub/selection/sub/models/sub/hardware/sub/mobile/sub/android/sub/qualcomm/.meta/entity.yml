@@ -1,0 +1,10 @@
+entity:
+  id: decision-support/selection/models/hardware/mobile/android/qualcomm
+  type: model-selection-hardware-target
+  name: Qualcomm Android Model Selection
+  references:
+    - type: official-site
+      source:
+        url: https://aihub.qualcomm.com/
+      purposes: [research]
+      authority: official

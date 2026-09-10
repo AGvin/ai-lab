@@ -1,0 +1,10 @@
+entity:
+  id: decision-support/selection/models/hardware/single-board/raspberry-pi/cpu
+  type: model-selection-hardware-target
+  name: Raspberry Pi CPU Model Selection
+  references:
+    - type: documentation
+      source:
+        url: https://www.raspberrypi.com/documentation/computers/raspberry-pi.html
+      purposes: [research]
+      authority: official

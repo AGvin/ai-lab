@@ -1,0 +1,22 @@
+entity:
+  id: catalog/specifications/formats/llms-txt
+  name: llms.txt
+  identity_note: Current llmstxt.org v2 proposal artifact for an agent-readable website or documentation index.
+  references:
+    - type: specification
+      source:
+        url: https://llmstxt.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current v2 proposal; upstream source metadata was last modified 2026-08-10 when verified for this package.
+    - type: repository
+      source:
+        url: https://github.com/AnswerDotAI/llms-txt
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/j/jeremy-howard

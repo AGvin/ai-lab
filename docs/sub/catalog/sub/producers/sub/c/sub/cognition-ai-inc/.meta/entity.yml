@@ -1,0 +1,40 @@
+entity:
+  id: catalog/producers/c/cognition-ai-inc
+  type: organization
+  name: Cognition AI, Inc.
+  aliases:
+    - Cognition
+  references:
+    - type: official-site
+      source:
+        url: https://cognition.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://cognition.com/legal/platform-terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current official Platform Terms of Service identifying Cognition AI, Inc.
+    - type: other
+      source:
+        url: https://cognition.com/legal/data-processing-statement
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current official Data Processing Agreement identifying Cognition AI, Inc.
+    - type: other
+      source:
+        url: https://trust.cognition.ai/
+      purposes:
+        - research
+      authority: official
+      note: Official Cognition Trust Center.
+  relations:
+    - type: produces
+      target: catalog/services/development/agents/devin

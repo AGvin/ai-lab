@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/s/shanghai-qianhui-technology-co-ltd
+  type: organization
+  name: Shanghai Qianhui Technology Co., Ltd.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/CherryHQ/cherry-studio
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/CherryHQ/cherry-studio-website/blob/main/src/i18n/lang/en.json
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current official Cherry Studio website source identifies the copyright holder as Shanghai Qianhui Technology Co., Ltd.
+  relations:
+    - type: produces
+      target: catalog/software/interfaces-and-workspaces/model-clients/cherry-studio

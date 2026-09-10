@@ -1,0 +1,15 @@
+entity:
+  id: catalog/software/agent-frameworks/strands-agents
+  type: software
+  name: Strands Agents
+  references:
+    - type: official-site
+      source:
+        url: https://strandsagents.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/amazon-web-services

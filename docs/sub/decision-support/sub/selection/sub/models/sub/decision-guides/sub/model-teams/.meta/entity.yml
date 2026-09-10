@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/selection/models/decision-guides/model-teams
+  type: catalog-index
+  name: Model Teams

@@ -1,0 +1,27 @@
+entity:
+  id: concepts/agents-and-autonomy/workflows-and-orchestration/agent-routing
+  name: Agent Routing
+  aliases:
+    - Router-Specialist
+  references:
+    - type: article
+      source:
+        url: https://www.anthropic.com/engineering/building-effective-agents
+      purposes:
+        - research
+      authority: official
+      note: Anthropic documents routing as a workflow that classifies an input and directs it to a specialized follow-up task or model/handler, establishing bounded dispatch as a reusable orchestration pattern.
+    - type: documentation
+      source:
+        url: https://docs.langchain.com/oss/python/langchain/multi-agent/router
+      purposes:
+        - research
+      authority: official
+      note: Current LangChain documentation defines router-based multi-agent systems as a dedicated classification/dispatch step and explicitly distinguishes routers from ongoing subagent/supervisor orchestration.
+    - type: documentation
+      source:
+        url: https://openai.github.io/openai-agents-python/multi_agent/
+      purposes:
+        - research
+      authority: official
+      note: Current OpenAI Agents SDK documentation includes code-controlled structured classification followed by selection of the next agent as a common orchestration pattern, supporting deterministic or model-assisted bounded agent dispatch.

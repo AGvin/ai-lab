@@ -1,0 +1,25 @@
+entity:
+  id: concepts/machine-learning/data-centric-ml/synthetic-data
+  name: Synthetic Data
+  references:
+    - type: documentation
+      source:
+        url: https://csrc.nist.gov/glossary/term/synthetic_data_generation
+      purposes:
+        - research
+      authority: official
+      note: NIST defines synthetic-data generation in the seed-data setting as creating artificial data that preserve some statistical characteristics, providing a concrete formal usage without exhausting broader simulation/procedural/model-generated cases.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2205.03257
+      purposes:
+        - research
+      authority: independent
+      note: Jordon et al. survey synthetic data, its relationship to ground-truth data, utility, fidelity, and privacy trade-offs, emphasizing that generation purpose and validation determine usefulness.
+    - type: documentation
+      source:
+        url: https://www.nist.gov/blogs/cybersecurity-insights/differentially-private-synthetic-data
+      purposes:
+        - research
+      authority: official
+      note: NIST explicitly distinguishes generic synthetic-data generation from differentially private synthetic data and notes that many synthetic-data methods provide no formal privacy guarantee.

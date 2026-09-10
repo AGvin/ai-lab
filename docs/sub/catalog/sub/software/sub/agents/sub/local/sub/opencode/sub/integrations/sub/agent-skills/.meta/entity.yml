@@ -1,0 +1,10 @@
+entity:
+  id: catalog/software/agents/local/opencode/integrations/agent-skills
+  name: OpenCode Agent Skills
+  references:
+    - type: documentation
+      source:
+        url: https://opencode.ai/docs/skills/
+      purposes:
+        - research
+      authority: official

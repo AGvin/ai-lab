@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/interaction/generation-controls/constrained-generation
+  name: Constrained Generation
+  references:
+    - type: article
+      source:
+        url: https://aclanthology.org/2023.emnlp-main.674/
+      purposes:
+        - research
+      authority: independent
+      note: EMNLP work formalizes grammar-constrained decoding as restricting language-model generation to structures permitted by a formal grammar.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2501.10868
+      purposes:
+        - research
+      authority: independent
+      note: JSONSchemaBench evaluates constrained decoding across efficiency, constraint coverage, and output quality, showing that practical guarantee scope depends on the supported constraint implementation.

@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/i/inngest-inc
+  type: organization
+  name: Inngest Inc
+  references:
+    - type: official-site
+      source:
+        url: https://www.inngest.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.inngest.com/terms
+      purposes:
+        - identification
+      authority: official
+      note: Current terms identify the service owner as Inngest Inc.
+    - type: article
+      source:
+        url: https://www.inngest.com/blog/open-source-event-driven-queue
+      purposes:
+        - research
+      authority: official
+      note: First-party history documents Inngest opening the core platform and its self-hostable development path.
+  relations:
+    - type: produces
+      target: catalog/software/workflow-engines/application-orchestration/inngest

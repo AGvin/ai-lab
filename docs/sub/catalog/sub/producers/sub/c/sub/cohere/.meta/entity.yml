@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/c/cohere
+  type: organization
+  name: Cohere
+  aliases:
+    - Cohere Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://cohere.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/cohere/command

@@ -1,0 +1,31 @@
+entity:
+  id: concepts/ai-engineering/integration-and-interoperability/agent-readable-web-content/llms-txt
+  name: llms.txt
+  references:
+    - type: specification
+      source:
+        url: https://llmstxt.org/
+      purposes:
+        - identification
+        - research
+      authority: upstream
+    - type: repository
+      source:
+        url: https://github.com/AnswerDotAI/llms-txt
+      purposes:
+        - research
+      authority: upstream
+    - type: article
+      source:
+        url: https://www.gitbook.com/blog/what-is-llms-txt
+      purposes:
+        - research
+      authority: independent
+      note: Ecosystem guidance describing llms-full.txt as a broader single-file documentation export and discussing size trade-offs.
+    - type: article
+      source:
+        url: https://www.mintlify.com/blog/simplifying-docs-with-llms-txt
+      purposes:
+        - research
+      authority: independent
+      note: Implementation evidence for automatically generated llms-full.txt documentation bundles; not a universal format specification.

@@ -1,0 +1,3 @@
+entity:
+  id: learning/areas/models/inference-and-generation/decoding-and-sampling/sampling-parameters
+  name: Sampling Parameters

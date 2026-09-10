@@ -1,0 +1,32 @@
+entity:
+  id: catalog/producers/g/google-deepmind
+  type: organization
+  name: Google DeepMind
+  references:
+    - type: official-site
+      source:
+        url: https://deepmind.google/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://deepmind.google/models/model-cards/
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://blog.google/innovation-and-ai/technology/ai/april-ai-update/
+      purposes:
+        - research
+      authority: official
+      note: Official Google announcement creating Google DeepMind as a focused unit combining Google Brain and DeepMind.
+  relations:
+    - type: produces
+      target: catalog/models/google/gemini
+    - type: produces
+      target: catalog/models/google/gemma
+    - type: part-of
+      target: catalog/producers/g/google

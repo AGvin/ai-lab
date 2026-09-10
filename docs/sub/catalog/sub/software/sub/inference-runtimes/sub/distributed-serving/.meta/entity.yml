@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/inference-runtimes/distributed-serving
+  type: catalog-index
+  name: Distributed Serving

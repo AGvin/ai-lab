@@ -1,0 +1,8 @@
+node:
+  template: decision-support/selection/models/hardware/index
+  children:
+    template: decision-support/selection/models/hardware/index
+    children:
+      template: decision-support/selection/models/hardware/target
+      children:
+        template: decision-support/selection/models/hardware/target

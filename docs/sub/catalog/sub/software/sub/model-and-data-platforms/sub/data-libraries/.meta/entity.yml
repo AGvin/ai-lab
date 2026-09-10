@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/model-and-data-platforms/data-libraries
+  type: catalog-index
+  name: Data Libraries

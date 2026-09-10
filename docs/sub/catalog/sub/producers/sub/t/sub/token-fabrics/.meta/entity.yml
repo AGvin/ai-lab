@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/t/token-fabrics
+  type: organization
+  name: Token Fabrics
+  references:
+    - type: official-site
+      source:
+        url: https://big-agi.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Big-AGI site identifies Token Fabrics as the company surface and states that the hosted Free/Pro tiers are hosted by the project operator.
+    - type: repository
+      source:
+        url: https://github.com/enricoros/big-AGI
+      purposes:
+        - research
+      authority: official
+      note: Current upstream repository credits Enrico Ros and Token Fabrics together while presenting Big-AGI as an independent project.
+  relations:
+    - type: operates
+      target: catalog/software/interfaces-and-workspaces/integrated-workspaces/big-agi

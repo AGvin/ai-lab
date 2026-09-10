@@ -1,0 +1,31 @@
+entity:
+  id: catalog/producers/c/crewai-inc
+  type: organization
+  name: CrewAI, Inc.
+  aliases:
+    - CrewAI
+  references:
+    - type: official-site
+      source:
+        url: https://www.crewai.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.crewai.com/terms-of-use
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official Terms of Use identifying CrewAI, Inc. as a Delaware corporation.
+    - type: repository
+      source:
+        url: https://github.com/crewAIInc/crewAI
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agent-frameworks/crewai

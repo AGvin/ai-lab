@@ -1,0 +1,21 @@
+entity:
+  id: concepts/models/training-and-adaptation/fine-tuning/parameter-efficient/qlora
+  name: QLoRA
+  aliases:
+    - Quantized Low-Rank Adaptation
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2305.14314
+      purposes:
+        - research
+      authority: independent
+      note: Original QLoRA paper fine-tunes LoRA adapters through a frozen 4-bit quantized base, introducing NF4, double quantization, and paged optimizers as components of the method.
+    - type: repository
+      source:
+        url: https://github.com/artidoro/qlora
+      purposes:
+        - research
+        - identification
+      authority: upstream
+      note: Official QLoRA implementation provides the original training recipe and concrete compatibility details separately from the abstract method boundary.

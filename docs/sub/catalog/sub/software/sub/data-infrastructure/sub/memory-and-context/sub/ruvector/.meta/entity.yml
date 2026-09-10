@@ -1,0 +1,15 @@
+entity:
+  id: catalog/software/data-infrastructure/memory-and-context/ruvector
+  type: software
+  name: RuVector
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ruvnet/RuVector
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/r/ruv

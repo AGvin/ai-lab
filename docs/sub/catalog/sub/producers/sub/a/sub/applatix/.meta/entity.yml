@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/a/applatix
+  type: organization
+  name: Applatix
+  references:
+    - type: article
+      source:
+        url: https://www.cncf.io/reports/argo-project-journey-report/
+      purposes:
+        - identification
+        - research
+      authority: upstream
+      note: CNCF records that Argo Workflows began at Applatix, later acquired by Intuit.
+    - type: article
+      source:
+        url: https://www.intuit.com/blog/news-social/cloud-native-computing-foundation-accepts-argo-as-an-incubator-project/
+      purposes:
+        - research
+      authority: upstream
+      note: Intuit records that Applatix created Argo and that the project continued after Intuit acquired the company.
+  relations:
+    - type: produces
+      target: catalog/software/workflow-engines/data-and-compute-orchestration/argo-workflows

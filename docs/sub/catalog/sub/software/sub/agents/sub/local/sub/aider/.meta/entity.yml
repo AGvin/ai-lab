@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/agents/local/aider
+  type: software
+  name: Aider
+  references:
+    - type: official-site
+      source:
+        url: https://aider.chat/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://aider.chat/docs/
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Aider-AI/aider
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/aider-ai

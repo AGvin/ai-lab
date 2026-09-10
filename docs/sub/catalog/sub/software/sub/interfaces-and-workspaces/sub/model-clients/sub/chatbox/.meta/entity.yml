@@ -1,0 +1,32 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/model-clients/chatbox
+  type: software
+  name: Chatbox
+  references:
+    - type: official-site
+      source:
+        url: https://chatboxai.app/
+      purposes:
+        - identification
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/chatboxai/chatbox
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current upstream package metadata identifies bennhuang as author.
+    - type: other
+      source:
+        url: https://chatboxai.app/en/help-center/feedback
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current official support page identifies Chatbox AI as operated by Mediocre, LLC.
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/benn-huang
+    - type: maintained-by
+      target: catalog/producers/m/mediocre-llc

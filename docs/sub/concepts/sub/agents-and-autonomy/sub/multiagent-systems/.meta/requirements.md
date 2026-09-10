@@ -1,0 +1,45 @@
+# Documentation Requirements
+
+## Requirements
+
+- Use the reader-facing title `Multi-Agent Systems (MAS)`.
+- Define a multi-agent system as a system containing multiple agent entities whose decisions or actions interact directly or indirectly through communication, shared/environment state, task dependencies, resource competition, delegation, review, negotiation, or other coordination mechanisms.
+- Distinguish a multi-agent system from merely issuing several model calls, using an ensemble, running parallel samples, routing to non-agent components, or assigning several names to one shared decision process. Multiple components must function as agents under the applicable agent definition and participate in a system-level interaction structure.
+- Explain that agents may cooperate, compete, negotiate, review, specialize, delegate, or pursue partially distinct objectives; cooperation is common in LLM applications but is not a universal MAS requirement.
+- Present centralized, hierarchical, peer-to-peer, distributed, synchronous, asynchronous, shared-state, message-passing, environment-mediated, market/auction-like, and hybrid coordination as design dimensions/examples rather than one required taxonomy or architecture.
+- Keep MAS as the **system-level** owner rather than a container for every orchestration/coordination pattern. A selected workflow or coordination mechanism can be used inside a MAS without becoming a child of `multiagent-systems/` in the concept hierarchy.
+- Relate centralized delegation to `workflows-and-orchestration/manager-worker-orchestration/`: orchestrator-worker, supervisor-specialist, and hierarchical supervisor variants use a manager-retains-ownership control pattern while also forming centralized/hierarchical MAS topologies when multiple agents interact.
+- Relate bounded specialist dispatch to `workflows-and-orchestration/agent-routing/`: router-specialist is an orchestration decision about which agent participates next, while the MAS owner describes the surrounding agent system/topology.
+- Relate iterative generator/evaluator roles to `workflows-and-orchestration/evaluator-optimizer/`: the loop is a workflow architecture and can be implemented by multiple agents, models, tools, or humans without making evaluator-optimizer itself a MAS definition.
+- Relate ownership transfer to `coordination-and-communication/handoffs/`: handoffs define task/conversation/control transfer between participants, while peer mesh, swarm, hierarchical, or other handoff graphs are MAS topology/design choices.
+- Relate shared conversational collaboration to `coordination-and-communication/group-chat/`: group chat defines shared-conversation and speaker-turn semantics, while participant organization, roles, authority, and system topology remain MAS/project concerns.
+- Relate shared structured problem-state coordination to `coordination-and-communication/blackboard/`: blackboard defines the shared-state/knowledge-source/control architecture, while the surrounding participant system may be centralized or distributed.
+- Treat `swarm` as a topology/organization label whose implementations can use handoffs or other local coordination policies. Do not equate swarm with handoff itself or materialize it as a child solely from the legacy combined `handoff-swarm` source.
+- Treat advisory-council/review-board arrangements as composed system/application patterns rather than an automatically selected MAS child. They can combine multiple specialist agents, independent or conversational review, evaluation/verification, synthesis/aggregation, decision authority, and human oversight; those semantics retain their applicable owners.
+- Treat `planner-executor` as a cross-owner composition rather than a MAS child: planning/decomposition/replanning belongs to `reasoning-and-decision-making/planning-and-scheduling/`, while execution/orchestration belongs to `workflows-and-orchestration/`; the system may use one or multiple agents.
+- Treat pipeline, graph/DAG, event-driven, MapReduce, sequential, concurrent, and approval-gated structures as workflow/system-design forms rather than MAS children merely because agents occupy nodes/stages/handlers.
+- Treat resource-lifecycle-controller material as primarily `ai-engineering/system-design/` plus reliability/operations/project policy; resource allocation/cleanup can be performed by agents without making the lifecycle controller a distinct MAS concept.
+- Make clear that using several agents does not guarantee specialization, independent evidence, diversity, safety, or higher quality. Agents using similar models, prompts, sources, or shared state can produce strongly correlated errors and reinforce one another.
+- Explain that system correctness depends on role/authority boundaries, communication and handoff contracts, shared-state ownership, conflict resolution, termination/cycle conditions, resource/side-effect coordination, and verification appropriate to the architecture.
+- Distinguish multi-agent coordination from verification: debate, consensus, voting, or agreement among agents is evidence only under an explicitly evaluated aggregation/independence contract and is not automatic proof of correctness.
+- Explain correlation/dependence explicitly. Different agent names/prompts do not establish independent evidence when participants share the same model family/provider, context, retrieval sources, tools, training biases, or preceding conversation.
+- Define identity/authority separately from role labels. A `reviewer`, `supervisor`, `expert`, or `security agent` name must not grant undeclared permissions, data access, trust, or decision authority.
+- Preserve data/permission boundaries across agent interactions. Sharing task state, group history, handoff context, or blackboard entries does not automatically authorize every participant to see all data or execute all available tools/actions.
+- Define shared-resource and side-effect coordination. Multiple agents can race on files, transactions, tickets, deployments, external messages, or other mutable resources; use ownership, reservations/locking, idempotency, approval, reconciliation, and conflict rules appropriate to the system rather than conversational agreement alone.
+- Define termination and cycle behavior appropriate to topology. Hierarchical delegation, peer handoffs, group chat, evaluator loops, and shared-state coordination can each loop or deadlock; bound turns/hops/iterations/time/cost and define escalation/terminal outcomes.
+- Explain that multi-agent systems introduce coordination overhead, extra model/tool calls, state synchronization, latency, communication cost, race/conflict risks, and additional failure modes; more agents are not intrinsically preferable to a single agent or deterministic workflow.
+- Evaluate the complete system, not only individual-agent capability. Useful dimensions include role/delegation/route quality, coordination errors, context leakage/omission, correlated failures, conflict/duplicate side effects, convergence/termination, communication overhead, latency/cost, escalation, and externally adjudicated accepted-result quality.
+- Keep concrete multi-agent frameworks, role registries, agent graphs, speaker selectors, handoff edges, prompts/models/tools, infrastructure/controller designs, organizational simulations, architecture recommendations, benchmark/results, and project-specific team portfolios with their applicable catalog, engineering, evaluation/evidence, learning, or decision owners.
+- Keep `integrated-agent-organization-and-resource-portfolio/` outside canonical concept truth while it remains an unvalidated research/provenance-bearing source; do not absorb it into MAS requirements without a separate evidence/research validation workflow.
+- Use canonical entity references as research inputs for contemporary multi-agent collaboration dimensions and system-level boundaries while linking to the separately owned workflow/coordination mechanisms rather than duplicating them.
+
+## Validation
+
+- The page does not classify multiple model calls, ensembles, or parallel generations as a multi-agent system by default.
+- Cooperation, hierarchy, group chat, handoffs, manager-worker control, shared blackboards, or one particular orchestration pattern is not required by the universal MAS definition.
+- Selected workflow/coordination concepts remain separate owners and are not duplicated as MAS descendants.
+- Agent agreement/majority vote is not treated as independent verification by itself.
+- Different role names are not treated as proof of independent evidence, expertise, permissions, or authority.
+- Multi-agent systems are not presented as inherently more capable, reliable, safe, or efficient than simpler alternatives.
+- Generic workflow/system-design forms and resource-lifecycle concerns are not promoted to MAS children merely because agents participate.
+- Concrete architecture selection, framework configuration, agent-team recommendations, and measured results remain outside this abstract concept owner.

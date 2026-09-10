@@ -1,0 +1,4 @@
+entity:
+  id: catalog/services/evaluation-and-observability/observability-platforms
+  type: catalog-index
+  name: Observability Platform Services

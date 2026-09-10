@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/google/gemma
+  type: model-family
+  name: Gemma
+  references:
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemma/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/google
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google
+    - type: produced-by
+      target: catalog/producers/g/google-deepmind
+    - type: has-member
+      target: catalog/models/google/gemma/gemma-4

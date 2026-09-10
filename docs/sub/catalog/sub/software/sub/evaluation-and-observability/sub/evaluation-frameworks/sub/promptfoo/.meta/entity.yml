@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/promptfoo
+  type: software
+  name: Promptfoo
+  references:
+    - type: documentation
+      source:
+        url: https://www.promptfoo.dev/docs/intro/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/promptfoo/promptfoo
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/promptfoo-inc

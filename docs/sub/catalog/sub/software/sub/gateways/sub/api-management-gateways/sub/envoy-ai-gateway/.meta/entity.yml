@@ -1,0 +1,31 @@
+entity:
+  id: catalog/software/gateways/api-management-gateways/envoy-ai-gateway
+  type: software
+  name: Envoy AI Gateway
+  references:
+    - type: documentation
+      source:
+        url: https://aigateway.envoyproxy.io/docs/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/envoyproxy/ai-gateway
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://aigateway.envoyproxy.io/blog/introducing-envoy-ai-gateway
+      purposes:
+        - research
+      authority: official
+      note: Official project introduction documenting the joint Tetrate and Bloomberg origin.
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/bloomberg-lp
+    - type: produced-by
+      target: catalog/producers/t/tetrate

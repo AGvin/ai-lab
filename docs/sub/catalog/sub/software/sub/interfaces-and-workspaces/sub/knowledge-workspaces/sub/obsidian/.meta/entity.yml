@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/knowledge-workspaces/obsidian
+  type: software
+  name: Obsidian
+  references:
+    - type: official-site
+      source:
+        url: https://obsidian.md/
+      purposes:
+        - identification
+      authority: official
+    - type: documentation
+      source:
+        url: https://obsidian.md/help
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://obsidian.md/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/dynalist-inc

@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/inference/execution/gpu-offloading
+  name: GPU Offloading
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/accelerate/en/concept_guides/big_model_inference
+      purposes:
+        - research
+      authority: official
+      note: Hugging Face Big Model Inference documents explicit placement of model layers/weights across GPU, CPU, and disk and illustrates that `offload` terminology can describe movement away from GPU as well as heterogeneous placement.
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/transformers/models
+      purposes:
+        - research
+      authority: official
+      note: Current Transformers loading documentation shows device maps spanning GPU, CPU, and disk and distinguishes model placement from artifact sharding and loading mechanics.

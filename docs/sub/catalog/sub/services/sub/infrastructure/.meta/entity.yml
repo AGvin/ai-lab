@@ -1,0 +1,4 @@
+entity:
+  id: catalog/services/infrastructure
+  type: catalog-index
+  name: Infrastructure Services

@@ -1,0 +1,18 @@
+entity:
+  id: concepts/agents-and-autonomy/state-and-memory
+  name: State and Memory
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2404.13501
+      purposes:
+        - research
+      authority: independent
+      note: Survey of LLM-agent memory mechanisms organizes how agents store, manage, retrieve, and use information across interactions rather than treating context alone as persistent memory.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2603.07670
+      purposes:
+        - research
+      authority: independent
+      note: Current 2026 survey frames agent memory as persistence, organization, and selective recall across interactions and distinguishes several implementation families and temporal scopes.

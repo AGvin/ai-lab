@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/teams/customer-success-and-support-team
+  type: user-scenario
+  name: Customer Success and Support Team

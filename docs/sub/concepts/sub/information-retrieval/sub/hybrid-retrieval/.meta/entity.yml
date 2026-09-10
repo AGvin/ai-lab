@@ -1,0 +1,20 @@
+entity:
+  id: concepts/information-retrieval/hybrid-retrieval
+  name: Hybrid Retrieval
+  aliases:
+    - Hybrid Search
+  references:
+    - type: article
+      source:
+        url: https://doi.org/10.1145/1571941.1572114
+      purposes:
+        - research
+      authority: independent
+      note: Reciprocal Rank Fusion provides an established rank-based method for combining results from multiple retrieval systems without requiring directly comparable raw scores.
+    - type: article
+      source:
+        url: https://aclanthology.org/2020.emnlp-main.550/
+      purposes:
+        - research
+      authority: independent
+      note: Dense Passage Retrieval provides a representative dense semantic retriever contrasted with sparse lexical retrieval, motivating complementary retrieval signals.

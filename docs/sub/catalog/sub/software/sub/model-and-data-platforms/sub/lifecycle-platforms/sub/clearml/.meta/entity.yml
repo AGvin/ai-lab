@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/model-and-data-platforms/lifecycle-platforms/clearml
+  type: software
+  name: ClearML
+  references:
+    - type: official-site
+      source:
+        url: https://clear.ml/
+      purposes:
+        - identification
+      authority: official
+    - type: documentation
+      source:
+        url: https://clear.ml/docs/latest/docs/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/clearml/clearml
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/clearml-inc
+    - type: maintained-by
+      target: catalog/producers/c/clearml-inc

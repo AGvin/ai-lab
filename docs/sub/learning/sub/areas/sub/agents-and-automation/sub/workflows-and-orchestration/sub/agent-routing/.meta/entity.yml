@@ -1,0 +1,18 @@
+entity:
+  id: learning/areas/agents-and-automation/workflows-and-orchestration/agent-routing
+  name: Agent Routing
+  references:
+    - type: article
+      source:
+        url: https://www.anthropic.com/engineering/building-effective-agents
+      purposes:
+        - research
+      authority: official
+      note: Exact Anthropic routing reference preserved from the legacy Router-Specialist source; stable routing semantics are owned by the canonical Agent Routing concept.
+    - type: documentation
+      source:
+        url: https://docs.langchain.com/oss/python/langchain/multi-agent/subagents
+      purposes:
+        - research
+      authority: official
+      note: Exact legacy LangChain subagents/supervisor-versus-router reference preserved for migration provenance; current canonical Agent Routing metadata uses the newer dedicated router documentation URL.

@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/organizations/high-security-environment
+  type: user-scenario
+  name: High-Security Environment

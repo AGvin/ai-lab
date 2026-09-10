@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/q/qdrant-solutions-gmbh
+  type: organization
+  name: Qdrant Solutions GmbH
+  references:
+    - type: official-site
+      source:
+        url: https://qdrant.tech/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://qdrant.tech/legal/impressum/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official imprint identifying Qdrant Solutions GmbH.
+    - type: repository
+      source:
+        url: https://github.com/qdrant/qdrant
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/data-infrastructure/vector-search/qdrant

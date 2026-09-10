@@ -1,0 +1,27 @@
+entity:
+  id: catalog/models/openai/whisper
+  type: model-family
+  name: Whisper
+  references:
+    - type: repository
+      source:
+        url: https://github.com/openai/whisper
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://cdn.openai.com/papers/whisper.pdf
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/whisper-1
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

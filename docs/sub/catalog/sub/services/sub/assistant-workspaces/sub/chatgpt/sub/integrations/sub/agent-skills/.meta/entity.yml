@@ -1,0 +1,10 @@
+entity:
+  id: catalog/services/assistant-workspaces/chatgpt/integrations/agent-skills
+  name: ChatGPT Agent Skills
+  references:
+    - type: documentation
+      source:
+        url: https://help.openai.com/en/articles/20001069-skills-in-chatgpt
+      purposes:
+        - research
+      authority: official

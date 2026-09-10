@@ -1,0 +1,27 @@
+entity:
+  id: concepts/human-ai-interaction/oversight-and-intervention
+  name: Oversight and Intervention
+  aliases:
+    - Human Oversight
+  references:
+    - type: documentation
+      source:
+        url: https://airc.nist.gov/airmf-resources/airmf/appendices/app-c-ai-risk-management-and-human-ai-interaction/
+      purposes:
+        - research
+      authority: official
+      note: NIST AI RMF guidance distinguishes human roles, responsibilities, oversight needs, and configurations ranging from autonomous to manual decision-making.
+    - type: official-site
+      source:
+        url: https://www.oecd.org/en/topics/ai-principles.html
+      purposes:
+        - research
+      authority: official
+      note: OECD AI Principles call for context-appropriate mechanisms and safeguards supporting human agency and oversight.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2603.19213
+      purposes:
+        - research
+      authority: independent
+      note: Current taxonomy shows that HITL, HOTL, and human oversight terminology is ambiguous and distinguishes constitutive human participation from corrective oversight/intervention.

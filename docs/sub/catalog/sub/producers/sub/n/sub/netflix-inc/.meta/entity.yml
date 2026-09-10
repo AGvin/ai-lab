@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/n/netflix-inc
+  type: organization
+  name: Netflix, Inc.
+  references:
+    - type: other
+      source:
+        url: https://brand.netflix.com/en/terms/
+      purposes:
+        - identification
+      authority: official
+      note: Current Netflix brand terms identify Netflix, Inc.
+    - type: official-site
+      source:
+        url: https://metaflow.org/
+      purposes:
+        - research
+      authority: upstream
+      note: Current Metaflow site states that Metaflow was originally developed at Netflix and open-sourced by Netflix in 2019.
+  relations:
+    - type: produces
+      target: catalog/software/workflow-engines/data-and-compute-orchestration/metaflow

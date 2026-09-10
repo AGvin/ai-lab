@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/inference
+  name: Model Inference
+  references:
+    - type: documentation
+      source:
+        url: https://developers.google.com/machine-learning/glossary
+      purposes:
+        - research
+      authority: official
+      note: Google ML Glossary distinguishes inference as applying a trained model to inputs to make predictions or, for language models, generate a response.
+    - type: documentation
+      source:
+        url: https://onnxruntime.ai/docs/
+      purposes:
+        - research
+      authority: official
+      note: ONNX Runtime separates trained-model inference from training and documents model loading, execution, graph optimization, and hardware execution providers as runtime concerns.

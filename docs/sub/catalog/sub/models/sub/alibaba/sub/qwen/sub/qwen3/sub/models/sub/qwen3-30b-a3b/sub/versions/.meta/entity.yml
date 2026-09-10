@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3/models/qwen3-30b-a3b/versions
+  type: catalog-index
+  name: Qwen3 30B-A3B Versions

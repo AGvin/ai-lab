@@ -1,0 +1,18 @@
+entity:
+  id: catalog/producers/m/maxime-beauchemin
+  type: individual
+  name: Maxime Beauchemin
+  aliases:
+    - Max Beauchemin
+  references:
+    - type: documentation
+      source:
+        url: https://airflow.apache.org/docs/apache-airflow/stable/project.html
+      purposes:
+        - identification
+        - research
+      authority: upstream
+      note: Current Apache Airflow project history identifies Maxime Beauchemin as the person who started Airflow at Airbnb in October 2014.
+  relations:
+    - type: produces
+      target: catalog/software/workflow-engines/data-and-compute-orchestration/apache-airflow

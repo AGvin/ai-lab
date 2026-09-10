@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/a/agno
+  type: organization
+  name: Agno
+  references:
+    - type: official-site
+      source:
+        url: https://www.agno.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/agno-agi/agno
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agent-frameworks/agno

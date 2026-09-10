@@ -1,0 +1,24 @@
+entity:
+  id: catalog/producers/m/menlo-research-pte-ltd
+  type: organization
+  name: Menlo Research Pte Ltd
+  aliases:
+    - Menlo Research
+  references:
+    - type: other
+      source:
+        url: https://www.jan.ai/docs/desktop/privacy-policy
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Jan's first-party privacy policy identifies Menlo Research Pte Ltd as the company providing Jan desktop and website services.
+    - type: official-site
+      source:
+        url: https://www.jan.ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/interfaces-and-workspaces/integrated-workspaces/jan

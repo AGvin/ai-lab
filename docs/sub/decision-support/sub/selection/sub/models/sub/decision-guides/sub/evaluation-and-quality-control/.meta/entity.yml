@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/selection/models/decision-guides/evaluation-and-quality-control
+  type: catalog-index
+  name: Evaluation and Quality Control Model Selection

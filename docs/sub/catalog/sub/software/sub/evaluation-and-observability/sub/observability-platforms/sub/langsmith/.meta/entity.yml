@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/evaluation-and-observability/observability-platforms/langsmith
+  type: software
+  name: LangSmith
+  references:
+    - type: documentation
+      source:
+        url: https://docs.langchain.com/langsmith/observability
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.langchain.com/langsmith/self-hosted
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/langchain-inc

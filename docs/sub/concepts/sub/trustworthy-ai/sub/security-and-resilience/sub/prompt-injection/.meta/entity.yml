@@ -1,0 +1,18 @@
+entity:
+  id: concepts/trustworthy-ai/security-and-resilience/prompt-injection
+  name: Prompt Injection
+  references:
+    - type: documentation
+      source:
+        url: https://doi.org/10.6028/NIST.AI.100-2e2025
+      purposes:
+        - research
+      authority: official
+      note: NIST AI 100-2 E2025 includes prompt injection and indirect prompt injection in its current Generative-AI adversarial-ML taxonomy and distinguishes direct prompting attacks from attacks enabled through controlled resources/content.
+    - type: documentation
+      source:
+        url: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+      purposes:
+        - research
+      authority: independent
+      note: OWASP LLM01:2025 defines prompt injection vulnerabilities, distinguishes direct and indirect prompt injection, describes multimodal/external-content attack paths, and emphasizes layered application controls rather than treating RAG, fine-tuning, or prompting as complete prevention.

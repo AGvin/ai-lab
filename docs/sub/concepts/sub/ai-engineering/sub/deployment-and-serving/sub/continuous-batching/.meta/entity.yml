@@ -1,0 +1,21 @@
+entity:
+  id: concepts/ai-engineering/deployment-and-serving/continuous-batching
+  name: Continuous Batching
+  aliases:
+    - Iteration-Level Batching
+    - Iteration-Level Scheduling
+  references:
+    - type: article
+      source:
+        url: https://www.usenix.org/conference/osdi22/presentation/yu
+      purposes:
+        - research
+      authority: independent
+      note: Orca introduces iteration-level scheduling for autoregressive model serving, allowing the scheduler to change the active batch between execution iterations instead of waiting for a whole static request batch to finish.
+    - type: documentation
+      source:
+        url: https://docs.vllm.ai/en/latest/api/vllm/config/scheduler/
+      purposes:
+        - research
+      authority: upstream
+      note: Current vLLM scheduler configuration exposes active-sequence, batched-token, admission, policy, prefill, and asynchronous scheduling controls, illustrating modern continuous serving schedulers without making one runtime's policy the canonical definition.

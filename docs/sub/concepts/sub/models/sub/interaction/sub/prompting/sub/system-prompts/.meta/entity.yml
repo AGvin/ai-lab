@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/interaction/prompting/system-prompts
+  name: System Prompts
+  references:
+    - type: documentation
+      source:
+        url: https://model-spec.openai.com/
+      purposes:
+        - research
+      authority: official
+      note: OpenAI's current instruction model documents system-level instructions within a broader authority hierarchy, demonstrating that system prompts are interface-governed instruction sources rather than an intrinsic model primitive with universal semantics.
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/release-notes/system-prompts
+      purposes:
+        - research
+      authority: official
+      note: Anthropic documents product system prompts and their ongoing updates, illustrating product-specific use and lifecycle of system-level instructions.

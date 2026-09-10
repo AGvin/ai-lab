@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-coder/models/qwen3-coder-480b-a35b-instruct
+  type: model
+  name: Qwen3-Coder 480B-A35B Instruct
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://qwenlm.github.io/blog/qwen3-coder/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen3-coder

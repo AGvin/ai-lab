@@ -1,0 +1,34 @@
+entity:
+  id: catalog/services/knowledge-workspaces/sana-agents
+  type: service
+  name: Sana Agents
+  references:
+    - type: official-site
+      source:
+        url: https://sanalabs.com/products/sana/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://sanalabs.com/products/sana/integrations
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://sanalabs.com/download/legal/agents-product-terms.pdf
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: specification
+      source:
+        url: https://sanalabs.com/download/legal/agents-security-whitepaper.pdf
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/sana-labs-ab

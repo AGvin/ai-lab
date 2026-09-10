@@ -1,0 +1,16 @@
+entity:
+  id: catalog/services/assistant-workspaces/chatgpt/integrations/plugins
+  name: ChatGPT Plugins
+  references:
+    - type: documentation
+      source:
+        url: https://learn.chatgpt.com/docs/plugins
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://learn.chatgpt.com/docs/build-plugins
+      purposes:
+        - research
+      authority: official

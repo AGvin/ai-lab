@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/professionals/researcher
+  type: user-scenario
+  name: Researcher

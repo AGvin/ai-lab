@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/o/open-gsd
+  type: organization
+  name: Open GSD
+  references:
+    - type: official-site
+      source:
+        url: https://opengsd.net
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/open-gsd
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official GitHub organization profile identifying Open GSD.
+    - type: repository
+      source:
+        url: https://github.com/open-gsd/gsd-core
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: maintains
+      target: catalog/software/development-tools/agentic-development-systems/get-shit-done

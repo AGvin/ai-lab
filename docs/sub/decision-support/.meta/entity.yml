@@ -1,0 +1,5 @@
+
+entity:
+  id: decision-support
+  type: decision-support-index
+  name: Decision Support

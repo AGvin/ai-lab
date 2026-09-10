@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/development-tools/code-review-tools/qodo
+  type: software
+  name: Qodo
+  references:
+    - type: official-site
+      source:
+        url: https://www.qodo.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.qodo.ai/code-review
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://www.qodo.ai/terms/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/codium-ltd

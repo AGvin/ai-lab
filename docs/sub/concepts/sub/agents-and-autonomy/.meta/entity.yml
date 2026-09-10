@@ -1,0 +1,18 @@
+entity:
+  id: concepts/agents-and-autonomy
+  name: Agents and Autonomy
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2210.03629
+      purposes:
+        - research
+      authority: independent
+      note: ReAct provides an influential model-driven observe-reason-act interaction pattern in which actions obtain external information and affect subsequent decisions.
+    - type: article
+      source:
+        url: https://www.anthropic.com/engineering/building-effective-agents
+      purposes:
+        - research
+      authority: official
+      note: Anthropic explicitly distinguishes model-directed agents from predefined workflows while acknowledging that industry usage of `agent` varies.

@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/black-forest-labs/flux
+  type: model-family
+  name: FLUX
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/black-forest-labs
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/black-forest-labs
+    - type: has-member
+      target: catalog/models/black-forest-labs/flux/flux-1

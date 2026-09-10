@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/agents/hybrid/factory-droid
+  type: software
+  name: Factory Droid
+  references:
+    - type: official-site
+      source:
+        url: https://factory.ai/product/droids
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.factory.ai/cli/getting-started/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.factory.ai/enterprise/network-and-deployment
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/f/san-francisco-ai-factory-inc

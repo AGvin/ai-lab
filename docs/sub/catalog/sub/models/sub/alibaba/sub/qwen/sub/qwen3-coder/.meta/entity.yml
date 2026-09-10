@@ -1,0 +1,30 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-coder
+  type: model-series
+  name: Qwen3-Coder
+  references:
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen3-Coder
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://qwenlm.github.io/blog/qwen3-coder/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen
+    - type: produced-by
+      target: catalog/producers/q/qwen-team
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-coder/models/qwen3-coder-30b-a3b-instruct
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-coder/models/qwen3-coder-480b-a35b-instruct
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-coder/models/qwen3-coder-next

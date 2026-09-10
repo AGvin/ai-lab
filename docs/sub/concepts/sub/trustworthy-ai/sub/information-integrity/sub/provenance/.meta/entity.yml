@@ -1,0 +1,18 @@
+entity:
+  id: concepts/trustworthy-ai/information-integrity/provenance
+  name: Provenance
+  references:
+    - type: specification
+      source:
+        url: https://www.w3.org/TR/prov-overview/
+      purposes:
+        - research
+      authority: official
+      note: W3C PROV defines provenance through entities, activities, and agents involved in producing or influencing data or things, providing a general interoperable model for origin, derivation, attribution, processing, and related history rather than tying provenance to one AI artifact type.
+    - type: specification
+      source:
+        url: https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html
+      purposes:
+        - research
+      authority: official
+      note: C2PA 2.4 specializes provenance and authenticity for digital content using verifiable manifests, claims, signatures, and content bindings while explicitly separating tamper-evident provenance validation from judgments that the represented content or assertions are true.

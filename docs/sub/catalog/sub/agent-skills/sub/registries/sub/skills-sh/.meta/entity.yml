@@ -1,0 +1,27 @@
+entity:
+  id: catalog/agent-skills/registries/skills-sh
+  type: skill-registry
+  name: skills.sh
+  aliases:
+    - Vercel Skills CLI
+  references:
+    - type: official-site
+      source:
+        url: https://skills.sh/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.skills.sh/docs/cli
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/vercel-labs/skills
+      purposes:
+        - identification
+        - research
+      authority: official

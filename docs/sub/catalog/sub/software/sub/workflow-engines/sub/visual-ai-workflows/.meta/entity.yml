@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/workflow-engines/visual-ai-workflows
+  type: catalog-index
+  name: Visual AI Workflows

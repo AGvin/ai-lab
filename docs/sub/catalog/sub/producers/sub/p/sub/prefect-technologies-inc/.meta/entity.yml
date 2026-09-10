@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/p/prefect-technologies-inc
+  type: organization
+  name: Prefect Technologies, Inc.
+  references:
+    - type: other
+      source:
+        url: https://www.prefect.io/legal/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Prefect terms identify the legal company as Prefect Technologies, Inc.
+    - type: documentation
+      source:
+        url: https://docs.prefect.io/v3/get-started/index
+      purposes:
+        - research
+      authority: official
+      note: Prefect's current documentation records the project's 2018 origin and the creation of its Python-native orchestration system.
+  relations:
+    - type: produces
+      target: catalog/software/workflow-engines/data-and-compute-orchestration/prefect

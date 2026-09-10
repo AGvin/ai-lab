@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/data-infrastructure/memory-and-context
+  type: catalog-index
+  name: Memory and Context

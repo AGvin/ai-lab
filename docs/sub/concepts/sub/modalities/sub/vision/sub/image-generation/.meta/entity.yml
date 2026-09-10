@@ -1,0 +1,25 @@
+entity:
+  id: concepts/modalities/vision/image-generation
+  name: Image Generation
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1406.2661
+      purposes:
+        - research
+      authority: independent
+      note: Generative Adversarial Networks establish an adversarial learned generative-model family widely used for image synthesis and demonstrate that image generation is not tied to diffusion architectures.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1601.06759
+      purposes:
+        - research
+      authority: independent
+      note: PixelRNN/PixelCNN models demonstrate autoregressive image generation by directly modeling image-pixel distributions, providing a second major non-diffusion synthesis family.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2006.11239
+      purposes:
+        - research
+      authority: independent
+      note: Denoising Diffusion Probabilistic Models provide a major modern diffusion-based image-generation family while remaining one architecture choice within the broader image-generation concept.

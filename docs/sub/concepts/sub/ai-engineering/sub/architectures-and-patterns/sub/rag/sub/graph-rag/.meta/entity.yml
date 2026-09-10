@@ -1,0 +1,21 @@
+entity:
+  id: concepts/ai-engineering/architectures-and-patterns/rag/graph-rag
+  name: GraphRAG
+  aliases:
+    - Graph RAG
+    - Graph Retrieval-Augmented Generation
+  references:
+    - type: article
+      source:
+        url: https://doi.org/10.1145/3777378
+      purposes:
+        - research
+      authority: independent
+      note: Peng et al. survey GraphRAG as a broad family spanning graph-based indexing, graph-guided retrieval, and graph-enhanced generation across different graph sources and system designs.
+    - type: article
+      source:
+        url: https://www.microsoft.com/en-us/research/publication/from-local-to-global-a-graph-rag-approach-to-query-focused-summarization/
+      purposes:
+        - research
+      authority: independent
+      note: Edge et al. introduce Microsoft's influential GraphRAG approach using an LLM-derived entity graph, communities, and summaries for global query-focused summarization; this is a concrete specialization rather than the universal GraphRAG definition.

@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/x/xiaomi-mimo-team
+  type: team
+  name: Xiaomi MiMo Team
+  references:
+    - type: official-site
+      source:
+        url: https://mimo.xiaomi.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/XiaomiMiMo
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/xiaomi-mimo/mimo

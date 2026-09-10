@@ -1,0 +1,25 @@
+entity:
+  id: concepts/ai-engineering/reliability-and-resilience
+  name: Reliability and Resilience
+  references:
+    - type: documentation
+      source:
+        url: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/
+      purposes:
+        - research
+      authority: official
+      note: NIST AI RMF distinguishes reliability from resilience and frames resilient systems as able to withstand adverse events or changes, degrade safely, and recover.
+    - type: article
+      source:
+        url: https://builder.aws.com/content/3Ev0BENTyBr0XxzRk5FDZzgNYos/making-retries-safe-with-idempotent-apis
+      purposes:
+        - research
+      authority: official
+      note: AWS Builders Library explains idempotent request contracts for making retries safe and scopes idempotency to operation semantics rather than a universal retry assumption.
+    - type: documentation
+      source:
+        url: https://sre.google/sre-book/addressing-cascading-failures/
+      purposes:
+        - research
+      authority: official
+      note: Google SRE documents retry amplification, retry budgets, exponential backoff and jitter, and the need to classify retryable failures during cascading-failure control.

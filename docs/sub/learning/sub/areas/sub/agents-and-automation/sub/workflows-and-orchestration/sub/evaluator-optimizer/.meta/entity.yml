@@ -1,0 +1,11 @@
+entity:
+  id: learning/areas/agents-and-automation/workflows-and-orchestration/evaluator-optimizer
+  name: Evaluator-Optimizer
+  references:
+    - type: article
+      source:
+        url: https://www.anthropic.com/engineering/building-effective-agents
+      purposes:
+        - research
+      authority: official
+      note: Exact Anthropic evaluator-optimizer reference preserved from the legacy source; stable pattern semantics are owned by the canonical Evaluator-Optimizer concept.

@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/d/dagworks-inc
+  type: organization
+  name: DAGWorks, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://www.dagworks.io/about
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: DAGWorks identifies its founders as the original creators of Apache Burr.
+    - type: other
+      source:
+        url: https://www.dagworks.io/terms-of-use
+      purposes:
+        - identification
+      authority: official
+      note: Current DAGWorks terms identify the company as DAGWorks, Inc.
+    - type: article
+      source:
+        url: https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=345377613
+      purposes:
+        - research
+      authority: upstream
+      note: The Apache Incubator proposal records the original Burr codebase under DAGWorks Inc. before transfer into the ASF incubation process.
+  relations:
+    - type: produces
+      target: catalog/software/workflow-engines/application-orchestration/apache-burr

@@ -1,0 +1,31 @@
+entity:
+  id: catalog/models/nvidia/nemotron/nemotron-3
+  type: model-series
+  name: Nemotron 3
+  references:
+    - type: documentation
+      source:
+        url: https://developer.nvidia.com/topics/ai/nemotron
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/nvidia/nemotron
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-super
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-ultra
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano-omni
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-lightning

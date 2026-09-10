@@ -1,0 +1,10 @@
+entity:
+  id: decision-support/selection/models/hardware/single-board/raspberry-pi/hailo-8
+  type: model-selection-hardware-target
+  name: Raspberry Pi Hailo-8 Model Selection
+  references:
+    - type: documentation
+      source:
+        url: https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html
+      purposes: [research]
+      authority: official

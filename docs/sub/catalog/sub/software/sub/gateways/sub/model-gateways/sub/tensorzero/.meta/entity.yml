@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/gateways/model-gateways/tensorzero
+  type: software
+  name: TensorZero
+  references:
+    - type: official-site
+      source:
+        url: https://www.tensorzero.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/tensorzero/tensorzero
+      purposes:
+        - identification
+        - research
+      authority: official

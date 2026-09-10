@@ -1,0 +1,20 @@
+entity:
+  id: concepts/modalities/vision/inpainting
+  name: Image Inpainting
+  aliases:
+    - Inpainting
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1801.07892
+      purposes:
+        - research
+      authority: independent
+      note: Generative Image Inpainting with Contextual Attention defines large-hole image completion as synthesizing plausible missing-region structure and texture using surrounding image context.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1804.07723
+      purposes:
+        - research
+      authority: independent
+      note: Partial Convolutions for irregular-hole inpainting demonstrate arbitrary mask geometry and explicitly separate valid known pixels from missing regions during learned completion.

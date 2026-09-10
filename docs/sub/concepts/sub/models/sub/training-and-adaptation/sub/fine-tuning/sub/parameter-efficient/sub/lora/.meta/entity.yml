@@ -1,0 +1,21 @@
+entity:
+  id: concepts/models/training-and-adaptation/fine-tuning/parameter-efficient/lora
+  name: Low-Rank Adaptation
+  aliases:
+    - LoRA
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2106.09685
+      purposes:
+        - research
+      authority: independent
+      note: Original LoRA paper freezes pretrained weights and represents selected weight updates through trainable low-rank factor matrices.
+    - type: repository
+      source:
+        url: https://github.com/microsoft/LoRA
+      purposes:
+        - research
+        - identification
+      authority: upstream
+      note: Official loralib implementation documents LoRA integration and deployment/merge behavior separately from the abstract low-rank adaptation method.

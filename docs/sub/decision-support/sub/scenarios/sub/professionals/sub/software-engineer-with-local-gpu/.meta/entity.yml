@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/professionals/software-engineer-with-local-gpu
+  type: user-scenario
+  name: Software Engineer With Local GPU

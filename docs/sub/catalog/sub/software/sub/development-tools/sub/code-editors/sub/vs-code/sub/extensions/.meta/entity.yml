@@ -1,0 +1,12 @@
+entity:
+  id: catalog/software/development-tools/code-editors/vs-code/extensions
+  type: catalog-index
+  name: Visual Studio Code Extensions
+  references:
+    - type: registry
+      source:
+        url: https://marketplace.visualstudio.com/vscode
+      purposes:
+        - identification
+        - research
+      authority: official

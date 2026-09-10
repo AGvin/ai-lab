@@ -1,0 +1,31 @@
+entity:
+  id: catalog/producers/a/apple-inc
+  type: organization
+  name: Apple Inc.
+  aliases:
+    - Apple
+  references:
+    - type: official-site
+      source:
+        url: https://www.apple.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://www.apple.com/legal/internet-services/terms/site.html
+      purposes:
+        - identification
+      authority: official
+      note: Apple website terms identify Apple Inc.
+    - type: article
+      source:
+        url: https://machinelearning.apple.com/research/exploring-llms-mlx-m5
+      purposes:
+        - research
+      authority: official
+      note: Apple Machine Learning Research describes MLX LM as the MLX package for LLM generation and fine-tuning.
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/mlx-lm

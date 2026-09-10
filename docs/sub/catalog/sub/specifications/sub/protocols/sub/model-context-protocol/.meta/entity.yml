@@ -1,0 +1,27 @@
+entity:
+  id: catalog/specifications/protocols/model-context-protocol
+  name: Model Context Protocol
+  aliases:
+    - MCP
+  references:
+    - type: specification
+      source:
+        url: https://modelcontextprotocol.io/specification/2026-07-28
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current specification revision verified during the 2026-09-02 migration package; re-check the current official revision before updating versioned normative requirements.
+    - type: specification
+      source:
+        url: https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/schema/2026-07-28/schema.json
+      purposes:
+        - research
+      authority: official
+      note: Versioned protocol schema for the 2026-07-28 specification revision.
+    - type: repository
+      source:
+        url: https://github.com/modelcontextprotocol/modelcontextprotocol
+      purposes:
+        - research
+      authority: official

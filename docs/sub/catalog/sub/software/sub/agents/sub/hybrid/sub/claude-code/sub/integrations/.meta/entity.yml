@@ -1,0 +1,3 @@
+entity:
+  id: catalog/software/agents/hybrid/claude-code/integrations
+  name: Claude Code Integrations

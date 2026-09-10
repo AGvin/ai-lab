@@ -1,0 +1,27 @@
+entity:
+  id: concepts/ai-engineering/integration-and-interoperability/model-context-protocol
+  name: Model Context Protocol
+  aliases:
+    - MCP
+  references:
+    - type: specification
+      source:
+        url: https://modelcontextprotocol.io/specification/2026-07-28
+      purposes:
+        - research
+      authority: official
+      note: The final 2026-07-28 MCP specification is the current normative source for MCP architecture, capabilities, extensions, security, and interoperability behavior; canonical concept content uses it to establish current roles and scope while deferring exact normative protocol details to the formal specification owner.
+    - type: article
+      source:
+        url: https://blog.modelcontextprotocol.io/posts/2026-07-28/
+      purposes:
+        - research
+      authority: official
+      note: The official 2026-07-28 release explains the largest protocol revision since launch, including the move to a stateless core, removal of the initialization/session model, extension-based capabilities, authorization hardening, and formal deprecation lifecycle that make older lifecycle descriptions unsafe as timeless concept facts.
+    - type: article
+      source:
+        url: https://blog.modelcontextprotocol.io/posts/mcp-roadmap/
+      purposes:
+        - research
+      authority: official
+      note: The August 2026 roadmap documents MCP's continuing evolution beyond early local-tool wiring toward agentic messaging, HTTP-native interoperability, identity, enterprise security, improved primitives, and SDK ergonomics; roadmap items are directional evidence rather than shipped specification facts.

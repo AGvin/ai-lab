@@ -1,0 +1,19 @@
+entity:
+  id: catalog/services/evaluation-and-observability/observability-platforms/braintrust
+  type: service
+  name: Braintrust
+  references:
+    - type: documentation
+      source:
+        url: https://www.braintrust.dev/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.braintrust.dev/blog/security-data-control
+      purposes:
+        - research
+      authority: official
+      note: Current first-party explanation of Braintrust's hybrid control-plane/data-plane deployment boundary.

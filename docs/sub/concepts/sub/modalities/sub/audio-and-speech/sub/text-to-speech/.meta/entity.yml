@@ -1,0 +1,21 @@
+entity:
+  id: concepts/modalities/audio-and-speech/text-to-speech
+  name: Text-to-Speech
+  aliases:
+    - TTS
+    - Speech Synthesis
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1712.05884
+      purposes:
+        - research
+      authority: independent
+      note: Tacotron 2 provides a canonical neural TTS pipeline that maps text to acoustic features and then synthesizes waveform audio with a neural vocoder.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2106.06103
+      purposes:
+        - research
+      authority: independent
+      note: VITS demonstrates end-to-end conditional speech synthesis and shows that a separate text-to-spectrogram plus standalone-vocoder pipeline is not a universal TTS architecture requirement.

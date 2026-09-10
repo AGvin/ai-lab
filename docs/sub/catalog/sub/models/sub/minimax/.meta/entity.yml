@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/minimax
+  type: model-producer-view
+  name: MiniMax models
+  references:
+    - type: official-site
+      source:
+        url: https://www.minimax.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.minimax.io/about
+      purposes:
+        - research
+      authority: official

@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/microsoft/phi
+  type: model-family
+  name: Phi
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/microsoft
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft
+    - type: has-member
+      target: catalog/models/microsoft/phi/phi-4

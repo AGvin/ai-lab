@@ -1,0 +1,29 @@
+entity:
+  id: catalog/models/davidau/qwen3-derived/models/qwen3-the-xiaolong-josiefied-omega-directive-22b
+  type: model
+  name: Qwen3 The Xiaolong Josiefied Omega Directive 22B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Omega-Directive-22B-uncensored-abliterated
+      purposes:
+        - research
+      authority: upstream
+      note: Immediate parent model in the published merge lineage.
+    - type: registry
+      source:
+        url: https://huggingface.co/DavidAU/Qwen3-The-Josiefied-Omega-Directive-22B-uncensored-abliterated
+      purposes:
+        - research
+      authority: upstream
+      note: Immediate parent model in the published merge lineage.
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/davidau

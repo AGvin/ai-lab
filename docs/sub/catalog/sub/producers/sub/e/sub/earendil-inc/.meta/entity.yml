@@ -1,0 +1,31 @@
+entity:
+  id: catalog/producers/e/earendil-inc
+  type: organization
+  name: Earendil Inc.
+  aliases:
+    - Earendil Works
+  references:
+    - type: official-site
+      source:
+        url: https://pi.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://pi.dev/news/2026/5/7/pi-has-a-new-home
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official Pi announcement documenting the project's move to Earendil.
+    - type: repository
+      source:
+        url: https://github.com/earendil-works/pi
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: maintains
+      target: catalog/software/agents/local/pi

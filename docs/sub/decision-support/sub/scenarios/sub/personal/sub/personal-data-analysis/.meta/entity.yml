@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/personal/personal-data-analysis
+  type: user-scenario
+  name: Personal Data Analysis

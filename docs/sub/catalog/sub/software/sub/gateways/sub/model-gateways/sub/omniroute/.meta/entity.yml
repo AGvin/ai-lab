@@ -1,0 +1,25 @@
+entity:
+  id: catalog/software/gateways/model-gateways/omniroute
+  type: software
+  name: OmniRoute
+  references:
+    - type: official-site
+      source:
+        url: https://omniroute.online/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://omniroute.online/docs
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/diegosouzapw/OmniRoute
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/e/enrico-ros
+  type: individual
+  name: Enrico Ros
+  references:
+    - type: other
+      source:
+        url: https://github.com/enricoros
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/enricoros/big-AGI
+      purposes:
+        - research
+      authority: official
+      note: Current upstream Big-AGI repository and release history identify Enrico Ros as the project author/maintainer surface.
+  relations:
+    - type: produces
+      target: catalog/software/interfaces-and-workspaces/integrated-workspaces/big-agi

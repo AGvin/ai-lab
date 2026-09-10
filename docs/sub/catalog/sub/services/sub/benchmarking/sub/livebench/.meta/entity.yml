@@ -1,0 +1,12 @@
+entity:
+  id: catalog/services/benchmarking/livebench
+  type: service
+  name: LiveBench
+  references:
+    - type: official-site
+      source:
+        url: https://livebench.ai/
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/gateways/api-management-gateways
+  type: catalog-index
+  name: API Management Gateways

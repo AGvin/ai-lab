@@ -1,0 +1,13 @@
+entity:
+  id: concepts/information-retrieval
+  name: Information Retrieval
+  aliases:
+    - IR
+  references:
+    - type: documentation
+      source:
+        url: https://nlp.stanford.edu/IR-book/
+      purposes:
+        - research
+      authority: independent
+      note: Established information-retrieval reference covering document representation, indexing, scoring, ranking, retrieval models, and evaluation.

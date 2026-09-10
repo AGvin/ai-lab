@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/teams/product-management-team
+  type: user-scenario
+  name: Product Management Team

@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/model-and-data-platforms/versioning-and-lineage
+  type: catalog-index
+  name: Versioning and Lineage

@@ -1,0 +1,20 @@
+entity:
+  id: concepts/models/training-and-adaptation/fine-tuning/parameter-efficient
+  name: Parameter-Efficient Fine-Tuning
+  aliases:
+    - PEFT
+  references:
+    - type: article
+      source:
+        url: https://doi.org/10.1007/s10462-025-11236-4
+      purposes:
+        - research
+      authority: independent
+      note: Current survey organizes PEFT across additive modules, reparameterization/low-rank methods, selective updates, prompt-based methods, and quantization-assisted approaches rather than treating PEFT as one adapter architecture.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2106.09685
+      purposes:
+        - research
+      authority: independent
+      note: LoRA provides a canonical reparameterization-based PEFT example that freezes pretrained weights and trains compact low-rank updates.

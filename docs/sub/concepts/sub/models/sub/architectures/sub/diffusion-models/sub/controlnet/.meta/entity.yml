@@ -1,0 +1,20 @@
+entity:
+  id: concepts/models/architectures/diffusion-models/controlnet
+  name: ControlNet
+  references:
+    - type: article
+      source:
+        url: https://doi.org/10.1109/ICCV51070.2023.00355
+      purposes:
+        - identification
+        - research
+      authority: independent
+      note: Zhang, Rao, and Agrawala introduce ControlNet as a neural-network architecture that adds spatial conditioning controls to large pretrained text-to-image diffusion models using locked pretrained blocks, trainable copies, and zero-initialized connections in the original formulation.
+    - type: repository
+      source:
+        url: https://github.com/lllyasviel/ControlNet
+      purposes:
+        - identification
+        - research
+      authority: upstream
+      note: The authors' reference implementation documents the original locked/trainable-copy and zero-convolution architecture and concrete Stable Diffusion control models without making those checkpoints the generic concept identity.

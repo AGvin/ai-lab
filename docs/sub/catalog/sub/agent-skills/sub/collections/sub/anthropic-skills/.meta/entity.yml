@@ -1,0 +1,15 @@
+entity:
+  id: catalog/agent-skills/collections/anthropic-skills
+  type: skill-collection
+  name: Anthropic Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/anthropics/skills
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/anthropic

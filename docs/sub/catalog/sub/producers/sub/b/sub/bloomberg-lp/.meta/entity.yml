@@ -1,0 +1,31 @@
+entity:
+  id: catalog/producers/b/bloomberg-lp
+  type: organization
+  name: Bloomberg L.P.
+  aliases:
+    - Bloomberg
+  references:
+    - type: official-site
+      source:
+        url: https://www.bloomberg.com/company/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.bloomberg.com/company/policies/tax-policy/
+      purposes:
+        - identification
+      authority: official
+      note: Current Bloomberg policy identifying Bloomberg L.P. as the company.
+    - type: article
+      source:
+        url: https://aigateway.envoyproxy.io/blog/introducing-envoy-ai-gateway
+      purposes:
+        - research
+      authority: official
+      note: Official Envoy AI Gateway introduction documenting the joint Tetrate and Bloomberg project origin.
+  relations:
+    - type: produces
+      target: catalog/software/gateways/api-management-gateways/envoy-ai-gateway

@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/automation
+  type: catalog-index
+  name: Automation

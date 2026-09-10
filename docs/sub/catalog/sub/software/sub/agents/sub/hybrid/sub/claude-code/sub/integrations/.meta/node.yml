@@ -1,0 +1,4 @@
+node:
+  template: catalog/category
+  children:
+    template: catalog/integrations/integration

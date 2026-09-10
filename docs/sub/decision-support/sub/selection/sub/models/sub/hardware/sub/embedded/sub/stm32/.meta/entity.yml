@@ -1,0 +1,10 @@
+entity:
+  id: decision-support/selection/models/hardware/embedded/stm32
+  type: model-selection-hardware-target
+  name: STM32 Embedded Model Selection
+  references:
+    - type: official-site
+      source:
+        url: https://www.st.com/en/development-tools/stm32cubeai.html
+      purposes: [research]
+      authority: official

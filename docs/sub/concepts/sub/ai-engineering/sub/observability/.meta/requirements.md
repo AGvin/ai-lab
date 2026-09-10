@@ -1,0 +1,35 @@
+# Documentation Requirements
+
+## Requirements
+
+- Use the reader-facing title `AI System Observability` and introduce `observability` as the common shorter term.
+- Define observability as the system capability to understand, diagnose, and evaluate behavior/state from emitted telemetry and recorded evidence without requiring operators to add ad-hoc instrumentation after every unknown failure; in AI systems the observable path can span prompts/context construction, retrieval, routing, model calls, tools, validation, state transitions, external services, and user/system outcomes.
+- Distinguish observability from monitoring. Monitoring commonly checks known signals, thresholds, health, or SLOs; observability provides sufficiently rich/correlated evidence to investigate both expected and novel behavior. Monitoring is an important use of observability data, not a complete synonym.
+- Present logs/events, metrics, traces/spans, profiles/runtime telemetry, evaluation/outcome signals, and domain-specific structured records as complementary evidence families. Do not require one vendor/backend or claim the classic three telemetry signals are the only possible observability evidence.
+- Merge the legacy `tracing` concept here as an observability technique. Define a trace as a correlated representation of the path/units of work for one request/workflow/execution, commonly composed of spans with identity, timing, parent/child or link relationships, status, events, and selected attributes.
+- Distinguish trace structure from semantic causality. Parent/child/span order shows recorded execution/context relationships, but it does not prove that one model output, retrieval result, or tool event semantically caused another unless the system evidence supports that conclusion.
+- Require stable/correlatable execution identity where needed to connect events across asynchronous/distributed model, retrieval, tool, queue, and service stages. Trace/span IDs, workflow/run IDs, request IDs, links, or application-level correlation keys are implementation options rather than universal field names.
+- Record version/configuration identity needed to interpret behavior: model/checkpoint/endpoint, prompt/template, tools/schemas, retrieval/index version, router/fallback policy, runtime/dependency versions, evaluation configuration, and feature flags where material. An isolated output without the configuration that produced it is weak diagnostic evidence.
+- Distinguish infrastructure/service health from AI behavior quality. Availability, error rate, CPU/GPU/memory, latency, and throughput can look healthy while answers, retrieval quality, tool choices, safety behavior, or structured outputs regress; operational and behavioral signals require separate measurement and correlation.
+- Preserve input/output and intermediate content only when needed and permitted. Full prompts, retrieved documents, model outputs, tool arguments/results, user data, secrets, credentials, or private metadata can create serious privacy/security/retention risk; prefer minimization, structured metadata, references/hashes/IDs, selective sampling, redaction, and access controls appropriate to the diagnostic need.
+- Make clear that redaction is not a complete security boundary. Sensitive values can appear in free text, encoded content, metadata, tool results, traces, or correlated records; collection and retention policy must be designed before assuming telemetry is safe to centralize.
+- Treat telemetry content as untrusted data. Model outputs, prompts, retrieved documents, tool errors, and user-controlled strings can contain markup/instructions/control characters; observability pipelines and viewers must not execute or interpret them as privileged instructions.
+- Do not claim observability reveals private model chain-of-thought or true hidden reasoning. Traces can record externally observable model calls, declared decisions, tool actions, validation steps, and application state, but unrecorded internal model computation remains unavailable and should not be fabricated as telemetry.
+- Explain tracing of AI workflows at the stage boundary: spans/events can represent model inference, prompt/context preparation, retrieval, reranking, tool calls, routing/fallback, validation, persistence, queueing, and external dependencies while keeping vendor-specific semantic-convention fields outside the abstract concept.
+- Distinguish telemetry sampling from complete evidence. Head/tail/probabilistic/error-focused sampling can control cost/storage but can bias observed distributions or miss rare failures; critical failures/security events can require different retention rules from routine requests.
+- Explain high-cardinality and cost trade-offs. Per-user/request/model/prompt dimensions, raw traces, outputs, token/event detail, and long workflows can make telemetry expensive; aggregation/sampling must preserve the diagnostic/evaluation questions it is intended to support.
+- Keep raw and aggregate evidence appropriately connected. Dashboards/aggregates reveal trends, while request-level traces/events can support diagnosis; aggregate metrics alone can hide the exact failure path, and traces alone do not establish population-level rates.
+- Define telemetry schema/versioning and timestamps/clock/context handling where comparisons depend on them. Changes in instrumentation, span boundaries, field meaning, sampling, or retention can create apparent behavioral changes unrelated to the underlying AI system.
+- Treat hosted/provider visibility as bounded. A provider can expose request/response metadata while hiding internal scheduling/model execution; document the visibility boundary instead of inferring unavailable internals from client-side telemetry.
+- Keep concrete telemetry backends, OpenTelemetry/vendor semantic conventions, field schemas, dashboards, alert thresholds, sampling/retention values, raw logs/traces, incident records, and provider-specific observability features with their applicable project/catalog/evidence/security owners.
+- Use the canonical entity references as research inputs for logs/metrics/traces/spans and production AI-system monitoring boundaries when reader-facing rendering is activated.
+
+## Validation
+
+- Observability is not equated only with monitoring, logging, tracing, or infrastructure uptime.
+- Tracing is represented as a technique within observability rather than a separate unselected canonical child.
+- Recorded trace relationships are not overclaimed as proof of semantic causality or hidden model reasoning.
+- AI behavioral quality signals remain distinct from infrastructure/service health metrics.
+- Full prompt/output/tool capture is not required by default and sensitive telemetry collection is constrained by minimization/access/retention policy.
+- Sampling and aggregation trade-offs are acknowledged rather than treating collected telemetry as a complete unbiased population view.
+- Concrete telemetry products, schemas, dashboards, thresholds, raw records, and incident evidence remain outside the reusable observability owner.

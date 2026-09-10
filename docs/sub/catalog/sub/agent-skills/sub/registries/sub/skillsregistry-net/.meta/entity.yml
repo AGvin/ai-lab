@@ -1,0 +1,12 @@
+entity:
+  id: catalog/agent-skills/registries/skillsregistry-net
+  type: skill-registry
+  name: SkillsRegistry.net
+  references:
+    - type: official-site
+      source:
+        url: https://skillsregistry.net/
+      purposes:
+        - identification
+        - research
+      authority: official

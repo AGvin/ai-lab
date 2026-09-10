@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/inference/acceleration/speculative-decoding
+  name: Speculative Decoding
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2211.17192
+      purposes:
+        - research
+      authority: independent
+      note: Foundational speculative-decoding work shows how an approximation/draft path can propose several tokens while the target model verifies them in parallel without changing the target output distribution under the algorithm.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2302.01318
+      purposes:
+        - research
+      authority: independent
+      note: Speculative sampling formalizes modified rejection sampling that preserves the target model distribution within hardware numerics while reducing sequential target-model decoding steps.

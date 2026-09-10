@@ -1,0 +1,25 @@
+entity:
+  id: concepts/models/inference/memory-and-context/context-extension
+  name: Context Extension
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2306.15595
+      purposes:
+        - research
+      authority: independent
+      note: Position Interpolation demonstrates extending RoPE-based pretrained models by rescaling position indices with limited additional fine-tuning rather than simply increasing a runtime sequence-length constant.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2309.00071
+      purposes:
+        - research
+      authority: independent
+      note: YaRN combines rotary-position rescaling/interpolation choices with temperature-style attention scaling and fine-tuning to extend usable context.
+    - type: article
+      source:
+        url: https://proceedings.mlr.press/v235/ding24i.html
+      purposes:
+        - research
+      authority: independent
+      note: LongRoPE demonstrates non-uniform positional interpolation plus progressive extension/fine-tuning and evaluates both long-context gains and preservation of shorter-context behavior.

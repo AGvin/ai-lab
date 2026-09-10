@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/integrated-workspaces/big-agi
+  type: software
+  name: Big-AGI
+  aliases:
+    - big-AGI
+  references:
+    - type: official-site
+      source:
+        url: https://big-agi.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current site distinguishes Big-AGI Open from hosted Free/Pro tiers and identifies Token Fabrics as the company surface.
+    - type: repository
+      source:
+        url: https://github.com/enricoros/big-AGI
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/e/enrico-ros
+    - type: operated-by
+      target: catalog/producers/t/token-fabrics

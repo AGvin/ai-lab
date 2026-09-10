@@ -1,0 +1,32 @@
+entity:
+  id: catalog/producers/a/anyscale-inc
+  type: organization
+  name: Anyscale, Inc.
+  aliases:
+    - Anyscale
+  references:
+    - type: official-site
+      source:
+        url: https://www.anyscale.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://www.anyscale.com/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Anyscale terms identify Anyscale, Inc.
+    - type: article
+      source:
+        url: https://www.anyscale.com/blog/presentations-from-the-jan-30-2020-ray-meetup-in-san-francisco
+      purposes:
+        - research
+      authority: official
+      note: First-party Anyscale record of the 2020 introduction of Ray.Serve by Simon Mo of Anyscale.
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/distributed-serving/ray-serve

@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/m/mirascope-inc
+  type: organization
+  name: Mirascope, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://mirascope.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://mirascope.com/terms/use
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official Terms of Use identifying Mirascope, Inc.
+    - type: repository
+      source:
+        url: https://github.com/Mirascope/mirascope
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/application-frameworks/application-development/mirascope

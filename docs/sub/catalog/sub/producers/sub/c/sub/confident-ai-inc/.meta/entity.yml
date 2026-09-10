@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/c/confident-ai-inc
+  type: organization
+  name: Confident AI, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://www.confident-ai.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.confident-ai.com/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current first-party terms identifying Confident AI, Inc.
+    - type: official-site
+      source:
+        url: https://www.confident-ai.com/frameworks/deepeval
+      purposes:
+        - research
+      authority: official
+      note: First-party DeepEval product/framework page identifying Confident AI as its creator and maintainer.
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/deepeval

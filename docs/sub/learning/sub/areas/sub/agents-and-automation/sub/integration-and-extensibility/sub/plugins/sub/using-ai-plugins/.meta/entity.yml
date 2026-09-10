@@ -1,0 +1,28 @@
+entity:
+  id: learning/areas/agents-and-automation/integration-and-extensibility/plugins/using-ai-plugins
+  name: Using AI Plugins
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/codex/plugins
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://code.claude.com/docs/en/plugins
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://cursor.com/docs/plugins
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://opencode.ai/docs/plugins/
+      purposes:
+        - research
+      authority: official

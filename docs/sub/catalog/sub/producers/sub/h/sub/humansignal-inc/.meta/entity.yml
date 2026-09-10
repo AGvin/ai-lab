@@ -1,0 +1,35 @@
+entity:
+  id: catalog/producers/h/humansignal-inc
+  type: organization
+  name: HumanSignal, Inc.
+  aliases:
+    - Heartex
+  references:
+    - type: official-site
+      source:
+        url: https://humansignal.com/about/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: HumanSignal identifies Label Studio as its open-source data-labeling tool and describes the company's founding history.
+    - type: article
+      source:
+        url: https://humansignal.com/press/heartex-is-now-humansignal/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: First-party announcement records the Heartex-to-HumanSignal rebrand and identifies the company as creator of Label Studio.
+    - type: other
+      source:
+        url: https://humansignal.com/legal/customer-agreement/
+      purposes:
+        - identification
+      authority: official
+      note: Current customer agreement identifies the legal entity as HumanSignal, Inc.
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/dataset-curation/label-studio
+    - type: maintains
+      target: catalog/software/model-and-data-platforms/dataset-curation/label-studio

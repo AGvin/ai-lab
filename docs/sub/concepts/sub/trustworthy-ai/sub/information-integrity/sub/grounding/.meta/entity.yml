@@ -1,0 +1,18 @@
+entity:
+  id: concepts/trustworthy-ai/information-integrity/grounding
+  name: Grounding
+  references:
+    - type: documentation
+      source:
+        url: https://doi.org/10.6028/NIST.AI.600-1
+      purposes:
+        - research
+      authority: official
+      note: The NIST Generative AI Profile recommends verifying that retrieval-augmented and evaluation data are grounded and separately reviewing sources/citations, supporting grounding as an information-integrity relation rather than mere retrieval presence.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2203.11147
+      purposes:
+        - research
+      authority: independent
+      note: Menick et al. train language models to answer using supporting evidence/quotes and evaluate whether evidence actually supports claims, illustrating claim-level attribution/grounding rather than topic-level document relevance.

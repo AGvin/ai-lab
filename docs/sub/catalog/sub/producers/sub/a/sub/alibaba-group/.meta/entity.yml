@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/a/alibaba-group
+  type: organization
+  name: Alibaba Group
+  references:
+    - type: official-site
+      source:
+        url: https://www.alibabagroup.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.alibabagroup.com/en-US/about-alibaba-businesses-1747835448811585536
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: has-part
+      target: catalog/producers/a/alibaba-cloud
+    - type: produces
+      target: catalog/software/gateways/api-management-gateways/higress

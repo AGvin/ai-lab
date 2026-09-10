@@ -1,0 +1,3 @@
+node:
+  schema: default
+  template: common/article

@@ -1,0 +1,29 @@
+entity:
+  id: catalog/software/gateways/api-management-gateways/higress
+  type: software
+  name: Higress
+  references:
+    - type: documentation
+      source:
+        url: https://higress.cn/en/docs/latest/overview/what-is-higress
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/alibaba/higress
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.alibabacloud.com/blog/602578
+      purposes:
+        - research
+      authority: official
+      note: Official Alibaba Cloud Community article identifying Higress as born within Alibaba Group.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/alibaba-group

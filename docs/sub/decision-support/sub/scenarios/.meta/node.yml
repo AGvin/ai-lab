@@ -1,0 +1,7 @@
+
+node:
+  template: decision-support/scenarios/index
+  children:
+    template: decision-support/scenarios/index
+    children:
+      template: decision-support/scenarios/scenario

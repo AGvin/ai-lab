@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/amazon/nova/nova-2/models/nova-2-sonic
+  type: model
+  name: Amazon Nova 2 Sonic
+  references:
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-sonic.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-conversational-speech.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/amazon/nova/nova-2

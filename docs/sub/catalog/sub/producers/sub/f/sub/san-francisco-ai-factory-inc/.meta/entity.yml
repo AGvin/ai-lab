@@ -1,0 +1,34 @@
+entity:
+  id: catalog/producers/f/san-francisco-ai-factory-inc
+  type: organization
+  name: The San Francisco AI Factory Inc.
+  aliases:
+    - Factory
+    - San Francisco AI Factory, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://factory.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://factory.ai/legal/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official Factory Product Terms identifying The San Francisco AI Factory Inc.
+    - type: other
+      source:
+        url: https://factory.ai/legal/privacy-policy
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official Factory Privacy Policy identifying the current product operator.
+  relations:
+    - type: produces
+      target: catalog/software/agents/hybrid/factory-droid

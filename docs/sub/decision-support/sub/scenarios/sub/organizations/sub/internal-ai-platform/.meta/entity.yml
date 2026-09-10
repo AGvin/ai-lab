@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/organizations/internal-ai-platform
+  type: user-scenario
+  name: Internal AI Platform

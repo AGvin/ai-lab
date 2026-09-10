@@ -1,0 +1,22 @@
+entity:
+  id: concepts/modalities/audio-and-speech/speech-to-text
+  name: Speech-to-Text
+  aliases:
+    - Automatic Speech Recognition
+    - ASR
+    - Speech Recognition
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2006.11477
+      purposes:
+        - research
+      authority: independent
+      note: wav2vec 2.0 demonstrates self-supervised speech representation learning followed by supervised recognition, illustrating modern ASR beyond one sequence-to-sequence architecture.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2212.04356
+      purposes:
+        - research
+      authority: independent
+      note: Whisper demonstrates large-scale multilingual speech recognition/transcription with multitask capabilities, while keeping transcription conceptually distinguishable from translation and other speech tasks.

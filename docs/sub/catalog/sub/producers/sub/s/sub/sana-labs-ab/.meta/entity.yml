@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/s/sana-labs-ab
+  type: organization
+  name: Sana Labs AB
+  references:
+    - type: official-site
+      source:
+        url: https://sanalabs.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://sanalabs.com/legal/privacy-notice
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/knowledge-workspaces/sana-agents

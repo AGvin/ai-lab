@@ -1,0 +1,32 @@
+entity:
+  id: catalog/producers/a/aider-ai
+  type: organization
+  name: Aider AI LLC
+  aliases:
+    - Aider AI
+  references:
+    - type: official-site
+      source:
+        url: https://aider.chat/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://aider.chat/docs/legal/privacy.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official privacy policy identifying Aider AI LLC.
+    - type: repository
+      source:
+        url: https://github.com/Aider-AI
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agents/local/aider

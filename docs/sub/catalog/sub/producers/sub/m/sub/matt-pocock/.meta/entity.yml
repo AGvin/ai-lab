@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/m/matt-pocock
+  type: individual
+  name: Matt Pocock
+  references:
+    - type: repository
+      source:
+        url: https://github.com/mattpocock/skills
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/mattpocock
+      purposes:
+        - identification
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/agent-skills/collections/matt-pocock-skills

@@ -1,0 +1,4 @@
+entity:
+  id: catalog/specifications/formats
+  type: catalog-index
+  name: Formats

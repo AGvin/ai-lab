@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/selection/models/hardware/computers
+  type: model-selection-hardware-group
+  name: Computer Model Selection

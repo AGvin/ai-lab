@@ -1,0 +1,15 @@
+entity:
+  id: decision-support/selection/models/hardware/computers/apple
+  type: model-selection-hardware-target
+  name: Apple Silicon Computer Model Selection
+  references:
+    - type: documentation
+      source:
+        url: https://developer.apple.com/documentation/coreml
+      purposes: [research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ml-explore/mlx
+      purposes: [research]
+      authority: upstream

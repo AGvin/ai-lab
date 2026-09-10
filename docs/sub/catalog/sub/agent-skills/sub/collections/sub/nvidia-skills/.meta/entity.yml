@@ -1,0 +1,21 @@
+entity:
+  id: catalog/agent-skills/collections/nvidia-skills
+  type: skill-collection
+  name: NVIDIA Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA/skills
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/skills/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

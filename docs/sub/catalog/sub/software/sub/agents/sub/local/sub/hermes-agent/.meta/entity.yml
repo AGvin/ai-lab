@@ -1,0 +1,29 @@
+entity:
+  id: catalog/software/agents/local/hermes-agent
+  type: software
+  name: Hermes Agent
+  references:
+    - type: official-site
+      source:
+        url: https://hermes-agent.nousresearch.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://hermes-agent.nousresearch.com/docs/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/NousResearch/hermes-agent
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nous-research

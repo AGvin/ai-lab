@@ -1,0 +1,28 @@
+entity:
+  id: catalog/services/knowledge-workspaces/guru
+  type: service
+  name: Guru
+  references:
+    - type: official-site
+      source:
+        url: https://www.getguru.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.getguru.com/features
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.getguru.com/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/guru-technologies-inc

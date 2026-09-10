@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/personal/personal-knowledge-base-user
+  type: user-scenario
+  name: Personal Knowledge Base User

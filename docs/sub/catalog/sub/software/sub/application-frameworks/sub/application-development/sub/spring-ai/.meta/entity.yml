@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/application-frameworks/application-development/spring-ai
+  type: software
+  name: Spring AI
+  references:
+    - type: documentation
+      source:
+        url: https://docs.spring.io/spring-ai/reference/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://spring.io/projects/spring-ai
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/spring

@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/personal/privacy-first-or-offline-user
+  type: user-scenario
+  name: Privacy-First or Offline User

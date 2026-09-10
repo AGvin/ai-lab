@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/o/openrouter-inc
+  type: organization
+  name: OpenRouter, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://openrouter.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://openrouter.ai/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official OpenRouter Terms of Service identifying OpenRouter, Inc.
+    - type: other
+      source:
+        url: https://openrouter.ai/privacy/
+      purposes:
+        - research
+      authority: official
+      note: Official OpenRouter Privacy Policy.
+  relations:
+    - type: produces
+      target: catalog/services/model-apis/openrouter

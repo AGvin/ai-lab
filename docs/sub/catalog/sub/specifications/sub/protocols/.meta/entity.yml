@@ -1,0 +1,4 @@
+entity:
+  id: catalog/specifications/protocols
+  type: catalog-index
+  name: Protocols

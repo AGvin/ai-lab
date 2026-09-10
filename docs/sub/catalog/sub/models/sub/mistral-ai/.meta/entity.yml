@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/mistral-ai
+  type: model-producer-view
+  name: Mistral AI Models
+  references:
+    - type: official-site
+      source:
+        url: https://mistral.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai
+      purposes:
+        - research
+      authority: official

@@ -1,0 +1,18 @@
+entity:
+  id: concepts/evaluation-and-measurement/evaluation-design
+  name: Evaluation Design
+  references:
+    - type: documentation
+      source:
+        url: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
+      purposes:
+        - research
+      authority: official
+      note: NIST AI RMF Measure guidance requires documented test sets, metrics, tools, uncertainty, representative deployment conditions, and qualitative/quantitative assessment rather than treating evaluation as a single score.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2211.09110
+      purposes:
+        - research
+      authority: independent
+      note: HELM demonstrates scenario-based, multi-metric evaluation and explicit coverage/standardization trade-offs, providing a useful source for separating evaluation design from isolated benchmark scores.

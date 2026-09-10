@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/g/graphify-labs
+  type: organization
+  name: Graphify Labs
+  references:
+    - type: official-site
+      source:
+        url: https://graphify.com/about
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Graphify-Labs
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/development-tools/code-intelligence/graphify

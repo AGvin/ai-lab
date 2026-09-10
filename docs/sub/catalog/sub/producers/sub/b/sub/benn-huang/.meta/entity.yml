@@ -1,0 +1,25 @@
+entity:
+  id: catalog/producers/b/benn-huang
+  type: individual
+  name: Benn Huang
+  aliases:
+    - bennhuang
+    - Bin-Huang
+  references:
+    - type: other
+      source:
+        url: https://github.com/Bin-Huang
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/chatboxai/chatbox
+      purposes:
+        - research
+      authority: official
+      note: Current upstream package metadata identifies bennhuang as the Chatbox author.
+  relations:
+    - type: produces
+      target: catalog/software/interfaces-and-workspaces/model-clients/chatbox

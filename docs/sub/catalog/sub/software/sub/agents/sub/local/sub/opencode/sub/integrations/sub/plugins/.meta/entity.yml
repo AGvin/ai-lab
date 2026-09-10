@@ -1,0 +1,10 @@
+entity:
+  id: catalog/software/agents/local/opencode/integrations/plugins
+  name: OpenCode Plugins
+  references:
+    - type: documentation
+      source:
+        url: https://opencode.ai/docs/plugins/
+      purposes:
+        - research
+      authority: official

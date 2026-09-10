@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/inference-runtimes
+  type: catalog-index
+  name: Inference Runtimes

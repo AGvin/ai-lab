@@ -1,0 +1,27 @@
+entity:
+  id: concepts/ai-engineering/performance-and-scalability
+  name: AI System Performance and Scalability
+  aliases:
+    - Performance and Scalability
+  references:
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/principles
+      purposes:
+        - research
+      authority: official
+      note: Azure Well-Architected performance guidance ties performance efficiency to explicit targets, capacity requirements, demand changes, right-sizing, scaling, and ongoing measurement rather than a single latency/throughput number.
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/performance-efficiency.html
+      purposes:
+        - research
+      authority: official
+      note: AWS Well-Architected defines performance efficiency as using resources efficiently to meet performance requirements while maintaining efficiency as demand and technology change.
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/azure/architecture/patterns/throttling
+      purposes:
+        - research
+      authority: official
+      note: Current Azure throttling guidance treats overload as an expected operating mode and connects rate limiting, graceful degradation, and load leveling to self-preservation under capacity pressure.

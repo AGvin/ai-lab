@@ -1,0 +1,34 @@
+entity:
+  id: catalog/producers/o/openai
+  type: organization
+  name: OpenAI
+  references:
+    - type: official-site
+      source:
+        url: https://openai.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/openai
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/openai/gpt
+    - type: produces
+      target: catalog/models/openai/whisper
+    - type: produces
+      target: catalog/agent-skills/collections/openai-skills
+    - type: produces
+      target: catalog/services/assistant-workspaces/chatgpt
+    - type: produces
+      target: catalog/software/agents/hybrid/openai-codex
+    - type: produces
+      target: catalog/software/agent-frameworks/openai-agents-sdk
+    - type: has-part
+      target: catalog/producers/p/promptfoo-inc

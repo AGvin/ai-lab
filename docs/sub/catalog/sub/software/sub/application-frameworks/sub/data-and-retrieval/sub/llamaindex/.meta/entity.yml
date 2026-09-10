@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/application-frameworks/data-and-retrieval/llamaindex
+  type: software
+  name: LlamaIndex
+  references:
+    - type: documentation
+      source:
+        url: https://docs.llamaindex.ai/en/stable/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/run-llama/llama_index
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/llamaindex-inc

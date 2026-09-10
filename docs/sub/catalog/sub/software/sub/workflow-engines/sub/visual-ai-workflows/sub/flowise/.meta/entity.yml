@@ -1,0 +1,38 @@
+entity:
+  id: catalog/software/workflow-engines/visual-ai-workflows/flowise
+  type: software
+  name: Flowise
+  references:
+    - type: documentation
+      source:
+        url: https://docs.flowiseai.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/FlowiseAI/Flowise
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current upstream repository is archived following the announced August 2026 wind-down schedule.
+    - type: other
+      source:
+        url: https://flowiseai.com/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current terms identify FlowiseAI Inc. as the legal provider of the FlowiseAI platform and related services.
+    - type: article
+      source:
+        url: https://flowiseai.com/sunset
+      purposes:
+        - research
+      authority: official
+      note: First-party sunset notice records the July 29, 2026 code freeze, August 10 repository archival, and August 31, 2026 EOL milestone.
+  relations:
+    - type: produced-by
+      target: catalog/producers/f/flowiseai-inc

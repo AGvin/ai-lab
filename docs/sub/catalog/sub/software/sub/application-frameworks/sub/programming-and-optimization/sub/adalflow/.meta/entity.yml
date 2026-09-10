@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/application-frameworks/programming-and-optimization/adalflow
+  type: software
+  name: AdalFlow
+  references:
+    - type: documentation
+      source:
+        url: https://adalflow.sylph.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/SylphAI-Inc/AdalFlow
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/sylphai-inc

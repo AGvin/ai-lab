@@ -1,0 +1,25 @@
+entity:
+  id: learning/areas/agents-and-automation/workflows-and-orchestration/human-approval-gates
+  name: Human Approval Gates
+  references:
+    - type: documentation
+      source:
+        url: https://openai.github.io/openai-agents-python/human_in_the_loop/
+      purposes:
+        - research
+      authority: official
+      note: Exact OpenAI Agents SDK human-in-the-loop reference preserved from the legacy source for migration provenance; current framework APIs must be re-checked before making mutable implementation claims.
+    - type: documentation
+      source:
+        url: https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/breakpoints/
+      purposes:
+        - research
+      authority: official
+      note: Exact LangGraph interrupts/breakpoints reference preserved from the legacy source for migration provenance.
+    - type: documentation
+      source:
+        url: https://langchain-ai.github.io/langgraph/concepts/persistence/
+      purposes:
+        - research
+      authority: official
+      note: Exact LangGraph persistence reference preserved from the legacy source for migration provenance.

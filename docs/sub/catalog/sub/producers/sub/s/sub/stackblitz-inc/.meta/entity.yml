@@ -1,0 +1,31 @@
+entity:
+  id: catalog/producers/s/stackblitz-inc
+  type: organization
+  name: StackBlitz, Inc.
+  aliases:
+    - StackBlitz
+  references:
+    - type: official-site
+      source:
+        url: https://stackblitz.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://stackblitz.com/privacy-policy
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official StackBlitz Privacy Policy identifying StackBlitz, Inc.
+    - type: documentation
+      source:
+        url: https://support.bolt.new/building/intro-bolt
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/development/agents/bolt

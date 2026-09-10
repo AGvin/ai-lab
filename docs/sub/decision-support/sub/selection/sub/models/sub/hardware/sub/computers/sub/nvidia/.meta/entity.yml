@@ -1,0 +1,10 @@
+entity:
+  id: decision-support/selection/models/hardware/computers/nvidia
+  type: model-selection-hardware-target
+  name: NVIDIA Computer Model Selection
+  references:
+    - type: documentation
+      source:
+        url: https://developer.nvidia.com/tensorrt-rtx
+      purposes: [research]
+      authority: official

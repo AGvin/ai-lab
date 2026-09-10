@@ -1,0 +1,18 @@
+entity:
+  id: concepts/agents-and-autonomy/autonomy-and-control
+  name: Autonomy and Control
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2506.12469
+      purposes:
+        - research
+      authority: independent
+      note: Levels-of-autonomy research treats agent autonomy as a deliberate design variable distinct from capability and proposes escalating human-control relationships rather than one intrinsic model property.
+    - type: article
+      source:
+        url: https://www.anthropic.com/research/trustworthy-agents
+      purposes:
+        - research
+      authority: official
+      note: Current 2026 agent-governance discussion emphasizes human control and intervention as autonomy increases, while implementation remains system-level rather than an intrinsic model permission.

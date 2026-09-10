@@ -1,0 +1,21 @@
+entity:
+  id: concepts/models/training-and-adaptation/preference-optimization/dpo
+  name: Direct Preference Optimization
+  aliases:
+    - DPO
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2305.18290
+      purposes:
+        - research
+      authority: independent
+      note: Original DPO paper derives a direct policy objective from the KL-constrained reward-maximization formulation and trains from preferred/rejected response pairs without a separately trained reward model or online RL loop.
+    - type: repository
+      source:
+        url: https://github.com/eric-mitchell/direct-preference-optimization
+      purposes:
+        - research
+        - identification
+      authority: upstream
+      note: Original implementation repository provides the concrete training setup separately from the abstract direct-preference objective.

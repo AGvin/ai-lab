@@ -1,0 +1,25 @@
+entity:
+  id: concepts/machine-learning/representation-learning/latent-space
+  name: Latent Space
+  references:
+    - type: article
+      source:
+        url: https://doi.org/10.1109/TPAMI.2013.50
+      purposes:
+        - research
+      authority: independent
+      note: Bengio, Courville, and Vincent review learned representations, latent factors, manifolds, and internal feature geometries, supporting a latent-space concept broader than one generative architecture or modality.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1312.6114
+      purposes:
+        - research
+      authority: independent
+      note: Kingma and Welling formulate continuous latent-variable models with learned approximate inference, illustrating probabilistic latent variables without requiring directly interpretable coordinates.
+    - type: article
+      source:
+        url: https://doi.org/10.1109/CVPR52688.2022.01042
+      purposes:
+        - research
+      authority: independent
+      note: Rombach et al. apply diffusion in a pretrained autoencoder's compressed latent representation, providing an important concrete use of latent space while showing that latent diffusion is a specialization rather than the generic definition.

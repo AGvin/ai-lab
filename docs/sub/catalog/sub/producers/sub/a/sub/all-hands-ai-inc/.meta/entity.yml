@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/a/all-hands-ai-inc
+  type: organization
+  name: All Hands AI, Inc.
+  aliases:
+    - All Hands AI
+  references:
+    - type: official-site
+      source:
+        url: https://www.openhands.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.openhands.dev/overview/community
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.openhands.dev/blog/introducing-all-hands-ai
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agents/hybrid/openhands

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/gateways/model-gateways/vercel-ai-gateway
+  type: service
+  name: Vercel AI Gateway
+  references:
+    - type: official-site
+      source:
+        url: https://vercel.com/ai-gateway
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://vercel.com/docs/ai-gateway
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/vercel-inc

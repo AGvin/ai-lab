@@ -1,0 +1,18 @@
+entity:
+  id: concepts/information-retrieval/reranking
+  name: Reranking
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1901.04085
+      purposes:
+        - research
+      authority: independent
+      note: Passage Re-ranking with BERT provides an influential neural cross-encoder example of applying a more expensive query-candidate relevance model after initial retrieval.
+    - type: documentation
+      source:
+        url: https://nlp.stanford.edu/IR-book/
+      purposes:
+        - research
+      authority: independent
+      note: Established IR reference provides the broader multi-stage ranking, relevance, and evaluation context needed to keep reranking implementation-independent.

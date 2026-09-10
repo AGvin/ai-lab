@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/selection/models/decision-guides/local-resource-fit
+  type: catalog-index
+  name: Local Model Resource Fit

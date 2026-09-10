@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/selection/models/decision-guides/media-creation
+  type: catalog-index
+  name: Media Creation Model Selection

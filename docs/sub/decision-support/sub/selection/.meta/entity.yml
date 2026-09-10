@@ -1,0 +1,5 @@
+
+entity:
+  id: decision-support/selection
+  type: decision-support-selection-index
+  name: Selection

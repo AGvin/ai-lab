@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/classification/foundation-models
+  name: Foundation Models
+  references:
+    - type: documentation
+      source:
+        url: https://csrc.nist.gov/glossary/term/foundation_model
+      purposes:
+        - research
+      authority: official
+      note: Current NIST terminology describes foundation models through broad-data training, self-supervised learning in the cited GenAI context, and adaptation to varied downstream tasks.
+    - type: article
+      source:
+        url: https://crfm.stanford.edu/report.html
+      purposes:
+        - research
+      authority: independent
+      note: Stanford CRFM introduced the foundation-model framing around broad-data training at scale and adaptation across downstream tasks.

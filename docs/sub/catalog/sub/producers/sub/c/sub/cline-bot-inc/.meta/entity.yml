@@ -1,0 +1,31 @@
+entity:
+  id: catalog/producers/c/cline-bot-inc
+  type: organization
+  name: Cline Bot Inc.
+  aliases:
+    - Cline
+  references:
+    - type: official-site
+      source:
+        url: https://cline.bot/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://cline.bot/privacy
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official privacy notice identifying Cline Bot Inc.
+    - type: repository
+      source:
+        url: https://github.com/cline/cline
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agents/local/cline

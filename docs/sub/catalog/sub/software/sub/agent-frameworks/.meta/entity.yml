@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/agent-frameworks
+  type: catalog-index
+  name: Agent Frameworks

@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/tongyi-mai
+  type: model-producer-view
+  name: Tongyi-MAI Models
+  references:
+    - type: repository
+      source:
+        url: https://github.com/Tongyi-MAI
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/Tongyi-MAI
+      purposes:
+        - identification
+        - research
+      authority: official

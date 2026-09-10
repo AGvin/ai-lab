@@ -1,0 +1,11 @@
+entity:
+  id: concepts/reasoning-and-decision-making/knowledge-representation
+  name: Knowledge Representation
+  references:
+    - type: article
+      source:
+        url: https://doi.org/10.1609/aimag.v14i1.1029
+      purposes:
+        - research
+      authority: independent
+      note: Davis, Shrobe, and Szolovits characterize knowledge representation through multiple roles, including modeling a domain, committing to useful ontological distinctions, supporting inference, enabling efficient computation, and providing a medium for human expression rather than reducing representation to one notation or storage format.

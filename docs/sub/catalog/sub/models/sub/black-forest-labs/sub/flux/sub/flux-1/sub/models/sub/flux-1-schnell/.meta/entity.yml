@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-schnell
+  type: model
+  name: FLUX.1-schnell
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/black-forest-labs/FLUX.1-schnell
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/black-forest-labs/flux/flux-1

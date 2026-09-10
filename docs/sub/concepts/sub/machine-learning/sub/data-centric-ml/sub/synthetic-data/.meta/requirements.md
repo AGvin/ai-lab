@@ -1,0 +1,36 @@
+# Documentation Requirements
+
+## Requirements
+
+- Use the reader-facing title `Synthetic Data`.
+- Define synthetic data as artificial/generated observations, records, labels, trajectories, media, interactions, environments, or other data units produced by a rule-based, procedural, statistical, simulation, generative-model, transformation, or hybrid process for a defined training, evaluation, development, testing, analysis, or operational purpose rather than being direct unmodified observations of the target real-world events.
+- Do not require synthetic data to originate from a real seed dataset. Some methods fit/generate from real data, while others use physical simulators, procedural rules, domain models, programmatic generators, games/environments, counterfactual construction, or generative models without reproducing one source dataset's empirical distribution.
+- Distinguish fully synthetic, partially synthetic, simulated, procedurally generated, model-generated, and augmented data as overlapping generation families where useful; do not force every technique into one taxonomy if its contract differs materially.
+- Distinguish synthetic data from ordinary data augmentation. Augmentation transforms or perturbs existing observations to create additional training/evaluation examples; those outputs can be synthetic examples, but augmentation is a broader training/data technique and the concepts should not be treated as strict synonyms.
+- Distinguish synthetic data from imputation. Filling missing values can create synthetic components inside otherwise real records, but an imputed dataset is not automatically a fully synthetic dataset.
+- Define generation purpose before assessing quality. A dataset useful for software prototyping, privacy-safe schema testing, rare-event stress tests, pretraining, class balancing, simulation, or model evaluation can require different fidelity/coverage properties; there is no single universal synthetic-data quality score.
+- Distinguish fidelity from utility. Matching selected statistics, visual realism, linguistic fluency, or simulator plausibility does not prove that generated data preserve the relationships needed for a target downstream task, and high task utility need not require reproducing every real-data statistic.
+- Treat coverage and diversity as empirical requirements. Large generated volume can repeat modes, templates, simulator assumptions, or generator artifacts and still miss rare/important cases; count of examples is not evidence of effective sample diversity.
+- Explain generator bias and error propagation. Synthetic data can inherit, amplify, smooth away, or invent patterns from source data, simulators, prompts, rules, reward/judge models, or generative models; generated outputs should not be treated as independent ground truth merely because generation is automated.
+- Preserve provenance at the generated-item or dataset/version level as appropriate: record the generator/simulator/model/version, source/seed data when applicable, prompts/rules/configuration, sampling settings, post-processing/filtering, label/judge origin, date/version, and validation process required to reproduce or assess the data.
+- Distinguish generated labels from validated labels. A model/judge can produce candidate labels or rationales, but self-consistency or agreement among related models is not independent evidence of correctness; high-risk uses may require expert, rule-based, simulator-ground-truth, or otherwise independent validation.
+- Explain train/evaluation independence. Using the same generator family, prompts, judge, source corpus, or model lineage for both synthetic training and evaluation can create correlated artifacts and optimistic estimates; synthetic tests should be independently designed/validated when intended to estimate real-world performance.
+- Do not treat synthetic data as automatically privacy-preserving, anonymous, non-personal, or safe to release. Generators trained on sensitive data can reproduce or leak records/attributes/membership, and statistically similar synthetic records can still create disclosure risk.
+- Distinguish generic synthetic data from differentially private synthetic data. Differential privacy provides a formal mechanism/parameterized privacy guarantee when correctly applied; synthetic generation without such a mechanism does not inherit that guarantee merely from producing artificial rows or outputs.
+- Explain privacy-versus-utility/fidelity trade-offs when synthetic data are generated from sensitive real data. Stronger protection can reduce the ability to preserve rare/high-dimensional correlations, while high fidelity can increase disclosure risk; the appropriate balance is use- and threat-model-specific.
+- Explain rare-event/edge-case synthesis carefully. Simulation or controlled generation can intentionally oversample rare cases, but synthetic frequency must not be interpreted as the real-world base rate unless calibrated separately.
+- Explain synthetic data for evaluation as a targeted evidence source rather than an automatic replacement for real-world/held-out validation. Synthetic cases can probe known capabilities, safety scenarios, invariants, and rare conditions, while real-world evidence may still be required to measure ecological validity and unknown failure modes.
+- Explain model-generated training data and recursive/self-consumption risks without universalizing one failure mode. Repeatedly training on generated data can reinforce generator artifacts, narrow diversity, or distort distributions unless real/independent signals, quality controls, or suitable generation methods counteract those effects.
+- Treat simulation-to-real/domain-gap effects explicitly where synthetic environments approximate physical or operational systems. Simulator correctness under its assumptions does not prove transfer to the real system; validate the target-relevant gap.
+- Keep concrete synthetic datasets, generated files, generators/models/simulators, prompts/rules, differential-privacy parameters, privacy audits, quality metrics, benchmark results, and project-specific acceptance decisions with their applicable catalog/evidence/project owners.
+- Use the canonical entity references as research inputs for synthetic-data generation, utility/fidelity, and privacy boundaries when reader-facing rendering is activated.
+
+## Validation
+
+- Synthetic data is not defined as necessarily LLM-generated, seed-data-derived, statistically identical to real data, or privacy-preserving.
+- Generated volume/realism is not treated as proof of diversity, coverage, utility, or correctness.
+- Generator/judge output is not automatically treated as ground-truth labeling or independent evaluation evidence.
+- Generic synthetic data is distinguished from differentially private synthetic data and other formal privacy mechanisms.
+- Synthetic evaluation data is not presented as a universal replacement for independent real-world/held-out evidence.
+- Provenance, generator/source dependence, domain gap, and privacy/disclosure risks remain explicit.
+- Concrete datasets, generation settings, privacy parameters, and validation results remain outside the reusable concept owner.

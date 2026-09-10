@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/m/meta
+  type: organization
+  name: Meta
+  references:
+    - type: official-site
+      source:
+        url: https://ai.meta.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://ai.meta.com/blog/llama-4-multimodal-intelligence/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/meta/llama

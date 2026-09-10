@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/a/api7-ai
+  type: organization
+  name: API7.ai
+  references:
+    - type: official-site
+      source:
+        url: https://api7.ai/about
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://apisix.apache.org/blog/2025/02/21/why-reinvent-api-gateways/
+      purposes:
+        - research
+      authority: official
+      note: Official Apache APISIX project history describing API7.ai as the original creator and donor of APISIX.
+  relations:
+    - type: produces
+      target: catalog/software/gateways/api-management-gateways/apache-apisix

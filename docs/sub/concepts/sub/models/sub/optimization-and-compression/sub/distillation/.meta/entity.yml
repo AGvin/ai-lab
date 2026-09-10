@@ -1,0 +1,21 @@
+entity:
+  id: concepts/models/optimization-and-compression/distillation
+  name: Knowledge Distillation
+  aliases:
+    - Distillation
+    - Model Distillation
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1503.02531
+      purposes:
+        - research
+      authority: independent
+      note: Foundational modern knowledge-distillation work transfers information from an ensemble or teacher into a deployable student using softened predictive distributions rather than only hard labels.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2006.05525
+      purposes:
+        - research
+      authority: independent
+      note: Knowledge-distillation survey covers response-, feature-, and relation-based knowledge, multiple teacher-student schemes, and applications beyond one compression recipe.

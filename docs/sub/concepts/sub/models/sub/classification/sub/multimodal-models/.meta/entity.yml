@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/classification/multimodal-models
+  name: Multimodal Models
+  references:
+    - type: documentation
+      source:
+        url: https://csrc.nist.gov/glossary/term/multimodal_models
+      purposes:
+        - research
+      authority: official
+      note: Current NIST terminology defines multimodal models through processing and relating information from multiple modalities.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1705.09406
+      purposes:
+        - research
+      authority: independent
+      note: Established multimodal machine-learning taxonomy covering representation, translation, alignment, fusion, and co-learning across modalities.

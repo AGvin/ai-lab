@@ -1,0 +1,18 @@
+entity:
+  id: concepts/evaluation-and-measurement/methods/human-evaluation
+  name: Human Evaluation
+  references:
+    - type: documentation
+      source:
+        url: https://airc.nist.gov/airmf-resources/playbook/measure/
+      purposes:
+        - research
+      authority: official
+      note: NIST AI RMF Measure guidance requires human-subject protections where applicable and ties human evaluation populations and data collection to the context of use rather than treating arbitrary raters as universally representative.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2101.06561
+      purposes:
+        - research
+      authority: independent
+      note: GENIE studies standardized human evaluation for text generation and shows that annotation-interface, evaluator-quality, population, and procedure choices materially affect reproducibility.

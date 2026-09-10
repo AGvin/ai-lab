@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-libraries/diffusers
+  type: software
+  name: Diffusers
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/diffusers/en/index
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/huggingface/diffusers
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/hugging-face-inc

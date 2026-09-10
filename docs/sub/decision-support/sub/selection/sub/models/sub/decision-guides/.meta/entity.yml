@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/selection/models/decision-guides
+  type: catalog-index
+  name: Model Selection Decision Guides

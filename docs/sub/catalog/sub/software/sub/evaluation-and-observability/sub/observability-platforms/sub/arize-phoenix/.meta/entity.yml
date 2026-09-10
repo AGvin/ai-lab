@@ -1,0 +1,31 @@
+entity:
+  id: catalog/software/evaluation-and-observability/observability-platforms/arize-phoenix
+  type: software
+  name: Arize Phoenix
+  aliases:
+    - Phoenix
+  references:
+    - type: documentation
+      source:
+        url: https://arize.com/docs/phoenix
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Arize-ai/phoenix
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://arize.com/docs/phoenix/self-hosting/license
+      purposes:
+        - research
+      authority: official
+      note: Current first-party Phoenix license documentation identifying Elastic License 2.0.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/arize-ai-inc

@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/f/flowiseai-inc
+  type: organization
+  name: FlowiseAI Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://flowiseai.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://flowiseai.com/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Flowise terms identify the legal provider as FlowiseAI Inc., a Delaware corporation.
+    - type: article
+      source:
+        url: https://flowiseai.com/sunset
+      purposes:
+        - research
+      authority: official
+      note: First-party sunset notice records the 2026 code freeze, repository archival, and end-of-life schedule for Flowise.
+  relations:
+    - type: produces
+      target: catalog/software/workflow-engines/visual-ai-workflows/flowise

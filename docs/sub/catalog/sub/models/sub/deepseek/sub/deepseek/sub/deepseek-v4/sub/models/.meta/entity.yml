@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/deepseek/deepseek/deepseek-v4/models
+  type: catalog-index
+  name: DeepSeek-V4 Models

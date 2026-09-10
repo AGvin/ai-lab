@@ -1,0 +1,18 @@
+entity:
+  id: concepts/agents-and-autonomy/coordination-and-communication/group-chat
+  name: Group Chat
+  references:
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/group-chat
+      purposes:
+        - research
+      authority: official
+      note: Current Microsoft Agent Framework documentation defines group-chat orchestration through synchronized shared conversation history, broadcast of each response to participants, explicit next-speaker selection, and iterative collaboration until a termination condition.
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/
+      purposes:
+        - research
+      authority: official
+      note: Current Agent Framework lists Group Chat as a distinct built-in multi-agent orchestration pattern alongside Sequential, Concurrent, Handoff, and manager-led Magentic coordination, establishing it as more than generic parallel multi-agent execution.

@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/z-ai/glm/models
+  type: catalog-index
+  name: GLM Models

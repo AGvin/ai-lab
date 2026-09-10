@@ -1,0 +1,19 @@
+entity:
+  id: catalog/software/ai-management-platforms/tyk-ai-studio
+  type: software
+  name: Tyk AI Studio
+  references:
+    - type: documentation
+      source:
+        url: https://tyk.io/docs/ai-management/ai-studio/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/TykTechnologies/ai-studio
+      purposes:
+        - identification
+        - research
+      authority: official

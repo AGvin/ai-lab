@@ -1,0 +1,24 @@
+entity:
+  id: catalog/producers/u/uc-berkeley-sky-computing-lab
+  type: organization
+  name: UC Berkeley Sky Computing Lab
+  aliases:
+    - Sky Computing Lab
+  references:
+    - type: official-site
+      source:
+        url: https://sky.cs.berkeley.edu/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://sky.cs.berkeley.edu/project/vllm/
+      purposes:
+        - research
+      authority: official
+      note: Current lab project page documents vLLM and its original contributors.
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/vllm

@@ -1,0 +1,28 @@
+entity:
+  id: learning/areas/agents-and-automation/integration-and-extensibility/model-context-protocol/building-mcp-servers
+  name: Building MCP Servers
+  references:
+    - type: documentation
+      source:
+        url: https://modelcontextprotocol.io/docs/develop/build-server
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://modelcontextprotocol.io/docs/sdk
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://py.sdk.modelcontextprotocol.io/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices
+      purposes:
+        - research
+      authority: official

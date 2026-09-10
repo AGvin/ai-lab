@@ -1,0 +1,20 @@
+entity:
+  id: concepts/ai-engineering/architectures-and-patterns/rag
+  name: Retrieval-Augmented Generation
+  aliases:
+    - RAG
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2005.11401
+      purposes:
+        - research
+      authority: independent
+      note: Foundational RAG work combines a generative model with retrieval from explicit non-parametric memory and demonstrates that RAG can itself include fine-tuned trainable components.
+    - type: article
+      source:
+        url: https://doi.org/10.1145/3637528.3671470
+      purposes:
+        - research
+      authority: independent
+      note: KDD 2024 survey covers retrieval-augmented large language models and modern variations in retrievers, augmentation, and system integration.

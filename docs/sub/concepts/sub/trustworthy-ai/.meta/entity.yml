@@ -1,0 +1,18 @@
+entity:
+  id: concepts/trustworthy-ai
+  name: Trustworthy AI
+  references:
+    - type: documentation
+      source:
+        url: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/
+      purposes:
+        - research
+      authority: official
+      note: NIST AI RMF treats trustworthy AI as a contextual socio-technical combination of characteristics including validity/reliability, safety, security/resilience, accountability/transparency, explainability/interpretability, privacy enhancement, and fairness, with trade-offs rather than a binary guaranteed state.
+    - type: documentation
+      source:
+        url: https://www.nist.gov/itl/ai-risk-management-framework
+      purposes:
+        - research
+      authority: official
+      note: Current NIST AI RMF guidance frames trustworthiness/risk management across design, development, deployment, use, and evaluation of AI systems rather than as an intrinsic property of a model alone.

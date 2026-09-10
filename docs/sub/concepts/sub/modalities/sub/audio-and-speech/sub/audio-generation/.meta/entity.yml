@@ -1,0 +1,18 @@
+entity:
+  id: concepts/modalities/audio-and-speech/audio-generation
+  name: Audio Generation
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2209.03143
+      purposes:
+        - research
+      authority: independent
+      note: AudioLM demonstrates generative modeling of discrete audio representations for speech and music continuation without requiring text conditioning, illustrating the broad audio-generation boundary.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2209.15352
+      purposes:
+        - research
+      authority: independent
+      note: AudioGen demonstrates text-conditioned generation of environmental/general audio using learned discrete audio representations and establishes text-to-audio as one specialization within broader audio generation.

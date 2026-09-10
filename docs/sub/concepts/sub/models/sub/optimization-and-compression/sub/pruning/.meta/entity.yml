@@ -1,0 +1,20 @@
+entity:
+  id: concepts/models/optimization-and-compression/pruning
+  name: Model Pruning
+  aliases:
+    - Pruning
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1506.02626
+      purposes:
+        - research
+      authority: independent
+      note: Foundational modern pruning work removes low-importance neural-network connections and retrains the remaining network, illustrating pruning as learned parameter/connectivity reduction rather than merely changing numerical precision.
+    - type: documentation
+      source:
+        url: https://docs.pytorch.org/tutorials/intermediate/pruning_tutorial.html
+      purposes:
+        - research
+      authority: official
+      note: Current PyTorch pruning documentation distinguishes unstructured parameter sparsification from structured channel/unit pruning and exposes pruning through masks/reparameterization before optional permanent materialization.

@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/agents/hybrid/openhands
+  type: software
+  name: OpenHands
+  references:
+    - type: documentation
+      source:
+        url: https://docs.openhands.dev/overview/introduction
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/OpenHands/OpenHands
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/all-hands-ai-inc

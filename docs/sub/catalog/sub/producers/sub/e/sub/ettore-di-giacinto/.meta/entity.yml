@@ -1,0 +1,24 @@
+entity:
+  id: catalog/producers/e/ettore-di-giacinto
+  type: individual
+  name: Ettore Di Giacinto
+  aliases:
+    - mudler
+  references:
+    - type: other
+      source:
+        url: https://github.com/mudler
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://localai.io/docs/overview/
+      purposes:
+        - research
+      authority: official
+      note: Current LocalAI overview identifies Ettore Di Giacinto as creator, original author, and project lead.
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/integrated-platforms/localai

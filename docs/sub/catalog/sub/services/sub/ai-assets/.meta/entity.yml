@@ -1,0 +1,4 @@
+entity:
+  id: catalog/services/ai-assets
+  type: catalog-index
+  name: AI Assets

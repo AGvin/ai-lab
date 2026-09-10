@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/agent-frameworks/deep-agents
+  type: software
+  name: Deep Agents
+  references:
+    - type: documentation
+      source:
+        url: https://docs.langchain.com/deepagents
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/langchain-ai/deepagents
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/langchain-inc

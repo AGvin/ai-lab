@@ -1,0 +1,26 @@
+entity:
+  id: catalog/software/agents/local/omp
+  type: software
+  name: OMP
+  aliases:
+    - Oh My Pi
+  references:
+    - type: official-site
+      source:
+        url: https://omp.sh/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/can1357/oh-my-pi
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/can-boluk
+    - type: derived-from
+      target: catalog/software/agents/local/pi

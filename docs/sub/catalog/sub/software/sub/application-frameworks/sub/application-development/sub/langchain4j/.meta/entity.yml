@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/application-frameworks/application-development/langchain4j
+  type: software
+  name: LangChain4j
+  references:
+    - type: documentation
+      source:
+        url: https://docs.langchain4j.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/langchain4j/langchain4j
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/langchain4j

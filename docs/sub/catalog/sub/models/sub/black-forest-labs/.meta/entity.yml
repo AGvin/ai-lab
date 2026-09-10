@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/black-forest-labs
+  type: model-producer-view
+  name: Black Forest Labs Models
+  references:
+    - type: official-site
+      source:
+        url: https://blackforestlabs.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/black-forest-labs
+      purposes:
+        - research
+      authority: official

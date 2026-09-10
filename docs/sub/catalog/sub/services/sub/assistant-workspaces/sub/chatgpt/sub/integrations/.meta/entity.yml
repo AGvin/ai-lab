@@ -1,0 +1,3 @@
+entity:
+  id: catalog/services/assistant-workspaces/chatgpt/integrations
+  name: ChatGPT Integrations

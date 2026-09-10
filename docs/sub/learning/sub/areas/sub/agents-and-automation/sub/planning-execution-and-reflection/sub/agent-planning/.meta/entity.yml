@@ -1,0 +1,11 @@
+entity:
+  id: learning/areas/agents-and-automation/planning-execution-and-reflection/agent-planning
+  name: Agent Planning
+  references:
+    - type: article
+      source:
+        url: https://www.langchain.com/blog/plan-and-execute-agents
+      purposes:
+        - research
+      authority: official
+      note: Exact historical LangChain Plan-and-Execute Agents reference preserved from the legacy Planner-Executor source for migration provenance; mutable framework APIs and current product behavior must be re-checked before implementation claims.

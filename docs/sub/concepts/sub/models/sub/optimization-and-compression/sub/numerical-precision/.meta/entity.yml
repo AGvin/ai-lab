@@ -1,0 +1,18 @@
+entity:
+  id: concepts/models/optimization-and-compression/numerical-precision
+  name: Numerical Precision
+  references:
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/deeplearning/performance/mixed-precision-training/index.html
+      purposes:
+        - research
+      authority: official
+      note: NVIDIA mixed-precision documentation distinguishes numerical formats and the use of different precisions for different parts of a neural-network workload.
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/cuda/cuda-programming-guide/05-appendices/mathematical-functions.html
+      purposes:
+        - research
+      authority: official
+      note: Current CUDA documentation distinguishes supported floating-point data types and alternate low-precision formats, illustrating that bit width, exponent range, and significand precision are separate properties.

@@ -1,0 +1,40 @@
+entity:
+  id: catalog/software/workflow-engines/visual-ai-workflows/dify
+  type: software
+  name: Dify
+  references:
+    - type: documentation
+      source:
+        url: https://docs.dify.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/langgenius/dify
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current upstream license identifies LangGenius, Inc. as Dify's copyright holder/producer and defines the current modified Apache-2.0-based license conditions.
+    - type: other
+      source:
+        url: https://dify.ai/legal/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Dify terms identify LangGenius, Inc. as the Delaware corporation doing business as Dify.
+    - type: other
+      source:
+        url: https://dify.ai/legal/marketplace-agreement
+      purposes:
+        - research
+      authority: official
+      note: Current marketplace agreement describes Dify as the open-source platform managed by LangGenius, Inc.
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/langgenius-inc
+    - type: maintained-by
+      target: catalog/producers/l/langgenius-inc

@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/teams/data-analysis-team
+  type: user-scenario
+  name: Data Analysis Team

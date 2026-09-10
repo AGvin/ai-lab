@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/scenarios/teams/project-and-operations-team
+  type: user-scenario
+  name: Project and Operations Team

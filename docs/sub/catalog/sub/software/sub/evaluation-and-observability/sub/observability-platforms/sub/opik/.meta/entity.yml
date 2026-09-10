@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/evaluation-and-observability/observability-platforms/opik
+  type: software
+  name: Opik
+  references:
+    - type: documentation
+      source:
+        url: https://www.comet.com/docs/opik/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/comet-ml/opik
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/comet-ml-inc

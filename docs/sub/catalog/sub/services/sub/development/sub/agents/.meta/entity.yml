@@ -1,0 +1,4 @@
+entity:
+  id: catalog/services/development/agents
+  type: catalog-index
+  name: Hosted Development Agents

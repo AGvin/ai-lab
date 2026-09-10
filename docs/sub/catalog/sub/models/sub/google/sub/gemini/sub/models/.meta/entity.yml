@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/google/gemini/models
+  type: catalog-index
+  name: Gemini Models

@@ -1,0 +1,4 @@
+entity:
+  id: catalog/services/benchmarking
+  type: catalog-index
+  name: Benchmarking

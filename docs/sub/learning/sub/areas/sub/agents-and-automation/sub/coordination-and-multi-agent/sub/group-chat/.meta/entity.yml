@@ -1,0 +1,18 @@
+entity:
+  id: learning/areas/agents-and-automation/coordination-and-multi-agent/group-chat
+  name: Group Chat
+  references:
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/design-patterns/group-chat.html
+      purposes:
+        - research
+      authority: official
+      note: Exact legacy AutoGen Group Chat design-pattern reference preserved for migration provenance; stable group-chat semantics remain concept-owned.
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tutorial/teams.html
+      purposes:
+        - research
+      authority: official
+      note: Exact legacy AutoGen teams reference preserved as implementation/evidence provenance; mutable framework behavior must be re-checked against current documentation before implementation claims.

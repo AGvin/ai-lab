@@ -1,0 +1,29 @@
+entity:
+  id: catalog/software/model-and-data-platforms/lifecycle-platforms/mlflow
+  type: software
+  name: MLflow
+  references:
+    - type: documentation
+      source:
+        url: https://mlflow.org/docs/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/mlflow/mlflow
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://mlflow.org/classical-ml/
+      purposes:
+        - research
+      authority: official
+      note: Current MLflow site identifies MLflow as created by Databricks.
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/databricks-inc

@@ -1,0 +1,28 @@
+entity:
+  id: concepts/modalities/vision/image-generation/text-to-image
+  name: Text-to-Image Generation
+  aliases:
+    - Text-to-Image
+    - T2I
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2102.12092
+      purposes:
+        - research
+      authority: independent
+      note: DALL-E demonstrates large-scale autoregressive text-to-image generation by jointly modeling text and image tokens, showing that text-conditioned image synthesis is not tied to diffusion.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2205.11487
+      purposes:
+        - research
+      authority: independent
+      note: Imagen provides a major diffusion-based text-to-image formulation using pretrained language representations for textual conditioning and image synthesis.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2411.16164
+      purposes:
+        - research
+      authority: independent
+      note: A current decade survey reviews GAN-, autoregressive-, and diffusion-based text-to-image synthesis and the broader controllability, consistency, evaluation, and safety landscape.

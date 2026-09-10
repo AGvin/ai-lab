@@ -1,0 +1,34 @@
+entity:
+  id: learning/areas/agents-and-automation/integration-and-extensibility/plugins/creating-ai-plugins
+  name: Creating AI Plugins
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/codex/plugins/create-plugin
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://code.claude.com/docs/en/plugins
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://code.claude.com/docs/en/plugin-marketplaces
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://cursor.com/docs/plugins
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://opencode.ai/docs/plugins/
+      purposes:
+        - research
+      authority: official

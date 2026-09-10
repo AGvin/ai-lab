@@ -1,0 +1,4 @@
+entity:
+  id: catalog/producers/c
+  type: catalog-index
+  name: Producers — C

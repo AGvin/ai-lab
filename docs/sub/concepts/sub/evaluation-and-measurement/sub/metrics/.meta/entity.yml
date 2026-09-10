@@ -1,0 +1,20 @@
+entity:
+  id: concepts/evaluation-and-measurement/metrics
+  name: Evaluation Metrics
+  aliases:
+    - Metrics
+  references:
+    - type: documentation
+      source:
+        url: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
+      purposes:
+        - research
+      authority: official
+      note: NIST AI RMF Measure guidance treats metrics as documented quantitative/qualitative measurements tied to evaluation conditions, uncertainty, benchmarks, and trustworthy characteristics.
+    - type: official-site
+      source:
+        url: https://mlcommons.org/benchmarks/inference-datacenter/
+      purposes:
+        - research
+      authority: official
+      note: MLPerf Inference defines scenario-specific latency and throughput measurements under controlled workload, quality, and load-generation conditions rather than as context-free hardware/model numbers.

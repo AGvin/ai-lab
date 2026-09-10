@@ -1,0 +1,24 @@
+entity:
+  id: catalog/software/agents/local/goose
+  type: software
+  name: goose
+  references:
+    - type: repository
+      source:
+        url: https://github.com/aaif-goose/goose
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://goose-docs.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/block
+    - type: maintained-by
+      target: catalog/producers/a/agentic-ai-foundation

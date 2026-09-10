@@ -1,0 +1,18 @@
+entity:
+  id: concepts/ai-engineering/architectures-and-patterns/model-routing
+  name: Model Routing
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2406.18665
+      purposes:
+        - research
+      authority: independent
+      note: RouteLLM formalizes inference-time routing between stronger and weaker language models using learned router policies and evaluates the quality-cost trade-off of the complete routing policy.
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2305.05176
+      purposes:
+        - research
+      authority: independent
+      note: FrugalGPT studies LLM cascades and learned selection among heterogeneous model APIs, showing routing/cascading as system-level orchestration rather than intrinsic model architecture.

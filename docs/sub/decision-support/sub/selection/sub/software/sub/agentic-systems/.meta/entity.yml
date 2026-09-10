@@ -1,0 +1,4 @@
+entity:
+  id: decision-support/selection/software/agentic-systems
+  type: software-selection-guide
+  name: Agentic Systems Comparison

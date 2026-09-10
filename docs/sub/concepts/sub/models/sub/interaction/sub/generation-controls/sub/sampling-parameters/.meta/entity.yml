@@ -1,0 +1,11 @@
+entity:
+  id: concepts/models/interaction/generation-controls/sampling-parameters
+  name: Sampling Parameters
+  references:
+    - type: article
+      source:
+        url: https://arxiv.org/abs/1904.09751
+      purposes:
+        - research
+      authority: independent
+      note: Foundational nucleus-sampling work analyzes decoding behavior and motivates top-p sampling as a dynamic truncation of the model distribution for open-ended generation.

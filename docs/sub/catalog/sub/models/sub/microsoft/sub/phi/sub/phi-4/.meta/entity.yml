@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/microsoft/phi/phi-4
+  type: model-series
+  name: Phi-4
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/microsoft/Phi-4-mini-instruct
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/microsoft/phi
+    - type: has-member
+      target: catalog/models/microsoft/phi/phi-4/models/phi-4-mini-instruct

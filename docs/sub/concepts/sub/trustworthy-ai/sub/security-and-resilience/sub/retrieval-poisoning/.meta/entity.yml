@@ -1,0 +1,25 @@
+entity:
+  id: concepts/trustworthy-ai/security-and-resilience/retrieval-poisoning
+  name: Retrieval Poisoning
+  references:
+    - type: documentation
+      source:
+        url: https://github.com/mitre-atlas/atlas-data/blob/main/dist/v6/ATLAS-2026.07.yaml
+      purposes:
+        - research
+      authority: official
+      note: MITRE ATLAS 2026.07 models AML.T0070 RAG Poisoning as malicious content injected into RAG-indexed data so later retrieval can surface false or misleading information, prompt injections, or false RAG entries, while separately modeling training-data poisoning and indirect prompt injection.
+    - type: article
+      source:
+        url: https://www.usenix.org/conference/usenixsecurity25/presentation/zou-poisonedrag
+      purposes:
+        - research
+      authority: independent
+      note: The peer-reviewed USENIX Security 2025 PoisonedRAG study treats the RAG knowledge database as a distinct attack surface and demonstrates knowledge-corruption attacks that inject a small number of malicious texts to induce attacker-chosen answers, explicitly distinguishing malicious knowledge from prompt-injection instructions.
+    - type: documentation
+      source:
+        url: https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/
+      purposes:
+        - research
+      authority: independent
+      note: OWASP LLM08:2025 covers vector, embedding, and RAG security weaknesses including poisoned retrieval data and recommends layered access, validation, monitoring, and knowledge-base controls rather than treating retrieved content as inherently trustworthy.

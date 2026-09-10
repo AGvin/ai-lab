@@ -1,0 +1,18 @@
+entity:
+  id: learning/areas/agents-and-automation/integration-and-extensibility/model-context-protocol
+  name: Model Context Protocol
+  references:
+    - type: documentation
+      source:
+        url: https://modelcontextprotocol.io/docs/
+      purposes:
+        - research
+      authority: official
+      note: Official MCP documentation is the primary current source for host/client/server concepts, connection patterns, SDK guidance, and tutorials used by the learning subtree.
+    - type: specification
+      source:
+        url: https://modelcontextprotocol.io/specification/
+      purposes:
+        - research
+      authority: official
+      note: The MCP specification is the normative source for protocol behavior; learning material explains and applies it without becoming the independent protocol contract.

@@ -1,0 +1,10 @@
+entity:
+  id: catalog/software/agents/hybrid/claude-code/integrations/agent-skills
+  name: Claude Code Agent Skills
+  references:
+    - type: documentation
+      source:
+        url: https://code.claude.com/docs/en/skills
+      purposes:
+        - research
+      authority: official

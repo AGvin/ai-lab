@@ -1,0 +1,28 @@
+entity:
+  id: catalog/services/assistant-workspaces/grok
+  type: service
+  name: Grok
+  references:
+    - type: official-site
+      source:
+        url: https://grok.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.x.ai/grok/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.x.ai/grok/faq
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/x/xai

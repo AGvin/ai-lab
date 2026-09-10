@@ -1,0 +1,20 @@
+entity:
+  id: concepts/ai-engineering/architectures-and-patterns/fallback-architectures
+  name: Fallback Architectures
+  aliases:
+    - Fallback Models
+  references:
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker
+      purposes:
+        - research
+      authority: official
+      note: Circuit Breaker guidance distinguishes persistent-failure handling from ordinary retries and describes graceful degradation or alternative operations as controlled responses when a dependency is likely to fail.
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/partial-failure-strategies
+      purposes:
+        - research
+      authority: official
+      note: Partial-failure guidance separates retry, circuit breaking, and fallback logic such as cached/default alternatives, providing a general reliability boundary for AI-specific fallback paths.

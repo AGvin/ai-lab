@@ -1,0 +1,23 @@
+entity:
+  id: catalog/software/development-tools/spec-driven-development/spec-kit
+  type: software
+  name: GitHub Spec Kit
+  aliases:
+    - Spec Kit
+  references:
+    - type: repository
+      source:
+        url: https://github.com/github/spec-kit
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.github.io/spec-kit/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/github-inc

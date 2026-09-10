@@ -1,0 +1,37 @@
+entity:
+  id: catalog/producers/t/treeverse-inc
+  type: organization
+  name: Treeverse, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://lakefs.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://lakefs.io/terms-of-use/
+      purposes:
+        - identification
+      authority: official
+      note: lakeFS Terms of Use identify lakeFS.io as a website of Treeverse, Inc., a Delaware corporation.
+    - type: article
+      source:
+        url: https://dvc.org/blog/dvc-joins-lakefs-your-questions-answered/
+      purposes:
+        - research
+      authority: official
+      note: DVC transition announcement states that lakeFS acquired DVC from Iterative.ai and took over stewardship and active development.
+    - type: repository
+      source:
+        url: https://github.com/treeverse
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: owns
+      target: catalog/software/model-and-data-platforms/versioning-and-lineage/dvc
+    - type: maintains
+      target: catalog/software/model-and-data-platforms/versioning-and-lineage/dvc

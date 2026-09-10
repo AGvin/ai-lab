@@ -1,0 +1,33 @@
+entity:
+  id: catalog/producers/l/lovable-labs-inc
+  type: organization
+  name: Lovable Labs Incorporated
+  aliases:
+    - Lovable
+  references:
+    - type: official-site
+      source:
+        url: https://lovable.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://lovable.dev/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official Lovable Terms of Service identifying Lovable Labs Incorporated.
+    - type: other
+      source:
+        url: https://lovable.dev/privacy
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official Lovable Privacy Policy identifying Lovable Labs Incorporated.
+  relations:
+    - type: produces
+      target: catalog/services/development/agents/lovable

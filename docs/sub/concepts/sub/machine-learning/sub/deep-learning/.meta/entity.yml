@@ -1,0 +1,11 @@
+entity:
+  id: concepts/machine-learning/deep-learning
+  name: Deep Learning
+  references:
+    - type: article
+      source:
+        url: https://www.nature.com/articles/nature14539
+      purposes:
+        - research
+      authority: independent
+      note: Foundational review defining deep learning through multiple processing layers and learned representations at multiple levels of abstraction.

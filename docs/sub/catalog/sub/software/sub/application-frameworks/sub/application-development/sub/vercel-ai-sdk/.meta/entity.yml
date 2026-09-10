@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/application-frameworks/application-development/vercel-ai-sdk
+  type: software
+  name: Vercel AI SDK
+  references:
+    - type: documentation
+      source:
+        url: https://vercel.com/docs/ai-sdk
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://ai-sdk.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/vercel-inc

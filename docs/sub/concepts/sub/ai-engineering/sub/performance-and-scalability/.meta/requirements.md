@@ -1,0 +1,40 @@
+# Documentation Requirements
+
+## Requirements
+
+- Use the reader-facing title `AI System Performance and Scalability`.
+- Define this node as the reusable engineering owner for designing and operating AI-enabled systems so they meet explicit response-time, throughput, concurrency, deadline, utilization, and service-quality targets across expected workload levels and demand changes.
+- Keep metric definitions with `evaluation-and-measurement/metrics/`. This node owns the architecture/runtime mechanisms and trade-offs that change measured latency, throughput, queueing, utilization, concurrency, and saturation rather than redefining those metrics.
+- Distinguish performance from scalability. Performance describes behavior under stated workload/resource conditions; scalability describes how well the system preserves required behavior as demand or workload size changes through additional resources, partitioning, concurrency, scheduling, architecture changes, or other adaptation.
+- Define performance targets before optimizing where practical. Interactive, streaming, batch, asynchronous, and offline workflows can prioritize different milestones and deadlines; do not optimize one aggregate throughput or average latency number without the service/user requirement it must satisfy.
+- Evaluate the complete critical path rather than only model inference. Queue wait, context/prompt preparation, retrieval/reranking, model prefill/decode, tool/API calls, validation, persistence, network, retries/fallbacks, and post-processing can each dominate end-to-end behavior.
+- Treat workload shape as part of the performance contract: input/context length, generated output length, modality/media size, batch/concurrency, tool/retrieval mix, model/configuration, cache state, request priority, and arrival pattern can materially change resource demand and latency/throughput.
+- Explain saturation as the regime where one or more constrained resources cannot absorb additional offered load without growing queues, latency, failures/rejections, timeouts, resource contention, or degraded quality. Identify the limiting resource rather than assuming accelerator compute is always the bottleneck.
+- Distinguish concurrency from throughput. More active requests can increase aggregate utilization/work completed until bottlenecks saturate, while also increasing queueing, memory pressure, tail latency, context/cache contention, or failure rates.
+- Explain queueing/load leveling as a mechanism for decoupling bursty arrival rates from processing capacity. Queues can protect dependencies and improve utilization but add waiting time, can become stale/unbounded, and require admission, priority, deadline, cancellation, and backpressure semantics appropriate to the workload.
+- Explain backpressure/admission control/throttling as overload-management families. Systems can reject, defer, queue, shed, prioritize, or degrade work to protect bounded resources and preserve critical service; accepting every request and relying on an unbounded queue is not a scalable design by itself.
+- Relate rate limits to this owner as performance/capacity controls while retaining generic quota/economics semantics in `cost-and-capacity/` and retry/recovery behavior in `reliability-and-resilience/`. Do not materialize an inferred `rate-limits/` child.
+- Explain batching and scheduling as performance mechanisms. Larger or dynamic batches can improve accelerator utilization/aggregate throughput but can increase queueing and per-request latency or memory use. Delegate dynamically changing iterative-request scheduling semantics to the selected `deployment-and-serving/continuous-batching/` child rather than duplicating them here.
+- Explain caching as a performance mechanism when it avoids repeated computation, retrieval, tool calls, model loading, or other stable work. Hit rate, lookup overhead, invalidation/staleness, storage/memory pressure, isolation, and correctness determine whether caching actually improves performance.
+- Distinguish generic result/data caching from `models/inference/memory-and-context/context-caching/`; do not duplicate model-prefix cache semantics here.
+- Present vertical scaling, horizontal scaling, partitioning/sharding, replication, autoscaling, model/service routing, parallelism, offloading, optimized kernels, batching, caching, precomputation, and asynchronous processing as mechanism families rather than universal prescriptions.
+- Explain scaling delay and headroom. Autoscaling/reactive provisioning is not instantaneous; startup/model-loading/warm-up, provider quota, scheduler placement, data/index availability, and dependency scaling can require spare capacity, predictive/scheduled scaling, or controlled degradation for sudden bursts.
+- Distinguish warm/cold/cache states. Benchmarking only warmed models, caches, connections, compiled kernels, or fully provisioned workers can hide cold-start or scale-out behavior that users encounter in real demand transitions.
+- Explain tail behavior and overload separately from steady-state averages. p95/p99/deadline misses, queue age, rejection/timeout rates, and recovery after bursts can be more important to service quality than mean latency or short peak throughput.
+- Explain performance versus quality/correctness trade-offs explicitly. Smaller models, reduced context, lower precision, fewer retrieval candidates, aggressive caching, speculative/approximate methods, or skipped validation can improve latency/cost but are acceptable only when the required output/evidence quality remains satisfied.
+- Explain performance versus cost/capacity as a sibling trade-off with `cost-and-capacity/`. Overprovisioning can improve burst response but waste resources; aggressive consolidation can reduce cost but reduce headroom or increase contention. Optimize against explicit workload objectives rather than maximizing utilization alone.
+- Require realistic sustained/load/soak testing when claims concern production scale. Short microbenchmarks can identify component limits but do not prove end-to-end capacity under arrival bursts, long contexts, concurrent sessions, dependency failures, retries, or thermal/resource constraints.
+- Treat failure/retry storms and fallback load as performance inputs. Retries can multiply offered load during dependency degradation, while fallback paths can shift demand to a smaller alternate pool; reliability mechanisms must be capacity-tested together with normal traffic.
+- Keep concrete SLOs/targets, current provider/model throughput and latency, autoscaling thresholds, queue sizes, batch policies, hardware measurements, cache hit rates, load-test results, provider quotas, and deployment tuning with their applicable project/evidence/catalog owners.
+- Use the canonical entity references as research inputs for explicit performance targets, demand/capacity alignment, scaling, and overload/throttling boundaries when reader-facing rendering is activated.
+
+## Validation
+
+- Performance/scalability engineering does not duplicate the canonical definitions of latency, throughput, or other metrics.
+- Performance and scalability are distinguished, and measured behavior is always scoped to workload/resource conditions.
+- End-to-end critical-path and workload-shape effects are not reduced to model tokens-per-second alone.
+- Concurrency is not equated with throughput, and saturation/queueing/tail behavior remain explicit.
+- Queues, caching, batching, autoscaling, and throttling are treated as conditional mechanisms with trade-offs rather than universal optimizations.
+- Unselected child concepts are not inferred or materialized merely because related terminology appears in performance guidance.
+- Performance optimization cannot silently discard required output quality, validation, privacy, safety, or reliability constraints.
+- Concrete performance targets, thresholds, tuning values, provider limits, benchmarks, and deployment settings remain outside the reusable concept owner.

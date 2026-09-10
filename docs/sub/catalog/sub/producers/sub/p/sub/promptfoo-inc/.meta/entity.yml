@@ -1,0 +1,39 @@
+entity:
+  id: catalog/producers/p/promptfoo-inc
+  type: organization
+  name: Promptfoo Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://www.promptfoo.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.promptfoo.dev/terms-of-service/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: First-party terms identifying Promptfoo Inc.
+    - type: official-site
+      source:
+        url: https://www.promptfoo.dev/about/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current first-party page stating that Promptfoo is now part of OpenAI.
+    - type: repository
+      source:
+        url: https://github.com/promptfoo/promptfoo
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/promptfoo
+    - type: part-of
+      target: catalog/producers/o/openai

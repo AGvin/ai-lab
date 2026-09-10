@@ -1,0 +1,16 @@
+entity:
+  id: learning/areas/agents-and-automation/integration-and-extensibility/agent-skills/platform-support-and-portability
+  name: Agent Skills Platform Support and Portability
+  references:
+    - type: documentation
+      source:
+        url: https://agentskills.io/client-implementation/adding-skills-support
+      purposes:
+        - research
+      authority: official
+    - type: specification
+      source:
+        url: https://agentskills.io/specification
+      purposes:
+        - research
+      authority: official

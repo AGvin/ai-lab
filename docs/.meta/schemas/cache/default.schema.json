@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "repo:/:cache:default",
+  "title": "Default documentation cache",
+  "description": "Generated per-node documentation cache with source fingerprints and resolved state.",
+  "$defs": {
+    "fingerprint": {
+      "type": "string",
+      "pattern": "^gitblob:(?:[0-9a-f]{40}|[0-9a-f]{64})$"
+    },
+    "fingerprints": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/fingerprint"}
+    },
+    "schema_registry": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["cache"],
+  "properties": {
+    "cache": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "fingerprints", "state"],
+      "properties": {
+        "schema": {"const": "default"},
+        "fingerprints": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["self"],
+          "properties": {
+            "self": {"$ref": "#/$defs/fingerprints"},
+            "parent": {"$ref": "#/$defs/fingerprints"}
+          }
+        },
+        "state": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["node", "entity", "aliases", "schemas"],
+          "properties": {
+            "node": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["effective", "outgoing", "children"],
+              "properties": {
+                "effective": {"type": "object"},
+                "outgoing": {"type": "object"},
+                "children": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["outgoing", "local"],
+                  "properties": {
+                    "outgoing": {"type": "object"},
+                    "local": {"type": "object"}
+                  }
+                }
+              }
+            },
+            "entity": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["effective"],
+              "properties": {"effective": {"type": "object"}}
+            },
+            "aliases": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["effective"],
+              "properties": {"effective": {"type": "object"}}
+            },
+            "schemas": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["registry"],
+              "properties": {"registry": {"$ref": "#/$defs/schema_registry"}}
+            }
+          }
+        }
+      }
+    }
+  }
+}

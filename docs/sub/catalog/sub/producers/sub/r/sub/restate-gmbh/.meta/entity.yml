@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/r/restate-gmbh
+  type: organization
+  name: Restate GmbH
+  references:
+    - type: official-site
+      source:
+        url: https://www.restate.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.restate.dev/imprint
+      purposes:
+        - identification
+      authority: official
+      note: Current imprint identifies the legal entity as Restate GmbH.
+    - type: article
+      source:
+        url: https://restate.dev/blog/why-we-built-restate
+      purposes:
+        - research
+      authority: official
+      note: First-party project history introduces Restate as the new project built by the founding team.
+  relations:
+    - type: produces
+      target: catalog/software/workflow-engines/application-orchestration/restate

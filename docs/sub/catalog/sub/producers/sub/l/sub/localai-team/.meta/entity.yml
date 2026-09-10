@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/l/localai-team
+  type: organization
+  name: LocalAI Team
+  references:
+    - type: official-site
+      source:
+        url: https://localai.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://localai.io/docs/overview/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current LocalAI overview identifies the LocalAI team as the project maintainer group.
+    - type: repository
+      source:
+        url: https://github.com/mudler/LocalAI
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: maintains
+      target: catalog/software/inference-runtimes/integrated-platforms/localai

@@ -1,0 +1,25 @@
+entity:
+  id: catalog/producers/t/timothy-jaeryang-baek
+  type: individual
+  name: Timothy Jaeryang Baek
+  aliases:
+    - tjbck
+  references:
+    - type: other
+      source:
+        url: https://github.com/tjbck
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/open-webui/open-webui
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: The current upstream project identifies Open WebUI as created by Timothy Jaeryang Baek.
+  relations:
+    - type: produces
+      target: catalog/software/interfaces-and-workspaces/conversational-platforms/open-webui

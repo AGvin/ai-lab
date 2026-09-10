@@ -1,0 +1,24 @@
+entity:
+  id: catalog/producers/d/dmitry-petrov
+  type: individual
+  name: Dmitry Petrov
+  references:
+    - type: article
+      source:
+        url: https://dvc.org/blog/dvc-1-0-release/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Dmitry Petrov states that he created DVC.
+    - type: article
+      source:
+        url: https://dvc.org/blog/a-shared-vision-for-the-future-of-dvc/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Dmitry Petrov describes DVC's origin and the 2025 stewardship transition to lakeFS.
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/versioning-and-lineage/dvc

@@ -1,0 +1,16 @@
+entity:
+  id: catalog/software/agents/hybrid/claude-code/integrations/plugins
+  name: Claude Code Plugins
+  references:
+    - type: documentation
+      source:
+        url: https://code.claude.com/docs/en/plugins
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://code.claude.com/docs/en/plugin-marketplaces
+      purposes:
+        - research
+      authority: official

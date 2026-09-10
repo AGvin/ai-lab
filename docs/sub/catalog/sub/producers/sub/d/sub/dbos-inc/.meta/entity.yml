@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/d/dbos-inc
+  type: organization
+  name: DBOS, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://www.dbos.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.dbos.dev/terms-of-service
+      purposes:
+        - identification
+      authority: official
+      note: Current terms identify the legal company as DBOS, Inc.
+    - type: article
+      source:
+        url: https://www.dbos.dev/blog/announcing-dbos
+      purposes:
+        - research
+      authority: official
+      note: The DBOS launch history records the formation of DBOS, Inc. to develop the DBOS system/product direction.
+  relations:
+    - type: produces
+      target: catalog/software/workflow-engines/application-orchestration/dbos

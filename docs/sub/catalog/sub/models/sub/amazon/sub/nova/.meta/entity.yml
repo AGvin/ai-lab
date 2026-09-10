@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/amazon/nova
+  type: model-family
+  name: Amazon Nova
+  references:
+    - type: product-page
+      source:
+        url: https://aws.amazon.com/nova/models/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-amazon.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/amazon-web-services
+    - type: has-member
+      target: catalog/models/amazon/nova/nova-2

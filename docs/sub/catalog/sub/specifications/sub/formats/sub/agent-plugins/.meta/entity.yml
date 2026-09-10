@@ -1,0 +1,17 @@
+entity:
+  id: catalog/specifications/formats/agent-plugins
+  name: Agent Plugins
+  references:
+    - type: specification
+      source:
+        url: https://agent-plugins.org/specification
+      purposes:
+        - identification
+        - research
+      authority: upstream
+    - type: repository
+      source:
+        url: https://github.com/agentplugins/agent-plugins-spec
+      purposes:
+        - research
+      authority: upstream

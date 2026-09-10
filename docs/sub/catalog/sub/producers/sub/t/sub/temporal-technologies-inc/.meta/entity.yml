@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/t/temporal-technologies-inc
+  type: organization
+  name: Temporal Technologies Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://temporal.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://temporal.io/terms-of-service
+      purposes:
+        - identification
+      authority: official
+      note: Current terms identify the company as Temporal Technologies Inc.
+    - type: article
+      source:
+        url: https://temporal.io/news/temporal-raises-usd18-75m-series-a-increases-total-raised-to-usd25-5m
+      purposes:
+        - research
+      authority: official
+      note: First-party company history identifies Temporal as maker of the open-source orchestration platform and records its founding from the Cadence lineage.
+  relations:
+    - type: produces
+      target: catalog/software/workflow-engines/application-orchestration/temporal

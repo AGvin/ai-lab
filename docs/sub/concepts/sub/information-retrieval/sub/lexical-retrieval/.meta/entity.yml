@@ -1,0 +1,20 @@
+entity:
+  id: concepts/information-retrieval/lexical-retrieval
+  name: Lexical Retrieval
+  aliases:
+    - Keyword Search
+  references:
+    - type: documentation
+      source:
+        url: https://nlp.stanford.edu/IR-book/
+      purposes:
+        - research
+      authority: independent
+      note: Established IR reference covering term vocabularies, inverted indexes, Boolean retrieval, term weighting, and ranked lexical retrieval.
+    - type: article
+      source:
+        url: https://doi.org/10.1561/1500000019
+      purposes:
+        - research
+      authority: independent
+      note: Probabilistic relevance review provides the conceptual framework behind BM25 and related lexical ranking methods.

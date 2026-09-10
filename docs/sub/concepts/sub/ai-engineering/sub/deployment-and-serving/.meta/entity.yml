@@ -1,0 +1,20 @@
+entity:
+  id: concepts/ai-engineering/deployment-and-serving
+  name: AI Deployment and Serving
+  aliases:
+    - Model Serving
+  references:
+    - type: documentation
+      source:
+        url: https://kserve.github.io/website/docs/admin-guide/overview
+      purposes:
+        - research
+      authority: official
+      note: Current KServe production guidance treats inference serving as an operational layer covering deployment modes, networking, resources, scaling, security, monitoring, timeouts, and predictive/generative inference workloads.
+    - type: documentation
+      source:
+        url: https://kserve.github.io/website/docs/model-serving/generative-inference/autoscaling
+      purposes:
+        - research
+      authority: official
+      note: KServe autoscaling guidance demonstrates serving capacity driven by inference-specific signals such as concurrent/running requests and KV-cache/queue state rather than treating a loaded model as a complete production service.

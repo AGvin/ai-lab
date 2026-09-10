@@ -1,0 +1,4 @@
+entity:
+  id: catalog/software/workflow-engines/application-orchestration
+  type: catalog-index
+  name: Application Orchestration

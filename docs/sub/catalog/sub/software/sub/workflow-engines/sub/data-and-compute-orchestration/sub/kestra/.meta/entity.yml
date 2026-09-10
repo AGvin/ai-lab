@@ -1,0 +1,36 @@
+entity:
+  id: catalog/software/workflow-engines/data-and-compute-orchestration/kestra
+  type: software
+  name: Kestra
+  references:
+    - type: documentation
+      source:
+        url: https://kestra.io/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/kestra-io/kestra
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://kestra.io/blogs/2022-02-01-kestra-opensource
+      purposes:
+        - research
+      authority: official
+      note: First-party history records Ludovic Dehon starting Kestra in 2019 from a Leroy Merlin consulting project before a company was created alongside the open-source project.
+    - type: other
+      source:
+        url: https://kestra.io/privacy-policy
+      purposes:
+        - research
+      authority: official
+      note: Current legal/privacy material identifies Kestra Technologies as the corporate layer for the current Kestra product surface.
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/ludovic-dehon
