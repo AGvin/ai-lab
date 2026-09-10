@@ -1,0 +1,22 @@
+entity:
+  id: catalog/specifications/protocols/agent-user-interaction-protocol
+  name: Agent User Interaction Protocol
+  aliases:
+    - AG-UI
+    - Agent-User Interaction Protocol
+  references:
+    - type: documentation
+      source:
+        url: https://docs.ag-ui.com/introduction
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current official AG-UI overview; re-check the current protocol documentation before updating event-level or transport-sensitive requirements.
+    - type: repository
+      source:
+        url: https://github.com/ag-ui-protocol/ag-ui
+      purposes:
+        - identification
+        - research
+      authority: official
