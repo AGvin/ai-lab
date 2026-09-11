@@ -13,7 +13,7 @@ entity:
         - identification
         - research
       authority: official
-    - type: architecture
+    - type: documentation
       source:
         url: https://www.nvidia.com/en-us/data-center/technologies/hopper-architecture/
       purposes:
