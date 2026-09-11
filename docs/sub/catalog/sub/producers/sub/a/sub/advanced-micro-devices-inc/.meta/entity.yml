@@ -19,7 +19,7 @@ entity:
         - identification
         - research
       authority: official
-    - type: terms-of-use
+    - type: terms-of-service
       source:
         url: https://www.amd.com/en/legal/copyright.html
       purposes:
