@@ -1,35 +1,31 @@
 entity:
-  id: catalog/producers/a/advanced-micro-devices-inc
+  id: catalog/producers/d/deep-infra-inc
   type: organization
-  name: Advanced Micro Devices, Inc.
+  name: Deep Infra Inc.
   aliases:
-    - AMD
+    - DeepInfra
   references:
     - type: official-site
       source:
-        url: https://www.amd.com/
+        url: https://deepinfra.com/
       purposes:
         - identification
         - research
       authority: official
     - type: privacy-policy
       source:
-        url: https://www.amd.com/en/legal/privacy.html
+        url: https://deepinfra.com/privacy
       purposes:
         - identification
         - research
       authority: official
     - type: terms-of-service
       source:
-        url: https://www.amd.com/en/legal/copyright.html
+        url: https://deepinfra.com/terms
       purposes:
         - identification
         - research
       authority: official
   relations:
     - type: produces
-      target: catalog/hardware/amd-instinct-mi350x
-    - type: produces
-      target: catalog/hardware/amd-instinct-mi355x
-    - type: produces
-      target: catalog/hardware/amd-instinct-mi455x
+      target: catalog/services/model-apis/deepinfra

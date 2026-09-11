@@ -32,3 +32,9 @@ entity:
       target: catalog/software/inference-runtimes/distributed-serving/llm-d
     - type: produces
       target: catalog/hardware/nvidia-h100
+    - type: produces
+      target: catalog/hardware/nvidia-b200
+    - type: produces
+      target: catalog/hardware/nvidia-b300
+    - type: produces
+      target: catalog/hardware/nvidia-rubin

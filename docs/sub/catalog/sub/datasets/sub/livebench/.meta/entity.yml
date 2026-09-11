@@ -1,0 +1,26 @@
+entity:
+  id: catalog/datasets/livebench
+  type: dataset
+  name: LiveBench
+  references:
+    - type: official-site
+      source:
+        url: https://livebench.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/LiveBench/LiveBench
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2406.19314
+      purposes:
+        - identification
+        - research
+      authority: upstream

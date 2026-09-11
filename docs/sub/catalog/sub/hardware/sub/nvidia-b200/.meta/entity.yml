@@ -1,0 +1,29 @@
+entity:
+  id: catalog/hardware/nvidia-b200
+  type: hardware-product
+  name: NVIDIA B200 Tensor Core GPU
+  aliases:
+    - B200
+  references:
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/cutlass/4.3.1/overview.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/datacenter/tesla/mig-user-guide/supported-mig-profiles.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/cuda/archive/12.9.2/blackwell-tuning-guide/index.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia
