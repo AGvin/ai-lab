@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/swe-bench
+  type: dataset-family
+  name: SWE-bench
+  references:
+    - type: repository
+      source:
+        url: https://github.com/SWE-bench/SWE-bench
+      purposes:
+        - identification
+        - research
+      authority: upstream
+    - type: documentation
+      source:
+        url: https://swebench.com/SWE-bench/
+      purposes:
+        - identification
+        - research
+      authority: upstream
+    - type: dataset-card
+      source:
+        url: https://huggingface.co/datasets/SWE-bench/SWE-bench
+      purposes:
+        - research
+      authority: upstream
