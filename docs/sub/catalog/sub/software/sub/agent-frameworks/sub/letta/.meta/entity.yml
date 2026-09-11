@@ -12,7 +12,7 @@ entity:
       authority: official
     - type: repository
       source:
-        url: https://github.com/letta-ai/letta
+        url: https://github.com/letta-ai/letta-code
       purposes:
         - identification
         - research
