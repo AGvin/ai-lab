@@ -1,0 +1,24 @@
+entity:
+  id: catalog/hardware/nvidia-h100
+  type: hardware-product
+  name: NVIDIA H100 Tensor Core GPU
+  aliases:
+    - NVIDIA H100
+    - H100
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/data-center/h100/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: architecture
+      source:
+        url: https://www.nvidia.com/en-us/data-center/technologies/hopper-architecture/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia
