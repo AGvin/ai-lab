@@ -32,5 +32,7 @@ entity:
       target: catalog/software/agent-frameworks/openai-agents-sdk
     - type: produces
       target: catalog/specifications/formats/openai-harmony
+    - type: produces
+      target: catalog/datasets/humaneval
     - type: has-part
       target: catalog/producers/p/promptfoo-inc
