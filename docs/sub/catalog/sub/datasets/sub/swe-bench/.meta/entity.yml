@@ -17,7 +17,7 @@ entity:
         - identification
         - research
       authority: upstream
-    - type: dataset-card
+    - type: registry
       source:
         url: https://huggingface.co/datasets/SWE-bench/SWE-bench
       purposes:
