@@ -36,5 +36,7 @@ entity:
       target: catalog/software/development-tools/testing/playwright
     - type: produces
       target: catalog/software/agent-frameworks/microsoft-agent-framework
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/pyrit
     - type: owns
       target: catalog/producers/g/github-inc

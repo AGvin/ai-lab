@@ -23,6 +23,8 @@ entity:
     - type: produces
       target: catalog/agent-skills/collections/nvidia-skills
     - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/garak
+    - type: produces
       target: catalog/software/inference-runtimes/distributed-serving/nvidia-dynamo
     - type: produces
       target: catalog/software/inference-runtimes/inference-engines/tensorrt-llm
