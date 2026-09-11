@@ -30,3 +30,5 @@ entity:
       target: catalog/software/inference-runtimes/inference-engines/tensorrt-llm
     - type: produces
       target: catalog/software/inference-runtimes/distributed-serving/llm-d
+    - type: produces
+      target: catalog/hardware/nvidia-h100
