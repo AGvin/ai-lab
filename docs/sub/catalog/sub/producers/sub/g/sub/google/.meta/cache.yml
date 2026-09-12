@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:aacf15db29d056d0abb0457ed44dc25ba41f84f0
+      entity.yml: gitblob:256607c753a3b9bbfe86b8bc09de2b48893d6482
     parent:
       entity.yml: gitblob:b7f05983a5d1c6c223967178283fa7f339514136
   state:
@@ -71,7 +71,11 @@ cache:
         - type: produces
           target: catalog/models/google/gemini
         - type: produces
+          target: catalog/models/google/gemini-omni
+        - type: produces
           target: catalog/models/google/gemma
+        - type: produces
+          target: catalog/models/google/lyria
         - type: produces
           target: catalog/services/development/agents/jules
         - type: produces
@@ -88,6 +92,10 @@ cache:
           target: catalog/services/assistant-workspaces/gemini
         - type: produces
           target: catalog/services/knowledge-workspaces/gemini-notebook
+        - type: produces
+          target: catalog/services/infrastructure/gemini-enterprise-agent-platform
+        - type: produces
+          target: catalog/hardware/google-tpu7x
         - type: has-part
           target: catalog/producers/g/google-deepmind
     aliases:

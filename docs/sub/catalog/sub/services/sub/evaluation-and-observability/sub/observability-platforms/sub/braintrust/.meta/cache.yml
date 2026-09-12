@@ -1,0 +1,82 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:03359e6d337e0f8c733d2cd1f4e381fd0052d220
+    parent:
+      entity.yml: gitblob:2216f6f0e5fe6572985d385da5565f805122a4b7
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/evaluation-and-observability/observability-platforms/braintrust
+        type: service
+        name: Braintrust
+        references:
+        - type: documentation
+          source:
+            url: https://www.braintrust.dev/docs
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.braintrust.dev/blog/security-data-control
+          purposes:
+          - research
+          authority: official
+          note: Current first-party explanation of Braintrust's hybrid control-plane/data-plane
+            deployment boundary.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

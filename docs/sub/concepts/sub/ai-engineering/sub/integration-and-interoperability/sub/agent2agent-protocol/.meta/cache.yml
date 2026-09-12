@@ -1,0 +1,84 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d1fb8a047c595c26f6abe81157efc1ee74d03948
+    parent:
+      entity.yml: gitblob:d57199f7fd530f673516720a38257e7dfb6cc8e1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/ai-engineering/integration-and-interoperability/agent2agent-protocol
+        name: Agent2Agent Protocol
+        aliases:
+        - A2A
+        - Agent-to-Agent Protocol
+        references:
+        - type: specification
+          source:
+            url: https://a2a-protocol.org/latest/specification/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://a2a-protocol.org/latest/topics/a2a-and-mcp/
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://github.com/a2aproject/A2A/blob/main/docs/announcing-1.0.md
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

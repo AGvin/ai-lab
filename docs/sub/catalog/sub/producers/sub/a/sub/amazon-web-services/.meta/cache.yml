@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:4f14bcd2ca0aaf5df454bfa3117b6dfb03c9d227
+      entity.yml: gitblob:4ffcb8818d5d2a106fa461c52dd0edabac727395
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -66,9 +66,13 @@ cache:
             open-source SDK.
         relations:
         - type: produces
+          target: catalog/models/amazon/nova
+        - type: produces
           target: catalog/software/agent-frameworks/strands-agents
         - type: produces
           target: catalog/software/agents/local/kiro-cli
+        - type: produces
+          target: catalog/services/infrastructure/amazon-bedrock-agentcore
     aliases:
       effective:
         schema: default
