@@ -27,3 +27,5 @@ entity:
       target: catalog/models/mistral-ai/mistral-small
     - type: produces
       target: catalog/models/mistral-ai/mistral-medium
+    - type: produces
+      target: catalog/models/mistral-ai/shieldstral

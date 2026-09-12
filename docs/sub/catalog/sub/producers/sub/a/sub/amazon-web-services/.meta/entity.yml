@@ -27,3 +27,5 @@ entity:
       target: catalog/software/agent-frameworks/strands-agents
     - type: produces
       target: catalog/software/agents/local/kiro-cli
+    - type: produces
+      target: catalog/services/infrastructure/amazon-bedrock-agentcore

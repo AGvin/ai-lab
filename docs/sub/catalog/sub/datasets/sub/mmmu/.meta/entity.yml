@@ -1,0 +1,28 @@
+entity:
+  id: catalog/datasets/mmmu
+  type: dataset
+  name: MMMU
+  aliases:
+    - Massive Multi-discipline Multimodal Understanding
+  references:
+    - type: repository
+      source:
+        url: https://github.com/MMMU-Benchmark/MMMU
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/MMMU/MMMU
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2311.16502
+      purposes:
+        - identification
+        - research
+      authority: upstream

@@ -1,0 +1,22 @@
+entity:
+  id: catalog/services/infrastructure/gemini-enterprise-agent-platform
+  type: service
+  name: Gemini Enterprise Agent Platform
+  references:
+    - type: article
+      source:
+        url: https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://cloud.google.com/gemini-enterprise
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google

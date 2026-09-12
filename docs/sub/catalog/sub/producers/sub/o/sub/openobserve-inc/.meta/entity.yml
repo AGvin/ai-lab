@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/o/openobserve-inc
+  type: organization
+  name: OpenObserve Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://openobserve.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://openobserve.ai/legal/terms-of-service/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current first-party terms identify OpenObserve Inc. as the contracting company.
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/observability-platforms/openobserve

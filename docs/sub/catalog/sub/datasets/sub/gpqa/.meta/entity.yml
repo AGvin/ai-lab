@@ -1,0 +1,28 @@
+entity:
+  id: catalog/datasets/gpqa
+  type: dataset
+  name: GPQA
+  aliases:
+    - Graduate-Level Google-Proof Q&A Benchmark
+  references:
+    - type: repository
+      source:
+        url: https://github.com/idavidrein/gpqa
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/idavidrein/gpqa
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2311.12022
+      purposes:
+        - identification
+        - research
+      authority: upstream
