@@ -19,3 +19,5 @@ entity:
   relations:
     - type: produces
       target: catalog/models/meta/llama
+    - type: produces
+      target: catalog/models/meta/muse
