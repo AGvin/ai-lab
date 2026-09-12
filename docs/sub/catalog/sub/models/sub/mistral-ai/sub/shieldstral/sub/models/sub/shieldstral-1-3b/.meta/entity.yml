@@ -1,0 +1,24 @@
+entity:
+  id: catalog/models/mistral-ai/shieldstral/models/shieldstral-1-3b
+  type: model
+  name: Shieldstral 1.0 3B
+  aliases:
+    - Shieldstral 1 3B
+  references:
+    - type: release-notes
+      source:
+        url: https://mistral.ai/news/shieldstral-1
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai/Shieldstral-1-3B
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/shieldstral
