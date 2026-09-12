@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/google/gemini/models/gemini-3-5-transcribe
+  type: model
+  name: Gemini 3.5 Transcribe
+  references:
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/models/gemini-3.5-transcribe
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/gemini
