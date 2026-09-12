@@ -31,3 +31,5 @@ entity:
       target: catalog/models/google/gemini/models/gemini-3-8-flash
     - type: has-member
       target: catalog/models/google/gemini/models/gemini-3-8-flash-cyber
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-embedding-2
