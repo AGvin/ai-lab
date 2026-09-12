@@ -21,3 +21,5 @@ entity:
       target: catalog/producers/o/openai
     - type: has-member
       target: catalog/models/openai/gpt-live/models/gpt-live-1
+    - type: has-member
+      target: catalog/models/openai/gpt-live/models/gpt-live-1-mini
