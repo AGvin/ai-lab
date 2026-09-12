@@ -38,5 +38,7 @@ entity:
       target: catalog/specifications/formats/openai-harmony
     - type: produces
       target: catalog/datasets/humaneval
+    - type: produces
+      target: catalog/hardware/openai-jalapeno
     - type: has-part
       target: catalog/producers/p/promptfoo-inc
