@@ -27,7 +27,11 @@ entity:
     - type: produces
       target: catalog/models/google/gemini
     - type: produces
+      target: catalog/models/google/gemini-omni
+    - type: produces
       target: catalog/models/google/gemma
+    - type: produces
+      target: catalog/models/google/lyria
     - type: produces
       target: catalog/services/development/agents/jules
     - type: produces
