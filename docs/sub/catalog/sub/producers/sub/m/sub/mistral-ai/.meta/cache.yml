@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:28684ce64d6baebc382cc096f985f48e23ace90c
+      entity.yml: gitblob:1009ed98797d700ffaddb25cdba716f74f8ba6bc
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -68,6 +68,10 @@ cache:
         relations:
         - type: produces
           target: catalog/models/mistral-ai/mistral-small
+        - type: produces
+          target: catalog/models/mistral-ai/mistral-medium
+        - type: produces
+          target: catalog/models/mistral-ai/shieldstral
     aliases:
       effective:
         schema: default

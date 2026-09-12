@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a987057ea7e307b6f3a36839721eeeddc9bb17fd
+      entity.yml: gitblob:e3ee5833ba8e95c6f6ffb5941320544c0f430672
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -80,6 +80,8 @@ cache:
           target: catalog/software/development-tools/testing/playwright
         - type: produces
           target: catalog/software/agent-frameworks/microsoft-agent-framework
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/pyrit
         - type: owns
           target: catalog/producers/g/github-inc
     aliases:

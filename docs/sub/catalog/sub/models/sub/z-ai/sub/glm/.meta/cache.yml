@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e2d0a88ad2eed4b364b25d889a64981d38ad7843
+      entity.yml: gitblob:2380460592f877f3bae7d030d947e9d8df67c93f
     parent:
       entity.yml: gitblob:76ca37b5396e34e72c693fadf7f0eb71e84a9179
   state:
@@ -53,11 +53,21 @@ cache:
           - identification
           - research
           authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/zai-org/models
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/z/z-ai
         - type: has-member
           target: catalog/models/z-ai/glm/models/glm-5v-turbo
+        - type: has-member
+          target: catalog/models/z-ai/glm/models/glm-5-3
+        - type: has-member
+          target: catalog/models/z-ai/glm/models/glm-5-3-flash
     aliases:
       effective:
         schema: default

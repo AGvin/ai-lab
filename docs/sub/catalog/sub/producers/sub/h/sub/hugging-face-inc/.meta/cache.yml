@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:edddf4a2b05d9d2ddcd5fc67af270c4088fe596c
+      entity.yml: gitblob:24678ad361f761a8b72f14be156b55dd699c3a41
     parent:
       entity.yml: gitblob:809c62e5e48565624df11ad5ab043ec1d16b9f4e
   state:
@@ -61,6 +61,15 @@ cache:
           - research
           authority: official
           note: Official Hugging Face Terms of Service identifying Hugging Face, Inc.
+        - type: article
+          source:
+            url: https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/
+          purposes:
+          - research
+          authority: upstream
+          note: NVIDIA announced on 2026-09-03 that it agreed to acquire Hugging Face
+            for $12.9303 billion. Treat this as an announced/pending acquisition,
+            not completed NVIDIA ownership, until closing is authoritatively confirmed.
         relations:
         - type: produces
           target: catalog/services/ai-assets/hugging-face-hub

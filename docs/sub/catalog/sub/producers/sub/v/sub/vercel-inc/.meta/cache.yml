@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:08f8f55e10d088239ca602ba4bc1986e85229e31
+      entity.yml: gitblob:059362913e184041b23f84e11c20d70ea6e8a7f7
     parent:
       entity.yml: gitblob:03f8eb89b4bc542dfc0c1fcab5ee7f1a6c07a658
   state:
@@ -70,6 +70,8 @@ cache:
         relations:
         - type: produces
           target: catalog/software/application-frameworks/application-development/vercel-ai-sdk
+        - type: produces
+          target: catalog/services/gateways/model-gateways/vercel-ai-gateway
     aliases:
       effective:
         schema: default

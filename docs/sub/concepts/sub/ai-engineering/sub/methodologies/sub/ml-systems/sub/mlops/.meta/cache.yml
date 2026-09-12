@@ -1,0 +1,93 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:452885017b1432c6f1571edfdad6108f1f962af9
+    parent:
+      entity.yml: gitblob:6a845f71bb526df45e268e7973805d11e864112b
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/ai-engineering/methodologies/ml-systems/mlops
+        name: MLOps
+        aliases:
+        - Machine Learning Operations
+        references:
+        - type: documentation
+          source:
+            url: https://cloud.google.com/discover/what-is-mlops
+          purposes:
+          - identification
+          - research
+          authority: independent
+          note: Google Cloud describes MLOps as lifecycle management from development
+            through deployment and monitoring, including experiment tracking, deployment,
+            monitoring, and retraining.
+        - type: documentation
+          source:
+            url: https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
+          purposes:
+          - research
+          authority: independent
+          note: Google Cloud architecture guidance frames MLOps as an ML engineering
+            culture/practice applying automation and monitoring across integration,
+            testing, release, deployment, and infrastructure management.
+        - type: documentation
+          source:
+            url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/genops04-bp02.html
+          purposes:
+          - research
+          authority: independent
+          note: AWS describes GenAIOps as a specialization of MLOps for foundation-model/generative-AI
+            lifecycles and identifies CI/CD, prompt management, artifact versioning,
+            model upgrades, evaluation, and monitoring as recurring concerns.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json
