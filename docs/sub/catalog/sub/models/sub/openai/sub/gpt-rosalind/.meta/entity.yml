@@ -16,6 +16,14 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://deploymentsafety.openai.com/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
+    - type: has-member
+      target: catalog/models/openai/gpt-rosalind/models/gpt-rosalind-5-5
