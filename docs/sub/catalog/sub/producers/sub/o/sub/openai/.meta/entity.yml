@@ -21,6 +21,10 @@ entity:
     - type: produces
       target: catalog/models/openai/gpt
     - type: produces
+      target: catalog/models/openai/gpt-live
+    - type: produces
+      target: catalog/models/openai/gpt-rosalind
+    - type: produces
       target: catalog/models/openai/whisper
     - type: produces
       target: catalog/agent-skills/collections/openai-skills
