@@ -3,7 +3,7 @@
 ## Requirements
 
 - Identify this node as the Mistral AI model-domain view.
-- Link the canonical producer profile and represented Mistral Small and Mistral Medium families.
+- Link the canonical producer profile and represented Mistral Small, Mistral Medium, and Shieldstral families.
 - Keep API pricing, hosted aliases, and mutable service features outside model identity.
 
 ## Validation
