@@ -45,6 +45,8 @@ entity:
     - type: produces
       target: catalog/services/knowledge-workspaces/gemini-notebook
     - type: produces
+      target: catalog/services/infrastructure/gemini-enterprise-agent-platform
+    - type: produces
       target: catalog/hardware/google-tpu7x
     - type: has-part
       target: catalog/producers/g/google-deepmind
