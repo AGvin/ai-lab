@@ -22,6 +22,10 @@ entity:
     - type: produced-by
       target: catalog/producers/g/google-deepmind
     - type: has-member
+      target: catalog/models/google/gemini/models/gemini-3-1-flash-lite-image
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-3-5-flash-lite
+    - type: has-member
       target: catalog/models/google/gemini/models/gemini-3-5-transcribe
     - type: has-member
       target: catalog/models/google/gemini/models/gemini-3-6-flash
