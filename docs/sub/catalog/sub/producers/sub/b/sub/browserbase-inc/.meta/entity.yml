@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/b/browserbase-inc
+  type: organization
+  name: Browserbase, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://www.browserbase.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://www.browserbase.com/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/infrastructure/browserbase
