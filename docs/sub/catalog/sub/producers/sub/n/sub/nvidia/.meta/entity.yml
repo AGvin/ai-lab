@@ -38,3 +38,5 @@ entity:
       target: catalog/hardware/nvidia-b300
     - type: produces
       target: catalog/hardware/nvidia-rubin
+    - type: produces
+      target: catalog/services/infrastructure/nvidia-brev
