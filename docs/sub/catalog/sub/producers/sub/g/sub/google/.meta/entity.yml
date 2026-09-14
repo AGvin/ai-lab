@@ -41,6 +41,8 @@ entity:
     - type: produces
       target: catalog/software/agent-frameworks/google-adk
     - type: produces
+      target: catalog/software/development-tools/agentic-development-systems/google-agents-cli
+    - type: produces
       target: catalog/software/model-and-data-platforms/lifecycle-platforms/kubeflow
     - type: produces
       target: catalog/software/workflow-engines/data-and-compute-orchestration/kubeflow-pipelines

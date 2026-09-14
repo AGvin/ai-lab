@@ -20,6 +20,8 @@ entity:
     - type: produces
       target: catalog/services/ai-management-platforms/ibm-watsonx-governance
     - type: produces
+      target: catalog/services/ai-management-platforms/ibm-watsonx-orchestrate
+    - type: produces
       target: catalog/models/ibm-nasa/nasa-ibm-lunar-foundation-model
     - type: produces
       target: catalog/models/ibm/granite-4-2
