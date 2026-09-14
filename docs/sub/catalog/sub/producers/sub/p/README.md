@@ -1,5 +1,6 @@
 # Producers — P
 
+- [Palo Alto Networks, Inc.](./sub/palo-alto-networks/)
 - [Peter Steinberger](./sub/peter-steinberger/)
 - [Portkey, Inc.](./sub/portkey-inc/)
 - [Prefect Technologies, Inc.](./sub/prefect-technologies-inc/)
