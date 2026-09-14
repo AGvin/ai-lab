@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/s/skild-ai
+  type: organization
+  name: Skild AI
+  references:
+    - type: official-site
+      source:
+        url: https://www.skild.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/skild-ai/skild-brain
