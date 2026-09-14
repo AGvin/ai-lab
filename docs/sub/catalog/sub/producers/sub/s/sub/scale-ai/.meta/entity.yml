@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/s/scale-ai
+  type: organization
+  name: Scale AI
+  references:
+    - type: official-site
+      source:
+        url: https://scale.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/data-generation-and-curation/scale-data-engine

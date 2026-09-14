@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/h/hiddenlayer
+  type: organization
+  name: HiddenLayer
+  references:
+    - type: official-site
+      source:
+        url: https://www.hiddenlayer.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/ai-security/hiddenlayer-ai-security-platform

@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/z/zep
+  type: organization
+  name: Zep
+  references:
+    - type: official-site
+      source:
+        url: https://www.getzep.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/data-infrastructure/memory-and-context/zep
