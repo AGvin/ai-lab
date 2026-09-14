@@ -31,3 +31,5 @@ entity:
       target: catalog/services/infrastructure/amazon-bedrock-agentcore
     - type: produces
       target: catalog/hardware/aws-trainium3
+    - type: produces
+      target: catalog/agent-skills/collections/aws-agent-toolkit-skills

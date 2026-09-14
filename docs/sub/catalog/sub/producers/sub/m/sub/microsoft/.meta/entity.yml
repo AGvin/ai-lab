@@ -41,6 +41,10 @@ entity:
     - type: produces
       target: catalog/services/agent-identity-and-access/microsoft-entra-agent-id
     - type: produces
+      target: catalog/services/ai-management-platforms/microsoft-agent-365
+    - type: produces
+      target: catalog/services/infrastructure/windows-365-for-agents
+    - type: produces
       target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/microsoft-olive
     - type: produces
       target: catalog/software/inference-runtimes/inference-engines/onnx-runtime

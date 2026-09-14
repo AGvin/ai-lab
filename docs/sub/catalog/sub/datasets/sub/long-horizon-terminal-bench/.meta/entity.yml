@@ -1,0 +1,21 @@
+entity:
+  id: catalog/datasets/long-horizon-terminal-bench
+  type: dataset
+  name: Long-Horizon Terminal-Bench
+  aliases:
+    - LHTB
+  references:
+    - type: repository
+      source:
+        url: https://github.com/zli12321/LHTB
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2607.08964
+      purposes:
+        - identification
+        - research
+      authority: upstream

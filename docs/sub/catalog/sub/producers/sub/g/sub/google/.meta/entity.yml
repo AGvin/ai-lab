@@ -52,5 +52,7 @@ entity:
       target: catalog/services/infrastructure/gemini-enterprise-agent-platform
     - type: produces
       target: catalog/hardware/google-tpu7x
+    - type: produces
+      target: catalog/agent-skills/collections/google-skills
     - type: has-part
       target: catalog/producers/g/google-deepmind
