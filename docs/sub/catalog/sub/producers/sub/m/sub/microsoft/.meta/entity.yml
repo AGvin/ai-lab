@@ -50,5 +50,9 @@ entity:
       target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/microsoft-olive
     - type: produces
       target: catalog/software/inference-runtimes/inference-engines/onnx-runtime
+    - type: produces
+      target: catalog/agent-skills/collections/microsoft-skills
+    - type: produces
+      target: catalog/agent-skills/collections/azure-agent-skills
     - type: owns
       target: catalog/producers/g/github-inc

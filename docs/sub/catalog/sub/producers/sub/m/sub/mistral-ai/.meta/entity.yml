@@ -29,3 +29,5 @@ entity:
       target: catalog/models/mistral-ai/mistral-medium
     - type: produces
       target: catalog/models/mistral-ai/shieldstral
+    - type: produces
+      target: catalog/services/ai-assets/mistral-studio
