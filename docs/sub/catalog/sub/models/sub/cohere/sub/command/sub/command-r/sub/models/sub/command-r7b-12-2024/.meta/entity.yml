@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/cohere/command/command-r/models/command-r7b-12-2024
+  type: model
+  name: Command R7B
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/command-r7b
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere/command/command-r

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/cohere/rerank/models/rerank-v4-0-pro
+  type: model
+  name: Rerank 4 Pro
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/v2/docs/rerank
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.cohere.com/changelog/rerank-v4.0
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere/rerank

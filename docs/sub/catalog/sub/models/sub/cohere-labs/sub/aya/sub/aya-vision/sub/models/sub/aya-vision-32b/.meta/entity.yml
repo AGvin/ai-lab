@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/cohere-labs/aya/aya-vision/models/aya-vision-32b
+  type: model
+  name: Aya Vision 32B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/CohereLabs/aya-vision-32b
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere-labs/aya/aya-vision
