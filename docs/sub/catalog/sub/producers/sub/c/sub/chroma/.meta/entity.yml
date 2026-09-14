@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/c/chroma
+  type: organization
+  name: Chroma
+  references:
+    - type: official-site
+      source:
+        url: https://www.trychroma.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/data-infrastructure/vector-search/chroma-cloud

@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/t/tonic-ai
+  type: organization
+  name: Tonic.ai
+  references:
+    - type: official-site
+      source:
+        url: https://www.tonic.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/data-generation-and-curation/tonic-fabricate

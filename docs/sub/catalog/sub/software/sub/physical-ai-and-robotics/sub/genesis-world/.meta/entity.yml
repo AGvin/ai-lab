@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/physical-ai-and-robotics/genesis-world
+  type: software
+  name: Genesis World
+  references:
+    - type: documentation
+      source:
+        url: https://genesis-world.readthedocs.io/en/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://genesis-world.readthedocs.io/en/latest/user_guide/overview/what_is_genesis.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/genesis-world-project

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-optimization-and-compilation/nncf
+  type: software
+  name: NNCF
+  aliases:
+    - Neural Network Compression Framework
+  references:
+    - type: documentation
+      source:
+        url: https://openvinotoolkit.github.io/nncf/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/openvinotoolkit/nncf
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openvino-toolkit
