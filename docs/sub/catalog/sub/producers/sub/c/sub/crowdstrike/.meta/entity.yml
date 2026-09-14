@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/c/crowdstrike
+  type: organization
+  name: CrowdStrike
+  references:
+    - type: official-site
+      source:
+        url: https://www.crowdstrike.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/agent-identity-and-access/crowdstrike-agentic-identity-provider
