@@ -14,7 +14,6 @@ entity:
       source:
         url: https://github.com/NVIDIA
       purposes:
-        - identification
         - research
       authority: official
   relations:
@@ -38,6 +37,10 @@ entity:
       target: catalog/hardware/nvidia-b300
     - type: produces
       target: catalog/hardware/nvidia-rubin
+    - type: produces
+      target: catalog/hardware/nvidia-vera-cpu
+    - type: produces
+      target: catalog/hardware/nvidia-groq-3-lpu
     - type: produces
       target: catalog/services/infrastructure/nvidia-brev
     - type: produces
