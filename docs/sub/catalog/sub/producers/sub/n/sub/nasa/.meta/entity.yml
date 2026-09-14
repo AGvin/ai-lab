@@ -1,23 +1,23 @@
 entity:
-  id: catalog/producers/i/ibm
+  id: catalog/producers/n/nasa
   type: organization
-  name: IBM
+  name: NASA
+  aliases:
+    - National Aeronautics and Space Administration
   references:
     - type: official-site
       source:
-        url: https://www.ibm.com/
+        url: https://www.nasa.gov/
       purposes:
         - identification
         - research
       authority: official
-    - type: official-site
+    - type: article
       source:
-        url: https://www.ibm.com/watsonx
+        url: https://science.nasa.gov/science-research/artificial-intelligence-lunar-foundation-model/
       purposes:
         - research
       authority: official
   relations:
-    - type: produces
-      target: catalog/services/ai-management-platforms/ibm-watsonx-governance
     - type: produces
       target: catalog/models/ibm-nasa/nasa-ibm-lunar-foundation-model
