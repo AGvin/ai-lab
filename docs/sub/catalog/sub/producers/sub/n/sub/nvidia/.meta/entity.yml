@@ -40,3 +40,7 @@ entity:
       target: catalog/hardware/nvidia-rubin
     - type: produces
       target: catalog/services/infrastructure/nvidia-brev
+    - type: produces
+      target: catalog/software/physical-ai-and-robotics/nvidia-isaac-sim
+    - type: produces
+      target: catalog/software/physical-ai-and-robotics/nvidia-isaac-lab

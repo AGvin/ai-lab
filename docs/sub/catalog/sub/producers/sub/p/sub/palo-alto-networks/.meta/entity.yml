@@ -30,3 +30,5 @@ entity:
   relations:
     - type: owns
       target: catalog/producers/p/portkey-inc
+    - type: produces
+      target: catalog/services/ai-security/prisma-airs

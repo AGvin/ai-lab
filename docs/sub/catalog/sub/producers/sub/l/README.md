@@ -1,5 +1,6 @@
 # Producers — L
 
+- [Labelbox](./sub/labelbox/)
 - [LangChain Inc.](./sub/langchain-inc/)
 - [LangChain4j](./sub/langchain4j/)
 - [Langflow Dev Team](./sub/langflow-dev-team/)

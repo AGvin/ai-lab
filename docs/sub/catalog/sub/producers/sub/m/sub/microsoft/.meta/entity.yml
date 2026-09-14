@@ -38,5 +38,9 @@ entity:
       target: catalog/software/agent-frameworks/microsoft-agent-framework
     - type: produces
       target: catalog/software/evaluation-and-observability/evaluation-frameworks/pyrit
+    - type: produces
+      target: catalog/services/agent-identity-and-access/microsoft-entra-agent-id
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/microsoft-olive
     - type: owns
       target: catalog/producers/g/github-inc
