@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/executorch
+  type: software
+  name: ExecuTorch
+  references:
+    - type: documentation
+      source:
+        url: https://docs.pytorch.org/executorch/stable/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/pytorch/executorch
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/pytorch-project

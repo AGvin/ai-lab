@@ -42,5 +42,7 @@ entity:
       target: catalog/services/agent-identity-and-access/microsoft-entra-agent-id
     - type: produces
       target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/microsoft-olive
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/onnx-runtime
     - type: owns
       target: catalog/producers/g/github-inc
