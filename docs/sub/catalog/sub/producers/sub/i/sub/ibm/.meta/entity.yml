@@ -21,3 +21,15 @@ entity:
       target: catalog/services/ai-management-platforms/ibm-watsonx-governance
     - type: produces
       target: catalog/models/ibm-nasa/nasa-ibm-lunar-foundation-model
+    - type: produces
+      target: catalog/models/ibm/granite-4-2
+    - type: produces
+      target: catalog/models/ibm/granite-speech-5
+    - type: produces
+      target: catalog/models/ibm/granite-guardian-4-1
+    - type: produces
+      target: catalog/models/ibm/granite-vision-4-1
+    - type: produces
+      target: catalog/models/ibm/granite-embedding-multilingual-r2
+    - type: produces
+      target: catalog/models/ibm/granite-timeseries
