@@ -1,0 +1,17 @@
+entity:
+  id: catalog/producers/s/salesforce
+  type: organization
+  name: Salesforce
+  aliases:
+    - Salesforce, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://www.salesforce.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/infrastructure/salesforce-agentforce
