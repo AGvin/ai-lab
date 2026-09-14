@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/t/tenstorrent
+  type: organization
+  name: Tenstorrent
+  references:
+    - type: official-site
+      source:
+        url: https://tenstorrent.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/hardware/tenstorrent-galaxy-blackhole

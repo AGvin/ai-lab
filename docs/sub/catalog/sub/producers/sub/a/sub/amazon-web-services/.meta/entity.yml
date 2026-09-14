@@ -29,3 +29,5 @@ entity:
       target: catalog/software/agents/local/kiro-cli
     - type: produces
       target: catalog/services/infrastructure/amazon-bedrock-agentcore
+    - type: produces
+      target: catalog/hardware/aws-trainium3
