@@ -13,3 +13,5 @@ entity:
   relations:
     - type: produces
       target: catalog/services/data-infrastructure/memory-and-context/zep
+    - type: produces
+      target: catalog/software/data-infrastructure/memory-and-context/graphiti

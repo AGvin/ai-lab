@@ -19,3 +19,5 @@ entity:
   relations:
     - type: produces
       target: catalog/services/data-infrastructure/memory-and-context/mem0-platform
+    - type: produces
+      target: catalog/software/data-infrastructure/memory-and-context/mem0-open-source

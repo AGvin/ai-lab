@@ -46,3 +46,5 @@ entity:
       target: catalog/software/physical-ai-and-robotics/nvidia-isaac-lab
     - type: produces
       target: catalog/software/physical-ai-and-robotics/nvidia-isaac-ros
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/nvidia-nemo-rl
