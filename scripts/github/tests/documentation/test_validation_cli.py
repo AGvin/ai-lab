@@ -6,7 +6,7 @@ import sys
 import yaml
 
 
-ROOT = Path(__file__).parents[3]
+ROOT = Path(__file__).parents[4]
 
 
 def run_validate(repo: Path, schemas: bool, relations: bool, cache: bool):
@@ -14,7 +14,7 @@ def run_validate(repo: Path, schemas: bool, relations: bool, cache: bool):
         [
             sys.executable,
             "-m",
-            "tools.documentation.metadata_tooling.cli",
+            "scripts.github.modules.documentation.cli",
             "validate",
             "--validate-schemas", str(schemas).lower(),
             "--validate-relations", str(relations).lower(),

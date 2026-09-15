@@ -4,7 +4,7 @@ import yaml
 
 
 def test_repository_root_alias_registry_has_base_catalog_paths():
-    root = Path(__file__).parents[3]
+    root = Path(__file__).parents[4]
     aliases_path = root / "docs/.meta/aliases.yml"
     aliases = yaml.safe_load(aliases_path.read_text(encoding="utf-8"))["aliases"]
     assert aliases == {
@@ -19,10 +19,10 @@ def test_repository_root_alias_registry_has_base_catalog_paths():
 
 
 def test_repository_aliases_are_loaded_and_fingerprinted():
-    from tools.documentation.metadata_tooling.cache import CacheManager
-    from tools.documentation.metadata_tooling.common import Repository
+    from scripts.github.modules.documentation.cache import CacheManager
+    from scripts.github.modules.documentation.common import Repository
 
-    root = Path(__file__).parents[3]
+    root = Path(__file__).parents[4]
     repo = Repository(root)
     assert repo.load_aliases()["paths"] == {
         "producers": "/docs/sub/catalog/sub/producers/sub/",

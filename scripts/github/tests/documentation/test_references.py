@@ -1,7 +1,7 @@
 import yaml
 
-from tools.documentation.metadata_tooling.common import Repository
-from tools.documentation.metadata_tooling.references import REFERENCE_TYPES, ReferenceValidator
+from scripts.github.modules.documentation.common import Repository
+from scripts.github.modules.documentation.references import REFERENCE_TYPES, ReferenceValidator
 
 
 def _write_entity(repo, name: str, reference_type: str):

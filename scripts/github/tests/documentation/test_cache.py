@@ -3,8 +3,8 @@ from pathlib import Path
 import pytest
 import yaml
 
-from tools.documentation.metadata_tooling.cache import CacheManager
-from tools.documentation.metadata_tooling.common import Repository, ToolingError
+from scripts.github.modules.documentation.cache import CacheManager
+from scripts.github.modules.documentation.common import Repository, ToolingError
 
 
 def load_cache(node: Path):
@@ -160,7 +160,7 @@ def test_forced_full_rebuild_processes_every_node(cache_repo):
 
 def test_repository_cache_schema_has_canonical_identity():
     import json
-    schema_path = Path(__file__).parents[3] / "docs/.meta/schemas/cache/default.schema.json"
+    schema_path = Path(__file__).parents[4] / "docs/.meta/schemas/cache/default.schema.json"
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
     assert schema["$schema"] == "https://json-schema.org/draft/2020-12/schema"
     assert schema["$id"] == "repo:/:cache:default"
@@ -168,7 +168,7 @@ def test_repository_cache_schema_has_canonical_identity():
 
 
 def cache_validate(repo):
-    from tools.documentation.metadata_tooling.cache_validation import CacheValidator
+    from scripts.github.modules.documentation.cache_validation import CacheValidator
     return CacheValidator(Repository(repo)).validate()
 
 

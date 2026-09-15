@@ -2,7 +2,7 @@ from pathlib import Path
 
 import yaml
 
-from tools.documentation.metadata_tooling.common import Repository
+from scripts.github.modules.documentation.common import Repository
 
 
 def write_entity(repo: Path, logical_id: str, relations=None):
@@ -19,7 +19,7 @@ def write_entity(repo: Path, logical_id: str, relations=None):
 
 
 def validate(repo):
-    from tools.documentation.metadata_tooling.relations import RelationValidator
+    from scripts.github.modules.documentation.relations import RelationValidator
     return RelationValidator(Repository(repo)).validate()
 
 
@@ -75,7 +75,7 @@ def test_learning_resource_pair_is_registered(repo):
 
 
 def test_statistics_include_every_pair_even_when_zero(repo):
-    from tools.documentation.metadata_tooling.relations import RELATION_PAIRS
+    from scripts.github.modules.documentation.relations import RELATION_PAIRS
     result = validate(repo)
     lines = result.statistics_lines()
     assert len(lines) == len(RELATION_PAIRS)

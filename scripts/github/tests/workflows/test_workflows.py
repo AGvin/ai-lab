@@ -6,7 +6,7 @@ import sys
 import yaml
 
 
-ROOT = Path(__file__).parents[3]
+ROOT = Path(__file__).parents[4]
 CACHE_WORKFLOW = ROOT / ".github/workflows/documentation-cache.yml"
 VALIDATE_WORKFLOW = ROOT / ".github/workflows/documentation-validate.yml"
 WORKFLOW_SCRIPTS = ROOT / "scripts/github/workflows"
@@ -30,7 +30,7 @@ def test_cache_cli_reports_stable_summary(cache_repo):
         [
             sys.executable,
             "-m",
-            "tools.documentation.metadata_tooling.cli",
+            "scripts.github.modules.documentation.cli",
             "cache",
             "--no-use-fingerprints",
         ],
@@ -99,7 +99,7 @@ def test_cache_workflow_invokes_cli_and_stable_cache_branch():
     branch = script_text(by_name["Prepare cache branch"])
     inspect = script_text(by_name["Inspect generated changes"])
 
-    assert "tools.documentation.metadata_tooling.cli cache" in generate
+    assert "scripts.github.modules.documentation.cli cache" in generate
     assert 'SOURCE_BRANCH: ${{ inputs.source_branch || github.ref_name }}' in text
     assert 'group: documentation-cache-${{ inputs.source_branch || github.ref_name }}' in text
     assert 'ref: ${{ inputs.source_branch || github.ref_name }}' in text
@@ -168,7 +168,7 @@ def test_validation_workflow_passes_each_switch_independently():
         "VALIDATE_RELATIONS": "${{ inputs.validate_relations }}",
         "VALIDATE_CACHE": "${{ inputs.validate_cache }}",
     }
-    assert "tools.documentation.metadata_tooling.cli validate" in validate_text
+    assert "scripts.github.modules.documentation.cli validate" in validate_text
     assert '--validate-schemas "$VALIDATE_SCHEMAS"' in validate_text
     assert '--validate-relations "$VALIDATE_RELATIONS"' in validate_text
     assert '--validate-cache "$VALIDATE_CACHE"' in validate_text

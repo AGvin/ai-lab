@@ -3,7 +3,7 @@ from pathlib import Path
 import yaml
 
 
-ROOT = Path(__file__).parents[3]
+ROOT = Path(__file__).parents[4]
 CACHE_WORKFLOW = ROOT / ".github/workflows/documentation-cache.yml"
 
 

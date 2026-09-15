@@ -2,7 +2,7 @@ from pathlib import Path
 import os
 
 
-ROOT = Path(__file__).parents[3]
+ROOT = Path(__file__).parents[4]
 WORKFLOW_SCRIPTS = ROOT / "scripts/github/workflows"
 
 

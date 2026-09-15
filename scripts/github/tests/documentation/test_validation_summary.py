@@ -3,7 +3,7 @@ import os
 import subprocess
 
 
-ROOT = Path(__file__).parents[3]
+ROOT = Path(__file__).parents[4]
 SUMMARY_SCRIPT = ROOT / "scripts/github/workflows/documentation-validate/agent-summary.sh"
 
 

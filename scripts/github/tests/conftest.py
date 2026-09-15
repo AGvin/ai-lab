@@ -165,7 +165,7 @@ def validation_repo(repo):
         "entity": {"schema": "default"},
     })
     (docs / "README.md").write_text("# Docs\n", encoding="utf-8")
-    from tools.documentation.metadata_tooling.cache import CacheManager
-    from tools.documentation.metadata_tooling.common import Repository
+    from scripts.github.modules.documentation.cache import CacheManager
+    from scripts.github.modules.documentation.common import Repository
     CacheManager(Repository(repo)).refresh(use_fingerprints=False)
     return repo

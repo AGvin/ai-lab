@@ -1,6 +1,6 @@
 import pytest
 
-from tools.documentation.metadata_tooling.common import Repository, ToolingError
+from scripts.github.modules.documentation.common import Repository, ToolingError
 
 
 def test_grouped_schema_registry_uses_scalar_repo_paths(repo):
@@ -94,7 +94,7 @@ def _aliases_schema():
 
 
 def test_schema_validation_uses_entity_default_from_defaults(repo):
-    from tools.documentation.metadata_tooling.schemas import SchemaValidator
+    from scripts.github.modules.documentation.schemas import SchemaValidator
 
     _write_json(
         repo / "docs/.meta/schemas/entity/default.schema.json",
@@ -111,7 +111,7 @@ def test_schema_validation_uses_entity_default_from_defaults(repo):
 
 
 def test_schema_validation_reports_invalid_entity(repo):
-    from tools.documentation.metadata_tooling.schemas import SchemaValidator
+    from scripts.github.modules.documentation.schemas import SchemaValidator
 
     _write_json(
         repo / "docs/.meta/schemas/entity/default.schema.json",
@@ -125,7 +125,7 @@ def test_schema_validation_reports_invalid_entity(repo):
 
 
 def test_schema_validation_uses_alias_first_short_selector(repo):
-    from tools.documentation.metadata_tooling.schemas import SchemaValidator
+    from scripts.github.modules.documentation.schemas import SchemaValidator
 
     _write_json(
         repo / "docs/.meta/schemas/entity/default.schema.json",
@@ -151,11 +151,11 @@ def test_schema_validation_uses_alias_first_short_selector(repo):
     )
     result = SchemaValidator(Repository(repo)).validate()
     assert result.errors == []
-    assert result.checked == 2  # aliases.yml + entity.yml
+    assert result.checked == 2
 
 
 def test_schema_validation_explicit_selector_bypasses_alias(repo):
-    from tools.documentation.metadata_tooling.schemas import SchemaValidator
+    from scripts.github.modules.documentation.schemas import SchemaValidator
 
     _write_json(
         repo / "docs/.meta/schemas/entity/default.schema.json",
@@ -184,7 +184,7 @@ def test_schema_validation_explicit_selector_bypasses_alias(repo):
 
 
 def test_schema_validation_rejects_schema_id_mismatch(repo):
-    from tools.documentation.metadata_tooling.schemas import SchemaValidator
+    from scripts.github.modules.documentation.schemas import SchemaValidator
 
     _write_json(
         repo / "docs/.meta/schemas/entity/default.schema.json",
@@ -200,7 +200,7 @@ def test_schema_validation_rejects_schema_id_mismatch(repo):
 
 
 def test_aliases_document_uses_direct_root_schema_bootstrap(repo):
-    from tools.documentation.metadata_tooling.schemas import SchemaValidator
+    from scripts.github.modules.documentation.schemas import SchemaValidator
 
     _write_json(repo / "docs/.meta/schemas/aliases/default.schema.json", _aliases_schema())
     _write_yaml(
@@ -215,7 +215,7 @@ def test_repository_aliases_schema_has_canonical_identity():
     import json
     from pathlib import Path
 
-    schema_path = Path(__file__).parents[3] / "docs/.meta/schemas/aliases/default.schema.json"
+    schema_path = Path(__file__).parents[4] / "docs/.meta/schemas/aliases/default.schema.json"
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
     assert schema["$schema"] == "https://json-schema.org/draft/2020-12/schema"
     assert schema["$id"] == "repo:/:aliases:default"
@@ -226,7 +226,7 @@ def test_repository_entity_schema_accepts_explicit_root_selector():
     from jsonschema import Draft202012Validator
     from pathlib import Path
 
-    schema_path = Path(__file__).parents[3] / "docs/.meta/schemas/entity/default.schema.json"
+    schema_path = Path(__file__).parents[4] / "docs/.meta/schemas/entity/default.schema.json"
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
     errors = list(Draft202012Validator(schema).iter_errors({
         "entity": {"schema": "/:default", "id": "example", "name": "Example"}
@@ -239,7 +239,7 @@ def test_repository_entity_schema_accepts_extensible_reference_types():
     from jsonschema import Draft202012Validator
     from pathlib import Path
 
-    schema_path = Path(__file__).parents[3] / "docs/.meta/schemas/entity/default.schema.json"
+    schema_path = Path(__file__).parents[4] / "docs/.meta/schemas/entity/default.schema.json"
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
     validator = Draft202012Validator(schema)
     for reference_type in (
@@ -269,7 +269,7 @@ def test_repository_entity_schema_rejects_malformed_reference_type():
     from jsonschema import Draft202012Validator
     from pathlib import Path
 
-    schema_path = Path(__file__).parents[3] / "docs/.meta/schemas/entity/default.schema.json"
+    schema_path = Path(__file__).parents[4] / "docs/.meta/schemas/entity/default.schema.json"
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
     validator = Draft202012Validator(schema)
     for reference_type in ("privacy policy", "PrivacyPolicy", "privacy_policy", "-privacy"):
@@ -293,7 +293,7 @@ def test_repository_node_schema_accepts_explicit_root_selector():
     from jsonschema import Draft202012Validator
     from pathlib import Path
 
-    schema_path = Path(__file__).parents[3] / "docs/.meta/schemas/node/default.schema.json"
+    schema_path = Path(__file__).parents[4] / "docs/.meta/schemas/node/default.schema.json"
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
     errors = list(Draft202012Validator(schema).iter_errors({
         "node": {"schema": "/:default"}
