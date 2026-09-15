@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/mistral-ai/mistral-moderation
+  type: model-family
+  name: Mistral Moderation
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/mistral-moderation-26-03
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai
+    - type: has-member
+      target: catalog/models/mistral-ai/mistral-moderation/models/mistral-moderation-2
