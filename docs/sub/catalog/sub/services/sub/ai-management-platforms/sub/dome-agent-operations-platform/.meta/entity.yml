@@ -20,7 +20,7 @@ entity:
         - research
       authority: official
       note: Dome Systems announced general availability and self-service access on 2026-09-05.
-    - type: pricing
+    - type: official-site
       source:
         url: https://www.domesystems.ai/pricing
       purposes:
