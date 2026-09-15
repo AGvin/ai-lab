@@ -1,15 +1,15 @@
 entity:
-  id: catalog/producers/m/minimax
+  id: catalog/producers/l/lg-ai-research
   type: organization
-  name: MiniMax
+  name: LG AI Research
   references:
     - type: official-site
       source:
-        url: https://www.minimax.io/
+        url: https://www.lgresearch.ai/
       purposes:
         - identification
         - research
       authority: official
   relations:
     - type: produces
-      target: catalog/models/minimax/m2
+      target: catalog/models/lg-ai-research/k-exaone

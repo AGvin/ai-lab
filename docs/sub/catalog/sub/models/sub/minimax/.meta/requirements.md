@@ -2,10 +2,10 @@
 
 ## Requirements
 
-- Identify this node as the MiniMax model-domain view and link the canonical MiniMax producer plus the represented MiniMax M family.
-- Keep MiniMax Code, Design, API plans, and other product/service surfaces outside model identity.
-- Keep exact model facts with their family and concrete-model owners.
+- Identify this node as MiniMax's model-domain view and link the selected material text/agent model family.
+- Keep MiniMax Agent/Mavis, API plans, media model families, and product experiences separate unless independently materialized.
+- Treat current model-family inventory as freshness-sensitive.
 
 ## Validation
 
-- The page remains model-domain navigation/context rather than a duplicate company profile.
+- Canonical producer provenance remains under `catalog/producers/m/minimax`.

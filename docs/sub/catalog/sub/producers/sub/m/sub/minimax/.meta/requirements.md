@@ -2,12 +2,10 @@
 
 ## Requirements
 
-- Identify MiniMax as the canonical producer organization for the represented MiniMax M model family.
-- Keep company identity distinct from MiniMax products, hosted API surfaces, and individual model identities.
-- Use current first-party MiniMax sources for organization and model provenance.
-- Render the standard `entity-relations` block from validated relation state.
+- Identify MiniMax as the producer identity for the selected MiniMax model families.
+- Keep company profile distinct from MiniMax Agent/Mavis, API Platform, media applications, and exact checkpoints.
+- Render the standard `entity-relations` block from validated current-entity relations.
 
 ## Validation
 
-- The MiniMax M `produced-by` relation has the matching `produces` inverse here.
-- Mutable product, pricing, and service details are not generalized into producer identity.
+- `produces` is the inverse of MiniMax M2 `produced-by`.
