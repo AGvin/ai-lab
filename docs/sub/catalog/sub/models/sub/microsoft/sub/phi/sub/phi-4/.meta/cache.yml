@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a7bf4b0e5c8fecafd64508ff4b9816c19f80c2b6
+      entity.yml: gitblob:fe332d4f11bfe2e0a5cfba491215ae0fc5f7d093
     parent:
       entity.yml: gitblob:68d262495ab1ff01e39c9e0e64e489eabdeba941
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
@@ -58,7 +58,15 @@ cache:
         - type: member-of
           target: catalog/models/microsoft/phi
         - type: has-member
+          target: catalog/models/microsoft/phi/phi-4/models/phi-4
+        - type: has-member
           target: catalog/models/microsoft/phi/phi-4/models/phi-4-mini-instruct
+        - type: has-member
+          target: catalog/models/microsoft/phi/phi-4/models/phi-4-mini-reasoning
+        - type: has-member
+          target: catalog/models/microsoft/phi/phi-4/models/phi-4-multimodal-instruct
+        - type: has-member
+          target: catalog/models/microsoft/phi/phi-4/models/phi-4-reasoning
     aliases:
       effective:
         schema: default

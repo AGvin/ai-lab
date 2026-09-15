@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:0d2b0792ff16602fa139c81b617560b59632c033
+      entity.yml: gitblob:5daaa6f2f131a00b978743cdd4e5e75d943a660b
     parent:
       entity.yml: gitblob:d2c3a18a296e2df171b1c48ef3f980eee453a6c2
   state:
@@ -55,7 +55,7 @@ cache:
           authority: official
         - type: documentation
           source:
-            url: https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash
+            url: https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash
           purposes:
           - research
           authority: official
@@ -65,7 +65,21 @@ cache:
         - type: produced-by
           target: catalog/producers/g/google-deepmind
         - type: has-member
+          target: catalog/models/google/gemini/models/gemini-3-1-flash-lite-image
+        - type: has-member
+          target: catalog/models/google/gemini/models/gemini-3-5-flash-lite
+        - type: has-member
+          target: catalog/models/google/gemini/models/gemini-3-5-transcribe
+        - type: has-member
           target: catalog/models/google/gemini/models/gemini-3-6-flash
+        - type: has-member
+          target: catalog/models/google/gemini/models/gemini-3-7-flash
+        - type: has-member
+          target: catalog/models/google/gemini/models/gemini-3-8-flash
+        - type: has-member
+          target: catalog/models/google/gemini/models/gemini-3-8-flash-cyber
+        - type: has-member
+          target: catalog/models/google/gemini/models/gemini-embedding-2
     aliases:
       effective:
         schema: default

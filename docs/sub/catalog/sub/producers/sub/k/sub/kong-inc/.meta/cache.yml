@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:8583e9dbcd1d8e251dbb70174685e592380cdfcd
+      entity.yml: gitblob:35e7cdb22c67bf93cf99ea38b15dbfa5813bc12e
     parent:
       entity.yml: gitblob:2f1e0b49da4e74d5be798e28b5ef97ff4b499581
   state:
@@ -72,6 +72,8 @@ cache:
         relations:
         - type: produces
           target: catalog/software/gateways/api-management-gateways/kong-gateway
+        - type: produces
+          target: catalog/services/gateways/model-gateways/kong-ai-gateway
     aliases:
       effective:
         schema: default

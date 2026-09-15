@@ -1,0 +1,77 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:3ad860723c374985c3919e11d3b343f32f3d0545
+    parent:
+      entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/a/apache-software-foundation
+        type: organization
+        name: Apache Software Foundation
+        references:
+        - type: official-site
+          source:
+            url: https://www.apache.org/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/apache-tvm
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

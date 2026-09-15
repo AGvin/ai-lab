@@ -1,0 +1,87 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:c2268226b0021bef2bf9b03df8032de768b921c3
+    parent:
+      entity.yml: gitblob:65f9e8cb1b2f81c5dd3a1d6e4e38d256402af12e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/ibm/granite-embedding-multilingual-r2
+        type: model-family
+        name: Granite Embedding Multilingual R2
+        references:
+        - type: documentation
+          source:
+            url: https://www.ibm.com/granite/docs/models/embedding
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-embedding-311m-multilingual-r2
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/i/ibm
+        - type: has-member
+          target: catalog/models/ibm/granite-embedding-multilingual-r2/models/granite-embedding-97m-multilingual-r2
+        - type: has-member
+          target: catalog/models/ibm/granite-embedding-multilingual-r2/models/granite-embedding-311m-multilingual-r2
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

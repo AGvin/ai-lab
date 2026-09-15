@@ -1,0 +1,89 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:71d9101b4779d12336c4024d2cceffd28b44d98d
+    parent:
+      entity.yml: gitblob:65f9e8cb1b2f81c5dd3a1d6e4e38d256402af12e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/ibm/granite-4-2
+        type: model-family
+        name: Granite 4.2
+        references:
+        - type: article
+          source:
+            url: https://huggingface.co/blog/ibm-granite/granite-4-2
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/collections/ibm-granite/granite-42-language-models
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/i/ibm
+        - type: has-member
+          target: catalog/models/ibm/granite-4-2/models/granite-4-2-3b
+        - type: has-member
+          target: catalog/models/ibm/granite-4-2/models/granite-4-2-8b
+        - type: has-member
+          target: catalog/models/ibm/granite-4-2/models/granite-4-2-30b
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

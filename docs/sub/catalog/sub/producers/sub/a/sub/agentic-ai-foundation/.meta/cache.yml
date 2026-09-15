@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:17c34132d13b948fa3c93ecb7700e0cb310fe452
+      entity.yml: gitblob:eac72786b7e01226ff2203ea1b43bc8e22b76a5a
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -65,6 +65,8 @@ cache:
         relations:
         - type: maintains
           target: catalog/software/agents/local/goose
+        - type: maintains
+          target: catalog/software/gateways/model-gateways/agentgateway
     aliases:
       effective:
         schema: default
