@@ -1,11 +1,11 @@
 entity:
-  id: catalog/models/mistral-ai/mistral-small
+  id: catalog/models/mistral-ai/devstral
   type: model-family
-  name: Mistral Small
+  name: Devstral
   references:
     - type: release-notes
       source:
-        url: https://mistral.ai/news/mistral-small-4/
+        url: https://mistral.ai/news/devstral-2-vibe-cli/
       purposes:
         - identification
         - research
@@ -14,6 +14,6 @@ entity:
     - type: produced-by
       target: catalog/producers/m/mistral-ai
     - type: has-member
-      target: catalog/models/mistral-ai/mistral-small/models/mistral-small-4
+      target: catalog/models/mistral-ai/devstral/models/devstral-2-123b-instruct-2512
     - type: has-member
-      target: catalog/models/mistral-ai/mistral-small/models/leanstral-1-5-119b-a6b
+      target: catalog/models/mistral-ai/devstral/models/devstral-small-2-24b-instruct-2512
