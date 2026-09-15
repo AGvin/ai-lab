@@ -1,0 +1,31 @@
+entity:
+  id: catalog/services/ai-management-platforms/dome-agent-operations-platform
+  type: service
+  name: Dome Agent Operations Platform
+  aliases:
+    - Dome
+  references:
+    - type: official-site
+      source:
+        url: https://www.domesystems.ai/platform
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://www.domesystems.ai/updates/dome-is-generally-available
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Dome Systems announced general availability and self-service access on 2026-09-05.
+    - type: pricing
+      source:
+        url: https://www.domesystems.ai/pricing
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/dome-systems
