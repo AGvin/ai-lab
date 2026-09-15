@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c6f63813d6b782e02f1c2d9e36d61711f0651c59
+      entity.yml: gitblob:df3ad7acd261b4a482852bf7f0ac374e3f95ef76
     parent:
       entity.yml: gitblob:14ea8bfaf4d425225b943a6a70f6a5270a9dfa69
   state:
@@ -47,7 +47,7 @@ cache:
             url: https://doi.org/10.1609/aimag.v7i2.537
           purposes:
           - research
-          authority: primary
+          authority: independent
           note: Exact legacy H. Penny Nii 1986 blackboard-architecture reference preserved
             for migration provenance. The canonical concept currently carries related
             but non-identical historical references, so this DOI must not be treated

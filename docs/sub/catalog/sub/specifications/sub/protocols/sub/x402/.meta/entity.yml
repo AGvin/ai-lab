@@ -1,0 +1,28 @@
+entity:
+  id: catalog/specifications/protocols/x402
+  name: x402
+  aliases:
+    - x402 Protocol
+  references:
+    - type: specification
+      source:
+        url: https://github.com/x402-foundation/x402/blob/main/specs/x402-specification-v2.md
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current upstream x402 v2 protocol specification; re-check the released revision before making version-sensitive claims.
+    - type: documentation
+      source:
+        url: https://x402.org/x402-v2-launch/
+      purposes:
+        - research
+      authority: official
+      note: Official x402 v2 release announcement and migration context.
+    - type: repository
+      source:
+        url: https://github.com/x402-foundation/x402
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/infrastructure/tensordock
+  type: service
+  name: TensorDock
+  references:
+    - type: official-site
+      source:
+        url: https://www.tensordock.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product
+      source:
+        url: https://marketplace.tensordock.com/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/tensordock-com-inc

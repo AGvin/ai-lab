@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/l/lg-ai-research
+  type: organization
+  name: LG AI Research
+  references:
+    - type: official-site
+      source:
+        url: https://www.lgresearch.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/lg-ai-research/k-exaone

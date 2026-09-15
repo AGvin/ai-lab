@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/meta/muse
+  type: model-family
+  name: Muse
+  references:
+    - type: official-site
+      source:
+        url: https://ai.meta.com/blog/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/meta
+    - type: has-member
+      target: catalog/models/meta/muse/models/muse-spark-1-1
+    - type: has-member
+      target: catalog/models/meta/muse/models/muse-image

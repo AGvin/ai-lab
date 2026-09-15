@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/web-data/tavily
+  type: service
+  name: Tavily
+  references:
+    - type: official-site
+      source:
+        url: https://www.tavily.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.tavily.com/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/alphaai-technologies-inc

@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/o/okta
+  type: organization
+  name: Okta
+  references:
+    - type: official-site
+      source:
+        url: https://www.okta.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/agent-identity-and-access/okta-for-ai-agents

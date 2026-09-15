@@ -1,0 +1,18 @@
+entity:
+  id: catalog/services/model-apis/cloudflare-workers-ai
+  type: service
+  name: Cloudflare Workers AI
+  aliases:
+    - Workers AI
+  references:
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/workers-ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Cloudflare documents Workers AI as serverless GPU-backed model execution available on Free and Paid plans.
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cloudflare

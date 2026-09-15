@@ -1,0 +1,18 @@
+entity:
+  id: catalog/services/data-infrastructure/vector-search/cloudflare-vectorize
+  type: service
+  name: Cloudflare Vectorize
+  aliases:
+    - Vectorize
+  references:
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/vectorize/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Cloudflare documents Vectorize as its generally available globally distributed vector database.
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cloudflare

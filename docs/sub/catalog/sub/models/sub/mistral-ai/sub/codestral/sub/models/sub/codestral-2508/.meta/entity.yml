@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/mistral-ai/codestral/models/codestral-2508
+  type: model
+  name: Codestral 2508
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/codestral-25-08
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/codestral

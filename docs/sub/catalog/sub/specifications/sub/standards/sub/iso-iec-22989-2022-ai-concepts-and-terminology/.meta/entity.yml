@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-22989-2022-ai-concepts-and-terminology
+  name: ISO/IEC 22989:2022 — Artificial intelligence concepts and terminology
+  aliases:
+    - ISO/IEC 22989:2022
+    - ISO 22989
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/74296.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record identifying Edition 1 as a published International Standard.

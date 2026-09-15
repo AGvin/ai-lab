@@ -9,6 +9,7 @@ Canonical producer profiles beginning with M.
 - [`Matt Pocock`](./sub/matt-pocock/)
 - [Maxime Beauchemin](./sub/maxime-beauchemin/)
 - [Mediocre, LLC](./sub/mediocre-llc/)
+- [Mem0](./sub/mem0/)
 - [Menlo Research Pte Ltd](./sub/menlo-research-pte-ltd/)
 - [`Microsoft`](./sub/microsoft/)
 - [Mintplex Labs](./sub/mintplex-labs/)

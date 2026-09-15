@@ -1,0 +1,30 @@
+entity:
+  id: catalog/hardware/nvidia-rubin
+  type: hardware-product
+  name: NVIDIA Rubin GPU
+  aliases:
+    - Rubin
+  references:
+    - type: release-notes
+      source:
+        url: https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

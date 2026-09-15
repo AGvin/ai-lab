@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/ibm/granite-embedding-multilingual-r2/models/granite-embedding-97m-multilingual-r2
+  type: model
+  name: Granite Embedding 97M Multilingual R2
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/ibm/granite-embedding-multilingual-r2

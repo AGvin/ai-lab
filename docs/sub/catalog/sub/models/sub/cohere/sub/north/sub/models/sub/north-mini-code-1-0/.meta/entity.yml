@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/cohere/north/models/north-mini-code-1-0
+  type: model
+  name: North Mini Code 1.0
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/north-mini-code-1.0
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.cohere.com/changelog/north-mini-code-1-0
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere/north

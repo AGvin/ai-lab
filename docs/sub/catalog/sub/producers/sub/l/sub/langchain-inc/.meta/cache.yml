@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b7a53ed58f95ca2a368f09249e37226f0bd52f72
+      entity.yml: gitblob:841beaca5a08f98cd59d82ebd5a7c488dbb63e8b
     parent:
       entity.yml: gitblob:665e9ca01b87f5f7025e0f60f3e694be0cc71db2
   state:
@@ -74,6 +74,10 @@ cache:
           target: catalog/software/agent-frameworks/langchain
         - type: produces
           target: catalog/software/agent-frameworks/langgraph
+        - type: produces
+          target: catalog/software/agent-frameworks/deep-agents
+        - type: produces
+          target: catalog/software/evaluation-and-observability/observability-platforms/langsmith
     aliases:
       effective:
         schema: default

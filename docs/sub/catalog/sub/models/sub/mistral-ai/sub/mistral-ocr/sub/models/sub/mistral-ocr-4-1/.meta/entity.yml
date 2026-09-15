@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/mistral-ai/mistral-ocr/models/mistral-ocr-4-1
+  type: model
+  name: Mistral OCR 4.1
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/ocr-4-1
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.mistral.ai/resources/changelogs
+      purposes:
+        - research
+      authority: official
+      note: Mistral released OCR 4.1 on 2026-07-16 and marked it Generally Available on 2026-08-31.
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/mistral-ocr

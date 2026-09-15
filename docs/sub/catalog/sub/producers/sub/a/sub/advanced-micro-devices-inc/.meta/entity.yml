@@ -1,0 +1,35 @@
+entity:
+  id: catalog/producers/a/advanced-micro-devices-inc
+  type: organization
+  name: Advanced Micro Devices, Inc.
+  aliases:
+    - AMD
+  references:
+    - type: official-site
+      source:
+        url: https://www.amd.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: privacy-policy
+      source:
+        url: https://www.amd.com/en/legal/privacy.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://www.amd.com/en/legal/copyright.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/hardware/amd-instinct-mi350x
+    - type: produces
+      target: catalog/hardware/amd-instinct-mi355x
+    - type: produces
+      target: catalog/hardware/amd-instinct-mi455x

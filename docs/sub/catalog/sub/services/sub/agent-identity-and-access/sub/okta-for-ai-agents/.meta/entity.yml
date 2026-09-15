@@ -1,0 +1,22 @@
+entity:
+  id: catalog/services/agent-identity-and-access/okta-for-ai-agents
+  type: service
+  name: Okta for AI Agents
+  references:
+    - type: documentation
+      source:
+        url: https://support.okta.com/help/s/article/okta-secures-ai?language=en_US
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.okta.com/products/govern-ai-agent-identity/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/okta
