@@ -56,6 +56,8 @@ entity:
       target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/hugging-face-optimum
     - type: produces
       target: catalog/software/physical-ai-and-robotics/hugging-face-lerobot
+    - type: produces
+      target: catalog/agent-skills/collections/hugging-face-skills
     - type: has-part
       target: catalog/producers/g/ggml-ai
     - type: owns
