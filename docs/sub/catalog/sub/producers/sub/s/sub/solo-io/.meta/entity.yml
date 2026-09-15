@@ -1,26 +1,23 @@
 entity:
-  id: catalog/producers/a/agentic-ai-foundation
+  id: catalog/producers/s/solo-io
   type: organization
-  name: Agentic AI Foundation
-  aliases:
-    - AAIF
+  name: Solo.io
   references:
     - type: official-site
       source:
-        url: https://aaif.io/
+        url: https://www.solo.io/
       purposes:
         - identification
         - research
       authority: official
-    - type: repository
+    - type: article
       source:
-        url: https://github.com/aaif
+        url: https://www.solo.io/blog/solo-contributes-agentgateway-linux-foundation
       purposes:
         - identification
         - research
       authority: official
+      note: Solo.io documents that it created agentgateway and contributed the project to the Linux Foundation in 2025.
   relations:
-    - type: maintains
-      target: catalog/software/agents/local/goose
-    - type: maintains
+    - type: produces
       target: catalog/software/gateways/model-gateways/agentgateway
