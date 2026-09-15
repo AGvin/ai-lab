@@ -10,9 +10,9 @@ entity:
         - identification
         - research
       authority: official
-    - type: documentation
+    - type: official-site
       source:
-        url: https://platform.minimax.io/docs/release-notes/models
+        url: https://www.minimax.io/about
       purposes:
         - research
       authority: official
