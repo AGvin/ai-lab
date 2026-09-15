@@ -21,3 +21,5 @@ entity:
       target: catalog/models/meta/llama
     - type: produces
       target: catalog/models/meta/muse
+    - type: produces
+      target: catalog/hardware/meta-mtia-300
