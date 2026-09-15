@@ -21,3 +21,5 @@ entity:
       target: catalog/producers/a/alibaba-group
     - type: has-part
       target: catalog/producers/q/qwen-team
+    - type: produces
+      target: catalog/agent-skills/collections/alibaba-cloud-skills
