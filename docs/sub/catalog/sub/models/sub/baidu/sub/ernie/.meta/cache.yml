@@ -1,0 +1,87 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:5750a1f34c5d1f4b3366d0d36d410e5a4ee94bf1
+    parent:
+      entity.yml: gitblob:7316f20e3b79e8540eb8f990eacf9e2a0af47160
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/baidu/ernie
+        type: model-family
+        name: ERNIE
+        references:
+        - type: official-site
+          source:
+            url: https://ernie.baidu.com/blog/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/b/baidu
+        - type: has-member
+          target: catalog/models/baidu/ernie/models/ernie-5-0
+        - type: has-member
+          target: catalog/models/baidu/ernie/models/ernie-5-1
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

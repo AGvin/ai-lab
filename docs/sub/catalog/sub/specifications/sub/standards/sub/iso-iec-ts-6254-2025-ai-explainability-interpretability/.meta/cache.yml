@@ -1,0 +1,79 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:312915dd9e9bb9403d935d310aa1722213bd8cb1
+    parent:
+      entity.yml: gitblob:0cf80df310da6a10fb2bdc28c39cf869cdb4d5e4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/specifications/standards/iso-iec-ts-6254-2025-ai-explainability-interpretability
+        name: ISO/IEC TS 6254:2025 — Objectives and approaches for explainability
+          and interpretability of ML models and AI systems
+        aliases:
+        - ISO/IEC TS 6254:2025
+        - ISO 6254
+        references:
+        - type: specification
+          source:
+            url: https://www.iso.org/standard/82148.html
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: ISO identifies Edition 1 as a published Technical Specification from
+            September 2025.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

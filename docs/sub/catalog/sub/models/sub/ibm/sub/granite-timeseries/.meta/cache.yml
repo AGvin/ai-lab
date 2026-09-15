@@ -1,0 +1,85 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:e21a641fd222e3693fcc21c31f99d186e5d5e639
+    parent:
+      entity.yml: gitblob:65f9e8cb1b2f81c5dd3a1d6e4e38d256402af12e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/ibm/granite-timeseries
+        type: model-family
+        name: Granite Time Series
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/collections/ibm-granite/granite-time-series
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/i/ibm
+        - type: has-member
+          target: catalog/models/ibm/granite-timeseries/models/granite-timeseries-patchtst-fm-r2
+        - type: has-member
+          target: catalog/models/ibm/granite-timeseries/models/granite-timeseries-ttm-r3
+        - type: has-member
+          target: catalog/models/ibm/granite-timeseries/models/granite-timeseries-tspulse-r1
+        - type: has-member
+          target: catalog/models/ibm/granite-timeseries/models/granite-timeseries-flowstate-r1
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json
