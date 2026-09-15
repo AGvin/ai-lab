@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-tr-24029-1-2021-neural-network-robustness-overview
+  name: ISO/IEC TR 24029-1:2021 — Assessment of the robustness of neural networks — Part 1: Overview
+  aliases:
+    - ISO/IEC TR 24029-1:2021
+    - ISO 24029-1
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/77609.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO identifies Edition 1 as a published Technical Report from March 2021.
