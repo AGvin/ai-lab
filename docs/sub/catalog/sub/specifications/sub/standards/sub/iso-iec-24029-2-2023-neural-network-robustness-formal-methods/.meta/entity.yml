@@ -1,6 +1,6 @@
 entity:
   id: catalog/specifications/standards/iso-iec-24029-2-2023-neural-network-robustness-formal-methods
-  name: ISO/IEC 24029-2:2023 — Assessment of the robustness of neural networks — Part 2: Methodology for the use of formal methods
+  name: "ISO/IEC 24029-2:2023 — Assessment of the robustness of neural networks — Part 2: Methodology for the use of formal methods"
   aliases:
     - ISO/IEC 24029-2:2023
     - ISO 24029-2
