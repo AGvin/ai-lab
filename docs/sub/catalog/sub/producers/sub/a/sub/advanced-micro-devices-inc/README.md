@@ -4,7 +4,7 @@ Advanced Micro Devices, Inc. (AMD) is the producer behind the AMD Instinct accel
 
 ## Producer boundary
 
-the producer identity remains distinct from individual accelerator products, ROCm/runtime software, complete server platforms, cloud services, and third-party systems that integrate AMD hardware.
+The producer identity remains distinct from individual accelerator products, ROCm/runtime software, complete server platforms, cloud services, and third-party systems that integrate AMD hardware.
 
 ## Relations
 

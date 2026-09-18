@@ -4,7 +4,7 @@ Auth0 is the product/producer identity for Auth0 for AI Agents.
 
 ## Producer boundary
 
-parent-company ownership and broader Auth0 platform facts separate unless needed for current provenance.
+Parent-company ownership and broader Auth0 platform facts separate unless needed for current provenance.
 
 ## Relations
 

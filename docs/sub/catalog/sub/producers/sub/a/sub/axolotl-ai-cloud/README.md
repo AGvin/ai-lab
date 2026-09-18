@@ -4,7 +4,7 @@ Axolotl AI Cloud is the upstream organization producing Axolotl for catalog prov
 
 ## Producer boundary
 
-any hosted Axolotl cloud/service offering distinct unless independently materialized later.
+Any hosted Axolotl cloud/service offering distinct unless independently materialized later.
 
 ## Relations
 

@@ -4,7 +4,7 @@ AI21 Labs is the producer identity for Jamba2.
 
 ## Producer boundary
 
-company identity remains distinct from AI21 Studio, API plans, applications, and exact model checkpoints.
+Company identity remains distinct from AI21 Studio, API plans, applications, and exact model checkpoints.
 
 ## Relations
 
