@@ -10,7 +10,7 @@ entity:
         - identification
         - research
       authority: official
-    - type: product
+    - type: product-page
       source:
         url: https://www.coreweave.com/products/gpu-compute
       purposes:
