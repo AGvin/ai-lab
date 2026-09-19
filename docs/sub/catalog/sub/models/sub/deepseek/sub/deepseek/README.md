@@ -14,5 +14,6 @@ DeepSeek is the long-lived model family produced by DeepSeek.
 ## Series
 
 - [`deepseek-v4/`](./sub/deepseek-v4/) — the DeepSeek-V4 series.
+- [DeepSeek-V4.1](./sub/deepseek-v4-1/)
 
 Family-level documentation owns shared identity and navigation. Facts specific to V4 or to one concrete V4 model stay on the series or model page.
