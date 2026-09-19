@@ -3,7 +3,7 @@ entity:
   type: dataset
   name: SentinelBench
   references:
-    - type: publication
+    - type: paper
       source:
         url: https://www.microsoft.com/en-us/research/publication/sentinelbench-a-benchmark-for-long-running-monitoring-agents/
       purposes:
