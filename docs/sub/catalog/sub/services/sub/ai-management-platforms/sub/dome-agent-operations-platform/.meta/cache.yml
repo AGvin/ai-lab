@@ -1,0 +1,94 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:73a821c9e85a8c7d810328895df9ecf7b5aea7bb
+    parent:
+      entity.yml: gitblob:c2d85b597a5c7577badaf63792a2c9ce70f6bf60
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/ai-management-platforms/dome-agent-operations-platform
+        type: service
+        name: Dome Agent Operations Platform
+        aliases:
+        - Dome
+        references:
+        - type: official-site
+          source:
+            url: https://www.domesystems.ai/platform
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://www.domesystems.ai/updates/dome-is-generally-available
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Dome Systems announced general availability and self-service access
+            on 2026-09-05.
+        - type: official-site
+          source:
+            url: https://www.domesystems.ai/pricing
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/d/dome-systems
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

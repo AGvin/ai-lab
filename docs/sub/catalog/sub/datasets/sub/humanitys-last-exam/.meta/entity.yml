@@ -1,0 +1,21 @@
+entity:
+  id: catalog/datasets/humanitys-last-exam
+  type: dataset
+  name: Humanity's Last Exam
+  aliases:
+    - HLE
+  references:
+    - type: repository
+      source:
+        url: https://github.com/centerforaisafety/hle
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/cais/hle
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -1,0 +1,22 @@
+entity:
+  id: catalog/datasets/humaneval
+  type: dataset
+  name: HumanEval
+  references:
+    - type: repository
+      source:
+        url: https://github.com/openai/human-eval
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2107.03374
+      purposes:
+        - identification
+        - research
+      authority: upstream
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

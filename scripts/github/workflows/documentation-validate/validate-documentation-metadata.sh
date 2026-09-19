@@ -2,7 +2,7 @@
 set -uo pipefail
 output_file="$RUNNER_TEMP/documentation-validate-output.txt"
 set +e
-python -m tools.documentation.metadata_tooling.cli validate \
+python -m scripts.github.modules.documentation.cli validate \
   --validate-schemas "$VALIDATE_SCHEMAS" \
   --validate-relations "$VALIDATE_RELATIONS" \
   --validate-cache "$VALIDATE_CACHE" \

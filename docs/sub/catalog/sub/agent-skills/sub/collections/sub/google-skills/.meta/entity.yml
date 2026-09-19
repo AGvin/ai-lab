@@ -1,0 +1,17 @@
+entity:
+  id: catalog/agent-skills/collections/google-skills
+  type: skill-collection
+  name: Google Agent Skills
+  aliases:
+    - Google Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/google/skills
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google

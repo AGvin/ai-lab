@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-12792-2025-ai-transparency-taxonomy
+  name: ISO/IEC 12792:2025 — Transparency taxonomy of AI systems
+  aliases:
+    - ISO/IEC 12792:2025
+    - ISO 12792
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/84111.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record identifying Edition 1 as a published International Standard in November 2025.

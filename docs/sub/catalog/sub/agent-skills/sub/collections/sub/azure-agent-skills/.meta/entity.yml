@@ -1,0 +1,18 @@
+entity:
+  id: catalog/agent-skills/collections/azure-agent-skills
+  type: skill-collection
+  name: Azure Agent Skills
+  aliases:
+    - MicrosoftDocs Agent Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/MicrosoftDocs/Agent-Skills
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: MicrosoftDocs-maintained Azure skill collection generated and curated from Microsoft Learn documentation.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

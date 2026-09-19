@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-global
+  type: model
+  name: Tiny Aya Global
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/CohereLabs/tiny-aya-global
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/tiny-aya
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere-labs/aya/tiny-aya

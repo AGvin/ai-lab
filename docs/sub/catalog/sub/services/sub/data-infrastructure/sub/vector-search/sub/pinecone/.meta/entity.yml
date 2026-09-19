@@ -1,0 +1,22 @@
+entity:
+  id: catalog/services/data-infrastructure/vector-search/pinecone
+  type: service
+  name: Pinecone
+  references:
+    - type: documentation
+      source:
+        url: https://docs.pinecone.io/guides/get-started/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.pinecone.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/pinecone

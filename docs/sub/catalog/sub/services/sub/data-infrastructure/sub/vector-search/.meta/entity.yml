@@ -1,0 +1,4 @@
+entity:
+  id: catalog/services/data-infrastructure/vector-search
+  type: catalog-index
+  name: Vector Search

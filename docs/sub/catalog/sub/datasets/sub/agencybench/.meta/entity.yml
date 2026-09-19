@@ -1,0 +1,12 @@
+entity:
+  id: catalog/datasets/agencybench
+  type: dataset
+  name: AgencyBench
+  references:
+    - type: repository
+      source:
+        url: https://github.com/GAIR-NLP/AgencyBench
+      purposes:
+        - identification
+        - research
+      authority: official

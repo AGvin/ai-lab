@@ -1,0 +1,33 @@
+entity:
+  id: catalog/models/ibm-nasa/nasa-ibm-lunar-foundation-model
+  type: model
+  name: NASA-IBM Lunar Foundation Model
+  aliases:
+    - NASA-IBM LFM
+  references:
+    - type: article
+      source:
+        url: https://science.nasa.gov/science-research/artificial-intelligence-lunar-foundation-model/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://newsroom.ibm.com/2026-09-10-ibm-and-nasa-release-open-source-ai-model-to-support-lunar-exploration
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/ibm
+    - type: produced-by
+      target: catalog/producers/n/nasa

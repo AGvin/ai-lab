@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-development/nvidia-nemo-rl
+  type: software
+  name: NVIDIA NeMo RL
+  references:
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/nemo/rl/index.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA-NeMo/RL
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

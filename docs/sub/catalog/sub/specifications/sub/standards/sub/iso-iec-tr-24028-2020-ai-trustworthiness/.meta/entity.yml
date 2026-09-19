@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-tr-24028-2020-ai-trustworthiness
+  name: ISO/IEC TR 24028:2020 — Overview of trustworthiness in artificial intelligence
+  aliases:
+    - ISO/IEC TR 24028:2020
+    - ISO 24028
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/77608.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO identifies Edition 1 as a published Technical Report from May 2020.

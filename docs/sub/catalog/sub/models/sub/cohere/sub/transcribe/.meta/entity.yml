@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/cohere/transcribe
+  type: model-family
+  name: Cohere Transcribe
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/transcribe
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cohere
+    - type: has-member
+      target: catalog/models/cohere/transcribe/models/cohere-transcribe-03-2026
+    - type: has-member
+      target: catalog/models/cohere/transcribe/models/cohere-transcribe-arabic-07-2026

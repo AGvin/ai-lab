@@ -1,0 +1,25 @@
+entity:
+  id: catalog/services/infrastructure/salesforce-agentforce
+  type: service
+  name: Salesforce Agentforce
+  aliases:
+    - Agentforce
+    - Agentforce 360 Platform
+  references:
+    - type: official-site
+      source:
+        url: https://www.salesforce.com/platform/agentforce-platform/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Salesforce identifies Agentforce as the platform for designing, deploying, managing, and orchestrating AI agents on Salesforce Platform.
+    - type: documentation
+      source:
+        url: https://help.salesforce.com/s/articleView?id=ai.copilot_intro.htm&type=5
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/salesforce

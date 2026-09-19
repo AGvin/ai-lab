@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/openai/gpt-live/models/gpt-live-1-mini
+  type: model
+  name: GPT-Live-1 mini
+  references:
+    - type: release-notes
+      source:
+        url: https://openai.com/index/introducing-gpt-live/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://deploymentsafety.openai.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/openai/gpt-live

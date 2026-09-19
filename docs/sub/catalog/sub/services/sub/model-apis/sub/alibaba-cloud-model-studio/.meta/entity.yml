@@ -1,0 +1,24 @@
+entity:
+  id: catalog/services/model-apis/alibaba-cloud-model-studio
+  type: service
+  name: Alibaba Cloud Model Studio
+  aliases:
+    - Model Studio
+    - DashScope
+  references:
+    - type: documentation
+      source:
+        url: https://docs.modelstudio.console.alibabacloud.com/en/model-studio/what-is-model-studio
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/models
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/alibaba-cloud

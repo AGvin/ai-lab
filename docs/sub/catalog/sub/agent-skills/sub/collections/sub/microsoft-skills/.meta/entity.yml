@@ -1,0 +1,18 @@
+entity:
+  id: catalog/agent-skills/collections/microsoft-skills
+  type: skill-collection
+  name: Microsoft Skills
+  aliases:
+    - Microsoft Agent Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/microsoft/skills
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Microsoft-maintained skill/plugin repository for Azure SDKs, Microsoft Foundry, and related coding-agent workflows.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

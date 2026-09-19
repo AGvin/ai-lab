@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/p/pytorch-project
+  type: organization
+  name: PyTorch Project
+  references:
+    - type: official-site
+      source:
+        url: https://pytorch.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/pytorch/executorch
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/executorch

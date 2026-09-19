@@ -1,0 +1,33 @@
+entity:
+  id: catalog/software/gateways/model-gateways/agentgateway
+  type: software
+  name: agentgateway
+  aliases:
+    - AgentGateway
+  references:
+    - type: official-site
+      source:
+        url: https://agentgateway.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/agentgateway/agentgateway
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://agentgateway.dev/docs/standalone/latest/
+      purposes:
+        - research
+      authority: official
+      note: Current 1.5.x documentation identifies agentgateway as an open-source cloud-native gateway control plane and proxy data plane for HTTP, gRPC, LLM, MCP, and A2A traffic.
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/solo-io
+    - type: maintained-by
+      target: catalog/producers/a/agentic-ai-foundation

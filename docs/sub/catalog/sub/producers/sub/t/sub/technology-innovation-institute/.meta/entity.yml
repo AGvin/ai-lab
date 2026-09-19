@@ -1,0 +1,17 @@
+entity:
+  id: catalog/producers/t/technology-innovation-institute
+  type: organization
+  name: Technology Innovation Institute
+  aliases:
+    - TII
+  references:
+    - type: official-site
+      source:
+        url: https://www.tii.ae/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/technology-innovation-institute/falcon

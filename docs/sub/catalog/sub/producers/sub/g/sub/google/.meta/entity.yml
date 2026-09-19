@@ -27,7 +27,11 @@ entity:
     - type: produces
       target: catalog/models/google/gemini
     - type: produces
+      target: catalog/models/google/gemini-omni
+    - type: produces
       target: catalog/models/google/gemma
+    - type: produces
+      target: catalog/models/google/lyria
     - type: produces
       target: catalog/services/development/agents/jules
     - type: produces
@@ -37,6 +41,8 @@ entity:
     - type: produces
       target: catalog/software/agent-frameworks/google-adk
     - type: produces
+      target: catalog/software/development-tools/agentic-development-systems/google-agents-cli
+    - type: produces
       target: catalog/software/model-and-data-platforms/lifecycle-platforms/kubeflow
     - type: produces
       target: catalog/software/workflow-engines/data-and-compute-orchestration/kubeflow-pipelines
@@ -44,5 +50,13 @@ entity:
       target: catalog/services/assistant-workspaces/gemini
     - type: produces
       target: catalog/services/knowledge-workspaces/gemini-notebook
+    - type: produces
+      target: catalog/services/infrastructure/gemini-enterprise-agent-platform
+    - type: produces
+      target: catalog/services/ai-management-platforms/google-agent-registry
+    - type: produces
+      target: catalog/hardware/google-tpu7x
+    - type: produces
+      target: catalog/agent-skills/collections/google-skills
     - type: has-part
       target: catalog/producers/g/google-deepmind

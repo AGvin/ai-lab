@@ -1,0 +1,18 @@
+entity:
+  id: catalog/datasets/sentinelbench
+  type: dataset
+  name: SentinelBench
+  references:
+    - type: paper
+      source:
+        url: https://www.microsoft.com/en-us/research/publication/sentinelbench-a-benchmark-for-long-running-monitoring-agents/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.microsoft.com/en-us/research/articles/sentinelbench-a-benchmark-for-long-running-monitoring-agents/
+      purposes:
+        - research
+      authority: official

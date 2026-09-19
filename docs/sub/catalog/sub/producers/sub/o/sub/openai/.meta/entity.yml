@@ -21,6 +21,10 @@ entity:
     - type: produces
       target: catalog/models/openai/gpt
     - type: produces
+      target: catalog/models/openai/gpt-live
+    - type: produces
+      target: catalog/models/openai/gpt-rosalind
+    - type: produces
       target: catalog/models/openai/whisper
     - type: produces
       target: catalog/agent-skills/collections/openai-skills
@@ -30,5 +34,11 @@ entity:
       target: catalog/software/agents/hybrid/openai-codex
     - type: produces
       target: catalog/software/agent-frameworks/openai-agents-sdk
+    - type: produces
+      target: catalog/specifications/formats/openai-harmony
+    - type: produces
+      target: catalog/datasets/humaneval
+    - type: produces
+      target: catalog/hardware/openai-jalapeno
     - type: has-part
       target: catalog/producers/p/promptfoo-inc

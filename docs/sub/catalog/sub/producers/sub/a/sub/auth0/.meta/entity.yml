@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/a/auth0
+  type: organization
+  name: Auth0
+  references:
+    - type: official-site
+      source:
+        url: https://auth0.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/agent-identity-and-access/auth0-for-ai-agents

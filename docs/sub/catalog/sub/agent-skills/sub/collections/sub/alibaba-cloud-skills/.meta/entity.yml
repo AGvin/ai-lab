@@ -1,0 +1,18 @@
+entity:
+  id: catalog/agent-skills/collections/alibaba-cloud-skills
+  type: skill-collection
+  name: Alibaba Cloud Skills
+  aliases:
+    - Alibaba Cloud Agent Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/aliyun/alibabacloud-aiops-skills
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Alibaba Cloud's official Agent Skills repository exposes stable and preview skill channels for Alibaba Cloud products and general-purpose tooling.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/alibaba-cloud
