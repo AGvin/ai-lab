@@ -4,10 +4,11 @@ Software for managing, preparing, developing, versioning, curating, publishing, 
 
 ## Child pages
 
-- [`lifecycle-platforms/`](./sub/lifecycle-platforms/)
-- [`versioning-and-lineage/`](./sub/versioning-and-lineage/)
-- [`dataset-curation/`](./sub/dataset-curation/)
-- [`hub-clients/`](./sub/hub-clients/)
-- [`model-libraries/`](./sub/model-libraries/)
-- [`data-libraries/`](./sub/data-libraries/)
-- [`model-development/`](./sub/model-development/)
+- [Data Libraries](./sub/data-libraries/)
+- [Dataset Curation](./sub/dataset-curation/)
+- [Hub Clients](./sub/hub-clients/)
+- [Lifecycle Platforms](./sub/lifecycle-platforms/)
+- [Model Development](./sub/model-development/)
+- [Model Libraries](./sub/model-libraries/)
+- [Model Optimization and Compilation](./sub/model-optimization-and-compilation/)
+- [Versioning and Lineage](./sub/versioning-and-lineage/)
