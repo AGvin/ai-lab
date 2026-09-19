@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d56fed6559eb0fe2c4daaa0e0985918c4b3d3f43
+      entity.yml: gitblob:35835ae95291b3a738bb245ab3a2c5457a9602d1
     parent:
       entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
   state:
@@ -46,7 +46,7 @@ cache:
         type: dataset
         name: WeaveBench
         references:
-        - type: publication
+        - type: paper
           source:
             url: https://www.microsoft.com/en-us/research/publication/weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interfaces/
           purposes:

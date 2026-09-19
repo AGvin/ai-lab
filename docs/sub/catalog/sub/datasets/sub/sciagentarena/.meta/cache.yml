@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1f3a2a026ab0c4ad83e4b7e671e519fef63ba0cf
+      entity.yml: gitblob:893f6d2d59749ebc296e128808327ed9d6d314ac
     parent:
       entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
   state:
@@ -46,7 +46,7 @@ cache:
         type: dataset
         name: SciAgentArena
         references:
-        - type: publication
+        - type: paper
           source:
             url: https://www.microsoft.com/en-us/research/publication/benchmarking-ai-agents-for-addressing-scientific-challenges-across-scales/
           purposes:
