@@ -3,9 +3,7 @@ cache:
   fingerprints:
     self:
       entity.yml: gitblob:4a1bf2fd4cc03cc35bc4a2d18e8bf9a48a3346c1
-    parent:
-      entity.yml: gitblob:dc2ae18f373a8a734022bb3aeafb58a4095e8639
-      node.yml: gitblob:737cc151a866f4cc2e6a30f7f50fddf353ff89cf
+    parent: {}
   state:
     node:
       effective:
@@ -17,7 +15,7 @@ cache:
           default_locale: en_US
           locales:
           - uk_UA
-        template: catalog/category
+        template: catalog/services/service
       outgoing:
         schema: default
         requirements:
@@ -27,7 +25,7 @@ cache:
           default_locale: en_US
           locales:
           - uk_UA
-        template: catalog/category
+        template: catalog/services/service
       children:
         outgoing:
           schema: default
