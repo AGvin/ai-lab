@@ -3,7 +3,7 @@ entity:
   type: dataset
   name: WeaveBench
   references:
-    - type: publication
+    - type: paper
       source:
         url: https://www.microsoft.com/en-us/research/publication/weavebench-a-long-horizon-real-world-benchmark-for-computer-use-agents-with-hybrid-interfaces/
       purposes:
