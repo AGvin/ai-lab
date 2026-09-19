@@ -19,3 +19,23 @@ Reference pages answer what a model entity is and what authoritative sources est
 Do not duplicate full model profiles inside selection guidance. Link to canonical reference entities and keep workload-specific conclusions, rankings, hardware-fit judgments, cost trade-offs, and routing decisions in the selection layer.
 
 The model catalog is materialized incrementally from reviewed content. A legacy page or folder name does not determine canonical entity type or destination; useful information is reclassified and source-verified before reuse.
+
+## Child pages
+
+- [AI21 Labs models](./sub/ai21-labs/)
+- [Alibaba](./sub/alibaba/)
+- [Amazon models](./sub/amazon/)
+- [Anthropic](./sub/anthropic/)
+- [Baidu models](./sub/baidu/)
+- [Black Forest Labs](./sub/black-forest-labs/)
+- [Cohere models](./sub/cohere/)
+- [Cohere Labs models](./sub/cohere-labs/)
+- [Davidau](./sub/davidau/)
+- [Deepseek](./sub/deepseek/)
+- [Google](./sub/google/)
+- [Huihui Ai](./sub/huihui-ai/)
+- [Microsoft](./sub/microsoft/)
+- [Mistral Ai](./sub/mistral-ai/)
+- [Openai](./sub/openai/)
+- [Tongyi Mai](./sub/tongyi-mai/)
+- [Z Ai](./sub/z-ai/)
