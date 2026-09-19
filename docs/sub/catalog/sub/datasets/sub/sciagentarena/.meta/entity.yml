@@ -3,7 +3,7 @@ entity:
   type: dataset
   name: SciAgentArena
   references:
-    - type: publication
+    - type: paper
       source:
         url: https://www.microsoft.com/en-us/research/publication/benchmarking-ai-agents-for-addressing-scientific-challenges-across-scales/
       purposes:
