@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:37ea98759fbe867345a201e554f8d62b1fcded58
+      entity.yml: gitblob:ade36060a0603dbd3f3a75fbd67d34b4f985cf0a
     parent:
       entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
   state:
@@ -46,7 +46,7 @@ cache:
         type: dataset
         name: AsgardBench
         references:
-        - type: publication
+        - type: paper
           source:
             url: https://www.microsoft.com/en-us/research/publication/asgardbench-evaluating-visually-grounded-interactive-planning-under-minimal-feedback/
           purposes:

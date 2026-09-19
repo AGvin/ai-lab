@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a937d3380047196e52d20d3848cadf5449efa59d
+      entity.yml: gitblob:7e0750201ff94b2de9faa245a59c3779d8ae5f00
     parent:
       entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
   state:
@@ -46,7 +46,7 @@ cache:
         type: dataset
         name: SentinelBench
         references:
-        - type: publication
+        - type: paper
           source:
             url: https://www.microsoft.com/en-us/research/publication/sentinelbench-a-benchmark-for-long-running-monitoring-agents/
           purposes:

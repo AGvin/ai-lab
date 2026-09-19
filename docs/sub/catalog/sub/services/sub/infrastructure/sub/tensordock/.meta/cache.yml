@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:bf23ea69edda41b06fb3718da3a3a82da6e881fb
+      entity.yml: gitblob:0dde46fd9bec51d8bacaef2143a250ab8aa9aa6b
     parent:
       entity.yml: gitblob:52e5d82689f73b1741dc3a66f6cae32c9e404c33
   state:
@@ -53,7 +53,7 @@ cache:
           - identification
           - research
           authority: official
-        - type: product
+        - type: product-page
           source:
             url: https://marketplace.tensordock.com/
           purposes:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:062cbb5040957dea1182ea27b3adc5eb63c88ab1
+      entity.yml: gitblob:15cef2945757de6fbafb166f0e445f63b8a62add
     parent:
       entity.yml: gitblob:52e5d82689f73b1741dc3a66f6cae32c9e404c33
   state:
@@ -53,7 +53,7 @@ cache:
           - identification
           - research
           authority: official
-        - type: product
+        - type: product-page
           source:
             url: https://www.coreweave.com/products/gpu-compute
           purposes:
