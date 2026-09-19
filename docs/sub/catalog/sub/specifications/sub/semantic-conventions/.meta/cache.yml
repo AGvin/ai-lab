@@ -1,10 +1,9 @@
 cache:
   schema: default
   fingerprints:
-    self:
-      entity.yml: gitblob:232808bba219baedd4880edba12ccf5da365d76b
+    self: {}
     parent:
-      entity.yml: gitblob:236703b9a6af248b5b8c2b5a31b6bf5172460807
+      entity.yml: gitblob:34ca6cccee69499d5f123fb1e26d588f94966432
   state:
     node:
       effective:
@@ -16,7 +15,7 @@ cache:
           default_locale: en_US
           locales:
           - uk_UA
-        template: catalog/services/service
+        template: catalog/domain
       outgoing:
         schema: default
         requirements:
@@ -26,7 +25,7 @@ cache:
           default_locale: en_US
           locales:
           - uk_UA
-        template: catalog/services/service
+        template: catalog/domain
       children:
         outgoing:
           schema: default
@@ -37,32 +36,10 @@ cache:
             default_locale: en_US
             locales:
             - uk_UA
-          template: catalog/services/service
+          template: catalog/domain
         local: {}
     entity:
-      effective:
-        schema: default
-        id: catalog/services/agent-identity-and-access/okta-for-ai-agents
-        type: service
-        name: Okta for AI Agents
-        references:
-        - type: documentation
-          source:
-            url: https://support.okta.com/help/s/article/okta-secures-ai?language=en_US
-          purposes:
-          - identification
-          - research
-          authority: official
-        - type: official-site
-          source:
-            url: https://www.okta.com/products/govern-ai-agent-identity/
-          purposes:
-          - identification
-          - research
-          authority: official
-        relations:
-        - type: produced-by
-          target: catalog/producers/o/okta
+      effective: {}
     aliases:
       effective:
         schema: default

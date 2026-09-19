@@ -2,9 +2,10 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:232808bba219baedd4880edba12ccf5da365d76b
+      entity.yml: gitblob:945b0913e6325eed67569d93e169a06cccd3de20
+      node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
     parent:
-      entity.yml: gitblob:236703b9a6af248b5b8c2b5a31b6bf5172460807
+      entity.yml: gitblob:fb0f98836095b236c8d748f0be71137058ae0d36
   state:
     node:
       effective:
@@ -16,7 +17,7 @@ cache:
           default_locale: en_US
           locales:
           - uk_UA
-        template: catalog/services/service
+        template: catalog/category
       outgoing:
         schema: default
         requirements:
@@ -26,7 +27,7 @@ cache:
           default_locale: en_US
           locales:
           - uk_UA
-        template: catalog/services/service
+        template: catalog/category
       children:
         outgoing:
           schema: default
@@ -37,32 +38,14 @@ cache:
             default_locale: en_US
             locales:
             - uk_UA
-          template: catalog/services/service
+          template: catalog/software/software
         local: {}
     entity:
       effective:
         schema: default
-        id: catalog/services/agent-identity-and-access/okta-for-ai-agents
-        type: service
-        name: Okta for AI Agents
-        references:
-        - type: documentation
-          source:
-            url: https://support.okta.com/help/s/article/okta-secures-ai?language=en_US
-          purposes:
-          - identification
-          - research
-          authority: official
-        - type: official-site
-          source:
-            url: https://www.okta.com/products/govern-ai-agent-identity/
-          purposes:
-          - identification
-          - research
-          authority: official
-        relations:
-        - type: produced-by
-          target: catalog/producers/o/okta
+        id: catalog/software/model-and-data-platforms/model-optimization-and-compilation
+        type: catalog-index
+        name: Model Optimization and Compilation
     aliases:
       effective:
         schema: default

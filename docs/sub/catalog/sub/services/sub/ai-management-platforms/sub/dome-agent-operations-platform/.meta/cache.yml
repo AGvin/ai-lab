@@ -2,10 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:bdf61c65ebc883d6dae76f1b8cc8cb43c9b706f2
+      entity.yml: gitblob:73a821c9e85a8c7d810328895df9ecf7b5aea7bb
     parent:
-      entity.yml: gitblob:dc2ae18f373a8a734022bb3aeafb58a4095e8639
-      node.yml: gitblob:737cc151a866f4cc2e6a30f7f50fddf353ff89cf
+      entity.yml: gitblob:c2d85b597a5c7577badaf63792a2c9ce70f6bf60
   state:
     node:
       effective:
@@ -17,7 +16,7 @@ cache:
           default_locale: en_US
           locales:
           - uk_UA
-        template: catalog/category
+        template: catalog/services/service
       outgoing:
         schema: default
         requirements:
@@ -27,7 +26,7 @@ cache:
           default_locale: en_US
           locales:
           - uk_UA
-        template: catalog/category
+        template: catalog/services/service
       children:
         outgoing:
           schema: default
@@ -65,7 +64,7 @@ cache:
           authority: official
           note: Dome Systems announced general availability and self-service access
             on 2026-09-05.
-        - type: pricing
+        - type: official-site
           source:
             url: https://www.domesystems.ai/pricing
           purposes:

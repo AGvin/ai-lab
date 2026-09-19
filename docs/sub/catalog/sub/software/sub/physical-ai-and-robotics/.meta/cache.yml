@@ -2,9 +2,11 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:232808bba219baedd4880edba12ccf5da365d76b
+      entity.yml: gitblob:8144ca876d7f835bbf1e08e3cc7283fd011392cb
+      node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
     parent:
-      entity.yml: gitblob:236703b9a6af248b5b8c2b5a31b6bf5172460807
+      entity.yml: gitblob:b444db0bdd946b1b5c554a1e3037a7af11bb0ff3
+      node.yml: gitblob:4b354e3a6a0675369de72d3cb3e8b252df208ccd
   state:
     node:
       effective:
@@ -16,7 +18,7 @@ cache:
           default_locale: en_US
           locales:
           - uk_UA
-        template: catalog/services/service
+        template: catalog/category
       outgoing:
         schema: default
         requirements:
@@ -26,7 +28,7 @@ cache:
           default_locale: en_US
           locales:
           - uk_UA
-        template: catalog/services/service
+        template: catalog/category
       children:
         outgoing:
           schema: default
@@ -37,32 +39,14 @@ cache:
             default_locale: en_US
             locales:
             - uk_UA
-          template: catalog/services/service
+          template: catalog/software/software
         local: {}
     entity:
       effective:
         schema: default
-        id: catalog/services/agent-identity-and-access/okta-for-ai-agents
-        type: service
-        name: Okta for AI Agents
-        references:
-        - type: documentation
-          source:
-            url: https://support.okta.com/help/s/article/okta-secures-ai?language=en_US
-          purposes:
-          - identification
-          - research
-          authority: official
-        - type: official-site
-          source:
-            url: https://www.okta.com/products/govern-ai-agent-identity/
-          purposes:
-          - identification
-          - research
-          authority: official
-        relations:
-        - type: produced-by
-          target: catalog/producers/o/okta
+        id: catalog/software/physical-ai-and-robotics
+        type: catalog-index
+        name: Physical AI and Robotics
     aliases:
       effective:
         schema: default
