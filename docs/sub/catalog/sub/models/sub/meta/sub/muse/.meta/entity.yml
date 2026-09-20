@@ -16,4 +16,6 @@ entity:
     - type: has-member
       target: catalog/models/meta/muse/models/muse-spark-1-1
     - type: has-member
+      target: catalog/models/meta/muse/models/muse-spark-1-3
+    - type: has-member
       target: catalog/models/meta/muse/models/muse-image
