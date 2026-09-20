@@ -1,0 +1,24 @@
+entity:
+  id: catalog/producers/s/supabase-inc
+  type: organization
+  name: Supabase, Inc.
+  aliases:
+    - Supabase
+  references:
+    - type: official-site
+      source:
+        url: https://supabase.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://supabase.com/downloads/docs/Supabase%2BDPA%2B260317.pdf
+      purposes:
+        - identification
+      authority: official
+      note: Current Supabase data-processing agreement identifying Supabase, Inc.
+  relations:
+    - type: produces
+      target: catalog/agent-skills/collections/supabase-agent-skills
