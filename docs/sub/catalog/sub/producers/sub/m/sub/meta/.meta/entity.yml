@@ -22,4 +22,6 @@ entity:
     - type: produces
       target: catalog/models/meta/muse
     - type: produces
+      target: catalog/services/assistant-workspaces/muse
+    - type: produces
       target: catalog/hardware/meta-mtia-300
