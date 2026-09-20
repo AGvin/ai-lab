@@ -1,0 +1,21 @@
+entity:
+  id: catalog/datasets/gaia
+  type: dataset
+  name: GAIA
+  aliases:
+    - GAIA benchmark
+  references:
+    - type: official-site
+      source:
+        url: https://huggingface.co/gaia-benchmark
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2311.12983
+      purposes:
+        - identification
+        - research
+      authority: upstream

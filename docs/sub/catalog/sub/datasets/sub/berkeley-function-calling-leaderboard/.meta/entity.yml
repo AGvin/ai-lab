@@ -1,0 +1,21 @@
+entity:
+  id: catalog/datasets/berkeley-function-calling-leaderboard
+  type: dataset
+  name: Berkeley Function Calling Leaderboard
+  aliases:
+    - BFCL
+  references:
+    - type: official-site
+      source:
+        url: https://gorilla.cs.berkeley.edu/leaderboard
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ShishirPatil/gorilla
+      purposes:
+        - identification
+        - research
+      authority: official
