@@ -54,5 +54,7 @@ entity:
       target: catalog/agent-skills/collections/microsoft-skills
     - type: produces
       target: catalog/agent-skills/collections/azure-agent-skills
+    - type: produces
+      target: catalog/hardware/microsoft-maia-200
     - type: owns
       target: catalog/producers/g/github-inc
