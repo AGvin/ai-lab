@@ -1,0 +1,25 @@
+entity:
+  id: catalog/software/agents/hybrid/devin-desktop
+  type: software
+  name: Devin Desktop
+  aliases:
+    - Windsurf
+    - Windsurf Editor
+  identity_note: Current Cognition desktop agent/IDE product; first-party product documentation states that Devin Desktop is the new name for Windsurf and arrives as the standard Windsurf over-the-air upgrade.
+  references:
+    - type: product-page
+      source:
+        url: https://windsurf.com/editor
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.windsurf.com/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cognition-ai-inc
