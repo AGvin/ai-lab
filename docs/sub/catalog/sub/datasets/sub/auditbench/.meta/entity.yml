@@ -1,0 +1,12 @@
+entity:
+  id: catalog/datasets/auditbench
+  type: dataset
+  name: AuditBench
+  references:
+    - type: article
+      source:
+        url: https://alignment.anthropic.com/2026/auditbench/
+      purposes:
+        - identification
+        - research
+      authority: official
