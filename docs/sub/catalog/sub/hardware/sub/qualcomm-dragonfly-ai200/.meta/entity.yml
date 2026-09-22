@@ -1,0 +1,23 @@
+entity:
+  id: catalog/hardware/qualcomm-dragonfly-ai200
+  type: hardware-product
+  name: Qualcomm Dragonfly AI200
+  aliases:
+    - Qualcomm AI200
+  references:
+    - type: product-page
+      source:
+        url: https://www.qualcomm.com/data-center/products/qualcomm-dragonfly-ai200
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.qualcomm.com/data-center/products
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/q/qualcomm
