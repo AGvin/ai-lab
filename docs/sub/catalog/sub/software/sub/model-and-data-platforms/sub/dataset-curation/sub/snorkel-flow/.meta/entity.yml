@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/model-and-data-platforms/dataset-curation/snorkel-flow
+  type: software
+  name: Snorkel Flow
+  references:
+    - type: documentation
+      source:
+        url: https://docs.snorkel.ai/docs/25.4/user-guide/intro/welcome-to-snorkel-flow
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.snorkel.ai/docs/25.1/user-guide/intro/snorkel-flow-architecture-overview
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/snorkel-ai
