@@ -39,6 +39,14 @@ entity:
     - type: produces
       target: catalog/datasets/humaneval
     - type: produces
+      target: catalog/datasets/browsecomp
+    - type: produces
+      target: catalog/datasets/genebench-pro
+    - type: produces
+      target: catalog/datasets/lifescibench
+    - type: produces
+      target: catalog/datasets/frontierscience
+    - type: produces
       target: catalog/hardware/openai-jalapeno
     - type: has-part
       target: catalog/producers/p/promptfoo-inc

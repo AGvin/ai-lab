@@ -1,15 +1,15 @@
 entity:
-  id: catalog/datasets/auditbench
+  id: catalog/datasets/frontierscience
   type: dataset
-  name: AuditBench
+  name: FrontierScience
   references:
     - type: article
       source:
-        url: https://alignment.anthropic.com/2026/auditbench/
+        url: https://openai.com/index/frontierscience/
       purposes:
         - identification
         - research
       authority: official
   relations:
     - type: produced-by
-      target: catalog/producers/a/anthropic
+      target: catalog/producers/o/openai
