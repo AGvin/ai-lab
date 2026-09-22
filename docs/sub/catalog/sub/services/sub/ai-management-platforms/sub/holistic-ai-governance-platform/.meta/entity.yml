@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/ai-management-platforms/holistic-ai-governance-platform
+  type: service
+  name: Holistic AI Governance Platform
+  references:
+    - type: product-page
+      source:
+        url: https://www.holisticai.com/ai-governance-platform
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.holisticai.com/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/holistic-ai
