@@ -57,3 +57,5 @@ entity:
       target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/nvidia-model-optimizer
     - type: produces
       target: catalog/services/data-generation-and-curation/gretel-platform
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/nvidia-aiperf
