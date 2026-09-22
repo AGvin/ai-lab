@@ -13,3 +13,5 @@ entity:
   relations:
     - type: produces
       target: catalog/hardware/intel-gaudi-3
+    - type: produces
+      target: catalog/hardware/intel-arc-pro-b70
