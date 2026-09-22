@@ -13,3 +13,5 @@ entity:
   relations:
     - type: produces
       target: catalog/hardware/tenstorrent-galaxy-blackhole
+    - type: produces
+      target: catalog/hardware/tenstorrent-wormhole-n150-n300
