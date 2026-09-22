@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/h/holistic-ai
+  type: organization
+  name: Holistic AI
+  references:
+    - type: official-site
+      source:
+        url: https://www.holisticai.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/ai-management-platforms/holistic-ai-governance-platform
