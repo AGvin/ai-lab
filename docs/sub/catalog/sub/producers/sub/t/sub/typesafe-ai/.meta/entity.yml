@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/t/typesafe-ai
+  type: organization
+  name: TypeSafe AI
+  references:
+    - type: official-site
+      source:
+        url: https://typesafe.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://typesafe.ai/blog/introducing-system-one-models-and-jev
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/typesafe-ai/jev
