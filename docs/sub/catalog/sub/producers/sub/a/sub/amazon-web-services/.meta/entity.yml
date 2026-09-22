@@ -37,3 +37,5 @@ entity:
       target: catalog/hardware/aws-trainium3
     - type: produces
       target: catalog/agent-skills/collections/aws-agent-toolkit-skills
+    - type: produces
+      target: catalog/agent-skills/collections/aws-hcls-agent-skills
