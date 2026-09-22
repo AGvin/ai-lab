@@ -31,6 +31,8 @@ entity:
     - type: produces
       target: catalog/services/assistant-workspaces/chatgpt
     - type: produces
+      target: catalog/services/infrastructure/openai-agents-api
+    - type: produces
       target: catalog/software/agents/hybrid/openai-codex
     - type: produces
       target: catalog/software/agent-frameworks/openai-agents-sdk

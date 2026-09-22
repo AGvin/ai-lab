@@ -30,6 +30,8 @@ entity:
     - type: produces
       target: catalog/software/inference-runtimes/distributed-serving/llm-d
     - type: produces
+      target: catalog/software/gateways/model-gateways/nvidia-pair
+    - type: produces
       target: catalog/hardware/nvidia-h100
     - type: produces
       target: catalog/hardware/nvidia-b200
