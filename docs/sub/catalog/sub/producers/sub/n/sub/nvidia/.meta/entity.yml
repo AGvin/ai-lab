@@ -55,3 +55,5 @@ entity:
       target: catalog/software/model-and-data-platforms/model-development/nvidia-nemo-rl
     - type: produces
       target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/nvidia-model-optimizer
+    - type: produces
+      target: catalog/services/data-generation-and-curation/gretel-platform
