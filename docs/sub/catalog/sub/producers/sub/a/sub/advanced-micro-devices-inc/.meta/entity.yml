@@ -35,3 +35,5 @@ entity:
       target: catalog/hardware/amd-instinct-mi455x
     - type: produces
       target: catalog/hardware/amd-instinct-mi350p
+    - type: produces
+      target: catalog/software/development-tools/agentic-development-systems/amd-rocm-ai
