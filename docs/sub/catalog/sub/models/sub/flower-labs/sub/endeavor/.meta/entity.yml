@@ -1,0 +1,24 @@
+entity:
+  id: catalog/models/flower-labs/endeavor
+  type: model-family
+  name: Endeavor
+  references:
+    - type: documentation
+      source:
+        url: https://flower.ai/docs/model/endeavor.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://flower.ai/models/endeavor
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/f/flower-labs
+    - type: has-member
+      target: catalog/models/flower-labs/endeavor/models/endeavor-1-0
