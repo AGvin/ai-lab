@@ -15,3 +15,7 @@ entity:
       target: catalog/datasets/mlperf-edge-agentic-inference
     - type: produces
       target: catalog/datasets/mlperf-end-to-end-rag-inference
+    - type: produces
+      target: catalog/datasets/mlperf-client-v2-0
+    - type: produces
+      target: catalog/datasets/mlperf-storage-v3-0
