@@ -1,0 +1,30 @@
+entity:
+  id: catalog/datasets/mlperf-end-to-end-rag-inference
+  type: dataset
+  name: MLPerf End-to-End RAG Inference
+  aliases:
+    - MLPerf E2E RAG
+  references:
+    - type: article
+      source:
+        url: https://mlcommons.org/2026/08/endtoend-inference/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mlcommons.org/2026/09/mlperf-inference-v6-1-results/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mlcommons.org/inference/index_gh/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mlcommons
