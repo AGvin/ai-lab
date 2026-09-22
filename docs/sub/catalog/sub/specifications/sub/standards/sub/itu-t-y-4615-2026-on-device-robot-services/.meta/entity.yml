@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/itu-t-y-4615-2026-on-device-robot-services
+  name: ITU-T Y.4615 — On-device framework and requirements for robot services
+  aliases:
+    - ITU-T Y.4615
+    - Y.4615
+  references:
+    - type: specification
+      source:
+        url: https://www.itu.int/rec/T-REC-Y.4615-202606-I
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ITU-T Recommendation Y.4615 (06/26), approved 2026-06-29 and in force.
