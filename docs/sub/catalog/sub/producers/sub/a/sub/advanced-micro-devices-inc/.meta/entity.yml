@@ -33,3 +33,5 @@ entity:
       target: catalog/hardware/amd-instinct-mi355x
     - type: produces
       target: catalog/hardware/amd-instinct-mi455x
+    - type: produces
+      target: catalog/hardware/amd-instinct-mi350p
