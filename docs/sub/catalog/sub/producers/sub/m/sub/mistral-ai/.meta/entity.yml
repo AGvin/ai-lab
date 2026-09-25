@@ -51,3 +51,5 @@ entity:
       target: catalog/models/mistral-ai/shieldstral
     - type: produces
       target: catalog/services/ai-assets/mistral-studio
+    - type: produces
+      target: catalog/software/agents/hybrid/mistral-vibe
