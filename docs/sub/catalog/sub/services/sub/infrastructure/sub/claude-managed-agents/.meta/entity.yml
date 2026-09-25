@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/infrastructure/claude-managed-agents
+  type: service
+  name: Claude Managed Agents
+  references:
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/managed-agents/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/managed-agents/quickstart
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/anthropic
