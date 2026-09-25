@@ -21,3 +21,7 @@ entity:
       target: catalog/producers/x/xai
     - type: has-member
       target: catalog/models/xai/grok/models/grok-4-6
+    - type: has-member
+      target: catalog/models/xai/grok/models/grok-4-7
+    - type: has-member
+      target: catalog/models/xai/grok/models/grok-voice-transcribe-2-0
