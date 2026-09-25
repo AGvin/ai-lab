@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/integrated-workspaces/perplexity-comet
+  type: software
+  name: Perplexity Comet
+  aliases:
+    - Comet
+  references:
+    - type: product-page
+      source:
+        url: https://www.perplexity.ai/comet
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.perplexity.ai/en-GB/hub/blog/introducing-comet
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://www.perplexity.ai/en-GB/hub/blog/comet-is-now-available-to-everyone-worldwide
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/perplexity-ai
