@@ -29,3 +29,5 @@ entity:
       target: catalog/services/model-apis/perplexity-embeddings-api
     - type: produces
       target: catalog/models/perplexity-ai/pplx-embed-v1
+    - type: produces
+      target: catalog/agent-skills/collections/perplexity-api-platform-skills
