@@ -17,3 +17,5 @@ entity:
       target: catalog/software/agents/local/perplexity-portable-computer
     - type: produces
       target: catalog/agent-skills/registries/perplexity-skills-marketplace
+    - type: produces
+      target: catalog/models/perplexity-ai/pplx-27b
