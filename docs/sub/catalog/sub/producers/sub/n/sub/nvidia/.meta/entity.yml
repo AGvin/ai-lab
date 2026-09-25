@@ -63,3 +63,5 @@ entity:
       target: catalog/models/nvidia/nv-reason
     - type: produces
       target: catalog/datasets/swe-serve
+    - type: produces
+      target: catalog/software/agents/local/nemoclaw
