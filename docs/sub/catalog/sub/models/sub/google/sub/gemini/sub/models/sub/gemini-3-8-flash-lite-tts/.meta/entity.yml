@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/google/gemini/models/gemini-3-8-flash-lite-tts
+  type: model
+  name: Gemini 3.8 Flash-Lite TTS
+  references:
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash-lite-tts
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://ai.google.dev/gemini-api/docs/changelog
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/gemini
