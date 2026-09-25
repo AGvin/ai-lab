@@ -52,3 +52,5 @@ entity:
       target: catalog/hardware/openai-jalapeno
     - type: has-part
       target: catalog/producers/p/promptfoo-inc
+    - type: produces
+      target: catalog/models/openai/gpt-image
