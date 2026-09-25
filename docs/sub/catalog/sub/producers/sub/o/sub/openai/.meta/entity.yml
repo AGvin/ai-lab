@@ -64,3 +64,11 @@ entity:
       target: catalog/models/openai/gpt-transcribe
     - type: produces
       target: catalog/models/openai/gpt-live-transcribe
+    - type: produces
+      target: catalog/models/openai/gpt-realtime-1-5
+    - type: produces
+      target: catalog/models/openai/gpt-audio-1-5
+    - type: produces
+      target: catalog/models/openai/gpt-realtime-whisper
+    - type: produces
+      target: catalog/models/openai/gpt-4o-mini-tts
