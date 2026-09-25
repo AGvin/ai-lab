@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/google/weathernext
+  type: model-family
+  name: WeatherNext
+  references:
+    - type: official-site
+      source:
+        url: https://deepmind.google/science/weathernext/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google-deepmind
+    - type: has-member
+      target: catalog/models/google/weathernext/models/weathernext-3
