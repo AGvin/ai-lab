@@ -16,6 +16,12 @@ entity:
       purposes:
         - research
       authority: official
+    - type: article
+      source:
+        url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/google/gemini
