@@ -41,3 +41,5 @@ entity:
       target: catalog/agent-skills/collections/aws-hcls-agent-skills
     - type: produces
       target: catalog/services/infrastructure/aws-mcp-server
+    - type: produces
+      target: catalog/services/assistant-workspaces/amazon-quick
