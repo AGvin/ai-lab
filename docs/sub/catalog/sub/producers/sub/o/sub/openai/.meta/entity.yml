@@ -72,3 +72,13 @@ entity:
       target: catalog/models/openai/gpt-realtime-whisper
     - type: produces
       target: catalog/models/openai/gpt-4o-mini-tts
+    - type: produces
+      target: catalog/models/openai/gpt-oss
+    - type: produces
+      target: catalog/models/openai/text-embedding
+    - type: produces
+      target: catalog/models/openai/omni-moderation
+    - type: produces
+      target: catalog/models/openai/tts-1
+    - type: produces
+      target: catalog/models/openai/tts-1-hd
