@@ -39,3 +39,5 @@ entity:
       target: catalog/agent-skills/collections/aws-agent-toolkit-skills
     - type: produces
       target: catalog/agent-skills/collections/aws-hcls-agent-skills
+    - type: produces
+      target: catalog/services/infrastructure/aws-mcp-server
