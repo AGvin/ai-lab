@@ -59,3 +59,7 @@ entity:
       target: catalog/services/data-generation-and-curation/gretel-platform
     - type: produces
       target: catalog/software/evaluation-and-observability/evaluation-frameworks/nvidia-aiperf
+    - type: produces
+      target: catalog/models/nvidia/nv-reason
+    - type: produces
+      target: catalog/datasets/swe-serve
