@@ -12,7 +12,7 @@
 ## Content Specification
 
 - Explain the Hybrid Agents boundary before the child list.
-- Describe Augment Code, Claude Code, Devin Desktop, Factory Droid, GitHub Copilot, Kilo Code, OpenAI Codex, and OpenHands concisely from current official sources.
+- Describe every validated materialized direct child concisely from current official sources; do not maintain a second hand-written fixed child inventory in this requirement.
 - Link the sibling Local Agents index and the Hosted Development Agents service index as adjacent ownership boundaries.
 
 ## Validation
