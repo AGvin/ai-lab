@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/openai/gpt-realtime-translate
+  type: model
+  name: GPT-Realtime-Translate
+  aliases:
+    - gpt-realtime-translate
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-realtime-translate
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/realtime-translation
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai
