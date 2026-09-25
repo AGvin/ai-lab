@@ -32,3 +32,7 @@ entity:
       target: catalog/producers/g/google
     - type: produces
       target: catalog/models/google/weathernext
+    - type: produces
+      target: catalog/models/google/alphagenome
+    - type: produces
+      target: catalog/datasets/alphagenome-atlas
