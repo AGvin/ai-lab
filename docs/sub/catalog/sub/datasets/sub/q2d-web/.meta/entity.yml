@@ -1,0 +1,23 @@
+entity:
+  id: catalog/datasets/q2d-web
+  type: dataset
+  name: Q2D-Web
+  aliases:
+    - Query2Doc-Web
+  references:
+    - type: article
+      source:
+        url: https://www.perplexity.ai/en-GB/hub/blog/q2d-web
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://research.perplexity.ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/perplexity-ai
