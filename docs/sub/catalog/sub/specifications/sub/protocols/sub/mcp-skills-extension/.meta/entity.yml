@@ -1,0 +1,29 @@
+entity:
+  id: catalog/specifications/protocols/mcp-skills-extension
+  name: MCP Skills Extension
+  aliases:
+    - Skills over MCP
+    - Skills Extension
+  references:
+    - type: specification
+      source:
+        url: https://github.com/modelcontextprotocol/ext-skills/blob/main/specification/stable/skills.mdx
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Stable MCP Skills extension based on accepted SEP-2640; re-check the official stable specification before updating normative discovery or delivery semantics.
+    - type: repository
+      source:
+        url: https://github.com/modelcontextprotocol/ext-skills
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: specification
+      source:
+        url: https://modelcontextprotocol.io/seps/2640-skills-extension
+      purposes:
+        - research
+      authority: official
+      note: Accepted final SEP defining the extension.

@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/mistral-ai/mistral-embed
+  type: model-family
+  name: Mistral Embed
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/mistral-embed-23-12
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai
+    - type: has-member
+      target: catalog/models/mistral-ai/mistral-embed/models/mistral-embed-2312

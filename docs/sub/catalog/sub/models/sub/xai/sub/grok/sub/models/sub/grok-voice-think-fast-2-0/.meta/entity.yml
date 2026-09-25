@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/xai/grok/models/grok-voice-think-fast-2-0
+  type: model
+  name: Grok Voice Think Fast 2.0
+  aliases:
+    - grok-voice-think-fast-2.0
+    - grok-voice-latest
+  references:
+    - type: documentation
+      source:
+        url: https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.x.ai/developers/release-notes
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/xai/grok

@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/cohere-labs/aya/aya-expanse/models/aya-expanse-8b
+  type: model
+  name: Aya Expanse 8B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/CohereLabs/aya-expanse-8b
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere-labs/aya/aya-expanse

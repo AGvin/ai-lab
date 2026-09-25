@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/cohere-labs/aya/aya-vision/models/aya-vision-8b
+  type: model
+  name: Aya Vision 8B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/CohereLabs/aya-vision-8b
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere-labs/aya/aya-vision

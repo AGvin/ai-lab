@@ -36,5 +36,25 @@ entity:
       target: catalog/software/development-tools/testing/playwright
     - type: produces
       target: catalog/software/agent-frameworks/microsoft-agent-framework
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/pyrit
+    - type: produces
+      target: catalog/services/agent-identity-and-access/microsoft-entra-agent-id
+    - type: produces
+      target: catalog/services/ai-management-platforms/microsoft-agent-365
+    - type: produces
+      target: catalog/services/infrastructure/windows-365-for-agents
+    - type: produces
+      target: catalog/services/infrastructure/microsoft-copilot-studio
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/microsoft-olive
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/onnx-runtime
+    - type: produces
+      target: catalog/agent-skills/collections/microsoft-skills
+    - type: produces
+      target: catalog/agent-skills/collections/azure-agent-skills
+    - type: produces
+      target: catalog/hardware/microsoft-maia-200
     - type: owns
       target: catalog/producers/g/github-inc

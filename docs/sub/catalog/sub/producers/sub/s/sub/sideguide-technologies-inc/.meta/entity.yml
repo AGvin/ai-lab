@@ -1,0 +1,24 @@
+entity:
+  id: catalog/producers/s/sideguide-technologies-inc
+  type: organization
+  name: SideGuide Technologies, Inc.
+  aliases:
+    - Firecrawl
+  references:
+    - type: official-site
+      source:
+        url: https://www.firecrawl.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://www.firecrawl.dev/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/web-data/firecrawl

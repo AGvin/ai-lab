@@ -1,0 +1,22 @@
+entity:
+  id: catalog/services/infrastructure/aws-mcp-server
+  type: service
+  name: AWS MCP Server
+  references:
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/mcp-server.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://aws.amazon.com/about-aws/whats-new/2026/09/aws-mcp-server-serverless/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/amazon-web-services

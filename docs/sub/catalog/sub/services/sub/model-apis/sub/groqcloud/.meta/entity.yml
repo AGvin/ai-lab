@@ -1,0 +1,34 @@
+entity:
+  id: catalog/services/model-apis/groqcloud
+  type: service
+  name: GroqCloud
+  references:
+    - type: official-site
+      source:
+        url: https://groq.com/groqcloud/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://console.groq.com/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: privacy-policy
+      source:
+        url: https://groq.com/privacy-policy
+      purposes:
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://console.groq.com/docs/legal/services-agreement
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/groq-llc

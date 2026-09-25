@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/perplexity-ai
+  type: model-producer-view
+  name: Perplexity AI models
+  references:
+    - type: official-site
+      source:
+        url: https://research.perplexity.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.perplexity.ai/en-GB/hub/products/portable-computer
+      purposes:
+        - research
+      authority: official

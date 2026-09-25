@@ -1,0 +1,24 @@
+entity:
+  id: catalog/hardware/microsoft-maia-200
+  type: hardware
+  name: Microsoft Maia 200
+  aliases:
+    - Maia 200
+  references:
+    - type: article
+      source:
+        url: https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://news.microsoft.com/maia-200/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

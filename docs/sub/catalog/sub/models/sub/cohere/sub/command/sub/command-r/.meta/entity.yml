@@ -1,0 +1,27 @@
+entity:
+  id: catalog/models/cohere/command/command-r
+  type: model-series
+  name: Command R
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/models
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/command-r7b
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere/command
+    - type: has-member
+      target: catalog/models/cohere/command/command-r/models/command-r7b-12-2024
+    - type: has-member
+      target: catalog/models/cohere/command/command-r/models/command-r-08-2024
+    - type: has-member
+      target: catalog/models/cohere/command/command-r/models/command-r-plus-08-2024

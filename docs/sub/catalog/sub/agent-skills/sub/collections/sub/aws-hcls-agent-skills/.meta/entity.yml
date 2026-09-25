@@ -1,0 +1,24 @@
+entity:
+  id: catalog/agent-skills/collections/aws-hcls-agent-skills
+  type: skill-collection
+  name: AWS HCLS Agent Skills
+  aliases:
+    - HCLS Agent Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/awslabs/hcls-agent-skills
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://aws.amazon.com/blogs/machine-learning/improving-hcls-ai-reasoning-with-open-source-agent-skills/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/amazon-web-services

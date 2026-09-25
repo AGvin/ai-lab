@@ -1,0 +1,31 @@
+entity:
+  id: catalog/software/agents/local/google-antigravity
+  type: software
+  name: Google Antigravity
+  aliases:
+    - Antigravity 2.0
+  identity_note: Current standalone Google Antigravity 2.0 agent application and CLI product identity; keep the separately shipped Antigravity IDE distinct when discussing product surfaces.
+  references:
+    - type: official-site
+      source:
+        url: https://antigravity.google/product/antigravity-2
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://antigravity.google/docs/getting-started/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://antigravity.google/changelog
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google

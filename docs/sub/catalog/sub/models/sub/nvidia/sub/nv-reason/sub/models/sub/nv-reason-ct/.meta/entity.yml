@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/nvidia/nv-reason/models/nv-reason-ct
+  type: model
+  name: NV-Reason-CT
+  references:
+    - type: model-card
+      source:
+        url: https://huggingface.co/nvidia/NV-Reason-CT
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/nvidia/nv-reason

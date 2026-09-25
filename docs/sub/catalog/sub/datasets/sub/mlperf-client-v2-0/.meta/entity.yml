@@ -1,0 +1,22 @@
+entity:
+  id: catalog/datasets/mlperf-client-v2-0
+  type: dataset
+  name: MLPerf Client v2.0
+  references:
+    - type: product-page
+      source:
+        url: https://mlcommons.org/benchmarks/client/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mlcommons.org/2026/08/mlperf-client-v2-0/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mlcommons

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/hardware/intel-gaudi-3
+  type: hardware-product
+  name: Intel Gaudi 3 AI Accelerator
+  aliases:
+    - Intel Gaudi 3
+    - Gaudi 3
+  references:
+    - type: product-page
+      source:
+        url: https://www.intel.com/content/www/us/en/products/details/processors/ai-accelerators/gaudi.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.intel.com/content/www/us/en/content-details/817488/intel-gaudi-3-ai-accelerator-hl-338-pcie-add-in-card-product-brief.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/intel

@@ -1,0 +1,29 @@
+entity:
+  id: catalog/services/infrastructure/e2b
+  type: service
+  name: E2B
+  references:
+    - type: official-site
+      source:
+        url: https://e2b.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://e2b.dev/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/e2b-dev/E2B
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/e/e2b

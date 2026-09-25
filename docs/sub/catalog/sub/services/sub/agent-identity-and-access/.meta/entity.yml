@@ -1,0 +1,4 @@
+entity:
+  id: catalog/services/agent-identity-and-access
+  type: catalog-index
+  name: Agent Identity and Access

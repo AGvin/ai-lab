@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/xai/grok/models/grok-voice-transcribe-2-0
+  type: model
+  name: Grok Voice Transcribe 2.0
+  references:
+    - type: documentation
+      source:
+        url: https://docs.x.ai/developers/models/speech-to-text
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.x.ai/developers/release-notes
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/xai/grok

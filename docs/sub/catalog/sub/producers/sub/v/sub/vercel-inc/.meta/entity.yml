@@ -29,3 +29,5 @@ entity:
       target: catalog/software/application-frameworks/application-development/vercel-ai-sdk
     - type: produces
       target: catalog/services/gateways/model-gateways/vercel-ai-gateway
+    - type: produces
+      target: catalog/services/agent-integration-platforms/vercel-connect

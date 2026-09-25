@@ -14,7 +14,6 @@ entity:
       source:
         url: https://github.com/NVIDIA
       purposes:
-        - identification
         - research
       authority: official
   relations:
@@ -23,8 +22,46 @@ entity:
     - type: produces
       target: catalog/agent-skills/collections/nvidia-skills
     - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/garak
+    - type: produces
       target: catalog/software/inference-runtimes/distributed-serving/nvidia-dynamo
     - type: produces
       target: catalog/software/inference-runtimes/inference-engines/tensorrt-llm
     - type: produces
       target: catalog/software/inference-runtimes/distributed-serving/llm-d
+    - type: produces
+      target: catalog/software/gateways/model-gateways/nvidia-pair
+    - type: produces
+      target: catalog/hardware/nvidia-h100
+    - type: produces
+      target: catalog/hardware/nvidia-b200
+    - type: produces
+      target: catalog/hardware/nvidia-b300
+    - type: produces
+      target: catalog/hardware/nvidia-rubin
+    - type: produces
+      target: catalog/hardware/nvidia-vera-cpu
+    - type: produces
+      target: catalog/hardware/nvidia-groq-3-lpu
+    - type: produces
+      target: catalog/services/infrastructure/nvidia-brev
+    - type: produces
+      target: catalog/software/physical-ai-and-robotics/nvidia-isaac-sim
+    - type: produces
+      target: catalog/software/physical-ai-and-robotics/nvidia-isaac-lab
+    - type: produces
+      target: catalog/software/physical-ai-and-robotics/nvidia-isaac-ros
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/nvidia-nemo-rl
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/nvidia-model-optimizer
+    - type: produces
+      target: catalog/services/data-generation-and-curation/gretel-platform
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/nvidia-aiperf
+    - type: produces
+      target: catalog/models/nvidia/nv-reason
+    - type: produces
+      target: catalog/datasets/swe-serve
+    - type: produces
+      target: catalog/software/agents/local/nemoclaw

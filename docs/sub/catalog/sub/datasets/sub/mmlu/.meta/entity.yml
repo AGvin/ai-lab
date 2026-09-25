@@ -1,0 +1,21 @@
+entity:
+  id: catalog/datasets/mmlu
+  type: dataset
+  name: MMLU
+  aliases:
+    - Massive Multitask Language Understanding
+  references:
+    - type: repository
+      source:
+        url: https://github.com/hendrycks/test
+      purposes:
+        - identification
+        - research
+      authority: upstream
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2009.03300
+      purposes:
+        - identification
+        - research
+      authority: upstream

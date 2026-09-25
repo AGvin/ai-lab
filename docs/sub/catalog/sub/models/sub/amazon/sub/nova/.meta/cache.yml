@@ -1,0 +1,85 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d85560f5cefad9eb2cad7c196902c68f272bcc28
+    parent:
+      entity.yml: gitblob:4cc512519979940732f58f66b37edbac0203dbd0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/amazon/nova
+        type: model-family
+        name: Amazon Nova
+        references:
+        - type: product-page
+          source:
+            url: https://aws.amazon.com/nova/models/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-amazon.html
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/amazon-web-services
+        - type: has-member
+          target: catalog/models/amazon/nova/nova-2
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

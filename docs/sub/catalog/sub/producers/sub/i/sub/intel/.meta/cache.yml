@@ -1,0 +1,77 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bb60d61e8e50b7b37c5103d7b9f8e56f104fee20
+    parent:
+      entity.yml: gitblob:076b92eff3cc890acf27aaad5283d321c9fe49b0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/i/intel
+        type: organization
+        name: Intel
+        references:
+        - type: official-site
+          source:
+            url: https://www.intel.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/hardware/intel-gaudi-3
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

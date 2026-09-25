@@ -38,3 +38,5 @@ entity:
   relations:
     - type: produces
       target: catalog/services/development/agents/devin
+    - type: produces
+      target: catalog/software/agents/hybrid/devin-desktop

@@ -1,0 +1,23 @@
+entity:
+  id: catalog/software/inference-runtimes/distributed-serving/seldon-core-2
+  type: software
+  name: Seldon Core 2
+  aliases:
+    - Seldon Core v2
+  references:
+    - type: repository
+      source:
+        url: https://github.com/SeldonIO/seldon-core
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.seldon.io/solutions/core/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/seldon

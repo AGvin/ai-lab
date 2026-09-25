@@ -21,3 +21,17 @@ entity:
       target: catalog/producers/x/xai
     - type: has-member
       target: catalog/models/xai/grok/models/grok-4-6
+    - type: has-member
+      target: catalog/models/xai/grok/models/grok-4-7
+    - type: has-member
+      target: catalog/models/xai/grok/models/grok-voice-transcribe-2-0
+    - type: has-member
+      target: catalog/models/xai/grok/models/grok-build-0-1
+    - type: has-member
+      target: catalog/models/xai/grok/models/grok-imagine-image-2-0
+    - type: has-member
+      target: catalog/models/xai/grok/models/grok-imagine-video-1-5
+    - type: has-member
+      target: catalog/models/xai/grok/models/grok-voice-think-fast-2-0
+    - type: has-member
+      target: catalog/models/xai/grok/models/grok-4-20

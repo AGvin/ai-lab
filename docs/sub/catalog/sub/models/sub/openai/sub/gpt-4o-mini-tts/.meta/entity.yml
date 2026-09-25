@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/openai/gpt-4o-mini-tts
+  type: model
+  name: GPT-4o Mini TTS
+  aliases:
+    - gpt-4o-mini-tts
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-4o-mini-tts
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/text-to-speech
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

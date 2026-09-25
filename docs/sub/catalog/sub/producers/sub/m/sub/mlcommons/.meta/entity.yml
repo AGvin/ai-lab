@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/m/mlcommons
+  type: organization
+  name: MLCommons
+  references:
+    - type: official-site
+      source:
+        url: https://mlcommons.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/datasets/mlperf-edge-agentic-inference
+    - type: produces
+      target: catalog/datasets/mlperf-end-to-end-rag-inference
+    - type: produces
+      target: catalog/datasets/mlperf-client-v2-0
+    - type: produces
+      target: catalog/datasets/mlperf-storage-v3-0

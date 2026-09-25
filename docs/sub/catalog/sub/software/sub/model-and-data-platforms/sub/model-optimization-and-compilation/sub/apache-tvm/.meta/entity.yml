@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-optimization-and-compilation/apache-tvm
+  type: software
+  name: Apache TVM
+  references:
+    - type: documentation
+      source:
+        url: https://tvm.apache.org/docs/get_started/overview.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/apache/tvm
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/apache-software-foundation

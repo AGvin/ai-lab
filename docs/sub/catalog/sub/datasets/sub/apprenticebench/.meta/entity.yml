@@ -1,0 +1,20 @@
+entity:
+  id: catalog/datasets/apprenticebench
+  type: dataset
+  name: ApprenticeBench
+  references:
+    - type: official-site
+      source:
+        url: https://apprenticebench.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://neocognition.io/blog/apprentice-bench/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: NeoCognition documents ApprenticeBench as an end-to-end benchmark combining computer use, continual learning, and long-horizon work in a realistic accounting job setting.

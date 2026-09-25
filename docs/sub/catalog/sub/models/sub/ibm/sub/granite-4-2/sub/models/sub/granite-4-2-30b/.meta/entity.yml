@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/ibm/granite-4-2/models/granite-4-2-30b
+  type: model
+  name: Granite 4.2 30B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-4.2-30b
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/ibm/granite-4-2

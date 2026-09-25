@@ -27,3 +27,29 @@ entity:
       target: catalog/models/mistral-ai/mistral-small
     - type: produces
       target: catalog/models/mistral-ai/mistral-medium
+    - type: produces
+      target: catalog/models/mistral-ai/mistral-large
+    - type: produces
+      target: catalog/models/mistral-ai/ministral
+    - type: produces
+      target: catalog/models/mistral-ai/codestral
+    - type: produces
+      target: catalog/models/mistral-ai/mistral-embed
+    - type: produces
+      target: catalog/models/mistral-ai/mistral-moderation
+    - type: produces
+      target: catalog/models/mistral-ai/devstral
+    - type: produces
+      target: catalog/models/mistral-ai/voxtral
+    - type: produces
+      target: catalog/models/mistral-ai/mistral-ocr
+    - type: produces
+      target: catalog/models/mistral-ai/robostral
+    - type: produces
+      target: catalog/models/mistral-ai/magistral
+    - type: produces
+      target: catalog/models/mistral-ai/shieldstral
+    - type: produces
+      target: catalog/services/ai-assets/mistral-studio
+    - type: produces
+      target: catalog/software/agents/hybrid/mistral-vibe

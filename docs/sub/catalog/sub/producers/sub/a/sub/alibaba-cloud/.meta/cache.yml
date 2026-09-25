@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d08c198de5cd09d38f9d925ed3bd31ae60ab0c28
+      entity.yml: gitblob:3bdd003afb2c9f79839b292b6a50f60691a950a4
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -64,6 +64,10 @@ cache:
           target: catalog/producers/a/alibaba-group
         - type: has-part
           target: catalog/producers/q/qwen-team
+        - type: produces
+          target: catalog/agent-skills/collections/alibaba-cloud-skills
+        - type: produces
+          target: catalog/services/model-apis/alibaba-cloud-model-studio
     aliases:
       effective:
         schema: default

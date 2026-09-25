@@ -1,0 +1,23 @@
+entity:
+  id: catalog/producers/b/baidu
+  type: organization
+  name: Baidu
+  aliases:
+    - Baidu, Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://www.baidu.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://ernie.baidu.com/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/baidu/ernie

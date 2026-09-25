@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:510e9ae7fac9c45e028d5fccefd775334f8953cf
+      entity.yml: gitblob:03765d4655216e79270cfb465e98df5cd673fb5c
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -64,6 +64,8 @@ cache:
         relations:
         - type: produces
           target: catalog/software/inference-runtimes/distributed-serving/llm-d
+        - type: produces
+          target: catalog/services/infrastructure/coreweave-cloud
     aliases:
       effective:
         schema: default

@@ -26,3 +26,7 @@ entity:
       target: catalog/software/agents/hybrid/claude-code
     - type: produces
       target: catalog/services/assistant-workspaces/claude
+    - type: produces
+      target: catalog/datasets/auditbench
+    - type: produces
+      target: catalog/services/infrastructure/claude-managed-agents

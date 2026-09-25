@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/openai/gpt-image
+  type: model-family
+  name: GPT Image
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/image-generation
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai
+    - type: has-member
+      target: catalog/models/openai/gpt-image/models/gpt-image-2-5-sunburst
+    - type: has-member
+      target: catalog/models/openai/gpt-image/models/gpt-image-2-5-flare

@@ -1,0 +1,23 @@
+entity:
+  id: catalog/services/data-generation-and-curation/gretel-platform
+  type: service
+  name: Gretel Platform
+  aliases:
+    - Gretel
+  references:
+    - type: product-page
+      source:
+        url: https://gretel.ai/gretel-synthetics-faqs/what-is-gretel
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://gretel.ai/university/enterprise-grade-platform
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

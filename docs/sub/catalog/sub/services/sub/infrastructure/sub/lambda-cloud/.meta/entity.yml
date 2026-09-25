@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/infrastructure/lambda-cloud
+  type: service
+  name: Lambda Cloud
+  references:
+    - type: official-site
+      source:
+        url: https://lambda.ai/instances
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.lambda.ai/public-cloud/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/lambda-inc

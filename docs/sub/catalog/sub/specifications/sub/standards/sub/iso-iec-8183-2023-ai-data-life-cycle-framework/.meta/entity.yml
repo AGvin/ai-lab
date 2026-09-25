@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-8183-2023-ai-data-life-cycle-framework
+  name: ISO/IEC 8183:2023 — Artificial intelligence — Data life cycle framework
+  aliases:
+    - ISO/IEC 8183:2023
+    - ISO 8183
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/83002.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO identifies Edition 1 as a published International Standard from July 2023.
