@@ -17,6 +17,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/n/nvidia
