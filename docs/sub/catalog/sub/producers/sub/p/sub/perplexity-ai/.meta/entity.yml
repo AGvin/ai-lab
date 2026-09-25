@@ -1,0 +1,17 @@
+entity:
+  id: catalog/producers/p/perplexity-ai
+  type: organization
+  name: Perplexity AI
+  references:
+    - type: official-site
+      source:
+        url: https://www.perplexity.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/assistant-workspaces/perplexity
+    - type: produces
+      target: catalog/software/agents/local/perplexity-portable-computer
