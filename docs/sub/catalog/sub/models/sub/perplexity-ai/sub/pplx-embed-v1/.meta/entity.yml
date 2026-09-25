@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/perplexity-ai/pplx-embed-v1
+  type: model-family
+  name: PPLX Embed V1
+  references:
+    - type: documentation
+      source:
+        url: https://docs.perplexity.ai/docs/embeddings/quickstart
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/perplexity-ai
+    - type: has-member
+      target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-0-6b
+    - type: has-member
+      target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-4b
+    - type: has-member
+      target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-context-v1-0-6b
+    - type: has-member
+      target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-context-v1-4b
