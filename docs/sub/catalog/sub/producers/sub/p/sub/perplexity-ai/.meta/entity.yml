@@ -19,3 +19,5 @@ entity:
       target: catalog/agent-skills/registries/perplexity-skills-marketplace
     - type: produces
       target: catalog/models/perplexity-ai/pplx-27b
+    - type: produces
+      target: catalog/datasets/q2d-web
