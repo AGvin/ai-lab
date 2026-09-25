@@ -54,3 +54,13 @@ entity:
       target: catalog/producers/p/promptfoo-inc
     - type: produces
       target: catalog/models/openai/gpt-image
+    - type: produces
+      target: catalog/models/openai/gpt-realtime-2-1
+    - type: produces
+      target: catalog/models/openai/gpt-realtime-2-1-mini
+    - type: produces
+      target: catalog/models/openai/gpt-realtime-translate
+    - type: produces
+      target: catalog/models/openai/gpt-transcribe
+    - type: produces
+      target: catalog/models/openai/gpt-live-transcribe
