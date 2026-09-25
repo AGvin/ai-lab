@@ -33,3 +33,5 @@ entity:
       target: catalog/models/xai/grok/models/grok-imagine-video-1-5
     - type: has-member
       target: catalog/models/xai/grok/models/grok-voice-think-fast-2-0
+    - type: has-member
+      target: catalog/models/xai/grok/models/grok-4-20
