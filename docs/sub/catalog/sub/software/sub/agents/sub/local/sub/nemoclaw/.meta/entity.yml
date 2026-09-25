@@ -1,0 +1,23 @@
+entity:
+  id: catalog/software/agents/local/nemoclaw
+  type: software
+  name: NVIDIA NemoClaw
+  aliases:
+    - NemoClaw
+  references:
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/nemoclaw/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/building-a-memory-driven-agent-with-nvidia-nemoclaw/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia
