@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-4b
+  type: model
+  name: PPLX Embed V1 4B
+  aliases:
+    - pplx-embed-v1-4b
+  references:
+    - type: documentation
+      source:
+        url: https://docs.perplexity.ai/docs/embeddings/quickstart
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/perplexity-ai/pplx-embed-v1
