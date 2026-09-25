@@ -21,3 +21,9 @@ entity:
       target: catalog/models/perplexity-ai/pplx-27b
     - type: produces
       target: catalog/datasets/q2d-web
+    - type: produces
+      target: catalog/services/gateways/perplexity-agent-api
+    - type: produces
+      target: catalog/services/web-data/perplexity-search-api
+    - type: produces
+      target: catalog/services/model-apis/perplexity-embeddings-api
