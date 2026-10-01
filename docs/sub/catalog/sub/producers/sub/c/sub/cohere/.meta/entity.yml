@@ -33,3 +33,7 @@ entity:
       target: catalog/models/cohere/rerank
     - type: has-part
       target: catalog/producers/c/cohere-labs
+    - type: produces
+      target: catalog/services/assistant-workspaces/cohere-north
+    - type: produces
+      target: catalog/services/infrastructure/cohere-model-vault
