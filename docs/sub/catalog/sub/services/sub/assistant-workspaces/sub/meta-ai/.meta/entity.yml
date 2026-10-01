@@ -1,0 +1,29 @@
+entity:
+  id: catalog/services/assistant-workspaces/meta-ai
+  type: service
+  name: Meta AI
+  references:
+    - type: article
+      source:
+        url: https://about.fb.com/news/2025/04/introducing-meta-ai-app-new-way-access-ai-assistant/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.meta.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/meta
