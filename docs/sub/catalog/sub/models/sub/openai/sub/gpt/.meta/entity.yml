@@ -21,3 +21,5 @@ entity:
       target: catalog/models/openai/gpt/models/gpt-6-sol
     - type: has-member
       target: catalog/models/openai/gpt/models/gpt-6-luna
+    - type: has-member
+      target: catalog/models/openai/gpt/models/gpt-6-1-sol
