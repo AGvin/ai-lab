@@ -1,0 +1,30 @@
+entity:
+  id: catalog/services/assistant-workspaces/microsoft-copilot
+  type: service
+  name: Microsoft Copilot
+  aliases:
+    - Copilot
+  references:
+    - type: documentation
+      source:
+        url: https://support.microsoft.com/en-us/microsoft-365-copilot/what-is-microsoft-copilot-app
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/get-copilot
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://support.microsoft.com/en-us/privacy/microsoft-copilot/overview
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft
