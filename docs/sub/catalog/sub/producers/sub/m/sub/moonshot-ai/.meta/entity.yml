@@ -26,3 +26,11 @@ entity:
   relations:
     - type: produces
       target: catalog/models/moonshot-ai/kimi
+    - type: produces
+      target: catalog/services/assistant-workspaces/kimi
+    - type: produces
+      target: catalog/services/assistant-workspaces/kimi-claw
+    - type: produces
+      target: catalog/software/agents/local/kimi-work
+    - type: produces
+      target: catalog/software/agents/local/kimi-code
