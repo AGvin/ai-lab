@@ -41,3 +41,5 @@ entity:
       target: catalog/services/assistant-workspaces/grok-bot
     - type: produces
       target: catalog/software/agents/hybrid/grok-build
+    - type: produces
+      target: catalog/services/data-infrastructure/vector-search/spacexai-collections
