@@ -21,14 +21,64 @@ entity:
     - type: produces
       target: catalog/models/openai/gpt
     - type: produces
+      target: catalog/models/openai/gpt-live
+    - type: produces
+      target: catalog/models/openai/gpt-rosalind
+    - type: produces
       target: catalog/models/openai/whisper
     - type: produces
       target: catalog/agent-skills/collections/openai-skills
     - type: produces
       target: catalog/services/assistant-workspaces/chatgpt
     - type: produces
+      target: catalog/services/infrastructure/openai-agents-api
+    - type: produces
       target: catalog/software/agents/hybrid/openai-codex
     - type: produces
       target: catalog/software/agent-frameworks/openai-agents-sdk
+    - type: produces
+      target: catalog/specifications/formats/openai-harmony
+    - type: produces
+      target: catalog/datasets/humaneval
+    - type: produces
+      target: catalog/datasets/browsecomp
+    - type: produces
+      target: catalog/datasets/genebench-pro
+    - type: produces
+      target: catalog/datasets/lifescibench
+    - type: produces
+      target: catalog/datasets/frontierscience
+    - type: produces
+      target: catalog/hardware/openai-jalapeno
     - type: has-part
       target: catalog/producers/p/promptfoo-inc
+    - type: produces
+      target: catalog/models/openai/gpt-image
+    - type: produces
+      target: catalog/models/openai/gpt-realtime-2-1
+    - type: produces
+      target: catalog/models/openai/gpt-realtime-2-1-mini
+    - type: produces
+      target: catalog/models/openai/gpt-realtime-translate
+    - type: produces
+      target: catalog/models/openai/gpt-transcribe
+    - type: produces
+      target: catalog/models/openai/gpt-live-transcribe
+    - type: produces
+      target: catalog/models/openai/gpt-realtime-1-5
+    - type: produces
+      target: catalog/models/openai/gpt-audio-1-5
+    - type: produces
+      target: catalog/models/openai/gpt-realtime-whisper
+    - type: produces
+      target: catalog/models/openai/gpt-4o-mini-tts
+    - type: produces
+      target: catalog/models/openai/gpt-oss
+    - type: produces
+      target: catalog/models/openai/text-embedding
+    - type: produces
+      target: catalog/models/openai/omni-moderation
+    - type: produces
+      target: catalog/models/openai/tts-1
+    - type: produces
+      target: catalog/models/openai/tts-1-hd

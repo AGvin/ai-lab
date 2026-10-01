@@ -1,0 +1,21 @@
+entity:
+  id: catalog/datasets/alphagenome-atlas
+  type: dataset
+  name: AlphaGenome Atlas
+  references:
+    - type: article
+      source:
+        url: https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://deepmind.google/science/alphagenome/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google-deepmind

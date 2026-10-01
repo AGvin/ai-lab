@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/infrastructure/fluidstack
+  type: service
+  name: Fluidstack
+  references:
+    - type: official-site
+      source:
+        url: https://fluidstack.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.fluidstack.io/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/f/fluidstack-ltd

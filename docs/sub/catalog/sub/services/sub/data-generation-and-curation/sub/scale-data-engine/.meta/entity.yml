@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/data-generation-and-curation/scale-data-engine
+  type: service
+  name: Scale Data Engine
+  references:
+    - type: official-site
+      source:
+        url: https://scale.com/data-engine
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://scale.com/generative-ai-data-engine
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/scale-ai

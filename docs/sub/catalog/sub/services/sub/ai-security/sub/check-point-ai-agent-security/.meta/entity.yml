@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/ai-security/check-point-ai-agent-security
+  type: service
+  name: Check Point AI Agent Security
+  references:
+    - type: official-site
+      source:
+        url: https://www.checkpoint.com/ai-security/ai-agent-security/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.lakera.ai/guard
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/check-point

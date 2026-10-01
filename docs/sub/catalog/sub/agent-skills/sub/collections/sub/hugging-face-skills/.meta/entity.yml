@@ -1,0 +1,22 @@
+entity:
+  id: catalog/agent-skills/collections/hugging-face-skills
+  type: skill-collection
+  name: Hugging Face Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/huggingface/skills
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents/
+      purposes:
+        - research
+      authority: independent
+      note: AWS first-party implementation article documenting six Hugging Face Skills used for production SageMaker deployment workflows at a pinned Hugging Face Skills revision.
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/hugging-face-inc

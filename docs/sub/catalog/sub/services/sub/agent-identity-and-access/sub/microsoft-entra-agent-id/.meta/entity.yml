@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/agent-identity-and-access/microsoft-entra-agent-id
+  type: service
+  name: Microsoft Entra Agent ID
+  references:
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/entra/agent-id/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/entra/agent-id/what-is-microsoft-entra-agent-id
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

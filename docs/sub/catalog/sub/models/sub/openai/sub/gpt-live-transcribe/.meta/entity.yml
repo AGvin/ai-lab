@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/openai/gpt-live-transcribe
+  type: model
+  name: GPT-Live-Transcribe
+  aliases:
+    - gpt-live-transcribe
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-live-transcribe
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/realtime-transcription
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

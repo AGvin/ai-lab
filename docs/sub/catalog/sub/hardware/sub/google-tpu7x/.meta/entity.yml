@@ -1,0 +1,22 @@
+entity:
+  id: catalog/hardware/google-tpu7x
+  type: hardware-product
+  name: Google TPU7x
+  identity_note: Google Cloud documents TPU7x as the first Cloud TPU release in the Ironwood family and Google's seventh-generation TPU.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cloud.google.com/tpu/docs/tpu7x
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cloud.google.com/tpu/docs
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google

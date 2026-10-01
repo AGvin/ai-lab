@@ -1,0 +1,86 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:473d78bb50dd83012414880ba144437733a2879f
+    parent:
+      entity.yml: gitblob:b36ca5bdc58da8f3782c6a5822573937ea2cd7d2
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/o/openobserve-inc
+        type: organization
+        name: OpenObserve Inc.
+        references:
+        - type: official-site
+          source:
+            url: https://openobserve.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://openobserve.ai/legal/terms-of-service/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current first-party terms identify OpenObserve Inc. as the contracting
+            company.
+        relations:
+        - type: produces
+          target: catalog/software/evaluation-and-observability/observability-platforms/openobserve
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

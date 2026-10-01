@@ -1,0 +1,85 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:2b01c3ea1b7b846a3b6adc0a6d387079c0613b32
+    parent:
+      entity.yml: gitblob:3c83ec49e27a46057a193a15ead8dfdbcd776668
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/mistral-ai/mistral-ocr/models/mistral-ocr-4-1
+        type: model
+        name: Mistral OCR 4.1
+        references:
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/ocr-4-1
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://docs.mistral.ai/resources/changelogs
+          purposes:
+          - research
+          authority: official
+          note: Mistral released OCR 4.1 on 2026-07-16 and marked it Generally Available
+            on 2026-08-31.
+        relations:
+        - type: member-of
+          target: catalog/models/mistral-ai/mistral-ocr
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

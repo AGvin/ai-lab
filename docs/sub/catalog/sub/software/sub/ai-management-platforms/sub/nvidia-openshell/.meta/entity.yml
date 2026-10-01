@@ -1,0 +1,24 @@
+entity:
+  id: catalog/software/ai-management-platforms/nvidia-openshell
+  type: software
+  name: NVIDIA OpenShell
+  aliases:
+    - OpenShell
+  references:
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA/OpenShell
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/services/infrastructure/cloudflare-agents
+  type: service
+  name: Cloudflare Agents
+  aliases:
+    - Agents on Cloudflare
+    - Cloudflare Agents SDK runtime
+  references:
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/agents/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/agents/platform/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cloudflare

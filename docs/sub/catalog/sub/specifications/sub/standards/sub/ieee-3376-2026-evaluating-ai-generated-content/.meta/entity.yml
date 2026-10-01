@@ -1,0 +1,14 @@
+entity:
+  id: catalog/specifications/standards/ieee-3376-2026-evaluating-ai-generated-content
+  name: IEEE 3376-2026 — Evaluating Artificial Intelligence Generated Content
+  aliases:
+    - IEEE 3376-2026
+  references:
+    - type: specification
+      source:
+        url: https://standards.ieee.org/ieee/3376/11303/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: IEEE SA marks IEEE 3376-2026 as an Active Standard approved 2026-09-25.

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/garak
+  type: software
+  name: garak
+  aliases:
+    - "Generative AI Red-teaming & Assessment Kit"
+  references:
+    - type: documentation
+      source:
+        url: https://docs.garak.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA/garak
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

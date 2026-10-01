@@ -1,0 +1,21 @@
+entity:
+  id: catalog/agent-skills/collections/perplexity-api-platform-skills
+  type: skill-collection
+  name: Perplexity API Platform Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/perplexityai/api-platform-developers
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.perplexity.ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/perplexity-ai

@@ -1,0 +1,28 @@
+entity:
+  id: catalog/services/agent-identity-and-access/workos-agent-auth
+  type: service
+  name: WorkOS Agent Auth
+  references:
+    - type: documentation
+      source:
+        url: https://workos.com/docs/authkit/agent-blueprints
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://workos.com/docs/authkit/agent-registration
+      purposes:
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://workos.com/changelog/agent-auth
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/w/workos

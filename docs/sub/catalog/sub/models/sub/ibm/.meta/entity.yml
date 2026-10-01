@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/ibm
+  type: model-producer-view
+  name: IBM Granite models
+  references:
+    - type: official-site
+      source:
+        url: https://www.ibm.com/granite
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/hardware/d-matrix-corsair
+  type: hardware-product
+  name: d-Matrix Corsair
+  aliases:
+    - Corsair
+  references:
+    - type: official-site
+      source:
+        url: https://www.d-matrix.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://www.d-matrix.ai/announcements/d-matrix-corsair-ai-inference-platform-enters-full-production-to-meet-customer-demand/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/d-matrix

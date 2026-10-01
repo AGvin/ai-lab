@@ -1,0 +1,24 @@
+entity:
+  id: catalog/software/model-and-data-platforms/dataset-curation/mostly-ai-data-intelligence-platform
+  type: software
+  name: MOSTLY AI Data Intelligence Platform
+  aliases:
+    - MOSTLY AI Platform
+    - MOSTLY AI, powered by Syntho
+  references:
+    - type: product-page
+      source:
+        url: https://mostly.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://mostly.ai/docs
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/syntho

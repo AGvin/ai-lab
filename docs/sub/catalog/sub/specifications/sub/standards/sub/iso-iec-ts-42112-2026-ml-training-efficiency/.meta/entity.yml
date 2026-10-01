@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-ts-42112-2026-ml-training-efficiency
+  name: ISO/IEC TS 42112:2026 — Guidance on machine learning model training efficiency optimization
+  aliases:
+    - ISO/IEC TS 42112:2026
+    - ISO 42112
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/88246.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record identifying Edition 1 as a published Technical Specification.

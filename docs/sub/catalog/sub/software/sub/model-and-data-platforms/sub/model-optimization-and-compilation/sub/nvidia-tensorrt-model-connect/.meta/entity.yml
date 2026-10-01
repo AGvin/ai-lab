@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-optimization-and-compilation/nvidia-tensorrt-model-connect
+  type: software
+  name: NVIDIA TensorRT Model Connect
+  aliases:
+    - TensorRT Model Connect
+  references:
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA/TensorRT-Model-Connect
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/deploy-an-open-model-from-checkpoint-to-inference-in-two-commands-with-nvidia-tensorrt-model-connect/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/ai-native-by-design-lessons-learned-from-building-nvidia-tensorrt-model-connect/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/cohere/rerank
+  type: model-family
+  name: Rerank
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/v2/docs/rerank
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cohere
+    - type: has-member
+      target: catalog/models/cohere/rerank/models/rerank-v4-0-pro
+    - type: has-member
+      target: catalog/models/cohere/rerank/models/rerank-v4-0-fast

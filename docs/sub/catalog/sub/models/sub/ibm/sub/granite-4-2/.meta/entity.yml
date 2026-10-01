@@ -1,0 +1,27 @@
+entity:
+  id: catalog/models/ibm/granite-4-2
+  type: model-family
+  name: Granite 4.2
+  references:
+    - type: article
+      source:
+        url: https://huggingface.co/blog/ibm-granite/granite-4-2
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/collections/ibm-granite/granite-42-language-models
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/ibm
+    - type: has-member
+      target: catalog/models/ibm/granite-4-2/models/granite-4-2-3b
+    - type: has-member
+      target: catalog/models/ibm/granite-4-2/models/granite-4-2-8b
+    - type: has-member
+      target: catalog/models/ibm/granite-4-2/models/granite-4-2-30b

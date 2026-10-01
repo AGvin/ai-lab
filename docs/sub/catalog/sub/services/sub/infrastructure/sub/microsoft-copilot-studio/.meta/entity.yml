@@ -1,0 +1,24 @@
+entity:
+  id: catalog/services/infrastructure/microsoft-copilot-studio
+  type: service
+  name: Microsoft Copilot Studio
+  aliases:
+    - Copilot Studio
+  references:
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/microsoft-copilot-studio
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-what-is-copilot-studio
+      purposes:
+        - research
+      authority: official
+      note: Microsoft describes Copilot Studio as a SaaS/graphical low-code platform for building and managing AI agents and workflows.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

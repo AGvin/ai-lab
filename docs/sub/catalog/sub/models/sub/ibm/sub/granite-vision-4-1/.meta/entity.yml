@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/ibm/granite-vision-4-1
+  type: model-family
+  name: Granite Vision 4.1
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-vision-4.1-4b
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/ibm
+    - type: has-member
+      target: catalog/models/ibm/granite-vision-4-1/models/granite-vision-4-1-4b

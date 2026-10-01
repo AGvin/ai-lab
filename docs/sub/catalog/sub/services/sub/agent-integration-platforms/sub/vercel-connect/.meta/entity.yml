@@ -1,0 +1,22 @@
+entity:
+  id: catalog/services/agent-integration-platforms/vercel-connect
+  type: service
+  name: Vercel Connect
+  references:
+    - type: product-page
+      source:
+        url: https://vercel.com/connect
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://vercel.com/changelog/vercel-connect-secure-access-to-external-services-for-your-agents
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/vercel-inc

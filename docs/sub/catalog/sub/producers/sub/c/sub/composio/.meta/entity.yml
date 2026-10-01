@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/c/composio
+  type: organization
+  name: Composio
+  references:
+    - type: official-site
+      source:
+        url: https://composio.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.composio.dev/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/agent-integration-platforms/composio

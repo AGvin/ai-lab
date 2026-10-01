@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/ibm/granite-embedding-multilingual-r2
+  type: model-family
+  name: Granite Embedding Multilingual R2
+  references:
+    - type: documentation
+      source:
+        url: https://www.ibm.com/granite/docs/models/embedding
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-embedding-311m-multilingual-r2
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/ibm
+    - type: has-member
+      target: catalog/models/ibm/granite-embedding-multilingual-r2/models/granite-embedding-97m-multilingual-r2
+    - type: has-member
+      target: catalog/models/ibm/granite-embedding-multilingual-r2/models/granite-embedding-311m-multilingual-r2

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/datasets/mlperf-storage-v3-0
+  type: dataset
+  name: MLPerf Storage v3.0
+  references:
+    - type: article
+      source:
+        url: https://mlcommons.org/2026/09/mlperf-storage-v3-0-results/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://mlcommons.org/benchmarks/storage/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mlcommons

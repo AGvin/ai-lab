@@ -30,3 +30,7 @@ entity:
       target: catalog/models/alibaba/qwen/qwen3
     - type: produces
       target: catalog/models/alibaba/qwen/qwen3-8
+    - type: produces
+      target: catalog/services/assistant-workspaces/qwen-studio
+    - type: produces
+      target: catalog/software/agents/local/qwen-code

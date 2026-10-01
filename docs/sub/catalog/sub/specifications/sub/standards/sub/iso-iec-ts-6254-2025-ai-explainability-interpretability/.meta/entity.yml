@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-ts-6254-2025-ai-explainability-interpretability
+  name: ISO/IEC TS 6254:2025 — Objectives and approaches for explainability and interpretability of ML models and AI systems
+  aliases:
+    - ISO/IEC TS 6254:2025
+    - ISO 6254
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/82148.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO identifies Edition 1 as a published Technical Specification from September 2025.

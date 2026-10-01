@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/technology-innovation-institute/falcon/models/falcon-perception-600m
+  type: model
+  name: Falcon Perception 600M
+  references:
+    - type: article
+      source:
+        url: https://www.tii.ae/news/tii-launches-falcon-perception-new-multimodal-ai-model-helps-machines-see-and-understand-world
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/technology-innovation-institute/falcon

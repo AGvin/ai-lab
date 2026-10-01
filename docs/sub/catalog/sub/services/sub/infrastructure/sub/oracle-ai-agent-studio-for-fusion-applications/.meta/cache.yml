@@ -1,0 +1,88 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b8209b102fc6eeb996e14a7d69d058fb3849cec2
+    parent:
+      entity.yml: gitblob:52e5d82689f73b1741dc3a66f6cae32c9e404c33
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/infrastructure/oracle-ai-agent-studio-for-fusion-applications
+        type: service
+        name: Oracle AI Agent Studio for Fusion Applications
+        aliases:
+        - Oracle AI Agent Studio
+        references:
+        - type: documentation
+          source:
+            url: https://docs.oracle.com/en/cloud/saas/readiness/common/25c/common25c/25C-common-wn-f38824.htm
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Oracle documents AI Agent Studio as the integrated design-time environment
+            for creating, validating, and deploying agents and multi-agent workflows
+            in Fusion Applications.
+        - type: article
+          source:
+            url: https://www.oracle.com/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/o/oracle
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

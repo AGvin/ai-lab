@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/mistral-ai/shieldstral
+  type: model-family
+  name: Shieldstral
+  references:
+    - type: release-notes
+      source:
+        url: https://mistral.ai/news/shieldstral-1
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai/Shieldstral-1-3B
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai
+    - type: has-member
+      target: catalog/models/mistral-ai/shieldstral/models/shieldstral-1-3b

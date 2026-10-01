@@ -1,0 +1,28 @@
+entity:
+  id: catalog/models/mistral-ai/voxtral
+  type: model-family
+  name: Voxtral
+  references:
+    - type: release-notes
+      source:
+        url: https://mistral.ai/news/voxtral-transcribe-2/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mistral.ai/news/
+      purposes:
+        - research
+      authority: official
+      note: Mistral's current news index records the 2026-03-23 Voxtral TTS release as a distinct speech-generation model in the Voxtral line.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai
+    - type: has-member
+      target: catalog/models/mistral-ai/voxtral/models/voxtral-mini-transcribe-v2
+    - type: has-member
+      target: catalog/models/mistral-ai/voxtral/models/voxtral-mini-4b-realtime-2602
+    - type: has-member
+      target: catalog/models/mistral-ai/voxtral/models/voxtral-4b-tts-2603

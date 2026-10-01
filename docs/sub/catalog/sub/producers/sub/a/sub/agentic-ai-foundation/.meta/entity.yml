@@ -22,3 +22,5 @@ entity:
   relations:
     - type: maintains
       target: catalog/software/agents/local/goose
+    - type: maintains
+      target: catalog/software/gateways/model-gateways/agentgateway

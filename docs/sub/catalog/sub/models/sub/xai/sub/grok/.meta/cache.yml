@@ -1,0 +1,85 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:ad6d3ff9aa736d0c590fd8ba31c34580ef9e1c8b
+    parent:
+      entity.yml: gitblob:453352dbd2ac029811d0d472a50ca8a71a80d7ac
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/xai/grok
+        type: model-family
+        name: Grok
+        references:
+        - type: documentation
+          source:
+            url: https://docs.x.ai/grok/overview
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://x.ai/news/grok-4-6
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/x/xai
+        - type: has-member
+          target: catalog/models/xai/grok/models/grok-4-6
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

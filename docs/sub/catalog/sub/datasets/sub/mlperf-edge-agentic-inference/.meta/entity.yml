@@ -1,0 +1,28 @@
+entity:
+  id: catalog/datasets/mlperf-edge-agentic-inference
+  type: dataset
+  name: MLPerf Edge Agentic Inference
+  references:
+    - type: article
+      source:
+        url: https://mlcommons.org/2026/07/mlperf-inference-v61-edge-agentic/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mlcommons.org/2026/09/mlperf-inference-v6-1-results/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mlcommons.org/inference/index_gh/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mlcommons

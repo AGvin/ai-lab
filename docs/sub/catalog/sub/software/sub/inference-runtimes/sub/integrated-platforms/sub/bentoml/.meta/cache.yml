@@ -1,0 +1,84 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:7981cc59a93e22ecaedede9b9701f4e5c94db950
+    parent:
+      entity.yml: gitblob:0ef9bd1b1008623086461a66341cb136fac18f1e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/inference-runtimes/integrated-platforms/bentoml
+        type: software
+        name: BentoML
+        references:
+        - type: documentation
+          source:
+            url: https://docs.bentoml.com/en/latest/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/bentoml/BentoML
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/b/bentoml
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

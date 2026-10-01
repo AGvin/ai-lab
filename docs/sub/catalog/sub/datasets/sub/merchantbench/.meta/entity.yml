@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/merchantbench
+  type: dataset
+  name: MerchantBench
+  references:
+    - type: repository
+      source:
+        url: https://github.com/KhanCold/merchantbench
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2607.28956
+      purposes:
+        - identification
+        - research
+      authority: upstream

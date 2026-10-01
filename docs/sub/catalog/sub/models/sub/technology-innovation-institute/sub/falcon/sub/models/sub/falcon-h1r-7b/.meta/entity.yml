@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/technology-innovation-institute/falcon/models/falcon-h1r-7b
+  type: model
+  name: Falcon H1R 7B
+  references:
+    - type: article
+      source:
+        url: https://www.tii.ae/news/tii-launches-falcon-reasoning-best-7b-ai-model-globally-also-outperforms-larger-models.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://falconllm.tii.ae/falcon-models.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/technology-innovation-institute/falcon

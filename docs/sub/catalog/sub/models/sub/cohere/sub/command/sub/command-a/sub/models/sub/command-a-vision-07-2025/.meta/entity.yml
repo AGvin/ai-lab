@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/cohere/command/command-a/models/command-a-vision-07-2025
+  type: model
+  name: Command A Vision
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/v1/docs/command-a-vision
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.cohere.com/v1/changelog/2025-07-31-command-a-vision
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere/command/command-a

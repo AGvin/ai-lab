@@ -1,0 +1,23 @@
+entity:
+  id: catalog/hardware/tenstorrent-galaxy-blackhole
+  type: hardware-product
+  name: Tenstorrent Galaxy Blackhole
+  aliases:
+    - Galaxy Blackhole
+  references:
+    - type: release-notes
+      source:
+        url: https://tenstorrent.com/newsroom/tenstorrent-enables-ai-at-scale-with-industry-leading-performance
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://tenstorrent.com/newsroom/tt-deploy
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/tenstorrent

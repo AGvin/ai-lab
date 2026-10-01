@@ -1,0 +1,28 @@
+entity:
+  id: catalog/specifications/formats/openai-harmony
+  type: format
+  name: OpenAI Harmony
+  references:
+    - type: specification
+      source:
+        url: https://cookbook.openai.com/articles/openai-harmony
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/openai/harmony
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://deploymentsafety.openai.com/gpt-oss/a2
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

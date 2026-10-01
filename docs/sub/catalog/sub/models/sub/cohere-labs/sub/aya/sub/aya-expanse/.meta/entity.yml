@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/cohere-labs/aya/aya-expanse
+  type: model-series
+  name: Aya Expanse
+  references:
+    - type: official-site
+      source:
+        url: https://cohere.com/research/aya
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/collections/CohereLabs/cohere-labs-aya-expanse
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere-labs/aya
+    - type: has-member
+      target: catalog/models/cohere-labs/aya/aya-expanse/models/aya-expanse-8b
+    - type: has-member
+      target: catalog/models/cohere-labs/aya/aya-expanse/models/aya-expanse-32b

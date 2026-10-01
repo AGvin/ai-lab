@@ -1,0 +1,17 @@
+entity:
+  id: catalog/producers/i/intel
+  type: organization
+  name: Intel
+  references:
+    - type: official-site
+      source:
+        url: https://www.intel.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/hardware/intel-gaudi-3
+    - type: produces
+      target: catalog/hardware/intel-arc-pro-b70

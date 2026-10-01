@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/d/d-matrix
+  type: organization
+  name: d-Matrix
+  references:
+    - type: official-site
+      source:
+        url: https://www.d-matrix.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/hardware/d-matrix-corsair

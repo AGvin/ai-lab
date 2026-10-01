@@ -1,0 +1,13 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-5259-2-2024-ai-data-quality-measures
+  name: ISO/IEC 5259-2:2024 — Data quality measures for analytics and machine learning
+  aliases:
+    - ISO/IEC 5259-2:2024
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/81860.html
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/openai/tts-1-hd
+  type: model
+  name: TTS-1 HD
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/tts-1-hd
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

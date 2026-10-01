@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/institute-of-foundation-models/k2-horizon/models/k2-horizon-375b-a23b
+  type: model
+  name: K2-Horizon-375B-A23B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/IFM/K2-Horizon-375B-A23B
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/institute-of-foundation-models/k2-horizon

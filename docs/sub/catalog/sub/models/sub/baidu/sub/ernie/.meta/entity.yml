@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/baidu/ernie
+  type: model-family
+  name: ERNIE
+  references:
+    - type: official-site
+      source:
+        url: https://ernie.baidu.com/blog/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/baidu
+    - type: has-member
+      target: catalog/models/baidu/ernie/models/ernie-5-0
+    - type: has-member
+      target: catalog/models/baidu/ernie/models/ernie-5-1

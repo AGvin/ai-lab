@@ -2,12 +2,12 @@
 
 ## Requirements
 
-- Identify xAI as the canonical producer organization for xAI products documented in AI Lab.
-- Keep organization identity distinct from the Grok hosted assistant service and from underlying Grok model identities.
-- Include current official xAI resources used to identify or research the organization and its documented products.
+- Identify SpaceXAI as the current canonical producer organization for the Grok/xAI product line documented in AI Lab, while preserving xAI as the historical/continuity alias after SpaceX acquired xAI in February 2026.
+- Keep organization identity distinct from the Grok hosted assistant service, Grok Bot hosted digital-worker service, and underlying Grok model identities.
+- Include current official SpaceXAI/xAI company, acquisition, and product resources used to identify or research the organization and its documented products.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 
 ## Validation
 
-- xAI is represented as a producer organization rather than as the Grok service itself.
+- SpaceXAI is represented as the current producer organization rather than as the Grok or Grok Bot service itself.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

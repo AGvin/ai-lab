@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/baidu/ernie/models/ernie-5-0
+  type: model
+  name: ERNIE 5.0
+  references:
+    - type: article
+      source:
+        url: https://ernie.baidu.com/blog/posts/ernie5.0/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/baidu/ernie

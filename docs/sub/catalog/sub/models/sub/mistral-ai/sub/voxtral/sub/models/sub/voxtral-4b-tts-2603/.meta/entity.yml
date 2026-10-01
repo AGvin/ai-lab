@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/mistral-ai/voxtral/models/voxtral-4b-tts-2603
+  type: model
+  name: Voxtral 4B TTS 2603
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai/Voxtral-4B-TTS-2603
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/voxtral

@@ -1,0 +1,30 @@
+entity:
+  id: catalog/services/ai-management-platforms/aws-agent-registry
+  type: service
+  name: AWS Agent Registry
+  references:
+    - type: release-notes
+      source:
+        url: https://aws.amazon.com/about-aws/whats-new/2026/08/aws-agent-registry-generally-available/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: AWS announced AWS Agent Registry as generally available on 2026-08-31 as a private governed catalog and discovery layer for agents, tools, skills, MCP servers, and custom resources.
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-get-started.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current documentation establishes the dedicated `agent-registry` namespace and migration away from the public-preview `bedrock-agentcore` namespace.
+    - type: article
+      source:
+        url: https://aws.amazon.com/blogs/machine-learning/manage-agents-tools-and-skills-at-scale-with-aws-agent-registry/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/amazon-web-services

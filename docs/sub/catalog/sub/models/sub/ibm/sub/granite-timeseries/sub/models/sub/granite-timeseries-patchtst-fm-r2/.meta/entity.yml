@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/ibm/granite-timeseries/models/granite-timeseries-patchtst-fm-r2
+  type: model
+  name: Granite TimeSeries PatchTST-FM R2
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-timeseries-patchtst-fm-r2
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/ibm/granite-timeseries

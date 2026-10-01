@@ -1,0 +1,24 @@
+entity:
+  id: catalog/services/data-infrastructure/vector-search/spacexai-collections
+  type: service
+  name: SpaceXAI Collections
+  aliases:
+    - xAI Collections
+    - Collections API
+  references:
+    - type: documentation
+      source:
+        url: https://docs.x.ai/developers/files/collections
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.x.ai/developers/rest-api-reference/collections
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/x/xai

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/producers/t/tensordock-com-inc
+  type: organization
+  name: TensorDock.com, Inc.
+  aliases:
+    - TensorDock
+  references:
+    - type: official-site
+      source:
+        url: https://www.tensordock.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://docs.tensordock.com/legal-information/terms-of-service-tos
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/infrastructure/tensordock

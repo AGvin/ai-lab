@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f14d60a781d6b73dfb16323d625cb3de10e593aa
+      entity.yml: gitblob:ab82ab5d3701865750cf547e7522abc742a708ad
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -70,6 +70,8 @@ cache:
         relations:
         - type: produces
           target: catalog/software/evaluation-and-observability/observability-platforms/arize-phoenix
+        - type: produces
+          target: catalog/software/evaluation-and-observability/observability-platforms/arize-ax
     aliases:
       effective:
         schema: default

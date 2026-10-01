@@ -1,0 +1,28 @@
+entity:
+  id: concepts/ai-engineering/methodologies/ml-systems/mlops
+  name: MLOps
+  aliases:
+    - Machine Learning Operations
+  references:
+    - type: documentation
+      source:
+        url: https://cloud.google.com/discover/what-is-mlops
+      purposes:
+        - identification
+        - research
+      authority: independent
+      note: Google Cloud describes MLOps as lifecycle management from development through deployment and monitoring, including experiment tracking, deployment, monitoring, and retraining.
+    - type: documentation
+      source:
+        url: https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
+      purposes:
+        - research
+      authority: independent
+      note: Google Cloud architecture guidance frames MLOps as an ML engineering culture/practice applying automation and monitoring across integration, testing, release, deployment, and infrastructure management.
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/genops04-bp02.html
+      purposes:
+        - research
+      authority: independent
+      note: AWS describes GenAIOps as a specialization of MLOps for foundation-model/generative-AI lifecycles and identifies CI/CD, prompt management, artifact versioning, model upgrades, evaluation, and monitoring as recurring concerns.

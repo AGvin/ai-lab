@@ -1,0 +1,27 @@
+entity:
+  id: catalog/models/google/gemini/models/gemini-3-8-live-extended-thinking
+  type: model
+  name: Gemini 3.8 Live Extended Thinking
+  references:
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live-extended-thinking
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/live-api/thinking
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/gemini

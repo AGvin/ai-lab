@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/s/syntho
+  type: organization
+  name: Syntho
+  references:
+    - type: official-site
+      source:
+        url: https://www.syntho.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://www.syntho.ai/syntho-acquires-mostly-ai-trademark-and-related-assets/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/dataset-curation/mostly-ai-data-intelligence-platform

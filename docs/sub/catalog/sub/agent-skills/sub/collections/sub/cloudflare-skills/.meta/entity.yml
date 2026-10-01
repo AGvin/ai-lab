@@ -1,0 +1,15 @@
+entity:
+  id: catalog/agent-skills/collections/cloudflare-skills
+  type: skill-collection
+  name: Cloudflare Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/cloudflare/skills
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cloudflare

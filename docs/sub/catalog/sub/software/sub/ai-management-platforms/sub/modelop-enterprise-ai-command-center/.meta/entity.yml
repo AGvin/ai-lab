@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/ai-management-platforms/modelop-enterprise-ai-command-center
+  type: software
+  name: ModelOp Enterprise AI Command Center
+  references:
+    - type: official-site
+      source:
+        url: https://www.modelop.com/enterprise-ai-command-center
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.modelop.com/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/modelop

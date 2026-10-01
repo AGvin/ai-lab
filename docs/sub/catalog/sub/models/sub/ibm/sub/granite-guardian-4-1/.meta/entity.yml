@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/ibm/granite-guardian-4-1
+  type: model-family
+  name: Granite Guardian 4.1
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/collections/ibm-granite/granite-guardian
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/ibm
+    - type: has-member
+      target: catalog/models/ibm/granite-guardian-4-1/models/granite-guardian-4-1-8b

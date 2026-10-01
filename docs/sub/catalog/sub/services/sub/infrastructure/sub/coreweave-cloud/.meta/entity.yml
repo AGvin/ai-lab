@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/infrastructure/coreweave-cloud
+  type: service
+  name: CoreWeave Cloud
+  references:
+    - type: official-site
+      source:
+        url: https://www.coreweave.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.coreweave.com/products/gpu-compute
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/coreweave

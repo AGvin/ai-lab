@@ -1,0 +1,23 @@
+entity:
+  id: catalog/services/assistant-workspaces/cohere-north
+  type: service
+  name: Cohere North
+  aliases:
+    - North
+  references:
+    - type: product-page
+      source:
+        url: https://cohere.com/north
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/welcome
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cohere

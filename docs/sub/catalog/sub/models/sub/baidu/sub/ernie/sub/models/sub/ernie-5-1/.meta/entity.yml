@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/baidu/ernie/models/ernie-5-1
+  type: model
+  name: ERNIE 5.1
+  references:
+    - type: article
+      source:
+        url: https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/baidu/ernie

@@ -1,0 +1,27 @@
+entity:
+  id: catalog/services/assistant-workspaces/kimi-claw
+  type: service
+  name: Kimi Claw
+  references:
+    - type: documentation
+      source:
+        url: https://www.kimi.com/en/help/agent/agent-overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.kimi.com/en/help/kimi-claw/platform-support
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.kimi.com/en/help/others/product-comparison
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/moonshot-ai

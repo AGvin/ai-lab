@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/openai/gpt-oss/models/gpt-oss-20b
+  type: model
+  name: gpt-oss-20b
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-oss-20b
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/openai/gpt-oss

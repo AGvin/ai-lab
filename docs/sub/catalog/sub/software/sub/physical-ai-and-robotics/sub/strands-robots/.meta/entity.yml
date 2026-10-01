@@ -1,0 +1,35 @@
+entity:
+  id: catalog/software/physical-ai-and-robotics/strands-robots
+  type: software
+  name: Strands Robots
+  references:
+    - type: repository
+      source:
+        url: https://github.com/strands-labs/robots
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://strands-labs.github.io/robots/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://strandsagents.com/blog/introducing-strands-labs/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-august-2026/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/amazon-web-services

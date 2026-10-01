@@ -1,0 +1,83 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:77e5ab28453d88689568d26b1bacc1f183a97340
+    parent:
+      entity.yml: gitblob:c5f3859f04fd62b977d5b71e9b9821a7359abadc
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: concepts/ai-engineering/methodologies/software-development/eval-driven-development
+        name: Eval-Driven Development
+        aliases:
+        - Evaluation-Driven Development
+        references:
+        - type: article
+          source:
+            url: https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
+          purposes:
+          - identification
+          - research
+          authority: independent
+          note: Anthropic explicitly recommends eval-driven development for agent
+            product teams and describes building evaluations before target capabilities
+            are fully achieved.
+        - type: documentation
+          source:
+            url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/preprod-hardening.html
+          purposes:
+          - research
+          authority: independent
+          note: AWS production guidance describes version-controlled evaluation suites
+            and automated quality/security gates in the generative-AI delivery lifecycle.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

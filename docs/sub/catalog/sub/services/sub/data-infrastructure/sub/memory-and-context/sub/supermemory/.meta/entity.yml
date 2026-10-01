@@ -1,0 +1,15 @@
+entity:
+  id: catalog/services/data-infrastructure/memory-and-context/supermemory
+  type: service
+  name: Supermemory
+  references:
+    - type: official-site
+      source:
+        url: https://supermemory.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/supermemory

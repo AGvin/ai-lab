@@ -1,0 +1,86 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:422031fc82c96c1804945fc815aee9dd7e8f35ea
+    parent:
+      entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/a/alphaai-technologies-inc
+        type: organization
+        name: AlphaAI Technologies Inc.
+        aliases:
+        - Tavily
+        references:
+        - type: official-site
+          source:
+            url: https://www.tavily.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: terms-of-service
+          source:
+            url: https://www.tavily.com/terms
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/services/web-data/tavily
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

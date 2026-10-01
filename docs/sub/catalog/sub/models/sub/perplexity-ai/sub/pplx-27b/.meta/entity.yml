@@ -1,0 +1,28 @@
+entity:
+  id: catalog/models/perplexity-ai/pplx-27b
+  type: model
+  name: PPLX 27B
+  references:
+    - type: research
+      source:
+        url: https://www.perplexity.ai/hub/blog/a-local-first-agent-for-private-and-cost-effective-knowledge-work
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.perplexity.ai/en-GB/hub/products/portable-computer
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.perplexity.ai/en-GB/hub/blog/introducing-portable-computer-for-local-first-ai
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/perplexity-ai

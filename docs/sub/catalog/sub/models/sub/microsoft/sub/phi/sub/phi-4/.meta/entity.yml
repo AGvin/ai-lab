@@ -14,4 +14,12 @@ entity:
     - type: member-of
       target: catalog/models/microsoft/phi
     - type: has-member
+      target: catalog/models/microsoft/phi/phi-4/models/phi-4
+    - type: has-member
       target: catalog/models/microsoft/phi/phi-4/models/phi-4-mini-instruct
+    - type: has-member
+      target: catalog/models/microsoft/phi/phi-4/models/phi-4-mini-reasoning
+    - type: has-member
+      target: catalog/models/microsoft/phi/phi-4/models/phi-4-multimodal-instruct
+    - type: has-member
+      target: catalog/models/microsoft/phi/phi-4/models/phi-4-reasoning

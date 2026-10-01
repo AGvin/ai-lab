@@ -1,0 +1,24 @@
+entity:
+  id: catalog/services/assistant-workspaces/muse
+  type: service
+  name: Muse
+  aliases:
+    - Meta Muse
+  identity_note: Meta's hosted personal AI agent product launched September 8, 2026; distinct from the Muse model family and Muse Spark models.
+  references:
+    - type: article
+      source:
+        url: https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://ai.meta.com/events/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/meta

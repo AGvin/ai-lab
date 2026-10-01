@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-23053-2022-ml-ai-system-framework
+  name: ISO/IEC 23053:2022 — Framework for AI systems using machine learning
+  aliases:
+    - ISO/IEC 23053:2022
+    - ISO 23053
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/74438.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record identifying Edition 1 as a published International Standard.

@@ -1,0 +1,30 @@
+entity:
+  id: catalog/hardware/nvidia-vera-cpu
+  type: hardware-product
+  name: NVIDIA Vera CPU
+  aliases:
+    - Vera CPU
+  references:
+    - type: official-site
+      source:
+        url: https://www.nvidia.com/en-us/data-center/vera-cpu/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://nvidianews.nvidia.com/news/nvidia-launches-vera-cpu-purpose-built-for-agentic-ai
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://blogs.nvidia.com/blog/vera-cpu-delivery/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

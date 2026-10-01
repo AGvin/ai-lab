@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-tr-42106-2026-ai-differentiated-benchmarking
+  name: ISO/IEC TR 42106:2026 — Differentiated benchmarking of AI system quality characteristics
+  aliases:
+    - ISO/IEC TR 42106:2026
+    - ISO 42106
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/86903.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record identifying Edition 1 as a published Technical Report in July 2026.

@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-ts-24971-2-2026-ml-medical-device-risk-management
+  name: ISO/TS 24971-2:2026 — ML-enabled medical device risk management guidance
+  aliases:
+    - ISO/TS 24971-2:2026
+    - ISO 24971-2
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/24971-2
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record for Edition 1, published June 2026.

@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/b/boomi
+  type: organization
+  name: Boomi
+  references:
+    - type: official-site
+      source:
+        url: https://boomi.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/ai-management-platforms/boomi-agent-control-plane

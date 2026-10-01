@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/cohere/parse/models/parse-v5-0
+  type: model
+  name: Parse 5
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/v2/docs/parse
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.cohere.com/changelog/parse
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere/parse
