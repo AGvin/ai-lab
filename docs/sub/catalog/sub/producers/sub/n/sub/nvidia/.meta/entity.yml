@@ -65,3 +65,9 @@ entity:
       target: catalog/datasets/swe-serve
     - type: produces
       target: catalog/software/agents/local/nemoclaw
+    - type: produces
+      target: catalog/software/ai-management-platforms/nvidia-openshell
+    - type: produces
+      target: catalog/software/evaluation-and-observability/observability-platforms/nvidia-nemo-relay
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/nvidia-tensorrt-model-connect
