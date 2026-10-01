@@ -15,3 +15,7 @@ entity:
       target: catalog/producers/c/cohere
     - type: has-member
       target: catalog/models/cohere/embed/models/embed-v4-0
+    - type: has-member
+      target: catalog/models/cohere/embed/models/embed-v5-0-pro
+    - type: has-member
+      target: catalog/models/cohere/embed/models/embed-v5-0-fast
