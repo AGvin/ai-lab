@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/agents/local/kimi-work
+  type: software
+  name: Kimi Work
+  references:
+    - type: documentation
+      source:
+        url: https://www.kimi.com/en/help/kimi-work/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.kimi.com/en/products/download
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.kimi.com/en/help/kimi-work/release-notes
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/moonshot-ai
