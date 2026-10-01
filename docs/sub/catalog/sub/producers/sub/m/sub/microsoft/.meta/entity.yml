@@ -58,3 +58,5 @@ entity:
       target: catalog/hardware/microsoft-maia-200
     - type: owns
       target: catalog/producers/g/github-inc
+    - type: produces
+      target: catalog/services/assistant-workspaces/microsoft-copilot
