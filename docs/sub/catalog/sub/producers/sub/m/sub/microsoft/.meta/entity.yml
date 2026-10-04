@@ -60,3 +60,5 @@ entity:
       target: catalog/producers/g/github-inc
     - type: produces
       target: catalog/services/assistant-workspaces/microsoft-copilot
+    - type: produces
+      target: catalog/services/infrastructure/microsoft-foundry-agent-service
