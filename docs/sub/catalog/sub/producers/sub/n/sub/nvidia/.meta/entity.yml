@@ -71,3 +71,5 @@ entity:
       target: catalog/software/evaluation-and-observability/observability-platforms/nvidia-nemo-relay
     - type: produces
       target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/nvidia-tensorrt-model-connect
+    - type: produces
+      target: catalog/hardware/nvidia-dgx-spark
