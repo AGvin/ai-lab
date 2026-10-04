@@ -62,3 +62,5 @@ entity:
       target: catalog/agent-skills/collections/google-skills
     - type: has-part
       target: catalog/producers/g/google-deepmind
+    - type: produces
+      target: catalog/software/development-tools/agentic-development-systems/google-cloud-data-agent-kit
