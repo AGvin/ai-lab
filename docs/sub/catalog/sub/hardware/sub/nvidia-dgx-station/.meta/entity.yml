@@ -1,0 +1,21 @@
+entity:
+  id: catalog/hardware/nvidia-dgx-station
+  type: hardware-product
+  name: NVIDIA DGX Station
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/products/workstations/dgx-station/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://nvidianews.nvidia.com/news/nvidia-announces-dgx-spark-and-dgx-station-personal-ai-computers
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia
