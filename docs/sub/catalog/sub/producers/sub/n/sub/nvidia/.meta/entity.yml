@@ -77,3 +77,5 @@ entity:
       target: catalog/software/inference-runtimes/inference-engines/nvidia-triton-inference-server
     - type: produces
       target: catalog/software/inference-runtimes/inference-engines/nvidia-nim
+    - type: produces
+      target: catalog/hardware/nvidia-dgx-station
