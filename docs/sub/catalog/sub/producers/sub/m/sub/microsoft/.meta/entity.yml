@@ -62,3 +62,5 @@ entity:
       target: catalog/services/assistant-workspaces/microsoft-copilot
     - type: produces
       target: catalog/services/infrastructure/microsoft-foundry-agent-service
+    - type: produces
+      target: catalog/services/model-apis/microsoft-foundry-models
