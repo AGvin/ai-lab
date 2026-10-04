@@ -22,3 +22,5 @@ entity:
       target: catalog/hardware/cerebras-wse-3-turbo
     - type: produces
       target: catalog/services/model-apis/cerebras-inference
+    - type: produces
+      target: catalog/hardware/cerebras-cs-4
