@@ -1,0 +1,22 @@
+entity:
+  id: catalog/services/infrastructure/vertex-ai-agent-engine
+  type: service
+  name: Vertex AI Agent Engine
+  references:
+    - type: documentation
+      source:
+        url: https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://cloud.google.com/vertex-ai/generative-ai/docs/release-notes
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google-cloud
