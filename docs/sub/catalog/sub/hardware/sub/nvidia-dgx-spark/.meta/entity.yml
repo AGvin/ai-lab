@@ -1,0 +1,22 @@
+entity:
+  id: catalog/hardware/nvidia-dgx-spark
+  type: hardware-product
+  name: NVIDIA DGX Spark
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/products/workstations/dgx-spark/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://nvidianews.nvidia.com/news/nvidia-dgx-spark-arrives-for-worlds-ai-developers
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia
