@@ -75,3 +75,5 @@ entity:
       target: catalog/hardware/nvidia-dgx-spark
     - type: produces
       target: catalog/software/inference-runtimes/inference-engines/nvidia-triton-inference-server
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/nvidia-nim
