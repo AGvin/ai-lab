@@ -30,3 +30,5 @@ entity:
       target: catalog/datasets/auditbench
     - type: produces
       target: catalog/services/infrastructure/claude-managed-agents
+    - type: produces
+      target: catalog/software/agent-frameworks/claude-agent-sdk
