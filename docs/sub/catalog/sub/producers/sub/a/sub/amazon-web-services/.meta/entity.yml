@@ -43,3 +43,5 @@ entity:
       target: catalog/services/infrastructure/aws-mcp-server
     - type: produces
       target: catalog/services/assistant-workspaces/amazon-quick
+    - type: produces
+      target: catalog/services/model-apis/amazon-bedrock
