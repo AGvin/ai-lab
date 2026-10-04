@@ -73,3 +73,5 @@ entity:
       target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/nvidia-tensorrt-model-connect
     - type: produces
       target: catalog/hardware/nvidia-dgx-spark
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/nvidia-triton-inference-server
