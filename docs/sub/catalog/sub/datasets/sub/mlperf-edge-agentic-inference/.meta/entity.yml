@@ -26,3 +26,5 @@ entity:
   relations:
     - type: produced-by
       target: catalog/producers/m/mlcommons
+    - type: member-of
+      target: catalog/datasets/mlperf-inference
