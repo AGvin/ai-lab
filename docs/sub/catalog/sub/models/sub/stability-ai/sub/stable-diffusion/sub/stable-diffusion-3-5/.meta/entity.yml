@@ -1,0 +1,24 @@
+entity:
+  id: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5
+  type: model-series
+  name: Stable Diffusion 3.5
+  references:
+    - type: article
+      source:
+        url: https://stability.ai/news/introducing-stable-diffusion-3-5
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://stability.ai/core-models
+      purposes: [research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/stability-ai/stable-diffusion
+    - type: has-member
+      target: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5/models/large
+    - type: has-member
+      target: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5/models/large-turbo
+    - type: has-member
+      target: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5/models/medium
