@@ -3,6 +3,7 @@
 ## Requirements
 
 - Identify Cohere North as Cohere's ready-to-use enterprise agentic AI workspace/platform for assistants, grounded enterprise search, document creation, custom agents, workflow automation, and connected internal systems.
+- Treat the 2026-10-05 North 2 release as the current major upgrade of the same Cohere North service identity, not as a separate canonical service; preserve its redesigned agent orchestration, reusable skills/libraries/memory, app/artifact creation, automation, connector, governance, and deployment changes only while supported by current first-party material.
 - Keep this hosted/workspace product identity distinct from Cohere's `North` trained-model family; shared naming does not make the product and model family one canonical entity.
 - Preserve deployment flexibility at a stable level: current first-party material supports Cohere-managed use as well as private/on-premises or air-gapped enterprise deployment options, while exact packaging and control-plane boundaries remain freshness-sensitive.
 - Keep Compass retrieval, Command/North/Embed/Rerank/Parse/Transcribe model identities, Model Vault, Cohere Platform APIs, and third-party connectors as separate products/dependencies.
