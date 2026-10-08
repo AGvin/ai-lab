@@ -12,6 +12,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://cohere.com/blog/introducing-north-2
+      purposes:
+        - identification
+        - research
+      authority: official
     - type: documentation
       source:
         url: https://docs.cohere.com/docs/welcome
