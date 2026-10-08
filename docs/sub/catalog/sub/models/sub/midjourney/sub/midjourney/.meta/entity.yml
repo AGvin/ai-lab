@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/midjourney/midjourney
+  type: model-family
+  name: Midjourney
+  references:
+    - type: documentation
+      source:
+        url: https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/midjourney
+    - type: has-member
+      target: catalog/models/midjourney/midjourney/models/v8-2
