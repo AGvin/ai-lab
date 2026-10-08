@@ -79,3 +79,7 @@ entity:
       target: catalog/software/inference-runtimes/inference-engines/nvidia-nim
     - type: produces
       target: catalog/hardware/nvidia-dgx-station
+    - type: produces
+      target: catalog/hardware/nvidia-jetson-t5000
+    - type: produces
+      target: catalog/hardware/nvidia-jetson-t4000
