@@ -19,3 +19,9 @@ entity:
       target: catalog/datasets/mlperf-client-v2-0
     - type: produces
       target: catalog/datasets/mlperf-storage-v3-0
+    - type: produces
+      target: catalog/datasets/mlperf-inference
+    - type: produces
+      target: catalog/datasets/mlperf-training
+    - type: produces
+      target: catalog/datasets/ailuminate
