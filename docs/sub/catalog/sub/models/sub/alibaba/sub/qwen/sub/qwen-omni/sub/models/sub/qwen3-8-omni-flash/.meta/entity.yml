@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen-omni/models/qwen3-8-omni-flash
+  type: model
+  name: Qwen3.8-Omni-Flash
+  aliases:
+    - qwen3.8-omni-flash
+  references:
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/qwen3-8-omni-flash
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/newly-released-models
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen-omni
