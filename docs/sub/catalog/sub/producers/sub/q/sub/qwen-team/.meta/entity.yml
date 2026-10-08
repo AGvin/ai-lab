@@ -34,3 +34,9 @@ entity:
       target: catalog/services/assistant-workspaces/qwen-studio
     - type: produces
       target: catalog/software/agents/local/qwen-code
+    - type: produces
+      target: catalog/models/alibaba/qwen/qwen-image
+    - type: produces
+      target: catalog/models/alibaba/qwen/qwen3-vl
+    - type: produces
+      target: catalog/models/alibaba/qwen/qwen-omni
