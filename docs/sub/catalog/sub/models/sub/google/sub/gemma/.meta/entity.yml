@@ -23,3 +23,5 @@ entity:
       target: catalog/producers/g/google-deepmind
     - type: has-member
       target: catalog/models/google/gemma/gemma-4
+    - type: has-member
+      target: catalog/models/google/gemma/embeddinggemma-2
