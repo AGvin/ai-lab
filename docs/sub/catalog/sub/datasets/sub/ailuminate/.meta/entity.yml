@@ -1,0 +1,28 @@
+entity:
+  id: catalog/datasets/ailuminate
+  type: dataset
+  name: AILuminate
+  references:
+    - type: product-page
+      source:
+        url: https://mlcommons.org/benchmarks/ailuminate/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://mlcommons.org/ailuminate/safety-faq/
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mlcommons.org/2025/02/ailumiate-v1-1-fr/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mlcommons
