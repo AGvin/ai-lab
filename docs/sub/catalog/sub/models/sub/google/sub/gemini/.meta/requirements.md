@@ -13,6 +13,7 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection while preserving distinct producer and model-membership semantics.
 - Describe Gemini as a provider-hosted multimodal model family rather than a local runtime or downloadable artifact family.
 - Preserve the distinction between model identity and Gemini API / Google AI Studio access products.
+- Preserve independently published specialized Gemini model identities such as stable `gemini-nano-banana-2.1` as concrete family members rather than collapsing them into base-model dependencies or product nicknames.
 - Include official Gemini model documentation as the primary access/model reference and preserve Google DeepMind model-card provenance as source context.
 
 ## Validation
