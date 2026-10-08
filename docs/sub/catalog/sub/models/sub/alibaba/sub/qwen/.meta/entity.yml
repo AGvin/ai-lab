@@ -28,3 +28,9 @@ entity:
       target: catalog/models/alibaba/qwen/qwen3
     - type: has-member
       target: catalog/models/alibaba/qwen/qwen3-8
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen-image
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-vl
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen-omni
