@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/midjourney/midjourney/models/v8-2
+  type: model
+  name: Midjourney V8.2
+  aliases:
+    - V8.2
+  references:
+    - type: documentation
+      source:
+        url: https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/midjourney/midjourney
