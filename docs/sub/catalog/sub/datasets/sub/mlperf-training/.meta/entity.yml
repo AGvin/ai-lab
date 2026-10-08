@@ -1,0 +1,22 @@
+entity:
+  id: catalog/datasets/mlperf-training
+  type: dataset
+  name: MLPerf Training
+  references:
+    - type: product-page
+      source:
+        url: https://mlcommons.org/benchmarks/training/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mlcommons.org/2026/06/mlperf-training-v6-0-results/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mlcommons
