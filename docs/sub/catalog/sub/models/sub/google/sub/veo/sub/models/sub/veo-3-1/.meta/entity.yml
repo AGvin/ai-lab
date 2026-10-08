@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/google/veo/models/veo-3-1
+  type: model
+  name: Veo 3.1
+  aliases:
+    - veo-3.1-generate-001
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cloud.google.com/vertex-ai/docs/release-notes
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://deepmind.google/models/veo/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/veo
