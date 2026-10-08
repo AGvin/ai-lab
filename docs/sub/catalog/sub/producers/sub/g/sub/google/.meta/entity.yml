@@ -64,3 +64,5 @@ entity:
       target: catalog/producers/g/google-deepmind
     - type: produces
       target: catalog/software/development-tools/agentic-development-systems/google-cloud-data-agent-kit
+    - type: produces
+      target: catalog/models/google/veo
