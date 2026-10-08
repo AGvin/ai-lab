@@ -1,0 +1,13 @@
+entity:
+  id: catalog/producers/a/adobe
+  type: organization
+  name: Adobe
+  references:
+    - type: official-site
+      source:
+        url: https://www.adobe.com/
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/adobe/firefly
