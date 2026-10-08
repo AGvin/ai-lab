@@ -36,3 +36,5 @@ entity:
       target: catalog/models/google/alphagenome
     - type: produces
       target: catalog/datasets/alphagenome-atlas
+    - type: produces
+      target: catalog/models/google/veo
