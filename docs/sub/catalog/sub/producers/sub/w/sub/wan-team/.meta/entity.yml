@@ -1,0 +1,26 @@
+entity:
+  id: catalog/producers/w/wan-team
+  type: team
+  name: Wan Team
+  references:
+    - type: official-site
+      source:
+        url: https://wan.video/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Wan-Video
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: part-of
+      target: catalog/producers/a/alibaba-cloud
+    - type: produces
+      target: catalog/models/alibaba/wan
+    - type: produces
+      target: catalog/models/alibaba/wan/wan-3-0
