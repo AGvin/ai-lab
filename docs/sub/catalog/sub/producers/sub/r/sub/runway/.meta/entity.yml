@@ -1,0 +1,13 @@
+entity:
+  id: catalog/producers/r/runway
+  type: organization
+  name: Runway
+  references:
+    - type: official-site
+      source:
+        url: https://runwayml.com/
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/runway/gen-4-5
