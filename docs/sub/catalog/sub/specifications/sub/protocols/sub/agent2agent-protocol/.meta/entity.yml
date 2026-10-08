@@ -27,3 +27,6 @@ entity:
         - research
       authority: official
       note: Official announcement of the first stable production-ready A2A v1.0 release.
+  relations:
+    - type: maintained-by
+      target: catalog/producers/a/agentic-ai-foundation
