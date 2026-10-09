@@ -90,3 +90,5 @@ entity:
       target: catalog/datasets/mle-bench
     - type: produces
       target: catalog/datasets/healthbench
+    - type: produces
+      target: catalog/services/model-apis/openai-api-platform
