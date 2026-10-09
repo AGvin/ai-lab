@@ -66,3 +66,5 @@ entity:
       target: catalog/software/development-tools/agentic-development-systems/google-cloud-data-agent-kit
     - type: produces
       target: catalog/models/google/veo
+    - type: produces
+      target: catalog/services/model-apis/gemini-api
