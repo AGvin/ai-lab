@@ -26,3 +26,5 @@ entity:
       target: catalog/models/alibaba/wan/wan-3-0
     - type: produces
       target: catalog/agent-skills/collections/wan-agent-skills
+    - type: produces
+      target: catalog/models/alibaba/wan/wan-2-7
