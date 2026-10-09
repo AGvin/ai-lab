@@ -64,3 +64,5 @@ entity:
       target: catalog/services/infrastructure/microsoft-foundry-agent-service
     - type: produces
       target: catalog/services/model-apis/microsoft-foundry-models
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/deepspeed
