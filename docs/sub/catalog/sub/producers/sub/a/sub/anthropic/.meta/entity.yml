@@ -34,3 +34,7 @@ entity:
       target: catalog/software/agent-frameworks/claude-agent-sdk
     - type: produces
       target: catalog/services/model-apis/claude-api
+    - type: produces
+      target: catalog/datasets/biomysterybench
+    - type: produces
+      target: catalog/datasets/scone-bench
