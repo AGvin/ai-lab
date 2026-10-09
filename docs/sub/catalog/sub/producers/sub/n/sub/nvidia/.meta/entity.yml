@@ -85,3 +85,7 @@ entity:
       target: catalog/hardware/nvidia-jetson-t4000
     - type: produces
       target: catalog/software/automation/developer-automation/nvidia-aicr
+    - type: produces
+      target: catalog/hardware/nvidia-rtx-pro-6000-blackwell-workstation-edition
+    - type: produces
+      target: catalog/hardware/nvidia-jetson-orin-nano-super-developer-kit
