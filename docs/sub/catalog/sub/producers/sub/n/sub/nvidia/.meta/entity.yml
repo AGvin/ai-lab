@@ -83,3 +83,5 @@ entity:
       target: catalog/hardware/nvidia-jetson-t5000
     - type: produces
       target: catalog/hardware/nvidia-jetson-t4000
+    - type: produces
+      target: catalog/software/automation/developer-automation/nvidia-aicr
