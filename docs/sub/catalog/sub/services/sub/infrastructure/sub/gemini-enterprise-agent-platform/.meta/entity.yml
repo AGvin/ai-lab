@@ -17,6 +17,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/g/google
