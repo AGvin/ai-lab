@@ -32,3 +32,5 @@ entity:
       target: catalog/services/infrastructure/claude-managed-agents
     - type: produces
       target: catalog/software/agent-frameworks/claude-agent-sdk
+    - type: produces
+      target: catalog/services/model-apis/claude-api
