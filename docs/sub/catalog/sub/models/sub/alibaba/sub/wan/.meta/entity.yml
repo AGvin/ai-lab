@@ -28,3 +28,5 @@ entity:
       target: catalog/producers/w/wan-team
     - type: has-member
       target: catalog/models/alibaba/wan/wan-3-0
+    - type: has-member
+      target: catalog/models/alibaba/wan/wan-2-7
