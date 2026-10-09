@@ -25,3 +25,17 @@ entity:
       target: catalog/models/google/gemma/gemma-4
     - type: has-member
       target: catalog/models/google/gemma/embeddinggemma-2
+    - type: has-member
+      target: catalog/models/google/gemma/functiongemma
+    - type: has-member
+      target: catalog/models/google/gemma/translategemma
+    - type: has-member
+      target: catalog/models/google/gemma/medgemma-1-5-4b
+    - type: has-member
+      target: catalog/models/google/gemma/shieldgemma-2
+    - type: has-member
+      target: catalog/models/google/gemma/t5gemma-2
+    - type: has-member
+      target: catalog/models/google/gemma/vaultgemma
+    - type: has-member
+      target: catalog/models/google/gemma/gemma-3n
