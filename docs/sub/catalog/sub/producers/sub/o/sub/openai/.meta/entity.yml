@@ -84,3 +84,9 @@ entity:
       target: catalog/models/openai/tts-1
     - type: produces
       target: catalog/models/openai/tts-1-hd
+    - type: produces
+      target: catalog/datasets/gdpval
+    - type: produces
+      target: catalog/datasets/mle-bench
+    - type: produces
+      target: catalog/datasets/healthbench
