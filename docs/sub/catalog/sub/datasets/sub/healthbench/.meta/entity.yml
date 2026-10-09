@@ -1,0 +1,21 @@
+entity:
+  id: catalog/datasets/healthbench
+  type: dataset
+  name: HealthBench
+  references:
+    - type: paper
+      source:
+        url: https://cdn.openai.com/pdf/bd7a39d5-9e9f-47b3-903c-8b847ca650c7/healthbench_paper.pdf
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://deploymentsafety.openai.com/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai
