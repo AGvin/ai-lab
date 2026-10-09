@@ -45,3 +45,5 @@ entity:
       target: catalog/services/assistant-workspaces/amazon-quick
     - type: produces
       target: catalog/services/model-apis/amazon-bedrock
+    - type: produces
+      target: catalog/specifications/formats/dogwood
