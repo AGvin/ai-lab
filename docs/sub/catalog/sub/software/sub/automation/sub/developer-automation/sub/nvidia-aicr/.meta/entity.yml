@@ -1,0 +1,25 @@
+entity:
+  id: catalog/software/automation/developer-automation/nvidia-aicr
+  type: software
+  name: NVIDIA AI Cluster Runtime
+  aliases:
+    - NVIDIA AICR
+    - AICR
+  references:
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA/aicr
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/aicr-v1-0-open-stable-and-verifiable-gpu-cluster-configuration/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia
