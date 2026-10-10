@@ -34,3 +34,7 @@ entity:
       target: catalog/models/alibaba/qwen/qwen3-vl
     - type: has-member
       target: catalog/models/alibaba/qwen/qwen-omni
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen-audio
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-tts
