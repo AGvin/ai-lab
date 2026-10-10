@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/t/tensorflow-project
+  type: project
+  name: TensorFlow Project
+  references:
+    - type: official-site
+      source:
+        url: https://www.tensorflow.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/tensorflow/tensorflow
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/tensorflow
