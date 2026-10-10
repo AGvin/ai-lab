@@ -40,3 +40,7 @@ entity:
       target: catalog/models/alibaba/qwen/qwen3-vl
     - type: produces
       target: catalog/models/alibaba/qwen/qwen-omni
+    - type: produces
+      target: catalog/models/alibaba/qwen/qwen-audio
+    - type: produces
+      target: catalog/models/alibaba/qwen/qwen3-tts
