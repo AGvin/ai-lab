@@ -27,3 +27,5 @@ entity:
       target: catalog/models/deepseek/deepseek
     - type: produces
       target: catalog/services/assistant-workspaces/deepseek
+    - type: produces
+      target: catalog/services/model-apis/deepseek-api
