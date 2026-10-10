@@ -38,3 +38,7 @@ entity:
       target: catalog/datasets/biomysterybench
     - type: produces
       target: catalog/datasets/scone-bench
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/petri
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/bloom
