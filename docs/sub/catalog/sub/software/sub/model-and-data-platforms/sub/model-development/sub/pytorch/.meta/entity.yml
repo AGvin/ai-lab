@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-development/pytorch
+  type: software
+  name: PyTorch
+  references:
+    - type: official-site
+      source:
+        url: https://pytorch.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/pytorch/pytorch
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/pytorch-project
