@@ -66,3 +66,5 @@ entity:
       target: catalog/services/model-apis/microsoft-foundry-models
     - type: produces
       target: catalog/software/model-and-data-platforms/model-development/deepspeed
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/onnx-runtime-genai
