@@ -37,3 +37,5 @@ entity:
       target: catalog/services/assistant-workspaces/cohere-north
     - type: produces
       target: catalog/services/infrastructure/cohere-model-vault
+    - type: produces
+      target: catalog/services/model-apis/cohere-platform
