@@ -43,3 +43,5 @@ entity:
       target: catalog/software/agents/hybrid/grok-build
     - type: produces
       target: catalog/services/data-infrastructure/vector-search/spacexai-collections
+    - type: produces
+      target: catalog/services/model-apis/spacexai-api
