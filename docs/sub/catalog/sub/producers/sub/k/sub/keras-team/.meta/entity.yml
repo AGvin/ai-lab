@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/k/keras-team
+  type: team
+  name: Keras Team
+  references:
+    - type: official-site
+      source:
+        url: https://keras.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/keras-team/keras
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/keras
