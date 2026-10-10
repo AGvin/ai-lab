@@ -91,3 +91,5 @@ entity:
       target: catalog/hardware/nvidia-jetson-orin-nano-super-developer-kit
     - type: produces
       target: catalog/software/application-frameworks/application-development/nvidia-nemo-guardrails
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/megatron-lm
