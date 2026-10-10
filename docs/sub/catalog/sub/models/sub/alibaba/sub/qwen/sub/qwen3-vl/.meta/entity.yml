@@ -25,3 +25,5 @@ entity:
       target: catalog/models/alibaba/qwen/qwen3-vl/models/qwen3-vl-235b-a22b-instruct
     - type: has-member
       target: catalog/models/alibaba/qwen/qwen3-vl/models/qwen3-vl-32b-instruct
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-vl/models/qwen3-vl-embedding
