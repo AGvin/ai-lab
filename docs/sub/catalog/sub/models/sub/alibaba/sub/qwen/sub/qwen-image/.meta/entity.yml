@@ -29,3 +29,5 @@ entity:
       target: catalog/models/alibaba/qwen/qwen-image/models/qwen-image-3-0
     - type: has-member
       target: catalog/models/alibaba/qwen/qwen-image/models/qwen-image-3-0-pro
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen-image/models/qwen-image-2-1-turbo
