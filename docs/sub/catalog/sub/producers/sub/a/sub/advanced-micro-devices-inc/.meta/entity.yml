@@ -41,3 +41,5 @@ entity:
       target: catalog/software/development-tools/agentic-development-systems/amd-ross
     - type: produces
       target: catalog/hardware/amd-ryzen-ai-max-plus-395
+    - type: produces
+      target: catalog/hardware/amd-ryzen-ai-halo-developer-platform
