@@ -49,3 +49,5 @@ entity:
       target: catalog/hardware/amd-instinct-mi325x
     - type: produces
       target: catalog/hardware/amd-radeon-ai-pro-r9700
+    - type: produces
+      target: catalog/hardware/amd-instinct-mi300x
