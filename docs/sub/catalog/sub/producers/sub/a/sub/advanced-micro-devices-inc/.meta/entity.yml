@@ -43,3 +43,5 @@ entity:
       target: catalog/hardware/amd-ryzen-ai-max-plus-395
     - type: produces
       target: catalog/hardware/amd-ryzen-ai-halo-developer-platform
+    - type: produces
+      target: catalog/hardware/amd-radeon-rx-7900-xtx
