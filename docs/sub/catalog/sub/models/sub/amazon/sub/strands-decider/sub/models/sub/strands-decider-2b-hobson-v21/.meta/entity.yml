@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/amazon/strands-decider/models/strands-decider-2b-hobson-v21
+  type: model
+  name: Strands Decider 2B Hobson V21
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/strands-labs/strands-decider
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/amazon/strands-decider
