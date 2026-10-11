@@ -31,4 +31,6 @@ entity:
     - type: maintains
       target: catalog/software/development-tools/testing/a2a-inspector
     - type: maintains
+      target: catalog/software/development-tools/testing/mcp-inspector
+    - type: maintains
       target: catalog/specifications/formats/agents-md
