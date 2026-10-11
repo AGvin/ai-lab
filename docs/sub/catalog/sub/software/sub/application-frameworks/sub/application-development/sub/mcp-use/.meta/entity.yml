@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/application-frameworks/application-development/mcp-use
+  type: software
+  name: mcp-use
+  references:
+    - type: repository
+      source:
+        url: https://github.com/mcp-use/mcp-use
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mcp-use.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mcp-use
