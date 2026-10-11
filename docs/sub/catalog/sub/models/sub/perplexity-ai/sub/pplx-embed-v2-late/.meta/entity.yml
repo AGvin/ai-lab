@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/perplexity-ai/pplx-embed-v2-late
+  type: model-family
+  name: PPLX Embed V2 Late
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/collections/perplexity-ai/pplx-embed-v2
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/perplexity-ai
+    - type: has-member
+      target: catalog/models/perplexity-ai/pplx-embed-v2-late/models/pplx-embed-v2-late-0-6b
+    - type: has-member
+      target: catalog/models/perplexity-ai/pplx-embed-v2-late/models/pplx-embed-v2-late-9b
