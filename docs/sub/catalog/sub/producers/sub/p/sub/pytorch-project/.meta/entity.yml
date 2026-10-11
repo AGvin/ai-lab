@@ -21,3 +21,5 @@ entity:
       target: catalog/software/inference-runtimes/inference-engines/executorch
     - type: produces
       target: catalog/software/model-and-data-platforms/model-development/pytorch
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/torchao
