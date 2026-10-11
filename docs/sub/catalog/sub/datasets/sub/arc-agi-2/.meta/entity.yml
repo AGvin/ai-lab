@@ -1,0 +1,22 @@
+entity:
+  id: catalog/datasets/arc-agi-2
+  type: dataset
+  name: ARC-AGI-2
+  references:
+    - type: official-site
+      source:
+        url: https://arcprize.org/arc-agi/2
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/arcprize/ARC-AGI-2
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/arc-prize-foundation
