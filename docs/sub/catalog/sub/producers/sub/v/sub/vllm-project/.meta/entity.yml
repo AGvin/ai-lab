@@ -19,3 +19,5 @@ entity:
   relations:
     - type: produces
       target: catalog/software/inference-runtimes/inference-engines/vllm-omni
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/llm-compressor
