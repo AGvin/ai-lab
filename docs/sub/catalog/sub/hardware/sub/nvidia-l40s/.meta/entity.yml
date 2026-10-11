@@ -1,0 +1,24 @@
+entity:
+  id: catalog/hardware/nvidia-l40s
+  type: hardware-product
+  name: NVIDIA L40S GPU
+  aliases:
+    - NVIDIA L40S
+    - L40S
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/data-center/l40s/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.nvidia.com/en-us/data-center/graphics-cards-for-virtualization/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia
