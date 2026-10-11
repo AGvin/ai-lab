@@ -1,0 +1,21 @@
+entity:
+  id: catalog/agent-skills/collections/prisma-skills
+  type: skill-collection
+  name: Prisma Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/prisma/skills
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.prisma.io/docs
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/prisma
