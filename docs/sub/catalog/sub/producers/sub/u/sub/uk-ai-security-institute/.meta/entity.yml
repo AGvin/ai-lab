@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/u/uk-ai-security-institute
+  type: organization
+  name: UK AI Security Institute
+  references:
+    - type: official-site
+      source:
+        url: https://aisi.gov.uk/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/UKGovernmentBEIS/inspect_ai
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/inspect-ai

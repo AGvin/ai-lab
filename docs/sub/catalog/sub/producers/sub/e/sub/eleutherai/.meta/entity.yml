@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/e/eleutherai
+  type: organization
+  name: EleutherAI
+  references:
+    - type: official-site
+      source:
+        url: https://www.eleuther.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/EleutherAI/lm-evaluation-harness
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/lm-evaluation-harness
