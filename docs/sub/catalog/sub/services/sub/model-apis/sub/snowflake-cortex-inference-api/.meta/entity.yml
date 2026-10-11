@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/model-apis/snowflake-cortex-inference-api
+  type: service
+  name: Snowflake Cortex Inference API
+  references:
+    - type: documentation
+      source:
+        url: https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-rest-api
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/snowflake
