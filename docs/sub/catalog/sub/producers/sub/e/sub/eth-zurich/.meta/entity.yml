@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/e/eth-zurich
+  type: organization
+  name: ETH Zurich
+  aliases:
+    - ETH Zürich
+  references:
+    - type: official-site
+      source:
+        url: https://ethz.ch/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ethz-spylab/agentdojo
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://agentdojo.spylab.ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/datasets/agentdojo
