@@ -1,0 +1,21 @@
+entity:
+  id: catalog/datasets/webarena-verified
+  type: dataset
+  name: WebArena-Verified
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ServiceNow/webarena-verified
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://servicenow.github.io/webarena-verified/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/servicenow
