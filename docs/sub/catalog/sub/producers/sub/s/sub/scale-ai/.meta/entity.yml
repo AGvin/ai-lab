@@ -13,3 +13,5 @@ entity:
   relations:
     - type: produces
       target: catalog/services/data-generation-and-curation/scale-data-engine
+    - type: produces
+      target: catalog/datasets/swe-bench-pro
