@@ -1,0 +1,27 @@
+entity:
+  id: catalog/models/cloudflare/clef
+  type: model-family
+  name: Clef
+  references:
+    - type: article
+      source:
+        url: https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developers.cloudflare.com/changelog/post/2026-10-09-clef-omni-workers-ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cloudflare
+    - type: has-member
+      target: catalog/models/cloudflare/clef/models/clef
+    - type: has-member
+      target: catalog/models/cloudflare/clef/models/clef-flash
+    - type: has-member
+      target: catalog/models/cloudflare/clef/models/clef-omni
