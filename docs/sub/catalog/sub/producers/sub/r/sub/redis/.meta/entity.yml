@@ -19,3 +19,5 @@ entity:
   relations:
     - type: produces
       target: catalog/services/data-infrastructure/memory-and-context/redis-agent-memory
+    - type: produces
+      target: catalog/agent-skills/collections/redis-agent-skills
