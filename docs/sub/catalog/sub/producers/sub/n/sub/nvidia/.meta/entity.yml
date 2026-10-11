@@ -93,3 +93,9 @@ entity:
       target: catalog/software/application-frameworks/application-development/nvidia-nemo-guardrails
     - type: produces
       target: catalog/software/model-and-data-platforms/model-development/megatron-lm
+    - type: produces
+      target: catalog/hardware/nvidia-geforce-rtx-3090
+    - type: produces
+      target: catalog/hardware/nvidia-geforce-rtx-4090
+    - type: produces
+      target: catalog/hardware/nvidia-geforce-rtx-5090
