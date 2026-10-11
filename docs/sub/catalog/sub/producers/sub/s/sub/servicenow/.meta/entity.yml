@@ -15,3 +15,5 @@ entity:
       target: catalog/services/ai-management-platforms/servicenow-ai-control-tower
     - type: produces
       target: catalog/datasets/webarena-verified
+    - type: produces
+      target: catalog/datasets/workarena
