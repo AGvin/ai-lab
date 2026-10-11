@@ -28,6 +28,8 @@ entity:
     - type: produces
       target: catalog/services/infrastructure/cloudflare-agents
     - type: produces
+      target: catalog/services/infrastructure/cloudflare-browser-rendering
+    - type: produces
       target: catalog/agent-skills/collections/cloudflare-skills
     - type: produces
       target: catalog/models/cloudflare/clef
