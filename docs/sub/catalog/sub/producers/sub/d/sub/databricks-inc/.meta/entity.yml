@@ -21,3 +21,5 @@ entity:
   relations:
     - type: produces
       target: catalog/software/model-and-data-platforms/lifecycle-platforms/mlflow
+    - type: produces
+      target: catalog/services/infrastructure/databricks-model-serving
