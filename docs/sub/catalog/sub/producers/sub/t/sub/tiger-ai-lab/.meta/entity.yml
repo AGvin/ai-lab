@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/t/tiger-ai-lab
+  type: organization
+  name: TIGER AI Lab
+  references:
+    - type: official-site
+      source:
+        url: https://github.com/TIGER-AI-Lab
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/TIGER-AI-Lab/MMLU-Pro
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/datasets/mmlu-pro
