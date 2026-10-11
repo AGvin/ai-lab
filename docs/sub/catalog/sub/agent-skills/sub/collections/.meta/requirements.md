@@ -11,7 +11,7 @@
 
 ## Validation
 
-- Navigation matches the validated materialized direct-child projection exactly, including Stripe Agent Skills and any later accepted collection additions.
+- Navigation matches the validated materialized direct-child projection exactly, including Stripe Agent Skills, Redis Agent Skills, and any later accepted collection additions.
 - Every listed collection resolves to one canonical direct child and no materialized direct child is omitted.
 - The index contains no temporary or RC placeholder wording.
 - Detailed skill dependencies, runtime requirements, bundled resources, and source paths remain on the owning collection pages.
