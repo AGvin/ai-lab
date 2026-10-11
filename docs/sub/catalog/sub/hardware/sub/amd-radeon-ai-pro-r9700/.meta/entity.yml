@@ -1,0 +1,15 @@
+entity:
+  id: catalog/hardware/amd-radeon-ai-pro-r9700
+  type: hardware
+  name: AMD Radeon AI PRO R9700
+  references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/graphics/workstations/radeon-ai-pro/ai-9000-series/amd-radeon-ai-pro-r9700.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/advanced-micro-devices-inc
