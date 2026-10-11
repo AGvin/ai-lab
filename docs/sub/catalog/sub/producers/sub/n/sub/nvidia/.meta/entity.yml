@@ -99,3 +99,7 @@ entity:
       target: catalog/hardware/nvidia-geforce-rtx-4090
     - type: produces
       target: catalog/hardware/nvidia-geforce-rtx-5090
+    - type: produces
+      target: catalog/hardware/nvidia-a100-80gb
+    - type: produces
+      target: catalog/hardware/nvidia-rtx-6000-ada
