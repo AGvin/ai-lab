@@ -22,3 +22,5 @@ entity:
   relations:
     - type: produces
       target: catalog/datasets/webarena
+    - type: produces
+      target: catalog/datasets/visualwebarena
