@@ -109,3 +109,5 @@ entity:
       target: catalog/hardware/nvidia-l40s
     - type: produces
       target: catalog/hardware/nvidia-l4
+    - type: produces
+      target: catalog/hardware/nvidia-rtx-a6000
