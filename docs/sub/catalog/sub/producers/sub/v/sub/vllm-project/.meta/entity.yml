@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/v/vllm-project
+  type: organization
+  name: vLLM Project
+  references:
+    - type: repository
+      source:
+        url: https://github.com/vllm-project
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.vllm.ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/vllm-omni
