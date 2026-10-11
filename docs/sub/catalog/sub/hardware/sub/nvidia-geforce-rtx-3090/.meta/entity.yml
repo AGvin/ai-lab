@@ -1,0 +1,15 @@
+entity:
+  id: catalog/hardware/nvidia-geforce-rtx-3090
+  type: hardware
+  name: NVIDIA GeForce RTX 3090
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-eu/geforce/graphics-cards/30-series/rtx-3090/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia
