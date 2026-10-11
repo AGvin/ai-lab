@@ -1,0 +1,15 @@
+entity:
+  id: catalog/hardware/amd-instinct-mi325x
+  type: hardware
+  name: AMD Instinct MI325X
+  references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/accelerators/instinct/mi300/mi325x.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/advanced-micro-devices-inc
