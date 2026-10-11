@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/s/shopify
+  type: organization
+  name: Shopify
+  references:
+    - type: official-site
+      source:
+        url: https://www.shopify.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Shopify/agent-skills
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/agent-skills/collections/shopify-agent-skills
