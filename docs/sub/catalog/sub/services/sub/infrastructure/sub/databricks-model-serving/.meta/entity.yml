@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/infrastructure/databricks-model-serving
+  type: service
+  name: Databricks Model Serving
+  references:
+    - type: documentation
+      source:
+        url: https://docs.databricks.com/aws/en/machine-learning/model-serving
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/databricks-inc
