@@ -1,0 +1,22 @@
+entity:
+  id: catalog/datasets/swe-bench-pro
+  type: dataset
+  name: SWE-bench Pro
+  references:
+    - type: repository
+      source:
+        url: https://github.com/scaleapi/SWE-bench_Pro-os
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/ScaleAI/SWE-bench_Pro
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/scale-ai
