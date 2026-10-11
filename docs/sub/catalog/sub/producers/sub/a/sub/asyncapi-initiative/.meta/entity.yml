@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/a/asyncapi-initiative
+  type: organization
+  name: AsyncAPI Initiative
+  references:
+    - type: official-site
+      source:
+        url: https://www.asyncapi.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/asyncapi/spec
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/specifications/schemas/asyncapi-specification
