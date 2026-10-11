@@ -35,3 +35,7 @@ entity:
       target: catalog/services/assistant-workspaces/perplexity-computer
     - type: produces
       target: catalog/software/interfaces-and-workspaces/integrated-workspaces/perplexity-comet
+    - type: produces
+      target: catalog/models/perplexity-ai/pplx-decider
+    - type: produces
+      target: catalog/models/perplexity-ai/pplx-embed-v2-late
