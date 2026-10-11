@@ -1,0 +1,15 @@
+entity:
+  id: catalog/datasets/online-mind2web
+  type: dataset
+  name: Online-Mind2Web
+  references:
+    - type: repository
+      source:
+        url: https://github.com/OSU-NLP-Group/Online-Mind2Web
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/osu-nlp-group
