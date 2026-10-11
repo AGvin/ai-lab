@@ -30,3 +30,5 @@ entity:
       target: catalog/software/development-tools/agentic-development-systems/a2a-cli
     - type: maintains
       target: catalog/software/development-tools/testing/a2a-inspector
+    - type: maintains
+      target: catalog/specifications/formats/agents-md
