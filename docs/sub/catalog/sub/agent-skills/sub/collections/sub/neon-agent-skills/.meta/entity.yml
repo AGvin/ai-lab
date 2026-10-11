@@ -1,0 +1,21 @@
+entity:
+  id: catalog/agent-skills/collections/neon-agent-skills
+  type: skill-collection
+  name: Neon Agent Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/neondatabase/agent-skills
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://neon.com/docs/ai/agent-skills
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/neon
