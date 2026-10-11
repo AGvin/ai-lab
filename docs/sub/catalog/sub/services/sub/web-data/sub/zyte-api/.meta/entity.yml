@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/web-data/zyte-api
+  type: service
+  name: Zyte API
+  references:
+    - type: official-site
+      source:
+        url: https://www.zyte.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.zyte.com/zyte-api/get-started.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/z/zyte

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/web-data/diffbot
+  type: service
+  name: Diffbot
+  references:
+    - type: official-site
+      source:
+        url: https://www.diffbot.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.diffbot.com/docs/extract/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/diffbot
