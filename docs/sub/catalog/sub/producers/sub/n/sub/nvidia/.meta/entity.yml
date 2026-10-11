@@ -103,3 +103,7 @@ entity:
       target: catalog/hardware/nvidia-a100-80gb
     - type: produces
       target: catalog/hardware/nvidia-rtx-6000-ada
+    - type: produces
+      target: catalog/hardware/nvidia-h200
+    - type: produces
+      target: catalog/hardware/nvidia-l40s
