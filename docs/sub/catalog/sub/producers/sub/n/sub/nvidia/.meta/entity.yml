@@ -107,3 +107,5 @@ entity:
       target: catalog/hardware/nvidia-h200
     - type: produces
       target: catalog/hardware/nvidia-l40s
+    - type: produces
+      target: catalog/hardware/nvidia-l4
