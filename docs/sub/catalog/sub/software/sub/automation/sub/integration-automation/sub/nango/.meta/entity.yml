@@ -1,0 +1,29 @@
+entity:
+  id: catalog/software/automation/integration-automation/nango
+  type: software
+  name: Nango
+  references:
+    - type: official-site
+      source:
+        url: https://nango.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/NangoHQ/nango
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://nango.dev/docs/guides/platform/self-hosting
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nango
