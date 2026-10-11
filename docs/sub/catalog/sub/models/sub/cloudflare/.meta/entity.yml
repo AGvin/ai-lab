@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/cloudflare
+  type: model-producer-view
+  name: Cloudflare models
+  references:
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/workers-ai/models/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/
+      purposes:
+        - research
+      authority: official
