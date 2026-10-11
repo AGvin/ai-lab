@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/data-infrastructure/vector-search/lancedb
+  type: software
+  name: LanceDB OSS
+  references:
+    - type: documentation
+      source:
+        url: https://www.lancedb.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/lancedb/lancedb
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/lancedb
