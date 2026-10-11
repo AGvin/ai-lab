@@ -22,3 +22,7 @@ entity:
   relations:
     - type: produces
       target: catalog/specifications/schemas/openapi-specification
+    - type: produces
+      target: catalog/specifications/schemas/arazzo-specification
+    - type: produces
+      target: catalog/specifications/schemas/overlay-specification
