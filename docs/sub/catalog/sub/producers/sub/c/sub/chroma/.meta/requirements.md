@@ -8,4 +8,4 @@
 
 ## Validation
 
-- `produces` is the inverse of Chroma Cloud `produced-by`.
+- `produces` relations match the `produced-by` links from both Chroma Cloud and self-managed Chroma.
