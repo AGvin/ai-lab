@@ -45,3 +45,7 @@ entity:
       target: catalog/hardware/amd-ryzen-ai-halo-developer-platform
     - type: produces
       target: catalog/hardware/amd-radeon-rx-7900-xtx
+    - type: produces
+      target: catalog/hardware/amd-instinct-mi325x
+    - type: produces
+      target: catalog/hardware/amd-radeon-ai-pro-r9700
