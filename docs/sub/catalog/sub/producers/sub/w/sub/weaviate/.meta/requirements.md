@@ -8,4 +8,4 @@
 
 ## Validation
 
-- `produces` is the inverse of Weaviate Cloud `produced-by`.
+- `produces` relations for Weaviate Cloud and Weaviate Database both invert their respective `produced-by` relations.
