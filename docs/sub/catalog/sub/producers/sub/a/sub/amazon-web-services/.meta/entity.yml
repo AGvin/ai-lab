@@ -49,3 +49,5 @@ entity:
       target: catalog/specifications/formats/dogwood
     - type: produces
       target: catalog/services/infrastructure/amazon-sagemaker-ai
+    - type: produces
+      target: catalog/models/amazon/strands-decider
