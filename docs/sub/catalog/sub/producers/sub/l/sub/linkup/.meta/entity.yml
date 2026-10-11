@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/l/linkup
+  type: organization
+  name: Linkup
+  references:
+    - type: official-site
+      source:
+        url: https://www.linkup.so/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/web-data/linkup
