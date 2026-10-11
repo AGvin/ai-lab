@@ -1,0 +1,25 @@
+entity:
+  id: catalog/producers/o/osu-nlp-group
+  type: team
+  name: Ohio State NLP Group
+  aliases:
+    - OSU NLP Group
+    - OSU-NLP-Group
+  references:
+    - type: official-site
+      source:
+        url: https://github.com/OSU-NLP-Group
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/OSU-NLP-Group/Mind2Web
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/datasets/mind2web
