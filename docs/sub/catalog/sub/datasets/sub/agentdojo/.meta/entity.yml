@@ -1,0 +1,28 @@
+entity:
+  id: catalog/datasets/agentdojo
+  type: dataset
+  name: AgentDojo
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ethz-spylab/agentdojo
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://agentdojo.spylab.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://openreview.net/forum?id=m1YYAQjO3w
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/e/eth-zurich
