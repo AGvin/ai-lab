@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/h/harbor-framework
+  type: organization
+  name: Harbor Framework Team
+  references:
+    - type: repository
+      source:
+        url: https://github.com/harbor-framework/harbor
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://harborframework.com/docs/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/harbor
