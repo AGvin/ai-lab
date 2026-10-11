@@ -1,0 +1,27 @@
+entity:
+  id: catalog/datasets/webarena-infinity
+  type: dataset
+  name: WebArena-Infinity
+  references:
+    - type: repository
+      source:
+        url: https://github.com/web-arena-x/webarena-infinity
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/web-arena-x/webarena-infinity/blob/main/README.md
+      purposes:
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://web-arena-x.github.io/webarena-infinity/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/w/webarena-x
