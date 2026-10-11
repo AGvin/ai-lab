@@ -25,3 +25,7 @@ entity:
       target: catalog/datasets/mlperf-training
     - type: produces
       target: catalog/datasets/ailuminate
+    - type: produces
+      target: catalog/datasets/mlperf-mobile-v6-0
+    - type: produces
+      target: catalog/datasets/mlperf-endpoints-v0-7
