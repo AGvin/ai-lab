@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-optimization-and-compilation/bitsandbytes
+  type: software
+  name: bitsandbytes
+  references:
+    - type: repository
+      source:
+        url: https://github.com/bitsandbytes-foundation/bitsandbytes
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/bitsandbytes/main/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/bitsandbytes-foundation
