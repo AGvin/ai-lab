@@ -37,6 +37,8 @@ entity:
     - type: produces
       target: catalog/datasets/alphagenome-atlas
     - type: produces
+      target: catalog/datasets/androidworld
+    - type: produces
       target: catalog/models/google/veo
     - type: produces
       target: catalog/models/google/alphafold
