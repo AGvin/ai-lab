@@ -1,0 +1,21 @@
+entity:
+  id: catalog/hardware/raspberry-pi-ai-hat-plus
+  type: hardware-product
+  name: Raspberry Pi AI HAT+
+  references:
+    - type: product-page
+      source:
+        url: https://www.raspberrypi.com/products/ai-hat/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/r/raspberry-pi

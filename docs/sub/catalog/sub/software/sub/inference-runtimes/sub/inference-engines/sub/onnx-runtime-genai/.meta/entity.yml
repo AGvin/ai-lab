@@ -1,0 +1,23 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/onnx-runtime-genai
+  type: software
+  name: ONNX Runtime GenAI
+  aliases:
+    - ORT GenAI
+  references:
+    - type: repository
+      source:
+        url: https://github.com/microsoft/onnxruntime-genai
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/microsoft/onnxruntime-genai/releases
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-optimization-and-compilation/microsoft-olive
+  type: software
+  name: Microsoft Olive
+  references:
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/Olive/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/microsoft/Olive
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

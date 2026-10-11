@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:28684ce64d6baebc382cc096f985f48e23ace90c
+      entity.yml: gitblob:db48bc98b08b2f9d691d6f04e450f5daa9873869
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -68,6 +68,32 @@ cache:
         relations:
         - type: produces
           target: catalog/models/mistral-ai/mistral-small
+        - type: produces
+          target: catalog/models/mistral-ai/mistral-medium
+        - type: produces
+          target: catalog/models/mistral-ai/mistral-large
+        - type: produces
+          target: catalog/models/mistral-ai/ministral
+        - type: produces
+          target: catalog/models/mistral-ai/codestral
+        - type: produces
+          target: catalog/models/mistral-ai/mistral-embed
+        - type: produces
+          target: catalog/models/mistral-ai/mistral-moderation
+        - type: produces
+          target: catalog/models/mistral-ai/devstral
+        - type: produces
+          target: catalog/models/mistral-ai/voxtral
+        - type: produces
+          target: catalog/models/mistral-ai/mistral-ocr
+        - type: produces
+          target: catalog/models/mistral-ai/robostral
+        - type: produces
+          target: catalog/models/mistral-ai/magistral
+        - type: produces
+          target: catalog/models/mistral-ai/shieldstral
+        - type: produces
+          target: catalog/services/ai-assets/mistral-studio
     aliases:
       effective:
         schema: default

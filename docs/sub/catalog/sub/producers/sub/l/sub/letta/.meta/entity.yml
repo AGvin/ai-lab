@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/l/letta
+  type: organization
+  name: Letta
+  references:
+    - type: official-site
+      source:
+        url: https://www.letta.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/letta-ai/letta-code
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agent-frameworks/letta

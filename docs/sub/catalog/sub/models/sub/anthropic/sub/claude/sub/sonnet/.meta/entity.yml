@@ -15,3 +15,5 @@ entity:
       target: catalog/models/anthropic/claude
     - type: has-member
       target: catalog/models/anthropic/claude/sonnet/models/sonnet-5
+    - type: has-member
+      target: catalog/models/anthropic/claude/sonnet/models/sonnet-5-5

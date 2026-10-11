@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/agent-frameworks/claude-agent-sdk
+  type: software
+  name: Claude Agent SDK
+  references:
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/agent-sdk/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/cli-sdks-libraries/overview
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/anthropic

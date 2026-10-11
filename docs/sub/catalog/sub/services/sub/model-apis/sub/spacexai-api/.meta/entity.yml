@@ -1,0 +1,24 @@
+entity:
+  id: catalog/services/model-apis/spacexai-api
+  type: service
+  name: SpaceXAI API
+  aliases:
+    - xAI API
+    - Grok API
+  references:
+    - type: documentation
+      source:
+        url: https://docs.x.ai/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.x.ai/developers/rest-api-reference/inference
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/x/xai

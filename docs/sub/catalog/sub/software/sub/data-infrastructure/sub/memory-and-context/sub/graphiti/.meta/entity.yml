@@ -1,0 +1,15 @@
+entity:
+  id: catalog/software/data-infrastructure/memory-and-context/graphiti
+  type: software
+  name: Graphiti
+  references:
+    - type: repository
+      source:
+        url: https://github.com/getzep/graphiti
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/z/zep

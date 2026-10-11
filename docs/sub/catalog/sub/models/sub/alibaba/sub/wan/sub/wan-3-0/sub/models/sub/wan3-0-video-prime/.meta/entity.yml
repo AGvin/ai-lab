@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/alibaba/wan/wan-3-0/models/wan3-0-video-prime
+  type: model
+  name: Wan3.0-Video-Prime
+  aliases:
+    - wan3.0-video-prime
+  references:
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/wan3-0-video-prime
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/video-generate-edit-model
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/wan/wan-3-0

@@ -1,0 +1,81 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:71737ff6df1640797c83e039dac81f49246fcc48
+    parent:
+      entity.yml: gitblob:8d5605cd06ea4143844e0ea8d9b590831e0b6906
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/technology-innovation-institute/falcon
+        type: model-family
+        name: Falcon
+        references:
+        - type: official-site
+          source:
+            url: https://falconllm.tii.ae/falcon-models.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/t/technology-innovation-institute
+        - type: has-member
+          target: catalog/models/technology-innovation-institute/falcon/models/falcon-h1r-7b
+        - type: has-member
+          target: catalog/models/technology-innovation-institute/falcon/models/falcon-perception-600m
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

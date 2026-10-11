@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/physical-ai-and-robotics/maniskill
+  type: software
+  name: ManiSkill
+  references:
+    - type: repository
+      source:
+        url: https://github.com/mani-skill/ManiSkill
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://maniskill.readthedocs.io/en/latest/user_guide/getting_started/quickstart.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/maniskill-project

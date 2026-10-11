@@ -1,0 +1,25 @@
+entity:
+  id: catalog/services/infrastructure/microsoft-foundry-agent-service
+  type: service
+  name: Microsoft Foundry Agent Service
+  aliases:
+    - Azure AI Foundry Agent Service
+    - Foundry Agent Service
+  references:
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/azure/foundry/agents/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://azure.microsoft.com/en-us/products/ai-foundry/agent-service
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

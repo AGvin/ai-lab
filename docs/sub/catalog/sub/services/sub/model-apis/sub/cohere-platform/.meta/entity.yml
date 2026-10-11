@@ -1,0 +1,23 @@
+entity:
+  id: catalog/services/model-apis/cohere-platform
+  type: service
+  name: Cohere Platform
+  aliases:
+    - Cohere API
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/deployment-options-overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/reference/about
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cohere

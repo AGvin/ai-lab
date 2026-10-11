@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/l/lightning-ai
+  type: organization
+  name: Lightning AI
+  references:
+    - type: official-site
+      source:
+        url: https://lightning.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Lightning-AI/pytorch-lightning
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/lightning

@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/adobe/firefly/models/image-model-4
+  type: model
+  name: Firefly Image Model 4
+  references:
+    - type: article
+      source:
+        url: https://news.adobe.com/news/2025/04/adobe-revolutionizes-ai-assisted-creativity-firefly
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://blog.adobe.com/en/publish/2025/04/24/adobe-firefly-next-evolution-creative-ai-is-here
+      purposes: [research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/adobe/firefly

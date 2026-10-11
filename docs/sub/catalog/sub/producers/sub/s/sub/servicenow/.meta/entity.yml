@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/s/servicenow
+  type: organization
+  name: ServiceNow
+  references:
+    - type: official-site
+      source:
+        url: https://www.servicenow.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/ai-management-platforms/servicenow-ai-control-tower

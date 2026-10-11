@@ -1,0 +1,18 @@
+entity:
+  id: catalog/datasets/asgardbench
+  type: dataset
+  name: AsgardBench
+  references:
+    - type: paper
+      source:
+        url: https://www.microsoft.com/en-us/research/publication/asgardbench-evaluating-visually-grounded-interactive-planning-under-minimal-feedback/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.microsoft.com/en-us/research/blog/asgardbench-a-benchmark-for-visually-grounded-interactive-planning/
+      purposes:
+        - research
+      authority: official

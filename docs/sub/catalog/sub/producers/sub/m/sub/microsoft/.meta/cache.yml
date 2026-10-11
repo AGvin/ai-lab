@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a987057ea7e307b6f3a36839721eeeddc9bb17fd
+      entity.yml: gitblob:34873b3a0135be2d34e2b60bb7bc7bd4a93df20c
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -80,6 +80,24 @@ cache:
           target: catalog/software/development-tools/testing/playwright
         - type: produces
           target: catalog/software/agent-frameworks/microsoft-agent-framework
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/pyrit
+        - type: produces
+          target: catalog/services/agent-identity-and-access/microsoft-entra-agent-id
+        - type: produces
+          target: catalog/services/ai-management-platforms/microsoft-agent-365
+        - type: produces
+          target: catalog/services/infrastructure/windows-365-for-agents
+        - type: produces
+          target: catalog/services/infrastructure/microsoft-copilot-studio
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/microsoft-olive
+        - type: produces
+          target: catalog/software/inference-runtimes/inference-engines/onnx-runtime
+        - type: produces
+          target: catalog/agent-skills/collections/microsoft-skills
+        - type: produces
+          target: catalog/agent-skills/collections/azure-agent-skills
         - type: owns
           target: catalog/producers/g/github-inc
     aliases:

@@ -1,0 +1,12 @@
+entity:
+  id: catalog/datasets/groundedplanbench
+  type: dataset
+  name: GroundedPlanBench
+  references:
+    - type: article
+      source:
+        url: https://www.microsoft.com/en-us/research/blog/groundedplanbench-spatially-grounded-long-horizon-task-planning-for-robot-manipulation/
+      purposes:
+        - identification
+        - research
+      authority: official

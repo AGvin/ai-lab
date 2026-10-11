@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/mistral-ai/mistral-ocr
+  type: model-family
+  name: Mistral OCR
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.mistral.ai/resources/changelogs
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai
+    - type: has-member
+      target: catalog/models/mistral-ai/mistral-ocr/models/mistral-ocr-4
+    - type: has-member
+      target: catalog/models/mistral-ai/mistral-ocr/models/mistral-ocr-4-1

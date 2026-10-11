@@ -1,0 +1,14 @@
+entity:
+  id: catalog/specifications/standards/ieee-2863-2026-organizational-governance-ai
+  name: IEEE 2863-2026 — Recommended Practice for Organizational Governance of Artificial Intelligence
+  aliases:
+    - IEEE 2863-2026
+  references:
+    - type: specification
+      source:
+        url: https://standards.ieee.org/ieee/2863/10142/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: IEEE SA marks IEEE 2863-2026 as an Active Standard approved by the Standards Board on 2026-06-04.

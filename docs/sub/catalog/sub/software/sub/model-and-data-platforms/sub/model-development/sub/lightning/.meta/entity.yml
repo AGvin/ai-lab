@@ -1,0 +1,24 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-development/lightning
+  type: software
+  name: Lightning
+  aliases:
+    - PyTorch Lightning
+  references:
+    - type: official-site
+      source:
+        url: https://lightning.ai/docs/pytorch/stable/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Lightning-AI/pytorch-lightning
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/lightning-ai

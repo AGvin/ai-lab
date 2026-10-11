@@ -1,0 +1,23 @@
+entity:
+  id: catalog/hardware/cerebras-wse-3-turbo
+  type: hardware-product
+  name: Cerebras WSE-3 Turbo
+  aliases:
+    - WSE-3T
+  references:
+    - type: official-site
+      source:
+        url: https://www.cerebras.ai/chip
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://www.cerebras.ai/press-release/cerebras-announces-third-generation-wafer-scale-engine
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cerebras-systems-inc

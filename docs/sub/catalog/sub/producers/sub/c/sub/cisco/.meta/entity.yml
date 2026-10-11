@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/c/cisco
+  type: organization
+  name: Cisco
+  references:
+    - type: official-site
+      source:
+        url: https://www.cisco.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/ai-security/cisco-ai-defense

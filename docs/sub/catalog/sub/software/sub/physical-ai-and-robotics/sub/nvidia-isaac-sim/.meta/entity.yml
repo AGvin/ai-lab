@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/physical-ai-and-robotics/nvidia-isaac-sim
+  type: software
+  name: NVIDIA Isaac Sim
+  references:
+    - type: official-site
+      source:
+        url: https://developer.nvidia.com/isaac/sim/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.isaacsim.omniverse.nvidia.com/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

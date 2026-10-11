@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/openai/gpt-image/models/gpt-image-2-5-sunburst
+  type: model
+  name: GPT-Image-2.5 Sunburst
+  aliases:
+    - gpt-image-2.5-sunburst
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/image-generation
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/openai/gpt-image

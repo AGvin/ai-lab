@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/cohere-labs
+  type: model-producer-view
+  name: Cohere Labs models
+  references:
+    - type: official-site
+      source:
+        url: https://cohere.com/research
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://cohere.com/research/aya
+      purposes:
+        - research
+      authority: official

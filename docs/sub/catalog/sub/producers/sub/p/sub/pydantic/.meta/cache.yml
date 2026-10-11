@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a85d05244efb82d13add1dde44378a1b15bb54c1
+      entity.yml: gitblob:541a9c89a69161616560a4a4e69a348b9194acb1
     parent:
       entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
   state:
@@ -63,6 +63,10 @@ cache:
         relations:
         - type: produces
           target: catalog/software/agent-frameworks/pydantic-ai
+        - type: produces
+          target: catalog/software/agent-frameworks/pydantic-ai-harness
+        - type: produces
+          target: catalog/software/evaluation-and-observability/observability-platforms/pydantic-logfire
     aliases:
       effective:
         schema: default

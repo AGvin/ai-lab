@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/google/gemini/models/gemini-3-8-flash-cyber
+  type: model
+  name: Gemini 3.8 Flash Cyber
+  references:
+    - type: article
+      source:
+        url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/gemini

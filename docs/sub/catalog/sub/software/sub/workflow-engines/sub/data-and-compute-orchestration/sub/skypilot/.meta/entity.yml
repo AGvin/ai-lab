@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/workflow-engines/data-and-compute-orchestration/skypilot
+  type: software
+  name: SkyPilot
+  references:
+    - type: official-site
+      source:
+        url: https://skypilot.co/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/skypilot-org/skypilot
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/skypilot-org/skypilot/releases
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/skypilot-team

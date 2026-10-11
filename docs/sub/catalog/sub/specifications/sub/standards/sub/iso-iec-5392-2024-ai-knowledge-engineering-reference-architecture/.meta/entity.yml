@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-5392-2024-ai-knowledge-engineering-reference-architecture
+  name: ISO/IEC 5392:2024 — Reference architecture of knowledge engineering
+  aliases:
+    - ISO/IEC 5392:2024
+    - ISO 5392
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/81228.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record identifying Edition 1 as a published International Standard in March 2024.

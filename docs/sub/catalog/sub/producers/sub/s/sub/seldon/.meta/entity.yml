@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/s/seldon
+  type: organization
+  name: Seldon
+  references:
+    - type: official-site
+      source:
+        url: https://www.seldon.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/SeldonIO/seldon-core
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/distributed-serving/seldon-core-2

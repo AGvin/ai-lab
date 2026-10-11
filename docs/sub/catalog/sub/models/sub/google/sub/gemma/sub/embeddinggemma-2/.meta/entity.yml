@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/google/gemma/embeddinggemma-2
+  type: model
+  name: EmbeddingGemma 2
+  aliases:
+    - google/embeddinggemma-2
+  references:
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemma/docs/embeddinggemma/model_card_2
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://deepmind.google/models/gemma/embeddinggemma/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/gemma

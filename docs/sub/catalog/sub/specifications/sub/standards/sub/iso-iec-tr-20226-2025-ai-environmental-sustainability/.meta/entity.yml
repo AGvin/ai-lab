@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-tr-20226-2025-ai-environmental-sustainability
+  name: ISO/IEC TR 20226:2025 — Environmental sustainability aspects of AI systems
+  aliases:
+    - ISO/IEC TR 20226:2025
+    - ISO 20226
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/86177.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record identifying Edition 1 as a published Technical Report in July 2025.

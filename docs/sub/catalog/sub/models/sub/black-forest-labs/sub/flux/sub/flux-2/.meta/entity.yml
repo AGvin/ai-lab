@@ -1,0 +1,31 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-2
+  type: model-series
+  name: FLUX.2
+  references:
+    - type: product-page
+      source:
+        url: https://bfl.ai/models/flux-2
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://help.bfl.ai/articles/4292391522-what-is-flux-2
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/black-forest-labs/flux
+    - type: has-member
+      target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-max
+    - type: has-member
+      target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-pro
+    - type: has-member
+      target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-flex
+    - type: has-member
+      target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-dev
+    - type: has-member
+      target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-klein

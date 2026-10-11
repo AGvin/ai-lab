@@ -1,0 +1,19 @@
+entity:
+  id: catalog/producers/c/cohere-labs
+  type: organization
+  name: Cohere Labs
+  aliases:
+    - Cohere For AI
+  references:
+    - type: official-site
+      source:
+        url: https://cohere.com/research
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/cohere-labs/aya
+    - type: part-of
+      target: catalog/producers/c/cohere

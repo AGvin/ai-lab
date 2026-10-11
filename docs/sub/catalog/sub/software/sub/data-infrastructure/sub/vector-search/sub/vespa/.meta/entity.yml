@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/data-infrastructure/vector-search/vespa
+  type: software
+  name: Vespa
+  references:
+    - type: documentation
+      source:
+        url: https://docs.vespa.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/vespa-engine/vespa
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/vespa-ai

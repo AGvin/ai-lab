@@ -1,0 +1,24 @@
+entity:
+  id: catalog/producers/m/meridian-labs
+  type: organization
+  name: Meridian Labs
+  references:
+    - type: official-site
+      source:
+        url: https://www.meridianlabs.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/meridianlabs-ai
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: maintains
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/petri
+    - type: maintains
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/bloom

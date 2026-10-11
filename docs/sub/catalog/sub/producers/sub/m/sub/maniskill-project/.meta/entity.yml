@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/m/maniskill-project
+  type: organization
+  name: ManiSkill Project
+  references:
+    - type: repository
+      source:
+        url: https://github.com/mani-skill/ManiSkill
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/physical-ai-and-robotics/maniskill

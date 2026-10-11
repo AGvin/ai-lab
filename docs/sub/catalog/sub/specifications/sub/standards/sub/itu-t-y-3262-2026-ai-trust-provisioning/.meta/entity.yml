@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/itu-t-y-3262-2026-ai-trust-provisioning
+  name: ITU-T Y.3262 — Overview of trust provisioning for networks and services using artificial intelligence technologies
+  aliases:
+    - ITU-T Y.3262
+    - Y.3262
+  references:
+    - type: specification
+      source:
+        url: https://www.itu.int/rec/T-REC-Y.3262-202608-P/en
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Recommendation Y.3262 (08/26), approved 2026-08-13 and marked in force (prepublished) by ITU-T.

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/data-infrastructure/memory-and-context/zep
+  type: service
+  name: Zep
+  references:
+    - type: documentation
+      source:
+        url: https://help.getzep.com/v2/memory
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://help.getzep.com/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/z/zep

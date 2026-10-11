@@ -1,0 +1,91 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:fcf888daacecec09db91a6b9826b5fcc9f976104
+    parent:
+      entity.yml: gitblob:c2d85b597a5c7577badaf63792a2c9ce70f6bf60
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/ai-management-platforms/ibm-watsonx-orchestrate
+        type: service
+        name: IBM watsonx Orchestrate
+        aliases:
+        - watsonx Orchestrate
+        references:
+        - type: official-site
+          source:
+            url: https://www.ibm.com/products/watsonx-orchestrate/agent-control-plane
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: IBM identifies the watsonx Orchestrate Agentic Control Plane as the
+            centralized layer for operating, governing, and optimizing agents across
+            an enterprise.
+        - type: release-notes
+          source:
+            url: https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=releases-release-notes-june-2026
+          purposes:
+          - research
+          authority: official
+          note: June 2026 release notes document control-plane governance, catalog
+            publishing, observability, scheduling, and regional availability with
+            environment-specific lifecycle boundaries.
+        relations:
+        - type: produced-by
+          target: catalog/producers/i/ibm
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

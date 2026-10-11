@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/data-generation-and-curation/tonic-fabricate
+  type: service
+  name: Tonic Fabricate
+  references:
+    - type: official-site
+      source:
+        url: https://www.tonic.ai/products/fabricate
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.tonic.ai/docs
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/tonic-ai

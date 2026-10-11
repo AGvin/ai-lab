@@ -1,0 +1,78 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:4305e857d70d3f472f0a1f0413697a612ed41e3a
+    parent:
+      entity.yml: gitblob:0cf80df310da6a10fb2bdc28c39cf869cdb4d5e4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/specifications/standards/ieee-3378-2025-large-scale-deep-learning-model-evaluation
+        name: IEEE 3378-2025 — Framework and Process for Large-Scale Deep Learning
+          Model Evaluation
+        aliases:
+        - IEEE 3378-2025
+        references:
+        - type: specification
+          source:
+            url: https://standards.ieee.org/ieee/3378/11304/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: IEEE SA marks IEEE 3378-2025 as an Active Standard, published 2026-01-27
+            after Standards Board approval in 2025.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

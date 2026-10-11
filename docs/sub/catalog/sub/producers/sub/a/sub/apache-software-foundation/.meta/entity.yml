@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/a/apache-software-foundation
+  type: organization
+  name: Apache Software Foundation
+  references:
+    - type: official-site
+      source:
+        url: https://www.apache.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/apache-tvm

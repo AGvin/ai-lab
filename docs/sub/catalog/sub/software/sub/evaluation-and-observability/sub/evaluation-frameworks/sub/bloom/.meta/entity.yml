@@ -1,0 +1,32 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/bloom
+  type: software
+  name: Bloom
+  aliases:
+    - Petri Bloom
+  references:
+    - type: article
+      source:
+        url: https://www.anthropic.com/research/bloom
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/safety-research/bloom
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/meridianlabs-ai/petri_bloom
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/anthropic
+    - type: maintained-by
+      target: catalog/producers/m/meridian-labs

@@ -1,0 +1,23 @@
+entity:
+  id: catalog/hardware/amd-instinct-mi455x
+  type: hardware-product
+  name: AMD Instinct MI455X
+  aliases:
+    - MI455X
+  references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/accelerators/instinct/mi400/mi455x.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/accelerators/instinct/mi400.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/advanced-micro-devices-inc

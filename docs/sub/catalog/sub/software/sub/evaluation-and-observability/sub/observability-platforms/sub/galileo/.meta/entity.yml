@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/evaluation-and-observability/observability-platforms/galileo
+  type: software
+  name: Galileo
+  references:
+    - type: official-site
+      source:
+        url: https://galileo.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.galileo.ai/deployments/security-and-access-control
+      purposes:
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://galileo.ai/pricing
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/galileo-technologies-inc

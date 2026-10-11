@@ -1,0 +1,13 @@
+entity:
+  id: catalog/models/bytedance/seedream/models/seedream-4-0
+  type: model
+  name: Seedream 4.0
+  references:
+    - type: article
+      source:
+        url: https://seed.bytedance.com/en/blog/seedream-4-0-officially-released-beyond-drawing-into-imagination
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/bytedance/seedream

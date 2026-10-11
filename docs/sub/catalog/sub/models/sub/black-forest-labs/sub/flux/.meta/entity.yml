@@ -15,3 +15,7 @@ entity:
       target: catalog/producers/b/black-forest-labs
     - type: has-member
       target: catalog/models/black-forest-labs/flux/flux-1
+    - type: has-member
+      target: catalog/models/black-forest-labs/flux/flux-2
+    - type: has-member
+      target: catalog/models/black-forest-labs/flux/flux-3

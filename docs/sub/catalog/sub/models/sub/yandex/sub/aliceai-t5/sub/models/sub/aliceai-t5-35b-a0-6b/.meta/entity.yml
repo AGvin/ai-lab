@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/yandex/aliceai-t5/models/aliceai-t5-35b-a0-6b
+  type: model
+  name: AliceAI-T5-35B-A0.6B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/yandex/aliceai-t5

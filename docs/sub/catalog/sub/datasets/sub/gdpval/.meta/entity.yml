@@ -1,0 +1,21 @@
+entity:
+  id: catalog/datasets/gdpval
+  type: dataset
+  name: GDPval
+  references:
+    - type: article
+      source:
+        url: https://openai.com/index/gdpval/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://evals.openai.com/gdpval/grading
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

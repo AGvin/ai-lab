@@ -1,0 +1,23 @@
+entity:
+  id: catalog/datasets/scone-bench
+  type: dataset
+  name: SCONE-bench
+  aliases:
+    - Smart Contract Exploitation Benchmark
+  references:
+    - type: article
+      source:
+        url: https://www.anthropic.com/research/smart-contracts
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.anthropic.com/research/exploit-evals
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/anthropic

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/i/iree-project
+  type: organization
+  name: IREE Project
+  references:
+    - type: official-site
+      source:
+        url: https://iree.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/iree-org/iree
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/iree

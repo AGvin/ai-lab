@@ -1,0 +1,25 @@
+entity:
+  id: catalog/software/development-tools/agentic-development-systems/amd-rocm-ai
+  type: software
+  name: AMD ROCm.AI
+  aliases:
+    - ROCm.AI
+    - ROCm.ai
+  references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/software/rocm/rocm-ai.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://newsroom.amd.com/news/rocm-10-software-ai-native-developer-experiences/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/advanced-micro-devices-inc

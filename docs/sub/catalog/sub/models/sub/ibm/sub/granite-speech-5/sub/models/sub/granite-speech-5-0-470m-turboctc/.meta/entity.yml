@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/ibm/granite-speech-5/models/granite-speech-5-0-470m-turboctc
+  type: model
+  name: Granite Speech 5.0 470M TurboCTC
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/ibm/granite-speech-5

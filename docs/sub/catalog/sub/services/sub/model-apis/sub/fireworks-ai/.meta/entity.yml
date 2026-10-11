@@ -1,0 +1,34 @@
+entity:
+  id: catalog/services/model-apis/fireworks-ai
+  type: service
+  name: Fireworks AI
+  references:
+    - type: official-site
+      source:
+        url: https://fireworks.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.fireworks.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: privacy-policy
+      source:
+        url: https://fireworks.ai/privacy-policy
+      purposes:
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://fireworks.ai/terms-of-service
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/f/fireworks-ai-inc

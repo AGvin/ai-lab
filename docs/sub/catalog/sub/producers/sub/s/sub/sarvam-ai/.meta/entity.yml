@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/s/sarvam-ai
+  type: organization
+  name: Sarvam AI
+  references:
+    - type: official-site
+      source:
+        url: https://www.sarvam.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/sarvam-ai/sarvam

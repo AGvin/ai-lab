@@ -1,0 +1,16 @@
+entity:
+  id: catalog/services/infrastructure/windows-365-for-agents
+  type: service
+  name: Windows 365 for Agents
+  references:
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/windows-365/agents/whats-new
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Microsoft release history identifying Windows 365 for Agents as generally available in the week of 2026-06-01.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

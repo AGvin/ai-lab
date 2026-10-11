@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:aacf15db29d056d0abb0457ed44dc25ba41f84f0
+      entity.yml: gitblob:e139213afc68a4a70990a09a5bb494b261d43a31
     parent:
       entity.yml: gitblob:b7f05983a5d1c6c223967178283fa7f339514136
   state:
@@ -71,7 +71,11 @@ cache:
         - type: produces
           target: catalog/models/google/gemini
         - type: produces
+          target: catalog/models/google/gemini-omni
+        - type: produces
           target: catalog/models/google/gemma
+        - type: produces
+          target: catalog/models/google/lyria
         - type: produces
           target: catalog/services/development/agents/jules
         - type: produces
@@ -81,6 +85,8 @@ cache:
         - type: produces
           target: catalog/software/agent-frameworks/google-adk
         - type: produces
+          target: catalog/software/development-tools/agentic-development-systems/google-agents-cli
+        - type: produces
           target: catalog/software/model-and-data-platforms/lifecycle-platforms/kubeflow
         - type: produces
           target: catalog/software/workflow-engines/data-and-compute-orchestration/kubeflow-pipelines
@@ -88,6 +94,14 @@ cache:
           target: catalog/services/assistant-workspaces/gemini
         - type: produces
           target: catalog/services/knowledge-workspaces/gemini-notebook
+        - type: produces
+          target: catalog/services/infrastructure/gemini-enterprise-agent-platform
+        - type: produces
+          target: catalog/services/ai-management-platforms/google-agent-registry
+        - type: produces
+          target: catalog/hardware/google-tpu7x
+        - type: produces
+          target: catalog/agent-skills/collections/google-skills
         - type: has-part
           target: catalog/producers/g/google-deepmind
     aliases:

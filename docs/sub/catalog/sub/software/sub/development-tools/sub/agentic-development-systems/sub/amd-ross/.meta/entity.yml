@@ -1,0 +1,29 @@
+entity:
+  id: catalog/software/development-tools/agentic-development-systems/amd-ross
+  type: software
+  name: AMD Ross
+  aliases:
+    - AMD Ross Agentic AI Assistant
+  references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/software/ross-agentic-ai.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/support/downloads/ross-agentic-ai.html
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Xilinx/ross-ai-assistant
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/advanced-micro-devices-inc

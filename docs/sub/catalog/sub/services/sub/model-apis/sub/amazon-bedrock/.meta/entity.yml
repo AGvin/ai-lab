@@ -1,0 +1,22 @@
+entity:
+  id: catalog/services/model-apis/amazon-bedrock
+  type: service
+  name: Amazon Bedrock
+  references:
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://aws.amazon.com/bedrock/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/amazon-web-services

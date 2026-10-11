@@ -1,0 +1,21 @@
+entity:
+  id: catalog/hardware/nvidia-jetson-orin-nano-super-developer-kit
+  type: hardware
+  name: NVIDIA Jetson Orin Nano Super Developer Kit
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-eu/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/index.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

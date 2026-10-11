@@ -1,0 +1,15 @@
+entity:
+  id: catalog/services/ai-security/cisco-ai-defense
+  type: service
+  name: Cisco AI Defense
+  references:
+    - type: documentation
+      source:
+        url: https://www.cisco.com/c/en/us/products/collateral/security/ai-defense/ai-defense-ds.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cisco

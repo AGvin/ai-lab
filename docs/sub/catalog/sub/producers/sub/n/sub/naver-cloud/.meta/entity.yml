@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/n/naver-cloud
+  type: organization
+  name: NAVER Cloud
+  references:
+    - type: official-site
+      source:
+        url: https://www.navercloudcorp.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://navercorp.com/en/tech/hyperclovax
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/naver-cloud/hyperclova-x-seed

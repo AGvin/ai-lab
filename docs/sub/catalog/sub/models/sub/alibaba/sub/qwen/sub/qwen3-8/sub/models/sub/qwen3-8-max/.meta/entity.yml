@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-max
+  type: model
+  name: Qwen3.8-Max
+  aliases:
+    - qwen3.8-max
+  references:
+    - type: documentation
+      source:
+        url: https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-8-max
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/newly-released-models
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen3-8

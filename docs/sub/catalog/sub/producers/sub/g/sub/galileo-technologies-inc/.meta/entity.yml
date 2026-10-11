@@ -1,0 +1,25 @@
+entity:
+  id: catalog/producers/g/galileo-technologies-inc
+  type: organization
+  name: Galileo Technologies, Inc.
+  aliases:
+    - Galileo
+  references:
+    - type: official-site
+      source:
+        url: https://galileo.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://galileo.ai/privacy-policy
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official privacy policy identifying Galileo Technologies, Inc.
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/observability-platforms/galileo

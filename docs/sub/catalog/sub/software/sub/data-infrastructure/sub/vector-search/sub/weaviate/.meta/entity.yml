@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/data-infrastructure/vector-search/weaviate
+  type: software
+  name: Weaviate Database
+  references:
+    - type: documentation
+      source:
+        url: https://docs.weaviate.io/weaviate
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.weaviate.io/deploy
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/weaviate/weaviate
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/w/weaviate

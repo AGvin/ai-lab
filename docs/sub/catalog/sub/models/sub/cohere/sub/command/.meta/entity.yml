@@ -10,14 +10,10 @@ entity:
         - identification
         - research
       authority: official
-    - type: documentation
-      source:
-        url: https://docs.cohere.com/docs/command-a-plus
-      purposes:
-        - research
-      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/c/cohere
     - type: has-member
       target: catalog/models/cohere/command/command-a
+    - type: has-member
+      target: catalog/models/cohere/command/command-r

@@ -1,0 +1,20 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-video
+  type: model
+  name: FLUX 3 Video
+  aliases:
+    - flux-3-video
+  references:
+    - type: article
+      source:
+        url: https://bfl.ai/blog/flux-3-video
+      purposes: [identification, research]
+      authority: official
+    - type: product-page
+      source:
+        url: https://bfl.ai/models/flux-3-video
+      purposes: [research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/black-forest-labs/flux/flux-3

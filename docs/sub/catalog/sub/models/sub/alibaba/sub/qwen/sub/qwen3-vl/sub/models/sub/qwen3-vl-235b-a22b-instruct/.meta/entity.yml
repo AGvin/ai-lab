@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-vl/models/qwen3-vl-235b-a22b-instruct
+  type: model
+  name: Qwen3-VL-235B-A22B-Instruct
+  aliases:
+    - qwen3-vl-235b-a22b-instruct
+  references:
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/qwen3-vl-235b-a22b-instruct
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen3-VL
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen3-vl

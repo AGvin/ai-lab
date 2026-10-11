@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/cohere/command/command-r/models/command-r-plus-08-2024
+  type: model
+  name: Command R+ 08-2024
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/models
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere/command/command-r

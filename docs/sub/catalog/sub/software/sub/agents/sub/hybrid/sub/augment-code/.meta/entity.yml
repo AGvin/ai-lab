@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/agents/hybrid/augment-code
+  type: software
+  name: Augment Code
+  references:
+    - type: official-site
+      source:
+        url: https://www.augmentcode.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.augmentcode.com/product/cli
+      purposes:
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.augmentcode.com/product/cloud-agents
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/augment-computing-inc

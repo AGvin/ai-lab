@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/google/veo/models/veo-3-1-fast
+  type: model
+  name: Veo 3.1 Fast
+  aliases:
+    - veo-3.1-fast-generate-001
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cloud.google.com/vertex-ai/docs/release-notes
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-1-generate
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/veo

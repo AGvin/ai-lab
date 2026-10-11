@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/infrastructure/modal
+  type: service
+  name: Modal
+  references:
+    - type: official-site
+      source:
+        url: https://modal.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://modal.com/docs
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/modal-labs-inc

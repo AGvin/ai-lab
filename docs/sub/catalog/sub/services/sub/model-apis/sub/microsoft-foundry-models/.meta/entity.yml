@@ -1,0 +1,23 @@
+entity:
+  id: catalog/services/model-apis/microsoft-foundry-models
+  type: service
+  name: Microsoft Foundry Models
+  aliases:
+    - Azure AI Foundry Models
+  references:
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/endpoints
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

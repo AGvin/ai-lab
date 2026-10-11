@@ -29,3 +29,5 @@ entity:
   relations:
     - type: produces
       target: catalog/software/gateways/api-management-gateways/kong-gateway
+    - type: produces
+      target: catalog/services/gateways/model-gateways/kong-ai-gateway

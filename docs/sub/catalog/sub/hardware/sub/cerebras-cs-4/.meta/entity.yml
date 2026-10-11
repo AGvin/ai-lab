@@ -1,0 +1,22 @@
+entity:
+  id: catalog/hardware/cerebras-cs-4
+  type: hardware-product
+  name: Cerebras CS-4
+  references:
+    - type: product-page
+      source:
+        url: https://www.cerebras.ai/cs4-datasheet
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://www.cerebras.ai/press-release/cerebras-unveils-cs-4-up-to-30-times-faster-than-gpu-based-solutions-3347356
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cerebras-systems-inc

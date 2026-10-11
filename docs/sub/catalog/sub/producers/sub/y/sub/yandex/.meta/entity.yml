@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/y/yandex
+  type: organization
+  name: Yandex
+  references:
+    - type: official-site
+      source:
+        url: https://yandex.com/company/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/yandex
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/yandex/aliceai-t5

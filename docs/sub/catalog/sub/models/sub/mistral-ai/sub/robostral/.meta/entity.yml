@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/mistral-ai/robostral
+  type: model-family
+  name: Robostral
+  references:
+    - type: release-notes
+      source:
+        url: https://mistral.ai/news/robostral-navigate/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai
+    - type: has-member
+      target: catalog/models/mistral-ai/robostral/models/robostral-navigate-8b

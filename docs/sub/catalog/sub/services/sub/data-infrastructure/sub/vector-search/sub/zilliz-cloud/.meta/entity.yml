@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/data-infrastructure/vector-search/zilliz-cloud
+  type: service
+  name: Zilliz Cloud
+  references:
+    - type: documentation
+      source:
+        url: https://docs.zilliz.com/docs/home
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.zilliz.com/docs/terraform-provider
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/z/zilliz

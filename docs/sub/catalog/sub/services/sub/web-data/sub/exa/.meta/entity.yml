@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/web-data/exa
+  type: service
+  name: Exa
+  references:
+    - type: official-site
+      source:
+        url: https://exa.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.exa.ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/e/exa-labs-inc

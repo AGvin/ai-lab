@@ -1,0 +1,24 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-3
+  type: model-series
+  name: FLUX 3
+  references:
+    - type: product-page
+      source:
+        url: https://bfl.ai/models/flux-3
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://bfl.ai/blog/flux-3
+      purposes: [research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/black-forest-labs/flux
+    - type: has-member
+      target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-video
+    - type: has-member
+      target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-image
+    - type: has-member
+      target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-action

@@ -1,0 +1,13 @@
+entity:
+  id: catalog/producers/b/bytedance-seed
+  type: team
+  name: ByteDance Seed
+  references:
+    - type: official-site
+      source:
+        url: https://seed.bytedance.com/
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/bytedance/seedream

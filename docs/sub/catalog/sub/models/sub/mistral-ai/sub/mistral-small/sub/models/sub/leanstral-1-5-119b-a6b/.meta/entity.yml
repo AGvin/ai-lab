@@ -1,0 +1,16 @@
+entity:
+  id: catalog/models/mistral-ai/mistral-small/models/leanstral-1-5-119b-a6b
+  type: model
+  name: Leanstral 1.5 119B A6B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai/Leanstral-1.5-119B-A6B
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Mistral identifies Leanstral 1.5 as an open-source Lean 4 code-agent specialization built as part of the Mistral Small 4 family.
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/mistral-small

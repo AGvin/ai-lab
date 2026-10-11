@@ -1,0 +1,14 @@
+entity:
+  id: catalog/specifications/standards/ieee-3398-2026-gpt-empowered-software-engineering-life-cycle
+  name: IEEE 3398-2026 — Generative Pre-trained Transformer Empowered Software Engineering Life Cycle
+  aliases:
+    - IEEE 3398-2026
+  references:
+    - type: specification
+      source:
+        url: https://standards.ieee.org/ieee/3398/11380/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: IEEE SA marks IEEE 3398-2026 as an Active Standard approved 2026-09-25.

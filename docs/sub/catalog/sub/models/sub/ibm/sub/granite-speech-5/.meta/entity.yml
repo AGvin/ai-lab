@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/ibm/granite-speech-5
+  type: model-family
+  name: Granite Speech 5.0
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/collections/ibm-granite/granite-speech
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/ibm
+    - type: has-member
+      target: catalog/models/ibm/granite-speech-5/models/granite-speech-5-0-470m-turboctc
+    - type: has-member
+      target: catalog/models/ibm/granite-speech-5/models/granite-speech-5-0-470m-turboctc-nc
