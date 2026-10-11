@@ -47,3 +47,5 @@ entity:
       target: catalog/services/model-apis/amazon-bedrock
     - type: produces
       target: catalog/specifications/formats/dogwood
+    - type: produces
+      target: catalog/services/infrastructure/amazon-sagemaker-ai
