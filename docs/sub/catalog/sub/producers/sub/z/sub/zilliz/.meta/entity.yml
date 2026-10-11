@@ -13,3 +13,5 @@ entity:
   relations:
     - type: produces
       target: catalog/services/data-infrastructure/vector-search/zilliz-cloud
+    - type: produces
+      target: catalog/software/data-infrastructure/vector-search/milvus
