@@ -31,3 +31,5 @@ entity:
       target: catalog/agent-skills/collections/cloudflare-skills
     - type: produces
       target: catalog/models/cloudflare/clef
+    - type: produces
+      target: catalog/services/data-infrastructure/vector-search/cloudflare-ai-search
