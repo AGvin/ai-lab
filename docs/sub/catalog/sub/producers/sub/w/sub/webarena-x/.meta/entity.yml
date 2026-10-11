@@ -24,3 +24,5 @@ entity:
       target: catalog/datasets/webarena
     - type: produces
       target: catalog/datasets/visualwebarena
+    - type: produces
+      target: catalog/datasets/webarena-infinity
