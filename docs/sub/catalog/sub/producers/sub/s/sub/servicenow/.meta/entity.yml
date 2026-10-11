@@ -17,3 +17,7 @@ entity:
       target: catalog/datasets/webarena-verified
     - type: produces
       target: catalog/datasets/workarena
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/browsergym
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/agentlab

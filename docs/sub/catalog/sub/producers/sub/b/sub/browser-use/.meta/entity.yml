@@ -26,3 +26,5 @@ entity:
   relations:
     - type: produces
       target: catalog/services/infrastructure/browser-use-cloud
+    - type: produces
+      target: catalog/software/agent-frameworks/browser-use

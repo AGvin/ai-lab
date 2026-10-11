@@ -9,5 +9,5 @@
 
 ## Validation
 
-- `produces` reciprocates the `catalog/services/infrastructure/browser-use-cloud` `produced-by` relation.
+- Both `produces` targets reciprocate the separate hosted `catalog/services/infrastructure/browser-use-cloud` and installable `catalog/software/agent-frameworks/browser-use` `produced-by` relations.
 - Organizational provenance remains distinct from products/services integrated by Browser Use.
