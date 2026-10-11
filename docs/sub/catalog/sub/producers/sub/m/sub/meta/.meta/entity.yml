@@ -27,3 +27,5 @@ entity:
       target: catalog/hardware/meta-mtia-300
     - type: produces
       target: catalog/services/assistant-workspaces/meta-ai
+    - type: produces
+      target: catalog/software/data-infrastructure/vector-search/faiss
