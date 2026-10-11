@@ -1,0 +1,28 @@
+entity:
+  id: catalog/producers/b/browser-use
+  type: organization
+  name: Browser Use
+  references:
+    - type: official-site
+      source:
+        url: https://browser-use.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/browser-use/browser-use
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.browser-use.com/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/infrastructure/browser-use-cloud
