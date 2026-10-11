@@ -1,0 +1,24 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/harbor
+  type: software
+  name: Harbor
+  aliases:
+    - Harbor Framework
+  references:
+    - type: documentation
+      source:
+        url: https://harborframework.com/docs/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/harbor-framework/harbor
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/harbor-framework
