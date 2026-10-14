@@ -1,0 +1,28 @@
+entity:
+  id: catalog/producers/o/ogx-contributors
+  type: organization
+  name: OGX Contributors
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ogx-ai/ogx
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ogx-ai.github.io/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://ogx-ai.github.io/blog/from-llama-stack-to-ogx
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/gateways/model-gateways/ogx
