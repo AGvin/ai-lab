@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/agent-frameworks/camel-ai
+  type: software
+  name: CAMEL
+  references:
+    - type: repository
+      source:
+        url: https://github.com/camel-ai/camel
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/camel-ai/camel/releases
+      purposes:
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.camel-ai.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/camel-ai
