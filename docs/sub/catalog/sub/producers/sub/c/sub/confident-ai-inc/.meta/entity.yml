@@ -25,6 +25,14 @@ entity:
         - research
       authority: official
       note: First-party DeepEval product/framework page identifying Confident AI as its creator and maintainer.
+    - type: repository
+      source:
+        url: https://github.com/confident-ai/deepteam
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/evaluation-and-observability/evaluation-frameworks/deepeval
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/deepteam
