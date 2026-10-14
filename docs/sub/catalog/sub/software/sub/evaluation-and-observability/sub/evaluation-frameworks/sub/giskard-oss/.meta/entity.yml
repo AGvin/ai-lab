@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/giskard-oss
+  type: software
+  name: Giskard OSS
+  references:
+    - type: repository
+      source:
+        url: https://github.com/Giskard-AI/giskard-oss
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/Giskard-AI/giskard-oss/releases
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.giskard.ai/oss
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/giskard-ai
