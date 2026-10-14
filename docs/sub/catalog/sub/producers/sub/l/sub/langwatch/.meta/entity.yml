@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/l/langwatch
+  type: organization
+  name: LangWatch
+  references:
+    - type: official-site
+      source:
+        url: https://langwatch.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/langwatch/langwatch
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/langwatch/langwatch/blob/main/enterprise/LICENSE.md
+      purposes:
+        - research
+      authority: official
+      note: LangWatch enterprise license identifies Reasoning Engine B.V. as the legal rights holder.
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/observability-platforms/langwatch
