@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/g/giskard-ai
+  type: organization
+  name: Giskard AI
+  references:
+    - type: official-site
+      source:
+        url: https://www.giskard.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Giskard-AI/giskard-oss
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/giskard-oss
