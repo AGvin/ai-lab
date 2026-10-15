@@ -5,6 +5,7 @@
 - Identify W&B Weave as the Weights & Biases product for tracing, observing, and evaluating AI applications and agents.
 - Cover traces, datasets, scorers/evaluations, experiments, agent trajectories, and OpenTelemetry/integration surfaces only when current documentation supports them.
 - Distinguish Weave from the broader W&B Models/MLOps product family; integrations do not make those products one canonical entity.
+- Render the standard `entity-relations` block and preserve `produced-by` Weights & Biases, Inc., reciprocated by `produces`; keep CoreWeave's corporate ownership on the producer layer rather than attributing direct Weave production to CoreWeave.
 - Document hosted and self-managed availability as deployment modes of the same Weave product when current W&B documentation supports that boundary.
 - Keep SDK languages, supported integrations, deployment options, and plan constraints freshness-sensitive.
 
