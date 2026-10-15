@@ -34,3 +34,5 @@ entity:
       target: catalog/software/development-tools/testing/mcp-inspector
     - type: maintains
       target: catalog/specifications/formats/agents-md
+    - type: maintains
+      target: catalog/software/gateways/api-management-gateways/envoy-ai-gateway
