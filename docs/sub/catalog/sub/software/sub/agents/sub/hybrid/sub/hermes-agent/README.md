@@ -12,5 +12,7 @@ Those same capabilities are trust boundaries. Review provider and channel creden
 
 - [Hermes Agent](https://hermes-agent.nousresearch.com/)
 - [Hermes Agent documentation](https://hermes-agent.nousresearch.com/docs/)
+- [Hermes Desktop and deployment modes](https://hermes-agent.nousresearch.com/docs/user-guide/desktop)
+- [Hermes Cloud hosted agents](https://hermes-agent.nousresearch.com/docs/guides/manage-hermes-cloud-with-mcp)
 - [Hermes Agent repository](https://github.com/NousResearch/hermes-agent)
 - [Nous Research](../../../../../../../producers/sub/n/sub/nous-research/)
