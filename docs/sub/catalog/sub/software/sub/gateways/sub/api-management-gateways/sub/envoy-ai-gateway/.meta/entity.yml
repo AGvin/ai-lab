@@ -1,18 +1,20 @@
 entity:
   id: catalog/software/gateways/api-management-gateways/envoy-ai-gateway
   type: software
-  name: Envoy AI Gateway
+  name: Agent Router
+  aliases:
+    - Envoy AI Gateway
   references:
     - type: documentation
       source:
-        url: https://aigateway.envoyproxy.io/docs/
+        url: https://theagentrouter.ai/docs/
       purposes:
         - identification
         - research
       authority: official
     - type: repository
       source:
-        url: https://github.com/envoyproxy/ai-gateway
+        url: https://github.com/theagentrouter/agent-router
       purposes:
         - identification
         - research
@@ -24,6 +26,13 @@ entity:
         - research
       authority: official
       note: Official project introduction documenting the joint Tetrate and Bloomberg origin.
+    - type: article
+      source:
+        url: https://theagentrouter.ai/blog/envoy-ai-gateway-is-now-agent-router/
+      purposes:
+        - research
+      authority: official
+      note: Official September 2026 rename and Agentic AI Foundation stewardship announcement; deployed API groups, Helm artifacts and CLI retain historic names.
   relations:
     - type: produced-by
       target: catalog/producers/b/bloomberg-lp
