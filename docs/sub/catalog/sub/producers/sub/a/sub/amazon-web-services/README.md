@@ -4,7 +4,7 @@ Amazon Web Services (AWS) is the producer organization for the represented Stran
 
 ## Produces
 
-- [Kiro CLI](../../../../../software/sub/agents/sub/local/sub/kiro-cli/) — local agent/coding CLI whose first-party provenance identifies Amazon Web Services as provider.
+- [Kiro CLI](../../../../../software/sub/agents/sub/hybrid/sub/kiro-cli/) — Kiro terminal agent spanning local development and AWS-operated cloud sessions.
 - [Strands Agents](../../../../../software/sub/agent-frameworks/sub/strands-agents/) — open-source AI agents SDK introduced by AWS.
 
 ## Official resources
