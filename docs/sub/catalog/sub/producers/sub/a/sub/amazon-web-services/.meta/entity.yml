@@ -28,7 +28,7 @@ entity:
     - type: produces
       target: catalog/software/physical-ai-and-robotics/strands-robots
     - type: produces
-      target: catalog/software/agents/local/kiro-cli
+      target: catalog/software/agents/hybrid/kiro-cli
     - type: produces
       target: catalog/services/infrastructure/amazon-bedrock-agentcore
     - type: produces
