@@ -578,7 +578,7 @@ Complete implemented documentation hierarchy. This page mirrors materialized doc
         - [`continue/`](../../../../../catalog/sub/software/sub/agents/sub/local/sub/continue/)
         - [`gemini-cli/`](../../../../../catalog/sub/software/sub/agents/sub/local/sub/gemini-cli/)
         - [`goose/`](../../../../../catalog/sub/software/sub/agents/sub/local/sub/goose/)
-        - [`hermes-agent/`](../../../../../catalog/sub/software/sub/agents/sub/local/sub/hermes-agent/)
+        - [`hermes-agent/`](../../../../../catalog/sub/software/sub/agents/sub/hybrid/sub/hermes-agent/)
         - [`kiro-cli/`](../../../../../catalog/sub/software/sub/agents/sub/local/sub/kiro-cli/)
         - [`mini-swe-agent/`](../../../../../catalog/sub/software/sub/agents/sub/local/sub/mini-swe-agent/)
         - [`omp/`](../../../../../catalog/sub/software/sub/agents/sub/local/sub/omp/)
