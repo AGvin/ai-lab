@@ -18,6 +18,8 @@ entity:
         - research
       authority: official
   relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/inspect-ai
     - type: maintains
       target: catalog/software/evaluation-and-observability/evaluation-frameworks/petri
     - type: maintains
