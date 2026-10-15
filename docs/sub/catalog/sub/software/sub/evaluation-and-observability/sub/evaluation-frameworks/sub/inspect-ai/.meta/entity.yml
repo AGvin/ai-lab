@@ -20,3 +20,5 @@ entity:
   relations:
     - type: produced-by
       target: catalog/producers/u/uk-ai-security-institute
+    - type: produced-by
+      target: catalog/producers/m/meridian-labs
