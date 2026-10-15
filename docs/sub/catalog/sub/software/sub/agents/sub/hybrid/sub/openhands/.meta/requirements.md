@@ -2,11 +2,11 @@
 
 ## Requirements
 
-- Identify OpenHands as the open-source AI-driven software-development platform represented by its current Software Agent SDK, CLI, Local GUI, hosted OpenHands Cloud, and Enterprise/self-hosting surfaces.
+- Identify OpenHands as the AI-driven development platform spanning the current Agent Canvas browser client, Software Agent SDK and Agent Server, hosted OpenHands Cloud, and Enterprise/self-hosting surfaces; treat the older CLI and Local GUI as legacy interfaces rather than the primary current browser experience.
 - Preserve the Hybrid Agent classification: local user-controlled execution and first-party hosted Cloud execution are both material supported product surfaces.
-- Keep the SDK, CLI, Local GUI, Cloud, and Enterprise surfaces distinct enough that the profile does not imply one mandatory runtime or deployment model.
+- Keep Agent Canvas, SDK/Agent Server, Sandbox Server, Cloud, and Enterprise execution/deployment surfaces distinct; Agent Canvas can connect to local, self-hosted, Cloud, or Enterprise backends, while the legacy Local GUI is deprecated.
 - Preserve useful legacy operational boundaries around filesystem and shell access, repository permissions, backend/runtime isolation, integration scopes, automation triggers, credentials, and human approval gates.
-- Preserve the current licensing boundary at a high level: core OpenHands content and core images are MIT-licensed while the `enterprise/` directory has separate enterprise licensing; keep exact license terms source-backed when expanded.
+- Keep licensing scoped to each current component and its upstream repository; the separated Agent Canvas, Software Agent SDK, Sandbox Server, and legacy repositories may have different license terms. Do not apply the old monorepo or enterprise-directory license boundary to the complete ecosystem.
 - Keep mutable hosted-service, enterprise-license, integration, model-provider, deployment, and pricing details source-backed when expanded.
 - Include current official OpenHands documentation and repository references.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
