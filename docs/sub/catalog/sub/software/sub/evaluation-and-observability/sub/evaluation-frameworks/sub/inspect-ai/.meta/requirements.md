@@ -13,4 +13,4 @@
 ## Validation
 
 - The first-party repo and `inspect.aisi.org.uk` documentation verify released software, evaluation scope and UK AI Security Institute authorship.
-- The `produced-by` link is reciprocated by the UK AI Security Institute `produces` relation.
+- Both `produced-by` links have exact reciprocal `produces` relations at the UK AI Security Institute and Meridian Labs producer nodes.
