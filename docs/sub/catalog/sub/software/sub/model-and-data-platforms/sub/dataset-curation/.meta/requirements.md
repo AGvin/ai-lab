@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Present this node as the canonical software catalog index identified by its `.meta/entity.yml` and documentation path.
+- Define Dataset Curation as platforms and tools whose primary role is assembling, labeling/annotating, cleaning, reviewing, quality-controlling, sampling, or improving training and evaluation datasets, including human-in-the-loop data operations; distinguish curation workflows from dataset-loading libraries, generic model training runtimes, and hosted raw-data storage.
 - Use the node's category boundary and materialized direct-child set as its navigation scope.
 - List every materialized direct child exactly once and keep child-specific identity, facts, references, setup, runtime behavior, and mutable state with the child profile.
 - Do not reproduce or depend on legacy `catalog-item`, `catalog-index`, `common/index`, or `catalog/item` schema/template selectors.
