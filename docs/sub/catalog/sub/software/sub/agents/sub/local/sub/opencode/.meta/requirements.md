@@ -8,6 +8,8 @@
 - Preserve OpenCode's granular permission model for file, shell/tool, path, and agent actions, while making clear that permission rules are approval/authorization controls rather than a security sandbox.
 - Preserve useful legacy trust boundaries around repository instructions, generated diffs, shell execution, external directories, plugins, skills, MCP servers, provider credentials, network-data exposure, background/headless execution, and external actions.
 - Do not treat OpenCode Zen or another first-party hosted model-access/inference service as the OpenCode agent identity itself; hosted model access does not make the user-run OpenCode agent a hosted agent runtime.
+- Document the first-party GitHub issue/PR automation as execution inside an operator-configured GitHub Actions runner, not an Anomaly-operated cloud agent; preserve GitHub App/token, workflow write permissions, secrets, pull-request code, and untrusted comments as operational trust boundaries.
+- Distinguish `opencode serve` and web/SDK clients from vendor-managed hosting: remote execution is on the host running the operator-deployed OpenCode server, whose HTTP authentication, binding, and CORS configuration must be handled by that operator.
 - Keep provider counts, model availability, Zen catalog contents, usage metrics, billing, desktop beta state, exact permission syntax, package/runtime versions, and other mutable product-state claims source-backed and time-scoped when expanded.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official OpenCode site, documentation, repository, and official legal identity reference.
@@ -16,6 +18,7 @@
 
 - The page remains about the OpenCode agent product rather than a specific model-provider or inference service.
 - Local/client execution is not mislabeled as a first-party hosted agent runtime.
+- GitHub Actions execution and user-configured remote server execution do not automatically reclassify OpenCode from Local Agents to Hybrid Agents.
 - Permissions are not described as sandboxing or containment.
 - Skills, plugins/custom tools, and MCP servers remain distinct extension/trust mechanisms.
 - Terminal, desktop, IDE, SDK, automation, and remote-control surfaces are represented as clients/interfaces around the same OpenCode product identity.
