@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Present this node as the canonical software catalog index identified by its `.meta/entity.yml` and documentation path.
+- Define Data and Compute Orchestration as engines primarily scheduling and dependency-managing batch data, machine-learning, and compute pipelines or distributed jobs; distinguish this role from durable business-application execution and node-based visual AI workflow composition.
 - Use the node's category boundary and materialized direct-child set as its navigation scope.
 - List every materialized direct child exactly once and keep child-specific identity, facts, references, setup, runtime behavior, and mutable state with the child profile.
 - Do not reproduce or depend on legacy `catalog-item`, `catalog-index`, `common/index`, or `catalog/item` schema/template selectors.
