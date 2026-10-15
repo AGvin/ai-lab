@@ -8,7 +8,7 @@
 
 ## Compared canonical software
 
-- `catalog/software/agents/local/hermes-agent`
+- `catalog/software/agents/hybrid/hermes-agent`
 - `catalog/software/agents/local/openclaw`
 - `catalog/software/agent-frameworks/autogen`
 - `catalog/software/agent-frameworks/crewai`
@@ -60,7 +60,7 @@ Omit non-differentiating signals from row-level matrices and state shared assump
 
 ## Adoption/cost distinctions to preserve
 
-- Hermes Agent, OpenClaw, AutoGen: permissive/open-source core with bring-your-own model/provider or adjacent service costs; review provider/integration terms.
+- Hermes Agent, OpenClaw, AutoGen: permissive/open-source core with bring-your-own model/provider or adjacent service costs; Hermes also offers vendor-operated Hermes Cloud agent hosting, whose access/terms are separate from the self-managed core. Review provider/integration terms.
 - CrewAI, LangGraph, OpenHands: open-source/permissive core with optional managed/open-core commercial surfaces; review hosted/enterprise/platform boundaries separately from core software.
 - n8n: source-available/fair-code self-hosted plus managed cloud/enterprise surfaces; explicitly review the applicable license and connected-service terms for the intended use.
 
