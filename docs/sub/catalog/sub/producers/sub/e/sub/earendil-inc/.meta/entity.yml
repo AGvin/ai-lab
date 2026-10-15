@@ -29,3 +29,5 @@ entity:
   relations:
     - type: maintains
       target: catalog/software/agents/local/pi
+    - type: produces
+      target: catalog/software/agent-frameworks/pi-durable
