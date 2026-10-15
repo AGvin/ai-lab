@@ -8,6 +8,7 @@
 - Pin `inspect-ai` package, evaluation task implementation/split, model/backend version, inference settings, tool/solver and scorer, external dependencies, run seeds where applicable, and model-judge evaluation version for reproducibility. Official release 0.3.278 was published 2026-10-09; latest-version claims are freshness-sensitive.
 - Evaluation runs may execute agent tools, contact paid model APIs and send private prompt/data/log content to provider endpoints. Run untrusted tool-use tests in authorized sandboxes with least-privilege credentials, bounded budgets and governed trace retention.
 - Preserve first-party UK AI Security Institute stewardship under its official UKGovernmentBEIS upstream and exact producer provenance; do not infer that evaluated models or unrelated third-party tasks are UK government intellectual property.
+- Attribute Inspect AI's co-development to both the UK AI Security Institute and Meridian Labs, as its official project site explicitly does; preserve the UKGovernmentBEIS primary upstream/citation and reciprocal `produced-by`/`produces` links for both organizations, without inventing a separate ongoing `maintained-by` commitment for Meridian.
 
 ## Validation
 
