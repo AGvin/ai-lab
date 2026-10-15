@@ -17,6 +17,7 @@ On October 1, 2026, Earendil released Pi 1.0, adding native Codemode/MCP, virtua
 - [Mario Zechner](../../../../../../../producers/sub/m/sub/mario-zechner/) — original/current author and producer of Pi.
 - [Earendil Inc.](../../../../../../../producers/sub/e/sub/earendil-inc/) — current organizational home and maintainer.
 - [OMP](../omp/) — separate Pi-derived coding agent with a more batteries-included tool surface.
+- [Pi Durable](../../../../../agent-frameworks/sub/pi-durable/) — separate experimental durable-agent framework by Earendil.
 
 ## Official resources
 
