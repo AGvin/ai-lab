@@ -22,3 +22,5 @@ entity:
       target: catalog/software/inference-runtimes/distributed-serving/llm-d
     - type: produces
       target: catalog/services/infrastructure/coreweave-cloud
+    - type: owns
+      target: catalog/producers/w/weights-and-biases
