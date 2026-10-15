@@ -10,7 +10,7 @@ entity:
         - identification
         - research
       authority: official
-        - type: documentation
+    - type: documentation
       source:
         url: https://kiro.dev/docs/how-kiro-works/
       purposes:
