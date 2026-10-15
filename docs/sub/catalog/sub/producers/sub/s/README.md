@@ -4,5 +4,6 @@
 - [Spring](./sub/spring/)
 - [StackBlitz, Inc.](./sub/stackblitz-inc/)
 - [Stanford NLP Group](./sub/stanford-nlp-group/)
+- [Stencil Labs, Inc.](./sub/stencil-labs/)
 - [SWE-agent](./sub/swe-agent/)
 - [SylphAI, Inc.](./sub/sylphai-inc/)
