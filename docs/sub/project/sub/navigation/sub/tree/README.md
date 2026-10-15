@@ -555,6 +555,7 @@ Complete implemented documentation hierarchy. This page mirrors materialized doc
       - [`mastra/`](../../../../../catalog/sub/software/sub/agent-frameworks/sub/mastra/)
       - [`microsoft-agent-framework/`](../../../../../catalog/sub/software/sub/agent-frameworks/sub/microsoft-agent-framework/)
       - [`openai-agents-sdk/`](../../../../../catalog/sub/software/sub/agent-frameworks/sub/openai-agents-sdk/)
+      - [`pi-durable/`](../../../../../catalog/sub/software/sub/agent-frameworks/sub/pi-durable/)
       - [`pydantic-ai/`](../../../../../catalog/sub/software/sub/agent-frameworks/sub/pydantic-ai/)
       - [`pydantic-ai-harness/`](../../../../../catalog/sub/software/sub/agent-frameworks/sub/pydantic-ai-harness/)
       - [`smolagents/`](../../../../../catalog/sub/software/sub/agent-frameworks/sub/smolagents/)
