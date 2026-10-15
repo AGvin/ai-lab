@@ -15,7 +15,7 @@
 
 - The profile does not describe OpenHands Cloud as the only execution surface.
 - The profile does not treat the Software Agent SDK as a separate replacement identity for the OpenHands product represented here.
-- The page does not imply that Enterprise licensing applies to the MIT-licensed core.
+- Licensing language verifies each active component's repository independently and does not imply that the legacy monorepo or Enterprise licensing applies universally.
 - The Hybrid classification remains supported by explicit local and hosted execution surfaces.
 - Official resource links match canonical entity metadata.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
