@@ -382,6 +382,7 @@ Complete implemented documentation hierarchy. This page mirrors materialized doc
       - [`spring/`](../../../../../catalog/sub/producers/sub/s/sub/spring/)
       - [`stackblitz-inc/`](../../../../../catalog/sub/producers/sub/s/sub/stackblitz-inc/)
       - [`stanford-nlp-group/`](../../../../../catalog/sub/producers/sub/s/sub/stanford-nlp-group/)
+      - [`stencil-labs/`](../../../../../catalog/sub/producers/sub/s/sub/stencil-labs/)
       - [`supermemory/`](../../../../../catalog/sub/producers/sub/s/sub/supermemory/)
       - [`swe-agent/`](../../../../../catalog/sub/producers/sub/s/sub/swe-agent/)
       - [`sylphai-inc/`](../../../../../catalog/sub/producers/sub/s/sub/sylphai-inc/)
