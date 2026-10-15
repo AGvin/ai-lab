@@ -4,6 +4,7 @@
 
 - Identify CoreWeave as one of the organizations that founded llm-d.
 - Keep founding provenance distinct from llm-d's current CNCF Sandbox governance and broader multi-organization contributor community.
+- Record CoreWeave's 2025-05-05 acquisition and ongoing corporate ownership of Weights & Biases, Inc. with reciprocal `owns`/`owned-by` relations; do not misattribute direct W&B Weave production to CoreWeave.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current CoreWeave identity material and first-party llm-d provenance evidence.
 
