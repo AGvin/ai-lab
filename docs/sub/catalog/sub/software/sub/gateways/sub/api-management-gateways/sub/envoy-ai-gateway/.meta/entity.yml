@@ -38,3 +38,5 @@ entity:
       target: catalog/producers/b/bloomberg-lp
     - type: produced-by
       target: catalog/producers/t/tetrate
+    - type: maintained-by
+      target: catalog/producers/a/agentic-ai-foundation
