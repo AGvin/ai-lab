@@ -8,6 +8,7 @@ Hybrid Agents are agent products whose supported product surface materially span
 - [Factory Droid](./sub/factory-droid/) — software-development agent and runtime with cloud-managed, hybrid enterprise, and fully airgapped deployment patterns.
 - [GitHub Copilot](./sub/github-copilot/) — AI development product spanning editor and terminal workflows together with GitHub-hosted agent execution.
 - [Hermes Agent](./sub/hermes-agent/) — Nous Research's personal agent with local/self-managed deployment and vendor-operated Hermes Cloud instances.
+- [Kiro CLI](./sub/kiro-cli/) — AWS-backed terminal coding agent with local execution and Kiro-managed Cloud Sessions.
 - [Kilo Code](./sub/kilo-code/) — open-source coding product with local editor/CLI execution and a separate hosted Cloud Agent runtime.
 - [OpenAI Codex](./sub/openai-codex/) — OpenAI coding agent spanning ChatGPT, editor, terminal, and delegated cloud workflows.
 - [OpenHands](./sub/openhands/) — open-source software-development agent platform with SDK, CLI, Local GUI, hosted Cloud, and enterprise self-hosting surfaces.
