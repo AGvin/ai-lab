@@ -10,6 +10,9 @@
 - Keep supported languages, package versions, persistence backends, deployment products, and other mutable implementation/platform facts source-backed when expanded.
 - Include current official LangGraph documentation and repository references.
 - Link the related LangChain framework profile.
+- Cover maintained Python (`langchain-ai/langgraph`) and JavaScript/TypeScript (`langchain-ai/langgraphjs`) runtimes within one LangGraph entity, while checking language-specific package APIs and release security independently; CLI, SDK, and deployment packages do not automatically become separate software entities.
+- For LangGraph.js graph input from untrusted callers, construct an allowlisted state server-side and enforce authorization at sensitive tools rather than relying on earlier graph nodes; cite [GHSA-wp87-994x-j95x](https://github.com/langchain-ai/langgraphjs/security/advisories/GHSA-wp87-994x-j95x) (`@langchain/langgraph` patched in `1.4.21`).
+- For multi-tenant LangGraph.js memory stores, enforce per-tenant namespace authorization and cite [GHSA-8p8h-xj5r-m5wf](https://github.com/langchain-ai/langgraphjs/security/advisories/GHSA-8p8h-xj5r-m5wf) (`@langchain/langgraph-checkpoint-postgres` patched in `1.0.6`, `@langchain/langgraph-checkpoint-redis` in `1.0.12`); versions and mitigations must be rechecked before rendered publication.
 
 ## Validation
 
