@@ -11,6 +11,6 @@ Hybrid Agents are agent products whose supported product surface materially span
 - [Kiro CLI](./sub/kiro-cli/) — AWS-backed terminal coding agent with local execution and Kiro-managed Cloud Sessions.
 - [Kilo Code](./sub/kilo-code/) — open-source coding product with local editor/CLI execution and a separate hosted Cloud Agent runtime.
 - [OpenAI Codex](./sub/openai-codex/) — OpenAI coding agent spanning ChatGPT, editor, terminal, and delegated cloud workflows.
-- [OpenHands](./sub/openhands/) — open-source software-development agent platform with SDK, CLI, Local GUI, hosted Cloud, and enterprise self-hosting surfaces.
+- [OpenHands](./sub/openhands/) — Agent Canvas and SDK/Agent Server spanning local or self-hosted backends, OpenHands Cloud, and Enterprise deployment.
 
 Products whose primary execution remains user-controlled belong under [Local Agents](../local/). Hosted-first development-agent services belong under [Hosted Development Agents](../../../../../services/sub/development/sub/agents/).
