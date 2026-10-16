@@ -10,4 +10,5 @@ Canonical producer profiles beginning with B.
 - [Block](./sub/block/)
 - [Bloomberg L.P.](./sub/bloomberg-lp/)
 - [BMad Code, LLC](./sub/bmad-code-llc/)
+- [Browser Use](./sub/browser-use/)
 - [Builder Methods](./sub/builder-methods/)

@@ -7,7 +7,9 @@ Frameworks and SDKs used to build, coordinate, and run agentic systems. This cat
 - [AgentScope](./sub/agentscope/)
 - [Agno](./sub/agno/) — open-source Python framework for building and running agents and agentic systems.
 - [AutoGen](./sub/autogen/) — Microsoft's open-source multi-agent framework, currently in maintenance mode with Microsoft Agent Framework recommended for new projects.
+- [Browser Use](./sub/browser-use/) — Python framework for browser agents.
 - [CAMEL](./sub/camel-ai/) — community-maintained Python framework for role-playing multi-agent societies, simulations, and synthetic-data workflows.
+- [Claude Agent SDK](./sub/claude-agent-sdk/) — Anthropic's agent runtime SDK.
 - [CrewAI](./sub/crewai/) — Python framework organized around collaborative agent Crews and structured event-driven Flows.
 - [Deep Agents](./sub/deep-agents/)
 - [Google Agent Development Kit (ADK)](./sub/google-adk/) — Google's open-source framework for tool-using and multi-agent applications.
@@ -16,11 +18,15 @@ Frameworks and SDKs used to build, coordinate, and run agentic systems. This cat
 - [Letta](./sub/letta/)
 - [Mastra](./sub/mastra/) — TypeScript framework for agent and AI application development.
 - [Microsoft Agent Framework](./sub/microsoft-agent-framework/) — Microsoft's open-source framework with distinct agent and workflow surfaces.
+- [NVIDIA NeMo Agent Toolkit](./sub/nvidia-nemo-agent-toolkit/) — framework-agnostic agent evaluation and integration.
 - [OpenAI Agents SDK](./sub/openai-agents-sdk/) — lightweight SDK for agentic applications built around agents, handoffs or agents-as-tools, and guardrails.
+- [OpenHands Software Agent SDK](./sub/openhands-sdk/) — Python SDK and Agent Server.
 - [Pi Durable](./sub/pi-durable/) — experimental Earendil Works TypeScript framework for durable, resumable multi-conversation agents and tasks.
 - [Pydantic AI](./sub/pydantic-ai/) — provider-agnostic Python agent framework with a typed Python and Pydantic-oriented design.
 - [Pydantic AI Harness](./sub/pydantic-ai-harness/)
 - [smolagents](./sub/smolagents/) — Hugging Face's lightweight Python agent library oriented around code agents and tool calling.
 - [Strands Agents](./sub/strands-agents/) — open-source agent SDK.
+
+- [VoltAgent](./sub/voltagent/) — TypeScript agent framework, distinct from VoltOps.
 
 Hosted products whose primary identity is a vendor-operated agent service belong under the [services catalog](../../../services/) rather than this framework index.
