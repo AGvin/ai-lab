@@ -6,6 +6,7 @@ Frameworks and SDKs used to build, coordinate, and run agentic systems. This cat
 
 - [Agno](./sub/agno/) — open-source Python framework for building and running agents and agentic systems.
 - [AutoGen](./sub/autogen/) — Microsoft's open-source multi-agent framework, currently in maintenance mode with Microsoft Agent Framework recommended for new projects.
+- [CAMEL](./sub/camel-ai/) — community-maintained Python framework for role-playing multi-agent societies, simulations, and synthetic-data workflows.
 - [CrewAI](./sub/crewai/) — Python framework organized around collaborative agent Crews and structured event-driven Flows.
 - [Google Agent Development Kit (ADK)](./sub/google-adk/) — Google's open-source framework for tool-using and multi-agent applications.
 - [LangChain](./sub/langchain/) — high-level open-source agent framework; LangGraph owns the lower-level orchestration runtime role.
