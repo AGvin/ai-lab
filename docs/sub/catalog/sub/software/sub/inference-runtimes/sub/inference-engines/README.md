@@ -1,15 +1,22 @@
 # Inference Engines
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
+Self-managed libraries and servers that load model artifacts and execute inference with batching, optimized numerical representations and supported hardware accelerators. They are distinct from cluster-wide orchestration and remote-only model APIs.
 
-Runtime engines and serving implementations focused on efficient model execution rather than a complete end-user platform.
+## Inference engines
 
-## Child pages
-
-- [`llama-cpp/`](./sub/llama-cpp/)
-- [`vllm/`](./sub/vllm/)
-- [`sglang/`](./sub/sglang/)
-- [`tensorrt-llm/`](./sub/tensorrt-llm/)
-- [`mlx-lm/`](./sub/mlx-lm/)
-- [`mlc-llm/`](./sub/mlc-llm/)
-- [`text-embeddings-inference/`](./sub/text-embeddings-inference/)
+- [CTranslate2](./sub/ctranslate2/)
+- [ExecuTorch](./sub/executorch/)
+- [llama.cpp](./sub/llama-cpp/)
+- [LMDeploy](./sub/lmdeploy/)
+- [MLC LLM](./sub/mlc-llm/)
+- [MLX LM](./sub/mlx-lm/)
+- [NVIDIA NIM](./sub/nvidia-nim/)
+- [NVIDIA Triton Inference Server](./sub/nvidia-triton-inference-server/)
+- [ONNX Runtime](./sub/onnx-runtime/)
+- [ONNX Runtime GenAI](./sub/onnx-runtime-genai/)
+- [OpenVINO](./sub/openvino/)
+- [SGLang](./sub/sglang/)
+- [TensorRT-LLM](./sub/tensorrt-llm/)
+- [Text Embeddings Inference](./sub/text-embeddings-inference/)
+- [vLLM](./sub/vllm/)
+- [vLLM-Omni](./sub/vllm-omni/)
