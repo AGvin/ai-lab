@@ -7,9 +7,33 @@ entity:
   references:
     - type: documentation
       source:
-        url: https://google.github.io/adk-docs/
+        url: https://adk.dev/
       purposes:
         - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/google/adk-python
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/google/adk-js
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/google/adk-go
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/google/adk-java
+      purposes:
         - research
       authority: official
   relations:
