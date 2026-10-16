@@ -23,6 +23,18 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://help.openai.com/en/articles/20001545-using-codex-cloud
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
