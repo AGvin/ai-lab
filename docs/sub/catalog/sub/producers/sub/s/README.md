@@ -1,6 +1,7 @@
 # Producers — S
 
 - [Shanghai Qianhui Technology Co., Ltd.](./sub/shanghai-qianhui-technology-co-ltd/)
+- [Snyk](./sub/snyk/)
 - [Spring](./sub/spring/)
 - [StackBlitz, Inc.](./sub/stackblitz-inc/)
 - [Stanford NLP Group](./sub/stanford-nlp-group/)
