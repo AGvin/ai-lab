@@ -9,14 +9,17 @@ Frameworks and SDKs used to build, coordinate, and run agentic systems. This cat
 - [AutoGen](./sub/autogen/) — Microsoft's open-source multi-agent framework, currently in maintenance mode with Microsoft Agent Framework recommended for new projects.
 - [CAMEL](./sub/camel-ai/) — community-maintained Python framework for role-playing multi-agent societies, simulations, and synthetic-data workflows.
 - [CrewAI](./sub/crewai/) — Python framework organized around collaborative agent Crews and structured event-driven Flows.
+- [Deep Agents](./sub/deep-agents/)
 - [Google Agent Development Kit (ADK)](./sub/google-adk/) — Google's open-source framework for tool-using and multi-agent applications.
 - [LangChain](./sub/langchain/) — high-level open-source agent framework; LangGraph owns the lower-level orchestration runtime role.
 - [LangGraph](./sub/langgraph/) — low-level stateful orchestration framework and runtime for agent systems.
+- [Letta](./sub/letta/)
 - [Mastra](./sub/mastra/) — TypeScript framework for agent and AI application development.
 - [Microsoft Agent Framework](./sub/microsoft-agent-framework/) — Microsoft's open-source framework with distinct agent and workflow surfaces.
 - [OpenAI Agents SDK](./sub/openai-agents-sdk/) — lightweight SDK for agentic applications built around agents, handoffs or agents-as-tools, and guardrails.
 - [Pi Durable](./sub/pi-durable/) — experimental Earendil Works TypeScript framework for durable, resumable multi-conversation agents and tasks.
 - [Pydantic AI](./sub/pydantic-ai/) — provider-agnostic Python agent framework with a typed Python and Pydantic-oriented design.
+- [Pydantic AI Harness](./sub/pydantic-ai-harness/)
 - [smolagents](./sub/smolagents/) — Hugging Face's lightweight Python agent library oriented around code agents and tool calling.
 - [Strands Agents](./sub/strands-agents/) — open-source agent SDK.
 
