@@ -8,6 +8,8 @@
 - **Compatibility:** the current source manifest constrains the MCP Python dependency to **>=1.3,<2**, so runtime transport/protocol and optional model, RAG, storage or browser tool packages must be pinned and validated for the chosen published edition. Individual tools, community simulations, datasets, prompt templates, plugins and third-party hosted APIs are not separate CAMEL-owned product identities.
 - **Security and operations:** agent tools can invoke code, browsers, network APIs and external providers; isolate simulated environments, scope credentials and workloads, and account for model/token cost, reproducibility, data sensitivity and permission boundaries before use.
 - Attribute the `camel-ai/camel` first-party community publisher to `catalog/producers/c/camel-ai`, with exact `produced-by` / `produces` inverse; do not invent corporate affiliations from paper citations.
+- Publish a human-readable CAMEL profile linked from the Agent Frameworks category index; present the current non-prerelease release separately from the unreleased `master` manifest and state which information was verified versus left for full freshness/render validation.
+- Treat built-in interpreters, browser tools, model APIs, simulated environments, HITL tool approvals and synthetic-data generation as separate permission, privacy and reproducibility boundaries. Do not interpret cookbook approvals as unconditional authorization for untrusted tool actions.
 
 ## Validation
 
