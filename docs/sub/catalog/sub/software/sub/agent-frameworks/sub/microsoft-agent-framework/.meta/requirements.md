@@ -9,6 +9,9 @@
 - Distinguish the self-managed SDK/framework from optionally Microsoft-managed Foundry Hosted Agents or other model/agent services; hosting choices do not create separate framework identities.
 - Include official Microsoft Learn documentation and repository references.
 - Preserve current migration relationships from AutoGen and Semantic Kernel only as source-backed migration guidance, not as identity equivalence; migration may change agent turns, orchestrator behavior, tool schemas, and supported distributed features.
+- Explain workflow checkpoints as opt-in state persistence, not automatic crash recovery: persist a supported storage backend, maintain compatible executor identities and topology when restoring, and guard saved state, pending requests and tool approvals as sensitive material. Durable/shared production storage differs from ephemeral in-memory/local-disk setups.
+- Explicitly distinguish approval-required tools from ordinary tool functions, and document how request/response-based human-in-the-loop pauses and resumes interact with saved workflow state; custom handlers must enforce authorization for sensitive actions instead of treating a model request or approval middleware as universal permission.
+- Keep workflow language/API differences source-backed: Python has an experimental functional workflow API in addition to graphs; .NET and Go use graph-based workflow builders, and Go's package preview status does not imply parity with stable .NET/Python components. Recheck current checkpoint schema/version compatibility before claiming replays will work across upgrades.
 
 ## Validation
 
