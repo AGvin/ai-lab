@@ -23,6 +23,24 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.camel-ai.org/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.camel-ai.org/key_modules/agents
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.camel-ai.org/cookbooks/advanced_features/agents_with_human_in_loop_and_tool_approval
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/c/camel-ai
