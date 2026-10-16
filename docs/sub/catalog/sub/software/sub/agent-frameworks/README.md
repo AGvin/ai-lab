@@ -4,6 +4,7 @@ Frameworks and SDKs used to build, coordinate, and run agentic systems. This cat
 
 ## Frameworks
 
+- [AgentScope](./sub/agentscope/)
 - [Agno](./sub/agno/) — open-source Python framework for building and running agents and agentic systems.
 - [AutoGen](./sub/autogen/) — Microsoft's open-source multi-agent framework, currently in maintenance mode with Microsoft Agent Framework recommended for new projects.
 - [CAMEL](./sub/camel-ai/) — community-maintained Python framework for role-playing multi-agent societies, simulations, and synthetic-data workflows.
