@@ -11,5 +11,6 @@ Memory-first services, general databases that merely expose vector search, hoste
 - [Pinecone](./sub/pinecone/)
 - [Qdrant Managed Cloud](./sub/qdrant-managed-cloud/)
 - [Turbopuffer](./sub/turbopuffer/)
+- [Vespa Cloud](./sub/vespa-cloud/)
 - [Weaviate Cloud](./sub/weaviate-cloud/)
 - [Zilliz Cloud](./sub/zilliz-cloud/)
