@@ -10,6 +10,25 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://openai.github.io/openai-agents-js/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/openai/openai-agents-python
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/openai/openai-agents-js
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
