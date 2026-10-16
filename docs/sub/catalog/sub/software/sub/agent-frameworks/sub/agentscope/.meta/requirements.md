@@ -9,6 +9,9 @@
 - **Security and operation:** the framework can execute tools and connect to remote sandboxes or model APIs. Explicitly scope trusted inputs, credentials, network access, tool permissions, data transfer, logging and runtime isolation; examples or optional `service`/workspace extras are not turnkey hardening.
 - Reuse the already canonical Alibaba Group producer via exact `produced-by` / `produces` inverse. Preserve the existing Higress provenance, and retain team-level authorship in text without fabricating an independent corporate producer for AgentScope or a separate SaaS identity.
 
+- AgentScope 2.0 incorporates AgentScope Runtime capabilities; the former standalone runtime repository now recommends migration to the maintained framework and should be labeled historical, not a separately maintained deployment recommendation.
+- For tool sandboxes, API deployment and experimental realtime/A2A integrations, independently review permissions, service authentication, sandbox configuration, network access, secret scopes and log retention instead of assuming the framework isolates the whole process.
+
 ## Validation
 
 - Official repository README, release metadata, package manifest and LICENSE support release, author, Python support, license, beta-classifier and experimental-feature boundaries.
