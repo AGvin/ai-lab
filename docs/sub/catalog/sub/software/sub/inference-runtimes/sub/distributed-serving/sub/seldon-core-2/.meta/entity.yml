@@ -18,6 +18,18 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.seldon.ai/seldon-core-2
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/SeldonIO/seldon-core/blob/v2/LICENSE
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/s/seldon

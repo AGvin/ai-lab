@@ -4,6 +4,11 @@ MLX LM is Apple's MLX-based Python package for generating text and fine-tuning l
 
 MLX LM is distinct from the lower-level MLX array framework. Its bundled HTTP server is useful for local workflows but is not presented upstream as a production-hardened serving platform.
 
+## Relations
+
+- Produced by: [Apple Inc.](../../../../../../../producers/sub/a/sub/apple-inc/)
+
 ## Official resources
 
 - [MLX LM repository](https://github.com/ml-explore/mlx-lm)
+- [Apple Machine Learning Research](https://machinelearning.apple.com/research/exploring-llms-mlx-m5)

@@ -4,7 +4,7 @@ Open-source toolkit for converting, compiling, optimizing and running neural-net
 
 ## Runtime capabilities and boundaries
 
-Includes OpenVINO Runtime and supported CPU, GPU and NPU device plugins. NNCF compression and a separate OpenVINO Model Server are distinct products; tokenizers and GenAI libraries can be toolkit components.
+Includes OpenVINO Runtime and supported CPU, Intel GPU and Intel NPU device plugins. Support for non-Intel CPU architectures and specific operating systems depends on the device and release. NNCF compression and a separate OpenVINO Model Server are distinct products; tokenizers and GenAI libraries can be toolkit components.
 
 ## Compatibility and reproducibility
 
