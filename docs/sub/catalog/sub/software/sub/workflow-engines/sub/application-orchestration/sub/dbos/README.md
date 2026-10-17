@@ -2,7 +2,7 @@
 
 DBOS is an open-source durable-execution library family for making ordinary application code resilient to failures. Its libraries use Postgres-backed workflows and steps together with queues, scheduling, and related primitives so interrupted programs can resume from persisted execution state.
 
-DBOS currently spans Python, TypeScript, Go, and Java. DBOS Cloud is a separate hosted operating surface from the self-managed libraries.
+The DBOS library family includes Python, TypeScript, Go, and Java. DBOS Cloud is a separate hosted operating surface from the self-managed libraries.
 
 ## Provenance
 

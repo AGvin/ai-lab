@@ -9,6 +9,8 @@
 - Treat supported robots, drivers, policy providers, optional dependencies, cloud integrations, package compatibility, and security controls as freshness-sensitive release state.
 - Do not restore archived Strands Robots Sim as a separate current software identity: upstream states its simulation capability was folded into Strands Robots.
 
+- Describe robot-operation consent conditionally: configured allowlists can pre-approve state-changing tools, and explicit `BYPASS_TOOL_CONSENT` can bypass interactive consent; otherwise the gate requests an out-of-band operator interrupt and fails closed if no operator is available. Reads and stops remain ungated.
+
 ## Validation
 
 - Strands Robots remains a separate physical-AI/robotics software identity rather than a feature of Strands Agents.

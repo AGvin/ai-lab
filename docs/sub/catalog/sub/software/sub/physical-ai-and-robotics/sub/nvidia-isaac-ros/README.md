@@ -4,9 +4,9 @@ NVIDIA Isaac ROS is NVIDIA's accelerated ROS software suite for robotics and phy
 
 ## Software boundary
 
-The profile covers NVIDIA's independently maintained accelerated robotics packages and integrations rather than generic ROS middleware semantics. Isaac ROS remains robotics software rather than a general inference runtime.
+NVIDIA's accelerated robotics packages and integrations build on ROS middleware for perception and runtime use on supported NVIDIA platforms.
 
-Supported ROS, Ubuntu and JetPack versions, packages, GPU requirements, repository availability, and performance claims are freshness-sensitive.
+Isaac ROS 5.0 was released on September 22, 2026, with ROS Lyrical and Ubuntu 24.04 support, CUDA buffer backends for native ROS 2 `rosidl::Buffer`, and agent-oriented development workflows. These are release-specific capabilities. Native `rosidl::Buffer` has CPU storage by default; CUDA storage depends on the selected backend.
 
 ## Relations
 
@@ -16,3 +16,5 @@ Supported ROS, Ubuntu and JetPack versions, packages, GPU requirements, reposito
 
 - [NVIDIA Isaac ROS documentation](https://nvidia-isaac-ros.github.io/)
 - [NVIDIA Isaac ROS repositories](https://github.com/NVIDIA-ISAAC-ROS)
+- [Isaac ROS 5.0 announcement](https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/)
+- [Native ROS 2 buffers and backends](https://nvidia-isaac-ros.github.io/concepts/rosidl_buffer/index.html)

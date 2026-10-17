@@ -24,6 +24,13 @@ entity:
         - research
       authority: official
       note: Current Temporal history describes the Cadence lineage, company founders, and open-source project boundary.
+    - type: other
+      source:
+        url: https://temporal.io/terms-of-service
+      purposes:
+        - research
+      authority: official
+      note: The current hosted-service terms identify Temporal Technologies Inc. and define Temporal Cloud.
   relations:
     - type: produced-by
       target: catalog/producers/t/temporal-technologies-inc

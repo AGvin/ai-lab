@@ -30,6 +30,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://strands-labs.github.io/robots/learn/security/
+      purposes:
+        - research
+      authority: official
+      note: Documents conditional consent for state-changing robot operations, explicit bypass and allowlists, and ungated reads/stops.
   relations:
     - type: produced-by
       target: catalog/producers/a/amazon-web-services

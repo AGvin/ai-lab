@@ -23,6 +23,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://nvidia-isaac-ros.github.io/concepts/rosidl_buffer/index.html
+      purposes:
+        - research
+      authority: official
+      note: Explains native ROS 2 rosidl::Buffer storage and backend behavior; CUDA support is a backend capability rather than a claim that all buffers are GPU-resident.
   relations:
     - type: produced-by
       target: catalog/producers/n/nvidia

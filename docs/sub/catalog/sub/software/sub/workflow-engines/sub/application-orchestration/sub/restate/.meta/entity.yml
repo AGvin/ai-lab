@@ -24,6 +24,27 @@ entity:
         - research
       authority: official
       note: First-party project history documents the Restate team's origin and product direction.
+    - type: repository
+      source:
+        url: https://github.com/restatedev/restate/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
+      note: Current runtime uses Business Source License 1.1, defines an additional use grant and platform-service restriction, and changes to Apache 2.0 four years after release.
+    - type: official-site
+      source:
+        url: https://restate.dev/
+      purposes:
+        - research
+      authority: official
+      note: Distinguishes the BSL runtime from MIT SDKs and describes self-managed, Restate Cloud, and vendor-operated BYOC options.
+    - type: other
+      source:
+        url: https://www.restate.dev/imprint
+      purposes:
+        - research
+      authority: official
+      note: First-party imprint identifies Restate GmbH.
   relations:
     - type: produced-by
       target: catalog/producers/r/restate-gmbh
