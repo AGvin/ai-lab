@@ -10,7 +10,7 @@ CLI, browser harnesses, MCP integrations, provider connectors, the BU2 model, an
 
 ## Safety and reproducibility
 
-Pin Python and Playwright/browser versions, browser profile state, model settings, allowed domains, tool permissions and task timeouts. Session cookies and browser profiles can expose authenticated accounts. Automation does not itself confer permission to access websites. Hosted services, proxies and third-party models have terms/costs independent of the MIT source license.
+Pin the Python library, browser binary and CDP client versions, browser profile state, model settings, allowed domains, tool permissions and task timeouts. Current browser control uses CDP; pin Playwright separately if using its optional integration. Session cookies and browser profiles can expose authenticated accounts. Automation does not itself confer permission to access websites. Hosted services, proxies and third-party models have terms/costs independent of the MIT source license.
 
 ## Relations
 
