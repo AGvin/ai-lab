@@ -16,6 +16,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://snorkel.ai/enterprise-ai/
+      purposes:
+        - research
+      authority: official
+      note: The current enterprise page confirms Kubernetes-native deployment on customer infrastructure; the versioned documentation remains a separate reference.
   relations:
     - type: produced-by
       target: catalog/producers/s/snorkel-ai

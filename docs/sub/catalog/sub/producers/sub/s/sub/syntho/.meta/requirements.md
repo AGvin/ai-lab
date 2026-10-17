@@ -2,12 +2,13 @@
 
 ## Requirements
 
-- Identify Syntho as the current owner/operator provenance for the MOSTLY AI brand after its June 2026 acquisition of the MOSTLY AI trademark and related brand assets.
-- Preserve the current product branding `MOSTLY AI, powered by Syntho` without implying that historical MOSTLY AI corporate provenance was always Syntho.
+- Identify Syntho as the organization that announced acquisition of the MOSTLY AI brand on June 9, 2026.
+- Preserve the announced branding `MOSTLY AI, powered by Syntho` separately from the original company and platform production history.
+- Do not infer software production or software ownership from the brand acquisition announcement.
 - Keep concrete platform behavior, deployment, SDK, and data-generation facts with the product entity.
-- Render the standard `entity-relations` block from validated current-entity relations.
 
 ## Validation
 
-- Current ownership provenance remains traceable to Syntho's first-party acquisition announcement.
-- Historical company identity is not rewritten retroactively.
+- The brand acquisition remains traceable to Syntho's first-party announcement.
+- Historical company identity and software authorship are not rewritten retroactively.
+- No unsupported software `produces` or `owns` relation is introduced.

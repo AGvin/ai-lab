@@ -25,6 +25,12 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://www.perplexity.ai/help-center/comet/en/articles/12867415-comet-assistant-privacy-data-use
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/p/perplexity-ai

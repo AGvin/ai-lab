@@ -19,6 +19,34 @@ entity:
       purposes:
         - research
       authority: official
+    - type: article
+      source:
+        url: https://www.syntho.ai/syntho-acquires-mostly-ai-trademark-and-related-assets/
+      purposes:
+        - research
+      authority: official
+      note: Syntho announced acquisition of the MOSTLY AI brand on June 9, 2026; the announcement does not establish software authorship or ownership.
+    - type: article
+      source:
+        url: https://mostly.ai/blog/unlocking-ai-training-data-for-all-mostly-ai-releases-worlds-first-industry-grade-open-source-toolkit-for-synthetic-data
+      purposes:
+        - research
+      authority: official
+      note: The January 23, 2025 company announcement separates its Synthetic Data SDK from its existing Enterprise Platform.
+    - type: article
+      source:
+        url: https://mostly.ai/blog/data-for-everyone
+      purposes:
+        - research
+      authority: official
+      note: The July 22, 2025 account describes building the MOSTLY AI Assistant and data-intelligence environment before the 2026 brand acquisition.
+    - type: repository
+      source:
+        url: https://github.com/mostly-ai/mostlyai
+      purposes:
+        - research
+      authority: official
+      note: This is the separately installable Synthetic Data SDK repository, not a repository or blanket license for the whole Data Intelligence Platform.
   relations:
     - type: produced-by
-      target: catalog/producers/s/syntho
+      target: catalog/producers/m/mostly-ai-solutions-mp-gmbh

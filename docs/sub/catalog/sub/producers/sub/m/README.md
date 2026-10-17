@@ -20,3 +20,4 @@ Canonical producer profiles beginning with M.
 - [`Mistral AI`](./sub/mistral-ai/)
 - [MLC Community](./sub/mlc-community/)
 - [`Modem`](./sub/modem/)
+- [MOSTLY AI Solutions MP GmbH](./sub/mostly-ai-solutions-mp-gmbh/)

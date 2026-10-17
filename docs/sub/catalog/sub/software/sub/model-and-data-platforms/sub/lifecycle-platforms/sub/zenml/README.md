@@ -1,8 +1,10 @@
 # ZenML
 
-ZenML is an open-source MLOps and AI framework for developing, evaluating, deploying, and operating pipelines and AI systems across classical ML, LLM, and agent workloads.
+ZenML is an open-source framework for building and operating production ML and LLM pipelines with versioned artifacts, models, and deployments.
 
 Its stack model separates pipeline code from the infrastructure and tooling that execute it, allowing workflows to move across local and production environments. ZenML Pro and hosted/commercial management surfaces remain separate capability boundaries from the open-source framework.
+
+Kitaru is a separate open-source project for evaluating and improving agents; its agent lifecycle is not an inseparable feature of the ZenML framework. The ZenML Python package enables anonymized usage analytics by default; `zenml analytics opt-out` disables them.
 
 ## Provenance and maintenance
 
@@ -13,3 +15,4 @@ Its stack model separates pipeline code from the infrastructure and tooling that
 - [ZenML documentation](https://docs.zenml.io/)
 - [ZenML repository](https://github.com/zenml-io/zenml)
 - [ZenML](https://www.zenml.io/)
+- [ZenML global settings and analytics](https://docs.zenml.io/reference/global-settings)

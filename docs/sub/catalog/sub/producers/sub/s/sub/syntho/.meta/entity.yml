@@ -17,6 +17,3 @@ entity:
         - identification
         - research
       authority: official
-  relations:
-    - type: produces
-      target: catalog/software/model-and-data-platforms/dataset-curation/mostly-ai-data-intelligence-platform

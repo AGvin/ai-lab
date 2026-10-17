@@ -1,0 +1,42 @@
+entity:
+  id: catalog/producers/m/mostly-ai-solutions-mp-gmbh
+  type: organization
+  name: MOSTLY AI Solutions MP GmbH
+  aliases:
+    - MOSTLY AI
+  references:
+    - type: official-site
+      source:
+        url: https://mostly.ai/about-us
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: The company account identifies MOSTLY AI's 2017 Vienna origin.
+    - type: documentation
+      source:
+        url: https://mostly.ai/handbook/mostly-ai-employee-handbook/people-and-operations-tools/spendesk/contractors-and-vendors-invoice-payments
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Historical company-name evidence; the public handbook page metadata is dated July 11, 2025 and does not independently confirm present corporate status.
+    - type: article
+      source:
+        url: https://mostly.ai/blog/unlocking-ai-training-data-for-all-mostly-ai-releases-worlds-first-industry-grade-open-source-toolkit-for-synthetic-data
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: The January 2025 account identifies MOSTLY AI as publisher of the open SDK and distinguishes its pre-existing Enterprise Platform.
+    - type: article
+      source:
+        url: https://mostly.ai/blog/data-for-everyone
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: The July 2025 account describes building the MOSTLY AI Assistant and data-intelligence environment before the Syntho brand acquisition.
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/dataset-curation/mostly-ai-data-intelligence-platform
