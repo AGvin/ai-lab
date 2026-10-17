@@ -6,5 +6,7 @@ A product does not belong here merely because it has an admin UI or gateway. The
 
 ## Platform profiles
 
+- [NVIDIA OpenShell](./sub/nvidia-openshell/)
+- [ToolHive](./sub/toolhive/)
 - [ModelOp Enterprise AI Command Center](./sub/modelop-enterprise-ai-command-center/)
 - [Tyk AI Studio](./sub/tyk-ai-studio/)

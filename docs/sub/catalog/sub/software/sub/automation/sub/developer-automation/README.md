@@ -1,9 +1,8 @@
 # Developer Automation
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
-
-Automation platforms centered on scripts, jobs, internal tools, APIs, and developer-operated workflows.
+Self-managed tools for automating developer-operated jobs, infrastructure configuration, repeatable scripts and operational workflows. General application-to-application integration automation belongs in the sibling category.
 
 ## Child pages
 
-- [`windmill/`](./sub/windmill/)
+- [NVIDIA AI Cluster Runtime](./sub/nvidia-aicr/) — validated GPU/Kubernetes configuration generation.
+- [Windmill](./sub/windmill/) — developer-controlled jobs, scripts and workflows.

@@ -9,7 +9,7 @@ Arcade MCP is a self-managed Python MCP integration framework. Provider-hosted o
 ## Relations
 
 - Produces: [Arcade MCP](../../../../../software/sub/application-frameworks/sub/application-development/sub/arcade-mcp/)
-- Also produces the separate Arcade automation platform, whose canonical relation is retained in metadata.
+- Produces: [Arcade](../../../../../software/sub/automation/sub/integration-automation/sub/arcade/) — deployment-capable enterprise integration platform.
 
 ## Official resources
 

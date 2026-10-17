@@ -6,6 +6,11 @@ NVIDIA is a producer represented in the catalog through the NVIDIA Skills collec
 
 - [NVIDIA Skills](../../../../../agent-skills/sub/collections/sub/nvidia-skills/)
 
+## Related software
+
+- [NVIDIA OpenShell](../../../../../software/sub/ai-management-platforms/sub/nvidia-openshell/) — agent runtime policy and management controls.
+- [NVIDIA AI Cluster Runtime](../../../../../software/sub/automation/sub/developer-automation/sub/nvidia-aicr/) — validated GPU cluster configuration generation.
+
 ## Official resources
 
 - [Official website](https://www.nvidia.com/)
