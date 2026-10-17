@@ -1,11 +1,22 @@
 # Model Development
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
-
-Tools for distributed training, efficient adaptation, fine-tuning, post-training, alignment, and model-development workflows.
+Frameworks and toolkits used to build, train, adapt, fine-tune and improve machine-learning models. This category includes core ML frameworks and training systems, not hosted model APIs or post-training artifact-optimization tools.
 
 ## Child pages
 
-- [`accelerate/`](./sub/accelerate/)
-- [`peft/`](./sub/peft/)
-- [`trl/`](./sub/trl/)
+- [Accelerate](./sub/accelerate/) — Hugging Face distributed and multi-device training utilities.
+- [Axolotl](./sub/axolotl/) — model training and fine-tuning workflows.
+- [DeepSpeed](./sub/deepspeed/) — distributed training and memory optimization.
+- [JAX](./sub/jax/) — accelerator-oriented numerical computing.
+- [Keras](./sub/keras/) — multi-backend neural-network API.
+- [Lightning](./sub/lightning/) — structured PyTorch training.
+- [LLaMA Factory](./sub/llama-factory/) — model fine-tuning and alignment.
+- [Megatron-LM](./sub/megatron-lm/) — large transformer-model training.
+- [NVIDIA NeMo RL](./sub/nvidia-nemo-rl/) — reinforcement-learning model training.
+- [OpenRLHF](./sub/openrlhf/) — open-source reinforcement learning from feedback.
+- [PEFT](./sub/peft/) — parameter-efficient fine-tuning.
+- [PyTorch](./sub/pytorch/) — tensor and deep-learning framework.
+- [TensorFlow](./sub/tensorflow/) — machine-learning framework.
+- [TRL](./sub/trl/) — post-training and reinforcement learning.
+- [Unsloth](./sub/unsloth/) — model fine-tuning and training optimization.
+- [verl](./sub/verl/) — reinforcement learning and large-model training.

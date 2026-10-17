@@ -2,6 +2,7 @@
 
 - [TÂCHES](./sub/taches/)
 - [Temporal Technologies Inc.](./sub/temporal-technologies-inc/)
+- [TensorFlow Project](./sub/tensorflow-project/)
 - [Tetrate](./sub/tetrate/)
 - [Timothy Jaeryang Baek](./sub/timothy-jaeryang-baek/)
 - [Token Fabrics](./sub/token-fabrics/)

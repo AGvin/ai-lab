@@ -8,6 +8,7 @@
 - [Langfuse GmbH](./sub/langfuse-gmbh/)
 - [LangGenius, Inc.](./sub/langgenius-inc/)
 - [LangWatch](./sub/langwatch/)
+- [Lightning AI](./sub/lightning-ai/)
 - [LlamaIndex, Inc.](./sub/llamaindex-inc/)
 - [LMSYS Org](./sub/lmsys-org/)
 - [LocalAI Team](./sub/localai-team/)
