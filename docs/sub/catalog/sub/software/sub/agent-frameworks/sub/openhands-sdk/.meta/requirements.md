@@ -3,7 +3,7 @@
 ## Requirements
 
 - Present OpenHands Software Agent SDK as the independently installable MIT-licensed agent-building runtime and Agent Server used by the broader OpenHands software-development platform.
-- Describe the official Python SDK, browser-compatible TypeScript API client, and REST/WebSocket Agent Server interfaces without inventing three separate agent runtimes.
+- Describe the official Python SDK, browser-compatible TypeScript API client, and REST/WebSocket Agent Server interfaces without inventing three separate agent runtimes. The TypeScript Agent Server client is explicitly alpha, unstable and not recommended for production; preserve this client-specific maturity boundary without applying it to the entire Python SDK.
 - Distinguish the SDK and Agent Server from the existing OpenHands end-user product (Canvas/CLI/GUI), the separate OpenHands automation/scheduling lifecycle, and the commercial OpenHands Cloud offering; this is a component identity, not a replacement for the established OpenHands product node.
 - Preserve deployment boundaries: agents can use a local workspace or ephemeral isolated workspaces such as Docker/Kubernetes; actual file, shell, repository, network and credential privileges depend on configured runtime permissions.
 - Do not imply that local workspace execution means remote LLM/provider traffic or all agent data remains local. Treat tool permissions, remote workspaces, browser API access and human approval controls as material operational/security details.
