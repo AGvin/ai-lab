@@ -2,10 +2,10 @@
 
 Earendil Inc. / Earendil Works is the current long-term organizational home and maintainer of Pi, and develops the separately published experimental Pi Durable agent framework.
 
-## Related catalog entity
+## Relations
 
-- [Pi](../../../../../software/sub/agents/sub/local/sub/pi/) — canonical Local Agent profile.
-- [Pi Durable](../../../../../software/sub/agent-frameworks/sub/pi-durable/) — distinct experimental agent framework.
+- Maintains: [Pi](../../../../../software/sub/agents/sub/local/sub/pi/) — canonical Local Agent profile.
+- Produces: [Pi Durable](../../../../../software/sub/agent-frameworks/sub/pi-durable/) — distinct experimental agent framework.
 
 ## Official resources
 
