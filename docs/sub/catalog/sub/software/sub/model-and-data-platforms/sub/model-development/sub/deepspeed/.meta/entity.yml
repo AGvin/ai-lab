@@ -17,6 +17,18 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://pytorch.org/projects/deepspeed/
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://pytorch.org/blog/press-release-pytorch-foundation-expands-welcomes-projects-vllm-deepspeed/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/m/microsoft

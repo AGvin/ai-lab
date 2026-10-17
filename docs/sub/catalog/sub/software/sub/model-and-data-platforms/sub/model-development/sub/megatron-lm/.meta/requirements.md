@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Identify Megatron-LM as NVIDIA's released open-source framework/library for training large transformer models at scale.
+- Identify Megatron-LM as NVIDIA's open-source reference training framework for large transformer models, combining Megatron Core with preconfigured training scripts. Distinguish the composable Megatron Core library from the Megatron-LM reference implementation even though both are developed in the same upstream repository.
 - Preserve its primary large-scale model-development identity across tensor/pipeline/context/expert/data parallelism, distributed optimizer, checkpointing, mixed precision, and current transformer-training components.
 - Keep Megatron Core, NeMo training products, DeepSpeed integrations, model checkpoints, Transformer Engine, NCCL, and downstream frameworks separate where independently materialized; ordinary modules of the same project are not peer products by default.
 - Treat supported model architectures, PyTorch/CUDA/Transformer Engine versions, distributed strategies, precision, parallelism features, checkpoint formats, cluster topology requirements, and release versions as freshness-sensitive.

@@ -17,6 +17,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/bitsandbytes/main/en/explanations/resources
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/b/bitsandbytes-foundation

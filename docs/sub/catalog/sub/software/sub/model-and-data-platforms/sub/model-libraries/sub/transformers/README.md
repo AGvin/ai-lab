@@ -4,6 +4,10 @@ Hugging Face Transformers is an open-source model-definition framework and libra
 
 Its centralized model definitions underpin high-level APIs such as Pipeline, Trainer, and generation while also interoperating with external training frameworks and inference engines. Those external runtimes and individual pretrained model artifacts remain separate canonical products or artifacts.
 
+## Relations
+
+- Produced by: [Hugging Face, Inc.](../../../../../../../producers/sub/h/sub/hugging-face-inc/)
+
 ## Official resources
 
 - [Transformers documentation](https://huggingface.co/docs/transformers/en/index)

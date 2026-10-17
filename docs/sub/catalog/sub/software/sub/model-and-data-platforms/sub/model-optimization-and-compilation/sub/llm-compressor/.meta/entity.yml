@@ -19,6 +19,24 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.vllm.ai/projects/llm-compressor/en/latest/developer/governance/
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developers.redhat.com/articles/2024/08/14/llm-compressor-here-faster-inference-vllm
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developers.redhat.com/articles/2025/01/30/compressed-granite-3-1-powerful-performance-small-package
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/v/vllm-project

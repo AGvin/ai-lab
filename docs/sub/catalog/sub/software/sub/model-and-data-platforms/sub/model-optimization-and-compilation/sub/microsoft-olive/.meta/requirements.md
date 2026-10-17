@@ -8,6 +8,8 @@
 - Treat supported passes, accelerators, runtimes, model formats, and version-specific features as freshness-sensitive.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+- Describe the privacy guide's default-enabled telemetry, automatic application/device/version information, controls for additional command/performance/exception collection (`--disable_telemetry` or `OLIVE_DISABLE_TELEMETRY=1`), and local caching for later transmission when a connection is available.
+
 ## Validation
 
 - Olive remains optimizer/artifact-transformation-first rather than training- or serving-first.
