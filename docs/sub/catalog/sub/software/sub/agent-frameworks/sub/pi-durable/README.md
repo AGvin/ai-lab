@@ -8,6 +8,10 @@ Pi Durable stores conversation transcripts, tasks and application state in atomi
 
 Durability depends on correct storage, retry-safe side effects, task ownership, and process recovery configuration. Tools can access files, shell commands, credentials, and external services through their assigned execution environment; neither checkpointing nor an experimental package API provides an isolation or production-readiness guarantee.
 
+## Relations
+
+- Produced by: [Earendil Inc.](../../../../../producers/sub/e/sub/earendil-inc/)
+
 ## Related product
 
 - [Pi](../../../agents/sub/local/sub/pi/) — distinct minimal interactive coding agent sharing underlying ecosystem components, not superseded by Pi Durable.
