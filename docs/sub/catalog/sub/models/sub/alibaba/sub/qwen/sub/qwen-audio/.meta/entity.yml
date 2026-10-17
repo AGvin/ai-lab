@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen-audio
+  type: model-series
+  name: Qwen-Audio
+  references:
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen
+    - type: produced-by
+      target: catalog/producers/q/qwen-team
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen-audio/models/qwen-audio-3-1-realtime-plus

@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/openai/gpt/models/gpt-6-luna
+  type: model
+  name: GPT-6 Luna
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-6-luna
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://developers.openai.com/api/docs/changelog
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/openai/gpt

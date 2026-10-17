@@ -33,6 +33,13 @@ entity:
         - research
       authority: official
       note: Current marketplace agreement describes Dify as the open-source platform managed by LangGenius, Inc.
+    - type: repository
+      source:
+        url: https://github.com/langgenius/dify/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
+      note: The modified Apache 2.0 license requires authorization for multi-tenant environments and preserves frontend logo/copyright restrictions, with an exception when the frontend is not used.
   relations:
     - type: produced-by
       target: catalog/producers/l/langgenius-inc

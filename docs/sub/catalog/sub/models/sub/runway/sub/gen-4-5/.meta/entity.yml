@@ -1,0 +1,20 @@
+entity:
+  id: catalog/models/runway/gen-4-5
+  type: model
+  name: Runway Gen-4.5
+  aliases:
+    - gen4.5
+  references:
+    - type: documentation
+      source:
+        url: https://help.runwayml.com/hc/en-us/articles/46974685288467-Creating-with-Gen-4-5
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.dev.runwayml.com/api-details/api_changelog/
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/r/runway

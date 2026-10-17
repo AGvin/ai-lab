@@ -1,0 +1,29 @@
+entity:
+  id: catalog/hardware/tenstorrent-wormhole-n150-n300
+  type: hardware-product
+  name: Tenstorrent Wormhole n150/n300
+  aliases:
+    - Wormhole n150
+    - Wormhole n300
+    - Wormhole n150d
+    - Wormhole n150s
+    - Wormhole n300d
+    - Wormhole n300s
+  references:
+    - type: product-page
+      source:
+        url: https://open.tenstorrent.com/hardware/wormhole
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.tenstorrent.com/aibs/wormhole/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/tenstorrent

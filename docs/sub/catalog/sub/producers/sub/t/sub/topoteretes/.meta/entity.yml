@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/t/topoteretes
+  type: organization
+  name: Topoteretes
+  references:
+    - type: repository
+      source:
+        url: https://github.com/topoteretes/cognee
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.cognee.ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/data-infrastructure/memory-and-context/cognee

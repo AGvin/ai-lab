@@ -1,0 +1,25 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-optimization-and-compilation/nvidia-model-optimizer
+  type: software
+  name: NVIDIA Model Optimizer
+  aliases:
+    - Model Optimizer
+    - ModelOpt
+    - NVIDIA TensorRT Model Optimizer
+  references:
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA/Model-Optimizer
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://nvidia.github.io/Model-Optimizer/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

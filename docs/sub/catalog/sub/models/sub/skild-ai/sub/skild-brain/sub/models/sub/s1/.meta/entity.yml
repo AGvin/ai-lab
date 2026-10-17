@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/skild-ai/skild-brain/models/s1
+  type: model
+  name: S1
+  references:
+    - type: article
+      source:
+        url: https://www.skild.ai/blogs/s1
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.skild.ai/blogs/skild-crosses-100m-arr
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/skild-ai/skild-brain

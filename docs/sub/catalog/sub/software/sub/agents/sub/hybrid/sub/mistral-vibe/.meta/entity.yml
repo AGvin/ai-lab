@@ -1,0 +1,31 @@
+entity:
+  id: catalog/software/agents/hybrid/mistral-vibe
+  type: software
+  name: Mistral Vibe
+  aliases:
+    - Vibe
+    - Le Chat
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/vibe
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mistral.ai/news/vibe-agent/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.mistral.ai/resources/release-notes
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai

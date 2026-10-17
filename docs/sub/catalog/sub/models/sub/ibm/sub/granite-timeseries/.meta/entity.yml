@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/ibm/granite-timeseries
+  type: model-family
+  name: Granite Time Series
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/collections/ibm-granite/granite-time-series
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/ibm
+    - type: has-member
+      target: catalog/models/ibm/granite-timeseries/models/granite-timeseries-patchtst-fm-r2
+    - type: has-member
+      target: catalog/models/ibm/granite-timeseries/models/granite-timeseries-ttm-r3
+    - type: has-member
+      target: catalog/models/ibm/granite-timeseries/models/granite-timeseries-tspulse-r1
+    - type: has-member
+      target: catalog/models/ibm/granite-timeseries/models/granite-timeseries-flowstate-r1

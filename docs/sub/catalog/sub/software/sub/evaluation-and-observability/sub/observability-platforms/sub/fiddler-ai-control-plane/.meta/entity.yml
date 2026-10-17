@@ -1,0 +1,32 @@
+entity:
+  id: catalog/software/evaluation-and-observability/observability-platforms/fiddler-ai-control-plane
+  type: software
+  name: Fiddler AI Control Plane
+  aliases:
+    - Fiddler AI
+    - Fiddler AI Observability and Security Platform
+  identity_note: Current Fiddler platform identity represented by its 2026 AI Control Plane positioning; preserve earlier observability/security naming as product lineage rather than a duplicate product.
+  references:
+    - type: official-site
+      source:
+        url: https://www.fiddler.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.fiddler.ai/control-plane
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.fiddler.ai/ai-observability
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/f/fiddler-labs-inc

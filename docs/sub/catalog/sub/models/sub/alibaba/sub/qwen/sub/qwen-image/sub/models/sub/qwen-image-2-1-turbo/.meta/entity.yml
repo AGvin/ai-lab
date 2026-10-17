@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen-image/models/qwen-image-2-1-turbo
+  type: model
+  name: Qwen-Image-2.1-Turbo
+  aliases:
+    - qwen-image-2.1-turbo
+  references:
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/newly-released-models
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen-image

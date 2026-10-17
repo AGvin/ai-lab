@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/lmdeploy
+  type: software
+  name: LMDeploy
+  references:
+    - type: documentation
+      source:
+        url: https://lmdeploy.readthedocs.io/en/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/InternLM/lmdeploy
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/internlm-project

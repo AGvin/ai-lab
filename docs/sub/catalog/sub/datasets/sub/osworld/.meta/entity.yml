@@ -1,0 +1,18 @@
+entity:
+  id: catalog/datasets/osworld
+  type: dataset
+  name: OSWorld
+  references:
+    - type: official-site
+      source:
+        url: https://os-world.github.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/xlang-ai/OSWorld-V2
+      purposes:
+        - research
+      authority: official

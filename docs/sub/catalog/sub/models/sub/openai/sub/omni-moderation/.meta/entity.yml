@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/openai/omni-moderation
+  type: model
+  name: omni-moderation
+  aliases:
+    - omni-moderation-latest
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/omni-moderation-latest
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/moderation
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

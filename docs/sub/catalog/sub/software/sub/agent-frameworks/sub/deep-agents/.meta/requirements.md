@@ -6,7 +6,7 @@
 - Explain its architectural layering accurately: Deep Agents is an opinionated harness over LangChain's agent abstraction and LangGraph's runtime rather than a competing execution runtime.
 - Cover its current bundled surfaces such as filesystem/workspace operations, sub-agents, context management, memory, shell/tool integration, human-in-the-loop controls, skills, and pluggable backends only when source-backed.
 - Distinguish the reusable Deep Agents SDK/harness from Deep Agents Code, which is a separate ready-to-use coding-agent product surface.
-- Preserve the upstream security boundary: agent authority is bounded by the tools and sandboxes made available; model behavior alone is not a security boundary.
+- Preserve the upstream security boundary: agent authority is bounded by the tools and sandboxes made available; model behavior alone is not a security boundary. Built-in filesystem permissions do not govern custom tools, MCP filesystem tools or sandbox `execute`. A host agent calling sandbox tools is not itself moved into the sandbox; host tools need separate controls.
 - Keep current package languages, release/version policy, supported integrations, and deployment claims freshness-sensitive.
 
 ## Validation

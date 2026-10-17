@@ -1,0 +1,33 @@
+entity:
+  id: catalog/producers/m/mcp-use
+  type: organization
+  name: Manufact, Inc.
+  aliases:
+    - mcp-use
+    - Manufact
+  references:
+    - type: official-site
+      source:
+        url: https://manufact.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/mcp-use/mcp-use
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://manufact.com/company
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: The company page states that the same team builds mcp-use and Manufact Cloud and identifies Manufact, Inc. in its copyright surface.
+  relations:
+    - type: produces
+      target: catalog/software/application-frameworks/application-development/mcp-use

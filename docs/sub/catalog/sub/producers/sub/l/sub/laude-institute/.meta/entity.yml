@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/l/laude-institute
+  type: organization
+  name: Laude Institute
+  references:
+    - type: official-site
+      source:
+        url: https://laude.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/laude-institute
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/datasets/terminal-bench-2

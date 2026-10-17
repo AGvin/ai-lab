@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/cohere/embed/models/embed-v4-0
+  type: model
+  name: Embed 4
+  references:
+    - type: release-notes
+      source:
+        url: https://docs.cohere.com/changelog/embed-multimodal-v4
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/reference/embed
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere/embed

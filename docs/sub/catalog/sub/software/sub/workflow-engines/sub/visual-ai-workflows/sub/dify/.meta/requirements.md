@@ -11,6 +11,8 @@
 - Keep provider counts, built-in tools, edition features, deployment requirements, and other mutable details source-backed when expanded.
 - Include current official Dify documentation, repository/license, and LangGenius legal references.
 
+- Explain the current additional license conditions when describing deployment or distribution: multi-tenant environments require written authorization, with a workspace treated as a tenant; frontend logo/copyright information must remain unless the frontend is not used.
+
 ## Validation
 
 - The page presents Dify as a visual AI application/workflow platform rather than a model provider or generic agent framework.

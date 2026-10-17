@@ -1,0 +1,20 @@
+entity:
+  id: catalog/specifications/protocols/mcp-apps
+  name: MCP Apps
+  aliases:
+    - Model Context Protocol Apps
+  references:
+    - type: specification
+      source:
+        url: https://github.com/modelcontextprotocol/ext-apps/blob/main/specification/2026-01-26/apps.mdx
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Stable MCP Apps specification revision released on 2026-01-26; re-check the current official extension revision before updating version-sensitive requirements.
+    - type: repository
+      source:
+        url: https://github.com/modelcontextprotocol/ext-apps
+      purposes:
+        - research
+      authority: official

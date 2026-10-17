@@ -1,0 +1,23 @@
+entity:
+  id: catalog/hardware/nvidia-b300
+  type: hardware-product
+  name: NVIDIA B300 Tensor Core GPU
+  aliases:
+    - B300
+  references:
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/cutlass/4.3.1/overview.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/nim/large-language-models/latest/reward-model.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

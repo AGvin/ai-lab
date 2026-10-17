@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/skild-ai
+  type: model-producer-view
+  name: Skild AI models
+  references:
+    - type: official-site
+      source:
+        url: https://www.skild.ai/
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.skild.ai/blogs/s1
+      purposes:
+        - research
+      authority: official

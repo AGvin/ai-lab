@@ -1,0 +1,26 @@
+entity:
+  id: catalog/datasets/mlperf-inference
+  type: dataset
+  name: MLPerf Inference
+  references:
+    - type: product-page
+      source:
+        url: https://mlcommons.org/benchmarks/inference-datacenter/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mlcommons.org/2026/09/mlperf-inference-v6-1-results/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mlcommons
+    - type: has-member
+      target: catalog/datasets/mlperf-edge-agentic-inference
+    - type: has-member
+      target: catalog/datasets/mlperf-end-to-end-rag-inference

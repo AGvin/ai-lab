@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/anthropic/claude/sonnet/models/sonnet-5-5
+  type: model
+  name: Claude Sonnet 5.5
+  aliases:
+    - claude-sonnet-5-5
+  references:
+    - type: article
+      source:
+        url: https://www.anthropic.com/claude-sonnet-5-5
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/about-claude/models/overview
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/anthropic/claude/sonnet

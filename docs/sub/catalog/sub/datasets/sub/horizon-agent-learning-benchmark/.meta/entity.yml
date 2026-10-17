@@ -1,0 +1,14 @@
+entity:
+  id: catalog/datasets/horizon-agent-learning-benchmark
+  type: dataset
+  name: Horizon
+  aliases:
+    - Horizon agent-learning benchmark
+  references:
+    - type: repository
+      source:
+        url: https://github.com/orinlabs/horizon
+      purposes:
+        - identification
+        - research
+      authority: official

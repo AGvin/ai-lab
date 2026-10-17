@@ -1,0 +1,34 @@
+entity:
+  id: catalog/datasets/tau-bench
+  type: dataset
+  name: τ-bench
+  aliases:
+    - tau-bench
+    - tau2-bench
+    - tau3-bench
+    - τ²-bench
+    - τ³-bench
+  references:
+    - type: official-site
+      source:
+        url: https://taubench.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/sierra-research/tau2-bench
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://sierra.ai/resources/research/tau-3-bench-knowledge
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/sierra

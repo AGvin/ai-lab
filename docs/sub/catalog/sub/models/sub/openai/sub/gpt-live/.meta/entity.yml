@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/openai/gpt-live
+  type: model-family
+  name: GPT-Live
+  references:
+    - type: release-notes
+      source:
+        url: https://openai.com/index/introducing-gpt-live/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://openai.com/index/introducing-gpt-live-1-in-the-api/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai
+    - type: has-member
+      target: catalog/models/openai/gpt-live/models/gpt-live-1
+    - type: has-member
+      target: catalog/models/openai/gpt-live/models/gpt-live-1-mini

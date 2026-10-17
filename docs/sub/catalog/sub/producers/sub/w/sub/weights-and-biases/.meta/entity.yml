@@ -1,0 +1,33 @@
+entity:
+  id: catalog/producers/w/weights-and-biases
+  type: organization
+  name: Weights & Biases, Inc.
+  aliases:
+    - W&B
+  references:
+    - type: official-site
+      source:
+        url: https://wandb.ai/site/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.wandb.ai/weave/
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.coreweave.com/companies/weights-and-biases
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: CoreWeave states that it acquired Weights & Biases, Inc. on 2025-05-05.
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/observability-platforms/wandb-weave
+    - type: owned-by
+      target: catalog/producers/c/coreweave

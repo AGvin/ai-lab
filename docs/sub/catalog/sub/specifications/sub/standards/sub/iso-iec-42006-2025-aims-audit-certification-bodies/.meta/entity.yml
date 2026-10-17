@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-42006-2025-aims-audit-certification-bodies
+  name: ISO/IEC 42006:2025 — Requirements for bodies providing audit and certification of artificial intelligence management systems
+  aliases:
+    - ISO/IEC 42006:2025
+    - ISO 42006
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/42006
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record identifying Edition 1 as a published International Standard.

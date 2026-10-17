@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/arc-agi-1
+  type: dataset
+  name: ARC-AGI-1
+  aliases:
+    - Abstraction and Reasoning Corpus v1
+  references:
+    - type: official-site
+      source:
+        url: https://arcprize.org/arc-agi/1
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/fchollet/ARC-AGI
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/f/francois-chollet

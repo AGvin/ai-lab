@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/data-infrastructure/vector-search/chroma
+  type: software
+  name: Chroma
+  references:
+    - type: documentation
+      source:
+        url: https://docs.trychroma.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/chroma-core/chroma
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/chroma

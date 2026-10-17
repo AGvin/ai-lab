@@ -1,0 +1,32 @@
+entity:
+  id: catalog/services/gateways/model-gateways/kong-ai-gateway
+  type: service
+  name: Kong AI Gateway
+  aliases:
+    - Kong AI Gateway 2.0
+  references:
+    - type: release-notes
+      source:
+        url: https://konghq.com/blog/product-releases/kong-ai-gateway-2-0-ga
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Kong announcement identifying AI Gateway 2.0 as generally available on 2026-09-01.
+    - type: article
+      source:
+        url: https://konghq.com/blog/product-releases/kong-ai-gateway-2-0-agentic-ai
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Kong announcement establishing AI Gateway 2.x as a product with its own runtime, control plane, Admin API, versioning, and release cadence distinct from Kong Gateway 3.x.
+    - type: documentation
+      source:
+        url: https://developer.konghq.com/ai-gateway/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/k/kong-inc

@@ -1,0 +1,97 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:310f0171fa33f77c0c2a5fce94e996b1cbd3cf0d
+    parent:
+      entity.yml: gitblob:d224be5acd999f8e9aa10833250317466daf8311
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/gateways/model-gateways/kong-ai-gateway
+        type: service
+        name: Kong AI Gateway
+        aliases:
+        - Kong AI Gateway 2.0
+        references:
+        - type: release-notes
+          source:
+            url: https://konghq.com/blog/product-releases/kong-ai-gateway-2-0-ga
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Kong announcement identifying AI Gateway 2.0 as generally available
+            on 2026-09-01.
+        - type: article
+          source:
+            url: https://konghq.com/blog/product-releases/kong-ai-gateway-2-0-agentic-ai
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Kong announcement establishing AI Gateway 2.x as a product with its
+            own runtime, control plane, Admin API, versioning, and release cadence
+            distinct from Kong Gateway 3.x.
+        - type: documentation
+          source:
+            url: https://developer.konghq.com/ai-gateway/
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/k/kong-inc
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

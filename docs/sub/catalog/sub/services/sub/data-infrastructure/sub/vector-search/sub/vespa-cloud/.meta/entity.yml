@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/data-infrastructure/vector-search/vespa-cloud
+  type: service
+  name: Vespa Cloud
+  references:
+    - type: documentation
+      source:
+        url: https://cloud.vespa.ai/en/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.vespa.ai/en/operations/production-deployment.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/vespa-ai

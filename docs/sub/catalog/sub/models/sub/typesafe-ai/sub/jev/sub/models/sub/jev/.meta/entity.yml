@@ -1,0 +1,27 @@
+entity:
+  id: catalog/models/typesafe-ai/jev/models/jev
+  type: model
+  name: Jev
+  references:
+    - type: article
+      source:
+        url: https://typesafe.ai/blog/introducing-system-one-models-and-jev
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://typesafe.ai/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://api.typesafe.ai/docs
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/typesafe-ai/jev

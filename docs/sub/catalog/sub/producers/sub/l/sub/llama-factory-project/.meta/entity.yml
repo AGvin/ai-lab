@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/l/llama-factory-project
+  type: organization
+  name: LLaMA Factory Project
+  references:
+    - type: repository
+      source:
+        url: https://github.com/hiyouga/LlamaFactory
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://llamafactory.readthedocs.io/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/llama-factory

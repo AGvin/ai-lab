@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/data-generation-and-curation/encord
+  type: service
+  name: Encord
+  references:
+    - type: documentation
+      source:
+        url: https://docs.encord.com/solutions-documentation/applied-ai/data-lifecycle
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.encord.com/solutions-documentation/applied-ai/end-to-end-walkthrough
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/e/encord

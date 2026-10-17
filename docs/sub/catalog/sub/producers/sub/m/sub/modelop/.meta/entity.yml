@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/m/modelop
+  type: organization
+  name: ModelOp
+  references:
+    - type: official-site
+      source:
+        url: https://www.modelop.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/ai-management-platforms/modelop-enterprise-ai-command-center

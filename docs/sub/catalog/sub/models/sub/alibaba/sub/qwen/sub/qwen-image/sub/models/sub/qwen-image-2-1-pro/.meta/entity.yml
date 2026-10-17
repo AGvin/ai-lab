@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen-image/models/qwen-image-2-1-pro
+  type: model
+  name: Qwen-Image-2.1-Pro
+  aliases:
+    - qwen-image-2.1-pro
+  references:
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/qwen-image-2-1-pro
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/newly-released-models
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen-image

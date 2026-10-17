@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:467b8a6b9013dfa01f0882a61e2c446b3ec151a2
+      entity.yml: gitblob:a5fff74f937ac08da5d00ec3f6533ea3bbf4c92a
     parent:
       entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
   state:
@@ -69,9 +69,27 @@ cache:
           purposes:
           - research
           authority: official
+        - type: other
+          source:
+            url: https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-completes-acquisition-portkey-secure-ai
+          purposes:
+          - research
+          authority: official
+          note: First-party announcement confirming Palo Alto Networks completed its
+            acquisition of Portkey on May 29, 2026.
+        - type: article
+          source:
+            url: https://www.paloaltonetworks.com/blog/2026/07/announcing-general-availability-of-prisma-airs-ai-gateway/
+          purposes:
+          - research
+          authority: official
+          note: First-party announcement documenting the current Prisma AIRS AI Gateway
+            commercial surface built with Portkey technology.
         relations:
         - type: produces
           target: catalog/software/gateways/model-gateways/portkey-ai-gateway
+        - type: owned-by
+          target: catalog/producers/p/palo-alto-networks
     aliases:
       effective:
         schema: default

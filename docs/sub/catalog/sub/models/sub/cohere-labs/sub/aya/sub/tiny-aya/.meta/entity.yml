@@ -1,0 +1,29 @@
+entity:
+  id: catalog/models/cohere-labs/aya/tiny-aya
+  type: model-series
+  name: Tiny Aya
+  references:
+    - type: official-site
+      source:
+        url: https://cohere.com/research/aya
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/tiny-aya
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere-labs/aya
+    - type: has-member
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-global
+    - type: has-member
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-earth
+    - type: has-member
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-fire
+    - type: has-member
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-water

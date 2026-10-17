@@ -12,7 +12,7 @@
 - Keep the introduction short and model-family focused.
 - Link Qwen Team from the canonical `produced-by` relation.
 - Include the official Qwen website and official Hugging Face organization.
-- Link Qwen2.5-Coder, Qwen3, Qwen3-Coder, and Qwen3.8 as child model series.
+- Link Qwen2.5-Coder, Qwen3, Qwen3-Coder, Qwen3.8, Qwen3-VL, Qwen Omni, and Qwen-Image as currently materialized child model series.
 - Do not infer missing Qwen branches merely from naming; materialize additional series when current source evidence and content justify them.
 
 ## Validation

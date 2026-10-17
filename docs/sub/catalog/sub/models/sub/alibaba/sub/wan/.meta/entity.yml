@@ -1,0 +1,32 @@
+entity:
+  id: catalog/models/alibaba/wan
+  type: model-family
+  name: Wan
+  references:
+    - type: official-site
+      source:
+        url: https://wan.video/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Wan-Video
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/video-generate-edit-model
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/w/wan-team
+    - type: has-member
+      target: catalog/models/alibaba/wan/wan-3-0
+    - type: has-member
+      target: catalog/models/alibaba/wan/wan-2-7

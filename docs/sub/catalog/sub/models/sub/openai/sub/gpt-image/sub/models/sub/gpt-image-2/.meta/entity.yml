@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/openai/gpt-image/models/gpt-image-2
+  type: model
+  name: GPT-Image-2
+  aliases:
+    - gpt-image-2
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-image-2
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://developers.openai.com/api/docs/changelog
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/openai/gpt-image

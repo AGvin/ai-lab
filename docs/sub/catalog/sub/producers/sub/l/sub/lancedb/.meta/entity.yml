@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/l/lancedb
+  type: organization
+  name: LanceDB
+  references:
+    - type: official-site
+      source:
+        url: https://www.lancedb.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/lancedb
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/data-infrastructure/vector-search/lancedb

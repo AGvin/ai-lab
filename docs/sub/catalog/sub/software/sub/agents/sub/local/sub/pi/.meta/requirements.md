@@ -5,9 +5,11 @@
 - Identify Pi as a minimal local terminal coding harness whose core intentionally stays small while workflow-specific behavior is added through TypeScript extensions, Agent Skills, prompt templates, themes, and Pi packages.
 - Preserve Mario Zechner (`badlogic`) as Pi's original/current package author and producer while keeping creator provenance distinct from current Earendil Works organizational/package stewardship.
 - Preserve its normal interactive terminal use plus programmatic/non-interactive surfaces such as print/JSON modes, SDK embedding, RPC/JSONL integration, and custom interfaces without turning those surfaces into separate product identities.
+- Reflect the October 1, 2026 Pi 1.0 release as an update to the same terminal coding-agent product, including Codemode/MCP, virtual models, deferred tool loading, and transcript-aware changes, without freezing minor release-specific details.
 - Preserve project-local instructions/context and the distinction between Pi's small core and executable extensions/packages that can add tools, commands, UI, hooks, subagents, or other behavior.
 - Preserve current stewardship accurately: Pi moved to the Earendil Works organization and `@earendil-works` package scope in May 2026 while retaining the same product identity and direction.
 - Preserve OMP as a separate derived product in reader-facing lineage context rather than a Pi version or alias.
+- Keep the separately published experimental `@earendil-works/pi-durable` framework distinct from Pi 1.0 coding agent: durable/restartable concurrent conversations, storage backends and replaceable tool execution environments do not imply first-party managed Pi Cloud hosting or automatic adoption into the Pi CLI.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Preserve useful legacy trust boundaries around shell/file access, project instructions, provider credentials, extensions, skills, prompt templates, packages, custom tools, and programmatic/non-interactive operation.
 - Reflect the current project-trust boundary: project-local extensions, skills, prompts, themes, and package-managed extensions are code/content trust inputs; non-interactive modes do not present the ordinary interactive project-trust prompt, so automation requires explicit environment/repository trust controls.
@@ -24,4 +26,5 @@
 - Extensions, skills, templates, themes, and packages remain distinct mechanisms and executable package/extension trust is not understated.
 - Non-interactive operation is not described as inheriting an interactive project-trust prompt that it does not show.
 - The OMP derived product remains a separate sibling identity.
+- Pi Durable is not presented as an upgrade, alternate version of the Pi CLI, or a hosted execution tier; independent framework catalog intake remains a separate scope.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

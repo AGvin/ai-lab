@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/c/cerebrium-inc
+  type: organization
+  name: Cerebrium Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://www.cerebrium.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://cerebrium.ai/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/infrastructure/cerebrium

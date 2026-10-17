@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/amazon/strands-decider
+  type: model-family
+  name: Strands Decider
+  references:
+    - type: repository
+      source:
+        url: https://github.com/strands-labs/strands-decider
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/amazon-web-services
+    - type: has-member
+      target: catalog/models/amazon/strands-decider/models/strands-decider-2b-hobson-v21

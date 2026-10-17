@@ -4,6 +4,10 @@ AdalFlow is an open-source Python library for building and automatically optimiz
 
 That combination places AdalFlow under programming and optimization rather than under a single use-case category such as RAG or agents.
 
+## Relations
+
+- Produced by: [SylphAI, Inc.](../../../../../../../producers/sub/s/sub/sylphai-inc/)
+
 ## Official resources
 
 - [AdalFlow documentation](https://adalflow.sylph.ai/)

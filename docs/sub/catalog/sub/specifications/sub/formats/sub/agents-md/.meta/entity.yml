@@ -1,0 +1,28 @@
+entity:
+  id: catalog/specifications/formats/agents-md
+  name: AGENTS.md
+  identity_note: Widely adopted open Markdown convention for project instructions for coding agents; not a separately ratified schema or detailed normative conformance standard.
+  references:
+    - type: specification
+      source:
+        url: https://agents.md/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/agentsmd/agents.md
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://openai.com/index/agentic-ai-foundation/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: maintained-by
+      target: catalog/producers/a/agentic-ai-foundation

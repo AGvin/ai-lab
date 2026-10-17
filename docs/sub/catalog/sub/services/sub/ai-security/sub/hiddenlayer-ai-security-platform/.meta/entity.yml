@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/ai-security/hiddenlayer-ai-security-platform
+  type: service
+  name: HiddenLayer AI Security Platform
+  references:
+    - type: official-site
+      source:
+        url: https://www.hiddenlayer.com/platform
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.hiddenlayer.com/platform/ai-runtime-security
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/hiddenlayer

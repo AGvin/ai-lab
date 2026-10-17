@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-optimization-and-compilation/hugging-face-optimum
+  type: software
+  name: Hugging Face Optimum
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/optimum/index
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/huggingface/optimum
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/hugging-face-inc

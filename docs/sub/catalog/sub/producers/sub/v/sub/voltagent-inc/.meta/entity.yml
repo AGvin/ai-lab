@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/v/voltagent-inc
+  type: organization
+  name: VoltAgent Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://voltagent.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/VoltAgent/voltagent
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agent-frameworks/voltagent

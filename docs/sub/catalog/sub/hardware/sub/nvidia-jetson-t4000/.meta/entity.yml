@@ -1,0 +1,28 @@
+entity:
+  id: catalog/hardware/nvidia-jetson-t4000
+  type: hardware
+  name: NVIDIA Jetson T4000
+  references:
+    - type: article
+      source:
+        url: https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developer.nvidia.com/embedded/lifecycle
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/services/assistant-workspaces/deepseek
+  type: service
+  name: DeepSeek
+  aliases:
+    - DeepSeek Chat
+    - DeepSeek App
+  references:
+    - type: official-site
+      source:
+        url: https://deepseek.com/en/index.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://api-docs.deepseek.com/news/news250115/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/deepseek

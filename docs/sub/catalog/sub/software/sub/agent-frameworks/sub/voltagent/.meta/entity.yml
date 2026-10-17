@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/agent-frameworks/voltagent
+  type: software
+  name: VoltAgent
+  references:
+    - type: repository
+      source:
+        url: https://github.com/VoltAgent/voltagent
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/VoltAgent/voltagent/releases
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://voltagent.dev/docs/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/voltagent-inc

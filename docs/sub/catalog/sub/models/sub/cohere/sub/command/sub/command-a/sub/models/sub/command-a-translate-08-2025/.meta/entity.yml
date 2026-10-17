@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/cohere/command/command-a/models/command-a-translate-08-2025
+  type: model
+  name: Command A Translate
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/command-a-translate
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.cohere.com/v1/changelog/2025-08-28-command-a-translate
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere/command/command-a

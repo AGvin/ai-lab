@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/google/gemma/shieldgemma-2
+  type: model
+  name: ShieldGemma 2
+  references:
+    - type: official-site
+      source:
+        url: https://deepmind.google/models/gemma/shieldgemma-2/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemma/docs/releases
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/gemma

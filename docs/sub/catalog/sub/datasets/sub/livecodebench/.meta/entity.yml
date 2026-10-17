@@ -1,0 +1,27 @@
+entity:
+  id: catalog/datasets/livecodebench
+  type: dataset
+  name: LiveCodeBench
+  aliases:
+    - LCB
+  references:
+    - type: official-site
+      source:
+        url: https://livecodebench.github.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/LiveCodeBench/LiveCodeBench
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/livecodebench/
+      purposes:
+        - research
+      authority: official

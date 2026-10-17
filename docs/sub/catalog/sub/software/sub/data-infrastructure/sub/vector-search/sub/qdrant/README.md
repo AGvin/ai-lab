@@ -4,6 +4,10 @@ Qdrant is open-source vector-search infrastructure for storing, searching, and m
 
 Qdrant can be operated as self-managed software. Qdrant Cloud is a separate hosted operating surface and should not be treated as the same deployment boundary as the software profile.
 
+## Relations
+
+- Produced by: [Qdrant Solutions GmbH](../../../../../../../producers/sub/q/sub/qdrant-solutions-gmbh/)
+
 ## Official resources
 
 - [Qdrant documentation](https://qdrant.tech/documentation/)

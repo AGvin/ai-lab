@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/s/sierra
+  type: organization
+  name: Sierra
+  references:
+    - type: official-site
+      source:
+        url: https://sierra.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/sierra-research/tau2-bench
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/datasets/tau-bench

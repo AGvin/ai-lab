@@ -1,0 +1,23 @@
+entity:
+  id: catalog/services/infrastructure/nvidia-brev
+  type: service
+  name: NVIDIA Brev
+  aliases:
+    - Brev
+  references:
+    - type: official-site
+      source:
+        url: https://brev.nvidia.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/brev/getting-started/overview
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

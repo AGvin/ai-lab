@@ -1,0 +1,21 @@
+entity:
+  id: catalog/hardware/amd-instinct-mi350p
+  type: hardware-product
+  name: AMD Instinct MI350P
+  references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/accelerators/instinct/mi350/mi350p.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.amd.com/en/blogs/2026/amd-instinct-mi350p-pcie-gpus-run-enterprise-ai-on-your.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/advanced-micro-devices-inc

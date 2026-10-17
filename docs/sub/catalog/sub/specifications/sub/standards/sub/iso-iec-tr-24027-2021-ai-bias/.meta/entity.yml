@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-tr-24027-2021-ai-bias
+  name: ISO/IEC TR 24027:2021 — Bias in AI systems and AI aided decision making
+  aliases:
+    - ISO/IEC TR 24027:2021
+    - ISO 24027
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/77607.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO identifies Edition 1 as a published Technical Report from November 2021.

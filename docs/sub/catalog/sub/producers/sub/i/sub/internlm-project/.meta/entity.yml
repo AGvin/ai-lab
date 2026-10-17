@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/i/internlm-project
+  type: organization
+  name: InternLM Project
+  references:
+    - type: repository
+      source:
+        url: https://github.com/InternLM
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/InternLM/lmdeploy
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/lmdeploy

@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/skild-ai/skild-brain
+  type: model-family
+  name: Skild Brain
+  references:
+    - type: article
+      source:
+        url: https://www.skild.ai/blogs/building-the-general-purpose-robotic-brain
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.skild.ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/skild-ai
+    - type: has-member
+      target: catalog/models/skild-ai/skild-brain/models/s1

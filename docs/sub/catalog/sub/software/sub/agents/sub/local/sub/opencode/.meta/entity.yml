@@ -32,6 +32,18 @@ entity:
         - research
       authority: official
       note: Official OpenCode Terms of Use identifying Anomaly Innovations, Inc.
+    - type: documentation
+      source:
+        url: https://opencode.ai/docs/github/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://opencode.ai/docs/server/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/a/anomaly-innovations-inc

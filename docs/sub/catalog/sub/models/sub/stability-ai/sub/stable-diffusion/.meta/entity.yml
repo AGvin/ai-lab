@@ -1,0 +1,20 @@
+entity:
+  id: catalog/models/stability-ai/stable-diffusion
+  type: model-family
+  name: Stable Diffusion
+  references:
+    - type: official-site
+      source:
+        url: https://stability.ai/stable-image/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://stability.ai/core-models
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/stability-ai
+    - type: has-member
+      target: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5

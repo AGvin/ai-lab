@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/agent-frameworks/nvidia-nemo-agent-toolkit
+  type: software
+  name: NVIDIA NeMo Agent Toolkit
+  references:
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA/NeMo-Agent-Toolkit
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/NVIDIA/NeMo-Agent-Toolkit/releases
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/nemo/agent-toolkit/latest/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

@@ -1,0 +1,15 @@
+entity:
+  id: catalog/datasets/butter-bench
+  type: dataset
+  name: Butter-Bench
+  references:
+    - type: official-site
+      source:
+        url: https://andonlabs.com/evals/butter-bench
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/andon-labs

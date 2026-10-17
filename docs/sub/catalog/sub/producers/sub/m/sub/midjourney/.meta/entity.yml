@@ -1,0 +1,18 @@
+entity:
+  id: catalog/producers/m/midjourney
+  type: organization
+  name: Midjourney
+  references:
+    - type: official-site
+      source:
+        url: https://www.midjourney.com/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.midjourney.com/
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/midjourney/midjourney

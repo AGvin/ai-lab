@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/agent-integration-platforms/pipedream-connect
+  type: service
+  name: Pipedream Connect
+  references:
+    - type: official-site
+      source:
+        url: https://pipedream.com/connect
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://pipedream.com/docs/connect
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/pipedream-inc

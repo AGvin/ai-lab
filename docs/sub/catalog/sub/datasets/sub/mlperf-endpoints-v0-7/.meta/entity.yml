@@ -1,0 +1,22 @@
+entity:
+  id: catalog/datasets/mlperf-endpoints-v0-7
+  type: dataset
+  name: MLPerf Endpoints v0.7
+  references:
+    - type: article
+      source:
+        url: https://mlcommons.org/2026/07/mlperf-endpoints-v0-7-release/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://mlcommons.org/benchmarks/endpoints/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mlcommons

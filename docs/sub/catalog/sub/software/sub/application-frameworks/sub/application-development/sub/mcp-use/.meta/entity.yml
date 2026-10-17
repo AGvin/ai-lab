@@ -1,0 +1,38 @@
+entity:
+  id: catalog/software/application-frameworks/application-development/mcp-use
+  type: software
+  name: mcp-use
+  references:
+    - type: repository
+      source:
+        url: https://github.com/mcp-use/mcp-use
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mcp-use.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mcp-use.com/python/getting-started/quickstart
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: The Python SDK documents independent server, asynchronous client and agent APIs.
+    - type: official-site
+      source:
+        url: https://manufact.com/mcp-use
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Manufact's product page identifies the open-source TypeScript and Python SDKs separately from Manufact Cloud.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mcp-use

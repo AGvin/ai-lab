@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/w/workos
+  type: organization
+  name: WorkOS
+  references:
+    - type: official-site
+      source:
+        url: https://workos.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://workos.com/docs
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/agent-identity-and-access/workos-agent-auth

@@ -1,0 +1,28 @@
+entity:
+  id: catalog/producers/w/webarena-x
+  type: organization
+  name: WebArena-x Research Team
+  aliases:
+    - WebArena-x
+  references:
+    - type: official-site
+      source:
+        url: https://webarena.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/web-arena-x/webarena
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/datasets/webarena
+    - type: produces
+      target: catalog/datasets/visualwebarena
+    - type: produces
+      target: catalog/datasets/webarena-infinity

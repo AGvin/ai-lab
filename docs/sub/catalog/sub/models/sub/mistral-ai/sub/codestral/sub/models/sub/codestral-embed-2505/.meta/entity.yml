@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/mistral-ai/codestral/models/codestral-embed-2505
+  type: model
+  name: Codestral Embed 2505
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/codestral-embed-25-05
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/codestral

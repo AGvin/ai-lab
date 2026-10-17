@@ -21,3 +21,21 @@ entity:
   relations:
     - type: produces
       target: catalog/models/cohere/command
+    - type: produces
+      target: catalog/models/cohere/north
+    - type: produces
+      target: catalog/models/cohere/transcribe
+    - type: produces
+      target: catalog/models/cohere/parse
+    - type: produces
+      target: catalog/models/cohere/embed
+    - type: produces
+      target: catalog/models/cohere/rerank
+    - type: has-part
+      target: catalog/producers/c/cohere-labs
+    - type: produces
+      target: catalog/services/assistant-workspaces/cohere-north
+    - type: produces
+      target: catalog/services/infrastructure/cohere-model-vault
+    - type: produces
+      target: catalog/services/model-apis/cohere-platform

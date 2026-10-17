@@ -1,0 +1,17 @@
+entity:
+  id: catalog/producers/o/oracle
+  type: organization
+  name: Oracle
+  aliases:
+    - Oracle Corporation
+  references:
+    - type: official-site
+      source:
+        url: https://www.oracle.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/infrastructure/oracle-ai-agent-studio-for-fusion-applications

@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-42005-2025-ai-system-impact-assessment
+  name: ISO/IEC 42005:2025 — AI system impact assessment
+  aliases:
+    - ISO/IEC 42005:2025
+    - ISO 42005
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/42005
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record identifying Edition 1 as a published International Standard.

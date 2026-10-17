@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/openai/text-embedding/models/text-embedding-3-large
+  type: model
+  name: text-embedding-3-large
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/text-embedding-3-large
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/openai/text-embedding

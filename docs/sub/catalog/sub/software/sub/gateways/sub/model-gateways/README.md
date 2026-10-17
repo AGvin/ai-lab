@@ -1,11 +1,15 @@
 # Model Gateways
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
-
-Gateways designed primarily around model-provider abstraction, unified model APIs, aliases, routing, fallback, budgets, and model-specific access policies.
+Gateways for routing requests to model providers, exposing compatible model APIs and applying model-specific access, monitoring and reliability policies. Routing does not inherently provide inference compute or pooled GPU memory.
 
 ## Child pages
 
-- [`litellm/`](./sub/litellm/)
-- [`portkey-ai-gateway/`](./sub/portkey-ai-gateway/)
-- [`bifrost/`](./sub/bifrost/)
+- [agentgateway](./sub/agentgateway/) — gateway for agent, tool and model connectivity.
+- [Bifrost](./sub/bifrost/) — inference/model-provider gateway.
+- [Helicone](./sub/helicone/) — LLM gateway and observability software.
+- [LiteLLM](./sub/litellm/) — model-provider compatibility and routing gateway.
+- [NVIDIA Personal AI Router](./sub/nvidia-pair/) — LAN-local routing of complete inference requests.
+- [OGX](./sub/ogx/) — provider gateway with server-side agentic APIs.
+- [OmniRoute](./sub/omniroute/) — multi-provider routing software.
+- [Portkey AI Gateway](./sub/portkey-ai-gateway/) — model API gateway and routing software.
+- [TensorZero](./sub/tensorzero/) — LLM gateway and optimization platform.

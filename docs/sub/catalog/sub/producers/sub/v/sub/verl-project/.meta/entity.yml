@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/v/verl-project
+  type: organization
+  name: verl Project
+  references:
+    - type: repository
+      source:
+        url: https://github.com/verl-project/verl
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://verl-project.github.io/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/verl

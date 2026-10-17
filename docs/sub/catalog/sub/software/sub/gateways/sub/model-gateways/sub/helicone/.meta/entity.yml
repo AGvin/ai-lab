@@ -24,3 +24,14 @@ entity:
         - research
       authority: official
       note: Official 2026 acquisition and maintenance-mode lifecycle announcement.
+    - type: terms-of-service
+      source:
+        url: https://www.helicone.ai/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: First-party terms establish Helicone, Inc. as the direct producer company; the acquisition announcement is separate from this historical attribution.
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/helicone-inc

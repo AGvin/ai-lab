@@ -16,6 +16,8 @@ This model-domain view groups the Gemini and Gemma model families represented in
 
 - [Gemini](./sub/gemini/) — provider-hosted multimodal model family.
 - [Gemma](./sub/gemma/) — open-weight language and multimodal model family for local, edge, self-hosted, and research use.
+- [Gemini Omni](./sub/gemini-omni/)
+- [Lyria](./sub/lyria/)
 
 Gemini APIs and Google AI Studio are access products rather than replacement model-family identities. Gemma's downloadable artifacts likewise remain distinct from hosted Gemini identities.
 

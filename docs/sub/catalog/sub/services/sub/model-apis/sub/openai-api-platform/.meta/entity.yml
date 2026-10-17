@@ -1,0 +1,17 @@
+entity:
+  id: catalog/services/model-apis/openai-api-platform
+  type: service
+  name: OpenAI API Platform
+  aliases:
+    - OpenAI API
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

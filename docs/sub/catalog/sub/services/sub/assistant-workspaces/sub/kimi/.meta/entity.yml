@@ -1,0 +1,27 @@
+entity:
+  id: catalog/services/assistant-workspaces/kimi
+  type: service
+  name: Kimi
+  references:
+    - type: official-site
+      source:
+        url: https://www.kimi.com/en/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.kimi.com/en/help/new-user-guide/overview
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.kimi.com/en/help/others/product-comparison
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/moonshot-ai

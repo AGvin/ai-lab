@@ -1,0 +1,24 @@
+entity:
+  id: catalog/services/assistant-workspaces/qwen-studio
+  type: service
+  name: Qwen Studio
+  aliases:
+    - Qwen
+    - Qwen Chat
+  references:
+    - type: product-page
+      source:
+        url: https://qwen.ai/qwenchat
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://qwen.ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/q/qwen-team

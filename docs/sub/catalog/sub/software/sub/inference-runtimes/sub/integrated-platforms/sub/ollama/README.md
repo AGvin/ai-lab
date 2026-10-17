@@ -8,9 +8,9 @@ Local Ollama requests are handled by the local runtime. Current Ollama privacy d
 
 Ollama also provides optional cloud-hosted models and a hosted API. Those requests use a separate cloud processing path and require account/API authentication. Invoking a cloud model through the local Ollama client does not make that inference local. Treat local API/network exposure, cloud credentials, model provenance/licenses, model storage, and connected tool integrations as separate trust boundaries.
 
-## Related
+## Relations
 
-- [Ollama Inc.](../../../../../../../producers/sub/o/sub/ollama-inc/) — canonical producer organization.
+- Produced by: [Ollama Inc.](../../../../../../../producers/sub/o/sub/ollama-inc/)
 
 ## Official resources
 
@@ -19,3 +19,4 @@ Ollama also provides optional cloud-hosted models and a hosted API. Those reques
 - [Ollama API](https://docs.ollama.com/api/introduction)
 - [Ollama repository](https://github.com/ollama/ollama)
 - [Ollama privacy](https://ollama.com/privacy)
+- [Ollama Terms](https://ollama.com/terms)

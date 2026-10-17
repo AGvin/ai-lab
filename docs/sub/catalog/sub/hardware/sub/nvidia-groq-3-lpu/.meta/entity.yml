@@ -1,0 +1,31 @@
+entity:
+  id: catalog/hardware/nvidia-groq-3-lpu
+  type: hardware-product
+  name: NVIDIA Groq 3 LPU
+  aliases:
+    - Groq 3 LPU
+  identity_note: NVIDIA documents Groq 3 LPU as the chip-level inference accelerator used in NVIDIA Groq 3 LPX racks; the LPX rack-scale system is not this hardware entity.
+  references:
+    - type: official-site
+      source:
+        url: https://www.nvidia.com/en-eu/data-center/lpx/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai
+      purposes:
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Opens-Agentic-AI-Frontier/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

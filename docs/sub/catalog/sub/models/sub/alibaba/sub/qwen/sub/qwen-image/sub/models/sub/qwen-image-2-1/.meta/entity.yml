@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen-image/models/qwen-image-2-1
+  type: model
+  name: Qwen-Image-2.1
+  aliases:
+    - Qwen/Qwen-Image-2.1
+  references:
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen-Image-2.1
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen-image

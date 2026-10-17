@@ -1,0 +1,79 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:c526d72bccb2c0d2f1b911ac49d007f205fab79d
+    parent:
+      entity.yml: gitblob:e21a641fd222e3693fcc21c31f99d186e5d5e639
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/ibm/granite-timeseries/models/granite-timeseries-flowstate-r1
+        type: model
+        name: Granite TimeSeries FlowState R1
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-timeseries-flowstate-r1
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: The current model card documents revision `r1.1`; loading without
+            an explicit revision yields the earlier r1.0 state.
+        relations:
+        - type: member-of
+          target: catalog/models/ibm/granite-timeseries
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

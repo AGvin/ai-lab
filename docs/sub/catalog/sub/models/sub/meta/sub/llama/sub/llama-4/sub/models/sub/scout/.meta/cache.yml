@@ -1,0 +1,91 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:6b0e83d6df5f35c7e15f50dc93e51e813aaf446d
+    parent:
+      entity.yml: gitblob:06ae89518ba38d99a48cebfa2e018891fbc36f6f
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/meta/llama/llama-4/models/scout
+        type: model
+        name: Llama 4 Scout
+        references:
+        - type: article
+          source:
+            url: https://ai.meta.com/blog/llama-4-multimodal-intelligence/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://ai.meta.com/llama/get-started/
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://youtu.be/MCiZtNUsJbc
+          purposes:
+          - research
+          authority: community
+          note: User-supplied practical evaluation reference; treat as qualitative
+            community evidence rather than authoritative model specification.
+        relations:
+        - type: member-of
+          target: catalog/models/meta/llama/llama-4
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

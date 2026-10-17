@@ -1,0 +1,31 @@
+entity:
+  id: catalog/software/development-tools/agentic-development-systems/google-cloud-data-agent-kit
+  type: software
+  name: Google Cloud Data Agent Kit
+  aliases:
+    - Data Agent Kit
+  references:
+    - type: product-page
+      source:
+        url: https://cloud.google.com/products/data-agent-kit
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/GoogleCloudPlatform/data-agent-kit-plugin
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://cloud.google.com/blog/topics/developers-practitioners/data-agent-kit-is-now-ga-bring-google-data-cloud-to-any-coding-agent
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google

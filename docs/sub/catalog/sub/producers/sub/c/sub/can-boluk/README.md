@@ -1,6 +1,6 @@
 # Can Bölük
 
-Can Bölük (`can1357`) is the individual producer and maintainer of OMP / Oh My Pi.
+Can Bölük (`can1357`) originally created OMP / Oh My Pi. The project is now developed and published by Stencil Labs, Inc.; his creator role remains distinct from current organizational stewardship.
 
 ## Related catalog entity
 

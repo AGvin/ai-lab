@@ -9,6 +9,8 @@
 - Keep trainer inventories, integration backends, supported model/data formats, version-specific algorithms, and other mutable details source-backed when expanded.
 - Include current official TRL documentation and repository references.
 
+- Describe the documented trainer-instantiation usage ping, including trainer/model-architecture, hardware and distributed-training categories, and the `HF_HUB_DISABLE_TELEMETRY=1` opt-out. Keep this telemetry boundary distinct from the training data and model artifacts themselves.
+
 ## Validation
 
 - The page reflects current broad post-training scope rather than implying TRL only implements classic RLHF.

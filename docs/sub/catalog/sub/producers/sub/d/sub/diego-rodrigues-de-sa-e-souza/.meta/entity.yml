@@ -1,0 +1,31 @@
+entity:
+  id: catalog/producers/d/diego-rodrigues-de-sa-e-souza
+  type: individual
+  name: Diego Rodrigues de Sa e Souza
+  aliases:
+    - diegosouzapw
+  references:
+    - type: repository
+      source:
+        url: https://github.com/diegosouzapw
+      purposes:
+        - identification
+      authority: official
+      note: The public profile provides the full name and identifies the account holder as OmniRoute's creator.
+    - type: repository
+      source:
+        url: https://github.com/diegosouzapw/diegosouzapw/blob/main/README.md
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: The profile README explicitly states creator and lead-maintainer responsibility for OmniRoute.
+    - type: repository
+      source:
+        url: https://github.com/diegosouzapw/OmniRoute
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/gateways/model-gateways/omniroute

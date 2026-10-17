@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/google/gemini-omni
+  type: model-family
+  name: Gemini Omni
+  references:
+    - type: release-notes
+      source:
+        url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/changelog
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google
+    - type: has-member
+      target: catalog/models/google/gemini-omni/models/gemini-omni-1-1-flash

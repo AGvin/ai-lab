@@ -21,3 +21,5 @@ entity:
       target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-27b
     - type: has-member
       target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-flash-next
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-max

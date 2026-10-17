@@ -1,0 +1,80 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:9e8f9dcf955137ff40006f7786c777cb5f9999eb
+    parent:
+      entity.yml: gitblob:cc9eac859b5fac0ed4b6aa1d708dd148d40d0e7e
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/mistral-ai/mistral-small/models/leanstral-1-5-119b-a6b
+        type: model
+        name: Leanstral 1.5 119B A6B
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/mistralai/Leanstral-1.5-119B-A6B
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Mistral identifies Leanstral 1.5 as an open-source Lean 4 code-agent
+            specialization built as part of the Mistral Small 4 family.
+        relations:
+        - type: member-of
+          target: catalog/models/mistral-ai/mistral-small
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

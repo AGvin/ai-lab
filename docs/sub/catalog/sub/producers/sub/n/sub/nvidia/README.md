@@ -6,6 +6,17 @@ NVIDIA is a producer represented in the catalog through the NVIDIA Skills collec
 
 - [NVIDIA Skills](../../../../../agent-skills/sub/collections/sub/nvidia-skills/)
 
+## Related software
+
+- [NVIDIA NeMo Relay](../../../../../software/sub/evaluation-and-observability/sub/observability-platforms/sub/nvidia-nemo-relay/) — agent-run scopes and telemetry.
+- [NVIDIA OpenShell](../../../../../software/sub/ai-management-platforms/sub/nvidia-openshell/) — agent runtime policy and management controls.
+- [NVIDIA AI Cluster Runtime](../../../../../software/sub/automation/sub/developer-automation/sub/nvidia-aicr/) — validated GPU cluster configuration generation.
+
+## Model optimization software
+
+- [NVIDIA Model Optimizer](../../../../../software/sub/model-and-data-platforms/sub/model-optimization-and-compilation/sub/nvidia-model-optimizer/) — model quantization and transformation toolkit.
+- [NVIDIA TensorRT Model Connect](../../../../../software/sub/model-and-data-platforms/sub/model-optimization-and-compilation/sub/nvidia-tensorrt-model-connect/) — compilation and deployment-bundle toolkit.
+
 ## Official resources
 
 - [Official website](https://www.nvidia.com/)

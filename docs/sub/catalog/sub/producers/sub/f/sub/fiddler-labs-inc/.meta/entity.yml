@@ -1,0 +1,25 @@
+entity:
+  id: catalog/producers/f/fiddler-labs-inc
+  type: organization
+  name: Fiddler Labs, Inc.
+  aliases:
+    - Fiddler AI
+    - Fiddler
+  references:
+    - type: official-site
+      source:
+        url: https://www.fiddler.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.sec.gov/Archives/edgar/data/1791224/000179122426000004/xslFormDX01/primary_doc.xml
+      purposes:
+        - identification
+      authority: upstream
+      note: Current 2026 issuer filing identifying Fiddler Labs, Inc.
+  relations:
+    - type: produces
+      target: catalog/software/evaluation-and-observability/observability-platforms/fiddler-ai-control-plane

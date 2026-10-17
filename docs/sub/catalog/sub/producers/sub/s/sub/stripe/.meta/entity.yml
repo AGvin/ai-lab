@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/s/stripe
+  type: organization
+  name: Stripe
+  references:
+    - type: official-site
+      source:
+        url: https://stripe.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/stripe/ai
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/agent-skills/collections/stripe-agent-skills

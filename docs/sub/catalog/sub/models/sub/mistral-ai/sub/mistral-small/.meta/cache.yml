@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e1c7ee5322a1a11a0ae84c06d1e8cc0103622e9d
+      entity.yml: gitblob:6fee90960438b1d532438431053f03163acaf2d0
     parent:
       entity.yml: gitblob:197caa1aad36286bbe020119ba37b7e29ba8dbf6
   state:
@@ -58,6 +58,8 @@ cache:
           target: catalog/producers/m/mistral-ai
         - type: has-member
           target: catalog/models/mistral-ai/mistral-small/models/mistral-small-4
+        - type: has-member
+          target: catalog/models/mistral-ai/mistral-small/models/leanstral-1-5-119b-a6b
     aliases:
       effective:
         schema: default

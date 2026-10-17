@@ -6,6 +6,8 @@ Canonical producer profiles beginning with G.
 
 - [Gabriel Almeida](./sub/gabriel-almeida/)
 - [ggml.ai](./sub/ggml-ai/)
+- [Galileo Technologies, Inc.](./sub/galileo-technologies-inc/)
+- [Giskard AI](./sub/giskard-ai/)
 - [GitHub, Inc.](./sub/github-inc/)
 - [Google](./sub/google/)
 - [Google Cloud](./sub/google-cloud/)

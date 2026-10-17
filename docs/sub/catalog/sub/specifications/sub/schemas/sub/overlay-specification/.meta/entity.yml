@@ -1,0 +1,29 @@
+entity:
+  id: catalog/specifications/schemas/overlay-specification
+  name: Overlay Specification
+  aliases:
+    - OpenAPI Overlay
+    - OAI Overlay
+  references:
+    - type: specification
+      source:
+        url: https://spec.openapis.org/overlay/v1.2.0.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: specification
+      source:
+        url: https://spec.openapis.org/overlay/
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/OAI/Overlay-Specification
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openapi-initiative

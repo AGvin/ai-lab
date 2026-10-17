@@ -2,11 +2,12 @@
 
 ## Requirements
 
-- Identify Cohere as the canonical producer organization for the represented Command model family; preserve `Cohere Inc.` as an alternative legal/provider name used in official model documentation.
-- Keep organization identity distinct from hosted Model Vault/API surfaces and individual Command models.
+- Identify Cohere as the canonical producer organization for represented Cohere model families and products; preserve `Cohere Inc.` as an alternative legal/provider name used in official documentation.
+- Keep organization identity distinct from Cohere North workspace, Model Vault managed inference, Compass retrieval, Cohere Platform/API surfaces, model families, and concrete models.
 - Render the standard `entity-relations` block from validated relation state.
 
 ## Validation
 
-- The Command `produced-by` relation has the matching `produces` inverse here.
-- Hosted product and pricing state is not generalized into producer identity.
+- Every represented Cohere `produced-by` relation has the matching `produces` inverse here.
+- The North workspace and North model family remain separate canonical identities despite shared naming.
+- Hosted product, deployment, pricing, and mutable availability state is not generalized into producer identity.

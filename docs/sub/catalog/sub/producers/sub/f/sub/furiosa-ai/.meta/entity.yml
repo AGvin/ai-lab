@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/f/furiosa-ai
+  type: organization
+  name: FuriosaAI
+  references:
+    - type: official-site
+      source:
+        url: https://furiosa.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/hardware/furiosa-rngd

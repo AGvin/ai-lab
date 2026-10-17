@@ -1,0 +1,21 @@
+entity:
+  id: catalog/datasets/drone-bench
+  type: dataset
+  name: Drone-Bench
+  references:
+    - type: official-site
+      source:
+        url: https://andonlabs.com/evals/drone-bench
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.anthropic.com/research/project-pilot
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/andon-labs

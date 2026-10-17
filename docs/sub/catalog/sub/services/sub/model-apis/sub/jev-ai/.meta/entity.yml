@@ -1,0 +1,31 @@
+entity:
+  id: catalog/services/model-apis/jev-ai
+  type: service
+  name: Jev AI
+  references:
+    - type: official-site
+      source:
+        url: https://thejevai.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://thejevai.com/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://thejevai.com/terms-of-service
+      purposes:
+        - research
+      authority: official
+    - type: privacy-policy
+      source:
+        url: https://thejevai.com/privacy-policy
+      purposes:
+        - research
+      authority: official

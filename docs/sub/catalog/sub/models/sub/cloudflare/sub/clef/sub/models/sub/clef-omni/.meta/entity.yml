@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/cloudflare/clef/models/clef-omni
+  type: model
+  name: Clef-omni
+  references:
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/ai/models/@cf/cloudflare/clef-omni/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developers.cloudflare.com/changelog/post/2026-10-09-clef-omni-workers-ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cloudflare/clef

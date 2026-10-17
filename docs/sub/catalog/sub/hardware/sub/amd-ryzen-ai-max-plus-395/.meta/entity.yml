@@ -1,0 +1,17 @@
+entity:
+  id: catalog/hardware/amd-ryzen-ai-max-plus-395
+  type: hardware
+  name: AMD Ryzen AI Max+ 395
+  aliases:
+    - Ryzen AI Max+ 395
+  references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-max-plus-395.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/advanced-micro-devices-inc

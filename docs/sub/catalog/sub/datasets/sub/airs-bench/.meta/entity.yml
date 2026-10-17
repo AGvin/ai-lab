@@ -1,0 +1,12 @@
+entity:
+  id: catalog/datasets/airs-bench
+  type: dataset
+  name: AIRS-Bench
+  references:
+    - type: repository
+      source:
+        url: https://github.com/facebookresearch/airs-bench
+      purposes:
+        - identification
+        - research
+      authority: official

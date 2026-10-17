@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/google/lyria
+  type: model-family
+  name: Lyria
+  references:
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/deprecations
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google
+    - type: has-member
+      target: catalog/models/google/lyria/models/lyria-3-5

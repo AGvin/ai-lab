@@ -1,0 +1,25 @@
+entity:
+  id: catalog/producers/l/lambda-inc
+  type: organization
+  name: Lambda, Inc.
+  aliases:
+    - Lambda
+  references:
+    - type: official-site
+      source:
+        url: https://lambda.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://lambda.ai/legal/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current Lambda terms identify Lambda, Inc. as the cloud contracting entity.
+  relations:
+    - type: produces
+      target: catalog/services/infrastructure/lambda-cloud

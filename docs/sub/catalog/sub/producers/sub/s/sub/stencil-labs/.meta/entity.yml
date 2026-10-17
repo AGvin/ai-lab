@@ -1,0 +1,31 @@
+entity:
+  id: catalog/producers/s/stencil-labs
+  type: organization
+  name: Stencil Labs, Inc.
+  aliases:
+    - Stencil
+  references:
+    - type: official-site
+      source:
+        url: https://stencil.so/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/stencil-hq
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/can1357/oh-my-pi
+      purposes:
+        - research
+      authority: official
+      note: Official OMP repository identifies Stencil Labs as current project builder and publisher.
+  relations:
+    - type: maintains
+      target: catalog/software/agents/local/omp

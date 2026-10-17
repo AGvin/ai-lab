@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/typesafe-ai/jev/models
+  type: catalog-index
+  name: Jev Models

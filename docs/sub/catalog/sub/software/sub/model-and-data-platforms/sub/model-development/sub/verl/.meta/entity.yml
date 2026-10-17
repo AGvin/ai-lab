@@ -1,0 +1,23 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-development/verl
+  type: software
+  name: verl
+  aliases:
+    - HybridFlow
+  references:
+    - type: repository
+      source:
+        url: https://github.com/verl-project/verl
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://verl-project.github.io/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/verl-project

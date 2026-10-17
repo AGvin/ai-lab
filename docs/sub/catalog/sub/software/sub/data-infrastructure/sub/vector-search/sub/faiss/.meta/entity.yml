@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/data-infrastructure/vector-search/faiss
+  type: software
+  name: Faiss
+  references:
+    - type: repository
+      source:
+        url: https://github.com/facebookresearch/faiss
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://faiss.ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/meta

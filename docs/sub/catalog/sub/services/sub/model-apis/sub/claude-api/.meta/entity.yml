@@ -1,0 +1,23 @@
+entity:
+  id: catalog/services/model-apis/claude-api
+  type: service
+  name: Claude API
+  aliases:
+    - Anthropic API
+  references:
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/api/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://platform.claude.com/docs/en/release-notes/overview
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/anthropic

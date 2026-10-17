@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/agent-frameworks/openhands-sdk
+  type: software
+  name: OpenHands Software Agent SDK
+  references:
+    - type: documentation
+      source:
+        url: https://docs.openhands.dev/sdk
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/OpenHands/software-agent-sdk
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/all-hands-ai-inc

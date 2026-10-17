@@ -1,0 +1,27 @@
+entity:
+  id: catalog/datasets/agents-last-exam
+  type: dataset
+  name: Agents' Last Exam
+  aliases:
+    - ALE
+  references:
+    - type: official-site
+      source:
+        url: https://agents-last-exam.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://rdi.berkeley.edu/blog/agents-last-exam/
+      purposes:
+        - identification
+        - research
+      authority: upstream
+    - type: repository
+      source:
+        url: https://github.com/MaxIntelligenceAgency/ALE-Benchmark
+      purposes:
+        - research
+      authority: official

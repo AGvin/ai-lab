@@ -1,0 +1,15 @@
+entity:
+  id: catalog/services/web-data/perplexity-search-api
+  type: service
+  name: Perplexity Search API
+  references:
+    - type: documentation
+      source:
+        url: https://docs.perplexity.ai/docs/search/quickstart
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/perplexity-ai

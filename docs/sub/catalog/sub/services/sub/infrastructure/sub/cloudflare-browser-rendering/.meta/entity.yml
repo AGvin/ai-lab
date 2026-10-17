@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/infrastructure/cloudflare-browser-rendering
+  type: service
+  name: Cloudflare Browser Rendering
+  references:
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/browser-rendering/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/api/resources/browser_rendering/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cloudflare

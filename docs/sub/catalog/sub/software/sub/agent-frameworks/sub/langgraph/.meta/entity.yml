@@ -17,6 +17,18 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.langchain.com/oss/javascript/langgraph/overview
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/langchain-ai/langgraphjs
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/l/langchain-inc

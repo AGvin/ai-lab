@@ -1,0 +1,29 @@
+entity:
+  id: catalog/services/web-data/parallel
+  type: service
+  name: Parallel
+  aliases:
+    - Parallel Web APIs
+  references:
+    - type: official-site
+      source:
+        url: https://parallel.ai/products/search
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.parallel.ai/search/search-quickstart
+      purposes:
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://parallel.ai/customer-terms
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/parallel-web-systems-inc

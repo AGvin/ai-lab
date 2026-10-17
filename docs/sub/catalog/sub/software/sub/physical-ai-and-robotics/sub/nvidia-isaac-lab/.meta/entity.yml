@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/physical-ai-and-robotics/nvidia-isaac-lab
+  type: software
+  name: NVIDIA Isaac Lab
+  references:
+    - type: official-site
+      source:
+        url: https://developer.nvidia.com/isaac/lab
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://isaac-sim.github.io/IsaacLab/main/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

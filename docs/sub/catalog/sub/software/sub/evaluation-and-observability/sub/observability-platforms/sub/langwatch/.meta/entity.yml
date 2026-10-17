@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/evaluation-and-observability/observability-platforms/langwatch
+  type: software
+  name: LangWatch
+  references:
+    - type: repository
+      source:
+        url: https://github.com/langwatch/langwatch
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/langwatch/langwatch/releases
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://langwatch.ai/docs/self-hosting/overview
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/langwatch

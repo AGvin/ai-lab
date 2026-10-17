@@ -1,0 +1,29 @@
+entity:
+  id: catalog/services/data-infrastructure/vector-search/cloudflare-ai-search
+  type: service
+  name: Cloudflare AI Search
+  aliases:
+    - AutoRAG
+  references:
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/ai-search/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/ai-search/concepts/how-ai-search-works/
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developers.cloudflare.com/changelog/post/2026-10-01-ai-search-generally-available/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cloudflare

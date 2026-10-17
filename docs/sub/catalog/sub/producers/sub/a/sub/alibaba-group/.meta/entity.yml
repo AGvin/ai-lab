@@ -16,8 +16,16 @@ entity:
       purposes:
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/agentscope-ai/agentscope
+      purposes:
+        - research
+      authority: official
   relations:
     - type: has-part
       target: catalog/producers/a/alibaba-cloud
     - type: produces
       target: catalog/software/gateways/api-management-gateways/higress
+    - type: produces
+      target: catalog/software/agent-frameworks/agentscope

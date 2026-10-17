@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/b/bentoml
+  type: organization
+  name: BentoML
+  references:
+    - type: official-site
+      source:
+        url: https://www.bentoml.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/bentoml/BentoML
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/integrated-platforms/bentoml

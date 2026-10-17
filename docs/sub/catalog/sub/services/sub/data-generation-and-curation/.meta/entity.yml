@@ -1,0 +1,4 @@
+entity:
+  id: catalog/services/data-generation-and-curation
+  type: catalog-index
+  name: Data Generation and Curation

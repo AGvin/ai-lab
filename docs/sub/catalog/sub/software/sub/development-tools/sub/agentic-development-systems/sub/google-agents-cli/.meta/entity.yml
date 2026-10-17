@@ -1,0 +1,25 @@
+entity:
+  id: catalog/software/development-tools/agentic-development-systems/google-agents-cli
+  type: software
+  name: Google Agents CLI
+  aliases:
+    - agents-cli
+  references:
+    - type: repository
+      source:
+        url: https://github.com/google/agents-cli
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/google/agents-cli/blob/main/RELEASE_NOTES.md
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Release notes identify version 1.0.0 on 2026-06-30 as the first generally available production-ready release and version 1.5.0 on 2026-09-01 as the current release checkpoint verified during intake.
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google

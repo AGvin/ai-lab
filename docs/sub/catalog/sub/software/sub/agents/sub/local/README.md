@@ -8,8 +8,6 @@ Local Agents are installable or self-managed agent products whose primary agent 
 - [Cline](./sub/cline/) — open-source coding agent for editor workflows with project access, file editing, terminal execution, browser use, and approval controls.
 - [Gemini CLI](./sub/gemini-cli/) — Google's open-source terminal agent for code understanding, repository work, command execution, and automation with Gemini services.
 - [Goose](./sub/goose/) — open-source local-first general-purpose agent with CLI and desktop surfaces, tools, extensions, and model-provider choice.
-- [Hermes Agent](./sub/hermes-agent/) — self-hostable personal agent with terminal and messaging surfaces, memory, skills, scheduled tasks, and provider choice.
-- [Kiro CLI](./sub/kiro-cli/) — terminal coding agent with custom agents, subagents, approval controls, tools, and MCP integration.
 - [mini-SWE-agent](./sub/mini-swe-agent/) — minimal software-engineering agent designed for inspectable and scriptable command-line task execution.
 - [OMP](./sub/omp/) — terminal coding agent derived from Pi with integrated developer tooling, subagents, browser capabilities, and extensions.
 - [OpenClaw](./sub/openclaw/) — self-hosted personal AI assistant platform built around a user-operated gateway, messaging channels, tools, skills, and automation.

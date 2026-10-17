@@ -1,0 +1,34 @@
+entity:
+  id: catalog/services/model-apis/together-ai
+  type: service
+  name: Together AI
+  references:
+    - type: official-site
+      source:
+        url: https://www.together.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.together.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: privacy-policy
+      source:
+        url: https://www.together.ai/privacy
+      purposes:
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://www.together.ai/terms-of-service
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/together-computer-inc

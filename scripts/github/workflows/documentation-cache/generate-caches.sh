@@ -3,10 +3,10 @@ set -uo pipefail
 output_file="$RUNNER_TEMP/documentation-cache-output.txt"
 set +e
 if [[ "$USE_FINGERPRINTS" == "true" ]]; then
-  python -m tools.documentation.metadata_tooling.cli cache --use-fingerprints 2>&1 | tee "$output_file"
+  python -m scripts.github.modules.documentation.cli cache --use-fingerprints 2>&1 | tee "$output_file"
   cli_status=${PIPESTATUS[0]}
 else
-  python -m tools.documentation.metadata_tooling.cli cache --no-use-fingerprints 2>&1 | tee "$output_file"
+  python -m scripts.github.modules.documentation.cli cache --no-use-fingerprints 2>&1 | tee "$output_file"
   cli_status=${PIPESTATUS[0]}
 fi
 set -e

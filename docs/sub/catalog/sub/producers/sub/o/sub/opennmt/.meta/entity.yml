@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/o/opennmt
+  type: organization
+  name: OpenNMT
+  references:
+    - type: repository
+      source:
+        url: https://github.com/OpenNMT
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://opennmt.net/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/ctranslate2

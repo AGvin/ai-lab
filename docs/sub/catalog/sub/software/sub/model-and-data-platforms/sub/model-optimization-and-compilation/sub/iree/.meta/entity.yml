@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-optimization-and-compilation/iree
+  type: software
+  name: IREE
+  references:
+    - type: documentation
+      source:
+        url: https://iree.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/iree-org/iree
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/iree-project

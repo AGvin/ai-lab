@@ -1,0 +1,18 @@
+entity:
+  id: catalog/producers/i/isomorphic-labs
+  type: organization
+  name: Isomorphic Labs
+  references:
+    - type: official-site
+      source:
+        url: https://www.isomorphiclabs.com/
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://deepmind.google/blog/alphafold-five-years-of-impact/
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/google/alphafold

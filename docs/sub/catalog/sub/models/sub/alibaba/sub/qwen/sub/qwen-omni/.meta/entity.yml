@@ -1,0 +1,27 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen-omni
+  type: model-series
+  name: Qwen Omni
+  references:
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/qwen-omni
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen3-Omni
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen
+    - type: produced-by
+      target: catalog/producers/q/qwen-team
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen-omni/models/qwen3-8-omni-flash
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen-omni/models/qwen3-8-omni-flash-realtime

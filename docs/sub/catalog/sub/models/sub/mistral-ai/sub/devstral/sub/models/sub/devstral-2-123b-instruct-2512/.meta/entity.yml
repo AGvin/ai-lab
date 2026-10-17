@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/mistral-ai/devstral/models/devstral-2-123b-instruct-2512
+  type: model
+  name: Devstral 2 123B Instruct 2512
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://mistral.ai/news/devstral-2-vibe-cli/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/devstral

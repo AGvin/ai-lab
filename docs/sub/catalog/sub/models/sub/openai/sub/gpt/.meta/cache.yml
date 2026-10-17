@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:fd9ce6cc90ff890dce741e7d034b35c883401cab
+      entity.yml: gitblob:41283cc5a240b398f20cface906530c76551e5eb
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
     parent:
       entity.yml: gitblob:0998a3482a167d36bf17518f6cee61217be3b020
@@ -59,6 +59,8 @@ cache:
           target: catalog/producers/o/openai
         - type: has-member
           target: catalog/models/openai/gpt/gpt-5-6
+        - type: has-member
+          target: catalog/models/openai/gpt/models/gpt-6-astra
     aliases:
       effective:
         schema: default

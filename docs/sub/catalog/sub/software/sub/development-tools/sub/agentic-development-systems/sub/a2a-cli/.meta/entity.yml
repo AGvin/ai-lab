@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/development-tools/agentic-development-systems/a2a-cli
+  type: software
+  name: A2A CLI
+  references:
+    - type: official-site
+      source:
+        url: https://a2a-protocol.org/latest/blog/2026/10/01/introducing-a2a-cli/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/a2aproject/a2a-cli
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/a2aproject/a2a-cli/releases
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: maintained-by
+      target: catalog/producers/a/agentic-ai-foundation

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/nvidia/nv-reason/models/nv-reason-cxr-3b
+  type: model
+  name: NV-Reason-CXR-3B
+  references:
+    - type: model-card
+      source:
+        url: https://huggingface.co/nvidia/NV-Reason-CXR-3B
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/advancing-explainable-ai-in-radiology-research-with-nvidia-clara-reason/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/nvidia/nv-reason

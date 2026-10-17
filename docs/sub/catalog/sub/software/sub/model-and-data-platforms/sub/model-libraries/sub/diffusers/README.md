@@ -4,6 +4,10 @@ Hugging Face Diffusers is an open-source library of pretrained diffusion-model p
 
 Individual pretrained models remain separate artifacts from the Diffusers software library that loads and runs them.
 
+## Relations
+
+- Produced by: [Hugging Face, Inc.](../../../../../../../producers/sub/h/sub/hugging-face-inc/)
+
 ## Official resources
 
 - [Diffusers documentation](https://huggingface.co/docs/diffusers/en/index)

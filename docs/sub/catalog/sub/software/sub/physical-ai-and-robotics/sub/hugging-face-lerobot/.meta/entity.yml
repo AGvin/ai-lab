@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/physical-ai-and-robotics/hugging-face-lerobot
+  type: software
+  name: Hugging Face LeRobot
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/lerobot/main/index
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/huggingface/lerobot
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/hugging-face-inc

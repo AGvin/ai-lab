@@ -16,6 +16,24 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://pydantic.dev/docs/ai/project/version-policy/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://pydantic.dev/docs/ai/project/changelog/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://pydantic.dev/docs/ai/capabilities/overview/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/p/pydantic

@@ -1,0 +1,12 @@
+entity:
+  id: catalog/models/technology-innovation-institute
+  type: model-producer-view
+  name: Technology Innovation Institute models
+  references:
+    - type: official-site
+      source:
+        url: https://falconllm.tii.ae/
+      purposes:
+        - identification
+        - research
+      authority: official

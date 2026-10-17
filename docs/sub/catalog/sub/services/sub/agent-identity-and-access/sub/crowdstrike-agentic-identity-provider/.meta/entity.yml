@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/agent-identity-and-access/crowdstrike-agentic-identity-provider
+  type: service
+  name: CrowdStrike Agentic Identity Provider
+  references:
+    - type: official-site
+      source:
+        url: https://www.crowdstrike.com/en-us/platform/next-gen-identity-security/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.crowdstrike.com/en-us/press-releases/crowdstrike-agentic-identity-provider-foundation-for-ai-agent-identity-security/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/crowdstrike

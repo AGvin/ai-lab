@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/l/labelbox
+  type: organization
+  name: Labelbox
+  references:
+    - type: official-site
+      source:
+        url: https://labelbox.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.labelbox.com/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/data-generation-and-curation/labelbox

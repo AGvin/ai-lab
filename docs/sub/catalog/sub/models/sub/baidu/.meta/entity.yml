@@ -1,0 +1,12 @@
+entity:
+  id: catalog/models/baidu
+  type: model-producer-view
+  name: Baidu models
+  references:
+    - type: official-site
+      source:
+        url: https://ernie.baidu.com/
+      purposes:
+        - identification
+        - research
+      authority: official

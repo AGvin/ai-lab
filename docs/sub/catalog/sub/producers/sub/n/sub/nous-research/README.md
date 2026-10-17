@@ -4,7 +4,7 @@ Nous Research is the organization behind Hermes Agent and other Nous Research AI
 
 ## Related catalog entity
 
-- [Hermes Agent](../../../../../software/sub/agents/sub/local/sub/hermes-agent/) — canonical Local Agent profile.
+- [Hermes Agent](../../../../../software/sub/agents/sub/hybrid/sub/hermes-agent/) — canonical Hybrid Agent profile spanning self-managed and hosted Hermes Cloud execution.
 
 ## Official resources
 

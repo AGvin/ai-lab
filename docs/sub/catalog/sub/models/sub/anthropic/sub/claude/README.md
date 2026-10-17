@@ -18,6 +18,10 @@ Claude is the long-lived model family. Sonnet, Opus, Haiku, and other durable Cl
 ## Model series
 
 - [Sonnet](./sub/sonnet/) — durable Sonnet line represented here by Claude Sonnet 5.
+- [Fable](./sub/fable/)
+- [Haiku](./sub/haiku/)
+- [Mythos](./sub/mythos/)
+- [Opus](./sub/opus/)
 
 ## Scope boundary
 

@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/meta/muse/models/muse-spark-1-1
+  type: model
+  name: Muse Spark 1.1
+  references:
+    - type: release-notes
+      source:
+        url: https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/meta/muse

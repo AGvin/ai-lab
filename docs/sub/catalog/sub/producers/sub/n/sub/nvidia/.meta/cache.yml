@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1f81c0126806c6c78ec6d20eb6cd1f6d87846553
+      entity.yml: gitblob:0125c398fb9e7ddfd9abbf90955350ae0fb721d8
     parent:
       entity.yml: gitblob:5e848f769005e6f901786fd212d8c9d8ccc468b3
   state:
@@ -57,18 +57,43 @@ cache:
           source:
             url: https://github.com/NVIDIA
           purposes:
-          - identification
           - research
           authority: official
         relations:
         - type: produces
+          target: catalog/models/nvidia/nemotron
+        - type: produces
           target: catalog/agent-skills/collections/nvidia-skills
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/garak
         - type: produces
           target: catalog/software/inference-runtimes/distributed-serving/nvidia-dynamo
         - type: produces
           target: catalog/software/inference-runtimes/inference-engines/tensorrt-llm
         - type: produces
           target: catalog/software/inference-runtimes/distributed-serving/llm-d
+        - type: produces
+          target: catalog/hardware/nvidia-h100
+        - type: produces
+          target: catalog/hardware/nvidia-b200
+        - type: produces
+          target: catalog/hardware/nvidia-b300
+        - type: produces
+          target: catalog/hardware/nvidia-rubin
+        - type: produces
+          target: catalog/hardware/nvidia-vera-cpu
+        - type: produces
+          target: catalog/hardware/nvidia-groq-3-lpu
+        - type: produces
+          target: catalog/services/infrastructure/nvidia-brev
+        - type: produces
+          target: catalog/software/physical-ai-and-robotics/nvidia-isaac-sim
+        - type: produces
+          target: catalog/software/physical-ai-and-robotics/nvidia-isaac-lab
+        - type: produces
+          target: catalog/software/physical-ai-and-robotics/nvidia-isaac-ros
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-development/nvidia-nemo-rl
     aliases:
       effective:
         schema: default

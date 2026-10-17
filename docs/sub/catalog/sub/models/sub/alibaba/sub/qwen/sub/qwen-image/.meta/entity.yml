@@ -1,0 +1,33 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen-image
+  type: model-series
+  name: Qwen-Image
+  references:
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen-Image-2.1
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/text-to-image
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen
+    - type: produced-by
+      target: catalog/producers/q/qwen-team
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen-image/models/qwen-image-2-1
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen-image/models/qwen-image-2-1-pro
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen-image/models/qwen-image-3-0
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen-image/models/qwen-image-3-0-pro
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen-image/models/qwen-image-2-1-turbo

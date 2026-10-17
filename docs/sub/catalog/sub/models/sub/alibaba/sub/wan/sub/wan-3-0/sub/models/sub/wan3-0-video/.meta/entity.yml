@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/alibaba/wan/wan-3-0/models/wan3-0-video
+  type: model
+  name: Wan3.0-Video
+  aliases:
+    - wan3.0-video
+  references:
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/wan3-0-video
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.alibabacloud.com/en/news/product/video-generation-model-wan30-officially-launched-nsb
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/wan/wan-3-0

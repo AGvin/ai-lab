@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/e/epoch-ai
+  type: organization
+  name: Epoch AI
+  references:
+    - type: official-site
+      source:
+        url: https://epoch.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://epoch.ai/frontiermath
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/datasets/frontiermath

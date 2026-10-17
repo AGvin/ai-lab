@@ -16,6 +16,42 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/agent-framework/overview
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-autogen/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/agent-framework/migration-guide/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/agent-framework/workflows/checkpoints
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/agent-framework/workflows/human-in-the-loop
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/agent-framework/agents/tools/tool-approval
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/m/microsoft

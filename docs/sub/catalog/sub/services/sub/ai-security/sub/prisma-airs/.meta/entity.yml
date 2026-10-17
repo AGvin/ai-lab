@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/ai-security/prisma-airs
+  type: service
+  name: Prisma AIRS
+  references:
+    - type: official-site
+      source:
+        url: https://www.paloaltonetworks.com/prisma/prisma-airs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.paloaltonetworks.com/ai-runtime-security
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/palo-alto-networks

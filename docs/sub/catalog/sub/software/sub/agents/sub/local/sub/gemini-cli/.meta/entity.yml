@@ -10,6 +10,24 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/sandbox.md
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/policy-engine.md
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/google-github-actions/run-gemini-cli
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/g/google

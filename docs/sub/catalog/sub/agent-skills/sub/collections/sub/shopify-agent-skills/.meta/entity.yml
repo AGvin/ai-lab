@@ -1,0 +1,15 @@
+entity:
+  id: catalog/agent-skills/collections/shopify-agent-skills
+  type: skill-collection
+  name: Shopify Agent Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/Shopify/agent-skills
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/shopify

@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/m/mcpjam
+  type: organization
+  name: MCPJam Inc
+  references:
+    - type: official-site
+      source:
+        url: https://www.mcpjam.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/MCPJam/inspector
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/development-tools/testing/mcpjam-inspector

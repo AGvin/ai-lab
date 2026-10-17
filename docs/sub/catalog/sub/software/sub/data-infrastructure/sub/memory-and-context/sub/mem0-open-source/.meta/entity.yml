@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/data-infrastructure/memory-and-context/mem0-open-source
+  type: software
+  name: Mem0 Open Source
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mem0.ai/open-source/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/mem0ai/mem0
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mem0

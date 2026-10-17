@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/mistral-ai/ministral
+  type: model-family
+  name: Ministral
+  references:
+    - type: release-notes
+      source:
+        url: https://mistral.ai/news/mistral-3/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai
+    - type: has-member
+      target: catalog/models/mistral-ai/ministral/models/ministral-3-3b-instruct-2512
+    - type: has-member
+      target: catalog/models/mistral-ai/ministral/models/ministral-3-8b-instruct-2512
+    - type: has-member
+      target: catalog/models/mistral-ai/ministral/models/ministral-3-14b-instruct-2512

@@ -1,0 +1,19 @@
+entity:
+  id: catalog/producers/r/raspberry-pi
+  type: producer
+  name: Raspberry Pi Ltd
+  aliases:
+    - Raspberry Pi
+  references:
+    - type: official-site
+      source:
+        url: https://www.raspberrypi.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/hardware/raspberry-pi-ai-hat-plus
+    - type: produces
+      target: catalog/hardware/raspberry-pi-ai-hat-plus-2

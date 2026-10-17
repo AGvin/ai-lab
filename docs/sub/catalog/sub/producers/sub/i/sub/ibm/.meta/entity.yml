@@ -1,0 +1,37 @@
+entity:
+  id: catalog/producers/i/ibm
+  type: organization
+  name: IBM
+  references:
+    - type: official-site
+      source:
+        url: https://www.ibm.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.ibm.com/watsonx
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/ai-management-platforms/ibm-watsonx-governance
+    - type: produces
+      target: catalog/services/ai-management-platforms/ibm-watsonx-orchestrate
+    - type: produces
+      target: catalog/models/ibm-nasa/nasa-ibm-lunar-foundation-model
+    - type: produces
+      target: catalog/models/ibm/granite-4-2
+    - type: produces
+      target: catalog/models/ibm/granite-speech-5
+    - type: produces
+      target: catalog/models/ibm/granite-guardian-4-1
+    - type: produces
+      target: catalog/models/ibm/granite-vision-4-1
+    - type: produces
+      target: catalog/models/ibm/granite-embedding-multilingual-r2
+    - type: produces
+      target: catalog/models/ibm/granite-timeseries

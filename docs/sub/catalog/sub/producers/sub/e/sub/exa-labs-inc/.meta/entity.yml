@@ -1,0 +1,24 @@
+entity:
+  id: catalog/producers/e/exa-labs-inc
+  type: organization
+  name: Exa Labs, Inc.
+  aliases:
+    - Exa
+  references:
+    - type: official-site
+      source:
+        url: https://exa.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://exa.ai/assets/Exa_Labs_Terms_of_Service.pdf
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/web-data/exa

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/hardware/amd-radeon-rx-7900-xtx
+  type: hardware
+  name: AMD Radeon RX 7900 XTX
+  references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/support/downloads/drivers.html/graphics/radeon-rx/radeon-rx-7000-series/amd-radeon-rx-7900-xtx.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.amd.com/en/products/specifications/graphics.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/advanced-micro-devices-inc

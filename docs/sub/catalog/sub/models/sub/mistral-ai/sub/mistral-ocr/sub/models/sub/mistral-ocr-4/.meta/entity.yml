@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/mistral-ai/mistral-ocr/models/mistral-ocr-4
+  type: model
+  name: Mistral OCR 4
+  references:
+    - type: release-notes
+      source:
+        url: https://mistral.ai/news/ocr-4/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/mistral-ocr

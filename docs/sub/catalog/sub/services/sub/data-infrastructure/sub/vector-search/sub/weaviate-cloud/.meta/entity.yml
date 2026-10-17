@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/data-infrastructure/vector-search/weaviate-cloud
+  type: service
+  name: Weaviate Cloud
+  references:
+    - type: documentation
+      source:
+        url: https://docs.weaviate.io/cloud
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.weaviate.io/deploy/installation-guides/weaviate-cloud
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/w/weaviate

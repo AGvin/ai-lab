@@ -1,0 +1,28 @@
+entity:
+  id: catalog/services/model-apis/cerebras-inference
+  type: service
+  name: Cerebras Inference
+  references:
+    - type: product-page
+      source:
+        url: https://www.cerebras.ai/inference
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://inference-docs.cerebras.ai/models/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://www.cerebras.ai/terms-of-service
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cerebras-systems-inc

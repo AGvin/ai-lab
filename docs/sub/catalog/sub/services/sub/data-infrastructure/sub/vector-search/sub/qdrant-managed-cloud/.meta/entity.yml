@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/data-infrastructure/vector-search/qdrant-managed-cloud
+  type: service
+  name: Qdrant Managed Cloud
+  references:
+    - type: documentation
+      source:
+        url: https://qdrant.tech/documentation/cloud/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://qdrant.tech/documentation/cloud/getting-started/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/q/qdrant

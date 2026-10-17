@@ -1,0 +1,24 @@
+entity:
+  id: catalog/models/adobe/firefly
+  type: model-family
+  name: Adobe Firefly
+  references:
+    - type: official-site
+      source:
+        url: https://www.adobe.com/products/firefly.html
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://news.adobe.com/news/2025/04/adobe-revolutionizes-ai-assisted-creativity-firefly
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/adobe
+    - type: has-member
+      target: catalog/models/adobe/firefly/models/image-model-4
+    - type: has-member
+      target: catalog/models/adobe/firefly/models/image-model-4-ultra
+    - type: has-member
+      target: catalog/models/adobe/firefly/models/video-model

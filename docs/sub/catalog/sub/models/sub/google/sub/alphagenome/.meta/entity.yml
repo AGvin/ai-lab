@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/google/alphagenome
+  type: model
+  name: AlphaGenome
+  references:
+    - type: official-site
+      source:
+        url: https://deepmind.google/science/alphagenome/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google-deepmind

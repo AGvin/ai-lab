@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/data-infrastructure/vector-search/milvus
+  type: software
+  name: Milvus
+  references:
+    - type: documentation
+      source:
+        url: https://milvus.io/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/milvus-io/milvus
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/z/zilliz

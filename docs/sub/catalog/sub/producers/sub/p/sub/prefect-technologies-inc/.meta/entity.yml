@@ -21,3 +21,5 @@ entity:
   relations:
     - type: produces
       target: catalog/software/workflow-engines/data-and-compute-orchestration/prefect
+    - type: produces
+      target: catalog/software/application-frameworks/application-development/fastmcp

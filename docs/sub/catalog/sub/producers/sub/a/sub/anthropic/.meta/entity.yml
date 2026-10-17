@@ -26,3 +26,19 @@ entity:
       target: catalog/software/agents/hybrid/claude-code
     - type: produces
       target: catalog/services/assistant-workspaces/claude
+    - type: produces
+      target: catalog/datasets/auditbench
+    - type: produces
+      target: catalog/services/infrastructure/claude-managed-agents
+    - type: produces
+      target: catalog/software/agent-frameworks/claude-agent-sdk
+    - type: produces
+      target: catalog/services/model-apis/claude-api
+    - type: produces
+      target: catalog/datasets/biomysterybench
+    - type: produces
+      target: catalog/datasets/scone-bench
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/petri
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/bloom

@@ -23,6 +23,13 @@ entity:
         - research
       authority: official
       note: First-party DBOS history records the formation of DBOS, Inc. around the DBOS product direction.
+    - type: other
+      source:
+        url: https://www.dbos.dev/terms-of-service
+      purposes:
+        - research
+      authority: official
+      note: Current terms identify DBOS, Inc. and the hosted-service boundary already linked by the reader.
   relations:
     - type: produced-by
       target: catalog/producers/d/dbos-inc

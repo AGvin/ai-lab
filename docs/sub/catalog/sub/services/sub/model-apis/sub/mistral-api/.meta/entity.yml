@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/model-apis/mistral-api
+  type: service
+  name: Mistral API
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/api/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/api/endpoint/models
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai

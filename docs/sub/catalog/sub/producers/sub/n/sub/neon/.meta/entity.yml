@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/n/neon
+  type: organization
+  name: Neon
+  references:
+    - type: official-site
+      source:
+        url: https://neon.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/neondatabase/agent-skills
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/agent-skills/collections/neon-agent-skills

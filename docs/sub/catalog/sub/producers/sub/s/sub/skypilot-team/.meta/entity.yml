@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/s/skypilot-team
+  type: team
+  name: SkyPilot Team
+  references:
+    - type: official-site
+      source:
+        url: https://skypilot.co/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/skypilot-org/skypilot
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/workflow-engines/data-and-compute-orchestration/skypilot

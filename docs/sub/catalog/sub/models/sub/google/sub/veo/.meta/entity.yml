@@ -1,0 +1,27 @@
+entity:
+  id: catalog/models/google/veo
+  type: model-family
+  name: Veo
+  references:
+    - type: official-site
+      source:
+        url: https://deepmind.google/models/veo/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/veo-video-generation
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google
+    - type: produced-by
+      target: catalog/producers/g/google-deepmind
+    - type: has-member
+      target: catalog/models/google/veo/models/veo-3-1
+    - type: has-member
+      target: catalog/models/google/veo/models/veo-3-1-fast

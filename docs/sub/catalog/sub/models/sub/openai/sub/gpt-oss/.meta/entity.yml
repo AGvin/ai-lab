@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/openai/gpt-oss
+  type: model-family
+  name: gpt-oss
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/learn/gpt-oss
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/all
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai
+    - type: has-member
+      target: catalog/models/openai/gpt-oss/models/gpt-oss-120b
+    - type: has-member
+      target: catalog/models/openai/gpt-oss/models/gpt-oss-20b

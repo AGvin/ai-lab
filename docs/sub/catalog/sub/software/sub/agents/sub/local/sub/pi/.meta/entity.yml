@@ -38,6 +38,20 @@ entity:
         - research
       authority: official
       note: Official Pi announcement documenting the move to Earendil Works while preserving the product identity and direction.
+    - type: article
+      source:
+        url: https://earendil.com/posts/pi-1-0/
+      purposes:
+        - research
+      authority: official
+      note: October 1, 2026 Pi 1.0 release; distinguishes new core capabilities from experimental Pi Durable.
+    - type: article
+      source:
+        url: https://earendil.com/posts/pi-durable/
+      purposes:
+        - research
+      authority: official
+      note: First-party description of Pi Durable as a separate experimental framework, not a Pi coding-agent replacement.
   relations:
     - type: produced-by
       target: catalog/producers/m/mario-zechner

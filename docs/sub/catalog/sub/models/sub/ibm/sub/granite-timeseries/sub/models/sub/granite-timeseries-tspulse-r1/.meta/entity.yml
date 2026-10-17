@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/ibm/granite-timeseries/models/granite-timeseries-tspulse-r1
+  type: model
+  name: Granite TimeSeries TSPulse R1
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-timeseries-tspulse-r1
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/ibm/granite-timeseries

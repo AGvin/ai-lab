@@ -1,0 +1,13 @@
+entity:
+  id: catalog/producers/s/stability-ai
+  type: organization
+  name: Stability AI
+  references:
+    - type: official-site
+      source:
+        url: https://stability.ai/
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/stability-ai/stable-diffusion

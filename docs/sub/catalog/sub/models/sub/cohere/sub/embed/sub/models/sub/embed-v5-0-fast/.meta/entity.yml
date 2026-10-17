@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/cohere/embed/models/embed-v5-0-fast
+  type: model
+  name: Embed 5 Fast
+  aliases:
+    - embed-v5.0-fast
+  references:
+    - type: release-notes
+      source:
+        url: https://docs.cohere.com/changelog/embed-v5
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/embeddings
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere/embed

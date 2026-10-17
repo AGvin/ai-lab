@@ -9,6 +9,9 @@
 - Preserve relevant legacy adoption boundaries around tools, delegated task permissions, provider credentials, memory and knowledge-source data, observability, execution controls, and human approval when discussing operational use.
 - Keep package versions, Python support, model-provider coverage, cloud deployment options, RBAC, platform pricing, and other mutable implementation/service facts source-backed when expanded.
 - Include the official CrewAI website, documentation, and repository references.
+- For current CrewAI 1.15.x, distinguish the JSONC-first `agents/*.jsonc` + `crew.jsonc` setup of newly created projects from the still-supported classic `config/agents.yaml` with `@CrewBase`; do not rewrite an existing classic project based on a new-project default.
+- Document agent-level execution controls from official docs: `allow_code_execution` defaults to false; `code_execution_mode="safe"` uses Docker, whereas `"unsafe"` executes code directly. Do not interpret Docker mode as complete sandboxing; enforce least-privilege credentials, mount/network/resource limits and review generated code.
+- Note that `allow_delegation` defaults to false and `max_iter`, `max_execution_time`, tool access and human-in-the-loop approvals need explicit policy for sensitive workflows. Do not equate HITL feedback with authorization for every action.
 
 ## Validation
 

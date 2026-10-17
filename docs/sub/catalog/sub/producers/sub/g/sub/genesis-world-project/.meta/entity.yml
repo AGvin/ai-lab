@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/g/genesis-world-project
+  type: organization
+  name: Genesis World Project
+  references:
+    - type: documentation
+      source:
+        url: https://genesis-world.readthedocs.io/en/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/physical-ai-and-robotics/genesis-world

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/f/flower-labs
+  type: organization
+  name: Flower Labs
+  references:
+    - type: official-site
+      source:
+        url: https://flower.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://flower.ai/docs/model/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/flower-labs/endeavor

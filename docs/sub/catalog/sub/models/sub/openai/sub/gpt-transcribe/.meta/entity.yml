@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/openai/gpt-transcribe
+  type: model
+  name: GPT-Transcribe
+  aliases:
+    - gpt-transcribe
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-transcribe
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/speech-to-text
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

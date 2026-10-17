@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-v1-1-27b
+  type: model
+  name: PPLX Decider V1.1 27B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/perplexity-ai/pplx-decider

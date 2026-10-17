@@ -1,0 +1,24 @@
+entity:
+  id: catalog/hardware/nvidia-h200
+  type: hardware-product
+  name: NVIDIA H200 Tensor Core GPU
+  aliases:
+    - NVIDIA H200
+    - H200
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/data-center/h200/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://resources.nvidia.com/en-us-gpu-resources/hpc-datasheet-sc23
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

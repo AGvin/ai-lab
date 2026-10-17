@@ -1,0 +1,21 @@
+entity:
+  id: catalog/specifications/standards/ieee-3119-2025-ai-procurement
+  name: IEEE 3119-2025 — Standard for the Procurement of Artificial Intelligence and Automated Decision Systems
+  aliases:
+    - IEEE 3119-2025
+  references:
+    - type: specification
+      source:
+        url: https://standards.ieee.org/beyond-standards/ai-procurement-guidelines-regulatory-compliance/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: IEEE SA identifies IEEE 3119 as the first standard focused on responsible AI procurement and describes its six procurement processes.
+    - type: other
+      source:
+        url: https://standards.ieee.org/about/sasb/sba/27mar2025/
+      purposes:
+        - research
+      authority: official
+      note: IEEE Standards Board records 3119-2025 as a new standard.

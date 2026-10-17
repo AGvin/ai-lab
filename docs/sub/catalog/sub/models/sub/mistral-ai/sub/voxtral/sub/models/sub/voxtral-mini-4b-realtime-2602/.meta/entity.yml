@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/mistral-ai/voxtral/models/voxtral-mini-4b-realtime-2602
+  type: model
+  name: Voxtral Mini 4B Realtime 2602
+  aliases:
+    - Voxtral Realtime
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://mistral.ai/news/voxtral-transcribe-2/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/voxtral

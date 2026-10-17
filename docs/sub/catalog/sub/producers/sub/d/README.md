@@ -11,5 +11,6 @@ Canonical producer profiles beginning with D.
 - [DBOS, Inc.](./sub/dbos-inc/)
 - [`DeepSeek`](./sub/deepseek/)
 - [deepset GmbH](./sub/deepset-gmbh/)
+- [Diego Rodrigues de Sa e Souza](./sub/diego-rodrigues-de-sa-e-souza/)
 - [Dmitry Petrov](./sub/dmitry-petrov/)
 - [Dynalist Inc.](./sub/dynalist-inc/)

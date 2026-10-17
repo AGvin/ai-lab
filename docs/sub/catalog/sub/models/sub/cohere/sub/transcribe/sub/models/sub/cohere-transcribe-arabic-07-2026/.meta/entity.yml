@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/cohere/transcribe/models/cohere-transcribe-arabic-07-2026
+  type: model
+  name: Cohere Transcribe Arabic
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/v2/docs/transcribe-arabic
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.cohere.com/changelog/transcribe-arabic
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere/transcribe

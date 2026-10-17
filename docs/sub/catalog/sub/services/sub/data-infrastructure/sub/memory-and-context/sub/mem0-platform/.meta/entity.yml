@@ -1,0 +1,22 @@
+entity:
+  id: catalog/services/data-infrastructure/memory-and-context/mem0-platform
+  type: service
+  name: Mem0 Platform
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mem0.ai/platform/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://mem0.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mem0

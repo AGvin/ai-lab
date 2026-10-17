@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/mistral-ai/magistral
+  type: model-family
+  name: Magistral
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai/Magistral-Small-2509
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai
+    - type: has-member
+      target: catalog/models/mistral-ai/magistral/models/magistral-small-2509

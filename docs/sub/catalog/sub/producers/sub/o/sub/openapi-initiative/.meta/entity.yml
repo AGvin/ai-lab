@@ -1,0 +1,28 @@
+entity:
+  id: catalog/producers/o/openapi-initiative
+  type: organization
+  name: OpenAPI Initiative
+  aliases:
+    - OAI
+  references:
+    - type: official-site
+      source:
+        url: https://www.openapis.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/OAI/OpenAPI-Specification
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/specifications/schemas/openapi-specification
+    - type: produces
+      target: catalog/specifications/schemas/arazzo-specification
+    - type: produces
+      target: catalog/specifications/schemas/overlay-specification

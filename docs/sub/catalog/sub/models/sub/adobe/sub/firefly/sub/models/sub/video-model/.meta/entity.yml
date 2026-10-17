@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/adobe/firefly/models/video-model
+  type: model
+  name: Firefly Video Model
+  references:
+    - type: article
+      source:
+        url: https://news.adobe.com/news/2025/04/adobe-revolutionizes-ai-assisted-creativity-firefly
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://blog.adobe.com/en/publish/2025/04/24/new-max-london-more-powerful-creative-cloud-new-firefly-ai-tools-more-support-creative-careers
+      purposes: [research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/adobe/firefly

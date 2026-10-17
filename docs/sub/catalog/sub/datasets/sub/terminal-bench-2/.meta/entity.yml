@@ -1,0 +1,22 @@
+entity:
+  id: catalog/datasets/terminal-bench-2
+  type: dataset
+  name: Terminal-Bench 2.0
+  references:
+    - type: repository
+      source:
+        url: https://github.com/harbor-framework/terminal-bench-2
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://harborframework.com/docs/running-tbench
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/laude-institute

@@ -1,0 +1,16 @@
+entity:
+  id: catalog/models/ibm/granite-timeseries/models/granite-timeseries-flowstate-r1
+  type: model
+  name: Granite TimeSeries FlowState R1
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-timeseries-flowstate-r1
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: The current model card documents revision `r1.1`; loading without an explicit revision yields the earlier r1.0 state.
+  relations:
+    - type: member-of
+      target: catalog/models/ibm/granite-timeseries

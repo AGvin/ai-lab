@@ -1,0 +1,15 @@
+entity:
+  id: catalog/hardware/nvidia-rtx-pro-6000-blackwell-workstation-edition
+  type: hardware
+  name: NVIDIA RTX PRO 6000 Blackwell Workstation Edition
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000-family/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

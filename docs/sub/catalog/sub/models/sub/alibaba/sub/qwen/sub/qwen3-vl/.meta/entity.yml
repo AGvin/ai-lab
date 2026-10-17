@@ -1,0 +1,29 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-vl
+  type: model-series
+  name: Qwen3-VL
+  references:
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen3-VL
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/qwen3-vl-235b-a22b-instruct
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen
+    - type: produced-by
+      target: catalog/producers/q/qwen-team
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-vl/models/qwen3-vl-235b-a22b-instruct
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-vl/models/qwen3-vl-32b-instruct
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-vl/models/qwen3-vl-embedding

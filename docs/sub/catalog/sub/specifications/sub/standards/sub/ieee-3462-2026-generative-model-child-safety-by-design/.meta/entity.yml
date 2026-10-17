@@ -1,0 +1,14 @@
+entity:
+  id: catalog/specifications/standards/ieee-3462-2026-generative-model-child-safety-by-design
+  name: IEEE 3462-2026 — Safety by Design in Generative Models to Prioritize Child Safety
+  aliases:
+    - IEEE 3462-2026
+  references:
+    - type: specification
+      source:
+        url: https://standards.ieee.org/ieee/3462/11584/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: IEEE SA marks IEEE 3462-2026 as an Active Standard approved 2026-09-25.

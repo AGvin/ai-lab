@@ -1,0 +1,23 @@
+entity:
+  id: catalog/hardware/amd-instinct-mi355x
+  type: hardware-product
+  name: AMD Instinct MI355X
+  aliases:
+    - MI355X
+  references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/accelerators/instinct/mi350/mi355x.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://instinct.docs.amd.com/projects/system-acceptance/en/latest/gpus/mi355x.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/advanced-micro-devices-inc

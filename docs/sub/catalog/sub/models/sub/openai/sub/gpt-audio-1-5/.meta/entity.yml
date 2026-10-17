@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/openai/gpt-audio-1-5
+  type: model
+  name: GPT-Audio-1.5
+  aliases:
+    - gpt-audio-1.5
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-audio-1.5
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://developers.openai.com/api/docs/changelog
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai
