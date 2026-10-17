@@ -23,3 +23,10 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://github.com/diegosouzapw/OmniRoute/blob/main/SECURITY.md
+      purposes:
+        - research
+      authority: official
+      note: The security policy documents plaintext credential passthrough when STORAGE_ENCRYPTION_KEY is absent; website encryption claims alone do not establish a configured deployment.

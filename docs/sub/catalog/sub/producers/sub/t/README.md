@@ -6,6 +6,7 @@
 - [Tencent Hy Team](./sub/tencent-hy-team/)
 - [TensorDock.com, Inc.](./sub/tensordock-com-inc/)
 - [TensorFlow Project](./sub/tensorflow-project/)
+- [TensorZero, Inc.](./sub/tensorzero-inc/)
 - [Tenstorrent](./sub/tenstorrent/)
 - [Tetrate](./sub/tetrate/)
 - [Tettra, Inc.](./sub/tettra-inc/)

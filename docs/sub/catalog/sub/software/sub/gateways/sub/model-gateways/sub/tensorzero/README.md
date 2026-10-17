@@ -2,14 +2,24 @@
 
 TensorZero is an open-source LLMOps stack that unifies an LLM gateway with observability, evaluation, experimentation, and optimization.
 
+## Maintenance status
+
+As checked on October 17, 2026, the official TensorZero website states that the software is no longer maintained, while its code remains available on GitHub and the first-party repository is archived. Historical product provenance and enterprise terms do not establish current upstream updates, security fixes, support or a hosted service.
+
+Before adopting or continuing a deployment, assess dependency maintenance, operating ownership and migration needs.
+
 ## Scope and boundaries
 
-- The profile explains that the model-gateway placement reflects the gateway as the central inference/request path and feedback collection point, not a claim that TensorZero is only a router.
-- The profile covers routing, model/provider abstraction, observability, feedback, evaluations, experiments, and optimization workflows only when current upstream sources support them.
-- TensorZero remains distinct from hosted-only gateways and from observability platforms whose primary identity does not sit in the model request path.
-- The profile keeps supported providers, deployment modes, APIs, optimization methods, and release state freshness-sensitive.
+The gateway is TensorZero's central request path and feedback collection point. It connects provider routing and model abstraction with observability, evaluation, experimentation, and optimization; the stack extends beyond request routing alone.
+
+Its historical self-managed deployment capabilities remain distinct from hosted-only gateway services. Upstream maintenance has ended, so old feature descriptions do not establish current provider compatibility or support.
+
+## Relations
+
+- Produced by: [TensorZero, Inc.](../../../../../../../producers/sub/t/sub/tensorzero-inc/)
 
 ## Official resources
 
 - <https://www.tensorzero.com/>
 - <https://github.com/tensorzero/tensorzero>
+- [First-party provenance reference](https://www.tensorzero.com/terms/)

@@ -4,13 +4,21 @@ OmniRoute is self-hostable model-gateway software that provides a unified API/pr
 
 ## Scope and boundaries
 
-- The profile preserves its primary placement under `gateways/model-gateways`: OmniRoute coordinates model-provider access, translation, routing, fallback, quotas, and operational policy rather than acting as a model, inference engine, or hosted model provider itself.
-- The profile explains the OpenAI-compatible client boundary and provider abstraction at a durable level without freezing the current provider count, free-tier count, routing-strategy count, supported-model count, or other fast-moving inventory figures.
-- The profile treats API-key, OAuth, browser/CLI-account, self-hosted, and custom-compatible integrations as provider-access mechanisms owned by OmniRoute rather than separate canonical AI Lab products unless a future integration has an independently justified identity.
-- Self-hosting the gateway remains distinct from self-hosting inference. Requests routed to remote providers may transmit prompts, tool inputs, images, or other request content to those upstream services; do not present local OmniRoute deployment as a guarantee of local/private inference.
+OmniRoute provides an OpenAI-compatible client interface and coordinates provider access, translation, routing, fallback, quotas, and operating policies. Provider integrations can use API keys, OAuth, browser or CLI accounts, self-hosted backends, and custom compatible endpoints. Support varies by provider and release.
+
+Self-hosting the gateway does not make remote inference local. Requests routed to external providers can transmit prompts, tool inputs, images, and other request content to those services.
+
+## Operational and security boundary
+
+Stored credentials use the documented encryption-at-rest path only when the operator configures `STORAGE_ENCRYPTION_KEY`. The upstream security policy documents plaintext passthrough when that key is absent; local deployment alone does not establish encrypted credential storage.
+
+TLS/browser fingerprinting, CLI compatibility shaping and local MITM functionality require authorized interoperability or troubleshooting. These features do not confer permission to bypass provider restrictions, account controls or upstream terms. Configure deployment authentication, network access, credential handling and request budgets for the operated environment.
+
+The repository's MIT license applies to its software source; separate website, provider, and integration terms still apply.
 
 ## Official resources
 
 - <https://omniroute.online/>
 - <https://omniroute.online/docs>
 - <https://github.com/diegosouzapw/OmniRoute>
+- <https://github.com/diegosouzapw/OmniRoute/blob/main/SECURITY.md>

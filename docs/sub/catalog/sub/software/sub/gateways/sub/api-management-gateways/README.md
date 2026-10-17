@@ -5,7 +5,7 @@ Self-managed gateways and ingress/control-plane software for ordinary APIs and a
 ## Child pages
 
 - [Apache APISIX](./sub/apache-apisix/) — general-purpose API gateway with AI integration capabilities.
-- [Envoy AI Gateway](./sub/envoy-ai-gateway/) — Envoy-based AI gateway control plane.
+- [Agent Router (formerly Envoy AI Gateway)](./sub/envoy-ai-gateway/) — Envoy-based AI gateway control plane.
 - [Higress](./sub/higress/) — API and AI ingress gateway.
 - [Kong Gateway](./sub/kong-gateway/) — general API ingress and governance gateway.
 - [Kuadrant MCP Gateway](./sub/kuadrant-mcp-gateway/) — Kubernetes-native MCP routing and policy gateway.
