@@ -13,7 +13,9 @@
 - Treat provider quotas, free-token estimates, prices, performance comparisons, benchmark figures, supported-client counts, releases, and other mutable product state as freshness-sensitive and source-backed when expanded.
 - Treat vendor comparison tables and OmniRoute-produced benchmark or savings claims as self-reported evidence rather than independent AI Lab evaluation.
 - Preserve the current repository's MIT licensing only as the source-backed open-source software license; do not infer licensing or legal terms for separately operated websites, upstream providers, or third-party integrations from that repository license.
-- Do not infer a canonical `produced-by` relation solely from the repository account, sponsorship, current website branding, or downstream commercial relationships. Add producer/ownership relations only when an authoritative source establishes the relevant product identity clearly enough for a stable graph edge.
+- Preserve the first-party attribution to Diego Rodrigues de Sa e Souza (`diegosouzapw`) as OmniRoute's individual creator and lead maintainer, with the reciprocal producer edge. This attribution is based on his explicit project statement and public profile identity, not only repository-account ownership.
+- Keep the website's documented Cheaper Inference association separate from the individual authorship relation; do not infer a legal acquisition, exclusive ownership, or licensing change from branding alone.
+- Render the standard `entity-relations` block from validated current-entity relations.
 - Include the current official site, documentation surface, and source repository from canonical entity metadata.
 
 ## Validation

@@ -12,7 +12,7 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://omniroute.online/docs
+        url: https://github.com/diegosouzapw/OmniRoute/tree/release/v3.8.52/docs
       purposes:
         - research
       authority: official
@@ -25,8 +25,19 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://github.com/diegosouzapw/OmniRoute/blob/main/SECURITY.md
+        url: https://github.com/diegosouzapw/OmniRoute/blob/release/v3.8.52/SECURITY.md
       purposes:
         - research
       authority: official
       note: The security policy documents plaintext credential passthrough when STORAGE_ENCRYPTION_KEY is absent; website encryption claims alone do not establish a configured deployment.
+    - type: repository
+      source:
+        url: https://github.com/diegosouzapw/diegosouzapw/blob/main/README.md
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: The author's profile explicitly identifies him as OmniRoute's creator and lead maintainer; the individual producer relation records that role.
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/diego-rodrigues-de-sa-e-souza
