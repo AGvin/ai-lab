@@ -23,6 +23,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://www.activepieces.com/docs/about/license
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/a/activepieces-inc

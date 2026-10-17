@@ -19,9 +19,27 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://nango.dev/docs/guides/platform/self-hosting
+        url: https://nango.dev/docs/guides/platform/self-hosting/self-hosting
       purposes:
         - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://nango.dev/docs/guides/platform/self-hosting/byoc
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://nango.dev/docs/guides/platform/self-hosting/self-managed
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/NangoHQ/nango/blob/master/LICENSE
+      purposes:
         - research
       authority: official
   relations:

@@ -8,7 +8,13 @@ The platform provides authorization, token refresh, proxying, TypeScript integra
 
 ## Operations and boundaries
 
-Nango's source distribution uses the Elastic License with use restrictions: source availability is not the same as unrestricted OSI-approved open-source licensing. Compare the relevant self-hosted and commercial entitlements. Review provider-specific OAuth scopes, isolation of tenants and secrets, retries/idempotency, sync cursors, integration function code, data retention and API version compatibility before production use.
+Nango's source distribution uses Elastic License 2.0 with use restrictions. Nango Cloud is vendor-operated. For enterprise BYOC, Nango operates the platform in the customer's environment; for Enterprise Self-Managed, the customer operates the deployment.
+
+The free self-hosted edition supports Auth and Proxy with a narrower feature set. It is designed for one trusted organization: separate accounts are not hardened isolation between mutually untrusted users, and account signups are enabled by default.
+
+Enterprise Self-Managed credential encryption depends on a configured encryption key, supplied directly or through KMS. Without a key, credentials remain unencrypted, while persisted-record storage and retrieval fail instead of falling back to plaintext. Connect UI also requires a key.
+
+Provider credentials, OAuth scopes and integration code determine access to external data and write actions. Sync cursors, retries, stored integration state and API compatibility remain part of the selected integration and deployment.
 
 ## Relations
 
@@ -18,4 +24,7 @@ Nango's source distribution uses the Elastic License with use restrictions: sour
 
 - [Official site](https://nango.dev/)
 - [Source repository](https://github.com/NangoHQ/nango)
-- [Self-hosting documentation](https://nango.dev/docs/guides/platform/self-hosting)
+- [Self-hosting documentation](https://nango.dev/docs/guides/platform/self-hosting/self-hosting)
+- [Enterprise BYOC](https://nango.dev/docs/guides/platform/self-hosting/byoc)
+- [Enterprise Self-Managed and encryption](https://nango.dev/docs/guides/platform/self-hosting/self-managed#encryption-key)
+- [Distribution license](https://github.com/NangoHQ/nango/blob/master/LICENSE)
