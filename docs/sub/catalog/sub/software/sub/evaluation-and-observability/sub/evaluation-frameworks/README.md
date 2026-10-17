@@ -1,11 +1,20 @@
 # Evaluation Frameworks
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
-
-Libraries and command-line tools used to define evaluation datasets, metrics, assertions, comparisons, regression tests, and red-team checks.
+Frameworks and tools for repeatable evaluation of language models, agents, retrieval systems, and serving performance using test cases, environments, metrics, judges or reproducible workload configurations. Trace-first production observability belongs in the adjacent category unless independently released as evaluation software.
 
 ## Child pages
 
-- [`deepeval/`](./sub/deepeval/)
-- [`ragas/`](./sub/ragas/)
-- [`promptfoo/`](./sub/promptfoo/)
+- [AgentLab](./sub/agentlab/)
+- [Bloom](./sub/bloom/)
+- [BrowserGym](./sub/browsergym/)
+- [DeepEval](./sub/deepeval/)
+- [DeepTeam](./sub/deepteam/)
+- [Giskard OSS](./sub/giskard-oss/)
+- [Harbor](./sub/harbor/)
+- [Inspect AI](./sub/inspect-ai/)
+- [Language Model Evaluation Harness](./sub/lm-evaluation-harness/)
+- [NVIDIA AIPerf](./sub/nvidia-aiperf/)
+- [Petri](./sub/petri/)
+- [promptfoo](./sub/promptfoo/)
+- [Ragas](./sub/ragas/)
+- [TruLens](./sub/trulens/)

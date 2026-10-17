@@ -12,6 +12,7 @@ Canonical producer profiles beginning with M.
 - [mcp-use](./sub/mcp-use/)
 - [MCPJam Inc](./sub/mcpjam/)
 - [Mem0](./sub/mem0/)
+- [Meridian Labs](./sub/meridian-labs/)
 - [Menlo Research Pte Ltd](./sub/menlo-research-pte-ltd/)
 - [`Microsoft`](./sub/microsoft/)
 - [Mintplex Labs](./sub/mintplex-labs/)

@@ -5,6 +5,7 @@ Canonical producer profiles beginning with H.
 ## Producers
 
 - [H3 Labs Inc.](./sub/h3-labs-inc/)
+- [Harbor Framework Team](./sub/harbor-framework/)
 - [Hervé Bredin](./sub/herve-bredin/)
 - [Hugging Face, Inc.](./sub/hugging-face-inc/)
 - [`huihui.ai`](./sub/huihui-ai/)
