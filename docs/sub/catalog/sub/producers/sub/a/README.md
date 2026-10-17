@@ -22,4 +22,5 @@ Canonical producer profiles whose names begin with **A**.
 - [API7.ai](./sub/api7-ai/)
 - [Applatix](./sub/applatix/)
 - [Apple Inc.](./sub/apple-inc/)
+- [Arcade AI, Inc.](./sub/arcade-ai-inc/)
 - [Arize AI, Inc.](./sub/arize-ai-inc/)

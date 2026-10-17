@@ -4,12 +4,16 @@ Application Development groups frameworks, SDKs, libraries, and common abstracti
 
 ## Frameworks and SDKs
 
-- [Vercel AI SDK](./sub/vercel-ai-sdk/) — TypeScript toolkit for provider-agnostic model access, streaming, tools, structured outputs, and AI application UI/server integration.
-- [Genkit](./sub/genkit/) — Google's open-source, cross-language framework for full-stack AI-powered and agentic applications.
-- [Spring AI](./sub/spring-ai/) — Spring application framework for model APIs, tools, structured output, vector stores, data ingestion, MCP, and RAG.
-- [LangChain4j](./sub/langchain4j/) — Java-oriented application framework for LLM and vector-store integration with AI Services, tools, memory, RAG, and agents.
-- [Mirascope](./sub/mirascope/) — Python toolkit for provider-agnostic LLM applications with typed model calls, tools, structured output, agents, MCP, and observability.
-- [Microsoft.Extensions.AI](./sub/microsoft-extensions-ai/) — common .NET generative-AI abstractions and middleware for interoperable chat, embeddings, tools, telemetry, and caching.
+- [Arcade MCP](./sub/arcade-mcp/) — Python MCP server and tool development.
+- [FastMCP](./sub/fastmcp/) — Python MCP server/client framework.
+- [Genkit](./sub/genkit/) — Google full-stack AI application framework.
+- [LangChain4j](./sub/langchain4j/) — Java-oriented LLM integration framework.
+- [mcp-use](./sub/mcp-use/) — TypeScript MCP application framework.
+- [Microsoft.Extensions.AI](./sub/microsoft-extensions-ai/) — .NET AI abstractions and middleware.
+- [Mirascope](./sub/mirascope/) — Python LLM application toolkit.
+- [NVIDIA NeMo Guardrails](./sub/nvidia-nemo-guardrails/) — programmable application guardrails.
+- [Spring AI](./sub/spring-ai/) — Spring AI application integration framework.
+- [Vercel AI SDK](./sub/vercel-ai-sdk/) — TypeScript AI server and UI toolkit.
 
 ## Adjacent categories
 
