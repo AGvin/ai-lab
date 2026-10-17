@@ -9,7 +9,7 @@ Canonical producer profiles beginning with M.
 - [`Matt Pocock`](./sub/matt-pocock/)
 - [Maxime Beauchemin](./sub/maxime-beauchemin/)
 - [Mediocre, LLC](./sub/mediocre-llc/)
-- [mcp-use](./sub/mcp-use/)
+- [Manufact, Inc.](./sub/mcp-use/)
 - [MCPJam Inc](./sub/mcpjam/)
 - [Mem0](./sub/mem0/)
 - [Meridian Labs](./sub/meridian-labs/)

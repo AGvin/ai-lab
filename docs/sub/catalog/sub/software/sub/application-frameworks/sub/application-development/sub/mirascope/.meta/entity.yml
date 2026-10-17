@@ -23,6 +23,14 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://mirascope.com/cloud
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: The official notice says Mirascope Cloud is discontinued while the Python and TypeScript SDKs remain supported and use OpenTelemetry-compatible backends.
   relations:
     - type: produced-by
       target: catalog/producers/m/mirascope-inc

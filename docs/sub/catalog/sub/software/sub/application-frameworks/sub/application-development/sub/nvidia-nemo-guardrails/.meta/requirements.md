@@ -11,6 +11,8 @@
 - Attribute safety/evaluation performance claims to NVIDIA or the cited evaluator and preserve the exact rail/model/configuration used.
 - Preserve NVIDIA producer provenance.
 
+- Distinguish anonymous library usage telemetry from guardrail/model-provider requests and optional OpenTelemetry tracing. The v0.24.1 documentation describes startup and heartbeat reporting, excludes prompts/completions/API keys, and requires any usage-telemetry opt-out before library startup; later behavior must be checked against the selected release.
+
 ## Validation
 
 - The node remains an application-development guardrails framework rather than a hosted security service or trained safety model.

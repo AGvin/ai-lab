@@ -26,6 +26,14 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/nemo/guardrails/v0.24.1/resources/telemetry
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Stable v0.24.1 documentation separates anonymous startup and heartbeat telemetry from configured tracing and provider requests and documents opt-out before startup.
   relations:
     - type: produced-by
       target: catalog/producers/n/nvidia
