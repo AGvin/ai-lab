@@ -9,7 +9,7 @@ The project's current stewardship is separate from historical vLLM authorship at
 ## Relations
 
 - Produces: [vLLM-Omni](../../../../../software/sub/inference-runtimes/sub/inference-engines/sub/vllm-omni/)
-- Produces: LLM Compressor (`catalog/software/model-and-data-platforms/model-optimization-and-compilation/llm-compressor`); reader page not yet materialized.
+- Produces: [LLM Compressor](../../../../../software/sub/model-and-data-platforms/sub/model-optimization-and-compilation/sub/llm-compressor/) — model compression and quantization library.
 
 ## Official resources
 

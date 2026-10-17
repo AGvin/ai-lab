@@ -1,13 +1,16 @@
 # Model Optimization and Compilation
 
-Self-managed toolchains whose primary identity is transforming model artifacts for efficiency, portability, compression, hardware targeting, or runtime compatibility through compilation, graph transformation, quantization, export or lowering, pruning, and related optimization pipelines.
-
-Training frameworks remain under model development, while execution- and serving-first engines remain under inference runtimes.
+Self-managed model transformation tools whose primary purpose is model quantization, compression, pruning, compilation, export or hardware-specific preparation. Training-first frameworks remain under Model Development; inference-first engines remain under Inference Runtimes.
 
 ## Child pages
 
-- [Apache TVM](./sub/apache-tvm/)
-- [Hugging Face Optimum](./sub/hugging-face-optimum/)
-- [IREE](./sub/iree/)
-- [Microsoft Olive](./sub/microsoft-olive/)
-- [NNCF](./sub/nncf/)
+- [Apache TVM](./sub/apache-tvm/) — model compilation and optimization.
+- [bitsandbytes](./sub/bitsandbytes/) — low-bit PyTorch quantization and optimizers.
+- [Hugging Face Optimum](./sub/hugging-face-optimum/) — optimization and export integrations.
+- [IREE](./sub/iree/) — compiler infrastructure for model execution.
+- [LLM Compressor](./sub/llm-compressor/) — pre-inference compression and quantization.
+- [Microsoft Olive](./sub/microsoft-olive/) — model optimization and deployment preparation.
+- [NNCF](./sub/nncf/) — neural-network compression toolkit.
+- [NVIDIA Model Optimizer](./sub/nvidia-model-optimizer/) — quantization and model transformation.
+- [NVIDIA TensorRT Model Connect](./sub/nvidia-tensorrt-model-connect/) — checkpoint-to-TensorRT deployment bundles.
+- [TorchAO](./sub/torchao/) — PyTorch-native model optimization.

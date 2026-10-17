@@ -6,6 +6,7 @@ Canonical producer profiles beginning with B.
 
 - [Benn Huang](./sub/benn-huang/)
 - [Berrie AI Incorporated](./sub/berrie-ai-incorporated/)
+- [bitsandbytes Foundation](./sub/bitsandbytes-foundation/)
 - [Black Forest Labs](./sub/black-forest-labs/)
 - [Block](./sub/block/)
 - [Bloomberg L.P.](./sub/bloomberg-lp/)
