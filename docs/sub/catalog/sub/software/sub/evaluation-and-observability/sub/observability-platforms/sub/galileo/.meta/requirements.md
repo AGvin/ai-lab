@@ -2,11 +2,11 @@
 
 ## Requirements
 
-- Identify Galileo as Galileo Technologies' AI evaluation, observability, and reliability platform spanning offline evaluations, production tracing/monitoring, failure analysis, guardrails, and agent/application quality workflows.
-- Keep the software ownership classification source-backed: Galileo supports hosted SaaS as well as customer-controlled VPC and on-premises/Kubernetes deployments, so hosted access is a deployment mode rather than the sole product identity.
+- Identify Galileo as the product lineage originating at Galileo Technologies and now presented by Splunk as Splunk Agent Observability after Cisco's completed acquisition, as reviewed on 2026-10-17. Preserve the stable catalog identity and original produced-by relation; the acquisition alone does not establish a replacement direct producer.
+- Keep the software classification source-backed across the transition: distinguish legacy Galileo SaaS/VPC/on-premises documentation from the current Splunk Agent Observability offering. The 2026-09-18 announcement describes on-premises, Splunk Observability Cloud, and Cisco Cloud Control availability; do not assume identical features or contracts across those modes.
 - Distinguish product-level Galileo from individual proprietary evaluator models, metrics, SDKs, integrations, datasets, and guardrail features unless any later clear the independent-identity intake gates.
 - Keep exact plan limits, trace quotas, metric/evaluator catalog, Luna model versions, benchmark/accuracy claims, deployment packaging, integrations, and security/compliance claims freshness-sensitive.
-- Preserve deployment distinctions between Galileo-hosted SaaS, customer-controlled cloud/VPC, and on-premises or air-gapped installations rather than describing all plans as self-hosted.
+- Preserve the operational distinctions between hosted and customer-controlled deployments. Validate access controls, trace/prompt retention, model egress, evaluator configuration, and operational ownership for the selected current offering; legacy Galileo air-gap or packaging claims do not automatically apply to every Splunk plan.
 - Render producer relation and official resources only during the final render phase.
 
 ## Validation

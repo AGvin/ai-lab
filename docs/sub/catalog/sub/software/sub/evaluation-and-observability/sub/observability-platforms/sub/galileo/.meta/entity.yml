@@ -2,6 +2,7 @@ entity:
   id: catalog/software/evaluation-and-observability/observability-platforms/galileo
   type: software
   name: Galileo
+  identity_note: Galileo is the product lineage now presented by Splunk as Splunk Agent Observability after Cisco completed its acquisition; reviewed 2026-10-17. Preserve the Galileo Technologies product-provenance relation and stable catalog identity while distinguishing current offering and deployment claims from legacy Galileo documentation.
   references:
     - type: official-site
       source:
@@ -12,13 +13,25 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://docs.galileo.ai/deployments/security-and-access-control
+        url: https://docs.galileo.ai/concepts/access-control
       purposes:
         - research
       authority: official
     - type: product-page
       source:
-        url: https://galileo.ai/pricing
+        url: https://www.splunk.com/en_us/products/agent-observability.html
+      purposes:
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.splunk.com/en_us/about-splunk/acquisitions/galileo.html
+      purposes:
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.splunk.com/en_us/blog/observability/observe-evaluate-and-guardrail-your-ai-agents-with-agent-observability.html
       purposes:
         - research
       authority: official

@@ -4,6 +4,10 @@ Ragas is an open-source toolkit for creating systematic evaluation loops for LLM
 
 The current upstream repository is maintained under VibrantLabs.
 
+## Relations
+
+- Produced by: [VibrantLabs](../../../../../../../producers/sub/v/sub/vibrant-labs/)
+
 ## Official resources
 
 - [Ragas documentation](https://docs.ragas.io/en/stable/)

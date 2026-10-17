@@ -2,12 +2,13 @@ entity:
   id: catalog/software/evaluation-and-observability/observability-platforms/wandb-weave
   type: software
   name: W&B Weave
+  identity_note: Reviewed 2026-10-17. Weave documentation names CoreWeave Agent Lens as its successor, with agent-tracing workflows and data available in both; preserve the narrower scope of this lifecycle statement.
   aliases:
     - Weave
   references:
     - type: documentation
       source:
-        url: https://docs.wandb.ai/weave/
+        url: https://docs.coreweave.com/products/wandb/weave
       purposes:
         - identification
         - research
@@ -17,6 +18,12 @@ entity:
         url: https://github.com/wandb/weave
       purposes:
         - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.coreweave.com/products/agent-lens
+      purposes:
         - research
       authority: official
   relations:

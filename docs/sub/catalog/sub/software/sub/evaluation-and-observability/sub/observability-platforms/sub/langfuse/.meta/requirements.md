@@ -10,6 +10,9 @@
 - Keep SDKs, storage architecture, feature availability, hosting details, and other mutable implementation facts source-backed when expanded.
 - Include current official Langfuse documentation and repository references.
 
+- Distinguish the MIT-licensed core from commercially licensed Enterprise features; self-hosting does not make all Enterprise modules available under MIT.
+- Explain the self-hosted deployment telemetry boundary documented at review: OSS telemetry can be disabled with `TELEMETRY_ENABLED=false` on all application containers; Enterprise self-hosted telemetry is used for license compliance and cannot be disabled. Do not conflate aggregated deployment telemetry with raw trace export or with user-configured model/integration egress; recheck this version-sensitive policy before deployment.
+
 ## Validation
 
 - The page preserves the broad AI-engineering platform identity while explaining why observability is its catalog owner.

@@ -9,6 +9,9 @@
 - Document hosted and self-managed availability as deployment modes of the same Weave product when current W&B documentation supports that boundary.
 - Keep SDK languages, supported integrations, deployment options, and plan constraints freshness-sensitive.
 
+- Preserve the lifecycle boundary reviewed on 2026-10-17: Weave documentation names CoreWeave Agent Lens as its successor and states that agent-tracing workflows and data are available in both. Do not infer universal SDK/feature migration or create a duplicate identity without separate intake.
+- Distinguish the documented shared agent-tracing data destination from unsupported claims about universal SDK or feature migration; preserve the original Weights & Biases provenance.
+
 ## Validation
 
 - The canonical product name is W&B Weave rather than a vague generic `Weights & Biases` evaluation-platform entry.

@@ -9,6 +9,10 @@ LangSmith is LangChain's agent/LLM engineering platform centered on observabilit
 - The profile treats LangSmith Deployment and sandboxes as product surfaces unless upstream establishes a separate canonical product lifecycle.
 - The profile keeps plan, deployment, storage dependency, pricing, and feature availability freshness-sensitive.
 
+## Deployment
+
+LangSmith offers Cloud, Hybrid, and Self-hosted deployment choices. Self-hosting requires the Enterprise add-on; availability and responsibilities depend on the selected deployment and plan.
+
 ## Relations
 
 - Produced by: [`catalog/producers/l/langchain-inc`](../../../../../../../producers/sub/l/sub/langchain-inc/)

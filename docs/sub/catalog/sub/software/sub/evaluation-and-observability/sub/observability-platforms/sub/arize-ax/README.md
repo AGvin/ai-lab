@@ -4,7 +4,7 @@ Arize AX is Arize's AI engineering platform for production observability, evalua
 
 ## Scope and boundaries
 
-- Arize AX remains distinct from Arize Phoenix: Phoenix is a separate open-source/local-first product, while AX is the managed enterprise platform with SaaS and current Enterprise self-hosted deployment options.
+- Arize AX remains distinct from Arize Phoenix: Phoenix is a separate self-hostable/local-first product released under Elastic License 2.0 (ELv2), while AX is the managed enterprise platform with SaaS and current Enterprise self-hosted deployment options.
 - The profile covers traces, online/offline evaluations, experiments, annotations, agent trajectory analysis, prompts, and current improvement workflows only when source-backed.
 - The profile treats SaaS and self-hosted Enterprise as delivery modes of the same AX product identity.
 - The profile keeps plan tiers, deployment modes, feature availability, and current product positioning freshness-sensitive.
