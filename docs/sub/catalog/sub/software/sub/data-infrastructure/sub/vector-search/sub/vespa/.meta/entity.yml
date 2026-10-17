@@ -17,6 +17,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://blog.vespa.ai/vespa-is-becoming-its-own-company/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/v/vespa-ai

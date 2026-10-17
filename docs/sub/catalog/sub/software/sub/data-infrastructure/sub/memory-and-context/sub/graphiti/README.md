@@ -4,8 +4,9 @@ Graphiti is Zep's open-source framework for temporal knowledge graphs and reusab
 
 ## Scope and boundaries
 
-- Graphiti remains distinct from the producer-operated Zep service; self-hosting and framework operation belong to this software identity.
-- The profile treats supported graph backends, embedding/LLM providers, package versions, retrieval APIs, and deployment dependencies as freshness-sensitive.
+Graphiti is distinct from the producer-operated Zep service. Supported graph backends, model providers, retrieval APIs, and deployment dependencies vary by release.
+
+The default LLM and embedding clients use OpenAI. Graph storage and model processing are separate deployment choices, with alternative hosted and local providers supported; self-hosting the graph does not make model operations local.
 
 ## Relations
 
@@ -14,3 +15,4 @@ Graphiti is Zep's open-source framework for temporal knowledge graphs and reusab
 ## Official resources
 
 - <https://github.com/getzep/graphiti>
+- [LLM and embedding configuration](https://help.getzep.com/graphiti/configuration/llm-configuration)

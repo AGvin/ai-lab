@@ -2,7 +2,8 @@
 
 ## Requirements
 
-- Identify Weaviate Database as released open-source/self-managed vector search infrastructure for similarity search, hybrid retrieval, and vector-powered AI applications.
+- Identify Weaviate Database as released self-managed vector search infrastructure with an open-source core for similarity search, hybrid retrieval, and vector-powered AI applications.
+- Preserve the component-license boundary: source outside `wl/` is BSD-3-Clause, while `wl/` contains separately licensed enterprise code enabled by a license key; the open-source license does not grant use of those enterprise features. Check licensing against the exact release and selected components.
 - Preserve canonical ownership under `software/data-infrastructure/vector-search`. Distinguish the database from the provider-operated `services/data-infrastructure/vector-search/weaviate-cloud` identity.
 - Describe Docker, Kubernetes, and cloud-provider self-managed installation choices as deployments of the same database rather than different products.
 - Do not promote experimental embedded clients, SDK language packages, agent features, or integrations into peer database identities without independent material lifecycle evidence.

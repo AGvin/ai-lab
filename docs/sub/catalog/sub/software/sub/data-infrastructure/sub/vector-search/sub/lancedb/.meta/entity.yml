@@ -5,7 +5,7 @@ entity:
   references:
     - type: documentation
       source:
-        url: https://www.lancedb.com/
+        url: https://docs.lancedb.com/
       purposes:
         - identification
         - research

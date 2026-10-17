@@ -4,6 +4,10 @@ RuVector is persistent, adaptive memory infrastructure for AI agents. Its upstre
 
 That memory-first identity determines its catalog placement. Vector and graph mechanisms remain implementation capabilities rather than reasons to place RuVector beside general vector-search backends. The default retrieval path is local; optional hosted services introduce a separate data boundary.
 
+## Relations
+
+- Produced by: [rUv](../../../../../../../producers/sub/r/sub/ruv/)
+
 ## Official resources
 
-- [RuVector repository](https://github.com/ruvnet/ruvector)
+- [RuVector repository](https://github.com/ruvnet/RuVector)

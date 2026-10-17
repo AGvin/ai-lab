@@ -16,6 +16,12 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.cognee.ai/setup-configuration/security
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/t/topoteretes

@@ -4,8 +4,9 @@ Cognee is an open-source/self-hosted AI memory platform centered on persistent l
 
 ## Scope and boundaries
 
-- The profile keeps graph/vector storage, ingestion, retrieval, and framework integrations as capabilities of the same memory-first software identity.
-- The profile treats supported stores/providers, package versions, deployment modes, APIs, and benchmark/performance claims as freshness-sensitive.
+Graph and vector storage, ingestion, retrieval, and framework integrations support the same memory-first software identity. Supported stores, providers, deployment modes, APIs, and performance depend on the selected release and configuration.
+
+Local-file ingestion can read files accessible to the Cognee process. Shared API deployments need explicit file-access controls, and API-mode MCP needs those controls on the MCP host too because that host opens local paths before uploading them.
 
 ## Relations
 
@@ -15,3 +16,4 @@ Cognee is an open-source/self-hosted AI memory platform centered on persistent l
 
 - <https://github.com/topoteretes/cognee>
 - <https://www.cognee.ai/>
+- [Deployment security and local-file controls](https://docs.cognee.ai/setup-configuration/security)

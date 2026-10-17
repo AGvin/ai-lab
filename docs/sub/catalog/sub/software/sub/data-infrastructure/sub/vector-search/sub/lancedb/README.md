@@ -16,5 +16,5 @@ The independently released OSS library is distinct from provider-managed or Ente
 
 ## Official resources
 
-- [Documentation](https://www.lancedb.com/)
+- [Documentation](https://docs.lancedb.com/)
 - [Source repository](https://github.com/lancedb/lancedb)

@@ -23,6 +23,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://github.com/weaviate/weaviate/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/w/weaviate
