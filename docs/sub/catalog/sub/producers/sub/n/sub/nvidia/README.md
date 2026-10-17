@@ -8,6 +8,7 @@ NVIDIA is a producer represented in the catalog through the NVIDIA Skills collec
 
 ## Related software
 
+- [NVIDIA NeMo Relay](../../../../../software/sub/evaluation-and-observability/sub/observability-platforms/sub/nvidia-nemo-relay/) — agent-run scopes and telemetry.
 - [NVIDIA OpenShell](../../../../../software/sub/ai-management-platforms/sub/nvidia-openshell/) — agent runtime policy and management controls.
 - [NVIDIA AI Cluster Runtime](../../../../../software/sub/automation/sub/developer-automation/sub/nvidia-aicr/) — validated GPU cluster configuration generation.
 

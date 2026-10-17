@@ -7,6 +7,7 @@
 - [Langflow Dev Team](./sub/langflow-dev-team/)
 - [Langfuse GmbH](./sub/langfuse-gmbh/)
 - [LangGenius, Inc.](./sub/langgenius-inc/)
+- [LangWatch](./sub/langwatch/)
 - [LlamaIndex, Inc.](./sub/llamaindex-inc/)
 - [LMSYS Org](./sub/lmsys-org/)
 - [LocalAI Team](./sub/localai-team/)
