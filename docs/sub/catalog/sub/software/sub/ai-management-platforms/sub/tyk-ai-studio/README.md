@@ -1,15 +1,26 @@
 # Tyk AI Studio
 
-Tyk AI Studio is a comprehensive AI management/control-plane platform rather than only an LLM gateway.
+Tyk AI Studio is Tyk Technologies' AI management platform for administering model-provider access, users, usage, chat, data sources and tools.
 
-## Scope and boundaries
+## Deployment and gateway boundaries
 
-- The profile describes its current self-managed and hybrid deployment models, Community and Enterprise editions, and hub-and-spoke architecture only from current Tyk documentation.
-- The profile covers provider/model administration, gateway policy, users/RBAC, usage and cost controls, portals/chat, data sources, tools, plugins, and edge gateways as platform components without creating duplicate canonical products for embedded components unless independent lifecycle evidence appears.
-- Tyk AI Studio remains distinct from Tyk's general API-management products.
-- The profile keeps edition-specific capabilities, licensing, deployment requirements, and supported integrations freshness-sensitive.
+Community and Enterprise support self-managed and hybrid deployments. A standalone instance includes an embedded gateway-lite for chat, testing and proxying; it has no filters, middleware or plugins. Hub-and-spoke deployments use the full Edge Gateway data plane for distributed request processing.
+
+The gateway, portal, chat and integrations are platform components. AI Studio remains distinct from Tyk's general API-management products.
+
+## Editions and operations
+
+The Community core uses AGPL-3.0. Enterprise requires a separate license and provides capabilities such as budget enforcement, advanced SSO, fine-grained RBAC, guardrail filters and audit trails. Confirm the edition and gateway surface before relying on a control.
+
+Pin the release, check integration compatibility and plan persistent storage and access policies for the selected deployment.
+
+## Relations
+
+- Produced by: [Tyk Technologies](../../../../../producers/sub/t/sub/tyk-technologies/)
 
 ## Official resources
 
-- <https://tyk.io/docs/ai-management/ai-studio/overview>
-- <https://github.com/TykTechnologies/ai-studio>
+- [Overview and edition comparison](https://tyk.io/docs/ai-management/ai-studio/overview)
+- [Deployment options](https://tyk.io/docs/ai-management/ai-studio/installation/overview)
+- [Core concepts and gateway surfaces](https://tyk.io/docs/ai-management/ai-studio/core-concepts)
+- [Source and licensing](https://github.com/TykTechnologies/ai-studio)

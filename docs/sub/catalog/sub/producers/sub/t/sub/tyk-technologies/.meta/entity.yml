@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/t/tyk-technologies
+  type: organization
+  name: Tyk Technologies
+  references:
+    - type: official-site
+      source:
+        url: https://tyk.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/TykTechnologies/ai-studio
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/ai-management-platforms/tyk-ai-studio
