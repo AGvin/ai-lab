@@ -4,7 +4,7 @@ OpenHands Software Agent SDK is an independently installable **MIT-licensed** SD
 
 ## SDK, server and execution
 
-The first-party project provides a Python agent SDK, browser-compatible TypeScript API client and an Agent Server using REST/WebSocket interfaces. These are related interfaces, not three different agent runtimes.
+The first-party project provides a Python agent SDK, browser-compatible TypeScript API client and an Agent Server using REST/WebSocket interfaces. These are related interfaces, not three different agent runtimes. The TypeScript Agent Server client is explicitly **alpha**, has an unstable API and is not recommended for production; this caveat concerns that client, not a blanket maturity label for the Python SDK.
 
 The operator configures local or isolated workspaces such as Docker/Kubernetes. File, shell, network, repository and credential permissions follow the actual chosen backend, not the SDK name.
 
