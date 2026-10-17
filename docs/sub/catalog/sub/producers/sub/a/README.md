@@ -6,6 +6,7 @@ Canonical producer profiles whose names begin with **A**.
 
 - [Activepieces Inc.](./sub/activepieces-inc/)
 - [Agentic AI Foundation](./sub/agentic-ai-foundation/)
+- [Agentic Community](./sub/agentic-community/)
 - [Agno](./sub/agno/)
 - [Aider AI LLC](./sub/aider-ai/)
 - [Alibaba Cloud](./sub/alibaba-cloud/)
