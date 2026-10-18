@@ -4,7 +4,7 @@ Tyk AI Studio is Tyk Technologies' AI management platform for administering mode
 
 ## Deployment and gateway boundaries
 
-Community and Enterprise support self-managed and hybrid deployments. A standalone instance includes an embedded gateway-lite for chat, testing and proxying; it has no filters, middleware or plugins. Hub-and-spoke deployments use the full Edge Gateway data plane for distributed request processing.
+Community and Enterprise support self-managed deployment, including hub-and-spoke topology. A standalone instance includes an embedded gateway-lite for chat, testing and proxying; it has no filters, middleware or plugins. Hub-and-spoke deployments use the full Edge Gateway data plane for distributed request processing.
 
 The gateway, portal, chat and integrations are platform components. AI Studio remains distinct from Tyk's general API-management products.
 
