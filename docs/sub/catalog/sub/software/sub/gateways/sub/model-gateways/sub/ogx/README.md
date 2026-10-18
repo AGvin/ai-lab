@@ -4,7 +4,7 @@ OGX, formerly Llama Stack, is a self-hostable model-agnostic AI API server and p
 
 ## Role and product boundaries
 
-The project offers pluggable model-inference adapters, OpenAI-compatible chat/embeddings/responses APIs, other provider-facing compatibility surfaces, MCP tools, vector stores and file-search integrations. The 2026 rename replaced old package, CLI and environment-variable namespaces; historical Llama Stack releases are not a second current product. OGX is broader than an inference-only proxy but distinct from model-serving engines and the OpenAI Agents SDK.
+The project offers pluggable model-inference adapters, OpenAI-compatible chat/embeddings/responses APIs, other provider-facing compatibility surfaces, MCP tools, vector stores and file-search integrations. The 2026 rename replaced old package, CLI and environment-variable namespaces; historical Llama Stack releases are not a second current product. Its server-side Responses loop adds tool execution, retrieval and conversation state to provider routing. Model-serving engines and the OpenAI Agents SDK remain separate products.
 
 ## Release and safe operation
 
