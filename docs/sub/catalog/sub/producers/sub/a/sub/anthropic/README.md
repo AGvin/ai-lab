@@ -1,19 +1,25 @@
 # Anthropic
 
-Anthropic is an AI research and product company represented in this catalog as a producer of documented models and Agent Skill resources.
+Anthropic is an AI research and product company represented here as a producer of documented models, Agent Skill resources, software, services, and datasets.
 
-## Translations
+## Model-domain navigation
 
-- English
-- [Українська](./l10n/uk_UA/)
+- [Anthropic models](../../../../../models/sub/anthropic/)
 
-## Models
+## Relations
 
-- [Anthropic models](../../../../../models/sub/reference/sub/producers/sub/anthropic/) — Claude model-domain navigation.
-
-## Agent Skill collections
-
-- [Anthropic Skills](../../../../../agent-skills/sub/collections/sub/anthropic-skills/)
+- Produces: [Claude](../../../../../models/sub/anthropic/sub/claude/)
+- Produces: [Anthropic Skills](../../../../../agent-skills/sub/collections/sub/anthropic-skills/)
+- Produces: [Claude Code](../../../../../software/sub/agents/sub/hybrid/sub/claude-code/)
+- Produces: [Claude](../../../../../services/sub/assistant-workspaces/sub/claude/)
+- Produces: [AuditBench](../../../../../datasets/sub/auditbench/)
+- Produces: [Claude Managed Agents](../../../../../services/sub/infrastructure/sub/claude-managed-agents/)
+- Produces: [Claude Agent SDK](../../../../../software/sub/agent-frameworks/sub/claude-agent-sdk/)
+- Produces: [Claude API](../../../../../services/sub/model-apis/sub/claude-api/)
+- Produces: [BioMysteryBench](../../../../../datasets/sub/biomysterybench/)
+- Produces: [SCONE-bench](../../../../../datasets/sub/scone-bench/)
+- Produces: [Petri](../../../../../software/sub/evaluation-and-observability/sub/evaluation-frameworks/sub/petri/)
+- Produces: [Bloom](../../../../../software/sub/evaluation-and-observability/sub/evaluation-frameworks/sub/bloom/)
 
 ## Official resources
 

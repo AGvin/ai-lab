@@ -1,23 +1,22 @@
 # Mythos
 
-Mythos is a distinct Claude specialized model series with restricted availability.
+Mythos is a specialized Claude model series with restricted availability.
 
-## Translations
+## Model family
 
-- English
-- [Українська](./l10n/uk_UA/)
+- [Claude](../../)
 
-## Scope and boundaries
+## Models
 
-- Its relationship to Fable only from current Anthropic sources and do not collapse the two series because current releases share capabilities.
-- Access program, provider availability, pricing, and lifecycle facts freshness-sensitive.
+- [Claude Mythos 5.1](./sub/models/sub/mythos-5-1/)
 
-## Relations
+## Series boundary
 
-- Member of: [`catalog/models/anthropic/claude`](../..//)
-- has-member: [`catalog/models/anthropic/claude/mythos/models/mythos-5-1`](sub/models/sub/mythos-5-1/)
+Anthropic describes Mythos 5.1 and Fable 5.1 as sharing an underlying model with different safeguards. Mythos access depends on the current model and verification program. The two series retain separate catalog entries, and a program's conditions do not automatically apply to other Claude models.
 
 ## Official resources
 
-- <https://platform.claude.com/docs/en/models/mythos-5-1/overview>
-- <https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions>
+- [Mythos 5.1 documentation](https://platform.claude.com/docs/en/models/mythos-5-1/overview)
+- [Current Mythos access](https://www.anthropic.com/claude/mythos)
+- [Fable 5.1 and Mythos 5.1 system card](https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card)
+- [Model IDs and versioning](https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions)

@@ -1,23 +1,21 @@
 # Fable
 
-Fable is a Claude model series for Anthropic's highest-capability long-horizon reasoning and agentic-work tier.
+Fable is a model series within Claude that Anthropic positions for demanding reasoning and long-horizon agentic work.
 
-## Translations
+## Model family
 
-- English
-- [Українська](./l10n/uk_UA/)
+- [Claude](../../)
 
-## Scope and boundaries
+## Models
 
-- The series remains distinct from the closely related invite-only Mythos line even when current releases share capabilities.
-- Mutable capability, pricing, availability, and retirement facts source-backed at the concrete-model level.
+- [Claude Fable 5.1](./sub/models/sub/fable-5-1/)
 
-## Relations
+## Series boundary
 
-- Member of: [`catalog/models/anthropic/claude`](../..//)
-- has-member: [`catalog/models/anthropic/claude/fable/models/fable-5-1`](sub/models/sub/fable-5-1/)
+Fable 5.1 and Mythos 5.1 share an underlying model with different safeguards and access conditions. Their separate series and API identities remain useful for navigating those published releases. Capability comparisons and deployment conditions belong to the concrete model and the intended workload.
 
 ## Official resources
 
-- <https://platform.claude.com/docs/en/models/fable-5-1/overview>
-- <https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions>
+- [Fable 5.1 documentation](https://platform.claude.com/docs/en/models/fable-5-1/overview)
+- [Fable 5.1 and Mythos 5.1 system card](https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card)
+- [Model IDs and versioning](https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions)

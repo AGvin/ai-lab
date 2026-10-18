@@ -1,23 +1,14 @@
 # Anthropic models
 
-This model-domain view groups model families produced by Anthropic. Canonical producer identity and broader company/product information remain on the Anthropic producer page.
-
-## Translations
-
-- English
-- [Українська](./l10n/uk_UA/)
-
-## Canonical producer
-
-- [Anthropic](../../../../../producers/sub/a/sub/anthropic/)
+This view groups model families produced by Anthropic. The [Anthropic producer page](../../../producers/sub/a/sub/anthropic/) owns company identity and links to its other documented resources.
 
 ## Model families
 
-- [Claude](./sub/claude/) — Anthropic's hosted language-model family.
+- [Claude](./sub/claude/) — Anthropic's family of hosted language models.
 
-Claude Code, Claude Platform, Anthropic plans, and supported cloud platforms are product or deployment surfaces rather than replacement identities for Claude or a concrete model.
+Claude Code, Claude Platform, subscription plans, and cloud integrations are product or deployment surfaces. Concrete model profiles describe their model IDs and capabilities; model selection depends on the intended workload and current provider conditions.
 
 ## Official resources
 
-- [Anthropic model documentation](https://platform.claude.com/docs/en/about-claude/models/overview)
-- [Introducing Claude Sonnet 5](https://www.anthropic.com/research/claude-sonnet-5)
+- [Anthropic](https://www.anthropic.com/)
+- [Current Claude models](https://platform.claude.com/docs/en/models/overview)

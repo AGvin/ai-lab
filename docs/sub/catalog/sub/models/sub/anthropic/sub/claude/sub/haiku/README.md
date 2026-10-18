@@ -1,22 +1,22 @@
 # Haiku
 
-Haiku is the Claude series oriented toward lower-latency and cost-sensitive workloads.
+Haiku is the Claude series oriented toward high-volume, latency-sensitive and cost-sensitive work.
 
-## Translations
+## Model family
 
-- English
-- [Українська](./l10n/uk_UA/)
+- [Claude](../../)
 
-## Scope and boundaries
+## Models
 
-- Current positioning, pricing, context, thinking behavior, and provider availability source-backed at the model level.
+- [Claude Haiku 4.5](./sub/models/sub/haiku-4-5/)
+- [Claude Haiku 5.5](./sub/models/sub/haiku-5-5/)
 
-## Relations
+## Series boundary
 
-- Member of: [`catalog/models/anthropic/claude`](../..//)
-- has-member: [`catalog/models/anthropic/claude/haiku/models/haiku-4-5`](sub/models/sub/haiku-4-5/)
+Haiku 4.5 and Haiku 5.5 are separate releases with different thinking controls and token accounting. Current specifications, prices, platform availability, and lifecycle status belong to each model; a series name does not identify a mutable latest model.
 
 ## Official resources
 
-- <https://platform.claude.com/docs/en/models/haiku-4-5/overview>
-- <https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions>
+- [Haiku 4.5 documentation](https://platform.claude.com/docs/en/models/haiku-4-5/overview)
+- [Haiku 5.5 documentation](https://platform.claude.com/docs/en/models/haiku-5-5/overview)
+- [Model IDs and versioning](https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions)

@@ -1,22 +1,35 @@
 # Claude Mythos 5.1
 
-Claude Mythos 5.1 is the concrete `claude-mythos-5-1` model released on 2026-09-01.
+Claude Mythos 5.1 is Anthropic's concrete restricted-access Mythos release.
 
-## Translations
+## Model series
 
-- English
-- [Українська](./l10n/uk_UA/)
+- [Mythos](../../../../)
 
-## Scope and boundaries
+## Provider profile
 
-- That current Anthropic documentation describes it as sharing Claude Fable 5.1 capabilities while retaining a separate model identity.
-- Context, output, pricing, thinking mode, knowledge cutoff, provider availability, and retirement state freshness-sensitive.
+The following profile was checked against Anthropic documentation on October 18, 2026.
 
-## Relations
+| Field | Provider-documented value |
+| --- | --- |
+| Claude API ID | `claude-mythos-5-1` |
+| Released | September 1, 2026 |
+| Access | Restricted to vetted users and organizations through applicable verification programs |
 
-- Member of: [`catalog/models/anthropic/claude/mythos`](../../../..//)
+## Use and compatibility
+
+Current access includes Anthropic's cybersecurity and life-sciences verification routes. Applying does not guarantee approval. Project Glasswing describes its launch context and is not an exhaustive description of current access.
+
+Anthropic describes Mythos 5.1 and [Fable 5.1](../../../../../fable/sub/models/sub/fable-5-1/) as the same underlying model with different safeguards. The published API and catalog identities remain separate. Anthropic requires 30-day data retention for this model; zero data retention needs its express authorization. Consult current migration guidance for platform applicability.
+
+Capability claims, specifications, prices, platform availability, and lifecycle commitments require the current model and program documentation.
 
 ## Official resources
 
-- <https://platform.claude.com/docs/en/models/mythos-5-1/overview>
-- <https://platform.claude.com/docs/en/release-notes/overview>
+- [Mythos 5.1 documentation](https://platform.claude.com/docs/en/models/mythos-5-1/overview)
+- [Current Mythos access](https://www.anthropic.com/claude/mythos)
+- [Cyber Verification Program](https://www.anthropic.com/news/cyber-verification-program)
+- [Life Sciences Verification Program](https://www.anthropic.com/news/life-sciences-verification-program)
+- [Fable 5.1 and Mythos 5.1 system card](https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card)
+- [Fable 5.1 and Mythos 5.1 migration guidance](https://platform.claude.com/docs/en/models/fable-5-1/migration-guide)
+- [Claude Platform release notes](https://platform.claude.com/docs/en/release-notes/overview)

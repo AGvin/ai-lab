@@ -1,36 +1,31 @@
 # Claude Sonnet 5
 
-Claude Sonnet 5 is a hosted Anthropic model in the Claude Sonnet series.
-
-## Translations
-
-- English
-- [Українська](./l10n/uk_UA/)
+Claude Sonnet 5 is a hosted Anthropic model in the Sonnet series.
 
 ## Model series
 
-- [Sonnet](../../../..)
+- [Sonnet](../../../../)
 
-## Canonical profile
+## Provider profile
 
-- Claude API model ID: `claude-sonnet-5`
-- Context window: 1,000,000 tokens
-- Maximum output: 128,000 tokens
-- Reasoning mode: adaptive thinking is enabled by default
-- Release: June 30, 2026
+The following profile was checked against Anthropic documentation on October 18, 2026.
 
-Anthropic positions Sonnet 5 for coding, planning, multi-step tool use, computer use, and long-horizon tasks. Those are provider-described capabilities rather than independent AI Lab acceptance evidence.
+| Field | Provider-documented value |
+| --- | --- |
+| Claude API ID | `claude-sonnet-5` |
+| Released | June 30, 2026 |
+| Lifecycle | Legacy |
+| Context / maximum output | 1,000,000 / 128,000 tokens |
+| Thinking | Adaptive, enabled by default |
 
-## Hosted identity boundary
+## Use and compatibility
 
-The Claude API model ID is pinned for its lifetime. Amazon Bedrock, Google Cloud, Microsoft Foundry, Claude Platform, Claude Code, plans, and convenience aliases are access/product contexts rather than replacement identities for this model.
+Anthropic positions this release for coding, planning, multi-step tool use, computer use, and longer tasks. Those descriptions are provider claims. [Sonnet 5.5](../sonnet-5-5/) is a separate release with its own API behavior and current lifecycle.
 
-## Mutable provider state
-
-Pricing, platform availability, service tiers, tokenizer migration impact, sampling-parameter compatibility, and API behavior changes are mutable provider/product concerns. They should be rechecked when a workflow depends on them instead of being treated as immutable model facts.
+The pinned API model ID is distinct from product names, plans, convenience aliases, and cloud access IDs. Pricing, service tiers, platform availability, sampling compatibility, and tokenizer or API migration behavior are mutable deployment concerns.
 
 ## Official resources
 
-- [What's new in Claude Sonnet 5](https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5)
+- [Sonnet 5 documentation](https://platform.claude.com/docs/en/models/sonnet-5/overview)
+- [Sonnet 5 announcement](https://www.anthropic.com/news/claude-sonnet-5)
 - [Model IDs and versioning](https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions)
-- [Claude Platform release notes](https://platform.claude.com/docs/en/release-notes/overview)

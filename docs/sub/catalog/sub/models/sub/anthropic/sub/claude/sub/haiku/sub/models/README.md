@@ -1,7 +1,8 @@
 # Models
 
-Materialized child entries for this part of the catalog.
+Concrete model entries in the [Haiku series](../../).
 
-## Child pages
+## Models
 
 - [Claude Haiku 4.5](./sub/haiku-4-5/)
+- [Claude Haiku 5.5](./sub/haiku-5-5/)

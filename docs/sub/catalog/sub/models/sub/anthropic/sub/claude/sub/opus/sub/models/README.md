@@ -1,7 +1,8 @@
 # Models
 
-Materialized child entries for this part of the catalog.
+Concrete model entries in the [Opus series](../../).
 
-## Child pages
+## Models
 
 - [Claude Opus 5](./sub/opus-5/)
+- [Claude Opus 5.5](./sub/opus-5-5/)
