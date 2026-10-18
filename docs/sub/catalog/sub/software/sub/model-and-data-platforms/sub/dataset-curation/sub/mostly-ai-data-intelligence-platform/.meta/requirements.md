@@ -13,4 +13,4 @@
 ## Validation
 
 - The platform remains data-intelligence/curation-first rather than generic analytics or ETL.
-- Current producer provenance resolves bidirectionally to Syntho.
+- Producer provenance resolves bidirectionally to MOSTLY AI Solutions MP GmbH; Syntho's brand acquisition remains separate from software production and ownership.
