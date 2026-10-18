@@ -23,6 +23,13 @@ entity:
         - research
       authority: official
       note: Google records that it created and open-sourced Kubeflow and identifies Kubeflow Pipelines as one of the project components.
+    - type: repository
+      source:
+        url: https://github.com/google/orbax
+      purposes:
+        - research
+      authority: official
+      note: Official Orbax source identifies the Google-hosted checkpointing project and links its paper documenting Google and Google DeepMind contributors.
   relations:
     - type: produces
       target: catalog/models/google/gemini
@@ -68,3 +75,5 @@ entity:
       target: catalog/models/google/veo
     - type: produces
       target: catalog/services/model-apis/gemini-api
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/orbax-checkpoint
