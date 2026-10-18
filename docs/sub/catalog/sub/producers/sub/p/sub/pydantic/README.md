@@ -5,6 +5,9 @@ Pydantic is the first-party organization and publishing identity behind Pydantic
 ## Produces
 
 - [Pydantic AI](../../../../../software/sub/agent-frameworks/sub/pydantic-ai/) — open-source agent framework.
+- [Pydantic AI Harness](../../../../../software/sub/agent-frameworks/sub/pydantic-ai-harness/).
+- [Pydantic Evals](../../../../../software/sub/evaluation-and-observability/sub/evaluation-frameworks/sub/pydantic-evals/) — Python evaluation library.
+- [Pydantic Logfire](../../../../../software/sub/evaluation-and-observability/sub/observability-platforms/sub/pydantic-logfire/).
 
 ## Official resources
 

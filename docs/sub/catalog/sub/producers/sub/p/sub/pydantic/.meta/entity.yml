@@ -23,4 +23,6 @@ entity:
     - type: produces
       target: catalog/software/agent-frameworks/pydantic-ai-harness
     - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/pydantic-evals
+    - type: produces
       target: catalog/software/evaluation-and-observability/observability-platforms/pydantic-logfire

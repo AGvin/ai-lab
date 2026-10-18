@@ -17,6 +17,7 @@ Frameworks and tools for repeatable evaluation of language models, agents, retri
 - [NVIDIA AIPerf](./sub/nvidia-aiperf/)
 - [Petri](./sub/petri/)
 - [promptfoo](./sub/promptfoo/)
+- [Pydantic Evals](./sub/pydantic-evals/)
 - [PyRIT](./sub/pyrit/)
 - [Ragas](./sub/ragas/)
 - [TruLens](./sub/trulens/)
