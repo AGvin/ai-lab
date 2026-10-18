@@ -1,6 +1,6 @@
 # Magistral
 
-Magistral is Mistral AI's reasoning-specialized model family.
+Magistral is Mistral AI’s reasoning-specialized model family.
 
 ## Translations
 
@@ -8,13 +8,18 @@ Magistral is Mistral AI's reasoning-specialized model family.
 
 ## Relations
 
-- Produced by: [`catalog/producers/m/mistral-ai`](../../../../../producers/sub/m/sub/mistral-ai/)
-- Has member: [`catalog/models/mistral-ai/magistral/models/magistral-small-2509`](sub/models/sub/magistral-small-2509/)
+- Model: [Magistral Small 2509](./sub/models/sub/magistral-small-2509/)
+- Producer: [Mistral AI](../../../../../producers/sub/m/sub/mistral-ai/)
+
+## Scope and status
+
+The represented Small 2509 checkpoint is called Small 1.2 in the API catalog. Its hosted release is deprecated, while its open weights retain their model identity. [Magistral Small 1.2 lifecycle and model card](https://docs.mistral.ai/models/magistral-small-1-2-25-09)
 
 ## Scope and boundaries
 
-- Reasoning prompts, language support, benchmarks, context, license, API aliases, deprecation/retirement state, and deployment support remain freshness-sensitive.
+Reasoning traces, special-token formatting and effective context are release-specific. A model-generated chain of reasoning is not formal verification. [Magistral Small 2509 weights and prompting](https://huggingface.co/mistralai/Magistral-Small-2509)
 
 ## Official resources
 
-- <https://huggingface.co/mistralai/Magistral-Small-2509>
+- [Magistral Small 2509 weights and prompting](https://huggingface.co/mistralai/Magistral-Small-2509)
+- [Magistral Small 1.2 lifecycle and model card](https://docs.mistral.ai/models/magistral-small-1-2-25-09)

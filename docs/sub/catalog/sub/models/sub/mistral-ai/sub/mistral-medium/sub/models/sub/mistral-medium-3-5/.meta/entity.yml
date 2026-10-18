@@ -16,6 +16,18 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/studio/conversations/function-calling
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/mistral-ai/mistral-medium

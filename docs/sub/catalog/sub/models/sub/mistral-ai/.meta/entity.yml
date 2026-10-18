@@ -16,3 +16,16 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/inference/model-lifecycle
+      purposes:
+        - research
+      authority: official

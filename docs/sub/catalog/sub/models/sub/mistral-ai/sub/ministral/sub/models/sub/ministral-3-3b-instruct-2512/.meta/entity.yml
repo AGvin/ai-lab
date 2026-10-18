@@ -10,6 +10,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/ministral-3-3b-25-12
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/mistral-ai/ministral

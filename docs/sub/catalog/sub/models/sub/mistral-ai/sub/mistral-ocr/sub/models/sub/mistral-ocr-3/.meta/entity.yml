@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/mistral-ai/mistral-ocr/models/mistral-ocr-3
+  type: model
+  name: Mistral OCR 3
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/ocr-3-25-12
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/studio/document-processing/basic_ocr
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/mistral-ocr

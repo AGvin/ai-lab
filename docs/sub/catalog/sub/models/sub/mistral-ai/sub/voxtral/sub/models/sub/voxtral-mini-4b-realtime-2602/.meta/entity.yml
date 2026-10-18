@@ -18,6 +18,19 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-26-02
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/studio/audio/speech_to_text/realtime_transcription
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/mistral-ai/voxtral

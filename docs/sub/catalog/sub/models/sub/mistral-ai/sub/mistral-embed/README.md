@@ -1,6 +1,6 @@
 # Mistral Embed
 
-Mistral Embed is Mistral AI's general embedding model line and materialize the currently available Mistral Embed 2312 checkpoint.
+Mistral Embed is Mistral AI’s general text-embedding model line.
 
 ## Translations
 
@@ -8,9 +8,19 @@ Mistral Embed is Mistral AI's general embedding model line and materialize the c
 
 ## Relations
 
-- Produced by: [`catalog/producers/m/mistral-ai`](../../../../../producers/sub/m/sub/mistral-ai/)
-- Has member: [`catalog/models/mistral-ai/mistral-embed/models/mistral-embed-2312`](sub/models/sub/mistral-embed-2312/)
+- Producer: [Mistral AI](../../../../../producers/sub/m/sub/mistral-ai/)
+- Model: [Mistral Embed 2312](./sub/models/sub/mistral-embed-2312/)
+
+## Scope and status
+
+The represented 2312 checkpoint returns numerical text representations for retrieval and similarity. Code-specific Codestral Embed remains a distinct identity. [Text embedding contract](https://docs.mistral.ai/studio/knowledge-rag/embeddings/text_embeddings) [Code embedding dimensions and types](https://docs.mistral.ai/studio/knowledge-rag/embeddings/code_embeddings)
+
+## Operational boundaries
+
+An embedding is a representation, not a generated answer, correctness assessment or access-control rule. Model and vector configuration must match across indexing and queries.
 
 ## Official resources
 
-- <https://docs.mistral.ai/models/mistral-embed-23-12>
+- [Mistral Embed model card](https://docs.mistral.ai/models/mistral-embed-23-12)
+- [Text embedding contract](https://docs.mistral.ai/studio/knowledge-rag/embeddings/text_embeddings)
+- [Code embedding dimensions and types](https://docs.mistral.ai/studio/knowledge-rag/embeddings/code_embeddings)

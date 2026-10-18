@@ -10,6 +10,27 @@ entity:
         - identification
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/m/mistral-ai

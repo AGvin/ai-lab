@@ -10,6 +10,19 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/studio/conversations/moderation
+      purposes:
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai/Shieldstral-1.0-3B
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/m/mistral-ai

@@ -16,6 +16,33 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/ocr-3-25-12
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/ocr-4-0
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/ocr-4-1
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/api/endpoint/ocr
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/m/mistral-ai
@@ -23,3 +50,5 @@ entity:
       target: catalog/models/mistral-ai/mistral-ocr/models/mistral-ocr-4
     - type: has-member
       target: catalog/models/mistral-ai/mistral-ocr/models/mistral-ocr-4-1
+    - type: has-member
+      target: catalog/models/mistral-ai/mistral-ocr/models/mistral-ocr-3

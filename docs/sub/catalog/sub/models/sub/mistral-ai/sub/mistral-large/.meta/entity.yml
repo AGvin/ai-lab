@@ -10,8 +10,37 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/mistral-large-3-25-12
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/mistral-large-4-0
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.mistral.ai/resources/changelogs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/inference/model-lifecycle
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/m/mistral-ai
     - type: has-member
       target: catalog/models/mistral-ai/mistral-large/models/mistral-large-3-675b-instruct-2512
+    - type: has-member
+      target: catalog/models/mistral-ai/mistral-large/models/mistral-large-4

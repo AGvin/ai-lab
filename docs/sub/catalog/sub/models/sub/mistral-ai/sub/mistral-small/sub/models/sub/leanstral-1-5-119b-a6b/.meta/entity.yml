@@ -11,6 +11,20 @@ entity:
         - research
       authority: official
       note: Mistral identifies Leanstral 1.5 as an open-source Lean 4 code-agent specialization built as part of the Mistral Small 4 family.
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/leanstral-1-5
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.mistral.ai/resources/changelogs
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/mistral-ai/mistral-small

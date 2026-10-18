@@ -1,6 +1,6 @@
 # Codestral
 
-Codestral is Mistral AI's code-specialized model line and keep generation/completion and code-embedding checkpoints as distinct concrete members.
+Codestral is Mistral AI’s model line for code completion and code embeddings.
 
 ## Translations
 
@@ -8,15 +8,19 @@ Codestral is Mistral AI's code-specialized model line and keep generation/comple
 
 ## Relations
 
-- Produced by: [`catalog/producers/m/mistral-ai`](../../../../../producers/sub/m/sub/mistral-ai/)
-- Has member: [`catalog/models/mistral-ai/codestral/models/codestral-2508`](sub/models/sub/codestral-2508/)
-- Has member: [`catalog/models/mistral-ai/codestral/models/codestral-embed-2505`](sub/models/sub/codestral-embed-2505/)
+- Model: [Codestral 2508](./sub/models/sub/codestral-2508/)
+- Model: [Codestral Embed 2505](./sub/models/sub/codestral-embed-2505/)
+- Producer: [Mistral AI](../../../../../producers/sub/m/sub/mistral-ai/)
+
+## Scope and status
+
+Code-generation checkpoints return source text; code-embedding checkpoints return vectors. Those interfaces and their evaluation criteria are different. [Codestral 2508 model card](https://docs.mistral.ai/models/codestral-25-08) [Codestral Embed 2505 model card](https://docs.mistral.ai/models/codestral-embed-25-05)
 
 ## Scope and boundaries
 
-- Retired earlier Codestral checkpoints, Codestral Mamba, hosted aliases, API pricing, Vibe presets, and third-party routes remain outside current concrete ownership unless separately required.
+Use concrete member documentation for context, model identifiers and licensing. A shared family name does not make a completion model and an embedding model interchangeable.
 
 ## Official resources
 
-- <https://docs.mistral.ai/models/codestral-25-08>
-- <https://docs.mistral.ai/models/codestral-embed-25-05>
+- [Codestral 2508 model card](https://docs.mistral.ai/models/codestral-25-08)
+- [Codestral Embed 2505 model card](https://docs.mistral.ai/models/codestral-embed-25-05)
