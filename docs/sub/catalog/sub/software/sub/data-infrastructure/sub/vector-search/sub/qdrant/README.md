@@ -4,6 +4,8 @@ Qdrant is open-source vector-search infrastructure for storing, searching, and m
 
 Qdrant can be operated as self-managed software. Qdrant Cloud is a separate hosted operating surface and should not be treated as the same deployment boundary as the software profile.
 
+Self-hosted Qdrant does not enable authentication or transport encryption by default. Configure authentication and TLS before exposing an instance to a network; Qdrant Cloud's managed security defaults do not automatically apply to self-managed software.
+
 ## Relations
 
 - Produced by: [Qdrant Solutions GmbH](../../../../../../../producers/sub/q/sub/qdrant-solutions-gmbh/)
@@ -12,3 +14,4 @@ Qdrant can be operated as self-managed software. Qdrant Cloud is a separate host
 
 - [Qdrant documentation](https://qdrant.tech/documentation/)
 - [Qdrant repository](https://github.com/qdrant/qdrant)
+- [Self-hosted security guidance](https://qdrant.tech/documentation/tutorials-operations/secure-qdrant/)

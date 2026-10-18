@@ -17,6 +17,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://qdrant.tech/documentation/tutorials-operations/secure-qdrant/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/q/qdrant-solutions-gmbh
