@@ -113,3 +113,7 @@ entity:
       target: catalog/hardware/nvidia-rtx-a6000
     - type: produces
       target: catalog/software/agent-frameworks/nvidia-nemo-agent-toolkit
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/megatron-core
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/megatron-bridge

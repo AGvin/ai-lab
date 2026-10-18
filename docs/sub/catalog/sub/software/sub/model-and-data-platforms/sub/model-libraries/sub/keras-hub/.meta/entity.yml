@@ -1,0 +1,38 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-libraries/keras-hub
+  type: software
+  name: KerasHub
+  aliases:
+    - KerasNLP
+  references:
+    - type: documentation
+      source:
+        url: https://keras.io/keras_hub/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/keras-team/keras-hub
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://pypi.org/project/keras-hub/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://keras.io/keras_hub/getting_started/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/k/keras-team

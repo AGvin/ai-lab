@@ -12,6 +12,8 @@ Frameworks and toolkits used to build, train, adapt, fine-tune and improve machi
 - [Keras](./sub/keras/) — multi-backend neural-network API.
 - [Lightning](./sub/lightning/) — structured PyTorch training.
 - [LLaMA Factory](./sub/llama-factory/) — model fine-tuning and alignment.
+- [Megatron Bridge](./sub/megatron-bridge/) — Model training recipes and Hugging Face/Megatron checkpoint conversion.
+- [Megatron Core](./sub/megatron-core/) — Composable distributed model-training building blocks.
 - [Megatron-LM](./sub/megatron-lm/) — large transformer-model training.
 - [NVIDIA NeMo RL](./sub/nvidia-nemo-rl/) — reinforcement-learning model training.
 - [OpenRLHF](./sub/openrlhf/) — open-source reinforcement learning from feedback.
