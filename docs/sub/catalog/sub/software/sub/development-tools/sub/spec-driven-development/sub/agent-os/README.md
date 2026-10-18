@@ -4,6 +4,10 @@ Agent OS is a spec-driven development support system focused on establishing cod
 
 Current Agent OS works alongside coding assistants and their planning capabilities rather than replacing them with its own implementation-orchestration runtime.
 
+## Relations
+
+- Produced by: [Builder Methods](../../../../../../../producers/sub/b/sub/builder-methods/)
+
 ## Official resources
 
 - [Agent OS repository](https://github.com/buildermethods/agent-os)

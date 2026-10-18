@@ -8,7 +8,7 @@ The v2 package includes Web UI, CLI and TUI, plus experimental `mcpdo` persisten
 
 ## Operational boundaries
 
-The canonical release record is v2.10.1 (2026-10-08). Confirm v1 versus v2 tooling and protocol support. On machines lacking an OS keychain, the project warns that `~/.mcp-inspector/secrets.json` may be stored without encryption unless a key is configured. Protect OAuth credentials, avoid public UI binding and review commands executed through stdio servers. The source-license transition includes MIT, Apache-2.0 and separately licensed documentation portions.
+The canonical release record is v2.11.0 (2026-10-14). Confirm v1 versus v2 tooling and protocol support. On machines lacking an OS keychain, the project warns that `~/.mcp-inspector/secrets.json` may be stored without encryption unless a key is configured. Protect OAuth credentials, avoid public UI binding and review commands executed through stdio servers. The source-license transition includes MIT, Apache-2.0 and separately licensed documentation portions.
 
 ## Relations
 

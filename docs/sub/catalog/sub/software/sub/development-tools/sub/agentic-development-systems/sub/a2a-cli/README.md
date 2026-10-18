@@ -8,7 +8,7 @@ The official A2A project CLI supports agent discovery and communication, with me
 
 ## Operational boundaries
 
-The catalog records upstream release v0.3.0. Verify the chosen released package, transport support and command grammar. Remote endpoints, custom request headers, downloaded files, and executable local plugins require authorization, controlled secrets and untrusted-input handling.
+The catalog records upstream release v0.3.1. Verify the chosen released package, transport support and command grammar. Remote endpoints, custom request headers, downloaded files, and executable local plugins require authorization, controlled secrets and untrusted-input handling.
 
 ## Relations
 
