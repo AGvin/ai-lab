@@ -12,3 +12,16 @@
 - GPT-Live-1 is not described as the backend reasoning model used by a complete voice agent.
 - API GA status is distinguished from the model's earlier ChatGPT rollout.
 - Mutable voice/API features are freshness-scoped.
+
+## Source-scoped operating boundaries
+
+- The API release became generally available on September 10, 2026. Backend inference is separate from the voice session, and access and capacity are determined by the service [API changelog](https://developers.openai.com/api/docs/changelog).
+- Keep credentials, business rules, and action authorization on the server. A delegated action or sideband connection does not itself authorize execution [Voice server controls](https://developers.openai.com/api/docs/guides/voice-server-controls).
+
+## Source evidence
+
+- [gpt-live-1 model reference](https://developers.openai.com/api/docs/models/gpt-live-1).
+- [GPT-Live system card](https://deploymentsafety.openai.com/gpt-live).
+- [GPT-Live API guide](https://developers.openai.com/api/docs/guides/live).
+- [API changelog](https://developers.openai.com/api/docs/changelog).
+- [Voice server controls](https://developers.openai.com/api/docs/guides/voice-server-controls).

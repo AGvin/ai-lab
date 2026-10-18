@@ -16,6 +16,38 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss
+      purposes:
+        - research
+      authority: official
+    - type: announcement
+      source:
+        url: https://openai.com/index/introducing-gpt-oss-safeguard/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/cookbook/articles/gpt-oss-safeguard-guide
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-oss-120b
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-oss-20b
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
@@ -23,3 +55,8 @@ entity:
       target: catalog/models/openai/gpt-oss/models/gpt-oss-120b
     - type: has-member
       target: catalog/models/openai/gpt-oss/models/gpt-oss-20b
+    - type: has-member
+      target: catalog/models/openai/gpt-oss/models/gpt-oss-safeguard-120b
+    - type: has-member
+      target: catalog/models/openai/gpt-oss/models/gpt-oss-safeguard-20b
+  identity_note: Open-weight family covering base reasoning releases and separately named safeguard policy-classification fine-tunes.

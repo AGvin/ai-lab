@@ -21,3 +21,4 @@ entity:
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
+  identity_note: Multimodal moderation model line; its latest alias and dated snapshot are not separate peer entities.

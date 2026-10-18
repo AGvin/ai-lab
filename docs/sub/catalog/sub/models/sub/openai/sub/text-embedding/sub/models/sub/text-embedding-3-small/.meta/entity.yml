@@ -10,6 +10,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/embeddings
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/openai/text-embedding
+  identity_note: Concrete text embedding model; dimensions, encoding, and vector-store integration are configuration rather than separate model identities.

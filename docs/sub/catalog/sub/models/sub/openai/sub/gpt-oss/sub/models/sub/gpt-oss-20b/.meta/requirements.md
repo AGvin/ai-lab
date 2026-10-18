@@ -11,3 +11,13 @@
 
 - The model remains a concrete gpt-oss family member rather than a runtime/deployment preset.
 - Active parameters are not used as a residency estimate.
+
+## Source-scoped operating boundaries
+
+- The model is not served in OpenAI’s API or ChatGPT, and OpenAI’s API fine-tuning service does not fine-tune these weights. The deployment operator supplies the runtime and tool-execution controls [Open-weight FAQ](https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss).
+- Active parameter count measures per-token computation, not the total weights that must be stored. It does not by itself establish VRAM, latency, or hardware fit.
+
+## Source evidence
+
+- [gpt-oss-20b model reference](https://developers.openai.com/api/docs/models/gpt-oss-20b).
+- [Open-weight FAQ](https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss).

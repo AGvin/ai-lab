@@ -11,3 +11,13 @@
 
 - The entity represents one trained model rather than an Audio API endpoint.
 - Deprecated predecessor aliases are not materialized as new current identities.
+
+## Source-scoped operating boundaries
+
+- This is the REST Chat Completions audio surface, distinct from a Realtime session. Function calling and streaming are supported, while Structured Outputs are not listed as supported [Model reference](https://developers.openai.com/api/docs/models/gpt-audio-1.5).
+- Voice formats, transport, latency, and application permissions are deployment concerns. A generated tool call still requires the application’s authorization before execution.
+
+## Source evidence
+
+- [gpt-audio-1.5 model reference](https://developers.openai.com/api/docs/models/gpt-audio-1.5).
+- [API changelog](https://developers.openai.com/api/docs/changelog).

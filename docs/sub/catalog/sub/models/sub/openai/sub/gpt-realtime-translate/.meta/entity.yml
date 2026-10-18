@@ -21,3 +21,4 @@ entity:
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
+  identity_note: Live speech-translation model using dedicated translation sessions; not a general conversational assistant.

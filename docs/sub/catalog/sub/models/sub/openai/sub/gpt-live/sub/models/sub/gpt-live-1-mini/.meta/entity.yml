@@ -12,11 +12,18 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://deploymentsafety.openai.com/
+        url: https://deploymentsafety.openai.com/gpt-live
       purposes:
         - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/voice-server-controls
+      purposes:
         - research
       authority: official
   relations:
     - type: member-of
       target: catalog/models/openai/gpt-live
+  identity_note: Released full-duplex voice model; GPT-Live-1 API availability is not inherited by GPT-Live-1 mini.

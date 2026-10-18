@@ -26,3 +26,16 @@
 - Model-domain navigation resolves to its canonical catalog node.
 - Promptfoo organizational membership is not misrepresented as a direct OpenAI production relation.
 - No link targets the removed `agent-skills/skills/` branch.
+
+## Source-scoped operating boundaries
+
+- Provenance does not imply one deployment or access policy. OpenAI publishes both hosted models and downloadable open weights; the latter are not served through its API or ChatGPT [Open-weight FAQ](https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss).
+- Lifecycle notices apply to the exact service and identifiers they name. Deprecation does not itself mean immediate shutdown [API deprecations](https://developers.openai.com/api/docs/deprecations).
+
+## Source evidence
+
+- [OpenAI official site](https://openai.com/).
+- [OpenAI model catalog](https://developers.openai.com/api/docs/models).
+- [Open-weight FAQ](https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss).
+- [gpt-oss-safeguard release](https://openai.com/index/introducing-gpt-oss-safeguard/).
+- [API deprecations](https://developers.openai.com/api/docs/deprecations).

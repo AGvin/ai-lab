@@ -14,3 +14,15 @@
 - Restricted eligibility is not confused with prerelease lifecycle status.
 - Product/workspace/plugin identities are not collapsed into the model family.
 - Concrete children are backed by explicit first-party model naming rather than inferred from product updates.
+
+## Source-scoped operating boundaries
+
+- A subscription alone does not grant access. Organizational approval determines permitted workspaces and products; API use needs separate approval where offered [Rosalind access documentation](https://help.openai.com/en/articles/20001193-gpt-rosalind-for-life-sciences-research).
+- Rosalind Workbench and life-sciences plugins are application and tool layers. Research outputs and benchmark results remain conditioned on the model version and evaluated workflow [Rosalind model update](https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/).
+
+## Source evidence
+
+- [GPT-Rosalind introduction and lifecycle update](https://openai.com/index/introducing-gpt-rosalind/).
+- [GPT-Rosalind-5.5 update](https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/).
+- [GPT-Rosalind-5.5 system card](https://deploymentsafety.openai.com/gpt-rosalind-5-5/introduction).
+- [GPT-Rosalind access documentation](https://help.openai.com/en/articles/20001193-gpt-rosalind-for-life-sciences-research).

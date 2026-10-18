@@ -11,3 +11,13 @@
 
 - The model remains distinct from the smaller `text-embedding-3-small` member.
 - Vector dimensionality does not by itself establish downstream retrieval quality.
+
+## Source-scoped operating boundaries
+
+- Vector length is an adjustable representation choice, not proof of downstream retrieval quality. Choose and evaluate the dimensions used by the index and queries together [Embeddings guide](https://developers.openai.com/api/docs/guides/embeddings).
+- Vectors from different model/configuration spaces should not be compared as if interchangeable. The retrieval application still controls which source documents a user may access.
+
+## Source evidence
+
+- [text-embedding-3-large model reference](https://developers.openai.com/api/docs/models/text-embedding-3-large).
+- [Embeddings guide](https://developers.openai.com/api/docs/guides/embeddings).

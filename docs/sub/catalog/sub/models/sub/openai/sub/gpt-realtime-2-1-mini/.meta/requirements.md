@@ -11,3 +11,15 @@
 
 - The entity represents one trained model rather than a pricing tier or API endpoint.
 - Distilled/cost positioning remains provider guidance.
+
+## Source-scoped operating boundaries
+
+- Function calling is supported; Structured Outputs and fine-tuning are not documented as supported for this model. [Model reference](https://developers.openai.com/api/docs/models/gpt-realtime-2.1-mini).
+- Realtime event streaming is a session protocol; a generic streaming badge should not be used to deny streamed voice support. Browser sessions use server-created short-lived credentials, while application servers retain API keys and authorize tool actions [Realtime guide](https://developers.openai.com/api/docs/guides/realtime).
+
+## Source evidence
+
+- [gpt-realtime-2.1-mini model reference](https://developers.openai.com/api/docs/models/gpt-realtime-2.1-mini).
+- [Realtime guide](https://developers.openai.com/api/docs/guides/realtime).
+- [Voice server controls](https://developers.openai.com/api/docs/guides/voice-server-controls).
+- [API changelog](https://developers.openai.com/api/docs/changelog).

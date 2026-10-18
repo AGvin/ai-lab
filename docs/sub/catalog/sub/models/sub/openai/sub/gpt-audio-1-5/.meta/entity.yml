@@ -21,3 +21,4 @@ entity:
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
+  identity_note: Audio model for Chat Completions; its identifier is not interchangeable with a Realtime model or session.

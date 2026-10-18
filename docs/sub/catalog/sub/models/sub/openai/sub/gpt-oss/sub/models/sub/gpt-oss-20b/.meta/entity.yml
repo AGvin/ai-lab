@@ -10,6 +10,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/openai/gpt-oss
+  identity_note: Open-weight reasoning model with 21 billion total and 3.6 billion active parameters; neither active count nor a hosting option defines another model.

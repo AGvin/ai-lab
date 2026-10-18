@@ -12,6 +12,19 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/realtime-transcription
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/openai/whisper
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
+  identity_note: Hosted live transcription model; no downloadable Whisper checkpoint equivalence is inferred from its name.

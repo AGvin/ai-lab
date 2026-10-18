@@ -18,6 +18,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/speech-to-text
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
+  identity_note: Live transcription model with client-controlled committed turns; not the GPT-Live conversational voice family.

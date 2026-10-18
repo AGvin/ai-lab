@@ -18,6 +18,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/deprecations
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
+  identity_note: Released text-to-speech model retained with its October 2026 deprecation and January 2027 API shutdown.

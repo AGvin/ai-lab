@@ -11,3 +11,13 @@
 
 - The model remains distinct from `text-embedding-3-large`.
 - Lower hosted price is not treated as proof of lower accepted-result cost on every retrieval workload.
+
+## Source-scoped operating boundaries
+
+- Vector length is an adjustable representation choice, not proof of downstream retrieval quality. Choose and evaluate the dimensions used by the index and queries together [Embeddings guide](https://developers.openai.com/api/docs/guides/embeddings).
+- Vectors from different model/configuration spaces should not be compared as if interchangeable. The retrieval application still controls which source documents a user may access.
+
+## Source evidence
+
+- [text-embedding-3-small model reference](https://developers.openai.com/api/docs/models/text-embedding-3-small).
+- [Embeddings guide](https://developers.openai.com/api/docs/guides/embeddings).

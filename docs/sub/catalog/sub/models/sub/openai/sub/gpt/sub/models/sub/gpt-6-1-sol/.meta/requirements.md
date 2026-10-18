@@ -14,3 +14,15 @@
 - GPT-6.1 Sol is a direct concrete member of GPT and remains distinct from GPT-6 Sol, GPT-6 Astra, and GPT-6 Luna.
 - Multi-agent beta is not materialized as a peer trained model.
 - Hosted/API properties are not generalized into permanent architectural facts.
+
+## Source-scoped operating boundaries
+
+- Tool use requires Responses; Chat Completions does not support tools for this model. Reasoning effort none and minimal are not supported. [Model reference](https://developers.openai.com/api/docs/models/gpt-6.1-sol).
+- Multi-agent is a beta serving capability. Processing tier, parallel work, and enabled tools are configuration rather than separate trained-model identities [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).
+- Tool calls express proposed actions. The application remains responsible for permissions and for handling untrusted instructions in files, skills, and tool results [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).
+
+## Source evidence
+
+- [gpt-6.1-sol model reference](https://developers.openai.com/api/docs/models/gpt-6.1-sol).
+- [API changelog](https://developers.openai.com/api/docs/changelog).
+- [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).

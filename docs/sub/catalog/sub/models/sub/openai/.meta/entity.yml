@@ -16,3 +16,16 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/deprecations
+      purposes:
+        - research
+      authority: official
+  identity_note: Producer-oriented navigation over OpenAI model identities; this page is not itself a trained model or hosted API service.

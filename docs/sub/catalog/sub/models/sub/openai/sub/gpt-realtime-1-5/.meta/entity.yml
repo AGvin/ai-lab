@@ -18,6 +18,19 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/realtime
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/voice-server-controls
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
+  identity_note: Concrete gpt-realtime-1.5 voice model; session protocol and application tool authority are separate from the trained-model identity.

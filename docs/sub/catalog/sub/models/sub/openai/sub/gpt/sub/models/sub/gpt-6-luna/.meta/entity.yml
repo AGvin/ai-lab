@@ -17,6 +17,19 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/latest-model
+      purposes:
+        - research
+      authority: official
+    - type: model-card
+      source:
+        url: https://deploymentsafety.openai.com/gpt-6-october
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/openai/gpt
+  identity_note: Concrete model associated with the gpt-6-luna API identifier; reasoning settings and dated product deployments remain separately scoped.

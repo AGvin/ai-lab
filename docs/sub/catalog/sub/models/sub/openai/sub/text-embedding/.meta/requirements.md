@@ -13,3 +13,14 @@
 - The family is not conflated with a vector database or the Embeddings API endpoint.
 - Current recommended members are represented without materializing every legacy embedding model.
 - Producer provenance resolves bidirectionally to OpenAI.
+
+## Source-scoped operating boundaries
+
+- The Embeddings API produces vector representations; it is separate from the vector store and retrieval application. Model choice and output dimensionality affect the index configuration [Embeddings guide](https://developers.openai.com/api/docs/guides/embeddings).
+- A similarity score is not verification that a claim is true or that a document is authorized for a user. Retrieval access controls belong to the application.
+
+## Source evidence
+
+- [Embeddings guide](https://developers.openai.com/api/docs/guides/embeddings).
+- [text-embedding-3-small model reference](https://developers.openai.com/api/docs/models/text-embedding-3-small).
+- [text-embedding-3-large model reference](https://developers.openai.com/api/docs/models/text-embedding-3-large).

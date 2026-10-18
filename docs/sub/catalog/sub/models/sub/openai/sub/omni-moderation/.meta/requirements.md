@@ -12,3 +12,13 @@
 - The page represents the current trained moderation model line without creating duplicate alias/snapshot nodes.
 - Text/image moderation is not generalized to audio.
 - Producer provenance resolves bidirectionally to OpenAI.
+
+## Source-scoped operating boundaries
+
+- Categories have different input-type coverage. Use category_applied_input_types when interpreting results: an unsupported category can return zero for image-only input, which is not a finding that the content is safe for that category [Moderation guide](https://developers.openai.com/api/docs/guides/moderation).
+- Scores and custom thresholds may need recalibration after model updates. The application defines enforcement, escalation, and review; a model score is not a complete safety policy [Moderation guide](https://developers.openai.com/api/docs/guides/moderation).
+
+## Source evidence
+
+- [omni-moderation-latest model reference](https://developers.openai.com/api/docs/models/omni-moderation-latest).
+- [Moderation guide](https://developers.openai.com/api/docs/guides/moderation).

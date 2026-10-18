@@ -22,6 +22,25 @@ entity:
       purposes:
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/openai/whisper/blob/main/model-card.md
+      purposes:
+        - research
+      authority: official
+    - type: announcement
+      source:
+        url: https://openai.com/index/whisper/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/deprecations
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
+  identity_note: Downloadable ASR family; the whisper-1 API model and GPT Realtime Whisper have separately scoped hosted identities and lifecycles.

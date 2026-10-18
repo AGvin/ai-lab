@@ -11,3 +11,16 @@
 
 - GPT-6 Luna is a direct concrete member of GPT and remains distinct from GPT-6 Astra and GPT-6 Sol.
 - Hosted/API properties are not generalized into permanent architectural facts.
+
+## Source-scoped operating boundaries
+
+- Responses is the tool-capable API surface. Chat Completions supports function calling only with reasoning effort set to none. [Model reference](https://developers.openai.com/api/docs/models/gpt-6-luna).
+- OpenAI’s October 7, 2026 system card distinguishes the October ChatGPT update from the September version still used in Codex and Work. That product update is not evidence that every API request uses the October version [October GPT-6 system card](https://deploymentsafety.openai.com/gpt-6-october).
+- Tool calls express proposed actions. The application remains responsible for permissions and for handling untrusted instructions in files, skills, and tool results [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).
+
+## Source evidence
+
+- [gpt-6-luna model reference](https://developers.openai.com/api/docs/models/gpt-6-luna).
+- [API changelog](https://developers.openai.com/api/docs/changelog).
+- [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).
+- [GPT-6 October 2026 system card](https://deploymentsafety.openai.com/gpt-6-october).
