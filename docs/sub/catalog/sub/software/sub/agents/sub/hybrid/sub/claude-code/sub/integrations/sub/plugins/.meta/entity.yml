@@ -14,3 +14,15 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://code.claude.com/docs/en/plugins-reference
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://code.claude.com/docs/en/discover-plugins
+      purposes:
+        - research
+      authority: official

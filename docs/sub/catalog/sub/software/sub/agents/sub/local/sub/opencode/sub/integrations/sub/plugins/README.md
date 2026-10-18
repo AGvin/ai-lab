@@ -1,14 +1,19 @@
 # OpenCode Plugins
 
-This profile documents OpenCode-specific plugin support as mutable software/product facts from current official OpenCode documentation.
+OpenCode plugins are JavaScript or TypeScript modules that extend the host with hooks and custom behavior. This is OpenCode's executable plugin mechanism; current documentation does not establish conformance with the vendor-neutral Agent Plugins package standard.
 
-## Scope and boundaries
+## Loading and execution
 
-- The profile covers current local/package-based discovery and loading, configuration, plugin functions/hooks, ordering, package dependencies, permissions/security-relevant behavior, and compatibility only when source-backed.
-- The profile keeps exact directories, configuration keys, package conventions, load order, hook/event surfaces, commands, and compatibility current-source-backed because they may change.
-- OpenCode's product-specific plugin mechanism remains distinct from the vendor-neutral Agent Plugins standard unless official OpenCode documentation explicitly states conformance/interoperability.
-- The profile keeps generic plugin concept, lifecycle, trust, adoption, and portability teaching with selected concept/learning owners.
+Local modules load from project `.opencode/plugins` and user `~/.config/opencode/plugins` directories. npm packages are listed in the configuration's `plugin` array; OpenCode installs package dependencies with Bun at startup and caches them.
+
+The documented order is global configuration, project configuration, global plugin directory, then project plugin directory. Identical package/version entries are deduplicated; a local plugin and an npm plugin can both load.
+
+A plugin exports a function that returns hooks and receives host facilities such as the SDK client, project information, and Bun's shell helper. Local dependencies can be declared in the configuration directory's `package.json`. Hook and permission events describe host behavior, not an isolation boundary for arbitrary plugin code. Review the module, dependencies, credentials, and filesystem access before loading it. Skills, MCP servers, commands, and agent configuration remain distinct extension mechanisms.
+
+## Related
+
+- [Agent Plugins specification](../../../../../../../../../../../specifications/sub/formats/sub/agent-plugins/)
 
 ## Official resources
 
-- <https://opencode.ai/docs/plugins/>
+- [OpenCode plugin documentation](https://opencode.ai/docs/plugins/)

@@ -1,13 +1,20 @@
 # OpenCode Agent Skills
 
-This profile documents OpenCode-specific Agent Skills support as mutable software/product facts.
+OpenCode discovers `SKILL.md` packages and loads their full content on demand through the native `skill` tool. Each skill supplies a name and description; skills are separate from executable plugins, commands, agent definitions, and MCP servers.
 
-## Scope and boundaries
+## Discovery and access
 
-- The profile covers current skill discovery roots and scope, loading or invocation behavior, permissions governing skill access, installation or placement, and supported package metadata when source-backed.
-- OpenCode Agent Skills remains distinct from plugins, commands, agents, MCP, and other OpenCode extension or configuration surfaces.
-- The profile keeps exact paths, configuration keys, permission syntax, supported metadata, commands, and version-dependent behavior current-source-backed because they may change.
+Place project skills in `.opencode/skills/<name>/SKILL.md` or user skills in `~/.config/opencode/skills/<name>/SKILL.md`. Compatibility roots include project `.claude/skills`, `.agents/skills`, and user `~/.claude/skills`, `~/.agents/skills`. Project discovery walks from the current directory to the Git worktree root.
+
+The optional `opencode/slash` metadata value `"true"` exposes a skill as a slash command. `opencode/autoinvoke: "false"` hides it from model discovery while allowing manual loading.
+
+The `permission.skill` configuration controls access with `allow`, `ask`, or `deny` rules, including pattern matching. Agent-specific permissions can override access, and disabling `tools.skill` removes the tool for that agent. These govern skill loading; tool execution and external services retain their own controls. Consult the current documentation for exact roots, metadata, and permission syntax.
+
+## Related
+
+- [Agent Skills concept](../../../../../../../../../../../../../concepts/sub/ai-engineering/sub/extensibility-and-packaging/sub/agent-skills/)
+- [Skill portability](../../../../../../../../../../../../../learning/sub/areas/sub/agents-and-automation/sub/integration-and-extensibility/sub/agent-skills/sub/platform-support-and-portability/)
 
 ## Official resources
 
-- <https://opencode.ai/docs/skills/>
+- [OpenCode skills](https://opencode.ai/docs/skills/)

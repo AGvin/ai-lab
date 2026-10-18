@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Identify Mistral AI as the canonical producer organization for the documented Mistral models.
+- Identify Mistral AI as the canonical producer organization for the documented Mistral models, software, and services.
 - Preserve the Mistral AI model-domain view as navigation without duplicating model-owned facts.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Keep model facts, hosted endpoints, pricing, service features, and deployment guidance in their corresponding owners.

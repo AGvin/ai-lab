@@ -6,9 +6,14 @@ Kiro CLI is Kiro's licensed terminal AI development agent for coding and automat
 
 Kiro IDE, CLI, Web, and mobile can connect to the same cloud sessions. Local and cloud tool access, account permissions, synced configuration, connected repositories, automation approvals, and sandbox policies differ by execution environment; do not infer a universal permission or data-isolation guarantee. Check first-party availability and license terms for the intended configuration.
 
+## Related
+
+- [Amazon Web Services](../../../../../../../producers/sub/a/sub/amazon-web-services/) — producer.
+
 ## Official resources
 
 - [Kiro CLI documentation](https://kiro.dev/docs/cli/)
 - [Kiro local and cloud agent execution](https://kiro.dev/docs/how-kiro-works/)
 - [Kiro CLI cloud session command](https://kiro.dev/docs/cli/chat/)
 - [Kiro CLI changelog](https://kiro.dev/changelog/cli/)
+- [Kiro service-provider provenance](https://kiro.dev/docs/billing/managing-taxes/)

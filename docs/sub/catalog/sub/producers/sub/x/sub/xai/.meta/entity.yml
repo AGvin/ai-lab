@@ -1,9 +1,12 @@
 entity:
   id: catalog/producers/x/xai
   type: organization
-  name: SpaceXAI
+  name: SpaceXAI LLC
   aliases:
+    - SpaceXSI
+    - SpaceXAI
     - xAI
+  identity_note: Current official terms identify the contracting organization as SpaceXAI LLC and define SpaceXSI as its public name; preserve the existing xAI continuity identity.
   references:
     - type: official-site
       source:
@@ -30,6 +33,12 @@ entity:
         url: https://x.ai/news/xai-joins-spacex
       purposes:
         - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://x.ai/legal/terms-of-service
+      purposes:
         - research
       authority: official
   relations:

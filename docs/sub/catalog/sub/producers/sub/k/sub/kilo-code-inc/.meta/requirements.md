@@ -2,11 +2,12 @@
 
 ## Requirements
 
-- Identify Kilo Code Inc. as the legal organization operating the Kilo Code product and related Kilo cloud services under the current Kilo Terms of Service.
+- Identify Kilo Code Inc. as the original producer organization behind Kilo Code, now part of Anaconda following its July 2026 acquisition.
 - Keep producer identity distinct from the Kilo Code software/product entity and from its individual local, gateway, or hosted execution surfaces.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
-- Include current official Kilo site, Terms of Service, and repository references sufficient to establish provenance.
-- Note corporate ownership changes only when relevant; do not replace the current legal product operator with a parent-company identity when official service terms continue to name Kilo Code Inc.
+- Include current official Kilo site, Terms of Service, repository, and Anaconda acquisition references sufficient to establish provenance.
+- Preserve the ownership relation to Anaconda, Inc. and its exact inverse while retaining Kilo Code Inc. as the Kilo Code product producer.
+- Explain that the published September 30, 2026 Kilo terms identify Anaconda, Inc. acting for itself and affiliates including Kilo Code Inc.; their phased effective-date provisions and applicable enterprise agreements prevent a blanket claim that every existing contract has already migrated.
 
 ## Validation
 

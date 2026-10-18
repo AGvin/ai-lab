@@ -7,7 +7,7 @@
 - Preserve local, containerized, SSH, VPS, and other user-operated agent execution alongside Nous Research-operated Hermes Cloud instances, and distinguish cloud model inference from actual vendor-managed agent execution.
 - Preserve the distinction between memory and skills at a stable high level: durable facts/context and reusable procedural workflows have different persistence/loading roles.
 - Preserve useful legacy operational boundaries around model/provider credentials, messaging-channel credentials, terminal/browser/file access, memory retention, skill creation/update, MCP server trust, scheduled unattended tasks, subagent access, remote execution, and human approval gates.
-- Mention that current Hermes provides approval/gating mechanisms for some memory/skill writes without presenting those controls as a universal security guarantee.
+- Mention the optional memory/skill write gates: `memory.write_approval` and `skills.write_approval` default to false. When enabled, the memory gate uses foreground CLI approval or stages writes from other surfaces, while skill writes are staged for review. Do not present these persistence controls as a universal security guarantee.
 - Keep provider lists, platform counts, tool counts, model availability, Hermes Cloud access, terms, and other mutable product-state claims source-backed when expanded.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official Hermes Agent site, documentation, and repository references.

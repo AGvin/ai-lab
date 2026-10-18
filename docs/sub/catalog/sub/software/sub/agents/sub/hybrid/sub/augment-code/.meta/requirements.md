@@ -6,6 +6,7 @@
 - Keep the Hybrid Agent classification source-backed: Augment documents a local agent mode and installable IDE/CLI surfaces that can execute local terminal/tool actions, while separately offering generally available remote/cloud agent execution in vendor-managed isolated environments.
 - Treat Auggie CLI, Intent, Cosmos, IDE extensions, Remote Agents, Cloud Agents, Context Engine, and related named capabilities as product surfaces within Augment Code unless current first-party evidence establishes a separately useful independent product identity that passes the intake gates.
 - Preserve the distinction between user-controlled local tool execution and vendor-operated cloud execution; do not imply that every Augment task runs locally or that every CLI/IDE interaction delegates to a managed cloud VM.
+- Preserve the documented permission split: Auggie CLI and Cosmos cloud agents enforce `toolPermissions`, while the IDE extension does not enforce that configuration and has its own Agent/Agent Auto approval behavior.
 - Keep current model availability, model routing, quotas, pricing, service-account support, integration catalog, enterprise controls, data-handling claims, and cloud-agent implementation details freshness-sensitive and source-backed when expanded.
 - Keep the Agent Client Protocol support and MCP integrations as interoperability capabilities rather than duplicate specification identities.
 - Render producer relation and official resources only during the final render phase.

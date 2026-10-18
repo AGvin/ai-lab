@@ -18,6 +18,24 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/nemoclaw/user-guide/hermes/reference/platform-support
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/nemoclaw/user-guide/hermes/reference/architecture
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA/NemoClaw
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/n/nvidia

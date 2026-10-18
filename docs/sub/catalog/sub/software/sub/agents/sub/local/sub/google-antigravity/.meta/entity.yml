@@ -26,6 +26,24 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://antigravity.google/product/antigravity-cli
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://antigravity.google/blog/remote-control-for-antigravity
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://antigravity.google/blog/introducing-google-antigravity-2
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/g/google

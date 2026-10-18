@@ -23,6 +23,24 @@ entity:
       purposes:
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/xai-org/grok-build
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://x.ai/news/grok-build-for-everyone
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.x.ai/build/features/sandbox
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/x/xai

@@ -9,7 +9,7 @@
 - Cover the current product's agent orchestration surfaces only at identity level: synchronous/asynchronous agents, dynamic subagents, projects, scheduled tasks, skills, MCP, hooks, CLI, and related runtime controls belong here as product capabilities rather than independent catalog identities unless they later clear the intake gates separately.
 - Treat the Antigravity SDK separately as a preview developer surface unless its lifecycle and independent identity later justify its own canonical node.
 - Keep model availability, quotas, plans, organization access, release numbers, supported operating systems, and enterprise/GCP terms freshness-sensitive and source-backed when expanded.
-- Render producer relation and official resources only during the final render phase.
+- Render the standard `entity-relations` block from validated current-entity relations and include current official resources.
 
 ## Validation
 

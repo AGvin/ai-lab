@@ -1,13 +1,15 @@
 # Cognition AI, Inc.
 
-Cognition AI, Inc. is the organization behind the Devin hosted software-development agent.
+Cognition AI, Inc. is the organization behind the Devin development-agent products. The hosted Devin service and installable Devin Desktop software retain separate catalog identities.
 
-## Related catalog entity
+## Produces
 
-- [Devin](../../../../../services/sub/development/sub/agents/sub/devin/) — canonical hosted development-agent service profile.
+- [Devin](../../../../../services/sub/development/sub/agents/sub/devin/) — hosted development-agent service.
+- [Devin Desktop](../../../../../software/sub/agents/sub/hybrid/sub/devin-desktop/) — desktop agent workspace and IDE, formerly Windsurf.
 
 ## Official resources
 
-- [Cognition](https://cognition.ai/)
-- [Cognition Data Processing Addendum](https://cognition.ai/Cognition-DPA.pdf)
-- [Cognition Trust Center](https://trust.cognition.ai/)
+- [Cognition](https://cognition.com/)
+- [Platform Terms of Service](https://cognition.com/legal/platform-terms-of-service)
+- [Data Processing Agreement](https://cognition.com/legal/data-processing-statement)
+- [Trust Center](https://trust.cognition.ai/)

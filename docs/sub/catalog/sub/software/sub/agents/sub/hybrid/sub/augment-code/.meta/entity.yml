@@ -22,6 +22,18 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.augmentcode.com/cli/permissions
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.augmentcode.com/using-augment/agent
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/a/augment-computing-inc

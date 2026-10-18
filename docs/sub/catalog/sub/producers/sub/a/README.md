@@ -17,6 +17,7 @@ Canonical producer profiles whose names begin with **A**.
 - [All Hands AI, Inc.](./sub/all-hands-ai-inc/)
 - [AlphaAI Technologies Inc.](./sub/alphaai-technologies-inc/)
 - [Amazon Web Services](./sub/amazon-web-services/)
+- [Anaconda, Inc.](./sub/anaconda-inc/)
 - Andon Labs
 - [Andrew Kane](./sub/andrew-kane/)
 - [Anomaly Innovations, Inc.](./sub/anomaly-innovations-inc/)
@@ -34,6 +35,6 @@ Canonical producer profiles whose names begin with **A**.
 - [ARISE Initiative](./sub/arise-initiative/)
 - [Arize AI, Inc.](./sub/arize-ai-inc/)
 - AsyncAPI Initiative
-- Augment Computing, Inc.
+- [Augment Computing, Inc.](./sub/augment-computing-inc/)
 - [Auth0](./sub/auth0/)
 - [Axolotl AI Cloud](./sub/axolotl-ai-cloud/)

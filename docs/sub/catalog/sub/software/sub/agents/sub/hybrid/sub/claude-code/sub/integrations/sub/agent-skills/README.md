@@ -1,13 +1,21 @@
 # Claude Code Agent Skills
 
-This profile documents Claude Code-specific Agent Skills support as mutable software/product facts.
+Claude Code loads reusable instructions from `SKILL.md` files and can invoke them automatically or through `/name`. Its skill support extends the Agent Skills standard with host-specific invocation and execution controls.
 
-## Scope and boundaries
+## Discovery and invocation
 
-- The profile covers current personal, project, managed, and plugin-provided skill locations or scopes; discovery; automatic and explicit invocation; namespacing; permissions or tool restrictions; and installation/removal behavior when source-backed.
-- Claude Code Agent Skills remains distinct from plugins, slash commands, subagents, hooks, MCP, and CLAUDE.md instructions while explaining supported composition points where relevant.
-- The profile keeps exact paths, commands, frontmatter fields, precedence rules, plugin behavior, and availability current-source-backed because they may change.
+Personal skills live under `~/.claude/skills/`; repository skills use `.claude/skills/`. Managed settings and plugins supply additional scopes. Enterprise skills take precedence over personal and project skills with the same name; plugin skills use `/plugin:skill` namespacing.
+
+`disable-model-invocation: true` reserves a skill for explicit invocation. `user-invocable: false` hides its user command while allowing model invocation. Legacy `.claude/commands/` files remain supported within the merged skill system.
+
+## Permissions and lifecycle
+
+`allowed-tools` pre-approves listed tools for the invoking turn; it is not a tool allowlist. Other tools remain governed by normal permissions. Managed policy can suppress these grants. Review executable content and declared tool access before enabling repository skills.
+
+Remove a personal or project skill by deleting its directory; remove plugin-provided skills through plugin management and account-synced skills through account settings. Already-loaded instructions remain in the conversation. Local personal skills do not automatically appear in cloud sessions.
+
+See [Agent Skills](../../../../../../../../../../../../../concepts/sub/ai-engineering/sub/extensibility-and-packaging/sub/agent-skills/) for the concept and [Platform Support and Portability](../../../../../../../../../../../../../learning/sub/areas/sub/agents-and-automation/sub/integration-and-extensibility/sub/agent-skills/sub/platform-support-and-portability/) for cross-host guidance.
 
 ## Official resources
 
-- <https://code.claude.com/docs/en/skills>
+- [Claude Code skills](https://code.claude.com/docs/en/skills)

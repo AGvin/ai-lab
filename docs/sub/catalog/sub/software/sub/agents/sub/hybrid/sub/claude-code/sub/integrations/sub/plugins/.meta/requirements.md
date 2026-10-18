@@ -8,6 +8,9 @@
 - Distinguish Claude Code's product-specific plugin contract from the vendor-neutral Agent Plugins standard unless official documentation explicitly states conformance/interoperability.
 - Keep generic plugin concept, trust, lifecycle, adoption, removal, and portability teaching with selected concept/learning owners.
 
+- Preserve the distinction between the interactive `/plugin install` review panel and direct shell installation, and between a shared project enablement entry and downloading a plugin on each collaborator's machine.
+- Explain that plugin code runs with user privileges, that install scope controls visibility, and that changes need the applicable reload/session lifecycle; local settings are not automatically inherited by cloud sessions.
+
 ## Validation
 
 - Current Claude Code plugin behavior is supported by current official Anthropic documentation.

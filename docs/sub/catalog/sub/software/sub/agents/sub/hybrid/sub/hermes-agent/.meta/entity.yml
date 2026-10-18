@@ -36,6 +36,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://hermes-agent.nousresearch.com/docs/user-guide/features/memory
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/n/nous-research
