@@ -6,6 +6,8 @@ Hugging Face Optimum is a model-optimization tooling family for hardware- and ru
 
 Optimum is optimization and preparation-first. Concrete runtime and provider packages remain product surfaces of Optimum unless they establish independent canonical identities; model-development libraries such as Transformers, PEFT, and TRL and execution-first inference runtimes remain separate.
 
+ONNX export and ONNX Runtime integration are maintained in the separately packaged and released `optimum-onnx` project. Choose the target integration and its dependencies; installing the base `optimum` package does not imply that ONNX integration code is included.
+
 Supported backends, package layout, hardware integrations, quantization methods, and version-specific compatibility are freshness-sensitive.
 
 ## Relations
@@ -16,3 +18,4 @@ Supported backends, package layout, hardware integrations, quantization methods,
 
 - [Hugging Face Optimum documentation](https://huggingface.co/docs/optimum/index)
 - [Hugging Face Optimum repository](https://github.com/huggingface/optimum)
+- [Optimum ONNX integration](https://github.com/huggingface/optimum-onnx)

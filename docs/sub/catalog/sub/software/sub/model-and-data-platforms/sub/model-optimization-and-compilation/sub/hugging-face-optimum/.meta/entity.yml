@@ -17,6 +17,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/huggingface/optimum-onnx
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/h/hugging-face-inc

@@ -19,6 +19,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.openvino.ai/2026/about-openvino/additional-resources/telemetry.html
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/o/openvino-toolkit

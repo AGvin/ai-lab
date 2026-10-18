@@ -25,6 +25,12 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://nvidia.github.io/TensorRT-Model-Connect/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/n/nvidia

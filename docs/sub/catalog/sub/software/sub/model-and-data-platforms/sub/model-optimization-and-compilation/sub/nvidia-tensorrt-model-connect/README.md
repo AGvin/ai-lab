@@ -1,6 +1,10 @@
 # NVIDIA TensorRT Model Connect
 
-NVIDIA TensorRT Model Connect is a released open-source toolkit for converting supported model checkpoints into deployment-ready TensorRT-backed bundles and native C++ task integrations.
+NVIDIA TensorRT Model Connect is an open-source toolkit in public preview for converting supported model checkpoints into TensorRT-backed bundles and native C++ task integrations.
+
+## Lifecycle
+
+NVIDIA describes Model Connect as an experimental project intended for evaluation and feedback. APIs, scope and direction may change; the preview establishes no specific product roadmap or release timeline. Published nightly wheels provide a downloadable preview, not a guarantee of stable APIs or production readiness.
 
 ## Scope and product boundaries
 
@@ -16,5 +20,6 @@ Confirm supported model families, qualified GPUs, build tools, bundle format and
 
 ## Official resources
 
-- [Source repository](https://github.com/NVIDIA/TensorRT-Model-Connect)
+- [Source repository and project status](https://github.com/NVIDIA/TensorRT-Model-Connect)
+- [Current documentation](https://nvidia.github.io/TensorRT-Model-Connect/)
 - [Technical introduction](https://developer.nvidia.com/blog/deploy-an-open-model-from-checkpoint-to-inference-in-two-commands-with-nvidia-tensorrt-model-connect/)
