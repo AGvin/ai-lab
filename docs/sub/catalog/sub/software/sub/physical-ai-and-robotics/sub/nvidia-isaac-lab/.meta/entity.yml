@@ -16,6 +16,18 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://isaac-sim.github.io/IsaacLab/main/source/experimental-features/newton-physics-integration/index.html
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/n/nvidia

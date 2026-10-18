@@ -16,6 +16,21 @@ entity:
       purposes:
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/verl-project/verl-vla
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/verl-project/verl-vla/blob/v0.1.0/pyproject.toml
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/model-and-data-platforms/model-development/verl
+    - type: produces
+      target: catalog/software/physical-ai-and-robotics/verl-vla

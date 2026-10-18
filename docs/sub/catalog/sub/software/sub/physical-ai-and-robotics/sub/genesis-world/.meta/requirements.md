@@ -7,6 +7,8 @@
 - Treat package/version support, physics/rendering backends, accelerator/platform compatibility, APIs, and performance claims as freshness-sensitive.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+- Document the separately installed compatible PyTorch environment, simulation versus rendering backends, and matching GPU driver requirements. Current installation guidance distinguishes CPU simulation from CUDA, ROCm and Metal execution; an Intel GPU can render but has no GPU simulation backend.
+
 ## Validation
 
 - Genesis World remains physical-AI/robotics software rather than generic physics or model-development ownership.

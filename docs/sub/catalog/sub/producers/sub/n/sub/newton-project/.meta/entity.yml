@@ -1,0 +1,34 @@
+entity:
+  id: catalog/producers/n/newton-project
+  type: organization
+  name: Newton Project
+  references:
+    - type: repository
+      source:
+        url: https://github.com/newton-physics/newton-governance
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/newton-physics/newton-governance/blob/f64e05785206fac64896411ac05906039502cbab/CONTRIBUTING.md
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/newton-physics/newton
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.linuxfoundation.org/press/linux-foundation-announces-contribution-of-newton-by-disney-research-google-deepmind-and-nvidia-to-accelerate-open-robot-learning
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/physical-ai-and-robotics/newton

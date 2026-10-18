@@ -2,11 +2,13 @@
 
 Hugging Face LeRobot is an open-source robotics and physical-AI toolkit for real-robot data collection, policy training and evaluation, datasets, and deployment workflows.
 
-## Software boundary
+## Workflows and dependencies
 
-LeRobot remains robotics software rather than a generic model-development or dataset owner. Concrete robotics datasets and trained models stay with their dataset and model canonical owners and are referenced here only as LeRobot-compatible assets or workflows.
+LeRobot connects demonstration recording and replay, policy training and evaluation, and deployment through robot, camera, dataset and model interfaces. Concrete hardware, datasets and trained policies remain separately selected inputs to a workflow.
 
-Supported robots, policies, hardware interfaces, datasets, package APIs, and release compatibility are freshness-sensitive.
+The current main-branch installation guide separates the core ML library from extras for recording, training, visualization, specific policies, simulation environments and motor interfaces. Installing the base package does not install every workflow dependency.
+
+Documentation and package versions must match: the main documentation explicitly describes a source installation, while released packages have versioned documentation. Supported devices, policies and dependency combinations can differ between those surfaces.
 
 ## Relations
 
@@ -16,3 +18,4 @@ Supported robots, policies, hardware interfaces, datasets, package APIs, and rel
 
 - [LeRobot documentation](https://huggingface.co/docs/lerobot/main/index)
 - [LeRobot repository](https://github.com/huggingface/lerobot)
+- [Installation and feature dependencies](https://huggingface.co/docs/lerobot/main/installation)

@@ -37,6 +37,19 @@ entity:
         - research
       authority: official
       note: Optax identifies itself as a standalone library in the DeepMind JAX Ecosystem.
+    - type: repository
+      source:
+        url: https://github.com/google-deepmind/mujoco_playground
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/google-deepmind/mujoco_playground/blob/v0.2.0/pyproject.toml
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/google/gemini
@@ -60,3 +73,5 @@ entity:
       target: catalog/software/model-and-data-platforms/model-development/flax
     - type: produces
       target: catalog/software/model-and-data-platforms/model-development/optax
+    - type: produces
+      target: catalog/software/physical-ai-and-robotics/mujoco-playground

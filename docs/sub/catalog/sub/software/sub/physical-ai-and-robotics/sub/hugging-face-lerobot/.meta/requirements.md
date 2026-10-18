@@ -7,6 +7,8 @@
 - Treat supported robots, policies, hardware interfaces, datasets, package APIs, and release compatibility as freshness-sensitive.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+- Separate the installed release from main-branch documentation, which explicitly requires a source installation. The current installation guide distinguishes core ML dependencies from feature, policy, environment and hardware extras; do not imply that installing the base package enables every robot workflow.
+
 ## Validation
 
 - LeRobot remains physical-AI/robotics software rather than a generic model-development or dataset owner.

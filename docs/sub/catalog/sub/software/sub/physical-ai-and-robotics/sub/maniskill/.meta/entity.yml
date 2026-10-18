@@ -16,6 +16,12 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://maniskill.readthedocs.io/en/latest/user_guide/getting_started/installation.html
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/m/maniskill-project

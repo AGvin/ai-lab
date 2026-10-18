@@ -2,11 +2,13 @@
 
 ManiSkill is a robotics simulation and training framework with Gym and Gymnasium interfaces, GPU and CPU simulation, reinforcement learning, imitation learning, parallel rendering, and sim2real tooling.
 
-## Software boundary
+## Operation and compatibility
 
-ManiSkill remains physical-AI and robotics software rather than a generic reinforcement-learning or model-development framework. SAPIEN is an underlying simulator and dependency rather than an alternate canonical placement for ManiSkill.
+ManiSkill builds its rigid-body tasks on SAPIEN and exposes environments to learning code through Gym and Gymnasium interfaces. A compatible PyTorch installation supports its learning workflows.
 
-Supported tasks and robots, simulation backends, learning-framework integrations, package versions, hardware requirements, and benchmark claims are freshness-sensitive.
+State-based simulation and visual observations have different requirements. Rendering needs a GPU with a working Vulkan driver; successful state simulation does not establish that a camera or viewer will work. The project currently provides its strongest support on Linux with NVIDIA GPUs, with platform-specific limitations elsewhere.
+
+The released package and the more frequently updated nightly package are separate installation choices. Many task assets and demonstration datasets are downloaded separately and stored under the configurable `MS_ASSET_DIR` directory. Include those assets when preparing a reproducible or offline environment.
 
 ## Relations
 
@@ -16,3 +18,4 @@ Supported tasks and robots, simulation backends, learning-framework integrations
 
 - [ManiSkill repository](https://github.com/mani-skill/ManiSkill)
 - [ManiSkill quickstart](https://maniskill.readthedocs.io/en/latest/user_guide/getting_started/quickstart.html)
+- [Installation, rendering and assets](https://maniskill.readthedocs.io/en/latest/user_guide/getting_started/installation.html)

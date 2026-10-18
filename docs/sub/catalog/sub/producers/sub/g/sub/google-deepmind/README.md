@@ -1,6 +1,6 @@
 # Google DeepMind
 
-Google DeepMind is represented as a separate canonical producer organization for authorship, development and maintenance that official model or software material attributes specifically to Google DeepMind.
+Google DeepMind is represented as a separate canonical producer organization for authorship, development and maintenance that official model, dataset or software material attributes specifically to Google DeepMind.
 
 ## Produces
 
@@ -11,6 +11,7 @@ Google DeepMind is represented as a separate canonical producer organization for
 - [Flax](../../../../../software/sub/model-and-data-platforms/sub/model-development/sub/flax/)
 - [Gemini (model family)](../../../../../models/sub/google/sub/gemini/)
 - [Gemma](../../../../../models/sub/google/sub/gemma/)
+- [MuJoCo Playground](../../../../../software/sub/physical-ai-and-robotics/sub/mujoco-playground/)
 - [Optax](../../../../../software/sub/model-and-data-platforms/sub/model-development/sub/optax/)
 - [Veo](../../../../../models/sub/google/sub/veo/)
 - [WeatherNext](../../../../../models/sub/google/sub/weathernext/)
@@ -30,3 +31,4 @@ Google DeepMind and Google remain separate canonical organization identities. Cu
 - [Google DeepMind organizational announcement](https://blog.google/innovation-and-ai/technology/ai/april-ai-update/)
 - [Flax maintenance attribution](https://github.com/google/flax)
 - [Optax project provenance](https://github.com/google-deepmind/optax)
+- [MuJoCo Playground project provenance](https://github.com/google-deepmind/mujoco_playground)

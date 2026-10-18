@@ -16,6 +16,12 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.isaacsim.omniverse.nvidia.com/latest/installation/requirements.html
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/n/nvidia

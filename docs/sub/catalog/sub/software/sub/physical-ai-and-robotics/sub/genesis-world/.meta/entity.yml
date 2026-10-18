@@ -16,6 +16,12 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://genesis-world.readthedocs.io/en/latest/user_guide/overview/installation.html
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/g/genesis-world-project
