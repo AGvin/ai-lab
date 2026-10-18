@@ -17,6 +17,24 @@ entity:
         - identification
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+      purposes:
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://api-docs.deepseek.com/news/news261017/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://api-docs.deepseek.com/quick_start/pricing/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/deepseek/deepseek/deepseek-v4-1
