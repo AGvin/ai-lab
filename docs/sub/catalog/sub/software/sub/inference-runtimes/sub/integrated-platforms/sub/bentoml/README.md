@@ -1,18 +1,24 @@
 # BentoML
 
-BentoML is an open-source self-managed inference/deployment platform for packaging, serving, and scaling AI model/application workloads.
+BentoML is an Apache-2.0 Python library and self-managed platform for packaging, serving, and deploying AI models and applications.
 
-## Scope and boundaries
+## Deployment and data boundaries
 
-- The profile preserves its primary placement under integrated inference platforms: BentoML combines model/service packaging, serving, deployment configuration, and operational tooling rather than being only a low-level inference engine.
-- BentoML software identity remains distinct from producer-operated BentoCloud or other hosted delivery surfaces unless a separately materialized service identity is independently justified.
-- The profile treats release versions, supported model/runtime integrations, cloud deployment targets, GPU/runtime compatibility, APIs, performance claims, and hosted-service behavior as mutable facts requiring current first-party verification.
+BentoML combines model and service packaging, dependency configuration, API serving, and inference orchestration. Services can run on your own infrastructure, including as Docker containers. BentoCloud provides a separate hosted deployment and management surface; its account, infrastructure, and service terms do not define every self-managed BentoML deployment.
+
+Upstream documents anonymous usage reporting of internal API calls, excluding user code, model data, model names, and stack traces. Disable it with `BENTOML_DO_NOT_TRACK=True` or the `--do-not-track` CLI option. Self-managed inference and usage reporting are separate data paths.
+
+## Producer and project continuity
+
+BentoML joined Modular through a strategic product acquisition announced in February 2026. The originating BentoML publishing identity remains distinct from that corporate affiliation, and the open-source project continues under Apache 2.0.
 
 ## Relations
 
-- Produced by: [`catalog/producers/b/bentoml`](../../../../../../../producers/sub/b/sub/bentoml/)
+- Produced by: [BentoML](../../../../../../../producers/sub/b/sub/bentoml/)
 
 ## Official resources
 
-- <https://docs.bentoml.com/en/latest/>
-- <https://github.com/bentoml/BentoML>
+- [BentoML documentation](https://docs.bentoml.com/en/latest/)
+- [BentoML repository and usage-tracking guidance](https://github.com/bentoml/BentoML)
+- [BentoML acquisition announcement](https://www.bentoml.com/blog/bentoml-is-joining-modular)
+- [Modular acquisition announcement](https://www.modular.com/blog/bentoml-joins-modular)

@@ -17,6 +17,18 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://www.bentoml.com/blog/bentoml-is-joining-modular
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.modular.com/blog/bentoml-joins-modular
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/inference-runtimes/integrated-platforms/bentoml

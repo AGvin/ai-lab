@@ -7,7 +7,9 @@
 - Keep BentoML software identity distinct from producer-operated BentoCloud or other hosted delivery surfaces unless a separately materialized service identity is independently justified.
 - Render the standard `entity-relations` block from validated current-entity relations and preserve BentoML as the producer.
 - Treat release versions, supported model/runtime integrations, cloud deployment targets, GPU/runtime compatibility, APIs, performance claims, and hosted-service behavior as mutable facts requiring current first-party verification.
-- Include current official BentoML documentation and repository references.
+- Preserve the dated producer-affiliation context: BentoML joined Modular in a strategic product acquisition announced in February 2026, while BentoML remains the software's originating publishing identity and the project continues under Apache 2.0.
+- Explain the software's documented anonymous usage reporting and opt-out via `BENTOML_DO_NOT_TRACK=True` or `--do-not-track`; do not equate self-managed deployment with disabled telemetry.
+- Include current official BentoML documentation, repository, and acquisition-announcement references.
 
 ## Validation
 
