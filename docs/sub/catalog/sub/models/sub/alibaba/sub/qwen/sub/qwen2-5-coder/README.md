@@ -15,6 +15,7 @@ Exact parameter counts, context length, training stage, and license belong to ea
 
 ## Models
 
+- [Model index](./sub/models/)
 - [Qwen2.5-Coder 3B Instruct](./sub/models/sub/qwen2-5-coder-3b-instruct/) — compact instruction-tuned coding model.
 - [Qwen2.5-Coder 7B Instruct](./sub/models/sub/qwen2-5-coder-7b-instruct/) — larger instruction-tuned coding model.
 

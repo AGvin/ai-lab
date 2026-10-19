@@ -11,7 +11,7 @@ Qwen3 is a large-language-model series in the Qwen family developed by Qwen Team
 
 The initial Qwen3 release (also identified upstream as Qwen3-2504) introduced multiple dense and MoE sizes with hybrid thinking/non-thinking interaction, multilingual support, and Apache-2.0 open-weight releases. Later Qwen3-2507 updates are revisioned releases and must not be flattened into the initial model facts.
 
-The currently materialized models are:
+The [model index](./sub/models/) lists the currently materialized models:
 
 - [Qwen3 8B](./sub/models/sub/qwen3-8b/) — dense 8.2B-parameter model.
 - [Qwen3 14B](./sub/models/sub/qwen3-14b/) — dense 14.8B-parameter model.

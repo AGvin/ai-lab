@@ -1,9 +1,10 @@
 # Qwen3-VL-235B-A22B-Instruct
 
-Qwen3-VL-235B-A22B-Instruct has official Apache-2.0 open weights for text/image/video understanding and text generation.
+Qwen3-VL-235B-A22B-Instruct is a released Mixture of Experts (MoE) instruction model with official Apache-2.0 open weights for text/image/video understanding and text generation.
 
 ## Decision and Operational Boundaries
 
+- Keep total and active parameters distinct; active parameters do not represent checkpoint size or peak runtime memory.
 - Keep native 256K context separate from extension to 1M and from hosted-region budgets; image/video preprocessing also consumes model context.
 - Keep this Instruct checkpoint distinct from a Thinking sibling and from image/video generation or embedding models.
 - Keep checkpoint identity separate from quantization and runtime packaging; pin the chosen revision and validate processor, chat-template, reasoning-parser, and tool-parser support in the selected runtime.

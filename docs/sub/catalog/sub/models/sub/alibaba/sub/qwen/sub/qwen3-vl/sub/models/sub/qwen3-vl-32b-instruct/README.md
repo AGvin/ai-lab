@@ -1,6 +1,6 @@
 # Qwen3-VL-32B-Instruct
 
-Qwen3-VL-32B-Instruct has official Apache-2.0 open weights for text/image/video understanding and text generation.
+Qwen3-VL-32B-Instruct is a released dense instruction model with official Apache-2.0 open weights for text/image/video understanding and text generation.
 
 ## Decision and Operational Boundaries
 

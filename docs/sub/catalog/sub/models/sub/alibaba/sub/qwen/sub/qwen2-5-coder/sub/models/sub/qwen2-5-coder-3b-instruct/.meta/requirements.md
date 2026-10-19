@@ -42,7 +42,7 @@ Use the current primary references in `entity.yml` for these boundaries; mutable
 - Contextual classification and recommendation language is not presented as intrinsic model identity.
 - The model page does not claim autonomous-coding suitability from parameter count alone.
 - Officially sourced model facts remain distinct from AI Lab evaluation conclusions.
-- 131,072 tokens is not presented as the shipped/default/configured context; it is identified as an optional YaRN extension from the 32,768-token configured context.
+- The page presents 32,768 tokens as the current supported context and does not present historical YaRN-extension guidance as a current capability.
 - Internal links resolve to canonical nodes.
 
 ## Reader Projection

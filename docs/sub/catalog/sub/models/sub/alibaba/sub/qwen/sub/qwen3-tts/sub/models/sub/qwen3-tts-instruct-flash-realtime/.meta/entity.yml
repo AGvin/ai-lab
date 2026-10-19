@@ -7,9 +7,21 @@ entity:
   references:
     - type: documentation
       source:
-        url: https://www.alibabacloud.com/help/en/model-studio/realtime-tts-user-guide
+        url: https://www.alibabacloud.com/help/en/model-studio/newly-released-models
       purposes:
         - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/qwen-tts-realtime-python-sdk
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/realtime-tts-user-guide
+      purposes:
         - research
       authority: official
     - type: documentation
