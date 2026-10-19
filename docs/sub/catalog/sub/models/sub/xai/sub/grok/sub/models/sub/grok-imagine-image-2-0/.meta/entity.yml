@@ -14,7 +14,13 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://docs.x.ai/developers/model-capabilities/imagine
+        url: https://docs.x.ai/developers/model-capabilities/images/multi-image-editing
+      purposes:
+        - research
+      authority: official
+    - type: migration-guide
+      source:
+        url: https://docs.x.ai/developers/migration/imagine-image-quality-nov-2
       purposes:
         - research
       authority: official

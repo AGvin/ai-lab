@@ -2,15 +2,29 @@
 
 ## Requirements
 
-- Identify Grok 4.20 as the durable trained-model identity represented by xAI's current 4.20 reasoning/non-reasoning serving variants.
-- Preserve the current text/image input, text output, 1M-token context, agentic tool-calling, structured-output, and long-context boundary only while first-party documentation supports those facts.
-- Treat `grok-4.20-0309-reasoning` and `grok-4.20-0309-non-reasoning` as concrete serving/snapshot variants of the represented Grok 4.20 identity rather than duplicating near-identical peer catalog models.
-- Treat the current `grok-4.20-multi-agent-0309` beta surface as a model-serving variant that changes the reasoning-effort control into multi-agent collaboration/agent-count behavior; do not promote it to a peer trained-model identity unless later lifecycle establishes independent weights/product identity.
-- Keep aliases, beta aliases, clusters, pricing, long-context thresholds, rate limits, batch support, and multi-agent beta lifecycle freshness-sensitive.
-- Keep Grok 4.20 distinct from current default/flagship Grok 4.7 and from Grok 4.6; do not infer numeric-version ordering as release recency.
+- Preserve the canonical identity, exact published names, and provenance described below.
+- Render the complete current entity relation projection with descriptive, resolving links.
+- Attribute provider capability claims and keep access, routing, pricing, and lifecycle facts source-scoped.
+
+## Content specification
+
+- Grok 4.20 is a Grok language-model identity with documented reasoning and non-reasoning serving variants.
+- The reasoning model reference specifies text and image input, text output, a 1,000,000-token context window, tool calling, and structured output. [Reasoning model reference](https://docs.x.ai/developers/models/grok-4.20).
+
+## Source-scoped operating boundaries
+
+- The reasoning and non-reasoning endpoints have distinct published serving identifiers. They remain variants within this catalog identity; this grouping does not assert that their weights are identical. [Non-reasoning reference](https://docs.x.ai/developers/models/grok-4.20-non-reasoning).
+- Multi-agent research remains a beta serving surface. Its reasoning-effort setting selects four or sixteen collaborating agents, affecting latency and token use; it is not evidence of a separate stable trained-model release. [Multi-agent guide](https://docs.x.ai/developers/model-capabilities/text/multi-agent).
+- The API model page lists batch support and a separate price threshold above 200,000 input tokens. Those service conditions must be checked for the selected endpoint. [Model reference](https://docs.x.ai/developers/models/grok-4.20).
 
 ## Validation
 
-- Serving-mode/snapshot aliases are not duplicated as standalone nodes.
-- Multi-agent beta is not presented as a separate trained model without stronger upstream evidence.
-- Current API availability is not mistaken for default provider recommendation.
+- The reader matches the identity and all source-scoped boundaries above.
+- Mutable aliases, serving modes, and application products are not duplicated as trained-model identities.
+
+## Source evidence
+
+- [Reasoning model reference](https://docs.x.ai/developers/models/grok-4.20).
+- [Non-reasoning model reference](https://docs.x.ai/developers/models/grok-4.20-non-reasoning).
+- [Multi-agent model reference](https://docs.x.ai/developers/models/grok-4.20-multi-agent-0309).
+- [Multi-agent guide](https://docs.x.ai/developers/model-capabilities/text/multi-agent).

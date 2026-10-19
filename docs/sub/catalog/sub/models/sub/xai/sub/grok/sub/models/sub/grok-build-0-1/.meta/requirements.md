@@ -2,13 +2,26 @@
 
 ## Requirements
 
-- Identify Grok Build 0.1 as xAI's current coding model for agentic software-engineering and workflow tasks.
-- Preserve current text/image input, text output, 256K context, reasoning, function-calling, and structured-output capabilities only while first-party documentation supports them.
-- Treat `grok-code-fast-1`, `grok-code-fast`, and `grok-code-fast-1-0825` as legacy/redirect aliases to the current Grok Build identity rather than separate trained-model nodes.
-- Keep pricing, regional clusters, long-context pricing thresholds, rate limits, and agent/tool scaffolding freshness-sensitive.
-- Present coding/agentic quality claims as xAI guidance rather than independent AI Lab ranking evidence.
+- Preserve the canonical identity, exact published names, and provenance described below.
+- Render the complete current entity relation projection with descriptive, resolving links.
+- Attribute provider capability claims and keep access, routing, pricing, and lifecycle facts source-scoped.
+
+## Content specification
+
+- Grok Build 0.1 is a concrete Grok coding model for software-engineering and workflow tasks.
+- The model reference documents text and image input, text output, a 256,000-token context window, reasoning, tool calling, and structured output. [Model reference](https://docs.x.ai/developers/models/grok-build-0.1).
+
+## Source-scoped operating boundaries
+
+- The model reference lists grok-code-fast-1, grok-code-fast, and grok-code-fast-1-0825 as aliases. The code-specific migration section identifies Grok Build 0.1 as the replacement; the migration page's broad introductory redirect statement must not override that exact mapping. [May 15 migration guide](https://docs.x.ai/developers/migration/may-15-retirement).
+- This model is distinct from the Grok Build coding-agent product. The reference lists no Batch API support; tool execution permissions belong to the application that invokes the model. [Model reference](https://docs.x.ai/developers/models/grok-build-0.1).
 
 ## Validation
 
-- Grok Build 0.1 remains a concrete coding model, not a coding-agent product or IDE.
-- Redirected legacy slugs are not duplicated.
+- The reader matches the identity and all source-scoped boundaries above.
+- Mutable aliases, serving modes, and application products are not duplicated as trained-model identities.
+
+## Source evidence
+
+- [Grok Build 0.1 model reference](https://docs.x.ai/developers/models/grok-build-0.1).
+- [May 15 migration guide](https://docs.x.ai/developers/migration/may-15-retirement).

@@ -2,12 +2,26 @@
 
 ## Requirements
 
-- Identify Grok Voice Transcribe 2.0 as the concrete `grok-voice-transcribe-2.0` speech-to-text model released by xAI on 2026-09-17.
-- Preserve the audio-to-text identity and current support for batch and streaming transcription; keep supported formats/languages, timestamps, diarization, multichannel behavior, keyterm prompting, Smart Turn, limits, pricing, and regional availability freshness-sensitive.
-- Keep the Speech to Text REST/WebSocket API as the serving surface rather than a separate trained-model identity.
-- Keep Grok Voice Transcribe 1.0 as a distinct older API-selectable model without implying that 2.0 replaced or retired it unless first-party lifecycle evidence says so.
+- Preserve the canonical identity, exact published names, and provenance described below.
+- Render the complete current entity relation projection with descriptive, resolving links.
+- Attribute provider capability claims and keep access, routing, pricing, and lifecycle facts source-scoped.
+
+## Content specification
+
+- Grok Voice Transcribe 2.0 is the Grok speech-to-text model released on September 17, 2026.
+- The Speech to Text guide documents batch file transcription and real-time WebSocket streaming, including timestamps, multiple channels, and transcript formatting. The default model is grok-voice-transcribe-2.0. [Speech to Text guide](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text).
+
+## Source-scoped operating boundaries
+
+- The earlier grok-voice-transcribe-1.0 reached end of life on October 2, 2026. Requests to that slug now route to version 2.0, so it is no longer an independently selectable older model. [API release notes](https://docs.x.ai/developers/release-notes).
+- This is an audio-to-text model, not a speech-to-speech agent. Language, format, diarization, upload, and streaming controls are API-specific and must be checked in the task guide. [Speech to Text guide](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text).
 
 ## Validation
 
-- The page represents one concrete speech-to-text model, not the complete xAI voice API.
-- Speech-to-text capabilities are not generalized to Grok 4.x language models.
+- The reader matches the identity and all source-scoped boundaries above.
+- Mutable aliases, serving modes, and application products are not duplicated as trained-model identities.
+
+## Source evidence
+
+- [Speech to Text guide](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text).
+- [API release notes](https://docs.x.ai/developers/release-notes).

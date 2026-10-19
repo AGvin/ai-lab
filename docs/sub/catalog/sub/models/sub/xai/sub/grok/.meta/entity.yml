@@ -5,14 +5,26 @@ entity:
   references:
     - type: documentation
       source:
-        url: https://docs.x.ai/grok/overview
+        url: https://docs.x.ai/developers/models
       purposes:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.x.ai/developers/faq/security
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://x.ai/legal/terms-of-service-enterprise
+      purposes:
+        - research
+      authority: official
     - type: release-notes
       source:
-        url: https://x.ai/news/grok-4-6
+        url: https://docs.x.ai/developers/release-notes
       purposes:
         - research
       authority: official
@@ -20,11 +32,11 @@ entity:
     - type: produced-by
       target: catalog/producers/x/xai
     - type: has-member
+      target: catalog/models/xai/grok/models/grok-4-20
+    - type: has-member
       target: catalog/models/xai/grok/models/grok-4-6
     - type: has-member
       target: catalog/models/xai/grok/models/grok-4-7
-    - type: has-member
-      target: catalog/models/xai/grok/models/grok-voice-transcribe-2-0
     - type: has-member
       target: catalog/models/xai/grok/models/grok-build-0-1
     - type: has-member
@@ -32,6 +44,10 @@ entity:
     - type: has-member
       target: catalog/models/xai/grok/models/grok-imagine-video-1-5
     - type: has-member
+      target: catalog/models/xai/grok/models/grok-imagine-video-1-5-lite
+    - type: has-member
       target: catalog/models/xai/grok/models/grok-voice-think-fast-2-0
     - type: has-member
-      target: catalog/models/xai/grok/models/grok-4-20
+      target: catalog/models/xai/grok/models/grok-voice-3-0
+    - type: has-member
+      target: catalog/models/xai/grok/models/grok-voice-transcribe-2-0

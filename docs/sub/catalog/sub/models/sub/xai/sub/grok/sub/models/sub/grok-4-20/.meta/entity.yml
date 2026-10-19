@@ -22,6 +22,14 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.x.ai/developers/model-capabilities/text/multi-agent
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/xai/grok
+  aliases:
+    - grok-4.20
