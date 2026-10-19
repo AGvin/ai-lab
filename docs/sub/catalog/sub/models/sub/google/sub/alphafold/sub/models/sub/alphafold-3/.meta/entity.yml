@@ -23,3 +23,4 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/google/alphafold
+  identity_note: "AlphaFold 3 is the Google DeepMind and Isomorphic Labs structure-prediction model; academic weights and GA commercial Cloud deployment are access paths to the model, not separate model identities."

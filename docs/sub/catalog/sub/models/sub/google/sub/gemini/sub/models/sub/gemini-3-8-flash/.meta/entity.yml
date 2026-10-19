@@ -2,6 +2,8 @@ entity:
   id: catalog/models/google/gemini/models/gemini-3-8-flash
   type: model
   name: Gemini 3.8 Flash
+  aliases:
+    - "gemini-3.8-flash"
   references:
     - type: documentation
       source:
@@ -12,10 +14,12 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://ai.google.dev/gemini-api/docs/latest-model
+        url: https://ai.google.dev/gemini-api/docs/function-calling
       purposes:
+        - identification
         - research
       authority: official
   relations:
     - type: member-of
       target: catalog/models/google/gemini
+  identity_note: "Stable provider-hosted text-output model served as gemini-3.8-flash; multimedia input does not imply media generation or a Live API model."

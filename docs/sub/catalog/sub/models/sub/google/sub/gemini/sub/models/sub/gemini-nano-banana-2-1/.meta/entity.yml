@@ -22,3 +22,4 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/google/gemini
+  identity_note: "Stable Gemini image-generation and editing model served as gemini-nano-banana-2.1 and named Nano Banana 2.1; product nicknames do not create additional model identities."

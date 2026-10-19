@@ -2,6 +2,8 @@ entity:
   id: catalog/models/google/gemini/models/gemini-3-8-live-extended-thinking
   type: model
   name: Gemini 3.8 Live Extended Thinking
+  aliases:
+    - "gemini-3.8-live-extended-thinking"
   references:
     - type: documentation
       source:
@@ -25,3 +27,4 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/google/gemini
+  identity_note: "Stable Live audio model served as gemini-3.8-live-extended-thinking, with background reasoning and asynchronous tools; it is distinct from ordinary Gemini 3.8 Live."

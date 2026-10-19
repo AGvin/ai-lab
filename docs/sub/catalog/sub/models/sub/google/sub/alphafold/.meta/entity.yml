@@ -8,6 +8,13 @@ entity:
         url: https://deepmind.google/science/alphafold/
       purposes: [identification, research]
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/alphafold-3
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/g/google-deepmind
@@ -15,3 +22,4 @@ entity:
       target: catalog/producers/i/isomorphic-labs
     - type: has-member
       target: catalog/models/google/alphafold/models/alphafold-3
+  identity_note: "Structural-biology model family from Google DeepMind; AlphaFold 3 was co-developed with Isomorphic Labs and is distinct from AlphaFold Server and the structure database."

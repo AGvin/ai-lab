@@ -25,3 +25,18 @@
 - The GGUF model file and required multimodal projector remain distinct components.
 - Published artifact/file size is not equated with runtime memory requirement.
 - Hardware and selection conclusions are not presented as intrinsic model facts.
+
+## Verified identity and provenance
+
+Instruction-tuned Gemma 4 checkpoint google/gemma-4-E2B-it with 2.3B effective parameters and 5.1B parameters including embeddings; QAT and GGUF packages remain separate artifacts.
+
+## Source-scoped operating boundaries
+
+- The checkpoint accepts text, image, and audio input and generates text with 128K context. The current card limits audio to 30 seconds and frame-based video to 60 seconds at one frame per second. [Official checkpoint card](https://huggingface.co/google/gemma-4-E2B-it).
+- Keep the original instruction checkpoint, QAT-trained unquantized Safetensors, Q4_0 GGUF model, and multimodal projector distinct. Published file sizes are historical artifact evidence, not peak RAM/VRAM; an optimized runtime must support the selected architecture and modalities. [Official checkpoint and artifacts](https://huggingface.co/google/gemma-4-E2B-it).
+- Apache-2.0 and the model's safety training do not supply application permissions or guarantee correct output. Validate model-generated tool calls before execution. [Configuration and safety guidance](https://ai.google.dev/gemma/docs/core/model_card_4).
+
+## Source evidence
+
+- <https://huggingface.co/google/gemma-4-E2B-it>
+- <https://ai.google.dev/gemma/docs/core/model_card_4>

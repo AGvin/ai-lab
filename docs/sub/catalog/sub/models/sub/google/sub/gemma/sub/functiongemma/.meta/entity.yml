@@ -4,6 +4,7 @@ entity:
   name: FunctionGemma
   aliases:
     - functiongemma-270m
+    - "google/functiongemma-270m-it"
   references:
     - type: official-site
       source:
@@ -18,6 +19,21 @@ entity:
       purposes:
         - research
       authority: official
+    - type: model-card
+      source:
+        url: https://ai.google.dev/gemma/docs/functiongemma/model_card
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/google/functiongemma-270m-it
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/google/gemma
+  identity_note: "FunctionGemma is the Gemma 3 270M-based function-calling model released as google/functiongemma-270m-it; it is intended for task-specific fine-tuning rather than direct general dialogue."

@@ -5,7 +5,7 @@
 - Identify Gemini as the provider-hosted multimodal model family represented under the broader Google model domain, with explicit producer provenance to both Google and Google DeepMind where current official material supports those organization views.
 - Preserve family-level identity and access boundaries without duplicating concrete-model specifications.
 - Keep API pricing, AI Studio behavior, service limits, deployment workflow, and selection conclusions outside the canonical family profile.
-- Use the canonical `models/` collection when the optional series level is omitted.
+- Use the canonical `models/` collection when the optional series level is omitted, and link every represented concrete identity from that collection.
 
 ## Content Specification
 
@@ -22,3 +22,20 @@
 - Gemini API and Google AI Studio are not treated as model aliases.
 - The canonical `models/` collection remains the navigation route when the optional series level is omitted.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Verified identity and provenance
+
+Provider-hosted model family attributed to Google and Google DeepMind; exact released model IDs, specialized variants, and service routes carry different capabilities and access conditions.
+
+## Source-scoped operating boundaries
+
+- Choose and record a concrete model ID. General reasoning, image generation, embeddings, transcription, TTS, Live audio, and allowlisted cyber models do not share a universal feature matrix. [Model inventory](https://ai.google.dev/gemini-api/docs/models).
+- Lifecycle routing can change the model behind an older endpoint: Gemini 3.7 Flash currently routes to 3.8 Flash. Keep routed historical identities distinguishable from independently served models. [Lifecycle table](https://ai.google.dev/gemini-api/docs/deprecations).
+- Function-calling support means the model can request an application function. Tool execution, permissions, and validation remain application responsibilities. Gemini API and Cloud terms, access controls, and feature availability must be evaluated for the actual serving route. [Function-calling workflow](https://ai.google.dev/gemini-api/docs/function-calling).
+
+## Source evidence
+
+- <https://ai.google.dev/gemini-api/docs/models>
+- <https://deepmind.google/models/gemini/>
+- <https://ai.google.dev/gemini-api/docs/deprecations>
+- <https://ai.google.dev/gemini-api/docs/function-calling>

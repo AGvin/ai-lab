@@ -18,6 +18,14 @@ entity:
       purposes:
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/google/embeddinggemma-2
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/google/gemma
+  identity_note: "Google DeepMind's 740M-parameter open multimodal embedding model, combining a 270M text backbone with optional 170M vision and 300M audio encoders in a shared 768-dimensional space."

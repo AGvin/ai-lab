@@ -2,6 +2,9 @@ entity:
   id: catalog/models/google/gemini/models/gemini-3-5-transcribe
   type: model
   name: Gemini 3.5 Transcribe
+  aliases:
+    - "gemini-3.5-transcribe"
+    - "gemini-3.5-transcribe-live"
   references:
     - type: documentation
       source:
@@ -20,3 +23,4 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/google/gemini
+  identity_note: "Speech-to-text model documented with unary gemini-3.5-transcribe and streaming gemini-3.5-transcribe-live serving forms; transport names do not establish distinct trained models."

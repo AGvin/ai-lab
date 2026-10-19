@@ -16,6 +16,14 @@ entity:
       purposes:
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/google/translategemma-4b-it
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/google/gemma
+  identity_note: "Open translation-focused Gemma series with released 4B, 12B, and 27B variants covering 55 languages; it is separate from the Google Translate product."

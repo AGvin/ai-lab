@@ -2,14 +2,9 @@
 
 Gemma 4 E2B Instruct is a dense instruction-tuned multimodal model in the Gemma 4 series.
 
-## Translations
-
-- English
-- [Українська](./l10n/uk_UA/)
-
 ## Model series
 
-- [Gemma 4](../../../..)
+- Member of: [Gemma 4](../../../../)
 
 ## Model profile
 
@@ -57,7 +52,13 @@ This canonical page owns E2B identity, source-backed intrinsic model facts, offi
 
 ## Official resources
 
-- [Gemma 4 model card](https://ai.google.dev/gemma/docs/core/model_card_4)
-- [Gemma 4 E2B Instruct](https://huggingface.co/google/gemma-4-E2B-it)
-- [Gemma 4 E2B QAT-trained unquantized checkpoint](https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized)
-- [Gemma 4 E2B QAT Q4_0 GGUF](https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf)
+- <https://huggingface.co/google/gemma-4-E2B-it>
+- <https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized>
+- <https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf>
+- <https://ai.google.dev/gemma/docs/core/model_card_4>
+
+## Source-scoped operating boundaries
+
+- The checkpoint accepts text, image, and audio input and generates text with 128K context. The current card limits audio to 30 seconds and frame-based video to 60 seconds at one frame per second. [Official checkpoint card](https://huggingface.co/google/gemma-4-E2B-it).
+- Keep the original instruction checkpoint, QAT-trained unquantized Safetensors, Q4_0 GGUF model, and multimodal projector distinct. Published file sizes are historical artifact evidence, not peak RAM/VRAM; an optimized runtime must support the selected architecture and modalities. [Official checkpoint and artifacts](https://huggingface.co/google/gemma-4-E2B-it).
+- Apache-2.0 and the model's safety training do not supply application permissions or guarantee correct output. Validate model-generated tool calls before execution. [Configuration and safety guidance](https://ai.google.dev/gemma/docs/core/model_card_4).

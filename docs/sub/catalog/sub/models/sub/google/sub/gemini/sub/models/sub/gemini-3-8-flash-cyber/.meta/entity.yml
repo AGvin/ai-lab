@@ -2,6 +2,8 @@ entity:
   id: catalog/models/google/gemini/models/gemini-3-8-flash-cyber
   type: model
   name: Gemini 3.8 Flash Cyber
+  aliases:
+    - "gemini-3.8-flash-cyber"
   references:
     - type: article
       source:
@@ -10,6 +12,14 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-cyber
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/google/gemini
+  identity_note: "Google's cybersecurity post-training variant of Gemini 3.8 Flash, served as gemini-3.8-flash-cyber in GA behind a Fairwind allowlist."

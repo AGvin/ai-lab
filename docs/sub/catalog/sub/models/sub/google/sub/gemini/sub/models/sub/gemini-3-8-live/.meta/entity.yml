@@ -2,6 +2,8 @@ entity:
   id: catalog/models/google/gemini/models/gemini-3-8-live
   type: model
   name: Gemini 3.8 Live
+  aliases:
+    - "gemini-3.8-live"
   references:
     - type: documentation
       source:
@@ -25,3 +27,4 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/google/gemini
+  identity_note: "Stable audio-interaction model served as gemini-3.8-live through the Live API; Live Avatar is a serving capability rather than a separate model identity."

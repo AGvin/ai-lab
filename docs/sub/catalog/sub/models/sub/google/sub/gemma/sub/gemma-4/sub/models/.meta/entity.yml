@@ -2,3 +2,19 @@ entity:
   id: catalog/models/google/gemma/gemma-4/models
   type: catalog-index
   name: Gemma 4 Models
+  references:
+    - type: model-card
+      source:
+        url: https://ai.google.dev/gemma/docs/core/model_card_4
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemma/docs/core
+      purposes:
+        - identification
+        - research
+      authority: official
+  identity_note: "Navigation index of released Gemma 4 instruction checkpoints; model size labels, architecture, artifact format, and quantization are separate dimensions."

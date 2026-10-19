@@ -16,8 +16,30 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://deepmind.google/models/gemini-omni/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: model-card
+      source:
+        url: https://deepmind.google/models/model-cards/gemini-omni-flash/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/models/gemini-omni-flash
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/g/google
     - type: has-member
       target: catalog/models/google/gemini-omni/models/gemini-omni-1-1-flash
+  identity_note: "Google's multimodal generative-media family combining Gemini understanding with video generation and conversational editing; concrete model versions and product integrations are separate."

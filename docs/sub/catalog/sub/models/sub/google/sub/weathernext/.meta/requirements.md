@@ -12,3 +12,17 @@
 
 - WeatherNext remains a model family rather than a weather-data service or product integration.
 - Producer provenance resolves to Google DeepMind.
+
+## Verified identity and provenance
+
+Google DeepMind weather-forecasting model family; trained releases, forecast datasets/APIs, enterprise delivery, and the Weather Lab exploration interface are separate assets.
+
+## Source-scoped operating boundaries
+
+- WeatherNext 3 is an ensemble model with hourly forecast generation; data delivery through BigQuery, Earth Engine, Cloud Storage, or Maps Platform is an integration choice, not another trained model. [WeatherNext 3 overview](https://deepmind.google/science/weathernext/).
+- Weather Lab's experimental forecasts are not an officially supported Google product. Official weather forecasts and warnings must come from the relevant meteorological agency; keep that research-interface boundary separate from enterprise data availability. [Weather Lab status](https://developers.google.com/weathernext/guides/weatherlab).
+
+## Source evidence
+
+- <https://deepmind.google/science/weathernext/>
+- <https://developers.google.com/weathernext/guides/weatherlab>

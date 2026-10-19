@@ -4,6 +4,7 @@ entity:
   name: VaultGemma
   aliases:
     - vaultgemma-1b
+    - "google/vaultgemma-1b"
   references:
     - type: official-site
       source:
@@ -18,6 +19,14 @@ entity:
       purposes:
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/google/vaultgemma-1b
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/google/gemma
+  identity_note: "Pretrained text model released as google/vaultgemma-1b with differentially private training; its training-data guarantee is distinct from prompt, serving, or fine-tuning privacy."

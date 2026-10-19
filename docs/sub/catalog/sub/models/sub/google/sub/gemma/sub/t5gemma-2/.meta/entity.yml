@@ -19,3 +19,4 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/google/gemma
+  identity_note: "Open pretrained encoder-decoder Gemma series based on Gemma 3, with 270M-270M, 1B-1B, and 4B-4B encoder/decoder size pairs; it is separate from earlier T5Gemma releases."

@@ -17,6 +17,14 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://developers.google.com/weathernext/guides/weatherlab
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/google/weathernext
+  identity_note: "WeatherNext 3 is an ensemble weather model from Google DeepMind and Google Research that directly uses satellite observations and generates global forecasts hourly."

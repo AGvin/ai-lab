@@ -10,8 +10,16 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://developers.google.com/weathernext/guides/weatherlab
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/g/google-deepmind
     - type: has-member
       target: catalog/models/google/weathernext/models/weathernext-3
+  identity_note: "Google DeepMind weather-forecasting model family; trained releases, forecast datasets/APIs, enterprise delivery, and the Weather Lab exploration interface are separate assets."
