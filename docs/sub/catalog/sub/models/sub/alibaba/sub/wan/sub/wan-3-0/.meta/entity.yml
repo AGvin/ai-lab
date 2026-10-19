@@ -22,6 +22,24 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/wan3-video-generation-api-reference
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/wan3-0-video-prime
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.alibabacloud.com/blog/wan3-0-at-general-availability-capabilities-benchmarks-pricing-and-the-workflows-it-changes_603505
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/alibaba/wan

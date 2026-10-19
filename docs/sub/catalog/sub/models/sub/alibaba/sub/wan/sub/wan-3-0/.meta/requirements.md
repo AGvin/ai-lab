@@ -8,8 +8,23 @@
 - Treat output durations/resolutions, reference-material limits, audio controls, regional availability, pricing, quotas, endpoint behavior, editing support, and snapshot aliases as freshness-sensitive.
 - Preserve provider-attributed realism, consistency, duration, and generation-quality claims rather than treating them as independent AI Lab measurements.
 
+## Decision and Operational Boundaries
+
+- Wan 3.0 is the released hosted all-in-one video generation line containing standard Video and accelerated Video-Prime identities.
+- The HTTP video API is asynchronous: create a task and poll for its result; successful submission is not a completed output.
+- Use exact task-mode material combinations and limits; do not treat multimodal input support as permission to mix every reference type in one request.
+- Keep Prime as the named video-model variant rather than conflating it with the general Model Studio Prime inference mode.
+- Treat regional endpoints, API credentials, retention, and optional tools as hosting-service controls; the model name does not establish privacy, tool permissions, or access to external data.
+- Validate reference-media rights and user authorization before upload or synthesis; generated likeness, voice, text, or video is not evidence of an authentic recording.
+
+Use the current primary references in `entity.yml` for these boundaries; mutable service values are not intrinsic identity guarantees.
+
 ## Validation
 
 - Wan 3.0 remains a model series under Wan rather than a service or one API operation.
 - Snapshot model IDs remain serving versions of the applicable concrete model unless first-party evidence establishes a separate trained-model identity.
 - Producer provenance resolves bidirectionally.
+
+## Reader Projection
+
+- Render the current entity's validated visible relations with resolved canonical links and preserve relation ordering; project the sourced identity and operational boundaries into the reader page.

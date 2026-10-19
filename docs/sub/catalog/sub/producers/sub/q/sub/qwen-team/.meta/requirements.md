@@ -18,3 +18,7 @@
 - The page does not infer `owned-by`, `parent-of`, or another stronger organizational relation from the documented structural relationship.
 - Model details remain in model-domain pages rather than being duplicated here.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Model Navigation
+
+- Keep the produced-model navigation synchronized with the current canonical relation projection as model-series entries are added; retain capability, license, deployment, and data-handling detail on the linked model pages.

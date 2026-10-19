@@ -18,6 +18,12 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/qwen-image-3-0-pro
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/alibaba/qwen/qwen-image

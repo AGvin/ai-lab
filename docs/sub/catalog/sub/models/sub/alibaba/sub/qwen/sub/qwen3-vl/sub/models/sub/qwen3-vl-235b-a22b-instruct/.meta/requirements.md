@@ -9,8 +9,22 @@
 - Keep the concrete model distinct from the Qwen3-VL series, dense Qwen3-VL siblings, and the Model Studio hosting service.
 - Attribute benchmark and comparative performance claims to Qwen Team or the cited evaluator.
 
+## Decision and Operational Boundaries
+
+- Qwen3-VL-235B-A22B-Instruct has official Apache-2.0 open weights for text/image/video understanding and text generation.
+- Keep native 256K context separate from extension to 1M and from hosted-region budgets; image/video preprocessing also consumes model context.
+- Keep this Instruct checkpoint distinct from a Thinking sibling and from image/video generation or embedding models.
+- Keep checkpoint identity separate from quantization and runtime packaging; pin the chosen revision and validate processor, chat-template, reasoning-parser, and tool-parser support in the selected runtime.
+- Visual agent capability does not authorize clicking, shell execution, or disclosure of image/document contents.
+
+Use the current primary references in `entity.yml` for these boundaries; mutable service values are not intrinsic identity guarantees.
+
 ## Validation
 
 - The node is one concrete MoE model identity within Qwen3-VL.
 - Active-parameter counts are not used as a hardware-fit shortcut.
 - Hosted serving properties remain separate from intrinsic model identity.
+
+## Reader Projection
+
+- Render the current entity's validated visible relations with resolved canonical links and preserve relation ordering; project the sourced identity and operational boundaries into the reader page.

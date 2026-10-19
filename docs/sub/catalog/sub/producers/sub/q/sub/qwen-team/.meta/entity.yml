@@ -44,3 +44,11 @@ entity:
       target: catalog/models/alibaba/qwen/qwen-audio
     - type: produces
       target: catalog/models/alibaba/qwen/qwen3-tts
+    - type: produces
+      target: catalog/models/alibaba/qwen/qwen3-6
+    - type: produces
+      target: catalog/models/alibaba/qwen/qwen3-embedding
+    - type: produces
+      target: catalog/models/alibaba/qwen/qwen3-reranker
+    - type: produces
+      target: catalog/models/alibaba/qwen/qwen3-asr

@@ -10,6 +10,18 @@ entity:
         - identification
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen3-TTS
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/tts-model
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/alibaba/qwen
@@ -19,3 +31,11 @@ entity:
       target: catalog/models/alibaba/qwen/qwen3-tts/models/qwen3-tts-instruct-flash-realtime
     - type: has-member
       target: catalog/models/alibaba/qwen/qwen3-tts/models/qwen3-tts-flash-realtime
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-tts/models/qwen3-tts-12hz-1-7b-voicedesign
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-tts/models/qwen3-tts-12hz-1-7b-customvoice
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-tts/models/qwen3-tts-12hz-1-7b-base
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-tts/models/qwen3-tts-12hz-0-6b-base

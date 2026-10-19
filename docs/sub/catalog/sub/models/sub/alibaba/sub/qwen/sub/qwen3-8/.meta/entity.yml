@@ -10,6 +10,30 @@ entity:
         - identification
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen3.8-27B
+      purposes:
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
+      purposes:
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/qwen3-8-flash
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/alibaba/qwen
@@ -23,3 +47,5 @@ entity:
       target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-flash-next
     - type: has-member
       target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-max
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-flash

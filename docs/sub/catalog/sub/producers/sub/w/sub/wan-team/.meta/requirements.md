@@ -13,3 +13,7 @@
 - Wan Team remains distinct from Alibaba Cloud as the broader organization and from Alibaba Cloud Model Studio as a service.
 - Every produced-model relation resolves to a canonical model node.
 - Model capability details are not duplicated into the producer profile.
+
+## Model Navigation
+
+- Keep the produced-model navigation synchronized with the current canonical relation projection as model-series entries are added; retain capability, license, deployment, and data-handling detail on the linked model pages.

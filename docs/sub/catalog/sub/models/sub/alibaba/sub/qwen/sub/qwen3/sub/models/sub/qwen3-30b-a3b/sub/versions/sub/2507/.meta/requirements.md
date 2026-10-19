@@ -15,9 +15,23 @@
 - Include the official `Qwen/Qwen3-30B-A3B-Instruct-2507` model page.
 - Link the parent model and sibling version index.
 
+## Decision and Operational Boundaries
+
+- Qwen3-30B-A3B-Instruct-2507 is the separately named non-thinking-only release with 262,144-token native context and Apache-2.0 weights.
+- The model does not produce the original thinking blocks; a client-side thinking switch cannot turn it into the initial hybrid checkpoint.
+- Keep advertised extended contexts and serving limits separate from native context and from available output budget.
+- Keep checkpoint identity separate from quantization and runtime packaging; pin the chosen revision and validate processor, chat-template, reasoning-parser, and tool-parser support in the selected runtime.
+- Keep model-generated text, code, and tool arguments separate from permission to execute them; the application owns command validation, tool access, network access, and sandboxing.
+
+Use the current primary references in `entity.yml` for these boundaries; mutable service values are not intrinsic identity guarantees.
+
 ## Validation
 
 - The page does not imply that `2507` is a different parameter-size concrete model.
 - The page does not duplicate the complete parent model profile.
 - Release-specific behavior and context are sourced from current official model material rather than migration/RC wording.
 - The `version-of` relation resolves to Qwen3 30B-A3B.
+
+## Reader Projection
+
+- Render the current entity's validated visible relations with resolved canonical links and preserve relation ordering; project the sourced identity and operational boundaries into the reader page.
