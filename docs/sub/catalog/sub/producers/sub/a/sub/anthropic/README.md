@@ -1,8 +1,10 @@
 # Anthropic
 
-Anthropic is an AI research and product company represented here as a producer of documented models, Agent Skill resources, software, services, and datasets.
+Anthropic is the organization behind the cataloged Claude models, software, services, Agent Skill resources, datasets, and the original publication of the Model Context Protocol.
 
-## Model-domain navigation
+MCP was introduced at Anthropic in November 2024 and donated to the Agentic AI Foundation in December 2025. The historical producer relation preserves that origin; current foundation stewardship and the authority of individual MCP maintainers remain separate.
+
+## Model documentation
 
 - [Anthropic models](../../../../../models/sub/anthropic/)
 
@@ -20,8 +22,12 @@ Anthropic is an AI research and product company represented here as a producer o
 - Produces: [SCONE-bench](../../../../../datasets/sub/scone-bench/)
 - Produces: [Petri](../../../../../software/sub/evaluation-and-observability/sub/evaluation-frameworks/sub/petri/)
 - Produces: [Bloom](../../../../../software/sub/evaluation-and-observability/sub/evaluation-frameworks/sub/bloom/)
+- Produces: [Model Context Protocol](../../../../../specifications/sub/protocols/sub/model-context-protocol/)
 
 ## Official resources
 
 - [Official website](https://www.anthropic.com/)
 - [GitHub organization](https://github.com/anthropics)
+- [Anthropic company profile](https://www.anthropic.com/company)
+- [Original MCP introduction](https://www.anthropic.com/news/model-context-protocol)
+- [MCP donation to AAIF](https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation)

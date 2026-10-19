@@ -1,16 +1,15 @@
 # Baidu
 
-Baidu is the producer identity for the selected ERNIE model family.
+Baidu is the organization behind the represented ERNIE model family, with the first-party release credited to the Baidu ERNIE team.
 
-## Producer boundary
-
-The organization profile remains distinct from Baidu AI Cloud/Qianfan, ERNIE consumer applications, search products, and exact model releases.
+The producer, ERNIE model family, exact model artifacts, ERNIE applications, Baidu AI Cloud/Qianfan, and hosted access are distinct. Deployment tooling and service access do not replace model provenance.
 
 ## Relations
 
-- Produces: [`catalog/models/baidu/ernie`](../../../../../models/sub/baidu/sub/ernie/)
+- Produces: [ERNIE](../../../../../models/sub/baidu/sub/ernie/)
 
 ## Official resources
 
-- <https://www.baidu.com/>
-- <https://ernie.baidu.com/>
+- [https://www.baidu.com/](https://www.baidu.com/)
+- [https://ernie.baidu.com/](https://ernie.baidu.com/)
+- [Official ERNIE release and team attribution](https://ernie.baidu.com/blog/posts/ernie4.5/)

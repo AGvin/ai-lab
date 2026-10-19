@@ -1,16 +1,15 @@
 # Baseten Labs, Inc.
 
-Baseten Labs, Inc. is a canonical producer identity represented in AI Lab.
+Baseten Labs, Inc. is the organization named in Baseten’s service terms and the operator of the Baseten model-serving platform.
 
-## Translations
-
-- English
+The organization, the hosted Baseten service, and independently produced models are distinct. Serving a model through Baseten does not transfer model authorship or remove that model’s own license conditions.
 
 ## Relations
 
-- Produces: [`catalog/services/model-apis/baseten-model-apis`](../../../../../services/sub/model-apis/sub/baseten-model-apis/)
+- Produces: [Baseten Model APIs](../../../../../services/sub/model-apis/sub/baseten-model-apis/)
 
 ## Official resources
 
-- <https://www.baseten.co/>
-- <https://www.baseten.co/terms-and-conditions/>
+- [https://www.baseten.co/](https://www.baseten.co/)
+- [Baseten service terms](https://www.baseten.co/terms-and-conditions/)
+- [Baseten Model APIs](https://www.baseten.co/products/model-apis/)

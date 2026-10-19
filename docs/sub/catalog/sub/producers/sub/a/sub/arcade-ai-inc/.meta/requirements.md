@@ -5,6 +5,7 @@
 - Identify Arcade AI, Inc. as the canonical first-party organization/brand steward for its actual published products, without assuming ownership of third-party tools, apps, or cloud APIs integrated by them.
 - Preserve distinct consumer software identities and exact inverse producer relations for Arcade's deployable integration platform and the independently distributed MIT Python MCP framework.
 - Keep producer references anchored to official domains and maintainer repositories, with plan/licensing/deployment rights verified at first-party sources.
+- Use the Python framework’s own repository and license for arcade-mcp, separately from the TypeScript repository that provides corporate copyright evidence.
 
 ## Validation
 

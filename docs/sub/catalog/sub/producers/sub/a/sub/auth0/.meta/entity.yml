@@ -10,6 +10,27 @@ entity:
         - identification
         - research
       authority: official
+    - type: product-page
+      source:
+        url: https://auth0.com/solutions/ship-ai-agents
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.okta.com/blog/company-and-culture/its-official-okta-joins-forces-with-auth0/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.okta.com/okta-and-auth0/
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/services/agent-identity-and-access/auth0-for-ai-agents

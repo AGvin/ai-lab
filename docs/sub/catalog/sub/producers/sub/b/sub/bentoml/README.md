@@ -1,20 +1,19 @@
 # BentoML
 
-BentoML is the first-party organization/publishing identity behind the BentoML software platform.
+BentoML is the original publishing identity behind the BentoML software platform.
 
-## Producer boundary
+The publisher, open-source BentoML software, and hosted delivery such as BentoCloud remain distinct. In February 2026 the BentoML team joined Modular through a strategic product acquisition, with continued Apache-2.0 availability for the open-source project.
 
-Producer identity remains distinct from BentoML software and from separately operated hosted delivery such as BentoCloud.
-
-In February 2026, BentoML and Modular announced that the BentoML team had joined Modular through a strategic product acquisition. The announcements preserve the BentoML open-source project's Apache-2.0 licensing and continuation; corporate affiliation does not erase the project's originating publisher.
+Qualcomm completed its acquisition of Modular on July 29, 2026. This later corporate context does not establish a separate legal-entity ownership chain for the BentoML producer node or change the project’s original attribution.
 
 ## Relations
 
-- Produces: [`catalog/software/inference-runtimes/integrated-platforms/bentoml`](../../../../../software/sub/inference-runtimes/sub/integrated-platforms/sub/bentoml/)
+- Produces: [BentoML](../../../../../software/sub/inference-runtimes/sub/integrated-platforms/sub/bentoml/)
 
 ## Official resources
 
-- <https://www.bentoml.com/>
-- <https://github.com/bentoml/BentoML>
+- [https://www.bentoml.com/](https://www.bentoml.com/)
+- [https://github.com/bentoml/BentoML](https://github.com/bentoml/BentoML)
 - [BentoML acquisition announcement](https://www.bentoml.com/blog/bentoml-is-joining-modular)
-- [Modular acquisition announcement](https://www.modular.com/blog/bentoml-joins-modular)
+- [BentoML joins Modular](https://www.modular.com/blog/bentoml-joins-modular)
+- [Qualcomm completes its Modular acquisition](https://www.modular.com/blog/qualcomm-completes-acquisition-of-modular)

@@ -10,6 +10,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: product-page
+      source:
+        url: https://boomi.com/platform/agent-control-plane/
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/services/ai-management-platforms/boomi-agent-control-plane

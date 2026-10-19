@@ -1,6 +1,8 @@
 # Agentic Community
 
-Agentic Community is the community project behind the MCP Gateway & Registry open-source software. Its registry and gateway are one canonical product; deployments, plugins, external MCP agents and third-party identity providers are not independently owned producer products.
+Agentic Community is the community publishing identity behind MCP Gateway & Registry and its official repository and documentation.
+
+Its gateway and registry are deployable software. The project does not own the third-party MCP servers, tools, identity providers, agents, or cloud platforms it integrates, and it is distinct from the official MCP protocol and public MCP Registry.
 
 ## Relations
 
@@ -9,4 +11,4 @@ Agentic Community is the community project behind the MCP Gateway & Registry ope
 ## Official resources
 
 - [Repository](https://github.com/agentic-community/mcp-gateway-registry)
-- [Documentation](https://agentic-community.github.io/mcp-gateway-registry/)
+- [MCP Gateway & Registry documentation](https://agentic-community.github.io/mcp-gateway-registry/)

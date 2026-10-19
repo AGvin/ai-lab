@@ -6,7 +6,16 @@ entity:
     - type: official-site
       source:
         url: https://seed.bytedance.com/
-      purposes: [identification, research]
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://seed.bytedance.com/en/
+      purposes:
+        - identification
+        - research
       authority: official
   relations:
     - type: produces

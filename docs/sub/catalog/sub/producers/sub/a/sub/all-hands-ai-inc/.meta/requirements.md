@@ -7,6 +7,7 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include official OpenHands community and company-origin references sufficient to establish provenance.
 - Keep funding, staffing, pricing, enterprise terms, and other mutable corporate/commercial details outside this concise producer profile unless they become relevant to represented catalog entities.
+- Preserve the separate OpenHands software and OpenHands SDK producer relations without equating either project’s contributor community with the company.
 
 ## Validation
 

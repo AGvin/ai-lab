@@ -1,16 +1,14 @@
 # Axolotl AI Cloud
 
-Axolotl AI Cloud is the upstream organization producing Axolotl for catalog provenance.
+Axolotl AI Cloud is the upstream publishing identity represented by the axolotl-ai-cloud repository organization and the Axolotl training software.
 
-## Producer boundary
-
-Any hosted Axolotl cloud/service offering distinct unless independently materialized later.
+The project identity does not establish a particular incorporated company or ownership of the models trained with Axolotl. Software, training outputs, hosted execution, and external infrastructure remain separate concerns.
 
 ## Relations
 
-- Produces: [`catalog/software/model-and-data-platforms/model-development/axolotl`](../../../../../software/sub/model-and-data-platforms/sub/model-development/sub/axolotl/)
+- Produces: [Axolotl](../../../../../software/sub/model-and-data-platforms/sub/model-development/sub/axolotl/)
 
 ## Official resources
 
-- <https://github.com/axolotl-ai-cloud/axolotl>
-- <https://docs.axolotl.ai/>
+- [Axolotl upstream repository](https://github.com/axolotl-ai-cloud/axolotl)
+- [Axolotl documentation](https://docs.axolotl.ai/)

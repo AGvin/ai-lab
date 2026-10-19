@@ -1,16 +1,14 @@
 # AlphaAI Technologies Inc.
 
-AlphaAI Technologies Inc. is a canonical producer identity represented in AI Lab.
+AlphaAI Technologies Inc. is the contracting organization named in Tavily’s platform terms as doing business as Tavily.
 
-## Translations
-
-- English
+This producer attribution is specific to the named Tavily terms and service. It does not treat search results, crawled source material, or third-party models used by customers as AlphaAI products, and it does not infer a company rename or ownership transaction from website branding.
 
 ## Relations
 
-- Produces: [`catalog/services/web-data/tavily`](../../../../../services/sub/web-data/sub/tavily/)
+- Produces: [Tavily](../../../../../services/sub/web-data/sub/tavily/)
 
 ## Official resources
 
-- <https://www.tavily.com/>
-- <https://www.tavily.com/terms>
+- [https://www.tavily.com/](https://www.tavily.com/)
+- [Tavily platform terms](https://www.tavily.com/terms)

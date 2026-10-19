@@ -29,6 +29,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: article
+      source:
+        url: https://www.modular.com/blog/qualcomm-completes-acquisition-of-modular
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/inference-runtimes/integrated-platforms/bentoml

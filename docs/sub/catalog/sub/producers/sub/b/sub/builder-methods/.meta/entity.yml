@@ -18,6 +18,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: product-page
+      source:
+        url: https://buildermethods.com/agent-os
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/development-tools/spec-driven-development/agent-os

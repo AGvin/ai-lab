@@ -17,6 +17,27 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://www.anthropic.com/company
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.anthropic.com/news/model-context-protocol
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/anthropic/claude
@@ -42,3 +63,5 @@ entity:
       target: catalog/software/evaluation-and-observability/evaluation-frameworks/petri
     - type: produces
       target: catalog/software/evaluation-and-observability/evaluation-frameworks/bloom
+    - type: produces
+      target: catalog/specifications/protocols/model-context-protocol

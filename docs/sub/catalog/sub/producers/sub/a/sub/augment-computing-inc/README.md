@@ -1,12 +1,14 @@
 # Augment Computing, Inc.
 
-Augment Computing, Inc. is the organization behind Augment Code. Auggie CLI, Cosmos, IDE extensions, Remote/Cloud Agents, and Context Engine are represented through the product profile.
+Augment Computing, Inc. is the organization named in Augment’s privacy policy and the producer behind Augment Code.
 
-## Produces
+The company remains distinct from the Augment Code platform and its individual IDE, command-line, agent, and context services. External code hosts, applications, and model providers keep their own provenance.
 
-- [Augment Code](../../../../../software/sub/agents/sub/hybrid/sub/augment-code/)
+## Relations
+
+- Produces: [Augment Code](../../../../../software/sub/agents/sub/hybrid/sub/augment-code/)
 
 ## Official resources
 
 - [Augment Code](https://www.augmentcode.com/)
-- [Official privacy policy identifying the organization](https://www.augmentcode.com/legal/privacy-policy)
+- [Augment legal organization](https://www.augmentcode.com/legal/privacy-policy)

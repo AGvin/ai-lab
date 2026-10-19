@@ -22,6 +22,20 @@ entity:
       purposes:
         - research
       authority: official
+    - type: article
+      source:
+        url: https://www.alibabacloud.com/blog/602578
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/agentscope-ai/agentscope/blob/main/pyproject.toml
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: has-part
       target: catalog/producers/a/alibaba-cloud

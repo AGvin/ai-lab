@@ -1,15 +1,14 @@
 # Boomi
 
-Boomi is the producer identity for Boomi Agent Control Plane.
+Boomi is the producer organization behind Boomi Agent Control Plane.
 
-## Producer boundary
-
-The organization profile remains distinct from Agent Control Plane, Agentstudio, Boomi Connect, AI Gateway, Orchestrate, Meta Hub, Runtime, and other Boomi platform products.
+The control plane is distinct from Boomi’s other platform products and from the native or third-party agents, tools, and APIs it governs. Registration or governance by Boomi does not establish authorship of those external resources.
 
 ## Relations
 
-- Produces: [`catalog/services/ai-management-platforms/boomi-agent-control-plane`](../../../../../services/sub/ai-management-platforms/sub/boomi-agent-control-plane/)
+- Produces: [Boomi Agent Control Plane](../../../../../services/sub/ai-management-platforms/sub/boomi-agent-control-plane/)
 
 ## Official resources
 
-- <https://boomi.com/>
+- [https://boomi.com/](https://boomi.com/)
+- [Boomi Agent Control Plane](https://boomi.com/platform/agent-control-plane/)

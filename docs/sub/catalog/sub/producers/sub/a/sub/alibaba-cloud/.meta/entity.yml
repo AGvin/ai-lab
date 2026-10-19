@@ -16,6 +16,34 @@ entity:
       purposes:
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://github.com/QwenLM
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://github.com/wan-video
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/what-is-model-studio
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/aliyun/alibabacloud-aiops-skills
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: part-of
       target: catalog/producers/a/alibaba-group

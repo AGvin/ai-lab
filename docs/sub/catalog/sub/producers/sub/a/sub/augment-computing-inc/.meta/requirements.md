@@ -4,7 +4,7 @@
 
 - Identify Augment Computing, Inc. as the organization behind the Augment Code software-engineering AI platform.
 - Keep the producer identity distinct from the Augment Code product and from individual product surfaces such as Auggie CLI, Intent, Remote/Cloud Agents, Cosmos, IDE extensions, and the Context Engine.
-- Render the standard producer relation block only during the final render phase.
+- Render the standard entity-relations block from the validated current-entity relation projection.
 - Use current official Augment legal/product sources for identity; keep funding, staffing, customer metrics, pricing, and other mutable company details out unless they become materially relevant to represented catalog entities.
 
 ## Validation

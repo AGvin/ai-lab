@@ -12,6 +12,7 @@
 - Use `Alibaba Group` as the page title.
 - Keep the introduction concise and producer-focused rather than providing a general corporate profile.
 - Include authoritative Alibaba Group identity material; keep Higress-specific facts with Higress and AgentScope-specific framework/release facts with AgentScope. Reference the first-party AgentScope repository and retain both reciprocal `produces` relations.
+- Use the upstream AgentScope author field and the official Higress origin account for the separate project attributions; retain project governance and deployment facts with their respective software nodes.
 
 ## Validation
 

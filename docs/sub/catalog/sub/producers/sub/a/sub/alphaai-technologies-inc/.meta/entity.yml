@@ -19,6 +19,7 @@ entity:
         - identification
         - research
       authority: official
+      note: The platform terms name AlphaAI Technologies Inc. dba Tavily; the contracting name is more specific evidence than the site footer.
   relations:
     - type: produces
       target: catalog/services/web-data/tavily

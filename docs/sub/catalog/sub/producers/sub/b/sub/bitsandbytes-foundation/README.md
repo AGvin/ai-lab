@@ -1,10 +1,8 @@
 # bitsandbytes Foundation
 
-bitsandbytes Foundation is the current upstream maintenance organization for [bitsandbytes](../../../../../software/sub/model-and-data-platforms/sub/model-optimization-and-compilation/sub/bitsandbytes/), the independently released low-bit PyTorch quantization and optimizer library.
+bitsandbytes Foundation is the upstream publishing and maintenance identity for the bitsandbytes library.
 
-## Stewardship boundary
-
-The foundation's current project maintenance role is distinct from the original research authorship behind low-bit optimizers, LLM.int8 and QLoRA. Supported kernels and integrations are part of the software project, not separate hosted model APIs or model checkpoint products.
+The current repository organization is separate from the authors of the underlying k-bit optimization research, individual model checkpoints, and external compute providers. The GitHub organization name alone does not establish a particular legal incorporation.
 
 ## Relations
 
@@ -13,4 +11,4 @@ The foundation's current project maintenance role is distinct from the original 
 ## Official resources
 
 - [Project organization](https://github.com/bitsandbytes-foundation)
-- [bitsandbytes repository](https://github.com/bitsandbytes-foundation/bitsandbytes)
+- [bitsandbytes upstream project](https://github.com/bitsandbytes-foundation/bitsandbytes)

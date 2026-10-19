@@ -27,6 +27,13 @@ entity:
         - research
       authority: official
       note: First-party Anyscale record of the 2020 introduction of Ray.Serve by Simon Mo of Anyscale.
+    - type: article
+      source:
+        url: https://pytorch.org/blog/pytorch-foundation-welcomes-ray-to-deliver-a-unified-open-source-ai-compute-stack/
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/inference-runtimes/distributed-serving/ray-serve

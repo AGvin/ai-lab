@@ -20,6 +20,20 @@ entity:
         - research
       authority: official
       note: AWS Open Source launch article establishing Strands Agents as an AWS open-source SDK.
+    - type: product-page
+      source:
+        url: https://aws.amazon.com/nova/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://kiro.dev/docs/billing/managing-taxes/
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/amazon/nova

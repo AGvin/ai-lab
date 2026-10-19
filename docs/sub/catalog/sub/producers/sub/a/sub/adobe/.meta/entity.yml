@@ -6,7 +6,16 @@ entity:
     - type: official-site
       source:
         url: https://www.adobe.com/
-      purposes: [identification, research]
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.adobe.com/products/firefly.html
+      purposes:
+        - identification
+        - research
       authority: official
   relations:
     - type: produces
