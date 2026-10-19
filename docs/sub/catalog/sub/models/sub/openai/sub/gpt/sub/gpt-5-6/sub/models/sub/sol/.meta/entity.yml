@@ -22,7 +22,7 @@ entity:
       purposes:
         - research
       authority: official
-    - type: model-card
+    - type: documentation
       source:
         url: https://deploymentsafety.openai.com/gpt-5-6-august-update
       purposes:

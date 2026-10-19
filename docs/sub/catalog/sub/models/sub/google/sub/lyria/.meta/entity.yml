@@ -24,7 +24,7 @@ entity:
         - identification
         - research
       authority: official
-    - type: model-card
+    - type: documentation
       source:
         url: https://deepmind.google/models/model-cards/lyria-3-5/
       purposes:

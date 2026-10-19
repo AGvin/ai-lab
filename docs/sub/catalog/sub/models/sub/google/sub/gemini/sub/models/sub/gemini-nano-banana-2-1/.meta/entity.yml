@@ -12,7 +12,7 @@ entity:
         - identification
         - research
       authority: official
-    - type: model-card
+    - type: documentation
       source:
         url: https://deepmind.google/models/model-cards/nano-banana-2-1/
       purposes:

@@ -16,7 +16,7 @@ entity:
       purposes:
         - research
       authority: official
-    - type: announcement
+    - type: article
       source:
         url: https://openai.com/index/introducing-gpt-rosalind/
       purposes:

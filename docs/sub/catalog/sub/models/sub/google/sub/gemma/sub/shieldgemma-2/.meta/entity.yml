@@ -16,7 +16,7 @@ entity:
       purposes:
         - research
       authority: official
-    - type: model-card
+    - type: documentation
       source:
         url: https://ai.google.dev/gemma/docs/shieldgemma/model_card_2
       purposes:

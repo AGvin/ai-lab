@@ -18,7 +18,7 @@ entity:
       purposes:
         - research
       authority: official
-    - type: migration-guide
+    - type: documentation
       source:
         url: https://docs.x.ai/developers/migration/imagine-image-quality-nov-2
       purposes:

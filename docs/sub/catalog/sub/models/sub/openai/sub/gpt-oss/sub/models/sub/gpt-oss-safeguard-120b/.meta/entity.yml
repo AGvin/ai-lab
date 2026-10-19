@@ -7,7 +7,7 @@ entity:
       target: catalog/models/openai/gpt-oss
   identity_note: Released research-preview policy-classification fine-tune of gpt-oss-120b; separate weights, unchanged base architecture, and no OpenAI-hosted API availability.
   references:
-    - type: announcement
+    - type: article
       source:
         url: https://openai.com/index/introducing-gpt-oss-safeguard/
       purposes:

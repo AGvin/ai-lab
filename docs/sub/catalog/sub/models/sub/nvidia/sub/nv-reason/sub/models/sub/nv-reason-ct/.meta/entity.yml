@@ -3,7 +3,7 @@ entity:
   type: model
   name: NV-Reason-CT
   references:
-    - type: model-card
+    - type: documentation
       source:
         url: https://huggingface.co/nvidia/NV-Reason-CT
       purposes:

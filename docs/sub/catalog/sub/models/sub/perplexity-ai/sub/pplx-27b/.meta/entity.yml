@@ -3,7 +3,7 @@ entity:
   type: model
   name: PPLX 27B
   references:
-    - type: research
+    - type: article
       source:
         url: https://www.perplexity.ai/hub/blog/a-local-first-agent-for-private-and-cost-effective-knowledge-work
       purposes:

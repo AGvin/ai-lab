@@ -24,7 +24,7 @@ entity:
         - identification
         - research
       authority: official
-    - type: model-card
+    - type: documentation
       source:
         url: https://deploymentsafety.openai.com/gpt-live
       purposes:
