@@ -7,15 +7,6 @@ Qwen3.8 is a model series within Qwen based on first-party Qwen release reposito
 - Coding, professional-work, research, and long-horizon agentic positioning only as current Qwen Team claims.
 - Includes the independently published hosted `Qwen3.8-Max` model; descriptive labels such as `Max-class` do not create additional model identities.
 
-## Relations
-
-- Member of: [`catalog/models/alibaba/qwen`](../..//)
-- Produced by: [`catalog/producers/q/qwen-team`](../../../../../../../producers/sub/q/sub/qwen-team/)
-- has-member: [`catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-2-4t-a95b`](sub/models/sub/qwen3-8-2-4t-a95b/)
-- has-member: [`catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-27b`](sub/models/sub/qwen3-8-27b/)
-- has-member: [`catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-flash-next`](sub/models/sub/qwen3-8-flash-next/)
-- has-member: [`catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-max`](sub/models/sub/qwen3-8-max/)
-
 ## Decision and Operational Boundaries
 
 Qwen3.8 includes separately released open checkpoints and independently named hosted Max and Flash models.
@@ -35,11 +26,11 @@ Qwen3.8 includes separately released open checkpoints and independently named ho
 | --- | --- |
 | Member of | [Qwen](../../) |
 | Produced by | [Qwen Team](../../../../../../../producers/sub/q/sub/qwen-team/) |
-| Includes | [Qwen3.8-2.4T-A95B](./sub/models/sub/qwen3-8-2-4t-a95b/) |
-| Includes | [Qwen3.8-27B](./sub/models/sub/qwen3-8-27b/) |
-| Includes | [Qwen3.8-Flash](./sub/models/sub/qwen3-8-flash/) |
-| Includes | [Qwen3.8-Flash-Next](./sub/models/sub/qwen3-8-flash-next/) |
-| Includes | [Qwen3.8-Max](./sub/models/sub/qwen3-8-max/) |
+| Includes | [Qwen3.8-2.4T-A95B](sub/models/sub/qwen3-8-2-4t-a95b/) |
+| Includes | [Qwen3.8-27B](sub/models/sub/qwen3-8-27b/) |
+| Includes | [Qwen3.8-Flash](sub/models/sub/qwen3-8-flash/) |
+| Includes | [Qwen3.8-Flash-Next](sub/models/sub/qwen3-8-flash-next/) |
+| Includes | [Qwen3.8-Max](sub/models/sub/qwen3-8-max/) |
 
 ## Primary Sources
 

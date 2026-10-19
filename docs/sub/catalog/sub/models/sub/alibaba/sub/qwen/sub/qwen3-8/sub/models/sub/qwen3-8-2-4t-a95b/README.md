@@ -5,11 +5,7 @@ Qwen3.8-2.4T-A95B is the concrete Qwen3.8 model released on 2026-08-12.
 ## Scope and boundaries
 
 - The official distinction between approximately 2.4T total parameters and 95B active parameters without inferring unpublished expert-routing details.
-- Exact artifacts, quantizations, provider routes, benchmark state, and deployment recommendations remains outside intrinsic model identity unless separately materialized.
-
-## Relations
-
-- Member of: [`catalog/models/alibaba/qwen/qwen3-8`](../../../..//)
+- Exact artifacts, quantizations, provider routes, benchmark state, and deployment recommendations remain outside intrinsic model identity unless separately materialized.
 
 ## Decision and Operational Boundaries
 

@@ -8,10 +8,6 @@ Qwen3.8-Max is the stable Qwen3.8 model identity exposed as `qwen3.8-max` by Ali
 - Mutable serving aliases, regional availability, quotas, pricing, and provider routing remains outside intrinsic model identity.
 - Only source-backed capabilities and limits; re-check current first-party Model Studio documentation before updating mutable service facts.
 
-## Relations
-
-- Member of: [`catalog/models/alibaba/qwen/qwen3-8`](../../../..//)
-
 ## Decision and Operational Boundaries
 
 Qwen3.8-Max is the independently documented hosted model ID qwen3.8-max, distinct from its released text-only 2.4T-A95B checkpoint.

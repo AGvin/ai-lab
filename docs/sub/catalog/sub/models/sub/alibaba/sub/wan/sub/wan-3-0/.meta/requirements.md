@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Identify Wan 3.0 as the officially released Wan generation introduced for production API access on 2026-08-24.
+- Identify Wan 3.0 as a hosted Wan generation whose API availability Alibaba Cloud announced on 2026-08-24.
 - Preserve its all-in-one multimodal video-generation boundary across text/image/video/audio/reference inputs and current long-form audio-visual generation without treating each task route as a peer model.
 - Keep Wan 3.0 model IDs distinct from older Wan 2.x generations, Wan image-only/editing variants, Alibaba Cloud Model Studio as host, and generated media.
 - Treat output durations/resolutions, reference-material limits, audio controls, regional availability, pricing, quotas, endpoint behavior, editing support, and snapshot aliases as freshness-sensitive.
@@ -11,6 +11,7 @@
 ## Decision and Operational Boundaries
 
 - Wan 3.0 is the released hosted all-in-one video generation line containing standard Video and accelerated Video-Prime identities.
+- Alibaba's undated release page labels the Wan 3.0 Video API generally available, while the API reference updated 2026-10-15 still says preview; verify lifecycle and availability for the selected region.
 - The HTTP video API is asynchronous: create a task and poll for its result; successful submission is not a completed output.
 - Use exact task-mode material combinations and limits; do not treat multimodal input support as permission to mix every reference type in one request.
 - Keep Prime as the named video-model variant rather than conflating it with the general Model Studio Prime inference mode.

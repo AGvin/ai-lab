@@ -5,11 +5,7 @@ Qwen3.8-Flash-Next is a separately released Qwen3.8 foundation-model identity pu
 ## Scope and boundaries
 
 - Its own source-backed model facts rather than inheriting parameter or deployment claims from other Qwen3.8 siblings.
-- Quantizations, provider routes, runtime packaging, benchmark state, and deployment recommendations remains outside intrinsic model identity unless separately materialized.
-
-## Relations
-
-- Member of: [`catalog/models/alibaba/qwen/qwen3-8`](../../../..//)
+- Quantizations, provider routes, runtime packaging, benchmark state, and deployment recommendations remain outside intrinsic model identity unless separately materialized.
 
 ## Decision and Operational Boundaries
 

@@ -7,6 +7,12 @@ entity:
   references:
     - type: documentation
       source:
+        url: https://modelstudio.console.alibabacloud.com/model-releases/wan3.0-video
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
         url: https://www.alibabacloud.com/help/en/model-studio/wan3-0-video
       purposes:
         - identification

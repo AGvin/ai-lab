@@ -3,17 +3,17 @@ entity:
   type: model-series
   name: Wan 3.0
   references:
+    - type: documentation
+      source:
+        url: https://modelstudio.console.alibabacloud.com/model-releases/wan3.0-video
+      purposes:
+        - research
+      authority: official
     - type: article
       source:
         url: https://www.alibabacloud.com/en/news/product/video-generation-model-wan30-officially-launched-nsb
       purposes:
         - identification
-        - research
-      authority: official
-    - type: repository
-      source:
-        url: https://github.com/AlibabaCloud-Official/Wan3.0
-      purposes:
         - research
       authority: official
     - type: documentation

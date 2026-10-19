@@ -11,6 +11,7 @@
 ## Decision and Operational Boundaries
 
 - wan3.0-video is a distinct hosted Wan 3.0 all-in-one video generation model.
+- Alibaba's undated release page labels the Wan 3.0 Video API generally available, while the API reference updated 2026-10-15 still says preview; verify lifecycle and availability for the selected region.
 - HTTP calls require asynchronous submission and polling; handle task failure separately from request acceptance, and persist generated assets according to the documented result lifetime.
 - Use the selected task's material types and limits; broad multimodal support is not unrestricted mixing of references.
 - Treat regional endpoints, API credentials, retention, and optional tools as hosting-service controls; the model name does not establish privacy, tool permissions, or access to external data.
