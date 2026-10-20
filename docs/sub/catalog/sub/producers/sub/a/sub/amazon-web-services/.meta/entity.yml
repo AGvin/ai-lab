@@ -34,6 +34,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/titan-models.html
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/amazon/nova
@@ -65,3 +72,5 @@ entity:
       target: catalog/services/infrastructure/amazon-sagemaker-ai
     - type: produces
       target: catalog/models/amazon/strands-decider
+    - type: produces
+      target: catalog/models/amazon/titan

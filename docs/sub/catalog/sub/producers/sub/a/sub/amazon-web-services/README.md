@@ -6,25 +6,27 @@ AWS organization identity remains separate from each model, software package, sp
 
 ## Relations
 
-- Produces: [Amazon Nova](../../../../../models/sub/amazon/sub/nova/)
-- Produces: [Strands Agents](../../../../../software/sub/agent-frameworks/sub/strands-agents/)
-- Produces: [Strands Robots](../../../../../software/sub/physical-ai-and-robotics/sub/strands-robots/)
-- Produces: [Kiro CLI](../../../../../software/sub/agents/sub/hybrid/sub/kiro-cli/)
-- Produces: [Amazon Bedrock AgentCore](../../../../../services/sub/infrastructure/sub/amazon-bedrock-agentcore/)
-- Produces: [AWS Agent Registry](../../../../../services/sub/ai-management-platforms/sub/aws-agent-registry/)
-- Produces: [AWS Trainium3](../../../../../hardware/sub/aws-trainium3/)
-- Produces: [Agent Toolkit for AWS Skills](../../../../../agent-skills/sub/collections/sub/aws-agent-toolkit-skills/)
-- Produces: [AWS HCLS Agent Skills](../../../../../agent-skills/sub/collections/sub/aws-hcls-agent-skills/)
-- Produces: [AWS MCP Server](../../../../../services/sub/infrastructure/sub/aws-mcp-server/)
-- Produces: [Amazon Quick](../../../../../services/sub/assistant-workspaces/sub/amazon-quick/)
-- Produces: [Amazon Bedrock](../../../../../services/sub/model-apis/sub/amazon-bedrock/)
-- Produces: [Dogwood](../../../../../specifications/sub/formats/sub/dogwood/)
-- Produces: [Amazon SageMaker AI](../../../../../services/sub/infrastructure/sub/amazon-sagemaker-ai/)
-- Produces: [Strands Decider](../../../../../models/sub/amazon/sub/strands-decider/)
+- Produces: [`catalog/agent-skills/collections/aws-agent-toolkit-skills`](../../../../../agent-skills/sub/collections/sub/aws-agent-toolkit-skills/)
+- Produces: [`catalog/services/model-apis/amazon-bedrock`](../../../../../services/sub/model-apis/sub/amazon-bedrock/)
+- Produces: [`catalog/services/infrastructure/amazon-bedrock-agentcore`](../../../../../services/sub/infrastructure/sub/amazon-bedrock-agentcore/)
+- Produces: [`catalog/models/amazon/nova`](../../../../../models/sub/amazon/sub/nova/)
+- Produces: [`catalog/services/assistant-workspaces/amazon-quick`](../../../../../services/sub/assistant-workspaces/sub/amazon-quick/)
+- Produces: [`catalog/services/infrastructure/amazon-sagemaker-ai`](../../../../../services/sub/infrastructure/sub/amazon-sagemaker-ai/)
+- Produces: [`catalog/models/amazon/titan`](../../../../../models/sub/amazon/sub/titan/)
+- Produces: [`catalog/services/ai-management-platforms/aws-agent-registry`](../../../../../services/sub/ai-management-platforms/sub/aws-agent-registry/)
+- Produces: [`catalog/agent-skills/collections/aws-hcls-agent-skills`](../../../../../agent-skills/sub/collections/sub/aws-hcls-agent-skills/)
+- Produces: [`catalog/services/infrastructure/aws-mcp-server`](../../../../../services/sub/infrastructure/sub/aws-mcp-server/)
+- Produces: [`catalog/hardware/aws-trainium3`](../../../../../hardware/sub/aws-trainium3/)
+- Produces: [`catalog/specifications/formats/dogwood`](../../../../../specifications/sub/formats/sub/dogwood/)
+- Produces: [`catalog/software/agents/hybrid/kiro-cli`](../../../../../software/sub/agents/sub/hybrid/sub/kiro-cli/)
+- Produces: [`catalog/software/agent-frameworks/strands-agents`](../../../../../software/sub/agent-frameworks/sub/strands-agents/)
+- Produces: [`catalog/models/amazon/strands-decider`](../../../../../models/sub/amazon/sub/strands-decider/)
+- Produces: [`catalog/software/physical-ai-and-robotics/strands-robots`](../../../../../software/sub/physical-ai-and-robotics/sub/strands-robots/)
 
 ## Official resources
 
-- [AWS](https://aws.amazon.com/)
-- [AWS Strands Agents introduction](https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/)
-- [Amazon Nova models and services](https://aws.amazon.com/nova/)
-- [Kiro service-provider identity](https://kiro.dev/docs/billing/managing-taxes/)
+- <https://aws.amazon.com/>
+- <https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/>
+- <https://aws.amazon.com/nova/>
+- <https://kiro.dev/docs/billing/managing-taxes/>
+- <https://docs.aws.amazon.com/bedrock/latest/userguide/titan-models.html>

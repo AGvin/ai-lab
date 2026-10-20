@@ -2,6 +2,13 @@ entity:
   id: catalog/models/amazon/strands-decider/models/strands-decider-2b-hobson-v21
   type: model
   name: Strands Decider 2B Hobson V21
+  identity_note: >-
+    Concrete Hobson V21 checkpoint with a Qwen3.5-2B-Base LoRA adapter and option-scoring head; it is
+    not the later Qwen v1 recipe. Confidence calibration was fitted on held-out short tasks and needs
+    evaluation on the target workflow. Optional Qwen vision was not trained on images, and missing
+    image inputs can still yield confident wrong answers. The recorded base revision was inferred
+    rather than pinned during training. Pin artifacts and runtime separately; the local server has no
+    authentication. Runtime state is truncated by default; strict-window mode rejects oversize input.
   references:
     - type: registry
       source:
@@ -14,6 +21,20 @@ entity:
       source:
         url: https://github.com/strands-labs/strands-decider
       purposes:
+        - research
+      authority: official
+    - type: announcement
+      source:
+        url: https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/strands-labs/strands-decider/blob/main/docs/inference.md
+      purposes:
+        - identification
         - research
       authority: official
   relations:

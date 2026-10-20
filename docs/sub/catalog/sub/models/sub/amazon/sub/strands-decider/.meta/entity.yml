@@ -2,6 +2,14 @@ entity:
   id: catalog/models/amazon/strands-decider
   type: model-family
   name: Strands Decider
+  identity_note: >-
+    AWS Strands model lineage with published adapters and option-scoring heads, separate from the
+    Strands SDK and inference package. noul, choice and score select or rate supplied alternatives
+    rather than generating free-form answers. Public checkpoints define trained identities; mirrors,
+    seeds and code releases do not. Confidence calibration needs target-traffic evaluation. Qwen
+    vision is optional and not image-trained; the released Gemma deciders are text-only and require
+    the repository runtime with Gemma support. Runtime state is truncated by default; strict-window
+    mode rejects oversize input.
   references:
     - type: repository
       source:
@@ -16,8 +24,39 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://github.com/strands-labs/strands-decider/blob/main/docs/naming.md
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/strands-labs/strands-decider/blob/main/docs/inference.md
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: model-card
+      source:
+        url: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/a/amazon-web-services
     - type: has-member
       target: catalog/models/amazon/strands-decider/models/strands-decider-2b-hobson-v21
+    - type: has-member
+      target: catalog/models/amazon/strands-decider/models/strands-decider-2b-qwen3-5-v1-2610
+    - type: has-member
+      target: catalog/models/amazon/strands-decider/models/strands-decider-e2b-gemma4-v1-2610
+    - type: has-member
+      target: catalog/models/amazon/strands-decider/models/strands-decider-e4b-gemma4-v1-2610
+    - type: has-member
+      target: catalog/models/amazon/strands-decider/models/strands-decider-12b-gemma4-v1-2610
+    - type: has-member
+      target: catalog/models/amazon/strands-decider/models/strands-decider-26b-a4b-gemma4-v1-2610

@@ -16,3 +16,7 @@
 - The page does not collapse AWS, models, agent software, and AWS hosting/services into one entity.
 - Official resource links match canonical entity metadata.
 - The producer reader includes all validated AWS relations and does not equate hosting with model authorship.
+
+## Titan model provenance
+
+- Keep Amazon Titan linked as an AWS-produced model family, with the reciprocal family relation. AWS describes Titan models as pretrained by AWS; Bedrock hosting remains separate from original model production. [Amazon Titan models](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-models.html)
