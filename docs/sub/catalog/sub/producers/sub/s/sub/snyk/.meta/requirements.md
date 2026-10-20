@@ -6,6 +6,10 @@
 - Preserve current maintained `snyk/agent-scan` project and product identity, while treating Snyk enterprise Evo/cloud security services and integrated research features as separate surfaces that may have other licensing/deployment contracts.
 - Render the validated `produces` relation and official first-party references; no duplicate producer solely for historical Invariant branding.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
+- Render the standard `entity-relations` block from validated current-entity relations, ordered by explicit numeric order, target canonical name and target ID; resolve every visible target to its reader.
+
 ## Validation
 
 - First-party acquisition statement and maintained GitHub repository support the current provenance.

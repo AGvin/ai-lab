@@ -10,6 +10,10 @@
 - Do not equate scores produced with legacy v1 evaluator and scores with locked-protocol V2. Model/agent benchmark performance is tied to harness, environment and exact revision.
 - Preserve Scale AI as canonical producer; maintain reciprocal provenance.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
+- Render the standard `entity-relations` block from validated current-entity relations, ordered by explicit numeric order, target canonical name and target ID; resolve every visible target to its reader.
+
 ## Validation
 
 - SWE-bench Pro is not conflated with original SWE-bench or unrelated code benchmark leaders.

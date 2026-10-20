@@ -9,6 +9,8 @@
 - Treat release versions, Kubernetes/runtime compatibility, deployment architecture, supported protocols/runtimes, and availability claims as freshness-sensitive.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
 ## Validation
 
 - Seldon Core 2 remains distributed model-serving software rather than an inference engine.

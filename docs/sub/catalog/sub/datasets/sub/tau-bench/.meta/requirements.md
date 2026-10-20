@@ -9,6 +9,12 @@
 - Preserve Sierra as source steward/producer, distinguished from models submitted to the benchmark and from independent research collaborators.
 - Treat benchmark task counts, failure modes, model rankings, voice provider support, licenses, leaderboards and package compatibility as mutable first-party release facts.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
+- Render the standard `entity-relations` block from validated current-entity relations, ordered by explicit numeric order, target canonical name and target ID; resolve every visible target to its reader.
+
+- Distinguish current 2.0 multilingual text/voice definitions from the 1.x leaderboard: English tasks, prompts and grading changed, and 2.0 scores are not comparable to 1.x. Use v1.0.1 for legacy comparisons and retain its banking-knowledge correction boundary.
+
 ## Validation
 
 - Original, dual-control and τ³ tracks are differentiated before any numerical comparison.

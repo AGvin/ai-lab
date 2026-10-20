@@ -9,6 +9,10 @@
 - Treat Cortex feature-specific preview status separately from currently generally available inference functions, not as a blanket release status for every Cortex feature.
 - Scope response compatibility, endpoint/task support and availability to the actual documented revisions; similar JSON does not guarantee feature-equivalent third-party SDK behavior.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
+- Render the standard `entity-relations` block from validated current-entity relations, ordered by explicit numeric order, target canonical name and target ID; resolve every visible target to its reader.
+
 ## Validation
 
 - The service is a managed inference/API surface rather than a trained model or local runtime.

@@ -9,6 +9,12 @@
 - Keep WorkArena's controlled enterprise ServiceNow workflow evaluation distinct from WebArena's demo-like self-hosted shopping/social sites, OSWorld's desktop environment, and original Mind2Web's offline trajectory/action-prediction tasks.
 - Treat BrowserGym, AgentLab, Playwright and the benchmark package as tooling/dependencies, not alternate canonical dataset or producer identities. Preserve ServiceNow research ownership and its reciprocal relation.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
+- Render the standard `entity-relations` block from validated current-entity relations, ordered by explicit numeric order, target canonical name and target ID; resolve every visible target to its reader.
+
+- Preserve supplied-instance restrictions from the official access card: benchmarking, evaluation and research only; no training, production workloads or sensitive/proprietary/personal data storage, and no guaranteed availability or persistence.
+
 ## Validation
 
 - The first-party WorkArena repository substantiates atomic and compositional task counts, separate research publications and gated ServiceNow instance access.

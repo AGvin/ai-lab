@@ -1,24 +1,23 @@
 # Seldon Core 2
 
-Seldon Core 2 is the current v2 Seldon Core model-serving/MLOps framework for deploying, managing, and monitoring production model workloads.
+Seldon Core 2 is the v2 Seldon Core model-serving and MLOps framework for deploying, managing and monitoring model workloads. It combines model-server integration, Kubernetes deployment, scheduling, inference pipelines, observability and model management in a distributed serving system.
 
-## Scope and boundaries
+## Version and support boundary
 
-Seldon Core 2 combines model-server integration, Kubernetes deployment, scheduling, inference pipelines, observability, and model management in a distributed serving framework.
-
-Its architecture and behavior can differ from historical Seldon Core v1. Runtime compatibility, supported protocols, and deployment requirements depend on the selected v2 release.
+Core 2 architecture and runtime compatibility can differ from historical Core v1. Current Seldon branding directs customers to TrueFoundry, whose announcement states that it acquired Seldon’s business and customers. This transition preserves the software’s Seldon provenance while requiring current support and migration arrangements to be checked separately. TrueFoundry’s combined platform is not the same software identity as the Core 2 code.
 
 ## Licensing and production use
 
-Check the license of the exact release before production deployment. The current v2 LICENSE uses Business Source License 1.1, which is not an open-source license. It permits non-production use and a limited production grant for non-profit educational institutions that excludes commercialization. Other production use requires an appropriate commercial license until the applicable version's change-license terms take effect. Those terms provide for a later transition to Apache 2.0; do not infer current production entitlements from historical Seldon Core v1 licensing.
+The inspected v2 LICENSE names Seldon Technologies Limited and uses Business Source License 1.1, which is not an open-source license. It permits non-production use and a limited additional production grant for qualifying non-profit educational institutions, excluding commercialization. Other production use requires an appropriate commercial license until that version’s change terms apply. The license specifies a transition to Apache 2.0 four years after each version’s release; verify the exact artifact and agreement rather than inferring rights from Core v1 or current marketing language.
 
 ## Relations
 
-- Produced by: [`catalog/producers/s/seldon`](../../../../../../../producers/sub/s/sub/seldon/)
+- Produced by: [Seldon](../../../../../../../producers/sub/s/sub/seldon/)
 
 ## Official resources
 
-- <https://github.com/SeldonIO/seldon-core>
-- <https://www.seldon.io/solutions/core/>
-- [Seldon Core 2 documentation](https://docs.seldon.ai/seldon-core-2)
-- [Seldon Core v2 license](https://github.com/SeldonIO/seldon-core/blob/v2/LICENSE)
+- [Seldon Core repository](https://github.com/SeldonIO/seldon-core)
+- [Current Seldon site](https://www.seldon.io/)
+- [Core 2 documentation](https://docs.seldon.ai/seldon-core-2)
+- [Core v2 license](https://github.com/SeldonIO/seldon-core/blob/v2/LICENSE)
+- [TrueFoundry business acquisition](https://www.truefoundry.com/blog/truefoundry-seldon-unified-control-plane-for-enterprise-ai)

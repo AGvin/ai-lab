@@ -6,6 +6,8 @@
 - Keep company/funding/deployment history subordinate to producer identity; model capabilities belong with canonical model entities.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
 ## Validation
 
 - `produces` is the inverse of Skild Brain `produced-by`.

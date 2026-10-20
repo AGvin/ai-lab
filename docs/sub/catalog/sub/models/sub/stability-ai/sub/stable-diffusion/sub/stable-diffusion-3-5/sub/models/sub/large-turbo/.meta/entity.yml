@@ -2,6 +2,18 @@ entity:
   id: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5/models/large-turbo
   type: model
   name: Stable Diffusion 3.5 Large Turbo
+  identity_note: >-
+    Stable Diffusion 3.5 Large Turbo is the distilled, speed-oriented Large Turbo model in Stability
+    AI’s 3.5 series. Stability describes adversarial diffusion distillation and a four-step generation
+    setup. It is a distinct trained variant, not merely a runtime flag applied to Large. The official
+    model card gives the intended step and guidance configuration. Fewer generation steps can reduce
+    work, but observed latency and image quality still depend on the runtime, hardware, resolution and
+    prompt. A benchmark for Large or an optimized runtime build is not automatically a result for the
+    released Turbo model. Keep the exact checkpoint and conversion lineage with any deployment
+    comparison. The official model distribution identifies the Stability AI Community license and
+    requires acceptance of access conditions. Confirm the agreement’s commercial eligibility and any
+    Enterprise requirement. API or partner hosting adds service-specific terms and processing
+    boundaries; downloadable weights do not include every hosted entitlement.
   references:
     - type: article
       source:
@@ -12,6 +24,20 @@ entity:
       source:
         url: https://stability.ai/core-models
       purposes: [research]
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://stability.ai/license
+      purposes:
+        - identification
+        - research
       authority: official
   relations:
     - type: member-of

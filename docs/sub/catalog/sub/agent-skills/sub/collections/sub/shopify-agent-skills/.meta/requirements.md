@@ -9,6 +9,10 @@
 - Supported coding agent clients, installation commands (`npx skill` versus `npx skills`), schema revisions, skill inventory, validation scripts and prompts are mutable. Do not assume the skill validation can replace live API/schema or app permissions.
 - Preserve reciprocal Shopify producer provenance.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
+- Render the standard `entity-relations` block from validated current-entity relations, ordered by explicit numeric order, target canonical name and target ID; resolve every visible target to its reader.
+
 ## Validation
 
 - First-party ownership and current source repository match the canonical collection.

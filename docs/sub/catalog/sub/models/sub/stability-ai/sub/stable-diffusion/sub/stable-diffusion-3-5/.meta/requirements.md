@@ -8,6 +8,10 @@
 - Keep API/partner-hosting surfaces and TensorRT/other optimized artifacts distinct from trained-model identities.
 - Attribute prompt-adherence, diversity, quality, speed, and hardware comparisons to Stability AI or the cited evaluator.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
+- Render the standard `entity-relations` block from validated current-entity relations, ordered by explicit numeric order, target canonical name and target ID; resolve every visible target to its reader.
+
 ## Validation
 
 - Stable Diffusion 3.5 remains a series, not one checkpoint.

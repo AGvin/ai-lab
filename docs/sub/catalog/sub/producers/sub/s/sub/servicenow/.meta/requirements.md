@@ -6,6 +6,8 @@
 - Keep AI Control Tower distinct from the broader ServiceNow AI Platform and unrelated ServiceNow products.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
 ## Validation
 
 - All five AI Control Tower, WebArena-Verified, WorkArena, BrowserGym and AgentLab `produced-by` relations have exact ServiceNow producer `produces` inverses.

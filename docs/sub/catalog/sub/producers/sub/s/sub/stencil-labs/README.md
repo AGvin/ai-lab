@@ -1,13 +1,18 @@
 # Stencil Labs, Inc.
 
-Stencil Labs develops and publishes OMP (Oh My Pi), the open-source coding agent originally created by Can Bölük and derived from Pi. The company is the current OMP project steward, distinct from the original author.
+Stencil Labs, Inc. is the current organization developing and publishing OMP (Oh My Pi). Stencil’s official site identifies the corporation and its research tools; the OMP upstream credits Stencil while retaining its origin as a fork of Pi. Can Bölük is the original creator and a separately represented person.
 
-## Related catalog entity
+## Producer boundary
 
-- [OMP](../../../../../software/sub/agents/sub/local/sub/omp/) — self-managed terminal coding agent.
+The current organizational maintainer, original author and upstream Pi lineage describe different roles. OMP’s MIT code and third-party notices govern its distribution; model subscriptions, credentials and local command or tool execution have separate boundaries. Stencil’s website is not evidence of a managed agent-execution service. Review provider configuration, filesystem permissions and tool approvals for the concrete OMP deployment.
+
+## Relations
+
+- Maintains: [OMP](../../../../../software/sub/agents/sub/local/sub/omp/)
 
 ## Official resources
 
 - [Stencil Labs](https://stencil.so/)
 - [Stencil on GitHub](https://github.com/stencil-hq)
-- [OMP source repository](https://github.com/can1357/oh-my-pi)
+- [OMP upstream](https://github.com/can1357/oh-my-pi)
+- [Stencil company and team](https://stencil.so/about)

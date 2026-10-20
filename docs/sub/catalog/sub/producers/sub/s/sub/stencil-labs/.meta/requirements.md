@@ -9,6 +9,8 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Link official Stencil and OMP sources.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
 ## Validation
 
 - Stencil Labs is not conflated with Can Bölük or the Pi project.

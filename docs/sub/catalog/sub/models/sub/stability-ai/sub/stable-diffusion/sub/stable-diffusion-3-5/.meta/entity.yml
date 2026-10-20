@@ -2,6 +2,18 @@ entity:
   id: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5
   type: model-series
   name: Stable Diffusion 3.5
+  identity_note: >-
+    Stable Diffusion 3.5 is a released Stability AI model series comprising Large, Large Turbo and
+    Medium. The variants share a series identity while remaining separate trained models with different
+    capacity and inference trade-offs. Stability describes Large as its 8.1-billion-parameter variant,
+    Large Turbo as a distilled variant intended for four-step generation, and Medium as a smaller
+    2.5-billion-parameter model. These are provider descriptions, not an independent guarantee of
+    quality or speed on a particular device. Use each variant’s model card for the exact architecture
+    and inference setup. The series is included in Stability’s current Community/Enterprise licensing
+    program. Hosted APIs and partner services have additional service conditions; downloadable weights
+    retain their own license and any distribution access requirements. Optimized or quantized builds are
+    artifacts of a selected model, not extra peer models in the series. Compare memory and output
+    quality with matching resolution, encoders, precision, sampler and runtime.
   references:
     - type: article
       source:
@@ -12,6 +24,13 @@ entity:
       source:
         url: https://stability.ai/core-models
       purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://stability.ai/license
+      purposes:
+        - identification
+        - research
       authority: official
   relations:
     - type: member-of

@@ -8,6 +8,10 @@
 - Treat enterprise data governance, region availability, pricing, model menus, authentication and platform support as mutable service/provider facts.
 - Do not infer Snowflake authorship of externally trained OpenAI, Anthropic, Meta or other models merely because it serves them.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
+- Render the standard `entity-relations` block from validated current-entity relations, ordered by explicit numeric order, target canonical name and target ID; resolve every visible target to its reader.
+
 ## Validation
 
 - Reciprocal `produces` relation resolves to managed Cortex Inference API; separate `maintains` link exactly reciprocates the TruLens software `maintained-by` relation.

@@ -8,6 +8,8 @@
 - Preserve current support for official plugin/install routes only while first-party documentation supports them; client-specific plugin commands, manual `npx skills` installation, skill inventory, and duplicated provider packaging are freshness-sensitive.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
 ## Validation
 
 - The collection remains a first-party Stripe skill collection, not a generic AI SDK or MCP product.

@@ -7,6 +7,10 @@
 - Do not infer software production or software ownership from the brand acquisition announcement.
 - Keep concrete platform behavior, deployment, SDK, and data-generation facts with the product entity.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
+- Render the standard `entity-relations` block from validated current-entity relations, ordered by explicit numeric order, target canonical name and target ID; resolve every visible target to its reader.
+
 ## Validation
 
 - The brand acquisition remains traceable to Syntho's first-party announcement.

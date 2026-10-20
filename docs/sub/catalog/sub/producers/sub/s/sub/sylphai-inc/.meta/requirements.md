@@ -7,6 +7,8 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official AdalFlow documentation and repository references supporting provenance.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
 ## Validation
 
 - The page does not collapse SylphAI, Inc. and AdalFlow into one entity.

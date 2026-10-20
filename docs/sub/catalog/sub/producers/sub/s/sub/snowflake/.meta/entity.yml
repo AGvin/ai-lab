@@ -2,6 +2,16 @@ entity:
   id: catalog/producers/s/snowflake
   type: organization
   name: Snowflake
+  identity_note: >-
+    Snowflake operates the managed Cortex model-inference API and currently maintains the separate
+    TruLens evaluation and tracing framework. TruLens originated at TruEra; the project’s current site
+    explicitly identifies Snowflake stewardship following the TruEra acquisition. Serving external
+    models does not make Snowflake their original trainer. Cortex Inference, AI Functions, Agents,
+    Search and warehousing are distinct services even where they share an account and billing. Check
+    account roles, model lifecycle, regional or cross-region processing and consumption charges for
+    hosted inference. TruLens is independently deployable software whose storage, instrumentation and
+    judge-model choices require their own data controls; using it does not itself require adopting the
+    Cortex Inference API.
   references:
     - type: official-site
       source:
@@ -14,6 +24,27 @@ entity:
       source:
         url: https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-rest-api
       purposes:
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.trulens.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.snowflake.com/en/blog/snowflake-acquires-truera-to-bring-llm-ml-observability-to-data-cloud/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-observability/evaluate-applications-trulens
+      purposes:
+        - identification
         - research
       authority: official
   relations:

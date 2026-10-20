@@ -6,6 +6,10 @@
 - Preserve the Shopify-owned API/developer skill collection as distinct from Shopify's hosted commerce platform, GraphQL APIs, Hydrogen SDK, Liquid themes, independently authored extensions and commerce agent protocols.
 - Current skill inventory, generated scripts, source schemas, supported agents, installation paths and validation recipes are freshness-sensitive. A successful skill package install is not equivalent to granting authenticated access to a merchant's store.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
+- Render the standard `entity-relations` block from validated current-entity relations, ordered by explicit numeric order, target canonical name and target ID; resolve every visible target to its reader.
+
 ## Validation
 
 - The `produces` relation reciprocates the collection's `produced-by` relation.

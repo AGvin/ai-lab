@@ -2,6 +2,15 @@ entity:
   id: catalog/producers/s/snyk
   type: organization
   name: Snyk
+  identity_note: >-
+    Snyk is the current publisher of Agent Scan through snyk/agent-scan. Its June 2025 announcement
+    records the acquisition of Invariant Labs, preserving the earlier MCP security research origin while
+    establishing the present first-party publishing organization. Agent Scan’s Apache 2.0 CLI source is
+    separate from the remote analysis service and enterprise security products. The maintained README
+    describes scanning local agent configuration, MCP tools and skills and documents what discovery data
+    is sent for analysis. Review the installed version, service terms, outbound data and server-contact
+    approvals before scanning confidential environments. A security finding or successful scan is not a
+    guarantee that every agent action is safe.
   references:
     - type: official-site
       source:
@@ -13,6 +22,27 @@ entity:
     - type: repository
       source:
         url: https://github.com/snyk/agent-scan
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://snyk.io/news/snyk-acquires-invariant-labs-to-accelerate-agentic-ai-security-innovation/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/snyk/agent-scan/blob/main/LICENSE
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://github.com/snyk/agent-scan/blob/main/TERMS.md
       purposes:
         - identification
         - research
