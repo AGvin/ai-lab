@@ -1,16 +1,21 @@
 # Producers — D
 
-Canonical producer profiles beginning with D.
-
-## Producers
-
+- [d-Matrix](./sub/d-matrix/)
 - [DAGWorks, Inc.](./sub/dagworks-inc/)
+- [Daniel Avila](./sub/daniel-avila/)
 - [Danny Avila](./sub/danny-avila/)
 - [Databricks, Inc.](./sub/databricks-inc/)
-- [`David Belton (DavidAU)`](./sub/davidau/)
+- [David Belton](./sub/davidau/)
+- [Daytona Platforms Inc.](./sub/daytona-platforms-inc/)
 - [DBOS, Inc.](./sub/dbos-inc/)
-- [`DeepSeek`](./sub/deepseek/)
+- [Deep Infra Inc.](./sub/deep-infra-inc/)
+- [DeepSeek](./sub/deepseek/)
 - [deepset GmbH](./sub/deepset-gmbh/)
+- [Descope](./sub/descope/)
 - [Diego Rodrigues de Sa e Souza](./sub/diego-rodrigues-de-sa-e-souza/)
+- [Dietrich Gebert](./sub/dietrich-gebert/)
+- [Diffbot](./sub/diffbot/)
 - [Dmitry Petrov](./sub/dmitry-petrov/)
+- [Docker](./sub/docker/)
+- [Dome Systems](./sub/dome-systems/)
 - [Dynalist Inc.](./sub/dynalist-inc/)

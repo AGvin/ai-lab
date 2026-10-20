@@ -19,6 +19,21 @@ entity:
         - identification
         - research
       authority: official
+    - type: privacy-policy
+      source:
+        url: https://exa.ai/privacy-policy
+      purposes:
+      - identification
+      - research
+      authority: official
+      note: Current company and service identity.
+    - type: documentation
+      source:
+        url: https://exa.ai/docs
+      purposes:
+      - research
+      authority: official
+      note: Search and retrieved-content service interfaces.
   relations:
     - type: produces
       target: catalog/services/web-data/exa

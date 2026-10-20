@@ -26,6 +26,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.deepinfra.com/
+      purposes:
+      - research
+      authority: official
+      note: Hosted model inference and service interfaces.
   relations:
     - type: produces
       target: catalog/services/model-apis/deepinfra

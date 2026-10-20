@@ -9,3 +9,4 @@ EleutherAI is a research collective producing open-source model research and eva
 ## Official resources
 
 - [Official source](https://www.eleuther.ai/)
+- [Language Model Evaluation Harness repository](https://github.com/EleutherAI/lm-evaluation-harness)

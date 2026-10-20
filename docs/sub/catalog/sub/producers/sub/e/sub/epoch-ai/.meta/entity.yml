@@ -16,6 +16,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: article
+      source:
+        url: https://epoch.ai/latest/openai-and-frontiermath
+      purposes:
+      - research
+      authority: official
+      note: Epoch distinguishes benchmark creation from OpenAI commissioning, ownership, and access to a defined problem set.
   relations:
     - type: produces
       target: catalog/datasets/frontiermath

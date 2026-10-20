@@ -10,6 +10,7 @@ Earendil Inc. / Earendil Works is the current long-term organizational home and 
 ## Official resources
 
 - [Pi](https://pi.dev/)
-- [Pi Has a New Home at Earendil](https://pi.dev/news/2026/5/7/pi-has-a-new-home)
+- [Pi Has a New Home at Earendil](https://pi.dev/changelog/2026/5/7/pi-has-a-new-home)
 - [Pi repository](https://github.com/earendil-works/pi)
 - [Pi Durable release](https://earendil.com/posts/pi-durable/)
+- [Earendil](https://earendil.com/)

@@ -14,7 +14,7 @@ entity:
       authority: official
     - type: article
       source:
-        url: https://pi.dev/news/2026/5/7/pi-has-a-new-home
+        url: https://pi.dev/changelog/2026/5/7/pi-has-a-new-home
       purposes:
         - identification
         - research
@@ -26,6 +26,21 @@ entity:
       purposes:
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://earendil.com/
+      purposes:
+      - identification
+      - research
+      authority: official
+      note: Official Earendil Inc. company identity.
+    - type: article
+      source:
+        url: https://earendil.com/posts/pi-durable/
+      purposes:
+      - research
+      authority: official
+      note: Earendil publishes Pi Durable as a separate experimental framework.
   relations:
     - type: maintains
       target: catalog/software/agents/local/pi

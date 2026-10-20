@@ -1,6 +1,6 @@
 # FLUIDSTACK LTD
 
-FLUIDSTACK LTD is a canonical producer identity represented in AI Lab.
+FLUIDSTACK LTD, using the Fluidstack brand, is the infrastructure company represented by the Fluidstack service. Customers' models, training data, and applications remain distinct from the infrastructure provider.
 
 ## Translations
 
@@ -14,3 +14,4 @@ FLUIDSTACK LTD is a canonical producer identity represented in AI Lab.
 
 - <https://fluidstack.io/>
 - <https://fluidstack.io/legal/terms-conditions/>
+- [Fluidstack website terms](https://fluidstack.io/legal/terms-of-use)

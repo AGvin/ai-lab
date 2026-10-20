@@ -14,3 +14,4 @@ The producer profile remains distinct from the Ponytail collection and from host
 
 - <https://github.com/DietrichGebert>
 - <https://github.com/DietrichGebert/ponytail>
+- [Ponytail author metadata](https://github.com/DietrichGebert/ponytail/blob/main/package.json)

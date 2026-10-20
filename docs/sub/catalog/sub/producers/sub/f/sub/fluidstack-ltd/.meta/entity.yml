@@ -19,6 +19,14 @@ entity:
         - identification
         - research
       authority: official
+    - type: terms-of-service
+      source:
+        url: https://fluidstack.io/legal/terms-of-use
+      purposes:
+      - identification
+      - research
+      authority: official
+      note: The website terms explicitly name FLUIDSTACK LTD as operator.
   relations:
     - type: produces
       target: catalog/services/infrastructure/fluidstack

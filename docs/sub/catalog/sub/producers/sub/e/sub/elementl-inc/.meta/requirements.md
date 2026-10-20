@@ -6,6 +6,8 @@
 - Preserve Dagster's origin/company provenance separately from the July 2026 Prefect acquisition transition and from the continuing Dagster product identity.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current first-party Dagster legal and company-history references.
+- Disambiguate Elementl, Inc. and its Dagster Labs brand from Element Labs, Inc., the LM Studio company.
+- Describe Prefect's July 2026 acquisition announcement as attributed transition context, without inferring a completed legal ownership relation from announcement wording alone.
 
 ## Validation
 

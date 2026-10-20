@@ -19,6 +19,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://www.daytona.io/docs/
+      purposes:
+      - research
+      authority: official
+      note: Runtime service and developer interfaces.
   relations:
     - type: produces
       target: catalog/services/infrastructure/daytona

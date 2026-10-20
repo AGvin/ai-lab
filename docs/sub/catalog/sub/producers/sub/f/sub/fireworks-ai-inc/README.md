@@ -4,7 +4,7 @@ Fireworks.ai, Inc. is the organization behind the Fireworks AI hosted inference 
 
 ## Producer boundary
 
-Producer identity remains distinct from the hosted Fireworks AI service and from third-party model authors whose models can be served by the platform.
+Fireworks operates the hosted inference and training service. Third-party model authors and customer applications retain their own provenance; hosting or adapting a model does not make the service provider its original creator.
 
 ## Relations
 
@@ -15,3 +15,4 @@ Producer identity remains distinct from the hosted Fireworks AI service and from
 - <https://fireworks.ai/>
 - <https://fireworks.ai/privacy-policy>
 - <https://fireworks.ai/terms-of-service>
+- [Fireworks documentation](https://docs.fireworks.ai/getting-started/introduction)

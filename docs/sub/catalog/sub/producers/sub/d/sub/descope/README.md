@@ -1,6 +1,6 @@
 # Descope
 
-Descope is the producer identity for Agentic Identity Hub.
+Descope provides Agentic Identity Hub, an identity and authorization service for AI agents. Its role is separate from the customer agents, connected APIs, and resource servers that implement and enforce access to their own resources.
 
 ## Relations
 
@@ -9,3 +9,5 @@ Descope is the producer identity for Agentic Identity Hub.
 ## Official resources
 
 - <https://www.descope.com/>
+- [Agentic Identity Hub documentation](https://docs.descope.com/agentic-identity-hub)
+- [Agentic Identity Hub use cases](https://docs.descope.com/agentic-identity-hub/use-cases)

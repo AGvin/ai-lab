@@ -17,6 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.e2b.dev/
+      purposes:
+      - research
+      authority: official
+      note: Sandbox service and deployment responsibility boundaries.
   relations:
     - type: produces
       target: catalog/services/infrastructure/e2b

@@ -4,7 +4,7 @@ E2B is the first-party organization/publishing identity behind the E2B cloud san
 
 ## Producer boundary
 
-Producer identity remains distinct from the hosted E2B service and from client SDK/library artifacts.
+E2B publishes the sandbox infrastructure and developer tooling. The hosted service, client SDKs, and customer-controlled code have separate operating roles, with infrastructure responsibility depending on the chosen deployment.
 
 ## Relations
 
@@ -14,3 +14,4 @@ Producer identity remains distinct from the hosted E2B service and from client S
 
 - <https://e2b.dev/>
 - <https://github.com/e2b-dev/E2B>
+- [E2B documentation](https://docs.e2b.dev/)

@@ -1,6 +1,6 @@
 # Deep Infra Inc.
 
-Deep Infra Inc. is a canonical producer identity represented in AI Lab.
+Deep Infra Inc., using the DeepInfra brand, operates a hosted model inference service. It provides the serving infrastructure and interfaces; third-party model creators and customer applications retain their own provenance.
 
 ## Translations
 
@@ -15,3 +15,4 @@ Deep Infra Inc. is a canonical producer identity represented in AI Lab.
 - <https://deepinfra.com/>
 - <https://deepinfra.com/privacy>
 - <https://deepinfra.com/terms>
+- [DeepInfra documentation](https://docs.deepinfra.com/)

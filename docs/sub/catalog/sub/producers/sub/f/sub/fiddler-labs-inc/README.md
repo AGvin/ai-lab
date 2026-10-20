@@ -10,3 +10,4 @@ Fiddler Labs, Inc. is the organization behind [Fiddler AI Control Plane](../../.
 
 - [Official site](https://www.fiddler.ai/)
 - [Issuer filing](https://www.sec.gov/Archives/edgar/data/1791224/000179122426000004/xslFormDX01/primary_doc.xml)
+- [Fiddler documentation](https://docs.fiddler.ai/)

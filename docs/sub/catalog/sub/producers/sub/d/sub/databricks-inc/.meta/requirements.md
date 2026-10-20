@@ -6,6 +6,8 @@
 - Keep Databricks origin provenance distinct from current Linux Foundation open governance and from Databricks-managed MLflow offerings.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current first-party Databricks and MLflow provenance references.
+- Represent Databricks Model Serving as a separate Databricks-operated service alongside the original MLflow project provenance.
+- Include current Model Serving documentation and the official MLflow Linux Foundation transition announcement; do not collapse open-source project governance into managed-service operation.
 
 ## Validation
 

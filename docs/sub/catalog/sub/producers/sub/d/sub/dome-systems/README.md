@@ -4,7 +4,7 @@ Dome Systems is the producer identity for Dome Agent Operations Platform.
 
 ## Producer boundary
 
-The organization profile remains distinct from the platform's Registry, Gateway, Broker, controls, resource types, and integrations.
+Dome supplies agent operations and governance controls. Customers retain their own agents, tools, models, and data; the platform's Registry, Gateway, Broker, and integrations are product components rather than additional producer identities.
 
 ## Relations
 
@@ -13,3 +13,4 @@ The organization profile remains distinct from the platform's Registry, Gateway,
 ## Official resources
 
 - <https://www.domesystems.ai/>
+- [Dome operating model](https://www.domesystems.ai/solutions)

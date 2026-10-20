@@ -18,6 +18,28 @@ entity:
         - research
       authority: official
       note: Current MLflow site identifies MLflow as created by Databricks.
+    - type: terms-of-service
+      source:
+        url: https://www.databricks.com/legal/terms-of-use
+      purposes:
+      - identification
+      - research
+      authority: official
+      note: Official terms identify Databricks, Inc. and distinguish website terms from platform services.
+    - type: documentation
+      source:
+        url: https://docs.databricks.com/aws/en/machine-learning/model-serving/
+      purposes:
+      - research
+      authority: official
+      note: Databricks-operated model serving service.
+    - type: article
+      source:
+        url: https://www.databricks.com/blog/2020/06/25/mlflow-joins-the-linux-foundation-to-become-the-open-standard-for-machine-learning-platforms.html
+      purposes:
+      - research
+      authority: official
+      note: Databricks describes the project origin and its Linux Foundation governance transition.
   relations:
     - type: produces
       target: catalog/software/model-and-data-platforms/lifecycle-platforms/mlflow

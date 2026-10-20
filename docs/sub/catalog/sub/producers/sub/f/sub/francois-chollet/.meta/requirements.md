@@ -6,6 +6,7 @@
 - Distinguish original benchmark authorship from the later ARC Prize Foundation's governance, competition activities and ARC-AGI-2/3 development.
 - Keep ARC-AGI-1's original published task data and revisions separate from later competitions, leaderboards, models, tools and follow-on benchmark series.
 - Cite the original ARC-AGI repository and foundation historical context for provenance.
+- Render the standard `entity-relations` block from validated current-entity relations and include the selected official identity and project resources.
 
 ## Validation
 

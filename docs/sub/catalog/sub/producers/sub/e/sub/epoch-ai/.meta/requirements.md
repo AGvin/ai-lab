@@ -5,6 +5,7 @@
 - Identify Epoch AI as the original producer and benchmark steward of FrontierMath, independent of AI labs that fund, access, evaluate on or publish scores for it.
 - Preserve original benchmark authorship and development disclosures: OpenAI supported FrontierMath development and has had special access to certain problem subsets, but funding and early access do **not** transfer benchmark producer identity from Epoch AI.
 - Separate the FrontierMath benchmark dataset/methodology, its public subset, privately administered holdouts, Epoch AI leaderboards, and subsequent competitions. Version and scope details remain source-backed.
+- Render the standard `entity-relations` block from validated current-entity relations and include the selected official identity and project resources.
 
 ## Validation
 

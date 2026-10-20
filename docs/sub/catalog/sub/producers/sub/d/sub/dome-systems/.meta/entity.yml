@@ -10,6 +10,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://www.domesystems.ai/solutions
+      purposes:
+      - research
+      authority: official
+      note: Dome distinguishes platform controls from customer-owned agents, tools, models, and data.
   relations:
     - type: produces
       target: catalog/services/ai-management-platforms/dome-agent-operations-platform

@@ -14,3 +14,4 @@ Daniel Avila remains distinct from the existing Danny Avila producer entity asso
 
 - <https://github.com/davila7>
 - <https://github.com/davila7/claude-code-templates>
+- [Project security policy and maintainer](https://github.com/davila7/claude-code-templates/blob/main/SECURITY.md)

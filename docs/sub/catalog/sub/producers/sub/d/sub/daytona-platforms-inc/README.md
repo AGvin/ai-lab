@@ -1,6 +1,6 @@
 # Daytona Platforms Inc.
 
-Daytona Platforms Inc. is a canonical producer identity represented in AI Lab.
+Daytona Platforms Inc. is the company behind the Daytona runtime service and its developer interfaces. The company provides the sandbox infrastructure; customer code and the agents using it remain separate from the service operator.
 
 ## Translations
 
@@ -14,3 +14,4 @@ Daytona Platforms Inc. is a canonical producer identity represented in AI Lab.
 
 - <https://www.daytona.io/>
 - <https://www.daytona.io/terms-of-service>
+- [Daytona documentation](https://www.daytona.io/docs/)

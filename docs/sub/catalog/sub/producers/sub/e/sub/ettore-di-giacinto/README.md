@@ -10,3 +10,4 @@ Ettore Di Giacinto (`mudler`) is the creator, original author, and project lead 
 
 - [Ettore Di Giacinto on GitHub](https://github.com/mudler)
 - [LocalAI overview](https://localai.io/docs/overview/)
+- [LocalAI repository and team](https://github.com/mudler/LocalAI)

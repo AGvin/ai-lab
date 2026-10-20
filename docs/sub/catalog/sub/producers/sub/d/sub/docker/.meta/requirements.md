@@ -4,6 +4,7 @@
 
 - Identify Docker as the first-party producer of its released Docker Skills collection; do not conflate skill guidance packages with Docker Engine, Docker Agent, Docker Compose, product documentation, or the OCI runtime. Preserve contributor and project credit for referenced third-party content rather than attributing everything to Docker.
 - Keep producer-specific repositories, distribution channels and skill inventory freshness-sensitive; distinguish verified first-party guidance from untrusted agent-generated instructions.
+- Render the standard `entity-relations` block from validated current-entity relations and include the selected official identity and project resources.
 
 ## Validation
 

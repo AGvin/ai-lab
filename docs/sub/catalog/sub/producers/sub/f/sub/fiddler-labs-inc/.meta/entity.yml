@@ -20,6 +20,13 @@ entity:
         - identification
       authority: upstream
       note: Current 2026 issuer filing identifying Fiddler Labs, Inc.
+    - type: documentation
+      source:
+        url: https://docs.fiddler.ai/
+      purposes:
+      - research
+      authority: official
+      note: Observability and control-plane product responsibilities.
   relations:
     - type: produces
       target: catalog/software/evaluation-and-observability/observability-platforms/fiddler-ai-control-plane

@@ -7,6 +7,7 @@
 - Render the standard `entity-relations` block from validated current-entity relations.
 - Include the official E2B site and first-party repository as identity/research references.
 - Do not invent a legal-company suffix not established by cited authoritative sources.
+- Keep customer-controlled code and deployment-specific infrastructure responsibility distinct from the publishing organization, hosted service, and SDKs.
 
 ## Validation
 

@@ -10,6 +10,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: product-page
+      source:
+        url: https://www.d-matrix.ai/product/
+      purposes:
+      - research
+      authority: official
+      note: Official organization-to-platform provenance.
   relations:
     - type: produces
       target: catalog/hardware/d-matrix-corsair

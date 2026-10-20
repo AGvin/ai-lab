@@ -10,6 +10,20 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.descope.com/agentic-identity-hub
+      purposes:
+      - research
+      authority: official
+      note: Official product attribution and service scope.
+    - type: documentation
+      source:
+        url: https://docs.descope.com/agentic-identity-hub/use-cases
+      purposes:
+      - research
+      authority: official
+      note: Identity provider, agent, and resource-server responsibilities.
   relations:
     - type: produces
       target: catalog/services/agent-identity-and-access/descope-agentic-identity-hub

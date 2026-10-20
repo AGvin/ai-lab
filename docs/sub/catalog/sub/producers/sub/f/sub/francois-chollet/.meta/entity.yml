@@ -18,6 +18,14 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://arcprize.org/arc-agi/1
+      purposes:
+      - identification
+      - research
+      authority: official
+      note: Current version-specific benchmark page credits the original corpus to François Chollet.
   relations:
     - type: produces
       target: catalog/datasets/arc-agi-1
