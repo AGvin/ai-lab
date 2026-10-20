@@ -15,3 +15,11 @@
 - The collection remains distinct from the Perplexity Skills Marketplace registry.
 - Individual repository skill directories are not duplicated as standalone AI Lab nodes without independent identity.
 - Producer provenance resolves bidirectionally to Perplexity AI.
+
+## Source-backed reader scope — 2026-10-20
+
+- Identity and provenance: Perplexity API Platform Skills is the official repository-backed collection for API migration and search-development workflows. Its portable skill files and plugin packaging are distinct from the public Computer Skills Marketplace.
+- Decision and deployment boundary: The repository declares Apache-2.0. Pin and inspect the selected revision, skill scripts and optional documentation integration before use. Installing instructions or a docs integration does not provide paid API access or permission to change an application's data.
+- Render every visible current relation using canonical target names, explicit order first and alphabetical order within each relation group. Keep metadata paths out of reader navigation.
+- Recheck account eligibility, exact artifact access, versions and terms before deployment. This source review does not certify runtime performance.
+- Reviewed sources: <https://github.com/perplexityai/api-platform-developers>, <https://docs.perplexity.ai/docs/search/quickstart>.

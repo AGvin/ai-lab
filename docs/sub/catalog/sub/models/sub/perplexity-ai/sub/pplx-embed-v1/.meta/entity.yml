@@ -3,21 +3,37 @@ entity:
   type: model-family
   name: PPLX Embed V1
   references:
-    - type: documentation
-      source:
-        url: https://docs.perplexity.ai/docs/embeddings/quickstart
-      purposes:
-        - identification
-        - research
-      authority: official
+  - type: documentation
+    source:
+      url: https://docs.perplexity.ai/docs/embeddings/quickstart
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-embed-context-v1-4b
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: produced-by
-      target: catalog/producers/p/perplexity-ai
-    - type: has-member
-      target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-0-6b
-    - type: has-member
-      target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-4b
-    - type: has-member
-      target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-context-v1-0-6b
-    - type: has-member
-      target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-context-v1-4b
+  - type: produced-by
+    target: catalog/producers/p/perplexity-ai
+  - type: has-member
+    target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-0-6b
+  - type: has-member
+    target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-4b
+  - type: has-member
+    target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-context-v1-0-6b
+  - type: has-member
+    target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-context-v1-4b
+  identity_note: PPLX Embed V1 is Perplexity's Qwen3-derived family of standard and contextualized text embeddings.
+    Four existing members cover the 0.6B and 4B sizes for the two input roles.

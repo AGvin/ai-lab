@@ -13,3 +13,11 @@
 - The family remains distinct from the hosted Embeddings API service.
 - Standard and contextualized variants are not silently conflated.
 - Producer provenance resolves bidirectionally to Perplexity AI.
+
+## Source-backed reader scope — 2026-10-20
+
+- Identity and provenance: PPLX Embed V1 is Perplexity's Qwen3-derived family of standard and contextualized text embeddings. Four existing members cover the 0.6B and 4B sizes for the two input roles.
+- Decision and deployment boundary: Select standard members for independent queries or texts and contextualized members for chunks grouped by document. Validate the matching query/document representation and retrieval metric. Hosted API settings, runtime code and model licenses must be checked at their respective boundaries.
+- Render every visible current relation using canonical target names, explicit order first and alphabetical order within each relation group. Keep metadata paths out of reader navigation.
+- Recheck account eligibility, exact artifact access, versions and terms before deployment. This source review does not certify runtime performance.
+- Reviewed sources: <https://docs.perplexity.ai/docs/embeddings/quickstart>, <https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b>, <https://huggingface.co/perplexity-ai/pplx-embed-context-v1-4b>.

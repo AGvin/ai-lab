@@ -3,27 +3,37 @@ entity:
   type: service
   name: Parallel
   aliases:
-    - Parallel Web APIs
+  - Parallel Web APIs
   references:
-    - type: official-site
-      source:
-        url: https://parallel.ai/products/search
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: documentation
-      source:
-        url: https://docs.parallel.ai/search/search-quickstart
-      purposes:
-        - research
-      authority: official
-    - type: terms-of-service
-      source:
-        url: https://parallel.ai/customer-terms
-      purposes:
-        - research
-      authority: official
+  - type: official-site
+    source:
+      url: https://parallel.ai/products/search
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.parallel.ai/search/search-quickstart
+    purposes:
+    - research
+    authority: official
+  - type: terms-of-service
+    source:
+      url: https://parallel.ai/customer-terms
+    purposes:
+    - research
+    authority: official
+    note: Customer Terms effective October 17, 2026; use these current output and data-processing clauses instead
+      of the earlier August text.
+  - type: documentation
+    source:
+      url: https://docs.parallel.ai/task-api/task-quickstart
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Task API.
   relations:
-    - type: produced-by
-      target: catalog/producers/p/parallel-web-systems-inc
+  - type: produced-by
+    target: catalog/producers/p/parallel-web-systems-inc

@@ -3,22 +3,40 @@ entity:
   type: organization
   name: Parallel Web Systems Inc.
   aliases:
-    - Parallel Web Systems
+  - Parallel Web Systems
   references:
-    - type: official-site
-      source:
-        url: https://parallel.ai/
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: terms-of-service
-      source:
-        url: https://parallel.ai/customer-terms
-      purposes:
-        - identification
-        - research
-      authority: official
+  - type: official-site
+    source:
+      url: https://parallel.ai/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: terms-of-service
+    source:
+      url: https://parallel.ai/customer-terms
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Customer Terms effective October 17, 2026 identify Parallel Web Systems Inc. and define output-use and
+      customer-data conditions.
+  - type: documentation
+    source:
+      url: https://docs.parallel.ai/search/search-quickstart
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Search API.
+  - type: documentation
+    source:
+      url: https://docs.parallel.ai/task-api/task-quickstart
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Task API.
   relations:
-    - type: produces
-      target: catalog/services/web-data/parallel
+  - type: produces
+    target: catalog/services/web-data/parallel

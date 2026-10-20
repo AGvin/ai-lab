@@ -3,17 +3,33 @@ entity:
   type: producer
   name: Raspberry Pi Ltd
   aliases:
-    - Raspberry Pi
+  - Raspberry Pi
   references:
-    - type: official-site
-      source:
-        url: https://www.raspberrypi.com/
-      purposes:
-        - identification
-        - research
-      authority: official
+  - type: official-site
+    source:
+      url: https://www.raspberrypi.com/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: product-page
+    source:
+      url: https://www.raspberrypi.com/products/ai-hat/
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: AI HAT+.
+  - type: product-page
+    source:
+      url: https://www.raspberrypi.com/products/ai-hat-plus-2/
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: AI HAT+ 2.
   relations:
-    - type: produces
-      target: catalog/hardware/raspberry-pi-ai-hat-plus
-    - type: produces
-      target: catalog/hardware/raspberry-pi-ai-hat-plus-2
+  - type: produces
+    target: catalog/hardware/raspberry-pi-ai-hat-plus
+  - type: produces
+    target: catalog/hardware/raspberry-pi-ai-hat-plus-2

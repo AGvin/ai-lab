@@ -14,3 +14,11 @@
 - The concrete official Hugging Face artifact/model card resolves and identifies the exact model.
 - `member-of` and family `has-member` are reciprocal.
 - The cross-size compatible embedding space does not imply that scores and speed are interchangeable.
+
+## Source-backed reader scope — 2026-10-20
+
+- Identity and provenance: PPLX Embed V2 Late 0.6B is the smaller MIT-licensed multimodal retrieval artifact, with about 340 million active parameters and 128-dimensional vectors for individual tokens.
+- Decision and deployment boundary: Use the card's MultiVectorEncoder and MaxSim workflow, including separate text and image batches. A generic pooled-vector example does not establish compatible indexing. The documented shared space permits querying a 9B-built index, subject to the same token-marker and runtime conventions.
+- Render every visible current relation using canonical target names, explicit order first and alphabetical order within each relation group. Keep metadata paths out of reader navigation.
+- Recheck account eligibility, exact artifact access, versions and terms before deployment. This source review does not certify runtime performance.
+- Reviewed sources: <https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b>.

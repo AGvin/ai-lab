@@ -3,19 +3,27 @@ entity:
   type: organization
   name: Qualcomm
   references:
-    - type: official-site
-      source:
-        url: https://www.qualcomm.com/
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: product-page
-      source:
-        url: https://www.qualcomm.com/data-center/products
-      purposes:
-        - research
-      authority: official
+  - type: official-site
+    source:
+      url: https://www.qualcomm.com/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: product-page
+    source:
+      url: https://www.qualcomm.com/data-center/products
+    purposes:
+    - research
+    authority: official
+  - type: product-page
+    source:
+      url: https://www.qualcomm.com/data-center/products/qualcomm-dragonfly-ai200
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: AI200 product page.
   relations:
-    - type: produces
-      target: catalog/hardware/qualcomm-dragonfly-ai200
+  - type: produces
+    target: catalog/hardware/qualcomm-dragonfly-ai200

@@ -3,23 +3,32 @@ entity:
   type: model-family
   name: PPLX Embed V2 Late
   references:
-    - type: registry
-      source:
-        url: https://huggingface.co/collections/perplexity-ai/pplx-embed-v2
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: registry
-      source:
-        url: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
-      purposes:
-        - research
-      authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/collections/perplexity-ai/pplx-embed-v2
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
+    purposes:
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-9b
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: produced-by
-      target: catalog/producers/p/perplexity-ai
-    - type: has-member
-      target: catalog/models/perplexity-ai/pplx-embed-v2-late/models/pplx-embed-v2-late-0-6b
-    - type: has-member
-      target: catalog/models/perplexity-ai/pplx-embed-v2-late/models/pplx-embed-v2-late-9b
+  - type: produced-by
+    target: catalog/producers/p/perplexity-ai
+  - type: has-member
+    target: catalog/models/perplexity-ai/pplx-embed-v2-late/models/pplx-embed-v2-late-0-6b
+  - type: has-member
+    target: catalog/models/perplexity-ai/pplx-embed-v2-late/models/pplx-embed-v2-late-9b
+  identity_note: PPLX Embed V2 Late is Perplexity's multimodal late-interaction retrieval family, with distinct
+    0.6B and 9B artifacts built on Qwen3.5. It scores per-token vectors with MaxSim.

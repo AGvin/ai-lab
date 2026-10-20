@@ -1,15 +1,17 @@
 # Recognai, S.L.U.
 
-Recognai is the company that built Rubrix, the data-curation software renamed Argilla in 2022. The first-party rename account also records the company adopting the Argilla name. The legal notice last modified on October 11, 2022 identifies Recognai, S.L.U.; it is evidence of the historical legal identity, not an independent confirmation of present corporate status.
+Recognai, S.L.U. is the historical company identity associated with the project that became Argilla. The October 2022 account explains the Recognai/Rubrix-to-Argilla transition, and the website's legal notice, last modified October 11, 2022, names Recognai, S.L.U. The later June 2024 announcement that Argilla joined Hugging Face concerns a subsequent ownership layer. [Project history](https://argilla.io/blog/recognai-rubrix-evolve-into-argilla/) · [Dated legal notice](https://argilla.io/terms-of-use/) · [Argilla joins Hugging Face](https://argilla.io/blog/argilla-joins-hugggingface/).
 
-Argilla's later acquisition by Hugging Face is a separate ownership layer. The software profile records its current deployment and maintenance boundaries.
+## Scope and operating boundaries
 
-## Relations
+Use this producer record to understand original provenance, while establishing present software support, hosting and contractual responsibilities from the selected Argilla offering. The old legal notice is not sufficient evidence that Recognai is the current standalone operator or sole maintainer, and the later ownership announcement does not erase the original project team. [Project history](https://argilla.io/blog/recognai-rubrix-evolve-into-argilla/) · [Later ownership announcement](https://argilla.io/blog/argilla-joins-hugggingface/).
 
-- Produces: [Argilla](../../../../../software/sub/model-and-data-platforms/sub/dataset-curation/sub/argilla/).
+## Produces
+
+- [Argilla](../../../../../software/sub/model-and-data-platforms/sub/dataset-curation/sub/argilla/)
 
 ## Official resources
 
-- [Recognai and Rubrix become Argilla (2022)](https://argilla.io/blog/recognai-rubrix-evolve-into-argilla/)
-- [Historical legal notice (last modified October 11, 2022)](https://argilla.io/terms-of-use/)
-- [Argilla joins Hugging Face (2024)](https://argilla.io/blog/argilla-joins-hugggingface/)
+- [Project history](https://argilla.io/blog/recognai-rubrix-evolve-into-argilla/)
+- [Dated legal notice](https://argilla.io/terms-of-use/)
+- [Argilla joins Hugging Face](https://argilla.io/blog/argilla-joins-hugggingface/)

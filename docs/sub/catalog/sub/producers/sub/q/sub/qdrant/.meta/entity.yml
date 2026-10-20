@@ -3,13 +3,37 @@ entity:
   type: organization
   name: Qdrant
   references:
-    - type: official-site
-      source:
-        url: https://qdrant.tech/
-      purposes:
-        - identification
-        - research
-      authority: official
+  - type: official-site
+    source:
+      url: https://qdrant.tech/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: legal-notice
+    source:
+      url: https://qdrant.tech/legal/impressum/
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Company imprint.
+  - type: documentation
+    source:
+      url: https://qdrant.tech/documentation/cloud/
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Qdrant Cloud.
+  - type: repository
+    source:
+      url: https://github.com/qdrant/qdrant
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Engine repository.
   relations:
-    - type: produces
-      target: catalog/services/data-infrastructure/vector-search/qdrant-managed-cloud
+  - type: produces
+    target: catalog/services/data-infrastructure/vector-search/qdrant-managed-cloud

@@ -14,3 +14,11 @@
 - Search API remains web-data-first rather than a generic model gateway.
 - Search SDK/CLI/skills are not duplicated as hosted service peers.
 - Producer provenance resolves bidirectionally to Perplexity AI.
+
+## Source-backed reader scope — 2026-10-20
+
+- Identity and provenance: Perplexity Search API returns ranked web retrieval results and extracted content for application processing. It is separate from the generated-answer behavior of Agent API.
+- Decision and deployment boundary: Choose domain, language, regional and result-budget controls for the task. Treat returned pages as external source material whose relevance and claims require checking. Review current API data terms and limits before submitting sensitive queries.
+- Render every visible current relation using canonical target names, explicit order first and alphabetical order within each relation group. Keep metadata paths out of reader navigation.
+- Recheck account eligibility, exact artifact access, versions and terms before deployment. This source review does not certify runtime performance.
+- Reviewed sources: <https://docs.perplexity.ai/docs/search/quickstart>, <https://docs.perplexity.ai/docs/resources/privacy-security>.

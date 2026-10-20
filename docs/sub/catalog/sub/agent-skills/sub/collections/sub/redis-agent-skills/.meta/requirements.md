@@ -15,3 +15,19 @@
 - Collection identity is independent of the already materialized Redis Agent Memory managed service; generated plugin mirrors and individual skills are not duplicated as canonical collections.
 - Supported runtime/client compatibility and permissions are not inferred from a repository's installation examples alone.
 - The Redis collection `produced-by` link and Redis producer inverse `produces` link resolve to canonical materialized IDs.
+
+## Source-backed identity and operating scope
+
+The reader must preserve the following boundaries and their source basis.
+
+Redis Agent Skills is Redis's official MIT-licensed collection of portable instructions for coding agents. The upstream repository covers Redis data structures, connections, search, semantic caching, clustering, security, observability and Iris development. These are instruction packages for working with Redis products, rather than a database deployment or a managed memory service. [Official collection](https://github.com/redis/agent-skills).
+
+The current collection contains `redis-core`, `redis-connections`, `redis-search`, `redis-semantic-cache`, `redis-clustering`, `redis-security`, `redis-observability` and `iris-development`. The documented portable installation is `npx skills add redis/agent-skills`; client-specific plugin packaging has its own installation requirements. Pin the selected revision and confirm that the intended client supports the relevant package. [Inventory and installation](https://github.com/redis/agent-skills).
+
+Review the instructions and database actions before enabling them. A skill cannot grant a missing credential, provision a deployment merely by being installed or guarantee that every Redis feature is available in the selected server or cloud plan. The repository's MIT license applies to these resources; the database, hosted service and connected tools retain their own licenses and permissions. [Collection scope](https://github.com/redis/agent-skills).
+
+## Reader projection
+
+- Render every non-hidden current-entity relation in its semantic group, ordered by explicit order, canonical target display name and target ID. Preserve source/contributor, organizational and product distinctions.
+- Include the official resources from canonical references as readable links. Navigation to a related catalog entry must resolve to its reader, not to metadata.
+- Keep changing version, plan, availability and policy details qualified by the cited source; no general offline, license or privacy guarantee follows from producer attribution.

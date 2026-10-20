@@ -3,21 +3,38 @@ entity:
   type: dataset
   name: Q2D-Web
   aliases:
-    - Query2Doc-Web
+  - Query2Doc-Web
   references:
-    - type: article
-      source:
-        url: https://www.perplexity.ai/en-GB/hub/blog/q2d-web
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: official-site
-      source:
-        url: https://research.perplexity.ai/
-      purposes:
-        - research
-      authority: official
+  - type: article
+    source:
+      url: https://www.perplexity.ai/en-GB/hub/blog/q2d-web
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: official-site
+    source:
+      url: https://research.perplexity.ai/
+    purposes:
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://www.perplexity.ai/uk/hub/blog/q2d-web
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://arxiv.org/abs/2609.08887
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: produced-by
-      target: catalog/producers/p/perplexity-ai
+  - type: produced-by
+    target: catalog/producers/p/perplexity-ai
+  identity_note: Q2D-Web is Perplexity's private evaluation benchmark for first-stage retrieval in agentic RAG,
+    with a public methodology and leaderboard. The reported corpus has about 190 million documents and 69,721 agent-reformulated
+    queries across ten languages.

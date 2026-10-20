@@ -1,15 +1,18 @@
 # Qdrant
 
-Qdrant is the producer identity for Qdrant products represented in the catalog.
+Qdrant is the publishing and service brand behind the represented Qdrant Cloud offering. The official legal imprint identifies Qdrant Solutions GmbH, while the cloud documentation describes managed clusters and API access. This brand profile complements the existing legal-name producer profile used for the Qdrant engine. [Company imprint](https://qdrant.tech/legal/impressum/) · [Qdrant Cloud](https://qdrant.tech/documentation/cloud/).
 
-## Producer boundary
+## Scope and operating boundaries
 
-Managed Qdrant Cloud remains distinct from self-managed Qdrant software when both identities are represented.
+Choose managed Cloud when the vendor-operated cluster and its service agreement match the workload. Confirm deployment location, account permissions and authentication before ingesting application data. The underlying Apache-2.0 engine can also be self-managed, but its license does not establish the terms, retention or availability of a paid cloud deployment. [Cloud documentation](https://qdrant.tech/documentation/cloud/) · [Engine repository](https://github.com/qdrant/qdrant).
 
-## Relations
+## Produces
 
-- Produces: [`catalog/services/data-infrastructure/vector-search/qdrant-managed-cloud`](../../../../../services/sub/data-infrastructure/sub/vector-search/sub/qdrant-managed-cloud/)
+- [Qdrant Managed Cloud](../../../../../services/sub/data-infrastructure/sub/vector-search/sub/qdrant-managed-cloud/)
 
 ## Official resources
 
-- <https://qdrant.tech/>
+- [Official website](https://qdrant.tech/)
+- [Company imprint](https://qdrant.tech/legal/impressum/)
+- [Qdrant Cloud](https://qdrant.tech/documentation/cloud/)
+- [Engine repository](https://github.com/qdrant/qdrant)

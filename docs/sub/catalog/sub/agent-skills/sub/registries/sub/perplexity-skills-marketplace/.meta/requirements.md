@@ -15,3 +15,11 @@
 - The Marketplace remains a registry/discovery identity rather than a first-party fixed collection.
 - Individual indexed skills are not duplicated automatically.
 - Producer provenance resolves bidirectionally to Perplexity AI.
+
+## Source-backed reader scope — 2026-10-20
+
+- Identity and provenance: Perplexity Skills Marketplace is a discovery and installation registry for reusable Computer skills, including public and organization-managed skills.
+- Decision and deployment boundary: Public browsing and Enterprise administration are different access levels. Inspect the selected skill's publisher, instructions and requested access; organization approval does not establish code safety or grant unrelated application permissions.
+- Render every visible current relation using canonical target names, explicit order first and alphabetical order within each relation group. Keep metadata paths out of reader navigation.
+- Recheck account eligibility, exact artifact access, versions and terms before deployment. This source review does not certify runtime performance.
+- Reviewed sources: <https://www.perplexity.ai/changelog/effort-mode-gpt-6-astra-and-skills-marketplace>.

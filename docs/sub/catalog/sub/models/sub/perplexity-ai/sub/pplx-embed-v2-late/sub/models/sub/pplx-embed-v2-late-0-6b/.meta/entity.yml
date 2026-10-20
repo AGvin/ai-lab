@@ -3,15 +3,17 @@ entity:
   type: model
   name: PPLX Embed V2 Late 0.6B
   aliases:
-    - pplx-embed-v2-late-0.6b
+  - pplx-embed-v2-late-0.6b
   references:
-    - type: registry
-      source:
-        url: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
-      purposes:
-        - identification
-        - research
-      authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: member-of
-      target: catalog/models/perplexity-ai/pplx-embed-v2-late
+  - type: member-of
+    target: catalog/models/perplexity-ai/pplx-embed-v2-late
+  identity_note: PPLX Embed V2 Late 0.6B is the smaller MIT-licensed multimodal retrieval artifact, with about 340
+    million active parameters and 128-dimensional vectors for individual tokens.

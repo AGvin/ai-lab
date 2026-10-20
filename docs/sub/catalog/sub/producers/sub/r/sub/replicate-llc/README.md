@@ -1,17 +1,18 @@
 # Replicate, LLC
 
-Replicate, LLC is the organization behind the hosted Replicate model-running and deployment service.
+Replicate, LLC is the legal service operator named in Replicate's terms and privacy policy, both updated April 1, 2026. The platform hosts model execution and deployment, including models from external publishers. Operating the inference service does not make Replicate the original producer of every hosted model. [Terms](https://replicate.com/terms/) · [Privacy policy](https://replicate.com/privacy) · [Documentation](https://replicate.com/docs).
 
-## Producer boundary
+## Scope and operating boundaries
 
-Producer identity remains distinct from the hosted Replicate service and from third-party model authors or publishers whose models are accessible through it.
+Choose the exact public or private model and deployment arrangement, then assess its license, submitted data and service terms. A paid API call grants service access under the contract; it does not establish redistribution rights for third-party weights or a universal license for generated material. Keep uploaded training data and inference inputs within the selected offering's documented data controls. [Service terms](https://replicate.com/terms/) · [Privacy policy](https://replicate.com/privacy) · [Platform documentation](https://replicate.com/docs).
 
-## Relations
+## Produces
 
-- Produces: [`catalog/services/model-apis/replicate`](../../../../../services/sub/model-apis/sub/replicate/)
+- [Replicate](../../../../../services/sub/model-apis/sub/replicate/)
 
 ## Official resources
 
-- <https://replicate.com/>
-- <https://replicate.com/terms/>
-- <https://replicate.com/privacy>
+- [Official website](https://replicate.com/)
+- [Terms](https://replicate.com/terms/)
+- [Privacy policy](https://replicate.com/privacy)
+- [Platform documentation](https://replicate.com/docs)

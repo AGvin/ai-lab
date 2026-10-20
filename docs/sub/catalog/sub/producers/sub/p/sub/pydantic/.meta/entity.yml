@@ -3,26 +3,58 @@ entity:
   type: organization
   name: Pydantic
   references:
-    - type: official-site
-      source:
-        url: https://pydantic.dev/
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: repository
-      source:
-        url: https://github.com/pydantic/pydantic-ai
-      purposes:
-        - identification
-        - research
-      authority: official
+  - type: official-site
+    source:
+      url: https://pydantic.dev/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/pydantic/pydantic-ai
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://pydantic.dev/docs/ai/overview/
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Pydantic AI overview.
+  - type: documentation
+    source:
+      url: https://pydantic.dev/docs/ai/harness/
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Pydantic AI Harness.
+  - type: documentation
+    source:
+      url: https://pydantic.dev/docs/ai/evals/evals/
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Pydantic Evals.
+  - type: documentation
+    source:
+      url: https://pydantic.dev/docs/logfire/get-started/
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Pydantic Logfire.
   relations:
-    - type: produces
-      target: catalog/software/agent-frameworks/pydantic-ai
-    - type: produces
-      target: catalog/software/agent-frameworks/pydantic-ai-harness
-    - type: produces
-      target: catalog/software/evaluation-and-observability/evaluation-frameworks/pydantic-evals
-    - type: produces
-      target: catalog/software/evaluation-and-observability/observability-platforms/pydantic-logfire
+  - type: produces
+    target: catalog/software/agent-frameworks/pydantic-ai
+  - type: produces
+    target: catalog/software/agent-frameworks/pydantic-ai-harness
+  - type: produces
+    target: catalog/software/evaluation-and-observability/evaluation-frameworks/pydantic-evals
+  - type: produces
+    target: catalog/software/evaluation-and-observability/observability-platforms/pydantic-logfire

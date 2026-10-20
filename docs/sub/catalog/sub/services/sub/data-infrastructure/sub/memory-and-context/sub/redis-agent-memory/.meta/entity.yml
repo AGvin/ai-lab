@@ -3,26 +3,34 @@ entity:
   type: service
   name: Redis Agent Memory
   references:
-    - type: product-page
-      source:
-        url: https://redis.io/agent-memory/
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: documentation
-      source:
-        url: https://redis.io/docs/latest/develop/ai/context-engine/agent-memory/
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: documentation
-      source:
-        url: https://redis.io/docs/latest/operate/rc/context-engine/agent-memory/
-      purposes:
-        - research
-      authority: official
+  - type: product-page
+    source:
+      url: https://redis.io/agent-memory/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://redis.io/docs/latest/develop/ai/context-engine/agent-memory/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://redis.io/docs/latest/operate/rc/context-engine/agent-memory/
+    purposes:
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/redis/agent-memory-server
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Agent Memory Server and V0 history.
   relations:
-    - type: produced-by
-      target: catalog/producers/r/redis
+  - type: produced-by
+    target: catalog/producers/r/redis

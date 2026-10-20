@@ -3,23 +3,40 @@ entity:
   type: organization
   name: Prefect Technologies, Inc.
   references:
-    - type: other
-      source:
-        url: https://www.prefect.io/legal/terms
-      purposes:
-        - identification
-        - research
-      authority: official
-      note: Current Prefect terms identify the legal company as Prefect Technologies, Inc.
-    - type: documentation
-      source:
-        url: https://docs.prefect.io/v3/get-started/index
-      purposes:
-        - research
-      authority: official
-      note: Prefect's current documentation records the project's 2018 origin and the creation of its Python-native orchestration system.
+  - type: other
+    source:
+      url: https://www.prefect.io/legal/terms
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Current Prefect terms identify the legal company as Prefect Technologies, Inc.
+  - type: documentation
+    source:
+      url: https://docs.prefect.io/v3/get-started/index
+    purposes:
+    - research
+    authority: official
+    note: Prefect's current documentation records the project's 2018 origin and the creation of its Python-native
+      orchestration system.
+  - type: repository
+    source:
+      url: https://github.com/PrefectHQ/prefect
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Prefect repository.
+  - type: repository
+    source:
+      url: https://github.com/PrefectHQ/fastmcp
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: FastMCP repository.
   relations:
-    - type: produces
-      target: catalog/software/workflow-engines/data-and-compute-orchestration/prefect
-    - type: produces
-      target: catalog/software/application-frameworks/application-development/fastmcp
+  - type: produces
+    target: catalog/software/workflow-engines/data-and-compute-orchestration/prefect
+  - type: produces
+    target: catalog/software/application-frameworks/application-development/fastmcp

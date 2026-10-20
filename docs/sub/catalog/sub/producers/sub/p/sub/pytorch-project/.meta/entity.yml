@@ -3,23 +3,47 @@ entity:
   type: organization
   name: PyTorch Project
   references:
-    - type: official-site
-      source:
-        url: https://pytorch.org/
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: repository
-      source:
-        url: https://github.com/pytorch/executorch
-      purposes:
-        - research
-      authority: official
+  - type: official-site
+    source:
+      url: https://pytorch.org/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/pytorch/executorch
+    purposes:
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/pytorch/pytorch
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: PyTorch repository.
+  - type: repository
+    source:
+      url: https://github.com/pytorch/ao
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: TorchAO repository.
+  - type: official-site
+    source:
+      url: https://pytorch.org/foundation/
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: PyTorch Foundation.
   relations:
-    - type: produces
-      target: catalog/software/inference-runtimes/inference-engines/executorch
-    - type: produces
-      target: catalog/software/model-and-data-platforms/model-development/pytorch
-    - type: produces
-      target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/torchao
+  - type: produces
+    target: catalog/software/inference-runtimes/inference-engines/executorch
+  - type: produces
+    target: catalog/software/model-and-data-platforms/model-development/pytorch
+  - type: produces
+    target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/torchao
