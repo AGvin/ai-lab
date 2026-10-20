@@ -1,6 +1,6 @@
 # Kuadrant
 
-Kuadrant maintains Kubernetes-native gateway and policy software, including the separately released MCP Gateway. Gateway configuration and the external identity/policy systems used by deployments remain distinct upstream components.
+Kuadrant is the open-source project publishing Kubernetes-native gateway and policy software, including the separately released MCP Gateway. Gateway configuration and the external identity/policy systems used by deployments remain distinct upstream components.
 
 ## Relations
 

@@ -6,6 +6,7 @@
 - Distinguish original paper contributors, data annotators, dataset authors and participating model submitters from current repository or project stewardship.
 - Avoid turning auxiliary benchmark harness packages, leaderboards, version-specific subsets or submissions into duplicate producer identities.
 - Keep revisions, methodology, licensing, dataset access and organizational ownership freshness-sensitive.
+- Acknowledge the Terminal-Bench collaboration with Stanford researchers; the represented producer edge records Laude provenance/stewardship rather than exclusive creation or ownership of all contributions.
 
 ## Validation
 

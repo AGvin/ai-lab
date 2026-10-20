@@ -10,11 +10,10 @@ entity:
         - identification
         - research
       authority: official
-    - type: documentation
+    - type: article
       source:
-        url: https://harborframework.com/docs/running-tbench
+        url: https://www.tbench.ai/news/announcement-2-0
       purposes:
-        - identification
         - research
       authority: official
   relations:

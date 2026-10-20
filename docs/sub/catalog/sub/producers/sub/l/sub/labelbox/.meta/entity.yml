@@ -16,6 +16,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.labelbox.com/horizon/guides/access-storage
+      purposes:
+        - research
+      authority: official
+      note: Official documentation scopes data storage and access to the selected integration configuration.
   relations:
     - type: produces
       target: catalog/services/data-generation-and-curation/labelbox

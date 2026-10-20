@@ -1,6 +1,8 @@
 # LangWatch
 
-LangWatch is the first-party publishing project for the [LangWatch](../../../../../software/sub/evaluation-and-observability/sub/observability-platforms/sub/langwatch/) open-core platform. The enterprise license names Reasoning Engine B.V. as rights holder; this does not require inventing a second product publisher. Hosted/cloud options and third-party models are separate operating surfaces.
+LangWatch is the publishing project behind the [LangWatch](../../../../../software/sub/evaluation-and-observability/sub/observability-platforms/sub/langwatch/) open-core platform. Its enterprise license names Reasoning Engine B.V. as the rights holder.
+
+The repository separates the Apache-2.0 core, MIT SDKs, and enterprise-licensed capabilities. Hosted LangWatch Cloud, user deployments, and third-party model providers have distinct operating and licensing boundaries.
 
 ## Relations
 

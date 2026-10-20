@@ -2,6 +2,8 @@
 
 Lovable Labs Incorporated operates the Lovable hosted application-building platform.
 
+The general Terms name Lovable Labs Incorporated, while the Privacy Policy identifies Lovable Labs Sweden AB as the controller for processing covered by that policy and separately addresses organization-managed data. These roles do not establish a corporate ownership relation. The Lovable service also remains distinct from customer-created applications and code.
+
 ## Related catalog entity
 
 - [Lovable](../../../../../services/sub/development/sub/agents/sub/lovable/) — canonical hosted development-agent service profile.

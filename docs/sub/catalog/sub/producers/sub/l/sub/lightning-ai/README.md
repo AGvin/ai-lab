@@ -9,3 +9,4 @@ Lightning AI publishes the PyTorch Lightning framework. Its separately operated 
 ## Official resources
 
 - [Upstream repository](https://github.com/Lightning-AI/pytorch-lightning)
+- [Lightning AI](https://lightning.ai/)

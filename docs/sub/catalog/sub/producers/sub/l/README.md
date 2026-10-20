@@ -1,6 +1,7 @@
 # Producers — L
 
 - [Labelbox](./sub/labelbox/)
+- [Lambda, Inc.](./sub/lambda-inc/)
 - [LanceDB](./sub/lancedb/)
 - [LangChain Inc.](./sub/langchain-inc/)
 - [LangChain4j](./sub/langchain4j/)
@@ -8,7 +9,12 @@
 - [Langfuse GmbH](./sub/langfuse-gmbh/)
 - [LangGenius, Inc.](./sub/langgenius-inc/)
 - [LangWatch](./sub/langwatch/)
+- [Laude Institute](./sub/laude-institute/)
+- [Letta](./sub/letta/)
+- [LG AI Research](./sub/lg-ai-research/)
 - [Lightning AI](./sub/lightning-ai/)
+- [Linkup](./sub/linkup/)
+- [LLaMA Factory Project](./sub/llama-factory-project/)
 - [LlamaIndex, Inc.](./sub/llamaindex-inc/)
 - [LMSYS Org](./sub/lmsys-org/)
 - [LocalAI Team](./sub/localai-team/)

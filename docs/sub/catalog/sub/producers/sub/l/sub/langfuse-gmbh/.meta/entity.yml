@@ -31,6 +31,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: terms-of-service
+      source:
+        url: https://clickhouse.com/legal/clickhouse-general-terms-and-conditions
+      purposes:
+        - research
+      authority: official
+      note: The terms retain Langfuse GmbH as the named contracting entity for pay-as-you-go Langfuse Cloud, distinct from the corporate acquisition.
   relations:
     - type: produces
       target: catalog/software/evaluation-and-observability/observability-platforms/langfuse

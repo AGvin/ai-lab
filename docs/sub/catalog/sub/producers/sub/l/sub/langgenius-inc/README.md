@@ -4,6 +4,8 @@ LangGenius, Inc. is the Delaware corporation doing business as Dify and the prod
 
 The company identity remains distinct from Dify Community or other self-hosted software deployments and from Dify Cloud, Enterprise, Marketplace, and other separately operated commercial surfaces.
 
+Dify's repository uses a modified Apache-2.0-based license with additional conditions. Those software rights, Cloud or Enterprise agreements, and third-party plugin rights apply to different parts of the ecosystem.
+
 ## Produces and maintains
 
 - [Dify](../../../../../software/sub/workflow-engines/sub/visual-ai-workflows/sub/dify/) — visual AI application and workflow platform produced and maintained by LangGenius.
@@ -14,3 +16,4 @@ The company identity remains distinct from Dify Community or other self-hosted s
 - [Dify terms of service](https://dify.ai/legal/terms-of-service)
 - [Dify repository and license](https://github.com/langgenius/dify)
 - [Dify marketplace agreement](https://dify.ai/legal/marketplace-agreement)
+- [Dify software license](https://github.com/langgenius/dify/blob/main/LICENSE)

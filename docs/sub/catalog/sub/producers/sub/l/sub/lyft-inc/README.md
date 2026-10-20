@@ -8,5 +8,5 @@ Lyft, Inc. is the origin organization where Flyte was built internally beginning
 
 ## Official resources
 
-- [Lyft terms](https://www.lyft.com/terms?country=us)
+- [Lyft terms](https://www.lyft.com/terms)
 - [Union.ai company history](https://www.union.ai/company)

@@ -1,16 +1,14 @@
 # KServe Project
 
-KServe Project is a producer identity represented in the AI Lab catalog.
+The KServe Project is the open-source community/project publishing KServe, a platform for generative and predictive AI inference on Kubernetes.
 
-## Producer boundary
-
-Foundation/governance relationships outside the direct producer edge unless they are separately required and source-backed.
+Project stewardship is distinct from the organizations operating Kubernetes clusters, model servers, or hosted inference services. Foundation and governance relationships do not replace the direct software-producer identity.
 
 ## Relations
 
-- Produces: [`catalog/software/inference-runtimes/distributed-serving/kserve`](../../../../../software/sub/inference-runtimes/sub/distributed-serving/sub/kserve/)
+- Produces: [KServe](../../../../../software/sub/inference-runtimes/sub/distributed-serving/sub/kserve/)
 
 ## Official resources
 
-- <https://kserve.github.io/website/>
-- <https://github.com/kserve/kserve>
+- [KServe project](https://kserve.github.io/website/)
+- [KServe repository](https://github.com/kserve/kserve)

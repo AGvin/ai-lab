@@ -26,6 +26,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://developer.konghq.com/ai-gateway/architecture/
+      purposes:
+        - research
+      authority: official
+      note: AI Gateway architecture separates the Konnect-managed control plane, self-managed data plane, and upstream AI providers.
   relations:
     - type: produces
       target: catalog/software/gateways/api-management-gateways/kong-gateway

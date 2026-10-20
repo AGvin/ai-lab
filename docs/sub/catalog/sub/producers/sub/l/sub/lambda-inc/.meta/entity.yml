@@ -14,12 +14,12 @@ entity:
       authority: official
     - type: terms-of-service
       source:
-        url: https://lambda.ai/legal/terms-of-service
+        url: https://lambda.ai/legal/terms-of-service#cloud-terms-of-service
       purposes:
         - identification
         - research
       authority: official
-      note: Current Lambda terms identify Lambda, Inc. as the cloud contracting entity.
+      note: The Cloud Terms identify Lambda, Inc. or its Affiliate; separate Website Terms on the same page have a different scope.
   relations:
     - type: produces
       target: catalog/services/infrastructure/lambda-cloud

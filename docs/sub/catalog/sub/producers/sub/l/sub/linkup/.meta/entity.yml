@@ -10,6 +10,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.linkup.so/
+      purposes:
+        - research
+      authority: official
+      note: First-party API documentation establishes the hosted web-data service and its interfaces; the service remains distinct from external publishers and their source content.
   relations:
     - type: produces
       target: catalog/services/web-data/linkup

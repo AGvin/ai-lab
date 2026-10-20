@@ -17,6 +17,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.letta.com/self-hosting
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/agent-frameworks/letta
