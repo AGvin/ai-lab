@@ -19,6 +19,18 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://ifm.ai/about/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ifm.ai/k2/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/institute-of-foundation-models/k2-horizon

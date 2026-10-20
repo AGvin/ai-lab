@@ -1,8 +1,9 @@
 # Producers — J
 
-Producer identities whose canonical names are indexed under J.
+Canonical producer profiles beginning with J.
 
-## Producer profiles
+## Producers
 
 - [JAX Project](./sub/jax-project/)
 - [Jeremy Howard](./sub/jeremy-howard/)
+- [JetBrains](./sub/jetbrains/)

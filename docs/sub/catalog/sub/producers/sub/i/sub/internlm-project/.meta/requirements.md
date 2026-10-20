@@ -2,11 +2,12 @@
 
 ## Requirements
 
-- Identify the InternLM upstream project as the current canonical project-level producer/steward for LMDeploy, following its official InternLM repository and published documentation.
-- Preserve development history with the MMRazor and MMDeploy teams and distinguish historic developer contributions from current repository stewardship.
-- Do not infer independent hosting service, payment product, or model producer ownership solely from the LMDeploy library or its server capabilities.
+- Identify the InternLM upstream project as the project-level producer/steward for LMDeploy using the official repository and documentation.
+- Preserve the upstream attribution to the MMRazor and MMDeploy development teams. Repository stewardship is not proof of exclusive legal ownership.
+- Do not infer a hosted service, payment product or ownership of models served through LMDeploy. Keep library release and runtime support details with the software profile.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 
 ## Validation
 
-- `produces` matches the reciprocal LMDeploy `produced-by` relation.
-- Upstream project attribution is based on current official sources, without conflating original contributors and present governance.
+- Every rendered relation resolves to its canonical destination and has the exact reciprocal relation.
+- Historic development attribution and present upstream stewardship remain distinct.

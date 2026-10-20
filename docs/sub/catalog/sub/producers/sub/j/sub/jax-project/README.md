@@ -1,6 +1,8 @@
 # JAX Project
 
-The JAX Project maintains the open-source JAX numerical computing library. First-party documentation describes its research status without presenting it as a Google commercial product.
+The JAX Project is led by the JAX core team and develops JAX openly with community contributions, including contributions from Google DeepMind, Alphabet and NVIDIA. Its upstream repository describes JAX as a research project rather than an official Google product.
+
+The core team decides which changes to accept. Corporate contributions do not collapse the project into a corporate producer identity. Independently represented surrounding projects and libraries retain their own identities and owners.
 
 ## Relations
 
@@ -8,4 +10,5 @@ The JAX Project maintains the open-source JAX numerical computing library. First
 
 ## Official resources
 
-- [Upstream repository](https://github.com/jax-ml/jax)
+- <https://docs.jax.dev/en/latest/about.html>
+- <https://github.com/jax-ml/jax>

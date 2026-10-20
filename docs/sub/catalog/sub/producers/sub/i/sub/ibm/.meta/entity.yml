@@ -16,6 +16,18 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://www.ibm.com/granite
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://newsroom.ibm.com/2026-09-10-ibm-and-nasa-release-open-source-ai-model-to-support-lunar-exploration
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/services/ai-management-platforms/ibm-watsonx-governance

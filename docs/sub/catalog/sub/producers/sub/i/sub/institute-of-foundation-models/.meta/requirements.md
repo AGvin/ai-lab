@@ -1,9 +1,13 @@
 # Documentation Requirements
 
 ## Requirements
-- Identify the Institute of Foundation Models (IFM) as the direct producer/steward organization for the K2 Horizon family.
-- Keep MBZUAI launch/history facts separate from direct current producer identity unless an ownership/governance relation is independently required.
-- Render the standard `entity-relations` block from validated current-entity relations.
+
+- Identify the Institute of Foundation Models (IFM) at MBZUAI as the direct producer of the K2 Horizon family, using its current About and model pages.
+- Preserve the documented university affiliation without inventing separate corporate ownership, legal-person status or an unsupported governance relation.
+- Keep model-scale, license and deployment distinctions with the exact model profiles; the institute and model family are separate canonical identities.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 
 ## Validation
-- `produces` is the inverse of K2 Horizon `produced-by`.
+
+- Every rendered relation resolves to its canonical destination and has the exact reciprocal relation.
+- MBZUAI affiliation is current institutional context, not merely historical launch context.

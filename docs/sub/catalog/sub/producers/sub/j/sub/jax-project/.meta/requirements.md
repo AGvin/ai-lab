@@ -6,6 +6,8 @@
 - Preserve current upstream wording that JAX is a research project rather than an official Google product, while allowing first-party references to Google/Google DeepMind contributions as contributions rather than ownership.
 - Keep OpenXLA/XLA, Flax, Optax, Orbax, Pallas, and other surrounding libraries/projects with their own owners when independently materialized.
 
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
+
 ## Validation
 
 - JAX Project is not conflated with Google/Google DeepMind corporate producer identity.

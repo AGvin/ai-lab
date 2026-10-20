@@ -13,6 +13,12 @@ entity:
         url: https://deepmind.google/blog/alphafold-five-years-of-impact/
       purposes: [research]
       authority: official
+    - type: documentation
+      source:
+        url: https://www.isomorphiclabs.com/articles/alphafold-3-predicts-the-structure-and-interactions-of-all-of-lifes-molecules
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/google/alphafold

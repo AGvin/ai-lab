@@ -1,10 +1,8 @@
 # InternLM Project
 
-The upstream steward of the released LMDeploy inference and serving toolkit.
+The InternLM upstream project is the project-level producer and steward of LMDeploy. Its official repository credits the MMRazor and MMDeploy teams with development.
 
-## Ownership boundary
-
-Current project-level ownership is distinct from MMRazor and MMDeploy contributor history, model identities and managed API providers.
+Upstream stewardship and development history do not establish exclusive legal ownership. LMDeploy's ability to serve models does not make InternLM their owner or establish a separate hosted service. Release and runtime support details belong to the software profile.
 
 ## Relations
 
@@ -12,4 +10,5 @@ Current project-level ownership is distinct from MMRazor and MMDeploy contributo
 
 ## Official resources
 
-- [Upstream repositories](https://github.com/InternLM)
+- <https://github.com/InternLM>
+- <https://github.com/InternLM/lmdeploy>
