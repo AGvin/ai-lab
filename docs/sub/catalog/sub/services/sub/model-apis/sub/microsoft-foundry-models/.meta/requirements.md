@@ -9,6 +9,8 @@
 - Treat model inventory, deployment modes, endpoint compatibility, regions, lifecycle, pricing, quotas, Azure support/SLA distinctions, content filtering, fine-tuning, and capacity options as freshness-sensitive.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+
 ## Validation
 
 - Microsoft Foundry Models remains a hosted model-access/deployment service rather than a model family.

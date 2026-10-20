@@ -2,10 +2,70 @@ entity:
   id: catalog/producers/m/mlcommons
   type: organization
   name: MLCommons
+  identity_note: >-
+    MLCommons is an open AI engineering consortium that develops and operates AI benchmarks with
+    industry, academia and other contributors. Its represented work includes MLPerf system-performance
+    suites and the AILuminate safety benchmark family. Consortium provenance is distinct from the
+    authorship of each reference model or dataset and from the vendors submitting systems or hosting
+    tested endpoints. Results apply to a specified benchmark revision, workload, quality target and
+    system configuration. AILuminate grades describe the fixed system under test and tested hazards;
+    they are not universal safety certification for an underlying model. Public code, practice data,
+    protected official tests, result publication and trademark use can have different access or
+    licensing conditions. MLPerf Endpoints v0.7 remains an identifiable release even as later rules
+    develop; newer metrics and submission rules must not be backported into that snapshot.
   references:
     - type: official-site
       source:
         url: https://mlcommons.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://mlcommons.org/about-us/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://mlcommons.org/benchmarks/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mlcommons.org/2026/09/mlperf-inference-v6-1-results/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mlcommons.org/2026/06/mlperf-training-v6-0-results/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://mlcommons.org/ailuminate/safety-faq/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mlcommons.org/2026/07/mlperf-endpoints-v0-7-release/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mlcommons.org/endpoints-submission-docs/understand/what-is-mlperf-endpoints/
       purposes:
         - identification
         - research

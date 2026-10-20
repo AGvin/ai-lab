@@ -2,6 +2,16 @@ entity:
   id: catalog/datasets/mlperf-training
   type: dataset
   name: MLPerf Training
+  identity_note: >-
+    MLPerf Training is MLCommons' open, peer-reviewed benchmark suite for measuring how quickly complete
+    systems train models to specified quality targets. The June 2026 v6.0 release covers a changing
+    collection of training workloads, including language-model pretraining/fine-tuning, recommendation
+    and image generation. Reference models and datasets, target quality, software and hardware
+    configuration, rules and power measurements belong to the particular revision. The suite is distinct
+    from individual models, accelerators, frameworks, cloud platforms and vendor submissions. A
+    performance record applies to the exact submitted system, workload and quality target; it is not a
+    universal ranking of training systems or a claim that MLCommons produced the models used in the
+    tests.
   references:
     - type: product-page
       source:

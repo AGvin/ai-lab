@@ -9,6 +9,8 @@
 - Treat supported regions/models/tools, quotas, pricing, BYO resources, networking, storage, memory, protocol versions, publishing destinations, and hosted-agent runtime behavior as freshness-sensitive.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+
 ## Validation
 
 - Foundry Agent Service remains a managed agent runtime/platform identity rather than an agent framework or assistant workspace.

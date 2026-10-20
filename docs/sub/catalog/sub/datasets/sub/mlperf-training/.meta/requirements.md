@@ -9,6 +9,9 @@
 - Preserve MLCommons producer provenance through the canonical relation.
 - Attribute performance records to the exact submitted system, benchmark revision, workload, target quality, and configuration rather than generalizing them into universal training-system rankings.
 
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
+
 ## Validation
 
 - The node remains the durable MLPerf Training benchmark-suite identity rather than one release, reference model, dataset, or results table.

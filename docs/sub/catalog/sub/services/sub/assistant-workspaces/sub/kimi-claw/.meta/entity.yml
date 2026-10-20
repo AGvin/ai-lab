@@ -2,6 +2,18 @@ entity:
   id: catalog/services/assistant-workspaces/kimi-claw
   type: service
   name: Kimi Claw
+  identity_note: >-
+    Kimi Claw's hosted service lets users deploy an always-online OpenClaw agent in Moonshot AI's cloud
+    without operating a server themselves. Moonshot's Agent overview identifies the February 2026 launch
+    as a public beta. The hosted route includes a cloud runtime and workspace and can connect the bot to
+    external chat channels. Community skills and channel platforms retain their own provenance; their
+    availability does not imply Moonshot authorship or safety endorsement. Kimi also supports linking an
+    existing OpenClaw and documents local desktop deployment. Those routes do not make a user's OpenClaw
+    instance cloud-hosted; this catalog service profile describes the hosted route. The general Kimi
+    assistant, local Kimi Work, Kimi Code and OpenClaw itself have separate identities. Current
+    lifecycle, models, storage, terminal/workspace features, channels, memory, plans and limits must be
+    checked in the applicable route's documentation. The dated beta launch does not prove unrestricted
+    general availability of every later feature or deployment mode.
   references:
     - type: documentation
       source:
@@ -20,6 +32,20 @@ entity:
       source:
         url: https://www.kimi.com/en/help/others/product-comparison
       purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.kimi.com/en/help/kimi-claw/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.kimi.com/en/help/kimi-claw/desktop-deployment-guide
+      purposes:
+        - identification
         - research
       authority: official
   relations:

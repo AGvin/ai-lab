@@ -2,6 +2,15 @@ entity:
   id: catalog/datasets/mlperf-inference
   type: dataset
   name: MLPerf Inference
+  identity_note: >-
+    MLPerf Inference is MLCommons' open, versioned benchmark suite for reproducible measurement of
+    trained-model inference systems. The September 2026 v6.1 release adds Edge Agentic Inference and
+    End-to-End RAG Inference, represented in the relation links as suite members. They do not exhaust
+    its workloads. Reference models, datasets, scenarios, quality targets, metrics, power rules and
+    submission classes are version-sensitive. Results apply to the tested system, workload, scenario and
+    configuration. The benchmark is separate from vendor hardware, runtimes, models and result tables.
+    MLPerf Endpoints is a distinct benchmark direction; its evolving rules do not rename or replace this
+    suite merely because the projects are related.
   references:
     - type: product-page
       source:

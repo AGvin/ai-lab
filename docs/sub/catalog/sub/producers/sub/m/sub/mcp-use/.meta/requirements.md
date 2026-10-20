@@ -6,6 +6,8 @@
 - Retain the official publisher website and maintained code repository as primary sources; external deployment integrations are not automatically another canonical vendor.
 - Preserve exact reciprocal producer relations. Distinguish the open-source TypeScript and Python SDKs from the company's operated Manufact Cloud service and from independently owned client agents, model providers and third-party MCP servers.
 
+- Include the identity and producer-boundary context from canonical `entity.identity_note`; keep detailed product behavior with the related canonical owners.
+
 ## Validation
 
 - All `produces` targets resolve and each software record points back with an exact `produced-by` relation.

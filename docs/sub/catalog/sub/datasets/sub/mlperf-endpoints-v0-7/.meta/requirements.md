@@ -9,6 +9,9 @@
 - Treat scope, eligibility, collection format, supported tests, metrics, normalization rules, public providers, result snapshots and reviewer procedures as version-sensitive.
 - Preserve producer provenance through the canonical MLCommons relation and its inverse `produces`.
 
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
+
 ## Validation
 
 - The suite and published release/version are identifiable, independently useful and source-backed.

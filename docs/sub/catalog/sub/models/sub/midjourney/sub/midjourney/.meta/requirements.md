@@ -8,6 +8,9 @@
 - Keep Niji as a specialized collaborative series rather than silently folding its identity into the general Midjourney version line.
 - Treat current default version and feature compatibility as freshness-sensitive.
 
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
+
 ## Validation
 
 - Midjourney model family remains separate from the hosted product/interface.

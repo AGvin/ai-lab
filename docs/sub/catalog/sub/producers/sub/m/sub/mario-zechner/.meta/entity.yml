@@ -2,6 +2,12 @@ entity:
   id: catalog/producers/m/mario-zechner
   type: individual
   name: Mario Zechner
+  identity_note: >-
+    Mario Zechner (badlogic) is the original/current author and producer of Pi. Current Earendil Works
+    organizational and package stewardship is a separate role. Pi's current package metadata continues
+    to name Mario Zechner as author after the May 7, 2026 move to Earendil Works. Author credit does not
+    make the individual the current package publisher, support counterparty, or sole maintainer;
+    licensing, execution permissions, and migration details belong to Pi.
   aliases:
     - badlogic
   references:
@@ -18,6 +24,13 @@ entity:
         url: https://github.com/badlogic
       purposes:
         - identification
+      authority: official
+    - type: article
+      source:
+        url: https://pi.dev/changelog/2026/5/7/pi-has-a-new-home
+      purposes:
+        - identification
+        - research
       authority: official
   relations:
     - type: produces

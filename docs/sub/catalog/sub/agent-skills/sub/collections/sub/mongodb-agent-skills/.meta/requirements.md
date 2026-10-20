@@ -9,6 +9,9 @@
 - Do not materialize each skill folder, plugin manifest or bundled database feature as a new canonical product.
 - Attribute primary collection maintenance to MongoDB and preserve reciprocal producer links.
 
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
+
 ## Validation
 
 - The collection remains distinct from MongoDB's database/server software, managed Atlas service and MCP integration.

@@ -2,6 +2,14 @@ entity:
   id: catalog/producers/m/mostly-ai-solutions-mp-gmbh
   type: organization
   name: MOSTLY AI Solutions MP GmbH
+  identity_note: >-
+    MOSTLY AI Solutions MP GmbH is the historical company producer behind the MOSTLY AI Data
+    Intelligence Platform. The company account records a 2017 origin in Vienna, and its 2025 releases
+    describe the separate SDK and data-intelligence environment. The July 11, 2025 public handbook
+    establishes the historical company name, not independently verified present corporate status. Syntho
+    announced acquisition of the MOSTLY AI brand on June 9, 2026; that brand transaction does not by
+    itself establish original software authorship, software ownership, or support obligations for
+    earlier deployments. The separately released SDK license does not cover every platform component.
   aliases:
     - MOSTLY AI
   references:
@@ -37,6 +45,13 @@ entity:
         - research
       authority: official
       note: The July 2025 account describes building the MOSTLY AI Assistant and data-intelligence environment before the Syntho brand acquisition.
+    - type: article
+      source:
+        url: https://www.syntho.ai/syntho-acquires-mostly-ai-trademark-and-related-assets/
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/model-and-data-platforms/dataset-curation/mostly-ai-data-intelligence-platform

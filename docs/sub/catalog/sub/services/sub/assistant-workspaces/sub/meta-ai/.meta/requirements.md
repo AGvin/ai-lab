@@ -9,6 +9,8 @@
 - Treat model routing, countries/languages, app/device integrations, memory/personalization, voice/live features, shopping, social grounding, data controls/training, teen/supervision controls and rollout state as freshness-sensitive.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+
 ## Validation
 
 - Meta AI remains a hosted assistant service rather than the Muse or Llama model family.

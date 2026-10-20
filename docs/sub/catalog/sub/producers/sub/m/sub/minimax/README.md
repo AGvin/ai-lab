@@ -1,16 +1,17 @@
 # MiniMax
 
-MiniMax is the canonical producer organization for the represented MiniMax M model family.
+MiniMax is the AI foundation-model company producing the represented MiniMax M model family.
 
 ## Producer boundary
 
-Company identity remains distinct from MiniMax products, hosted API surfaces, and individual model identities.
+The company's model research, consumer applications, and developer API are distinct product surfaces. The producer relation establishes MiniMax M provenance; access terms, weight licenses, capability claims, pricing, and deployment choices must be checked for each particular model or service rather than inherited from the company name.
 
 ## Relations
 
-- Produces: [`catalog/models/minimax/minimax-m`](../../../../../models/sub/minimax/sub/minimax-m/)
+- Produces: [MiniMax M](../../../../../models/sub/minimax/sub/minimax-m/)
 
 ## Official resources
 
-- <https://www.minimax.io/>
-- <https://www.minimax.io/about>
+- [Official website](https://www.minimax.io/)
+- [MiniMax company](https://www.minimax.io/about)
+- [MiniMax M3 release](https://www.minimax.io/blog/minimax-m3)

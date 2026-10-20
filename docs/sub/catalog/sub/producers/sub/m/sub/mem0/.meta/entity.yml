@@ -2,6 +2,12 @@ entity:
   id: catalog/producers/m/mem0
   type: organization
   name: Mem0
+  identity_note: >-
+    Mem0 is the producer identity behind the managed Mem0 Platform and the self-managed Mem0 Open Source
+    memory software. The official documentation separates Mem0-operated storage and infrastructure from
+    software run on the customer's own infrastructure. Shared memory-engine provenance does not make
+    data handling, hosted service terms, support, or model and vector-store dependencies identical
+    across the two operating models.
   references:
     - type: official-site
       source:
@@ -14,6 +20,20 @@ entity:
       source:
         url: https://docs.mem0.ai/
       purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mem0.ai/platform/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mem0.ai/open-source/overview
+      purposes:
+        - identification
         - research
       authority: official
   relations:

@@ -2,6 +2,14 @@ entity:
   id: catalog/models/midjourney/midjourney
   type: model-family
   name: Midjourney
+  identity_note: >-
+    Midjourney is the image-generation model family made available through Midjourney's hosted creative
+    product. Individual releases have distinct behavior and feature compatibility. The current default
+    is mutable; a new default does not erase older model identities. Niji is a specialized series
+    developed with Spellbrush and retains its collaborative identity. Web and Discord interfaces,
+    subscription/GPU accounting, editor routing, personalization, styles and draft controls are product
+    or release-specific features. They are not permanent shared architecture of every family member. The
+    represented member is the catalog's selected model coverage.
   references:
     - type: documentation
       source:

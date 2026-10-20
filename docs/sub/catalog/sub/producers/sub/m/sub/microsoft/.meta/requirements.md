@@ -15,6 +15,8 @@
 - Describe Microsoft concisely as the producer organization for the represented Microsoft model and software entities.
 - Include the official Microsoft website, Microsoft Hugging Face organization, and official Microsoft acquisition record supporting the GitHub ownership fact.
 
+- Include the identity and producer-boundary context from canonical `entity.identity_note`; keep detailed product behavior with the related canonical owners.
+
 ## Validation
 
 - GitHub ownership is not treated as evidence that Microsoft directly produces GitHub-authored catalog products.

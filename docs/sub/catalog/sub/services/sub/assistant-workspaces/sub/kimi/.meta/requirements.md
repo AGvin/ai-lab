@@ -8,6 +8,8 @@
 - Treat current models, Agent/Swarm limits, tool inventory, memory, connected services, scheduled tasks, plans/credits, regional/mobile availability, data handling, and product features as freshness-sensitive.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+
 ## Validation
 
 - Kimi remains a hosted assistant/workspace service rather than a Kimi trained-model identity.

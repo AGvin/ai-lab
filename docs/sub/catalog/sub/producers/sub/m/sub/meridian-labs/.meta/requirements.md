@@ -8,6 +8,8 @@
 - Keep other Meridian evaluation projects separate unless they independently pass catalog intake gates.
 - Treat current project portfolio, organization status, and maintenance responsibilities as freshness-sensitive.
 
+- Include the identity and producer-boundary context from canonical `entity.identity_note`; keep detailed product behavior with the related canonical owners.
+
 ## Validation
 
 - Maintenance relations do not overwrite Anthropic's original production provenance for Petri/Bloom.

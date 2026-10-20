@@ -9,6 +9,9 @@
 - Distinguish benchmark methodology from vendor submissions and performance claims.
 - Preserve MLCommons producer provenance through the canonical relation.
 
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
+
 ## Validation
 
 - The node remains the MLPerf Storage v3.0 benchmark-suite identity rather than a storage product, vector-database product, or KV-cache mechanism.

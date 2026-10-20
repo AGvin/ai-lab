@@ -9,6 +9,9 @@
 - Treat result tables, system submissions, supported scenarios, accuracy thresholds, reference implementations, and component model selections as freshness-sensitive.
 - Preserve MLCommons producer provenance through the canonical relation.
 
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
+
 ## Validation
 
 - The node remains a concrete benchmark identity rather than a generic RAG concept or an implementation recipe.

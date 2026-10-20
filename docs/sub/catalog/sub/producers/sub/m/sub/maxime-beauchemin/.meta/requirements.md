@@ -7,6 +7,8 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current Apache Airflow project-history evidence.
 
+- Include the identity and producer-boundary context from canonical `entity.identity_note`; keep detailed product behavior with the related canonical owners.
+
 ## Validation
 
 - Maxime Beauchemin is not presented as the current Apache governance body or sole maintainer.

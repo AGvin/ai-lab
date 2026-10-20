@@ -9,6 +9,8 @@
 - Keep Syntho's June 2026 brand acquisition separate from original software production and from software ownership.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 
+- Include the identity and producer-boundary context from canonical `entity.identity_note`; keep detailed product behavior with the related canonical owners.
+
 ## Validation
 
 - The `produces` relation is the exact inverse of the platform's `produced-by` relation.

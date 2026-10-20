@@ -8,6 +8,9 @@
 - Treat GPU-time cost, resolution, feature compatibility, editor routing, style/personalization behavior, and current-default status as freshness-sensitive.
 - Attribute subjective aesthetics/quality positioning to Midjourney.
 
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
+
 ## Validation
 
 - The node represents the concrete V8.2 model version, not the Midjourney service.

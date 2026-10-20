@@ -9,7 +9,10 @@
 - Treat Muse Confidential VM, additional payment/login integrations, AI-glasses support, international rollout, plan limits/pricing, supported apps, and other announced future or mutable surfaces as freshness-sensitive; do not present coming-soon features as currently released.
 - Keep underlying Muse Spark model identities with the model catalog; product model routing/version changes belong here only as mutable access context.
 - Keep availability explicitly scoped: initial first-party launch rollout is in the United States on iOS, Android, and web, with broader surfaces/regions subject to current verification.
-- Render producer relation and official resources only during the final render phase.
+- Include producer relations and official resources during scoped reader reconciliation. Repository-wide final rendering and cache/freshness certification remain separate final gates.
+
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
 
 ## Validation
 

@@ -2,6 +2,17 @@ entity:
   id: catalog/services/infrastructure/microsoft-foundry-agent-service
   type: service
   name: Microsoft Foundry Agent Service
+  identity_note: >-
+    Microsoft Foundry Agent Service is Microsoft's generally available managed platform for building,
+    deploying, running and scaling AI agents. The service manages agent runtime, conversations, tool
+    calls, identity, monitoring, versioning and publishing. Prompt agents use service-managed
+    configuration; hosted agents bring application code into a managed runtime. These are service
+    capabilities, separate from the installable Microsoft Agent Framework, Copilot Studio, Entra
+    identity products and the underlying model catalog. Service availability does not make every feature
+    generally available. Tools, protocols, networking, storage, regions, quotas, publishing destinations
+    and runtime options have their own support and preview boundaries. Connected-resource permissions
+    and deployed application behavior still depend on the chosen identity, model, tools and
+    configuration.
   aliases:
     - Azure AI Foundry Agent Service
     - Foundry Agent Service
@@ -16,6 +27,13 @@ entity:
     - type: product-page
       source:
         url: https://azure.microsoft.com/en-us/products/ai-foundry/agent-service
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://azure.microsoft.com/en-us/blog/azure-ai-foundry-your-ai-app-and-agent-factory/
       purposes:
         - identification
         - research

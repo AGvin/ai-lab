@@ -10,6 +10,9 @@
 - Preserve MLCommons producer provenance through the canonical relation.
 - Do not interpret a favorable AILuminate grade as proof that a system is risk-free, clinically safe, unbiased, or safe outside the benchmark's tested hazards, languages, personas, and interaction scope.
 
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
+
 ## Validation
 
 - The node remains the AILuminate benchmark-family identity rather than one vendor system, evaluator, prompt set, or generic safety concept.

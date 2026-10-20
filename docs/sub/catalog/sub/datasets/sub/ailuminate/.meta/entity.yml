@@ -2,6 +2,16 @@ entity:
   id: catalog/datasets/ailuminate
   type: dataset
   name: AILuminate
+  identity_note: >-
+    AILuminate is MLCommons' family of generative-AI safety and security benchmarks, with chatbot safety
+    as an established evaluation surface. Safety v1.1 assesses a fixed system under test, potentially
+    including models, prompts, guardrails, retrieval and other workflow components. Its documented scope
+    is single-turn content hazards in English and French. A configuration change can create a different
+    tested system; scores do not automatically describe the underlying base model. Public practice tests
+    and protected official tests have different access, evaluator and publication conditions. Grades are
+    relative measurements within the tested hazards, languages, personas and interaction scope. They do
+    not prove that a system is risk-free, unbiased, clinically safe or reliable in sustained
+    interactions. Other AILuminate variants retain their own release and scope boundaries.
   references:
     - type: product-page
       source:

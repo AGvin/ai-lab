@@ -9,6 +9,8 @@
 - Treat exact model choices, plans/licenses, Cowork/agent availability, application integrations, regional availability, UI/navigation, data controls, retention/training rules, discontinued features, and mobile/desktop behavior as freshness-sensitive.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+
 ## Validation
 
 - Microsoft Copilot remains a hosted assistant/workspace service rather than a trained model or Copilot Studio agent-building platform.

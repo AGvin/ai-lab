@@ -9,6 +9,9 @@
 - Do not infer universal phone-performance rankings from isolated vendor scores or measured CPU-only paths.
 - Preserve producer provenance through the canonical MLCommons relation and its inverse `produces`.
 
+- Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
+- Render the standard `entity-relations` block from the validated current-entity relation projection.
+
 ## Validation
 
 - The suite and published release/version are identifiable, independently useful and source-backed.

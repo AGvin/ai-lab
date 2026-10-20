@@ -2,6 +2,21 @@ entity:
   id: catalog/producers/m/microsoft
   type: organization
   name: Microsoft
+  identity_note: >-
+    Microsoft is the technology company that publishes Phi models, developer and model-runtime software,
+    agent frameworks and skills, and operates Microsoft Copilot and Azure/Microsoft Foundry services. It
+    also develops Maia accelerators and owns GitHub. Corporate ownership and product authorship are
+    different relationships: GitHub remains a separately identified producer, and hosting partner models
+    in Foundry does not make Microsoft their author. Microsoft-origin DeepSpeed was contributed to
+    foundation governance; the producer relation preserves its origin without asserting exclusive
+    current control. Installable frameworks, runtimes, testing tools, and skills retain their own
+    repositories, licenses, security reporting and maintenance policies; Code - OSS's MIT license
+    differs from the Microsoft Visual Studio Code distribution license. Copilot's personal and
+    work/school experiences have different account and data controls. Foundry model support, terms and
+    deployment responsibilities depend on the model and hosting route. Agent Framework, Foundry Agent
+    Service, Copilot Studio, Entra Agent ID, Agent 365, and Windows 365 for Agents remain separate
+    products; their names do not confer a shared release status, entitlement or permission to use
+    connected resources.
   references:
     - type: official-site
       source:
@@ -23,6 +38,69 @@ entity:
         - research
       authority: official
       note: Official Microsoft annual report documenting the acquisition of GitHub, Inc.
+    - type: official-site
+      source:
+        url: https://www.microsoft.com/en-us/about
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://blogs.microsoft.com/blog/2018/10/26/microsoft-completes-github-acquisition/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://pytorch.org/projects/deepspeed/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/agent-framework/overview/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://support.microsoft.com/en-us/microsoft-365-copilot/what-is-microsoft-copilot-app
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://code.visualstudio.com/docs/supporting/faq
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/azure/foundry/agents/overview
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/microsoft/phi

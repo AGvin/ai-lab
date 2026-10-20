@@ -1,8 +1,12 @@
 # Mistral AI
 
-Mistral AI is the producer organization for the documented Mistral models, software, and services.
+Mistral AI develops model families and publishes developer software and hosted services, including Mistral Studio, Vibe, and the direct Mistral API. Its commercial terms identify the French Mistral AI corporation or the affiliate specified in an order form.
 
-## Related
+## Producer boundary
+
+Model releases, API access, Studio's developer platform, and Vibe's productivity/coding agent are separate identities. Licenses vary by exact artifact: the official catalog includes Apache 2.0, modified MIT, noncommercial and commercial offerings. Devstral's original release was developed with All Hands AI; that provenance does not establish that every later release or integration has identical authorship or licensing. Third-party models made available through Mistral retain their upstream producer. Direct Mistral hosting, partner-served deployments and customer infrastructure have different contractual and operational responsibilities. Review the current model card, deployment terms, service data controls and agent permissions for the actual route; a producer relation does not guarantee model availability, support or safe autonomous execution.
+
+## Relations
 
 - Produces: [Codestral](../../../../../models/sub/mistral-ai/sub/codestral/)
 - Produces: [Devstral](../../../../../models/sub/mistral-ai/sub/devstral/)
@@ -31,3 +35,11 @@ Mistral AI is the producer organization for the documented Mistral models, softw
 - [Mistral AI](https://mistral.ai/)
 - [Mistral documentation](https://docs.mistral.ai/)
 - [Mistral AI on Hugging Face](https://huggingface.co/mistralai)
+- [Mistral model catalog](https://docs.mistral.ai/models)
+- [Commercial terms and contracting scope](https://legal.mistral.ai/terms/commercial-terms-of-service/)
+- [Open model licensing](https://help.mistral.ai/en/articles/347393-under-which-license-are-mistral-s-open-models-available)
+- [Original Devstral collaboration](https://mistral.ai/news/devstral/)
+- [Devstral 2 and Vibe CLI release](https://mistral.ai/news/devstral-2-vibe-cli/)
+- [Robostral provenance](https://mistral.ai/news/robostral-navigate/)
+- [Studio documentation](https://docs.mistral.ai/studio)
+- [Vibe documentation](https://docs.mistral.ai/vibe)

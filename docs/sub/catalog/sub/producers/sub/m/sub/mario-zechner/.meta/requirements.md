@@ -7,6 +7,8 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current upstream Pi package-author metadata and first-party identity references.
 
+- Include the identity and producer-boundary context from canonical `entity.identity_note`; keep detailed product behavior with the related canonical owners.
+
 ## Validation
 
 - Mario Zechner is not presented as a substitute for the current Earendil organizational stewardship layer.

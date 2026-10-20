@@ -2,6 +2,15 @@ entity:
   id: catalog/producers/m/midjourney
   type: organization
   name: Midjourney
+  identity_note: >-
+    Midjourney is the independent, community-funded research lab that develops the Midjourney
+    image-generation models and operates their hosted creative product. The organization, model family,
+    and web/Discord product surfaces have separate identities. Niji is a specialized series developed
+    with Spellbrush, so the Midjourney producer relationship does not imply sole authorship of every
+    collaborative model. Version behavior, availability, subscription/GPU accounting, personalization
+    and output-use terms belong to the applicable model or service release. Access to the hosted product
+    does not itself establish downloadable weights, an open-source model license, or unrestricted rights
+    to every input or output.
   references:
     - type: official-site
       source:
@@ -12,6 +21,27 @@ entity:
       source:
         url: https://docs.midjourney.com/
       purposes: [research]
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.midjourney.com/home
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.midjourney.com/hc/en-us
+      purposes:
+        - identification
+        - research
       authority: official
   relations:
     - type: produces
