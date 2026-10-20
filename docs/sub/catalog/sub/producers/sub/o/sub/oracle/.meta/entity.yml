@@ -12,6 +12,25 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://www.oracle.com/applications/dawn-of-ai-enterprise-agent-workforce/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.oracle.com/en/cloud/saas/readiness/common/25c/common25c/25C-common-wn-f38824.htm
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://blogs.oracle.com/fusioninsider/new-oracle-ai-agent-studio-for-fusion-apps
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/services/infrastructure/oracle-ai-agent-studio-for-fusion-applications
+  identity_note: "Oracle is the producer umbrella for the represented Fusion Applications agent studio; the applicable Oracle contracting entity, Fusion application, OCI infrastructure, marketplace content, and configured model providers remain distinct."

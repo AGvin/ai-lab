@@ -16,6 +16,19 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://openrlhf.readthedocs.io/
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/OpenRLHF/OpenRLHF/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/model-and-data-platforms/model-development/openrlhf
+  identity_note: "OpenRLHF Project is the upstream project/GitHub organization publishing the OpenRLHF training framework; contributor employers and sponsors do not establish a separate corporate producer or rights to trained models and data."

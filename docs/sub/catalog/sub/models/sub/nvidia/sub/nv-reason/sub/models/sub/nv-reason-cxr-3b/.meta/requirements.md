@@ -7,6 +7,11 @@
 - Attribute clinical-study and benchmark claims to NVIDIA/current cited research and do not convert them into AI Lab medical-performance endorsements.
 - Keep the model explicitly research/development-oriented and distinct from an autonomous or cleared diagnostic system.
 
+## Reader projection
+
+- Render the standard `entity-relations` block from all validated current-entity relations eligible for reader presentation.
+- Render the `official-resources` block from canonical references supporting the identity, versioned facts, access context, and stated boundaries of this page.
+
 ## Validation
 
 - NV-Reason-CXR-3B is a concrete member of NV-Reason and remains distinct from NV-Reason-CT.

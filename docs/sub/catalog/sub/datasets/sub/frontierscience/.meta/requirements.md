@@ -9,6 +9,11 @@
 - Preserve OpenAI producer provenance through the canonical relation.
 - Do not generalize performance on constrained benchmark problems into a claim that a model can independently perform complete scientific research.
 
+- The published full evaluation has more than 700 questions; the public gold release contains 100 Olympiad and 60 Research questions, with the remainder held out for contamination tracking. Preserve these release boundaries when stating counts.
+- Explain short-answer grading for Olympiad and the Research 10-point rubric with a published 7/10 correctness threshold as release-specific methods; distinguish expert task authorship from model-based response grading.
+- Render the complete visible current-node relation set through the standard `entity-relations` component as a provenance block; preserve relation semantics and canonical target identities.
+- Render an `official-resources` block with this explicit selection from canonical references: [FrontierScience release, gold sets, and grading method](https://openai.com/index/frontierscience/).
+
 ## Validation
 
 - FrontierScience remains a concrete benchmark/dataset identity rather than a generic scientific-reasoning concept.

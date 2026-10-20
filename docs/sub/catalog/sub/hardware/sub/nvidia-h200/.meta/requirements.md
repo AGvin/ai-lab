@@ -8,6 +8,7 @@
 - Treat pricing, deployment region, drivers, CUDA/TensorRT-LLM, virtual GPU/MIG support, NVLink arrangement, thermal design and inference performance as mutable source- and platform-scoped statements.
 - Scope marketing throughput improvements to the workload, batch size, GPU count, precision, input/output tokens, cache state, software version and benchmark configuration. Do not assume a claimed model speedup is universal.
 - Maintain NVIDIA first-party product references and the exact reciprocal producer relation.
+- Present a concise Official Resources block using the applicable official product-page, documentation and release-note references of this entity.
 
 ## Validation
 

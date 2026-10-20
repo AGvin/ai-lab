@@ -17,6 +17,26 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://opennmt.net/index.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/OpenNMT/CTranslate2
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/OpenNMT/CTranslate2/blob/master/LICENSE
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/inference-runtimes/inference-engines/ctranslate2
+  identity_note: "OpenNMT is an open-source project ecosystem initiated by Harvard NLP and SYSTRAN and currently supported by SYSTRAN and Ubiqus; project stewardship is separate from corporate identity, runtime rights, and model ownership."

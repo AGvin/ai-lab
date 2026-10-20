@@ -16,6 +16,55 @@ entity:
       purposes:
         - research
       authority: official
+    - type: other
+      source:
+        url: https://www.nvidia.com/en-in/drivers/legalfo/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://opensource.nvidia.com/llm-info/
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.nvidia.com/en-us/agreements/
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/llm-d/llm-d
+      purposes:
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.cncf.io/projects/llm-d/
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://developer.nvidia.com/blog/author/alexwatson/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/brev/getting-started/overview
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/nvidia/nemotron
@@ -117,3 +166,4 @@ entity:
       target: catalog/software/model-and-data-platforms/model-development/megatron-core
     - type: produces
       target: catalog/software/model-and-data-platforms/model-development/megatron-bridge
+  identity_note: "NVIDIA is the corporate producer umbrella for represented hardware, software, models, services, skills, and research artifacts; joint project governance, acquired lineage, licensed technology, product licenses, and service operators remain distinct."

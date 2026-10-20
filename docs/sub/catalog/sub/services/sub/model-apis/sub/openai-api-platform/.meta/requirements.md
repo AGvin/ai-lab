@@ -13,6 +13,11 @@
 - Treat the **2026-10-07 `chat-latest` alias refresh** as a mutable service routing/snapshot update, not a new concrete trained-model identity; resolve the active snapshot before making version-specific claims.
 - Use the official API changelog at https://developers.openai.com/api/docs/changelog as dated primary evidence for these October 2026 changes.
 
+## Reader projection
+
+- Render the standard `entity-relations` block from all validated current-entity relations eligible for reader presentation.
+- Render the `official-resources` block from canonical references supporting the identity, versioned facts, access context, and stated boundaries of this page.
+
 ## Validation
 
 - OpenAI API Platform remains a hosted model/developer API service rather than a trained-model family or ChatGPT.

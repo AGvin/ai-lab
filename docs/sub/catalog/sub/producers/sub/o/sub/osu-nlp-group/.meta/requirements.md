@@ -11,3 +11,11 @@
 
 - Official first-party repositories under `OSU-NLP-Group` document original Mind2Web, Online-Mind2Web and Mind2Web 2 as independently published protocols.
 - All three `produces` relation targets have a matching dataset `produced-by` link and current source-backed requirements.
+
+## Producer decision boundaries
+
+- Preserve cross-institution authorship separately from the first-party publishing namespace and from the university legal identity.
+- Keep dataset-specific licenses, evaluation protocols, credentials, and live-site permissions with the corresponding research artifact and execution context.
+- Render the official-resources block from canonical references supporting the producer identity and stated boundaries.
+
+These boundaries are grounded in the first-party references recorded in the current entity. Detailed product behavior remains with each related artifact.

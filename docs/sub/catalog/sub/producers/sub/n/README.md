@@ -4,7 +4,7 @@
 - [Nango](./sub/nango/)
 - [NASA](./sub/nasa/)
 - [NAVER Cloud](./sub/naver-cloud/)
-- Neon
+- [Neon](./sub/neon/)
 - [Netflix, Inc.](./sub/netflix-inc/)
 - [Newton Project](./sub/newton-project/)
 - [Nous Research](./sub/nous-research/)

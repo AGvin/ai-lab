@@ -8,6 +8,7 @@
 - Treat the announced 64GB configuration as a configuration/SKU of DGX Spark rather than a separate product identity; preserve its October 23, 2026 availability boundary and do not imply current availability before that date.
 - Attribute model-size/performance claims to NVIDIA and preserve model/runtime/precision conditions where cited.
 - Render the standard `entity-relations` block from validated current-entity relations.
+- Present a concise Official Resources block using the applicable official product-page, documentation and release-note references of this entity.
 
 ## Validation
 

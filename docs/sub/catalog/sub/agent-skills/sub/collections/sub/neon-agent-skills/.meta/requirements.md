@@ -9,6 +9,11 @@
 - Installing a skill does not establish an authenticated database connection or authorize credentials/deployment operations; preserve tool permission and runtime validation boundaries.
 - Preserve source-backed first-party producer provenance with a reciprocal `produces` relation.
 
+## Reader projection
+
+- Render the standard `entity-relations` block from all validated current-entity relations eligible for reader presentation.
+- Render the `official-resources` block from canonical references supporting the identity, versioned facts, access context, and stated boundaries of this page.
+
 ## Validation
 
 - The collection is independently maintained as a public upstream skill distribution.

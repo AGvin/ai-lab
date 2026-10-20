@@ -16,6 +16,14 @@ entity:
       purposes:
         - research
       authority: official
+    - type: other
+      source:
+        url: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Vision-Instruct-3B/blob/main/LICENSE
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/naver-cloud/hyperclova-x-seed
+  identity_note: "NAVER Cloud is the represented HyperCLOVA X producer/business operator; the SEED model license separately identifies NAVER Corporation as model IP holder and NAVER Cloud Corporation as its business operator."

@@ -7,6 +7,7 @@
 - Keep developer-kit carrier board/storage/I/O facts separate from production Jetson Orin Nano modules and from Jetson T4000/T5000 Thor modules.
 - Treat current AI TOPS, memory bandwidth, CPU clocks, power modes, JetPack/Jetson Linux release support, CUDA/TensorRT/cuDNN versions, storage/install method, camera/video support, frameworks, and lifecycle as freshness-sensitive.
 - Treat generative-AI benchmark graphs and model performance as NVIDIA-provided configuration-specific evidence rather than universal model/device throughput.
+- Present a concise Official Resources block using the applicable official product-page, documentation and release-note references of this entity.
 
 ## Validation
 

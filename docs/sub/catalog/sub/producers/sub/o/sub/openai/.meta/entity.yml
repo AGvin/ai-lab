@@ -41,6 +41,37 @@ entity:
       purposes:
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://openai.com/our-structure/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://openai.com/policies/services-agreement/
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://openai.com/policies/eu-terms-of-use/
+      purposes:
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.promptfoo.dev/about/
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://openai.com/index/openai-broadcom-jalapeno-inference-chip/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/openai/gpt
@@ -124,4 +155,4 @@ entity:
       target: catalog/models/openai/gpt-4o-mini-transcribe
     - type: produces
       target: catalog/models/openai/gpt-4o-transcribe-diarize
-  identity_note: Producer organization; its model provenance is separate from the access, hosting, and lifecycle of each product or model.
+  identity_note: "OpenAI is the represented producer umbrella; the OpenAI Foundation controls OpenAI Group PBC, while product contracting entities, acquired organizations, model provenance, licenses, access, and lifecycle remain separate."

@@ -10,6 +10,9 @@
 - Preserve OpenAI producer provenance through the canonical relation.
 - Do not generalize benchmark performance into a claim that an AI system is a substitute for professional mental-health care or is clinically validated outside the benchmark's stated evaluation scope.
 
+- Render the complete visible current-node relation set through the standard `entity-relations` component as a provenance block; preserve relation semantics and canonical target identities.
+- Render an `official-resources` block with this explicit selection from canonical references: [MentalHealthBench release and expert rubric methodology](https://openai.com/index/introducing-mentalhealthbench/).
+
 ## Validation
 
 - MentalHealthBench remains a concrete released benchmark/dataset identity rather than a generic mental-health safety concept.

@@ -7,6 +7,7 @@
 - Preserve module-level GPU/CPU, memory, power-envelope, AI-performance, I/O, lifecycle, and form-factor facts only at the exact T4000 scope.
 - Treat JetPack/Jetson Linux support, CUDA/TensorRT/cuDNN versions, runtime optimizations, camera/video support, SDK compatibility, regional SKUs, availability, pricing, and benchmarks as freshness-sensitive.
 - Attribute NVIDIA efficiency/performance comparisons to NVIDIA and preserve the exact software/power/workload conditions.
+- Present a concise Official Resources block using the applicable official product-page, documentation and release-note references of this entity.
 
 ## Validation
 

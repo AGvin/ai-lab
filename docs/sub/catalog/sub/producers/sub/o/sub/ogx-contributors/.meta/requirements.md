@@ -10,3 +10,11 @@
 
 - Official OGX README, April 2026 rename announcement, `pyproject.toml` and MIT LICENSE support publisher and product-continuity attribution.
 - Producer and software relation endpoints match exactly.
+
+## Producer decision boundaries
+
+- Treat the manifest/license author as a project collective, without inferring incorporated status from the organization-type taxonomy.
+- Keep renamed project lineage distinct from third-party provider ownership and from the operator of each deployed gateway.
+- Render the official-resources block from canonical references supporting the producer identity and stated boundaries.
+
+These boundaries are grounded in the first-party references recorded in the current entity. Detailed product behavior remains with each related artifact.

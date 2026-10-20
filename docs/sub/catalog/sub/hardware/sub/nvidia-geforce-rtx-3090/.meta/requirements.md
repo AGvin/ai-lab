@@ -8,6 +8,7 @@
 - Keep current CUDA, kernel/runtime compatibility, driver lifecycle, power, cooling, used-market condition, NVLink configuration, host-slot requirements, availability and prices freshness-sensitive.
 - Distinguish peak/vendor marketing throughput from measured model inference or fine-tuning performance; condition comparisons on precision/quantization, model, runtime, batching, context size, hardware/host configuration and power envelope.
 - Preserve the NVIDIA producer relation and matching inverse `produces` link.
+- Present a concise Official Resources block using the applicable official product-page, documentation and release-note references of this entity.
 
 ## Validation
 

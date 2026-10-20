@@ -7,3 +7,11 @@
 
 ## Validation
 - `produces` includes the inverse of the Lunar Foundation Model `produced-by` relation.
+
+## Producer decision boundaries
+
+- Preserve the jointly documented NASA, IBM Research, and academic provenance without inferring exclusive legal ownership.
+- Keep research availability distinct from mission-operational validation, and leave source data and model-use conditions with their artifact profiles.
+- Render the official-resources block from canonical references supporting the producer identity and stated boundaries.
+
+These boundaries are grounded in the first-party references recorded in the current entity. Detailed product behavior remains with each related artifact.

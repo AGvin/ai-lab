@@ -19,6 +19,25 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://spec.openapis.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/OAI/Arazzo-Specification
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/OAI/Overlay-Specification
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/specifications/schemas/openapi-specification
@@ -26,3 +45,4 @@ entity:
       target: catalog/specifications/schemas/arazzo-specification
     - type: produces
       target: catalog/specifications/schemas/overlay-specification
+  identity_note: "The OpenAPI Initiative is the Linux Foundation-hosted standards project behind the separately published OpenAPI, Arazzo, and Overlay specifications; governance, editors, implementations, and API operators remain distinct."

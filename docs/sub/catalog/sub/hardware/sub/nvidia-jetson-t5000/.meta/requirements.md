@@ -8,6 +8,7 @@
 - Treat JetPack/Jetson Linux support, CUDA/TensorRT/cuDNN versions, camera/video support, SDK compatibility, regional SKUs, availability, pricing, and benchmark results as freshness-sensitive deployment facts.
 - Do not transfer developer-kit storage, carrier-board I/O, peripherals, or dGPU assumptions to the production module.
 - Attribute NVIDIA performance/efficiency comparisons to NVIDIA and preserve the compared generation/power/software configuration.
+- Present a concise Official Resources block using the applicable official product-page, documentation and release-note references of this entity.
 
 ## Validation
 

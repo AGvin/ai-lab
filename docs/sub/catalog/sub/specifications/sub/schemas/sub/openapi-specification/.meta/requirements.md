@@ -11,6 +11,11 @@
 - Treat code generation, linting, API import, AI agent action support, SDK/plugin compatibility and provider-specific limitations as implementation facts rather than standard conformance guarantees.
 - Preserve OpenAPI Initiative provenance with reciprocal relation.
 
+## Reader projection
+
+- Render the standard `entity-relations` block from all validated current-entity relations eligible for reader presentation.
+- Render the `official-resources` block from canonical references supporting the identity, versioned facts, access context, and stated boundaries of this page.
+
 ## Validation
 
 - Latest-version label and authoritative HTML correspond to an actually published normative version, not an editor preview.

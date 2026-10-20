@@ -9,6 +9,11 @@
 - Attribute specification governance to OpenAPI Initiative with a reciprocal `produced-by` / `produces` relation.
 - Avoid implying all API clients, generators or validators implement every published overlay feature; keep product support with implementation owners.
 
+## Reader projection
+
+- Render the standard `entity-relations` block from all validated current-entity relations eligible for reader presentation.
+- Render the `official-resources` block from canonical references supporting the identity, versioned facts, access context, and stated boundaries of this page.
+
 ## Validation
 
 - Normative behavior and version labels correspond to the official released Overlay specification.

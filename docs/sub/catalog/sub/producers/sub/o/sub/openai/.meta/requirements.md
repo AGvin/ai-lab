@@ -13,7 +13,7 @@
 ## Content Specification
 
 - Use `OpenAI` as the page title.
-- Describe OpenAI concisely as the producer organization for the represented model, Agent Skill, assistant-workspace, coding-agent, and framework entities.
+- Describe OpenAI concisely as the producer organization for the represented model, service, software, Agent Skill, specification, research, and hardware entities.
 - Preserve the OpenAI model-domain view under `catalog/models/openai/` as navigation.
 - Keep Promptfoo product provenance on the Promptfoo Inc. producer profile.
 - Include the official website and GitHub organization.
@@ -29,7 +29,7 @@
 
 ## Source-scoped operating boundaries
 
-- Provenance does not imply one deployment or access policy. OpenAI publishes both hosted models and downloadable open weights; the latter are not served through its API or ChatGPT [Open-weight FAQ](https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss).
+- Provenance does not imply one deployment or access policy. OpenAI publishes hosted models and downloadable open weights. The documented gpt-oss weights are not served through its API or ChatGPT [Open-weight FAQ](https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss).
 - Lifecycle notices apply to the exact service and identifiers they name. Deprecation does not itself mean immediate shutdown [API deprecations](https://developers.openai.com/api/docs/deprecations).
 
 ## Source evidence
@@ -39,3 +39,13 @@
 - [Open-weight FAQ](https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss).
 - [gpt-oss-safeguard release](https://openai.com/index/introducing-gpt-oss-safeguard/).
 - [API deprecations](https://developers.openai.com/api/docs/deprecations).
+
+## Producer decision boundaries
+
+- Distinguish Foundation control, Group PBC, service contracting entities, and independently retained producer identities in the corporate structure.
+- Cover the full represented artifact scope, including research datasets, specifications, and hardware, without duplicating artifact capabilities or canonical relation membership.
+- Preserve collaborator and hardware implementation/manufacturing roles rather than inferring exclusive production from the umbrella name.
+- Keep artifact licenses, hosted-service conditions, open-weight deployments, and exact lifecycle notices at their own scopes.
+- Render the official-resources block from canonical references supporting the producer identity and stated boundaries.
+
+These boundaries are grounded in the first-party references recorded in the current entity. Detailed product behavior remains with each related artifact.

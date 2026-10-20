@@ -20,6 +20,18 @@ entity:
         - identification
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/OSU-NLP-Group/Online-Mind2Web
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/OSU-NLP-Group/Mind2Web-2
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/datasets/mind2web
@@ -27,3 +39,4 @@ entity:
       target: catalog/datasets/online-mind2web
     - type: produces
       target: catalog/datasets/mind2web-2
+  identity_note: "Ohio State NLP Group is the first-party research publishing team for the represented Mind2Web projects; university identity, cross-institution authorship, dataset protocols, and live-service permissions remain separate."

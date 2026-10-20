@@ -8,6 +8,7 @@
 - Preserve NVIDIA's published fourth-generation Tensor Core, FP8 theoretical sparsity, hardware AV1 encode/decode and media execution boundaries; do not extrapolate vendor-reported AI-video pipeline multipliers into universal LLM speedups or mixed workload power savings.
 - Keep effective quantized model fit, host CPU/network overhead, memory bandwidth bottlenecks, batch throughput, virtualization, driver/runtime compatibility, regional instance availability, price and support as mutable evidence-dependent deployment properties.
 - Preserve NVIDIA source attribution and an exact reciprocal producer relation.
+- Present a concise Official Resources block using the applicable official product-page, documentation and release-note references of this entity.
 
 ## Validation
 

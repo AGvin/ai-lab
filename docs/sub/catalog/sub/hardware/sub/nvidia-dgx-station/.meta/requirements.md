@@ -8,6 +8,7 @@
 - Treat coherent-memory capacity, compute figures, networking, local model-scale guidance, supported OS/software stack, OEM configurations, availability, price, power, storage, optional RTX Pro GPU configurations, and multi-system scaling as freshness-sensitive.
 - Attribute performance/model-capacity claims to NVIDIA and preserve model, precision, sparsity, and system-configuration conditions.
 - Render the standard `entity-relations` block from validated current-entity relations.
+- Present a concise Official Resources block using the applicable official product-page, documentation and release-note references of this entity.
 
 ## Validation
 

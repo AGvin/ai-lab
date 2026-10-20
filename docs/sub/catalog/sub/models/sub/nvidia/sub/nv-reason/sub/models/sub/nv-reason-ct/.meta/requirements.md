@@ -8,6 +8,11 @@
 - Attribute CT-RATE and clinical-plausibility comparisons to NVIDIA/current cited research rather than treating them as independent AI Lab medical-performance conclusions.
 - Treat checkpoints, license/terms, supported formats, preprocessing, runtime requirements, and benchmark values as freshness-sensitive.
 
+## Reader projection
+
+- Render the standard `entity-relations` block from all validated current-entity relations eligible for reader presentation.
+- Render the `official-resources` block from canonical references supporting the identity, versioned facts, access context, and stated boundaries of this page.
+
 ## Validation
 
 - NV-Reason-CT remains a concrete member of NV-Reason and distinct from NV-Reason-CXR-3B.

@@ -8,6 +8,7 @@
 - Distinguish RTX A6000's Ampere tensor precision capabilities from Ada/Blackwell FP8 or other newer generation tensor formats and from NVIDIA A100/H100/H200 datacenter accelerators with HBM memory; do not reuse mismatched architecture benchmark results.
 - Keep lifecycle, resale availability, driver/CUDA framework compatibility, virtualization licensing, thermals, pricing and model throughput as mutable facts requiring versioned sources; do not imply that current official product documentation guarantees indefinite new-product sales.
 - Attribute original physical GPU product and exact form-factor specification to NVIDIA and preserve reciprocal producer relations.
+- Present a concise Official Resources block using the applicable official product-page, documentation and release-note references of this entity.
 
 ## Validation
 

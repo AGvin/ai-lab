@@ -1,10 +1,12 @@
 # Nango
 
-Nango publishes the [Nango integration platform](../../../../../software/sub/automation/sub/integration-automation/sub/nango/) for authenticated connections to external applications and APIs, including source-available and managed deployment modes.
+Nango is the organization and product brand behind its integration platform. Its published service terms identify Nango Inc. as the contracting company. [Terms](https://nango.dev/terms).
 
-## Publisher boundary
+## Scope and operating boundaries
 
-Nango develops the platform primitives for credential handling, integration functions and sync workflows. Third-party API providers, connected agents and external services remain independent identities. Commercial/cloud services and source-available editions may have different features, licensing and support terms.
+Deployment location does not alone identify the operator: Nango documents both deployments it operates in a customer cloud account and deployments managed by the customer. Connected applications and their APIs remain independently operated services. [Self-hosting documentation](https://nango.dev/docs/guides/platform/self-hosting/self-hosting).
+
+The platform repository uses the Elastic License 2.0. Source availability does not establish unrestricted managed-service rights, and enterprise access is a separate commercial question. [License](https://github.com/NangoHQ/nango/blob/master/LICENSE).
 
 ## Relations
 
@@ -12,5 +14,8 @@ Nango develops the platform primitives for credential handling, integration func
 
 ## Official resources
 
-- [Website](https://nango.dev/)
-- [Repository](https://github.com/NangoHQ/nango)
+- [Official website](https://nango.dev/)
+- [Upstream repository reference](https://github.com/NangoHQ/nango)
+- [Terms](https://nango.dev/terms)
+- [Self-hosting documentation](https://nango.dev/docs/guides/platform/self-hosting/self-hosting)
+- [Repository license](https://github.com/NangoHQ/nango/blob/master/LICENSE)

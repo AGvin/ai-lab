@@ -8,6 +8,7 @@
 - Preserve pricing/availability, instance access, vGPU/virtualization support, driver/CUDA framework compatibility and model-specific throughput as mutable release/environment facts.
 - Do not extrapolate FP8 Tensor Core theoretical sparsity numbers to actual throughput across quantizations, batching, runtimes, multimodal and graphics workloads.
 - Keep NVIDIA producer provenance reciprocal without representing CUDA/TensorRT/runtime stacks as part of the physical hardware entity.
+- Present a concise Official Resources block using the applicable official product-page, documentation and release-note references of this entity.
 
 ## Validation
 

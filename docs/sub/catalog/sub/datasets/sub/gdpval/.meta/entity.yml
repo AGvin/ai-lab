@@ -16,6 +16,20 @@ entity:
       purposes:
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://huggingface.co/datasets/openai/gdpval
+      purposes:
+        - research
+      authority: official
+      note: "OpenAI distribution of the public GDPval subset."
+    - type: documentation
+      source:
+        url: https://evals.openai.com/gdpval/leaderboard?curius=2011
+      purposes:
+        - research
+      authority: official
+      note: "The official search-retrieved notice reports the hosted leaderboard is no longer active; direct text retrieval is JavaScript-only."
   relations:
     - type: produced-by
       target: catalog/producers/o/openai

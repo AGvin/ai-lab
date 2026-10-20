@@ -17,6 +17,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: release-notes
+      source:
+        url: https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/n/nvidia

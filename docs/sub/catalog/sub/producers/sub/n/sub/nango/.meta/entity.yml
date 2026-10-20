@@ -17,6 +17,26 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://nango.dev/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://nango.dev/docs/guides/platform/self-hosting/self-hosting
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/NangoHQ/nango/blob/master/LICENSE
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/automation/integration-automation/nango
+  identity_note: "Nango is the product organization/brand whose published terms identify Nango Inc.; hosted, Nango-operated BYOC, and customer-operated deployments have distinct operational and license boundaries."

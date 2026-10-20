@@ -10,3 +10,11 @@
 
 - Each of the three independent published specification identities (OAS, Arazzo, Overlay) has an exact reciprocal `produces` / `produced-by` relation.
 - The organization is not confused with OpenAI or any similarly abbreviated AI provider.
+
+## Producer decision boundaries
+
+- Preserve Linux Foundation hosting separately from standards governance, authorship, and implementation ownership.
+- Do not treat standards publication or conformance claims as service authorization, implementation certification, or a security guarantee.
+- Render the official-resources block from canonical references supporting the producer identity and stated boundaries.
+
+These boundaries are grounded in the first-party references recorded in the current entity. Detailed product behavior remains with each related artifact.

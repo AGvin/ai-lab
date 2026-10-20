@@ -10,6 +10,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/web-arena-x/webarena
+      purposes:
+        - research
+      authority: upstream
+      note: "Comparison source for WebArena's self-hosted resettable evaluation, not Online-Mind2Web ownership."
   relations:
     - type: produced-by
       target: catalog/producers/o/osu-nlp-group

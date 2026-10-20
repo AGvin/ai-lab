@@ -9,6 +9,11 @@
 - Attribute publication/governance to the OpenAPI Initiative with a reciprocal `produced-by` / `produces` relation.
 - Treat compatible tooling, workflow runners, validators, SDK support, and provider-specific behavior as independently mutable implementation facts.
 
+## Reader projection
+
+- Render the standard `entity-relations` block from all validated current-entity relations eligible for reader presentation.
+- Render the `official-resources` block from canonical references supporting the identity, versioned facts, access context, and stated boundaries of this page.
+
 ## Validation
 
 - The referenced version is a released official Arazzo specification, not a draft or implementation example.

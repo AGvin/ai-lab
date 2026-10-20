@@ -10,6 +10,11 @@
 - Attribute speed/cost/quality comparisons to the exact OpenAI evaluation setup and model revisions.
 - Preserve OpenAI producer provenance.
 
+- The first release distinguishes 1,320 full-set tasks from the 220-task public gold subset across 44 occupations and nine sectors. Treat the OpenAI Hugging Face distribution as the public subset, not the full private evaluation.
+- Ground the hosted-leaderboard retirement statement in the official search-retrieved status notice. Direct text retrieval of that page exposes no body; do not represent it as a directly inspected rendered page, and do not promise an active hosted grading service from the guidance link.
+- Render the complete visible current-node relation set through the standard `entity-relations` component as a provenance block; preserve relation semantics and canonical target identities.
+- Render an `official-resources` block with this explicit selection from canonical references: [GDPval release and methodology](https://openai.com/index/gdpval/); [OpenAI GDPval public dataset](https://huggingface.co/datasets/openai/gdpval); [GDPval grading guidance](https://evals.openai.com/gdpval/grading); [OpenAI-hosted leaderboard status](https://evals.openai.com/gdpval/leaderboard?curius=2011).
+
 ## Validation
 
 - GDPval remains a concrete benchmark/dataset identity rather than a broad economic-impact concept.

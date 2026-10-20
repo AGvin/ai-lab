@@ -29,6 +29,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/newton-physics/newton-governance/blob/main/CONTRIBUTING.md
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/physical-ai-and-robotics/newton
+  identity_note: "Newton Project is a Linux Foundation community project, initiated by Disney Research, Google DeepMind, and NVIDIA; its TSC and maintainers have documented roles distinct from foundation hosting and company affiliations."

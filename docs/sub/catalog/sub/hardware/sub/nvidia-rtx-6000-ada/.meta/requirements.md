@@ -8,6 +8,7 @@
 - Do not equate 48 GB physical VRAM with usable model weight capacity independent of runtime, quantization, KV cache, context length, scratch memory and concurrent workloads.
 - Attribute speed and energy comparisons to exact model/hardware/precision/runtime/host setup; peak vendor figures and unrelated rendering benchmarks are not universal LLM/VLM benchmarks.
 - Preserve the canonical NVIDIA producer relation and inverse `produces`.
+- Present a concise Official Resources block using the applicable official product-page, documentation and release-note references of this entity.
 
 ## Validation
 

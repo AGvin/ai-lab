@@ -8,6 +8,7 @@
 - Treat CUDA/kernel compatibility, power connectors and thermal limits, power supply and PCIe/host fit, workload performance, secondhand availability, and retail price as configuration-dependent and freshness-sensitive.
 - Distinguish peak/vendor marketing throughput from measured model inference or fine-tuning performance; condition comparisons on precision/quantization, model, runtime, batching, context size, hardware/host configuration and power envelope.
 - Preserve the NVIDIA producer relation and matching inverse `produces` link.
+- Present a concise Official Resources block using the applicable official product-page, documentation and release-note references of this entity.
 
 ## Validation
 

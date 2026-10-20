@@ -8,6 +8,7 @@
 - Treat CUDA/kernel/runtime support, driver branches, FP4/FP8 availability in specific inference stacks, board-vendor power connectors and coolers, host fit, regional availability, pricing, and measured LLM/VLM performance as freshness-sensitive.
 - Distinguish peak/vendor marketing throughput from measured model inference or fine-tuning performance; condition comparisons on precision/quantization, model, runtime, batching, context size, hardware/host configuration and power envelope.
 - Preserve the NVIDIA producer relation and matching inverse `produces` link.
+- Present a concise Official Resources block using the applicable official product-page, documentation and release-note references of this entity.
 
 ## Validation
 

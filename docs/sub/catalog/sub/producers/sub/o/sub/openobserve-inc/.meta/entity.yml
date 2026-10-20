@@ -18,6 +18,26 @@ entity:
         - research
       authority: official
       note: Current first-party terms identify OpenObserve Inc. as the contracting company.
+    - type: other
+      source:
+        url: https://openobserve.ai/legal/enterprise-license/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/openobserve/openobserve
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/openobserve/openobserve/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/evaluation-and-observability/observability-platforms/openobserve
+  identity_note: "OpenObserve Inc. is the company named in the hosted-service and enterprise agreements; open-source software, enterprise distributions, cloud service operation, and customer-managed telemetry are separate scopes."

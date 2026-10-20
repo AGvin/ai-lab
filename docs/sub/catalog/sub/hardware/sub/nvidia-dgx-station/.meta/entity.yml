@@ -16,6 +16,12 @@ entity:
       purposes:
         - research
       authority: official
+    - type: release-notes
+      source:
+        url: https://nvidianews.nvidia.com/news/nvidia-dgx-station-for-windows-puts-a-trillion-parameter-ai-supercomputer-on-every-enterprise-desk
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/n/nvidia

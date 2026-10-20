@@ -8,6 +8,7 @@
 - Separate physical GPU memory from aggregated node memory, MIG memory partitions, host RAM offload or model quantization. Ampere-generation precision support must not be assumed to provide Blackwell-generation FP4 behavior.
 - Attribute measured inference speed and training benchmark results to exact hardware form factor, model, precision, inference runtime, batch, power and test methodology, not vendor peak compute figures.
 - Preserve reciprocal NVIDIA producer attribution.
+- Present a concise Official Resources block using the applicable official product-page, documentation and release-note references of this entity.
 
 ## Validation
 

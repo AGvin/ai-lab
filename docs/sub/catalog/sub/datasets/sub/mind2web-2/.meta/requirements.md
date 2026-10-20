@@ -9,6 +9,9 @@
 - Treat the benchmark tasks, evaluation harness, judge prompts, webpage caching dependencies and assessed models as separate roles; do not duplicate a dataset simply because the evaluation scripts and leaderboard are distributed alongside it.
 - Attribute the first-party research and repository to Ohio State NLP Group and preserve coauthor affiliations without claiming sole ownership over collaborating institutions.
 
+- Render the complete visible current-node relation set through the standard `entity-relations` component as a provenance block; preserve relation semantics and canonical target identities.
+- Render an `official-resources` block with this explicit selection from canonical references: [Mind2Web 2 repository and evaluation instructions](https://github.com/OSU-NLP-Group/Mind2Web-2); [Mind2Web 2 project site](https://osu-nlp-group.github.io/Mind2Web-2/).
+
 ## Validation
 
 - The official benchmark repository documents NeurIPS 2025 Datasets & Benchmarks, public development/test evaluation scripts and the reproducible cached-page evaluation method.

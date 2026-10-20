@@ -8,6 +8,10 @@
 - Treat medical use restrictions, licenses, checkpoints, hardware/runtime guidance, training data, benchmark results, and clinical-validation claims as freshness-sensitive and source-attributed.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+## Reader projection
+
+- Render the `official-resources` block from canonical references supporting the identity, versioned facts, access context, and stated boundaries of this page.
+
 ## Validation
 
 - NV-Reason remains a model series, not an autonomous diagnostic product or cleared clinical system.
