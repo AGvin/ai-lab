@@ -50,6 +50,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: other
+      source:
+        url: https://github.com/google-deepmind/dm-haiku
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/google/gemini

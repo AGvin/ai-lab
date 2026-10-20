@@ -4,6 +4,7 @@ entity:
   name: Galileo Technologies, Inc.
   aliases:
     - Galileo
+  identity_note: "Cisco confirmed completion of its acquisition of Galileo in a May 22, 2026 update to its April 9 announcement. The legal producer identity remains Galileo Technologies, Inc.; the update does not establish the exact closing date or assignment of every customer contract."
   references:
     - type: official-site
       source:
@@ -20,6 +21,27 @@ entity:
         - research
       authority: official
       note: Official privacy policy identifying Galileo Technologies, Inc.
+    - type: other
+      source:
+        url: https://galileo.ai/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.galileo.ai/what-is-galileo
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://blogs.cisco.com/news/cisco-announces-the-intent-to-acquire-galileo
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/evaluation-and-observability/observability-platforms/galileo

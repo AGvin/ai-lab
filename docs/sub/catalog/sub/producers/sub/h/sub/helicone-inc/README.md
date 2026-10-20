@@ -1,17 +1,16 @@
 # Helicone, Inc.
 
-Helicone, Inc. is the company identified in Helicone's terms and the historical direct producer of the Helicone software.
+Helicone, Inc. is the company identified in the [official terms](https://www.helicone.ai/terms) and the original producer of the represented Helicone software.
 
-## Company and product boundary
+The [March 3, 2026 announcement](https://www.helicone.ai/blog/joining-mintlify) reported its acquisition by Mintlify and described services continuing in maintenance mode. The [current site](https://www.helicone.ai/) now carries an undated notice that Helicone is no longer part of Mintlify and that details will follow. The notice does not specify current legal ownership or new maintenance and support commitments.
 
-Helicone's March 3, 2026 announcement reports its acquisition by Mintlify and says the team is joining Mintlify. Helicone services remain live in maintenance mode, including security, model, bug and performance updates. The historical producer relationship is recorded separately from the acquisition announcement and continuing service operation.
+## Catalog relations
 
-## Relations
-
-- Produces: [Helicone](../../../../../software/sub/gateways/sub/model-gateways/sub/helicone/)
+- [Helicone](../../../../../software/sub/gateways/sub/model-gateways/sub/helicone/) — software producer.
 
 ## Official resources
 
-- <https://www.helicone.ai/terms>
-- <https://github.com/Helicone/helicone>
-- <https://www.helicone.ai/blog/joining-mintlify>
+- [Helicone terms](https://www.helicone.ai/terms)
+- [Helicone upstream](https://github.com/Helicone/helicone)
+- [Helicone March 2026 announcement](https://www.helicone.ai/blog/joining-mintlify)
+- [Helicone current site](https://www.helicone.ai/)

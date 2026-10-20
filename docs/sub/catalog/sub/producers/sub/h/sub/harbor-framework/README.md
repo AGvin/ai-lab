@@ -8,4 +8,4 @@ The Harbor Framework Team maintains the independently released Harbor evaluation
 
 ## Official resources
 
-- [Official source](https://harborframework.com/docs/)
+- [Official source](https://docs.harborframework.com/)

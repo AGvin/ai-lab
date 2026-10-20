@@ -2,6 +2,8 @@ entity:
   id: catalog/producers/g/giskard-ai
   type: organization
   name: Giskard AI
+  aliases:
+    - "GISKARD AI SAS"
   references:
     - type: official-site
       source:
@@ -13,6 +15,27 @@ entity:
     - type: repository
       source:
         url: https://github.com/Giskard-AI/giskard-oss
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.giskard.ai/legal
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.giskard.ai/start/comparison
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.giskard.ai/oss
       purposes:
         - identification
         - research

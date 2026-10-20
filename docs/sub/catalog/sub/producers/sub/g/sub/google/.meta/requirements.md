@@ -15,6 +15,8 @@
 - Preserve the Google model-domain view as navigation without using that view to duplicate semantic relation membership.
 - Include official Google AI documentation and the official Google Hugging Face organization as research references.
 
+- Preserve Google's originating contribution to Kubeflow and Kubeflow Pipelines separately from current CNCF/community governance; do not turn original production into a sole-current-maintainer or exclusive-owner claim.
+
 ## Validation
 
 - The page does not duplicate concrete model, service, agent, framework, or software profile details.

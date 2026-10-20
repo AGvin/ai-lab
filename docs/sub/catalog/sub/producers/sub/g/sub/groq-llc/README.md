@@ -1,17 +1,17 @@
 # Groq LLC
 
-Groq LLC is the organization behind GroqCloud and related Groq cloud services.
+Groq LLC is the canonical producer identity behind GroqCloud. The [services agreement](https://console.groq.com/docs/legal/services-agreement) distinguishes Groq LLC from region- and order-specific contracting affiliates.
 
-## Producer boundary
+Groq's [NVIDIA announcement](https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale) describes non-exclusive technology licensing and personnel transitions while Groq remains independent. The hosted inference service and its third-party models retain separate identities and producer attribution.
 
-Producer identity remains distinct from GroqCloud as a hosted service and from third-party model producers whose models are served through GroqCloud.
+## Catalog relations
 
-## Relations
-
-- Produces: [`catalog/services/model-apis/groqcloud`](../../../../../services/sub/model-apis/sub/groqcloud/)
+- [GroqCloud](../../../../../services/sub/model-apis/sub/groqcloud/) — service operator.
 
 ## Official resources
 
-- <https://groq.com/>
-- <https://groq.com/privacy-policy>
-- <https://console.groq.com/docs/legal/services-agreement>
+- [Official website](https://groq.com/)
+- [Official source](https://groq.com/privacy-policy)
+- [Groq services agreement](https://console.groq.com/docs/legal/services-agreement)
+- [Groq NVIDIA licensing announcement](https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale)
+- [GroqCloud documentation](https://console.groq.com/docs/overview)

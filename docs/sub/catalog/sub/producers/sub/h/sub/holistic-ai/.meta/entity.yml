@@ -10,6 +10,20 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://www.holisticai.com/about
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.holisticai.com/ai-governance-platform
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/services/ai-management-platforms/holistic-ai-governance-platform

@@ -4,6 +4,7 @@ entity:
   name: Helicone, Inc.
   aliases:
     - Helicone
+  identity_note: "Helicone's March 3, 2026 announcement reported an acquisition by Mintlify. Its official site now states that Helicone is no longer part of Mintlify, with details forthcoming; the legal transaction structure and current ownership are not specified by that notice."
   references:
     - type: terms-of-service
       source:
@@ -27,6 +28,13 @@ entity:
         - research
       authority: official
       note: The March 3, 2026 announcement reports acquisition by Mintlify and continued services in maintenance mode; it does not establish a new direct software producer.
+    - type: other
+      source:
+        url: https://www.helicone.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/gateways/model-gateways/helicone

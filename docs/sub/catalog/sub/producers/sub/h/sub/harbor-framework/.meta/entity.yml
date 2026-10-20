@@ -12,7 +12,7 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://harborframework.com/docs/
+        url: https://docs.harborframework.com/
       purposes:
         - research
       authority: official

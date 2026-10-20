@@ -7,6 +7,9 @@
 - Render the standard `entity-relations` block from validated current-entity relations.
 - Include current official Groq site, Privacy Policy, and Groq Services Agreement references that establish producer and service ownership.
 
+- Preserve the services agreement's regional and order-specific contracting-entity distinctions instead of implying that every customer contracts with Groq LLC.
+- Treat the NVIDIA arrangement as the announced non-exclusive technology license and personnel transition; it does not establish an NVIDIA owner edge for Groq.
+
 ## Validation
 
 - The page does not collapse Groq LLC with GroqCloud or third-party hosted models.

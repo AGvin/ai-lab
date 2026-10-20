@@ -1,11 +1,15 @@
 # Genesis World Project
 
-Genesis World Project is a producer identity represented in the AI Lab catalog.
+Genesis World Project is the project-level producer identity for the Genesis World simulation software. The [upstream repository](https://github.com/Genesis-Embodied-AI/genesis-world) records its academic origin under the name Genesis and current support from Genesis AI.
 
-## Relations
+The [simulator documentation](https://genesis-world.readthedocs.io/en/latest/user_guide/overview/what_is_genesis.html) defines the software. Company support and project authorship remain distinct; this profile does not infer exclusive corporate ownership from support language.
 
-- Produces: [`catalog/software/physical-ai-and-robotics/genesis-world`](../../../../../software/sub/physical-ai-and-robotics/sub/genesis-world/)
+## Catalog relations
+
+- [Genesis World](../../../../../software/sub/physical-ai-and-robotics/sub/genesis-world/) — software producer.
 
 ## Official resources
 
-- <https://genesis-world.readthedocs.io/en/latest/>
+- [Official documentation](https://genesis-world.readthedocs.io/en/latest/)
+- [Genesis World upstream](https://github.com/Genesis-Embodied-AI/genesis-world)
+- [Genesis World introduction](https://genesis-world.readthedocs.io/en/latest/user_guide/overview/what_is_genesis.html)
