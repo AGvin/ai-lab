@@ -1,15 +1,18 @@
 # Cognition AI, Inc.
 
-Cognition AI, Inc. is the organization behind the Devin development-agent products. The hosted Devin service and installable Devin Desktop software retain separate catalog identities.
+Cognition AI, Inc. is the organization behind the Devin hosted development agent and Devin Desktop. The [Devin Desktop announcement](https://cognition.com/blog/introducing-devin-desktop) describes the desktop product's continuity from Windsurf.
 
-## Produces
+The hosted service and desktop product retain separate catalog identities. The [platform terms](https://cognition.com/legal/platform-terms-of-service) identify Cognition while preserving Exafunction, Inc. as the contracting entity for specified legacy Devin Desktop customers unless their agreements are assigned.
 
-- [Devin](../../../../../services/sub/development/sub/agents/sub/devin/) — hosted development-agent service.
-- [Devin Desktop](../../../../../software/sub/agents/sub/hybrid/sub/devin-desktop/) — desktop agent workspace and IDE, formerly Windsurf.
+## Catalog relations
+
+- [Devin](../../../../../services/sub/development/sub/agents/sub/devin/) — produced catalog entity.
+- [Devin Desktop](../../../../../software/sub/agents/sub/hybrid/sub/devin-desktop/) — produced catalog entity.
 
 ## Official resources
 
-- [Cognition](https://cognition.com/)
-- [Platform Terms of Service](https://cognition.com/legal/platform-terms-of-service)
-- [Data Processing Agreement](https://cognition.com/legal/data-processing-statement)
-- [Trust Center](https://trust.cognition.ai/)
+- [Official website](https://cognition.com/)
+- [Cognition platform terms](https://cognition.com/legal/platform-terms-of-service)
+- [Official source](https://cognition.com/legal/data-processing-statement)
+- [Official source](https://trust.cognition.ai/)
+- [Introducing Devin Desktop](https://cognition.com/blog/introducing-devin-desktop)

@@ -2,6 +2,8 @@ entity:
   id: catalog/producers/c/comfy-organization-inc
   type: organization
   name: Comfy Organization Inc.
+  aliases:
+    - "Comfy Organization, Inc."
   references:
     - type: official-site
       source:
@@ -13,6 +15,20 @@ entity:
     - type: documentation
       source:
         url: https://docs.comfy.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://comfy.org/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://comfy.org/about/
       purposes:
         - identification
         - research

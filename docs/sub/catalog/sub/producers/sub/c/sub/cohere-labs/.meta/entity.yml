@@ -12,6 +12,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://cohere.com/research/aya
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/cohere-labs/aya

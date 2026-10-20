@@ -8,6 +8,9 @@
 - Include the current Cognition site, Platform Terms of Service, Data Processing Agreement, and Trust Center references sufficient to establish current legal identity and provenance.
 - Keep broader corporate, staffing, funding, pricing, and other mutable business details outside this concise producer profile unless they become relevant to represented catalog entities.
 
+- Distinguish current product provenance from customer-specific contracting identity: the platform terms preserve Exafunction, Inc. for specified legacy Devin Desktop customers unless their agreements are assigned.
+- Keep Devin Desktop's former Windsurf branding distinct from the Devin hosted service and from corporate relationship assertions not established by the cited terms.
+
 ## Validation
 
 - The page does not collapse Cognition AI, Inc. and Devin into one entity.

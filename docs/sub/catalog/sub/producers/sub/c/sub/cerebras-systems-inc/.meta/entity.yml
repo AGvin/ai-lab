@@ -17,6 +17,27 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://www.cerebras.ai/chip
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.cerebras.ai/cs4
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://inference-docs.cerebras.ai/models/overview
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/hardware/cerebras-wse-3-turbo

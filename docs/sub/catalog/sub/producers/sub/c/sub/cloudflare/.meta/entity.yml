@@ -18,6 +18,20 @@ entity:
       purposes:
         - research
       authority: official
+    - type: other
+      source:
+        url: https://developers.cloudflare.com/browser-run/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://blog.cloudflare.com/clef-decision-models/
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/services/gateways/model-gateways/cloudflare-ai-gateway

@@ -31,6 +31,20 @@ entity:
       purposes:
         - research
       authority: official
+    - type: other
+      source:
+        url: https://www.trydeepteam.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://deepeval.com/docs/faq
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/evaluation-and-observability/evaluation-frameworks/deepeval

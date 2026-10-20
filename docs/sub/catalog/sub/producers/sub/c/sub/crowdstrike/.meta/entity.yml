@@ -10,6 +10,20 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://www.crowdstrike.com/en-us/press-releases/crowdstrike-agentic-identity-provider-foundation-for-ai-agent-identity-security/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.crowdstrike.com/en-us/platform/next-gen-identity-security/
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/services/agent-identity-and-access/crowdstrike-agentic-identity-provider

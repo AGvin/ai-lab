@@ -18,6 +18,27 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/models
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/welcome
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/deployment-options-overview
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/cohere/command

@@ -10,6 +10,20 @@ entity:
         - identification
         - research
       authority: official
+    - type: other
+      source:
+        url: https://www.credo.ai/company/aboutus
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.credo.ai/product
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/services/ai-management-platforms/credo-ai-platform

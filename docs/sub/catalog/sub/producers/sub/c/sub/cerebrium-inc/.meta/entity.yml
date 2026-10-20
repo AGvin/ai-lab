@@ -17,6 +17,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://cerebrium.ai/docs/getting-started/introduction
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/services/infrastructure/cerebrium

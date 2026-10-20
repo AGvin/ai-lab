@@ -1,20 +1,23 @@
 # Cloudflare
 
-Cloudflare is the producer identity for the selected Cloudflare AI/developer-platform services and official skill collection.
+Cloudflare, Inc. operates the AI services described in its [AI documentation](https://developers.cloudflare.com/ai/) and publishes related developer tooling. It also attributes development of the Clef decision model family to itself in the [Clef announcement](https://blog.cloudflare.com/clef-decision-models/).
 
-## Producer boundary
+Model hosting, traffic routing, vector storage, search, agent runtimes and browser execution have separate catalog entries. Hosting a third-party model does not transfer its producer attribution. [Browser Run](https://developers.cloudflare.com/browser-run/) is the current name of Browser Rendering; its existing catalog identity is retained.
 
-The organization profile remains distinct from Workers AI, AI Gateway, Vectorize, Agents, individual models, and skill contents.
+## Catalog relations
 
-## Relations
-
-- Produces: [`catalog/services/gateways/model-gateways/cloudflare-ai-gateway`](../../../../../services/sub/gateways/sub/model-gateways/sub/cloudflare-ai-gateway/)
-- Produces: [`catalog/services/model-apis/cloudflare-workers-ai`](../../../../../services/sub/model-apis/sub/cloudflare-workers-ai/)
-- Produces: [`catalog/services/data-infrastructure/vector-search/cloudflare-vectorize`](../../../../../services/sub/data-infrastructure/sub/vector-search/sub/cloudflare-vectorize/)
-- Produces: [`catalog/services/infrastructure/cloudflare-agents`](../../../../../services/sub/infrastructure/sub/cloudflare-agents/)
-- Produces: [`catalog/agent-skills/collections/cloudflare-skills`](../../../../../agent-skills/sub/collections/sub/cloudflare-skills/)
+- [Clef](../../../../../models/sub/cloudflare/sub/clef/) — produced catalog entity.
+- [Cloudflare Agents](../../../../../services/sub/infrastructure/sub/cloudflare-agents/) — produced catalog entity.
+- [Cloudflare AI Gateway](../../../../../services/sub/gateways/sub/model-gateways/sub/cloudflare-ai-gateway/) — produced catalog entity.
+- [Cloudflare AI Search](../../../../../services/sub/data-infrastructure/sub/vector-search/sub/cloudflare-ai-search/) — produced catalog entity.
+- [Cloudflare Browser Run](../../../../../services/sub/infrastructure/sub/cloudflare-browser-rendering/) — produced catalog entity.
+- [Cloudflare Skills](../../../../../agent-skills/sub/collections/sub/cloudflare-skills/) — produced catalog entity.
+- [Cloudflare Vectorize](../../../../../services/sub/data-infrastructure/sub/vector-search/sub/cloudflare-vectorize/) — produced catalog entity.
+- [Cloudflare Workers AI](../../../../../services/sub/model-apis/sub/cloudflare-workers-ai/) — produced catalog entity.
 
 ## Official resources
 
-- <https://www.cloudflare.com/>
-- <https://developers.cloudflare.com/ai/>
+- [Official website](https://www.cloudflare.com/)
+- [Cloudflare AI documentation](https://developers.cloudflare.com/ai/)
+- [Cloudflare Browser Run](https://developers.cloudflare.com/browser-run/)
+- [Cloudflare Clef announcement](https://blog.cloudflare.com/clef-decision-models/)

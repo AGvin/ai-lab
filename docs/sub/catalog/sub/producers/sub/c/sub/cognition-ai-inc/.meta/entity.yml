@@ -35,6 +35,13 @@ entity:
         - research
       authority: official
       note: Official Cognition Trust Center.
+    - type: other
+      source:
+        url: https://cognition.com/blog/introducing-devin-desktop
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/services/development/agents/devin

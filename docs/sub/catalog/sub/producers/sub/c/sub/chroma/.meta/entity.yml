@@ -2,10 +2,33 @@ entity:
   id: catalog/producers/c/chroma
   type: organization
   name: Chroma
+  aliases:
+    - "Chroma Inc."
   references:
     - type: official-site
       source:
         url: https://www.trychroma.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.trychroma.com/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.trychroma.com/docs/overview/oss
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.trychroma.com/cloud/getting-started
       purposes:
         - identification
         - research

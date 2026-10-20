@@ -2,6 +2,9 @@ entity:
   id: catalog/producers/c/composio
   type: organization
   name: Composio
+  aliases:
+    - "Sampark Inc"
+  identity_note: "Composio is the trading name of Sampark Inc identified in the official terms; the brand remains the canonical producer name."
   references:
     - type: official-site
       source:
@@ -14,6 +17,27 @@ entity:
       source:
         url: https://docs.composio.dev/
       purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://composio.dev/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://composio.dev/developers
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.composio.dev/docs/authentication
+      purposes:
+        - identification
         - research
       authority: official
   relations:

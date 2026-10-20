@@ -1,12 +1,18 @@
 # CoreWeave
 
-CoreWeave is one of the organizations that founded llm-d. That founding provenance remains distinct from llm-d's current CNCF Sandbox governance and from the broader multi-organization contributor community.
+CoreWeave provides AI infrastructure through CoreWeave Cloud. Its [documentation](https://docs.coreweave.com/) describes the platform, and its [acquisition announcement](https://investors.coreweave.com/news/news-details/2025/CoreWeave-Completes-Acquisition-of-Weights--Biases/default.aspx) establishes ownership of Weights & Biases.
 
-## Produces
+CoreWeave is also a founding contributor to [llm-d](https://github.com/llm-d/llm-d). That shared project has its own governance and canonical software identity; founding participation does not mean exclusive maintenance. The cloud service and acquired organization retain separate catalog entries.
 
-- [llm-d](../../../../../software/sub/inference-runtimes/sub/distributed-serving/sub/llm-d/) — distributed LLM serving project co-founded by multiple organizations.
+## Catalog relations
+
+- [CoreWeave Cloud](../../../../../services/sub/infrastructure/sub/coreweave-cloud/) — operated infrastructure service.
+- [llm-d](../../../../../software/sub/inference-runtimes/sub/distributed-serving/sub/llm-d/) — founding contributor to the shared project.
+- [Weights & Biases, Inc.](../../../w/sub/weights-and-biases/) — owned organization.
 
 ## Official resources
 
-- [CoreWeave](https://www.coreweave.com/)
-- [llm-d repository](https://github.com/llm-d/llm-d)
+- [Official website](https://www.coreweave.com/)
+- [llm-d upstream](https://github.com/llm-d/llm-d)
+- [CoreWeave documentation](https://docs.coreweave.com/)
+- [Weights & Biases acquisition completion](https://investors.coreweave.com/news/news-details/2025/CoreWeave-Completes-Acquisition-of-Weights--Biases/default.aspx)

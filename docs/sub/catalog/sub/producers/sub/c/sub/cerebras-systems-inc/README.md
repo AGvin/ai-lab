@@ -1,16 +1,19 @@
 # Cerebras Systems Inc.
 
-Cerebras Systems Inc. is a canonical producer identity represented in AI Lab.
+Cerebras Systems Inc. produces wafer-scale AI hardware and operates Cerebras Inference. Its [chip](https://www.cerebras.ai/chip), [CS-4 system](https://www.cerebras.ai/cs4) and [inference API](https://inference-docs.cerebras.ai/models/overview) have separate catalog identities.
 
-## Translations
+The [service terms](https://www.cerebras.ai/terms-of-service) distinguish hosted services, separately governed hardware and third-party models. The producer relationship identifies Cerebras's role without transferring authorship of externally developed models to the hosting provider.
 
-- English
+## Catalog relations
 
-## Relations
-
-- Produces: [`catalog/services/model-apis/cerebras-inference`](../../../../../services/sub/model-apis/sub/cerebras-inference/)
+- [Cerebras CS-4](../../../../../hardware/sub/cerebras-cs-4/) — produced catalog entity.
+- [Cerebras Inference](../../../../../services/sub/model-apis/sub/cerebras-inference/) — produced catalog entity.
+- [Cerebras WSE-3 Turbo](../../../../../hardware/sub/cerebras-wse-3-turbo/) — produced catalog entity.
 
 ## Official resources
 
-- <https://www.cerebras.ai/>
-- <https://www.cerebras.ai/terms-of-service>
+- [Official website](https://www.cerebras.ai/)
+- [Cerebras terms](https://www.cerebras.ai/terms-of-service)
+- [Cerebras chip](https://www.cerebras.ai/chip)
+- [Cerebras CS-4](https://www.cerebras.ai/cs4)
+- [Cerebras Inference models](https://inference-docs.cerebras.ai/models/overview)

@@ -2,6 +2,8 @@
 
 Continue is Continue Dev, Inc.'s open-source coding agent exposed through CLI, VS Code, and JetBrains plugin surfaces. It is represented as a Local Agent rather than as a VS Code-only extension because the same agent/runtime concept spans terminal and multiple editor clients.
 
+The [official Continue site](https://continue.dev/) announces that Continue was acquired by Cursor and that its open-source code remains available. The upstream repository separately documents the original producer attribution and the read-only lifecycle described here.
+
 ## Editor client surfaces
 
 For Visual Studio Code, Continue is distributed through its [Visual Studio Marketplace listing](https://marketplace.visualstudio.com/items?itemName=Continue.continue), which exposes the VS Code agent, chat, edit, and autocomplete experience. This is a client/distribution surface of the same Continue product rather than a separate canonical VS Code-only identity.

@@ -1,16 +1,15 @@
 # Cohere Labs
 
-Cohere Labs is Cohere's research lab and preserve `Cohere For AI` as its former name rather than a second current producer.
+Cohere Labs is Cohere's research organization, formerly known as Cohere For AI. The [research site](https://cohere.com/research) describes the lab, and the [Aya page](https://cohere.com/research/aya) establishes its role in the Aya model family.
 
-## Producer boundary
+The lab retains a distinct research identity within Cohere. Commercial services, deployments and contracts represented under Cohere have their own catalog boundaries.
 
-Commercial Cohere model lines with the canonical Cohere producer unless first-party provenance says otherwise.
+## Catalog relations
 
-## Relations
-
-- Produces: [`catalog/models/cohere-labs/aya`](../../../../../models/sub/cohere-labs/sub/aya/)
-- part-of: [`catalog/producers/c/cohere`](../cohere/)
+- [Aya](../../../../../models/sub/cohere-labs/sub/aya/) — produced catalog entity.
+- [Cohere](../cohere/) — parent organization.
 
 ## Official resources
 
-- <https://cohere.com/research>
+- [Cohere Labs](https://cohere.com/research)
+- [Aya research](https://cohere.com/research/aya)
