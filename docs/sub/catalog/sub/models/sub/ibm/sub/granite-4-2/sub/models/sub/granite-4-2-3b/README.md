@@ -1,14 +1,14 @@
 # Granite 4.2 3B
 
-Granite 4.2 3B is a concrete model represented in AI Lab.
+Granite 4.2 3B is the compact 3B-class member of IBM's Granite 4.2 dense reasoning family, released on 25 August 2026.
 
-## Translations
+Its official card documents Apache-2.0 weights, native 128K context with a supported long-context extension to 512K, built-in thinking modes, tool calling, coding, and agentic workflows. The same card lists twelve tested languages and names Granite 4.1 3B Base as its source model.
 
-- English
+Quantized and runtime-specific distributions remain artifacts of this model. Tool calls require application execution, and long-context support is not a guarantee of uniform accuracy throughout the window.
 
-## Relations
+## Catalog relations
 
-- Member of: [`catalog/models/ibm/granite-4-2`](../../../../)
+- [Granite 4.2](../../../../) — family.
 
 ## Official resources
 

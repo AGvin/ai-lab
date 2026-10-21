@@ -1,13 +1,20 @@
 # Documentation Requirements
 
-## Requirements
+## Identity and provenance
 
-- Identify Granite 4.2 as IBM's released dense decoder-only reasoning language-model family introduced in August 2026.
-- Materialize the canonical 3B, 8B, and 30B base release identities and keep quantized/export/runtime artifacts as variants rather than peer canonical models unless a later task requires artifact-level ownership.
-- Preserve thinking/non-thinking operation, tool calling, multilingual/coding/agentic positioning, and context claims only at the scope supported by current first-party model cards.
-- Treat benchmarks, deployment support, quantizations, provider availability, and derivative artifacts as freshness-sensitive.
+- Identify Granite 4.2 as IBM's dense decoder-only reasoning language-model family released on 25 August 2026.
+- Materialize the canonical 3B, 8B, and 30B trained-model identities; keep quantized, exported, and runtime-specific distributions as artifacts unless independently qualified.
+- Preserve IBM as producer. The exact cards name Granite 4.1 base checkpoints, but no absent base-model catalog node is invented solely from that metadata.
+
+## Operational decision boundaries
+
+- The three reviewed cards document native 128K context with a long-context extension to 512K, Apache-2.0 weights, built-in thinking, tool calling, coding, and agentic workflows.
+- The tested language set is English, German, Spanish, French, Japanese, Portuguese, Arabic, Czech, Italian, Korean, Dutch, and Chinese; do not generalize tested quality to every language.
+- Reasoning mode, tool execution, long-context quality, benchmark results, deployment support, and quantization fit remain implementation- and evaluation-sensitive.
+- Tool calling produces requests; connected application software performs actions and enforces permissions.
 
 ## Validation
 
-- Family membership resolves to the three canonical released sizes.
-- Producer provenance resolves to IBM.
+- Family membership resolves exactly to the 3B, 8B, and 30B nodes.
+- Producer provenance resolves to IBM with the reciprocal producer edge.
+- This documentation assessment grants no runtime, benchmark-reproduction, cache, or final-render credit.
