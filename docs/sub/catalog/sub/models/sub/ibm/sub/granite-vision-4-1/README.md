@@ -1,15 +1,15 @@
 # Granite Vision 4.1
 
-Granite Vision 4.1 is a canonical model family represented in AI Lab.
+Granite Vision 4.1 is IBM's April 2026 document-focused vision-language family, represented in the catalog by the 4B checkpoint.
 
-## Translations
+The model card emphasizes structured document understanding: chart extraction, table extraction, semantic key-value extraction, and general image-to-text use. Task tags and output formats are prompting contracts of the same model rather than additional trained identities.
 
-- English
+The concrete checkpoint is fine-tuned on Granite 4.1 3B. That source model is not currently materialized as a canonical catalog node, so the lineage remains source-documented instead of creating a broken relation. Docling and other document-processing software remain separate artifacts.
 
-## Relations
+## Catalog relations
 
-- Produced by: [`catalog/producers/i/ibm`](../../../../../producers/sub/i/sub/ibm/)
-- Has member: [`catalog/models/ibm/granite-vision-4-1/models/granite-vision-4-1-4b`](sub/models/sub/granite-vision-4-1-4b/)
+- [IBM](../../../../../producers/sub/i/sub/ibm/) — producer.
+- [Granite Vision 4.1 4B](sub/models/sub/granite-vision-4-1-4b/) — member.
 
 ## Official resources
 

@@ -2,6 +2,10 @@ entity:
   id: catalog/models/ibm/granite-vision-4-1
   type: model-family
   name: Granite Vision 4.1
+  identity_note: >-
+    Granite Vision 4.1 is IBM's April 2026 document-focused vision-language release family. The
+    materialized member is the 4B checkpoint for chart, table, key-value and general image-to-text
+    understanding. It is distinct from OCR/document pipeline software and hosted services.
   references:
     - type: registry
       source:
