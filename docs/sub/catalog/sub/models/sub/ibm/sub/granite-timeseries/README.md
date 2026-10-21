@@ -1,6 +1,8 @@
 # Granite Time Series
 
-Granite Time Series is IBM's open Granite time-series foundation-model family covering forecasting and adjacent time-series tasks.
+Granite Time Series is IBM's open Granite time-series foundation-model family for forecasting and adjacent numerical time-series workloads.
+
+The materialized members intentionally use different identity granularities. PatchTST-FM R2 is a concrete released forecasting model. FlowState R1, TSPulse R1, and TTM R3 are series-level release surfaces because their official repositories expose multiple revision or trained-model variants under one release identity.
 
 ## Translations
 
@@ -16,4 +18,5 @@ Granite Time Series is IBM's open Granite time-series foundation-model family co
 
 ## Official resources
 
+- <https://www.ibm.com/granite/docs/models/time-series>
 - <https://huggingface.co/collections/ibm-granite/granite-time-series>

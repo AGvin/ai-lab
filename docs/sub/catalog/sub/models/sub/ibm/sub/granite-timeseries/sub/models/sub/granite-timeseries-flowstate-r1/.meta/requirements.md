@@ -2,10 +2,13 @@
 
 ## Requirements
 
-- Identify FlowState R1 as the canonical Granite Time Series FlowState model identity and preserve r1.1 as current revision state rather than a separate peer family.
-- Preserve sampling-rate adaptation, revision differences, model size, supported tasks, and benchmark claims only from the current model card.
+- Represent FlowState R1 as a series-level release surface rather than a single checkpoint.
+- Preserve the official default r1.0 state and the materially updated r1.1 revision as revision-sensitive members of that release surface; loading r1.1 requires an explicit `revision="r1.1"` selector.
+- Do not invent separate child identities solely from revision names until a later intake establishes that those trained checkpoints need durable catalog nodes.
+- Preserve sampling-rate adaptation, context, parameter count, supported tasks, benchmark claims, and commercial/research release distinctions only from current first-party sources.
 
 ## Validation
 
 - Membership resolves to Granite Time Series.
-- Revision-sensitive guidance explicitly distinguishes r1.0 default loading from r1.1 when relevant.
+- The canonical ID is unchanged and the taxonomy correction adds no Model denominator node.
+- Reader guidance distinguishes default r1.0 loading from explicit r1.1 selection.

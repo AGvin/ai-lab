@@ -1,7 +1,12 @@
 entity:
   id: catalog/models/ibm/granite-timeseries/models/granite-timeseries-tspulse-r1
-  type: model
+  type: model-series
   name: Granite TimeSeries TSPulse R1
+  identity_note: >-
+    TSPulse R1 is represented at series level because IBM releases three separately pretrained
+    variants under the same repository: hybrid-allhead for anomaly detection, hybrid-dualhead for
+    imputation/search, and block-dualhead for classification. Their branch/revision selectors are
+    not aliases and are not materialized as extra catalog nodes in this checkpoint.
   references:
     - type: registry
       source:

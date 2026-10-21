@@ -1,7 +1,12 @@
 entity:
   id: catalog/models/ibm/granite-timeseries/models/granite-timeseries-flowstate-r1
-  type: model
+  type: model-series
   name: Granite TimeSeries FlowState R1
+  identity_note: >-
+    FlowState R1 is represented at series level because the official release surface contains the
+    default r1.0 state and a materially updated r1.1 revision selected explicitly with the Hugging
+    Face revision parameter. The canonical ID remains stable; revision selectors are not aliases
+    and are not materialized as extra nodes in this checkpoint.
   references:
     - type: registry
       source:
@@ -10,7 +15,6 @@ entity:
         - identification
         - research
       authority: official
-      note: The current model card documents revision `r1.1`; loading without an explicit revision yields the earlier r1.0 state.
   relations:
     - type: member-of
       target: catalog/models/ibm/granite-timeseries
