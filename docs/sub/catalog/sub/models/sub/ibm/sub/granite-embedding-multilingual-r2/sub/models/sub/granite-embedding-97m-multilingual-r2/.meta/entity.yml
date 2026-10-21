@@ -2,6 +2,10 @@ entity:
   id: catalog/models/ibm/granite-embedding-multilingual-r2/models/granite-embedding-97m-multilingual-r2
   type: model
   name: Granite Embedding 97M Multilingual R2
+  identity_note: >-
+    Granite Embedding 97M Multilingual R2 is IBM's smaller R2 embedding checkpoint. Its official
+    card explicitly documents derivation from the 311M R2 model through layer pruning from 22 to 12
+    layers and vocabulary selection, preserving a distinct learned-model identity.
   references:
     - type: registry
       source:
@@ -10,6 +14,14 @@ entity:
         - identification
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-embedding-311m-multilingual-r2
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/ibm/granite-embedding-multilingual-r2
+    - type: derived-from
+      target: catalog/models/ibm/granite-embedding-multilingual-r2/models/granite-embedding-311m-multilingual-r2

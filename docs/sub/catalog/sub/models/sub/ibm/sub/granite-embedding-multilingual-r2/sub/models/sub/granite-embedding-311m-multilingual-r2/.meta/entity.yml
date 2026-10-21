@@ -2,6 +2,10 @@ entity:
   id: catalog/models/ibm/granite-embedding-multilingual-r2/models/granite-embedding-311m-multilingual-r2
   type: model
   name: Granite Embedding 311M Multilingual R2
+  identity_note: >-
+    Granite Embedding 311M Multilingual R2 is the larger R2 embedding checkpoint. Its official card
+    documents 768-dimensional embeddings and Matryoshka output dimensions, and the 97M R2 card
+    explicitly names this model as the source for pruning and vocabulary selection.
   references:
     - type: registry
       source:
@@ -13,3 +17,5 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/ibm/granite-embedding-multilingual-r2
+    - type: has-derivative
+      target: catalog/models/ibm/granite-embedding-multilingual-r2/models/granite-embedding-97m-multilingual-r2
