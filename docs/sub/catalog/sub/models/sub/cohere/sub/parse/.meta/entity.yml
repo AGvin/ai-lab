@@ -3,15 +3,22 @@ entity:
   type: model-family
   name: Parse
   references:
-    - type: documentation
-      source:
-        url: https://docs.cohere.com/v2/docs/parse
-      purposes:
-        - identification
-        - research
-      authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/v2/docs/parse
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://docs.cohere.com/changelog/parse
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: produced-by
-      target: catalog/producers/c/cohere
-    - type: has-member
-      target: catalog/models/cohere/parse/models/parse-v5-0
+  - type: produced-by
+    target: catalog/producers/c/cohere
+  - type: has-member
+    target: catalog/models/cohere/parse/models/parse-v5-0

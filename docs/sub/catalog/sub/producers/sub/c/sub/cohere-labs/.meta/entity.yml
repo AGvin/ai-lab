@@ -3,24 +3,123 @@ entity:
   type: organization
   name: Cohere Labs
   aliases:
-    - Cohere For AI
+  - Cohere For AI
   references:
-    - type: official-site
-      source:
-        url: https://cohere.com/research
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: other
-      source:
-        url: https://cohere.com/research/aya
-      purposes:
-        - identification
-        - research
-      authority: official
+  - type: official-site
+    source:
+      url: https://cohere.com/research
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: other
+    source:
+      url: https://cohere.com/research/aya
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/c4ai-command-a-03-2025
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/command-a-reasoning-08-2025
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/command-a-translate-08-2025
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/command-a-vision-07-2025
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/c4ai-command-r-08-2024
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/North-Mini-Code-1.0
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/North-Small-Translate-1.0
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: produces
-      target: catalog/models/cohere-labs/aya
-    - type: part-of
-      target: catalog/producers/c/cohere
+  - type: produces
+    target: catalog/models/cohere-labs/aya
+  - type: part-of
+    target: catalog/producers/c/cohere
+  - type: produces
+    target: catalog/models/cohere/command/command-a/models/command-a-03-2025
+  - type: produces
+    target: catalog/models/cohere/command/command-a/models/command-a-plus-05-2026
+  - type: produces
+    target: catalog/models/cohere/command/command-a/models/command-a-reasoning-08-2025
+  - type: produces
+    target: catalog/models/cohere/command/command-a/models/command-a-translate-08-2025
+  - type: produces
+    target: catalog/models/cohere/command/command-a/models/command-a-vision-07-2025
+  - type: produces
+    target: catalog/models/cohere/command/command-r/models/command-r-08-2024
+  - type: produces
+    target: catalog/models/cohere/command/command-r/models/command-r7b-12-2024
+  - type: produces
+    target: catalog/models/cohere/north/models/north-mini-code-1-0
+  - type: produces
+    target: catalog/models/cohere/north/models/north-small-translate-1-0
+  - type: produces
+    target: catalog/models/cohere/transcribe/models/cohere-transcribe-03-2026
+  - type: produces
+    target: catalog/models/cohere/transcribe/models/cohere-transcribe-arabic-07-2026

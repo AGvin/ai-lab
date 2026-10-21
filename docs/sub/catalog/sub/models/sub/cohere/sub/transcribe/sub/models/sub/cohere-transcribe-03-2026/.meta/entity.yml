@@ -3,19 +3,51 @@ entity:
   type: model
   name: Cohere Transcribe
   references:
-    - type: documentation
-      source:
-        url: https://docs.cohere.com/docs/transcribe
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: release-notes
-      source:
-        url: https://docs.cohere.com/changelog/cohere-transcribe-03-2026
-      purposes:
-        - research
-      authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/transcribe
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://docs.cohere.com/changelog/cohere-transcribe-03-2026
+    purposes:
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://docs.cohere.com/changelog/transcribe-arabic
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-registry
+    source:
+      url: https://huggingface.co/api/models/CohereLabs/cohere-transcribe-arabic-07-2026?blobs=true
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/models
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: member-of
-      target: catalog/models/cohere/transcribe
+  - type: member-of
+    target: catalog/models/cohere/transcribe
+  - type: produced-by
+    target: catalog/producers/c/cohere-labs
+  - type: has-derivative
+    target: catalog/models/cohere/transcribe/models/cohere-transcribe-arabic-07-2026

@@ -3,20 +3,34 @@ entity:
   type: model
   name: North Micro Vision Instruct
   references:
-    - type: official-site
-      source:
-        url: https://cohere.com/models-overview
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: registry
-      source:
-        url: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct
-      purposes:
-        - identification
-        - research
-      authority: official
+  - type: official-site
+    source:
+      url: https://cohere.com/models-overview
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/command-a-vision-07-2025
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/aya-vision-8b
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: member-of
-      target: catalog/models/cohere/north
+  - type: member-of
+    target: catalog/models/cohere/north

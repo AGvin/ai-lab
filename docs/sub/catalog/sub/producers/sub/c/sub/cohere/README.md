@@ -4,6 +4,8 @@ Cohere develops enterprise AI models and provides deployment and application pro
 
 Model families, managed deployment services and the North workspace retain separate catalog identities. The North model family and North workspace are distinct entries. Cohere Labs remains a research organization within Cohere, with its own model-family provenance.
 
+The official model cards for [Tiny Aya Global](https://huggingface.co/CohereLabs/tiny-aya-global), [Tiny Aya Earth](https://huggingface.co/CohereLabs/tiny-aya-earth), [Tiny Aya Fire](https://huggingface.co/CohereLabs/tiny-aya-fire), [Tiny Aya Water](https://huggingface.co/CohereLabs/tiny-aya-water) credit both Cohere and Cohere Labs as developers. These exact co-produced models retain their Cohere Labs model-family placement and their separate trained-model identities.
+
 ## Catalog relations
 
 - [Cohere Labs](../cohere-labs/) — research organization.
@@ -16,6 +18,10 @@ Model families, managed deployment services and the North workspace retain separ
 - [North](../../../../../models/sub/cohere/sub/north/) — produced catalog entity.
 - [Parse](../../../../../models/sub/cohere/sub/parse/) — produced catalog entity.
 - [Rerank](../../../../../models/sub/cohere/sub/rerank/) — produced catalog entity.
+- [Tiny Aya Earth](../../../../../models/sub/cohere-labs/sub/aya/sub/tiny-aya/sub/models/sub/tiny-aya-earth/README.md) — co-produced model with Cohere Labs.
+- [Tiny Aya Fire](../../../../../models/sub/cohere-labs/sub/aya/sub/tiny-aya/sub/models/sub/tiny-aya-fire/README.md) — co-produced model with Cohere Labs.
+- [Tiny Aya Global](../../../../../models/sub/cohere-labs/sub/aya/sub/tiny-aya/sub/models/sub/tiny-aya-global/README.md) — co-produced model with Cohere Labs.
+- [Tiny Aya Water](../../../../../models/sub/cohere-labs/sub/aya/sub/tiny-aya/sub/models/sub/tiny-aya-water/README.md) — co-produced model with Cohere Labs.
 
 ## Official resources
 
@@ -24,3 +30,7 @@ Model families, managed deployment services and the North workspace retain separ
 - [Cohere model catalog](https://docs.cohere.com/docs/models)
 - [Cohere documentation introduction](https://docs.cohere.com/docs/welcome)
 - [Cohere deployment options](https://docs.cohere.com/docs/deployment-options-overview)
+- [Tiny Aya Global model card](https://huggingface.co/CohereLabs/tiny-aya-global)
+- [Tiny Aya Earth model card](https://huggingface.co/CohereLabs/tiny-aya-earth)
+- [Tiny Aya Fire model card](https://huggingface.co/CohereLabs/tiny-aya-fire)
+- [Tiny Aya Water model card](https://huggingface.co/CohereLabs/tiny-aya-water)

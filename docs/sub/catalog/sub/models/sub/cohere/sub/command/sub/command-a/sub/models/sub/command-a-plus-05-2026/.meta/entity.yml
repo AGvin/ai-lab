@@ -3,19 +3,49 @@ entity:
   type: model
   name: Command A+
   references:
-    - type: documentation
-      source:
-        url: https://docs.cohere.com/docs/command-a-plus
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: release-notes
-      source:
-        url: https://docs.cohere.com/v1/changelog/command-a-plus-05-2026
-      purposes:
-        - research
-      authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/command-a-plus
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://docs.cohere.com/v1/changelog/command-a-plus-05-2026
+    purposes:
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://cohere.com/blog/command-a-plus
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/models
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: member-of
-      target: catalog/models/cohere/command/command-a
+  - type: member-of
+    target: catalog/models/cohere/command/command-a
+  - type: produced-by
+    target: catalog/producers/c/cohere-labs

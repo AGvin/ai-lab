@@ -3,19 +3,26 @@ entity:
   type: model
   name: Parse 5
   references:
-    - type: documentation
-      source:
-        url: https://docs.cohere.com/v2/docs/parse
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: release-notes
-      source:
-        url: https://docs.cohere.com/changelog/parse
-      purposes:
-        - research
-      authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/v2/docs/parse
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://docs.cohere.com/changelog/parse
+    purposes:
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: member-of
-      target: catalog/models/cohere/parse
+  - type: member-of
+    target: catalog/models/cohere/parse

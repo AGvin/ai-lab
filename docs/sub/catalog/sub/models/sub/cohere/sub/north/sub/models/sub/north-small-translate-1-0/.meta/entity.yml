@@ -3,19 +3,49 @@ entity:
   type: model
   name: North Small Translate 1.0
   references:
-    - type: documentation
-      source:
-        url: https://docs.cohere.com/docs/north-small-translate-1.0
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: article
-      source:
-        url: https://cohere.com/blog/north-small-translate
-      purposes:
-        - research
-      authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/north-small-translate-1.0
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://cohere.com/blog/north-small-translate
+    purposes:
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/North-Small-Translate-1.0
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/models
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://cohere.com/cohere-labs-cc-by-nc-license
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/cohere-labs-acceptable-use-policy
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: member-of
-      target: catalog/models/cohere/north
+  - type: member-of
+    target: catalog/models/cohere/north
+  - type: produced-by
+    target: catalog/producers/c/cohere-labs

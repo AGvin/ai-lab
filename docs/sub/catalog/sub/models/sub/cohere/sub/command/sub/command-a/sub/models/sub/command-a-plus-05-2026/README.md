@@ -1,23 +1,29 @@
 # Command A+
 
-Command A+ is the concrete `command-a-plus-05-2026` model released on 2026-05-20.
+Command A+ is the May 2026 sparse mixture-of-experts model for text and image understanding, reasoning and tool workflows.
 
-## Translations
+## Identity and provenance
 
-- English
-- [Українська](./l10n/uk_UA/)
+The model card explicitly credits Cohere and Cohere Labs and reports 218B total parameters with 25B active per token. The BF16 and W4A4 repositories describe distributions of Command A+, not additional learned-model identities. [Command A+ BF16 model card](https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16) [Command A+ W4A4 distribution card](https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4).
 
-## Scope and boundaries
+The current API identity is command-a-plus-05-2026. Cohere’s launch is dated 20 May 2026; the model remains listed live. [Command A+ documentation](https://docs.cohere.com/docs/command-a-plus) [Command A+ launch article](https://cohere.com/blog/command-a-plus) [Cohere model lifecycle and API identifiers](https://docs.cohere.com/docs/models).
 
-- Its sparse MoE architecture, 218B total / 25B active parameter distinction, text+image input, text output, 128K context, 64K max output, April 1 2025 knowledge cutoff, and current 48-language support from Cohere's model documentation.
-- The Apache 2.0 open-weights distribution boundary as a source-backed distribution fact.
-- Model Vault/API pricing, rate limits, deployment hardware guidance, and hosted availability freshness-sensitive.
+## Decision and operating boundaries
 
-## Relations
+- Cohere documents a 128K context, a 64K output limit, 48 supported languages and text/image input with text output. Image understanding does not imply image generation. Active-parameter count does not represent total memory needed to load weights and maintain runtime state. [Command A+ documentation](https://docs.cohere.com/docs/command-a-plus) [Command A+ BF16 model card](https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16) [Cohere model lifecycle and API identifiers](https://docs.cohere.com/docs/models).
+- The model weights state Apache 2.0. Cohere’s one-B200/two-H100 serving claim is attached to the W4A4 distribution; it must not be applied to BF16 or every context, concurrency and runtime configuration. [Command A+ BF16 model card](https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16) [Command A+ W4A4 distribution card](https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4) [Command A+ documentation](https://docs.cohere.com/docs/command-a-plus).
+- Reasoning, tool calling and serving controls belong to the selected implementation. Tool requests need an execution harness, and provider quality or efficiency comparisons do not establish local benchmark performance. [Command A+ documentation](https://docs.cohere.com/docs/command-a-plus) [Command A+ BF16 model card](https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16).
 
-- Member of: [`catalog/models/cohere/command/command-a`](../../../..//)
+## Catalog relations
+
+- [Cohere Labs](../../../../../../../../../../../producers/sub/c/sub/cohere-labs/) — producer.
+- [Command A](../../../../) — series or family.
 
 ## Official resources
 
-- <https://docs.cohere.com/docs/command-a-plus>
-- <https://docs.cohere.com/v1/changelog/command-a-plus-05-2026>
+- [Command A+ documentation](https://docs.cohere.com/docs/command-a-plus).
+- [Command A+ release](https://docs.cohere.com/v1/changelog/command-a-plus-05-2026).
+- [Command A+ BF16 model card](https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16).
+- [Command A+ W4A4 distribution card](https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4).
+- [Command A+ launch article](https://cohere.com/blog/command-a-plus).
+- [Cohere model lifecycle and API identifiers](https://docs.cohere.com/docs/models).
