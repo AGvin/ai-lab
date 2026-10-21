@@ -4,6 +4,13 @@ entity:
   name: NASA-IBM Lunar Foundation Model
   aliases:
     - NASA-IBM LFM
+  identity_note: >-
+    NASA-IBM Lunar Foundation Model is a multimodal, multi-resolution lunar remote-sensing
+    foundation model jointly released by NASA and IBM. The current model card describes a ViT-B
+    encoder-decoder pretrained from scratch on SomBench, with nearly two million co-registered tile
+    bundles spanning 11 modalities at 1 m/pixel and 100 m/pixel scales. The released checkpoint is
+    Apache-2.0. Downstream crater, irregular-mare-patch, and ice-prospectivity models are separate
+    task adaptations rather than aliases of this pretrained model.
   references:
     - type: article
       source:
@@ -22,6 +29,20 @@ entity:
     - type: registry
       source:
         url: https://huggingface.co/nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2609.13283
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/NASA-IMPACT/NASA-IBM-Lunar-Foundation-Model
       purposes:
         - identification
         - research

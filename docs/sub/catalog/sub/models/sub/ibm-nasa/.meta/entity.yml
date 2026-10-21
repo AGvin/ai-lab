@@ -2,6 +2,11 @@ entity:
   id: catalog/models/ibm-nasa
   type: model-producer-view
   name: IBM-NASA collaborative models
+  identity_note: >-
+    This node is a collaboration-oriented model-domain view for jointly released IBM-NASA research
+    models. It is not a synthetic producer organization and does not imply that every IBM or NASA
+    model is jointly produced. Concrete models retain explicit producer relations and their own
+    technical, licensing, and intended-use boundaries.
   references:
     - type: article
       source:
@@ -13,6 +18,13 @@ entity:
     - type: article
       source:
         url: https://newsroom.ibm.com/2026-09-10-ibm-and-nasa-release-open-source-ai-model-to-support-lunar-exploration
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/nasa-ibm-ai4science
       purposes:
         - identification
         - research
