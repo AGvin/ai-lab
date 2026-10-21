@@ -6,6 +6,8 @@
 - Preserve official model identity and source-backed capabilities without generalizing properties from the much larger Qwen3.8-2.4T-A95B sibling.
 - Keep exact artifacts, quantizations, provider routes, benchmark state, and deployment recommendations outside intrinsic model identity unless separately materialized.
 
+- Preserve the reciprocal has-derivative relation to Cloudflare's independently trained Clef decision model, supported by its official model card; do not transfer the derivative's option-scoring output or hosted limits to this parent.
+
 ## Decision and Operational Boundaries
 
 - Qwen3.8-27B is the released 27B dense vision-language checkpoint, accepting image/video/text input and generating text under Apache-2.0.

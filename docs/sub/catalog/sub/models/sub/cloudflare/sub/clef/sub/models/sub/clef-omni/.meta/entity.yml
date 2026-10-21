@@ -2,10 +2,17 @@ entity:
   id: catalog/models/cloudflare/clef/models/clef-omni
   type: model
   name: Clef-omni
+  identity_note: >-
+    Clef-omni is Cloudflare's multimodal decision model released on 9 October 2026. It uses the
+    Qwen/Qwen3-Omni-30B-A3B-Instruct thinker backbone, with 30B total and 3B active parameters, to
+    score allowed answers from text, images, audio and video. Native media input does not imply
+    speech or free-form text output. The official release includes unchanged speech-output weights
+    from the upstream model but the decision loader does not use them. Plan for total weights and
+    media processing, and scope the current 64,000-token context and clip counts to Workers AI.
   references:
     - type: documentation
       source:
-        url: https://developers.cloudflare.com/ai/models/@cf/cloudflare/clef-omni/
+        url: https://developers.cloudflare.com/workers-ai/models/clef-omni/
       purposes:
         - identification
         - research
@@ -15,6 +22,11 @@ entity:
         url: https://developers.cloudflare.com/changelog/post/2026-10-09-clef-omni-workers-ai/
       purposes:
         - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/Cloudflare/clef-omni
+      purposes: [identification, research]
       authority: official
   relations:
     - type: member-of

@@ -20,11 +20,16 @@ Qwen3.8-27B is the released 27B dense vision-language checkpoint, accepting imag
 
 - <https://github.com/QwenLM/Qwen3.8>
 
+## Derived model
+
+Cloudflare's Clef is a separately trained decision model based on this checkpoint. Cloudflare adds a joint schema head that scores predefined answers; the parent Qwen model retains its own generative identity and runtime requirements. [Cloudflare model card and lineage](https://huggingface.co/Cloudflare/clef)
+
 ## Relationships
 
 | Relationship | Catalog page |
 | --- | --- |
 | Member of | [Qwen3.8](../../../../) |
+| Derived model | [Clef](../../../../../../../../../cloudflare/sub/clef/sub/models/sub/clef/README.md) |
 
 ## Primary Sources
 

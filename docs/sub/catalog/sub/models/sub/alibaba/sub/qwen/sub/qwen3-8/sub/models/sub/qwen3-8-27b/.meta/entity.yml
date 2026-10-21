@@ -22,8 +22,15 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/Cloudflare/clef
+      purposes: [identification, research]
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/alibaba/qwen/qwen3-8
+    - type: has-derivative
+      target: catalog/models/cloudflare/clef/models/clef
   aliases:
     - Qwen/Qwen3.8-27B

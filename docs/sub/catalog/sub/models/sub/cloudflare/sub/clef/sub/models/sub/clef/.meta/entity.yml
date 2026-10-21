@@ -2,6 +2,14 @@ entity:
   id: catalog/models/cloudflare/clef/models/clef
   type: model
   name: Clef
+  identity_note: >-
+    Clef is Cloudflare's concrete 27B decision model, released on 1 October 2026 and post-trained
+    from Qwen/Qwen3.8-27B. It uses a joint schema head to score predefined answers from text,
+    structured state and supported visual inputs, without free-form text generation. The Apache 2.0
+    release includes the backbone, joint schema head, processor and model-specific implementation.
+    Workers AI currently documents a 65,536-token context; questions and media consume that budget
+    and long text state can be truncated. Validate retained evidence and decision thresholds before
+    acting on a probability.
   references:
     - type: documentation
       source:
@@ -16,6 +24,23 @@ entity:
       purposes:
         - research
       authority: official
+    - type: article
+      source:
+        url: https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/Cloudflare/clef
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://blog.cloudflare.com/clef-decision-models/
+      purposes: [identification, research]
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/cloudflare/clef
+    - type: derived-from
+      target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-27b

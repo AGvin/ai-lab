@@ -2,15 +2,17 @@
 
 ## Requirements
 
-- Identify Clef-omni as Cloudflare's separately released multi-modal MoE decision model, published under the Clef family.
-- Preserve the released model's 30B total / 3B active MoE parameter identity and text/JSON, images, audio, video; distinguish typed decision/probability outputs from natural-language response generation.
-- Keep 30B total vs 3B active parameter semantics explicit. October 9, 2026 Workers AI access includes audio/video; do not infer that every alternative backend currently exposes identical media I/O.
-- Evaluate use cases (routing, safety classification, structured workflow choice) against the defined typed question schema, confidence/calibration needs, failure handling, and required human review rather than inferring safe autonomous action.
-- Keep Cloudflare Workers AI alias, pricing, quotas, task-specific model selector and provider latency benchmarks with hosted service/runtime owners; vendor benchmark tables are evidence inputs, not independent AI Lab rankings.
-- Treat the exact model card, weights/distribution, licensing and self-hosting compatibility as current-source facts that may change by release.
+- Preserve Clef-omni as the concrete Cloudflare derivative released on 9 October 2026, with 30B total / 3B active MoE parameters.
+- Record the exact Qwen/Qwen3-Omni-30B-A3B-Instruct thinker backbone as a source-backed fact without inventing an absent canonical target.
+- Explain text/JSON, image, audio and video inputs with allowed-option probability outputs; upstream talker/code2wav weights are included but not loaded by the decision implementation.
+- Distinguish total from active parameters and vendor-tested memory/runtime from a guaranteed deployment minimum.
+- Scope the current 64,000-token context, up to four audio clips and two videos, token accounting and possible text truncation to the documented Workers AI route.
+- Preserve Apache 2.0 weight and custom loader/processor provenance; test supported media formats, synchronization and the exact chosen backend.
+- Require media-specific decision evaluation, calibrated thresholds, fallback handling, data-access controls and independent action authorization.
+- Realize a complete English reader with cited official sources, canonical links and the above operational boundaries; advertise only existing localized readers.
 
 ## Validation
 
-- One separately trained model identity appears under Clef, not as a duplicated API endpoint or pricing tier.
-- `member-of` and `has-member` relations are reciprocal.
-- Parameter counts, modality and runtime capability claims are scoped to authoritative, dated sources.
+- Preserve canonical ID, name, type and aliases, and validate the complete source against the current entity schema.
+- Verify each declared relation and required inverse, plus every displayed internal reader link.
+- This is authored-content and static verification; no inference, benchmark, cache, clean-cycle or final-render result is claimed.

@@ -2,6 +2,14 @@ entity:
   id: catalog/models/cloudflare/clef/models/clef-flash
   type: model
   name: Clef-flash
+  identity_note: >-
+    Clef-flash is Cloudflare's concrete 9B decision model, released on 1 October 2026 and
+    post-trained from Qwen/Qwen3.5-9B. It scores allowed answers to typed questions from text,
+    structured state and supported visual inputs, and is positioned by Cloudflare for lower-latency
+    decisions. The 9 October hosted change reduced the advertised context from 64K to 24K without
+    changing the weights; the current Workers AI page specifies 24,576 tokens. Cloudflare separately
+    describes up to 256K for self-hosted weights. Neither value guarantees practical memory fit or
+    complete input retention in a chosen runtime.
   references:
     - type: documentation
       source:
@@ -15,6 +23,21 @@ entity:
         url: https://developers.cloudflare.com/changelog/post/2026-10-09-clef-omni-workers-ai/
       purposes:
         - research
+      authority: official
+    - type: article
+      source:
+        url: https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/Cloudflare/clef-flash
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://blog.cloudflare.com/clef-decision-models/
+      purposes: [identification, research]
       authority: official
   relations:
     - type: member-of

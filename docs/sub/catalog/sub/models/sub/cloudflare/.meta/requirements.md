@@ -2,12 +2,14 @@
 
 ## Requirements
 
-- Provide model-domain navigation for first-party Cloudflare-trained decision models represented under this producer view.
-- Distinguish the trained Clef model family from the Cloudflare company, Cloudflare Workers AI managed inference service, model-serving tiers, and AI Gateway.
-- Preserve first-party trained-model identity, release evidence, input/output semantics and exact model weights rather than duplicating hosted aliases as new models.
-- Keep the current Cloudflare Workers AI model catalog, dated changelog and official model cards as sources for supported interfaces and versions.
+- Identify this node as a model-producer view and link the canonical Cloudflare producer profile and represented Clef family.
+- Keep Cloudflare-trained model identities separate from third-party models hosted on Workers AI, AI Gateway and fine-tuning services.
+- Keep model size, architecture, weight licensing, modalities and context claims on their concrete model owners; derive any navigation summary from those records.
+- Do not materialize the separately announced Clairic preview as a stable released model or imply that this view exhausts future Cloudflare releases.
+- Realize a complete English reader with cited official sources, canonical links and the above operational boundaries; advertise only existing localized readers.
 
 ## Validation
 
-- Producer view resolves to a canonical distinct Clef family and does not duplicate the Cloudflare organization.
-- Model-family and individual model identity remain separate from hosted service details.
+- Preserve canonical ID, name, type and aliases, and validate the complete source against the current entity schema.
+- Verify each declared relation and required inverse, plus every displayed internal reader link.
+- This is authored-content and static verification; no inference, benchmark, cache, clean-cycle or final-render result is claimed.

@@ -2,15 +2,17 @@
 
 ## Requirements
 
-- Identify Clef as Cloudflare's separately released 27B flagship decision model, published under the Clef family.
-- Preserve the released model's 27B parameter identity and text/JSON and image/video input supported by the documented Workers AI model routes; distinguish typed decision/probability outputs from natural-language response generation.
-- Treat 27B parameter count and open-weight Apache 2.0 announcement as upstream model facts, while hosted 64K context and Workers AI price remain mutable service configuration.
-- Evaluate use cases (routing, safety classification, structured workflow choice) against the defined typed question schema, confidence/calibration needs, failure handling, and required human review rather than inferring safe autonomous action.
-- Keep Cloudflare Workers AI alias, pricing, quotas, task-specific model selector and provider latency benchmarks with hosted service/runtime owners; vendor benchmark tables are evidence inputs, not independent AI Lab rankings.
-- Treat the exact model card, weights/distribution, licensing and self-hosting compatibility as current-source facts that may change by release.
+- Preserve the concrete Clef identity and 27B parameter description separately from the identically named family.
+- Record the explicit post-training lineage from Qwen/Qwen3.8-27B with a derived-from relation and the parent's reciprocal has-derivative relation; derivative authorship remains Cloudflare.
+- Explain the joint schema head, allowed-option probability outputs and supported text/JSON/image/video inputs; do not copy the parent's generative behavior into this derivative.
+- Distinguish the Apache 2.0 model release and its custom implementation from hosted endpoint configuration or a generic chat-generation example.
+- Scope the current 65,536-token limit to Workers AI; account for questions and media, request failure when they exceed context, and truncation of the text state.
+- Use the published loader and processor with pinned revisions and tested runtime settings; vendor-tested hardware is not a universal minimum.
+- Require representative classification/workflow evaluation, calibrated thresholds, fallback handling and separate action authorization.
+- Realize a complete English reader with cited official sources, canonical links and the above operational boundaries; advertise only existing localized readers.
 
 ## Validation
 
-- One separately trained model identity appears under Clef, not as a duplicated API endpoint or pricing tier.
-- `member-of` and `has-member` relations are reciprocal.
-- Parameter counts, modality and runtime capability claims are scoped to authoritative, dated sources.
+- Preserve canonical ID, name, type and aliases, and validate the complete source against the current entity schema.
+- Verify each declared relation and required inverse, plus every displayed internal reader link.
+- This is authored-content and static verification; no inference, benchmark, cache, clean-cycle or final-render result is claimed.

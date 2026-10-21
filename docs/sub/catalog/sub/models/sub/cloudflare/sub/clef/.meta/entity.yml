@@ -2,6 +2,13 @@ entity:
   id: catalog/models/cloudflare/clef
   type: model-family
   name: Clef
+  identity_note: >-
+    Clef is Cloudflare's released family of decision models. It groups the independently identified
+    Clef, Clef-flash and Clef-omni models, which score allowed answers to typed questions rather
+    than produce unconstrained text responses. Define the allowed outcomes, select a concrete member
+    and calibrate the action thresholds for the task. API compatibility, hosted context, media
+    processing, weight availability and runtime requirements have separate scopes. A probability or
+    a well-formed answer is not authorization to act.
   references:
     - type: article
       source:
@@ -15,6 +22,11 @@ entity:
         url: https://developers.cloudflare.com/changelog/post/2026-10-09-clef-omni-workers-ai/
       purposes:
         - research
+      authority: official
+    - type: article
+      source:
+        url: https://blog.cloudflare.com/clef-decision-models/
+      purposes: [identification, research]
       authority: official
   relations:
     - type: produced-by
