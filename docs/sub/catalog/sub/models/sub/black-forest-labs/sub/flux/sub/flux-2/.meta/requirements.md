@@ -1,16 +1,17 @@
 # Documentation Requirements
 
-## Requirements
+## Identity and provenance
 
-- Identify FLUX.2 as Black Forest Labs' current image-generation and image-editing model series.
-- Preserve the shared text-to-image and image-editing boundary, multi-reference workflows, high-resolution output, text rendering, color/control capabilities, and current API/open-weight split only while supported by first-party material.
-- Keep FLUX.2 distinct from FLUX.1 and from the separately evolving FLUX 3 multimodal/video line.
-- Materialize current named FLUX.2 variants where BFL exposes a durable model identity and materially different quality, control, speed, openness, or deployment boundary.
-- Treat per-variant pricing, reference-image limits, output limits, API parameters, open-weight sizes/licenses, fine-tuning availability, hardware fit, and benchmark/provider comparisons as freshness-sensitive.
-- Attribute image-quality, speed, text-rendering, spatial-reasoning, and comparative claims to Black Forest Labs or the cited evaluator rather than independent AI Lab measurement.
+- FLUX.2 is a Black Forest Labs image-generation and image-editing model series. It groups the named max, pro, flex and dev models and the specialized Klein subseries without collapsing their distinct deployment or licensing boundaries.
+- The series includes max, pro, flex and dev alongside the specialized Klein subseries. Klein contains separately published scale, base, distilled and KV model choices. [FLUX.2 overview](https://docs.bfl.ai/flux_2/flux2_overview) [FLUX.2 inference repository](https://github.com/black-forest-labs/flux2) [FLUX.2 Klein launch](https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence).
+
+## Operational decision boundaries
+
+- FLUX.2 includes hosted offerings and separately licensed downloadable weights. Do not give the whole series one license, parameter count, reference-image limit or hardware minimum. [FLUX.2 overview](https://docs.bfl.ai/flux_2/flux2_overview) [FLUX.2 inference repository](https://github.com/black-forest-labs/flux2).
+- Provider reference limits, resolutions, sampling controls and preview endpoints vary by exact model and access route. Pin those choices for a workflow; a preview alias may change its underlying weights without creating a new canonical identity automatically. [FLUX.2 overview](https://docs.bfl.ai/flux_2/flux2_overview).
 
 ## Validation
 
-- FLUX.2 remains a model series, not an API service or one universal concrete checkpoint.
-- Hosted-only and open-weight variants are not conflated.
-- Minor endpoint/snapshot differences do not become peer canonical model identities by default.
+- Preserve the canonical identity, model hierarchy and exact reciprocal relation targets; distinguish producer, family, series, model, artifact and serving identities.
+- Render all visible current-node relations in deterministic order and resolve local reader links. Restore missing readers from canonical facts without granting dependency-domain credit.
+- Keep source dates, availability, license conditions and service-specific limits attributable. Do not turn provider claims into local runtime, performance or benchmark verification.

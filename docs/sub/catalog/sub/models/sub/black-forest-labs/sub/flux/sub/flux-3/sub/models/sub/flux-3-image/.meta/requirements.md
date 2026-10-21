@@ -1,14 +1,18 @@
 # Documentation Requirements
 
-## Requirements
+## Identity and provenance
 
-- Identify FLUX 3 Image as the released FLUX 3 image generation/editing surface available through Black Forest Labs' production offering in October 2026.
-- Preserve current layout/bounding-box and image-editing behavior only while current BFL documentation supports it.
-- Keep promotional launch pricing, resolution tiers, API parameters, throughput, availability, and comparison claims freshness-sensitive.
-- Keep FLUX 3 Image distinct from FLUX.2, FLUX Tools, FLUX 3 Video, and FLUX 3 Action.
-- Do not generalize FLUX 3 program claims to the concrete Image surface without direct support.
+- FLUX 3 Image is Black Forest Labs' named FLUX 3 image-generation and editing model, available through documented hosted interfaces. It is distinct from the separately published Image Klein Base and distilled models.
+- Use the current model page and API documentation for availability. The initial July 2026 promise of later Image access is a historical rollout statement, not the current access gate. [FLUX 3 Image product page](https://bfl.ai/models/flux-3-image) [FLUX 3 Image API overview](https://docs.bfl.ai/flux_3/flux3_image_overview) [FLUX 3 initial announcement](https://bfl.ai/blog/flux-3).
+
+## Operational decision boundaries
+
+- The documented API supports text with up to ten reference images and layout guidance through normalized bounding boxes. These are current serving controls, not a guarantee of pixel-perfect masks or one universal limit across all deployments. [FLUX 3 Image API overview](https://docs.bfl.ai/flux_3/flux3_image_overview).
+- Web grounding is on by default in the documented interface; grounding:false limits that request to its supplied prompt context. Confirm this setting and any external-search processing when selecting a workflow. Grounding does not certify factual correctness. [FLUX 3 Image API overview](https://docs.bfl.ai/flux_3/flux3_image_overview).
+- Public hosted access and commercial weight arrangements do not constitute an open-weight license. The reviewed sources do not establish a public parameter count for this named hosted model; do not borrow Image Klein's 5.6B count or license. [FLUX 3 Image product page](https://bfl.ai/models/flux-3-image) [FLUX 3 Image API overview](https://docs.bfl.ai/flux_3/flux3_image_overview) [FLUX 3 Image Klein release](https://bfl.ai/blog/flux-3-image-klein).
 
 ## Validation
 
-- Current paid/production availability is distinguished from the earlier early-access announcement.
-- Promotional pricing is never frozen as a durable model fact.
+- Preserve the canonical identity, model hierarchy and exact reciprocal relation targets; distinguish producer, family, series, model, artifact and serving identities.
+- Render all visible current-node relations in deterministic order and resolve local reader links. Restore missing readers from canonical facts without granting dependency-domain credit.
+- Keep source dates, availability, license conditions and service-specific limits attributable. Do not turn provider claims into local runtime, performance or benchmark verification.

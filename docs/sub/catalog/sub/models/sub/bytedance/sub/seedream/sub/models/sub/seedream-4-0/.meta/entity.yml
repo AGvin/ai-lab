@@ -3,11 +3,37 @@ entity:
   type: model
   name: Seedream 4.0
   references:
-    - type: article
-      source:
-        url: https://seed.bytedance.com/en/blog/seedream-4-0-officially-released-beyond-drawing-into-imagination
-      purposes: [identification, research]
-      authority: official
+  - type: article
+    source:
+      url: https://seed.bytedance.com/en/blog/seedream-4-0-officially-released-beyond-drawing-into-imagination
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: product-page
+    source:
+      url: https://seed.bytedance.com/en/seedream4_0
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/ModelArk/1330310
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/ModelArk/1541523
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: member-of
-      target: catalog/models/bytedance/seedream
+  - type: member-of
+    target: catalog/models/bytedance/seedream
+  identity_note: Seedream 4.0 is ByteDance Seed's image-generation and general-purpose editing model, officially
+    released on 2025-09-09. Its unified architecture accepts text and reference images and supports related-image
+    generation workflows.

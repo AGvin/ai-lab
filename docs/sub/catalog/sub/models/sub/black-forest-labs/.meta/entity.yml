@@ -3,16 +3,33 @@ entity:
   type: model-producer-view
   name: Black Forest Labs Models
   references:
-    - type: official-site
-      source:
-        url: https://blackforestlabs.ai/
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: registry
-      source:
-        url: https://huggingface.co/black-forest-labs
-      purposes:
-        - research
-      authority: official
+  - type: official-site
+    source:
+      url: https://bfl.ai/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-registry
+    source:
+      url: https://huggingface.co/black-forest-labs
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.bfl.ai/flux_2/flux2_overview
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://bfl.ai/blog/flux-3
+    purposes:
+    - identification
+    - research
+    authority: official
+  identity_note: Model-domain view for Black Forest Labs; the separate canonical producer profile owns organizational
+    identity. This view navigates the FLUX family and does not itself identify a trained model or hosted service.

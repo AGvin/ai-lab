@@ -3,29 +3,40 @@ entity:
   type: model-series
   name: FLUX.2
   references:
-    - type: product-page
-      source:
-        url: https://bfl.ai/models/flux-2
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: documentation
-      source:
-        url: https://help.bfl.ai/articles/4292391522-what-is-flux-2
-      purposes:
-        - research
-      authority: official
+  - type: documentation
+    source:
+      url: https://docs.bfl.ai/flux_2/flux2_overview
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/black-forest-labs/flux2
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: member-of
-      target: catalog/models/black-forest-labs/flux
-    - type: has-member
-      target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-max
-    - type: has-member
-      target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-pro
-    - type: has-member
-      target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-flex
-    - type: has-member
-      target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-dev
-    - type: has-member
-      target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-klein
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-max
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-pro
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-flex
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-dev
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-2/flux-2-klein
+  identity_note: FLUX.2 is a Black Forest Labs image-generation and image-editing model series. It groups the named
+    max, pro, flex and dev models and the specialized Klein subseries without collapsing their distinct deployment
+    or licensing boundaries.
