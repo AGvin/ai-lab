@@ -2,3 +2,19 @@ entity:
   id: catalog/models/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated/artifacts
   type: catalog-index
   name: Huihui Qwen3 Coder 30B A3B Artifacts
+  identity_note: >-
+    This catalog index organizes the represented downloadable artifacts of the huihui.ai Qwen3-Coder
+    derivative. The reviewed child is mradermacher's static GGUF collection. Quantization type,
+    published file size and runtime compatibility describe artifacts and do not create another
+    trained-model identity.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
+      purposes: [identification, research]
+      authority: official

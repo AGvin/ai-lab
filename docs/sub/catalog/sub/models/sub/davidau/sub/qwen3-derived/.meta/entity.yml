@@ -2,3 +2,15 @@ entity:
   id: catalog/models/davidau/qwen3-derived
   type: catalog-index
   name: DavidAU Qwen3-Derived Models
+  identity_note: >-
+    This catalog index organizes represented DavidAU releases with documented Qwen3-derived
+    ancestry. It is a navigation group whose current concrete release is the Xiaolong/Josiefied
+    Omega Directive merge. Follow the release collection to the model record for exact immediate
+    parents and modification provenance. Common upstream ancestry does not make the index an
+    official model family or make the releases versions of one model.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF
+      purposes: [identification, research]
+      authority: official

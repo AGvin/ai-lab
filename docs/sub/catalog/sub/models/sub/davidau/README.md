@@ -1,20 +1,20 @@
 # DavidAU Models
 
-This model-domain view groups reviewed model releases published by David Belton under the Hugging Face handle `DavidAU`. Canonical producer identity remains on the [David Belton producer page](../../../../../../../producers/sub/d/sub/davidau/).
+This producer view organizes the represented model releases published under the DavidAU handle. The canonical producer is David Belton, and the existing Qwen3-derived branch provides navigation to the reviewed merge. [Primary source](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
 
-## Translations
+## Scope
 
-- English
-- [Українська](./l10n/uk_UA/)
+The represented release is a learned Xiaolong/Josiefied Omega Directive merge. Its publisher supplies a GGUF card that names the separate unsuffixed source identity and describes the merge. Model identity, the navigation grouping and the chosen quantized distribution have different roles. [Publisher source](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
 
-## Reviewed navigation
+## Selecting a release and distribution
 
-- [`qwen3-derived/`](./sub/qwen3-derived/) — catalog grouping for reviewed DavidAU models whose documented lineage descends from Qwen3-family sources.
+Open the concrete model record for its immediate parent identities, documented context and current source limitations. Evaluate a particular artifact and runtime configuration on the intended workload; a publisher handle or format label does not establish quality or hardware fit. [Model and usage description](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
 
-## Ownership boundary
+## Catalog navigation
 
-`qwen3-derived` is a navigation grouping, not a claimed DavidAU model family or series. Each concrete model owns its exact merge/fine-tune lineage, license, context, and source references. Quantized or converted repositories remain artifacts rather than separate trained model identities when they do not introduce new weights.
+- [David Belton](../../../producers/sub/d/sub/davidau/README.md) — Canonical producer
+- [DavidAU Qwen3-Derived Models](sub/qwen3-derived/README.md) — Qwen3-derived navigation
 
 ## Official resources
 
-- [DavidAU on Hugging Face](https://huggingface.co/DavidAU)
+- <https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF>

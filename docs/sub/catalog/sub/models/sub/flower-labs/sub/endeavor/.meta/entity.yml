@@ -2,6 +2,12 @@ entity:
   id: catalog/models/flower-labs/endeavor
   type: model-family
   name: Endeavor
+  identity_note: >-
+    Endeavor is Flower Labs' model family for generalist reasoning, coding assistance and
+    long-horizon agent work. Endeavor 1.0 is the represented concrete model. Use the member record
+    for current preview availability, deployment contracts, context limits and evaluation evidence.
+    Flower Labs, its general Flower software and the Endeavor trained-model family retain separate
+    catalog roles.
   references:
     - type: documentation
       source:

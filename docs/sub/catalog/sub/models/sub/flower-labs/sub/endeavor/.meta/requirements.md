@@ -2,14 +2,14 @@
 
 ## Requirements
 
-- Identify Endeavor as Flower Labs' frontier-class generalist model family for reasoning, coding, and long-horizon agent work.
-- Preserve the lifecycle boundary: the currently represented public family member is released as a production-ready preview with limited request-based availability, not as an unrestricted GA or public open-weight release.
-- Keep Flower-managed access and supported private deployment as deployment/access modes of the model family rather than separate canonical provider-service identities unless a durable standalone service boundary emerges.
-- Keep benchmark results, supported interfaces, context/tool details, private-deployment artifacts, pricing, and access terms freshness-sensitive and source-attributed.
-- Render the standard `entity-relations` block from validated current-entity relations.
+- Preserve the official Endeavor family identity, Flower Labs provenance and exact existing member relation.
+- Keep member-specific lifecycle, client settings, deployment limits, artifacts and evaluation claims on the concrete model record and derive reader summaries from it.
+- Explain managed and supported private deployment as access/operation choices, without inventing separate trained models or a public open-weight release.
+- Keep vendor frontier-class positioning attributable and do not present cross-source comparisons as independent controlled evaluation.
+- Realize the complete English reader with cited identity, decision and operational facts and exact canonical navigation; advertise localized readers only when present.
 
 ## Validation
 
-- Endeavor remains distinct from Flower Labs as producer and from generic Flower federated-learning software.
-- Preview status is not misreported as unrestricted GA.
-- Vendor evaluation claims are not presented as independent AI Lab findings.
+- Preserve the canonical ID, name, type, aliases, existing source references and all existing relations; validate the complete entity against the repository schema.
+- Verify every outgoing relation, its exact required inverse and every reader target against the composed catalog tree.
+- Keep producer views, navigation indexes, trained models, model families, service access and quantized artifacts distinct; qualify publisher claims and current retrieval limits.
