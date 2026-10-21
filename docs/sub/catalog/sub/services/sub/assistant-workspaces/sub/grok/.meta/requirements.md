@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Identify Grok as SpaceXAI's hosted AI assistant service available through SpaceXAI-operated web and mobile surfaces.
+- Identify Grok as the hosted AI assistant service produced by SpaceXAI LLC under its current SpaceXSI public name and available through its operated web and mobile surfaces.
 - Keep the hosted assistant boundary distinct from underlying Grok model identities, the separate Grok Bot digital-worker service, Grok Build, and Grok integrations delivered through separately operated third-party surfaces.
 - Keep exact plans, models, feature limits, integrations, account controls, regional availability, and data-handling behavior source-backed and time-scoped when expanded.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.

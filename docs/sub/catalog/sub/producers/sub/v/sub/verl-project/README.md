@@ -1,6 +1,10 @@
 # verl Project
 
-The verl Project publishes the verl reinforcement-learning post-training framework and the separately released verl-vla framework for embodied vision-language-action post-training. The project repositories and official site provide the shared project identity. The [verl-vla package metadata](https://github.com/verl-project/verl-vla/blob/v0.1.0/pyproject.toml) also credits ByteDance as author.
+The verl Project is the upstream project community behind verl and the separately released verl-vla framework. Its first-party material preserves ByteDance's role in the original project and the verl-vla package author attribution.
+
+## Producer and operating boundary
+
+Current project stewardship, historical authorship and integrated model ownership are separate. Training and robot workflows require compatible distributed resources, dependency versions and scoped credentials; a released framework or human-intervention feature does not by itself establish safe physical deployment.
 
 ## Relations
 
@@ -9,6 +13,7 @@ The verl Project publishes the verl reinforcement-learning post-training framewo
 
 ## Official resources
 
-- <https://github.com/verl-project/verl>
-- <https://github.com/verl-project/verl-vla>
-- <https://verl-project.github.io/>
+- [verl upstream and origin](https://github.com/verl-project/verl)
+- [Official website](https://verl-project.github.io/)
+- [verl-vla upstream](https://github.com/verl-project/verl-vla)
+- [Released verl-vla package attribution](https://github.com/verl-project/verl-vla/blob/v0.1.0/pyproject.toml)

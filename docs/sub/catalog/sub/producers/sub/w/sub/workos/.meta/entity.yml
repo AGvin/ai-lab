@@ -2,6 +2,14 @@ entity:
   id: catalog/producers/w/workos
   type: organization
   name: WorkOS
+  identity_note: >-
+    WorkOS is the organization operating WorkOS Agent Auth within AuthKit. Its September 2026 release
+    announcement identifies Agent Auth as early access, with first-class agent identities and reusable
+    blueprints; the current guides do not establish a later general-availability transition. Agent identities,
+    delegated sessions and short-lived scoped credentials are access-control mechanisms. Actual authority
+    depends on the configured blueprint, grant and target service. Generic user authentication,
+    machine-to-machine applications, Fine-Grained Authorization and WorkOS Connect remain separate product or
+    capability boundaries.
   references:
     - type: official-site
       source:
@@ -13,6 +21,24 @@ entity:
     - type: documentation
       source:
         url: https://workos.com/docs
+      purposes:
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://workos.com/changelog/agent-auth
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://workos.com/docs/authkit/agent-blueprints
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://workos.com/docs/authkit/agent-registration
       purposes:
         - research
       authority: official

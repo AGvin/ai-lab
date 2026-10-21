@@ -2,6 +2,12 @@ entity:
   id: catalog/producers/v/voltagent-inc
   type: organization
   name: VoltAgent Inc.
+  identity_note: >-
+    VoltAgent Inc. is the company named in the VoltAgent repository's MIT license. It publishes the TypeScript
+    agent framework; VoltOps Console and related operational services have distinct product and deployment
+    boundaries. The framework license does not set the terms of connected model providers or hosted telemetry.
+    Tools and workflows can use network services, credentials and memory stores, so review their permissions and
+    data destinations for the chosen deployment rather than inferring isolation from local installation.
   references:
     - type: official-site
       source:
@@ -15,6 +21,12 @@ entity:
         url: https://github.com/VoltAgent/voltagent
       purposes:
         - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/VoltAgent/voltagent/blob/main/LICENCE
+      purposes:
         - research
       authority: official
   relations:

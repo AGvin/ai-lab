@@ -9,7 +9,7 @@ Verl/HybridFlow is an open-source reinforcement-learning post-training framework
 
 ## Relations
 
-- Produced by: [`catalog/producers/v/verl-project`](../../../../../../../producers/sub/v/sub/verl-project/)
+- Produced by: [verl Project](../../../../../../../producers/sub/v/sub/verl-project/)
 
 ## Official resources
 

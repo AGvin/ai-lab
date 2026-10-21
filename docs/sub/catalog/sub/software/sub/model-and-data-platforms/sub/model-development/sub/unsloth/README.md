@@ -9,7 +9,7 @@ Unsloth is an installable local model-development toolkit whose durable product 
 
 ## Relations
 
-- Produced by: [`catalog/producers/u/unsloth-ai`](../../../../../../../producers/sub/u/sub/unsloth-ai/)
+- Produced by: [Unsloth AI](../../../../../../../producers/sub/u/sub/unsloth-ai/)
 
 ## Official resources
 

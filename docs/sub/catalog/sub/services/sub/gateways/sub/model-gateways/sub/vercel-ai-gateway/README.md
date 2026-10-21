@@ -8,6 +8,10 @@ The hosted gateway provides model and provider access, routing and failover, API
 
 Model counts, provider coverage, pricing, routing policy, protocol compatibility, limits, and other mutable service behavior are freshness-sensitive. Routed third-party models retain their own canonical identities rather than becoming Vercel AI Gateway entities.
 
+## Relations
+
+- Produced by: [Vercel Inc.](../../../../../../../producers/sub/v/sub/vercel-inc/)
+
 ## Official resources
 
 - [Vercel AI Gateway](https://vercel.com/ai-gateway)

@@ -2,6 +2,13 @@ entity:
   id: catalog/producers/z/zyte
   type: organization
   name: Zyte
+  identity_note: >-
+    Zyte is the operator of Zyte API's hosted web-data extraction and browser services. The API's access modes
+    are distinct from the Scrapy framework and the separately operated Scrapy Cloud spider-job platform. HTTP
+    extraction, browser requests, proxy transport and live CDP connections have different state and feature
+    boundaries. Browser-request sessions are not a persistent shared CDP browser. Review the selected mode,
+    account eligibility, source-content permissions and retention; service access does not grant rights to every
+    destination's data.
   references:
     - type: official-site
       source:
@@ -13,6 +20,12 @@ entity:
     - type: documentation
       source:
         url: https://docs.zyte.com/zyte-api/get-started.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.zyte.com/zyte-api/usage/cdp.html
       purposes:
         - research
       authority: official

@@ -9,6 +9,8 @@
 - Respect destination content policies, personal-data handling, authentication and storage; agentic web extraction needs lawful rights and explicit data retention assumptions.
 - Keep Zyte API with first-party Zyte producer rather than making Scrapy framework, target websites or SDKs alternative producers.
 
+- Preserve the live CDP connection boundary: each session has its own browser, IP and cookie jar; separate connections do not inherit that session state. Current CDP access requires a paid subscription or configured pay-as-you-go spending limit and business verification; keep these requirements freshness-sensitive.
+
 ## Validation
 
 - Published first-party documentation demonstrates a live publicly documented hosted service rather than roadmap-only capability.

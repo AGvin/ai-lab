@@ -1,10 +1,10 @@
 # Vespa.ai
 
-Vespa.ai is the independent organization maintaining [Vespa](../../../../../software/sub/data-infrastructure/sub/vector-search/sub/vespa/) and operating [Vespa Cloud](../../../../../services/sub/data-infrastructure/sub/vector-search/sub/vespa-cloud/). Vespa originated at Yahoo; the independent Vespa.ai organization was announced in 2023.
+Vespa.ai is the company behind the self-managed Vespa search platform and the separately operated Vespa Cloud service. Vespa originated at Yahoo; the independent company spin-out was announced in 2023.
 
-## Product boundaries
+## Producer and operating boundary
 
-Vespa is the released, self-managed search and serving software. Vespa Cloud provides separately operated, managed application deployments. Cloud plans, regions and managed capabilities are not inherently features of every self-managed release.
+Shared search technology does not give self-managed installations the operations, service commitments or commercial features of Vespa Cloud. Assess deployment, release, data handling and ranking configuration for the chosen software or service; performance figures require a matched workload and topology.
 
 ## Relations
 
@@ -13,5 +13,6 @@ Vespa is the released, self-managed search and serving software. Vespa Cloud pro
 
 ## Official resources
 
-- [Website](https://vespa.ai/)
-- [Source organization](https://github.com/vespa-engine)
+- [Vespa company and products](https://vespa.ai/)
+- [Source repository](https://github.com/vespa-engine)
+- [Vespa company spin-out](https://blog.vespa.ai/vespa-is-becoming-its-own-company/)

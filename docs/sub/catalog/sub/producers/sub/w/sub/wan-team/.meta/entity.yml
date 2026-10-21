@@ -2,6 +2,13 @@ entity:
   id: catalog/producers/w/wan-team
   type: team
   name: Wan Team
+  identity_note: >-
+    Wan Team is Alibaba Cloud's team for the Wan generative-model family. Its official organization publishes
+    model materials and the Wan Agent Skills collection; the team remains a distinct organizational part of
+    Alibaba Cloud. Model checkpoints, hosted Model Studio access and agent skills have different release,
+    licensing and data-transfer boundaries. Some skills call remote APIs and upload local inputs. Model or
+    service availability must be checked for the exact version and region rather than generalized across every
+    Wan generation.
   references:
     - type: official-site
       source:
@@ -15,6 +22,18 @@ entity:
         url: https://github.com/Wan-Video
       purposes:
         - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Wan-Video/Wan-skills
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/wan3-video-generation-guide
+      purposes:
         - research
       authority: official
   relations:

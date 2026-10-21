@@ -2,6 +2,13 @@ entity:
   id: catalog/producers/y/yandex
   type: organization
   name: Yandex
+  identity_note: >-
+    Yandex is the publishing organization for the represented AliceAI-T5 model family. Its official model
+    registry and model cards establish checkpoint provenance independently of Alice consumer applications,
+    search and hosted services. Base-model behavior, model code, checkpoint licenses and hardware requirements
+    are specific to the selected publication. A model card's custom-code loading example is an execution
+    decision to review and pin, not an assurance from the producer name. New model releases require their own
+    identity and operating assessment.
   references:
     - type: official-site
       source:
@@ -13,6 +20,12 @@ entity:
     - type: registry
       source:
         url: https://huggingface.co/yandex
+      purposes:
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
       purposes:
         - research
       authority: official

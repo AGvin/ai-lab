@@ -2,12 +2,31 @@ entity:
   id: catalog/producers/v/valyu
   type: organization
   name: Valyu
+  identity_note: >-
+    Valyu operates a hosted retrieval and research platform combining open-web information with specialized and
+    permissioned sources. Its Search, Contents, Answer and DeepResearch workflows belong to the service rather
+    than the producer organization. Access to licensed material, permitted reuse of outputs and citations,
+    processing terms and retention depend on the source and customer agreement. Valyu supplies retrieval and
+    synthesis; it does not thereby author the underlying sources, and its published benchmark claims are
+    first-party evidence.
   references:
     - type: official-site
       source:
         url: https://www.valyu.ai/
       purposes:
         - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.valyu.ai/home
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.valyu.ai/api-reference/endpoint/search
+      purposes:
         - research
       authority: official
   relations:

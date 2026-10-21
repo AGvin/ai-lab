@@ -10,7 +10,7 @@ The default LLM and embedding clients use OpenAI. Graph storage and model proces
 
 ## Relations
 
-- Produced by: [`catalog/producers/z/zep`](../../../../../../../producers/sub/z/sub/zep/)
+- Produced by: [Zep](../../../../../../../producers/sub/z/sub/zep/)
 
 ## Official resources
 

@@ -2,6 +2,12 @@ entity:
   id: catalog/producers/u/unsloth-ai
   type: organization
   name: Unsloth AI
+  identity_note: >-
+    Unsloth AI is the upstream organization behind Unsloth's installable model-development software. Current
+    first-party material also describes local model-running and user-interface surfaces alongside training and
+    fine-tuning. Repository components, downloaded model weights and training data have their own licenses and
+    requirements. Check the selected release, accelerator, backend and data flow; the producer identity does not
+    establish universal hardware support, model rights or hosted-service privacy guarantees.
   references:
     - type: repository
       source:

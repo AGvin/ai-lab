@@ -2,6 +2,14 @@ entity:
   id: catalog/producers/w/webarena-x
   type: organization
   name: WebArena-x Research Team
+  identity_note: >-
+    WebArena-x Research Team is the academic project collaboration behind WebArena, VisualWebArena and
+    WebArena-Infinity. The original WebArena publication identifies Carnegie Mellon University and Inspired
+    Cognition affiliations; the project name does not replace the named researchers or establish an incorporated
+    vendor. The three benchmarks have separate task and scoring semantics. Reproducible results require pinned
+    environments, annotations, evaluators and reset state; public demos are not scoring substitutes.
+    WebArena-Infinity's coding-agent generation pipeline requires disposable or sandboxed execution with
+    appropriately scoped credentials.
   aliases:
     - WebArena-x
   references:
@@ -17,6 +25,24 @@ entity:
         url: https://github.com/web-arena-x/webarena
       purposes:
         - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://webarena.dev/og/
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/web-arena-x/visualwebarena
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/web-arena-x/webarena-infinity
+      purposes:
         - research
       authority: official
   relations:

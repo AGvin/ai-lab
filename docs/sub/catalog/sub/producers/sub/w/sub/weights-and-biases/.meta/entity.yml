@@ -2,6 +2,13 @@ entity:
   id: catalog/producers/w/weights-and-biases
   type: organization
   name: Weights & Biases, Inc.
+  identity_note: >-
+    Weights & Biases, Inc. is the original producer of W&B Weave and has been owned by CoreWeave since the
+    acquisition completed on 5 May 2025. Corporate ownership and current CoreWeave Forge branding remain
+    distinct from Weave's product provenance. Current Weave documentation names CoreWeave Agent Lens as its
+    successor and says both already receive agent-tracing data. That statement does not establish migration of
+    every SDK or evaluation feature. Review trace content, destinations and retention for the selected hosted,
+    dedicated or self-managed deployment.
   aliases:
     - W&B
   references:
@@ -26,6 +33,12 @@ entity:
         - research
       authority: official
       note: CoreWeave states that it acquired Weights & Biases, Inc. on 2025-05-05.
+    - type: documentation
+      source:
+        url: https://docs.coreweave.com/products/wandb/weave
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/evaluation-and-observability/observability-platforms/wandb-weave

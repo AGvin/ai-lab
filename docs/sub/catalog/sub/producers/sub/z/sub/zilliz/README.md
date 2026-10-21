@@ -1,15 +1,19 @@
 # Zilliz
 
-Zilliz is the producer identity for Zilliz Cloud.
+Zilliz is the organization that created Milvus and operates Zilliz Cloud. Milvus's open-source and foundation-governance history is distinct from the company's managed cloud offering.
 
-## Producer boundary
+## Producer and operating boundary
 
-Zilliz Cloud service identity remains distinct from Milvus software/community identity.
+Shared database technology does not make a cloud subscription, its service commitments or managed deployment features part of self-managed Milvus. Match release compatibility, deployment topology, access controls and workload conditions before applying provider scale or performance claims to another installation.
 
 ## Relations
 
-- Produces: [`catalog/services/data-infrastructure/vector-search/zilliz-cloud`](../../../../../services/sub/data-infrastructure/sub/vector-search/sub/zilliz-cloud/)
+- Produces: [Milvus](../../../../../software/sub/data-infrastructure/sub/vector-search/sub/milvus/)
+- Produces: [Zilliz Cloud](../../../../../services/sub/data-infrastructure/sub/vector-search/sub/zilliz-cloud/)
 
 ## Official resources
 
-- <https://zilliz.com/>
+- [Official website](https://zilliz.com/)
+- [Zilliz and Milvus origin](https://zilliz.com/about)
+- [Milvus software and managed-service distinction](https://zilliz.com/what-is-milvus)
+- [Milvus foundation history](https://lfaidata.foundation/projects/milvus/)

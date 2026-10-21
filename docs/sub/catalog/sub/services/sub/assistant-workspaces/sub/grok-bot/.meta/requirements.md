@@ -11,6 +11,8 @@
 - Treat external side effects such as email, purchases, CRM updates, deployments, or other connected-tool actions as permissioned operations requiring the target system's scopes and review/approval controls.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+- Preserve the FAQ boundary reviewed on 2026-10-21: all Bots of one user share one persistent cloud computer, including files, browser and signed-in accounts; isolation is per user, not per Bot. Do not represent parallel Bots as separate credential compartments.
+
 ## Validation
 
 - Grok Bot remains a hosted digital-worker service rather than a trained Grok model or local coding-agent client.

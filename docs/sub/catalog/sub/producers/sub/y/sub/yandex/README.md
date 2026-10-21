@@ -1,16 +1,17 @@
 # Yandex
 
-Yandex is the producer identity for the selected Yandex model families.
+Yandex is the publishing organization for the represented AliceAI-T5 model family. Its official model registry and model cards establish checkpoint provenance independently of Alice consumer applications, search and hosted services.
 
-## Producer boundary
+## Producer and operating boundary
 
-The organization profile remains distinct from Alice consumer products, Yandex Search, hosted services, and exact model checkpoints.
+Base-model behavior, model code, checkpoint licenses and hardware requirements are specific to the selected publication. A model card's custom-code loading example is an execution decision to review and pin, not an assurance from the producer name. New model releases require their own identity and operating assessment.
 
 ## Relations
 
-- Produces: [`catalog/models/yandex/aliceai-t5`](../../../../../models/sub/yandex/sub/aliceai-t5/)
+- Produces: [AliceAI-T5](../../../../../models/sub/yandex/sub/aliceai-t5/)
 
 ## Official resources
 
-- <https://yandex.com/company/>
-- <https://huggingface.co/yandex>
+- [Yandex company](https://yandex.com/company/)
+- [Model registry](https://huggingface.co/yandex)
+- [AliceAI-T5 publication and model-code boundary](https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B)

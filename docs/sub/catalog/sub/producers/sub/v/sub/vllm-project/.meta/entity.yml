@@ -2,6 +2,13 @@ entity:
   id: catalog/producers/v/vllm-project
   type: organization
   name: vLLM Project
+  identity_note: >-
+    The vLLM Project is the current upstream project identity for vLLM-Omni and LLM Compressor in this catalog.
+    Their separate repositories and release lifecycles coexist with original vLLM's Berkeley origin and neutral
+    foundation hosting. LLM Compressor retains Neural Magic and Red Hat engineering provenance while its current
+    producer relation points to the vLLM Project. Runtime modality, model, precision and accelerator support are
+    release-specific; upstream publication does not transfer third-party model licenses or guarantee benchmark
+    performance on another configuration.
   references:
     - type: repository
       source:
@@ -13,6 +20,30 @@ entity:
     - type: documentation
       source:
         url: https://docs.vllm.ai/
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/vllm-project/vllm-omni
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/vllm-project/llm-compressor
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.vllm.ai/projects/llm-compressor/en/latest/developer/governance/
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developers.redhat.com/articles/2024/08/14/llm-compressor-here-faster-inference-vllm
       purposes:
         - research
       authority: official

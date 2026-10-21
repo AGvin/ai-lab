@@ -6,9 +6,10 @@ Its stack model separates pipeline code from the infrastructure and tooling that
 
 Kitaru is a separate open-source project for evaluating and improving agents; its agent lifecycle is not an inseparable feature of the ZenML framework. The ZenML Python package enables anonymized usage analytics by default; `zenml analytics opt-out` disables them.
 
-## Provenance and maintenance
+## Relations
 
-- [ZenML GmbH](../../../../../../../producers/sub/z/sub/zenml-gmbh/) — company that creates and maintains the open-source ZenML project.
+- Produced by: [ZenML GmbH](../../../../../../../producers/sub/z/sub/zenml-gmbh/)
+- Maintained by: [ZenML GmbH](../../../../../../../producers/sub/z/sub/zenml-gmbh/)
 
 ## Official resources
 

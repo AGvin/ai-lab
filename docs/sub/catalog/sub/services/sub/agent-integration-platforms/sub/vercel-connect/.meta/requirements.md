@@ -9,6 +9,8 @@
 - Treat connector inventory, managed-vs-preset distinction, supported auth types, triggers, SDK/CLI commands, pricing, plan limits, and availability as freshness-sensitive.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+- Preserve the launch material's current general-availability effective date of 2026-08-25; distinguish that update from the original June announcement date.
+
 ## Validation
 
 - Vercel Connect remains agent-integration/authentication-first rather than a generic workflow engine or model gateway.

@@ -1,16 +1,16 @@
 # Unsloth AI
 
-Unsloth AI is the upstream organization/product producer for Unsloth.
+Unsloth AI is the upstream organization behind Unsloth's installable model-development software. Current first-party material also describes local model-running and user-interface surfaces alongside training and fine-tuning.
 
-## Producer boundary
+## Producer and operating boundary
 
-Future independently material hosted products remains separate from the current installable software identity when deployment warrants it.
+Repository components, downloaded model weights and training data have their own licenses and requirements. Check the selected release, accelerator, backend and data flow; the producer identity does not establish universal hardware support, model rights or hosted-service privacy guarantees.
 
 ## Relations
 
-- Produces: [`catalog/software/model-and-data-platforms/model-development/unsloth`](../../../../../software/sub/model-and-data-platforms/sub/model-development/sub/unsloth/)
+- Produces: [Unsloth](../../../../../software/sub/model-and-data-platforms/sub/model-development/sub/unsloth/)
 
 ## Official resources
 
-- <https://github.com/unslothai/unsloth>
-- <https://unsloth.ai/>
+- [Unsloth upstream and component licenses](https://github.com/unslothai/unsloth)
+- [Official website](https://unsloth.ai/)

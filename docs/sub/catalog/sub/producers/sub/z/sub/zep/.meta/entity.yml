@@ -2,12 +2,30 @@ entity:
   id: catalog/producers/z/zep
   type: organization
   name: Zep
+  identity_note: >-
+    Zep is the organization behind the managed Zep context service and the open-source Graphiti temporal-graph
+    framework. First-party material connects the projects while keeping the operated service and installable
+    framework distinct. Self-hosting Graphiti does not inherit the managed service's operating controls, and
+    graph storage can still use external model and embedding providers. Review credentials, source-data access,
+    persistence and retention across the chosen graph, model and service configuration.
   references:
     - type: official-site
       source:
         url: https://www.getzep.com/
       purposes:
         - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.getzep.com/platform/graphiti/
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/getzep/graphiti
+      purposes:
         - research
       authority: official
   relations:

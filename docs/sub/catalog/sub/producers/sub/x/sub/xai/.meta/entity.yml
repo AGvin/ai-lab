@@ -2,11 +2,17 @@ entity:
   id: catalog/producers/x/xai
   type: organization
   name: SpaceXAI LLC
+  identity_note: >-
+    SpaceXAI LLC is the legal producer organization identified in the current terms, which use SpaceXSI as its
+    public name. The existing xAI and SpaceXAI names preserve continuity. SpaceX's February 2026 acquisition is
+    corporate provenance, separate from the legal contracting entity and public brand. The Grok model family,
+    assistant, Bot, Build, API and Collections retain distinct identities and operating boundaries. Consumer
+    subscriptions do not establish developer API entitlements. Persistent Bot computers, connected accounts, API
+    credentials and uploaded collections require product-specific permission and data-handling review.
   aliases:
     - SpaceXSI
     - SpaceXAI
     - xAI
-  identity_note: Current official terms identify the contracting organization as SpaceXAI LLC and define SpaceXSI as its public name; preserve the existing xAI continuity identity.
   references:
     - type: official-site
       source:
@@ -38,6 +44,18 @@ entity:
     - type: other
       source:
         url: https://x.ai/legal/terms-of-service
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.x.ai/developers/rest-api-reference/inference
+      purposes:
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://x.ai/bot
       purposes:
         - research
       authority: official
