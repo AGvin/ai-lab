@@ -17,6 +17,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://www.tensorflow.org/about
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/model-and-data-platforms/model-development/tensorflow

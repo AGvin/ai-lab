@@ -1,14 +1,14 @@
 # Together Computer, Inc.
 
-Together Computer, Inc. is the organization behind the Together AI hosted model and inference services.
+Together Computer, Inc. is the company identified in Together AI's current terms and privacy policy as operating its model hosting, inference, fine-tuning and training services. Hosting another producer's model does not transfer that model's authorship or license to Together.
 
-## Producer boundary
+## Operating boundary
 
-Producer identity remains distinct from the Together AI hosted service and from third-party model authors whose models can be served by the platform.
+Review both the service agreement and the selected third-party model terms; Together's terms explicitly retain separate model obligations. Verify the account's prompt-storage and training controls: the terms describe enabling zero data retention through settings, while the privacy policy says model training requires opt-in. The service terms also restrict sensitive inputs, including financial, medical and sensitive personal data; confirm the applicable contractual scope before uploading such material.
 
 ## Relations
 
-- Produces: [`catalog/services/model-apis/together-ai`](../../../../../services/sub/model-apis/sub/together-ai/)
+- Produces: [Together AI](../../../../../services/sub/model-apis/sub/together-ai/)
 
 ## Official resources
 

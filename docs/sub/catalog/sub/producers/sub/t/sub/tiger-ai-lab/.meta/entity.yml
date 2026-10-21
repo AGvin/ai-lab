@@ -17,6 +17,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/datasets/mmlu-pro

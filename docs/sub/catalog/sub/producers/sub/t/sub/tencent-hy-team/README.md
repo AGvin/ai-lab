@@ -1,14 +1,14 @@
 # Tencent Hy Team
 
-Tencent Hy Team is the producing team named by the official Hy4 preview upstream repository.
+Tencent Hy Team is the producing team explicitly credited by the official Hy4 preview repository. The represented Tencent Hy family remains distinct from Tencent's corporate identity, Tencent Cloud access and applications that integrate the models.
 
-## Producer boundary
+## Operating boundary
 
-Team identity remains distinct from Tencent corporation, Tencent Cloud access routes, Hunyuan product surfaces, and individual model identities.
+Release status and deployment conditions belong to each model. The official Hy4 preview repository describes an early version with known limitations and provides released weights under Apache 2.0; that combination does not make it a generally available production service or establish the same license for every Hy release. Assess the exact checkpoint, serving runtime and intended workload before deployment.
 
 ## Relations
 
-- Produces: [`catalog/models/tencent/hy`](../../../../../models/sub/tencent/sub/hy/)
+- Produces: [Tencent Hy](../../../../../models/sub/tencent/sub/hy/)
 
 ## Official resources
 

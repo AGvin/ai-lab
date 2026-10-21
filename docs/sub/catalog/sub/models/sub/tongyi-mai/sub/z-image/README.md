@@ -5,19 +5,19 @@ Z-Image is a 6B-parameter image-generation model family published by Tongyi-MAI.
 ## Translations
 
 - English
-- [Українська](./l10n/uk_UA/)
 
 ## Producer
 
-- [Tongyi-MAI](../../../../../../../../../producers/sub/t/sub/tongyi-mai/)
+- [Tongyi-MAI](../../../../../producers/sub/t/sub/tongyi-mai/)
 
 ## Family variants
 
-The official repository currently describes Z-Image, Z-Image-Turbo, Z-Image-Omni-Base, and Z-Image-Edit as distinct variants with different training or task roles. Only the reviewed base Z-Image model is materialized here; the other variants should receive concrete model pages only when their exact identities are needed by current documentation.
+The official repository currently describes Z-Image, Z-Image-Turbo, Z-Image-Omni-Base, and Z-Image-Edit as distinct variants with different training or task roles. The reviewed base Z-Image model and its distilled Z-Image-Turbo derivative are materialized here. Z-Image-Omni-Base and Z-Image-Edit remain upstream variants outside the materialized catalog until independently reviewed and required by scope.
 
 ## Models
 
 - [`Z-Image`](./sub/models/sub/z-image/) — the full-capacity undistilled foundation model behind the Z-Image family.
+- [`Z-Image-Turbo`](./sub/models/sub/z-image-turbo/) — the separately trained distilled derivative.
 
 ## Scope boundary
 

@@ -16,6 +16,12 @@ entity:
       purposes:
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/THUDM
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/datasets/agentbench

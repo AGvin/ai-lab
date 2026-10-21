@@ -1,6 +1,10 @@
 # Tyk Technologies
 
-Tyk Technologies develops and maintains Tyk AI Studio. This producer record identifies the organization; AI Studio's deployment options, editions and gateway components belong to its software profile.
+Tyk Technologies is the first-party publisher and maintainer of Tyk AI Studio. The organization is distinct from the AI Studio platform, its embedded gateway components, customer applications and integrated third-party models.
+
+## Operating boundary
+
+Confirm the deployed edition and component before relying on a governance control. The upstream project separates an AGPL-3.0 Community core from a separately licensed Enterprise edition, with edition-specific management and security features. Source availability does not grant every Enterprise capability or transfer ownership of the models, credentials and tools connected by a customer.
 
 ## Relations
 
@@ -8,5 +12,5 @@ Tyk Technologies develops and maintains Tyk AI Studio. This producer record iden
 
 ## Official resources
 
-- [Tyk](https://tyk.io/)
-- [Tyk AI Studio source](https://github.com/TykTechnologies/ai-studio)
+- <https://tyk.io/>
+- <https://github.com/TykTechnologies/ai-studio>

@@ -1,15 +1,16 @@
 # Technology Innovation Institute
 
-Technology Innovation Institute is the producer identity for the selected Falcon model family.
+Technology Innovation Institute (TII) is the Abu Dhabi research institution behind the represented Falcon model family. TII identifies itself as part of the Advanced Technology Research Council; the institute, the council and individual Falcon checkpoints remain distinct subjects.
 
-## Producer boundary
+## Operating boundary
 
-TII organizational identity remains distinct from Falcon model checkpoints, Abu Dhabi government bodies, hosted demos, and research programs.
+The Falcon portfolio spans different language, vision and other model releases. Check the selected checkpoint's license, task scope and supported deployment path; an institute-level provenance link does not establish identical rights or capabilities across the portfolio. Hosted demonstrations and third-party serving arrangements remain separate from TII's model-production role.
 
 ## Relations
 
-- Produces: [`catalog/models/technology-innovation-institute/falcon`](../../../../../models/sub/technology-innovation-institute/sub/falcon/)
+- Produces: [Falcon](../../../../../models/sub/technology-innovation-institute/sub/falcon/)
 
 ## Official resources
 
 - <https://www.tii.ae/>
+- <https://falconllm.tii.ae/falcon-models.html>

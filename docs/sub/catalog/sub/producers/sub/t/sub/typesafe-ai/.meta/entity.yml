@@ -17,6 +17,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.typesafe.ai/introduction
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/typesafe-ai/jev

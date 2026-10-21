@@ -12,6 +12,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: official-site
+      source:
+        url: https://falconllm.tii.ae/falcon-models.html
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/technology-innovation-institute/falcon
