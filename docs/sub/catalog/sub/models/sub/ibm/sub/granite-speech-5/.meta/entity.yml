@@ -2,10 +2,28 @@ entity:
   id: catalog/models/ibm/granite-speech-5
   type: model-family
   name: Granite Speech 5.0
+  identity_note: >-
+    Granite Speech 5.0 is IBM's compact TurboCTC automatic-speech-recognition family. The current
+    standard 470M checkpoint was updated on 21 October 2026 to multilingual scope, while the
+    separately released NC checkpoint remains English-only and uses a different noncommercial license.
   references:
     - type: registry
       source:
         url: https://huggingface.co/collections/ibm-granite/granite-speech
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc-nc
       purposes:
         - identification
         - research

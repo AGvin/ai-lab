@@ -2,6 +2,10 @@ entity:
   id: catalog/models/ibm/granite-speech-5/models/granite-speech-5-0-470m-turboctc-nc
   type: model
   name: Granite Speech 5.0 470M TurboCTC NC
+  identity_note: >-
+    Granite Speech 5.0 470M TurboCTC NC is the separate English-only noncommercial checkpoint in the
+    Granite Speech 5 family. Its current card states CC-BY-NC-SA-4.0 and does not inherit the
+    standard checkpoint's 21 October 2026 multilingual update.
   references:
     - type: registry
       source:

@@ -1,14 +1,14 @@
 # Granite Speech 5.0 470M TurboCTC NC
 
-Granite Speech 5.0 470M TurboCTC NC is the non-commercial Granite Speech 5.0 470M TurboCTC NC research release dated 2026-08-25.
+Granite Speech 5.0 470M TurboCTC NC is the separate English-only noncommercial checkpoint in IBM's Granite Speech 5 family.
 
-## Translations
+Its current model card lists English and states CC-BY-NC-SA-4.0. It does not inherit the standard TurboCTC checkpoint's 21 October 2026 multilingual update. Similar size and architecture therefore do not collapse the two repositories into one learned identity.
 
-- English
+The license is materially different from the standard model's Apache-2.0 terms. ASR quality and runtime behavior still require representative audio testing.
 
-## Relations
+## Catalog relations
 
-- Member of: [`catalog/models/ibm/granite-speech-5`](../../../../)
+- [Granite Speech 5.0](../../../../) — family.
 
 ## Official resources
 
