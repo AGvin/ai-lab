@@ -1,10 +1,18 @@
 # Documentation Requirements
 
-## Requirements
+## Identity and provenance
 
-- Identify Granite Guardian 4.1 8B as the canonical current 4.1 guardian checkpoint.
-- Preserve safety and evaluation claims only at the exact model-card scope.
+- Identify Granite Guardian 4.1 8B as the concrete 8B-class safety and risk-evaluation model in the Granite Guardian 4.1 family.
+- Preserve ibm-granite/granite-4.1-8b as source-documented fine-tuning provenance without inventing an absent local derived-from target.
+
+## Operational decision boundaries
+
+- Preserve support for built-in and custom criteria, RAG groundedness/context relevance/answer relevance checks and function-call hallucination evaluation at exact model-card scope.
+- Thinking/non-thinking modes do not create separate model identities.
+- Weights state Apache 2.0. Model judgments require application-owned thresholds, policy mapping, escalation and representative false-positive/false-negative testing.
 
 ## Validation
 
 - Membership resolves to Granite Guardian 4.1.
+- No absent base-model relation is materialized.
+- This assessment grants no runtime or benchmark-reproduction credit.
