@@ -2,6 +2,13 @@ entity:
   id: catalog/models/adobe/firefly/models/image-model-4
   type: model
   name: Firefly Image Model 4
+  identity_note: >-
+    Firefly Image Model 4 is Adobe's image-generation model made generally available on 24 April
+    2025. Adobe positions it for fast ideation and everyday image work, with outputs up to 2K in the
+    launch documentation. Compare output fidelity on the actual prompts and reference images
+    required by the project. Current model selection, settings, API support, credits and rights
+    checks belong to the chosen Adobe product surface; Image Model 4 is a separate identity from 4
+    Ultra and 5.
   references:
     - type: article
       source:
@@ -12,6 +19,16 @@ entity:
       source:
         url: https://blog.adobe.com/en/publish/2025/04/24/adobe-firefly-next-evolution-creative-ai-is-here
       purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://helpx.adobe.com/firefly/web/work-with-images/generate-images/generate-images-from-text-descriptions.html
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://helpx.adobe.com/firefly/web/get-started/learn-the-basics/adobe-firefly-faq.html
+      purposes: [identification, research]
       authority: official
   relations:
     - type: member-of

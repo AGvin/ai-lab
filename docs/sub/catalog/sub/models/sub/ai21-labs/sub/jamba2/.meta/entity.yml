@@ -2,6 +2,13 @@ entity:
   id: catalog/models/ai21-labs/jamba2
   type: model-family
   name: Jamba2
+  identity_note: >-
+    Jamba2 is AI21 Labs' model family introduced on 8 January 2026. It groups the independently
+    identified 3B and Mini trained models; family membership does not make them interchangeable
+    artifacts or hosted endpoints. Use concrete member facts for size, architecture, context and
+    licensing. Downloads and provider aliases are separate access surfaces. AI21's enterprise
+    reliability and benchmark positioning requires task-specific evaluation and does not certify an
+    agent's actions.
   references:
     - type: article
       source:

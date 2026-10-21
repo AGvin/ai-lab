@@ -2,6 +2,13 @@ entity:
   id: catalog/models/adobe/firefly/models/video-model
   type: model
   name: Firefly Video Model
+  identity_note: >-
+    Firefly Video Model is Adobe's video-generation model, made generally available on 24 April 2025
+    after a public beta. It generates video from text or image inputs and remains distinct from
+    partner video models offered through Firefly. Output resolution, duration, frame rate and
+    controls must be tied to a documented workflow. The current style-preset guide describes 540p,
+    720p or 1080p with a five-second, 24-FPS workflow; these are surface settings, not universal
+    limits on every API or integration.
   references:
     - type: article
       source:
@@ -12,6 +19,16 @@ entity:
       source:
         url: https://blog.adobe.com/en/publish/2025/04/24/new-max-london-more-powerful-creative-cloud-new-firefly-ai-tools-more-support-creative-careers
       purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://helpx.adobe.com/firefly/web/work-with-audio-and-video/work-with-video/use-style-presets-for-video-generation.html
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://helpx.adobe.com/firefly/web/get-started/learn-the-basics/adobe-firefly-faq.html
+      purposes: [identification, research]
       authority: official
   relations:
     - type: member-of

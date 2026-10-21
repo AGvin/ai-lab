@@ -2,12 +2,15 @@
 
 ## Requirements
 
-- Identify Firefly Video Model as Adobe's generally available production-ready video-generation model released from public beta in April 2025.
-- Preserve current text-to-video and image-to-video generation, supported output resolution, and commercial-safety positioning only while first-party Adobe material supports them.
-- Keep API beta/GA state, resolution/duration limits, credit cost, product/editor integrations, Content Credentials, and partner-model availability freshness-sensitive.
-- Keep Firefly Video Model distinct from third-party video models available inside Firefly and from Firefly app/video-editor features.
-- Attribute safety/commercial-use and quality positioning to Adobe.
+- Identify Firefly Video Model as Adobe's concrete video-generation model, generally available from 24 April 2025, with text-to-video and image-to-video access described by Adobe.
+- Preserve the distinction between the Adobe model, the Firefly app/video editor and partner video models.
+- Scope 540p/720p/1080p, five-second and 24-FPS details to Adobe's current style-preset workflow; do not generalize to all endpoints or future revisions.
+- Explain evaluation of temporal consistency, motion, reference fidelity and generated content; check current workflow support, credits, asset rights and terms.
+- Attribute commercial-safety and quality claims to Adobe without presenting them as an independent performance or rights guarantee.
+- Realize a complete English reader with the canonical identity, the operational boundaries above, valid internal navigation and cited official sources; do not advertise nonexistent localized readers.
 
 ## Validation
 
-- The node remains Adobe's concrete video model, not the Firefly platform or a partner video model.
+- Preserve the canonical ID, name and type; validate the complete entity against the current repository schema.
+- Verify every declared outgoing relation, its exact inverse when required, and all displayed reader targets.
+- Model, family, producer-view, artifact and provider identities remain distinct; claim no runtime, benchmark, cache or final-render validation.

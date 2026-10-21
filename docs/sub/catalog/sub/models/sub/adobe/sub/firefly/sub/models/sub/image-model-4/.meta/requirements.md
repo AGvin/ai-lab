@@ -2,12 +2,14 @@
 
 ## Requirements
 
-- Identify Firefly Image Model 4 as Adobe's generally available production-ready image-generation model released in April 2025.
-- Preserve current image-generation/control capabilities and up-to-2K positioning only while supported by first-party Adobe material.
-- Keep style/structure controls, product UI integrations, API support, custom-model behavior, pricing/credits, and Content Credentials handling freshness-sensitive.
-- Keep Image Model 4 distinct from Image Model 4 Ultra and preview Image Model 5.
-- Attribute quality, speed, realism, and prompt-fidelity comparisons to Adobe.
+- Identify Image Model 4 as Adobe's concrete image-generation model with general availability on 24 April 2025.
+- Attribute rapid-ideation positioning and the launch's up-to-2K output description to Adobe; do not turn them into an independent quality ranking or hardware specification.
+- Distinguish Image Model 4 from Image Model 4 Ultra and the now-released Image Model 5.
+- Explain prompt/reference evaluation, model-specific settings and product/API availability; verify terms and reference-asset rights before operational use.
+- Realize a complete English reader with the canonical identity, the operational boundaries above, valid internal navigation and cited official sources; do not advertise nonexistent localized readers.
 
 ## Validation
 
-- The node remains the concrete Adobe-trained model, not the Firefly application or an API endpoint.
+- Preserve the canonical ID, name and type; validate the complete entity against the current repository schema.
+- Verify every declared outgoing relation, its exact inverse when required, and all displayed reader targets.
+- Model, family, producer-view, artifact and provider identities remain distinct; claim no runtime, benchmark, cache or final-render validation.

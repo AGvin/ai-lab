@@ -2,6 +2,13 @@ entity:
   id: catalog/models/baidu/ernie/models/ernie-5-1
   type: model
   name: ERNIE 5.1
+  identity_note: >-
+    ERNIE 5.1 is Baidu's released model described in the official article dated 9 May 2026. It is
+    derived from ERNIE 5.0 through elastic sub-network extraction and additional agentic
+    post-training, creating a distinct trained model rather than a provider alias. Baidu reports
+    approximately one-third of 5.0's total parameters and one-half of its active parameters, but the
+    audited release source does not give exact absolute counts. Keep these relative vendor claims,
+    release-specific benchmarks, preview labels and Qianfan serving limits correctly scoped.
   references:
     - type: article
       source:
@@ -19,3 +26,5 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/baidu/ernie
+    - type: derived-from
+      target: catalog/models/baidu/ernie/models/ernie-5-0

@@ -2,12 +2,14 @@
 
 ## Requirements
 
-- Identify Firefly Image Model 4 Ultra as Adobe's generally available higher-detail member of the Firefly Image Model 4 generation.
-- Preserve its complex-scene/detail/realism positioning as Adobe guidance rather than an independent AI Lab ranking.
-- Keep product availability, output limits, credit cost, API support, Creative Cloud integrations, and Content Credentials behavior freshness-sensitive.
-- Keep Ultra distinct from Image Model 4 and preview Image Model 5.
+- Identify Image Model 4 Ultra as the concrete Adobe model generally available from 24 April 2025.
+- Attribute complex-scene, detail and photorealism positioning to Adobe; do not invent architecture or parameter-count facts from the Ultra label.
+- Keep Image Model 4, Image Model 4 Ultra and released Image Model 5 distinct.
+- Explain task-specific output evaluation and verify current surface support, settings, credits, terms and input rights instead of assuming feature parity.
+- Realize a complete English reader with the canonical identity, the operational boundaries above, valid internal navigation and cited official sources; do not advertise nonexistent localized readers.
 
 ## Validation
 
-- Higher-quality positioning remains provider-attributed.
-- Product-layer behavior is not treated as intrinsic model architecture.
+- Preserve the canonical ID, name and type; validate the complete entity against the current repository schema.
+- Verify every declared outgoing relation, its exact inverse when required, and all displayed reader targets.
+- Model, family, producer-view, artifact and provider identities remain distinct; claim no runtime, benchmark, cache or final-render validation.

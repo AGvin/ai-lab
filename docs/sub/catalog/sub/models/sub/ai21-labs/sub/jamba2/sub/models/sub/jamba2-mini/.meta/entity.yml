@@ -2,6 +2,13 @@ entity:
   id: catalog/models/ai21-labs/jamba2/models/jamba2-mini
   type: model
   name: Jamba2 Mini
+  identity_note: >-
+    Jamba2 Mini is AI21 Labs' hybrid SSM-Transformer Mixture-of-Experts model with 52 billion total
+    and 12 billion active parameters. The official AI21-Jamba2-Mini weights are published under
+    Apache 2.0 with a documented 256K-token context window. The 12B active count describes per-token
+    activation, not the total weights that a deployment must account for. The current hosted
+    jamba-mini and jamba-mini-2 aliases target jamba-mini-2-2026-01; pin the dated endpoint or
+    weight revision for reproducible evaluations.
   references:
     - type: article
       source:
@@ -15,6 +22,11 @@ entity:
         url: https://docs.ai21.com/docs/jamba-foundation-models
       purposes:
         - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/ai21labs/AI21-Jamba2-Mini
+      purposes: [identification, research]
       authority: official
   relations:
     - type: member-of

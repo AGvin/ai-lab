@@ -2,6 +2,13 @@ entity:
   id: catalog/models/adobe/firefly
   type: model-family
   name: Adobe Firefly
+  identity_note: >-
+    Adobe Firefly is Adobe's family of generative-media models. This model-family node groups the
+    represented Adobe-trained models; the Firefly application also offers models produced by other
+    companies. Choose a concrete Adobe model and the product surface separately. Model release
+    status, app features, partner models, custom-model workflows, API support, credits and
+    commercial-use conditions have separate scopes. Adobe's commercial-safety positioning is not a
+    guarantee about every generated asset.
   references:
     - type: official-site
       source:
@@ -13,6 +20,21 @@ entity:
         url: https://news.adobe.com/news/2025/04/adobe-revolutionizes-ai-assisted-creativity-firefly
       purposes: [research]
       authority: official
+    - type: article
+      source:
+        url: https://blog.adobe.com/en/publish/2026/03/19/adobe-firefly-expands-video-image-creation-with-new-ai-capabilities-custom-models
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://helpx.adobe.com/firefly/web/work-with-images/generate-images/generate-images-from-text-descriptions.html
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://helpx.adobe.com/firefly/web/get-started/learn-the-basics/adobe-firefly-faq.html
+      purposes: [identification, research]
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/a/adobe
@@ -22,3 +44,5 @@ entity:
       target: catalog/models/adobe/firefly/models/image-model-4-ultra
     - type: has-member
       target: catalog/models/adobe/firefly/models/video-model
+    - type: has-member
+      target: catalog/models/adobe/firefly/models/image-model-5

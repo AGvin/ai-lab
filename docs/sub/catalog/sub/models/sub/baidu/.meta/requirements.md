@@ -2,10 +2,14 @@
 
 ## Requirements
 
-- Identify this node as Baidu's model-domain view rather than a duplicate company or Baidu AI Cloud profile.
-- Link the current material ERNIE family and keep hosted Qianfan endpoints, pricing, snapshots, and third-party models outside intrinsic model identity.
-- Treat current family/checkpoint inventory as freshness-sensitive.
+- Identify this node as the Baidu model-domain navigation view and link the canonical producer profile and represented ERNIE family.
+- Do not duplicate Baidu company, AI Cloud or Qianfan service profiles, or imply the represented family inventory is exhaustive.
+- Separate trained-model authorship from Qianfan hosting, partner models, endpoint aliases, pricing and limits.
+- Keep release, architecture, licensing and modality claims at the concrete model scope.
+- Realize a complete English reader with the canonical identity, the operational boundaries above, valid internal navigation and cited official sources; do not advertise nonexistent localized readers.
 
 ## Validation
 
-- Canonical producer provenance remains under `catalog/producers/b/baidu`.
+- Preserve the canonical ID, name and type; validate the complete entity against the current repository schema.
+- Verify every declared outgoing relation, its exact inverse when required, and all displayed reader targets.
+- Model, family, producer-view, artifact and provider identities remain distinct; claim no runtime, benchmark, cache or final-render validation.
