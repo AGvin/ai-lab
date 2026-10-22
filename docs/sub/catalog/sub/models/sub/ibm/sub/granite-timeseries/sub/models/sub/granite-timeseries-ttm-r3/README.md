@@ -4,6 +4,12 @@ Granite TimeSeries TTM R3 is represented as a model series. IBM's model card cal
 
 The small default artifact shown on the repository page is therefore one distribution state, not the exhaustive identity of the R3 release. Revision keys remain implementation selectors unless a later intake establishes durable child-model identities.
 
+## Capabilities and evidence scope
+
+The current R3 card lists zero-shot forecasting, few-shot adaptation, full fine-tuning, multivariate forecasting, exogenous/control-variable integration, and high-throughput batch inference. It describes the family as spanning 1–35M parameters for non-Lite models and 1–18M for Lite models.
+
+The card also publishes GIFT-Eval scores and CPU/GPU throughput comparisons. Those figures remain provider-reported model-card evidence here; they have not been independently reproduced by this catalog work.
+
 ## Translations
 
 - English
