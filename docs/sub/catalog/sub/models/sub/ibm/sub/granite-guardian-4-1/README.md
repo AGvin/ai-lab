@@ -10,6 +10,8 @@ The concrete checkpoint is fine-tuned from `ibm-granite/granite-4.1-8b`. That ex
 
 The weights state Apache 2.0. Safety thresholds and error tradeoffs require evaluation on the intended policy and traffic.
 
+The [model card](https://huggingface.co/ibm-granite/granite-guardian-4.1-8b) restricts intended use to its prescribed yes/no scoring template. Other use and adversarial inputs can produce unexpected or harmful outputs; this scoring model is not a general-purpose assistant.
+
 ## Catalog relations
 
 - [IBM](../../../../../producers/sub/i/sub/ibm/) — producer.
