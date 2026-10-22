@@ -1,6 +1,6 @@
 # Granite 4.2
 
-Granite 4.2 is IBM's dense reasoning language-model family released on 25 August 2026. The catalog materializes the 3B, 8B, and 30B base releases as distinct trained-model identities.
+Granite 4.2 is IBM's dense reasoning language-model family released on 25 August 2026. The catalog materializes the 3B, 8B, and 30B post-trained reasoning models as distinct trained-model identities.
 
 ## Decision and operating boundaries
 
