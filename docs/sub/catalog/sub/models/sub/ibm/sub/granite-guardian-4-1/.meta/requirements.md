@@ -11,6 +11,7 @@
 - The 8B card documents built-in and bring-your-own risk criteria, RAG groundedness/context relevance/answer relevance checks, and function-call hallucination evaluation.
 - Thinking and non-thinking behavior are model operating modes, not separate trained identities.
 - Weights state Apache 2.0. Safety judgments are probabilistic model outputs; deployment policy must validate thresholds, false positives/negatives and failure handling.
+- Preserve the prescribed binary yes/no scoring template. Use outside that scoring contract or adversarial inputs may produce unexpected or harmful outputs; do not present this as a general-purpose assistant.
 
 ## Validation
 
