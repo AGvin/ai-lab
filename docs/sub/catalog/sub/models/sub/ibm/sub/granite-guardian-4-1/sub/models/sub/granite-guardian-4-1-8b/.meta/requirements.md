@@ -10,6 +10,7 @@
 - Preserve support for built-in and custom criteria, RAG groundedness/context relevance/answer relevance checks and function-call hallucination evaluation at exact model-card scope.
 - Thinking/non-thinking modes do not create separate model identities.
 - Weights state Apache 2.0. Model judgments require application-owned thresholds, policy mapping, escalation and representative false-positive/false-negative testing.
+- Preserve the prescribed binary yes/no scoring template. Use outside that scoring contract or adversarial inputs may produce unexpected or harmful outputs; do not present this as a general-purpose assistant.
 
 ## Validation
 
