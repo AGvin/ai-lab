@@ -1,0 +1,31 @@
+entity:
+  id: catalog/models/meta/muse/models/muse-spark-open
+  type: model
+  name: Muse Spark Open
+  identity_note: >-
+    Muse Spark Open is Meta's released open-weight derivative of Muse Spark for self-hosted or provider-hosted inference. Meta documents 816B total parameters, 42B active parameters, native multimodal input, a one-million-token context window, and release under the Muse Model License.
+  references:
+    - type: article
+      source:
+        url: https://research.meta.ai/blog/muse-spark-open
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://dev.meta.ai/docs/muse-spark-open
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/meta/muse

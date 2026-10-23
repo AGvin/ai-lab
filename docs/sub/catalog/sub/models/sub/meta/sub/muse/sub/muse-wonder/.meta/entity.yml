@@ -1,0 +1,35 @@
+entity:
+  id: catalog/models/meta/muse/muse-wonder
+  type: model-series
+  name: Muse Wonder
+  identity_note: >-
+    Muse Wonder is Meta's released frontier model series for personal and professional agentic tasks. Meta introduced the series with two distinct concrete models, Muse Wonder and Muse Wonder Full, with different release access surfaces.
+  references:
+    - type: article
+      source:
+        url: https://research.meta.ai/blog/muse-wonder
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://about.fb.com/news/2026/10/introducing-muse-wonder-models/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://dev.meta.ai/models/muse-wonder
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/meta/muse
+    - type: has-member
+      target: catalog/models/meta/muse/muse-wonder/models/muse-wonder
+    - type: has-member
+      target: catalog/models/meta/muse/muse-wonder/models/muse-wonder-full
