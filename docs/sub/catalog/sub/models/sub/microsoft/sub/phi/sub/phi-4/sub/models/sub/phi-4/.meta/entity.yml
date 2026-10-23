@@ -13,3 +13,7 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/microsoft/phi/phi-4
+    - type: has-derivative
+      target: catalog/models/microsoft/phi/phi-4/models/phi-4-reasoning
+    - type: has-derivative
+      target: catalog/models/microsoft/phi/phi-4/models/phi-4-reasoning-plus

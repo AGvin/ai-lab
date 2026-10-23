@@ -10,9 +10,9 @@ entity:
         - identification
         - research
       authority: official
-    - type: official-site
+    - type: documentation
       source:
-        url: https://ai.meta.com/llama/
+        url: https://dev.meta.ai/docs/models
       purposes:
         - identification
         - research

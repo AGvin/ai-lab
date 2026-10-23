@@ -13,3 +13,7 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/microsoft/phi/phi-4
+    - type: derived-from
+      target: catalog/models/microsoft/phi/phi-4/models/phi-4
+    - type: has-derivative
+      target: catalog/models/microsoft/phi/phi-4/models/phi-4-reasoning-vision-15b
