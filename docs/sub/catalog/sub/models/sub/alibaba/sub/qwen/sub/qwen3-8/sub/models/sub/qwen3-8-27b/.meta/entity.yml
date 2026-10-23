@@ -32,5 +32,13 @@ entity:
       target: catalog/models/alibaba/qwen/qwen3-8
     - type: has-derivative
       target: catalog/models/cloudflare/clef/models/clef
+    - type: has-derivative
+      target: catalog/models/perplexity-ai/pplx-27b
+    - type: has-derivative
+      target: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-v1-27b
+    - type: has-derivative
+      target: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-v1-1-27b
+    - type: has-derivative
+      target: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-v1-2
   aliases:
     - Qwen/Qwen3.8-27B

@@ -40,5 +40,7 @@ entity:
   relations:
   - type: produced-by
     target: catalog/producers/p/perplexity-ai
+  - type: derived-from
+    target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-27b
   identity_note: PPLX 27B is Perplexity's post-trained derivative of Qwen 3.8 27B for local knowledge work in Portable
     Computer. It is separate from the PPLX Decider checkpoints and the surrounding agent software.

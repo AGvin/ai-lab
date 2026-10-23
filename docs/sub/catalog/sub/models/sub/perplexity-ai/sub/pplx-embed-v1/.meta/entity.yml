@@ -24,6 +24,13 @@ entity:
     - identification
     - research
     authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-embed-v1-late-0.6b
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
   - type: produced-by
     target: catalog/producers/p/perplexity-ai
@@ -35,5 +42,7 @@ entity:
     target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-context-v1-0-6b
   - type: has-member
     target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-context-v1-4b
-  identity_note: PPLX Embed V1 is Perplexity's Qwen3-derived family of standard and contextualized text embeddings.
-    Four existing members cover the 0.6B and 4B sizes for the two input roles.
+  - type: has-member
+    target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-late-0-6b
+  identity_note: >-
+    PPLX Embed V1 is Perplexity's Qwen3-derived embedding family. Four released dense/contextual members cover 0.6B and 4B parameter classes, and PPLX Embed V1 Late 0.6B is a separately published late-interaction derivative of the standard 0.6B model.

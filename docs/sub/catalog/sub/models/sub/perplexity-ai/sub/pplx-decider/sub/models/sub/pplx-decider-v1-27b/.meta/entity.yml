@@ -13,5 +13,7 @@ entity:
   relations:
   - type: member-of
     target: catalog/models/perplexity-ai/pplx-decider
+  - type: derived-from
+    target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-27b
   identity_note: PPLX Decider V1 27B is Perplexity's Qwen3.8-27B-derived decision checkpoint. Its published card
     declares Apache-2.0 and provides a download/inference example for typed choices and calibrated probabilities.

@@ -13,5 +13,7 @@ entity:
   relations:
   - type: member-of
     target: catalog/models/perplexity-ai/pplx-decider
+  - type: derived-from
+    target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-27b
   identity_note: PPLX Decider V1.1 27B is the updated Qwen3.8-27B-derived decision artifact with a separate 255-row
     decision readout. Its model card declares Apache-2.0.

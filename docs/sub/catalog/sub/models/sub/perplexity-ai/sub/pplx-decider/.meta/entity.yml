@@ -17,6 +17,20 @@ entity:
     - identification
     - research
     authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-decider-v1.2
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
   - type: produced-by
     target: catalog/producers/p/perplexity-ai
@@ -24,6 +38,9 @@ entity:
     target: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-v1-27b
   - type: has-member
     target: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-v1-1-27b
-  identity_note: PPLX Decider groups Perplexity's distinct V1 and V1.1 decision checkpoints derived from Qwen3.8-27B.
-    They return typed decisions and calibrated probabilities rather than representing a general text-generation
-    service.
+  - type: has-member
+    target: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-v1-2
+  - type: has-member
+    target: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-flash-v1-2
+  identity_note: >-
+    PPLX Decider groups Perplexity's released decision checkpoints. V1, V1.1 and V1.2 use the Qwen3.8-27B backbone; Flash V1.2 is a smaller Qwen3.5-4B-based distilled checkpoint. They return typed decisions and calibrated probabilities rather than representing a general text-generation service.

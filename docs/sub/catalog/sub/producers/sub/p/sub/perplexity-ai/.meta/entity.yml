@@ -159,3 +159,7 @@ entity:
     target: catalog/models/perplexity-ai/pplx-decider
   - type: produces
     target: catalog/models/perplexity-ai/pplx-embed-v2-late
+  - type: produces
+    target: catalog/models/perplexity-ai/pii-tracer
+  - type: produces
+    target: catalog/models/perplexity-ai/browsesafe

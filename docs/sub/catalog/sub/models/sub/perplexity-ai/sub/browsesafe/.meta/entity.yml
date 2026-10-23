@@ -1,0 +1,26 @@
+entity:
+  id: catalog/models/perplexity-ai/browsesafe
+  type: model
+  name: BrowseSafe
+  references:
+  - type: article
+    source:
+      url: https://www.perplexity.ai/hub/blog/browsesafe
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/perplexity-ai/browsesafe
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/p/perplexity-ai
+  - type: derived-from
+    target: catalog/models/alibaba/qwen/qwen3/models/qwen3-30b-a3b/versions/2507
+  identity_note: >-
+    BrowseSafe is Perplexity's released MIT-licensed prompt-injection detector for browser-agent web content, fine-tuned from Qwen3-30B-A3B-Instruct-2507. The first-party card describes a causal MoE classifier over raw HTML that emits a yes/no decision. BrowseSafe++ is a later benchmark/guard effort; its fine-tuned guard weights are not currently released and are not this model.

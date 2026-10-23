@@ -6,6 +6,7 @@
 - Link the parent Qwen3 30B-A3B concrete model through the canonical version relationship.
 - Preserve version-specific facts supported by the official `Qwen/Qwen3-30B-A3B-Instruct-2507` model material.
 - Keep model-wide architecture and parameter facts on the parent model page unless a version-specific difference is independently established.
+- Preserve the reciprocal `has-derivative` relation to Perplexity BrowseSafe when its first-party model metadata explicitly identifies this 2507 release as the base; keep BrowseSafe's prompt-injection classification role and producer ownership on the derivative.
 
 ## Content Specification
 
@@ -31,6 +32,7 @@ Use the current primary references in `entity.yml` for these boundaries; mutable
 - The page does not duplicate the complete parent model profile.
 - Release-specific behavior and context are sourced from current official model material rather than migration/RC wording.
 - The `version-of` relation resolves to Qwen3 30B-A3B.
+- The BrowseSafe derivative edge is reciprocal and does not make BrowseSafe capabilities intrinsic to the Qwen release.
 
 ## Reader Projection
 

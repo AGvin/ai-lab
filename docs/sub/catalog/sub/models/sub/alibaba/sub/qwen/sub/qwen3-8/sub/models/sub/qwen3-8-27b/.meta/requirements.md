@@ -6,7 +6,7 @@
 - Preserve official model identity and source-backed capabilities without generalizing properties from the much larger Qwen3.8-2.4T-A95B sibling.
 - Keep exact artifacts, quantizations, provider routes, benchmark state, and deployment recommendations outside intrinsic model identity unless separately materialized.
 
-- Preserve the reciprocal has-derivative relation to Cloudflare's independently trained Clef decision model, supported by its official model card; do not transfer the derivative's option-scoring output or hosted limits to this parent.
+- Preserve reciprocal `has-derivative` relations to Cloudflare Clef and to Perplexity's PPLX 27B and PPLX Decider V1, V1.1, and V1.2 checkpoints when their first-party sources explicitly identify Qwen3.8-27B as the base. Do not transfer derivative-specific decision heads, local-agent tuning, output contracts, hosted limits, or licenses to this parent model.
 
 ## Decision and Operational Boundaries
 
@@ -22,6 +22,7 @@ Use the current primary references in `entity.yml` for these boundaries; mutable
 
 - Qwen3.8-27B remains a distinct concrete model within the Qwen3.8 series.
 - Sibling model parameter or deployment facts are not copied here by inference.
+- Every materialized `has-derivative` edge is reciprocal and does not reassign producer ownership from the derivative model.
 
 ## Reader Projection
 
