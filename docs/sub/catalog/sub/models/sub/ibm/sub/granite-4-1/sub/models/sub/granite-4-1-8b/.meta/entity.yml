@@ -1,0 +1,16 @@
+entity:
+  id: catalog/models/ibm/granite-4-1/models/granite-4-1-8b
+  type: model
+  name: Granite 4.1 8B
+  identity_note: IBM Granite 4.1 8B is a separately released instruction-tuned language model.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-4.1-8b
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/ibm/granite-4-1

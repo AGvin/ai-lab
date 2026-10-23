@@ -1,0 +1,82 @@
+entity:
+  id: catalog/models/ibm/granite-4-0-nano
+  type: model-family
+  name: Granite 4.0 Nano
+  identity_note: IBM compact language-model family with 350M/1B-class dense and hybrid variants and
+    separate base and instruct weights.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-4.0-h-1b
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-4.0-h-1b-base
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-4.0-h-350m
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-4.0-h-350m-base
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-4.0-1b
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-4.0-1b-base
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-4.0-350m
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-4.0-350m-base
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/i/ibm
+  - type: has-member
+    target: catalog/models/ibm/granite-4-0-nano/models/granite-4-0-h-1b
+  - type: has-member
+    target: catalog/models/ibm/granite-4-0-nano/models/granite-4-0-h-1b-base
+  - type: has-member
+    target: catalog/models/ibm/granite-4-0-nano/models/granite-4-0-h-350m
+  - type: has-member
+    target: catalog/models/ibm/granite-4-0-nano/models/granite-4-0-h-350m-base
+  - type: has-member
+    target: catalog/models/ibm/granite-4-0-nano/models/granite-4-0-1b
+  - type: has-member
+    target: catalog/models/ibm/granite-4-0-nano/models/granite-4-0-1b-base
+  - type: has-member
+    target: catalog/models/ibm/granite-4-0-nano/models/granite-4-0-350m
+  - type: has-member
+    target: catalog/models/ibm/granite-4-0-nano/models/granite-4-0-350m-base

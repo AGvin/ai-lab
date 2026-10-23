@@ -1,0 +1,28 @@
+entity:
+  id: catalog/models/ibm/granite-vision-3-3
+  type: model-family
+  name: Granite Vision 3.3
+  identity_note: IBM visual-document model family retaining the 2B generative checkpoint and its specialist
+    multimodal document-retrieval derivative.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-vision-3.3-2b
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-vision-3.3-2b-embedding
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/i/ibm
+  - type: has-member
+    target: catalog/models/ibm/granite-vision-3-3/models/granite-vision-3-3-2b
+  - type: has-member
+    target: catalog/models/ibm/granite-vision-3-3/models/granite-vision-3-3-2b-embedding

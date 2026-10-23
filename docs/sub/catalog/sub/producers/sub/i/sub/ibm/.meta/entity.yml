@@ -47,3 +47,19 @@ entity:
       target: catalog/models/ibm/granite-embedding-multilingual-r2
     - type: produces
       target: catalog/models/ibm/granite-timeseries
+    - type: produces
+      target: catalog/models/ibm/granite-4-1
+    - type: produces
+      target: catalog/models/ibm/granite-4-0-nano
+    - type: produces
+      target: catalog/models/ibm/granite-speech-4-1
+    - type: produces
+      target: catalog/models/ibm/granite-switch-4-1
+    - type: produces
+      target: catalog/models/ibm/granite-docling
+    - type: produces
+      target: catalog/models/ibm/granite-embedding-english-r2
+    - type: produces
+      target: catalog/models/ibm/granite-vision-3-3
+    - type: produces
+      target: catalog/models/ibm/granite-guardian-hap

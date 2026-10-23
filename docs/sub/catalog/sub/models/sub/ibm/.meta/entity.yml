@@ -4,7 +4,8 @@ entity:
   name: IBM Granite models
   identity_note: >-
     This node is the IBM Granite model-domain view. It organizes the currently materialized
-    language, embedding, guardian, speech, time-series, and vision families without duplicating the
+    language, compact Nano, composed Switch, document-conversion, embedding, guardian, speech,
+    time-series, and vision families without duplicating the
     IBM organization profile or absorbing separately scoped IBM-NASA collaborative models.
   references:
     - type: official-site

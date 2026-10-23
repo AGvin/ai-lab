@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/ibm/granite-speech-4-1/models/granite-speech-4-1-2b-plus
+  type: model
+  name: Granite Speech 4.1 2B Plus
+  identity_note: IBM speech checkpoint for speaker-attributed transcription and word-level timing,
+    with an October 2026 in-place update.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/ibm/granite-speech-4-1
