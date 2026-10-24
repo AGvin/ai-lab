@@ -8,14 +8,14 @@ entity:
   references:
     - type: official-site
       source:
-        url: https://factory.ai/
+        url: https://factory.com/
       purposes:
         - identification
         - research
       authority: official
     - type: other
       source:
-        url: https://factory.ai/legal/terms
+        url: https://factory.com/legal/terms
       purposes:
         - identification
         - research
@@ -23,7 +23,7 @@ entity:
       note: Official Factory Product Terms identifying The San Francisco AI Factory Inc.
     - type: other
       source:
-        url: https://factory.ai/legal/privacy-policy
+        url: https://factory.com/legal/privacy-policy
       purposes:
         - identification
         - research

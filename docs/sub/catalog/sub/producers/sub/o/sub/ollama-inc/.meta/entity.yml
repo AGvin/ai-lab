@@ -18,6 +18,25 @@ entity:
         - research
       authority: official
       note: Official Ollama Terms of Service identifying Ollama Inc.
+    - type: documentation
+      source:
+        url: https://docs.ollama.com/index
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://ollama.com/privacy
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ollama/ollama/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/inference-runtimes/integrated-platforms/ollama
+  identity_note: "Ollama Inc. is the company behind Ollama software and cloud offerings; runtime licensing, model distribution rights, local execution, and provider-operated cloud processing are distinct scopes."

@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/development-tools/testing/a2a-inspector
+  type: software
+  name: A2A Inspector
+  references:
+    - type: repository
+      source:
+        url: https://github.com/a2aproject/a2a-inspector
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/a2aproject/a2a-inspector/releases
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://a2a-protocol.org/latest/roadmap/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: maintained-by
+      target: catalog/producers/a/agentic-ai-foundation

@@ -1,0 +1,15 @@
+entity:
+  id: catalog/datasets/swe-serve
+  type: dataset
+  name: SWE-Serve
+  references:
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

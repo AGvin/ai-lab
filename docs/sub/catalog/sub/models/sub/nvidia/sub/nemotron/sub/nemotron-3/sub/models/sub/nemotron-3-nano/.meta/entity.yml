@@ -16,6 +16,15 @@ entity:
       purposes:
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/nvidia/nemotron/nemotron-3
+    - type: has-derivative
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano-omni

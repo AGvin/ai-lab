@@ -7,6 +7,8 @@
 - Distinguish Vercel AI Gateway from the installable Vercel AI SDK; integration between them does not make them one canonical product.
 - Keep model counts, provider coverage, pricing, routing policy, protocol compatibility, and limits freshness-sensitive.
 
+- Render the standard `entity-relations` block from validated current-entity relations with the canonical producer name and resolving link.
+
 ## Validation
 
 - Vercel AI Gateway is not treated as an installable self-managed gateway.

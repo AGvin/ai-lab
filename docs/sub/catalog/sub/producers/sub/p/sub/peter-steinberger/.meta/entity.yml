@@ -3,24 +3,33 @@ entity:
   type: individual
   name: Peter Steinberger
   aliases:
-    - steipete
+  - steipete
   references:
-    - type: repository
-      source:
-        url: https://github.com/openclaw/openclaw
-      purposes:
-        - identification
-        - research
-      authority: official
-      note: Current OpenClaw upstream README identifies OpenClaw as built by Peter Steinberger and the community.
-    - type: other
-      source:
-        url: https://github.com/openclaw/openclaw/releases
-      purposes:
-        - identification
-        - research
-      authority: official
-      note: Current signed OpenClaw releases identify Peter Steinberger (steipete) as an active release author.
+  - type: repository
+    source:
+      url: https://github.com/openclaw/openclaw
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Current OpenClaw upstream README identifies OpenClaw as built by Peter Steinberger and the community.
+  - type: other
+    source:
+      url: https://github.com/openclaw/openclaw/releases
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Official OpenClaw release history; creator provenance and current release-signing stewardship are separate
+      roles.
+  - type: documentation
+    source:
+      url: https://docs.openclaw.ai/gateway/security/trust-model
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Gateway trust model.
   relations:
-    - type: produces
-      target: catalog/software/agents/local/openclaw
+  - type: produces
+    target: catalog/software/agents/local/openclaw

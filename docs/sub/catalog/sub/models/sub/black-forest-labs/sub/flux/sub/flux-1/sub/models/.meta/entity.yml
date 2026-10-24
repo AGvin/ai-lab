@@ -2,3 +2,20 @@ entity:
   id: catalog/models/black-forest-labs/flux/flux-1/models
   type: catalog-index
   name: FLUX.1 Models
+  identity_note: Navigation index for concrete FLUX.1 model records. It currently contains FLUX.1-schnell and has
+    no independent trained weights, serving contract or producer identity.
+  references:
+  - type: model-card
+    source:
+      url: https://huggingface.co/black-forest-labs/FLUX.1-schnell
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-registry
+    source:
+      url: https://huggingface.co/black-forest-labs
+    purposes:
+    - identification
+    - research
+    authority: official

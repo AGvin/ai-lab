@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/ibm/granite-4-2/models/granite-4-2-30b
+  type: model
+  name: Granite 4.2 30B
+  identity_note: >-
+    Granite 4.2 30B is the largest 30B-class member of IBM's Granite 4.2 dense reasoning family,
+    released on 25 August 2026 with Apache-2.0 weights. Its card documents native 128K context and
+    a supported long-context extension to 512K.
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-4.2-30b
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/ibm/granite-4-2

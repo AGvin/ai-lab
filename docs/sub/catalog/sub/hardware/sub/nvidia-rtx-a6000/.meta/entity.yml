@@ -1,0 +1,15 @@
+entity:
+  id: catalog/hardware/nvidia-rtx-a6000
+  type: hardware
+  name: NVIDIA RTX A6000
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/products/workstations/rtx-a6000/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/software/evaluation-and-observability/observability-platforms/nvidia-nemo-relay
+  type: software
+  name: NVIDIA NeMo Relay
+  aliases:
+    - NeMo Relay
+  references:
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA/NeMo-Relay
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/tracing-agent-harness-behavior-with-nvidia-nemo-relay/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

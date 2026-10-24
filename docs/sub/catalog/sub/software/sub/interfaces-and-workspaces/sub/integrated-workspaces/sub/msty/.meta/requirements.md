@@ -8,6 +8,7 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Preserve the local-data boundary: Studio Desktop stores data on the device and Studio Web stores data in the browser; current documentation says data does not automatically sync between devices.
 - Distinguish current Msty Studio documentation/product surface from legacy Msty App 1.x documentation.
+- Preserve the license boundary: the free license covers personal/non-commercial use; commercial or work use requires a paid Aurum or Enterprise license.
 - Keep plan-specific Web access, model/provider inventories, local-engine support, tool/agent capabilities, and other mutable details source-backed when expanded.
 - Include current official Msty Studio documentation and legal reference.
 

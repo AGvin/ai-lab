@@ -1,0 +1,46 @@
+entity:
+  id: catalog/models/cohere/transcribe/models/cohere-transcribe-arabic-07-2026
+  type: model
+  name: Cohere Transcribe Arabic
+  references:
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/v2/docs/transcribe-arabic
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://docs.cohere.com/changelog/transcribe-arabic
+    purposes:
+    - research
+    authority: official
+  - type: model-registry
+    source:
+      url: https://huggingface.co/api/models/CohereLabs/cohere-transcribe-arabic-07-2026?blobs=true
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/models
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/cohere/transcribe
+  - type: produced-by
+    target: catalog/producers/c/cohere-labs
+  - type: derived-from
+    target: catalog/models/cohere/transcribe/models/cohere-transcribe-03-2026

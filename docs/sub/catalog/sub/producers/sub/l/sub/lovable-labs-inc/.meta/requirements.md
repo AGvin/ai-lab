@@ -7,6 +7,7 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official Lovable site, Terms of Service, and Privacy Policy references sufficient to establish provenance and legal identity.
 - Keep broader staffing, funding, pricing, and mutable corporate details outside this concise producer profile unless they become relevant to represented catalog entities.
+- Distinguish the general Terms' Lovable Labs Incorporated identity from the Privacy Policy's Lovable Labs Sweden AB controller role and organization-managed data provisions; this evidence does not by itself establish a parent/subsidiary relation.
 
 ## Validation
 

@@ -2,6 +2,13 @@ entity:
   id: catalog/producers/m/mastra
   type: organization
   name: Mastra
+  identity_note: >-
+    Mastra is the first-party organization and publishing identity behind the Mastra TypeScript
+    framework. The producer identity remains distinct from the Mastra software framework and from
+    separate hosted or commercial platform surfaces. The team's official account establishes the
+    framework's provenance. Open-source framework access does not automatically include hosted
+    infrastructure, commercial support, or third-party model access; each deployment and service
+    contract must be assessed at its own scope.
   references:
     - type: official-site
       source:
@@ -13,6 +20,20 @@ entity:
     - type: repository
       source:
         url: https://github.com/mastra-ai/mastra
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://mastra.ai/about
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://cloud.mastra.ai/
       purposes:
         - identification
         - research

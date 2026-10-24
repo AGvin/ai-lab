@@ -1,0 +1,24 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/nvidia-nim
+  type: software
+  name: NVIDIA NIM
+  aliases:
+    - NVIDIA NIM Microservices
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/nim/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

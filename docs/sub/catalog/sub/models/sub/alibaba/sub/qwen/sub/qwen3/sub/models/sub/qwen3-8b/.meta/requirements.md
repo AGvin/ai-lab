@@ -18,9 +18,22 @@
 - Preserve the official model and GGUF references and the documented `Q4_K_M` file size where retained.
 - State clearly that published artifact size is not peak VRAM or total runtime memory.
 
+## Decision and Operational Boundaries
+
+- Qwen3-8B is an Apache-2.0 dense text model with 8.2B total parameters and an initial hybrid-thinking interaction contract.
+- Preserve the card's 32,768-token native context and separate 131,072-token YaRN extension; context scaling and memory requirements depend on the selected runtime.
+- Keep checkpoint identity separate from quantization and runtime packaging; pin the chosen revision and validate processor, chat-template, reasoning-parser, and tool-parser support in the selected runtime.
+- Keep model-generated text, code, and tool arguments separate from permission to execute them; the application owns command validation, tool access, network access, and sandboxing.
+
+Use the current primary references in `entity.yml` for these boundaries; mutable service values are not intrinsic identity guarantees.
+
 ## Validation
 
 - The page does not treat the GGUF artifact as a separate base-model identity.
 - The page does not equate published file size with VRAM requirements.
 - Provider-described capabilities are not presented as independently benchmarked AI Lab results.
 - Hardware and role recommendations are not presented as intrinsic model facts.
+
+## Reader Projection
+
+- Render the current entity's validated visible relations with resolved canonical links and preserve relation ordering; project the sourced identity and operational boundaries into the reader page.

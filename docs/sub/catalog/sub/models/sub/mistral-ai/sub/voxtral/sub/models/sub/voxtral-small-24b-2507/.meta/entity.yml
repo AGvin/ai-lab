@@ -1,0 +1,31 @@
+entity:
+  id: catalog/models/mistral-ai/voxtral/models/voxtral-small-24b-2507
+  type: model
+  name: Voxtral Small 24B 2507
+  aliases:
+    - Voxtral Small
+    - Voxtral Small 1.0
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/voxtral-small-25-07
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai/Voxtral-Small-24B-2507
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/studio/conversations/function-calling
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/voxtral

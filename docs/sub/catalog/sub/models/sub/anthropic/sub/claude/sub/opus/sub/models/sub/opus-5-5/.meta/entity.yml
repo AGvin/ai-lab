@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/anthropic/claude/opus/models/opus-5-5
+  type: model
+  name: Claude Opus 5.5
+  references:
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/models/opus-5-5/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.anthropic.com/claude-opus-5-5
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/anthropic/claude/opus

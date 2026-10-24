@@ -1,13 +1,19 @@
 # OpenRouter, Inc.
 
-OpenRouter, Inc. operates the OpenRouter hosted model-routing and API service.
+OpenRouter, Inc. is the company operating the OpenRouter hosted model-routing and API service. Its official terms establish that operator identity. [Terms](https://openrouter.ai/terms).
 
-## Related catalog entity
+## Scope and operating boundaries
 
-- [OpenRouter](../../../../../services/sub/model-apis/sub/openrouter/) — canonical hosted Model API service profile.
+Routing access does not make OpenRouter the producer of the underlying model or the sole processor of a request. The service distinguishes its own data handling from upstream provider logging and retention. Controls must be assessed for the selected provider and endpoint, rather than generalized to every route. [Privacy policy](https://openrouter.ai/privacy/); [Provider logging](https://openrouter.ai/docs/guides/privacy/provider-logging); [Data collection](https://openrouter.ai/docs/guides/privacy/data-collection).
+
+## Relations
+
+- Produces: [OpenRouter](../../../../../services/sub/model-apis/sub/openrouter/)
 
 ## Official resources
 
-- [OpenRouter](https://openrouter.ai/)
-- [Terms of Service](https://openrouter.ai/terms)
-- [Privacy Policy](https://openrouter.ai/privacy/)
+- [Official website](https://openrouter.ai/)
+- [Terms](https://openrouter.ai/terms)
+- [Privacy policy](https://openrouter.ai/privacy/)
+- [Provider logging](https://openrouter.ai/docs/guides/privacy/provider-logging)
+- [Data collection](https://openrouter.ai/docs/guides/privacy/data-collection)

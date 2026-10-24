@@ -1,12 +1,15 @@
 # Continue Dev, Inc.
 
-Continue Dev, Inc. is the organization behind Continue.
+Continue Dev, Inc. is the original company behind Continue, as identified in its [terms](https://continue.dev/terms-conditions/) and [upstream repository](https://github.com/continuedev/continue).
 
-## Related catalog entity
+The [official site](https://continue.dev/) now announces that Continue was acquired by Cursor. This records the announced acquisition while preserving original producer provenance. The upstream separately describes the open-source project as read-only and no longer actively maintained; the software entry retains that lifecycle boundary.
 
-- [Continue](../../../../../software/sub/agents/sub/local/sub/continue/) — canonical Local Agent profile.
+## Catalog relations
+
+- [Continue](../../../../../software/sub/agents/sub/local/sub/continue/) — produced catalog entity.
 
 ## Official resources
 
-- [Continue](https://continue.dev/)
-- [Continue repository](https://github.com/continuedev/continue)
+- [Continue official acquisition notice](https://continue.dev/)
+- [Continue upstream](https://github.com/continuedev/continue)
+- [Continue terms](https://continue.dev/terms-conditions/)

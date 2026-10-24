@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/ctranslate2
+  type: software
+  name: CTranslate2
+  references:
+    - type: documentation
+      source:
+        url: https://opennmt.net/CTranslate2/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/OpenNMT/CTranslate2
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/opennmt

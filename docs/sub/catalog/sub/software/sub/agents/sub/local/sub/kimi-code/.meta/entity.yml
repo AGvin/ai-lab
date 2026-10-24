@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/agents/local/kimi-code
+  type: software
+  name: Kimi Code
+  references:
+    - type: product-page
+      source:
+        url: https://www.kimi.com/code/en
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.kimi.com/code/docs/en/kimi-code/whats-new.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.kimi.com/en/help/kimi-code/code-docs-index
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/moonshot-ai

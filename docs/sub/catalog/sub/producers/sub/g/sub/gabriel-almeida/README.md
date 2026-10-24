@@ -8,5 +8,5 @@ Gabriel Almeida is one of Langflow's original co-creators and producers. That or
 
 ## Official resources
 
-- [Langflow and DataStax history](https://www.langflow.org/blog/langflow-datastax-better-together)
+- [Langflow and DataStax history](https://www.langflow.org/blog/langflow-datastax-better-together/)
 - [Langflow package metadata](https://github.com/langflow-ai/langflow/blob/main/pyproject.toml)

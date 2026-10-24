@@ -2,3 +2,18 @@ entity:
   id: catalog/models/huihui-ai/qwen3-coder-derived/models
   type: catalog-index
   name: huihui.ai Qwen3-Coder-Derived Model Releases
+  identity_note: >-
+    This catalog index lists the represented concrete huihui.ai modified model in the
+    Qwen3-Coder-derived branch. The abliterated model is the modified weight identity; its GGUF
+    conversions belong to the separate artifact navigation and typed artifact record.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF
+      purposes: [identification, research]
+      authority: official

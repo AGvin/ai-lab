@@ -1,0 +1,23 @@
+entity:
+  id: catalog/hardware/furiosa-rngd
+  type: hardware-product
+  name: FuriosaAI RNGD
+  aliases:
+    - RNGD
+  references:
+    - type: official-site
+      source:
+        url: https://furiosa.ai/rngd
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developer.furiosa.ai/latest/en/overview/rngd.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/f/furiosa-ai

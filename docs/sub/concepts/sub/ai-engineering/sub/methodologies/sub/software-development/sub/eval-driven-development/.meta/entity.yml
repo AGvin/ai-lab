@@ -1,0 +1,21 @@
+entity:
+  id: concepts/ai-engineering/methodologies/software-development/eval-driven-development
+  name: Eval-Driven Development
+  aliases:
+    - Evaluation-Driven Development
+  references:
+    - type: article
+      source:
+        url: https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
+      purposes:
+        - identification
+        - research
+      authority: independent
+      note: Anthropic explicitly recommends eval-driven development for agent product teams and describes building evaluations before target capabilities are fully achieved.
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/preprod-hardening.html
+      purposes:
+        - research
+      authority: independent
+      note: AWS production guidance describes version-controlled evaluation suites and automated quality/security gates in the generative-AI delivery lifecycle.

@@ -4,6 +4,10 @@ TensorRT-LLM is NVIDIA's open-source library and runtime for accelerating and op
 
 TensorRT-LLM is an inference engine that can integrate with higher-level serving systems such as NVIDIA Dynamo; those systems remain separate canonical products.
 
+## Relations
+
+- Produced by: [NVIDIA](../../../../../../../producers/sub/n/sub/nvidia/)
+
 ## Official resources
 
 - [TensorRT-LLM documentation](https://nvidia.github.io/TensorRT-LLM/overview.html)

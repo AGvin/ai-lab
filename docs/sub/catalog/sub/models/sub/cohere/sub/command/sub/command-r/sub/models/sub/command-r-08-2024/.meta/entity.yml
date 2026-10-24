@@ -1,0 +1,59 @@
+entity:
+  id: catalog/models/cohere/command/command-r/models/command-r-08-2024
+  type: model
+  name: Command R 08-2024
+  references:
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/models
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/c4ai-command-r-08-2024
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/c4ai-command-r-v01
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://docs.cohere.com/changelog/command-gets-refreshed
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/command-r
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://cohere.com/cohere-labs-cc-by-nc-license
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/cohere-labs-acceptable-use-policy
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/cohere/command/command-r
+  - type: produced-by
+    target: catalog/producers/c/cohere-labs

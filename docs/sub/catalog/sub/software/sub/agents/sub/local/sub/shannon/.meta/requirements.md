@@ -5,7 +5,9 @@
 - Identify Shannon as Keygraph's open-source autonomous white-box AI pentester for source-available web applications and APIs, run by the user from a local/self-managed CLI workflow.
 - Preserve the current distinction between Shannon Open Source and the separate commercial Keygraph platform: Shannon is the standalone pentesting agent/core, while the commercial platform adds broader continuous AppSec, management, and enterprise capabilities.
 - Preserve proof-by-exploitation behavior at a high level: Shannon combines source-code analysis with live application testing and reports findings it can validate through working exploit evidence.
+- Preserve the current open-source runtime's adoption of the Pi agent harness for model/tool orchestration as an implementation dependency rather than collapsing Shannon into the separate Pi CLI product.
 - Preserve useful legacy execution boundaries around Docker/ephemeral worker execution, read-only mounting of the target repository in the recommended workflow, live target mutation through exploit attempts, external model-provider credentials, resumable workspaces, and local result storage.
+- Reflect official GitHub Actions/GitLab CI use and structured report formats (PDF, Markdown, JSON and SARIF) as operator-run integration and output surfaces, not Keygraph cloud execution of the open-source agent.
 - Preserve the white-box scope boundary without freezing obsolete edition details: source access materially informs Shannon's testing and the open-source project should not be represented as proof of complete external-attacker or black-box coverage unless current upstream documentation explicitly provides that capability.
 - Treat Shannon as active offensive-security tooling: require ownership or explicit written authorization for the target, prefer isolated non-production targets, scoped test credentials, recovery/backup readiness, and human review of findings and proof-of-concept evidence.
 - Preserve prompt-injection/source-content, network access, target-state mutation, provider-safeguard interruption, credential exposure, and false-negative/false-positive risks as material evaluation boundaries.
@@ -20,4 +22,5 @@
 - Authorization and non-production/isolation guidance is explicit.
 - Read-only repository mounting is not misrepresented as preventing mutation of the running target application.
 - Open-source white-box coverage is not presented as automatically equivalent to comprehensive pentesting coverage.
+- Integration with Pi harness and CI tooling is not misrepresented as a new hosted-agent identity or as permission to test production targets.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

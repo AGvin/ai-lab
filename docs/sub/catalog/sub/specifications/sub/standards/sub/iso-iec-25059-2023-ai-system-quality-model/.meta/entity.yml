@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-25059-2023-ai-system-quality-model
+  name: ISO/IEC 25059:2023 — Quality model for AI systems
+  aliases:
+    - ISO/IEC 25059:2023
+    - ISO 25059
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/80655.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record identifying Edition 1 as published and currently marked for revision by a future Edition 2.

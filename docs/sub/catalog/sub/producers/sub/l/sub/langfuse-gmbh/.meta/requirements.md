@@ -6,6 +6,7 @@
 - Keep the producer organization distinct from Langfuse software, Langfuse Cloud, and parent ClickHouse, Inc.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current first-party imprint, repository, and acquisition references.
+- Distinguish corporate ownership from the applicable service contracting party: current ClickHouse general terms name Langfuse GmbH for pay-as-you-go Langfuse Cloud; other purchases follow their applicable agreement.
 
 ## Validation
 

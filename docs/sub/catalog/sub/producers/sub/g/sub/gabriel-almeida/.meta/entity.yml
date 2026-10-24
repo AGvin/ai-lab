@@ -5,7 +5,7 @@ entity:
   references:
     - type: article
       source:
-        url: https://www.langflow.org/blog/langflow-datastax-better-together
+        url: https://www.langflow.org/blog/langflow-datastax-better-together/
       purposes:
         - identification
         - research
@@ -19,6 +19,13 @@ entity:
         - research
       authority: official
       note: Current Langflow package metadata lists Gabriel Almeida among the maintainers.
+    - type: other
+      source:
+        url: https://github.com/ogabrielluiz
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/workflow-engines/visual-ai-workflows/langflow

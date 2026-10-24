@@ -1,12 +1,12 @@
 # Grok
 
-Grok is xAI's hosted AI assistant service, available through xAI-operated web and mobile surfaces. It is distinct from underlying Grok model identities and from integrations delivered through separately operated third-party services.
+Grok is the hosted AI assistant service produced by SpaceXAI LLC under the SpaceXSI public name, available through its operated web and mobile surfaces. It is distinct from underlying Grok model identities and from integrations delivered through separately operated third-party services.
 
-Exact plans, available models, features, limits, integrations, account controls, regional availability, and data-handling behavior can change and should be verified against current xAI documentation when they matter to a decision.
+Exact plans, available models, features, limits, integrations, account controls, regional availability, and data-handling behavior can change and should be verified against current official documentation when they matter to a decision.
 
-## Related
+## Relations
 
-- [xAI](../../../../../producers/sub/x/sub/xai/) — canonical producer organization.
+- Produced by: [SpaceXAI LLC](../../../../../producers/sub/x/sub/xai/)
 
 ## Official resources
 

@@ -1,0 +1,41 @@
+entity:
+  id: catalog/software/agents/hybrid/cline
+  type: software
+  name: Cline
+  references:
+    - type: official-site
+      source:
+        url: https://cline.bot/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cline.bot/cline-overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/cline/cline
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cline.bot/usage/cloud-agents
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cline.bot/usage/cline-desktop-ssh
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cline-bot-inc

@@ -1,0 +1,93 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:fc8d46c844e223f161cf0b885aa7d45c04c20a36
+    parent:
+      entity.yml: gitblob:0cf80df310da6a10fb2bdc28c39cf869cdb4d5e4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/specifications/standards/agent-control-standard
+        name: Agent Control Standard
+        aliases:
+        - ACS
+        references:
+        - type: specification
+          source:
+            url: https://genai-security-project.github.io/agent-control-standard/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Official published ACS documentation/specification surface; re-check
+            the published normative revision before making version-sensitive claims.
+        - type: documentation
+          source:
+            url: https://genai.owasp.org/resource/agent-control-standard-acs/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Official OWASP GenAI Security Project resource establishing ACS as
+            an open agent-control standard.
+        - type: repository
+          source:
+            url: https://github.com/GenAI-Security-Project/agent-control-standard
+          purposes:
+          - identification
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

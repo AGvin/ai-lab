@@ -1,0 +1,25 @@
+entity:
+  id: catalog/services/ai-management-platforms/microsoft-agent-365
+  type: service
+  name: Microsoft Agent 365
+  aliases:
+    - Agent 365
+  references:
+    - type: official-site
+      source:
+        url: https://www.microsoft.com/microsoft-agent-365
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Microsoft product page identifying Agent 365 as generally available from 2026-05-01 and as a control plane for agents.
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/microsoft-agent-365/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

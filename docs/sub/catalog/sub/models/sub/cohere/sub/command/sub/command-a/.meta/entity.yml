@@ -3,21 +3,113 @@ entity:
   type: model-series
   name: Command A
   references:
-    - type: documentation
-      source:
-        url: https://docs.cohere.com/docs/command-a-plus
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: release-notes
-      source:
-        url: https://docs.cohere.com/v1/changelog/command-a-plus-05-2026
-      purposes:
-        - research
-      authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/models
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/command-a-plus
+    purposes:
+    - research
+    authority: official
+  - type: model-registry
+    source:
+      url: https://huggingface.co/api/models/CohereLabs/command-a-reasoning-08-2025?blobs=true
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-registry
+    source:
+      url: https://huggingface.co/api/models/CohereLabs/command-a-translate-08-2025?blobs=true
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/command-a-vision-07-2025
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/command-a
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/command-a-reasoning
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/command-a-translate
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/command-a-vision
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/c4ai-command-a-03-2025
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/command-a-reasoning-08-2025
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/CohereLabs/command-a-translate-08-2025
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: member-of
-      target: catalog/models/cohere/command
-    - type: has-member
-      target: catalog/models/cohere/command/command-a/models/command-a-plus-05-2026
+  - type: member-of
+    target: catalog/models/cohere/command
+  - type: has-member
+    target: catalog/models/cohere/command/command-a/models/command-a-plus-05-2026
+  - type: has-member
+    target: catalog/models/cohere/command/command-a/models/command-a-03-2025
+  - type: has-member
+    target: catalog/models/cohere/command/command-a/models/command-a-reasoning-08-2025
+  - type: has-member
+    target: catalog/models/cohere/command/command-a/models/command-a-translate-08-2025
+  - type: has-member
+    target: catalog/models/cohere/command/command-a/models/command-a-vision-07-2025

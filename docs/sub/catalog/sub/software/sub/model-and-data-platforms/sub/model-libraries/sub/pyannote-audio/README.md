@@ -2,14 +2,9 @@
 
 `pyannote.audio` is an open-source Python/PyTorch toolkit for speaker diarization. It provides pretrained models and pipelines and supports training or fine-tuning on task-specific data.
 
-## Translations
+## Relations
 
-- English
-- [Українська](./l10n/uk_UA/)
-
-## Provenance
-
-- [Hervé Bredin](../../../../../../../producers/sub/h/sub/herve-bredin/) — original/current package author and producer of `pyannote.audio`; this authorship is not rendered as corporate ownership of the library.
+- Produced by: [Hervé Bredin](../../../../../../../producers/sub/h/sub/herve-bredin/) — original/current package author and producer of `pyannote.audio`; this authorship is not rendered as corporate ownership of the library.
 
 ## Software boundary
 
@@ -32,7 +27,7 @@ Local or offline inference does not by itself establish the privacy posture of t
 ## Related pages
 
 - [Model Libraries](../..)
-- [Content Understanding Model Selection](../../../../../../../models/sub/selection/sub/content-understanding/)
+- [Content Understanding Model Selection](../../../../../../../../../decision-support/sub/selection/sub/models/sub/decision-guides/sub/content-understanding/)
 
 ## Sources
 

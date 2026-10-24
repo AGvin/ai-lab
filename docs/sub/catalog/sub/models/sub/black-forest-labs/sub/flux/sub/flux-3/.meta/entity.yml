@@ -1,0 +1,70 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-3
+  type: model-series
+  name: FLUX 3
+  references:
+  - type: article
+    source:
+      url: https://bfl.ai/blog/flux-3
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://bfl.ai/blog/flux-3-video
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.bfl.ai/flux_3/flux3_image_overview
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/black-forest-labs/flux-3-action-base
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://bfl.ai/blog/flux-3-image-klein
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/black-forest-labs/flux-3-image-klein
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-video
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-image
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-action
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-image-klein-base
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-image-klein
+  identity_note: FLUX 3 is Black Forest Labs' multimodal model series built around shared image, video and audio
+    learning, with specialized Image, Video and Action members. The series and its rollout program are not one universally
+    released checkpoint.

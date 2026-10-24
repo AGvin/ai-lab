@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano-base
+  type: model
+  name: NVIDIA Nemotron 3 Nano Base
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/nvidia/nemotron/nemotron-3
+  identity_note: >-
+    Pretrained language model for further adaptation, distinct from post-trained Nano. NVIDIA Nemotron Open Model License; BF16 identifies the released weight format.

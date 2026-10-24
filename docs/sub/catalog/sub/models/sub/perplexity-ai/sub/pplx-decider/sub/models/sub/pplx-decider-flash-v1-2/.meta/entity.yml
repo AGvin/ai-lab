@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-flash-v1-2
+  type: model
+  name: PPLX Decider Flash V1.2
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/perplexity-ai/pplx-decider
+  identity_note: >-
+    PPLX Decider Flash V1.2 is Perplexity's smaller released decision checkpoint using the same joint request protocol as V1.2. The first-party card identifies Qwen3.5-4B as its base and says it is distilled from the larger 27B decision models; the checkpoint is Apache-2.0. Its GGUF repository packages the same trained identity rather than defining another model.

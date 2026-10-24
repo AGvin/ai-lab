@@ -1,0 +1,15 @@
+entity:
+  id: catalog/datasets/agentbench
+  type: dataset
+  name: AgentBench
+  references:
+    - type: repository
+      source:
+        url: https://github.com/THUDM/AgentBench
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/thudm

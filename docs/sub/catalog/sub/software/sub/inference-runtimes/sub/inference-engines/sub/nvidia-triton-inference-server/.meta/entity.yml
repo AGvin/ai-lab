@@ -1,0 +1,24 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/nvidia-triton-inference-server
+  type: software
+  name: NVIDIA Triton Inference Server
+  aliases:
+    - Triton Inference Server
+  references:
+    - type: repository
+      source:
+        url: https://github.com/triton-inference-server/server
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/deeplearning/triton-inference-server/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

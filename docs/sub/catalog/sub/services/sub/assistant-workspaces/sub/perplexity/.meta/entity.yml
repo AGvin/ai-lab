@@ -1,0 +1,30 @@
+entity:
+  id: catalog/services/assistant-workspaces/perplexity
+  type: service
+  name: Perplexity
+  references:
+  - type: official-site
+    source:
+      url: https://www.perplexity.ai/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: product-page
+    source:
+      url: https://www.perplexity.ai/products/computer
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: product-page
+    source:
+      url: https://www.perplexity.ai/hub
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/p/perplexity-ai
+  identity_note: Perplexity is Perplexity AI's hosted answer and research workspace. The answer engine, hosted Computer,
+    browser and developer APIs are distinct product surfaces.

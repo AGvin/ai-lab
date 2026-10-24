@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/lg-ai-research/k-exaone/models/k-exaone-2-0
+  type: model
+  name: K-EXAONE 2.0
+  references:
+    - type: article
+      source:
+        url: https://www.lgresearch.ai/news/view?seq=678
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/lg-ai-research/k-exaone

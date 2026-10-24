@@ -1,0 +1,37 @@
+entity:
+  id: catalog/services/data-generation-and-curation/gretel-platform
+  type: service
+  name: Gretel Platform
+  identity_note: "Gretel Platform retains the historical synthetic-data service identity following NVIDIA's 2025 acquisition of Gretel. Former service pages were unavailable on 2026-10-20; current hosted access, deployment modes, and contractual operator are not established by the acquisition or website redirect."
+  aliases:
+    - Gretel
+  references:
+    - type: product-page
+      source:
+        url: https://gretel.ai/gretel-synthetics-faqs/what-is-gretel
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://gretel.ai/university/enterprise-grade-platform
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://developer.nvidia.com/blog/author/alexwatson/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/use-cases/synthetic-data-generation-for-agentic-ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

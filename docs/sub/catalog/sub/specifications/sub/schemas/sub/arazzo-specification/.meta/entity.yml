@@ -1,0 +1,26 @@
+entity:
+  id: catalog/specifications/schemas/arazzo-specification
+  name: Arazzo Specification
+  references:
+    - type: specification
+      source:
+        url: https://spec.openapis.org/arazzo/v1.1.0.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: specification
+      source:
+        url: https://spec.openapis.org/arazzo/
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/OAI/Arazzo-Specification
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openapi-initiative

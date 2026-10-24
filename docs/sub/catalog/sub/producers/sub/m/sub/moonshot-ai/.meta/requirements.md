@@ -8,6 +8,8 @@
 - Keep Kimi model architecture, benchmarks, hosted-product access, pricing, quotas, and deployment guidance in their corresponding owners.
 - Include the official Moonshot AI site, GitHub organization, and official Hugging Face organization as research references.
 
+- Include the identity and producer-boundary context from canonical `entity.identity_note`; keep detailed product behavior with the related canonical owners.
+
 ## Validation
 
 - The producer page does not duplicate Kimi model profiles.

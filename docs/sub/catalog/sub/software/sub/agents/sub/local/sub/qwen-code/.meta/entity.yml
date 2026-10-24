@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/agents/local/qwen-code
+  type: software
+  name: Qwen Code
+  references:
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/qwen-code
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/QwenLM/qwen-code/blob/main/docs/users/overview.md
+      purposes:
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/QwenLM/qwen-code/releases
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/q/qwen-team

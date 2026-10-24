@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:9fb32d60941136c7a6b740485ede3132b1e45c73
+      entity.yml: gitblob:b792d5d6ff3999ba601b979adeca8244c8867df6
     parent:
       entity.yml: gitblob:6907e20773222c3926bc2ca6714631589c406770
   state:
@@ -71,6 +71,8 @@ cache:
           target: catalog/models/alibaba/qwen/qwen3-coder
         - type: produces
           target: catalog/models/alibaba/qwen/qwen3
+        - type: produces
+          target: catalog/models/alibaba/qwen/qwen3-8
     aliases:
       effective:
         schema: default

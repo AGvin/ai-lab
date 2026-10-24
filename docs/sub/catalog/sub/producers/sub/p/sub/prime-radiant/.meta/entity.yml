@@ -3,21 +3,22 @@ entity:
   type: organization
   name: Prime Radiant
   references:
-    - type: official-site
-      source:
-        url: https://primeradiant.com/
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: repository
-      source:
-        url: https://github.com/obra/superpowers
-      purposes:
-        - identification
-        - research
-      authority: official
-      note: Official Superpowers repository associated with this producer profile.
+  - type: official-site
+    source:
+      url: https://primeradiant.com/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/obra/superpowers
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: The upstream repository credits Jesse Vincent and the rest of the Prime Radiant team and declares MIT
+      licensing.
   relations:
-    - type: produces
-      target: catalog/agent-skills/collections/superpowers
+  - type: produces
+    target: catalog/agent-skills/collections/superpowers

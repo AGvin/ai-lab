@@ -2,6 +2,11 @@ entity:
   id: catalog/models/amazon/nova/nova-2
   type: model-series
   name: Amazon Nova 2
+  identity_note: >-
+    Nova generation within the AWS-produced Nova family. Its initial documentation names Lite, Sonic
+    and Multimodal Embeddings; the launch announcement separately identifies Nova 2 Pro as Preview.
+    Text generation, speech-to-speech and vector embeddings have different contracts. The series has
+    no single inherited modality, output type, context limit or access entitlement.
   references:
     - type: release-notes
       source:
@@ -16,6 +21,27 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-lite.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-conversational-speech.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/embeddings.html
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/amazon/nova
@@ -25,3 +51,5 @@ entity:
       target: catalog/models/amazon/nova/nova-2/models/nova-2-pro
     - type: has-member
       target: catalog/models/amazon/nova/nova-2/models/nova-2-sonic
+    - type: has-member
+      target: catalog/models/amazon/nova/nova-2/models/nova-multimodal-embeddings

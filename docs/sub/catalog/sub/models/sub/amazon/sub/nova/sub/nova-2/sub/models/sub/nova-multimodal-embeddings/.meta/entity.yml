@@ -1,0 +1,42 @@
+entity:
+  id: catalog/models/amazon/nova/nova-2/models/nova-multimodal-embeddings
+  type: model
+  name: Amazon Nova Multimodal Embeddings
+  identity_note: >-
+    Nova 2 embedding identity with Bedrock route amazon.nova-2-multimodal-embeddings-v1:0. Output is
+    vectors, not generated text. The guide limits a model input to 8K tokens or 30 seconds of
+    audio/video; longer media uses asynchronous segmentation. Supported dimensions are 256, 384, 1024
+    and 3072. Corpus/query embedding purpose and synchronous single-input versus asynchronous
+    segmented requests are operational choices, not additional models.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-amazon-nova-multimodal-embeddings.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/doc-history.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/embeddings.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/nova/latest/userguide/embeddings-schema.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/amazon/nova/nova-2

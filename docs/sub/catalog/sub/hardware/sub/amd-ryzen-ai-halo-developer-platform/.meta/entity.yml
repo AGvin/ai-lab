@@ -1,0 +1,29 @@
+entity:
+  id: catalog/hardware/amd-ryzen-ai-halo-developer-platform
+  type: hardware
+  name: AMD Ryzen AI Halo Developer Platform
+  aliases:
+    - AMD Ryzen AI Halo
+  references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/processors/desktops/ryzen/ryzen-ai-halo.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/processors/desktops/ryzen/ryzen-ai-halo/ryzen-ai-max-plus-395.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developer.amd.com/playbooks/user-guide/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/advanced-micro-devices-inc

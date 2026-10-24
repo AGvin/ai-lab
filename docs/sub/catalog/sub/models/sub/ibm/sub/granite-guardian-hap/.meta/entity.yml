@@ -1,0 +1,27 @@
+entity:
+  id: catalog/models/ibm/granite-guardian-hap
+  type: model-family
+  name: Granite Guardian HAP
+  identity_note: IBM compact English toxicity-classification family with 38M and 125M trained checkpoints.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-guardian-hap-38m
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-guardian-hap-125m
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/i/ibm
+  - type: has-member
+    target: catalog/models/ibm/granite-guardian-hap/models/granite-guardian-hap-38m
+  - type: has-member
+    target: catalog/models/ibm/granite-guardian-hap/models/granite-guardian-hap-125m

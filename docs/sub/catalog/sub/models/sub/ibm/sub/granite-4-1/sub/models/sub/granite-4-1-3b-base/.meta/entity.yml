@@ -1,0 +1,16 @@
+entity:
+  id: catalog/models/ibm/granite-4-1/models/granite-4-1-3b-base
+  type: model
+  name: Granite 4.1 3B Base
+  identity_note: IBM Granite 4.1 3B Base is a separately released base language model for adaptation.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-4.1-3b-base
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/ibm/granite-4-1

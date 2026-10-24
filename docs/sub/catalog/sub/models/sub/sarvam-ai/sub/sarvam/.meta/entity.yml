@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/sarvam-ai/sarvam
+  type: model-family
+  name: Sarvam
+  references:
+    - type: article
+      source:
+        url: https://www.sarvam.ai/blogs/sarvam-30b-105b
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.sarvam.ai/api/getting-started/models
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/sarvam-ai
+    - type: has-member
+      target: catalog/models/sarvam-ai/sarvam/models/sarvam-105b

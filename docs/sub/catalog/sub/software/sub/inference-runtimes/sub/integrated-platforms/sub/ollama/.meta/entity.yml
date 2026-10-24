@@ -30,6 +30,12 @@ entity:
       purposes:
         - research
       authority: official
+    - type: terms-of-service
+      source:
+        url: https://ollama.com/terms
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/o/ollama-inc

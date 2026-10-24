@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/alibaba/wan/wan-2-2/models/wan2-2-t2v-a14b
+  type: model
+  name: Wan2.2-T2V-A14B
+  aliases:
+    - Wan-AI/Wan2.2-T2V-A14B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Wan-Video/Wan2.2
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/wan/wan-2-2

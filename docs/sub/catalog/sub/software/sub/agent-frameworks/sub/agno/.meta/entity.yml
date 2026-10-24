@@ -16,6 +16,24 @@ entity:
       purposes:
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/agno-agi/agno
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.agno.com/agent-platform/overview
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.agno.com/features/security-and-auth
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/a/agno

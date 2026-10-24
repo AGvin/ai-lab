@@ -29,3 +29,19 @@ entity:
       target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano-omni
     - type: has-member
       target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-lightning
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-super-vl
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-super-vl-base
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-bolt
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano-base
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-super-base
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-ultra-base
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-lightning-base
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-ultra-genrm

@@ -1,0 +1,25 @@
+entity:
+  id: catalog/producers/a/augment-computing-inc
+  type: organization
+  name: Augment Computing, Inc.
+  aliases:
+    - Augment
+  references:
+    - type: official-site
+      source:
+        url: https://www.augmentcode.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.augmentcode.com/legal/privacy-policy
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official privacy policy identifying Augment Computing, Inc.
+  relations:
+    - type: produces
+      target: catalog/software/agents/hybrid/augment-code

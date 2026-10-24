@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/l/lg-ai-research
+  type: organization
+  name: LG AI Research
+  references:
+    - type: official-site
+      source:
+        url: https://www.lgresearch.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/LG-AI-EXAONE/K-EXAONE-2.0
+      purposes:
+        - research
+      authority: official
+      note: Official release repository attributes K-EXAONE 2.0 to LG AI Research; checkpoint-specific licensing and distribution remain with the model release.
+  relations:
+    - type: produces
+      target: catalog/models/lg-ai-research/k-exaone

@@ -1,0 +1,42 @@
+entity:
+  id: catalog/producers/m/maniskill-project
+  type: organization
+  name: ManiSkill Project
+  identity_note: >-
+    ManiSkill Project is the open-source project behind the ManiSkill robotics simulation and
+    manipulation framework. This project identity does not establish a separate corporate vendor or a
+    single university owner. Software, simulation assets, third-party dependencies, and real-robot
+    deployment have their own licensing and operational requirements; project provenance does not
+    guarantee hardware compatibility or deployment safety.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/mani-skill/ManiSkill
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.maniskill.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: license
+      source:
+        url: https://github.com/mani-skill/ManiSkill/blob/main/LICENSE
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: license
+      source:
+        url: https://github.com/mani-skill/ManiSkill/blob/main/LICENSE-3RD-PARTY
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/physical-ai-and-robotics/maniskill

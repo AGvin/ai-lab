@@ -1,0 +1,24 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/nvidia-aiperf
+  type: software
+  name: NVIDIA AIPerf
+  aliases:
+    - AIPerf
+  references:
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/aiperf/welcome-to-ai-perf-documentation
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ai-dynamo/aiperf
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

@@ -1,0 +1,165 @@
+entity:
+  id: catalog/producers/p/perplexity-ai
+  type: organization
+  name: Perplexity AI
+  references:
+  - type: official-site
+    source:
+      url: https://www.perplexity.ai/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: product-page
+    source:
+      url: https://www.perplexity.ai/products/computer
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Computer.
+  - type: product-page
+    source:
+      url: https://www.perplexity.ai/comet
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Comet.
+  - type: product-page
+    source:
+      url: https://www.perplexity.ai/en-GB/hub/products/portable-computer
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Portable Computer.
+  - type: documentation
+    source:
+      url: https://www.perplexity.ai/help-center/comet/en/articles/12867415-comet-assistant-privacy-data-use
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Comet data use.
+  - type: documentation
+    source:
+      url: https://docs.perplexity.ai/docs/agent-api/quickstart
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Agent API.
+  - type: documentation
+    source:
+      url: https://docs.perplexity.ai/docs/search/quickstart
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Search API.
+  - type: documentation
+    source:
+      url: https://docs.perplexity.ai/docs/embeddings/quickstart
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Embeddings API.
+  - type: documentation
+    source:
+      url: https://docs.perplexity.ai/docs/resources/privacy-security
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: API privacy.
+  - type: article
+    source:
+      url: https://www.perplexity.ai/changelog/effort-mode-gpt-6-astra-and-skills-marketplace
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Computer Skills Marketplace.
+  - type: repository
+    source:
+      url: https://github.com/perplexityai/api-platform-developers
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: API Platform Skills.
+  - type: model-card
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: PPLX Embed V1.
+  - type: model-card
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: PPLX Decider V1.1.
+  - type: model-card
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: PPLX Embed V2 Late.
+  - type: article
+    source:
+      url: https://www.perplexity.ai/pl/hub/blog/a-local-first-agent-for-private-and-cost-effective-knowledge-work
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: PPLX 27B local model provenance.
+  - type: article
+    source:
+      url: https://www.perplexity.ai/uk/hub/blog/q2d-web
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Q2D-Web.
+  relations:
+  - type: produces
+    target: catalog/services/assistant-workspaces/perplexity
+  - type: produces
+    target: catalog/software/agents/local/perplexity-portable-computer
+  - type: produces
+    target: catalog/agent-skills/registries/perplexity-skills-marketplace
+  - type: produces
+    target: catalog/models/perplexity-ai/pplx-27b
+  - type: produces
+    target: catalog/datasets/q2d-web
+  - type: produces
+    target: catalog/services/gateways/perplexity-agent-api
+  - type: produces
+    target: catalog/services/web-data/perplexity-search-api
+  - type: produces
+    target: catalog/services/model-apis/perplexity-embeddings-api
+  - type: produces
+    target: catalog/models/perplexity-ai/pplx-embed-v1
+  - type: produces
+    target: catalog/agent-skills/collections/perplexity-api-platform-skills
+  - type: produces
+    target: catalog/services/assistant-workspaces/perplexity-computer
+  - type: produces
+    target: catalog/software/interfaces-and-workspaces/integrated-workspaces/perplexity-comet
+  - type: produces
+    target: catalog/models/perplexity-ai/pplx-decider
+  - type: produces
+    target: catalog/models/perplexity-ai/pplx-embed-v2-late
+  - type: produces
+    target: catalog/models/perplexity-ai/pii-tracer
+  - type: produces
+    target: catalog/models/perplexity-ai/browsesafe

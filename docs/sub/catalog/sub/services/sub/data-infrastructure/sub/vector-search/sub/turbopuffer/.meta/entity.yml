@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/data-infrastructure/vector-search/turbopuffer
+  type: service
+  name: turbopuffer
+  references:
+    - type: documentation
+      source:
+        url: https://turbopuffer.com/docs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://turbopuffer.com/docs/vector
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/turbopuffer

@@ -17,6 +17,24 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/installation.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/components/command-line-code-executors.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-autogen/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/m/microsoft

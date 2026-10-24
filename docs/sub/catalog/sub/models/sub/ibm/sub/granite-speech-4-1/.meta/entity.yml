@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/ibm/granite-speech-4-1
+  type: model-family
+  name: Granite Speech 4.1
+  identity_note: IBM speech-model family represented here by the specialist 2B Plus checkpoint for
+    rich transcription.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/i/ibm
+  - type: has-member
+    target: catalog/models/ibm/granite-speech-4-1/models/granite-speech-4-1-2b-plus

@@ -14,7 +14,7 @@ entity:
       authority: official
     - type: other
       source:
-        url: https://www.coderabbit.ai/terms-of-service
+        url: https://www.coderabbit.ai/legal/terms-of-service
       purposes:
         - identification
         - research

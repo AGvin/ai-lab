@@ -1,30 +1,29 @@
 # Whisper
 
-Whisper is OpenAI's downloadable multilingual automatic-speech-recognition model family for transcription, speech translation, and language identification.
+Whisper is OpenAI’s downloadable multilingual automatic-speech-recognition model family. It supports transcription, speech translation, and language identification through an encoder-decoder Transformer architecture.
 
-## Translations
+## Profile
 
-- English
-- [Українська](./l10n/uk_UA/)
+The family spans approximately 39 million to 1.55 billion parameters and includes English-only and multilingual variants. large-v3 and turbo are upstream variants within this family [Whisper repository](https://github.com/openai/whisper).
 
-## Canonical producer
+The hosted whisper-1 API identity is separate from the downloadable family [Whisper API model reference](https://developers.openai.com/api/docs/models/whisper-1).
 
-- [OpenAI](../../../../../../../../../producers/sub/o/sub/openai/)
+turbo is optimized for transcription and is not trained for speech translation into English [Whisper repository](https://github.com/openai/whisper).
 
-## Model-family profile
+## Operating boundaries
 
-Whisper uses an encoder-decoder Transformer architecture. The released family spans model sizes from approximately 39 million to 1.55 billion parameters and includes English-only and multilingual variants.
+OpenAI deprecated the hosted whisper-1 API model on August 26, 2026 with shutdown scheduled for February 26, 2027. This API notice does not retire downloadable Whisper checkpoints [API deprecations](https://developers.openai.com/api/docs/deprecations).
 
-The upstream family also includes later variants such as `large-v3` and `turbo`. This migration keeps Whisper at the family level because no current reviewed destination requires separate canonical pages for those releases.
+The model card documents unspoken-text hallucinations and uneven performance by language and domain. Speaker or human-attribute classification is not established by the family’s ASR role [Whisper model card](https://github.com/openai/whisper/blob/main/model-card.md).
 
-OpenAI's current hosted API catalog also exposes `whisper-1` as a specific general-purpose speech-recognition model. That hosted model ID is not an alias for the entire downloadable Whisper family; it should receive its own concrete model/access representation when downstream documentation needs exact API identity.
+## Relations
 
-## Scope boundary
-
-This page owns Whisper family identity, producer relation, shared model-family characteristics, and authoritative references. Exact release/checkpoint lineage, hosted `whisper-1`, installation, inference software, runtime/hardware guidance, quantization, speech-model comparisons, and integration workflows belong to concrete model/artifact, software/deployment, selection, or evidence owners when materialized.
+- Producer: [OpenAI](../../../../../producers/sub/o/sub/openai/README.md).
 
 ## Official resources
 
-- [OpenAI Whisper repository](https://github.com/openai/whisper)
-- [Whisper paper](https://cdn.openai.com/papers/whisper.pdf)
-- [Whisper API model](https://developers.openai.com/api/docs/models/whisper-1)
+- [Whisper repository](https://github.com/openai/whisper).
+- [Whisper model card](https://github.com/openai/whisper/blob/main/model-card.md).
+- [Introducing Whisper](https://openai.com/index/whisper/).
+- [whisper-1 model reference](https://developers.openai.com/api/docs/models/whisper-1).
+- [API deprecations](https://developers.openai.com/api/docs/deprecations).

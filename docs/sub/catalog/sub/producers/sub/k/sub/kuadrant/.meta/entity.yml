@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/k/kuadrant
+  type: organization
+  name: Kuadrant
+  references:
+    - type: official-site
+      source:
+        url: https://kuadrant.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/Kuadrant/mcp-gateway
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/gateways/api-management-gateways/kuadrant-mcp-gateway

@@ -1,16 +1,16 @@
 # DavidAU Qwen3-Derived Models
 
-Reviewed navigation for DavidAU-published models whose documented lineage descends from Qwen3-family sources.
+This catalog index organizes represented DavidAU releases with documented Qwen3-derived ancestry. It is a navigation group whose current concrete release is the Xiaolong/Josiefied Omega Directive merge. [Primary source](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
 
-## Translations
+## Scope and lineage
 
-- English
-- [Українська](./l10n/uk_UA/)
+The publisher describes a full merge of two earlier DavidAU models, which themselves use Qwen3-derived sources. The concrete model owns that exact lineage; this index helps locate it and does not substitute a broad Qwen3 ancestor for either immediate parent. [Published merge description](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
 
-## Models
+## Catalog navigation
 
-- [`Qwen3 The Xiaolong Josiefied Omega Directive 22B`](./sub/models/sub/qwen3-the-xiaolong-josiefied-omega-directive-22b/) — a distinct 22B merge published by DavidAU.
+- [DavidAU Qwen3-Derived Model Releases](sub/models/README.md) — Reviewed release collection
+- [DavidAU Models](../../README.md) — DavidAU model view
 
-## Taxonomy boundary
+## Official resources
 
-This node is a catalog grouping, not a model family or series. A shared upstream Qwen3 ancestry does not make unrelated community merges versions of one trained model. Concrete model pages own their exact source lineage and modification facts.
+- <https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF>

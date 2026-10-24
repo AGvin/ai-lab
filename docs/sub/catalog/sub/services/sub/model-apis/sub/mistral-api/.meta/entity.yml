@@ -1,0 +1,44 @@
+entity:
+  id: catalog/services/model-apis/mistral-api
+  type: service
+  name: Mistral API
+  identity_note: >-
+    Mistral API is Mistral AI's direct hosted API service for model inference and supported API-native
+    capabilities. Applications call the service using an API key and an available model identifier. The
+    API reference covers capabilities such as chat, embeddings, classification, OCR, audio, files and
+    batch operations; each endpoint has its own request contract and lifecycle. The API is distinct from
+    model weights, SDKs, Studio's broader developer-console and asset-management surface, and Vibe's
+    agent experience. Model inventory, authentication, rate limits, prices, regions, API versions and
+    beta/GA status are mutable. Check the applicable endpoint documentation and deployment terms rather
+    than assuming all Mistral-hosted and self-hosted routes behave alike.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/api/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/api/endpoint/models
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/studio
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms
+      source:
+        url: https://legal.mistral.ai/terms/commercial-terms-of-service/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai

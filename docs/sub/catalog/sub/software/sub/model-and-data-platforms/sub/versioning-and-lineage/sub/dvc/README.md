@@ -14,3 +14,4 @@ DVC extends a Git repository with data/model provenance and reproducibility with
 - [DVC documentation](https://dvc.org/doc)
 - [DVC repository](https://github.com/treeverse/dvc)
 - [DVC joins lakeFS](https://dvc.org/blog/dvc-joins-lakefs-your-questions-answered/)
+- [DVC creator account](https://dvc.org/blog/dvc-1-0-release/)

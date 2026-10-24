@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/naver-cloud/hyperclova-x-seed
+  type: model-family
+  name: HyperCLOVA X SEED
+  references:
+    - type: article
+      source:
+        url: https://www.navercorp.com/media/pressReleasesDetail?seq=34256
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://navercorp.com/en/tech/hyperclovax
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/naver-cloud
+    - type: has-member
+      target: catalog/models/naver-cloud/hyperclova-x-seed/models/hyperclova-x-seed-8b-omni
+    - type: has-member
+      target: catalog/models/naver-cloud/hyperclova-x-seed/models/hyperclova-x-seed-32b-think

@@ -1,0 +1,98 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a89f4e62aeee7dad58c3bc5e1030817d5dc0ed89
+    parent:
+      entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/p/palo-alto-networks
+        type: organization
+        name: Palo Alto Networks, Inc.
+        aliases:
+        - Palo Alto Networks
+        references:
+        - type: official-site
+          source:
+            url: https://www.paloaltonetworks.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-completes-acquisition-portkey-secure-ai
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: First-party announcement confirming completion of Palo Alto Networks'
+            acquisition of Portkey on May 29, 2026.
+        - type: article
+          source:
+            url: https://www.paloaltonetworks.com/blog/2026/07/announcing-general-availability-of-prisma-airs-ai-gateway/
+          purposes:
+          - research
+          authority: official
+          note: First-party Prisma AIRS AI Gateway GA announcement documenting integration
+            of Portkey technology into the current Palo Alto Networks service surface.
+        relations:
+        - type: owns
+          target: catalog/producers/p/portkey-inc
+        - type: produces
+          target: catalog/services/ai-security/prisma-airs
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -17,6 +17,19 @@ entity:
         - identification
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/OpenHands/software-agent-sdk
+      purposes:
+        - research
+      authority: official
+      note: Canonical SDK and Agent Server implementation, separate from Agent Canvas UI.
+    - type: documentation
+      source:
+        url: https://github.com/OpenHands/docs/blob/main/openhands/usage/agent-canvas/setup.mdx
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/a/all-hands-ai-inc

@@ -1,0 +1,4 @@
+entity:
+  id: catalog/specifications/standards
+  type: catalog-index
+  name: Standards

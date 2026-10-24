@@ -1,0 +1,85 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:aa6bb3cd97a790dff421cf59b48c18fee89960ce
+    parent:
+      entity.yml: gitblob:0cf80df310da6a10fb2bdc28c39cf869cdb4d5e4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/specifications/standards/ieee-3119-2025-ai-procurement
+        name: IEEE 3119-2025 — Standard for the Procurement of Artificial Intelligence
+          and Automated Decision Systems
+        aliases:
+        - IEEE 3119-2025
+        references:
+        - type: specification
+          source:
+            url: https://standards.ieee.org/beyond-standards/ai-procurement-guidelines-regulatory-compliance/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: IEEE SA identifies IEEE 3119 as the first standard focused on responsible
+            AI procurement and describes its six procurement processes.
+        - type: other
+          source:
+            url: https://standards.ieee.org/about/sasb/sba/27mar2025/
+          purposes:
+          - research
+          authority: official
+          note: IEEE Standards Board records 3119-2025 as a new standard.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

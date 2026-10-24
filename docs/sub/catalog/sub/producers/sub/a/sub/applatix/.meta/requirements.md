@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Identify Applatix as the origin organization that created the Argo project and its Argo Workflows foundation before Intuit acquired Applatix in 2018.
+- Identify Applatix as the origin organization that created the Argo project and its Argo Workflows foundation before Intuit acquired Applatix.
 - Keep Applatix origin provenance distinct from later Intuit contribution/stewardship and current CNCF governance.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include authoritative CNCF and Intuit project-history references.

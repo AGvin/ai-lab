@@ -4,7 +4,12 @@ Higress is an open-source, cloud-native API gateway based on Istio and Envoy. It
 
 That broader gateway identity keeps Higress under API-management gateways. Alibaba Cloud also operates commercial gateway services around this technology, which are separate service boundaries.
 
+## Relations
+
+- Produced by: [Alibaba Group](../../../../../../../producers/sub/a/sub/alibaba-group/)
+
 ## Official resources
 
 - [Higress documentation](https://higress.cn/en/docs/latest/overview/what-is-higress)
 - [Higress repository](https://github.com/alibaba/higress)
+- [First-party provenance reference](https://www.alibabacloud.com/blog/602578)

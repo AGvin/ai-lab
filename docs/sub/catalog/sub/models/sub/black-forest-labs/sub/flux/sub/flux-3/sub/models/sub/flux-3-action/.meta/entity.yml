@@ -1,0 +1,59 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-action
+  type: model
+  name: FLUX 3 Action
+  references:
+  - type: product-page
+    source:
+      url: https://bfl.ai/models/flux-3-action
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/black-forest-labs/flux-3-action-base
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/black-forest-labs/flux-action
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/black-forest-labs/flux-3-action-droid
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/black-forest-labs/flux-3-action-so101
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://bfl.ai/blog
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: license
+    source:
+      url: https://huggingface.co/black-forest-labs/flux-3-image-klein-base/blob/main/LICENSE.md
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-3
+  identity_note: FLUX 3 Action here identifies Black Forest Labs' released 7B world-action adaptation base, published
+    as black-forest-labs/flux-3-action-base. It jointly models future video and action chunks and requires embodiment-specific
+    adaptation before use as a complete robot policy.

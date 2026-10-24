@@ -14,9 +14,22 @@
 - Include the official `Qwen/Qwen3-30B-A3B` model page.
 - Link the parent model and sibling version index.
 
+## Decision and Operational Boundaries
+
+- The initial Qwen3-30B-A3B checkpoint supports thinking and non-thinking text generation under Apache-2.0.
+- Its native context is 32,768 tokens, with a separately configured 131,072-token YaRN extension; do not copy the 2507 native context into this release.
+- Keep checkpoint identity separate from quantization and runtime packaging; pin the chosen revision and validate processor, chat-template, reasoning-parser, and tool-parser support in the selected runtime.
+- Keep model-generated text, code, and tool arguments separate from permission to execute them; the application owns command validation, tool access, network access, and sandboxing.
+
+Use the current primary references in `entity.yml` for these boundaries; mutable service values are not intrinsic identity guarantees.
+
 ## Validation
 
 - The page does not imply that the initial release is a different parameter-size concrete model.
 - The page does not duplicate the complete parent model profile.
 - Release behavior is described from official model material without migration/RC wording.
 - The `version-of` relation resolves to Qwen3 30B-A3B.
+
+## Reader Projection
+
+- Render the current entity's validated visible relations with resolved canonical links and preserve relation ordering; project the sourced identity and operational boundaries into the reader page.

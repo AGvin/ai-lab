@@ -16,6 +16,12 @@ entity:
       purposes:
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/alibaba/qwen/qwen3

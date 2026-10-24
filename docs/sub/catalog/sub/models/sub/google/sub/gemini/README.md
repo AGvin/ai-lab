@@ -2,14 +2,10 @@
 
 Gemini is Google's provider-hosted multimodal model family.
 
-## Translations
+## Canonical producers
 
-- English
-- [Українська](./l10n/uk_UA/)
-
-## Canonical producer
-
-- [Google](../../../../../../../../../producers/sub/g/sub/google/)
+- Produced by: [Google](../../../../../producers/sub/g/sub/google/)
+- Produced by: [Google DeepMind](../../../../../producers/sub/g/sub/google-deepmind/)
 
 ## Family boundary
 
@@ -17,7 +13,7 @@ Gemini models are accessed through provider-hosted products such as the Gemini A
 
 ## Models
 
-- [Gemini 3.6 Flash](./sub/models/sub/gemini-3-6-flash/) — stable provider-hosted multimodal model with model code `gemini-3.6-flash`.
+- [Concrete Gemini models](sub/models/)
 
 ## Scope boundary
 
@@ -25,4 +21,14 @@ This canonical page owns Gemini family identity, Google producer relation, hoste
 
 ## Official resources
 
-- [Gemini model documentation](https://ai.google.dev/gemini-api/docs/models)
+- <https://ai.google.dev/gemini-api/docs/models>
+- <https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash>
+- <https://deepmind.google/models/gemini/>
+- <https://ai.google.dev/gemini-api/docs/deprecations>
+- <https://ai.google.dev/gemini-api/docs/function-calling>
+
+## Source-scoped operating boundaries
+
+- Choose and record a concrete model ID. General reasoning, image generation, embeddings, transcription, TTS, Live audio, and allowlisted cyber models do not share a universal feature matrix. [Model inventory](https://ai.google.dev/gemini-api/docs/models).
+- Lifecycle routing can change the model behind an older endpoint: Gemini 3.7 Flash currently routes to 3.8 Flash. Keep routed historical identities distinguishable from independently served models. [Lifecycle table](https://ai.google.dev/gemini-api/docs/deprecations).
+- Function-calling support means the model can request an application function. Tool execution, permissions, and validation remain application responsibilities. Gemini API and Cloud terms, access controls, and feature availability must be evaluated for the actual serving route. [Function-calling workflow](https://ai.google.dev/gemini-api/docs/function-calling).

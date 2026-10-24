@@ -8,7 +8,9 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Preserve local-provider support such as Ollama and LM Studio without treating those inference runtimes as bundled model ownership.
 - Keep model/provider counts, assistant counts, edition/licensing details, supported tools, platform requirements, and release-specific features source-backed when expanded.
-- Include the current official Cherry Studio repository and website-identity reference.
+- Include current desktop repository/privacy sources, the website-brand reference and official mobile seller listing, with their distinct evidence scopes.
+
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
 
 ## Validation
 

@@ -2,13 +2,14 @@
 
 ## Requirements
 
-- Identify this node as the huihui.ai model-domain producer view rather than a duplicate producer profile.
-- Link the canonical huihui.ai producer and only reviewed huihui.ai model navigation.
-- Treat synthetic upstream-lineage groupings as navigation indexes unless an authoritative source establishes a durable family or series.
-- Keep exact base lineage, ablation/modification method, license, artifacts, runtime guidance, and publisher behavior claims on concrete model/artifact pages.
+- Preserve model-producer-view type and link the accepted huihui.ai producer instead of duplicating the producer profile.
+- Keep the two ancestry/release indexes as catalog-index navigation, without inventing a huihui model family from shared upstream ancestry.
+- Lead readers to the concrete derivative for its exact parent, own configuration, modification claims and artifact choices.
+- Keep publisher uncensored/abliterated labels separate from independent evaluation and keep quantization publishers separate from learned-model provenance.
+- Realize the complete English reader with cited identity, decision and operational facts and exact canonical navigation; advertise localized readers only when present.
 
 ## Validation
 
-- No synthetic family is invented from shared upstream ancestry.
-- Publisher `uncensored`/`abliterated` labels are not presented as independent model quality or safety evidence.
-- Quantized repositories are not treated as new trained models by format alone.
+- Preserve the canonical ID, name, type, aliases, existing source references and all existing relations; validate the complete entity against the repository schema.
+- Verify every outgoing relation, its exact required inverse and every reader target against the composed catalog tree.
+- Keep producer views, navigation indexes, trained models, model families, service access and quantized artifacts distinct; qualify publisher claims and current retrieval limits.

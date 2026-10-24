@@ -3,15 +3,24 @@ entity:
   type: model-series
   name: FLUX.1
   references:
-    - type: registry
-      source:
-        url: https://huggingface.co/black-forest-labs/FLUX.1-schnell
-      purposes:
-        - identification
-        - research
-      authority: official
+  - type: model-registry
+    source:
+      url: https://huggingface.co/black-forest-labs
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: model-card
+    source:
+      url: https://huggingface.co/black-forest-labs/FLUX.1-schnell
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: member-of
-      target: catalog/models/black-forest-labs/flux
-    - type: has-member
-      target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-schnell
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-schnell
+  identity_note: FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog currently materializes
+    FLUX.1-schnell within the series; the series is not synonymous with that checkpoint.

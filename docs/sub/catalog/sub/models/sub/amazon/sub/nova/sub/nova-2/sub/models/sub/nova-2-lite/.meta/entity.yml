@@ -2,6 +2,11 @@ entity:
   id: catalog/models/amazon/nova/nova-2/models/nova-2-lite
   type: model
   name: Amazon Nova 2 Lite
+  identity_note: >-
+    Concrete Nova 2 generation model, identified in Bedrock as amazon.nova-2-lite-v1:0. AWS documents
+    a 1M-token context and low, medium and high thinking levels. Text, image and video input support
+    does not imply speech output or an embeddings API. Bedrock inference profiles and regional routing
+    are access choices rather than separate trained identities.
   references:
     - type: release-notes
       source:
@@ -14,6 +19,20 @@ entity:
       source:
         url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-amazon.html
       purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-lite.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/doc-history.html
+      purposes:
+        - identification
         - research
       authority: official
   relations:

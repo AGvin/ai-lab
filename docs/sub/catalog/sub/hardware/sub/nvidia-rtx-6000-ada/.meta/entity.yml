@@ -1,0 +1,15 @@
+entity:
+  id: catalog/hardware/nvidia-rtx-6000-ada
+  type: hardware
+  name: NVIDIA RTX 6000 Ada Generation
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/products/workstations/rtx-6000/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

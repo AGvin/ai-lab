@@ -7,6 +7,7 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Keep model facts, API offerings, runtime integrations, and deployment guidance in their corresponding owners.
 - Include the official site and official Hugging Face organization as research references.
+- Keep model-domain navigation aligned to the current canonical Black Forest Labs model subtree.
 
 ## Validation
 

@@ -8,6 +8,8 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include the official Modem site and Hunk repository references from canonical metadata.
 
+- Include the identity and producer-boundary context from canonical `entity.identity_note`; keep detailed product behavior with the related canonical owners.
+
 ## Validation
 
 - Hunk and Modem remain separate identities.

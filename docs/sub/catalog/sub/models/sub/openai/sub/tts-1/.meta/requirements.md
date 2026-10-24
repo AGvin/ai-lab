@@ -1,0 +1,27 @@
+# Documentation Requirements
+
+## Requirements
+
+- Identify TTS-1 as OpenAI's text-to-speech model optimized for speed/realtime speech-generation use cases.
+- Preserve text input to audio output as the intrinsic modality boundary.
+- Preserve current lifecycle: OpenAI deprecated `tts-1` on 2026-10-01 and scheduled API shutdown for 2027-01-06; keep replacement guidance and all service details freshness-sensitive.
+- Keep voice inventory, audio formats, Speech endpoint behavior, pricing, rate limits, latency, and recommendation state freshness-sensitive.
+- Present speed positioning as provider guidance rather than an independent AI Lab quality ranking.
+
+## Validation
+
+- TTS-1 remains distinct from TTS-1 HD and GPT-4o Mini TTS.
+- Deprecated status is explicit and is not described as current recommended routing.
+- Endpoint/product behavior is not generalized into permanent model architecture.
+- Producer provenance resolves bidirectionally to OpenAI.
+
+## Source-scoped operating boundaries
+
+- OpenAI deprecated this model on October 1, 2026 and scheduled API shutdown for January 6, 2027. The notice recommends gpt-realtime-2.1-mini; moving to that model requires checking its Realtime interface rather than assuming Speech API compatibility [API deprecations](https://developers.openai.com/api/docs/deprecations).
+- Voice inventory, audio format, streaming, and delivery instructions are service controls. Provider speed and quality positioning does not guarantee the same result for every voice or workload [Text-to-speech guide](https://developers.openai.com/api/docs/guides/text-to-speech).
+
+## Source evidence
+
+- [tts-1 model reference](https://developers.openai.com/api/docs/models/tts-1).
+- [Text-to-speech guide](https://developers.openai.com/api/docs/guides/text-to-speech).
+- [API deprecations](https://developers.openai.com/api/docs/deprecations).

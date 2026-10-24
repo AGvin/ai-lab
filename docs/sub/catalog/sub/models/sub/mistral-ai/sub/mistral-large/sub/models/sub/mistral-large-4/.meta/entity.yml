@@ -1,0 +1,34 @@
+entity:
+  id: catalog/models/mistral-ai/mistral-large/models/mistral-large-4
+  type: model
+  name: Mistral Large 4
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/mistral-large-4-0
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.mistral.ai/resources/changelogs
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/inference/model-lifecycle
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/studio/conversations/function-calling
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/mistral-large

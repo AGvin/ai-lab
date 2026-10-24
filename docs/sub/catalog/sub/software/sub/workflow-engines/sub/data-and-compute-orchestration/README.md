@@ -1,16 +1,15 @@
 # Data and Compute Orchestration
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
-
-Workflow systems for scheduling, coordinating, observing, and reproducing data pipelines, machine-learning jobs, and distributed compute tasks.
+Data and Compute Orchestration contains engines that schedule work and manage dependencies across batch data pipelines, machine-learning workflows, and distributed compute jobs.
 
 ## Child pages
 
-- [`apache-airflow/`](./sub/apache-airflow/)
-- [`prefect/`](./sub/prefect/)
-- [`dagster/`](./sub/dagster/)
-- [`kestra/`](./sub/kestra/)
-- [`flyte/`](./sub/flyte/)
-- [`argo-workflows/`](./sub/argo-workflows/)
-- [`kubeflow-pipelines/`](./sub/kubeflow-pipelines/)
-- [`metaflow/`](./sub/metaflow/)
+- [Apache Airflow](./sub/apache-airflow/)
+- [Prefect](./sub/prefect/)
+- [Dagster](./sub/dagster/)
+- [Kestra](./sub/kestra/)
+- [Flyte](./sub/flyte/)
+- [Argo Workflows](./sub/argo-workflows/)
+- [Kubeflow Pipelines](./sub/kubeflow-pipelines/)
+- [Metaflow](./sub/metaflow/)
+- [SkyPilot](./sub/skypilot/)

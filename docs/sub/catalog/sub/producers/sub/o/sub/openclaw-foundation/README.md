@@ -1,12 +1,19 @@
 # OpenClaw Foundation
 
-OpenClaw Foundation is the non-profit organization that develops and stewards OpenClaw in the open.
+OpenClaw Foundation is the nonprofit organization stewarding OpenClaw. Its official introduction describes the independent foundation and preserves the project’s origins with Peter Steinberger and its community. [Foundation introduction](https://openclaw.ai/blog/introducing-openclaw-foundation).
 
-## Related catalog entity
+## Scope and operating boundaries
 
-- [OpenClaw](../../../../../software/sub/agents/sub/local/sub/openclaw/) — canonical Local Agent profile.
+Foundation stewardship and the maintenance relationship do not replace individual and community authorship. The software, Gateway component, installed integrations, model providers, and messaging channels retain separate operation, permissions, and applicable license conditions. [Project repository](https://github.com/openclaw/openclaw); [Credits](https://docs.openclaw.ai/reference/credits).
+
+## Relations
+
+- Maintains: [OpenClaw](../../../../../software/sub/agents/sub/local/sub/openclaw/)
 
 ## Official resources
 
-- [OpenClaw](https://openclaw.ai/)
-- [OpenClaw documentation](https://docs.openclaw.ai/)
+- [Official website](https://openclaw.ai/)
+- [Official documentation](https://docs.openclaw.ai/)
+- [Foundation introduction](https://openclaw.ai/blog/introducing-openclaw-foundation)
+- [Project repository](https://github.com/openclaw/openclaw)
+- [Credits](https://docs.openclaw.ai/reference/credits)

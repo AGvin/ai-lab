@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-late-0-6b
+  type: model
+  name: PPLX Embed V1 Late 0.6B
+  aliases:
+  - pplx-embed-v1-late-0.6b
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-embed-v1-late-0.6b
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/perplexity-ai/pplx-embed-v1
+  - type: derived-from
+    target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-0-6b
+  identity_note: >-
+    PPLX Embed V1 Late 0.6B is Perplexity's released MIT-licensed token-level late-interaction retriever continued from PPLX Embed V1 0.6B. It emits 128-dimensional token vectors and uses MaxSim scoring rather than one pooled dense vector per input.

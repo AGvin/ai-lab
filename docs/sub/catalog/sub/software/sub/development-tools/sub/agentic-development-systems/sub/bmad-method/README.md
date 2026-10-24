@@ -4,6 +4,10 @@ BMad Method is an AI-assisted development system that installs specialized agent
 
 Its primary role is to coordinate a structured development process through supported AI coding environments rather than to act as a standalone coding agent.
 
+## Relations
+
+- Produced by: [BMad Code, LLC](../../../../../../../producers/sub/b/sub/bmad-code-llc/)
+
 ## Official resources
 
 - [BMad Method documentation](https://docs.bmad-method.org/)

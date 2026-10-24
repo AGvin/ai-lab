@@ -2,14 +2,9 @@
 
 Gemini 3.6 Flash is a stable provider-hosted multimodal model in the Gemini family. Google made the stable `gemini-3.6-flash` model generally available on July 21, 2026.
 
-## Translations
-
-- English
-- [Українська](./l10n/uk_UA/)
-
 ## Model family
 
-- [Gemini](../../../..)
+- Member of: [Gemini](../../../../)
 
 ## Canonical profile
 
@@ -33,5 +28,11 @@ This page owns Gemini 3.6 Flash identity and source-backed current model/API lim
 
 ## Official resources
 
-- [Gemini 3.6 Flash model documentation](https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash)
-- [Gemini API release notes](https://ai.google.dev/gemini-api/docs/changelog)
+- <https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash>
+- <https://ai.google.dev/gemini-api/docs/changelog>
+- <https://ai.google.dev/gemini-api/docs/function-calling>
+
+## Source-scoped operating boundaries
+
+- The current model supports function calls, code execution, caching, grounding, and structured outputs. Image/audio generation and Live API are unsupported; computer use is separately marked preview. [Model reference](https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash).
+- Model-generated tool requests require application validation and authorization before execution. A stable model release does not make every attached tool or preview capability production-ready. [Function-calling workflow](https://ai.google.dev/gemini-api/docs/function-calling).

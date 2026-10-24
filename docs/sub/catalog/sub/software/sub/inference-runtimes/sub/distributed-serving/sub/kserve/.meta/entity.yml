@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/inference-runtimes/distributed-serving/kserve
+  type: software
+  name: KServe
+  references:
+    - type: documentation
+      source:
+        url: https://kserve.github.io/website/docs/admin-guide/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://kserve.github.io/website/docs/model-serving/predictive-inference/frameworks/overview
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/kserve/kserve
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/k/kserve-project

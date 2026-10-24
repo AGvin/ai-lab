@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:0c5f515755b16bbdf761c394a9dcd609cdd2ba58
+      entity.yml: gitblob:db8c9411394d1c2410240e147724df95419560c1
     parent:
       entity.yml: gitblob:6d21a59fa57088ad602d22d78dffc0d40db48cf8
   state:
@@ -60,6 +60,8 @@ cache:
           - research
           authority: official
         relations:
+        - type: produces
+          target: catalog/models/xai/grok
         - type: produces
           target: catalog/services/assistant-workspaces/grok
     aliases:

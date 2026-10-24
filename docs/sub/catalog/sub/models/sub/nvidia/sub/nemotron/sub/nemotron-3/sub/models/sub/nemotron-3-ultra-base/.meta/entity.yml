@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-ultra-base
+  type: model
+  name: NVIDIA Nemotron 3 Ultra Base
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/nvidia/nemotron/nemotron-3
+  identity_note: >-
+    Separately released pretrained hybrid LatentMoE model with 550B total and 55B active parameters, distinct from post-trained Ultra. OpenMDW-1.1; NVFP4 pretraining and BF16 release format do not define separate trained identities.

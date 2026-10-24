@@ -1,0 +1,32 @@
+entity:
+  id: catalog/producers/f/fluidstack-ltd
+  type: organization
+  name: FLUIDSTACK LTD
+  aliases:
+    - Fluidstack
+  references:
+    - type: official-site
+      source:
+        url: https://fluidstack.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://fluidstack.io/legal/terms-conditions/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://fluidstack.io/legal/terms-of-use
+      purposes:
+      - identification
+      - research
+      authority: official
+      note: The website terms explicitly name FLUIDSTACK LTD as operator.
+  relations:
+    - type: produces
+      target: catalog/services/infrastructure/fluidstack

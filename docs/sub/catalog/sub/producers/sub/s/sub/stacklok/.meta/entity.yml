@@ -1,0 +1,38 @@
+entity:
+  id: catalog/producers/s/stacklok
+  type: organization
+  name: Stacklok
+  identity_note: >-
+    Stacklok is the first-party publisher and maintainer of ToolHive through the stacklok upstream.
+    ToolHive is a separately released MCP platform; the organization is distinct from client agents,
+    model providers and the third-party MCP servers it runs. ToolHive’s Apache 2.0 source can be
+    deployed on operator-controlled infrastructure. Container isolation and configurable identity
+    policies depend on the selected deployment and configuration; they do not make every server or
+    exposed tool trustworthy. Review server provenance, image permissions, authentication, network
+    access and secrets. Managed or enterprise offerings and each connected service may have additional
+    agreements beyond the ToolHive source license.
+  references:
+    - type: official-site
+      source:
+        url: https://stacklok.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/stacklok/toolhive
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.stacklok.com/toolhive/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/ai-management-platforms/toolhive

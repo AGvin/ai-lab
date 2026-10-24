@@ -1,0 +1,16 @@
+entity:
+  id: catalog/models/ibm/granite-timeseries/models/granite-timeseries-flowstate-r1/versions/r1-0
+  type: model-version
+  name: Granite TimeSeries FlowState R1 Version 1.0
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-timeseries-flowstate-r1
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: IBM's current model card states that omitting the revision selector loads version 1.0.
+  relations:
+    - type: version-of
+      target: catalog/models/ibm/granite-timeseries/models/granite-timeseries-flowstate-r1

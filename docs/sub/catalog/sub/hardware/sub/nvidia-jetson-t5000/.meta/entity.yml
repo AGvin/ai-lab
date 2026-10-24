@@ -1,0 +1,27 @@
+entity:
+  id: catalog/hardware/nvidia-jetson-t5000
+  type: hardware
+  name: NVIDIA Jetson T5000
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developer.nvidia.com/embedded/jetson-modules/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developer.nvidia.com/embedded/lifecycle
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

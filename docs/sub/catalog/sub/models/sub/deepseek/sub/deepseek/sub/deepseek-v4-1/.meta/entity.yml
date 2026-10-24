@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/deepseek/deepseek/deepseek-v4-1
+  type: model-series
+  name: DeepSeek-V4.1
+  references:
+    - type: release-notes
+      source:
+        url: https://www.deepseek.com/en/news/deepseek-v4-1-flash/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/deepseek/deepseek
+    - type: has-member
+      target: catalog/models/deepseek/deepseek/deepseek-v4-1/models/deepseek-v4-1-flash

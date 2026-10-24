@@ -1,0 +1,57 @@
+entity:
+  id: catalog/models/bytedance/seedream
+  type: model-family
+  name: Seedream
+  references:
+  - type: official-site
+    source:
+      url: https://seed.bytedance.com/en/models
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://seed.bytedance.com/en/blog/seedream-4-0-officially-released-beyond-drawing-into-imagination
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://seed.bytedance.com/en/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/ModelArk/1330310
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/ModelArk/1541523
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://seed.bytedance.com/en/blog/deeper-thinking-more-accurate-generation-introducing-seedream-5-0-lite
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/b/bytedance-seed
+  - type: has-member
+    target: catalog/models/bytedance/seedream/models/seedream-4-0
+  - type: has-member
+    target: catalog/models/bytedance/seedream/models/seedream-5-0-pro
+  identity_note: Seedream is ByteDance Seed's image-generation and image-editing model family. Concrete releases
+    have different capabilities and hosted access contracts; the family is distinct from ByteDance's apps, API providers
+    and other model families.

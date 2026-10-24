@@ -1,0 +1,26 @@
+entity:
+  id: catalog/models/nvidia/nv-reason
+  type: model-series
+  name: NV-Reason
+  references:
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/advancing-explainable-ai-in-radiology-research-with-nvidia-clara-reason/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia
+    - type: has-member
+      target: catalog/models/nvidia/nv-reason/models/nv-reason-cxr-3b
+    - type: has-member
+      target: catalog/models/nvidia/nv-reason/models/nv-reason-ct

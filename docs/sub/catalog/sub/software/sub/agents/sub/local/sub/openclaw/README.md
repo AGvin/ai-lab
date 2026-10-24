@@ -8,6 +8,8 @@ OpenClaw's current product boundary remains local/self-hosted even when it uses 
 
 Treat channel credentials and DM policies, persistent Gateway operation, filesystem/workspace access, browser and tool execution, device-node permissions, third-party skills/plugins, scheduled work, model-provider credentials, and inbound untrusted messages as explicit trust boundaries. Use isolation and least privilege appropriate to the accounts, repositories, devices, and data connected to the assistant.
 
+OpenClaw explicitly models **one trust boundary per Gateway**. That supports one operator or a mutually trusting team, but not adversarial multi-tenant use: isolate mutually untrusted users with separate Gateways and credentials, ideally also separate OS users/hosts. Since release 2026.9.2, omitted session-tool visibility and agent-to-agent settings permit broader cross-agent transcript access and messaging than older defaults. Operators should review `tools.sessions.visibility`, `tools.agentToAgent`, tool grants and `openclaw security audit` instead of assuming agent/session names or operator roles provide tenant isolation.
+
 ## Provenance and stewardship
 
 - [Peter Steinberger](../../../../../../../producers/sub/p/sub/peter-steinberger/) — original creator and producer of OpenClaw together with the project's community.
@@ -18,3 +20,5 @@ Treat channel credentials and DM policies, persistent Gateway operation, filesys
 - [OpenClaw](https://openclaw.ai/)
 - [OpenClaw documentation](https://docs.openclaw.ai/)
 - [OpenClaw repository](https://github.com/openclaw/openclaw)
+- [Gateway security trust model](https://docs.openclaw.ai/gateway/security/trust-model)
+- [OpenClaw 2026.9.2 security changes](https://docs.openclaw.ai/releases/2026.9.2)

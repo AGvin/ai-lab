@@ -13,3 +13,11 @@
 - The page does not collapse Nous Research and Hermes Agent into one entity.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
 - Official resource links match canonical entity metadata.
+
+## Producer decision boundaries
+
+- Distinguish the organization and agent publisher from model authors, configured external providers, and optional hosted services.
+- Keep the code license separate from model/service permissions, and assess data routing from the actual configured deployment.
+- Render the official-resources block from canonical references supporting the producer identity and stated boundaries.
+
+These boundaries are grounded in the first-party references recorded in the current entity. Detailed product behavior remains with each related artifact.

@@ -7,6 +7,8 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official legal, site, and repository references.
 
+- Include the identity and producer-boundary context from canonical `entity.identity_note`; keep detailed product behavior with the related canonical owners.
+
 ## Validation
 
 - The page does not collapse Mirascope, Inc. and the Mirascope SDK/toolkit into one entity.

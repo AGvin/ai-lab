@@ -1,0 +1,16 @@
+entity:
+  id: catalog/models/ibm/granite-4-0-nano/models/granite-4-0-350m
+  type: model
+  name: Granite 4.0 350M
+  identity_note: IBM Granite 4.0 350M is a separately released instruction-tuned language model.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-4.0-350m
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/ibm/granite-4-0-nano

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:8b84373f4263939bb2b7bdbc66d0a3fb2338c3ae
+      entity.yml: gitblob:bcbc1e46dc31bda33a5151b2abfca6191bef5cb5
     parent:
       entity.yml: gitblob:399b63dbb397b0c8351cf3b6a5d35dc116a4408e
   state:
@@ -47,7 +47,7 @@ cache:
             url: https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/
           purposes:
           - research
-          authority: primary
+          authority: independent
           note: Exact foundational Google MapReduce reference preserved from the legacy
             Map-Reduce Agent Architecture source for partition/map/intermediate-key/reduce/runtime
             provenance; modern agent workflow adaptation remains pedagogical rather

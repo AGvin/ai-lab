@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/i/intel
+  type: organization
+  name: Intel
+  references:
+    - type: official-site
+      source:
+        url: https://www.intel.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.intc.com/news-events/press-releases/detail/1689/intel-unleashes-enterprise-ai-with-gaudi-3-ai-open-systems
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.intel.com/content/www/us/en/products/sku/245797/intel-arc-pro-b70-graphics/specifications.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/hardware/intel-gaudi-3
+    - type: produces
+      target: catalog/hardware/intel-arc-pro-b70

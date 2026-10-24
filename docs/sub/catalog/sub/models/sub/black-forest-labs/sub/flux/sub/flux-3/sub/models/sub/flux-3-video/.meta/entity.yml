@@ -1,0 +1,27 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-video
+  type: model
+  name: FLUX 3 Video
+  aliases:
+  - flux-3-video
+  references:
+  - type: article
+    source:
+      url: https://bfl.ai/blog/flux-3-video
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: product-page
+    source:
+      url: https://bfl.ai/models/flux-3-video
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-3
+  identity_note: FLUX 3 Video is Black Forest Labs' released FLUX 3 video-generation model with native audio. It
+    supports text, image and video-conditioned workflows; the public API and separately negotiated weight access
+    are distribution routes for the named model.

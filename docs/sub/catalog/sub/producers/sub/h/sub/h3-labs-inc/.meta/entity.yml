@@ -15,7 +15,7 @@ entity:
       note: Current Maxim AI privacy policy identifying H3 Labs Inc. as the company.
     - type: official-site
       source:
-        url: https://www.getmaxim.ai/bifrost
+        url: https://www.getmaxim.ai/
       purposes:
         - identification
         - research

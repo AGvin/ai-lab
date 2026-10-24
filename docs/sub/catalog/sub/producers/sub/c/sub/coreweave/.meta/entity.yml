@@ -17,6 +17,24 @@ entity:
         - research
       authority: official
       note: Current llm-d project README identifies CoreWeave as one of the founding organizations.
+    - type: documentation
+      source:
+        url: https://docs.coreweave.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://investors.coreweave.com/news/news-details/2025/CoreWeave-Completes-Acquisition-of-Weights--Biases/default.aspx
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/inference-runtimes/distributed-serving/llm-d
+    - type: produces
+      target: catalog/services/infrastructure/coreweave-cloud
+    - type: owns
+      target: catalog/producers/w/weights-and-biases
