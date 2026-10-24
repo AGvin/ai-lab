@@ -7,6 +7,8 @@
 - Keep Nemotron 3 Super Base initialization and Ultra Base distillation distinct from similarly named post-trained models.
 - Do not transfer post-trained behavior or benchmark results to this base checkpoint.
 
+- Preserve the source-explicit Super Base initialization using reciprocal derived-from / has-derivative relations. Keep Ultra Base teacher distillation distinct from backbone initialization; do not substitute post-trained Ultra.
+
 ## Validation
 
 - Family membership resolves reciprocally through Nemotron 3; producer provenance remains inherited through the existing family relation chain.
