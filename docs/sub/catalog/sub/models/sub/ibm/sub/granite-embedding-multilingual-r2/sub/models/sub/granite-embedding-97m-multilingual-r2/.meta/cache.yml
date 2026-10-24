@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a9290620991cba75c110b2c91aed26b314324b52
-    parent:
-      entity.yml: gitblob:c2268226b0021bef2bf9b03df8032de768b921c3
+      entity.yml: gitblob:5b59ce8b97df619598aa618035f867fae3b61e2d
+    parent: {}
   state:
     node:
       effective:
@@ -45,6 +44,10 @@ cache:
         id: catalog/models/ibm/granite-embedding-multilingual-r2/models/granite-embedding-97m-multilingual-r2
         type: model
         name: Granite Embedding 97M Multilingual R2
+        identity_note: Granite Embedding 97M Multilingual R2 is IBM's smaller R2 embedding
+          checkpoint. Its official card explicitly documents derivation from the 311M
+          R2 model through layer pruning from 22 to 12 layers and vocabulary selection,
+          preserving a distinct learned-model identity.
         references:
         - type: registry
           source:
@@ -53,9 +56,17 @@ cache:
           - identification
           - research
           authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-embedding-311m-multilingual-r2
+          purposes:
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/ibm/granite-embedding-multilingual-r2
+        - type: derived-from
+          target: catalog/models/ibm/granite-embedding-multilingual-r2/models/granite-embedding-311m-multilingual-r2
     aliases:
       effective:
         schema: default

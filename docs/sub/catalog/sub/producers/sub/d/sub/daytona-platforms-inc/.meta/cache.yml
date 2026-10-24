@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:0ee22cc0e62b2650e6a20b85eab92a0b6f273cc2
+      entity.yml: gitblob:dd365120ef0070f4a06b2ff6db15e5d5561fd874
     parent:
       entity.yml: gitblob:46b91081ab3e21420c7289bb28e30b3d82f867a5
   state:
@@ -62,6 +62,13 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://www.daytona.io/docs/
+          purposes:
+          - research
+          authority: official
+          note: Runtime service and developer interfaces.
         relations:
         - type: produces
           target: catalog/services/infrastructure/daytona

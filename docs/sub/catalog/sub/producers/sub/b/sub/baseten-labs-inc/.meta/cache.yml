@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1859b9f6394679b5e807b18b58c0eff48c4509c0
+      entity.yml: gitblob:0674a919a32189aa932aca1cbe7055ade26f5884
     parent:
-      entity.yml: gitblob:2f014c200c2282ae14ccd5407a676e2770042b54
+      entity.yml: gitblob:14d7c5336b98da3ce14bc46c931478ee37a1776d
   state:
     node:
       effective:
@@ -58,6 +58,13 @@ cache:
         - type: terms-of-service
           source:
             url: https://www.baseten.co/terms-and-conditions/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://www.baseten.co/products/model-apis/
           purposes:
           - identification
           - research

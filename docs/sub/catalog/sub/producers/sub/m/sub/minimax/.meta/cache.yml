@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:4086dde150f9506bbbe68df5c544ddf7f91f6d8a
+      entity.yml: gitblob:28dd179cd837742c3ebc954619fc32d0b85114d6
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -45,6 +45,12 @@ cache:
         id: catalog/producers/m/minimax
         type: organization
         name: MiniMax
+        identity_note: MiniMax is the AI foundation-model company producing the represented
+          MiniMax M model family. The company's model research, consumer applications,
+          and developer API are distinct product surfaces. The producer relation establishes
+          MiniMax M provenance; access terms, weight licenses, capability claims,
+          pricing, and deployment choices must be checked for each particular model
+          or service rather than inherited from the company name.
         references:
         - type: official-site
           source:
@@ -56,6 +62,13 @@ cache:
         - type: official-site
           source:
             url: https://www.minimax.io/about
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.minimax.io/blog/minimax-m3
           purposes:
           - identification
           - research

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b09ec63b56f2cf9362c5d8442cfb3be6a084ec27
+      entity.yml: gitblob:397699492616a82d873fcee4efa61f50ba999275
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -56,6 +56,13 @@ cache:
         - type: terms-of-service
           source:
             url: https://cerebrium.ai/terms-of-service
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://cerebrium.ai/docs/getting-started/introduction
           purposes:
           - identification
           - research

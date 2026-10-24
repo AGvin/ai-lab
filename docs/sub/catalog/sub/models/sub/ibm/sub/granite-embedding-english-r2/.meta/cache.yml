@@ -1,0 +1,99 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:88a97b28eb60b303e3ce5de3441f9b8772a89f69
+    parent:
+      entity.yml: gitblob:bd781d43d132f5a161bf61b6fd7be69a53dcdd6f
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/ibm/granite-embedding-english-r2
+        type: model-family
+        name: Granite Embedding English R2
+        identity_note: IBM English retrieval family containing two bi-encoder retrievers
+          and a separately trained cross-encoder reranker.
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-embedding-english-r2
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-embedding-small-english-r2
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-embedding-reranker-english-r2
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/i/ibm
+        - type: has-member
+          target: catalog/models/ibm/granite-embedding-english-r2/models/granite-embedding-english-r2
+        - type: has-member
+          target: catalog/models/ibm/granite-embedding-english-r2/models/granite-embedding-small-english-r2
+        - type: has-member
+          target: catalog/models/ibm/granite-embedding-english-r2/models/granite-embedding-reranker-english-r2
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

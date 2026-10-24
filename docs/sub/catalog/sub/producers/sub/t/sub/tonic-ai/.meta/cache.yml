@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e0aa4372d6dcbc5e0a9f5dd8980917f74e9d371a
+      entity.yml: gitblob:1c5e1dccad76eb53822e5a43a5265035ba006f87
     parent:
       entity.yml: gitblob:28ad9dbbd921bafdc12d024f89757651c4767ef8
   state:
@@ -51,6 +51,18 @@ cache:
             url: https://www.tonic.ai/
           purposes:
           - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://www.tonic.ai/products/fabricate
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.tonic.ai/docs
+          purposes:
           - research
           authority: official
         relations:

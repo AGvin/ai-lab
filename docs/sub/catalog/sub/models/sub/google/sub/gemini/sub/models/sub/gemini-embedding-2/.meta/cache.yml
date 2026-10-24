@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7c9a69283a8f0508343c9d082312df65725860be
+      entity.yml: gitblob:f01e14e38434c2dfb22ac3dfc3bc316ba59fd6fc
     parent:
-      entity.yml: gitblob:19474dbde7771ed145e8d250f35b64638d33c2f9
+      entity.yml: gitblob:998fdc17d518f5c954bd65de3c06dd5e2d72ca9e
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
   state:
     node:
@@ -46,6 +46,8 @@ cache:
         id: catalog/models/google/gemini/models/gemini-embedding-2
         type: model
         name: Gemini Embedding 2
+        aliases:
+        - gemini-embedding-2
         references:
         - type: documentation
           source:
@@ -61,9 +63,19 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemini-api/docs/deprecations
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/google/gemini
+        identity_note: Stable multimodal embedding model served as gemini-embedding-2;
+          output vectors support retrieval and similarity tasks rather than generated
+          conversational answers.
     aliases:
       effective:
         schema: default

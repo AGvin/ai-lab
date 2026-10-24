@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:dcdd78823baa1a4690f4b63323b69e863d8832a3
+      entity.yml: gitblob:60f1ec3882a58bba4e990204e1fa34cbc16fcbc7
     parent:
       entity.yml: gitblob:8144ca876d7f835bbf1e08e3cc7283fd011392cb
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -57,6 +57,12 @@ cache:
         - type: documentation
           source:
             url: https://docs.isaacsim.omniverse.nvidia.com/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.isaacsim.omniverse.nvidia.com/latest/installation/requirements.html
           purposes:
           - research
           authority: official

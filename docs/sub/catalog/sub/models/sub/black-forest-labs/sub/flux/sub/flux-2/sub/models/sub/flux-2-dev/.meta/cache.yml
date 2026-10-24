@@ -1,0 +1,94 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:921742c58db99bdfe36a0988738d37f20bc274aa
+    parent:
+      entity.yml: gitblob:ccef1da57ee6d547f9577b3262f2ec33c70f8562
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/series
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-dev
+        type: model
+        name: FLUX.2 [dev]
+        references:
+        - type: model-card
+          source:
+            url: https://huggingface.co/black-forest-labs/FLUX.2-dev
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/black-forest-labs/flux2
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: license
+          source:
+            url: https://github.com/black-forest-labs/flux2/blob/main/model_licenses/LICENSE-FLUX-NON-COMMERICAL
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/black-forest-labs/flux/flux-2
+        identity_note: FLUX.2 [dev] is Black Forest Labs' downloadable 32-billion-parameter
+          rectified-flow transformer for image generation and editing, with guidance
+          distillation. Its model weights use the FLUX Non-Commercial license, separately
+          from Apache-licensed components.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

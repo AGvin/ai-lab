@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e2dcefd1e410e00473d4b6c2cdf7dd10011a5eec
+      entity.yml: gitblob:d35a3ab8886bd8ebbc81588e7fe7c6581d8641a0
     parent:
-      entity.yml: gitblob:d2832a7979fe4d097b9404cc46ffd2fcc3b3eba6
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
   state:
     node:
       effective:
@@ -45,6 +45,18 @@ cache:
         id: catalog/producers/s/shanghai-qianhui-technology-co-ltd
         type: organization
         name: Shanghai Qianhui Technology Co., Ltd.
+        identity_note: Shanghai Qianhui Technology Co., Ltd. is the legal organization
+          associated with Cherry Studio. The current developer-supplied App Store
+          listing names it as seller and copyright holder, while the maintained desktop
+          repository is published through CherryHQ. The website currently uses the
+          Cherry Intelligence brand; that brand and the GitHub namespace are not independent
+          proof of a different legal company. Keep the legal organization, CherryHQ
+          publishing namespace and Cherry Studio software separate. The desktop Community
+          Edition uses AGPL-3.0, with a separate commercial-license route; mobile,
+          enterprise and hosted model offerings have their own conditions. Local conversation
+          storage does not prevent data from reaching configured model or tool providers.
+          Confirm the exact edition, provider terms and processing settings before
+          using sensitive information.
         references:
         - type: repository
           source:
@@ -60,8 +72,22 @@ cache:
           - identification
           - research
           authority: official
-          note: Current official Cherry Studio website source identifies the copyright
-            holder as Shanghai Qianhui Technology Co., Ltd.
+          note: Current website source uses the Cherry Intelligence brand; legal-name
+            evidence is supplied separately by the official mobile seller listing.
+        - type: registry
+          source:
+            url: https://apps.apple.com/us/app/cherry-studio-ai-anywhere/id6809783714
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/CherryHQ/cherry-studio/blob/main/PRIVACY.md
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/interfaces-and-workspaces/model-clients/cherry-studio

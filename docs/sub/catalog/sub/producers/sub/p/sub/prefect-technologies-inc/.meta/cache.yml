@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:4ad38c18659b671406d85f29af6bcfb06adc9180
+      entity.yml: gitblob:48c9139d1a66e8fcb61b459c871b91d88d5b408c
     parent:
       entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
   state:
@@ -63,9 +63,27 @@ cache:
           authority: official
           note: Prefect's current documentation records the project's 2018 origin
             and the creation of its Python-native orchestration system.
+        - type: repository
+          source:
+            url: https://github.com/PrefectHQ/prefect
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Prefect repository.
+        - type: repository
+          source:
+            url: https://github.com/PrefectHQ/fastmcp
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: FastMCP repository.
         relations:
         - type: produces
           target: catalog/software/workflow-engines/data-and-compute-orchestration/prefect
+        - type: produces
+          target: catalog/software/application-frameworks/application-development/fastmcp
     aliases:
       effective:
         schema: default

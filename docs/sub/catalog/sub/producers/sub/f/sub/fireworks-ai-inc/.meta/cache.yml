@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:69a54acb022b5b013ca6fa2d058c05b8eea0ba76
+      entity.yml: gitblob:b98a8a0ec810e7dbc45b11e5e3305dda9582f699
     parent:
       entity.yml: gitblob:834a848416cc4cbecc3cf2bbd5450eb5dd567415
   state:
@@ -67,6 +67,13 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.fireworks.ai/getting-started/introduction
+          purposes:
+          - research
+          authority: official
+          note: Hosted inference and training service scope.
         relations:
         - type: produces
           target: catalog/services/model-apis/fireworks-ai

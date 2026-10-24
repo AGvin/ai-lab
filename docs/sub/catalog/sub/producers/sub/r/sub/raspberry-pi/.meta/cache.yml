@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7de2e0d269a22df01196b80364d5c7b6f33e016b
+      entity.yml: gitblob:1d7dfbdbeac8c1a4d3073fb7f00258771c9d5b30
     parent: {}
   state:
     node:
@@ -54,6 +54,22 @@ cache:
           - identification
           - research
           authority: official
+        - type: product-page
+          source:
+            url: https://www.raspberrypi.com/products/ai-hat/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: AI HAT+.
+        - type: product-page
+          source:
+            url: https://www.raspberrypi.com/products/ai-hat-plus-2/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: AI HAT+ 2.
         relations:
         - type: produces
           target: catalog/hardware/raspberry-pi-ai-hat-plus

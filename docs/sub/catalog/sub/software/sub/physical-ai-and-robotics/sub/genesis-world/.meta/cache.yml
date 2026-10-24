@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:67d8e30fc098c4e13ab60e255b9aa4525b57be12
+      entity.yml: gitblob:5d885de9fd419624fa4b3f0eee1852a8085e5978
     parent:
       entity.yml: gitblob:8144ca876d7f835bbf1e08e3cc7283fd011392cb
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -57,6 +57,12 @@ cache:
         - type: documentation
           source:
             url: https://genesis-world.readthedocs.io/en/latest/user_guide/overview/what_is_genesis.html
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://genesis-world.readthedocs.io/en/latest/user_guide/overview/installation.html
           purposes:
           - research
           authority: official

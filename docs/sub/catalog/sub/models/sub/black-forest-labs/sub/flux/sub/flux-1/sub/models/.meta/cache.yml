@@ -2,10 +2,10 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:356a3abe4499d043c6e16f6987bac686420de371
+      entity.yml: gitblob:d9a446b0b485c5bd07299a28e3161d534c3ccf80
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
     parent:
-      entity.yml: gitblob:28a2d9ccd0f4477ef0d2fe7c7445a1dc01fbbcfc
+      entity.yml: gitblob:9d4d61d8131a402f164339296d318a9961b999b5
   state:
     node:
       effective:
@@ -46,6 +46,24 @@ cache:
         id: catalog/models/black-forest-labs/flux/flux-1/models
         type: catalog-index
         name: FLUX.1 Models
+        identity_note: Navigation index for concrete FLUX.1 model records. It currently
+          contains FLUX.1-schnell and has no independent trained weights, serving
+          contract or producer identity.
+        references:
+        - type: model-card
+          source:
+            url: https://huggingface.co/black-forest-labs/FLUX.1-schnell
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-registry
+          source:
+            url: https://huggingface.co/black-forest-labs
+          purposes:
+          - identification
+          - research
+          authority: official
     aliases:
       effective:
         schema: default

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:092cc6c2750bec270be251ccb822b093853fb1f2
+      entity.yml: gitblob:bf9f4f91445a12bee9fae85959f8ed468651806d
     parent:
-      entity.yml: gitblob:19474dbde7771ed145e8d250f35b64638d33c2f9
+      entity.yml: gitblob:998fdc17d518f5c954bd65de3c06dd5e2d72ca9e
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
   state:
     node:
@@ -48,6 +48,7 @@ cache:
         name: Gemini 3.1 Flash Lite Image
         aliases:
         - Nano Banana 2 Lite
+        - gemini-3.1-flash-lite-image
         references:
         - type: documentation
           source:
@@ -56,9 +57,19 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-image
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/google/gemini
+        identity_note: Stable Gemini image-generation and editing model served as
+          gemini-3.1-flash-lite-image and also named Nano Banana 2 Lite; the nickname
+          is not another trained model.
     aliases:
       effective:
         schema: default

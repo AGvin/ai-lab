@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:85ad9b391fa2e26f2523db24da9cd5f17448b445
-    parent:
-      entity.yml: gitblob:561ad09d8e2f11395455c9a4e5158177e31218b6
+      entity.yml: gitblob:6fb8f6204073feebe5c85f23073763936c03f8bf
+    parent: {}
   state:
     node:
       effective:
@@ -51,6 +50,12 @@ cache:
             url: https://docs.mistral.ai/models/codestral-25-08
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/studio/conversations/function-calling
+          purposes:
           - research
           authority: official
         relations:

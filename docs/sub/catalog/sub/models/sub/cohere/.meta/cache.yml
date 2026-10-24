@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:cb217ee507e9a4b0d1f308880f90d60d2092bc67
+      entity.yml: gitblob:3a6f9449e12ea725fe56bb72d7f5da441ab36a11
     parent:
       entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
       node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
@@ -58,6 +58,48 @@ cache:
           source:
             url: https://docs.cohere.com/docs/models
           purposes:
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://cohere.com/models-overview
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/c4ai-command-a-03-2025
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://cohere.com/research
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/v2/docs/rerank
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://docs.cohere.com/v2/changelog/rerank-v5
+          purposes:
+          - identification
           - research
           authority: official
     aliases:

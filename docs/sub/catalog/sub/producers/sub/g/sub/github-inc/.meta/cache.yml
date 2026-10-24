@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5454461d43c29c27b9e914cef60bd95b7716c0aa
+      entity.yml: gitblob:2418810646443a45ce4d1641d954ad9c9db0b991
     parent:
       entity.yml: gitblob:b7f05983a5d1c6c223967178283fa7f339514136
   state:
@@ -64,6 +64,27 @@ cache:
           authority: official
           note: Official GitHub Terms of Service identifying GitHub, Inc. and Microsoft
             as a GitHub affiliate.
+        - type: other
+          source:
+            url: https://blogs.microsoft.com/blog/2018/10/26/microsoft-completes-github-acquisition/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/github/spec-kit
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/customer-terms
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/agents/hybrid/github-copilot

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:bb472770231eb8d0af2c1ef8e364a73d9d4c3c8f
+      entity.yml: gitblob:72346a220b542dfba1c2fe2f6c48fa8258867e93
     parent:
       entity.yml: gitblob:52e5d82689f73b1741dc3a66f6cae32c9e404c33
   state:
@@ -58,6 +58,12 @@ cache:
             url: https://cloud.google.com/gemini-enterprise
           purposes:
           - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026/
+          purposes:
           - research
           authority: official
         relations:

@@ -1,0 +1,103 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:1398e638635a3dcc2b132fb456d1db58b2424784
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/mlperf-endpoints-v0-7
+        type: dataset
+        name: MLPerf Endpoints v0.7
+        identity_note: 'MLPerf Endpoints v0.7 is MLCommons'' initial released benchmark
+          framework for comparing deployed inference endpoints, with first results
+          published July 28, 2026. The v0.7 snapshot measures throughput, interactivity,
+          P95 time to first token and concurrency for particular endpoint configurations.
+          It is separate from traditional MLPerf Inference submission rounds, individual
+          model datasets and the live result-visualization platform. Version scope
+          matters: subsequent v1.0 development documentation uses P90 and revised
+          submission rules, which must not be applied retrospectively to v0.7. Published
+          curves remain specific to model, workload, hardware, software and submitted
+          configuration. The initial release''s limited coverage and later roadmap
+          do not establish universal provider comparisons or the release state of
+          future versions.'
+        references:
+        - type: article
+          source:
+            url: https://mlcommons.org/2026/07/mlperf-endpoints-v0-7-release/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://mlcommons.org/benchmarks/endpoints/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mlcommons.org/endpoints-submission-docs/understand/what-is-mlperf-endpoints/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mlcommons
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:48ca28251f4985113e2e4d09c367e93b5194a4bb
+      entity.yml: gitblob:e584de11d6ad62b2b7abbc4ea45f8a485a41f8cc
     parent:
-      entity.yml: gitblob:197caa1aad36286bbe020119ba37b7e29ba8dbf6
+      entity.yml: gitblob:95cd9a825d9b0958a0e79e9fd9ba4c327504aaf7
   state:
     node:
       effective:
@@ -49,6 +49,27 @@ cache:
         - type: release-notes
           source:
             url: https://mistral.ai/news/mistral-3/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512
           purposes:
           - identification
           - research

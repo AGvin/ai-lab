@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:0a6ba09035435058274c6a99a7a4bc8b2c9be992
-    parent:
-      entity.yml: gitblob:d56048515eaa11f3b15e26335cb04f7cd2aeebd9
+      entity.yml: gitblob:1dd67bcfaff3128997947ec6c383cbbf88aa93d3
+    parent: {}
   state:
     node:
       effective:
@@ -45,6 +44,8 @@ cache:
         id: catalog/models/google/lyria/models/lyria-3-5
         type: model
         name: Lyria 3.5
+        aliases:
+        - lyria-3.5
         references:
         - type: documentation
           source:
@@ -59,9 +60,26 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemini-api/docs/models/lyria-3.5
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://deepmind.google/models/model-cards/lyria-3-5/
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/google/lyria
+        identity_note: Stable music-generation model served as lyria-3.5, with text/image
+          input and audio plus lyrics output; API GA timing is distinct from model-card
+          publication.
     aliases:
       effective:
         schema: default

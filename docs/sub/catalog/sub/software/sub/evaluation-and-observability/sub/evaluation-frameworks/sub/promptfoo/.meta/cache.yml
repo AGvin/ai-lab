@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5cc8aab568870dce85e57d820a28597f3fdd1058
+      entity.yml: gitblob:3da117aa28bd7181443f46506537143498cbf209
     parent:
       entity.yml: gitblob:5dba29048fdaf9c45a85446dda84063e01b508a0
   state:
@@ -58,6 +58,12 @@ cache:
             url: https://github.com/promptfoo/promptfoo
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.promptfoo.dev/docs/red-team/troubleshooting/data-handling/
+          purposes:
           - research
           authority: official
         relations:

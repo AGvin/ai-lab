@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:79f80cdebf84c41db334cdd270db74b1859f46de
+      entity.yml: gitblob:16a6fbdd8b519daba8c919bab7a3a8411a2465d2
     parent:
-      entity.yml: gitblob:bfcd3044d54ac940007ece8552fb7d9d05ab41a0
+      entity.yml: gitblob:f0199168b2a7967b51423962a416d7fa428633c6
   state:
     node:
       effective:
@@ -49,6 +49,20 @@ cache:
         - type: release-notes
           source:
             url: https://mistral.ai/news/robostral-navigate/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://legal.mistral.ai/ai-governance/models/robostral-navigate/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2607.20785
           purposes:
           - identification
           - research

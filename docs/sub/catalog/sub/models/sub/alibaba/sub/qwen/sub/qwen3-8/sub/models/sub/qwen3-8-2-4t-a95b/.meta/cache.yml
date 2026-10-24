@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b240116d04963acef9bf2917aa9881c0233924b5
-    parent:
-      entity.yml: gitblob:fce5625014c495c8d89759a4b7874338ff2370bf
+      entity.yml: gitblob:fcd8721f510ecc76c086338bc498c0d6c7c6db8a
+    parent: {}
   state:
     node:
       effective:
@@ -53,9 +52,23 @@ cache:
           - identification
           - research
           authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/alibaba/qwen/qwen3-8
+        aliases:
+        - Qwen/Qwen3.8-2.4T-A95B
     aliases:
       effective:
         schema: default

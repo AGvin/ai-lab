@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:bb60d61e8e50b7b37c5103d7b9f8e56f104fee20
+      entity.yml: gitblob:8fd0683587f878e84f1041da2517978a89d50342
     parent:
       entity.yml: gitblob:076b92eff3cc890acf27aaad5283d321c9fe49b0
   state:
@@ -53,9 +53,23 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://www.intc.com/news-events/press-releases/detail/1689/intel-unleashes-enterprise-ai-with-gaudi-3-ai-open-systems
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.intel.com/content/www/us/en/products/sku/245797/intel-arc-pro-b70-graphics/specifications.html
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/hardware/intel-gaudi-3
+        - type: produces
+          target: catalog/hardware/intel-arc-pro-b70
     aliases:
       effective:
         schema: default

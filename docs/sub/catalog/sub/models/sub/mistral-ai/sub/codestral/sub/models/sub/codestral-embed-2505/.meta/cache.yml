@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7450f00b6b23243d83a23e43d1ec69a7e248ec7d
-    parent:
-      entity.yml: gitblob:561ad09d8e2f11395455c9a4e5158177e31218b6
+      entity.yml: gitblob:c8071ca754372cb67303d525810ad3ae9570d415
+    parent: {}
   state:
     node:
       effective:
@@ -51,6 +50,12 @@ cache:
             url: https://docs.mistral.ai/models/codestral-embed-25-05
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/studio/knowledge-rag/embeddings/code_embeddings
+          purposes:
           - research
           authority: official
         relations:

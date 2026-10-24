@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:4897ee7f8480fcd221317f73c4a7e1e6caa27f89
+      entity.yml: gitblob:e391898e6d4a346a4031cd7e9885c027c43f14a2
     parent:
       entity.yml: gitblob:eeb52bb259d3f0d1c5274d6ea315d12dfee85f68
   state:
@@ -51,6 +51,12 @@ cache:
             url: https://github.com/getzep/graphiti
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://help.getzep.com/graphiti/configuration/llm-configuration
+          purposes:
           - research
           authority: official
         relations:

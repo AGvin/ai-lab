@@ -1,10 +1,8 @@
 cache:
   schema: default
   fingerprints:
-    self:
-      entity.yml: gitblob:8d1f7a94ad616c69917c4e6db17a5dad7101c086
-    parent:
-      entity.yml: gitblob:06ae89518ba38d99a48cebfa2e018891fbc36f6f
+    self: {}
+    parent: {}
   state:
     node:
       effective:
@@ -40,22 +38,7 @@ cache:
           template: catalog/models/family
         local: {}
     entity:
-      effective:
-        schema: default
-        id: catalog/models/meta/llama/llama-4/models/behemoth
-        type: model
-        name: Llama 4 Behemoth
-        references:
-        - type: article
-          source:
-            url: https://ai.meta.com/blog/llama-4-multimodal-intelligence/
-          purposes:
-          - identification
-          - research
-          authority: official
-        relations:
-        - type: member-of
-          target: catalog/models/meta/llama/llama-4
+      effective: {}
     aliases:
       effective:
         schema: default

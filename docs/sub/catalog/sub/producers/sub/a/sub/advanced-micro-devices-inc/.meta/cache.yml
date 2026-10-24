@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:49839bcf64e4d07f84fe86f3d5a4b9daf8663603
+      entity.yml: gitblob:dc4a814fc9856942800668063215886b83f88f3a
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -69,6 +69,13 @@ cache:
           - identification
           - research
           authority: official
+        - type: product-page
+          source:
+            url: https://www.amd.com/en/products/software/rocm.html
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/hardware/amd-instinct-mi350x
@@ -76,6 +83,26 @@ cache:
           target: catalog/hardware/amd-instinct-mi355x
         - type: produces
           target: catalog/hardware/amd-instinct-mi455x
+        - type: produces
+          target: catalog/hardware/amd-instinct-mi350p
+        - type: produces
+          target: catalog/software/development-tools/agentic-development-systems/amd-rocm-ai
+        - type: produces
+          target: catalog/software/development-tools/agentic-development-systems/amd-ross
+        - type: produces
+          target: catalog/hardware/amd-ryzen-ai-max-plus-395
+        - type: produces
+          target: catalog/hardware/amd-ryzen-ai-halo-developer-platform
+        - type: produces
+          target: catalog/hardware/amd-radeon-rx-7900-xtx
+        - type: produces
+          target: catalog/hardware/amd-instinct-mi325x
+        - type: produces
+          target: catalog/hardware/amd-radeon-ai-pro-r9700
+        - type: produces
+          target: catalog/hardware/amd-instinct-mi300x
+        - type: produces
+          target: catalog/hardware/amd-instinct-mi300a
     aliases:
       effective:
         schema: default

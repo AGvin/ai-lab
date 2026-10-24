@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:fd8df40a2331b89b7736567088e63131f30fabbe
+      entity.yml: gitblob:609cf68912ca8a6428361cb6f9805a31bb8b2ab9
     parent:
       entity.yml: gitblob:46b91081ab3e21420c7289bb28e30b3d82f867a5
   state:
@@ -53,6 +53,20 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.descope.com/agentic-identity-hub
+          purposes:
+          - research
+          authority: official
+          note: Official product attribution and service scope.
+        - type: documentation
+          source:
+            url: https://docs.descope.com/agentic-identity-hub/use-cases
+          purposes:
+          - research
+          authority: official
+          note: Identity provider, agent, and resource-server responsibilities.
         relations:
         - type: produces
           target: catalog/services/agent-identity-and-access/descope-agentic-identity-hub

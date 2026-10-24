@@ -1,0 +1,81 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b87b37d9884870a30a81587919cbee1cd8cccf7a
+    parent: {}
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/meta/muse/models/muse-spark-1-2
+        type: model
+        name: Muse Spark 1.2
+        identity_note: Muse Spark 1.2 is Meta's released coding-focused Muse Spark
+          update introduced with Muse Code. Meta describes it as a coding-focused
+          update to Muse Spark 1.1 for code generation, debugging, codebase understanding,
+          and end-to-end developer workflows. Muse Code and Meta Model API are access/product
+          surfaces rather than separate trained-model identities.
+        references:
+        - type: article
+          source:
+            url: https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/meta/muse
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

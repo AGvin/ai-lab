@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c3ca37fa61e65c90e5157dc1cd5b8147f15a6746
+      entity.yml: gitblob:3d2b9bda04f3aa8e4e751a22dd3b4cd0aea21766
     parent:
       entity.yml: gitblob:487620e3ae645833061dca6b70626f158a1c9fc1
   state:
@@ -58,6 +58,12 @@ cache:
             url: https://github.com/huggingface/peft
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/docs/peft/developer_guides/checkpoint
+          purposes:
           - research
           authority: official
         relations:

@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3c68b29175a87f372426f33e8db89c1d5b4390b0
-    parent:
-      entity.yml: gitblob:7de3233cea4668b0927e6edc58e429a4eb565b9f
+      entity.yml: gitblob:b246b0e6cb11ee66598ad54c50e558771c3a68b1
+    parent: {}
   state:
     node:
       effective:
@@ -57,6 +56,13 @@ cache:
           source:
             url: https://docs.cohere.com/changelog/parse
           purposes:
+          - research
+          authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct
+          purposes:
+          - identification
           - research
           authority: official
         relations:

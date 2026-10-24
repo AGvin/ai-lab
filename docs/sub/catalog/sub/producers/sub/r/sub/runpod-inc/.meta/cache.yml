@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:041a02b6002a886686a7aa11485b8744b60ade6b
+      entity.yml: gitblob:21c063c274bf4dedb232e6a36ecba71eb82ec03b
     parent: {}
   state:
     node:
@@ -61,6 +61,14 @@ cache:
           authority: official
           note: Current terms identify Runpod, Inc. as the contracting entity for
             the Runpod service.
+        - type: documentation
+          source:
+            url: https://docs.runpod.io/overview
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Platform overview.
         relations:
         - type: produces
           target: catalog/services/infrastructure/runpod

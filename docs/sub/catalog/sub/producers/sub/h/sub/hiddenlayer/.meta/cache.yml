@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:769dd3a07f2c00144ccc673031339d2768f56db9
+      entity.yml: gitblob:13c69b7ef3c180eb304ecce6f39481c0d35a088e
     parent:
       entity.yml: gitblob:809c62e5e48565624df11ad5ab043ec1d16b9f4e
   state:
@@ -49,6 +49,20 @@ cache:
         - type: official-site
           source:
             url: https://www.hiddenlayer.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.hiddenlayer.com/about-us
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.hiddenlayer.com/platform
           purposes:
           - identification
           - research

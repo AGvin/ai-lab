@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a8cd9990a2085ccd8f34285d56dfa0a8ef340918
-    parent:
-      entity.yml: gitblob:8e9c3d73bdf6557bb281c5af56226d909d8a9b71
+      entity.yml: gitblob:fc1d20354bc8d686d78a3b6750af7fa0207f97ef
+    parent: {}
   state:
     node:
       effective:
@@ -56,6 +55,20 @@ cache:
         - type: registry
           source:
             url: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/command-a-vision-07-2025
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/aya-vision-8b
           purposes:
           - identification
           - research

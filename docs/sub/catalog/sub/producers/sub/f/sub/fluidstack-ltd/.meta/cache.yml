@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:fb638b2f44ab11e2d75a8a2b3b8e1312faf1da35
+      entity.yml: gitblob:66aa527e16eeaf6c6f44b03e50175b5947958129
     parent:
       entity.yml: gitblob:834a848416cc4cbecc3cf2bbd5450eb5dd567415
   state:
@@ -62,6 +62,14 @@ cache:
           - identification
           - research
           authority: official
+        - type: terms-of-service
+          source:
+            url: https://fluidstack.io/legal/terms-of-use
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: The website terms explicitly name FLUIDSTACK LTD as operator.
         relations:
         - type: produces
           target: catalog/services/infrastructure/fluidstack

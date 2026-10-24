@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c815cea9ab9fc82e7dc34d0946c41a77a012c05b
+      entity.yml: gitblob:5c96554a0f07bf0ec4f314083e797036f5272ab9
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -49,6 +49,13 @@ cache:
         - type: official-site
           source:
             url: https://www.checkpoint.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.checkpoint.com/ai-security/ai-agent-security/
           purposes:
           - identification
           - research

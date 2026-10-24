@@ -1,0 +1,105 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:59c86bb2eec0128b7082529637c2d0cb380c6eb4
+    parent:
+      entity.yml: gitblob:5e848f769005e6f901786fd212d8c9d8ccc468b3
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/n/newton-project
+        type: organization
+        name: Newton Project
+        references:
+        - type: repository
+          source:
+            url: https://github.com/newton-physics/newton-governance
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/newton-physics/newton-governance/blob/f64e05785206fac64896411ac05906039502cbab/CONTRIBUTING.md
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/newton-physics/newton
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.linuxfoundation.org/press/linux-foundation-announces-contribution-of-newton-by-disney-research-google-deepmind-and-nvidia-to-accelerate-open-robot-learning
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/newton-physics/newton-governance/blob/main/CONTRIBUTING.md
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/physical-ai-and-robotics/newton
+        identity_note: Newton Project is a Linux Foundation community project, initiated
+          by Disney Research, Google DeepMind, and NVIDIA; its TSC and maintainers
+          have documented roles distinct from foundation hosting and company affiliations.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

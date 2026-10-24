@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:03765d4655216e79270cfb465e98df5cd673fb5c
+      entity.yml: gitblob:827a5be763a6109743a77af795bd12a9b2096136
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -61,11 +61,27 @@ cache:
           authority: official
           note: Current llm-d project README identifies CoreWeave as one of the founding
             organizations.
+        - type: documentation
+          source:
+            url: https://docs.coreweave.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://investors.coreweave.com/news/news-details/2025/CoreWeave-Completes-Acquisition-of-Weights--Biases/default.aspx
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/inference-runtimes/distributed-serving/llm-d
         - type: produces
           target: catalog/services/infrastructure/coreweave-cloud
+        - type: owns
+          target: catalog/producers/w/weights-and-biases
     aliases:
       effective:
         schema: default

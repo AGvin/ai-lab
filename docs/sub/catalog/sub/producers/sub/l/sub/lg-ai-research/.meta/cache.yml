@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:bf23ff0d3aa8f5110f923c09436edd64bdf8ce88
+      entity.yml: gitblob:bac5ff890714308f387a9e765fe45c7f923f83c8
     parent:
       entity.yml: gitblob:665e9ca01b87f5f7025e0f60f3e694be0cc71db2
   state:
@@ -53,6 +53,14 @@ cache:
           - identification
           - research
           authority: official
+        - type: repository
+          source:
+            url: https://github.com/LG-AI-EXAONE/K-EXAONE-2.0
+          purposes:
+          - research
+          authority: official
+          note: Official release repository attributes K-EXAONE 2.0 to LG AI Research;
+            checkpoint-specific licensing and distribution remain with the model release.
         relations:
         - type: produces
           target: catalog/models/lg-ai-research/k-exaone

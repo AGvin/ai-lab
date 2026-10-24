@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:197caa1aad36286bbe020119ba37b7e29ba8dbf6
+      entity.yml: gitblob:95cd9a825d9b0958a0e79e9fd9ba4c327504aaf7
     parent:
       entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
       node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
@@ -57,6 +57,19 @@ cache:
         - type: registry
           source:
             url: https://huggingface.co/mistralai
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/inference/model-lifecycle
           purposes:
           - research
           authority: official

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:6ffa0fac91bb0b4291d3b522f0b92ab2020618bc
+      entity.yml: gitblob:2fea20b58a1ad5407eb0b20fb60eb5a1b2a6190d
     parent:
       entity.yml: gitblob:076b92eff3cc890acf27aaad5283d321c9fe49b0
   state:
@@ -56,6 +56,12 @@ cache:
         - type: repository
           source:
             url: https://github.com/iree-org/iree
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/iree-org/iree/blob/main/GOVERNANCE.md
           purposes:
           - research
           authority: official

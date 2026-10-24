@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f35795be94c247952b856e6e5840092ef10b617a
+      entity.yml: gitblob:775ded367542c53dad1b0215024c17a050b1d23a
     parent:
       entity.yml: gitblob:b36ca5bdc58da8f3782c6a5822573937ea2cd7d2
   state:
@@ -60,9 +60,33 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.openedgeplatform.intel.com/2026.2/edge-ai-libraries/OpenVINO.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/openvinotoolkit/openvino
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/openvinotoolkit/nncf
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/nncf
+        - type: produces
+          target: catalog/software/inference-runtimes/inference-engines/openvino
+        identity_note: OpenVINO Toolkit is the Intel-associated upstream project identity
+          shared by OpenVINO Runtime and NNCF; it is not an inferred separate corporation,
+          and runtime, compression, model rights, and hardware support remain distinct.
     aliases:
       effective:
         schema: default

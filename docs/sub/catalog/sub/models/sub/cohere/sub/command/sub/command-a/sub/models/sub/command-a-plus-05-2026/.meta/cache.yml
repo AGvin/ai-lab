@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:522f7215ca6f6303319d0cd92f69ddb35b3afa0d
-    parent:
-      entity.yml: gitblob:2e4bf4dbd2ba17b5a0f41b8405f7ad7b1a0bdebc
+      entity.yml: gitblob:c1214e5cbcb683a88022641a8732dffcbd01a34f
+    parent: {}
   state:
     node:
       effective:
@@ -59,9 +58,39 @@ cache:
           purposes:
           - research
           authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://cohere.com/blog/command-a-plus
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/models
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/cohere/command/command-a
+        - type: produced-by
+          target: catalog/producers/c/cohere-labs
     aliases:
       effective:
         schema: default

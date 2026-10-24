@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e9503e18bb3aad2445e19f50af03b342d62e3b8d
-    parent:
-      entity.yml: gitblob:95f3960bfa7c4f742db9a1895b44e73bb65fbdac
+      entity.yml: gitblob:de03deb61dd5c5590bca56f2712e3562b1781edf
+    parent: {}
   state:
     node:
       effective:
@@ -55,14 +54,22 @@ cache:
           authority: official
         - type: documentation
           source:
-            url: https://deploymentsafety.openai.com/
+            url: https://deploymentsafety.openai.com/gpt-live
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/guides/voice-server-controls
+          purposes:
           - research
           authority: official
         relations:
         - type: member-of
           target: catalog/models/openai/gpt-live
+        identity_note: Released full-duplex voice model; GPT-Live-1 API availability
+          is not inherited by GPT-Live-1 mini.
     aliases:
       effective:
         schema: default

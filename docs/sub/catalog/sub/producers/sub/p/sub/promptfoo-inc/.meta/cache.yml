@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:718bcc32ddb8e03ef450344e1d4d1a938a729ed9
+      entity.yml: gitblob:e942e74688b39ef0469ae3f589a92a605e9824ea
     parent:
       entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
   state:
@@ -60,7 +60,9 @@ cache:
           - identification
           - research
           authority: official
-          note: First-party terms identifying Promptfoo Inc.
+          note: Published website terms last updated January 24, 2025 identify Promptfoo
+            Inc.; the current organizational relationship is stated separately on
+            the company page.
         - type: official-site
           source:
             url: https://www.promptfoo.dev/about/
@@ -75,6 +77,14 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://www.promptfoo.dev/docs/red-team/troubleshooting/data-handling/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Red-team data handling.
         relations:
         - type: produces
           target: catalog/software/evaluation-and-observability/evaluation-frameworks/promptfoo

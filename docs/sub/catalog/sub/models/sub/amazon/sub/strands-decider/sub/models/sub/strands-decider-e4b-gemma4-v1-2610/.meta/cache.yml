@@ -1,0 +1,107 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:dcf42838c71b891427e1e9265db6a4c971ccc356
+    parent: {}
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/amazon/strands-decider/models/strands-decider-e4b-gemma4-v1-2610
+        type: model
+        name: Strands Decider E4B Gemma4 v1-2610
+        identity_note: Released strands-decider-E4B-gemma4-v1-2610 adapter and decision
+          head on google/gemma-4-E4B-it. The three-run combination is a trained model
+          identity, not a runtime package or a mirror. It uses text only and requires
+          the repository code with Gemma support, which the cited card says is not
+          yet in PyPI. Model size labels do not establish memory fit or inherited
+          base modalities. Short-task confidence calibration must be tested on the
+          target questions. Runtime state is truncated by default; strict-window mode
+          rejects oversize input.
+        aliases:
+        - StrandsAgents/strands-decider-E4B-gemma4-v1-2610
+        references:
+        - type: model-card
+          source:
+            url: https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/strands-labs/strands-decider/blob/main/docs/naming.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: announcement
+          source:
+            url: https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/strands-labs/strands-decider/blob/main/docs/inference.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/amazon/strands-decider
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

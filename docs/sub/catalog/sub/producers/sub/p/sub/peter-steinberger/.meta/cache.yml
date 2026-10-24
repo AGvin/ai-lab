@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:cea75571ad1d11dccf0c2fdb9d7d8ef662e02e04
+      entity.yml: gitblob:f8b57b240980782a470e0fb0a5aadf85dbbff9e9
     parent:
       entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
   state:
@@ -64,8 +64,16 @@ cache:
           - identification
           - research
           authority: official
-          note: Current signed OpenClaw releases identify Peter Steinberger (steipete)
-            as an active release author.
+          note: Official OpenClaw release history; creator provenance and current
+            release-signing stewardship are separate roles.
+        - type: documentation
+          source:
+            url: https://docs.openclaw.ai/gateway/security/trust-model
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Gateway trust model.
         relations:
         - type: produces
           target: catalog/software/agents/local/openclaw

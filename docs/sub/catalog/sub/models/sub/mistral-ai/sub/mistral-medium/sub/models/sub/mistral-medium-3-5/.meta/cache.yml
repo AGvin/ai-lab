@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:648cde9a410e9547695904ee71b5ef6c58c30597
+      entity.yml: gitblob:a2b86e180e7143977a16926bca9e289851f0f88d
     parent:
-      entity.yml: gitblob:122abb4016f8e526fd91080841657b467099849c
+      entity.yml: gitblob:ff1f456bdbf26efa80fd172d5796dd04b44f9b55
   state:
     node:
       effective:
@@ -56,6 +56,18 @@ cache:
         - type: registry
           source:
             url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/studio/conversations/function-calling
           purposes:
           - research
           authority: official

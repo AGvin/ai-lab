@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:05a63bdcb22c414a654e6c795947a48544795348
+      entity.yml: gitblob:09ce3313c4a14c497cc6e22f63062a7aff8941e4
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -49,6 +49,20 @@ cache:
         - type: official-site
           source:
             url: https://www.cisco.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.cisco.com/site/us/en/products/security/ai-defense/ai-runtime/index.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developer.cisco.com/docs/ai-defense-management/introduction/
           purposes:
           - identification
           - research

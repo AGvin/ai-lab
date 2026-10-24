@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e4d2e60215a30542044c1eac8d6003cafd6fa06a
+      entity.yml: gitblob:961d1f77b8d1dcb34b22828ef973c418964c674e
     parent:
       entity.yml: gitblob:437f10af07fb695413aa77b7ff9e33c08a29b710
   state:
@@ -70,6 +70,10 @@ cache:
           target: catalog/producers/n/nvidia
         - type: has-member
           target: catalog/models/nvidia/nemotron/nemotron-3
+        - type: has-member
+          target: catalog/models/nvidia/nemotron/models/qwen3-nemotron-235b-a22b-genrm
+        - type: has-member
+          target: catalog/models/nvidia/nemotron/models/qwen3-nemotron-235b-a22b-genrm-2603
     aliases:
       effective:
         schema: default

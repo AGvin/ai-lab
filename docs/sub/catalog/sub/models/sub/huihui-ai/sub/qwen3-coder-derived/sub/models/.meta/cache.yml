@@ -2,10 +2,10 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:2717cf8b12931792b607a0510ee9771faaf4e3ce
+      entity.yml: gitblob:0cc845bf222533d2878e654a70f914711ad559ef
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
     parent:
-      entity.yml: gitblob:78db8d0fca340681f6feea7565f2e954f2d95d8c
+      entity.yml: gitblob:518684df47310d54db06a4e4f34428c7e2a20b26
   state:
     node:
       effective:
@@ -46,6 +46,25 @@ cache:
         id: catalog/models/huihui-ai/qwen3-coder-derived/models
         type: catalog-index
         name: huihui.ai Qwen3-Coder-Derived Model Releases
+        identity_note: This catalog index lists the represented concrete huihui.ai
+          modified model in the Qwen3-Coder-derived branch. The abliterated model
+          is the modified weight identity; its GGUF conversions belong to the separate
+          artifact navigation and typed artifact record.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF
+          purposes:
+          - identification
+          - research
+          authority: official
     aliases:
       effective:
         schema: default

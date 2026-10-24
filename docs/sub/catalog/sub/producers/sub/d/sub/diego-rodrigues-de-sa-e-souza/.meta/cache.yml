@@ -1,0 +1,95 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:7f66c526d7a4098cd2c0cf778ef28b2353dc6417
+    parent:
+      entity.yml: gitblob:46b91081ab3e21420c7289bb28e30b3d82f867a5
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/d/diego-rodrigues-de-sa-e-souza
+        type: individual
+        name: Diego Rodrigues de Sa e Souza
+        aliases:
+        - diegosouzapw
+        references:
+        - type: repository
+          source:
+            url: https://github.com/diegosouzapw
+          purposes:
+          - identification
+          authority: official
+          note: The public profile provides the full name and identifies the account
+            holder as OmniRoute's creator.
+        - type: repository
+          source:
+            url: https://github.com/diegosouzapw/diegosouzapw/blob/main/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: The profile README explicitly states creator and lead-maintainer responsibility
+            for OmniRoute.
+        - type: repository
+          source:
+            url: https://github.com/diegosouzapw/OmniRoute
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/gateways/model-gateways/omniroute
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7a334ea624e7e4a46bad31e4f864b4171895999f
+      entity.yml: gitblob:8b148dc93b71fdfcc9263c3f4f8dc67b297a49a6
     parent:
-      entity.yml: gitblob:d2832a7979fe4d097b9404cc46ffd2fcc3b3eba6
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
   state:
     node:
       effective:
@@ -45,6 +45,16 @@ cache:
         id: catalog/producers/s/sylphai-inc
         type: organization
         name: SylphAI, Inc.
+        identity_note: SylphAI, Inc. publishes and develops AdalFlow, the represented
+          Python library for building and optimizing AI applications. Its maintained
+          SylphAI-Inc repository, official documentation and MIT copyright identify
+          the organization; AdalFlow remains a separate software identity. AdalFlow’s
+          MIT source license does not include model-provider services, credentials
+          or rights to training and evaluation data. The framework’s agents, optimization
+          and tracing features operate within the application’s chosen providers and
+          tool permissions. Review data exposure in prompts and traces, API costs,
+          output validation and tool execution for the actual application. Other SylphAI
+          products are outside this software’s producer relation.
         references:
         - type: documentation
           source:
@@ -58,6 +68,13 @@ cache:
         - type: repository
           source:
             url: https://github.com/SylphAI-Inc/AdalFlow
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/SylphAI-Inc/AdalFlow/blob/main/LICENSE.md
           purposes:
           - identification
           - research

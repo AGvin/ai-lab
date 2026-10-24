@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5daaa6f2f131a00b978743cdd4e5e75d943a660b
+      entity.yml: gitblob:c228ddedd4bbeed4042fcc4bc96c05e67dcd4912
     parent:
-      entity.yml: gitblob:d2c3a18a296e2df171b1c48ef3f980eee453a6c2
+      entity.yml: gitblob:1100585bf7390450d37e1476e2e352d73d8e482d
   state:
     node:
       effective:
@@ -59,6 +59,27 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://deepmind.google/models/gemini/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemini-api/docs/deprecations
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemini-api/docs/function-calling
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/g/google
@@ -80,6 +101,23 @@ cache:
           target: catalog/models/google/gemini/models/gemini-3-8-flash-cyber
         - type: has-member
           target: catalog/models/google/gemini/models/gemini-embedding-2
+        - type: has-member
+          target: catalog/models/google/gemini/models/gemini-3-8-flash-tts
+        - type: has-member
+          target: catalog/models/google/gemini/models/gemini-3-8-flash-lite-tts
+        - type: has-member
+          target: catalog/models/google/gemini/models/gemini-nano-banana-2-1
+        - type: has-member
+          target: catalog/models/google/gemini/models/gemini-3-8-live
+        - type: has-member
+          target: catalog/models/google/gemini/models/gemini-3-8-live-extended-thinking
+        - type: has-member
+          target: catalog/models/google/gemini/models/gemini-4-argon
+        - type: has-member
+          target: catalog/models/google/gemini/models/gemini-4-argon-cyber-permissive
+        identity_note: Provider-hosted model family attributed to Google and Google
+          DeepMind; exact released model IDs, specialized variants, and service routes
+          carry different capabilities and access conditions.
     aliases:
       effective:
         schema: default

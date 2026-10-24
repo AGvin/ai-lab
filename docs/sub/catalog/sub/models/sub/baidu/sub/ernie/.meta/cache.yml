@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5750a1f34c5d1f4b3366d0d36d410e5a4ee94bf1
+      entity.yml: gitblob:e97f5ef2b405eb2c5a9320960f1dd4bb09cd37d4
     parent:
-      entity.yml: gitblob:7316f20e3b79e8540eb8f990eacf9e2a0af47160
+      entity.yml: gitblob:ca1fd94746bf938fe9dd0b8a33ef3caf8715aea1
   state:
     node:
       effective:
@@ -45,6 +45,13 @@ cache:
         id: catalog/models/baidu/ernie
         type: model-family
         name: ERNIE
+        identity_note: ERNIE is Baidu's foundation-model family. The represented ERNIE
+          5.0 and 5.1 entries are distinct trained-model identities; dated or descriptive
+          Qianfan serving names are not automatically additional models. The concrete
+          members own architecture, size and release facts. ERNIE 5.1 preserves an
+          explicit derived-from relationship to 5.0. Keep product features, hosted
+          limits, partner models and the lifecycle of individual preview endpoints
+          separate from the family.
         references:
         - type: official-site
           source:
@@ -57,6 +64,20 @@ cache:
           source:
             url: https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j
           purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://ernie.baidu.com/blog/posts/ernie5.0/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/
+          purposes:
+          - identification
           - research
           authority: official
         relations:

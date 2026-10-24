@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:38fa1ac5d7eac5358dc4f7bea298effab939c9b5
-    parent:
-      entity.yml: gitblob:57bece4bd6e8106cacba187edb9c4a07b9e8ff1e
+      entity.yml: gitblob:2d3eda2119d3126eff9a7c24e090a1ef627f017c
+    parent: {}
   state:
     node:
       effective:
@@ -45,6 +44,14 @@ cache:
         id: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-earth
         type: model
         name: Tiny Aya Earth
+        identity_note: Tiny Aya Earth is a region-specialized instruction-tuned 3.35-billion-parameter
+          multilingual text model developed by Cohere and Cohere Labs. Its current
+          documentation covers 70 languages and an 8K context, with emphasis on West
+          Asian and African language tasks. The Cohere tiny-aya-earth Chat route is
+          currently live; its table lists an 8K maximum output separately from the
+          context figure. The official gated weights use CC-BY-NC-4.0 with acceptable-use
+          terms. Advertised language coverage and small size do not guarantee uniform
+          task quality or fit on every device.
         references:
         - type: registry
           source:
@@ -59,9 +66,41 @@ cache:
           purposes:
           - research
           authority: official
+        - type: article
+          source:
+            url: https://arxiv.org/html/2603.11510v1
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://cohere.com/blog/cohere-labs-tiny-aya
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/tiny-aya-base
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/cohere-labs/aya/tiny-aya
+        - type: produced-by
+          target: catalog/producers/c/cohere
+        - type: derived-from
+          target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-global
     aliases:
       effective:
         schema: default

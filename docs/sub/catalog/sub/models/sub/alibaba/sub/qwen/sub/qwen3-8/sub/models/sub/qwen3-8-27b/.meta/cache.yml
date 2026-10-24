@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f7055fde96fb126168e2e76b6caa678a1a64ab3b
-    parent:
-      entity.yml: gitblob:fce5625014c495c8d89759a4b7874338ff2370bf
+      entity.yml: gitblob:3b4b642777b73b21a0b6e38e1f6cc884b1bec43d
+    parent: {}
   state:
     node:
       effective:
@@ -53,9 +52,40 @@ cache:
           - identification
           - research
           authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.8-27B
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/Cloudflare/clef
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/alibaba/qwen/qwen3-8
+        - type: has-derivative
+          target: catalog/models/cloudflare/clef/models/clef
+        - type: has-derivative
+          target: catalog/models/perplexity-ai/pplx-27b
+        - type: has-derivative
+          target: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-v1-27b
+        - type: has-derivative
+          target: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-v1-1-27b
+        - type: has-derivative
+          target: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-v1-2
+        aliases:
+        - Qwen/Qwen3.8-27B
     aliases:
       effective:
         schema: default

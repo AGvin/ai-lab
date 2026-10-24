@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:60b058cc26b3e262280af02ff3ad54354e208b60
+      entity.yml: gitblob:a8b8d411d964af5bcea2c61ae9ae1cf09ce62651
     parent:
       entity.yml: gitblob:97c89f13b46e2d335122b42b81931060174ee358
   state:
@@ -44,18 +44,20 @@ cache:
         schema: default
         id: catalog/software/gateways/api-management-gateways/envoy-ai-gateway
         type: software
-        name: Envoy AI Gateway
+        name: Agent Router
+        aliases:
+        - Envoy AI Gateway
         references:
         - type: documentation
           source:
-            url: https://aigateway.envoyproxy.io/docs/
+            url: https://theagentrouter.ai/docs/
           purposes:
           - identification
           - research
           authority: official
         - type: repository
           source:
-            url: https://github.com/envoyproxy/ai-gateway
+            url: https://github.com/theagentrouter/agent-router
           purposes:
           - identification
           - research
@@ -68,11 +70,22 @@ cache:
           authority: official
           note: Official project introduction documenting the joint Tetrate and Bloomberg
             origin.
+        - type: article
+          source:
+            url: https://theagentrouter.ai/blog/envoy-ai-gateway-is-now-agent-router/
+          purposes:
+          - research
+          authority: official
+          note: Official September 2026 rename and Agentic AI Foundation stewardship
+            announcement; deployed API groups, Helm artifacts and CLI retain historic
+            names.
         relations:
         - type: produced-by
           target: catalog/producers/b/bloomberg-lp
         - type: produced-by
           target: catalog/producers/t/tetrate
+        - type: maintained-by
+          target: catalog/producers/a/agentic-ai-foundation
     aliases:
       effective:
         schema: default

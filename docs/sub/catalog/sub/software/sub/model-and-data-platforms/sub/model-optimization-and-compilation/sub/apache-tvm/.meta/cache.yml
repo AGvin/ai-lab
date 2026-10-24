@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c7a597abd047d4e93becb2cae7871280c7bd0137
+      entity.yml: gitblob:a599229183c1f5e56d59eaed6c82621af6e65221
     parent:
       entity.yml: gitblob:945b0913e6325eed67569d93e169a06cccd3de20
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -59,6 +59,12 @@ cache:
             url: https://github.com/apache/tvm
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://tvm.apache.org/docs/reference/security.html
+          purposes:
           - research
           authority: official
         relations:

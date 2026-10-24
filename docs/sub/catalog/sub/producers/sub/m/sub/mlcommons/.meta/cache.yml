@@ -1,0 +1,155 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:3f0320b0ad0691054196903bcece9c50838f44d7
+    parent:
+      entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/m/mlcommons
+        type: organization
+        name: MLCommons
+        identity_note: MLCommons is an open AI engineering consortium that develops
+          and operates AI benchmarks with industry, academia and other contributors.
+          Its represented work includes MLPerf system-performance suites and the AILuminate
+          safety benchmark family. Consortium provenance is distinct from the authorship
+          of each reference model or dataset and from the vendors submitting systems
+          or hosting tested endpoints. Results apply to a specified benchmark revision,
+          workload, quality target and system configuration. AILuminate grades describe
+          the fixed system under test and tested hazards; they are not universal safety
+          certification for an underlying model. Public code, practice data, protected
+          official tests, result publication and trademark use can have different
+          access or licensing conditions. MLPerf Endpoints v0.7 remains an identifiable
+          release even as later rules develop; newer metrics and submission rules
+          must not be backported into that snapshot.
+        references:
+        - type: official-site
+          source:
+            url: https://mlcommons.org/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://mlcommons.org/about-us/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://mlcommons.org/benchmarks/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://mlcommons.org/2026/09/mlperf-inference-v6-1-results/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://mlcommons.org/2026/06/mlperf-training-v6-0-results/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://mlcommons.org/ailuminate/safety-faq/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://mlcommons.org/2026/07/mlperf-endpoints-v0-7-release/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mlcommons.org/endpoints-submission-docs/understand/what-is-mlperf-endpoints/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/datasets/mlperf-edge-agentic-inference
+        - type: produces
+          target: catalog/datasets/mlperf-end-to-end-rag-inference
+        - type: produces
+          target: catalog/datasets/mlperf-client-v2-0
+        - type: produces
+          target: catalog/datasets/mlperf-storage-v3-0
+        - type: produces
+          target: catalog/datasets/mlperf-inference
+        - type: produces
+          target: catalog/datasets/mlperf-training
+        - type: produces
+          target: catalog/datasets/ailuminate
+        - type: produces
+          target: catalog/datasets/mlperf-mobile-v6-0
+        - type: produces
+          target: catalog/datasets/mlperf-endpoints-v0-7
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,124 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b44684e0307250cfea893b496ef8c43f44c24f0e
+    parent:
+      entity.yml: gitblob:2ff7ac7e787ae25f562c48b524ea3128d606e92f
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/amazon/strands-decider
+        type: model-family
+        name: Strands Decider
+        identity_note: AWS Strands model lineage with published adapters and option-scoring
+          heads, separate from the Strands SDK and inference package. noul, choice
+          and score select or rate supplied alternatives rather than generating free-form
+          answers. Public checkpoints define trained identities; mirrors, seeds and
+          code releases do not. Confidence calibration needs target-traffic evaluation.
+          Qwen vision is optional and not image-trained; the released Gemma deciders
+          are text-only and require the repository runtime with Gemma support. Runtime
+          state is truncated by default; strict-window mode rejects oversize input.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/strands-labs/strands-decider
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/strands-labs/strands-decider/blob/main/docs/naming.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/strands-labs/strands-decider/blob/main/docs/inference.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/amazon-web-services
+        - type: has-member
+          target: catalog/models/amazon/strands-decider/models/strands-decider-2b-hobson-v21
+        - type: has-member
+          target: catalog/models/amazon/strands-decider/models/strands-decider-2b-qwen3-5-v1-2610
+        - type: has-member
+          target: catalog/models/amazon/strands-decider/models/strands-decider-e2b-gemma4-v1-2610
+        - type: has-member
+          target: catalog/models/amazon/strands-decider/models/strands-decider-e4b-gemma4-v1-2610
+        - type: has-member
+          target: catalog/models/amazon/strands-decider/models/strands-decider-12b-gemma4-v1-2610
+        - type: has-member
+          target: catalog/models/amazon/strands-decider/models/strands-decider-26b-a4b-gemma4-v1-2610
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

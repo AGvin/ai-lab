@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:15dd31eb3f156b8557d4ccdee21742f5e2ddf392
+      entity.yml: gitblob:d7f67a47e0d0e9ad5f1d12ebb4bf1356a269005a
     parent:
-      entity.yml: gitblob:19474dbde7771ed145e8d250f35b64638d33c2f9
+      entity.yml: gitblob:998fdc17d518f5c954bd65de3c06dd5e2d72ca9e
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
   state:
     node:
@@ -46,6 +46,9 @@ cache:
         id: catalog/models/google/gemini/models/gemini-3-5-transcribe
         type: model
         name: Gemini 3.5 Transcribe
+        aliases:
+        - gemini-3.5-transcribe
+        - gemini-3.5-transcribe-live
         references:
         - type: documentation
           source:
@@ -64,6 +67,9 @@ cache:
         relations:
         - type: member-of
           target: catalog/models/google/gemini
+        identity_note: Speech-to-text model documented with unary gemini-3.5-transcribe
+          and streaming gemini-3.5-transcribe-live serving forms; transport names
+          do not establish distinct trained models.
     aliases:
       effective:
         schema: default

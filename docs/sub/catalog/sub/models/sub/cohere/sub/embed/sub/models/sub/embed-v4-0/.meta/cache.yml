@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1d7cb0c351c42f58c99ba7fee8b324cf454554f9
-    parent:
-      entity.yml: gitblob:61a0625745667fe4546eb0e6d46b4490598d0a28
+      entity.yml: gitblob:0678d60a294a5bf1d93019f15b505682e27bc3ed
+    parent: {}
   state:
     node:
       effective:
@@ -57,6 +56,13 @@ cache:
           source:
             url: https://docs.cohere.com/reference/embed
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/cohere-embed
+          purposes:
+          - identification
           - research
           authority: official
         relations:

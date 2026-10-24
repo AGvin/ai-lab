@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:6fee90960438b1d532438431053f03163acaf2d0
+      entity.yml: gitblob:8f3fda8e05f079ff13df30e3bc886a0f7c809918
     parent:
-      entity.yml: gitblob:197caa1aad36286bbe020119ba37b7e29ba8dbf6
+      entity.yml: gitblob:95cd9a825d9b0958a0e79e9fd9ba4c327504aaf7
   state:
     node:
       effective:
@@ -49,6 +49,27 @@ cache:
         - type: release-notes
           source:
             url: https://mistral.ai/news/mistral-small-4/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/mistralai/Leanstral-1.5-119B-A6B
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://docs.mistral.ai/resources/changelogs
           purposes:
           - identification
           - research

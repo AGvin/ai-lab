@@ -1,0 +1,113 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:c4e027268eacc13a561e9ef87926a48716cea5a4
+    parent:
+      entity.yml: gitblob:0c958ac9b06255323dd6f40493fd9f05736b939d
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/agents/local/google-antigravity
+        type: software
+        name: Google Antigravity
+        aliases:
+        - Antigravity 2.0
+        identity_note: Current standalone Google Antigravity 2.0 agent application
+          and CLI product identity; keep the separately shipped Antigravity IDE distinct
+          when discussing product surfaces.
+        references:
+        - type: official-site
+          source:
+            url: https://antigravity.google/product/antigravity-2
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://antigravity.google/docs/getting-started/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://antigravity.google/changelog
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://antigravity.google/product/antigravity-cli
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://antigravity.google/blog/remote-control-for-antigravity
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://antigravity.google/blog/introducing-google-antigravity-2
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/g/google
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

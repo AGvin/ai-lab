@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7981cc59a93e22ecaedede9b9701f4e5c94db950
+      entity.yml: gitblob:67956b89613e4b051b4fc784063fd260fda7f343
     parent:
       entity.yml: gitblob:0ef9bd1b1008623086461a66341cb136fac18f1e
   state:
@@ -58,6 +58,18 @@ cache:
             url: https://github.com/bentoml/BentoML
           purposes:
           - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.bentoml.com/blog/bentoml-is-joining-modular
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.modular.com/blog/bentoml-joins-modular
+          purposes:
           - research
           authority: official
         relations:

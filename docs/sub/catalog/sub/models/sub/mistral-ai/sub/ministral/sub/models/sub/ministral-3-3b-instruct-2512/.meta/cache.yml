@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b321becf4d428edf200ba2233ce9dad7b436deb5
+      entity.yml: gitblob:b67f88c31d08f700408604be91e2c51ea1880c09
     parent:
-      entity.yml: gitblob:48ca28251f4985113e2e4d09c367e93b5194a4bb
+      entity.yml: gitblob:e584de11d6ad62b2b7abbc4ea45f8a485a41f8cc
   state:
     node:
       effective:
@@ -49,6 +49,13 @@ cache:
         - type: registry
           source:
             url: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/ministral-3-3b-25-12
           purposes:
           - identification
           - research

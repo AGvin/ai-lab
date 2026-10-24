@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:0f44097397c6da299e406072a2b44035d67e5675
+      entity.yml: gitblob:e3195303c24228cfd56398d884ce63d41d05e9d8
     parent:
       entity.yml: gitblob:945b0913e6325eed67569d93e169a06cccd3de20
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -59,6 +59,12 @@ cache:
             url: https://github.com/microsoft/Olive
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://microsoft.github.io/Olive/privacy.html
+          purposes:
           - research
           authority: official
         relations:

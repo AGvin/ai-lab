@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:30d1a27086697f243544b3fc9850e38e541178ca
+      entity.yml: gitblob:6488777f964ebfc90611df86788431514a535fbb
     parent:
       entity.yml: gitblob:a04a2fff37b479888014ba64732ca3fb7d4ca47e
   state:
@@ -58,6 +58,12 @@ cache:
             url: https://github.com/qdrant/qdrant
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://qdrant.tech/documentation/tutorials-operations/secure-qdrant/
+          purposes:
           - research
           authority: official
         relations:

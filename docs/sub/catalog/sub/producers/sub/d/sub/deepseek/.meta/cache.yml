@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:6525e6453c3c9571b727bbdfefa06a7a300cfb23
+      entity.yml: gitblob:42c273a895e8b527a82f9748a39cef616104e77f
     parent:
       entity.yml: gitblob:46b91081ab3e21420c7289bb28e30b3d82f867a5
   state:
@@ -68,6 +68,10 @@ cache:
         relations:
         - type: produces
           target: catalog/models/deepseek/deepseek
+        - type: produces
+          target: catalog/services/assistant-workspaces/deepseek
+        - type: produces
+          target: catalog/services/model-apis/deepseek-api
     aliases:
       effective:
         schema: default

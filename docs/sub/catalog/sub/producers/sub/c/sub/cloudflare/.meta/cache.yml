@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f742c4801b3adbc3b5083545be37fe997fccac4b
+      entity.yml: gitblob:6fc76ff8a3b15cef93546315ff201ef5bc9834cc
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -61,6 +61,20 @@ cache:
           purposes:
           - research
           authority: official
+        - type: other
+          source:
+            url: https://developers.cloudflare.com/browser-run/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://blog.cloudflare.com/clef-decision-models/
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/services/gateways/model-gateways/cloudflare-ai-gateway
@@ -71,7 +85,13 @@ cache:
         - type: produces
           target: catalog/services/infrastructure/cloudflare-agents
         - type: produces
+          target: catalog/services/infrastructure/cloudflare-browser-rendering
+        - type: produces
           target: catalog/agent-skills/collections/cloudflare-skills
+        - type: produces
+          target: catalog/models/cloudflare/clef
+        - type: produces
+          target: catalog/services/data-infrastructure/vector-search/cloudflare-ai-search
     aliases:
       effective:
         schema: default

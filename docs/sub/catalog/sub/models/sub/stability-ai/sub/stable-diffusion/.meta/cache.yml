@@ -1,0 +1,114 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:f48eb9aab914593d41e6dfe58193022cede3b681
+    parent:
+      entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
+      node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/producer
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/producer
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/stability-ai/stable-diffusion
+        type: model-family
+        name: Stable Diffusion
+        identity_note: Stable Diffusion is Stability AI’s image-generation model family.
+          It contains separately released series and trained variants; the represented
+          series here is Stable Diffusion 3.5. A family name does not identify a single
+          interchangeable checkpoint. Follow the series and concrete model entries
+          for architecture, size and distribution details. Local weights, Stability’s
+          hosted API, partner endpoints and optimized runtime artifacts are different
+          deployment surfaces. A fine-tune or runtime conversion does not automatically
+          become an original Stability AI release. Check the exact release’s license.
+          Stable Diffusion 3.5 appears in the current Core Models list and Community/Enterprise
+          program, with revenue-dependent commercial eligibility and other agreement
+          conditions. Do not apply those terms to every historical family member.
+          Hardware fit depends on the selected variant, encoders, precision, runtime
+          and image workload; access to weights alone does not establish performance
+          or suitability.
+        references:
+        - type: official-site
+          source:
+            url: https://stability.ai/stable-image/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://stability.ai/core-models
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://stability.ai/news/introducing-stable-diffusion-3-5
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://stability.ai/license
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/s/stability-ai
+        - type: has-member
+          target: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

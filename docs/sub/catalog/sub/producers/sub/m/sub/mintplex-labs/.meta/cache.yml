@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a532962cad8cf256fa17e91807a4015794835ead
+      entity.yml: gitblob:f11ae70d06c30b97f02b15a9c4b9095e26f16d09
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -45,6 +45,14 @@ cache:
         id: catalog/producers/m/mintplex-labs
         type: organization
         name: Mintplex Labs
+        identity_note: Mintplex Labs is the organization producing AnythingLLM. The
+          organization remains distinct from the AnythingLLM software identity and
+          from its hosted or self-hosted operating surfaces. The official company
+          site and AnythingLLM documentation identify this producer. Local installation,
+          managed hosting, external model providers, and agent integrations have separate
+          data flows and support responsibilities; a local-first product description
+          does not mean every configuration is offline or that Mintplex owns the connected
+          models.
         references:
         - type: official-site
           source:
@@ -59,6 +67,13 @@ cache:
           source:
             url: https://github.com/Mintplex-Labs/anything-llm
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.anythingllm.com/installation-desktop/overview
+          purposes:
+          - identification
           - research
           authority: official
         relations:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e8911c5836c951a61e5c6524177c4bc2fb609f5b
+      entity.yml: gitblob:c39e75d188d71b90e6e52432d0a4217571aa76a6
     parent:
       entity.yml: gitblob:28ad9dbbd921bafdc12d024f89757651c4767ef8
   state:
@@ -53,6 +53,12 @@ cache:
             url: https://www.tii.ae/
           purposes:
           - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://falconllm.tii.ae/falcon-models.html
+          purposes:
           - research
           authority: official
         relations:

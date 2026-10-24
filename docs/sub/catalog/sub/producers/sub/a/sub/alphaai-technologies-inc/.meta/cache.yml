@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:422031fc82c96c1804945fc815aee9dd7e8f35ea
+      entity.yml: gitblob:7de69ad79ad0d1cf2962cfa419e9c3cb32ae11e3
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -62,6 +62,8 @@ cache:
           - identification
           - research
           authority: official
+          note: The platform terms name AlphaAI Technologies Inc. dba Tavily; the
+            contracting name is more specific evidence than the site footer.
         relations:
         - type: produces
           target: catalog/services/web-data/tavily

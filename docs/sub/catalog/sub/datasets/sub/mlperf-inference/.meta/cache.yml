@@ -1,0 +1,98 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:587a94bb59dc2f3aeec18142b2fba508b936109b
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/mlperf-inference
+        type: dataset
+        name: MLPerf Inference
+        identity_note: MLPerf Inference is MLCommons' open, versioned benchmark suite
+          for reproducible measurement of trained-model inference systems. The September
+          2026 v6.1 release adds Edge Agentic Inference and End-to-End RAG Inference,
+          represented in the relation links as suite members. They do not exhaust
+          its workloads. Reference models, datasets, scenarios, quality targets, metrics,
+          power rules and submission classes are version-sensitive. Results apply
+          to the tested system, workload, scenario and configuration. The benchmark
+          is separate from vendor hardware, runtimes, models and result tables. MLPerf
+          Endpoints is a distinct benchmark direction; its evolving rules do not rename
+          or replace this suite merely because the projects are related.
+        references:
+        - type: product-page
+          source:
+            url: https://mlcommons.org/benchmarks/inference-datacenter/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://mlcommons.org/2026/09/mlperf-inference-v6-1-results/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mlcommons
+        - type: has-member
+          target: catalog/datasets/mlperf-edge-agentic-inference
+        - type: has-member
+          target: catalog/datasets/mlperf-end-to-end-rag-inference
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

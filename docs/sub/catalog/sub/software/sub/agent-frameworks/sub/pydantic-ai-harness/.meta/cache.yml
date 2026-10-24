@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d7af9a7675a325f0ee9e31cafa3a7330e38b48d8
+      entity.yml: gitblob:f830f8bd19be69a3e7b5d76b15214182ba171ab2
     parent:
       entity.yml: gitblob:d76916cc6208401fd85eacd3a15da3a51743c755
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -57,6 +57,26 @@ cache:
         - type: repository
           source:
             url: https://github.com/pydantic/pydantic-ai
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/pydantic/pydantic-ai-harness
+          purposes:
+          - research
+          authority: official
+          note: Archived historical upstream through v0.36.0; active code and releases
+            moved to pydantic/pydantic-ai.
+        - type: documentation
+          source:
+            url: https://pydantic.dev/docs/ai/harness/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://pydantic.dev/docs/ai/harness/filesystem/
           purposes:
           - research
           authority: official

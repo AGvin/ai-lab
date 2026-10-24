@@ -1,0 +1,110 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:602c8cabdbe10b13e2b57b0fd3e7a8ad86933844
+    parent:
+      entity.yml: gitblob:4430ba8283e1dde77d88a159ae9ae3f2cb251be4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/assistant-workspaces/qwen-studio
+        type: service
+        name: Qwen Studio
+        aliases:
+        - Qwen
+        - Qwen Chat
+        references:
+        - type: product-page
+          source:
+            url: https://qwen.ai/qwenchat
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://qwen.ai/
+          purposes:
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://qwen.ai/home
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Qwen assistant.
+        - type: product-page
+          source:
+            url: https://play.google.com/store/apps/details?hl=en-US&id=ai.qwenlm.chat.android
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Qwen Studio app.
+        - type: documentation
+          source:
+            url: https://www.alibabacloud.com/help/en/model-studio/data-retention-policy
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Model Studio retention policy.
+        relations:
+        - type: produced-by
+          target: catalog/producers/q/qwen-team
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

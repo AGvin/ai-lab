@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3c83ec49e27a46057a193a15ead8dfdbcd776668
+      entity.yml: gitblob:0bc4a507b05009826b89ec6ded971c5f8c0508bb
     parent:
-      entity.yml: gitblob:197caa1aad36286bbe020119ba37b7e29ba8dbf6
+      entity.yml: gitblob:95cd9a825d9b0958a0e79e9fd9ba4c327504aaf7
   state:
     node:
       effective:
@@ -59,6 +59,33 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/ocr-3-25-12
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/ocr-4-0
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/ocr-4-1
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/api/endpoint/ocr
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/m/mistral-ai
@@ -66,6 +93,8 @@ cache:
           target: catalog/models/mistral-ai/mistral-ocr/models/mistral-ocr-4
         - type: has-member
           target: catalog/models/mistral-ai/mistral-ocr/models/mistral-ocr-4-1
+        - type: has-member
+          target: catalog/models/mistral-ai/mistral-ocr/models/mistral-ocr-3
     aliases:
       effective:
         schema: default

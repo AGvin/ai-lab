@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:db7f50d38f45c31cf36af7e66c1c9a4e1c31df95
+      entity.yml: gitblob:93aa26a42d71913a7ad8804b150b11d5db65fd02
     parent:
-      entity.yml: gitblob:0998a3482a167d36bf17518f6cee61217be3b020
+      entity.yml: gitblob:3d7d9cfcd6ab81400d81e2468c33e9b2babb1ba5
   state:
     node:
       effective:
@@ -61,7 +61,13 @@ cache:
           authority: official
         - type: documentation
           source:
-            url: https://deploymentsafety.openai.com/
+            url: https://deploymentsafety.openai.com/gpt-rosalind-5-5/introduction
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://help.openai.com/en/articles/20001193-gpt-rosalind-for-life-sciences-research
           purposes:
           - research
           authority: official
@@ -70,6 +76,9 @@ cache:
           target: catalog/producers/o/openai
         - type: has-member
           target: catalog/models/openai/gpt-rosalind/models/gpt-rosalind-5-5
+        identity_note: Life-sciences model family with trusted-access deployment;
+          Workbench, plugins, subscriptions, and the latest product route are separate
+          concepts.
     aliases:
       effective:
         schema: default

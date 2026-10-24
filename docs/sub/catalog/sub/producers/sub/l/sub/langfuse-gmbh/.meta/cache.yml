@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:952dec74fa50d1c810b814a54a14ff91ef9114df
+      entity.yml: gitblob:3391b8eb433470a7294442870f7f66d78cbe14da
     parent:
       entity.yml: gitblob:665e9ca01b87f5f7025e0f60f3e694be0cc71db2
   state:
@@ -75,6 +75,14 @@ cache:
           purposes:
           - research
           authority: official
+        - type: terms-of-service
+          source:
+            url: https://clickhouse.com/legal/clickhouse-general-terms-and-conditions
+          purposes:
+          - research
+          authority: official
+          note: The terms retain Langfuse GmbH as the named contracting entity for
+            pay-as-you-go Langfuse Cloud, distinct from the corporate acquisition.
         relations:
         - type: produces
           target: catalog/software/evaluation-and-observability/observability-platforms/langfuse

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:94f0b7a50b5cb10d027766516579eed8d636c8e9
+      entity.yml: gitblob:d078da5876edc225f904121a2c30c43fc587e31e
     parent:
-      entity.yml: gitblob:d98b92d28d8c569981534285e8477d009d9c4083
+      entity.yml: gitblob:9629ab6dcb58053a0f81b1e4b7976b36b0d41141
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
   state:
     node:
@@ -65,6 +65,18 @@ cache:
             url: https://huggingface.co/collections/Qwen/qwen3-67dd247413f0e2e4f653967f
           purposes:
           - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen3-30B-A3B
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
+          purposes:
           - research
           authority: official
         relations:

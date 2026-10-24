@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:eb1633a4d835261a1a39a2189549db3510b96608
+      entity.yml: gitblob:602386f9a27ce06edebfa059cd2bec0c0cc35bae
     parent:
       entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
   state:
@@ -59,6 +59,14 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.pinecone.io/guides/get-started/overview
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Product overview.
         relations:
         - type: produces
           target: catalog/services/data-infrastructure/vector-search/pinecone

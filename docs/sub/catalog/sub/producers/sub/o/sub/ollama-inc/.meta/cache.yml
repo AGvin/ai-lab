@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3a74e4e4d9a84737529d3667d5d8e027092b17e8
+      entity.yml: gitblob:a68ff0799f44aec49ec9a3cf963a726d944fce0f
     parent:
       entity.yml: gitblob:b36ca5bdc58da8f3782c6a5822573937ea2cd7d2
   state:
@@ -61,9 +61,30 @@ cache:
           - research
           authority: official
           note: Official Ollama Terms of Service identifying Ollama Inc.
+        - type: documentation
+          source:
+            url: https://docs.ollama.com/index
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://ollama.com/privacy
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/ollama/ollama/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/inference-runtimes/integrated-platforms/ollama
+        identity_note: Ollama Inc. is the company behind Ollama software and cloud
+          offerings; runtime licensing, model distribution rights, local execution,
+          and provider-operated cloud processing are distinct scopes.
     aliases:
       effective:
         schema: default

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:935ddc00ec791c2da9fcb45999d5cd99bde18160
+      entity.yml: gitblob:cfef10a5ea01fa53f0840c6749a7937bd4fe860e
     parent:
       entity.yml: gitblob:0c958ac9b06255323dd6f40493fd9f05736b939d
   state:
@@ -60,6 +60,26 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://keygraph.io/docs/tutorials/quick-start/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://keygraph.io/docs/explanations/faq/
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/KeygraphHQ/shannon/discussions/405
+          purposes:
+          - research
+          authority: official
+          note: Official source for Shannon's migration to the Pi agent harness; runtime
+            dependency does not replace product identity.
         relations:
         - type: produced-by
           target: catalog/producers/k/keygraph

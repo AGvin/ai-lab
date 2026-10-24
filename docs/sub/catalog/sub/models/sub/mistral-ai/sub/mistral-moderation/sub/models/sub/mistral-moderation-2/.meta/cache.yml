@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5bcd3a9ef8e395cb25e6bbc29baa1359a962d167
+      entity.yml: gitblob:14fe91afc772654236af240b7148955981b98d9e
     parent:
-      entity.yml: gitblob:56a49e5296208968d3374476fa68f7028c38835a
+      entity.yml: gitblob:12067e8ce5002da1bcefc40d63c67ad9cff54274
   state:
     node:
       effective:
@@ -51,6 +51,12 @@ cache:
             url: https://docs.mistral.ai/models/mistral-moderation-26-03
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/studio/conversations/moderation
+          purposes:
           - research
           authority: official
         relations:

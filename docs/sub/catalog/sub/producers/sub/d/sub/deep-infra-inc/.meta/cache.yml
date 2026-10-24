@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:fc2373f5f86f369661bc0553cf81b7b1eb9c8d5c
+      entity.yml: gitblob:4767c16885b4ec1f0ac547c502237287cc0e6883
     parent:
       entity.yml: gitblob:46b91081ab3e21420c7289bb28e30b3d82f867a5
   state:
@@ -69,6 +69,13 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.deepinfra.com/
+          purposes:
+          - research
+          authority: official
+          note: Hosted model inference and service interfaces.
         relations:
         - type: produces
           target: catalog/services/model-apis/deepinfra

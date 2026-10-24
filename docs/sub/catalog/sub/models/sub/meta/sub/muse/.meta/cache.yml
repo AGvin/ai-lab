@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:8eb2a9b37efcf295ca83922ddabdf29ff6c77329
+      entity.yml: gitblob:4997ae995cc38f55ef60dc7288bd315ec43a83c3
     parent:
       entity.yml: gitblob:73f36b097a441f8dbd4cc911bad962de0249dc79
   state:
@@ -53,13 +53,32 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://dev.meta.ai/docs/models
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/m/meta
         - type: has-member
           target: catalog/models/meta/muse/models/muse-spark-1-1
         - type: has-member
+          target: catalog/models/meta/muse/models/muse-spark-1-2
+        - type: has-member
+          target: catalog/models/meta/muse/models/muse-spark-1-3
+        - type: has-member
           target: catalog/models/meta/muse/models/muse-image
+        - type: has-member
+          target: catalog/models/meta/muse/models/muse-glimmer-30b
+        - type: has-member
+          target: catalog/models/meta/muse/models/muse-voice-transcribe
+        - type: has-member
+          target: catalog/models/meta/muse/models/muse-spark-open
+        - type: has-member
+          target: catalog/models/meta/muse/muse-wonder
     aliases:
       effective:
         schema: default

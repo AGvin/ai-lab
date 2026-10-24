@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ee956e1a319c3dca907dec9f73cf147eb0d2f239
-    parent:
-      entity.yml: gitblob:385059fa5581eada206af0955a41292a11ef1d9e
+      entity.yml: gitblob:b32be5e17f5ae2815620c2a2f3234343cb55d4c0
+    parent: {}
   state:
     node:
       effective:
@@ -45,6 +44,10 @@ cache:
         id: catalog/models/ibm/granite-vision-4-1/models/granite-vision-4-1-4b
         type: model
         name: Granite Vision 4.1 4B
+        identity_note: Granite Vision 4.1 4B is IBM Research's 29 April 2026 vision-language
+          model for structured document extraction and general image-to-text tasks.
+          The card describes a 3.4B language model plus 0.6B vision encoder/projectors,
+          fine-tuned on Granite 4.1 3B, with Apache-2.0 weights.
         references:
         - type: registry
           source:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:88608ad442e13ca6e2ed7e30e13fb8ba6ae54302
+      entity.yml: gitblob:cbdfece52c55054098ad1e366ccbb559ce7224d9
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -45,10 +45,31 @@ cache:
         id: catalog/producers/m/modelop
         type: organization
         name: ModelOp
+        identity_note: ModelOp is the company and producer behind ModelOp Enterprise
+          AI Command Center, the represented enterprise AI-management software. The
+          platform manages AI assets from multiple sources; that role does not make
+          ModelOp the producer of customer-built or third-party models. Product deployment,
+          integrations, access controls, support and evidence for governance outcomes
+          belong to the software and customer operating context, not to the producer
+          relation alone.
         references:
         - type: official-site
           source:
             url: https://www.modelop.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://www.modelop.com/company
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.modelop.com/enterprise-ai-command-center
           purposes:
           - identification
           - research

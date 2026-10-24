@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:385059fa5581eada206af0955a41292a11ef1d9e
+      entity.yml: gitblob:99fa259c8f3470a9005011e3a11f6dfbbf8b78d0
     parent:
-      entity.yml: gitblob:65f9e8cb1b2f81c5dd3a1d6e4e38d256402af12e
+      entity.yml: gitblob:bd781d43d132f5a161bf61b6fd7be69a53dcdd6f
   state:
     node:
       effective:
@@ -45,6 +45,10 @@ cache:
         id: catalog/models/ibm/granite-vision-4-1
         type: model-family
         name: Granite Vision 4.1
+        identity_note: Granite Vision 4.1 is IBM's April 2026 document-focused vision-language
+          release family. The materialized member is the 4B checkpoint for chart,
+          table, key-value and general image-to-text understanding. It is distinct
+          from OCR/document pipeline software and hosted services.
         references:
         - type: registry
           source:

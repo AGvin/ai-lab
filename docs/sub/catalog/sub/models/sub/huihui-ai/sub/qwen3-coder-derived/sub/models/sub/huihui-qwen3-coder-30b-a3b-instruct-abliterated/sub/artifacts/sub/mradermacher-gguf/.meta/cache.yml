@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:fe53023e274e1613d07d780fc7e79d6a41c2b14a
+      entity.yml: gitblob:5d0d9f15ea00c77492ca453851ae539e16b05fcc
     parent:
-      entity.yml: gitblob:a5d0dd25b4d94fa3848b83cc55ad2629691432d2
+      entity.yml: gitblob:0e4c317b1ba8aa51bba1eb3b7a8777775d367341
       node.yml: gitblob:63fe96c475196641e6cbc100c268357b043dfc09
   state:
     node:
@@ -46,6 +46,13 @@ cache:
         id: catalog/models/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated/artifacts/mradermacher-gguf
         type: model-artifact
         name: mradermacher GGUF Artifacts
+        identity_note: mradermacher GGUF Artifacts is the existing static GGUF quantization
+          collection for huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated.
+          The card identifies mradermacher as the quantizer and the exact huihui derivative
+          as its base model. The repository declares Apache-2.0 and lists eleven static
+          quant choices. Select an exact file and revision; the published GB sizes
+          are not peak runtime RAM or VRAM. The linked weighted/imatrix -i1-GGUF repository
+          is a separate collection and is outside this node.
         references:
         - type: registry
           source:

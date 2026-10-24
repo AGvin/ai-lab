@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:122abb4016f8e526fd91080841657b467099849c
+      entity.yml: gitblob:ff1f456bdbf26efa80fd172d5796dd04b44f9b55
     parent:
-      entity.yml: gitblob:197caa1aad36286bbe020119ba37b7e29ba8dbf6
+      entity.yml: gitblob:95cd9a825d9b0958a0e79e9fd9ba4c327504aaf7
   state:
     node:
       effective:
@@ -57,6 +57,13 @@ cache:
           source:
             url: https://huggingface.co/collections/mistralai/mistral-medium-35
           purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B
+          purposes:
+          - identification
           - research
           authority: official
         relations:

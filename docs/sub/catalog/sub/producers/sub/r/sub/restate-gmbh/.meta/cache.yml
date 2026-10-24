@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:8a550a90a31f6964fbc1d90062a0aa9d35c6a42a
+      entity.yml: gitblob:bc2137b36f3ec01db17e01d6a62cdf191423b205
     parent: {}
   state:
     node:
@@ -54,7 +54,7 @@ cache:
           authority: official
         - type: other
           source:
-            url: https://www.restate.dev/imprint
+            url: https://restate.dev/imprint
           purposes:
           - identification
           authority: official
@@ -67,6 +67,22 @@ cache:
           authority: official
           note: First-party project history introduces Restate as the new project
             built by the founding team.
+        - type: license
+          source:
+            url: https://github.com/restatedev/restate/blob/main/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Runtime license.
+        - type: documentation
+          source:
+            url: https://docs.restate.dev/get-restate
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Deployment options.
         relations:
         - type: produces
           target: catalog/software/workflow-engines/application-orchestration/restate

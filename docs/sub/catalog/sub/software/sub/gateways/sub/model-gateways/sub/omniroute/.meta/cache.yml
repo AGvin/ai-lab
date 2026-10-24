@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e41a5d5b8f245fa0a6005843e5c5e9b9680b0ce6
+      entity.yml: gitblob:6d5b3e5f8118060a8324b26c09260e85383bcf56
     parent:
       entity.yml: gitblob:08305b000b283f9be05ea5e2775c0f31d43e5ac1
   state:
@@ -55,7 +55,7 @@ cache:
           authority: official
         - type: documentation
           source:
-            url: https://omniroute.online/docs
+            url: https://github.com/diegosouzapw/OmniRoute/tree/release/v3.8.52/docs
           purposes:
           - research
           authority: official
@@ -66,6 +66,27 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://github.com/diegosouzapw/OmniRoute/blob/release/v3.8.52/SECURITY.md
+          purposes:
+          - research
+          authority: official
+          note: The security policy documents plaintext credential passthrough when
+            STORAGE_ENCRYPTION_KEY is absent; website encryption claims alone do not
+            establish a configured deployment.
+        - type: repository
+          source:
+            url: https://github.com/diegosouzapw/diegosouzapw/blob/main/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: The author's profile explicitly identifies him as OmniRoute's creator
+            and lead maintainer; the individual producer relation records that role.
+        relations:
+        - type: produced-by
+          target: catalog/producers/d/diego-rodrigues-de-sa-e-souza
     aliases:
       effective:
         schema: default

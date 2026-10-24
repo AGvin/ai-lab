@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:afa76b1f7a2aded0ee139250ae3fc55ae0bc1e67
+      entity.yml: gitblob:dd2334c85aace72f5cd8fd9049c412e68b152701
     parent:
       entity.yml: gitblob:8144ca876d7f835bbf1e08e3cc7283fd011392cb
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -61,6 +61,21 @@ cache:
           - identification
           - research
           authority: official
+        - type: article
+          source:
+            url: https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://nvidia-isaac-ros.github.io/concepts/rosidl_buffer/index.html
+          purposes:
+          - research
+          authority: official
+          note: Explains native ROS 2 rosidl::Buffer storage and backend behavior;
+            CUDA support is a backend capability rather than a claim that all buffers
+            are GPU-resident.
         relations:
         - type: produced-by
           target: catalog/producers/n/nvidia

@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:215a267df1327493dce1a43b82253bc78bcfce3f
-    parent:
-      entity.yml: gitblob:c911c05c03a73615860f6de382044909061b0470
+      entity.yml: gitblob:838f2390056e254fe27291e0c5ca096bd11a42a9
+    parent: {}
   state:
     node:
       effective:
@@ -59,9 +58,41 @@ cache:
           purposes:
           - research
           authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://docs.cohere.com/changelog/transcribe-arabic
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-registry
+          source:
+            url: https://huggingface.co/api/models/CohereLabs/cohere-transcribe-arabic-07-2026?blobs=true
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/models
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/cohere/transcribe
+        - type: produced-by
+          target: catalog/producers/c/cohere-labs
+        - type: has-derivative
+          target: catalog/models/cohere/transcribe/models/cohere-transcribe-arabic-07-2026
     aliases:
       effective:
         schema: default

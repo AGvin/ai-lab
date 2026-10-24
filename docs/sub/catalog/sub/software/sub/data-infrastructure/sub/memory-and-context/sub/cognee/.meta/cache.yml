@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:de0217bc4a2ac8a11c06b349d05eb3c4c89271ff
+      entity.yml: gitblob:da7a81ee9cb0e64b6a39e39d2ad7ac76b5f6bf8e
     parent:
       entity.yml: gitblob:eeb52bb259d3f0d1c5274d6ea315d12dfee85f68
   state:
@@ -56,6 +56,12 @@ cache:
         - type: official-site
           source:
             url: https://www.cognee.ai/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cognee.ai/setup-configuration/security
           purposes:
           - research
           authority: official

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e1a455bf96bb853dcc9cebd29fe22162cb90aeb1
+      entity.yml: gitblob:9c9780071a282087f0eaf42969ce7e1bdd3a177f
     parent:
       entity.yml: gitblob:b7f05983a5d1c6c223967178283fa7f339514136
   state:
@@ -63,6 +63,20 @@ cache:
         - type: terms-of-service
           source:
             url: https://console.groq.com/docs/legal/services-agreement
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://console.groq.com/docs/overview
           purposes:
           - identification
           - research

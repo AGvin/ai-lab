@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c0b5167d0731631932d7d292427cd72d6fda9f9a
-    parent:
-      entity.yml: gitblob:8e9c3d73bdf6557bb281c5af56226d909d8a9b71
+      entity.yml: gitblob:b7c204bc88f57e115818d3021ffa24cdfef10621
+    parent: {}
   state:
     node:
       effective:
@@ -59,9 +58,18 @@ cache:
           purposes:
           - research
           authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/North-Mini-Code-1.0
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/cohere/north
+        - type: produced-by
+          target: catalog/producers/c/cohere-labs
     aliases:
       effective:
         schema: default

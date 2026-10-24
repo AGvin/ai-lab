@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7316f20e3b79e8540eb8f990eacf9e2a0af47160
+      entity.yml: gitblob:ca1fd94746bf938fe9dd0b8a33ef3caf8715aea1
     parent:
       entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
       node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
@@ -46,10 +46,30 @@ cache:
         id: catalog/models/baidu
         type: model-producer-view
         name: Baidu models
+        identity_note: Baidu models is the model-domain navigation view for the represented
+          Baidu-produced model identities. It links the ERNIE family and Baidu's canonical
+          producer profile without duplicating Baidu AI Cloud or Qianfan service identity.
+          Select a concrete trained model before using provider endpoint limits or
+          benchmark claims. A Qianfan catalog can also contain other producers' models;
+          hosting and product integration do not transfer model authorship to Baidu.
         references:
         - type: official-site
           source:
             url: https://ernie.baidu.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://ernie.baidu.com/blog/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j
           purposes:
           - identification
           - research

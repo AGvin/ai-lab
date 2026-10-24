@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3f1ac744966a7129c27c75817311eab0638281dc
+      entity.yml: gitblob:431346a9c8575addfd62070e3c6f014b2dc84f6f
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -64,6 +64,13 @@ cache:
           authority: official
           note: Official pgvector repository; current extension metadata names Andrew
             Kane as maintainer and generator.
+        - type: repository
+          source:
+            url: https://github.com/pgvector/pgvector/blob/master/META.json
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/data-infrastructure/vector-search/pgvector

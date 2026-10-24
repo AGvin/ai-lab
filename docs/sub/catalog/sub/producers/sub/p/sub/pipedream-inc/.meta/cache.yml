@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:04d1bbb6556f62c3b91d50c57b77f09066db6ce6
+      entity.yml: gitblob:08ecfaf1bb0293c7cb8ad0e776d920dde25812d9
     parent:
       entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
   state:
@@ -62,6 +62,17 @@ cache:
           - identification
           - research
           authority: official
+          note: Terms updated September 30, 2026 name Pipedream, LLC in the legal
+            body while the site footer retains Pipedream, Inc.; the applicable agreement
+            controls the contracting identity.
+        - type: documentation
+          source:
+            url: https://pipedream.com/docs/connect
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Connect documentation.
         relations:
         - type: produces
           target: catalog/services/agent-integration-platforms/pipedream-connect

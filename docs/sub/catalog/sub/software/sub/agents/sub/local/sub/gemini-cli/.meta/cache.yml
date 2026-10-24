@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:43c26033ea687ee8190e93594afbc98f55afb979
+      entity.yml: gitblob:b11d3c67f0e2cf41c47767c5d633d0c4202f30fa
     parent:
       entity.yml: gitblob:0c958ac9b06255323dd6f40493fd9f05736b939d
   state:
@@ -51,6 +51,24 @@ cache:
             url: https://github.com/google-gemini/gemini-cli
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/sandbox.md
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/google-gemini/gemini-cli/blob/main/docs/reference/policy-engine.md
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/google-github-actions/run-gemini-cli
+          purposes:
           - research
           authority: official
         relations:

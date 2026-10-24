@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:fce5625014c495c8d89759a4b7874338ff2370bf
+      entity.yml: gitblob:ee8c72e198736a7fc4a7a5d458283b7943d4ffb7
     parent:
-      entity.yml: gitblob:d98b92d28d8c569981534285e8477d009d9c4083
+      entity.yml: gitblob:9629ab6dcb58053a0f81b1e4b7976b36b0d41141
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
   state:
     node:
@@ -54,6 +54,30 @@ cache:
           - identification
           - research
           authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.8-27B
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.alibabacloud.com/help/en/model-studio/qwen3-8-flash
+          purposes:
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/alibaba/qwen
@@ -67,6 +91,8 @@ cache:
           target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-flash-next
         - type: has-member
           target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-max
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-flash
     aliases:
       effective:
         schema: default

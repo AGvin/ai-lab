@@ -1,0 +1,111 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:200afd3d4bb3de2bb241b62eb4b582d6e6a80794
+    parent:
+      entity.yml: gitblob:e00079daec44815d0f149be2d38506f4fbeeff51
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5/models/large-turbo
+        type: model
+        name: Stable Diffusion 3.5 Large Turbo
+        identity_note: Stable Diffusion 3.5 Large Turbo is the distilled, speed-oriented
+          Large Turbo model in Stability AI’s 3.5 series. Stability describes adversarial
+          diffusion distillation and a four-step generation setup. It is a distinct
+          trained variant, not merely a runtime flag applied to Large. The official
+          model card gives the intended step and guidance configuration. Fewer generation
+          steps can reduce work, but observed latency and image quality still depend
+          on the runtime, hardware, resolution and prompt. A benchmark for Large or
+          an optimized runtime build is not automatically a result for the released
+          Turbo model. Keep the exact checkpoint and conversion lineage with any deployment
+          comparison. The official model distribution identifies the Stability AI
+          Community license and requires acceptance of access conditions. Confirm
+          the agreement’s commercial eligibility and any Enterprise requirement. API
+          or partner hosting adds service-specific terms and processing boundaries;
+          downloadable weights do not include every hosted entitlement.
+        references:
+        - type: article
+          source:
+            url: https://stability.ai/news/introducing-stable-diffusion-3-5
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://stability.ai/core-models
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://stability.ai/license
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e9959a77f3d72149c55e30cd31e6c1c87dfc1f50
+      entity.yml: gitblob:d34d002e8af9872af724855ba7cfe1f783ecf283
     parent:
       entity.yml: gitblob:d76916cc6208401fd85eacd3a15da3a51743c755
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -52,6 +52,24 @@ cache:
             url: https://mastra.ai/
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://mastra.ai/docs
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/mastra-ai/mastra
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://mastra.ai/docs/sandbox/overview
+          purposes:
           - research
           authority: official
         relations:

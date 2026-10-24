@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d2832a7979fe4d097b9404cc46ffd2fcc3b3eba6
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
     parent:
       entity.yml: gitblob:cc3acaf818290b5a5764a268d036f3e2b1724aaa
       node.yml: gitblob:2a9b81e5b7fca976b33c682f3afa46cfd07a1287
@@ -46,6 +46,9 @@ cache:
         id: catalog/producers/s
         type: catalog-index
         name: Producers — S
+        identity_note: Alphabetical navigation for all canonical producer profiles
+          directly contained under S. This index describes no operating organization
+          or product.
     aliases:
       effective:
         schema: default

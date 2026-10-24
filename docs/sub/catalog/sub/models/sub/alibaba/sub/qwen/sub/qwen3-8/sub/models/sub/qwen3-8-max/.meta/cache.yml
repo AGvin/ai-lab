@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:893c0880b8d7f43f7567a96cab00f8d0f037cc07
-    parent:
-      entity.yml: gitblob:fce5625014c495c8d89759a4b7874338ff2370bf
+      entity.yml: gitblob:2464a9130d0c33ec8ced9d499011bd2691ce3147
+    parent: {}
   state:
     node:
       effective:
@@ -58,6 +57,18 @@ cache:
         - type: documentation
           source:
             url: https://www.alibabacloud.com/help/en/model-studio/newly-released-models
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.alibabacloud.com/help/en/model-studio/qwen3-8-max
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
           purposes:
           - research
           authority: official

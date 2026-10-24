@@ -1,0 +1,106 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:e0b2f6887ca8b4ee986c7247bfa9d7701395a402
+    parent:
+      entity.yml: gitblob:b36ca5bdc58da8f3782c6a5822573937ea2cd7d2
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/o/osu-nlp-group
+        type: team
+        name: Ohio State NLP Group
+        aliases:
+        - OSU NLP Group
+        - OSU-NLP-Group
+        references:
+        - type: official-site
+          source:
+            url: https://github.com/OSU-NLP-Group
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/OSU-NLP-Group/Mind2Web
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/OSU-NLP-Group/Online-Mind2Web
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/OSU-NLP-Group/Mind2Web-2
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/datasets/mind2web
+        - type: produces
+          target: catalog/datasets/online-mind2web
+        - type: produces
+          target: catalog/datasets/mind2web-2
+        identity_note: Ohio State NLP Group is the first-party research publishing
+          team for the represented Mind2Web projects; university identity, cross-institution
+          authorship, dataset protocols, and live-service permissions remain separate.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

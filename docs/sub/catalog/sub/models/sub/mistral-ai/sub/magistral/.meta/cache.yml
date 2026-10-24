@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3391e87ba44d18a4256a258a1620360f9b5b7821
+      entity.yml: gitblob:61782dd99e4e40f795b5fc81b7f82c877c449155
     parent:
-      entity.yml: gitblob:197caa1aad36286bbe020119ba37b7e29ba8dbf6
+      entity.yml: gitblob:95cd9a825d9b0958a0e79e9fd9ba4c327504aaf7
   state:
     node:
       effective:
@@ -49,6 +49,13 @@ cache:
         - type: registry
           source:
             url: https://huggingface.co/mistralai/Magistral-Small-2509
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/magistral-small-1-2-25-09
           purposes:
           - identification
           - research

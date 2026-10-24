@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a46379abc0e6da3b282cbc17e9a05fea3e8863cd
+      entity.yml: gitblob:501a802d228dbd9ba5cf87cc1480fd35ebb24381
     parent:
-      entity.yml: gitblob:3c83ec49e27a46057a193a15ead8dfdbcd776668
+      entity.yml: gitblob:0bc4a507b05009826b89ec6ded971c5f8c0508bb
   state:
     node:
       effective:
@@ -53,9 +53,31 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/ocr-4-0
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://docs.mistral.ai/resources/changelogs
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/api/endpoint/ocr
+          purposes:
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/mistral-ai/mistral-ocr
+        aliases:
+        - Mistral OCR 4.0
     aliases:
       effective:
         schema: default

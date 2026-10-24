@@ -1,0 +1,100 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:1fa80b8f553ef35642dd97e03fd163c42651cb2b
+    parent: {}
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/r/runway
+        type: organization
+        name: Runway
+        references:
+        - type: official-site
+          source:
+            url: https://runwayml.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://help.runwayml.com/hc/en-us/articles/46974685288467-Creating-with-Gen-4-5
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Gen-4.5 guide.
+        - type: documentation
+          source:
+            url: https://docs.dev.runwayml.com/guides/models/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Developer model index.
+        - type: documentation
+          source:
+            url: https://docs.dev.runwayml.com/api-details/api_changelog/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: API changes.
+        relations:
+        - type: produces
+          target: catalog/models/runway/gen-4-5
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:15b15df78476940cd28d0caa68072e83f3e3fa09
+      entity.yml: gitblob:41d4b8154051581a5af929957b74b628bb1ad027
     parent:
       entity.yml: gitblob:28ad9dbbd921bafdc12d024f89757651c4767ef8
   state:
@@ -68,6 +68,18 @@ cache:
           authority: official
           note: First-party company history identifies Temporal as maker of the open-source
             orchestration platform and records its founding from the Cadence lineage.
+        - type: official-site
+          source:
+            url: https://temporal.io/about
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.temporal.io/self-hosted-guide
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/workflow-engines/application-orchestration/temporal

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d60ae2391bf964884a3608bb292554cb86c349ae
+      entity.yml: gitblob:06888482d4676052ea7489869b153e228de0316d
     parent:
-      entity.yml: gitblob:d2832a7979fe4d097b9404cc46ffd2fcc3b3eba6
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
   state:
     node:
       effective:
@@ -45,10 +45,35 @@ cache:
         id: catalog/producers/s/supermemory
         type: organization
         name: Supermemory
+        identity_note: Supermemory is the producer and operator identity for the represented
+          managed memory and context service. Its current site describes memory for
+          agents through an API, plugins and MCP; its service terms describe cloud
+          infrastructure for storage, retrieval and management. The managed service
+          stores and processes uploaded content and data from explicitly connected
+          services. Confirm retention and deletion, tenant separation, geographic
+          processing, credentials and contractual requirements before sending private
+          context. SDKs, plugins and client integrations are distinct from the hosted
+          backend and from model providers. The public terms use the Supermemory name
+          without establishing a more specific corporate form, so this profile does
+          not invent one.
         references:
         - type: official-site
           source:
             url: https://supermemory.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: terms-of-service
+          source:
+            url: https://supermemory.ai/terms/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://supermemory.ai/privacy/
           purposes:
           - identification
           - research

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:2965c04561a09b31bd9eba693f783ce8511c88e6
+      entity.yml: gitblob:888a0dee8c402cfdce88a896fa4d81edad9080ab
     parent:
       entity.yml: gitblob:d84b1395b3b550eac31ad1429bf124eecd9d12ae
   state:
@@ -45,6 +45,22 @@ cache:
         id: catalog/software/interfaces-and-workspaces/model-clients/cherry-studio
         type: software
         name: Cherry Studio
+        identity_note: Cherry Studio is a desktop AI client and productivity studio
+          for Windows, macOS and Linux. It connects to hosted model providers and
+          local runtimes such as Ollama and LM Studio, with conversation, assistant,
+          document and tool workflows. Those integrations remain separate providers
+          and software products. CherryHQ publishes the desktop source. The official
+          mobile listing names Shanghai Qianhui Technology Co., Ltd. as seller and
+          copyright holder, while the current website source uses the Cherry Intelligence
+          brand. The listing supplies legal-name evidence for the official ecosystem;
+          CherryHQ and the brand are not separate legal-company proofs. The desktop
+          Community Edition uses AGPL-3.0, and a separate commercial-license route
+          is documented. Mobile, enterprise and hosted offerings can have other conditions.
+          Local conversation storage does not mean all processing stays on the device.
+          Configured model, MCP and other tool providers can receive prompts or content,
+          and local telemetry controls do not override those providers’ processing.
+          Review the exact edition, privacy settings, connected providers and tool
+          permissions before handling sensitive material.
         references:
         - type: repository
           source:
@@ -60,8 +76,22 @@ cache:
           - identification
           - research
           authority: official
-          note: Current official website source identifies Shanghai Qianhui Technology
-            Co., Ltd. as copyright holder.
+          note: Current website source uses the Cherry Intelligence brand; legal-name
+            evidence is supplied separately by the official mobile seller listing.
+        - type: registry
+          source:
+            url: https://apps.apple.com/us/app/cherry-studio-ai-anywhere/id6809783714
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/CherryHQ/cherry-studio/blob/main/PRIVACY.md
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/s/shanghai-qianhui-technology-co-ltd

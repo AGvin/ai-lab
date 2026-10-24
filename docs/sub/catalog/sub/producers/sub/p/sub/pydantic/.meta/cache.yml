@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:541a9c89a69161616560a4a4e69a348b9194acb1
+      entity.yml: gitblob:f380e7d19a81f04c85f14fac00438b7e0873af79
     parent:
       entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
   state:
@@ -60,11 +60,45 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://pydantic.dev/docs/ai/overview/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Pydantic AI overview.
+        - type: documentation
+          source:
+            url: https://pydantic.dev/docs/ai/harness/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Pydantic AI Harness.
+        - type: documentation
+          source:
+            url: https://pydantic.dev/docs/ai/evals/evals/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Pydantic Evals.
+        - type: documentation
+          source:
+            url: https://pydantic.dev/docs/logfire/get-started/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Pydantic Logfire.
         relations:
         - type: produces
           target: catalog/software/agent-frameworks/pydantic-ai
         - type: produces
           target: catalog/software/agent-frameworks/pydantic-ai-harness
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/pydantic-evals
         - type: produces
           target: catalog/software/evaluation-and-observability/observability-platforms/pydantic-logfire
     aliases:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3ad860723c374985c3919e11d3b343f32f3d0545
+      entity.yml: gitblob:507c94216ab4d1f382a3af2a552210dd3684137c
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -49,6 +49,20 @@ cache:
         - type: official-site
           source:
             url: https://www.apache.org/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://tvm.apache.org/docs/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://tvm.apache.org/2019/03/18/tvm-apache-announcement
           purposes:
           - identification
           - research

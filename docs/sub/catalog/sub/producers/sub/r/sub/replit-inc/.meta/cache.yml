@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:edc9f75a7c724e04a99cf2ef8c0242a3c3f8c5ba
+      entity.yml: gitblob:2804b888ea1e662d9b182aa482795afa9d7799ba
     parent: {}
   state:
     node:
@@ -60,6 +60,14 @@ cache:
           - research
           authority: official
           note: Official Replit Terms of Service identifying Replit, Inc.
+        - type: documentation
+          source:
+            url: https://docs.replit.com/learn/build-with-agent
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Agent guide.
         relations:
         - type: produces
           target: catalog/services/development/agents/replit-agent

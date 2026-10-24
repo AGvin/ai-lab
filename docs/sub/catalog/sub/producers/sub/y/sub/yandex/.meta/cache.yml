@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c3b267a242e50471ee174f8c48f2cbb47bbdcb17
+      entity.yml: gitblob:034341366e2e373a7aba4502814956dff7dafb48
     parent:
       entity.yml: gitblob:cc3acaf818290b5a5764a268d036f3e2b1724aaa
       node.yml: gitblob:2a9b81e5b7fca976b33c682f3afa46cfd07a1287
@@ -46,6 +46,14 @@ cache:
         id: catalog/producers/y/yandex
         type: organization
         name: Yandex
+        identity_note: Yandex is the publishing organization for the represented AliceAI-T5
+          model family. Its official model registry and model cards establish checkpoint
+          provenance independently of Alice consumer applications, search and hosted
+          services. Base-model behavior, model code, checkpoint licenses and hardware
+          requirements are specific to the selected publication. A model card's custom-code
+          loading example is an execution decision to review and pin, not an assurance
+          from the producer name. New model releases require their own identity and
+          operating assessment.
         references:
         - type: official-site
           source:
@@ -57,6 +65,12 @@ cache:
         - type: registry
           source:
             url: https://huggingface.co/yandex
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
           purposes:
           - research
           authority: official

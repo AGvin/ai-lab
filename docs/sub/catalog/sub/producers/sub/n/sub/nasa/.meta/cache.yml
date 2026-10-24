@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1c5be9631095f7e6a443a9871bc2e4e82585caf8
+      entity.yml: gitblob:3676931a22f34dc34ee7e71032fcd8c77e9856ff
     parent:
       entity.yml: gitblob:5e848f769005e6f901786fd212d8c9d8ccc468b3
   state:
@@ -61,9 +61,18 @@ cache:
           purposes:
           - research
           authority: official
+        - type: article
+          source:
+            url: https://research.ibm.com/blog/nasa-ibm-lunar-foundation-model
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/models/ibm-nasa/nasa-ibm-lunar-foundation-model
+        identity_note: NASA is a United States government agency and a collaborating
+          producer of the represented NASA–IBM lunar research model; agency provenance
+          is not exclusive authorship, ownership, or mission-use validation.
     aliases:
       effective:
         schema: default

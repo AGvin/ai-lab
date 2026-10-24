@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3ae804c2c700747422761e1428a2da558906dca5
+      entity.yml: gitblob:0a411846b88b0c5a2cd560ac7dfbc866ce8f06b0
     parent:
       entity.yml: gitblob:9de44f7dd94565c1e60afb3a9c8373026d1d50b3
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
@@ -65,6 +65,8 @@ cache:
           target: catalog/models/anthropic/claude
         - type: has-member
           target: catalog/models/anthropic/claude/haiku/models/haiku-4-5
+        - type: has-member
+          target: catalog/models/anthropic/claude/haiku/models/haiku-5-5
     aliases:
       effective:
         schema: default

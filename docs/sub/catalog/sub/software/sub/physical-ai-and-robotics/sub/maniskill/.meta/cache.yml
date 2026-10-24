@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:81a559f732132d45bd57b5e34f4a5a299cb9a2c4
+      entity.yml: gitblob:b77fd119c0c2487941d76c8a1a0e02e3842cf096
     parent:
       entity.yml: gitblob:8144ca876d7f835bbf1e08e3cc7283fd011392cb
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -57,6 +57,12 @@ cache:
         - type: documentation
           source:
             url: https://maniskill.readthedocs.io/en/latest/user_guide/getting_started/quickstart.html
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://maniskill.readthedocs.io/en/latest/user_guide/getting_started/installation.html
           purposes:
           - research
           authority: official

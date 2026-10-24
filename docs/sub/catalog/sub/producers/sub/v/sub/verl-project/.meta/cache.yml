@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c01886ce33e7165cf3fa081c2cb01f04e4a31860
+      entity.yml: gitblob:767f355efc710fa0434cb271f1ab94983642670f
     parent:
       entity.yml: gitblob:03f8eb89b4bc542dfc0c1fcab5ee7f1a6c07a658
   state:
@@ -45,6 +45,14 @@ cache:
         id: catalog/producers/v/verl-project
         type: organization
         name: verl Project
+        identity_note: The verl Project is the upstream project community behind verl
+          and the separately released verl-vla framework. Its first-party material
+          preserves ByteDance's role in the original project and the verl-vla package
+          author attribution. Current project stewardship, historical authorship and
+          integrated model ownership are separate. Training and robot workflows require
+          compatible distributed resources, dependency versions and scoped credentials;
+          a released framework or human-intervention feature does not by itself establish
+          safe physical deployment.
         references:
         - type: repository
           source:
@@ -59,9 +67,24 @@ cache:
           purposes:
           - research
           authority: official
+        - type: repository
+          source:
+            url: https://github.com/verl-project/verl-vla
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/verl-project/verl-vla/blob/v0.1.0/pyproject.toml
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/model-and-data-platforms/model-development/verl
+        - type: produces
+          target: catalog/software/physical-ai-and-robotics/verl-vla
     aliases:
       effective:
         schema: default
