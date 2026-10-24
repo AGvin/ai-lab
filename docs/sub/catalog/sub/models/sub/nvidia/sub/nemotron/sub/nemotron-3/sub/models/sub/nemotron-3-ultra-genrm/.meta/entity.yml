@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-ultra-genrm
+  type: model
+  name: NVIDIA Nemotron 3 Ultra GenRM
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-GenRM
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/nvidia/nemotron/nemotron-3
+  identity_note: >-
+    Separately released generative reward model, 550B total / 55B active parameters. Evaluates assistant responses; official model card describes an early Ultra checkpoint as its foundation, not necessarily the final Ultra or Ultra Base release. OpenMDW-1.1.
