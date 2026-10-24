@@ -11,5 +11,9 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/nvidia/nemotron/nemotron-3
+    - type: has-derivative
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-super-vl
+    - type: has-derivative
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-super-vl-base
   identity_note: >-
     Pretrained hybrid LatentMoE language model with 120B total and 12B active parameters for further training; distinct from post-trained Super. NVIDIA Nemotron Open Model License.
