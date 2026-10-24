@@ -8,6 +8,8 @@
 
 - Include separately released Nano Base, Super Base and Ultra Base checkpoints as distinct pretrained members; do not collapse them into post-trained Nano, Super or Ultra.
 
+- Include independently released Lightning Base and Ultra GenRM as distinct members, with source-backed roles and no unsupported checkpoint-parent edges.
+
 ## Validation
 
 - Each materialized Nemotron 3 member remains a distinct model identity inside the series.
