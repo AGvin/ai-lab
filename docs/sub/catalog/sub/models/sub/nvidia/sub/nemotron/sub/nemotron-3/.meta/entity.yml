@@ -35,3 +35,7 @@ entity:
       target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-super-vl-base
     - type: has-member
       target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-bolt
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano-base
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-super-base
