@@ -7,6 +7,8 @@
 - Preserve exact Super Base initialization and Ultra Base distillation provenance; add graph relations only after source-specific endpoint review and never substitute their post-trained counterparts.
 - Keep deployment and benchmark claims source-scoped.
 
+- Preserve the source-explicit Super Base initialization using reciprocal derived-from / has-derivative relations. Keep Ultra Base teacher distillation distinct from backbone initialization; do not substitute post-trained Ultra.
+
 ## Validation
 
 - Family membership resolves reciprocally through Nemotron 3; producer provenance remains inherited through the existing family relation chain.
