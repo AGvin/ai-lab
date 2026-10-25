@@ -16,14 +16,14 @@ entity:
     purposes:
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16
     purposes:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4
     purposes:
