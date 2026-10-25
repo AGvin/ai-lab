@@ -10,14 +10,14 @@ entity:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
     purposes:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
     purposes:
