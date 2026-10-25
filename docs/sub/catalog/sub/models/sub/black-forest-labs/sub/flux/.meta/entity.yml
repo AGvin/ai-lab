@@ -3,7 +3,7 @@ entity:
   type: model-family
   name: FLUX
   references:
-  - type: model-registry
+  - type: registry
     source:
       url: https://huggingface.co/black-forest-labs
     purposes:
