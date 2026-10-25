@@ -90,7 +90,7 @@ entity:
     - research
     authority: official
     note: API Platform Skills.
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b
     purposes:
@@ -98,7 +98,7 @@ entity:
     - research
     authority: official
     note: PPLX Embed V1.
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b
     purposes:
@@ -106,7 +106,7 @@ entity:
     - research
     authority: official
     note: PPLX Decider V1.1.
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
     purposes:
