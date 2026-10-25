@@ -42,7 +42,7 @@ entity:
         - identification
         - research
       authority: official
-    - type: terms
+    - type: terms-of-service
       source:
         url: https://legal.mistral.ai/terms/commercial-terms-of-service/
       purposes:
