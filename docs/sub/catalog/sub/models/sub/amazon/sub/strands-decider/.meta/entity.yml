@@ -38,7 +38,7 @@ entity:
         - identification
         - research
       authority: official
-    - type: model-card
+    - type: documentation
       source:
         url: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
       purposes:
