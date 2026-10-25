@@ -17,3 +17,9 @@ The 149M retriever produces 768-dimensional vectors; the 47M small retriever pro
 - [149M retriever](https://huggingface.co/ibm-granite/granite-embedding-english-r2)
 - [47M retriever](https://huggingface.co/ibm-granite/granite-embedding-small-english-r2)
 - [Cross-encoder reranker](https://huggingface.co/ibm-granite/granite-embedding-reranker-english-r2)
+
+## Deployment validation
+
+Pin the exact checkpoint revision and compatible runtime version. Measure memory, latency and retrieval or reranking quality on representative inputs. Check runtime-specific artifacts and hosted-service terms separately from the downloaded-weight license.
+
+Published benchmark results are producer claims; this page does not establish independent benchmark reproduction or deployed performance.
