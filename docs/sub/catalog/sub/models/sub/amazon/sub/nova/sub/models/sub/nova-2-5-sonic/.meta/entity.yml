@@ -10,7 +10,7 @@ entity:
     prompts and configurations are customization controls, and migration still needs workload
     retesting.
   references:
-    - type: announcement
+    - type: article
       source:
         url: https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-nova-2.5-Sonic/
       purposes:
