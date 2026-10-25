@@ -3,7 +3,7 @@ entity:
   type: model
   name: FLUX.1-schnell
   references:
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/black-forest-labs/FLUX.1-schnell
     purposes:
