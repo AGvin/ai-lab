@@ -11,7 +11,6 @@ Llama 4 is a canonical model series represented in AI Lab.
 - Member of: [`catalog/models/meta/llama`](../../)
 - Has member: [`catalog/models/meta/llama/llama-4/models/scout`](sub/models/sub/scout/)
 - Has member: [`catalog/models/meta/llama/llama-4/models/maverick`](sub/models/sub/maverick/)
-- Has member: [`catalog/models/meta/llama/llama-4/models/behemoth`](sub/models/sub/behemoth/)
 
 ## Official resources
 
