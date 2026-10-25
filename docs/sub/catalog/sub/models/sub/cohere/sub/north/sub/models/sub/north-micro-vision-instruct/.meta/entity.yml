@@ -17,14 +17,14 @@ entity:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/command-a-vision-07-2025
     purposes:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/aya-vision-8b
     purposes:
