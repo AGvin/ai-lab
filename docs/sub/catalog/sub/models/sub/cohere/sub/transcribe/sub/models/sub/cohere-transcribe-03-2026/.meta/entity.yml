@@ -16,7 +16,7 @@ entity:
     purposes:
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
     purposes:
@@ -30,7 +30,7 @@ entity:
     - identification
     - research
     authority: official
-  - type: model-registry
+  - type: registry
     source:
       url: https://huggingface.co/api/models/CohereLabs/cohere-transcribe-arabic-07-2026?blobs=true
     purposes:
