@@ -13,7 +13,7 @@ entity:
   aliases:
     - "StrandsAgents/strands-decider-E2B-gemma4-v1-2610"
   references:
-    - type: model-card
+    - type: documentation
       source:
         url: https://huggingface.co/StrandsAgents/strands-decider-E2B-gemma4-v1-2610
       purposes:
@@ -27,7 +27,7 @@ entity:
         - identification
         - research
       authority: official
-    - type: announcement
+    - type: article
       source:
         url: https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/
       purposes:
