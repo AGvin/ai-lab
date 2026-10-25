@@ -43,14 +43,14 @@ entity:
         - identification
         - research
       authority: official
-    - type: announcement
+    - type: article
       source:
         url: https://aws.amazon.com/about-aws/whats-new/2025/12/nova-2-foundation-models-amazon-bedrock/
       purposes:
         - identification
         - research
       authority: official
-    - type: announcement
+    - type: article
       source:
         url: https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-nova-2.5-Sonic/
       purposes:
