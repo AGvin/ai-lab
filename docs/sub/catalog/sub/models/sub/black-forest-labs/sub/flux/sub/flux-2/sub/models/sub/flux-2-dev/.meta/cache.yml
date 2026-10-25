@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:921742c58db99bdfe36a0988738d37f20bc274aa
+      entity.yml: gitblob:f13add641c6888bdc1cc657aaba46b544c440317
     parent:
       entity.yml: gitblob:ccef1da57ee6d547f9577b3262f2ec33c70f8562
   state:
@@ -46,7 +46,7 @@ cache:
         type: model
         name: FLUX.2 [dev]
         references:
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/FLUX.2-dev
           purposes:

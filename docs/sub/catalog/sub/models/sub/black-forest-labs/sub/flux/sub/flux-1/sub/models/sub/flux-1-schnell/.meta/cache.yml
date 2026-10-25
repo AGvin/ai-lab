@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5aa30fc32adb78504fb9e8c4b9fd6b516b44a094
+      entity.yml: gitblob:822628b45adc4f1a77dc844d5b84b046d42c56ea
     parent:
-      entity.yml: gitblob:d9a446b0b485c5bd07299a28e3161d534c3ccf80
+      entity.yml: gitblob:5dd2f97e39d95af63fbb4e94be6f54d0dbe46601
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
   state:
     node:
@@ -47,7 +47,7 @@ cache:
         type: model
         name: FLUX.1-schnell
         references:
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/FLUX.1-schnell
           purposes:

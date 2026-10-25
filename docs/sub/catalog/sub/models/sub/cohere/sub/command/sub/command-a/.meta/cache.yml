@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:61f1cf156b2a4eae8a4ac92b5c69f938ad6515ec
+      entity.yml: gitblob:aef7561a681974c6a162b43c087a740a2fdf030d
     parent:
-      entity.yml: gitblob:dfc0572591a386a09ccfd524cb4c96c0b08fad29
+      entity.yml: gitblob:6c9335564c8b3b6524ac4fb8f4abc5b7e0f2466f
   state:
     node:
       effective:
@@ -59,28 +59,28 @@ cache:
           purposes:
           - research
           authority: official
-        - type: model-registry
+        - type: registry
           source:
             url: https://huggingface.co/api/models/CohereLabs/command-a-reasoning-08-2025?blobs=true
           purposes:
           - identification
           - research
           authority: official
-        - type: model-registry
+        - type: registry
           source:
             url: https://huggingface.co/api/models/CohereLabs/command-a-translate-08-2025?blobs=true
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/command-a-vision-07-2025
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16
           purposes:
@@ -115,28 +115,28 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/c4ai-command-a-03-2025
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/command-a-reasoning-08-2025
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/command-a-translate-08-2025
           purposes:

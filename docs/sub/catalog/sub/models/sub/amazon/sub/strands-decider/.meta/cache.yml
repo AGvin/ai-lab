@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b44684e0307250cfea893b496ef8c43f44c24f0e
+      entity.yml: gitblob:320637cc9139546cf0a6187d54fc0072185f3322
     parent:
-      entity.yml: gitblob:2ff7ac7e787ae25f562c48b524ea3128d606e92f
+      entity.yml: gitblob:634f6e10582b1bb21593828fbc804cbd6aa4a750
   state:
     node:
       effective:
@@ -81,7 +81,7 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
           purposes:

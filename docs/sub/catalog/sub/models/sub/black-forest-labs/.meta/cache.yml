@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:fbca2f37b7c63e53b6e847a7f932f6cae0554d62
+      entity.yml: gitblob:ed75d4733008602d61de1d2879bb73fcab21d1a4
     parent:
       entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
       node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
@@ -54,7 +54,7 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-registry
+        - type: registry
           source:
             url: https://huggingface.co/black-forest-labs
           purposes:

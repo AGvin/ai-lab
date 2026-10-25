@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c3955afd146af194a2e32c76eef964635c4bcbf4
+      entity.yml: gitblob:b7bc0b73bf766b7a193bd6974e2aa04b27e64ba2
     parent: {}
   state:
     node:
@@ -52,7 +52,7 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024
           purposes:

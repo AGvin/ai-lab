@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:fc53fd66b5fcc7e41afcb5a78acb7d7a664fd787
+      entity.yml: gitblob:81f9fe3da2fec91e13e48b3bdeb2b97f4a9130c2
     parent: {}
   state:
     node:
@@ -58,14 +58,14 @@ cache:
           purposes:
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/command-a-translate-08-2025
           purposes:
           - identification
           - research
           authority: official
-        - type: model-registry
+        - type: registry
           source:
             url: https://huggingface.co/api/models/CohereLabs/command-a-translate-08-2025?blobs=true
           purposes:

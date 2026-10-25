@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:9ab8ef49ea4dbdeb72c6b2c1fcc72f4a10423982
+      entity.yml: gitblob:833f1ee6ade353ee27aedd196b5c78f1e35367b3
     parent: {}
   state:
     node:
@@ -56,7 +56,7 @@ cache:
         aliases:
         - StrandsAgents/strands-decider-E2B-gemma4-v1-2610
         references:
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/StrandsAgents/strands-decider-E2B-gemma4-v1-2610
           purposes:
@@ -70,7 +70,7 @@ cache:
           - identification
           - research
           authority: official
-        - type: announcement
+        - type: article
           source:
             url: https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/
           purposes:

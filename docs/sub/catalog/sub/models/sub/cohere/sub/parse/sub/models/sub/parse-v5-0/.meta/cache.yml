@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b246b0e6cb11ee66598ad54c50e558771c3a68b1
+      entity.yml: gitblob:177502cd7f71cf7651db7eb47e2e99d66b6ef943
     parent: {}
   state:
     node:
@@ -58,7 +58,7 @@ cache:
           purposes:
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct
           purposes:

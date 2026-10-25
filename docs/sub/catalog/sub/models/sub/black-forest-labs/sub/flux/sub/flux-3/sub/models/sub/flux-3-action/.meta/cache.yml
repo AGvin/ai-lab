@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:dec2552658077b52dbc5a5f749059920b3e63ba2
+      entity.yml: gitblob:3e8d0bb778896086bb1d19ff7faeebc3cc9e6a84
     parent:
-      entity.yml: gitblob:b315c9bc9184d7ef570c814432cb22c377621f2c
+      entity.yml: gitblob:e354b4d264dab4624c90794a471d0e8e511b4425
   state:
     node:
       effective:
@@ -53,7 +53,7 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/flux-3-action-base
           purposes:
@@ -67,14 +67,14 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/flux-3-action-droid
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/flux-3-action-so101
           purposes:

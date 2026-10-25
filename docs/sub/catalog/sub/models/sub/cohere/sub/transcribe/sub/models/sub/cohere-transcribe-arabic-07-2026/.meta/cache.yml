@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3b496c09a1d49b4c535d6411f89b64c735ecbd93
+      entity.yml: gitblob:7535b4c876aa3e82c25ca0cf5c315660f25f0c62
     parent: {}
   state:
     node:
@@ -58,14 +58,14 @@ cache:
           purposes:
           - research
           authority: official
-        - type: model-registry
+        - type: registry
           source:
             url: https://huggingface.co/api/models/CohereLabs/cohere-transcribe-arabic-07-2026?blobs=true
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
           purposes:

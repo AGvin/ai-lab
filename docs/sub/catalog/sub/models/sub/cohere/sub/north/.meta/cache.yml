@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3b48f68aff7a2067ca00a29a76a9eb22f586799b
+      entity.yml: gitblob:1bc13e1c4e91cc328a84fd80730affdc8f315199
     parent:
-      entity.yml: gitblob:3a6f9449e12ea725fe56bb72d7f5da441ab36a11
+      entity.yml: gitblob:d41de55a71edf0a12d91380498e3ae3e5221c1fb
   state:
     node:
       effective:
@@ -67,21 +67,21 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/North-Mini-Code-1.0
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/North-Small-Translate-1.0
           purposes:

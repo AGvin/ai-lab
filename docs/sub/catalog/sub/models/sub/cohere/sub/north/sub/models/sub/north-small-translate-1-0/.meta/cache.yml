@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3ef70256c077092115d07fcbbbf11de056f24ee1
+      entity.yml: gitblob:9d43a02c7b228fc352a330a9a291380471758b13
     parent: {}
   state:
     node:
@@ -58,7 +58,7 @@ cache:
           purposes:
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/North-Small-Translate-1.0
           purposes:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d988aff975728fae5fb8b15f2054d33459c75737
+      entity.yml: gitblob:06732c9b6d39aebadad162ce063c19f59645a4be
     parent: {}
   state:
     node:
@@ -52,14 +52,14 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/c4ai-command-r-08-2024
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/c4ai-command-r-v01
           purposes:

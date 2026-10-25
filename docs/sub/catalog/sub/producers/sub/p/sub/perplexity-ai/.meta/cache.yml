@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3a2515404e9cdca5344ad41b53e63a84f201d359
+      entity.yml: gitblob:12aad3f1f2bf3d6e1f3ebcb5d061b436505ea894
     parent:
       entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
   state:
@@ -133,7 +133,7 @@ cache:
           - research
           authority: official
           note: API Platform Skills.
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b
           purposes:
@@ -141,7 +141,7 @@ cache:
           - research
           authority: official
           note: PPLX Embed V1.
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b
           purposes:
@@ -149,7 +149,7 @@ cache:
           - research
           authority: official
           note: PPLX Decider V1.1.
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
           purposes:

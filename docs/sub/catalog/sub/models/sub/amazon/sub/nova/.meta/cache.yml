@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:74c01baf153190ecba4568a5f78ec74044fa24ac
+      entity.yml: gitblob:65f4e1c6dff38f93fefb9325a9de84f97435b3e7
     parent:
-      entity.yml: gitblob:2ff7ac7e787ae25f562c48b524ea3128d606e92f
+      entity.yml: gitblob:634f6e10582b1bb21593828fbc804cbd6aa4a750
   state:
     node:
       effective:
@@ -86,14 +86,14 @@ cache:
           - identification
           - research
           authority: official
-        - type: announcement
+        - type: article
           source:
             url: https://aws.amazon.com/about-aws/whats-new/2025/12/nova-2-foundation-models-amazon-bedrock/
           purposes:
           - identification
           - research
           authority: official
-        - type: announcement
+        - type: article
           source:
             url: https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-nova-2.5-Sonic/
           purposes:

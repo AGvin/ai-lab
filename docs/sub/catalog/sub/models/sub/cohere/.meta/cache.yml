@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3a6f9449e12ea725fe56bb72d7f5da441ab36a11
+      entity.yml: gitblob:d41de55a71edf0a12d91380498e3ae3e5221c1fb
     parent:
       entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
       node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
@@ -67,14 +67,14 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/c4ai-command-a-03-2025
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct
           purposes:

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b315c9bc9184d7ef570c814432cb22c377621f2c
+      entity.yml: gitblob:e354b4d264dab4624c90794a471d0e8e511b4425
     parent:
-      entity.yml: gitblob:23d143c8692f26889d92c48f3f4cdaa9bd8601ab
+      entity.yml: gitblob:04b9537fa67c0f12038d17f276b34ccb7bb91871
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
   state:
     node:
@@ -68,7 +68,7 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/flux-3-action-base
           purposes:
@@ -82,14 +82,14 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/flux-3-image-klein
           purposes:

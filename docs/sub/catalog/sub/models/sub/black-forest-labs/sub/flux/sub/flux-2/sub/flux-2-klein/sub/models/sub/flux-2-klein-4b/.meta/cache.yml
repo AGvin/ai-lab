@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b2aac9146e2463a0367b06ae31d42f6f94dde60f
+      entity.yml: gitblob:57d498ea752041a8e1549f81ab64aee0358a97d2
     parent:
-      entity.yml: gitblob:d96e64ae3fa6bbf0f87bec0f8ebdaead5f0d8794
+      entity.yml: gitblob:a41e85924cf52670024a8eceaef94a57f2d50f08
   state:
     node:
       effective:
@@ -52,7 +52,7 @@ cache:
           4-billion-parameter 4-step distilled flow-transformer model for image generation
           and editing. Its weights use Apache 2.0.
         references:
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
           purposes:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:37cfd857be95b955b1c83bfa3d0f8cea4ce29b61
+      entity.yml: gitblob:3e1e59f91043f8b6d29aa3b81a038eefdf2dde95
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -94,7 +94,7 @@ cache:
           - identification
           - research
           authority: official
-        - type: terms
+        - type: terms-of-service
           source:
             url: https://www.kimi.com/user/agreement/modelUse?version=v2
           purposes:
