@@ -23,7 +23,7 @@ entity:
       purposes:
         - research
       authority: official
-    - type: announcement
+    - type: article
       source:
         url: https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/
       purposes:
