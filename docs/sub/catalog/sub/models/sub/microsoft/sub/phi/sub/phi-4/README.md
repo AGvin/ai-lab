@@ -4,7 +4,7 @@ Phi-4 is a **model series** within Microsoft's Phi family. Its separately publis
 
 ## Models
 
-- [Phi-4](./sub/models/sub/phi-4/) — concrete base model.
+- [Phi-4](./sub/models/sub/phi-4/) — original released 14B text model.
 - [Phi-4 Mini Instruct](./sub/models/sub/phi-4-mini-instruct/) — instruction-tuned compact text model; its official card describes a 3.8B parameter scale and 128K context.
 - [Phi-4 Mini Reasoning](./sub/models/sub/phi-4-mini-reasoning/) — compact reasoning-focused checkpoint.
 - [Phi-4 Mini Flash Reasoning](./sub/models/sub/phi-4-mini-flash-reasoning/) — separate compact Flash reasoning model.
