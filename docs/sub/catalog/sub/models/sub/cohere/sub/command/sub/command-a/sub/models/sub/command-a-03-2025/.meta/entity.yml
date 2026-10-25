@@ -10,28 +10,28 @@ entity:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/c4ai-command-a-03-2025
     purposes:
     - identification
     - research
     authority: official
-  - type: model-registry
+  - type: registry
     source:
       url: https://huggingface.co/api/models/CohereLabs/command-a-reasoning-08-2025?blobs=true
     purposes:
     - identification
     - research
     authority: official
-  - type: model-registry
+  - type: registry
     source:
       url: https://huggingface.co/api/models/CohereLabs/command-a-translate-08-2025?blobs=true
     purposes:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/command-a-vision-07-2025
     purposes:
