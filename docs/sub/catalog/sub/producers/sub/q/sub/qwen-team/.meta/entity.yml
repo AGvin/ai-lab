@@ -121,7 +121,7 @@ entity:
     - research
     authority: official
     note: Qwen Studio.
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
     purposes:
