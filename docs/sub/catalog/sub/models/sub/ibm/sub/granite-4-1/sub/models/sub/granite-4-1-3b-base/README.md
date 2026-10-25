@@ -13,4 +13,4 @@ Published benchmark claims are not independently reproduced here.
 ## Family and official source
 
 - [Granite 4.1 family](../../../../)
-- [Official IBM model card](https://huggingface.co/ibm-granite/granite-4-1-3b-base)
+- [Official IBM model card](https://huggingface.co/ibm-granite/granite-4.1-3b-base)
