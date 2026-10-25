@@ -8,7 +8,7 @@ entity:
   identity_note: FLUX.2 [klein] Base 9B is Black Forest Labs' separately published 9-billion-parameter undistilled
     base flow-transformer model for image generation and editing. Its weights use FLUX Non-Commercial.
   references:
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B
     purposes:
