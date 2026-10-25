@@ -49,7 +49,7 @@ entity:
         - identification
         - research
       authority: official
-    - type: terms
+    - type: terms-of-service
       source:
         url: https://www.kimi.com/user/agreement/modelUse?version=v2
       purposes:
