@@ -8,7 +8,7 @@ entity:
   identity_note: FLUX.2 [klein] 4B is Black Forest Labs' separately published 4-billion-parameter 4-step distilled
     flow-transformer model for image generation and editing. Its weights use Apache 2.0.
   references:
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
     purposes:
