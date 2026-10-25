@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b034af1b3a610d3297c90c0a92de26b885530e6d
+      entity.yml: gitblob:da104210295f7f6200d44254d928739d4573e0fd
     parent:
-      entity.yml: gitblob:19474dbde7771ed145e8d250f35b64638d33c2f9
+      entity.yml: gitblob:998fdc17d518f5c954bd65de3c06dd5e2d72ca9e
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
   state:
     node:
@@ -46,6 +46,8 @@ cache:
         id: catalog/models/google/gemini/models/gemini-3-7-flash
         type: model
         name: Gemini 3.7 Flash
+        aliases:
+        - gemini-3.7-flash
         references:
         - type: documentation
           source:
@@ -60,9 +62,19 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemini-api/docs/deprecations
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/google/gemini
+        identity_note: Released Gemini 3.7 Flash identity retained for historical
+          continuity; the deprecated gemini-3.7-flash endpoint now automatically routes
+          to gemini-3.8-flash.
     aliases:
       effective:
         schema: default

@@ -1,0 +1,103 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:cd096b9def21594e5f39fb35074041fc4a2068c2
+    parent:
+      entity.yml: gitblob:caea4a40863067205fac366b183ff3042f54c16e
+      node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/series
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/google/gemma/medgemma-1-5-4b
+        type: model
+        name: MedGemma 1.5 4B
+        aliases:
+        - google/medgemma-1.5-4b-it
+        references:
+        - type: official-site
+          source:
+            url: https://deepmind.google/models/gemma/medgemma/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemma/docs/releases
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/google/medgemma-1.5-4b-it
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.google.com/health-ai-developer-foundations/medgemma
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/google/gemma
+        identity_note: MedGemma 1.5 is the 4B multimodal instruction-tuned medical
+          developer model released as google/medgemma-1.5-4b-it under Health AI Developer
+          Foundations terms.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:097b26bb91e3f53dd651e08db9c754820341b0df
+      entity.yml: gitblob:b8b5ef88604a4071efd0424249ba475fedcb8b00
     parent:
       entity.yml: gitblob:8144ca876d7f835bbf1e08e3cc7283fd011392cb
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -57,6 +57,18 @@ cache:
         - type: documentation
           source:
             url: https://isaac-sim.github.io/IsaacLab/main/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://isaac-sim.github.io/IsaacLab/main/source/experimental-features/newton-physics-integration/index.html
           purposes:
           - research
           authority: official

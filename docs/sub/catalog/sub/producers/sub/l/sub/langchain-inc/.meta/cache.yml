@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:841beaca5a08f98cd59d82ebd5a7c488dbb63e8b
+      entity.yml: gitblob:0686370132e4df82f80933b463c85ed6bbd32b94
     parent:
       entity.yml: gitblob:665e9ca01b87f5f7025e0f60f3e694be0cc71db2
   state:
@@ -66,6 +66,18 @@ cache:
         - type: repository
           source:
             url: https://github.com/langchain-ai
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.langchain.com/oss-overview
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.langchain.com/langsmith/self-hosted
           purposes:
           - research
           authority: official

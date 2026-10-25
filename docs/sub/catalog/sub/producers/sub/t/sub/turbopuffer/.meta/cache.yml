@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:0a5d0764034cd3c7fe4e8b71f1d3c8437b6968e2
+      entity.yml: gitblob:ffc2c5a9f5bee5746109c7371aeb29c9b209fcbf
     parent:
       entity.yml: gitblob:28ad9dbbd921bafdc12d024f89757651c4767ef8
   state:
@@ -51,6 +51,18 @@ cache:
             url: https://turbopuffer.com/
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://turbopuffer.com/docs/architecture
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://turbopuffer.com/docs/security
+          purposes:
           - research
           authority: official
         relations:

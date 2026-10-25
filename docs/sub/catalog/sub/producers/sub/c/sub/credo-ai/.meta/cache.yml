@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a28078df241c86000ee51b8cb2dd2b07362e8a4e
+      entity.yml: gitblob:8265f2c4ee738dc43fb1262b0d578461d2117ec1
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -49,6 +49,20 @@ cache:
         - type: official-site
           source:
             url: https://www.credo.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.credo.ai/company/aboutus
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.credo.ai/product
           purposes:
           - identification
           - research

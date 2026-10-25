@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b0b3c55bb7c228a0dba3a7230a657999be40e486
+      entity.yml: gitblob:717e08d0f10a99008a7391a7555d312d81ace76a
     parent:
-      entity.yml: gitblob:2f014c200c2282ae14ccd5407a676e2770042b54
+      entity.yml: gitblob:14d7c5336b98da3ce14bc46c931478ee37a1776d
   state:
     node:
       effective:
@@ -59,6 +59,13 @@ cache:
           source:
             url: https://ernie.baidu.com/
           purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://ernie.baidu.com/blog/posts/ernie4.5/
+          purposes:
+          - identification
           - research
           authority: official
         relations:

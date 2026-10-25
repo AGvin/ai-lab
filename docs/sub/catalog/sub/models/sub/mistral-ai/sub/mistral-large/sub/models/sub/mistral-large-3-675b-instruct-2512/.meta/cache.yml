@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:2cd12723c499d4704475e9762674813da30583ab
+      entity.yml: gitblob:d48b726dbfdd2c416149c168a32ceba1bad8d1d3
     parent:
-      entity.yml: gitblob:6d2e120aba6ec271841c2b46373c19549519f085
+      entity.yml: gitblob:7c194d132f428c224f49f6a9c749af8adfcf4dc2
   state:
     node:
       effective:
@@ -56,6 +56,19 @@ cache:
         - type: release-notes
           source:
             url: https://mistral.ai/news/mistral-3/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/mistral-large-3-25-12
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/studio/conversations/function-calling
           purposes:
           - research
           authority: official

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b2116aaf038ef4feb90feb15c483e6b58fd17a97
+      entity.yml: gitblob:2207377d99793ede2851e0c20101d88f726b758f
     parent:
-      entity.yml: gitblob:dc6a98cbe777f8755184e30e7febc26440b6793d
+      entity.yml: gitblob:a5aa3a056ccd0e0e14d40b977114f33bb4ca66c0
   state:
     node:
       effective:
@@ -53,9 +53,30 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/voxtral-mini-transcribe-26-02
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/studio/audio/speech_to_text
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/studio/audio/speech_to_text/offline_transcription
+          purposes:
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/mistral-ai/voxtral
+        aliases:
+        - Voxtral Mini Transcribe 2
     aliases:
       effective:
         schema: default

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:44b07fb43412d61fc8bdd3ad2660351f8ce063ef
+      entity.yml: gitblob:b8256b84a3ca010086ecddf1d216eba501a67da1
     parent:
       entity.yml: gitblob:d76916cc6208401fd85eacd3a15da3a51743c755
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -51,9 +51,33 @@ cache:
         references:
         - type: documentation
           source:
-            url: https://google.github.io/adk-docs/
+            url: https://adk.dev/
           purposes:
           - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/google/adk-python
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/google/adk-js
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/google/adk-go
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/google/adk-java
+          purposes:
           - research
           authority: official
         relations:

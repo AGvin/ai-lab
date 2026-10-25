@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a61789e9955e964f674c70d746c1398a37519291
+      entity.yml: gitblob:bd77f156058c08451cf045e89015a054f15881e3
     parent:
       entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
   state:
@@ -59,9 +59,37 @@ cache:
           purposes:
           - research
           authority: official
+        - type: repository
+          source:
+            url: https://github.com/pytorch/pytorch
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: PyTorch repository.
+        - type: repository
+          source:
+            url: https://github.com/pytorch/ao
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: TorchAO repository.
+        - type: official-site
+          source:
+            url: https://pytorch.org/foundation/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: PyTorch Foundation.
         relations:
         - type: produces
           target: catalog/software/inference-runtimes/inference-engines/executorch
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-development/pytorch
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/torchao
     aliases:
       effective:
         schema: default

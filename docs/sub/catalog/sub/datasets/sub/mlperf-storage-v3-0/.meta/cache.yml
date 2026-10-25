@@ -1,0 +1,92 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:4c1565bdf03735f69b62cc4bd2b87841c646fe66
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/mlperf-storage-v3-0
+        type: dataset
+        name: MLPerf Storage v3.0
+        identity_note: MLPerf Storage v3.0 is MLCommons' released suite for measuring
+          storage-system performance under representative AI and machine-learning
+          workloads. The September 2026 revision adds KV Cache and Vector Database
+          tests and an S3 object-storage access layer alongside POSIX. These are workload
+          and access variants inside the suite, not independent storage products.
+          Workload definitions, datasets, scale factors, access layers, metrics, submission
+          classes and power measurements depend on the exact revision. Results characterize
+          the submitted storage system and configuration; they are separate from general
+          KV-cache concepts, vector-database products or claims about every AI workload.
+        references:
+        - type: article
+          source:
+            url: https://mlcommons.org/2026/09/mlperf-storage-v3-0-results/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://mlcommons.org/benchmarks/storage/
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mlcommons
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

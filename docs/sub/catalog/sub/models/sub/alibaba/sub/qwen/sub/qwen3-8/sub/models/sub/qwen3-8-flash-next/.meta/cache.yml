@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:bb02b74b264b6d3bdf7fe2bb614c135dd0a3fc9b
-    parent:
-      entity.yml: gitblob:fce5625014c495c8d89759a4b7874338ff2370bf
+      entity.yml: gitblob:0b03bc770a295be8d0046912f5965d5c90595a13
+    parent: {}
   state:
     node:
       effective:
@@ -53,9 +52,23 @@ cache:
           - identification
           - research
           authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/alibaba/qwen/qwen3-8
+        aliases:
+        - Qwen/Qwen3.8-Flash-Next
     aliases:
       effective:
         schema: default

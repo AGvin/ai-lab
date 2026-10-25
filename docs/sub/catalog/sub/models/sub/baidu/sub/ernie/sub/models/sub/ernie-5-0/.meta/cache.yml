@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3d1787cbbeb2e53ee382f7a6955e54678240558b
-    parent:
-      entity.yml: gitblob:5750a1f34c5d1f4b3366d0d36d410e5a4ee94bf1
+      entity.yml: gitblob:2ddc19711e04a5e5647350465aab5819d6b1ea80
+    parent: {}
   state:
     node:
       effective:
@@ -45,6 +44,15 @@ cache:
         id: catalog/models/baidu/ernie/models/ernie-5-0
         type: model
         name: ERNIE 5.0
+        identity_note: ERNIE 5.0 is Baidu's native unified multimodal model. Baidu's
+          technical description reports 2.4 trillion total parameters and an autoregressive
+          framework integrating text, images, audio and video with sparse Mixture-of-Experts
+          routing. Baidu records an updated release in January 2026; the technical
+          article is dated 6 February 2026. The technical-publication date is not
+          the model's initial release date. Total parameters do not imply an exact
+          active count, and native multimodal architecture does not establish every
+          Qianfan endpoint's input/output support. ERNIE 5.1 is a separately trained
+          derivative, not simply a serving alias.
         references:
         - type: article
           source:
@@ -53,9 +61,32 @@ cache:
           - identification
           - research
           authority: official
+        - type: article
+          source:
+            url: https://ir.baidu.com/news-releases/news-release-details/baidu-announces-fourth-quarter-and-fiscal-year-2025-results
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/baidu/ernie
+        - type: has-derivative
+          target: catalog/models/baidu/ernie/models/ernie-5-1
     aliases:
       effective:
         schema: default

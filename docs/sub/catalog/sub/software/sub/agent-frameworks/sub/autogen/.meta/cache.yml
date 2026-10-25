@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e17fa80e202e8bf8634ed3d7f6dffac56178b10f
+      entity.yml: gitblob:dfd8b85bd5a1303d89eb02f4d11f07a0a502b7d8
     parent:
       entity.yml: gitblob:d76916cc6208401fd85eacd3a15da3a51743c755
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -59,6 +59,24 @@ cache:
             url: https://github.com/microsoft/autogen
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/installation.html
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/components/command-line-code-executors.html
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-autogen/
+          purposes:
           - research
           authority: official
         relations:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b6b1e54026ec69093f66c31a52de8f41e5847c52
+      entity.yml: gitblob:1675f90c7759300a690c334de98ed0b47d00bc5e
     parent:
       entity.yml: gitblob:487620e3ae645833061dca6b70626f158a1c9fc1
   state:
@@ -58,6 +58,12 @@ cache:
             url: https://github.com/axolotl-ai-cloud/axolotl
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.axolotl.ai/docs/telemetry.html
+          purposes:
           - research
           authority: official
         relations:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5db4bf49030fd857e1423fa66f3fad07a64d1b68
+      entity.yml: gitblob:33d6543f4b417c44ff9c19a5a0bbd445a5390901
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -49,6 +49,27 @@ cache:
         - type: official-site
           source:
             url: https://auth0.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://auth0.com/solutions/ship-ai-agents
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.okta.com/blog/company-and-culture/its-official-okta-joins-forces-with-auth0/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://www.okta.com/okta-and-auth0/
           purposes:
           - identification
           - research

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:daf6e60a76e966499d0de43bae14fa89482e31f9
+      entity.yml: gitblob:d56768503804b53da85a838e4e9e4cd2cfd4ee28
     parent:
-      entity.yml: gitblob:d2832a7979fe4d097b9404cc46ffd2fcc3b3eba6
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
   state:
     node:
       effective:
@@ -45,6 +45,17 @@ cache:
         id: catalog/producers/s/seldon
         type: organization
         name: Seldon
+        identity_note: Seldon is the original producer identity for Seldon Core 2.
+          Its current website directs customers to TrueFoundry; TrueFoundry’s announcement
+          states that it acquired Seldon’s business and customers. This business transition
+          does not erase the Seldon provenance of the existing Core 2 software. The
+          inspected Core v2 license names Seldon Technologies Limited and uses Business
+          Source License 1.1, with limited additional production permission and a
+          per-version change to Apache 2.0 after four years. Do not infer unrestricted
+          production rights from an “open source” marketing label. Confirm the exact
+          version’s license and the current commercial support or migration agreement
+          with TrueFoundry; its combined platform is a separate offering from the
+          Core 2 code.
         references:
         - type: official-site
           source:
@@ -57,6 +68,27 @@ cache:
           source:
             url: https://github.com/SeldonIO/seldon-core
           purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.truefoundry.com/blog/truefoundry-seldon-unified-control-plane-for-enterprise-ai
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/SeldonIO/seldon-core/blob/v2/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.seldon.ai/seldon-core-2
+          purposes:
+          - identification
           - research
           authority: official
         relations:

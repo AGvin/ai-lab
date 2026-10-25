@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ba86f82ef25e125c3ae0420a5b3c929eb8e0fc16
-    parent:
-      entity.yml: gitblob:41ef1d5765b47120cc088c1101a7559dcf9aa235
+      entity.yml: gitblob:7d24ea96b645bb3d105b11e409c447561270dfd8
+    parent: {}
   state:
     node:
       effective:
@@ -45,6 +44,12 @@ cache:
         id: catalog/models/amazon/nova/nova-2/models/nova-2-sonic
         type: model
         name: Amazon Nova 2 Sonic
+        identity_note: Speech-to-speech model identified as amazon.nova-2-sonic-v1:0.
+          The current Bedrock card marks it Active and lists a 1M-token context and
+          64K maximum output. It uses InvokeModelWithBidirectionalStream, not ordinary
+          Converse or Invoke requests. Connections have an eight-minute session limit
+          independent of context size. The May 2026 automatic refresh is an in-place
+          update, not an additional model identity.
         references:
         - type: documentation
           source:
@@ -57,6 +62,20 @@ cache:
           source:
             url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-conversational-speech.html
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/doc-history.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/release-notes.html
+          purposes:
+          - identification
           - research
           authority: official
         relations:

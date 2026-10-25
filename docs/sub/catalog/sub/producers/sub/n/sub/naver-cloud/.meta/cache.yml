@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:8eb6d21c00f4eb7616ab5a91a99c0c700e30934b
+      entity.yml: gitblob:0f6b2ed648c8b85a81c67ccc27a5965ff5b5afc1
     parent:
       entity.yml: gitblob:5e848f769005e6f901786fd212d8c9d8ccc468b3
   state:
@@ -59,9 +59,19 @@ cache:
           purposes:
           - research
           authority: official
+        - type: other
+          source:
+            url: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Vision-Instruct-3B/blob/main/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/models/naver-cloud/hyperclova-x-seed
+        identity_note: NAVER Cloud is the represented HyperCLOVA X producer/business
+          operator; the SEED model license separately identifies NAVER Corporation
+          as model IP holder and NAVER Cloud Corporation as its business operator.
     aliases:
       effective:
         schema: default

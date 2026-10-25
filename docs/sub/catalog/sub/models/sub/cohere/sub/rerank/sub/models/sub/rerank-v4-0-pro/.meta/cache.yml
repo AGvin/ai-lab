@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:543528523929d4d4fdc361428dfdbf758aec021f
-    parent:
-      entity.yml: gitblob:005bb379fa17f2d47fcdc834636ff7d395c70162
+      entity.yml: gitblob:092341becd0902ace8ec2f36e9c1daef20b6e978
+    parent: {}
   state:
     node:
       effective:
@@ -57,6 +56,13 @@ cache:
           source:
             url: https://docs.cohere.com/changelog/rerank-v4.0
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/reranking-best-practices
+          purposes:
+          - identification
           - research
           authority: official
         relations:

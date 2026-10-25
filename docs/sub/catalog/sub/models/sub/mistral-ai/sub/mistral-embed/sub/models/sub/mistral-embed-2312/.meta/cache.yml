@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:728b0a0dca423b6e83b5d1562581ab8f34026522
+      entity.yml: gitblob:51e6f9e4dabc6a3ca8896341c57e1daa078f588a
     parent:
-      entity.yml: gitblob:edfae7cfe5f892db16d23d1f90af29f0821fa77b
+      entity.yml: gitblob:5abf7bcaf4b09dfff7996256e42c9d61493930af
   state:
     node:
       effective:
@@ -51,6 +51,12 @@ cache:
             url: https://docs.mistral.ai/models/mistral-embed-23-12
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/studio/knowledge-rag/embeddings/text_embeddings
+          purposes:
           - research
           authority: official
         relations:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c4a14c97508fc19c864548625757b633e50c9de0
+      entity.yml: gitblob:3b084cd9caef223c856d03c6a0e7654e584af0e4
     parent:
       entity.yml: gitblob:2f1e0b49da4e74d5be798e28b5ef97ff4b499581
   state:
@@ -60,17 +60,26 @@ cache:
           - identification
           - research
           authority: official
-          note: Official Kilo Terms of Service identifying Kilo Code Inc. as the product
-            operator.
+          note: Published Kilo terms identify Anaconda, Inc. acting for itself and
+            affiliates including Kilo Code Inc.; preserve Kilo Code Inc. as the original
+            product producer.
         - type: repository
           source:
             url: https://github.com/Kilo-Org/kilocode
           purposes:
           - research
           authority: official
+        - type: article
+          source:
+            url: https://www.anaconda.com/blog/anaconda-acquires-kilo-code
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/agents/hybrid/kilo-code
+        - type: owned-by
+          target: catalog/producers/a/anaconda-inc
     aliases:
       effective:
         schema: default

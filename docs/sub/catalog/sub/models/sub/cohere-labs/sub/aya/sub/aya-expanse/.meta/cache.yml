@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7dcb24ca5833492b22c51cb50b8cfefdcbf75bcb
+      entity.yml: gitblob:536c58f2a72112561367cfee0a948c94869176fe
     parent:
-      entity.yml: gitblob:2693e6a7024ba4a7dc0028f3351855484f8c6c3d
+      entity.yml: gitblob:a3b432f3c1cbfa8f42a04985f3bdc16402d28e1e
   state:
     node:
       effective:
@@ -45,6 +45,12 @@ cache:
         id: catalog/models/cohere-labs/aya/aya-expanse
         type: model-series
         name: Aya Expanse
+        identity_note: Aya Expanse is the multilingual text-model series released
+          on 24 October 2024. Its represented 8B and 32B models are distinct trained
+          identities within Aya. Compare the concrete models' context and deployment
+          needs separately. Their downloadable weights and Cohere API routes have
+          different lifecycle and licensing surfaces; the 8B route retirement does
+          not erase the weight release.
         references:
         - type: official-site
           source:
@@ -57,6 +63,55 @@ cache:
           source:
             url: https://huggingface.co/collections/CohereLabs/cohere-labs-aya-expanse
           purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://cohere.com/blog/aya-expanse-connecting-our-world
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/aya-expanse-8b
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/aya-expanse-32b
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/aya-expanse
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/deprecations
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/aya-vision-32b
+          purposes:
+          - identification
           - research
           authority: official
         relations:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f69f1faf7772a0577be69c1dbd83917dc607ba53
+      entity.yml: gitblob:a9fd37f1e1a3f9f9122936de00877bce3a4f69e0
     parent:
       entity.yml: gitblob:665e9ca01b87f5f7025e0f60f3e694be0cc71db2
   state:
@@ -58,6 +58,12 @@ cache:
             url: https://github.com/letta-ai/letta-code
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.letta.com/self-hosting
+          purposes:
           - research
           authority: official
         relations:

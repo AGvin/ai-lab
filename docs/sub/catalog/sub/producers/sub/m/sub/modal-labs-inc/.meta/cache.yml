@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:924135739e0208cd6d8ef793a573aa69c52b07d4
+      entity.yml: gitblob:b986814da6032d76a998e489af95e1833113c1d3
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -45,6 +45,13 @@ cache:
         id: catalog/producers/m/modal-labs-inc
         type: organization
         name: Modal Labs, Inc.
+        identity_note: Modal Labs, Inc., also known as Modal, is the company providing
+          the represented Modal cloud infrastructure service. Modal's published SaaS
+          agreement identifies the contracting company and scopes service access and
+          support through the agreement and applicable service order. The producer
+          identity is separate from workloads, models and customer code run on its
+          infrastructure; service guarantees and no-fee-use limitations must be checked
+          for the actual plan and contract.
         aliases:
         - Modal
         references:

@@ -1,0 +1,103 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:ad214fb53b9dd3ee357b00abc542f40c26edeedf
+    parent:
+      entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/m/mcp-use
+        type: organization
+        name: Manufact, Inc.
+        identity_note: Manufact, Inc. is the company/team behind the open-source mcp-use
+          framework and its TypeScript and Python SDKs. The company uses the former
+          mcp-use publisher brand in its history; the SDK retains the mcp-use name.
+          The same team builds the open-source framework and operates Manufact Cloud.
+          Hosted deployment, analytics, service terms, and commercial support are
+          separate from the SDKs; external MCP servers, model providers, client applications,
+          and the MCP specification retain their own ownership and operational responsibilities.
+        aliases:
+        - mcp-use
+        - Manufact
+        references:
+        - type: official-site
+          source:
+            url: https://manufact.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/mcp-use/mcp-use
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://manufact.com/company
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: The company page states that the same team builds mcp-use and Manufact
+            Cloud and identifies Manufact, Inc. in its copyright surface.
+        relations:
+        - type: produces
+          target: catalog/software/application-frameworks/application-development/mcp-use
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

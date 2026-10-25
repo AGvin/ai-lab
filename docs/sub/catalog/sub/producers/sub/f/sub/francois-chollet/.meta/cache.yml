@@ -1,0 +1,94 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:864e79a90992d0e2d43e0f1c920e3ef75e54548d
+    parent:
+      entity.yml: gitblob:834a848416cc4cbecc3cf2bbd5450eb5dd567415
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/f/francois-chollet
+        type: person
+        name: François Chollet
+        references:
+        - type: other
+          source:
+            url: https://github.com/fchollet
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original ARC-AGI-1 author and repository owner.
+        - type: repository
+          source:
+            url: https://github.com/fchollet/ARC-AGI
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://arcprize.org/arc-agi/1
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current version-specific benchmark page credits the original corpus
+            to François Chollet.
+        relations:
+        - type: produces
+          target: catalog/datasets/arc-agi-1
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

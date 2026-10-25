@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ab63de9ecfaa981fe582da320a973a30f372d257
+      entity.yml: gitblob:2bb921d29af65ac4dc7c2fadf1e0221df7cb8389
     parent:
       entity.yml: gitblob:cdabbf9a83c46d7cf4c6c0f2ea6846dd564fad0a
   state:
@@ -45,6 +45,14 @@ cache:
         id: catalog/producers/z/z-ai
         type: organization
         name: Z.AI
+        identity_note: Z.AI is the producer identity used by the current GLM documentation
+          and official zai-org model registry. The long-lived GLM family and its individually
+          reviewed models remain separate from the organization and from hosted access
+          plans. Model-weight licenses, API availability and commercial subscriptions
+          need assessment for the exact model and access route. Provider benchmark
+          claims are not independent catalog evaluations. Historical Zhipu AI wording
+          alone does not establish an additional parent or ownership relation in the
+          canonical graph.
         references:
         - type: official-site
           source:
@@ -56,6 +64,12 @@ cache:
         - type: documentation
           source:
             url: https://docs.z.ai/guides/overview/overview
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/zai-org
           purposes:
           - research
           authority: official

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:4a447ceb7e1e09f65762cc2cf8338dbb240a0b98
+      entity.yml: gitblob:71a7a2dad102406216e401e5db9b68825244df06
     parent:
-      entity.yml: gitblob:19d97806157251c4666cac958e201b53227933d9
+      entity.yml: gitblob:dfc0572591a386a09ccfd524cb4c96c0b08fad29
   state:
     node:
       effective:
@@ -57,6 +57,34 @@ cache:
           source:
             url: https://docs.cohere.com/docs/command-r7b
           purposes:
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://docs.cohere.com/changelog/command-gets-refreshed
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/c4ai-command-r-08-2024
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024
+          purposes:
+          - identification
           - research
           authority: official
         relations:

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:6382409bde6f44b2d2b325a3a295f6bb2590942b
+      entity.yml: gitblob:af07c9b2d3a949c722a24149c07e8e920b890ed5
     parent:
-      entity.yml: gitblob:2f014c200c2282ae14ccd5407a676e2770042b54
+      entity.yml: gitblob:14d7c5336b98da3ce14bc46c931478ee37a1776d
   state:
     node:
       effective:
@@ -49,6 +49,13 @@ cache:
         - type: official-site
           source:
             url: https://boomi.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://boomi.com/platform/agent-control-plane/
           purposes:
           - identification
           - research

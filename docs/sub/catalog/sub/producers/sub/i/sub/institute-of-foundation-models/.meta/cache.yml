@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f336388bc7808c98775da147815869857964d5ed
+      entity.yml: gitblob:bf0b33c26a1500651463f947a0ddd1927f1c9720
     parent:
       entity.yml: gitblob:076b92eff3cc890acf27aaad5283d321c9fe49b0
   state:
@@ -60,6 +60,18 @@ cache:
             url: https://huggingface.co/IFM
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://ifm.ai/about/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://ifm.ai/k2/
+          purposes:
           - research
           authority: official
         relations:

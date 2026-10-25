@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ce08de619907cfbf6083214606387fa100da6766
-    parent:
-      entity.yml: gitblob:71d9101b4779d12336c4024d2cceffd28b44d98d
+      entity.yml: gitblob:1edebbb6eeec75954dc03f9cadef0667c63a6b10
+    parent: {}
   state:
     node:
       effective:
@@ -45,6 +44,10 @@ cache:
         id: catalog/models/ibm/granite-4-2/models/granite-4-2-30b
         type: model
         name: Granite 4.2 30B
+        identity_note: Granite 4.2 30B is the largest 30B-class member of IBM's Granite
+          4.2 dense reasoning family, released on 25 August 2026 with Apache-2.0 weights.
+          Its card documents native 128K context and a supported long-context extension
+          to 512K.
         references:
         - type: registry
           source:

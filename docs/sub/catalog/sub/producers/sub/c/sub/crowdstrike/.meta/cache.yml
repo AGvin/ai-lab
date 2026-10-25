@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5ed58ed40eb53c87e43d17226e3668178a04cafe
+      entity.yml: gitblob:d138f9515fff48bc7190625ad0b7bf37c20431f1
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -49,6 +49,20 @@ cache:
         - type: official-site
           source:
             url: https://www.crowdstrike.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.crowdstrike.com/en-us/press-releases/crowdstrike-agentic-identity-provider-foundation-for-ai-agent-identity-security/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.crowdstrike.com/en-us/platform/next-gen-identity-security/
           purposes:
           - identification
           - research

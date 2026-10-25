@@ -2,10 +2,10 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:0bbcaf65820183eedb9fffeb30c691f0f5ef8f0a
+      entity.yml: gitblob:53da7115e76ef8861ab6c730b300b7adbfadc05b
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
     parent:
-      entity.yml: gitblob:94f0b7a50b5cb10d027766516579eed8d636c8e9
+      entity.yml: gitblob:d078da5876edc225f904121a2c30c43fc587e31e
   state:
     node:
       effective:
@@ -46,6 +46,19 @@ cache:
         id: catalog/models/alibaba/qwen/qwen3/models
         type: catalog-index
         name: Qwen3 Models
+        references:
+        - type: repository
+          source:
+            url: https://github.com/QwenLM/Qwen3
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen3-30B-A3B
+          purposes:
+          - research
+          authority: official
     aliases:
       effective:
         schema: default

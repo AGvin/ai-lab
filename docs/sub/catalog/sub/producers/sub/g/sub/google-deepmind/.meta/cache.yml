@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:383b22bd250ae7debb2052cefb8d6fb3ce035161
+      entity.yml: gitblob:3a4244a4819644bec4195d7cd52ac395687b37a6
     parent:
       entity.yml: gitblob:b7f05983a5d1c6c223967178283fa7f339514136
   state:
@@ -67,6 +67,42 @@ cache:
           authority: official
           note: Official Google announcement creating Google DeepMind as a focused
             unit combining Google Brain and DeepMind.
+        - type: repository
+          source:
+            url: https://github.com/google/flax
+          purposes:
+          - research
+          authority: official
+          note: The current Flax README identifies a dedicated Google DeepMind maintenance
+            team while stating that Flax is not an official Google product.
+        - type: repository
+          source:
+            url: https://github.com/google-deepmind/optax
+          purposes:
+          - research
+          authority: official
+          note: Optax identifies itself as a standalone library in the DeepMind JAX
+            Ecosystem.
+        - type: repository
+          source:
+            url: https://github.com/google-deepmind/mujoco_playground
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/google-deepmind/mujoco_playground/blob/v0.2.0/pyproject.toml
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/google-deepmind/dm-haiku
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/models/google/gemini
@@ -74,6 +110,24 @@ cache:
           target: catalog/models/google/gemma
         - type: part-of
           target: catalog/producers/g/google
+        - type: produces
+          target: catalog/models/google/weathernext
+        - type: produces
+          target: catalog/models/google/alphagenome
+        - type: produces
+          target: catalog/datasets/alphagenome-atlas
+        - type: produces
+          target: catalog/datasets/androidworld
+        - type: produces
+          target: catalog/models/google/veo
+        - type: produces
+          target: catalog/models/google/alphafold
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-development/flax
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-development/optax
+        - type: produces
+          target: catalog/software/physical-ai-and-robotics/mujoco-playground
     aliases:
       effective:
         schema: default

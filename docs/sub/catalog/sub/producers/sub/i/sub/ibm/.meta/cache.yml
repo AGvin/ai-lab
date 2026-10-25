@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e8c9ad820c82f12ec416e8c58dc187ea2dc1686c
+      entity.yml: gitblob:27894d2fe57c0d540399f8de1b6be8cbab3c5b46
     parent:
       entity.yml: gitblob:076b92eff3cc890acf27aaad5283d321c9fe49b0
   state:
@@ -59,6 +59,18 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://www.ibm.com/granite
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://newsroom.ibm.com/2026-09-10-ibm-and-nasa-release-open-source-ai-model-to-support-lunar-exploration
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/services/ai-management-platforms/ibm-watsonx-governance
@@ -78,6 +90,22 @@ cache:
           target: catalog/models/ibm/granite-embedding-multilingual-r2
         - type: produces
           target: catalog/models/ibm/granite-timeseries
+        - type: produces
+          target: catalog/models/ibm/granite-4-1
+        - type: produces
+          target: catalog/models/ibm/granite-4-0-nano
+        - type: produces
+          target: catalog/models/ibm/granite-speech-4-1
+        - type: produces
+          target: catalog/models/ibm/granite-switch-4-1
+        - type: produces
+          target: catalog/models/ibm/granite-docling
+        - type: produces
+          target: catalog/models/ibm/granite-embedding-english-r2
+        - type: produces
+          target: catalog/models/ibm/granite-vision-3-3
+        - type: produces
+          target: catalog/models/ibm/granite-guardian-hap
     aliases:
       effective:
         schema: default

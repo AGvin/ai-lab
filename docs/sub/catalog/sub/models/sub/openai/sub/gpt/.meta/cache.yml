@@ -2,10 +2,10 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:41283cc5a240b398f20cface906530c76551e5eb
+      entity.yml: gitblob:d1efcbb7595434212ad167100e4663bdc2527370
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
     parent:
-      entity.yml: gitblob:0998a3482a167d36bf17518f6cee61217be3b020
+      entity.yml: gitblob:3d7d9cfcd6ab81400d81e2468c33e9b2babb1ba5
   state:
     node:
       effective:
@@ -54,6 +54,18 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/guides/latest-model
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://deploymentsafety.openai.com/gpt-6-october
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/o/openai
@@ -61,6 +73,14 @@ cache:
           target: catalog/models/openai/gpt/gpt-5-6
         - type: has-member
           target: catalog/models/openai/gpt/models/gpt-6-astra
+        - type: has-member
+          target: catalog/models/openai/gpt/models/gpt-6-sol
+        - type: has-member
+          target: catalog/models/openai/gpt/models/gpt-6-luna
+        - type: has-member
+          target: catalog/models/openai/gpt/models/gpt-6-1-sol
+        identity_note: General-purpose model family; product names, reasoning modes,
+          and routing aliases are not separate GPT families.
     aliases:
       effective:
         schema: default

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:68ad38be252c42b774f05cbaf69211124114ad17
+      entity.yml: gitblob:d98b447c9cfeca42bff4a10349b52f88fe6a95d1
     parent:
-      entity.yml: gitblob:d2832a7979fe4d097b9404cc46ffd2fcc3b3eba6
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
   state:
     node:
       effective:
@@ -45,12 +45,28 @@ cache:
         id: catalog/producers/s/salesforce
         type: organization
         name: Salesforce
+        identity_note: Salesforce is the organization producing Agentforce, its agent
+          platform built on Salesforce Platform. The Agentforce product page establishes
+          this provenance; the company identity remains broader than any individual
+          agent, application or packaged workflow. Agentforce connects business data,
+          metadata and tools under the customer’s Salesforce configuration. Data 360/Data
+          Cloud, MuleSoft, Slack and other Salesforce applications remain separate
+          product surfaces. Assess subscriptions, enabled features, connector permissions
+          and the actions an agent can perform for the intended deployment; a Salesforce
+          relationship alone does not establish entitlement to every Agentforce capability.
         aliases:
         - Salesforce, Inc.
         references:
         - type: official-site
           source:
             url: https://www.salesforce.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://www.salesforce.com/platform/agentforce-platform/
           purposes:
           - identification
           - research

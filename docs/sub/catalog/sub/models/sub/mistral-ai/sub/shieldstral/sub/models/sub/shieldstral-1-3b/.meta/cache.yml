@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:265e77b6f0ff4e238f4a5539599436fa734159c3
-    parent:
-      entity.yml: gitblob:180331dc56ec4c8aca30df9bef2b861766c515d9
+      entity.yml: gitblob:934733f83581b25dca6d8f42b951ac3242b14d56
+    parent: {}
   state:
     node:
       effective:
@@ -50,16 +49,29 @@ cache:
         references:
         - type: release-notes
           source:
-            url: https://mistral.ai/news/shieldstral-1
+            url: https://mistral.ai/news/shieldstral/
           purposes:
           - identification
           - research
           authority: official
         - type: registry
           source:
-            url: https://huggingface.co/mistralai/Shieldstral-1-3B
+            url: https://huggingface.co/mistralai/Shieldstral-1.0-3B
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/shieldstral-1-0
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/resources/cookbooks/mistral-moderation-shieldstral_policy_moderation
+          purposes:
           - research
           authority: official
         relations:

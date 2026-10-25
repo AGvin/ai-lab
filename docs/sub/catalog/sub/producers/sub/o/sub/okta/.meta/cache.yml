@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:88c81398c24658d647a0fb0c7ddd371dae4cca01
+      entity.yml: gitblob:1b791e6b656fc059765e23c69b22ac406adb3f49
     parent:
       entity.yml: gitblob:b36ca5bdc58da8f3782c6a5822573937ea2cd7d2
   state:
@@ -53,9 +53,30 @@ cache:
           - identification
           - research
           authority: official
+        - type: product-page
+          source:
+            url: https://www.okta.com/products/govern-ai-agent-identity/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://help.okta.com/oie/en-us/content/topics/ai-agents/ai-agents-home.htm
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developer.okta.com/docs/guides/ai-agent-secure-third-party/main/
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/services/agent-identity-and-access/okta-for-ai-agents
+        identity_note: Okta is the producer of its represented agent identity product;
+          tenant administrators, delegated users, external agents, connected applications,
+          and their policy decisions remain separate roles.
     aliases:
       effective:
         schema: default

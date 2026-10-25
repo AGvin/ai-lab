@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a131c435ba6cd7d4259bacce110d67117d8be93d
+      entity.yml: gitblob:a7d7098094e87605652f591ee07722686fcc9b5e
     parent:
       entity.yml: gitblob:809c62e5e48565624df11ad5ab043ec1d16b9f4e
   state:
@@ -70,6 +70,55 @@ cache:
           note: NVIDIA announced on 2026-09-03 that it agreed to acquire Hugging Face
             for $12.9303 billion. Treat this as an announced/pending acquisition,
             not completed NVIDIA ownership, until closing is authoritatively confirmed.
+        - type: other
+          source:
+            url: https://huggingface.co/docs
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/docs/inference-providers/index
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/docs/inference-endpoints/index
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://ggml.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://argilla.io/blog/argilla-joins-hugggingface/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/huggingface/skills
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://huggingface.co/posts/dvilasuero/203008804842390
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/services/ai-assets/hugging-face-hub

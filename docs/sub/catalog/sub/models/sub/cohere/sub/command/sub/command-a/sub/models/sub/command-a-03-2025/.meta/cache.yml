@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:091176c0e49be3032505cb4538a6b61a29b02b71
-    parent:
-      entity.yml: gitblob:2e4bf4dbd2ba17b5a0f41b8405f7ad7b1a0bdebc
+      entity.yml: gitblob:4614134f89a0b087fe8ca5dad69e533a0fa38164
+    parent: {}
   state:
     node:
       effective:
@@ -53,9 +52,66 @@ cache:
           - identification
           - research
           authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/c4ai-command-a-03-2025
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-registry
+          source:
+            url: https://huggingface.co/api/models/CohereLabs/command-a-reasoning-08-2025?blobs=true
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-registry
+          source:
+            url: https://huggingface.co/api/models/CohereLabs/command-a-translate-08-2025?blobs=true
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/command-a-vision-07-2025
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/command-a
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://cohere.com/cohere-labs-cc-by-nc-license
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/cohere-labs-acceptable-use-policy
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/cohere/command/command-a
+        - type: produced-by
+          target: catalog/producers/c/cohere-labs
+        - type: has-derivative
+          target: catalog/models/cohere/command/command-a/models/command-a-reasoning-08-2025
+        - type: has-derivative
+          target: catalog/models/cohere/command/command-a/models/command-a-translate-08-2025
+        - type: has-derivative
+          target: catalog/models/cohere/command/command-a/models/command-a-vision-07-2025
     aliases:
       effective:
         schema: default

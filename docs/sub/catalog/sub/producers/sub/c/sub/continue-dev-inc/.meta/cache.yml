@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a9c0a9fef6b1f214c58b76e7c86adf496b4da441
+      entity.yml: gitblob:6dc6ef61998279201f274ad5d8414aaa9b62268d
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -45,6 +45,10 @@ cache:
         id: catalog/producers/c/continue-dev-inc
         type: organization
         name: Continue Dev, Inc.
+        identity_note: Continue Dev, Inc. is the original producer identity. Continue's
+          official site now reports its acquisition by Cursor; this notice does not
+          by itself establish the legal transaction structure or assignment of all
+          customer contracts.
         references:
         - type: official-site
           source:
@@ -56,6 +60,13 @@ cache:
         - type: repository
           source:
             url: https://github.com/continuedev/continue
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://continue.dev/terms-conditions/
           purposes:
           - identification
           - research

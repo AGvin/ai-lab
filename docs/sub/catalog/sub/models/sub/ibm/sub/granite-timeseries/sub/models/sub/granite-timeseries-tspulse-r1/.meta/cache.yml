@@ -2,9 +2,10 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:9562333c2f13d19977ab2bbc6754895e2f7dbb05
+      entity.yml: gitblob:e6f49ba070a0ec57ce3fa1450015e6618102c94c
+      node.yml: gitblob:7d3c984a84a47328bd695d2e6c6c001bf42d08c4
     parent:
-      entity.yml: gitblob:e21a641fd222e3693fcc21c31f99d186e5d5e639
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
   state:
     node:
       effective:
@@ -16,7 +17,7 @@ cache:
           default_locale: en_US
           locales:
           - uk_UA
-        template: catalog/models/family
+        template: catalog/models/series
       outgoing:
         schema: default
         requirements:
@@ -26,7 +27,7 @@ cache:
           default_locale: en_US
           locales:
           - uk_UA
-        template: catalog/models/family
+        template: catalog/models/series
       children:
         outgoing:
           schema: default
@@ -37,14 +38,19 @@ cache:
             default_locale: en_US
             locales:
             - uk_UA
-          template: catalog/models/family
+          template: catalog/models/series
         local: {}
     entity:
       effective:
         schema: default
         id: catalog/models/ibm/granite-timeseries/models/granite-timeseries-tspulse-r1
-        type: model
+        type: model-series
         name: Granite TimeSeries TSPulse R1
+        identity_note: 'TSPulse R1 is represented at series level because IBM releases
+          three separately pretrained variants under the same repository: hybrid-allhead
+          for anomaly detection, hybrid-dualhead for imputation/search, and block-dualhead
+          for classification. Their branch/revision selectors are not aliases and
+          are not materialized as extra catalog nodes in this checkpoint.'
         references:
         - type: registry
           source:

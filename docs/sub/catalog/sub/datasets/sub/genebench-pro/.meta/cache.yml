@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d53647ffa1623688d16b9944dd8b9266e063668f
+      entity.yml: gitblob:e04b0d626740e311ff60cc2ca3828e80a6fec112
     parent:
       entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
   state:
@@ -59,6 +59,9 @@ cache:
           purposes:
           - research
           authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/o/openai
     aliases:
       effective:
         schema: default

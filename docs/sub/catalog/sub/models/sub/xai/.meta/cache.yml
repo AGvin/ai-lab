@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:453352dbd2ac029811d0d472a50ca8a71a80d7ac
+      entity.yml: gitblob:a297dd0987e74a900179b8ee9e75fcf1b6bfdaa2
     parent:
       entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
       node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
@@ -47,19 +47,28 @@ cache:
         type: model-producer-view
         name: xAI models
         references:
-        - type: official-site
+        - type: documentation
           source:
-            url: https://x.ai/
+            url: https://docs.x.ai/developers/models
           purposes:
           - identification
           - research
           authority: official
-        - type: documentation
+        - type: official-site
           source:
-            url: https://docs.x.ai/
+            url: https://x.ai/api
           purposes:
           - research
           authority: official
+        - type: other
+          source:
+            url: https://x.ai/legal/terms-of-service
+          purposes:
+          - research
+          authority: official
+        identity_note: Producer-oriented catalog view under the retained xAI namespace;
+          current public branding is SpaceXSI and the canonical producer is SpaceXAI
+          LLC.
     aliases:
       effective:
         schema: default

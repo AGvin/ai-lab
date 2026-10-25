@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:9e8f9dcf955137ff40006f7786c777cb5f9999eb
+      entity.yml: gitblob:ade69c9f4462efa774f1e3f1576a94ef02361701
     parent:
       entity.yml: gitblob:cc9eac859b5fac0ed4b6aa1d708dd148d40d0e7e
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
@@ -56,6 +56,20 @@ cache:
           authority: official
           note: Mistral identifies Leanstral 1.5 as an open-source Lean 4 code-agent
             specialization built as part of the Mistral Small 4 family.
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/leanstral-1-5
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://docs.mistral.ai/resources/changelogs
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/mistral-ai/mistral-small

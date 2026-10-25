@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7ba4a2df19af7f4e4c846e8315ea0085323e88d0
+      entity.yml: gitblob:01f37196a37133dbf04b3e17bec486f1b4f87d9f
     parent:
-      entity.yml: gitblob:2f014c200c2282ae14ccd5407a676e2770042b54
+      entity.yml: gitblob:14d7c5336b98da3ce14bc46c931478ee37a1776d
   state:
     node:
       effective:
@@ -64,6 +64,20 @@ cache:
           authority: official
           note: Current upstream package metadata identifies bennhuang as the Chatbox
             author.
+        - type: repository
+          source:
+            url: https://github.com/chatboxai/chatbox/blob/main/package.json
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://chatboxai.app/en/help-center/feedback
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/interfaces-and-workspaces/model-clients/chatbox

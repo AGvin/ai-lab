@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:6eeff34688a7c866729e84c85cdcc06fcd0f0d91
+      entity.yml: gitblob:f299b7b17000621560af8c3c0e0c4c8b0778a109
     parent:
       entity.yml: gitblob:b1378bdd8814f49a3247d97f1015b4ffd6e46ce6
   state:
@@ -45,6 +45,24 @@ cache:
         id: catalog/software/inference-runtimes/distributed-serving/seldon-core-2
         type: software
         name: Seldon Core 2
+        identity_note: Seldon Core 2 is the v2 Seldon Core model-serving and MLOps
+          framework for deploying, managing and monitoring model workloads. It combines
+          model-server integration, Kubernetes deployment, scheduling, inference pipelines,
+          observability and model management in a distributed serving system. Core
+          2 architecture and runtime compatibility can differ from historical Core
+          v1. Current Seldon branding directs customers to TrueFoundry, whose announcement
+          states that it acquired Seldon’s business and customers. This transition
+          preserves the software’s Seldon provenance while requiring current support
+          and migration arrangements to be checked separately. TrueFoundry’s combined
+          platform is not the same software identity as the Core 2 code. The inspected
+          v2 LICENSE names Seldon Technologies Limited and uses Business Source License
+          1.1, which is not an open-source license. It permits non-production use
+          and a limited additional production grant for qualifying non-profit educational
+          institutions, excluding commercialization. Other production use requires
+          an appropriate commercial license until that version’s change terms apply.
+          The license specifies a transition to Apache 2.0 four years after each version’s
+          release; verify the exact artifact and agreement rather than inferring rights
+          from Core v1 or current marketing language.
         aliases:
         - Seldon Core v2
         references:
@@ -57,8 +75,27 @@ cache:
           authority: official
         - type: official-site
           source:
-            url: https://www.seldon.io/solutions/core/
+            url: https://www.seldon.io/
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.seldon.ai/seldon-core-2
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/SeldonIO/seldon-core/blob/v2/LICENSE
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.truefoundry.com/blog/truefoundry-seldon-unified-control-plane-for-enterprise-ai
+          purposes:
+          - identification
           - research
           authority: official
         relations:

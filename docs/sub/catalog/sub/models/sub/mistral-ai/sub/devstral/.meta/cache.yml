@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ae9c24c1d9b2a2f6b7cf93c1cc1f0c0380fba257
+      entity.yml: gitblob:e7805e5a14476c4730024798dfe7c0b4c320ed23
     parent:
-      entity.yml: gitblob:197caa1aad36286bbe020119ba37b7e29ba8dbf6
+      entity.yml: gitblob:95cd9a825d9b0958a0e79e9fd9ba4c327504aaf7
   state:
     node:
       effective:
@@ -49,6 +49,39 @@ cache:
         - type: release-notes
           source:
             url: https://mistral.ai/news/devstral-2-vibe-cli/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/devstral-2-25-12
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/devstral-small-2-25-12
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/studio/conversations/function-calling
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512
           purposes:
           - identification
           - research

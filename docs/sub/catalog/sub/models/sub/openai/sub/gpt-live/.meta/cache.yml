@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:95f3960bfa7c4f742db9a1895b44e73bb65fbdac
+      entity.yml: gitblob:66e5e29c819abc971aad5bf500571bd1403b6ca9
     parent:
-      entity.yml: gitblob:0998a3482a167d36bf17518f6cee61217be3b020
+      entity.yml: gitblob:3d7d9cfcd6ab81400d81e2468c33e9b2babb1ba5
   state:
     node:
       effective:
@@ -59,6 +59,30 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://deploymentsafety.openai.com/gpt-live
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/guides/live
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/changelog
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/guides/voice-server-controls
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/o/openai
@@ -66,6 +90,8 @@ cache:
           target: catalog/models/openai/gpt-live/models/gpt-live-1
         - type: has-member
           target: catalog/models/openai/gpt-live/models/gpt-live-1-mini
+        identity_note: Full-duplex voice-model family; delegated backend models and
+          product plans have separate identities and access conditions.
     aliases:
       effective:
         schema: default

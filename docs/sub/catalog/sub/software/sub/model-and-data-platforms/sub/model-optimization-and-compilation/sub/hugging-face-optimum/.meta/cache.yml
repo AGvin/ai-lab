@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:97793a8b71e1afadf17e847969a9739393b0bcd6
+      entity.yml: gitblob:76d6b2ed5f2d10f305d794d785d6743e0a86966b
     parent:
       entity.yml: gitblob:945b0913e6325eed67569d93e169a06cccd3de20
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -59,6 +59,12 @@ cache:
             url: https://github.com/huggingface/optimum
           purposes:
           - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/huggingface/optimum-onnx
+          purposes:
           - research
           authority: official
         relations:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3bdd003afb2c9f79839b292b6a50f60691a950a4
+      entity.yml: gitblob:da93a5d55dfd7c2e7713a24a46f05b6f259cd381
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -59,11 +59,41 @@ cache:
           purposes:
           - research
           authority: official
+        - type: official-site
+          source:
+            url: https://github.com/QwenLM
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://github.com/wan-video
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.alibabacloud.com/help/en/model-studio/what-is-model-studio
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/aliyun/alibabacloud-aiops-skills
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: part-of
           target: catalog/producers/a/alibaba-group
         - type: has-part
           target: catalog/producers/q/qwen-team
+        - type: has-part
+          target: catalog/producers/w/wan-team
         - type: produces
           target: catalog/agent-skills/collections/alibaba-cloud-skills
         - type: produces

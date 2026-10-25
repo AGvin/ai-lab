@@ -1,0 +1,95 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d663a096a977228d3fb2e3ffe1809db2dfd8ff55
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/mlperf-mobile-v6-0
+        type: dataset
+        name: MLPerf Mobile v6.0
+        identity_note: MLPerf Mobile v6.0 is MLCommons' released on-device AI inference
+          benchmark suite, including new generative-language-model tests. The June
+          2026 release uses Llama 3.2 1B Instruct, Llama 3.2 3B Instruct and Llama
+          3.1 8B Instruct with TinyMMLU and IFEval prompts for its LLM tests. These
+          are workloads within the Mobile suite, separate from desktop MLPerf Client
+          and datacenter MLPerf Inference. CPU execution and selected NPU-accelerated
+          backends have different device and software requirements. Interpret results
+          with the exact app build, workload, device/SoC, memory, thermal behavior,
+          drivers and accuracy criteria. A score from one supported path does not
+          rank all phones or imply that every iOS/Android device supports every LLM
+          test.
+        references:
+        - type: article
+          source:
+            url: https://mlcommons.org/2026/06/mlperf-mobile-v6/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/mlcommons/mobile_app_open
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mlcommons
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

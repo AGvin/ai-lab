@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:2d635d8fcd89ab057920ff0a6b2cd50c03179486
+      entity.yml: gitblob:c0a476aef06ea71b02f9b1ba38cd34d2cdf3999e
     parent:
       entity.yml: gitblob:d76916cc6208401fd85eacd3a15da3a51743c755
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -65,6 +65,18 @@ cache:
             url: https://github.com/crewAIInc/crewAI
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.crewai.com/en/concepts/agents
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.crewai.com/en/learn/human-in-the-loop
+          purposes:
           - research
           authority: official
         relations:

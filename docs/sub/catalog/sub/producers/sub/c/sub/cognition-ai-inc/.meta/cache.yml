@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:6bb21e51e3fffa6cba3266d217ea0a087e277d93
+      entity.yml: gitblob:beaf23a523e989cb01c7bfd1e28134f84058f013
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -80,9 +80,18 @@ cache:
           - research
           authority: official
           note: Official Cognition Trust Center.
+        - type: other
+          source:
+            url: https://cognition.com/blog/introducing-devin-desktop
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/services/development/agents/devin
+        - type: produces
+          target: catalog/software/agents/hybrid/devin-desktop
     aliases:
       effective:
         schema: default

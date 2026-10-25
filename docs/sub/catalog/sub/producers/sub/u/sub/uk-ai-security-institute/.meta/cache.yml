@@ -1,0 +1,103 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:73c413117f8d397d39159db61281d067a50f8ee8
+    parent:
+      entity.yml: gitblob:d577c457b3ced28fb858693d4d8100d4faec46a8
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/u/uk-ai-security-institute
+        type: organization
+        name: UK AI Security Institute
+        identity_note: The UK AI Security Institute is a UK government research organization
+          within the Department for Science, Innovation and Technology. Inspect AI's
+          official site attributes the evaluation framework's development to the institute
+          and Meridian Labs. The institute's producer role does not make evaluated
+          models or third-party benchmarks government products. An Inspect result
+          depends on its task, model, solver, scorer, tools and execution conditions;
+          it is not a general certification of model safety.
+        references:
+        - type: official-site
+          source:
+            url: https://aisi.gov.uk/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/UKGovernmentBEIS/inspect_ai
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://www.aisi.gov.uk/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://inspect.aisi.org.uk/
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/inspect-ai
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

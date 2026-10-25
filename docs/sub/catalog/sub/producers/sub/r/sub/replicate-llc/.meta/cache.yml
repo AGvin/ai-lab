@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:110e94756219a538834ad6d0c815a0682a4c97e4
+      entity.yml: gitblob:9767cf955b339a50d7d47919c5aa8a71a4bf4f87
     parent: {}
   state:
     node:
@@ -65,6 +65,14 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://replicate.com/docs
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Platform documentation.
         relations:
         - type: produces
           target: catalog/services/model-apis/replicate

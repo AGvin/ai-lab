@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ffcbcc0b96b726bc41117783c7eb2d12f45fa026
+      entity.yml: gitblob:37513ace9dc7ba86a13735625a5e15c9a99ebb3b
     parent:
-      entity.yml: gitblob:19474dbde7771ed145e8d250f35b64638d33c2f9
+      entity.yml: gitblob:998fdc17d518f5c954bd65de3c06dd5e2d72ca9e
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
   state:
     node:
@@ -46,6 +46,8 @@ cache:
         id: catalog/models/google/gemini/models/gemini-3-8-flash-cyber
         type: model
         name: Gemini 3.8 Flash Cyber
+        aliases:
+        - gemini-3.8-flash-cyber
         references:
         - type: article
           source:
@@ -54,9 +56,18 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-cyber
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/google/gemini
+        identity_note: Google's cybersecurity post-training variant of Gemini 3.8
+          Flash, served as gemini-3.8-flash-cyber in GA behind a Fairwind allowlist.
     aliases:
       effective:
         schema: default

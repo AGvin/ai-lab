@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:367e5bbd136fb75927b267e6108653a5da842042
+      entity.yml: gitblob:9fbbfb993304bcbc190269175806708543080ed5
     parent:
       entity.yml: gitblob:f31139639b2edcfd2e66f7c2e44d1eef4e9a433a
   state:
@@ -72,6 +72,9 @@ cache:
           authority: official
           note: Official announcement of the first stable production-ready A2A v1.0
             release.
+        relations:
+        - type: maintained-by
+          target: catalog/producers/a/agentic-ai-foundation
     aliases:
       effective:
         schema: default

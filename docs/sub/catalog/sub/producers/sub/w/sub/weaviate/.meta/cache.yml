@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e95b0e0ec84206756f2e339c6283b388657c2f6f
+      entity.yml: gitblob:aca24b61d6d008ca05237d7327f3e5faf465f407
     parent:
       entity.yml: gitblob:4551246272856e7f298993d1f6d92097ef2505df
   state:
@@ -45,6 +45,14 @@ cache:
         id: catalog/producers/w/weaviate
         type: organization
         name: Weaviate
+        identity_note: Weaviate is the producer organization behind Weaviate Database
+          and Weaviate Cloud. First-party deployment documentation separates self-managed
+          database installations from the managed cloud service. Database releases
+          and selected components determine software capabilities and licensing, while
+          cloud plans determine managed operations. Vectorizer and generative-model
+          integrations can add external processing and credentials. Review the complete
+          deployment and data path instead of assigning every cloud or model-provider
+          property to the database itself.
         references:
         - type: official-site
           source:
@@ -53,9 +61,17 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.weaviate.io/deploy
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/services/data-infrastructure/vector-search/weaviate-cloud
+        - type: produces
+          target: catalog/software/data-infrastructure/vector-search/weaviate
     aliases:
       effective:
         schema: default

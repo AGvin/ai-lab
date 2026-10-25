@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7ee6956ef7564aa05c0507f6eafbcbec9a6db2a0
+      entity.yml: gitblob:01b27923dc2feebeb992d4f956de01181e248017
     parent:
       entity.yml: gitblob:94df5cf52016d4c5269bb903a6a43c85fdce53b1
   state:
@@ -66,6 +66,16 @@ cache:
           - identification
           - research
           authority: official
+        - type: other
+          source:
+            url: https://mirascope.com/cloud
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: The official notice says Mirascope Cloud is discontinued while the
+            Python and TypeScript SDKs remain supported and use OpenTelemetry-compatible
+            backends.
         relations:
         - type: produced-by
           target: catalog/producers/m/mirascope-inc

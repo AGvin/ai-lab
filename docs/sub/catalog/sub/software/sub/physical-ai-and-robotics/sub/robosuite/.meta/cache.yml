@@ -1,0 +1,139 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bf0ad1648e27ddebf7cf9783a827be81f151c014
+    parent:
+      entity.yml: gitblob:8144ca876d7f835bbf1e08e3cc7283fd011392cb
+      node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/software/software
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/software/software
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/software/software
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/physical-ai-and-robotics/robosuite
+        type: software
+        name: robosuite
+        references:
+        - type: repository
+          source:
+            url: https://github.com/ARISE-Initiative/robosuite
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://robosuite.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/ARISE-Initiative/robosuite/releases/tag/v1.5.2
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/ARISE-Initiative/robosuite/blob/v1.5.2/setup.py
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/ARISE-Initiative/robosuite/blob/v1.5.2/requirements-extra.txt
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/ARISE-Initiative/robosuite/blob/v1.5.2/LICENSE
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://robosuite.ai/docs/installation.html
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://robosuite.ai/docs/modules/controllers.html
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://robosuite.ai/docs/algorithms/demonstrations.html
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/ARISE-Initiative/robosuite/blob/v1.5.2/robosuite/scripts/playback_demonstrations_from_hdf5.py
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://robosuite.ai/docs/algorithms/sim2real.html
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/arise-initiative
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

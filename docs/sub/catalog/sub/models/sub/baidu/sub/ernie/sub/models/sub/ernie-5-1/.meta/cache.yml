@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3c7e7477c3ba9775303a216cbccc0b9cad7b16ac
-    parent:
-      entity.yml: gitblob:5750a1f34c5d1f4b3366d0d36d410e5a4ee94bf1
+      entity.yml: gitblob:1d53a191db1528681d1202d6cf50fb6128cd711c
+    parent: {}
   state:
     node:
       effective:
@@ -45,6 +44,14 @@ cache:
         id: catalog/models/baidu/ernie/models/ernie-5-1
         type: model
         name: ERNIE 5.1
+        identity_note: ERNIE 5.1 is Baidu's released model described in the official
+          article dated 9 May 2026. It is derived from ERNIE 5.0 through elastic sub-network
+          extraction and additional agentic post-training, creating a distinct trained
+          model rather than a provider alias. Baidu reports approximately one-third
+          of 5.0's total parameters and one-half of its active parameters, but the
+          audited release source does not give exact absolute counts. Keep these relative
+          vendor claims, release-specific benchmarks, preview labels and Qianfan serving
+          limits correctly scoped.
         references:
         - type: article
           source:
@@ -62,6 +69,8 @@ cache:
         relations:
         - type: member-of
           target: catalog/models/baidu/ernie
+        - type: derived-from
+          target: catalog/models/baidu/ernie/models/ernie-5-0
     aliases:
       effective:
         schema: default

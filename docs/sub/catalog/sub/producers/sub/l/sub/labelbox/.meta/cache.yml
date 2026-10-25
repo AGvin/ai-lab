@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c80b994b76134a240de520ebd31bfe250751801d
+      entity.yml: gitblob:b728be1bf2baafefebc917eff7af46c120f71f56
     parent:
       entity.yml: gitblob:665e9ca01b87f5f7025e0f60f3e694be0cc71db2
   state:
@@ -59,6 +59,14 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.labelbox.com/horizon/guides/access-storage
+          purposes:
+          - research
+          authority: official
+          note: Official documentation scopes data storage and access to the selected
+            integration configuration.
         relations:
         - type: produces
           target: catalog/services/data-generation-and-curation/labelbox

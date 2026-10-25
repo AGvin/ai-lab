@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ccb8d8debbb375f7c4346bbe38bb16bfed042811
-    parent:
-      entity.yml: gitblob:71d9101b4779d12336c4024d2cceffd28b44d98d
+      entity.yml: gitblob:7835416d5e4abf12fff4a0aa935a95605033cf35
+    parent: {}
   state:
     node:
       effective:
@@ -45,6 +44,10 @@ cache:
         id: catalog/models/ibm/granite-4-2/models/granite-4-2-3b
         type: model
         name: Granite 4.2 3B
+        identity_note: Granite 4.2 3B is the compact 3B-class member of IBM's Granite
+          4.2 dense reasoning family, released on 25 August 2026 with Apache-2.0 weights.
+          Its card documents native 128K context and a supported long-context extension
+          to 512K.
         references:
         - type: registry
           source:

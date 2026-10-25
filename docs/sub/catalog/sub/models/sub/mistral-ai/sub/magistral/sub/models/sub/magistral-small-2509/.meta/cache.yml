@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:116e12a8815a94fdcaaa22d46db1a299f5bcb4b8
+      entity.yml: gitblob:6606d66e2d596cea9f4e5bccd9a34ae53b97b0b6
     parent:
-      entity.yml: gitblob:3391e87ba44d18a4256a258a1620360f9b5b7821
+      entity.yml: gitblob:61782dd99e4e40f795b5fc81b7f82c877c449155
   state:
     node:
       effective:
@@ -53,9 +53,18 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/magistral-small-1-2-25-09
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/mistral-ai/magistral
+        aliases:
+        - Magistral Small 1.2
     aliases:
       effective:
         schema: default

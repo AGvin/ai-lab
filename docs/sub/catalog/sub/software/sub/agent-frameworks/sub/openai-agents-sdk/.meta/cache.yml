@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e17047a102e5bcf301d98a11fe3c245854118408
+      entity.yml: gitblob:a527fccbf5fea4bf91378bbd7a671fe29c221a3c
     parent:
       entity.yml: gitblob:d76916cc6208401fd85eacd3a15da3a51743c755
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -52,6 +52,25 @@ cache:
             url: https://openai.github.io/openai-agents-python/
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://openai.github.io/openai-agents-js/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/openai/openai-agents-python
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/openai/openai-agents-js
+          purposes:
           - research
           authority: official
         relations:

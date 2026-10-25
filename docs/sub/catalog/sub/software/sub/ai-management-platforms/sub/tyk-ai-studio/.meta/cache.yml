@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c80d5c5878de312a15dd8cfd4fa88835a4f1eae0
+      entity.yml: gitblob:de9cb6cceac5bf05c2f0812af3ca7e404814dfa1
     parent:
       entity.yml: gitblob:46b3145ef55cdc58b939e3df8d9bfaf8f2f8fab1
   state:
@@ -60,6 +60,9 @@ cache:
           - identification
           - research
           authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/t/tyk-technologies
     aliases:
       effective:
         schema: default

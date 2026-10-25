@@ -1,0 +1,113 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:de1eaf9fd9385009b9be27a3a7d32422a0825134
+    parent:
+      entity.yml: gitblob:48d0371d56aa82c8a677141492c34d29fa7c75ca
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/alibaba/wan/wan-3-0
+        type: model-series
+        name: Wan 3.0
+        references:
+        - type: documentation
+          source:
+            url: https://modelstudio.console.alibabacloud.com/model-releases/wan3.0-video
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.alibabacloud.com/en/news/product/video-generation-model-wan30-officially-launched-nsb
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.alibabacloud.com/help/en/model-studio/wan3-video-generation-guide
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.alibabacloud.com/help/en/model-studio/wan3-video-generation-api-reference
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.alibabacloud.com/help/en/model-studio/wan3-0-video-prime
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.alibabacloud.com/blog/wan3-0-at-general-availability-capabilities-benchmarks-pricing-and-the-workflows-it-changes_603505
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/alibaba/wan
+        - type: produced-by
+          target: catalog/producers/w/wan-team
+        - type: has-member
+          target: catalog/models/alibaba/wan/wan-3-0/models/wan3-0-video
+        - type: has-member
+          target: catalog/models/alibaba/wan/wan-3-0/models/wan3-0-video-prime
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

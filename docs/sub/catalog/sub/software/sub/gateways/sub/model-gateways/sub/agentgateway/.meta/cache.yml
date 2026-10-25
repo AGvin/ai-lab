@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:35d9820f2bab55b9fb798e4df76c48ce33229c03
+      entity.yml: gitblob:8af80d2d648b0f74e143670d1da69b06404df2b6
     parent:
       entity.yml: gitblob:08305b000b283f9be05ea5e2775c0f31d43e5ac1
   state:
@@ -68,7 +68,7 @@ cache:
           purposes:
           - research
           authority: official
-          note: Current 1.5.x documentation identifies agentgateway as an open-source
+          note: Official standalone documentation identifies agentgateway as an open-source
             cloud-native gateway control plane and proxy data plane for HTTP, gRPC,
             LLM, MCP, and A2A traffic.
         relations:

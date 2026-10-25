@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f644887fbca41980dde322d39dee889089b5cfba
+      entity.yml: gitblob:f83afcf0982af7a27baa4099a63bcb0192d179e0
     parent:
-      entity.yml: gitblob:dc6a98cbe777f8755184e30e7febc26440b6793d
+      entity.yml: gitblob:a5aa3a056ccd0e0e14d40b977114f33bb4ca66c0
   state:
     node:
       effective:
@@ -51,6 +51,19 @@ cache:
             url: https://huggingface.co/mistralai/Voxtral-4B-TTS-2603
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/voxtral-tts-26-03
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/studio/audio/text_to_speech
+          purposes:
           - research
           authority: official
         relations:

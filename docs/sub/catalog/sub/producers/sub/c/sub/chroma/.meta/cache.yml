@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ac1e758197e5925d51cf2a6704aa19a960dfbba2
+      entity.yml: gitblob:4b80941bf4e0ace35e11df97dbcfbf7ee5ebcf11
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -45,6 +45,8 @@ cache:
         id: catalog/producers/c/chroma
         type: organization
         name: Chroma
+        aliases:
+        - Chroma Inc.
         references:
         - type: official-site
           source:
@@ -53,9 +55,32 @@ cache:
           - identification
           - research
           authority: official
+        - type: other
+          source:
+            url: https://www.trychroma.com/terms
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.trychroma.com/docs/overview/oss
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.trychroma.com/cloud/getting-started
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/services/data-infrastructure/vector-search/chroma-cloud
+        - type: produces
+          target: catalog/software/data-infrastructure/vector-search/chroma
     aliases:
       effective:
         schema: default

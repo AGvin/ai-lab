@@ -1,0 +1,100 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:e3dcdab8d83e33048fbe330640b406ef418c0938
+    parent:
+      entity.yml: gitblob:5e848f769005e6f901786fd212d8c9d8ccc468b3
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/n/neon
+        type: organization
+        name: Neon
+        references:
+        - type: official-site
+          source:
+            url: https://neon.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/neondatabase/agent-skills
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://neon.com/platform-terms
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://neon.com/about-us
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/agent-skills/collections/neon-agent-skills
+        identity_note: Neon is the publisher/brand represented by its Agent Skills
+          collection; the Neon platform schedule identifies Databricks, Inc. as contracting
+          parent of Neon, LLC, separately from collection licensing and deployment.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

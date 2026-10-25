@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:644d8474fbd709a05a6561d121550b716ff77379
+      entity.yml: gitblob:03e53d54c09451a1663ba9d3db274f24ba8642e4
     parent:
-      entity.yml: gitblob:e4d2e60215a30542044c1eac8d6003cafd6fa06a
+      entity.yml: gitblob:961d1f77b8d1dcb34b22828ef973c418964c674e
   state:
     node:
       effective:
@@ -72,6 +72,22 @@ cache:
           target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano-omni
         - type: has-member
           target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-lightning
+        - type: has-member
+          target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-super-vl
+        - type: has-member
+          target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-super-vl-base
+        - type: has-member
+          target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-bolt
+        - type: has-member
+          target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano-base
+        - type: has-member
+          target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-super-base
+        - type: has-member
+          target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-ultra-base
+        - type: has-member
+          target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-lightning-base
+        - type: has-member
+          target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-ultra-genrm
     aliases:
       effective:
         schema: default

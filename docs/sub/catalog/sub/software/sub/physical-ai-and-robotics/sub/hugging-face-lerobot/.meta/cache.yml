@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e048f27d2138db83507940fb705c8b9b34f96410
+      entity.yml: gitblob:090324e56e01a924d216feee136e4b022aee7708
     parent:
       entity.yml: gitblob:8144ca876d7f835bbf1e08e3cc7283fd011392cb
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -59,6 +59,12 @@ cache:
             url: https://github.com/huggingface/lerobot
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/docs/lerobot/main/installation
+          purposes:
           - research
           authority: official
         relations:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:17a4bff390336d7164a39d7d392a98609ee43f3b
+      entity.yml: gitblob:06e38609a2cddf82cd24be7678c8d4cd59415aa3
     parent:
       entity.yml: gitblob:b7f05983a5d1c6c223967178283fa7f339514136
   state:
@@ -49,6 +49,20 @@ cache:
         - type: documentation
           source:
             url: https://genesis-world.readthedocs.io/en/latest/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/Genesis-Embodied-AI/genesis-world
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://genesis-world.readthedocs.io/en/latest/user_guide/overview/what_is_genesis.html
           purposes:
           - identification
           - research

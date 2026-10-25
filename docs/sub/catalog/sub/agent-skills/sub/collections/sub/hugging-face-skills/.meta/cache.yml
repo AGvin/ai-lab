@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:6f467a5970cc26c19f44f78035a8dc4bce938712
+      entity.yml: gitblob:51fa0d5bce74034a87eaf2105c7c76368d06ee5c
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -54,6 +54,15 @@ cache:
           - identification
           - research
           authority: official
+        - type: article
+          source:
+            url: https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents/
+          purposes:
+          - research
+          authority: independent
+          note: AWS first-party implementation article documenting six Hugging Face
+            Skills used for production SageMaker deployment workflows at a pinned
+            Hugging Face Skills revision.
         relations:
         - type: produced-by
           target: catalog/producers/h/hugging-face-inc

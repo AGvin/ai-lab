@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:9a6a175977796dec31936736f93b11d5e476b2f4
+      entity.yml: gitblob:43edc3c11f807d4cb1f8f607a2b1f98a4f2c077f
     parent:
       entity.yml: gitblob:e875948a0a0ac5c0f5e7b8d02eb76165bfa9985a
   state:
@@ -79,6 +79,15 @@ cache:
           authority: official
           note: First-party sunset notice records the July 29, 2026 code freeze, August
             10 repository archival, and August 31, 2026 EOL milestone.
+        - type: repository
+          source:
+            url: https://github.com/FlowiseAI/Flowise/blob/main/LICENSE.md
+          purposes:
+          - research
+          authority: official
+          note: The root license excludes enterprise and explicitly marked files under
+            a commercial license and preserves third-party licenses; the remaining
+            code is Apache 2.0.
         relations:
         - type: produced-by
           target: catalog/producers/f/flowiseai-inc

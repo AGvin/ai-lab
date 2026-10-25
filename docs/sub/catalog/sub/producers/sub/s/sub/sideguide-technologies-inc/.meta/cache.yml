@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:694b6fb97d35a742b1b6f11cb3213e0371677b07
+      entity.yml: gitblob:e49addbc9d68fd2de5ff38c202904cd7becc6cc5
     parent:
-      entity.yml: gitblob:d2832a7979fe4d097b9404cc46ffd2fcc3b3eba6
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
   state:
     node:
       effective:
@@ -45,6 +45,16 @@ cache:
         id: catalog/producers/s/sideguide-technologies-inc
         type: organization
         name: SideGuide Technologies, Inc.
+        identity_note: SideGuide Technologies, Inc. is the Delaware corporation doing
+          business as Firecrawl, explicitly named in Firecrawl’s October 7, 2026 service
+          agreement. It is the operating organization for the represented Firecrawl
+          web-data service. Firecrawl’s hosted API converts web content into data
+          for applications. The service agreement, account credentials, permitted-use
+          rules and third-party content rights govern hosted use. An API capability
+          does not grant permission to collect every source website’s content, and
+          hosted subscriptions are separate from any source-code distribution or self-hosted
+          deployment. Determine which URLs and data may be processed and who controls
+          retention before connecting production workflows.
         aliases:
         - Firecrawl
         references:
@@ -58,6 +68,13 @@ cache:
         - type: terms-of-service
           source:
             url: https://www.firecrawl.dev/terms-of-service
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.firecrawl.dev/
           purposes:
           - identification
           - research

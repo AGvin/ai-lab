@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:6d2e120aba6ec271841c2b46373c19549519f085
+      entity.yml: gitblob:7c194d132f428c224f49f6a9c749af8adfcf4dc2
     parent:
-      entity.yml: gitblob:197caa1aad36286bbe020119ba37b7e29ba8dbf6
+      entity.yml: gitblob:95cd9a825d9b0958a0e79e9fd9ba4c327504aaf7
   state:
     node:
       effective:
@@ -53,11 +53,40 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/mistral-large-3-25-12
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/mistral-large-4-0
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://docs.mistral.ai/resources/changelogs
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/inference/model-lifecycle
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/m/mistral-ai
         - type: has-member
           target: catalog/models/mistral-ai/mistral-large/models/mistral-large-3-675b-instruct-2512
+        - type: has-member
+          target: catalog/models/mistral-ai/mistral-large/models/mistral-large-4
     aliases:
       effective:
         schema: default

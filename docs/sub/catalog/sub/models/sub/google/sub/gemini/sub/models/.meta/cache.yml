@@ -2,10 +2,10 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:19474dbde7771ed145e8d250f35b64638d33c2f9
+      entity.yml: gitblob:998fdc17d518f5c954bd65de3c06dd5e2d72ca9e
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
     parent:
-      entity.yml: gitblob:5daaa6f2f131a00b978743cdd4e5e75d943a660b
+      entity.yml: gitblob:c228ddedd4bbeed4042fcc4bc96c05e67dcd4912
   state:
     node:
       effective:
@@ -46,6 +46,23 @@ cache:
         id: catalog/models/google/gemini/models
         type: catalog-index
         name: Gemini Models
+        references:
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemini-api/docs/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemini-api/docs/deprecations
+          purposes:
+          - identification
+          - research
+          authority: official
+        identity_note: Navigation index of concrete Gemini model identities, including
+          released historical identities; it is not a trained model or a serving endpoint.
     aliases:
       effective:
         schema: default

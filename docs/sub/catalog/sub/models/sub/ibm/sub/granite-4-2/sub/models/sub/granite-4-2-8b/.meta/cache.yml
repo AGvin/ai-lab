@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:4bff0d3714ccb0f15b2e8b638c9d3b1238525bc9
-    parent:
-      entity.yml: gitblob:71d9101b4779d12336c4024d2cceffd28b44d98d
+      entity.yml: gitblob:278c351f8f7f5e6ac20cbd77be845ed794953b16
+    parent: {}
   state:
     node:
       effective:
@@ -45,6 +44,10 @@ cache:
         id: catalog/models/ibm/granite-4-2/models/granite-4-2-8b
         type: model
         name: Granite 4.2 8B
+        identity_note: Granite 4.2 8B is the mid-size 8B-class member of IBM's Granite
+          4.2 dense reasoning family, released on 25 August 2026 with Apache-2.0 weights.
+          Its card documents native 128K context and a supported long-context extension
+          to 512K.
         references:
         - type: registry
           source:

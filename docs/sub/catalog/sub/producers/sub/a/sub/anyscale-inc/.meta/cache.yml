@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e67cbc68385c120d593a3a606722fdfad1d14f6d
+      entity.yml: gitblob:27089504b8e04eceae5287405156422ce5eb0974
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -71,6 +71,13 @@ cache:
           authority: official
           note: First-party Anyscale record of the 2020 introduction of Ray.Serve
             by Simon Mo of Anyscale.
+        - type: article
+          source:
+            url: https://pytorch.org/blog/pytorch-foundation-welcomes-ray-to-deliver-a-unified-open-source-ai-compute-stack/
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/inference-runtimes/distributed-serving/ray-serve

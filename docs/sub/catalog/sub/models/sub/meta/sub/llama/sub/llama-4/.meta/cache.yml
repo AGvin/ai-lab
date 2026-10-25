@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:06ae89518ba38d99a48cebfa2e018891fbc36f6f
+      entity.yml: gitblob:6494316433e453febd8d30d6afc46b5e5ad3447b
     parent:
       entity.yml: gitblob:27e1314c617a652130bd82be9c9b51f250526391
   state:
@@ -66,8 +66,6 @@ cache:
           target: catalog/models/meta/llama/llama-4/models/scout
         - type: has-member
           target: catalog/models/meta/llama/llama-4/models/maverick
-        - type: has-member
-          target: catalog/models/meta/llama/llama-4/models/behemoth
     aliases:
       effective:
         schema: default

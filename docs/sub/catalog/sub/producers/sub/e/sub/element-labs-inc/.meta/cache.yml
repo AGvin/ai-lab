@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:4f6e95040c6febc25dad60d707d45256f67ff70b
+      entity.yml: gitblob:9bcc001f50c2222a107fc3d7eb8080c9722982df
     parent:
       entity.yml: gitblob:84f5c924f886554c9717fb6d41116903ae28851e
   state:
@@ -45,6 +45,8 @@ cache:
         id: catalog/producers/e/element-labs-inc
         type: organization
         name: Element Labs, Inc.
+        identity_note: Company behind LM Studio; distinct from Elementl, Inc., which
+          does business as Dagster Labs.
         references:
         - type: official-site
           source:
@@ -61,6 +63,14 @@ cache:
           - research
           authority: official
           note: Official LM Studio Desktop App Terms identifying Element Labs, Inc.
+        - type: official-site
+          source:
+            url: https://elementlabs.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Company website identifies LM Studio as its product.
         relations:
         - type: produces
           target: catalog/software/inference-runtimes/integrated-platforms/lm-studio

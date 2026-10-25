@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:047856f73ecbaa4c773bc46132399160ab64d592
-    parent:
-      entity.yml: gitblob:2e4bf4dbd2ba17b5a0f41b8405f7ad7b1a0bdebc
+      entity.yml: gitblob:fc53fd66b5fcc7e41afcb5a78acb7d7a664fd787
+    parent: {}
   state:
     node:
       effective:
@@ -59,9 +58,55 @@ cache:
           purposes:
           - research
           authority: official
+        - type: model-card
+          source:
+            url: https://huggingface.co/CohereLabs/command-a-translate-08-2025
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: model-registry
+          source:
+            url: https://huggingface.co/api/models/CohereLabs/command-a-translate-08-2025?blobs=true
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/north-small-translate-1.0
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://cohere.com/cohere-labs-cc-by-nc-license
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/cohere-labs-acceptable-use-policy
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/cohere/command/command-a
+        - type: produced-by
+          target: catalog/producers/c/cohere-labs
+        - type: derived-from
+          target: catalog/models/cohere/command/command-a/models/command-a-03-2025
     aliases:
       effective:
         schema: default

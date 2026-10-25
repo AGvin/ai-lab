@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ed6e3b5591bb3b836c68c08df7f4cf74b8e11f93
+      entity.yml: gitblob:a6c227d80876ff8b975376bb1cc450d1ed839edd
     parent:
       entity.yml: gitblob:08305b000b283f9be05ea5e2775c0f31d43e5ac1
   state:
@@ -53,6 +53,8 @@ cache:
           - identification
           - research
           authority: official
+          note: The official site states that TensorZero remains on GitHub but is
+            no longer maintained, observed October 17, 2026.
         - type: repository
           source:
             url: https://github.com/tensorzero/tensorzero
@@ -60,6 +62,19 @@ cache:
           - identification
           - research
           authority: official
+          note: The first-party repository was archived when checked on October 17,
+            2026.
+        - type: terms-of-service
+          source:
+            url: https://www.tensorzero.com/terms/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: First-party enterprise terms identify TensorZero, Inc.
+        relations:
+        - type: produced-by
+          target: catalog/producers/t/tensorzero-inc
     aliases:
       effective:
         schema: default

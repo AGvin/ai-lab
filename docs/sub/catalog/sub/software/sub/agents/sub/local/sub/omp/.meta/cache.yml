@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1ed2ddf984fdca3a469709412661169ef99f1567
+      entity.yml: gitblob:37c5979404a4cbe9a72bdd4548d70599bdb46cd9
     parent:
       entity.yml: gitblob:0c958ac9b06255323dd6f40493fd9f05736b939d
   state:
@@ -65,6 +65,8 @@ cache:
         relations:
         - type: produced-by
           target: catalog/producers/c/can-boluk
+        - type: maintained-by
+          target: catalog/producers/s/stencil-labs
         - type: derived-from
           target: catalog/software/agents/local/pi
     aliases:

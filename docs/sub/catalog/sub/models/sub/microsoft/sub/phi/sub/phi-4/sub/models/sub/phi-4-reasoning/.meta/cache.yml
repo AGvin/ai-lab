@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:873384a960a88ca7d1f8baf60e51d1a56e6d10d1
+      entity.yml: gitblob:bcf7731a169b76ab76a1785b3ffe3f016e28d826
     parent:
       entity.yml: gitblob:672931e2545641ae2c4a9d46cfc8ee7bd9730562
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
@@ -57,6 +57,10 @@ cache:
         relations:
         - type: member-of
           target: catalog/models/microsoft/phi/phi-4
+        - type: derived-from
+          target: catalog/models/microsoft/phi/phi-4/models/phi-4
+        - type: has-derivative
+          target: catalog/models/microsoft/phi/phi-4/models/phi-4-reasoning-vision-15b
     aliases:
       effective:
         schema: default

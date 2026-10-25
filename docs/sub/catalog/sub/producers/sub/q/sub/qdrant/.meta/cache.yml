@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d10a74bb825f1b5c012a153bca78cd88de180de9
+      entity.yml: gitblob:3c02340adca1feab5d6202c06c378cbd3779074b
     parent:
       entity.yml: gitblob:6907e20773222c3926bc2ca6714631589c406770
   state:
@@ -53,6 +53,30 @@ cache:
           - identification
           - research
           authority: official
+        - type: legal-notice
+          source:
+            url: https://qdrant.tech/legal/impressum/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Company imprint.
+        - type: documentation
+          source:
+            url: https://qdrant.tech/documentation/cloud/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Qdrant Cloud.
+        - type: repository
+          source:
+            url: https://github.com/qdrant/qdrant
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Engine repository.
         relations:
         - type: produces
           target: catalog/services/data-infrastructure/vector-search/qdrant-managed-cloud

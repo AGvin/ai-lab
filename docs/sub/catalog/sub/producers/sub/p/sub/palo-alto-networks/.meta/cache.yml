@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a89f4e62aeee7dad58c3bc5e1030817d5dc0ed89
+      entity.yml: gitblob:b950e36fdbb6369b4f3b39b87a056754fa61ea39
     parent:
       entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
   state:
@@ -72,6 +72,14 @@ cache:
           authority: official
           note: First-party Prisma AIRS AI Gateway GA announcement documenting integration
             of Portkey technology into the current Palo Alto Networks service surface.
+        - type: repository
+          source:
+            url: https://github.com/Portkey-AI/gateway
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Gateway repository.
         relations:
         - type: owns
           target: catalog/producers/p/portkey-inc

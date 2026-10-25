@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a8727dd5a3bd68b7c0051aee77fa742f42e5bfe2
+      entity.yml: gitblob:6e1847528b1ff21f6a611249f79a09c2abf807bc
     parent:
       entity.yml: gitblob:84f5c924f886554c9717fb6d41116903ae28851e
   state:
@@ -60,6 +60,13 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.e2b.dev/
+          purposes:
+          - research
+          authority: official
+          note: Sandbox service and deployment responsibility boundaries.
         relations:
         - type: produces
           target: catalog/services/infrastructure/e2b

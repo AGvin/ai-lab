@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3f2d07417577a11cb7173a36baec77059a917d30
+      entity.yml: gitblob:34219edb3e7b2d48d19af829e1c1b8c74b401775
     parent:
       entity.yml: gitblob:46b91081ab3e21420c7289bb28e30b3d82f867a5
   state:
@@ -45,6 +45,8 @@ cache:
         id: catalog/producers/d/daniel-avila
         type: individual
         name: Daniel Avila
+        identity_note: Individual publisher under davila7 and maintainer of Claude
+          Code Templates; distinct from LibreChat founder Danny Avila (danny-avila).
         references:
         - type: other
           source:
@@ -61,6 +63,14 @@ cache:
           authority: official
           note: The project repository identifies Daniel Avila as the maintainer through
             its security policy and links the davila7 profile as the maintainer identity.
+        - type: documentation
+          source:
+            url: https://github.com/davila7/claude-code-templates/blob/main/SECURITY.md
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: The project explicitly names Daniel Avila as maintainer.
         relations:
         - type: produces
           target: catalog/services/ai-assets/claude-code-templates

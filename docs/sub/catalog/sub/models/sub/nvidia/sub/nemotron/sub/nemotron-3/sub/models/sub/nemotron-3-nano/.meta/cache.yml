@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:750d0916d44b93ce6341b5a99e54c0eddd554eca
+      entity.yml: gitblob:1f825326c8dd28fa7d31ec5b490f642fc570a606
     parent:
-      entity.yml: gitblob:644d8474fbd709a05a6561d121550b716ff77379
+      entity.yml: gitblob:03e53d54c09451a1663ba9d3db274f24ba8642e4
   state:
     node:
       effective:
@@ -59,9 +59,18 @@ cache:
           purposes:
           - research
           authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/nvidia/nemotron/nemotron-3
+        - type: has-derivative
+          target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano-omni
     aliases:
       effective:
         schema: default

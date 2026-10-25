@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3e8815ce070e8cf1e94c6f0f66ca6c07f15aa0d1
+      entity.yml: gitblob:477cb8e2ada1f7dcf91e1e6b737ec3bc66c461a3
     parent:
       entity.yml: gitblob:46b91081ab3e21420c7289bb28e30b3d82f867a5
   state:
@@ -53,6 +53,14 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://www.domesystems.ai/solutions
+          purposes:
+          - research
+          authority: official
+          note: Dome distinguishes platform controls from customer-owned agents, tools,
+            models, and data.
         relations:
         - type: produces
           target: catalog/services/ai-management-platforms/dome-agent-operations-platform

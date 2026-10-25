@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:db185e72fc1b9924cfc48151e5bc06b4e2d25586
+      entity.yml: gitblob:74179164686a547dda9043df3057db184768df2c
     parent:
       entity.yml: gitblob:08305b000b283f9be05ea5e2775c0f31d43e5ac1
   state:
@@ -45,6 +45,10 @@ cache:
         id: catalog/software/gateways/model-gateways/helicone
         type: software
         name: Helicone
+        identity_note: The March 3, 2026 acquisition and maintenance announcement
+          is historical. The current official site states that Helicone is no longer
+          part of Mintlify, with details forthcoming; that notice does not specify
+          current legal ownership or maintenance commitments.
         references:
         - type: documentation
           source:
@@ -66,7 +70,29 @@ cache:
           purposes:
           - research
           authority: official
-          note: Official 2026 acquisition and maintenance-mode lifecycle announcement.
+          note: Historical March 3, 2026 acquisition and maintenance-mode announcement;
+            the current site separately states that Helicone is no longer part of
+            Mintlify.
+        - type: terms-of-service
+          source:
+            url: https://www.helicone.ai/terms
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: First-party terms establish Helicone, Inc. as the direct producer
+            company; the acquisition announcement is separate from this historical
+            attribution.
+        - type: official-site
+          source:
+            url: https://www.helicone.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/h/helicone-inc
     aliases:
       effective:
         schema: default

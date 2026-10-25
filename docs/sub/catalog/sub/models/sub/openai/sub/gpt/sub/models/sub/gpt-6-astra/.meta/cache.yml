@@ -2,10 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:cdf6cc9d1b956b58b0c5c90597bbc589eca13688
-    parent:
-      entity.yml: gitblob:41283cc5a240b398f20cface906530c76551e5eb
-      node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
+      entity.yml: gitblob:dc3b70b640bb5baa96379398ad868545482b33eb
+    parent: {}
   state:
     node:
       effective:
@@ -61,9 +59,23 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/changelog
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/guides/latest-model
+          purposes:
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/openai/gpt
+        identity_note: Concrete model associated with the gpt-6-astra API identifier;
+          reasoning settings and dated product deployments remain separately scoped.
     aliases:
       effective:
         schema: default

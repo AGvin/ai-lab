@@ -2,10 +2,10 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d744ffb19232f84001ccae99c761e423a37fe542
+      entity.yml: gitblob:c13d4923a97cb6d76d24962488a82f85bcbc59f1
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
     parent:
-      entity.yml: gitblob:463eaeadbeebd5bdfc21fb90c01cc50ecf7eca4b
+      entity.yml: gitblob:bc3a2fe70f56bfba24fca2b874baca4df636a847
   state:
     node:
       effective:
@@ -46,6 +46,18 @@ cache:
         id: catalog/models/davidau/qwen3-derived/models
         type: catalog-index
         name: DavidAU Qwen3-Derived Model Releases
+        identity_note: This catalog index lists the represented concrete learned model
+          in the DavidAU Qwen3-derived branch. The Xiaolong/Josiefied merge is the
+          model identity. Its GGUF and other conversions belong to distribution or
+          artifact records when they preserve that learned identity.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF
+          purposes:
+          - identification
+          - research
+          authority: official
     aliases:
       effective:
         schema: default

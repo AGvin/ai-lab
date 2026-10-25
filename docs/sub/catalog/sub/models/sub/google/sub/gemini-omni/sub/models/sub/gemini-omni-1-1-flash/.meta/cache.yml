@@ -2,9 +2,8 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7a04577a0c58236b257951416f609703ade53f4a
-    parent:
-      entity.yml: gitblob:0ef46b985700b37d3b0b11222105260e8a0cc6fe
+      entity.yml: gitblob:f8215eeaf634f94c4f8f22f763100ebfbd7c5da0
+    parent: {}
   state:
     node:
       effective:
@@ -45,6 +44,8 @@ cache:
         id: catalog/models/google/gemini-omni/models/gemini-omni-1-1-flash
         type: model
         name: Gemini Omni 1.1 Flash
+        aliases:
+        - gemini-omni-1.1-flash
         references:
         - type: release-notes
           source:
@@ -60,9 +61,33 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemini-api/docs/models/gemini-omni-flash
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemini-api/docs/deprecations
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://deepmind.google/models/model-cards/gemini-omni-flash/
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/google/gemini-omni
+        identity_note: Stable Gemini Omni model served as gemini-omni-1.1-flash for
+          video generation and conversational editing; the older gemini-omni-flash-preview
+          is a separate historical serving route.
     aliases:
       effective:
         schema: default

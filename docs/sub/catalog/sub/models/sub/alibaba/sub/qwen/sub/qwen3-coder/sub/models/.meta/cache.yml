@@ -2,10 +2,10 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:2fc6b11d1b979f5bdd92cae7e84610093de2673d
+      entity.yml: gitblob:ecfbdcd57292cadb52a53bd6b1421e2b3fabd1f5
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
     parent:
-      entity.yml: gitblob:c9a9e6137748275e4c7b2e4d8cef0a537ad9170c
+      entity.yml: gitblob:3c47abbed0d40b1bb075055587be174c0c06b415
   state:
     node:
       effective:
@@ -46,6 +46,19 @@ cache:
         id: catalog/models/alibaba/qwen/qwen3-coder/models
         type: catalog-index
         name: Qwen3-Coder Models
+        references:
+        - type: repository
+          source:
+            url: https://github.com/QwenLM/Qwen3-Coder
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
+          purposes:
+          - research
+          authority: official
     aliases:
       effective:
         schema: default

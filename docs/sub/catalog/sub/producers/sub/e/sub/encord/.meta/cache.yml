@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d8db81e99b89e22a1450116785317d14c6fddc27
+      entity.yml: gitblob:f39e081898989d1026f22d974f925f49edb65fa8
     parent:
       entity.yml: gitblob:84f5c924f886554c9717fb6d41116903ae28851e
   state:
@@ -53,6 +53,14 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.encord.com/solutions-documentation/applied-ai/data-lifecycle
+          purposes:
+          - research
+          authority: official
+          note: Platform role across customer data, annotation, and model-assisted
+            workflows.
         relations:
         - type: produces
           target: catalog/services/data-generation-and-curation/encord

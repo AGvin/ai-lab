@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ce68cd1b217e35a32097847bbe5ae578bf3422c1
+      entity.yml: gitblob:649d72714d8da70392de6b26ec8982fb96101737
     parent:
-      entity.yml: gitblob:d2832a7979fe4d097b9404cc46ffd2fcc3b3eba6
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
   state:
     node:
       effective:
@@ -45,6 +45,16 @@ cache:
         id: catalog/producers/s/solo-io
         type: organization
         name: Solo.io
+        identity_note: Solo.io is the original producer of agentgateway. Solo’s August
+          2025 announcement documents its donation to the Linux Foundation, and the
+          project’s June 2026 announcement establishes current Agentic AI Foundation
+          stewardship. The original producer relationship and current foundation maintenance
+          describe different roles. Solo Enterprise for agentgateway and other Solo
+          products have their own support and commercial conditions; they are not
+          interchangeable with the independently governed open-source project. Review
+          the chosen distribution, upstream license, authentication policies and provider
+          or tool credentials for a deployment. Donation does not transfer authorship
+          of connected agents, models or services to Solo.
         references:
         - type: official-site
           source:
@@ -62,6 +72,20 @@ cache:
           authority: official
           note: Solo.io documents that it created agentgateway and contributed the
             project to the Linux Foundation in 2025.
+        - type: article
+          source:
+            url: https://agentgateway.dev/blog/2026-06-04-agentgateway-joins-aaif/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/agentgateway/agentgateway
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/gateways/model-gateways/agentgateway

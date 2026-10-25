@@ -1,0 +1,82 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:fb00581b552e36832986e1e65107cb98e5b55089
+    parent:
+      entity.yml: gitblob:9d414650896a40eb99154130f332b5eaf5a600af
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-flash-v1-2
+        type: model
+        name: PPLX Decider Flash V1.2
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/perplexity-ai/pplx-decider
+        identity_note: PPLX Decider Flash V1.2 is Perplexity's smaller released decision
+          checkpoint using the same joint request protocol as V1.2. The first-party
+          card identifies Qwen3.5-4B as its base and says it is distilled from the
+          larger 27B decision models; the checkpoint is Apache-2.0. Its GGUF repository
+          packages the same trained identity rather than defining another model.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

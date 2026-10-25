@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1279a0d2ba8a17597b45ddcff73463e64debe5cd
+      entity.yml: gitblob:076f6ffbd3e24166169f88fb3d103386025fefcb
     parent:
-      entity.yml: gitblob:66490c7fa92bae0d7c4937fda7c9dd1c8d87ecb2
+      entity.yml: gitblob:6d62eb59c6d11d346c88480b8108ce30877941cb
   state:
     node:
       effective:
@@ -45,6 +45,13 @@ cache:
         id: catalog/models/ai21-labs/jamba2
         type: model-family
         name: Jamba2
+        identity_note: Jamba2 is AI21 Labs' model family introduced on 8 January 2026.
+          It groups the independently identified 3B and Mini trained models; family
+          membership does not make them interchangeable artifacts or hosted endpoints.
+          Use concrete member facts for size, architecture, context and licensing.
+          Downloads and provider aliases are separate access surfaces. AI21's enterprise
+          reliability and benchmark positioning requires task-specific evaluation
+          and does not certify an agent's actions.
         references:
         - type: article
           source:
