@@ -10,21 +10,21 @@ entity:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024
     purposes:
     - identification
     - research
     authority: official
-  - type: model-registry
+  - type: registry
     source:
       url: https://huggingface.co/api/models/CohereLabs/c4ai-command-r7b-12-2024?blobs=true
     purposes:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/aya-vision-8b
     purposes:
@@ -38,7 +38,7 @@ entity:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025
     purposes:
