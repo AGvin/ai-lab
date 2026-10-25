@@ -23,21 +23,21 @@ entity:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/c4ai-command-r-08-2024
     purposes:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024
     purposes:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024
     purposes:
