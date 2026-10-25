@@ -3,8 +3,7 @@ cache:
   fingerprints:
     self:
       entity.yml: gitblob:2b06e8e52aa5151cbc575a13ac6d2f43fc798333
-    parent:
-      entity.yml: gitblob:961d1f77b8d1dcb34b22828ef973c418964c674e
+    parent: {}
   state:
     node:
       effective:
