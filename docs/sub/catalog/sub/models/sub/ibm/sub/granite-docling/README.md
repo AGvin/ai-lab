@@ -10,3 +10,9 @@ The trained model weights are distinct from the Docling software pipeline and ru
 
 - [Granite Docling 258M](./sub/models/sub/granite-docling-258m/)
 - [Official IBM checkpoint](https://huggingface.co/ibm-granite/granite-docling-258M)
+
+## Deployment validation
+
+Pin the exact checkpoint revision and compatible runtime version. Measure memory, latency and document-conversion quality on representative inputs. Check runtime-specific artifacts and hosted-service terms separately from the downloaded-weight license.
+
+Published benchmark results are producer claims; this page does not establish independent benchmark reproduction or deployed performance.
