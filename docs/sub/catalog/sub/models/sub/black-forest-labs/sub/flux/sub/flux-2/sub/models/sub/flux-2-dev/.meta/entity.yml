@@ -3,7 +3,7 @@ entity:
   type: model
   name: FLUX.2 [dev]
   references:
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/black-forest-labs/FLUX.2-dev
     purposes:
