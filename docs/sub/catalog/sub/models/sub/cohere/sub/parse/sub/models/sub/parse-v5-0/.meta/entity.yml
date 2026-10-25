@@ -16,7 +16,7 @@ entity:
     purposes:
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct
     purposes:
