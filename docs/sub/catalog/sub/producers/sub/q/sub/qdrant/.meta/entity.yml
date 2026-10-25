@@ -10,7 +10,7 @@ entity:
     - identification
     - research
     authority: official
-  - type: legal-notice
+  - type: other
     source:
       url: https://qdrant.tech/legal/impressum/
     purposes:
