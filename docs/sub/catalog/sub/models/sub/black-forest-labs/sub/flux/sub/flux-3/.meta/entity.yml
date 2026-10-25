@@ -24,7 +24,7 @@ entity:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/black-forest-labs/flux-3-action-base
     purposes:
@@ -38,14 +38,14 @@ entity:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
     purposes:
     - identification
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/black-forest-labs/flux-3-image-klein
     purposes:
