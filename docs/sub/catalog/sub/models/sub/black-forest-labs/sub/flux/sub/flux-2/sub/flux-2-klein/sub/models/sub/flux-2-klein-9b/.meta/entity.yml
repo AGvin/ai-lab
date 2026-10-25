@@ -8,7 +8,7 @@ entity:
   identity_note: FLUX.2 [klein] 9B is Black Forest Labs' separately published 9-billion-parameter 4-step distilled
     flow-transformer model for image generation and editing. Its weights use FLUX Non-Commercial.
   references:
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
     purposes:
@@ -35,7 +35,7 @@ entity:
     purposes:
     - research
     authority: official
-  - type: model-card
+  - type: documentation
     source:
       url: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv
     purposes:
