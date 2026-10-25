@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:0bebb355c5e040090259bc641c2d485b9b208dac
+      entity.yml: gitblob:e51868d7ab02a9c1108991945fcde00afb818f49
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -87,7 +87,7 @@ cache:
           - identification
           - research
           authority: official
-        - type: terms
+        - type: terms-of-service
           source:
             url: https://legal.mistral.ai/terms/commercial-terms-of-service/
           purposes:

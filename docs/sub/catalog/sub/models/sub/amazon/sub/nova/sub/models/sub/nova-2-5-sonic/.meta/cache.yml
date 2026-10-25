@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:eb44dd4a5979d41b70bbc6469fb2f9e8dd163a1f
+      entity.yml: gitblob:55a550169767803ed8fb7a922aeb8cf3d4e1c205
     parent: {}
   state:
     node:
@@ -52,7 +52,7 @@ cache:
           fine-tuning. System prompts and configurations are customization controls,
           and migration still needs workload retesting.'
         references:
-        - type: announcement
+        - type: article
           source:
             url: https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-nova-2.5-Sonic/
           purposes:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1f3210a1e10f890f0b0059d01533c19abc750ba6
+      entity.yml: gitblob:429f5b9e17ed6910d0b0f9b3f052d96c1d241d4a
     parent: {}
   state:
     node:
@@ -66,7 +66,7 @@ cache:
           purposes:
           - research
           authority: official
-        - type: announcement
+        - type: article
           source:
             url: https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/
           purposes:

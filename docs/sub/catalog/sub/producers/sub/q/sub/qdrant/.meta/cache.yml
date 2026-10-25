@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3c02340adca1feab5d6202c06c378cbd3779074b
+      entity.yml: gitblob:71e1ef49367dde0b20d560bcff955efd23984797
     parent:
       entity.yml: gitblob:6907e20773222c3926bc2ca6714631589c406770
   state:
@@ -53,7 +53,7 @@ cache:
           - identification
           - research
           authority: official
-        - type: legal-notice
+        - type: other
           source:
             url: https://qdrant.tech/legal/impressum/
           purposes:

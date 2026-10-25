@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1466f36d62f67a57a9abbcf455bf6f0a5ddd304f
+      entity.yml: gitblob:3924eb7034816e9f87771ca7c2a679249e1325b8
     parent: {}
   state:
     node:
@@ -52,14 +52,14 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/command-a-reasoning-08-2025
           purposes:
           - identification
           - research
           authority: official
-        - type: model-registry
+        - type: registry
           source:
             url: https://huggingface.co/api/models/CohereLabs/command-a-reasoning-08-2025?blobs=true
           purposes:

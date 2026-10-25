@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d96e64ae3fa6bbf0f87bec0f8ebdaead5f0d8794
+      entity.yml: gitblob:a41e85924cf52670024a8eceaef94a57f2d50f08
     parent:
       entity.yml: gitblob:ccef1da57ee6d547f9577b3262f2ec33c70f8562
   state:
@@ -60,7 +60,7 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv
           purposes:
@@ -74,28 +74,28 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B
           purposes:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b7c204bc88f57e115818d3021ffa24cdfef10621
+      entity.yml: gitblob:1ac56ea00e9925b8f02db21914d2074b11172e43
     parent: {}
   state:
     node:
@@ -58,7 +58,7 @@ cache:
           purposes:
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/North-Mini-Code-1.0
           purposes:

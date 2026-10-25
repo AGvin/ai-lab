@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:fc1d20354bc8d686d78a3b6750af7fa0207f97ef
+      entity.yml: gitblob:ab5353e57c814f1c3d65d4fb58616d6c0e56988c
     parent: {}
   state:
     node:
@@ -59,14 +59,14 @@ cache:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/command-a-vision-07-2025
           purposes:
           - identification
           - research
           authority: official
-        - type: model-card
+        - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/aya-vision-8b
           purposes:

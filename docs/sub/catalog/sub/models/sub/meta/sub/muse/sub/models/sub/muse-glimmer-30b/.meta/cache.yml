@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ad18da48f32157c504b33f93d056082b162a715f
+      entity.yml: gitblob:f673a094f3c50df5d9251c0170281dde2a75ec1c
     parent: {}
   state:
     node:
@@ -49,7 +49,7 @@ cache:
           a causal language model with a perception encoder for local autonomous agents,
           with text and image input, text output, and Apache-2.0 release terms.
         references:
-        - type: publication
+        - type: paper
           source:
             url: https://ai.meta.com/research/publications/muse-glimmer-30b-an-on-device-agentic-model/
           purposes:
