@@ -8,5 +8,9 @@ The official card documents ASR in English, French, German, Spanish, Portuguese 
 
 Published weights use Apache-2.0; hosted terms are separate. The intermediate Nano base used by the language component is not necessarily identical to final published base weights.
 
+## Deployment and evidence
+
+Pin the exact checkpoint revision, audio processor, task prompts and inference runtime. Test memory, latency, transcription error rates, translation quality and keyword biasing on representative languages, recordings and segmented audio; verify the prompt-dependent behavior instead of assuming automatic language or punctuation handling. Published IBM benchmark comparisons are producer-reported, not independent runtime measurements; cache freshness and final reader rendering remain unverified.
+
 - [Granite Speech 5 family](../../../../)
 - [Official IBM model card](https://huggingface.co/ibm-granite/granite-speech-5.0-2b)
