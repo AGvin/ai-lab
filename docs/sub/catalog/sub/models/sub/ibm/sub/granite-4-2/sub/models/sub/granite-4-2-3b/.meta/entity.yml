@@ -17,3 +17,5 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/ibm/granite-4-2
+    - type: derived-from
+      target: catalog/models/ibm/granite-4-1/models/granite-4-1-3b-base
