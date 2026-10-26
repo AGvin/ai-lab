@@ -13,4 +13,5 @@ Published benchmark claims are not independently reproduced here.
 ## Family and official source
 
 - [Granite 4.1 family](../../../../)
+- [Granite 4.2 30B](../../../../../granite-4-2/sub/models/sub/granite-4-2-30b/) — separately post-trained derivative of this base checkpoint.
 - [Official IBM model card](https://huggingface.co/ibm-granite/granite-4.1-30b-base)
