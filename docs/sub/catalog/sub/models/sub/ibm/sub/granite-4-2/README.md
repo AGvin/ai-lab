@@ -6,7 +6,7 @@ Granite 4.2 is IBM's dense reasoning language-model family released on 25 August
 
 All three reviewed model cards document native 128K context with a supported long-context extension to 512K, Apache-2.0 weights, built-in thinking modes, tool calling, coding, and agentic workflows. They list twelve tested languages: English, German, Spanish, French, Japanese, Portuguese, Arabic, Czech, Italian, Korean, Dutch, and Chinese.
 
-The model cards name corresponding Granite 4.1 base checkpoints. Those source-only dependencies are not materialized as new catalog nodes in this package. Quantized and serving-specific distributions likewise remain artifacts of the 3B, 8B, or 30B identity.
+The model cards name corresponding Granite 4.1 base checkpoints. Those base models already have canonical records under the Granite 4.1 family, and each 4.2 member links its distinct post-trained identity to the corresponding base through reciprocal derivative relations. No new base identities are created. Quantized and serving-specific distributions remain artifacts of the 3B, 8B, or 30B identity.
 
 Tool requests still require an execution harness, and advertised context or benchmark results do not guarantee application quality across every prompt or runtime.
 
