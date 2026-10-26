@@ -9,6 +9,7 @@ Quantized and serving-specific builds remain artifacts of this model. Tool execu
 ## Catalog relations
 
 - [Granite 4.2](../../../../) — family.
+- [Granite 4.1 30B Base](../../../../../granite-4-1/sub/models/sub/granite-4-1-30b-base/) — source base checkpoint; this post-trained reasoning model remains a distinct identity.
 
 ## Official resources
 
