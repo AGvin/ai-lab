@@ -4,7 +4,7 @@
 
 - Identify Granite 4.2 as IBM's dense decoder-only reasoning language-model family released on 25 August 2026.
 - Materialize the canonical 3B, 8B, and 30B trained-model identities; keep quantized, exported, and runtime-specific distributions as artifacts unless independently qualified.
-- Preserve IBM as producer. The exact cards name Granite 4.1 base checkpoints, but no absent base-model catalog node is invented solely from that metadata.
+- Preserve IBM as producer and the three source-backed lineage edges from the 4.2 members to their existing Granite 4.1 Base checkpoint entities, including reciprocal derivative edges. Do not duplicate the base model identities.
 
 ## Operational decision boundaries
 
