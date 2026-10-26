@@ -9,6 +9,7 @@ Quantized and runtime-specific distributions remain artifacts of this model. Too
 ## Catalog relations
 
 - [Granite 4.2](../../../../) — family.
+- [Granite 4.1 3B Base](../../../../../granite-4-1/sub/models/sub/granite-4-1-3b-base/) — source base checkpoint; this post-trained reasoning model remains a distinct identity.
 
 ## Official resources
 
