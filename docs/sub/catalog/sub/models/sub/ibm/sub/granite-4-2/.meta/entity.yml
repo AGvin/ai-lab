@@ -4,7 +4,7 @@ entity:
   name: Granite 4.2
   identity_note: >-
     Granite 4.2 is IBM's August 2026 dense decoder-only reasoning language-model family. The
-    materialized base release identities are 3B, 8B, and 30B. Quantized or runtime-specific
+    materialized post-trained model identities are 3B, 8B, and 30B. Quantized or runtime-specific
     distributions remain artifacts of those models rather than peer trained-model identities.
   references:
     - type: article
