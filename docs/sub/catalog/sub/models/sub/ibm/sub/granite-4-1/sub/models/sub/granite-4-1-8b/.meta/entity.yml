@@ -14,3 +14,5 @@ entity:
   relations:
   - type: member-of
     target: catalog/models/ibm/granite-4-1
+  - type: has-derivative
+    target: catalog/models/ibm/granite-guardian-4-1/models/granite-guardian-4-1-8b

@@ -3,7 +3,7 @@
 ## Identity and provenance
 
 - Identify Granite Guardian 4.1 as IBM's safety and risk-evaluation family represented by the 8B checkpoint.
-- Preserve the source-documented fine-tuning base ibm-granite/granite-4.1-8b without inventing an absent local parent node.
+- Preserve the source-backed fine-tuning lineage from the canonical Granite 4.1 8B instruction-tuned checkpoint to Guardian 4.1 8B, with reciprocal model relations. Do not substitute the distinct 8B Base identity.
 - Keep safety-model identity separate from application policy engines, moderation services and hosted inference routes.
 
 ## Operational decision boundaries
@@ -17,5 +17,5 @@
 
 - Family membership resolves to Granite Guardian 4.1 8B.
 - Producer provenance resolves to IBM.
-- No derived-from edge is created until the exact Granite 4.1 8B source exists as a canonical catalog target.
+- The concrete member's derived-from relation resolves to Granite 4.1 8B and its reciprocal has-derivative edge resolves back to the Guardian member.
 - This assessment grants no runtime, benchmark-reproduction, cache or final-render credit.

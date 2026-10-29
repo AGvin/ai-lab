@@ -4,8 +4,8 @@ entity:
   name: Granite Guardian 4.1
   identity_note: >-
     Granite Guardian 4.1 is IBM's safety and risk-evaluation model family represented by the 8B
-    checkpoint. The concrete model is fine-tuned from ibm-granite/granite-4.1-8b, which is not
-    materialized as a canonical node in the current catalog.
+    checkpoint. The concrete model is fine-tuned from the canonical instruction-tuned
+    Granite 4.1 8B model; its scoring contract remains distinct from the source model.
   references:
     - type: registry
       source:

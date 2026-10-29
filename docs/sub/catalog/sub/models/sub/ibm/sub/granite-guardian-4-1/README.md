@@ -6,7 +6,7 @@ Granite Guardian 4.1 is IBM's safety and risk-evaluation family represented by t
 
 The model card describes built-in and bring-your-own risk criteria, RAG groundedness/context relevance/answer relevance checks, function-call hallucination evaluation, and thinking/non-thinking use patterns. These outputs support policy decisions but do not themselves enforce application permissions or guarantee safety.
 
-The concrete checkpoint is fine-tuned from `ibm-granite/granite-4.1-8b`. That exact source model is not materialized in the current catalog, so the lineage remains source-documented rather than represented by a broken relation.
+The concrete checkpoint is fine-tuned from the canonical [Granite 4.1 8B instruction-tuned model](../granite-4-1/sub/models/sub/granite-4-1-8b/), with reciprocal provenance relations on the two concrete models. The source is distinct from Granite 4.1 8B Base; Guardian retains its separate scoring contract.
 
 The weights state Apache 2.0. Safety thresholds and error tradeoffs require evaluation on the intended policy and traffic.
 

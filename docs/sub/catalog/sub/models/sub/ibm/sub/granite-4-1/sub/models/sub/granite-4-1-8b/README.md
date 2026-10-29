@@ -10,6 +10,10 @@ Granite 4.1 8B is a separately released IBM Granite 4.1 instruction-tuned langua
 
 Published benchmark claims are not independently reproduced here.
 
+## Source-backed derivative
+
+- [Granite Guardian 4.1 8B](../../../../../granite-guardian-4-1/sub/models/sub/granite-guardian-4-1-8b/) is fine-tuned from this instruction-tuned checkpoint according to IBM's model card. Guardian uses a separate binary scoring contract; the relation does not make it interchangeable with this assistant model.
+
 ## Family and official source
 
 - [Granite 4.1 family](../../../../)

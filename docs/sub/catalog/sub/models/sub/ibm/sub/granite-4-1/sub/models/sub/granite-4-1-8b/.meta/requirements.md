@@ -4,6 +4,7 @@
 
 - Identify the exact upstream checkpoint `https://huggingface.co/ibm-granite/granite-4.1-8b` and its Apache-2.0 weight license.
 - Preserve this exact instruction-tuned language model identity and its checkpoint-specific configuration.
+- Preserve Guardian 4.1 8B's source-backed fine-tuning lineage through the reciprocal has-derivative relation; distinguish the derivative's binary scoring contract from this assistant model.
 - Do not infer hardware fit from the model name; account for precision, context state, batch size and architecture-specific runtime support.
 
 ## Validation

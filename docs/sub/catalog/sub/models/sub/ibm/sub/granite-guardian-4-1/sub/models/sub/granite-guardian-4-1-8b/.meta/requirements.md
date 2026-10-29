@@ -3,7 +3,7 @@
 ## Identity and provenance
 
 - Identify Granite Guardian 4.1 8B as the concrete 8B-class safety and risk-evaluation model in the Granite Guardian 4.1 family.
-- Preserve ibm-granite/granite-4.1-8b as source-documented fine-tuning provenance without inventing an absent local derived-from target.
+- Resolve source-backed fine-tuning provenance to the canonical Granite 4.1 8B instruction-tuned model with reciprocal derived-from/has-derivative relations; keep its assistant role distinct from Guardian's scoring contract.
 
 ## Operational decision boundaries
 
@@ -15,5 +15,5 @@
 ## Validation
 
 - Membership resolves to Granite Guardian 4.1.
-- No absent base-model relation is materialized.
+- The exact instruction-tuned source and both provenance endpoints resolve; do not link to Granite 4.1 8B Base.
 - This assessment grants no runtime or benchmark-reproduction credit.
