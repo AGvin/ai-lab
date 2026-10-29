@@ -4,7 +4,7 @@ Granite Vision 4.1 is IBM's April 2026 document-focused vision-language family, 
 
 The model card emphasizes structured document understanding: chart extraction, table extraction, semantic key-value extraction, and general image-to-text use. Task tags and output formats are prompting contracts of the same model rather than additional trained identities.
 
-The concrete checkpoint is fine-tuned on Granite 4.1 3B. That source model is not currently materialized as a canonical catalog node, so the lineage remains source-documented instead of creating a broken relation. Docling and other document-processing software remain separate artifacts.
+The 4B checkpoint is fine-tuned on the canonical [Granite 4.1 3B instruction-tuned model](../granite-4-1/sub/models/sub/granite-4-1-3b/), with reciprocal provenance relations recorded on those two concrete model nodes. It is not based on the distinct Granite 4.1 3B Base identity. Docling and other document-processing software remain separate artifacts.
 
 ## License and evaluation boundaries
 

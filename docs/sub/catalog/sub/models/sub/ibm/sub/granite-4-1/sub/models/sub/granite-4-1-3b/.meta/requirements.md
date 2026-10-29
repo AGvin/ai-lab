@@ -4,6 +4,7 @@
 
 - Identify the exact upstream checkpoint `https://huggingface.co/ibm-granite/granite-4.1-3b` and its Apache-2.0 weight license.
 - Preserve this exact instruction-tuned language model identity and its checkpoint-specific configuration.
+- Record Granite Vision 4.1 4B's source-backed fine-tuning lineage with a reciprocal `has-derivative` edge; keep language-model and vision-language task/runtime contracts distinct.
 - Do not infer hardware fit from the model name; account for precision, context state, batch size and architecture-specific runtime support.
 
 ## Validation

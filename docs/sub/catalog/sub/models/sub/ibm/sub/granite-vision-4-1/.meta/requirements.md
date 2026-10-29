@@ -3,7 +3,7 @@
 ## Identity and provenance
 
 - Identify Granite Vision 4.1 as IBM's April 2026 document-focused vision-language family represented by the 4B checkpoint.
-- Preserve IBM producer provenance and keep the exact source-documented Granite 4.1 3B fine-tuning base as provenance without inventing an absent local parent node.
+- Preserve IBM producer provenance and the source-backed fine-tuning lineage from the canonical Granite 4.1 3B instruction-tuned checkpoint to Vision 4.1 4B; verify reciprocal model relations.
 - Keep Docling, OCR pipelines, prompt/task wrappers, serving routes, quantizations and hosted services separate from the trained-model identity.
 
 ## Operational decision boundaries
@@ -17,5 +17,5 @@
 
 - Family membership resolves exactly to Granite Vision 4.1 4B.
 - Producer provenance resolves to IBM.
-- No absent base-model relation is materialized.
+- The vision model's derived-from relation resolves to the exact canonical Granite 4.1 3B checkpoint, with its reciprocal has-derivative edge.
 - This assessment grants no runtime, benchmark-reproduction, cache or final-render credit.

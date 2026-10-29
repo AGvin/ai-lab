@@ -10,6 +10,10 @@ Granite 4.1 3B is a separately released IBM instruction-tuned language model for
 
 Published benchmark claims are not independently reproduced here.
 
+## Source-backed derivative
+
+- [Granite Vision 4.1 4B](../../../../../granite-vision-4-1/sub/models/sub/granite-vision-4-1-4b/) is fine-tuned from this instruction-tuned checkpoint according to IBM's model card. It has a separate vision-language operating contract; this relationship does not imply interchangeable weights or deployments.
+
 ## Family and official source
 
 - [Granite 4.1 family](../../../../)

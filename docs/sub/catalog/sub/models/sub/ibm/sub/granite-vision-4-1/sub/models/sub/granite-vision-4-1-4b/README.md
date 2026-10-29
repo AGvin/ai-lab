@@ -9,6 +9,7 @@ Docling integration, serving backends and quantized distributions are operationa
 ## Catalog relations
 
 - [Granite Vision 4.1](../../../../) — family.
+- [Granite 4.1 3B](../../../../../granite-4-1/sub/models/sub/granite-4-1-3b/) — exact instruction-tuned model from which this vision-language checkpoint was fine-tuned; separate task and runtime boundaries apply.
 
 ## Official resources
 

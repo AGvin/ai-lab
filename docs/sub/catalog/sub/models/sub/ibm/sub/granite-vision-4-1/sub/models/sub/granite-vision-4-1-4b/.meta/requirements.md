@@ -4,7 +4,7 @@
 
 - Identify Granite Vision 4.1 4B as IBM Research's 29 April 2026 document-focused vision-language checkpoint.
 - Preserve the card's 3.4B language-model plus 0.6B vision-encoder/projector composition and source-documented fine-tuning from Granite 4.1 3B.
-- Do not invent an absent derived-from target for the source model.
+- Resolve the source-backed `derived-from` relation to canonical Granite 4.1 3B, with a reciprocal `has-derivative` link on the precise instruction-tuned parent; do not link to Granite 4.1 3B Base.
 
 ## Operational decision boundaries
 
@@ -15,5 +15,5 @@
 ## Validation
 
 - Membership resolves to Granite Vision 4.1.
-- No absent base-model relation is materialized.
+- The exact source model exists and the forward/inverse provenance edges are both materialized.
 - This assessment grants no runtime or benchmark-reproduction credit.
