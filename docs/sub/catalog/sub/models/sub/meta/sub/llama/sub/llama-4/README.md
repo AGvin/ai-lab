@@ -1,6 +1,6 @@
 # Llama 4
 
-Llama 4 is a canonical model series represented in AI Lab.
+Llama 4 is Meta's natively multimodal series containing the released Scout and Maverick models. The April 2025 announcement describes Behemoth as a still-training teacher, not a released sibling; this historical announcement alone cannot establish a later release.
 
 ## Translations
 
