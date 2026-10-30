@@ -1,11 +1,10 @@
 # Z.AI Models
 
-This model-domain view groups canonical model families produced or published by Z.AI. Canonical producer identity remains on the [Z.AI producer page](../../../../../../../producers/sub/z/sub/z-ai/).
+This model-domain view groups canonical model families produced or published by Z.AI. Canonical producer identity remains on the [Z.AI producer page](../../../producers/sub/z/sub/z-ai/).
 
 ## Translations
 
 - English
-- [Українська](./l10n/uk_UA/)
 
 ## Model families
 
