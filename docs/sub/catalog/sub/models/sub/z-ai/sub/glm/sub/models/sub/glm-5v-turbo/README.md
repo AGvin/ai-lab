@@ -5,7 +5,6 @@ GLM-5V-Turbo is a concrete hosted multimodal coding model in the GLM family, pub
 ## Translations
 
 - English
-- [Українська](./l10n/uk_UA/)
 
 ## Model family
 
