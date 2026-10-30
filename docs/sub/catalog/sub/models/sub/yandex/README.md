@@ -1,6 +1,6 @@
 # Yandex models
 
-Yandex models is the Yandex model-domain view rather than a duplicate organization profile.
+This is the Yandex model-domain view, not the [canonical Yandex producer profile](../../../producers/sub/y/sub/yandex/). It currently represents the [AliceAI-T5 model family](./sub/aliceai-t5/) rather than the consumer Alice assistant, Yandex search, API products, or independently quantized community builds.
 
 ## Translations
 
@@ -12,4 +12,4 @@ Yandex models is the Yandex model-domain view rather than a duplicate organizati
 
 ## Official resources
 
-- <https://huggingface.co/yandex>
+- [Yandex model registry](https://huggingface.co/yandex)
