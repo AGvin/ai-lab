@@ -11,5 +11,5 @@ Capability details, model routing, benchmarks, context limits, pricing, regions,
 ## Family and official sources
 
 - [Muse family](../../../../)
-- [Meta model announcements](https://ai.meta.com/events/)
-- [Meta AI developer surface](https://ai.meta.com/llama)
+- [Dated Meta release announcement](https://research.meta.ai/blog/introducing-muse-spark-1-3)
+- [Official Spark model documentation](https://dev.meta.ai/models/muse-spark)
