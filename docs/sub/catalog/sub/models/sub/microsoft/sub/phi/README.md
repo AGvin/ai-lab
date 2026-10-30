@@ -9,7 +9,7 @@ Phi is Microsoft's family of compact language, reasoning, and multimodal models.
 
 ## Producer
 
-- [Microsoft](../../../../../../../../../producers/sub/m/sub/microsoft/)
+- [Microsoft](../../../../../producers/sub/m/sub/microsoft/)
 
 ## Series
 
