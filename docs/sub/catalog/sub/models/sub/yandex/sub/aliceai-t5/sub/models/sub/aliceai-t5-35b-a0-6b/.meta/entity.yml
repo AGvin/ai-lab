@@ -10,6 +10,11 @@ entity:
     example loads custom code via trust_remote_code=True, which requires
     source review and pinning before execution. No generic chat suitability,
     serving compatibility or hardware fit is implied.
+    SECURITY POLICY: DANGEROUS — NOT RECOMMENDED. Yandex is Russia-based;
+    this catalog resource is research/threat-monitoring only, regardless of
+    security tests, permissive licenses or missing sanctions findings.
+    Do not recommend deployment or transmit sensitive data to Yandex services.
+    This classification does not claim detected malware in this model.
   references:
     - type: registry
       source:

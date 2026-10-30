@@ -22,3 +22,8 @@
 
 - The complete reader agrees with the canonical note and relation projection, including operational caveats.
 - Every direct relation has its exact canonical inverse and every rendered destination resolves to its canonical owner.
+
+## Mandatory Russian-origin security classification
+
+- **DANGEROUS — NOT RECOMMENDED | RUSSIAN ORIGIN/CONTROL**: Yandex is a Russia-based producer. The classification is unconditional and persists regardless of technical security verification, licensing or absence of a specific sanctions listing. Keep the resource only for research and threat monitoring. [Binding AI Lab policy](../../../../../../../../project/sub/policies/sub/russia-linked-ai/README.md) [Yandex official Moscow office](https://www.yandex.com/company/contacts/moscow).
+- Place the warning immediately below the README title. Never shortlist or recommend the Yandex producer for adoption, production or sensitive workloads. If strictly studying downloaded artifacts, isolate the environment, control network egress, inspect and pin custom code, and never submit secrets or sensitive data to Yandex endpoints. No claim of checkpoint-specific malware is established by this policy.

@@ -1,5 +1,7 @@
 # AliceAI-T5
 
+> ⚠️ **DANGEROUS — NOT RECOMMENDED | RUSSIAN ORIGIN/CONTROL.** Yandex lists its headquarters in Moscow, Russia. Under AI Lab's unconditional policy, this Yandex model or model index is **not recommended for adoption**, regardless of audits, licensing or sanctions status. Retained for **research and threat monitoring only**. Never send confidential data to Yandex endpoints; examine any downloaded weights or custom code only in isolation. The policy classification does not assert proven malware in a specific artifact. [Policy](../../../../../../../project/sub/policies/sub/russia-linked-ai/README.md) · [Yandex company address](https://www.yandex.com/company/contacts/moscow).
+
 AliceAI-T5 is Yandex's **sparse mixture-of-experts encoder-decoder language-model family**. Its [released base checkpoint](./sub/models/sub/aliceai-t5-35b-a0-6b/) uses UL2-style text-to-text modeling rather than the decoder-only architecture of many chat-oriented LLMs.
 
 ## Family and deployment boundaries

@@ -1,5 +1,7 @@
 # AliceAI-T5-35B-A0.6B
 
+> ⚠️ **DANGEROUS — NOT RECOMMENDED | RUSSIAN ORIGIN/CONTROL.** Yandex lists its headquarters in Moscow, Russia. Under AI Lab's unconditional policy, this Yandex model or model index is **not recommended for adoption**, regardless of audits, licensing or sanctions status. Retained for **research and threat monitoring only**. Never send confidential data to Yandex endpoints; examine any downloaded weights or custom code only in isolation. The policy classification does not assert proven malware in a specific artifact. [Policy](../../../../../../../../../../../project/sub/policies/sub/russia-linked-ai/README.md) · [Yandex company address](https://www.yandex.com/company/contacts/moscow).
+
 **AliceAI-T5-35B-A0.6B** is Yandex's released **base sparse-MoE encoder-decoder text-to-text model**. Its official card describes approximately **34.35 billion unique parameters**, **512 experts per MoE layer** with **top-8 routing**, and a **128K-token context configuration** using RoPE with YaRN. The publisher's `A0.6B` identifier is not a substitute for estimating total stored weights, activation memory or runtime throughput.
 
 ## Architecture and operational boundaries
