@@ -13,3 +13,12 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/z-ai/glm
+  identity_note: >-
+    GLM-5.3 is an independently published post-trained GLM checkpoint
+    sharing its base model with GLM-5.2. The official registry identifies
+    the exact zai-org/GLM-5.3 artifact and a model-specific GLM-5.3
+    license, distinct from the MIT license on GLM-5.3-Flash. Hugging
+    Face reports about 753B model parameters, not a separately established
+    active-parameter count. Vendor coding, cyber and agent benchmark
+    comparisons are publisher evaluations, not independently reproduced
+    results. Runtime context capacity and hosted service terms vary.
