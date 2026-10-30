@@ -1,6 +1,6 @@
 # Kimi
 
-Kimi is Moonshot AI's model family and keep concrete Kimi releases/models in materialized child model nodes.
+Kimi is Moonshot AI's model family. Its distinct trained-model releases belong in materialized concrete child nodes, currently including [Kimi K3](./sub/models/sub/kimi-k3/). K3-specific architecture, model licenses, contexts and benchmark claims must not be inherited by the whole family; hosted Kimi products and API access are separate concerns.
 
 ## Translations
 
