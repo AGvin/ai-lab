@@ -1,6 +1,6 @@
 # Microsoft Models
 
-This model-domain view groups model families produced by Microsoft. Canonical organization identity remains on the [Microsoft producer page](../../../../../../../producers/sub/m/sub/microsoft/).
+This model-domain view groups model families produced by Microsoft. Canonical organization identity remains on the [Microsoft producer page](../../../producers/sub/m/sub/microsoft/).
 
 ## Translations
 
