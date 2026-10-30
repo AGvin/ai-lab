@@ -1,6 +1,6 @@
 # Phi-4 Reasoning
 
-Phi-4 Reasoning is Microsoft's released 14B reasoning-focused Phi-4 model and keep it distinct from base Phi-4 and Phi-4 Mini Reasoning.
+Phi-4 Reasoning is Microsoft's separately released **14B dense decoder-only, reasoning-focused text model**, distinct from base Phi-4 and Phi-4 Mini Reasoning. The official card specifies a **32K-token context**, an **April 30, 2025** release and **MIT** license. Microsoft presents its training and intended uses as mathematical reasoning; inference sampling settings and point-in-time benchmark scores must not be mistaken for inherent deployment guarantees.
 
 ## Translations
 
