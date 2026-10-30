@@ -35,8 +35,12 @@ entity:
   - type: has-member
     target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-kontext-dev
   - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-kontext-pro
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-kontext-max
+  - type: has-member
     target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-fill-dev
   - type: has-member
     target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-redux-dev
   identity_note: FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog currently materializes
-    FLUX.1-schnell, FLUX.1-dev, FLUX.1 Krea [dev], FLUX.1 Kontext [dev], FLUX.1 Fill [dev] and FLUX.1 Redux [dev] as distinct trained identities; Redux is a dependent image adapter, not a standalone generator, and their weights and licenses are not interchangeable.
+    FLUX.1-schnell, FLUX.1-dev, FLUX.1 Krea [dev], FLUX.1 Kontext [dev], FLUX.1 Fill [dev] and FLUX.1 Redux [dev], plus hosted FLUX.1 Kontext [pro] and [max], as distinct catalog model identities. Redux is a dependent adapter; hosted Kontext weights are unpublished, and model licenses or service terms are not interchangeable.

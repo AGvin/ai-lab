@@ -2,7 +2,7 @@
 
 ## Identity and provenance
 
-- FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog materializes FLUX.1-schnell, FLUX.1-dev, FLUX.1 Krea [dev], FLUX.1 Kontext [dev], FLUX.1 Fill [dev] and FLUX.1 Redux [dev]; Redux is a separately trained image-variation adapter dependent on a compatible FLUX.1 generator, not a standalone generator or file-format variant.
+- FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog materializes FLUX.1-schnell, FLUX.1-dev, FLUX.1 Krea [dev], FLUX.1 Kontext [dev], FLUX.1 Fill [dev] and FLUX.1 Redux [dev], plus hosted FLUX.1 Kontext [pro] and [max]. Redux is a learned adapter dependent on a compatible generator; hosted Kontext endpoints have distinct proprietary service contracts and no established downloadable checkpoint rights.
 - The existing series and its Models index organize concrete FLUX.1 models. Do not infer that only the materialized schnell member exists upstream. [BFL official model registry](https://huggingface.co/black-forest-labs) [FLUX.1-schnell model card](https://huggingface.co/black-forest-labs/FLUX.1-schnell).
 
 ## Operational decision boundaries
@@ -21,3 +21,5 @@
 - Distinguish instruction-based Kontext editing from binary-mask Fill inpainting/outpainting; hosted pro variants and optimized artifacts are not these dev checkpoints.
 
 - Redux [dev] is a separate learned image-conditioning adapter usable with FLUX.1-dev or schnell; no unsupported `derived-from` edge from mere compatibility and no inheritance of schnell's Apache 2.0 terms. Preserve the actual non-commercial Redux license and standalone versus dependent role. [BFL reference](https://github.com/black-forest-labs/flux/blob/main/docs/image-variation.md) [Official model card](https://huggingface.co/black-forest-labs/FLUX.1-Redux-dev).
+
+- Kontext [pro] and [max] are separate currently available BFL-hosted models introduced May 29, 2025. The official API exposes `/v1/flux-kontext-pro` and `/v1/flux-kontext-max`; keep their identities separate from open-weight Kontext [dev], with no inferred trained-parent relation or parameter count. BFL recommends FLUX.2 for new projects. [BFL release](https://bfl.ai/blog/flux-1-kontext) [Current guide](https://help.bfl.ai/articles/5186006235-what-is-flux-1-kontext) [API](https://api.bfl.ai/docs).
