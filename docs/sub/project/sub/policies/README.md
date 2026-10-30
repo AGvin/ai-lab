@@ -3,4 +3,4 @@
 ## Child pages
 
 - [`disclaimer/`](./sub/disclaimer/)
-- [Russia-linked AI: dangerous and not recommended](./sub/russia-linked-ai/)
+- [Russia-linked AI: provenance and adoption restrictions](./sub/russia-linked-ai/)

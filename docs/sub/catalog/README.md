@@ -2,7 +2,7 @@
 
 Canonical entry point for concrete AI Lab entities and their source-backed documentation.
 
-**Security policy:** Russian-origin or Russian-controlled AI resources are **DANGEROUS — NOT RECOMMENDED** regardless of technical checks; they remain cataloged for research and monitoring only. [Read the categorical restriction](../project/sub/policies/sub/russia-linked-ai/).
+**Ownership and security policy:** Verified Russian origin or control is **DANGEROUS — NOT RECOMMENDED**; verified **noncontrolling partial Russian ownership** receives **ELEVATED RISK — DEPRIORITIZED**. Check indirect/beneficial ownership and upstream technology provenance even when the brand appears foreign; unresolved links require further review. [See the policy and source-checking procedure](../project/sub/policies/sub/russia-linked-ai/).
 
 Catalog nodes own stable entity identity and facts. Project policies, reader journeys, and other non-entity knowledge remain with their separate canonical owners.
 
