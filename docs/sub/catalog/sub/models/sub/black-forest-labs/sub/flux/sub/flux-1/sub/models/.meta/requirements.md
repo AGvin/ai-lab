@@ -2,7 +2,7 @@
 
 ## Identity and provenance
 
-- Navigation index for concrete FLUX.1 model records. It currently contains FLUX.1-schnell and has no independent trained weights, serving contract or producer identity.
+- Navigation index for concrete FLUX.1 model records. It currently contains FLUX.1-schnell and FLUX.1-dev and has no independent trained weights, serving contract or producer identity.
 - The index lists the materialized concrete models within FLUX.1 and links back to the series. Its coverage follows the existing catalog records. [FLUX.1-schnell model card](https://huggingface.co/black-forest-labs/FLUX.1-schnell).
 
 ## Operational decision boundaries
@@ -15,3 +15,4 @@
 - Render all visible current-node relations in deterministic order and resolve local reader links. Restore missing readers from canonical facts without granting dependency-domain credit.
 - Keep source dates, availability, license conditions and service-specific limits attributable. Do not turn provider claims into local runtime, performance or benchmark verification.
 - The Models index lists every materialized direct model child; list membership does not assert exhaustive upstream coverage.
+- List FLUX.1-schnell and FLUX.1-dev as distinct complete model readers, with resolving relative links and no implicit license inheritance.

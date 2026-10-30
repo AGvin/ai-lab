@@ -1,6 +1,6 @@
 # FLUX.1
 
-FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog currently materializes FLUX.1-schnell within the series; the series is not synonymous with that checkpoint. [BFL official model registry](https://huggingface.co/black-forest-labs) [FLUX.1-schnell model card](https://huggingface.co/black-forest-labs/FLUX.1-schnell).
+FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog materializes FLUX.1-schnell and FLUX.1-dev as distinct checkpoints with different licenses and generation behavior. [BFL official model registry](https://huggingface.co/black-forest-labs) [FLUX.1-schnell model card](https://huggingface.co/black-forest-labs/FLUX.1-schnell).
 
 ## Identity and scope
 
@@ -16,6 +16,7 @@ License, distillation method and inference-step facts belong to individual FLUX.
 | --- | --- | --- |
 | `member-of` | [FLUX](../../README.md) | `model-family` |
 | `has-member` | [FLUX.1-schnell](sub/models/sub/flux-1-schnell/README.md) | `model` |
+| `has-member` | [FLUX.1-dev](sub/models/sub/flux-1-dev/README.md) | `model` |
 
 ## Navigation
 
@@ -25,3 +26,5 @@ License, distillation method and inference-step facts belong to individual FLUX.
 
 - [BFL official model registry](https://huggingface.co/black-forest-labs)
 - [FLUX.1-schnell model card](https://huggingface.co/black-forest-labs/FLUX.1-schnell)
+- [FLUX.1-dev model card](https://huggingface.co/black-forest-labs/FLUX.1-dev)
+- [Current dev weight license terms](https://bfl.ai/legal/non-commercial-license-terms)

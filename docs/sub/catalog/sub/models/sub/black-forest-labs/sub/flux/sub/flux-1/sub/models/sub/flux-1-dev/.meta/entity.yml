@@ -1,0 +1,36 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-dev
+  type: model
+  name: FLUX.1-dev
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/black-forest-labs/FLUX.1-dev
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://github.com/black-forest-labs/flux/blob/main/model_cards/FLUX.1-dev.md
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: license
+    source:
+      url: https://bfl.ai/legal/non-commercial-license-terms
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-1
+  identity_note: >-
+    FLUX.1-dev is Black Forest Labs' released 12B guidance-distilled rectified-flow
+    transformer for text-to-image generation, with separately published gated
+    open weights. Unlike FLUX.1-schnell, its weights use the FLUX dev
+    Non-Commercial License, not Apache 2.0. Licensing of model use, outputs,
+    hosted inference and downstream commercial applications must be evaluated
+    separately. Publisher quality claims are not independent AI Lab benchmark
+    results; local runtime performance and hardware fit are unverified.

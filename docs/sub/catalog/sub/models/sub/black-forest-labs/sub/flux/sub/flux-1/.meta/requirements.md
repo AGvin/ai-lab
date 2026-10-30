@@ -2,12 +2,13 @@
 
 ## Identity and provenance
 
-- FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog currently materializes FLUX.1-schnell within the series; the series is not synonymous with that checkpoint.
+- FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog materializes both FLUX.1-schnell and FLUX.1-dev; they are distinct checkpoints with different weight licenses and inference contracts.
 - The existing series and its Models index organize concrete FLUX.1 models. Do not infer that only the materialized schnell member exists upstream. [BFL official model registry](https://huggingface.co/black-forest-labs) [FLUX.1-schnell model card](https://huggingface.co/black-forest-labs/FLUX.1-schnell).
 
 ## Operational decision boundaries
 
 - License, distillation method and inference-step facts belong to individual FLUX.1 models; do not apply schnell's Apache 2.0 license to the entire series. [FLUX.1-schnell model card](https://huggingface.co/black-forest-labs/FLUX.1-schnell).
+- FLUX.1-dev's gated weights use a non-commercial license and guidance-distilled generation; do not conflate its terms or behavior with schnell's Apache-2.0 weights and 1–4-step workflow. [FLUX.1-dev official model card](https://github.com/black-forest-labs/flux/blob/main/model_cards/FLUX.1-dev.md) [current terms](https://bfl.ai/legal/non-commercial-license-terms).
 
 ## Validation
 
