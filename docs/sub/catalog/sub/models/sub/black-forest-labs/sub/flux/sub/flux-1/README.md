@@ -1,6 +1,6 @@
 # FLUX.1
 
-FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog materializes FLUX.1-schnell, FLUX.1-dev and FLUX.1 Krea [dev] as distinct checkpoints with different licenses and generation behavior. [BFL official model registry](https://huggingface.co/black-forest-labs) [FLUX.1-schnell model card](https://huggingface.co/black-forest-labs/FLUX.1-schnell).
+FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog materializes FLUX.1-schnell, FLUX.1-dev, FLUX.1 Krea [dev], FLUX.1 Kontext [dev] and FLUX.1 Fill [dev] as distinct checkpoints with different licenses and generation behavior. [BFL official model registry](https://huggingface.co/black-forest-labs) [FLUX.1-schnell model card](https://huggingface.co/black-forest-labs/FLUX.1-schnell).
 
 ## Identity and scope
 
@@ -17,6 +17,8 @@ License, distillation method and inference-step facts belong to individual FLUX.
 | Relation | Target | Target type |
 | --- | --- | --- |
 | `member-of` | [FLUX](../../README.md) | `model-family` |
+| `has-member` | [FLUX.1 Fill [dev]](sub/models/sub/flux-1-fill-dev/README.md) | `model` |
+| `has-member` | [FLUX.1 Kontext [dev]](sub/models/sub/flux-1-kontext-dev/README.md) | `model` |
 | `has-member` | [FLUX.1 Krea [dev]](sub/models/sub/flux-1-krea-dev/README.md) | `model` |
 | `has-member` | [FLUX.1-dev](sub/models/sub/flux-1-dev/README.md) | `model` |
 | `has-member` | [FLUX.1-schnell](sub/models/sub/flux-1-schnell/README.md) | `model` |

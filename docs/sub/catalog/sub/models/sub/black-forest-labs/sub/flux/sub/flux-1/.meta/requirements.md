@@ -2,7 +2,7 @@
 
 ## Identity and provenance
 
-- FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog materializes FLUX.1-schnell, FLUX.1-dev and FLUX.1 Krea [dev]; they are distinct checkpoints with different weight licenses and inference contracts.
+- FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog materializes FLUX.1-schnell, FLUX.1-dev, FLUX.1 Krea [dev], FLUX.1 Kontext [dev] and FLUX.1 Fill [dev]; they are distinct checkpoints with different weight licenses and inference contracts.
 - The existing series and its Models index organize concrete FLUX.1 models. Do not infer that only the materialized schnell member exists upstream. [BFL official model registry](https://huggingface.co/black-forest-labs) [FLUX.1-schnell model card](https://huggingface.co/black-forest-labs/FLUX.1-schnell).
 
 ## Operational decision boundaries
@@ -17,3 +17,5 @@
 - Keep source dates, availability, license conditions and service-specific limits attributable. Do not turn provider claims into local runtime, performance or benchmark verification.
 
 - FLUX.1 Krea [dev] has joint BFL/Krea provenance; namespace placement is not exclusive authorship. Preserve source-specific raw-base provenance without an invented released-dev parent edge.
+
+- Distinguish instruction-based Kontext editing from binary-mask Fill inpainting/outpainting; hosted pro variants and optimized artifacts are not these dev checkpoints.
