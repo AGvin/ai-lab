@@ -2,6 +2,14 @@ entity:
   id: catalog/models/yandex/aliceai-t5/models/aliceai-t5-35b-a0-6b
   type: model
   name: AliceAI-T5-35B-A0.6B
+  identity_note: >-
+    AliceAI-T5-35B-A0.6B is Yandex's released base text-to-text encoder-decoder
+    sparse mixture-of-experts model with UL2-style training. The official card
+    reports 34.35B unique parameters, 512 experts per MoE layer with top-8
+    expert routing, and RoPE with YaRN for a 128K-token context. Its usage
+    example loads custom code via trust_remote_code=True, which requires
+    source review and pinning before execution. No generic chat suitability,
+    serving compatibility or hardware fit is implied.
   references:
     - type: registry
       source:
