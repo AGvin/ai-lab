@@ -1,6 +1,6 @@
 # NAVER Cloud models
 
-NAVER Cloud models is the NAVER Cloud model-domain view for HyperCLOVA X releases.
+This model-domain view links [NAVER Cloud](../../../producers/sub/n/sub/naver-cloud/) as the canonical producer to the represented [HyperCLOVA X SEED family](./sub/hyperclova-x-seed/). NAVER Corporation's underlying model IP and NAVER Cloud Corporation's operating role are separate from hosted CLOVA Studio product routes. The catalog represents specific reviewed releases rather than implying a complete or timeless model inventory.
 
 ## Translations
 
