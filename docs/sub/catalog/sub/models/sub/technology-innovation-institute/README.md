@@ -1,6 +1,6 @@
 # Technology Innovation Institute models
 
-Technology Innovation Institute models is the Technology Innovation Institute model-domain view.
+This model-domain view links the [Technology Innovation Institute producer](../../../producers/sub/t/sub/technology-innovation-institute/) to its represented Falcon foundation-model family. The family includes distinct language/reasoning and visual-perception checkpoints with model-specific licensing and access terms. Demos, research programs and hosted services are separate from trained-model identities.
 
 ## Translations
 
