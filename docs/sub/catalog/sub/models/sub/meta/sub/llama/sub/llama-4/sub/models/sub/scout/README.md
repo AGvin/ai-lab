@@ -1,6 +1,8 @@
 # Llama 4 Scout
 
-Llama 4 Scout is a concrete model represented in AI Lab.
+Llama 4 Scout is Meta's released natively multimodal MoE model. Meta reports 17B active parameters, 16 experts and a 10M-token context window. Active parameters are not total stored weights; hardware fit depends on precision and runtime.
+
+The linked community video is qualitative research evidence, not authority for specifications, latency or general vision quality.
 
 ## Translations
 
@@ -14,4 +16,4 @@ Llama 4 Scout is a concrete model represented in AI Lab.
 
 - <https://ai.meta.com/blog/llama-4-multimodal-intelligence/>
 - <https://ai.meta.com/llama/get-started/>
-- <https://youtu.be/MCiZtNUsJbc>
+- Community evaluation (not an official specification): <https://youtu.be/MCiZtNUsJbc>
