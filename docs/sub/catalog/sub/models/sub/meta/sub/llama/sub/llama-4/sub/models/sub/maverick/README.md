@@ -1,6 +1,6 @@
 # Llama 4 Maverick
 
-Llama 4 Maverick is a concrete model represented in AI Lab.
+Llama 4 Maverick is Meta's released natively multimodal MoE model with 17B active parameters and 128 experts, distinct from Scout. Provider costs, throughput and benchmark rankings are not permanent model properties.
 
 ## Translations
 
