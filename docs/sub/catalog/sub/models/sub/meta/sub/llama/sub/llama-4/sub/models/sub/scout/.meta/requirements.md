@@ -11,3 +11,9 @@
 
 - Community impressions are clearly separated from official model facts.
 - Provider/runtime speed and qualitative vision conclusions are not presented as timeless intrinsic properties.
+
+## Verified card scope (2026-10-30)
+
+- Meta's official card reports 109B total and 17B active parameters, 10M-token context, text/image input and text/code output. The release uses the custom Llama 4 Community License; access and use remain subject to its terms.
+- Source: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+- Keep total and active counts separate; neither context capacity nor active count establishes runtime memory or throughput.
