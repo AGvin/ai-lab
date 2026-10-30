@@ -3,17 +3,17 @@ entity:
   type: model
   name: Muse Spark 1.3
   references:
-    - type: official-site
+    - type: article
       source:
-        url: https://ai.meta.com/events/
+        url: https://research.meta.ai/blog/introducing-muse-spark-1-3
       purposes:
         - identification
         - research
       authority: official
-      note: AI at Meta lists Muse Spark 1.3 as a current Muse model and records its September 2, 2026 introduction.
-    - type: product-page
+      note: Dated official launch announcement confirms release on September 2, 2026.
+    - type: documentation
       source:
-        url: https://ai.meta.com/llama
+        url: https://dev.meta.ai/models/muse-spark
       purposes:
         - research
       authority: official
