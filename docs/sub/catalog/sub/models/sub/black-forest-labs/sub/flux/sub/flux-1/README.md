@@ -1,6 +1,6 @@
 # FLUX.1
 
-FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog materializes FLUX.1-schnell, FLUX.1-dev, FLUX.1 Krea [dev], FLUX.1 Kontext [dev], FLUX.1 Fill [dev] and FLUX.1 Redux [dev], together with hosted Kontext [pro] and [max], as distinct catalog model identities. Redux is a dependent adapter; proprietary hosted weights and local dev weights must not be conflated. [BFL official model registry](https://huggingface.co/black-forest-labs) [FLUX.1-schnell model card](https://huggingface.co/black-forest-labs/FLUX.1-schnell).
+FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog materializes FLUX.1-schnell, FLUX.1-dev, FLUX.1 Krea [dev], FLUX.1 Kontext [dev], FLUX.1 Fill [dev] and FLUX.1 Redux [dev], together with hosted Kontext [pro] and [max], Fill [pro], and the separately released FLUX1.1 [pro] text-to-image model, as distinct catalog identities. Redux is a dependent adapter; proprietary hosted weights and local dev weights must not be conflated. [BFL official model registry](https://huggingface.co/black-forest-labs) [FLUX.1-schnell model card](https://huggingface.co/black-forest-labs/FLUX.1-schnell).
 
 ## Identity and scope
 
@@ -12,6 +12,8 @@ Redux [dev] conditions a compatible FLUX.1-dev or schnell base generator with an
 
 Kontext [pro] and [max] are separately named hosted BFL model options for image creation and editing, with distinct API routes and no published local weights. BFL currently lists both but recommends FLUX.2 for new applications. [Launch](https://bfl.ai/blog/flux-1-kontext) [Current guide](https://help.bfl.ai/articles/5186006235-what-is-flux-1-kontext).
 
+FLUX1.1 [pro] is a distinct later-generation BFL hosted text-to-image model in the FLUX.1 suite, while Ultra and Raw are serving modes rather than additional model checkpoints. Fill [pro] is BFL's hosted mask-based inpainting/outpainting model, distinct from gated Fill [dev]. BFL's Canny/Depth deprecation excludes Fill. [FLUX1.1 release](https://bfl.ai/blog/24-10-02-flux) [Ultra/Raw modes](https://bfl.ai/blog/24-11-06-ultra) [FLUX.1 Tools](https://bfl.ai/blog/24-11-21-tools).
+
 ## Use and limitations
 
 License, distillation method and inference-step facts belong to individual FLUX.1 models; do not apply schnell's Apache 2.0 license to the entire series. [FLUX.1-schnell model card](https://huggingface.co/black-forest-labs/FLUX.1-schnell).
@@ -22,6 +24,7 @@ License, distillation method and inference-step facts belong to individual FLUX.
 | --- | --- | --- |
 | `member-of` | [FLUX](../../README.md) | `model-family` |
 | `has-member` | [FLUX.1 Fill [dev]](sub/models/sub/flux-1-fill-dev/README.md) | `model` |
+| `has-member` | [FLUX.1 Fill [pro]](sub/models/sub/flux-1-fill-pro/README.md) | `model` |
 | `has-member` | [FLUX.1 Kontext [dev]](sub/models/sub/flux-1-kontext-dev/README.md) | `model` |
 | `has-member` | [FLUX.1 Kontext [max]](sub/models/sub/flux-1-kontext-max/README.md) | `model` |
 | `has-member` | [FLUX.1 Kontext [pro]](sub/models/sub/flux-1-kontext-pro/README.md) | `model` |
@@ -29,6 +32,7 @@ License, distillation method and inference-step facts belong to individual FLUX.
 | `has-member` | [FLUX.1 Redux [dev]](sub/models/sub/flux-1-redux-dev/README.md) | `model` |
 | `has-member` | [FLUX.1-dev](sub/models/sub/flux-1-dev/README.md) | `model` |
 | `has-member` | [FLUX.1-schnell](sub/models/sub/flux-1-schnell/README.md) | `model` |
+| `has-member` | [FLUX1.1 [pro]](sub/models/sub/flux-1-1-pro/README.md) | `model` |
 
 ## Navigation
 
