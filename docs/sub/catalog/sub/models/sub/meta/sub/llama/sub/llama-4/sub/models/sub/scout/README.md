@@ -4,6 +4,8 @@ Llama 4 Scout is Meta's released natively multimodal MoE model. Meta reports 17B
 
 The linked community video is qualitative research evidence, not authority for specifications, latency or general vision quality.
 
+Meta's official card reports 109B total and 17B active parameters, 10M-token context, text/image input and text/code output. The release uses the custom Llama 4 Community License; access and use remain subject to its terms.
+
 ## Translations
 
 - English
@@ -17,3 +19,5 @@ The linked community video is qualitative research evidence, not authority for s
 - <https://ai.meta.com/blog/llama-4-multimodal-intelligence/>
 - <https://ai.meta.com/llama/get-started/>
 - Community evaluation (not an official specification): <https://youtu.be/MCiZtNUsJbc>
+
+- [Official model card](https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct)
