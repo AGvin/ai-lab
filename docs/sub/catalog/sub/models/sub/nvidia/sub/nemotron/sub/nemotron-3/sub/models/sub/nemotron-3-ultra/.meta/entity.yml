@@ -16,6 +16,18 @@ entity:
       purposes:
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16
+      purposes: [identification, research]
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/nvidia/nemotron/nemotron-3
+  identity_note: >-
+    Separate post-trained 550B-total/55B-active NVIDIA Nemotron 3 Ultra
+    LatentMoE hybrid Mamba-2/Transformer model released 2026-06-04
+    under OpenMDW-1.1. NVIDIA specifies up to 1M-token context.
+    BF16 and NVFP4 variants are weight/serving forms, not new trained
+    identities. Distinct from separately released pretrained Ultra Base
+    and Ultra GenRM reward-model checkpoints.
