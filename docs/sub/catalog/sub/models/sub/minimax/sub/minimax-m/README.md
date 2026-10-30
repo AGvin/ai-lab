@@ -1,6 +1,6 @@
 # MiniMax M
 
-MiniMax M is a canonical model family represented in AI Lab.
+MiniMax M is MiniMax's model family for coding, reasoning and agentic workflows. The member materialized here is the distinct [MiniMax M3](./sub/models/sub/m3/) release; its architecture and release-specific abilities are not intrinsic properties of all MiniMax M checkpoints. MiniMax Code, hosting tiers, pricing and benchmarks belong to separately verified model or service claims, not the family identity.
 
 ## Translations
 
