@@ -3,7 +3,7 @@
 ## Requirements
 
 - Identify GLM as the long-lived Z.AI model family rather than one exact hosted model.
-- Link the canonical Z.AI producer and reviewed concrete GLM models.
+- Link the canonical Z.AI producer, reviewed concrete GLM models and the current canonical model collection index.
 - Distinguish exact model IDs from the family identity.
 - Keep provider service plans, pricing, quotas, and integration products outside canonical family identity.
 - Do not create empty series or model nodes solely to mirror the provider catalog.
