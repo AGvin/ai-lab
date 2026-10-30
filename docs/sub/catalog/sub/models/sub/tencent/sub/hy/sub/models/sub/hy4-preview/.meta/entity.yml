@@ -17,6 +17,19 @@ entity:
         - identification
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/tencent/Hy4-preview
+      purposes: [identification, research]
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/tencent/hy
+  identity_note: >-
+    Open-source preview model released 2026-08-28, not an unreleased
+    promise and not a stable production-service guarantee. Tencent Hy
+    Team reports a 770B-total/49B-active MoE backbone with 1M-token
+    model-card context and a separate native MTP layer. Tencent's
+    launch article describes context exceeding 1M tokens, which must
+    remain source-scoped. Checkpoint weights use Apache-2.0;
+    BF16 and FP8 are weight/serving artifacts of one trained model.
