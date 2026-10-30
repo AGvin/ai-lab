@@ -2,10 +2,22 @@ entity:
   id: catalog/models/technology-innovation-institute/falcon/models/falcon-h1r-7b
   type: model
   name: Falcon H1R 7B
+  identity_note: >-
+    Falcon H1R 7B is TII's reasoning-focused Falcon-H1 hybrid Transformer
+    and Mamba2 checkpoint derived from Falcon-H1-7B-Base. The official TII
+    model card publishes Falcon-LLM License terms, which are not inherited
+    by unrelated Falcon checkpoints.
   references:
     - type: article
       source:
         url: https://www.tii.ae/news/tii-launches-falcon-reasoning-best-7b-ai-model-globally-also-outperforms-larger-models.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/tiiuae/Falcon-H1R-7B
       purposes:
         - identification
         - research
