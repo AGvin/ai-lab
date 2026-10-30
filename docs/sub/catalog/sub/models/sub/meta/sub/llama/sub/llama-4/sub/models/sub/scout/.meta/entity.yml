@@ -23,6 +23,13 @@ entity:
         - research
       authority: community
       note: User-supplied practical evaluation reference; treat as qualitative community evidence rather than authoritative model specification.
+    - type: registry
+      source:
+        url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/meta/llama/llama-4
