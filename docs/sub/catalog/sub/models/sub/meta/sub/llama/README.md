@@ -1,6 +1,6 @@
 # Llama
 
-Llama is a canonical model family represented in AI Lab.
+Llama is Meta's model family. Llama 4 is represented as a series containing distinct trained models; release-specific licenses and deployment claims do not automatically apply to the whole family.
 
 ## Translations
 
