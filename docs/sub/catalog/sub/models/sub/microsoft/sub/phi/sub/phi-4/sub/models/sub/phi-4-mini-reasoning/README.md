@@ -1,6 +1,6 @@
 # Phi-4 Mini Reasoning
 
-Phi-4 Mini Reasoning is the released compact reasoning-focused Phi-4 variant rather than an alias for Phi-4 Mini Instruct.
+Phi-4 Mini Reasoning is Microsoft's released compact mathematical-reasoning checkpoint, distinct from Phi-4 Mini Instruct and larger Phi-4 Reasoning. Its official model card specifies a **3.8B-parameter dense decoder-only Transformer**, **128K-token context**, **English-language** scope, **MIT** license and **April 2025** release. Microsoft describes supervised tuning using synthetic mathematical data; neither this training focus nor benchmark claims guarantees reasoning accuracy on new tasks.
 
 ## Translations
 
