@@ -1,6 +1,6 @@
 # HyperCLOVA X SEED
 
-HyperCLOVA X SEED is NAVER Cloud's open model line from Korea's sovereign foundation-model program.
+HyperCLOVA X SEED is NAVER Cloud's model line developed in Korea's sovereign foundation-model program. NAVER Cloud's **December 29, 2025** release describes two separately materialized checkpoints: **8B Omni**, a native omnimodal model jointly trained on text, images and audio, and **32B Think**, a reasoning-oriented model augmented with visual understanding, voice interaction and tool use. Publisher capability or benchmark descriptions are not independent performance guarantees; exact downloadable artifacts and model-specific license terms must be checked at the corresponding release.
 
 ## Translations
 
