@@ -5,7 +5,6 @@ This model-domain view groups model families produced by Microsoft. Canonical or
 ## Translations
 
 - English
-- [Українська](./l10n/uk_UA/)
 
 ## Model families
 
