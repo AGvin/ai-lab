@@ -2,7 +2,7 @@
 
 MiniMax M3 is MiniMax's separately released coding and agentic model announced on **June 1, 2026**. Its publisher documents **MiniMax Sparse Attention (MSA)** and support for a context window of **up to 1 million tokens**, with native **image and video input** and desktop computer-operation capabilities. These statements describe the released M3 model, not guaranteed accuracy, model-serving throughput or independent benchmark reproduction.
 
-MiniMax's subsequently published [official model repository](https://huggingface.co/MiniMaxAI/MiniMax-M3) reports approximately **428B total parameters** and **23B activated parameters**. Total and active counts are different quantities; neither establishes practical memory, latency or cost for a selected inference configuration. The June 1 launch post discussed a planned later weight release; the linked official repository supplies current weight-publication evidence without establishing rights beyond the applicable license.
+MiniMax's subsequently published [official model repository](https://huggingface.co/MiniMaxAI/MiniMax-M3) reports approximately **428B total parameters** and **23B activated parameters**. Total and active counts are different quantities; neither establishes practical memory, latency or cost for a selected inference configuration. The June 1 launch post discussed a planned later weight release; the linked official repository supplies current weight-publication evidence with the **MiniMax Community License** stated on its official model card; verify the exact license terms before reuse or redistribution.
 
 ## Model and access boundaries
 
