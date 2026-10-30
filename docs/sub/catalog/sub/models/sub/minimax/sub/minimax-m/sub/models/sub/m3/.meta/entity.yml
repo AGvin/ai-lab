@@ -2,10 +2,23 @@ entity:
   id: catalog/models/minimax/minimax-m/models/m3
   type: model
   name: MiniMax M3
+  identity_note: >-
+    MiniMax M3 is MiniMax's released June 1, 2026 M-series coding and
+    agentic model with MiniMax Sparse Attention, native text/image/video
+    inputs and up to a one-million-token context. MiniMax's subsequently
+    published official weights card reports approximately 428B total
+    parameters and 23B activated parameters.
   references:
     - type: article
       source:
         url: https://www.minimax.io/blog/minimax-m3
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/MiniMaxAI/MiniMax-M3
       purposes:
         - identification
         - research
