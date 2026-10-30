@@ -2,7 +2,7 @@ entity:
   id: catalog/models/black-forest-labs/flux/flux-1/models
   type: catalog-index
   name: FLUX.1 Models
-  identity_note: Navigation index for concrete FLUX.1 model records. It currently contains FLUX.1-schnell, FLUX.1-dev, FLUX.1 Krea [dev], FLUX.1 Kontext [dev] and FLUX.1 Fill [dev] and has
+  identity_note: Navigation index for concrete FLUX.1 model records. It currently contains FLUX.1-schnell, FLUX.1-dev, FLUX.1 Krea [dev], FLUX.1 Kontext [dev], FLUX.1 Fill [dev] and FLUX.1 Redux [dev] and has
     no independent trained weights, serving contract or producer identity.
   references:
   - type: documentation
