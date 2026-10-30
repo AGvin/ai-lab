@@ -1,6 +1,6 @@
 # Kimi Models
 
-Kimi Models lists the materialized child entries for this part of the catalog.
+This collection lists independently materialized concrete models of the Kimi family, currently [Kimi K3](./sub/kimi-k3/). Hosted API aliases, weight quantizations and provider-specific artifacts do not create additional trained-model identities.
 
 ## Translations
 
