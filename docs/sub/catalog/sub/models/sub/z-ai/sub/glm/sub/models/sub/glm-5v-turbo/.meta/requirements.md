@@ -16,6 +16,7 @@
 - Preserve April 1, 2026 as the official release date.
 - Present visual-programming, coding, planning, GUI, and agent-workflow capability statements as provider positioning rather than independent acceptance evidence.
 - Include current Z.AI model documentation and release notes.
+- Render a translation link only when its corresponding localized page exists.
 
 ## Validation
 
