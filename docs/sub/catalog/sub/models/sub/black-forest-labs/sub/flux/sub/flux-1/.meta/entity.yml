@@ -30,5 +30,7 @@ entity:
     target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-schnell
   - type: has-member
     target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-dev
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-krea-dev
   identity_note: FLUX.1 is the first FLUX image-model series from Black Forest Labs. This catalog currently materializes
-    FLUX.1-schnell and FLUX.1-dev as distinct models; their weights and licenses are not interchangeable.
+    FLUX.1-schnell, FLUX.1-dev and FLUX.1 Krea [dev] as distinct models; their weights and licenses are not interchangeable.

@@ -12,6 +12,8 @@ Model provenance is separate from hosted image APIs, distributed model artifacts
 
 - Produces: [FLUX](../../../../../models/sub/black-forest-labs/sub/flux/)
 
+- Produces jointly with Krea: [FLUX.1 Krea [dev]](../../../../../models/sub/black-forest-labs/sub/flux/sub/flux-1/sub/models/sub/flux-1-krea-dev/README.md)
+
 ## Official resources
 
 - [Black Forest Labs](https://bfl.ai/)
