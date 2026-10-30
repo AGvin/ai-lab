@@ -1,6 +1,8 @@
 # Falcon
 
-Falcon is TII's foundation-model family and preserve materially distinct current releases as concrete children.
+Falcon is the Technology Innovation Institute's foundation-model family. This catalog materializes the reasoning-focused Falcon H1R 7B checkpoint and the image-grounding Falcon Perception model as distinct concrete members. The Falcon portfolio also includes other separately named checkpoints; listing them on the official family page does not make their model properties interchangeable.
+
+H1R derives from Falcon-H1-7B-Base with a hybrid Transformer/Mamba2 architecture and Falcon-LLM License. Falcon Perception uses an early-fusion vision-language architecture for localization and segmentation, under Apache-2.0 for its referenced release. The two licenses and modalities must not be inherited across the family.
 
 ## Translations
 
