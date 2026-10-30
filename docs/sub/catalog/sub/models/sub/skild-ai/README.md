@@ -1,6 +1,6 @@
 # Skild AI models
 
-Skild AI models is the model-domain view for this producer in AI Lab.
+This is the model-domain view for Skild AI. The [canonical producer](../../../producers/sub/s/sub/skild-ai/) holds the organization identity, while the [Skild Brain family](./sub/skild-brain/) owns the represented robotics foundation-model hierarchy.
 
 ## Translations
 
@@ -12,9 +12,9 @@ Skild AI models is the model-domain view for this producer in AI Lab.
 
 ## Scope and boundaries
 
-- Robotics applications, deployed robot platforms, NVIDIA infrastructure, and customer-specific deployments remain outside the model-domain ownership view unless they acquire independent catalog identities.
+Robot platforms, customer deployments, hardware/controls, NVIDIA training infrastructure, and commercial integration terms are separate from the trained-model identities. An observed demonstration does not establish unrestricted weights access or a safety case for all environments.
 
 ## Official resources
 
-- <https://www.skild.ai/>
-- <https://www.skild.ai/blogs/s1>
+- [Skild AI](https://www.skild.ai/)
+- [S1 model research](https://www.skild.ai/blogs/s1)
