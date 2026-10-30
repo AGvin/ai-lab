@@ -5,7 +5,6 @@ Phi is Microsoft's family of compact language, reasoning, and multimodal models.
 ## Translations
 
 - English
-- [Українська](./l10n/uk_UA/)
 
 ## Producer
 
