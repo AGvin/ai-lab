@@ -6,6 +6,10 @@ GLM is the long-lived Z.AI model family. Its canonical members identify individu
 
 Exact model identifiers, release capabilities and weight availability belong to the corresponding model records. Hosted service plans, pricing, quotas and integrations are separate access concerns. This page projects the already-canonical family membership; it does not create placeholders for every model in the provider inventory.
 
+## Model collection
+
+- [Browse the GLM model index](./sub/models/) for all materialized concrete model pages.
+
 ## Relations
 
 - Has member: [GLM-5.3](sub/models/sub/glm-5-3/)
