@@ -16,6 +16,17 @@ entity:
       purposes:
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/tencent/Hy3
+      purposes: [identification, research]
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/tencent/hy
+  identity_note: >-
+    Official 2026-07-06 stable Hy3 release, distinct from the earlier
+    Hy3 preview and from later Hy4 preview. Tencent Hy Team's MoE
+    reasoning and agent model has 295B total and 21B active parameters,
+    up to 256K tokens of context, and Apache-2.0 published weights.
+    Product integration and hosted API routes are separate access concerns.
