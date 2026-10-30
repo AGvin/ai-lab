@@ -2,6 +2,13 @@ entity:
   id: catalog/models/sarvam-ai/sarvam/models/sarvam-105b
   type: model
   name: Sarvam-105B
+  identity_note: >-
+    Sarvam-105B is Sarvam AI's open-weight flagship reasoning/chat Mixture-of-Experts
+    model, released March 6, 2026. Its first-party documentation states 105B-plus
+    total parameters, 128 sparse experts, Multi-head Latent Attention, a 128K-token
+    chat context, and an Apache-2.0 release. Current chat API also lists a
+    separately post-trained 105B Conversations variant; API routes are not
+    intrinsic trained-model identities.
   references:
     - type: article
       source:
