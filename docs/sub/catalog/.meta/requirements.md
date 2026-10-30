@@ -14,3 +14,5 @@
 - The child-navigation block matches the validated materialized direct-child projection and every destination resolves to a direct child of `catalog/`.
 - The page does not duplicate the complete descendant taxonomy.
 - The page does not absorb reusable abstract concepts, learning, project policy, or other non-catalog documentation ownership.
+
+- For confirmed Russian-origin, Russian-operated, Russian-controlled or Russian-upstream resources, apply the mandatory **DANGEROUS — NOT RECOMMENDED** restriction across all catalog domains, regardless of audit results, permissive licensing or sanction status. The canonical [Russia-linked AI exclusion policy](../../project/sub/policies/sub/russia-linked-ai/) governs prominent warning text, entity/requirements ownership, research-only treatment and exclusion from all recommendations. Do not infer provenance from ethnicity or individual names alone.
