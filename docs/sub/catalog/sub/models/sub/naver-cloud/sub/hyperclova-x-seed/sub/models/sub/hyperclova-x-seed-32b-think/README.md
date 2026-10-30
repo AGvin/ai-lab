@@ -1,6 +1,6 @@
 # HyperCLOVA X SEED 32B Think
 
-HyperCLOVA X SEED 32B Think is the released reasoning-oriented checkpoint with NAVER Cloud's first-party positioning around vision, speech, and tool-use capability.
+HyperCLOVA X SEED 32B Think is NAVER Cloud's separately released reasoning-oriented checkpoint, announced on **December 29, 2025** alongside 8B Omni. NAVER Cloud describes its combination of reasoning, visual understanding, **voice interaction** and **tool use** for agent workflows. These capabilities and the publisher-cited benchmark comparisons are source-scoped claims, not independent AI Lab measurements; no specific speech synthesis mode, latency, runtime package, context limit or legal permission is inferred without checkpoint-specific evidence. The 32B Think and native-omnimodal 8B Omni remain distinct trained-model identities.
 
 ## Translations
 
