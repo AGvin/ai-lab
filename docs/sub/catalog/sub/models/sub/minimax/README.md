@@ -1,6 +1,6 @@
 # MiniMax models
 
-MiniMax models is the model-domain view for this producer in AI Lab.
+This model-domain view links the [canonical MiniMax producer](../../../producers/sub/m/sub/minimax/) to its represented [MiniMax M model family](./sub/minimax-m/). MiniMax Code, MiniMax Design, API plans and other hosted service surfaces are not trained-model identities; release-specific facts belong to the appropriate family or concrete model.
 
 ## Translations
 
