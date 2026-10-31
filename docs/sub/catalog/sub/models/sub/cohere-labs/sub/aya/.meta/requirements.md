@@ -2,8 +2,9 @@
 
 ## Requirements
 
-- Preserve Aya as the model-family identity with produced-by Cohere Labs and the existing Expanse, Vision and Tiny Aya membership pairs.
-- Describe the three represented series without copying their parameter, language, license or context aggregates into intrinsic family metadata.
+- Preserve Aya as the model-family identity with produced-by Cohere Labs and the existing Aya 23, Expanse, Vision and Tiny Aya membership pairs.
+- Describe the four represented series without copying their parameter, language, license or context aggregates into intrinsic family metadata.
+- Document Aya 23 as a separate 2024 source-backed research-weight series with 8B and 35B checkpoints, 23 languages, 8,192-token context, gated CC-BY-NC-4.0 rights and no implied hosted API availability.
 - Explain that first-party datasets, benchmarks and research publications are different objects from the trained models.
 - Use model-specific cards and current API documentation for concrete facts; do not repeat the initiative landing page's conflicting Expanse 101-language marketing claim.
 - Preserve exact model and producer lineage when material training or co-production is documented, including cross-group relationships.

@@ -1,0 +1,38 @@
+entity:
+  id: catalog/models/cohere-labs/aya/aya-23
+  type: model-series
+  name: Aya 23
+  identity_note: >-
+    Aya 23 is the older multilingual text-model release series of 23 May 2024, containing
+    separate instruction-tuned 8B and 35B research-weight checkpoints with 23-language coverage
+    and 8,192-token context. The CC-BY-NC-4.0 weights are gated and subject to Cohere Labs
+    acceptable-use conditions. Do not confuse this series with Aya Expanse, Aya Vision, API
+    provider availability, a separately released base checkpoint, or a documented exact training parent.
+  references:
+    - type: article
+      source:
+        url: https://cohere.com/blog/aya23
+      purposes: [identification, research]
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/CohereLabs/aya-23-8B
+      purposes: [identification, research]
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/CohereLabs/aya-23-35B
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/aya
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere-labs/aya
+    - type: has-member
+      target: catalog/models/cohere-labs/aya/aya-23/models/aya-23-8b
+    - type: has-member
+      target: catalog/models/cohere-labs/aya/aya-23/models/aya-23-35b
