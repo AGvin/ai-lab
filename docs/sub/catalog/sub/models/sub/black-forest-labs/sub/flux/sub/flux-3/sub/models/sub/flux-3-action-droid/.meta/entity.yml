@@ -1,0 +1,40 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-action-droid
+  type: model
+  name: FLUX 3 Action DROID
+  identity_note: >-
+    FLUX 3 Action DROID is the separately released Black Forest Labs DROID embodiment fine-tuned policy.
+    It is fine-tuned from the FLUX 3 Action 7B adaptation base for the DROID robot data/observation/action convention. DROID camera/state/action preprocessing and a matching action head are required; adapting this policy is not evidence of safe use on a different physical robot.
+    Weights are gated under the FLUX Kommunity License; the Apache-2.0
+    reference code and auxiliary encoders have separate license boundaries.
+    BFL benchmark and speed numbers are publisher evidence, not AI Lab tests.
+    No robot-deployment safety certification or local inference is established.
+  references:
+  - type: documentation
+    source:
+      url: https://huggingface.co/black-forest-labs/flux-3-action-droid
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/blog/black-forest-labs/flux-3-action
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://bfl.ai/models/flux-3-action
+    purposes:
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/black-forest-labs/flux-action/blob/main/docs/setup.md
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-3

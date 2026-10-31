@@ -1,0 +1,40 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-action-droid-step-distilled
+  type: model
+  name: FLUX 3 Action DROID step-distilled
+  identity_note: >-
+    FLUX 3 Action DROID step-distilled is the separately released Black Forest Labs single-step-distilled separately trained DROID student.
+    It is initialized from the guidance-distilled student and trained for reduced diffusion steps, with BF16 learned weights in `variants/sd`. `variants/sd-fp8r` is the precision artifact, not an independently trained checkpoint. Runtime behavior and speed depend on a correctly selected scheduler and loader.
+    Weights are gated under the FLUX Kommunity License; the Apache-2.0
+    reference code and auxiliary encoders have separate license boundaries.
+    BFL benchmark and speed numbers are publisher evidence, not AI Lab tests.
+    No robot-deployment safety certification or local inference is established.
+  references:
+  - type: documentation
+    source:
+      url: https://huggingface.co/black-forest-labs/flux-3-action-droid/tree/main/variants/sd
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/blog/black-forest-labs/flux-3-action
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://bfl.ai/models/flux-3-action
+    purposes:
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/black-forest-labs/flux-action/blob/main/docs/setup.md
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-3

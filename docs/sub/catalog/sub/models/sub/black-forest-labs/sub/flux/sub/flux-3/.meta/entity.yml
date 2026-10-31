@@ -62,9 +62,17 @@ entity:
   - type: has-member
     target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-action
   - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-action-droid
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-action-droid-guidance-distilled
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-action-droid-step-distilled
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-action-so101
+  - type: has-member
     target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-image-klein-base
   - type: has-member
     target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-image-klein
   identity_note: FLUX 3 is Black Forest Labs' multimodal model series built around shared image, video and audio
     learning, with specialized Image, Video and Action members. The series and its rollout program are not one universally
-    released checkpoint.
+    released checkpoint. The Action adaptation base is separate from trained DROID, SO-101, and two distilled DROID policies.

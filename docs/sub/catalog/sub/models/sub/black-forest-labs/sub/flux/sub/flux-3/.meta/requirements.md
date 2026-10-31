@@ -15,3 +15,9 @@
 - Preserve the canonical identity, model hierarchy and exact reciprocal relation targets; distinguish producer, family, series, model, artifact and serving identities.
 - Render all visible current-node relations in deterministic order and resolve local reader links. Restore missing readers from canonical facts without granting dependency-domain credit.
 - Keep source dates, availability, license conditions and service-specific limits attributable. Do not turn provider claims into local runtime, performance or benchmark verification.
+
+## Released FLUX 3 Action policy identities
+
+- Materialize four distinct trained robotics model identities in addition to the existing 7B Action adaptation base: DROID fine-tuned, DROID guidance-distilled, DROID step-distilled, and SO-101 fine-tuned. The DROID variants `variants/gd` and `variants/sd` are different learned weights; `gd-fp8r` and `sd-fp8r` are precision artifacts only. [BFL release](https://huggingface.co/blog/black-forest-labs/flux-3-action) [DROID repository](https://huggingface.co/black-forest-labs/flux-3-action-droid) [Reference setup](https://github.com/black-forest-labs/flux-action/blob/main/docs/setup.md).
+- Each action policy is gated under FLUX Kommunity License and requires embodiment-specific action/state encoders, runtime/inference checks and independent physical safety controls. Do not transfer DROID benchmark claims to SO-101 or the base model. [BFL model information](https://bfl.ai/models/flux-3-action).
+- Extend exact `has-member` / `member-of` relations and rendered reader links without extra acceptance credit for previously tracked series or adaptation base.

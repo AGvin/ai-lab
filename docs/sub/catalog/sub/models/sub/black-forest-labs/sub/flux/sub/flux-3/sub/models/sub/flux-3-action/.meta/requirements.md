@@ -18,3 +18,8 @@
 - Preserve the canonical identity, model hierarchy and exact reciprocal relation targets; distinguish producer, family, series, model, artifact and serving identities.
 - Render all visible current-node relations in deterministic order and resolve local reader links. Restore missing readers from canonical facts without granting dependency-domain credit.
 - Keep source dates, availability, license conditions and service-specific limits attributable. Do not turn provider claims into local runtime, performance or benchmark verification.
+
+## Related separately trained policies
+
+- The base checkpoint remains a distinct accepted identity from DROID, SO-101 and trained DROID guidance-/step-distilled students; track each as a separate sibling with its own sources, license and robot action conventions. [DROID card](https://huggingface.co/black-forest-labs/flux-3-action-droid) [SO-101 card](https://huggingface.co/black-forest-labs/flux-3-action-so101) [BFL research](https://bfl.ai/models/flux-3-action).
+- Update the base's reader with links to the materialized sibling policy nodes, without treating them as variants of this base model ID or re-crediting base acceptance.

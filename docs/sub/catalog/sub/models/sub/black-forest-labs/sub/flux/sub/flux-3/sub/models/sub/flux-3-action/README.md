@@ -18,6 +18,15 @@ The model does not enforce joint, velocity, force or workspace limits. Applicati
 
 Fine-tuning, BF16/FP8 inference and CPU-offload paths have different loaders and memory requirements. Pin the exact checkpoint, precision, code revision and encoder placement instead of using one policy's measured VRAM as a base-model guarantee. [FLUX 3 Action adaptation base card](https://huggingface.co/black-forest-labs/flux-3-action-base) [FLUX 3 Action reference code](https://github.com/black-forest-labs/flux-action).
 
+## Related trained policies
+
+- [FLUX 3 Action DROID](../flux-3-action-droid/README.md) — DROID embodiment fine-tuned policy
+- [FLUX 3 Action DROID guidance-distilled](../flux-3-action-droid-guidance-distilled/README.md) — guidance-distilled separately trained DROID student
+- [FLUX 3 Action DROID step-distilled](../flux-3-action-droid-step-distilled/README.md) — single-step-distilled separately trained DROID student
+- [FLUX 3 Action SO-101](../flux-3-action-so101/README.md) — SO-101 embodiment fine-tuned policy
+
+These independently trained sibling policies have embodiment-specific action/state conventions, and FP8r precision packaging does not create extra trained models. [BFL release](https://huggingface.co/blog/black-forest-labs/flux-3-action).
+
 ## Relations
 
 | Relation | Target | Target type |
