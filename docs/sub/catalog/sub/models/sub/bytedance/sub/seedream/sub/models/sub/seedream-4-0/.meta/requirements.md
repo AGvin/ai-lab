@@ -6,6 +6,10 @@
 - The released 4.0 model supports text-to-image, image editing, visual conditioning, multi-image references and output up to the advertised 4K tier. Product demonstrations and historical rankings are ByteDance claims. [Seedream 4.0 release](https://seed.bytedance.com/en/blog/seedream-4-0-officially-released-beyond-drawing-into-imagination) [Seedream 4.0 product page](https://seed.bytedance.com/en/seedream4_0).
 - BytePlus currently lists seedream-4-0-250828 as its service identifier. This dated endpoint label is not the public release date and does not create another learned-model node by itself. [BytePlus ModelArk model list](https://docs.byteplus.com/en/docs/ModelArk/1330310).
 
+## Route-specific lifecycle
+
+**The original 4.0 release date does not guarantee current endpoint availability.** Volcengine's notice lists doubao-seedream-4-0-250828 with EOM on 2026-09-24 and EOS on 2026-11-24 14:00 (UTC+8). Its recommended replacement is doubao-seedream-4-0-20260415. LAS separately schedules termination of the older 250828 route on 2026-11-18. Verify the actual provider/region/API and validate replacement behavior; these notices do not establish global BytePlus retirement or a new independently trained model merely from a dated endpoint string. [Ark lifecycle notice](https://docs.volcengine.com/docs/ark/model-deprecation-notice?lang=zh) [LAS notice](https://docs.volcengine.com/docs/lake-ai-service/operator-service-discontinuation-announcement-5th?lang=zh).
+
 ## Operational decision boundaries
 
 - In the reviewed BytePlus API, 4.0 supports one image or sequential batches. Multi-reference requests accept up to fourteen input images, with total input plus generated images at most fifteen; resolution tiers include 1K, 2K and 4K. These limits belong to that service revision. [BytePlus image generation API](https://docs.byteplus.com/en/docs/ModelArk/1541523).
