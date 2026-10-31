@@ -12,13 +12,14 @@ The launch described clips up to 20 seconds at native 720p, with 1080p upscaling
 
 Hosted processing and private weight licensing have separate terms and deployment boundaries. Generated audio, dialogue and continuity need application review; provider demos and speed comparisons are not local measurements. [FLUX 3 Video release](https://bfl.ai/blog/flux-3-video) [FLUX 3 Video product page](https://bfl.ai/models/flux-3-video).
 
-The current page also promotes FLUX 3 Max. This assessment does not infer a new trained-model identity from navigation or speed copy alone; any separate Max intake needs explicit identity and serving evidence. [FLUX 3 Video product page](https://bfl.ai/models/flux-3-video).
+FLUX 3 Max is a separately post-trained fal Research derivative developed in collaboration with BFL; preserve its distinct identity, hosted access and source-specific claims. [Original fal announcement](https://fal.ai/blog/introducing-flux-3-max-by-fal).
 
 ## Relations
 
 | Relation | Target | Target type |
 | --- | --- | --- |
 | `member-of` | [FLUX 3](../../../../README.md) | `model-series` |
+| `has-derivative` | [FLUX 3 Max](../../../../../../../../../fal/sub/flux-3-max/README.md) | `model` |
 
 ## Sources
 

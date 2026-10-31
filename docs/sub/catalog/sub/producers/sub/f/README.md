@@ -2,6 +2,7 @@
 
 Producer names and publishing aliases beginning with F.
 
+- [fal (Features & Labels, Inc.)](./sub/features-and-labels-inc/)
 - [Fiddler Labs, Inc.](./sub/fiddler-labs-inc/)
 - [Fireworks.ai, Inc.](./sub/fireworks-ai-inc/)
 - [Fission](./sub/fission/)

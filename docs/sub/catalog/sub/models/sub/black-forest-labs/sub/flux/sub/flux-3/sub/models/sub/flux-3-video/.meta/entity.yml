@@ -22,6 +22,8 @@ entity:
   relations:
   - type: member-of
     target: catalog/models/black-forest-labs/flux/flux-3
+  - type: has-derivative
+    target: catalog/models/fal/flux-3-max
   identity_note: FLUX 3 Video is Black Forest Labs' released FLUX 3 video-generation model with native audio. It
     supports text, image and video-conditioned workflows; the public API and separately negotiated weight access
     are distribution routes for the named model.

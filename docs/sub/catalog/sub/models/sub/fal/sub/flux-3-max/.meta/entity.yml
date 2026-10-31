@@ -1,0 +1,55 @@
+entity:
+  id: catalog/models/fal/flux-3-max
+  name: FLUX 3 Max
+  type: model
+  identity_note: FLUX 3 Max is fal Research's separately post-trained video model,
+    developed in collaboration with Black Forest Labs from FLUX 3 Video. fal hosts
+    text-to-video, image-to-video and keyframes-to-video workflows for the same model.
+  references:
+  - type: documentation
+    source:
+      url: https://fal.ai/blog/introducing-flux-3-max-by-fal
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://fal.ai/flux-3-max
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://fal.ai/models/blackforestlabs/flux-3-max/text-to-video
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://fal.ai/models/blackforestlabs/flux-3-max/image-to-video
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://fal.ai/models/blackforestlabs/flux-3-max/keyframes-to-video
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://fal.ai/legal/terms-of-service
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/f/features-and-labels-inc
+  - type: derived-from
+    target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-video
