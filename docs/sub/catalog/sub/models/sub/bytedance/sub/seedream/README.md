@@ -4,7 +4,7 @@ Seedream is ByteDance Seed's image-generation and image-editing model family. Co
 
 ## Identity and scope
 
-ByteDance Seed produces the released Seedream 4.0 and 5.0 Pro models represented here. Seedance, SeedAudio and consumer products have separate identities. [ByteDance Seed models](https://seed.bytedance.com/en/models) [Seedream 4.0 release](https://seed.bytedance.com/en/blog/seedream-4-0-officially-released-beyond-drawing-into-imagination) [Seedream 5.0 Pro release](https://seed.bytedance.com/en/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro).
+ByteDance Seed produces the released Seedream 4.0, 5.0 Pro and 5.0 Flash models represented here. Seedance, SeedAudio and consumer products have separate identities. [ByteDance Seed models](https://seed.bytedance.com/en/models) [Seedream 4.0 release](https://seed.bytedance.com/en/blog/seedream-4-0-officially-released-beyond-drawing-into-imagination) [Seedream 5.0 Pro release](https://seed.bytedance.com/en/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro) [Flash release bulletin](https://docs.byteplus.com/en/docs/modelark/model-release-announcement).
 
 ## Route-specific lifecycle
 
@@ -16,6 +16,8 @@ BytePlus deactivated Lite in eu-west-1 on 2026-09-10 and directs users to ap-sou
 
 Choose the exact model and provider route for batch generation, editing, search, output resolution and rights. In particular, current 5.0 Pro serving features do not automatically inherit 4.0 batch behavior or 5.0 Lite search capabilities. [BytePlus ModelArk model list](https://docs.byteplus.com/en/docs/ModelArk/1330310) [BytePlus image generation API](https://docs.byteplus.com/en/docs/ModelArk/1541523) [Seedream 5.0 Lite release](https://seed.bytedance.com/en/blog/deeper-thinking-more-accurate-generation-introducing-seedream-5-0-lite).
 
+Seedream 5.0 Flash is a separately announced September 2026 hosted model with distinct provider-specific route IDs. Its standard optimization, interactive editing and layer decomposition should not be confused with Lite/4.5 sequential-image generation or Pro's additional fast optimization mode. Weight lineage relative to Pro is not disclosed. [BytePlus release bulletin](https://docs.byteplus.com/en/docs/modelark/model-release-announcement) [BytePlus Pro/Flash tutorial](https://docs.byteplus.com/en/docs/modelark/seedream-5-0-pro) [BytePlus image generation API](https://docs.byteplus.com/en/docs/modelark/image-generation-api).
+
 The family record establishes provenance and navigation. It does not imply downloadable weights, one license, a shared parameter count or identical regional availability. [ByteDance Seed models](https://seed.bytedance.com/en/models) [BytePlus ModelArk model list](https://docs.byteplus.com/en/docs/ModelArk/1330310).
 
 ## Relations
@@ -25,6 +27,7 @@ The family record establishes provenance and navigation. It does not imply downl
 | `produced-by` | [ByteDance Seed](../../../../../producers/sub/b/sub/bytedance-seed/README.md) | `team` |
 | `has-member` | [Seedream 4.0](sub/models/sub/seedream-4-0/README.md) | `model` |
 | `has-member` | [Seedream 5.0 Pro](sub/models/sub/seedream-5-0-pro/README.md) | `model` |
+| `has-member` | [Seedream 5.0 Flash](sub/models/sub/seedream-5-0-flash/README.md) | `model` |
 
 ## Sources
 
@@ -34,3 +37,5 @@ The family record establishes provenance and navigation. It does not imply downl
 - [BytePlus ModelArk model list](https://docs.byteplus.com/en/docs/ModelArk/1330310)
 - [BytePlus image generation API](https://docs.byteplus.com/en/docs/ModelArk/1541523)
 - [Seedream 5.0 Lite release](https://seed.bytedance.com/en/blog/deeper-thinking-more-accurate-generation-introducing-seedream-5-0-lite)
+- [BytePlus Flash release bulletin](https://docs.byteplus.com/en/docs/modelark/model-release-announcement)
+- [BytePlus Seedream Pro/Flash tutorial](https://docs.byteplus.com/en/docs/modelark/seedream-5-0-pro)

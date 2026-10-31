@@ -69,6 +69,19 @@ entity:
     purposes:
     - research
     authority: official
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/modelark/model-release-announcement
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/modelark/seedream-5-0-pro
+    purposes:
+    - research
+    authority: official
   relations:
   - type: produced-by
     target: catalog/producers/b/bytedance-seed
@@ -76,6 +89,8 @@ entity:
     target: catalog/models/bytedance/seedream/models/seedream-4-0
   - type: has-member
     target: catalog/models/bytedance/seedream/models/seedream-5-0-pro
+  - type: has-member
+    target: catalog/models/bytedance/seedream/models/seedream-5-0-flash
   identity_note: Seedream is ByteDance Seed's image-generation and image-editing model family. Concrete releases
     have different capabilities and hosted access contracts; the family is distinct from ByteDance's apps, API providers
     and other model families.
