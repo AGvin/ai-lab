@@ -4,6 +4,9 @@ Materialized child entries for this part of the catalog.
 
 ## Child pages
 
+- [Embed English v2](./sub/embed-english-v2-0/)
+- [Embed English Light v2](./sub/embed-english-light-v2-0/)
+- [Embed Multilingual v2](./sub/embed-multilingual-v2-0/)
 - [Embed English v3](./sub/embed-english-v3-0/)
 - [Embed English Light v3](./sub/embed-english-light-v3-0/)
 - [Embed Multilingual v3](./sub/embed-multilingual-v3-0/)

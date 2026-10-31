@@ -1,0 +1,35 @@
+entity:
+  id: catalog/models/cohere/embed/models/embed-english-light-v2-0
+  type: model
+  name: Embed English Light v2
+  references:
+  - type: release-notes
+    source:
+      url: https://docs.cohere.com/changelog/model-names-are-changing
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://docs.cohere.com/changelog/2026-04-04-embed-v2-aya-8b-retirement
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/models
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/reference/embed
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/cohere/embed
