@@ -9,7 +9,7 @@ entity:
     target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-image-klein
   identity_note: FLUX 3 Image Klein Base is Black Forest Labs' 5.6-billion-parameter undistilled base image-generation
     and editing model, released on 2026-10-15 under the FLUX Kommunity license. The generator count excludes the
-    text encoder and optional separate prompt-upsampler model.
+    text encoder and separate prompt-upsampling stage.
   references:
   - type: article
     source:
