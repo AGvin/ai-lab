@@ -12,6 +12,8 @@ The card explicitly credits Cohere and Cohere Labs and identifies North-Mini-Cod
 - The weights state Apache 2.0. BF16 and quantized distributions are model artifacts; choose supported serving and precision settings rather than treating each filename as a new learned model. [North Mini Code model card](https://huggingface.co/CohereLabs/North-Mini-Code-1.0).
 - The model generates code and tool requests. Repository access, terminal execution, permissions and test execution belong to its harness. Benchmark results depend on the producer’s specified harness and were not reproduced here. [North Mini Code model card](https://huggingface.co/CohereLabs/North-Mini-Code-1.0) [North Mini Code documentation](https://docs.cohere.com/docs/north-mini-code-1.0).
 
+- A separately released [North Mini Code Eagle draft](../north-mini-code-1-0-eagle/) provides optional speculative decoding in a compatible vLLM configuration. It is not the 30B target model, a quantization or a validated context extension. The card's measured model size (~79.2M BF16 parameters) and three draft layers do not establish runtime speedup without representative measurements. [Eagle draft card](https://huggingface.co/CohereLabs/North-Mini-Code-1.0-eagle).
+
 ## Catalog relations
 
 - [Cohere Labs](../../../../../../../../../producers/sub/c/sub/cohere-labs/) — producer.

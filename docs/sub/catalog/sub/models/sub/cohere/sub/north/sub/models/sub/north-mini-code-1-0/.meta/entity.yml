@@ -23,6 +23,12 @@ entity:
     - identification
     - research
     authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/CohereLabs/North-Mini-Code-1.0-eagle
+    purposes:
+    - research
+    authority: official
   relations:
   - type: member-of
     target: catalog/models/cohere/north

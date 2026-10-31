@@ -11,6 +11,8 @@
 - The weights state Apache 2.0. BF16 and quantized distributions are model artifacts; choose supported serving and precision settings rather than treating each filename as a new learned model. [North Mini Code model card](https://huggingface.co/CohereLabs/North-Mini-Code-1.0).
 - The model generates code and tool requests. Repository access, terminal execution, permissions and test execution belong to its harness. Benchmark results depend on the producer’s specified harness and were not reproduced here. [North Mini Code model card](https://huggingface.co/CohereLabs/North-Mini-Code-1.0) [North Mini Code documentation](https://docs.cohere.com/docs/north-mini-code-1.0).
 
+- CohereLabs also publishes `North-Mini-Code-1.0-eagle`, a separately trained small EAGLE draft used alongside this target for speculative decoding. A three-layer draft network and Apache-2.0 distribution are distinct from target FP8/W4A16 precision artifacts. This compatibility does not establish a `derived-from` weight lineage, independent acceleration, or a 320K native context: the example's `--max-model-len 320000` is a vLLM serving configuration. [Eagle draft card](https://huggingface.co/CohereLabs/North-Mini-Code-1.0-eagle) [Mini Code model card](https://huggingface.co/CohereLabs/North-Mini-Code-1.0).
+
 ## Validation
 
 - Preserve this canonical ID, type, aliases and prior relation membership; apply only the exact source-backed additive provenance and derivative repairs assessed for this node.
