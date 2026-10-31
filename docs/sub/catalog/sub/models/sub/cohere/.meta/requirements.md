@@ -9,7 +9,7 @@
 ## Operational decision boundaries
 
 - Choose a concrete version before comparing modality, language coverage, context, rights or availability. Cohere API, Model Vault and the North workspace are delivery or application surfaces with their own contracts. [Cohere model lifecycle and API identifiers](https://docs.cohere.com/docs/models) [Cohere models overview](https://cohere.com/models-overview).
-- The materialized family membership is the catalog scope, not an assertion that it exhausts every historical or newly announced Cohere model. Current Rerank 5 releases are discovery follow-ups outside this existing-node assessment. [Rerank model comparison](https://docs.cohere.com/v2/docs/rerank) [Rerank 5 release discovery](https://docs.cohere.com/v2/changelog/rerank-v5).
+- The materialized family membership is the catalog scope, not an assertion that it exhausts every historical or newly announced Cohere model. Rerank 5 Pro and Fast are now materialized as separate concrete model identities under the existing Rerank family; coverage is not an exhaustive history of every Cohere release. [Rerank model comparison](https://docs.cohere.com/v2/docs/rerank) [Rerank 5 release discovery](https://docs.cohere.com/v2/changelog/rerank-v5).
 
 ## Navigation
 
