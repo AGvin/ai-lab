@@ -42,3 +42,9 @@ entity:
     target: catalog/models/cohere/rerank/models/rerank-v5-0-pro
   - type: has-member
     target: catalog/models/cohere/rerank/models/rerank-v5-0-fast
+  - type: has-member
+    target: catalog/models/cohere/rerank/models/rerank-v3-5
+  - type: has-member
+    target: catalog/models/cohere/rerank/models/rerank-english-v3-0
+  - type: has-member
+    target: catalog/models/cohere/rerank/models/rerank-multilingual-v3-0
