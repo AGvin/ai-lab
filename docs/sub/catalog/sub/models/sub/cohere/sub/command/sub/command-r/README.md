@@ -1,14 +1,16 @@
 # Command R
 
-The Command R series groups the August 2024 R and R+ releases and Command R7B from December 2024.
+The Command R series groups the August 2024 R/R+ releases, December 2024 Command R7B, and the separate February 2025 Command R7B Arabic research checkpoint.
 
 ## Identity and provenance
 
-The catalog materializes three dated models. Their versioned API identifiers are distinct from the older undated R/R+ aliases, which the current lifecycle table maps to deprecated March/April 2024 releases. [Cohere model lifecycle and API identifiers](https://docs.cohere.com/docs/models) [Command August 2024 refresh](https://docs.cohere.com/changelog/command-gets-refreshed).
+The catalog materializes four dated models. Their versioned API identifiers are distinct from the older undated R/R+ aliases, which the current lifecycle table maps to deprecated March/April 2024 releases. [Cohere model lifecycle and API identifiers](https://docs.cohere.com/docs/models) [Command August 2024 refresh](https://docs.cohere.com/changelog/command-gets-refreshed).
+
+Command R7B Arabic is a separate Cohere/Cohere Labs gated-weight research checkpoint emphasizing Modern Standard Arabic and English, with a 128K context and approximately 8B total parameters (7B transformer and 1B embeddings). Cohere's release note accidentally displays the December 2024 ID, so the separately published 2025 model card is the exact identification source. No trained-from relation is asserted. [Arabic model card](https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025) [Arabic release note](https://docs.cohere.com/changelog/command-r7b-arabic).
 
 ## Decision and operating boundaries
 
-- The August R card reports 32B parameters, R+ reports 104B, and R7B uses a 7B-class name. All three advertise a 128K context and the current API table lists a 4K maximum output; those limits are not a guarantee of quality throughout the window. [Command R 08-2024 model card](https://huggingface.co/CohereLabs/c4ai-command-r-08-2024) [Command R+ 08-2024 model card](https://huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024) [Command R7B model card](https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024) [Cohere model lifecycle and API identifiers](https://docs.cohere.com/docs/models).
+- The August R card reports 32B parameters, R+ reports 104B, and R7B uses a 7B-class name. The three earlier models advertise a 128K context and the current API table lists a 4K maximum output; the Arabic research release separately has 128K context without proof of that API output cap; those limits are not a guarantee of quality throughout the window. [Command R 08-2024 model card](https://huggingface.co/CohereLabs/c4ai-command-r-08-2024) [Command R+ 08-2024 model card](https://huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024) [Command R7B model card](https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024) [Cohere model lifecycle and API identifiers](https://docs.cohere.com/docs/models).
 - The weight cards state CC-BY-NC research terms and model-specific templates for grounded generation and tools. A tool-capable model requests actions; connected application software performs them. [Command R 08-2024 model card](https://huggingface.co/CohereLabs/c4ai-command-r-08-2024) [Command R+ 08-2024 model card](https://huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024) [Command R7B model card](https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024).
 - Choose exact version and deployment from current documentation. August release throughput and latency comparisons are provider measurements, not reproduced runtime results. [Command August 2024 refresh](https://docs.cohere.com/changelog/command-gets-refreshed).
 
@@ -18,6 +20,7 @@ The catalog materializes three dated models. Their versioned API identifiers are
 - [Command R 08-2024](sub/models/sub/command-r-08-2024/) — member.
 - [Command R+ 08-2024](sub/models/sub/command-r-plus-08-2024/) — member.
 - [Command R7B](sub/models/sub/command-r7b-12-2024/) — member.
+- [Command R7B Arabic](sub/models/sub/command-r7b-arabic-02-2025/) — member.
 
 ## Official resources
 
@@ -27,3 +30,5 @@ The catalog materializes three dated models. Their versioned API identifiers are
 - [Command R 08-2024 model card](https://huggingface.co/CohereLabs/c4ai-command-r-08-2024).
 - [Command R+ 08-2024 model card](https://huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024).
 - [Command R7B model card](https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024).
+- [Command R7B Arabic model card](https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025).
+- [Command R7B Arabic release](https://docs.cohere.com/changelog/command-r7b-arabic).

@@ -70,6 +70,13 @@ entity:
     authority: official
   - type: documentation
     source:
+      url: https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
       url: https://huggingface.co/CohereLabs/North-Mini-Code-1.0
     purposes:
     - identification
@@ -115,6 +122,8 @@ entity:
     target: catalog/models/cohere/command/command-r/models/command-r-08-2024
   - type: produces
     target: catalog/models/cohere/command/command-r/models/command-r7b-12-2024
+  - type: produces
+    target: catalog/models/cohere/command/command-r/models/command-r7b-arabic-02-2025
   - type: produces
     target: catalog/models/cohere/north/models/north-mini-code-1-0
   - type: produces

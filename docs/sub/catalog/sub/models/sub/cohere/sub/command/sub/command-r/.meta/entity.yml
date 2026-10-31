@@ -44,11 +44,26 @@ entity:
     - identification
     - research
     authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://docs.cohere.com/changelog/command-r7b-arabic
+    purposes:
+    - research
+    authority: official
   relations:
   - type: member-of
     target: catalog/models/cohere/command
   - type: has-member
     target: catalog/models/cohere/command/command-r/models/command-r7b-12-2024
+  - type: has-member
+    target: catalog/models/cohere/command/command-r/models/command-r7b-arabic-02-2025
   - type: has-member
     target: catalog/models/cohere/command/command-r/models/command-r-08-2024
   - type: has-member
