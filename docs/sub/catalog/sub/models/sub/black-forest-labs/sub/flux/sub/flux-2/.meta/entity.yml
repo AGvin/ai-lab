@@ -24,6 +24,13 @@ entity:
     - identification
     - research
     authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/black-forest-labs/FLUX.2-small-decoder
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
   - type: member-of
     target: catalog/models/black-forest-labs/flux
@@ -37,6 +44,8 @@ entity:
     target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-dev
   - type: has-member
     target: catalog/models/black-forest-labs/flux/flux-2/flux-2-klein
+  - type: has-member
+    target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-small-decoder
   identity_note: FLUX.2 is a Black Forest Labs image-generation and image-editing model series. It groups the named
     max, pro, flex and dev models and the specialized Klein subseries without collapsing their distinct deployment
-    or licensing boundaries.
+    or licensing boundaries. Small Decoder is a separately learned VAE component, not an additional image generator.
