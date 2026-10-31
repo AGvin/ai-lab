@@ -2,14 +2,10 @@
 
 Gemma is Google's open-weight model family for local, self-hosted, edge, research, and application workflows.
 
-## Translations
+## Canonical producers
 
-- English
-- [Українська](./l10n/uk_UA/)
-
-## Canonical producer
-
-- [Google](../../../../../../../../../producers/sub/g/sub/google/)
+- Produced by: [Google](../../../../../producers/sub/g/sub/google/)
+- Produced by: [Google DeepMind](../../../../../producers/sub/g/sub/google-deepmind/)
 
 ## Family boundary
 
@@ -17,9 +13,17 @@ Gemma is a model family rather than one exact deployment identity. Exact series,
 
 Gemma's downloadable open-weight distributions are distinct from provider-hosted Gemini model identities.
 
-## Model series
+## Model series and specialized models
 
-- [Gemma 4](./sub/gemma-4/) — multimodal Gemma series with E2B Instruct and E4B Instruct models represented in the catalog.
+- [Gemma 4](sub/gemma-4/)
+- [EmbeddingGemma 2](sub/embeddinggemma-2/)
+- [FunctionGemma](sub/functiongemma/)
+- [TranslateGemma](sub/translategemma/)
+- [MedGemma 1.5 4B](sub/medgemma-1-5-4b/)
+- [ShieldGemma 2](sub/shieldgemma-2/)
+- [T5Gemma 2](sub/t5gemma-2/)
+- [VaultGemma](sub/vaultgemma/)
+- [Gemma 3n](sub/gemma-3n/)
 
 ## Provenance boundary
 
@@ -31,5 +35,15 @@ This canonical page owns Gemma family identity, broad open-weight access boundar
 
 ## Official resources
 
-- [Gemma documentation](https://ai.google.dev/gemma/)
-- [Google models on Hugging Face](https://huggingface.co/google)
+- <https://ai.google.dev/gemma/>
+- <https://huggingface.co/google>
+- <https://ai.google.dev/gemma/docs/core>
+- <https://ai.google.dev/gemma/docs/core/model_card_4>
+- <https://ai.google.dev/gemma/docs/diffusiongemma>
+- <https://developers.google.com/health-ai-developer-foundations/medgemma>
+
+## Source-scoped operating boundaries
+
+- Gemma 4 uses Apache-2.0, while specialized models can have different terms, including MedGemma's Health AI Developer Foundations terms. Downloadable weights do not imply one family-wide license or a privacy guarantee for the application. [Gemma 4 license](https://ai.google.dev/gemma/docs/core/model_card_4) · [MedGemma documentation](https://developers.google.com/health-ai-developer-foundations/medgemma).
+- DiffusionGemma remains explicitly experimental in its current overview and stays outside this released-model intake. Keep that status distinct from the released Gemma 4 instruction checkpoints. [DiffusionGemma status](https://ai.google.dev/gemma/docs/diffusiongemma).
+- Local capability, model size, artifact size, and runtime memory are different facts. Selection still requires the exact checkpoint, precision, supported modalities, context, runtime, and workload configuration. [Gemma model overview](https://ai.google.dev/gemma/docs/core).

@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/gateways/api-management-gateways/kuadrant-mcp-gateway
+  type: software
+  name: Kuadrant MCP Gateway
+  references:
+    - type: repository
+      source:
+        url: https://github.com/Kuadrant/mcp-gateway
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/Kuadrant/mcp-gateway/releases
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/Kuadrant/mcp-gateway/blob/main/docs/guides/quick-start.md
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/k/kuadrant

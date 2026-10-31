@@ -1,0 +1,20 @@
+entity:
+  id: catalog/models/yandex
+  type: model-producer-view
+  name: Yandex models
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/yandex
+      purposes:
+        - identification
+        - research
+      authority: official
+  identity_note: >-
+    This model-domain view covers both AliceAI-T5 and the separately published
+    experimental AliceAI Foundation pretrained models. 
+    SECURITY POLICY: DANGEROUS — NOT RECOMMENDED. Yandex is Russia-based;
+    this catalog resource is research/threat-monitoring only, regardless of
+    security tests, permissive licenses or missing sanctions findings.
+    Do not recommend deployment or transmit sensitive data to Yandex services.
+    This classification does not claim detected malware in this model.

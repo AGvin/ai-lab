@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Identify this node as the NVIDIA model-domain view and link the canonical NVIDIA producer plus the represented Nemotron family.
+- Identify this node as the NVIDIA model-domain view and link the canonical NVIDIA producer plus the represented Nemotron family and NV-Reason medical-imaging model series.
 - Keep NVIDIA NIM, NeMo, deployment runtimes, GPU hardware, and hosted access surfaces outside model identity.
 - Keep concrete model facts and artifacts with their canonical model owners.
 

@@ -1,0 +1,35 @@
+entity:
+  id: catalog/models/amazon/titan/models/titan-multimodal-embeddings-g1
+  type: model
+  name: Amazon Titan Multimodal Embeddings G1
+  identity_note: >-
+    Distinct Titan multimodal embedding identity with Active Bedrock route
+    amazon.titan-embed-image-v1. It accepts text and/or an image and returns a vector, not generated
+    images. The guide specifies English text, a 256-token text input limit, images up to 25MB at 2048
+    by 2048, and output dimensions of 1024 by default, 384 or 256. Its multimodal schema and limits
+    differ from Titan text embeddings and Nova Multimodal Embeddings.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-multimodal-embeddings-g1.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/titan-models.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/titan-multiemb-models.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/amazon/titan

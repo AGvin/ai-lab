@@ -1,0 +1,83 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:e6f49ba070a0ec57ce3fa1450015e6618102c94c
+      node.yml: gitblob:7d3c984a84a47328bd695d2e6c6c001bf42d08c4
+    parent:
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/series
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/ibm/granite-timeseries/models/granite-timeseries-tspulse-r1
+        type: model-series
+        name: Granite TimeSeries TSPulse R1
+        identity_note: 'TSPulse R1 is represented at series level because IBM releases
+          three separately pretrained variants under the same repository: hybrid-allhead
+          for anomaly detection, hybrid-dualhead for imputation/search, and block-dualhead
+          for classification. Their branch/revision selectors are not aliases and
+          are not materialized as extra catalog nodes in this checkpoint.'
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-timeseries-tspulse-r1
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/ibm/granite-timeseries
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

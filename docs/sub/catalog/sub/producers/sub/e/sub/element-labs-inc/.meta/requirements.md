@@ -7,6 +7,7 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official LM Studio site and desktop-app Terms references establishing provenance.
 - Keep unrelated corporate, staffing, funding, pricing, and other mutable organization details outside this concise producer profile.
+- Disambiguate Element Labs, Inc., the LM Studio company, from Elementl, Inc. doing business as Dagster Labs.
 
 ## Validation
 

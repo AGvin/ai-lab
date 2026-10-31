@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-23894-2023-ai-risk-management
+  name: ISO/IEC 23894:2023 — Artificial intelligence risk management
+  aliases:
+    - ISO/IEC 23894:2023
+    - ISO 23894
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/77304.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record identifying Edition 1 as a published International Standard.

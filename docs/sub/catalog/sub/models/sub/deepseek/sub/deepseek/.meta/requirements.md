@@ -3,7 +3,7 @@
 ## Requirements
 
 - Identify DeepSeek as a model family, distinct from the producer organization of the same name.
-- Link the canonical producer and the materialized DeepSeek-V4 series.
+- Link the canonical producer and every materialized DeepSeek model series.
 - Keep series/model-specific properties out of the family profile unless they are genuinely shared.
 
 ## Validation

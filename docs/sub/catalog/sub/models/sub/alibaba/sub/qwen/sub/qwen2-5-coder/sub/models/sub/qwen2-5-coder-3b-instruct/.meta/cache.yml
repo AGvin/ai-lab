@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5c5699407636af191d40180d7a2c278a84f24d15
+      entity.yml: gitblob:74ef671e7744924cf54d9531f55c5ad27421f38e
     parent:
-      entity.yml: gitblob:6817c1d7727dc53f135b99100685eaa18cf4be93
+      entity.yml: gitblob:d02fac467d34a7626db1a437fa90ee993f84369f
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
   state:
     node:
@@ -52,6 +52,18 @@ cache:
             url: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct/blob/main/config.json
+          purposes:
           - research
           authority: official
         relations:

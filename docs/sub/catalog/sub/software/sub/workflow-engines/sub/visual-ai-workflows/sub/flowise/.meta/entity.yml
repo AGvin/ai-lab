@@ -33,6 +33,13 @@ entity:
         - research
       authority: official
       note: First-party sunset notice records the July 29, 2026 code freeze, August 10 repository archival, and August 31, 2026 EOL milestone.
+    - type: repository
+      source:
+        url: https://github.com/FlowiseAI/Flowise/blob/main/LICENSE.md
+      purposes:
+        - research
+      authority: official
+      note: The root license excludes enterprise and explicitly marked files under a commercial license and preserves third-party licenses; the remaining code is Apache 2.0.
   relations:
     - type: produced-by
       target: catalog/producers/f/flowiseai-inc

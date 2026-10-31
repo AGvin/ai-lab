@@ -1,0 +1,26 @@
+entity:
+  id: catalog/models/google/alphafold/models/alphafold-3
+  type: model
+  name: AlphaFold 3
+  aliases:
+    - alphafold3
+  references:
+    - type: official-site
+      source:
+        url: https://deepmind.google/science/alphafold/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/alphafold-3
+      purposes: [research]
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes
+      purposes: [research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/alphafold
+  identity_note: "AlphaFold 3 is the Google DeepMind and Isomorphic Labs structure-prediction model; academic weights and GA commercial Cloud deployment are access paths to the model, not separate model identities."

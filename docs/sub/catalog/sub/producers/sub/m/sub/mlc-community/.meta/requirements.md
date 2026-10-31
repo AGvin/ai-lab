@@ -8,6 +8,8 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current MLC community and MLC LLM provenance references.
 
+- Include the identity and producer-boundary context from canonical `entity.identity_note`; keep detailed product behavior with the related canonical owners.
+
 ## Validation
 
 - MLC Community is represented as a community producer without erasing the documented multi-institution origin.

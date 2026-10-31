@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:817a6baa6ddaa2eac461a3013c16f36c68e7d145
+      entity.yml: gitblob:16325c014fcd95b7653b76eaf13d43ccdffb87de
     parent:
       entity.yml: gitblob:809c62e5e48565624df11ad5ab043ec1d16b9f4e
   state:
@@ -58,6 +58,13 @@ cache:
         - type: repository
           source:
             url: https://github.com/huihui-support
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
           purposes:
           - identification
           - research

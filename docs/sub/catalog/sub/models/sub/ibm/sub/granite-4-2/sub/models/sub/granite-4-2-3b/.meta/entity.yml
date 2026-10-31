@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/ibm/granite-4-2/models/granite-4-2-3b
+  type: model
+  name: Granite 4.2 3B
+  identity_note: >-
+    Granite 4.2 3B is the compact 3B-class member of IBM's Granite 4.2 dense reasoning family,
+    released on 25 August 2026 with Apache-2.0 weights. Its card documents native 128K context and
+    a supported long-context extension to 512K.
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-4.2-3b
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/ibm/granite-4-2
+    - type: derived-from
+      target: catalog/models/ibm/granite-4-1/models/granite-4-1-3b-base

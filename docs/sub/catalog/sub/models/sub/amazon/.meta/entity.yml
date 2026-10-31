@@ -2,6 +2,12 @@ entity:
   id: catalog/models/amazon
   type: model-producer-view
   name: Amazon models
+  identity_note: >-
+    Navigation view for Amazon Nova, Amazon Titan and Strands Decider. Amazon Web Services remains the
+    canonical producer; this view is not another organization. Nova and Titan are model families,
+    while Strands Decider checkpoints perform typed decisions. Bedrock access and the Strands runtime
+    are separate from trained model identity. Availability must be established for the particular
+    model and route.
   references:
     - type: product-page
       source:
@@ -14,5 +20,47 @@ entity:
       source:
         url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-amazon.html
       purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/titan-models.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/strands-labs/strands-decider
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/embeddings.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/strands-labs/strands-decider/blob/main/docs/inference.md
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html
+      purposes:
+        - identification
         - research
       authority: official

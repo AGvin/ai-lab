@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Identify DBOS as a multi-language open-source durable-execution library family for making ordinary application code resilient through Postgres-backed workflows, steps, queues, scheduling, and related reliability primitives.
+- Identify DBOS as a multi-language open-source durable-execution library family for making ordinary application code resilient through database-backed workflows, steps, queues, scheduling, and related reliability primitives.
 - Preserve its primary placement under `workflow-engines/application-orchestration`; DBOS adds durable execution inside application code rather than requiring a separate external workflow-orchestrator service.
 - Preserve DBOS, Inc. as the company behind the DBOS software family while keeping the company, self-managed libraries, and hosted DBOS services as distinct identity/operation layers.
 - Preserve the current multi-language product boundary across Python, TypeScript, Go, and Java rather than treating one language repository as the entire canonical DBOS identity.

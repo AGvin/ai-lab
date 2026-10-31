@@ -1,0 +1,50 @@
+entity:
+  id: catalog/models/openai/gpt-live
+  type: model-family
+  name: GPT-Live
+  references:
+    - type: release-notes
+      source:
+        url: https://openai.com/index/introducing-gpt-live/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://openai.com/index/introducing-gpt-live-1-in-the-api/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://deploymentsafety.openai.com/gpt-live
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/live
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/changelog
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/voice-server-controls
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai
+    - type: has-member
+      target: catalog/models/openai/gpt-live/models/gpt-live-1
+    - type: has-member
+      target: catalog/models/openai/gpt-live/models/gpt-live-1-mini
+  identity_note: Full-duplex voice-model family; delegated backend models and product plans have separate identities and access conditions.

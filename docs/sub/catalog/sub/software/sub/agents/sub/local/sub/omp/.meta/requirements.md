@@ -2,10 +2,11 @@
 
 ## Requirements
 
-- Identify OMP, also known as Oh My Pi, as Can Bölük's terminal-first AI coding agent derived from Pi.
+- Identify OMP, also known as Oh My Pi, as the terminal-first AI coding agent originally created by Can Bölük and derived from Pi, now developed and published by Stencil Labs, Inc.
 - Preserve its coding-oriented expansion around integrated repository/editing tools, shell execution, LSP/DAP language and debugger tooling, browser/research capabilities, persistent language execution, subagents, sessions, extensions/plugins, skills, and MCP discovery at a stable high level.
 - Preserve current integration entry points at a high level: interactive TUI, one-shot CLI, Node/TypeScript SDK, RPC mode, and ACP interoperability.
 - Preserve the Pi lineage as reader-facing provenance; keep OMP and Pi as separate software identities with independent repositories, releases, configuration, and maintenance.
+- Preserve separate original-creator (`produced-by` Can Bölük) and current-steward (`maintained-by` Stencil Labs) relations, with reciprocal producer records.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Preserve useful legacy operational boundaries around tool visibility and approvals, shell/debugger/browser execution, provider/OAuth credentials, network/data exposure, persistent Python/JavaScript state, plugins/extensions/skills/project instructions, discovered MCP servers, subagent scope/concurrency/cost, remote collaboration/session sharing, and diff/rollback review.
 - Make clear that a broad built-in tool surface is not the same as sandboxing; recommend isolation proportionate to repository/task trust without turning the catalog page into setup instructions.
@@ -15,6 +16,7 @@
 ## Validation
 
 - OMP is represented as a materially distinct Pi derivative, not as a Pi version or alias.
+- The company currently maintaining OMP is not conflated with its original individual creator or the Pi upstream author.
 - SDK/RPC/ACP are represented as integration/control surfaces of OMP rather than separate product identities.
 - Tool richness is not described as an isolation or security guarantee.
 - Official resource links match canonical entity metadata.

@@ -1,0 +1,32 @@
+entity:
+  id: catalog/models/google/gemini/models/gemini-4-argon
+  type: model
+  name: Gemini 4 Argon
+  aliases:
+    - "gemini-4-argon"
+  references:
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/models/gemini-4-argon
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/latest-model
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/gemini
+  identity_note: "Stable Gemini reasoning model served as gemini-4-argon; its 1,048,576-token window is shared by input, thinking, and output, and long decode is a serving mode rather than another model."

@@ -1,12 +1,15 @@
 # Agno
 
-Agno is the first-party organization and publishing identity behind the Agno open-source agent framework. The producer identity remains distinct from the Agno software framework and from separate hosted or production-platform surfaces such as AgentOS.
+Agno is the publishing organization behind the Agno agent framework.
 
-## Produces
+The framework, AgentOS runtime, and Control Plane have distinct roles. AgentOS is a runtime that can be deployed in an operator’s environment; the framework’s identity does not imply that every deployment is a hosted Agno service or that Agno produces the models it uses.
 
-- [Agno](../../../../../software/sub/agent-frameworks/sub/agno/) — open-source agent framework.
+## Relations
+
+- Produces: [Agno](../../../../../software/sub/agent-frameworks/sub/agno/)
 
 ## Official resources
 
 - [Agno](https://www.agno.com/)
 - [Agno repository](https://github.com/agno-agi/agno)
+- [Agno framework, AgentOS, and Control Plane](https://docs.agno.com/)

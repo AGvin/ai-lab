@@ -1,20 +1,19 @@
 # GPT-5.6 Models
 
-Concrete GPT-5.6 tiers currently represented in the catalog.
+The concrete GPT-5.6 models are Sol, Terra, and Luna. This index links their individual identities and source-scoped operating boundaries.
 
-## Translations
+## Operating boundaries
 
-- English
-- [Українська](./l10n/uk_UA/)
+Capability, lifecycle, and endpoint details belong to the linked model profiles. The routing alias gpt-5.6 resolves to Sol and has no separate entry here.
 
-## Parent generation
+## Child pages
 
-- [GPT-5.6](../..)
+- [GPT-5.6 Luna](sub/luna/README.md).
+- [GPT-5.6 Sol](sub/sol/README.md).
+- [GPT-5.6 Terra](sub/terra/README.md).
 
-## Models
+## Official resources
 
-- [GPT-5.6 Sol](./sub/sol/) — flagship tier for complex professional work.
-- [GPT-5.6 Terra](./sub/terra/) — balanced capability-and-cost tier.
-- [GPT-5.6 Luna](./sub/luna/) — fastest and most cost-efficient tier in the documented generation positioning.
-
-This page owns concrete-model navigation only. Shared generation facts remain on GPT-5.6; tier-specific identifiers and model/API facts remain on each concrete model page; pricing, availability, and selection guidance remain outside this index.
+- [gpt-5.6-sol model reference](https://developers.openai.com/api/docs/models/gpt-5.6-sol).
+- [gpt-5.6-terra model reference](https://developers.openai.com/api/docs/models/gpt-5.6-terra).
+- [gpt-5.6-luna model reference](https://developers.openai.com/api/docs/models/gpt-5.6-luna).

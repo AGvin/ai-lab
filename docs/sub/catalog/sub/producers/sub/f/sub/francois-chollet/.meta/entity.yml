@@ -1,0 +1,31 @@
+entity:
+  id: catalog/producers/f/francois-chollet
+  type: person
+  name: François Chollet
+  references:
+    - type: other
+      source:
+        url: https://github.com/fchollet
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Original ARC-AGI-1 author and repository owner.
+    - type: repository
+      source:
+        url: https://github.com/fchollet/ARC-AGI
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://arcprize.org/arc-agi/1
+      purposes:
+      - identification
+      - research
+      authority: official
+      note: Current version-specific benchmark page credits the original corpus to François Chollet.
+  relations:
+    - type: produces
+      target: catalog/datasets/arc-agi-1

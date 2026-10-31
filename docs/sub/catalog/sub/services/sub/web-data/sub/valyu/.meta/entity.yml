@@ -1,0 +1,22 @@
+entity:
+  id: catalog/services/web-data/valyu
+  type: service
+  name: Valyu
+  references:
+    - type: official-site
+      source:
+        url: https://www.valyu.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.valyu.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/valyu

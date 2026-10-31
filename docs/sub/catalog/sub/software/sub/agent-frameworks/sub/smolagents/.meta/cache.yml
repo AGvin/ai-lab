@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d32a6366f64529e6e02796f1a10a0ad9e0e6bef5
+      entity.yml: gitblob:3015f064695ee7cdccf0e98121da91df67223d6b
     parent:
       entity.yml: gitblob:d76916cc6208401fd85eacd3a15da3a51743c755
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -52,6 +52,24 @@ cache:
             url: https://huggingface.co/docs/smolagents/
           purposes:
           - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/huggingface/smolagents
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/docs/smolagents/en/reference/agents
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/docs/smolagents/en/tutorials/secure_code_execution
+          purposes:
           - research
           authority: official
         relations:

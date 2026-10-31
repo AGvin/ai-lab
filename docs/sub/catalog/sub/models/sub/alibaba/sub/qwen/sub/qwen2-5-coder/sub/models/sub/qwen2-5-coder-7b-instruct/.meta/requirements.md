@@ -27,9 +27,22 @@ Preserve outside this canonical model profile:
 - warnings and validation guidance around autonomous repository work, instruction retention, tool use, regressions, framework-specific behavior, and final-diff quality;
 - coding-quality, throughput, frontier-status, ecosystem-status, hardware-fit, and accepted-result-cost conclusions requiring separate evidence.
 
+## Decision and Operational Boundaries
+
+- Qwen2.5-Coder-7B-Instruct is the 7.61B-parameter dense instruction-tuned text model under Apache-2.0.
+- Distinguish the shipped 32,768-position configuration from the card's 131,072-token YaRN extension; extension requires runtime configuration and is not an automatic memory guarantee.
+- Keep checkpoint identity separate from quantization and runtime packaging; pin the chosen revision and validate processor, chat-template, reasoning-parser, and tool-parser support in the selected runtime.
+- Keep model-generated text, code, and tool arguments separate from permission to execute them; the application owns command validation, tool access, network access, and sandboxing.
+
+Use the current primary references in `entity.yml` for these boundaries; mutable service values are not intrinsic identity guarantees.
+
 ## Validation
 
 - Contextual classification and recommendation language is not presented as intrinsic model identity.
 - The page does not infer autonomous repository-work reliability from model size or provider benchmarks.
 - Officially sourced model facts remain distinct from AI Lab evaluation conclusions.
 - Internal links resolve to canonical nodes.
+
+## Reader Projection
+
+- Render the current entity's validated visible relations with resolved canonical links and preserve relation ordering; project the sourced identity and operational boundaries into the reader page.

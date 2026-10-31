@@ -10,7 +10,7 @@ entity:
         - identification
         - research
       authority: official
-      note: Current Khoj Terms of Service identify Khoj Inc. as the service provider.
+      note: Published Khoj service terms identify Khoj Inc.; they do not establish current hosted-service availability.
     - type: other
       source:
         url: https://khoj.dev/privacy-policy
@@ -18,6 +18,19 @@ entity:
         - identification
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/khoj-ai/khoj
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://app.khoj.dev/
+      purposes:
+        - research
+      authority: official
+      note: First-party notice records the April 15, 2026 Khoj Cloud shutdown and continued open-source/self-hosted availability.
   relations:
     - type: produces
       target: catalog/software/interfaces-and-workspaces/knowledge-workspaces/khoj

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d49840abfb584acae4ea741d09476dccd86ab0d3
+      entity.yml: gitblob:52034e75a1999353bca6ccb7cdfd02d76f558985
     parent:
       entity.yml: gitblob:46b91081ab3e21420c7289bb28e30b3d82f867a5
   state:
@@ -62,9 +62,35 @@ cache:
           - research
           authority: official
           note: Current MLflow site identifies MLflow as created by Databricks.
+        - type: terms-of-service
+          source:
+            url: https://www.databricks.com/legal/terms-of-use
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Official terms identify Databricks, Inc. and distinguish website terms
+            from platform services.
+        - type: documentation
+          source:
+            url: https://docs.databricks.com/aws/en/machine-learning/model-serving/
+          purposes:
+          - research
+          authority: official
+          note: Databricks-operated model serving service.
+        - type: article
+          source:
+            url: https://www.databricks.com/blog/2020/06/25/mlflow-joins-the-linux-foundation-to-become-the-open-standard-for-machine-learning-platforms.html
+          purposes:
+          - research
+          authority: official
+          note: Databricks describes the project origin and its Linux Foundation governance
+            transition.
         relations:
         - type: produces
           target: catalog/software/model-and-data-platforms/lifecycle-platforms/mlflow
+        - type: produces
+          target: catalog/services/infrastructure/databricks-model-serving
     aliases:
       effective:
         schema: default

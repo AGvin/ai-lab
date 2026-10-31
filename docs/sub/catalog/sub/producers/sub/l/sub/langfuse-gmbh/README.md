@@ -2,6 +2,8 @@
 
 Langfuse GmbH is the organization behind the represented Langfuse software. ClickHouse, Inc. acquired Langfuse, and the organization remains a separate canonical identity from Langfuse software, Langfuse Cloud, and its parent company.
 
+Corporate ownership and service contracting are separate. ClickHouse's general terms name Langfuse GmbH for pay-as-you-go Langfuse Cloud; the applicable agreement determines the contracting party for other purchases.
+
 ## Produces
 
 - [Langfuse](../../../../../software/sub/evaluation-and-observability/sub/observability-platforms/sub/langfuse/) — open-source LLM observability platform.
@@ -16,3 +18,4 @@ Langfuse GmbH is the organization behind the represented Langfuse software. Clic
 - [Langfuse imprint](https://langfuse.com/imprint)
 - [Langfuse joins ClickHouse](https://langfuse.com/blog/joining-clickhouse)
 - [Langfuse repository](https://github.com/langfuse/langfuse)
+- [ClickHouse general terms and contracting scope](https://clickhouse.com/legal/clickhouse-general-terms-and-conditions)

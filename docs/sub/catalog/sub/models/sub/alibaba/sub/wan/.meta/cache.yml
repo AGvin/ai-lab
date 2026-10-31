@@ -1,0 +1,120 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:48d0371d56aa82c8a677141492c34d29fa7c75ca
+    parent:
+      entity.yml: gitblob:0ad21fc20e4195f4dc142f9741289130634e40b5
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/alibaba/wan
+        type: model-family
+        name: Wan
+        references:
+        - type: official-site
+          source:
+            url: https://wan.video/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/Wan-Video
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.alibabacloud.com/help/en/model-studio/video-generate-edit-model
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/wan-video
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/Wan-Video/Wan2.2
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.alibabacloud.com/help/en/model-studio/wan3-video-generation-guide
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.alibabacloud.com/help/en/model-studio/data-retention-policy
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/w/wan-team
+        - type: has-member
+          target: catalog/models/alibaba/wan/wan-3-0
+        - type: has-member
+          target: catalog/models/alibaba/wan/wan-2-7
+        - type: has-member
+          target: catalog/models/alibaba/wan/wan-2-2
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

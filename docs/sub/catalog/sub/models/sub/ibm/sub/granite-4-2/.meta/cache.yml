@@ -1,0 +1,112 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:26cf44a944956d367a910b3970ebb4bd00dc1779
+    parent:
+      entity.yml: gitblob:bd781d43d132f5a161bf61b6fd7be69a53dcdd6f
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/ibm/granite-4-2
+        type: model-family
+        name: Granite 4.2
+        identity_note: Granite 4.2 is IBM's August 2026 dense decoder-only reasoning
+          language-model family. The materialized base release identities are 3B,
+          8B, and 30B. Quantized or runtime-specific distributions remain artifacts
+          of those models rather than peer trained-model identities.
+        references:
+        - type: article
+          source:
+            url: https://huggingface.co/blog/ibm-granite/granite-4-2
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/collections/ibm-granite/granite-42-language-models
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-4.2-3b
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-4.2-8b
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-4.2-30b
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/i/ibm
+        - type: has-member
+          target: catalog/models/ibm/granite-4-2/models/granite-4-2-3b
+        - type: has-member
+          target: catalog/models/ibm/granite-4-2/models/granite-4-2-8b
+        - type: has-member
+          target: catalog/models/ibm/granite-4-2/models/granite-4-2-30b
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

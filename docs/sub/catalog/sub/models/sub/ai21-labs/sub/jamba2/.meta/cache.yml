@@ -1,0 +1,94 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:076f6ffbd3e24166169f88fb3d103386025fefcb
+    parent:
+      entity.yml: gitblob:6d62eb59c6d11d346c88480b8108ce30877941cb
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/ai21-labs/jamba2
+        type: model-family
+        name: Jamba2
+        identity_note: Jamba2 is AI21 Labs' model family introduced on 8 January 2026.
+          It groups the independently identified 3B and Mini trained models; family
+          membership does not make them interchangeable artifacts or hosted endpoints.
+          Use concrete member facts for size, architecture, context and licensing.
+          Downloads and provider aliases are separate access surfaces. AI21's enterprise
+          reliability and benchmark positioning requires task-specific evaluation
+          and does not certify an agent's actions.
+        references:
+        - type: article
+          source:
+            url: https://www.ai21.com/blog/introducing-jamba2/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.ai21.com/docs/jamba-foundation-models
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/ai21-labs
+        - type: has-member
+          target: catalog/models/ai21-labs/jamba2/models/jamba2-3b
+        - type: has-member
+          target: catalog/models/ai21-labs/jamba2/models/jamba2-mini
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

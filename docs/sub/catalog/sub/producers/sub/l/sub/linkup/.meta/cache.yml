@@ -1,0 +1,86 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:92ff0c957f0622a38201ca85ade9de2e65ffba5d
+    parent:
+      entity.yml: gitblob:665e9ca01b87f5f7025e0f60f3e694be0cc71db2
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/l/linkup
+        type: organization
+        name: Linkup
+        references:
+        - type: official-site
+          source:
+            url: https://www.linkup.so/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.linkup.so/
+          purposes:
+          - research
+          authority: official
+          note: First-party API documentation establishes the hosted web-data service
+            and its interfaces; the service remains distinct from external publishers
+            and their source content.
+        relations:
+        - type: produces
+          target: catalog/services/web-data/linkup
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

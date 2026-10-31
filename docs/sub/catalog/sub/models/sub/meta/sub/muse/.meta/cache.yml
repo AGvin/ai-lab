@@ -1,0 +1,100 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:4997ae995cc38f55ef60dc7288bd315ec43a83c3
+    parent:
+      entity.yml: gitblob:73f36b097a441f8dbd4cc911bad962de0249dc79
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/meta/muse
+        type: model-family
+        name: Muse
+        references:
+        - type: official-site
+          source:
+            url: https://ai.meta.com/blog/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://dev.meta.ai/docs/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/meta
+        - type: has-member
+          target: catalog/models/meta/muse/models/muse-spark-1-1
+        - type: has-member
+          target: catalog/models/meta/muse/models/muse-spark-1-2
+        - type: has-member
+          target: catalog/models/meta/muse/models/muse-spark-1-3
+        - type: has-member
+          target: catalog/models/meta/muse/models/muse-image
+        - type: has-member
+          target: catalog/models/meta/muse/models/muse-glimmer-30b
+        - type: has-member
+          target: catalog/models/meta/muse/models/muse-voice-transcribe
+        - type: has-member
+          target: catalog/models/meta/muse/models/muse-spark-open
+        - type: has-member
+          target: catalog/models/meta/muse/muse-wonder
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

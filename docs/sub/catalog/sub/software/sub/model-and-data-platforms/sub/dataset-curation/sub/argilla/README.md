@@ -6,7 +6,9 @@ Its current dataset model is configurable around fields, questions, metadata, ve
 
 The original authors have moved on from active feature development. The mature codebase is currently limited to bug fixes and patches while additional maintainers are sought.
 
-## Ownership
+## Provenance and ownership
+
+- [Recognai, S.L.U.](../../../../../../../producers/sub/r/sub/recognai-slu/) — historical company producer. Recognai built Rubrix and renamed the company/product to Argilla in 2022; the legal notice last modified on October 11, 2022 names Recognai, S.L.U.
 
 - [Hugging Face, Inc.](../../../../../../../producers/sub/h/sub/hugging-face-inc/) — current owner following the 2024 acquisition; ownership does not imply current active maintenance responsibility.
 
@@ -15,3 +17,6 @@ The original authors have moved on from active feature development. The mature c
 - [Argilla documentation](https://docs.argilla.io/latest/)
 - [Argilla repository](https://github.com/argilla-io/argilla)
 - [Argilla acquisition announcement](https://huggingface.co/posts/dvilasuero/203008804842390)
+- [Recognai and Rubrix become Argilla (2022)](https://argilla.io/blog/recognai-rubrix-evolve-into-argilla/)
+- [Historical legal notice (last modified October 11, 2022)](https://argilla.io/terms-of-use/)
+- [Argilla joins Hugging Face (2024)](https://argilla.io/blog/argilla-joins-hugggingface/)

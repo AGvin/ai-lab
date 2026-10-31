@@ -1,0 +1,15 @@
+entity:
+  id: catalog/hardware/intel-arc-pro-b70
+  type: hardware-product
+  name: Intel Arc Pro B70
+  references:
+    - type: product-page
+      source:
+        url: https://www.intel.com/content/www/us/en/products/sku/245797/intel-arc-pro-b70-graphics/specifications.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/intel

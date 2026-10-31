@@ -1,0 +1,96 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:acb8bc7cbd6386ec9a6a0072217d512d3269e371
+    parent:
+      entity.yml: gitblob:0f9e361b25df194c1b4133d3d9f52a1680fa1d57
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/evaluation-and-observability/observability-platforms/fiddler-ai-control-plane
+        type: software
+        name: Fiddler AI Control Plane
+        aliases:
+        - Fiddler AI
+        - Fiddler AI Observability and Security Platform
+        identity_note: Current Fiddler platform identity represented by its 2026 AI
+          Control Plane positioning; preserve earlier observability/security naming
+          as product lineage rather than a duplicate product.
+        references:
+        - type: official-site
+          source:
+            url: https://www.fiddler.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://www.fiddler.ai/control-plane
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://www.fiddler.ai/ai-observability
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/f/fiddler-labs-inc
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

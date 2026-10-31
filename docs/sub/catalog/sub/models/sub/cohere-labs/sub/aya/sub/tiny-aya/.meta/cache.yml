@@ -1,0 +1,154 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:692c591dea4d6cf94eac7097aef68140707fe700
+    parent:
+      entity.yml: gitblob:a3b432f3c1cbfa8f42a04985f3bdc16402d28e1e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/cohere-labs/aya/tiny-aya
+        type: model-series
+        name: Tiny Aya
+        identity_note: Tiny Aya is the compact multilingual text-model series introduced
+          on 17 February 2026. The represented instruction-tuned models are Global,
+          Earth, Fire and Water. Global balances performance across regions; the three
+          regional releases combine regional posttraining with the global model through
+          a documented merge. Base checkpoints, reasoning research releases and quantized
+          distributions have separate identities or artifact roles and do not replace
+          these four records.
+        references:
+        - type: official-site
+          source:
+            url: https://cohere.com/research/aya
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/tiny-aya
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://cohere.com/blog/cohere-labs-tiny-aya
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://arxiv.org/html/2603.11510v1
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/tiny-aya-global
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/tiny-aya-earth
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/tiny-aya-fire
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/tiny-aya-water
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/tiny-aya-base
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/cohere-labs/aya
+        - type: has-member
+          target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-global
+        - type: has-member
+          target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-earth
+        - type: has-member
+          target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-fire
+        - type: has-member
+          target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-water
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c01c6a58fb8659dd0b5d296557cbdcbdae0940ea
+      entity.yml: gitblob:8bc1f306a0a6b2159683ae9e89f9911a0347b167
     parent:
-      entity.yml: gitblob:d2832a7979fe4d097b9404cc46ffd2fcc3b3eba6
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
   state:
     node:
       effective:
@@ -45,6 +45,17 @@ cache:
         id: catalog/producers/s/sana-labs-ab
         type: organization
         name: Sana Labs AB
+        identity_note: Sana Labs AB is the organization identified in Sana’s current
+          privacy notice and the producer identity for Sana Agents. Workday announced
+          completion of its acquisition of Sana on November 4, 2025. Sana Labs AB,
+          the Sana Agents service, Sana Learn and the Workday parent remain distinct
+          identities. The April 2026 privacy notice distinguishes customer processing
+          from Sana’s controller role and describes limited joint-controller activities
+          with Workday. Sana Agents product terms supplement the applicable master
+          agreement and order, including third-party AI processing and restrictions
+          on affiliate use. Confirm the service order, data-processing terms and connected-system
+          permissions for a deployment; the acquisition does not make every Workday
+          product part of Sana Agents.
         references:
         - type: official-site
           source:
@@ -56,6 +67,27 @@ cache:
         - type: other
           source:
             url: https://sanalabs.com/legal/privacy-notice
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://newsroom.workday.com/2025-11-04-Workday-Completes-Acquisition-of-Sana
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://sanalabs.com/products/sana/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: terms-of-service
+          source:
+            url: https://sanalabs.com/download/legal/agents-product-terms.pdf
           purposes:
           - identification
           - research

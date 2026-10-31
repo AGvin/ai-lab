@@ -1,0 +1,41 @@
+entity:
+  id: catalog/producers/z/zilliz
+  type: organization
+  name: Zilliz
+  identity_note: >-
+    Zilliz is the organization that created Milvus and operates Zilliz Cloud. Milvus's open-source and
+    foundation-governance history is distinct from the company's managed cloud offering. Shared database
+    technology does not make a cloud subscription, its service commitments or managed deployment features part
+    of self-managed Milvus. Match release compatibility, deployment topology, access controls and workload
+    conditions before applying provider scale or performance claims to another installation.
+  references:
+    - type: official-site
+      source:
+        url: https://zilliz.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://zilliz.com/about
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://zilliz.com/what-is-milvus
+      purposes:
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://lfaidata.foundation/projects/milvus/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/data-infrastructure/vector-search/zilliz-cloud
+    - type: produces
+      target: catalog/software/data-infrastructure/vector-search/milvus

@@ -16,6 +16,20 @@ entity:
       purposes:
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/zai-org/GLM-5
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/z-ai/glm
+  identity_note: >-
+    Released on 2026-08-27, GLM-5.3-Flash is a natively multimodal
+    text/image/video model with 320B total and 18B active parameters.
+    The independently trained base uses hybrid sparse and linear
+    attention. Z.AI publishes its weights under MIT; the provider's
+    long-context and agent benchmark claims are not locally reproduced.
+    Model identity and released weights are separate from hosted service
+    pricing, quotas, runtime-specific context limits and model variants.

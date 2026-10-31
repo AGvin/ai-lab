@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/google/gemini/models/gemini-nano-banana-2-1
+  type: model
+  name: Nano Banana 2.1
+  aliases:
+    - gemini-nano-banana-2.1
+  references:
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://deepmind.google/models/model-cards/nano-banana-2-1/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/gemini
+  identity_note: "Stable Gemini image-generation and editing model served as gemini-nano-banana-2.1 and named Nano Banana 2.1; product nicknames do not create additional model identities."

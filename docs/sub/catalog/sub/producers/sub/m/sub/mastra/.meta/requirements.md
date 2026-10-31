@@ -8,6 +8,8 @@
 - Include the official Mastra site and first-party repository as identity and research references.
 - Do not invent a legal-company suffix that is not established by the cited authoritative sources.
 
+- Include the identity and producer-boundary context from canonical `entity.identity_note`; keep detailed product behavior with the related canonical owners.
+
 ## Validation
 
 - The page does not collapse the producer identity and Mastra software into one entity.

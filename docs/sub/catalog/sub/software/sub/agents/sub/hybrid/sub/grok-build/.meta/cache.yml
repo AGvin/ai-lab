@@ -1,0 +1,108 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:baf3ce91b574a0a35fb1ada64426931fec97f703
+    parent:
+      entity.yml: gitblob:8fac2314e88755b43bc622e0d92b4c5ab01c3bf8
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/agents/hybrid/grok-build
+        type: software
+        name: Grok Build
+        references:
+        - type: product-page
+          source:
+            url: https://x.ai/build
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://x.ai/news/grok-build-open-source
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://x.ai/build/changelog
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/xai-org/grok-build
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://x.ai/news/grok-build-for-everyone
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.x.ai/build/features/sandbox
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/x/xai
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

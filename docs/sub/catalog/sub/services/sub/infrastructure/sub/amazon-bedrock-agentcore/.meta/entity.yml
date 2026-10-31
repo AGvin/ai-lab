@@ -1,0 +1,30 @@
+entity:
+  id: catalog/services/infrastructure/amazon-bedrock-agentcore
+  type: service
+  name: Amazon Bedrock AgentCore
+  aliases:
+    - AgentCore
+  references:
+    - type: official-site
+      source:
+        url: https://aws.amazon.com/bedrock/agentcore/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/release-notes.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://aws.amazon.com/about-aws/whats-new/2025/10/amazon-bedrock-agentcore-available/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/amazon-web-services

@@ -17,13 +17,21 @@ entity:
         - identification
         - research
       authority: official
-      note: Official terms identifying Activepieces Inc.
+      note: Official terms endpoint currently returns a document-unavailable notice; the repository copyright and license provide the verified company attribution.
     - type: repository
       source:
         url: https://github.com/activepieces/activepieces
       purposes:
         - research
       authority: official
+    - type: other
+      source:
+        url: https://github.com/activepieces/activepieces/blob/860ce5b87c43856549586ee7b44007ba0937efdf/LICENSE
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official repository copyright identifies Activepieces Inc.; this pinned revision also states the core and enterprise license split.
   relations:
     - type: produces
       target: catalog/software/automation/integration-automation/activepieces

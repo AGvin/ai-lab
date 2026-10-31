@@ -1,0 +1,68 @@
+entity:
+  id: catalog/models/cohere/command/command-r/models/command-r7b-12-2024
+  type: model
+  name: Command R7B
+  references:
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/command-r7b
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/api/models/CohereLabs/c4ai-command-r7b-12-2024?blobs=true
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/CohereLabs/aya-vision-8b
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/models
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://cohere.com/cohere-labs-cc-by-nc-license
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/cohere-labs-acceptable-use-policy
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/cohere/command/command-r
+  - type: produced-by
+    target: catalog/producers/c/cohere-labs
+  - type: has-derivative
+    target: catalog/models/cohere-labs/aya/aya-vision/models/aya-vision-8b

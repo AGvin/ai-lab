@@ -9,7 +9,9 @@
 - Preserve current governance accurately: OpenClaw is developed and stewarded in the open by the non-profit OpenClaw Foundation.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Preserve useful legacy trust boundaries around channel credentials and DM policies, persistent gateway/daemon operation, filesystem/workspace access, browser/tool execution, device-node permissions, third-party skills/plugins, scheduled tasks, external model providers, and inbound untrusted messages.
+- Preserve the documented single-operator-or-mutually-trusting-team security model: one Gateway is one trust boundary, not a multi-tenant isolation boundary for mutually adversarial users; isolate those users using separate Gateways and ideally separate OS users or hosts.
 - Do not misclassify OpenClaw as a hosted assistant service merely because it integrates remote messaging or model services; current agent loops, tools, and inference orchestration remain centered on the user-operated Gateway even when external providers or channels are used.
+- Reflect 2026.9.2 session-tool and agent-to-agent default changes as a time-scoped security warning: operators must deliberately restrict session visibility and permitted agent pairs if broad cross-agent access is not intended; sandboxing is not a substitute for separate hostile-user trust boundaries.
 - Keep foundation/governance details, platform inventories, runtime versions, provider/channel lists, plugin inventories, mobile-client capabilities, and other mutable state source-backed when expanded.
 - Include the current official OpenClaw repository, site, documentation, and creator provenance reference.
 
@@ -19,6 +21,7 @@
 - Peter Steinberger/community origin provenance remains distinct from current OpenClaw Foundation stewardship.
 - The profile preserves self-hosted/user-controlled execution as the primary ownership boundary.
 - Remote channels and mobile clients are not misrepresented as hosted execution of the agent itself.
+- Session IDs and operator roles are not presented as isolation for adversarial tenants sharing a Gateway, and current default cross-agent session visibility is not omitted from the risk model.
 - Skills/plugins, channels, browser/tools, device nodes, scheduled work, and provider credentials are treated as explicit trust boundaries.
 - Mutable integration counts are not treated as stable identity facts.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

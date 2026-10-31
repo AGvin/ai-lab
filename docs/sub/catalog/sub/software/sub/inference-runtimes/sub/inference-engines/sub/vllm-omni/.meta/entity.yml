@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/vllm-omni
+  type: software
+  name: vLLM-Omni
+  references:
+    - type: documentation
+      source:
+        url: https://vllm-omni.readthedocs.io/en/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/vllm-project/vllm-omni
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/vllm-project

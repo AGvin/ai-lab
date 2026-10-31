@@ -24,6 +24,34 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.comfy.org/interface/app-mode
+      purposes:
+        - research
+      authority: official
+      note: Documents APP mode, Node Graph mode, and a workflow-selected default view.
+    - type: documentation
+      source:
+        url: https://docs.comfy.org/interface/settings/comfy
+      purposes:
+        - research
+      authority: official
+      note: Current menu documentation lists Top and Bottom positioning under Use new menu, separate from workflow interaction views.
+    - type: documentation
+      source:
+        url: https://docs.comfy.org/interface/features/template
+      purposes:
+        - research
+      authority: official
+      note: Documents the workflow-template surface already linked by the reader.
+    - type: other
+      source:
+        url: https://comfy.org/terms-of-service
+      purposes:
+        - research
+      authority: official
+      note: Identifies Comfy Organization Inc. and distinguishes repository licenses, commercial services, and partner-node data processing.
   relations:
     - type: produced-by
       target: catalog/producers/c/comfy-organization-inc

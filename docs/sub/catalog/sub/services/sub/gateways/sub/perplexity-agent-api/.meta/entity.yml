@@ -1,0 +1,30 @@
+entity:
+  id: catalog/services/gateways/perplexity-agent-api
+  type: service
+  name: Perplexity Agent API
+  references:
+  - type: documentation
+    source:
+      url: https://docs.perplexity.ai/docs/agent-api/quickstart
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.perplexity.ai/
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.perplexity.ai/docs/resources/privacy-security
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/p/perplexity-ai
+  identity_note: Perplexity Agent API is a hosted gateway for multiple model providers with configurable tools and
+    reasoning. The current request endpoint is /v1/agent; /v1/responses is a documented compatibility alias.

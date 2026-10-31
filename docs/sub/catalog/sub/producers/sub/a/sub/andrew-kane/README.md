@@ -1,12 +1,15 @@
 # Andrew Kane
 
-Andrew Kane (`ankane`) is the individual producer and maintainer associated with pgvector in the official upstream repository metadata. His identity remains distinct from the pgvector software entity and from hosted PostgreSQL providers that distribute the extension.
+Andrew Kane, known as ankane on GitHub, is the individual producer and maintainer associated with pgvector in its upstream package metadata.
 
-## Produces
+The person, the pgvector extension, PostgreSQL itself, and hosted database providers are distinct identities. A provider distributing or running pgvector does not replace its upstream attribution.
 
-- [pgvector](../../../../../software/sub/data-infrastructure/sub/vector-search/sub/pgvector/) — PostgreSQL vector-search extension.
+## Relations
+
+- Produces: [pgvector](../../../../../software/sub/data-infrastructure/sub/vector-search/sub/pgvector/)
 
 ## Official resources
 
 - [Andrew Kane on GitHub](https://github.com/ankane)
 - [pgvector repository](https://github.com/pgvector/pgvector)
+- [pgvector maintainer metadata](https://github.com/pgvector/pgvector/blob/master/META.json)

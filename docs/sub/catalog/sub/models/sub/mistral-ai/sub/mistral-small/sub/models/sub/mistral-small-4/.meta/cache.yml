@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:853096a6b082d7b382843b2efef53fd91c610049
+      entity.yml: gitblob:8348150cdf228b8edf38f95272bf4c8b6f2d73ed
     parent:
       entity.yml: gitblob:cc9eac859b5fac0ed4b6aa1d708dd148d40d0e7e
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
@@ -66,16 +66,30 @@ cache:
           purposes:
           - research
           authority: official
-        - type: documentation
-          source:
-            url: https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03
-          purposes:
-          - research
-          authority: official
         - type: release-notes
           source:
             url: https://mistral.ai/news/mistral-small-4/
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/mistral-small-4-0-26-03
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/studio/conversations/function-calling
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/collections/mistralai/mistral-small-4
+          purposes:
+          - identification
           - research
           authority: official
         relations:

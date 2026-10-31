@@ -1,0 +1,28 @@
+entity:
+  id: catalog/models/ai21-labs
+  type: model-producer-view
+  name: AI21 Labs models
+  identity_note: >-
+    AI21 Labs models is the model-domain navigation view for model identities published by AI21
+    Labs. It currently links the represented Jamba2 family and the separate canonical producer
+    profile. This navigation view does not define shared parameter counts, licenses or endpoint
+    availability. Select the concrete model and distinguish AI21 model authorship from API hosting,
+    AI21 Studio and downstream deployments.
+  references:
+    - type: official-site
+      source:
+        url: https://www.ai21.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.ai21.com/blog/introducing-jamba2/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.ai21.com/docs/jamba-foundation-models
+      purposes: [identification, research]
+      authority: official

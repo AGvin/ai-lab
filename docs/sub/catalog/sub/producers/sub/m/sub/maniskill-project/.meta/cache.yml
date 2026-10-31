@@ -1,0 +1,104 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:689cba0e0e891588b3158a9442cb715b0cb08462
+    parent:
+      entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/m/maniskill-project
+        type: organization
+        name: ManiSkill Project
+        identity_note: ManiSkill Project is the open-source project behind the ManiSkill
+          robotics simulation and manipulation framework. This project identity does
+          not establish a separate corporate vendor or a single university owner.
+          Software, simulation assets, third-party dependencies, and real-robot deployment
+          have their own licensing and operational requirements; project provenance
+          does not guarantee hardware compatibility or deployment safety.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/mani-skill/ManiSkill
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://www.maniskill.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: license
+          source:
+            url: https://github.com/mani-skill/ManiSkill/blob/main/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: license
+          source:
+            url: https://github.com/mani-skill/ManiSkill/blob/main/LICENSE-3RD-PARTY
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/physical-ai-and-robotics/maniskill
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/ibm/granite-vision-4-1/models/granite-vision-4-1-4b
+  type: model
+  name: Granite Vision 4.1 4B
+  identity_note: >-
+    Granite Vision 4.1 4B is IBM Research's 29 April 2026 vision-language model for structured
+    document extraction and general image-to-text tasks. The card describes a 3.4B language model
+    plus 0.6B vision encoder/projectors, fine-tuned on Granite 4.1 3B, with Apache-2.0 weights.
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-vision-4.1-4b
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/ibm/granite-vision-4-1
+    - type: derived-from
+      target: catalog/models/ibm/granite-4-1/models/granite-4-1-3b

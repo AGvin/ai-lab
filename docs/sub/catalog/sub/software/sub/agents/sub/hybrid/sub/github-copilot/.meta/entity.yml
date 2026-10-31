@@ -22,6 +22,18 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.github.com/en/copilot/how-tos/cloud-and-local-sandboxes
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/g/github-inc

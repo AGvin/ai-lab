@@ -1,0 +1,79 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bf5d20a334d813406aa1d8bc572698874af70f7d
+    parent:
+      entity.yml: gitblob:0cf80df310da6a10fb2bdc28c39cf869cdb4d5e4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/specifications/standards/iso-iec-tr-24368-2022-ai-ethical-societal-concerns
+        name: ISO/IEC TR 24368:2022 — Overview of ethical and societal concerns in
+          artificial intelligence
+        aliases:
+        - ISO/IEC TR 24368:2022
+        - ISO 24368
+        references:
+        - type: specification
+          source:
+            url: https://www.iso.org/standard/78507.html
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: ISO identifies Edition 1 as a published Technical Report from August
+            2022.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

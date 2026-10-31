@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ad9ebc96257c71c76e1519120898edea3b4ab3f1
+      entity.yml: gitblob:420c359346fc7f0bc7b62f0223e0140c945ca22d
     parent:
       entity.yml: gitblob:5e848f769005e6f901786fd212d8c9d8ccc468b3
   state:
@@ -61,9 +61,25 @@ cache:
           authority: upstream
           note: Current Metaflow site states that Metaflow was originally developed
             at Netflix and open-sourced by Netflix in 2019.
+        - type: other
+          source:
+            url: https://ir.netflix.net/governance/governance-docs/default.aspx
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/Netflix/metaflow
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/workflow-engines/data-and-compute-orchestration/metaflow
+        identity_note: Netflix, Inc. is the origin organization for Metaflow; the
+          current upstream describes support by Outerbounds, so original production
+          does not imply exclusive current maintenance or third-party service operation.
     aliases:
       effective:
         schema: default

@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-bolt
+  type: model
+  name: NVIDIA Nemotron 3.5 Bolt
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/nvidia/nemotron/nemotron-3
+    - type: derived-from
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-super-vl
+  identity_note: >-
+    Released compressed and further-trained Super VL derivative with 74B total and 9B active parameters; OpenMDW-1.1. BF16, 24GB and GGUF forms do not create additional model identities.

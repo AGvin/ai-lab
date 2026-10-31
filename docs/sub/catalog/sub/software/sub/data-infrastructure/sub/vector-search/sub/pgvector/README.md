@@ -4,6 +4,12 @@ pgvector is an open-source PostgreSQL extension for vector similarity search. It
 
 Its packaging as a PostgreSQL extension is secondary to its primary catalog role. For navigation, pgvector belongs with vector-search infrastructure such as Qdrant rather than under a packaging-specific database-extension branch.
 
+Hosted PostgreSQL providers may bundle pgvector; their operated services remain distinct from the extension itself.
+
+## Relations
+
+- Produced by: [Andrew Kane](../../../../../../../producers/sub/a/sub/andrew-kane/)
+
 ## Official resources
 
 - [pgvector repository](https://github.com/pgvector/pgvector)

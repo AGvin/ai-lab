@@ -1,0 +1,138 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:ee0b55525a8f445bb3d8ec3cfa9366fa847d82c4
+    parent:
+      entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/m/meta
+        type: organization
+        name: Meta
+        identity_note: Meta is the technology company behind the Llama and Muse model
+          families, the Meta AI assistant and Muse personal-agent services, MTIA accelerators,
+          and the Faiss library. These are distinct research, software, hardware,
+          and hosted-product responsibilities. Llama releases use their own community
+          licenses; Faiss uses an MIT software license. Neither establishes the terms
+          for Muse or Meta AI, whose account, data, connector, and action permissions
+          belong to the specific service. The MTIA program is developed with Broadcom,
+          and production use inside Meta does not establish a retail accelerator offering.
+          A producer relation records Meta's role without making every contributor,
+          third-party integration, or downstream model deployment Meta-owned or Meta-operated.
+        references:
+        - type: official-site
+          source:
+            url: https://ai.meta.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://ai.meta.com/blog/llama-4-multimodal-intelligence/
+          purposes:
+          - research
+          authority: official
+        - type: license
+          source:
+            url: https://dev.meta.ai/llama/llama4/license
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/facebookresearch/faiss
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/models/meta/llama
+        - type: produces
+          target: catalog/models/meta/muse
+        - type: produces
+          target: catalog/services/assistant-workspaces/muse
+        - type: produces
+          target: catalog/hardware/meta-mtia-300
+        - type: produces
+          target: catalog/services/assistant-workspaces/meta-ai
+        - type: produces
+          target: catalog/software/data-infrastructure/vector-search/faiss
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

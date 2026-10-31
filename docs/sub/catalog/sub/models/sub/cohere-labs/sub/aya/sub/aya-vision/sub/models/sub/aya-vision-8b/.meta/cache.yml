@@ -1,0 +1,135 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:5a9f968d90a9c00bc165da217b4e32b5f4064ed3
+    parent: {}
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/cohere-labs/aya/aya-vision/models/aya-vision-8b
+        type: model
+        name: Aya Vision 8B
+        identity_note: Aya Vision 8B is Cohere Labs' nominal 8B-class multilingual
+          vision-language model, released on 4 March 2025. The card documents text/image
+          input, text output, 23 languages and a 16K context. Its language component
+          is based on Command R7B 12-2024 and further post-trained using the Aya Expanse
+          recipe. The Cohere c4ai-aya-vision-8b route retired on 4 April 2026; the
+          official weight identity remains available under its access conditions.
+          Use the matching image processor and chat template; the model's size label
+          is not an exact sum of every tensor in a multimodal distribution.
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/CohereLabs/aya-vision-8b
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://cohere.com/blog/aya-vision
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/google/siglip2-so400m-patch14-384
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/aya-vision
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/deprecations
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/docs/transformers/model_doc/aya_vision
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/cohere-labs/aya/aya-vision
+        - type: derived-from
+          target: catalog/models/cohere/command/command-r/models/command-r7b-12-2024
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

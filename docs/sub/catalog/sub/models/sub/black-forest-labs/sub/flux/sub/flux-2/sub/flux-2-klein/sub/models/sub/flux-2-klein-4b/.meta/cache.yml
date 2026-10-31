@@ -1,0 +1,100 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:57d498ea752041a8e1549f81ab64aee0358a97d2
+    parent:
+      entity.yml: gitblob:a41e85924cf52670024a8eceaef94a57f2d50f08
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/series
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/black-forest-labs/flux/flux-2/flux-2-klein/models/flux-2-klein-4b
+        name: FLUX.2 [klein] 4B
+        type: model
+        relations:
+        - type: member-of
+          target: catalog/models/black-forest-labs/flux/flux-2/flux-2-klein
+        identity_note: FLUX.2 [klein] 4B is Black Forest Labs' separately published
+          4-billion-parameter 4-step distilled flow-transformer model for image generation
+          and editing. Its weights use Apache 2.0.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/black-forest-labs/flux2
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: license
+          source:
+            url: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B/blob/main/LICENSE.md
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

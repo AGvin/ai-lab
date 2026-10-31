@@ -1,10 +1,9 @@
 # Code Review Tools
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
-
-AI-assisted products whose primary role is reviewing code changes, pull requests, tests, and software quality signals.
+Tools whose primary purpose is inspecting code changes, commits and pull requests to support correctness, security, quality and maintainability review. This includes automated feedback and human-operated diff review; editor, codebase-indexing and test-runner features alone do not define this category.
 
 ## Child pages
 
-- [`coderabbit/`](./sub/coderabbit/)
-- [`qodo/`](./sub/qodo/)
+- [CodeRabbit](./sub/coderabbit/)
+- [Hunk](./sub/hunk/)
+- [Qodo](./sub/qodo/)

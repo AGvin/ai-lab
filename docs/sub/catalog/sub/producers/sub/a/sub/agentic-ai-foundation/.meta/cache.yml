@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:17c34132d13b948fa3c93ecb7700e0cb310fe452
+      entity.yml: gitblob:228c74b2446876c8d615f7b22c2f16d397662f6a
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -62,9 +62,74 @@ cache:
           - identification
           - research
           authority: official
+        - type: official-site
+          source:
+            url: https://aaif.io/projects
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://aaif.io/projects/model-context-protocol
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://aaif.io/projects/agent2agent
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://aaif.io/projects/agent-router
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://modelcontextprotocol.io/community/governance
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://a2a-protocol.org/latest/blog/2026/10/01/introducing-a2a-cli/
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: maintains
           target: catalog/software/agents/local/goose
+        - type: maintains
+          target: catalog/software/gateways/model-gateways/agentgateway
+        - type: maintains
+          target: catalog/specifications/protocols/agent2agent-protocol
+        - type: maintains
+          target: catalog/software/development-tools/agentic-development-systems/a2a-cli
+        - type: maintains
+          target: catalog/software/development-tools/testing/a2a-inspector
+        - type: maintains
+          target: catalog/software/development-tools/testing/mcp-inspector
+        - type: maintains
+          target: catalog/specifications/formats/agents-md
+        - type: maintains
+          target: catalog/software/gateways/api-management-gateways/envoy-ai-gateway
+        - type: maintains
+          target: catalog/specifications/protocols/model-context-protocol
     aliases:
       effective:
         schema: default

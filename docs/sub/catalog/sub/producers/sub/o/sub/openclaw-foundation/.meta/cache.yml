@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e273c35dac93594fa6a2b82dcc11a73c088bbcba
+      entity.yml: gitblob:37c1876d81cecb660007e603b9a8be5046d5caad
     parent:
       entity.yml: gitblob:b36ca5bdc58da8f3782c6a5822573937ea2cd7d2
   state:
@@ -60,9 +60,31 @@ cache:
           - identification
           - research
           authority: official
+        - type: article
+          source:
+            url: https://openclaw.ai/blog/introducing-openclaw-foundation
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/openclaw/openclaw
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.openclaw.ai/reference/credits
+          purposes:
+          - research
+          authority: official
         relations:
         - type: maintains
           target: catalog/software/agents/local/openclaw
+        identity_note: OpenClaw Foundation is the independently documented nonprofit
+          steward of OpenClaw; founder Peter Steinberger, community authors, software
+          components, and third-party model/channel operators are distinct roles.
     aliases:
       effective:
         schema: default

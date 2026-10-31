@@ -19,3 +19,14 @@
 - Pricing/rate limits are not treated as model identity.
 - No local-hardware claim is inferred.
 - Hosted capability support is distinguished from architectural facts.
+
+## Source-scoped operating boundaries
+
+- The August 2026 ChatGPT update is distinguished from earlier releases in the system card. Its evaluation results and deployment behavior should not be assigned automatically to every use of this model name [GPT-5.6 August system card](https://deploymentsafety.openai.com/gpt-5-6-august-update).
+- Reasoning effort and tool availability are API configuration. Validate tool arguments and application permissions before executing a model-proposed action [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).
+
+## Source evidence
+
+- [gpt-5.6-luna model reference](https://developers.openai.com/api/docs/models/gpt-5.6-luna).
+- [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).
+- [GPT-5.6 August 2026 system card](https://deploymentsafety.openai.com/gpt-5-6-august-update).

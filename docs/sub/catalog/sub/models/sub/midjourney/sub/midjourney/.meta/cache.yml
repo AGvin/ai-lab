@@ -1,0 +1,89 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:9bbec63179565485e04140ec3c93d09992b8dccb
+    parent:
+      entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
+      node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/producer
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/producer
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/midjourney/midjourney
+        type: model-family
+        name: Midjourney
+        identity_note: Midjourney is the image-generation model family made available
+          through Midjourney's hosted creative product. Individual releases have distinct
+          behavior and feature compatibility. The current default is mutable; a new
+          default does not erase older model identities. Niji is a specialized series
+          developed with Spellbrush and retains its collaborative identity. Web and
+          Discord interfaces, subscription/GPU accounting, editor routing, personalization,
+          styles and draft controls are product or release-specific features. They
+          are not permanent shared architecture of every family member. The represented
+          member is the catalog's selected model coverage.
+        references:
+        - type: documentation
+          source:
+            url: https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/midjourney
+        - type: has-member
+          target: catalog/models/midjourney/midjourney/models/v8-2
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

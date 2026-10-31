@@ -1,0 +1,44 @@
+entity:
+  id: catalog/producers/s/stability-ai
+  type: organization
+  name: Stability AI
+  identity_note: >-
+    Stability AI is the producer of the represented Stable Diffusion family. Its release material
+    identifies Stable Diffusion 3.5 and the Large, Large Turbo and Medium variants; hosting partners,
+    runtimes and community fine-tunes remain distinct from original model production. Licensing must be
+    checked for the exact release and distribution. The 3.5 suite is included in Stability’s
+    Community/Enterprise licensing program, whose commercial eligibility depends on organization revenue
+    and applicable terms. This does not assign one license to every historical Stable Diffusion release.
+    Local weights, Stability’s API and partner-hosted endpoints have separate hardware, processing,
+    access and service conditions; model availability alone does not guarantee a deployment fits the
+    intended workload.
+  references:
+    - type: official-site
+      source:
+        url: https://stability.ai/
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://stability.ai/news/introducing-stable-diffusion-3-5
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://stability.ai/license
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://stability.ai/core-models
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/models/stability-ai/stable-diffusion

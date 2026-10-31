@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/yandex/aliceai-t5
+  type: model-family
+  name: AliceAI-T5
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/y/yandex
+    - type: has-member
+      target: catalog/models/yandex/aliceai-t5/models/aliceai-t5-35b-a0-6b
+  identity_note: >-
+    SECURITY POLICY: DANGEROUS — NOT RECOMMENDED. Yandex is Russia-based;
+    this catalog resource is research/threat-monitoring only, regardless of
+    security tests, permissive licenses or missing sanctions findings.
+    Do not recommend deployment or transmit sensitive data to Yandex services.
+    This classification does not claim detected malware in this model.

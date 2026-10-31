@@ -4,6 +4,10 @@ Haystack is an open-source AI orchestration framework for building agents, retri
 
 Retrieval and data-connected application building remain central to Haystack, while its current framework also includes agent, tool, and orchestration abstractions. deepset's commercial platform is a separate operating surface from the open-source framework.
 
+## Relations
+
+- Produced by: [deepset GmbH](../../../../../../../producers/sub/d/sub/deepset-gmbh/)
+
 ## Official resources
 
 - [Haystack documentation](https://docs.haystack.deepset.ai/)

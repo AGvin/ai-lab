@@ -1,14 +1,22 @@
 # Cherry Studio
 
-Cherry Studio is an open-source desktop AI client and productivity studio for Windows, macOS, and Linux. It connects to multiple hosted LLM providers as well as local runtimes such as Ollama and LM Studio, and includes assistants, conversations, document workflows, and tool integrations.
+Cherry Studio is a desktop AI client and productivity studio for Windows, macOS and Linux. It connects to hosted model providers and local runtimes such as Ollama and LM Studio, with conversation, assistant, document and tool workflows. Those integrations remain separate providers and software products.
 
-Those integrations remain client capabilities; the connected providers and inference runtimes retain their own canonical identities.
+## Publisher and editions
 
-## Provenance
+CherryHQ publishes the desktop source. The official mobile listing names Shanghai Qianhui Technology Co., Ltd. as seller and copyright holder, while the current website source uses the Cherry Intelligence brand. The listing supplies legal-name evidence for the official ecosystem; CherryHQ and the brand are not separate legal-company proofs. The desktop Community Edition uses AGPL-3.0, and a separate commercial-license route is documented. Mobile, enterprise and hosted offerings can have other conditions.
 
-- [Shanghai Qianhui Technology Co., Ltd.](../../../../../../../producers/sub/s/sub/shanghai-qianhui-technology-co-ltd/) — legal organization behind Cherry Studio; CherryHQ remains the project organization surface rather than a separate legal identity.
+## Data and operation
+
+Local conversation storage does not mean all processing stays on the device. Configured model, MCP and other tool providers can receive prompts or content, and local telemetry controls do not override those providers’ processing. Review the exact edition, privacy settings, connected providers and tool permissions before handling sensitive material.
+
+## Relations
+
+- Produced by: [Shanghai Qianhui Technology Co., Ltd.](../../../../../../../producers/sub/s/sub/shanghai-qianhui-technology-co-ltd/)
 
 ## Official resources
 
 - [Cherry Studio repository](https://github.com/CherryHQ/cherry-studio)
-- [Cherry Studio website identity source](https://github.com/CherryHQ/cherry-studio-website/blob/main/src/i18n/lang/en.json)
+- [Current website source](https://github.com/CherryHQ/cherry-studio-website/blob/main/src/i18n/lang/en.json)
+- [Official mobile seller listing](https://apps.apple.com/us/app/cherry-studio-ai-anywhere/id6809783714)
+- [Desktop privacy policy](https://github.com/CherryHQ/cherry-studio/blob/main/PRIVACY.md)

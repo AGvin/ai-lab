@@ -10,3 +10,6 @@
 
 - MiMo V2.5 remains a series within MiMo rather than a second top-level family.
 - Concrete V2.5 model specifications are not generalized across all MiMo models.
+
+- Include the independently published MiMo V2.6 series. Its five materialized learned models distinguish RL, SFT-from-Qwen, and separately trained MOPD2 weights; UltraSpeed is a hosted mode, not a new model. [Official collection](https://huggingface.co/collections/XiaomiMiMo/mimo-v26).
+- Do not infer Russian ownership or full minority ownership clearance without evidence; follow the explicit provenance policy.

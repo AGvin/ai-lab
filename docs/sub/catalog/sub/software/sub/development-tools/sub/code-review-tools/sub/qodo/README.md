@@ -8,9 +8,9 @@ Treat repository and Git-provider permissions, rule and standards sources, CI/ti
 
 Qodo's current Terms describe Customer Data use for delivering the service and also describe training or improving the platform and Qodo models subject to applicable law, privacy terms, and account/product context. Third-party foundation-model terms can introduce additional data-processing boundaries. Verify current deployment, retention, model-provider, and organization controls before use with sensitive repositories.
 
-## Related
+## Relations
 
-- [Codium Ltd.](../../../../../../producers/sub/c/sub/codium-ltd/) — canonical producer organization.
+- Produced by: [Codium Ltd.](../../../../../../../producers/sub/c/sub/codium-ltd/)
 
 ## Official resources
 

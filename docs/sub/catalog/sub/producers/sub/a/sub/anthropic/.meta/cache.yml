@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:32dcf8b9e94d11ede4de26046d6ba11431f7c184
+      entity.yml: gitblob:46b6c667dd7a6910f4469ce8c7535820188e6a04
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -60,6 +60,27 @@ cache:
           - identification
           - research
           authority: official
+        - type: official-site
+          source:
+            url: https://www.anthropic.com/company
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.anthropic.com/news/model-context-protocol
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/models/anthropic/claude
@@ -69,6 +90,24 @@ cache:
           target: catalog/software/agents/hybrid/claude-code
         - type: produces
           target: catalog/services/assistant-workspaces/claude
+        - type: produces
+          target: catalog/datasets/auditbench
+        - type: produces
+          target: catalog/services/infrastructure/claude-managed-agents
+        - type: produces
+          target: catalog/software/agent-frameworks/claude-agent-sdk
+        - type: produces
+          target: catalog/services/model-apis/claude-api
+        - type: produces
+          target: catalog/datasets/biomysterybench
+        - type: produces
+          target: catalog/datasets/scone-bench
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/petri
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/bloom
+        - type: produces
+          target: catalog/specifications/protocols/model-context-protocol
     aliases:
       effective:
         schema: default

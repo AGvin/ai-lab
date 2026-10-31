@@ -1,0 +1,91 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bcddf24e1e4108948eefe9430084ff88755fa342
+    parent:
+      entity.yml: gitblob:3d7d9cfcd6ab81400d81e2468c33e9b2babb1ba5
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/openai/tts-1
+        type: model
+        name: TTS-1
+        references:
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/models/tts-1
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/guides/text-to-speech
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/deprecations
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/o/openai
+        identity_note: Released text-to-speech model retained with its October 2026
+          deprecation and January 2027 API shutdown.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

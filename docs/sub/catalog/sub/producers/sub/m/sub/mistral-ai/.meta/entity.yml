@@ -2,6 +2,19 @@ entity:
   id: catalog/producers/m/mistral-ai
   type: organization
   name: Mistral AI
+  identity_note: >-
+    Mistral AI develops model families and publishes developer software and hosted services, including
+    Mistral Studio, Vibe, and the direct Mistral API. Its commercial terms identify the French Mistral
+    AI corporation or the affiliate specified in an order form. Model releases, API access, Studio's
+    developer platform, and Vibe's productivity/coding agent are separate identities. Licenses vary by
+    exact artifact: the official catalog includes Apache 2.0, modified MIT, noncommercial and commercial
+    offerings. Devstral's original release was developed with All Hands AI; that provenance does not
+    establish that every later release or integration has identical authorship or licensing. Third-party
+    models made available through Mistral retain their upstream producer. Direct Mistral hosting,
+    partner-served deployments and customer infrastructure have different contractual and operational
+    responsibilities. Review the current model card, deployment terms, service data controls and agent
+    permissions for the actual route; a producer relation does not guarantee model availability, support
+    or safe autonomous execution.
   references:
     - type: official-site
       source:
@@ -22,8 +35,94 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://legal.mistral.ai/terms/commercial-terms-of-service/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://help.mistral.ai/en/articles/347393-under-which-license-are-mistral-s-open-models-available
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mistral.ai/news/devstral/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mistral.ai/news/devstral-2-vibe-cli/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mistral.ai/news/robostral-navigate/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/studio
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/vibe
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/models/mistral-ai/mistral-small
     - type: produces
       target: catalog/models/mistral-ai/mistral-medium
+    - type: produces
+      target: catalog/models/mistral-ai/mistral-large
+    - type: produces
+      target: catalog/models/mistral-ai/ministral
+    - type: produces
+      target: catalog/models/mistral-ai/codestral
+    - type: produces
+      target: catalog/models/mistral-ai/mistral-embed
+    - type: produces
+      target: catalog/models/mistral-ai/mistral-moderation
+    - type: produces
+      target: catalog/models/mistral-ai/devstral
+    - type: produces
+      target: catalog/models/mistral-ai/voxtral
+    - type: produces
+      target: catalog/models/mistral-ai/mistral-ocr
+    - type: produces
+      target: catalog/models/mistral-ai/robostral
+    - type: produces
+      target: catalog/models/mistral-ai/magistral
+    - type: produces
+      target: catalog/models/mistral-ai/shieldstral
+    - type: produces
+      target: catalog/services/ai-assets/mistral-studio
+    - type: produces
+      target: catalog/software/agents/hybrid/mistral-vibe
+    - type: produces
+      target: catalog/services/model-apis/mistral-api
+    - type: produces
+      target: catalog/models/mistral-ai/timestral

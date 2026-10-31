@@ -2,3 +2,13 @@ entity:
   id: catalog/models/davidau/qwen3-derived/models
   type: catalog-index
   name: DavidAU Qwen3-Derived Model Releases
+  identity_note: >-
+    This catalog index lists the represented concrete learned model in the DavidAU Qwen3-derived
+    branch. The Xiaolong/Josiefied merge is the model identity. Its GGUF and other conversions
+    belong to distribution or artifact records when they preserve that learned identity.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF
+      purposes: [identification, research]
+      authority: official

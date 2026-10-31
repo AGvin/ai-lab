@@ -1,0 +1,34 @@
+entity:
+  id: catalog/producers/p/pipedream-inc
+  type: organization
+  name: Pipedream, Inc.
+  aliases:
+  - Pipedream
+  references:
+  - type: official-site
+    source:
+      url: https://pipedream.com/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: terms-of-service
+    source:
+      url: https://pipedream.com/terms
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Terms updated September 30, 2026 name Pipedream, LLC in the legal body while the site footer retains Pipedream,
+      Inc.; the applicable agreement controls the contracting identity.
+  - type: documentation
+    source:
+      url: https://pipedream.com/docs/connect
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Connect documentation.
+  relations:
+  - type: produces
+    target: catalog/services/agent-integration-platforms/pipedream-connect

@@ -1,0 +1,82 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d2abc77644a305f349c94f7b964dd7c82e0c37fb
+    parent:
+      entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/hardware/meta-mtia-300
+        type: hardware-product
+        name: Meta MTIA 300
+        aliases:
+        - MTIA 300
+        identity_note: Meta documents MTIA 300 as a production member of its Meta
+          Training and Inference Accelerator family, initially optimized for ranking
+          and recommendation training and foundational to later GenAI-oriented generations.
+        references:
+        - type: article
+          source:
+            url: https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/meta
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a987057ea7e307b6f3a36839721eeeddc9bb17fd
+      entity.yml: gitblob:f549596c20ccf3dae73c4b74021c0bd6b61c9796
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -45,6 +45,23 @@ cache:
         id: catalog/producers/m/microsoft
         type: organization
         name: Microsoft
+        identity_note: 'Microsoft is the technology company that publishes Phi models,
+          developer and model-runtime software, agent frameworks and skills, and operates
+          Microsoft Copilot and Azure/Microsoft Foundry services. It also develops
+          Maia accelerators and owns GitHub. Corporate ownership and product authorship
+          are different relationships: GitHub remains a separately identified producer,
+          and hosting partner models in Foundry does not make Microsoft their author.
+          Microsoft-origin DeepSpeed was contributed to foundation governance; the
+          producer relation preserves its origin without asserting exclusive current
+          control. Installable frameworks, runtimes, testing tools, and skills retain
+          their own repositories, licenses, security reporting and maintenance policies;
+          Code - OSS''s MIT license differs from the Microsoft Visual Studio Code
+          distribution license. Copilot''s personal and work/school experiences have
+          different account and data controls. Foundry model support, terms and deployment
+          responsibilities depend on the model and hosting route. Agent Framework,
+          Foundry Agent Service, Copilot Studio, Entra Agent ID, Agent 365, and Windows
+          365 for Agents remain separate products; their names do not confer a shared
+          release status, entitlement or permission to use connected resources.'
         references:
         - type: official-site
           source:
@@ -67,6 +84,69 @@ cache:
           authority: official
           note: Official Microsoft annual report documenting the acquisition of GitHub,
             Inc.
+        - type: official-site
+          source:
+            url: https://www.microsoft.com/en-us/about
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://blogs.microsoft.com/blog/2018/10/26/microsoft-completes-github-acquisition/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://pytorch.org/projects/deepspeed/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://learn.microsoft.com/en-us/agent-framework/overview/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://support.microsoft.com/en-us/microsoft-365-copilot/what-is-microsoft-copilot-app
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://code.visualstudio.com/docs/supporting/faq
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://learn.microsoft.com/en-us/azure/foundry/agents/overview
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/models/microsoft/phi
@@ -80,8 +160,38 @@ cache:
           target: catalog/software/development-tools/testing/playwright
         - type: produces
           target: catalog/software/agent-frameworks/microsoft-agent-framework
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/pyrit
+        - type: produces
+          target: catalog/services/agent-identity-and-access/microsoft-entra-agent-id
+        - type: produces
+          target: catalog/services/ai-management-platforms/microsoft-agent-365
+        - type: produces
+          target: catalog/services/infrastructure/windows-365-for-agents
+        - type: produces
+          target: catalog/services/infrastructure/microsoft-copilot-studio
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/microsoft-olive
+        - type: produces
+          target: catalog/software/inference-runtimes/inference-engines/onnx-runtime
+        - type: produces
+          target: catalog/agent-skills/collections/microsoft-skills
+        - type: produces
+          target: catalog/agent-skills/collections/azure-agent-skills
+        - type: produces
+          target: catalog/hardware/microsoft-maia-200
         - type: owns
           target: catalog/producers/g/github-inc
+        - type: produces
+          target: catalog/services/assistant-workspaces/microsoft-copilot
+        - type: produces
+          target: catalog/services/infrastructure/microsoft-foundry-agent-service
+        - type: produces
+          target: catalog/services/model-apis/microsoft-foundry-models
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-development/deepspeed
+        - type: produces
+          target: catalog/software/inference-runtimes/inference-engines/onnx-runtime-genai
     aliases:
       effective:
         schema: default

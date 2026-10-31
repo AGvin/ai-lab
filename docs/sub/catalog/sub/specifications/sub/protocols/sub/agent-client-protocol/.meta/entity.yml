@@ -1,0 +1,26 @@
+entity:
+  id: catalog/specifications/protocols/agent-client-protocol
+  name: Agent Client Protocol
+  aliases:
+    - ACP
+  references:
+    - type: official-site
+      source:
+        url: https://agentclientprotocol.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/agentclientprotocol/agent-client-protocol
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://agentclientprotocol.com/governance/
+      purposes:
+        - research
+      authority: official

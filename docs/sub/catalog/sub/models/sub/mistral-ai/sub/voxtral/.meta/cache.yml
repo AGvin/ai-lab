@@ -1,0 +1,113 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a5aa3a056ccd0e0e14d40b977114f33bb4ca66c0
+    parent:
+      entity.yml: gitblob:95cd9a825d9b0958a0e79e9fd9ba4c327504aaf7
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/mistral-ai/voxtral
+        type: model-family
+        name: Voxtral
+        references:
+        - type: release-notes
+          source:
+            url: https://mistral.ai/news/voxtral-transcribe-2/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/voxtral-small-25-07
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/voxtral-mini-transcribe-26-02
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-26-02
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/voxtral-tts-26-03
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mistral-ai
+        - type: has-member
+          target: catalog/models/mistral-ai/voxtral/models/voxtral-mini-transcribe-v2
+        - type: has-member
+          target: catalog/models/mistral-ai/voxtral/models/voxtral-mini-4b-realtime-2602
+        - type: has-member
+          target: catalog/models/mistral-ai/voxtral/models/voxtral-4b-tts-2603
+        - type: has-member
+          target: catalog/models/mistral-ai/voxtral/models/voxtral-small-24b-2507
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

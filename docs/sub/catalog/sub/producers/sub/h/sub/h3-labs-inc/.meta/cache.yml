@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f5ec6aeec06ae815a2d9254255f906c6287ee2d5
+      entity.yml: gitblob:daf80159cfc9151cddf2993304e8077f065c0a4c
     parent:
       entity.yml: gitblob:809c62e5e48565624df11ad5ab043ec1d16b9f4e
   state:
@@ -58,7 +58,7 @@ cache:
           note: Current Maxim AI privacy policy identifying H3 Labs Inc. as the company.
         - type: official-site
           source:
-            url: https://www.getmaxim.ai/bifrost
+            url: https://www.getmaxim.ai/
           purposes:
           - identification
           - research

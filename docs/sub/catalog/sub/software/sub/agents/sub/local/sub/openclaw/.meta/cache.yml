@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b91e8cdf67b59430b4533a52f945beeb33b4d216
+      entity.yml: gitblob:a716d0b5a52779530784cc9b21dd8d7b69a744ae
     parent:
       entity.yml: gitblob:0c958ac9b06255323dd6f40493fd9f05736b939d
   state:
@@ -69,6 +69,18 @@ cache:
           authority: official
           note: Current upstream README identifies OpenClaw as built by Peter Steinberger
             and the community.
+        - type: documentation
+          source:
+            url: https://docs.openclaw.ai/gateway/security/trust-model
+          purposes:
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://docs.openclaw.ai/releases/2026.9.2
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/p/peter-steinberger

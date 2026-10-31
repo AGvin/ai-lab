@@ -1,0 +1,85 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:87449299341108d39a04ce805fbf78b43f098433
+      node.yml: gitblob:7d3c984a84a47328bd695d2e6c6c001bf42d08c4
+    parent:
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/series
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/ibm/granite-timeseries/models/granite-timeseries-ttm-r3
+        type: model-series
+        name: Granite TimeSeries TTM R3
+        aliases:
+        - Granite Tiny Time Mixer R3
+        identity_note: Granite TTM R3 is represented at series level because IBM describes
+          it as a family of pretrained models and its official toolkit selects among
+          multiple R3 revision keys by context, forecast horizon, decomposed architecture,
+          and Lite/non-Lite mode. The repository's default artifact is therefore not
+          treated as the exhaustive identity of the R3 release.
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-timeseries-ttm-r3
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/ibm/granite-timeseries
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

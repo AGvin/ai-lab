@@ -23,5 +23,3 @@ entity:
       target: catalog/models/meta/llama/llama-4/models/scout
     - type: has-member
       target: catalog/models/meta/llama/llama-4/models/maverick
-    - type: has-member
-      target: catalog/models/meta/llama/llama-4/models/behemoth

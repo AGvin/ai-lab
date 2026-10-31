@@ -2,10 +2,10 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:23d8587a0565b9e8ef2a6a406151436db422b7b1
+      entity.yml: gitblob:9629ab6dcb58053a0f81b1e4b7976b36b0d41141
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
     parent:
-      entity.yml: gitblob:74afb3d707f8217f74b1caa03743dac96766f1d5
+      entity.yml: gitblob:0ad21fc20e4195f4dc142f9741289130634e40b5
   state:
     node:
       effective:
@@ -61,6 +61,24 @@ cache:
           - identification
           - research
           authority: official
+        - type: repository
+          source:
+            url: https://github.com/QwenLM/Qwen3-TTS
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/QwenLM/Qwen3.8
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.alibabacloud.com/help/en/model-studio/data-retention-policy
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/q/qwen-team
@@ -70,6 +88,26 @@ cache:
           target: catalog/models/alibaba/qwen/qwen3-coder
         - type: has-member
           target: catalog/models/alibaba/qwen/qwen3
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-8
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen-image
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-vl
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen-omni
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen-audio
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-tts
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-6
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-embedding
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-reranker
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-asr
     aliases:
       effective:
         schema: default

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1d8e7cc8256f730f4892ce45256bb0f40b36a0cd
+      entity.yml: gitblob:a384269f0f727806c70ea9319aa7dfa788277f55
     parent:
       entity.yml: gitblob:6907e20773222c3926bc2ca6714631589c406770
   state:
@@ -67,6 +67,14 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://qdrant.tech/documentation/cloud/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Cloud documentation.
         relations:
         - type: produces
           target: catalog/software/data-infrastructure/vector-search/qdrant

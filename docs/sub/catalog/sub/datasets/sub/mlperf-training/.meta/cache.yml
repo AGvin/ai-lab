@@ -1,0 +1,95 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:27c9f2e059594ab57fbd806566096b6308ed17b2
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/mlperf-training
+        type: dataset
+        name: MLPerf Training
+        identity_note: MLPerf Training is MLCommons' open, peer-reviewed benchmark
+          suite for measuring how quickly complete systems train models to specified
+          quality targets. The June 2026 v6.0 release covers a changing collection
+          of training workloads, including language-model pretraining/fine-tuning,
+          recommendation and image generation. Reference models and datasets, target
+          quality, software and hardware configuration, rules and power measurements
+          belong to the particular revision. The suite is distinct from individual
+          models, accelerators, frameworks, cloud platforms and vendor submissions.
+          A performance record applies to the exact submitted system, workload and
+          quality target; it is not a universal ranking of training systems or a claim
+          that MLCommons produced the models used in the tests.
+        references:
+        - type: product-page
+          source:
+            url: https://mlcommons.org/benchmarks/training/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://mlcommons.org/2026/06/mlperf-training-v6-0-results/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mlcommons
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

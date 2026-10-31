@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f437cf6d344cb024c30be75ac07b6ebe133c609c
+      entity.yml: gitblob:ed75d4733008602d61de1d2879bb73fcab21d1a4
     parent:
       entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
       node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
@@ -49,7 +49,7 @@ cache:
         references:
         - type: official-site
           source:
-            url: https://blackforestlabs.ai/
+            url: https://bfl.ai/
           purposes:
           - identification
           - research
@@ -58,8 +58,26 @@ cache:
           source:
             url: https://huggingface.co/black-forest-labs
           purposes:
+          - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.bfl.ai/flux_2/flux2_overview
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://bfl.ai/blog/flux-3
+          purposes:
+          - identification
+          - research
+          authority: official
+        identity_note: Model-domain view for Black Forest Labs; the separate canonical
+          producer profile owns organizational identity. This view navigates the FLUX
+          family and does not itself identify a trained model or hosted service.
     aliases:
       effective:
         schema: default

@@ -1,0 +1,93 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:c26692c2c0b43729275e0f06673798333dc172b6
+    parent:
+      entity.yml: gitblob:a5aa3a056ccd0e0e14d40b977114f33bb4ca66c0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/mistral-ai/voxtral/models/voxtral-small-24b-2507
+        type: model
+        name: Voxtral Small 24B 2507
+        aliases:
+        - Voxtral Small
+        - Voxtral Small 1.0
+        references:
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/models/voxtral-small-25-07
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/mistralai/Voxtral-Small-24B-2507
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/studio/conversations/function-calling
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/mistral-ai/voxtral
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

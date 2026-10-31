@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:71e5d7af093bb167c7068d8864e4145df59efcbc
+      entity.yml: gitblob:bce6d6e07d6ba6f54556548817841f192ef29efa
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -45,6 +45,12 @@ cache:
         id: catalog/producers/m/matt-pocock
         type: individual
         name: Matt Pocock
+        identity_note: Matt Pocock is the producer and maintainer associated with
+          the Matt Pocock Skills collection represented in this catalog. The first-party
+          repository publishes the collection under the MIT license. Authorship does
+          not imply that every compatible coding agent, installer, external integration,
+          or execution environment is supplied or supported by Matt Pocock; collection
+          contents and installation behavior belong to the collection profile.
         references:
         - type: repository
           source:
@@ -58,6 +64,13 @@ cache:
             url: https://github.com/mattpocock
           purposes:
           - identification
+          authority: official
+        - type: license
+          source:
+            url: https://github.com/mattpocock/skills/blob/main/LICENSE
+          purposes:
+          - identification
+          - research
           authority: official
         relations:
         - type: produces

@@ -7,6 +7,7 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Keep language-SDK maturity, provider inventories, API/version transitions, tracing backends, compatibility claims, and other mutable product state source-backed when expanded.
 - Preserve the broader application-toolkit identity even though Mirascope includes agent-building capabilities.
+- Distinguish the supported Python and TypeScript SDKs from discontinued Mirascope Cloud. Describe SDK observability through OpenTelemetry-compatible backends without implying that the former hosted service remains available.
 - Include current official Mirascope documentation, site, and repository references.
 
 ## Validation

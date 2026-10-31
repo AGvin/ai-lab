@@ -1,0 +1,106 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:5b4e63486ae86e215b37b106c45e16d25370501f
+    parent:
+      entity.yml: gitblob:dbd446ab301de28bef71f8f1ea42e2bcaa014460
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/workflow-engines/data-and-compute-orchestration/skypilot
+        type: software
+        name: SkyPilot
+        references:
+        - type: official-site
+          source:
+            url: https://skypilot.co/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/skypilot-org/skypilot
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://github.com/skypilot-org/skypilot/releases
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.skypilot.ai/en/stable/docs/
+          purposes:
+          - research
+          authority: official
+          note: Documents the released orchestration software, jobs and services,
+            API-server operation, and use of customer infrastructure.
+        - type: official-site
+          source:
+            url: https://skypilot.ai/about
+          purposes:
+          - research
+          authority: official
+          note: First-party project history records the UC Berkeley Sky Computing
+            Lab origin and the SkyPilot team.
+        relations:
+        - type: produced-by
+          target: catalog/producers/s/skypilot-team
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

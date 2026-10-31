@@ -24,6 +24,18 @@ entity:
         - research
       authority: official
       note: First-party company history identifies Temporal as maker of the open-source orchestration platform and records its founding from the Cadence lineage.
+    - type: official-site
+      source:
+        url: https://temporal.io/about
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.temporal.io/self-hosted-guide
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/workflow-engines/application-orchestration/temporal

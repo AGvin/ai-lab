@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/ibm/granite-4-1/models/granite-4-1-3b
+  type: model
+  name: Granite 4.1 3B
+  identity_note: IBM Granite 4.1 3B is a separately released instruction-tuned language model.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-4.1-3b
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/ibm/granite-4-1
+  - type: has-derivative
+    target: catalog/models/ibm/granite-vision-4-1/models/granite-vision-4-1-4b

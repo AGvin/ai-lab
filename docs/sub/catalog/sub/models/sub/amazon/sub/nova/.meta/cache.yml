@@ -1,0 +1,134 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:65f4e1c6dff38f93fefb9325a9de84f97435b3e7
+    parent:
+      entity.yml: gitblob:634f6e10582b1bb21593828fbc804cbd6aa4a750
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/amazon/nova
+        type: model-family
+        name: Amazon Nova
+        identity_note: AWS model family with generation-specific and task-specific
+          members. Micro accepts text, Lite and Pro also accept images and video,
+          Sonic performs conversational speech, and Multimodal Embeddings produces
+          vectors. These roles do not imply common modalities, context limits or APIs.
+          Nova 2 Pro retains its source-backed preview boundary; Bedrock and Forge
+          are services rather than family members.
+        references:
+        - type: product-page
+          source:
+            url: https://aws.amazon.com/nova/models/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-amazon.html
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-conversational-speech.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.aws.amazon.com/nova/latest/userguide/embeddings-schema.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://aws.amazon.com/about-aws/whats-new/2025/12/nova-2-foundation-models-amazon-bedrock/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-nova-2.5-Sonic/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/amazon-web-services
+        - type: has-member
+          target: catalog/models/amazon/nova/nova-2
+        - type: has-member
+          target: catalog/models/amazon/nova/models/nova-micro
+        - type: has-member
+          target: catalog/models/amazon/nova/models/nova-lite
+        - type: has-member
+          target: catalog/models/amazon/nova/models/nova-pro
+        - type: has-member
+          target: catalog/models/amazon/nova/models/nova-2-5-sonic
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

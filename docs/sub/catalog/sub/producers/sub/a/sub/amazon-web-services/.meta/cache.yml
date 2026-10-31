@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:4f14bcd2ca0aaf5df454bfa3117b6dfb03c9d227
+      entity.yml: gitblob:6c788748c166ed945a32699a7a06559dda4a4038
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -64,11 +64,60 @@ cache:
           authority: official
           note: AWS Open Source launch article establishing Strands Agents as an AWS
             open-source SDK.
+        - type: product-page
+          source:
+            url: https://aws.amazon.com/nova/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://kiro.dev/docs/billing/managing-taxes/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.aws.amazon.com/bedrock/latest/userguide/titan-models.html
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
+        - type: produces
+          target: catalog/models/amazon/nova
         - type: produces
           target: catalog/software/agent-frameworks/strands-agents
         - type: produces
-          target: catalog/software/agents/local/kiro-cli
+          target: catalog/software/physical-ai-and-robotics/strands-robots
+        - type: produces
+          target: catalog/software/agents/hybrid/kiro-cli
+        - type: produces
+          target: catalog/services/infrastructure/amazon-bedrock-agentcore
+        - type: produces
+          target: catalog/services/ai-management-platforms/aws-agent-registry
+        - type: produces
+          target: catalog/hardware/aws-trainium3
+        - type: produces
+          target: catalog/agent-skills/collections/aws-agent-toolkit-skills
+        - type: produces
+          target: catalog/agent-skills/collections/aws-hcls-agent-skills
+        - type: produces
+          target: catalog/services/infrastructure/aws-mcp-server
+        - type: produces
+          target: catalog/services/assistant-workspaces/amazon-quick
+        - type: produces
+          target: catalog/services/model-apis/amazon-bedrock
+        - type: produces
+          target: catalog/specifications/formats/dogwood
+        - type: produces
+          target: catalog/services/infrastructure/amazon-sagemaker-ai
+        - type: produces
+          target: catalog/models/amazon/strands-decider
+        - type: produces
+          target: catalog/models/amazon/titan
     aliases:
       effective:
         schema: default

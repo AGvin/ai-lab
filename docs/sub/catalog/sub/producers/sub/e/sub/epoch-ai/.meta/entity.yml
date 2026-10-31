@@ -1,0 +1,28 @@
+entity:
+  id: catalog/producers/e/epoch-ai
+  type: organization
+  name: Epoch AI
+  references:
+    - type: official-site
+      source:
+        url: https://epoch.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://epoch.ai/frontiermath
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://epoch.ai/latest/openai-and-frontiermath
+      purposes:
+      - research
+      authority: official
+      note: Epoch distinguishes benchmark creation from OpenAI commissioning, ownership, and access to a defined problem set.
+  relations:
+    - type: produces
+      target: catalog/datasets/frontiermath

@@ -1,0 +1,21 @@
+# SWE-bench Pro
+
+SWE-bench Pro is Scale AI’s benchmark for software-engineering agents solving repository issues. A task supplies a base revision, problem description, requirements and interfaces; the proposed patch is evaluated against task-specific tests. It is a separate release from the original SWE-bench and SWE-bench Verified.
+
+## Versions and evaluation
+
+The September 22, 2026 V2 release contains 642 validated tasks from 11 repositories. Its default dataset configuration, 51-task HARD subset and preserved 731-task V1 configuration are different evaluation sets. V2 uses Harbor-format task bundles, repaired tests and sanitized container images. The recommended locked protocol restricts the agent’s network to its model endpoint, then re-grades its patch in a fresh sandbox. Record the dataset revision, split, agent, model, time budget and verifier when reporting a result; V1 and V2 scores are not interchangeable.
+
+## Access and rights
+
+Public task data and containers are distinct from Scale’s private evaluations. The harness and tooling use MIT licensing, while problem statements, patches and tests retain the licenses of their source repositories. Run task code in isolated evaluation infrastructure, preserve the relevant source notices and keep unrelated credentials out of agent containers.
+
+## Relations
+
+- Produced by: [Scale AI](../../../producers/sub/s/sub/scale-ai/)
+
+## Official resources
+
+- [SWE-bench Pro repository](https://github.com/scaleapi/SWE-bench_Pro-os)
+- [Dataset card and release history](https://huggingface.co/datasets/ScaleAI/SWE-bench_Pro)
+- [V2 protocol](https://github.com/scaleapi/SWE-bench_Pro-os/blob/main/v2/README.md)

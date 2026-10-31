@@ -1,0 +1,31 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-max
+  type: model
+  name: FLUX.2 [max]
+  references:
+  - type: documentation
+    source:
+      url: https://docs.bfl.ai/flux_2/flux2_overview
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: product-page
+    source:
+      url: https://bfl.ai/models/flux-2
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://help.bfl.ai/articles/7655484417-what-flux-models-are-available
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-2
+  identity_note: FLUX.2 [max] is Black Forest Labs' named hosted FLUX.2 image-generation and editing model with
+    web-grounding support.

@@ -1,0 +1,86 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:66507a7429504d84134860dd02b8213ece5dea58
+    parent:
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/ibm/granite-timeseries/models/granite-timeseries-flowstate-r1
+        type: model
+        name: Granite TimeSeries FlowState R1
+        identity_note: FlowState R1 is represented as one concrete model identity
+          with chronological version 1.0 and version 1.1 releases. Version 1.0 is
+          the default repository state; version 1.1 is selected explicitly with the
+          Hugging Face revision parameter. Release-specific deltas are owned by the
+          corresponding model-version nodes rather than by a model-series identity.
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-timeseries-flowstate-r1
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/ibm/granite-timeseries
+        - type: has-version
+          target: catalog/models/ibm/granite-timeseries/models/granite-timeseries-flowstate-r1/versions/r1-0
+        - type: has-version
+          target: catalog/models/ibm/granite-timeseries/models/granite-timeseries-flowstate-r1/versions/r1-1
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,13 +1,21 @@
 # n8n GmbH
 
-n8n GmbH is the organization providing and developing the represented n8n workflow-automation software. The producer organization remains distinct from the n8n software identity and from n8n Cloud or other separately operated service surfaces.
+n8n GmbH develops and provides the n8n workflow-automation software. Its official legal materials identify the company, while the repository identifies the software distribution. [Legal resources](https://n8n.io/legal/).
 
-## Produces
+## Scope and operating boundaries
 
-- [n8n](../../../../../software/sub/automation/sub/integration-automation/sub/n8n/) — workflow and integration automation software.
+The deployment and purchase route determine the operating and contractual responsibilities. The published EULA addresses reseller-procured software and cloud access; it does not replace the reseller agreement or establish who operates every self-hosted instance. [EULA](https://n8n.io/legal/eula/).
+
+The repository distinguishes Sustainable Use License code, enterprise material, and third-party components. A company attribution does not give every edition, integration, or dependency the same license. [Repository license](https://github.com/n8n-io/n8n/blob/master/LICENSE.md).
+
+## Relations
+
+- Produces: [n8n](../../../../../software/sub/automation/sub/integration-automation/sub/n8n/)
 
 ## Official resources
 
-- [n8n](https://n8n.io/)
-- [n8n EULA](https://n8n.io/legal/eula/)
-- [n8n repository](https://github.com/n8n-io/n8n)
+- [Official website](https://n8n.io/)
+- [EULA](https://n8n.io/legal/eula/)
+- [Upstream repository reference](https://github.com/n8n-io/n8n)
+- [Legal resources](https://n8n.io/legal/)
+- [Repository license](https://github.com/n8n-io/n8n/blob/master/LICENSE.md)

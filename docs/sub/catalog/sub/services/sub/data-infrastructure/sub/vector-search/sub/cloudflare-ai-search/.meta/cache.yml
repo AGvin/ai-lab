@@ -1,0 +1,91 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:3018d217ad341be0e118319e002c22ec15c7c16b
+    parent:
+      entity.yml: gitblob:b8d66a2836a7c7b55ac127e06ee079d2dbaaa868
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/data-infrastructure/vector-search/cloudflare-ai-search
+        type: service
+        name: Cloudflare AI Search
+        aliases:
+        - AutoRAG
+        references:
+        - type: documentation
+          source:
+            url: https://developers.cloudflare.com/ai-search/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.cloudflare.com/ai-search/concepts/how-ai-search-works/
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://developers.cloudflare.com/changelog/post/2026-10-01-ai-search-generally-available/
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/c/cloudflare
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

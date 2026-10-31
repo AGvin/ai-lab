@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- List only reviewed concrete GLM model identities for which no separate stable series node is currently required.
+- List all currently materialized, reviewed concrete GLM child model identities for which no separate stable series node is required, including GLM-5.3, GLM-5.3-Flash, and GLM-5V-Turbo.
 - Keep hosted aliases, subscription products, API plans, pricing, and selection routes outside this collection.
 
 ## Validation

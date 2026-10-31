@@ -25,6 +25,26 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://www.opengsd.net/origin
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.opengsd.net/products/gsd-core
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/open-gsd/gsd-core/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
   relations:
     - type: maintains
       target: catalog/software/development-tools/agentic-development-systems/get-shit-done
+  identity_note: "Open GSD maintains the GSD Core continuation; its official origin account credits Lex Christopherson (Taches/TÂCHES) with the original GSD, separately from current organization stewardship."

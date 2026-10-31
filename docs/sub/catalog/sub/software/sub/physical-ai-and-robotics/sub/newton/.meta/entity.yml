@@ -1,0 +1,64 @@
+entity:
+  id: catalog/software/physical-ai-and-robotics/newton
+  type: software
+  name: Newton
+  references:
+    - type: repository
+      source:
+        url: https://github.com/newton-physics/newton
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/newton-physics/newton/releases/tag/v1.7.0
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/newton-physics/newton/blob/v1.7.0/pyproject.toml
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://newton-physics.github.io/newton/stable/guide/overview.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://newton-physics.github.io/newton/stable/guide/installation.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://newton-physics.github.io/newton/stable/guide/compatibility.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://newton-physics.github.io/newton/stable/solvers/index.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://newton-physics.github.io/newton/stable/faq.html
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/newton-physics/newton/blob/v1.7.0/SECURITY.md
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/newton-project

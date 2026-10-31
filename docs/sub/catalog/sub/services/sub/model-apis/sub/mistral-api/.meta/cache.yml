@@ -1,0 +1,108 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:54924d61085565479737bf52eff8322613d5235b
+    parent:
+      entity.yml: gitblob:09f4b1197ca9716577b945595fade37b1274c155
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/model-apis/mistral-api
+        type: service
+        name: Mistral API
+        identity_note: Mistral API is Mistral AI's direct hosted API service for model
+          inference and supported API-native capabilities. Applications call the service
+          using an API key and an available model identifier. The API reference covers
+          capabilities such as chat, embeddings, classification, OCR, audio, files
+          and batch operations; each endpoint has its own request contract and lifecycle.
+          The API is distinct from model weights, SDKs, Studio's broader developer-console
+          and asset-management surface, and Vibe's agent experience. Model inventory,
+          authentication, rate limits, prices, regions, API versions and beta/GA status
+          are mutable. Check the applicable endpoint documentation and deployment
+          terms rather than assuming all Mistral-hosted and self-hosted routes behave
+          alike.
+        references:
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/api/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/api/endpoint/models
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mistral.ai/studio
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: terms-of-service
+          source:
+            url: https://legal.mistral.ai/terms/commercial-terms-of-service/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mistral-ai
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

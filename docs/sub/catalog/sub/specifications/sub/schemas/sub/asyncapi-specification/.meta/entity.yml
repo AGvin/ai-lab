@@ -1,0 +1,23 @@
+entity:
+  id: catalog/specifications/schemas/asyncapi-specification
+  name: AsyncAPI Specification
+  aliases:
+    - AsyncAPI
+  references:
+    - type: specification
+      source:
+        url: https://www.asyncapi.com/docs/reference/specification/v3.1.0
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/asyncapi/spec
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/asyncapi-initiative

@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/ibm/granite-docling
+  type: model-family
+  name: Granite Docling
+  identity_note: IBM document-conversion model family, represented by the independently published
+    258M image-and-text checkpoint.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-docling-258M
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/i/ibm
+  - type: has-member
+    target: catalog/models/ibm/granite-docling/models/granite-docling-258m

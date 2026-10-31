@@ -1,0 +1,28 @@
+entity:
+  id: catalog/models/baidu
+  type: model-producer-view
+  name: Baidu models
+  identity_note: >-
+    Baidu models is the model-domain navigation view for the represented Baidu-produced model
+    identities. It links the ERNIE family and Baidu's canonical producer profile without duplicating
+    Baidu AI Cloud or Qianfan service identity. Select a concrete trained model before using
+    provider endpoint limits or benchmark claims. A Qianfan catalog can also contain other
+    producers' models; hosting and product integration do not transfer model authorship to Baidu.
+  references:
+    - type: official-site
+      source:
+        url: https://ernie.baidu.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://ernie.baidu.com/blog/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j
+      purposes: [identification, research]
+      authority: official

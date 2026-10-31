@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/mind2web-2
+  type: dataset
+  name: Mind2Web 2
+  aliases:
+    - Mind2Web-2
+  references:
+    - type: repository
+      source:
+        url: https://github.com/OSU-NLP-Group/Mind2Web-2
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://osu-nlp-group.github.io/Mind2Web-2/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/osu-nlp-group

@@ -1,0 +1,117 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:9629ff07d06ae18fd42280f9e4fc87a28b7b144e
+    parent:
+      entity.yml: gitblob:03f8eb89b4bc542dfc0c1fcab5ee7f1a6c07a658
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/v/vllm-project
+        type: organization
+        name: vLLM Project
+        identity_note: The vLLM Project is the current upstream project identity for
+          vLLM-Omni and LLM Compressor in this catalog. Their separate repositories
+          and release lifecycles coexist with original vLLM's Berkeley origin and
+          neutral foundation hosting. LLM Compressor retains Neural Magic and Red
+          Hat engineering provenance while its current producer relation points to
+          the vLLM Project. Runtime modality, model, precision and accelerator support
+          are release-specific; upstream publication does not transfer third-party
+          model licenses or guarantee benchmark performance on another configuration.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/vllm-project
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.vllm.ai/
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/vllm-project/vllm-omni
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/vllm-project/llm-compressor
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.vllm.ai/projects/llm-compressor/en/latest/developer/governance/
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://developers.redhat.com/articles/2024/08/14/llm-compressor-here-faster-inference-vllm
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/inference-runtimes/inference-engines/vllm-omni
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/llm-compressor
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

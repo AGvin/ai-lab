@@ -1,0 +1,41 @@
+entity:
+  id: catalog/models/amazon/nova/models/nova-pro
+  type: model
+  name: Amazon Nova Pro
+  identity_note: >-
+    Distinct first-generation Nova trained identity with Bedrock route amazon.nova-pro-v1:0. The
+    current card marks it Active and lists 300K context with a 10K output maximum. It accepts text,
+    images and video and produces text. Visual input support does not mean image or video generation.
+    Converse and Invoke support and regional availability belong to the hosted access contract.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-pro.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/ai/responsible-ai/nova-micro-lite-pro/overview.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/amazon/nova

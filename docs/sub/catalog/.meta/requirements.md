@@ -14,3 +14,5 @@
 - The child-navigation block matches the validated materialized direct-child projection and every destination resolves to a direct child of `catalog/`.
 - The page does not duplicate the complete descendant taxonomy.
 - The page does not absorb reusable abstract concepts, learning, project policy, or other non-catalog documentation ownership.
+
+- For **each material catalog resource**, perform source-backed origin/ownership due diligence, including legal entities, indirect/beneficial shares, voting and board control, acquisitions, upstream model/code and rehosting. Apply **DANGEROUS — NOT RECOMMENDED** to confirmed Russian technology origin or effective control, and **ELEVATED RISK — DEPRIORITIZED** to any verified *noncontrolling* partial Russian ownership. Pending or unverifiable connections must be labeled as such, not asserted as proven. Preserve evidence and as-of dates; keep legal sanctions as separate facts. The canonical [Russia-linked AI provenance policy](../../project/sub/policies/sub/russia-linked-ai/) governs entity/requirements/reader visibility and shortlist exclusions. Do not infer ownership from ethnicity, birthplace or names.

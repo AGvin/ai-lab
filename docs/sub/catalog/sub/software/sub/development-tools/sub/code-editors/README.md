@@ -1,10 +1,8 @@
 # Code Editors
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
-
-Editors and integrated development environments used as interactive hosts for coding assistants, agents, extensions, and project workflows.
+Editors and development environments that host interactive coding, extensions, coding assistants and project workflows. Each product profile distinguishes the editor from its connected agents, hosted execution and model services.
 
 ## Child pages
 
-- [`vs-code/`](./sub/vs-code/)
-- [`cursor/`](./sub/cursor/)
+- [Cursor](./sub/cursor/)
+- [Visual Studio Code](./sub/vs-code/)

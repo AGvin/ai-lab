@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b2a46499eec83e26b9a88690b3284648a1bc1c08
+      entity.yml: gitblob:210e9cb908fed0cbb257338d39c2d790127629a5
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
     parent:
       entity.yml: gitblob:ea6558ecfc7c981d5af5e1239e2ec6325831812c
@@ -59,6 +59,8 @@ cache:
           target: catalog/producers/d/deepseek
         - type: has-member
           target: catalog/models/deepseek/deepseek/deepseek-v4
+        - type: has-member
+          target: catalog/models/deepseek/deepseek/deepseek-v4-1
     aliases:
       effective:
         schema: default

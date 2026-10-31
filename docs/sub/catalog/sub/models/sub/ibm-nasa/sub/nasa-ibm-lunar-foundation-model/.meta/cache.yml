@@ -1,0 +1,117 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:f0c87aead505901db03394adf95c5e517af20904
+    parent:
+      entity.yml: gitblob:f2f249420e9924e315df05d4e9a546371f9ca98f
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/ibm-nasa/nasa-ibm-lunar-foundation-model
+        type: model
+        name: NASA-IBM Lunar Foundation Model
+        aliases:
+        - NASA-IBM LFM
+        identity_note: NASA-IBM Lunar Foundation Model is a multimodal, multi-resolution
+          lunar remote-sensing foundation model jointly released by NASA and IBM.
+          The current model card describes a ViT-B encoder-decoder pretrained from
+          scratch on SomBench, with nearly two million co-registered tile bundles
+          spanning 11 modalities at 1 m/pixel and 100 m/pixel scales. The released
+          checkpoint is Apache-2.0. Downstream crater, irregular-mare-patch, and ice-prospectivity
+          models are separate task adaptations rather than aliases of this pretrained
+          model.
+        references:
+        - type: article
+          source:
+            url: https://science.nasa.gov/science-research/artificial-intelligence-lunar-foundation-model/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://newsroom.ibm.com/2026-09-10-ibm-and-nasa-release-open-source-ai-model-to-support-lunar-exploration
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: paper
+          source:
+            url: https://arxiv.org/abs/2609.13283
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/NASA-IMPACT/NASA-IBM-Lunar-Foundation-Model
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/i/ibm
+        - type: produced-by
+          target: catalog/producers/n/nasa
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

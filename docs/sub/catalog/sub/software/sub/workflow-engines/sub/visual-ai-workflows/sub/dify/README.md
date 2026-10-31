@@ -4,7 +4,7 @@ Dify is a self-hostable LLM and agentic application-development platform combini
 
 Its broader application platform is organized around visually authored AI workflows. Dify Cloud and other commercial surfaces remain separate operating boundaries from self-hosted Community Edition deployment.
 
-The current upstream Dify Open Source License is based on Apache 2.0 with additional conditions; the software should not be described as unqualified Apache-2.0 when those conditions are material.
+The current upstream Dify Open Source License is based on Apache 2.0 with additional conditions. Multi-tenant environments require written authorization, and the license treats a workspace as a tenant. Frontend logo and copyright information must remain unless the frontend is not used.
 
 ## Provenance and maintenance
 
@@ -15,3 +15,4 @@ The current upstream Dify Open Source License is based on Apache 2.0 with additi
 - [Dify documentation](https://docs.dify.ai/)
 - [Dify repository and license](https://github.com/langgenius/dify)
 - [Dify terms of service](https://dify.ai/legal/terms-of-service)
+- [Dify license](https://github.com/langgenius/dify/blob/main/LICENSE)

@@ -1,0 +1,34 @@
+entity:
+  id: catalog/models/openai/gpt-rosalind/models/gpt-rosalind-5-5
+  type: model
+  name: GPT-Rosalind-5.5
+  references:
+    - type: documentation
+      source:
+        url: https://deploymentsafety.openai.com/gpt-rosalind-5-5/introduction
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://openai.com/index/introducing-gpt-rosalind/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://help.openai.com/en/articles/20001193-gpt-rosalind-for-life-sciences-research
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/openai/gpt-rosalind
+  identity_note: Named life-sciences model incrementally trained from GPT-5.5; current Rosalind brand routing is not an exact version pin.

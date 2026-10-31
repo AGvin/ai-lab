@@ -1,0 +1,93 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:496df2e50be13972d68679f255571f983a04edfb
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/mlperf-client-v2-0
+        type: dataset
+        name: MLPerf Client v2.0
+        identity_note: MLPerf Client v2.0 is the released MLCommons benchmark suite
+          for AI workloads on personal computers. The August 2026 release combines
+          updated LLM tests with image-generation and agentic workloads, including
+          software-engineering and data-analyst scenarios. The image-generation category
+          and some models have experimental status in this revision. This is a benchmark-suite
+          release, distinct from the tested PC, reference models and individual task
+          datasets. Workload definitions, required versus experimental tests, accuracy
+          gates, runtime/platform requirements, prompts and reported results must
+          remain tied to the precise suite revision and submitted system configuration.
+        references:
+        - type: product-page
+          source:
+            url: https://mlcommons.org/benchmarks/client/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://mlcommons.org/2026/08/mlperf-client-v2-0/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mlcommons
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

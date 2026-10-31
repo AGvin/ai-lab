@@ -1,0 +1,46 @@
+entity:
+  id: catalog/models/google/gemini-omni/models/gemini-omni-1-1-flash
+  type: model
+  name: Gemini Omni 1.1 Flash
+  aliases:
+    - "gemini-omni-1.1-flash"
+  references:
+    - type: release-notes
+      source:
+        url: https://blog.google/innovation-and-ai/models-and-research/google-labs/new-creative-controls-google-flow/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/changelog
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/models/gemini-omni-flash
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/deprecations
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://deepmind.google/models/model-cards/gemini-omni-flash/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/gemini-omni
+  identity_note: "Stable Gemini Omni model served as gemini-omni-1.1-flash for video generation and conversational editing; the older gemini-omni-flash-preview is a separate historical serving route."

@@ -1,0 +1,107 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:816edb4b22bd4acd78db7b30d779438bedf4b1c2
+    parent:
+      entity.yml: gitblob:809c62e5e48565624df11ad5ab043ec1d16b9f4e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/h/helicone-inc
+        type: organization
+        name: Helicone, Inc.
+        aliases:
+        - Helicone
+        identity_note: Helicone's March 3, 2026 announcement reported an acquisition
+          by Mintlify. Its official site now states that Helicone is no longer part
+          of Mintlify, with details forthcoming; the legal transaction structure and
+          current ownership are not specified by that notice.
+        references:
+        - type: terms-of-service
+          source:
+            url: https://www.helicone.ai/terms
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: First-party terms identify Helicone, Inc. as the company behind Helicone.
+        - type: repository
+          source:
+            url: https://github.com/Helicone/helicone
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.helicone.ai/blog/joining-mintlify
+          purposes:
+          - research
+          authority: official
+          note: The March 3, 2026 announcement reports acquisition by Mintlify and
+            continued services in maintenance mode; it does not establish a new direct
+            software producer.
+        - type: other
+          source:
+            url: https://www.helicone.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/gateways/model-gateways/helicone
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

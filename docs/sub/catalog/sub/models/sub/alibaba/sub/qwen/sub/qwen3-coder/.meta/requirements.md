@@ -19,6 +19,15 @@
 - State that descendants may have materially different total/active parameters, architectures, context limits, reasoning modes, and serving requirements.
 - Preserve the identity distinction that `qwen3-coder-plus` is a hosted deployment alias and Qwen Code is a coding tool.
 
+## Decision and Operational Boundaries
+
+- Qwen3-Coder is a coding-model series that includes 30B-A3B Instruct, 480B-A35B Instruct, and Coder-Next.
+- The represented checkpoints are non-thinking text models; do not inherit vision support or hybrid-thinking switches from other Qwen series.
+- All three represented cards state Apache-2.0; verify a derivative or later checkpoint independently.
+- Tool-use training does not give the model a sandbox or authorize repository, shell, browser, or network actions.
+
+Use the current primary references in `entity.yml` for these boundaries; mutable service values are not intrinsic identity guarantees.
+
 ## Validation
 
 - The page does not duplicate the Qwen Team producer profile.
@@ -27,3 +36,7 @@
 - Specifications from one concrete Qwen3-Coder model are not generalized to every descendant.
 - Qwen3-Coder 30B-A3B Instruct is not conflated with the 480B-A35B model or Qwen3-Coder-Next.
 - Hosted aliases and coding tools are not treated as model identities.
+
+## Reader Projection
+
+- Render the current entity's validated visible relations with resolved canonical links and preserve relation ordering; project the sourced identity and operational boundaries into the reader page.

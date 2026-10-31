@@ -2,12 +2,14 @@
 
 ## Requirements
 
-- Identify this node as the DavidAU model-domain producer view rather than a duplicate producer profile.
-- Link the canonical David Belton producer and only reviewed DavidAU model navigation.
-- Treat synthetic lineage groupings such as `qwen3-derived` as navigation indexes unless an authoritative source establishes a durable model family or series.
-- Keep exact lineage, merge/fine-tune status, license, context, artifacts, runtime guidance, and provider behavior claims on concrete model or artifact pages.
+- Preserve this model-producer-view and link the accepted David Belton producer without duplicating the producer profile.
+- Keep qwen3-derived and its release collection as catalog-index navigation, with no invented family or series identity.
+- Lead readers to the concrete learned merge before comparing its source form, available distribution routes, usage guidance or evaluation claims.
+- Keep the unsuffixed source README retrieval limitation distinct from the successfully inspected same-author GGUF card and from a universal access-policy conclusion.
+- Realize the complete English reader with cited identity, decision and operational facts and exact canonical navigation; advertise localized readers only when present.
 
 ## Validation
 
-- No synthetic `model-family` is invented solely from common upstream ancestry.
-- Quantization/conversion repositories are not treated as trained model identities without evidence of distinct weights.
+- Preserve the canonical ID, name, type, aliases, existing source references and all existing relations; validate the complete entity against the repository schema.
+- Verify every outgoing relation, its exact required inverse and every reader target against the composed catalog tree.
+- Keep producer views, navigation indexes, trained models, model families, service access and quantized artifacts distinct; qualify publisher claims and current retrieval limits.

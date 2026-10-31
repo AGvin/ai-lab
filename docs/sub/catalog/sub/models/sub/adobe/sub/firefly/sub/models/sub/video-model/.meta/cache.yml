@@ -1,0 +1,104 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:52b03ada969ddf40ac3560bd39b532b6b513a7dc
+    parent:
+      entity.yml: gitblob:3c6086620c0599faf2869723909c0002083a0e4d
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/adobe/firefly/models/video-model
+        type: model
+        name: Firefly Video Model
+        identity_note: Firefly Video Model is Adobe's video-generation model, made
+          generally available on 24 April 2025 after a public beta. It generates video
+          from text or image inputs and remains distinct from partner video models
+          offered through Firefly. Output resolution, duration, frame rate and controls
+          must be tied to a documented workflow. The current style-preset guide describes
+          540p, 720p or 1080p with a five-second, 24-FPS workflow; these are surface
+          settings, not universal limits on every API or integration.
+        references:
+        - type: article
+          source:
+            url: https://news.adobe.com/news/2025/04/adobe-revolutionizes-ai-assisted-creativity-firefly
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://blog.adobe.com/en/publish/2025/04/24/new-max-london-more-powerful-creative-cloud-new-firefly-ai-tools-more-support-creative-careers
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://helpx.adobe.com/firefly/web/work-with-audio-and-video/work-with-video/use-style-presets-for-video-generation.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://helpx.adobe.com/firefly/web/get-started/learn-the-basics/adobe-firefly-faq.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/adobe/firefly
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

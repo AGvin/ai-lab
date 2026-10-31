@@ -1,0 +1,12 @@
+entity:
+  id: catalog/datasets/oragentbench
+  type: dataset
+  name: ORAgentBench
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ORAgentBench/ORAgentBench
+      purposes:
+        - identification
+        - research
+      authority: official

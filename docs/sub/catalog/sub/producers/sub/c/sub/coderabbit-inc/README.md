@@ -9,5 +9,5 @@ CodeRabbit Inc. operates the CodeRabbit AI code-review and development-workflow 
 ## Official resources
 
 - [CodeRabbit](https://www.coderabbit.ai/)
-- [Terms of Service](https://www.coderabbit.ai/terms-of-service)
+- [Terms of Service](https://www.coderabbit.ai/legal/terms-of-service)
 - [Privacy Policy](https://www.coderabbit.ai/privacy-policy)

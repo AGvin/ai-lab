@@ -1,0 +1,21 @@
+entity:
+  id: catalog/agent-skills/collections/jetbrains-skills
+  type: skill-collection
+  name: JetBrains Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/JetBrains/skills
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.jetbrains.com/pages/ai-agents/architecture/agent-skills/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/j/jetbrains

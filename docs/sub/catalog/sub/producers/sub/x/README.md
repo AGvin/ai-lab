@@ -1,7 +1,8 @@
 # Producers — X
 
-Canonical producers whose names begin with X.
+Canonical producers in the stable `x` slug partition.
 
-## Child pages
+## Producers
 
-- [`xAI`](./sub/xai/)
+- [SpaceXAI LLC](sub/xai/)
+- [Xiaomi MiMo Team](sub/xiaomi-mimo-team/)

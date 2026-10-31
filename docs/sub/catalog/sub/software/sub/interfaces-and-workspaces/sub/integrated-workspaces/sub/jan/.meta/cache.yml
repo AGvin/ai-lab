@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:6f4eb55a427684af5da3d7221182dec87603fb0d
+      entity.yml: gitblob:208576d60e32f058a27e0e6622c9d372bc9c05bb
     parent:
       entity.yml: gitblob:562a06d5b6a3443ff7aac41f35ea46d9d7f21581
   state:
@@ -69,6 +69,18 @@ cache:
           authority: official
           note: First-party privacy policy identifies Menlo Research Pte Ltd as the
             company providing Jan services.
+        - type: documentation
+          source:
+            url: https://docs.jan.ai/desktop/cli
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.jan.ai/desktop/cowork
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/m/menlo-research-pte-ltd

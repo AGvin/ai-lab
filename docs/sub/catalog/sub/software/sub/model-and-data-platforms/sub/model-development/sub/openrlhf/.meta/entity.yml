@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-development/openrlhf
+  type: software
+  name: OpenRLHF
+  references:
+    - type: repository
+      source:
+        url: https://github.com/OpenRLHF/OpenRLHF
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://github.com/OpenRLHF/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openrlhf-project

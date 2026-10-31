@@ -1,12 +1,10 @@
 # Visual AI Workflows
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
-
-Visual or low-code environments for assembling model calls, tools, data transformations, agents, and media-generation steps into executable AI workflows.
+Visual AI Workflows contains engines for graphical or node-based composition and execution of AI and generative-media pipelines, including model calls, tools, data transformations, and agents.
 
 ## Child pages
 
-- [`dify/`](./sub/dify/)
-- [`flowise/`](./sub/flowise/)
-- [`langflow/`](./sub/langflow/)
-- [`comfyui/`](./sub/comfyui/)
+- [Dify](./sub/dify/)
+- [Flowise](./sub/flowise/)
+- [Langflow](./sub/langflow/)
+- [ComfyUI](./sub/comfyui/)

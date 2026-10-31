@@ -4,6 +4,10 @@ Text Embeddings Inference (TEI) is Hugging Face's open-source inference toolkit 
 
 TEI is a self-managed runtime. Hosted Hugging Face inference products that may operate TEI are separate service surfaces rather than the same canonical entity.
 
+## Relations
+
+- Produced by: [Hugging Face, Inc.](../../../../../../../producers/sub/h/sub/hugging-face-inc/)
+
 ## Official resources
 
 - [TEI documentation](https://huggingface.co/docs/text-embeddings-inference/en/index)

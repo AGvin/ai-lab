@@ -1,0 +1,111 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a3b432f3c1cbfa8f42a04985f3bdc16402d28e1e
+    parent:
+      entity.yml: gitblob:c0f7ae44e9077ef8bd7b23d3bd2300dacf256dc3
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/cohere-labs/aya
+        type: model-family
+        name: Aya
+        identity_note: Aya is the multilingual research-model family led by Cohere
+          Labs. The represented branches are Aya Expanse for text, Aya Vision for
+          text-and-image understanding, and Tiny Aya for compact multilingual text
+          models. Family membership does not make member language coverage, modality,
+          context or access interchangeable. Select a concrete trained model, and
+          distinguish its weights from a provider route, quantization, dataset or
+          evaluation suite.
+        references:
+        - type: official-site
+          source:
+            url: https://cohere.com/research/aya
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/aya
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://arxiv.org/html/2603.11510v1
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/c/cohere-labs
+        - type: has-member
+          target: catalog/models/cohere-labs/aya/aya-expanse
+        - type: has-member
+          target: catalog/models/cohere-labs/aya/aya-vision
+        - type: has-member
+          target: catalog/models/cohere-labs/aya/tiny-aya
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

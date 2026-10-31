@@ -10,6 +10,10 @@
 - Include Z-Image-Turbo as an Apache-2.0 open-weight text-to-image evaluation candidate for fast/low-step generation, photorealistic-image hypotheses, bilingual English/Chinese text rendering, and instruction-following assignments where its provider-documented eight-NFE distilled route materially expands the candidate set.
 - Keep Z-Image-Turbo distinct from the undistilled Z-Image base model: evaluate Turbo's speed-oriented/distilled trade-offs rather than assuming it universally supersedes the base model for diversity, controllability, fine-tuning, or creative quality.
 - Treat Tongyi-MAI claims about photorealism, bilingual text rendering, instruction adherence, sub-second H800 latency, 16 GB consumer-VRAM operation, and leaderboard positions as eligibility/evidence inputs requiring assignment- and runtime-specific validation before recommendation.
+- Include Lyria 3.5 as a current stable music-generation evaluation candidate for assignments where a first-party Google music-generation route materially expands the candidate set.
+- Keep Lyria 3.5 distinct from earlier preview Lyria 3 Pro/Clip routes and do not treat the stable release as proof that it universally supersedes those preview routes for every creative assignment.
+- Treat Lyria generation controls, provider capability claims, API limits, pricing, product integrations, and regional availability as freshness-sensitive eligibility/evidence inputs rather than independent AI Lab proof of assignment quality, rights suitability, or accepted-result superiority.
+- Evaluate Lyria 3.5 on the target music assignment, including prompt/instruction adherence, structure and continuity, style/genre/instrumentation or vocal requirements where applicable, audible artifacts, delivery format, correction effort, accepted-result rate, and applicable rights/provenance constraints before recommendation.
 - For every retained candidate, state the exact creative hypothesis, current provider-documented eligibility basis, and the quality/runtime/rights evidence that still requires assignment-level validation.
 - Do not invent a candidate recommendation merely because a legacy model page called an entity a candidate for future comparison without a concrete task-fit hypothesis.
 - For speech synthesis/dubbing when applicable, preserve evaluation dimensions for intelligibility/pronunciation, language/accent/terminology, naturalness/prosody/pacing/style, speaker consistency, long-form continuity, audio defects, delivery format, latency/streaming/cancellation as evidence, correction effort, and accepted-result rate.
@@ -29,6 +33,7 @@
 - Every retained candidate is framed as an evaluation starting point with explicit modality/task scope and evidence boundary.
 - Z-Image-Turbo is evaluated as a distinct distilled speed-oriented model and not treated as an automatic replacement for the Z-Image base model.
 - Tongyi-MAI latency, VRAM, quality, and leaderboard claims are not treated as independent AI Lab measurements or universal task results.
+- Lyria 3.5 is represented as a stable music-generation evaluation candidate, remains distinct from earlier preview Lyria routes, and is not promoted from provider capability claims to a universal music-generation winner.
 - Speech-generation quality is not inferred from a short pleasant sample or provider positioning alone.
 - Rights and provenance are not inferred from technical capability.
 - Deployment-dependent speech latency or image-generation hardware fit is not presented as an intrinsic model fact.

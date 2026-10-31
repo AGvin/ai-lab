@@ -1,21 +1,19 @@
 # huihui.ai
 
-huihui.ai publishes community model ablations and modified model releases under the Hugging Face handle `huihui-ai`.
+huihui.ai is the publishing identity behind the [huihui-ai Hugging Face account](https://huggingface.co/huihui-ai) and its linked [GitHub account](https://github.com/huihui-support).
 
-## Translations
+The represented [Qwen3-Coder derivative](https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated) has its own exact model identity and upstream lineage. Publisher claims about abliteration remain distinct from independent quality or safety findings, and original Qwen authorship and third-party artifact production remain separate.
 
-- English
-- [Українська](./l10n/uk_UA/)
+## Catalog relations
 
-## Model documentation
+- [Huihui Qwen3 Coder 30B A3B Instruct Abliterated](../../../../../models/sub/huihui-ai/sub/qwen3-coder-derived/sub/models/sub/huihui-qwen3-coder-30b-a3b-instruct-abliterated/) — model producer.
 
-- [huihui.ai models](../../../../../models/sub/reference/sub/producers/sub/huihui-ai/) — reviewed huihui.ai model-domain navigation.
+## Model catalog
 
-## Identity boundary
-
-The current Hugging Face profile describes a group effort focused on model ablations and open-source NLP collaboration. Exact base-model lineage, modification method, license, artifacts, and provider-described behavior belong to each model or artifact page.
+- [huihui.ai model catalog](../../../../../models/sub/huihui-ai/)
 
 ## Official resources
 
-- [huihui-ai on Hugging Face](https://huggingface.co/huihui-ai)
-- [huihui-support on GitHub](https://github.com/huihui-support)
+- [huihui.ai publisher profile](https://huggingface.co/huihui-ai)
+- [huihui.ai GitHub account](https://github.com/huihui-support)
+- [Represented Huihui Qwen3-Coder derivative](https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated)

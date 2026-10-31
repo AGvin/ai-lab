@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/c/camel-ai
+  type: organization
+  name: CAMEL-AI Community
+  references:
+    - type: official-site
+      source:
+        url: https://www.camel-ai.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/camel-ai/camel
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/agent-frameworks/camel-ai

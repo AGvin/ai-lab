@@ -1,0 +1,109 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:51b1a1cc22425d7808a69162e54e51001554fd46
+    parent:
+      entity.yml: gitblob:4551246272856e7f298993d1f6d92097ef2505df
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/w/weights-and-biases
+        type: organization
+        name: Weights & Biases, Inc.
+        identity_note: Weights & Biases, Inc. is the original producer of W&B Weave
+          and has been owned by CoreWeave since the acquisition completed on 5 May
+          2025. Corporate ownership and current CoreWeave Forge branding remain distinct
+          from Weave's product provenance. Current Weave documentation names CoreWeave
+          Agent Lens as its successor and says both already receive agent-tracing
+          data. That statement does not establish migration of every SDK or evaluation
+          feature. Review trace content, destinations and retention for the selected
+          hosted, dedicated or self-managed deployment.
+        aliases:
+        - W&B
+        references:
+        - type: official-site
+          source:
+            url: https://wandb.ai/site/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.wandb.ai/weave/
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.coreweave.com/companies/weights-and-biases
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: CoreWeave states that it acquired Weights & Biases, Inc. on 2025-05-05.
+        - type: documentation
+          source:
+            url: https://docs.coreweave.com/products/wandb/weave
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/evaluation-and-observability/observability-platforms/wandb-weave
+        - type: owned-by
+          target: catalog/producers/c/coreweave
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

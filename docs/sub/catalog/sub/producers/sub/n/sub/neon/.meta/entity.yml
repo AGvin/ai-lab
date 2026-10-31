@@ -1,0 +1,36 @@
+entity:
+  id: catalog/producers/n/neon
+  type: organization
+  name: Neon
+  references:
+    - type: official-site
+      source:
+        url: https://neon.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/neondatabase/agent-skills
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://neon.com/platform-terms
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://neon.com/about-us
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/agent-skills/collections/neon-agent-skills
+  identity_note: "Neon is the publisher/brand represented by its Agent Skills collection; the Neon platform schedule identifies Databricks, Inc. as contracting parent of Neon, LLC, separately from collection licensing and deployment."

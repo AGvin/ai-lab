@@ -20,6 +20,12 @@ entity:
         - research
       authority: official
       note: The current upstream project identifies Open WebUI as created by Timothy Jaeryang Baek.
+    - type: other
+      source:
+        url: https://github.com/open-webui/open-webui/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/interfaces-and-workspaces/conversational-platforms/open-webui

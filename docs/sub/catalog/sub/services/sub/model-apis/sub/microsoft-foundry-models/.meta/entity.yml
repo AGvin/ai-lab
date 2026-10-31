@@ -1,0 +1,33 @@
+entity:
+  id: catalog/services/model-apis/microsoft-foundry-models
+  type: service
+  name: Microsoft Foundry Models
+  identity_note: >-
+    Microsoft Foundry Models is Microsoft's hosted catalog, deployment and inference-access service for
+    models from Microsoft and other producers. The service supports discovery and evaluation,
+    managed-compute or serverless deployment where offered, and supported Foundry inference endpoints.
+    Availability through Microsoft does not reassign partner/community model authorship. Models sold by
+    Azure and partner/community models can have different terms, support arrangements and deployment
+    responsibilities. Review the particular model card, license, endpoint and deployment mode.
+    Inventory, lifecycle, regions, fine-tuning, filters, capacity, quotas, pricing and SLA coverage
+    change independently. Foundry Agent Service and the wider developer platform remain separate from
+    this model-access identity.
+  aliases:
+    - Azure AI Foundry Models
+  references:
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/endpoints
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

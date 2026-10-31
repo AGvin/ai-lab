@@ -17,6 +17,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/peft/developer_guides/checkpoint
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/h/hugging-face-inc

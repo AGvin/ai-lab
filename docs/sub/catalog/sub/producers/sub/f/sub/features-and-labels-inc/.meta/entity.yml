@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/f/features-and-labels-inc
+  name: fal (Features & Labels, Inc.)
+  type: organization
+  identity_note: Features & Labels, Inc. is the organization identified by fal's current
+    platform terms. fal Research publishes post-trained models in collaboration with
+    foundation-model developers; brand, legal organization, hosted platform and model
+    identity remain distinct.
+  references:
+  - type: documentation
+    source:
+      url: https://fal.ai/legal/terms-of-service
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://fal.ai/blog/introducing-flux-3-max-by-fal
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produces
+    target: catalog/models/fal/flux-3-max
+  aliases:
+  - fal
+  - fal.ai
+  - Features & Labels, Inc.

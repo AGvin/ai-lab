@@ -1,0 +1,83 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:31b30de23ddc2a7913a50c718ddc5b611d3c49a8
+    parent: {}
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-v1-2
+        type: model
+        name: PPLX Decider V1.2
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/perplexity-ai/pplx-decider-v1.2
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/perplexity-ai/pplx-decider
+        - type: derived-from
+          target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-27b
+        identity_note: PPLX Decider V1.2 is Perplexity's released Qwen3.8-27B-backed
+          multimodal decision checkpoint. It replaces the one-question-per-forward-pass
+          format with a joint request containing state plus multiple questions and
+          uses a separate per-marker decision readout. The published model card declares
+          Apache-2.0 and authenticated repository access.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

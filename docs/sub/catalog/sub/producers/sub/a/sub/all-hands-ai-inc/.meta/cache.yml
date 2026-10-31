@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f196a0e2f2097aedd77c0e6c39f0403623e4934e
+      entity.yml: gitblob:ef894fa075daf068298c16d6f76e0ad6024405b1
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -71,6 +71,8 @@ cache:
         relations:
         - type: produces
           target: catalog/software/agents/hybrid/openhands
+        - type: produces
+          target: catalog/software/agent-frameworks/openhands-sdk
     aliases:
       effective:
         schema: default

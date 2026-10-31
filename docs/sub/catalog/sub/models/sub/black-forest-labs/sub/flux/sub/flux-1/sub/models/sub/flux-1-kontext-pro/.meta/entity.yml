@@ -1,0 +1,34 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-kontext-pro
+  type: model
+  name: FLUX.1 Kontext [pro]
+  references:
+  - type: documentation
+    source:
+      url: https://bfl.ai/blog/flux-1-kontext
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://help.bfl.ai/articles/5186006235-what-is-flux-1-kontext
+    purposes:
+    - research
+    authority: official
+  - type: api
+    source:
+      url: https://api.bfl.ai/docs
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-1
+  identity_note: >-
+    Black Forest Labs separately introduced FLUX.1 Kontext [pro] on May 29, 2025 as a production-oriented hosted model for text-to-image generation and text-guided reference-image editing.
+    Current BFL API uses the named /v1/flux-kontext-pro route and the model remains listed
+    for its API and Playground, with FLUX.2 recommended for new projects.
+    Unlike the open-weight Kontext [dev] checkpoint, [pro] is a separate proprietary hosted model identity. Do not infer its weight architecture, parameter count, training-parent lineage, downloadable rights, or a local serving path.
+    API authentication, billing and service terms must be checked directly.
+    Publisher quality, latency and stability claims are not independent benchmarks.

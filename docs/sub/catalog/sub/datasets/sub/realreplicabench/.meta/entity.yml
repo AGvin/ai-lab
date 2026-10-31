@@ -1,0 +1,18 @@
+entity:
+  id: catalog/datasets/realreplicabench
+  type: dataset
+  name: RealReplicaBench
+  references:
+    - type: repository
+      source:
+        url: https://github.com/Accio-org/RealReplicaBench
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://realreplicabench.site.accio.ai/
+      purposes:
+        - research
+      authority: official

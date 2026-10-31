@@ -1,0 +1,24 @@
+entity:
+  id: catalog/services/ai-assets/mistral-studio
+  type: service
+  name: Mistral Studio
+  aliases:
+    - Studio
+  references:
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/studio
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://mistral.ai/news/
+      purposes:
+        - research
+      authority: official
+      note: Mistral's 2026-07-09 product announcement positioned Studio as a system of record for prompts and skills; current documentation expands the developer-platform surface while preserving versioned reusable prompt/skill assets.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai

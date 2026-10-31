@@ -2,11 +2,6 @@
 
 GPT-5.6 Terra is the balanced hosted model in the GPT-5.6 series for workloads where capability and cost both matter.
 
-## Translations
-
-- English
-- [Українська](./l10n/uk_UA/)
-
 ## Model series
 
 - [GPT-5.6](../../../..)
@@ -31,6 +26,14 @@ Current provider documentation lists streaming, function calling, structured out
 ## Scope boundary
 
 This page owns Terra's model identity and source-backed current model/API profile. Pricing, long-context pricing multipliers, fallback recommendations, and workload-specific quality, latency, reliability, or accepted-result conclusions belong to product/service, selection, or evidence documentation.
+
+## Operating boundaries
+
+Reasoning effort and tool availability are API configuration. Validate tool arguments and application permissions before executing a model-proposed action [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).
+
+## Relations
+
+- Member of: [GPT-5.6](../../../../README.md).
 
 ## Official resources
 

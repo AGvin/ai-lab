@@ -1,0 +1,117 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:dccd28907ed6b80593378ad0b9aa6435f91f0c20
+    parent:
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/s/snowflake
+        type: organization
+        name: Snowflake
+        identity_note: Snowflake operates the managed Cortex model-inference API and
+          currently maintains the separate TruLens evaluation and tracing framework.
+          TruLens originated at TruEra; the project’s current site explicitly identifies
+          Snowflake stewardship following the TruEra acquisition. Serving external
+          models does not make Snowflake their original trainer. Cortex Inference,
+          AI Functions, Agents, Search and warehousing are distinct services even
+          where they share an account and billing. Check account roles, model lifecycle,
+          regional or cross-region processing and consumption charges for hosted inference.
+          TruLens is independently deployable software whose storage, instrumentation
+          and judge-model choices require their own data controls; using it does not
+          itself require adopting the Cortex Inference API.
+        references:
+        - type: official-site
+          source:
+            url: https://www.snowflake.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-rest-api
+          purposes:
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://www.trulens.org/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.snowflake.com/en/blog/snowflake-acquires-truera-to-bring-llm-ml-observability-to-data-cloud/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-observability/evaluate-applications-trulens
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/services/model-apis/snowflake-cortex-inference-api
+        - type: maintains
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/trulens
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

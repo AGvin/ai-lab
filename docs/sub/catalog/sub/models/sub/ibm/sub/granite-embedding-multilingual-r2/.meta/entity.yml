@@ -1,0 +1,37 @@
+entity:
+  id: catalog/models/ibm/granite-embedding-multilingual-r2
+  type: model-family
+  name: Granite Embedding Multilingual R2
+  identity_note: >-
+    Granite Embedding Multilingual R2 is IBM's April 2026 multilingual embedding family represented
+    by the 311M and 97M checkpoints. The 97M card explicitly documents pruning and vocabulary
+    selection from the 311M model, so the two remain distinct learned identities with exact lineage.
+  references:
+    - type: documentation
+      source:
+        url: https://www.ibm.com/granite/docs/models/embedding
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-embedding-311m-multilingual-r2
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/ibm
+    - type: has-member
+      target: catalog/models/ibm/granite-embedding-multilingual-r2/models/granite-embedding-97m-multilingual-r2
+    - type: has-member
+      target: catalog/models/ibm/granite-embedding-multilingual-r2/models/granite-embedding-311m-multilingual-r2

@@ -7,7 +7,7 @@
 - Preserve local/self-managed execution as the software identity while distinguishing optional first-party Comfy Cloud and online/API-node services as separate hosted processing surfaces.
 - Explain the two current workflow interaction views supported by official documentation: Node Graph mode for direct graph editing and APP mode for a simplified workflow-specific input/output interface.
 - Explain that a workflow can choose APP mode or Node Graph mode as its default view while current upstream support retains that behavior.
-- Treat the new-versus-old menu setting as an interface-version/compatibility option rather than a third workflow mode; do not conflate it with Node Graph versus APP mode.
+- Treat menu layout/version settings separately from workflow interaction views: current documentation lists Top and Bottom positions under `Use new menu`. Describe legacy old-menu availability only for versions with supporting documentation; neither menu placement nor legacy layout is a third workflow mode.
 - Distinguish workflow interaction views from distribution/operating surfaces such as local self-hosted installs and Comfy Cloud.
 - Preserve durable workflow surfaces: node graph, saved JSON workflows, templates, local API/backend operation, APP mode, custom nodes, model paths, and production/API integration at a stable level.
 - Preserve useful legacy trust boundaries around custom-node provenance and executable dependencies, workflow/template provenance, model sources/licenses, local API/network exposure, filesystem/model access, external API-node credentials, cloud data paths, and generated outputs.
@@ -20,7 +20,7 @@
 
 - ComfyUI remains a Visual AI Workflow Engine software identity despite optional Comfy Cloud availability.
 - The profile is not restricted to Stable Diffusion or image-only workflows.
-- Node Graph mode and APP mode are presented as workflow interaction views, while the new-versus-old menu setting is presented separately as a compatibility/interface option.
+- Node Graph mode and APP mode are workflow interaction views; menu placement and any version-specific legacy layout are presented separately.
 - APP mode is not conflated with Comfy Cloud or another hosted execution surface.
 - Custom nodes are treated as independently trusted executable extensions.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

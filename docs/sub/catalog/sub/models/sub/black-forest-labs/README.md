@@ -1,14 +1,25 @@
 # Black Forest Labs Models
 
-This model-domain view groups model families produced by Black Forest Labs. Canonical organization identity remains on the [Black Forest Labs producer page](../../../../../../../producers/sub/b/sub/black-forest-labs/).
+Model-domain view for Black Forest Labs; the separate canonical producer profile owns organizational identity. This view navigates the FLUX family and separately owned learned prompt components; it is not itself a trained model or hosted service. [Black Forest Labs](https://bfl.ai/) [BFL official model registry](https://huggingface.co/black-forest-labs).
 
-## Translations
+## Identity and scope
 
-- English
-- [Українська](./l10n/uk_UA/)
+The FLUX family belongs to Black Forest Labs. Keep the model-domain view distinct from the producer profile, public registries and hosted inference surfaces. [Black Forest Labs](https://bfl.ai/) [BFL official model registry](https://huggingface.co/black-forest-labs).
 
-## Model families
+## Use and limitations
 
-- [`flux/`](./sub/flux/) — the FLUX family, including the materialized FLUX.1 series.
+Choose a concrete model before comparing rights, runtime fit, modality or service behavior; neither the producer view nor the FLUX family has one shared weight license or parameter count. [BFL official model registry](https://huggingface.co/black-forest-labs) [FLUX.2 overview](https://docs.bfl.ai/flux_2/flux2_overview) [FLUX 3 initial announcement](https://bfl.ai/blog/flux-3).
 
-Hosted endpoints and third-party inference routes are access concerns rather than replacement model identities.
+## Navigation
+
+- [Black Forest Labs producer profile](../../../producers/sub/b/sub/black-forest-labs/README.md)
+- [FLUX family](sub/flux/README.md)
+
+- [FLUX 3 Image Klein Prompt Upsampler](sub/flux-3-image-klein-prompt-upsampler/README.md) — separate learned Qwen-derived prompt component.
+
+## Sources
+
+- [Black Forest Labs](https://bfl.ai/)
+- [BFL official model registry](https://huggingface.co/black-forest-labs)
+- [FLUX.2 overview](https://docs.bfl.ai/flux_2/flux2_overview)
+- [FLUX 3 initial announcement](https://bfl.ai/blog/flux-3)

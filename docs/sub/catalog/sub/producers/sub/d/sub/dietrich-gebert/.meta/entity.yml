@@ -18,6 +18,14 @@ entity:
         - research
       authority: official
       note: The Ponytail package metadata and repository license identify Dietrich Gebert as author/copyright holder.
+    - type: repository
+      source:
+        url: https://github.com/DietrichGebert/ponytail/blob/main/package.json
+      purposes:
+      - identification
+      - research
+      authority: official
+      note: Package metadata names Dietrich Gebert as author.
   relations:
     - type: produces
       target: catalog/agent-skills/collections/ponytail

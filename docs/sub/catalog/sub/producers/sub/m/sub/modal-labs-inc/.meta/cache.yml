@@ -1,0 +1,93 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b986814da6032d76a998e489af95e1833113c1d3
+    parent:
+      entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/m/modal-labs-inc
+        type: organization
+        name: Modal Labs, Inc.
+        identity_note: Modal Labs, Inc., also known as Modal, is the company providing
+          the represented Modal cloud infrastructure service. Modal's published SaaS
+          agreement identifies the contracting company and scopes service access and
+          support through the agreement and applicable service order. The producer
+          identity is separate from workloads, models and customer code run on its
+          infrastructure; service guarantees and no-fee-use limitations must be checked
+          for the actual plan and contract.
+        aliases:
+        - Modal
+        references:
+        - type: official-site
+          source:
+            url: https://modal.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: terms-of-service
+          source:
+            url: https://modal.com/legal/terms
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/services/infrastructure/modal
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

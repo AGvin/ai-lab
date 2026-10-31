@@ -1,0 +1,29 @@
+entity:
+  id: catalog/software/gateways/model-gateways/ogx
+  type: software
+  name: OGX
+  aliases:
+    - Llama Stack
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ogx-ai/ogx
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/ogx-ai/ogx/releases
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ogx-ai.github.io/docs
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/ogx-contributors

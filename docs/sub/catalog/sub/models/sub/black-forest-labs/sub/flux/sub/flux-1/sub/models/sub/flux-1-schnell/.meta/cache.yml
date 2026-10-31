@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:295cfe9a723ed55e5affef1aa391f264507a3a6b
+      entity.yml: gitblob:822628b45adc4f1a77dc844d5b84b046d42c56ea
     parent:
-      entity.yml: gitblob:356a3abe4499d043c6e16f6987bac686420de371
+      entity.yml: gitblob:5dd2f97e39d95af63fbb4e94be6f54d0dbe46601
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
   state:
     node:
@@ -47,7 +47,7 @@ cache:
         type: model
         name: FLUX.1-schnell
         references:
-        - type: registry
+        - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/FLUX.1-schnell
           purposes:
@@ -57,6 +57,10 @@ cache:
         relations:
         - type: member-of
           target: catalog/models/black-forest-labs/flux/flux-1
+        identity_note: FLUX.1-schnell is Black Forest Labs' 12-billion-parameter rectified-flow
+          transformer for text-to-image generation. Latent adversarial diffusion distillation
+          enables the documented 1–4-step workflow; its weights are released under
+          Apache 2.0.
     aliases:
       effective:
         schema: default

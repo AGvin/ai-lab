@@ -1,27 +1,23 @@
 # GLM
 
-GLM is the long-lived Z.AI model family spanning text, coding, agent-oriented, vision-language, image, audio, and other model identities published through the current Z.AI catalog.
-
-## Translations
-
-- English
-- [Українська](./l10n/uk_UA/)
-
-## Canonical producer
-
-- [Z.AI](../../../../../../../../../producers/sub/z/sub/z-ai/)
+GLM is the long-lived Z.AI model family. Its canonical members identify individually reviewed models rather than aliases for the entire family.
 
 ## Family boundary
 
-Exact GLM identifiers such as `glm-5v-turbo`, `glm-5`, or `glm-4.6v` are concrete hosted model identities or model-line members rather than aliases for the whole GLM family. Z.AI service plans, API pricing, quotas, and tool integrations are separate access concerns.
+Exact model identifiers, release capabilities and weight availability belong to the corresponding model records. Hosted service plans, pricing, quotas and integrations are separate access concerns. This page projects the already-canonical family membership; it does not create placeholders for every model in the provider inventory.
 
-## Models
+## Model collection
 
-- [GLM-5V-Turbo](./sub/models/sub/glm-5v-turbo/) — hosted multimodal coding model for visual programming and agent-oriented workflows.
+- [Browse the GLM model index](./sub/models/) for all materialized concrete model pages.
 
-Other GLM models should be materialized only when their exact identity is required by current reference, comparison, deployment, or evaluation documentation; this page does not create an empty inventory of the provider catalog.
+## Relations
+
+- Has member: [GLM-5.3](sub/models/sub/glm-5-3/)
+- Has member: [GLM-5.3-Flash](sub/models/sub/glm-5-3-flash/)
+- Has member: [GLM-5V-Turbo](sub/models/sub/glm-5v-turbo/)
+- Produced by: [Z.AI](../../../../../producers/sub/z/sub/z-ai/)
 
 ## Official resources
 
-- [Z.AI model overview](https://docs.z.ai/guides/overview/overview)
-- [GLM-5V-Turbo documentation](https://docs.z.ai/guides/vlm/glm-5v-turbo)
+- [Current Z.AI model documentation](https://docs.z.ai/guides/overview/overview)
+- [Model registry](https://huggingface.co/zai-org/models)

@@ -1,0 +1,81 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:c9e0384228ba207a8371c1e594d250e3291aed54
+    parent:
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/ibm/granite-embedding-english-r2/models/granite-embedding-reranker-english-r2
+        type: model
+        name: Granite Embedding Reranker English R2
+        identity_note: IBM 149M English cross-encoder trained from Granite Embedding
+          English R2 for query-document reranking.
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-embedding-reranker-english-r2
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/ibm/granite-embedding-english-r2
+        - type: derived-from
+          target: catalog/models/ibm/granite-embedding-english-r2/models/granite-embedding-english-r2
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

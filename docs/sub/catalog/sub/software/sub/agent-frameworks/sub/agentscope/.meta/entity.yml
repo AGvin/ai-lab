@@ -1,0 +1,34 @@
+entity:
+  id: catalog/software/agent-frameworks/agentscope
+  type: software
+  name: AgentScope
+  references:
+    - type: repository
+      source:
+        url: https://github.com/agentscope-ai/agentscope
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/agentscope-ai/agentscope/releases
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.agentscope.io/
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/agentscope-ai/agentscope-runtime
+      purposes:
+        - research
+      authority: official
+      note: Historical standalone runtime; AgentScope 2.0 includes its capabilities and is the maintained migration target.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/alibaba-group

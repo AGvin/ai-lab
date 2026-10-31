@@ -19,3 +19,7 @@ entity:
   relations:
     - type: produces
       target: catalog/models/black-forest-labs/flux
+    - type: produces
+      target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-krea-dev
+    - type: produces
+      target: catalog/models/black-forest-labs/flux-3-image-klein-prompt-upsampler

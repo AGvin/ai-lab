@@ -1,0 +1,39 @@
+entity:
+  id: catalog/services/assistant-workspaces/meta-ai
+  type: service
+  name: Meta AI
+  identity_note: >-
+    Meta AI is Meta's hosted general-purpose assistant across its app, web experience and supported Meta
+    applications and devices. The assistant supports conversation and personal context, with
+    source-described voice and live-perception features, image work, web and social-content grounding,
+    shopping/discovery and parallel reasoning. These are capabilities of the assistant; underlying Llama
+    or Muse models, social applications and glasses hardware have separate identities. Meta AI is
+    distinct from the Muse personal-agent service that runs delegated background tasks. Model routing,
+    memory, connected app/device support, countries, languages, teen controls and data-use settings can
+    differ by account, surface and rollout. Consult the current product documentation before assuming a
+    feature or data control is available everywhere.
+  references:
+    - type: article
+      source:
+        url: https://about.fb.com/news/2025/04/introducing-meta-ai-app-new-way-access-ai-assistant/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.meta.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/meta

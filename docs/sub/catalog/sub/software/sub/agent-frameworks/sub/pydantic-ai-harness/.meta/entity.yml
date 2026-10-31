@@ -16,6 +16,25 @@ entity:
       purposes:
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/pydantic/pydantic-ai-harness
+      purposes:
+        - research
+      authority: official
+      note: Archived historical upstream through v0.36.0; active code and releases moved to pydantic/pydantic-ai.
+    - type: documentation
+      source:
+        url: https://pydantic.dev/docs/ai/harness/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://pydantic.dev/docs/ai/harness/filesystem/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/p/pydantic

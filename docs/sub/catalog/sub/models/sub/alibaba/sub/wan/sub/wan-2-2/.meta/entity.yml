@@ -1,0 +1,29 @@
+entity:
+  id: catalog/models/alibaba/wan/wan-2-2
+  type: model-series
+  name: Wan 2.2
+  references:
+    - type: repository
+      source:
+        url: https://github.com/Wan-Video/Wan2.2
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/wan-video
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/wan
+    - type: produced-by
+      target: catalog/producers/w/wan-team
+    - type: has-member
+      target: catalog/models/alibaba/wan/wan-2-2/models/wan2-2-ti2v-5b
+    - type: has-member
+      target: catalog/models/alibaba/wan/wan-2-2/models/wan2-2-t2v-a14b
+    - type: has-member
+      target: catalog/models/alibaba/wan/wan-2-2/models/wan2-2-i2v-a14b

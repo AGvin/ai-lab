@@ -1,0 +1,17 @@
+entity:
+  id: catalog/agent-skills/collections/wan-agent-skills
+  type: skill-collection
+  name: Wan Agent Skills
+  aliases:
+    - Wan-skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/Wan-Video/Wan-skills
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/w/wan-team

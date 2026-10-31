@@ -1,0 +1,35 @@
+entity:
+  id: catalog/producers/k/krea
+  type: organization
+  name: Krea
+  aliases:
+  - Krea AI
+  references:
+  - type: official-site
+    source:
+      url: https://www.krea.ai/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://www.krea.ai/blog/flux-krea-open-source-release
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/krea-ai/flux-krea
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produces
+    target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-krea-dev
+  identity_note: >-
+    Krea is the applied AI organization that jointly developed FLUX.1 Krea [dev]
+    with Black Forest Labs. This producer profile is distinct from Krea's hosted
+    creative application, API access and individual trained models.

@@ -1,0 +1,109 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:59219ce15f79a1b1c37f060f53c2537520d706f7
+    parent:
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/s/skild-ai
+        type: organization
+        name: Skild AI
+        identity_note: Skild AI develops the represented Skild Brain robotics model
+          family and its S1 model. Its technical accounts describe an in-house robotics
+          effort, including S1’s learning from video demonstrations; the company remains
+          distinct from its models and from robot manufacturers or compute suppliers.
+          Evaluate a concrete Skild model and deployment together with its robot hardware,
+          control interfaces, operating limits and validation process. Demonstrations
+          and architectural descriptions alone do not establish unrestricted weight
+          access or a safety case for every environment. NVIDIA infrastructure use
+          does not make NVIDIA the model producer. Availability, integration support
+          and commercial conditions belong to the relevant model release and deployment
+          agreement.
+        references:
+        - type: official-site
+          source:
+            url: https://www.skild.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.skild.ai/blogs/building-the-general-purpose-robotic-brain
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.skild.ai/blogs/s1
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/models/skild-ai/skild-brain
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

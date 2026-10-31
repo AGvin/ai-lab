@@ -1,0 +1,23 @@
+entity:
+  id: catalog/hardware/openai-jalapeno
+  type: hardware
+  name: OpenAI Jalapeño Intelligence Processor
+  aliases:
+    - Jalapeño
+  references:
+    - type: release-notes
+      source:
+        url: https://openai.com/index/openai-broadcom-jalapeno-inference-chip/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor
+      purposes:
+        - research
+      authority: upstream
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

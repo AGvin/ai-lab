@@ -12,5 +12,5 @@ Temporal Server can be self-hosted; Temporal Cloud is a separate managed operati
 
 - [Temporal documentation](https://docs.temporal.io/)
 - [Temporal repository](https://github.com/temporalio/temporal)
-- [Temporal company history](https://temporal.io/news/temporal-raises-usd18-75m-series-a-increases-total-raised-to-usd25-5m)
+- [Temporal company history](https://temporal.io/about)
 - [Temporal terms of service](https://temporal.io/terms-of-service)

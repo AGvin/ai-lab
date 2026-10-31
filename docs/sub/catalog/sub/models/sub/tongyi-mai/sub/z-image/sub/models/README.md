@@ -5,3 +5,4 @@ Concrete trained model identities currently materialized for the Z-Image family.
 ## Models
 
 - [`Z-Image`](./sub/z-image/)
+- [`Z-Image-Turbo`](./sub/z-image-turbo/)

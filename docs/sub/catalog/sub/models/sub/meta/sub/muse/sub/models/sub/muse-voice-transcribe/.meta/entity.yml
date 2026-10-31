@@ -1,0 +1,24 @@
+entity:
+  id: catalog/models/meta/muse/models/muse-voice-transcribe
+  type: model
+  name: Muse Voice Transcribe
+  identity_note: >-
+    Muse Voice Transcribe is Meta's released real-time audio perception and speech-to-text model. Meta documents streaming ASR, speaker diarization, endpointing/voice activity detection, contextual and keyword biasing, multilingual code-switching, and the model ID muse-voice-transcribe-1.0; it returns transcripts rather than a speech-to-speech response.
+  references:
+    - type: article
+      source:
+        url: https://research.meta.ai/blog/introducing-muse-voice-transcribe
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://dev.meta.ai/models/muse-voice-transcribe
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/meta/muse

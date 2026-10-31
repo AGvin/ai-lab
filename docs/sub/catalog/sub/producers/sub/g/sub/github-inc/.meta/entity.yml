@@ -20,6 +20,27 @@ entity:
         - research
       authority: official
       note: Official GitHub Terms of Service identifying GitHub, Inc. and Microsoft as a GitHub affiliate.
+    - type: other
+      source:
+        url: https://blogs.microsoft.com/blog/2018/10/26/microsoft-completes-github-acquisition/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/github/spec-kit
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/customer-terms
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/agents/hybrid/github-copilot

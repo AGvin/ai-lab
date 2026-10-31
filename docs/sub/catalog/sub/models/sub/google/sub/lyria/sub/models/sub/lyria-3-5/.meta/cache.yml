@@ -1,0 +1,101 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:1dd67bcfaff3128997947ec6c383cbbf88aa93d3
+    parent: {}
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/google/lyria/models/lyria-3-5
+        type: model
+        name: Lyria 3.5
+        aliases:
+        - lyria-3.5
+        references:
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemini-api/docs/deprecations
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemini-api/docs/changelog
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemini-api/docs/models/lyria-3.5
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://deepmind.google/models/model-cards/lyria-3-5/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/google/lyria
+        identity_note: Stable music-generation model served as lyria-3.5, with text/image
+          input and audio plus lyrics output; API GA timing is distinct from model-card
+          publication.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

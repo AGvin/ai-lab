@@ -1,0 +1,45 @@
+entity:
+  id: catalog/models/amazon/strands-decider/models/strands-decider-12b-gemma4-v1-2610
+  type: model
+  name: Strands Decider 12B Gemma4 v1-2610
+  identity_note: >-
+    Released strands-decider-12B-gemma4-v1-2610 adapter and decision head on google/gemma-4-12B-it.
+    The three-run combination is a trained model identity, not a runtime package or a mirror. It uses
+    text only and requires the repository code with Gemma support, which the cited card says is not
+    yet in PyPI. Model size labels do not establish memory fit or inherited base modalities.
+    Short-task confidence calibration must be tested on the target questions. Runtime state is
+    truncated by default; strict-window mode rejects oversize input.
+  aliases:
+    - "StrandsAgents/strands-decider-12B-gemma4-v1-2610"
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/StrandsAgents/strands-decider-12B-gemma4-v1-2610
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/strands-labs/strands-decider/blob/main/docs/naming.md
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/strands-labs/strands-decider/blob/main/docs/inference.md
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/amazon/strands-decider

@@ -10,3 +10,4 @@ Danny Avila is the founder and original producer of LibreChat. ClickHouse's late
 
 - [Danny Avila on GitHub](https://github.com/danny-avila)
 - [ClickHouse acquisition announcement](https://clickhouse.com/blog/clickhouse-acquires-librechat)
+- [LibreChat founder and maintainer profile](https://www.librechat.ai/authors/danny)

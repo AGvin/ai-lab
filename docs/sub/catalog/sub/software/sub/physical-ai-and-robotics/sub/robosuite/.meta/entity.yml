@@ -1,0 +1,76 @@
+entity:
+  id: catalog/software/physical-ai-and-robotics/robosuite
+  type: software
+  name: robosuite
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ARISE-Initiative/robosuite
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://robosuite.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ARISE-Initiative/robosuite/releases/tag/v1.5.2
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ARISE-Initiative/robosuite/blob/v1.5.2/setup.py
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ARISE-Initiative/robosuite/blob/v1.5.2/requirements-extra.txt
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ARISE-Initiative/robosuite/blob/v1.5.2/LICENSE
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://robosuite.ai/docs/installation.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://robosuite.ai/docs/modules/controllers.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://robosuite.ai/docs/algorithms/demonstrations.html
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ARISE-Initiative/robosuite/blob/v1.5.2/robosuite/scripts/playback_demonstrations_from_hdf5.py
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://robosuite.ai/docs/algorithms/sim2real.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/arise-initiative

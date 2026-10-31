@@ -1,0 +1,40 @@
+entity:
+  id: catalog/producers/s/sideguide-technologies-inc
+  type: organization
+  name: SideGuide Technologies, Inc.
+  identity_note: >-
+    SideGuide Technologies, Inc. is the Delaware corporation doing business as Firecrawl, explicitly
+    named in Firecrawl’s October 7, 2026 service agreement. It is the operating organization for the
+    represented Firecrawl web-data service. Firecrawl’s hosted API converts web content into data for
+    applications. The service agreement, account credentials, permitted-use rules and third-party
+    content rights govern hosted use. An API capability does not grant permission to collect every
+    source website’s content, and hosted subscriptions are separate from any source-code distribution or
+    self-hosted deployment. Determine which URLs and data may be processed and who controls retention
+    before connecting production workflows.
+  aliases:
+    - Firecrawl
+  references:
+    - type: official-site
+      source:
+        url: https://www.firecrawl.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://www.firecrawl.dev/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.firecrawl.dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/web-data/firecrawl

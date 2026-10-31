@@ -6,4 +6,5 @@ AI integration or direct agent access can make a knowledge workspace useful to A
 
 ## Child pages
 
+- [`khoj/`](./sub/khoj/)
 - [`obsidian/`](./sub/obsidian/)

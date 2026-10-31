@@ -3,7 +3,7 @@
 ## Requirements
 
 - Identify Claude Opus 5 as the concrete `claude-opus-5` model in the Claude Opus series.
-- Reflect Anthropic's current recommended-default positioning for most complex workloads only while current official guidance continues to support it.
+- Reflect Anthropic's current lifecycle and selection guidance for Opus 5, distinguishing it from Opus 5.5; present recommendations as mutable provider guidance rather than permanent model properties.
 - Keep context, output, pricing, thinking mode, knowledge cutoff, provider availability, release, and retirement facts freshness-sensitive.
 
 ## Validation

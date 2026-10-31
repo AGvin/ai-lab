@@ -1,0 +1,117 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:55a2c0462442e58bd24ff321e0a9949f540d925b
+    parent:
+      entity.yml: gitblob:e354b4d264dab4624c90794a471d0e8e511b4425
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/series
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-image-klein-base
+        name: FLUX 3 Image Klein Base
+        type: model
+        relations:
+        - type: member-of
+          target: catalog/models/black-forest-labs/flux/flux-3
+        - type: has-derivative
+          target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-image-klein
+        identity_note: FLUX 3 Image Klein Base is Black Forest Labs' 5.6-billion-parameter
+          undistilled base image-generation and editing model, released on 2026-10-15
+          under the FLUX Kommunity license. The generator count excludes the text
+          encoder and optional separate prompt-upsampler model.
+        references:
+        - type: article
+          source:
+            url: https://bfl.ai/blog/flux-3-image-klein
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/black-forest-labs/flux-3-image-klein
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/black-forest-labs/flux-3-image-klein
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: license
+          source:
+            url: https://huggingface.co/black-forest-labs/flux-3-image-klein-base/blob/main/LICENSE.md
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

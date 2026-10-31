@@ -1,0 +1,56 @@
+entity:
+  id: catalog/models/cohere/north
+  type: model-family
+  name: North
+  references:
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/models
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/north-mini-code-1.0
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/north-small-translate-1.0
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/CohereLabs/North-Mini-Code-1.0
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/CohereLabs/North-Small-Translate-1.0
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/c/cohere
+  - type: has-member
+    target: catalog/models/cohere/north/models/north-mini-code-1-0
+  - type: has-member
+    target: catalog/models/cohere/north/models/north-small-translate-1-0
+  - type: has-member
+    target: catalog/models/cohere/north/models/north-micro-vision-instruct

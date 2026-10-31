@@ -16,14 +16,60 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://deepmind.google/models/gemini/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/deprecations
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/function-calling
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/g/google
     - type: produced-by
       target: catalog/producers/g/google-deepmind
     - type: has-member
+      target: catalog/models/google/gemini/models/gemini-3-1-flash-lite-image
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-3-5-flash-lite
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-3-5-transcribe
+    - type: has-member
       target: catalog/models/google/gemini/models/gemini-3-6-flash
     - type: has-member
       target: catalog/models/google/gemini/models/gemini-3-7-flash
     - type: has-member
       target: catalog/models/google/gemini/models/gemini-3-8-flash
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-3-8-flash-cyber
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-embedding-2
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-3-8-flash-tts
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-3-8-flash-lite-tts
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-nano-banana-2-1
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-3-8-live
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-3-8-live-extended-thinking
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-4-argon
+    - type: has-member
+      target: catalog/models/google/gemini/models/gemini-4-argon-cyber-permissive
+  identity_note: "Provider-hosted model family attributed to Google and Google DeepMind; exact released model IDs, specialized variants, and service routes carry different capabilities and access conditions."

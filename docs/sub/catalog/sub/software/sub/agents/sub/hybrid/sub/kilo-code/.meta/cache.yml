@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:674249e0a3f85d820aef2ebd4639c56249257d56
+      entity.yml: gitblob:9907829fcbad53385d6e4927fdd06eb75d40fb09
     parent:
       entity.yml: gitblob:8fac2314e88755b43bc622e0d92b4c5ab01c3bf8
   state:
@@ -70,6 +70,18 @@ cache:
             url: https://github.com/Kilo-Org/kilocode
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://kilo.ai/docs/contributing/architecture/cli-runtime
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://kilo.ai/docs/code-with-ai/platforms/cli-reference
+          purposes:
           - research
           authority: official
         relations:

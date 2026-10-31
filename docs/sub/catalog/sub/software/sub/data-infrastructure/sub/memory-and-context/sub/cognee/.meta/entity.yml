@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/data-infrastructure/memory-and-context/cognee
+  type: software
+  name: Cognee
+  references:
+    - type: repository
+      source:
+        url: https://github.com/topoteretes/cognee
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.cognee.ai/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cognee.ai/setup-configuration/security
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/topoteretes

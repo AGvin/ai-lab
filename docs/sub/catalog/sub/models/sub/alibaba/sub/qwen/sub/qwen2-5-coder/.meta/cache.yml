@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b21e2d6a1d4e60566a5e11b729876a1c5843d267
+      entity.yml: gitblob:616fb3dd2f7100068602d65c1aa71eb6f06721aa
     parent:
-      entity.yml: gitblob:23d8587a0565b9e8ef2a6a406151436db422b7b1
+      entity.yml: gitblob:9629ab6dcb58053a0f81b1e4b7976b36b0d41141
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
   state:
     node:
@@ -57,6 +57,18 @@ cache:
         - type: article
           source:
             url: https://qwenlm.github.io/blog/qwen2.5-coder/
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
           purposes:
           - research
           authority: official

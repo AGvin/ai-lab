@@ -1,0 +1,4 @@
+entity:
+  id: catalog/specifications/schemas
+  type: catalog-index
+  name: Schemas

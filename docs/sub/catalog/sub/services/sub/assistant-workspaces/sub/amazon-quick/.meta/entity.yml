@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/assistant-workspaces/amazon-quick
+  type: service
+  name: Amazon Quick
+  references:
+    - type: product-page
+      source:
+        url: https://aws.amazon.com/quick/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/quick/latest/userguide/working-with-agents.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/amazon-web-services

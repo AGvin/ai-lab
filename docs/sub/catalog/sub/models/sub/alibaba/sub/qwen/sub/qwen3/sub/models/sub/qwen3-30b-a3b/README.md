@@ -2,11 +2,6 @@
 
 Qwen3 30B-A3B is a post-trained Mixture of Experts (MoE) language model in the Qwen3 series.
 
-## Translations
-
-- English
-- [Українська](./l10n/uk_UA/)
-
 ## Model series
 
 - [Qwen3](../../../..)
@@ -44,7 +39,28 @@ Version-specific naming, behavior, and context differences belong on the corresp
 
 This canonical page owns Qwen3 30B-A3B identity, intrinsic architecture facts, official references, artifact identity, and navigation to versions. Hardware-fit recommendations, loading strategy, comparisons against smaller or hosted models, runtime performance, and production-fit conclusions belong to selection, deployment/workflow, or evidence documentation.
 
+## Decision and Operational Boundaries
+
+Qwen3-30B-A3B is an Apache-2.0 MoE model with 30.5B total and 3.3B active parameters.
+
+- Keep initial hybrid-thinking behavior and Instruct-2507 non-thinking behavior on their respective version owners; neither mode nor context is universal across the model's represented releases.
+- Active parameters do not describe resident weights, KV cache, total RAM/VRAM, or equivalence to a dense 3B model.
+- Keep model-generated text, code, and tool arguments separate from permission to execute them; the application owns command validation, tool access, network access, and sandboxing.
+
 ## Official resources
 
 - [Qwen3 30B-A3B](https://huggingface.co/Qwen/Qwen3-30B-A3B)
 - [Qwen3 30B-A3B GGUF](https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF)
+
+## Relationships
+
+| Relationship | Catalog page |
+| --- | --- |
+| Member of | [Qwen3](../../../../) |
+| Has version | [Qwen3 30B-A3B Initial Release](./sub/versions/sub/initial/) |
+| Has version | [Qwen3 30B-A3B Instruct 2507](./sub/versions/sub/2507/) |
+
+## Primary Sources
+
+- [Official model card or license: Qwen/Qwen3-30B-A3B](https://huggingface.co/Qwen/Qwen3-30B-A3B)
+- [Official model card or license: Qwen/Qwen3-30B-A3B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507)

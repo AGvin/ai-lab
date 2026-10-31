@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1b1d66ee93af7a29300aab96c18d048ed4e51945
+      entity.yml: gitblob:7d2ebba59c3e808133ee63484c02c6b5a100e8f0
     parent:
       entity.yml: gitblob:46b91081ab3e21420c7289bb28e30b3d82f867a5
   state:
@@ -45,6 +45,8 @@ cache:
         id: catalog/producers/d/danny-avila
         type: individual
         name: Danny Avila
+        identity_note: LibreChat founder and maintainer under danny-avila; distinct
+          from Daniel Avila (davila7), publisher of Claude Code Templates.
         references:
         - type: other
           source:
@@ -61,6 +63,14 @@ cache:
           authority: official
           note: ClickHouse's first-party acquisition announcement identifies Danny
             Avila as LibreChat's founder.
+        - type: official-site
+          source:
+            url: https://www.librechat.ai/authors/danny
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: LibreChat identifies Danny Avila as founder and maintainer.
         relations:
         - type: produces
           target: catalog/software/interfaces-and-workspaces/conversational-platforms/librechat

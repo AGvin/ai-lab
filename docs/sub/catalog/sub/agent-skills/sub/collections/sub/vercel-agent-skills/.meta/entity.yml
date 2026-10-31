@@ -1,0 +1,17 @@
+entity:
+  id: catalog/agent-skills/collections/vercel-agent-skills
+  type: skill-collection
+  name: Vercel Agent Skills
+  aliases:
+    - vercel-labs/agent-skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/vercel-labs/agent-skills
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/vercel-inc

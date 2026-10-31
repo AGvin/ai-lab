@@ -1,0 +1,20 @@
+entity:
+  id: concepts/ai-engineering/methodologies/software-development/spec-driven-development
+  name: Spec-Driven Development
+  aliases:
+    - SDD
+  references:
+    - type: documentation
+      source:
+        url: https://github.com/github/spec-kit/blob/main/docs/concepts/sdd.md
+      purposes:
+        - identification
+        - research
+      authority: independent
+      note: GitHub's Spec Kit documentation explicitly defines Spec-Driven Development as an intent-driven, multi-step development process; the canonical concept remains tool-independent.
+    - type: repository
+      source:
+        url: https://github.com/github/spec-kit
+      purposes:
+        - research
+      authority: independent

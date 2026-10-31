@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-embedding
+  type: model-series
+  name: Qwen3-Embedding
+  references:
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen3-Embedding
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen
+    - type: produced-by
+      target: catalog/producers/q/qwen-team
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-embedding/models/qwen3-embedding-0-6b
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-embedding/models/qwen3-embedding-4b
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-embedding/models/qwen3-embedding-8b

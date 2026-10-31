@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:0998a3482a167d36bf17518f6cee61217be3b020
+      entity.yml: gitblob:3d7d9cfcd6ab81400d81e2468c33e9b2babb1ba5
     parent:
       entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
       node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
@@ -60,6 +60,20 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/deprecations
+          purposes:
+          - research
+          authority: official
+        identity_note: Producer-oriented navigation over OpenAI model identities;
+          this page is not itself a trained model or hosted API service.
     aliases:
       effective:
         schema: default

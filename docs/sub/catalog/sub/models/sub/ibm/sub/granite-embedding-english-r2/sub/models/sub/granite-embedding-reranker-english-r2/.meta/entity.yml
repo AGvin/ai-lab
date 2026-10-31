@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/ibm/granite-embedding-english-r2/models/granite-embedding-reranker-english-r2
+  type: model
+  name: Granite Embedding Reranker English R2
+  identity_note: IBM 149M English cross-encoder trained from Granite Embedding English R2 for query-document
+    reranking.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-embedding-reranker-english-r2
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/ibm/granite-embedding-english-r2
+  - type: derived-from
+    target: catalog/models/ibm/granite-embedding-english-r2/models/granite-embedding-english-r2

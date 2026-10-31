@@ -1,0 +1,15 @@
+entity:
+  id: catalog/hardware/nvidia-a100-80gb
+  type: hardware
+  name: NVIDIA A100 80GB Tensor Core GPU
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/data-center/a100/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

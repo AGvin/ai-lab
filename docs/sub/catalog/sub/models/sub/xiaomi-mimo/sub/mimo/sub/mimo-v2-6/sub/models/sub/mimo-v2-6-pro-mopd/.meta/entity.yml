@@ -1,0 +1,32 @@
+entity:
+  id: catalog/models/xiaomi-mimo/mimo/mimo-v2-6/models/mimo-v2-6-pro-mopd
+  type: model
+  name: MiMo-V2.6-Pro-MOPD
+  identity_note: >-
+    MiMo-V2.6-Pro-MOPD is a distinct September 2026 Xiaomi MiMo MOPD2 post-trained model.
+    Publisher-disclosed scale: about 1.02T total parameters. Scope: native multimodal text, image, video, audio.
+    Distinct learned Pro weights after multi-teacher on-policy distillation incorporating repetition-specialized training; not merely a faster API mode. Claimed improvements are publisher observations. The released weights are MIT-labeled; source claims do not
+    constitute independent hardware, benchmark or security evaluation.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-MOPD
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://mimo.mi.com/docs/en-US/news/latest/v2-6
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/xiaomi-mimo/mimo/mimo-v2-6

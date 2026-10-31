@@ -1,0 +1,112 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:75e8c9eb34f98fc9ca6e51262374031358205f36
+    parent: {}
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/cohere-labs/aya/aya-expanse/models/aya-expanse-32b
+        type: model
+        name: Aya Expanse 32B
+        identity_note: Aya Expanse 32B is Cohere Labs' 32-billion-parameter multilingual
+          text model, released on 24 October 2024. Its model card documents text input/output,
+          23 supported languages and a 128K context window. The live Cohere c4ai-aya-expanse-32b
+          route documents a 4K maximum output, which is separate from its 128K context.
+          Downloaded weights require their own license/access checks and a runtime
+          sized for the selected precision and context.
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/CohereLabs/aya-expanse-32b
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://cohere.com/blog/aya-expanse-connecting-our-world
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/aya-expanse
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/aya-vision-32b
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/cohere-labs/aya/aya-expanse
+        - type: has-derivative
+          target: catalog/models/cohere-labs/aya/aya-vision/models/aya-vision-32b
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json
