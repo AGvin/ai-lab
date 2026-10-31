@@ -1,6 +1,6 @@
 # MiMo
 
-MiMo is Xiaomi MiMo Team's model family. The currently represented [MiMo V2.5 series](./sub/mimo-v2-5/) contains separately released trained **MiMo-V2.5** and **MiMo-V2.5-Pro** models; their parameter counts and supported modalities must be evaluated individually, not attributed to every MiMo release.
+MiMo is Xiaomi MiMo Team's model family. The catalog represents both [MiMo V2.5](./sub/mimo-v2-5/) and the newer [MiMo V2.6 series](./sub/mimo-v2-6/). V2.6 includes original RL, Qwen-derived SFT, and subsequent MOPD2-trained models; Pro UltraSpeed is a hosted mode. Check exact model-specific architecture and modalities.
 
 ## Translations
 
@@ -10,6 +10,7 @@ MiMo is Xiaomi MiMo Team's model family. The currently represented [MiMo V2.5 se
 
 - Produced by: [Xiaomi MiMo Team](../../../../../producers/sub/x/sub/xiaomi-mimo-team/)
 - Has member: [MiMo V2.5 series](sub/mimo-v2-5/)
+- Has member: [MiMo V2.6 series](sub/mimo-v2-6/)
 
 ## Operating boundary
 

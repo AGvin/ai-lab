@@ -1,0 +1,32 @@
+entity:
+  id: catalog/models/xiaomi-mimo/mimo/mimo-v2-6/models/mimo-v2-6-distill-qwen-9b
+  type: model
+  name: MiMo-V2.6-Distill-Qwen-9B
+  identity_note: >-
+    MiMo-V2.6-Distill-Qwen-9B is a distinct September 2026 Xiaomi MiMo supervised fine-tuned/distilled model.
+    Publisher-disclosed scale: approximately 9.4B total parameters. Scope: text/image-text and agentic tasks; not verified equivalent audio/video support.
+    Published derivative of Qwen3.5-9B supervised fine-tuning using MiMo-generated data, not a quantization of Pro or Flash. No unsupported derived-from edge to an unrepresented upstream node. The released weights are MIT-labeled; source claims do not
+    constitute independent hardware, benchmark or security evaluation.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://mimo.mi.com/docs/en-US/news/latest/v2-6
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/xiaomi-mimo/mimo/mimo-v2-6
