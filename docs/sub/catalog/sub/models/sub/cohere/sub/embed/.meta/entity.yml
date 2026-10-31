@@ -47,3 +47,11 @@ entity:
     target: catalog/models/cohere/embed/models/embed-v5-0-pro
   - type: has-member
     target: catalog/models/cohere/embed/models/embed-v5-0-fast
+  - type: has-member
+    target: catalog/models/cohere/embed/models/embed-english-v3-0
+  - type: has-member
+    target: catalog/models/cohere/embed/models/embed-english-light-v3-0
+  - type: has-member
+    target: catalog/models/cohere/embed/models/embed-multilingual-v3-0
+  - type: has-member
+    target: catalog/models/cohere/embed/models/embed-multilingual-light-v3-0
