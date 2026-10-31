@@ -35,3 +35,7 @@ Use the current primary references in `entity.yml` for these boundaries; mutable
 ## Reader Projection
 
 - Render the current entity's validated visible relations with resolved canonical links and preserve relation ordering; project the sourced identity and operational boundaries into the reader page.
+
+## Qwen3.5 represented branch
+
+- Include the source-qualified Qwen3.5 series as the owner of exact pretrained Base and post-trained 9B identities, with reciprocal family membership and a resolving reader link. Do not claim complete sibling coverage or substitute Qwen3.6/Qwen3.8 as their lineage parent.

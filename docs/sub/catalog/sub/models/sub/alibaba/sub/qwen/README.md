@@ -27,6 +27,8 @@ Qwen is the model family produced by Qwen Team; its members include language, vi
 - [Qwen3-Coder](./sub/qwen3-coder/) — coding-specialized Qwen series for coding-agent and software-development workloads.
 - [Qwen3.8](./sub/qwen3-8/)
 
+- [Qwen3.5](./sub/qwen3-5/) — represented pretrained Base and post-trained 9B branch.
+
 ## Relationships
 
 | Relationship | Catalog page |
@@ -45,6 +47,7 @@ Qwen is the model family produced by Qwen Team; its members include language, vi
 | Includes | [Qwen3-VL](./sub/qwen3-vl/) |
 | Includes | [Qwen3.6](./sub/qwen3-6/) |
 | Includes | [Qwen3.8](./sub/qwen3-8/) |
+| Includes | [Qwen3.5](./sub/qwen3-5/) |
 
 ## Primary Sources
 

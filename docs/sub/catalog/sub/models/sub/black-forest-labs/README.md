@@ -1,6 +1,6 @@
 # Black Forest Labs Models
 
-Model-domain view for Black Forest Labs; the separate canonical producer profile owns organizational identity. This view navigates the FLUX family and does not itself identify a trained model or hosted service. [Black Forest Labs](https://bfl.ai/) [BFL official model registry](https://huggingface.co/black-forest-labs).
+Model-domain view for Black Forest Labs; the separate canonical producer profile owns organizational identity. This view navigates the FLUX family and separately owned learned prompt components; it is not itself a trained model or hosted service. [Black Forest Labs](https://bfl.ai/) [BFL official model registry](https://huggingface.co/black-forest-labs).
 
 ## Identity and scope
 
@@ -14,6 +14,8 @@ Choose a concrete model before comparing rights, runtime fit, modality or servic
 
 - [Black Forest Labs producer profile](../../../producers/sub/b/sub/black-forest-labs/README.md)
 - [FLUX family](sub/flux/README.md)
+
+- [FLUX 3 Image Klein Prompt Upsampler](sub/flux-3-image-klein-prompt-upsampler/README.md) — separate learned Qwen-derived prompt component.
 
 ## Sources
 

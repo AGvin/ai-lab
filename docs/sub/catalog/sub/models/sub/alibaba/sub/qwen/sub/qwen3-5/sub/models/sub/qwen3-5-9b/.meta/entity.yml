@@ -1,0 +1,49 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-5/models/qwen3-5-9b
+  type: model
+  name: Qwen3.5-9B
+  identity_note: Qwen3.5-9B is Qwen Team's released post-trained dense vision-language checkpoint derived from Qwen3.5-9B-Base.
+    It is the exact upstream checkpoint used by BFL's separately fine-tuned FLUX 3 Image Klein Prompt Upsampler.
+  references:
+  - type: documentation
+    source:
+      url: https://huggingface.co/Qwen/Qwen3.5-9B
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/config.json
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/README.md
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/Qwen/Qwen3.5-9B-Base
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/alibaba/qwen/qwen3-5
+  - type: derived-from
+    target: catalog/models/alibaba/qwen/qwen3-5/models/qwen3-5-9b-base
+  - type: has-derivative
+    target: catalog/models/black-forest-labs/flux-3-image-klein-prompt-upsampler

@@ -32,4 +32,4 @@ entity:
     - research
     authority: official
   identity_note: Model-domain view for Black Forest Labs; the separate canonical producer profile owns organizational
-    identity. This view navigates the FLUX family and does not itself identify a trained model or hosted service.
+    identity. This view navigates the FLUX family and separately owned learned prompt components; it is not itself a trained model or hosted service.

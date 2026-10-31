@@ -64,3 +64,5 @@ entity:
       target: catalog/models/alibaba/qwen/qwen3-reranker
     - type: has-member
       target: catalog/models/alibaba/qwen/qwen3-asr
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen3-5

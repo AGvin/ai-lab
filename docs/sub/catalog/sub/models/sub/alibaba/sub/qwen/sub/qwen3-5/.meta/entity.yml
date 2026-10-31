@@ -1,0 +1,29 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-5
+  type: model-series
+  name: Qwen3.5
+  identity_note: Qwen3.5 is a Qwen Team model series within the Qwen family. This bounded catalog branch represents
+    the separately released 9B pretrained and post-trained vision-language checkpoints; it is not a complete inventory
+    of every Qwen3.5 scale or deployment route.
+  references:
+  - type: documentation
+    source:
+      url: https://huggingface.co/Qwen/Qwen3.5-9B-Base
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/Qwen/Qwen3.5-9B
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/alibaba/qwen
+  - type: has-member
+    target: catalog/models/alibaba/qwen/qwen3-5/models/qwen3-5-9b-base
+  - type: has-member
+    target: catalog/models/alibaba/qwen/qwen3-5/models/qwen3-5-9b
