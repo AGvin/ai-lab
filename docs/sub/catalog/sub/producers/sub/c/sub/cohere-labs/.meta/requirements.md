@@ -14,12 +14,14 @@
 
 ## Exact co-development evidence
 
-- Preserve the current Cohere model namespace and existing family provenance. Add non-exclusive Cohere Labs co-producer relations only for the twelve concrete models whose current official cards explicitly credit development to both Cohere and Cohere Labs.
+- Preserve the current Cohere model namespace and existing family provenance. Preserve the twelve previously accepted exact co-producer links and add two separately released historical models whose own cards explicitly credit Cohere and Cohere Labs. Never generalize to the whole family.
 - Command A (catalog/models/cohere/command/command-a/models/command-a-03-2025): [Command A model card](https://huggingface.co/CohereLabs/c4ai-command-a-03-2025).
 - Command A+ (catalog/models/cohere/command/command-a/models/command-a-plus-05-2026): [Command A+ BF16 model card](https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16).
 - Command A Reasoning (catalog/models/cohere/command/command-a/models/command-a-reasoning-08-2025): [Command A Reasoning model card](https://huggingface.co/CohereLabs/command-a-reasoning-08-2025).
 - Command A Translate (catalog/models/cohere/command/command-a/models/command-a-translate-08-2025): [Command A Translate model card](https://huggingface.co/CohereLabs/command-a-translate-08-2025).
 - Command A Vision (catalog/models/cohere/command/command-a/models/command-a-vision-07-2025): [Command A Vision model card](https://huggingface.co/CohereLabs/command-a-vision-07-2025).
+- Command R 03-2024 (catalog/models/cohere/command/command-r/models/command-r-03-2024): [original model card](https://huggingface.co/CohereLabs/c4ai-command-r-v01).
+- Command R+ 04-2024 (catalog/models/cohere/command/command-r/models/command-r-plus-04-2024): [original model card](https://huggingface.co/CohereLabs/c4ai-command-r-plus).
 - Command R 08-2024 (catalog/models/cohere/command/command-r/models/command-r-08-2024): [Command R 08-2024 model card](https://huggingface.co/CohereLabs/c4ai-command-r-08-2024).
 - Command R7B (catalog/models/cohere/command/command-r/models/command-r7b-12-2024): [Command R7B model card](https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024).
 - Command R7B Arabic (catalog/models/cohere/command/command-r/models/command-r7b-arabic-02-2025): [Command R7B Arabic model card](https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025).

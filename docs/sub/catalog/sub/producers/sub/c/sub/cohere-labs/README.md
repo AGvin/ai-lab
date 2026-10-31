@@ -4,7 +4,7 @@ Cohere Labs is Cohere's research organization, formerly known as Cohere For AI. 
 
 The lab retains a distinct research identity within Cohere. Commercial services, deployments and contracts represented under Cohere have their own catalog boundaries.
 
-Current public model cards also explicitly credit Cohere Labs and Cohere together on the twelve concrete models linked below. These non-exclusive co-development relations retain the models’ Cohere catalog placement and do not transfer whole commercial families to the lab.
+Current public model cards also explicitly credit Cohere Labs and Cohere together on fourteen concrete models linked below, including the original March/April 2024 Command R/R+. These non-exclusive co-development relations retain the models’ Cohere catalog placement and do not transfer whole commercial families to the lab.
 
 ## Catalog relations
 
@@ -17,6 +17,8 @@ Current public model cards also explicitly credit Cohere Labs and Cohere togethe
 - [Command A Translate](../../../../../models/sub/cohere/sub/command/sub/command-a/sub/models/sub/command-a-translate-08-2025/) — produced model or family.
 - [Command A Vision](../../../../../models/sub/cohere/sub/command/sub/command-a/sub/models/sub/command-a-vision-07-2025/) — produced model or family.
 - [Command A+](../../../../../models/sub/cohere/sub/command/sub/command-a/sub/models/sub/command-a-plus-05-2026/) — produced model or family.
+- [Command R 03-2024](../../../../../models/sub/cohere/sub/command/sub/command-r/sub/models/sub/command-r-03-2024/) — produced model or family.
+- [Command R+ 04-2024](../../../../../models/sub/cohere/sub/command/sub/command-r/sub/models/sub/command-r-plus-04-2024/) — produced model or family.
 - [Command R 08-2024](../../../../../models/sub/cohere/sub/command/sub/command-r/sub/models/sub/command-r-08-2024/) — produced model or family.
 - [Command R7B](../../../../../models/sub/cohere/sub/command/sub/command-r/sub/models/sub/command-r7b-12-2024/) — produced model or family.
 - [Command R7B Arabic](../../../../../models/sub/cohere/sub/command/sub/command-r/sub/models/sub/command-r7b-arabic-02-2025/) — produced model or family.
@@ -35,6 +37,8 @@ Current public model cards also explicitly credit Cohere Labs and Cohere togethe
 - [Command A Reasoning model card](https://huggingface.co/CohereLabs/command-a-reasoning-08-2025).
 - [Command A Translate model card](https://huggingface.co/CohereLabs/command-a-translate-08-2025).
 - [Command A Vision model card](https://huggingface.co/CohereLabs/command-a-vision-07-2025).
+- [Command R 03-2024 model card](https://huggingface.co/CohereLabs/c4ai-command-r-v01).
+- [Command R+ 04-2024 model card](https://huggingface.co/CohereLabs/c4ai-command-r-plus).
 - [Command R 08-2024 model card](https://huggingface.co/CohereLabs/c4ai-command-r-08-2024).
 - [Command R7B model card](https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024).
 - [Command R7B Arabic model card](https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025).

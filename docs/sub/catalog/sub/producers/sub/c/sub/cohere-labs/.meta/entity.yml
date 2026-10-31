@@ -56,6 +56,20 @@ entity:
     authority: official
   - type: documentation
     source:
+      url: https://huggingface.co/CohereLabs/c4ai-command-r-v01
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/CohereLabs/c4ai-command-r-plus
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
       url: https://huggingface.co/CohereLabs/c4ai-command-r-08-2024
     purposes:
     - identification
@@ -118,6 +132,10 @@ entity:
     target: catalog/models/cohere/command/command-a/models/command-a-translate-08-2025
   - type: produces
     target: catalog/models/cohere/command/command-a/models/command-a-vision-07-2025
+  - type: produces
+    target: catalog/models/cohere/command/command-r/models/command-r-03-2024
+  - type: produces
+    target: catalog/models/cohere/command/command-r/models/command-r-plus-04-2024
   - type: produces
     target: catalog/models/cohere/command/command-r/models/command-r-08-2024
   - type: produces
