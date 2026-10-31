@@ -4,6 +4,8 @@ Materialized child entries for this part of the catalog.
 
 ## Child pages
 
+- [Rerank English v2](./sub/rerank-english-v2-0/) — historical; hosted API shut down.
+- [Rerank Multilingual v2](./sub/rerank-multilingual-v2-0/) — historical; hosted API shut down.
 - [Rerank 3.5](./sub/rerank-v3-5/)
 - [Rerank English 3](./sub/rerank-english-v3-0/)
 - [Rerank Multilingual 3](./sub/rerank-multilingual-v3-0/)

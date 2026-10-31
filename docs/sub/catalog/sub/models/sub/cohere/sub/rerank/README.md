@@ -4,9 +4,11 @@ Rerank is Cohere’s model family for scoring and reordering candidate documents
 
 ## Identity and provenance
 
-The catalog materializes three separately named Rerank 3.x models (3.5, English 3.0, Multilingual 3.0), Rerank 4 Pro/Fast and separately released Rerank 5 Pro/Fast as seven concrete model identities. Version 5 was announced on 2026-10-21; it is not a serving alias, context setting, or silent rename of version 4. [Rerank model comparison](https://docs.cohere.com/v2/docs/rerank) [Rerank 4 release](https://docs.cohere.com/changelog/rerank-v4.0) [Rerank 5 release discovery](https://docs.cohere.com/v2/changelog/rerank-v5).
+The catalog materializes three separately named Rerank 3.x models (3.5, English 3.0, Multilingual 3.0), Rerank 4 Pro/Fast and separately released Rerank 5 Pro/Fast as seven concrete current-generation/previous-generation model identities, plus two separately identified retired v2 models (English and Multilingual), for nine materialized concrete models. Version 5 was announced on 2026-10-21; it is not a serving alias, context setting, or silent rename of version 4. [Rerank model comparison](https://docs.cohere.com/v2/docs/rerank) [Rerank 4 release](https://docs.cohere.com/changelog/rerank-v4.0) [Rerank 5 release discovery](https://docs.cohere.com/v2/changelog/rerank-v5).
 
 ## Decision and operating boundaries
+
+- Historical `rerank-english-v2.0` and `rerank-multilingual-v2.0` were deprecated on 2024-12-02 and shut down on 2025-04-30. Retain them for migration/history only, with explicit unavailability warnings; no new-integration recommendation or transfer of newer generation capabilities. The old fine-tune exception does not survive the separately announced 2025-09-15 retirement of all fine-tuning access. [Cohere lifecycle record](https://docs.cohere.com/docs/deprecations).
 
 - Reranking consumes an already selected candidate set and query. It is separate from generating document embeddings, maintaining a vector index, fetching sources or generating a final answer. [Rerank model comparison](https://docs.cohere.com/v2/docs/rerank) [Rerank best practices and score boundaries](https://docs.cohere.com/docs/reranking-best-practices).
 - Version 4 has a 32,768-token query-plus-document window. Context Focus, calibrated relevance labels and the approximate parameter sizes documented for version 5 must not be inherited by version 4. [Rerank model comparison](https://docs.cohere.com/v2/docs/rerank) [Rerank best practices and score boundaries](https://docs.cohere.com/docs/reranking-best-practices).
@@ -19,6 +21,8 @@ The catalog materializes three separately named Rerank 3.x models (3.5, English 
 
 ## Catalog relations
 
+- [Rerank English v2](sub/models/sub/rerank-english-v2-0/) — historical retired member.
+- [Rerank Multilingual v2](sub/models/sub/rerank-multilingual-v2-0/) — historical retired member.
 - [Cohere](../../../../../producers/sub/c/sub/cohere/) — producer.
 - [Rerank 3.5](sub/models/sub/rerank-v3-5/) — member.
 - [Rerank English 3](sub/models/sub/rerank-english-v3-0/) — member.

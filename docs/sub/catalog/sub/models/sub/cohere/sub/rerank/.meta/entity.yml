@@ -31,6 +31,13 @@ entity:
     - identification
     - research
     authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/deprecations
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
   - type: produced-by
     target: catalog/producers/c/cohere
@@ -48,3 +55,7 @@ entity:
     target: catalog/models/cohere/rerank/models/rerank-english-v3-0
   - type: has-member
     target: catalog/models/cohere/rerank/models/rerank-multilingual-v3-0
+  - type: has-member
+    target: catalog/models/cohere/rerank/models/rerank-english-v2-0
+  - type: has-member
+    target: catalog/models/cohere/rerank/models/rerank-multilingual-v2-0
