@@ -6,10 +6,30 @@ entity:
     Tiny Aya is the compact multilingual text-model series introduced on 17 February 2026. The
     represented instruction-tuned models are Global, Earth, Fire and Water. Global balances
     performance across regions; the three regional releases combine regional posttraining with the
-    global model through a documented merge. Base checkpoints, reasoning research releases and
-    quantized distributions have separate identities or artifact roles and do not replace these four
-    records.
+    global model through a documented merge. The separate original 8K and 32K pretrained bases and two differently supervised reasoning
+    checkpoints are represented alongside the four original Global and regional models. Quantizations
+    and hosted aliases are artifacts/routes, not new learned model identities.
   references:
+    - type: registry
+      source:
+        url: https://huggingface.co/CohereLabs/tiny-aya-base
+      purposes: [identification, research]
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/CohereLabs/tiny-aya-base-32K
+      purposes: [identification, research]
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/CohereLabs/tiny-aya-l2-thinker
+      purposes: [identification, research]
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/CohereLabs/tiny-aya-en-thinker
+      purposes: [identification, research]
+      authority: official
     - type: official-site
       source:
         url: https://cohere.com/research/aya
@@ -74,3 +94,11 @@ entity:
       target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-fire
     - type: has-member
       target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-water
+    - type: has-member
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-base
+    - type: has-member
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-base-32k
+    - type: has-member
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-l2-thinker
+    - type: has-member
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-en-thinker

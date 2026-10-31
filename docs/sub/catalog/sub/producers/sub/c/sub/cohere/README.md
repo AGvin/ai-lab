@@ -4,7 +4,7 @@ Cohere develops enterprise AI models and provides deployment and application pro
 
 Model families, managed deployment services and the North workspace retain separate catalog identities. The North model family and North workspace are distinct entries. Cohere Labs remains a research organization within Cohere, with its own model-family provenance.
 
-The official model cards for [Tiny Aya Global](https://huggingface.co/CohereLabs/tiny-aya-global), [Tiny Aya Earth](https://huggingface.co/CohereLabs/tiny-aya-earth), [Tiny Aya Fire](https://huggingface.co/CohereLabs/tiny-aya-fire), [Tiny Aya Water](https://huggingface.co/CohereLabs/tiny-aya-water) credit both Cohere and Cohere Labs as developers. These exact co-produced models retain their Cohere Labs model-family placement and their separate trained-model identities.
+The official model cards for [Tiny Aya Global](https://huggingface.co/CohereLabs/tiny-aya-global), [Tiny Aya Earth](https://huggingface.co/CohereLabs/tiny-aya-earth), [Tiny Aya Fire](https://huggingface.co/CohereLabs/tiny-aya-fire), [Tiny Aya Water](https://huggingface.co/CohereLabs/tiny-aya-water) and the separately published Base, Base 32K, L2-Thinker and En-Thinker checkpoints credit both Cohere and Cohere Labs as developers. These exact co-produced models retain their Cohere Labs model-family placement and their separate trained-model identities.
 
 ## Catalog relations
 
@@ -22,6 +22,10 @@ The official model cards for [Tiny Aya Global](https://huggingface.co/CohereLabs
 - [Tiny Aya Fire](../../../../../models/sub/cohere-labs/sub/aya/sub/tiny-aya/sub/models/sub/tiny-aya-fire/README.md) — co-produced model with Cohere Labs.
 - [Tiny Aya Global](../../../../../models/sub/cohere-labs/sub/aya/sub/tiny-aya/sub/models/sub/tiny-aya-global/README.md) — co-produced model with Cohere Labs.
 - [Tiny Aya Water](../../../../../models/sub/cohere-labs/sub/aya/sub/tiny-aya/sub/models/sub/tiny-aya-water/README.md) — co-produced model with Cohere Labs.
+- [Tiny Aya Base](../../../../../models/sub/cohere-labs/sub/aya/sub/tiny-aya/sub/models/sub/tiny-aya-base/README.md) — co-produced model with Cohere Labs.
+- [Tiny Aya Base 32K](../../../../../models/sub/cohere-labs/sub/aya/sub/tiny-aya/sub/models/sub/tiny-aya-base-32k/README.md) — co-produced model with Cohere Labs.
+- [Tiny Aya L2-Thinker](../../../../../models/sub/cohere-labs/sub/aya/sub/tiny-aya/sub/models/sub/tiny-aya-l2-thinker/README.md) — co-produced model with Cohere Labs.
+- [Tiny Aya En-Thinker](../../../../../models/sub/cohere-labs/sub/aya/sub/tiny-aya/sub/models/sub/tiny-aya-en-thinker/README.md) — co-produced model with Cohere Labs.
 
 ## Official resources
 
@@ -34,3 +38,8 @@ The official model cards for [Tiny Aya Global](https://huggingface.co/CohereLabs
 - [Tiny Aya Earth model card](https://huggingface.co/CohereLabs/tiny-aya-earth)
 - [Tiny Aya Fire model card](https://huggingface.co/CohereLabs/tiny-aya-fire)
 - [Tiny Aya Water model card](https://huggingface.co/CohereLabs/tiny-aya-water)
+- [Tiny Aya Base model card](https://huggingface.co/CohereLabs/tiny-aya-base)
+- [Tiny Aya Base 32K model card](https://huggingface.co/CohereLabs/tiny-aya-base-32K)
+- [Tiny Aya L2-Thinker model card](https://huggingface.co/CohereLabs/tiny-aya-l2-thinker)
+- [Tiny Aya En-Thinker model card](https://huggingface.co/CohereLabs/tiny-aya-en-thinker)
+- [Cohere multilingual research](https://cohere.com/blog/building-multilingual-bridges)

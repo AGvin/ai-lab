@@ -59,6 +59,31 @@ entity:
         url: https://huggingface.co/CohereLabs/tiny-aya-water
       purposes: [identification, research]
       authority: official
+    - type: article
+      source:
+        url: https://cohere.com/blog/building-multilingual-bridges
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/CohereLabs/tiny-aya-base
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/CohereLabs/tiny-aya-base-32K
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/CohereLabs/tiny-aya-l2-thinker
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/CohereLabs/tiny-aya-en-thinker
+      purposes: [identification, research]
+      authority: official
   relations:
     - type: produces
       target: catalog/models/cohere/command
@@ -88,3 +113,11 @@ entity:
       target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-fire
     - type: produces
       target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-water
+    - type: produces
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-base
+    - type: produces
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-base-32k
+    - type: produces
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-l2-thinker
+    - type: produces
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-en-thinker

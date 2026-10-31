@@ -20,6 +20,7 @@ Follow the authored card's AutoTokenizer/AutoModelForCausalLM workflow and apply
 
 ## Relations
 
+- Pretrained base: [Tiny Aya Base](../tiny-aya-base/README.md)
 - Derived models: [Tiny Aya Earth](../tiny-aya-earth/README.md), [Tiny Aya Fire](../tiny-aya-fire/README.md), [Tiny Aya Water](../tiny-aya-water/README.md)
 - Member of: [Tiny Aya](../../../../README.md)
 - Produced by: [Cohere](../../../../../../../../../../../producers/sub/c/sub/cohere/README.md)

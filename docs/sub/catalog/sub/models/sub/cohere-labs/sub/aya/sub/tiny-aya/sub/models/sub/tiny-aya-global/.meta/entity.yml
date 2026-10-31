@@ -49,6 +49,8 @@ entity:
       target: catalog/models/cohere-labs/aya/tiny-aya
     - type: produced-by
       target: catalog/producers/c/cohere
+    - type: derived-from
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-base
     - type: has-derivative
       target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-earth
     - type: has-derivative

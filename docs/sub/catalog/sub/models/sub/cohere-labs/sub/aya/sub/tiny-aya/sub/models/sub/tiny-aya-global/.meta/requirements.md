@@ -12,6 +12,10 @@
 - Do not infer commercial-use permission, universal device fit or guaranteed benchmark performance from open weights, compact size or vendor positioning.
 - Realize the complete English reader with exact identity, cited decision/operational facts and valid canonical navigation; advertise localized readers only when present.
 
+## Source-backed pretrained parent
+
+- Cohere's technical report identifies the separately released original `CohereLabs/tiny-aya-base` as the pretrained upstream for the Global instruction-tuned checkpoint; link Global to its canonical new parent with the reciprocal derivative relation but no duplicate acceptance credit. [Original base](https://huggingface.co/CohereLabs/tiny-aya-base) [Tiny Aya technical report](https://arxiv.org/html/2603.11510v1).
+
 ## Validation
 
 - Preserve the canonical ID, name, type and aliases; validate the complete entity against the repository schema.
