@@ -17,6 +17,7 @@ The materialized set below is curated rather than exhaustive.
 - [GPQA](./sub/gpqa/)
 - [GroundedPlanBench](./sub/groundedplanbench/)
 - [GSM8K](./sub/gsm8k/)
+- [HellaSwag](./sub/hellaswag/)
 - [Horizon](./sub/horizon-agent-learning-benchmark/)
 - [HST-Bench](./sub/hst-bench/)
 - [HumanEval](./sub/humaneval/)
