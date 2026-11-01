@@ -10,6 +10,7 @@ Canonical producer profiles whose names begin with **A**.
 - [Agentic AI Foundation](./sub/agentic-ai-foundation/)
 - [Agentic Community](./sub/agentic-community/)
 - [Agno](./sub/agno/)
+- [Ai2](./sub/ai2/)
 - [AI21 Labs](./sub/ai21-labs/)
 - [Aider AI LLC](./sub/aider-ai/)
 - [Alibaba Cloud](./sub/alibaba-cloud/)
