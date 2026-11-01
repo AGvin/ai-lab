@@ -6,3 +6,4 @@ Hosted services that provide remote API access to one or more models, model prov
 
 - [`hugging-face-inference-providers/`](./sub/hugging-face-inference-providers/)
 - [`openrouter/`](./sub/openrouter/)
+- [SambaCloud](./sub/sambacloud/)

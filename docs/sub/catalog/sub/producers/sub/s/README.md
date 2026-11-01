@@ -3,6 +3,7 @@
 Organizations, projects and teams whose canonical producer names begin with S.
 
 - [Salesforce](./sub/salesforce/)
+- [SambaNova Systems, Inc.](./sub/sambanova-systems-inc/)
 - [Sana Labs AB](./sub/sana-labs-ab/)
 - [Sarvam AI](./sub/sarvam-ai/)
 - [Scale AI](./sub/scale-ai/)
