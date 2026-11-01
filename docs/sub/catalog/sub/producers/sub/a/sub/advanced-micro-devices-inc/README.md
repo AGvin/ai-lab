@@ -13,6 +13,7 @@ Individual Instinct, Radeon, and Ryzen products remain separate hardware entitie
 - Produces: [AMD ROCm.AI](../../../../../software/sub/development-tools/sub/agentic-development-systems/sub/amd-rocm-ai/)
 - Produces: [AMD Ross](../../../../../software/sub/development-tools/sub/agentic-development-systems/sub/amd-ross/)
 - Produces: [AMD Ryzen AI Max+ 395](../../../../../hardware/sub/amd-ryzen-ai-max-plus-395/)
+- Produces: [AMD Ryzen AI Max+ PRO 495](../../../../../hardware/sub/amd-ryzen-ai-max-plus-pro-495/)
 - Produces: [AMD Ryzen AI Halo Developer Platform](../../../../../hardware/sub/amd-ryzen-ai-halo-developer-platform/)
 - Produces: [AMD Radeon RX 7900 XTX](../../../../../hardware/sub/amd-radeon-rx-7900-xtx/)
 - Produces: [AMD Instinct MI325X](../../../../../hardware/sub/amd-instinct-mi325x/)

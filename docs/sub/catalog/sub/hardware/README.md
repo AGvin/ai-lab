@@ -11,6 +11,7 @@ The materialized set below is curated rather than exhaustive.
 - [AMD Instinct MI350X](./sub/amd-instinct-mi350x/)
 - [AMD Instinct MI355X](./sub/amd-instinct-mi355x/)
 - [AMD Instinct MI455X](./sub/amd-instinct-mi455x/)
+- [AMD Ryzen AI Max+ PRO 495](./sub/amd-ryzen-ai-max-plus-pro-495/)
 - [AWS Trainium3](./sub/aws-trainium3/)
 - [Google TPU7x](./sub/google-tpu7x/)
 - [Intel Gaudi 3 AI Accelerator](./sub/intel-gaudi-3/)

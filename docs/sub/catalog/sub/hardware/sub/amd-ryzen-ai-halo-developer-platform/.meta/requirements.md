@@ -8,7 +8,7 @@
 - Treat availability, regional sales channels, software/firmware images, ROCm support, validated playbooks, pre-installed models/tools, OS versions, driver/runtime support, and product pricing as freshness-sensitive.
 - Treat provider claims about maximum model parameter counts, cloud-cost savings, performance, and comparisons with DGX Spark as AMD-supplied configuration-specific evidence; usable model size depends on precision, runtime, context/KV cache, system reservation, and application overhead.
 - Distinguish *unified system memory* from memory assigned to the integrated GPU: AMD's up-to-160 GB graphics allocation and its 200B/300B model-parameter figures are configuration-specific vendor claims, not validated model memory fit or independently benchmarked inference.
-- Keep the already-canonical Ryzen AI Max+ 395 processor separate from the complete Halo system; the Max+ PRO 495 is an independently specified different processor and needs its own source-backed canonical intake before claiming a separate component node. The system may have both configurations without inventing a second Halo platform.
+- Keep the already-canonical Ryzen AI Max+ 395 processor separate from the complete Halo system; the Max+ PRO 495 is an independently specified different processor and needs its own source-backed canonical intake before claiming a separate component node. The Max+ PRO 495 now has a separate canonical processor node; it is not a second Halo platform.
 
 ## Validation
 
