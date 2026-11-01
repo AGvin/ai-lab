@@ -82,3 +82,5 @@ entity:
       target: catalog/software/model-and-data-platforms/model-development/optax
     - type: produces
       target: catalog/software/physical-ai-and-robotics/mujoco-playground
+    - type: produces
+      target: catalog/datasets/simpleqa-verified

@@ -16,6 +16,7 @@ Models, datasets and research software retain separate identities. The [Haiku pr
 - [Google](../google/) — parent organization.
 - [MuJoCo Playground](../../../../../software/sub/physical-ai-and-robotics/sub/mujoco-playground/) — software producer.
 - [Optax](../../../../../software/sub/model-and-data-platforms/sub/model-development/sub/optax/) — software producer.
+- [SimpleQA Verified](../../../../../datasets/sub/simpleqa-verified/) — dataset producer.
 - [Veo](../../../../../models/sub/google/sub/veo/) — model-family producer.
 - [WeatherNext](../../../../../models/sub/google/sub/weathernext/) — model-family producer.
 

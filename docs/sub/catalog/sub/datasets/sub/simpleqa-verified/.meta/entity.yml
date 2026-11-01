@@ -1,0 +1,46 @@
+entity:
+  id: catalog/datasets/simpleqa-verified
+  type: dataset
+  name: SimpleQA Verified
+  identity_note: >-
+    Google DeepMind and Google Research's original September 2025 curated
+    1,000-question evaluation subset derived from OpenAI's 4,326-question
+    SimpleQA research dataset. Separate dataset selection, annotation and
+    autorater protocol, not an OpenAI original dataset alias, a model,
+    a hosted service or the Kaggle evaluator software.
+  references:
+    - type: official-site
+      source:
+        url: https://deepmind.google/research/evals/
+      purposes: [identification, research]
+      authority: official
+      note: "Google DeepMind research evaluation portal attributes the benchmark to its own and Google Research's researchers."
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/google/simpleqa-verified
+      purposes: [identification, research]
+      authority: official
+      note: "Google-published dataset card declares the 1,000-row eval split, fields, MIT license and tool-free intended protocol."
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2509.07968
+      purposes: [identification, research]
+      authority: upstream
+      note: "September 9, 2025 original SimpleQA Verified research paper by Haas, Yona, D'Antonio, Goldshtein and Das."
+    - type: registry
+      source:
+        url: https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified
+      purposes: [research]
+      authority: official
+      note: "Official evaluation distribution and leaderboard; scores depend on protocol and time."
+    - type: article
+      source:
+        url: https://openai.com/index/introducing-simpleqa/
+      purposes: [research]
+      authority: upstream
+      note: "Distinct original OpenAI SimpleQA corpus dated October 30, 2024."
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google-deepmind
+    - type: derived-from
+      target: catalog/datasets/simpleqa

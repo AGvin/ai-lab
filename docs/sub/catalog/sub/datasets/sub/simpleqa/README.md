@@ -14,6 +14,10 @@ The original evaluation labels answers **correct**, **incorrect** or **not attem
 
 The `simple-evals` repository announced in July 2025 that new model and benchmark result updates would stop; it continues to host the SimpleQA reference evaluator. That software maintenance announcement does not withdraw the source dataset. Its README associates SimpleQA with the repository's **MIT** license, which does not independently settle rights to every third-party factual source in the questions or mirrors. Review the applicable original source/data terms before redistribution; no independent model runs or rights audit are claimed here.
 
+## Related datasets
+
+- Derived and separately curated evaluation subset: [SimpleQA Verified](../simpleqa-verified/) by Google DeepMind and Google Research, 1,000 questions with a distinct grading protocol.
+
 ## Provenance
 
 - Produced by: [OpenAI](../../../producers/sub/o/sub/openai/)

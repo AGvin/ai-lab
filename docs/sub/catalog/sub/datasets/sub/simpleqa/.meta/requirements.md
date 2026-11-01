@@ -13,6 +13,8 @@
 - One reciprocal `produced-by` SimpleQA / `produces` OpenAI pair; the Google-derived benchmark must not be attributed exclusively to the OpenAI original producer.
 - Include original OpenAI release, original research paper, official evaluator, license, and derivative research reference. Do not claim runtime benchmark execution or complete content-rights clearance.
 
+- Preserve the explicit original-to-derived dataset lineage with one `has-derivative` relation to `catalog/datasets/simpleqa-verified` and the inverse `derived-from` edge; Google DeepMind's curated 1,000-question revision is a separate publisher-and-selection identity, not a new variant of the original full dataset.
+
 ## Validation
 
 - One canonical source identity `catalog/datasets/simpleqa`; no duplicate data or software identity.

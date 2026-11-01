@@ -40,3 +40,5 @@ entity:
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
+    - type: has-derivative
+      target: catalog/datasets/simpleqa-verified
