@@ -17,6 +17,7 @@ The 3B active count does not describe the complete model's storage or memory. Th
 ## Relations
 
 - Member of: [Clef](../../../../README.md)
+- Derived from: [Qwen3-Omni 30B-A3B Instruct](../../../../../../../alibaba/sub/qwen/sub/qwen-omni/sub/models/sub/qwen3-omni-30b-a3b-instruct/)
 
 ## Official resources
 

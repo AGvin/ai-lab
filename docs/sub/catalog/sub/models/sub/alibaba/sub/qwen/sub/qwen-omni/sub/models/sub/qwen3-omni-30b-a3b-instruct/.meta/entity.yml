@@ -1,0 +1,57 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen-omni/models/qwen3-omni-30b-a3b-instruct
+  type: model
+  name: Qwen3-Omni 30B-A3B Instruct
+  identity_note: >-
+    Released Qwen multimodal Instruct checkpoint with Thinker and Talker; text, image,
+    audio and video inputs, text and speech outputs. The 30B total/3B active figures
+    describe the Thinker, not the complete multimodal weight set or memory requirement.
+    Distinct from Thinking, Captioner and hosted Omni endpoint aliases.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen3-Omni
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: specification
+      source:
+        url: https://github.com/QwenLM/Qwen3-Omni/blob/main/LICENSE
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: paper
+      source:
+        url: https://arxiv.org/html/2509.17765v1
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct/blob/main/config.json
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/Cloudflare/clef-omni
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen-omni
+    - type: has-derivative
+      target: catalog/models/cloudflare/clef/models/clef-omni

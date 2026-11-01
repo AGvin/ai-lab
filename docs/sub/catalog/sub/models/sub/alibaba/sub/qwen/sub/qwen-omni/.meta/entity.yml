@@ -43,3 +43,5 @@ entity:
       target: catalog/models/alibaba/qwen/qwen-omni/models/qwen3-8-omni-flash
     - type: has-member
       target: catalog/models/alibaba/qwen/qwen-omni/models/qwen3-8-omni-flash-realtime
+    - type: has-member
+      target: catalog/models/alibaba/qwen/qwen-omni/models/qwen3-omni-30b-a3b-instruct

@@ -11,6 +11,7 @@
 
 ## Decision and Operational Boundaries
 
+- The original released Qwen3-Omni 30B-A3B Instruct checkpoint includes Thinker and Talker, with text/image/audio/video inputs and text/speech outputs. It is distinct from the hosted Qwen3.8 Omni Flash endpoints, and from separately published Thinking/Captioner weights. Its Apache-2.0 evidence and component-specific context/parameter limits belong on its concrete page. [Original card](https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct) [Release report](https://arxiv.org/html/2509.17765v1).
 - Qwen Omni groups multimodal understanding and speech interaction models with release-specific input and output contracts.
 - Qwen3.8-Omni-Flash produces text; the separate Realtime identity produces text and audio. Do not promise speech output merely from the Omni family name.
 - Keep HTTP analysis separate from persistent realtime sessions, history limits, and transport-specific features.

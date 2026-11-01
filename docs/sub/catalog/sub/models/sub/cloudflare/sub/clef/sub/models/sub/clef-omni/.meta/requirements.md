@@ -3,7 +3,7 @@
 ## Requirements
 
 - Preserve Clef-omni as the concrete Cloudflare derivative released on 9 October 2026, with 30B total / 3B active MoE parameters.
-- Record the exact Qwen/Qwen3-Omni-30B-A3B-Instruct thinker backbone as a source-backed fact without inventing an absent canonical target.
+- Record the exact Qwen/Qwen3-Omni-30B-A3B-Instruct thinker backbone as a source-backed fact with a reciprocal derived-from / has-derivative pair to the now-materialized exact Qwen upstream; this does not transfer Talker behavior to the decision loader.
 - Explain text/JSON, image, audio and video inputs with allowed-option probability outputs; upstream talker/code2wav weights are included but not loaded by the decision implementation.
 - Distinguish total from active parameters and vendor-tested memory/runtime from a guaranteed deployment minimum.
 - Scope the current 64,000-token context, up to four audio clips and two videos, token accounting and possible text truncation to the documented Workers AI route.

@@ -31,3 +31,5 @@ entity:
   relations:
     - type: member-of
       target: catalog/models/cloudflare/clef
+    - type: derived-from
+      target: catalog/models/alibaba/qwen/qwen-omni/models/qwen3-omni-30b-a3b-instruct
