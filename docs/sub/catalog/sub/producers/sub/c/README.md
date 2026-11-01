@@ -21,6 +21,7 @@
 - [Comfy Organization Inc.](./sub/comfy-organization-inc/)
 - [Composio](./sub/composio/)
 - [Confident AI, Inc.](./sub/confident-ai-inc/)
+- [CONTEXT4AI PTE LTD](./sub/context4ai-pte-ltd/)
 - [Continue Dev, Inc.](./sub/continue-dev-inc/)
 - [CoreWeave](./sub/coreweave/)
 - [Credo AI](./sub/credo-ai/)

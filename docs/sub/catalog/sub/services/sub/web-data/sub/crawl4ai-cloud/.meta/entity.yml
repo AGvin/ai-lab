@@ -1,0 +1,33 @@
+entity:
+  id: catalog/services/web-data/crawl4ai-cloud
+  type: service
+  name: Crawl4AI Cloud
+  aliases:
+    - Crawl4AI hosted API
+    - Crawl4AI API
+  references:
+    - type: official-site
+      source:
+        url: https://api.crawl4ai.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://api.crawl4ai.com/docs/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://crawl4ai.com/legal/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current 2026-10-15 first-party service Terms identify CONTEXT4AI PTE LTD as hosted operator.
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/context4ai-pte-ltd

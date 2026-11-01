@@ -6,6 +6,8 @@ Managed browser/session execution platforms remain under infrastructure when rem
 
 ## Child pages
 
+- [Crawl4AI Cloud](./sub/crawl4ai-cloud/) — provider-operated scrape, extract and search APIs; distinct from the local crawler.
+
 - [Exa](./sub/exa/)
 - [Firecrawl](./sub/firecrawl/)
 - [Tavily](./sub/tavily/)
