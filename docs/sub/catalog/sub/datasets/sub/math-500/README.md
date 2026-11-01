@@ -24,6 +24,10 @@ OpenAI is attributed as selector/publisher of the 500-problem split, not author 
 
 - Selected and published by: [OpenAI](../../../producers/sub/o/sub/openai/) — only the MATH-500 subset, not the original full MATH corpus.
 
+## Original dataset relationship
+
+- Selected test subset of: [MATH (Hendrycks et al.)](../math/). This documents selection lineage, not new ownership of the original competition questions.
+
 ## Primary resources
 
 - [Original PRM800K split explanation](https://github.com/openai/prm800k#math-splits)

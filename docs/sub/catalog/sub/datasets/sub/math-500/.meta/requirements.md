@@ -14,6 +14,8 @@
 - Provenance is attributed from first-party publications, not a complete beneficial-ownership, current indirect-holdings or sanctions investigation. No current Russian ownership/control inference is supported by this review.
 - Render original PRM800K selection/split, H4 distributor card, original Hendrycks MATH repository and both exact MIT repository LICENSE locations as separate official resources.
 
+- Relate the subset to the now-canonical original MATH dataset through `derived-from catalog/datasets/math` and its reciprocal `has-derivative` without transferring original author rights or mistaking this for a learned model derivative.
+
 ## Validation
 
 - Exactly one source-backed canonical MATH-500 subset record; the full MATH, PRM800K labels, evaluator, mirrors or score variants are not silently conflated or given duplicate intake credit.

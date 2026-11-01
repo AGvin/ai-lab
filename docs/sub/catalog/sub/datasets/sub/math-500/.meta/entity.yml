@@ -49,3 +49,5 @@ entity:
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
+    - type: derived-from
+      target: catalog/datasets/math

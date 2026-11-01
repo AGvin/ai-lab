@@ -41,6 +41,7 @@ Promptfoo is now part of OpenAI but remains a distinct producer identity for its
 - Produces: [GPT-Realtime-Whisper](../../../../../models/sub/openai/sub/gpt-realtime-whisper/)
 - Produces: [GPT-Rosalind](../../../../../models/sub/openai/sub/gpt-rosalind/)
 - Produces: [GPT-Transcribe](../../../../../models/sub/openai/sub/gpt-transcribe/)
+- Produces: [GSM8K](../../../../../datasets/sub/gsm8k/)
 - Produces: [HealthBench](../../../../../datasets/sub/healthbench/)
 - Produces: [HumanEval](../../../../../datasets/sub/humaneval/)
 - Produces: [LifeSciBench](../../../../../datasets/sub/lifescibench/)
