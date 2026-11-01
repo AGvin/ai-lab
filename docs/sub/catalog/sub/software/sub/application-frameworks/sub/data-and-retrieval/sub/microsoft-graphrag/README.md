@@ -14,7 +14,7 @@ Graph extraction and retrieval depend on configured model inference, prompt qual
 
 ## Relations
 
-- Produced by: [Microsoft](../../../../../producers/sub/m/sub/microsoft/)
+- Produced by: [Microsoft](../../../../../../../producers/sub/m/sub/microsoft/)
 
 ## Official resources
 
