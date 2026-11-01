@@ -1,0 +1,51 @@
+entity:
+  id: catalog/datasets/math-500
+  type: dataset
+  name: MATH-500
+  identity_note: >-
+    OpenAI-selected 500-problem held-out evaluation subset of the original MATH mathematics dataset,
+    released with the PRM800K research and separately distributed by Hugging Face H4.
+    OpenAI selected the evaluation split but did not originate the full MATH problem corpus.
+    MATH-500 is not the separate PRM800K step-label dataset, the whole MATH dataset,
+    a second independently authored H4 dataset or a scoring harness. Exact upstream
+    competition-problem redistribution rights were not independently established.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/openai/prm800k
+      purposes: [identification, research]
+      authority: official
+      note: "Original OpenAI PRM800K release documents the held-out selection and distinction from step-level annotations."
+    - type: repository
+      source:
+        url: https://github.com/openai/prm800k/blob/main/prm800k/math_splits/test.jsonl
+      purposes: [identification, research]
+      authority: official
+      note: "Original selected 500-problem test split is tracked through Git LFS; pin its SHA for exact reproduction."
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
+      purposes: [identification, research]
+      authority: upstream
+      note: "H4 redistributed subset attributes selection to OpenAI; its reviewed card has no explicit dataset license."
+    - type: repository
+      source:
+        url: https://github.com/hendrycks/math
+      purposes: [identification, research]
+      authority: upstream
+      note: "Original MATH research dataset and authors, distinct from OpenAI's later 500-problem subset."
+    - type: repository
+      source:
+        url: https://github.com/openai/prm800k/blob/main/LICENSE
+      purposes: [research]
+      authority: official
+      note: "PRM800K MIT LICENSE is for repository software/documentation, not proof of all original competition-problem grants."
+    - type: repository
+      source:
+        url: https://github.com/hendrycks/math/blob/main/LICENSE
+      purposes: [research]
+      authority: upstream
+      note: "MATH upstream MIT repository license does not by itself establish each third-party problem's redistribution rights."
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

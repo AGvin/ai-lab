@@ -44,6 +44,7 @@ Promptfoo is now part of OpenAI but remains a distinct producer identity for its
 - Produces: [HealthBench](../../../../../datasets/sub/healthbench/)
 - Produces: [HumanEval](../../../../../datasets/sub/humaneval/)
 - Produces: [LifeSciBench](../../../../../datasets/sub/lifescibench/)
+- Produces: [MATH-500](../../../../../datasets/sub/math-500/)
 - Produces: [MentalHealthBench](../../../../../datasets/sub/mentalhealthbench/)
 - Produces: [MLE-bench](../../../../../datasets/sub/mle-bench/)
 - Produces: [omni-moderation](../../../../../models/sub/openai/sub/omni-moderation/)

@@ -24,6 +24,7 @@ The materialized set below is curated rather than exhaustive.
 - [LiveBench](./sub/livebench/)
 - [LiveCodeBench](./sub/livecodebench/)
 - [Long-Horizon Terminal-Bench](./sub/long-horizon-terminal-bench/)
+- [MATH-500](./sub/math-500/)
 - [MerchantBench](./sub/merchantbench/)
 - [MMLU](./sub/mmlu/)
 - [MMMU](./sub/mmmu/)

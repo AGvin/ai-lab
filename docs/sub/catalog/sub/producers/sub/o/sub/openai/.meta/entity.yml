@@ -104,6 +104,8 @@ entity:
     - type: produces
       target: catalog/datasets/frontierscience
     - type: produces
+      target: catalog/datasets/math-500
+    - type: produces
       target: catalog/datasets/mentalhealthbench
     - type: produces
       target: catalog/hardware/openai-jalapeno
