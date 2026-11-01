@@ -7,6 +7,7 @@
 - Keep the GitHub ownership fact distinct from production: GitHub-produced product identities remain attributed to GitHub unless independent evidence supports an additional producer.
 - Keep model-family and concrete-model details in `catalog/models/` and software details in their corresponding canonical owners rather than duplicating them on the producer page.
 - Treat Agent Lightning as separate Microsoft Research model-development/post-training software; distinguish it from Microsoft Agent Framework, PyTorch Lightning, its integrated verl backend and separately distributed agent-optimization skill. Attribute any published benchmark improvements to the publisher rather than independent AI Lab verification.
+- Attribute the independently published Microsoft GraphRAG Python research package to Microsoft, but keep its explicit maintenance-mode/no-official-product-support boundary, graph-RAG methodology and Foundry model-service identities distinct.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Keep Azure-hosted access, third-party inference providers, quantizations, runtime integrations, and deployment guidance with their corresponding canonical owners rather than inferring them from corporate association.
 

@@ -21,6 +21,7 @@ Corporate ownership and product authorship are different relationships: GitHub r
 - Produces: [Microsoft Foundry Agent Service](../../../../../services/sub/infrastructure/sub/microsoft-foundry-agent-service/)
 - Produces: [Microsoft Foundry Models](../../../../../services/sub/model-apis/sub/microsoft-foundry-models/)
 - Produces: [Microsoft Maia 200](../../../../../hardware/sub/microsoft-maia-200/)
+- Produces: [Microsoft GraphRAG](../../../../../software/sub/application-frameworks/sub/data-and-retrieval/sub/microsoft-graphrag/) — research toolkit in maintenance mode; not a supported Microsoft cloud service.
 - Produces: [Microsoft Olive](../../../../../software/sub/model-and-data-platforms/sub/model-optimization-and-compilation/sub/microsoft-olive/)
 - Produces: [Microsoft Skills](../../../../../agent-skills/sub/collections/sub/microsoft-skills/)
 - Produces: [Microsoft.Extensions.AI](../../../../../software/sub/application-frameworks/sub/application-development/sub/microsoft-extensions-ai/)
@@ -46,6 +47,7 @@ Corporate ownership and product authorship are different relationships: GitHub r
 - [DeepSpeed foundation provenance](https://pytorch.org/projects/deepspeed/)
 - [Foundry Models overview](https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview)
 - [Agent Framework overview](https://learn.microsoft.com/en-us/agent-framework/overview/)
+- [GraphRAG source and maintenance policy](https://github.com/microsoft/graphrag)
 - [Copilot account experiences](https://support.microsoft.com/en-us/microsoft-365-copilot/what-is-microsoft-copilot-app)
 - [Visual Studio Code licensing and services](https://code.visualstudio.com/docs/supporting/faq)
 - [Maia 200 announcement](https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/)

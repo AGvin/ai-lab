@@ -6,3 +6,4 @@ Frameworks focused on connecting AI applications to documents, indexes, retrieva
 
 - [`llamaindex/`](./sub/llamaindex/)
 - [`haystack/`](./sub/haystack/)
+- [`microsoft-graphrag/`](./sub/microsoft-graphrag/) — Microsoft Research's graph-based RAG Python toolkit (maintenance mode).

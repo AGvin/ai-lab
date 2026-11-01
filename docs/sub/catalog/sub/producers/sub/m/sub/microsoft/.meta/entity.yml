@@ -101,6 +101,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/microsoft/graphrag
+      purposes:
+        - research
+      authority: official
+      note: Microsoft Research project in maintenance mode, not an officially supported Microsoft product.
   relations:
     - type: produces
       target: catalog/software/model-and-data-platforms/model-development/agent-lightning
@@ -148,3 +155,5 @@ entity:
       target: catalog/software/model-and-data-platforms/model-development/deepspeed
     - type: produces
       target: catalog/software/inference-runtimes/inference-engines/onnx-runtime-genai
+    - type: produces
+      target: catalog/software/application-frameworks/data-and-retrieval/microsoft-graphrag
