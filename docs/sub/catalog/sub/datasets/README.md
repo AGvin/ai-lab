@@ -29,6 +29,7 @@ The materialized set below is curated rather than exhaustive.
 - [LiveBench](./sub/livebench/)
 - [LiveCodeBench](./sub/livecodebench/)
 - [Long-Horizon Terminal-Bench](./sub/long-horizon-terminal-bench/)
+- [LongMemEval](./sub/longmemeval/)
 - [LongMemEval-V2](./sub/longmemeval-v2/)
 - [MATH](./sub/math/)
 - [MATH-500](./sub/math-500/)
