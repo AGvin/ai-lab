@@ -65,6 +65,11 @@ entity:
     - identification
     - research
     authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/blog/CohereLabs/introducing-command-a-vision-07-2025
+    purposes: [identification, research]
+    authority: official
   relations:
   - type: member-of
     target: catalog/models/cohere/command/command-a
@@ -72,3 +77,5 @@ entity:
     target: catalog/producers/c/cohere-labs
   - type: derived-from
     target: catalog/models/cohere/command/command-a/models/command-a-03-2025
+  - type: derived-from
+    target: catalog/models/google/siglip-2/models/siglip2-so400m-patch16-512

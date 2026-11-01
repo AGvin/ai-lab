@@ -14,8 +14,13 @@ The Cohere c4ai-aya-vision-8b route retired on 4 April 2026; the official weight
 
 Use AutoProcessor and a compatible AutoModelForImageTextToText implementation with the model's multimodal chat template. The specific card describes up to 12 image tiles plus a thumbnail, using 169 visual tokens per tile and up to 2,197 image tokens. Let the matching processor map aspect ratios and supported resolutions, and account for image tokens when planning the context. Pin the revision, processor, runtime and precision; test OCR, small text, captions and grounded answers on representative images and languages. [Image mapping](https://huggingface.co/CohereLabs/aya-vision-8b) · [Current runtime interface](https://huggingface.co/docs/transformers/model_doc/aya_vision)
 
+## Vision-component provenance
+
+The exact Google `google/siglip2-so400m-patch14-384` vision initialization is now materialized with a reciprocal derived-from relation. This is component-scoped: no Google text-tower inclusion, sole ancestry, inherited fixed-resolution behavior or downstream license transfer is implied. [Exact component training evidence](https://huggingface.co/CohereLabs/aya-vision-8b).
+
 ## Relations
 
+- [SigLIP 2 So400m patch14 384](../../../../../../../../../google/sub/siglip-2/sub/models/sub/siglip2-so400m-patch14-384/) — source of the adapted vision component.
 - Derived from: [Command R7B](../../../../../../../../../cohere/sub/command/sub/command-r/sub/models/sub/command-r7b-12-2024/README.md)
 - Member of: [Aya Vision](../../../../README.md)
 

@@ -31,6 +31,13 @@ entity:
     - identification
     - research
     authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct
+    purposes: [identification, research]
+    authority: official
   relations:
   - type: member-of
     target: catalog/models/cohere/north
+  - type: derived-from
+    target: catalog/models/google/siglip-2/models/siglip2-so400m-patch16-384

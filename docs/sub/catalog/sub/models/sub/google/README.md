@@ -15,6 +15,7 @@ This model-domain view groups the Gemini and Gemma model families represented in
 - [Gemini Omni](sub/gemini-omni/)
 - [Gemma](sub/gemma/)
 - [Lyria](sub/lyria/)
+- [SigLIP 2](sub/siglip-2/)
 - [Veo](sub/veo/)
 - [WeatherNext](sub/weathernext/)
 

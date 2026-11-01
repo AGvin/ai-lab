@@ -28,6 +28,7 @@ Model families, hosted products and software retain separate catalog identities.
 - [Kubeflow Pipelines](../../../../../software/sub/workflow-engines/sub/data-and-compute-orchestration/sub/kubeflow-pipelines/) — originating contributor to the Kubeflow ecosystem.
 - [Lyria](../../../../../models/sub/google/sub/lyria/) — model-family producer.
 - [Orbax Checkpoint](../../../../../software/sub/model-and-data-platforms/sub/model-development/sub/orbax-checkpoint/) — software producer.
+- [SigLIP 2](../../../../../models/sub/google/sub/siglip-2/) — model-family producer.
 - [Veo](../../../../../models/sub/google/sub/veo/) — model-family producer.
 
 ## Model catalog

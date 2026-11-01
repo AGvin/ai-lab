@@ -18,3 +18,7 @@
 - Render every visible current-entity relation through the standard entity-relations contract, respecting explicit order and deterministic target-name ordering; resolve every local reader link.
 - Project the complete identity and operating contract into the English reader. Attribute current limits and licenses to their precise source and distinguish models, artifacts, organizations and services.
 - This documentation assessment grants no runtime, benchmark, downloaded-weight verification, cache, final-rendering, clean-pass or final-gate credit.
+
+## Materialized vision-component provenance
+
+- The exact Google `google/siglip2-so400m-patch16-512` vision initialization is now materialized with a reciprocal derived-from relation. This is component-scoped: no Google text-tower inclusion, sole ancestry, inherited fixed-resolution behavior or downstream license transfer is implied. [Exact component training evidence](https://huggingface.co/blog/CohereLabs/introducing-command-a-vision-07-2025).

@@ -13,8 +13,13 @@ The public card explicitly credits Cohere and Cohere Labs. It combines a languag
 - This model accepts images and emits text; the dedicated documentation says tool use is unsupported. Do not project original A’s tool capabilities or A+’s serving features onto this version. [Command A Vision documentation](https://docs.cohere.com/docs/command-a-vision).
 - Research weights state CC-BY-NC 4.0 and the acceptable-use policy. OCR, small text, charts and spatial interpretation require representative evaluation; the upstream encoder is a component, not proof that the complete model shares its license. [Command A Vision model card](https://huggingface.co/CohereLabs/command-a-vision-07-2025) [Cohere Labs CC-BY-NC license](https://cohere.com/cohere-labs-cc-by-nc-license) [Cohere Labs acceptable-use policy](https://docs.cohere.com/docs/cohere-labs-acceptable-use-policy).
 
+## Vision-component provenance
+
+The exact Google `google/siglip2-so400m-patch16-512` vision initialization is now materialized with a reciprocal derived-from relation. This is component-scoped: no Google text-tower inclusion, sole ancestry, inherited fixed-resolution behavior or downstream license transfer is implied. [Exact component training evidence](https://huggingface.co/blog/CohereLabs/introducing-command-a-vision-07-2025).
+
 ## Catalog relations
 
+- [SigLIP 2 So400m patch16 512](../../../../../../../../../google/sub/siglip-2/sub/models/sub/siglip2-so400m-patch16-512/) — source of the adapted vision component.
 - [Cohere Labs](../../../../../../../../../../../producers/sub/c/sub/cohere-labs/) — producer.
 - [Command A](../../../../) — series or family.
 - [Command A](../command-a-03-2025/) — derived from.

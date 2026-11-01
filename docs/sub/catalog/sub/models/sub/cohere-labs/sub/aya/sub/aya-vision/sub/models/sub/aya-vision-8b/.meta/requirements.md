@@ -16,3 +16,7 @@
 - Preserve the canonical ID, name, type and aliases; validate the complete entity against the repository schema.
 - Verify outgoing relations, their required exact inverses and all reader targets against the composed atomic catalog package.
 - Keep producer, trained model, series, family, provider route and quantized artifact roles distinct; claim no runtime, benchmark, cache or final-render execution.
+
+## Materialized vision-component provenance
+
+- The exact Google `google/siglip2-so400m-patch14-384` vision initialization is now materialized with a reciprocal derived-from relation. This is component-scoped: no Google text-tower inclusion, sole ancestry, inherited fixed-resolution behavior or downstream license transfer is implied. [Exact component training evidence](https://huggingface.co/CohereLabs/aya-vision-8b).

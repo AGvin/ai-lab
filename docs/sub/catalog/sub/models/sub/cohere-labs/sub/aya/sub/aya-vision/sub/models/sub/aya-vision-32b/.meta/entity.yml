@@ -57,3 +57,5 @@ entity:
       target: catalog/models/cohere-labs/aya/aya-vision
     - type: derived-from
       target: catalog/models/cohere-labs/aya/aya-expanse/models/aya-expanse-32b
+    - type: derived-from
+      target: catalog/models/google/siglip-2/models/siglip2-so400m-patch14-384

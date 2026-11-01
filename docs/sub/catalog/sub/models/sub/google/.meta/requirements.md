@@ -12,7 +12,7 @@
 
 - Use `Google models` as the page title.
 - Link the canonical Google and Google DeepMind producer pages under `catalog/producers/` where provenance requires them.
-- Link every represented Google model family and standalone model, including Gemini, Gemini Omni, Gemma, Lyria, Veo, AlphaFold, AlphaGenome, and WeatherNext.
+- Link every represented Google model family and standalone model, including Gemini, Gemini Omni, Gemma, Lyria, Veo, AlphaFold, AlphaGenome, WeatherNext, and SigLIP 2.
 - Preserve the legacy access boundary that Gemini is represented as a provider-hosted family while Gemma publishes open-weight artifacts for local, edge, self-hosted, and research use.
 - Include official Gemini and Gemma documentation plus the Google Hugging Face organization as research references.
 

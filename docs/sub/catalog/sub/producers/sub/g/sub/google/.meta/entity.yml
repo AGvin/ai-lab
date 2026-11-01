@@ -98,3 +98,5 @@ entity:
       target: catalog/services/model-apis/gemini-api
     - type: produces
       target: catalog/software/model-and-data-platforms/model-development/orbax-checkpoint
+    - type: produces
+      target: catalog/models/google/siglip-2
