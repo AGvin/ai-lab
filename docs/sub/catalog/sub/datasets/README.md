@@ -35,6 +35,7 @@ The materialized set below is curated rather than exhaustive.
 - [MMMU](./sub/mmmu/)
 - [OpenBookQA](./sub/openbookqa/)
 - [ORAgentBench](./sub/oragentbench/)
+- [PRM800K](./sub/prm800k/)
 - [RealReplicaBench](./sub/realreplicabench/)
 - [SciAgentArena](./sub/sciagentarena/)
 - [SentinelBench](./sub/sentinelbench/)

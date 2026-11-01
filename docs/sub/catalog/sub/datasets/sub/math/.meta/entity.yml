@@ -39,3 +39,5 @@ entity:
   relations:
     - type: has-derivative
       target: catalog/datasets/math-500
+    - type: has-derivative
+      target: catalog/datasets/prm800k

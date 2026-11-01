@@ -19,6 +19,7 @@ This profile identifies its research authors but does not claim a separate corpo
 ## Related datasets
 
 - Derived held-out subset: [MATH-500](../math-500/).
+- Separately annotated process-supervision corpus using original problem prompts: [PRM800K](../prm800k/) (OpenAI, 2023); not a new original MATH contest-question set.
 
 ## Primary research
 

@@ -12,6 +12,8 @@
 - Competing mathematical problem benchmarks test different domains and difficulties; do not infer broad mathematical competence, safety or robustness from MATH-only metrics.
 - Preserve first-party research authorship, original repository/paper, repository code license and explicitly related MATH-500 subset. No exhaustive beneficial ownership, current indirect holdings or sanctions audit was conducted.
 
+- Preserve OpenAI's PRM800K as a separate human-annotated process-supervision dataset **derived from MATH source problems**, with one original MATH `has-derivative` ↔ PRM800K `derived-from` reciprocal data-lineage pair. Its model-generated intermediate-step labels and phase-specific sampling are new annotations, **not** a second MATH problem source, a MATH-500 subset, or proof of any model being trained on it. Original contest-question rights must be evaluated separately.
+
 ## Validation
 
 - One original MATH source-dataset identity separate from MATH-500, PRM800K labels, AMPS and evaluation harnesses; no duplicate catalog credit for subsets or mirrors.
