@@ -26,6 +26,7 @@ Frameworks and SDKs used to build, coordinate, and run agentic systems. This cat
 - [Pydantic AI](./sub/pydantic-ai/) — provider-agnostic Python agent framework with a typed Python and Pydantic-oriented design.
 - [Pydantic AI Harness](./sub/pydantic-ai-harness/)
 - [smolagents](./sub/smolagents/) — Hugging Face's lightweight Python agent library oriented around code agents and tool calling.
+- [Stagehand](./sub/stagehand/) — Browserbase's multi-language browser-agent SDK, separate from managed Browserbase sessions.
 - [Strands Agents](./sub/strands-agents/) — open-source agent SDK.
 
 - [VoltAgent](./sub/voltagent/) — TypeScript agent framework, distinct from VoltOps.

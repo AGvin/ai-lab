@@ -4,7 +4,7 @@ Browserbase is producer-operated browser infrastructure for programmatic and age
 
 ## Service boundary
 
-Session execution, browser-automation connectivity, proxies and stealth, persistent context, debugging and session replay, and agent-oriented surfaces remain capabilities of the same managed browser runtime. Stagehand, Browserbase Agents, Search, Fetch, and similarly named surfaces do not become separate service identities solely because they are named features. Browserbase remains distinct from web-data APIs whose primary product job is returning search, crawl, or extraction data.
+Session execution, browser-automation connectivity, proxies and stealth, persistent context, debugging and session replay, and agent-oriented surfaces remain capabilities of the same managed browser runtime. The separately published [Stagehand SDK](../../../../../software/sub/agent-frameworks/sub/stagehand/) is an open-source browser-agent framework that can use Browserbase sessions; its SDK identity is not another hosted Browserbase service. Browserbase Agents, Search, Fetch, and other named managed feature surfaces do not become separate service identities solely because they are named features. Browserbase remains distinct from web-data APIs whose primary product job is returning search, crawl, or extraction data.
 
 Supported browser versions, regions, concurrency, proxy options, limits, and pricing are freshness-sensitive.
 

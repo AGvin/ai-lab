@@ -20,3 +20,5 @@ entity:
   relations:
     - type: produces
       target: catalog/services/infrastructure/browserbase
+    - type: produces
+      target: catalog/software/agent-frameworks/stagehand
