@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Preserve catalog-index type and list only the materialized learned merge as the concrete model child.
+- Preserve catalog-index type and list the separately materialized original Josiefied and Xiaolong/Josiefied composite learned merges as concrete children.
 - Keep quantization, serialization and separately published artifact repositories from becoming additional trained-model entries solely by format.
 - Provide valid navigation to the model and the containing ancestry index.
 - Realize the complete English reader with cited identity, decision and operational facts and exact canonical navigation; advertise localized readers only when present.

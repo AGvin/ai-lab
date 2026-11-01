@@ -1,0 +1,26 @@
+entity:
+  id: catalog/models/davidau/qwen3-derived/models/qwen3-the-josiefied-omega-directive-22b
+  type: model
+  name: Qwen3 The Josiefied Omega Directive 22B
+  identity_note: Original DavidAU BF16/Safetensors text-generation merge, distinct from its GGUF distribution and the separate Xiaolong/Josiefied composite. Publisher declares 22B, 62 layers and Apache-2.0 metadata; exact config/license file retrieval and complete upstream grant review remain unverified.
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/DavidAU/Qwen3-The-Josiefied-Omega-Directive-22B-uncensored-abliterated
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/DavidAU/Qwen3-The-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/davidau
+    - type: has-derivative
+      target: catalog/models/davidau/qwen3-derived/models/qwen3-the-xiaolong-josiefied-omega-directive-22b

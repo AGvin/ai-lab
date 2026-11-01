@@ -8,7 +8,7 @@ The learned source identifier is `DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Dir
 
 ## Immediate merge lineage
 
-The author calls the composite a full merge of Xiaolong Omega Directive 22B and Josiefied Omega Directive 22B. Each inspected parent GGUF card maps back to its matching unsuffixed source identity. These are the two immediate parents; the farther-upstream Qwen3-14B reference is background and usage guidance. The parent identities remain external until their own canonical records are established. [Composite merge declaration](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF) · [Xiaolong parent mapping](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Omega-Directive-22B-uncensored-abliterated-GGUF) · [Josiefied parent mapping](https://huggingface.co/DavidAU/Qwen3-The-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
+The author calls the composite a full merge of Xiaolong Omega Directive 22B and Josiefied Omega Directive 22B. Each inspected parent GGUF card maps back to its matching unsuffixed source identity. These are the two immediate parents; the farther-upstream Qwen3-14B reference is background and usage guidance. The Josiefied parent is now canonical with reciprocal lineage. The Xiaolong parent remains external pending its exact source review. [Composite merge declaration](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF) · [Xiaolong parent mapping](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Omega-Directive-22B-uncensored-abliterated-GGUF) · [Josiefied parent mapping](https://huggingface.co/DavidAU/Qwen3-The-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
 
 ## Context, reasoning and operation
 
@@ -29,6 +29,7 @@ The publisher labels the merge uncensored and abliterated and describes its inte
 ## Relations
 
 - Produced by: [David Belton](../../../../../../../../../producers/sub/d/sub/davidau/README.md)
+- Derived from: [Qwen3 The Josiefied Omega Directive 22B](../qwen3-the-josiefied-omega-directive-22b/)
 
 ## Official resources
 

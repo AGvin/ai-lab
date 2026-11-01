@@ -1,6 +1,6 @@
 # DavidAU Qwen3-Derived Models
 
-This catalog index organizes represented DavidAU releases with documented Qwen3-derived ancestry. It is a navigation group whose current concrete release is the Xiaolong/Josiefied Omega Directive merge. [Primary source](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
+This catalog index organizes represented DavidAU releases with documented Qwen3-derived ancestry. It is a navigation group whose reviewed concrete releases include the original Josiefied and the Xiaolong/Josiefied composite. [Primary source](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
 
 ## Scope and lineage
 

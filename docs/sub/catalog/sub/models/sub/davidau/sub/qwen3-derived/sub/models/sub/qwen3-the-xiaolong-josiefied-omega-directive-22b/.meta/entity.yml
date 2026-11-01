@@ -50,3 +50,5 @@ entity:
   relations:
     - type: produced-by
       target: catalog/producers/d/davidau
+    - type: derived-from
+      target: catalog/models/davidau/qwen3-derived/models/qwen3-the-josiefied-omega-directive-22b

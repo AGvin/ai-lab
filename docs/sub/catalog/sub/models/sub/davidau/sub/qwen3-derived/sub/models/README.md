@@ -1,6 +1,6 @@
 # DavidAU Qwen3-Derived Model Releases
 
-This catalog index lists the represented concrete learned model in the DavidAU Qwen3-derived branch. [Primary source](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
+This catalog index lists the represented concrete learned models in the DavidAU Qwen3-derived branch. [Primary source](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
 
 ## Model and artifact roles
 
@@ -8,6 +8,7 @@ The same-author GGUF card explicitly names the unsuffixed composite source as it
 
 ## Catalog navigation
 
+- [Qwen3 The Josiefied Omega Directive 22B](sub/qwen3-the-josiefied-omega-directive-22b/) — original learned merge.
 - [Qwen3 The Xiaolong Josiefied Omega Directive 22B](sub/qwen3-the-xiaolong-josiefied-omega-directive-22b/README.md) — Concrete learned merge
 - [DavidAU Qwen3-Derived Models](../../README.md) — Containing navigation index
 

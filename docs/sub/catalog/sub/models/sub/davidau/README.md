@@ -1,10 +1,10 @@
 # DavidAU Models
 
-This producer view organizes the represented model releases published under the DavidAU handle. The canonical producer is David Belton, and the existing Qwen3-derived branch provides navigation to the reviewed merge. [Primary source](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
+This producer view organizes the represented model releases published under the DavidAU handle. The canonical producer is David Belton, and the existing Qwen3-derived branch provides navigation to the reviewed original Josiefied merge and composite. [Primary source](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
 
 ## Scope
 
-The represented release is a learned Xiaolong/Josiefied Omega Directive merge. Its publisher supplies a GGUF card that names the separate unsuffixed source identity and describes the merge. Model identity, the navigation grouping and the chosen quantized distribution have different roles. [Publisher source](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
+The represented releases include the original Josiefied merge and the separately learned Xiaolong/Josiefied composite. Its publisher supplies a GGUF card that names the separate unsuffixed source identity and describes the merge. Model identity, the navigation grouping and the chosen quantized distribution have different roles. [Publisher source](https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF)
 
 ## Selecting a release and distribution
 

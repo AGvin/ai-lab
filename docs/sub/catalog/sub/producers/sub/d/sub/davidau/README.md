@@ -16,6 +16,7 @@ David Belton publishes AI model merges, fine-tunes, source-weight repositories, 
 
 ## Relations
 
+- Produces: [Qwen3 The Josiefied Omega Directive 22B](../../../../../models/sub/davidau/sub/qwen3-derived/sub/models/sub/qwen3-the-josiefied-omega-directive-22b/)
 - Produces: [Qwen3 The Xiaolong Josiefied Omega Directive 22B](../../../../../models/sub/davidau/sub/qwen3-derived/sub/models/sub/qwen3-the-xiaolong-josiefied-omega-directive-22b/)
 
 ## Official resources

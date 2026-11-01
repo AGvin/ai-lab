@@ -6,7 +6,7 @@
 - Attribute the 22B scale, 62 layers, 40,000-token usage guidance, reasoning statement and Apache-2.0 metadata to the inspected same-author GGUF card.
 - Replace the old unconditional full-precision SafeTensors availability claim with the exact 2026-10-21 unsuffixed README retrieval limitation; do not infer universal privacy, gating, deletion or unavailability from HTTP 401.
 - Preserve both immediate unsuffixed DavidAU parent references and add their successfully inspected GGUF cards as evidence of the exact source identities.
-- Keep the two parents external pending canonical intake; do not create a skipped-generation direct derived-from edge to Qwen3-14B.
+- Keep the Xiaolong parent external pending exact source intake; the Josiefied parent is now canonical with an exact reciprocal derivative edge. Do not create a skipped-generation direct derived-from edge to Qwen3-14B.
 - Treat uncensored and abliterated as publisher modification/behavior labels, without independent quality, refusal-rate or suitability guarantees.
 - Explain the matching ChatML/embedded Jinja template, configuration pinning and artifact-specific evaluation without copying the publisher's creative examples or assuming every runtime supports the full published context.
 - Do not transfer the accessible Josiefied parent's full-precision paragraph to this separate composite source or promote the composite GGUF distribution into a new trained model.
