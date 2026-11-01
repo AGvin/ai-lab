@@ -32,5 +32,6 @@ The materialized set below is curated rather than exhaustive.
 - [SciAgentArena](./sub/sciagentarena/)
 - [SentinelBench](./sub/sentinelbench/)
 - [SWE-bench](./sub/swe-bench/)
+- [TruthfulQA](./sub/truthfulqa/)
 - [TUA-Bench](./sub/tua-bench/)
 - [WeaveBench](./sub/weavebench/)
