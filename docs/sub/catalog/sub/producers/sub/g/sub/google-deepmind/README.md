@@ -10,6 +10,7 @@ Models, datasets and research software retain separate identities. The [Haiku pr
 - [AlphaGenome](../../../../../models/sub/google/sub/alphagenome/) — model producer.
 - [AlphaGenome Atlas](../../../../../datasets/sub/alphagenome-atlas/) — dataset producer.
 - [AndroidWorld](../../../../../datasets/sub/androidworld/) — dataset producer.
+- [DeepSearchQA](../../../../../datasets/sub/deepsearchqa/) — dataset producer.
 - [Flax](../../../../../software/sub/model-and-data-platforms/sub/model-development/sub/flax/) — software producer.
 - [Gemini](../../../../../models/sub/google/sub/gemini/) — model-family producer.
 - [Gemma](../../../../../models/sub/google/sub/gemma/) — model-family producer.

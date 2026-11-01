@@ -14,6 +14,7 @@ The materialized set below is curated rather than exhaustive.
 - [AIRS-Bench](./sub/airs-bench/)
 - [ApprenticeBench](./sub/apprenticebench/)
 - [AsgardBench](./sub/asgardbench/)
+- [DeepSearchQA](./sub/deepsearchqa/)
 - [GeneBench-Pro](./sub/genebench-pro/)
 - [GPQA](./sub/gpqa/)
 - [GroundedPlanBench](./sub/groundedplanbench/)

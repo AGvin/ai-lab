@@ -84,3 +84,5 @@ entity:
       target: catalog/software/physical-ai-and-robotics/mujoco-playground
     - type: produces
       target: catalog/datasets/simpleqa-verified
+    - type: produces
+      target: catalog/datasets/deepsearchqa
