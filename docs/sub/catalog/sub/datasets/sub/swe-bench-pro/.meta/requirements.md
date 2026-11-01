@@ -19,4 +19,5 @@
 - SWE-bench Pro is not conflated with original SWE-bench or unrelated code benchmark leaders.
 - V1/V2/HARD-51 version, split and evaluator boundaries are explicit and source-backed.
 - Benchmark score comparisons are scoped to exact evaluation protocol and revision.
+- OpenAI's July 8, 2026 evaluation audit estimated roughly 30% of the 731-task Pro V1 public set had material problems and retracted its previous broad Pro endorsement. This finding does not itself cover the later September 2026 V2 642-task release; preserve V1/V2 separation and do not imply V2 has independently passed a clean quality audit.
 - The `produced-by` relation and producer inverse `produces` are reciprocal.

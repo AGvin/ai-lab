@@ -58,6 +58,7 @@ Promptfoo is now part of OpenAI but remains a distinct producer identity for its
 - Produces: [OpenAI Skills](../../../../../agent-skills/sub/collections/sub/openai-skills/)
 - Produces: [OpenAI Text Embedding](../../../../../models/sub/openai/sub/text-embedding/)
 - Has part: [Promptfoo Inc.](../../../p/sub/promptfoo-inc/)
+- Produces: [SWE-bench Verified](../../../../../datasets/sub/swe-bench-verified/)
 - Produces: [TTS-1](../../../../../models/sub/openai/sub/tts-1/)
 - Produces: [TTS-1 HD](../../../../../models/sub/openai/sub/tts-1-hd/)
 - Produces: [Whisper](../../../../../models/sub/openai/sub/whisper/)

@@ -6,6 +6,7 @@
 - Keep dataset/task identities distinct from the SWE-bench evaluation harness, Docker execution environment, leaderboard/service surfaces, scoring/reporting procedure, and generic software-engineering benchmark concepts.
 - Preserve major dataset variants only as source-backed variant identities. Current upstream material includes full SWE-bench plus variants such as Lite, Verified, Multimodal, and Multilingual; do not compare results across variants as though they were the same test set.
 - Preserve the specific Verified boundary when discussed: it is a curated subset whose instances were reviewed by software engineers for solvability, not a claim that every benchmark instance or every future task is unambiguous.
+- The independently materialized Verified subset is unsuitable for unqualified frontier benchmark tracking per the February 2026 OpenAI audit. A July 2026 audit retracted the earlier Pro recommendation following problems in Pro V1; later V2 has a distinct release boundary.
 - Treat task repositories, issue/commit snapshots, container images, harness versions, dataset revisions, supported architectures, execution resources, and leaderboard policies as mutable/version-sensitive facts.
 - Preserve contamination and patch-leakage risk for public repository-derived tasks and do not assume every evaluated model or agent is independent of public benchmark/repository history.
 - Keep repository-level software-engineering scope distinct from function-completion datasets such as HumanEval and from broad knowledge tests such as MMLU.

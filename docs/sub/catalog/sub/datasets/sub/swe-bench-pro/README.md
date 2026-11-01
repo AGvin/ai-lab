@@ -6,6 +6,10 @@ SWE-bench Pro is Scale AI’s benchmark for software-engineering agents solving 
 
 The September 22, 2026 V2 release contains 642 validated tasks from 11 repositories. Its default dataset configuration, 51-task HARD subset and preserved 731-task V1 configuration are different evaluation sets. V2 uses Harbor-format task bundles, repaired tests and sanitized container images. The recommended locked protocol restricts the agent’s network to its model endpoint, then re-grades its patch in a fresh sandbox. Record the dataset revision, split, agent, model, time budget and verifier when reporting a result; V1 and V2 scores are not interchangeable.
 
+## Evaluation-quality caveat
+
+OpenAI's [July 2026 evaluation audit](https://openai.com/index/separating-signal-from-noise-coding-evaluations/) found material defects in the earlier **731-task public V1 split** and withdrew its previous recommendation of SWE-bench Pro. The audit does not independently establish the quality of the separately released **September 2026 V2** 642-task dataset. Interpret results by exact release, tasks, grader and protocol; no universal recommendation is justified.
+
 ## Access and rights
 
 Public task data and containers are distinct from Scale’s private evaluations. The harness and tooling use MIT licensing, while problem statements, patches and tests retain the licenses of their source repositories. Run task code in isolated evaluation infrastructure, preserve the relevant source notices and keep unrelated credentials out of agent containers.
