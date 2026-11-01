@@ -1,0 +1,46 @@
+entity:
+  id: catalog/producers/f/friendliai
+  type: organization
+  name: FriendliAI
+  aliases:
+    - FriendliAI Corp.
+  identity_note: >-
+    FriendliAI is the inference infrastructure and services organization
+    identified by its current first-party brand and product material. Current
+    company contact information identifies FriendliAI Corp. in San Francisco
+    and a Seoul, Korea hub; its May 2026 announcement describes a San
+    Francisco expansion and origin in research at Seoul National University.
+    This corporate/brand record does not assume that a distinct legacy
+    FriendliAI Inc. contract establishes the current cloud legal counterparty,
+    all subsidiaries, national ownership or complete beneficial control.
+    Hosted third-party model access does not confer original model authorship.
+    No exhaustive sanctions, indirect-ownership or current customer agreement
+    review has been conducted.
+  references:
+    - type: official-site
+      source:
+        url: https://friendli.ai/brand-resources
+      purposes: [identification, research]
+      authority: official
+      note: "Company naming convention, distinction between FriendliAI and Friendli product names."
+    - type: official-site
+      source:
+        url: https://friendli.ai/contact
+      purposes: [identification, research]
+      authority: official
+      note: "Current company description and public San Francisco/Seoul company locations."
+    - type: article
+      source:
+        url: https://friendli.ai/blog/friendliai-sf-office
+      purposes: [identification, research]
+      authority: official
+      note: "May 11, 2026 first-party company origin and San Francisco expansion description."
+    - type: product-page
+      source:
+        url: https://friendli.ai/product/model-apis
+      purposes: [identification, research]
+      authority: official
+      note: "Current hosted model-inference product produced by FriendliAI."
+  relations:
+    - type: produces
+      target: catalog/services/model-apis/friendli-model-apis
