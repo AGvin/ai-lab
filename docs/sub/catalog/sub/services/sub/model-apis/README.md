@@ -9,3 +9,4 @@ Hosted services that provide remote API access to one or more models, model prov
 - [Hyperbolic Flux Inference](./sub/hyperbolic-flux-inference/)
 - [`openrouter/`](./sub/openrouter/)
 - [SambaCloud](./sub/sambacloud/)
+- [Scaleway Generative APIs](./sub/scaleway-generative-apis/)

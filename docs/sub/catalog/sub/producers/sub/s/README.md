@@ -2,6 +2,7 @@
 
 Organizations, projects and teams whose canonical producer names begin with S.
 
+- [Scaleway SAS](./sub/scaleway-sas/)
 - [Salesforce](./sub/salesforce/)
 - [SambaNova Systems, Inc.](./sub/sambanova-systems-inc/)
 - [Sana Labs AB](./sub/sana-labs-ab/)

@@ -1,0 +1,44 @@
+entity:
+  id: catalog/producers/s/scaleway-sas
+  type: organization
+  name: Scaleway SAS
+  aliases:
+    - Scaleway
+  identity_note: >-
+    Scaleway SAS is the French cloud/AI provider company named in the
+    current official legal notice (SIREN 433 115 904, registered office
+    in Paris). First-party About material describes it as an iliad Group
+    subsidiary. Its current Generative APIs product includes shared/serverless
+    and dedicated model inference offerings. Company legal identity and
+    operations do not prove original development or copyright of the
+    third-party trained models made available through its API, or constitute
+    exhaustive current ultimate beneficial ownership, national control,
+    sanctions, group entity, service contract or residency certification.
+  references:
+    - type: official-site
+      source:
+        url: https://www.scaleway.com/en/legal-notice/
+      purposes: [identification, research]
+      authority: official
+      note: "Explicit Scaleway SAS legal name and French SIREN / Paris corporate address."
+    - type: official-site
+      source:
+        url: https://www.scaleway.com/en/about-us/
+      purposes: [identification, research]
+      authority: official
+      note: "Vendor description of Scaleway as an iliad Group subsidiary; geographical and corporate context."
+    - type: product-page
+      source:
+        url: https://www.scaleway.com/en/generative-apis/
+      purposes: [identification, research]
+      authority: official
+      note: "Current hosted Generative APIs product under company brand."
+    - type: documentation
+      source:
+        url: https://www.scaleway.com/en/docs/generative-apis/reference-content/data-privacy/
+      purposes: [research]
+      authority: official
+      note: "Documented data-handling exceptions and limitations of zero-retention claims."
+  relations:
+    - type: produces
+      target: catalog/services/model-apis/scaleway-generative-apis
