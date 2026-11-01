@@ -6,6 +6,7 @@ Canonical producers in the stable `v` slug partition.
 
 - [Valyu](sub/valyu/)
 - [Vast.ai Inc.](sub/vast-ai-inc/)
+- [Vectorize AI, Inc.](sub/vectorize-ai-inc/)
 - [Vercel Inc.](sub/vercel-inc/)
 - [verl Project](sub/verl-project/)
 - [Vespa.ai](sub/vespa-ai/)

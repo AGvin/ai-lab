@@ -8,5 +8,6 @@ Underlying vector search, graph relationships, embeddings, or storage engines ca
 
 - [Cognee](./sub/cognee/)
 - [Graphiti](./sub/graphiti/)
+- [Hindsight](./sub/hindsight/)
 - [Mem0 Open Source](./sub/mem0-open-source/)
 - [RuVector](./sub/ruvector/)
