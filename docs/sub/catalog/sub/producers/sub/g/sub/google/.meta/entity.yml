@@ -100,3 +100,5 @@ entity:
       target: catalog/software/model-and-data-platforms/model-development/orbax-checkpoint
     - type: produces
       target: catalog/models/google/siglip-2
+    - type: produces
+      target: catalog/datasets/ifeval

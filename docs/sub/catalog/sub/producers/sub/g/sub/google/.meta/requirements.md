@@ -25,3 +25,5 @@
 - Model-domain navigation resolves to its canonical catalog node.
 
 - Preserve the exact SigLIP 2 family production relation from Google's official release; component reuse does not make Google a new co-producer of downstream VLMs. [Google release](https://github.com/google-research/big_vision/blob/main/big_vision/configs/proj/image_text/README_siglip2.md).
+
+- Preserve Google Research's IFEval source-dataset production and distinguish it from checker software, MLPerf workload use and product support. [Original research source](https://github.com/google-research/google-research/tree/master/instruction_following_eval).

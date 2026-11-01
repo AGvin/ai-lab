@@ -23,6 +23,7 @@ Model families, hosted products and software retain separate catalog identities.
 - [Google Cloud Data Agent Kit](../../../../../software/sub/development-tools/sub/agentic-development-systems/sub/google-cloud-data-agent-kit/) — software producer.
 - [Google DeepMind](../google-deepmind/) — constituent organization.
 - [Google TPU7x](../../../../../hardware/sub/google-tpu7x/) — producer.
+- [IFEval](../../../../../datasets/sub/ifeval/) — source-dataset producer.
 - [Jules](../../../../../services/sub/development/sub/agents/sub/jules/) — service operator.
 - [Kubeflow](../../../../../software/sub/model-and-data-platforms/sub/lifecycle-platforms/sub/kubeflow/) — originating contributor; current project governance is separate.
 - [Kubeflow Pipelines](../../../../../software/sub/workflow-engines/sub/data-and-compute-orchestration/sub/kubeflow-pipelines/) — originating contributor to the Kubeflow ecosystem.

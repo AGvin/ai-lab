@@ -20,6 +20,7 @@ The materialized set below is curated rather than exhaustive.
 - [HST-Bench](./sub/hst-bench/)
 - [HumanEval](./sub/humaneval/)
 - [Humanity's Last Exam](./sub/humanitys-last-exam/)
+- [IFEval](./sub/ifeval/)
 - [LiveBench](./sub/livebench/)
 - [LiveCodeBench](./sub/livecodebench/)
 - [Long-Horizon Terminal-Bench](./sub/long-horizon-terminal-bench/)
