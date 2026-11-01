@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/i/infiniflow-inc
+  type: organization
+  name: InfiniFlow Inc.
+  references:
+    - type: official-site
+      source:
+        url: https://ragflow.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://ragflow.io/about-service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: RAGFlow first-party service operator disclosure identifies InfiniFlow Inc.; corporate beneficial ownership is not independently verified.
+    - type: repository
+      source:
+        url: https://github.com/infiniflow/ragflow
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/application-frameworks/data-and-retrieval/ragflow

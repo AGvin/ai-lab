@@ -6,6 +6,7 @@ Canonical producer profiles beginning with I.
 
 - [IBM](./sub/ibm/)
 - [IBM Research](./sub/ibm-research/)
+- [InfiniFlow Inc.](./sub/infiniflow-inc/)
 - [Inngest Inc](./sub/inngest-inc/)
 - [Institute of Foundation Models](./sub/institute-of-foundation-models/)
 - [Intel](./sub/intel/)

@@ -1,0 +1,29 @@
+entity:
+  id: catalog/software/application-frameworks/data-and-retrieval/ragflow
+  type: software
+  name: RAGFlow
+  references:
+    - type: repository
+      source:
+        url: https://github.com/infiniflow/ragflow
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ragflow.io/docs/dev/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/infiniflow/ragflow/releases/tag/v0.27.3
+      purposes:
+        - research
+      authority: official
+      note: Latest reviewed non-RC published release, 2026-10-23; v1.0.0-rc3 is still a release candidate.
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/infiniflow-inc
