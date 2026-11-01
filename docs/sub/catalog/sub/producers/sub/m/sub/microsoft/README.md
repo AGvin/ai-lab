@@ -8,6 +8,7 @@ Corporate ownership and product authorship are different relationships: GitHub r
 
 ## Relations
 
+- Produces: [Agent Lightning](../../../../../software/sub/model-and-data-platforms/sub/model-development/sub/agent-lightning/)
 - Produces: [AutoGen](../../../../../software/sub/agent-frameworks/sub/autogen/)
 - Produces: [Azure Agent Skills](../../../../../agent-skills/sub/collections/sub/azure-agent-skills/)
 - Produces: [DeepSpeed](../../../../../software/sub/model-and-data-platforms/sub/model-development/sub/deepspeed/)

@@ -5,6 +5,7 @@ Frameworks and toolkits used to build, train, adapt, fine-tune and improve machi
 ## Child pages
 
 - [Accelerate](./sub/accelerate/) — Hugging Face distributed and multi-device training utilities.
+- [Agent Lightning](./sub/agent-lightning/) — harness-native reinforcement learning for AI agents.
 - [Axolotl](./sub/axolotl/) — model training and fine-tuning workflows.
 - [DeepSpeed](./sub/deepspeed/) — distributed training and memory optimization.
 - [Flax](./sub/flax/) — JAX neural-network modules, state and training APIs.
