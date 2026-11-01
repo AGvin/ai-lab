@@ -4,12 +4,13 @@
 
 - Identify Ai2 as the current organization/brand of the Allen Institute for AI, a Seattle-based nonprofit AI research institute founded by Paul Allen in 2014, according to its own current About page.
 - Differentiate Ai2 and its original scientific benchmark dataset from the ARC Prize Foundation, ARC-AGI puzzles, independent partner organizations, external hosted products, benchmark implementations and scoring results.
-- Maintain exact independent produced-by/produces reciprocal pairs for Ai2 Reasoning Challenge (ARC), OpenBookQA and DROP without conflating their question sets. Do not infer further unrelated models, collaborations or software identities from Ai2's broad portfolio.
+- Maintain exact independent produced-by/produces reciprocal pairs for Ai2 Reasoning Challenge (ARC), OpenBookQA, DROP and Qasper without conflating their question sets. Do not infer further unrelated models, collaborations or software identities from Ai2's broad portfolio.
+- Qasper publisher Hub card declares CC BY 4.0 for the compiled release, but original S2ORC full-text paper rights are distinct; distinguish 5,049 questions from 1,585 paper rows.
 - DROP original publisher explicitly states CC BY-SA 4.0 while an Ai2-managed AWS public registry says CC BY; retain the discrepancy and verify source passage rights before reuse.
 - OpenBookQA data license is marked unknown in the publisher Hub card; keep its Apache-2.0 source-code license separate and do not infer rights to all question/fact text.
 - Scope publisher attribution to the dataset published by Ai2; the precise CC-BY-SA-4.0 Hub dataset declaration and Apache-2.0 leaderboard-code license remain with their own artifact owners.
 - Keep organizational partnerships, funding/history, ownership or legal service contracts distinct; founding by Paul Allen is not a present beneficial-ownership or sanctions determination.
-- Render the standard current-entity relations projection and direct primary official resources: Ai2 main site, About, Open Data original Aristo tools repository and archived original DROP publisher page.
+- Render the standard current-entity relations projection and direct primary official resources: Ai2 main site, About, Open Data original Aristo tools repository and archived original DROP publisher page, and original Qasper dataset card.
 
 ## Validation
 

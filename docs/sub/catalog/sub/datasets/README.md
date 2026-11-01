@@ -37,6 +37,7 @@ The materialized set below is curated rather than exhaustive.
 - [OpenBookQA](./sub/openbookqa/)
 - [ORAgentBench](./sub/oragentbench/)
 - [PRM800K](./sub/prm800k/)
+- [Qasper](./sub/qasper/)
 - [RealReplicaBench](./sub/realreplicabench/)
 - [SciAgentArena](./sub/sciagentarena/)
 - [SentinelBench](./sub/sentinelbench/)
