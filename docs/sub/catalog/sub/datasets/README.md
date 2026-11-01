@@ -45,6 +45,7 @@ The materialized set below is curated rather than exhaustive.
 - [SentinelBench](./sub/sentinelbench/)
 - [SimpleQA](./sub/simpleqa/)
 - [SimpleQA Verified](./sub/simpleqa-verified/)
+- [Spider 2.0](./sub/spider-2-0/)
 - [SWE-bench Verified](./sub/swe-bench-verified/)
 - [SWE-bench](./sub/swe-bench/)
 - [TruthfulQA](./sub/truthfulqa/)
