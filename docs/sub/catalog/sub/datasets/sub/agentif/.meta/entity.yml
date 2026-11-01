@@ -1,0 +1,52 @@
+entity:
+  id: catalog/datasets/agentif
+  type: dataset
+  name: AgentIF
+  aliases:
+    - AGENTIF
+  identity_note: >-
+    The THU-KEG original research dataset of 707 annotated instructions across
+    50 agentic applications, distinct from IFEval, the current evaluation
+    harness, model-judge configurations, leaderboard results and the
+    THUDM-published AgentBench. License statements conflict between
+    the original repository and the Hugging Face mirror and require
+    artifact-specific rights checks.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/THU-KEG/AgentIF
+      purposes: [identification, research]
+      authority: official
+      note: Original THU-KEG dataset and evaluation implementation.
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/THU-KEG/AgentIF
+      purposes: [identification, research]
+      authority: official
+      note: Dataset mirror currently declares cc-by-nc-4.0 in Hub metadata, unlike original GitHub data/LICENSE CC BY 4.0.
+    - type: repository
+      source:
+        url: https://github.com/THU-KEG/AgentIF/blob/main/data/LICENSE
+      purposes: [research]
+      authority: official
+      note: Original research repository's dataset-specific CC BY 4.0 grant.
+    - type: repository
+      source:
+        url: https://github.com/THU-KEG/AgentIF/blob/main/LICENSE
+      purposes: [research]
+      authority: official
+      note: Separate Apache-2.0 grant for source code, not a license for all mirrored datasets.
+    - type: official-site
+      source:
+        url: https://agentif.github.io/
+      purposes: [research]
+      authority: official
+      note: Current 2026-10 evaluation protocol is not score-comparable with earlier results.
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2505.16944
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/thu-keg

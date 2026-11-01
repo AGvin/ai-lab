@@ -9,6 +9,7 @@ The materialized set below is curated rather than exhaustive.
 ## Dataset profiles
 
 - [AgencyBench](./sub/agencybench/)
+- [AgentIF](./sub/agentif/)
 - [Agents' Last Exam](./sub/agents-last-exam/)
 - [Ai2 Reasoning Challenge (ARC)](./sub/ai2-reasoning-challenge/)
 - [AIRS-Bench](./sub/airs-bench/)

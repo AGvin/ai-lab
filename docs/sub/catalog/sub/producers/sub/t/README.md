@@ -10,6 +10,7 @@
 - [Tenstorrent](./sub/tenstorrent/)
 - [Tetrate](./sub/tetrate/)
 - [Tettra, Inc.](./sub/tettra-inc/)
+- [THU-KEG](./sub/thu-keg/)
 - [THUDM](./sub/thudm/)
 - [TIGER AI Lab](./sub/tiger-ai-lab/)
 - [Timothy Jaeryang Baek](./sub/timothy-jaeryang-baek/)
