@@ -13,5 +13,6 @@ Exact methods, fields, headers, message structures, capabilities, transports, au
 - [Agentic Commerce Protocol](./sub/agentic-commerce-protocol/)
 - [Machine Payments Protocol](./sub/machine-payments-protocol/)
 - [Model Context Protocol](./sub/model-context-protocol/)
+- [NLWeb](./sub/nlweb/)
 - [Universal Commerce Protocol](./sub/universal-commerce-protocol/)
 - [x402](./sub/x402/)
