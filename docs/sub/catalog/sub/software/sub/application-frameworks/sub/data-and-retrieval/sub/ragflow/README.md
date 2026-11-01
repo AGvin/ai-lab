@@ -6,6 +6,8 @@
 
 The original [v0.27.3 release](https://github.com/infiniflow/ragflow/releases/tag/v0.27.3) was published on **2026-10-23**; its tagged package manifest declares Python **>=3.13,<3.14** for the application. The newer `v1.0.0-rc3` is still a **release candidate**, not a verified general-availability 1.0. Version, Docker/Compose, search backend and model-provider requirements vary by release; inspect the tagged deployment instructions rather than assuming the latest development branch matches a production image.
 
+**Upgrade safety:** The [v1.0.0-rc1 release notes](https://github.com/infiniflow/ragflow/releases/tag/v1.0.0-rc1) explicitly state that starting RC1 containers automatically migrates data from v0.27.2 and the migration **cannot be rolled back** to v0.27.2. Back up and test restoration of data and configuration before any RC-track upgrade; check the exact source and target version paths instead of assuming that a standard container restart is reversible.
+
 RAGFlow provides document parsing, chunking, embedding and reranking, knowledge compilation, citation-oriented answers and agentic retrieval. The local stack may use databases, search engines, external OCR/parsers, hosted or local models, and connectors. Publisher performance and grounding statements are **not independent AI Lab evaluation**. A cloud offering at [cloud.ragflow.io](https://cloud.ragflow.io/) has separate service operation, terms and security responsibilities.
 
 ## Risk and provenance
@@ -23,6 +25,7 @@ The first-party [operator disclosure](https://ragflow.io/about-service) identifi
 - [Original source and self-hosting](https://github.com/infiniflow/ragflow)
 - [RAGFlow documentation](https://ragflow.io/docs/dev/)
 - [v0.27.3 release](https://github.com/infiniflow/ragflow/releases/tag/v0.27.3)
+- [v1.0.0-rc1 irreversible upgrade warning](https://github.com/infiniflow/ragflow/releases/tag/v1.0.0-rc1)
 - [Tagged application manifest](https://github.com/infiniflow/ragflow/blob/v0.27.3/pyproject.toml)
 - [Repository license](https://github.com/infiniflow/ragflow/blob/v0.27.3/LICENSE)
 - [First-party operator disclosure](https://ragflow.io/about-service)
