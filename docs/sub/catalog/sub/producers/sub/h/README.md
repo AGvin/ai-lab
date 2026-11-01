@@ -9,3 +9,4 @@
 - [Hugging Face, Inc.](./sub/hugging-face-inc/)
 - [huihui.ai](./sub/huihui-ai/)
 - [HumanSignal, Inc.](./sub/humansignal-inc/)
+- [Hyperbolic Labs, Inc.](./sub/hyperbolic-labs-inc/)
