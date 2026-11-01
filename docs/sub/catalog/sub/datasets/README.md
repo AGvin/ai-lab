@@ -32,6 +32,7 @@ The materialized set below is curated rather than exhaustive.
 - [MerchantBench](./sub/merchantbench/)
 - [MMLU](./sub/mmlu/)
 - [MMMU](./sub/mmmu/)
+- [OpenBookQA](./sub/openbookqa/)
 - [ORAgentBench](./sub/oragentbench/)
 - [RealReplicaBench](./sub/realreplicabench/)
 - [SciAgentArena](./sub/sciagentarena/)

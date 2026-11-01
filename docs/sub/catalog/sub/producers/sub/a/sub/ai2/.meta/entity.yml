@@ -40,3 +40,5 @@ entity:
   relations:
     - type: produces
       target: catalog/datasets/ai2-reasoning-challenge
+    - type: produces
+      target: catalog/datasets/openbookqa

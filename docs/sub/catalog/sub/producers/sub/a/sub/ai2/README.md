@@ -11,6 +11,7 @@ Ai2's public descriptions do not by themselves establish a complete current indi
 ## Relations
 
 - Produces: [Ai2 Reasoning Challenge (ARC)](../../../../../datasets/sub/ai2-reasoning-challenge/).
+- Produces: [OpenBookQA](../../../../../datasets/sub/openbookqa/).
 
 ## Official resources
 
