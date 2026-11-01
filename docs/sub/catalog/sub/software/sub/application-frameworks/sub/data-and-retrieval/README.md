@@ -4,6 +4,8 @@ Frameworks focused on connecting AI applications to documents, indexes, retrieva
 
 ## Child pages
 
+- [`crawl4ai/`](./sub/crawl4ai/) — independently released browser-crawling, Markdown and structured extraction library (separate from its hosted Cloud API).
+
 - [`llamaindex/`](./sub/llamaindex/)
 - [`haystack/`](./sub/haystack/)
 - [`microsoft-graphrag/`](./sub/microsoft-graphrag/) — Microsoft Research's graph-based RAG Python toolkit (maintenance mode).
