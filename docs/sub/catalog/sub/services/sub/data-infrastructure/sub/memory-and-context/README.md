@@ -6,6 +6,7 @@ Underlying vector, graph, relational, embedding, indexing, and search mechanisms
 
 ## Child pages
 
+- [Hindsight Cloud](./sub/hindsight-cloud/)
 - [Mem0 Platform](./sub/mem0-platform/)
 - [Supermemory](./sub/supermemory/)
 - [Zep](./sub/zep/)

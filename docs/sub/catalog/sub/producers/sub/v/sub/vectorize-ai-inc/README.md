@@ -11,6 +11,7 @@ Hindsight users may store sensitive memories across sessions and supply content 
 ## Relations
 
 - Produces: [Hindsight](../../../../../software/sub/data-infrastructure/sub/memory-and-context/sub/hindsight/)
+- Produces: [Hindsight Cloud](../../../../../services/sub/data-infrastructure/sub/memory-and-context/sub/hindsight-cloud/)
 
 ## Official resources
 
