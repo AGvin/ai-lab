@@ -1,10 +1,10 @@
 # skills.sh
 
-skills.sh is a public Agent Skills discovery index and leaderboard paired with the Vercel Labs `skills` CLI for discovering and installing skills from public repositories.
+skills.sh is a public Agent Skills discovery index and leaderboard. The separate [Vercel Skills CLI](../../../../../software/sub/development-tools/sub/agentic-development-systems/sub/vercel-skills-cli/) is independently installable software for discovering, installing and updating skills; neither is the Vercel Agent Skills collection.
 
 ## Registry boundary
 
-Current installation behavior includes repository-source discovery, selection of skills, and selection of target agents or clients. Installation copies skills into selected local agent/client locations, after which local edits and update behavior depend on the current CLI and client workflow.
+The registry indexes published skills, while the independent CLI handles local installation and management. Local paths, updates, agent selection and telemetry depend on the pinned CLI release and belong to its own software documentation.
 
 Ranking, telemetry, supported agents, scanning behavior, commands, and installation or update semantics are mutable. Security or scanning signals are registry features rather than guarantees of skill quality or trustworthiness.
 

@@ -3,7 +3,7 @@ entity:
   type: organization
   name: Vercel Inc.
   identity_note: >-
-    Vercel Inc. is the company behind the AI SDK, AI Gateway, Vercel Connect and Vercel Agent Skills represented
+    Vercel Inc. is the company behind the AI SDK, AI Gateway, Vercel Connect, Vercel Agent Skills and independently installable Skills CLI represented
     here. Its current terms distinguish the operated service agreement from software supplied exclusively under
     an open-source license. The installable SDK and skill collection have different operating boundaries from
     managed routing and connector services. Routed models and connected applications retain their own providers,
@@ -45,6 +45,13 @@ entity:
       authority: official
     - type: repository
       source:
+        url: https://github.com/vercel-labs/skills
+      purposes:
+        - research
+      authority: official
+      note: Independently published Skills CLI, distinct from the skills.sh registry.
+    - type: repository
+      source:
         url: https://github.com/vercel-labs/agent-skills
       purposes:
         - research
@@ -58,3 +65,5 @@ entity:
       target: catalog/services/agent-integration-platforms/vercel-connect
     - type: produces
       target: catalog/agent-skills/collections/vercel-agent-skills
+    - type: produces
+      target: catalog/software/development-tools/agentic-development-systems/vercel-skills-cli

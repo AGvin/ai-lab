@@ -2,8 +2,10 @@ entity:
   id: catalog/agent-skills/registries/skills-sh
   type: skill-registry
   name: skills.sh
-  aliases:
-    - Vercel Skills CLI
+  identity_note: >-
+    skills.sh is the public multi-source Agent Skills discovery index and
+    leaderboard. The separately installable Skills CLI is independent software,
+    not a registry alias or the Vercel Agent Skills source collection.
   references:
     - type: official-site
       source:

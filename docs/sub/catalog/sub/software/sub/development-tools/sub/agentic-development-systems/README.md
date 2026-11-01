@@ -11,3 +11,4 @@ Installable systems and tools that extend AI coding agents with project workflow
 - [Get Shit Done](./sub/get-shit-done/) — spec-driven coding-agent workflow framework.
 - [Google Agents CLI](./sub/google-agents-cli/) — Google agent development CLI and skills.
 - [Google Cloud Data Agent Kit](./sub/google-cloud-data-agent-kit/) — Google Data Cloud agent-development toolkit.
+- [Vercel Skills CLI](./sub/vercel-skills-cli/) — install, find and manage Agent Skills for coding agents.

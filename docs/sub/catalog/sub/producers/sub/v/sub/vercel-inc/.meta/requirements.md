@@ -17,7 +17,7 @@
 
 - Render the canonical entity name as the title and the source-backed `identity_note` as concise identity and operating-boundary prose.
 - Preserve the existing ID, type and aliases. Historical authorship, current stewardship, corporate ownership and service operation must remain distinct where the note distinguishes them.
-- Render every visible validated canonical relation exactly once through `entity-relations`, with canonical target names and resolving relative links. Distinct relation types to one target remain distinct rows.
+- Render every visible validated canonical relation exactly once through `entity-relations`, with canonical target names and resolving relative links. Keep independent Skills CLI software, skills.sh registry and Vercel Agent Skills collection distinct. Distinct relation types to one target remain distinct rows.
 - Render the canonical official references with descriptive labels; keep release, licensing, access and data-processing claims bounded to the cited sources.
 - Keep detailed model, software, service and benchmark behavior on the related owner pages; do not infer new catalog membership from a provider inventory.
 
