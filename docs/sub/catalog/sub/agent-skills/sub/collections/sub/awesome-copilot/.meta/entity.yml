@@ -1,0 +1,24 @@
+entity:
+  id: catalog/agent-skills/collections/awesome-copilot
+  type: skill-collection
+  name: Awesome GitHub Copilot
+  aliases:
+    - github/awesome-copilot
+    - Awesome Copilot Skills
+  references:
+    - type: repository
+      source:
+        url: https://github.com/github/awesome-copilot
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/github/awesome-copilot/blob/main/docs/README.skills.md
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/github-inc

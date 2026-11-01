@@ -9,6 +9,9 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official GitHub and Terms of Service references sufficient to establish organization identity and the current Microsoft affiliate relationship.
 
+- Represent GitHub's maintenance/distribution of the community-contributed Awesome Copilot Agent Skills collection without claiming that GitHub individually authored, security-audited or endorsed every contributed skill.
+- Keep this collection distinct from GitHub Copilot software, Spec Kit, and its broader non-skill repository assets.
+
 ## Validation
 
 - Ownership is not treated as a producer relation for GitHub-authored products.

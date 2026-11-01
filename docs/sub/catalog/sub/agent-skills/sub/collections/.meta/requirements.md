@@ -9,6 +9,8 @@
 - Do not create or imply standalone skill nodes merely because the collection exposes separately addressable skill directories.
 - Treat direct-child inventory as generated/navigation-sensitive state: when a collection is added or removed, update this index requirement in the same authored change package.
 
+- When Awesome GitHub Copilot is a materialized direct child, include only its one Agent Skills collection identity; the upstream custom agents, instructions and plugins are not additional collection children.
+
 ## Validation
 
 - Navigation matches the validated materialized direct-child projection exactly, including Stripe Agent Skills, Redis Agent Skills, and any later accepted collection additions.
