@@ -1,0 +1,46 @@
+entity:
+  id: catalog/producers/d/dapr-project
+  type: organization
+  name: Dapr Project
+  identity_note: >-
+    The original open-source Dapr community and Dapr Authors who maintain
+    and publish the separate Dapr Agents framework in the dapr GitHub
+    organization. Official community materials describe project authorship
+    and governance, and tagged package metadata credits Dapr Authors.
+    Community stewardship is not equivalent to Microsoft corporate ownership,
+    the CNCF umbrella, exclusive legal ownership or complete current
+    beneficial-ownership, sanctions, security or data-processing clearance.
+    The original general-purpose Dapr runtime and the Agents framework
+    remain distinct software identities.
+  references:
+    - type: official-site
+      source:
+        url: https://dapr.io/
+      purposes: [identification, research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/dapr/community
+      purposes: [identification, research]
+      authority: official
+      note: Dapr community and contributor governance.
+    - type: repository
+      source:
+        url: https://github.com/dapr/dapr-agents
+      purposes: [identification, research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/dapr/dapr-agents/blob/v1.1.0/pyproject.toml
+      purposes: [research]
+      authority: official
+      note: Original package lists Dapr Authors.
+    - type: repository
+      source:
+        url: https://github.com/dapr/dapr
+      purposes: [research]
+      authority: official
+      note: Underlying runtime, not additionally accepted as Dapr Agents.
+  relations:
+    - type: produces
+      target: catalog/software/agent-frameworks/dapr-agents

@@ -11,6 +11,7 @@ Frameworks and SDKs used to build, coordinate, and run agentic systems. This cat
 - [CAMEL](./sub/camel-ai/) — community-maintained Python framework for role-playing multi-agent societies, simulations, and synthetic-data workflows.
 - [Claude Agent SDK](./sub/claude-agent-sdk/) — Anthropic's agent runtime SDK.
 - [CrewAI](./sub/crewai/) — Python framework organized around collaborative agent Crews and structured event-driven Flows.
+- [Dapr Agents](./sub/dapr-agents/) — Python durable agent workflow framework.
 - [Deep Agents](./sub/deep-agents/)
 - [Google Agent Development Kit (ADK)](./sub/google-adk/) — Google's open-source framework for tool-using and multi-agent applications.
 - [LangChain](./sub/langchain/) — high-level open-source agent framework; LangGraph owns the lower-level orchestration runtime role.

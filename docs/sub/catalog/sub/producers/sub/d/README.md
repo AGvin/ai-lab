@@ -4,6 +4,7 @@
 - [DAGWorks, Inc.](./sub/dagworks-inc/)
 - [Daniel Avila](./sub/daniel-avila/)
 - [Danny Avila](./sub/danny-avila/)
+- [Dapr Project](./sub/dapr-project/)
 - [Databricks, Inc.](./sub/databricks-inc/)
 - [David Belton](./sub/davidau/)
 - [Daytona Platforms Inc.](./sub/daytona-platforms-inc/)

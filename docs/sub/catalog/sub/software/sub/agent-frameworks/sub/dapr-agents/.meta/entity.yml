@@ -1,0 +1,52 @@
+entity:
+  id: catalog/software/agent-frameworks/dapr-agents
+  type: software
+  name: Dapr Agents
+  identity_note: >-
+    The Dapr community's separately packaged, self-managed Python framework
+    for durable AI-agent workflows and multi-agent systems. It builds on the
+    separate Dapr runtime's Workflow, Actors, pub/sub, service invocation and
+    state infrastructure and can discover MCPServer tools. Official GitHub
+    v1.1.0 was published 2026-10-27 as a non-prerelease Apache-2.0 release,
+    with Python >=3.11,<3.15. Tagged package metadata still labels its
+    development status Pre-Alpha; the upstream README carries outdated 2025
+    language milestones. Neither the version tag nor project marketing proves
+    production readiness, security, performance or compatibility.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/dapr/dapr-agents
+      purposes: [identification, research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/dapr/dapr-agents/releases/tag/v1.1.0
+      purposes: [identification, research]
+      authority: official
+      note: 2026-10-27 stable-tagged release, not an independent production audit.
+    - type: repository
+      source:
+        url: https://github.com/dapr/dapr-agents/blob/v1.1.0/pyproject.toml
+      purposes: [research]
+      authority: official
+      note: Python support and conflicting Pre-Alpha classifier.
+    - type: documentation
+      source:
+        url: https://docs.dapr.io/developing-ai/dapr-agents/
+      purposes: [identification, research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/dapr/dapr-agents/blob/v1.1.0/LICENSE
+      purposes: [research]
+      authority: official
+      note: Original Apache-2.0 code license, not third-party model rights.
+    - type: repository
+      source:
+        url: https://github.com/dapr/dapr
+      purposes: [research]
+      authority: official
+      note: Underlying Dapr general-purpose runtime is distinct software.
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/dapr-project
