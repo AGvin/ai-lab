@@ -8,7 +8,8 @@ entity:
   identity_note: >-
     Ai2 is the current brand of the Seattle-based nonprofit Allen Institute for AI,
     founded in 2014 by Paul Allen. It produces openly published research resources,
-    including the 2018 Ai2 Reasoning Challenge science question dataset.
+    including the original ARC and OpenBookQA science QA datasets and the
+    2019 DROP discrete-reasoning reading-comprehension dataset.
     The organization's name and this dataset's acronym must not be confused with
     the independent ARC Prize Foundation or ARC-AGI benchmark. Product-level data
     licenses, upstream contributors, and partnerships are not universal ownership grants.
@@ -37,8 +38,16 @@ entity:
       purposes: [research]
       authority: official
       note: "First-party tools/repository references to the ARC benchmark; software is distinct from data."
+    - type: repository
+      source:
+        url: https://github.com/allenai/allennlp-website/blob/master/drop.html
+      purposes: [research]
+      authority: official
+      note: "Archived original first-party DROP release page, original producer and CC BY-SA 4.0 data-license statement."
   relations:
     - type: produces
       target: catalog/datasets/ai2-reasoning-challenge
     - type: produces
       target: catalog/datasets/openbookqa
+    - type: produces
+      target: catalog/datasets/drop

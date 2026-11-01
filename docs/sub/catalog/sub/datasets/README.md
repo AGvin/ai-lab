@@ -15,6 +15,7 @@ The materialized set below is curated rather than exhaustive.
 - [ApprenticeBench](./sub/apprenticebench/)
 - [AsgardBench](./sub/asgardbench/)
 - [DeepSearchQA](./sub/deepsearchqa/)
+- [DROP](./sub/drop/)
 - [GeneBench-Pro](./sub/genebench-pro/)
 - [GPQA](./sub/gpqa/)
 - [GroundedPlanBench](./sub/groundedplanbench/)
