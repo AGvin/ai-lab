@@ -1,0 +1,27 @@
+entity:
+  id: catalog/hardware/nvidia-geforce-rtx-5060-ti-16gb
+  type: hardware
+  name: NVIDIA GeForce RTX 5060 Ti 16 GB
+  identity_note: >-
+    Released Blackwell desktop GPU in the 16 GB GDDR7 configuration,
+    distinct from NVIDIA's 8 GB RTX 5060 Ti and non-Ti RTX 5060.
+    VRAM is per card, and software/workload fit remains configuration-dependent.
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5060-family/
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://nvidianews.nvidia.com/news/nvidia-blackwell-geforce-rtx-arrives-for-every-gamer-starting-at-299
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://developer.nvidia.com/cuda/gpus
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia
