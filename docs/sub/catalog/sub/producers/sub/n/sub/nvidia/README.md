@@ -35,6 +35,7 @@ Cloud infrastructure location and product provenance also leave room for differe
 - Produces: [NVIDIA Dynamo](../../../../../software/sub/inference-runtimes/sub/distributed-serving/sub/nvidia-dynamo/)
 - Produces: [NVIDIA GeForce RTX 3090](../../../../../hardware/sub/nvidia-geforce-rtx-3090/)
 - Produces: [NVIDIA GeForce RTX 4090](../../../../../hardware/sub/nvidia-geforce-rtx-4090/)
+- Produces: [NVIDIA GeForce RTX 5060 Ti 16 GB](../../../../../hardware/sub/nvidia-geforce-rtx-5060-ti-16gb/)
 - Produces: [NVIDIA GeForce RTX 5090](../../../../../hardware/sub/nvidia-geforce-rtx-5090/)
 - Produces: [NVIDIA Groq 3 LPU](../../../../../hardware/sub/nvidia-groq-3-lpu/)
 - Produces: [NVIDIA H100 Tensor Core GPU](../../../../../hardware/sub/nvidia-h100/)

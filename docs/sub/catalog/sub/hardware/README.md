@@ -17,6 +17,7 @@ The materialized set below is curated rather than exhaustive.
 - [Meta MTIA 300](./sub/meta-mtia-300/)
 - [NVIDIA B200 Tensor Core GPU](./sub/nvidia-b200/)
 - [NVIDIA B300 Tensor Core GPU](./sub/nvidia-b300/)
+- [NVIDIA GeForce RTX 5060 Ti 16 GB](./sub/nvidia-geforce-rtx-5060-ti-16gb/)
 - [NVIDIA Groq 3 LPU](./sub/nvidia-groq-3-lpu/)
 - [NVIDIA H100 Tensor Core GPU](./sub/nvidia-h100/)
 - [NVIDIA Jetson AGX Thor Developer Kit](./sub/nvidia-jetson-agx-thor-developer-kit/)
