@@ -6,6 +6,7 @@ Canonical producer profiles whose names begin with **B**.
 
 - [Baidu](./sub/baidu/)
 - [Baseten Labs, Inc.](./sub/baseten-labs-inc/)
+- [BenchFlow](./sub/benchflow/)
 - [Benn Huang](./sub/benn-huang/)
 - [BentoML](./sub/bentoml/)
 - [Berrie AI Incorporated](./sub/berrie-ai-incorporated/)
