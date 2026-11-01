@@ -40,6 +40,7 @@ The materialized set below is curated rather than exhaustive.
 - [Qasper](./sub/qasper/)
 - [RealReplicaBench](./sub/realreplicabench/)
 - [SciAgentArena](./sub/sciagentarena/)
+- [SciFact](./sub/scifact/)
 - [SentinelBench](./sub/sentinelbench/)
 - [SimpleQA](./sub/simpleqa/)
 - [SimpleQA Verified](./sub/simpleqa-verified/)

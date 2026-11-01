@@ -9,8 +9,8 @@ entity:
     Ai2 is the current brand of the Seattle-based nonprofit Allen Institute for AI,
     founded in 2014 by Paul Allen. It produces openly published research resources,
     including the original ARC and OpenBookQA science QA datasets and the
-    2019 DROP paragraph-reasoning dataset and the 2021 Qasper
-    research-paper question-answering dataset.
+    2019 DROP paragraph-reasoning, 2020 SciFact scientific fact-checking
+    and 2021 Qasper research-paper question-answering datasets.
     The organization's name and this dataset's acronym must not be confused with
     the independent ARC Prize Foundation or ARC-AGI benchmark. Product-level data
     licenses, upstream contributors, and partnerships are not universal ownership grants.
@@ -51,6 +51,12 @@ entity:
       purposes: [research]
       authority: official
       note: "Original Ai2 Qasper data release and CC BY 4.0 publisher metadata."
+    - type: repository
+      source:
+        url: https://github.com/allenai/scifact/blob/master/LICENSE.md
+      purposes: [research]
+      authority: official
+      note: "Original Ai2 SciFact original 2020 data, component-specific licensing and source research provenance."
   relations:
     - type: produces
       target: catalog/datasets/ai2-reasoning-challenge
@@ -60,3 +66,5 @@ entity:
       target: catalog/datasets/drop
     - type: produces
       target: catalog/datasets/qasper
+    - type: produces
+      target: catalog/datasets/scifact
