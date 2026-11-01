@@ -162,3 +162,5 @@ entity:
     - type: produces
       target: catalog/models/openai/gpt-4o-transcribe-diarize
   identity_note: "OpenAI is the represented producer umbrella; the OpenAI Foundation controls OpenAI Group PBC, while product contracting entities, acquired organizations, model provenance, licenses, access, and lifecycle remain separate."
+    - type: produces
+      target: catalog/datasets/simpleqa

@@ -1,0 +1,42 @@
+entity:
+  id: catalog/datasets/simpleqa
+  type: dataset
+  name: SimpleQA
+  identity_note: >-
+    OpenAI's original October 2024 short-form factuality question-and-answer
+    benchmark; distinct from Google DeepMind and Google Research's later
+    1,000-question SimpleQA Verified selection and from the simple-evals software.
+  references:
+    - type: article
+      source:
+        url: https://openai.com/index/introducing-simpleqa/
+      purposes: [identification, research]
+      authority: official
+      note: "Original October 30, 2024 release, 4,326-question scope and spot-check limits."
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2411.04368
+      purposes: [identification, research]
+      authority: upstream
+      note: "Original SimpleQA research publication."
+    - type: repository
+      source:
+        url: https://github.com/openai/simple-evals/blob/main/simpleqa_eval.py
+      purposes: [identification, research]
+      authority: official
+      note: "Publisher's original evaluation reference implementation and CSV retrieval."
+    - type: repository
+      source:
+        url: https://github.com/openai/simple-evals/blob/main/LICENSE
+      purposes: [research]
+      authority: official
+      note: "MIT repository license, not an independent third-party question-source rights audit."
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2509.07968
+      purposes: [research]
+      authority: upstream
+      note: "Separate 2025 SimpleQA Verified 1,000-question derivative."
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

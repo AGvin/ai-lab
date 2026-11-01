@@ -37,6 +37,7 @@ The materialized set below is curated rather than exhaustive.
 - [RealReplicaBench](./sub/realreplicabench/)
 - [SciAgentArena](./sub/sciagentarena/)
 - [SentinelBench](./sub/sentinelbench/)
+- [SimpleQA](./sub/simpleqa/)
 - [SWE-bench Verified](./sub/swe-bench-verified/)
 - [SWE-bench](./sub/swe-bench/)
 - [TruthfulQA](./sub/truthfulqa/)
