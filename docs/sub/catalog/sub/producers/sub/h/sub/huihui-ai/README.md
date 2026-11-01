@@ -6,6 +6,7 @@ The represented [Qwen3-Coder derivative](https://huggingface.co/huihui-ai/Huihui
 
 ## Catalog relations
 
+- [Huihui Qwen3.5 35B-A3B Abliterated](../../../../../models/sub/huihui-ai/sub/huihui-qwen3-5-35b-a3b-abliterated/) — model producer; experimental research suitability.
 - [Huihui Qwen3 Coder 30B A3B Instruct Abliterated](../../../../../models/sub/huihui-ai/sub/qwen3-coder-derived/sub/models/sub/huihui-qwen3-coder-30b-a3b-instruct-abliterated/) — model producer.
 
 ## Model catalog

@@ -5,7 +5,7 @@ entity:
   identity_note: >-
     This producer view organizes the represented modified models published under the huihui-ai
     handle and links the canonical huihui.ai producer. The Qwen3-Coder-derived branch is navigation
-    to the concrete modified model. Its upstream model, modification provenance and quantized
+    to one concrete modified model; the separate Qwen3.5 derivative is linked directly. Its upstream model, modification provenance and quantized
     artifacts retain distinct identities and evidence.
   references:
     - type: registry

@@ -13,3 +13,5 @@
 - Preserve the canonical ID, name, type, aliases, existing source references and all existing relations; validate the complete entity against the repository schema.
 - Verify every outgoing relation, its exact required inverse and every reader target against the composed catalog tree.
 - Keep producer views, navigation indexes, trained models, model families, service access and quantized artifacts distinct; qualify publisher claims and current retrieval limits.
+
+- Link the separately published Huihui Qwen3.5-35B-A3B derivative directly; do not absorb it into the different Qwen3-Coder ancestry index.

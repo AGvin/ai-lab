@@ -24,3 +24,7 @@ BFL's [Prompt Upsampler](https://huggingface.co/black-forest-labs/flux-3-image-k
 - Keep source-attributed limitations, licenses and model lineage explicit in the complete reader.
 - Do not infer tool-execution permission, hardware fit or source freshness from a model name.
 - Do not advance a freshness marker without a complete mutable-fact audit.
+
+## Represented 35B-A3B members
+
+- The 35B-A3B pretrained Base and post-trained checkpoints are separately materialized alongside 9B. The post-trained 35B-A3B is the immediate source of the Huihui modification; no stage or dense/MoE capability is transferred between siblings.

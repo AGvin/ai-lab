@@ -12,6 +12,7 @@ Start with the modified-model record, then choose its full model distribution or
 
 ## Catalog navigation
 
+- [Huihui Qwen3.5 35B-A3B Abliterated](sub/huihui-qwen3-5-35b-a3b-abliterated/) — distinct Qwen3.5 experimental derivative.
 - [huihui.ai](../../../producers/sub/h/sub/huihui-ai/README.md) — Canonical producer
 - [huihui.ai Qwen3-Coder-Derived Models](sub/qwen3-coder-derived/README.md) — Qwen3-Coder-derived navigation
 
