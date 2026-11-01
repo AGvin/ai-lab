@@ -1,6 +1,6 @@
 # BenchFlow
 
-**BenchFlow** is the original open-source publishing project behind [SkillsBench](../../../../../datasets/sub/skillsbench/), an agent-skill benchmark distributed from its [GitHub organization](https://github.com/benchflow-ai) and [Hugging Face publisher account](https://huggingface.co/benchflow). Its separate [BenchFlow SDK/CLI](https://github.com/benchflow-ai/benchflow) executes and scores task environments; it is **not** the SkillsBench dataset itself.
+**BenchFlow** is the original open-source publishing project behind [SkillsBench](../../../../../datasets/sub/skillsbench/), an agent-skill benchmark distributed from its [GitHub organization](https://github.com/benchflow-ai) and [Hugging Face publisher account](https://huggingface.co/benchflow). Its separate [BenchFlow SDK/CLI](../../../../../software/sub/evaluation-and-observability/sub/evaluation-frameworks/sub/benchflow/) executes and scores task environments; it is **not** the SkillsBench dataset itself.
 
 The publisher identity here is an open-source organization/account, **not an independently verified incorporated company**. Public repository attribution does not establish complete beneficial ownership or third-party IP rights in contributed benchmark material.
 
@@ -13,6 +13,7 @@ Both the [original repository](https://github.com/benchflow-ai/skillsbench/blob/
 ## Relations
 
 - Produces: [SkillsBench](../../../../../datasets/sub/skillsbench/).
+- Produces: [BenchFlow evaluation SDK/CLI](../../../../../software/sub/evaluation-and-observability/sub/evaluation-frameworks/sub/benchflow/).
 
 ## Official resources
 

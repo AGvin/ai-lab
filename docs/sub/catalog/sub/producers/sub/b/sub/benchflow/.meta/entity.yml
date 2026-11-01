@@ -37,7 +37,9 @@ entity:
         url: https://github.com/benchflow-ai/benchflow
       purposes: [research]
       authority: official
-      note: Distinct BenchFlow evaluation framework; not separately cataloged in this package.
+      note: Original independently cataloged BenchFlow evaluation software, distinct from SkillsBench task data.
   relations:
     - type: produces
       target: catalog/datasets/skillsbench
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/benchflow

@@ -5,6 +5,7 @@ Frameworks and tools for repeatable evaluation of language models, agents, retri
 ## Child pages
 
 - [AgentLab](./sub/agentlab/)
+- [BenchFlow](./sub/benchflow/)
 - [Bloom](./sub/bloom/)
 - [BrowserGym](./sub/browsergym/)
 - [DeepEval](./sub/deepeval/)
