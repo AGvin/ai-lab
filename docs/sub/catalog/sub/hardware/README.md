@@ -19,6 +19,7 @@ The materialized set below is curated rather than exhaustive.
 - [NVIDIA B300 Tensor Core GPU](./sub/nvidia-b300/)
 - [NVIDIA Groq 3 LPU](./sub/nvidia-groq-3-lpu/)
 - [NVIDIA H100 Tensor Core GPU](./sub/nvidia-h100/)
+- [NVIDIA Jetson AGX Thor Developer Kit](./sub/nvidia-jetson-agx-thor-developer-kit/)
 - [NVIDIA Rubin GPU](./sub/nvidia-rubin/)
 - [NVIDIA Vera CPU](./sub/nvidia-vera-cpu/)
 - [OpenAI Jalapeño Intelligence Processor](./sub/openai-jalapeno/)

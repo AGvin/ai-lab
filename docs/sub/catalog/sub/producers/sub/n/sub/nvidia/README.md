@@ -42,6 +42,7 @@ Cloud infrastructure location and product provenance also leave room for differe
 - Produces: [NVIDIA Isaac Lab](../../../../../software/sub/physical-ai-and-robotics/sub/nvidia-isaac-lab/)
 - Produces: [NVIDIA Isaac ROS](../../../../../software/sub/physical-ai-and-robotics/sub/nvidia-isaac-ros/)
 - Produces: [NVIDIA Isaac Sim](../../../../../software/sub/physical-ai-and-robotics/sub/nvidia-isaac-sim/)
+- Produces: [NVIDIA Jetson AGX Thor Developer Kit](../../../../../hardware/sub/nvidia-jetson-agx-thor-developer-kit/)
 - Produces: [NVIDIA Jetson Orin Nano Super Developer Kit](../../../../../hardware/sub/nvidia-jetson-orin-nano-super-developer-kit/)
 - Produces: [NVIDIA Jetson T4000](../../../../../hardware/sub/nvidia-jetson-t4000/)
 - Produces: [NVIDIA Jetson T5000](../../../../../hardware/sub/nvidia-jetson-t5000/)
