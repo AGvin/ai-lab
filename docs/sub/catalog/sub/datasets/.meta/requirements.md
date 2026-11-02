@@ -11,6 +11,7 @@
 - Render the standard direct-child navigation from the validated materialized child projection.
 
 - For the materialized TheAgentCompany child, preserve the 1.0.0 task dataset's independent identity, 175-task version pin, producer-identity deferral, third-party service/backup rights and privileged-runtime safety boundaries; do not equate task instructions with a fixed evaluator or score.
+- For the materialized GSM-Symbolic child, preserve Apple's independently published 2024 symbolic GSM8K-derived evaluation dataset, the distinct main/p1/p2 configurations and original GSM8K provenance, exact generated-data CC BY-NC-ND 4.0 restrictions versus the separate software grant, and Apple Inc. producer relation; no variant is an independently accepted dataset.
 
 ## Validation
 
