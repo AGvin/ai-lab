@@ -7,6 +7,7 @@
 - Include the jointly authored original AgentHarm benchmark dataset: the 2024 UK AI Safety Institute and Gray Swan AI collaboration; do not imply sole UK government ownership of the source research, ordinary MIT rights for the data or independent dataset identities for benchmark variants.
 - Preserve original joint UK AI Safety Institute / Gray Swan AI co-development of AgentHarm (2024); link exactly one additional AgentHarm dataset inverse relation while preserving Gray Swan's separately reviewable legal producer identity and AgentHarm's MIT-like safety/security-purpose-restricted license, distinct from standard MIT licensing of Inspect Evals software.
 - Render the validated entity-relations block from current canonical metadata, retaining one exact `produces` inverse for catalog/software/evaluation-and-observability/evaluation-frameworks/inspect-ai.
+- Render a second exact `produces` inverse for `catalog/datasets/agentharm`, preserving the pre-existing Inspect AI reciprocal relation.
 
 ## Validation
 
