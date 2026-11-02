@@ -1,0 +1,59 @@
+entity:
+  id: catalog/datasets/gsm-symbolic
+  type: dataset
+  name: GSM-Symbolic
+  aliases:
+    - GSM Symbolic
+    - GSM-Symbolic-P1
+    - GSM-Symbolic-P2
+  identity_note: >-
+    Apple's original symbolic-template-based GSM8K-derived mathematical reasoning
+    evaluation dataset, published in 2024. Main, P1 and P2 are configurations
+    of one GSM-Symbolic release, not three independent benchmark products.
+    The released question and answer samples, original templates and GSM8K
+    source data have different provenance and licensing boundaries.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/apple-aiml-research/ml-gsm-symbolic
+      purposes: [identification, research]
+      authority: official
+      note: Original Apple templates and generated data, pinned for review to initial data commit b6a1625025fc857300203bac9f617e5d8ec99f65.
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/apple/GSM-Symbolic
+      purposes: [identification, research]
+      authority: official
+      note: Original Apple Hub distribution of main, p1 and p2 test configurations; card declares CC BY-NC-ND 4.0.
+    - type: article
+      source:
+        url: https://machinelearning.apple.com/research/gsm-symbolic
+      purposes: [identification, research]
+      authority: official
+      note: Original Apple research announcement and paper context (2024).
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2410.05229
+      purposes: [research]
+      authority: upstream
+    - type: repository
+      source:
+        url: https://github.com/apple-aiml-research/ml-gsm-symbolic/blob/main/LICENSE
+      purposes: [research]
+      authority: official
+      note: Apple software-specific grant for repository software; not a substitute for the generated-data CC license.
+    - type: repository
+      source:
+        url: https://github.com/apple-aiml-research/ml-gsm-symbolic/blob/main/generated_data/README.md
+      purposes: [research]
+      authority: official
+      note: Original generated-data notice declares CC BY-NC-ND 4.0.
+    - type: repository
+      source:
+        url: https://github.com/apple-aiml-research/ml-gsm-symbolic/blob/main/ACKNOWLEDGEMENTS
+      purposes: [research]
+      authority: official
+      note: Original source acknowledges OpenAI's MIT-licensed GSM8K material.
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/apple-inc
