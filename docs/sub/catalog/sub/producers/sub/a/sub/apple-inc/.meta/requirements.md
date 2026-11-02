@@ -3,6 +3,7 @@
 ## Requirements
 
 - Identify Apple Inc. as the organization behind MLX LM.
+- Identify Apple Inc. as the original publisher of the 2024 GSM-Symbolic dataset; preserve its published Apple research, generated-data CC BY-NC-ND 4.0 and separate software-license distinctions without adopting original OpenAI GSM8K as Apple-produced.
 - Keep Apple producer identity distinct from the MLX LM package, the lower-level MLX framework, and individual model artifacts used with MLX LM.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current Apple legal identity and Apple Machine Learning Research provenance evidence.
