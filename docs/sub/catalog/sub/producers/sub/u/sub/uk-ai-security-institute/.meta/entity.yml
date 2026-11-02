@@ -38,3 +38,5 @@ entity:
   relations:
     - type: produces
       target: catalog/software/evaluation-and-observability/evaluation-frameworks/inspect-ai
+    - type: produces
+      target: catalog/datasets/agentharm
