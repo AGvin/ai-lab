@@ -10,6 +10,7 @@ The institute also jointly developed the original 2024 [AgentHarm](../../../../.
 ## Relations
 
 - Produces: [Inspect AI](../../../../../software/sub/evaluation-and-observability/sub/evaluation-frameworks/sub/inspect-ai/)
+- Co-produces: [AgentHarm](../../../../../datasets/sub/agentharm/) (with Gray Swan AI).
 
 ## Official resources
 
