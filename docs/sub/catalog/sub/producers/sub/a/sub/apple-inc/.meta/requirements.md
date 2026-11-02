@@ -11,5 +11,6 @@
 ## Validation
 
 - Apple and MLX LM are not collapsed into one entity.
+- The additional GSM-Symbolic reciprocal dataset `produced-by` / Apple `produces` relation resolves once and does not treat main, P1 and P2 as three datasets or GSM8K as an Apple-originated source.
 - The producer relation does not turn the broader MLX framework or external model artifacts into MLX LM aliases.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
