@@ -10,6 +10,7 @@ The materialized set below is curated rather than exhaustive.
 
 - [AgencyBench](./sub/agencybench/)
 - [AgentIF](./sub/agentif/)
+- [AgentHarm](./sub/agentharm/) — Gray Swan AI / UK AISI 2024 safety evaluation of harmful multi-step tool-using agents.
 - [Agents' Last Exam](./sub/agents-last-exam/)
 - [Ai2 Reasoning Challenge (ARC)](./sub/ai2-reasoning-challenge/)
 - [AIRS-Bench](./sub/airs-bench/)
