@@ -21,6 +21,7 @@ The materialized set below is curated rather than exhaustive.
 - [GPQA](./sub/gpqa/)
 - [GroundedPlanBench](./sub/groundedplanbench/)
 - [GSM8K](./sub/gsm8k/)
+- [GSM-Symbolic](./sub/gsm-symbolic/) — Apple's symbolic-template GSM8K-derived reasoning evaluation dataset (main, P1, P2; 2024).
 - [HellaSwag](./sub/hellaswag/)
 - [Horizon](./sub/horizon-agent-learning-benchmark/)
 - [HST-Bench](./sub/hst-bench/)
