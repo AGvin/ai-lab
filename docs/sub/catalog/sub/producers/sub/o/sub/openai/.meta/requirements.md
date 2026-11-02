@@ -9,6 +9,7 @@
 - Keep the OpenAI Skills repository deprecation status, successor repository, Skill Creator source status, and collection-specific distribution context with the collection owner.
 - Keep model, assistant-workspace, coding-agent, framework, Promptfoo, access, pricing, plan, API, runtime, and selection information with their corresponding canonical owners.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
+- Preserve the original OpenAI PaperBench (20 selected ICML papers and 8,316 rubric criteria) dataset producer relation, with code/grader versus third-party paper and generated artifact rights separately scoped. Keep PaperBench Code-Dev and JudgeEval distinct from additional standalone PaperBench dataset or software provenance claims.
 
 ## Content Specification
 
