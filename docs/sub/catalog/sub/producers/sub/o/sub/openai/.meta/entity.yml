@@ -146,6 +146,8 @@ entity:
     - type: produces
       target: catalog/datasets/mle-bench
     - type: produces
+      target: catalog/datasets/paperbench
+    - type: produces
       target: catalog/datasets/swe-bench-verified
     - type: produces
       target: catalog/datasets/gsm8k
