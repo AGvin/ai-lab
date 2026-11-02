@@ -29,3 +29,5 @@ entity:
   relations:
     - type: produces
       target: catalog/software/inference-runtimes/inference-engines/mlx-lm
+    - type: produces
+      target: catalog/datasets/gsm-symbolic
