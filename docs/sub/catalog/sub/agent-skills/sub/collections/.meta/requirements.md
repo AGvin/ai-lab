@@ -11,6 +11,8 @@
 
 - When Awesome GitHub Copilot is a materialized direct child, include only its one Agent Skills collection identity; the upstream custom agents, instructions and plugins are not additional collection children.
 
+- When Composio Awesome Claude Skills is a materialized direct child, list its single collection identity without treating each linked third-party skill, Composio connector service or plugin as a second collection; retain its source and per-skill licensing caveat on the owning page.
+
 ## Validation
 
 - Navigation matches the validated materialized direct-child projection exactly, including Stripe Agent Skills, Redis Agent Skills, and any later accepted collection additions.

@@ -9,6 +9,7 @@ Selected repositories and coordinated bundles that publish or distribute Agent S
 - [Agent Toolkit for AWS Skills](./sub/aws-agent-toolkit-skills/) — the official AWS-supported Agent Skills collection packaged within Agent Toolkit for AWS.
 - [Azure Agent Skills](./sub/azure-agent-skills/) — the MicrosoftDocs-maintained collection for Azure cloud development.
 - [Cloudflare Skills](./sub/cloudflare-skills/) — Cloudflare's official collection for the Cloudflare Developer Platform and related products.
+- [Composio Awesome Claude Skills](./sub/composio-awesome-claude-skills/) — Composio-maintained, community-contributed Agent Skills directory and repository bundles.
 - [Google Agent Skills](./sub/google-skills/) — Google's official repository-backed collection for Google products and technologies.
 - [Hugging Face Skills](./sub/hugging-face-skills/) — Hugging Face's official collection for Hub and AI/ML workflows.
 - [Matt Pocock Skills](./sub/matt-pocock-skills/) — composable engineering and productivity skills from Matt Pocock.

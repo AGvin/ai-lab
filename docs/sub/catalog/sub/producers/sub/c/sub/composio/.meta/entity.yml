@@ -43,3 +43,5 @@ entity:
   relations:
     - type: produces
       target: catalog/services/agent-integration-platforms/composio
+    - type: produces
+      target: catalog/agent-skills/collections/composio-awesome-claude-skills

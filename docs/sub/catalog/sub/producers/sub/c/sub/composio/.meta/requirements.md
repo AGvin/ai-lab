@@ -8,6 +8,8 @@
 - Include official legal and product documentation references sufficient to establish the represented producer role.
 - Keep release-specific specifications, pricing, deployment entitlements, service limits and detailed operating instructions in the relevant product entries.
 
+- Keep the Composio-maintained Awesome Claude Skills repository as a separate `skill-collection` identity, not the Composio hosted integration service or its individual community-contributed skills; verify reciprocal relations without claiming original authorship of every upstream contribution or complete licensing clearance.
+
 ## Validation
 
 - The page uses the canonical producer identity and does not duplicate a company under its product or trading name.
