@@ -40,6 +40,7 @@ The materialized set below is curated rather than exhaustive.
 - [MMMU](./sub/mmmu/)
 - [OpenBookQA](./sub/openbookqa/)
 - [ORAgentBench](./sub/oragentbench/)
+- [PaperBench](./sub/paperbench/) — OpenAI's 2025 research-paper replication benchmark (20 ICML 2024 papers; 8,316 rubric criteria).
 - [PRM800K](./sub/prm800k/)
 - [Qasper](./sub/qasper/)
 - [RealReplicaBench](./sub/realreplicabench/)
