@@ -103,6 +103,13 @@ entity:
       authority: official
     - type: repository
       source:
+        url: https://github.com/microsoft/markitdown
+      purposes:
+        - research
+      authority: official
+      note: Original Microsoft document preprocessing software, distinct from GraphRAG.
+    - type: repository
+      source:
         url: https://github.com/microsoft/graphrag
       purposes:
         - research
@@ -157,3 +164,5 @@ entity:
       target: catalog/software/inference-runtimes/inference-engines/onnx-runtime-genai
     - type: produces
       target: catalog/software/application-frameworks/data-and-retrieval/microsoft-graphrag
+    - type: produces
+      target: catalog/software/application-frameworks/data-and-retrieval/markitdown
