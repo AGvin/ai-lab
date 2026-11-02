@@ -57,7 +57,7 @@ Promptfoo is now part of OpenAI but remains a distinct producer identity for its
 - Produces: [OpenAI Jalapeño Intelligence Processor](../../../../../hardware/sub/openai-jalapeno/)
 - Produces: [OpenAI Skills](../../../../../agent-skills/sub/collections/sub/openai-skills/)
 - Produces: [OpenAI Text Embedding](../../../../../models/sub/openai/sub/text-embedding/)
-- Produces: [PaperBench](../../../../../datasets/sub/paperbench/).
+- Produces: [PaperBench](../../../../../datasets/sub/paperbench/)
 - Produces: [PRM800K](../../../../../datasets/sub/prm800k/)
 - Has part: [Promptfoo Inc.](../../../p/sub/promptfoo-inc/)
 - Produces: [SimpleQA](../../../../../datasets/sub/simpleqa/)
