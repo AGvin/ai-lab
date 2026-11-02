@@ -9,6 +9,7 @@ The materialized set below is curated rather than exhaustive.
 ## Dataset profiles
 
 - [AgencyBench](./sub/agencybench/)
+- [AgentHarm](./sub/agentharm/) — Gray Swan AI and UK AISI's safety benchmark for tool-using agents (2024).
 - [AgentIF](./sub/agentif/)
 - [AgentHarm](./sub/agentharm/) — Gray Swan AI / UK AISI 2024 safety evaluation of harmful multi-step tool-using agents.
 - [Agents' Last Exam](./sub/agents-last-exam/)
