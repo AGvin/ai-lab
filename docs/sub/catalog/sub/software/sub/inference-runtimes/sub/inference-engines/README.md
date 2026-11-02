@@ -4,6 +4,7 @@ Self-managed libraries and servers that load model artifacts and execute inferen
 
 ## Inference engines
 
+- [BitNet.cpp](./sub/bitnet-cpp/) — Microsoft low-bit inference runtime with CPU and separate CUDA support.
 - [CTranslate2](./sub/ctranslate2/)
 - [ExecuTorch](./sub/executorch/)
 - [llama.cpp](./sub/llama-cpp/)

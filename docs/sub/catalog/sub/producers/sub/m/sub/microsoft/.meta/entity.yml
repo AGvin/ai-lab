@@ -103,6 +103,13 @@ entity:
       authority: official
     - type: repository
       source:
+        url: https://github.com/microsoft/BitNet
+      purposes:
+        - research
+      authority: official
+      note: Original Microsoft low-bit inference engine, separate from BitNet model weights.
+    - type: repository
+      source:
         url: https://github.com/microsoft/markitdown
       purposes:
         - research
@@ -166,3 +173,5 @@ entity:
       target: catalog/software/application-frameworks/data-and-retrieval/microsoft-graphrag
     - type: produces
       target: catalog/software/application-frameworks/data-and-retrieval/markitdown
+    - type: produces
+      target: catalog/software/inference-runtimes/inference-engines/bitnet-cpp
