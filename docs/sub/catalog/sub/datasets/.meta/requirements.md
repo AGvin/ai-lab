@@ -10,6 +10,8 @@
 - Materialize children only for concrete source-backed datasets with durable AI Lab value. Do not create empty training/evaluation/modality taxonomy branches for symmetry.
 - Render the standard direct-child navigation from the validated materialized child projection.
 
+- For the materialized TheAgentCompany child, preserve the 1.0.0 task dataset's independent identity, 175-task version pin, producer-identity deferral, third-party service/backup rights and privileged-runtime safety boundaries; do not equate task instructions with a fixed evaluator or score.
+
 ## Validation
 
 - Every child represents an identifiable dataset or dataset family rather than a generic dataset concept, benchmark score, leaderboard, software harness, or transient hosted view.

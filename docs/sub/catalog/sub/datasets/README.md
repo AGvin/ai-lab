@@ -51,6 +51,7 @@ The materialized set below is curated rather than exhaustive.
 - [Spider 2.0](./sub/spider-2-0/)
 - [SWE-bench Verified](./sub/swe-bench-verified/)
 - [SWE-bench](./sub/swe-bench/)
+- [TheAgentCompany](./sub/the-agent-company/) — 175-task simulated workplace agent benchmark (1.0.0).
 - [TruthfulQA](./sub/truthfulqa/)
 - [TUA-Bench](./sub/tua-bench/)
 - [WeaveBench](./sub/weavebench/)
