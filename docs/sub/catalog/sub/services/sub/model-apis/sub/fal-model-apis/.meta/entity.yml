@@ -1,0 +1,32 @@
+entity:
+  id: catalog/services/model-apis/fal-model-apis
+  type: service
+  name: fal Model APIs
+  aliases:
+    - fal.ai Model APIs
+  identity_note: >-
+    Provider-operated fal model API access surface for hosted image,
+    video, audio and multimodal generation. Synchronous direct calls,
+    asynchronous queues, supported streaming and real-time endpoints are
+    modes of one hosted service. The provider's existing canonical entity
+    is Features & Labels, Inc. (fal.ai), not a second independent
+    fal-ai producer node. Third-party models retain their authors.
+  references:
+    - type: documentation
+      source:
+        url: https://fal.ai/docs/documentation/model-apis/overview
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://fal.ai/docs/documentation
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://fal.ai/legal/terms-of-service
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/f/features-and-labels-inc
