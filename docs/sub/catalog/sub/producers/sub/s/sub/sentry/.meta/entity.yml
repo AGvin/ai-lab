@@ -1,0 +1,38 @@
+entity:
+  id: catalog/producers/s/sentry
+  type: organization
+  name: Sentry
+  identity_note: >-
+    Sentry is the first-party developer debugging and application
+    observability platform publisher behind the getsentry organization.
+    It separately publishes Sentry Skills, a collection primarily for its
+    engineering team, and Sentry for AI, a source library built into
+    client-specific Agent Plugins for developers using Sentry. Those
+    collections have different purposes, publication lifecycles and
+    licenses; neither is a new standalone monitored-model provider.
+  references:
+    - type: official-site
+      source:
+        url: https://sentry.io/
+      purposes: [identification, research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/getsentry/sentry
+      purposes: [identification, research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/getsentry/skills
+      purposes: [research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/getsentry/sentry-for-ai
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/agent-skills/collections/sentry-skills
+    - type: produces
+      target: catalog/agent-skills/collections/sentry-for-ai
