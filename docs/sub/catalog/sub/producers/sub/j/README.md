@@ -7,3 +7,4 @@ Canonical producer profiles beginning with J.
 - [JAX Project](./sub/jax-project/)
 - [Jeremy Howard](./sub/jeremy-howard/)
 - [JetBrains](./sub/jetbrains/)
+- [Jina AI](./sub/jina-ai/)
