@@ -14,6 +14,7 @@ Frameworks and tools for repeatable evaluation of language models, agents, retri
 - [Giskard OSS](./sub/giskard-oss/)
 - [Harbor](./sub/harbor/)
 - [Inspect AI](./sub/inspect-ai/)
+- [Inspect Evals](./sub/inspect-evals/)
 - [Language Model Evaluation Harness](./sub/lm-evaluation-harness/)
 - [ModelBench](./sub/modelbench/)
 - [NVIDIA AIPerf](./sub/nvidia-aiperf/)
