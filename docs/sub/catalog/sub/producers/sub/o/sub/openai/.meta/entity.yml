@@ -92,6 +92,8 @@ entity:
     - type: produces
       target: catalog/software/agent-frameworks/openai-agents-sdk
     - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/openai-evals
+    - type: produces
       target: catalog/specifications/formats/openai-harmony
     - type: produces
       target: catalog/datasets/humaneval
