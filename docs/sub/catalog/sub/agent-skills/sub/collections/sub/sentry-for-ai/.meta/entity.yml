@@ -1,0 +1,42 @@
+entity:
+  id: catalog/agent-skills/collections/sentry-for-ai
+  type: skill-collection
+  name: Sentry for AI
+  identity_note: >-
+    Sentry's public canonical skill-source library for instrumenting and
+    debugging applications with Sentry through coding assistants. The
+    source repository is not an installable plugin; versioned client-specific
+    agent plugins and the portable Agent Plugin are generated distributions
+    from this source. The reference library and hosted MCP integration
+    support these workflows. It is separate from internal Sentry Skills
+    and the hosted observability service.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/getsentry/sentry-for-ai
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/getsentry/sentry-for-ai/blob/80642456253f2fcd529a38d9ac82f299e80dc89c/README.md
+      purposes: [research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/getsentry/agent-plugin
+      purposes: [research]
+      authority: official
+      note: Generated portable distribution; source changes are made upstream.
+    - type: other
+      source:
+        url: https://github.com/getsentry/sentry-for-ai/blob/80642456253f2fcd529a38d9ac82f299e80dc89c/LICENSE
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/getsentry/sentry-for-ai/blob/80642456253f2fcd529a38d9ac82f299e80dc89c/TELEMETRY.md
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/sentry
