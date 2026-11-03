@@ -17,7 +17,7 @@ Do not put database passwords in a shared `tools.yaml` or repository example. Co
 ## Relations
 
 - Produced by: [Google Cloud](../../../../../../../producers/sub/g/sub/google-cloud/) — origin and project stewardship.
-- Related: [Application Development Frameworks](../) — category, distinct from database storage engines.
+- Related: [Application Development Frameworks](../../) — category, distinct from database storage engines.
 
 ## Official resources
 
