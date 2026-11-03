@@ -5,6 +5,7 @@ Software platforms and runtime tools for AI telemetry, traces, model and agent d
 ## Child pages
 
 - [Arize AX](./sub/arize-ax/)
+- [AgentOps SDK](./sub/agentops-sdk/)
 - [Arize Phoenix](./sub/arize-phoenix/)
 - [Fiddler AI Control Plane](./sub/fiddler-ai-control-plane/)
 - [Galileo](./sub/galileo/)
