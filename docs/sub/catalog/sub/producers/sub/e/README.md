@@ -5,6 +5,7 @@
 - [Element Labs, Inc.](./sub/element-labs-inc/)
 - [Elementl, Inc.](./sub/elementl-inc/)
 - [EleutherAI](./sub/eleutherai/)
+- [ElevenLabs](./sub/elevenlabs/)
 - [Encord](./sub/encord/)
 - [Enrico Ros](./sub/enrico-ros/)
 - [Epoch AI](./sub/epoch-ai/)
