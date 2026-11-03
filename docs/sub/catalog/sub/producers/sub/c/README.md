@@ -2,6 +2,7 @@
 
 - [CAMEL-AI Community](./sub/camel-ai/)
 - [Can Bölük](./sub/can-boluk/)
+- [Cartesia](./sub/cartesia/)
 - [Cerebras Systems Inc.](./sub/cerebras-systems-inc/)
 - [Cerebrium Inc.](./sub/cerebrium-inc/)
 - [Check Point](./sub/check-point/)
