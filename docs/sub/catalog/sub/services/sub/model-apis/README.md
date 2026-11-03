@@ -6,6 +6,7 @@ Hosted services that provide remote API access to one or more models, model prov
 
 - [Alibaba Cloud Model Studio](./sub/alibaba-cloud-model-studio/)
 - [Baseten Model APIs](./sub/baseten-model-apis/)
+- [Cartesia Voice API](./sub/cartesia-voice-api/)
 - [Cerebras Inference](./sub/cerebras-inference/)
 - [Cloudflare Workers AI](./sub/cloudflare-workers-ai/)
 - [DeepInfra](./sub/deepinfra/)
