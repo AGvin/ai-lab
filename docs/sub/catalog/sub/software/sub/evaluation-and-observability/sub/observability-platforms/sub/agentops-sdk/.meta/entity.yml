@@ -1,0 +1,31 @@
+entity:
+  id: catalog/software/evaluation-and-observability/observability-platforms/agentops-sdk
+  type: software
+  name: AgentOps SDK
+  identity_note: >-
+    MIT-licensed AgentOps Python SDK for instrumenting AI agents and LLM
+    workflows using sessions, traces, replay and cost analytics. The SDK
+    is distinct from the hosted AgentOps dashboard and separately
+    self-hosted backend/application. Logged inputs, outputs and traces
+    can expose private content, requiring explicit data capture controls.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/AgentOps-AI/agentops
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/AgentOps-AI/agentops/blob/f8e907b92dabe47232978023fdcb01e2a7d4b752/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/AgentOps-AI/agentops/blob/f8e907b92dabe47232978023fdcb01e2a7d4b752/pyproject.toml
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/AgentOps-AI/agentops/blob/f8e907b92dabe47232978023fdcb01e2a7d4b752/LICENSE
+      purposes: [research]
+      authority: official
