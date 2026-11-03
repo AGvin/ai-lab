@@ -1,6 +1,6 @@
 # DigitalOcean Evaluations
 
-**DigitalOcean Evaluations** is a managed evaluation service operated by [DigitalOcean](../../../../producers/sub/d/sub/digitalocean/). It measures outcomes for supported foundation models, Inference Router configurations and agents using datasets, selected metrics and simulations. The service is distinct from model hosting through **DigitalOcean Inference** and from an independently installable testing framework.
+**DigitalOcean Evaluations** is a managed evaluation service operated by [DigitalOcean](../../../../../producers/sub/d/sub/digitalocean/). It measures outcomes for supported foundation models, Inference Router configurations and agents using datasets, selected metrics and simulations. The service is distinct from model hosting through **DigitalOcean Inference** and from an independently installable testing framework.
 
 ## Evaluation workflows
 
@@ -18,8 +18,8 @@ No authenticated DigitalOcean evaluation was executed for this catalog entry; do
 
 ## Relations
 
-- Produced by: [DigitalOcean](../../../../producers/sub/d/sub/digitalocean/)
-- Related model API service: [DigitalOcean Inference](../../model-apis/sub/digitalocean-inference/)
+- Produced by: [DigitalOcean](../../../../../producers/sub/d/sub/digitalocean/)
+- Related model API service: [DigitalOcean Inference](../../../model-apis/sub/digitalocean-inference/)
 
 ## Official resources
 
