@@ -23,6 +23,13 @@ entity:
         - identification
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/UKGovernmentBEIS/inspect_evals
+      purposes:
+        - research
+      authority: official
+      note: Original 2024 Inspect Evals contribution and package authorship; Generality Labs now maintains the collection.
     - type: official-site
       source:
         url: https://www.aisi.gov.uk/
@@ -38,5 +45,7 @@ entity:
   relations:
     - type: produces
       target: catalog/software/evaluation-and-observability/evaluation-frameworks/inspect-ai
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/inspect-evals
     - type: produces
       target: catalog/datasets/agentharm
