@@ -15,6 +15,7 @@ Frameworks and tools for repeatable evaluation of language models, agents, retri
 - [Harbor](./sub/harbor/)
 - [Inspect AI](./sub/inspect-ai/)
 - [Language Model Evaluation Harness](./sub/lm-evaluation-harness/)
+- [ModelBench](./sub/modelbench/)
 - [NVIDIA AIPerf](./sub/nvidia-aiperf/)
 - [OpenAI Evals](./sub/openai-evals/)
 - [Petri](./sub/petri/)
