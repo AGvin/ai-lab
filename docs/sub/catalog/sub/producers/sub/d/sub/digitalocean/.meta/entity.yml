@@ -1,0 +1,39 @@
+entity:
+  id: catalog/producers/d/digitalocean
+  type: organization
+  name: DigitalOcean
+  identity_note: >-
+    DigitalOcean is a cloud and AI infrastructure provider founded in 2012.
+    Its August 22, 2026 terms identify DigitalOcean, LLC as the direct
+    contracting party while DigitalOcean Holdings, Inc. is its parent public
+    holding company. DigitalOcean operates the Inference model-access service
+    and the separately documented DigitalOcean Evaluations platform. Providing
+    hosted access to models does not transfer the original third-party model
+    authorship, license, trademark, or training-data provenance to DigitalOcean.
+  references:
+    - type: official-site
+      source:
+        url: https://www.digitalocean.com/about
+      purposes: [identification, research]
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://www.digitalocean.com/legal/terms-of-service-agreement
+      purposes: [identification, research]
+      authority: official
+      note: Contracting DigitalOcean LLC and 2026 service and data agreement boundary.
+    - type: documentation
+      source:
+        url: https://docs.digitalocean.com/products/inference/
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.digitalocean.com/products/evaluations/
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/model-apis/digitalocean-inference
+    - type: produces
+      target: catalog/services/evaluation-and-observability/digitalocean-evaluations
