@@ -8,6 +8,7 @@ Google Cloud's [name-change documentation](https://docs.cloud.google.com/gemini-
 
 - [Agent Runtime on Gemini Enterprise Agent Platform](../../../../../services/sub/infrastructure/sub/vertex-ai-agent-engine/) — service operator.
 - [llm-d](../../../../../software/sub/inference-runtimes/sub/distributed-serving/sub/llm-d/) — founding contributor to the shared project.
+- [MCP Toolbox for Databases](../../../../../software/sub/application-frameworks/sub/application-development/sub/mcp-toolbox-for-databases/) — open-source database MCP tool framework origin.
 - [Vertex AI API](../../../../../services/sub/model-apis/sub/vertex-ai-api/) — service operator.
 
 ## Official resources
