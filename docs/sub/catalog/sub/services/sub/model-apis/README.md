@@ -4,6 +4,7 @@ Hosted services that provide remote API access to one or more models, model prov
 
 ## Child pages
 
+- [DigitalOcean Inference](./sub/digitalocean-inference/)
 - [Friendli Model APIs](./sub/friendli-model-apis/)
 - [`hugging-face-inference-providers/`](./sub/hugging-face-inference-providers/)
 - [Hyperbolic Flux Inference](./sub/hyperbolic-flux-inference/)
