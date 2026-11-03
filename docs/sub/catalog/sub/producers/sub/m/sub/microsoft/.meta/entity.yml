@@ -136,6 +136,8 @@ entity:
     - type: produces
       target: catalog/software/development-tools/testing/playwright
     - type: produces
+      target: catalog/software/development-tools/testing/playwright-mcp
+    - type: produces
       target: catalog/software/agent-frameworks/microsoft-agent-framework
     - type: produces
       target: catalog/software/evaluation-and-observability/evaluation-frameworks/pyrit
