@@ -1,0 +1,35 @@
+entity:
+  id: catalog/agent-skills/collections/sentry-skills
+  type: skill-collection
+  name: Sentry Skills
+  identity_note: >-
+    First-party Agent Skills and Claude plugin marketplace collection used
+    primarily for Sentry's own engineering workflows. Published by Sentry
+    in getsentry/skills with repo-root skill and agent sources, a marketplace
+    manifest and distinct plugin installation instructions. Separate from
+    Sentry for AI's developer-facing, built/distributed integration skills
+    and from the Sentry hosted observability platform.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/getsentry/skills
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/getsentry/skills/blob/0c464f411bdfb8d4c12314b36264d06cb2f60270/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/getsentry/skills/blob/0c464f411bdfb8d4c12314b36264d06cb2f60270/.claude-plugin/marketplace.json
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/getsentry/skills/blob/0c464f411bdfb8d4c12314b36264d06cb2f60270/LICENSE
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/sentry
