@@ -1,0 +1,36 @@
+entity:
+  id: catalog/agent-skills/collections/trail-of-bits-skills
+  type: skill-collection
+  name: Trail of Bits Skills
+  identity_note: >-
+    Trail of Bits' first-party repository-backed collection and Claude plugin
+    marketplace for AI-assisted security analysis, testing, and development,
+    with installation guidance for Claude Code, Codex, and ChatGPT workspace
+    imports. The collection contains multiple bundled plugin/skill directories
+    and a marketplace manifest: those entries do not automatically become
+    separately accepted independent catalog identities or a multi-publisher
+    Agent Skills registry.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/trailofbits/skills
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/trailofbits/skills/blob/711af095215ad4ecde5b90cd1d0124b3f1c4ca9e/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/trailofbits/skills/blob/711af095215ad4ecde5b90cd1d0124b3f1c4ca9e/.claude-plugin/marketplace.json
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/trailofbits/skills/blob/711af095215ad4ecde5b90cd1d0124b3f1c4ca9e/LICENSE
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/trail-of-bits
