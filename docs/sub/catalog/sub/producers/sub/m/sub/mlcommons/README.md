@@ -1,6 +1,6 @@
 # MLCommons
 
-MLCommons is an open AI engineering consortium that develops and operates AI benchmarks with industry, academia and other contributors. Its represented work includes MLPerf system-performance suites and the AILuminate safety benchmark family.
+MLCommons is an open AI engineering consortium that develops and operates AI benchmarks with industry, academia and other contributors. Its represented work includes MLPerf system-performance suites, the AILuminate safety benchmark family, and the separate open-source ModelBench safety-evaluation software.
 
 ## Producer boundary
 
@@ -17,6 +17,7 @@ Consortium provenance is distinct from the authorship of each reference model or
 - Produces: [MLPerf Mobile v6.0](../../../../../datasets/sub/mlperf-mobile-v6-0/)
 - Produces: [MLPerf Storage v3.0](../../../../../datasets/sub/mlperf-storage-v3-0/)
 - Produces: [MLPerf Training](../../../../../datasets/sub/mlperf-training/)
+- Produces: [ModelBench](../../../../../software/sub/evaluation-and-observability/sub/evaluation-frameworks/sub/modelbench/)
 
 ## Official resources
 
