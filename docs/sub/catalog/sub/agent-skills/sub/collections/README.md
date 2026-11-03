@@ -18,3 +18,4 @@ Selected repositories and coordinated bundles that publish or distribute Agent S
 - [OpenAI Skills](./sub/openai-skills/) — the deprecated `openai/skills` repository retained as the source of selected historical/system skills, with current Codex plugin examples moved to OpenAI Plugins.
 - [Ponytail](./sub/ponytail/) — Dietrich Gebert's coordinated Agent Skill collection focused on minimizing unnecessary implementation complexity.
 - [Superpowers](./sub/superpowers/) — a coordinated software-development methodology built from composable Agent Skills.
+- [Trail of Bits Skills](./sub/trail-of-bits-skills/) — security analysis, code auditing and verification Agent Skills published as Trail of Bits' plugin marketplace.
