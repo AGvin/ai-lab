@@ -24,6 +24,8 @@ Selected repositories and coordinated bundles that publish or distribute Agent S
 - [Ponytail](./sub/ponytail/) — Dietrich Gebert's coordinated Agent Skill collection focused on minimizing unnecessary implementation complexity.
 - [Prisma Skills](./sub/prisma-skills/) — Prisma's first-party ORM, database migration and deployment guidance.
 - [Redis Agent Skills](./sub/redis-agent-skills/) — Redis data-structure, search, caching and operations guidance.
+- [Sentry for AI](./sub/sentry-for-ai/) — Sentry's source library for client-specific monitoring and debugging plugins.
+- [Sentry Skills](./sub/sentry-skills/) — engineering-team review, security and development workflows from Sentry.
 - [Shopify Agent Skills](./sub/shopify-agent-skills/) — Shopify API and app-development guidance.
 - [Stripe Agent Skills](./sub/stripe-agent-skills/) — Stripe's official integration and API development skills.
 - [Supabase Agent Skills](./sub/supabase-agent-skills/) — Supabase and PostgreSQL development guidance.
