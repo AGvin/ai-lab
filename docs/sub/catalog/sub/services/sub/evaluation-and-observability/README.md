@@ -6,4 +6,5 @@ Installable or fully self-hostable observability and evaluation products remain 
 
 ## Child pages
 
+- [DigitalOcean Evaluations](./sub/digitalocean-evaluations/)
 - [Observability Platform Services](./sub/observability-platforms/)
