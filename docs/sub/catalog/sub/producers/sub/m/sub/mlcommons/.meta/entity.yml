@@ -90,4 +90,6 @@ entity:
     - type: produces
       target: catalog/datasets/mlperf-endpoints-v0-7
     - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/mlcommons-mlperf-inference
+    - type: produces
       target: catalog/software/evaluation-and-observability/evaluation-frameworks/modelbench
