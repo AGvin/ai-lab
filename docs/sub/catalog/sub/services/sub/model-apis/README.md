@@ -11,6 +11,7 @@ Hosted services that provide remote API access to one or more models, model prov
 - [Cloudflare Workers AI](./sub/cloudflare-workers-ai/)
 - [DeepInfra](./sub/deepinfra/)
 - [DigitalOcean Inference](./sub/digitalocean-inference/)
+- [ElevenLabs API](./sub/elevenlabs-api/)
 - [Fireworks AI](./sub/fireworks-ai/)
 - [Friendli Model APIs](./sub/friendli-model-apis/)
 - [GroqCloud](./sub/groqcloud/)
