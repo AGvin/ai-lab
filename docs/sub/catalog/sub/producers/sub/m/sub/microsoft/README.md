@@ -31,6 +31,7 @@ Corporate ownership and product authorship are different relationships: GitHub r
 - Produces: [ONNX Runtime GenAI](../../../../../software/sub/inference-runtimes/sub/inference-engines/sub/onnx-runtime-genai/)
 - Produces: [Phi](../../../../../models/sub/microsoft/sub/phi/)
 - Produces: [Playwright](../../../../../software/sub/development-tools/sub/testing/sub/playwright/)
+- Produces: [Playwright MCP](../../../../../software/sub/development-tools/sub/testing/sub/playwright-mcp/)
 - Produces: [PyRIT](../../../../../software/sub/evaluation-and-observability/sub/evaluation-frameworks/sub/pyrit/)
 - Produces: [Visual Studio Code](../../../../../software/sub/development-tools/sub/code-editors/sub/vs-code/)
 - Produces: [Windows 365 for Agents](../../../../../services/sub/infrastructure/sub/windows-365-for-agents/)
