@@ -1,0 +1,40 @@
+entity:
+  id: catalog/services/evaluation-and-observability/digitalocean-evaluations
+  type: service
+  name: DigitalOcean Evaluations
+  identity_note: >-
+    DigitalOcean's provider-operated evaluation platform for models, Inference
+    Router configurations and supported agent deployments. It supports
+    dataset-based single-turn and multi-turn assessment and agent simulation,
+    with scoring and comparisons under selected evaluation settings. It is not
+    the separate DigitalOcean Inference model API, a model or benchmark dataset,
+    a complete independent self-hosted evaluation framework or universal model
+    safety certification. Metrics, agent support, pricing, APIs, data retention
+    and region coverage can change.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.digitalocean.com/products/evaluations/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.digitalocean.com/products/evaluations/details/features/
+      purposes: [identification, research]
+      authority: official
+      note: Model, Inference Router and agent dataset-evaluation and simulation functionality.
+    - type: documentation
+      source:
+        url: https://docs.digitalocean.com/products/evaluations/getting-started/quickstart/
+      purposes: [research]
+      authority: official
+      note: Dataset and simulation workflows, advisory nature of results and production review caveat.
+    - type: documentation
+      source:
+        url: https://docs.digitalocean.com/products/evaluations/reference/
+      purposes: [research]
+      authority: official
+      note: DigitalOcean API, doctl commands and vendor MCP interfaces for evaluations.
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/digitalocean
