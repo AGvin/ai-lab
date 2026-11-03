@@ -11,5 +11,6 @@
 - [Google Cloud](./sub/google-cloud/)
 - [Google DeepMind](./sub/google-deepmind/)
 - [Graphify Labs](./sub/graphify-labs/)
+- [Gray Swan AI](./sub/gray-swan-ai/)
 - [Groq LLC](./sub/groq-llc/)
 - [Guru Technologies, Inc.](./sub/guru-technologies-inc/)
