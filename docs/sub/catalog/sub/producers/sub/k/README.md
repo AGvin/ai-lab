@@ -1,5 +1,6 @@
 # Producers — K
 
+- [K-Dense](./sub/k-dense/)
 - [Keras Team](./sub/keras-team/)
 - [Keygraph](./sub/keygraph/)
 - [Khoj Inc.](./sub/khoj-inc/)
