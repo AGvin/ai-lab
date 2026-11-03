@@ -1,0 +1,38 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/modelbench
+  type: software
+  name: ModelBench
+  identity_note: >-
+    MLCommons' installable safety-evaluation runner and reporting framework,
+    distinct from the AILuminate benchmark family and managed model-hosting
+    services. ModelGauge runs tests and annotations within the same source
+    repository; it is not a separately duplicated catalog software identity.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/mlcommons/modelbench
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/mlcommons/modelbench/blob/a4c8d6c928de6465db29d13561ad0ac26e667a43/README.md
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/mlcommons/modelbench/blob/a4c8d6c928de6465db29d13561ad0ac26e667a43/pyproject.toml
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/mlcommons/modelbench/blob/a4c8d6c928de6465db29d13561ad0ac26e667a43/LICENSE.md
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mlcommons
