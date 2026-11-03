@@ -16,6 +16,7 @@ Frameworks and tools for repeatable evaluation of language models, agents, retri
 - [Inspect AI](./sub/inspect-ai/)
 - [Inspect Evals](./sub/inspect-evals/)
 - [Language Model Evaluation Harness](./sub/lm-evaluation-harness/)
+- [MLPerf Inference Reference Software](./sub/mlcommons-mlperf-inference/)
 - [ModelBench](./sub/modelbench/)
 - [NVIDIA AIPerf](./sub/nvidia-aiperf/)
 - [OpenAI Evals](./sub/openai-evals/)
@@ -24,4 +25,5 @@ Frameworks and tools for repeatable evaluation of language models, agents, retri
 - [Pydantic Evals](./sub/pydantic-evals/)
 - [PyRIT](./sub/pyrit/)
 - [Ragas](./sub/ragas/)
+- [Stanford HELM Framework](./sub/stanford-helm-framework/)
 - [TruLens](./sub/trulens/)
