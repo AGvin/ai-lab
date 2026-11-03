@@ -14,6 +14,10 @@ The September 2026 v6.1 release adds Edge Agentic Inference and End-to-End RAG I
 
 Results apply to the tested system, workload, scenario and configuration. The benchmark is separate from vendor hardware, runtimes, models and result tables. MLPerf Endpoints is a distinct benchmark direction; its evolving rules do not rename or replace this suite merely because the projects are related.
 
+## Reference software
+
+The MLCommons [MLPerf Inference Reference Software](../../../software/sub/evaluation-and-observability/sub/evaluation-frameworks/sub/mlcommons-mlperf-inference/) provides executable LoadGen, implementations and submission/compliance tools for this benchmark. This separately cataloged software is not an additional benchmark-suite identity or a certification of any submitted system.
+
 ## Official resources
 
 - [MLPerf Inference datacenter](https://mlcommons.org/benchmarks/inference-datacenter/)
