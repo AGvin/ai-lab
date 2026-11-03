@@ -19,6 +19,7 @@
 - [Tongyi-MAI](./sub/tongyi-mai/)
 - [Tonic.ai](./sub/tonic-ai/)
 - [Topoteretes](./sub/topoteretes/)
+- [Trail of Bits](./sub/trail-of-bits/)
 - [Treeverse, Inc.](./sub/treeverse-inc/)
 - [turbopuffer](./sub/turbopuffer/)
 - [Tyk Technologies](./sub/tyk-technologies/)
