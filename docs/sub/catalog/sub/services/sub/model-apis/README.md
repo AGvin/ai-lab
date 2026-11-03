@@ -9,6 +9,7 @@ Hosted services that provide remote API access to one or more models, model prov
 - [Cartesia Voice API](./sub/cartesia-voice-api/)
 - [Cerebras Inference](./sub/cerebras-inference/)
 - [Cloudflare Workers AI](./sub/cloudflare-workers-ai/)
+- [Deepgram Speech-to-Text API](./sub/deepgram-stt-api/)
 - [DeepInfra](./sub/deepinfra/)
 - [DigitalOcean Inference](./sub/digitalocean-inference/)
 - [ElevenLabs API](./sub/elevenlabs-api/)
