@@ -10,6 +10,7 @@ Canonical producer profiles whose names begin with **B**.
 - [Benn Huang](./sub/benn-huang/)
 - [BentoML](./sub/bentoml/)
 - [Berrie AI Incorporated](./sub/berrie-ai-incorporated/)
+- [BigCode Project](./sub/bigcode-project/)
 - [bitsandbytes Foundation](./sub/bitsandbytes-foundation/)
 - [Black Forest Labs](./sub/black-forest-labs/)
 - [Block](./sub/block/)
