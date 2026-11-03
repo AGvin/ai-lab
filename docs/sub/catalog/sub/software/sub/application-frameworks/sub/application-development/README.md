@@ -8,6 +8,7 @@ Application Development groups frameworks, SDKs, libraries, and common abstracti
 - [FastMCP](./sub/fastmcp/) — Python MCP server/client framework.
 - [Genkit](./sub/genkit/) — Google full-stack AI application framework.
 - [LangChain4j](./sub/langchain4j/) — Java-oriented LLM integration framework.
+- [MCP Toolbox for Databases](./sub/mcp-toolbox-for-databases/) — database-backed MCP server and custom tool framework.
 - [mcp-use](./sub/mcp-use/) — TypeScript and Python framework for MCP servers, clients, agents and apps.
 - [Microsoft.Extensions.AI](./sub/microsoft-extensions-ai/) — .NET AI abstractions and middleware.
 - [Mirascope](./sub/mirascope/) — Python and TypeScript LLM application SDKs.
