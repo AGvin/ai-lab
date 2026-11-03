@@ -1,0 +1,38 @@
+entity:
+  id: catalog/producers/g/generality-labs
+  type: organization
+  name: Generality Labs
+  identity_note: >-
+    Generality Labs is an independent London-based AI safety research and
+    engineering organization founded in 2026 after spinning off from Arcadia
+    Impact. Its first-party materials identify Inspect Evals and the Inspect
+    Evals Register as actively maintained work. Maintenance of Inspect Evals
+    does not mean Generality Labs originally developed Inspect AI or authored
+    every third-party benchmark referenced in the collection.
+  references:
+    - type: official-site
+      source:
+        url: https://generality.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://generality.org/blog/posts/an-update-on-generality-labs/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/UKGovernmentBEIS/inspect_evals
+      purposes:
+        - research
+      authority: official
+      note: >-
+        Inspect Evals repository explicitly names Generality Labs as its
+        current maintainer; the repository name retains its historical origin.
+  relations:
+    - type: maintains
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/inspect-evals
