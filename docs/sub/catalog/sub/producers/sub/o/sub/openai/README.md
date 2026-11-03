@@ -53,6 +53,7 @@ Promptfoo is now part of OpenAI but remains a distinct producer identity for its
 - Produces: [OpenAI Agents SDK](../../../../../software/sub/agent-frameworks/sub/openai-agents-sdk/)
 - Produces: [OpenAI API Platform](../../../../../services/sub/model-apis/sub/openai-api-platform/)
 - Produces: [OpenAI Codex](../../../../../software/sub/agents/sub/hybrid/sub/openai-codex/)
+- Produces: [OpenAI Evals](../../../../../software/sub/evaluation-and-observability/sub/evaluation-frameworks/sub/openai-evals/)
 - Produces: [OpenAI Harmony](../../../../../specifications/sub/formats/sub/openai-harmony/)
 - Produces: [OpenAI Jalapeño Intelligence Processor](../../../../../hardware/sub/openai-jalapeno/)
 - Produces: [OpenAI Skills](../../../../../agent-skills/sub/collections/sub/openai-skills/)
