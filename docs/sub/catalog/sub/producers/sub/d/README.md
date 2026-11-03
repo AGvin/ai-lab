@@ -16,6 +16,7 @@
 - [Diego Rodrigues de Sa e Souza](./sub/diego-rodrigues-de-sa-e-souza/)
 - [Dietrich Gebert](./sub/dietrich-gebert/)
 - [Diffbot](./sub/diffbot/)
+- [DigitalOcean](./sub/digitalocean/)
 - [Dmitry Petrov](./sub/dmitry-petrov/)
 - [Docker](./sub/docker/)
 - [Dome Systems](./sub/dome-systems/)
