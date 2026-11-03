@@ -42,6 +42,8 @@ entity:
     - type: produces
       target: catalog/software/inference-runtimes/distributed-serving/llm-d
     - type: produces
+      target: catalog/software/application-frameworks/application-development/mcp-toolbox-for-databases
+    - type: produces
       target: catalog/services/infrastructure/vertex-ai-agent-engine
     - type: produces
       target: catalog/services/model-apis/vertex-ai-api
