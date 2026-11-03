@@ -9,6 +9,7 @@ Organizations, projects and teams whose canonical producer names begin with S.
 - [Sarvam AI](./sub/sarvam-ai/)
 - [Scale AI](./sub/scale-ai/)
 - [Seldon](./sub/seldon/)
+- [Sentry](./sub/sentry/)
 - [ServiceNow](./sub/servicenow/)
 - [Shanghai Qianhui Technology Co., Ltd.](./sub/shanghai-qianhui-technology-co-ltd/)
 - [Shopify](./sub/shopify/)
