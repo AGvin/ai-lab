@@ -3,6 +3,7 @@
 - [Gabriel Almeida](./sub/gabriel-almeida/)
 - [Galileo Technologies, Inc.](./sub/galileo-technologies-inc/)
 - [Genesis World Project](./sub/genesis-world-project/)
+- [Generality Labs](./sub/generality-labs/)
 - [ggml.ai](./sub/ggml-ai/)
 - [Giskard AI](./sub/giskard-ai/)
 - [GitHub, Inc.](./sub/github-inc/)
