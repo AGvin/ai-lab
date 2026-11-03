@@ -1,0 +1,40 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/stanford-helm-framework
+  type: software
+  name: Stanford HELM Framework
+  aliases:
+    - HELM
+    - Holistic Evaluation of Language Models
+  identity_note: >-
+    Stanford Center for Research on Foundation Models' open-source
+    Apache-2.0 Python evaluation framework for reproducible and
+    multi-metric foundation-model testing. Its maintainers declared
+    maintenance mode effective June 1, 2026. HELM software,
+    individual benchmark/leaderboard datasets and Stanford
+    research organizations have separate identities and lifecycles.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/stanford-crfm/helm
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/stanford-crfm/helm/blob/63754d05db6f874e41a395880fb573890a13e791/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://crfm-helm.readthedocs.io/en/latest/maintenance_mode/
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/stanford-crfm/helm/blob/63754d05db6f874e41a395880fb573890a13e791/pyproject.toml
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/stanford-crfm/helm/blob/63754d05db6f874e41a395880fb573890a13e791/LICENSE
+      purposes: [research]
+      authority: official
