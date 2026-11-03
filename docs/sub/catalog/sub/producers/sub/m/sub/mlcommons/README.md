@@ -13,6 +13,7 @@ Consortium provenance is distinct from the authorship of each reference model or
 - Produces: [MLPerf Edge Agentic Inference](../../../../../datasets/sub/mlperf-edge-agentic-inference/)
 - Produces: [MLPerf End-to-End RAG Inference](../../../../../datasets/sub/mlperf-end-to-end-rag-inference/)
 - Produces: [MLPerf Endpoints v0.7](../../../../../datasets/sub/mlperf-endpoints-v0-7/)
+- Produces: [MLPerf Inference Reference Software](../../../../../software/sub/evaluation-and-observability/sub/evaluation-frameworks/sub/mlcommons-mlperf-inference/)
 - Produces: [MLPerf Inference](../../../../../datasets/sub/mlperf-inference/)
 - Produces: [MLPerf Mobile v6.0](../../../../../datasets/sub/mlperf-mobile-v6-0/)
 - Produces: [MLPerf Storage v3.0](../../../../../datasets/sub/mlperf-storage-v3-0/)
