@@ -1,0 +1,34 @@
+entity:
+  id: catalog/services/model-apis/jina-ai-search-foundation
+  type: service
+  name: Jina Search Foundation API
+  aliases:
+    - Jina AI API
+    - Jina Embeddings and Reranker API
+  identity_note: >-
+    Hosted Jina AI search-foundation interfaces for embeddings, reranking
+    and related document understanding endpoints. Jina's official API
+    reference distinguishes the api.jina.ai model host from separate
+    Reader (r.jina.ai) and Search (s.jina.ai) hosts. The API offering
+    remains associated with Jina AI after Elastic's October 2025
+    acquisition. It is not one model, an Elastic deployment, or a
+    redistributable open-weight software package.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.jina.ai/
+      purposes: [identification, research]
+      authority: official
+    - type: official-site
+      source:
+        url: https://jina.ai/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://jina.ai/legal/
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/j/jina-ai
