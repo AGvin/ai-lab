@@ -14,14 +14,14 @@ The original benchmark release and later [Inspect Evals AgentHarm implementation
 
 The publisher's dataset card labels the license [`other`](https://huggingface.co/datasets/ai-safety-institute/AgentHarm), with a [specific LICENSE](https://huggingface.co/datasets/ai-safety-institute/AgentHarm/blob/69e7a23c331a75d4e438a65233a4f8b459fe95c7/LICENSE): **MIT-style text plus an additional restriction prohibiting purposes other than improving AI safety and security**. This is **not unrestricted MIT**, and standard-MIT licensing on the broader Inspect Evals codebase does not override the dataset's purpose restriction. Review license and access fit before commercial, republished, adapted or other uses.
 
-The original paper and dataset acknowledge **both Gray Swan AI and the UK AI Safety Institute** as developers. The institute's current canonical organization is linked below; that provenance relation does **not** imply sole institute ownership or a fully audited corporate identity for Gray Swan AI. The latter needs its own producer qualification before a separate canonical organization record is introduced.
+The original paper and dataset acknowledge **both Gray Swan AI and the UK AI Safety Institute** as developers. Both organizations now have canonical producer profiles with reciprocal research-provenance links. Their joint contribution does **not** establish either organization's exclusive intellectual-property ownership or override the original dataset license.
 
 **Risk boundary:** The source corpus deliberately contains harmful or offensive scenarios. Do not train on the evaluation prompts, treat its canary as a data-leak warning, or replay misuse instructions against real services. Safety research should use isolated, permissioned, synthetic tool environments, controlled network/file access, test credentials and budget-limited model calls. Never copy public attack examples into operational workflows or assume test logs are safe to share. This documentation neither imports unsafe prompts nor executes the evaluator.
 
 ## Provenance
 
 - Co-developed and published with the [UK AI Security Institute](../../../producers/sub/u/sub/uk-ai-security-institute/) (known as the UK AI Safety Institute during original research).
-- Joint Gray Swan AI research authorship is documented in the original sources; no separate producer organization is accepted in this scoped intake.
+- Jointly developed with [Gray Swan AI](../../../producers/sub/g/sub/gray-swan-ai/), now independently qualified as a producer. This is the same original dataset and does not add another benchmark identity.
 
 ## Original resources
 
