@@ -8,6 +8,7 @@ The materialized set below is curated rather than exhaustive.
 
 ## Dataset profiles
 
+- [AbstentionBench](./sub/abstentionbench/) — uncertainty and abstention across six evaluation scenarios.
 - [AgencyBench](./sub/agencybench/)
 - [AgentIF](./sub/agentif/)
 - [AgentHarm](./sub/agentharm/) — Gray Swan AI / UK AISI 2024 safety evaluation of harmful multi-step tool-using agents.
@@ -18,8 +19,14 @@ The materialized set below is curated rather than exhaustive.
 - [ApprenticeBench](./sub/apprenticebench/)
 - [APPS Coding Challenge Dataset](./sub/apps/) — programming-challenge evaluation with executable tests.
 - [AsgardBench](./sub/asgardbench/)
+- [AssistantBench](./sub/assistantbench/) — realistic long-running web-agent information tasks.
 - [Bias Benchmark for QA (BBQ)](./sub/bbq/) — ambiguous and disambiguated social-bias QA.
 - [BIG-Bench Hard](./sub/big-bench-hard/) — 23 difficult BIG-Bench reasoning tasks and prompt examples.
+- [BIG-Bench Extra Hard (BBEH)](./sub/bbeh/) — harder reasoning successor with full and mini subsets.
+- [BOLD](./sub/bold/) — open-ended text-generation bias prompts.
+- [BoolQ](./sub/boolq/) — natural yes/no question answering.
+- [ChemBench](./sub/chembench/) — chemistry language and multimodal benchmark suite.
+- [ClassEval](./sub/class-eval/) — class-level Python code-generation tasks.
 - [CommonsenseQA](./sub/commonsenseqa/) — commonsense multiple-choice QA questions.
 - [DeepSearchQA](./sub/deepsearchqa/)
 - [DROP](./sub/drop/)
@@ -50,6 +57,7 @@ The materialized set below is curated rather than exhaustive.
 - [ORAgentBench](./sub/oragentbench/)
 - [PaperBench](./sub/paperbench/) — OpenAI's 2025 research-paper replication benchmark (20 ICML 2024 papers; 8,316 rubric criteria).
 - [PRM800K](./sub/prm800k/)
+- [PubMedQA](./sub/pubmedqa/) — biomedical question answering (yes/no/maybe).
 - [Qasper](./sub/qasper/)
 - [RealReplicaBench](./sub/realreplicabench/)
 - [SciAgentArena](./sub/sciagentarena/)

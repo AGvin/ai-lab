@@ -1,0 +1,20 @@
+entity:
+  id: catalog/datasets/boolq
+  type: dataset
+  name: BoolQ
+  aliases:
+    - Boolean Questions
+    - BoolQ Dataset
+  identity_note: >-
+    Google Research original natural yes/no question-answering dataset of paired information-seeking questions, evidence passages and Boolean answer labels, released in 2019. Dataset splits, training scripts, source passage rights and model results are distinct.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/google-research-datasets/boolean-questions
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/google-research-datasets/boolean-questions/blob/90af34107399cc7a446b373dc4ee35b8001da7c2/README.md
+      purposes: [research]
+      authority: official
