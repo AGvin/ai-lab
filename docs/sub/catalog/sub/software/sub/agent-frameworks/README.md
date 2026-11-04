@@ -14,6 +14,7 @@ Frameworks and SDKs used to build, coordinate, and run agentic systems. This cat
 - [Dapr Agents](./sub/dapr-agents/) — Python durable agent workflow framework.
 - [Deep Agents](./sub/deep-agents/)
 - [Google Agent Development Kit (ADK)](./sub/google-adk/) — Google's open-source framework for tool-using and multi-agent applications.
+- [kagent](./sub/kagent/) — Kubernetes-native agent runtime and orchestration framework.
 - [LangChain](./sub/langchain/) — high-level open-source agent framework; LangGraph owns the lower-level orchestration runtime role.
 - [LangGraph](./sub/langgraph/) — low-level stateful orchestration framework and runtime for agent systems.
 - [Letta](./sub/letta/)
