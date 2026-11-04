@@ -1,0 +1,29 @@
+entity:
+  id: catalog/datasets/novelty-bench
+  type: dataset
+  name: "NoveltyBench"
+  aliases:
+    - "Language Model Response Diversity Benchmark"
+  identity_note: >-
+    Benchmark measuring novelty and response utility across ten generated responses to each prompt; distinct from source prompts, judges, outputs and published model rankings.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/novelty-bench/novelty-bench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/novelty-bench/novelty-bench/blob/64a23be6b18ec1dacc298830aab276061b6e143c/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://novelty-bench.github.io/
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/novelty-bench/novelty-bench/blob/64a23be6b18ec1dacc298830aab276061b6e143c/LICENSE
+      purposes: [research]
+      authority: official

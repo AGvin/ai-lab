@@ -17,6 +17,7 @@ The materialized set below is curated rather than exhaustive.
 - [AGIEval](./sub/agieval/) — exam-derived reasoning and qualification tasks (v1.1).
 - [Ai2 Reasoning Challenge (ARC)](./sub/ai2-reasoning-challenge/)
 - [AIR-Bench 2024](./sub/air-bench-2024/) — safety prompts across structured risk categories.
+- [MLCommons AILuminate](./sub/mlcommons-ailuminate-safety-family/) — standardized safety prompt assessment and benchmarking.
 - [AIRS-Bench](./sub/airs-bench/)
 - [ApprenticeBench](./sub/apprenticebench/)
 - [Attempt to Persuade Eval (APE)](./sub/attempt-persuade-eval/) — persuasion attempt evaluation across benign and sensitive topics.
@@ -25,6 +26,7 @@ The materialized set below is curated rather than exhaustive.
 - [AsgardBench](./sub/asgardbench/)
 - [AssistantBench](./sub/assistantbench/) — realistic long-running web-agent information tasks.
 - [Bias Benchmark for QA (BBQ)](./sub/bbq/) — ambiguous and disambiguated social-bias QA.
+- [BIG-bench (original)](./sub/google-big-bench-original/) — broad collaborative language-model capability evaluation.
 - [BIG-Bench Hard](./sub/big-bench-hard/) — 23 difficult BIG-Bench reasoning tasks and prompt examples.
 - [BIG-Bench Extra Hard (BBEH)](./sub/bbeh/) — harder reasoning successor with full and mini subsets.
 - [BigCodeBench](./sub/bigcodebench/) — realistic program synthesis and instruction-following coding tasks.
@@ -45,13 +47,16 @@ The materialized set below is curated rather than exhaustive.
 - [CORE-Bench](./sub/core-bench/) — agent reproducibility of computational research experiments.
 - [CVE-Bench](./sub/cve-bench/) — authorized local web-vulnerability challenge evaluation.
 - [Cybench](./sub/cybench/) — controlled cybersecurity CTF agent tasks and graduated subtasks.
+- [CyberSecEval](./sub/cyberseceval/) — cybersecurity risks and defensive capabilities of language models.
 - [CyberGym](./sub/cybergym/) — isolated cybersecurity agent evaluation tasks.
 - [CyberMetric](./sub/cybermetric/) — cybersecurity knowledge question dataset.
 - [DeepSearchQA](./sub/deepsearchqa/)
+- [DocVQA](./sub/docvqa/) — visual question answering over scanned single-document images.
 - [DROP](./sub/drop/)
 - [DS-1000](./sub/ds-1000/) — data-science code-generation benchmark.
 - [Do-Not-Answer](./sub/do-not-answer/) — safety-refusal instruction evaluation.
 - [GeneBench-Pro](./sub/genebench-pro/)
+- [EVMbench](./sub/openai-evmbench/) — smart-contract auditing, patching and exploit evaluation.
 - [Frontier-CS](./sub/frontier-cs/) — open-ended computer-science research and algorithms benchmark.
 - [GPQA](./sub/gpqa/)
 - [GroundedPlanBench](./sub/groundedplanbench/)
@@ -89,13 +94,16 @@ The materialized set below is curated rather than exhaustive.
 - [MedCalc-Bench](./sub/medcalc-bench/) — medical calculation tasks from clinical-style notes.
 - [MerchantBench](./sub/merchantbench/)
 - [MGSM](./sub/mgsm/) — human-translated multilingual grade-school mathematical reasoning.
+- [MLRC-Bench](./sub/mlrc-bench/) — open-ended ML research competition problem solving by agents.
 - [MLR-Bench](./sub/mlr-bench/) — agent performance on open-ended research proposal and experimentation tasks.
 - [MMIU](./sub/mmiu/) — vision-language reasoning across multiple related images.
 - [MMLU](./sub/mmlu/)
 - [MMMU](./sub/mmmu/)
 - [MonitorBench](./sub/monitorbench/) — chain-of-thought monitorability over multiple reasoning tasks.
 - [MuSR](./sub/musr/) — multi-step narrative and commonsense reasoning.
+- [MuTox](./sub/mutox/) — multilingual toxicity annotations for speech/audio evaluation.
 - [NARCBench](./sub/narcbench/) — detecting multi-agent collusion under distribution shift.
+- [NoveltyBench](./sub/novelty-bench/) — response diversity and utility across repeated text generations.
 - [OpenBookQA](./sub/openbookqa/)
 - [OR-Bench](./sub/or-bench/) — benign-looking-dangerous over-refusal benchmark.
 - [ORAgentBench](./sub/oragentbench/)

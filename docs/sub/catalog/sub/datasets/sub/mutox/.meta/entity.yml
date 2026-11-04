@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/mutox
+  type: dataset
+  name: "MuTox"
+  aliases:
+    - "Multilingual Audio Toxicity Dataset"
+  identity_note: >-
+    Published Meta FAIR MuTox benchmark of annotated speech toxicity across 30 languages in fourteen language families, with separately trained detection models and evaluation setups.
+  references:
+    - type: documentation
+      source:
+        url: https://aclanthology.org/2024.findings-acl.340/
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.meta.com/research/publications/mutox-universal-multilingual-audio-based-toxicity-dataset-and-zero-shot-detector/
+      purposes: [research]
+      authority: official

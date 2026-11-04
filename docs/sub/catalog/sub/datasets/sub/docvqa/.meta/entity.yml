@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/docvqa
+  type: dataset
+  name: "DocVQA"
+  aliases:
+    - "Original Document Visual Question Answering Dataset"
+  identity_note: >-
+    Original 2020 DocVQA Task 1 dataset of roughly 50,000 manually annotated questions across 12,000 document images, distinct from later DocCVQA and multi-page tasks.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/mineshmathew/DocVQA
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/mineshmathew/DocVQA/blob/618dee574c98137da83aac857d7b68934618735c/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://site.docvqa.org/datasets/docvqa
+      purposes: [research]
+      authority: official
