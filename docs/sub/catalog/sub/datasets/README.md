@@ -8,6 +8,7 @@ The materialized set below is curated rather than exhaustive.
 
 ## Dataset profiles
 
+- [Adversarial Humanities Benchmark (AHB)](./sub/ahb/) — refusal robustness against humanities-inspired adversarial reformulations.
 - [AbstentionBench](./sub/abstentionbench/) — uncertainty and abstention across six evaluation scenarios.
 - [AgencyBench](./sub/agencybench/)
 - [AgentIF](./sub/agentif/)
@@ -28,9 +29,11 @@ The materialized set below is curated rather than exhaustive.
 - [BoolQ](./sub/boolq/) — natural yes/no question answering.
 - [BrokenMath](./sub/brokenmath/) — mathematical theorem-proving sycophancy benchmark.
 - [ChemBench](./sub/chembench/) — chemistry language and multimodal benchmark suite.
+- [ChipBench](./sub/chipbench/) — RTL generation, debugging and cross-language reference-model evaluation.
 - [ClassEval](./sub/class-eval/) — class-level Python code-generation tasks.
 - [CharXiv](./sub/charxiv/) — multimodal chart interpretation and reasoning tasks.
 - [CommonsenseQA](./sub/commonsenseqa/) — commonsense multiple-choice QA questions.
+- [ContractBench](./sub/contractbench/) — agent compliance with API artifact validity and integrity contracts.
 - [CoCoNot](./sub/coconot/) — contextual noncompliance and over-refusal benchmark.
 - [ComputeEval](./sub/compute-eval/) — CUDA code-generation correctness and performance challenges.
 - [CVE-Bench](./sub/cve-bench/) — authorized local web-vulnerability challenge evaluation.
@@ -70,16 +73,20 @@ The materialized set below is curated rather than exhaustive.
 - [MerchantBench](./sub/merchantbench/)
 - [MMLU](./sub/mmlu/)
 - [MMMU](./sub/mmmu/)
+- [MonitorBench](./sub/monitorbench/) — chain-of-thought monitorability over multiple reasoning tasks.
 - [MuSR](./sub/musr/) — multi-step narrative and commonsense reasoning.
+- [NARCBench](./sub/narcbench/) — detecting multi-agent collusion under distribution shift.
 - [OpenBookQA](./sub/openbookqa/)
 - [OR-Bench](./sub/or-bench/) — benign-looking-dangerous over-refusal benchmark.
 - [ORAgentBench](./sub/oragentbench/)
 - [PaperBench](./sub/paperbench/) — OpenAI's 2025 research-paper replication benchmark (20 ICML 2024 papers; 8,316 rubric criteria).
 - [PAWS](./sub/paws/) — adversarial paraphrase sentence-pair identification.
+- [PatchEval](./sub/patcheval/) — LLM-generated security patch correctness on isolated CVE cases.
 - [PRM800K](./sub/prm800k/)
 - [PubMedQA](./sub/pubmedqa/) — biomedical question answering (yes/no/maybe).
 - [Qasper](./sub/qasper/)
 - [RealReplicaBench](./sub/realreplicabench/)
+- [SALAD-Bench](./sub/salad-bench/) — hierarchical multi-category LLM safety and refusal evaluation.
 - [SciAgentArena](./sub/sciagentarena/)
 - [SciCode](./sub/scicode/) — scientist-curated code-generation research problems.
 - [SciFact](./sub/scifact/)
@@ -87,6 +94,7 @@ The materialized set below is curated rather than exhaustive.
 - [SimpleQA](./sub/simpleqa/)
 - [SimpleQA Verified](./sub/simpleqa-verified/)
 - [SkillsBench](./sub/skillsbench/)
+- [SPaRC](./sub/sparc/) — grid-pathfinding spatial reasoning puzzles and solution validation.
 - [Spider 2.0](./sub/spider-2-0/)
 - [StereoSet](./sub/stereoset/) — stereotypical-bias evaluation benchmark.
 - [SWE-bench Verified](./sub/swe-bench-verified/)

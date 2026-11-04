@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/narcbench
+  type: dataset
+  name: "NARCBench"
+  aliases:
+    - "Multi-Agent Collusion Detection Benchmark"
+  identity_note: >-
+    Three-tier multi-agent collusion detection benchmark (Core, Transfer, Stego) using scenario and activation data; distinct from its linear probes, model checkpoints and Verdict Decisions follow-up.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/aaronrose227/narcbench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/aaronrose227/narcbench/blob/237fe60739502007693b6455c6c644606ab3bcbb/README.md
+      purposes: [research]
+      authority: official
