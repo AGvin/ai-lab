@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/machiavelli
+  type: dataset
+  name: "MACHIAVELLI"
+  aliases:
+    - "Ethical Trade-offs in Interactive Fiction"
+  identity_note: >-
+    Agent benchmark composed of 30 challenging interactive-fiction games, drawn from a larger human-authored scene/annotation corpus, for studying reward-ethical trade-offs.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/aypan17/machiavelli
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/aypan17/machiavelli/blob/ebb44e197f663603427882c609dbc9d5fb883d63/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/aypan17/machiavelli/blob/ebb44e197f663603427882c609dbc9d5fb883d63/LICENSE
+      purposes: [research]
+      authority: official

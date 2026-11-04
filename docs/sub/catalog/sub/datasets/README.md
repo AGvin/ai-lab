@@ -33,6 +33,7 @@ The materialized set below is curated rather than exhaustive.
 - [BoolQ](./sub/boolq/) — natural yes/no question answering.
 - [BrokenMath](./sub/brokenmath/) — mathematical theorem-proving sycophancy benchmark.
 - [BU Bench V2.1](./sub/browser-use-bench-v2/) — browser-agent task completion on a versioned encrypted web dataset.
+- [Catastrophic Cyber Capabilities Benchmark (3CB)](./sub/threecb/) — controlled cyber-capability challenges for model evaluation.
 - [ChemBench](./sub/chembench/) — chemistry language and multimodal benchmark suite.
 - [ChipBench](./sub/chipbench/) — RTL generation, debugging and cross-language reference-model evaluation.
 - [ClassEval](./sub/class-eval/) — class-level Python code-generation tasks.
@@ -43,6 +44,7 @@ The materialized set below is curated rather than exhaustive.
 - [ComputeEval](./sub/compute-eval/) — CUDA code-generation correctness and performance challenges.
 - [CORE-Bench](./sub/core-bench/) — agent reproducibility of computational research experiments.
 - [CVE-Bench](./sub/cve-bench/) — authorized local web-vulnerability challenge evaluation.
+- [Cybench](./sub/cybench/) — controlled cybersecurity CTF agent tasks and graduated subtasks.
 - [CyberGym](./sub/cybergym/) — isolated cybersecurity agent evaluation tasks.
 - [CyberMetric](./sub/cybermetric/) — cybersecurity knowledge question dataset.
 - [DeepSearchQA](./sub/deepsearchqa/)
@@ -76,6 +78,8 @@ The materialized set below is curated rather than exhaustive.
 - [LongBench v2](./sub/longbench-v2/) — multi-domain reasoning over long documents and structured contexts.
 - [LongMemEval](./sub/longmemeval/)
 - [LongMemEval-V2](./sub/longmemeval-v2/)
+- [MACHIAVELLI](./sub/machiavelli/) — reward-versus-ethics decisions in text adventure agents.
+- [Manager Coercion Benchmark](./sub/manager-coercion-benchmark/) — AI manager coercion escalation and outcome fabrication measurements.
 - [MASK](./sub/mask/) — honesty under pressure, distinguished from factual accuracy.
 - [MATH](./sub/math/)
 - [MATH-500](./sub/math-500/)
@@ -100,6 +104,8 @@ The materialized set below is curated rather than exhaustive.
 - [PatchEval](./sub/patcheval/) — LLM-generated security patch correctness on isolated CVE cases.
 - [PersistBench](./sub/persistbench/) — long-term memory retention, cross-domain leakage and correction behavior.
 - [PIQA](./sub/piqa/) — physical commonsense selection between plausible actions.
+- [PerspectiveGap](./sub/perspective-gap/) — multi-agent prompt-writing and role assignment tasks.
+- [PinchBench](./sub/pinchbench/) — real-world-inspired OpenClaw agent workflow tasks.
 - [PRM800K](./sub/prm800k/)
 - [PubMedQA](./sub/pubmedqa/) — biomedical question answering (yes/no/maybe).
 - [Qasper](./sub/qasper/)
@@ -118,6 +124,7 @@ The materialized set below is curated rather than exhaustive.
 - [SkillsBench](./sub/skillsbench/)
 - [SPaRC](./sub/sparc/) — grid-pathfinding spatial reasoning puzzles and solution validation.
 - [Spider 2.0](./sub/spider-2-0/)
+- [SQuAD](./sub/squad/) — reading-comprehension question answering over passages.
 - [StereoSet](./sub/stereoset/) — stereotypical-bias evaluation benchmark.
 - [StrongREJECT](./sub/strongreject/) — measuring harmful-response refusal under adversarial prompts.
 - [SycoBench-600](./sub/sycobench-600/) — LLM pressure resistance and acceptance of valid corrections.
@@ -134,6 +141,7 @@ The materialized set below is curated rather than exhaustive.
 - [WeaveBench](./sub/weavebench/)
 - [WildClawBench](./sub/wildclawbench/) — end-to-end agent work across browser, code and communication tools.
 - [WinoGrande](./sub/winogrande/) — commonsense pronoun/disambiguation challenge.
+- [WMDP](./sub/wmdp/) — controlled evaluation of hazardous-knowledge retention and unlearning.
 - [WorldSense](./sub/worldsense/) — synthetic language-grounded reasoning and generalization tasks.
 - [WritingBench](./sub/writingbench/) — generative-writing evaluation with critic models.
 - [XSTest](./sub/xstest/) — over-refusal and exaggerated safety behavior testing.

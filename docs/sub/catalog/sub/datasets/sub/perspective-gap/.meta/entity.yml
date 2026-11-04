@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/perspective-gap
+  type: dataset
+  name: "PerspectiveGap"
+  aliases:
+    - "Multi-agent Prompt Composition Benchmark"
+  identity_note: >-
+    Evaluation benchmark for composing prompts and assigning roles in multi-agent systems; data release, scripts, judge/scorer and downstream integrations are separate artifacts.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/WhymustIhaveaname/PerspectiveGap
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/WhymustIhaveaname/PerspectiveGap/blob/274659be9cbbbd4a68215181d29ddd3f80f54340/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/WhymustIhaveaname/PerspectiveGap/blob/274659be9cbbbd4a68215181d29ddd3f80f54340/LICENSE
+      purposes: [research]
+      authority: official

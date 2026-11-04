@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/squad
+  type: dataset
+  name: "SQuAD"
+  aliases:
+    - "Stanford Question Answering Dataset"
+  identity_note: >-
+    Stanford reading-comprehension QA dataset with SQuAD 1.1 answerable spans and SQuAD 2.0 expanded unanswerable questions; official explorer website and dataset release variants are distinct.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/rajpurkar/SQuAD-explorer
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/rajpurkar/SQuAD-explorer/blob/eee5fdbf62f8613a7812b03419e6b29617b74fd1/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/rajpurkar/SQuAD-explorer/blob/eee5fdbf62f8613a7812b03419e6b29617b74fd1/LICENSE
+      purposes: [research]
+      authority: official

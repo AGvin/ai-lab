@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/cybench
+  type: dataset
+  name: "Cybench"
+  aliases:
+    - "Cybersecurity CTF Agent Benchmark"
+  identity_note: >-
+    Security-research benchmark containing 40 professional CTF tasks from four competitions, with task files, guided subtasks, evaluators and agent harness as distinct assets.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/andyzorigin/cybench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/andyzorigin/cybench/blob/ca483c6443f17a20ba7d6bac3d274859a1721e51/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/andyzorigin/cybench/blob/ca483c6443f17a20ba7d6bac3d274859a1721e51/LICENSE
+      purposes: [research]
+      authority: official
