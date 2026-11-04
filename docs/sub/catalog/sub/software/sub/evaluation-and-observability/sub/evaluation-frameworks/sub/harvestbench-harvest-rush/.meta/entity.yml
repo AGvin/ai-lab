@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/harvestbench-harvest-rush
+  type: software
+  name: HarvestBench / Harvest Rush
+  aliases:
+    - HarvestBench
+    - Harvest Rush
+  identity_note: >-
+    Installable Inspect AI evaluation game measuring model decisions about animal stakeholders, obstacles and resource constraints in a simulated farm. The engine and task implementation are software, separate from hosted leaderboard results, scientific paper, model routes and private run logs.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/CompassionML/harvestbench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/CompassionML/harvestbench/blob/62c4382579c1b44375610f900387da4a630d475c/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/CompassionML/harvestbench/blob/62c4382579c1b44375610f900387da4a630d475c/pyproject.toml
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/CompassionML/harvestbench/blob/62c4382579c1b44375610f900387da4a630d475c/LICENSE
+      purposes: [research]
+      authority: official
