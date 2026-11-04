@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/do-not-answer
+  type: dataset
+  name: "Do-Not-Answer"
+  aliases:
+    - "Do Not Answer Safety Dataset"
+    - "LibrAI Do-Not-Answer"
+  identity_note: >-
+    LibrAI research benchmark of harmful instructions that models should appropriately decline; human annotation, harm taxonomy, model-based evaluation and published outputs are separate resources.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/Libr-AI/do-not-answer
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/Libr-AI/do-not-answer/blob/460703484df354958a5e1cd7378a38fcb94a2f3e/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/Libr-AI/do-not-answer/blob/460703484df354958a5e1cd7378a38fcb94a2f3e/LICENSE
+      purposes: [research]
+      authority: official
