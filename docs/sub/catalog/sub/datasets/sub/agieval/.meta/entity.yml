@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/agieval
+  type: dataset
+  name: AGIEval
+  aliases:
+    - AGI Eval
+    - AGIEval v1.1
+  identity_note: >-
+    Human-centric examination-derived foundation-model benchmark dataset. The source exam questions and their rights, original benchmark data, evaluation scripts and model scores remain distinct.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ruixiangcui/AGIEval
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/ruixiangcui/AGIEval/blob/84ab72d94318290aad2e4ec820d535a95a1f7552/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/ruixiangcui/AGIEval/blob/84ab72d94318290aad2e4ec820d535a95a1f7552/LICENSE
+      purposes: [identification, research]
+      authority: official
