@@ -1,0 +1,30 @@
+entity:
+  id: catalog/services/ai-assets/civitai-asset-sharing-platform
+  type: service
+  name: Civitai Asset Sharing Platform
+  aliases:
+    - Civitai
+    - Civitai Model Hub
+  identity_note: >-
+    Civitai's publicly operated community platform for browsing, uploading and sharing image-generation models and related assets. The Apache-2.0 application source is distinct from the operated service and does not license third-party model files, datasets, images or user-contributed content.
+  references:
+    - type: official-site
+      source:
+        url: https://civitai.com/
+      purposes: [identification, research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/civitai/civitai
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/civitai/civitai/blob/e33d090034326331d5a250e38357bed0c3dec004/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/civitai/civitai/blob/e33d090034326331d5a250e38357bed0c3dec004/LICENSE
+      purposes: [research]
+      authority: official
