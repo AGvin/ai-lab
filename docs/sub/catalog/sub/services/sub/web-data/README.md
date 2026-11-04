@@ -10,4 +10,5 @@ Managed browser/session execution platforms remain under infrastructure when rem
 
 - [Exa](./sub/exa/)
 - [Firecrawl](./sub/firecrawl/)
+- [Jina Reader API](./sub/jina-reader-api/) — hosted web/document extraction and search-to-text interfaces.
 - [Tavily](./sub/tavily/)
