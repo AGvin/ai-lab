@@ -32,3 +32,4 @@ Hosted services that provide remote API access to one or more models, model prov
 - [Snowflake Cortex Inference API](./sub/snowflake-cortex-inference-api/)
 - [SpaceXAI API](./sub/spacexai-api/)
 - [Together AI](./sub/together-ai/)
+- [Voyage AI Embeddings API](./sub/voyage-ai-embeddings/) — managed text embeddings for semantic retrieval.
