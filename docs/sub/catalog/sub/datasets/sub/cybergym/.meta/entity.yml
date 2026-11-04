@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/cybergym
+  type: dataset
+  name: CyberGym
+  aliases:
+    - CyberGym Cybersecurity Benchmark
+    - CyberGym Agent Evaluation
+  identity_note: >-
+    Research dataset and local benchmark framework for agent capabilities on vulnerability analysis and controlled proof-of-concept evaluation using large-scale source/patch/binary artifacts. Test suites, binary/server data, Docker environments and agent evaluation logic are distinct resources.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/sunblaze-ucb/cybergym
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/sunblaze-ucb/cybergym/blob/c6fe2027d39471375920b92cf1025e23a99ffda5/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/sunblaze-ucb/cybergym/blob/c6fe2027d39471375920b92cf1025e23a99ffda5/LICENSE
+      purposes: [research]
+      authority: official
