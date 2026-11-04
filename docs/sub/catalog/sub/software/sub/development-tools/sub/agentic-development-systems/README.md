@@ -10,5 +10,6 @@ Installable systems and tools that extend AI coding agents with project workflow
 - [BMad Method](./sub/bmad-method/) — structured AI-assisted software delivery.
 - [Get Shit Done](./sub/get-shit-done/) — spec-driven coding-agent workflow framework.
 - [Google Agents CLI](./sub/google-agents-cli/) — Google agent development CLI and skills.
+- [Gemini API CLI](./sub/gemini-api-cli/) — stateless Go CLI for Gemini API models, media and managed agents.
 - [Google Cloud Data Agent Kit](./sub/google-cloud-data-agent-kit/) — Google Data Cloud agent-development toolkit.
 - [Vercel Skills CLI](./sub/vercel-skills-cli/) — install, find and manage Agent Skills for coding agents.
