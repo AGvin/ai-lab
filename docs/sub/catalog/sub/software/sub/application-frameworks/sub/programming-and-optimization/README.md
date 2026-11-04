@@ -6,3 +6,4 @@ Frameworks that treat prompts, model calls, and language-model pipelines as prog
 
 - [`dspy/`](./sub/dspy/)
 - [`adalflow/`](./sub/adalflow/)
+- [PRISM Search](./sub/prism-search/) — landscape diagnostics and permutation optimization framework.
