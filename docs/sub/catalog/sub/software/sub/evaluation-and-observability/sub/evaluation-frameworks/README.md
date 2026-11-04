@@ -19,6 +19,7 @@ Frameworks and tools for repeatable evaluation of language models, agents, retri
 - [MLPerf Inference Reference Software](./sub/mlcommons-mlperf-inference/)
 - [ModelBench](./sub/modelbench/)
 - [NVIDIA AIPerf](./sub/nvidia-aiperf/)
+- [Needle In A Haystack v2](./sub/needle-in-a-haystack-v2/) — Python runner for long-context retrieval and needle-depth sweeps.
 - [OpenAI Evals](./sub/openai-evals/)
 - [Petri](./sub/petri/)
 - [promptfoo](./sub/promptfoo/)
