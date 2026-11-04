@@ -5,6 +5,8 @@ Frameworks and tools for repeatable evaluation of language models, agents, retri
 ## Child pages
 
 - [AgentLab](./sub/agentlab/)
+- [Agentic Misalignment Research Framework](./sub/agentic-misalignment-research-framework/) — fictional-scenario research experiments on agent behavior.
+- [ArxivRoll](./sub/arxivroll/) — rolling arXiv-derived benchmark construction and evaluation pipeline.
 - [BenchFlow](./sub/benchflow/)
 - [Bloom](./sub/bloom/)
 - [BrowserGym](./sub/browsergym/)
@@ -12,9 +14,12 @@ Frameworks and tools for repeatable evaluation of language models, agents, retri
 - [DeepTeam](./sub/deepteam/)
 - [garak](./sub/garak/)
 - [Giskard OSS](./sub/giskard-oss/)
+- [Hangman Benchmark](./sub/hangman-bench/) — game-play evaluation with oracle decision-quality scoring.
 - [Harbor](./sub/harbor/)
+- [HarvestBench / Harvest Rush](./sub/harvestbench-harvest-rush/) — simulated farm decisions and deterministic model-behavior scoring.
 - [Inspect AI](./sub/inspect-ai/)
 - [Inspect Evals](./sub/inspect-evals/)
+- [Inspect India Evals](./sub/inspect-india-evals/) — India-focused multilingual, safety, fairness and DPI evaluation suite.
 - [Language Model Evaluation Harness](./sub/lm-evaluation-harness/)
 - [MLPerf Inference Reference Software](./sub/mlcommons-mlperf-inference/)
 - [ModelBench](./sub/modelbench/)
