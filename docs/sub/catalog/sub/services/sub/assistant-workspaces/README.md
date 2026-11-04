@@ -8,3 +8,4 @@ Hosted conversational-assistant and workspace products that combine chat with fi
 - [`claude/`](./sub/claude/)
 - [`gemini/`](./sub/gemini/)
 - [`grok/`](./sub/grok/)
+- [Poe Assistant Platform](./sub/poe-assistant-platform/) — hosted multiprovider chat and bot-creator platform.
