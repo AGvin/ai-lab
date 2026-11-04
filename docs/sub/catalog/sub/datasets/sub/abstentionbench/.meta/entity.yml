@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/abstentionbench
+  type: dataset
+  name: AbstentionBench
+  aliases:
+    - Facebook AbstentionBench
+    - Abstention Benchmark
+  identity_note: >-
+    Meta/Facebook Research evaluation suite for whether language models abstain on unanswerable, underspecified, incomplete or stale-context questions. The original benchmark suite spans component datasets and six abstention scenarios; its graders, source datasets and model results remain distinct resources.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/facebookresearch/AbstentionBench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/facebookresearch/AbstentionBench/blob/e29184174c69bc95139b8c33dcca09aacab9442a/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/facebookresearch/AbstentionBench/blob/e29184174c69bc95139b8c33dcca09aacab9442a/LICENSE
+      purposes: [research]
+      authority: official
