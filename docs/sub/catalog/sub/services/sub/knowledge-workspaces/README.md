@@ -7,6 +7,7 @@ General conversational assistants remain under assistant workspaces even when th
 ## Child pages
 
 - [Gemini Notebook](./sub/gemini-notebook/)
+- [Glean Enterprise AI Workspace](./sub/glean-enterprise-ai-workspace/) — permissions-aware enterprise knowledge and assistant service.
 - [Guru](./sub/guru/)
 - [Sana Agents](./sub/sana-agents/)
 - [Tettra](./sub/tettra/)
