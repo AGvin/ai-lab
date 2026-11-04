@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/air-bench-2024
+  type: dataset
+  name: "AIR-Bench 2024"
+  aliases:
+    - "Regulation-Aligned AI Risk Benchmark"
+  identity_note: >-
+    Publisher's 2024 AI safety risk-category dataset, containing 5,694 curated prompts mapped to a four-tier taxonomy with 314 lowest-level categories derived from policy/regulation studies.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/stanford-crfm/air-bench-2024
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/stanford-crfm/air-bench-2024/blob/6d1d4a24d8350e4360e5763463f10233efa4b2a2/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/stanford-crfm/air-bench-2024/blob/6d1d4a24d8350e4360e5763463f10233efa4b2a2/LICENSE
+      purposes: [research]
+      authority: official

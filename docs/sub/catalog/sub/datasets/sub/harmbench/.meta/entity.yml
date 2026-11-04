@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/harmbench
+  type: dataset
+  name: "HarmBench"
+  aliases:
+    - "Automated Red Teaming Safety Benchmark"
+  identity_note: >-
+    Standardized automated red-teaming and robust refusal benchmark with evaluation prompts, attack-generation baselines and classifiers as separate dataset and software components.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/centerforaisafety/HarmBench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/centerforaisafety/HarmBench/blob/8e1604d1171fe8a48d8febecd22f600e462bdcdd/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/centerforaisafety/HarmBench/blob/8e1604d1171fe8a48d8febecd22f600e462bdcdd/LICENSE
+      purposes: [research]
+      authority: official

@@ -16,8 +16,10 @@ The materialized set below is curated rather than exhaustive.
 - [Agents' Last Exam](./sub/agents-last-exam/)
 - [AGIEval](./sub/agieval/) — exam-derived reasoning and qualification tasks (v1.1).
 - [Ai2 Reasoning Challenge (ARC)](./sub/ai2-reasoning-challenge/)
+- [AIR-Bench 2024](./sub/air-bench-2024/) — safety prompts across structured risk categories.
 - [AIRS-Bench](./sub/airs-bench/)
 - [ApprenticeBench](./sub/apprenticebench/)
+- [Attempt to Persuade Eval (APE)](./sub/attempt-persuade-eval/) — persuasion attempt evaluation across benign and sensitive topics.
 - [APPS Coding Challenge Dataset](./sub/apps/) — programming-challenge evaluation with executable tests.
 - [AppWorld](./sub/appworld/) — multi-application tool-use and interactive coding agent benchmark.
 - [AsgardBench](./sub/asgardbench/)
@@ -39,6 +41,7 @@ The materialized set below is curated rather than exhaustive.
 - [ContractBench](./sub/contractbench/) — agent compliance with API artifact validity and integrity contracts.
 - [CoCoNot](./sub/coconot/) — contextual noncompliance and over-refusal benchmark.
 - [ComputeEval](./sub/compute-eval/) — CUDA code-generation correctness and performance challenges.
+- [CORE-Bench](./sub/core-bench/) — agent reproducibility of computational research experiments.
 - [CVE-Bench](./sub/cve-bench/) — authorized local web-vulnerability challenge evaluation.
 - [CyberGym](./sub/cybergym/) — isolated cybersecurity agent evaluation tasks.
 - [CyberMetric](./sub/cybermetric/) — cybersecurity knowledge question dataset.
@@ -52,6 +55,7 @@ The materialized set below is curated rather than exhaustive.
 - [GroundedPlanBench](./sub/groundedplanbench/)
 - [GSM8K](./sub/gsm8k/)
 - [GSM-Symbolic](./sub/gsm-symbolic/) — Apple's symbolic-template GSM8K-derived reasoning evaluation dataset (main, P1, P2; 2024).
+- [HarmBench](./sub/harmbench/) — robust refusal and automated red-teaming evaluation.
 - [HellaSwag](./sub/hellaswag/)
 - [Horizon](./sub/horizon-agent-learning-benchmark/)
 - [HST-Bench](./sub/hst-bench/)
@@ -60,6 +64,7 @@ The materialized set below is curated rather than exhaustive.
 - [IFEval](./sub/ifeval/)
 - [IFEvalCode](./sub/ifevalcode/) — controlled code-generation instructions and evaluations.
 - [InfiniteBench](./sub/infinite-bench/) — long-context reasoning evaluation beyond 100k tokens.
+- [InterCode-CTF](./sub/intercode-ctf/) — isolated capture-the-flag tasks for interactive coding agents.
 - [LAB-Bench](./sub/lab-bench/) — biological scientific-research benchmark tasks.
 - [LINGOLY](./sub/lingoly/) — Linguistics Olympiad reasoning puzzles.
 - [LiveBench](./sub/livebench/)
@@ -93,6 +98,7 @@ The materialized set below is curated rather than exhaustive.
 - [Qasper](./sub/qasper/)
 - [RealReplicaBench](./sub/realreplicabench/)
 - [SALAD-Bench](./sub/salad-bench/) — hierarchical multi-category LLM safety and refusal evaluation.
+- [scBench](./sub/scbench/) — reproducible single-cell RNA-seq analysis tasks for AI agents.
 - [SciAgentArena](./sub/sciagentarena/)
 - [SciCode](./sub/scicode/) — scientist-curated code-generation research problems.
 - [SciFact](./sub/scifact/)
@@ -103,6 +109,7 @@ The materialized set below is curated rather than exhaustive.
 - [SPaRC](./sub/sparc/) — grid-pathfinding spatial reasoning puzzles and solution validation.
 - [Spider 2.0](./sub/spider-2-0/)
 - [StereoSet](./sub/stereoset/) — stereotypical-bias evaluation benchmark.
+- [StrongREJECT](./sub/strongreject/) — measuring harmful-response refusal under adversarial prompts.
 - [SWE-bench Verified](./sub/swe-bench-verified/)
 - [SWE-bench](./sub/swe-bench/)
 - [SWE-Lancer](./sub/swe-lancer/) — software engineering tasks modeled on real freelance assignments.
@@ -113,4 +120,5 @@ The materialized set below is curated rather than exhaustive.
 - [WeaveBench](./sub/weavebench/)
 - [WinoGrande](./sub/winogrande/) — commonsense pronoun/disambiguation challenge.
 - [WritingBench](./sub/writingbench/) — generative-writing evaluation with critic models.
+- [XSTest](./sub/xstest/) — over-refusal and exaggerated safety behavior testing.
 - [ZeroBench](./sub/zerobench/) — difficult visual reasoning questions for multimodal models.
