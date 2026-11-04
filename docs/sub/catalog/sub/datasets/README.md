@@ -64,7 +64,9 @@ The materialized set below is curated rather than exhaustive.
 - [IFEval](./sub/ifeval/)
 - [IFEvalCode](./sub/ifevalcode/) — controlled code-generation instructions and evaluations.
 - [InfiniteBench](./sub/infinite-bench/) — long-context reasoning evaluation beyond 100k tokens.
+- [InstrumentalEval](./sub/instrumentaleval/) — evaluation of instrumental goal pursuit in language models.
 - [InterCode-CTF](./sub/intercode-ctf/) — isolated capture-the-flag tasks for interactive coding agents.
+- [KernelBench](./sub/kernelbench/) — GPU kernel code generation with correctness and speedup evaluation.
 - [LAB-Bench](./sub/lab-bench/) — biological scientific-research benchmark tasks.
 - [LINGOLY](./sub/lingoly/) — Linguistics Olympiad reasoning puzzles.
 - [LiveBench](./sub/livebench/)
@@ -78,9 +80,11 @@ The materialized set below is curated rather than exhaustive.
 - [MATH](./sub/math/)
 - [MATH-500](./sub/math-500/)
 - [MathVista](./sub/mathvista/) — visual mathematical reasoning benchmark.
+- [MBPP](./sub/mbpp/) — entry-level Python program synthesis with unit tests.
 - [MedQA](./sub/medqa/) — multilingual medical-examination question answering.
 - [MedCalc-Bench](./sub/medcalc-bench/) — medical calculation tasks from clinical-style notes.
 - [MerchantBench](./sub/merchantbench/)
+- [MGSM](./sub/mgsm/) — human-translated multilingual grade-school mathematical reasoning.
 - [MLR-Bench](./sub/mlr-bench/) — agent performance on open-ended research proposal and experimentation tasks.
 - [MMIU](./sub/mmiu/) — vision-language reasoning across multiple related images.
 - [MMLU](./sub/mmlu/)
@@ -95,10 +99,12 @@ The materialized set below is curated rather than exhaustive.
 - [PAWS](./sub/paws/) — adversarial paraphrase sentence-pair identification.
 - [PatchEval](./sub/patcheval/) — LLM-generated security patch correctness on isolated CVE cases.
 - [PersistBench](./sub/persistbench/) — long-term memory retention, cross-domain leakage and correction behavior.
+- [PIQA](./sub/piqa/) — physical commonsense selection between plausible actions.
 - [PRM800K](./sub/prm800k/)
 - [PubMedQA](./sub/pubmedqa/) — biomedical question answering (yes/no/maybe).
 - [Qasper](./sub/qasper/)
 - [RealReplicaBench](./sub/realreplicabench/)
+- [SAD](./sub/sad/) — model situational awareness over procedural and question-based tasks.
 - [SALAD-Bench](./sub/salad-bench/) — hierarchical multi-category LLM safety and refusal evaluation.
 - [scBench](./sub/scbench/) — reproducible single-cell RNA-seq analysis tasks for AI agents.
 - [SciAgentArena](./sub/sciagentarena/)
@@ -119,10 +125,12 @@ The materialized set below is curated rather than exhaustive.
 - [SWE-bench](./sub/swe-bench/)
 - [SWE-Lancer](./sub/swe-lancer/) — software engineering tasks modeled on real freelance assignments.
 - [SWE-smith](./sub/swe-smith/) — synthetic software engineering training tasks and generated environments.
+- [SycophancyEval](./sub/sycophancy-eval/) — model agreement bias in free-form text-generation tasks.
 - [TarantuBench v1](./sub/tarantubench/) — isolated synthetic vulnerable web challenge evaluation for agents.
 - [TheAgentCompany](./sub/the-agent-company/) — 175-task simulated workplace agent benchmark (1.0.0).
 - [TruthfulQA](./sub/truthfulqa/)
 - [TUA-Bench](./sub/tua-bench/)
+- [VoxParity](./sub/voxparity/) — voice-agent tool decisions influenced by acoustic cues.
 - [WeaveBench](./sub/weavebench/)
 - [WildClawBench](./sub/wildclawbench/) — end-to-end agent work across browser, code and communication tools.
 - [WinoGrande](./sub/winogrande/) — commonsense pronoun/disambiguation challenge.

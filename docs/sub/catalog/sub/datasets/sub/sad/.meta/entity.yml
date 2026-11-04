@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/sad
+  type: dataset
+  name: "SAD"
+  aliases:
+    - "Situational Awareness Dataset"
+  identity_note: >-
+    Situational Awareness Dataset containing both fixed questions and model-dependent procedural evaluations, with the full benchmark distinct from SAD-lite and SAD-mini subsets.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/LRudL/sad
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/LRudL/sad/blob/dfc5c9831a9bcc5c9a9dbdcaa2955aae983cd1d3/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/LRudL/sad/blob/dfc5c9831a9bcc5c9a9dbdcaa2955aae983cd1d3/LICENSE.txt
+      purposes: [research]
+      authority: official

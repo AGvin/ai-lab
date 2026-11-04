@@ -1,0 +1,29 @@
+entity:
+  id: catalog/datasets/voxparity
+  type: dataset
+  name: "VoxParity"
+  aliases:
+    - "VoxParity Voice Agent Benchmark"
+  identity_note: >-
+    Paired audio and transcript benchmark testing whether voice agents act appropriately on delivery cues beyond unchanged words, with separately distributed development audio, held-out scenarios and typed tool-call grades.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/bhavik-mangla/voxparity-bench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/bhavik-mangla/voxparity-bench/blob/b44deb05896f20824dbba29a386964b8ccaf3115/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/bhavik-mangla/voxparity-bench/blob/b44deb05896f20824dbba29a386964b8ccaf3115/LICENSE
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/bhavik-mangla/voxparity-bench/blob/b44deb05896f20824dbba29a386964b8ccaf3115/DATA_LICENSE
+      purposes: [research]
+      authority: official
