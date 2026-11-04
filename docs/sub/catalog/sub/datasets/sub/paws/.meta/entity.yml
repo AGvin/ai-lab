@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/paws
+  type: dataset
+  name: "PAWS"
+  aliases:
+    - "Paraphrase Adversaries from Word Scrambling"
+    - "PAWS-Wiki / PAWS-QQP"
+  identity_note: >-
+    Google Research adversarial paraphrase-identification benchmark with high lexical-overlap sentence pairs from Wikipedia and Quora question data. PAWS-Wiki and PAWS-QQP are subsets rather than separate canonical identities.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/google-research-datasets/paws
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/google-research-datasets/paws/blob/02b29f3af1143620d1b7f352247e65c0bdd2ec18/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/google-research-datasets/paws/blob/02b29f3af1143620d1b7f352247e65c0bdd2ec18/LICENSE
+      purposes: [research]
+      authority: official

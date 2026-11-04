@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/musr
+  type: dataset
+  name: "MuSR"
+  aliases:
+    - "Multistep Soft Reasoning"
+    - "MuSR Benchmark"
+  identity_note: >-
+    Research benchmark of multi-step soft reasoning over narratives and other commonsense reasoning tasks. Published dataset domains, evaluation code, model backends and paper findings are distinct.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/Zayne-sprague/MuSR
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/Zayne-sprague/MuSR/blob/b1f4d4168a9cfc6760e8b74d728e4516023dfaa5/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/Zayne-sprague/MuSR/blob/b1f4d4168a9cfc6760e8b74d728e4516023dfaa5/LICENSE
+      purposes: [research]
+      authority: official

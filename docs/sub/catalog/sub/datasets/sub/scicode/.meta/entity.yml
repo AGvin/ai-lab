@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/scicode
+  type: dataset
+  name: "SciCode"
+  aliases:
+    - "SciCode Research Coding Benchmark"
+  identity_note: >-
+    Scientist-curated benchmark of scientific research code generation with 80 main problems and 338 linked subproblems across five scientific domains. Data, source solutions, test cases and code-execution tools remain distinct.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/scicode-bench/SciCode
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/LICENSE
+      purposes: [research]
+      authority: official

@@ -50,31 +50,39 @@ The materialized set below is curated rather than exhaustive.
 - [IFEval](./sub/ifeval/)
 - [IFEvalCode](./sub/ifevalcode/) — controlled code-generation instructions and evaluations.
 - [InfiniteBench](./sub/infinite-bench/) — long-context reasoning evaluation beyond 100k tokens.
+- [LAB-Bench](./sub/lab-bench/) — biological scientific-research benchmark tasks.
+- [LINGOLY](./sub/lingoly/) — Linguistics Olympiad reasoning puzzles.
 - [LiveBench](./sub/livebench/)
 - [LiveCodeBench](./sub/livecodebench/)
 - [Long-Horizon Terminal-Bench](./sub/long-horizon-terminal-bench/)
 - [LongMemEval](./sub/longmemeval/)
 - [LongMemEval-V2](./sub/longmemeval-v2/)
+- [MASK](./sub/mask/) — honesty under pressure, distinguished from factual accuracy.
 - [MATH](./sub/math/)
 - [MATH-500](./sub/math-500/)
 - [MathVista](./sub/mathvista/) — visual mathematical reasoning benchmark.
+- [MedQA](./sub/medqa/) — multilingual medical-examination question answering.
 - [MerchantBench](./sub/merchantbench/)
 - [MMLU](./sub/mmlu/)
 - [MMMU](./sub/mmmu/)
+- [MuSR](./sub/musr/) — multi-step narrative and commonsense reasoning.
 - [OpenBookQA](./sub/openbookqa/)
 - [ORAgentBench](./sub/oragentbench/)
 - [PaperBench](./sub/paperbench/) — OpenAI's 2025 research-paper replication benchmark (20 ICML 2024 papers; 8,316 rubric criteria).
+- [PAWS](./sub/paws/) — adversarial paraphrase sentence-pair identification.
 - [PRM800K](./sub/prm800k/)
 - [PubMedQA](./sub/pubmedqa/) — biomedical question answering (yes/no/maybe).
 - [Qasper](./sub/qasper/)
 - [RealReplicaBench](./sub/realreplicabench/)
 - [SciAgentArena](./sub/sciagentarena/)
+- [SciCode](./sub/scicode/) — scientist-curated code-generation research problems.
 - [SciFact](./sub/scifact/)
 - [SentinelBench](./sub/sentinelbench/)
 - [SimpleQA](./sub/simpleqa/)
 - [SimpleQA Verified](./sub/simpleqa-verified/)
 - [SkillsBench](./sub/skillsbench/)
 - [Spider 2.0](./sub/spider-2-0/)
+- [StereoSet](./sub/stereoset/) — stereotypical-bias evaluation benchmark.
 - [SWE-bench Verified](./sub/swe-bench-verified/)
 - [SWE-bench](./sub/swe-bench/)
 - [TheAgentCompany](./sub/the-agent-company/) — 175-task simulated workplace agent benchmark (1.0.0).
