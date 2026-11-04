@@ -4,7 +4,7 @@
 
 ## Benchmark and tooling
 
-The [first-party README](https://github.com/CSJianYang/IFEvalCode/blob/13c3e775b42e061f2f23e4d6740874ec47bebcb4/README.md describes the project's benchmark stored as a JSONL task set and separate `infer_models.py` and `eval_models.py` scripts. These are the dataset's inference/evaluation interfaces; they do not make the project a hosted model provider or a copy of the general instruction-following IFEval benchmark.
+The [first-party README](https://github.com/CSJianYang/IFEvalCode/blob/13c3e775b42e061f2f23e4d6740874ec47bebcb4/README.md) describes the project's benchmark stored as a JSONL task set and separate `infer_models.py` and `eval_models.py` scripts. These are the dataset's inference/evaluation interfaces; they do not make the project a hosted model provider or a copy of the general instruction-following IFEval benchmark.
 
 Reported scores require the precise task snapshot, constraints, prompt, model/version, decoding settings and evaluator code. Even code satisfying a surface instruction constraint may be incorrect or unsafe when executed.
 
