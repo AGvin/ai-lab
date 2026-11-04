@@ -82,6 +82,7 @@ The materialized set below is curated rather than exhaustive.
 - [MedCalc-Bench](./sub/medcalc-bench/) — medical calculation tasks from clinical-style notes.
 - [MerchantBench](./sub/merchantbench/)
 - [MLR-Bench](./sub/mlr-bench/) — agent performance on open-ended research proposal and experimentation tasks.
+- [MMIU](./sub/mmiu/) — vision-language reasoning across multiple related images.
 - [MMLU](./sub/mmlu/)
 - [MMMU](./sub/mmmu/)
 - [MonitorBench](./sub/monitorbench/) — chain-of-thought monitorability over multiple reasoning tasks.
@@ -93,6 +94,7 @@ The materialized set below is curated rather than exhaustive.
 - [PaperBench](./sub/paperbench/) — OpenAI's 2025 research-paper replication benchmark (20 ICML 2024 papers; 8,316 rubric criteria).
 - [PAWS](./sub/paws/) — adversarial paraphrase sentence-pair identification.
 - [PatchEval](./sub/patcheval/) — LLM-generated security patch correctness on isolated CVE cases.
+- [PersistBench](./sub/persistbench/) — long-term memory retention, cross-domain leakage and correction behavior.
 - [PRM800K](./sub/prm800k/)
 - [PubMedQA](./sub/pubmedqa/) — biomedical question answering (yes/no/maybe).
 - [Qasper](./sub/qasper/)
@@ -100,8 +102,10 @@ The materialized set below is curated rather than exhaustive.
 - [SALAD-Bench](./sub/salad-bench/) — hierarchical multi-category LLM safety and refusal evaluation.
 - [scBench](./sub/scbench/) — reproducible single-cell RNA-seq analysis tasks for AI agents.
 - [SciAgentArena](./sub/sciagentarena/)
+- [SciKnowEval](./sub/sciknoweval/) — scientific knowledge comprehension, reasoning and application tasks.
 - [SciCode](./sub/scicode/) — scientist-curated code-generation research problems.
 - [SciFact](./sub/scifact/)
+- [SEvenLLM-Bench](./sub/sevenllm-bench/) — cyber threat intelligence comprehension and task evaluation.
 - [SentinelBench](./sub/sentinelbench/)
 - [SimpleQA](./sub/simpleqa/)
 - [SimpleQA Verified](./sub/simpleqa-verified/)
@@ -110,15 +114,19 @@ The materialized set below is curated rather than exhaustive.
 - [Spider 2.0](./sub/spider-2-0/)
 - [StereoSet](./sub/stereoset/) — stereotypical-bias evaluation benchmark.
 - [StrongREJECT](./sub/strongreject/) — measuring harmful-response refusal under adversarial prompts.
+- [SycoBench-600](./sub/sycobench-600/) — LLM pressure resistance and acceptance of valid corrections.
 - [SWE-bench Verified](./sub/swe-bench-verified/)
 - [SWE-bench](./sub/swe-bench/)
 - [SWE-Lancer](./sub/swe-lancer/) — software engineering tasks modeled on real freelance assignments.
 - [SWE-smith](./sub/swe-smith/) — synthetic software engineering training tasks and generated environments.
+- [TarantuBench v1](./sub/tarantubench/) — isolated synthetic vulnerable web challenge evaluation for agents.
 - [TheAgentCompany](./sub/the-agent-company/) — 175-task simulated workplace agent benchmark (1.0.0).
 - [TruthfulQA](./sub/truthfulqa/)
 - [TUA-Bench](./sub/tua-bench/)
 - [WeaveBench](./sub/weavebench/)
+- [WildClawBench](./sub/wildclawbench/) — end-to-end agent work across browser, code and communication tools.
 - [WinoGrande](./sub/winogrande/) — commonsense pronoun/disambiguation challenge.
+- [WorldSense](./sub/worldsense/) — synthetic language-grounded reasoning and generalization tasks.
 - [WritingBench](./sub/writingbench/) — generative-writing evaluation with critic models.
 - [XSTest](./sub/xstest/) — over-refusal and exaggerated safety behavior testing.
 - [ZeroBench](./sub/zerobench/) — difficult visual reasoning questions for multimodal models.

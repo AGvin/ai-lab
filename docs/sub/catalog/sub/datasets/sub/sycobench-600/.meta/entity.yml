@@ -1,0 +1,29 @@
+entity:
+  id: catalog/datasets/sycobench-600
+  type: dataset
+  name: "SycoBench-600"
+  aliases:
+    - "Correction Selectivity Sycophancy Benchmark"
+  identity_note: >-
+    Dataset of 600 multiple-choice items across eight domains and three difficulty tiers, designed to distinguish inappropriate capitulation from appropriate acceptance of corrections.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/debu-sinha/sycobench-600
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/debu-sinha/sycobench-600/blob/3b2d3680b0a6d456e618206e6281904c87cb49dd/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/debu-sinha/sycobench-600/blob/3b2d3680b0a6d456e618206e6281904c87cb49dd/LICENSE
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/debu-sinha/sycobench-600/blob/3b2d3680b0a6d456e618206e6281904c87cb49dd/DATA_LICENSE
+      purposes: [research]
+      authority: official

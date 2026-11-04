@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/persistbench
+  type: dataset
+  name: "PersistBench"
+  aliases:
+    - "Long-term Assistant Memory Benchmark"
+  identity_note: >-
+    Long-term LLM assistant memory benchmark spanning cross-domain leakage, sycophancy and beneficial memory use, distinct from the runtime judge and Inspect-native evaluation integration.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ivaxi0s/PersistBench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/ivaxi0s/PersistBench/blob/d2ded18be6d15ebb14008d081a44bd03c20670e4/README.md
+      purposes: [research]
+      authority: official
