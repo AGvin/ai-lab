@@ -7,5 +7,6 @@ Applications that combine model interaction with knowledge management, agents, d
 - [`anythingllm/`](./sub/anythingllm/)
 - [`jan/`](./sub/jan/)
 - [`msty/`](./sub/msty/)
+- [Sim AI Workspace](./sub/sim-ai-workspace/) — self-hostable collaborative agent and workflow workspace.
 - [`perplexity-comet/`](./sub/perplexity-comet/)
 - [`big-agi/`](./sub/big-agi/)
