@@ -28,10 +28,16 @@ The materialized set below is curated rather than exhaustive.
 - [ChemBench](./sub/chembench/) — chemistry language and multimodal benchmark suite.
 - [ClassEval](./sub/class-eval/) — class-level Python code-generation tasks.
 - [CommonsenseQA](./sub/commonsenseqa/) — commonsense multiple-choice QA questions.
+- [CoCoNot](./sub/coconot/) — contextual noncompliance and over-refusal benchmark.
+- [ComputeEval](./sub/compute-eval/) — CUDA code-generation correctness and performance challenges.
+- [CVE-Bench](./sub/cve-bench/) — authorized local web-vulnerability challenge evaluation.
+- [CyberGym](./sub/cybergym/) — isolated cybersecurity agent evaluation tasks.
+- [CyberMetric](./sub/cybermetric/) — cybersecurity knowledge question dataset.
 - [DeepSearchQA](./sub/deepsearchqa/)
 - [DROP](./sub/drop/)
 - [DS-1000](./sub/ds-1000/) — data-science code-generation benchmark.
 - [GeneBench-Pro](./sub/genebench-pro/)
+- [Frontier-CS](./sub/frontier-cs/) — open-ended computer-science research and algorithms benchmark.
 - [GPQA](./sub/gpqa/)
 - [GroundedPlanBench](./sub/groundedplanbench/)
 - [GSM8K](./sub/gsm8k/)
@@ -42,6 +48,8 @@ The materialized set below is curated rather than exhaustive.
 - [HumanEval](./sub/humaneval/)
 - [Humanity's Last Exam](./sub/humanitys-last-exam/)
 - [IFEval](./sub/ifeval/)
+- [IFEvalCode](./sub/ifevalcode/) — controlled code-generation instructions and evaluations.
+- [InfiniteBench](./sub/infinite-bench/) — long-context reasoning evaluation beyond 100k tokens.
 - [LiveBench](./sub/livebench/)
 - [LiveCodeBench](./sub/livecodebench/)
 - [Long-Horizon Terminal-Bench](./sub/long-horizon-terminal-bench/)

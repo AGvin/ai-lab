@@ -1,0 +1,20 @@
+entity:
+  id: catalog/datasets/ifevalcode
+  type: dataset
+  name: IFEvalCode
+  aliases:
+    - Controlled Code Generation Benchmark
+    - IFEvalCode Dataset
+  identity_note: >-
+    Research dataset for instruction-following and controlled code generation, with model prompts, task specifications and evaluation outputs distinct from the inference/evaluation scripts and separately downloaded model weights.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/CSJianYang/IFEvalCode
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/CSJianYang/IFEvalCode/blob/13c3e775b42e061f2f23e4d6740874ec47bebcb4/README.md
+      purposes: [research]
+      authority: official
