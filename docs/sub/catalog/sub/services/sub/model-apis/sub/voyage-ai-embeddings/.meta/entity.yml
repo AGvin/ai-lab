@@ -1,0 +1,20 @@
+entity:
+  id: catalog/services/model-apis/voyage-ai-embeddings
+  type: service
+  name: Voyage AI Embeddings API
+  aliases:
+    - Voyage AI Embeddings
+    - Voyage Embeddings API
+  identity_note: >-
+    Voyage AI's provider-operated embedding generation API, distinct from the company, individual Voyage embedding-model identities, provider SDKs, and customer-managed vector stores. Request, retention and pricing policies follow hosted provider terms.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.voyageai.com/reference/embeddings-api
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.voyageai.com/docs/embeddings
+      purposes: [research]
+      authority: official
