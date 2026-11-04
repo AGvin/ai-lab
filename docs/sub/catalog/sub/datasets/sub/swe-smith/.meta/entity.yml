@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/swe-smith
+  type: dataset
+  name: "SWE-smith"
+  aliases:
+    - "SWE-smith Agent Training Tasks"
+  identity_note: >-
+    Synthetic software engineering task-generation framework and related training dataset, distinct from SWE-bench evaluation and SWE-agent weights.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/SWE-bench/SWE-smith
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/LICENSE
+      purposes: [research]
+      authority: official

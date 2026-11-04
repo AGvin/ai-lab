@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/longbench-v2
+  type: dataset
+  name: "LongBench v2"
+  aliases:
+    - "LongBench Second Generation"
+  identity_note: >-
+    Second-generation long-context reasoning benchmark with 503 multiple-choice questions spanning six realistic task categories.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/THUDM/LongBench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/THUDM/LongBench/blob/2e00731f8d0bff23dc4325161044d0ed8af94c1e/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/THUDM/LongBench/blob/2e00731f8d0bff23dc4325161044d0ed8af94c1e/LICENSE
+      purposes: [research]
+      authority: official

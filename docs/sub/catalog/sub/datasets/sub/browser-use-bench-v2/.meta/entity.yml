@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/browser-use-bench-v2
+  type: dataset
+  name: "BU Bench V2.1"
+  aliases:
+    - "Browser Use Benchmark V2"
+  identity_note: >-
+    Encrypted 200-task web-agent benchmark (current V2.1) with weighted findings rubrics, distinct from the earlier 60-task V2 results.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/browser-use/benchmark
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/browser-use/benchmark/blob/77b4df339fe8fc293fb48896cfa1c73dd743af42/README.md
+      purposes: [research]
+      authority: official

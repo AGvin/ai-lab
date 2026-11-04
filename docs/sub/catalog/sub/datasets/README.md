@@ -19,15 +19,18 @@ The materialized set below is curated rather than exhaustive.
 - [AIRS-Bench](./sub/airs-bench/)
 - [ApprenticeBench](./sub/apprenticebench/)
 - [APPS Coding Challenge Dataset](./sub/apps/) — programming-challenge evaluation with executable tests.
+- [AppWorld](./sub/appworld/) — multi-application tool-use and interactive coding agent benchmark.
 - [AsgardBench](./sub/asgardbench/)
 - [AssistantBench](./sub/assistantbench/) — realistic long-running web-agent information tasks.
 - [Bias Benchmark for QA (BBQ)](./sub/bbq/) — ambiguous and disambiguated social-bias QA.
 - [BIG-Bench Hard](./sub/big-bench-hard/) — 23 difficult BIG-Bench reasoning tasks and prompt examples.
 - [BIG-Bench Extra Hard (BBEH)](./sub/bbeh/) — harder reasoning successor with full and mini subsets.
+- [BigCodeBench](./sub/bigcodebench/) — realistic program synthesis and instruction-following coding tasks.
 - [BixBench](./sub/bixbench/) — computational biology multi-step research evaluation.
 - [BOLD](./sub/bold/) — open-ended text-generation bias prompts.
 - [BoolQ](./sub/boolq/) — natural yes/no question answering.
 - [BrokenMath](./sub/brokenmath/) — mathematical theorem-proving sycophancy benchmark.
+- [BU Bench V2.1](./sub/browser-use-bench-v2/) — browser-agent task completion on a versioned encrypted web dataset.
 - [ChemBench](./sub/chembench/) — chemistry language and multimodal benchmark suite.
 - [ChipBench](./sub/chipbench/) — RTL generation, debugging and cross-language reference-model evaluation.
 - [ClassEval](./sub/class-eval/) — class-level Python code-generation tasks.
@@ -61,7 +64,9 @@ The materialized set below is curated rather than exhaustive.
 - [LINGOLY](./sub/lingoly/) — Linguistics Olympiad reasoning puzzles.
 - [LiveBench](./sub/livebench/)
 - [LiveCodeBench](./sub/livecodebench/)
+- [LiveCodeBench Pro](./sub/livecodebench-pro/) — competitive programming generation with local executable judging.
 - [Long-Horizon Terminal-Bench](./sub/long-horizon-terminal-bench/)
+- [LongBench v2](./sub/longbench-v2/) — multi-domain reasoning over long documents and structured contexts.
 - [LongMemEval](./sub/longmemeval/)
 - [LongMemEval-V2](./sub/longmemeval-v2/)
 - [MASK](./sub/mask/) — honesty under pressure, distinguished from factual accuracy.
@@ -71,6 +76,7 @@ The materialized set below is curated rather than exhaustive.
 - [MedQA](./sub/medqa/) — multilingual medical-examination question answering.
 - [MedCalc-Bench](./sub/medcalc-bench/) — medical calculation tasks from clinical-style notes.
 - [MerchantBench](./sub/merchantbench/)
+- [MLR-Bench](./sub/mlr-bench/) — agent performance on open-ended research proposal and experimentation tasks.
 - [MMLU](./sub/mmlu/)
 - [MMMU](./sub/mmmu/)
 - [MonitorBench](./sub/monitorbench/) — chain-of-thought monitorability over multiple reasoning tasks.
@@ -99,6 +105,8 @@ The materialized set below is curated rather than exhaustive.
 - [StereoSet](./sub/stereoset/) — stereotypical-bias evaluation benchmark.
 - [SWE-bench Verified](./sub/swe-bench-verified/)
 - [SWE-bench](./sub/swe-bench/)
+- [SWE-Lancer](./sub/swe-lancer/) — software engineering tasks modeled on real freelance assignments.
+- [SWE-smith](./sub/swe-smith/) — synthetic software engineering training tasks and generated environments.
 - [TheAgentCompany](./sub/the-agent-company/) — 175-task simulated workplace agent benchmark (1.0.0).
 - [TruthfulQA](./sub/truthfulqa/)
 - [TUA-Bench](./sub/tua-bench/)
