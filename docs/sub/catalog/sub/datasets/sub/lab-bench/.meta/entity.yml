@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/lab-bench
+  type: dataset
+  name: "LAB-Bench"
+  aliases:
+    - "Language Agent Biology Benchmark"
+  identity_note: >-
+    Future House biology research benchmark with public and held-out task sets, scientific research questions and a separate Python evaluation harness.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/Future-House/LAB-Bench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/Future-House/LAB-Bench/blob/998a8e0a40cf116c80e1b0e7a805ebb5fb9fa838/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/Future-House/LAB-Bench/blob/998a8e0a40cf116c80e1b0e7a805ebb5fb9fa838/LICENSE
+      purposes: [research]
+      authority: official

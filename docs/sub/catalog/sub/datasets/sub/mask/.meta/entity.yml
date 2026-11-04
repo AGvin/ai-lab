@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/mask
+  type: dataset
+  name: "MASK Benchmark"
+  aliases:
+    - "MASK"
+    - "Model Alignment between Statements and Knowledge"
+  identity_note: >-
+    Model honesty benchmark evaluating whether model statements are consistent with inferred knowledge under pressure to misrepresent facts. Hosted data and evaluation code are separate.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/centerforaisafety/mask
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/centerforaisafety/mask/blob/25e0b1201e6c928ebe69f7c5aad6fa9063a377ea/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/centerforaisafety/mask/blob/25e0b1201e6c928ebe69f7c5aad6fa9063a377ea/LICENSE
+      purposes: [research]
+      authority: official
