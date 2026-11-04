@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/bbq
+  type: dataset
+  name: Bias Benchmark for QA (BBQ)
+  aliases:
+    - BBQ
+    - Bias Benchmark for Question Answering
+  identity_note: >-
+    Hand-built QA dataset for measuring social bias in ambiguous and disambiguated contexts. It contains potentially harmful stereotypes for evaluation, not endorsement or an instruction corpus.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/nyu-mll/BBQ
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/nyu-mll/BBQ/blob/bea11bd97d79217245b5871acd247b9d6eb24598/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/nyu-mll/BBQ/blob/bea11bd97d79217245b5871acd247b9d6eb24598/LICENSE
+      purposes: [identification, research]
+      authority: official

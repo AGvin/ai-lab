@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/mathvista
+  type: dataset
+  name: MathVista
+  aliases:
+    - MathVista Visual Math Benchmark
+  identity_note: >-
+    Visual mathematical reasoning benchmark spanning chart, diagram, image and spatially grounded question formats. The test corpus and source imagery are distinct from benchmark scripts, leaderboard scores and third-party visual datasets.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/lupantech/MathVista
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/lupantech/MathVista/blob/5f6b4deca69ecd1b8a1a4f338cee085e50524e4b/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/lupantech/MathVista/blob/5f6b4deca69ecd1b8a1a4f338cee085e50524e4b/LICENSE
+      purposes: [identification, research]
+      authority: official

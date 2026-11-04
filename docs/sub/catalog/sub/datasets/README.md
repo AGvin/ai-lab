@@ -12,12 +12,18 @@ The materialized set below is curated rather than exhaustive.
 - [AgentIF](./sub/agentif/)
 - [AgentHarm](./sub/agentharm/) — Gray Swan AI / UK AISI 2024 safety evaluation of harmful multi-step tool-using agents.
 - [Agents' Last Exam](./sub/agents-last-exam/)
+- [AGIEval](./sub/agieval/) — exam-derived reasoning and qualification tasks (v1.1).
 - [Ai2 Reasoning Challenge (ARC)](./sub/ai2-reasoning-challenge/)
 - [AIRS-Bench](./sub/airs-bench/)
 - [ApprenticeBench](./sub/apprenticebench/)
+- [APPS Coding Challenge Dataset](./sub/apps/) — programming-challenge evaluation with executable tests.
 - [AsgardBench](./sub/asgardbench/)
+- [Bias Benchmark for QA (BBQ)](./sub/bbq/) — ambiguous and disambiguated social-bias QA.
+- [BIG-Bench Hard](./sub/big-bench-hard/) — 23 difficult BIG-Bench reasoning tasks and prompt examples.
+- [CommonsenseQA](./sub/commonsenseqa/) — commonsense multiple-choice QA questions.
 - [DeepSearchQA](./sub/deepsearchqa/)
 - [DROP](./sub/drop/)
+- [DS-1000](./sub/ds-1000/) — data-science code-generation benchmark.
 - [GeneBench-Pro](./sub/genebench-pro/)
 - [GPQA](./sub/gpqa/)
 - [GroundedPlanBench](./sub/groundedplanbench/)
@@ -36,6 +42,7 @@ The materialized set below is curated rather than exhaustive.
 - [LongMemEval-V2](./sub/longmemeval-v2/)
 - [MATH](./sub/math/)
 - [MATH-500](./sub/math-500/)
+- [MathVista](./sub/mathvista/) — visual mathematical reasoning benchmark.
 - [MerchantBench](./sub/merchantbench/)
 - [MMLU](./sub/mmlu/)
 - [MMMU](./sub/mmmu/)
@@ -58,3 +65,4 @@ The materialized set below is curated rather than exhaustive.
 - [TruthfulQA](./sub/truthfulqa/)
 - [TUA-Bench](./sub/tua-bench/)
 - [WeaveBench](./sub/weavebench/)
+- [WinoGrande](./sub/winogrande/) — commonsense pronoun/disambiguation challenge.
