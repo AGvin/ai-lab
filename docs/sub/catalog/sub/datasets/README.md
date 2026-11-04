@@ -23,10 +23,13 @@ The materialized set below is curated rather than exhaustive.
 - [Bias Benchmark for QA (BBQ)](./sub/bbq/) — ambiguous and disambiguated social-bias QA.
 - [BIG-Bench Hard](./sub/big-bench-hard/) — 23 difficult BIG-Bench reasoning tasks and prompt examples.
 - [BIG-Bench Extra Hard (BBEH)](./sub/bbeh/) — harder reasoning successor with full and mini subsets.
+- [BixBench](./sub/bixbench/) — computational biology multi-step research evaluation.
 - [BOLD](./sub/bold/) — open-ended text-generation bias prompts.
 - [BoolQ](./sub/boolq/) — natural yes/no question answering.
+- [BrokenMath](./sub/brokenmath/) — mathematical theorem-proving sycophancy benchmark.
 - [ChemBench](./sub/chembench/) — chemistry language and multimodal benchmark suite.
 - [ClassEval](./sub/class-eval/) — class-level Python code-generation tasks.
+- [CharXiv](./sub/charxiv/) — multimodal chart interpretation and reasoning tasks.
 - [CommonsenseQA](./sub/commonsenseqa/) — commonsense multiple-choice QA questions.
 - [CoCoNot](./sub/coconot/) — contextual noncompliance and over-refusal benchmark.
 - [ComputeEval](./sub/compute-eval/) — CUDA code-generation correctness and performance challenges.
@@ -36,6 +39,7 @@ The materialized set below is curated rather than exhaustive.
 - [DeepSearchQA](./sub/deepsearchqa/)
 - [DROP](./sub/drop/)
 - [DS-1000](./sub/ds-1000/) — data-science code-generation benchmark.
+- [Do-Not-Answer](./sub/do-not-answer/) — safety-refusal instruction evaluation.
 - [GeneBench-Pro](./sub/genebench-pro/)
 - [Frontier-CS](./sub/frontier-cs/) — open-ended computer-science research and algorithms benchmark.
 - [GPQA](./sub/gpqa/)
@@ -62,11 +66,13 @@ The materialized set below is curated rather than exhaustive.
 - [MATH-500](./sub/math-500/)
 - [MathVista](./sub/mathvista/) — visual mathematical reasoning benchmark.
 - [MedQA](./sub/medqa/) — multilingual medical-examination question answering.
+- [MedCalc-Bench](./sub/medcalc-bench/) — medical calculation tasks from clinical-style notes.
 - [MerchantBench](./sub/merchantbench/)
 - [MMLU](./sub/mmlu/)
 - [MMMU](./sub/mmmu/)
 - [MuSR](./sub/musr/) — multi-step narrative and commonsense reasoning.
 - [OpenBookQA](./sub/openbookqa/)
+- [OR-Bench](./sub/or-bench/) — benign-looking-dangerous over-refusal benchmark.
 - [ORAgentBench](./sub/oragentbench/)
 - [PaperBench](./sub/paperbench/) — OpenAI's 2025 research-paper replication benchmark (20 ICML 2024 papers; 8,316 rubric criteria).
 - [PAWS](./sub/paws/) — adversarial paraphrase sentence-pair identification.
@@ -90,3 +96,5 @@ The materialized set below is curated rather than exhaustive.
 - [TUA-Bench](./sub/tua-bench/)
 - [WeaveBench](./sub/weavebench/)
 - [WinoGrande](./sub/winogrande/) — commonsense pronoun/disambiguation challenge.
+- [WritingBench](./sub/writingbench/) — generative-writing evaluation with critic models.
+- [ZeroBench](./sub/zerobench/) — difficult visual reasoning questions for multimodal models.
