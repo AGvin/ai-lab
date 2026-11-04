@@ -1,0 +1,25 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/arxivroll
+  type: software
+  name: ArxivRoll
+  aliases:
+    - ArxivRollBench
+    - ArxivRoll Benchmark Pipeline
+  identity_note: >-
+    Research codebase for rolling arXiv-derived sequencing/cloze/prediction benchmark construction, model evaluation and temporal contamination analysis. The software pipeline is separate from released benchmark rounds, underlying arXiv papers, models and the independent evaluation harness fork.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/liangzid/ArxivRoll
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/liangzid/ArxivRoll/blob/709b0c5738b1710a4ac6988d70b32ffb1d21458b/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/liangzid/ArxivRoll/blob/709b0c5738b1710a4ac6988d70b32ffb1d21458b/pyproject.toml
+      purposes: [research]
+      authority: official
