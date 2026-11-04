@@ -12,5 +12,6 @@ Memory-first services, general databases that merely expose vector search, hoste
 - [Qdrant Managed Cloud](./sub/qdrant-managed-cloud/)
 - [Turbopuffer](./sub/turbopuffer/)
 - [Vespa Cloud](./sub/vespa-cloud/)
+- [Upstash Vector](./sub/upstash-vector/) — managed serverless vector-index and similarity search service.
 - [Weaviate Cloud](./sub/weaviate-cloud/)
 - [Zilliz Cloud](./sub/zilliz-cloud/)
