@@ -19,3 +19,7 @@ The company's model research, consumer applications, and developer API are disti
 ## H3 model family
 
 - [MiniMax H3](../../../../../models/sub/minimax/sub/h3/) — released multi-checkpoint audiovisual system with custom-license and component-release boundaries.
+
+## Music generation
+
+- [MiniMax Music 3](../../../../../models/sub/minimax/sub/music-3/) — released composite music model; custom model terms remain distinct from upstream-code licenses.

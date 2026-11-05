@@ -11,3 +11,5 @@
 ## Validation
 
 - The page remains model-domain navigation/context rather than a duplicate company profile.
+
+- Link MiniMax Music 3 independently of MiniMax M and H3; preserve its original model/license identity.
