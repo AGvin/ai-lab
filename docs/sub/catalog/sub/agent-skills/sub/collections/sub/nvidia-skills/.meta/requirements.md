@@ -24,3 +24,9 @@
 - Runtime permissions and human-review constraints are not weakened or generalized beyond the upstream skill.
 - No local standalone Skill Card Generator catalog node is linked.
 - The page contains no temporary RC summary wording.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
+- Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
+- Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.

@@ -1,5 +1,7 @@
 # Ponytail
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Publisher attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 Ponytail is Dietrich Gebert's coordinated Agent Skill collection for minimizing unnecessary implementation complexity while preserving required correctness and safety boundaries.
 
 ## Collection boundary
@@ -15,6 +17,12 @@ Upstream benchmark results remain producer-reported evidence. The 2026-06-18 age
 ## Relations
 
 - Produced by [Dietrich Gebert](../../../../../producers/sub/d/sub/dietrich-gebert/).
+
+## Source interpretation
+
+Dietrich Gebert publishes the MIT-licensed Ponytail collection for reducing unnecessary implementation complexity while retaining validation, security and accessibility. Benchmark improvements are publisher reports, not reproduced evidence. Main mode and one-shot review/audit commands remain different; current commands and integrations are revision-specific.
+
+[Reviewed original README](https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md). Licensing is scoped to the inspected distribution; no skill or script was installed or executed. This is not a full collection freshness audit.
 
 ## Official resources
 

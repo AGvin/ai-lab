@@ -13,3 +13,9 @@
 
 - The collection is not conflated with Microsoft Agent Framework, Copilot Studio, Foundry, VS Code, or the MicrosoftDocs Azure Agent Skills collection.
 - Producer provenance resolves to Microsoft.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
+- Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
+- Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.

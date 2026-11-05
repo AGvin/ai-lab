@@ -16,3 +16,9 @@
 - Exactly one skill-collection node represents this upstream collection; individual skills and non-skill asset classes are not duplicated as collections.
 - `produced-by` resolves to GitHub, Inc. as collection maintainer, with a matching `produces` relation, not a claim that GitHub authored each community contribution.
 - Official repository and Agent Skills documentation links resolve; runtime counts and license/CLI compatibility remain freshness-sensitive.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
+- Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
+- Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.

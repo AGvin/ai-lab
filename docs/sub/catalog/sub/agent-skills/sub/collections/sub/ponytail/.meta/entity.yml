@@ -2,6 +2,8 @@ entity:
   id: catalog/agent-skills/collections/ponytail
   type: skill-collection
   name: Ponytail
+  identity_note: >-
+    Dietrich Gebert publishes the MIT-licensed Ponytail collection for reducing unnecessary implementation complexity while retaining validation, security and accessibility. Benchmark improvements are publisher reports, not reproduced evidence. Main mode and one-shot review/audit commands remain different; current commands and integrations are revision-specific.
   references:
     - type: repository
       source:
@@ -24,6 +26,16 @@ entity:
         - research
       authority: official
       note: Upstream agentic benchmark and limitations; treat its results as producer-reported evidence rather than independent evaluation.
+    - type: documentation
+      source:
+        url: https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/LICENSE
+      purposes: [identification, research]
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/d/dietrich-gebert

@@ -1,5 +1,7 @@
 # Wan Agent Skills
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Publisher attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 Wan Agent Skills is Wan Team's official repository-backed collection of Agent Skills for Wan and Alibaba Cloud Model Studio generation workflows.
 
 ## Collection and remote processing
@@ -11,6 +13,12 @@ The skills call remote Model Studio APIs using configured account credentials an
 ## Relations
 
 - Produced by: [Wan Team](../../../../../producers/sub/w/sub/wan-team/)
+
+## Source interpretation
+
+Wan Team publishes Apache-2.0 instruction and script packages for Model Studio image generation/editing and slide workflows. These use remote APIs and may upload local media through OSS helpers; install does not imply local-only processing. Model licenses, account eligibility, API billing and rights in input/output content are separate.
+
+[Reviewed original README](https://github.com/Wan-Video/Wan-skills/blob/3e92371e23b8d43bae0316ae2c87e496675ceb9d/README.md). Licensing is scoped to the inspected distribution; no skill or script was installed or executed. This is not a full collection freshness audit.
 
 ## Official resources
 

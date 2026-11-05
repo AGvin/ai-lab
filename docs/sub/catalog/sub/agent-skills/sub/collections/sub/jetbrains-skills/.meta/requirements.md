@@ -15,3 +15,9 @@
 - The current collection/release inventory and install compatibility are source-backed rather than assumed permanent.
 - Bundled skill directories are not duplicated as canonical peers merely for enumeration.
 - The inverse `produces` relation matches the collection's `produced-by` relation.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
+- Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
+- Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.

@@ -1,5 +1,7 @@
 # Awesome GitHub Copilot
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Publisher attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 Awesome GitHub Copilot is a GitHub-organization-maintained, community-contributed collection of custom agents, instructions, Agent Skills, plugins and other Copilot customizations. This catalog entry covers its **Agent Skills collection**, rather than treating every bundled skill or other asset as a separate canonical collection.
 
 ## Collection and trust boundary
@@ -11,6 +13,12 @@ GitHub maintains and distributes the repository, but its contents are community-
 ## Relations
 
 - Produced/maintained by: [GitHub, Inc.](../../../../../producers/sub/g/sub/github-inc/)
+
+## Source interpretation
+
+GitHub maintains this community-contributed customization repository; the skills subset is one collection, while agents, instructions, hooks and plugins are other asset classes. The repository license is MIT; community authorship, dependencies and trademark conditions remain separate. Inspect selected scripts and tool permissions before installation.
+
+[Reviewed original README](https://github.com/github/awesome-copilot/blob/96543145e9cb97711020b57b9d88f968062c4fc7/README.md). Licensing is scoped to the inspected distribution; no skill or script was installed or executed. This is not a full collection freshness audit.
 
 ## Official resources
 

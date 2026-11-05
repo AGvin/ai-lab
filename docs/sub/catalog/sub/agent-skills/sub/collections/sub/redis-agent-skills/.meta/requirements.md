@@ -31,3 +31,9 @@ Review the instructions and database actions before enabling them. A skill canno
 - Render every non-hidden current-entity relation in its semantic group, ordered by explicit order, canonical target display name and target ID. Preserve source/contributor, organizational and product distinctions.
 - Include the official resources from canonical references as readable links. Navigation to a related catalog entry must resolve to its reader, not to metadata.
 - Keep changing version, plan, availability and policy details qualified by the cited source; no general offline, license or privacy guarantee follows from producer attribution.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
+- Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
+- Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.

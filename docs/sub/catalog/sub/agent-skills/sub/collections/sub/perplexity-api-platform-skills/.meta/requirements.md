@@ -23,3 +23,9 @@
 - Render every visible current relation using canonical target names, explicit order first and alphabetical order within each relation group. Keep metadata paths out of reader navigation.
 - Recheck account eligibility, exact artifact access, versions and terms before deployment. This source review does not certify runtime performance.
 - Reviewed sources: <https://github.com/perplexityai/api-platform-developers>, <https://docs.perplexity.ai/docs/search/quickstart>.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
+- Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
+- Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.

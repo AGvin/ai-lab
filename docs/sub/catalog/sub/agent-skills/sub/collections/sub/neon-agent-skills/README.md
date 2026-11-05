@@ -1,5 +1,7 @@
 # Neon Agent Skills
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Publisher attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 ## Relations
 
 - Produced by: [Neon](../../../../../producers/sub/n/sub/neon/)
@@ -19,6 +21,12 @@ The Neon MCP server is an integration that can accompany the skills. A separatel
 Installing instructions does not authenticate a database session or grant authority to change data, provision infrastructure, deploy code, or use credentials. Actual operations depend on the agent client, configured tools, account permissions, and runtime behavior. Review the underlying service's data and access conditions for the chosen workflow.
 
 Skill names, client support, plugin declarations, Neon/Databricks product branding, and service features change. Follow the current upstream inventory and [Neon documentation](https://neon.com/docs/ai/agent-skills) for supported installation and usage; collection publication alone does not validate a specific client or deployment.
+
+## Source interpretation
+
+Neon's Apache-2.0 repository bundles instruction content and client integrations for Lakebase Postgres and backend workflows. Current guidance merges the former branching and egress skills into neon-postgres and links an independently maintained agent-platforms companion. Skills, MCP authentication and cloud resources remain distinct; verify the selected database and access scope.
+
+[Reviewed original README](https://github.com/neondatabase/agent-skills/blob/65ee2bf7427b358e6fe1989d214065692bd01205/README.md). Licensing is scoped to the inspected distribution; no skill or script was installed or executed. This is not a full collection freshness audit.
 
 ## Official resources
 

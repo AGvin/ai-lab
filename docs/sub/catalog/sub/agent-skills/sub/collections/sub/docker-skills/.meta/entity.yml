@@ -2,6 +2,8 @@ entity:
   id: catalog/agent-skills/collections/docker-skills
   type: skill-collection
   name: Docker Skills
+  identity_note: >-
+    Docker-authored portable instruction directories cover container build, Compose and operational workflows. Apache-2.0 covers the repository; CLI/Engine, Agent/Sandboxes and connected registries retain separate runtime and service boundaries. Pin an inspected release, check client tooling and review image/build scripts before operations that alter containers or volumes.
   references:
     - type: repository
       source:
@@ -15,6 +17,16 @@ entity:
         url: https://docs.docker.com/ai/skills/
       purposes:
         - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/docker/skills/blob/9f04a05d5fcdbfac0f6088bc711e930a75896482/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/docker/skills/blob/9f04a05d5fcdbfac0f6088bc711e930a75896482/LICENSE
+      purposes: [identification, research]
       authority: official
   relations:
     - type: produced-by

@@ -2,6 +2,8 @@ entity:
   id: catalog/agent-skills/collections/anthropic-skills
   type: skill-collection
   name: Anthropic Skills
+  identity_note: >-
+    Anthropic's public collection contains illustrative skills and service-governed document implementations. The four document LICENSE.txt files use Anthropic agreement terms with additional restrictions on extraction, copying, derivative works and redistribution; they are not Apache-2.0 examples. Check the selected path and applicable agreement. Examples and hosted Claude behavior can differ.
   references:
     - type: repository
       source:
@@ -9,6 +11,31 @@ entity:
       purposes:
         - identification
         - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/anthropics/skills/blob/ca45fc496a3436251f191354091d557da31c15b5/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/anthropics/skills/blob/ca45fc496a3436251f191354091d557da31c15b5/skills/docx/LICENSE.txt
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/anthropics/skills/blob/ca45fc496a3436251f191354091d557da31c15b5/skills/pdf/LICENSE.txt
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/anthropics/skills/blob/ca45fc496a3436251f191354091d557da31c15b5/skills/pptx/LICENSE.txt
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/anthropics/skills/blob/ca45fc496a3436251f191354091d557da31c15b5/skills/xlsx/LICENSE.txt
+      purposes: [identification, research]
       authority: official
   relations:
     - type: produced-by

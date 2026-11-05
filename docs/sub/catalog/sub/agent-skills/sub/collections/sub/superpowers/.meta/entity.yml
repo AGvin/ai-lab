@@ -2,6 +2,8 @@ entity:
   id: catalog/agent-skills/collections/superpowers
   type: skill-collection
   name: Superpowers
+  identity_note: >-
+    Prime Radiant's MIT-licensed composable development methodology includes bootstrap and harness-specific integrations. The optional visual companion loads a remote logo carrying the collection version for usage telemetry; upstream documents telemetry opt-outs. Skills do not bypass repository policy, and methodology publication does not verify a project's tests or runtime.
   references:
     - type: repository
       source:
@@ -9,6 +11,16 @@ entity:
       purposes:
         - identification
         - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/LICENSE
+      purposes: [identification, research]
       authority: official
   relations:
     - type: produced-by

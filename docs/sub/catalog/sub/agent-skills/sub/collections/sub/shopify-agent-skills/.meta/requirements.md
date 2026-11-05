@@ -19,3 +19,9 @@
 - No individual generated skill folder or Shopify API is duplicated as a separate collection solely for enumeration.
 - Current client support and runtime security are verified separately from a package's claimed portability.
 - The `produced-by` relation is inverted by producer `produces`.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
+- Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
+- Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.

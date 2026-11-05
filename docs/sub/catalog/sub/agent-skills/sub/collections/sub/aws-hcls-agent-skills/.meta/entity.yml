@@ -4,6 +4,8 @@ entity:
   name: AWS HCLS Agent Skills
   aliases:
     - HCLS Agent Skills
+  identity_note: >-
+    AWS Labs publishes healthcare and life-sciences instruction and pipeline guidance under MIT-0. Skill/domain counts and harness support are mutable. Repository evaluation figures are publisher-reported and were not reproduced. These demonstrations do not establish clinical suitability; keep sensitive health data access and scientific output review separate.
   references:
     - type: repository
       source:
@@ -18,6 +20,16 @@ entity:
       purposes:
         - identification
         - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/awslabs/hcls-agent-skills/blob/4603541c396cdd845dbae554800a65132d12bb63/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/awslabs/hcls-agent-skills/blob/4603541c396cdd845dbae554800a65132d12bb63/LICENSE
+      purposes: [identification, research]
       authority: official
   relations:
     - type: produced-by

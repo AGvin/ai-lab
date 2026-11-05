@@ -20,3 +20,9 @@
 - Client-specific plugin/MCP packaging and the collection's individual SKILL.md files are not duplicated as separate canonical products.
 - Current compatibility, version and feature statements derive from first-party release documentation.
 - The producer's inverse relation matches the collection identity.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
+- Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
+- Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.

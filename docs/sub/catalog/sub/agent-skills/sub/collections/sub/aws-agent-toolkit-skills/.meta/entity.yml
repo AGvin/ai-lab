@@ -4,6 +4,8 @@ entity:
   name: Agent Toolkit for AWS Skills
   aliases:
     - AWS Agent Skills
+  identity_note: >-
+    The AWS toolkit's skill collection is distinct from its MCP server, client plugins, rules files and cloud services. The repository license is Apache-2.0. Public documentation search and discovery do not require an AWS account; API operations and scripts require configured AWS credentials and separate scoped authorization.
   references:
     - type: repository
       source:
@@ -17,6 +19,16 @@ entity:
         url: https://github.com/aws/agent-toolkit-for-aws/blob/main/skills/README.md
       purposes:
         - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/aws/agent-toolkit-for-aws/blob/24865b67ffc305fc4e05c4097bc573d7a83037ca/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/aws/agent-toolkit-for-aws/blob/24865b67ffc305fc4e05c4097bc573d7a83037ca/LICENSE
+      purposes: [identification, research]
       authority: official
   relations:
     - type: produced-by

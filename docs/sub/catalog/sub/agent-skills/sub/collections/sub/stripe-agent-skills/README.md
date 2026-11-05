@@ -1,5 +1,7 @@
 # Stripe Agent Skills
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Publisher attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 Stripe Agent Skills is Stripe’s first-party collection of reusable instructions for agents building Stripe integrations. Skills supply development guidance; they remain distinct from the payment API, Stripe AI SDKs, token metering, remote MCP service and provider-specific plugin packages.
 
 ## Distribution and updates
@@ -13,6 +15,12 @@ The repository identifies its source license as MIT. Access to Stripe account da
 ## Relations
 
 - Produced by: [Stripe](../../../../../producers/sub/s/sub/stripe/)
+
+## Source interpretation
+
+Stripe's MIT repository still provides agent skills, while its legacy agent-toolkit, MCP package, AI SDK and token-meter packages are explicitly deprecated without further security updates. Skills remain separate from hosted MCP and payment APIs. Use current integration documentation and authorize test/live financial operations independently.
+
+[Reviewed original README](https://github.com/stripe/ai/blob/7882018f33773950265a9613d12e963853cfb526/README.md). Licensing is scoped to the inspected distribution; no skill or script was installed or executed. This is not a full collection freshness audit.
 
 ## Official resources
 

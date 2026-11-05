@@ -4,6 +4,8 @@ entity:
   name: Google Agent Skills
   aliases:
     - Google Skills
+  identity_note: >-
+    Google's Apache-2.0 collection covers Google product and Cloud workflows. Its index includes entries explicitly labeled preview and links additional independently maintained skill repositories; collection publication does not make every contained API generally available or every linked repository part of this distribution. Cloud IAM, billing and client prerequisites remain external.
   references:
     - type: repository
       source:
@@ -11,6 +13,16 @@ entity:
       purposes:
         - identification
         - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/google/skills/blob/cd6fde0b299b34bbad05f64ad1ed5bd2ed05e634/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/google/skills/blob/cd6fde0b299b34bbad05f64ad1ed5bd2ed05e634/LICENSE
+      purposes: [identification, research]
       authority: official
   relations:
     - type: produced-by
