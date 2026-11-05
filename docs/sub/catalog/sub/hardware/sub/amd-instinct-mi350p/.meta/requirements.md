@@ -12,3 +12,9 @@
 
 - MI350P remains distinct from MI350X/MI355X and complete server/platform products.
 - Producer provenance resolves bidirectionally to Advanced Micro Devices, Inc.
+
+## Scoped original-source acceptance — 2026-11-05
+
+- Manufacturer source: https://www.amd.com/en/products/accelerators/instinct/mi350/mi350p.html
+- 144 GB HBM3E PCIe server card; 600 W maximum / 450 W configurable, with passive airflow requirements. Distinct from 288 GB OAM modules.
+- Preserve producer attribution separately from ultimate-control rights. No complete freshness, host/runtime benchmark, ownership/legal clearance, schema/CI/cache or renderer audit was performed.

@@ -16,3 +16,9 @@
 - 192 GB is a processor-supported shared system-memory ceiling, not a claim of 192 GB GPU memory.
 - Producer reciprocal relation, local reader navigation and source-claim boundaries resolve.
 - Source-backed scoped documentation checks do not imply executed local AI workloads, whole-catalog render/CI, full owner-control review or a completed clean research pass.
+
+## Scoped original-source acceptance — 2026-11-05
+
+- Manufacturer source: https://www.amd.com/en/products/processors/laptop/ryzen-pro/ai-max-pro-400-series/amd-ryzen-ai-max-plus-pro-495.html
+- 192 GB maximum supported shared system memory is not dedicated VRAM; the chip's 55 W default TDP is not system power.
+- Preserve producer attribution separately from ultimate-control rights. No complete freshness, host/runtime benchmark, ownership/legal clearance, schema/CI/cache or renderer audit was performed.

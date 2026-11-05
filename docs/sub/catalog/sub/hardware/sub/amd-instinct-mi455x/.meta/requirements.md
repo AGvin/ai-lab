@@ -13,3 +13,9 @@
 - MI455X is not represented as the Helios system itself or as a generic MI400 family synonym.
 - Announced future MI400 products are not implicitly treated as released because MI455X is released.
 - The `produces` / `produced-by` relation pair resolves consistently to AMD.
+
+## Scoped original-source acceptance — 2026-11-05
+
+- Manufacturer source: https://www.amd.com/en/products/accelerators/instinct/mi400/mi455x.html
+- 432 GB HBM4 CDNA 5 Enhanced Accelerator Module; not the complete Helios rack, and requires direct liquid cooling.
+- Preserve producer attribution separately from ultimate-control rights. No complete freshness, host/runtime benchmark, ownership/legal clearance, schema/CI/cache or renderer audit was performed.

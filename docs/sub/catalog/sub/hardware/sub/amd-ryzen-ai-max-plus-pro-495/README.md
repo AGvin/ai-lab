@@ -1,5 +1,7 @@
 # AMD Ryzen AI Max+ PRO 495
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** See the [provenance policy](../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 AMD Ryzen AI Max+ PRO 495 is a released **Gorgon Halo** processor in the Ryzen AI Max PRO 400 series. It combines **16 Zen 5 CPU cores / 32 threads**, integrated **Radeon 8065S** graphics with **40 RDNA 3.5 compute units**, and an **XDNA 2 NPU** rated by AMD at up to **55 TOPS**. This processor is distinct from the non-PRO **Ryzen AI Max+ 395** (Strix Halo / Radeon 8060S) and from any complete workstation or Ryzen AI Halo Developer Platform.
 
 ## Shared-memory and local AI boundaries
@@ -22,3 +24,9 @@ AMD lists Radeon 8065S as **RDNA 3.5 / `gfx1151`** and documents Ryzen AI Max+ P
 - [AMD Ryzen AI Max PRO 400 series announcement](https://www.amd.com/en/blogs/2026/amd-powers-next-generation-agent-computers-with-new-ryzen-ai-hal.html)
 - [AMD ROCm 10.1.0 hardware support](https://rocm.docs.amd.com/en/docs-10.1.0/about/release-notes.html)
 - [AMD RDNA 3.5 APU kernel requirements](https://rocm.docs.amd.com/en/latest/reference/system-optimization/rdna3-5.html)
+
+## Scoped original-source acceptance — 2026-11-05
+
+AMD Ryzen AI Max+ PRO 495 is the processor, not the full Halo Developer Platform. Manufacturer specs list up to 192 GB 256-bit LPDDR5x-8533 shared system memory, Radeon 8065S integrated graphics with 40 cores, and 55 W default / 45–120 W configurable processor TDP. Memory allocation is not dedicated VRAM; real software and model support depend on OEM BIOS, ROCm/OS and runtime configuration. Existing canonical processor notes and manufacturer references remain authoritative.
+
+This is source qualification only: no physical testing, full freshness audit, schema/CI/cache/render, independent performance or ownership/legal clearance was performed.
