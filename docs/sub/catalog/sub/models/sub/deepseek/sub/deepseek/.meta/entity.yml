@@ -17,3 +17,5 @@ entity:
       target: catalog/models/deepseek/deepseek/deepseek-v4
     - type: has-member
       target: catalog/models/deepseek/deepseek/deepseek-v4-1
+    - type: has-member
+      target: catalog/models/deepseek/deepseek/deepseek-v3-2

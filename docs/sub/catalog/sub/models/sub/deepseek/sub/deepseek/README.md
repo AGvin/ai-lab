@@ -12,3 +12,7 @@ Architecture, parameter counts, modalities, context, license, and release revisi
 ## Official resources
 
 - [DeepSeek model collections](https://huggingface.co/deepseek-ai/collections)
+
+## Additional released checkpoint
+
+- [DeepSeek-V3.2](sub/deepseek-v3-2/) — separate trained checkpoint; licensing and provenance-review boundaries are documented locally.

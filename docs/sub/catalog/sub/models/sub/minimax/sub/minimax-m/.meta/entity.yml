@@ -21,3 +21,5 @@ entity:
       target: catalog/producers/m/minimax
     - type: has-member
       target: catalog/models/minimax/minimax-m/models/m3
+    - type: has-member
+      target: catalog/models/minimax/minimax-m/models/m2

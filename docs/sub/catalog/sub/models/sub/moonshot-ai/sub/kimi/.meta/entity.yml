@@ -27,3 +27,5 @@ entity:
       target: catalog/producers/m/moonshot-ai
     - type: has-member
       target: catalog/models/moonshot-ai/kimi/models/kimi-k3
+    - type: has-member
+      target: catalog/models/moonshot-ai/kimi/models/kimi-k2-thinking

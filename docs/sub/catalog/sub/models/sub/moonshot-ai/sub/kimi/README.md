@@ -20,3 +20,7 @@ Kimi is Moonshot AI's model family. Its distinct trained-model releases belong i
 - <https://www.kimi.com/blog/>
 - <https://github.com/MoonshotAI>
 - <https://huggingface.co/moonshotai>
+
+## Additional released checkpoint
+
+- [Kimi K2 Thinking](sub/models/sub/kimi-k2-thinking/) — separate trained checkpoint; licensing and provenance-review boundaries are documented locally.
