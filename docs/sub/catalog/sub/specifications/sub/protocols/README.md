@@ -14,5 +14,6 @@ Exact methods, fields, headers, message structures, capabilities, transports, au
 - [Machine Payments Protocol](./sub/machine-payments-protocol/)
 - [Model Context Protocol](./sub/model-context-protocol/)
 - [NLWeb](./sub/nlweb/)
+- [Open Responses](./sub/open-responses/)
 - [Universal Commerce Protocol](./sub/universal-commerce-protocol/)
 - [x402](./sub/x402/)

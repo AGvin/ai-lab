@@ -1,0 +1,22 @@
+entity:
+  id: catalog/specifications/standards/openai-model-spec
+  name: "OpenAI Model Spec"
+  aliases:
+    - "OpenAI Model Specification"
+  identity_note: >-
+    OpenAI's publicly published statement of intended GPT model behavior. Examined 29 October
+    2026 edition, CC0 public document. Vendor guidance not interoperability standards,
+    regulation, certification, or proof that production models already conform fully.
+  references:
+    - type: specification
+      source:
+        url: https://model-spec.openai.com/2026-10-29.html
+      purposes: [identification, research]
+      authority: official
+      note: "Published edition, 29 October 2026"
+    - type: specification
+      source:
+        url: https://model-spec.openai.com/
+      purposes: [identification, research]
+      authority: official
+      note: "Current version entry"

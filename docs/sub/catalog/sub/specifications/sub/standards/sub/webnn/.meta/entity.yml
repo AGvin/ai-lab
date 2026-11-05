@@ -1,0 +1,29 @@
+entity:
+  id: catalog/specifications/standards/webnn
+  name: "Web Neural Network API"
+  aliases:
+    - "WebNN"
+  identity_note: >-
+    W3C Web Machine Learning Working Group low-level neural-network inference
+    hardware-acceleration API. Published Candidate Recommendation Draft 26 June 2026; mutable
+    Editor's Draft is separate. The draft does not imply default support or actual accelerator
+    speedup.
+  references:
+    - type: specification
+      source:
+        url: https://www.w3.org/TR/2026/CRD-webnn-20260626/
+      purposes: [identification, research]
+      authority: official
+      note: "Published Candidate Recommendation Draft, 26 June 2026"
+    - type: specification
+      source:
+        url: https://www.w3.org/TR/webnn/
+      purposes: [identification, research]
+      authority: official
+      note: "Current W3C technical-report entry"
+    - type: specification
+      source:
+        url: https://webmachinelearning.github.io/webnn/
+      purposes: [identification, research]
+      authority: official
+      note: "Separate Editor's Draft"

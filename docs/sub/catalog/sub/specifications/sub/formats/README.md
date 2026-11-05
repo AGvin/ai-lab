@@ -6,6 +6,7 @@ Placement here identifies a specification-class artifact; it does not imply that
 
 ## Format profiles
 
+- [A2UI — Agent-to-User Interface](./sub/a2ui-agent-to-user-interface/)
 - [Agent Plugins](./sub/agent-plugins/)
 - [Agent Skills](./sub/agent-skills/)
 - [GGUF](./sub/gguf/)
