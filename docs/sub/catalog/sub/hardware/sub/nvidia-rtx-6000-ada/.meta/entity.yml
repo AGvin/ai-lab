@@ -2,6 +2,8 @@ entity:
   id: catalog/hardware/nvidia-rtx-6000-ada
   type: hardware
   name: NVIDIA RTX 6000 Ada Generation
+  identity_note: >-
+    NVIDIA's product page identifies RTX 6000 Ada Generation as the Ada professional workstation product. It remains distinct from Ampere RTX A6000 and Blackwell RTX PRO 6000 despite similar naming. Validate the exact board, chassis and driver/framework combination; software subscription and virtualization entitlements are separate from purchasing the GPU.
   references:
     - type: product-page
       source:

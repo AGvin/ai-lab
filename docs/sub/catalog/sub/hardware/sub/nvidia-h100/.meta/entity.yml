@@ -5,6 +5,8 @@ entity:
   aliases:
     - NVIDIA H100
     - H100
+  identity_note: >-
+    NVIDIA identifies H100 as a Hopper data-center GPU and documents distinct product/integration forms, including H100 NVL. H100, H200, complete HGX/DGX hosts and cloud instances are different identities. Confirm the delivered form factor, memory, interconnect and supported runtime rather than treating one H100 configuration as universal.
   references:
     - type: product-page
       source:

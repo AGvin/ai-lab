@@ -4,6 +4,8 @@ entity:
   name: NVIDIA B200 Tensor Core GPU
   aliases:
     - B200
+  identity_note: >-
+    NVIDIA's versioned CUTLASS 4.3.1 table identifies B200 with compute capability 10.0 and a CUDA 12.8 minimum for that CUTLASS support table, not a universal framework minimum. The current HGX page states B200 systems are shipping; its eight-GPU memory/throughput totals are not single-B200 specifications. MIG profiles must match the B200 product, not GB200.
   references:
     - type: documentation
       source:
@@ -23,6 +25,11 @@ entity:
         url: https://docs.nvidia.com/cuda/archive/12.9.2/blackwell-tuning-guide/index.html
       purposes:
         - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.nvidia.com/en-us/data-center/hgx/
+      purposes: [identification, research]
       authority: official
   relations:
     - type: produced-by

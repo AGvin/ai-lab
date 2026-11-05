@@ -14,3 +14,9 @@
 - The node remains the exact Workstation Edition GPU rather than the whole RTX PRO 6000 family.
 - Server/Max-Q specifications are not transferred to this SKU.
 - Performance claims remain workload/configuration scoped.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the exact product/configuration and source-specific deployment distinctions from the current entity note.
+- Do not transfer system totals, toolkit-specific requirements or family/edition claims to an individual GPU.
+- Keep ownership/control review pending. This bounded identity/source qualification is not a full freshness audit, OEM compatibility approval, benchmark or software-license entitlement.

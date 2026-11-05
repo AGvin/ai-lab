@@ -1,5 +1,7 @@
 # NVIDIA RTX A6000
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Manufacturer attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 NVIDIA RTX A6000 is an Ampere professional workstation GPU with 48 GB ECC GDDR6 memory. NVIDIA lists PCIe Gen4 x16, a dual-slot active cooling design and 300 W maximum power. Its AI compute role is separate from the card’s graphics, rendering and virtual-workstation uses.
 
 ## Deployment boundaries
@@ -11,6 +13,12 @@ Validate board clearance, bridge spacing where applicable, power delivery, cooli
 ## Producer
 
 - Produced by [NVIDIA](../../../producers/sub/n/sub/nvidia/README.md).
+
+## Source interpretation
+
+NVIDIA identifies Ampere RTX A6000 with 48 GB ECC GDDR6 and a two-way NVLink option. It is not RTX 6000 Ada or RTX PRO 6000 Blackwell. Two connected devices do not automatically provide every application one 96 GB allocation; topology and software parallelism determine usable memory. Check board and software entitlement requirements separately.
+
+This bounded source review does not establish current pricing, local availability, full specification freshness, software entitlements or measured performance. No hardware or runtime validation was performed.
 
 ## Official resources
 

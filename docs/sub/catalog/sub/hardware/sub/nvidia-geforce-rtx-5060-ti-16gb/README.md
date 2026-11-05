@@ -1,5 +1,7 @@
 # NVIDIA GeForce RTX 5060 Ti 16 GB
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Manufacturer attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 The NVIDIA GeForce RTX 5060 Ti 16 GB is a released Blackwell desktop graphics card with **16 GB of GDDR7**, a **128-bit memory interface** and **4,608 CUDA cores**. It is the 16 GB configuration of the RTX 5060 Ti, not the separate 8 GB configuration or the non-Ti RTX 5060. NVIDIA announced the series on 2025-04-15 with RTX 5060 Ti availability beginning 2025-04-16.
 
 ## Practical local-AI boundaries
@@ -13,6 +15,12 @@ The manufacturer's reference values are **180 W total graphics power** and **600
 ## Producer
 
 - Produced by [NVIDIA](../../../producers/sub/n/sub/nvidia/README.md).
+
+## Source interpretation
+
+The current manufacturer comparison lists RTX 5060 Ti with 16 GB or 8 GB GDDR7, and the non-Ti RTX 5060 separately. Only the 16 GB Ti configuration belongs to this entry. Its Blackwell family label does not establish support in every quantization kernel or framework; confirm exact software, board and workload memory requirements.
+
+This bounded source review does not establish current pricing, local availability, full specification freshness, software entitlements or measured performance. No hardware or runtime validation was performed.
 
 ## Official resources
 

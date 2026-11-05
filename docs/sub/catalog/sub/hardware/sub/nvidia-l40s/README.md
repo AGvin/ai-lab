@@ -1,5 +1,7 @@
 # NVIDIA L40S GPU
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Manufacturer attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 NVIDIA L40S is an Ada Lovelace server GPU for AI inference and training, graphics and media workloads. NVIDIA specifies 48 GB ECC GDDR6 memory, PCIe Gen4 x16, passive cooling and 350 W maximum power. This is a physical data-center accelerator rather than an actively cooled RTX 6000 Ada workstation card.
 
 ## Deployment boundaries
@@ -11,6 +13,12 @@ A passive card needs qualified server airflow, power delivery and physical clear
 ## Producer
 
 - Produced by [NVIDIA](../../../producers/sub/n/sub/nvidia/README.md).
+
+## Source interpretation
+
+NVIDIA identifies the L40S data-center GPU and advertises 48 GB memory, separate from the L4 and active workstation RTX 6000 Ada. Keep the physical device, virtualization software and cloud instances separate. Server airflow, board power, runtime and workload overhead must be checked; physical memory capacity does not establish model fit or transparent multi-card pooling.
+
+This bounded source review does not establish current pricing, local availability, full specification freshness, software entitlements or measured performance. No hardware or runtime validation was performed.
 
 ## Official resources
 

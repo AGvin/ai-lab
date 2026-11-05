@@ -15,3 +15,9 @@
 - DGX Station remains a complete deskside hardware-system identity rather than a GB300 chip or OEM workstation identity.
 - Future Windows-specific availability is not misreported as already generally available.
 - Producer provenance resolves bidirectionally to NVIDIA.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the exact product/configuration and source-specific deployment distinctions from the current entity note.
+- Do not transfer system totals, toolkit-specific requirements or family/edition claims to an individual GPU.
+- Keep ownership/control review pending. This bounded identity/source qualification is not a full freshness audit, OEM compatibility approval, benchmark or software-license entitlement.

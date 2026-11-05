@@ -1,5 +1,7 @@
 # NVIDIA GeForce RTX 4090
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Manufacturer attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 NVIDIA GeForce RTX 4090 is an Ada Lovelace desktop graphics card with 24 GB GDDR6X memory. It can serve as local AI compute when the model and runtime fit the card and host. The identity is separate from RTX 3090, RTX 5090, professional RTX products and cloud instances containing these GPUs.
 
 ## Deployment boundaries
@@ -11,6 +13,12 @@ Verify the exact board’s dimensions, cooling, power connector and PSU requirem
 ## Producer
 
 - Produced by [NVIDIA](../../../producers/sub/n/sub/nvidia/README.md).
+
+## Source interpretation
+
+The manufacturer identifies the desktop Ada Lovelace RTX 4090 with 24 GB GDDR6X. This is not a laptop GPU, RTX 3090 or professional RTX 6000 Ada. Product and gaming-performance claims do not establish LLM throughput; match the actual board, power delivery and software/precision stack before workload evaluation.
+
+This bounded source review does not establish current pricing, local availability, full specification freshness, software entitlements or measured performance. No hardware or runtime validation was performed.
 
 ## Official resources
 

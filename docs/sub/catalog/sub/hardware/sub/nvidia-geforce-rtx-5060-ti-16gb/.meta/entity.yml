@@ -3,9 +3,7 @@ entity:
   type: hardware
   name: NVIDIA GeForce RTX 5060 Ti 16 GB
   identity_note: >-
-    Released Blackwell desktop GPU in the 16 GB GDDR7 configuration,
-    distinct from NVIDIA's 8 GB RTX 5060 Ti and non-Ti RTX 5060.
-    VRAM is per card, and software/workload fit remains configuration-dependent.
+    Released Blackwell desktop GPU in the 16 GB GDDR7 configuration, distinct from NVIDIA's 8 GB RTX 5060 Ti and non-Ti RTX 5060. VRAM is per card, and software/workload fit remains configuration-dependent. The current manufacturer comparison lists RTX 5060 Ti with 16 GB or 8 GB GDDR7, and the non-Ti RTX 5060 separately. Only the 16 GB Ti configuration belongs to this entry. Its Blackwell family label does not establish support in every quantization kernel or framework; confirm exact software, board and workload memory requirements.
   references:
     - type: product-page
       source:

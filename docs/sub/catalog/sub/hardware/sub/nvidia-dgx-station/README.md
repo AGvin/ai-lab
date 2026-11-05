@@ -1,5 +1,7 @@
 # NVIDIA DGX Station
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Manufacturer attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 NVIDIA DGX Station is a complete deskside AI system based on the GB300 Grace Blackwell Ultra Desktop Superchip. It supports local development, fine-tuning, inference and persistent agent workloads. The system is distinct from the underlying chip, OEM implementations, DGX Spark, data-center DGX systems and DGX Cloud.
 
 ## Deployment boundaries
@@ -11,6 +13,12 @@ Confirm the particular OEM system’s OS, coherent-memory configuration, storage
 ## Producer
 
 - Produced by [NVIDIA](../../../producers/sub/n/sub/nvidia/README.md).
+
+## Source interpretation
+
+NVIDIA's current page identifies the complete deskside DGX Station system and directs buyers to OEM partners. Keep its Grace Blackwell/GB300 platform, optional visualization GPU and Windows-specific announcement boundaries separate. This is not DGX Spark or a standalone GPU; OEM OS, coherent-memory configuration and delivery terms require configuration-specific confirmation.
+
+This bounded source review does not establish current pricing, local availability, full specification freshness, software entitlements or measured performance. No hardware or runtime validation was performed.
 
 ## Official resources
 

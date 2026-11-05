@@ -15,3 +15,9 @@
 - One exact 16 GB hardware identity, not additional model, software or service identities.
 - Both producer directions resolve; all claims remain scoped to first-party sources.
 - Final renderer, complete schema/cache/CI and two clean catalog passes remain outstanding.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the exact product/configuration and source-specific deployment distinctions from the current entity note.
+- Do not transfer system totals, toolkit-specific requirements or family/edition claims to an individual GPU.
+- Keep ownership/control review pending. This bounded identity/source qualification is not a full freshness audit, OEM compatibility approval, benchmark or software-license entitlement.

@@ -15,3 +15,9 @@
 - RTX A6000 Ampere is not conflated with RTX 6000 Ada (despite both having 48 GB GDDR6) or RTX PRO 6000 Blackwell.
 - The 48 GB specification refers to one physical card; NVLink support does not imply universal pooled VRAM.
 - Product source and `produced-by` / `produces` inverse agree on NVIDIA.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the exact product/configuration and source-specific deployment distinctions from the current entity note.
+- Do not transfer system totals, toolkit-specific requirements or family/edition claims to an individual GPU.
+- Keep ownership/control review pending. This bounded identity/source qualification is not a full freshness audit, OEM compatibility approval, benchmark or software-license entitlement.

@@ -1,5 +1,7 @@
 # NVIDIA DGX Spark
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Manufacturer attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 NVIDIA DGX Spark is a compact, complete personal AI system built around the GB10 Grace Blackwell Superchip. Its role is local model development, inference, fine-tuning, agent execution and desktop experimentation; the product identity covers the system rather than a discrete GPU or the GB10 chip alone.
 
 ## Deployment boundaries
@@ -11,6 +13,12 @@ DGX Station, DGX data-center systems and DGX Cloud have separate deployment and 
 ## Producer
 
 - Produced by [NVIDIA](../../../producers/sub/n/sub/nvidia/README.md).
+
+## Source interpretation
+
+NVIDIA's current page identifies DGX Spark as a complete GB10 Grace Blackwell personal AI system and distinguishes 64 GB and 128 GB configurations and multi-system examples. A system's unified memory is not an independent discrete-GPU specification; advertised model capacity is conditional. Recheck configuration/region availability separately from the historical 64 GB announcement.
+
+This bounded source review does not establish current pricing, local availability, full specification freshness, software entitlements or measured performance. No hardware or runtime validation was performed.
 
 ## Official resources
 

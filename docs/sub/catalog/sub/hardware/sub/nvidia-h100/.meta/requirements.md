@@ -16,3 +16,9 @@
 - Variant-specific specifications remain scoped to the correct H100 form factor/SKU.
 - Mutable software/support/performance claims are not presented as timeless hardware identity facts.
 - The `produces` / `produced-by` relation pair resolves consistently to NVIDIA.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the exact product/configuration and source-specific deployment distinctions from the current entity note.
+- Do not transfer system totals, toolkit-specific requirements or family/edition claims to an individual GPU.
+- Keep ownership/control review pending. This bounded identity/source qualification is not a full freshness audit, OEM compatibility approval, benchmark or software-license entitlement.

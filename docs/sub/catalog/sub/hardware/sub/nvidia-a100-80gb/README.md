@@ -1,5 +1,7 @@
 # NVIDIA A100 80GB Tensor Core GPU
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Manufacturer attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 NVIDIA A100 80GB Tensor Core GPU is the 80 GB HBM2e Ampere data-center accelerator for AI training, inference and scientific computing. It is distinct from the A100 40 GB variant and from Hopper or Blackwell products. The catalog identity includes materially different PCIe and SXM implementations.
 
 ## Deployment boundaries
@@ -11,6 +13,12 @@ SXM requires a compatible system baseboard; PCIe packaging does not by itself es
 ## Producer
 
 - Produced by [NVIDIA](../../../producers/sub/n/sub/nvidia/README.md).
+
+## Source interpretation
+
+The manufacturer identifies the 80 GB Ampere A100 separately from its 40 GB configuration and distinguishes PCIe and SXM implementations. This entry represents the GPU product, not an HGX/DGX system or cloud instance. Use the exact SKU's power, cooling and interconnect specification; marketed partitioning and performance are not workload-fit guarantees.
+
+This bounded source review does not establish current pricing, local availability, full specification freshness, software entitlements or measured performance. No hardware or runtime validation was performed.
 
 ## Official resources
 

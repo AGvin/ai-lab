@@ -5,6 +5,8 @@ entity:
   aliases:
     - NVIDIA H200
     - H200
+  identity_note: >-
+    NVIDIA identifies H200 as a Hopper GPU with 141 GB HBM3e and 4.8 TB/s published memory bandwidth per GPU. SXM and NVL integration, power and interconnect configurations differ. These figures are not system-total memory or measured application throughput; delivered OEM and software configurations need separate checks.
   references:
     - type: product-page
       source:

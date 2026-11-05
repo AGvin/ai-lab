@@ -15,3 +15,9 @@
 - Published 24 GB, 300 GB/s and 72 W values are per physical L4 GPU, not aggregate server or cloud system memory.
 - L4 remains distinct from L40S and hosted vGPU profiles.
 - NVIDIA producer `produces` inverses this physical hardware identity.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the exact product/configuration and source-specific deployment distinctions from the current entity note.
+- Do not transfer system totals, toolkit-specific requirements or family/edition claims to an individual GPU.
+- Keep ownership/control review pending. This bounded identity/source qualification is not a full freshness audit, OEM compatibility approval, benchmark or software-license entitlement.

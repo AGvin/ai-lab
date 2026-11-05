@@ -5,6 +5,8 @@ entity:
   aliases:
     - NVIDIA L4
     - L4
+  identity_note: >-
+    NVIDIA identifies L4 as an Ada Lovelace low-profile data-center accelerator for inference, graphics and media. This physical GPU is distinct from L40S and hosted virtual/cloud configurations. Low-profile packaging does not establish arbitrary desktop compatibility; check the qualified host airflow, power and software stack. Product performance comparisons remain workload-specific.
   references:
     - type: product-page
       source:

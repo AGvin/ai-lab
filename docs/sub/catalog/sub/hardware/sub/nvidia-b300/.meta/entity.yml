@@ -4,6 +4,8 @@ entity:
   name: NVIDIA B300 Tensor Core GPU
   aliases:
     - B300
+  identity_note: >-
+    NVIDIA's versioned CUTLASS 4.3.1 table identifies B300 with compute capability 10.3 and a CUDA 13.0 minimum for that CUTLASS support table. The current HGX page states B300 systems are shipping; HGX B300 is an eight-GPU system, not this individual GPU identity. Preserve Blackwell Ultra versus B200 and validate exact runtime builds instead of transferring a family-wide compatibility claim.
   references:
     - type: documentation
       source:
@@ -17,6 +19,11 @@ entity:
         url: https://docs.nvidia.com/nim/large-language-models/latest/reward-model.html
       purposes:
         - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.nvidia.com/en-us/data-center/hgx/
+      purposes: [identification, research]
       authority: official
   relations:
     - type: produced-by

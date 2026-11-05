@@ -2,6 +2,8 @@ entity:
   id: catalog/hardware/nvidia-rtx-pro-6000-blackwell-workstation-edition
   type: hardware
   name: NVIDIA RTX PRO 6000 Blackwell Workstation Edition
+  identity_note: >-
+    NVIDIA's family table separately lists Server, Workstation and Max-Q Workstation editions. This entry owns the Workstation Edition, listed with 96 GB ECC GDDR7 and 600 W power; the Max-Q column's 300 W is not this edition. Validate exact cooling, chassis, software and partitioning support instead of transferring family marketing to every configuration.
   references:
     - type: product-page
       source:

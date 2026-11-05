@@ -1,5 +1,7 @@
 # NVIDIA H100 Tensor Core GPU
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Manufacturer attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 NVIDIA H100 is NVIDIA's Hopper-architecture data-center Tensor Core GPU family for accelerated AI and HPC workloads.
 
 ## Hardware boundary
@@ -11,6 +13,12 @@ Driver/runtime compatibility, virtualization or MIG support, support lifecycle, 
 ## Relations
 
 - Produced by [NVIDIA](../../../producers/sub/n/sub/nvidia/).
+
+## Source interpretation
+
+NVIDIA identifies H100 as a Hopper data-center GPU and documents distinct product/integration forms, including H100 NVL. H100, H200, complete HGX/DGX hosts and cloud instances are different identities. Confirm the delivered form factor, memory, interconnect and supported runtime rather than treating one H100 configuration as universal.
+
+This bounded source review does not establish current pricing, local availability, full specification freshness, software entitlements or measured performance. No hardware or runtime validation was performed.
 
 ## Official resources
 

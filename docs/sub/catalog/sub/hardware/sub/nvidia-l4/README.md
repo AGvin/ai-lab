@@ -1,5 +1,7 @@
 # NVIDIA L4 Tensor Core GPU
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Manufacturer attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 NVIDIA L4 is an Ada Lovelace server accelerator for AI inference, graphics, audio/video processing and virtualization. Its published specifications are 24 GB GDDR6 memory, 300 GB/s peak memory bandwidth and 72 W maximum TDP per physical card. The PCIe Gen4 x16 card is half-height, half-length, single-slot and passively cooled.
 
 ## Deployment boundaries
@@ -11,6 +13,12 @@ Fourth-generation Tensor Cores, FP8 and AV1 media execution have specific softwa
 ## Producer
 
 - Produced by [NVIDIA](../../../producers/sub/n/sub/nvidia/README.md).
+
+## Source interpretation
+
+NVIDIA identifies L4 as an Ada Lovelace low-profile data-center accelerator for inference, graphics and media. This physical GPU is distinct from L40S and hosted virtual/cloud configurations. Low-profile packaging does not establish arbitrary desktop compatibility; check the qualified host airflow, power and software stack. Product performance comparisons remain workload-specific.
+
+This bounded source review does not establish current pricing, local availability, full specification freshness, software entitlements or measured performance. No hardware or runtime validation was performed.
 
 ## Official resources
 

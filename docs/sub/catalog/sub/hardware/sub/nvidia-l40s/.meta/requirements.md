@@ -15,3 +15,9 @@
 - L40S is not confused with RTX 6000 Ada or newer RTX PRO products merely because they share related GPU architecture and memory size.
 - Its 48 GB memory and maximum system power are scoped to the actual datacenter GPU product.
 - NVIDIA `produces` reciprocates this hardware identity.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the exact product/configuration and source-specific deployment distinctions from the current entity note.
+- Do not transfer system totals, toolkit-specific requirements or family/edition claims to an individual GPU.
+- Keep ownership/control review pending. This bounded identity/source qualification is not a full freshness audit, OEM compatibility approval, benchmark or software-license entitlement.
