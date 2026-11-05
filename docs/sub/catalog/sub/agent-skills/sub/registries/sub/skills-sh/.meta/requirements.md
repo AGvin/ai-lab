@@ -18,3 +18,11 @@
 - Official site: https://skills.sh/
 - CLI documentation: https://www.skills.sh/docs/cli
 - Official repository: https://github.com/vercel-labs/skills
+
+## Scoped original-source qualification — 2026-11-06
+
+- skills.sh is the public Agent Skills leaderboard. The site states that rankings use aggregated anonymized usage telemetry collected by the separate open-source Vercel Labs Skills CLI. The CLI supports installation/update and publishes an opt-out via DISABLE_TELEMETRY=1 or DO_NOT_TRACK=1.
+- The registry is not the CLI software entity; scanner/telemetry indicators are not code-safety guarantees. Pinned CLI versions, exact clients and local paths need their own runtime validation.
+- Verified first-party source 1: https://www.skills.sh/docs
+- Verified first-party source 2: https://github.com/vercel-labs/skills/blob/main/README.md
+- This review accepts only the current registry identity and source boundaries. It does not assert a full freshness audit, vendor-independent security, tested skill execution, complete CI/cache/schema/render, copyright clearance or verified current listing totals.

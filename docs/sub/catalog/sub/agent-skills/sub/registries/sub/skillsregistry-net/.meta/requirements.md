@@ -14,3 +14,11 @@
 ## References
 
 - Official site: https://skillsregistry.net/
+
+## Scoped original-source qualification — 2026-11-06
+
+- SkillsRegistry.net exposes hosted REST/MCP discovery, provenance/trust-score signals and a separately documented self-host option. Its first-party source explicitly distinguishes indexed records from audited/signed subsets, so it does not promise all indexed skills have undergone deep review.
+- Unsigned or unscanned entries must not be described as verified; any security score or hosted/self-hosted feature is an operator claim, not independent validation of a skill.
+- Verified first-party source 1: https://skillsregistry.net/
+- Verified first-party source 2: https://skillsregistry.net/agents
+- This review accepts only the current registry identity and source boundaries. It does not assert a full freshness audit, vendor-independent security, tested skill execution, complete CI/cache/schema/render, copyright clearance or verified current listing totals.
