@@ -14,3 +14,8 @@
 - MI300X and MI325X memory and bandwidth are not conflated.
 - A module's published performance and memory are distinguished from the UBB system aggregate.
 - Official references and reciprocal AMD relation resolve correctly.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the exact product and deployment boundaries from entity.identity_note, including pending ownership review.
+- This identity/source qualification does not advance a full freshness marker or certify ROCm compatibility, benchmarks or OEM integration.

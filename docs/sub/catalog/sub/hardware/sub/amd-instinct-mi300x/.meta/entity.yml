@@ -2,6 +2,8 @@ entity:
   id: catalog/hardware/amd-instinct-mi300x
   type: hardware
   name: AMD Instinct MI300X
+  identity_note: >-
+    AMD's MI300X is a discrete CDNA 3 accelerator with 192 GB HBM3 per module. The documented eight-module Universal Baseboard is a system configuration, not one GPU's capacity; OAM and platform power/cooling requirements preclude assuming ordinary workstation-card compatibility. Model fit, measured performance, current availability and software entitlements require separate validation. Ownership/control-chain review remains pending; source attribution is not adoption clearance.
   references:
     - type: product-page
       source:

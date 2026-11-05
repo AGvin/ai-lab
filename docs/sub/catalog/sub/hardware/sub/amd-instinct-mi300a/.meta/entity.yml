@@ -4,6 +4,8 @@ entity:
   name: AMD Instinct MI300A
   aliases:
     - MI300A
+  identity_note: >-
+    AMD's MI300A is a CDNA 3 GPU and Zen 4 CPU APU with one coherent 128 GB HBM3 pool per package. It is distinct from discrete MI300X OAM modules; qualified OEM platforms and CPU/GPU sharing requirements apply. Model fit, measured performance, current availability and software entitlements require separate validation. Ownership/control-chain review remains pending; source attribution is not adoption clearance.
   references:
     - type: product-page
       source:

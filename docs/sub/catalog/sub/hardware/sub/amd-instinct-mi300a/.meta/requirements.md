@@ -15,3 +15,8 @@
 - The 128 GB per-APU and 5.3 TB/s numbers are not conflated with multi-APU system aggregate.
 - Packaging/power/ROCm support are not misrepresented as ordinary consumer GPU compatibility.
 - The AMD producer inverse resolves for `catalog/hardware/amd-instinct-mi300a`.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the exact product and deployment boundaries from entity.identity_note, including pending ownership review.
+- This identity/source qualification does not advance a full freshness marker or certify ROCm compatibility, benchmarks or OEM integration.

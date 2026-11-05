@@ -15,3 +15,8 @@
 - Hardware form factors and system-level specifications are not mixed between workstations and datacenters.
 - Driver compatibility and performance claims are constrained to the applicable release, environment and model workload.
 - Producer provenance is reciprocal.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the exact product and deployment boundaries from entity.identity_note, including pending ownership review.
+- This identity/source qualification does not advance a full freshness marker or certify ROCm compatibility, benchmarks or OEM integration.

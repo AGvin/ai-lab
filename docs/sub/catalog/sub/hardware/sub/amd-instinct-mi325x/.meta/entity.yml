@@ -2,6 +2,8 @@ entity:
   id: catalog/hardware/amd-instinct-mi325x
   type: hardware
   name: AMD Instinct MI325X
+  identity_note: >-
+    AMD's MI325X is a CDNA 3 accelerator with 256 GB HBM3E per module, distinct from MI300X and the later MI350 family. Platform aggregate capacity is not a single-device specification; confirm the qualified OAM host and exact ROCm/software configuration. Model fit, measured performance, current availability and software entitlements require separate validation. Ownership/control-chain review remains pending; source attribution is not adoption clearance.
   references:
     - type: product-page
       source:
