@@ -16,3 +16,12 @@ Keep Qualcomm's efficiency and total-cost comparisons tied to their stated assum
 
 - [AI200 product page](https://www.qualcomm.com/data-center/products/qualcomm-dragonfly-ai200)
 - [Data-center catalog](https://www.qualcomm.com/data-center/products)
+
+## Scoped original-source qualification — 2026-11-06
+
+Qualcomm Dragonfly AI200 is an active, contact-sales data-center inference accelerator product; the manufacturer advertises 768 GB LPDDR memory per card. The 43 TB memory, 56 cards and 140 kW liquid-cooled configuration describe an ORv3 complete rack, not one accelerator. Up-to-10T-model support and efficiency/TCO are vendor claims conditional on model/runtime configuration, and Active does not establish unrestricted shipping or stock.
+
+- [Official source 1](https://www.qualcomm.com/data-center/products/qualcomm-dragonfly-ai200)
+- [Official source 2](https://www.qualcomm.com/data-center/products)
+
+Manufacturer specifications and performance claims are not independent workload tests, procurement clearance, complete software support matrices or full catalog validation. Verify exact configuration and current original sources before deployment.

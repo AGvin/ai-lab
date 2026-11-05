@@ -2,6 +2,8 @@ entity:
   id: catalog/hardware/nvidia-jetson-t5000
   type: hardware
   name: NVIDIA Jetson T5000
+  identity_note: >-
+    NVIDIA Jetson T5000 is a 128 GB LPDDR5X Blackwell production module with 273 GB/s published memory bandwidth and 40-130 W configurable module power. It differs from the 64 GB T4000 and the complete AGX Thor Developer Kit (carrier, storage and exposed I/O). NVIDIA lists its commercial-module lifecycle through August 2035. JetPack support, peripheral integration, power/cooling and actual model latency require exact-module validation.
   references:
     - type: product-page
       source:

@@ -17,3 +17,13 @@ A working system also needs a compatible carrier, storage, power delivery, cooli
 - [Release announcement, January 5, 2026](https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots)
 - [Thor module specifications](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/)
 - [Module lifecycle](https://developer.nvidia.com/embedded/lifecycle)
+
+## Scoped original-source qualification — 2026-11-06
+
+NVIDIA Jetson T4000 is a released Blackwell-based 64 GB LPDDR5X production module, not the T5000 or a complete Jetson AGX Thor Developer Kit. NVIDIA lists 273 GB/s memory bandwidth, configurable 40-70 W module power, January 2026 availability and lifecycle through January 2036. An embedded system needs its own carrier, cooling, storage, drivers and real robotics inference validation; peak FP4 compute figures are precision/implementation-dependent.
+
+- [Official source 1](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/)
+- [Official source 2](https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots)
+- [Official source 3](https://developer.nvidia.com/embedded/lifecycle)
+
+Manufacturer specifications and performance claims are not independent workload tests, procurement clearance, complete software support matrices or full catalog validation. Verify exact configuration and current original sources before deployment.

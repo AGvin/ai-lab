@@ -16,3 +16,12 @@ Choose a carrier and power/thermal design for the exact module and deployment. J
 
 - [Thor module specifications](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/)
 - [Module lifecycle](https://developer.nvidia.com/embedded/lifecycle)
+
+## Scoped original-source qualification — 2026-11-06
+
+NVIDIA Jetson T5000 is a 128 GB LPDDR5X Blackwell production module with 273 GB/s published memory bandwidth and 40-130 W configurable module power. It differs from the 64 GB T4000 and the complete AGX Thor Developer Kit (carrier, storage and exposed I/O). NVIDIA lists its commercial-module lifecycle through August 2035. JetPack support, peripheral integration, power/cooling and actual model latency require exact-module validation.
+
+- [Official source 1](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/)
+- [Official source 2](https://developer.nvidia.com/embedded/lifecycle)
+
+Manufacturer specifications and performance claims are not independent workload tests, procurement clearance, complete software support matrices or full catalog validation. Verify exact configuration and current original sources before deployment.
