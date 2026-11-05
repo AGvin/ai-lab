@@ -170,4 +170,12 @@ entity:
       target: catalog/software/model-and-data-platforms/model-development/megatron-core
     - type: produces
       target: catalog/software/model-and-data-platforms/model-development/megatron-bridge
+    - type: produces
+      target: catalog/hardware/nvidia-geforce-rtx-5080
+    - type: produces
+      target: catalog/hardware/nvidia-geforce-rtx-5070-ti
+    - type: produces
+      target: catalog/hardware/nvidia-rtx-pro-4500-blackwell-workstation
+    - type: produces
+      target: catalog/hardware/nvidia-vera-rubin-nvl72
   identity_note: "NVIDIA is the corporate producer umbrella for represented hardware, software, models, services, skills, and research artifacts; joint project governance, acquired lineage, licensed technology, product licenses, and service operators remain distinct."

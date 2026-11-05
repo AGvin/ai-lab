@@ -69,6 +69,11 @@ Cloud infrastructure location and product provenance also leave room for differe
 - Produces: [SWE-Serve](../../../../../datasets/sub/swe-serve/)
 - Produces: [TensorRT-LLM](../../../../../software/sub/inference-runtimes/sub/inference-engines/sub/tensorrt-llm/)
 
+- Produces: [NVIDIA GeForce RTX 5080](../../../../../hardware/sub/nvidia-geforce-rtx-5080/)
+- Produces: [NVIDIA GeForce RTX 5070 Ti](../../../../../hardware/sub/nvidia-geforce-rtx-5070-ti/)
+- Produces: [NVIDIA RTX PRO 4500 Blackwell Workstation Edition](../../../../../hardware/sub/nvidia-rtx-pro-4500-blackwell-workstation/)
+- Produces: [NVIDIA Vera Rubin NVL72](../../../../../hardware/sub/nvidia-vera-rubin-nvl72/)
+
 ## Official resources
 
 - [Official website](https://www.nvidia.com/)

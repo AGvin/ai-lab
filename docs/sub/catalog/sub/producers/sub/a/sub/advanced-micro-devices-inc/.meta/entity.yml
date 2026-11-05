@@ -62,3 +62,9 @@ entity:
       target: catalog/hardware/amd-instinct-mi300x
     - type: produces
       target: catalog/hardware/amd-instinct-mi300a
+    - type: produces
+      target: catalog/hardware/amd-radeon-pro-w7900
+    - type: produces
+      target: catalog/hardware/amd-instinct-mi210
+    - type: produces
+      target: catalog/hardware/amd-radeon-pro-w7800

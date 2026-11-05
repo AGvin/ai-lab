@@ -9,6 +9,8 @@ Apple's producer identity is distinct from both dataset artifacts and software. 
 - Produces: [GSM-Symbolic](../../../../../datasets/sub/gsm-symbolic/).
 - Produces: [MLX LM](../../../../../software/sub/inference-runtimes/sub/inference-engines/sub/mlx-lm/).
 
+- Produces: [Apple Mac Studio (M3 Ultra, 2025)](../../../../../hardware/sub/apple-mac-studio-m3-ultra/)
+
 ## Official resources
 
 - [Apple](https://www.apple.com/)

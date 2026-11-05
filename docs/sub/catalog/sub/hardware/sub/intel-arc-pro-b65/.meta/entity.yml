@@ -1,0 +1,17 @@
+entity:
+  id: catalog/hardware/intel-arc-pro-b65
+  type: hardware-product
+  name: "Intel Arc Pro B65"
+  identity_note: >-
+    Intel Arc Pro B65 Xe2/Battlemage workstation GPU, distinct from Arc Pro B60 despite 20
+    Xe-cores.
+  references:
+    - type: product-page
+      source:
+        url: https://www.intel.com/content/www/us/en/products/sku/245796/intel-arc-pro-b65-graphics/specifications.html
+      purposes: [identification, research]
+      authority: official
+      note: "Official manufacturer product page"
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/intel

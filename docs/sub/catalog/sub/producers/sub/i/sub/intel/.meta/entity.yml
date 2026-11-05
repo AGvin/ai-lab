@@ -27,3 +27,11 @@ entity:
       target: catalog/hardware/intel-gaudi-3
     - type: produces
       target: catalog/hardware/intel-arc-pro-b70
+    - type: produces
+      target: catalog/hardware/intel-arc-pro-b50
+    - type: produces
+      target: catalog/hardware/intel-arc-pro-b60
+    - type: produces
+      target: catalog/hardware/intel-arc-b580
+    - type: produces
+      target: catalog/hardware/intel-arc-pro-b65

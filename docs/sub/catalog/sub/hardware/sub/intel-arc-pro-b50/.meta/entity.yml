@@ -1,0 +1,17 @@
+entity:
+  id: catalog/hardware/intel-arc-pro-b50
+  type: hardware-product
+  name: "Intel Arc Pro B50"
+  identity_note: >-
+    Intel Xe2/Battlemage workstation discrete GPU, distinct from the B60/B65 and consumer
+    Arc B580.
+  references:
+    - type: product-page
+      source:
+        url: https://www.intel.com/content/www/us/en/products/sku/242615/intel-arc-pro-b50-graphics/specifications.html
+      purposes: [identification, research]
+      authority: official
+      note: "Official manufacturer product page"
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/intel

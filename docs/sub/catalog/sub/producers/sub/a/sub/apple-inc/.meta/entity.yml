@@ -31,3 +31,5 @@ entity:
       target: catalog/software/inference-runtimes/inference-engines/mlx-lm
     - type: produces
       target: catalog/datasets/gsm-symbolic
+    - type: produces
+      target: catalog/hardware/apple-mac-studio-m3-ultra

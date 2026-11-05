@@ -21,6 +21,10 @@ Individual Instinct, Radeon, and Ryzen products remain separate hardware entitie
 - Produces: [AMD Instinct MI300X](../../../../../hardware/sub/amd-instinct-mi300x/)
 - Produces: [AMD Instinct MI300A](../../../../../hardware/sub/amd-instinct-mi300a/)
 
+- Produces: [AMD Radeon PRO W7900](../../../../../hardware/sub/amd-radeon-pro-w7900/)
+- Produces: [AMD Instinct MI210](../../../../../hardware/sub/amd-instinct-mi210/)
+- Produces: [AMD Radeon PRO W7800 family](../../../../../hardware/sub/amd-radeon-pro-w7800/)
+
 ## Official resources
 
 - [https://www.amd.com/](https://www.amd.com/)

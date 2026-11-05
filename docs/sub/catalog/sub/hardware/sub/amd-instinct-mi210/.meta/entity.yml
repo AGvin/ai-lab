@@ -1,0 +1,23 @@
+entity:
+  id: catalog/hardware/amd-instinct-mi210
+  type: hardware-product
+  name: "AMD Instinct MI210"
+  identity_note: >-
+    AMD CDNA 2 PCIe server accelerator, distinct from MI250 OAM and later Instinct
+    MI300/MI400 families.
+  references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/accelerators/instinct/mi200/mi210.html
+      purposes: [identification, research]
+      authority: official
+      note: "Official manufacturer product page"
+    - type: product-page
+      source:
+        url: https://instinct.docs.amd.com/projects/system-acceptance/en/latest/gpus/mi210.html
+      purposes: [identification, research]
+      authority: official
+      note: "AMD MI210 system acceptance guidance"
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/advanced-micro-devices-inc

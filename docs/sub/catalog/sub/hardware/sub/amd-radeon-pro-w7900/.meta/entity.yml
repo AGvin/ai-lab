@@ -1,0 +1,17 @@
+entity:
+  id: catalog/hardware/amd-radeon-pro-w7900
+  type: hardware-product
+  name: "AMD Radeon PRO W7900"
+  identity_note: >-
+    AMD RDNA 3 professional workstation graphics card, not the Radeon PRO W7800 family or
+    an Instinct CDNA accelerator.
+  references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/graphics/workstations/radeon-pro/w7900.html
+      purposes: [identification, research]
+      authority: official
+      note: "Official manufacturer product page"
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/advanced-micro-devices-inc
