@@ -19,6 +19,7 @@ The materialized set below is curated rather than exhaustive.
 - [AIR-Bench 2024](./sub/air-bench-2024/) — safety prompts across structured risk categories.
 - [MLCommons AILuminate](./sub/mlcommons-ailuminate-safety-family/) — standardized safety prompt assessment and benchmarking.
 - [AIRS-Bench](./sub/airs-bench/)
+- [ANIMA](./sub/anima/) — animal-welfare moral reasoning across 26 prompts and 13 ethical dimensions.
 - [ApprenticeBench](./sub/apprenticebench/)
 - [Attempt to Persuade Eval (APE)](./sub/attempt-persuade-eval/) — persuasion attempt evaluation across benign and sensitive topics.
 - [APPS Coding Challenge Dataset](./sub/apps/) — programming-challenge evaluation with executable tests.
@@ -57,11 +58,13 @@ The materialized set below is curated rather than exhaustive.
 - [Do-Not-Answer](./sub/do-not-answer/) — safety-refusal instruction evaluation.
 - [GeneBench-Pro](./sub/genebench-pro/)
 - [EVMbench](./sub/openai-evmbench/) — smart-contract auditing, patching and exploit evaluation.
+- [FRAMES](./sub/frames/) — 824 multi-hop questions combining factual retrieval and reasoning.
 - [Frontier-CS](./sub/frontier-cs/) — open-ended computer-science research and algorithms benchmark.
 - [GPQA](./sub/gpqa/)
 - [GroundedPlanBench](./sub/groundedplanbench/)
 - [GSM8K](./sub/gsm8k/)
 - [GSM-Symbolic](./sub/gsm-symbolic/) — Apple's symbolic-template GSM8K-derived reasoning evaluation dataset (main, P1, P2; 2024).
+- [HardMultiQA](./sub/yandex-hardmultiqa/) — gated Russian multi-source multiple-choice and short-answer QA.
 - [HarmBench](./sub/harmbench/) — robust refusal and automated red-teaming evaluation.
 - [HellaSwag](./sub/hellaswag/)
 - [Horizon](./sub/horizon-agent-learning-benchmark/)
@@ -73,6 +76,7 @@ The materialized set below is curated rather than exhaustive.
 - [InfiniteBench](./sub/infinite-bench/) — long-context reasoning evaluation beyond 100k tokens.
 - [InstrumentalEval](./sub/instrumentaleval/) — evaluation of instrumental goal pursuit in language models.
 - [InterCode-CTF](./sub/intercode-ctf/) — isolated capture-the-flag tasks for interactive coding agents.
+- [JudgeBench](./sub/judgebench/) — objective correctness across challenging response pairs.
 - [KernelBench](./sub/kernelbench/) — GPU kernel code generation with correctness and speedup evaluation.
 - [LAB-Bench](./sub/lab-bench/) — biological scientific-research benchmark tasks.
 - [LINGOLY](./sub/lingoly/) — Linguistics Olympiad reasoning puzzles.
@@ -83,6 +87,7 @@ The materialized set below is curated rather than exhaustive.
 - [LongBench v2](./sub/longbench-v2/) — multi-domain reasoning over long documents and structured contexts.
 - [LongMemEval](./sub/longmemeval/)
 - [LongMemEval-V2](./sub/longmemeval-v2/)
+- [MaCBench](./sub/macbench/) — chemistry and materials vision-language model evaluation.
 - [MACHIAVELLI](./sub/machiavelli/) — reward-versus-ethics decisions in text adventure agents.
 - [Manager Coercion Benchmark](./sub/manager-coercion-benchmark/) — AI manager coercion escalation and outcome fabrication measurements.
 - [MASK](./sub/mask/) — honesty under pressure, distinguished from factual accuracy.
@@ -100,6 +105,7 @@ The materialized set below is curated rather than exhaustive.
 - [MMLU](./sub/mmlu/)
 - [MMMU](./sub/mmmu/)
 - [MonitorBench](./sub/monitorbench/) — chain-of-thought monitorability over multiple reasoning tasks.
+- [MORU](./sub/moru/) — gated moral reasoning benchmark across animal welfare domains.
 - [MuSR](./sub/musr/) — multi-step narrative and commonsense reasoning.
 - [MuTox](./sub/mutox/) — multilingual toxicity annotations for speech/audio evaluation.
 - [NARCBench](./sub/narcbench/) — detecting multi-agent collusion under distribution shift.
@@ -126,6 +132,7 @@ The materialized set below is curated rather than exhaustive.
 - [SciCode](./sub/scicode/) — scientist-curated code-generation research problems.
 - [SciFact](./sub/scifact/)
 - [SEvenLLM-Bench](./sub/sevenllm-bench/) — cyber threat intelligence comprehension and task evaluation.
+- [SecQA](./sub/sec-qa/) — GPT-4-generated computer-security multiple-choice questions.
 - [SentinelBench](./sub/sentinelbench/)
 - [SimpleQA](./sub/simpleqa/)
 - [SimpleQA Verified](./sub/simpleqa-verified/)
@@ -147,6 +154,7 @@ The materialized set below is curated rather than exhaustive.
 - [TUA-Bench](./sub/tua-bench/)
 - [VoxParity](./sub/voxparity/) — voice-agent tool decisions influenced by acoustic cues.
 - [WeaveBench](./sub/weavebench/)
+- [WikiWebFacts](./sub/yandex-wikiwebfacts/) — gated Russian short-answer factual question answering.
 - [WildClawBench](./sub/wildclawbench/) — end-to-end agent work across browser, code and communication tools.
 - [WinoGrande](./sub/winogrande/) — commonsense pronoun/disambiguation challenge.
 - [WMDP](./sub/wmdp/) — controlled evaluation of hazardous-knowledge retention and unlearning.

@@ -1,0 +1,14 @@
+entity:
+  id: catalog/datasets/frames
+  type: dataset
+  name: "FRAMES"
+  aliases:
+    - "Factuality, Retrieval And reasoning MEasurement Set"
+  identity_note: >-
+    Google multi-hop factuality, retrieval and reasoning evaluation built around 824 questions.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/google/frames-benchmark
+      purposes: [identification, research]
+      authority: official

@@ -1,0 +1,14 @@
+entity:
+  id: catalog/datasets/yandex-wikiwebfacts
+  type: dataset
+  name: "WikiWebFacts"
+  aliases:
+    - "Yandex Russian factual QA"
+  identity_note: >-
+    Russian short-answer factual question answering based on encyclopedic and web knowledge, distinct from HardMultiQA.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/yandex/WikiWebFacts
+      purposes: [identification, research]
+      authority: official
