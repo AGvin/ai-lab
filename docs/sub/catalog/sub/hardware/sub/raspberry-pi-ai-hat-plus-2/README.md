@@ -1,5 +1,7 @@
 # Raspberry Pi AI HAT+ 2
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** See the [provenance policy](../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 Raspberry Pi AI HAT+ 2 is a Raspberry Pi 5 accelerator product built around Hailo-10H with 40 TOPS INT4-class compute and 8 GB dedicated onboard LPDDR4X memory.
 
 ## Hardware boundary
@@ -17,3 +19,9 @@ Runtime and firmware support, the model catalog, performance, availability, and 
 - [Raspberry Pi AI HAT+ 2](https://www.raspberrypi.com/products/ai-hat-plus-2/)
 - [Raspberry Pi AI HAT documentation](https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html)
 - [Introducing Raspberry Pi AI HAT+ 2](https://www.raspberrypi.com/news/introducing-the-raspberry-pi-ai-hat-plus-2-generative-ai-on-raspberry-pi-5/)
+
+## Scoped original-source acceptance — 2026-11-05
+
+Raspberry Pi AI HAT+ 2 for Raspberry Pi 5 is a Hailo-10H NPU board with 40 TOPS INT4-class theoretical throughput and its own 8 GB accelerator-local RAM, which is not pooled with Raspberry Pi system memory. The product adds supported compiled local LLM and VLM options beyond the Hailo-8/8L AI HAT+ class; advertised ~6B parameter scope is approximate product guidance, not universal checkpoint or runtime compatibility. Validate supported Hailo artifact, quantization, HailoRT version and intended model before recommending deployment.
+
+No hardware execution, repository-wide source freshness/schema/CI/cache/render, independent benchmark or ownership/legal clearance was performed.

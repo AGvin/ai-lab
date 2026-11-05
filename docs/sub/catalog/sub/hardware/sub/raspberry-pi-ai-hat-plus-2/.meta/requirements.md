@@ -17,3 +17,9 @@
 - `40 TOPS INT4` is not converted into a universal model-speed or compatibility claim.
 - `~6B` is not converted into a generic parameter-count fit table.
 - Practical model recommendations require exact current Hailo artifact/numerical-scheme/runtime evidence.
+
+## Scoped original-source acceptance — 2026-11-05
+
+- Original manufacturer source: https://www.raspberrypi.com/products/ai-hat-plus-2/
+- Raspberry Pi AI HAT+ 2 for Raspberry Pi 5 is a Hailo-10H NPU board with 40 TOPS INT4-class theoretical throughput and its own 8 GB accelerator-local RAM, which is not pooled with Raspberry Pi system memory. The product adds supported compiled local LLM and VLM options beyond the Hailo-8/8L AI HAT+ class; advertised ~6B parameter scope is approximate product guidance, not universal checkpoint or runtime compatibility. Validate supported Hailo artifact, quantization, HailoRT version and intended model before recommending deployment.
+- Preserve exact SKU, chip/card/system, host memory and runtime boundaries; source acceptance alone is not a complete availability, model execution, benchmark, ownership/legal or final schema/CI/cache/renderer audit.

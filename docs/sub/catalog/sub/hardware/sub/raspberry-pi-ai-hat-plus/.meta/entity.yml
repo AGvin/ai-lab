@@ -2,6 +2,8 @@ entity:
   id: catalog/hardware/raspberry-pi-ai-hat-plus
   type: hardware-product
   name: Raspberry Pi AI HAT+
+  identity_note: >-
+    Raspberry Pi AI HAT+ for Raspberry Pi 5 is offered with Hailo-8L 13 TOPS INT8 and Hailo-8 26 TOPS INT8 variants, for supported NPU vision and related workloads using the host Raspberry Pi system RAM. It does not supply the Hailo-10H local 8 GB onboard RAM or supported GenAI/LLM/VLM path of AI HAT+ 2. TOPS are variant-dependent theoretical operations and do not establish application throughput, compiler compatibility, general GGUF portability or current price.
   references:
     - type: product-page
       source:

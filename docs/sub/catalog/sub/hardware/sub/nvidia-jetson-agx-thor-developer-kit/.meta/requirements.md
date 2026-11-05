@@ -17,3 +17,9 @@
 - One complete developer-kit hardware identity, no duplicate T5000 learned/compute module identity or automotive kit conflation.
 - NVIDIA produced-by / produces relations resolve and direct index/producer links have canonical targets.
 - Scoped content/link/relation checks do not constitute full-current-head JSON Schema, cache, CI, final rendering, measured throughput or two clean catalog-wide research passes.
+
+## Scoped original-source acceptance — 2026-11-05
+
+- Official source: https://developer.nvidia.com/embedded/jetson-developer-kits
+- This is a complete Blackwell-based Jetson AGX Thor Developer Kit containing a T5000 128 GB module on a development carrier, distinct from a standalone T5000 production module and T4000. NVIDIA quotes up to 2070 FP4 TFLOPS and a 130 W envelope for specified module compute and power conditions, not measured application inference or complete-system wall power. Robotics use requires independent safety controls, qualified power and cooling, JetPack validation and workload-specific testing. Vendor launch and kit descriptions are not adoption or ownership clearance.
+- Preserve SKU and chip-versus-system boundaries. Current runtime, model artifacts, availability, ownership/rights, robotics safety and deployment are not cleared by this source qualification. No full freshness/schema/CI/cache/render or physical testing performed.

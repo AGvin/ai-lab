@@ -1,5 +1,7 @@
 # NVIDIA Jetson Orin Nano Super Developer Kit
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** See the [provenance policy](../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 NVIDIA Jetson Orin Nano Super Developer Kit is an 8 GB Ampere-based development kit for local generative AI, vision and robotics prototyping. “Super” includes a software-enabled performance mode available to compatible existing Orin Nano developer kits; it does not establish a new production-module silicon identity.
 
 ## Deployment boundaries
@@ -16,3 +18,9 @@ Confirm the required JetPack/firmware upgrade, power supply, cooling, boot stora
 
 - [Product and Super upgrade overview](https://www.nvidia.com/en-eu/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/)
 - [Developer-kit user guide](https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/index.html)
+
+## Scoped original-source acceptance — 2026-11-05
+
+NVIDIA Jetson Orin Nano Super Developer Kit combines an 8 GB LPDDR5 Ampere-based development module/carrier with a software-enabled Super mode (up to 67 INT8 TOPS, 102 GB/s specified memory bandwidth, 7–25 W published power modes). Eligible older Orin Nano development kits can be updated to Super; Super is not a wholly separate production-module silicon SKU. Model compatibility, available memory, JetPack/firmware, boot storage, thermals and actual throughput require current validation.
+
+No physical tests, whole-catalog source freshness/schema/CI/cache/render, model execution or ownership/legal clearance were performed.

@@ -1,5 +1,7 @@
 # NVIDIA Jetson AGX Thor Developer Kit
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** See the [provenance policy](../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 The NVIDIA Jetson AGX Thor Developer Kit is a released Blackwell-based reference development computer for robotics, edge inference and physical-AI prototyping. [NVIDIA announced general availability on 25 August 2025](https://nvidianews.nvidia.com/news/nvidia-blackwell-powered-jetson-thor-now-available-accelerating-the-age-of-general-robotics). It is a complete developer-board configuration built around the 128 GB [Jetson T5000 production module](../nvidia-jetson-t5000/), not a second T5000 module or a production-system qualification.
 
 ## Included platform and boundaries
@@ -25,3 +27,9 @@ NVIDIA's [official FAQ](https://developer.nvidia.com/embedded/faq) identifies re
 - [Module and developer-kit specifications](https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai)
 - [Developer-kit FAQ and regional SKUs](https://developer.nvidia.com/embedded/faq)
 - [JetPack SDK compatibility and release downloads](https://developer.nvidia.com/embedded/jetpack/downloads)
+
+## Scoped original-source acceptance — 2026-11-05
+
+This is a complete Blackwell-based Jetson AGX Thor Developer Kit containing a T5000 128 GB module on a development carrier, distinct from a standalone T5000 production module and T4000. NVIDIA quotes up to 2070 FP4 TFLOPS and a 130 W envelope for specified module compute and power conditions, not measured application inference or complete-system wall power. Robotics use requires independent safety controls, qualified power and cooling, JetPack validation and workload-specific testing. Vendor launch and kit descriptions are not adoption or ownership clearance.
+
+No physical tests, whole-catalog source freshness/schema/CI/cache/render, model execution or ownership/legal clearance were performed.

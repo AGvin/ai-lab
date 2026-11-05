@@ -15,3 +15,9 @@
 - Hailo-8L 13 TOPS and Hailo-8 26 TOPS variants are not conflated.
 - AI HAT+ is not described as having the AI HAT+ 2 onboard-memory/GenAI capability class.
 - Product identity remains separate from Hailo accelerator silicon, HailoRT, model artifacts, and Raspberry Pi 5 itself.
+
+## Scoped original-source acceptance — 2026-11-05
+
+- Official source: https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html
+- Raspberry Pi AI HAT+ for Raspberry Pi 5 is offered with Hailo-8L 13 TOPS INT8 and Hailo-8 26 TOPS INT8 variants, for supported NPU vision and related workloads using the host Raspberry Pi system RAM. It does not supply the Hailo-10H local 8 GB onboard RAM or supported GenAI/LLM/VLM path of AI HAT+ 2. TOPS are variant-dependent theoretical operations and do not establish application throughput, compiler compatibility, general GGUF portability or current price.
+- Preserve SKU and chip-versus-system boundaries. Current runtime, model artifacts, availability, ownership/rights, robotics safety and deployment are not cleared by this source qualification. No full freshness/schema/CI/cache/render or physical testing performed.
