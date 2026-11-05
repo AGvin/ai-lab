@@ -57,3 +57,7 @@ Corporate ownership and product authorship are different relationships: GitHub r
 - [Visual Studio Code licensing and services](https://code.visualstudio.com/docs/supporting/faq)
 - [Maia 200 announcement](https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/)
 - [Foundry Agent Service overview](https://learn.microsoft.com/en-us/azure/foundry/agents/overview)
+
+## Original model publication
+
+- Produces: [BitNet](../../../../../models/sub/microsoft/sub/bitnet/) — original model research; exact checkpoints and distribution terms have separate profiles.

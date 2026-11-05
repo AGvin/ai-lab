@@ -20,6 +20,7 @@ Task comparisons, recommendations and hardware-fit decisions are separate from i
 - [deepseek](./sub/deepseek/)
 - [fal](./sub/fal/)
 - [google](./sub/google/)
+- [Hugging Face Models](./sub/hugging-face/)
 - [huihui ai](./sub/huihui-ai/)
 - [ibm](./sub/ibm/)
 - [ibm nasa](./sub/ibm-nasa/)

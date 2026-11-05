@@ -1,0 +1,20 @@
+entity:
+  id: catalog/models/meta/llama/llama-3-3-70b-instruct
+  type: model
+  name: Llama 3.3 70B Instruct
+  identity_note: >-
+    Meta's December 6, 2024 instruction-tuned checkpoint is text-only, with 70B parameters, 128K context and eight explicitly supported languages. It is distinct from Llama 4 multimodal models. Downloadable weights use the custom Llama 3.3 Community License and Acceptable Use Policy, not MIT or Apache-2.0; Hub access requires the publisher's conditions. No conditions were accepted or weights downloaded here. Pin an exact revision and compatible chat/tool format. Review the full license and applicable use policy before reuse or distribution. Validate tool arguments and isolate generated code; model size and quantization labels alone do not establish hardware fit. Publisher capability/benchmark claims were not independently reproduced. Ownership/control-chain review is incomplete; no Russian-control finding or adoption clearance is established.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/LICENSE
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/meta/llama

@@ -27,7 +27,7 @@ Gemma's downloadable open-weight distributions are distinct from provider-hosted
 
 ## Provenance boundary
 
-Source material attributes Gemma development to Google DeepMind. The current catalog does not yet model Google DeepMind as a separate producer entity, so that source-specific provenance remains descriptive text rather than an additional canonical producer relation.
+Source material attributes Gemma development to Google DeepMind. Google and Google DeepMind have explicit canonical producer relations above; model-specific publisher attribution remains attached to each exact checkpoint.
 
 ## Scope boundary
 
@@ -47,3 +47,7 @@ This canonical page owns Gemma family identity, broad open-weight access boundar
 - Gemma 4 uses Apache-2.0, while specialized models can have different terms, including MedGemma's Health AI Developer Foundations terms. Downloadable weights do not imply one family-wide license or a privacy guarantee for the application. [Gemma 4 license](https://ai.google.dev/gemma/docs/core/model_card_4) · [MedGemma documentation](https://developers.google.com/health-ai-developer-foundations/medgemma).
 - DiffusionGemma remains explicitly experimental in its current overview and stays outside this released-model intake. Keep that status distinct from the released Gemma 4 instruction checkpoints. [DiffusionGemma status](https://ai.google.dev/gemma/docs/diffusiongemma).
 - Local capability, model size, artifact size, and runtime memory are different facts. Selection still requires the exact checkpoint, precision, supported modalities, context, runtime, and workload configuration. [Gemma model overview](https://ai.google.dev/gemma/docs/core).
+
+## Additional released checkpoint
+
+- [Gemma 3 27B IT](./sub/gemma-3-27b-it/) — exact licensed checkpoint with local access and provenance boundaries.

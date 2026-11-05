@@ -177,3 +177,5 @@ entity:
       target: catalog/software/application-frameworks/data-and-retrieval/markitdown
     - type: produces
       target: catalog/software/inference-runtimes/inference-engines/bitnet-cpp
+    - type: produces
+      target: catalog/models/microsoft/bitnet

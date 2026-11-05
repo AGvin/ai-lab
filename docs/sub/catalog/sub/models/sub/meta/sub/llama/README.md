@@ -19,3 +19,7 @@ Llama is Meta's model family. Llama 4 is represented as a series containing dist
 
 - <https://ai.meta.com/llama/get-started/>
 - <https://ai.meta.com/blog/llama-4-multimodal-intelligence/>
+
+## Additional released checkpoint
+
+- [Llama 3.3 70B Instruct](./sub/llama-3-3-70b-instruct/) — exact licensed checkpoint with local access and provenance boundaries.

@@ -21,6 +21,8 @@
 
 - Include the identity and producer-boundary context from canonical `entity.identity_note`; keep detailed product behavior with the related canonical owners.
 
+- Add the source-backed BitNet family relation and keep original model authorship distinct from hosting/runtime identity.
+
 ## Validation
 
 - GitHub ownership is not treated as evidence that Microsoft directly produces GitHub-authored catalog products.

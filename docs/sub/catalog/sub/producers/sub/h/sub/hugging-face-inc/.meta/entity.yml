@@ -111,3 +111,5 @@ entity:
       target: catalog/producers/g/ggml-ai
     - type: owns
       target: catalog/software/model-and-data-platforms/dataset-curation/argilla
+    - type: produces
+      target: catalog/models/hugging-face/smollm3

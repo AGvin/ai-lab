@@ -39,3 +39,7 @@ On September 3, 2026, [NVIDIA announced an agreement to acquire Hugging Face](ht
 - [Argilla transition announcement](https://argilla.io/blog/argilla-joins-hugggingface/)
 - [Hugging Face Skills upstream](https://github.com/huggingface/skills)
 - [Argilla co-founder acquisition statement](https://huggingface.co/posts/dvilasuero/203008804842390)
+
+## Original model publication
+
+- Produces: [SmolLM3](../../../../../models/sub/hugging-face/sub/smollm3/) — original model research; exact checkpoints and distribution terms have separate profiles.

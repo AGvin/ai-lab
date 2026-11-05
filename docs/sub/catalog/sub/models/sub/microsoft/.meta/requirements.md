@@ -4,7 +4,7 @@
 
 - Identify this node as the Microsoft model-domain view rather than a duplicate organization profile.
 - Link the canonical Microsoft producer page.
-- Link the Phi family.
+- Link the Phi and BitNet families; distinguish the separate bitnet.cpp runtime.
 - Keep Azure/service/runtime/deployment facts outside model identity.
 
 ## Validation

@@ -17,6 +17,8 @@
 - Preserve the family-level instruction that exact series, concrete model, variant, artifact, runtime, precision, and modality configuration must be recorded for evaluations.
 - Include official Gemma documentation and the Google Hugging Face organization.
 
+- Link the reviewed Gemma 3 27B IT member and retain its exact generation-specific license and access boundary on the concrete profile.
+
 ## Validation
 
 - Gemma is not treated as one exact deployment identity.
