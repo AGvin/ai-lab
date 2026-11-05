@@ -1,5 +1,7 @@
 # Microsoft Maia 200
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** See the [provenance policy](../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 ## Relations
 
 - Produced by: [Microsoft](../../../producers/sub/m/sub/microsoft/)
@@ -16,3 +18,9 @@ Maia 200 is hardware, separate from Azure and Microsoft Foundry services, the su
 
 - [Maia 200 announcement](https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/)
 - [Official website](https://news.microsoft.com/maia-200/)
+
+## Scoped original-source acceptance — 2026-11-05
+
+Microsoft Maia 200 is a Microsoft-fleet first-party inference accelerator with 216 GB HBM3e, 7 TB/s memory bandwidth, 272 MB on-chip SRAM, TSMC 3 nm silicon and a 750 W SoC TDP envelope. Microsoft's initial January 2026 deployment was US Central and its Maia SDK was a preview invitation, not general retail hardware availability or universal customer access. Reported per-dollar or competing-accelerator comparisons are manufacturer claims dependent on model, precision and fleet conditions, not independently benchmarked results.
+
+No independent hardware benchmarking, model/runtime execution, full freshness/schema/CI/cache/render or ownership/legal clearance was performed.

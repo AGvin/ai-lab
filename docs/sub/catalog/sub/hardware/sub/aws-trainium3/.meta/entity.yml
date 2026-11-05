@@ -2,9 +2,16 @@ entity:
   id: catalog/hardware/aws-trainium3
   type: hardware-product
   name: AWS Trainium3
+  identity_note: >-
+    AWS Trainium3 is a single purpose-built AI accelerator chip with 144 GB HBM3e and 4.9 TB/s peak chip memory bandwidth. Up to 144 chips, 20.7 TB HBM3e and 706 TB/s bandwidth describe the EC2 Trn3 UltraServer aggregate rather than a single chip. Trn3 and AWS Neuron are the server/service and runtime surfaces, not alternative chip identities. Current regions, SDK/framework versions, network topology, workload/model throughput, legal/control rights and access require separate verification.
   aliases:
     - Trainium3
   references:
+    - type: documentation
+      source:
+        url: https://aws.amazon.com/ec2/instance-types/trn3/
+      purposes: [identification, research]
+      authority: official
     - type: release-notes
       source:
         url: https://aws.amazon.com/about-aws/whats-new/2025/12/amazon-ec2-trn3-ultraservers/

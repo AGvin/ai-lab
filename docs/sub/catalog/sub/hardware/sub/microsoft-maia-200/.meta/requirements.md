@@ -17,3 +17,9 @@
 - Maia 200 is not collapsed into Azure or Microsoft Foundry as a hosted service.
 - Comparative performance claims retain their exact Microsoft-stated precision, workload, fleet, and time boundaries.
 - Producer provenance resolves to Microsoft.
+
+## Scoped original-source acceptance — 2026-11-05
+
+- Original manufacturer source: https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/
+- Microsoft Maia 200 is a Microsoft-fleet first-party inference accelerator with 216 GB HBM3e, 7 TB/s memory bandwidth, 272 MB on-chip SRAM, TSMC 3 nm silicon and a 750 W SoC TDP envelope. Microsoft's initial January 2026 deployment was US Central and its Maia SDK was a preview invitation, not general retail hardware availability or universal customer access. Reported per-dollar or competing-accelerator comparisons are manufacturer claims dependent on model, precision and fleet conditions, not independently benchmarked results.
+- Preserve chip/card/system provenance and exact source limitations. No physical execution, current model/runtime benchmark, whole-catalog freshness/schema/CI/cache/render or full ownership/legal clearance was performed.
