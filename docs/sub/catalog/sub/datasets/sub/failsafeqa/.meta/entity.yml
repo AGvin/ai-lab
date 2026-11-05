@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/failsafeqa
+  type: dataset
+  name: "FailSafeQA"
+  aliases:
+    - "Long-Context Finance Fail-Safe QA"
+  identity_note: >-
+    Long-context financial QA robustness benchmark of 220 items, including incomplete, out-of-domain and erroneous query conditions.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/Writer/FailSafeQA
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://arxiv.org/abs/2502.06329
+      purposes: [research]
+      authority: official

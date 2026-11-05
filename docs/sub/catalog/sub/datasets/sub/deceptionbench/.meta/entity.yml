@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/deceptionbench
+  type: dataset
+  name: "DeceptionBench"
+  aliases:
+    - "LLM Deceptive Behavior Evaluation Benchmark"
+  identity_note: >-
+    Controlled evaluation of deceptive behaviors and deceptive-alignment signals in large language models; distinct from naturally occurring real-world deception.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/PKU-Alignment/DeceptionBench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://arxiv.org/abs/2505.18807
+      purposes: [research]
+      authority: official

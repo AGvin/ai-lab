@@ -24,6 +24,7 @@ The materialized set below is curated rather than exhaustive.
 - [Attempt to Persuade Eval (APE)](./sub/attempt-persuade-eval/) — persuasion attempt evaluation across benign and sensitive topics.
 - [APPS Coding Challenge Dataset](./sub/apps/) — programming-challenge evaluation with executable tests.
 - [AppWorld](./sub/appworld/) — multi-application tool-use and interactive coding agent benchmark.
+- [AraTrust](./sub/aratrust/) — Arabic LLM trustworthiness and safety evaluation.
 - [AsgardBench](./sub/asgardbench/)
 - [AssistantBench](./sub/assistantbench/) — realistic long-running web-agent information tasks.
 - [Bias Benchmark for QA (BBQ)](./sub/bbq/) — ambiguous and disambiguated social-bias QA.
@@ -52,13 +53,16 @@ The materialized set below is curated rather than exhaustive.
 - [CyberGym](./sub/cybergym/) — isolated cybersecurity agent evaluation tasks.
 - [CyberMetric](./sub/cybermetric/) — cybersecurity knowledge question dataset.
 - [DeepSearchQA](./sub/deepsearchqa/)
+- [DeceptionBench](./sub/deceptionbench/) — controlled evaluation of deceptive behaviors in language models.
 - [DocVQA](./sub/docvqa/) — visual question answering over scanned single-document images.
 - [DROP](./sub/drop/)
 - [DS-1000](./sub/ds-1000/) — data-science code-generation benchmark.
 - [Do-Not-Answer](./sub/do-not-answer/) — safety-refusal instruction evaluation.
 - [GeneBench-Pro](./sub/genebench-pro/)
 - [EVMbench](./sub/openai-evmbench/) — smart-contract auditing, patching and exploit evaluation.
+- [FailSafeQA](./sub/failsafeqa/) — 220 long-context financial QA robustness records.
 - [FRAMES](./sub/frames/) — 824 multi-hop questions combining factual retrieval and reasoning.
+- [FORTRESS](./sub/fortress/) — public paired adversarial and benign LLM safety evaluation.
 - [Frontier-CS](./sub/frontier-cs/) — open-ended computer-science research and algorithms benchmark.
 - [GPQA](./sub/gpqa/)
 - [GroundedPlanBench](./sub/groundedplanbench/)
@@ -137,6 +141,7 @@ The materialized set below is curated rather than exhaustive.
 - [SimpleQA](./sub/simpleqa/)
 - [SimpleQA Verified](./sub/simpleqa-verified/)
 - [SkillsBench](./sub/skillsbench/)
+- [SOSBench](./sub/sosbench/) — restricted-use scientific safety-alignment benchmark.
 - [SPaRC](./sub/sparc/) — grid-pathfinding spatial reasoning puzzles and solution validation.
 - [Spider 2.0](./sub/spider-2-0/)
 - [SQuAD](./sub/squad/) — reading-comprehension question answering over passages.
@@ -148,11 +153,14 @@ The materialized set below is curated rather than exhaustive.
 - [SWE-Lancer](./sub/swe-lancer/) — software engineering tasks modeled on real freelance assignments.
 - [SWE-smith](./sub/swe-smith/) — synthetic software engineering training tasks and generated environments.
 - [SycophancyEval](./sub/sycophancy-eval/) — model agreement bias in free-form text-generation tasks.
+- [TAC](./sub/tac/) — gated travel-agent animal-welfare decision scenarios.
 - [TarantuBench v1](./sub/tarantubench/) — isolated synthetic vulnerable web challenge evaluation for agents.
 - [TheAgentCompany](./sub/the-agent-company/) — 175-task simulated workplace agent benchmark (1.0.0).
 - [TruthfulQA](./sub/truthfulqa/)
 - [TUA-Bench](./sub/tua-bench/)
+- [UCCB](./sub/uccb/) — 1,039 Ugandan cultural QA pairs across 24 domains.
 - [VoxParity](./sub/voxparity/) — voice-agent tool decisions influenced by acoustic cues.
+- [V*Bench](./sub/vstar-bench/) — 191 high-resolution visual detail and spatial reasoning questions.
 - [WeaveBench](./sub/weavebench/)
 - [WikiWebFacts](./sub/yandex-wikiwebfacts/) — gated Russian short-answer factual question answering.
 - [WildClawBench](./sub/wildclawbench/) — end-to-end agent work across browser, code and communication tools.
