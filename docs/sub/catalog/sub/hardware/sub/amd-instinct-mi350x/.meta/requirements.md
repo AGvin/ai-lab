@@ -16,3 +16,8 @@
 - Exact specifications remain attached to MI350X rather than generalized to every MI350-family product.
 - Mutable compatibility/support/performance claims are not presented as timeless hardware identity facts.
 - The `produces` / `produced-by` relation pair resolves consistently to Advanced Micro Devices, Inc.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the SKU and original-source discrepancy context from entity.identity_note. Prefer product and architecture evidence for HBM3E and exact SKU identity over copied acceptance-guide wording.
+- Keep manufacturer attribution separate from pending ownership/control review. No full freshness audit or operational compatibility claim is implied.
