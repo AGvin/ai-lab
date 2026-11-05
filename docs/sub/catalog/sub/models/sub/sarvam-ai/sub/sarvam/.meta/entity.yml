@@ -21,3 +21,5 @@ entity:
       target: catalog/producers/s/sarvam-ai
     - type: has-member
       target: catalog/models/sarvam-ai/sarvam/models/sarvam-105b
+    - type: has-member
+      target: catalog/models/sarvam-ai/sarvam/models/sarvam-30b

@@ -1,6 +1,6 @@
 # Sarvam
 
-Sarvam is Sarvam AI's open general-purpose chat and reasoning model family. This catalog currently materializes its [Sarvam-105B](./sub/models/sub/sarvam-105b/) flagship model, while keeping older Sarvam-30B as historical release context.
+Sarvam is Sarvam AI's open general-purpose chat and reasoning model family. This catalog currently materializes its [Sarvam-105B](./sub/models/sub/sarvam-105b/) flagship model, alongside the published Sarvam-30B weights documented below; the retired Sarvam-30B API remains historical service context.
 
 ## Release and service boundaries
 
@@ -22,3 +22,7 @@ Saaras, Bulbul, Mayura, Sarvam Vision/Document AI, Indus and Samvaad belong to o
 - [Sarvam 30B/105B open-source release](https://www.sarvam.ai/blogs/sarvam-30b-105b)
 - [Current Sarvam model catalog](https://docs.sarvam.ai/api/getting-started/models)
 - [Sarvam-30B retirement (August 18, 2026)](https://docs.sarvam.ai/changelog/2026/8/18)
+
+## Additional reviewed models
+
+- [Sarvam-30B](sub/models/sub/sarvam-30b/) — exact model with local lifecycle and access boundaries.

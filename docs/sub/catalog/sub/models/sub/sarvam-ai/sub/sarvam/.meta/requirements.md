@@ -7,6 +7,8 @@
 - Keep Saaras, Bulbul, Mayura, Sarvam Vision/Document AI, Indus, Samvaad, API pricing, and third-party beta models separate from this general model identity.
 - Treat endpoint aliases, context, benchmark claims, language coverage, license, pricing, and provider availability as freshness-sensitive.
 
+- Link Sarvam-30B; preserve each exact model's lifecycle, access and license boundaries locally rather than inheriting language-model/API facts.
+
 ## Validation
 
 - Producer provenance resolves to Sarvam AI.

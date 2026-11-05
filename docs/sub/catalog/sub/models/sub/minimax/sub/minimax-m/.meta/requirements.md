@@ -6,6 +6,8 @@
 - Link MiniMax through the canonical `produced-by` relation and the materialized MiniMax M2 and M3 concrete models.
 - Keep mutable hosted API behavior, pricing, benchmark rankings, and product positioning outside durable family identity.
 
+- Link MiniMax M3.1 Flash; preserve each exact model's lifecycle, access and license boundaries locally rather than inheriting language-model/API facts.
+
 ## Validation
 
 - MiniMax M remains a family rather than a product or API plan.

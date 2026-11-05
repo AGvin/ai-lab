@@ -19,3 +19,7 @@ MiniMax M is MiniMax's model family for coding, reasoning and agentic workflows.
 ## Additional released checkpoint
 
 - [MiniMax M2](sub/models/sub/m2/) — separate trained checkpoint; licensing and provenance-review boundaries are documented locally.
+
+## Additional reviewed models
+
+- [MiniMax M3.1 Flash](sub/models/sub/m3-1-flash/) — exact model with local lifecycle and access boundaries.
