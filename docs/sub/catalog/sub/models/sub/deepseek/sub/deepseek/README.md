@@ -13,6 +13,7 @@ Architecture, parameter counts, modalities, context, license, and release revisi
 
 - [DeepSeek model collections](https://huggingface.co/deepseek-ai/collections)
 
-## Additional released checkpoint
+## Additional released checkpoints
 
 - [DeepSeek-V3.2](sub/deepseek-v3-2/) — separate trained checkpoint; licensing and provenance-review boundaries are documented locally.
+- [DeepSeek-R1](./sub/deepseek-r1/) — original reasoning checkpoint, distinct from R1-Zero, later R1 releases and distilled checkpoints.

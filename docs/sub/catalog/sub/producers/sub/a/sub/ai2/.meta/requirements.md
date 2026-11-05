@@ -13,6 +13,8 @@
 - Keep organizational partnerships, funding/history, ownership or legal service contracts distinct; founding by Paul Allen is not a present beneficial-ownership or sanctions determination.
 - Render the standard current-entity relations projection and direct primary official resources: Ai2 main site, About, Open Data original Aristo tools repository and archived original DROP publisher page, and original Qasper dataset card and SciFact original repository/license.
 
+- Add source-backed Olmo 3 family provenance through exactly one produces/produced-by pair; link the model-domain view while retaining dataset licensing boundaries.
+
 ## Validation
 
 - Exactly one canonical Ai2 organization under the producers A index and one inverse link to the original ARC dataset.

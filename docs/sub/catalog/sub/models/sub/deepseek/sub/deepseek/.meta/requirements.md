@@ -6,6 +6,8 @@
 - Link the canonical producer and every materialized DeepSeek model series and direct concrete model.
 - Keep series/model-specific properties out of the family profile unless they are genuinely shared.
 
+- Include the original DeepSeek-R1 checkpoint with its local licensing, upstream and runtime-support uncertainties.
+
 ## Validation
 
 - Producer identity and family identity remain distinct.

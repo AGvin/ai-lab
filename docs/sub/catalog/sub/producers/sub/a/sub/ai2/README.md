@@ -8,6 +8,10 @@ Ai2 publishes several distinct original datasets: **ARC (2018)**, **OpenBookQA (
 
 Ai2's public descriptions do not by themselves establish a complete current indirect ownership or sanctions audit; the publisher identity is not a blanket declaration about all third-party material in its datasets.
 
+## Model publications
+
+Ai2 also publishes the [Olmo 3 family](../../../../../models/sub/ai2/sub/olmo-3/); see [Ai2 Models](../../../../../models/sub/ai2/). Model licenses and training-material rights remain separate from the dataset licenses below.
+
 ## Relations
 
 - Produces: [Ai2 Reasoning Challenge (ARC)](../../../../../datasets/sub/ai2-reasoning-challenge/).
@@ -15,6 +19,8 @@ Ai2's public descriptions do not by themselves establish a complete current indi
 - Produces: [DROP](../../../../../datasets/sub/drop/).
 - Produces: [Qasper](../../../../../datasets/sub/qasper/).
 - Produces: [SciFact](../../../../../datasets/sub/scifact/).
+
+- Produces: [Olmo 3](../../../../../models/sub/ai2/sub/olmo-3/).
 
 ## Official resources
 

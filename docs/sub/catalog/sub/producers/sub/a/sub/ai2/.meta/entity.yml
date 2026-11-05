@@ -14,6 +14,8 @@ entity:
     The organization's name and this dataset's acronym must not be confused with
     the independent ARC Prize Foundation or ARC-AGI benchmark. Product-level data
     licenses, upstream contributors, and partnerships are not universal ownership grants.
+    Ai2 also publishes the Olmo 3 model family; original model and training-material
+    licenses remain distinct from dataset rights and website/service terms.
   references:
     - type: official-site
       source:
@@ -68,3 +70,5 @@ entity:
       target: catalog/datasets/qasper
     - type: produces
       target: catalog/datasets/scifact
+    - type: produces
+      target: catalog/models/ai2/olmo-3
