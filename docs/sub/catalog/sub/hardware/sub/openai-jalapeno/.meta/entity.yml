@@ -2,6 +2,8 @@ entity:
   id: catalog/hardware/openai-jalapeno
   type: hardware
   name: OpenAI Jalapeño Intelligence Processor
+  identity_note: >-
+    OpenAI and Broadcom unveiled the first-generation Jalapeño Intelligence Processor in June 2026 after delivery of first-generation silicon. OpenAI is the named platform/product producer, while Broadcom is its development/manufacturing partner. Early efficiency comparisons are vendor reports; announced gigawatt-scale plans are not proof of deployed chip fleet, general commercial availability, or independent LLM throughput.
   aliases:
     - Jalapeño
   references:

@@ -13,6 +13,11 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics/
+      purposes: [research]
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/m/meta

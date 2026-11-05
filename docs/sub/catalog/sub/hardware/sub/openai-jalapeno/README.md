@@ -16,3 +16,12 @@ Performance-per-watt claims are vendor-reported. Future generations, deployment 
 
 - [OpenAI and Broadcom unveil Jalapeño](https://openai.com/index/openai-broadcom-jalapeno-inference-chip/)
 - [Broadcom Jalapeño announcement](https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor)
+
+## Scoped original-source qualification — 2026-11-06
+
+OpenAI and Broadcom unveiled the first-generation Jalapeño Intelligence Processor in June 2026 after delivery of first-generation silicon. OpenAI is the named platform/product producer, while Broadcom is its development/manufacturing partner. Early efficiency comparisons are vendor reports; announced gigawatt-scale plans are not proof of deployed chip fleet, general commercial availability, or independent LLM throughput.
+
+- Official source 1: https://openai.com/index/openai-broadcom-jalapeno-inference-chip/
+- Official source 2: https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor
+
+These manufacturer/source facts are not independent workload benchmarks, availability assurances, legal/ownership clearance or full schema/CI/cache/render and runtime verification.
