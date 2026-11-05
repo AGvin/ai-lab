@@ -8,6 +8,8 @@
 - Keep GPT-Rosalind model identity distinct from Rosalind Workbench, life-sciences plugins, Codex integrations, trusted-access program policy, and the broader Rosalind product/brand surface.
 - Treat benchmark and partner-evaluation results as scoped evaluation evidence, not timeless intrinsic capability guarantees.
 
+- Include the independently named GPT-6 Rosalind release with its exact hosted-access boundary; no inferred new generation-level family or series is required.
+
 ## Validation
 
 - Current released/trusted-access status is not described as research preview.

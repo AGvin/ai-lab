@@ -9,6 +9,8 @@ Concrete models in the [GPT](../../README.md) family.
 - [GPT-6 Sol](sub/gpt-6-sol/README.md).
 - [GPT-6.1 Sol](sub/gpt-6-1-sol/README.md).
 
+- [GPT-6.1 Terra](./sub/gpt-6-1-terra/)
+
 ## Scope and boundaries
 
 Each model page owns its exact identifiers, provenance, and operating boundaries. This index supplies navigation without implying that sibling models have the same access or capabilities.

@@ -17,6 +17,8 @@
 - Preserve the identity distinction that product routing/reasoning labels are product-level configurations rather than separate GPT families.
 - Include the official OpenAI model catalog as the primary research reference.
 
+- Include the independently named GPT-6.1 Terra release with its exact hosted-access boundary; no inferred new generation-level family or series is required.
+
 ## Validation
 
 - ChatGPT is not treated as a GPT model family or concrete model.

@@ -35,4 +35,6 @@ entity:
       target: catalog/models/openai/gpt/models/gpt-6-luna
     - type: has-member
       target: catalog/models/openai/gpt/models/gpt-6-1-sol
+    - type: has-member
+      target: catalog/models/openai/gpt/models/gpt-6-1-terra
   identity_note: General-purpose model family; product names, reasoning modes, and routing aliases are not separate GPT families.

@@ -31,3 +31,7 @@ Reasoning effort, processing modes, enabled tools, and multi-agent serving confi
 - [OpenAI model catalog](https://developers.openai.com/api/docs/models).
 - [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).
 - [GPT-6 October 2026 system card](https://deploymentsafety.openai.com/gpt-6-october).
+
+## Additional released model
+
+- [GPT-6.1 Terra](./sub/models/sub/gpt-6-1-terra/) — independently named release; exact access and operating boundaries remain local.

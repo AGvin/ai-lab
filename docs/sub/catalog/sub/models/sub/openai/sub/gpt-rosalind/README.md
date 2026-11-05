@@ -27,3 +27,7 @@ Rosalind Workbench and life-sciences plugins are application and tool layers. Re
 - [GPT-Rosalind-5.5 update](https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/).
 - [GPT-Rosalind-5.5 system card](https://deploymentsafety.openai.com/gpt-rosalind-5-5/introduction).
 - [GPT-Rosalind access documentation](https://help.openai.com/en/articles/20001193-gpt-rosalind-for-life-sciences-research).
+
+## Additional released model
+
+- [GPT-6 Rosalind](./sub/models/sub/gpt-6-rosalind/) — independently named release; exact access and operating boundaries remain local.
