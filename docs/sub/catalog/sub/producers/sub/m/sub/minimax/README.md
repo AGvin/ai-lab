@@ -15,3 +15,7 @@ The company's model research, consumer applications, and developer API are disti
 - [Official website](https://www.minimax.io/)
 - [MiniMax company](https://www.minimax.io/about)
 - [MiniMax M3 release](https://www.minimax.io/blog/minimax-m3)
+
+## H3 model family
+
+- [MiniMax H3](../../../../../models/sub/minimax/sub/h3/) — released multi-checkpoint audiovisual system with custom-license and component-release boundaries.

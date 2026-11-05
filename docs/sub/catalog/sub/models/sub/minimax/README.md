@@ -14,3 +14,7 @@ This model-domain view links the [canonical MiniMax producer](../../../producers
 
 - <https://www.minimax.io/>
 - <https://www.minimax.io/about>
+
+## H3 model family
+
+- [MiniMax H3](./sub/h3/) — released multi-checkpoint audiovisual system with custom-license and component-release boundaries.

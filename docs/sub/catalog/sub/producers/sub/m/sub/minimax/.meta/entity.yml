@@ -33,3 +33,5 @@ entity:
   relations:
     - type: produces
       target: catalog/models/minimax/minimax-m
+    - type: produces
+      target: catalog/models/minimax/h3
