@@ -3,8 +3,7 @@ entity:
   type: hardware-product
   name: "AMD Instinct MI210"
   identity_note: >-
-    AMD CDNA 2 PCIe server accelerator, distinct from MI250 OAM and later Instinct
-    MI300/MI400 families.
+    AMD's original MI210 acceptance guidance identifies a CDNA 2 PCIe Gen4 x16 server accelerator with 104 compute units, 64 GB HBM2e, up to 1.6 TB/s manufacturer memory bandwidth and 300 W passive cooling. Infinity Fabric direct card-to-card links require matching bridges; MI250/MI250X OAM hardware, pooled memory, ROCm compatibility and verified model throughput must not be inferred.
   references:
     - type: product-page
       source:

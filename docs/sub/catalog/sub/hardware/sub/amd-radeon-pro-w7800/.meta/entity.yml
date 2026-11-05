@@ -3,8 +3,7 @@ entity:
   type: hardware-product
   name: "AMD Radeon PRO W7800 family"
   identity_note: >-
-    AMD RDNA 3 workstation GPU family including distinct 32 GB and 48 GB Radeon PRO W7800
-    variants; they are not one interchangeable memory SKU.
+    AMD Radeon PRO W7800 is an RDNA 3 workstation family with distinct 32 GB and 48 GB GDDR6 configurations. The 32 GB SKU has a 256-bit bus and 576 GB/s published memory bandwidth, while W7800 48GB has 384-bit and 864 GB/s. AMD lists 70 compute units and 260 W board power for both. Do not conflate capacities, claim VRAM pooling or infer current ROCm/model compatibility from peak GPU specifications.
   references:
     - type: product-page
       source:
