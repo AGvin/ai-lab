@@ -1,0 +1,13 @@
+entity:
+  id: catalog/models/flower-labs
+  type: model-producer-view
+  name: Flower Labs Models
+  identity_note: >-
+    Model-domain navigation for Flower Labs original models. The producer organization, hosted deployments and software libraries have separate owners.
+    Ownership/control-chain review remains pending; no Russian-control finding or adoption clearance.
+  references:
+    - type: documentation
+      source:
+        url: https://flower.ai/docs/model/
+      purposes: [identification, research]
+      authority: official

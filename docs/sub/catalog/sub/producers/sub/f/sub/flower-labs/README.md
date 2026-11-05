@@ -14,3 +14,7 @@ The organization is distinct from its model releases and software projects. Cons
 
 - [Flower Labs](https://flower.ai/)
 - [Official documentation](https://flower.ai/docs/model/)
+
+## Additional model family
+
+- Produces: [Lizzy](../../../../../models/sub/flower-labs/sub/lizzy/) — exact checkpoints and licenses remain separate.

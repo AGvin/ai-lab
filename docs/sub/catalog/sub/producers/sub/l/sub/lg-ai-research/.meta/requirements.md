@@ -7,6 +7,8 @@
 - Render the standard `entity-relations` block from validated current-entity relations.
 - Keep original model production separate from third-party checkpoint conversions, hosting, and deployment; exact model releases and their licenses remain release-specific.
 
+- Include the source-backed EXAONE family relation separately from existing families and product/runtime identities.
+
 ## Validation
 
 - `produces` is the inverse of K-EXAONE `produced-by`.

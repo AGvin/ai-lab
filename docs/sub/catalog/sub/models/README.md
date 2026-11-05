@@ -19,6 +19,7 @@ Task comparisons, recommendations and hardware-fit decisions are separate from i
 - [davidau](./sub/davidau/)
 - [deepseek](./sub/deepseek/)
 - [fal](./sub/fal/)
+- [Flower Labs Models](./sub/flower-labs/)
 - [google](./sub/google/)
 - [Hugging Face Models](./sub/hugging-face/)
 - [huihui ai](./sub/huihui-ai/)

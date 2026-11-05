@@ -10,6 +10,8 @@ LG AI Research models is the LG AI Research model-domain view.
 
 - [K-EXAONE](./sub/k-exaone/)
 
+- [EXAONE](./sub/exaone/)
+
 ## Official resources
 
 - <https://www.lgresearch.ai/>

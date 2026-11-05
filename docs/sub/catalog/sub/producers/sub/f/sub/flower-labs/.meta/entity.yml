@@ -19,3 +19,5 @@ entity:
   relations:
     - type: produces
       target: catalog/models/flower-labs/endeavor
+    - type: produces
+      target: catalog/models/flower-labs/lizzy

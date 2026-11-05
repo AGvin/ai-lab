@@ -12,3 +12,7 @@ The organization is distinct from other LG group companies, hosted applications,
 
 - [LG AI Research](https://www.lgresearch.ai/)
 - [Official K-EXAONE 2.0 repository](https://github.com/LG-AI-EXAONE/K-EXAONE-2.0)
+
+## Additional model family
+
+- Produces: [EXAONE](../../../../../models/sub/lg-ai-research/sub/exaone/) — exact checkpoints and licenses remain separate.
