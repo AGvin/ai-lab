@@ -35,3 +35,7 @@ entity:
   relations:
     - type: produces
       target: catalog/models/sarvam-ai/sarvam
+    - type: produces
+      target: catalog/models/sarvam-ai/saaras
+    - type: produces
+      target: catalog/models/sarvam-ai/sarvam-vision

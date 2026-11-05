@@ -8,6 +8,8 @@
 
 - Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
 
+- Include exact reciprocal production relations for the selected Saaras and Sarvam Vision families, preserving model/product separation.
+
 ## Validation
 
 - `produces` is the inverse of Sarvam `produced-by`.

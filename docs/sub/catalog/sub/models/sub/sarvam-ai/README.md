@@ -10,6 +10,9 @@ This model-domain view links the [canonical Sarvam AI producer](../../../produce
 
 - [Sarvam](./sub/sarvam/)
 
+- [Saaras](./sub/saaras/)
+- [Sarvam Vision](./sub/sarvam-vision/)
+
 ## Official resources
 
 - <https://www.sarvam.ai/>

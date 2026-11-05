@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/sarvam-ai/sarvam-vision/sarvam-vision-2-1
+  type: model
+  name: Sarvam Vision 2.1
+  identity_note: >-
+    Sarvam's publisher model catalog separately names Sarvam Vision 2.1 for document intelligence, including complex tables, key-value extraction and handwritten Indian-language text. It is distinct from the Document AI hosted product and from the general Sarvam chat family. The linked API guide describes Sarvam Vision generically and does not identify an exact 2.1 selector; do not promise version pinning, inherit an older Vision parameter count, or infer downloadable weights/licensing from this listing. Process only authorized documents with approved hosted data controls. Verify OCR, extracted values and table structure against source documents before downstream actions, especially for consequential records. Confirm the exact served version and contract before evaluation or integration; no document/API execution was performed.
+    Ownership/control-chain review is pending; no Russian-control assertion or adoption clearance.
+  references:
+    - type: documentation
+      source:
+        url: https://www.sarvam.ai/models
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.sarvam.ai/api/api-guides-tutorials/models/sarvam-vision
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/sarvam-ai/sarvam-vision

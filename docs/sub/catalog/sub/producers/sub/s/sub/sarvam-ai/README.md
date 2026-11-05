@@ -15,3 +15,8 @@ The released 30B/105B weights and their Apache 2.0 distribution are distinct fro
 - [Official website](https://www.sarvam.ai/)
 - [Sarvam 30B and 105B release](https://www.sarvam.ai/blogs/sarvam-30b-105b)
 - [Sarvam terms of service](https://www.sarvam.ai/terms-of-service)
+
+## Additional model families
+
+- Produces: [Saaras](../../../../../models/sub/sarvam-ai/sub/saaras/) — model family, separate from hosted product and access contracts.
+- Produces: [Sarvam Vision](../../../../../models/sub/sarvam-ai/sub/sarvam-vision/) — model family, separate from hosted product and access contracts.
