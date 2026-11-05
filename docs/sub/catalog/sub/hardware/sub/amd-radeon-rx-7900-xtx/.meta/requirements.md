@@ -15,3 +15,8 @@
 - 24 GB memory capacity is grounded in AMD's published exact SKU specification.
 - AMD software ecosystem and measured workload compatibility claims are scoped to verified runtime versions.
 - AMD producer provenance resolves bidirectionally.
+
+## Scoped original-source qualification — 2026-11-05
+
+- Original manufacturer specifications were checked against exact SKU identity; see entity.identity_note for hardware capacity, power, form-factor and deployment distinctions.
+- This scoped qualification does not establish current ROCm or driver execution, model inference performance, production readiness, ownership/legal rights, full source freshness, schema/CI or renderer validation.

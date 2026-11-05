@@ -2,7 +2,14 @@ entity:
   id: catalog/hardware/amd-radeon-rx-7900-xtx
   type: hardware
   name: AMD Radeon RX 7900 XTX
+  identity_note: >-
+    Released RDNA 3 desktop Radeon graphics card with 24 GB dedicated GDDR6 and 355 W typical board power. AMD's 800 W minimum PSU recommendation is based on a reference Ryzen 9 5900X system, not every partner board or host. This is not a Radeon PRO workstation GPU or Instinct OAM accelerator. ROCm, driver, OS, cooling, model fit and throughput require workload-specific validation. Manufacturer identification is not ownership/control or deployment clearance.
   references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7900xtx.html
+      purposes: [identification, research]
+      authority: official
     - type: product-page
       source:
         url: https://www.amd.com/en/support/downloads/drivers.html/graphics/radeon-rx/radeon-rx-7000-series/amd-radeon-rx-7900-xtx.html

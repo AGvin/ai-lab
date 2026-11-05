@@ -13,3 +13,8 @@
 - The node remains one concrete processor SKU rather than a laptop/workstation system.
 - PRO-only features are not copied onto the non-PRO SKU.
 - Local-model fit claims remain configuration-specific.
+
+## Scoped original-source qualification — 2026-11-05
+
+- Original manufacturer specifications were checked against exact SKU identity; see entity.identity_note for hardware capacity, power, form-factor and deployment distinctions.
+- This scoped qualification does not establish current ROCm or driver execution, model inference performance, production readiness, ownership/legal rights, full source freshness, schema/CI or renderer validation.

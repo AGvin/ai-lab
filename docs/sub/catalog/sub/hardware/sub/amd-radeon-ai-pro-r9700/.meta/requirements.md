@@ -15,3 +15,8 @@
 - Hardware form factors and system-level specifications are not mixed between workstations and datacenters.
 - Driver compatibility and performance claims are constrained to the applicable release, environment and model workload.
 - Producer provenance is reciprocal.
+
+## Scoped original-source qualification — 2026-11-05
+
+- Original manufacturer specifications were checked against exact SKU identity; see entity.identity_note for hardware capacity, power, form-factor and deployment distinctions.
+- This scoped qualification does not establish current ROCm or driver execution, model inference performance, production readiness, ownership/legal rights, full source freshness, schema/CI or renderer validation.
