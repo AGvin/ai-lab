@@ -30,3 +30,9 @@ Keep the similarly named Alibaba Cloud Model Studio developer platform separate.
 - Render every non-hidden current-entity relation in its semantic group, ordered by explicit order, canonical target display name and target ID. Preserve source/contributor, organizational and product distinctions.
 - Include the official resources from canonical references as readable links. Navigation to a related catalog entry must resolve to its reader, not to metadata.
 - Keep changing version, plan, availability and policy details qualified by the cited source; no general offline, license or privacy guarantee follows from producer attribution.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Qwen Studio is the hosted end-user Qwen assistant, separate from Alibaba Cloud Model Studio developer API platform, Qwen Code and underlying Qwen model families.
+- First-party service surface: https://chat.qwen.ai/
+- Existing service identity/source boundary only; no runtime, privacy, legal, security, full-repository clean-pass or final-gate credit.
