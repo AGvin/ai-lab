@@ -16,3 +16,9 @@
 - Microsoft Copilot remains a hosted assistant/workspace service rather than a trained model or Copilot Studio agent-building platform.
 - Personal and managed-workspace data/control behavior is not conflated.
 - Producer provenance resolves bidirectionally to Microsoft.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Microsoft Copilot is the hosted assistant/workspace; consumer and work/school identity, permissions and data protections differ. Copilot Studio and product-specific integrations are separate boundaries.
+- First-party service surface: https://copilot.microsoft.com/
+- Existing service identity/source boundary only; no runtime, privacy, legal, security, full-repository clean-pass or final-gate credit.
