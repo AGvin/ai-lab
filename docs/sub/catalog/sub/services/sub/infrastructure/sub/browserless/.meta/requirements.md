@@ -14,3 +14,12 @@
 - Official first-party documentation substantiates hosted managed browsers and distinct self-host deployment modes.
 - The current first-party Agent Run documentation labels the managed agent interface BETA rather than stable.
 - Exact producer inverse resolves to `catalog/producers/b/browserless`.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Browserless's official overview describes managed remote browsers reached over Playwright/Puppeteer/Selenium WebSocket or REST/GraphQL, plus separately licensed self-hosted Docker/private deployment. Cloud, enterprise and self-hosted deployments do not have identical supported endpoints, entitlements or security properties.
+- The Agent Run API is explicitly labeled BETA, available only for Cloud plans, with mutable response shapes and a managed browser/model; do not generalize /agent/run as a stable/self-hosted facility or assume an API token is a substitute for lawful access to target websites.
+- BrowserQL, raw CDP/browser sessions, content extraction, PDFs, browser-agents and MCP integrations are platform variants/interfaces, not evidence for additional durable vendor-owned model identities. Protect token-in-query parameters and browser session artifacts in logs.
+- Verified first-party source 1: https://docs.browserless.io/overview/intro
+- Verified first-party source 2: https://docs.browserless.io/rest-apis/agent-run
+- Acceptance scope: present hosted infrastructure identity and publisher-documented feature/version boundaries only. No model/runtime execution, complete freshness, independent security/legal review, rights clearance, root-wide schema/cache/CI/render, clean pass, final-delivery or merge credit.

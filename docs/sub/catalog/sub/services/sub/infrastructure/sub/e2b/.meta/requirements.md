@@ -16,3 +16,13 @@
 - Explicitly beta API surfaces are not represented as stable service guarantees.
 - The `produces` / `produced-by` relation pair is materially consistent.
 - Safe-use boundaries remain explicit for agent-generated or untrusted code execution.
+
+## Scoped original-source qualification — 2026-11-06
+
+- E2B's first-party service supplies isolated cloud Linux microVM/sandbox execution via a managed API, with code-interpreter and desktop/computer-use products as supported SDK/runtime surfaces. An E2B SDK or open repository does not make the hosted infrastructure automatically self-operated, nor remove untrusted-code execution risk.
+- The E2B product updates dated October–November 2026 distinguish recently added pause modes, filesystem-only snapshots, network/DNS controls, idempotent creation and streaming uploads. Version/region/SDK-specific availability, persistence, pricing and quotas are mutable, not universal or retroactive stable guarantees.
+- Protect injected credentials and egress destinations; use least-privilege policies, capture outputs outside sandboxes before destruction where needed, and verify retention/contract boundaries before running sensitive agent workloads.
+- Verified first-party source 1: https://e2b.dev/
+- Verified first-party source 2: https://e2b.dev/product-updates
+- Verified first-party source 3: https://e2b.dev/docs
+- Acceptance scope: present hosted infrastructure identity and publisher-documented feature/version boundaries only. No model/runtime execution, complete freshness, independent security/legal review, rights clearance, root-wide schema/cache/CI/render, clean pass, final-delivery or merge credit.

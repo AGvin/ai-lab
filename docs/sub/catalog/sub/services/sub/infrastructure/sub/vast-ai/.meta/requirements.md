@@ -23,3 +23,13 @@
 - Provider-host variability is not collapsed into a universal security or reliability guarantee.
 - The `produced-by` relation resolves to Vast.ai Inc. and is matched by the producer's inverse `produces` relation.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Vast.ai's first-party documentation describes a GPU compute marketplace where independent secure-cloud or community hosts advertise available instance offers, plus a separate Serverless execution mode and supporting templates, CLI, SDK and APIs. Hosting/offer choice is a capability of the marketplace identity, not a second producer or inference-runtime identity.
+- Offer prices, GPU availability, geographic location, host trust level, storage/network charges, interruptions and rental types are live marketplace conditions. An advertised low hourly GPU rate is not a complete fixed total cost, and a stopped instance should not be assumed free of persistent storage or other charges.
+- Provider-operated marketplace access does not give all independent hosts identical physical/data security or compliance guarantees. Sensitive workloads require host-specific trust, key/data protection, isolation and contractual review.
+- Verified first-party source 1: https://docs.vast.ai/guides/get-started
+- Verified first-party source 2: https://docs.vast.ai/
+- Verified first-party source 3: https://docs.vast.ai/guides/instances/pricing
+- Acceptance scope: present hosted infrastructure identity and publisher-documented feature/version boundaries only. No model/runtime execution, complete freshness, independent security/legal review, rights clearance, root-wide schema/cache/CI/render, clean pass, final-delivery or merge credit.
