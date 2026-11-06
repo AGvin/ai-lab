@@ -11,3 +11,9 @@
 
 - The service remains vector/search-first rather than generic cloud infrastructure.
 - Producer provenance resolves to Qdrant.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Qdrant Managed Cloud is a managed deployment and operations service for the Qdrant vector database, separate from self-hosted Qdrant software; backups, scaling and provider availability are plan-specific.
+- Publisher documentation: https://qdrant.tech/documentation/cloud/
+- Scoped service identity/source boundary only; no authenticated runtime, license/security assurance, whole-repository validation, clean pass or final delivery credit.
