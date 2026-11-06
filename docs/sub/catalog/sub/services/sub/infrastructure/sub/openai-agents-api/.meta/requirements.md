@@ -20,3 +20,12 @@
 - Public-beta status is not misreported as general availability.
 - OpenAI provenance resolves bidirectionally.
 - Hosted and self-hosted sandbox choices do not transfer ownership of the Agents API service itself.
+
+## Scoped original-source qualification — 2026-11-06
+
+- OpenAI introduced the managed Agents API in public beta on 2026-09-10. Current publisher docs describe cloud-hosted agent sessions, long-running harness state, compaction, tool use, multi-agent coordination and environment choices covering OpenAI-hosted, customer-hosted and supported partner sandboxes. This hosted service remains separate from the installable Agents SDK and underlying model identities.
+- The public beta API's session configuration, tools, multi-agent limits and sandbox-provider integration are not production GA promises. Published performance examples are customer anecdotes and are not accepted as independent benchmarking; token, tool and sandbox costs, credentials, retention and model/version behavior require exact current service terms.
+- Sandbox/agent execution can access files, credentials and network tools, requiring least-privilege capability scoping, auditability and authorized access. OpenAI operating the harness does not make third-party hosted sandboxes OpenAI-owned platforms.
+- Verified first-party source 1: https://openai.com/index/introducing-the-agents-api/
+- Verified first-party source 2: https://developers.openai.com/api/docs/guides/agents-api/overview
+- Gate scope is inherited source identity and current publisher-documented version/rights/operational boundaries, not independent production testing, full freshness/security/legal review, metadata or reader-repair credit, root-wide schema/cache/CI/render, clean pass, final delivery or merge.

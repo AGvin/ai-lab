@@ -15,3 +15,13 @@
 - The service is not conflated with Google ADK, Gemini models, or Google Agent Registry.
 - Enterprise product bundling does not erase independently meaningful service boundaries documented by Google Cloud.
 - Mutable capability and availability claims retain freshness boundaries.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Google Cloud's original Gemini Enterprise Agent Platform documentation combines managed agent development, runtime/orchestration, enterprise connectivity, observation and governance. The broader platform is distinct from separately canonical Agent Runtime (formerly Vertex AI Agent Engine), Gemini models/Apps, the ADK developer framework and Agent Registry's governed discovery/control service.
+- The publisher describes Agent Gateway security and registry integrations as version- and deployment-dependent; separate preview, public-release and generally available status applies at feature level. The October 2026 enterprise work-agent announcement is part of the wider Gemini Enterprise product surface, not proof of an independent new trained model or unconditional new peer service.
+- Treat regional routing, IAM/identity, data access, connectors, model selection, API maturity, billing and retention as contract- and workload-specific. Google-operated control surfaces are not an independently verified certification of every customer's agent.
+- Verified first-party source 1: https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview
+- Verified first-party source 2: https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/agent-registry
+- Verified first-party source 3: https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview
+- Gate scope is inherited source identity and current publisher-documented version/rights/operational boundaries, not independent production testing, full freshness/security/legal review, metadata or reader-repair credit, root-wide schema/cache/CI/render, clean pass, final delivery or merge.

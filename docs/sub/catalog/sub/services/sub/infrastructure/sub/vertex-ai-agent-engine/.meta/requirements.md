@@ -16,3 +16,12 @@
 - Agent Runtime on Gemini Enterprise Agent Platform remains a producer-hosted managed runtime/platform rather than an installable agent framework.
 - Gemini Enterprise registration/integration does not collapse Agent Runtime into the Gemini Enterprise product identity.
 - Producer provenance resolves bidirectionally to Google Cloud.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Google Cloud's current name-change table explicitly maps the former Vertex AI Agent Engine identity to Agent Runtime on Gemini Enterprise Agent Platform. Retain the existing canonical service and former-name alias; do not treat the rename as another accepted candidate or merge Agent Runtime into the umbrella enterprise agent platform.
+- The original Agent Platform scale documentation distinguishes managed Agent Runtime from Sessions, Memory Bank, Code Execution, agent evaluation and other integrated services. Feature-level lifecycle, IAM permissions and regional/data-residency restrictions vary; for example, customer-managed encryption key support differs between single-region and multi-region deployed endpoints.
+- Managed deployment and framework integrations do not transform ADK, models, LangGraph/CrewAI or Agent Registry into Google-owned trained-model artifacts. No authenticated runtime, production isolation or independent governance audit is implied by source qualification.
+- Verified first-party source 1: https://docs.cloud.google.com/gemini-enterprise-agent-platform/vertex-ai-name-changes
+- Verified first-party source 2: https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale
+- Gate scope is inherited source identity and current publisher-documented version/rights/operational boundaries, not independent production testing, full freshness/security/legal review, metadata or reader-repair credit, root-wide schema/cache/CI/render, clean pass, final delivery or merge.
