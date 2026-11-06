@@ -13,3 +13,9 @@
 
 - Amazon Quick remains a hosted assistant/workspace product, not a general agent-runtime infrastructure service or model.
 - Producer provenance resolves bidirectionally to Amazon Web Services.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Amazon Quick is an AWS-managed agentic assistant/workspace distinct from Bedrock AgentCore and AWS Agent Registry. Connected enterprise data, flows, apps and autonomous agents are features of the hosted workspace, not automatic peer products.
+- First-party product surface: https://aws.amazon.com/quick/
+- Credits only the existing service identity and source boundary; no independent runtime, privacy, security, legal, clean-pass or final-gate verification.
