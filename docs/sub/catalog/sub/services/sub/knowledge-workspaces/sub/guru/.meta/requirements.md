@@ -14,3 +14,9 @@
 - The service is not collapsed into Guru Technologies, Inc. or into a generic enterprise-search capability.
 - The `entity-relations` block resolves to the canonical Guru Technologies, Inc. producer.
 - Official Guru references match canonical entity metadata.
+
+## Scoped original-source qualification — 2026-11-06
+
+Guru's AI Answers must honor source-level access and knowledge verification states. Official documentation: https://help.getguru.com/docs/connecting-sources-to-guru-for-ai-answers and https://help.getguru.com/docs/verifying-and-unverifying-cards
+
+Scope: source and service-identity qualification only; not a full security, runtime, or clean-pass audit.
