@@ -18,3 +18,11 @@
 - Exactly one reciprocal SambaNova producer pair; no false produced-by relationship to third-party hosted model publishers.
 - No unverified access, data-policy, licensing or rate-limit guarantees; secrets never committed.
 - Bounded YAML/source/relation/link verification is not full schema/cache/CI, runtime API execution, final render or a clean full-catalog research pass.
+
+## Scoped original-source qualification — 2026-11-06
+
+- SambaCloud is SambaNova's hosted inference API, distinct from SambaStack dedicated/on-prem deployment and RDU hardware. The current Free plan page explicitly requires a payment method and purchased pay-as-you-go credits for first requests. Developer adds paid access to production and preview models; Enterprise has separate commercial rate-limit and support options.
+- A plan named Free is not automatically free-token availability. Model producers retain their own provenance, licensing and possible sanctions risks. Confirm account-specific API compatibility, pricing, region, logging, data contract and credits before sending confidential prompts.
+- Verified first-party source 1: https://cloud.sambanova.ai/plans
+- Verified first-party source 2: https://docs.sambanova.ai/docs/en/integrations/vscode
+- This source qualification accepts only the existing hosted-service identity and bounded claims. It does not establish full freshness, legal/ownership/license clearance, independent security or performance, authenticated endpoints, complete schema/cache/CI/render, clean pass or final delivery.

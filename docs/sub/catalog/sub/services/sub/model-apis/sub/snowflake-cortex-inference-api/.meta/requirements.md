@@ -18,3 +18,10 @@
 - The service is a managed inference/API surface rather than a trained model or local runtime.
 - Product boundaries for SQL functions, agents and search services remain explicit.
 - Snowflake producer inverse link matches the service's forward provenance.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Snowflake Cortex Inference API is Snowflake-managed REST model inference, separate from Cortex AI SQL Functions, Agents and Search. Snowflake documents OpenAI-style Chat Completions and Anthropic Messages for eligible Claude routes. A requester's default role needs SNOWFLAKE.CORTEX_USER or SNOWFLAKE.CORTEX_REST_API_USER; narrower REST-only permissions do not remove pre-existing broad Cortex grants.
+- Request-format compatibility does not guarantee every provider tool, SDK, model or region works. Verify model route, Snowflake grants, cross-region processing, data-governance and consumption charges before production use.
+- Verified first-party source 1: https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-rest-api
+- This source qualification accepts only the existing hosted-service identity and bounded claims. It does not establish full freshness, legal/ownership/license clearance, independent security or performance, authenticated endpoints, complete schema/cache/CI/render, clean pass or final delivery.

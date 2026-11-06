@@ -15,3 +15,11 @@
 - Exactly one canonical Friendli Model APIs hosted service and FriendliAI producer, no duplicate dedicated endpoint, self-managed runtime or model.
 - Original third-party model producers and licenses not reassigned; cloud terms/security claims remain scoped to exact account and contract.
 - A bounded entity/reader/link/provenance check is not full schema/cache/CI, model inference execution, beneficial ownership certification, or a clean whole-catalog research pass.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Friendli Model APIs offers provider-operated managed serverless access to selected third-party/open models. FriendliAI describes OpenAI-compatible APIs and a separate migration path to Dedicated Endpoints with isolated capacity. Hosted curated model inventory is not the full catalog of models available through dedicated endpoints or self-managed Friendli Container.
+- Do not infer full API parameter compatibility, exact support for every Responses/Messages model, universal deployment SLA, unrestricted capacity, storage/retention controls or upstream model licenses from general marketing or a base URL.
+- Verified first-party source 1: https://friendli.ai/product/model-apis
+- Verified first-party source 2: https://learn.friendli.ai/articles/4213111023-q10-1-how-do-i-connect-friendliai-with-litellm-or-other-openai-compatible-client
+- This source qualification accepts only the existing hosted-service identity and bounded claims. It does not establish full freshness, legal/ownership/license clearance, independent security or performance, authenticated endpoints, complete schema/cache/CI/render, clean pass or final delivery.

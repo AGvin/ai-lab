@@ -17,3 +17,11 @@
 - Partner/community model provenance is not reassigned to Microsoft.
 - Agent Service remains separately owned.
 - Producer provenance resolves bidirectionally to Microsoft.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Microsoft Foundry Models is a hosted catalog and inference deployment surface rather than the author of every model. Microsoft's deployment overview distinguishes serverless API serving Azure-sold and partner/community models from managed compute (preview) on dedicated GPUs. Instant model access is also preview; neither preview is the universal Foundry deployment experience.
+- Separate upstream model authorship and license from Microsoft hosting. Validate exact model card, region, deployment type, capacity, billing/SLA responsibility and preview/GA state per endpoint. Foundry Agent Service remains a different entity.
+- Verified first-party source 1: https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview
+- Verified first-party source 2: https://learn.microsoft.com/en-us/azure/foundry/concepts/deployments-overview
+- This source qualification accepts only the existing hosted-service identity and bounded claims. It does not establish full freshness, legal/ownership/license clearance, independent security or performance, authenticated endpoints, complete schema/cache/CI/render, clean pass or final delivery.

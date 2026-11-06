@@ -16,3 +16,11 @@
 - One product-level hosted Generative APIs identity, not duplicate dedicated/Managed Inference variant or upstream model authorship.
 - Published endpoint, Responses limitations, data-retention exceptions and upstream model rights are accurately scoped.
 - Canonical metadata, reciprocal links, reader and index checked separately from full rendering, live service or regulatory verification.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Scaleway Generative APIs is a hosted generative model service with shared/serverless access and separately deployed dedicated capacity. Its service privacy policy describes default zero data retention while permitting exceptional capture of complete anomalous HTTP requests for troubleshooting or abuse for up to two weeks, alongside separate anonymized usage metadata retention up to six months.
+- Do not promise never-retained prompts, identical serverless/dedicated/batch handling or universal API parity. Validate current deployment geography, account DPA, exception handling, model rights and endpoint-level functionality before confidential workloads.
+- Verified first-party source 1: https://www.scaleway.com/en/docs/generative-apis/reference-content/data-privacy/
+- Verified first-party source 2: https://www.scaleway.com/en/docs/generative-apis/faq/
+- This source qualification accepts only the existing hosted-service identity and bounded claims. It does not establish full freshness, legal/ownership/license clearance, independent security or performance, authenticated endpoints, complete schema/cache/CI/render, clean pass or final delivery.
