@@ -15,3 +15,9 @@
 - Verify the provider-owned API/product boundary and current documentation sources.
 - Maintain a single catalog identity with the correct category link; never equate hosted terms with unrelated SDK or model licenses.
 - Do not credit unperformed runtime, whole-site or clean-pass checks.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Upstash Vector is a serverless managed vector index with authenticated REST/SDK access; storing embeddings does not imply their generation, and integrated embeddings are configuration-dependent.
+- Publisher documentation: https://upstash.com/docs/vector/overall/getstarted
+- Scoped service identity/source boundary only; no authenticated runtime, license/security assurance, whole-repository validation, clean pass or final delivery credit.
