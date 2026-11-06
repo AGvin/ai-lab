@@ -15,3 +15,9 @@
 - GA status and separate hosted service identity match official product documentation.
 - Current features, model options and pricing carry first-party freshness boundaries.
 - Reciprocal producer relation resolves correctly.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Cloudflare AI Search is the managed ingestion-to-retrieval RAG/search layer built on Vectorize; it is distinct from the lower-level vector database and optional answer generation.
+- Publisher documentation: https://developers.cloudflare.com/ai-search/
+- Qualification covers the existing service identity/source boundary only. No authenticated runtime testing, independent security/licensing assessment, full-repository checks, clean pass or final gate is claimed.
