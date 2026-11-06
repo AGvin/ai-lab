@@ -14,3 +14,9 @@
 - SpaceXAI-operated Grok surfaces are not conflated with separately operated third-party services.
 - Mutable product claims are not presented as timeless facts.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Grok is the hosted end-user assistant, distinct from underlying Grok model releases, Grok Bot and separately operated third-party integrations. Model availability and account features are time- and plan-dependent.
+- First-party service surface: https://grok.com/
+- Existing service identity/source boundary only; no runtime, privacy, legal, security, full-repository clean-pass or final-gate credit.
