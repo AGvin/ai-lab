@@ -15,3 +15,9 @@
 - Kimi remains a hosted assistant/workspace service rather than a Kimi trained-model identity.
 - Local Kimi Work/Code execution is not generalized into the hosted Kimi service.
 - Producer provenance resolves bidirectionally to Moonshot AI.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Kimi is Moonshot AI's hosted assistant/workspace. Kimi Code, Kimi Work, Kimi Claw and model/API offerings have separate execution and ownership boundaries; plan limits and available agent tools are mutable.
+- First-party product surface: https://www.kimi.com/
+- Credits only the existing service identity and source boundary; no independent runtime, privacy, security, legal, clean-pass or final-gate verification.
