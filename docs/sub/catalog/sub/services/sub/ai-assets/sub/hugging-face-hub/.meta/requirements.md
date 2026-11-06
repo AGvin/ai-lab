@@ -16,3 +16,9 @@
 - Downloaded-asset execution is not described as Hub-hosted inference.
 - Concrete model/dataset/service/library identities remain with their canonical owners.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Scoped original-source qualification — 2026-11-06
+
+Hub repositories and Spaces/inference are distinct service boundaries; repository license metadata and scanning do not guarantee unrestricted rights or safe artifacts. Official documentation: https://huggingface.co/docs/hub/repositories-licenses and https://huggingface.co/docs/hub/security
+
+Scope: source and service-identity qualification only; not a full security, runtime, or clean-pass audit.
