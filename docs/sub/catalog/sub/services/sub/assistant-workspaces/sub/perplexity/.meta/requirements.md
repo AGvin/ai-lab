@@ -23,3 +23,9 @@
 - Render every visible current relation using canonical target names, explicit order first and alphabetical order within each relation group. Keep metadata paths out of reader navigation.
 - Recheck account eligibility, exact artifact access, versions and terms before deployment. This source review does not certify runtime performance.
 - Reviewed sources: <https://www.perplexity.ai/hub>, <https://www.perplexity.ai/>.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Perplexity is the hosted cited-answer and research assistant, separate from Perplexity Computer agent service and the developer API Platform. Sources and citations require independent factual verification.
+- First-party service surface: https://www.perplexity.ai/
+- Existing service identity/source boundary only; no runtime, privacy, legal, security, full-repository clean-pass or final-gate credit.
