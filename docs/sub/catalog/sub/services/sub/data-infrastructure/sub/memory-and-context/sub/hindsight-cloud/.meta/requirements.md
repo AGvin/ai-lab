@@ -16,3 +16,9 @@
 - Hindsight Cloud appears once in hosted Memory and Context direct-child navigation; self-managed Hindsight remains under Software.
 - Original vendor, documentation and endpoint sources support one managed service identity, distinct from other memory-service peers (Mem0 Platform, Zep and Supermemory).
 - Canonical producer relationship and relative reader links are valid; current service claims are scoped and not generalized to Enterprise, self-hosted or untested compliance.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Hindsight Cloud is a managed multi-tenant memory API distinct from the MIT-licensed self-hosted Hindsight engine. Retain/recall/reflect are shared capabilities; cloud metering, team access and retention remain service-specific.
+- Publisher source: https://hindsight.vectorize.io/
+- Scope: existing managed service identity and producer boundary only; no authenticated API, security/privacy, full-repository, clean-pass or final gate certification.
