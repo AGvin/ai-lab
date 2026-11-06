@@ -13,3 +13,8 @@
 
 - One canonical service reader under the selected category and one relative index link; distinct source software, model, content and operator boundaries remain explicit.
 - First-party evidence supports the scoped profile only. Do not infer runtime tests, full rights/contract audits or repository-wide clean status.
+
+## Scoped original-source qualification — 2026-11-07
+
+- The operated Civitai asset catalog and its open-source application are distinct. Repository source-code licensing does not automatically license user-uploaded checkpoints, LoRAs, or images. Original sources: https://github.com/civitai/civitai and https://civitai.com/
+- Only existing service identity and source boundaries are accepted; no runtime, rights, security, full-catalog, or clean-pass certification.
