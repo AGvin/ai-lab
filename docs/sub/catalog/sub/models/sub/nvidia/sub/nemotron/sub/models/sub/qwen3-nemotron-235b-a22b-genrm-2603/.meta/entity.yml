@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/nvidia/nemotron/models/qwen3-nemotron-235b-a22b-genrm-2603
+  type: model
+  name: Qwen3-Nemotron-235B-A22B-GenRM-2603
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/nvidia/Qwen3-Nemotron-235B-A22B-GenRM-2603
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/nvidia/nemotron
+  identity_note: >-
+    NVIDIA generative reward checkpoint released on 2026-03-11, fine-tuned from Qwen3-235B-A22B-Thinking-2507 and used for Super RLHF. Apache-2.0; distinct from the earlier GenRM release.

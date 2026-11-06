@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d13a58fbd1af0f832b51f4cd1394522ab7e2d900
+      entity.yml: gitblob:0e4d419ce5bb37a21752282f291b762eed5cf442
     parent:
       entity.yml: gitblob:b7f05983a5d1c6c223967178283fa7f339514136
   state:
@@ -61,9 +61,34 @@ cache:
           authority: official
           note: Current llm-d project README identifies Google Cloud as one of the
             founding organizations.
+        - type: documentation
+          source:
+            url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/vertex-ai-name-changes
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/inference-runtimes/distributed-serving/llm-d
+        - type: produces
+          target: catalog/services/infrastructure/vertex-ai-agent-engine
+        - type: produces
+          target: catalog/services/model-apis/vertex-ai-api
     aliases:
       effective:
         schema: default

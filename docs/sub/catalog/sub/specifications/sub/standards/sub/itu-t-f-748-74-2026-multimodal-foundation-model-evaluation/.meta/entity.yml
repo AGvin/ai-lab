@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/itu-t-f-748-74-2026-multimodal-foundation-model-evaluation
+  name: ITU-T F.748.74 — Requirements and framework for evaluation of multimodal foundation models
+  aliases:
+    - ITU-T F.748.74
+    - F.748.74
+  references:
+    - type: specification
+      source:
+        url: https://www.itu.int/rec/T-REC-F.748.74-202606-I/en
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Recommendation F.748.74 (06/26), approved 2026-06-13 and marked in force by ITU-T.

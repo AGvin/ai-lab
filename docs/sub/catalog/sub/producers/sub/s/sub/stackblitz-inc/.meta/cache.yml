@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e4226f6067e1d268678c8847c5afc8724b2bae58
+      entity.yml: gitblob:f4e3c3b58c7d10babcb57de271f23696dd69b67b
     parent:
-      entity.yml: gitblob:d2832a7979fe4d097b9404cc46ffd2fcc3b3eba6
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
   state:
     node:
       effective:
@@ -45,6 +45,17 @@ cache:
         id: catalog/producers/s/stackblitz-inc
         type: organization
         name: StackBlitz, Inc.
+        identity_note: StackBlitz, Inc. operates the StackBlitz development environment
+          and the Bolt application, as explicitly stated in its current privacy policy.
+          Bolt is the represented hosted application-building service; the company,
+          its development tools and customers’ generated applications remain separate
+          identities. The current policy covers prompts, code and attached files and
+          explains processing by service providers for AI features. Customer applications
+          can introduce additional data-processing responsibilities. Confirm the applicable
+          Bolt plan, project visibility, publication destination, connected repositories
+          and third-party integrations before deployment. A browser-based editor or
+          WebContainer runtime does not mean every prompt or project remains on the
+          local device.
         aliases:
         - StackBlitz
         references:
@@ -67,6 +78,13 @@ cache:
           source:
             url: https://support.bolt.new/building/intro-bolt
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://support.bolt.new/get-started/intro-bolt
+          purposes:
+          - identification
           - research
           authority: official
         relations:

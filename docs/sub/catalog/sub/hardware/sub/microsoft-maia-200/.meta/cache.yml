@@ -1,0 +1,97 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:51c38984fca621fb31d5c0f24760cd2c5cadf26e
+    parent:
+      entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/hardware/microsoft-maia-200
+        type: hardware
+        name: Microsoft Maia 200
+        identity_note: Microsoft Maia 200 is Microsoft's second-generation first-party
+          AI accelerator, designed primarily for large-scale inference. Microsoft's
+          January 26, 2026 announcement describes TSMC 3 nm fabrication, native FP8/FP4
+          tensor cores, 216 GB of HBM3e at 7 TB/s, and 272 MB of on-chip SRAM. It
+          also describes an Ethernet-based scale-up network and production deployment
+          in Microsoft's datacenter fleet. Maia 200 is hardware, separate from Azure
+          and Microsoft Foundry services, the surrounding server systems and the models
+          running on it. Fleet deployment does not establish standalone retail availability.
+          Microsoft-stated throughput and efficiency comparisons depend on precision,
+          workload and comparison configuration; deployment regions, SDK access and
+          customer-facing service exposure require current verification.
+        aliases:
+        - Maia 200
+        references:
+        - type: article
+          source:
+            url: https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://news.microsoft.com/maia-200/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/microsoft
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

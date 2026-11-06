@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/scbench
+  type: dataset
+  name: "scBench"
+  aliases:
+    - "Single-Cell RNA-seq Agent Benchmark"
+  identity_note: >-
+    Single-cell RNA sequencing workflow benchmark of 195 evaluable problems using AnnData snapshots and deterministic graders; only six canonical example tasks are public in the pinned source.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/latchbio/scbench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/latchbio/scbench/blob/370a68ca042133fb463748295f955b1b8b58f4a0/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/latchbio/scbench/blob/370a68ca042133fb463748295f955b1b8b58f4a0/LICENSE
+      purposes: [research]
+      authority: official

@@ -28,4 +28,4 @@ entity:
       authority: official
   relations:
     - type: produces
-      target: catalog/software/agents/local/cline
+      target: catalog/software/agents/hybrid/cline

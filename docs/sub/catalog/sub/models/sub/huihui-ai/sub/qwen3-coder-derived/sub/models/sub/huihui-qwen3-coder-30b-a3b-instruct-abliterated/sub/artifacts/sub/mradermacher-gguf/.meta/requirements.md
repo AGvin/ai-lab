@@ -2,16 +2,17 @@
 
 ## Requirements
 
-- Identify the mradermacher repository as a `model-artifact` collection of static GGUF quantizations of the canonical huihui.ai derivative model.
-- Preserve the exact artifact repository, source-model reference, GGUF representation, publisher, Apache-2.0 repository license, and published quant inventory when current.
-- Keep publisher qualitative quant guidance distinguishable from independent AI Lab evidence.
-- State that published file size is not peak runtime RAM/VRAM.
-- Keep weighted/imatrix `-i1-GGUF` artifacts separate from this static-quant collection.
-- Keep runtime installation/integration, hardware fit, measured quantization quality, and workload recommendations outside artifact identity.
+- Preserve model-artifact type, exact source-model artifact-of relation and its existing has-artifact inverse.
+- Retain exact repository, static GGUF role, quantized_by provenance and Apache-2.0 metadata without adding learned-model producer credit for the quantizer.
+- Derive the current reader quant table from the eleven provided source rows, preserving quant names, rounded published sizes and exact file links.
+- Keep publisher quality labels as attributed guidance rather than independent evaluation or guarantees.
+- Distinguish published file size from peak memory, including context/KV cache, runtime buffers, offload and concurrency choices.
+- Keep the explicitly linked weighted/imatrix -i1-GGUF collection separate; do not add it as a learned model or silently include its files here.
+- Describe the need for a GGUF loader with the required architecture/template support and exact artifact revision, without copying unchanged model capabilities into artifact identity.
+- Realize the complete English reader with cited identity, decision and operational facts and exact canonical navigation; advertise localized readers only when present.
 
 ## Validation
 
-- The artifact is not represented as another trained model.
-- Quantization file sizes are not treated as runtime memory requirements.
-- Publisher quality labels are not presented as AI Lab benchmark conclusions.
-- The page does not silently include a separate imatrix artifact repository.
+- Preserve the canonical ID, name, type, aliases, existing source references and all existing relations; validate the complete entity against the repository schema.
+- Verify every outgoing relation, its exact required inverse and every reader target against the composed catalog tree.
+- Keep producer views, navigation indexes, trained models, model families, service access and quantized artifacts distinct; qualify publisher claims and current retrieval limits.

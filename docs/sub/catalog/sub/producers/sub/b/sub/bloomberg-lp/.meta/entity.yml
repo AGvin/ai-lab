@@ -26,6 +26,27 @@ entity:
         - research
       authority: official
       note: Official Envoy AI Gateway introduction documenting the joint Tetrate and Bloomberg project origin.
+    - type: privacy-policy
+      source:
+        url: https://bloomberg.com/privacy
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://theagentrouter.ai/blog/introducing-envoy-ai-gateway/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://theagentrouter.ai/blog/envoy-ai-gateway-is-now-agent-router/
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/gateways/api-management-gateways/envoy-ai-gateway

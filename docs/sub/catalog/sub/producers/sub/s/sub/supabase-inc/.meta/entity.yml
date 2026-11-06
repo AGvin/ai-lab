@@ -1,0 +1,55 @@
+entity:
+  id: catalog/producers/s/supabase-inc
+  type: organization
+  name: Supabase, Inc.
+  identity_note: >-
+    Supabase, Inc. is the represented Supabase producer organization for the official Supabase Agent
+    Skills collection. Current Supabase terms explicitly identify Supabase, Inc. for AWS Marketplace
+    purchases by default and Supabase Pte. Ltd. for other purchases, unless an order says otherwise; the
+    brand is not a universal statement of contracting entity. The MIT-licensed skill collection is
+    separate from hosted Supabase services, individual skills and database credentials. Its instructions
+    and scripts do not grant project access or make generated migrations safe automatically. Confirm the
+    applicable order and data-processing terms, scope database and MCP permissions, and review schema
+    changes before applying them. The current online legal sources replace the unavailable older DPA PDF
+    as evidence of contracting arrangements.
+  aliases:
+    - Supabase
+  references:
+    - type: official-site
+      source:
+        url: https://supabase.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://supabase.com/legal/customer-resources/data-processing-addendum
+      purposes:
+        - identification
+      authority: official
+      note: Current online DPA names Supabase Pte. Ltd.; the separate Terms section 1(j) identifies Supabase, Inc. for default AWS Marketplace purchases and Supabase Pte. Ltd. otherwise, subject to an order override.
+    - type: repository
+      source:
+        url: https://github.com/supabase/agent-skills
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://supabase.com/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/supabase/agent-skills/blob/main/LICENSE
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/agent-skills/collections/supabase-agent-skills

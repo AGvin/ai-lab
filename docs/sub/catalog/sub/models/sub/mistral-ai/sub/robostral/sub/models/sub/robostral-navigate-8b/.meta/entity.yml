@@ -1,0 +1,29 @@
+entity:
+  id: catalog/models/mistral-ai/robostral/models/robostral-navigate-8b
+  type: model
+  name: Robostral Navigate 8B
+  references:
+    - type: release-notes
+      source:
+        url: https://mistral.ai/news/robostral-navigate/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://legal.mistral.ai/ai-governance/models/robostral-navigate/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2607.20785
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/robostral

@@ -6,6 +6,8 @@
 - Preserve only source-backed characteristics genuinely shared across the two concrete models; keep parameter counts and modality differences at model scope.
 - Treat `Base`, quantized, and serving-specific checkpoints as artifacts/variants unless an independent trained-model identity justifies later materialization.
 
+- Link MiMo-V2.5-ASR and MiMo-V2.5-TTS; preserve each exact model's lifecycle, access and license boundaries locally rather than inheriting language-model/API facts.
+
 ## Validation
 
 - MiMo-V2.5 and MiMo-V2.5-Pro remain distinct concrete models.

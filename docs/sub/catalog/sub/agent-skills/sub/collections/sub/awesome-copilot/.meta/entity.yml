@@ -1,0 +1,36 @@
+entity:
+  id: catalog/agent-skills/collections/awesome-copilot
+  type: skill-collection
+  name: Awesome GitHub Copilot
+  aliases:
+    - github/awesome-copilot
+    - Awesome Copilot Skills
+  identity_note: >-
+    GitHub maintains this community-contributed customization repository; the skills subset is one collection, while agents, instructions, hooks and plugins are other asset classes. The repository license is MIT; community authorship, dependencies and trademark conditions remain separate. Inspect selected scripts and tool permissions before installation.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/github/awesome-copilot
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/github/awesome-copilot/blob/main/docs/README.skills.md
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/github/awesome-copilot/blob/96543145e9cb97711020b57b9d88f968062c4fc7/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/github/awesome-copilot/blob/96543145e9cb97711020b57b9d88f968062c4fc7/LICENSE
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/github-inc

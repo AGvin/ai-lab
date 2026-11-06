@@ -4,7 +4,7 @@ Cline Bot Inc. is the organization behind the Cline open-source coding-agent pro
 
 ## Related catalog entity
 
-- [Cline](../../../../../software/sub/agents/sub/local/sub/cline/) — canonical Local Agent profile.
+- [Cline](../../../../../software/sub/agents/sub/hybrid/sub/cline/) — canonical Hybrid Agent profile.
 
 ## Official resources
 

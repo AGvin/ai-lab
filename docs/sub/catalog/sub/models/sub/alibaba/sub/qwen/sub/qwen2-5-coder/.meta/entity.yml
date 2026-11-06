@@ -16,6 +16,18 @@ entity:
       purposes:
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
+      purposes:
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/alibaba/qwen

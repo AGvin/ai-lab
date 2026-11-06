@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-tts/models/qwen3-tts-12hz-1-7b-customvoice
+  type: model
+  name: Qwen3-TTS-12Hz-1.7B-CustomVoice
+  aliases:
+    - Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen3-TTS
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen3-tts

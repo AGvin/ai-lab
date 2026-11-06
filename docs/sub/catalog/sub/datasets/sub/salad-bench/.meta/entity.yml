@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/salad-bench
+  type: dataset
+  name: "SALAD-Bench"
+  aliases:
+    - "Safety Alignment Benchmark"
+  identity_note: >-
+    Hierarchical safety benchmark with approximately 21,000 source harmful-question prompts; released SALAD-Data, MD-Judge models and evaluation code are distinct components.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/OpenSafetyLab/SALAD-BENCH
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/OpenSafetyLab/SALAD-BENCH/blob/575d5369c5355c0ed76e27860a889aa2f3c3e0e5/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/OpenSafetyLab/SALAD-BENCH/blob/575d5369c5355c0ed76e27860a889aa2f3c3e0e5/LICENSE
+      purposes: [research]
+      authority: official

@@ -1,0 +1,84 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:8eb023f65151cf3dd978345b676a3173b3cd65ec
+    parent:
+      entity.yml: gitblob:a76c3a46432ba7611269330ee50980c8ad5c387e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/perplexity-ai/pii-tracer
+        type: model
+        name: PII-Tracer
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/perplexity-ai/PII-Tracer
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/p/perplexity-ai
+        - type: derived-from
+          target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-0-6b
+        identity_note: PII-Tracer is Perplexity's released MIT-licensed PII masking
+          model for conversational data. It uses the PPLX Embed V1 0.6B backbone as
+          a roughly 600M-parameter bidirectional Qwen3 encoder with a token-classification
+          head and a conversation-level sensitivity head. MLX, vLLM and GGUF repositories
+          are packaging variants of this model.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

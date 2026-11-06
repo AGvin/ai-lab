@@ -2,14 +2,9 @@
 
 Gemma 4 is a multimodal model series within Google's Gemma open-weight family. The series contains distinct dense, unified, and Mixture-of-Experts model identities rather than one executable model.
 
-## Translations
-
-- English
-- [Українська](./l10n/uk_UA/)
-
 ## Model family
 
-- [Gemma](../..)
+- Member of: [Gemma](../../)
 
 ## Provenance boundary
 
@@ -31,10 +26,11 @@ For E2B and E4B, `E` denotes effective parameters. Effective parameters and the 
 
 ## Models
 
-- [Gemma 4 E2B Instruct](./sub/models/sub/e2b-instruct/) — dense instruction-tuned multimodal model with 2.3B effective parameters and 5.1B parameters including embeddings.
-- [Gemma 4 E4B Instruct](./sub/models/sub/e4b-instruct/) — dense instruction-tuned multimodal model with 4.5B effective parameters and 8B parameters including embeddings.
-
-Official Quantization-Aware Training (QAT) artifacts exist for represented local models. Exact artifact inventories and runtime/deployment implications remain on concrete model, artifact, or deployment documentation rather than this series page.
+- [Gemma 4 12B Unified Instruct](sub/models/sub/12b-unified-instruct/)
+- [Gemma 4 26B A4B Instruct](sub/models/sub/26b-a4b-instruct/)
+- [Gemma 4 31B Instruct](sub/models/sub/31b-instruct/)
+- [Gemma 4 E2B Instruct](sub/models/sub/e2b-instruct/)
+- [Gemma 4 E4B Instruct](sub/models/sub/e4b-instruct/)
 
 ## Scope boundary
 
@@ -42,6 +38,11 @@ This canonical page owns Gemma 4 series identity, source-specific provenance, sh
 
 ## Official resources
 
-- [Gemma 4 model card](https://ai.google.dev/gemma/docs/core/model_card_4)
-- [Gemma 4 overview](https://ai.google.dev/gemma/docs/core)
-- [Gemma 4 QAT guidance](https://ai.google.dev/gemma/docs/core/qat)
+- <https://ai.google.dev/gemma/docs/core/model_card_4>
+- <https://huggingface.co/collections/google/gemma-4>
+- <https://ai.google.dev/gemma/docs/core>
+
+## Source-scoped operating boundaries
+
+- E2B/E4B have 128K context; 12B/26B A4B/31B have 256K. Audio input belongs to E2B, E4B, and 12B; the 26B A4B and 31B variants do not support audio. All variants generate text. [Architecture and modality matrix](https://ai.google.dev/gemma/docs/core/model_card_4).
+- Use the Gemma 4 chat template and supported thinking controls. Tool-call generation does not authorize execution, and published safety evaluations do not replace application-specific filtering, privacy handling, or output validation. [Configuration and risk guidance](https://ai.google.dev/gemma/docs/core/model_card_4).

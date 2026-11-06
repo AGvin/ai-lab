@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/ibm/granite-vision-3-3/models/granite-vision-3-3-2b
+  type: model
+  name: Granite Vision 3.3 2B
+  identity_note: IBM visual-document understanding checkpoint retained as the explicit base of Granite
+    Vision 3.3 2B Embedding.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-vision-3.3-2b
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/ibm/granite-vision-3-3
+  - type: has-derivative
+    target: catalog/models/ibm/granite-vision-3-3/models/granite-vision-3-3-2b-embedding

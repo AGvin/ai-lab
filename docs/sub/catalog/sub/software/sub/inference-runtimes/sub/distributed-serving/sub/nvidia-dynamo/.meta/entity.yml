@@ -5,7 +5,7 @@ entity:
   references:
     - type: documentation
       source:
-        url: https://docs.dynamo.nvidia.com/dynamo/dev/getting-started/introduction
+        url: https://docs.nvidia.com/dynamo/
       purposes:
         - identification
         - research

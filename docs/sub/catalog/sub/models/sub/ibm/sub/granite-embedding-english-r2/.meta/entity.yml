@@ -1,0 +1,37 @@
+entity:
+  id: catalog/models/ibm/granite-embedding-english-r2
+  type: model-family
+  name: Granite Embedding English R2
+  identity_note: IBM English retrieval family containing two bi-encoder retrievers and a separately
+    trained cross-encoder reranker.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-embedding-english-r2
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-embedding-small-english-r2
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-embedding-reranker-english-r2
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/i/ibm
+  - type: has-member
+    target: catalog/models/ibm/granite-embedding-english-r2/models/granite-embedding-english-r2
+  - type: has-member
+    target: catalog/models/ibm/granite-embedding-english-r2/models/granite-embedding-small-english-r2
+  - type: has-member
+    target: catalog/models/ibm/granite-embedding-english-r2/models/granite-embedding-reranker-english-r2

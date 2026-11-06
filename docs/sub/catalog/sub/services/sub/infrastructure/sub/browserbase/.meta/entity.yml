@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/infrastructure/browserbase
+  type: service
+  name: Browserbase
+  references:
+    - type: official-site
+      source:
+        url: https://www.browserbase.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.browserbase.com/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/browserbase-inc

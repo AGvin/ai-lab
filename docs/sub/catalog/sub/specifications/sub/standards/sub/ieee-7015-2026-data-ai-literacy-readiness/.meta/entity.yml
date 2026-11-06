@@ -1,0 +1,14 @@
+entity:
+  id: catalog/specifications/standards/ieee-7015-2026-data-ai-literacy-readiness
+  name: IEEE 7015-2026 — Data and AI Literacy, Skills, and Readiness
+  aliases:
+    - IEEE 7015-2026
+  references:
+    - type: specification
+      source:
+        url: https://standards.ieee.org/ieee/7015/10688/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: IEEE SA marks IEEE 7015-2026 as an Active Standard with Standards Board approval on 2026-06-04.

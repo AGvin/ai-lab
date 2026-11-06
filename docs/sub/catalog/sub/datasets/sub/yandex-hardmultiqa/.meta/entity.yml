@@ -1,0 +1,14 @@
+entity:
+  id: catalog/datasets/yandex-hardmultiqa
+  type: dataset
+  name: "HardMultiQA"
+  aliases:
+    - "Yandex Russian multi-source QA"
+  identity_note: >-
+    Russian challenging question answering with multiple-choice and short-answer tasks, distinct from WikiWebFacts.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/yandex/HardMultiQA
+      purposes: [identification, research]
+      authority: official

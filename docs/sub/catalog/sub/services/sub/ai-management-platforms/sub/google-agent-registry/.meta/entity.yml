@@ -1,0 +1,25 @@
+entity:
+  id: catalog/services/ai-management-platforms/google-agent-registry
+  type: service
+  name: Google Agent Registry
+  aliases:
+    - Agent Registry
+  references:
+    - type: release-notes
+      source:
+        url: https://docs.cloud.google.com/agent-registry/release-notes
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Google Cloud announced Agent Registry generally available on 2026-06-18 with API v1, client libraries, A2A support, and dedicated registry functionality.
+    - type: documentation
+      source:
+        url: https://docs.cloud.google.com/agent-registry/docs/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google

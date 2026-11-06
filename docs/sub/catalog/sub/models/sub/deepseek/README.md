@@ -1,14 +1,14 @@
 # DeepSeek Models
 
-This model-domain view groups model families produced by DeepSeek. Canonical organization identity remains on the [DeepSeek producer page](../../../../../../../producers/sub/d/sub/deepseek/).
+Model documentation published under the DeepSeek namespace. The [DeepSeek producer profile](../../../producers/sub/d/sub/deepseek/) identifies the organization; this view leads to its model family.
 
-## Translations
+## Families
 
-- English
-- [Українська](./l10n/uk_UA/)
+- [DeepSeek](./sub/deepseek/) — documented DeepSeek-V4 and DeepSeek-V4.1 series.
 
-## Model families
+## Official resources
 
-- [`deepseek/`](./sub/deepseek/) — the DeepSeek model family, including the materialized DeepSeek-V4 series.
+- [DeepSeek](https://www.deepseek.com/)
+- [DeepSeek on Hugging Face](https://huggingface.co/deepseek-ai)
 
-Hosted API aliases and mutable serving limits remain provider-side access concerns.
+API pricing, rate limits, and mutable serving names belong to the [DeepSeek API service](../../../services/sub/model-apis/sub/deepseek-api/).

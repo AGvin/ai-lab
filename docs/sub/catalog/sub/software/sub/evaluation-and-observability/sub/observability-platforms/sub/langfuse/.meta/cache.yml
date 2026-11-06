@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:0c2bad5ce3fd2a74239bb1edc791f36d486c1ec2
+      entity.yml: gitblob:8535e32376e75dc8961cd5888de22ecef77c29b8
     parent:
       entity.yml: gitblob:0f9e361b25df194c1b4133d3d9f52a1680fa1d57
   state:
@@ -58,6 +58,18 @@ cache:
             url: https://github.com/langfuse/langfuse
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://langfuse.com/faq/all/self-hosting-langfuse
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://langfuse.com/self-hosting/security/telemetry
+          purposes:
           - research
           authority: official
         relations:

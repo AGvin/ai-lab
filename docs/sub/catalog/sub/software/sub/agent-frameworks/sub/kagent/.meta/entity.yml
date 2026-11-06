@@ -1,0 +1,37 @@
+entity:
+  id: catalog/software/agent-frameworks/kagent
+  type: software
+  name: kagent
+  aliases:
+    - kagent Kubernetes Agent Platform
+  identity_note: >-
+    Kubernetes-native agent framework and runtime for declarative agents,
+    maintained by the CNCF Sandbox kagent project. Its Kubernetes controller,
+    Agent Substrate, CLI, UI, and agent harnesses are one software identity.
+    Managed model APIs and separately licensed vendor services are distinct.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/kagent-dev/kagent
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/kagent-dev/kagent/blob/e3b807935db59cfb161f87e898d8e203715a5b79/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://kagent.dev/docs/kagent/1.x/setup/installation/
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://kagent.dev/docs/kagent/1.x/about/what-is-kagent/
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/kagent-dev/kagent/blob/e3b807935db59cfb161f87e898d8e203715a5b79/LICENSE
+      purposes: [research]
+      authority: official

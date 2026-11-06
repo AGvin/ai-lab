@@ -6,6 +6,8 @@
 - Render the standard child-navigation block from the validated direct-child projection so every materialized canonical producer under this index appears exactly once.
 - Keep the page concise and navigational.
 
+- Order all direct children by canonical name, then canonical ID; preserve every materialized child exactly once, including profiles that previously lacked a reader.
+
 ## Validation
 
 - The child-navigation block matches the validated materialized direct-child projection and every destination resolves to a canonical producer node.

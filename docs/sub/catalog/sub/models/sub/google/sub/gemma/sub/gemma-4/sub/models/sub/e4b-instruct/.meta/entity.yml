@@ -2,6 +2,8 @@ entity:
   id: catalog/models/google/gemma/gemma-4/models/e4b-instruct
   type: model
   name: Gemma 4 E4B Instruct
+  aliases:
+    - "google/gemma-4-E4B-it"
   references:
     - type: registry
       source:
@@ -22,6 +24,14 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemma/docs/core/model_card_4
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/google/gemma/gemma-4
+  identity_note: "Instruction-tuned Gemma 4 checkpoint google/gemma-4-E4B-it with 4.5B effective parameters and 8B parameters including embeddings; QAT and GGUF packages remain separate artifacts."

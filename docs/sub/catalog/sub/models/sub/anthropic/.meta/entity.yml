@@ -16,3 +16,9 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://platform.claude.com/docs/en/models/sonnet-5/overview
+      purposes:
+        - research
+      authority: official

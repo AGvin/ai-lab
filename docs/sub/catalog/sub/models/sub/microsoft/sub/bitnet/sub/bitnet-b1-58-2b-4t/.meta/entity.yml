@@ -1,0 +1,20 @@
+entity:
+  id: catalog/models/microsoft/bitnet/bitnet-b1-58-2b-4t
+  type: model
+  name: BitNet b1.58 2B4T
+  identity_note: >-
+    Microsoft Research's roughly 2B-parameter checkpoint was trained on 4T tokens with native ternary W1.58A8 weights/activations and reports a 4,096-token sequence limit. The card declares MIT. Packed, BF16 master and GGUF distributions represent one trained model. It is not an ordinary model compressed only after training, nor the separately cataloged bitnet.cpp runtime. The publisher explicitly says standard Transformers execution does not deliver its reported speed/energy gains; specialized bitnet.cpp kernels are required for that efficiency path. Pin and review model code, artifact and runtime before loading; do not infer measured CPU throughput or memory fit from 1.58-bit branding. Publisher capability/benchmark claims were not independently reproduced. Ownership/control-chain review is incomplete; no Russian-control finding or adoption clearance is established.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/microsoft/bitnet-b1.58-2B-4T
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/microsoft/bitnet-b1.58-2B-4T/blob/main/LICENSE
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/microsoft/bitnet

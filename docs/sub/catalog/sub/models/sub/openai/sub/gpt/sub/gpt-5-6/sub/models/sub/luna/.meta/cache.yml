@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:aea2932b1463ea5616437f6ee057dbb968eecbb1
+      entity.yml: gitblob:b7f81b1b048e7b991dfa8aae6ceab45ebd4566cb
     parent:
-      entity.yml: gitblob:50b43c20d50f16ac0efe80f287e9c75d5d202a55
+      entity.yml: gitblob:5e1032883aabbc34c1dd1ded489285244c450367
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
   state:
     node:
@@ -60,9 +60,23 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/guides/latest-model
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://deploymentsafety.openai.com/gpt-5-6-august-update
+          purposes:
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/openai/gpt/gpt-5-6
+        identity_note: Concrete GPT-5.6 Luna model; hosted configuration and product-specific
+          updates do not independently define another peer model.
     aliases:
       effective:
         schema: default

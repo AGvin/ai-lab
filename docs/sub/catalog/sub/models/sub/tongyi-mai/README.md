@@ -1,11 +1,10 @@
 # Tongyi-MAI Models
 
-This model-domain view groups model families published by Tongyi-MAI. Canonical publishing identity remains on the [Tongyi-MAI producer page](../../../../../../../producers/sub/t/sub/tongyi-mai/).
+This model-domain view groups model families published by Tongyi-MAI. Canonical publishing identity remains on the [Tongyi-MAI producer page](../../../producers/sub/t/sub/tongyi-mai/).
 
 ## Translations
 
 - English
-- [Українська](./l10n/uk_UA/)
 
 ## Model families
 

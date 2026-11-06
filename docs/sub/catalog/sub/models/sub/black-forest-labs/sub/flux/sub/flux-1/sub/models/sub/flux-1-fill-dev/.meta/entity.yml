@@ -1,0 +1,34 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-fill-dev
+  type: model
+  name: FLUX.1 Fill [dev]
+  aliases:
+  - FLUX.1-Fill-dev
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://github.com/black-forest-labs/flux/blob/main/docs/fill.md
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://bfl.ai/blog/24-11-21-tools
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-1
+  identity_note: >-
+    Released 12B guidance-distilled rectified-flow model for image inpainting and outpainting from an input image, text and a binary mask. The exact dev checkpoint is distinct from hosted Fill pro and from FLUX.1-dev generation weights.
+    Gated weights use the FLUX dev Non-Commercial License.
+    Model rights, generated-output permissions and hosted API terms are distinct.
+    Runtime fit and provider quality claims have not been independently tested.

@@ -1,0 +1,14 @@
+entity:
+  id: catalog/datasets/moru
+  type: dataset
+  name: "MORU"
+  aliases:
+    - "Moral Reasoning Across Animal Domains"
+  identity_note: >-
+    Rubric-based assessment of animal welfare moral reasoning, separate from ANIMA's 26-prompt dataset.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/CompassioninMachineLearning/moru-benchmark
+      purposes: [identification, research]
+      authority: official

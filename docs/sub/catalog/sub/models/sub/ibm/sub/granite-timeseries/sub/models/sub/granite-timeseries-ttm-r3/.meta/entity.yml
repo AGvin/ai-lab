@@ -1,0 +1,22 @@
+entity:
+  id: catalog/models/ibm/granite-timeseries/models/granite-timeseries-ttm-r3
+  type: model-series
+  name: Granite TimeSeries TTM R3
+  aliases:
+    - Granite Tiny Time Mixer R3
+  identity_note: >-
+    Granite TTM R3 is represented at series level because IBM describes it as a family of
+    pretrained models and its official toolkit selects among multiple R3 revision keys by context,
+    forecast horizon, decomposed architecture, and Lite/non-Lite mode. The repository's default
+    artifact is therefore not treated as the exhaustive identity of the R3 release.
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-timeseries-ttm-r3
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/ibm/granite-timeseries

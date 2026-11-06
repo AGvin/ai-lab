@@ -1,0 +1,97 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:1d99452ff0e284ccee1a6c3167b7fc299d3a1799
+    parent:
+      entity.yml: gitblob:03f8eb89b4bc542dfc0c1fcab5ee7f1a6c07a658
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/v/valyu
+        type: organization
+        name: Valyu
+        identity_note: Valyu operates a hosted retrieval and research platform combining
+          open-web information with specialized and permissioned sources. Its Search,
+          Contents, Answer and DeepResearch workflows belong to the service rather
+          than the producer organization. Access to licensed material, permitted reuse
+          of outputs and citations, processing terms and retention depend on the source
+          and customer agreement. Valyu supplies retrieval and synthesis; it does
+          not thereby author the underlying sources, and its published benchmark claims
+          are first-party evidence.
+        references:
+        - type: official-site
+          source:
+            url: https://www.valyu.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.valyu.ai/home
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.valyu.ai/api-reference/endpoint/search
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/services/web-data/valyu
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

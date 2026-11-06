@@ -1,0 +1,31 @@
+entity:
+  id: catalog/agent-skills/collections/composio-awesome-claude-skills
+  type: skill-collection
+  name: Composio Awesome Claude Skills
+  aliases:
+    - ComposioHQ/awesome-claude-skills
+    - Awesome Claude Skills (ComposioHQ)
+  identity_note: "ComposioHQ maintains the curated and contributed repository, but individual third-party skills, scripts, plugins and linked projects are not automatically authored, audited or fully licensed by Composio."
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ComposioHQ/awesome-claude-skills
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/ComposioHQ/awesome-claude-skills/blob/master/CONTRIBUTING.md
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/composio

@@ -1,0 +1,115 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:57eef205b830a2d175c669e6e79eae9a9a355f77
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/webarena-verified
+        type: dataset
+        name: WebArena-Verified
+        identity_note: WebArena-Verified is ServiceNow’s maintained, audited derivative
+          of WebArena for evaluating web agents. It supplies a versioned task corpus
+          and scoring contract, with corrections to task instructions and expected
+          answers. Original WebArena research and the separate VisualWebArena benchmark
+          retain their own identities. The current release contains 812 tasks, including
+          a separately selected 258-task Hard subset. Typed JSON answers and captured
+          network events support deterministic scoring and offline replay from HAR
+          traces. Match the audited task revision, evaluator and environment to the
+          run; a similar task ID does not make results comparable to original WebArena
+          or VisualWebArena. Verification reduces identified measurement problems
+          but does not establish that every remaining task or scorer is error-free.
+          The repository’s release history scheduled public availability for December
+          4, 2025 and records PyPI and uvx/Docker distribution improvements in January
+          and February 2026. Those are distribution changes within this benchmark.
+          The repository uses Apache 2.0; provision and reset the documented web environments,
+          authorize the agent’s test accounts and control access to network traces.
+          Trace capture can include account or page data. BrowserGym and AgentLab
+          remain separate environment and experiment tools.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/ServiceNow/webarena-verified
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://servicenow.github.io/webarena-verified/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://servicenow.github.io/webarena-verified/latest/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/ServiceNow/webarena-verified/blob/main/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/s/servicenow
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

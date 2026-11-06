@@ -1,0 +1,22 @@
+entity:
+  id: catalog/services/web-data/apify
+  type: service
+  name: Apify
+  references:
+    - type: official-site
+      source:
+        url: https://apify.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.apify.com/actors
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/apify

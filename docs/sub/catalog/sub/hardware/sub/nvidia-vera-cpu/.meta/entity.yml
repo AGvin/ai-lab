@@ -1,0 +1,32 @@
+entity:
+  id: catalog/hardware/nvidia-vera-cpu
+  type: hardware-product
+  name: NVIDIA Vera CPU
+  identity_note: >-
+    NVIDIA Vera CPU is an 88-core custom Olympus data-center CPU with a vendor-published peak 1.2 TB/s memory bandwidth, distinct from Vera CPU Rack (256 CPUs) and Vera Rubin NVL72. NVIDIA's August 2026 delivery report documents early customer systems and shipping, not universal availability. Rack aggregates, single-CPU memory capacity, workload speedups, confidential-computing support and power modes need exact configuration and software verification.
+  aliases:
+    - Vera CPU
+  references:
+    - type: official-site
+      source:
+        url: https://www.nvidia.com/en-us/data-center/vera-cpu/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://nvidianews.nvidia.com/news/nvidia-launches-vera-cpu-purpose-built-for-agentic-ai
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://blogs.nvidia.com/blog/vera-cpu-delivery/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

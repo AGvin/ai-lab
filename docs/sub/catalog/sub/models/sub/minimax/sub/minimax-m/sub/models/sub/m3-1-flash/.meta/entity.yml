@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/minimax/minimax-m/models/m3-1-flash
+  type: model
+  name: MiniMax M3.1 Flash
+  identity_note: >-
+    MiniMax announced the released M3.1 Flash model on October 19, 2026 for coding, agentic and computer-use work. Space Bunny was an early version, not a second credited model. Published throughput, cost reductions and benchmarks are vendor claims tied to serving conditions. The announcement does not establish a public weight release or a weight license; do not inherit M2/M3 terms. Treat API pricing, availability, aliases and serving throughput as mutable service facts. Validate and constrain tool/computer actions, require authorization for consequential operations, and keep credentials outside untrusted prompts. Ownership/control-chain review is pending; no Russian-control finding or eligibility clearance.
+  references:
+    - type: documentation
+      source:
+        url: https://www.minimax.io/blog/minimax-m31f
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/minimax/minimax-m

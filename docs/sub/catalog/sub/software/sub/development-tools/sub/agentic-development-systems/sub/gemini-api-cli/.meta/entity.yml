@@ -1,0 +1,33 @@
+entity:
+  id: catalog/software/development-tools/agentic-development-systems/gemini-api-cli
+  type: software
+  name: Gemini API CLI
+  aliases:
+    - gemini-api
+    - Google Gemini API CLI
+  identity_note: >-
+    Google's Apache-2.0-licensed stateless command-line tool and Go binary
+    for using Gemini API models, media generation and managed agents from
+    coding agents, shells and CI. It is distinct from Google Gemini CLI,
+    Google Agents CLI, the Gemini API itself, and managed agent services.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/google-gemini/gemini-api-cli
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/google-gemini/gemini-api-cli/blob/3197748d387c025604ec80f9f87d6f499bd7d7f7/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/google-gemini/gemini-api-cli/blob/3197748d387c025604ec80f9f87d6f499bd7d7f7/go.mod
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/google-gemini/gemini-api-cli/blob/3197748d387c025604ec80f9f87d6f499bd7d7f7/LICENSE
+      purposes: [research]
+      authority: official

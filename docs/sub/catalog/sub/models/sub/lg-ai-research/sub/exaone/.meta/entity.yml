@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/lg-ai-research/exaone
+  type: model-family
+  name: EXAONE
+  identity_note: >-
+    EXAONE is a model family published by LG AI Research. Exact trained checkpoints, licenses, distributions and runtime limits have separate model owners.
+    Ownership/control-chain review remains pending; no Russian-control finding or adoption clearance.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.lgresearch.ai/blog/view?seq=641
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/lg-ai-research
+    - type: has-member
+      target: catalog/models/lg-ai-research/exaone/exaone-4-5-33b

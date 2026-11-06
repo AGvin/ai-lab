@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/medqa
+  type: dataset
+  name: "MedQA"
+  aliases:
+    - "MedQA Medical Exams"
+    - "Medical Exam QA Benchmark"
+  identity_note: >-
+    Medical-exam question-answering benchmark with US, Mainland China and Taiwan question banks, multilingual textbooks and retrieval baselines; clinical use and source-data rights remain distinct.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/jind11/MedQA
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/jind11/MedQA/blob/27b02f66aac217933c9648a06f82e9f720377925/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/jind11/MedQA/blob/27b02f66aac217933c9648a06f82e9f720377925/LICENSE
+      purposes: [research]
+      authority: official

@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/frontier-cs
+  type: dataset
+  name: Frontier-CS
+  aliases:
+    - FrontierCS
+    - FrontierCS Research and Algorithmic Benchmark
+  identity_note: >-
+    Computer-science agent research benchmark comprising open-ended research and algorithmic programming tasks, maintained by the Frontier-CS team. The original repository's benchmark artifacts are distinct from newer FrontierCS 2 and FrontierSmith products, participating codebases, model agents and leaderboard outcomes.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/FrontierCS/Frontier-CS
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/FrontierCS/Frontier-CS/blob/59687e5428266a22a49cf51f981b912103bfa91d/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/FrontierCS/Frontier-CS/blob/59687e5428266a22a49cf51f981b912103bfa91d/LICENSE
+      purposes: [research]
+      authority: official

@@ -1,0 +1,38 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-development/megatron-core
+  type: software
+  name: Megatron Core
+  aliases:
+    - NVIDIA Megatron Core
+  references:
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/overview.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA/Megatron-LM/tree/main/megatron/core
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://pypi.org/project/megatron-core/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/install.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

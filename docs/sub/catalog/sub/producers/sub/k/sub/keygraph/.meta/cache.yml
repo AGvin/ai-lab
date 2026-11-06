@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:88ec433468924536a443a82f7ba908174462b56e
+      entity.yml: gitblob:176105e2179548cc45927844e18287df84390c78
     parent:
       entity.yml: gitblob:2f1e0b49da4e74d5be798e28b5ef97ff4b499581
   state:
@@ -61,6 +61,14 @@ cache:
           - research
           authority: official
           note: Official Keygraph GitHub organization profile.
+        - type: documentation
+          source:
+            url: https://keygraph.io/docs/
+          purposes:
+          - research
+          authority: official
+          note: Official documentation distinguishes Shannon from commercial editions
+            and states the active-testing authorization boundary.
         relations:
         - type: produces
           target: catalog/software/agents/local/shannon

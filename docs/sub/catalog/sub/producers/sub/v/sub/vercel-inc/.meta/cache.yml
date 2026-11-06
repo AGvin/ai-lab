@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:08f8f55e10d088239ca602ba4bc1986e85229e31
+      entity.yml: gitblob:3b097d9942b57fdf7b257d5686ad0e31c5658c4f
     parent:
       entity.yml: gitblob:03f8eb89b4bc542dfc0c1fcab5ee7f1a6c07a658
   state:
@@ -45,6 +45,14 @@ cache:
         id: catalog/producers/v/vercel-inc
         type: organization
         name: Vercel Inc.
+        identity_note: Vercel Inc. is the company behind the AI SDK, AI Gateway, Vercel
+          Connect and Vercel Agent Skills represented here. Its current terms distinguish
+          the operated service agreement from software supplied exclusively under
+          an open-source license. The installable SDK and skill collection have different
+          operating boundaries from managed routing and connector services. Routed
+          models and connected applications retain their own providers, terms and
+          access scopes. Review connector credentials and skill actions that can transmit
+          project content or deploy changes.
         references:
         - type: official-site
           source:
@@ -67,9 +75,33 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://vercel.com/docs/ai-gateway
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://vercel.com/docs/connect
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/vercel-labs/agent-skills
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/application-frameworks/application-development/vercel-ai-sdk
+        - type: produces
+          target: catalog/services/gateways/model-gateways/vercel-ai-gateway
+        - type: produces
+          target: catalog/services/agent-integration-platforms/vercel-connect
+        - type: produces
+          target: catalog/agent-skills/collections/vercel-agent-skills
     aliases:
       effective:
         schema: default

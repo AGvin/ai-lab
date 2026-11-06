@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/development-tools/testing/mcp-inspector
+  type: software
+  name: MCP Inspector
+  references:
+    - type: repository
+      source:
+        url: https://github.com/modelcontextprotocol/inspector
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/modelcontextprotocol/inspector/releases
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: maintained-by
+      target: catalog/producers/a/agentic-ai-foundation

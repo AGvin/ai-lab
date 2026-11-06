@@ -3,20 +3,21 @@ entity:
   type: organization
   name: Red Hat
   references:
-    - type: official-site
-      source:
-        url: https://www.redhat.com/en/about
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: other
-      source:
-        url: https://github.com/llm-d/llm-d
-      purposes:
-        - research
-      authority: official
-      note: Current llm-d project README identifies Red Hat as one of the founding organizations.
+  - type: official-site
+    source:
+      url: https://www.redhat.com/en/about
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: other
+    source:
+      url: https://github.com/llm-d/llm-d
+    purposes:
+    - research
+    authority: official
+    note: The project README credits Red Hat among multiple founding organizations and identifies current CNCF Sandbox
+      status; contribution does not imply sole ownership.
   relations:
-    - type: produces
-      target: catalog/software/inference-runtimes/distributed-serving/llm-d
+  - type: produces
+    target: catalog/software/inference-runtimes/distributed-serving/llm-d

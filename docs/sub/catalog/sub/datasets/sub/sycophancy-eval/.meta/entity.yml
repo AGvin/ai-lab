@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/sycophancy-eval
+  type: dataset
+  name: "SycophancyEval"
+  aliases:
+    - "Language Model Sycophancy Evaluation"
+  identity_note: >-
+    Research datasets of sycophancy in free-form language generation, including prompt and source metadata files used to study undue agreement with users, distinct from evaluator notebooks and model outputs.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/meg-tong/sycophancy-eval
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/meg-tong/sycophancy-eval/blob/9a1694221e3639887138f61deae344335eca6752/README.md
+      purposes: [research]
+      authority: official

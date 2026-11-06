@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-5-super-vl-base
+  type: model
+  name: NVIDIA Nemotron 3.5 Super VL Base
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/nvidia/nemotron/nemotron-3
+    - type: derived-from
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-super-base
+  identity_note: >-
+    Released base vision-language checkpoint for further training, distinct from the post-trained Super VL; 120B total and 12B active parameters; OpenMDW-1.1.

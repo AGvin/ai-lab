@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/zerobench
+  type: dataset
+  name: "ZeroBench"
+  aliases:
+    - "ZeroBench Visual Reasoning"
+    - "ZeroBench Main Set"
+  identity_note: >-
+    Curated difficult visual reasoning benchmark for multimodal models, with a main set of manually reviewed questions, separate data and leaderboard scores. Previously unsolved tasks have since been solved by later systems; original promotional title is historical.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/jonathan-roberts1/zerobench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/jonathan-roberts1/zerobench/blob/0debbe43deddfe54f9965a6fdfd4f70a20d8ab62/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/jonathan-roberts1/zerobench/blob/0debbe43deddfe54f9965a6fdfd4f70a20d8ab62/LICENSE
+      purposes: [research]
+      authority: official

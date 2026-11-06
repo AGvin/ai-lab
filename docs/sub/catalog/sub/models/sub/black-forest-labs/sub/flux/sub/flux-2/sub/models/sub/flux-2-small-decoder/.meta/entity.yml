@@ -1,0 +1,48 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-small-decoder
+  type: model
+  name: FLUX.2 Small Decoder
+  identity_note: >-
+    Black Forest Labs' separately distilled learned VAE decoder component for the FLUX.2 image pipeline,
+    with approximately 28M decoder parameters and an unchanged encoder. It is not an independent
+    text-to-image generator. Apache-2.0 applies to this component separately from generator licenses;
+    combined autoencoder packaging is not another trained decoder identity.
+  references:
+  - type: documentation
+    source:
+      url: https://huggingface.co/black-forest-labs/FLUX.2-small-decoder
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/black-forest-labs/FLUX.2-small-decoder/blob/main/config.json
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/black-forest-labs/FLUX.2-small-decoder/tree/main
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/black-forest-labs/flux2/blob/50fe5162777813d869182b139e83b10743caef15/src/flux2/util.py
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/black-forest-labs/flux2/blob/50fe5162777813d869182b139e83b10743caef15/src/flux2/autoencoder.py
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-2

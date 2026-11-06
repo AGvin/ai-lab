@@ -1,0 +1,38 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-development/orbax-checkpoint
+  type: software
+  name: Orbax Checkpoint
+  aliases:
+    - Orbax Checkpointing
+  references:
+    - type: documentation
+      source:
+        url: https://orbax.readthedocs.io/en/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/google/orbax
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://pypi.org/project/orbax-checkpoint/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://orbax.readthedocs.io/en/latest/guides/checkpoint/v1/orbax_v0_to_v1_migration.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google

@@ -1,0 +1,46 @@
+entity:
+  id: catalog/hardware/nvidia-jetson-agx-thor-developer-kit
+  type: hardware
+  name: NVIDIA Jetson AGX Thor Developer Kit
+  identity_note: >-
+    NVIDIA's released 2025 Blackwell-based Jetson AGX Thor reference development
+    computer, comprising a T5000 128 GB module, NVIDIA carrier board, local
+    NVMe storage and developer interfaces for physical-AI/robotics prototyping.
+    It is a separate system-level purchase/deployment identity from a standalone
+    T5000 or T4000 production module and from automotive DRIVE AGX Thor kits.
+    Module power/performance figures do not establish complete-kit wall draw,
+    deployed robot safety or actual application throughput.
+  references:
+    - type: product-page
+      source:
+        url: https://developer.nvidia.com/embedded/jetson-developer-kits
+      purposes: [identification, research]
+      authority: official
+      note: "Official developer-kit scope: T5000-based Blackwell computer with 128 GB; distinguish it from standalone modules."
+    - type: article
+      source:
+        url: https://nvidianews.nvidia.com/news/nvidia-blackwell-powered-jetson-thor-now-available-accelerating-the-age-of-general-robotics
+      purposes: [identification, research]
+      authority: official
+      note: "Publisher confirms general availability of kit and production modules since 25 August 2025."
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai
+      purposes: [research]
+      authority: official
+      note: "Publisher's T5000 and separate developer-kit carrier-board specification table."
+    - type: documentation
+      source:
+        url: https://developer.nvidia.com/embedded/faq
+      purposes: [research]
+      authority: official
+      note: "Region-specific developer-kit SKUs, development-only kit warranty and price/support caveats."
+    - type: documentation
+      source:
+        url: https://developer.nvidia.com/embedded/jetpack/downloads
+      purposes: [research]
+      authority: official
+      note: "Current JetPack and Jetson Linux support must be checked against exact hardware/software build."
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

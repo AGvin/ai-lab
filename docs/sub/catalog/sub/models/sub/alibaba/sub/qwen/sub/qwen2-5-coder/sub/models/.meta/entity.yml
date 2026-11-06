@@ -2,3 +2,16 @@ entity:
   id: catalog/models/alibaba/qwen/qwen2-5-coder/models
   type: catalog-index
   name: Qwen2.5-Coder Models
+  references:
+    - type: documentation
+      source:
+        url: https://qwenlm.github.io/blog/qwen2.5-coder-family/
+      purposes:
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
+      purposes:
+        - research
+      authority: official

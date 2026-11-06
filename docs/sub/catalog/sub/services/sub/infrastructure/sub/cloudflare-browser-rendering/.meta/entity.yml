@@ -1,0 +1,26 @@
+entity:
+  id: catalog/services/infrastructure/cloudflare-browser-rendering
+  type: service
+  name: Cloudflare Browser Run
+  aliases:
+    - "Cloudflare Browser Rendering"
+    - "Browser Rendering"
+    - "Browser Run"
+  identity_note: "Cloudflare Browser Run is the current name of Browser Rendering; the existing canonical service identity is retained."
+  references:
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/browser-run/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/api/resources/browser_rendering/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cloudflare

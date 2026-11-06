@@ -14,3 +14,10 @@
 ## References
 
 - Official site: https://www.agentskills.to/
+
+## Scoped original-source qualification — 2026-11-06
+
+- The original site presents a curated skill directory for coding assistants including Claude Code, Codex and Cursor, with topic search/categories and skill-level installation links. Advertised collection totals and category counters are mutable and not independently reconciled.
+- Use the exact source repository and installed instructions when evaluating an individual skill, not the directory popularity or its marketing claims.
+- Verified first-party source 1: https://www.agentskills.to/
+- This review accepts only the current registry identity and source boundaries. It does not assert a full freshness audit, vendor-independent security, tested skill execution, complete CI/cache/schema/render, copyright clearance or verified current listing totals.

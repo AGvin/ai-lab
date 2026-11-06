@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/technology-innovation-institute/falcon
+  type: model-family
+  name: Falcon
+  references:
+    - type: official-site
+      source:
+        url: https://falconllm.tii.ae/falcon-models.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/technology-innovation-institute
+    - type: has-member
+      target: catalog/models/technology-innovation-institute/falcon/models/falcon-h1r-7b
+    - type: has-member
+      target: catalog/models/technology-innovation-institute/falcon/models/falcon-perception-600m

@@ -1,0 +1,104 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:69c8eba23a6e3d0e1e77726666f10f56808a0521
+    parent:
+      entity.yml: gitblob:a0a4eaa64510e7633b69ee579ddd13bda6dabfeb
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/p/parallel-web-systems-inc
+        type: organization
+        name: Parallel Web Systems Inc.
+        aliases:
+        - Parallel Web Systems
+        references:
+        - type: official-site
+          source:
+            url: https://parallel.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: terms-of-service
+          source:
+            url: https://parallel.ai/customer-terms
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Customer Terms effective October 17, 2026 identify Parallel Web Systems
+            Inc. and define output-use and customer-data conditions.
+        - type: documentation
+          source:
+            url: https://docs.parallel.ai/search/search-quickstart
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Search API.
+        - type: documentation
+          source:
+            url: https://docs.parallel.ai/task-api/task-quickstart
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Task API.
+        relations:
+        - type: produces
+          target: catalog/services/web-data/parallel
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

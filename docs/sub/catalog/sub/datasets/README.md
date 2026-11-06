@@ -1,0 +1,172 @@
+# Datasets
+
+The dataset catalog owns identifiable concrete AI-relevant datasets and dataset families whose provenance, composition, versions, licenses, access, and intended uses have durable reader value.
+
+Dataset concepts, benchmark methodology, scoring rules, metrics, evaluation results, and implementation tutorials remain with their own concept, learning, evidence, or software owners. A concrete dataset is also distinct from a benchmark protocol that uses it, an evaluation harness, and a hosted dataset platform. Dataset revisions, variants, mirrors, licenses, access paths, and benchmark membership are version-sensitive where applicable.
+
+The materialized set below is curated rather than exhaustive.
+
+## Dataset profiles
+
+- [Adversarial Humanities Benchmark (AHB)](./sub/ahb/) — refusal robustness against humanities-inspired adversarial reformulations.
+- [AbstentionBench](./sub/abstentionbench/) — uncertainty and abstention across six evaluation scenarios.
+- [AgencyBench](./sub/agencybench/)
+- [AgentIF](./sub/agentif/)
+- [AgentHarm](./sub/agentharm/) — Gray Swan AI / UK AISI 2024 safety evaluation of harmful multi-step tool-using agents.
+- [Agents' Last Exam](./sub/agents-last-exam/)
+- [AGIEval](./sub/agieval/) — exam-derived reasoning and qualification tasks (v1.1).
+- [Ai2 Reasoning Challenge (ARC)](./sub/ai2-reasoning-challenge/)
+- [AIR-Bench 2024](./sub/air-bench-2024/) — safety prompts across structured risk categories.
+- [MLCommons AILuminate](./sub/mlcommons-ailuminate-safety-family/) — standardized safety prompt assessment and benchmarking.
+- [AIRS-Bench](./sub/airs-bench/)
+- [ANIMA](./sub/anima/) — animal-welfare moral reasoning across 26 prompts and 13 ethical dimensions.
+- [ApprenticeBench](./sub/apprenticebench/)
+- [Attempt to Persuade Eval (APE)](./sub/attempt-persuade-eval/) — persuasion attempt evaluation across benign and sensitive topics.
+- [APPS Coding Challenge Dataset](./sub/apps/) — programming-challenge evaluation with executable tests.
+- [AppWorld](./sub/appworld/) — multi-application tool-use and interactive coding agent benchmark.
+- [AraTrust](./sub/aratrust/) — Arabic LLM trustworthiness and safety evaluation.
+- [AsgardBench](./sub/asgardbench/)
+- [AssistantBench](./sub/assistantbench/) — realistic long-running web-agent information tasks.
+- [Bias Benchmark for QA (BBQ)](./sub/bbq/) — ambiguous and disambiguated social-bias QA.
+- [BIG-bench (original)](./sub/google-big-bench-original/) — broad collaborative language-model capability evaluation.
+- [BIG-Bench Hard](./sub/big-bench-hard/) — 23 difficult BIG-Bench reasoning tasks and prompt examples.
+- [BIG-Bench Extra Hard (BBEH)](./sub/bbeh/) — harder reasoning successor with full and mini subsets.
+- [BigCodeBench](./sub/bigcodebench/) — realistic program synthesis and instruction-following coding tasks.
+- [BixBench](./sub/bixbench/) — computational biology multi-step research evaluation.
+- [BOLD](./sub/bold/) — open-ended text-generation bias prompts.
+- [BoolQ](./sub/boolq/) — natural yes/no question answering.
+- [BrokenMath](./sub/brokenmath/) — mathematical theorem-proving sycophancy benchmark.
+- [BU Bench V2.1](./sub/browser-use-bench-v2/) — browser-agent task completion on a versioned encrypted web dataset.
+- [Catastrophic Cyber Capabilities Benchmark (3CB)](./sub/threecb/) — controlled cyber-capability challenges for model evaluation.
+- [ChemBench](./sub/chembench/) — chemistry language and multimodal benchmark suite.
+- [ChipBench](./sub/chipbench/) — RTL generation, debugging and cross-language reference-model evaluation.
+- [ClassEval](./sub/class-eval/) — class-level Python code-generation tasks.
+- [CharXiv](./sub/charxiv/) — multimodal chart interpretation and reasoning tasks.
+- [CommonsenseQA](./sub/commonsenseqa/) — commonsense multiple-choice QA questions.
+- [ContractBench](./sub/contractbench/) — agent compliance with API artifact validity and integrity contracts.
+- [CoCoNot](./sub/coconot/) — contextual noncompliance and over-refusal benchmark.
+- [ComputeEval](./sub/compute-eval/) — CUDA code-generation correctness and performance challenges.
+- [CORE-Bench](./sub/core-bench/) — agent reproducibility of computational research experiments.
+- [CVE-Bench](./sub/cve-bench/) — authorized local web-vulnerability challenge evaluation.
+- [Cybench](./sub/cybench/) — controlled cybersecurity CTF agent tasks and graduated subtasks.
+- [CyberSecEval](./sub/cyberseceval/) — cybersecurity risks and defensive capabilities of language models.
+- [CyberGym](./sub/cybergym/) — isolated cybersecurity agent evaluation tasks.
+- [CyberMetric](./sub/cybermetric/) — cybersecurity knowledge question dataset.
+- [DeepSearchQA](./sub/deepsearchqa/)
+- [DeceptionBench](./sub/deceptionbench/) — controlled evaluation of deceptive behaviors in language models.
+- [DocVQA](./sub/docvqa/) — visual question answering over scanned single-document images.
+- [DROP](./sub/drop/)
+- [DS-1000](./sub/ds-1000/) — data-science code-generation benchmark.
+- [Do-Not-Answer](./sub/do-not-answer/) — safety-refusal instruction evaluation.
+- [GeneBench-Pro](./sub/genebench-pro/)
+- [EVMbench](./sub/openai-evmbench/) — smart-contract auditing, patching and exploit evaluation.
+- [FailSafeQA](./sub/failsafeqa/) — 220 long-context financial QA robustness records.
+- [FRAMES](./sub/frames/) — 824 multi-hop questions combining factual retrieval and reasoning.
+- [FORTRESS](./sub/fortress/) — public paired adversarial and benign LLM safety evaluation.
+- [Frontier-CS](./sub/frontier-cs/) — open-ended computer-science research and algorithms benchmark.
+- [GPQA](./sub/gpqa/)
+- [GroundedPlanBench](./sub/groundedplanbench/)
+- [GSM8K](./sub/gsm8k/)
+- [GSM-Symbolic](./sub/gsm-symbolic/) — Apple's symbolic-template GSM8K-derived reasoning evaluation dataset (main, P1, P2; 2024).
+- [HardMultiQA](./sub/yandex-hardmultiqa/) — gated Russian multi-source multiple-choice and short-answer QA.
+- [HarmBench](./sub/harmbench/) — robust refusal and automated red-teaming evaluation.
+- [HellaSwag](./sub/hellaswag/)
+- [Horizon](./sub/horizon-agent-learning-benchmark/)
+- [HST-Bench](./sub/hst-bench/)
+- [HumanEval](./sub/humaneval/)
+- [Humanity's Last Exam](./sub/humanitys-last-exam/)
+- [IFEval](./sub/ifeval/)
+- [IFEvalCode](./sub/ifevalcode/) — controlled code-generation instructions and evaluations.
+- [InfiniteBench](./sub/infinite-bench/) — long-context reasoning evaluation beyond 100k tokens.
+- [InstrumentalEval](./sub/instrumentaleval/) — evaluation of instrumental goal pursuit in language models.
+- [InterCode-CTF](./sub/intercode-ctf/) — isolated capture-the-flag tasks for interactive coding agents.
+- [JudgeBench](./sub/judgebench/) — objective correctness across challenging response pairs.
+- [KernelBench](./sub/kernelbench/) — GPU kernel code generation with correctness and speedup evaluation.
+- [LAB-Bench](./sub/lab-bench/) — biological scientific-research benchmark tasks.
+- [LINGOLY](./sub/lingoly/) — Linguistics Olympiad reasoning puzzles.
+- [LiveBench](./sub/livebench/)
+- [LiveCodeBench](./sub/livecodebench/)
+- [LiveCodeBench Pro](./sub/livecodebench-pro/) — competitive programming generation with local executable judging.
+- [Long-Horizon Terminal-Bench](./sub/long-horizon-terminal-bench/)
+- [LongBench v2](./sub/longbench-v2/) — multi-domain reasoning over long documents and structured contexts.
+- [LongMemEval](./sub/longmemeval/)
+- [LongMemEval-V2](./sub/longmemeval-v2/)
+- [MaCBench](./sub/macbench/) — chemistry and materials vision-language model evaluation.
+- [MACHIAVELLI](./sub/machiavelli/) — reward-versus-ethics decisions in text adventure agents.
+- [Manager Coercion Benchmark](./sub/manager-coercion-benchmark/) — AI manager coercion escalation and outcome fabrication measurements.
+- [MASK](./sub/mask/) — honesty under pressure, distinguished from factual accuracy.
+- [MATH](./sub/math/)
+- [MATH-500](./sub/math-500/)
+- [MathVista](./sub/mathvista/) — visual mathematical reasoning benchmark.
+- [MBPP](./sub/mbpp/) — entry-level Python program synthesis with unit tests.
+- [MedQA](./sub/medqa/) — multilingual medical-examination question answering.
+- [MedCalc-Bench](./sub/medcalc-bench/) — medical calculation tasks from clinical-style notes.
+- [MerchantBench](./sub/merchantbench/)
+- [MGSM](./sub/mgsm/) — human-translated multilingual grade-school mathematical reasoning.
+- [MLRC-Bench](./sub/mlrc-bench/) — open-ended ML research competition problem solving by agents.
+- [MLR-Bench](./sub/mlr-bench/) — agent performance on open-ended research proposal and experimentation tasks.
+- [MMIU](./sub/mmiu/) — vision-language reasoning across multiple related images.
+- [MMLU](./sub/mmlu/)
+- [MMMU](./sub/mmmu/)
+- [MonitorBench](./sub/monitorbench/) — chain-of-thought monitorability over multiple reasoning tasks.
+- [MORU](./sub/moru/) — gated moral reasoning benchmark across animal welfare domains.
+- [MuSR](./sub/musr/) — multi-step narrative and commonsense reasoning.
+- [MuTox](./sub/mutox/) — multilingual toxicity annotations for speech/audio evaluation.
+- [NARCBench](./sub/narcbench/) — detecting multi-agent collusion under distribution shift.
+- [NoveltyBench](./sub/novelty-bench/) — response diversity and utility across repeated text generations.
+- [OpenBookQA](./sub/openbookqa/)
+- [OR-Bench](./sub/or-bench/) — benign-looking-dangerous over-refusal benchmark.
+- [ORAgentBench](./sub/oragentbench/)
+- [PaperBench](./sub/paperbench/) — OpenAI's 2025 research-paper replication benchmark (20 ICML 2024 papers; 8,316 rubric criteria).
+- [PAWS](./sub/paws/) — adversarial paraphrase sentence-pair identification.
+- [PatchEval](./sub/patcheval/) — LLM-generated security patch correctness on isolated CVE cases.
+- [PersistBench](./sub/persistbench/) — long-term memory retention, cross-domain leakage and correction behavior.
+- [PIQA](./sub/piqa/) — physical commonsense selection between plausible actions.
+- [PerspectiveGap](./sub/perspective-gap/) — multi-agent prompt-writing and role assignment tasks.
+- [PinchBench](./sub/pinchbench/) — real-world-inspired OpenClaw agent workflow tasks.
+- [PRM800K](./sub/prm800k/)
+- [PubMedQA](./sub/pubmedqa/) — biomedical question answering (yes/no/maybe).
+- [Qasper](./sub/qasper/)
+- [RealReplicaBench](./sub/realreplicabench/)
+- [SAD](./sub/sad/) — model situational awareness over procedural and question-based tasks.
+- [SALAD-Bench](./sub/salad-bench/) — hierarchical multi-category LLM safety and refusal evaluation.
+- [scBench](./sub/scbench/) — reproducible single-cell RNA-seq analysis tasks for AI agents.
+- [SciAgentArena](./sub/sciagentarena/)
+- [SciKnowEval](./sub/sciknoweval/) — scientific knowledge comprehension, reasoning and application tasks.
+- [SciCode](./sub/scicode/) — scientist-curated code-generation research problems.
+- [SciFact](./sub/scifact/)
+- [SEvenLLM-Bench](./sub/sevenllm-bench/) — cyber threat intelligence comprehension and task evaluation.
+- [SecQA](./sub/sec-qa/) — GPT-4-generated computer-security multiple-choice questions.
+- [SentinelBench](./sub/sentinelbench/)
+- [SimpleQA](./sub/simpleqa/)
+- [SimpleQA Verified](./sub/simpleqa-verified/)
+- [SkillsBench](./sub/skillsbench/)
+- [SOSBench](./sub/sosbench/) — restricted-use scientific safety-alignment benchmark.
+- [SPaRC](./sub/sparc/) — grid-pathfinding spatial reasoning puzzles and solution validation.
+- [Spider 2.0](./sub/spider-2-0/)
+- [SQuAD](./sub/squad/) — reading-comprehension question answering over passages.
+- [StereoSet](./sub/stereoset/) — stereotypical-bias evaluation benchmark.
+- [StrongREJECT](./sub/strongreject/) — measuring harmful-response refusal under adversarial prompts.
+- [SycoBench-600](./sub/sycobench-600/) — LLM pressure resistance and acceptance of valid corrections.
+- [SWE-bench Verified](./sub/swe-bench-verified/)
+- [SWE-bench](./sub/swe-bench/)
+- [SWE-Lancer](./sub/swe-lancer/) — software engineering tasks modeled on real freelance assignments.
+- [SWE-smith](./sub/swe-smith/) — synthetic software engineering training tasks and generated environments.
+- [SycophancyEval](./sub/sycophancy-eval/) — model agreement bias in free-form text-generation tasks.
+- [TAC](./sub/tac/) — gated travel-agent animal-welfare decision scenarios.
+- [TarantuBench v1](./sub/tarantubench/) — isolated synthetic vulnerable web challenge evaluation for agents.
+- [TheAgentCompany](./sub/the-agent-company/) — 175-task simulated workplace agent benchmark (1.0.0).
+- [TruthfulQA](./sub/truthfulqa/)
+- [TUA-Bench](./sub/tua-bench/)
+- [UCCB](./sub/uccb/) — 1,039 Ugandan cultural QA pairs across 24 domains.
+- [VoxParity](./sub/voxparity/) — voice-agent tool decisions influenced by acoustic cues.
+- [V*Bench](./sub/vstar-bench/) — 191 high-resolution visual detail and spatial reasoning questions.
+- [WeaveBench](./sub/weavebench/)
+- [WikiWebFacts](./sub/yandex-wikiwebfacts/) — gated Russian short-answer factual question answering.
+- [WildClawBench](./sub/wildclawbench/) — end-to-end agent work across browser, code and communication tools.
+- [WinoGrande](./sub/winogrande/) — commonsense pronoun/disambiguation challenge.
+- [WMDP](./sub/wmdp/) — controlled evaluation of hazardous-knowledge retention and unlearning.
+- [WorldSense](./sub/worldsense/) — synthetic language-grounded reasoning and generalization tasks.
+- [WritingBench](./sub/writingbench/) — generative-writing evaluation with critic models.
+- [XSTest](./sub/xstest/) — over-refusal and exaggerated safety behavior testing.
+- [ZeroBench](./sub/zerobench/) — difficult visual reasoning questions for multimodal models.

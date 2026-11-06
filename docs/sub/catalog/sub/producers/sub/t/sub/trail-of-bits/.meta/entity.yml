@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/t/trail-of-bits
+  type: organization
+  name: Trail of Bits
+  identity_note: >-
+    Trail of Bits is an independent security research and engineering company
+    founded in 2012. Its official Trail of Bits Skills repository publishes
+    a coordinated AI-assisted security-analysis plugin marketplace/collection.
+    Publishing skills and research does not transfer ownership of third-party
+    projects analyzed by the skills and does not constitute authorization
+    to test unrelated systems.
+  references:
+    - type: official-site
+      source:
+        url: https://trailofbits.com/
+      purposes: [identification, research]
+      authority: official
+    - type: official-site
+      source:
+        url: https://trailofbits.com/about/
+      purposes: [identification, research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/trailofbits/skills
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/agent-skills/collections/trail-of-bits-skills

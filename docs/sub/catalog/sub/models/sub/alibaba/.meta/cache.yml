@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:74afb3d707f8217f74b1caa03743dac96766f1d5
+      entity.yml: gitblob:0ad21fc20e4195f4dc142f9741289130634e40b5
     parent:
       entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
       node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
@@ -46,6 +46,19 @@ cache:
         id: catalog/models/alibaba
         type: model-producer-view
         name: Alibaba models
+        references:
+        - type: repository
+          source:
+            url: https://github.com/QwenLM/Qwen3-TTS
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/wan-video
+          purposes:
+          - research
+          authority: official
     aliases:
       effective:
         schema: default

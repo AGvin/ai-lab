@@ -14,3 +14,10 @@
 ## References
 
 - Official site: https://agentskills.codes/
+
+## Scoped original-source qualification — 2026-11-06
+
+- The original site identifies an installable multi-source SKILL.md index. Skill pages expose the originating public repository and agent-specific copy/install instructions. The registry is not the originating publisher; indexed totals and agent support change with the service.
+- Directory listing, freshness of source links and one-line installation instructions are not a security review or certification for all supported clients.
+- Verified first-party source 1: https://agentskills.codes/
+- This review accepts only the current registry identity and source boundaries. It does not assert a full freshness audit, vendor-independent security, tested skill execution, complete CI/cache/schema/render, copyright clearance or verified current listing totals.

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:131bad696a1f753e311adb75b97f8e5b627df80f
+      entity.yml: gitblob:e605bf8076eb0f475ac1b8bf9ffd5e2a5138b1e1
     parent:
       entity.yml: gitblob:d76916cc6208401fd85eacd3a15da3a51743c755
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -59,6 +59,18 @@ cache:
             url: https://github.com/langchain-ai/langgraph
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.langchain.com/oss/javascript/langgraph/overview
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/langchain-ai/langgraphjs
+          purposes:
           - research
           authority: official
         relations:

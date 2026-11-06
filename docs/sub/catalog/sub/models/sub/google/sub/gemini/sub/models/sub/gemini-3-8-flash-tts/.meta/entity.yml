@@ -1,0 +1,32 @@
+entity:
+  id: catalog/models/google/gemini/models/gemini-3-8-flash-tts
+  type: model
+  name: Gemini 3.8 Flash TTS
+  aliases:
+    - "gemini-3.8-flash-tts"
+  references:
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash-tts
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://ai.google.dev/gemini-api/docs/changelog
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemini-api/docs/voice-replication
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/gemini
+  identity_note: "Stable text-to-speech model served as gemini-3.8-flash-tts, positioned by Google for expressive creative speech and complex dialogue; voice profiles and the Voices API are separate service assets."

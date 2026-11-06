@@ -1,0 +1,30 @@
+entity:
+  id: catalog/models/google/alphagenome
+  type: model
+  name: AlphaGenome
+  references:
+    - type: official-site
+      source:
+        url: https://deepmind.google/science/alphagenome/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/google-deepmind/alphagenome
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/google-deepmind/alphagenome_research
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google-deepmind
+  identity_note: "Google DeepMind model for predicting genomic sequence and variant effects on molecular properties; the API client, research implementation, and AlphaGenome Atlas are distinct assets."

@@ -2,6 +2,7 @@ entity:
   id: catalog/producers/d/daniel-avila
   type: individual
   name: Daniel Avila
+  identity_note: "Individual publisher under davila7 and maintainer of Claude Code Templates; distinct from LibreChat founder Danny Avila (danny-avila)."
   references:
     - type: other
       source:
@@ -17,6 +18,14 @@ entity:
         - research
       authority: official
       note: The project repository identifies Daniel Avila as the maintainer through its security policy and links the davila7 profile as the maintainer identity.
+    - type: documentation
+      source:
+        url: https://github.com/davila7/claude-code-templates/blob/main/SECURITY.md
+      purposes:
+      - identification
+      - research
+      authority: official
+      note: The project explicitly names Daniel Avila as maintainer.
   relations:
     - type: produces
       target: catalog/services/ai-assets/claude-code-templates

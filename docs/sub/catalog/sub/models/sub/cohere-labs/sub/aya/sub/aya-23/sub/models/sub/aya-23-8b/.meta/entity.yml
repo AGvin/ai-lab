@@ -1,0 +1,24 @@
+entity:
+  id: catalog/models/cohere-labs/aya/aya-23/models/aya-23-8b
+  type: model
+  name: Aya 23 8B
+  identity_note: >-
+    Aya 23 8B is the separately released 8-billion-parameter multilingual instruction
+    text generator in the May 2024 Aya 23 research series. It supports 23 languages and an
+    8,192-token context. The CohereLabs/aya-23-8B weight repository is gated, with CC-BY-NC-4.0,
+    license addendum and acceptable-use restrictions. No verified current Cohere API availability,
+    exact Command training-parent checkpoint or unrestricted commercial rights.
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/CohereLabs/aya-23-8B
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://cohere.com/blog/aya23
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere-labs/aya/aya-23

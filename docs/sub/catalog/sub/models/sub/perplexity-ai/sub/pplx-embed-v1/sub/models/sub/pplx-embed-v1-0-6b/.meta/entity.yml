@@ -1,0 +1,30 @@
+entity:
+  id: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-0-6b
+  type: model
+  name: PPLX Embed V1 0.6B
+  aliases:
+  - pplx-embed-v1-0.6b
+  references:
+  - type: documentation
+    source:
+      url: https://docs.perplexity.ai/docs/embeddings/quickstart
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/perplexity-ai/pplx-embed-v1
+  - type: has-derivative
+    target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-late-0-6b
+  - type: has-derivative
+    target: catalog/models/perplexity-ai/pii-tracer
+  identity_note: PPLX Embed V1 0.6B is the 0.6B-class standard member of Perplexity's Qwen3-derived V1 embedding
+    family. Its current model card lists 1024 dimensions, a 32K context and MIT licensing.

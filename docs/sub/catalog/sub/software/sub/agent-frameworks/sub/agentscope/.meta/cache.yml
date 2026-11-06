@@ -1,0 +1,98 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d77ea5b924b25c4ff04bc8fa5fb8fc647dc3be71
+    parent:
+      entity.yml: gitblob:d76916cc6208401fd85eacd3a15da3a51743c755
+      node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/software/software
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/software/software
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/software/software
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/agent-frameworks/agentscope
+        type: software
+        name: AgentScope
+        references:
+        - type: repository
+          source:
+            url: https://github.com/agentscope-ai/agentscope
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://github.com/agentscope-ai/agentscope/releases
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.agentscope.io/
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/agentscope-ai/agentscope-runtime
+          purposes:
+          - research
+          authority: official
+          note: Historical standalone runtime; AgentScope 2.0 includes its capabilities
+            and is the maintained migration target.
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/alibaba-group
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

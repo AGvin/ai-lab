@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1f81c0126806c6c78ec6d20eb6cd1f6d87846553
+      entity.yml: gitblob:5579519802608e7c75e8ac12e338ae7e84a8504f
     parent:
       entity.yml: gitblob:5e848f769005e6f901786fd212d8c9d8ccc468b3
   state:
@@ -57,18 +57,162 @@ cache:
           source:
             url: https://github.com/NVIDIA
           purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.nvidia.com/en-in/drivers/legalfo/
+          purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://opensource.nvidia.com/llm-info/
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.nvidia.com/en-us/agreements/
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/llm-d/llm-d
+          purposes:
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://www.cncf.io/projects/llm-d/
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://developer.nvidia.com/blog/author/alexwatson/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.nvidia.com/brev/getting-started/overview
+          purposes:
           - research
           authority: official
         relations:
         - type: produces
+          target: catalog/models/nvidia/nemotron
+        - type: produces
           target: catalog/agent-skills/collections/nvidia-skills
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/garak
         - type: produces
           target: catalog/software/inference-runtimes/distributed-serving/nvidia-dynamo
         - type: produces
           target: catalog/software/inference-runtimes/inference-engines/tensorrt-llm
         - type: produces
           target: catalog/software/inference-runtimes/distributed-serving/llm-d
+        - type: produces
+          target: catalog/software/gateways/model-gateways/nvidia-pair
+        - type: produces
+          target: catalog/hardware/nvidia-h100
+        - type: produces
+          target: catalog/hardware/nvidia-b200
+        - type: produces
+          target: catalog/hardware/nvidia-b300
+        - type: produces
+          target: catalog/hardware/nvidia-rubin
+        - type: produces
+          target: catalog/hardware/nvidia-vera-cpu
+        - type: produces
+          target: catalog/hardware/nvidia-groq-3-lpu
+        - type: produces
+          target: catalog/services/infrastructure/nvidia-brev
+        - type: produces
+          target: catalog/software/physical-ai-and-robotics/nvidia-isaac-sim
+        - type: produces
+          target: catalog/software/physical-ai-and-robotics/nvidia-isaac-lab
+        - type: produces
+          target: catalog/software/physical-ai-and-robotics/nvidia-isaac-ros
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-development/nvidia-nemo-rl
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/nvidia-model-optimizer
+        - type: produces
+          target: catalog/services/data-generation-and-curation/gretel-platform
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/nvidia-aiperf
+        - type: produces
+          target: catalog/models/nvidia/nv-reason
+        - type: produces
+          target: catalog/datasets/swe-serve
+        - type: produces
+          target: catalog/software/agents/local/nemoclaw
+        - type: produces
+          target: catalog/software/ai-management-platforms/nvidia-openshell
+        - type: produces
+          target: catalog/software/evaluation-and-observability/observability-platforms/nvidia-nemo-relay
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-optimization-and-compilation/nvidia-tensorrt-model-connect
+        - type: produces
+          target: catalog/hardware/nvidia-dgx-spark
+        - type: produces
+          target: catalog/software/inference-runtimes/inference-engines/nvidia-triton-inference-server
+        - type: produces
+          target: catalog/software/inference-runtimes/inference-engines/nvidia-nim
+        - type: produces
+          target: catalog/hardware/nvidia-dgx-station
+        - type: produces
+          target: catalog/hardware/nvidia-jetson-t5000
+        - type: produces
+          target: catalog/hardware/nvidia-jetson-t4000
+        - type: produces
+          target: catalog/software/automation/developer-automation/nvidia-aicr
+        - type: produces
+          target: catalog/hardware/nvidia-rtx-pro-6000-blackwell-workstation-edition
+        - type: produces
+          target: catalog/hardware/nvidia-jetson-orin-nano-super-developer-kit
+        - type: produces
+          target: catalog/software/application-frameworks/application-development/nvidia-nemo-guardrails
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-development/megatron-lm
+        - type: produces
+          target: catalog/hardware/nvidia-geforce-rtx-3090
+        - type: produces
+          target: catalog/hardware/nvidia-geforce-rtx-4090
+        - type: produces
+          target: catalog/hardware/nvidia-geforce-rtx-5090
+        - type: produces
+          target: catalog/hardware/nvidia-a100-80gb
+        - type: produces
+          target: catalog/hardware/nvidia-rtx-6000-ada
+        - type: produces
+          target: catalog/hardware/nvidia-h200
+        - type: produces
+          target: catalog/hardware/nvidia-l40s
+        - type: produces
+          target: catalog/hardware/nvidia-l4
+        - type: produces
+          target: catalog/hardware/nvidia-rtx-a6000
+        - type: produces
+          target: catalog/software/agent-frameworks/nvidia-nemo-agent-toolkit
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-development/megatron-core
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-development/megatron-bridge
+        identity_note: NVIDIA is the corporate producer umbrella for represented hardware,
+          software, models, services, skills, and research artifacts; joint project
+          governance, acquired lineage, licensed technology, product licenses, and
+          service operators remain distinct.
     aliases:
       effective:
         schema: default

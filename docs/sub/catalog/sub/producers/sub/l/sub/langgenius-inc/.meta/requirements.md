@@ -6,6 +6,7 @@
 - Keep the company identity distinct from Dify Community/self-hosted software and from Dify Cloud, Enterprise, Marketplace, and other separately operated service/commercial surfaces.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current first-party Dify legal, repository/license, and marketplace references.
+- State that the Dify repository uses a modified Apache-2.0-based license with additional conditions; distinguish those software rights from Cloud/Enterprise agreements and third-party plugin rights.
 
 ## Validation
 

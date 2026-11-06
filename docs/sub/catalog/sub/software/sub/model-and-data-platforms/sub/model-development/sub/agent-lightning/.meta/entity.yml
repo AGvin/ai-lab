@@ -1,0 +1,52 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-development/agent-lightning
+  type: software
+  name: Agent Lightning
+  aliases:
+    - Microsoft Agent Lightning
+    - agentlightning
+  identity_note: >-
+    Microsoft Research's open-source harnessed agentic reinforcement-learning
+    framework. Its v1.0 API gateway, rollout controller and trainer operate with
+    an existing agent harness. Distinct from PyTorch Lightning, verl, OpenRLHF
+    and the separately released Agent Lightning Skill; publisher benchmarks are
+    not independent AI Lab evaluations.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/microsoft/agent-lightning
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/agent-lightning/stable/
+      purposes:
+        - research
+      authority: official
+      note: Current v1.0 documentation; the previous v0.x architecture is legacy.
+    - type: other
+      source:
+        url: https://github.com/microsoft/agent-lightning/releases/tag/v1.0.2
+      purposes:
+        - research
+      authority: official
+      note: Stable v1.0.2 published on 2026-09-29; Python >=3.12 package requirement.
+    - type: article
+      source:
+        url: https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/
+      purposes:
+        - research
+      authority: official
+      note: Microsoft Research architecture and benchmark claims; not reproduced.
+    - type: repository
+      source:
+        url: https://github.com/microsoft/agent-lightning/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
+      note: MIT for this software; third-party data/model rights need separate review.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

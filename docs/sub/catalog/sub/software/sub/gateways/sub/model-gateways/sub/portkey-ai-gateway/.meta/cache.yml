@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:46cd7a7d40798e157de498c2eff13c10582f7ee0
+      entity.yml: gitblob:41ccaef5db951a5b0f08a4c01ed7e8d55b7e040e
     parent:
       entity.yml: gitblob:08305b000b283f9be05ea5e2775c0f31d43e5ac1
   state:
@@ -68,6 +68,22 @@ cache:
           - research
           authority: official
           note: Current Portkey terms identifying Portkey, Inc.
+        - type: other
+          source:
+            url: https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-completes-acquisition-portkey-secure-ai
+          purposes:
+          - research
+          authority: official
+          note: Current corporate-provenance reference for Portkey following Palo
+            Alto Networks' completed May 2026 acquisition.
+        - type: article
+          source:
+            url: https://www.paloaltonetworks.com/blog/2026/07/announcing-general-availability-of-prisma-airs-ai-gateway/
+          purposes:
+          - research
+          authority: official
+          note: Current commercial-surface reference distinguishing the open-source
+            Portkey gateway from Prisma AIRS AI Gateway.
         relations:
         - type: produced-by
           target: catalog/producers/p/portkey-inc

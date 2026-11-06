@@ -2,6 +2,7 @@ entity:
   id: catalog/software/gateways/model-gateways/helicone
   type: software
   name: Helicone
+  identity_note: "The March 3, 2026 acquisition and maintenance announcement is historical. The current official site states that Helicone is no longer part of Mintlify, with details forthcoming; that notice does not specify current legal ownership or maintenance commitments."
   references:
     - type: documentation
       source:
@@ -23,4 +24,22 @@ entity:
       purposes:
         - research
       authority: official
-      note: Official 2026 acquisition and maintenance-mode lifecycle announcement.
+      note: Historical March 3, 2026 acquisition and maintenance-mode announcement; the current site separately states that Helicone is no longer part of Mintlify.
+    - type: terms-of-service
+      source:
+        url: https://www.helicone.ai/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: First-party terms establish Helicone, Inc. as the direct producer company; the acquisition announcement is separate from this historical attribution.
+    - type: official-site
+      source:
+        url: https://www.helicone.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/helicone-inc

@@ -17,6 +17,26 @@ entity:
         - identification
         - research
       authority: official
+    - type: article
+      source:
+        url: https://openclaw.ai/blog/introducing-openclaw-foundation
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/openclaw/openclaw
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.openclaw.ai/reference/credits
+      purposes:
+        - research
+      authority: official
   relations:
     - type: maintains
       target: catalog/software/agents/local/openclaw
+  identity_note: "OpenClaw Foundation is the independently documented nonprofit steward of OpenClaw; founder Peter Steinberger, community authors, software components, and third-party model/channel operators are distinct roles."

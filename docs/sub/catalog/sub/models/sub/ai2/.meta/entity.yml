@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/ai2
+  type: model-producer-view
+  name: Ai2 Models
+  identity_note: >-
+    Model-domain navigation for Ai2, the Allen Institute for AI; legal organization identity belongs to catalog/producers/a/ai2. Olmo 3 family and checkpoint-specific claims have separate owners. Governance/control review is pending; no vendor eligibility clearance.
+  references:
+    - type: documentation
+      source:
+        url: https://allenai.org/about
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/allenai/Olmo-3-7B-Instruct
+      purposes: [identification, research]
+      authority: official

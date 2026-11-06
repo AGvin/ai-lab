@@ -1,0 +1,55 @@
+entity:
+  id: catalog/producers/r/redis
+  type: organization
+  name: Redis
+  references:
+  - type: official-site
+    source:
+      url: https://redis.io/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://redis.io/docs/
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://redis.io/docs/latest/develop/ai/context-engine/agent-memory/
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Agent Memory.
+  - type: documentation
+    source:
+      url: https://redis.io/docs/latest/operate/rc/context-engine/agent-memory/
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Cloud service guide.
+  - type: repository
+    source:
+      url: https://github.com/redis/agent-skills
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Agent Skills.
+  - type: repository
+    source:
+      url: https://github.com/redis/agent-memory-server
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Agent Memory Server history.
+  relations:
+  - type: produces
+    target: catalog/services/data-infrastructure/memory-and-context/redis-agent-memory
+  - type: produces
+    target: catalog/agent-skills/collections/redis-agent-skills

@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-flash
+  type: model
+  name: Qwen3.8-Flash
+  aliases:
+    - qwen3.8-flash
+  references:
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/qwen3-8-flash
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/text-generation-model
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen3-8

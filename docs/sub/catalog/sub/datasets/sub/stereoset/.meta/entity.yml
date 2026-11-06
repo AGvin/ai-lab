@@ -1,0 +1,20 @@
+entity:
+  id: catalog/datasets/stereoset
+  type: dataset
+  name: "StereoSet"
+  aliases:
+    - "StereoSet Bias Benchmark"
+    - "Measuring Stereotypical Bias"
+  identity_note: >-
+    Research bias evaluation benchmark for measuring stereotypical associations in pretrained language-model predictions. Original development/test datasets, source evaluators, Bias Bench successor and leaderboard outcomes are distinct.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/moinnadeem/StereoSet
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/moinnadeem/StereoSet/blob/ead7d086a64a192a1eca88e0dd2fd163de375218/README.md
+      purposes: [research]
+      authority: official

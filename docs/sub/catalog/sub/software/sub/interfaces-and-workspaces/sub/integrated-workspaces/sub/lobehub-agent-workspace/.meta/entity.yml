@@ -1,0 +1,34 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/integrated-workspaces/lobehub-agent-workspace
+  type: software
+  name: LobeHub
+  aliases:
+    - LobeChat
+    - LobeHub Agent Workspace
+  identity_note: >-
+    Self-hostable AI agent and collaboration workspace operated or deployed
+    from the LobeHub source-available application. The project's custom
+    LobeHub Community License is not ordinary Apache-2.0 or unrestricted
+    open-source licensing. Hosted LobeHub, external providers and integrations
+    are separate service or contractual boundaries.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/lobehub/lobehub
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/lobehub/lobehub/blob/b2b1601f6fe51148b09289aecfd71eba6af22da1/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/lobehub/lobehub/blob/b2b1601f6fe51148b09289aecfd71eba6af22da1/docs/self-hosting/start.mdx
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/lobehub/lobehub/blob/b2b1601f6fe51148b09289aecfd71eba6af22da1/LICENSE
+      purposes: [research]
+      authority: official

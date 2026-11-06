@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/inference-runtimes/inference-engines/onnx-runtime
+  type: software
+  name: ONNX Runtime
+  references:
+    - type: documentation
+      source:
+        url: https://onnxruntime.ai/docs/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://onnxruntime.ai/inference
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

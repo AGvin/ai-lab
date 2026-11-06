@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/google/gemini/models/gemini-4-argon-cyber-permissive
+  type: model
+  name: Gemini 4 Argon Cyber Permissive
+  aliases:
+    - "gemini-4-argon-cyber-permissive"
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/gemini
+  identity_note: "Separately identified defensive-cybersecurity variant served as gemini-4-argon-cyber-permissive; direct enterprise access is GA behind its own Fairwind allowlist."

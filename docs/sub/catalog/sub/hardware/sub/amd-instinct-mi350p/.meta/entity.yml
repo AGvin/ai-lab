@@ -1,0 +1,23 @@
+entity:
+  id: catalog/hardware/amd-instinct-mi350p
+  type: hardware-product
+  name: AMD Instinct MI350P
+  identity_note: >-
+    AMD Instinct MI350P is a CDNA 4 PCIe 5.0 x16 server add-in accelerator, with 144 GB HBM3E memory, up to 4 TB/s peak memory bandwidth, and 600 W maximum board power (configurable to 450 W). The full-height dual-slot card uses passive server cooling and a 12V-2x6 power connector. It is separate from the 288 GB OAM-form MI350X/MI355X products and their eight-module platforms; qualified host airflow, power, ROCm release and model workload remain configuration-sensitive. Vendor specification is not a benchmark, ownership clearance or retail-availability confirmation.
+  references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/accelerators/instinct/mi350/mi350p.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.amd.com/en/blogs/2026/amd-instinct-mi350p-pcie-gpus-run-enterprise-ai-on-your.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/advanced-micro-devices-inc

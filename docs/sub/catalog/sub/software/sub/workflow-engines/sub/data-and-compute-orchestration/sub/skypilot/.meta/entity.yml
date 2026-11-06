@@ -1,0 +1,42 @@
+entity:
+  id: catalog/software/workflow-engines/data-and-compute-orchestration/skypilot
+  type: software
+  name: SkyPilot
+  references:
+    - type: official-site
+      source:
+        url: https://skypilot.co/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/skypilot-org/skypilot
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/skypilot-org/skypilot/releases
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.skypilot.ai/en/stable/docs/
+      purposes:
+        - research
+      authority: official
+      note: Documents the released orchestration software, jobs and services, API-server operation, and use of customer infrastructure.
+    - type: official-site
+      source:
+        url: https://skypilot.ai/about
+      purposes:
+        - research
+      authority: official
+      note: First-party project history records the UC Berkeley Sky Computing Lab origin and the SkyPilot team.
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/skypilot-team

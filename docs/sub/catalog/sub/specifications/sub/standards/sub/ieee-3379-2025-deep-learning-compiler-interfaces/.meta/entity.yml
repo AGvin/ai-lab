@@ -1,0 +1,14 @@
+entity:
+  id: catalog/specifications/standards/ieee-3379-2025-deep-learning-compiler-interfaces
+  name: IEEE 3379-2025 — Interfaces of Deep Learning Compiler on Artificial Intelligence
+  aliases:
+    - IEEE 3379-2025
+  references:
+    - type: specification
+      source:
+        url: https://standards.ieee.org/ieee/3379/11305/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: IEEE SA marks IEEE 3379-2025 as an Active Standard published on 2026-06-19.

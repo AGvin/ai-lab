@@ -13,3 +13,5 @@ entity:
   relations:
     - type: version-of
       target: catalog/models/alibaba/qwen/qwen3/models/qwen3-30b-a3b
+    - type: has-derivative
+      target: catalog/models/perplexity-ai/browsesafe

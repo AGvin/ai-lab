@@ -2,11 +2,13 @@
 
 MLC Community is the canonical open-community producer identity for MLC LLM. First-party project history records an early multi-institution origin involving contributors from CMU Catalyst, UW SAMPL, SJTU, OctoML, and the MLC community rather than one sole company.
 
-Contributor affiliations and supporting organizations are not rendered as sole ownership or maintenance claims.
+## Producer boundary
 
-## Produces
+Contributor affiliations and supporting organizations are not sole ownership or maintenance claims. Community committers coordinate reviews and technical decisions; model licenses, Apache TVM dependencies, hardware support and deployment obligations remain separate from community authorship and require their own software or model evidence.
 
-- [MLC LLM](../../../../../software/sub/inference-runtimes/sub/inference-engines/sub/mlc-llm/) — open-source machine-learning compilation and LLM inference project.
+## Relations
+
+- Produces: [MLC LLM](../../../../../software/sub/inference-runtimes/sub/inference-engines/sub/mlc-llm/)
 
 ## Official resources
 

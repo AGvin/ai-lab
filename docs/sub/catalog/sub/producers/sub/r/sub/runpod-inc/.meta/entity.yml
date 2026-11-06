@@ -3,21 +3,29 @@ entity:
   type: organization
   name: Runpod, Inc.
   references:
-    - type: official-site
-      source:
-        url: https://www.runpod.io/
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: terms-of-service
-      source:
-        url: https://www.runpod.io/legal/terms-of-service
-      purposes:
-        - identification
-        - research
-      authority: official
-      note: Current terms identify Runpod, Inc. as the contracting entity for the Runpod service.
+  - type: official-site
+    source:
+      url: https://www.runpod.io/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: terms-of-service
+    source:
+      url: https://www.runpod.io/legal/terms-of-service
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Current terms identify Runpod, Inc. as the contracting entity for the Runpod service.
+  - type: documentation
+    source:
+      url: https://docs.runpod.io/overview
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Platform overview.
   relations:
-    - type: produces
-      target: catalog/services/infrastructure/runpod
+  - type: produces
+    target: catalog/services/infrastructure/runpod

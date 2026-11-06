@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ef8f8f64b8564bc9f0ae600361858487e8f7445d
+      entity.yml: gitblob:573a7c373de39d6e9c74247cb75487432e2b6f5d
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -45,6 +45,15 @@ cache:
         id: catalog/producers/m/mlc-community
         type: organization
         name: MLC Community
+        identity_note: MLC Community is the canonical open-community producer identity
+          for MLC LLM. First-party project history records an early multi-institution
+          origin involving contributors from CMU Catalyst, UW SAMPL, SJTU, OctoML,
+          and the MLC community rather than one sole company. Contributor affiliations
+          and supporting organizations are not sole ownership or maintenance claims.
+          Community committers coordinate reviews and technical decisions; model licenses,
+          Apache TVM dependencies, hardware support and deployment obligations remain
+          separate from community authorship and require their own software or model
+          evidence.
         references:
         - type: official-site
           source:

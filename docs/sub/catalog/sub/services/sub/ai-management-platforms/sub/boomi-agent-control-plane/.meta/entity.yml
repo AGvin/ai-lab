@@ -1,0 +1,29 @@
+entity:
+  id: catalog/services/ai-management-platforms/boomi-agent-control-plane
+  type: service
+  name: Boomi Agent Control Plane
+  references:
+    - type: official-site
+      source:
+        url: https://boomi.com/platform/agent-control-plane/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://boomi.com/product-updates/sep-2026/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Boomi's Q3 2026 product-launch surface identifies Agent Control Plane as AI-native infrastructure for operating agentic workloads with centralized control.
+    - type: article
+      source:
+        url: https://boomi.com/resources/resources-library/boomi-infrastructure-enterprise-ai-control/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/boomi

@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/compute-eval
+  type: dataset
+  name: ComputeEval
+  aliases:
+    - NVIDIA ComputeEval
+    - CUDA Compute Evaluation
+  identity_note: >-
+    NVIDIA benchmark family of CUDA programming challenges for testing language-model-generated code correctness and performance. Task specifications, hidden reference solutions, GPU runtime, score reports and harness tooling are distinct elements of this benchmark.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA/compute-eval
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/NVIDIA/compute-eval/blob/00fbad91b63957a002b501f33a06510cd25beaae/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/NVIDIA/compute-eval/blob/00fbad91b63957a002b501f33a06510cd25beaae/LICENSE
+      purposes: [research]
+      authority: official

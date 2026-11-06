@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-tr-24368-2022-ai-ethical-societal-concerns
+  name: ISO/IEC TR 24368:2022 — Overview of ethical and societal concerns in artificial intelligence
+  aliases:
+    - ISO/IEC TR 24368:2022
+    - ISO 24368
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/78507.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO identifies Edition 1 as a published Technical Report from August 2022.

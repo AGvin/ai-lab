@@ -1,0 +1,26 @@
+entity:
+  id: catalog/producers/c/context4ai-pte-ltd
+  type: organization
+  name: CONTEXT4AI PTE LTD
+  aliases:
+    - Context4AI
+    - Crawl4AI Cloud operator
+  references:
+    - type: official-site
+      source:
+        url: https://api.crawl4ai.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://crawl4ai.com/legal/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: First-party Terms effective 2026-10-15 name CONTEXT4AI PTE LTD as hosted Crawl4AI service provider, not as independently verified original Python package author.
+  relations:
+    - type: produces
+      target: catalog/services/web-data/crawl4ai-cloud

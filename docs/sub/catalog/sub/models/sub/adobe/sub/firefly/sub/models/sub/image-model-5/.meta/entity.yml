@@ -1,0 +1,36 @@
+entity:
+  id: catalog/models/adobe/firefly/models/image-model-5
+  type: model
+  name: Firefly Image Model 5
+  identity_note: >-
+    Firefly Image Model 5 is Adobe's distinct image-generation and editing model. It entered public
+    beta in October 2025, and Adobe explicitly announced general availability on 19 March 2026.
+    Adobe's original specification describes native 4-megapixel output, not 4K output. Native image
+    generation and prompt-based editing provide a material distinction from the earlier represented
+    image models. Product-specific editing tools, API availability, plans, custom-model training and
+    partner models remain separate; check current capabilities and input rights rather than assuming
+    parity across surfaces.
+  references:
+    - type: article
+      source:
+        url: https://news.adobe.com/news/2025/10/adobe-max-2025-firefly
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://blog.adobe.com/en/publish/2026/03/19/adobe-firefly-expands-video-image-creation-with-new-ai-capabilities-custom-models
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://helpx.adobe.com/firefly/web/work-with-images/generate-images/generate-images-from-text-descriptions.html
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://helpx.adobe.com/firefly/web/get-started/learn-the-basics/adobe-firefly-faq.html
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/adobe/firefly

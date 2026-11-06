@@ -25,6 +25,18 @@ entity:
         - research
       authority: official
       note: First-party privacy policy identifies Menlo Research Pte Ltd as the company providing Jan services.
+    - type: documentation
+      source:
+        url: https://docs.jan.ai/desktop/cli
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.jan.ai/desktop/cowork
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/m/menlo-research-pte-ltd

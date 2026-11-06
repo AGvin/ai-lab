@@ -1,0 +1,32 @@
+entity:
+  id: catalog/services/assistant-workspaces/perplexity-computer
+  type: service
+  name: Perplexity Computer
+  references:
+  - type: product-page
+    source:
+      url: https://www.perplexity.ai/products/computer
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://www.perplexity.ai/changelog/what-we-shipped---february-27-2026
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://www.perplexity.ai/changelog/effort-mode-gpt-6-astra-and-skills-marketplace
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/p/perplexity-ai
+  identity_note: Perplexity Computer is the hosted service for executing multi-step research, coding, creation and
+    connected-application workflows. Its general answer workspace, local Portable Computer stack and underlying
+    model artifacts remain separate.

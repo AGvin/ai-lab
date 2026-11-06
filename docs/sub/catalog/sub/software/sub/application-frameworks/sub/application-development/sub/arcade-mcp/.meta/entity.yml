@@ -1,0 +1,22 @@
+entity:
+  id: catalog/software/application-frameworks/application-development/arcade-mcp
+  type: software
+  name: Arcade MCP
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ArcadeAI/arcade-mcp
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.arcade.dev/en/home
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/arcade-ai-inc

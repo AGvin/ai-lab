@@ -1,0 +1,27 @@
+entity:
+  id: catalog/services/infrastructure/browser-use-cloud
+  type: service
+  name: Browser Use Cloud
+  references:
+    - type: official-site
+      source:
+        url: https://cloud.browser-use.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.browser-use.com/api-reference/api-v1/get-browser-use-version
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/browser-use/browser-use
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/browser-use

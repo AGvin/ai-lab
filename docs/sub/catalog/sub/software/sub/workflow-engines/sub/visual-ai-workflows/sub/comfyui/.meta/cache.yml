@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1135ed777e936a42faa40d06916c0559659b0509
+      entity.yml: gitblob:0ee293e74324249ad2e132dc47f5e8aaa8dfee51
     parent:
       entity.yml: gitblob:e875948a0a0ac5c0f5e7b8d02eb76165bfa9985a
   state:
@@ -67,6 +67,37 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.comfy.org/interface/app-mode
+          purposes:
+          - research
+          authority: official
+          note: Documents APP mode, Node Graph mode, and a workflow-selected default
+            view.
+        - type: documentation
+          source:
+            url: https://docs.comfy.org/interface/settings/comfy
+          purposes:
+          - research
+          authority: official
+          note: Current menu documentation lists Top and Bottom positioning under
+            Use new menu, separate from workflow interaction views.
+        - type: documentation
+          source:
+            url: https://docs.comfy.org/interface/features/template
+          purposes:
+          - research
+          authority: official
+          note: Documents the workflow-template surface already linked by the reader.
+        - type: other
+          source:
+            url: https://comfy.org/terms-of-service
+          purposes:
+          - research
+          authority: official
+          note: Identifies Comfy Organization Inc. and distinguishes repository licenses,
+            commercial services, and partner-node data processing.
         relations:
         - type: produced-by
           target: catalog/producers/c/comfy-organization-inc

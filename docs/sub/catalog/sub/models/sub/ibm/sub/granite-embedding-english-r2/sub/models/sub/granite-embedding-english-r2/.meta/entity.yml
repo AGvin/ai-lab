@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/ibm/granite-embedding-english-r2/models/granite-embedding-english-r2
+  type: model
+  name: Granite Embedding English R2
+  identity_note: IBM 149M English ModernBERT bi-encoder producing 768-dimensional retrieval vectors.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-embedding-english-r2
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/ibm/granite-embedding-english-r2
+  - type: has-derivative
+    target: catalog/models/ibm/granite-embedding-english-r2/models/granite-embedding-reranker-english-r2

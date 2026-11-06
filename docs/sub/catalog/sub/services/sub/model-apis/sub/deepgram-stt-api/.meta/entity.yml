@@ -1,0 +1,36 @@
+entity:
+  id: catalog/services/model-apis/deepgram-stt-api
+  type: service
+  name: Deepgram Speech-to-Text API
+  aliases:
+    - Deepgram STT API
+    - Deepgram Listen API
+  identity_note: >-
+    Deepgram's managed speech recognition API for prerecorded audio over
+    HTTP and real-time audio over WebSocket on /v1/listen. STT is distinct
+    from Deepgram text-to-speech, voice-agent products, individual Nova
+    model versions and installable SDKs. October 27, 2026 guidance
+    supersedes dg-token-based callback verification with Basic Auth or
+    an STT extra-metadata secret. Audio and transcripts may contain
+    sensitive speaker data requiring consent, access and retention controls.
+  references:
+    - type: documentation
+      source:
+        url: https://developers.deepgram.com/docs/stt/getting-started
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.deepgram.com/reference/speech-to-text/listen-pre-recorded
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.deepgram.com/reference/speech-to-text/listen-streaming
+      purposes: [research]
+      authority: official
+    - type: release-notes
+      source:
+        url: https://developers.deepgram.com/changelog/2026/10/27
+      purposes: [research]
+      authority: official

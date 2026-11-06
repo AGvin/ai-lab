@@ -1,19 +1,22 @@
 # Black Forest Labs
 
-Black Forest Labs is the canonical producer organization for the FLUX model family represented in AI Lab.
+Black Forest Labs is the producer organization behind the FLUX model family.
 
-## Translations
-
-- English
-- [Українська](./l10n/uk_UA/)
+Model provenance is separate from hosted image APIs, distributed model artifacts, third-party inference routes, interfaces, and deployment tools. Those delivery modes do not change the original model producer.
 
 ## Model documentation
 
-- [Black Forest Labs models](../../../../../models/sub/reference/sub/producers/sub/black-forest-labs/) — model-domain view for FLUX and its documented descendants.
+- [Black Forest Labs models](../../../../../models/sub/black-forest-labs/)
+
+## Relations
+
+- Produces: [FLUX](../../../../../models/sub/black-forest-labs/sub/flux/)
+
+- Produces jointly with Krea: [FLUX.1 Krea [dev]](../../../../../models/sub/black-forest-labs/sub/flux/sub/flux-1/sub/models/sub/flux-1-krea-dev/README.md)
+
+- Produces: [FLUX 3 Image Klein Prompt Upsampler](../../../../../models/sub/black-forest-labs/sub/flux-3-image-klein-prompt-upsampler/README.md)
 
 ## Official resources
 
-- [Black Forest Labs](https://blackforestlabs.ai/)
+- [Black Forest Labs](https://bfl.ai/)
 - [Black Forest Labs on Hugging Face](https://huggingface.co/black-forest-labs)
-
-Hosted image APIs, third-party inference routes, UI integrations, runtimes, and deployment guidance are separate service/software concerns rather than producer identity.

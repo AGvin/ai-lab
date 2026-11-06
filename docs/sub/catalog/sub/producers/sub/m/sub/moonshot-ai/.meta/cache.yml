@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:81dc4f3a65f13c034677b1b9314a6a0ed9fade7e
+      entity.yml: gitblob:3e1e59f91043f8b6d29aa3b81a038eefdf2dde95
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -45,6 +45,20 @@ cache:
         id: catalog/producers/m/moonshot-ai
         type: organization
         name: Moonshot AI
+        identity_note: Moonshot AI is the organization behind Kimi models and the
+          Kimi product family. Kimi's published terms name Beijing Moonshot Technology
+          Co., Ltd. and its affiliates as service providers, with product-specific
+          agreements applying where stated. Kimi web/mobile is a hosted assistant,
+          Kimi Work is a local desktop agent, Kimi Code is a developer coding suite,
+          and Kimi Claw includes a hosted OpenClaw deployment route. Their shared
+          branding and model access do not make their execution location, permissions,
+          data handling or subscription limits identical. Connecting an existing or
+          locally deployed OpenClaw through Kimi does not turn that instance into
+          Moonshot-operated cloud infrastructure. OpenClaw, third-party channels,
+          community skills and external model hosts retain their own provenance and
+          responsibilities. Model artifact licensing is separate from Kimi service
+          terms; current account controls, connected-resource access and product-specific
+          terms govern use of each route.
         references:
         - type: official-site
           source:
@@ -66,9 +80,52 @@ cache:
           purposes:
           - research
           authority: official
+        - type: official-site
+          source:
+            url: https://www.moonshot.cn/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.kimi.com/en/help/others/product-comparison
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: terms-of-service
+          source:
+            url: https://www.kimi.com/user/agreement/modelUse?version=v2
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.kimi.com/en/help/kimi-claw/overview
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.kimi.com/en/help/agent/agent-overview
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/models/moonshot-ai/kimi
+        - type: produces
+          target: catalog/services/assistant-workspaces/kimi
+        - type: produces
+          target: catalog/services/assistant-workspaces/kimi-claw
+        - type: produces
+          target: catalog/software/agents/local/kimi-work
+        - type: produces
+          target: catalog/software/agents/local/kimi-code
     aliases:
       effective:
         schema: default

@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Provide the alphabetical producer index for canonical producer names beginning with F.
+- Provide the alphabetical producer index for canonical producer names or evidenced publishing aliases beginning with F.
 - Render the standard child-navigation block from the validated direct-child projection so every materialized canonical producer under this index appears exactly once.
 - Keep the page concise and navigational.
 

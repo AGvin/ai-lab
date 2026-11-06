@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c9c084f61ec84ebc15ad24d227123202ffd35f42
+      entity.yml: gitblob:6d037e0220eb0ce79a04d9a52cc94ff55bfde7ed
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -45,6 +45,8 @@ cache:
         id: catalog/producers/c/comfy-organization-inc
         type: organization
         name: Comfy Organization Inc.
+        aliases:
+        - Comfy Organization, Inc.
         references:
         - type: official-site
           source:
@@ -56,6 +58,20 @@ cache:
         - type: documentation
           source:
             url: https://docs.comfy.org/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://comfy.org/terms-of-service
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://comfy.org/about/
           purposes:
           - identification
           - research

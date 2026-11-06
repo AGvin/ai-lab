@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/bigcodebench
+  type: dataset
+  name: "BigCodeBench"
+  aliases:
+    - "BigCodeBench Code Generation Dataset"
+  identity_note: >-
+    Practical function-level code generation benchmark with 1,140 tasks and distinct Complete and Instruct prompt variants.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/bigcode-project/bigcodebench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/bigcode-project/bigcodebench/blob/09dd993f46c3fbf3a799465bb96d524edcb0b199/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/bigcode-project/bigcodebench/blob/09dd993f46c3fbf3a799465bb96d524edcb0b199/LICENSE
+      purposes: [research]
+      authority: official

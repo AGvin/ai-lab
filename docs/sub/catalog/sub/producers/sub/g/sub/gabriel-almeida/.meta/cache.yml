@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ada707f42cd2f6046e2469a3cdc299280a81b777
+      entity.yml: gitblob:9d88150ea693e59d24af2bcee7574e2bdde93073
     parent:
       entity.yml: gitblob:b7f05983a5d1c6c223967178283fa7f339514136
   state:
@@ -48,7 +48,7 @@ cache:
         references:
         - type: article
           source:
-            url: https://www.langflow.org/blog/langflow-datastax-better-together
+            url: https://www.langflow.org/blog/langflow-datastax-better-together/
           purposes:
           - identification
           - research
@@ -64,6 +64,13 @@ cache:
           authority: official
           note: Current Langflow package metadata lists Gabriel Almeida among the
             maintainers.
+        - type: other
+          source:
+            url: https://github.com/ogabrielluiz
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/workflow-engines/visual-ai-workflows/langflow

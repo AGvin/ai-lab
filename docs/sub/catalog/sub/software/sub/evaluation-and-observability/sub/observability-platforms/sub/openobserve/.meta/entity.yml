@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/evaluation-and-observability/observability-platforms/openobserve
+  type: software
+  name: OpenObserve
+  references:
+    - type: official-site
+      source:
+        url: https://openobserve.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/openobserve/openobserve
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://openobserve.ai/whats-new/2026-09-11-v100-release/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openobserve-inc

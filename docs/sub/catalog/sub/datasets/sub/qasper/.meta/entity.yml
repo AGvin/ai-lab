@@ -1,0 +1,51 @@
+entity:
+  id: catalog/datasets/qasper
+  type: dataset
+  name: Qasper
+  aliases:
+    - QASPER
+    - Question Answering over Scientific Research Papers
+  identity_note: >-
+    Ai2's original 2021 Qasper dataset contains 5,049 information-seeking
+    questions about 1,585 full-text NLP research papers. A question writer
+    sees only a title and abstract, while another person answers from the
+    full text and supplies evidence. Publisher builder 0.3.0 records 888
+    training, 281 validation and 416 test papers, not those counts of
+    questions. The publisher Hub card declares CC BY 4.0 for its dataset,
+    not independently for all underlying third-party S2ORC paper text.
+    Distinct from DROP, the SCROLLS suite, Longformer baseline software,
+    model checkpoints and live evaluation results.
+  references:
+    - type: official-site
+      source:
+        url: https://allenai.org/open-data
+      purposes: [identification, research]
+      authority: official
+      note: "Ai2's current original Qasper open-data catalog entry."
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/allenai/qasper
+      purposes: [identification, research]
+      authority: official
+      note: "Original Ai2-managed dataset card, 5,049 questions over 1,585 papers, evidence annotations and CC BY 4.0 metadata."
+    - type: paper
+      source:
+        url: https://aclanthology.org/2021.naacl-main.365/
+      purposes: [identification, research]
+      authority: upstream
+      note: "Original Dasigi et al. NAACL 2021 publication and study design."
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/allenai/qasper/blob/main/dataset_infos.json
+      purposes: [research]
+      authority: official
+      note: "Publisher's 0.3.0 builder metadata: 888 train, 281 validation and 416 test paper records."
+    - type: repository
+      source:
+        url: https://github.com/allenai/qasper-led-baseline
+      purposes: [research]
+      authority: official
+      note: "Original Ai2 baseline model and evaluator are software, not this dataset or an unrestricted data license."
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/ai2

@@ -1,0 +1,22 @@
+entity:
+  id: catalog/services/web-data/linkup
+  type: service
+  name: Linkup
+  references:
+    - type: official-site
+      source:
+        url: https://www.linkup.so/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.linkup.so/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/l/linkup

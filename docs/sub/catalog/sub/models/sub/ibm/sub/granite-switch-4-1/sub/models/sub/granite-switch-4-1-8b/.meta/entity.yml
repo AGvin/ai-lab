@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/ibm/granite-switch-4-1/models/granite-switch-4-1-8b
+  type: model
+  name: Granite Switch 4.1 8B
+  identity_note: IBM stable Granite Switch 4.1 8B composed checkpoint for chat, decisions, guardian
+    evaluation and speech input.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-switch-4.1-8b
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/ibm/granite-switch-4-1

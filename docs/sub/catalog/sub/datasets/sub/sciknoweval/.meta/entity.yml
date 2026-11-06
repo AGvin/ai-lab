@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/sciknoweval
+  type: dataset
+  name: "SciKnowEval"
+  aliases:
+    - "Multi-level Scientific Knowledge Evaluation"
+  identity_note: >-
+    Scientific knowledge benchmark with five assessment levels and a separately released V2 dataset of 28,392 samples across 58 tasks and four scientific domains.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/hicai-zju/SciKnowEval
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/hicai-zju/SciKnowEval/blob/53addee640092d667439e9a8901bf55f2d92c9ed/README.md
+      purposes: [research]
+      authority: official

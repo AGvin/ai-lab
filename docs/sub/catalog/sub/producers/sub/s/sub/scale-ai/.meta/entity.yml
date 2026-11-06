@@ -1,0 +1,54 @@
+entity:
+  id: catalog/producers/s/scale-ai
+  type: organization
+  name: Scale AI
+  identity_note: >-
+    Scale AI is the organization behind Scale Data Engine and the first-party SWE-bench Pro benchmark
+    release. Scale’s product pages cover expert-supported data generation, curation and evaluation; its
+    scaleapi repository and ScaleAI dataset distribution establish the benchmark publisher. Data Engine
+    is a commercial data service, while SWE-bench Pro has separately versioned public code, tasks and
+    evaluation infrastructure. Scale’s statement following Meta’s 2025 investment describes continued
+    independent operations and customer-data separation; the investment does not make Meta the producer
+    of these catalog entries. Define permitted data access, expert processing, delivery and evaluation
+    terms for service work, and pin the benchmark release and protocol when comparing results.
+  references:
+    - type: official-site
+      source:
+        url: https://scale.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://scale.com/data-engine
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://scale.com/generative-ai-data-engine
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/scaleapi/SWE-bench_Pro-os
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://scale.com/blog/customer-trust-scale-meta-deal
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/data-generation-and-curation/scale-data-engine
+    - type: produces
+      target: catalog/datasets/swe-bench-pro

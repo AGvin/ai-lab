@@ -1,0 +1,43 @@
+entity:
+  id: catalog/datasets/math
+  type: dataset
+  name: MATH
+  aliases:
+    - Measuring Mathematical Problem Solving With the MATH Dataset
+  identity_note: >-
+    Original Hendrycks et al. 2021 mathematical-competition question and
+    step-by-step-solution dataset of 12,500 problems (7,500 training and 5,000
+    test). This is distinct from the auxiliary AMPS pretraining data,
+    later OpenAI-selected MATH-500 held-out subset, PRM800K process labels,
+    scoring implementations and transient mirrors. The original research
+    repository is not a full audit of underlying competition-problem rights.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/hendrycks/math
+      purposes: [identification, research]
+      authority: official
+      note: "Original research-author repository with dataset loaders, evaluation code and publication attribution."
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2103.03874
+      purposes: [identification, research]
+      authority: upstream
+      note: "Original 2021 paper introducing 12,500 problems and worked solutions."
+    - type: repository
+      source:
+        url: https://github.com/hendrycks/math/blob/main/LICENSE
+      purposes: [research]
+      authority: official
+      note: "MIT software/documentation repository LICENSE, not a verified grant for every underlying competition problem."
+    - type: repository
+      source:
+        url: https://github.com/openai/prm800k
+      purposes: [research]
+      authority: upstream
+      note: "Later OpenAI selected 500 of the original MATH test problems; its PRM800K labels are a separate corpus."
+  relations:
+    - type: has-derivative
+      target: catalog/datasets/math-500
+    - type: has-derivative
+      target: catalog/datasets/prm800k

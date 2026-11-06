@@ -18,6 +18,19 @@ entity:
         - research
       authority: official
       note: Current upstream license identifies Open WebUI Inc. as the copyright holder while separately crediting Timothy Jaeryang Baek as creator.
+    - type: repository
+      source:
+        url: https://github.com/open-webui/open-webui/blob/main/LICENSE_NOTICE
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.openwebui.com/license/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: owns
       target: catalog/software/interfaces-and-workspaces/conversational-platforms/open-webui
+  identity_note: "Open WebUI Inc. is the corporate copyright attribution in the current distribution license, which separately credits Timothy Jaeryang Baek and preserves historical and third-party licensing boundaries."

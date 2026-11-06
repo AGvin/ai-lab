@@ -1,0 +1,20 @@
+entity:
+  id: catalog/specifications/schemas/open-agentic-schema-framework
+  name: Open Agentic Schema Framework
+  aliases:
+    - OASF
+  references:
+    - type: specification
+      source:
+        url: https://docs.agntcy.org/oasf/open-agentic-schema-framework/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/agntcy/oasf
+      purposes:
+        - identification
+        - research
+      authority: official

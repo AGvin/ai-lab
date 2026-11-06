@@ -1,0 +1,33 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/openai-evals
+  type: software
+  name: OpenAI Evals
+  references:
+    - type: repository
+      source:
+        url: https://github.com/openai/evals
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/openai/evals/blob/8eac7a7de5215c907fbddc30efdaf316913eccdd/docs/run-evals.md
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/openai/evals/blob/8eac7a7de5215c907fbddc30efdaf316913eccdd/pyproject.toml
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/openai/evals/blob/8eac7a7de5215c907fbddc30efdaf316913eccdd/LICENSE.md
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

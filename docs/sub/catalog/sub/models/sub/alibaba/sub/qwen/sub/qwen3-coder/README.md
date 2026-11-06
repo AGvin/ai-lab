@@ -2,15 +2,10 @@
 
 Qwen3-Coder is a coding-specialized model series in the Qwen family developed by Qwen Team for coding agents and tool-using software-development workflows.
 
-## Translations
-
-- English
-- [Українська](./l10n/uk_UA/)
-
 ## Family and producer
 
 - [Qwen](../..)
-- [Qwen Team](../../../../../../../../../producers/sub/q/sub/qwen-team/)
+- [Qwen Team](../../../../../../../producers/sub/q/sub/qwen-team/)
 
 ## Series boundary
 
@@ -30,7 +25,32 @@ Active-parameter counts are execution characteristics of these MoE models; they 
 
 This page owns Qwen3-Coder series identity, Qwen/Qwen Team relations, model navigation, and identity disambiguation. Hosted deployment details, runtime guidance, model-selection advice, and workload-quality conclusions belong to service/deployment, selection, or evidence documentation.
 
+## Decision and Operational Boundaries
+
+Qwen3-Coder is a coding-model series that includes 30B-A3B Instruct, 480B-A35B Instruct, and Coder-Next.
+
+- The represented checkpoints are non-thinking text models; do not inherit vision support or hybrid-thinking switches from other Qwen series.
+- All three represented cards state Apache-2.0; verify a derivative or later checkpoint independently.
+- Tool-use training does not give the model a sandbox or authorize repository, shell, browser, or network actions.
+
 ## Official resources
 
 - [Official repository](https://github.com/QwenLM/Qwen3-Coder)
 - [Qwen3-Coder launch](https://qwenlm.github.io/blog/qwen3-coder/)
+
+## Relationships
+
+| Relationship | Catalog page |
+| --- | --- |
+| Member of | [Qwen](../../) |
+| Produced by | [Qwen Team](../../../../../../../producers/sub/q/sub/qwen-team/) |
+| Includes | [Qwen3-Coder 30B-A3B Instruct](./sub/models/sub/qwen3-coder-30b-a3b-instruct/) |
+| Includes | [Qwen3-Coder 480B-A35B Instruct](./sub/models/sub/qwen3-coder-480b-a35b-instruct/) |
+| Includes | [Qwen3-Coder-Next](./sub/models/sub/qwen3-coder-next/) |
+
+## Primary Sources
+
+- [Official repository: QwenLM/Qwen3-Coder](https://github.com/QwenLM/Qwen3-Coder)
+- [Official model card or license: Qwen/Qwen3-Coder-30B-A3B-Instruct](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct)
+- [Official model card or license: Qwen/Qwen3-Coder-480B-A35B-Instruct](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct)
+- [Official model card or license: Qwen/Qwen3-Coder-Next](https://huggingface.co/Qwen/Qwen3-Coder-Next)

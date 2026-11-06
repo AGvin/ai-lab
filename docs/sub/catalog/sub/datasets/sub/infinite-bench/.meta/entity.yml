@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/infinite-bench
+  type: dataset
+  name: InfiniteBench
+  aliases:
+    - InfiniteBench Long Context
+    - InfiniteBench 100k+
+  identity_note: >-
+    OpenBMB long-context language-model evaluation benchmark with twelve task families spanning real and synthetic contexts exceeding 100,000 tokens. Data, task splits, reusable evaluator code, source documents and scored model responses have distinct provenance and rights.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/OpenBMB/InfiniteBench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/OpenBMB/InfiniteBench/blob/51d9b37b0f1790ead936df2243abbf7f0420e439/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/OpenBMB/InfiniteBench/blob/51d9b37b0f1790ead936df2243abbf7f0420e439/LICENSE
+      purposes: [research]
+      authority: official

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/xstest
+  type: dataset
+  name: "XSTest"
+  aliases:
+    - "Exaggerated Safety Behaviors Test Suite"
+  identity_note: >-
+    Prompt test suite identifying exaggerated refusal or over-safety behavior, with separate safe prompts, contrast prompts and model-completion evidence.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/paul-rottger/xstest
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/paul-rottger/xstest/blob/d7bb5bd738c1fcbc36edd83d5e7d1b71a3e2d84d/readme.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/paul-rottger/xstest/blob/d7bb5bd738c1fcbc36edd83d5e7d1b71a3e2d84d/LICENSE
+      purposes: [research]
+      authority: official

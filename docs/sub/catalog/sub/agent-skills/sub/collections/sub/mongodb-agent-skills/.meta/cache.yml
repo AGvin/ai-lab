@@ -1,0 +1,98 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:31ef11b33709b3e7bbb396cf730652bc7189d39c
+    parent:
+      entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
+      node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/agent-skills/collection
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/agent-skills/collection
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/agent-skills/collection
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/agent-skills/collections/mongodb-agent-skills
+        type: skill-collection
+        name: MongoDB Agent Skills
+        identity_note: MongoDB Agent Skills is MongoDB's official portable instruction
+          collection for agent-assisted database work, including query and schema
+          design, indexing, optimization, Atlas Search and Vector Search. The same
+          collection is distributed through the mongodb-atlas plugin, the self-managed
+          mongodb plugin and standalone skills installation. The Atlas route connects
+          to MongoDB-hosted MCP using OAuth; the self-managed route runs an MCP server
+          locally for the user's deployment. Instruction files alone do not configure
+          a live connection or grant credentials. The repository uses Apache 2.0.
+          That license concerns the collection, not every connected database, hosted
+          service or coding agent. Inspect the current skills and client compatibility
+          and configure database access for the intended deployment. A skill's advice
+          does not verify permissions, and each skill directory or plugin manifest
+          does not become a separate product identity.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/mongodb/agent-skills
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.mongodb.com/docs/agent-skills/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mongodb
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

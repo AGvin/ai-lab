@@ -1,0 +1,27 @@
+entity:
+  id: catalog/datasets/frontiermath
+  type: dataset
+  name: FrontierMath
+  references:
+    - type: documentation
+      source:
+        url: https://epoch.ai/frontiermath
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://epoch.ai/benchmarks/frontiermath-tiers-1-3-v2
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://epoch.ai/latest/openai-and-frontiermath
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/e/epoch-ai

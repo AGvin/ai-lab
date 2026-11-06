@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/j/jax-project
+  type: project
+  name: JAX Project
+  references:
+    - type: documentation
+      source:
+        url: https://docs.jax.dev/en/latest/about.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/jax-ml/jax
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/jax

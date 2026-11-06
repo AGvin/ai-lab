@@ -1,0 +1,48 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen-image/models/qwen-image-2-1-turbo
+  type: model
+  name: Qwen-Image-2.1-Turbo
+  aliases:
+    - qwen-image-2.1-turbo
+    - Qwen/Qwen-Image-2.1-Turbo
+  references:
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/newly-released-models
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen-Image-2.1
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/QwenLM/Qwen-Image-2.1/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/qwen-image-generation-and-editing-api-reference
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/qwen-image-edit-guide
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen-image

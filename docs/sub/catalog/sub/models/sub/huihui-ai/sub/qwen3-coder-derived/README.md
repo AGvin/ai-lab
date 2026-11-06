@@ -1,16 +1,16 @@
 # huihui.ai Qwen3-Coder-Derived Models
 
-Reviewed navigation for huihui.ai model releases whose documented base lineage descends from Qwen3-Coder models.
+This catalog index organizes the represented huihui.ai model with documented Qwen3-Coder ancestry. [Primary source](https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated)
 
-## Translations
+## Scope
 
-- English
-- [Українська](./l10n/uk_UA/)
+The publisher names Qwen/Qwen3-Coder-30B-A3B-Instruct as the source of the represented abliterated model. The existing exact derived-from relation belongs to that concrete model; this index is a way to find the release. [Exact upstream declaration](https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated)
 
-## Models
+## Catalog navigation
 
-- [`Huihui Qwen3 Coder 30B A3B Instruct Abliterated`](./sub/models/sub/huihui-qwen3-coder-30b-a3b-instruct-abliterated/) — distinct abliterated model derived from `Qwen/Qwen3-Coder-30B-A3B-Instruct`.
+- [huihui.ai Qwen3-Coder-Derived Model Releases](sub/models/README.md) — Reviewed release collection
+- [huihui.ai Models](../../README.md) — huihui.ai model view
 
-## Taxonomy boundary
+## Official resources
 
-This node is a catalog grouping, not a model family or series. The concrete model remains a separately published trained/modified weight identity; its GGUF repositories are artifacts rather than sibling models when they are conversions of those weights.
+- <https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated>

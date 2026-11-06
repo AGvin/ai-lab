@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/piqa
+  type: dataset
+  name: "PIQA"
+  aliases:
+    - "Physical Interaction Question Answering"
+  identity_note: >-
+    Physical Interaction Question Answering benchmark with original training, validation and test question files and separate answer-label lists; not the same as generic commonsense QA.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ybisk/ybisk.github.io
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/ybisk/ybisk.github.io/blob/21edab439af693b961be2f069e8690a88d3b4e37/piqa/README.md
+      purposes: [research]
+      authority: official

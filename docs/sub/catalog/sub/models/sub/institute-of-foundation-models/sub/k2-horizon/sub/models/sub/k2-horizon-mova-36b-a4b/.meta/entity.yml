@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/institute-of-foundation-models/k2-horizon/models/k2-horizon-mova-36b-a4b
+  type: model
+  name: K2-Horizon-MoVA-36B-A4B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/institute-of-foundation-models/k2-horizon

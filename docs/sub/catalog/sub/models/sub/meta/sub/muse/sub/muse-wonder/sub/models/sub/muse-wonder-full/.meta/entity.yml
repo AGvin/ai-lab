@@ -1,0 +1,24 @@
+entity:
+  id: catalog/models/meta/muse/muse-wonder/models/muse-wonder-full
+  type: model
+  name: Muse Wonder Full
+  identity_note: >-
+    Muse Wonder Full is Meta's separately released concrete model in the Muse Wonder series. At release Meta made it available through Muse Code subscription rather than the same API route as Muse Wonder; access/subscription state remains freshness-sensitive and does not erase the distinct trained-model identity.
+  references:
+    - type: article
+      source:
+        url: https://research.meta.ai/blog/muse-wonder
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://dev.meta.ai/models/muse-wonder
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/meta/muse/muse-wonder

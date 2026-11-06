@@ -2,3 +2,16 @@ entity:
   id: catalog/models/alibaba/qwen/qwen3/models
   type: catalog-index
   name: Qwen3 Models
+  references:
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen3
+      purposes:
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen3-30B-A3B
+      purposes:
+        - research
+      authority: official

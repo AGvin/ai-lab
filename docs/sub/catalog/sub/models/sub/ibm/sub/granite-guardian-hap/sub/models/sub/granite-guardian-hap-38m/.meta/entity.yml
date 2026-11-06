@@ -1,0 +1,16 @@
+entity:
+  id: catalog/models/ibm/granite-guardian-hap/models/granite-guardian-hap-38m
+  type: model
+  name: Granite Guardian HAP 38M
+  identity_note: IBM 38M-class four-layer binary classifier for toxic English text.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-guardian-hap-38m
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/ibm/granite-guardian-hap

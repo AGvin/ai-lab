@@ -1,0 +1,101 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:c539359e4a27deb247c6fdc6af843019a8a619e6
+    parent:
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/s/sarvam-ai
+        type: organization
+        name: Sarvam AI
+        identity_note: Sarvam AI is the producer of the represented Sarvam model family.
+          Its March 2026 release identifies the 30B and 105B models as an in-house
+          training effort; current website terms identify the operating company as
+          Axonwise Private Limited, doing business as Sarvam AI. The released 30B/105B
+          weights and their Apache 2.0 distribution are distinct from hosted APIs,
+          Indus, Samvaad and Sarvam’s speech, translation and document products. Check
+          the exact checkpoint license, runtime and hardware for local deployment,
+          and the applicable account terms for hosted access. IndiaAI compute support
+          and NVIDIA collaboration establish infrastructure contributions, not replacement
+          model authorship.
+        references:
+        - type: official-site
+          source:
+            url: https://www.sarvam.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.sarvam.ai/blogs/sarvam-30b-105b
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: terms-of-service
+          source:
+            url: https://www.sarvam.ai/terms-of-service
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/models/sarvam-ai/sarvam
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

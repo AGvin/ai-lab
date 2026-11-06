@@ -10,6 +10,12 @@ entity:
         - identification
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/blob/main/config.json
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/alibaba/qwen/qwen2-5-coder

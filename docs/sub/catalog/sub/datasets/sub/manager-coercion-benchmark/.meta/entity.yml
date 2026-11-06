@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/manager-coercion-benchmark
+  type: dataset
+  name: "Manager Coercion Benchmark"
+  aliases:
+    - "AI Manager Coercion and Fabrication Eval"
+  identity_note: >-
+    Inspect AI benchmark of simulated manager/subordinate interactions measuring escalation along a nine-level rubric and separate honest-versus-fabricated outcome judgments.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/CompassionML/manager-coercion-bench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/CompassionML/manager-coercion-bench/blob/3d2d64c118a43670a9678e455e06ff4ed4bf8412/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/CompassionML/manager-coercion-bench/blob/3d2d64c118a43670a9678e455e06ff4ed4bf8412/LICENSE
+      purposes: [research]
+      authority: official

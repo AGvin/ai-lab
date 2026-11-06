@@ -1,5 +1,7 @@
 # Anthropic Skills
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Publisher attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 Anthropic Skills is Anthropic's public repository of skills for Claude. AI Lab currently focuses on the source-available document skills published there.
 
 ## Producer
@@ -34,6 +36,12 @@ The XLSX skill covers spreadsheet creation and editing, data handling, formattin
 ## Installation
 
 Anthropic's repository exposes the document skills through its `document-skills` plugin flow. Runtime dependencies still vary by skill and by operation, so installing the collection does not make every listed dependency mandatory for every task.
+
+## Source interpretation
+
+Anthropic's public collection contains illustrative skills and service-governed document implementations. The four document LICENSE.txt files use Anthropic agreement terms with additional restrictions on extraction, copying, derivative works and redistribution; they are not Apache-2.0 examples. Check the selected path and applicable agreement. Examples and hosted Claude behavior can differ.
+
+[Reviewed original README](https://github.com/anthropics/skills/blob/ca45fc496a3436251f191354091d557da31c15b5/README.md). Licensing is scoped to the inspected distribution; no skill or script was installed or executed. This is not a full collection freshness audit.
 
 ## Official resources
 

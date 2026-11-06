@@ -1,0 +1,29 @@
+entity:
+  id: catalog/models/mistral-ai/timestral
+  type: model-family
+  name: Timestral
+  references:
+    - type: release-notes
+      source:
+        url: https://mistral.ai/news/timestral/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/mistralai/timestral
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/mistral-ai
+    - type: has-member
+      target: catalog/models/mistral-ai/timestral/models/timestral-1-0-5m
+    - type: has-member
+      target: catalog/models/mistral-ai/timestral/models/timestral-1-0-28m
+    - type: has-member
+      target: catalog/models/mistral-ai/timestral/models/timestral-1-0-123m
+    - type: has-member
+      target: catalog/models/mistral-ai/timestral/models/timestral-1-0-209m

@@ -1,0 +1,28 @@
+entity:
+  id: catalog/specifications/standards/webgpu-shading-language
+  name: "WebGPU Shading Language"
+  aliases:
+    - "WGSL"
+  identity_note: >-
+    W3C GPU for the Web Working Group shader-language specification. Latest published Candidate
+    Recommendation Draft 26 October 2026; distinct from the continuously updated Editor's Draft
+    and from WebGPU API. Not a final W3C Recommendation.
+  references:
+    - type: specification
+      source:
+        url: https://www.w3.org/TR/2026/CRD-WGSL-20261026/
+      purposes: [identification, research]
+      authority: official
+      note: "Published Candidate Recommendation Draft, 26 October 2026"
+    - type: specification
+      source:
+        url: https://www.w3.org/TR/WGSL/
+      purposes: [identification, research]
+      authority: official
+      note: "Current W3C publication entry"
+    - type: specification
+      source:
+        url: https://gpuweb.github.io/gpuweb/wgsl/
+      purposes: [identification, research]
+      authority: official
+      note: "Separate Editor's Draft"

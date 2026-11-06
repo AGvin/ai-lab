@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-asr/models/qwen3-asr-0-6b
+  type: model
+  name: Qwen3-ASR-0.6B
+  aliases:
+    - Qwen/Qwen3-ASR-0.6B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen3-ASR
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen3-asr

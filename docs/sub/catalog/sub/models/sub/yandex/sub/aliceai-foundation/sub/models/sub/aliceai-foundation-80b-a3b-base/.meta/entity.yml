@@ -1,0 +1,36 @@
+entity:
+  id: catalog/models/yandex/aliceai-foundation/models/aliceai-foundation-80b-a3b-base
+  type: model
+  name: AliceAI-Foundation-80B-A3B-Base
+  identity_note: >-
+    Yandex published this separately trained-from-scratch pretrained text-only
+    foundation model on September 21, 2026 under Apache-2.0. Its hybrid
+    attention and mixture-of-experts architecture has approximately 80 billion
+    total and 3 billion active parameters per token, with a configured
+    262144-token context. It is an experimental base model rather than the
+    consumer Alice AI assistant or an instruction-tuned/chat API. Official
+    model examples require custom code and revision-aware inference
+    integration; context capacity alone does not prove runtime fit, usable
+    long-context quality or independently reproduced benchmarks.
+    SECURITY POLICY: DANGEROUS — NOT RECOMMENDED. This Yandex model or family
+    is Russian-origin and categorically excluded from adoption, regardless
+    of successful safety checks, open licensing or sanctions status.
+    Catalog for research and threat monitoring only. No individual
+    malware finding is implied by the policy.
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.yandex.com/company/news/2026-09-21
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/yandex/aliceai-foundation

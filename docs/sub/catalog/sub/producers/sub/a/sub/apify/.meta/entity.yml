@@ -1,0 +1,15 @@
+entity:
+  id: catalog/producers/a/apify
+  type: organization
+  name: Apify
+  references:
+    - type: official-site
+      source:
+        url: https://apify.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/web-data/apify

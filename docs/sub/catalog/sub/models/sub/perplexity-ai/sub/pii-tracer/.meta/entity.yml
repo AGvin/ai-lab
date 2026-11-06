@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/perplexity-ai/pii-tracer
+  type: model
+  name: PII-Tracer
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/perplexity-ai/PII-Tracer
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/p/perplexity-ai
+  - type: derived-from
+    target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-0-6b
+  identity_note: >-
+    PII-Tracer is Perplexity's released MIT-licensed PII masking model for conversational data. It uses the PPLX Embed V1 0.6B backbone as a roughly 600M-parameter bidirectional Qwen3 encoder with a token-classification head and a conversation-level sensitivity head. MLX, vLLM and GGUF repositories are packaging variants of this model.

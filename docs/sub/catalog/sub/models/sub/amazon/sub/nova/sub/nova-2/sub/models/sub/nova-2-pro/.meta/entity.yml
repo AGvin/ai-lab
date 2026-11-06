@@ -2,6 +2,11 @@ entity:
   id: catalog/models/amazon/nova/nova-2/models/nova-2-pro
   type: model
   name: Amazon Nova 2 Pro
+  identity_note: >-
+    Nova 2 Pro was announced in Preview on December 2, 2025. AWS announced early access for Nova Forge
+    customers through an AWS account team, with a 1M-token context and three thinking levels. No
+    linked later primary source confirms general availability. Do not infer current self-service
+    access, a model route or retirement from the announcement or from absence in a current model list.
   references:
     - type: release-notes
       source:
@@ -14,6 +19,13 @@ entity:
       source:
         url: https://aws.amazon.com/nova/models/
       purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-amazon.html
+      purposes:
+        - identification
         - research
       authority: official
   relations:

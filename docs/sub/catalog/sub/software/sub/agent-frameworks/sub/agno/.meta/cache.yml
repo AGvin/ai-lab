@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:be1b704f63264897f9720961837fc43ac5db5beb
+      entity.yml: gitblob:dc66212f68cc50d1529f89a872313831e5a0be96
     parent:
       entity.yml: gitblob:d76916cc6208401fd85eacd3a15da3a51743c755
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -57,6 +57,24 @@ cache:
         - type: documentation
           source:
             url: https://docs.agno.com/
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/agno-agi/agno
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.agno.com/agent-platform/overview
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.agno.com/features/security-and-auth
           purposes:
           - research
           authority: official

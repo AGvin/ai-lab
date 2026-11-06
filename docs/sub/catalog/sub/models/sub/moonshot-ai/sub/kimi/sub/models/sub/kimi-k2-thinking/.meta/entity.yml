@@ -1,0 +1,24 @@
+entity:
+  id: catalog/models/moonshot-ai/kimi/models/kimi-k2-thinking
+  type: model
+  name: Kimi K2 Thinking
+  identity_note: >-
+    Moonshot AI's released reasoning/tool-use checkpoint is distinct from Kimi K3 and hosted API aliases. The publisher reports 1T total and 32B activated parameters, a 256K context, MoE architecture and native INT4 quantization-aware post-training. Active parameters do not establish memory fit. Weights and code use Modified MIT terms, including Kimi K2 interface branding above 100 million monthly active users or USD 20 million monthly revenue; the exact license governs. Publisher benchmarks are not reproduced here. Ultimate beneficial ownership and control rights remain unverified; provenance review is pending, not evidence of Russian ownership or adoption clearance.
+    Use the checkpoint's native tool parser and chat format. Review and pin remote code before loading; sandbox tool execution, validate arguments and keep secrets outside model-controlled inputs. Hosted API behavior and third-party quantizations are separate surfaces.
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/moonshotai/Kimi-K2-Thinking
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/MoonshotAI/Kimi-K2/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/moonshot-ai/kimi

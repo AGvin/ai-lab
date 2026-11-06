@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:8ce22986d7492e27aa1d11eb5f4af5a088dc6fb7
+      entity.yml: gitblob:726a0625d867730f47e5c10a426c9d59b3b317de
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -45,6 +45,13 @@ cache:
         id: catalog/producers/m/menlo-research-pte-ltd
         type: organization
         name: Menlo Research Pte Ltd
+        identity_note: Menlo Research Pte Ltd, branded as Menlo Research, is the organization
+          producing Jan. The legal organization remains distinct from the Jan software
+          identity and community contributors. Jan's published privacy policy, last
+          updated January 16, 2025, names this company for the desktop app and website.
+          That policy is scoped to those services; it does not make Menlo the author
+          of connected third-party models or extend local-model data-handling claims
+          to every cloud provider or newer agent product.
         aliases:
         - Menlo Research
         references:

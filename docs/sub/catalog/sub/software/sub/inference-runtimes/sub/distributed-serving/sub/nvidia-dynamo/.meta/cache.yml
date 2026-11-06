@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b523e429be2478c41bf98a5f40e815782cfa23b5
+      entity.yml: gitblob:f51e53b9853746f39d55820af17e25593742d9a1
     parent:
       entity.yml: gitblob:b1378bdd8814f49a3247d97f1015b4ffd6e46ce6
   state:
@@ -48,7 +48,7 @@ cache:
         references:
         - type: documentation
           source:
-            url: https://docs.dynamo.nvidia.com/dynamo/dev/getting-started/introduction
+            url: https://docs.nvidia.com/dynamo/
           purposes:
           - identification
           - research

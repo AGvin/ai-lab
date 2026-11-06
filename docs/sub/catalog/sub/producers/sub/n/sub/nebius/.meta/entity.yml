@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/n/nebius
+  type: organization
+  name: Nebius
+  identity_note: >-
+    Nebius is an AI cloud infrastructure provider and the operator of Nebius
+    Token Factory, a hosted inference and post-training platform. The older
+    Nebius AI Studio name was replaced by Token Factory on November 5, 2025.
+    The service retains one durable canonical identity; Nebius does not
+    automatically acquire authorship or weight rights to third-party models.
+  references:
+    - type: official-site
+      source:
+        url: https://nebius.com/
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://nebius.com/newsroom/nebius-launches-nebius-token-factory-to-deliver-production-ai-inference-at-scale
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.tokenfactory.nebius.com/quickstart
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/model-apis/nebius-ai-studio

@@ -16,6 +16,39 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-5.6-sol
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-5.6-terra
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-5.6-luna
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://deploymentsafety.openai.com/gpt-5-6-august-update
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/guides/latest-model
+      purposes:
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/openai/gpt
@@ -25,3 +58,4 @@ entity:
       target: catalog/models/openai/gpt/gpt-5-6/models/sol
     - type: has-member
       target: catalog/models/openai/gpt/gpt-5-6/models/terra
+  identity_note: Series containing Sol, Terra, and Luna. The gpt-5.6 API routing alias is owned by Sol, not a fourth model.

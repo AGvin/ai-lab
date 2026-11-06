@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:cc85a621b9349c68f4ac2cf243f0ef729d49d30e
+      entity.yml: gitblob:d639f6d5dc69e2115f34401714083a58cb5cc408
     parent:
-      entity.yml: gitblob:d2832a7979fe4d097b9404cc46ffd2fcc3b3eba6
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
   state:
     node:
       effective:
@@ -45,6 +45,17 @@ cache:
         id: catalog/producers/s/spring
         type: organization
         name: Spring
+        identity_note: Spring is the project and ecosystem producer identity for Spring
+          AI, published through spring-projects. The official project page and repository
+          describe a Spring application framework connecting enterprise data and APIs
+          with AI models; this catalog identity is not a claim that Spring is a separately
+          incorporated company. The Apache 2.0 framework, Spring Boot compatibility
+          line and commercial support offerings have different scopes. Model endpoints,
+          vector stores and tool integrations retain their own licenses, credentials
+          and service terms. Select a supported framework and Boot combination, then
+          review application permissions and the information sent to each provider.
+          Ecosystem affiliation alone does not establish a new corporate ownership
+          relation.
         references:
         - type: official-site
           source:
@@ -64,6 +75,13 @@ cache:
           source:
             url: https://github.com/spring-projects/spring-ai
           purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/spring-projects/spring-ai/blob/main/LICENSE.txt
+          purposes:
+          - identification
           - research
           authority: official
         relations:

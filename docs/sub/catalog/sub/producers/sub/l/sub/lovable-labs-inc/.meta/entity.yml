@@ -27,7 +27,7 @@ entity:
         - identification
         - research
       authority: official
-      note: Official Lovable Privacy Policy identifying Lovable Labs Incorporated.
+      note: The Privacy Policy names Lovable Labs Sweden AB as controller for processing covered by that policy, with separate organization-managed-data provisions; this is distinct from the Incorporated entity named in the general Terms.
   relations:
     - type: produces
       target: catalog/services/development/agents/lovable

@@ -1,0 +1,32 @@
+entity:
+  id: catalog/hardware/nvidia-rubin
+  type: hardware-product
+  name: NVIDIA Rubin GPU
+  identity_note: >-
+    NVIDIA Rubin GPU is the individual Rubin-generation data-center GPU, not the Vera CPU or complete Vera Rubin NVL72 rack. NVIDIA's July 2026 engineering article describes up to 288 GB HBM4, 22 TB/s of bandwidth and up to 50 petaflops of NVFP4 per GPU. May full-production/ramp announcements apply to the platform supply chain; system comparisons and initial partner deliveries do not prove broad current stock or independent per-GPU application throughput.
+  aliases:
+    - Rubin
+  references:
+    - type: release-notes
+      source:
+        url: https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

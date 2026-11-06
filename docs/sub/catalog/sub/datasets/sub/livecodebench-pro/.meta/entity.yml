@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/livecodebench-pro
+  type: dataset
+  name: "LiveCodeBench Pro"
+  aliases:
+    - "Competitive Programming LCB Pro"
+  identity_note: >-
+    Competitive programming benchmark with distinct hosted problem/testcase datasets and a local code-generation evaluation and judge toolkit.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/GavinZhengOI/LiveCodeBench-Pro
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/GavinZhengOI/LiveCodeBench-Pro/blob/d614eef4f95b3654bf0758c64e1194b2575850b8/README.md
+      purposes: [research]
+      authority: official

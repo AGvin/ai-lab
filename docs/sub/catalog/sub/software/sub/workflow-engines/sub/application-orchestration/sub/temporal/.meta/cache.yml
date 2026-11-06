@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c08bdf3c735e7f73bbaa259ba96d8dfb12eb4a40
+      entity.yml: gitblob:d13f27b32dc2eabcf594fdf23552581ee28bdd86
     parent:
       entity.yml: gitblob:f9ac5a82bcdaf30d9fe417c76471f4a408683309
   state:
@@ -68,6 +68,14 @@ cache:
           authority: official
           note: Current Temporal history describes the Cadence lineage, company founders,
             and open-source project boundary.
+        - type: other
+          source:
+            url: https://temporal.io/terms-of-service
+          purposes:
+          - research
+          authority: official
+          note: The current hosted-service terms identify Temporal Technologies Inc.
+            and define Temporal Cloud.
         relations:
         - type: produced-by
           target: catalog/producers/t/temporal-technologies-inc

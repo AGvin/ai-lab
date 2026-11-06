@@ -1,12 +1,17 @@
 # ZenML GmbH
 
-ZenML GmbH is the company that creates and maintains the open-source ZenML project. The company identity remains distinct from the ZenML software identity and from commercial ZenML Pro/Cloud surfaces.
+ZenML GmbH is the company that ZenML's documentation identifies as creating and maintaining the open-source project with community contributors. Current ZenML Labs branding and the separately documented Kitaru project do not replace this canonical company or the ZenML software identity.
 
-## Produces and maintains
+## Producer and operating boundary
 
-- [ZenML](../../../../../software/sub/model-and-data-platforms/sub/lifecycle-platforms/sub/zenml/) — open-source MLOps and AI framework.
+Open-source framework capabilities and commercial management services have separate boundaries. The Python package enables anonymized usage analytics by default and documents an opt-out command. Pipeline integrations still require their own infrastructure permissions, credentials and data-handling decisions.
+
+## Relations
+
+- Produces: [ZenML](../../../../../software/sub/model-and-data-platforms/sub/lifecycle-platforms/sub/zenml/)
+- Maintains: [ZenML](../../../../../software/sub/model-and-data-platforms/sub/lifecycle-platforms/sub/zenml/)
 
 ## Official resources
 
-- [ZenML](https://www.zenml.io/)
-- [ZenML global settings documentation](https://docs.zenml.io/reference/global-settings)
+- [Current company and product context](https://www.zenml.io/)
+- [Company, maintenance and analytics](https://docs.zenml.io/reference/global-settings)

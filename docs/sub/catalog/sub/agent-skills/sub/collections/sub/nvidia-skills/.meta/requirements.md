@@ -7,6 +7,7 @@
 - Preserve the collection-level governance artifacts that extend the base Agent Skills package: `skill-card.md` identity/governance documentation, detached `skill.oms.sig` signatures, evaluation datasets, generated benchmark reports where available, and the published trust anchor used for signature verification.
 - Explain the cryptographic-verification boundary: a valid signature can establish that published files match the signed NVIDIA package, but it does not establish suitability for a repository, credential scope, production environment, or organizational policy.
 - Retain the official Skills CLI installation context at collection level (`npx skills add nvidia/skills`) without hardcoding mutable catalog counts or implying that installation is a trust endorsement.
+- Preserve current NVIDIA DOCA/BlueField Agent Skills as collection/product-repository inventory rather than peer canonical skill nodes; their supported DOCA/BlueField workflows, prerequisites, and product coverage remain freshness-sensitive and do not expand the collection's trust boundary.
 - Position the collection as a useful source for NVIDIA CUDA-X / AI-platform skill guidance and for studying signed skill distribution, provenance, skill cards, evaluation artifacts, governance controls, and revision-based organizational allow-listing; make clear that these are practical governance/study use cases rather than proof that a skill is safe or suitable for a specific environment.
 - Present the selected collection-owned Skill Card Generator with a compact overview and a concise detail section; do not create a duplicate standalone catalog page.
 - Describe Skill Card Generator as a governance workflow for generating or updating a draft skill card for an existing Agent Skill directory, not as a general skill authoring tool.
@@ -23,3 +24,9 @@
 - Runtime permissions and human-review constraints are not weakened or generalized beyond the upstream skill.
 - No local standalone Skill Card Generator catalog node is linked.
 - The page contains no temporary RC summary wording.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
+- Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
+- Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.

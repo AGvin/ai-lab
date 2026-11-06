@@ -7,6 +7,8 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include the official Stanford NLP Group site and DSPy repository as provenance references.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
 ## Validation
 
 - The page does not collapse Stanford NLP Group, Stanford University, and DSPy into one entity.

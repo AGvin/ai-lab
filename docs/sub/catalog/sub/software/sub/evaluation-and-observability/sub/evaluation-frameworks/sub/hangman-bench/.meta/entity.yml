@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/hangman-bench
+  type: software
+  name: Hangman Benchmark
+  aliases:
+    - Hangman Bench
+    - hangman-bench
+  identity_note: >-
+    Installable MIT-licensed Inspect AI Hangman evaluation package with game-winning and oracle decision-quality scorers. It is distinct from the Inspect AI runtime, model providers and any evaluation logs or derived metrics.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/MattFisher/hangman-bench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/MattFisher/hangman-bench/blob/7a797dccb75e65bb44de596c4306c346817d0523/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/MattFisher/hangman-bench/blob/7a797dccb75e65bb44de596c4306c346817d0523/pyproject.toml
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/MattFisher/hangman-bench/blob/7a797dccb75e65bb44de596c4306c346817d0523/LICENSE
+      purposes: [research]
+      authority: official

@@ -1,0 +1,52 @@
+entity:
+  id: catalog/software/physical-ai-and-robotics/mujoco-playground
+  type: software
+  name: MuJoCo Playground
+  references:
+    - type: repository
+      source:
+        url: https://github.com/google-deepmind/mujoco_playground
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://playground.mujoco.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/google-deepmind/mujoco_playground/releases/tag/v0.2.0
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/google-deepmind/mujoco_playground/blob/v0.2.0/pyproject.toml
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/google-deepmind/mujoco_playground/blob/v0.2.0/CHANGELOG.md
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/google-deepmind/mujoco_playground/blob/v0.2.0/README.md
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/google-deepmind/mujoco_playground/blob/v0.2.0/mujoco_playground/_src/mjx_env.py
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google-deepmind

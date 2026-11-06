@@ -1,0 +1,96 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a6c227d80876ff8b975376bb1cc450d1ed839edd
+    parent:
+      entity.yml: gitblob:08305b000b283f9be05ea5e2775c0f31d43e5ac1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/gateways/model-gateways/tensorzero
+        type: software
+        name: TensorZero
+        references:
+        - type: official-site
+          source:
+            url: https://www.tensorzero.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: The official site states that TensorZero remains on GitHub but is
+            no longer maintained, observed October 17, 2026.
+        - type: repository
+          source:
+            url: https://github.com/tensorzero/tensorzero
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: The first-party repository was archived when checked on October 17,
+            2026.
+        - type: terms-of-service
+          source:
+            url: https://www.tensorzero.com/terms/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: First-party enterprise terms identify TensorZero, Inc.
+        relations:
+        - type: produced-by
+          target: catalog/producers/t/tensorzero-inc
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,36 @@
+entity:
+  id: catalog/services/model-apis/snowflake-cortex-inference-api
+  type: service
+  name: Snowflake Cortex Inference API
+  identity_note: >-
+    Snowflake Cortex Inference API is Snowflake’s managed REST surface for supported model inference.
+    Current documentation provides OpenAI-style Chat Completions and Anthropic-style Messages routes,
+    with Messages support scoped to documented Claude models. The service runs within Snowflake’s
+    account and governance model. Cortex Inference is distinct from Cortex AI SQL Functions, Cortex
+    Agents, Cortex Search and warehouse operations. Hosting an externally developed model does not make
+    Snowflake its trainer. API-compatible request formats do not guarantee identical provider features,
+    model versions or response behavior; check the specific route and model. Feature-specific previews
+    must be assessed separately from generally available capabilities. Authentication can use supported
+    programmatic access tokens, OAuth or key-pair JWT. The calling user’s default role needs the
+    documented Cortex permissions, such as CORTEX_USER or CORTEX_REST_API_USER; a narrower grant does
+    not remove broader access already granted elsewhere. Check model availability for the account’s
+    cloud and region and any cross-region inference configuration. Pin the model route, review rate
+    limits and consumption charges, and avoid assuming that every request has the same residency
+    boundary or billing treatment as other Cortex features.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-rest-api
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/snowflake

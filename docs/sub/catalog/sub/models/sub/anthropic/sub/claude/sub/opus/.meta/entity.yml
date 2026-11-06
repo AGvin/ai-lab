@@ -21,3 +21,5 @@ entity:
       target: catalog/models/anthropic/claude
     - type: has-member
       target: catalog/models/anthropic/claude/opus/models/opus-5
+    - type: has-member
+      target: catalog/models/anthropic/claude/opus/models/opus-5-5

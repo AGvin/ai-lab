@@ -1,0 +1,28 @@
+entity:
+  id: catalog/datasets/mle-bench
+  type: dataset
+  name: MLE-bench
+  references:
+    - type: article
+      source:
+        url: https://openai.com/index/mle-bench/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://evals.openai.com/
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/openai/mle-bench
+      purposes:
+        - research
+      authority: official
+      note: "Released preparation and grading code, leaderboard submission pause, and documented known issues."
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

@@ -1,0 +1,20 @@
+entity:
+  id: catalog/models/google/gemma/gemma-3-27b-it
+  type: model
+  name: Gemma 3 27B IT
+  identity_note: >-
+    Google DeepMind's 27B instruction-tuned Gemma 3 checkpoint accepts text and images and produces text. The card reports 128K input context and 8,192-token output, distinct from the 1B text-only context and later Gemma 4. It uses Gemma Terms rather than inheriting another generation's Apache-2.0 label. Hub access requires agreement to publisher conditions; none were accepted here. Pin the checkpoint, processor and chat template. Treat images and prompts as untrusted inputs; validate application outputs and keep secrets out of prompts. Quantization, runtime memory and benchmark claims need configuration-specific verification. Publisher capability/benchmark claims were not independently reproduced. Ownership/control-chain review is incomplete; no Russian-control finding or adoption clearance is established.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/google/gemma-3-27b-it
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemma/terms
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/google/gemma

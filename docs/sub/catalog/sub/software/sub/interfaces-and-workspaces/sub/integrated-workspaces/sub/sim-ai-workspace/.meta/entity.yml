@@ -1,0 +1,38 @@
+entity:
+  id: catalog/software/interfaces-and-workspaces/integrated-workspaces/sim-ai-workspace
+  type: software
+  name: Sim
+  aliases:
+    - Sim AI
+    - Sim Workspace
+  identity_note: >-
+    Self-hostable collaborative AI workspace with visual agent and workflow
+    authoring, execution, knowledge, files, tables and monitoring. The
+    Apache-2.0 core software is distinct from the operated Sim Cloud service,
+    desktop client distribution and enterprise-licensed capabilities.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/simstudioai/sim
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/simstudioai/sim/blob/f3596f0c0ee1d0a39d6f5df0480fae7703f24653/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.sim.ai/introduction
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.sim.ai/platform/self-hosting
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/simstudioai/sim/blob/f3596f0c0ee1d0a39d6f5df0480fae7703f24653/LICENSE
+      purposes: [research]
+      authority: official

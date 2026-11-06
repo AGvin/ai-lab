@@ -1,0 +1,20 @@
+entity:
+  id: catalog/datasets/medcalc-bench
+  type: dataset
+  name: "MedCalc-Bench"
+  aliases:
+    - "MedCalc Bench"
+    - "MedCalc-Bench v1.2"
+  identity_note: >-
+    Research dataset measuring medical clinical calculation tasks from patient-note-style questions with numeric answers and worked solutions. A separate newer MedCalc-Bench-Verified project and its dataset must not be silently treated as this original release.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/ncbi-nlp/MedCalc-Bench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/ncbi-nlp/MedCalc-Bench/blob/20b10f9d66a8c3b0356ae3138533f5ec91666b6a/README.md
+      purposes: [research]
+      authority: official

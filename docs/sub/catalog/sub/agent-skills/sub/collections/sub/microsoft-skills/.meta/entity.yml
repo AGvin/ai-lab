@@ -1,0 +1,30 @@
+entity:
+  id: catalog/agent-skills/collections/microsoft-skills
+  type: skill-collection
+  name: Microsoft Skills
+  aliases:
+    - Microsoft Agent Skills
+  identity_note: >-
+    Microsoft's MIT repository contains Azure SDK/Foundry skill guidance plus plugins, templates and MCP configurations. The README explicitly marks development and testing as work in progress. Keep the distinct MicrosoftDocs Azure collection, hosted Foundry services and language SDKs separate; verify versions and permissions for the selected workflow.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/microsoft/skills
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Microsoft-maintained skill/plugin repository for Azure SDKs, Microsoft Foundry, and related coding-agent workflows.
+    - type: documentation
+      source:
+        url: https://github.com/microsoft/skills/blob/4f831bbbf54e004507758d8ef2ab420c77bb81b6/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/microsoft/skills/blob/4f831bbbf54e004507758d8ef2ab420c77bb81b6/LICENSE
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

@@ -26,3 +26,9 @@
 - Delivery adapters and the internal MCP server do not become duplicate canonical entities without new identity evidence.
 - The `produced-by` relation resolves to Dietrich Gebert and is matched by the producer's inverse `produces` relation.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
+- Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
+- Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.

@@ -1,0 +1,4 @@
+entity:
+  id: catalog/services/ai-security
+  type: catalog-index
+  name: AI Security

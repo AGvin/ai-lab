@@ -1,0 +1,20 @@
+entity:
+  id: catalog/datasets/bold
+  type: dataset
+  name: Bias in Open-ended Language Generation (BOLD)
+  aliases:
+    - BOLD
+    - BOLD Bias Dataset
+  identity_note: >-
+    Amazon Science's English-language open-ended text-generation prompt dataset for evaluating representational and topical bias in model responses. The prompts span five social domains and derive in part from Wikipedia; model generations, scoring methods and third-party source text are distinct.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/amazon-science/bold
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/amazon-science/bold/blob/3ad652c773f5d1e30d5f6f61657ed934d768ecad/README.md
+      purposes: [research]
+      authority: official

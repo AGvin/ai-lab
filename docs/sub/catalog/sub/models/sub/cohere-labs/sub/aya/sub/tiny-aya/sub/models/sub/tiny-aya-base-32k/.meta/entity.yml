@@ -1,0 +1,32 @@
+entity:
+  id: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-base-32k
+  type: model
+  name: Tiny Aya Base 32K
+  identity_note: >-
+    Separately published 3.35B Cohere/Cohere Labs long-context pretrained text model with 32K combined input/output context,
+    gated CC-BY-NC noncommercial research weights, and no implied live Cohere API model route.
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/CohereLabs/tiny-aya-base-32K
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://cohere.com/blog/building-multilingual-bridges
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://cohere.com/cohere-labs-cc-by-nc-license
+      purposes: [research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere-labs/aya/tiny-aya
+    - type: produced-by
+      target: catalog/producers/c/cohere
+    - type: has-derivative
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-l2-thinker
+    - type: has-derivative
+      target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-en-thinker

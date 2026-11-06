@@ -1,0 +1,17 @@
+entity:
+  id: catalog/hardware/nvidia-rtx-a6000
+  type: hardware
+  name: NVIDIA RTX A6000
+  identity_note: >-
+    NVIDIA identifies Ampere RTX A6000 with 48 GB ECC GDDR6 and a two-way NVLink option. It is not RTX 6000 Ada or RTX PRO 6000 Blackwell. Two connected devices do not automatically provide every application one 96 GB allocation; topology and software parallelism determine usable memory. Check board and software entitlement requirements separately.
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/products/workstations/rtx-a6000/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

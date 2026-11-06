@@ -1,0 +1,43 @@
+entity:
+  id: catalog/models/bytedance/seedream/models/seedream-4-5
+  name: Seedream 4.5
+  type: model
+  relations:
+  - type: member-of
+    target: catalog/models/bytedance/seedream
+  identity_note: Seedream 4.5 is a released ByteDance Seed image generation/editing model with multi-reference consistency
+    and typography-oriented improvements. Its dated Volcengine and BytePlus endpoint IDs denote provider access, while
+    the Ark route has an announced November 2026 service retirement; the named model remains historical provenance.
+  references:
+  - type: product-page
+    source:
+      url: https://seed.bytedance.com/en/seedream4_5
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.volcengine.com/docs/ark/image-generation-tutorial?lang=en
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.volcengine.com/docs/ark/model-deprecation-notice?lang=zh
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/modelark/model-list
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/modelark/model-pricing
+    purposes:
+    - research
+    authority: official

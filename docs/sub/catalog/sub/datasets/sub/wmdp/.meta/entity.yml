@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/wmdp
+  type: dataset
+  name: "WMDP"
+  aliases:
+    - "Weapons of Mass Destruction Proxy Benchmark"
+  identity_note: >-
+    Published dataset of 3,668 multiple-choice questions across biosecurity, cybersecurity and chemical security, with separate unlearning corpora and RMU model-modification software.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/centerforaisafety/wmdp
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/centerforaisafety/wmdp/blob/c0b6c12bb0de3decf9c13bb13f9f1aa15754a132/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/centerforaisafety/wmdp/blob/c0b6c12bb0de3decf9c13bb13f9f1aa15754a132/LICENSE
+      purposes: [research]
+      authority: official

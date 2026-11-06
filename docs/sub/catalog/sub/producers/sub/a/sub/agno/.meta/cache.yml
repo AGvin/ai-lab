@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b54ec354eaec5fdf685c1a04417182b7a09c6f2c
+      entity.yml: gitblob:8cd014eeafcce964b768f4daa989ab249f272719
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -56,6 +56,13 @@ cache:
         - type: repository
           source:
             url: https://github.com/agno-agi/agno
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.agno.com/
           purposes:
           - identification
           - research

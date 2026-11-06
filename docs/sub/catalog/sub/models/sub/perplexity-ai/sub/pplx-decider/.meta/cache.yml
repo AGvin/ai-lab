@@ -1,0 +1,110 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:9d414650896a40eb99154130f332b5eaf5a600af
+    parent:
+      entity.yml: gitblob:a76c3a46432ba7611269330ee50980c8ad5c387e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/perplexity-ai/pplx-decider
+        type: model-family
+        name: PPLX Decider
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/perplexity-ai/pplx-decider-v1-27b
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/perplexity-ai/pplx-decider-v1.2
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/p/perplexity-ai
+        - type: has-member
+          target: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-v1-27b
+        - type: has-member
+          target: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-v1-1-27b
+        - type: has-member
+          target: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-v1-2
+        - type: has-member
+          target: catalog/models/perplexity-ai/pplx-decider/models/pplx-decider-flash-v1-2
+        identity_note: PPLX Decider groups Perplexity's released decision checkpoints.
+          V1, V1.1 and V1.2 use the Qwen3.8-27B backbone; Flash V1.2 is a smaller
+          Qwen3.5-4B-based distilled checkpoint. They return typed decisions and calibrated
+          probabilities rather than representing a general text-generation service.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

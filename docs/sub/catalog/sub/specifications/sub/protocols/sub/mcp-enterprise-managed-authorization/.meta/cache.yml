@@ -1,0 +1,94 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:f9ec3525f1bc7a3f2201185b26c44a40d7290633
+    parent:
+      entity.yml: gitblob:f31139639b2edcfd2e66f7c2e44d1eef4e9a433a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/specifications/protocols/mcp-enterprise-managed-authorization
+        name: MCP Enterprise-Managed Authorization
+        aliases:
+        - Enterprise-Managed Authorization
+        - MCP EMA
+        - EMA
+        - Cross-App Access
+        - XAA
+        references:
+        - type: specification
+          source:
+            url: https://github.com/modelcontextprotocol/ext-auth/blob/main/specification/stable/enterprise-managed-authorization.mdx
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Stable Model Context Protocol authorization extension; re-check the
+            official stable specification before updating normative flow or token
+            requirements.
+        - type: documentation
+          source:
+            url: https://modelcontextprotocol.io/extensions/auth/enterprise-managed-authorization
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/modelcontextprotocol/ext-auth
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

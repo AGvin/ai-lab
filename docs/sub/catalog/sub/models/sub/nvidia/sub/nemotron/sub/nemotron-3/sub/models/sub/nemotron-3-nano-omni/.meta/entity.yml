@@ -17,6 +17,23 @@ entity:
         - identification
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/nvidia/nemotron/nemotron-3
+    - type: derived-from
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano
+  identity_note: >-
+    Released 2026-04-28 as a separately trained 31B-total/about-3B-active
+    multimodal hybrid Mamba-2/Transformer MoE model with video, audio,
+    image and text inputs and text output, up to 256K-token context.
+    NVIDIA Open Model Agreement governs the official checkpoint.
+    Language backbone is the post-trained Nemotron 3 Nano 30B-A3B,
+    distinct from Nano Base; C-RADIOv4-H vision and Parakeet-TDT audio
+    encoders are separate components. BF16/FP8/NVFP4 are serving forms.

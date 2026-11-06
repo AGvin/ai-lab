@@ -1,0 +1,15 @@
+entity:
+  id: catalog/datasets/frontierscience
+  type: dataset
+  name: FrontierScience
+  references:
+    - type: article
+      source:
+        url: https://openai.com/index/frontierscience/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

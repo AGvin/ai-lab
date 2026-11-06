@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/charxiv
+  type: dataset
+  name: "CharXiv"
+  aliases:
+    - "CharXiv Chart Understanding Benchmark"
+    - "CharXiv v1.0"
+  identity_note: >-
+    Princeton chart understanding multimodal benchmark; chart images and questions, the hosted dataset, evaluator, and historical model leaderboard are distinct resources.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/princeton-nlp/CharXiv
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/LICENSE
+      purposes: [research]
+      authority: official

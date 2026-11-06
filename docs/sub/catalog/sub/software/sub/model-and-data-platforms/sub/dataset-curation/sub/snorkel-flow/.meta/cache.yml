@@ -1,0 +1,92 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:7a43e6e2ab0e794a1a381a07f9d9a284a808e8ac
+    parent:
+      entity.yml: gitblob:e19a99e0dd434a1f5367191cd3671f10c26d7a46
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/model-and-data-platforms/dataset-curation/snorkel-flow
+        type: software
+        name: Snorkel Flow
+        references:
+        - type: documentation
+          source:
+            url: https://docs.snorkel.ai/docs/25.4/user-guide/intro/welcome-to-snorkel-flow
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.snorkel.ai/docs/25.1/user-guide/intro/snorkel-flow-architecture-overview
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://snorkel.ai/enterprise-ai/
+          purposes:
+          - research
+          authority: official
+          note: The current enterprise page confirms Kubernetes-native deployment
+            on customer infrastructure; the versioned documentation remains a separate
+            reference.
+        relations:
+        - type: produced-by
+          target: catalog/producers/s/snorkel-ai
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

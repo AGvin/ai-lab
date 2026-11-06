@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/microsoft/phi/phi-4/models/phi-4-reasoning-plus
+  type: model
+  name: Phi-4 Reasoning Plus
+  identity_note: >-
+    Phi-4 Reasoning Plus is Microsoft's independently published 14B-class reasoning-focused Phi-4 model. The current first-party repository identifies Phi-4 as its base model, English language scope, and MIT license; it remains distinct from Phi-4 Reasoning.
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/microsoft/Phi-4-reasoning-plus
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/microsoft/phi/phi-4
+    - type: derived-from
+      target: catalog/models/microsoft/phi/phi-4/models/phi-4

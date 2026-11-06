@@ -1,0 +1,33 @@
+entity:
+  id: catalog/services/model-apis/nebius-ai-studio
+  type: service
+  name: Nebius Token Factory
+  aliases:
+    - Nebius AI Studio
+    - Token Factory Inference API
+  identity_note: >-
+    Hosted Nebius Token Factory model inference API, formerly named Nebius
+    AI Studio until November 2025. The durable catalog slug preserves the
+    frozen identity, not the current brand; one service supports an
+    OpenAI-compatible API, hosted model access, dedicated inference and
+    associated post-training capabilities. This is not an independent
+    trained model or a second current AI Studio service.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.tokenfactory.nebius.com/quickstart
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.tokenfactory.nebius.com/api-reference/introduction
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://nebius.com/newsroom/nebius-launches-nebius-token-factory-to-deliver-production-ai-inference-at-scale
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nebius

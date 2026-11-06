@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/a/agentic-community
+  type: organization
+  name: Agentic Community
+  references:
+    - type: repository
+      source:
+        url: https://github.com/agentic-community/mcp-gateway-registry
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://agentic-community.github.io/mcp-gateway-registry/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/gateways/api-management-gateways/mcp-gateway-registry

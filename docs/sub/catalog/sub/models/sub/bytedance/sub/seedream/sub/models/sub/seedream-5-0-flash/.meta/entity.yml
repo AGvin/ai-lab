@@ -1,0 +1,44 @@
+entity:
+  id: catalog/models/bytedance/seedream/models/seedream-5-0-flash
+  name: Seedream 5.0 Flash
+  type: model
+  relations:
+  - type: member-of
+    target: catalog/models/bytedance/seedream
+  identity_note: Seedream 5.0 Flash is ByteDance Seed's separately announced September 2026 hosted image-generation and
+    editing model. The BytePlus Dola and Volcengine Doubao service IDs represent this one named release; its exact
+    training lineage, architecture and availability of downloadable weights are not independently established.
+  references:
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/modelark/model-release-announcement
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.volcengine.com/docs/ark/model-release-announcement?lang=zh
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/modelark/seedream-5-0-pro
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/modelark/image-generation-api
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/modelark/model-list
+    purposes:
+    - research
+    authority: official

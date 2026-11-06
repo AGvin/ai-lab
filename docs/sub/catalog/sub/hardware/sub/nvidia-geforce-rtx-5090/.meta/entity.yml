@@ -1,0 +1,17 @@
+entity:
+  id: catalog/hardware/nvidia-geforce-rtx-5090
+  type: hardware
+  name: NVIDIA GeForce RTX 5090
+  identity_note: >-
+    The manufacturer identifies the desktop Blackwell RTX 5090 with 32 GB GDDR7. Keep laptop variants, RTX PRO models and complete multi-GPU systems separate. GPU memory must also hold runtime allocations and cache; gaming/AI TOPS marketing does not measure a particular LLM. Verify the chosen board's power, cooling and runtime support.
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

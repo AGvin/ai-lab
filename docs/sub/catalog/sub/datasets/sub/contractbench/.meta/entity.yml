@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/contractbench
+  type: dataset
+  name: "ContractBench"
+  aliases:
+    - "Observation Contract Benchmark"
+  identity_note: >-
+    Thirty-three controlled agent workflow task templates measuring temporal validity and byte-exact integrity of API-issued observation artifacts; distinct from production API endpoints.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/SecurityLab-UCD/ContractBench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/SecurityLab-UCD/ContractBench/blob/44858abacaa9291fd8ae7f3c5c23b5911270d836/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/SecurityLab-UCD/ContractBench/blob/44858abacaa9291fd8ae7f3c5c23b5911270d836/LICENSE
+      purposes: [research]
+      authority: official

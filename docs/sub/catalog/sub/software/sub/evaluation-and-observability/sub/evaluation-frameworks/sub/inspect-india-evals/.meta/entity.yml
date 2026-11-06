@@ -1,0 +1,25 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/inspect-india-evals
+  type: software
+  name: Inspect India Evals
+  aliases:
+    - India Inspect Evals
+    - India Fairness Index Evaluations
+  identity_note: >-
+    Standalone installable Inspect AI task suite for India-focused multilingual, bias, safeguards, DPI and cultural knowledge evaluations. Its task/data artifacts remain subject to separate source and dataset rights; published pilot scores predate a reported independent-judge bug fix.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/MetaFazer/inspect-india-evals
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/MetaFazer/inspect-india-evals/blob/2f376c316d92d431414b7e490537105a6b018ac1/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/MetaFazer/inspect-india-evals/blob/2f376c316d92d431414b7e490537105a6b018ac1/pyproject.toml
+      purposes: [research]
+      authority: official

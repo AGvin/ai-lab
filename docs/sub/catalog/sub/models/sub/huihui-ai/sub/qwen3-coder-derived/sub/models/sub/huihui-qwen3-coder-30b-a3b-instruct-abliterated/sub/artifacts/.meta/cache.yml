@@ -2,10 +2,10 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a5d0dd25b4d94fa3848b83cc55ad2629691432d2
+      entity.yml: gitblob:0e4c317b1ba8aa51bba1eb3b7a8777775d367341
       node.yml: gitblob:63fe96c475196641e6cbc100c268357b043dfc09
     parent:
-      entity.yml: gitblob:702e5829b81f2ea83ad595b18a135512a3c695d5
+      entity.yml: gitblob:f6ba77c618313d4638a00502b43b1f3bec133cef
   state:
     node:
       effective:
@@ -46,6 +46,26 @@ cache:
         id: catalog/models/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated/artifacts
         type: catalog-index
         name: Huihui Qwen3 Coder 30B A3B Artifacts
+        identity_note: This catalog index organizes the represented downloadable artifacts
+          of the huihui.ai Qwen3-Coder derivative. The reviewed child is mradermacher's
+          static GGUF collection. Quantization type, published file size and runtime
+          compatibility describe artifacts and do not create another trained-model
+          identity.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
+          purposes:
+          - identification
+          - research
+          authority: official
     aliases:
       effective:
         schema: default

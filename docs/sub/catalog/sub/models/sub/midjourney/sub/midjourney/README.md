@@ -1,0 +1,18 @@
+# Midjourney
+
+## Relations
+
+- Produced by: [Midjourney](../../../../../producers/sub/m/sub/midjourney/)
+- Has member: [Midjourney V8.2](sub/models/sub/v8-2/)
+
+Midjourney is the image-generation model family made available through Midjourney's hosted creative product.
+
+## Scope and boundaries
+
+Individual releases have distinct behavior and feature compatibility. The current default is mutable; a new default does not erase older model identities. Niji is a specialized series developed with Spellbrush and retains its collaborative identity.
+
+Web and Discord interfaces, subscription/GPU accounting, editor routing, personalization, styles and draft controls are product or release-specific features. They are not permanent shared architecture of every family member. The represented member is the catalog's selected model coverage.
+
+## Official resources
+
+- [Midjourney versions](https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version)

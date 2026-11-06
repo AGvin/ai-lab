@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:8f220421f650ce3964715cd0634470f72c4e66f1
+      entity.yml: gitblob:27c2943f7b9ab0f45caf9e9f82e543e70da634d6
     parent:
       entity.yml: gitblob:1fc2f5f6d34b2a21d91355933a25d30256787f4f
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
@@ -57,6 +57,24 @@ cache:
         - type: release-notes
           source:
             url: https://api-docs.deepseek.com/news/news260424/
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+          purposes:
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://api-docs.deepseek.com/updates/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://api-docs.deepseek.com/quick_start/pricing/
           purposes:
           - research
           authority: official

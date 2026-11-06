@@ -1,0 +1,45 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-krea-dev
+  type: model
+  name: FLUX.1 Krea [dev]
+  aliases:
+  - FLUX.1-Krea-dev
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://www.krea.ai/blog/flux-krea-open-source-release
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://bfl.ai/blog/flux-1-krea-dev
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-1
+  - type: produced-by
+    target: catalog/producers/b/black-forest-labs
+  - type: produced-by
+    target: catalog/producers/k/krea
+  identity_note: >-
+    Separately released 12B guidance-distilled rectified-flow text-to-image model
+    jointly developed by Black Forest Labs and Krea, released July 31, 2025.
+    Krea describes post-training BFL-provided flux-dev-raw through SFT including
+    synthetic Krea-1 samples and preference optimization. Hub metadata classifies
+    it as a FLUX.1-dev fine-tune, but the technical account does not establish
+    equivalence to the released FLUX.1-dev starting weights or weight inheritance
+    from Krea-1. Ecosystem compatibility is not a lineage assertion.
+    Gated weights use the FLUX dev Non-Commercial License; API terms and output
+    permissions are separate. Publisher aesthetic claims are not local benchmarks.

@@ -1,0 +1,14 @@
+entity:
+  id: catalog/specifications/standards/ieee-3549-2026-llm-inference-optimization-systems
+  name: IEEE 3549-2026 — Inference Optimization Systems of Large Language Models
+  aliases:
+    - IEEE 3549-2026
+  references:
+    - type: specification
+      source:
+        url: https://standards.ieee.org/ieee/3549/11869/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: IEEE SA marks IEEE 3549-2026 as an Active Standard approved by the Standards Board on 2026-06-04.

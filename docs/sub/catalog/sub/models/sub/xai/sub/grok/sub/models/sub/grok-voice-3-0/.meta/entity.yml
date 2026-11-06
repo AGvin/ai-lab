@@ -1,0 +1,35 @@
+entity:
+  id: catalog/models/xai/grok/models/grok-voice-3-0
+  type: model
+  name: Grok Voice 3.0
+  aliases:
+    - grok-voice-3.0
+  references:
+    - type: documentation
+      source:
+        url: https://docs.x.ai/developers/models/grok-voice-3.0
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://x.ai/news/grok-voice-3
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech
+      purposes:
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://docs.x.ai/developers/release-notes
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/xai/grok

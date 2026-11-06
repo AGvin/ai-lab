@@ -1,0 +1,31 @@
+entity:
+  id: catalog/hardware/intel-gaudi-3
+  type: hardware-product
+  name: Intel Gaudi 3 AI Accelerator
+  identity_note: >-
+    Intel Gaudi 3 is an accelerator product family with configuration-specific packaging. Official HL-338 PCIe 5.0 x16 card documentation specifies 128 GB HBM2e with 3.7 TB/s peak bandwidth, 96 MB SRAM and 600 W air-cooled card TDP; a four-card top-board topology is not one accelerator's memory. Other Gaudi 3 OAM/system forms have different thermal and topology envelopes. Intel model/runtime support, actual throughput, ownership and legal clearance remain unverified.
+  aliases:
+    - Intel Gaudi 3
+    - Gaudi 3
+  references:
+    - type: documentation
+      source:
+        url: https://cdrdv2-public.intel.com/817488/Gaudi%203%20PCIe%20Product%20Brief_RB_1_V6.pdf
+      purposes: [identification, research]
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.intel.com/content/www/us/en/products/details/processors/ai-accelerators/gaudi.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.intel.com/content/www/us/en/content-details/817488/intel-gaudi-3-ai-accelerator-hl-338-pcie-add-in-card-product-brief.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/intel

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/mlcommons-ailuminate-safety-family
+  type: dataset
+  name: "MLCommons AILuminate"
+  aliases:
+    - "AILuminate Safety Benchmark Prompt Family"
+  identity_note: >-
+    Versioned MLCommons AILuminate evaluation family: the pinned v1.0 public DEMO prompts are distinct from practice, private prompts, risk taxonomy and evaluator software.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/mlcommons/ailuminate
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/mlcommons/ailuminate/blob/769cc2be9d20c8d4fb26ce53b68865ed41dfb8e2/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/mlcommons/ailuminate/blob/769cc2be9d20c8d4fb26ce53b68865ed41dfb8e2/LICENSE.md
+      purposes: [research]
+      authority: official

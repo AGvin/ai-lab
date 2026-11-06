@@ -14,3 +14,10 @@
 ## References
 
 - Official site: https://www.skill-marketplace.com/
+
+## Scoped original-source qualification — 2026-11-06
+
+- SkillHub presents an open-source aggregation and authoring marketplace drawing from GitHub repositories; its homepage describes full-text discovery, Markdown/YAML authoring, ranking and source aggregation. Counts, features and availability are mutable.
+- Aggregation, stars, format checks and quality badges do not establish upstream license provenance, trust or security of installed instructions.
+- Verified first-party source 1: https://www.skill-marketplace.com/
+- This review accepts only the current registry identity and source boundaries. It does not assert a full freshness audit, vendor-independent security, tested skill execution, complete CI/cache/schema/render, copyright clearance or verified current listing totals.

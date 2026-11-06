@@ -1,0 +1,36 @@
+entity:
+  id: catalog/services/model-apis/elevenlabs-api
+  type: service
+  name: ElevenLabs API
+  aliases:
+    - ElevenAPI
+  identity_note: >-
+    ElevenLabs' provider-operated developer API for audio and voice
+    model capabilities, including speech synthesis, transcription and
+    supported streaming, voice, agent and audio transformation endpoints.
+    This service is distinct from the ElevenLabs organization, the
+    individual underlying trained models, client SDKs and standalone
+    creative/agent user interfaces.
+  references:
+    - type: documentation
+      source:
+        url: https://elevenlabs.io/docs/api-reference/introduction
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://elevenlabs.io/docs/api-reference/authentication
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://elevenlabs.io/docs/api-reference/streaming
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/e/elevenlabs

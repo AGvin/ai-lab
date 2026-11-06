@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:9cfa736c23aae148b688c11ed0416e81bad34603
+      entity.yml: gitblob:cf35b9e626eabd2af97e74b84a5fa04e018d73b5
     parent:
-      entity.yml: gitblob:d2832a7979fe4d097b9404cc46ffd2fcc3b3eba6
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
   state:
     node:
       effective:
@@ -45,6 +45,17 @@ cache:
         id: catalog/producers/s/swe-agent
         type: organization
         name: SWE-agent
+        identity_note: SWE-agent is the project organization and research-team identity
+          publishing mini-SWE-agent through the SWE-agent upstream. The current project
+          credits the Princeton and Stanford team behind SWE-bench and SWE-agent;
+          this is research provenance rather than a claim of a separately incorporated
+          SWE-agent company. The mini-SWE-agent MIT license credits its individual
+          authors, while the maintained project organization supplies the upstream
+          distribution. Model providers, benchmark datasets and execution environments
+          remain separate dependencies. The agent can execute shell actions, so select
+          local or isolated execution deliberately, limit credentials and review provider
+          data handling. An academic affiliation or a benchmark result is not a deployment
+          support or security guarantee.
         references:
         - type: official-site
           source:
@@ -56,6 +67,20 @@ cache:
         - type: repository
           source:
             url: https://github.com/SWE-agent
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/SWE-agent/mini-swe-agent
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/SWE-agent/mini-swe-agent/blob/main/LICENSE.md
           purposes:
           - identification
           - research

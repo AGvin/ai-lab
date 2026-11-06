@@ -1,0 +1,21 @@
+entity:
+  id: catalog/services/agent-identity-and-access/descope-agentic-identity-hub
+  type: service
+  name: Descope Agentic Identity Hub
+  references:
+    - type: documentation
+      source:
+        url: https://docs.descope.com/agentic-identity-hub
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.descope.com/agentic-identity-hub/use-cases
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/descope

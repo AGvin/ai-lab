@@ -1,0 +1,43 @@
+entity:
+  id: catalog/models/google/siglip-2/models/siglip2-so400m-patch14-384
+  type: model
+  name: SigLIP 2 So400m patch14 384
+  identity_note: Full image/text contrastive checkpoint trained at patch14, 384x384 resolution. So400m denotes the vision-tower scale, not the full approximately 1.136B stored image/text parameters. Downstream VLM edges concern its vision component only.
+  references:
+  - type: documentation
+    source:
+      url: https://huggingface.co/google/siglip2-so400m-patch14-384
+    purposes: [identification, research]
+    authority: official
+  - type: documentation
+    source:
+      url: https://arxiv.org/html/2502.14786v1
+    purposes: [identification, research]
+    authority: official
+  - type: documentation
+    source:
+      url: https://github.com/google-research/big_vision/blob/main/big_vision/configs/proj/image_text/README_siglip2.md
+    purposes: [identification, research]
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/google/siglip2-so400m-patch14-384/blob/main/config.json
+    purposes: [identification, research]
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/CohereLabs/aya-vision-8b
+    purposes: [identification, research]
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/CohereLabs/aya-vision-32b
+    purposes: [identification, research]
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/google/siglip-2
+  - type: has-derivative
+    target: catalog/models/cohere-labs/aya/aya-vision/models/aya-vision-8b
+  - type: has-derivative
+    target: catalog/models/cohere-labs/aya/aya-vision/models/aya-vision-32b

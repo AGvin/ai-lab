@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/bbeh
+  type: dataset
+  name: BIG-Bench Extra Hard (BBEH)
+  aliases:
+    - BBEH
+    - BIG-Bench Extra Hard
+  identity_note: >-
+    Google DeepMind's reasoning evaluation benchmark replacing BIG-Bench Hard tasks with more challenging versions targeting similar skills. The full and mini releases belong to one BBEH dataset family, distinct from BBH, its code runner and reported model leaderboard scores.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/google-deepmind/bbeh
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/google-deepmind/bbeh/blob/80d12ca916b7158f22293fcf3144f4d3d854d4be/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/google-deepmind/bbeh/blob/80d12ca916b7158f22293fcf3144f4d3d854d4be/LICENSE
+      purposes: [research]
+      authority: official

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/wildclawbench
+  type: dataset
+  name: "WildClawBench"
+  aliases:
+    - "Live-Agent OpenClaw Workflow Benchmark"
+  identity_note: >-
+    Sixty-task in-the-wild agent benchmark evaluated across multiple runtime harnesses, with original tasks, Harbor conversion, agent trajectories and supporting Docker images distinguished.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/internlm/WildClawBench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/internlm/WildClawBench/blob/1adb2c8bea3966916bff5abaf160d6bc83e2b7ba/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/internlm/WildClawBench/blob/1adb2c8bea3966916bff5abaf160d6bc83e2b7ba/LICENSE
+      purposes: [research]
+      authority: official

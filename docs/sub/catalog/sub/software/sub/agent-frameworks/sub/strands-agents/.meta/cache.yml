@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:90e6e22965b3b7f0add932f8349c1b89bdacf94a
+      entity.yml: gitblob:952bd59604fd40d069eae7ac9ad924f2c570050c
     parent:
       entity.yml: gitblob:d76916cc6208401fd85eacd3a15da3a51743c755
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -52,6 +52,21 @@ cache:
             url: https://strandsagents.com/
           purposes:
           - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/strands-agents/harness-sdk
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current monorepo for Python/TypeScript SDKs, harness packages, CLI,
+            MCP and documentation.
+        - type: release-notes
+          source:
+            url: https://strandsagents.com/changelog/
+          purposes:
           - research
           authority: official
         relations:

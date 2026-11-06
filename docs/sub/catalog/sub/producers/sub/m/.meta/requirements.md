@@ -5,6 +5,7 @@
 - Provide the alphabetical producer index for canonical producer names beginning with M.
 - Render the standard child-navigation block from the validated direct-child projection so every materialized canonical producer under this index appears exactly once.
 - Keep the page concise and navigational.
+- Use current canonical producer names as labels, preserving canonical paths and alphabetical label/path order; aliases do not create duplicate entries.
 
 ## Validation
 

@@ -1,0 +1,25 @@
+entity:
+  id: catalog/services/model-apis/perplexity-embeddings-api
+  type: service
+  name: Perplexity Embeddings API
+  references:
+  - type: documentation
+    source:
+      url: https://docs.perplexity.ai/docs/embeddings/quickstart
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.perplexity.ai/docs/resources/privacy-security
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/p/perplexity-ai
+  identity_note: Perplexity Embeddings API provides hosted access to standard text embeddings and document-context
+    embeddings. The service owns authentication, quotas and request/response behavior; the trained models retain
+    their own catalog identities.

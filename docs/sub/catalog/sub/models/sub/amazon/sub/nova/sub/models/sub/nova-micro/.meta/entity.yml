@@ -1,0 +1,41 @@
+entity:
+  id: catalog/models/amazon/nova/models/nova-micro
+  type: model
+  name: Amazon Nova Micro
+  identity_note: >-
+    Distinct first-generation Nova trained identity with Bedrock route amazon.nova-micro-v1:0. The
+    current card marks it Active and lists 128K context with a 10K output maximum. It accepts text and
+    produces text. Micro does not inherit multimodal or document-file input support from Lite and Pro.
+    Converse and Invoke support and regional availability belong to the hosted access contract.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-micro.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/ai/responsible-ai/nova-micro-lite-pro/overview.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/amazon/nova

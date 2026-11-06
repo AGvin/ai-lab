@@ -1,0 +1,74 @@
+entity:
+  id: catalog/producers/a/ai2
+  type: organization
+  name: Ai2
+  aliases:
+    - Allen Institute for AI
+    - AI2
+  identity_note: >-
+    Ai2 is the current brand of the Seattle-based nonprofit Allen Institute for AI,
+    founded in 2014 by Paul Allen. It produces openly published research resources,
+    including the original ARC and OpenBookQA science QA datasets and the
+    2019 DROP paragraph-reasoning, 2020 SciFact scientific fact-checking
+    and 2021 Qasper research-paper question-answering datasets.
+    The organization's name and this dataset's acronym must not be confused with
+    the independent ARC Prize Foundation or ARC-AGI benchmark. Product-level data
+    licenses, upstream contributors, and partnerships are not universal ownership grants.
+    Ai2 also publishes the Olmo 3 model family; original model and training-material
+    licenses remain distinct from dataset rights and website/service terms.
+  references:
+    - type: official-site
+      source:
+        url: https://allenai.org/
+      purposes: [identification, research]
+      authority: official
+      note: "Current Ai2 organization and research portfolio."
+    - type: official-site
+      source:
+        url: https://allenai.org/about
+      purposes: [identification, research]
+      authority: official
+      note: "First-party nonprofit identity, Seattle location and Paul Allen 2014 founding context."
+    - type: official-site
+      source:
+        url: https://allenai.org/open-data
+      purposes: [identification, research]
+      authority: official
+      note: "Original Ai2 Reasoning Challenge data publication."
+    - type: repository
+      source:
+        url: https://github.com/allenai/aristo-leaderboard
+      purposes: [research]
+      authority: official
+      note: "First-party tools/repository references to the ARC benchmark; software is distinct from data."
+    - type: repository
+      source:
+        url: https://github.com/allenai/allennlp-website/blob/master/drop.html
+      purposes: [research]
+      authority: official
+      note: "Archived original first-party DROP release page, original producer and CC BY-SA 4.0 data-license statement."
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/allenai/qasper
+      purposes: [research]
+      authority: official
+      note: "Original Ai2 Qasper data release and CC BY 4.0 publisher metadata."
+    - type: repository
+      source:
+        url: https://github.com/allenai/scifact/blob/master/LICENSE.md
+      purposes: [research]
+      authority: official
+      note: "Original Ai2 SciFact original 2020 data, component-specific licensing and source research provenance."
+  relations:
+    - type: produces
+      target: catalog/datasets/ai2-reasoning-challenge
+    - type: produces
+      target: catalog/datasets/openbookqa
+    - type: produces
+      target: catalog/datasets/drop
+    - type: produces
+      target: catalog/datasets/qasper
+    - type: produces
+      target: catalog/datasets/scifact
+    - type: produces
+      target: catalog/models/ai2/olmo-3

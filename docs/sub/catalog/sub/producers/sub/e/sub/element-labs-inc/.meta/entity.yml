@@ -2,6 +2,7 @@ entity:
   id: catalog/producers/e/element-labs-inc
   type: organization
   name: Element Labs, Inc.
+  identity_note: "Company behind LM Studio; distinct from Elementl, Inc., which does business as Dagster Labs."
   references:
     - type: official-site
       source:
@@ -18,6 +19,14 @@ entity:
         - research
       authority: official
       note: Official LM Studio Desktop App Terms identifying Element Labs, Inc.
+    - type: official-site
+      source:
+        url: https://elementlabs.ai/
+      purposes:
+      - identification
+      - research
+      authority: official
+      note: Company website identifies LM Studio as its product.
   relations:
     - type: produces
       target: catalog/software/inference-runtimes/integrated-platforms/lm-studio

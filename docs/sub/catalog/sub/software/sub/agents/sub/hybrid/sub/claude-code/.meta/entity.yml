@@ -17,6 +17,24 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://code.claude.com/docs/en/desktop
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://code.claude.com/docs/en/claude-code-on-the-web
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://code.claude.com/docs/en/routines
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/a/anthropic

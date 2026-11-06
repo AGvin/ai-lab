@@ -1,0 +1,14 @@
+entity:
+  id: catalog/datasets/macbench
+  type: dataset
+  name: "MaCBench"
+  aliases:
+    - "Materials and Chemistry Benchmark"
+  identity_note: >-
+    Materials-science and chemistry benchmark for multimodal vision-language reasoning.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/jablonkagroup/MaCBench
+      purposes: [identification, research]
+      authority: official

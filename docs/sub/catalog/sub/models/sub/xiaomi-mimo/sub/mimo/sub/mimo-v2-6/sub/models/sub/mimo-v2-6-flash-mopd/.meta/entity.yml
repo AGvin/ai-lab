@@ -1,0 +1,32 @@
+entity:
+  id: catalog/models/xiaomi-mimo/mimo/mimo-v2-6/models/mimo-v2-6-flash-mopd
+  type: model
+  name: MiMo-V2.6-Flash-MOPD
+  identity_note: >-
+    MiMo-V2.6-Flash-MOPD is a distinct September 2026 Xiaomi MiMo MOPD2 post-trained model.
+    Publisher-disclosed scale: about 311B total parameters. Scope: native multimodal text, image, video, audio.
+    Distinct learned Flash weights after multi-teacher on-policy distillation targeting repetitive tool use; not a serving-only setting. Publisher results do not guarantee complete loop prevention. The released weights are MIT-labeled; source claims do not
+    constitute independent hardware, benchmark or security evaluation.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://mimo.mi.com/docs/en-US/news/latest/v2-6
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/xiaomi-mimo/mimo/mimo-v2-6

@@ -1,0 +1,103 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a4f113606ca5a75398a2180a7e29fd6b45e8efd8
+    parent:
+      entity.yml: gitblob:8fac2314e88755b43bc622e0d92b4c5ab01c3bf8
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/agents/hybrid/kiro-cli
+        type: software
+        name: Kiro CLI
+        references:
+        - type: documentation
+          source:
+            url: https://kiro.dev/docs/cli/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://kiro.dev/docs/how-kiro-works/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://kiro.dev/docs/cli/chat/
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://kiro.dev/changelog/cli/
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://kiro.dev/docs/billing/managing-taxes/
+          purposes:
+          - research
+          authority: official
+          note: Official Kiro documentation identifying Amazon Web Services, Inc.
+            as the Kiro service provider.
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/amazon-web-services
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

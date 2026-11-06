@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/mgsm
+  type: dataset
+  name: "MGSM"
+  aliases:
+    - "Multilingual Grade School Math"
+  identity_note: >-
+    Multilingual reasoning benchmark derived from a common set of 250 GSM8K problems, human-translated into ten languages with English included in the release's TSV files.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/google-research/url-nlp
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/google-research/url-nlp/blob/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/google-research/url-nlp/blob/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/LICENSE
+      purposes: [research]
+      authority: official

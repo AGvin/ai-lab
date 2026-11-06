@@ -1,0 +1,14 @@
+entity:
+  id: catalog/specifications/standards/ieee-3458-2026-domain-specific-llm-management-platforms
+  name: IEEE 3458-2026 — Domain-Specific Large Language Model Management Platforms
+  aliases:
+    - IEEE 3458-2026
+  references:
+    - type: specification
+      source:
+        url: https://standards.ieee.org/ieee/3458/12136/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: IEEE SA marks IEEE 3458-2026 as an Active Standard, published 2026-08-21.

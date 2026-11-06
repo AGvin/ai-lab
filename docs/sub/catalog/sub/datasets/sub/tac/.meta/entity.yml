@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/tac
+  type: dataset
+  name: "TAC"
+  aliases:
+    - "Travel Agent Compassion"
+  identity_note: >-
+    Travel-booking agent evaluation of implicit animal-welfare awareness in task scenarios, distinct from ANIMA and MORU ethical-response datasets.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/CompassioninMachineLearning/tac
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://arxiv.org/abs/2606.18142
+      purposes: [research]
+      authority: official

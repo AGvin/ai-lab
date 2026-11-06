@@ -8,6 +8,8 @@
 - Include official StackBlitz website, privacy-policy, and Bolt documentation references sufficient to establish organization and product provenance.
 - Keep broader corporate, staffing, pricing, and mutable commercial details outside this concise producer profile unless they become relevant to represented catalog entities.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
 ## Validation
 
 - The page does not collapse StackBlitz, Inc. and Bolt into one entity.

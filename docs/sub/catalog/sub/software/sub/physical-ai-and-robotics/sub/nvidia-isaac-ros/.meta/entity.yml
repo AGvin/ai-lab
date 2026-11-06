@@ -1,0 +1,35 @@
+entity:
+  id: catalog/software/physical-ai-and-robotics/nvidia-isaac-ros
+  type: software
+  name: NVIDIA Isaac ROS
+  references:
+    - type: documentation
+      source:
+        url: https://nvidia-isaac-ros.github.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA-ISAAC-ROS
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://nvidia-isaac-ros.github.io/concepts/rosidl_buffer/index.html
+      purposes:
+        - research
+      authority: official
+      note: Explains native ROS 2 rosidl::Buffer storage and backend behavior; CUDA support is a backend capability rather than a claim that all buffers are GPU-resident.
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

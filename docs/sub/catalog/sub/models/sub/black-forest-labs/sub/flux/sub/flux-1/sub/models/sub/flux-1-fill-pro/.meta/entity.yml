@@ -1,0 +1,37 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-fill-pro
+  type: model
+  name: FLUX.1 Fill [pro]
+  references:
+  - type: documentation
+    source:
+      url: https://bfl.ai/blog/24-11-21-tools
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://help.bfl.ai/articles/7655484417-what-flux-models-are-available
+    purposes:
+    - research
+    authority: official
+  - type: api
+    source:
+      url: https://api.bfl.ai/docs
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-1
+  identity_note: >-
+    FLUX.1 Fill [pro] is a separately offered BFL-hosted image inpainting and
+    outpainting model introduced with FLUX.1 Tools in November 2024.
+    It accepts text, an input image and a binary mask through the
+    /v1/flux-pro-1.0-fill hosted route. It is not the separately released
+    gated FLUX.1 Fill [dev] weight checkpoint or a general FLUX1.1
+    text-to-image serving mode. The API endpoint does not establish a
+    public model checkpoint, model-size, train-parent relationship or rights
+    to run weights locally. Deprecated Canny/Depth endpoints are distinct;
+    the BFL deprecation notice explicitly excludes Fill.

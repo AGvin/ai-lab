@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:46115e2048898a4646d1325de39955bc06bbb71e
+      entity.yml: gitblob:dea9e1e98a0b08aa891d028285dbd83b64eb1aa4
     parent:
       entity.yml: gitblob:8fac2314e88755b43bc622e0d92b4c5ab01c3bf8
   state:
@@ -62,6 +62,18 @@ cache:
         - type: documentation
           source:
             url: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/customize-the-agent-environment
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.github.com/en/copilot/how-tos/cloud-and-local-sandboxes
           purposes:
           - research
           authority: official

@@ -25,3 +25,36 @@ entity:
       purposes:
         - research
       authority: official
+    - type: article
+      source:
+        url: https://www.anthropic.com/news/model-context-protocol
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://aaif.io/projects/model-context-protocol
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://modelcontextprotocol.io/community/governance
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/anthropic
+    - type: maintained-by
+      target: catalog/producers/a/agentic-ai-foundation

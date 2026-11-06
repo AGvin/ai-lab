@@ -22,3 +22,5 @@ entity:
   relations:
     - type: produces
       target: catalog/models/davidau/qwen3-derived/models/qwen3-the-xiaolong-josiefied-omega-directive-22b
+    - type: produces
+      target: catalog/models/davidau/qwen3-derived/models/qwen3-the-josiefied-omega-directive-22b

@@ -1,0 +1,38 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-development/megatron-bridge
+  type: software
+  name: Megatron Bridge
+  aliases:
+    - NeMo Megatron Bridge
+  references:
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/nemo/megatron-bridge/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA-NeMo/Megatron-Bridge
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://pypi.org/project/megatron-bridge/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/nemo/megatron-bridge/latest/megatron-lm-to-megatron-bridge.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

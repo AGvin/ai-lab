@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:463eaeadbeebd5bdfc21fb90c01cc50ecf7eca4b
+      entity.yml: gitblob:bc3a2fe70f56bfba24fca2b874baca4df636a847
     parent:
-      entity.yml: gitblob:44a506806b562f80fbc683cab31d60b8c48c635d
+      entity.yml: gitblob:2a91c7cdb2d8547a023efd19f9cff4dad0e50136
       node.yml: gitblob:1615cbf85373f581479950b7a25c7fbc426d6341
   state:
     node:
@@ -46,6 +46,20 @@ cache:
         id: catalog/models/davidau/qwen3-derived
         type: catalog-index
         name: DavidAU Qwen3-Derived Models
+        identity_note: This catalog index organizes represented DavidAU releases with
+          documented Qwen3-derived ancestry. It is a navigation group whose current
+          concrete release is the Xiaolong/Josiefied Omega Directive merge. Follow
+          the release collection to the model record for exact immediate parents and
+          modification provenance. Common upstream ancestry does not make the index
+          an official model family or make the releases versions of one model.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF
+          purposes:
+          - identification
+          - research
+          authority: official
     aliases:
       effective:
         schema: default

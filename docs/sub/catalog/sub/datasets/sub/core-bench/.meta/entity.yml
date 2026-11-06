@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/core-bench
+  type: dataset
+  name: "CORE-Bench"
+  aliases:
+    - "Computational Reproducibility Benchmark"
+  identity_note: >-
+    Computational reproducibility benchmark of 270 tasks sourced from 90 research papers, with independent task questions, code capsules and execution harnesses.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/siegelz/core-bench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/siegelz/core-bench/blob/e32a2980e72fe6eb04ee04eb749458f570625663/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/siegelz/core-bench/blob/e32a2980e72fe6eb04ee04eb749458f570625663/LICENSE
+      purposes: [research]
+      authority: official

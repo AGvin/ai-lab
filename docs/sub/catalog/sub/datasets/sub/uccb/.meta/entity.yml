@@ -1,0 +1,14 @@
+entity:
+  id: catalog/datasets/uccb
+  type: dataset
+  name: "UCCB"
+  aliases:
+    - "Ugandan Cultural Context Benchmark"
+  identity_note: >-
+    Ugandan cultural and multilingual context evaluation with 1,039 curated question-answer pairs spanning 24 cultural domains.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/CraneAILabs/UCCB
+      purposes: [identification, research]
+      authority: official

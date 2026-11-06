@@ -1,11 +1,17 @@
 # Huihui Qwen3 Coder 30B A3B Artifacts
 
-Reviewed downloadable representations of the canonical huihui.ai Qwen3-Coder 30B-A3B Instruct Abliterated model.
+This catalog index organizes the represented downloadable artifacts of the huihui.ai Qwen3-Coder derivative. [Primary source](https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF)
 
-## Artifacts
+## Scope
 
-- [`mradermacher GGUF`](./sub/mradermacher-gguf/) — static GGUF quantizations published by mradermacher.
+The quantizer's card identifies the huihui derivative as the source of its static GGUF files and separately links a weighted/imatrix collection. This index leads to the represented static artifact record; it does not silently combine the two collections. [Publisher artifact description](https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF)
 
-## Boundary
+## Catalog navigation
 
-An artifact changes representation, quantization, packaging, or runtime compatibility without becoming a new trained model identity. Exact quant type, file size, split layout, runtime behavior, and measured memory/quality belong to the artifact and its evaluation context.
+- [mradermacher GGUF Artifacts](sub/mradermacher-gguf/README.md) — Static GGUF artifact collection
+- [Huihui Qwen3 Coder 30B A3B Instruct Abliterated](../../README.md) — Source model
+
+## Official resources
+
+- <https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF>
+- <https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated>

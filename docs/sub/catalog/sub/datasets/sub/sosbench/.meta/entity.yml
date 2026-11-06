@@ -1,0 +1,14 @@
+entity:
+  id: catalog/datasets/sosbench
+  type: dataset
+  name: "SOSBench"
+  aliases:
+    - "Safety Alignment on Scientific Knowledge Benchmark"
+  identity_note: >-
+    Controlled scientific safety-alignment evaluation with adversarial prompts and research-use conditions, distinct from ordinary scientific QA and harmful actionable instructions.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/SOSBench/SOSBench
+      purposes: [identification, research]
+      authority: official

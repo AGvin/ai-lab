@@ -1,0 +1,34 @@
+entity:
+  id: catalog/producers/t/tensorzero-inc
+  type: organization
+  name: TensorZero, Inc.
+  aliases:
+    - TensorZero
+  references:
+    - type: terms-of-service
+      source:
+        url: https://www.tensorzero.com/terms/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: First-party enterprise terms identify TensorZero, Inc.; the April 2, 2026 terms establish company identity, not a current support commitment.
+    - type: official-site
+      source:
+        url: https://www.tensorzero.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: The official site states that the software remains on GitHub but is no longer maintained, observed October 17, 2026.
+    - type: repository
+      source:
+        url: https://github.com/tensorzero/tensorzero
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: The first-party repository was archived when checked on October 17, 2026; this does not establish corporate dissolution.
+  relations:
+    - type: produces
+      target: catalog/software/gateways/model-gateways/tensorzero

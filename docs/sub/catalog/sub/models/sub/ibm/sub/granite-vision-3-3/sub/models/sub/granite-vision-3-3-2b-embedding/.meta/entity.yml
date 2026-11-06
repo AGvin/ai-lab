@@ -1,0 +1,19 @@
+entity:
+  id: catalog/models/ibm/granite-vision-3-3/models/granite-vision-3-3-2b-embedding
+  type: model
+  name: Granite Vision 3.3 2B Embedding
+  identity_note: IBM multimodal document-retrieval checkpoint derived from Granite Vision 3.3 2B,
+    producing ColBERT-style page multi-vectors.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-vision-3.3-2b-embedding
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/ibm/granite-vision-3-3
+  - type: derived-from
+    target: catalog/models/ibm/granite-vision-3-3/models/granite-vision-3-3-2b

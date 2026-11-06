@@ -5,7 +5,6 @@ Z-Image is the full-capacity undistilled foundation model in the Z-Image image-g
 ## Translations
 
 - English
-- [Українська](./l10n/uk_UA/)
 
 ## Model family
 

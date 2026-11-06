@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e35f3c17458a6536d4b707c3a0780fb69494dad9
+      entity.yml: gitblob:eb512b9a396a11cc576246878f66ecb726b25d6b
     parent:
       entity.yml: gitblob:665e9ca01b87f5f7025e0f60f3e694be0cc71db2
   state:
@@ -48,7 +48,7 @@ cache:
         references:
         - type: other
           source:
-            url: https://www.lyft.com/terms?country=us
+            url: https://www.lyft.com/terms
           purposes:
           - identification
           authority: official

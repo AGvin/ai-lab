@@ -3,13 +3,16 @@ entity:
   type: model
   name: FLUX.1-schnell
   references:
-    - type: registry
-      source:
-        url: https://huggingface.co/black-forest-labs/FLUX.1-schnell
-      purposes:
-        - identification
-        - research
-      authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/black-forest-labs/FLUX.1-schnell
+    purposes:
+    - identification
+    - research
+    authority: official
   relations:
-    - type: member-of
-      target: catalog/models/black-forest-labs/flux/flux-1
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-1
+  identity_note: FLUX.1-schnell is Black Forest Labs' 12-billion-parameter rectified-flow transformer for text-to-image
+    generation. Latent adversarial diffusion distillation enables the documented 1–4-step workflow; its weights
+    are released under Apache 2.0.

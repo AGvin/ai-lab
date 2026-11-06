@@ -1,0 +1,43 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-1-pro
+  type: model
+  name: FLUX1.1 [pro]
+  references:
+  - type: documentation
+    source:
+      url: https://bfl.ai/blog/24-10-02-flux
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://bfl.ai/models/flux-pro
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://bfl.ai/blog/24-11-06-ultra
+    purposes:
+    - research
+    authority: official
+  - type: api
+    source:
+      url: https://api.bfl.ai/docs
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-1
+  identity_note: >-
+    Black Forest Labs independently introduced FLUX1.1 [pro] on October 2, 2024 as
+    a proprietary API-hosted text-to-image model distinct from FLUX.1 [pro] and
+    the separate open-weight FLUX.1 [dev]/[schnell] checkpoints.
+    BFL's API identifies the model at /v1/flux-pro-1.1. Ultra and Raw are
+    additional generation modes of FLUX1.1 [pro], not established
+    separately trained model checkpoints; /v1/flux-pro-1.1-ultra is a mode endpoint.
+    No local weights, training-parent lineage, parameter count or independent
+    performance benchmarks have been established. API access, output and
+    commercial rights follow current hosted service contracts.

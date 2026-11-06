@@ -1,0 +1,42 @@
+entity:
+  id: catalog/datasets/the-agent-company
+  type: dataset
+  name: TheAgentCompany
+  aliases:
+    - The Agent Company
+    - The Agent Company Benchmark
+  identity_note: >-
+    Original publicly released 175-task simulated software-company workplace benchmark
+    dataset, scoped to the 1.0.0 task snapshot. Distinct from Docker/server fixtures,
+    the OpenHands baseline and evaluation harness, encrypted graders, external LLM
+    judge, leaderboard records and the research publishing project. No separately
+    incorporated TheAgentCompany producer has been verified.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/TheAgentCompany/TheAgentCompany
+      purposes: [identification, research]
+      authority: official
+      note: Original benchmark task, evaluation and environment source repository.
+    - type: repository
+      source:
+        url: https://github.com/TheAgentCompany/TheAgentCompany/releases/tag/1.0.0
+      purposes: [identification, research]
+      authority: official
+      note: Original released 1.0.0 benchmark task snapshot.
+    - type: official-site
+      source:
+        url: https://the-agent-company.com/
+      purposes: [research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/TheAgentCompany/TheAgentCompany/blob/main/LICENSE
+      purposes: [research]
+      authority: official
+      note: MIT project source grant; third-party server images and restored data require independent rights checks.
+    - type: paper
+      source:
+        url: https://proceedings.neurips.cc/paper_files/paper/2025/hash/0d744742f6fac4d1134c019b7cef3c8a-Abstract-Datasets_and_Benchmarks_Track.html
+      purposes: [research]
+      authority: official

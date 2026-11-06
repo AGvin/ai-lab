@@ -1,0 +1,33 @@
+entity:
+  id: catalog/software/development-tools/testing/playwright-mcp
+  type: software
+  name: Playwright MCP
+  references:
+    - type: repository
+      source:
+        url: https://github.com/microsoft/playwright-mcp
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/microsoft/playwright-mcp/blob/ec572ee8354015293bed67145db21eed386e876d/README.md
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/microsoft/playwright-mcp/blob/ec572ee8354015293bed67145db21eed386e876d/package.json
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/microsoft/playwright-mcp/blob/ec572ee8354015293bed67145db21eed386e876d/LICENSE
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

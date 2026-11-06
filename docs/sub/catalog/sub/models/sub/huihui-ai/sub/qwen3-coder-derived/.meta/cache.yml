@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:78db8d0fca340681f6feea7565f2e954f2d95d8c
+      entity.yml: gitblob:518684df47310d54db06a4e4f34428c7e2a20b26
     parent:
-      entity.yml: gitblob:87f231844f8c2057eac025e185903f2f21d26f90
+      entity.yml: gitblob:7aa3dd701df457c3e663dc17f37d644b7ed5ce78
       node.yml: gitblob:1615cbf85373f581479950b7a25c7fbc426d6341
   state:
     node:
@@ -46,6 +46,18 @@ cache:
         id: catalog/models/huihui-ai/qwen3-coder-derived
         type: catalog-index
         name: huihui.ai Qwen3-Coder-Derived Models
+        identity_note: This catalog index organizes the represented huihui.ai model
+          with documented Qwen3-Coder ancestry. The concrete modified weights have
+          an exact upstream parent and their own publisher provenance. This navigation
+          group is not an official trained-model family, series or version.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
+          purposes:
+          - identification
+          - research
+          authority: official
     aliases:
       effective:
         schema: default

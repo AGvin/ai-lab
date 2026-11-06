@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:edf2ac7966bcdc087a4ff823f142bed4591da736
+      entity.yml: gitblob:43810d5e88acc415d7fac23bd40c478bd60a21bf
     parent:
-      entity.yml: gitblob:fd9ce6cc90ff890dce741e7d034b35c883401cab
+      entity.yml: gitblob:d1efcbb7595434212ad167100e4663bdc2527370
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
   state:
     node:
@@ -60,6 +60,39 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/models/gpt-5.6-sol
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/models/gpt-5.6-terra
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/models/gpt-5.6-luna
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://deploymentsafety.openai.com/gpt-5-6-august-update
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/guides/latest-model
+          purposes:
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/openai/gpt
@@ -69,6 +102,8 @@ cache:
           target: catalog/models/openai/gpt/gpt-5-6/models/sol
         - type: has-member
           target: catalog/models/openai/gpt/gpt-5-6/models/terra
+        identity_note: Series containing Sol, Terra, and Luna. The gpt-5.6 API routing
+          alias is owned by Sol, not a fourth model.
     aliases:
       effective:
         schema: default

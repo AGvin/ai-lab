@@ -1,0 +1,40 @@
+entity:
+  id: catalog/models/cohere/embed/models/embed-multilingual-light-v3-0
+  type: model
+  name: Embed Multilingual Light v3
+  references:
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/cohere-embed
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/models
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/reference/embed
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/embeddings
+    purposes:
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://docs.cohere.com/changelog/2026-04-04-embed-v2-aya-8b-retirement
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/cohere/embed

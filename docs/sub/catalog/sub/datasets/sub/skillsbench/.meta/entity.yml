@@ -1,0 +1,50 @@
+entity:
+  id: catalog/datasets/skillsbench
+  type: dataset
+  name: SkillsBench
+  aliases:
+    - Skills Bench
+  identity_note: >-
+    Original BenchFlow-published benchmark task dataset for evaluating whether
+    reusable Agent Skills improve agent outcomes. The tagged SkillsBench v1.1
+    release contains 87 separately pinned task packages. Distinct from the
+    BenchFlow execution framework, agent harnesses, leaderboard runs, upstream
+    AI models, and optional credential-dependent tasks-extra packages.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/benchflow-ai/skillsbench
+      purposes: [identification, research]
+      authority: official
+      note: Original benchmark project and runnable task packages.
+    - type: repository
+      source:
+        url: https://github.com/benchflow-ai/skillsbench/releases/tag/v1.1
+      purposes: [identification, research]
+      authority: official
+      note: Released, reproducible 87-task v1.1 snapshot.
+    - type: repository
+      source:
+        url: https://github.com/benchflow-ai/skillsbench/blob/main/registry.json
+      purposes: [research]
+      authority: official
+      note: Separate v1.0 and v1.1 manifests with task-level pinning and digests.
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/benchflow/skillsbench
+      purposes: [research]
+      authority: official
+      note: Publisher-declared Apache-2.0 dataset mirror; leaderboard results are separate.
+    - type: official-site
+      source:
+        url: https://www.skillsbench.ai/
+      purposes: [research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/benchflow-ai/skillsbench/blob/main/LICENSE
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/benchflow

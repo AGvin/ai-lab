@@ -1,0 +1,29 @@
+entity:
+  id: catalog/producers/d/descope
+  type: organization
+  name: Descope
+  references:
+    - type: official-site
+      source:
+        url: https://www.descope.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.descope.com/agentic-identity-hub
+      purposes:
+      - research
+      authority: official
+      note: Official product attribution and service scope.
+    - type: documentation
+      source:
+        url: https://docs.descope.com/agentic-identity-hub/use-cases
+      purposes:
+      - research
+      authority: official
+      note: Identity provider, agent, and resource-server responsibilities.
+  relations:
+    - type: produces
+      target: catalog/services/agent-identity-and-access/descope-agentic-identity-hub

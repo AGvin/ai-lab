@@ -16,6 +16,8 @@
 - Describe Anthropic concisely as an AI research and product company represented here as a producer of documented models, Agent Skill resources, and software.
 - Preserve the Anthropic model-domain view under `catalog/models/anthropic/` as navigation rather than treating the view node itself as a produced entity.
 - Include the official website and GitHub organization.
+- Preserve Anthropic as the original MCP producer with an exact reciprocal produced-by edge at the existing specification node; keep current AAIF stewardship and project-maintainer governance separate.
+- Do not infer Anthropic ownership of independently maintained MCP implementations, third-party connectors, partner models or foundation member projects.
 
 ## Validation
 
@@ -24,3 +26,4 @@
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
 - Model-domain navigation resolves to its canonical catalog node.
 - No link targets the removed `agent-skills/skills/` branch.
+- MCP provenance and stewardship are distinct and both reciprocal; product-specific capabilities, terms and release facts remain with their existing owners.

@@ -1,0 +1,109 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a52798c7ced3743d3c81bb91f9cabba924934c75
+    parent:
+      entity.yml: gitblob:a76c3a46432ba7611269330ee50980c8ad5c387e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/perplexity-ai/pplx-27b
+        type: model
+        name: PPLX 27B
+        references:
+        - type: article
+          source:
+            url: https://www.perplexity.ai/hub/blog/a-local-first-agent-for-private-and-cost-effective-knowledge-work
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://www.perplexity.ai/en-GB/hub/products/portable-computer
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.perplexity.ai/en-GB/hub/blog/introducing-portable-computer-for-local-first-ai
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.perplexity.ai/pl/hub/blog/a-local-first-agent-for-private-and-cost-effective-knowledge-work
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://www.perplexity.ai/uk/hub/products/portable-computer
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/p/perplexity-ai
+        - type: derived-from
+          target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-27b
+        identity_note: PPLX 27B is Perplexity's post-trained derivative of Qwen 3.8
+          27B for local knowledge work in Portable Computer. It is separate from the
+          PPLX Decider checkpoints and the surrounding agent software.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

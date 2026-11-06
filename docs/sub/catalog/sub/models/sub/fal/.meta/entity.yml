@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/fal
+  name: fal Models
+  type: model-producer-view
+  identity_note: Model-domain publishing view for fal. The canonical organization
+    profile owns legal identity; this view navigates independently learned fal model
+    identities without turning the hosted platform or individual API routes into models.
+  references:
+  - type: documentation
+    source:
+      url: https://fal.ai/blog/introducing-flux-3-max-by-fal
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://fal.ai/flux-3-max
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations: []

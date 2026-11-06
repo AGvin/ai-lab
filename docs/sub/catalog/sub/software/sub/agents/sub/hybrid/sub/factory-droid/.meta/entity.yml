@@ -23,6 +23,24 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.factory.com/factory-app/overview
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.factory.com/droid-computers/overview
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.factory.com/remote-control
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/f/san-francisco-ai-factory-inc

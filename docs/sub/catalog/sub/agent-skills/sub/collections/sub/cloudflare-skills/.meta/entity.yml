@@ -1,0 +1,27 @@
+entity:
+  id: catalog/agent-skills/collections/cloudflare-skills
+  type: skill-collection
+  name: Cloudflare Skills
+  identity_note: >-
+    Cloudflare publishes platform guidance for Workers, Agents SDK and related developer products under Apache-2.0. Native client plugins can bundle the Cloudflare MCP integration, while standalone skills are instruction files. Neither installing guidance nor a plugin supplies blanket authority to inspect an account, deploy Workers or modify resources.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/cloudflare/skills
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/cloudflare/skills/blob/1f2cd0a19588e2c6197c91dd7c71729df1fb6156/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/cloudflare/skills/blob/1f2cd0a19588e2c6197c91dd7c71729df1fb6156/LICENSE
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cloudflare

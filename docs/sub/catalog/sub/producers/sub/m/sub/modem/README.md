@@ -1,10 +1,14 @@
 # Modem
 
-Modem sponsors and publishes the Hunk project.
+Modem sponsors and publishes the Hunk project represented in this catalog.
 
-## Related catalog entity
+## Producer boundary
 
-- [Hunk](../../../../../software/sub/development-tools/sub/code-review-tools/sub/hunk/) — canonical local code-review/diff tool profile.
+Hunk's upstream repository explicitly names Modem as sponsor and publishes its own MIT license. The current Modem company site presents a separate Customer Graph product; that service's operation and commercial terms do not replace Hunk's software identity, imply sole authorship of community contributions, or establish an unsupported legal-company suffix.
+
+## Relations
+
+- Produces: [Hunk](../../../../../software/sub/development-tools/sub/code-review-tools/sub/hunk/)
 
 ## Official resources
 

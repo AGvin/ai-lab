@@ -1,0 +1,110 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:e00079daec44815d0f149be2d38506f4fbeeff51
+    parent:
+      entity.yml: gitblob:f48eb9aab914593d41e6dfe58193022cede3b681
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5
+        type: model-series
+        name: Stable Diffusion 3.5
+        identity_note: Stable Diffusion 3.5 is a released Stability AI model series
+          comprising Large, Large Turbo and Medium. The variants share a series identity
+          while remaining separate trained models with different capacity and inference
+          trade-offs. Stability describes Large as its 8.1-billion-parameter variant,
+          Large Turbo as a distilled variant intended for four-step generation, and
+          Medium as a smaller 2.5-billion-parameter model. These are provider descriptions,
+          not an independent guarantee of quality or speed on a particular device.
+          Use each variant’s model card for the exact architecture and inference setup.
+          The series is included in Stability’s current Community/Enterprise licensing
+          program. Hosted APIs and partner services have additional service conditions;
+          downloadable weights retain their own license and any distribution access
+          requirements. Optimized or quantized builds are artifacts of a selected
+          model, not extra peer models in the series. Compare memory and output quality
+          with matching resolution, encoders, precision, sampler and runtime.
+        references:
+        - type: article
+          source:
+            url: https://stability.ai/news/introducing-stable-diffusion-3-5
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://stability.ai/core-models
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://stability.ai/license
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/stability-ai/stable-diffusion
+        - type: has-member
+          target: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5/models/large
+        - type: has-member
+          target: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5/models/large-turbo
+        - type: has-member
+          target: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5/models/medium
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

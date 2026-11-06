@@ -4,6 +4,10 @@
 
 The Python library and `hf` CLI are one canonical software item. They are clients for hosted Hugging Face services rather than the hosted services themselves.
 
+## Relations
+
+- Produced by: [Hugging Face, Inc.](../../../../../../../producers/sub/h/sub/hugging-face-inc/).
+
 ## Official resources
 
 - [`huggingface_hub` documentation](https://huggingface.co/docs/huggingface_hub/en/index)

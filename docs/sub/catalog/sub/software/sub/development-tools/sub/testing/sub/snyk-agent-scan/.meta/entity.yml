@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/development-tools/testing/snyk-agent-scan
+  type: software
+  name: Snyk Agent Scan
+  aliases:
+    - MCP-Scan
+  references:
+    - type: repository
+      source:
+        url: https://github.com/snyk/agent-scan
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/snyk/agent-scan/releases
+      purposes:
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://snyk.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/snyk

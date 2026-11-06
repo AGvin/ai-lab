@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/b/bright-data
+  type: organization
+  name: Bright Data
+  references:
+    - type: official-site
+      source:
+        url: https://brightdata.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://brightdata.com/products
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/web-data/bright-data

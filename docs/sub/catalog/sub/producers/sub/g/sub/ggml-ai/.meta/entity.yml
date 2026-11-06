@@ -27,6 +27,13 @@ entity:
         - research
       authority: official
       note: First-party 2026 announcement identifies ggml.ai as the founding team of llama.cpp and states that the team continues to lead, maintain, and support the project after joining Hugging Face.
+    - type: other
+      source:
+        url: https://huggingface.co/blog/ggml-joins-hf
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/inference-runtimes/inference-engines/llama-cpp

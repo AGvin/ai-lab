@@ -1,0 +1,98 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:390710984b03c1ae9b3907c838ffa04eb9ccc845
+    parent:
+      entity.yml: gitblob:db0350eaec1a453a5eaa80eb1010683969f5d346
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/cloudflare/clef/models/clef-omni
+        type: model
+        name: Clef-omni
+        identity_note: Clef-omni is Cloudflare's multimodal decision model released
+          on 9 October 2026. It uses the Qwen/Qwen3-Omni-30B-A3B-Instruct thinker
+          backbone, with 30B total and 3B active parameters, to score allowed answers
+          from text, images, audio and video. Native media input does not imply speech
+          or free-form text output. The official release includes unchanged speech-output
+          weights from the upstream model but the decision loader does not use them.
+          Plan for total weights and media processing, and scope the current 64,000-token
+          context and clip counts to Workers AI.
+        references:
+        - type: documentation
+          source:
+            url: https://developers.cloudflare.com/workers-ai/models/clef-omni/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://developers.cloudflare.com/changelog/post/2026-10-09-clef-omni-workers-ai/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/Cloudflare/clef-omni
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/cloudflare/clef
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

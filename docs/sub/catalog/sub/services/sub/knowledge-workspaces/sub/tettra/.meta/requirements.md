@@ -14,3 +14,9 @@
 - Tettra is not collapsed into Tettra, Inc. or reduced to the Kai assistant capability.
 - The `entity-relations` block resolves to the canonical Tettra, Inc. producer.
 - Official Tettra references match canonical entity metadata.
+
+## Scoped original-source qualification — 2026-11-06
+
+Tettra Kai provides knowledge-base Q&A, subject to knowledge freshness, permissions and product plan boundaries. Official documentation: https://support.tettra.com/tettras-ai-features/kai-instant-ai-answers
+
+Scope: source and service-identity qualification only; not a full security, runtime, or clean-pass audit.

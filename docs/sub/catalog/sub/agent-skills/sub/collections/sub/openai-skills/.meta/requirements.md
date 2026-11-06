@@ -24,3 +24,9 @@
 - Skill Creator is represented exactly once as collection-owned historical/system source material.
 - No local standalone Skill Creator catalog node is linked.
 - Claims about current OpenAI distribution are not inferred beyond the official repository deprecation notice.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
+- Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
+- Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.

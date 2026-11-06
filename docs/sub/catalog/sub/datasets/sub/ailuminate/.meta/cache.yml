@@ -1,0 +1,102 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a1772b9198bee2a188bea9b95ea31851dc2abef9
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/ailuminate
+        type: dataset
+        name: AILuminate
+        identity_note: AILuminate is MLCommons' family of generative-AI safety and
+          security benchmarks, with chatbot safety as an established evaluation surface.
+          Safety v1.1 assesses a fixed system under test, potentially including models,
+          prompts, guardrails, retrieval and other workflow components. Its documented
+          scope is single-turn content hazards in English and French. A configuration
+          change can create a different tested system; scores do not automatically
+          describe the underlying base model. Public practice tests and protected
+          official tests have different access, evaluator and publication conditions.
+          Grades are relative measurements within the tested hazards, languages, personas
+          and interaction scope. They do not prove that a system is risk-free, unbiased,
+          clinically safe or reliable in sustained interactions. Other AILuminate
+          variants retain their own release and scope boundaries.
+        references:
+        - type: product-page
+          source:
+            url: https://mlcommons.org/benchmarks/ailuminate/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://mlcommons.org/ailuminate/safety-faq/
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://mlcommons.org/2025/02/ailumiate-v1-1-fr/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mlcommons
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

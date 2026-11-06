@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/mlr-bench
+  type: dataset
+  name: "MLR-Bench"
+  aliases:
+    - "Machine Learning Research Agent Benchmark"
+  identity_note: >-
+    Open-ended machine-learning research evaluation suite with 201 tasks derived from academic workshops and separate agent/judge components.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/chchenhui/mlrbench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/chchenhui/mlrbench/blob/f728d571a992d71c8b526eeb4d9ab6bb5c8cc824/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/chchenhui/mlrbench/blob/f728d571a992d71c8b526eeb4d9ab6bb5c8cc824/LICENSE
+      purposes: [research]
+      authority: official

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/openai-evmbench
+  type: dataset
+  name: "EVMbench"
+  aliases:
+    - "EVM Smart Contract Security Agent Benchmark"
+  identity_note: >-
+    Ethereum Virtual Machine security-agent evaluation suite with separate detect, patch and exploit modes, locally graded in isolated Docker environments.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/openai/frontier-evals
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/openai/frontier-evals/blob/b78dab1da774a6456b1ed9c48c9ff194ee3ff36d/project/evmbench/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/openai/frontier-evals/blob/b78dab1da774a6456b1ed9c48c9ff194ee3ff36d/project/evmbench/LICENSE
+      purposes: [research]
+      authority: official

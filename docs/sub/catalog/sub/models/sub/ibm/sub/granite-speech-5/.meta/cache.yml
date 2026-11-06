@@ -1,0 +1,110 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:346ec53dc5c6f0a297fd348df35fabf8295cfd31
+    parent:
+      entity.yml: gitblob:bd781d43d132f5a161bf61b6fd7be69a53dcdd6f
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/ibm/granite-speech-5
+        type: model-family
+        name: Granite Speech 5.0
+        identity_note: Granite Speech 5.0 is IBM's speech family spanning 470M TurboCTC
+          recognition checkpoints and a separate approximately 2.3B-parameter multilingual
+          speech-language model for ASR and AST. The current standard 470M checkpoint
+          was updated on 21 October 2026 to multilingual scope, while the separately
+          released NC checkpoint remains English-only and uses a different noncommercial
+          license.
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/collections/ibm-granite/granite-speech
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc-nc
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/ibm-granite/granite-speech-5.0-2b
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/i/ibm
+        - type: has-member
+          target: catalog/models/ibm/granite-speech-5/models/granite-speech-5-0-470m-turboctc
+        - type: has-member
+          target: catalog/models/ibm/granite-speech-5/models/granite-speech-5-0-470m-turboctc-nc
+        - type: has-member
+          target: catalog/models/ibm/granite-speech-5/models/granite-speech-5-0-2b
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

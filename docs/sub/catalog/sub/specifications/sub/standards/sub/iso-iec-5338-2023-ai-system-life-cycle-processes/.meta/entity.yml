@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-5338-2023-ai-system-life-cycle-processes
+  name: ISO/IEC 5338:2023 — AI system life cycle processes
+  aliases:
+    - ISO/IEC 5338:2023
+    - ISO 5338
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/81118.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record identifying Edition 1 as a published International Standard.

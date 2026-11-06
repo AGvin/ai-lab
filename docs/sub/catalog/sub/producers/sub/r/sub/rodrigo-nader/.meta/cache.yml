@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5e121ed5bd239211648d168c17a0754a996048c9
+      entity.yml: gitblob:21242c1f4bc1548273c8ee25f3c09e91d80c403e
     parent: {}
   state:
     node:
@@ -63,6 +63,14 @@ cache:
           - research
           authority: official
           note: Current Langflow package metadata lists Rodrigo Nader among the maintainers.
+        - type: article
+          source:
+            url: https://community.ibm.com/community/user/blogs/datastax-pm-team-datastax-pm-team/2025/10/02/ibm-datastax
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: IBM/DataStax account.
         relations:
         - type: produces
           target: catalog/software/workflow-engines/visual-ai-workflows/langflow

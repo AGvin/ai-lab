@@ -1,0 +1,25 @@
+entity:
+  id: catalog/hardware/tenstorrent-galaxy-blackhole
+  type: hardware-product
+  name: Tenstorrent Galaxy Blackhole
+  identity_note: >-
+    Tenstorrent Galaxy Blackhole is a Blackhole-generation multi-accelerator AI system; Tenstorrent's April-May 2026 manufacturer announcements describe it as in production and shipping in volume. Galaxy system topology and manufacturer throughput/scale comparisons must not be presented as one ASIC specification or independently established performance. Pricing, stock, software/firmware, workload throughput, cooling/network requirements and ownership control remain unverified for a particular deployment.
+  aliases:
+    - Galaxy Blackhole
+  references:
+    - type: release-notes
+      source:
+        url: https://tenstorrent.com/newsroom/tenstorrent-enables-ai-at-scale-with-industry-leading-performance
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://tenstorrent.com/newsroom/tt-deploy
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/tenstorrent

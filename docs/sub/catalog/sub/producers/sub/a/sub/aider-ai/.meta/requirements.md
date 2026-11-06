@@ -6,6 +6,7 @@
 - Use the official Aider privacy policy as identification evidence for the legal organization name and keep the official Aider site and GitHub organization as primary product/project provenance sources.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Keep broader contributor, funding, staffing, and mutable project details outside this concise producer profile unless they become relevant to represented catalog entities.
+- Preserve the distinction between Aider software provenance and the external model/API providers selected by its users.
 
 ## Validation
 

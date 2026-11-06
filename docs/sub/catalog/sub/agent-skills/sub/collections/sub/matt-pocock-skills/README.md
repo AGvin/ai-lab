@@ -1,5 +1,7 @@
 # Matt Pocock Skills
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Publisher attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 Matt Pocock Skills is a collection of small, composable engineering and productivity skills for coding agents. The collection supports a managed Claude Code plugin and selective installation through the `skills` CLI.
 
 ## Producer
@@ -53,6 +55,12 @@ grill-with-docs
 ```
 
 Selective installation is supported, but dependent skills need to be installed together. The repository's current setup flow also recommends including `setup-matt-pocock-skills`.
+
+## Source interpretation
+
+Matt Pocock publishes composable engineering and productivity instructions under MIT. Managed plugin distribution and selectively copied editable skills have different update and dependency behavior. Follow the selected installation's current setup/dependency guidance; collection presence does not itself authorize issue creation, external messages or repository writes.
+
+[Reviewed original README](https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/README.md). Licensing is scoped to the inspected distribution; no skill or script was installed or executed. This is not a full collection freshness audit.
 
 ## Official resources
 

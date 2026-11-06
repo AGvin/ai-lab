@@ -1,0 +1,34 @@
+entity:
+  id: catalog/models/mistral-ai/devstral/models/devstral-small-2-24b-instruct-2512
+  type: model
+  name: Devstral Small 2 24B Instruct 2512
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://mistral.ai/news/devstral-2-vibe-cli/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/devstral-small-2-25-12
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/studio/conversations/function-calling
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/devstral

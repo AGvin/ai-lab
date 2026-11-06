@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/pinchbench
+  type: dataset
+  name: "PinchBench"
+  aliases:
+    - "OpenClaw Workflow Agent Benchmark"
+  identity_note: >-
+    OpenClaw agent benchmark task pack with 53 publisher-reported tasks in productivity, search, coding, writing, memory and communications; the skill repository is task/harness source, not the authoritative results leaderboard.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/pinchbench/skill
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/pinchbench/skill/blob/819384ae830492365b8363fc26bc2602e73f216d/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/pinchbench/skill/blob/819384ae830492365b8363fc26bc2602e73f216d/LICENSE
+      purposes: [research]
+      authority: official

@@ -2,6 +2,13 @@ entity:
   id: catalog/producers/v/vibrant-labs
   type: organization
   name: Vibrant Labs
+  identity_note: >-
+    Vibrant Labs is the organization behind Ragas and its current vibrantlabsai upstream repository. The
+    company's account of its founders connects the organization to Ragas while also describing broader research
+    work. Ragas combines model-based and traditional evaluation metrics and test-data workflows. Judge
+    selection, prompts, datasets and provider processing affect the resulting evidence; a toolkit score is not
+    independent quality certification. The producer profile does not absorb every benchmark or third-party model
+    used in an evaluation.
   references:
     - type: official-site
       source:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:87f231844f8c2057eac025e185903f2f21d26f90
+      entity.yml: gitblob:7aa3dd701df457c3e663dc17f37d644b7ed5ce78
       node.yml: gitblob:1615cbf85373f581479950b7a25c7fbc426d6341
     parent:
       entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
@@ -47,10 +47,36 @@ cache:
         id: catalog/models/huihui-ai
         type: model-producer-view
         name: huihui.ai Models
+        identity_note: This producer view organizes the represented modified models
+          published under the huihui-ai handle and links the canonical huihui.ai producer.
+          The Qwen3-Coder-derived branch is navigation to the concrete modified model.
+          Its upstream model, modification provenance and quantized artifacts retain
+          distinct identities and evidence.
         references:
         - type: registry
           source:
             url: https://huggingface.co/huihui-ai
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated/tree/b84c58d52ac44041774fe9542e1943e4d971b5f4
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF
           purposes:
           - identification
           - research

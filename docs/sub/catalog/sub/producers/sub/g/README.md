@@ -1,12 +1,16 @@
 # Producers — G
 
-Canonical producer profiles beginning with G.
-
-## Producers
-
 - [Gabriel Almeida](./sub/gabriel-almeida/)
+- [Galileo Technologies, Inc.](./sub/galileo-technologies-inc/)
+- [Genesis World Project](./sub/genesis-world-project/)
+- [Generality Labs](./sub/generality-labs/)
 - [ggml.ai](./sub/ggml-ai/)
+- [Giskard AI](./sub/giskard-ai/)
 - [GitHub, Inc.](./sub/github-inc/)
 - [Google](./sub/google/)
 - [Google Cloud](./sub/google-cloud/)
 - [Google DeepMind](./sub/google-deepmind/)
+- [Graphify Labs](./sub/graphify-labs/)
+- [Gray Swan AI](./sub/gray-swan-ai/)
+- [Groq LLC](./sub/groq-llc/)
+- [Guru Technologies, Inc.](./sub/guru-technologies-inc/)

@@ -2,6 +2,12 @@ entity:
   id: catalog/producers/m/mirascope-inc
   type: organization
   name: Mirascope, Inc.
+  identity_note: >-
+    Mirascope, Inc. is the organization publishing and developing the represented Mirascope open-source
+    SDK and toolkit. The official website terms identify Mirascope, Inc.; the current Cloud notice says
+    Mirascope Cloud was discontinued while Python and TypeScript SDK development continues. Website
+    terms, SDK licenses, third-party model APIs and external observability backends have different
+    scopes; SDK provenance does not imply a currently available hosted Mirascope service.
   references:
     - type: official-site
       source:
@@ -22,6 +28,13 @@ entity:
       source:
         url: https://github.com/Mirascope/mirascope
       purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://mirascope.com/cloud
+      purposes:
+        - identification
         - research
       authority: official
   relations:

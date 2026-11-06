@@ -22,3 +22,17 @@
 - Sol, Terra, and Luna remain separate concrete models.
 - The alias `gpt-5.6` is not represented as a fourth model.
 - Mutable pricing and product availability are not treated as series identity.
+
+## Source-scoped operating boundaries
+
+- The API alias gpt-5.6 routes to Sol [Sol model reference](https://developers.openai.com/api/docs/models/gpt-5.6-sol).
+- The August system card separately identifies ChatGPT updates of Sol and Luna; those updates do not replace the previously released versions across every surface [GPT-5.6 August system card](https://deploymentsafety.openai.com/gpt-5-6-august-update).
+- Tool support and reasoning effort are current hosted configuration. Application authorization and tool execution remain separate from the series’ ability to produce a tool call [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).
+
+## Source evidence
+
+- [gpt-5.6-sol model reference](https://developers.openai.com/api/docs/models/gpt-5.6-sol).
+- [gpt-5.6-terra model reference](https://developers.openai.com/api/docs/models/gpt-5.6-terra).
+- [gpt-5.6-luna model reference](https://developers.openai.com/api/docs/models/gpt-5.6-luna).
+- [GPT-5.6 August 2026 system card](https://deploymentsafety.openai.com/gpt-5-6-august-update).
+- [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).

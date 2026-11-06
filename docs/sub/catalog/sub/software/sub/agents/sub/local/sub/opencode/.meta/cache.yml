@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d083035329b8299e572a685f689afdeeaf92fc56
+      entity.yml: gitblob:d00557d5bae8391ac2a4db63cef79016a006f53c
     parent:
       entity.yml: gitblob:0c958ac9b06255323dd6f40493fd9f05736b939d
   state:
@@ -75,6 +75,18 @@ cache:
           - research
           authority: official
           note: Official OpenCode Terms of Use identifying Anomaly Innovations, Inc.
+        - type: documentation
+          source:
+            url: https://opencode.ai/docs/github/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://opencode.ai/docs/server/
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/a/anomaly-innovations-inc

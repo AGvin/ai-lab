@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:fb117813f1bc96e2e1b0004a4ab53a2898906177
+      entity.yml: gitblob:e23b1ac393bb64b7d567688ed2b4288f08aeb1d1
     parent:
       entity.yml: gitblob:f31139639b2edcfd2e66f7c2e44d1eef4e9a433a
   state:
@@ -70,6 +70,39 @@ cache:
           purposes:
           - research
           authority: official
+        - type: article
+          source:
+            url: https://www.anthropic.com/news/model-context-protocol
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://aaif.io/projects/model-context-protocol
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://modelcontextprotocol.io/community/governance
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/anthropic
+        - type: maintained-by
+          target: catalog/producers/a/agentic-ai-foundation
     aliases:
       effective:
         schema: default

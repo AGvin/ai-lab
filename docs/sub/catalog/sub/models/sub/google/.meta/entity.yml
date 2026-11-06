@@ -21,3 +21,18 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://deepmind.google/models/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://ai.google.dev/gemma/docs/core
+      purposes:
+        - identification
+        - research
+      authority: official
+  identity_note: "Navigation view of Google's model portfolio; Google and Google DeepMind remain separate canonical producer identities, and hosted products are separate from models."

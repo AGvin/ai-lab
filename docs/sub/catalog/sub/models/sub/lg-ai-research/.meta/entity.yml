@@ -1,0 +1,12 @@
+entity:
+  id: catalog/models/lg-ai-research
+  type: model-producer-view
+  name: LG AI Research models
+  references:
+    - type: official-site
+      source:
+        url: https://www.lgresearch.ai/
+      purposes:
+        - identification
+        - research
+      authority: official

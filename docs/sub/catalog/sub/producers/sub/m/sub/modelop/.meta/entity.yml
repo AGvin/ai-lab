@@ -1,0 +1,35 @@
+entity:
+  id: catalog/producers/m/modelop
+  type: organization
+  name: ModelOp
+  identity_note: >-
+    ModelOp is the company and producer behind ModelOp Enterprise AI Command Center, the represented
+    enterprise AI-management software. The platform manages AI assets from multiple sources; that role
+    does not make ModelOp the producer of customer-built or third-party models. Product deployment,
+    integrations, access controls, support and evidence for governance outcomes belong to the software
+    and customer operating context, not to the producer relation alone.
+  references:
+    - type: official-site
+      source:
+        url: https://www.modelop.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.modelop.com/company
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.modelop.com/enterprise-ai-command-center
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/ai-management-platforms/modelop-enterprise-ai-command-center

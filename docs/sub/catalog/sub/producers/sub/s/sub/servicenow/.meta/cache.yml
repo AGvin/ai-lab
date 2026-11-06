@@ -1,0 +1,132 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:da65f101c495df68297583857a52ea52f789bad2
+    parent:
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/s/servicenow
+        type: organization
+        name: ServiceNow
+        identity_note: ServiceNow publishes the represented AI Control Tower product
+          and the WebArena-Verified and WorkArena benchmark releases. It also publishes
+          BrowserGym as a browser-environment framework and AgentLab as experiment
+          and analysis software. These are distinct product, benchmark, environment
+          and evaluation roles within the ServiceNow research ecosystem. The current
+          product page markets the control-tower offering as Super Intelligence Control
+          Tower; the catalog retains its established AI Control Tower identity. Enterprise
+          product entitlements do not follow from access to research repositories.
+          WebArena-Verified refines the original WebArena benchmark rather than claiming
+          its original authorship, and WorkArena instance access has a separate approval
+          process. Pin tasks, evaluators, environments and agent versions, and use
+          isolated test accounts for browser agents.
+        references:
+        - type: official-site
+          source:
+            url: https://www.servicenow.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://www.servicenow.com/products/ai-control-tower.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/ServiceNow/webarena-verified
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/ServiceNow/WorkArena
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/ServiceNow/BrowserGym
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/ServiceNow/AgentLab
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/services/ai-management-platforms/servicenow-ai-control-tower
+        - type: produces
+          target: catalog/datasets/webarena-verified
+        - type: produces
+          target: catalog/datasets/workarena
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/browsergym
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/agentlab
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

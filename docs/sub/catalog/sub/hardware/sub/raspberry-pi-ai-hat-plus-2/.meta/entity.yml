@@ -1,0 +1,29 @@
+entity:
+  id: catalog/hardware/raspberry-pi-ai-hat-plus-2
+  type: hardware-product
+  name: Raspberry Pi AI HAT+ 2
+  identity_note: >-
+    Raspberry Pi AI HAT+ 2 for Raspberry Pi 5 is a Hailo-10H NPU board with 40 TOPS INT4-class theoretical throughput and its own 8 GB accelerator-local RAM, which is not pooled with Raspberry Pi system memory. The product adds supported compiled local LLM and VLM options beyond the Hailo-8/8L AI HAT+ class; advertised ~6B parameter scope is approximate product guidance, not universal checkpoint or runtime compatibility. Validate supported Hailo artifact, quantization, HailoRT version and intended model before recommending deployment.
+  references:
+    - type: product-page
+      source:
+        url: https://www.raspberrypi.com/products/ai-hat-plus-2/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.raspberrypi.com/news/introducing-the-raspberry-pi-ai-hat-plus-2-generative-ai-on-raspberry-pi-5/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/r/raspberry-pi

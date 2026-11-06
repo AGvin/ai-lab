@@ -10,6 +10,8 @@ OpenCode's permission system can allow, ask, or deny actions at tool, path, comm
 
 OpenCode Zen and other hosted model-access services are separate service surfaces; using hosted inference does not change the OpenCode agent itself into a hosted agent runtime.
 
+Official GitHub issue/PR automation runs OpenCode in the repository's GitHub Actions runner, with workflow-defined permissions and secrets; it is not an Anomaly-managed OpenCode cloud agent. Similarly, `opencode serve` enables web, SDK, and remote clients to operate an OpenCode process on a host deployed by the operator. GitHub runner trust and remote HTTP exposure (authentication, binding, CORS) must be reviewed independently.
+
 ## Related
 
 - [Anomaly Innovations, Inc.](../../../../../../../producers/sub/a/sub/anomaly-innovations-inc/) — canonical producer organization.
@@ -19,4 +21,6 @@ OpenCode Zen and other hosted model-access services are separate service surface
 - [OpenCode](https://opencode.ai/)
 - [OpenCode documentation](https://opencode.ai/docs)
 - [OpenCode repository](https://github.com/anomalyco/opencode)
+- [OpenCode GitHub Actions integration](https://opencode.ai/docs/github/)
+- [OpenCode HTTP server and authentication](https://opencode.ai/docs/server/)
 - [OpenCode Terms of Service](https://opencode.ai/legal/terms-of-service)

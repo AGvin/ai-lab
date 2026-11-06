@@ -10,6 +10,20 @@ entity:
         - identification
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/strands-agents/harness-sdk
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Current monorepo for Python/TypeScript SDKs, harness packages, CLI, MCP and documentation.
+    - type: release-notes
+      source:
+        url: https://strandsagents.com/changelog/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/a/amazon-web-services

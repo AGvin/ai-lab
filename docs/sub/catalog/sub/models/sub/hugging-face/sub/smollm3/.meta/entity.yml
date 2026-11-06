@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/hugging-face/smollm3
+  type: model-family
+  name: SmolLM3
+  identity_note: >-
+    Hugging Face's original SmolLM3 release distinguishes base and instruction/reasoning checkpoints. Only the reviewed instruction/reasoning member is materialized here; mode controls and distributed formats are not extra trained models. Ownership/control-chain review is incomplete; no Russian-control finding or adoption clearance is established.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/blog/smollm3
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/hugging-face-inc
+    - type: has-member
+      target: catalog/models/hugging-face/smollm3/smollm3-3b

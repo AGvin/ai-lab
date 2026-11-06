@@ -1,0 +1,19 @@
+# Documentation Requirements
+
+## Requirements
+
+- Identify Inspect Evals as an independently packaged and installable collection of evaluations built with the Inspect AI framework, not the framework itself or one new catalog identity for every bundled task, external registered evaluation or benchmark dataset.
+- Preserve historical development by the UK AI Security Institute and contributors, and current stewardship by Generality Labs, with distinct `produced-by` and `maintained-by` relations and appropriate reciprocal producer relations. Do not equate the historical `UKGovernmentBEIS` repository namespace with current sole maintainership.
+- Cite source snapshot `7c31cf22830c4657a3894e095b452c7d50f6f3b8` (2026-11-03). Its `pyproject.toml` identifies package `inspect_evals`, Python `>=3.11`, an `inspect_ai >= 0.3.285` dependency and an Inspect AI evaluation registry entry point. The manifest uses a dynamic package version, so do not invent a fixed version or claim the latest distribution.
+- Document `pip install inspect-evals` for package consumption and `uv sync` for source checkout development, followed by `inspect eval inspect_evals/<task> --model <provider/model>`, `inspect eval-set`, and `inspect view` as supported upstream workflows. Selection of a valid model provider, API credentials and individual task-specific dependencies remains necessary.
+- Explain that the collection uses Inspect AI to execute evaluations and can require provider API access, specialized containers, GPU/RAM/disk capacity, large datasets and substantial evaluation costs; the repository explicitly recommends Python 3.11 or 3.12 for broad compatibility, with task-dependent exceptions.
+- Describe the distinct Inspect Evals Register: starting 2026-05-08, new community submissions are externally hosted implementations registered by metadata/YAML rather than integrated as new `src/` code. A registry listing is not equivalent to a bundled implementation, package runtime or accepted new software product.
+- Include privacy, safety and legal boundaries: evaluation logs may capture model prompts and outputs, credentials must remain secret, malicious or sensitive evaluation cases may require sandboxing, some third-party artifacts have individual license/consent restrictions, and official software MIT licensing does not imply rights to redistribute every included benchmark or dataset. The source `NOTICE` records additional third-party terms.
+- Keep pinned first-party references for the README, Python package manifest, registry migration and software license/third-party notice. No runtime eval, provider/API call, complete license audit, current-release audit, cache generation, CI success or whole-catalog clean pass is claimed.
+
+## Validation
+
+- [Pinned README](https://github.com/UKGovernmentBEIS/inspect_evals/blob/7c31cf22830c4657a3894e095b452c7d50f6f3b8/README.md) describes package installation, CLI usage, developer setup, task-specific dependencies and maintainer provenance.
+- [Pinned package manifest](https://github.com/UKGovernmentBEIS/inspect_evals/blob/7c31cf22830c4657a3894e095b452c7d50f6f3b8/pyproject.toml), [registry migration](https://github.com/UKGovernmentBEIS/inspect_evals/blob/7c31cf22830c4657a3894e095b452c7d50f6f3b8/EVAL_REGISTER.md), [software license](https://github.com/UKGovernmentBEIS/inspect_evals/blob/7c31cf22830c4657a3894e095b452c7d50f6f3b8/LICENSE), and [third-party notices](https://github.com/UKGovernmentBEIS/inspect_evals/blob/7c31cf22830c4657a3894e095b452c7d50f6f3b8/NOTICE) support independent identity, rights and run-surface boundaries.
+- The new category child is indexed exactly once and `produced-by` / `produces`, `maintained-by` / `maintains` relations resolve to their canonical producer identities.
+- Reader explicitly distinguishes Inspect AI, Inspect Evals, registered external eval implementations, model providers and per-evaluation datasets.

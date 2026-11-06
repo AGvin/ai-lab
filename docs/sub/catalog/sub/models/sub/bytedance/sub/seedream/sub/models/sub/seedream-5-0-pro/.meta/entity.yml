@@ -1,0 +1,46 @@
+entity:
+  id: catalog/models/bytedance/seedream/models/seedream-5-0-pro
+  name: Seedream 5.0 Pro
+  type: model
+  relations:
+  - type: member-of
+    target: catalog/models/bytedance/seedream
+  identity_note: Seedream 5.0 Pro is ByteDance Seed's image-generation and editing model released on 2026-07-08,
+    with design-oriented layout, interactive editing and layer-decomposition workflows. Its hosted service identifiers
+    are access routes rather than separate model identities.
+  references:
+  - type: article
+    source:
+      url: https://seed.bytedance.com/en/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: product-page
+    source:
+      url: https://seed.bytedance.com/en/seedream5_0_pro
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/ModelArk/1330310
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/ModelArk/seedream-5-0-pro
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.byteplus.com/en/docs/ModelArk/1541523
+    purposes:
+    - identification
+    - research
+    authority: official

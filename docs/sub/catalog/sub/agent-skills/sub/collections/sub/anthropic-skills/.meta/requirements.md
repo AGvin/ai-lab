@@ -32,3 +32,9 @@
 - Dependency wording remains operation-scoped where upstream does not require every tool for every task.
 - No selected document skill is linked as a local standalone catalog node.
 - Reader-facing claims are consistent with the current official repository and selected `SKILL.md` files.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
+- Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
+- Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.

@@ -1,0 +1,17 @@
+entity:
+  id: catalog/hardware/intel-arc-b580
+  type: hardware-product
+  name: "Intel Arc B580"
+  identity_note: >-
+    Intel Xe2/Battlemage desktop consumer GPU, distinct from Arc Pro B50/B60/B65
+    workstation products.
+  references:
+    - type: product-page
+      source:
+        url: https://www.intel.com/content/www/us/en/products/sku/241598/intel-arc-b580-graphics/specifications.html
+      purposes: [identification, research]
+      authority: official
+      note: "Official manufacturer product page"
+  relations:
+    - type: produced-by
+      target: catalog/producers/i/intel

@@ -1,12 +1,14 @@
 # API Hero Ltd
 
-API Hero Ltd is the legal company trading as Trigger.dev and behind the Trigger.dev open-source workflow platform. The company identity remains distinct from self-hosted Trigger.dev software and from Trigger.dev Cloud or managed execution services.
+API Hero Ltd is the legal company trading as Trigger.dev and the organization behind the Trigger.dev workflow platform.
 
-## Produces
+The company, self-hosted Trigger.dev software, and managed Trigger.dev Cloud execution remain distinct. Integrated APIs, user tasks, and external models retain their own ownership and service boundaries.
 
-- [Trigger.dev](../../../../../software/sub/workflow-engines/sub/application-orchestration/sub/trigger-dev/) — open-source application and background-job orchestration platform.
+## Relations
+
+- Produces: [Trigger.dev](../../../../../software/sub/workflow-engines/sub/application-orchestration/sub/trigger-dev/)
 
 ## Official resources
 
 - [Trigger.dev](https://trigger.dev/)
-- [Trigger.dev legal](https://trigger.dev/legal/)
+- [Trigger.dev legal identity](https://trigger.dev/legal/)

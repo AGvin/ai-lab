@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:464ca096a1e1ce0686e6e54622d03f7030cc80c1
+      entity.yml: gitblob:0f95c7bd0434e9ccd557841257495bf2759ec472
     parent:
       entity.yml: gitblob:834a848416cc4cbecc3cf2bbd5450eb5dd567415
   state:
@@ -51,14 +51,14 @@ cache:
         references:
         - type: official-site
           source:
-            url: https://factory.ai/
+            url: https://factory.com/
           purposes:
           - identification
           - research
           authority: official
         - type: other
           source:
-            url: https://factory.ai/legal/terms
+            url: https://factory.com/legal/terms
           purposes:
           - identification
           - research
@@ -67,7 +67,7 @@ cache:
             Inc.
         - type: other
           source:
-            url: https://factory.ai/legal/privacy-policy
+            url: https://factory.com/legal/privacy-policy
           purposes:
           - identification
           - research

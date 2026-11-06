@@ -1,0 +1,29 @@
+entity:
+  id: catalog/specifications/standards/agent-control-standard
+  name: Agent Control Standard
+  aliases:
+    - ACS
+  references:
+    - type: specification
+      source:
+        url: https://genai-security-project.github.io/agent-control-standard/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official published ACS documentation/specification surface; re-check the published normative revision before making version-sensitive claims.
+    - type: documentation
+      source:
+        url: https://genai.owasp.org/resource/agent-control-standard-acs/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official OWASP GenAI Security Project resource establishing ACS as an open agent-control standard.
+    - type: repository
+      source:
+        url: https://github.com/GenAI-Security-Project/agent-control-standard
+      purposes:
+        - identification
+        - research
+      authority: official

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:44a506806b562f80fbc683cab31d60b8c48c635d
+      entity.yml: gitblob:2a91c7cdb2d8547a023efd19f9cff4dad0e50136
       node.yml: gitblob:1615cbf85373f581479950b7a25c7fbc426d6341
     parent:
       entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
@@ -47,10 +47,24 @@ cache:
         id: catalog/models/davidau
         type: model-producer-view
         name: DavidAU Models
+        identity_note: This producer view organizes the represented model releases
+          published under the DavidAU handle. The canonical producer is David Belton,
+          and the existing Qwen3-derived branch provides navigation to the reviewed
+          merge. Choose a concrete model for its exact learned identity, immediate
+          parents and source evidence, then choose a distribution with its own format
+          and runtime requirements. A separately published GGUF repository does not
+          by itself create another trained model.
         references:
         - type: registry
           source:
             url: https://huggingface.co/DavidAU
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF
           purposes:
           - identification
           - research

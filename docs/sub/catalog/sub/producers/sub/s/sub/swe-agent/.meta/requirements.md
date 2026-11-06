@@ -8,6 +8,8 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official mini-SWE-agent documentation and SWE-agent GitHub organization references.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
 ## Validation
 
 - The page distinguishes the SWE-agent producer/team identity from the mini-SWE-agent software entity.

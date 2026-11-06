@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:570a4802e6cbc95f658f1ce224b1a6fdd1b4929c
+      entity.yml: gitblob:41d5b608e8fa9d80fc1255304c6d7d868d4543f6
     parent:
-      entity.yml: gitblob:0bbcaf65820183eedb9fffeb30c691f0f5ef8f0a
+      entity.yml: gitblob:53da7115e76ef8861ab6c730b300b7adbfadc05b
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
   state:
     node:
@@ -52,6 +52,12 @@ cache:
             url: https://huggingface.co/Qwen/Qwen3-32B
           purposes:
           - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/QwenLM/Qwen3
+          purposes:
           - research
           authority: official
         relations:

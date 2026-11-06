@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/sevenllm-bench
+  type: dataset
+  name: "SEvenLLM-Bench"
+  aliases:
+    - "Cyber Threat Intelligence Evaluation Dataset"
+  identity_note: >-
+    Cyber threat intelligence benchmark data released alongside SEVENLLM-Instruct training data and security-focused evaluation tools; benchmark and model training sets are separate.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/CSJianYang/SEevenLLM
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/CSJianYang/SEevenLLM/blob/a84b86aabf2b5be35a2cbbac546511883cc5ff85/README.md
+      purposes: [research]
+      authority: official

@@ -1,0 +1,36 @@
+entity:
+  id: catalog/models/amazon/titan/models/titan-embeddings-g1-text
+  type: model
+  name: Amazon Titan Embeddings G1 - Text
+  identity_note: >-
+    Distinct Titan G1 text embedding identity, currently marked Active in its Bedrock card. The route
+    amazon.titan-embed-text-v1 uses Invoke and an inputText request to produce a vector and token
+    count; it is not a Converse text-generation model. Do not apply Titan V2 dimensionality,
+    normalization or binary-output options to this G1 request schema.
+  aliases:
+    - "Titan Embeddings G1 - Text"
+  references:
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-embeddings-g1---text.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/titan-models.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-titan-embed-text.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/amazon/titan

@@ -1,0 +1,50 @@
+entity:
+  id: catalog/datasets/deepsearchqa
+  type: dataset
+  name: DeepSearchQA
+  identity_note: >-
+    Google DeepMind's December 2025 independently released 900-prompt
+    multi-step web-research benchmark across 17 fields. It assesses
+    comprehensive answer-set retrieval and stopping criteria with web access,
+    distinct from short-answer BrowseComp, closed-book SimpleQA Verified,
+    the hosted Gemini Deep Research service and the Kaggle evaluation software.
+  references:
+    - type: article
+      source:
+        url: https://blog.google/innovation-and-ai/technology/developers-tools/deep-research-agent-gemini-api/
+      purposes: [identification, research]
+      authority: official
+      note: "Original December 11, 2025 release by Google DeepMind, distinguishing benchmark data from the hosted Gemini Deep Research agent."
+    - type: official-site
+      source:
+        url: https://deepmind.google/research/evals/
+      purposes: [identification, research]
+      authority: official
+      note: "Google DeepMind current benchmark listing and research characterization."
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/google/deepsearchqa
+      purposes: [identification, research]
+      authority: official
+      note: "Google-published 900-row eval CSV and Apache-2.0 metadata; source-rights beyond the card not independently cleared."
+    - type: paper
+      source:
+        url: https://storage.googleapis.com/deepmind-media/DeepSearchQA/DeepSearchQA_benchmark_paper.pdf
+      purposes: [identification, research]
+      authority: official
+      note: "Original Google-hosted technical report dated December 11, 2025; later posted to arXiv in January 2026."
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2601.20975
+      purposes: [research]
+      authority: upstream
+      note: "Later January 28, 2026 arXiv release of the original Google research report."
+    - type: registry
+      source:
+        url: https://www.kaggle.com/benchmarks/google/dsqa/leaderboard
+      purposes: [research]
+      authority: official
+      note: "Original Google Kaggle benchmark/leaderboard; evaluation and score reports are mutable."
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google-deepmind

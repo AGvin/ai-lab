@@ -1,0 +1,48 @@
+entity:
+  id: catalog/services/data-infrastructure/memory-and-context/hindsight-cloud
+  type: service
+  name: Hindsight Cloud
+  identity_note: >-
+    Vectorize-operated, self-service hosted Hindsight agent-memory service
+    with managed storage, model processing, HTTP APIs, MCP and SDK access,
+    team workspaces and metered billing. Unlike the MIT self-hosted Hindsight
+    engine, the multi-tenant cloud is operated by Vectorize; enterprise
+    single-tenant/BYOC/on-premises editions have different operating and
+    contract boundaries. Publisher uptime, security and recovery claims are
+    not independently verified by AI Lab.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.hindsight.vectorize.io/cloud/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://vectorize.io/pricing
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.hindsight.vectorize.io/cloud/api-integration/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.hindsight.vectorize.io/cloud/billing/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://hindsight.vectorize.io/cloud-enterprise/overview
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/vectorize-ai-inc

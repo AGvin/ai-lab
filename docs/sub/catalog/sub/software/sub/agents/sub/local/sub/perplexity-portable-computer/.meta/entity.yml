@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/agents/local/perplexity-portable-computer
+  type: software
+  name: Perplexity Portable Computer
+  aliases:
+    - Portable Computer
+  references:
+    - type: product-page
+      source:
+        url: https://www.perplexity.ai/en-GB/hub/products/portable-computer
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.perplexity.ai/en-GB/hub/blog/introducing-portable-computer-for-local-first-ai
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://www.perplexity.ai/changelog/effort-mode-gpt-6-astra-and-skills-marketplace
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/p/perplexity-ai

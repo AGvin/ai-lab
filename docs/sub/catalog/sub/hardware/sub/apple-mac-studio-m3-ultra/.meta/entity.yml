@@ -1,0 +1,23 @@
+entity:
+  id: catalog/hardware/apple-mac-studio-m3-ultra
+  type: hardware-product
+  name: "Apple Mac Studio (M3 Ultra, 2025)"
+  identity_note: >-
+    Apple Mac Studio 2025 configuration with M3 Ultra integrated SoC, not a standalone GPU
+    or the M4 Max configuration.
+  references:
+    - type: product-page
+      source:
+        url: https://support.apple.com/en-gb/122211
+      purposes: [identification, research]
+      authority: official
+      note: "Official manufacturer product page"
+    - type: product-page
+      source:
+        url: https://www.apple.com/newsroom/2025/03/apple-reveals-m3-ultra-taking-apple-silicon-to-a-new-extreme/
+      purposes: [identification, research]
+      authority: official
+      note: "Apple March 2025 M3 Ultra launch statement"
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/apple-inc

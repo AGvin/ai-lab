@@ -1,0 +1,35 @@
+entity:
+  id: catalog/models/cloudflare
+  type: model-producer-view
+  name: Cloudflare models
+  identity_note: >-
+    Cloudflare models is the navigation view for the Cloudflare-trained models represented in this
+    catalog. The current released scope is the Clef decision-model family; Workers AI also hosts
+    models produced by other organizations. Separate model authorship from Cloudflare's inference
+    service, AI Gateway, serving configuration and fine-tuning offerings. Select a concrete Clef
+    member and its supported interface; a hosting entry does not transfer another producer's model
+    identity to Cloudflare.
+  references:
+    - type: documentation
+      source:
+        url: https://developers.cloudflare.com/workers-ai/models/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developers.cloudflare.com/changelog/post/2026-10-09-clef-omni-workers-ai/
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://blog.cloudflare.com/clef-decision-models/
+      purposes: [identification, research]
+      authority: official

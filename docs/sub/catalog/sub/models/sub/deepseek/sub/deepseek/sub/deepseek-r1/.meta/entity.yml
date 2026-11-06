@@ -1,0 +1,20 @@
+entity:
+  id: catalog/models/deepseek/deepseek/deepseek-r1
+  type: model
+  name: DeepSeek-R1
+  identity_note: >-
+    DeepSeek-R1 is the original released reasoning checkpoint based on DeepSeek-V3-Base, distinct from R1-Zero, R1-0528 and Qwen/Llama distilled checkpoints. The card reports 671B total/37B active parameters, MoE and 128K context. Activated count is not storage or serving-memory demand. The publisher declares MIT for original code and weights; distilled models retain distinct upstream Qwen/Llama obligations. The card's historical Transformers support statement and Hub-generated loading examples differ; current runtime compatibility has not been validated. Benchmark claims are not independently reproduced. Ultimate beneficial ownership or governance/control rights have not been fully verified. This is not a finding of Russian ownership or adoption clearance. Pin the exact original R1 revision; do not silently substitute an API alias, later release or distilled model. Review remote code and confirm serving support independently before loading. Isolate generated code and tool execution; validate outputs and resource requirements.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/deepseek-ai/DeepSeek-R1
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/LICENSE
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/deepseek/deepseek

@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/instrumentaleval
+  type: dataset
+  name: "InstrumentalEval"
+  aliases:
+    - "Instrumental Goal Pursuit Evaluation"
+  identity_note: >-
+    Publisher's evaluation artifact for testing instrumental-goal behavior of reinforcement-learning language models, with six distinct alignment-drift scenario CSV files; distinct from executed experiments or model behavior claims.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/yf-he/InstrumentalEval
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/yf-he/InstrumentalEval/blob/269678168cf0388bf5dd7d10dfaed4af07905c49/README.md
+      purposes: [research]
+      authority: official

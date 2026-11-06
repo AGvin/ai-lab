@@ -1,0 +1,20 @@
+entity:
+  id: catalog/models/sarvam-ai/sarvam/models/sarvam-30b
+  type: model
+  name: Sarvam-30B
+  identity_note: >-
+    Sarvam AI's released 30B-branded MoE reasoning/chat weights are declared Apache-2.0. The card reports 2.4B non-embedding active parameters; that figure is not total storage or residency demand. The hosted sarvam-30b Chat Completions route was fully retired in the August 18, 2026 changelog. Retired API access does not establish withdrawal of published weights. Keep the historical hosted route distinct from downloadable artifacts. Review and pin custom model code/runtime, validate multilingual outputs and tool calls, and determine hardware fit from the full model and workload configuration. Ownership/control-chain review is pending; no Russian-control finding or eligibility clearance.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/sarvamai/sarvam-30b
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.sarvam.ai/changelog/2026/8/18
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/sarvam-ai/sarvam

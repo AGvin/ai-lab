@@ -1,22 +1,31 @@
 # Mistral Small
 
-Mistral Small is a model family produced by Mistral AI. Mistral AI describes Mistral Small 4 as the next major release in this family.
+Mistral Small is a model family produced by Mistral AI. Mistral AI describes Mistral Small 4 as a major release in this family.
 
 ## Translations
 
 - English
-- [Українська](./l10n/uk_UA/)
 
 ## Producer
 
-- [Mistral AI](../../../../../../../../../producers/sub/m/sub/mistral-ai/)
+- Producer: [Mistral AI](../../../../../producers/sub/m/sub/mistral-ai/)
 
 ## Models
 
-- [`Mistral Small 4`](./sub/models/sub/mistral-small-4/) — open-weight multimodal MoE model released in March 2026.
+- Model: [Leanstral 1.5 119B A6B](./sub/models/sub/leanstral-1-5-119b-a6b/)
+- Model: [Mistral Small 4](./sub/models/sub/mistral-small-4/)
 
-No additional series layer is materialized here because the current documented source identifies `Mistral Small` as the family and `Mistral Small 4` as the concrete released model.
+## Scope and status
+
+Mistral Small 4 combines general instruction following and configurable reasoning. Mistral explicitly identifies Leanstral 1.5 as a specialization within this family. [Mistral Small 4 weights and reasoning settings](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603) [Leanstral 1.5 weights and family lineage](https://huggingface.co/mistralai/Leanstral-1.5-119B-A6B)
+
+## Operational boundaries
+
+Leanstral’s retired Labs endpoint does not erase the released checkpoint. Quantized weights, EAGLE decoding heads and reasoning modes are not additional family-level trained-model identities. [Mistral Small 4 weights and reasoning settings](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603)
 
 ## Official resources
 
-- [Introducing Mistral Small 4](https://mistral.ai/news/mistral-small-4/)
+- [Mistral Small 4 release](https://mistral.ai/news/mistral-small-4/)
+- [Mistral Small 4 weights and reasoning settings](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603)
+- [Leanstral 1.5 weights and family lineage](https://huggingface.co/mistralai/Leanstral-1.5-119B-A6B)
+- [Mistral model changelog](https://docs.mistral.ai/resources/changelogs)

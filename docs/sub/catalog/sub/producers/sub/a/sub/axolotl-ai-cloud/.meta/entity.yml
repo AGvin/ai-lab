@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/a/axolotl-ai-cloud
+  type: organization
+  name: Axolotl AI Cloud
+  references:
+    - type: repository
+      source:
+        url: https://github.com/axolotl-ai-cloud/axolotl
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://docs.axolotl.ai/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/model-development/axolotl

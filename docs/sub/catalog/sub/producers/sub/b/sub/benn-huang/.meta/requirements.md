@@ -6,6 +6,7 @@
 - Keep original authorship distinct from the current Mediocre, LLC stewardship layer and community contributions.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current first-party author/profile and Chatbox repository references.
+- Support original author attribution with the upstream package author field and current operator attribution with the official Chatbox help center; do not label the individual as the sole current service operator.
 
 ## Validation
 

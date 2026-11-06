@@ -1,0 +1,30 @@
+entity:
+  id: catalog/services/knowledge-workspaces/glean-enterprise-ai-workspace
+  type: service
+  name: Glean Enterprise AI Workspace
+  aliases:
+    - Glean Assistant
+    - Glean Enterprise AI Coworker
+  identity_note: >-
+    Glean's company-connected enterprise AI assistant and knowledge workspace for permission-aware retrieval, grounded answers, work drafting and connected actions. The managed customer-tenant product is distinct from any third-party model or connected enterprise source system.
+  references:
+    - type: official-site
+      source:
+        url: https://www.glean.com/ai-assistant
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.glean.com/user-guide/about/what-is-glean
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.glean.com/user-guide/assistant/how-glean-accesses-info
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.glean.com/user-guide/assistant/ai-answers
+      purposes: [research]
+      authority: official

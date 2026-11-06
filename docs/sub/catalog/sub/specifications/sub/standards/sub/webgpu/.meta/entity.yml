@@ -1,0 +1,29 @@
+entity:
+  id: catalog/specifications/standards/webgpu
+  name: "WebGPU"
+  aliases:
+    - "WebGPU API"
+  identity_note: >-
+    GPU graphics and computation API from W3C GPU for the Web Working Group. Latest published
+    Candidate Recommendation Draft 15 September 2026; separate ongoing Editor's Draft observed 30
+    October 2026. Neither is final W3C Recommendation. Hardware, browser and driver support are
+    independent.
+  references:
+    - type: specification
+      source:
+        url: https://www.w3.org/TR/2026/CRD-webgpu-20260915/
+      purposes: [identification, research]
+      authority: official
+      note: "Published Candidate Recommendation Draft, 15 September 2026"
+    - type: specification
+      source:
+        url: https://www.w3.org/TR/webgpu/
+      purposes: [identification, research]
+      authority: official
+      note: "W3C latest published version entry"
+    - type: specification
+      source:
+        url: https://gpuweb.github.io/gpuweb/
+      purposes: [identification, research]
+      authority: official
+      note: "Separate Editor's Draft, observed 30 October 2026"

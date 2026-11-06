@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c04cc939229b624dea9511cda1274bae10747ba0
+      entity.yml: gitblob:783335fdf2c206951d5f1f922dfe8ceb6826f645
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -59,11 +59,33 @@ cache:
           purposes:
           - research
           authority: official
+        - type: repository
+          source:
+            url: https://github.com/agentscope-ai/agentscope
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.alibabacloud.com/blog/602578
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/agentscope-ai/agentscope/blob/main/pyproject.toml
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: has-part
           target: catalog/producers/a/alibaba-cloud
         - type: produces
           target: catalog/software/gateways/api-management-gateways/higress
+        - type: produces
+          target: catalog/software/agent-frameworks/agentscope
     aliases:
       effective:
         schema: default

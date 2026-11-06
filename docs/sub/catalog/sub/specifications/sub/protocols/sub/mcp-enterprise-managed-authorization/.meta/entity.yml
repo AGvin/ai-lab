@@ -1,0 +1,30 @@
+entity:
+  id: catalog/specifications/protocols/mcp-enterprise-managed-authorization
+  name: MCP Enterprise-Managed Authorization
+  aliases:
+    - Enterprise-Managed Authorization
+    - MCP EMA
+    - EMA
+    - Cross-App Access
+    - XAA
+  references:
+    - type: specification
+      source:
+        url: https://github.com/modelcontextprotocol/ext-auth/blob/main/specification/stable/enterprise-managed-authorization.mdx
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Stable Model Context Protocol authorization extension; re-check the official stable specification before updating normative flow or token requirements.
+    - type: documentation
+      source:
+        url: https://modelcontextprotocol.io/extensions/auth/enterprise-managed-authorization
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/modelcontextprotocol/ext-auth
+      purposes:
+        - research
+      authority: official

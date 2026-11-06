@@ -1,0 +1,118 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:f40e32dc6b0edfc15c26c86abf9bb664e08298bf
+    parent:
+      entity.yml: gitblob:e19a99e0dd434a1f5367191cd3671f10c26d7a46
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/model-and-data-platforms/dataset-curation/mostly-ai-data-intelligence-platform
+        type: software
+        name: MOSTLY AI Data Intelligence Platform
+        aliases:
+        - MOSTLY AI Platform
+        - MOSTLY AI, powered by Syntho
+        references:
+        - type: product-page
+          source:
+            url: https://mostly.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://mostly.ai/docs
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.syntho.ai/syntho-acquires-mostly-ai-trademark-and-related-assets/
+          purposes:
+          - research
+          authority: official
+          note: Syntho announced acquisition of the MOSTLY AI brand on June 9, 2026;
+            the announcement does not establish software authorship or ownership.
+        - type: article
+          source:
+            url: https://mostly.ai/blog/unlocking-ai-training-data-for-all-mostly-ai-releases-worlds-first-industry-grade-open-source-toolkit-for-synthetic-data
+          purposes:
+          - research
+          authority: official
+          note: The January 23, 2025 company announcement separates its Synthetic
+            Data SDK from its existing Enterprise Platform.
+        - type: article
+          source:
+            url: https://mostly.ai/blog/data-for-everyone
+          purposes:
+          - research
+          authority: official
+          note: The July 22, 2025 account describes building the MOSTLY AI Assistant
+            and data-intelligence environment before the 2026 brand acquisition.
+        - type: repository
+          source:
+            url: https://github.com/mostly-ai/mostlyai
+          purposes:
+          - research
+          authority: official
+          note: This is the separately installable Synthetic Data SDK repository,
+            not a repository or blanket license for the whole Data Intelligence Platform.
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mostly-ai-solutions-mp-gmbh
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

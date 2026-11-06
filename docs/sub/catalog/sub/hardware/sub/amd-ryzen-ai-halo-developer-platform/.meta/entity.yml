@@ -1,0 +1,43 @@
+entity:
+  id: catalog/hardware/amd-ryzen-ai-halo-developer-platform
+  type: hardware
+  name: AMD Ryzen AI Halo Developer Platform
+  identity_note: >-
+    AMD Ryzen AI Halo Developer Platform is AMD's complete local-AI developer computer, distinct from its processors and OEM partner systems. AMD's current product page shows a 128 GB shared-LPDDR5x Ryzen AI Max+ 395 / Radeon 8060S configuration and separately labels a Ryzen AI Max+ PRO 495 / Radeon 8065S version with 192 GB memory support as 'Coming Soon'. A previously recorded third-party US listing does not establish manufacturer availability or current retail stock; keep the product lifecycle discrepancy unresolved. AMD's 200B/300B parameter fit and performance comparisons are vendor configuration claims, not independently verified model fit or measured throughput. OS, firmware, stock, region, GPU allocation and peripheral specifications belong to the exact assembled configuration.
+  aliases:
+    - AMD Ryzen AI Halo
+  references:
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/processors/desktops/ryzen/ryzen-ai-halo.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/processors/desktops/ryzen/ryzen-ai-halo/ryzen-ai-max-plus-395.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developer.amd.com/playbooks/user-guide/
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.amd.com/en/blogs/2026/amd-powers-next-generation-agent-computers-with-new-ryzen-ai-hal.html
+      purposes:
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.amd.com/en/products/processors/laptop/ryzen-pro/ai-max-pro-400-series/amd-ryzen-ai-max-plus-pro-495.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/advanced-micro-devices-inc

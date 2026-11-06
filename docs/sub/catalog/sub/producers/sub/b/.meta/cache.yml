@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:2f014c200c2282ae14ccd5407a676e2770042b54
+      entity.yml: gitblob:14d7c5336b98da3ce14bc46c931478ee37a1776d
     parent:
       entity.yml: gitblob:cc3acaf818290b5a5764a268d036f3e2b1724aaa
       node.yml: gitblob:2a9b81e5b7fca976b33c682f3afa46cfd07a1287
@@ -44,7 +44,7 @@ cache:
       effective:
         schema: default
         id: catalog/producers/b
-        type: catalog-index
+        type: alphabetical-index
         name: Producers — B
     aliases:
       effective:

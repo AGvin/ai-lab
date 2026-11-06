@@ -2,7 +2,8 @@ entity:
   id: catalog/agent-skills/collections/openai-skills
   type: skill-collection
   name: OpenAI Skills
-  identity_note: The openai/skills repository is retained as the historical source of the selected system skill but is deprecated in favor of OpenAI Plugins for current Codex plugin examples.
+  identity_note: >-
+    The openai/skills repository is retained as the historical source of the selected system skill but is deprecated in favor of OpenAI Plugins for current Codex plugin examples. OpenAI marks openai/skills deprecated and directs current Codex skill/plugin examples to openai/plugins. Retain this identity only as the historical/system source already selected here; it is not a current-installation recommendation. Licenses are stored per skill directory. Repository deprecation is distinct from GitHub archival status.
   references:
     - type: repository
       source:
@@ -19,6 +20,11 @@ entity:
         - research
       authority: official
       note: Current successor repository for Codex plugin examples as directed by openai/skills.
+    - type: documentation
+      source:
+        url: https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/README.md
+      purposes: [identification, research]
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/o/openai
