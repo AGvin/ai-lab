@@ -14,3 +14,11 @@
 
 - Current Jina API reference substantiates three host categories and authentication differences.
 - Canonical relation resolves both ways and new internal links/index point to a materialized README.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Jina's first-party API reference distinguishes three service hosts: api.jina.ai for Search Foundation embeddings/reranking and model access, r.jina.ai for Reader, and s.jina.ai for Search. The Search Foundation API supports embeddings, reranking and model inventory, with modality and option support depending on the chosen trained model.
+- Jina's bearer-key requirements are host-specific: the Reader has restricted unauthenticated use while Search requires authentication. The Jina-branded API remains a hosted provider service, not an Elastic inference deployment, generic vector database or automatically redistributable model.
+- Verified first-party source 1: https://docs.jina.ai/
+- Verified first-party source 2: https://jina.ai/
+- Scope: only current provider-documented hosted service identity and endpoint/version boundaries. No new metadata or entity, reader-repair credit, independent run, complete freshness/legal/security clearance, root-wide schema/cache/CI/render, clean pass or final delivery.

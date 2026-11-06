@@ -15,3 +15,12 @@
 - API base and vendor product boundaries are substantiated by [Inference](https://docs.digitalocean.com/products/inference/), [Supported Models](https://docs.digitalocean.com/products/inference/details/models/), [Serverless API](https://docs.digitalocean.com/products/inference/reference/api/serverless-inference/), and [Availability](https://docs.digitalocean.com/products/inference/details/availability/).
 - The Model APIs index lists the one materialized DigitalOcean Inference service exactly once; producer inverse resolves to an existing canonical entity.
 - No authenticated API execution, legal/security certification, performance benchmark, full model availability/freshness audit, full repository CI, or clean whole-catalog pass.
+
+## Scoped original-source qualification — 2026-11-06
+
+- DigitalOcean's current Inference docs operate one managed model catalog and inference surface with serverless APIs, dedicated GPU inference and Inference Router variants. The serverless endpoint uses https://inference.do-ai.run, separate from the DigitalOcean control-plane API; model access keys are distinct from agent endpoint keys.
+- The official API endpoint list includes model listings, Chat Completions/Responses, embeddings and modality-specific media workflows, including asynchronous video generation. APIs, model coverage, regional deployment, output retention and hosted third-party authorship differ by endpoint; do not transfer general compatibility claims into guarantees for every model.
+- Verified first-party source 1: https://docs.digitalocean.com/products/inference/
+- Verified first-party source 2: https://docs.digitalocean.com/reference/api/reference/serverless-inference/
+- Verified first-party source 3: https://docs.digitalocean.com/products/inference/how-to/manage-model-access-keys/
+- Scope: only current provider-documented hosted service identity and endpoint/version boundaries. No new metadata or entity, reader-repair credit, independent run, complete freshness/legal/security clearance, root-wide schema/cache/CI/render, clean pass or final delivery.

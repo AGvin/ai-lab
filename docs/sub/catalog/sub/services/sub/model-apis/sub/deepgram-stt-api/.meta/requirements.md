@@ -14,3 +14,12 @@
 
 - [STT overview](https://developers.deepgram.com/docs/stt/getting-started), [REST reference](https://developers.deepgram.com/reference/speech-to-text/listen-pre-recorded), [streaming reference](https://developers.deepgram.com/reference/speech-to-text/listen-streaming) and [October security changelog](https://developers.deepgram.com/changelog/2026/10/27) support documented scope.
 - The Model APIs index links one canonical Deepgram STT service; no distinct developer SDK or model entity is added.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Deepgram STT exposes prerecorded transcription through POST https://api.deepgram.com/v1/listen and live transcription through wss://api.deepgram.com/v1/listen. REST payloads, streaming transport, model-specific diarization/language/finalization and latency guarantees are not interchangeable; official endpoints accept an API token or supported temporary JWT.
+- The original October 27, 2026 changelog withdraws dg-token callback-header verification. Treat callbacks as externally delivered sensitive transcription data: use documented Basic Auth for callback receivers or verify a secret in STT extra metadata where applicable, alongside consent, HTTPS and retention controls.
+- Verified first-party source 1: https://developers.deepgram.com/reference/speech-to-text/listen-pre-recorded
+- Verified first-party source 2: https://developers.deepgram.com/reference/speech-to-text/listen-streaming
+- Verified first-party source 3: https://developers.deepgram.com/changelog/2026/10/27
+- Scope: only current provider-documented hosted service identity and endpoint/version boundaries. No new metadata or entity, reader-repair credit, independent run, complete freshness/legal/security clearance, root-wide schema/cache/CI/render, clean pass or final delivery.

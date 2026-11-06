@@ -14,3 +14,12 @@
 
 - Producer inverse, Model APIs index and documentation links resolve.
 - Historical/current naming, API URL, authentication and original model-publisher boundaries are explicit.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Nebius Token Factory is the current first-party hosted inference/API product identity for the earlier Nebius AI Studio service. Its official API describes OpenAI-compatible chat, responses, embeddings, reranking and model listings, with distinct fine-tuning and dedicated-endpoint resources; these features are managed provider capabilities, not proof of a distributable open-source runtime.
+- The official Token Factory documentation shows account API-key access and separate billing/credit and deployment rules. Current model inventory, version behavior, rate caps, storage/privacy and dedicated pricing require exact tenant, endpoint and plan checks. Hosted third-party model weights remain attributed to upstream producers.
+- Verified first-party source 1: https://api.tokenfactory.nebius.com/docs
+- Verified first-party source 2: https://nebius.com/services/token-factory/inference-service
+- Verified first-party source 3: https://docs.tokenfactory.nebius.com/other-capabilities/billing
+- Scope: only current provider-documented hosted service identity and endpoint/version boundaries. No new metadata or entity, reader-repair credit, independent run, complete freshness/legal/security clearance, root-wide schema/cache/CI/render, clean pass or final delivery.
