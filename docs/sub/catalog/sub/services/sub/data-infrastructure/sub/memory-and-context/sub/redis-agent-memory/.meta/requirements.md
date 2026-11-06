@@ -32,3 +32,9 @@ The original Agent Memory Server now lives under the upstream repository's V0 re
 - Render every non-hidden current-entity relation in its semantic group, ordered by explicit order, canonical target display name and target ID. Preserve source/contributor, organizational and product distinctions.
 - Include the official resources from canonical references as readable links. Navigation to a related catalog entry must resolve to its reader, not to metadata.
 - Keep changing version, plan, availability and policy details qualified by the cited source; no general offline, license or privacy guarantee follows from producer attribution.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Redis Agent Memory is a managed agent-memory service available through Redis Cloud, not equivalent to the generic Redis database or the historical V0 research server. Current deployment, retention and pricing claims require versioned validation.
+- Publisher source: https://redis.io/docs/latest/operate/rc/
+- Scope: existing managed service identity and producer boundary only; no authenticated API, security/privacy, full-repository, clean-pass or final gate certification.
