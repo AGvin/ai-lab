@@ -16,3 +16,9 @@
 - Meta AI remains a hosted assistant service rather than the Muse or Llama model family.
 - Meta AI is not collapsed into the distinct Muse background personal-agent service.
 - Producer provenance resolves bidirectionally to Meta.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Meta AI is the hosted assistant across Meta-operated apps and devices, distinct from the Llama/Muse model families and specialized Meta products. Device, regional and memory behavior are product-specific.
+- First-party service surface: https://www.meta.ai/
+- Existing service identity/source boundary only; no runtime, privacy, legal, security, full-repository clean-pass or final-gate credit.
