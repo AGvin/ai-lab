@@ -13,3 +13,11 @@
 
 - Vercel AI Gateway is not treated as an installable self-managed gateway.
 - The gateway does not become the canonical owner of routed third-party models.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Vercel AI Gateway is Vercel-operated model routing, provider selection and billing, distinct from installable Vercel AI SDK and the model authors whose requests are routed. Official BYOK documentation says the gateway first uses team-shared provider credentials, then can retry with Vercel system credentials on failure; this fallback is charged against the team's AI Gateway credit balance. Provider routing can use allowlists and an ordered fallback selection.
+- Do not label BYOK as strict key-only billing or single-provider data residency without explicit fallback restrictions. Check provider selection, credential scope, costs and data path before sending confidential prompts; models, routing and prices remain service state.
+- Verified first-party source 1: https://vercel.com/docs/ai-gateway/authentication-and-byok/byok
+- Verified first-party source 2: https://vercel.com/docs/ai-gateway/models-and-providers/provider-options
+- This is a bounded identity/source qualification, not live service execution, credential review, security/privacy certification, complete license/ownership clearance, independent benchmarking, full schema/cache/CI/render, clean-group acceptance or final-delivery credit.

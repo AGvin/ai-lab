@@ -14,3 +14,11 @@
 - Kong AI Gateway 2.x is not collapsed back into the general Kong Gateway software identity.
 - The entity remains an AI/model gateway service even when its traffic model includes MCP and agent workloads beyond model API calls.
 - Producer provenance resolves to Kong Inc.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Kong AI Gateway 2.0 became generally available on 2026-09-01 as a separately versioned AI-native gateway runtime/control plane. Its first-party launch describes MCP server bundling with ACL-driven tool visibility, identity-aware traffic policies and multi-modal pricing. Legacy Kong Gateway 3.x AI plugins remain a distinct software/runtime lineage: 3.14 LTS still supports them, with 3.18 planned to make them opt-in.
+- Document policies and migration per exact Kong AI Gateway or Kong Gateway 3.x release. MCP ACL, pricing enforcement, provider support, and production certification are not interchangeable between runtime lines; integration does not change upstream model or MCP tool ownership.
+- Verified first-party source 1: https://konghq.com/blog/product-releases/kong-ai-gateway-2-0-ga
+- Verified first-party source 2: https://developer.konghq.com/ai-gateway/
+- This is a bounded identity/source qualification, not live service execution, credential review, security/privacy certification, complete license/ownership clearance, independent benchmarking, full schema/cache/CI/render, clean-group acceptance or final-delivery credit.

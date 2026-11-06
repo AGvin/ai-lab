@@ -16,3 +16,12 @@
 - Vercel Connect remains agent-integration/authentication-first rather than a generic workflow engine or model gateway.
 - General availability remains source-backed to Vercel's current launch material.
 - Producer provenance resolves bidirectionally to Vercel Inc.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Vercel Connect reached general availability on 2026-08-25, distinct from its June 2026 beta announcement. It manages external service connectors using scoped, short-lived runtime tokens and project/environment attachment; the provider documents revoke capability and verified webhook forwarding. Some trigger integrations were documented as beta even after the overall Connect service GA.
+- Validate connector permissions, runtime identity, authorization scope and environment isolation per provider. A managed connector token does not grant unlimited access to every external resource; do not treat individual connector, Vercel AI SDK or AI Gateway as additional Connect identities.
+- Verified first-party source 1: https://vercel.com/changelog/vercel-connect-ga
+- Verified first-party source 2: https://vercel.com/changelog/vercel-connect-secure-access-to-external-services-for-your-agents
+- Verified first-party source 3: https://vercel.com/docs/connect
+- This is a bounded identity/source qualification, not live service execution, credential review, security/privacy certification, complete license/ownership clearance, independent benchmarking, full schema/cache/CI/render, clean-group acceptance or final-delivery credit.
