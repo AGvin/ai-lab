@@ -15,3 +15,11 @@
 - AgentCore is not collapsed into the general Bedrock model-access identity.
 - Third-party model provenance remains with the upstream model producer.
 - Producer provenance resolves bidirectionally to Amazon Web Services.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Amazon Bedrock is an AWS-managed inference and application platform offering AWS and third-party foundation models. Its documented runtime compatibility includes InvokeModel, Converse, and OpenAI-compatible Chat Completions/Responses patterns; support is model- and region-dependent.
+- AWS hosting, inference profiles, marketplace subscriptions, security/guardrail features and regional availability do not make AWS the original producer of third-party trained models. API compatibility does not guarantee parameter parity or portable data-processing behavior.
+- Verified first-party source 1: https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html
+- Verified first-party source 2: https://docs.aws.amazon.com/bedrock/latest/userguide/models-api-compatibility.html
+- This accepts only service-scoped source identity and documented capability boundaries; it is not an exhaustive freshness audit, authenticated endpoint test, independent compliance/ownership review, global schema/cache/CI/render verification, clean pass or final-delivery gate.

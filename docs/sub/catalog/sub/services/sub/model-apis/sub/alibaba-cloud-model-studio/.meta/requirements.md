@@ -12,3 +12,11 @@
 
 - The service does not become the producer identity of third-party models it hosts.
 - Producer provenance resolves to Alibaba Cloud.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Alibaba Cloud Model Studio is a managed model-API platform exposing Qwen and selected third-party models, including OpenAI-/Anthropic-compatible endpoints. The provider specifies region, service deployment scope and access domain as distinct configuration dimensions affecting inference execution and data location.
+- Model Studio API keys and Base URLs are scoped by region and billing plan; legacy DashScope shared domains, workspace-specific production endpoints and limited trial routes are not interchangeable. Supported models, regions, endpoint compatibility, pricing and deployment terms remain account- and time-dependent.
+- Verified first-party source 1: https://www.alibabacloud.com/help/en/model-studio/regions
+- Verified first-party source 2: https://www.alibabacloud.com/help/en/model-studio/base-url
+- This accepts only service-scoped source identity and documented capability boundaries; it is not an exhaustive freshness audit, authenticated endpoint test, independent compliance/ownership review, global schema/cache/CI/render verification, clean pass or final-delivery gate.

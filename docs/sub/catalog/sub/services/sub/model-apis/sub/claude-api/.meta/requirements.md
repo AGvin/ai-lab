@@ -15,3 +15,11 @@
 - Claude Managed Agents remains separate despite sharing the direct API.
 - Third-party/cloud hosting does not change Anthropic model provenance.
 - Producer provenance resolves bidirectionally to Anthropic.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Anthropic's direct Claude API exposes Messages, Message Batches, token counting, Models, Files and other documented endpoints. The same API platform also exposes Managed Agents and beta surfaces; preserve the independently cataloged Claude Managed Agents platform boundary.
+- API version and beta headers, workspace/key authentication, feature availability, rate limits and model inventory are operationally mutable. Anthropic-trained Claude model provenance is not reassigned to Bedrock, Vertex AI or other hosted routes.
+- Verified first-party source 1: https://platform.claude.com/docs/en/api/overview
+- Verified first-party source 2: https://platform.claude.com/docs/en/api/http
+- This accepts only service-scoped source identity and documented capability boundaries; it is not an exhaustive freshness audit, authenticated endpoint test, independent compliance/ownership review, global schema/cache/CI/render verification, clean pass or final-delivery gate.
