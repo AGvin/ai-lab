@@ -16,3 +16,11 @@
 - Third-party model authors are not described as receiving Together-hosted inference traffic unless current first-party evidence says so.
 - Data-handling claims preserve configuration and service-version boundaries rather than overstating zero retention.
 - The `produces` / `produced-by` relation pair resolves consistently to Together Computer, Inc.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Together AI documents both serverless inference and dedicated-model endpoints. Dedicated-model inference uses reserved hardware and capacity-bounded scaling/pricing; the public API may be shared between modes, but SLA, hardware tenancy, model support and throughput remain mode- and contract-specific.
+- Do not infer default zero retention, universal third-party provider isolation, reserved capacity or performance results without checking the exact Together deployment and data-processing agreement.
+- Verified first-party source 1: https://docs.together.ai/docs/dedicated-endpoints/overview
+- Verified first-party source 2: https://docs.together.ai/docs/serverless/overview
+- This accepts only the existing service identity and bounded source facts, not a full freshness/license/ownership audit, independent benchmarks, permission to process sensitive data, runtime tests, complete schema/cache/CI/render or final delivery.

@@ -16,3 +16,11 @@
 - GroqCloud remains a hosted service profile and does not duplicate third-party model profiles.
 - Data-retention wording preserves the documented exceptions instead of overstating zero retention.
 - The `produces` / `produced-by` relation pair resolves consistently to Groq LLC.
+
+## Scoped original-source qualification — 2026-11-06
+
+- GroqCloud is a hosted inference API and compound-system access service operated by Groq LLC, separate from NVIDIA's concrete Groq 3 LPU hardware. Official rate-limit documentation distinguishes requests/day or minute, tokens/day or minute, and separate input/output budgets; effective limits depend on model and organization.
+- Do not copy illustrative limit tables into immutable entity facts, conflate preview models with production or overstate universal zero retention despite documented exceptions.
+- Verified first-party source 1: https://console.groq.com/docs
+- Verified first-party source 2: https://console.groq.com/docs/rate-limits
+- This accepts only the existing service identity and bounded source facts, not a full freshness/license/ownership audit, independent benchmarks, permission to process sensitive data, runtime tests, complete schema/cache/CI/render or final delivery.
