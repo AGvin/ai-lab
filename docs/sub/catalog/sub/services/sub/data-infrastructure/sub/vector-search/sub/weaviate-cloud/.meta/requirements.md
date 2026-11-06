@@ -12,3 +12,9 @@
 
 - Weaviate Cloud remains a managed vector/search service identity.
 - Producer provenance resolves to Weaviate.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Weaviate Cloud is the provider-operated managed deployment of Weaviate; the open-source/self-managed database and cloud operation have distinct lifecycle and responsibility boundaries.
+- Publisher documentation: https://docs.weaviate.io/cloud
+- Qualification covers the existing service identity/source boundary only. No authenticated runtime testing, independent security/licensing assessment, full-repository checks, clean pass or final gate is claimed.
