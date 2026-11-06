@@ -18,3 +18,9 @@
 
 - The operated Civitai asset catalog and its open-source application are distinct. Repository source-code licensing does not automatically license user-uploaded checkpoints, LoRAs, or images. Original sources: https://github.com/civitai/civitai and https://civitai.com/
 - Only existing service identity and source boundaries are accepted; no runtime, rights, security, full-catalog, or clean-pass certification.
+
+## Scoped original-source qualification — 2026-11-07
+
+- First-party source repository and operated platform have distinct ownership and licensing boundaries. The open-source application license does not grant rights to third-party uploaded models, LoRAs, images or other assets.
+- Sources: https://github.com/civitai/civitai and https://civitai.com/
+- This is a scoped source qualification, not an asset rights audit, security test, or final clean pass.
