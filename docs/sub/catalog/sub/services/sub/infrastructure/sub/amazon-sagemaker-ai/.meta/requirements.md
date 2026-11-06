@@ -16,3 +16,11 @@
 - Feature-level restrictions and access notices are not converted into an unsupported platform-wide shutdown claim.
 - Official references reflect the current provider-managed service lifecycle and deployment boundaries.
 - The `produced-by` relation is reciprocal with AWS's `produces`.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Amazon SageMaker AI provides managed ML model development, training, deployment and inference infrastructure. Its real-time, serverless, asynchronous and batch model serving are distinct deployment modes of the SageMaker service, not separate trained-model producers or Amazon Bedrock interfaces.
+- AWS's explicit July 30, 2026 availability restriction applies to named legacy SageMaker AI features for new customers, not to the whole SageMaker AI platform. Preserve feature-specific access states and separate mutable instance/GPU options, supported containers, quotas, storage/network access, monitoring and billing.
+- Verified first-party source 1: https://aws.amazon.com/sagemaker/ai/features/
+- Verified first-party source 2: https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model-options.html
+- Scope: originally documented hosted service identity and lifecycle/usage limits only; not a complete freshness/legal/security review, independent runtime execution, full schema/cache/CI/render, clean pass or final delivery gate.

@@ -16,3 +16,11 @@
 - Browser Run has an official separately addressable API/service contract rather than being duplicated as a Cloudflare Agents convenience action.
 - Core CDP/HTML/screenshot/scrape interfaces are correctly scoped; beta integrated tools do not imply universal lifecycle stability.
 - Cloudflare producer `produces` inverses this exact service `produced-by` relation.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Cloudflare renamed Browser Rendering to Browser Run on April 15, 2026, without creating a second product. The official docs distinguish Quick Actions for stateless screenshots, PDF, Markdown or extraction tasks from Browser Sessions controlled via Puppeteer, Playwright, CDP and other supported browser integrations.
+- Browser Run's execution and account-scope restrictions are distinct from Cloudflare Agents and Workers AI. Browser concurrency, per-plan usage, session controls, target-site terms, data privacy, authentication, network egress and anti-bot behavior remain scenario-dependent; browser tooling is not a right to bypass access restrictions.
+- Verified first-party source 1: https://developers.cloudflare.com/browser-run/
+- Verified first-party source 2: https://developers.cloudflare.com/changelog/post/2026-04-15-br-rename/
+- Scope: originally documented hosted service identity and lifecycle/usage limits only; not a complete freshness/legal/security review, independent runtime execution, full schema/cache/CI/render, clean pass or final delivery gate.

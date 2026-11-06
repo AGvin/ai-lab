@@ -15,7 +15,7 @@
 - The existing Features & Labels producer and this new service reciprocally link; only the new Model APIs entry counts as frozen-candidate acceptance.
 - The fal.ai brand versus legal entity duplicate remains explicit in operational work-state, with no new duplicate producer node.
 
-## Scoped original-source qualification — 2026-11-06
+## Follow-up original-source review — 2026-11-06 (no additional gate)
 
 - fal Model APIs are provider-hosted model invocation interfaces. The documented synchronous fal.run route returns results directly and does not automatically retry transient failures, whereas queue.fal.run accepts jobs and exposes request/status/result/cancel semantics. Endpoint-specific streaming, real-time and synchronous fallback chains are not available uniformly.
 - Official fal requests use an API key with the Authorization: Key scheme for authenticated endpoints. Request/response storage can follow account defaults or supported request headers; model-owner identity, content rights, pricing, model schema, concurrency and output retention remain per-model and per-account.
@@ -23,3 +23,4 @@
 - Verified first-party source 2: https://fal.ai/docs/api-reference/inference-api/queue/submit
 - Verified first-party source 3: https://fal.ai/docs/documentation/model-apis/inference/fallback-chains
 - Scope: only current provider-documented hosted service identity and endpoint/version boundaries. No new metadata or entity, reader-repair credit, independent run, complete freshness/legal/security clearance, root-wide schema/cache/CI/render, clean pass or final delivery.
+- Existing source gate was already accepted in Enrichment Batch 010; this follow-up adds **zero** identity, metadata or scoped-source acceptance credit. Avoid duplicate counting.

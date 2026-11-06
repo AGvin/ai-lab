@@ -14,3 +14,12 @@
 - Modal is clearly classified as hosted infrastructure rather than an installable inference runtime.
 - Mutable infrastructure details are time-scoped when stated.
 - Producer provenance resolves to Modal Labs, Inc.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Modal is a hosted serverless compute platform for developer-operated functions, GPU applications, batch workloads and secured web-serving endpoints, not a pretrained model producer. Modal's current docs also offer dedicated/shared LLM Endpoints and sandbox/server primitives, which should not be misclassified as unrelated independent provider identities without a distinct ownership decision.
+- Exact GPU types, server scaling and preemption, regions, deployment/authentication patterns, instance startup, project scopes, persistence, cost and usage credits are mutable plan/implementation properties. An OpenAI-compatible model endpoint deployed on Modal is still customer/model-owned code, not a Modal-authored trained model.
+- Verified first-party source 1: https://modal.com/docs
+- Verified first-party source 2: https://modal.com/docs/cli/latest/endpoint
+- Verified first-party source 3: https://modal.com/docs/sdk/py/releases
+- Scope: originally documented hosted service identity and lifecycle/usage limits only; not a complete freshness/legal/security review, independent runtime execution, full schema/cache/CI/render, clean pass or final delivery gate.

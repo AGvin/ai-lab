@@ -22,3 +22,12 @@
 - Mutable pricing, hardware, availability, limits, and compliance state are not frozen as timeless facts.
 - The `produced-by` relation resolves to Runpod, Inc. and is matched by the producer's inverse `produces` relation.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Runpod provides externally managed GPU/CPU compute with distinct Pods, autoscaling Serverless execution and provider-managed Public Endpoints. These are documented product modes; deploying an open model or third-party inference runtime on a Pod does not transfer authorship or packaging rights to Runpod.
+- Cloud class, resource availability, queue/worker startup, template/container security, SSH/Jupyter access, network volume persistence and billing per compute versus storage mode are account and version dependent. Credential scope and user-data/control obligations require workload-specific verification.
+- Verified first-party source 1: https://docs.runpod.io/
+- Verified first-party source 2: https://docs.runpod.io/pods/overview
+- Verified first-party source 3: https://docs.runpod.io/serverless/overview
+- Scope: originally documented hosted service identity and lifecycle/usage limits only; not a complete freshness/legal/security review, independent runtime execution, full schema/cache/CI/render, clean pass or final delivery gate.
