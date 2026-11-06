@@ -11,3 +11,9 @@
 
 - Zilliz Cloud remains managed vector/search infrastructure rather than generic cloud infrastructure.
 - Producer provenance resolves to Zilliz.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Zilliz Cloud is managed vector-search infrastructure based on Milvus, distinct from self-hosted Milvus. Serverless, dedicated and BYOC offerings are deployment variants rather than automatically new products.
+- Publisher documentation: https://docs.zilliz.com/
+- Qualification covers the existing service identity/source boundary only. No authenticated runtime testing, independent security/licensing assessment, full-repository checks, clean pass or final gate is claimed.
