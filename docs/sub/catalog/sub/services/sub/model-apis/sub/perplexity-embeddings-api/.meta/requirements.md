@@ -21,3 +21,11 @@
 - Render every visible current relation using canonical target names, explicit order first and alphabetical order within each relation group. Keep metadata paths out of reader navigation.
 - Recheck account eligibility, exact artifact access, versions and terms before deployment. This source review does not certify runtime performance.
 - Reviewed sources: <https://docs.perplexity.ai/docs/embeddings/quickstart>, <https://docs.perplexity.ai/docs/resources/privacy-security>.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Perplexity Embeddings API provides hosted text embeddings and grouped-document contextualized embedding generation. This service is distinct from Perplexity Search API and Agent API and from the underlying PPLX embedding model identities. Dimensionality, quantization/encoding, API request groupings and similarity procedures are version-specific.
+- Do not mix standard independent texts and document-group embeddings as identical vectors without model-specific guidance, or presume unverified data retention, global rate limits and pricing.
+- Verified first-party source 1: https://docs.perplexity.ai/docs/embeddings/quickstart
+- Verified first-party source 2: https://docs.perplexity.ai/docs/resources/privacy-security
+- This bounded source qualification does not establish a full freshness audit, independently validated runtime, legal/model-license clearance, current pricing or entitlements, global schema/cache/CI/render or final publication.

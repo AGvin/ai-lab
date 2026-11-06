@@ -15,3 +15,11 @@
 - Mistral API remains the direct hosted model-access service rather than Mistral Studio or a model family.
 - Mutable API capability/lifecycle claims remain source-scoped.
 - Producer provenance resolves to Mistral AI.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Mistral API is Mistral AI's direct hosted model API with separately documented chat, embeddings, OCR, audio, files and batch endpoints; developer Studio, Vibe and downloadable/self-hosted models are separate product or deployment identities. The API reference labels preview/beta capability groups, so endpoint availability and stability are version-scoped.
+- Do not assume a Mistral model's open weights, Studio console privileges or beta agent endpoints are automatically available under any direct API key or region.
+- Verified first-party source 1: https://docs.mistral.ai/api/
+- Verified first-party source 2: https://docs.mistral.ai/api/endpoint/models
+- This bounded source qualification does not establish a full freshness audit, independently validated runtime, legal/model-license clearance, current pricing or entitlements, global schema/cache/CI/render or final publication.
