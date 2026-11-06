@@ -11,3 +11,9 @@
 
 - turbopuffer remains managed search infrastructure rather than a model API or generic database service.
 - Producer provenance resolves to turbopuffer.
+
+## Scoped original-source qualification — 2026-11-07
+
+- turbopuffer is managed object-storage-native vector and full-text search infrastructure; indexing, hybrid retrieval and namespaces are capabilities, not independently owned models or datasets.
+- Publisher documentation: https://turbopuffer.com/docs
+- Qualification covers the existing service identity/source boundary only. No authenticated runtime testing, independent security/licensing assessment, full-repository checks, clean pass or final gate is claimed.
