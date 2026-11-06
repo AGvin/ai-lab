@@ -13,3 +13,9 @@
 - The entity remains the hosted Studio product rather than a concrete model, skill collection, or generic prompt concept.
 - Agentic Search is treated as a Studio/Search Toolkit/Libraries capability unless Mistral establishes a separate durable product identity.
 - Producer provenance resolves to Mistral AI.
+
+## Scoped original-source qualification — 2026-11-06
+
+Studio prompt/skill versioning and evaluation workflows are distinct from model inference and local execution. Official documentation: https://docs.mistral.ai/studio/concepts and https://docs.mistral.ai/studio/prompts-and-skills/versions-and-aliases
+
+Scope: source and service-identity qualification only; not a full security, runtime, or clean-pass audit.
