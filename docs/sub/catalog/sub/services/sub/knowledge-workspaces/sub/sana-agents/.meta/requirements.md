@@ -15,3 +15,9 @@
 - Sana Agents, Sana Learn, and Sana Labs AB remain separate identities.
 - The `entity-relations` block resolves to the canonical Sana Labs AB producer.
 - Official Sana references match canonical entity metadata.
+
+## Scoped original-source qualification — 2026-11-06
+
+Workday completed acquisition of Sana in November 2025; legacy producer metadata may describe historical provenance rather than current ownership. Official announcement: https://newsroom.workday.com/2025-11-04-Workday-Completes-Acquisition-of-Sana
+
+Scope: source and service-identity qualification only; not a full security, runtime, or clean-pass audit.
