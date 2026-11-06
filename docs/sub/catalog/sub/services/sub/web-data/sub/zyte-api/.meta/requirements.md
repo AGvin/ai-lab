@@ -16,3 +16,13 @@
 - Published first-party documentation demonstrates a live publicly documented hosted service rather than roadmap-only capability.
 - Scope/feature maturity and site/data access limits are source-backed and not overgeneralized.
 - Exact `produced-by` relation has an inverse `produces` link in the named vendor producer.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Zyte API is the publisher-managed web-data extract service with REST /v1/extract, proxy mode, browser-rendered requests, automatic extraction, SERP Search API and CDP-managed browser connections. The official docs explicitly distinguish proxy mode feature limitations from REST and CDP, while hosted Zyte API remains distinct from Scrapy OSS and hosted Scrapy Cloud.
+- Current CDP documentation requires a subscription or configured pay-as-you-go spending limit plus completed business verification; a CDP connection has its own browser, IP and cookie jar, and separate browser connections cannot resume its state. Automatic sessions in REST browser requests are different products/semantics. CDP metering uses navigation count or session duration and can continue after script disconnect unless the browser is explicitly terminated.
+- Service-managed browser behavior is not universal permission to automate private sites; confirm customer business rights, legal content reuse, personal-data handling, target restrictions, proxy geography, costs and retention. Publisher anti-bot and extraction-success rates are not independently certified.
+- Verified first-party source 1: https://docs.zyte.com/zyte-api/usage/index.html
+- Verified first-party source 2: https://docs.zyte.com/zyte-api/usage/cdp.html
+- Verified first-party source 3: https://docs.zyte.com/zyte-api/usage/proxy-mode.html
+- Qualification is existing original-provider identity and bounded API/data/license/version claims, not live authenticated tests, full terms/privacy/legal review, independent benchmark, new entity/metadata, reader repair, global schema/cache/CI/render, clean pass, final-delivery gate or merge.

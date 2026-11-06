@@ -30,3 +30,13 @@ The customer terms effective October 17, 2026 restrict output resale, creation o
 - Render every non-hidden current-entity relation in its semantic group, ordered by explicit order, canonical target display name and target ID. Preserve source/contributor, organizational and product distinctions.
 - Include the official resources from canonical references as readable links. Navigation to a related catalog entry must resolve to its reader, not to metadata.
 - Keep changing version, plan, availability and policy details qualified by the cited source; no general offline, license or privacy guarantee follows from producer attribution.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Parallel Web Systems Inc. operates Search for web URLs/snippets and Tasks for longer structured evidence-backed research. It is distinct from unrelated parallel.tech; its Search, Extract, Task, developer clients, processor tiers and MCP integrations belong to the existing Parallel web-data service family unless separate publisher lifecycle evidence is recorded.
+- Parallel's Customer Terms effective 2026-10-17 govern actual output use, including limits on reusing one customer's query result across unrelated end customers, building data-selling/training products, and republishing output. Section 4(b) allows certain uses of customer IP to improve services and train models; section 4(d) requires a separate DPA before personal-data processing. Do not assert universal no-training or zero-retention protections, or claim an obsolete publication-consent clause survives.
+- Source-grounded citations and confidence fields are not independent confirmation of facts. Provider benchmark claims, indexing modes, latency, processor tiers and access to third-party sites remain plan and version dependent.
+- Verified first-party source 1: https://docs.parallel.ai/search/search-quickstart
+- Verified first-party source 2: https://docs.parallel.ai/task-api/task-quickstart
+- Verified first-party source 3: https://parallel.ai/customer-terms
+- Qualification is existing original-provider identity and bounded API/data/license/version claims, not live authenticated tests, full terms/privacy/legal review, independent benchmark, new entity/metadata, reader repair, global schema/cache/CI/render, clean pass, final-delivery gate or merge.

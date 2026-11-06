@@ -14,3 +14,12 @@
 - Official first-party product/documentation sources demonstrate a released hosted operator service.
 - `produced-by` and producer `produces` links are an exact inverse pair.
 - Material beta, deployment or third-party content attribution boundaries are preserved.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Valyu documents one hosted research API family offering Search, Contents extraction, Answer and DeepResearch workflows, across web search and selected academic, biomedical, finance and permissioned data sources. The distinction between raw retrieval, quoted source content and synthesized answer/report matters for accuracy and licensing; an external source is not Valyu-authored by being indexed.
+- Provider reporting of benchmark results (DRACO and other QA suites), source availability, DeepResearch quality and citation precision remains publisher evidence rather than an independent performance score. Financial/biomedical information or proprietary licensed full text may have source-specific usage caps, regulated-data and redistribution restrictions.
+- Data provider licensing, privacy notices, DPA, tenant retention, indexing age, authentication and commercial entitlements must be verified on the actual plan before sending confidential inputs or relying on outputs.
+- Verified first-party source 1: https://docs.valyu.ai/
+- Verified first-party source 2: https://www.valyu.ai/
+- Qualification is existing original-provider identity and bounded API/data/license/version claims, not live authenticated tests, full terms/privacy/legal review, independent benchmark, new entity/metadata, reader repair, global schema/cache/CI/render, clean pass, final-delivery gate or merge.

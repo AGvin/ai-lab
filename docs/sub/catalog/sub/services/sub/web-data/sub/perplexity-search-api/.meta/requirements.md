@@ -22,3 +22,12 @@
 - Render every visible current relation using canonical target names, explicit order first and alphabetical order within each relation group. Keep metadata paths out of reader navigation.
 - Recheck account eligibility, exact artifact access, versions and terms before deployment. This source review does not certify runtime performance.
 - Reviewed sources: <https://docs.perplexity.ai/docs/search/quickstart>, <https://docs.perplexity.ai/docs/resources/privacy-security>.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Perplexity Search API is the publisher-hosted raw ranked web result/retrieval product. Search returns structured source URLs and content snippets for application-side analysis, whereas Perplexity Agent API and Gateway API serve agent/model-generated answers and routing respectively; keep these as separate service identities where independently cataloged.
+- Search filters, multi-query support, ranked-result count, language/region control, content retrieval, SDKs, CLI and MCP integration are API/tool surfaces rather than new Perplexity-owned hosted web-data products. Users must verify current index freshness, result completeness and source ownership, especially before handling regulated/personal data.
+- Current provider privacy/security guidance, region/model processing, account billing, rate quotas and consent must be checked for exact endpoint; a source citation in results is not itself proof of accuracy or right to republish.
+- Verified first-party source 1: https://docs.perplexity.ai/docs/search/quickstart
+- Verified first-party source 2: https://docs.perplexity.ai/docs/resources/privacy-security
+- Qualification is existing original-provider identity and bounded API/data/license/version claims, not live authenticated tests, full terms/privacy/legal review, independent benchmark, new entity/metadata, reader repair, global schema/cache/CI/render, clean pass, final-delivery gate or merge.

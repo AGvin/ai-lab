@@ -14,3 +14,12 @@
 - Classification remains web-data service rather than browser infrastructure or generic model API.
 - Mutable API details are source-backed and time-scoped when stated.
 - Producer provenance resolves to AlphaAI Technologies Inc.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Tavily's first-party Search, Extract, Crawl, Map and research task interfaces are a managed web-data API platform. Search and source content retrieval remain primary product identity; the existence of optional research/agent integrations does not make Tavily a standalone model API or dedicated leased-browser infrastructure identity.
+- The publisher's Python/JavaScript SDK examples, request parameters, API key management, search depth, extraction control and asynchronous task behavior are version-, region- and plan-dependent rather than guarantees that every endpoint has identical speed or crawl access.
+- Returned third-party pages, quotations, metadata and summaries require source verification and lawful reuse rights, not merely a valid Tavily key. Check current quota, concurrency, caching, use terms, user-data policy and query retention before production.
+- Verified first-party source 1: https://docs.tavily.com/
+- Verified first-party source 2: https://www.tavily.com/
+- Qualification is existing original-provider identity and bounded API/data/license/version claims, not live authenticated tests, full terms/privacy/legal review, independent benchmark, new entity/metadata, reader repair, global schema/cache/CI/render, clean pass, final-delivery gate or merge.
