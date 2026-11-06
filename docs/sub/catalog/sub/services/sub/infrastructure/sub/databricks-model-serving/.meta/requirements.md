@@ -16,3 +16,13 @@
 - The Foundation Model API is represented as a surface of the service until a separately operated identity is established.
 - Model lifecycle and region availability claims stay current and sourced.
 - Producer relation is symmetric.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Databricks Model Serving hosts MLflow-format custom models, Databricks-served foundation models with pay-per-token or provisioned throughput, and external model endpoints that route requests to third-party providers. These are managed endpoint choices under the existing Databricks service; they do not transfer original model ownership or turn MLflow into a Databricks-only runtime.
+- Databricks Foundation Model APIs expose a workspace-scoped API contract: pay-per-token, optional priority service tier, and dedicated provisioned throughput differ in billing and expected latency. OpenAI-compatible REST shape is not guaranteed parameter or model portability. Provider-hosted content processing has Databricks-specific geo/data-residency terms, while external routes have independent upstream data terms.
+- Cloud-specific region, supported model, rate limits, throughput, cost, authentication, custom container behavior and endpoint revisions remain version- and tenant-dependent; no actual deployment or benchmark was performed.
+- Verified first-party source 1: https://docs.databricks.com/aws/en/machine-learning/model-serving
+- Verified first-party source 2: https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/
+- Verified first-party source 3: https://docs.databricks.com/aws/en/machine-learning/model-serving/create-foundation-model-endpoints
+- Source acceptance covers service identity and publisher-scoped limits, not full lifecycle freshness, authenticated provider execution, independent security/legal assurance, root-wide schema/cache/CI/render, reader repairs, clean passes or final delivery.

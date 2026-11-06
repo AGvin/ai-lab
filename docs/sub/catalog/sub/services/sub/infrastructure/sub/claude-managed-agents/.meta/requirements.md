@@ -14,3 +14,12 @@
 - Claude Managed Agents remains a producer-hosted managed infrastructure/service identity rather than an installable agent framework.
 - Beta status and data-retention boundaries remain explicit.
 - Producer provenance resolves bidirectionally to Anthropic.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Anthropic documents Claude Managed Agents as a Beta prebuilt managed agent harness rather than the direct Messages API or a standalone trained model. Agent configurations, long-running server-side sessions, environments/sandboxes, tools, files and scheduled agent executions require the managed-agents-2026-04-01 beta header, with some sub-features such as MCP tunnels and dreaming in a narrower preview.
+- This stateful product retains session transcripts and related persisted state until explicitly deleted; Anthropic marks Managed Agents not eligible for Zero Data Retention or HIPAA BAA coverage. Even custom or self-hosted sandbox options do not make the whole Managed Agents data path automatically ZDR-eligible.
+- Security isolation, tool permissions, credentials, MCP endpoints, pricing, supported model set, API capabilities and beta access are mutable original-provider documentation, not independently tested guarantees.
+- Verified first-party source 1: https://platform.claude.com/docs/en/managed-agents/overview
+- Verified first-party source 2: https://platform.claude.com/docs/en/managed-agents/quickstart
+- Source acceptance covers service identity and publisher-scoped limits, not full lifecycle freshness, authenticated provider execution, independent security/legal assurance, root-wide schema/cache/CI/render, reader repairs, clean passes or final delivery.
