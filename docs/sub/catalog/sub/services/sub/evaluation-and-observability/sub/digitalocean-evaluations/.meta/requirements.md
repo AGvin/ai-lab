@@ -16,3 +16,11 @@
 - [Features](https://docs.digitalocean.com/products/evaluations/details/features/) and [Quickstart](https://docs.digitalocean.com/products/evaluations/getting-started/quickstart/) support dataset and simulation scope; [Reference](https://docs.digitalocean.com/products/evaluations/reference/) supports API/doctl access.
 - Both the evaluation-and-observability category and producer reader link this canonical service once, with reciprocal entity relations.
 - Separate managed evaluation and managed model inference service; third-party datasets/models keep their own provenance and access conditions.
+
+## Scoped original-source qualification — 2026-11-06
+
+- DigitalOcean Evaluations is a provider-operated service for dataset-driven evaluation of foundation models, Inference Router configurations and supported agents. It supports fixed single-turn tasks, scoring existing multi-turn transcripts, ground-truth comparisons and custom criteria. Agent simulations, added to public preview on 2026-10-12, generate multi-turn dialogues with configurable user simulators, judge models and episode limits; preview maturity must not be represented as universal production GA.
+- Evaluation scores depend on dataset, judge, rubric, thresholds and model versions, and are advisory rather than safety certification. Submitted prompts, transcripts and expected answers may contain sensitive data: validate permission, access controls, location/retention and cost before use; no authenticated evaluation was executed.
+- Verified first-party source 1: https://docs.digitalocean.com/products/evaluations/details/features/
+- Verified first-party source 2: https://docs.digitalocean.com/products/evaluations/
+- Source qualification accepts the present service identity and documented boundaries only; not a complete freshness or legal/security audit, independent benchmark replication, runtime execution, full schema/cache/CI/render, clean pass or final-delivery gate.
