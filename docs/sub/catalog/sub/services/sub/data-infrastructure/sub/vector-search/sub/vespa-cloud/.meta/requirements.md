@@ -15,3 +15,9 @@
 - Official Vespa Cloud references match the entity metadata.
 - Managed features are not attributed to standalone self-managed Vespa by default.
 - Reciprocal Vespa.ai producer relation is present.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Vespa Cloud is Vespa.ai's managed search/ranking deployment and operations service, distinct from open-source self-hosted Vespa. Application zones and enclaves are deployment variants, not separate service identities.
+- Publisher source: https://docs.vespa.ai/en/cloud/
+- Scope: existing managed service identity and producer boundary only; no authenticated API, security/privacy, full-repository, clean-pass or final gate certification.
