@@ -16,3 +16,9 @@
 - Cohere North is not collapsed into the North model family.
 - Hosted and private deployment options are not generalized into one identical data/operations boundary.
 - Producer provenance resolves bidirectionally to Cohere.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Cohere North is the enterprise agentic workspace; North 2 is an upgrade of that service, not the separately named North model family. Deployment, integrations and governance features depend on current enterprise configuration.
+- First-party product surface: https://cohere.com/north
+- Credits only the existing service identity and source boundary; no independent runtime, privacy, security, legal, clean-pass or final-gate verification.
