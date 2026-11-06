@@ -14,3 +14,13 @@
 - Published first-party documentation demonstrates a live publicly documented hosted service rather than roadmap-only capability.
 - Scope/feature maturity and site/data access limits are source-backed and not overgeneralized.
 - Exact `produced-by` relation has an inverse `produces` link in the named vendor producer.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Diffbot's official Extract API identifies page types and structures on-demand URL content into JSON through Analyze and article/product/discussion/image/video endpoint variants. List, Event and Job Extract endpoints are explicitly marked Beta in current publisher docs, so beta feature maturity must not be projected onto the entire provider service.
+- Preassembled Diffbot Knowledge Graph search and entity enrichment are distinct from live Extract requests and web spidering/bulk extraction, but are capabilities of one vendor service family. A page classification or knowledge-graph match may contain inaccurate, stale or incomplete individual/company attributes.
+- API tokens, extraction credits/proxy charges, crawl freshness, source rights and privacy handling of person records remain per-use and source-specific. A structured-data subscription is not unrestricted redistribution permission or independent validation of source truth.
+- Verified first-party source 1: https://www.diffbot.com/docs/extract/
+- Verified first-party source 2: https://www.diffbot.com/docs/products-overview
+- Verified first-party source 3: https://www.diffbot.com/docs/extract/list
+- Accept only original provider service identity and source-scoped API, maturity, content-rights and data boundaries. No new metadata/entity, reader repair, authenticated traffic execution, complete freshness/legal/security/privacy audit, whole-repository schema/cache/CI/render, clean pass, final-delivery or merge credit.

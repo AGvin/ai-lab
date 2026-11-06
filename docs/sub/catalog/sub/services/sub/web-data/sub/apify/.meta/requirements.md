@@ -14,3 +14,13 @@
 - Official first-party product/documentation sources demonstrate a released hosted operator service.
 - `produced-by` and producer `produces` links are an exact inverse pair.
 - Material beta, deployment or third-party content attribution boundaries are preserved.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Apify's first-party Actor documentation describes versioned containerized jobs run through cloud API, CLI or schedule, with input/output schemas, per-run datasets and key-value storage. Public/private Actors and published Actor Store listings are hosted execution/distribution surfaces of the platform; individual community Actor authors retain their own authorship and maintenance responsibilities.
+- Actor Store publishers may select pay-per-event or pay-per-usage pricing, and storage/read operations can incur additional cost after runs. Dataset access, named/unnamed retention, export formats, tokens, actor permissions and resource link sharing require owner- and plan-specific validation, not general assumptions about every Actor.
+- Target website terms, extraction rights, personal-data processing and robots/access restrictions still apply. Marketplace listing, platform integration or API/MCP access is not a security review of third-party scraping code or a license for arbitrary content republication.
+- Verified first-party source 1: https://docs.apify.com/actors
+- Verified first-party source 2: https://docs.apify.com/actors/running/actors-in-store
+- Verified first-party source 3: https://docs.apify.com/storage/dataset
+- Accept only original provider service identity and source-scoped API, maturity, content-rights and data boundaries. No new metadata/entity, reader repair, authenticated traffic execution, complete freshness/legal/security/privacy audit, whole-repository schema/cache/CI/render, clean pass, final-delivery or merge credit.

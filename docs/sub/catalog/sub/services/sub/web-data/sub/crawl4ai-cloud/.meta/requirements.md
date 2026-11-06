@@ -16,3 +16,13 @@
 - One managed web-data service identity owns all documented Cloud endpoints; no duplicate local-software, hosted-browser infrastructure, individual endpoint or generic model identities.
 - The original legal disclosure, Cloud API documentation and repository establish publication/operation, while live performance, provider controls, contract/ownership and universal endpoint stability remain unverified.
 - Producer inverse resolves to `catalog/producers/c/context4ai-pte-ltd`; Cloud and local Crawl4AI remain separate catalog records.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Crawl4AI Cloud is an operator-hosted web-data API distinct from the installable Apache-2.0 Crawl4AI library and self-managed server. Current hosted docs publish /scrape, /extract and /search, optional batch/queue, beta /serp introduced 2026-10-08 and experimental /answer; public soft-launch status does not establish enterprise SLA or stable semantics for all endpoints.
+- The first-party Terms (effective 2026-10-15) identify CONTEXT4AI PTE LTD as legal operator of the hosted API and place source URL selection, site terms, privacy and intellectual-property rights on the caller. This legal operator must not be silently reattributed to the original local-code author handle or used to infer beneficial ownership or nationality.
+- Cloud-model/proxy/infrastructure subprocessors, caching, request logs, retained source text, API tokens, prices, processing regions, quota and data deletion require current account and contract review. An Apache-2.0 license for local code is not automatically the Cloud API's commercial/data contract.
+- Verified first-party source 1: https://api.crawl4ai.com/docs/
+- Verified first-party source 2: https://api.crawl4ai.com/legal/
+- Verified first-party source 3: https://api.crawl4ai.com/
+- Accept only original provider service identity and source-scoped API, maturity, content-rights and data boundaries. No new metadata/entity, reader repair, authenticated traffic execution, complete freshness/legal/security/privacy audit, whole-repository schema/cache/CI/render, clean pass, final-delivery or merge credit.
