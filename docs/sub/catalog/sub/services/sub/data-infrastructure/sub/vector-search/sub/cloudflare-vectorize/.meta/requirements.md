@@ -12,3 +12,9 @@
 
 - The service remains a managed vector database, not a model API or full RAG application.
 - Producer provenance resolves to Cloudflare.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Cloudflare Vectorize is the managed vector index/database, not the AI Search ingestion/RAG service. Embedding generation may use Workers AI but is separate from vector storage and query operations.
+- Publisher documentation: https://developers.cloudflare.com/vectorize/
+- Qualification covers the existing service identity/source boundary only. No authenticated runtime testing, independent security/licensing assessment, full-repository checks, clean pass or final gate is claimed.
