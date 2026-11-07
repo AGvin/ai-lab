@@ -5,16 +5,16 @@ entity:
     - "WebNN"
   identity_note: >-
     W3C Web Machine Learning Working Group low-level neural-network inference
-    hardware-acceleration API. Published Candidate Recommendation Draft 26 June 2026; mutable
+    hardware-acceleration API. Published Candidate Recommendation Draft 21 October 2026; mutable
     Editor's Draft is separate. The draft does not imply default support or actual accelerator
     speedup.
   references:
     - type: specification
       source:
-        url: https://www.w3.org/TR/2026/CRD-webnn-20260626/
+        url: https://www.w3.org/TR/2026/CRD-webnn-20261021/
       purposes: [identification, research]
       authority: official
-      note: "Published Candidate Recommendation Draft, 26 June 2026"
+      note: "Published Candidate Recommendation Draft, 21 October 2026"
     - type: specification
       source:
         url: https://www.w3.org/TR/webnn/
