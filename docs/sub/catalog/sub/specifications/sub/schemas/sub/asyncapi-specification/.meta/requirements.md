@@ -14,3 +14,12 @@
 - Latest-release claim and normative document correspond to an explicitly published version at `https://github.com/asyncapi/spec`, not an untagged editor draft.
 - Canonical schema specification identity is independent of OpenAPI, transports, concrete tooling and client-specific adapters.
 - The AsyncAPI Initiative `produces` relation inverts this specification's `produced-by` relation.
+
+## Scoped original-source qualification — 2026-11-07
+
+- AsyncAPI v3.1.0 is an officially published, protocol-agnostic document specification for message/event-driven APIs, describing operations, channels, messages, payload schemas, servers and protocol bindings. Its source contract is separate from a particular Kafka, MQTT, AMQP, ROS 2, WebSocket or HTTP broker.
+- Upstream 3.1.0 publication added ROS 2 bindings; declared bindings do not prove any SDK, parser, generator, gateway, runtime or target application supports every version-specific feature. The separately versioned tools and the mutable master branch are not normative replacement identities for this released specification.
+- Verified first-party source 1: https://www.asyncapi.com/docs/reference/specification/v3.1.0
+- Verified first-party source 2: https://www.asyncapi.com/blog/release-notes-3.1.0
+- Verified first-party source 3: https://github.com/asyncapi/spec
+- Scoped original-source identity only; no event broker, generated application, schema validator, protocol implementation or integration executed, and no full legal/security/root-wide clean/final gate. Existing reader page is missing and has no repair credit.
