@@ -20,3 +20,10 @@
 - One canonical source identity `catalog/datasets/simpleqa`; no duplicate data or software identity.
 - Both producer-dataset inverse relations, index link and metadata paths resolve to canonical owner nodes.
 - This is a six-path scoped research addition, not a complete eight-root audit, final render, global cache/CI/schema verification or completed clean pass.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **SimpleQA** is OpenAI's original **2024-10-30** short-answer factuality question benchmark with **4,326** published question/answer cases, evaluated with correct/incorrect/not-attempted labels. Publisher documentation explains selection and the limited independent question-spot-check process; this is not an assurance that every answer remains current or that a SimpleQA score proves general factual reliability.
+- The dataset identity is distinct from the `simple-evals` software, grader or model-result tables. The **July 2025 discontinuation of new `simple-evals` result updates** does not withdraw the historical benchmark. The independently curated **2025 SimpleQA Verified** derivative by Google DeepMind/Google Research is a separate selection, not a renamed 4,326-question OpenAI release.
+- Verified first-party sources: https://openai.com/index/introducing-simpleqa/ and https://github.com/openai/simple-evals and https://arxiv.org/abs/2411.04368
+- Existing original dataset/release and official evaluator/derivative boundaries qualified only; no question-level fact checking, independent model grading, third-party answer source-rights audit, contamination proof, complete legal/privacy/security/CI/render, clean or final gate.
