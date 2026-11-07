@@ -18,3 +18,10 @@
 - Preserve exactly one source-dataset identity; do not accept MLPerf integration, strict/loose scores or checker packages as duplicate datasets.
 - Google produced-by / produces resolves bidirectionally and all new reader links resolve.
 - Full page agrees with this contract and applicable global documentation requirements; separate scoped YAML/reference/relation/link checks from whole-repository schema/cache/CI and final publication acceptance.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **IFEval** is Google's released research **instruction-following prompt-and-checkable-constraint dataset** originally described in **2023**. The first-party `google-research/google-research/instruction_following_eval` repository contains the original task prompts and evaluator and explicitly says the project is **not an officially supported Google product**.
+- Its prompt records and constraint parameters are dataset content; formal strict/loose and prompt-level/instruction-level checks are distinct **evaluator protocols**, not separate benchmark source identities. Passing formatting/length/keyword checks cannot establish answer factuality, real-world safety or semantically correct instruction compliance. Google's official Hub data page declares Apache-2.0 while the research code license and third-party rights retain separate boundaries.
+- Verified first-party sources: https://github.com/google-research/google-research/tree/master/instruction_following_eval ; https://huggingface.co/datasets/google/IFEval ; https://arxiv.org/abs/2311.07911
+- Gate covers existing original dataset identity, public source, research support boundary and scoring-contract distinction only. No grader run, current leaderboard assessment, full item-level rights/privacy/security audit, global schema/cache/CI/render, clean or final credit.
