@@ -17,3 +17,10 @@
 - The suite and published release/version are identifiable, independently useful and source-backed.
 - Published results are scoped to exact workload, system and methodology, not universal hardware/model claims.
 - The official MLCommons producer is resolved bidirectionally.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **MLPerf Endpoints v0.7** is MLCommons' first released endpoint-serving benchmark, with **2026-07-28** initial results and limited foundation-release coverage. It is distinct from the **MLPerf Inference v6.1** standard submission rounds, and is not itself a specific hosting provider or the visualized live leaderboard.
+- Original v0.7 evaluation emphasizes throughput, interactivity, **P95 time-to-first token** and concurrency for particular endpoint workloads; later developing v1.0 documentation uses different percentiles and rules and cannot be applied retroactively. Results are versioned model/provider/server/network configurations, not an unconditional universal price/performance ranking. Roadmap notes do not prove subsequent versions have already shipped.
+- First-party sources: https://mlcommons.org/2026/07/mlperf-endpoints-v0-7-release/ ; https://mlcommons.org/benchmarks/endpoints/ ; https://docs.mlcommons.org/endpoints-submission-docs/understand/what-is-mlperf-endpoints/
+- Scope accepted: existing publisher-authorized v0.7 methodology/release identity and public metric boundaries. No endpoint probes, private result validation, claimed cross-provider superiority, legal/security compliance, full repo schema/cache/CI/render, clean or final credit.
