@@ -18,3 +18,10 @@
 - Exactly one canonical TruthfulQA source-dataset identity; revisions, metrics and tasks are not duplicate datasets.
 - Document the three research authors, January 2025 revision, reproducibility boundary, answer-source rights uncertainty, incomplete revalidation and contamination risks without invented producer relations.
 - Confirm local index destination resolves to canonical .meta/entity.yml and .meta/requirements.md; report bounded validation separately from repository-wide schema/cache/CI or clean-cycle acceptance.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **TruthfulQA** is the research dataset by **Stephanie Lin, Jacob Hilton and Owain Evans**, introduced in **2021**; the historical paper described **817 questions across 38 categories**. Those figures apply to the historical release, not automatically to the mutable author-maintained `TruthfulQA.csv` after removals/revisions.
+- The original author repository documents a **January 2025 binary multiple-choice update** pairing **Best Answer** with **Best Incorrect Answer**, with randomized answer order. Original MC1/MC2 and free-form generation evaluation use the same dataset but different score definitions; truthfulness and informativeness are distinct generation metrics.
+- Verified first-party academic/source records: https://github.com/sylinrl/TruthfulQA and https://arxiv.org/abs/2109.07958 and https://aclanthology.org/2022.acl-long.229/
+- Existing dataset identity, original authorship, dated historical/updated protocols and reference license are source-qualified only. Researchers' institutional affiliations do not establish sole corporate ownership. No current question-by-question validation, licensed third-party source-rights clearance, independent model/judge execution, contamination guarantee, whole-repo validation, clean or final gate.
