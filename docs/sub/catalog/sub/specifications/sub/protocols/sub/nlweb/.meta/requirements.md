@@ -17,3 +17,12 @@
 - Normative claims are grounded in the current first-party specification and versioned, not represented as stable 1.0 behavior.
 - Origin, current project hosting and legal ownership are not conflated.
 - All catalog navigation and official-reference links are present; full render/cache/global schema validation remains a separate final-phase gate.
+
+## Scoped original-source qualification — 2026-11-07
+
+- NLWeb is an open, transport-agnostic protocol for natural-language interaction with sites and services; its first-party published specification currently identifies **v0.55**, separately from the Python proof-of-concept reference implementation and a TypeSpec snapshot historically marked v0.5.
+- The `ask` request and asynchronous `await` promise flow support structured JSON-LD/Schema.org-style responses, session/metadata and HTTP/MCP bindings. The protocol does not itself implement site ownership checks, authentication, rate limiting, content licenses or safe execution of delegated actions. Microsoft's 2025 launch provenance does not establish sole present ownership.
+- Verified first-party source 1: https://nlweb.ai/docs/specification
+- Verified first-party source 2: https://github.com/nlweb-ai/website/blob/main/NLWEBSPEC.md
+- Verified first-party source 3: https://github.com/nlweb-ai/NLWeb
+- Existing NLWeb protocol/source gate only; no reference server deployed, website indexed, API exercised, data privacy/rights audited, whole-repository schema/cache/CI/render, clean pass or final gate.
