@@ -22,3 +22,12 @@
 - Render every visible current relation using canonical target names, explicit order first and alphabetical order within each relation group. Keep metadata paths out of reader navigation.
 - Recheck account eligibility, exact artifact access, versions and terms before deployment. This source review does not certify runtime performance.
 - Reviewed sources: <https://docs.perplexity.ai/docs/agent-api/quickstart>, <https://docs.perplexity.ai/docs/resources/privacy-security>.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Perplexity Agent API is a producer-hosted multi-model agent/gateway service for prompts, reasoning and explicit tools. The documented primary route is POST /v1/agent; /v1/responses is a compatibility alias, not proof that every OpenAI feature is supported or that underlying third-party model ownership transfers to Perplexity.
+- Web search/tools must be specifically configured; a plain third-party model call does not inherently cite sources. The separate Perplexity Search API, Embeddings API, consumer Perplexity workspace and local Portable Computer should not be merged into this identity. External model providers, routing, storage and ZDR terms require separate account-specific review.
+- Verified first-party source 1: https://docs.perplexity.ai/docs/agent-api/quickstart
+- Verified first-party source 2: https://docs.perplexity.ai/docs/resources/privacy-security
+- Parent gateways index currently lacks a direct link to this existing reader; this navigation repair is uncredited and must be checked during structural validation.
+- Existing service original-source qualification only; no API key use, SDK call, billing test, data-retention contract validation, complete security/privacy audit, full repository clean pass or final gate.
