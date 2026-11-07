@@ -21,3 +21,10 @@
 - Benchmark score comparisons are scoped to exact evaluation protocol and revision.
 - OpenAI's July 8, 2026 evaluation audit estimated roughly 30% of the 731-task Pro V1 public set had material problems and retracted its previous broad Pro endorsement. This finding does not itself cover the later September 2026 V2 642-task release; preserve V1/V2 separation and do not imply V2 has independently passed a clean quality audit.
 - The `produced-by` relation and producer inverse `produces` are reciprocal.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **SWE-bench Pro** is **Scale AI's** separate benchmark family for repository-level long-horizon coding agents, not the original SWE-bench or OpenAI-curated SWE-bench Verified subset. Scale's released **2026-09-22 V2** public dataset contains **642 validated tasks from 11 repositories** (plus a **51-task HARD** subset); its first-party project keeps the earlier **731-task V1** configuration as a distinct historical split.
+- V2 tasks include pinned base revisions, sanitized container images, oracle patches, tests and task-local verifiers in **Harbor task format**. Scale's recommended locked protocol restricts the agent's network and re-grades a patch in a fresh sandbox. The original publisher's test/quality reports are not independent audit results or evidence that V2 scores equal V1. Original GitHub source-code, issues and test rights are not universally covered by evaluation-tooling licenses.
+- Verified publisher sources: https://github.com/scaleapi/SWE-bench_Pro-os/blob/main/v2/README.md ; https://github.com/scaleapi/SWE-bench_Pro-os ; https://huggingface.co/datasets/ScaleAI/SWE-bench_Pro
+- Scoped acceptance covers canonical dataset identity, published V2/V1 version boundaries and public task/protocol documentation only. No container/network test, independent task/verifier validation, new model scores, legal/privacy/security/rights audit, repository-wide schema/cache/CI/render, clean or final gate.
