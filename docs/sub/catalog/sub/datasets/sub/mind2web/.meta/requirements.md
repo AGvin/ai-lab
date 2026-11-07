@@ -16,3 +16,10 @@
 
 - The first-party repo substantiates benchmark size, splits, scoring change and access restrictions.
 - The Ohio State NLP Group `produces` endpoint exactly reciprocates the Mind2Web `produced-by` relation.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **Mind2Web** is Ohio State NLP Group's original **NeurIPS 2023** offline web-action dataset with **over 2,000 recorded tasks from 137 websites across 31 domains**. The publisher's original splits are **1,009 training**, **252 cross-task**, **177 cross-website**, and **912 cross-domain** examples; these assess offline next-action generalization, not live website task completion.
+- Its upstream **2023-10-30 evaluation correction** distinguishes paper-compatible *macro-averaged* scores from earlier micro averaging. On **2025-11-04** the publisher moved data artifacts to Hugging Face; original test archives request **no public extraction/reposting**. **Online-Mind2Web** (live website execution) and **Multimodal-Mind2Web** (HTML/screenshot augmentation) are separately versioned releases, not new source credit for the original dataset.
+- First-party sources: https://github.com/OSU-NLP-Group/Mind2Web ; https://huggingface.co/datasets/osunlp/Mind2Web ; https://osu-nlp-group.github.io/Mind2Web/
+- Qualification covers the existing original dataset/source and public splits, changes and access warnings. No test data redistributed, model/website run, full consent/data rights/PII or legal/security/privacy assessment, root-wide schema/cache/CI/render, clean or final gate.
