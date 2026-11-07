@@ -13,3 +13,12 @@
 - AG-UI is not described as a replacement for MCP or A2A.
 - Event-level or transport-sensitive claims are traceable to current official AG-UI documentation.
 - Package release versions are not presented as the protocol identity itself.
+
+## Scoped original-source qualification — 2026-11-07
+
+- AG-UI is an open event-based agent-to-user interface interoperability protocol, maintaining ordered run lifecycle, text/tool-call events, state changes and frontend interaction semantics between an agent runtime and user-facing application.
+- The first-party event model and repository distinguish frontend streaming from MCP tool/context access and A2A inter-agent delegation. Event types, transport framing (for example SSE or WebSockets), SDK-specific adapters, optional subagent events and versioned capabilities require release-scoped evaluation; a conforming event stream alone does not authorize browser/user tool actions.
+- Verified first-party source 1: https://github.com/ag-ui-protocol/ag-ui/blob/main/docs/introduction.mdx
+- Verified first-party source 2: https://github.com/ag-ui-protocol/ag-ui/blob/main/docs/concepts/events.mdx
+- Verified first-party source 3: https://github.com/ag-ui-protocol/ag-ui
+- Existing protocol identity/source qualification only; no frontend, streaming runtime, client interoperability, human consent, delegated tool execution or independent security/privacy/legal audit, root-wide schema/cache/CI/render, clean/final or merge credit.
