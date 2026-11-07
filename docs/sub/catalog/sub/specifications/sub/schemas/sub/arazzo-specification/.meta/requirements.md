@@ -19,3 +19,11 @@
 - The referenced version is a released official Arazzo specification, not a draft or implementation example.
 - Arazzo is not conflated with API endpoint schemas, agent-to-agent communication protocols, or orchestration software.
 - The OpenAPI Initiative producer has the inverse `produces` relation to this exact canonical identity.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Arazzo v1.1.0 (published 2026-05-17) is the OpenAPI Initiative's independently versioned machine-readable description of API workflows. It expresses a sequence of dependent operations, source API descriptions, step outputs and success/failure criteria, without providing a workflow executor or runtime authentication implementation.
+- Arazzo can reference supported OpenAPI and AsyncAPI source documents; it does not replace those descriptions or make their client libraries universally compatible. Implementation support, error handling, resolution of runtime expressions and authorization require separate tooling evidence and version-aware validation.
+- Verified first-party source 1: https://spec.openapis.org/arazzo/v1.1.0.html
+- Verified first-party source 2: https://spec.openapis.org/arazzo/
+- Source qualification covers the existing published specification identity and bounded semantics. No Arazzo interpreter, API workflow, credentials, external service, conformance suite, full legal/security audit, repository-wide clean pass or final gate was executed.
