@@ -15,3 +15,10 @@
 - The 116 tasks / 20 app count applies to original published benchmark task definitions, not all generated task instances.
 - Versioned task-step limits and emulator prerequisites are explicit for reproducible results.
 - The `catalog/producers/g/google-deepmind` `produces` relation inverses AndroidWorld's `produced-by` link.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **AndroidWorld** is Google DeepMind / Google Research's original **2024 Android emulator benchmark** for device-control agents, with **116 hand-crafted task definitions across 20 real applications** and many parameterized instances. These generated instances are not separate authored source benchmarks or evidence of millions of independently verified tasks.
+- First-party docs require Android SDK/emulator images, app setup, agent model API, task/reset seeds, defined action budgets, and working accessibility/grpc interaction; **experimental Docker support** should not be described as production-ready or natively compatible with Apple Silicon. The environment evaluates live task completion, unlike Mind2Web's offline trajectories or OSWorld's desktop environments.
+- First-party sources: https://github.com/google-research/android_world ; https://google-research.github.io/android_world/ ; original paper https://arxiv.org/abs/2405.14573
+- Accepted bounded identity, original dataset/task definition and publisher-described execution/version requirements only. No emulator, model/API key use, task completion, independent safety/security/privacy/licensing audit, full repo schema/cache/CI/render, clean or final credit.
