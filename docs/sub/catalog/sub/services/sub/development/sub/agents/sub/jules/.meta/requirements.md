@@ -19,3 +19,10 @@
 - API keys, repository permissions, and plan/merge approvals remain explicit trust boundaries.
 - Official resource links match canonical entity metadata.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Scoped original-source and lifecycle qualification — 2026-11-07
+
+- Google announced on **2026-10-29** that Jules will wind down on **2026-12-31** as part of consolidating agentic coding. Customers may finish existing sessions until **2026-11-11**; after that date, the service is read-only through shutdown. Previously documented hosted session/API/CLI capabilities are historical/product capabilities, not an assurance of new task availability after cutoff or a sustainable future production integration.
+- Google provides a local export path for settings, connected repositories, environment variables, scheduled tasks, memories, session activities and code patches. Exported files may contain credentials/secrets: protect them and rotate keys when warranted. GitHub branches, commits and PRs remain with GitHub and are not equivalent to exporting Jules task context.
+- Verified first-party source: https://jules.google/docs/changelog/
+- Existing distinct service identity and currently official retirement notice accepted as source-qualification only; no authenticated export, account audit, API execution, security/privacy/compliance verification, full repository clean pass or final gate.
