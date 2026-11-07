@@ -18,3 +18,10 @@
 - Ai2 produced-by / produces must resolve bidirectionally and remain distinct from ARC Prize/ARC-AGI.
 - The data-code license boundary, counts and contamination caveat are accurate and source-backed.
 - Full schema/cache/CI/global reader/render and clean eight-root research passes must not be claimed from a scoped addition.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **Ai2 Reasoning Challenge (ARC)** is the 2018 Allen Institute for AI grade-school science multiple-choice benchmark, not the unrelated ARC-AGI / ARC Prize datasets. Original publisher sources describe **7,787 questions** split across Easy and Challenge, the latter filtered against two earlier baseline methods. The 14-million-science-sentence retrieval corpus is supplementary, not more ARC questions.
+- Original author-controlled publisher card declares **CC BY-SA 4.0** for this dataset; the Aristo leaderboard's software license does not independently license third-party question text. Evaluation comparisons must pin Easy/Challenge, question/split revision, prompts and scoring; no uncontaminated current-model accuracy is inferred.
+- Publisher sources: https://allenai.org/open-data ; https://huggingface.co/datasets/allenai/ai2_arc ; original paper https://arxiv.org/abs/1803.05457
+- Acceptance verifies this **already-existing** entity's public identity, edition, original publisher and bounded source/license metadata only. No new entity or producer, raw question audit, full rights clearance, independent model run, repository-wide schema/cache/CI/render, clean pass or final delivery gate.
