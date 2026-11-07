@@ -14,3 +14,9 @@
 
 - One canonical service reader under the selected category and one relative index link; distinct source software, model, content and operator boundaries remain explicit.
 - First-party evidence supports the scoped profile only. Do not infer runtime tests, full rights/contract audits or repository-wide clean status.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Poe is a hosted multi-bot assistant and distribution platform; prompt/server/API bots may be operated by different creators, and use of an API bot does not make Poe the owner of the external model or endpoint.
+- First-party product/documentation surface: https://creator.poe.com/docs/
+- Scoped identity/source boundary only; no authenticated execution, security/privacy audit, full-repository clean pass or final-gate credit.
