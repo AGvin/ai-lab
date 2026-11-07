@@ -15,3 +15,10 @@
 - The release-specific evaluation protocol and public/private access boundaries are not confused.
 - Official sources match the entity metadata and producer relation.
 - Comparisons across versions, tasks and harnesses are qualified rather than treated as directly equivalent.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **ARC-AGI-3** is the ARC Prize Foundation's interactive adaptive-reasoning benchmark, launched **2026-03-25**. Unlike ARC-AGI-1/2 static grid transformations, it evaluates agents exploring turn-based environments without explicit task instructions, inferring goals and dynamics, and planning action sequences relative to human action-efficiency baselines.
+- Public benchmark environments, optional private competition material, current rules and leaderboards are different release/access surfaces. The `arcprize/arc-agi-3-benchmarking` repository is a **benchmark runner/agent harness**, not the canonical game-set dataset; its standard and provider-native conversation adapters use different context management, so scores must identify the exact harness and environment protocol.
+- First-party publisher sources: https://arcprize.org/arc-agi/3 ; https://arcprize.org/blog/arc-agi-3-launch ; https://github.com/arcprize/arc-agi-3-benchmarking
+- Bounded source acceptance covers original release, identity, publicly documented interactive task and scoring boundaries. No restricted games, reproduced model score, independent data-rights/security/legal audit, repository-wide schema/cache/CI/render, clean or final credit.
