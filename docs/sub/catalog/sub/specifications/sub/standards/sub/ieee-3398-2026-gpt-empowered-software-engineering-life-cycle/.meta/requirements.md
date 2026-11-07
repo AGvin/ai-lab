@@ -12,3 +12,10 @@
 
 - Active-standard status and Board approval remain traceable to IEEE SA.
 - The entity remains a software-engineering recommended-practice artifact rather than coding-agent software.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **IEEE 3398-2026** is marked **Active Standard**, approved by the IEEE Standards Board on **2026-09-25**. IEEE describes the artifact as an **Approved Draft Recommended Practice** for applying generative pretrained transformers across the software-engineering lifecycle; this status does not imply a separately verified publication date or mandatory regulation.
+- The publisher's public summary addresses intelligence levels, competency requirements and evaluation methods spanning requirements, design, coding, testing, delivery and operations. It is not a certified coding agent, agent performance benchmark, development platform, or independent software quality result.
+- Verified original publisher source: https://standards.ieee.org/ieee/3398/11380/
+- Accepted only existing identity, official status/approval and published abstract; copyrighted full text, actual SDLC deployment, independent operational/legal/security assurance, whole-repository validation, clean and final gates are not credited.
