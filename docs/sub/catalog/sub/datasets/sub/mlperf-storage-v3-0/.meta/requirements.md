@@ -17,3 +17,10 @@
 - The node remains the MLPerf Storage v3.0 benchmark-suite identity rather than a storage product, vector-database product, or KV-cache mechanism.
 - Results are not generalized beyond the exact benchmark revision and submitted system.
 - MLCommons provenance resolves bidirectionally.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **MLPerf Storage v3.0** is MLCommons' published **2026-09-01** benchmark revision for measuring storage throughput under real AI/ML training and inference I/O patterns. Version 3.0 adds distinct **KV Cache** and **Vector Database** workload tests and **S3 object-storage access** alongside POSIX. These are tests/access layers within one suite, not standalone vector-database, memory-cache or cloud storage products.
+- Results are scoped to the exact reference workloads, benchmark scale factors, simulated accelerator behavior, dataset size and file/data access patterns, test-accuracy thresholds, power metrics and submitted hardware configuration. A reported storage result cannot predict every vector database's query quality or every model's end-to-end latency.
+- Original publisher sources: https://mlcommons.org/2026/09/mlperf-storage-v3-0-results/ ; https://mlcommons.org/benchmarks/storage/
+- Source acceptance covers the existing v3.0 identity and publisher-documented workload/version boundary, not benchmark execution, actual system storage durability, vendor performance certification, corpus/data licensing, independent security/CI/render, clean or final gate.
