@@ -21,3 +21,10 @@
 - A 1.0.1 banking-knowledge result is not silently compared with an earlier unpatched result.
 - The independently maintained benchmark family is not duplicated as evaluation infrastructure software.
 - The Sierra producer has a reciprocal `produces` reference.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **τ-bench** is **Sierra**'s benchmark family for language-model agents carrying out simulated customer-service dialogues with policy instructions, tools, user simulation and task-state evaluation. The original `sierra-research/tau-bench` repository warns that its **airline/retail tasks are outdated**; the maintained `sierra-research/tau2-bench` project contains τ², τ³ and current **τ-bench 2.0** family evolution, not independently countable duplicate canonical datasets.
+- The maintainer's **2.0** release adds six-language text/voice evaluation and new/revised task definitions and grading, and explicitly separates these results from the **1.x** leaderboard; compare legacy setups against **v1.0.1** where the authors direct. Even within one release, user-simulator, policy state, agent tools, trial count, language and judge/scoring changes affect comparability; replaying no agent task here.
+- Original publisher sources: https://github.com/sierra-research/tau-bench ; https://github.com/sierra-research/tau2-bench ; https://taubench.com/
+- Bounded credit applies to canonical benchmark-family provenance, status and public release/protocol distinctions only. No actual model/tool/voice test, complete task licensing, current leaderboard audit, independent safety or legal review, repository-wide schema/cache/CI/render, clean or final gate.
