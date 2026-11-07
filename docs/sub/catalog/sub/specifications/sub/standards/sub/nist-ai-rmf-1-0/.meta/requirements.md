@@ -14,3 +14,12 @@
 - One published NIST AI 100-1 2023 entity with fixed version and clear revision-in-progress note.
 - Separate NIST AI 600-1 profile and changing Playbook, no new legal obligation or certification invented.
 - One exact NIST producer inverse; scoped readback is not whole-catalog schema/cache/CI, final render or legal compliance assurance.
+
+## Scoped original-source qualification — 2026-11-07
+
+- NIST AI 100-1 is the **voluntary** cross-sector Artificial Intelligence Risk Management Framework 1.0 published 26 January 2023. Its four Core functions are Govern, Map, Measure and Manage; these are continuing organizational risk-management outcomes, not a binding standard, certification checklist, regulator's approval, or proof an AI service is safe.
+- NIST's live framework hub explicitly identifies 1.0 as under revision in 2026; the separately published Generative AI Profile NIST AI 600-1 and mutable Playbook are companion artifacts, not silently substituted version 2.0.
+- Verified first-party source 1: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10
+- Verified first-party source 2: https://www.nist.gov/itl/ai-risk-management-framework
+- Verified first-party source 3: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
+- Existing NIST AI RMF 1.0 identity and reciprocal NIST publication origin accepted as bounded source evidence only. No organization audited, legal compliance certified, framework implementation assessed, root-wide schema/cache/CI/render, clean pass or final gate.
