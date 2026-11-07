@@ -18,3 +18,11 @@
 - One new canonical dataset triad with one direct `datasets/README.md` navigation entry; no duplicate alias or platform/agent entity.
 - Exact first-party source URLs, conflicting DBT counts, version/setting separation and license/access warnings.
 - Scoped write/diff/readback only; no full eight-root clean cycle, global schema/cache/CI/render or executed database evaluation.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **Spider 2.0** is the original **2024 enterprise text-to-SQL and database-workflow benchmark** maintained by `xlang-ai/Spider2`, not Spider 1.0, BIRD, a database engine, or an independent canonical dataset for each task configuration. Its first-party overview lists **547 Lite** and **547 Snow** tasks as separate evaluation settings, which must not be summed into 1,094 independently authored benchmark questions.
+- The published **DBT** setting has a documented inventory inconsistency: the root source counts **68 tasks**, its dedicated README mentions **69 examples**, and an observed examples directory has **70 entries**. The exact scored subset must be pinned before asserting a definitive count. An **2026-08-12 publisher notice** reports suspended/disrupted Snowflake access; no subsequent restoration was verified, and reproducibility requires authorized cloud credentials, quotas, task revisions, pinned evaluation suite, and billing/privacy safeguards.
+- Source repository **MIT software licensing** does not grant separate rights to all third-party warehouse tables, hosted SQL data, or evaluation content. Published leaderboard measurements and raw ground-truth tables differ from the benchmark identity.
+- Original first-party sources: https://github.com/xlang-ai/Spider2 ; https://github.com/xlang-ai/Spider2/tree/main/spider2-lite ; https://github.com/xlang-ai/Spider2/tree/main/spider2-snow ; original paper https://arxiv.org/abs/2411.07763
+- Source gate qualifies only the existing original dataset identity, public publisher-described settings, dated access issues and data-rights uncertainty. No Snowflake connection, query execution, reconciliation of every DBT directory, independent evaluation, legal/privacy/security audit, whole-repository schema/cache/CI/render, clean or final credit.
