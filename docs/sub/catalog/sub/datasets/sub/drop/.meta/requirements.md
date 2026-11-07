@@ -16,3 +16,10 @@
 - Exactly one new canonical dataset at `catalog/datasets/drop`, three new authored files, and a dataset-index link.
 - Existing Ai2 entity, requirements and reader agree on three original datasets and the reciprocal edge resolves without duplicates.
 - Scoped catalog readback is not a complete eight-root clean cycle, final cache/render/schema/CI verification, model run, or comprehensive upstream data-rights audit.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **DROP** is Ai2's originally published 2019 paragraph-based reading comprehension task requiring discrete reasoning. The archived publisher page describes a **~96,000-question** released corpus, with ~77K public train, ~9.5K public dev and similar hidden test. The **55K** statement in the original NAACL paper abstract describes a distinct paper-era scope, not a reason to overwrite released counts.
+- Dataset usage rights are **not unambiguously normalized**: the first-party archival source says **CC BY-SA 4.0**, whereas the Ai2-managed AWS registry summarizes the license as **CC BY**. Also distinguish source passage rights, hidden scoring, AllenNLP dataset reader and NAQANet baseline implementation.
+- Original sources: https://github.com/allenai/allennlp-website/blob/master/drop.html ; https://allenai.org/open-data ; https://aclanthology.org/N19-1246/ ; https://registry.opendata.aws/allenai-drop/
+- The scoped gate accepts only this existing original dataset identity and source-reported release/split/license boundaries. No independent rights/legal/privacy/security audit, hidden test access, model evaluation, global schema/cache/CI/render, clean or final gate.
