@@ -14,3 +14,10 @@
 - Original AgentBench and AgentBench FC evaluations are clearly version-separated.
 - A running benchmark evaluator, AgentRL framework or leaderboard is not duplicated as a new dataset family.
 - The THUDM producer relation reciprocates this canonical benchmark identity.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **AgentBench** is the **ICLR 2024 THUDM** interactive **LLM-as-agent** benchmark; the archived original `v0.1/v0.2` scope includes **eight** evaluation environments across OS, database, knowledge graphs, games, lateral-thinking puzzles, household simulations, web shopping and browsing. Development/test tasks and evaluation budgets are protocol- and environment-dependent.
+- The maintained first-party repository announced **AgentBench FC on 2025-10-10**, integrated with AgentRL in a function-calling style and five containerized task types (**ALFWorld, DBBench, KnowledgeGraph, OS interaction, WebShop**). That FC runtime is distinct from the original interactive task identities and incompatible scoring setups; upstream hardware/memory and dependency warnings do not establish stable benchmark reproduction.
+- Verified original publisher source: https://github.com/THUDM/AgentBench ; original scope and current FC transition are both documented in its README.
+- Acceptance is for the existing original-source dataset/evaluation identity and dated first-party scope only. No Docker/Redis/Freebase environment executed, model leaderboard independently reproduced, dataset-content/license audit, complete repository schema/cache/CI/render, clean or final credit.
