@@ -22,3 +22,9 @@
 - Render every visible current relation using canonical target names, explicit order first and alphabetical order within each relation group. Keep metadata paths out of reader navigation.
 - Recheck account eligibility, exact artifact access, versions and terms before deployment. This source review does not certify runtime performance.
 - Reviewed sources: <https://www.perplexity.ai/products/computer>, <https://www.perplexity.ai/changelog/effort-mode-gpt-6-astra-and-skills-marketplace>.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Perplexity Computer is a hosted digital-worker/agent product distinct from the Perplexity answer workspace, Comet browser and local Portable Computer. Connected-app and cloud execution boundaries require separate permissions.
+- First-party product/documentation surface: https://www.perplexity.ai/computer
+- Scoped identity/source boundary only; no authenticated execution, security/privacy audit, full-repository clean pass or final-gate credit.
