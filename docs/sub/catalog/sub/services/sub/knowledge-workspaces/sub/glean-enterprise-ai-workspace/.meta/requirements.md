@@ -14,3 +14,12 @@
 
 - One canonical service reader under the selected category and one relative index link; distinct source software, model, content and operator boundaries remain explicit.
 - First-party evidence supports the scoped profile only. Do not infer runtime tests, full rights/contract audits or repository-wide clean status.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Glean is a hosted organization-connected knowledge/search/assistant workspace, not the owner of every indexed source system or an underlying language model. Its official information-access guide separates company knowledge, web search and LLM prior knowledge; citations are contingent on retrieving sources and may be absent for model-only responses.
+- Results depend on source permissions and individual identity/context. Source ACL changes, connector token scopes, sync behavior and generated actions are operational trust boundaries, not proof of current tenant authorization or independent data-residency, privacy or compliance review.
+- Verified first-party source 1: https://docs.glean.com/user-guide/about/what-is-glean
+- Verified first-party source 2: https://docs.glean.com/user-guide/assistant/how-glean-accesses-info
+- Verified first-party source 3: https://docs.glean.com/user-guide/assistant/ai-answers
+- Source qualification is for existing hosted workspace identity and bounded published access model only. No tenant provisioned, documents indexed, user ACLs tested, full contracts audited, whole-repository clean pass or final gate.
