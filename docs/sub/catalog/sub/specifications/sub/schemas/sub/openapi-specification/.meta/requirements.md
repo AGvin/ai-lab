@@ -21,3 +21,12 @@
 - Latest-version label and authoritative HTML correspond to an actually published normative version, not an editor preview.
 - Description-schema scope is distinct from a communication protocol and from an installable OpenAPI validator or SDK.
 - OpenAPI Initiative `produces` inverses this `produced-by` relation.
+
+## Scoped original-source qualification — 2026-11-07
+
+- The OpenAPI Specification (OAS) describes a language-neutral, machine-readable HTTP API interface; the released OAS 3.2.1 is dated 2026-09-10. Its schema objects, operations, paths, parameters, requests, responses and security declarations are documentation contracts, not a transport that invokes an agent or proves a server implements that contract.
+- OpenAPI 3.0, 3.1 and 3.2 differ materially in JSON Schema dialect integration, supported methods and extended response/streaming semantics. A particular code generator, SDK, validator, function-call adapter or MCP tool integration may support only part of a revision. Arazzo and Overlay have separately published specifications rather than being intrinsic runtime features of OAS.
+- Verified first-party source 1: https://spec.openapis.org/oas/v3.2.1.html
+- Verified first-party source 2: https://spec.openapis.org/oas/latest.html
+- Verified first-party source 3: https://github.com/OAI/OpenAPI-Specification
+- Existing versioned OpenAPI specification identity/source only; no HTTP API, generated client, validator, LLM action, security/rights certification, full repository schema/cache/CI/render, clean pass or final-delivery gate was executed.
