@@ -10,3 +10,10 @@
 ## Validation
 
 - The entity is represented as a published/active technical standard rather than its earlier PAR/draft state.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **IEEE 3549-2026** is marked **Active Standard** with IEEE Standards Board approval on **2026-06-04**; the official title specifies an **Approved Draft Standard for Inference Optimization Systems of Large Language Models**. No separate release/publication date was inferred.
+- The public IEEE summary addresses system architecture, functional requirements, performance metrics and evaluation methods. Its optimization-system scope is distinct from a concrete inference engine, hardware accelerator, compiler-interface standard (IEEE 3379), actual benchmark result, or vendor deployment guarantee.
+- Verified original publisher source: https://standards.ieee.org/ieee/3549/11869/
+- Original-source credit covers existing identity, published approval/status and public abstract only; complete licensed text, production performance measurements, independent legal/security/conformance review, root-wide schema/cache/CI/render, clean and final gates are outside this acceptance.
