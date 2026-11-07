@@ -18,3 +18,10 @@
 - Exact one reciprocal Ai2 producer dataset relation, canonical ID and index destination.
 - Reader includes source rights uncertainty and disambiguation from original Ai2 ARC.
 - Scoped link/YAML/readback checks are distinct from whole-repository schema/cache/CI and final reader rendering.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **OpenBookQA** is Ai2's original 2018 open-book multiple-choice science QA benchmark, distinct from Ai2 ARC, ARC-AGI and model code. The original publisher's **5,957 questions** have **4,957 train / 500 validation / 500 test** splits; Hub `main` and `additional` configs express the same question identities with different supporting annotations. The elementary science fact book is reference context, not independent question-gate credit.
+- The original publisher-managed Hub card marks the **dataset license unknown**; the separate `allenai/OpenBookQA` repository licenses baseline model/evaluator source code, not automatically every question/fact. Source access to oracle facts, prompt settings, revision and scorer affect reported accuracy.
+- First-party sources: https://huggingface.co/datasets/allenai/openbookqa ; https://github.com/allenai/OpenBookQA ; original paper https://aclanthology.org/D18-1260/
+- Acceptance is bounded to original existing dataset identity, public task/split data and explicit license uncertainty. No additional entities, unrestricted redistribution rights, model inference, independent security/legal audit, whole-repo validation, clean or final gate.
