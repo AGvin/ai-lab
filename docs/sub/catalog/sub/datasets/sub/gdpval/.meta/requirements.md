@@ -21,3 +21,10 @@
 - Open benchmark subset and full evaluation are not conflated.
 - Reported model/human comparisons remain tied to the exact evaluation configuration.
 - OpenAI provenance resolves bidirectionally.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **GDPval** is OpenAI's original released benchmark for **real-world professional knowledge-work deliverables** across **44 occupations and nine sectors**, not a gross-domestic-product forecast or proof of universal job automation. The original evaluation includes **1,320 tasks**, while the official OpenAI Hub distributes a **220-task public gold subset** with supporting reference assets, scored rubrics and model/human evaluation methodology.
+- The benchmark's full/private and released/public subsets must not be merged or scored interchangeably. Hosted leaderboard retirement/status and open/self-run grading guidance are separate platform surfaces; don't infer an active hosted grading service or independent economic value from published model costs, results or judge ratings. The public dataset card discloses third-party brand references, optional media and limited sensitive-content cases with separate rights/privacy considerations.
+- Original publisher sources: https://openai.com/index/gdpval/ ; https://huggingface.co/datasets/openai/gdpval ; https://evals.openai.com/gdpval/grading
+- Source acceptance covers one existing benchmark identity, public/full split and documented evaluator/rubric access boundaries only. No private task access, model/paid human-expert grading, independent productivity forecast, corpus rights/security/legal audit, whole-repo schema/cache/CI/render, clean or final gate.
