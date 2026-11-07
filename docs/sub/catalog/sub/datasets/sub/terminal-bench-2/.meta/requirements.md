@@ -16,3 +16,10 @@
 - The released dataset/benchmark identity remains distinct from evaluation software/harnesses, leaderboards and model submissions.
 - Revision, scoring and methodology boundaries are explicit when numerical claims are made.
 - Source links and reciprocal producer provenance resolve correctly.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **Terminal-Bench 2.0** is the independently versioned task benchmark for agents performing verifiable end-to-end work in **containerized terminal environments**. The original publisher's `terminal-bench-2` repository identifies its released dataset as **`terminal-bench@2.0`**; this is not the earlier Terminal-Bench 1.x corpus, a CLI agent product, or the separate **Harbor** evaluation/rollout framework.
+- The official publisher documents Harbor as the current evaluation runner and explains task-bound oracle solutions and validators. Dataset identity, reference revision, container image, selected agent/harness, tool access, scoring hooks and execution budgets must be pinned before numerical comparisons; publisher statements about task quality are not independently validated by this catalog source review.
+- First-party sources: https://github.com/harbor-framework/terminal-bench-2 ; https://github.com/laude-institute/terminal-bench-2 ; https://harborframework.com/docs/running-tbench
+- Acceptance covers the existing `2.0` source dataset identity, official published task and harness separation, and documented version boundary. No container command execution, oracle/agent run, task rights/security/operational audit, root-wide schema/cache/CI/render, clean or final credit.
