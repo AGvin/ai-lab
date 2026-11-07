@@ -19,3 +19,12 @@
 - Normative behavior and version labels correspond to the official released Overlay specification.
 - The canonical identity is not duplicated as an OAS feature, transformation library, agent tool, or Arazzo workflow.
 - The existing OpenAPI Initiative producer inverses this record's `produced-by` relation.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Overlay v1.2.0, published 2026-09-22 by the OpenAPI Initiative, is an independently versioned JSON/YAML transformation document that modifies an OpenAPI description through ordered actions and JSONPath-based targets. It is not the base API schema, a live API server, Arazzo workflow, or a universal AI-agent integration.
+- The released 1.2.0 specification defines targeting, updates/removals/copies and reusable actions, with relative-reference, `extends` and `$self` semantics tied to the exact revision. A tool that reads OpenAPI does not automatically support Overlay 1.2.0; transformations require version-aware implementation and result validation.
+- Verified first-party source 1: https://spec.openapis.org/overlay/v1.2.0.html
+- Verified first-party source 2: https://spec.openapis.org/overlay/
+- Verified first-party source 3: https://github.com/OAI/Overlay-Specification
+- Source acceptance is limited to the existing formal specification and official published boundary. No transformation engine, resulting API validation, cross-tool compatibility test, full rights/security audit, root-wide schema/CI/render, clean pass or final gate.
