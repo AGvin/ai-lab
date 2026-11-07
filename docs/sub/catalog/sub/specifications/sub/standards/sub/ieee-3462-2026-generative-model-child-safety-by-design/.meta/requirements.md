@@ -12,3 +12,10 @@
 
 - Active-standard status and Board approval remain traceable to IEEE SA.
 - The entity remains a safety recommended-practice standard rather than a product or policy claim.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **IEEE 3462-2026** is marked **Active Standard** by IEEE SA, with the official title **Approved Draft Recommended Practice for Using Safety by Design in Generative Models to Prioritize Child Safety**. Do not infer a separate publication date from this status alone.
+- The public abstract addresses prevention of child sexual abuse and exploitation across generative-model development, deployment and maintenance, including text, image, video and audio modalities. Guidance is distinct from a real-world moderation tool, child-safety certification, proven safeguard efficacy, legal compliance or guarantee that a deployed system is suitable for minors.
+- Verified original publisher source: https://standards.ieee.org/ieee/3462/11584/
+- Acceptance covers the existing standards identity, current official status and public summary, not licensed full normative text, child-safety system assessment, independent legal/security/safety audit, root-wide schema/cache/CI/render, clean pass or final gate.
