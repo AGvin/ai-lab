@@ -17,3 +17,10 @@
 - HumanEval scores are not treated as evidence of repository-scale software-engineering performance without separate evidence.
 - Harness execution risk is not hidden if practical evaluation guidance references executable model output.
 - The `produces` / `produced-by` relation pair resolves consistently to OpenAI.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **HumanEval** is OpenAI's released **2021 handwritten function-completion problem set**, originally presented with **Evaluating Large Language Models Trained on Code**. The official `openai/human-eval` repository is now explicitly labeled **deprecated and unmaintained**; it distributes an evaluation harness but does not imply future maintenance or provider support.
+- The dataset of code-completion tasks is separate from the `human-eval` Python evaluator, model-generated completions, `pass@k` sampling estimator, code execution runtime and independently reported model scores. The upstream strongly warns that evaluated **model-generated code is untrusted** and must run in a robust sandbox, not on an ordinary host.
+- Verified original sources: https://github.com/openai/human-eval and https://arxiv.org/abs/2107.03374
+- Accepted only the existing original dataset identity, 2021 publication provenance, repository lifecycle and public evaluation/safety boundaries. No execution of generated code, model scoring, content rights/legal audit, operational exploit assessment, full-repository schema/cache/CI/render, clean or final credit.
