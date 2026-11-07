@@ -18,3 +18,10 @@
 - Version-specific workload changes are not generalized across all MLPerf Training revisions.
 - MLCommons provenance resolves bidirectionally.
 - Results remain scoped to the exact benchmark version and submitted system.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **MLPerf Training** is MLCommons' open, peer-reviewed, continuously versioned full-system model-training benchmark suite. The published **2026-06-16 v6.0** results add **DeepSeek V3** and **GPT-OSS 20B** Mixture-of-Experts training workloads; these are reference model/workload choices and do not make MLCommons the producer of the original trained-model architectures.
+- Training results are **time to target quality**, scoped to the benchmark's specific dataset, training scripts, model, end quality target, host/accelerator/cloud configuration and energy/submission rules. Its historic and current workloads differ, and vendor results are not universal model performance, standalone accelerator benchmarks or independent software-compliance attestations.
+- Original MLCommons sources: https://mlcommons.org/2026/06/mlperf-training-v6-0-results/ ; https://mlcommons.org/benchmarks/training/
+- Scoped gate confirms original existing suite identity and publicly dated v6.0 work/measurement boundary only; no model-training run, revalidation of published scores, third-party model rights or privacy/security/legal audit, whole-repo schema/cache/CI/render, clean or final credit.
