@@ -19,3 +19,10 @@
 - One original MATH source-dataset identity separate from MATH-500, PRM800K labels, AMPS and evaluation harnesses; no duplicate catalog credit for subsets or mirrors.
 - Exact reciprocal has-derivative/derived-from dataset relation and correct canonical links in both dataset readers and dataset index.
 - Licensing notes never misrepresent a MIT software repo grant as unrestricted rights over all original competition questions. No full schema/cache/CI or final renderer credit for bounded content/link checks.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **MATH** is the original **2021** mathematics competition question-and-solution corpus by **Hendrycks et al.**, with **12,500** released problems in the original paper (**7,500 training / 5,000 test**). It is distinct from auxiliary **AMPS** pretraining data, the later OpenAI-curated **MATH-500** test subset, and **PRM800K** step-level labeled model trajectories; dataset lineage does not equate their question rights or evaluation contracts.
+- The researchers' repository provides original authorship/publication, loaders and evaluator, while linking a separate data download. Its MIT repository software/documentation license does **not** independently clear all original third-party competition math problems or test solutions. Reproductions must pin the data revision, answer-equivalence grader and split.
+- Verified original sources: https://github.com/hendrycks/math ; https://arxiv.org/abs/2103.03874 ; source lineage: https://github.com/openai/prm800k
+- Source qualification covers the original MATH identity, historic study/data splits and derivative boundaries only. No underlying problem-data redistribution, independent mathematical answer verification, model execution, rights/legal/privacy audit, whole-repository schema/cache/CI/render, clean or final acceptance.
