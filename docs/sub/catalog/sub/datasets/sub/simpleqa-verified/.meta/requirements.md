@@ -18,3 +18,10 @@
 - Exactly one canonical `catalog/datasets/simpleqa-verified` identity, distinct from `catalog/datasets/simpleqa`, mirrors, score tables and evaluator software.
 - Source dataset, derivative dataset and existing Google DeepMind producer must have matching canonical inverse edges and resolving reader links.
 - Verify all nine changed catalog paths at the approved branch and actual complete commit diff; full eight-root catalog saturation, full schema/cache/CI and final reader render remain separate unfinished gates.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **SimpleQA Verified** is a **September 2025** independently curated **1,000-question** short-form factuality benchmark by researchers at **Google DeepMind and Google Research**. It is a derivative of OpenAI's October 2024 original **4,326-question SimpleQA** dataset, not an alias, an original OpenAI-authored replacement, the `simple-evals` software or an independent web-browsing test.
+- The official `google/simpleqa-verified` Hub data card identifies a **tool-free parametric-knowledge** evaluation setting and declares **MIT** dataset metadata. The paper/data card report separate filtering, verification, topic balancing and a changed autorater/grading protocol. Reproducing comparable scores requires the exact dataset revision, scorer, model, prompting and abstention policy. Published author-source URLs and the inherited original questions have separate third-party rights/freshness boundaries.
+- Verified first-party sources: https://huggingface.co/datasets/google/simpleqa-verified ; https://deepmind.google/research/evals/ ; https://arxiv.org/abs/2509.07968
+- Bounded source credit covers the existing original derivative identity, publisher, source and evaluation boundaries only. No live model/autorater test, question-answer validation, item-level rights/legal/privacy/security clearance, root-wide schema/cache/CI/render, clean or final acceptance.
