@@ -17,3 +17,10 @@
 - One canonical `catalog/datasets/qasper` node with three new authored files; datasets index has one entry.
 - Ai2 remains one producer with four exact reciprocal dataset links.
 - Seven-file scoped authoring/readback is not global schema/cache/CI, final renderer, full eight-root clean cycle, model execution, or complete data-rights assessment.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **Qasper** is Ai2's 2021 NAACL scientific-paper QA benchmark, consisting of **5,049 questions across 1,585 research papers**. A writer works from title and abstract; a separate annotator supplies answers and evidence after reading full text. The 0.3.0 dataset builder's **888/281/416** train/validation/test numbers count *papers*, not individual questions.
+- The original Hub card declares **CC BY 4.0** for the dataset, but source article full text derives from **S2ORC** and is not independently licensed for universal redistribution under that declaration. Baseline LED implementation, full text, answer grading, question set and later suite/leaderboard packaging remain distinct.
+- First-party sources: https://huggingface.co/datasets/allenai/qasper ; https://github.com/allenai/qasper-led-baseline ; https://aclanthology.org/2021.naacl-main.365/
+- Scoped acceptance concerns an existing published corpus's provenance, question/paper count and bounded license declaration, **not** third-party full-text rights, privacy checks, model runs, global schema/cache/CI/render, clean or final acceptance.
