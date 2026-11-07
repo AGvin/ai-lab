@@ -14,3 +14,12 @@
 - The node is explicitly described as an optional MCP extension rather than MCP core.
 - Stable status and normative claims remain traceable to the official Model Context Protocol extension specification.
 - XAA / ID-JAG terminology is explained as related underlying identity-flow terminology without collapsing distinct specification ownership.
+
+## Scoped original-source qualification — 2026-11-07
+
+- MCP Enterprise-Managed Authorization is the optional stable MCP authorization extension `io.modelcontextprotocol/enterprise-managed-authorization`, distinct from the general MCP core OAuth authorization framework. An enterprise IdP enforces organization access policy while an MCP client obtains an Identity Assertion JWT Authorization Grant (ID-JAG), which the MCP authorization server validates before issuing an MCP resource access token.
+- ID-JAG under the separate identity-standard work is an underlying grant mechanism, not a second canonical MCP extension or universal entitlement. Client/server support, IdP trust configuration, audience binding, token exchange, revocation, delegated authorization and logs require tenant-specific implementation checks; these are not proof of blanket connector access or compliance.
+- Verified first-party source 1: https://github.com/modelcontextprotocol/ext-auth/blob/main/specification/stable/enterprise-managed-authorization.mdx
+- Verified first-party source 2: https://modelcontextprotocol.io/extensions/auth/enterprise-managed-authorization
+- Verified first-party source 3: https://github.com/modelcontextprotocol/ext-auth
+- Existing optional extension identity and primary published source qualified only; no IdP, identity JWT, OAuth exchange, live tenant, independent security/privacy/legal certification, full schema/cache/CI/render, clean pass or final gate. Reader page absent (uncredited).
