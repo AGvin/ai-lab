@@ -14,3 +14,10 @@
 - The official repository and project site independently substantiate original benchmark task scope and annotation release.
 - An execution-success score is not represented as simple browser navigation reachability or as a comparable result across incompatible environment and annotation versions.
 - The WebArena `produced-by` relation has the exact inverse WebArena-x `produces` link.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **WebArena** is the original published benchmark and resettable self-hosted **web-interaction environment** for autonomous browser agents, with a first-party evaluation workflow of **812 example tasks** across controlled shopping, administrative, forum, repository and information websites. Its original research is documented in the 2023 paper; annotation fixes were released as **v0.2.0 on 2023-10-24**.
+- A demonstration instance is not a substitute for a **resettable benchmark installation**; comparison requires matching website containers, task configs, authenticated agent state, action/observation settings, assertions and evaluation harness revision. AgentLab/BrowserGym integrations, leaderboard submissions and related VisualWebArena are separate software/variant boundaries, not interchangeable scored dataset identities.
+- Verified original publisher sources: https://github.com/web-arena-x/webarena ; https://webarena.dev/og/ ; https://arxiv.org/abs/2307.13854
+- Source acceptance is limited to original benchmark identity and public task/environment/revision boundaries. No controlled website was launched, no credentials used, no benchmark task or comparative score reproduced, no full security/privacy/legal/rights or root-wide schema/cache/CI/render, clean or final gate.
