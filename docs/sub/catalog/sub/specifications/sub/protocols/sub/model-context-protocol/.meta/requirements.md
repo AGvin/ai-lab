@@ -30,3 +30,11 @@
 - This specification node does not become an MCP tutorial, SDK guide, product-support matrix, or generic integration concept page.
 - The Anthropic origin and AAIF stewardship relations are separately sourced, reciprocal, and rendered without implying that either organization exclusively owns all MCP implementations.
 - This provenance repair does not revise the previously recorded protocol-version or implementation-semantics baseline.
+
+## Scoped original-source qualification — 2026-11-07
+
+- MCP is the first-party versioned protocol for LLM applications to connect to tools, resources and prompts. The official revision under this existing entity is 2026-07-28; its JSON-RPC 2.0 contract, version negotiation, per-request metadata, transports and authorization are specifications, not the behavior of one client/SDK or a blanket security authorization.
+- Keep older initialize/session semantics and deprecated roots/sampling/logging or HTTP+SSE only in their supported revision/compatibility contexts. MCP is not A2A or a universal marketplace/permission grant; server trust, credentials, user consent, tools and prompt-injection mitigations are deployment concerns.
+- Verified primary source 1: https://modelcontextprotocol.io/specification/2026-07-28
+- Verified primary source 2: https://github.com/modelcontextprotocol/modelcontextprotocol
+- Existing protocol/producer/maintainer identity source gate only; no MCP connection/session, host or server implementation test, independent security or full specification conformance audit, root-wide schema/cache/CI/render, clean pass or final gate.
