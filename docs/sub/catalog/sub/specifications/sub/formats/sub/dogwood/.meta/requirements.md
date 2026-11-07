@@ -15,3 +15,11 @@
 - Dogwood remains a policy-language/specification identity rather than a sandbox or hosted governance service.
 - Dogwood Local Engine is described as an implementation surface, not a duplicate canonical specification.
 - Preview-only Strands Box is not promoted to stable catalog status.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Dogwood is AWS's Apache-2.0 open-source policy language for AI agent tool-action governance, compatible with Cedar-style point-in-time policy and adding temporal conditions over prior action requests and responses. It is a policy/specification identity, not an AI model, an execution sandbox, a hosted AgentCore service or a general compliance certification.
+- The first-party Dogwood Local Engine implements policy evaluation using durable ordered event history and returns allow/deny verdicts; it does **not** enforce them. A trusted harness must intercept all tool calls, apply verdicts, and protect event integrity and credentials. Preview Strands Box is not thereby a stable independent service.
+- Verified first-party source 1: https://aws.amazon.com/blogs/opensource/introducing-dogwood-runtime-verification-for-ai-agents/
+- Verified first-party source 2: https://aws.amazon.com/blogs/opensource/introducing-the-dogwood-local-engine-temporal-governance-for-agent-actions/
+- Source qualification covers only the existing Dogwood language and its upstream provenance. No policy compiled, engine run, harness tested, safety/authorization certification completed, whole-repository schema/cache/CI/render, clean pass or final gate. Existing reader is absent, uncredited.
