@@ -14,3 +14,12 @@
 - Exactly one NIST AI 600-1 2024 publication, distinct from 2023 AI 100-1 and later draft revisions.
 - Voluntary guidance versus legal certification is explicit; original date and policy context retained.
 - Reciprocal NIST organization relation and local reader links verified in the scoped commit; no whole-repository schema/CI assertion.
+
+## Scoped original-source qualification — 2026-11-07
+
+- NIST AI 600-1, published **26 July 2024**, is the original separately citable cross-sector Generative Artificial Intelligence Profile supplementing NIST AI RMF 1.0. The publisher's DOI identifies the static 2024 edition rather than a later AI RMF revision or live risk-management Playbook.
+- The voluntary publication describes risks and mitigations relevant to generative AI. It is not ISO certification, statutory compliance, an independently validated model benchmark or approval to deploy agents. The 2024 document's historical executive-order context is not evidence that the cited order remains applicable in November 2026.
+- Verified first-party source 1: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
+- Verified first-party source 2: https://doi.org/10.6028/NIST.AI.600-1
+- Verified first-party source 3: https://www.nist.gov/itl/ai-risk-management-framework
+- Existing NIST AI 600-1 identity and exact NIST producer inverse are source-qualified only; no implementation tested, independent full legal/privacy/security assessment, whole-repo schema/cache/CI/render, clean pass or final gate.
