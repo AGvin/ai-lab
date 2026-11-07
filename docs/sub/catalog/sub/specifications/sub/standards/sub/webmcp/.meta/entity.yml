@@ -4,7 +4,7 @@ entity:
   aliases:
     - "Web Model Context API"
   identity_note: >-
-    Web Machine Learning Community Group Report, Draft dated 15 October 2026. Browser-facing
+    Web Machine Learning Community Group Report, Draft dated 2 November 2026. Browser-facing
     interface allowing web applications to register JavaScript-based tools for AI agents. Not a
     W3C Standard or Standards Track specification; deployment and permission semantics are not
     assured by a draft.
@@ -14,4 +14,4 @@ entity:
         url: https://webmachinelearning.github.io/webmcp/
       purposes: [identification, research]
       authority: official
-      note: "WebMCP Draft Community Group Report, 15 October 2026"
+      note: "WebMCP Draft Community Group Report, 2 November 2026 (current rolling draft as of 2026-11-07)"
