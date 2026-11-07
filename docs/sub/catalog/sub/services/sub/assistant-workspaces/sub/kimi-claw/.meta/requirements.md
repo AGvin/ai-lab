@@ -16,3 +16,9 @@
 - Kimi Claw remains a hosted always-online agent service, not self-managed OpenClaw software.
 - Community skill availability is not presented as Moonshot authorship or safety endorsement.
 - Producer provenance resolves bidirectionally to Moonshot AI.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Kimi Claw is the Moonshot-hosted route for an OpenClaw-based always-on bot, distinct from local OpenClaw deployments and Kimi's general assistant; beta lifecycle, channel access and retention claims are time-sensitive.
+- First-party product/documentation surface: https://www.kimi.com/
+- Scoped identity/source boundary only; no authenticated execution, security/privacy audit, full-repository clean pass or final-gate credit.
