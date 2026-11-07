@@ -17,3 +17,11 @@
 - The page does not become a Hugging Face Hub packaging guide or a runtime compatibility matrix.
 - Format validity is not presented as proof that the contained model is trusted, supported, or suitable for a workload.
 - Serialization format is not presented as changing or granting source-model licensing rights.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Safetensors is a tensor-only serialization file format, distinct from sharded model-repository indexes, framework-specific loaders and model provenance. The upstream format describes an eight-byte little-endian header length, UTF-8 JSON tensor metadata, offsets relative to the contiguous data buffer and a tensor payload.
+- Its format design avoids pickle-style executable object deserialization, but that does not mean tensors, associated tokenizer/code, downloader, custom model implementations or resource consumption are trusted. The upstream documentation notes duplicate-key restrictions, no holes in the data buffer, numeric NaNs/Infs can exist, and language/framework adapters remain separate.
+- Verified primary source 1: https://github.com/safetensors/safetensors/blob/main/README.md
+- Verified primary source 2: https://huggingface.co/docs/safetensors/index
+- Existing formal serialization identity and source gate only; no tensor archive parsed, memory-safety or malicious-model evaluation, copyright/license audit, schema/cache/CI/render, clean pass or final gate.
