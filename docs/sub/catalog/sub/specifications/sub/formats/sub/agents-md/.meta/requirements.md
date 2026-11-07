@@ -16,3 +16,11 @@
 - The format identity is distinct from Agent Skills, `llms.txt`, agent protocols and product-specific file names.
 - The `maintained-by` foundation relation has a matching `maintains` inverse.
 - Published origin/stewardship claims are traceable to first-party sources.
+
+## Scoped original-source qualification — 2026-11-07
+
+- AGENTS.md is an open Markdown project-instruction convention for coding agents, distinct from Skill packaging and `llms.txt` web indexing. The upstream site gives examples for setup, tests, code style and security; it does not impose a required YAML schema, a fixed headings inventory or a universal parser/conformance suite.
+- Nested files can scope instructions to a project subtree; the upstream guidance describes nearest-file precedence, but real discovery, conflict resolution, context loading and instruction trust are controlled by each adopting agent. Foundation stewardship does not imply all listed clients have identical support or grant autonomous tool permissions.
+- Verified primary source 1: https://agents.md/
+- Verified primary source 2: https://github.com/agentsmd/agents.md
+- The format's existing identity and foundation maintainer inverse relation are verified; its reader page is currently absent and earns no repair credit. No tool execution, cross-client compatibility test, complete foundation governance/legal assessment, clean pass or final gate.
