@@ -14,3 +14,10 @@
 - The benchmark remains distinct from the mutable AgentDojo Python API and security tooling.
 - Primary research authorship/provenance is qualified, with a reciprocal ETH Zurich producer link.
 - Prompt-injection evaluation results are not compared across incompatible task/attack/defense configurations.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **AgentDojo** is the published **NeurIPS 2024 Datasets and Benchmarks** research benchmark for prompt-injection attacks and defenses involving LLM agents, with first-party repository maintained by the **ETH Zurich SPY Lab** and contributors affiliated with **Invariant Labs**. It models legitimate user tasks, attacker influence through tool/environment inputs, and observable attack/defense outcomes.
+- The **AgentDojo Python package API** remains explicitly **under development** according to the upstream README; this does not make the original peer-reviewed research benchmark an unpublished draft. A code library, model-specific defender, attack harness and result explorer are not separate dataset identities or evidence of real-world safety.
+- Verified publisher sources: https://github.com/ethz-spylab/agentdojo and https://agentdojo.spylab.ai/ ; original paper: https://openreview.net/forum?id=m1YYAQjO3w
+- Source-qualified existing research dataset identity and publisher/publication scope only. No agent/tool injection experiments, independent safety effectiveness, complete dataset content/rights verification, full legal/security/privacy audit, repository-wide schema/cache/CI/render, reader repair, clean or final credit.
