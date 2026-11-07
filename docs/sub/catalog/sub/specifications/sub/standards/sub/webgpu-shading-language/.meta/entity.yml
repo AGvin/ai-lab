@@ -5,15 +5,15 @@ entity:
     - "WGSL"
   identity_note: >-
     W3C GPU for the Web Working Group shader-language specification. Latest published Candidate
-    Recommendation Draft 26 October 2026; distinct from the continuously updated Editor's Draft
+    Recommendation Draft 6 November 2026; distinct from the continuously updated Editor's Draft
     and from WebGPU API. Not a final W3C Recommendation.
   references:
     - type: specification
       source:
-        url: https://www.w3.org/TR/2026/CRD-WGSL-20261026/
+        url: https://www.w3.org/TR/2026/CRD-WGSL-20261106/
       purposes: [identification, research]
       authority: official
-      note: "Published Candidate Recommendation Draft, 26 October 2026"
+      note: "Published Candidate Recommendation Draft, 6 November 2026"
     - type: specification
       source:
         url: https://www.w3.org/TR/WGSL/
