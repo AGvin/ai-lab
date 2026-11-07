@@ -21,3 +21,10 @@
 - Kaggle competitions are benchmark inputs/members, not automatically separate canonical datasets.
 - Results remain scoped to the evaluated scaffold and compute/resource budget.
 - OpenAI provenance resolves bidirectionally.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **MLE-bench** is OpenAI's released **2024-10-10** benchmark evaluating ML-engineering agents on **75 curated Kaggle competitions** spanning data preparation, model training, experiments and submissions. The full benchmark, low/lite 22-competition subset, compute time budgets, Kaggle credentials and task-specific graders are distinct evaluation configurations; a result on one cannot be directly compared to another without matching model/scaffold/resources and sampling.
+- The first-party `openai/mle-bench` repository states **on 2026-04-24** that it is **not accepting new leaderboard submissions** while it designs a more comparable review process; this is not evidence the released corpus was withdrawn. Original known grading/preparation errors and **planned** v2 fixes remain open source-quality concerns, not proof v2 was published. Kaggle competition data have independent access, copyright, reuse and quota requirements.
+- First-party sources: https://openai.com/index/mle-bench/ ; https://github.com/openai/mle-bench
+- Existing identity, authorship/release, public competition/scoring scope and paused-submission boundary are source-qualified. No Kaggle data downloaded, GPU or agent runs, grading reproduction, individual competition rights audit, complete CI/security/legal/freshness, clean or final gate.
