@@ -18,3 +18,10 @@
 - One stable `catalog/datasets/prm800k` source identity, not MATH, MATH-500, an open-source evaluator or a trained PRM model.
 - Dataset index, original MATH reader/metadata, and existing OpenAI producer metadata/reader must resolve with unique exact inverse relation pairs.
 - Report a bounded nine-path authored change-set and actual SHA readbacks separately from full eight-root clean-cycle, repository-wide schema/cache/CI and final render acceptance.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **PRM800K** is OpenAI's released **May 2023** process-supervision research corpus of approximately **800,000 step-level human correctness labels** on model-generated mathematical reasoning trajectories. The source is **not** the original Hendrycks MATH question dataset, the later OpenAI-selected **MATH-500** held-out test set, an evaluator, a trained process-reward model or 800,000 independent math questions.
+- The original `openai/prm800k` repository provides phase-specific human-labeling instructions and **Git LFS** JSONL files with human correctness annotations; phase/split details and preprocessing must be pinned for comparisons. The upstream repository is **archived** and its MIT software/documentation LICENSE does not automatically clear original competition math questions, derived trajectories or other third-party data rights. Original raw labels may contain labeler pseudonyms and timestamps; do not treat historical availability as a privacy review.
+- Verified publisher sources: https://github.com/openai/prm800k ; https://openai.com/index/improving-mathematical-reasoning-with-process-supervision/ ; https://arxiv.org/abs/2305.20050
+- Accepted only existing release identity, source data/annotation boundaries and archived provenance. No raw label files downloaded, expert arithmetic review, model experiments, comprehensive intellectual-property/privacy/security/legal audit, whole-repository schema/cache/CI/render, clean or final credit.
