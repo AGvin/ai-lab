@@ -10,3 +10,10 @@
 ## Validation
 
 - The entity is represented as the published active standard rather than its earlier project/draft state.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **IEEE 3378-2025** is an **active IEEE Standard**, approved **2025-09-10** and published **2026-01-27**; its **2025 edition year differs from its publication date**. The official abstract specifies supported task types and evaluation metrics/requirements for large-scale deep-learning models.
+- The general model-evaluation framework is not a named model benchmark result, dataset, leaderboard, agent evaluation or hardware-system benchmarking method such as IEEE 2937.
+- Verified original publisher source: https://standards.ieee.org/ieee/3378/11304/
+- Scope accepted: existing IEEE identity and publisher record, exact approval/publication lifecycle and public synopsis. Full copyrighted text, benchmark execution, independent model-performance or regulatory/security claims, whole-repo validation, clean/final gates remain out of scope.
