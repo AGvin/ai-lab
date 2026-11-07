@@ -19,3 +19,9 @@
 - Muse service and Muse model family are not collapsed into one identity.
 - Roadmap features such as Confidential VM or future client/integration availability are not presented as already released.
 - Hosted execution/security claims stay tied to current Meta documentation rather than generalized to all personal agents.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Muse is cataloged as a Meta-operated hosted agent service distinct from the Meta AI assistant and model family. Background tasks, VM isolation and connected-app approvals are feature claims requiring freshness-sensitive primary-source validation.
+- First-party umbrella service surface: https://www.meta.ai/
+- The umbrella URL alone does not independently verify the specific product launch, lifecycle or architecture; these remain pending primary-source validation. No source gate is claimed until a direct product-specific official source is documented.
