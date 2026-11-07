@@ -17,3 +17,10 @@
 - Exactly one canonical GSM8K source-dataset identity; Socratic dataset view, main split, calculator software and samples receive zero duplicate entities.
 - Reciprocal OpenAI producer relation resolves; all new index and producer reader links point to canonical metadata and available readers.
 - No inferred cross-dataset MATH or MATH-500 derivation: they are independent data collections with different source authors and intended math difficulty levels.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **GSM8K (Grade School Math 8K)** is OpenAI's original **2021** English grade-school multi-step arithmetic word-problem dataset written by human problem writers. Its first-party GitHub README reports approximately **8.5K** problems and historically rounded **7.5K training/1K test** splits; exact dataset-card records must be tied to the selected published version, not silently reconstructed from those rounded figures.
+- The original repository is **archived (as-is, no updates expected)**. Original question/solution JSONL, `####` final-answer convention, calculator markup, Socratic form, model outputs and inference/checker scripts are different data and evaluation surfaces; historical availability does not imply a current maintained scoring standard. The official OpenAI Hub dataset declares MIT, not independent clearance for all outside redistribution.
+- First-party original sources: https://github.com/openai/grade-school-math ; https://huggingface.co/datasets/openai/gsm8k ; https://arxiv.org/abs/2110.14168
+- Source acceptance covers original published identity, release status, data format and public split boundaries only. No math grading run, contamination test, question audit, universal rights conclusion, root-wide schema/cache/CI/render, clean/final credit.
