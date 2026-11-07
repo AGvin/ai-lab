@@ -19,3 +19,11 @@
 - Generated code and successful previews are not described as a production-readiness guarantee.
 - Secrets, external integrations, publishing, and production data remain explicit trust boundaries.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Replit Agent is an AI builder inside Replit's managed project/editor environment. Its documented planning, code generation/debugging, review, checkpoints and publishing workflows belong to the hosted service and do not turn Replit Agent into a standalone local coding runtime.
+- Replit documents project/version history and Agent checkpoints as recovery and review aids. Checkpoints are not a replacement for independent code review, long-term Git history, dependency/security assessment, secrets controls or deployment authorization; production databases, external integrations and public URLs require separate checks.
+- Verified first-party source 1: https://docs.replit.com/learn/build-with-agent
+- Verified first-party source 2: https://docs.replit.com/learn/projects-and-artifacts/version-control
+- Source qualification only for the existing Replit Agent service; no authenticated project, Agent execution, published application, production security audit, repository-wide schema/CI/render, clean pass or final-delivery gate.
