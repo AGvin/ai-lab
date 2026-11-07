@@ -18,3 +18,9 @@
 - Grok Bot remains a hosted digital-worker service rather than a trained Grok model or local coding-agent client.
 - Team Bots and marketplace entries are not duplicated as standalone products without stronger lifecycle evidence.
 - Producer provenance resolves to the current SpaceXAI organization identity.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Grok Bot is cataloged as a hosted agent/digital-worker surface distinct from the Grok assistant and model API. Persistent cloud execution, team bots and marketplace claims require first-party version/availability checks.
+- First-party umbrella service surface: https://grok.com/
+- The umbrella URL alone does not independently verify the specific product launch, lifecycle or architecture; these remain pending primary-source validation. No source gate is claimed until a direct product-specific official source is documented.
