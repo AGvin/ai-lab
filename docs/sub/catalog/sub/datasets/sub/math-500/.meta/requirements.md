@@ -21,3 +21,10 @@
 - Exactly one source-backed canonical MATH-500 subset record; the full MATH, PRM800K labels, evaluator, mirrors or score variants are not silently conflated or given duplicate intake credit.
 - Reciprocal OpenAI produced-by/produces relations have exact canonical IDs; source-data versus subset-curation authorship is explicit.
 - Index, source profile and OpenAI producer reader links have canonical targets; bounded checks do not establish complete JSON Schema, cache/CI, final renderer or two whole-catalog clean passes.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **MATH-500** is the original **500-problem held-out selection** from the larger **Hendrycks MATH** corpus made and distributed by OpenAI with its **2023 PRM800K / Let's Verify Step by Step** research. The original `openai/prm800k` repository preserves the 500-item `prm800k/math_splits/test.jsonl` Git LFS test split, distinct from the **800,000 process-supervision correctness labels** and the rest of the original MATH dataset.
+- The OpenAI repo explains moving 4,500 prior MATH test questions to training and preserving 500 as held-out; OpenAI is the **subset curator**, not author of every original competition math question. Hugging Face H4's MATH-500 is a redistribution of this selection, not a new independent source corpus. Verify exact LFS/dataset revisions and grader answer-equivalence behavior before comparing reported scores.
+- Verified publisher sources: https://github.com/openai/prm800k and https://github.com/openai/prm800k/blob/main/prm800k/math_splits/test.jsonl and https://github.com/hendrycks/math and https://huggingface.co/datasets/HuggingFaceH4/MATH-500
+- Original released subset and derived-from boundary source-qualified only. No byte-for-byte H4-to-LFS equivalence, rights clearance for all third-party competition questions, math model execution, independent grader/score audit, complete security/legal/privacy/CI/render, clean or final credit.
