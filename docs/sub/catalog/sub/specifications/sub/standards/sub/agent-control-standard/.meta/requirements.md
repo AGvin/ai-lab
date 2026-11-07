@@ -14,3 +14,10 @@
 - Proposal content is not described as shipped normative behavior until it is incorporated into a published specification revision.
 - ACS is not reduced to an observability SDK, generic AI-safety framework, policy engine, or agent framework.
 - Version-sensitive wire, hook, profile, and conformance details are not presented as timeless.
+
+## Scoped original-source qualification — 2026-11-08
+
+- The **OWASP GenAI Security Project Agent Control Standard (ACS)** is an open runtime-agent-control wire and hook specification. The upstream project identifies **v0.1.0 as its published specification baseline** and a later **v0.1.3 repository maintenance changelog**; the latter is not evidence that an independently versioned v0.2 normative contract shipped.
+- In ACS-Core an observed agent reports control hooks to a separate authenticated Guardian with allow/deny/modify/ask/defer decisions. Core, optional Trace/Inspect/Crypto/Audit profiles, related telemetry and reference implementations have distinct conformance boundaries; publisher-documented self-declared conformance does not establish audited runtime enforcement or safety.
+- Verified original publisher sources: https://github.com/GenAI-Security-Project/agent-control-standard and https://owaspacs.org/docs/acs/ and https://github.com/GenAI-Security-Project/agent-control-standard/blob/integration/CHANGELOG.md
+- Bounded original-source qualification covers published ACS identity/version boundary, public specifications and maintainer documentation only. No live guardian/SDK tests, security assurance, independent conformance, full legal/runtime/freshness audit, root-wide schema/cache/CI/render, clean or final credit.
