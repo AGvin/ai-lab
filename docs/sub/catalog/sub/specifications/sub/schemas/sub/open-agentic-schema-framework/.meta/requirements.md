@@ -15,3 +15,12 @@
 - OASF is not described as a transport or agent-to-agent communication protocol.
 - Version-sensitive schema details are not presented without a current authoritative release boundary.
 - Implementation/tooling surfaces are not duplicated as independent specification facts.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Open Agentic Schema Framework (OASF) defines an extensible, versioned data model for describing agent attributes, skills, domains, modules, relationships and capabilities. Its record-object schema is not the SLIM transport, Agent Directory lookup service, A2A/MCP wire protocol, or an agent runtime.
+- AGNTCY first-party documentation distinguishes the upstream schema artifacts from its separately versioned OASF schema server, SDKs and hosted reference validator. A published schema does not certify the truth of an agent's asserted capabilities or guarantee that a directory entry is safe to execute; extensions and exact fields must be interpreted against the selected schema release.
+- Verified first-party source 1: https://docs.agntcy.org/oasf/open-agentic-schema-framework/
+- Verified first-party source 2: https://docs.agntcy.org/oasf/oasf-server/
+- Verified first-party source 3: https://github.com/agntcy/oasf
+- Existing schema identity/source acceptance only; no agent registry instance, schema validation, end-to-end transport, runtime security audit, whole-repository clean pass or final gate. Existing reader page is absent and has no repair credit.
