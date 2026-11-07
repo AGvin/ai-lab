@@ -14,3 +14,11 @@
 - Normative and current-version claims are traceable to official UCP specification/release sources.
 - UCP is not reduced to a payment protocol and is not described as replacing A2A, MCP, or AP2.
 - Date-versioned details are treated as mutable rather than timeless architecture facts.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Universal Commerce Protocol (UCP) is a release-versioned interoperable agentic-commerce contract for merchant/platform discovery, services, capabilities, checkout and payment-handling integrations. The first-party announcement identifies **v2026-08-25** as the released baseline, with separate dates and semantic versions for individual commerce capabilities.
+- The later September 25 lodging/booking capability is explicitly a **draft**, not automatic evidence that every merchant or UCP v2026-08-25 deployment already supports lodging. Distinguish broad commerce lifecycle from compatible AP2 payment-mandate and authorization semantics, MCP tool transport, and A2A inter-agent messaging; independent implementations require distinct authentication and conformance checks.
+- Verified first-party source 1: https://ucp.dev/documentation/announcements/
+- Verified first-party source 2: https://ucp.dev/specification/overview
+- Existing UCP specification/source gate only; no merchant enrollment, hotel booking, payment, consent, processor settlement, cross-protocol interoperability, complete legal/privacy/security audit, root-wide schema/cache/CI/render, clean pass or final gate.
