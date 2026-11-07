@@ -19,3 +19,10 @@
 - Both inverse provenance relations and local reader/index links resolve.
 - February and July 2026 scopes are distinguished and do not endorse Pro V2 without a V2 audit.
 - Scoped content checks are not current-head full schema, CI, final rendering or clean research pass.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **SWE-bench Verified** is the distinct human-reviewed **500-issue subset** of original SWE-bench, curated by OpenAI together with the SWE-bench authors in **August 2024**. OpenAI's first-party retrospective documents **93 professional developers** screening **1,699 candidate samples** and retaining 500 judged feasible under their evaluation rubric; this is not a guarantee that every accepted test is complete or every task still cleanly differentiates models.
+- In **February 2026** OpenAI stopped reporting Verified as an informative frontier coding benchmark because of contamination and narrow/incorrect tests. Its **59.4% material-defect finding applies to a selectively audited set of 138 difficult tasks, not all 500**. A later July 2026 Pro V1 audit also changed OpenAI's comparative recommendation; these are dated suitability reviews, not new dataset families or source gate identities.
+- Verified first-party sources: https://openai.com/index/introducing-swe-bench-verified/ and https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/ and https://www.swebench.com/verified and https://huggingface.co/datasets/SWE-bench/SWE-bench_Verified
+- Original curated subset lineage and historical/current first-party evaluation limits are accepted, not full rights to original third-party GitHub issue/test contents, live agent scoring, independent benchmark contamination or legal/security audit, schema/cache/CI/render, clean or final credit.
