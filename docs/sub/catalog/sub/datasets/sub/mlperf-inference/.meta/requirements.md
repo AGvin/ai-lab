@@ -19,3 +19,10 @@
 - Independently materialized suite-member relations are not presented as an exhaustive workload list.
 - MLCommons provenance resolves bidirectionally.
 - Results remain scoped to the exact benchmark version and submitted system.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **MLPerf Inference** is MLCommons' ongoing versioned benchmark suite for reproducible, architecture-neutral **trained-model inference-system** tests. The first-party **2026-09-16 v6.1** release expanded the suite with **Edge Agentic Inference** and **End-to-End RAG Inference**; these are recognized suite-member workload identities rather than the suite's entire benchmark inventory.
+- Reference models, underlying datasets, load-generation scenarios, accuracy targets, latency/throughput/power metrics, submission classes and published vendor systems are all version-specific. **MLPerf Endpoints** is a separately released serving-endpoint methodology; the publisher's future transition roadmap is not a renaming of historic Inference v6.1 results.
+- First-party sources: https://mlcommons.org/2026/09/mlperf-inference-v6-1-results/ ; https://mlcommons.org/benchmarks/inference-datacenter/ ; https://docs.mlcommons.org/inference/index_gh/
+- Source credit limited to existing suite identity, public v6.1 edition/relations and general reproducibility contract. No actual model/system benchmark run, independent leaderboard audit, unrestricted third-party model/data rights, full legal/security/CI/render, clean or final gate.
