@@ -19,3 +19,10 @@
 
 - The first-party WorkArena repository substantiates atomic and compositional task counts, separate research publications and gated ServiceNow instance access.
 - The WorkArena `produced-by` endpoint is reciprocated by the existing ServiceNow producer's exact `produces` endpoint.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **WorkArena** is the original **ServiceNow ICML/NeurIPS 2024** enterprise-workflow browser-agent benchmark family, distinct from general WebArena, BrowserGym's environment framework, AgentLab runner, and unrelated ServiceNow deployed products. Its publisher records **33 atomic WorkArena-L1 task types with 19,912 instantiated examples** and **682 compositional WorkArena++ tasks**, with distinct L1/++/L2/L3 evaluation settings and reset policies.
+- Evaluation requires provisioned authenticated **ServiceNow instances**: the first-party WorkArena Instances Hub distribution is **gated and subject to approval**, and public benchmark code does not grant an instance. Publisher terms restrict instances to **benchmarking, evaluation and research**, excluding agent training, production and storage of sensitive/proprietary/personal data; credential and account-state handling are mandatory operational considerations.
+- First-party sources: https://github.com/ServiceNow/WorkArena ; https://servicenow.github.io/WorkArena/ ; https://huggingface.co/datasets/ServiceNow/WorkArena-Instances
+- Source acceptance limited to existing benchmark family, original task counts, first-party tier/license/access and runnable-environment boundaries. No gated ServiceNow instance accessed, browser task executed, verified model scores or organizational compliance, complete legal/security/privacy audit, full schema/cache/CI/render, clean or final gate.
