@@ -22,3 +22,10 @@
 - HealthBench variants remain benchmark tracks/subsets unless independent upstream lifecycle establishes separate canonical identities.
 - MentalHealthBench is not treated as an alias or subset.
 - OpenAI provenance resolves bidirectionally.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **HealthBench** is OpenAI's published **2025-05-12** rubric-based evaluation benchmark for model responses to realistic health-related conversations. The original first-party release reports **5,000** synthetic/adversarially constructed multi-turn conversations with custom physician-authored grading criteria. This evaluates health-response quality and risk, **not clinical efficacy, medical-device validation or authorization to diagnose/treat**.
+- HealthBench's main track, **Hard**, **Consensus** and later **Professional** track use distinct task selections/rubric/evaluation methodology; their counts, judge and response-length adjustments require edition-specific comparison. New model system-card results or grader implementation changes are not separate dataset identities and cannot be treated as independently reproduced results.
+- First-party publisher source: https://openai.com/index/healthbench/ ; original paper: https://cdn.openai.com/pdf/bd7a39d5-9e9f-47b3-903c-8b847ca650c7/healthbench_paper.pdf
+- Source gate verifies original dataset/release and public benchmark/variant scope only. No medical advice, patient data, live model/physician grading, comprehensive clinical/legal/security/privacy review, repository-wide schema/cache/CI/render, clean or final acceptance.
