@@ -17,3 +17,10 @@
 - The suite and published release/version are identifiable, independently useful and source-backed.
 - Published results are scoped to exact workload, system and methodology, not universal hardware/model claims.
 - The official MLCommons producer is resolved bidirectionally.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **MLPerf Mobile v6.0** is MLCommons' released **2026-06-15** suite for on-device AI benchmarking. Version 6.0 adds LLM tests using **Llama 3.2 1B/3B Instruct and Llama 3.1 8B Instruct**, and selected **TinyMMLU/IFEval** prompts as benchmark workloads, not independently authored MLCommons datasets.
+- The publisher distinguishes supported **CPU evaluation** from particular **NPU-backed mobile SoC** paths; a result does not establish that all Android/iOS models or backends run every test. Retain exact app/suite build, memory/temperature/driver constraints, model quantization, response-length, accuracy gate and hardware revision for each reported submission. This suite is distinct from MLPerf Client's PC benchmark.
+- Verified publisher sources: https://mlcommons.org/2026/06/mlperf-mobile-v6/ ; https://github.com/mlcommons/mobile_app_open
+- Scoped acceptance establishes existing benchmark release, original publisher, published workloads and platform restrictions only. No on-device test, universal SoC compatibility, ML model licensing clearance, vendor-score validation, root-wide schema/cache/CI/render, clean or final credit.
