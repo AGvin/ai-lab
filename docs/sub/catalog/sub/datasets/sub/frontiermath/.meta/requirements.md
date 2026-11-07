@@ -16,3 +16,10 @@
 - Private evaluation problem sets are not falsely represented as public downloads.
 - FrontierMath benchmark does not conflate v1/v2, math tier variants, research open problems or the Erdős formal proof track.
 - Reciprocal Epoch AI provenance resolves correctly.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **FrontierMath** is the **Epoch AI** expert-authored mathematics benchmark program. Its **2026-06-12 V2** release corrected defects in earlier items and now describes **338 problems**, comprising **295** in Tiers **1–3** and **43** in research-level **Tier 4**. The publisher made **12 examples public**, while ordinary leaderboard evaluations operate on **private** benchmark sets. Those V2 counts cannot be applied to the original V1 or independent FrontierMath Open Problems / Erdős collections.
+- Epoch AI discloses **OpenAI funding and special access to a subset**; this is an evaluation fairness/contamination concern, not proof OpenAI produced or owns the benchmark. The authors' internal model leaderboard measurements, selected private questions, tool access, sampling and answer-checking remain independent of the canonical dataset source identity.
+- Verified original publisher sources: https://epoch.ai/frontiermath ; https://epoch.ai/benchmarks/frontiermath-tiers-1-3-v2 ; https://epoch.ai/benchmarks/frontiermath-tier-4-v2
+- Qualification covers existing Epoch AI ownership, current source-described V2 task/release/access boundaries and method only. No private item access, independent arithmetic/proof verification, model benchmark run, full source-rights/legal/security/privacy review, repository-wide schema/cache/CI/render, clean or final gate.
