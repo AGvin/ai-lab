@@ -13,3 +13,10 @@
 
 - The node remains a defensive/research benchmark identity rather than a live exploitation tool.
 - Performance claims remain scoped to simulated benchmark environments.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **SCONE-bench** is Anthropic and collaborators' original **2025** defensive research benchmark for investigating AI-agent capabilities on **405 historically exploited smart contracts from 2020–2025** on Ethereum, Binance Smart Chain and Base. The contracts originate in DefiHackLabs but that upstream repository is a source of target cases rather than Anthropic-owned original inventions or a second SCONE-bench identity.
+- The original evaluation isolates each case in a **locally simulated blockchain sandbox** and gives an agent an approximately **60-minute** budget to identify a bug and execute a test case under constrained tool access, measuring *simulated* extracted native tokens/funds. Publisher aggregate value results depend on contract snapshots, prices, chain-specific simulation, hidden verifier, model version, context and tools; they cannot authorize attacks on active systems or establish a forecast of actual financial loss.
+- Original publisher sources: https://www.anthropic.com/research/smart-contracts ; https://www.anthropic.com/research/exploit-evals .
+- Source credit is for one existing research benchmark and permitted isolated historical task/evaluator definition, not operational exploits, live chain execution or model test runs. Full contract/data rights, vulnerabilities/security/legal, reader repair (currently absent), repository CI/render, clean and final acceptance remain unverified.
