@@ -11,6 +11,7 @@ Security-first, observability-only, gateway, and agent-identity products remain 
 - [Credo AI Platform](./sub/credo-ai-platform/)
 - [Dome Agent Operations Platform](./sub/dome-agent-operations-platform/)
 - [Google Agent Registry](./sub/google-agent-registry/)
+- [Holistic AI Governance Platform](./sub/holistic-ai-governance-platform/)
 - [IBM watsonx.governance](./sub/ibm-watsonx-governance/)
 - [IBM watsonx Orchestrate](./sub/ibm-watsonx-orchestrate/)
 - [Microsoft Agent 365](./sub/microsoft-agent-365/)
