@@ -8,5 +8,6 @@ Underlying vector, graph, relational, embedding, indexing, and search mechanisms
 
 - [Hindsight Cloud](./sub/hindsight-cloud/)
 - [Mem0 Platform](./sub/mem0-platform/)
+- [Redis Agent Memory](./sub/redis-agent-memory/)
 - [Supermemory](./sub/supermemory/)
 - [Zep](./sub/zep/)
