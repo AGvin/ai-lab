@@ -18,3 +18,10 @@
 - Report current original-source HTTP 451, the September 2026 published notice and unresolved data rights without falsely asserting guilt or available licensing.
 - The dataset index resolves to a canonical entity/requirements/reader; source links and counts have scoped first-party backing.
 - Do not count scoped metadata/link/source checks as full JSON Schema, cache, CI, benchmark execution, final render or a clean eight-root research pass.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **HellaSwag** remains the original 2019 research benchmark by Rowan Zellers and collaborators of adversarially filtered multiple-choice commonsense sentence endings, with historical **39,905 train, 10,042 validation and 10,003 test instances** (59,950 total) as described by TensorFlow Datasets. ActivityNet/WikiHow sources, alternative splits, model scores and the original scoring harness are separate elements and do not warrant extra catalog identities.
+- **Source access/rights caution, verified 2026-11-08:** the original `rowanz/hellaswag` GitHub API returns **HTTP 451 with `reason: dmca`**, referencing GitHub's **2026-09-14 wikiHow** notice naming the research repository. GitHub reports copyright grounds while finding the anti-circumvention claim insufficiently supported. The author-named Hub mirror's visible availability does **not** establish an explicit unconditional source-data license. Do not bypass the block, reproduce protected WikiHow/ActivityNet text, or assume repository-code MIT terms grant rights to every dataset row.
+- Original primary/historical sources: https://arxiv.org/abs/1905.07830 ; https://github.com/rowanz/hellaswag ; https://github.com/github/dmca/blob/master/2026/09/2026-09-14-wikihow.md ; https://www.tensorflow.org/datasets/catalog/hellaswag .
+- One existing historical source identity is qualified for scholarly identification and current restriction disclosure only. No underlying data download, source access circumvention, independent legal adjudication, model benchmark execution, full rights/security/privacy/freshness/CI/render, clean or final acceptance.
