@@ -17,3 +17,10 @@
 
 - The official first-party repository substantiates task/site counts, replacement history, 2026 submission-schema revision and named research affiliations.
 - The Ohio State NLP Group producer has the exact inverse `produces` relation to `catalog/datasets/online-mind2web`.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **Online-Mind2Web** is OSU NLP Group and collaborators' separately published **COLM 2025** benchmark of **300 tasks across 136 real live websites**, testing *end-to-end browser-task completion*, not original Mind2Web static action prediction or Mind2Web 2's grounded search-answer task. The source task list changes when websites are modified or CAPTCHA-blocked, including a public **36-task replacement in November 2025**.
+- On **2026-05-23** the publisher added the **v2 trajectory submission schema** combining structured actions, screenshot/URL evidence and final answer fields. Historical **WebJudge(o4-mini)** scores cannot automatically be compared with future submissions, because the maintainer now notes that the original judge model is unavailable and a replacement requires separate validation. Human versus automated judging, task snapshot, environment/time, CAPTCHA/access rights and client runtime must be pinned to reproduce results.
+- First-party source: https://github.com/OSU-NLP-Group/Online-Mind2Web .
+- One inherited original public benchmark source qualified, not a new browser-agent service, model, or score run. No live-site automation, unauthorized accounts, scraped personal data, complete rights/security/legal/privacy checks, repository-wide schema/cache/CI/render, clean or final acceptance.
