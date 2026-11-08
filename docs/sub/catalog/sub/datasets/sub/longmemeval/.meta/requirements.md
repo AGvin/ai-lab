@@ -15,3 +15,10 @@
 - One original dataset node with reader, entity and requirements plus direct parent index link; no duplicate for 2025 cleaned edition.
 - Link to independently materialized LongMemEval-V2 by reader without conflating the two source identities.
 - Scoped branch file/diff verification does not count as full eight-root clean cycle, global schema/cache/CI/render or independent model evaluation.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **LongMemEval** is the original **2024** memory benchmark with **500 questions** probing information extraction, multi-session reasoning, updates, temporal reasoning and abstention. Its short, medium and oracle histories are *context configurations*, not 1,500 distinct authored questions.
+- The publisher's **2025 cleaned** conversation-history files supersede noisy original examples without creating another canonical benchmark. Keep original versus cleaned data revision, context length, evaluator and memory-model configuration pinned. The publisher's repository/cleaned card indicate MIT while background ShareGPT/UltraChat and other third-party conversation materials retain separate privacy and reuse rights.
+- First-party sources: https://github.com/xiaowu0162/LongMemEval ; https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned ; https://xiaowu0162.github.io/long-mem-eval/ .
+- Accepted only the already existing 2024 benchmark source and its 2025 correction; it is not LongMemEval-V2. No evaluator/model run, data redistribution or user-content rights guarantee, global schema/cache/CI/render, clean or final gate.
