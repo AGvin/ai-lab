@@ -20,6 +20,7 @@ This observation is deliberately scoped to the owner's tested sessions, models, 
 
 ## Related
 
+- [ChatGPT Integrations](./sub/integrations/) — product-specific skills and plugin profiles.
 - [OpenAI](../../../../../producers/sub/o/sub/openai/) — canonical producer organization.
 - [OpenAI Codex](../../../../../software/sub/agents/sub/hybrid/sub/openai-codex/) — separate coding-agent product.
 
