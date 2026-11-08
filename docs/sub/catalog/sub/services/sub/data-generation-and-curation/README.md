@@ -7,6 +7,7 @@ Live application retrieval and context state belongs under Data Infrastructure; 
 ## Child pages
 
 - [Encord](./sub/encord/)
+- [Gretel Platform](./sub/gretel-platform/)
 - [Labelbox](./sub/labelbox/)
 - [Scale Data Engine](./sub/scale-data-engine/)
 - [Tonic Fabricate](./sub/tonic-fabricate/)
