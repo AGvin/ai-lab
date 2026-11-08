@@ -23,3 +23,9 @@
 - Render every visible current relation using canonical target names, explicit order first and alphabetical order within each relation group. Keep metadata paths out of reader navigation.
 - Recheck account eligibility, exact artifact access, versions and terms before deployment. This source review does not certify runtime performance.
 - Reviewed sources: <https://www.perplexity.ai/changelog/effort-mode-gpt-6-astra-and-skills-marketplace>.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **Perplexity Skills Marketplace** is an independently identifiable vendor-operated discovery/installation **registry**, rather than a fixed publisher-authored collection of the individually published skills it lists. Perplexity's official 2026-09-21 launch notes describe a public browsable catalog even without sign-in and Enterprise-specific installation, sharing, organization skill creation and approval governance.
+- Original first-party product/lifecycle evidence: https://www.perplexity.ai/changelog/effort-mode-gpt-6-astra-and-skills-marketplace (Perplexity, checked 2026-11-08). Individual skills retain their own publisher and security/rights boundaries; a directory entry or Enterprise approval does not make third-party skill code safe or authorize unrelated credentials. Account, plan, admin policy, discovery UI and inventory may change.
+- Accept **one previously uncredited existing-identity original-source gate** for this marketplace only. Preserve distinct Perplexity Computer, agent plugin packaging, individual skill collections, skill registries and the upstream open Agent Skills format. No new identity or metadata gate, source artifact redistribution, authenticated installation/enterprise permission test, complete license/security/privacy audit, root-wide reader/CI/render, clean or final acceptance.
