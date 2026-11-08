@@ -4,7 +4,7 @@ entity:
   references:
     - type: documentation
       source:
-        url: https://help.openai.com/en/articles/20001069-skills-in-chatgpt
+        url: https://help.openai.com/en/articles/20001066-skills-in-chatgpt
       purposes:
         - research
       authority: official
