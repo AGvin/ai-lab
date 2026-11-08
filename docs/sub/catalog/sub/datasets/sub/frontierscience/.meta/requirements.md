@@ -20,3 +20,10 @@
 - Olympiad and Research are represented as benchmark tracks rather than separate canonical datasets unless a later upstream lifecycle establishes independent identities.
 - OpenAI provenance resolves bidirectionally.
 - Reported scores remain scoped to the exact evaluation setup and model revisions.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **FrontierScience** is OpenAI's original **January 2026** expert-written benchmark for scientific reasoning in **physics, chemistry and biology**, with distinct **Olympiad** (constrained short-answer science problems) and **Research** (open-ended self-contained scientific subtasks) tracks. The publisher's complete evaluation contains **more than 700 original questions**, while its released public gold sets contain **100 Olympiad and 60 Research** questions; the rest are withheld for contamination monitoring and are not publicly distributable.
+- Olympiad answers can be checked against constrained references, while the original Research evaluation uses expert-reviewed task-specific **10-point rubrics**, with the published **at least 7/10** threshold counted as correct. Research expert task-writing, automatic rubric grading, model evaluation and result leaderboards are distinct sources and procedures; model scores reflect selected prompt/harness/grader versions, not an independently demonstrated scientific discovery capability.
+- Original publisher source: https://openai.com/index/frontierscience/ .
+- Scoped acceptance covers the existing benchmark identity, dated original release, two tracks, gold/full split and score-protocol limitations only; no private task access, model run, third-party scientific dataset rights/security/legal audit, reader or metadata rewrite, complete schema/cache/CI/render, clean or final gate.
