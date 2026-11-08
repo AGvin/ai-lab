@@ -6,7 +6,7 @@ Amazon Bedrock is AWS's managed generative-AI/model-access service for invoking 
 
 Bedrock is a hosted model-access platform, not a single Amazon-trained model. Nova and partner-model identities, release histories and authorship stay with their original model producers. AWS hosting and a common invocation route do not transfer that provenance or guarantee equivalent model versions and parameters across providers.
 
-[Amazon Bedrock AgentCore](../../infrastructure/sub/amazon-bedrock-agentcore/) is a separately cataloged managed agent-runtime/platform service; agents, knowledge bases, Bedrock Marketplace and inference profiles should not be promoted into new model/API identities solely because they are accessible through Bedrock.
+[Amazon Bedrock AgentCore](../../../infrastructure/sub/amazon-bedrock-agentcore/) is a separately cataloged managed agent-runtime/platform service; agents, knowledge bases, Bedrock Marketplace and inference profiles should not be promoted into new model/API identities solely because they are accessible through Bedrock.
 
 ## Operational boundaries
 
