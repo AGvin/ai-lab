@@ -1,3 +1,4 @@
 entity:
   id: catalog/services/assistant-workspaces/chatgpt/integrations
+  type: catalog-index
   name: ChatGPT Integrations
