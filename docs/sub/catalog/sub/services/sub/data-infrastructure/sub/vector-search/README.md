@@ -7,9 +7,11 @@ Memory-first services, general databases that merely expose vector search, hoste
 ## Child pages
 
 - [Chroma Cloud](./sub/chroma-cloud/)
+- [Cloudflare AI Search](./sub/cloudflare-ai-search/)
 - [Cloudflare Vectorize](./sub/cloudflare-vectorize/)
 - [Pinecone](./sub/pinecone/)
 - [Qdrant Managed Cloud](./sub/qdrant-managed-cloud/)
+- [SpaceXAI Collections](./sub/spacexai-collections/)
 - [Turbopuffer](./sub/turbopuffer/)
 - [Vespa Cloud](./sub/vespa-cloud/)
 - [Upstash Vector](./sub/upstash-vector/) — managed serverless vector-index and similarity search service.
