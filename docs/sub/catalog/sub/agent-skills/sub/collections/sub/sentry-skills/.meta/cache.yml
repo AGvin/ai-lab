@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:89a0302ed1e27398fa663ebddbceb8040228abdc
+      entity.yml: gitblob:e413b3b8444c2f2f51d9a5f5c1e6e9027d85cac8
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -62,19 +62,19 @@ cache:
           authority: official
         - type: documentation
           source:
-            url: https://github.com/getsentry/skills/blob/0c464f411bdfb8d4c12314b36264d06cb2f60270/README.md
+            url: https://github.com/getsentry/skills/blob/e94f22214528d69899d09c627b3315ddc3544816/README.md
           purposes:
           - research
           authority: official
         - type: documentation
           source:
-            url: https://github.com/getsentry/skills/blob/0c464f411bdfb8d4c12314b36264d06cb2f60270/.claude-plugin/marketplace.json
+            url: https://github.com/getsentry/skills/blob/e94f22214528d69899d09c627b3315ddc3544816/.claude-plugin/marketplace.json
           purposes:
           - research
           authority: official
         - type: other
           source:
-            url: https://github.com/getsentry/skills/blob/0c464f411bdfb8d4c12314b36264d06cb2f60270/LICENSE
+            url: https://github.com/getsentry/skills/blob/e94f22214528d69899d09c627b3315ddc3544816/LICENSE
           purposes:
           - research
           authority: official
