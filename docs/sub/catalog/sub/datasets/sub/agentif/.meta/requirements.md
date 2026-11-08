@@ -17,3 +17,10 @@
 - Reciprocal `catalog/producers/t/thu-keg` links and reader navigation resolve.
 - Both conflicting official distribution licenses are visible, without claiming commercial freedom for the Hub distribution.
 - Evaluation revisions are explicitly non-comparable; no claim of runtime execution or whole-catalog render/schema/cache/CI validation.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **AgentIF** is THU-KEG's original 707-instruction / 50-agent-application research dataset, not IFEval or the independent AgentBench benchmark. The original code, annotation corpus, evaluator and mutable leaderboard are distinct assets.
+- The publisher's GitHub `data/LICENSE` grants CC BY 4.0 for its distributed data, but the publisher Hub mirror declares CC BY-NC 4.0 and the root code license is Apache-2.0. This is an unresolved, distribution-specific license conflict; no blanket commercial or third-party rights clearance follows from this source acceptance. The October 2026 evaluation protocol cannot be scored interchangeably with the initial release.
+- First-party sources: https://github.com/THU-KEG/AgentIF ; https://huggingface.co/datasets/THU-KEG/AgentIF ; https://agentif.github.io/ .
+- One *existing* canonical dataset's original-source gate is qualified. No new entity/metadata, benchmark execution, all-data rights/security/legal audit, complete schema/cache/CI/render, clean or final credit.
