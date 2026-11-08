@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:6b0e83d6df5f35c7e15f50dc93e51e813aaf446d
+      entity.yml: gitblob:b0c5f59d6941cab58cc27628238c2578874cb605
     parent: {}
   state:
     node:
@@ -66,6 +66,13 @@ cache:
           authority: community
           note: User-supplied practical evaluation reference; treat as qualitative
             community evidence rather than authoritative model specification.
+        - type: registry
+          source:
+            url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/meta/llama/llama-4

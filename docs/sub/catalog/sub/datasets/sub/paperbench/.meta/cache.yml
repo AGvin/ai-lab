@@ -1,0 +1,121 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:779be7955e0b01685c1bedadc0b51d975244a46b
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/paperbench
+        type: dataset
+        name: PaperBench
+        aliases:
+        - Paper Bench
+        identity_note: OpenAI's independently published 2025 AI research replication
+          benchmark dataset spanning 20 selected ICML 2024 Spotlight and Oral papers
+          and 8,316 individually gradable rubric criteria. Distinct from original
+          paper copyright, the replication/evaluation software, the separate JudgeEval
+          judge-assessment corpus, historical agent scores, and its Code-Dev scoring-protocol
+          variant. The papers, addenda, rubrics, datasets, runtime assets, and code
+          retain separately reviewable permission and version scopes.
+        references:
+        - type: article
+          source:
+            url: https://openai.com/index/paperbench/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original 2025-04-02 OpenAI publication establishing the 20-paper dataset,
+            8,316 rubric leaves and replication evaluation purpose.
+        - type: repository
+          source:
+            url: https://github.com/openai/frontier-evals/tree/main/project/paperbench
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original released PaperBench data and evaluation implementation in
+            OpenAI Frontier Evals; inspected pinned repo commit b78dab1da774a6456b1ed9c48c9ff194ee3ff36d.
+        - type: repository
+          source:
+            url: https://github.com/openai/frontier-evals/blob/main/project/paperbench/README.md
+          purposes:
+          - research
+          authority: official
+          note: Original dataset layout, Git-LFS hydration, separate Code-Dev and
+            JudgeEval methods, execution and API-key requirements.
+        - type: repository
+          source:
+            url: https://github.com/openai/frontier-evals/blob/main/LICENSE.md
+          purposes:
+          - research
+          authority: official
+          note: Original root MIT license for software and associated documentation;
+            does not independently clear authors' papers, external datasets or nonredistributable
+            artifacts.
+        - type: paper
+          source:
+            url: https://arxiv.org/abs/2504.01848
+          purposes:
+          - identification
+          - research
+          authority: upstream
+        relations:
+        - type: produced-by
+          target: catalog/producers/o/openai
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

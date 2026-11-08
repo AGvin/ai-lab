@@ -1,0 +1,96 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:4d0e23aa2ddc219d11acc051b361a83a59169a2b
+    parent:
+      entity.yml: gitblob:94df5cf52016d4c5269bb903a6a43c85fdce53b1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/application-frameworks/application-development/mcp-toolbox-for-databases
+        type: software
+        name: MCP Toolbox for Databases
+        references:
+        - type: repository
+          source:
+            url: https://github.com/googleapis/mcp-toolbox
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://mcp-toolbox.dev/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://cloud.google.com/blog/products/ai-machine-learning/mcp-toolbox-for-databases-now-supports-model-context-protocol
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/googleapis/mcp-toolbox/blob/b9b96ba4c31012db51024dd7ddabf1bd83aa18d7/LICENSE
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/g/google-cloud
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

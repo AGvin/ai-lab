@@ -1,0 +1,141 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:ac0026752e26ac222bdc80b95ce47f36101187c2
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/agentharm
+        type: dataset
+        name: AgentHarm
+        aliases:
+        - AgentHarm Benchmark
+        identity_note: Original 2024 agent-misuse and safety evaluation benchmark
+          developed jointly by researchers from Gray Swan AI and the UK AI Safety
+          Institute (now UK AI Security Institute). The full paper specifies 110 harmful
+          base behaviors augmented to 440 cases across 11 harm categories, whereas
+          the publicly released dataset initially contains only a subset with harmful
+          and paired benign/control configurations. Chat-only views, augmented variants,
+          agent runner implementations and revised Inspect Evals graders are not separate
+          original AgentHarm dataset identities. The publisher's license is MIT-like
+          with an additional safety/security-purpose restriction, not ordinary MIT.
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/datasets/ai-safety-institute/AgentHarm
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original AISI-hosted release, public splits and harmful/benign/chat
+            configurations; license metadata is 'other'.
+        - type: repository
+          source:
+            url: https://huggingface.co/datasets/ai-safety-institute/AgentHarm/blob/69e7a23c331a75d4e438a65233a4f8b459fe95c7/LICENSE
+          purposes:
+          - research
+          authority: official
+          note: Pinned original license text prohibits uses beyond improving AI safety/security
+            in addition to MIT-style terms.
+        - type: article
+          source:
+            url: https://www.aisi.gov.uk/research/agentharm-a-benchmark-for-measuring-harmfulness-of-llm-agents
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original research organization describes benchmark scope and origin.
+        - type: article
+          source:
+            url: https://www.grayswan.ai/research/agentharm
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Joint Gray Swan AI original research attribution, not evidence of
+            sole AISI authorship.
+        - type: repository
+          source:
+            url: https://github.com/UKGovernmentBEIS/inspect_evals/tree/main/src/inspect_evals/agentharm
+          purposes:
+          - research
+          authority: official
+          note: Maintained independent Inspect Evals implementation with versioned
+            scoring changes; different license from dataset.
+        - type: paper
+          source:
+            url: https://arxiv.org/abs/2410.09024
+          purposes:
+          - identification
+          - research
+          authority: upstream
+          note: Original October 2024 research; later presented at ICLR 2025.
+        - type: repository
+          source:
+            url: https://github.com/epfl-nlp/helpful-to-a-fault/blob/main/agentharm/LICENSE
+          purposes:
+          - research
+          authority: upstream
+          note: Author-maintained code copy of the special-purpose benchmark license,
+            distinct from generic Inspect Evals framework license.
+        relations:
+        - type: produced-by
+          target: catalog/producers/u/uk-ai-security-institute
+        - type: produced-by
+          target: catalog/producers/g/gray-swan-ai
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

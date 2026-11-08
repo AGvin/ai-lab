@@ -1,0 +1,91 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:f8bd686d2e0c361c14ef24de4514f9e6a171ef49
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/contractbench
+        type: dataset
+        name: ContractBench
+        aliases:
+        - Observation Contract Benchmark
+        identity_note: Thirty-three controlled agent workflow task templates measuring
+          temporal validity and byte-exact integrity of API-issued observation artifacts;
+          distinct from production API endpoints.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/SecurityLab-UCD/ContractBench
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/SecurityLab-UCD/ContractBench/blob/44858abacaa9291fd8ae7f3c5c23b5911270d836/README.md
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/SecurityLab-UCD/ContractBench/blob/44858abacaa9291fd8ae7f3c5c23b5911270d836/LICENSE
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

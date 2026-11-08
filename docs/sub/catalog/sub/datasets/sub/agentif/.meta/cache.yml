@@ -1,0 +1,123 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:71edeae8df4b85e108734e04a333bd45fc46d175
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/agentif
+        type: dataset
+        name: AgentIF
+        aliases:
+        - AGENTIF
+        identity_note: The THU-KEG original research dataset of 707 annotated instructions
+          across 50 agentic applications, distinct from IFEval, the current evaluation
+          harness, model-judge configurations, leaderboard results and the THUDM-published
+          AgentBench. License statements conflict between the original repository
+          and the Hugging Face mirror and require artifact-specific rights checks.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/THU-KEG/AgentIF
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original THU-KEG dataset and evaluation implementation.
+        - type: registry
+          source:
+            url: https://huggingface.co/datasets/THU-KEG/AgentIF
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Dataset mirror currently declares cc-by-nc-4.0 in Hub metadata, unlike
+            original GitHub data/LICENSE CC BY 4.0.
+        - type: repository
+          source:
+            url: https://github.com/THU-KEG/AgentIF/blob/main/data/LICENSE
+          purposes:
+          - research
+          authority: official
+          note: Original research repository's dataset-specific CC BY 4.0 grant.
+        - type: repository
+          source:
+            url: https://github.com/THU-KEG/AgentIF/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+          note: Separate Apache-2.0 grant for source code, not a license for all mirrored
+            datasets.
+        - type: official-site
+          source:
+            url: https://agentif.github.io/
+          purposes:
+          - research
+          authority: official
+          note: Current 2026-10 evaluation protocol is not score-comparable with earlier
+            results.
+        - type: paper
+          source:
+            url: https://arxiv.org/abs/2505.16944
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/t/thu-keg
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

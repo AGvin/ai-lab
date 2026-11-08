@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1203761a0803c842ba8b4d21a06efa0e24b795ac
+      entity.yml: gitblob:a5566688b6258bd96bc4666a55e15ceebdcae8b1
     parent: {}
   state:
     node:
@@ -45,9 +45,8 @@ cache:
         type: model
         name: Granite Guardian 4.1 8B
         identity_note: Granite Guardian 4.1 8B is IBM's 8B-class text safety and risk-evaluation
-          model. Its official card identifies ibm-granite/granite-4.1-8b as the fine-tuning
-          base; that source identity is not currently materialized as a local catalog
-          node.
+          model. Its official card identifies the canonical instruction-tuned ibm-granite/granite-4.1-8b
+          checkpoint as its fine-tuning source, distinct from Granite 4.1 8B Base.
         references:
         - type: registry
           source:
@@ -59,6 +58,8 @@ cache:
         relations:
         - type: member-of
           target: catalog/models/ibm/granite-guardian-4-1
+        - type: derived-from
+          target: catalog/models/ibm/granite-4-1/models/granite-4-1-8b
     aliases:
       effective:
         schema: default

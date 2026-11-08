@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5579519802608e7c75e8ac12e338ae7e84a8504f
+      entity.yml: gitblob:0c71807e250c7e45bf81f35b0574b55116931b91
     parent:
       entity.yml: gitblob:5e848f769005e6f901786fd212d8c9d8ccc468b3
   state:
@@ -172,6 +172,8 @@ cache:
         - type: produces
           target: catalog/hardware/nvidia-dgx-station
         - type: produces
+          target: catalog/hardware/nvidia-jetson-agx-thor-developer-kit
+        - type: produces
           target: catalog/hardware/nvidia-jetson-t5000
         - type: produces
           target: catalog/hardware/nvidia-jetson-t4000
@@ -189,6 +191,8 @@ cache:
           target: catalog/hardware/nvidia-geforce-rtx-3090
         - type: produces
           target: catalog/hardware/nvidia-geforce-rtx-4090
+        - type: produces
+          target: catalog/hardware/nvidia-geforce-rtx-5060-ti-16gb
         - type: produces
           target: catalog/hardware/nvidia-geforce-rtx-5090
         - type: produces
@@ -209,6 +213,14 @@ cache:
           target: catalog/software/model-and-data-platforms/model-development/megatron-core
         - type: produces
           target: catalog/software/model-and-data-platforms/model-development/megatron-bridge
+        - type: produces
+          target: catalog/hardware/nvidia-geforce-rtx-5080
+        - type: produces
+          target: catalog/hardware/nvidia-geforce-rtx-5070-ti
+        - type: produces
+          target: catalog/hardware/nvidia-rtx-pro-4500-blackwell-workstation
+        - type: produces
+          target: catalog/hardware/nvidia-vera-rubin-nvl72
         identity_note: NVIDIA is the corporate producer umbrella for represented hardware,
           software, models, services, skills, and research artifacts; joint project
           governance, acquired lineage, licensed technology, product licenses, and

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:69e5c1723598ed863ace6acfb8add92233e44ba1
+      entity.yml: gitblob:663798afc67f0f764be1d69378cce8f8ac7cc3ab
     parent:
       entity.yml: gitblob:930e92553831a6ecc24554722b9c90035a8b75ef
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
@@ -60,9 +60,22 @@ cache:
           purposes:
           - research
           authority: official
+        - type: repository
+          source:
+            url: https://github.com/zai-org/GLM-5
+          purposes:
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/z-ai/glm
+        identity_note: Released on 2026-08-27, GLM-5.3-Flash is a natively multimodal
+          text/image/video model with 320B total and 18B active parameters. The independently
+          trained base uses hybrid sparse and linear attention. Z.AI publishes its
+          weights under MIT; the provider's long-context and agent benchmark claims
+          are not locally reproduced. Model identity and released weights are separate
+          from hosted service pricing, quotas, runtime-specific context limits and
+          model variants.
     aliases:
       effective:
         schema: default

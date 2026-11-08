@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e7de57ca75e942b43e17500a48d478105c326a42
+      entity.yml: gitblob:12eb99d9d5bcdc4477404d803c6df4e6ae1cb333
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,13 @@ cache:
         id: catalog/hardware/amd-instinct-mi300x
         type: hardware
         name: AMD Instinct MI300X
+        identity_note: AMD's MI300X is a discrete CDNA 3 accelerator with 192 GB HBM3
+          per module. The documented eight-module Universal Baseboard is a system
+          configuration, not one GPU's capacity; OAM and platform power/cooling requirements
+          preclude assuming ordinary workstation-card compatibility. Model fit, measured
+          performance, current availability and software entitlements require separate
+          validation. Ownership/control-chain review remains pending; source attribution
+          is not adoption clearance.
         references:
         - type: product-page
           source:

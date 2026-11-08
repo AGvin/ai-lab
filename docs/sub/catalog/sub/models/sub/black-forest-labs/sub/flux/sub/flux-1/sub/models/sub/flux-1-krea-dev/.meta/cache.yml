@@ -1,0 +1,108 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:5b747bc8dd404fc3106829cfe56f0906019a00fe
+    parent:
+      entity.yml: gitblob:92e500a60a99e6637b9c4aa24e3634cb4d2360f9
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-krea-dev
+        type: model
+        name: FLUX.1 Krea [dev]
+        aliases:
+        - FLUX.1-Krea-dev
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.krea.ai/blog/flux-krea-open-source-release
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://bfl.ai/blog/flux-1-krea-dev
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/black-forest-labs/flux/flux-1
+        - type: produced-by
+          target: catalog/producers/b/black-forest-labs
+        - type: produced-by
+          target: catalog/producers/k/krea
+        identity_note: Separately released 12B guidance-distilled rectified-flow text-to-image
+          model jointly developed by Black Forest Labs and Krea, released July 31,
+          2025. Krea describes post-training BFL-provided flux-dev-raw through SFT
+          including synthetic Krea-1 samples and preference optimization. Hub metadata
+          classifies it as a FLUX.1-dev fine-tune, but the technical account does
+          not establish equivalence to the released FLUX.1-dev starting weights or
+          weight inheritance from Krea-1. Ecosystem compatibility is not a lineage
+          assertion. Gated weights use the FLUX dev Non-Commercial License; API terms
+          and output permissions are separate. Publisher aesthetic claims are not
+          local benchmarks.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

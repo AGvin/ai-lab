@@ -1,0 +1,114 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:9ae2917871bb110ecddc0de1c665ea0e0175cec5
+    parent:
+      entity.yml: gitblob:46b91081ab3e21420c7289bb28e30b3d82f867a5
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/d/dapr-project
+        type: organization
+        name: Dapr Project
+        identity_note: The original open-source Dapr community and Dapr Authors who
+          maintain and publish the separate Dapr Agents framework in the dapr GitHub
+          organization. Official community materials describe project authorship and
+          governance, and tagged package metadata credits Dapr Authors. Community
+          stewardship is not equivalent to Microsoft corporate ownership, the CNCF
+          umbrella, exclusive legal ownership or complete current beneficial-ownership,
+          sanctions, security or data-processing clearance. The original general-purpose
+          Dapr runtime and the Agents framework remain distinct software identities.
+        references:
+        - type: official-site
+          source:
+            url: https://dapr.io/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/dapr/community
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Dapr community and contributor governance.
+        - type: repository
+          source:
+            url: https://github.com/dapr/dapr-agents
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/dapr/dapr-agents/blob/v1.1.0/pyproject.toml
+          purposes:
+          - research
+          authority: official
+          note: Original package lists Dapr Authors.
+        - type: repository
+          source:
+            url: https://github.com/dapr/dapr
+          purposes:
+          - research
+          authority: official
+          note: Underlying runtime, not additionally accepted as Dapr Agents.
+        relations:
+        - type: produces
+          target: catalog/software/agent-frameworks/dapr-agents
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

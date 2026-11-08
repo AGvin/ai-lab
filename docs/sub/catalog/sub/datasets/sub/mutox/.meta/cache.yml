@@ -1,0 +1,84 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:4b59aedadafa0f144ce46773b8b4f73891ac7b55
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/mutox
+        type: dataset
+        name: MuTox
+        aliases:
+        - Multilingual Audio Toxicity Dataset
+        identity_note: Published Meta FAIR MuTox benchmark of annotated speech toxicity
+          across 30 languages in fourteen language families, with separately trained
+          detection models and evaluation setups.
+        references:
+        - type: documentation
+          source:
+            url: https://aclanthology.org/2024.findings-acl.340/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://ai.meta.com/research/publications/mutox-universal-multilingual-audio-based-toxicity-dataset-and-zero-shot-detector/
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

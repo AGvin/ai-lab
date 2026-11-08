@@ -1,0 +1,84 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d2c697cb5c1dd5e2b564c28bec020a9103d27504
+    parent:
+      entity.yml: gitblob:47a7c0b1caa21021139d67428aae1a2d5386e2f1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/microsoft/bitnet
+        type: model-family
+        name: BitNet
+        identity_note: Microsoft Research's native low-bit language-model research
+          family is distinct from the bitnet.cpp inference runtime. Model distributions
+          and specialized execution kernels have separate identities and compatibility
+          constraints. Ownership/control-chain review is incomplete; no Russian-control
+          finding or adoption clearance is established.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/microsoft/bitnet-b1.58-2B-4T
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/microsoft
+        - type: has-member
+          target: catalog/models/microsoft/bitnet/bitnet-b1-58-2b-4t
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -4,8 +4,7 @@ cache:
     self:
       entity.yml: gitblob:15dc07e9bdd87e7ab3d1df93b52f87c0967af325
     parent:
-      entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
-      node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
+      entity.yml: gitblob:dbba317335a2cfd36603c6d259cb5de43ccc587b
   state:
     node:
       effective:
@@ -17,7 +16,7 @@ cache:
           default_locale: en_US
           locales:
           - uk_UA
-        template: catalog/models/producer
+        template: catalog/models/family
       outgoing:
         schema: default
         requirements:
@@ -27,7 +26,7 @@ cache:
           default_locale: en_US
           locales:
           - uk_UA
-        template: catalog/models/producer
+        template: catalog/models/family
       children:
         outgoing:
           schema: default

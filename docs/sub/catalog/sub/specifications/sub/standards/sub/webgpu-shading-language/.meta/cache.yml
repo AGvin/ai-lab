@@ -1,0 +1,96 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bc2b72d6011a8c2847d5293fedca67ea57b86947
+    parent:
+      entity.yml: gitblob:0cf80df310da6a10fb2bdc28c39cf869cdb4d5e4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/specifications/standards/webgpu-shading-language
+        name: WebGPU Shading Language
+        aliases:
+        - WGSL
+        identity_note: W3C GPU for the Web Working Group shader-language specification.
+          Latest published Candidate Recommendation Draft 6 November 2026; distinct
+          from the continuously updated Editor's Draft and from WebGPU API. Not a
+          final W3C Recommendation.
+        references:
+        - type: specification
+          source:
+            url: https://www.w3.org/TR/2026/CRD-WGSL-20261106/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Published Candidate Recommendation Draft, 6 November 2026
+        - type: specification
+          source:
+            url: https://www.w3.org/TR/WGSL/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current W3C publication entry
+        - type: specification
+          source:
+            url: https://gpuweb.github.io/gpuweb/wgsl/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Separate Editor's Draft
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

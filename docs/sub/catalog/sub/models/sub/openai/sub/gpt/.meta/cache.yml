@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d1efcbb7595434212ad167100e4663bdc2527370
+      entity.yml: gitblob:52cd65222cdf88381b1d69c14613099b5334be4f
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
     parent:
       entity.yml: gitblob:3d7d9cfcd6ab81400d81e2468c33e9b2babb1ba5
@@ -79,6 +79,8 @@ cache:
           target: catalog/models/openai/gpt/models/gpt-6-luna
         - type: has-member
           target: catalog/models/openai/gpt/models/gpt-6-1-sol
+        - type: has-member
+          target: catalog/models/openai/gpt/models/gpt-6-1-terra
         identity_note: General-purpose model family; product names, reasoning modes,
           and routing aliases are not separate GPT families.
     aliases:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:51fa0d5bce74034a87eaf2105c7c76368d06ee5c
+      entity.yml: gitblob:423509d081e427501d4e08549b3009c714bcecfd
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -46,6 +46,11 @@ cache:
         id: catalog/agent-skills/collections/hugging-face-skills
         type: skill-collection
         name: Hugging Face Skills
+        identity_note: Hugging Face's Apache-2.0 collection covers Hub and ML workflows;
+          hf-cli is the documented bootstrap route and extra workflow skills can be
+          installed on demand. Instructions, CLI/MCP integration, model/dataset assets
+          and cloud jobs are separate. Repository licensing does not clear model/data
+          rights or authorize training, uploads or billable deployments.
         references:
         - type: repository
           source:
@@ -63,6 +68,20 @@ cache:
           note: AWS first-party implementation article documenting six Hugging Face
             Skills used for production SageMaker deployment workflows at a pinned
             Hugging Face Skills revision.
+        - type: documentation
+          source:
+            url: https://github.com/huggingface/skills/blob/25910b3d0ba31a2ba102f901cdc9e008c278a69c/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/huggingface/skills/blob/25910b3d0ba31a2ba102f901cdc9e008c278a69c/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/h/hugging-face-inc

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d9d263b40b29e875211f694033d9533ffd530c9e
+      entity.yml: gitblob:dae3659e879011d3af37f6c0e12435a9364c5a94
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -63,11 +63,23 @@ cache:
           versions and grant scoped credentials separately. The inspected repository
           root did not supply a blanket license document; do not infer unrestricted
           redistribution from public visibility. Shopify’s hosted commerce services,
-          SDKs and third-party extensions retain their own boundaries.'
+          SDKs and third-party extensions retain their own boundaries. Shopify''s
+          distribution is generated upstream and includes API-specific search/validation
+          scripts, schemas and instructions. Its documented installer is npx skill,
+          not an assumed interchangeable CLI. No repository-root license was observed;
+          public visibility does not grant blanket copying rights. Installation does
+          not grant merchant-store or API permissions.'
         references:
         - type: repository
           source:
             url: https://github.com/Shopify/agent-skills
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/Shopify/agent-skills/blob/6b9ed0552d5116ee33d0e211dfa6681f2f5bdffe/README.md
           purposes:
           - identification
           - research

@@ -1,0 +1,112 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:485326299a8e7591a730ebc58796a62f5c2f45d0
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/the-agent-company
+        type: dataset
+        name: TheAgentCompany
+        aliases:
+        - The Agent Company
+        - The Agent Company Benchmark
+        identity_note: Original publicly released 175-task simulated software-company
+          workplace benchmark dataset, scoped to the 1.0.0 task snapshot. Distinct
+          from Docker/server fixtures, the OpenHands baseline and evaluation harness,
+          encrypted graders, external LLM judge, leaderboard records and the research
+          publishing project. No separately incorporated TheAgentCompany producer
+          has been verified.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/TheAgentCompany/TheAgentCompany
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original benchmark task, evaluation and environment source repository.
+        - type: repository
+          source:
+            url: https://github.com/TheAgentCompany/TheAgentCompany/releases/tag/1.0.0
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original released 1.0.0 benchmark task snapshot.
+        - type: official-site
+          source:
+            url: https://the-agent-company.com/
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/TheAgentCompany/TheAgentCompany/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+          note: MIT project source grant; third-party server images and restored data
+            require independent rights checks.
+        - type: paper
+          source:
+            url: https://proceedings.neurips.cc/paper_files/paper/2025/hash/0d744742f6fac4d1134c019b7cef3c8a-Abstract-Datasets_and_Benchmarks_Track.html
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

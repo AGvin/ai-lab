@@ -1,0 +1,127 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:f813c73b56533c48f88afd81858de42b236ca09c
+    parent:
+      entity.yml: gitblob:09f4b1197ca9716577b945595fade37b1274c155
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/model-apis/scaleway-generative-apis
+        type: service
+        name: Scaleway Generative APIs
+        aliases:
+        - Scaleway Generative APIs Serverless
+        - Scaleway Generative API
+        - Scaleway AI Generative APIs
+        identity_note: Scaleway's released cloud-hosted Generative APIs model inference
+          service, with a shared/serverless OpenAI-compatible API at https://api.scaleway.ai/v1
+          and separately provisioned dedicated deployments under the same product
+          family. Dedicated Deployments formerly carried the Managed Inference name;
+          they are a deployment variant, not an additional independent original model
+          identity. The vendor presently documents a Paris-region serverless offering,
+          account/role credentials, model-specific API support and quotas. Hosting
+          third-party models does not transfer trained-model authorship or model license
+          ownership. A default zero-retention policy has explicitly documented exceptional
+          request-content retention for troubleshooting or abuse, potentially up to
+          two weeks, plus longer anonymized usage metadata retention. Privacy, API
+          versions, preview status, regions, prices, terms, legal and upstream ownership
+          are mutable.
+        references:
+        - type: product-page
+          source:
+            url: https://www.scaleway.com/en/generative-apis/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Active serverless API versus separately provisioned dedicated deployments.
+        - type: documentation
+          source:
+            url: https://www.scaleway.com/en/docs/generative-apis/quickstart/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: First-party hosted shared-model API endpoint and OpenAI-compatible
+            client setup.
+        - type: documentation
+          source:
+            url: https://www.scaleway.com/en/developers/api/generative-apis
+          purposes:
+          - research
+          authority: official
+          note: API endpoints, request compatibility limitations, and Paris region.
+        - type: documentation
+          source:
+            url: https://www.scaleway.com/en/docs/generative-apis/reference-content/data-privacy/
+          purposes:
+          - research
+          authority: official
+          note: Default zero data retention with exceptional request capture up to
+            two weeks and usage metadata, not universal zero logging.
+        - type: documentation
+          source:
+            url: https://www.scaleway.com/en/docs/generative-apis/faq/
+          purposes:
+          - research
+          authority: official
+          note: Former Managed Inference was renamed to Dedicated Deployment; not
+            an independent modern service.
+        relations:
+        - type: produced-by
+          target: catalog/producers/s/scaleway-sas
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,93 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:c2fb3c043fcae6f4fc45097845722858ee07aa29
+    parent:
+      entity.yml: gitblob:5dba29048fdaf9c45a85446dda84063e01b508a0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/evaluation-and-observability/evaluation-frameworks/arxivroll
+        type: software
+        name: ArxivRoll
+        aliases:
+        - ArxivRollBench
+        - ArxivRoll Benchmark Pipeline
+        identity_note: Research codebase for rolling arXiv-derived sequencing/cloze/prediction
+          benchmark construction, model evaluation and temporal contamination analysis.
+          The software pipeline is separate from released benchmark rounds, underlying
+          arXiv papers, models and the independent evaluation harness fork.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/liangzid/ArxivRoll
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/liangzid/ArxivRoll/blob/709b0c5738b1710a4ac6988d70b32ffb1d21458b/README.md
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/liangzid/ArxivRoll/blob/709b0c5738b1710a4ac6988d70b32ffb1d21458b/pyproject.toml
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

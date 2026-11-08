@@ -1,0 +1,96 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:fc8a803faa5a5cd003b0f8e46e0a28fa7bd199f6
+    parent:
+      entity.yml: gitblob:d2c697cb5c1dd5e2b564c28bec020a9103d27504
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/microsoft/bitnet/bitnet-b1-58-2b-4t
+        type: model
+        name: BitNet b1.58 2B4T
+        identity_note: Microsoft Research's roughly 2B-parameter checkpoint was trained
+          on 4T tokens with native ternary W1.58A8 weights/activations and reports
+          a 4,096-token sequence limit. The card declares MIT. Packed, BF16 master
+          and GGUF distributions represent one trained model. It is not an ordinary
+          model compressed only after training, nor the separately cataloged bitnet.cpp
+          runtime. The publisher explicitly says standard Transformers execution does
+          not deliver its reported speed/energy gains; specialized bitnet.cpp kernels
+          are required for that efficiency path. Pin and review model code, artifact
+          and runtime before loading; do not infer measured CPU throughput or memory
+          fit from 1.58-bit branding. Publisher capability/benchmark claims were not
+          independently reproduced. Ownership/control-chain review is incomplete;
+          no Russian-control finding or adoption clearance is established.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/microsoft/bitnet-b1.58-2B-4T
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/microsoft/bitnet-b1.58-2B-4T/blob/main/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/microsoft/bitnet
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

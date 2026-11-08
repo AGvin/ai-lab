@@ -1,0 +1,108 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:68290188d14c86e33f8059c2a5a501ea5d2e923c
+    parent:
+      entity.yml: gitblob:590e3c86e953eabe1b2dd86543dd3e1894a1eecb
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/data-infrastructure/memory-and-context/hindsight-cloud
+        type: service
+        name: Hindsight Cloud
+        identity_note: Vectorize-operated, self-service hosted Hindsight agent-memory
+          service with managed storage, model processing, HTTP APIs, MCP and SDK access,
+          team workspaces and metered billing. Unlike the MIT self-hosted Hindsight
+          engine, the multi-tenant cloud is operated by Vectorize; enterprise single-tenant/BYOC/on-premises
+          editions have different operating and contract boundaries. Publisher uptime,
+          security and recovery claims are not independently verified by AI Lab.
+        references:
+        - type: documentation
+          source:
+            url: https://docs.hindsight.vectorize.io/cloud/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://vectorize.io/pricing
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.hindsight.vectorize.io/cloud/api-integration/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.hindsight.vectorize.io/cloud/billing/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://hindsight.vectorize.io/cloud-enterprise/overview
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/v/vectorize-ai-inc
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

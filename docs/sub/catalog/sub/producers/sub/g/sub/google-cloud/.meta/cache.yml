@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:0e4d419ce5bb37a21752282f291b762eed5cf442
+      entity.yml: gitblob:452e905e9cdea40c37108efce5cd04829dc7cd68
     parent:
       entity.yml: gitblob:b7f05983a5d1c6c223967178283fa7f339514136
   state:
@@ -85,6 +85,8 @@ cache:
         relations:
         - type: produces
           target: catalog/software/inference-runtimes/distributed-serving/llm-d
+        - type: produces
+          target: catalog/software/application-frameworks/application-development/mcp-toolbox-for-databases
         - type: produces
           target: catalog/services/infrastructure/vertex-ai-agent-engine
         - type: produces

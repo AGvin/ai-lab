@@ -1,0 +1,90 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:f723d228c5732e67cf1fcd08d1b3d8cfe8ea0c9e
+    parent:
+      entity.yml: gitblob:dbba317335a2cfd36603c6d259cb5de43ccc587b
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/flower-labs/lizzy
+        type: model-family
+        name: Lizzy
+        identity_note: Lizzy is a model family published by Flower Labs. Exact trained
+          checkpoints, licenses, distributions and runtime limits have separate model
+          owners. Ownership/control-chain review remains pending; no Russian-control
+          finding or adoption clearance.
+        references:
+        - type: documentation
+          source:
+            url: https://flower.ai/docs/model/lizzy-7b.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://flower.ai/docs/model/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/f/flower-labs
+        - type: has-member
+          target: catalog/models/flower-labs/lizzy/lizzy-7b
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

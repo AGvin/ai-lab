@@ -1,0 +1,106 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:1cb2f34c4cd7dfbf6690a33312c2fcf91926939a
+    parent:
+      entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
+      node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/agent-skills/collection
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/agent-skills/collection
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/agent-skills/collection
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/agent-skills/collections/awesome-copilot
+        type: skill-collection
+        name: Awesome GitHub Copilot
+        aliases:
+        - github/awesome-copilot
+        - Awesome Copilot Skills
+        identity_note: GitHub maintains this community-contributed customization repository;
+          the skills subset is one collection, while agents, instructions, hooks and
+          plugins are other asset classes. The repository license is MIT; community
+          authorship, dependencies and trademark conditions remain separate. Inspect
+          selected scripts and tool permissions before installation.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/github/awesome-copilot
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/github/awesome-copilot/blob/main/docs/README.skills.md
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/github/awesome-copilot/blob/96543145e9cb97711020b57b9d88f968062c4fc7/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/github/awesome-copilot/blob/96543145e9cb97711020b57b9d88f968062c4fc7/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/g/github-inc
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

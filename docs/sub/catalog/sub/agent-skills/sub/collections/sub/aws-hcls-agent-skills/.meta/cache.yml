@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:921a7699322106a7c574a2916e93bd9637e3bc13
+      entity.yml: gitblob:4380435e833182eda46e6ea8125865911022e680
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -48,6 +48,11 @@ cache:
         name: AWS HCLS Agent Skills
         aliases:
         - HCLS Agent Skills
+        identity_note: AWS Labs publishes healthcare and life-sciences instruction
+          and pipeline guidance under MIT-0. Skill/domain counts and harness support
+          are mutable. Repository evaluation figures are publisher-reported and were
+          not reproduced. These demonstrations do not establish clinical suitability;
+          keep sensitive health data access and scientific output review separate.
         references:
         - type: repository
           source:
@@ -59,6 +64,20 @@ cache:
         - type: article
           source:
             url: https://aws.amazon.com/blogs/machine-learning/improving-hcls-ai-reasoning-with-open-source-agent-skills/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/awslabs/hcls-agent-skills/blob/4603541c396cdd845dbae554800a65132d12bb63/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/awslabs/hcls-agent-skills/blob/4603541c396cdd845dbae554800a65132d12bb63/LICENSE
           purposes:
           - identification
           - research

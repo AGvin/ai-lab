@@ -1,0 +1,116 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a70c9525b7f338df364d5a79b3090c54411b62f4
+    parent:
+      entity.yml: gitblob:0cf80df310da6a10fb2bdc28c39cf869cdb4d5e4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/specifications/standards/nist-ai-rmf-1-0
+        name: NIST Artificial Intelligence Risk Management Framework 1.0
+        aliases:
+        - NIST AI RMF 1.0
+        - NIST AI 100-1
+        - AI Risk Management Framework 1.0
+        identity_note: Published January 26, 2023 as NIST AI 100-1, this voluntary,
+          non-sector-specific US-government risk management framework supports trustworthy
+          AI system design, development, deployment, evaluation and use. Its four
+          Core functions are Govern, Map, Measure and Manage. It is guidance, not
+          a binding law, product, certification scheme, AI management system certification,
+          or proof of a compliant implementation. As of November 2026 NIST explicitly
+          says AI RMF 1.0 is under revision; do not claim a final successor or silently
+          update the published 1.0 edition. The 2024 NIST AI 600-1 generative-AI profile
+          and living Playbook are companion materials, not identical publications
+          or automatically included normative requirements.
+        references:
+        - type: specification
+          source:
+            url: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: NIST AI 100-1 official published January 26, 2023, voluntary scope
+            and citation.
+        - type: official-site
+          source:
+            url: https://www.nist.gov/itl/ai-risk-management-framework
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current AI RMF 1.0 hub marks a revision in progress and separately
+            identifies the GenAI 600-1 profile.
+        - type: documentation
+          source:
+            url: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
+          purposes:
+          - research
+          authority: official
+          note: Original four Govern/Map/Measure/Manage Core functions and their non-prescriptive
+            practice.
+        - type: documentation
+          source:
+            url: https://www.nist.gov/itl/ai-risk-management-framework/nist-ai-rmf-playbook
+          purposes:
+          - research
+          authority: official
+          note: Separately maintained and version-sensitive voluntary companion playbook.
+        relations:
+        - type: produced-by
+          target: catalog/producers/n/nist
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

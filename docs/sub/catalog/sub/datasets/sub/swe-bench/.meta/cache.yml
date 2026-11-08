@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f5ba35b239858052e40bbead60346635657f2156
+      entity.yml: gitblob:12e5a9bfa61fa766a108a726b723098353fa6d9c
     parent:
       entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
   state:
@@ -45,6 +45,9 @@ cache:
         id: catalog/datasets/swe-bench
         type: dataset-family
         name: SWE-bench
+        relations:
+        - type: has-derivative
+          target: catalog/datasets/swe-bench-verified
         references:
         - type: repository
           source:

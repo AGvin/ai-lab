@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:947935e9ad74b646208f0af4c8a3eb0531c3eba7
+      entity.yml: gitblob:68915b3e3e34ad4174760cc6264caf36fdda682e
     parent:
       entity.yml: gitblob:6c9335564c8b3b6524ac4fb8f4abc5b7e0f2466f
   state:
@@ -59,6 +59,20 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/c4ai-command-r-v01
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/c4ai-command-r-plus
+          purposes:
+          - identification
+          - research
+          authority: official
         - type: release-notes
           source:
             url: https://docs.cohere.com/changelog/command-gets-refreshed
@@ -87,11 +101,30 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://docs.cohere.com/changelog/command-r7b-arabic
+          purposes:
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/cohere/command
         - type: has-member
           target: catalog/models/cohere/command/command-r/models/command-r7b-12-2024
+        - type: has-member
+          target: catalog/models/cohere/command/command-r/models/command-r7b-arabic-02-2025
+        - type: has-member
+          target: catalog/models/cohere/command/command-r/models/command-r-03-2024
+        - type: has-member
+          target: catalog/models/cohere/command/command-r/models/command-r-plus-04-2024
         - type: has-member
           target: catalog/models/cohere/command/command-r/models/command-r-08-2024
         - type: has-member

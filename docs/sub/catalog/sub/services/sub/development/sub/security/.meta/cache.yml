@@ -1,7 +1,8 @@
 cache:
   schema: default
   fingerprints:
-    self: {}
+    self:
+      entity.yml: gitblob:d5f238b46b9def5874a02d10b35b81ae6fff2dbe
     parent:
       entity.yml: gitblob:2217547ba77d859213c1f5d8828786dc01fa5f80
       node.yml: gitblob:737cc151a866f4cc2e6a30f7f50fddf353ff89cf
@@ -40,7 +41,11 @@ cache:
           template: catalog/services/service
         local: {}
     entity:
-      effective: {}
+      effective:
+        schema: default
+        id: catalog/services/development/security
+        type: catalog-index
+        name: Development Security Services
     aliases:
       effective:
         schema: default

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3af3197a9f49f90b3f295b6a1a9be0deab14282a
+      entity.yml: gitblob:bc787f7946db59230cc76e25d7a79b5a0b409ef2
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,13 @@ cache:
         id: catalog/hardware/amd-instinct-mi455x
         type: hardware-product
         name: AMD Instinct MI455X
+        identity_note: AMD Instinct MI455X is a launched CDNA 5 GPU (manufacturer
+          launch date July 23, 2026) with 432 GB HBM4 and 23.3 TB/s peak memory bandwidth.
+          The Enhanced Accelerator Module (EAM) uses direct liquid cooling and forms
+          one GPU component of AMD Helios rather than constituting an entire rack-scale
+          system. Advertised precision and scale-up numbers are per specified GPU
+          or interconnect topology; runtime, availability, legal/control-chain and
+          independent performance remain unverified.
         aliases:
         - MI455X
         references:

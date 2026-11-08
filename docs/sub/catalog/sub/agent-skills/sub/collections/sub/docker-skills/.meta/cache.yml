@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:34a652228d47aa9e82c2544bb72c4db041117210
+      entity.yml: gitblob:80268fc33722756b8895d9038e0fd338dbce18f0
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -46,6 +46,11 @@ cache:
         id: catalog/agent-skills/collections/docker-skills
         type: skill-collection
         name: Docker Skills
+        identity_note: Docker-authored portable instruction directories cover container
+          build, Compose and operational workflows. Apache-2.0 covers the repository;
+          CLI/Engine, Agent/Sandboxes and connected registries retain separate runtime
+          and service boundaries. Pin an inspected release, check client tooling and
+          review image/build scripts before operations that alter containers or volumes.
         references:
         - type: repository
           source:
@@ -58,6 +63,20 @@ cache:
           source:
             url: https://docs.docker.com/ai/skills/
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/docker/skills/blob/9f04a05d5fcdbfac0f6088bc711e930a75896482/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/docker/skills/blob/9f04a05d5fcdbfac0f6088bc711e930a75896482/LICENSE
+          purposes:
+          - identification
           - research
           authority: official
         relations:

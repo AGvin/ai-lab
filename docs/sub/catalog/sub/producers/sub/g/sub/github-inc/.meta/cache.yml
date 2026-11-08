@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:2418810646443a45ce4d1641d954ad9c9db0b991
+      entity.yml: gitblob:0fd1397668d4e8e6da4324d040116699a0f64927
     parent:
       entity.yml: gitblob:b7f05983a5d1c6c223967178283fa7f339514136
   state:
@@ -85,11 +85,20 @@ cache:
           - identification
           - research
           authority: official
+        - type: repository
+          source:
+            url: https://github.com/github/awesome-copilot
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/agents/hybrid/github-copilot
         - type: produces
           target: catalog/software/development-tools/spec-driven-development/spec-kit
+        - type: produces
+          target: catalog/agent-skills/collections/awesome-copilot
         - type: owned-by
           target: catalog/producers/m/microsoft
     aliases:

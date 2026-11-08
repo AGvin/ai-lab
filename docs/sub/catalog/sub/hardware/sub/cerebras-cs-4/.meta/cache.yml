@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b9f40cc64290dd1a357825cda2f6efcda1cf8c2a
+      entity.yml: gitblob:40de57d80e25000568d957eeb0488236d250f854
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,13 @@ cache:
         id: catalog/hardware/cerebras-cs-4
         type: hardware-product
         name: Cerebras CS-4
+        identity_note: Cerebras CS-4 is an August 2026 rack-scale system comprising
+          three WSE-3 Turbo wafer processors. The manufacturer's 750 PFLOPS compute,
+          129.6 PB/s wafer-memory bandwidth and 7.2 Tb/s I/O refer to the combined
+          three-wafer system, not a single processor. Launch language promised initial
+          shipments in Q3 2026, not verified general availability. Cerebras' speed
+          comparisons are model-, context-, precision- and serving-configuration-dependent;
+          no independent performance or procurement clearance is inferred.
         references:
         - type: product-page
           source:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a7d7098094e87605652f591ee07722686fcc9b5e
+      entity.yml: gitblob:e039598aca70ec9d0e8381c185054fbc987efd23
     parent:
       entity.yml: gitblob:809c62e5e48565624df11ad5ab043ec1d16b9f4e
   state:
@@ -156,6 +156,8 @@ cache:
           target: catalog/producers/g/ggml-ai
         - type: owns
           target: catalog/software/model-and-data-platforms/dataset-curation/argilla
+        - type: produces
+          target: catalog/models/hugging-face/smollm3
     aliases:
       effective:
         schema: default

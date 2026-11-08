@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:2bada38379efd1deff6285ebaf7fb1fd66852872
+      entity.yml: gitblob:51a293c6e1939a244124633faaccba47f709483c
     parent:
-      entity.yml: gitblob:6ae07f5f24ce798815b5015a3b2aeee8532f8dc3
+      entity.yml: gitblob:5550977e45f858166f648b0b614feb77493321be
   state:
     node:
       effective:
@@ -58,6 +58,11 @@ cache:
           target: catalog/producers/y/yandex
         - type: has-member
           target: catalog/models/yandex/aliceai-t5/models/aliceai-t5-35b-a0-6b
+        identity_note: 'SECURITY POLICY: DANGEROUS — NOT RECOMMENDED. Yandex is Russia-based;
+          this catalog resource is research/threat-monitoring only, regardless of
+          security tests, permissive licenses or missing sanctions findings. Do not
+          recommend deployment or transmit sensitive data to Yandex services. This
+          classification does not claim detected malware in this model.'
     aliases:
       effective:
         schema: default

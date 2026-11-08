@@ -1,0 +1,91 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a767816e3eafde9f7d0d970a78489fdbfcc5416b
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/intercode-ctf
+        type: dataset
+        name: InterCode-CTF
+        aliases:
+        - InterCode Capture-the-Flag Tasks
+        identity_note: Capture-the-flag task collection packaged for the InterCode
+          interactive Bash environment, with task queries, expected flags and local
+          task assets originally drawn from picoCTF.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/princeton-nlp/intercode
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/princeton-nlp/intercode/blob/c3e46d827cfc9d4c704ec078f7abf9f41e3191d8/data/ctf/README.md
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/princeton-nlp/intercode/blob/c3e46d827cfc9d4c704ec078f7abf9f41e3191d8/LICENSE.md
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

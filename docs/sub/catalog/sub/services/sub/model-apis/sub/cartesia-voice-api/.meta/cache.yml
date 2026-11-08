@@ -1,0 +1,101 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:2d31f23340ae35f7a66ea7c3fe2b166d0fc368ca
+    parent:
+      entity.yml: gitblob:09f4b1197ca9716577b945595fade37b1274c155
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/model-apis/cartesia-voice-api
+        type: service
+        name: Cartesia Voice API
+        identity_note: Provider-operated Cartesia speech-model API including text-to-speech
+          REST and streaming/WebSocket interfaces and available real-time speech-to-text
+          endpoints. Specific Sonic/Ink models, voices and separately managed agent
+          workflows are not duplicate API-service identities. API authentication and
+          version requirements differ by transport and endpoint.
+        references:
+        - type: documentation
+          source:
+            url: https://docs.cartesia.ai/get-started/overview
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cartesia.ai/api-reference/tts/bytes
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cartesia.ai/api-reference/tts/websocket
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cartesia.ai/api-reference/stt/turns/websocket
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/c/cartesia
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

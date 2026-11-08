@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1bc13e1c4e91cc328a84fd80730affdc8f315199
+      entity.yml: gitblob:ad8fda931f81ca0d323ab9fd898f38d77797d9a0
     parent:
       entity.yml: gitblob:d41de55a71edf0a12d91380498e3ae3e5221c1fb
   state:
@@ -83,6 +83,13 @@ cache:
           authority: official
         - type: documentation
           source:
+            url: https://huggingface.co/CohereLabs/North-Mini-Code-1.0-eagle
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
             url: https://huggingface.co/CohereLabs/North-Small-Translate-1.0
           purposes:
           - identification
@@ -93,6 +100,8 @@ cache:
           target: catalog/producers/c/cohere
         - type: has-member
           target: catalog/models/cohere/north/models/north-mini-code-1-0
+        - type: has-member
+          target: catalog/models/cohere/north/models/north-mini-code-1-0-eagle
         - type: has-member
           target: catalog/models/cohere/north/models/north-small-translate-1-0
         - type: has-member

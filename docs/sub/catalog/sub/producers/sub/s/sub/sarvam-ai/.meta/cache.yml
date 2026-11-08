@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c539359e4a27deb247c6fdc6af843019a8a619e6
+      entity.yml: gitblob:1d2dc2fae10e8e1635c67d377dc334dc0557f27a
     parent:
       entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
   state:
@@ -80,6 +80,12 @@ cache:
         relations:
         - type: produces
           target: catalog/models/sarvam-ai/sarvam
+        - type: produces
+          target: catalog/models/sarvam-ai/saaras
+        - type: produces
+          target: catalog/models/sarvam-ai/sarvam-vision
+        - type: produces
+          target: catalog/models/sarvam-ai/bulbul
     aliases:
       effective:
         schema: default

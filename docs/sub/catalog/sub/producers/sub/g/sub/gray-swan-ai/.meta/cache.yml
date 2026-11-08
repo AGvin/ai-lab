@@ -1,0 +1,103 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:331c66b5edd431074eee4875ba8ca9a125527c72
+    parent:
+      entity.yml: gitblob:b7f05983a5d1c6c223967178283fa7f339514136
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/g/gray-swan-ai
+        type: organization
+        name: Gray Swan AI
+        identity_note: Gray Swan AI develops AI safety and security assessment and
+          runtime enforcement products and conducts original red-teaming research.
+          Its researchers jointly developed the 2024 AgentHarm agent-safety benchmark
+          with the UK AI Safety Institute, now the UK AI Security Institute. This
+          producer relation records joint original research attribution, not sole
+          ownership of the dataset, its model evaluation implementations or every
+          benchmark listed in Gray Swan's research portfolio.
+        references:
+        - type: official-site
+          source:
+            url: https://www.grayswan.ai/about
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.grayswan.ai/blog/agentharm
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.grayswan.ai/research/agentharm
+          purposes:
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://www.grayswan.ai/
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/datasets/agentharm
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

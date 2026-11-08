@@ -1,0 +1,97 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:93f01c0ea8e7ff4fda26b9c2833b0646d7963f3f
+    parent:
+      entity.yml: gitblob:4e7166f3aa8e503dd2cbc66e347e0a2299470f2d
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/moonshot-ai/kimi/models/kimi-k2-thinking
+        type: model
+        name: Kimi K2 Thinking
+        identity_note: Moonshot AI's released reasoning/tool-use checkpoint is distinct
+          from Kimi K3 and hosted API aliases. The publisher reports 1T total and
+          32B activated parameters, a 256K context, MoE architecture and native INT4
+          quantization-aware post-training. Active parameters do not establish memory
+          fit. Weights and code use Modified MIT terms, including Kimi K2 interface
+          branding above 100 million monthly active users or USD 20 million monthly
+          revenue; the exact license governs. Publisher benchmarks are not reproduced
+          here. Ultimate beneficial ownership and control rights remain unverified;
+          provenance review is pending, not evidence of Russian ownership or adoption
+          clearance. Use the checkpoint's native tool parser and chat format. Review
+          and pin remote code before loading; sandbox tool execution, validate arguments
+          and keep secrets outside model-controlled inputs. Hosted API behavior and
+          third-party quantizations are separate surfaces.
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/moonshotai/Kimi-K2-Thinking
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/MoonshotAI/Kimi-K2/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/moonshot-ai/kimi
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

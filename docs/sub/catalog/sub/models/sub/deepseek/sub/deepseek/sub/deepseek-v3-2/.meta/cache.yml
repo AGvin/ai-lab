@@ -1,0 +1,97 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:20f51c8792771e0029a499f29c20c0cd678381fa
+    parent:
+      entity.yml: gitblob:a56f00c79d2f948f22f3fb77566c7e87108f7532
+      node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/series
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/deepseek/deepseek/deepseek-v3-2
+        type: model
+        name: DeepSeek-V3.2
+        identity_note: DeepSeek's released V3.2 checkpoint supports reasoning with
+          tool use and DeepSeek Sparse Attention. It is distinct from V3.2-Exp and
+          V3.2-Speciale; Speciale's reasoning-only tool limitation must not be assigned
+          to this checkpoint. The publisher licenses repository code and weights under
+          MIT. Its updated message encoding and output parsing require integration-specific
+          validation; the supplied parser does not recover malformed output. Benchmark
+          superiority is publisher evidence, not independently reproduced here. Ultimate
+          beneficial ownership and control rights remain unverified; provenance review
+          is pending, not evidence of Russian ownership or adoption clearance. Use
+          V3.2-specific encoding and robust output validation. The card states that
+          its developer role is limited to search-agent scenarios and is not accepted
+          by the official API. Sandbox tools and require authorization for consequential
+          actions. Do not equate a hosted API alias with an immutable checkpoint revision.
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/deepseek-ai/DeepSeek-V3.2
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/deepseek/deepseek
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:fcd0549295589f9326ec8287cc9ef0259f1d0e2c
+      entity.yml: gitblob:31d36cb9ae89db0c129c564053e6ded607bd7aec
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -87,6 +87,8 @@ cache:
         relations:
         - type: produces
           target: catalog/services/agent-integration-platforms/composio
+        - type: produces
+          target: catalog/agent-skills/collections/composio-awesome-claude-skills
     aliases:
       effective:
         schema: default

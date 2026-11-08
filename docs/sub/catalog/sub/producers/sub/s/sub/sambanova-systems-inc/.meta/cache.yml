@@ -1,0 +1,114 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:9c70bb260c8b669b94d539370fd081c35d7f8af9
+    parent:
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/s/sambanova-systems-inc
+        type: organization
+        name: SambaNova Systems, Inc.
+        aliases:
+        - SambaNova
+        identity_note: SambaNova Systems, Inc. is a United States AI inference and
+          systems company, founded in 2017, based in San Jose, California according
+          to the company's October 2026 release. It designs reconfigurable dataflow
+          AI infrastructure and offers a distinct hosted API, SambaCloud. Hosted third-party
+          model availability is not authorship of those models, and a planned Oracle
+          infrastructure collaboration is not evidence of currently deployed customer
+          capacity or sole ownership of partner services. Complete current beneficial
+          ownership, indirect holdings, sanctions and customer data-contract scope
+          were not independently audited.
+        references:
+        - type: official-site
+          source:
+            url: https://sambanova.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: First-party corporate site and AI infrastructure/inference portfolio.
+        - type: article
+          source:
+            url: https://sambanova.ai/press/sambanova-and-oracle-collaborate-to-bring-high-performance-inference-to-oracle-cloud-infrastructure
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: October 27, 2026 corporate description, 2017 founding, San Jose base;
+            Oracle item describes planned collaboration, not active deployment.
+        - type: official-site
+          source:
+            url: https://cloud.sambanova.ai/dashboard
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current first-party SambaCloud hosted inference product.
+        - type: documentation
+          source:
+            url: https://sambanova.ai/sambastack-on-premises-terms-of-service
+          purposes:
+          - research
+          authority: official
+          note: Identifies SambaNova Systems, Inc. as legal entity in SambaStack on-premises
+            terms; those terms do not automatically govern SambaCloud.
+        relations:
+        - type: produces
+          target: catalog/services/model-apis/sambacloud
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

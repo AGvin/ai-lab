@@ -1,0 +1,119 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:3dc4f07feff242ec7559ffada5f4dd2217f5b451
+    parent:
+      entity.yml: gitblob:09f4b1197ca9716577b945595fade37b1274c155
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/model-apis/hyperbolic-flux-inference
+        type: service
+        name: Hyperbolic Flux Inference
+        aliases:
+        - Hyperbolic Inference API
+        - Hyperbolic Flux
+        - Flux Inference
+        identity_note: 'Active Hyperbolic-hosted serverless inference API, launched
+          as Flux on October 21, 2026 as a new generation of the earlier Hyperbolic
+          inference service. It is distinct from the company''s Forge compute orchestrator,
+          GPU rental/managed Kubernetes infrastructure, dedicated GPU deployment and
+          trained models originally released by third parties. The published OpenAI-compatible
+          base https://api.hyperbolic.ai/inference/v1 serves supported models using
+          prepaid account credentials. The vendor documents both Hyperbolic-hosted
+          models and externally routed provider backends: customer data and model
+          rights may depend on third-party routes. Some models are previews; model
+          catalog, endpoints, legacy-key migration, quotas, regions, token prices
+          and contracts can change.'
+        references:
+        - type: product-page
+          source:
+            url: https://www.hyperbolic.ai/inference
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current hosted Flux inference API, requirements and serverless/dedicated
+            distinction.
+        - type: article
+          source:
+            url: https://www.hyperbolic.ai/blog/flux-inference-api
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: October 21, 2026 launch, legacy API migration, OpenAI-compatible endpoint,
+            external model routing and security boundaries.
+        - type: official-site
+          source:
+            url: https://www.hyperbolic.ai/
+          purposes:
+          - research
+          authority: official
+          note: Current unified GPU compute, managed Kubernetes, private cloud and
+            distinct inference products.
+        - type: documentation
+          source:
+            url: https://www.hyperbolic.ai/terms
+          purposes:
+          - research
+          authority: official
+          note: March 24, 2025 terms identify Hyperbolic Labs, Inc.; latest account-specific
+            service/supplemental terms must be checked.
+        relations:
+        - type: produced-by
+          target: catalog/producers/h/hyperbolic-labs-inc
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

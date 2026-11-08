@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:41219122eee548b647584e0da6b73915866a826a
+      entity.yml: gitblob:0048078b00da1817ca327e03be838c9f6cd007bb
     parent:
-      entity.yml: gitblob:c13d4923a97cb6d76d24962488a82f85bcbc59f1
+      entity.yml: gitblob:8aefd11abff4cfa941bbba7d0db3d019f3648266
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
   state:
     node:
@@ -100,6 +100,8 @@ cache:
         relations:
         - type: produced-by
           target: catalog/producers/d/davidau
+        - type: derived-from
+          target: catalog/models/davidau/qwen3-derived/models/qwen3-the-josiefied-omega-directive-22b
     aliases:
       effective:
         schema: default

@@ -1,0 +1,114 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:6b4baa99661ae51f1eeaf7826597fd457011c1ef
+    parent:
+      entity.yml: gitblob:487620e3ae645833061dca6b70626f158a1c9fc1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/model-and-data-platforms/model-development/agent-lightning
+        type: software
+        name: Agent Lightning
+        aliases:
+        - Microsoft Agent Lightning
+        - agentlightning
+        identity_note: Microsoft Research's open-source harnessed agentic reinforcement-learning
+          framework. Its v1.0 API gateway, rollout controller and trainer operate
+          with an existing agent harness. Distinct from PyTorch Lightning, verl, OpenRLHF
+          and the separately released Agent Lightning Skill; publisher benchmarks
+          are not independent AI Lab evaluations.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/microsoft/agent-lightning
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://microsoft.github.io/agent-lightning/stable/
+          purposes:
+          - research
+          authority: official
+          note: Current v1.0 documentation; the previous v0.x architecture is legacy.
+        - type: other
+          source:
+            url: https://github.com/microsoft/agent-lightning/releases/tag/v1.0.2
+          purposes:
+          - research
+          authority: official
+          note: Stable v1.0.2 published on 2026-09-29; Python >=3.12 package requirement.
+        - type: article
+          source:
+            url: https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/
+          purposes:
+          - research
+          authority: official
+          note: Microsoft Research architecture and benchmark claims; not reproduced.
+        - type: repository
+          source:
+            url: https://github.com/microsoft/agent-lightning/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+          note: MIT for this software; third-party data/model rights need separate
+            review.
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/microsoft
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

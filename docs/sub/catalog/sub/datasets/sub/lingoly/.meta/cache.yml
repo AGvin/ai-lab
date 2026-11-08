@@ -1,0 +1,92 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:f1b6edac88cb03e50a0d48c10085d3e4fe2a1f95
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/lingoly
+        type: dataset
+        name: LINGOLY
+        aliases:
+        - LingOly
+        - Linguistics Olympiad Reasoning Benchmark
+        identity_note: Linguistic-reasoning puzzle benchmark derived from UK Linguistics
+          Olympiad questions in low-resource and extinct languages, with question-data
+          rights separate from evaluation code.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/am-bean/lingOly
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/am-bean/lingOly/blob/ba5cfb422c0cdf6cb25a0fcd04234b411060bf28/README.md
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/am-bean/lingOly/blob/ba5cfb422c0cdf6cb25a0fcd04234b411060bf28/LICENSE
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,84 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:026a4733005057825b8b32fd1aa5be7fa11a354a
+    parent:
+      entity.yml: gitblob:3f24c3ed23559974a77b83600f864fe45db81b53
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/hugging-face/smollm3
+        type: model-family
+        name: SmolLM3
+        identity_note: Hugging Face's original SmolLM3 release distinguishes base
+          and instruction/reasoning checkpoints. Only the reviewed instruction/reasoning
+          member is materialized here; mode controls and distributed formats are not
+          extra trained models. Ownership/control-chain review is incomplete; no Russian-control
+          finding or adoption clearance is established.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/blog/smollm3
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/h/hugging-face-inc
+        - type: has-member
+          target: catalog/models/hugging-face/smollm3/smollm3-3b
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

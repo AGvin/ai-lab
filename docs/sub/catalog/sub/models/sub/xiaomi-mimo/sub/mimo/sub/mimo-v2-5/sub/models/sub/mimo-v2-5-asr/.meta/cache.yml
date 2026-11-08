@@ -1,0 +1,96 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:fff4b8ef44bb2d724fbfc9945cef897ca27c8aa4
+    parent:
+      entity.yml: gitblob:c70b93cac7e3e38cc00234b0a80e621ba344fc55
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/xiaomi-mimo/mimo/mimo-v2-5/models/mimo-v2-5-asr
+        type: model
+        name: MiMo-V2.5-ASR
+        identity_note: Xiaomi MiMo's end-to-end speech-recognition checkpoint targets
+          Mandarin, English, Chinese dialects and code-switched audio transcription.
+          The publisher card labels it MIT and requires the separate MiMo-Audio-Tokenizer
+          for its reference workflow. Its use-restriction notice explicitly says it
+          is informational and does not amend the applicable model license. Do not
+          inherit V2.5 language-model context limits, modalities or API retirement
+          status. Use audio only with appropriate recording and processing authorization.
+          Protect transcripts as potentially sensitive, verify names and critical
+          facts, and assess errors on representative accents/noise. Pin and review
+          the tokenizer, model and audio dependencies; no reference demo was executed.
+          Ownership/control-chain review is pending; no Russian-control finding or
+          eligibility clearance.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/XiaomiMiMo/MiMo-V2.5-ASR
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/XiaomiMiMo/MiMo-V2.5-ASR
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/xiaomi-mimo/mimo/mimo-v2-5
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

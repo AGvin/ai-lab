@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:68f759942018565eb1d48d5d9a489c35344e4bf4
+      entity.yml: gitblob:b98b9efbade24ef1cb7cc2b8b2fe17fc3fdac7e4
     parent:
       entity.yml: gitblob:834a848416cc4cbecc3cf2bbd5450eb5dd567415
   state:
@@ -62,6 +62,8 @@ cache:
         relations:
         - type: produces
           target: catalog/models/flower-labs/endeavor
+        - type: produces
+          target: catalog/models/flower-labs/lizzy
     aliases:
       effective:
         schema: default

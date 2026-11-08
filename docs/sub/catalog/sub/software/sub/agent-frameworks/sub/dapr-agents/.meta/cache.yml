@@ -1,0 +1,123 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:56da226309b541cacecb8fec55f3b89fb34de53e
+    parent:
+      entity.yml: gitblob:d76916cc6208401fd85eacd3a15da3a51743c755
+      node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/software/software
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/software/software
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/software/software
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/agent-frameworks/dapr-agents
+        type: software
+        name: Dapr Agents
+        identity_note: The Dapr community's separately packaged, self-managed Python
+          framework for durable AI-agent workflows and multi-agent systems. It builds
+          on the separate Dapr runtime's Workflow, Actors, pub/sub, service invocation
+          and state infrastructure and can discover MCPServer tools. Official GitHub
+          v1.1.0 was published 2026-10-27 as a non-prerelease Apache-2.0 release,
+          with Python >=3.11,<3.15. Tagged package metadata still labels its development
+          status Pre-Alpha; the upstream README carries outdated 2025 language milestones.
+          Neither the version tag nor project marketing proves production readiness,
+          security, performance or compatibility.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/dapr/dapr-agents
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/dapr/dapr-agents/releases/tag/v1.1.0
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: 2026-10-27 stable-tagged release, not an independent production audit.
+        - type: repository
+          source:
+            url: https://github.com/dapr/dapr-agents/blob/v1.1.0/pyproject.toml
+          purposes:
+          - research
+          authority: official
+          note: Python support and conflicting Pre-Alpha classifier.
+        - type: documentation
+          source:
+            url: https://docs.dapr.io/developing-ai/dapr-agents/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/dapr/dapr-agents/blob/v1.1.0/LICENSE
+          purposes:
+          - research
+          authority: official
+          note: Original Apache-2.0 code license, not third-party model rights.
+        - type: repository
+          source:
+            url: https://github.com/dapr/dapr
+          purposes:
+          - research
+          authority: official
+          note: Underlying Dapr general-purpose runtime is distinct software.
+        relations:
+        - type: produced-by
+          target: catalog/producers/d/dapr-project
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

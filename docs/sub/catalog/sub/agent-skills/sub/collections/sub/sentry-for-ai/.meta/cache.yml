@@ -1,0 +1,110 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:dc76c9f8bf2a499b9385973f693c1c351efc4fd3
+    parent:
+      entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
+      node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/agent-skills/collection
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/agent-skills/collection
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/agent-skills/collection
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/agent-skills/collections/sentry-for-ai
+        type: skill-collection
+        name: Sentry for AI
+        identity_note: Sentry's public canonical skill-source library for instrumenting
+          and debugging applications with Sentry through coding assistants. The source
+          repository is not an installable plugin; versioned client-specific agent
+          plugins and the portable Agent Plugin are generated distributions from this
+          source. The reference library and hosted MCP integration support these workflows.
+          It is separate from internal Sentry Skills and the hosted observability
+          service.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/getsentry/sentry-for-ai
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/getsentry/sentry-for-ai/blob/80642456253f2fcd529a38d9ac82f299e80dc89c/README.md
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/getsentry/agent-plugin
+          purposes:
+          - research
+          authority: official
+          note: Generated portable distribution; source changes are made upstream.
+        - type: other
+          source:
+            url: https://github.com/getsentry/sentry-for-ai/blob/80642456253f2fcd529a38d9ac82f299e80dc89c/LICENSE
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/getsentry/sentry-for-ai/blob/80642456253f2fcd529a38d9ac82f299e80dc89c/TELEMETRY.md
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/s/sentry
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:4bbfafcec8c008be313d99198c01efa5962bcb44
+      entity.yml: gitblob:25eda345020d9ac5d4b5989c0676de5de77642a3
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -46,6 +46,11 @@ cache:
         id: catalog/agent-skills/collections/nvidia-skills
         type: skill-collection
         name: NVIDIA Skills
+        identity_note: NVIDIA's synchronized catalog mirrors product-repository skills.
+          Documentation and skills use CC-BY-4.0, while source code uses Apache-2.0;
+          linked external materials retain separate terms. Signatures or NVIDIA verification
+          labels establish bounded distribution/provenance properties, not workload
+          suitability or permission to execute commands.
         references:
         - type: repository
           source:
@@ -58,6 +63,27 @@ cache:
           source:
             url: https://docs.nvidia.com/skills/
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/NVIDIA/skills/blob/fc38e7248fff9e958ed3c17f5dc79808b3348d4f/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/NVIDIA/skills/blob/fc38e7248fff9e958ed3c17f5dc79808b3348d4f/LICENSE-APACHE
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/NVIDIA/skills/blob/fc38e7248fff9e958ed3c17f5dc79808b3348d4f/LICENSE-CC-BY-4.0
+          purposes:
+          - identification
           - research
           authority: official
         relations:

@@ -1,0 +1,96 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:24860ec660a0d6de6c82e1fbbea74c3cf091e0cc
+    parent: {}
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/minimax/minimax-m/models/m2
+        type: model
+        name: MiniMax M2
+        identity_note: MiniMax's released M2 text-generation checkpoint targets coding
+          and agentic work. The publisher reports MoE with 230B total and 10B activated
+          parameters; active count is not storage or serving-memory demand. It is
+          distinct from M3, hosted MiniMax products and distribution artifacts. Although
+          the license heading says MIT, its added clause requires MiniMax M2 interface
+          branding above 100 million monthly active users or USD 30 million annual
+          recurring revenue. The model card labels it modified-mit; do not describe
+          it as unmodified MIT. Benchmarks are publisher evidence, not reproduced
+          here. Ultimate beneficial ownership and control rights remain unverified;
+          provenance review is pending, not evidence of Russian ownership or adoption
+          clearance. Inspect and revision-pin custom code before using loaders that
+          require trust_remote_code. Validate chat/tool parsing and isolate generated
+          code or tool execution. Hosting, API prices and third-party deployment support
+          need separate current verification.
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/MiniMaxAI/MiniMax-M2
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/MiniMax-AI/MiniMax-M2/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/minimax/minimax-m
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

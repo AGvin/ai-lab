@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:fbf685f024f60a2d12eb9bb84383ab3d4fafd4ae
+      entity.yml: gitblob:b0546c38d63c42374a8f2877054d8ed79cdb9fd1
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -48,6 +48,12 @@ cache:
         aliases:
         - NVIDIA L4
         - L4
+        identity_note: NVIDIA identifies L4 as an Ada Lovelace low-profile data-center
+          accelerator for inference, graphics and media. This physical GPU is distinct
+          from L40S and hosted virtual/cloud configurations. Low-profile packaging
+          does not establish arbitrary desktop compatibility; check the qualified
+          host airflow, power and software stack. Product performance comparisons
+          remain workload-specific.
         references:
         - type: product-page
           source:

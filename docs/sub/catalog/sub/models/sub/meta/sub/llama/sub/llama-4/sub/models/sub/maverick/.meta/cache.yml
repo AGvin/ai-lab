@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:9651fd9c26aaba08ca00d8e2b61900f82589414f
+      entity.yml: gitblob:9f032c170820773fd192687b22e74f2bfc173a9a
     parent: {}
   state:
     node:
@@ -56,6 +56,13 @@ cache:
           source:
             url: https://ai.meta.com/llama/get-started/
           purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct
+          purposes:
+          - identification
           - research
           authority: official
         relations:

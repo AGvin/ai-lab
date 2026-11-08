@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:caea4a40863067205fac366b183ff3042f54c16e
+      entity.yml: gitblob:ad1e46f40e0ac1a215c6f529145ca19d20f1afba
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
     parent:
       entity.yml: gitblob:1100585bf7390450d37e1476e2e352d73d8e482d
@@ -111,6 +111,8 @@ cache:
           target: catalog/models/google/gemma/vaultgemma
         - type: has-member
           target: catalog/models/google/gemma/gemma-3n
+        - type: has-member
+          target: catalog/models/google/gemma/gemma-3-27b-it
         identity_note: Google and Google DeepMind's open-weight model family; exact
           model variants, licenses, artifacts, and deployment configurations must
           be recorded separately.

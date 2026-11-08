@@ -1,0 +1,120 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:53d1ec47f7557cd6b48717082bfb3f9f6bc0d6b7
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/gsm8k
+        type: dataset
+        name: GSM8K
+        aliases:
+        - Grade School Math 8K
+        identity_note: OpenAI's published English grade-school mathematical word-problem
+          dataset, created by human problem writers and released in 2021. Approximately
+          8.5K problems are split between train and test and include multi-step natural-language
+          solutions. Socratic-question forms and calculator annotations are data variants/features,
+          not separate research datasets. The original repository is archived, with
+          no current maintenance guarantee.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/openai/grade-school-math
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original OpenAI research release, source JSONL files, dataset details
+            and archive state.
+        - type: registry
+          source:
+            url: https://huggingface.co/datasets/openai/gsm8k
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Official OpenAI distribution declares MIT dataset metadata and exposes
+            main/Socratic variants.
+        - type: paper
+          source:
+            url: https://arxiv.org/abs/2110.14168
+          purposes:
+          - identification
+          - research
+          authority: upstream
+          note: Original Training Verifiers to Solve Math Word Problems paper.
+        - type: article
+          source:
+            url: https://openai.com/index/solving-math-word-problems/
+          purposes:
+          - research
+          authority: official
+          note: Original publisher's explanation of dataset design and mathematical
+            reasoning limits.
+        - type: repository
+          source:
+            url: https://github.com/openai/grade-school-math/blob/master/LICENSE
+          purposes:
+          - research
+          authority: official
+          note: Actual MIT repository software/documentation LICENSE; keep distinct
+            from Hub dataset license declaration.
+        relations:
+        - type: produced-by
+          target: catalog/producers/o/openai
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

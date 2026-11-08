@@ -1,0 +1,124 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:04fbac6ebce9307ae802ebe912fc2fdaab53dd33
+    parent:
+      entity.yml: gitblob:09f4b1197ca9716577b945595fade37b1274c155
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/model-apis/friendli-model-apis
+        type: service
+        name: Friendli Model APIs
+        aliases:
+        - FriendliAI Model APIs
+        - Friendli Model API
+        - Friendli Serverless Model API
+        identity_note: FriendliAI's active hosted, provider-operated serverless model
+          inference API, distinct from Friendli Dedicated Endpoints, self-managed
+          Friendli Container and models originally developed by other organizations.
+          First-party help documents https://api.friendli.ai/serverless/v1 and OpenAI-compatible
+          chat completions plus a separately documented Messages interface. Model
+          IDs, API feature support, account entitlements, quotas, regions, pricing
+          and data handling terms may change. A current model-availability listing
+          is not proof of original model authorship, rights clearance, or sanctions
+          status.
+        references:
+        - type: product-page
+          source:
+            url: https://friendli.ai/product/model-apis
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current serverless hosted Model APIs, separate from dedicated deployment.
+        - type: documentation
+          source:
+            url: https://learn.friendli.ai/articles/4213111023-q10-1-how-do-i-connect-friendliai-with-litellm-or-other-openai-compatible-client
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: August 2026 vendor documentation of the serverless and dedicated base
+            URLs and compatibility surfaces.
+        - type: documentation
+          source:
+            url: https://learn.friendli.ai/articles/6490778657-q1-1-which-models-are-available-on-model-api-serverless
+          purposes:
+          - research
+          authority: official
+          note: Serverless catalog is curated and mutable, unlike dedicated endpoint
+            deployment.
+        - type: official-site
+          source:
+            url: https://friendli.ai/pricing
+          purposes:
+          - research
+          authority: official
+          note: Current hosted versus dedicated pricing and contract boundaries; costs
+            are not fixed here.
+        - type: official-site
+          source:
+            url: https://status.friendli.ai/
+          purposes:
+          - research
+          authority: official
+          note: Separate operational status surfaces for Model APIs and Dedicated
+            Endpoints; historical uptime does not guarantee availability.
+        relations:
+        - type: produced-by
+          target: catalog/producers/f/friendliai
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

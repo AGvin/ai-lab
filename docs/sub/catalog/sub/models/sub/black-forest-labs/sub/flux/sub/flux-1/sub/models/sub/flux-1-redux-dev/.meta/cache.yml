@@ -1,0 +1,105 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a06a7c49229f183671c01d78f0d9eb55cc470a1b
+    parent:
+      entity.yml: gitblob:92e500a60a99e6637b9c4aa24e3634cb4d2360f9
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-redux-dev
+        type: model
+        name: FLUX.1 Redux [dev]
+        aliases:
+        - FLUX.1-Redux-dev
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/black-forest-labs/FLUX.1-Redux-dev
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/black-forest-labs/flux/blob/main/docs/image-variation.md
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://bfl.ai/blog/24-11-21-tools
+          purposes:
+          - research
+          authority: official
+        - type: license
+          source:
+            url: https://github.com/black-forest-labs/flux/blob/main/model_licenses/LICENSE-FLUX1-dev
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/black-forest-labs/flux/flux-1
+        identity_note: Released Black Forest Labs learned image-conditioning adapter
+          for FLUX.1-dev and FLUX.1-schnell generators. Redux encodes a source image
+          for image variations; it requires a compatible FLUX.1 base generator and
+          is not a standalone image generator, quantization or hosted Redux [pro]
+          endpoint. The separate gated adapter weights use the FLUX.1 dev Non-Commercial
+          License, even with an Apache-2.0 schnell base. Published image quality,
+          hardware fit and runtime claims have not been independently verified.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

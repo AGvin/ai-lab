@@ -1,0 +1,129 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:4a36a7048cd3123b74902c1e33548c763edd02d8
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/longmemeval-v2
+        type: dataset
+        name: LongMemEval-V2
+        aliases:
+        - LME-V2
+        identity_note: Original independently released 2026 benchmark by Di Wu and
+          collaborators for evaluating long-term memory of web agents from experience
+          in customized web and synthetic enterprise environments. The public publisher
+          dataset contains 451 curated questions and 1,870 trajectories, across five
+          memory abilities and web/enterprise domains. History haystacks may contain
+          up to 500 trajectories or 115 million tokens. It is a distinct original
+          publication and dataset from 2024 LongMemEval's 500 conversational-memory
+          questions; neither is a trained agent, evaluation harness, or memory service.
+          The publisher's dataset card says Apache-2.0; that does not independently
+          clear all screenshots, source assets or downstream model training rights.
+          Benchmark scores and operational costs are run-specific.
+        references:
+        - type: official-site
+          source:
+            url: https://xiaowu0162.github.io/longmemeval-v2/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: First-party benchmark site and released data overview.
+        - type: repository
+          source:
+            url: https://github.com/xiaowu0162/LongMemEval-V2
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original evaluation scripts and baseline implementations; not a separately
+            accepted model.
+        - type: registry
+          source:
+            url: https://huggingface.co/datasets/xiaowu0162/longmemeval-v2
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original published dataset distribution.
+        - type: registry
+          source:
+            url: https://huggingface.co/datasets/xiaowu0162/longmemeval-v2/blob/main/DATA_CARD.md
+          purposes:
+          - research
+          authority: official
+          note: Publisher dataset counts, benchmark scope, synthetic-environment limitations
+            and Apache-2.0 declaration.
+        - type: paper
+          source:
+            url: https://arxiv.org/abs/2605.12493
+          purposes:
+          - identification
+          - research
+          authority: upstream
+          note: Original May 2026 paper by Di Wu et al.
+        - type: repository
+          source:
+            url: https://github.com/xiaowu0162/LongMemEval
+          purposes:
+          - research
+          authority: official
+          note: Separate 2024 LongMemEval conversational benchmark, not an alias or
+            identical release.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d2abc77644a305f349c94f7b964dd7c82e0c37fb
+      entity.yml: gitblob:a0104ddabcff8e25970fa41696cb372f5da14f88
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -56,6 +56,12 @@ cache:
             url: https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/
           purposes:
           - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics/
+          purposes:
           - research
           authority: official
         relations:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:81487239aabee208325b9ac3a4618778719d0042
+      entity.yml: gitblob:115fab73648546c144b933d6568667a121b2e19a
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -47,6 +47,12 @@ cache:
         name: NVIDIA B300 Tensor Core GPU
         aliases:
         - B300
+        identity_note: NVIDIA's versioned CUTLASS 4.3.1 table identifies B300 with
+          compute capability 10.3 and a CUDA 13.0 minimum for that CUTLASS support
+          table. The current HGX page states B300 systems are shipping; HGX B300 is
+          an eight-GPU system, not this individual GPU identity. Preserve Blackwell
+          Ultra versus B200 and validate exact runtime builds instead of transferring
+          a family-wide compatibility claim.
         references:
         - type: documentation
           source:
@@ -59,6 +65,13 @@ cache:
           source:
             url: https://docs.nvidia.com/nim/large-language-models/latest/reward-model.html
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.nvidia.com/en-us/data-center/hgx/
+          purposes:
+          - identification
           - research
           authority: official
         relations:

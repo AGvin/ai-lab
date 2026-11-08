@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f644f91731bef72495a66057e9f2e0d4720e92ac
+      entity.yml: gitblob:865982666c46f7dc6d47f9406c64d5f0f15849c2
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,13 @@ cache:
         id: catalog/hardware/tenstorrent-galaxy-blackhole
         type: hardware-product
         name: Tenstorrent Galaxy Blackhole
+        identity_note: Tenstorrent Galaxy Blackhole is a Blackhole-generation multi-accelerator
+          AI system; Tenstorrent's April-May 2026 manufacturer announcements describe
+          it as in production and shipping in volume. Galaxy system topology and manufacturer
+          throughput/scale comparisons must not be presented as one ASIC specification
+          or independently established performance. Pricing, stock, software/firmware,
+          workload throughput, cooling/network requirements and ownership control
+          remain unverified for a particular deployment.
         aliases:
         - Galaxy Blackhole
         references:

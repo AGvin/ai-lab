@@ -1,0 +1,116 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:45db521c98cfe0f55ee6a56cd75476424116c623
+    parent:
+      entity.yml: gitblob:09f4b1197ca9716577b945595fade37b1274c155
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/model-apis/sambacloud
+        type: service
+        name: SambaCloud
+        aliases:
+        - SambaNova Cloud
+        - SambaNova Cloud Inference API
+        identity_note: SambaNova Systems' active managed hosted inference API for
+          accessing third-party models over an OpenAI-compatible HTTP interface. This
+          commercial service is distinct from SambaStack dedicated/on-premises inference
+          deployments, the company's reconfigurable dataflow chips and any model trained
+          by another publisher. Model catalog, preview versus production status, plan
+          access, data handling terms, rate limits, endpoints and prices must be verified
+          by exact account/region/revision. Public documentation does not authorize
+          a universal data-retention or training-use guarantee for every service contract.
+        references:
+        - type: official-site
+          source:
+            url: https://cloud.sambanova.ai/dashboard
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current hosted service dashboard, API quickstart, API-key authentication
+            and OpenAI-compatible endpoint.
+        - type: documentation
+          source:
+            url: https://docs.sambanova.ai/docs/en/integrations/vscode
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Vendor integration guide shows active SambaCloud access separate from
+            other deployment types.
+        - type: product-page
+          source:
+            url: https://sambanova.ai/solutions/ai-natives-enterprises
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Distinguishes hosted SambaCloud API from dedicated and on-premises
+            SambaStack.
+        - type: official-site
+          source:
+            url: https://cloud.sambanova.ai/plans
+          purposes:
+          - research
+          authority: official
+          note: Service plans and preview/production model access are commercially
+            mutable; no pricing pinned.
+        relations:
+        - type: produced-by
+          target: catalog/producers/s/sambanova-systems-inc
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

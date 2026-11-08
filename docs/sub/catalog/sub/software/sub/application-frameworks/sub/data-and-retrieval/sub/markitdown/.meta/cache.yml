@@ -1,0 +1,119 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:238aaf681444ef87112a90c7d4cc14a20d71d6aa
+    parent:
+      entity.yml: gitblob:20692ac948f32af357707ed76a45e489337a095a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/application-frameworks/data-and-retrieval/markitdown
+        type: software
+        name: MarkItDown
+        aliases:
+        - Microsoft MarkItDown
+        - markitdown
+        identity_note: Independently distributed Microsoft-origin, MIT-licensed Python
+          library and command-line utility for converting selected document, web,
+          archive and media inputs to structural Markdown for language-model ingestion
+          and text analysis. It is preprocessing software, not a retrieval engine,
+          document-layout renderer, AI model or Microsoft-operated hosted service.
+          Format support, transcription, OCR and image description depend on optional
+          dependencies, plugins and sometimes third-party providers. Converters run
+          with the caller process's file and network privileges.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/microsoft/markitdown
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original publisher repository and security caveats.
+        - type: registry
+          source:
+            url: https://pypi.org/project/markitdown/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original Python package distribution.
+        - type: release-notes
+          source:
+            url: https://github.com/microsoft/markitdown/releases/tag/v0.1.9
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Verified non-prerelease release v0.1.9, published 2026-10-21.
+        - type: documentation
+          source:
+            url: https://github.com/microsoft/markitdown/blob/v0.1.9/packages/markitdown/pyproject.toml
+          purposes:
+          - research
+          authority: official
+          note: Tagged package requires Python >=3.10,<3.15 and declares MIT license.
+        - type: documentation
+          source:
+            url: https://github.com/microsoft/markitdown/blob/v0.1.9/README.md
+          purposes:
+          - research
+          authority: official
+          note: Tagged converter/CLI usage, format extras and local-file/network risks.
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/microsoft
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

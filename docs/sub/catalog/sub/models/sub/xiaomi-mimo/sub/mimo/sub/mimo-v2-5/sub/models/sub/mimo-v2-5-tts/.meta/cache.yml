@@ -1,0 +1,88 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:ccc07bb958f00ec7ff0172484a5700866f337970
+    parent:
+      entity.yml: gitblob:c70b93cac7e3e38cc00234b0a80e621ba344fc55
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/xiaomi-mimo/mimo/mimo-v2-5/models/mimo-v2-5-tts
+        type: model
+        name: MiMo-V2.5-TTS
+        identity_note: The April 2026 publisher page distinguishes the named MiMo-V2.5-TTS
+          stock-voice model from the broader TTS Series and its separate VoiceDesign
+          and VoiceClone models. This profile covers the stock-voice model only. Style
+          instructions and inline audio tags control its speech synthesis. Public
+          model-weight availability and a reusable weight license were not established
+          from this hosted launch page; do not inherit ASR's MIT label. Hosted model
+          access, data handling and voice permissions need current service-specific
+          terms. Use authorized voice material and avoid misleading impersonation.
+          The stock-voice identity does not grant access or rights to separate cloning/design
+          models. No voice generation or hosted API call was performed. Ownership/control-chain
+          review is pending; no Russian-control finding or eligibility clearance.
+        references:
+        - type: documentation
+          source:
+            url: https://mimo.xiaomi.com/mimo-v2-5-tts
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/xiaomi-mimo/mimo/mimo-v2-5
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

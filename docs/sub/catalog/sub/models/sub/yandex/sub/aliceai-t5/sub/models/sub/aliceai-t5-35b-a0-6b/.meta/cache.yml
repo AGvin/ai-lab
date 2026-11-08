@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a1ce9424b363666a5fe4f0a9861328bd0cd1ef18
+      entity.yml: gitblob:d8c16c7e19e7cd3af69108633e8a6b74ceaea6c5
     parent:
-      entity.yml: gitblob:2bada38379efd1deff6285ebaf7fb1fd66852872
+      entity.yml: gitblob:51a293c6e1939a244124633faaccba47f709483c
   state:
     node:
       effective:
@@ -45,6 +45,17 @@ cache:
         id: catalog/models/yandex/aliceai-t5/models/aliceai-t5-35b-a0-6b
         type: model
         name: AliceAI-T5-35B-A0.6B
+        identity_note: 'AliceAI-T5-35B-A0.6B is Yandex''s released base text-to-text
+          encoder-decoder sparse mixture-of-experts model with UL2-style training.
+          The official card reports 34.35B unique parameters, 512 experts per MoE
+          layer with top-8 expert routing, and RoPE with YaRN for a 128K-token context.
+          Its usage example loads custom code via trust_remote_code=True, which requires
+          source review and pinning before execution. No generic chat suitability,
+          serving compatibility or hardware fit is implied. SECURITY POLICY: DANGEROUS
+          — NOT RECOMMENDED. Yandex is Russia-based; this catalog resource is research/threat-monitoring
+          only, regardless of security tests, permissive licenses or missing sanctions
+          findings. Do not recommend deployment or transmit sensitive data to Yandex
+          services. This classification does not claim detected malware in this model.'
         references:
         - type: registry
           source:

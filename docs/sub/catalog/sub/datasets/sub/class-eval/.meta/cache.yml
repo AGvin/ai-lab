@@ -1,0 +1,93 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:727956f1e71106215f6197741751b48a8c308488
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/class-eval
+        type: dataset
+        name: ClassEval
+        aliases:
+        - ClassEval Class-level Code Generation
+        - ClassEval Benchmark
+        identity_note: 2023 manually authored class-level Python code-generation benchmark
+          comprising classes, interdependent methods and unit tests. The task data
+          and runnable evaluation scripts are distinct from generated executable programs,
+          tool dependencies and leaderboard scores.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/FudanSELab/ClassEval
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/FudanSELab/ClassEval/blob/eaeac44d0d5dcd8a95feec50726d66fedc73a98f/README.md
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/FudanSELab/ClassEval/blob/eaeac44d0d5dcd8a95feec50726d66fedc73a98f/LICENSE
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

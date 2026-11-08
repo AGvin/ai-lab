@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:00507a7ad7679423122f9fd6c5b24ebc6003f408
+      entity.yml: gitblob:6e36c0128ef21683941c87eaf402ead4f97b52ee
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -48,6 +48,11 @@ cache:
         name: Agent Toolkit for AWS Skills
         aliases:
         - AWS Agent Skills
+        identity_note: The AWS toolkit's skill collection is distinct from its MCP
+          server, client plugins, rules files and cloud services. The repository license
+          is Apache-2.0. Public documentation search and discovery do not require
+          an AWS account; API operations and scripts require configured AWS credentials
+          and separate scoped authorization.
         references:
         - type: repository
           source:
@@ -60,6 +65,20 @@ cache:
           source:
             url: https://github.com/aws/agent-toolkit-for-aws/blob/main/skills/README.md
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/aws/agent-toolkit-for-aws/blob/24865b67ffc305fc4e05c4097bc573d7a83037ca/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/aws/agent-toolkit-for-aws/blob/24865b67ffc305fc4e05c4097bc573d7a83037ca/LICENSE
+          purposes:
+          - identification
           - research
           authority: official
         relations:

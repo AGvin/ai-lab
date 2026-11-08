@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:9629ab6dcb58053a0f81b1e4b7976b36b0d41141
+      entity.yml: gitblob:e2f3ffb84a777eed946f46c07527d045881da96e
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
     parent:
       entity.yml: gitblob:0ad21fc20e4195f4dc142f9741289130634e40b5
@@ -108,6 +108,8 @@ cache:
           target: catalog/models/alibaba/qwen/qwen3-reranker
         - type: has-member
           target: catalog/models/alibaba/qwen/qwen3-asr
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-5
     aliases:
       effective:
         schema: default

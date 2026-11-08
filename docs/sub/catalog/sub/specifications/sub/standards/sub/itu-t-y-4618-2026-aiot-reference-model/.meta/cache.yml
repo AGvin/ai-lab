@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:fa3791aa4ac8654785ec86bc1f758d3798be5bab
+      entity.yml: gitblob:44475510f592f3ac2f2e2dde4934e92625596666
     parent:
       entity.yml: gitblob:0cf80df310da6a10fb2bdc28c39cf869cdb4d5e4
   state:
@@ -57,8 +57,8 @@ cache:
           - research
           authority: official
           note: ITU-T Recommendation Y.4618 (06/26), approved 2026-06-29 and marked
-            in force; the inspected ITU record still says the publication artifact
-            is to be published.
+            in force; the final English PDF is listed as posted 2026-09-03 on the
+            official edition page.
     aliases:
       effective:
         schema: default

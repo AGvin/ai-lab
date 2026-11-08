@@ -1,0 +1,134 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bba4f618995c5c643780e7f239c2f5d0424daf0b
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/scifact
+        type: dataset
+        name: SciFact
+        identity_note: 'Original Ai2 SciFact scientific claim verification corpus,
+          published in 2020 with the EMNLP paper Fact or Fiction: Verifying Scientific
+          Claims. About 1.4K original expert-written scientific claims are paired
+          with evidence-bearing research abstracts and labeled SUPPORT/CONTRADICT
+          rationales. The publisher''s current Hugging Face 1.0.0 builder has a different
+          split inventory (1,261 train, 450 validation, 300 test claims, plus a 5,183-abstract
+          corpus); these revision-specific counts must not be conflated. Gold test
+          evidence/labels were not public in the original repository. Licensing is
+          materially conflicted: original allenai/scifact LICENSE.md grants CC BY
+          4.0 for claims/annotations, ODC-By 1.0 for S2ORC corpus abstracts, Apache
+          2.0 for code; publisher Hugging Face card instead declares CC BY-NC 2.0
+          overall. Do not assume unrestricted commercial use or full third-party rights.'
+        references:
+        - type: official-site
+          source:
+            url: https://allenai.org/open-data
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original publisher's current SciFact portfolio listing and approximately
+            1.4k scientific claims.
+        - type: repository
+          source:
+            url: https://github.com/allenai/scifact
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original first-party released SciFact data and baseline implementation;
+            original test gold annotations withheld.
+        - type: repository
+          source:
+            url: https://github.com/allenai/scifact/blob/master/LICENSE.md
+          purposes:
+          - research
+          authority: official
+          note: Authoritative source separates CC BY 4.0 claims, ODC-By 1.0 S2ORC
+            abstracts and Apache-2.0 code.
+        - type: paper
+          source:
+            url: https://aclanthology.org/2020.emnlp-main.609/
+          purposes:
+          - identification
+          - research
+          authority: upstream
+          note: Original EMNLP 2020 paper on scientific claim verification and evidence
+            rationales.
+        - type: registry
+          source:
+            url: https://huggingface.co/datasets/allenai/scifact
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Ai2 dataset distribution lists CC BY-NC 2.0 overall, conflicting with
+            distinct grants in its original LICENSE.md.
+        - type: registry
+          source:
+            url: https://huggingface.co/datasets/allenai/scifact/blob/main/dataset_infos.json
+          purposes:
+          - research
+          authority: official
+          note: Publisher builder 1.0.0 has claims configuration 1261/450/300 and
+            corpus 5183; not necessarily the original 2020 paper's exact dataset inventory.
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/ai2
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

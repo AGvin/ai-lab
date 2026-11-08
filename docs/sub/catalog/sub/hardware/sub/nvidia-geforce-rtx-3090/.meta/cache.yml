@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:0139cf707559f695a2b815e27ea9d15b1c80f516
+      entity.yml: gitblob:a15bc3112030480d557783d88f7247f6487388df
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,12 @@ cache:
         id: catalog/hardware/nvidia-geforce-rtx-3090
         type: hardware
         name: NVIDIA GeForce RTX 3090
+        identity_note: The manufacturer identifies this as the desktop Ampere RTX
+          3090 with 24 GB GDDR6X, distinct from RTX 3090 Ti and professional RTX A6000.
+          Card memory is per device. Board-specific power, cooling, connector and
+          driver requirements still apply; NVLink does not make arbitrary applications
+          pool memory. Historical product-page presence does not prove current retail
+          supply or warranty.
         references:
         - type: product-page
           source:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5a234125d084a435ed8b0903227e9314a4cb3b88
+      entity.yml: gitblob:d1ff75cf017ee1c39d8bf7e3571396e45bb46b88
     parent:
       entity.yml: gitblob:39b65ed21c720200aeae2a2794fa23ab1b2360db
   state:
@@ -64,6 +64,10 @@ cache:
           target: catalog/producers/m/minimax
         - type: has-member
           target: catalog/models/minimax/minimax-m/models/m3
+        - type: has-member
+          target: catalog/models/minimax/minimax-m/models/m2
+        - type: has-member
+          target: catalog/models/minimax/minimax-m/models/m3-1-flash
     aliases:
       effective:
         schema: default

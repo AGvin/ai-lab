@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7aa3dd701df457c3e663dc17f37d644b7ed5ce78
+      entity.yml: gitblob:7894a4e71972d028ace5951b4c8224c2661a783c
       node.yml: gitblob:1615cbf85373f581479950b7a25c7fbc426d6341
     parent:
       entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
@@ -49,9 +49,10 @@ cache:
         name: huihui.ai Models
         identity_note: This producer view organizes the represented modified models
           published under the huihui-ai handle and links the canonical huihui.ai producer.
-          The Qwen3-Coder-derived branch is navigation to the concrete modified model.
-          Its upstream model, modification provenance and quantized artifacts retain
-          distinct identities and evidence.
+          The Qwen3-Coder-derived branch is navigation to one concrete modified model;
+          the separate Qwen3.5 derivative is linked directly. Its upstream model,
+          modification provenance and quantized artifacts retain distinct identities
+          and evidence.
         references:
         - type: registry
           source:

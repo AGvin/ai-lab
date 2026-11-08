@@ -1,0 +1,110 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:f2e9b8ffc4e9e38b60802fc9ee061fd9681ae277
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/truthfulqa
+        type: dataset
+        name: TruthfulQA
+        aliases:
+        - TruthfulQA: Measuring How Models Mimic Human Falsehoods
+        identity_note: Published research question-and-reference-answer dataset developed
+          by Stephanie Lin, Jacob Hilton and Owain Evans to test common human misconceptions.
+          The revised January 2025 binary multiple-choice protocol is a setting of
+          the same source dataset, not a second dataset or a corporate OpenAI product.
+          Research affiliations do not by themselves establish institutional ownership.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/sylinrl/TruthfulQA
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original research-author repository containing questions, reference
+            answers and evaluation code.
+        - type: repository
+          source:
+            url: https://github.com/sylinrl/TruthfulQA/blob/main/TruthfulQA.csv
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Mutable question/answer CSV; reproducible evaluations require an exact
+            commit.
+        - type: paper
+          source:
+            url: https://arxiv.org/abs/2109.07958
+          purposes:
+          - identification
+          - research
+          authority: upstream
+          note: Original paper describing the historical 817-question, 38-category
+            dataset.
+        - type: repository
+          source:
+            url: https://github.com/sylinrl/TruthfulQA/blob/main/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Actual Apache-2.0 original-repository LICENSE; not a complete third-party
+            source-rights audit.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a3b432f3c1cbfa8f42a04985f3bdc16402d28e1e
+      entity.yml: gitblob:7d01e94aa4b6837806f63975ebeb36a3b3d7c15d
     parent:
       entity.yml: gitblob:c0f7ae44e9077ef8bd7b23d3bd2300dacf256dc3
   state:
@@ -46,12 +46,13 @@ cache:
         type: model-family
         name: Aya
         identity_note: Aya is the multilingual research-model family led by Cohere
-          Labs. The represented branches are Aya Expanse for text, Aya Vision for
-          text-and-image understanding, and Tiny Aya for compact multilingual text
-          models. Family membership does not make member language coverage, modality,
-          context or access interchangeable. Select a concrete trained model, and
-          distinguish its weights from a provider route, quantization, dataset or
-          evaluation suite.
+          Labs. The represented branches are Aya 101 (the original 2024 Apache-2.0
+          13B text model), Aya 23 (the historical 2024 multilingual text series),
+          Aya Expanse for text, Aya Vision for text-and-image understanding, and Tiny
+          Aya for compact multilingual text models. Family membership does not make
+          member language coverage, modality, context or access interchangeable. Select
+          a concrete trained model, and distinguish its weights from a provider route,
+          quantization, dataset or evaluation suite.
         references:
         - type: official-site
           source:
@@ -81,9 +82,27 @@ cache:
           - identification
           - research
           authority: official
+        - type: article
+          source:
+            url: https://cohere.com/blog/aya
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://cohere.com/blog/aya23
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/c/cohere-labs
+        - type: has-member
+          target: catalog/models/cohere-labs/aya/aya-101
+        - type: has-member
+          target: catalog/models/cohere-labs/aya/aya-23
         - type: has-member
           target: catalog/models/cohere-labs/aya/aya-expanse
         - type: has-member

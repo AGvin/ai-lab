@@ -4,7 +4,7 @@ cache:
     self:
       entity.yml: gitblob:518684df47310d54db06a4e4f34428c7e2a20b26
     parent:
-      entity.yml: gitblob:7aa3dd701df457c3e663dc17f37d644b7ed5ce78
+      entity.yml: gitblob:7894a4e71972d028ace5951b4c8224c2661a783c
       node.yml: gitblob:1615cbf85373f581479950b7a25c7fbc426d6341
   state:
     node:

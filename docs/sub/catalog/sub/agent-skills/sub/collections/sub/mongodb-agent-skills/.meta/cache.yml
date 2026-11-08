@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:31ef11b33709b3e7bbb396cf730652bc7189d39c
+      entity.yml: gitblob:884925773ca7ffda07177b2dc4ba1f0c63fc2eee
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -58,7 +58,11 @@ cache:
           service or coding agent. Inspect the current skills and client compatibility
           and configure database access for the intended deployment. A skill's advice
           does not verify permissions, and each skill directory or plugin manifest
-          does not become a separate product identity.
+          does not become a separate product identity. MongoDB's Apache-2.0 collection
+          has an Atlas plugin connecting to MongoDB-hosted MCP through OAuth and a
+          separate self-managed plugin running MCP locally. Standalone skills do not
+          establish either connection. Query/schema advice remains separate from database
+          authorization, deployment compatibility and review of generated write operations.
         references:
         - type: repository
           source:
@@ -70,6 +74,20 @@ cache:
         - type: documentation
           source:
             url: https://www.mongodb.com/docs/agent-skills/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/mongodb/agent-skills/blob/155bb9c4b42a9a3e019f47be0669de0e4547d1ea/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/mongodb/agent-skills/blob/155bb9c4b42a9a3e019f47be0669de0e4547d1ea/LICENSE
           purposes:
           - identification
           - research

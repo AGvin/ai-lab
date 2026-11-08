@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3a4244a4819644bec4195d7cd52ac395687b37a6
+      entity.yml: gitblob:6f112457e71fc999061cb1a0e9e332108b3990f6
     parent:
       entity.yml: gitblob:b7f05983a5d1c6c223967178283fa7f339514136
   state:
@@ -128,6 +128,10 @@ cache:
           target: catalog/software/model-and-data-platforms/model-development/optax
         - type: produces
           target: catalog/software/physical-ai-and-robotics/mujoco-playground
+        - type: produces
+          target: catalog/datasets/simpleqa-verified
+        - type: produces
+          target: catalog/datasets/deepsearchqa
     aliases:
       effective:
         schema: default

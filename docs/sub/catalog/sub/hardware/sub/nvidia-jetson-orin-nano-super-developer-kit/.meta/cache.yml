@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:587dd09046162b8b2e0e66bdefcda22c376d6a5f
+      entity.yml: gitblob:827ba9f4ef02f81249eae725e3541d79e0833cca
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,13 @@ cache:
         id: catalog/hardware/nvidia-jetson-orin-nano-super-developer-kit
         type: hardware
         name: NVIDIA Jetson Orin Nano Super Developer Kit
+        identity_note: NVIDIA Jetson Orin Nano Super Developer Kit combines an 8 GB
+          LPDDR5 Ampere-based development module/carrier with a software-enabled Super
+          mode (up to 67 INT8 TOPS, 102 GB/s specified memory bandwidth, 7–25 W published
+          power modes). Eligible older Orin Nano development kits can be updated to
+          Super; Super is not a wholly separate production-module silicon SKU. Model
+          compatibility, available memory, JetPack/firmware, boot storage, thermals
+          and actual throughput require current validation.
         references:
         - type: product-page
           source:

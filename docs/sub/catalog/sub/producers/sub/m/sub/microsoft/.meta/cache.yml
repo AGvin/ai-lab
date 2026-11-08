@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f549596c20ccf3dae73c4b74021c0bd6b61c9796
+      entity.yml: gitblob:9f57150ed43976e19c059e2d63d6f0a8af5323d9
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -147,7 +147,33 @@ cache:
           - identification
           - research
           authority: official
+        - type: repository
+          source:
+            url: https://github.com/microsoft/BitNet
+          purposes:
+          - research
+          authority: official
+          note: Original Microsoft low-bit inference engine, separate from BitNet
+            model weights.
+        - type: repository
+          source:
+            url: https://github.com/microsoft/markitdown
+          purposes:
+          - research
+          authority: official
+          note: Original Microsoft document preprocessing software, distinct from
+            GraphRAG.
+        - type: repository
+          source:
+            url: https://github.com/microsoft/graphrag
+          purposes:
+          - research
+          authority: official
+          note: Microsoft Research project in maintenance mode, not an officially
+            supported Microsoft product.
         relations:
+        - type: produces
+          target: catalog/software/model-and-data-platforms/model-development/agent-lightning
         - type: produces
           target: catalog/models/microsoft/phi
         - type: produces
@@ -158,6 +184,8 @@ cache:
           target: catalog/software/development-tools/code-editors/vs-code
         - type: produces
           target: catalog/software/development-tools/testing/playwright
+        - type: produces
+          target: catalog/software/development-tools/testing/playwright-mcp
         - type: produces
           target: catalog/software/agent-frameworks/microsoft-agent-framework
         - type: produces
@@ -192,6 +220,14 @@ cache:
           target: catalog/software/model-and-data-platforms/model-development/deepspeed
         - type: produces
           target: catalog/software/inference-runtimes/inference-engines/onnx-runtime-genai
+        - type: produces
+          target: catalog/software/application-frameworks/data-and-retrieval/microsoft-graphrag
+        - type: produces
+          target: catalog/software/application-frameworks/data-and-retrieval/markitdown
+        - type: produces
+          target: catalog/software/inference-runtimes/inference-engines/bitnet-cpp
+        - type: produces
+          target: catalog/models/microsoft/bitnet
     aliases:
       effective:
         schema: default

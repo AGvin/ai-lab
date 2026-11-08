@@ -1,0 +1,100 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:8445c72f70f59287713739e783dfa281680a6830
+    parent:
+      entity.yml: gitblob:92e500a60a99e6637b9c4aa24e3634cb4d2360f9
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-kontext-pro
+        type: model
+        name: FLUX.1 Kontext [pro]
+        references:
+        - type: documentation
+          source:
+            url: https://bfl.ai/blog/flux-1-kontext
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://help.bfl.ai/articles/5186006235-what-is-flux-1-kontext
+          purposes:
+          - research
+          authority: official
+        - type: api
+          source:
+            url: https://api.bfl.ai/docs
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/black-forest-labs/flux/flux-1
+        identity_note: Black Forest Labs separately introduced FLUX.1 Kontext [pro]
+          on May 29, 2025 as a production-oriented hosted model for text-to-image
+          generation and text-guided reference-image editing. Current BFL API uses
+          the named /v1/flux-kontext-pro route and the model remains listed for its
+          API and Playground, with FLUX.2 recommended for new projects. Unlike the
+          open-weight Kontext [dev] checkpoint, [pro] is a separate proprietary hosted
+          model identity. Do not infer its weight architecture, parameter count, training-parent
+          lineage, downloadable rights, or a local serving path. API authentication,
+          billing and service terms must be checked directly. Publisher quality, latency
+          and stability claims are not independent benchmarks.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

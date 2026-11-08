@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:6bd125c717d14b9df9ffe949401abd515e9f4cf0
+      entity.yml: gitblob:64907583ded608fb14534f56ae9a662365cbbc2f
     parent:
       entity.yml: gitblob:d24027ca08caf87c2ddd45810bf759ad28ecb8f5
   state:
@@ -64,6 +64,8 @@ cache:
           target: catalog/producers/x/xiaomi-mimo-team
         - type: has-member
           target: catalog/models/xiaomi-mimo/mimo/mimo-v2-5
+        - type: has-member
+          target: catalog/models/xiaomi-mimo/mimo/mimo-v2-6
     aliases:
       effective:
         schema: default

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:2c636e212b17fc9559d8139081eeda8bd4ed4c25
+      entity.yml: gitblob:c520de28b02fcd1068e058fb0bb0f2e665b61dd3
     parent:
       entity.yml: gitblob:b36ca5bdc58da8f3782c6a5822573937ea2cd7d2
   state:
@@ -135,6 +135,8 @@ cache:
         - type: produces
           target: catalog/software/agent-frameworks/openai-agents-sdk
         - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/openai-evals
+        - type: produces
           target: catalog/specifications/formats/openai-harmony
         - type: produces
           target: catalog/datasets/humaneval
@@ -146,6 +148,8 @@ cache:
           target: catalog/datasets/lifescibench
         - type: produces
           target: catalog/datasets/frontierscience
+        - type: produces
+          target: catalog/datasets/math-500
         - type: produces
           target: catalog/datasets/mentalhealthbench
         - type: produces
@@ -187,6 +191,12 @@ cache:
         - type: produces
           target: catalog/datasets/mle-bench
         - type: produces
+          target: catalog/datasets/paperbench
+        - type: produces
+          target: catalog/datasets/swe-bench-verified
+        - type: produces
+          target: catalog/datasets/gsm8k
+        - type: produces
           target: catalog/datasets/healthbench
         - type: produces
           target: catalog/services/model-apis/openai-api-platform
@@ -198,6 +208,10 @@ cache:
           target: catalog/models/openai/gpt-4o-mini-transcribe
         - type: produces
           target: catalog/models/openai/gpt-4o-transcribe-diarize
+        - type: produces
+          target: catalog/datasets/simpleqa
+        - type: produces
+          target: catalog/datasets/prm800k
         identity_note: OpenAI is the represented producer umbrella; the OpenAI Foundation
           controls OpenAI Group PBC, while product contracting entities, acquired
           organizations, model provenance, licenses, access, and lifecycle remain

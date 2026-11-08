@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:493212a653cd227c2d23307d3d69bf605d7b4f7b
+      entity.yml: gitblob:db9695a9ffa4e422a40e2d6bd4565fd49d29714d
     parent: {}
   state:
     node:
@@ -107,6 +107,13 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/blog/CohereLabs/introducing-command-a-vision-07-2025
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/cohere/command/command-a
@@ -114,6 +121,8 @@ cache:
           target: catalog/producers/c/cohere-labs
         - type: derived-from
           target: catalog/models/cohere/command/command-a/models/command-a-03-2025
+        - type: derived-from
+          target: catalog/models/google/siglip-2/models/siglip2-so400m-patch16-512
     aliases:
       effective:
         schema: default

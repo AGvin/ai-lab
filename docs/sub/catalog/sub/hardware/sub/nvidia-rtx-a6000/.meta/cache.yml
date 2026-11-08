@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:8b0e14560d773947ad579c78f5defe0b1d2d65ce
+      entity.yml: gitblob:dc19277d638e716dbe2828adc18e5defc2d508fb
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,11 @@ cache:
         id: catalog/hardware/nvidia-rtx-a6000
         type: hardware
         name: NVIDIA RTX A6000
+        identity_note: NVIDIA identifies Ampere RTX A6000 with 48 GB ECC GDDR6 and
+          a two-way NVLink option. It is not RTX 6000 Ada or RTX PRO 6000 Blackwell.
+          Two connected devices do not automatically provide every application one
+          96 GB allocation; topology and software parallelism determine usable memory.
+          Check board and software entitlement requirements separately.
         references:
         - type: product-page
           source:

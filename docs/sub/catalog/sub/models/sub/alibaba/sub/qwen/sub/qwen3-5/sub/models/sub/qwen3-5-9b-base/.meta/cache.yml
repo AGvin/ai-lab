@@ -1,0 +1,98 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a2d26c066e50cdb62c657d78129b38fb1df5b22b
+      node.yml: gitblob:55e5d56d710b11b573d38aaf32158d8d184499fd
+    parent:
+      entity.yml: gitblob:1ae3f78cc9bacbbed75f4afa03c3a2bd183846a1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/alibaba/qwen/qwen3-5/models/qwen3-5-9b-base
+        type: model
+        name: Qwen3.5-9B-Base
+        identity_note: Qwen3.5-9B-Base is Qwen Team's separately released pretrained-only
+          9B-scale vision-language checkpoint. It is the upstream learned model for
+          the post-trained Qwen3.5-9B and is intended for adaptation and research
+          rather than direct conversation.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.5-9B-Base
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.5-9B-Base/tree/main
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.5-9B
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/alibaba/qwen/qwen3-5
+        - type: has-derivative
+          target: catalog/models/alibaba/qwen/qwen3-5/models/qwen3-5-9b
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json
