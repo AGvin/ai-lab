@@ -4,7 +4,7 @@ Cohere Platform is Cohere's managed public SaaS API for model inference and rela
 
 ## Model and deployment boundaries
 
-Cohere Platform is the direct managed API service, not the underlying Command, North, Embed, Rerank, Parse or Transcribe trained models. [Cohere North](../../assistant-workspaces/sub/cohere-north/) is a separate enterprise assistant/workspace. Cohere Model Vault and private-cloud/on-premises deployments have different infrastructure, data and operating boundaries; a common model API does not imply a shared deployment or security policy.
+Cohere Platform is the direct managed API service, not the underlying Command, North, Embed, Rerank, Parse or Transcribe trained models. [Cohere North](../../../assistant-workspaces/sub/cohere-north/) is a separate enterprise assistant/workspace. Cohere Model Vault and private-cloud/on-premises deployments have different infrastructure, data and operating boundaries; a common model API does not imply a shared deployment or security policy.
 
 ## API and operations
 
