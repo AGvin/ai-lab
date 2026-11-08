@@ -14,3 +14,10 @@
 - The official released research artifact includes reproducible runnable/verifiable tasks rather than merely announcing an unimplemented future concept.
 - WebArena-Infinity and the original/Visual/Verified WebArena suites are not conflated in versioned result comparisons.
 - The WebArena-x producer has the inverse `produces` relation; the canonical node is not duplicated under software solely because the benchmark offers generation tooling.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **WebArena-Infinity** is the WebArena-x research team's original **March 2026** released environment-generation benchmark suite for programmatically generated web applications and **verifiable browser tasks**. Its public repository currently includes a **19-environment generation manifest** and a separate **two-environment quick-test manifest**; these describe the current generation pipeline inputs, **not** an immutable benchmark with exactly 19 fixed tasks or an independent benchmark identity for every generated app.
+- Original WebArena's hand-authored web tasks, VisualWebArena's multimodal tasks, and ServiceNow WebArena-Verified's audited task corpus are distinct evaluation releases. Each generated app/verification task must pin its source and output revision, app state, task-level graders, seed/configuration, reset policy, model/runtime and run budget. Pipeline scripts can create and run arbitrary code or remote cloud infrastructure, including privileged agent options such as `--dangerously-skip-permissions`; never run the generation flow outside disposable least-privilege infrastructure.
+- First-party sources: https://github.com/web-arena-x/webarena-infinity ; https://web-arena-x.github.io/webarena-infinity/ .
+- Source acceptance establishes one existing original benchmark-and-generation research identity, public environment/task methodology and safety/version boundaries only. No generated applications deployed, coding agent or live browser task run, independent task compliance/security/data licensing, whole-repository schema/cache/CI/render, clean or final acceptance.
