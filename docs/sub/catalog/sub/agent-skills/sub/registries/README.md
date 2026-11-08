@@ -9,6 +9,7 @@ A registry aggregates or indexes skills from multiple independent sources; a pub
 - [agentskills.codes](./sub/agentskills-codes/)
 - [AgentSkills.to](./sub/agentskills-to/)
 - [GuildSkills](./sub/guildskills/)
+- [Perplexity Skills Marketplace](./sub/perplexity-skills-marketplace/)
 - [SkillHub](./sub/skillhub/)
 - [skills.sh](./sub/skills-sh/)
 - [SkillsRegistry.net](./sub/skillsregistry-net/)
