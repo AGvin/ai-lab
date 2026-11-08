@@ -12,7 +12,7 @@ Safety and correctness boundaries are explicitly non-negotiable: trust-boundary 
 
 The persistent main `ponytail` mode remains distinct from one-shot review/audit/reporting skills. Delivery surfaces such as Claude Code, Codex, GitHub Copilot CLI, Pi, OpenCode, Gemini/Antigravity, Qoder, Hermes, CodeWhale, Swival, Devin, OpenClaw, Grok Build, MCP, npm, hooks, and the internal `ponytail-mcp` adapter are integration mechanisms rather than separate canonical products.
 
-Upstream benchmark results remain producer-reported evidence. The 2026-06-18 agentic benchmark used Claude Code with Haiku 4.5, a pinned real repository, 12 feature tasks, a small safety set, and `n=4` per task/arm; its LOC, token, cost, and time effects are not independent AI Lab measurements or universal guarantees.
+Upstream benchmark results remain producer-reported evidence. The newer 2026-10-07 Ponytail 5 study used Claude Code CLI 2.1.288 with Opus 5.5 across 39 tasks and three arms (no skill, Ponytail v4.13 and Ponytail 5), with five runs per task and arm (585 sessions). Bash was disabled. AI Lab has not independently reproduced the reported effects or safety outcomes; the June 2026 Haiku 4.5 study remains historical.
 
 ## Relations
 
@@ -28,4 +28,4 @@ Dietrich Gebert publishes the MIT-licensed Ponytail collection for reducing unne
 
 - [Ponytail repository](https://github.com/DietrichGebert/ponytail)
 - [Ponytail npm package](https://www.npmjs.com/package/@dietrichgebert/ponytail)
-- [2026-06-18 upstream agentic benchmark](https://github.com/DietrichGebert/ponytail/blob/main/benchmarks/results/2026-06-18-agentic.md)
+- [2026-10-07 upstream Ponytail 5 benchmark](https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/benchmarks/results/2026-10-07-agentic.md)

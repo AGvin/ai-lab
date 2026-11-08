@@ -21,7 +21,7 @@ entity:
       authority: official
     - type: article
       source:
-        url: https://github.com/DietrichGebert/ponytail/blob/main/benchmarks/results/2026-06-18-agentic.md
+        url: https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/benchmarks/results/2026-10-07-agentic.md
       purposes:
         - research
       authority: official

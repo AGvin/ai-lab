@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:6118cb2b220900aef1fcea20a7bac4cdb660a3f6
+      entity.yml: gitblob:77bd41d7096cd7cd831a237f636df81ee754c8d6
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -68,7 +68,7 @@ cache:
           authority: official
         - type: article
           source:
-            url: https://github.com/DietrichGebert/ponytail/blob/main/benchmarks/results/2026-06-18-agentic.md
+            url: https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/benchmarks/results/2026-10-07-agentic.md
           purposes:
           - research
           authority: official

@@ -11,11 +11,11 @@
 - Treat Claude Code, Codex, GitHub Copilot CLI, Pi, OpenCode, Gemini/Antigravity, Qoder, Hermes, CodeWhale, Swival, Devin, OpenClaw, Grok Build, MCP, npm, hooks, and similar surfaces as delivery/integration mechanisms unless a future artifact has an independently justified product identity.
 - Keep the internal/private `ponytail-mcp` server as a delivery adapter for the same ruleset rather than a separate canonical AI Lab product while upstream continues to position it as internal support for the collection.
 - Present benchmark results with their methodology and limitations. Prefer the newer upstream agentic benchmark over older single-shot marketing-style figures when summarizing current evidence.
-- When citing the 2026-06-18 agentic benchmark, preserve that it used Claude Code with Haiku 4.5, a pinned real repository, 12 feature tasks, a separate small safety set, and `n=4` per task/arm; describe reported LOC/token/cost/time effects as upstream producer-reported results, not independent AI Lab measurements or guarantees for arbitrary repositories/models.
+- Prefer the 2026-10-07 Ponytail 5 agentic benchmark cited by the already-pinned upstream README: Claude Code CLI 2.1.288 with Opus 5.5, 39 tasks, three arms (no skill, Ponytail v4.13, Ponytail 5), and five runs per task and arm (585 sessions). Bash was disabled. Results on code size, time, cost and test coverage are publisher-reported, not reproduced by AI Lab or general guarantees. Retain the 2026-06-18 Haiku 4.5 benchmark only as historical evidence.
 - Do not use the older `ponytail-gain` single-shot scoreboard as a universal current performance claim without clearly labeling its older methodology and its narrower evidence basis.
 - Preserve the collection's MIT licensing as source-backed distribution metadata when discussed.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
-- Include the official repository, distribution surface, and benchmark reference from canonical entity metadata.
+- Include the official repository, distribution surface, and newest source-pinned benchmark reference from canonical entity metadata; keep benchmark date and methodology consistent with the reader.
 
 ## Validation
 
@@ -26,6 +26,11 @@
 - Delivery adapters and the internal MCP server do not become duplicate canonical entities without new identity evidence.
 - The `produced-by` relation resolves to Dietrich Gebert and is matched by the producer's inverse `produces` relation.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Benchmark source reconciliation — 2026-11-08
+
+- The already-pinned [upstream README](https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md) already promotes the [2026-10-07 Ponytail 5 benchmark](https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/benchmarks/results/2026-10-07-agentic.md). The local June benchmark was stale as the primary current study.
+- This is a bounded source correction, not an independent benchmark, full freshness audit, copyright clearance or runtime safety assessment.
 
 ## Scoped source interpretation — 2026-11-05
 
