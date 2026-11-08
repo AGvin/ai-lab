@@ -11,3 +11,4 @@ Agent-integration platforms, generic IAM products without a durable agent-specif
 - [Descope Agentic Identity Hub](./sub/descope-agentic-identity-hub/)
 - [Microsoft Entra Agent ID](./sub/microsoft-entra-agent-id/)
 - [Okta for AI Agents](./sub/okta-for-ai-agents/)
+- [WorkOS Agent Auth](./sub/workos-agent-auth/)
