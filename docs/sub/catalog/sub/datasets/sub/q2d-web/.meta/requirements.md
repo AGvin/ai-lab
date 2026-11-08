@@ -22,3 +22,11 @@
 - Render every visible current relation using canonical target names, explicit order first and alphabetical order within each relation group. Keep metadata paths out of reader navigation.
 - Recheck account eligibility, exact artifact access, versions and terms before deployment. This source review does not certify runtime performance.
 - Reviewed sources: <https://www.perplexity.ai/uk/hub/blog/q2d-web>, <https://arxiv.org/abs/2609.08887>.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **Q2D-Web (Query2Doc-Web)** is Perplexity's original **September 2026** research benchmark for first-stage embedding and retrieval evaluation within web-search and agentic RAG workloads, not the standalone Perplexity search service or its earlier Q2D benchmark.
+- The private benchmark describes approximately **190 million deduplicated web documents**, **69,721 agent-reformulated production queries** across **ten languages**, sampled over nine months from publisher traffic with PII filtering, and multiple separate relevance-label pipelines (agent citations, production search rankings and additional LLM judgements). Corpus/query distribution, label sparsity, retrieval-index setup and subset/full-corpus ranking metrics must be pinned before comparing published scores.
+- Public *methodology and a leaderboard* do not mean the query-document benchmark is available for unrestricted download or reuse. The original production-derived sampling and external web documents demand independent data-collection/privacy/copyright and security review; no actual embedding or retrieval run, judge-label reproduction, leaderboard trust assurance or cross-provider ranking is claimed.
+- First-party sources: https://www.perplexity.ai/en-GB/hub/blog/q2d-web ; https://research.perplexity.ai/ ; https://arxiv.org/abs/2609.08887 .
+- Source gate accepts only this already materialized private research benchmark identity, dated publisher methodology, 190M/69,721/10 task size and rights/access boundaries; no new metadata, production-query access, complete legal/security/freshness, global schema/cache/CI/render, clean or final gate.
