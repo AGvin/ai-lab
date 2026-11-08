@@ -9,6 +9,8 @@ Placement here identifies a specification-class artifact; it does not imply that
 - [A2UI — Agent-to-User Interface](./sub/a2ui-agent-to-user-interface/)
 - [Agent Plugins](./sub/agent-plugins/)
 - [Agent Skills](./sub/agent-skills/)
+- [AGENTS.md](./sub/agents-md/)
+- [Dogwood](./sub/dogwood/)
 - [GGUF](./sub/gguf/)
 - [llms.txt](./sub/llms-txt/)
 - [ONNX](./sub/onnx/)
