@@ -17,3 +17,10 @@
 
 - SWE-Serve remains a benchmark/dataset identity rather than an SGLang feature or general software-engineering concept.
 - Producer provenance remains source-backed and collaboration language is preserved.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **SWE-Serve** is NVIDIA's original **2026-09-23** inference-engineering coding-agent benchmark assembled with input from the SGLang maintainers. Its first public release contains **53 executable tasks selected from 83 merged SGLang pull requests**, spread over model/backend enablement, decoding, kernels/performance, serving API/runtime correctness, caching and distributed scheduling. Tasks and merged pull requests are not one-to-one identities.
+- **Nineteen tasks require real live-serving verification** beyond local tests; the source describes **12 CPU-only tasks and 41 tasks on one NVIDIA H100**, with a containerized pre-change checkout and hidden task-specific behavioral verifier. A reported agent pass, server start or benchmark score depends on benchmark release, model/harness, hardware, timeout and isolation, and cannot establish correct implementation across other inference frameworks, GPUs or cluster sizes.
+- First-party publisher source: https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving/ .
+- One scoped source gate verifies the existing NVIDIA-produced benchmark identity and its published 53/83/19 hardware/verification scope. No agent patches developed or run, executable containers/model checkpoints downloaded, independent score or rights/security/legal audit, global schema/cache/CI/render, clean or final gate.
