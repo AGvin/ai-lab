@@ -18,3 +18,10 @@
 - The published official ServiceNow repository and documentation substantiate the verified benchmark's independent maintained identity and evaluator.
 - Original WebArena, VisualWebArena and WebArena-Verified remain distinct and their scores are not compared without matching versioned evaluation conditions.
 - A reciprocal ServiceNow `produces` relation exists for this exact benchmark identity.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **WebArena-Verified** is ServiceNow's independently maintained **2025–2026** audited derivative of the original WebArena browser-agent benchmark, with **812 version-controlled tasks** and a separately selected **258-task Hard subset**. Its checked/corrected task instructions, expected outputs and deterministic evaluators remain independent from the original WebArena, VisualWebArena, other WebArena-x benchmarks and the agent frameworks used to run them.
+- Publisher evaluation replaces fragile substring and model-judged checks with type-aware JSON normalization, structural matching and captured **HAR/network-event** trace analysis, enabling offline result replay at a specified task/environment snapshot. The repository documents a planned December 2025 public release, January 2026 PyPI release and February 2026 `uvx`/Docker images. The root Apache-2.0 code grant does not prove that every replayed website, user account, webpage or captured network field is unrestricted or safe to publish.
+- First-party sources: https://github.com/ServiceNow/webarena-verified ; https://servicenow.github.io/webarena-verified/ ; https://servicenow.github.io/webarena-verified/latest/ .
+- One existing original corrected benchmark dataset/protocol is scoped as source-qualified; verified labels do not certify all remaining tasks as bug-free or authorize access to live third-party websites. No container/browser runs, protected trace viewing, model score reproduction, comprehensive rights/security/legal audit, complete schema/cache/CI/render, clean or final gate.
