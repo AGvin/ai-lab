@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:ccf54b6096bcf2ae7f986950fd6437ca65edf651
+      entity.yml: gitblob:ef930d2825d5b8b1e5b134e57f49e0504e4f975b
     parent:
       entity.yml: gitblob:92e500a60a99e6637b9c4aa24e3634cb4d2360f9
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
@@ -60,7 +60,7 @@ cache:
           purposes:
           - research
           authority: official
-        - type: api
+        - type: documentation
           source:
             url: https://api.bfl.ai/docs
           purposes:

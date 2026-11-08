@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f2e9b8ffc4e9e38b60802fc9ee061fd9681ae277
+      entity.yml: gitblob:a615fb7d13027782884fd860fccbeaaf8c96ac73
     parent:
       entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
   state:
@@ -46,7 +46,7 @@ cache:
         type: dataset
         name: TruthfulQA
         aliases:
-        - TruthfulQA: Measuring How Models Mimic Human Falsehoods
+        - 'TruthfulQA: Measuring How Models Mimic Human Falsehoods'
         identity_note: Published research question-and-reference-answer dataset developed
           by Stephanie Lin, Jacob Hilton and Owain Evans to test common human misconceptions.
           The revised January 2025 binary multiple-choice protocol is a setting of
