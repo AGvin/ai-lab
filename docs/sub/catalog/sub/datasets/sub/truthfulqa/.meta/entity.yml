@@ -3,7 +3,7 @@ entity:
   type: dataset
   name: TruthfulQA
   aliases:
-    - TruthfulQA: Measuring How Models Mimic Human Falsehoods
+    - "TruthfulQA: Measuring How Models Mimic Human Falsehoods"
   identity_note: >-
     Published research question-and-reference-answer dataset developed by Stephanie Lin,
     Jacob Hilton and Owain Evans to test common human misconceptions. The revised
