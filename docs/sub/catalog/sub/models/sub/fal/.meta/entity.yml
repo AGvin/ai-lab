@@ -20,4 +20,11 @@ entity:
     - identification
     - research
     authority: official
+  - type: documentation
+    source:
+      url: https://blog.fal.ai/introducing-h3-max-by-fal/
+    purposes:
+    - identification
+    - research
+    authority: official
   relations: []

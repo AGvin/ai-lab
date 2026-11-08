@@ -7,4 +7,4 @@
 
 ## Identity and boundaries
 
-The represented model is FLUX 3 Max, post-trained by fal Research in collaboration with BFL. Follow its exact profile for provenance and access boundaries. This is not a complete fal research inventory or a hosted-provider comparison.
+Current children are FLUX 3 Max (post-trained from FLUX 3 Video with BFL collaboration) and H3 Max (post-trained from the MiniMax H3 family by fal Research). Do not collapse upstream families, the hosted API namespaced endpoints, vendor speed claims and separately trained models. Each reader must preserve release, lineage, legal/rights and current provider-operation boundaries.
