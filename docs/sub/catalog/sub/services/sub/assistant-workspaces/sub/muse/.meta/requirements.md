@@ -20,8 +20,10 @@
 - Roadmap features such as Confidential VM or future client/integration availability are not presented as already released.
 - Hosted execution/security claims stay tied to current Meta documentation rather than generalized to all personal agents.
 
-## Scoped original-source qualification — 2026-11-07
+## Scoped original-source qualification — 2026-11-08
 
-- Muse is cataloged as a Meta-operated hosted agent service distinct from the Meta AI assistant and model family. Background tasks, VM isolation and connected-app approvals are feature claims requiring freshness-sensitive primary-source validation.
-- First-party umbrella service surface: https://www.meta.ai/
-- The umbrella URL alone does not independently verify the specific product launch, lifecycle or architecture; these remain pending primary-source validation. No source gate is claimed until a direct product-specific official source is documented.
+- **Muse** is Meta's separately published personal hosted AI agent introduced **September 8, 2026**, distinct from Meta AI assistant and the Muse Spark model. Meta's original launch describes a **dedicated Muse Secure VM**, browser, connected tools and background task continuation after clients close, with rollout in the US on iOS, Android and web at launch.
+- Meta's independent in-depth engineering disclosure states that an isolated agent runtime cell is separated from credential and privileged connector workers; **Sentinel mediates network egress and connected-app actions**, with narrowly scoped approvals, audit trails and separate credential storage. These are **vendor design and enforcement claims**, not proof of absolute attack resistance, independent security validation or absence of agent mistakes.
+- As of the launch publication, Confidential VM, additional payment/login integrations and AI-glasses support were presented as upcoming and must not be silently described as GA. Current pricing, app/region eligibility, user data processing, opt-out/training controls, memory and connected account permissions require rechecking for a particular deployment.
+- First-party original product and security sources: https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/ ; https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse .
+- Scoped original-source acceptance qualifies one already materialized hosted service, original publisher, launch, deployment and permission-risk boundaries. No live Muse session, user records or credentials touched, independent safety/privacy/legal audit, full source freshness, global schema/cache/CI/render, clean or final gates.
