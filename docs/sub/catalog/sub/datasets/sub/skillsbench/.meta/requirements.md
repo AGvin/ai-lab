@@ -17,3 +17,10 @@
 - Reciprocal `catalog/producers/b/benchflow` relations and reader navigation resolve.
 - Tagged 87-task `v1.1` release is not confused with the 86-task paper launch, untagged mainline work, optional `tasks-extra`, or evaluator framework.
 - Licensing, execution, provenance and score-comparison limitations remain visible; full benchmark/runtime/global checks are not inferred.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **SkillsBench** is the BenchFlow publisher's original benchmark dataset measuring how provisioned Agent Skills affect task outcomes. The **2026 February paper-v1** reports **86 tasks**, whereas the publicly tagged **v1.1** release has **87 active native BenchFlow tasks** across eight categories; `tasks-extra/` is excluded from the scored release.
+- The released v1.1 task manifest, digest pins and BenchFlow `>=0.6.3,<0.7` compatibility are source- and version-specific. Existing publisher metadata records differing historic task-commit references (`55bfe693` versus `b63b7b2`); do not claim bytewise parity or mix different registries, models, skills-on/off scaffolds or leaderboard revisions. Root Apache-2.0 declarations do not establish permissions for every embedded third-party artifact.
+- First-party sources: https://github.com/benchflow-ai/skillsbench ; https://github.com/benchflow-ai/skillsbench/releases/tag/v1.1 ; https://www.skillsbench.ai/tasks .
+- Qualification covers one existing public benchmark source/version only, not a new dataset, evaluated model, framework, simulation, comprehensive rights/security/legal review, whole-repo CI/render, clean or final gate.
