@@ -6,6 +6,8 @@
 - Preserve stable versus preview release channels and do not generalize preview skill state to the stable collection.
 - Keep Alibaba Cloud services, Qwen models, MCP servers, CLI tools, and individual skill contents separate from the collection identity unless independently materialized.
 - Treat exact skill inventory, stable/preview versions, installation commands, supported agents, repository layout, and product coverage as freshness-sensitive.
+- The reader must state the unresolved first-party license conflict (Apache-2.0 in the README License section versus MIT in its Legal section) and absence of a root LICENSE at the pinned inspected revision; do not imply blanket redistribution/commercial reuse permission or resolve legal ambiguity by selecting one claim. Require direct publisher clarification and per-skill/dependency review before license-sensitive reuse.
+- Put the credentials/operational-risk warning alongside installation guidance: AccessKeys and Aliyun CLI profile credentials are described upstream for local personal testing only, while cloud deployment is recommended to use ECS RAM role credentials. Do not place cloud keys into chat, committed files or untrusted skill outputs, and require least-privilege permission review before executing cloud-mutating instructions.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
 ## Validation
