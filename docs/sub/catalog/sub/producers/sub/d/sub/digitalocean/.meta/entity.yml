@@ -20,7 +20,7 @@ entity:
         url: https://www.digitalocean.com/legal/terms-of-service-agreement
       purposes: [identification, research]
       authority: official
-      note: Terms updated July 20, 2026: only DigitalOcean, LLC is a party, subject to any separately negotiated agreement.
+      note: "Terms updated July 20, 2026: only DigitalOcean, LLC is a party, subject to any separately negotiated agreement."
     - type: documentation
       source:
         url: https://docs.digitalocean.com/products/inference/
