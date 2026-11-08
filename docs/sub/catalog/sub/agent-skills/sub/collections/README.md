@@ -8,9 +8,11 @@ Selected repositories and coordinated bundles that publish or distribute Agent S
 - [Anthropic Skills](./sub/anthropic-skills/) — Anthropic's public repository of skills for Claude.
 - [Agent Toolkit for AWS Skills](./sub/aws-agent-toolkit-skills/) — the official AWS-supported Agent Skills collection packaged within Agent Toolkit for AWS.
 - [Awesome GitHub Copilot](./sub/awesome-copilot/) — GitHub's community-contributed collection of Agent Skills and other Copilot customization resources.
+- [AWS HCLS Agent Skills](./sub/aws-hcls-agent-skills/) — AWS Labs' healthcare and life-sciences skills; not clinical guidance or independently validated benchmarks.
 - [Azure Agent Skills](./sub/azure-agent-skills/) — the MicrosoftDocs-maintained collection for Azure cloud development.
 - [Cloudflare Skills](./sub/cloudflare-skills/) — Cloudflare's official collection for the Cloudflare Developer Platform and related products.
 - [Composio Awesome Claude Skills](./sub/composio-awesome-claude-skills/) — Composio-maintained, community-contributed Agent Skills directory and repository bundles.
+- [Docker Skills](./sub/docker-skills/) — Docker's official container, Compose, and operations-oriented skill collection.
 - [Google Agent Skills](./sub/google-skills/) — Google's official repository-backed collection for Google products and technologies.
 - [Hugging Face Skills](./sub/hugging-face-skills/) — Hugging Face's official collection for Hub and AI/ML workflows.
 - [JetBrains Skills](./sub/jetbrains-skills/) — JetBrains-curated skills with upstream source attribution and security filtering.
