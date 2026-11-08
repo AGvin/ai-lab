@@ -8,5 +8,6 @@ Versioned normative claims remain tied to authoritative upstream specifications 
 
 - [Formats](./sub/formats/)
 - [Protocols](./sub/protocols/)
+- [Schemas](./sub/schemas/)
 - [Semantic conventions](./sub/semantic-conventions/)
 - [Standards](./sub/standards/)

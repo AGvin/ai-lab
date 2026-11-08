@@ -24,3 +24,8 @@
 - Verified first-party source 2: https://docs.agntcy.org/oasf/oasf-server/
 - Verified first-party source 3: https://github.com/agntcy/oasf
 - Existing schema identity/source acceptance only; no agent registry instance, schema validation, end-to-end transport, runtime security audit, whole-repository clean pass or final gate. Existing reader page is absent and has no repair credit.
+
+## Scoped published-schema check — 2026-11-08
+
+- The official AGNTCY OASF repository currently lists a tagged **v1.1.0** release; the published release distinguishes schema artifacts from patch-level image builds and the separately deployed OASF server. [Upstream releases](https://github.com/agntcy/oasf/releases).
+- Current schema fields, taxonomy and compatibility must be pinned to a selected release; this bounded tag/source check is not a complete freshness audit, a schema-validation run, or an independent verification of any hosted agent description.
