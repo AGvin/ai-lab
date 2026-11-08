@@ -7,3 +7,4 @@ Installable or fully self-managed gateway products remain under the software cat
 ## Child pages
 
 - [Model Gateway Services](./sub/model-gateways/)
+- [Perplexity Agent API](./sub/perplexity-agent-api/)
