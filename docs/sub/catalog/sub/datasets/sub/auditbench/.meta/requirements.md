@@ -13,3 +13,10 @@
 - AuditBench is represented as a concrete benchmark/dataset identity rather than a generic alignment-auditing concept.
 - The benchmark is not conflated with the investigator agent or with the hidden-behavior model collection as separate software/model products.
 - Quantitative claims remain scoped to the released benchmark revision and evaluation setup.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **AuditBench** is Anthropic's original **2026-03-10** release for assessing investigator-agent performance in alignment audits, with **56 deliberately fine-tuned target language models representing 14 hidden-behavior categories**. The target model checkpoints, implanted hidden behavior types, auditor tool configurations and evaluator are components of this one benchmark/testbed, not 56 independent AI Lab dataset identities or evidence of widespread real-world hidden behavior.
+- The original research separately compares investigator tools across **13 evaluation tool configurations**, with black-box prompt generation, controlled tests and white-box interpretability surfaces. Publisher results depend on the injected target model, audit agent, generated test prompts and grading rubric; detected behavior is not proof that a commercial production model exhibits the same hidden tendencies or that an auditor can guarantee disclosure.
+- First-party sources: https://alignment.anthropic.com/2026/auditbench/ ; https://arxiv.org/abs/2602.22755 .
+- Scoped source gate covers the existing research benchmark's original publisher, 56/14/13 evaluation scope and methodological limits only; no trained checkpoints downloaded or audited, executable evaluator run, independent model-risk assurance, full redistribution/legal/security/privacy review, missing reader reconstruction, global CI/render, clean or final credit.
