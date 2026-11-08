@@ -9,7 +9,7 @@
 - When mentioning non-selected Superpowers skills, do so only when needed to explain a workflow dependency, installation boundary, or comparison; their presence in the upstream collection does not by itself select them as local catalog entities.
 - Preserve the current collection-level basic workflow as a methodology sequence, not as a requirement to materialize every participating skill as its own catalog node: `brainstorming` -> `using-git-worktrees` -> `writing-plans` -> `subagent-driven-development` or `executing-plans` -> `test-driven-development` -> `requesting-code-review` -> `finishing-a-development-branch`.
 - Explain that installation is harness-specific and that users operating more than one supported harness install/configure Superpowers separately for each one. Treat concrete marketplace/CLI commands as freshness-sensitive upstream facts rather than timeless AI Lab instructions.
-- Brainstorming must reflect the current upstream Spike, Bounded, and Architectural paths and the implementation approval gate. Do not preserve the stale RC implication that every task always transitions to Writing Plans; only the architectural path requires that transition.
+- Brainstorming must reflect current upstream intent discovery, approach selection, short designs for small changes versus full designs for projects, and approval of either design before planned implementation. Separately scope user opt-outs and agreed throwaway spikes; do not preserve the obsolete Spike/Bounded/Architectural classification or imply that only one path uses Writing Plans.
 - Writing Plans converts an approved specification or multi-step requirements into a detailed implementation plan and hands execution to the appropriate Superpowers execution workflow.
 - Test-Driven Development enforces a red-green-refactor cycle with a failing test before implementation code for behavior changes covered by that workflow.
 - Systematic Debugging requires root-cause investigation before fixes and, during implementation, delegates the fix loop to Test-Driven Development and requires Verification Before Completion before success claims.
@@ -28,7 +28,7 @@
 
 ```text
 brainstorming
-└── architectural path after approval -> writing-plans
+└── approved short or full design -> writing-plans
 
 systematic-debugging
 ├── fix implementation -> test-driven-development
@@ -38,12 +38,17 @@ systematic-debugging
 ## Validation
 
 - All five selected skills are represented exactly once.
-- Brainstorming behavior matches the current upstream three-path contract.
+- Brainstorming behavior matches the current upstream short/full design contract and its expressly scoped opt-out and throwaway-spike exceptions.
 - The collection-level basic workflow includes the current upstream sequencing without converting non-selected workflow participants into standalone AI Lab skill entities.
 - Harness-specific installation wording is freshness-bound to upstream rather than copied as permanent command truth.
 - Dependency wording distinguishes workflow transitions from hard runtime dependencies.
 - The page does not present a copied point-in-time list as the complete current Superpowers inventory; current full inventory is delegated to the official repository.
 - No selected skill is linked as a local standalone catalog node.
+
+## Source reconciliation — 2026-11-08
+
+- Rechecked [the original Brainstorming skill at pinned Superpowers revision](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/brainstorming/SKILL.md) and [the original repository workflow](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/README.md). The local three-path wording was an inaccurate reading of the same pinned source, not an independently established upstream change.
+- The upstream skill distinguishes a short versus full design by scope, with design approval before planned implementation. It separately permits agreed exploratory spikes and explicit opt-outs. This corrects one bounded source-interpretation defect; it is not a full collection freshness, dependency or security audit.
 
 ## Scoped source interpretation — 2026-11-05
 

@@ -20,7 +20,7 @@ Superpowers is a software-development methodology for coding agents built from c
 
 ### Brainstorming
 
-Brainstorming classifies work into Spike, Bounded, or Architectural paths and keeps an explicit approval gate before implementation. The Architectural path continues to a written specification and Writing Plans; the lighter paths do not automatically require that same transition.
+Brainstorming explores the user's intent and alternative approaches, then scales the design to a short document for small changes or a full document for projects. Planned implementation follows approval of that design and then Writing Plans. Explicit user opt-outs and agreed throwaway exploratory spikes are separately scoped exceptions.
 
 ### Writing Plans
 
@@ -42,7 +42,7 @@ Verification Before Completion requires running the command, test, diff, or othe
 
 ```text
 brainstorming
-└── architectural path after approval -> writing-plans
+└── approved short or full design -> writing-plans
 
 systematic-debugging
 ├── fix implementation -> test-driven-development
