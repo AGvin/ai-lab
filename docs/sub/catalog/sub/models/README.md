@@ -13,6 +13,7 @@ Task comparisons, recommendations and hardware-fit decisions are separate from i
 - [anthropic](./sub/anthropic/)
 - [baidu](./sub/baidu/)
 - [black forest labs](./sub/black-forest-labs/)
+- [ByteDance Seed Models](./sub/bytedance/)
 - [cloudflare](./sub/cloudflare/)
 - [cohere](./sub/cohere/)
 - [cohere labs](./sub/cohere-labs/)

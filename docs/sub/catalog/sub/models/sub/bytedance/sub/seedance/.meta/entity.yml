@@ -1,0 +1,25 @@
+entity:
+  id: catalog/models/bytedance/seedance
+  type: model-family
+  name: Seedance
+  identity_note: >-
+    ByteDance Seed's video-generation model family with joint audiovisual
+    generation. Released Seedance 2.5 is a named model in this family; the
+    family is distinct from Seedream image models, Dreamina/Jimeng applications,
+    Doubao and hosted API endpoint identities.
+  references:
+    - type: official-site
+      source:
+        url: https://seed.bytedance.com/en/models
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/bytedance-seed
+    - type: has-member
+      target: catalog/models/bytedance/seedance/models/seedance-2-5

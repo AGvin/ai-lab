@@ -20,3 +20,5 @@ entity:
   relations:
     - type: produces
       target: catalog/models/bytedance/seedream
+    - type: produces
+      target: catalog/models/bytedance/seedance
