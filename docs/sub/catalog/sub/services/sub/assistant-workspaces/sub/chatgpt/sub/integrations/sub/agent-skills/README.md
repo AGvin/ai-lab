@@ -10,4 +10,4 @@ User-provided skills, OpenAI-provided skills, and other ChatGPT extension mechan
 
 ## Official resource
 
-- [Skills in ChatGPT](https://help.openai.com/en/articles/20001069-skills-in-chatgpt)
+- [Skills in ChatGPT](https://help.openai.com/en/articles/20001066-skills-in-chatgpt)
