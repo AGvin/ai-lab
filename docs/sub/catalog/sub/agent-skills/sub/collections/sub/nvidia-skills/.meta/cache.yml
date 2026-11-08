@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:25eda345020d9ac5d4b5989c0676de5de77642a3
+      entity.yml: gitblob:64bb74c64dd05424fac9185425886bf79b9f3444
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -67,21 +67,21 @@ cache:
           authority: official
         - type: documentation
           source:
-            url: https://github.com/NVIDIA/skills/blob/fc38e7248fff9e958ed3c17f5dc79808b3348d4f/README.md
+            url: https://github.com/NVIDIA/skills/blob/fce3cca4170be75e82c64920654d56ee2811b005/README.md
           purposes:
           - identification
           - research
           authority: official
         - type: documentation
           source:
-            url: https://github.com/NVIDIA/skills/blob/fc38e7248fff9e958ed3c17f5dc79808b3348d4f/LICENSE-APACHE
+            url: https://github.com/NVIDIA/skills/blob/fce3cca4170be75e82c64920654d56ee2811b005/LICENSE-APACHE
           purposes:
           - identification
           - research
           authority: official
         - type: documentation
           source:
-            url: https://github.com/NVIDIA/skills/blob/fc38e7248fff9e958ed3c17f5dc79808b3348d4f/LICENSE-CC-BY-4.0
+            url: https://github.com/NVIDIA/skills/blob/fce3cca4170be75e82c64920654d56ee2811b005/LICENSE-CC-BY-4.0
           purposes:
           - identification
           - research

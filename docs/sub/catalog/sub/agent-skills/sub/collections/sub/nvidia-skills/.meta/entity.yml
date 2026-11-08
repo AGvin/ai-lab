@@ -20,17 +20,17 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://github.com/NVIDIA/skills/blob/fc38e7248fff9e958ed3c17f5dc79808b3348d4f/README.md
+        url: https://github.com/NVIDIA/skills/blob/fce3cca4170be75e82c64920654d56ee2811b005/README.md
       purposes: [identification, research]
       authority: official
     - type: documentation
       source:
-        url: https://github.com/NVIDIA/skills/blob/fc38e7248fff9e958ed3c17f5dc79808b3348d4f/LICENSE-APACHE
+        url: https://github.com/NVIDIA/skills/blob/fce3cca4170be75e82c64920654d56ee2811b005/LICENSE-APACHE
       purposes: [identification, research]
       authority: official
     - type: documentation
       source:
-        url: https://github.com/NVIDIA/skills/blob/fc38e7248fff9e958ed3c17f5dc79808b3348d4f/LICENSE-CC-BY-4.0
+        url: https://github.com/NVIDIA/skills/blob/fce3cca4170be75e82c64920654d56ee2811b005/LICENSE-CC-BY-4.0
       purposes: [identification, research]
       authority: official
   relations:
