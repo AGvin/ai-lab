@@ -22,7 +22,7 @@ entity:
     purposes:
     - research
     authority: official
-  - type: api
+  - type: documentation
     source:
       url: https://api.bfl.ai/docs
     purposes:
