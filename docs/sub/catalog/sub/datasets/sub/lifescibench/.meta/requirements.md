@@ -17,3 +17,10 @@
 - LifeSciBench is represented as a concrete benchmark/dataset identity, not as a generic life-science evaluation concept.
 - OpenAI provenance resolves bidirectionally.
 - Benchmark-specific quantitative claims remain scoped to the documented revision and evaluation setup.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **LifeSciBench** is OpenAI's original **July 2026** expert-curated evaluation for realistic applied life-science research work: **750 tasks** across **seven workflow categories and seven biological domains**, with **1,062 attached task artifacts**, **19,020 scored rubric criteria**, and documented contributions from **173 scientists and 453 expert reviewers**. Scientific prompts, expert rubrics, attachments, response graders and evaluated models form different surfaces of one benchmark identity.
+- The seven workflow categories span evidence handling, analysis, design/optimization, scientific reasoning, validation/operations, translation and scientific communication. Supporting images, papers, tables, structure files and web sources may carry separate copyright, privacy, model-output and publication limits. Expert-authored tasks do not prove models can carry out independent wet-lab research, drug discovery, or clinical intervention safely.
+- First-party publisher source: https://openai.com/index/introducing-life-sci-bench/ .
+- Source gate qualifies one existing task-based benchmark identity, released 750/7/7 scope and artifact/rubric construction boundaries only. No benchmark/model execution, complete attached-resource rights/security/legal/freshness audit, reader repair, whole-repository schema/cache/CI/render, clean or final credit.
