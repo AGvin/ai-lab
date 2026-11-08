@@ -18,3 +18,10 @@
 - One canonical dataset `catalog/datasets/deepsearchqa`; no duplicate full 900-question dataset identity, hosted service or software entity credit.
 - Ensure dataset index, existing Google DeepMind reader and both current-node metadata files resolve to canonical paths, with the reciprocal producer graph relation and link checked.
 - Verify the six changed catalog paths with exact branch readbacks and commit diff; full eight-root clean research cycles, current-HEAD repository schema/cache/CI and final reader render remain unfinished.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **DeepSearchQA** is Google DeepMind's independently released **December 2025**, **900-prompt** benchmark of exhaustive multi-step web research across **17 topical fields**; its open-web causal-chain search tasks and answer-set grading differ from closed-book fact recall or Google's hosted research agent.
+- Public Google dataset metadata defines the `DSQA-full.csv`/`eval` distribution and answer-type labels, but the latter are not available as hints to the evaluated agent. Outcome precision/recall, Gemini autorater prompt, tool access, dataset revision and the historical web state are all evaluation-specific. Google Hub Apache-2.0 metadata does not grant rights to all cited external web material or verify the evolving Kaggle leaderboard.
+- First-party sources: https://deepmind.google/research/evals/ ; https://huggingface.co/datasets/google/deepsearchqa ; https://blog.google/innovation-and-ai/technology/developers-tools/deep-research-agent-gemini-api/ .
+- Scoped source acceptance covers one already materialized official original benchmark and its access/scoring boundary, not a new model/service, actual web-agent run, rights/privacy/security/legal audit, global schema/cache/CI/render, clean or final gate.
