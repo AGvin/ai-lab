@@ -1,6 +1,6 @@
 # DeepSeek API
 
-DeepSeek API is DeepSeek's directly hosted developer/model-access service. It exposes current DeepSeek model releases through documented chat and compatible developer interfaces, separate from the consumer [DeepSeek assistant](../../assistant-workspaces/sub/deepseek/). [Official developer documentation](https://api-docs.deepseek.com/).
+DeepSeek API is DeepSeek's directly hosted developer/model-access service. It exposes current DeepSeek model releases through documented chat and compatible developer interfaces, separate from the consumer [DeepSeek assistant](../../../assistant-workspaces/sub/deepseek/). [Official developer documentation](https://api-docs.deepseek.com/).
 
 ## Interfaces and identity boundaries
 
