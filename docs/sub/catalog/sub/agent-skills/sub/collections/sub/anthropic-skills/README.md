@@ -39,9 +39,9 @@ Anthropic's repository exposes the document skills through its `document-skills`
 
 ## Source interpretation
 
-Anthropic's public collection contains illustrative skills and service-governed document implementations. The four document LICENSE.txt files use Anthropic agreement terms with additional restrictions on extraction, copying, derivative works and redistribution; they are not Apache-2.0 examples. Check the selected path and applicable agreement. Examples and hosted Claude behavior can differ.
+Anthropic's public collection includes illustrative examples and the selected DOCX, PDF, PPTX and XLSX document skills. At upstream revision 2c5958ecac7cee2b583967a2c4981d0f4a75c579, each selected skill's LICENSE.txt contains Apache-2.0 terms; an earlier reviewed revision carried Anthropic agreement restrictions. This is source- and revision-specific; bundled dependencies, assets and hosted Claude service terms may differ. No skill was installed or executed.
 
-[Reviewed original README](https://github.com/anthropics/skills/blob/ca45fc496a3436251f191354091d557da31c15b5/README.md). Licensing is scoped to the inspected distribution; no skill or script was installed or executed. This is not a full collection freshness audit.
+[Reviewed original README](https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/README.md) and the corresponding [DOCX](https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/docx/LICENSE.txt), [PDF](https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pdf/LICENSE.txt), [PPTX](https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pptx/LICENSE.txt), and [XLSX](https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/xlsx/LICENSE.txt) license files. The earlier revision used different terms; license claims are revision-specific. This is not a full collection freshness, rights or runtime audit.
 
 ## Official resources
 
