@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:27e1314c617a652130bd82be9c9b51f250526391
+      entity.yml: gitblob:47cae7a000d6b14a3591b74bc59aa1f724183e35
     parent:
       entity.yml: gitblob:73f36b097a441f8dbd4cc911bad962de0249dc79
   state:
@@ -64,6 +64,8 @@ cache:
           target: catalog/producers/m/meta
         - type: has-member
           target: catalog/models/meta/llama/llama-4
+        - type: has-member
+          target: catalog/models/meta/llama/llama-3-3-70b-instruct
     aliases:
       effective:
         schema: default

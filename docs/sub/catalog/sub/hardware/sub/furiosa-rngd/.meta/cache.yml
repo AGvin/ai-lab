@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f8e04871cc168a5a44c042745c7f468d87040501
+      entity.yml: gitblob:e92270b2d033c3b384d4332658d0b1567bfad16a
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,12 @@ cache:
         id: catalog/hardware/furiosa-rngd
         type: hardware-product
         name: FuriosaAI RNGD
+        identity_note: FuriosaAI RNGD is a 48 GB HBM3 PCIe Gen5 x16 inference NPU
+          built around a Tensor Contraction Processor. Official 2026 developer documentation
+          states a 150 W TDP, while Furiosa's product specification page states 180
+          W; treat this discrepancy as unresolved for host cooling and power budgeting.
+          INT4/INT8 peak figures and SR-IOV capability are vendor specifications,
+          not independent inference throughput.
         aliases:
         - RNGD
         references:
@@ -58,6 +64,12 @@ cache:
         - type: documentation
           source:
             url: https://developer.furiosa.ai/latest/en/overview/rngd.html
+          purposes:
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://furiosa.ai/renegade-spec
           purposes:
           - research
           authority: official

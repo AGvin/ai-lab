@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:42812d6127c5cd83a3525539105c82775e073dcd
+      entity.yml: gitblob:2b4a69f3cb7108b7f03f17e5e07198b76df046fc
     parent:
       entity.yml: gitblob:d41de55a71edf0a12d91380498e3ae3e5221c1fb
   state:
@@ -74,6 +74,13 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/deprecations
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/c/cohere
@@ -81,6 +88,20 @@ cache:
           target: catalog/models/cohere/rerank/models/rerank-v4-0-pro
         - type: has-member
           target: catalog/models/cohere/rerank/models/rerank-v4-0-fast
+        - type: has-member
+          target: catalog/models/cohere/rerank/models/rerank-v5-0-pro
+        - type: has-member
+          target: catalog/models/cohere/rerank/models/rerank-v5-0-fast
+        - type: has-member
+          target: catalog/models/cohere/rerank/models/rerank-v3-5
+        - type: has-member
+          target: catalog/models/cohere/rerank/models/rerank-english-v3-0
+        - type: has-member
+          target: catalog/models/cohere/rerank/models/rerank-multilingual-v3-0
+        - type: has-member
+          target: catalog/models/cohere/rerank/models/rerank-english-v2-0
+        - type: has-member
+          target: catalog/models/cohere/rerank/models/rerank-multilingual-v2-0
     aliases:
       effective:
         schema: default

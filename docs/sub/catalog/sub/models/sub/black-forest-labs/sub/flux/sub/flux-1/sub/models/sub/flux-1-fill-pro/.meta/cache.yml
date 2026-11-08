@@ -1,0 +1,98 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:ccf54b6096bcf2ae7f986950fd6437ca65edf651
+    parent:
+      entity.yml: gitblob:92e500a60a99e6637b9c4aa24e3634cb4d2360f9
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-fill-pro
+        type: model
+        name: FLUX.1 Fill [pro]
+        references:
+        - type: documentation
+          source:
+            url: https://bfl.ai/blog/24-11-21-tools
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://help.bfl.ai/articles/7655484417-what-flux-models-are-available
+          purposes:
+          - research
+          authority: official
+        - type: api
+          source:
+            url: https://api.bfl.ai/docs
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/black-forest-labs/flux/flux-1
+        identity_note: FLUX.1 Fill [pro] is a separately offered BFL-hosted image
+          inpainting and outpainting model introduced with FLUX.1 Tools in November
+          2024. It accepts text, an input image and a binary mask through the /v1/flux-pro-1.0-fill
+          hosted route. It is not the separately released gated FLUX.1 Fill [dev]
+          weight checkpoint or a general FLUX1.1 text-to-image serving mode. The API
+          endpoint does not establish a public model checkpoint, model-size, train-parent
+          relationship or rights to run weights locally. Deprecated Canny/Depth endpoints
+          are distinct; the BFL deprecation notice explicitly excludes Fill.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

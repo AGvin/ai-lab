@@ -1,0 +1,97 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:099c9dcacd64e9ee61b7cc81cffa7e6364f5a607
+    parent:
+      entity.yml: gitblob:1cd1f38f133d08c589f3cc8a2cd713415631b04a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/sarvam-ai/sarvam-vision/sarvam-vision-2-1
+        type: model
+        name: Sarvam Vision 2.1
+        identity_note: Sarvam's publisher model catalog separately names Sarvam Vision
+          2.1 for document intelligence, including complex tables, key-value extraction
+          and handwritten Indian-language text. It is distinct from the Document AI
+          hosted product and from the general Sarvam chat family. The linked API guide
+          describes Sarvam Vision generically and does not identify an exact 2.1 selector;
+          do not promise version pinning, inherit an older Vision parameter count,
+          or infer downloadable weights/licensing from this listing. Process only
+          authorized documents with approved hosted data controls. Verify OCR, extracted
+          values and table structure against source documents before downstream actions,
+          especially for consequential records. Confirm the exact served version and
+          contract before evaluation or integration; no document/API execution was
+          performed. Ownership/control-chain review is pending; no Russian-control
+          assertion or adoption clearance.
+        references:
+        - type: documentation
+          source:
+            url: https://www.sarvam.ai/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.sarvam.ai/api/api-guides-tutorials/models/sarvam-vision
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/sarvam-ai/sarvam-vision
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

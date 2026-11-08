@@ -2,10 +2,10 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5dd2f97e39d95af63fbb4e94be6f54d0dbe46601
+      entity.yml: gitblob:92e500a60a99e6637b9c4aa24e3634cb4d2360f9
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
     parent:
-      entity.yml: gitblob:c803fa5edbe7fa0b9394c3af6589850fb9e0926f
+      entity.yml: gitblob:d61f331925cf0e194ff717c463381156d0814bb6
   state:
     node:
       effective:
@@ -47,14 +47,22 @@ cache:
         type: catalog-index
         name: FLUX.1 Models
         identity_note: Navigation index for concrete FLUX.1 model records. It currently
-          contains FLUX.1-schnell and has no independent trained weights, serving
-          contract or producer identity.
+          contains FLUX.1-schnell, FLUX.1-dev, FLUX.1 Krea [dev], FLUX.1 Kontext [dev],
+          FLUX.1 Fill [dev] and FLUX.1 Redux [dev], plus hosted FLUX.1 Kontext [pro]/[max],
+          Fill [pro] and FLUX1.1 [pro] (Ultra/Raw are modes), and has no independent
+          trained weights, serving contract or producer identity.
         references:
         - type: documentation
           source:
             url: https://huggingface.co/black-forest-labs/FLUX.1-schnell
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/black-forest-labs/FLUX.1-dev
+          purposes:
           - research
           authority: official
         - type: registry

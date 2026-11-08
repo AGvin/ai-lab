@@ -1,0 +1,113 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:7726c429442c7c7c1ba6a2a312da9a2e81b83c52
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/math
+        type: dataset
+        name: MATH
+        aliases:
+        - Measuring Mathematical Problem Solving With the MATH Dataset
+        identity_note: Original Hendrycks et al. 2021 mathematical-competition question
+          and step-by-step-solution dataset of 12,500 problems (7,500 training and
+          5,000 test). This is distinct from the auxiliary AMPS pretraining data,
+          later OpenAI-selected MATH-500 held-out subset, PRM800K process labels,
+          scoring implementations and transient mirrors. The original research repository
+          is not a full audit of underlying competition-problem rights.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/hendrycks/math
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original research-author repository with dataset loaders, evaluation
+            code and publication attribution.
+        - type: paper
+          source:
+            url: https://arxiv.org/abs/2103.03874
+          purposes:
+          - identification
+          - research
+          authority: upstream
+          note: Original 2021 paper introducing 12,500 problems and worked solutions.
+        - type: repository
+          source:
+            url: https://github.com/hendrycks/math/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+          note: MIT software/documentation repository LICENSE, not a verified grant
+            for every underlying competition problem.
+        - type: repository
+          source:
+            url: https://github.com/openai/prm800k
+          purposes:
+          - research
+          authority: upstream
+          note: Later OpenAI selected 500 of the original MATH test problems; its
+            PRM800K labels are a separate corpus.
+        relations:
+        - type: has-derivative
+          target: catalog/datasets/math-500
+        - type: has-derivative
+          target: catalog/datasets/prm800k
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

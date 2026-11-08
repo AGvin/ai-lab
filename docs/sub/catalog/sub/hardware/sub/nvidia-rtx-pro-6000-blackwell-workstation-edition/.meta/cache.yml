@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f9c6cc4b7563b3a46fa915004eeb3bb3204bad7b
+      entity.yml: gitblob:db19a978478acd20a0d00c70b471b1271722cb64
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,11 @@ cache:
         id: catalog/hardware/nvidia-rtx-pro-6000-blackwell-workstation-edition
         type: hardware
         name: NVIDIA RTX PRO 6000 Blackwell Workstation Edition
+        identity_note: NVIDIA's family table separately lists Server, Workstation
+          and Max-Q Workstation editions. This entry owns the Workstation Edition,
+          listed with 96 GB ECC GDDR7 and 600 W power; the Max-Q column's 300 W is
+          not this edition. Validate exact cooling, chassis, software and partitioning
+          support instead of transferring family marketing to every configuration.
         references:
         - type: product-page
           source:

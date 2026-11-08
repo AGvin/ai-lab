@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f27efbf2843bc81b7773b46b475ac458c6a6b0b4
+      entity.yml: gitblob:6580fcec64490c967e9a340b6f60d69ceb3c595c
     parent:
       entity.yml: gitblob:14d7c5336b98da3ce14bc46c931478ee37a1776d
   state:
@@ -63,6 +63,8 @@ cache:
         relations:
         - type: produces
           target: catalog/services/infrastructure/browserbase
+        - type: produces
+          target: catalog/software/agent-frameworks/stagehand
     aliases:
       effective:
         schema: default

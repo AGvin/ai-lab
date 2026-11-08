@@ -1,0 +1,120 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:8dfea7435599656332efb85f237cad17ae3e7d01
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/hellaswag
+        type: dataset
+        name: HellaSwag
+        aliases:
+        - 'HellaSwag: Can a Machine Really Finish Your Sentence?'
+        identity_note: Historical 2019 adversarially filtered commonsense sentence-completion
+          research dataset associated with Rowan Zellers, Ari Holtzman, Yonatan Bisk,
+          Ali Farhadi and Yejin Choi. Its released English train/validation/test task
+          family draws from ActivityNet and WikiHow. The original GitHub repository
+          currently returns an explicit DMCA access block (HTTP 451) tied to a September
+          2026 wikiHow copyright takedown notice that names rowanz/hellaswag. An accessible
+          third-party distribution does not establish valid upstream data rights;
+          do not recommend copying or redistributing the underlying text until rights
+          are verified.
+        references:
+        - type: paper
+          source:
+            url: https://arxiv.org/abs/1905.07830
+          purposes:
+          - identification
+          - research
+          authority: upstream
+          note: Original 2019 paper describing HellaSwag and adversarial filtering.
+        - type: repository
+          source:
+            url: https://github.com/rowanz/hellaswag
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original research repository; as checked November 1, 2026 GitHub Contents
+            API returned HTTP 451 DMCA access block.
+        - type: registry
+          source:
+            url: https://huggingface.co/datasets/Rowan/hellaswag
+          purposes:
+          - identification
+          - research
+          authority: upstream
+          note: Existing author-named distribution with no explicit dataset license
+            in current Hub metadata; availability is not rights clearance.
+        - type: documentation
+          source:
+            url: https://www.tensorflow.org/datasets/catalog/hellaswag
+          purposes:
+          - research
+          authority: upstream
+          note: Official TensorFlow Datasets catalog documents 39905 train, 10042
+            validation and 10003 test examples and source-specific splits.
+        - type: repository
+          source:
+            url: https://github.com/github/dmca/blob/master/2026/09/2026-09-14-wikihow.md
+          purposes:
+          - research
+          authority: official
+          note: Platform-published 2026 wikiHow takedown notice explicitly lists rowanz/hellaswag;
+            the notice is not a court finding.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

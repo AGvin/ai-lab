@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1a2912cb90d751bdedcf230efb76bb420abb7198
+      entity.yml: gitblob:e2a6dd49c1c3e1ed4fb29d51e83b5f47609fb02a
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,12 @@ cache:
         id: catalog/hardware/nvidia-jetson-t4000
         type: hardware
         name: NVIDIA Jetson T4000
+        identity_note: NVIDIA Jetson T4000 is a released Blackwell-based 64 GB LPDDR5X
+          production module, not the T5000 or a complete Jetson AGX Thor Developer
+          Kit. NVIDIA lists 273 GB/s memory bandwidth, configurable 40-70 W module
+          power, January 2026 availability and lifecycle through January 2036. An
+          embedded system needs its own carrier, cooling, storage, drivers and real
+          robotics inference validation; peak FP4 compute figures are precision/implementation-dependent.
         references:
         - type: article
           source:

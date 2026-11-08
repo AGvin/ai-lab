@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:0f40624c405b862bbc04fe82d92c9790815ff2f3
+      entity.yml: gitblob:74438700e15b630411b845dedf056a192ab3fcad
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -48,6 +48,12 @@ cache:
         aliases:
         - NVIDIA L40S
         - L40S
+        identity_note: NVIDIA identifies the L40S data-center GPU and advertises 48
+          GB memory, separate from the L4 and active workstation RTX 6000 Ada. Keep
+          the physical device, virtualization software and cloud instances separate.
+          Server airflow, board power, runtime and workload overhead must be checked;
+          physical memory capacity does not establish model fit or transparent multi-card
+          pooling.
         references:
         - type: product-page
           source:

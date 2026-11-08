@@ -1,0 +1,92 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:9bf25a59d617292eddf10813440a1ca0f9b349f6
+    parent:
+      entity.yml: gitblob:078df982290669ad33d8a7a39b2ec27085ce115b
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/lg-ai-research/exaone/exaone-4-5-33b
+        type: model
+        name: EXAONE 4.5 33B
+        identity_note: LG AI Research's April 2026 open-weight vision-language checkpoint
+          combines a language model and visual encoder, reporting approximately 33B
+          total parameters and 262,144-token context. The card names EXAONE AI Model
+          License Agreement 1.2 - NC; this is not MIT/Apache or an unrestricted commercial-use
+          grant. It remains distinct from K-EXAONE 2.0. Review exact license scope
+          before reuse; pin model/processor/runtime revisions and verify document/OCR
+          facts, since images and text can produce erroneous or biased answers. Ownership/control-chain
+          review remains pending; no Russian-control finding or adoption clearance.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.lgresearch.ai/blog/view?seq=641
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/lg-ai-research/exaone
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

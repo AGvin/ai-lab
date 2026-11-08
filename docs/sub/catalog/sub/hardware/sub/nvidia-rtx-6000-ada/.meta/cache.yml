@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a56d9c2440e73024194b0038f3195f44163880bc
+      entity.yml: gitblob:93819c8b65c5f1e43bf0e4272511e042011f467e
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,11 @@ cache:
         id: catalog/hardware/nvidia-rtx-6000-ada
         type: hardware
         name: NVIDIA RTX 6000 Ada Generation
+        identity_note: NVIDIA's product page identifies RTX 6000 Ada Generation as
+          the Ada professional workstation product. It remains distinct from Ampere
+          RTX A6000 and Blackwell RTX PRO 6000 despite similar naming. Validate the
+          exact board, chassis and driver/framework combination; software subscription
+          and virtualization entitlements are separate from purchasing the GPU.
         references:
         - type: product-page
           source:

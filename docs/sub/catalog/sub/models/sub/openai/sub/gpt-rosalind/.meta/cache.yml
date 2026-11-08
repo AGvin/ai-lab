@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:93aa26a42d71913a7ad8804b150b11d5db65fd02
+      entity.yml: gitblob:cacc6fbbe57596a95154b45963e271ab8366d13e
     parent:
       entity.yml: gitblob:3d7d9cfcd6ab81400d81e2468c33e9b2babb1ba5
   state:
@@ -76,6 +76,8 @@ cache:
           target: catalog/producers/o/openai
         - type: has-member
           target: catalog/models/openai/gpt-rosalind/models/gpt-rosalind-5-5
+        - type: has-member
+          target: catalog/models/openai/gpt-rosalind/models/gpt-6-rosalind
         identity_note: Life-sciences model family with trusted-access deployment;
           Workbench, plugins, subscriptions, and the latest product route are separate
           concepts.

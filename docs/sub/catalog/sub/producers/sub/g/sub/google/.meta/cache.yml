@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:342a1088cb44ba9a8fa1e87508bae324979e39bf
+      entity.yml: gitblob:959b3a42c93c1bb45662f3d634588ddf2fd43e90
     parent:
       entity.yml: gitblob:b7f05983a5d1c6c223967178283fa7f339514136
   state:
@@ -143,6 +143,10 @@ cache:
           target: catalog/services/model-apis/gemini-api
         - type: produces
           target: catalog/software/model-and-data-platforms/model-development/orbax-checkpoint
+        - type: produces
+          target: catalog/models/google/siglip-2
+        - type: produces
+          target: catalog/datasets/ifeval
     aliases:
       effective:
         schema: default

@@ -1,0 +1,144 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a51c05bdc23fda5f2a7e3a4500ce67f99024ef92
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/spider-2-0
+        type: dataset
+        name: Spider 2.0
+        aliases:
+        - Spider2
+        identity_note: 'The original 2024 Spider 2.0 enterprise text-to-SQL and database
+          workflow benchmark by Fangyu Lei and collaborators, distributed through
+          the original xlang-ai/Spider2 project. Distinct released Lite and Snow evaluation
+          settings each currently list 547 examples in the upstream overview; these
+          settings must not be summed as independent 1,094 questions. A repository-level
+          DBT transformation setting is separately packaged and has conflicting source
+          counts: root overview 68 tasks, child README 69 examples and 70 example
+          directories currently visible. Scored tasks, raw directories and historic
+          released inventories are not interchangeable. Snowflake access is credential-dependent
+          and the 2026 publisher notice reports a Snow service disruption; live access
+          is not independently verified. MIT in the repository LICENSE is not a blanket
+          rights clearance for third-party datasets, databases, warehouse access or
+          hosted query processing.'
+        references:
+        - type: official-site
+          source:
+            url: https://spider2-sql.github.io/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original project and dynamic leaderboard, not immutable scores.
+        - type: repository
+          source:
+            url: https://github.com/xlang-ai/Spider2
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original release documentation and Lite/Snow/DBT setting inventory.
+        - type: repository
+          source:
+            url: https://github.com/xlang-ai/Spider2/tree/main/spider2-lite
+          purposes:
+          - research
+          authority: official
+          note: Current Lite benchmark questions and evaluation suite.
+        - type: repository
+          source:
+            url: https://github.com/xlang-ai/Spider2/tree/main/spider2-snow
+          purposes:
+          - research
+          authority: official
+          note: Snowflake-specific questions and evaluation suite; access subject
+            to current availability.
+        - type: repository
+          source:
+            url: https://github.com/xlang-ai/Spider2/tree/main/spider2-dbt
+          purposes:
+          - research
+          authority: official
+          note: DBT project setting; current root/child/example counts disagree.
+        - type: paper
+          source:
+            url: https://arxiv.org/abs/2411.07763
+          purposes:
+          - identification
+          - research
+          authority: upstream
+          note: Original 2024 paper on real-world enterprise text-to-SQL workflows.
+        - type: repository
+          source:
+            url: https://github.com/xlang-ai/Spider2/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+          note: MIT repository software grant; not independent license for all database
+            contents.
+        - type: documentation
+          source:
+            url: https://github.com/xlang-ai/Spider2/blob/main/assets/Snowflake_Guideline.md
+          purposes:
+          - research
+          authority: official
+          note: Authenticated Snowflake access and MFA; current reliability is separately
+            unverified.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

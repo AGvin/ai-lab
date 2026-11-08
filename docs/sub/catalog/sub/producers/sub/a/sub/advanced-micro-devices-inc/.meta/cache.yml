@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:dc4a814fc9856942800668063215886b83f88f3a
+      entity.yml: gitblob:751e8e3e950afbd2e68456229e336cfdea515cfe
     parent:
       entity.yml: gitblob:fc5fe64d0b27cacd4681717d768ab7190f4db458
   state:
@@ -92,6 +92,8 @@ cache:
         - type: produces
           target: catalog/hardware/amd-ryzen-ai-max-plus-395
         - type: produces
+          target: catalog/hardware/amd-ryzen-ai-max-plus-pro-495
+        - type: produces
           target: catalog/hardware/amd-ryzen-ai-halo-developer-platform
         - type: produces
           target: catalog/hardware/amd-radeon-rx-7900-xtx
@@ -103,6 +105,12 @@ cache:
           target: catalog/hardware/amd-instinct-mi300x
         - type: produces
           target: catalog/hardware/amd-instinct-mi300a
+        - type: produces
+          target: catalog/hardware/amd-radeon-pro-w7900
+        - type: produces
+          target: catalog/hardware/amd-instinct-mi210
+        - type: produces
+          target: catalog/hardware/amd-radeon-pro-w7800
     aliases:
       effective:
         schema: default

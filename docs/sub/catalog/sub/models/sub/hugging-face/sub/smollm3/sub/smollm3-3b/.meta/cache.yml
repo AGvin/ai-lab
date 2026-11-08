@@ -1,0 +1,96 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bb6f158993fe79a1efa18f90e4d7b212f01663c0
+    parent:
+      entity.yml: gitblob:026a4733005057825b8b32fd1aa5be7fa11a354a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/hugging-face/smollm3/smollm3-3b
+        type: model
+        name: SmolLM3-3B
+        identity_note: Hugging Face's Smol Models Research team publishes this 3B
+          instruction/reasoning checkpoint separately from SmolLM3-3B-Base. The card
+          declares Apache-2.0, six natively supported languages and decoder-only GQA/NoPE.
+          It distinguishes trained 64K context from up-to-128K YaRN extrapolation;
+          think/no-think controls are modes of one checkpoint, not extra trained-model
+          identities. Pin the revision and validate chat/reasoning-mode controls for
+          the selected runtime. Extended context is not independently validated here.
+          Isolate tool calls and generated code, and verify output facts. Existing
+          corporate-transition notes are not an ownership-clearance finding. Publisher
+          capability/benchmark claims were not independently reproduced. Ownership/control-chain
+          review is incomplete; no Russian-control finding or adoption clearance is
+          established.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/main/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/hugging-face/smollm3
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3fbfe4323da9c1bdc90ae0eda959cbfb626d8232
+      entity.yml: gitblob:c22fae873f6e581dd90c224c461d0cf13ededbc2
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -110,6 +110,41 @@ cache:
           - identification
           - research
           authority: official
+        - type: article
+          source:
+            url: https://cohere.com/blog/building-multilingual-bridges
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/tiny-aya-base
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/tiny-aya-base-32K
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/tiny-aya-l2-thinker
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/tiny-aya-en-thinker
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/models/cohere/command
@@ -139,6 +174,14 @@ cache:
           target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-fire
         - type: produces
           target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-water
+        - type: produces
+          target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-base
+        - type: produces
+          target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-base-32k
+        - type: produces
+          target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-l2-thinker
+        - type: produces
+          target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-en-thinker
     aliases:
       effective:
         schema: default

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:73c413117f8d397d39159db61281d067a50f8ee8
+      entity.yml: gitblob:29ffa37c14d68a49b7f05f3a8090d69cc9c72b38
     parent:
       entity.yml: gitblob:d577c457b3ced28fb858693d4d8100d4faec46a8
   state:
@@ -67,6 +67,14 @@ cache:
           - identification
           - research
           authority: official
+        - type: repository
+          source:
+            url: https://github.com/UKGovernmentBEIS/inspect_evals
+          purposes:
+          - research
+          authority: official
+          note: Original 2024 Inspect Evals contribution and package authorship; Generality
+            Labs now maintains the collection.
         - type: official-site
           source:
             url: https://www.aisi.gov.uk/
@@ -82,6 +90,10 @@ cache:
         relations:
         - type: produces
           target: catalog/software/evaluation-and-observability/evaluation-frameworks/inspect-ai
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/inspect-evals
+        - type: produces
+          target: catalog/datasets/agentharm
     aliases:
       effective:
         schema: default

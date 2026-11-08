@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:2e9948a88b9a687956617c814b994e88b8fe4f52
+      entity.yml: gitblob:3efa35ad0f7906c1882793d4ddeb0655e39c4583
     parent: {}
   state:
     node:
@@ -113,6 +113,8 @@ cache:
           target: catalog/models/cohere-labs/aya/aya-vision
         - type: derived-from
           target: catalog/models/cohere-labs/aya/aya-expanse/models/aya-expanse-32b
+        - type: derived-from
+          target: catalog/models/google/siglip-2/models/siglip2-so400m-patch14-384
     aliases:
       effective:
         schema: default

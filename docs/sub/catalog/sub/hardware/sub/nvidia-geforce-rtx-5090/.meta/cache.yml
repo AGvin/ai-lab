@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c2045b5ca72bb353982c64e60a172116e65a6d27
+      entity.yml: gitblob:7e107da39b34130ac662be2c5fd81cd5452e876b
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,11 @@ cache:
         id: catalog/hardware/nvidia-geforce-rtx-5090
         type: hardware
         name: NVIDIA GeForce RTX 5090
+        identity_note: The manufacturer identifies the desktop Blackwell RTX 5090
+          with 32 GB GDDR7. Keep laptop variants, RTX PRO models and complete multi-GPU
+          systems separate. GPU memory must also hold runtime allocations and cache;
+          gaming/AI TOPS marketing does not measure a particular LLM. Verify the chosen
+          board's power, cooling and runtime support.
         references:
         - type: product-page
           source:

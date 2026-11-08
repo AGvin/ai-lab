@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:390710984b03c1ae9b3907c838ffa04eb9ccc845
+      entity.yml: gitblob:82ef7c3a7813820fb7c031d2e661b2ff691a20cb
     parent:
       entity.yml: gitblob:db0350eaec1a453a5eaa80eb1010683969f5d346
   state:
@@ -77,6 +77,8 @@ cache:
         relations:
         - type: member-of
           target: catalog/models/cloudflare/clef
+        - type: derived-from
+          target: catalog/models/alibaba/qwen/qwen-omni/models/qwen3-omni-30b-a3b-instruct
     aliases:
       effective:
         schema: default

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5981f3536c4ed93d9005b134a307b7d093f45905
+      entity.yml: gitblob:c6fba01f012211894cf553a18650caa0bcbe5863
     parent:
-      entity.yml: gitblob:e354b4d264dab4624c90794a471d0e8e511b4425
+      entity.yml: gitblob:6df244b023fd28bbcd416c960f2324452509ef6d
   state:
     node:
       effective:
@@ -65,6 +65,8 @@ cache:
         relations:
         - type: member-of
           target: catalog/models/black-forest-labs/flux/flux-3
+        - type: has-derivative
+          target: catalog/models/fal/flux-3-max
         identity_note: FLUX 3 Video is Black Forest Labs' released FLUX 3 video-generation
           model with native audio. It supports text, image and video-conditioned workflows;
           the public API and separately negotiated weight access are distribution

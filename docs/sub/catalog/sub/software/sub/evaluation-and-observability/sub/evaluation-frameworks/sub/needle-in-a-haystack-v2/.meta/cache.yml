@@ -1,0 +1,101 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:54f035fffff4ad70bf6994caf07d0d9dd5c6bc46
+    parent:
+      entity.yml: gitblob:5dba29048fdaf9c45a85446dda84063e01b508a0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/evaluation-and-observability/evaluation-frameworks/needle-in-a-haystack-v2
+        type: software
+        name: Needle In A Haystack v2
+        aliases:
+        - needlehaystack
+        - niah
+        - Needle In A Haystack
+        identity_note: Greg Kamradt's installable MIT-licensed Python long-context
+          retrieval evaluation runner, with context-length-by-needle-depth sweeps
+          and JSONL results. V2 supersedes earlier repository implementations as one
+          software identity. Test data, external model APIs and any separate benchmark
+          results are distinct from the evaluation tool.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/gkamradt/needle-in-a-haystack
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/gkamradt/needle-in-a-haystack/blob/021385d68d3202e37893e9d3cd29011c569abe30/README.md
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/gkamradt/needle-in-a-haystack/blob/021385d68d3202e37893e9d3cd29011c569abe30/pyproject.toml
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/gkamradt/needle-in-a-haystack/blob/021385d68d3202e37893e9d3cd29011c569abe30/LICENSE.txt
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

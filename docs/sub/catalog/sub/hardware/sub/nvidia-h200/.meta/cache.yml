@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d5e6af6e6f1cc4aa278f7df6b77cbb8dfdbff557
+      entity.yml: gitblob:1a4c86b2eb3961ed130db8860bb49bc90a54792a
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -48,6 +48,11 @@ cache:
         aliases:
         - NVIDIA H200
         - H200
+        identity_note: NVIDIA identifies H200 as a Hopper GPU with 141 GB HBM3e and
+          4.8 TB/s published memory bandwidth per GPU. SXM and NVL integration, power
+          and interconnect configurations differ. These figures are not system-total
+          memory or measured application throughput; delivered OEM and software configurations
+          need separate checks.
         references:
         - type: product-page
           source:

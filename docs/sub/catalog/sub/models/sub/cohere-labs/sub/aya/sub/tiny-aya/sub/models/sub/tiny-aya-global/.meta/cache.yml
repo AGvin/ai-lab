@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e00cc131b8072cba23b4159cff227beb418a95d8
+      entity.yml: gitblob:2aa05bb84ee36e8b5d55876dfea155d94209cf92
     parent: {}
   state:
     node:
@@ -99,6 +99,8 @@ cache:
           target: catalog/models/cohere-labs/aya/tiny-aya
         - type: produced-by
           target: catalog/producers/c/cohere
+        - type: derived-from
+          target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-base
         - type: has-derivative
           target: catalog/models/cohere-labs/aya/tiny-aya/models/tiny-aya-earth
         - type: has-derivative

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f2135c6ce9d9daec8774c26d84f1aaf81c048fbb
+      entity.yml: gitblob:245fbe0eeb4da831b49abe5635811a6566beed0c
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -69,6 +69,12 @@ cache:
             url: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Opens-Agentic-AI-Frontier/
           purposes:
           - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://developer.nvidia.com/blog/inside-nvidia-groq-3-lpx-the-low-latency-inference-accelerator-for-the-nvidia-vera-rubin-platform/
+          purposes:
           - research
           authority: official
         relations:

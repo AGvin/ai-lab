@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:bac5ff890714308f387a9e765fe45c7f923f83c8
+      entity.yml: gitblob:8cacadc0220afb0c736257a3146b67d54eed20e6
     parent:
       entity.yml: gitblob:665e9ca01b87f5f7025e0f60f3e694be0cc71db2
   state:
@@ -64,6 +64,8 @@ cache:
         relations:
         - type: produces
           target: catalog/models/lg-ai-research/k-exaone
+        - type: produces
+          target: catalog/models/lg-ai-research/exaone
     aliases:
       effective:
         schema: default

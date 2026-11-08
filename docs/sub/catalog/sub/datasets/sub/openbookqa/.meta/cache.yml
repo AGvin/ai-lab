@@ -1,0 +1,122 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:1ec636dd1fd2e99839b91de224bd89c99e6ef6be
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/openbookqa
+        type: dataset
+        name: OpenBookQA
+        identity_note: Original 2018 Ai2 open-book science multiple-choice question-answering
+          dataset introduced by Todor Mihaylov, Peter Clark, Tushar Khot and Ashish
+          Sabharwal. It has 5957 questions in its original train/dev/test allocation;
+          a small book of elementary science facts supports tasks that also need common
+          knowledge. The publisher's Hub has main and additional configurations of
+          the same questions, not two independent datasets. The Hub data license is
+          marked unknown; the associated model/baseline code repository's Apache-2.0
+          license does not establish permission to redistribute all question and fact
+          text.
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/datasets/allenai/openbookqa
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Publisher-managed dataset card; main/additional formats share 4957/500/500
+            splits and metadata marks data license unknown.
+        - type: paper
+          source:
+            url: https://aclanthology.org/D18-1260/
+          purposes:
+          - identification
+          - research
+          authority: upstream
+          note: Final EMNLP 2018 paper introduces source benchmark and 1326 elementary
+            science facts.
+        - type: repository
+          source:
+            url: https://github.com/allenai/OpenBookQA
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Ai2 original baseline model software and data preparation references,
+            not a verified dataset license.
+        - type: repository
+          source:
+            url: https://github.com/allenai/OpenBookQA/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+          note: Actual Apache-2.0 code repository license, distinct from unknown dataset/card
+            text licensing.
+        - type: documentation
+          source:
+            url: https://www.tensorflow.org/datasets/catalog/openbookqa
+          purposes:
+          - research
+          authority: upstream
+          note: TensorFlow Datasets historical builder confirms 5957 questions, the
+            three splits and expanded annotations.
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/ai2
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

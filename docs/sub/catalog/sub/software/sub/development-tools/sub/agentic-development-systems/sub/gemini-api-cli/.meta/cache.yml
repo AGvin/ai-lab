@@ -1,0 +1,99 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:147d6ee4142ef3e90fa4f4e183c7f33c17834ae7
+    parent:
+      entity.yml: gitblob:52d37dd2c1c918441f2059b91bbf9a8c80e952e2
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/development-tools/agentic-development-systems/gemini-api-cli
+        type: software
+        name: Gemini API CLI
+        aliases:
+        - gemini-api
+        - Google Gemini API CLI
+        identity_note: Google's Apache-2.0-licensed stateless command-line tool and
+          Go binary for using Gemini API models, media generation and managed agents
+          from coding agents, shells and CI. It is distinct from Google Gemini CLI,
+          Google Agents CLI, the Gemini API itself, and managed agent services.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/google-gemini/gemini-api-cli
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/google-gemini/gemini-api-cli/blob/3197748d387c025604ec80f9f87d6f499bd7d7f7/README.md
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/google-gemini/gemini-api-cli/blob/3197748d387c025604ec80f9f87d6f499bd7d7f7/go.mod
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/google-gemini/gemini-api-cli/blob/3197748d387c025604ec80f9f87d6f499bd7d7f7/LICENSE
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:bdb0d4b8fb8e08855e64ba6287f4889666ff3b55
+      entity.yml: gitblob:8536bb74f079ca30df3327cff30891a05dd4e9f2
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -46,10 +46,30 @@ cache:
         id: catalog/agent-skills/collections/superpowers
         type: skill-collection
         name: Superpowers
+        identity_note: Prime Radiant's MIT-licensed composable development methodology
+          includes bootstrap and harness-specific integrations. The optional visual
+          companion loads a remote logo carrying the collection version for usage
+          telemetry; upstream documents telemetry opt-outs. Skills do not bypass repository
+          policy, and methodology publication does not verify a project's tests or
+          runtime.
         references:
         - type: repository
           source:
             url: https://github.com/obra/superpowers
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/LICENSE
           purposes:
           - identification
           - research

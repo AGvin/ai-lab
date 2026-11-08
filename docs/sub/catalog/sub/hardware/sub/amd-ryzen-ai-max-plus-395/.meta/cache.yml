@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d5937b48a69ed4e27ef8ee129c936f5173dd1c17
+      entity.yml: gitblob:ad52f69392f9cb22114a8333af37244ac5dda14e
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,13 @@ cache:
         id: catalog/hardware/amd-ryzen-ai-max-plus-395
         type: hardware
         name: AMD Ryzen AI Max+ 395
+        identity_note: Non-PRO Strix Halo processor with 16 Zen 5 CPU cores, 32 threads,
+          Radeon 8060S integrated graphics with 40 graphics cores and an XDNA 2 NPU
+          rated up to 50 TOPS. Up to 128 GB LPDDR5x-8000 on a 256-bit memory interface
+          is system memory shared with the GPU, not 128 GB of dedicated video memory.
+          AMD lists default 55 W TDP and configurable 45-120 W; OEM firmware and memory
+          allocation vary. Do not conflate with PRO 395 or the complete Halo Developer
+          Platform. Runtime and ownership checks remain pending.
         aliases:
         - Ryzen AI Max+ 395
         references:

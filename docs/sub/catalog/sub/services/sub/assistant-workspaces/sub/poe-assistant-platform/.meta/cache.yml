@@ -1,0 +1,106 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:4c471c5a627ae5164f49199cfc6dcbe0f12fd2e9
+    parent:
+      entity.yml: gitblob:4430ba8283e1dde77d88a159ae9ae3f2cb251be4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/assistant-workspaces/poe-assistant-platform
+        type: service
+        name: Poe Assistant Platform
+        aliases:
+        - Poe
+        - Poe Creator Platform
+        identity_note: Poe's hosted multiprovider conversational assistant and creator
+          platform, offering prompt, server, API and script bots and external application
+          access. Poe-operated infrastructure and account-based pricing are distinct
+          from creators' servers, bot source, third-party models, and the underlying
+          managed inference providers.
+        references:
+        - type: official-site
+          source:
+            url: https://poe.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://creator.poe.com/docs
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://creator.poe.com/docs/api-bots/overview
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://creator.poe.com/docs/server-bots/poe-protocol-specification
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://creator.poe.com/docs/external-applications/external-application-guide
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

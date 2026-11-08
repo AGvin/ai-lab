@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:db6b74248e1b60392ebd744e5b69e508a6242914
+      entity.yml: gitblob:6511b54742a0564993758fdde72cf7f11dabada2
     parent:
       entity.yml: gitblob:14d7c5336b98da3ce14bc46c931478ee37a1776d
   state:
@@ -62,6 +62,10 @@ cache:
         relations:
         - type: produces
           target: catalog/models/black-forest-labs/flux
+        - type: produces
+          target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-krea-dev
+        - type: produces
+          target: catalog/models/black-forest-labs/flux-3-image-klein-prompt-upsampler
     aliases:
       effective:
         schema: default

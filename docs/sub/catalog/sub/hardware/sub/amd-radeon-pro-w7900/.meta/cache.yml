@@ -1,0 +1,84 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:4b9a4eaa28b2be3c3226b530a539987ededef093
+    parent:
+      entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/hardware/amd-radeon-pro-w7900
+        type: hardware-product
+        name: AMD Radeon PRO W7900
+        identity_note: AMD Radeon PRO W7900 is an RDNA 3 workstation card distinct
+          from W7800 and the Instinct CDNA family. AMD lists 48 GB GDDR6, a 384-bit
+          interface with up to 864 GB/s memory bandwidth, 96 compute units, 192 AI
+          accelerators, PCIe 4.0 x16 and 295 W total board power. Published peak matrix
+          TOPS do not establish ROCm compatibility, real inference throughput, model
+          fit or procurement availability.
+        references:
+        - type: product-page
+          source:
+            url: https://www.amd.com/en/products/graphics/workstations/radeon-pro/w7900.html
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Official manufacturer product page
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/advanced-micro-devices-inc
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

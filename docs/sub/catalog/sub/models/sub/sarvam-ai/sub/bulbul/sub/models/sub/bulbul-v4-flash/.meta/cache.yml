@@ -1,0 +1,112 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:2e1203d7e810803f107831ae608c3724ed88e029
+    parent:
+      entity.yml: gitblob:d5248b67f2f5d4885bd931d8f6ed29b81fba02a4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/sarvam-ai/bulbul/models/bulbul-v4-flash
+        type: model
+        name: Bulbul V4 Flash
+        identity_note: Sarvam AI's released 2026-10-13 low-latency text-to-speech
+          model for Indian-language and Indian-English voice applications. Sarvam
+          says it trained the V4 system with expanded language-balanced speech data,
+          distilled it to a more efficient Flash model and improved streaming inference.
+          The released model is selected with model=bulbul:v4-flash using the existing
+          Bulbul API family, which defaults to V3 if omitted. Persona IDs, transport
+          choices and the unreleased preview of V4 Pro are not separate concrete model
+          identities. Pricing, voice catalogs and language support vary across dated
+          publisher pages; weights and any independently reusable license remain unverified.
+        references:
+        - type: article
+          source:
+            url: https://www.sarvam.ai/blogs/bulbul-v4-flash
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://www.sarvam.ai/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.sarvam.ai/api/api-guides-tutorials/models/bulbul
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.sarvam.ai/api/getting-started/models
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.sarvam.ai/api-reference/text-to-speech/convert
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/sarvam-ai/bulbul
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

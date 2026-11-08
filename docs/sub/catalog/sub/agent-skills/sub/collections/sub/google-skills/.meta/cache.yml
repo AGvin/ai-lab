@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a85c7e6ef1a5e09450d10e217d6c8cb0ea01e2ce
+      entity.yml: gitblob:588eae122785ac297f8e542c7cbfad5d8e07e3d7
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -48,10 +48,30 @@ cache:
         name: Google Agent Skills
         aliases:
         - Google Skills
+        identity_note: Google's Apache-2.0 collection covers Google product and Cloud
+          workflows. Its index includes entries explicitly labeled preview and links
+          additional independently maintained skill repositories; collection publication
+          does not make every contained API generally available or every linked repository
+          part of this distribution. Cloud IAM, billing and client prerequisites remain
+          external.
         references:
         - type: repository
           source:
             url: https://github.com/google/skills
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/google/skills/blob/cd6fde0b299b34bbad05f64ad1ed5bd2ed05e634/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/google/skills/blob/cd6fde0b299b34bbad05f64ad1ed5bd2ed05e634/LICENSE
           purposes:
           - identification
           - research

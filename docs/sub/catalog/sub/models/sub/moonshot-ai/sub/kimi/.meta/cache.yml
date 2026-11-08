@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:08bf9b671a1e5be2a3b28f2e5e4b49272f339e27
+      entity.yml: gitblob:b4fbcca175ebf59495579ed2515eeef5fa60e421
     parent:
       entity.yml: gitblob:7bb2ffd2c211e92c40607b21b9e655ae5fe20f81
   state:
@@ -70,6 +70,8 @@ cache:
           target: catalog/producers/m/moonshot-ai
         - type: has-member
           target: catalog/models/moonshot-ai/kimi/models/kimi-k3
+        - type: has-member
+          target: catalog/models/moonshot-ai/kimi/models/kimi-k2-thinking
     aliases:
       effective:
         schema: default

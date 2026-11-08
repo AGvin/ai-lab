@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a6168d5279a59b04ffc5c64901a9a08d9cf7c9f0
+      entity.yml: gitblob:84fa17cdd9567ae2602ce3a63992689261b9e785
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -46,10 +46,29 @@ cache:
         id: catalog/agent-skills/collections/cloudflare-skills
         type: skill-collection
         name: Cloudflare Skills
+        identity_note: Cloudflare publishes platform guidance for Workers, Agents
+          SDK and related developer products under Apache-2.0. Native client plugins
+          can bundle the Cloudflare MCP integration, while standalone skills are instruction
+          files. Neither installing guidance nor a plugin supplies blanket authority
+          to inspect an account, deploy Workers or modify resources.
         references:
         - type: repository
           source:
             url: https://github.com/cloudflare/skills
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/cloudflare/skills/blob/1f2cd0a19588e2c6197c91dd7c71729df1fb6156/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/cloudflare/skills/blob/1f2cd0a19588e2c6197c91dd7c71729df1fb6156/LICENSE
           purposes:
           - identification
           - research

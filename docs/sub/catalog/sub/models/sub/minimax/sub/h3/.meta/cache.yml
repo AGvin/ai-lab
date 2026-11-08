@@ -1,0 +1,102 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:fb69bd03c1eeeb66e8accc965ce20c79970342cf
+    parent:
+      entity.yml: gitblob:39b65ed21c720200aeae2a2794fa23ab1b2360db
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/minimax/h3
+        type: model-family
+        name: MiniMax H3
+        identity_note: MiniMax H3 is a released audiovisual model family/system, not
+          one concrete checkpoint. The publisher distinguishes FL2VA and Ref2VA base
+          checkpoints and their encoder/VAE dependencies. Context-IR and Regenerate-2K
+          are not included in the open release; local base output does not reproduce
+          the full hosted 2K workflow. The encoder uses Qwen3-VL-32B, requiring separate
+          upstream provenance/license consideration. H3 uses a custom community license
+          naming Nanonoble Pte. Ltd.; it excludes EU, UK, Republic of Korea and USA
+          and includes commercial authorization, branding and downstream safeguards.
+          Exact terms govern; this is not MIT/Apache or worldwide deployment clearance.
+          Ownership/control-chain review remains pending. No weights, code, inference
+          or license acceptance.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/MiniMaxAI/MiniMax-H3
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.minimax.io/news/minimax-h3-open-source
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/minimax
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:9cf006553d9d87d91c5cd452af0037e44ca8112f
+      entity.yml: gitblob:e958149d4833a3ee6feb1d8cb8d496f9d03a8694
     parent:
-      entity.yml: gitblob:e354b4d264dab4624c90794a471d0e8e511b4425
+      entity.yml: gitblob:6df244b023fd28bbcd416c960f2324452509ef6d
   state:
     node:
       effective:
@@ -53,7 +53,7 @@ cache:
         identity_note: FLUX 3 Image Klein is Black Forest Labs' 5.6-billion-parameter
           step-distilled image-generation and editing model, released on 2026-10-15
           under the FLUX Kommunity license. The generator count excludes the text
-          encoder and optional separate prompt-upsampler model.
+          encoder and separate prompt-upsampling stage.
         references:
         - type: article
           source:

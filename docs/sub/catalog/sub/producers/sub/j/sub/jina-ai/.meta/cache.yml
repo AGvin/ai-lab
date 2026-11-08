@@ -1,0 +1,102 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:9eac3a6112594e80b48dde9176c968050ed201e4
+    parent:
+      entity.yml: gitblob:2fbd2935d60119c9cc5405fb24dc69d731251d21
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/j/jina-ai
+        type: organization
+        name: Jina AI
+        identity_note: Jina AI was founded in 2020 to develop search foundation models,
+          embeddings, rerankers, document understanding and search services. Elastic
+          completed its acquisition of Jina AI on October 9, 2025. Jina's brand, model
+          research lineage and hosted API remain individually identifiable without
+          asserting it is still a standalone owner or that Elastic Inference Service
+          is the same API endpoint.
+        references:
+        - type: official-site
+          source:
+            url: https://jina.ai/about-us/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://ir.elastic.co/News--Events/news/news-details/2025/Elastic-Completes-Acquisition-of-Jina-AI-a-Leader-in-Frontier-Models-for-Multimodal-and-Multilingual-Search/default.aspx
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://jina.ai/legal/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.jina.ai/
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/services/model-apis/jina-ai-search-foundation
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

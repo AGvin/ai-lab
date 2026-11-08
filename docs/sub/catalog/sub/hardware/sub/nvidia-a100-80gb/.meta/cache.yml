@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:44cd18d3626f5ea96f5cb0cb40595e10d6c95721
+      entity.yml: gitblob:b1a6b6758b83f27ba9a37ade44884d0f18b3a16f
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,11 @@ cache:
         id: catalog/hardware/nvidia-a100-80gb
         type: hardware
         name: NVIDIA A100 80GB Tensor Core GPU
+        identity_note: The manufacturer identifies the 80 GB Ampere A100 separately
+          from its 40 GB configuration and distinguishes PCIe and SXM implementations.
+          This entry represents the GPU product, not an HGX/DGX system or cloud instance.
+          Use the exact SKU's power, cooling and interconnect specification; marketed
+          partitioning and performance are not workload-fit guarantees.
         references:
         - type: product-page
           source:

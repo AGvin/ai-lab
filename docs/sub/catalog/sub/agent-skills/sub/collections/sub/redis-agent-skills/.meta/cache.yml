@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:946e7fb79992f469470d64a2020d6a121d137222
+      entity.yml: gitblob:ec031451136ae97fa2160272d5085c65d3da2530
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -46,10 +46,29 @@ cache:
         id: catalog/agent-skills/collections/redis-agent-skills
         type: skill-collection
         name: Redis Agent Skills
+        identity_note: Redis's MIT collection provides Redis instruction resources
+          and client plugin packaging. Client plugins include a public documentation
+          MCP server; standalone Agent Skills CLI installation does not carry that
+          MCP component. Documentation access requires no Redis credentials, while
+          database commands still need scoped access and version-appropriate review.
         references:
         - type: repository
           source:
             url: https://github.com/redis/agent-skills
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/redis/agent-skills/blob/74708dab4b3f81a9845803c3f642a4f7d443af69/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/redis/agent-skills/blob/74708dab4b3f81a9845803c3f642a4f7d443af69/LICENSE
           purposes:
           - identification
           - research

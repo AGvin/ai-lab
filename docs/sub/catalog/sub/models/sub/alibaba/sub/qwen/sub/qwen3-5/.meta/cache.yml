@@ -1,0 +1,111 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:1ae3f78cc9bacbbed75f4afa03c3a2bd183846a1
+    parent:
+      entity.yml: gitblob:e2f3ffb84a777eed946f46c07527d045881da96e
+      node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/series
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/alibaba/qwen/qwen3-5
+        type: model-series
+        name: Qwen3.5
+        identity_note: Qwen3.5 is a Qwen Team model series within the Qwen family.
+          This bounded catalog branch represents the separately released 9B and 35B-A3B
+          pretrained and post-trained vision-language checkpoints; it is not a complete
+          inventory of every Qwen3.5 scale or deployment route.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.5-9B-Base
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.5-9B
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/alibaba/qwen
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-5/models/qwen3-5-9b-base
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-5/models/qwen3-5-9b
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-5/models/qwen3-5-35b-a3b-base
+        - type: has-member
+          target: catalog/models/alibaba/qwen/qwen3-5/models/qwen3-5-35b-a3b
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

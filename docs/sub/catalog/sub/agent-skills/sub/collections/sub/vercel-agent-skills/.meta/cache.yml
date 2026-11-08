@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d122a8e24b5d3f4395028f9e7f5eee33e862ac3b
+      entity.yml: gitblob:8e9c2db3567c749868e7d5903635857d0d5bc9f7
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -48,10 +48,23 @@ cache:
         name: Vercel Agent Skills
         aliases:
         - vercel-labs/agent-skills
+        identity_note: Vercel's collection contains development, optimization and
+          deployment instructions, distinct from skills.sh, its CLI and the hosting
+          platform. The README declares MIT but no root LICENSE file was observed
+          in the pinned tree; verify selected-path terms before redistribution. Deployment
+          can create remote artifacts, including temporary claimable previews, and
+          needs task-specific authorization.
         references:
         - type: repository
           source:
             url: https://github.com/vercel-labs/agent-skills
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/README.md
           purposes:
           - identification
           - research

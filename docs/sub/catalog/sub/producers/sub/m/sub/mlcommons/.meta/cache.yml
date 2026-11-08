@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3f0320b0ad0691054196903bcece9c50838f44d7
+      entity.yml: gitblob:72964cf95caee028b4ff6772554f89a32e172b47
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -134,6 +134,10 @@ cache:
           target: catalog/datasets/mlperf-mobile-v6-0
         - type: produces
           target: catalog/datasets/mlperf-endpoints-v0-7
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/mlcommons-mlperf-inference
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/modelbench
     aliases:
       effective:
         schema: default

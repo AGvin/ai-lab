@@ -1,0 +1,108 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:2fbd388654903ce7ea33620e0ed3a68ce4251a88
+    parent:
+      entity.yml: gitblob:7d01e94aa4b6837806f63975ebeb36a3b3d7c15d
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/cohere-labs/aya/aya-23
+        type: model-series
+        name: Aya 23
+        identity_note: Aya 23 is the older multilingual text-model release series
+          of 23 May 2024, containing separate instruction-tuned 8B and 35B research-weight
+          checkpoints with 23-language coverage and 8,192-token context. The CC-BY-NC-4.0
+          weights are gated and subject to Cohere Labs acceptable-use conditions.
+          Do not confuse this series with Aya Expanse, Aya Vision, API provider availability,
+          a separately released base checkpoint, or a documented exact training parent.
+        references:
+        - type: article
+          source:
+            url: https://cohere.com/blog/aya23
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/CohereLabs/aya-23-8B
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/CohereLabs/aya-23-35B
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.cohere.com/docs/aya
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/cohere-labs/aya
+        - type: has-member
+          target: catalog/models/cohere-labs/aya/aya-23/models/aya-23-8b
+        - type: has-member
+          target: catalog/models/cohere-labs/aya/aya-23/models/aya-23-35b
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

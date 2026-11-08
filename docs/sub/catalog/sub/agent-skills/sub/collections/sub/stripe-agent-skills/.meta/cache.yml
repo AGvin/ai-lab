@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:44992d5dc5b8158c99d86ef2c9ee502a661117ba
+      entity.yml: gitblob:f100f4fa35c8e16f03626a63139628172e44b0be
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -60,7 +60,12 @@ cache:
           authentication and applicable account permissions and terms. Instructions
           do not authorize charges, refunds or production changes on their own. Keep
           test and live environments distinct, scope credentials to the task and review
-          any generated financial or configuration operation before execution.
+          any generated financial or configuration operation before execution. Stripe's
+          MIT repository still provides agent skills, while its legacy agent-toolkit,
+          MCP package, AI SDK and token-meter packages are explicitly deprecated without
+          further security updates. Skills remain separate from hosted MCP and payment
+          APIs. Use current integration documentation and authorize test/live financial
+          operations independently.
         aliases:
         - Stripe Skills
         references:
@@ -75,6 +80,20 @@ cache:
           source:
             url: https://docs.stripe.com/agents
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/stripe/ai/blob/7882018f33773950265a9613d12e963853cfb526/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/stripe/ai/blob/7882018f33773950265a9613d12e963853cfb526/LICENSE
+          purposes:
+          - identification
           - research
           authority: official
         relations:

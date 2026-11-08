@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:341beecfb3f6724eb2182bea3f67d73296b28db5
+      entity.yml: gitblob:80de5bea6f1d746adf880cec6f7db1515b09a417
     parent:
       entity.yml: gitblob:71737ff6df1640797c83e039dac81f49246fcc48
   state:
@@ -45,10 +45,21 @@ cache:
         id: catalog/models/technology-innovation-institute/falcon/models/falcon-perception-600m
         type: model
         name: Falcon Perception 600M
+        identity_note: Falcon Perception is TII's released natively multimodal early-fusion
+          model for language-guided image localization and segmentation. TII's official
+          model registry reports approximately 632M parameters and an Apache-2.0 license
+          for the referenced checkpoint.
         references:
         - type: article
           source:
             url: https://www.tii.ae/news/tii-launches-falcon-perception-new-multimodal-ai-model-helps-machines-see-and-understand-world
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/tiiuae/Falcon-Perception
           purposes:
           - identification
           - research

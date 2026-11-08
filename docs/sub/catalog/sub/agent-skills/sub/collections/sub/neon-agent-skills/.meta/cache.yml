@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:793c555ddc4c706d11de0beaaafebfca8774cc1d
+      entity.yml: gitblob:f4dddf75627dcde7e6038749ea46a0ba98f9560b
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -46,6 +46,12 @@ cache:
         id: catalog/agent-skills/collections/neon-agent-skills
         type: skill-collection
         name: Neon Agent Skills
+        identity_note: Neon's Apache-2.0 repository bundles instruction content and
+          client integrations for Lakebase Postgres and backend workflows. Current
+          guidance merges the former branching and egress skills into neon-postgres
+          and links an independently maintained agent-platforms companion. Skills,
+          MCP authentication and cloud resources remain distinct; verify the selected
+          database and access scope.
         references:
         - type: repository
           source:
@@ -58,6 +64,20 @@ cache:
           source:
             url: https://neon.com/docs/ai/agent-skills
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/neondatabase/agent-skills/blob/65ee2bf7427b358e6fe1989d214065692bd01205/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/neondatabase/agent-skills/blob/65ee2bf7427b358e6fe1989d214065692bd01205/LICENSE
+          purposes:
+          - identification
           - research
           authority: official
         relations:

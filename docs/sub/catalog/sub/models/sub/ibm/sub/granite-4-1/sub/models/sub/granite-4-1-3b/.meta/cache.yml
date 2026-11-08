@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:88600b27e7017194d76fad3f6e01b7626371fc6d
+      entity.yml: gitblob:6f0d1f305d6e5e50b885125b0e7363cfde889081
     parent:
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
   state:
@@ -58,6 +58,8 @@ cache:
         relations:
         - type: member-of
           target: catalog/models/ibm/granite-4-1
+        - type: has-derivative
+          target: catalog/models/ibm/granite-vision-4-1/models/granite-vision-4-1-4b
     aliases:
       effective:
         schema: default

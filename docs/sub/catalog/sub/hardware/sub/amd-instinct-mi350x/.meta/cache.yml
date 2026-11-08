@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:9b4ad62d9726719e2e442dcf9a157c56f36b9924
+      entity.yml: gitblob:b5323619f10c6a43940ee3fb756b576ad0a6b715
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -47,6 +47,14 @@ cache:
         name: AMD Instinct MI350X
         aliases:
         - MI350X
+        identity_note: AMD's MI350X is a CDNA 4 OAM accelerator with 288 GB HBM3E
+          per GPU, distinct from its eight-accelerator platform and sibling SKU. AMD's
+          microarchitecture documentation distinguishes MI350X air cooling from MI355X
+          direct liquid cooling. The acceptance guide's HBM3 wording and MI355X overview's
+          MI350X reference conflict with the SKU/product and architecture sources;
+          use those sources for exact identity and memory type. ROCm/OS, firmware,
+          power and cooling require configuration-specific validation. Ownership/control
+          review remains pending; no runtime or adoption clearance.
         references:
         - type: product-page
           source:
@@ -59,6 +67,13 @@ cache:
           source:
             url: https://instinct.docs.amd.com/projects/system-acceptance/en/latest/gpus/mi350x.html
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://rocmdocs.amd.com/en/latest/reference/gpu-arch/mi350.html
+          purposes:
+          - identification
           - research
           authority: official
         relations:

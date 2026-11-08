@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f345b2a70e89a7f790b2b513187fb53e2e15a9d8
+      entity.yml: gitblob:ba2f62d8c08d9a42ff6e558688f28cc75a73c541
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -46,6 +46,11 @@ cache:
         id: catalog/agent-skills/collections/jetbrains-skills
         type: skill-collection
         name: JetBrains Skills
+        identity_note: JetBrains distributes a filtered snapshot of skills from multiple
+          upstream repositories; each skill's metadata.source identifies its original
+          source. JetBrains curation and scanner results do not replace upstream authorship,
+          per-path licenses or runtime permission review. No root license file was
+          observed in the pinned tree; do not infer a blanket redistribution grant.
         references:
         - type: repository
           source:
@@ -58,6 +63,13 @@ cache:
           source:
             url: https://www.jetbrains.com/pages/ai-agents/architecture/agent-skills/
           purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/JetBrains/skills/blob/3f53782dec7b5424bf6e8efbb90a46ee26f31798/README.md
+          purposes:
+          - identification
           - research
           authority: official
         relations:

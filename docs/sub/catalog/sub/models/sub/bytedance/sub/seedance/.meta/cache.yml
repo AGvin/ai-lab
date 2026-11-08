@@ -1,0 +1,90 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:87a2a069078cfbb9b2a2ce84b52b48563c07a6ce
+    parent:
+      entity.yml: gitblob:d7da7a0327e05a2a5fc8edd3bfc9ab66e47b3dac
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/bytedance/seedance
+        type: model-family
+        name: Seedance
+        identity_note: ByteDance Seed's video-generation model family with joint audiovisual
+          generation. Released Seedance 2.5 is a named model in this family; the family
+          is distinct from Seedream image models, Dreamina/Jimeng applications, Doubao
+          and hosted API endpoint identities.
+        references:
+        - type: official-site
+          source:
+            url: https://seed.bytedance.com/en/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/b/bytedance-seed
+        - type: has-member
+          target: catalog/models/bytedance/seedance/models/seedance-2-5
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

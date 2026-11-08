@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b4ad0605ed73f852631b5dbec4ca21f89d6ff57d
+      entity.yml: gitblob:52a4b616924c690e4c9f3fa64ccc9c0a6789eb13
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -99,6 +99,20 @@ cache:
           authority: official
         - type: documentation
           source:
+            url: https://huggingface.co/CohereLabs/c4ai-command-r-v01
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/c4ai-command-r-plus
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
             url: https://huggingface.co/CohereLabs/c4ai-command-r-08-2024
           purposes:
           - identification
@@ -107,6 +121,13 @@ cache:
         - type: documentation
           source:
             url: https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025
           purposes:
           - identification
           - research
@@ -155,9 +176,15 @@ cache:
         - type: produces
           target: catalog/models/cohere/command/command-a/models/command-a-vision-07-2025
         - type: produces
+          target: catalog/models/cohere/command/command-r/models/command-r-03-2024
+        - type: produces
+          target: catalog/models/cohere/command/command-r/models/command-r-plus-04-2024
+        - type: produces
           target: catalog/models/cohere/command/command-r/models/command-r-08-2024
         - type: produces
           target: catalog/models/cohere/command/command-r/models/command-r7b-12-2024
+        - type: produces
+          target: catalog/models/cohere/command/command-r/models/command-r7b-arabic-02-2025
         - type: produces
           target: catalog/models/cohere/north/models/north-mini-code-1-0
         - type: produces

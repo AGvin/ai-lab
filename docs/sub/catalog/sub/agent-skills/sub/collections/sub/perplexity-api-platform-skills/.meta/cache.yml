@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c7a3ef907b830d6867e83409ba52e9ecf707d8ad
+      entity.yml: gitblob:eea747d8c07dc8a8dac207b3cf029ec07e69a2b2
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -67,13 +67,31 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://github.com/perplexityai/api-platform-developers/blob/78f568a867bc7bc44ce625318b60ac0d86802c5f/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/perplexityai/api-platform-developers/blob/78f568a867bc7bc44ce625318b60ac0d86802c5f/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/p/perplexity-ai
         identity_note: Perplexity API Platform Skills is the official repository-backed
           collection for API migration and search-development workflows. Its portable
           skill files and plugin packaging are distinct from the public Computer Skills
-          Marketplace.
+          Marketplace. Perplexity's Apache-2.0 repository distributes API-development
+          skill guidance and plugin packaging, separate from the Computer Skills Marketplace.
+          The optional public docs MCP server requires no API key; this does not establish
+          paid search/API entitlement. Inspect scripts and authorize application migration
+          or network calls independently.
     aliases:
       effective:
         schema: default

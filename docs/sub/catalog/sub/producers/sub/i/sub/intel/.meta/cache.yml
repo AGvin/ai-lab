@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:8fd0683587f878e84f1041da2517978a89d50342
+      entity.yml: gitblob:59d4c62aecb34ee06670de3d23e6c9450290f370
     parent:
       entity.yml: gitblob:076b92eff3cc890acf27aaad5283d321c9fe49b0
   state:
@@ -70,6 +70,14 @@ cache:
           target: catalog/hardware/intel-gaudi-3
         - type: produces
           target: catalog/hardware/intel-arc-pro-b70
+        - type: produces
+          target: catalog/hardware/intel-arc-pro-b50
+        - type: produces
+          target: catalog/hardware/intel-arc-pro-b60
+        - type: produces
+          target: catalog/hardware/intel-arc-b580
+        - type: produces
+          target: catalog/hardware/intel-arc-pro-b65
     aliases:
       effective:
         schema: default

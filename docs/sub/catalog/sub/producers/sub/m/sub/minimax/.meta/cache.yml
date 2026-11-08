@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:28dd179cd837742c3ebc954619fc32d0b85114d6
+      entity.yml: gitblob:9a5ddd756f9a1ba0bafb90d8ec10f1c757d7ab58
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -76,6 +76,10 @@ cache:
         relations:
         - type: produces
           target: catalog/models/minimax/minimax-m
+        - type: produces
+          target: catalog/models/minimax/h3
+        - type: produces
+          target: catalog/models/minimax/music-3
     aliases:
       effective:
         schema: default

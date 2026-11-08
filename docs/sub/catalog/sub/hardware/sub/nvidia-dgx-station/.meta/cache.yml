@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:334dc64a28c4dc84aa268d28686c569bba6d79af
+      entity.yml: gitblob:22d65f4cee6351a31345416dbff68f89622a35f4
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,11 @@ cache:
         id: catalog/hardware/nvidia-dgx-station
         type: hardware-product
         name: NVIDIA DGX Station
+        identity_note: NVIDIA's current page identifies the complete deskside DGX
+          Station system and directs buyers to OEM partners. Keep its Grace Blackwell/GB300
+          platform, optional visualization GPU and Windows-specific announcement boundaries
+          separate. This is not DGX Spark or a standalone GPU; OEM OS, coherent-memory
+          configuration and delivery terms require configuration-specific confirmation.
         references:
         - type: product-page
           source:

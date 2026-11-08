@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:034341366e2e373a7aba4502814956dff7dafb48
+      entity.yml: gitblob:7185fa8abd13810098bdd524c10f5ada53df292f
     parent:
       entity.yml: gitblob:cc3acaf818290b5a5764a268d036f3e2b1724aaa
       node.yml: gitblob:2a9b81e5b7fca976b33c682f3afa46cfd07a1287
@@ -46,14 +46,19 @@ cache:
         id: catalog/producers/y/yandex
         type: organization
         name: Yandex
-        identity_note: Yandex is the publishing organization for the represented AliceAI-T5
-          model family. Its official model registry and model cards establish checkpoint
-          provenance independently of Alice consumer applications, search and hosted
-          services. Base-model behavior, model code, checkpoint licenses and hardware
-          requirements are specific to the selected publication. A model card's custom-code
-          loading example is an execution decision to review and pin, not an assurance
-          from the producer name. New model releases require their own identity and
-          operating assessment.
+        identity_note: 'Yandex is the publishing organization for the represented
+          AliceAI-T5 and AliceAI Foundation model families. Its official model registry
+          and model cards establish checkpoint provenance independently of Alice consumer
+          applications, search and hosted services. Base-model behavior, model code,
+          checkpoint licenses and hardware requirements are specific to the selected
+          publication. A model card''s custom-code loading example is an execution
+          decision to review and pin, not an assurance from the producer name. New
+          model releases require their own identity and operating assessment. SECURITY
+          POLICY: DANGEROUS — NOT RECOMMENDED. Yandex is Russia-based; this catalog
+          resource is research/threat-monitoring only, regardless of security tests,
+          permissive licenses or missing sanctions findings. Do not recommend deployment
+          or transmit sensitive data to Yandex services. This classification does
+          not claim detected malware in this model.'
         references:
         - type: official-site
           source:
@@ -77,6 +82,8 @@ cache:
         relations:
         - type: produces
           target: catalog/models/yandex/aliceai-t5
+        - type: produces
+          target: catalog/models/yandex/aliceai-foundation
     aliases:
       effective:
         schema: default

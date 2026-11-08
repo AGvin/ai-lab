@@ -1,0 +1,99 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b07fa9e233608eb66781b37f48e53ba7a9dbf791
+    parent:
+      entity.yml: gitblob:5dba29048fdaf9c45a85446dda84063e01b508a0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/evaluation-and-observability/evaluation-frameworks/agentic-misalignment-research-framework
+        type: software
+        name: Agentic Misalignment Research Framework
+        aliases:
+        - Agentic Misalignment
+        - Anthropic Agentic Misalignment Framework
+        identity_note: Research experiment runner for testing language-model agent
+          behavior in explicitly fictional adverse scenarios. The evaluation software
+          is distinct from Anthropic models, published findings, generated experimental
+          prompts and external model APIs.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/anthropic-experimental/agentic-misalignment
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/anthropic-experimental/agentic-misalignment/blob/ea0630e1a3eaae7f9f9740fd2703229d3854ccda/README.md
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/anthropic-experimental/agentic-misalignment/blob/ea0630e1a3eaae7f9f9740fd2703229d3854ccda/requirements.txt
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/anthropic-experimental/agentic-misalignment/blob/ea0630e1a3eaae7f9f9740fd2703229d3854ccda/LICENSE
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

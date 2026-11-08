@@ -1,0 +1,98 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:6a85050361faa8eb5dae95d257ecd1246c2aff76
+    parent:
+      entity.yml: gitblob:92e500a60a99e6637b9c4aa24e3634cb4d2360f9
+      node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-fill-dev
+        type: model
+        name: FLUX.1 Fill [dev]
+        aliases:
+        - FLUX.1-Fill-dev
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/black-forest-labs/flux/blob/main/docs/fill.md
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://bfl.ai/blog/24-11-21-tools
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/black-forest-labs/flux/flux-1
+        identity_note: Released 12B guidance-distilled rectified-flow model for image
+          inpainting and outpainting from an input image, text and a binary mask.
+          The exact dev checkpoint is distinct from hosted Fill pro and from FLUX.1-dev
+          generation weights. Gated weights use the FLUX dev Non-Commercial License.
+          Model rights, generated-output permissions and hosted API terms are distinct.
+          Runtime fit and provider quality claims have not been independently tested.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

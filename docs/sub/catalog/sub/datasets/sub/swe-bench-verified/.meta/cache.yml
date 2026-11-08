@@ -1,0 +1,128 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:9975b7a78d42892bab2793efadd383fbc1bf429f
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/swe-bench-verified
+        type: dataset
+        name: SWE-bench Verified
+        aliases:
+        - SWE-bench_Verified
+        identity_note: A 500-instance subset of SWE-bench issues selected by human
+          reviewers in a 2024 collaboration between OpenAI and the original SWE-bench
+          authors. OpenAI stopped using Verified for frontier capability reporting
+          in February 2026 due to data contamination and test-design defects. Its
+          February 2026 recommendation of SWE-bench Pro was retracted in July 2026
+          after a separate audit of the earlier Pro V1 public split, which does not
+          establish V2 quality.
+        references:
+        - type: article
+          source:
+            url: https://openai.com/index/introducing-swe-bench-verified/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original collaborative 2024 human-validated 500-instance selection.
+        - type: registry
+          source:
+            url: https://huggingface.co/datasets/SWE-bench/SWE-bench_Verified
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Published original 500-task SWE-bench-maintained Verified dataset.
+        - type: repository
+          source:
+            url: https://github.com/SWE-bench/SWE-bench
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original SWE-bench family, dataset and evaluator.
+        - type: article
+          source:
+            url: https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: OpenAI February 2026 discontinuation and narrow 138-task analysis.
+        - type: article
+          source:
+            url: https://openai.com/index/separating-signal-from-noise-coding-evaluations/
+          purposes:
+          - research
+          authority: official
+          note: OpenAI July 2026 retraction of its earlier broad Pro recommendation.
+        - type: repository
+          source:
+            url: https://github.com/SWE-bench/SWE-bench/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+          note: Repository MIT software/documentation license, not a blanket right
+            to third-party issues/code.
+        relations:
+        - type: derived-from
+          target: catalog/datasets/swe-bench
+        - type: produced-by
+          target: catalog/producers/o/openai
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

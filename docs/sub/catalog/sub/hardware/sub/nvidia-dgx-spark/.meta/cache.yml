@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:1e957a28357419c444b4f93781b704bbceee4be5
+      entity.yml: gitblob:aee14ce0fa72469499b76fdf48b2f509c485095c
     parent:
       entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
   state:
@@ -45,6 +45,11 @@ cache:
         id: catalog/hardware/nvidia-dgx-spark
         type: hardware-product
         name: NVIDIA DGX Spark
+        identity_note: NVIDIA's current page identifies DGX Spark as a complete GB10
+          Grace Blackwell personal AI system and distinguishes 64 GB and 128 GB configurations
+          and multi-system examples. A system's unified memory is not an independent
+          discrete-GPU specification; advertised model capacity is conditional. Recheck
+          configuration/region availability separately from the historical 64 GB announcement.
         references:
         - type: product-page
           source:

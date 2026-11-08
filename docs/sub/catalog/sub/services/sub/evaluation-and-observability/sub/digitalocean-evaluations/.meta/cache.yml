@@ -1,0 +1,109 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d36d7d7cc63afafdb75afe18ad739eb1e0b2f767
+    parent:
+      entity.yml: gitblob:d05b917c456bbcd096e4aad40559fe31aa5a8b79
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/evaluation-and-observability/digitalocean-evaluations
+        type: service
+        name: DigitalOcean Evaluations
+        identity_note: DigitalOcean's provider-operated evaluation platform for models,
+          Inference Router configurations and supported agent deployments. It supports
+          dataset-based single-turn and multi-turn assessment and agent simulation,
+          with scoring and comparisons under selected evaluation settings. It is not
+          the separate DigitalOcean Inference model API, a model or benchmark dataset,
+          a complete independent self-hosted evaluation framework or universal model
+          safety certification. Metrics, agent support, pricing, APIs, data retention
+          and region coverage can change.
+        references:
+        - type: documentation
+          source:
+            url: https://docs.digitalocean.com/products/evaluations/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.digitalocean.com/products/evaluations/details/features/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Model, Inference Router and agent dataset-evaluation and simulation
+            functionality.
+        - type: documentation
+          source:
+            url: https://docs.digitalocean.com/products/evaluations/getting-started/quickstart/
+          purposes:
+          - research
+          authority: official
+          note: Dataset and simulation workflows, advisory nature of results and production
+            review caveat.
+        - type: documentation
+          source:
+            url: https://docs.digitalocean.com/products/evaluations/reference/
+          purposes:
+          - research
+          authority: official
+          note: DigitalOcean API, doctl commands and vendor MCP interfaces for evaluations.
+        relations:
+        - type: produced-by
+          target: catalog/producers/d/digitalocean
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

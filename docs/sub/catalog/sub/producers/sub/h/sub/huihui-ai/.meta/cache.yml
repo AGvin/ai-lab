@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:16325c014fcd95b7653b76eaf13d43ccdffb87de
+      entity.yml: gitblob:cab67151ce787f1ca20699bb87f903fcc48c086e
     parent:
       entity.yml: gitblob:809c62e5e48565624df11ad5ab043ec1d16b9f4e
   state:
@@ -72,6 +72,8 @@ cache:
         relations:
         - type: produces
           target: catalog/models/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated
+        - type: produces
+          target: catalog/models/huihui-ai/huihui-qwen3-5-35b-a3b-abliterated
     aliases:
       effective:
         schema: default

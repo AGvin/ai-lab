@@ -1,0 +1,108 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:7b934062e55324736dd961775d3030d0d190de96
+    parent:
+      entity.yml: gitblob:0cf80df310da6a10fb2bdc28c39cf869cdb4d5e4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/specifications/standards/nist-ai-600-1-generative-ai-profile
+        name: NIST AI 600-1 — Generative Artificial Intelligence Profile
+        aliases:
+        - NIST AI 600-1
+        - NIST Generative AI Profile
+        - AI RMF Generative AI Profile
+        identity_note: This separately identifiable NIST AI 600-1 cross-sectoral publication,
+          released July 26, 2024, is a voluntary generative-AI risk management profile
+          and companion to the 2023 NIST AI RMF 1.0 (AI 100-1). It highlights GenAI-specific
+          opportunities, unique risk areas and organizational risk-management actions,
+          rather than introducing a separate binding legal or certified international
+          standard. Its citation mentions former US executive-order historical context;
+          that context is not proof that the order remains operative in November 2026.
+          Its fixed 2024 publication remains distinct from later AI RMF revision plans,
+          the living Playbook, technical model safety evidence and product claims.
+        references:
+        - type: specification
+          source:
+            url: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: NIST official July 26, 2024 original published profile NIST AI 600-1
+            and companion scope.
+        - type: official-site
+          source:
+            url: https://www.nist.gov/itl/ai-risk-management-framework
+          purposes:
+          - research
+          authority: official
+          note: NIST separates original AI RMF 1.0, published GenAI profile and ongoing
+            framework revision.
+        - type: specification
+          source:
+            url: https://doi.org/10.6028/NIST.AI.600-1
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Durable DOI for fixed NIST AI 600-1 publication, not a future revised
+            version.
+        relations:
+        - type: produced-by
+          target: catalog/producers/n/nist
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json
