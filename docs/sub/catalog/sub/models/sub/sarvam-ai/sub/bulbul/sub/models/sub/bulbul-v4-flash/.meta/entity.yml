@@ -1,0 +1,44 @@
+entity:
+  id: catalog/models/sarvam-ai/bulbul/models/bulbul-v4-flash
+  type: model
+  name: Bulbul V4 Flash
+  identity_note: >-
+    Sarvam AI's released 2026-10-13 low-latency text-to-speech model for
+    Indian-language and Indian-English voice applications. Sarvam says it
+    trained the V4 system with expanded language-balanced speech data,
+    distilled it to a more efficient Flash model and improved streaming
+    inference. The released model is selected with model=bulbul:v4-flash
+    using the existing Bulbul API family, which defaults to V3 if omitted.
+    Persona IDs, transport choices and the unreleased preview of V4 Pro are
+    not separate concrete model identities. Pricing, voice catalogs and
+    language support vary across dated publisher pages; weights and any
+    independently reusable license remain unverified.
+  references:
+    - type: article
+      source:
+        url: https://www.sarvam.ai/blogs/bulbul-v4-flash
+      purposes: [identification, research]
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.sarvam.ai/models
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.sarvam.ai/api/api-guides-tutorials/models/bulbul
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.sarvam.ai/api/getting-started/models
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.sarvam.ai/api-reference/text-to-speech/convert
+      purposes: [research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/sarvam-ai/bulbul

@@ -39,3 +39,5 @@ entity:
       target: catalog/models/sarvam-ai/saaras
     - type: produces
       target: catalog/models/sarvam-ai/sarvam-vision
+    - type: produces
+      target: catalog/models/sarvam-ai/bulbul

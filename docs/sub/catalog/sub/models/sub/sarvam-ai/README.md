@@ -12,6 +12,7 @@ This model-domain view links the [canonical Sarvam AI producer](../../../produce
 
 - [Saaras](./sub/saaras/)
 - [Sarvam Vision](./sub/sarvam-vision/)
+- [Bulbul](./sub/bulbul/) — text-to-speech model family
 
 ## Official resources
 

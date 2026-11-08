@@ -20,3 +20,4 @@ The released 30B/105B weights and their Apache 2.0 distribution are distinct fro
 
 - Produces: [Saaras](../../../../../models/sub/sarvam-ai/sub/saaras/) — model family, separate from hosted product and access contracts.
 - Produces: [Sarvam Vision](../../../../../models/sub/sarvam-ai/sub/sarvam-vision/) — model family, separate from hosted product and access contracts.
+- Produces: [Bulbul](../../../../../models/sub/sarvam-ai/sub/bulbul/) — text-to-speech model family including V4 Flash, distinct from API transport and voice personas.

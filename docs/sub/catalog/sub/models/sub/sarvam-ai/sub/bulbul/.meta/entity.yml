@@ -1,0 +1,30 @@
+entity:
+  id: catalog/models/sarvam-ai/bulbul
+  type: model-family
+  name: Bulbul
+  identity_note: >-
+    Sarvam AI's text-to-speech model family, distinct from Sarvam general
+    language/reasoning models, Saaras speech recognition and hosted API services.
+    Bulbul V4 Flash is a released, separately trained/distilled member; Bulbul V4 Pro
+    was teased as a future model and is not an independently accepted release here.
+  references:
+    - type: official-site
+      source:
+        url: https://www.sarvam.ai/models
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://www.sarvam.ai/blogs/bulbul-v4-flash
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.sarvam.ai/api/api-guides-tutorials/models/bulbul
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/s/sarvam-ai
+    - type: has-member
+      target: catalog/models/sarvam-ai/bulbul/models/bulbul-v4-flash
