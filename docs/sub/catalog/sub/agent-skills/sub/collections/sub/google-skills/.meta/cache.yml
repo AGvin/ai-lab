@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:588eae122785ac297f8e542c7cbfad5d8e07e3d7
+      entity.yml: gitblob:3f4d6cec66dbb33d7072d7d2aea2b7f9cb9246dc
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -64,14 +64,14 @@ cache:
           authority: official
         - type: documentation
           source:
-            url: https://github.com/google/skills/blob/cd6fde0b299b34bbad05f64ad1ed5bd2ed05e634/README.md
+            url: https://github.com/google/skills/blob/2194d3b8b1f31975fef2f1a0ae6b9ab55bd7ceee/README.md
           purposes:
           - identification
           - research
           authority: official
         - type: documentation
           source:
-            url: https://github.com/google/skills/blob/cd6fde0b299b34bbad05f64ad1ed5bd2ed05e634/LICENSE
+            url: https://github.com/google/skills/blob/2194d3b8b1f31975fef2f1a0ae6b9ab55bd7ceee/LICENSE
           purposes:
           - identification
           - research

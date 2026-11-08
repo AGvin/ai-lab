@@ -16,12 +16,12 @@ entity:
       authority: official
     - type: documentation
       source:
-        url: https://github.com/google/skills/blob/cd6fde0b299b34bbad05f64ad1ed5bd2ed05e634/README.md
+        url: https://github.com/google/skills/blob/2194d3b8b1f31975fef2f1a0ae6b9ab55bd7ceee/README.md
       purposes: [identification, research]
       authority: official
     - type: documentation
       source:
-        url: https://github.com/google/skills/blob/cd6fde0b299b34bbad05f64ad1ed5bd2ed05e634/LICENSE
+        url: https://github.com/google/skills/blob/2194d3b8b1f31975fef2f1a0ae6b9ab55bd7ceee/LICENSE
       purposes: [identification, research]
       authority: official
   relations:
