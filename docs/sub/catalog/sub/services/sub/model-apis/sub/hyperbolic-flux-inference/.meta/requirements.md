@@ -16,3 +16,10 @@
 - Unique Flux hosted model API entity; one inverse producer relation; no legacy duplicate, self-managed Forge/NIM or trained-model authorship.
 - Key format, endpoint, data routing and preview/production boundaries accurately sourced to current official vendor material.
 - Bounded metadata, reader, source and link checks distinct from production verification or clean saturation cycles.
+
+## Scoped original-source qualification — 2026-11-08
+
+- **Hyperbolic Flux Inference** is Hyperbolic's original **October 21, 2026** hosted OpenAI-compatible inference offering. The publisher explicitly treats **Flux as the API service** on top of its distinct Forge multi-cloud GPU orchestration control plane; neither product is a new trained model nor an automatic duplicate of the deprecated Hyperbolic inference endpoint.
+- The officially documented `https://api.hyperbolic.ai/inference/v1` API supports Chat Completions and streaming, Pro/Organization prepaid billing, and current `sk_live_` credentials; model IDs, provider routes and supported sampling settings vary. Models may run either on Hyperbolic-owned serving infrastructure or via **external model providers**, so Hyperbolic data-routing/security statements cannot be extrapolated to every upstream route. No account, API credentials, model inference or billing were tested.
+- First-party current product and original launch sources: https://www.hyperbolic.ai/inference ; https://www.hyperbolic.ai/blog/flux-inference-api .
+- Source acceptance qualifies this existing hosted-service identity and current launch/migration/contract boundaries. No new entity or metadata credit, full provider-rights/privacy/legal/security audit, latency/performance certification, whole-catalog schema/cache/CI/render, clean or final gate.
