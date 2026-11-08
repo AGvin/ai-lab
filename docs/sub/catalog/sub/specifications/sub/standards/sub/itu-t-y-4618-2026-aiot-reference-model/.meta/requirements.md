@@ -3,13 +3,13 @@
 ## Requirements
 
 - Present ITU-T Y.4618 (06/26) as the approved, in-force Recommendation defining an Artificial Intelligence of Things reference model and requirements.
-- Preserve the lifecycle distinction between Recommendation status and publication artifact availability: the current ITU record marks Y.4618 in force while also stating "To be published".
+- Preserve the lifecycle distinction between Recommendation status and publication artifact availability: the official final-edition record marks Y.4618 in force and lists its English PDF as posted 2026-09-03; the older prepublication or "To be published" records are historical rather than the current final-edition availability.
 - Keep the AIoT reference-model standard distinct from concrete IoT/edge-AI products, robot frameworks, hardware, cloud services, and implementation protocols.
 - Treat final publication files, detailed architecture elements, amendments, corrigenda, successor Recommendations, and status changes as freshness-sensitive.
 
 ## Validation
 
-- The catalog does not misstate "in force" as meaning the final publication artifact was already posted at the inspected date.
+- The catalog independently substantiates both in-force status and the final PDF posting on the official final-edition record, without restating historical prepublication status as current.
 - The entity remains a standards artifact rather than a generic AIoT concept.
 
 ## Scoped original-source qualification — 2026-11-08
