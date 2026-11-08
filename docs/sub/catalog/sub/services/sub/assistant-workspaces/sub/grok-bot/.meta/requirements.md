@@ -19,8 +19,10 @@
 - Team Bots and marketplace entries are not duplicated as standalone products without stronger lifecycle evidence.
 - Producer provenance resolves to the current SpaceXAI organization identity.
 
-## Scoped original-source qualification — 2026-11-07
+## Scoped original-source qualification — 2026-11-08
 
-- Grok Bot is cataloged as a hosted agent/digital-worker surface distinct from the Grok assistant and model API. Persistent cloud execution, team bots and marketplace claims require first-party version/availability checks.
-- First-party umbrella service surface: https://grok.com/
-- The umbrella URL alone does not independently verify the specific product launch, lifecycle or architecture; these remain pending primary-source validation. No source gate is claimed until a direct product-specific official source is documented.
+- **Grok Bot** is the separately hosted agent teammate and digital-worker service documented at the current publisher-owned `x.ai/bot` product page and `docs.x.ai/grok-bot` guides, not the Grok model, consumer chatbot, API, Cursor software product, or individual marketplace bot.
+- The service runs workflows on persistent vendor-managed cloud computers, supports multi-bot routines, connected applications and team sharing, with scope-dependent approvals. The current official FAQ expressly states that **a user's Bots share the same cloud computer, browser logins, files and command-line credentials**: different Bots are not separate isolation or credential domains. Team-shared conversations have their own contextual and access boundaries, which must be rechecked before deploying sensitive tasks.
+- Team Bots and template/marketplace discovery are features of the service; supported plans, app platforms, quotas, sign-in, shared-bot security policies, memory/retention and connector approvals are mutable and not established by the launch announcement alone. No credentials, external tools, agent/browser commands or subscriptions were used.
+- First-party direct product sources: https://x.ai/bot ; https://docs.x.ai/grok-bot/faq ; https://docs.x.ai/grok-bot/approvals-security-and-privacy ; https://x.ai/changelog/bot .
+- This source gate qualifies exactly one existing Grok Bot service identity and publicly documented service/computer/security scope. It does not imply executable agent success, independent privacy/security or legal certification, product feature completeness, current worldwide availability, global schema/cache/CI/render, clean or final acceptance.
