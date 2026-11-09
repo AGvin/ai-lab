@@ -12,6 +12,13 @@
 - Preserve the already materialized Composio producer and integration-service entities. Use one `produced-by` relation to the existing producer, with a matching `produces` inverse; this means collection distribution/maintenance, not original authorship of all linked projects.
 - Keep full corporate/ultimate-beneficial-owner and third-party licensing/supply-chain assessment pending; assign no unsupported nationality-based threat tier.
 
+## Pinned plugin, authorization and rights evidence
+
+- Pin the original [connect-apps SKILL.md](https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/connect-apps/SKILL.md) and separate [plugin README](https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/connect-apps-plugin/README.md) when describing app integrations. These can send messages, create issues and mutate connected resources after API-key and OAuth setup; counts of supported apps are publisher claims and differ by route.
+- Require explicit account, scope, data-sharing and write-action approval; distinguish installed instruction files, an authorized Composio account and authorization of a particular external effect.
+- The pinned [CONTRIBUTING.md](https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/CONTRIBUTING.md) requests attribution and testing; this is not evidence of independently verified dependencies, third-party license grants or safe execution for every bundled skill. A stated repository Apache-2.0 license with no root LICENSE remains a recorded rights limitation.
+- This is a bounded read-only source review; no live OAuth session, service call, permission validation or independent code audit was completed.
+
 ## Validation
 
 - Exactly one new canonical `skill-collection` node is created, with one matching existing-producer inverse; do not duplicate Composio service, producer, individual skills or plugins.
