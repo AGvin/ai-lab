@@ -10,6 +10,13 @@
 - Preserve credential and data-transfer boundaries: skills call remote Model Studio APIs and can upload local inputs, so installation does not imply that source material remains local.
 - Preserve repository licensing and first-party status without treating publication as a blanket quality, security, or rights endorsement.
 
+## Source-specific remote media handling
+
+- Explain that pinned [Wan image skill](https://github.com/Wan-Video/Wan-skills/blob/3e92371e23b8d43bae0316ae2c87e496675ceb9d/skills/wan2.7-image-skill/SKILL.md) forwards local-file or base64 image inputs via an OSS uploader; the [Python helper](https://github.com/Wan-Video/Wan-skills/blob/3e92371e23b8d43bae0316ae2c87e496675ceb9d/skills/wan2.7-image-skill/scripts/file_to_oss.py) obtains a policy from DashScope and posts image bytes to temporary OSS. This is external media transmission, not local-only inference.
+- Preserve source-reported roughly 24-hour result-link expiry separately from unknown upstream input retention; suggest privately saving outputs if continued access is needed. Avoid disclosing `DASHSCOPE_API_KEY`, pasted base64 or sensitive filenames in agent-visible logs/history.
+- The pinned [Wan presentation skill](https://github.com/Wan-Video/Wan-skills/blob/3e92371e23b8d43bae0316ae2c87e496675ceb9d/skills/wan-pptx-generator/SKILL.md) supports PDF/DOCX/text upload and advertises time-limited pricing; require explicit content-transfer authorization and current model region/price review before executing it.
+- Documentation inspection is not installation, account access, runtime security validation or provider privacy/retention assurance.
+
 ## Validation
 
 - The entity remains a skill collection rather than the Wan model family or Model Studio service.
