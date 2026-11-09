@@ -9,6 +9,13 @@
 - Keep exact skills, dependencies, package-version requirements, API availability, migration support and distribution methods freshness-sensitive.
 - Preserve source-backed first-party producer provenance with a reciprocal `produces` relation.
 
+## Database lifecycle and deployment approval boundaries
+
+- State that the `prisma-postgres-setup` no-account `create-db` database defaults to deletion after 24 hours unless claimed, and the claim URL/connection string must be kept private. Reuse existing databases and verify the exact workspace/project/region before creating a new one.
+- Distinguish Prisma 7 ORM CLI `migrate reset`/schema changes from Prisma 8 Platform/Compute operations; require explicit target, backup/rollback consideration and user authorization before destructive migration or reset.
+- From pinned `prisma-compute`, warn that Platform operations may select production without an explicit branch even when the current Git branch is not production; verify project, stage/branch and CLI version before deploy, promote, rollback or delete. Deploy-on-push and CI service tokens need separately reviewed permissions.
+- Ground these boundaries in the pinned [Postgres setup](https://github.com/prisma/skills/blob/8ea289b730c2e89f7ff1f518af128b113d842a92/prisma-postgres-setup/SKILL.md), [Prisma 7 CLI](https://github.com/prisma/skills/blob/8ea289b730c2e89f7ff1f518af128b113d842a92/prisma-cli/SKILL.md) and [Compute](https://github.com/prisma/skills/blob/8ea289b730c2e89f7ff1f518af128b113d842a92/prisma-compute/SKILL.md). Source guidance is not proof of a live deployment or data-recovery test.
+
 ## Validation
 
 - The collection is independently maintained as a public upstream skill distribution.
