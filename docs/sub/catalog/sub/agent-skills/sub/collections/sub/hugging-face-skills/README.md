@@ -4,6 +4,12 @@
 
 Hugging Face Skills is Hugging Face's official Agent Skills collection for Hub operations and AI and ML workflows such as dataset creation, model training, evaluation, and related ecosystem tasks.
 
+## Hosted MCP and cloud deployment boundaries
+
+The pinned [Hugging Face MCP configuration](https://github.com/huggingface/skills/blob/25910b3d0ba31a2ba102f901cdc9e008c278a69c/.mcp.json) points to the hosted `https://huggingface.co/mcp?login` endpoint. Enabling that integration involves external requests and account authorization; it is not an offline-only consequence of copying individual `SKILL.md` files or installing the `hf-cli` instructions. Review the chosen client and which prompts, model/dataset details or account context may be sent externally. Do not print access tokens or assume that installing a skill grants Hub account access.
+
+The original [SageMaker IAM preflight](https://github.com/huggingface/skills/blob/25910b3d0ba31a2ba102f901cdc9e008c278a69c/skills/hf-cloud-sagemaker-iam-preflight/SKILL.md) checks for an existing execution role before any `iam:CreateRole`; a usable trust policy alone does not prove least-privilege permissions. The [endpoint deployment skill](https://github.com/huggingface/skills/blob/25910b3d0ba31a2ba102f901cdc9e008c278a69c/skills/hf-cloud-sagemaker-production-defaults/SKILL.md) can create billable models, endpoints, autoscaling policies and CloudWatch alarms. Request explicit approval of the AWS account, region, role, intended spend and deployment/teardown scope. Its optional request/response capture to S3 is disabled by default and requires a separate data-handling decision. An `InService` endpoint still needs a successful inference smoke test and log review. No hosted MCP session, AWS change or model execution was performed in this review.
+
 ## Producer
 
 - [Hugging Face, Inc.](../../../../../producers/sub/h/sub/hugging-face-inc/)
