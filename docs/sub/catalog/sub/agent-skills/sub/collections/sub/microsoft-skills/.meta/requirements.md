@@ -9,6 +9,13 @@
 - Treat skill counts, language breakdown, installer commands, plugin manifests, supported agents, repository structure, and WIP/testing status as freshness-sensitive.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+## Source-specific permission and sensitive-data boundaries
+
+- Distinguish Microsoft Skills instruction packages from deployed Azure resources, Azure MCP permissions, a local shell, `kubectl` access and AKS packet capture; availability of one does not imply the others.
+- For `aks-network-capture`, require explicitly bound AKS target/context, nodes or pods, capture filter/duration, artifact destination and approval of temporary ConfigMaps, Jobs, retrieval pods, generated traffic and exact-run cleanup. Packet payloads can contain credentials or customer information; debug-container fallback requires separate authorization.
+- Preserve the selected skill's action scope. The first-party `cost-optimization` skill makes recommendations only and must not automatically delete, resize, purchase or deploy resources; other skills may require their own access and external-transmission review.
+- Cite the pinned [AKS capture skill](https://github.com/microsoft/skills/blob/4f831bbbf54e004507758d8ef2ab420c77bb81b6/.github/plugins/aks-skills/skills/aks-network-capture/SKILL.md), [capture authorization contract](https://github.com/microsoft/skills/blob/4f831bbbf54e004507758d8ef2ab420c77bb81b6/.github/plugins/aks-skills/skills/aks-network-capture/references/capture-authorization.md) and [cost optimization skill](https://github.com/microsoft/skills/blob/4f831bbbf54e004507758d8ef2ab420c77bb81b6/.github/plugins/azure-cost/skills/cost-optimization/SKILL.md). The documentation review does not establish actual tenant, credential, packet-capture or live MCP behavior.
+
 ## Validation
 
 - The collection is not conflated with Microsoft Agent Framework, Copilot Studio, Foundry, VS Code, or the MicrosoftDocs Azure Agent Skills collection.
