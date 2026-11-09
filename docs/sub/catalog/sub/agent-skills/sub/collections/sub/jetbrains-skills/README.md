@@ -12,6 +12,12 @@ The repository supplies the current inventory and scanner behavior. Filtering is
 
 JetBrains documents Skill Repository discovery in its IDE tooling. Project/global installation and client compatibility must be checked against the installed client version rather than inferred from inclusion in this collection.
 
+## Security-scanner coverage
+
+The pinned [JetBrains scanning workflow](https://github.com/JetBrains/skills/blob/3f53782dec7b5424bf6e8efbb90a46ee26f31798/.github/workflows/skill-scanner.yml) does **not** prove every bundled upstream skill has passed a fresh blocking security audit. On ordinary pushes and pull requests the CI scanner selects changed skill directories and can fail on error-level findings for those changes; a manually dispatched full-repository scan uploads its report without using inherited upstream findings to block the workflow. Code Scanning SARIF upload is best-effort. Thus a green ordinary workflow or a completed manual scan is not a signed clean bill of health for all imported scripts and dependencies.
+
+Before installing or executing a third-party skill from the curated snapshot, inspect its exact `metadata.source`, pinned content, path-specific license, included scripts, credential access and tool/network permissions. Read available scanner reports for that revision, not only the workflow badge; approval is still required for externally visible changes or sensitive-data access. No scanner run, skill execution or independent dependency verification was performed in this catalog review.
+
 ## Producer
 
 - Curated and distributed by: [JetBrains](../../../../../producers/sub/j/sub/jetbrains/)
