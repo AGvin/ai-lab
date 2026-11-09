@@ -16,6 +16,16 @@ The repository's `skills/` directories and their `SKILL.md` entry points hold th
 
 The Neon MCP server is an integration that can accompany the skills. A separately linked Neon-for-agent-platforms repository contains companion material with its own distribution boundary; a link from this collection does not establish common ownership of every companion workflow.
 
+## Migration, connection and diagnostic safety
+
+The collection-owned [`neon-postgres` skill](https://github.com/neondatabase/agent-skills/blob/65ee2bf7427b358e6fe1989d214065692bd01205/skills/neon-postgres/SKILL.md) makes an operational distinction important for database work:
+
+- Use pooled Neon connections (a hostname containing `-pooler`) for ordinary application requests; use the **direct, non-pooled** connection for schema migrations, `pg_dump`/`pg_restore`, replication and operations requiring session state. Verify the intended project, branch and database, and do not replace the application's pooled connection string merely to run a migration.
+- Test schema migrations on a separate branch with appropriately handled production-like data before production deployment. Record rollback/recovery options, confirm the production target and obtain explicit authorization before irreversible schema or resource changes.
+- Prefer first-party read-only database diagnostics. An `unused-indexes` result is not permission to drop an index. `EXPLAIN ANALYZE` **executes the underlying SQL**, so avoid it for any mutating query without explicit approval. Compute restarts and scale-to-zero can reset statistics; use representative workloads before drawing conclusions.
+
+Skill installation does not provide authentication, backup guarantees or permission to provision, mutate or delete a database.
+
 ## Runtime and permission boundaries
 
 Installing instructions does not authenticate a database session or grant authority to change data, provision infrastructure, deploy code, or use credentials. Actual operations depend on the agent client, configured tools, account permissions, and runtime behavior. Review the underlying service's data and access conditions for the chosen workflow.
