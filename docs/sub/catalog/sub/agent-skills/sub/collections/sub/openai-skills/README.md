@@ -18,6 +18,14 @@ The `openai/skills` repository is retained here as the source of the selected Op
 
 Skill Creator documents how to design and update skills around a required `SKILL.md` plus optional scripts, references, assets, and agent-facing metadata. The selected source is the `.system/skill-creator` directory in the deprecated repository; this page does not treat differently named skills in the successor plugin repository as the same identity without an explicit upstream mapping.
 
+## Local execution, validation and rights
+
+The selected historical [initializer](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.system/skill-creator/scripts/init_skill.py) creates a skill directory and writes `SKILL.md`, `agents/openai.yaml`, and optional example files. The separate metadata generator can write or replace `agents/openai.yaml`. **Review the output path and approve repository changes before executing these scripts.**
+
+The bundled [`quick_validate.py`](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.system/skill-creator/scripts/quick_validate.py) checks basic frontmatter structure and metadata, **not** generated code safety, runtime behavior, dependency integrity or authorization. The inspected Python helpers do not themselves declare network operations, but downstream skills or external integrations can access other systems and require separate approval.
+
+The selected Skill Creator directory contains an [Apache-2.0 license](https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/skills/.system/skill-creator/LICENSE.txt). Its imported [PyYAML dependency is MIT licensed](https://github.com/yaml/pyyaml/blob/main/LICENSE). This does not grant rights over project files, other repository skills or optional connected services. Source checks were static only: no script was installed or executed.
+
 ## Repository status
 
 As verified on 2026-08-12, `openai/skills` is deprecated and points readers to `openai/plugins` for current Codex plugin examples. The old repository remains relevant here because it is still the official source path for the selected Skill Creator material documented above.
