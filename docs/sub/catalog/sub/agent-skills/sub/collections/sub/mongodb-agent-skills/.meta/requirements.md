@@ -8,6 +8,9 @@
 - Track MongoDB Community/Enterprise Advanced and Atlas deployment differences, data-access permissions, client compatibility, skill inventory and security guidance as mutable.
 - Do not materialize each skill folder, plugin manifest or bundled database feature as a new canonical product.
 - Attribute primary collection maintenance to MongoDB and preserve reciprocal producer links.
+- For Atlas Managed MCP, identify the hosted OAuth endpoint `https://mcp.mongodb.com/`, explain the network/data boundary, and preserve organization AI-client access and user/project-role limits for Atlas data and administration.
+- For the local/self-managed MongoDB MCP server, state that writes are allowed by default unless `--readOnly` or `MDB_MCP_READ_ONLY=true` is configured. Recommend a dedicated database read-only role plus server read-only mode for sensitive/production inspection; require authorization for writes, index changes, user administration and network changes.
+- Never expose connection strings, service-account secrets or database content in agent prompts/logs or version-controlled client configuration; treat local MCP usage telemetry and hosted service data handling as separately reviewable boundaries.
 
 - Reconcile the reader with the source-backed identity, access and interpretation context in canonical `entity.identity_note`.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.

@@ -9,6 +9,8 @@
 - Keep the separate `skills`/skills.sh registry tooling, Vercel AI SDK, Vercel Connect, AI Gateway, hosting platform, and product docs with their own canonical identities.
 - Preserve trust boundaries for skills that can deploy projects, inspect metrics, modify code, or transmit project content: installation does not itself authorize external writes or data transfer.
 - Preserve repository licensing and first-party status without treating publication as a blanket quality/security endorsement.
+- For `deploy-to-vercel`, distinguish Git-triggered production deployments from the preview default, project/team linking, and no-login `vercel deploy --temporary` uploads with sensitive claim URLs. Require explicit authorization and source/secrets review before remote writes.
+- For `vercel-cli-with-tokens`, warn that the pinned source's token-discovery examples print `VERCEL_TOKEN` or `.env` values; never expose live credentials in agent-visible output, shell history or tracked files, and use scoped secret storage and rotation.
 
 ## Validation
 
