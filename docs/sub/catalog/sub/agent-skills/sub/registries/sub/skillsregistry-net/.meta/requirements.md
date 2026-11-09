@@ -22,3 +22,10 @@
 - Verified first-party source 1: https://skillsregistry.net/
 - Verified first-party source 2: https://skillsregistry.net/agents
 - This review accepts only the current registry identity and source boundaries. It does not assert a full freshness audit, vendor-independent security, tested skill execution, complete CI/cache/schema/render, copyright clearance or verified current listing totals.
+
+## Hosted/local parity and freshness reconciliation — 2026-11-09
+
+- First-party [SkillsRegistry site](https://skillsregistry.net/) advertises one-command local deployment with hosted-equivalent semantic search, publishing, scoring and MCP. The separate [publisher source README](https://github.com/cogniumhq/skillsregistry) explicitly says the Apache-2.0 repository includes SDKs and a single-tenant local node, while the actual hosted service runs separately on **proprietary code**. This is a material provider-source discrepancy; do not certify local/hosted feature parity from marketing.
+- The source README states local `apps/local` requires Postgres/pgvector and an embedding provider; air-gap search and local publishing are supported, but the local node **does not run Cognium's hosted trust-scoring engine**, and local `resolve_composition` is not implemented yet. Hosted scoring/leaderboards require separate provider keys, with connected-mode signup described as preview.
+- Distinguish advertised dashboard counts, scores and scanned or verified subsets from complete independent safety coverage. Dynamic index totals on publisher landing pages are not an identity denominator. Require the exact deployed revision, deployment image provenance, current docs, provider terms and actual environment integration tests before recommending parity or claims of 100% verified skills.
+- Source: inspected publisher README `cogniumhq/skillsregistry` blob `6dd253530ac60127a64d73e96886f271d379a33a` and Apache-2.0 root LICENSE blob `ccd24c8eaf707ccada1d864b62ef578f84c19580` on 2026-11-09; compared first-party hosted page. Full independent CI, endpoint access/security scoring, license of proprietary hosted code, and local image execution remain outside this bounded review.
