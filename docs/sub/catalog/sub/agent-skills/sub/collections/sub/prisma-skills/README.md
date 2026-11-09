@@ -10,6 +10,12 @@ Match the instructions to the installed Prisma version. Current upstream guidanc
 
 Installing instructions does not grant credentials or authorize destructive schema changes. Review the selected revision, migration plan, target database and the coding client's available tools before running it. Individual skill directories and generated client packaging are parts of the collection rather than independent service identities. [Collection and installation guidance](https://github.com/prisma/skills).
 
+## Provisioning, migration and production-target safeguards
+
+The pinned [Prisma Postgres setup](https://github.com/prisma/skills/blob/8ea289b730c2e89f7ff1f518af128b113d842a92/prisma-postgres-setup/SKILL.md) first reuses an existing database. Its no-account `create-db` option is **temporary**: the default database is deleted after **24 hours** unless claimed through a private URL before expiry. Never present an unclaimed temporary database as permanent storage or reveal its connection string or claim URL in logs or source control. Check the selected workspace, project, region and environment before provisioning, and never create a duplicate database merely because the shell cannot read the app's existing secret configuration.
+
+Database operations can be destructive. The original [Prisma 7 CLI skill](https://github.com/prisma/skills/blob/8ea289b730c2e89f7ff1f518af128b113d842a92/prisma-cli/SKILL.md) includes migrations and `migrate reset`, while the separately versioned [Prisma Compute skill](https://github.com/prisma/skills/blob/8ea289b730c2e89f7ff1f518af128b113d842a92/prisma-compute/SKILL.md) uses Prisma 8 deployment commands. Compute's operational CLI can target the **production branch by default**, irrespective of the current Git branch, unless the proper explicit branch/project target is supplied. Require a database backup and rollback plan where relevant, review exact target and schema diff, and obtain approval for migration resets, remote deployments, promotions or deletions. No database, CLI or deployment was operated during this catalog review.
+
 ## Produced by
 
 - [Prisma](../../../../../producers/sub/p/sub/prisma/)
