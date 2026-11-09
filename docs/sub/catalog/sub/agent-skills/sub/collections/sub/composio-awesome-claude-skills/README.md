@@ -14,6 +14,12 @@ The [original README](https://github.com/ComposioHQ/awesome-claude-skills/blob/m
 
 Treat skills as untrusted instructions and code: review `SKILL.md`, shell/Python scripts, dependencies, allowed tools and write/network actions, and pin the reviewed revision. Do not expose credentials or sensitive workspace data by default. The `connect-apps` plugin and some per-app recipes rely on Composio's external service and may involve API keys, OAuth grants and third-party data processing; grant the minimum necessary scope and authorize external effects separately. No package install, skill execution, third-party code audit or complete beneficial-ownership investigation was performed.
 
+## Verified app-action boundary
+
+The pinned [`connect-apps` skill](https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/connect-apps/SKILL.md) is not a read-only reference: after plugin installation, API-key setup and per-app OAuth consent, it can send email, publish chat messages and create issue-tracker records through an external tool router. The separately packaged [connect-apps plugin](https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/connect-apps-plugin/README.md) also has a local-plugin installation route. Their advertised integration counts differ, so treat counts as vendor marketing rather than a tested inventory.
+
+Before invoking a connected app, inspect the exact OAuth permissions, account/tenant, destination and information to be transmitted; require explicit approval for externally visible writes. Installation does not itself authorize any external service effect. The [original contributor rules](https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/CONTRIBUTING.md) request attribution and testing, but do not prove every contributed script, dependency or linked skill was independently audited. The root of this pinned tree lacks a standalone `LICENSE` file even though its README advertises Apache-2.0; inspect per-skill terms instead of granting blanket redistribution rights. No live plugin, OAuth, app action or dependency was tested here.
+
 ## Relations
 
 - Maintained/published by: [Composio](../../../../../producers/sub/c/sub/composio/)
