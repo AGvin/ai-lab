@@ -9,8 +9,15 @@
 - Explain dependency boundaries: the source configuration uses hosted Sentry MCP over HTTP and some workflows require GitHub CLI or authenticated Sentry API access. Installing a client plugin does not grant account permissions or execute monitoring operations for this documentation entry.
 - Address security and privacy: Sentry event data, error traces, user identifiers, code snapshots and tool output can be sensitive; use authorized projects, scoped credentials, privacy controls and explicit approval for GitHub writes, alert changes or code fixes.
 - Note telemetry's source-backed attribution: MCP traffic may contain plugin-specific source tagging for supported clients and installer diagnostics; attribution differs by client, so do not promise complete or uniform telemetry. Check organizational privacy/security settings and applicable service data-processing terms before enabling monitoring.
+- Describe the exact network/privacy boundary of the pinned `mcp.json`: `https://mcp.sentry.dev/mcp?utm_source=plugin` is an external hosted MCP endpoint. Its source [TELEMETRY.md](https://github.com/getsentry/sentry-for-ai/blob/80642456253f2fcd529a38d9ac82f299e80dc89c/TELEMETRY.md) enumerates potentially captured client family, raw user agent, authenticated user ID, MCP tool name, session ID, traces and error/installer telemetry. The source explicitly notes that Claude's plugin lacks `utm_source` and is not captured by that particular attribution filter; no claim of absent telemetry follows.
+- Warn that queries/tool inputs sent to hosted Sentry MCP leave the local machine and are subject to the vendor's service controls; avoid submitting confidential events or unnecessary personal data. Check redaction, retention, account scope, service policy and approval separately rather than inferring privacy from MIT licensing or the `utm_source` tag.
 - Distinguish MIT-licensed source code from vendor service terms, private customer incident data, SDK dependencies and third-party plugin distribution rights. Never claim complete data deletion, guaranteed privacy or full network-offline operation.
 - Preserve reciprocal Sentry producer relation and one parent collection index entry, with a concise cross-reference to the independent Sentry Skills collection.
+
+## Hosted MCP and telemetry reconciliation — 2026-11-09
+
+- Inspected pinned [hosted MCP config](https://github.com/getsentry/sentry-for-ai/blob/80642456253f2fcd529a38d9ac82f299e80dc89c/mcp.json) and [first-party telemetry source](https://github.com/getsentry/sentry-for-ai/blob/80642456253f2fcd529a38d9ac82f299e80dc89c/TELEMETRY.md): HTTP MCP endpoint `mcp.sentry.dev`, client family/user agent, authenticated user ID, session and tool-name observations plus CLI installer error diagnostics. These are *potential source-described observability fields*, not an independent claim about customer data retention or every distribution's runtime settings.
+- This bounded review did not connect to Sentry, inspect telemetry, access monitored events, or verify any organization's privacy controls.
 
 ## Validation
 

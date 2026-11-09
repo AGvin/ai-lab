@@ -12,6 +12,12 @@ The [first-party README](https://github.com/getsentry/sentry-for-ai/blob/8064245
 
 Source-managed client packages can configure the hosted [Sentry MCP service](https://mcp.sentry.dev) and authenticated Sentry project operations. Some workflows additionally require the GitHub CLI. Confirm exact client support and permissions from the chosen distribution; installing a plugin does not authenticate a Sentry account automatically or authorize edits to unrelated repositories.
 
+## Hosted MCP data and attribution
+
+The [inspected source MCP configuration](https://github.com/getsentry/sentry-for-ai/blob/80642456253f2fcd529a38d9ac82f299e80dc89c/mcp.json) points to the **external hosted endpoint** `https://mcp.sentry.dev/mcp?utm_source=plugin`. Tool queries and any issue or event content sent through this connection leave the local environment. Before use, select an authorized organization and project, redact unnecessary confidential/personal data, review access permissions and applicable vendor retention/data-processing controls.
+
+The [first-party telemetry document](https://github.com/getsentry/sentry-for-ai/blob/80642456253f2fcd529a38d9ac82f299e80dc89c/TELEMETRY.md) describes request/server traces that may identify client family, raw HTTP user agent, authenticated user ID, MCP tool name and session, and can observe errors or installer crashes. The `utm_source=plugin` tag is **attribution**, not a confidentiality or opt-out setting. Upstream specifically notes that Claude's plugin lacks this tag, so it is omitted from the *plugin-attributed filter*; that does not establish that its traffic has no telemetry. These statements are source-backed boundaries, not an independent collection or retention audit.
+
 ## Data, safety and licensing
 
 Instrumented events, traces, logs and issue details may contain confidential or personal data. Use approved projects, scrub sensitive event attributes, restrict credentials and access, and review proposed fixes or alert changes before execution. Client-specific MCP source attribution and installer diagnostics are documented upstream, but do not imply that all clients send identical telemetry. Validate the applicable data-processing terms and organization controls.

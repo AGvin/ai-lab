@@ -4,6 +4,12 @@
 
 Perplexity API Platform Skills is the official repository-backed collection for API migration and search-development workflows. Its portable skill files and plugin packaging are distinct from the public Computer Skills Marketplace.
 
+## Documentation MCP and data boundary
+
+The pinned [first-party MCP configuration](https://github.com/perplexityai/api-platform-developers/blob/78f568a867bc7bc44ce625318b60ac0d86802c5f/mcp.json) connects plugin-capable clients to **`https://docs.perplexity.ai/mcp`** using `streamable-http`. This is a remote documentation server: when the client invokes it, document queries and any accompanying text are transmitted to that external host. The publicly accessible docs MCP does not require a Perplexity API key, but that is *not* permission to transmit confidential data, an offline mode, or entitlement to paid Search, Sonar or Agent API operations.
+
+An Agent Plugin or supported Claude/Codex plugin can include both local instructions and this docs MCP connection. Skills-only installation can omit the MCP component. Review outbound-data policy and client settings before enabling the integration; do not paste keys, private source code or sensitive customer material into documentation queries. Any paid API use or application migration requires separate credentials, cost review and user authorization.
+
 ## Use and deployment boundaries
 
 The repository declares Apache-2.0. Pin and inspect the selected revision, skill scripts and optional documentation integration before use. Installing instructions or a docs integration does not provide paid API access or permission to change an application's data.

@@ -7,8 +7,15 @@
 - Keep the repository's Claude Code plugin marketplace packaging, Agent Plugin packaging, Codex plugin flow, ecosystem installers, docs MCP server, CLI/SDK packages, and API endpoints as distribution/access surfaces rather than separate skill-collection identities.
 - Keep the Perplexity Skills Marketplace separate as the multi-source/user-and-organization marketplace/registry surface; this collection is a publisher-owned first-party skill set.
 - Treat exact skill inventory, client compatibility, install commands, bundled MCP/configuration, invocation names, plugin metadata, and release state as freshness-sensitive.
+- Distinguish local skill-only installation from Agent Plugin/Claude/Codex plugin paths that bundle a remote **Perplexity documentation MCP** connection. The reviewed `mcp.json` specifies `https://docs.perplexity.ai/mcp` with `streamable-http`. Even though the public docs MCP needs no API key, requests and submitted query text leave the local environment for Perplexity's documentation host; never include confidential API keys, customer data or internal source text without an approved data-processing basis.
+- Do not imply that this documentation MCP provides authenticated Search/Sonar/Agent API entitlement or can perform paid customer searches; authentication and billing for actual APIs are distinct. Ask for approval before client config changes, account API calls or code migrations that modify app behavior.
 - Preserve the repository-level Apache-2.0 distribution boundary while requiring path-specific license verification if future bundled assets establish different terms.
 - Render the standard `entity-relations` block from validated current-entity relations.
+
+## Documentation MCP network boundary — 2026-11-09
+
+- The pinned [first-party README](https://github.com/perplexityai/api-platform-developers/blob/78f568a867bc7bc44ce625318b60ac0d86802c5f/README.md) describes plugin installation with docs MCP and standalone skill-only installations. The pinned [MCP config](https://github.com/perplexityai/api-platform-developers/blob/78f568a867bc7bc44ce625318b60ac0d86802c5f/mcp.json) uses `streamable-http` to connect to `https://docs.perplexity.ai/mcp`; no API key is required for that public documentation surface.
+- Public documentation access is not offline or privacy-neutral, nor does it imply authorization to use paid Perplexity Search or Agent APIs. This is source and configuration inspection only: no network MCP session, customer API call, runtime compatibility test, or telemetry/retention verification occurred.
 
 ## Validation
 
