@@ -2,6 +2,17 @@
 
 **PROVENANCE/OWNERSHIP REVIEW PENDING.** Publisher attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../../../project/sub/policies/sub/russia-linked-ai/).
 
+## Updated upstream feature and access boundaries
+
+An [independent comparison of the current upstream skill tree](https://github.com/neondatabase/agent-skills/tree/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/skills) with the previously pinned source found **8 changed files in 5 of 7 skill directories**, despite an unchanged upstream README. Treat these source changes as version-specific; the original migration and Postgres diagnostics guidance above remains valid within its cited scope.
+
+- **AI Gateway credits:** the newer [AI Gateway skill](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/skills/neon-ai-gateway/SKILL.md) permits prepaid credits on all Neon plans, including Free. A Free account needs a payment card and purchased credits before models can serve requests. The `paid_plan_required` error name does not necessarily mean the subscription must be upgraded. Treat purchases and branch credentials as separately authorized operations.
+- **Functions secrets:** the [updated configuration](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/skills/neon-functions/SKILL.md) uses `{ value, required }` for secrets, with required/optional/default-branch behavior that depends on CLI and config package versions. Empty or omitted values can modify or remove a live secret. Review the exact target and deployed configuration; do not copy older `process.env.X!` recipes as universally current.
+- **Realtime authorization:** the [newer Realtime skill](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/skills/neon-realtime/SKILL.md) states that live subscriptions reject RLS-protected tables. **Do not switch off production RLS merely to enable subscriptions** without an approved alternative user-isolation design, such as server-authorized sealed queries, and explicit testing.
+- **Logs:** the [updated Loki reference](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/skills/neon/references/logs-loki.md) adds version-sensitive CLI/SDK methods and cautions that limited log query results may be incomplete. Access and retention of production telemetry require separate permission review.
+
+No billing action, user-key access, code installation or database execution was performed during this static source review. Full rights, all live service behavior, and repository-wide renderer/CI remain outside this bounded check.
+
 ## Relations
 
 - Produced by: [Neon](../../../../../producers/sub/n/sub/neon/)
