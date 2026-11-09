@@ -8,6 +8,13 @@
 - Treat skill inventory/counts, generated timestamps, bundles, plugin manifests, installation commands, supported assistants, network/documentation dependencies, and experimental host-feature requirements as freshness-sensitive.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+## Generated documentation and Azure operation boundaries
+
+- State that MicrosoftDocs Azure skills can combine generated local summaries with Microsoft Learn content retrieved through `mcp_microsoftdocs:microsoft_docs_fetch` or `fetch_webpage`; selected skills declare network access, so documentation queries are not necessarily offline.
+- Preserve generated-at metadata as a freshness hint and use live first-party documentation for changing Azure APIs, support matrices, limits, pricing, licensing and permissions; copying a skill directory does not validate currency or grant MCP availability.
+- For cost-management and backup workflows, distinguish reading documentation from accessing tenant billing/recovery data. Require explicit tenant/subscription/resource targets, RBAC, data sensitivity, spend/change authorization and suitable recovery safeguards before Azure mutation.
+- Ground these boundaries in pinned [Cost Management](https://github.com/MicrosoftDocs/Agent-Skills/blob/6ecdaf59cde880d0ef3d1715357b6c0b0c6696d8/skills/azure-cost-management/SKILL.md) and [Backup](https://github.com/MicrosoftDocs/Agent-Skills/blob/6ecdaf59cde880d0ef3d1715357b6c0b0c6696d8/skills/azure-backup/SKILL.md); no connected tenant, runtime, retention or billable operation was tested.
+
 ## Validation
 
 - The collection is not conflated with Microsoft Skills, Copilot product features, or general Microsoft Learn documentation.
