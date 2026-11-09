@@ -4,6 +4,8 @@
 
 ## Updated upstream feature and access boundaries
 
+The same two-revision repository comparison found **25 changed files across 282 tracked files**: eight source skill files, eight identical plugin-distribution copies, and nine plugin/package manifests increasing the advertised version from **3.0.1 to 3.0.5**. No dependency lockfile entries changed other than the package version. This distinguishes the current source from the previously retained historical revision without automatically assuming full runtime compatibility.
+
 An [independent comparison of the current upstream skill tree](https://github.com/neondatabase/agent-skills/tree/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/skills) with the previously pinned source found **8 changed files in 5 of 7 skill directories**, despite an unchanged upstream README. Treat these source changes as version-specific; the original migration and Postgres diagnostics guidance above remains valid within its cited scope.
 
 - **AI Gateway credits:** the newer [AI Gateway skill](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/skills/neon-ai-gateway/SKILL.md) permits prepaid credits on all Neon plans, including Free. A Free account needs a payment card and purchased credits before models can serve requests. The `paid_plan_required` error name does not necessarily mean the subscription must be upgraded. Treat purchases and branch credentials as separately authorized operations.
