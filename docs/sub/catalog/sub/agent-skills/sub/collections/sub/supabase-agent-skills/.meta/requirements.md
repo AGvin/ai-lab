@@ -14,6 +14,12 @@
 
 - Render the standard `entity-relations` block from validated current-entity relations, ordered by explicit numeric order, target canonical name and target ID; resolve every visible target to its reader.
 
+## Specific external MCP and database-permission boundaries
+
+- The pinned [.mcp.json](https://github.com/supabase/agent-skills/blob/c9be0e931b7930f7d02126d04774d904c381e7d7/.mcp.json) advertises hosted `https://mcp.supabase.com/mcp?features=docs`; describe it as a network documentation endpoint, not as an installed database connection or inherent project-data permission.
+- From the original [Supabase skill](https://github.com/supabase/agent-skills/blob/c9be0e931b7930f7d02126d04774d904c381e7d7/skills/supabase/SKILL.md), keep Data API grants and RLS as separate controls, never expose `service_role` secrets in public clients, avoid user-editable `user_metadata` for authorization and use properly scoped access tokens.
+- Require explicit environment/role, SQL/migration review and data-preservation checks before schema, RLS or grant changes. A static source review is not a production RLS test, database authorization or independent MCP/privacy audit.
+
 ## Validation
 
 - The collection is not conflated with the Supabase hosted platform, Supabase CLI, MCP server, or individual database/product components.
