@@ -64,3 +64,12 @@ Both [root MCP metadata](https://github.com/neondatabase/agent-skills/blob/2b0e2
 
 Before using the individual skill families, consider branch/migration data handling, AI Gateway paid credits, identity sessions and OAuth, public serverless endpoints and deployment secrets, Realtime bearer-token sealed queries, file upload/public-read storage and production telemetry. Root repository Apache-2.0 licensing does not necessarily cover outside cloud service terms, user content or every third-party package. Source and warnings were reviewed statically; no installation, remote session or user credential was exercised.
 
+
+## License and connected-service qualification
+
+The current [publisher source license](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/LICENSE) is Apache-2.0. Its pinned package-lock has distinct development dependencies under MIT and Python-2.0, including the third-party npm **`skills-ref@0.1.5`**, which is **not the official Python reference CLI**. A license field is not proof of tarball integrity or safe execution.
+
+The included [Neon logomark and logo assets](https://neon.com/brand) remain subject to brand/trademark presentation rules separate from the source-code grant. The [Neon platform terms](https://neon.com/platform-terms), updated October 14, 2026, govern hosted APIs, billing and customer data separately. Do not infer credential access, hosted-service permissions, trademark endorsement or rights over confidential data from the Agent Skills repository's license.
+
+Full third-party package provenance, any intended asset reuse and effective hosted-service permissions remain **unverified**; this is documented research evidence, not independent selected-rights clearance, production approval or a completed Clean gate.
+
