@@ -55,3 +55,12 @@ Neon's Apache-2.0 repository bundles instruction content and client integrations
 
 - [Agent Skills repository and current inventory](https://github.com/neondatabase/agent-skills)
 - [Neon Agent Skills documentation](https://neon.com/docs/ai/agent-skills)
+
+## Installation lifecycle and connected-service controls
+
+The [Neon Skills package](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/package.json) declares an npm **`prepare` script** that changes the local Git hooks path. Installing or building the repository may therefore change local development configuration; the publisher's [CI](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/.github/workflows/validate.yml) uses `npm ci --ignore-scripts`. The [plugin synchronizer](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/scripts/sync-plugin-skills.mjs) has a nonwriting `--check` mode, whereas its normal run removes and rebuilds vendored skill directories; the [docs synchronizer](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/scripts/sync-skill-docs.mjs) can regenerate reference files. Inspect the target workspace and approve changes before invoking any of these commands.
+
+Both [root MCP metadata](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/mcp.json) and the [Postgres plugin config](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/plugins/neon-postgres/mcp.json) refer to hosted `https://mcp.neon.tech/mcp`. This service is not a local-only component: authenticated MCP tools may query logs/database records or perform branch/resource changes based on the account and agent permissions. Installing instructions alone is not consent to connect an account or access project data.
+
+Before using the individual skill families, consider branch/migration data handling, AI Gateway paid credits, identity sessions and OAuth, public serverless endpoints and deployment secrets, Realtime bearer-token sealed queries, file upload/public-read storage and production telemetry. Root repository Apache-2.0 licensing does not necessarily cover outside cloud service terms, user content or every third-party package. Source and warnings were reviewed statically; no installation, remote session or user credential was exercised.
+
