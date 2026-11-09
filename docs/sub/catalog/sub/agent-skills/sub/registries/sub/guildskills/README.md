@@ -13,3 +13,10 @@ The free directory is distinct from its advertised paid Quality Score and deskto
 ## Official resource
 
 - [GuildSkills](https://guildskills.com/)
+
+## Publisher claims and unresolved availability
+
+The [first-party homepage](https://guildskills.com/) advertises **40+ agents** and a changing mined catalog. Retrieved versions of the same site contain **159,000+** and **195,000+** entries, so neither figure is an independently audited live source inventory. The separate [About page](https://guildskills.com/about/) explains that original authors retain their SKILL.md rights and per-skill licenses and that paid Quality Scores are derived from content structure and metadata. Scores are **not execution-safety guarantees**.
+
+The site markets a desktop installer while still qualifying one-click installation as **upcoming**, and says its Windows executable is **unsigned** with a SmartScreen override prompt. Do not follow such an override without independently checking signed publisher identity, package hashes, provenance and security. No binary, install flow, catalog JSON export or paid feature was run or verified here.
+
