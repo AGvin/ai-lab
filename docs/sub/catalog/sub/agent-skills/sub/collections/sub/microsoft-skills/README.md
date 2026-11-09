@@ -4,6 +4,12 @@
 
 Microsoft Skills is Microsoft's official `microsoft/skills` repository-backed collection of Agent Skills, plugins, custom-agent assets, templates, and MCP configurations for Azure SDK and Microsoft Foundry development workflows.
 
+## Azure operations, capture and data boundaries
+
+Microsoft's pinned [AKS network-capture skill](https://github.com/microsoft/skills/blob/4f831bbbf54e004507758d8ef2ab420c77bb81b6/.github/plugins/aks-skills/skills/aks-network-capture/SKILL.md) is an **operator-run packet-capture workflow**, not a passive documentation lookup or a capability provided automatically by an Azure MCP connection. It requires an explicitly approved, correctly bound AKS cluster and Kubernetes context, an execution host with `kubectl`, Azure CLI and approved artifact storage, plus a scoped node/pod, duration and BPF filter. Packet captures may include credentials and customer data. Its [authorization instructions](https://github.com/microsoft/skills/blob/4f831bbbf54e004507758d8ef2ab420c77bb81b6/.github/plugins/aks-skills/skills/aks-network-capture/references/capture-authorization.md) require separately reviewing generated traffic, ConfigMaps, capture Jobs, retrieval pods, cleanup and any ephemeral debug-container fallback; a successful Azure MCP metadata query does not authorize these actions. Nothing in this catalog review ran packet captures or accessed an AKS cluster.
+
+Other Microsoft skills can access or change Azure resources and may invoke hosted MCP tools. The pinned [Azure cost-optimization skill](https://github.com/microsoft/skills/blob/4f831bbbf54e004507758d8ef2ab420c77bb81b6/.github/plugins/azure-cost/skills/cost-optimization/SKILL.md) explicitly limits itself to recommendations and forbids deleting, resizing, purchasing or deploying resources as an automatic consequence of an optimization request. For any selected skill, inspect its own instructions, permissions and third-party data flow before execution; first-party provenance, a root MIT license and a repository test badge do not establish tenant authorization, data minimization or runtime safety.
+
 ## Producer
 
 - [Microsoft](../../../../../producers/sub/m/sub/microsoft/)
