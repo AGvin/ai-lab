@@ -10,6 +10,12 @@ Current repository examples include Wan image generation/editing and Wan-assiste
 
 The skills call remote Model Studio APIs using configured account credentials and region-specific endpoints, and can upload local input files. Review the selected skill's scripts, repository license, model terms and data-transfer scope. Installing a skill does not keep its inputs local or turn models, presentation libraries and agent hosts into the same product.
 
+## Input upload and result-retention cautions
+
+The pinned [Wan 2.7 image skill](https://github.com/Wan-Video/Wan-skills/blob/3e92371e23b8d43bae0316ae2c87e496675ceb9d/skills/wan2.7-image-skill/SKILL.md) explicitly passes reference images either as local file paths or base64 to `file_to_oss.py`, which uploads the content to temporary object storage before the model API uses it. Its [upload helper](https://github.com/Wan-Video/Wan-skills/blob/3e92371e23b8d43bae0316ae2c87e496675ceb9d/skills/wan2.7-image-skill/scripts/file_to_oss.py) requests temporary upload credentials from `dashscope.aliyuncs.com` and then POSTs the bytes to the returned OSS host. The documented generated result URLs expire after roughly **24 hours**; this does not establish the server-side retention of uploaded originals. Obtain explicit permission to transmit private/confidential images or documents, confirm the region and service terms, and store needed outputs in an approved location before URLs expire.
+
+The pinned [presentation skill](https://github.com/Wan-Video/Wan-skills/blob/3e92371e23b8d43bae0316ae2c87e496675ceb9d/skills/wan-pptx-generator/SKILL.md) similarly sends document or text content to the remote service and depends on `DASHSCOPE_API_KEY`. Do not put live keys or sensitive base64 payloads in shared command histories, logs or prompts. Its promotional free/discounted terms are time-limited claims; check current billing before a generation run. This review did not upload files, generate presentations or validate remote retention.
+
 ## Relations
 
 - Produced by: [Wan Team](../../../../../producers/sub/w/sub/wan-team/)
