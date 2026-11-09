@@ -9,6 +9,13 @@
 - Treat skill count, scanned source set, security-scanner CI rules, release/version availability, compatibility, and downstream client install options as time-sensitive. Security filtering reduces but cannot eliminate risks in untrusted scripts/instructions.
 - Do not add peer records for each imported upstream skill solely because the JetBrains snapshot packages them; keep independent producer collections with their existing canonical identities where represented.
 
+## Security-scanning evidence limits
+
+- Explain that ordinary JetBrains Skill Scanner CI evaluates changed skill directories and can block changed-skill error-level findings, whereas manual full-repository workflow dispatch uploads a report without treating inherited findings as blocking. A passing check is not exhaustive current coverage of every imported third-party skill.
+- Preserve that SARIF publication to GitHub Code Scanning is best-effort; absence of a security alert or upload is not evidence of absence of risk. Review the actual report and source commit when available.
+- Require selected skill's `metadata.source`, original author/license, scripts, permissions, network/data flow and pinned revision to be inspected before execution. JetBrains curation is not upstream authorship or a blanket redistribution/runtime guarantee.
+- Cite the pinned [scanner workflow](https://github.com/JetBrains/skills/blob/3f53782dec7b5424bf6e8efbb90a46ee26f31798/.github/workflows/skill-scanner.yml) and [source inventory](https://github.com/JetBrains/skills/blob/3f53782dec7b5424bf6e8efbb90a46ee26f31798/README.md); no actual scanner rerun or independent security attestation was performed.
+
 ## Validation
 
 - The first-party curated/produced collection resolves through the named producer without erasing upstream authorship.
