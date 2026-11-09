@@ -29,3 +29,11 @@
 - Verified first-party source 1: https://guildskills.com/
 - Verified first-party source 2: https://guildskills.com/about/
 - This review accepts only the current registry identity and source boundaries. It does not assert a full freshness audit, vendor-independent security, tested skill execution, complete CI/cache/schema/render, copyright clearance or verified current listing totals.
+
+## First-party feature and inventory reconciliation — 2026-11-09
+
+- Compared [first-party homepage](https://guildskills.com/) and [About page](https://guildskills.com/about/). The producer says it mines public GitHub, gists, awesome lists and direct submissions, stores per-skill author/source/license metadata, and distinguishes a free **unrated** directory from subscription-gated multi-signal Quality Scores. “Quality Score” is derived from content heuristics (operator cites 80% structural + 20% metadata) and is neither malware proof nor an execution isolation claim.
+- First-party homepage copies indexed at different times displayed **159,000+** versus **195,000+** entries, with 40+ client-support marketing claims; a live downloadable catalog JSON source was unavailable to independently reconcile exact contents/coverage at this review. Treat both counts as time-dependent operator snapshots, not a stable unique-scanned percentage.
+- Operator offers Windows desktop installs but warns its binary is **not code-signed** and recommends bypassing Microsoft Defender SmartScreen. That is not authorization to disable warning protections. Its own page simultaneously advertises download links and **one-click install (when desktop ships)**, so precise desktop feature availability is not proven by the marketing page and needs binary/provenance and current-run verification.
+- [First-party About](https://guildskills.com/about/) says authors retain SKILL.md ownership and licenses, and opt-outs are supported; do not confuse GuildSkills Pro subscription rights with redistribution of third-party skill bodies. No downloader, Pro subscription, executable Windows installer or actual integrated client was tested.
+
