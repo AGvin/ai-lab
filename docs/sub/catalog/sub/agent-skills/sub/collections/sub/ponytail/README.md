@@ -29,3 +29,12 @@ Dietrich Gebert publishes the MIT-licensed Ponytail collection for reducing unne
 - [Ponytail repository](https://github.com/DietrichGebert/ponytail)
 - [Ponytail npm package](https://www.npmjs.com/package/@dietrichgebert/ponytail)
 - [2026-10-07 upstream Ponytail 5 benchmark](https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/benchmarks/results/2026-10-07-agentic.md)
+
+## Source revision and host execution boundaries
+
+The complete first-party [Ponytail source tree](https://github.com/DietrichGebert/ponytail/tree/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846) contains **216 tracked files** and matches the inspected upstream default `main` revision exactly. This verifies source-tree parity as of the review, not installation safety, current npm-package parity or a complete provenance/ownership assessment.
+
+The six core `skills/*/SKILL.md` files primarily contain **instructions**, but connected host integrations do more. The [session-start hook](https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/hooks/ponytail-activate.js) can write mode state and inject context. Its [codebase mapper](https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/hooks/ponytail-map.js) reads selected project source files for function/class summaries. The [mode tracker](https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/hooks/ponytail-mode-tracker.js) can start a **detached** importer for earlier Claude sessions when explicitly requested, including usage metrics. The [OpenCode adapter](https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/.opencode/plugins/ponytail.mjs) persists host-mode settings and injects rules into new contexts.
+
+These optional hooks and extension adapters are not read-only documentation. Before installing, review workspace access, persistent flags, session-history privacy and code-context visibility under the target agent's permissions. The publisher's root [MIT license](https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/LICENSE) does not by itself complete separate asset, third-party, effective-ownership or host-service rights checks. **Provenance/ownership review remains pending.** No package, hook, script or external service was executed during this static inspection.
+
