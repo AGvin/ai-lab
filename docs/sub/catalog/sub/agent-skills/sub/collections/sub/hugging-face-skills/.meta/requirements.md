@@ -10,6 +10,13 @@
 - Treat exact skill inventory, generated CLI guidance, installation/plugin mechanisms, client compatibility, cloud-provider coverage, deployment targets, pinned revisions, and CLI/MCP integration as freshness-sensitive.
 - Render the standard `entity-relations` block from validated current-entity relations.
 
+## Source-specific hosted access and AWS execution boundaries
+
+- Distinguish independent skill installation from the [pinned Cursor/MCP manifest](https://github.com/huggingface/skills/blob/25910b3d0ba31a2ba102f901cdc9e008c278a69c/.mcp.json), which configures the remotely hosted `https://huggingface.co/mcp?login` service. Authentication and queries cross a network/data boundary; do not imply that the whole collection is offline or installed with Hub credentials.
+- For `hf-cloud-sagemaker-iam-preflight`, prefer inspecting and validating existing AWS execution roles, verify scoped policies, and require authorization before creating IAM roles or changing permissions. SSO failures do not justify bypassing authorization.
+- For `hf-cloud-sagemaker-production-defaults`, preserve account, region, role, ongoing cost and teardown boundaries for SageMaker models/endpoints/autoscaling/alarms. Optional S3 request/response capture is off by default, not implicit consent for collecting input data; an `InService` status alone is not a successful inference check.
+- Use pinned [IAM source](https://github.com/huggingface/skills/blob/25910b3d0ba31a2ba102f901cdc9e008c278a69c/skills/hf-cloud-sagemaker-iam-preflight/SKILL.md) and [deployment source](https://github.com/huggingface/skills/blob/25910b3d0ba31a2ba102f901cdc9e008c278a69c/skills/hf-cloud-sagemaker-production-defaults/SKILL.md); these are scoped source assertions, not live billing, permission, retention or runtime verification.
+
 ## Validation
 
 - Producer provenance resolves to Hugging Face, Inc.
