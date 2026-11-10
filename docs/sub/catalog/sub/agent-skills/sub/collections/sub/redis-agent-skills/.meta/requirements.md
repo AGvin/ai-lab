@@ -43,3 +43,7 @@ Review the instructions and database actions before enabling them. A skill canno
 - Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
 - Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
 - Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.
+
+## Complete selected-source freshness — 2026-11-10
+
+The entire first-party Git tree at `74708dab4b3f81a9845803c3f642a4f7d443af69` matches current upstream HEAD: **203 identical tracked file blobs**, including source skills, plugin mirrors, scripts, evaluation material and manifests. No path or blob drift was found. This inventories the complete selected repository, not the separately installed Redis products, remote MCP contents, npm packages or live runtime behavior. Detailed script/dependency, permission/data-flow, rights and independent full-profile review remain open.

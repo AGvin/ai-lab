@@ -20,7 +20,11 @@ Review the instructions and database actions before enabling them. A skill canno
 
 Redis's MIT collection provides Redis instruction resources and client plugin packaging. Client plugins include a public documentation MCP server; standalone Agent Skills CLI installation does not carry that MCP component. Documentation access requires no Redis credentials, while database commands still need scoped access and version-appropriate review.
 
-[Reviewed original README](https://github.com/redis/agent-skills/blob/74708dab4b3f81a9845803c3f642a4f7d443af69/README.md). Licensing is scoped to the inspected distribution; no skill or script was installed or executed. This is not a full collection freshness audit.
+[Reviewed original README](https://github.com/redis/agent-skills/blob/74708dab4b3f81a9845803c3f642a4f7d443af69/README.md). Licensing is scoped to the inspected distribution; no skill or script was installed or executed. The complete selected Git tree was separately checked on 2026-11-10; live services and external packages were not audited.
+
+## Complete selected-source freshness — 2026-11-10
+
+The entire first-party Git tree at `74708dab4b3f81a9845803c3f642a4f7d443af69` matches current upstream HEAD: **203 identical tracked file blobs**, including source skills, plugin mirrors, scripts, evaluation material and manifests. No path or blob drift was found. This inventories the complete selected repository, not the separately installed Redis products, remote MCP contents, npm packages or live runtime behavior. Detailed script/dependency, permission/data-flow, rights and independent full-profile review remain open.
 
 ## Official resources
 
