@@ -1,0 +1,32 @@
+entity:
+  id: catalog/models/xiaomi-mimo/mimo/mimo-v2-6/models/mimo-v2-6-flash-rl
+  type: model
+  name: MiMo-V2.6-Flash-RL
+  identity_note: >-
+    MiMo-V2.6-Flash-RL is a distinct September 2026 Xiaomi MiMo original reinforcement-learned model.
+    Publisher-disclosed scale: about 311B total parameters. Scope: native multimodal text, image, video, audio.
+    Original Flash RL policy with publisher-reported repeated tool calls. Flash-MOPD is a separately trained later checkpoint. The released weights are MIT-labeled; source claims do not
+    constitute independent hardware, benchmark or security evaluation.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://mimo.mi.com/docs/en-US/news/latest/v2-6
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/xiaomi-mimo/mimo/mimo-v2-6

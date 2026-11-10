@@ -1,0 +1,89 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bfa5328bcfab631faba193fa7705711353e69055
+    parent:
+      entity.yml: gitblob:f31139639b2edcfd2e66f7c2e44d1eef4e9a433a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/specifications/protocols/open-responses
+        name: Open Responses
+        aliases:
+        - Open Responses Specification
+        identity_note: Open multi-provider LLM API interoperability specification
+          derived from Responses API concepts. The specification defines the common
+          schema and semantic events for item-based context, tool delegation, streaming
+          and response state; it is not a deployed endpoint or a blanket vendor support
+          claim.
+        references:
+        - type: specification
+          source:
+            url: https://www.openresponses.org/specification
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current first-party normative specification
+        - type: specification
+          source:
+            url: https://www.openresponses.org/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Upstream project and governance
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

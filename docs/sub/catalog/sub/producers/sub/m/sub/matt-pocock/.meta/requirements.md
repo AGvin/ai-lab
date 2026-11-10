@@ -7,6 +7,8 @@
 - Include the official skills repository and GitHub profile as identity or research references.
 - Keep Agent Skill composition, publication status, dependencies, runtime details, and current skill naming with the collection owner.
 
+- Include the identity and producer-boundary context from canonical `entity.identity_note`; keep detailed product behavior with the related canonical owners.
+
 ## Validation
 
 - The producer page contains no temporary-summary or placeholder wording.

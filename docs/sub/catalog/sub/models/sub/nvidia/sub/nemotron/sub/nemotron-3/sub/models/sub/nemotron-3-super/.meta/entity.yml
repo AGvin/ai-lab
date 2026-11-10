@@ -16,6 +16,17 @@ entity:
       purposes:
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
+      purposes: [identification, research]
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/nvidia/nemotron/nemotron-3
+  identity_note: >-
+    Separately released post-trained Nemotron 3 Super 120B-total/12B-active
+    hybrid Mamba-2/Transformer LatentMoE language model with MTP,
+    published 2026-03-11 under NVIDIA Nemotron Open Model License.
+    Up to 1M context is deployment-dependent. BF16, FP8 and NVFP4
+    are weight/serving artifacts; pretrained Super Base is distinct.

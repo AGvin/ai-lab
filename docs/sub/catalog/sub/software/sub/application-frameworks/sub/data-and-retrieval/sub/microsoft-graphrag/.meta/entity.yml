@@ -1,0 +1,31 @@
+entity:
+  id: catalog/software/application-frameworks/data-and-retrieval/microsoft-graphrag
+  type: software
+  name: Microsoft GraphRAG
+  aliases:
+    - microsoft/graphrag
+    - graphrag (Microsoft Research package)
+  references:
+    - type: repository
+      source:
+        url: https://github.com/microsoft/graphrag
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/graphrag/
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/microsoft/graphrag/releases/tag/v3.3.0
+      purposes:
+        - research
+      authority: official
+      note: Non-prerelease research-toolkit release on 2026-10-08.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

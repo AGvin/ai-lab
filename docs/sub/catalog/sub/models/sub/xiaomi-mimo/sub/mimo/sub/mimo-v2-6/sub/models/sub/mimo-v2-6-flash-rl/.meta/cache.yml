@@ -1,0 +1,96 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a4e11832128c9c91b665047037c7cb39a432a622
+    parent:
+      entity.yml: gitblob:b4c5da5ea52d8ff1a63612de0fae3cd71e74a228
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/xiaomi-mimo/mimo/mimo-v2-6/models/mimo-v2-6-flash-rl
+        type: model
+        name: MiMo-V2.6-Flash-RL
+        identity_note: 'MiMo-V2.6-Flash-RL is a distinct September 2026 Xiaomi MiMo
+          original reinforcement-learned model. Publisher-disclosed scale: about 311B
+          total parameters. Scope: native multimodal text, image, video, audio. Original
+          Flash RL policy with publisher-reported repeated tool calls. Flash-MOPD
+          is a separately trained later checkpoint. The released weights are MIT-labeled;
+          source claims do not constitute independent hardware, benchmark or security
+          evaluation.'
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://mimo.mi.com/docs/en-US/news/latest/v2-6
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/xiaomi-mimo/mimo/mimo-v2-6
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

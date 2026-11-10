@@ -17,3 +17,11 @@
 - ZDR or disabled OpenRouter logging is not misrepresented as a guarantee about every downstream provider unless provider routing satisfies that constraint.
 - The profile remains a hosted service, not gateway software.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Scoped original-source qualification — 2026-11-06
+
+- OpenRouter is a hosted intermediary with provider-selection, fallback, privacy and routing controls. The client-to-OpenRouter-to-model-provider data path must remain explicit; a Zero Data Retention filter is a routing policy and does not by itself guarantee every downstream provider's compliance.
+- Document model and provider identity, permitted endpoint, fallback and logging policies per request. Provider listings, live prices and default routes are mutable and do not prove model author provenance.
+- Verified first-party source 1: https://openrouter.ai/docs/guides/routing/provider-selection
+- Verified first-party source 2: https://openrouter.ai/privacy
+- This accepts only the existing service identity and bounded source facts, not a full freshness/license/ownership audit, independent benchmarks, permission to process sensitive data, runtime tests, complete schema/cache/CI/render or final delivery.

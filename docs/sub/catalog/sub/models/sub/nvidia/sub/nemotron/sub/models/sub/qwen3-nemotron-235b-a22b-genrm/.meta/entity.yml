@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/nvidia/nemotron/models/qwen3-nemotron-235b-a22b-genrm
+  type: model
+  name: Qwen3-Nemotron-235B-A22B-GenRM
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/nvidia/Qwen3-Nemotron-235B-A22B-GenRM
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/nvidia/nemotron
+  identity_note: >-
+    NVIDIA generative reward model released on 2025-12-15, fine-tuned from Qwen3-235B-A22B-Thinking-2507 to score and rank candidate responses; used for Nano RLHF. Apache-2.0.

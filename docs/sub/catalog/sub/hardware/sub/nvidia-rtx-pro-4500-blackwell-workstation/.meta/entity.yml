@@ -1,0 +1,23 @@
+entity:
+  id: catalog/hardware/nvidia-rtx-pro-4500-blackwell-workstation
+  type: hardware-product
+  name: "NVIDIA RTX PRO 4500 Blackwell Workstation Edition"
+  identity_note: >-
+    NVIDIA professional Blackwell workstation GPU, distinct from GeForce, RTX PRO 5000 and
+    RTX PRO server variants.
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-eu/products/workstations/professional-desktop-gpus/rtx-pro-4500/
+      purposes: [identification, research]
+      authority: official
+      note: "NVIDIA direct RTX PRO 4500 manufacturer product and specification page"
+    - type: product-page
+      source:
+        url: https://marketplace.nvidia.com/en-us/enterprise/laptops-workstations/pny-rtx-pro-4500-blackwell-workstation-edition/
+      purposes: [identification, research]
+      authority: official
+      note: "NVIDIA marketplace partner-board listing"
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

@@ -1,0 +1,99 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:2cf4c0ee1e4ef79b8c2b6a2649d5c9e5ec29a8eb
+    parent:
+      entity.yml: gitblob:7d01e94aa4b6837806f63975ebeb36a3b3d7c15d
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/cohere-labs/aya/aya-101
+        type: model
+        name: Aya 101
+        identity_note: Aya 101 is Cohere Labs' original separately published February
+          2024 multilingual instruction-tuned text generation model, with approximately
+          13B parameters and 101 supported languages. The original CohereLabs/aya-101
+          weight repository states an Apache-2.0 license and mT5-XXL-style sequence-to-sequence
+          architecture. It is not the later Aya 23/Expanse/Vision model, a hosted
+          Cohere API route or an identified concrete training-parent checkpoint. The
+          model card does not specify a standard supported context length; no independent
+          inference or accuracy check was performed.
+        references:
+        - type: registry
+          source:
+            url: https://huggingface.co/CohereLabs/aya-101
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://cohere.com/blog/aya
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://arxiv.org/abs/2402.07827
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/cohere-labs/aya
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

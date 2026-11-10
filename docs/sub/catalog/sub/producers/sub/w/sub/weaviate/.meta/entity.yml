@@ -1,0 +1,30 @@
+entity:
+  id: catalog/producers/w/weaviate
+  type: organization
+  name: Weaviate
+  identity_note: >-
+    Weaviate is the producer organization behind Weaviate Database and Weaviate Cloud. First-party deployment
+    documentation separates self-managed database installations from the managed cloud service. Database
+    releases and selected components determine software capabilities and licensing, while cloud plans determine
+    managed operations. Vectorizer and generative-model integrations can add external processing and
+    credentials. Review the complete deployment and data path instead of assigning every cloud or model-provider
+    property to the database itself.
+  references:
+    - type: official-site
+      source:
+        url: https://weaviate.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.weaviate.io/deploy
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/data-infrastructure/vector-search/weaviate-cloud
+    - type: produces
+      target: catalog/software/data-infrastructure/vector-search/weaviate

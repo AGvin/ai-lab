@@ -3,16 +3,58 @@ entity:
   type: model-producer-view
   name: Cohere models
   references:
-    - type: official-site
-      source:
-        url: https://cohere.com/
-      purposes:
-        - identification
-        - research
-      authority: official
-    - type: documentation
-      source:
-        url: https://docs.cohere.com/docs/models
-      purposes:
-        - research
-      authority: official
+  - type: official-site
+    source:
+      url: https://cohere.com/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/models
+    purposes:
+    - research
+    authority: official
+  - type: official-site
+    source:
+      url: https://cohere.com/models-overview
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/CohereLabs/c4ai-command-a-03-2025
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: official-site
+    source:
+      url: https://cohere.com/research
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/v2/docs/rerank
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://docs.cohere.com/v2/changelog/rerank-v5
+    purposes:
+    - identification
+    - research
+    authority: official

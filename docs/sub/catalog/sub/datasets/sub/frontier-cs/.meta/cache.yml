@@ -1,0 +1,94 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:afc3b6cd7ed215e0f9f002d087009157f310e8c6
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/frontier-cs
+        type: dataset
+        name: Frontier-CS
+        aliases:
+        - FrontierCS
+        - FrontierCS Research and Algorithmic Benchmark
+        identity_note: Computer-science agent research benchmark comprising open-ended
+          research and algorithmic programming tasks, maintained by the Frontier-CS
+          team. The original repository's benchmark artifacts are distinct from newer
+          FrontierCS 2 and FrontierSmith products, participating codebases, model
+          agents and leaderboard outcomes.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/FrontierCS/Frontier-CS
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/FrontierCS/Frontier-CS/blob/59687e5428266a22a49cf51f981b912103bfa91d/README.md
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/FrontierCS/Frontier-CS/blob/59687e5428266a22a49cf51f981b912103bfa91d/LICENSE
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

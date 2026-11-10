@@ -1,0 +1,45 @@
+entity:
+  id: catalog/datasets/hellaswag
+  type: dataset
+  name: HellaSwag
+  aliases:
+    - "HellaSwag: Can a Machine Really Finish Your Sentence?"
+  identity_note: >-
+    Historical 2019 adversarially filtered commonsense sentence-completion research dataset
+    associated with Rowan Zellers, Ari Holtzman, Yonatan Bisk, Ali Farhadi and Yejin Choi.
+    Its released English train/validation/test task family draws from ActivityNet and WikiHow.
+    The original GitHub repository currently returns an explicit DMCA access block (HTTP 451)
+    tied to a September 2026 wikiHow copyright takedown notice that names rowanz/hellaswag.
+    An accessible third-party distribution does not establish valid upstream data rights;
+    do not recommend copying or redistributing the underlying text until rights are verified.
+  references:
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/1905.07830
+      purposes: [identification, research]
+      authority: upstream
+      note: "Original 2019 paper describing HellaSwag and adversarial filtering."
+    - type: repository
+      source:
+        url: https://github.com/rowanz/hellaswag
+      purposes: [identification, research]
+      authority: official
+      note: "Original research repository; as checked November 1, 2026 GitHub Contents API returned HTTP 451 DMCA access block."
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/Rowan/hellaswag
+      purposes: [identification, research]
+      authority: upstream
+      note: "Existing author-named distribution with no explicit dataset license in current Hub metadata; availability is not rights clearance."
+    - type: documentation
+      source:
+        url: https://www.tensorflow.org/datasets/catalog/hellaswag
+      purposes: [research]
+      authority: upstream
+      note: "Official TensorFlow Datasets catalog documents 39905 train, 10042 validation and 10003 test examples and source-specific splits."
+    - type: repository
+      source:
+        url: https://github.com/github/dmca/blob/master/2026/09/2026-09-14-wikihow.md
+      purposes: [research]
+      authority: official
+      note: "Platform-published 2026 wikiHow takedown notice explicitly lists rowanz/hellaswag; the notice is not a court finding."

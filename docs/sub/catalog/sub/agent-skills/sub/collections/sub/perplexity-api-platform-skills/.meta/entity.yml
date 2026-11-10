@@ -1,0 +1,40 @@
+entity:
+  id: catalog/agent-skills/collections/perplexity-api-platform-skills
+  type: skill-collection
+  name: Perplexity API Platform Skills
+  references:
+  - type: repository
+    source:
+      url: https://github.com/perplexityai/api-platform-developers
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.perplexity.ai/
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.perplexity.ai/docs/search/quickstart
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://github.com/perplexityai/api-platform-developers/blob/78f568a867bc7bc44ce625318b60ac0d86802c5f/README.md
+    purposes: [identification, research]
+    authority: official
+  - type: documentation
+    source:
+      url: https://github.com/perplexityai/api-platform-developers/blob/78f568a867bc7bc44ce625318b60ac0d86802c5f/LICENSE
+    purposes: [identification, research]
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/p/perplexity-ai
+  identity_note: >-
+    Perplexity API Platform Skills is the official repository-backed collection for API migration and search-development workflows. Its portable skill files and plugin packaging are distinct from the public Computer Skills Marketplace. Perplexity's Apache-2.0 repository distributes API-development skill guidance and plugin packaging, separate from the Computer Skills Marketplace. The optional public docs MCP server requires no API key; this does not establish paid search/API entitlement. Inspect scripts and authorize application migration or network calls independently.

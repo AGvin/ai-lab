@@ -1,0 +1,18 @@
+# Documentation Requirements
+
+## Identity and provenance
+
+- ByteDance Seed publicly introduced the distinct Seedream 5.0 Lite image-generation/editing model on **2026-02-13**. It emphasizes instruction/world knowledge reasoning, style/reference editing and optional real-time web-search enhancement. ByteDance's MagicArena Elo and quality comparisons remain publisher-reported, not independently reproduced. [Official launch](https://seed.bytedance.com/en/blog/deeper-thinking-more-accurate-generation-introducing-seedream-5-0-lite).
+- Volcengine Ark lists `doubao-seedream-5-0-260128` and `doubao-seedream-5-0-lite-260128` as two **supported names for one Lite route/model**. BytePlus `seedream-5-0-lite-260128` is a provider route, not an extra independently trained model. Do not infer Pro lineage, parameter count or downloadable weights from these IDs. [Ark comparison](https://docs.volcengine.com/docs/ark/image-generation-tutorial?lang=en) [BytePlus model list](https://docs.byteplus.com/en/docs/modelark/model-list).
+
+## Regional lifecycle and deployment risk
+
+- **Do not start a new integration on the retiring dated Ark route.** Ark's tenth notice marks Lite EOM **2026-09-24 10:00 UTC+8**, EOS **2026-11-24 14:00 UTC+8**, with Pro as suggested replacement. Pro does not automatically provide the same optional search, sequential group generation or quality/price behavior. [Ark notice](https://docs.volcengine.com/docs/ark/model-deprecation-notice?lang=zh) [Ark comparison](https://docs.volcengine.com/docs/ark/image-generation-tutorial?lang=en).
+- Volcengine **Agent Plan**, not all Ark routes, discontinued its Lite entry on **2026-10-12**. BytePlus explicitly **deactivated eu-west-1 Lite endpoints on 2026-09-10**, directing migrations to **ap-southeast-1**. Its generic model-list page nevertheless still says Lite is supported in eu-west-1; that listing conflicts with its dated deactivation notice. Treat eu-west-1 as **not available** absent independent live confirmation; do not apply one provider's retirement globally. [Agent Plan notice](https://docs.volcengine.com/docs/ark/agent-plan-personal-model-deprecation-announcement?lang=en) [BytePlus deactivation](https://docs.byteplus.com/en/docs/modelark/model-deprecation-notice) [BytePlus generic list](https://docs.byteplus.com/en/docs/modelark/model-list).
+- The reviewed Ark/BytePlus services support text-to-image, reference-based editing and sequential group generation; the first-party launch describes optional real-time search. Check whether search is enabled on the exact route/API and verify prompt/data-sharing implications, image resolution and per-image billing before deployment. [Launch](https://seed.bytedance.com/en/blog/deeper-thinking-more-accurate-generation-introducing-seedream-5-0-lite) [Ark tutorial](https://docs.volcengine.com/docs/ark/image-generation-tutorial?lang=en) [BytePlus image API](https://docs.byteplus.com/en/docs/modelark/image-generation-api) [BytePlus pricing](https://docs.byteplus.com/en/docs/modelark/model-pricing).
+- No independent inference, provider availability probe, beneficial-owner determination, parameter/weights licensing or full freshness audit was performed. Do not label current Russian Tier 1/2 links without verifiable ownership evidence; keep provenance pending.
+
+## Validation
+
+- One canonical Lite identity and a single reciprocal `member-of`/`has-member` pair; no duplicate alias models, parent lineage inference, new producer or duplicate family acceptance.
+- Complete reader must preserve provider/region/EOM/EOS distinctions and dated conflict; scoped documentation is not global schema/cache validation, fresh account testing, clean saturation or a final publication gate.

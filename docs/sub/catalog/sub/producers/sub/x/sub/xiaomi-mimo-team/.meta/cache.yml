@@ -1,0 +1,98 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:970d095a56ab3f7129ae2ee4a1a04b5afc8561fd
+    parent:
+      entity.yml: gitblob:6d21a59fa57088ad602d22d78dffc0d40db48cf8
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/x/xiaomi-mimo-team
+        type: team
+        name: Xiaomi MiMo Team
+        identity_note: Xiaomi MiMo Team is the producing team identified by the MiMo
+          site and official XiaomiMiMo model registry. The MiMo family is separate
+          from Xiaomi corporate identities, consumer devices and hosted MiMo product
+          surfaces. Checkpoint licenses, architecture code, inference requirements
+          and publication revisions must be checked per model. Registry examples that
+          load custom model code require review of that code and its pinned revision.
+          Publishing a new checkpoint does not automatically complete catalog intake
+          or expand the team's canonical family membership.
+        references:
+        - type: official-site
+          source:
+            url: https://mimo.xiaomi.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/XiaomiMiMo
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/models/xiaomi-mimo/mimo
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

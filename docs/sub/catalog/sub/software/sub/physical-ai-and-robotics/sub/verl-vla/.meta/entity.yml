@@ -1,0 +1,70 @@
+entity:
+  id: catalog/software/physical-ai-and-robotics/verl-vla
+  type: software
+  name: verl-vla
+  references:
+    - type: repository
+      source:
+        url: https://github.com/verl-project/verl-vla
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/verl-project/verl-vla/releases/tag/v0.1.0
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/verl-project/verl-vla/blob/v0.1.0/pyproject.toml
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/verl-project/verl-vla/blob/v0.1.0/requirements.txt
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://verl-vla.readthedocs.io/en/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://verl-vla.readthedocs.io/en/latest/getting-started/index.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://verl-vla.readthedocs.io/en/latest/framework-overview/resource-and-configuration.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://verl-vla.readthedocs.io/en/latest/framework-overview/train-cluster.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://verl-vla.readthedocs.io/en/latest/troubleshooting/distributed-execution/ray-over-ssh.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://verl-vla.readthedocs.io/en/latest/data-collection/piper/keyboard.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/verl-project

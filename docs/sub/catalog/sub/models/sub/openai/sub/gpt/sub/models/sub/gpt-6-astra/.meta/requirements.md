@@ -11,3 +11,14 @@
 
 - GPT-6 Astra is a direct concrete member of GPT; no speculative GPT-6 series is created solely to anticipate future sibling models.
 - Hosted product availability is distinguished from architectural/model facts.
+
+## Source-scoped operating boundaries
+
+- Tool use requires Responses; Chat Completions does not support tools for this model. Reasoning effort none and minimal are not supported. [Model reference](https://developers.openai.com/api/docs/models/gpt-6-astra).
+- Tool calls express proposed actions. The application remains responsible for permissions and for handling untrusted instructions in files, skills, and tool results [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).
+
+## Source evidence
+
+- [gpt-6-astra model reference](https://developers.openai.com/api/docs/models/gpt-6-astra).
+- [API changelog](https://developers.openai.com/api/docs/changelog).
+- [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).

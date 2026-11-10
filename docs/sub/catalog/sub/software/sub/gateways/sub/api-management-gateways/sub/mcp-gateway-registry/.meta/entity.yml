@@ -1,0 +1,27 @@
+entity:
+  id: catalog/software/gateways/api-management-gateways/mcp-gateway-registry
+  type: software
+  name: MCP Gateway & Registry
+  references:
+    - type: repository
+      source:
+        url: https://github.com/agentic-community/mcp-gateway-registry
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/agentic-community/mcp-gateway-registry/releases
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://agentic-community.github.io/mcp-gateway-registry/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/agentic-community

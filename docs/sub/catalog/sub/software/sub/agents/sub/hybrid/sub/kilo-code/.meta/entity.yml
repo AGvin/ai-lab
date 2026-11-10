@@ -29,6 +29,18 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://kilo.ai/docs/contributing/architecture/cli-runtime
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://kilo.ai/docs/code-with-ai/platforms/cli-reference
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/k/kilo-code-inc

@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/vstar-bench
+  type: dataset
+  name: "V*Bench"
+  aliases:
+    - "VStar High-Resolution Visual Search Benchmark"
+  identity_note: >-
+    High-resolution image understanding and small-detail localization benchmark with 191 multiple-choice questions split between attribute recognition and spatial reasoning.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/craigwu/vstar_bench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/penghao-wu/vstar/blob/4ede6647959cfb59eeabd09286adf6a5f9478da0/README.md
+      purposes: [research]
+      authority: official

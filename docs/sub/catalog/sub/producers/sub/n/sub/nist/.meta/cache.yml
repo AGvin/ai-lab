@@ -1,0 +1,115 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b327e5017dea14b4543028a7b7930b889da5beee
+    parent:
+      entity.yml: gitblob:5e848f769005e6f901786fd212d8c9d8ccc468b3
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/n/nist
+        type: organization
+        name: National Institute of Standards and Technology
+        aliases:
+        - NIST
+        - US NIST
+        identity_note: NIST is the US National Institute of Standards and Technology,
+          a non-regulatory federal agency in the US Department of Commerce, originally
+          founded in 1901. It publishes scientific measurement and voluntary AI risk
+          guidance including NIST AI RMF 1.0 (NIST AI 100-1, January 26, 2023) and
+          the separate NIST AI 600-1 Generative AI Profile (July 26, 2024). The agency
+          is neither a commercial AI model/API vendor nor a private beneficially held
+          company. Published guidance is not an endorsement or certification of any
+          third-party AI model/service. NIST's current AI RMF work indicates that
+          the 1.0 framework revision is in progress, not a completed published successor.
+        references:
+        - type: official-site
+          source:
+            url: https://www.nist.gov/about-nist
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: NIST's federal US Department of Commerce agency status, founding and
+            scientific standards role.
+        - type: official-site
+          source:
+            url: https://www.nist.gov/itl/ai-risk-management-framework
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: NIST's current publication and revision descriptions.
+        - type: specification
+          source:
+            url: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10
+          purposes:
+          - research
+          authority: official
+          note: Published 2023 AI 100-1 original NIST framework.
+        - type: specification
+          source:
+            url: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
+          purposes:
+          - research
+          authority: official
+          note: Published 2024 AI 600-1 profile under the NIST publisher.
+        relations:
+        - type: produces
+          target: catalog/specifications/standards/nist-ai-rmf-1-0
+        - type: produces
+          target: catalog/specifications/standards/nist-ai-600-1-generative-ai-profile
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

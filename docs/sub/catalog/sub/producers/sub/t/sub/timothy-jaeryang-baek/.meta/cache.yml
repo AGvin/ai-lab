@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:fa587f2aae511f9d1ef25708041ac5d1eda54c29
+      entity.yml: gitblob:ccdb068a975ce1c26d975e520cf6569c728d624a
     parent:
       entity.yml: gitblob:28ad9dbbd921bafdc12d024f89757651c4767ef8
   state:
@@ -64,6 +64,12 @@ cache:
           authority: official
           note: The current upstream project identifies Open WebUI as created by Timothy
             Jaeryang Baek.
+        - type: other
+          source:
+            url: https://github.com/open-webui/open-webui/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/interfaces-and-workspaces/conversational-platforms/open-webui

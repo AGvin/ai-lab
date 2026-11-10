@@ -1,0 +1,114 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:82b30717b9a35b22e87b4421b0bfaa4447aa9fe5
+    parent:
+      entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/hardware/amd-ryzen-ai-halo-developer-platform
+        type: hardware
+        name: AMD Ryzen AI Halo Developer Platform
+        identity_note: AMD Ryzen AI Halo Developer Platform is AMD's complete local-AI
+          developer computer, distinct from its processors and OEM partner systems.
+          AMD's current product page shows a 128 GB shared-LPDDR5x Ryzen AI Max+ 395
+          / Radeon 8060S configuration and separately labels a Ryzen AI Max+ PRO 495
+          / Radeon 8065S version with 192 GB memory support as 'Coming Soon'. A previously
+          recorded third-party US listing does not establish manufacturer availability
+          or current retail stock; keep the product lifecycle discrepancy unresolved.
+          AMD's 200B/300B parameter fit and performance comparisons are vendor configuration
+          claims, not independently verified model fit or measured throughput. OS,
+          firmware, stock, region, GPU allocation and peripheral specifications belong
+          to the exact assembled configuration.
+        aliases:
+        - AMD Ryzen AI Halo
+        references:
+        - type: product-page
+          source:
+            url: https://www.amd.com/en/products/processors/desktops/ryzen/ryzen-ai-halo.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://www.amd.com/en/products/processors/desktops/ryzen/ryzen-ai-halo/ryzen-ai-max-plus-395.html
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developer.amd.com/playbooks/user-guide/
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://www.amd.com/en/blogs/2026/amd-powers-next-generation-agent-computers-with-new-ryzen-ai-hal.html
+          purposes:
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://www.amd.com/en/products/processors/laptop/ryzen-pro/ai-max-pro-400-series/amd-ryzen-ai-max-plus-pro-495.html
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/advanced-micro-devices-inc
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

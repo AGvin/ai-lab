@@ -18,6 +18,8 @@
 - Keep schema-level details such as exact JSON-RPC methods, request/result structures, `_meta` keys, required `resultType`, cache hints, error-code allocation, and capability objects aligned to the versioned first-party schema; avoid duplicating large enums or method inventories when a source reference is more durable.
 - Keep conceptual identity, architecture interpretation, trust-boundary explanation, and relationship to Tool Calling / Agent Skills / Plugins with the canonical MCP concept owner; keep using/building/debugging/operations/security pedagogy with the selected MCP learning subtree.
 - Keep concrete MCP clients, hosts, servers, SDKs, registries, provider support matrices, implementation bugs, security advisories, deployment configurations, and mutable version/support facts with their applicable catalog/software/service/evidence owners.
+- Preserve Anthropic as the original MCP producer and AAIF as the current foundation steward using distinct produced-by and maintained-by relations with exact inverses at the producer nodes.
+- Ground origin in Anthropic’s November 2024 introduction and stewardship in the December 2025 donation and current AAIF project listing. Keep foundation stewardship separate from the individual maintainers’ technical authority and the LF Projects policies described by the MCP governance document.
 
 ## Validation
 
@@ -26,3 +28,13 @@
 - Historical compatibility behavior is labeled as legacy/dual-era behavior rather than blended into the modern core.
 - Deprecated features are not recommended for new implementations merely because they remain supported during the deprecation window.
 - This specification node does not become an MCP tutorial, SDK guide, product-support matrix, or generic integration concept page.
+- The Anthropic origin and AAIF stewardship relations are separately sourced, reciprocal, and rendered without implying that either organization exclusively owns all MCP implementations.
+- This provenance repair does not revise the previously recorded protocol-version or implementation-semantics baseline.
+
+## Scoped original-source qualification — 2026-11-07
+
+- MCP is the first-party versioned protocol for LLM applications to connect to tools, resources and prompts. The official revision under this existing entity is 2026-07-28; its JSON-RPC 2.0 contract, version negotiation, per-request metadata, transports and authorization are specifications, not the behavior of one client/SDK or a blanket security authorization.
+- Keep older initialize/session semantics and deprecated roots/sampling/logging or HTTP+SSE only in their supported revision/compatibility contexts. MCP is not A2A or a universal marketplace/permission grant; server trust, credentials, user consent, tools and prompt-injection mitigations are deployment concerns.
+- Verified primary source 1: https://modelcontextprotocol.io/specification/2026-07-28
+- Verified primary source 2: https://github.com/modelcontextprotocol/modelcontextprotocol
+- Existing protocol/producer/maintainer identity source gate only; no MCP connection/session, host or server implementation test, independent security or full specification conformance audit, root-wide schema/cache/CI/render, clean pass or final gate.

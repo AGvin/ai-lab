@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:f21491476404e981d0dd3420729556fb78f26498
+      entity.yml: gitblob:9311a8c95194cc00992a2cae624cb19416a63a98
     parent:
       entity.yml: gitblob:0c958ac9b06255323dd6f40493fd9f05736b939d
   state:
@@ -83,6 +83,22 @@ cache:
           authority: official
           note: Official Pi announcement documenting the move to Earendil Works while
             preserving the product identity and direction.
+        - type: article
+          source:
+            url: https://earendil.com/posts/pi-1-0/
+          purposes:
+          - research
+          authority: official
+          note: October 1, 2026 Pi 1.0 release; distinguishes new core capabilities
+            from experimental Pi Durable.
+        - type: article
+          source:
+            url: https://earendil.com/posts/pi-durable/
+          purposes:
+          - research
+          authority: official
+          note: First-party description of Pi Durable as a separate experimental framework,
+            not a Pi coding-agent replacement.
         relations:
         - type: produced-by
           target: catalog/producers/m/mario-zechner

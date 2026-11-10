@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:2111a83fa2c94e91788542cdb974f5fb0e58c74b
+      entity.yml: gitblob:881ad6196f2098f776b1a5c24746f1ab17bf6bf1
     parent:
       entity.yml: gitblob:46b91081ab3e21420c7289bb28e30b3d82f867a5
   state:
@@ -65,6 +65,8 @@ cache:
         relations:
         - type: produces
           target: catalog/models/davidau/qwen3-derived/models/qwen3-the-xiaolong-josiefied-omega-directive-22b
+        - type: produces
+          target: catalog/models/davidau/qwen3-derived/models/qwen3-the-josiefied-omega-directive-22b
     aliases:
       effective:
         schema: default

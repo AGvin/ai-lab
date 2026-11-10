@@ -4,6 +4,10 @@ Hugging Face Accelerate is an open-source Python library and CLI for adapting Py
 
 It coordinates PyTorch distributed execution and integrations such as DeepSpeed and FSDP rather than acting as a standalone model-serving runtime.
 
+## Relations
+
+- Produced by: [Hugging Face, Inc.](../../../../../../../producers/sub/h/sub/hugging-face-inc/)
+
 ## Official resources
 
 - [Accelerate documentation](https://huggingface.co/docs/accelerate/en/index)

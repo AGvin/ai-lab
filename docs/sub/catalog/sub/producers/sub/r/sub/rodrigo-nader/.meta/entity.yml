@@ -3,22 +3,31 @@ entity:
   type: individual
   name: Rodrigo Nader
   references:
-    - type: article
-      source:
-        url: https://www.langflow.org/blog/langflow-datastax-better-together
-      purposes:
-        - identification
-        - research
-      authority: official
-      note: First-party Langflow history by Rodrigo Nader describes the project beginning from his and Gabriel Almeida's shared work before Langflow joined DataStax.
-    - type: repository
-      source:
-        url: https://github.com/langflow-ai/langflow/blob/main/pyproject.toml
-      purposes:
-        - identification
-        - research
-      authority: official
-      note: Current Langflow package metadata lists Rodrigo Nader among the maintainers.
+  - type: article
+    source:
+      url: https://www.langflow.org/blog/langflow-datastax-better-together
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: First-party Langflow history by Rodrigo Nader describes the project beginning from his and Gabriel Almeida's
+      shared work before Langflow joined DataStax.
+  - type: repository
+    source:
+      url: https://github.com/langflow-ai/langflow/blob/main/pyproject.toml
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: Current Langflow package metadata lists Rodrigo Nader among the maintainers.
+  - type: article
+    source:
+      url: https://community.ibm.com/community/user/blogs/datastax-pm-team-datastax-pm-team/2025/10/02/ibm-datastax
+    purposes:
+    - identification
+    - research
+    authority: official
+    note: IBM/DataStax account.
   relations:
-    - type: produces
-      target: catalog/software/workflow-engines/visual-ai-workflows/langflow
+  - type: produces
+    target: catalog/software/workflow-engines/visual-ai-workflows/langflow

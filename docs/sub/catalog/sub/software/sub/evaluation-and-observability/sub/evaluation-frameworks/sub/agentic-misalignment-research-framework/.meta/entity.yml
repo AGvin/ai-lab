@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/agentic-misalignment-research-framework
+  type: software
+  name: Agentic Misalignment Research Framework
+  aliases:
+    - Agentic Misalignment
+    - Anthropic Agentic Misalignment Framework
+  identity_note: >-
+    Research experiment runner for testing language-model agent behavior in explicitly fictional adverse scenarios. The evaluation software is distinct from Anthropic models, published findings, generated experimental prompts and external model APIs.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/anthropic-experimental/agentic-misalignment
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/anthropic-experimental/agentic-misalignment/blob/ea0630e1a3eaae7f9f9740fd2703229d3854ccda/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/anthropic-experimental/agentic-misalignment/blob/ea0630e1a3eaae7f9f9740fd2703229d3854ccda/requirements.txt
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/anthropic-experimental/agentic-misalignment/blob/ea0630e1a3eaae7f9f9740fd2703229d3854ccda/LICENSE
+      purposes: [research]
+      authority: official

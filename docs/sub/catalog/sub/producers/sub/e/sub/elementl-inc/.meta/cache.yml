@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:5930ca8aef346403ff3674941d76cd898e38dfcb
+      entity.yml: gitblob:26c90ead8b5e4cecf6b225c89c01986f37e620c2
     parent:
       entity.yml: gitblob:84f5c924f886554c9717fb6d41116903ae28851e
   state:
@@ -47,6 +47,8 @@ cache:
         name: Elementl, Inc.
         aliases:
         - Dagster Labs
+        identity_note: Company doing business as Dagster Labs; distinct from Element
+          Labs, Inc., the company behind LM Studio.
         references:
         - type: other
           source:
@@ -66,6 +68,14 @@ cache:
           authority: official
           note: First-party company history identifies Elementl/Dagster Labs as the
             company behind the Dagster open-source project and Dagster+.
+        - type: article
+          source:
+            url: https://www.prefect.io/prefect-acquires-dagster
+          purposes:
+          - research
+          authority: official
+          note: July 2026 acquisition announcement and continued Dagster product support;
+            not evidence of a separate completed legal ownership edge.
         relations:
         - type: produces
           target: catalog/software/workflow-engines/data-and-compute-orchestration/dagster

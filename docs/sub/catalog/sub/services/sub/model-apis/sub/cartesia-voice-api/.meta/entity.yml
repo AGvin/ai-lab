@@ -1,0 +1,41 @@
+entity:
+  id: catalog/services/model-apis/cartesia-voice-api
+  type: service
+  name: Cartesia Voice API
+  identity_note: >-
+    Provider-operated Cartesia speech-model API including text-to-speech
+    REST and streaming/WebSocket interfaces and available real-time
+    speech-to-text endpoints. Specific Sonic/Ink models, voices and
+    separately managed agent workflows are not duplicate API-service
+    identities. API authentication and version requirements differ by
+    transport and endpoint.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cartesia.ai/get-started/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cartesia.ai/api-reference/tts/bytes
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cartesia.ai/api-reference/tts/websocket
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cartesia.ai/api-reference/stt/turns/websocket
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cartesia

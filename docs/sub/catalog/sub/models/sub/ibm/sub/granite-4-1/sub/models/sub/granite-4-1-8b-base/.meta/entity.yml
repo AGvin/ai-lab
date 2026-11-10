@@ -1,0 +1,18 @@
+entity:
+  id: catalog/models/ibm/granite-4-1/models/granite-4-1-8b-base
+  type: model
+  name: Granite 4.1 8B Base
+  identity_note: IBM Granite 4.1 8B Base is a separately released base language model for adaptation.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-4.1-8b-base
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/ibm/granite-4-1
+  - type: has-derivative
+    target: catalog/models/ibm/granite-4-2/models/granite-4-2-8b

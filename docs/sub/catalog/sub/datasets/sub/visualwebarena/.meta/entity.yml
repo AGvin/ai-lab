@@ -1,0 +1,21 @@
+entity:
+  id: catalog/datasets/visualwebarena
+  type: dataset
+  name: VisualWebArena
+  references:
+    - type: repository
+      source:
+        url: https://github.com/web-arena-x/visualwebarena
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/web-arena-x/visualwebarena/blob/main/README.md
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/w/webarena-x

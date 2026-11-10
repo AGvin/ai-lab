@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:4143cec7e56b3f20b35c927d338c222a2f77941a
+      entity.yml: gitblob:3c648ecbbc04cf204e1be47937d0d0f3256a0f50
     parent:
       entity.yml: gitblob:8fac2314e88755b43bc622e0d92b4c5ab01c3bf8
   state:
@@ -58,6 +58,20 @@ cache:
             url: https://github.com/OpenHands/OpenHands
           purposes:
           - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/OpenHands/software-agent-sdk
+          purposes:
+          - research
+          authority: official
+          note: Canonical SDK and Agent Server implementation, separate from Agent
+            Canvas UI.
+        - type: documentation
+          source:
+            url: https://github.com/OpenHands/docs/blob/main/openhands/usage/agent-canvas/setup.mdx
+          purposes:
           - research
           authority: official
         relations:

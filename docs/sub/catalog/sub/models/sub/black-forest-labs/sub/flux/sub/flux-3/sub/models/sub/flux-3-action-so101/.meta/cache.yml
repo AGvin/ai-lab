@@ -1,0 +1,105 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:67b4684e3d0f73bf29d4c52f8506725b2651c41a
+    parent:
+      entity.yml: gitblob:6df244b023fd28bbcd416c960f2324452509ef6d
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/series
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-action-so101
+        type: model
+        name: FLUX 3 Action SO-101
+        identity_note: FLUX 3 Action SO-101 is the separately released Black Forest
+          Labs SO-101 embodiment fine-tuned policy. It is fine-tuned separately from
+          the FLUX 3 Action adaptation base for the SO-101 observation and robot action
+          interface, released as a gated LeRobot model. SO-101 action/state normalization,
+          camera layout, hardware interfaces and safety bounds are distinct from DROID.
+          Never assume DROID performance transfers to SO-101. Weights are gated under
+          the FLUX Kommunity License; the Apache-2.0 reference code and auxiliary
+          encoders have separate license boundaries. BFL benchmark and speed numbers
+          are publisher evidence, not AI Lab tests. No robot-deployment safety certification
+          or local inference is established.
+        references:
+        - type: documentation
+          source:
+            url: https://huggingface.co/black-forest-labs/flux-3-action-so101
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/blog/black-forest-labs/flux-3-action
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://bfl.ai/models/flux-3-action
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/black-forest-labs/flux-action/blob/main/docs/setup.md
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/black-forest-labs/flux/flux-3
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

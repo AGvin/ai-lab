@@ -1,0 +1,21 @@
+entity:
+  id: catalog/datasets/tua-bench
+  type: dataset
+  name: TUA-Bench
+  aliases:
+    - Terminal-Use Agent Benchmark
+  references:
+    - type: repository
+      source:
+        url: https://github.com/facebookresearch/TUA-Bench
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2606.28480
+      purposes:
+        - identification
+        - research
+      authority: upstream

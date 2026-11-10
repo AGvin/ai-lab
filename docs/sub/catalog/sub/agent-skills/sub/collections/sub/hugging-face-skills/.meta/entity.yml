@@ -1,0 +1,34 @@
+entity:
+  id: catalog/agent-skills/collections/hugging-face-skills
+  type: skill-collection
+  name: Hugging Face Skills
+  identity_note: >-
+    Hugging Face's Apache-2.0 collection covers Hub and ML workflows; hf-cli is the documented bootstrap route and extra workflow skills can be installed on demand. Instructions, CLI/MCP integration, model/dataset assets and cloud jobs are separate. Repository licensing does not clear model/data rights or authorize training, uploads or billable deployments.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/huggingface/skills
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents/
+      purposes:
+        - research
+      authority: independent
+      note: AWS first-party implementation article documenting six Hugging Face Skills used for production SageMaker deployment workflows at a pinned Hugging Face Skills revision.
+    - type: documentation
+      source:
+        url: https://github.com/huggingface/skills/blob/25910b3d0ba31a2ba102f901cdc9e008c278a69c/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/huggingface/skills/blob/25910b3d0ba31a2ba102f901cdc9e008c278a69c/LICENSE
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/h/hugging-face-inc

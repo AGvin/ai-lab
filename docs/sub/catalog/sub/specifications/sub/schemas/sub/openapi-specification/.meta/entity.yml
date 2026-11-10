@@ -1,0 +1,28 @@
+entity:
+  id: catalog/specifications/schemas/openapi-specification
+  name: OpenAPI Specification
+  aliases:
+    - OAS
+  references:
+    - type: specification
+      source:
+        url: https://spec.openapis.org/oas/v3.2.1.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: specification
+      source:
+        url: https://spec.openapis.org/oas/latest.html
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/OAI/OpenAPI-Specification
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openapi-initiative

@@ -1,0 +1,34 @@
+entity:
+  id: catalog/producers/r/recognai-slu
+  type: organization
+  name: Recognai, S.L.U.
+  aliases:
+    - Recognai
+    - Argilla
+  references:
+    - type: article
+      source:
+        url: https://argilla.io/blog/recognai-rubrix-evolve-into-argilla/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: The October 2022 account identifies Recognai as the company behind Rubrix and records the Argilla rename.
+    - type: other
+      source:
+        url: https://argilla.io/terms-of-use/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Historical legal identity only; the notice was last modified on October 11, 2022 and names Recognai, S.L.U.
+    - type: article
+      source:
+        url: https://argilla.io/blog/argilla-joins-hugggingface/
+      purposes:
+        - research
+      authority: official
+      note: The June 2024 acquisition account concerns the later Argilla ownership layer rather than original production.
+  relations:
+    - type: produces
+      target: catalog/software/model-and-data-platforms/dataset-curation/argilla

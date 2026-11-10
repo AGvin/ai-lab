@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7db34419f1c50c9e078090350106cfcf1780db12
+      entity.yml: gitblob:092da86a8be6c0c9e17a0b399aea6cca25ca0f90
     parent:
       entity.yml: gitblob:c0afadd5957d2edd75bba157fb68e13fd5d8a0a8
       node.yml: gitblob:20b4ce2d2f27a54e2a5eecd1d049754e1eee022e
@@ -46,8 +46,9 @@ cache:
         id: catalog/agent-skills/registries/skills-sh
         type: skill-registry
         name: skills.sh
-        aliases:
-        - Vercel Skills CLI
+        identity_note: skills.sh is the public multi-source Agent Skills discovery
+          index and leaderboard. The separately installable Skills CLI is independent
+          software, not a registry alias or the Vercel Agent Skills source collection.
         references:
         - type: official-site
           source:

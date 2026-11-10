@@ -3,16 +3,23 @@ entity:
   type: model-producer-view
   name: xAI models
   references:
-    - type: official-site
+    - type: documentation
       source:
-        url: https://x.ai/
+        url: https://docs.x.ai/developers/models
       purposes:
         - identification
         - research
       authority: official
-    - type: documentation
+    - type: official-site
       source:
-        url: https://docs.x.ai/
+        url: https://x.ai/api
       purposes:
         - research
       authority: official
+    - type: other
+      source:
+        url: https://x.ai/legal/terms-of-service
+      purposes:
+        - research
+      authority: official
+  identity_note: Producer-oriented catalog view under the retained xAI namespace; current public branding is SpaceXSI and the canonical producer is SpaceXAI LLC.

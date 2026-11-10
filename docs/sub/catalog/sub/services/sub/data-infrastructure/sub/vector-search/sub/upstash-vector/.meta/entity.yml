@@ -1,0 +1,24 @@
+entity:
+  id: catalog/services/data-infrastructure/vector-search/upstash-vector
+  type: service
+  name: Upstash Vector
+  aliases:
+    - Upstash Vector Database
+  identity_note: >-
+    Upstash's managed, serverless vector-index service exposed through REST and SDK interfaces. It is a provider-operated vector search database, not a customer-installed search engine, a standalone embedding model, or a hosted web search engine.
+  references:
+    - type: documentation
+      source:
+        url: https://upstash.com/docs/vector/overall/whatisvector
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://upstash.com/pricing/vector
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://upstash.com/docs/vector/help/faq
+      purposes: [research]
+      authority: official

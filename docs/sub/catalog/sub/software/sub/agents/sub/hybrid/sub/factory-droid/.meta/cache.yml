@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:cc459e1254ea98ecca9a6d9c88853ec8589af901
+      entity.yml: gitblob:0e4ca8c5d25286f53f7e11309b041efbab88a1fa
     parent:
       entity.yml: gitblob:8fac2314e88755b43bc622e0d92b4c5ab01c3bf8
   state:
@@ -63,6 +63,24 @@ cache:
         - type: documentation
           source:
             url: https://docs.factory.ai/enterprise/network-and-deployment
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.factory.com/factory-app/overview
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.factory.com/droid-computers/overview
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.factory.com/remote-control
           purposes:
           - research
           authority: official

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/worldsense
+  type: dataset
+  name: "WorldSense"
+  aliases:
+    - "Synthetic Grounded Reasoning Benchmark"
+  identity_note: >-
+    Synthetic grounded-reasoning dataset with an official 87,048-trial test set and separate memorization and out-of-distribution suites; versioned historical model result files are not part of the canonical task identity.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/facebookresearch/worldsense
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/facebookresearch/worldsense/blob/bd81d945077f169cf95ff39207f788f86e4645e9/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/facebookresearch/worldsense/blob/bd81d945077f169cf95ff39207f788f86e4645e9/LICENSE
+      purposes: [research]
+      authority: official

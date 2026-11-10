@@ -1,12 +1,14 @@
 # Berrie AI Incorporated
 
-Berrie AI Incorporated (`BerriAI`) is the organization behind LiteLLM. The producer identity remains distinct from the LiteLLM software product and from separately operated hosted or enterprise service surfaces.
+Berrie AI Incorporated is the organization identified by the LiteLLM site and associated with the BerriAI upstream publishing identity.
 
-## Produces
+The company, LiteLLM software, and hosted or enterprise delivery are separate concerns. LiteLLM’s integration with a model provider does not make that model a Berrie AI product.
 
-- [LiteLLM](../../../../../software/sub/gateways/sub/model-gateways/sub/litellm/) — model gateway and compatibility layer.
+## Relations
+
+- Produces: [LiteLLM](../../../../../software/sub/gateways/sub/model-gateways/sub/litellm/)
 
 ## Official resources
 
-- [LiteLLM](https://www.litellm.ai/)
+- [LiteLLM publisher identity](https://www.litellm.ai/)
 - [LiteLLM repository](https://github.com/BerriAI/litellm)

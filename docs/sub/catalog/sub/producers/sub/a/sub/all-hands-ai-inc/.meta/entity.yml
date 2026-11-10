@@ -28,3 +28,5 @@ entity:
   relations:
     - type: produces
       target: catalog/software/agents/hybrid/openhands
+    - type: produces
+      target: catalog/software/agent-frameworks/openhands-sdk

@@ -1,0 +1,114 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bda2ae1eb14062ab55b4e0606046ea208ac09920
+    parent:
+      entity.yml: gitblob:db0350eaec1a453a5eaa80eb1010683969f5d346
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/cloudflare/clef/models/clef
+        type: model
+        name: Clef
+        identity_note: Clef is Cloudflare's concrete 27B decision model, released
+          on 1 October 2026 and post-trained from Qwen/Qwen3.8-27B. It uses a joint
+          schema head to score predefined answers from text, structured state and
+          supported visual inputs, without free-form text generation. The Apache 2.0
+          release includes the backbone, joint schema head, processor and model-specific
+          implementation. Workers AI currently documents a 65,536-token context; questions
+          and media consume that budget and long text state can be truncated. Validate
+          retained evidence and decision thresholds before acting on a probability.
+        references:
+        - type: documentation
+          source:
+            url: https://developers.cloudflare.com/workers-ai/models/clef/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://developers.cloudflare.com/changelog/post/2026-10-09-clef-omni-workers-ai/
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/Cloudflare/clef
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://blog.cloudflare.com/clef-decision-models/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/cloudflare/clef
+        - type: derived-from
+          target: catalog/models/alibaba/qwen/qwen3-8/models/qwen3-8-27b
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

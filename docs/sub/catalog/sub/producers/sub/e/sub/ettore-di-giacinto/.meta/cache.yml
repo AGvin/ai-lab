@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c78ca80ec38134d92c29602f0552211674925bbf
+      entity.yml: gitblob:f5f06456508cd9e8e29b25412ffdd451b435b620
     parent:
       entity.yml: gitblob:84f5c924f886554c9717fb6d41116903ae28851e
   state:
@@ -63,6 +63,15 @@ cache:
           authority: official
           note: Current LocalAI overview identifies Ettore Di Giacinto as creator,
             original author, and project lead.
+        - type: repository
+          source:
+            url: https://github.com/mudler/LocalAI
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current repository names Ettore Di Giacinto as original author and
+            project lead alongside the LocalAI team.
         relations:
         - type: produces
           target: catalog/software/inference-runtimes/integrated-platforms/localai

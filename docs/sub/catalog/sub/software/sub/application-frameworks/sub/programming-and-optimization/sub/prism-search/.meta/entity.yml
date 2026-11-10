@@ -1,0 +1,38 @@
+entity:
+  id: catalog/software/application-frameworks/programming-and-optimization/prism-search
+  type: software
+  name: PRISM Search
+  aliases:
+    - PRISM
+    - Predictive Protocol for Permutation Optimization
+  identity_note: >-
+    Blessings Mambwe's installable Python research software for predictive
+    landscape diagnostics and permutation optimization. The MIT-licensed
+    code package is distinct from the CC-BY-4.0 research artifacts, optional
+    Inspect AI experiment tasks, referenced paper and externally hosted models.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/bleymambwe/PRISM
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/bleymambwe/PRISM/blob/07d36e0a9e137ada1bc53ae70b3c2eb099bc2055/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/bleymambwe/PRISM/blob/07d36e0a9e137ada1bc53ae70b3c2eb099bc2055/pyproject.toml
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/bleymambwe/PRISM/blob/07d36e0a9e137ada1bc53ae70b3c2eb099bc2055/LICENSE
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/bleymambwe/PRISM/blob/07d36e0a9e137ada1bc53ae70b3c2eb099bc2055/LICENSE-ARTIFACTS
+      purposes: [research]
+      authority: official

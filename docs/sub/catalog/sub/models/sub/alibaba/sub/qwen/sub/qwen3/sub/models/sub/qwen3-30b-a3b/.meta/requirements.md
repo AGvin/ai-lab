@@ -20,9 +20,22 @@
 - State clearly that active parameters are not total storage or memory and published artifact size is not peak VRAM.
 - Link version nodes and keep version-specific behavior, naming, and context changes there.
 
+## Decision and Operational Boundaries
+
+- Qwen3-30B-A3B is an Apache-2.0 MoE model with 30.5B total and 3.3B active parameters.
+- Keep initial hybrid-thinking behavior and Instruct-2507 non-thinking behavior on their respective version owners; neither mode nor context is universal across the model's represented releases.
+- Active parameters do not describe resident weights, KV cache, total RAM/VRAM, or equivalence to a dense 3B model.
+- Keep model-generated text, code, and tool arguments separate from permission to execute them; the application owns command validation, tool access, network access, and sandboxing.
+
+Use the current primary references in `entity.yml` for these boundaries; mutable service values are not intrinsic identity guarantees.
+
 ## Validation
 
 - Total and active parameter counts are shown separately.
 - The page does not imply that 3.3B active parameters make the model equivalent to a 3.3B dense model.
 - Version-specific facts are not silently generalized to all Qwen3 30B-A3B releases.
 - Selection and deployment conclusions are not presented as intrinsic model facts.
+
+## Reader Projection
+
+- Render the current entity's validated visible relations with resolved canonical links and preserve relation ordering; project the sourced identity and operational boundaries into the reader page.

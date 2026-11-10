@@ -13,8 +13,20 @@
 - List Qwen2.5-Coder 3B Instruct and Qwen2.5-Coder 7B Instruct with short identity-level descriptions.
 - Do not repeat parameter tables, licenses, contextual SLM classifications, model-selection advice, or deployment guidance from child or legacy pages.
 
+## Decision and Operational Boundaries
+
+- This catalog index navigates represented children of Qwen2.5-Coder; it does not define another trained-model identity.
+- Keep model/revision-specific modality, license, context, and operational/security facts on canonical children.
+- List only materialized child pages, maintain the parent route, and do not present navigation order as a quality or deployment ranking.
+
+Use the current primary references in `entity.yml` for these boundaries; mutable service values are not intrinsic identity guarantees.
+
 ## Validation
 
 - Every listed child resolves to a canonical documentation node.
 - The page contains no placeholder content.
 - The page does not act as a second Qwen2.5-Coder line profile.
+
+## Reader Projection
+
+- Render the current entity's validated visible relations with resolved canonical links and preserve relation ordering; project the sourced identity and operational boundaries into the reader page.

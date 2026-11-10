@@ -1,0 +1,98 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:4e88f721519c1c0b954a7dd28cc6588425129716
+    parent:
+      entity.yml: gitblob:cdabbf9a83c46d7cf4c6c0f2ea6846dd564fad0a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/z/zep
+        type: organization
+        name: Zep
+        identity_note: Zep is the organization behind the managed Zep context service
+          and the open-source Graphiti temporal-graph framework. First-party material
+          connects the projects while keeping the operated service and installable
+          framework distinct. Self-hosting Graphiti does not inherit the managed service's
+          operating controls, and graph storage can still use external model and embedding
+          providers. Review credentials, source-data access, persistence and retention
+          across the chosen graph, model and service configuration.
+        references:
+        - type: official-site
+          source:
+            url: https://www.getzep.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://www.getzep.com/platform/graphiti/
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/getzep/graphiti
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/services/data-infrastructure/memory-and-context/zep
+        - type: produces
+          target: catalog/software/data-infrastructure/memory-and-context/graphiti
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

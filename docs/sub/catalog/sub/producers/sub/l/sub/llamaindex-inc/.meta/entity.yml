@@ -24,6 +24,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://developers.llamaindex.ai/python/framework/llama_cloud/
+      purposes:
+        - research
+      authority: official
+      note: Current documentation identifies LlamaParse as the hosted document platform formerly called LlamaCloud.
   relations:
     - type: produces
       target: catalog/software/application-frameworks/data-and-retrieval/llamaindex

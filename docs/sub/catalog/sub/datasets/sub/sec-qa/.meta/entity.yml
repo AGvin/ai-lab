@@ -1,0 +1,14 @@
+entity:
+  id: catalog/datasets/sec-qa
+  type: dataset
+  name: "SecQA"
+  aliases:
+    - "Security Question Answering"
+  identity_note: >-
+    Multiple-choice computer-security knowledge questions generated with GPT-4 from a textbook.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/zefang-liu/secqa
+      purposes: [identification, research]
+      authority: official

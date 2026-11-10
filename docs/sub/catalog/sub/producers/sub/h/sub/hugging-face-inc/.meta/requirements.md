@@ -10,6 +10,8 @@
 - Include current Hugging Face organization references and the NVIDIA acquisition announcement from canonical entity metadata.
 - Keep ordinary mutable pricing, staffing, funding, and product-availability details outside this concise producer profile.
 
+- Add the source-backed SmolLM3 family relation and keep original model authorship distinct from hosting/runtime identity.
+
 ## Validation
 
 - The page does not collapse the producer, hosted services, frameworks, libraries, and runtimes into one entity.

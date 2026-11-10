@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:bf86fcfd4cf7c2142ab4c7db103e03e2a9c8e3e5
+      entity.yml: gitblob:37718b54d154fede50f790f8b7a0f01a1ed940f5
     parent:
       entity.yml: gitblob:b36ca5bdc58da8f3782c6a5822573937ea2cd7d2
   state:
@@ -68,9 +68,31 @@ cache:
           - identification
           - research
           authority: official
+        - type: article
+          source:
+            url: https://www.opengsd.net/origin
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://www.opengsd.net/products/gsd-core
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/open-gsd/gsd-core/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
         relations:
         - type: maintains
           target: catalog/software/development-tools/agentic-development-systems/get-shit-done
+        identity_note: Open GSD maintains the GSD Core continuation; its official
+          origin account credits Lex Christopherson (Taches/TÂCHES) with the original
+          GSD, separately from current organization stewardship.
     aliases:
       effective:
         schema: default

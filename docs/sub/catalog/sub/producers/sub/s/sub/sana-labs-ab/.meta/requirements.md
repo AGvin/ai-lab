@@ -7,6 +7,8 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current first-party Sana company/legal references.
 
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
 ## Validation
 
 - Sana Labs AB, Sana Agents, and Sana Learn are not collapsed into one entity identity.

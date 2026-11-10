@@ -1,0 +1,103 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:b7140787bf1325917fc71a911f56ee3d5b9cc84f
+    parent:
+      entity.yml: gitblob:5dba29048fdaf9c45a85446dda84063e01b508a0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/evaluation-and-observability/evaluation-frameworks/mlcommons-mlperf-inference
+        type: software
+        name: MLPerf Inference Reference Software
+        aliases:
+        - MLPerf Inference Reference Implementations
+        identity_note: MLCommons' Apache-2.0-licensed public source repository providing
+          reference workloads, LoadGen, compliance tools, sample configurations and
+          submission examples for the versioned MLPerf Inference benchmark. This executable
+          software is distinct from the already cataloged MLPerf Inference benchmark
+          dataset/suite, submitted hardware results, proprietary system optimizations
+          and separately licensed input models.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/mlcommons/inference
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/mlcommons/inference/blob/3fbc329939999c13d0a7b5e67fb2092287e06047/README.md
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/mlcommons/inference/blob/3fbc329939999c13d0a7b5e67fb2092287e06047/Submission_Guidelines.md
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/mlcommons/inference/blob/3fbc329939999c13d0a7b5e67fb2092287e06047/LICENSE.md
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mlcommons
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

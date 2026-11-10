@@ -1,0 +1,27 @@
+entity:
+  id: catalog/services/assistant-workspaces/grok-bot
+  type: service
+  name: Grok Bot
+  references:
+    - type: product-page
+      source:
+        url: https://x.ai/bot
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://x.ai/bot/marketplace
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://x.ai/news/team-bots
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/x/xai

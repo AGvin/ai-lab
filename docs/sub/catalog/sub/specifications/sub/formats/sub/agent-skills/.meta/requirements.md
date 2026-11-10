@@ -16,3 +16,11 @@
 - Required/optional/experimental package claims are traceable to the current upstream Agent Skills specification.
 - Client-specific metadata or invocation controls are not redefined as universal Agent Skills requirements.
 - Generic concept and authoring pedagogy are not duplicated into the formal specification artifact.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Agent Skills is an open skill-directory packaging specification, not a guarantee that any assistant will automatically discover, invoke or safely execute a skill. The published contract requires a directory-local `SKILL.md` with YAML frontmatter and a Markdown instruction body; `name` and `description` are required, and optional support material includes `scripts/`, `references/`, and `assets/`.
+- The official spec constrains name/description and names optional `license`, `compatibility` and `metadata` fields; `allowed-tools` is expressly experimental. Implementation-specific activation, trust, sandboxing and permissions are outside the package schema. A package may contain executable code and references; do not treat its mere format as safe to execute.
+- Verified primary source 1: https://agentskills.io/specification
+- Verified primary source 2: https://github.com/agentskills/agentskills
+- Existing format identity/source gate only; no packaged skill executed, client interoperability/permissions certified, full upstream security/license review, repository-wide schema/cache/CI/render, clean pass or final gate.

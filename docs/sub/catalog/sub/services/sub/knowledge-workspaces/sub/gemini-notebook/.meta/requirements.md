@@ -15,3 +15,13 @@
 - The 2026-07-16 rename is represented without implying a product discontinuity.
 - The `entity-relations` block resolves to the canonical Google producer.
 - Official Google references match canonical entity metadata.
+
+## Scoped original-source qualification — 2026-11-06
+
+Official product documentation identifies the renamed NotebookLM workspace as Gemini Notebook. Generated citations do not independently guarantee factual correctness.
+
+Sources:
+- https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/
+- https://support.google.com/gemininotebook/answer/16164461
+
+This scoped check does not certify runtime, security, or final clean passes.

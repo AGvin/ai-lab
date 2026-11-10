@@ -1,0 +1,47 @@
+entity:
+  id: catalog/software/development-tools/agentic-development-systems/vercel-skills-cli
+  type: software
+  name: Vercel Skills CLI
+  aliases:
+    - skills CLI
+    - npm skills
+    - npx skills
+  identity_note: >-
+    Independently installable MIT-licensed Node.js npm package skills from
+    Vercel Labs, exposing skills and add-skill command-line entrypoints. It
+    discovers, installs, lists, uses, updates, removes and scaffolds Agent
+    Skills for supported coding agents. The CLI is independent of skills.sh,
+    Vercel Agent Skills collection, the Agent Skills specification, and any
+    independently sourced third-party skill packages. Supported agents,
+    telemetry and experimental command behavior depend on release version.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/vercel-labs/skills
+      purposes: [identification, research]
+      authority: official
+      note: Original publisher CLI source, reference and security notes.
+    - type: registry
+      source:
+        url: https://www.npmjs.com/package/skills
+      purposes: [identification, research]
+      authority: official
+    - type: release-notes
+      source:
+        url: https://github.com/vercel-labs/skills/releases/tag/v1.7.4
+      purposes: [identification, research]
+      authority: official
+      note: Public v1.7.4 dated 2026-10-19.
+    - type: documentation
+      source:
+        url: https://github.com/vercel-labs/skills/blob/v1.7.4/docs/commands.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/vercel-labs/skills/blob/v1.7.4/docs/troubleshooting.md
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/vercel-inc

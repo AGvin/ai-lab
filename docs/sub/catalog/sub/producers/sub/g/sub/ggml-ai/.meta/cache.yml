@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:cc548dbe74eba49d3c815fb898aa12f3b17864a2
+      entity.yml: gitblob:4742beccee9edb9aa52d9d4a781f31841a8cdce8
     parent:
       entity.yml: gitblob:b7f05983a5d1c6c223967178283fa7f339514136
   state:
@@ -72,6 +72,13 @@ cache:
           note: First-party 2026 announcement identifies ggml.ai as the founding team
             of llama.cpp and states that the team continues to lead, maintain, and
             support the project after joining Hugging Face.
+        - type: other
+          source:
+            url: https://huggingface.co/blog/ggml-joins-hf
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/inference-runtimes/inference-engines/llama-cpp

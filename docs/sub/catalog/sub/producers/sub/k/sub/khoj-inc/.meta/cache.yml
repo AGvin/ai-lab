@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:bdee24ee33514b145ec44982dd37c6d6aa089cf3
+      entity.yml: gitblob:fec2b95aa0fa0e46e5e37d6ae0e29ed44a812fd5
     parent:
       entity.yml: gitblob:2f1e0b49da4e74d5be798e28b5ef97ff4b499581
   state:
@@ -53,7 +53,8 @@ cache:
           - identification
           - research
           authority: official
-          note: Current Khoj Terms of Service identify Khoj Inc. as the service provider.
+          note: Published Khoj service terms identify Khoj Inc.; they do not establish
+            current hosted-service availability.
         - type: other
           source:
             url: https://khoj.dev/privacy-policy
@@ -61,6 +62,20 @@ cache:
           - identification
           - research
           authority: official
+        - type: repository
+          source:
+            url: https://github.com/khoj-ai/khoj
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://app.khoj.dev/
+          purposes:
+          - research
+          authority: official
+          note: First-party notice records the April 15, 2026 Khoj Cloud shutdown
+            and continued open-source/self-hosted availability.
         relations:
         - type: produces
           target: catalog/software/interfaces-and-workspaces/knowledge-workspaces/khoj

@@ -1,0 +1,129 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:3bda9d35d9fc5a643a0f7759126fa83e7db09e00
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/tau-bench
+        type: dataset
+        name: τ-bench
+        identity_note: τ-bench is Sierra’s maintained benchmark family for customer-service
+          agents interacting with simulated users, policies and tools. Task and environment
+          state determine success. The original τ-bench, τ² dual-control evaluation,
+          τ³ knowledge/voice work and current 2.0 release describe versioned evaluation
+          setups within this family. Current upstream 2.0 introduces multilingual
+          evaluation across six languages and separates frozen text and voice benchmark
+          definitions. English inputs and grading also changed, so 2.0 scores are
+          not comparable to the 1.x leaderboard. Use the v1.0.1 release for legacy
+          comparisons. Its July 22, 2026 release corrected banking_knowledge grading
+          and task data; results on that domain from before the correction require
+          separate treatment. Record the exact release, task set, modality, language,
+          user simulator, model and judges. Retail, airline, telecom and banking-knowledge
+          scenarios simulate service policies and tool actions; they are not real
+          Sierra banking or travel products. Full-duplex voice adds provider-specific
+          audio and caller-voice setup, while text uses a turn-based interaction.
+          Current repository voice identifiers can be Sierra-internal and require
+          replacement with the evaluator’s own configuration. MIT licensing applies
+          to the repository; model and voice APIs can have separate accounts, costs
+          and data terms. A dry run can inspect the planned calls before a paid evaluation.
+        aliases:
+        - tau-bench
+        - tau2-bench
+        - tau3-bench
+        - τ²-bench
+        - τ³-bench
+        references:
+        - type: official-site
+          source:
+            url: https://taubench.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/sierra-research/tau2-bench
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://sierra.ai/resources/research/tau-3-bench-knowledge
+          purposes:
+          - research
+          authority: official
+        - type: release-notes
+          source:
+            url: https://github.com/sierra-research/tau2-bench/releases/tag/v1.0.1
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/sierra-research/tau2-bench/blob/main/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/s/sierra
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

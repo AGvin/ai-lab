@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/brokenmath
+  type: dataset
+  name: "BrokenMath"
+  aliases:
+    - "BrokenMath Theorem Proving Sycophancy Benchmark"
+  identity_note: >-
+    INSAIT model sycophancy evaluation benchmark for mathematical theorem proving, with generated perturbations and separate training/evaluation programs.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/insait-institute/broken-math
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/insait-institute/broken-math/blob/fe0fc0a9e7e2bb9a8a7a3e8aa6b0a3ac50ecaf8f/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/insait-institute/broken-math/blob/fe0fc0a9e7e2bb9a8a7a3e8aa6b0a3ac50ecaf8f/LICENSE
+      purposes: [research]
+      authority: official

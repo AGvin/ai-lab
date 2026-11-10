@@ -1,0 +1,36 @@
+entity:
+  id: catalog/models/mistral-ai/timestral/models/timestral-1-0-209m
+  type: model
+  name: Timestral 1.0 209M
+  aliases:
+    - Timestral-209M
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/mistralai/Timestral-209M
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mistral.ai/models/timestral-1-0-209m
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/mistralai/Timestral-209M/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/mistralai/timestral
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/mistral-ai/timestral

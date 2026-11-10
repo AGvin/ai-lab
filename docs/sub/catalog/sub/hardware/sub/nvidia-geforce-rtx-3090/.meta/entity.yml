@@ -1,0 +1,17 @@
+entity:
+  id: catalog/hardware/nvidia-geforce-rtx-3090
+  type: hardware
+  name: NVIDIA GeForce RTX 3090
+  identity_note: >-
+    The manufacturer identifies this as the desktop Ampere RTX 3090 with 24 GB GDDR6X, distinct from RTX 3090 Ti and professional RTX A6000. Card memory is per device. Board-specific power, cooling, connector and driver requirements still apply; NVLink does not make arbitrary applications pool memory. Historical product-page presence does not prove current retail supply or warranty.
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-eu/geforce/graphics-cards/30-series/rtx-3090/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

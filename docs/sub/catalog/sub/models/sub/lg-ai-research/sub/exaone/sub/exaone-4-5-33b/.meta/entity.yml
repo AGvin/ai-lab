@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/lg-ai-research/exaone/exaone-4-5-33b
+  type: model
+  name: EXAONE 4.5 33B
+  identity_note: >-
+    LG AI Research's April 2026 open-weight vision-language checkpoint combines a language model and visual encoder, reporting approximately 33B total parameters and 262,144-token context. The card names EXAONE AI Model License Agreement 1.2 - NC; this is not MIT/Apache or an unrestricted commercial-use grant. It remains distinct from K-EXAONE 2.0. Review exact license scope before reuse; pin model/processor/runtime revisions and verify document/OCR facts, since images and text can produce erroneous or biased answers.
+    Ownership/control-chain review remains pending; no Russian-control finding or adoption clearance.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.lgresearch.ai/blog/view?seq=641
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/lg-ai-research/exaone

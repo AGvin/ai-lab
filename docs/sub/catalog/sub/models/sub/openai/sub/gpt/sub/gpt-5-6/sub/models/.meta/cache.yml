@@ -2,10 +2,10 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:50b43c20d50f16ac0efe80f287e9c75d5d202a55
+      entity.yml: gitblob:5e1032883aabbc34c1dd1ded489285244c450367
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
     parent:
-      entity.yml: gitblob:edf2ac7966bcdc087a4ff823f142bed4591da736
+      entity.yml: gitblob:43810d5e88acc415d7fac23bd40c478bd60a21bf
   state:
     node:
       effective:
@@ -46,6 +46,30 @@ cache:
         id: catalog/models/openai/gpt/gpt-5-6/models
         type: catalog-index
         name: GPT-5.6 Models
+        identity_note: Navigation index for the three concrete GPT-5.6 members; not
+          a trained model.
+        references:
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/models/gpt-5.6-sol
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/models/gpt-5.6-terra
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/models/gpt-5.6-luna
+          purposes:
+          - identification
+          - research
+          authority: official
     aliases:
       effective:
         schema: default

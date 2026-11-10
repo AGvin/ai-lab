@@ -1,0 +1,105 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:4031853c01cf6b4c4e60f30f78c590f786fd89ac
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/mlperf-end-to-end-rag-inference
+        type: dataset
+        name: MLPerf End-to-End RAG Inference
+        identity_note: MLPerf End-to-End RAG Inference is MLCommons' benchmark for
+          measuring a complete retrieval-augmented question-answering pipeline, released
+          within MLPerf Inference v6.1. The benchmark contains database-ingestion
+          (e2e-rag-db) and question-answering (e2e-rag-qna) workloads. The initial
+          design uses a frozen FRAMES query/corpus snapshot and multiple model/pipeline
+          components, so it is distinct from FRAMES itself or any one model, vector
+          database or serving framework. Reference models, corpus preparation, hop
+          limits, accuracy/performance metrics and compliance checks are release-specific.
+          Vendor submissions report the exact pipeline and system configuration tested;
+          they do not establish a universal RAG ranking or transfer component ownership
+          to MLCommons.
+        aliases:
+        - MLPerf E2E RAG
+        references:
+        - type: article
+          source:
+            url: https://mlcommons.org/2026/08/endtoend-inference/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://mlcommons.org/2026/09/mlperf-inference-v6-1-results/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mlcommons.org/inference/index_gh/
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mlcommons
+        - type: member-of
+          target: catalog/datasets/mlperf-inference
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

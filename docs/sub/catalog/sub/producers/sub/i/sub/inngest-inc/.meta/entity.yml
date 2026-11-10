@@ -24,6 +24,18 @@ entity:
         - research
       authority: official
       note: First-party history documents Inngest opening the core platform and its self-hostable development path.
+    - type: documentation
+      source:
+        url: https://github.com/inngest/inngest
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.inngest.com/docs/platform-and-operations/self-host-inngest
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/workflow-engines/application-orchestration/inngest

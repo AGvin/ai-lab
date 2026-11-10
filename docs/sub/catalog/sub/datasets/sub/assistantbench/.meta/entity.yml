@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/assistantbench
+  type: dataset
+  name: AssistantBench
+  aliases:
+    - AssistantBench Web Agents
+    - Realistic Web Agent Benchmark
+  identity_note: >-
+    2024 research benchmark for evaluating web agents on realistic time-consuming multi-step web information seeking tasks; its published dataset, leaderboard and SeePlanAct agent implementation are separate artifacts, not additional original benchmark dataset identities.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/oriyor/assistantbench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/oriyor/assistantbench/blob/2ce557dca1fca5d746d1dee07dfa86018802763c/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/oriyor/assistantbench/blob/2ce557dca1fca5d746d1dee07dfa86018802763c/LICENSE
+      purposes: [research]
+      authority: official

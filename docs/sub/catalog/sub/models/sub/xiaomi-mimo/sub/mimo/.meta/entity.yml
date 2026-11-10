@@ -21,3 +21,5 @@ entity:
       target: catalog/producers/x/xiaomi-mimo-team
     - type: has-member
       target: catalog/models/xiaomi-mimo/mimo/mimo-v2-5
+    - type: has-member
+      target: catalog/models/xiaomi-mimo/mimo/mimo-v2-6

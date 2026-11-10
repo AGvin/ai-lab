@@ -1,0 +1,30 @@
+entity:
+  id: catalog/models/ibm
+  type: model-producer-view
+  name: IBM Granite models
+  identity_note: >-
+    This node is the IBM Granite model-domain view. It organizes the currently materialized
+    language, compact Nano, composed Switch, document-conversion, embedding, guardian, speech,
+    time-series, and vision families without duplicating the
+    IBM organization profile or absorbing separately scoped IBM-NASA collaborative models.
+  references:
+    - type: official-site
+      source:
+        url: https://www.ibm.com/granite
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://research.ibm.com/blog/granite-4-1-ai-foundation-models
+      purposes:
+        - research
+      authority: official

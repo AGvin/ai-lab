@@ -15,8 +15,12 @@ AI requests may pass through Cursor infrastructure and downstream model provider
 ## Related
 
 - [Visual Studio Code](../vs-code/) — upstream editor foundation and Agent Customization reference; use it as compatibility context rather than assuming identical agent-customization behavior.
-- [Anysphere, Inc.](../../../../../../../producers/sub/a/sub/anysphere-inc/) — canonical producer organization.
-- [Extensions](./sub/extensions/) — Cursor-owned extension navigation when materialized.
+- [Extensions](./sub/extensions/) — Cursor-owned extension navigation.
+- [Integrations](./sub/integrations/) — Cursor-specific Agent Skills and Plugins.
+
+## Relations
+
+- Produced by: [Anysphere, Inc.](../../../../../../../producers/sub/a/sub/anysphere-inc/)
 
 ## Official resources
 

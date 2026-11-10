@@ -12,3 +12,11 @@
 - Facts remain source-backed and service-scoped.
 - Mutable benchmark results are not represented as timeless canonical entity facts.
 - Recommendations remain with decision support.
+
+## Scoped original-source qualification — 2026-11-06
+
+- Artificial Analysis evaluates model quality/intelligence, inference-provider endpoint latency/throughput/error rates, and usage prices using its published methodology. Its performance measures are observed end-to-end customer endpoint behavior, not maximum accelerator silicon speed. Aggregate cost per task and blended price depend on assumed cache/input/output ratios; rolling endpoint metrics can change within days.
+- Separate provider endpoint from model author, and performance/price methodology from stable product identity. Compare same workload, representative region, exact model snapshot, cache mode, pricing currency and observation window before selecting a provider.
+- Verified first-party source 1: https://artificialanalysis.ai/methodology
+- Verified first-party source 2: https://artificialanalysis.ai/
+- Source qualification accepts the present service identity and documented boundaries only; not a complete freshness or legal/security audit, independent benchmark replication, runtime execution, full schema/cache/CI/render, clean pass or final-delivery gate.

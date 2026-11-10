@@ -1,0 +1,112 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:bc5a1a42f18b8b5ef2f56389f34e1206730064ac
+    parent:
+      entity.yml: gitblob:e00079daec44815d0f149be2d38506f4fbeeff51
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5/models/large
+        type: model
+        name: Stable Diffusion 3.5 Large
+        identity_note: Stable Diffusion 3.5 Large is the 8.1-billion-parameter Large
+          variant in Stability AI’s 3.5 series. Its official model card describes
+          a diffusion transformer with separate text encoders. It is a trained image
+          model, distinct from an API endpoint or a runtime-optimized package. Large
+          targets users who can provision the model, text encoders and generation
+          workload together. Downloadable artifacts, scheduler settings and supported
+          inference libraries are documented in the model card. Memory and latency
+          depend on precision, resolution, batch size and runtime; a parameter count
+          alone is not a hardware requirement. Quality and prompt-adherence comparisons
+          in release material are Stability AI’s assessments. The official distribution
+          requires acceptance of the model’s access conditions and identifies the
+          Stability AI Community license. Check commercial eligibility and any required
+          Enterprise agreement for the intended organization. Hosted service terms,
+          generated-content obligations and optimized artifact provenance must be
+          reviewed separately from model availability.
+        references:
+        - type: article
+          source:
+            url: https://stability.ai/news/introducing-stable-diffusion-3-5
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://stability.ai/core-models
+          purposes:
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://stability.ai/license
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/stability-ai/stable-diffusion/stable-diffusion-3-5
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

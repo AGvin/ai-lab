@@ -1,0 +1,22 @@
+entity:
+  id: catalog/datasets/mmlu-pro
+  type: dataset
+  name: MMLU-Pro
+  references:
+    - type: repository
+      source:
+        url: https://github.com/TIGER-AI-Lab/MMLU-Pro
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/t/tiger-ai-lab

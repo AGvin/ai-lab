@@ -1,0 +1,90 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a297dd0987e74a900179b8ee9e75fcf1b6bfdaa2
+    parent:
+      entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
+      node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/producer
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/producer
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/xai
+        type: model-producer-view
+        name: xAI models
+        references:
+        - type: documentation
+          source:
+            url: https://docs.x.ai/developers/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://x.ai/api
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://x.ai/legal/terms-of-service
+          purposes:
+          - research
+          authority: official
+        identity_note: Producer-oriented catalog view under the retained xAI namespace;
+          current public branding is SpaceXSI and the canonical producer is SpaceXAI
+          LLC.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

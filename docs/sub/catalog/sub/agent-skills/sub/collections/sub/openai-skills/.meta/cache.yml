@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:c1052e80cca8a23dcffc60a2682bf9bd2de26564
+      entity.yml: gitblob:6f722a8793c537d5253e3a7baf3b897389acbde4
     parent:
       entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
       node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
@@ -48,7 +48,12 @@ cache:
         name: OpenAI Skills
         identity_note: The openai/skills repository is retained as the historical
           source of the selected system skill but is deprecated in favor of OpenAI
-          Plugins for current Codex plugin examples.
+          Plugins for current Codex plugin examples. OpenAI marks openai/skills deprecated
+          and directs current Codex skill/plugin examples to openai/plugins. Retain
+          this identity only as the historical/system source already selected here;
+          it is not a current-installation recommendation. Licenses are stored per
+          skill directory. Repository deprecation is distinct from GitHub archival
+          status.
         references:
         - type: repository
           source:
@@ -67,6 +72,13 @@ cache:
           authority: official
           note: Current successor repository for Codex plugin examples as directed
             by openai/skills.
+        - type: documentation
+          source:
+            url: https://github.com/openai/skills/blob/49f948faa9258a0c61caceaf225e179651397431/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/o/openai

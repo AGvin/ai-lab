@@ -1,0 +1,31 @@
+entity:
+  id: catalog/software/gateways/model-gateways/nvidia-pair
+  type: software
+  name: NVIDIA Personal AI Router
+  aliases:
+    - NVIDIA PAIR
+    - PAIR
+  references:
+    - type: repository
+      source:
+        url: https://github.com/NVIDIA/Personal-AI-Router
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/NVIDIA/Personal-AI-Router/blob/main/docs/getting-started.mdx
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://developer.nvidia.com/blog/nvidia-pair-virtual-inference-router-expands-available-compute-on-your-local-network/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

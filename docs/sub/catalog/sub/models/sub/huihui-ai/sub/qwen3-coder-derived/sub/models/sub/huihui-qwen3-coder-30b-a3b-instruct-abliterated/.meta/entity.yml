@@ -2,6 +2,14 @@ entity:
   id: catalog/models/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated
   type: model
   name: Huihui Qwen3 Coder 30B A3B Instruct Abliterated
+  identity_note: >-
+    Huihui Qwen3 Coder 30B A3B Instruct Abliterated is a distinct modified model published by
+    huihui.ai from the exact Qwen/Qwen3-Coder-30B-A3B-Instruct base. The publisher describes
+    abliteration intended to change refusal behavior. The pinned model repository lists a sharded
+    SafeTensors distribution for Transformers. Its own config declares Qwen3 MoE and
+    max_position_embeddings of 262144; actual runtime limits and behavior require
+    configuration-specific evaluation. Publisher modification claims do not establish inherited
+    benchmark performance or a new reasoning-mode capability.
   references:
     - type: registry
       source:
@@ -17,6 +25,21 @@ entity:
         - research
       authority: upstream
       note: Canonical upstream base model for this derivative.
+    - type: documentation
+      source:
+        url: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated/resolve/main/config.json
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated/tree/b84c58d52ac44041774fe9542e1943e4d971b5f4
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF
+      purposes: [identification, research]
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/h/huihui-ai

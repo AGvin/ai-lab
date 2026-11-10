@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/itu-t-y-4618-2026-aiot-reference-model
+  name: ITU-T Y.4618 — Artificial Intelligence of Things reference model and requirements
+  aliases:
+    - ITU-T Y.4618
+    - Y.4618
+  references:
+    - type: specification
+      source:
+        url: https://www.itu.int/rec/T-REC-Y.4618-202606-I/en
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ITU-T Recommendation Y.4618 (06/26), approved 2026-06-29 and marked in force; the final English PDF is listed as posted 2026-09-03 on the official edition page.

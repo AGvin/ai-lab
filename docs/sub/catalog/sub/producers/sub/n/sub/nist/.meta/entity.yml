@@ -1,0 +1,49 @@
+entity:
+  id: catalog/producers/n/nist
+  type: organization
+  name: National Institute of Standards and Technology
+  aliases:
+    - NIST
+    - US NIST
+  identity_note: >-
+    NIST is the US National Institute of Standards and Technology, a
+    non-regulatory federal agency in the US Department of Commerce,
+    originally founded in 1901. It publishes scientific measurement
+    and voluntary AI risk guidance including NIST AI RMF 1.0
+    (NIST AI 100-1, January 26, 2023) and the separate NIST AI 600-1
+    Generative AI Profile (July 26, 2024). The agency is neither a
+    commercial AI model/API vendor nor a private beneficially held
+    company. Published guidance is not an endorsement or certification
+    of any third-party AI model/service. NIST's current AI RMF work
+    indicates that the 1.0 framework revision is in progress, not
+    a completed published successor.
+  references:
+    - type: official-site
+      source:
+        url: https://www.nist.gov/about-nist
+      purposes: [identification, research]
+      authority: official
+      note: "NIST's federal US Department of Commerce agency status, founding and scientific standards role."
+    - type: official-site
+      source:
+        url: https://www.nist.gov/itl/ai-risk-management-framework
+      purposes: [identification, research]
+      authority: official
+      note: "NIST's current publication and revision descriptions."
+    - type: specification
+      source:
+        url: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10
+      purposes: [research]
+      authority: official
+      note: "Published 2023 AI 100-1 original NIST framework."
+    - type: specification
+      source:
+        url: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence
+      purposes: [research]
+      authority: official
+      note: "Published 2024 AI 600-1 profile under the NIST publisher."
+  relations:
+    - type: produces
+      target: catalog/specifications/standards/nist-ai-rmf-1-0
+    - type: produces
+      target: catalog/specifications/standards/nist-ai-600-1-generative-ai-profile

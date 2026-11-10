@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/apps
+  type: dataset
+  name: APPS Coding Challenge Dataset
+  aliases:
+    - APPS
+    - Measuring Coding Challenge Competence With APPS
+  identity_note: >-
+    Original programming challenge dataset for evaluating generated code, with separately published training/evaluation harness and reference-model checkpoints.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/hendrycks/apps
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/hendrycks/apps/blob/362aedc3c71cd7d9bd2fc96a6c80e11dbc38c7a5/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/hendrycks/apps/blob/362aedc3c71cd7d9bd2fc96a6c80e11dbc38c7a5/LICENSE
+      purposes: [identification, research]
+      authority: official

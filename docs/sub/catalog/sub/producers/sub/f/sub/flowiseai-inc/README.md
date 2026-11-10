@@ -2,7 +2,7 @@
 
 FlowiseAI Inc. is the Delaware corporation behind the Flowise platform and its historical upstream open-source product development.
 
-The project is now in its announced 2026 wind-down: active feature development has ceased, the upstream repository is archived, and official core-team GitHub/Discord presence is scheduled to conclude at the stated August 31, 2026 end-of-life date. The company identity remains distinct from the archived software codebase, hosted-service surfaces, and community-maintained forks.
+Workday announced its acquisition of Flowise in August 2025. Flowise's later sunset notice set August 31, 2026 as the end-of-life date and described the end of core-team GitHub/Discord support. The upstream repository is archived. Historical company provenance remains distinct from the archived codebase, hosted-service surfaces, and community-maintained forks.
 
 ## Produces
 
@@ -13,3 +13,4 @@ The project is now in its announced 2026 wind-down: active feature development h
 - [Flowise](https://flowiseai.com/)
 - [Flowise terms](https://flowiseai.com/terms)
 - [Flowise sunset notice](https://flowiseai.com/sunset)
+- [Workday acquisition announcement](https://investor.workday.com/news-and-events/press-releases/news-details/2025/Workday-Acquires-Flowise-Bringing-Powerful-AI-Agent-Builder-Capabilities-to-the-Workday-Platform-08-14-2025/default.aspx)

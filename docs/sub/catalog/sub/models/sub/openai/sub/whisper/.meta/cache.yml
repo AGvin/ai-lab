@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:584d1f379307237ac34cdbf88ccf6ca47e4b0b12
+      entity.yml: gitblob:4c5c79b377cda1d694837b4981a3ee2b4d1453eb
     parent:
-      entity.yml: gitblob:0998a3482a167d36bf17518f6cee61217be3b020
+      entity.yml: gitblob:3d7d9cfcd6ab81400d81e2468c33e9b2babb1ba5
   state:
     node:
       effective:
@@ -65,9 +65,29 @@ cache:
           purposes:
           - research
           authority: official
+        - type: repository
+          source:
+            url: https://github.com/openai/whisper/blob/main/model-card.md
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://openai.com/index/whisper/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://developers.openai.com/api/docs/deprecations
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/o/openai
+        identity_note: Downloadable ASR family; the whisper-1 API model and GPT Realtime
+          Whisper have separately scoped hosted identities and lifecycles.
     aliases:
       effective:
         schema: default

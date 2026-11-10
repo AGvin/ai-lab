@@ -2,6 +2,7 @@ entity:
   id: catalog/producers/d/danny-avila
   type: individual
   name: Danny Avila
+  identity_note: "LibreChat founder and maintainer under danny-avila; distinct from Daniel Avila (davila7), publisher of Claude Code Templates."
   references:
     - type: other
       source:
@@ -17,6 +18,14 @@ entity:
         - research
       authority: official
       note: ClickHouse's first-party acquisition announcement identifies Danny Avila as LibreChat's founder.
+    - type: official-site
+      source:
+        url: https://www.librechat.ai/authors/danny
+      purposes:
+      - identification
+      - research
+      authority: official
+      note: LibreChat identifies Danny Avila as founder and maintainer.
   relations:
     - type: produces
       target: catalog/software/interfaces-and-workspaces/conversational-platforms/librechat

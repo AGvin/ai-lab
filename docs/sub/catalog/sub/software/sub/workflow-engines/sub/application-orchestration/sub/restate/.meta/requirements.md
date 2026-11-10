@@ -2,13 +2,16 @@
 
 ## Requirements
 
-- Identify Restate as an open-source durable application runtime for resilient services, workflows, stateful functions, and AI-agent/application backends.
+- Identify Restate as a source-available durable application runtime for resilient services, workflows, stateful functions, and AI-agent/application backends.
 - Preserve its primary placement under `workflow-engines/application-orchestration`; durable execution, persisted state, timers, and reliable communication form an application-runtime layer rather than a data scheduler.
 - Preserve Restate GmbH as the company behind the project while keeping the company, self-managed runtime, and Restate Cloud as distinct identity/operation layers.
 - Preserve the distinction between Restate's runtime/service model and library-only durable execution such as DBOS.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Keep SDK support, deployment topology, durability semantics, cloud offerings, and other mutable implementation details source-backed when expanded.
 - Include current official Restate documentation, repository, legal, and project-history references.
+
+- State the current runtime licensing boundary: Business Source License 1.1 with an additional use grant permits internal production and the documented application abstractions while restricting the defined Public Restate Platform Service; each release changes to Apache 2.0 four years after release. MIT-licensed SDKs are a separate licensing surface.
+- Distinguish customer-operated self-hosting from vendor-operated Restate Cloud and BYOC deployments; locating a BYOC deployment in customer infrastructure does not make its operation customer-managed.
 
 ## Validation
 

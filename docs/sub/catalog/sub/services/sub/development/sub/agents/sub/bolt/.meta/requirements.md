@@ -18,3 +18,11 @@
 - Official resource links match canonical entity metadata.
 - The page contains no temporary-summary or placeholder wording.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Bolt is StackBlitz's hosted AI application builder, with an integrated code editor and JavaScript-based full-stack tooling. Its development environment uses StackBlitz WebContainers, while Bolt Cloud databases, hosting, deployment and connected external systems have separate storage, trust and operational boundaries.
+- GitHub integration supports source-control workflows, but connecting a repository or publishing an app does not prove generated code, dependencies, database state or credentials are production-safe. Model selection, limits, pricing, connector support and publishing options are account- and date-sensitive.
+- Verified first-party source 1: https://support.bolt.new/get-started/intro-bolt
+- Verified first-party source 2: https://support.bolt.new/integrations/git
+- Source acceptance is limited to the existing service identity, operator/integration distinctions and documentation-grounded requirements. No authenticated project, connected repository, build, deployment, security/privacy/legal audit, whole-repository clean pass or final-delivery gate was performed.

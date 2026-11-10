@@ -1,0 +1,112 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:a999cfa27eddac2186ac37d834f6ae46a6acf3c3
+    parent:
+      entity.yml: gitblob:b36ca5bdc58da8f3782c6a5822573937ea2cd7d2
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/o/openapi-initiative
+        type: organization
+        name: OpenAPI Initiative
+        aliases:
+        - OAI
+        references:
+        - type: official-site
+          source:
+            url: https://www.openapis.org/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/OAI/OpenAPI-Specification
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://spec.openapis.org/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/OAI/Arazzo-Specification
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/OAI/Overlay-Specification
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/specifications/schemas/openapi-specification
+        - type: produces
+          target: catalog/specifications/schemas/arazzo-specification
+        - type: produces
+          target: catalog/specifications/schemas/overlay-specification
+        identity_note: The OpenAPI Initiative is the Linux Foundation-hosted standards
+          project behind the separately published OpenAPI, Arazzo, and Overlay specifications;
+          governance, editors, implementations, and API operators remain distinct.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

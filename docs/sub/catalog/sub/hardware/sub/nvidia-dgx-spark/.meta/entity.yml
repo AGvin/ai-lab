@@ -1,0 +1,30 @@
+entity:
+  id: catalog/hardware/nvidia-dgx-spark
+  type: hardware-product
+  name: NVIDIA DGX Spark
+  identity_note: >-
+    NVIDIA's current page identifies DGX Spark as a complete GB10 Grace Blackwell personal AI system and distinguishes 64 GB and 128 GB configurations and multi-system examples. A system's unified memory is not an independent discrete-GPU specification; advertised model capacity is conditional. Recheck configuration/region availability separately from the historical 64 GB announcement.
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/products/workstations/dgx-spark/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://nvidianews.nvidia.com/news/nvidia-dgx-spark-arrives-for-worlds-ai-developers
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

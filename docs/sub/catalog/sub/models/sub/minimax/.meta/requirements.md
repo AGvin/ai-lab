@@ -6,6 +6,10 @@
 - Keep MiniMax Code, Design, API plans, and other product/service surfaces outside model identity.
 - Keep exact model facts with their family and concrete-model owners.
 
+- Link the separately represented H3 family/system; do not collapse it into MiniMax M or hosted products.
+
 ## Validation
 
 - The page remains model-domain navigation/context rather than a duplicate company profile.
+
+- Link MiniMax Music 3 independently of MiniMax M and H3; preserve its original model/license identity.

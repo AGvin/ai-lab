@@ -1,0 +1,46 @@
+entity:
+  id: catalog/models/fal/h3-max
+  name: H3 Max by fal
+  type: model
+  identity_note: >-
+    H3 Max is a separately post-trained audiovisual generation model developed
+    by fal Research from MiniMax H3, with a co-optimized hosted inference stack.
+    The original MiniMax H3 family, fal's learned post-training, and fal's
+    text-to-video / image-to-video API routes have distinct provenance and
+    access boundaries. Hosted model access is not proof of public H3 Max
+    checkpoint availability, upstream-weight relicensing, or transferable
+    commercial rights.
+  references:
+    - type: documentation
+      source:
+        url: https://blog.fal.ai/introducing-h3-max-by-fal/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://fal.ai/models/minimax/h3-max/text-to-video/api
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://fal.ai/models/minimax/h3-max/image-to-video/api
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://fal.ai/minimax-h3-max
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://fal.ai/legal/terms-of-service
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/MiniMaxAI/MiniMax-H3
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/f/features-and-labels-inc

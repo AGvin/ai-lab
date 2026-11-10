@@ -1,0 +1,25 @@
+entity:
+  id: catalog/hardware/qualcomm-dragonfly-ai200
+  type: hardware-product
+  name: Qualcomm Dragonfly AI200
+  identity_note: >-
+    Qualcomm Dragonfly AI200 is an active, contact-sales data-center inference accelerator product; the manufacturer advertises 768 GB LPDDR memory per card. The 43 TB memory, 56 cards and 140 kW liquid-cooled configuration describe an ORv3 complete rack, not one accelerator. Up-to-10T-model support and efficiency/TCO are vendor claims conditional on model/runtime configuration, and Active does not establish unrestricted shipping or stock.
+  aliases:
+    - Qualcomm AI200
+  references:
+    - type: product-page
+      source:
+        url: https://www.qualcomm.com/data-center/products/qualcomm-dragonfly-ai200
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.qualcomm.com/data-center/products
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/q/qualcomm

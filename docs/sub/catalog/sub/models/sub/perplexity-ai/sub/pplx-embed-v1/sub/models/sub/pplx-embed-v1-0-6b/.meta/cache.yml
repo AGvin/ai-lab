@@ -1,0 +1,92 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:4d01bd9c45f93d0a9a85692676c235fd99a96d17
+    parent: {}
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-0-6b
+        type: model
+        name: PPLX Embed V1 0.6B
+        aliases:
+        - pplx-embed-v1-0.6b
+        references:
+        - type: documentation
+          source:
+            url: https://docs.perplexity.ai/docs/embeddings/quickstart
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/perplexity-ai/pplx-embed-v1
+        - type: has-derivative
+          target: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-v1-late-0-6b
+        - type: has-derivative
+          target: catalog/models/perplexity-ai/pii-tracer
+        identity_note: PPLX Embed V1 0.6B is the 0.6B-class standard member of Perplexity's
+          Qwen3-derived V1 embedding family. Its current model card lists 1024 dimensions,
+          a 32K context and MIT licensing.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

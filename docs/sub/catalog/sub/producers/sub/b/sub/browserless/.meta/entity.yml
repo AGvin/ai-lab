@@ -1,0 +1,21 @@
+entity:
+  id: catalog/producers/b/browserless
+  type: organization
+  name: Browserless
+  references:
+    - type: official-site
+      source:
+        url: https://www.browserless.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.browserless.io/overview/intro
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/infrastructure/browserless

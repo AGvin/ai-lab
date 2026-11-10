@@ -10,6 +10,24 @@ entity:
         - identification
         - research
       authority: official
+    - type: repository
+      source:
+        url: https://github.com/huggingface/smolagents
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/smolagents/en/reference/agents
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/smolagents/en/tutorials/secure_code_execution
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/h/hugging-face-inc

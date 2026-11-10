@@ -1,0 +1,22 @@
+entity:
+  id: catalog/producers/e/encord
+  type: organization
+  name: Encord
+  references:
+    - type: official-site
+      source:
+        url: https://encord.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.encord.com/solutions-documentation/applied-ai/data-lifecycle
+      purposes:
+      - research
+      authority: official
+      note: Platform role across customer data, annotation, and model-assisted workflows.
+  relations:
+    - type: produces
+      target: catalog/services/data-generation-and-curation/encord

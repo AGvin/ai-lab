@@ -19,9 +19,22 @@
 - Include the official Qwen3 repository, technical report, and model collection.
 - Link the concrete-model index.
 
+## Decision and Operational Boundaries
+
+- Qwen3 contains distinct dense and mixture-of-experts language models, with initial hybrid-thinking releases and separate later revisions.
+- Thinking support and context belong to the exact release: the initial 30B-A3B checkpoint supports both modes, whereas Instruct-2507 is non-thinking only.
+- Do not equate active parameters, quantized file size, total model size, and peak runtime memory.
+- Keep model-generated text, code, and tool arguments separate from permission to execute them; the application owns command validation, tool access, network access, and sandboxing.
+
+Use the current primary references in `entity.yml` for these boundaries; mutable service values are not intrinsic identity guarantees.
+
 ## Validation
 
 - Concrete models, versions, and artifacts are not aliases of the Qwen3 series.
 - Producer and parent-family relations resolve to canonical nodes.
 - Version-specific facts are not silently generalized to all Qwen3 releases.
 - Selection and deployment conclusions are not presented as intrinsic series facts.
+
+## Reader Projection
+
+- Render the current entity's validated visible relations with resolved canonical links and preserve relation ordering; project the sourced identity and operational boundaries into the reader page.

@@ -11,5 +11,5 @@ The organization remains distinct from Bifrost software and from separately oper
 ## Official resources
 
 - [Maxim AI privacy policy](https://www.getmaxim.ai/privacy-policy)
-- [Bifrost](https://www.getmaxim.ai/bifrost)
+- [Bifrost](https://www.getmaxim.ai/)
 - [Bifrost repository](https://github.com/maximhq/bifrost)

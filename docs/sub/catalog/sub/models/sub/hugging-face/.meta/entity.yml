@@ -1,0 +1,12 @@
+entity:
+  id: catalog/models/hugging-face
+  type: model-producer-view
+  name: Hugging Face Models
+  identity_note: >-
+    Model-domain navigation for original Hugging Face research models. Hosted third-party models are not authored by Hugging Face merely because they use its Hub. Canonical company identity and mutable corporate-transition claims belong to the producer profile. Ownership/control-chain review is incomplete; no Russian-control finding or adoption clearance is established.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/blog/smollm3
+      purposes: [identification, research]
+      authority: official

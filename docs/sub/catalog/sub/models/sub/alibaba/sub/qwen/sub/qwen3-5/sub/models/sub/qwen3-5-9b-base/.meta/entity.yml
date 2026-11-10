@@ -1,0 +1,34 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-5/models/qwen3-5-9b-base
+  type: model
+  name: Qwen3.5-9B-Base
+  identity_note: Qwen3.5-9B-Base is Qwen Team's separately released pretrained-only 9B-scale vision-language checkpoint.
+    It is the upstream learned model for the post-trained Qwen3.5-9B and is intended for adaptation and research
+    rather than direct conversation.
+  references:
+  - type: documentation
+    source:
+      url: https://huggingface.co/Qwen/Qwen3.5-9B-Base
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/Qwen/Qwen3.5-9B-Base/tree/main
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/Qwen/Qwen3.5-9B
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/alibaba/qwen/qwen3-5
+  - type: has-derivative
+    target: catalog/models/alibaba/qwen/qwen3-5/models/qwen3-5-9b

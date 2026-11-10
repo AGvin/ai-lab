@@ -1,0 +1,18 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/lm-evaluation-harness
+  type: software
+  name: Language Model Evaluation Harness
+  aliases:
+    - lm-evaluation-harness
+    - lm-eval
+  references:
+    - type: repository
+      source:
+        url: https://github.com/EleutherAI/lm-evaluation-harness
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/e/eleutherai

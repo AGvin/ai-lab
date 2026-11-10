@@ -1,0 +1,17 @@
+entity:
+  id: catalog/hardware/nvidia-a100-80gb
+  type: hardware
+  name: NVIDIA A100 80GB Tensor Core GPU
+  identity_note: >-
+    The manufacturer identifies the 80 GB Ampere A100 separately from its 40 GB configuration and distinguishes PCIe and SXM implementations. This entry represents the GPU product, not an HGX/DGX system or cloud instance. Use the exact SKU's power, cooling and interconnect specification; marketed partitioning and performance are not workload-fit guarantees.
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/data-center/a100/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

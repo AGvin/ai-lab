@@ -22,5 +22,7 @@ entity:
   relations:
     - type: produced-by
       target: catalog/producers/c/can-boluk
+    - type: maintained-by
+      target: catalog/producers/s/stencil-labs
     - type: derived-from
       target: catalog/software/agents/local/pi

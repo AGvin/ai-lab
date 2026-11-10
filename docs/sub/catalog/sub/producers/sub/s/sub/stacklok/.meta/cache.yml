@@ -1,0 +1,101 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:03bed7fd25f7c245912d256b1abcd3a7f42a86db
+    parent:
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/s/stacklok
+        type: organization
+        name: Stacklok
+        identity_note: Stacklok is the first-party publisher and maintainer of ToolHive
+          through the stacklok upstream. ToolHive is a separately released MCP platform;
+          the organization is distinct from client agents, model providers and the
+          third-party MCP servers it runs. ToolHive’s Apache 2.0 source can be deployed
+          on operator-controlled infrastructure. Container isolation and configurable
+          identity policies depend on the selected deployment and configuration; they
+          do not make every server or exposed tool trustworthy. Review server provenance,
+          image permissions, authentication, network access and secrets. Managed or
+          enterprise offerings and each connected service may have additional agreements
+          beyond the ToolHive source license.
+        references:
+        - type: official-site
+          source:
+            url: https://stacklok.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/stacklok/toolhive
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.stacklok.com/toolhive/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/ai-management-platforms/toolhive
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

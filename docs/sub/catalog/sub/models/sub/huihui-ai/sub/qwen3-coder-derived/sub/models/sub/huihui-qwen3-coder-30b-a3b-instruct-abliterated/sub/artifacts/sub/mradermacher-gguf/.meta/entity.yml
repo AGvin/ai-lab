@@ -2,6 +2,13 @@ entity:
   id: catalog/models/huihui-ai/qwen3-coder-derived/models/huihui-qwen3-coder-30b-a3b-instruct-abliterated/artifacts/mradermacher-gguf
   type: model-artifact
   name: mradermacher GGUF Artifacts
+  identity_note: >-
+    mradermacher GGUF Artifacts is the existing static GGUF quantization collection for
+    huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated. The card identifies mradermacher as
+    the quantizer and the exact huihui derivative as its base model. The repository declares
+    Apache-2.0 and lists eleven static quant choices. Select an exact file and revision; the
+    published GB sizes are not peak runtime RAM or VRAM. The linked weighted/imatrix -i1-GGUF
+    repository is a separate collection and is outside this node.
   references:
     - type: registry
       source:

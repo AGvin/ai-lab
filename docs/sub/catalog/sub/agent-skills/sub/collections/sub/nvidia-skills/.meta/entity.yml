@@ -2,6 +2,8 @@ entity:
   id: catalog/agent-skills/collections/nvidia-skills
   type: skill-collection
   name: NVIDIA Skills
+  identity_note: >-
+    NVIDIA's synchronized catalog mirrors product-repository skills. Documentation and skills use CC-BY-4.0, while source code uses Apache-2.0; linked external materials retain separate terms. Signatures or NVIDIA verification labels establish bounded distribution/provenance properties, not workload suitability or permission to execute commands.
   references:
     - type: repository
       source:
@@ -15,6 +17,21 @@ entity:
         url: https://docs.nvidia.com/skills/
       purposes:
         - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/NVIDIA/skills/blob/fce3cca4170be75e82c64920654d56ee2811b005/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/NVIDIA/skills/blob/fce3cca4170be75e82c64920654d56ee2811b005/LICENSE-APACHE
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/NVIDIA/skills/blob/fce3cca4170be75e82c64920654d56ee2811b005/LICENSE-CC-BY-4.0
+      purposes: [identification, research]
       authority: official
   relations:
     - type: produced-by

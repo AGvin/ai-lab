@@ -1,0 +1,116 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:81244adb68012adf192c2b501924d92acc8dd10d
+    parent:
+      entity.yml: gitblob:42cf97aa2d13983fe5986836e8194af50283f4f9
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/fal/h3-max
+        name: H3 Max by fal
+        type: model
+        identity_note: H3 Max is a separately post-trained audiovisual generation
+          model developed by fal Research from MiniMax H3, with a co-optimized hosted
+          inference stack. The original MiniMax H3 family, fal's learned post-training,
+          and fal's text-to-video / image-to-video API routes have distinct provenance
+          and access boundaries. Hosted model access is not proof of public H3 Max
+          checkpoint availability, upstream-weight relicensing, or transferable commercial
+          rights.
+        references:
+        - type: documentation
+          source:
+            url: https://blog.fal.ai/introducing-h3-max-by-fal/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://fal.ai/models/minimax/h3-max/text-to-video/api
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://fal.ai/models/minimax/h3-max/image-to-video/api
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://fal.ai/minimax-h3-max
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://fal.ai/legal/terms-of-service
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/MiniMaxAI/MiniMax-H3
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/f/features-and-labels-inc
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

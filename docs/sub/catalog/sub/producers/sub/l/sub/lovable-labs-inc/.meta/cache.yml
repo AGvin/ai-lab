@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:9f6ef08f55f7a2ad2f64fbde34a68911add2f108
+      entity.yml: gitblob:e51eeff982a9c948047e4918d182a377f322d12f
     parent:
       entity.yml: gitblob:665e9ca01b87f5f7025e0f60f3e694be0cc71db2
   state:
@@ -70,7 +70,10 @@ cache:
           - identification
           - research
           authority: official
-          note: Official Lovable Privacy Policy identifying Lovable Labs Incorporated.
+          note: The Privacy Policy names Lovable Labs Sweden AB as controller for
+            processing covered by that policy, with separate organization-managed-data
+            provisions; this is distinct from the Incorporated entity named in the
+            general Terms.
         relations:
         - type: produces
           target: catalog/services/development/agents/lovable

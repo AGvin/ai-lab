@@ -23,3 +23,11 @@ entity:
       target: catalog/models/xiaomi-mimo/mimo/mimo-v2-5/models/mimo-v2-5
     - type: has-member
       target: catalog/models/xiaomi-mimo/mimo/mimo-v2-5/models/mimo-v2-5-pro
+    - type: has-member
+      target: catalog/models/xiaomi-mimo/mimo/mimo-v2-5/models/mimo-v2-5-asr
+    - type: has-member
+      target: catalog/models/xiaomi-mimo/mimo/mimo-v2-5/models/mimo-v2-5-tts
+  identity_note: >-
+    MiMo V2.5 groups distinct language and speech models. The stated up-to-one-million-token
+    context and hosted language-API retirement concern the separately named language models,
+    not automatically the ASR or TTS members. Model-specific licenses and voice permissions differ.

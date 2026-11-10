@@ -1,0 +1,4 @@
+entity:
+  id: catalog/models/sarvam-ai/sarvam/models
+  type: catalog-index
+  name: Sarvam Models

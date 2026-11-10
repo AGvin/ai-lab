@@ -10,6 +10,8 @@
 - Keep SDK/runtime support, execution guarantees, hosting architecture, concurrency controls, and other mutable details source-backed when expanded.
 - Include current official Inngest documentation, repository, legal, and open-source history references.
 
+- State the current self-hosted server/CLI license accurately: SSPL 1.0 with an Apache 2.0 future-license grant after three years; do not characterize the current server/CLI as unqualified Apache-licensed or OSI-open-source software.
+
 ## Validation
 
 - The page distinguishes orchestration from the user compute that runs application functions.

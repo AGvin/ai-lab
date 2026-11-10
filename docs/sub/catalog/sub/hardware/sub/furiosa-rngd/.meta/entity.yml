@@ -1,0 +1,30 @@
+entity:
+  id: catalog/hardware/furiosa-rngd
+  type: hardware-product
+  name: FuriosaAI RNGD
+  identity_note: >-
+    FuriosaAI RNGD is a 48 GB HBM3 PCIe Gen5 x16 inference NPU built around a Tensor Contraction Processor. Official 2026 developer documentation states a 150 W TDP, while Furiosa's product specification page states 180 W; treat this discrepancy as unresolved for host cooling and power budgeting. INT4/INT8 peak figures and SR-IOV capability are vendor specifications, not independent inference throughput.
+  aliases:
+    - RNGD
+  references:
+    - type: official-site
+      source:
+        url: https://furiosa.ai/rngd
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://developer.furiosa.ai/latest/en/overview/rngd.html
+      purposes:
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://furiosa.ai/renegade-spec
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/f/furiosa-ai

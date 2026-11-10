@@ -1,0 +1,79 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d7da7a0327e05a2a5fc8edd3bfc9ab66e47b3dac
+    parent:
+      entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
+      node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/producer
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/producer
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/bytedance
+        type: model-producer-view
+        name: ByteDance Seed Models
+        identity_note: Catalog publishing namespace for the ByteDance Seed model families.
+          The canonical producer is the ByteDance Seed team; family, concrete model,
+          application and hosted ModelArk route identities are separate.
+        references:
+        - type: official-site
+          source:
+            url: https://seed.bytedance.com/en/models
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations: []
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

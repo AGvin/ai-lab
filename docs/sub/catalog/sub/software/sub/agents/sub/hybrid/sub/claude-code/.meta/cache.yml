@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b96d4e10dba09f7a6883ef7cfd75a55a027b61e0
+      entity.yml: gitblob:cad71364e609edd9fb9a85ce9e52fa9747d0d03f
     parent:
       entity.yml: gitblob:8fac2314e88755b43bc622e0d92b4c5ab01c3bf8
   state:
@@ -58,6 +58,24 @@ cache:
             url: https://code.claude.com/docs/en/overview
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://code.claude.com/docs/en/desktop
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://code.claude.com/docs/en/claude-code-on-the-web
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://code.claude.com/docs/en/routines
+          purposes:
           - research
           authority: official
         relations:

@@ -1,0 +1,47 @@
+entity:
+  id: catalog/services/model-apis/digitalocean-inference
+  type: service
+  name: DigitalOcean Inference
+  aliases:
+    - DigitalOcean Serverless Inference
+    - DigitalOcean Inference API
+  identity_note: >-
+    DigitalOcean's managed model-serving and routing product surface,
+    covering its model catalog, serverless API access, dedicated inference
+    and Inference Router options. It is a hosted service rather than
+    independent open-source inference software, an original foundation model,
+    the separate DigitalOcean Evaluations service, or the complete
+    DigitalOcean AI Agent Platform. Available upstream models, service
+    modalities, quotas, regions and rates are mutable.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.digitalocean.com/products/inference/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.digitalocean.com/products/inference/details/models/
+      purposes: [identification, research]
+      authority: official
+      note: Hosted and third-party model distinction, routing, deployment and OpenAI-compatible surface.
+    - type: documentation
+      source:
+        url: https://docs.digitalocean.com/products/inference/reference/api/serverless-inference/
+      purposes: [research]
+      authority: official
+      note: Serverless API uses its own base URL, distinct from the DigitalOcean control-plane API.
+    - type: documentation
+      source:
+        url: https://docs.digitalocean.com/products/inference/details/availability/
+      purposes: [research]
+      authority: official
+      note: Regional availability differs by inference deployment type and is mutable.
+    - type: documentation
+      source:
+        url: https://docs.digitalocean.com/products/inference/how-to/si-endpoints/
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/d/digitalocean

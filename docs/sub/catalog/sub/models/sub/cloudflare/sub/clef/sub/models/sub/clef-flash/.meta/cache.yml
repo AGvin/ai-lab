@@ -1,0 +1,113 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:2555e087177e872d42e8f878b865cdfdf9629320
+    parent:
+      entity.yml: gitblob:db0350eaec1a453a5eaa80eb1010683969f5d346
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/cloudflare/clef/models/clef-flash
+        type: model
+        name: Clef-flash
+        identity_note: Clef-flash is Cloudflare's concrete 9B decision model, released
+          on 1 October 2026 and post-trained from Qwen/Qwen3.5-9B. It scores allowed
+          answers to typed questions from text, structured state and supported visual
+          inputs, and is positioned by Cloudflare for lower-latency decisions. The
+          9 October hosted change reduced the advertised context from 64K to 24K without
+          changing the weights; the current Workers AI page specifies 24,576 tokens.
+          Cloudflare separately describes up to 256K for self-hosted weights. Neither
+          value guarantees practical memory fit or complete input retention in a chosen
+          runtime.
+        references:
+        - type: documentation
+          source:
+            url: https://developers.cloudflare.com/workers-ai/models/clef-flash/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://developers.cloudflare.com/changelog/post/2026-10-09-clef-omni-workers-ai/
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/Cloudflare/clef-flash
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://blog.cloudflare.com/clef-decision-models/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/cloudflare/clef
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

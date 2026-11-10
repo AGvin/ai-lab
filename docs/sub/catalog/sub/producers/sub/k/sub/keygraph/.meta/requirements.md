@@ -7,6 +7,7 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official Keygraph site and GitHub organization references.
 - Keep unverified legal-form, staffing, funding, pricing, and other mutable corporate details outside this concise producer profile.
+- Distinguish the self-run Shannon software license from Keygraph commercial service terms; active exploitation must follow the official authorization and non-production testing boundary.
 
 ## Validation
 

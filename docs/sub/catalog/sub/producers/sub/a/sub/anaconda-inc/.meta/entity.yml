@@ -1,0 +1,45 @@
+entity:
+  id: catalog/producers/a/anaconda-inc
+  type: organization
+  name: Anaconda, Inc.
+  aliases:
+    - Anaconda
+  references:
+    - type: official-site
+      source:
+        url: https://www.anaconda.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.anaconda.com/legal/terms/terms-of-service
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official Anaconda terms identifying Anaconda, Inc. and its affiliates.
+    - type: article
+      source:
+        url: https://www.anaconda.com/blog/anaconda-acquires-kilo-code
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.anaconda.com/newsletter/2026-07-numerically-speaking
+      purposes:
+        - research
+      authority: official
+      note: July 2026 company newsletter confirms the completed Kilo Code acquisition.
+    - type: other
+      source:
+        url: https://kilo.ai/terms
+      purposes:
+        - research
+      authority: official
+      note: Published Kilo terms identify Anaconda, Inc. acting for itself and affiliates including Kilo Code Inc.
+  relations:
+    - type: owns
+      target: catalog/producers/k/kilo-code-inc

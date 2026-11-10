@@ -1,0 +1,86 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:8e94e66394b8a52db772e679096e446340652e1f
+    parent: {}
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/meta/muse/models/muse-spark-1-3
+        type: model
+        name: Muse Spark 1.3
+        references:
+        - type: article
+          source:
+            url: https://research.meta.ai/blog/introducing-muse-spark-1-3
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Dated official launch announcement confirms release on September 2,
+            2026.
+        - type: documentation
+          source:
+            url: https://dev.meta.ai/models/muse-spark
+          purposes:
+          - research
+          authority: official
+          note: Current Meta AI developer surface describing Muse Spark 1.3 capabilities
+            and Meta Model API availability.
+        relations:
+        - type: member-of
+          target: catalog/models/meta/muse
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

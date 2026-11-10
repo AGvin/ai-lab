@@ -2,6 +2,8 @@ entity:
   id: catalog/agent-skills/collections/matt-pocock-skills
   type: skill-collection
   name: Matt Pocock Skills
+  identity_note: >-
+    Matt Pocock publishes composable engineering and productivity instructions under MIT. Managed plugin distribution and selectively copied editable skills have different update and dependency behavior. Follow the selected installation's current setup/dependency guidance; collection presence does not itself authorize issue creation, external messages or repository writes.
   references:
     - type: repository
       source:
@@ -9,6 +11,16 @@ entity:
       purposes:
         - identification
         - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/LICENSE
+      purposes: [identification, research]
       authority: official
   relations:
     - type: produced-by

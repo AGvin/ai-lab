@@ -1,0 +1,119 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:69bc7ee4066f82a491fe8f8125e7812e00a6cf54
+    parent:
+      entity.yml: gitblob:602acb679d0c76a713ee87e3eca52ba813e092f0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/inference-runtimes/inference-engines/bitnet-cpp
+        type: software
+        name: BitNet.cpp
+        aliases:
+        - bitnet.cpp
+        - Microsoft BitNet inference framework
+        identity_note: Independently published Microsoft-origin MIT open-source inference
+          framework optimized for ternary and low-bit BitNet-type LLM weights, using
+          native CPU x86/ARM kernels and a separate GPU/CUDA inference component.
+          It is the runtime implementation, not the trained BitNet-b1.58-2B-4T model,
+          model checkpoints, a general-purpose cloud inference provider, or a hardware
+          accelerator. Supported quantization formats and CPU/GPU pathways depend
+          on exact model and architecture. The main README labels version 1.0 as released
+          in October 2024, but no matching public GitHub Releases entry was found
+          in the 2026-11-02 original-source check; document a source commit instead.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/microsoft/BitNet
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Original runtime source and setup, commit 0b341e582afbf9e1011f24744b554c96a3477eb5.
+        - type: documentation
+          source:
+            url: https://github.com/microsoft/BitNet/blob/main/README.md
+          purposes:
+          - research
+          authority: official
+          note: Source claim of BitNet.cpp version 1.0, CPU kernels, model matrix
+            and benchmark context.
+        - type: documentation
+          source:
+            url: https://github.com/microsoft/BitNet/blob/main/gpu/README.md
+          purposes:
+          - research
+          authority: official
+          note: Separate CUDA W2A8 kernel reference and original NVIDIA A100 results.
+        - type: documentation
+          source:
+            url: https://github.com/microsoft/BitNet/blob/main/SECURITY.md
+          purposes:
+          - research
+          authority: official
+          note: Microsoft security vulnerability reporting workflow.
+        - type: other
+          source:
+            url: https://huggingface.co/microsoft/BitNet-b1.58-2B-4T
+          purposes:
+          - research
+          authority: official
+          note: Separately released model weights, not part of runtime software identity.
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/microsoft
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

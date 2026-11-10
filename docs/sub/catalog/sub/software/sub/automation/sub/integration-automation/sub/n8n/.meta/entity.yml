@@ -22,6 +22,18 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://docs.n8n.io/n8n-community-license
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolaiagent
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produced-by
       target: catalog/producers/n/n8n-gmbh

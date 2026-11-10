@@ -1,0 +1,31 @@
+entity:
+  id: catalog/models/cohere-labs/aya/aya-101
+  type: model
+  name: Aya 101
+  identity_note: >-
+    Aya 101 is Cohere Labs' original separately published February 2024 multilingual
+    instruction-tuned text generation model, with approximately 13B parameters and 101
+    supported languages. The original CohereLabs/aya-101 weight repository states an
+    Apache-2.0 license and mT5-XXL-style sequence-to-sequence architecture. It is not
+    the later Aya 23/Expanse/Vision model, a hosted Cohere API route or an identified
+    concrete training-parent checkpoint. The model card does not specify a standard
+    supported context length; no independent inference or accuracy check was performed.
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/CohereLabs/aya-101
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://cohere.com/blog/aya
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://arxiv.org/abs/2402.07827
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere-labs/aya

@@ -2,6 +2,13 @@ entity:
   id: catalog/producers/z/zenml-gmbh
   type: organization
   name: ZenML GmbH
+  identity_note: >-
+    ZenML GmbH is the company that ZenML's documentation identifies as creating and maintaining the open-source
+    project with community contributors. Current ZenML Labs branding and the separately documented Kitaru
+    project do not replace this canonical company or the ZenML software identity. Open-source framework
+    capabilities and commercial management services have separate boundaries. The Python package enables
+    anonymized usage analytics by default and documents an opt-out command. Pipeline integrations still require
+    their own infrastructure permissions, credentials and data-handling decisions.
   references:
     - type: official-site
       source:

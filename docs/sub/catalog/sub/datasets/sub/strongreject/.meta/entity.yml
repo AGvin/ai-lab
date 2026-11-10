@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/strongreject
+  type: dataset
+  name: "StrongREJECT"
+  aliases:
+    - "StrongREJECT Jailbreak Safety Benchmark"
+  identity_note: >-
+    Research benchmark of harmful behavior prompt categories and jailbreak response evaluation, with distinct rubric-based and fine-tuned scoring approaches.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/dsbowen/strong_reject
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/dsbowen/strong_reject/blob/7a551d5b440ec7b75d4f6f5bb7c1719965b76b47/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/dsbowen/strong_reject/blob/7a551d5b440ec7b75d4f6f5bb7c1719965b76b47/LICENSE
+      purposes: [research]
+      authority: official

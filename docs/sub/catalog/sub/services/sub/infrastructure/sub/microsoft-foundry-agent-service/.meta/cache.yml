@@ -1,0 +1,106 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:21e94bf0a3189a1482a2335e01ebb3b8ad41babe
+    parent:
+      entity.yml: gitblob:52e5d82689f73b1741dc3a66f6cae32c9e404c33
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/infrastructure/microsoft-foundry-agent-service
+        type: service
+        name: Microsoft Foundry Agent Service
+        identity_note: Microsoft Foundry Agent Service is Microsoft's generally available
+          managed platform for building, deploying, running and scaling AI agents.
+          The service manages agent runtime, conversations, tool calls, identity,
+          monitoring, versioning and publishing. Prompt agents use service-managed
+          configuration; hosted agents bring application code into a managed runtime.
+          These are service capabilities, separate from the installable Microsoft
+          Agent Framework, Copilot Studio, Entra identity products and the underlying
+          model catalog. Service availability does not make every feature generally
+          available. Tools, protocols, networking, storage, regions, quotas, publishing
+          destinations and runtime options have their own support and preview boundaries.
+          Connected-resource permissions and deployed application behavior still depend
+          on the chosen identity, model, tools and configuration.
+        aliases:
+        - Azure AI Foundry Agent Service
+        - Foundry Agent Service
+        references:
+        - type: documentation
+          source:
+            url: https://learn.microsoft.com/en-us/azure/foundry/agents/overview
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://azure.microsoft.com/en-us/products/ai-foundry/agent-service
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://azure.microsoft.com/en-us/blog/azure-ai-foundry-your-ai-app-and-agent-factory/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/microsoft
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

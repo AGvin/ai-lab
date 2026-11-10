@@ -1,0 +1,33 @@
+entity:
+  id: catalog/services/infrastructure/vertex-ai-agent-engine
+  type: service
+  name: Agent Runtime on Gemini Enterprise Agent Platform
+  aliases:
+    - "Vertex AI Agent Engine"
+    - "Agent Runtime"
+  identity_note: "The official Google Cloud name-change table identifies this as the current name of Vertex AI Agent Engine. The existing canonical managed-runtime service identity is retained."
+  references:
+    - type: documentation
+      source:
+        url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://cloud.google.com/vertex-ai/generative-ai/docs/release-notes
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/vertex-ai-name-changes
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google-cloud

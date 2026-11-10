@@ -1,0 +1,42 @@
+entity:
+  id: catalog/producers/m/mcpjam
+  type: organization
+  name: MCPJam Inc
+  identity_note: >-
+    MCPJam Inc publishes MCPJam Inspector, a third-party Model Context Protocol development and
+    debugging product. MCPJam's Inspector, CLI, SDK and local evaluation tools are distinct from its
+    hosted and enterprise service terms. MCPJam does not govern the MCP specification or own the
+    external AI clients and MCP servers it tests; test coverage and enterprise security statements need
+    their own product-level evidence.
+  references:
+    - type: official-site
+      source:
+        url: https://www.mcpjam.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/MCPJam/inspector
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.mcpjam.com/features/inspector
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.mcpjam.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/development-tools/testing/mcpjam-inspector

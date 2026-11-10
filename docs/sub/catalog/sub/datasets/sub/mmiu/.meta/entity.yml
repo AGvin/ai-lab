@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/mmiu
+  type: dataset
+  name: "MMIU"
+  aliases:
+    - "Multimodal Multi-image Understanding"
+  identity_note: >-
+    Multimodal multi-image evaluation dataset of seven relationship types, 52 tasks, approximately 77,000 images and 11,000 multiple-choice questions; distinct from hosted images, evaluation software and historical rankings.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/OpenGVLab/MMIU
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/OpenGVLab/MMIU/blob/642001df618a57d65869ef3975021deabfbcc891/README.md
+      purposes: [research]
+      authority: official

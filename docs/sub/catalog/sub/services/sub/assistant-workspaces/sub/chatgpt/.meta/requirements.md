@@ -20,3 +20,13 @@
 - Connected app/plugin access is not described as automatically granted by a skill or prompt.
 - The first-hand owner observation is clearly labeled subjective and dated, with no generalization to all users/models/deployments.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Scoped original-source qualification — 2026-11-07
+
+- ChatGPT is OpenAI's hosted chat/workspace product, separate from individual GPT model snapshots, the API platform, and the OpenAI Codex coding-agent product. Projects gather chats, files and instructions; connected apps access authorized external services subject to workspace, account, role and connection controls.
+- First-party Data Controls explain model-improvement opt-out for consumer conversations, while business/managed contexts have distinct policies; this is not a guarantee of universal retention, training or regional behavior. The dated 2026-07-25 owner observation remains explicitly subjective, not independently repeated or representative.
+- Verified first-party source 1: https://help.openai.com/en/collections/3742473-chatgpt
+- Verified first-party source 2: https://help.openai.com/en/articles/10169521-projects-in-chatgpt
+- Verified first-party source 3: https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt
+- Verified first-party source 4: https://help.openai.com/en/articles/7730893
+- Existing hosted-service identity and bounded first-party source only; no authenticated settings audit, app installation/action, user-conversation evaluation, security/privacy/legal clearance, whole-catalog clean pass or final gate.

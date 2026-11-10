@@ -1,0 +1,26 @@
+entity:
+  id: catalog/models/perplexity-ai/pplx-embed-v1/models/pplx-embed-context-v1-4b
+  type: model
+  name: PPLX Embed Context V1 4B
+  aliases:
+  - pplx-embed-context-v1-4b
+  references:
+  - type: documentation
+    source:
+      url: https://docs.perplexity.ai/docs/embeddings/quickstart
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/perplexity-ai/pplx-embed-context-v1-4b
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/perplexity-ai/pplx-embed-v1
+  identity_note: PPLX Embed Context V1 4B is the 4B-class contextualized member of Perplexity's Qwen3-derived V1
+    embedding family. Its current model card lists 2560 dimensions, a 32K context and MIT licensing.

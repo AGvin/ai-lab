@@ -1,0 +1,102 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:7c48ac4a41c54c2c8a67099567af0cadebe6904c
+    parent:
+      entity.yml: gitblob:c67a1e121f7216f77efa07757ddb0a6784b14934
+      node.yml: gitblob:39c4396beb14a3c51f40ec2d1670fe6fd9d6a54a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/producer
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/producer
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/cloudflare
+        type: model-producer-view
+        name: Cloudflare models
+        identity_note: Cloudflare models is the navigation view for the Cloudflare-trained
+          models represented in this catalog. The current released scope is the Clef
+          decision-model family; Workers AI also hosts models produced by other organizations.
+          Separate model authorship from Cloudflare's inference service, AI Gateway,
+          serving configuration and fine-tuning offerings. Select a concrete Clef
+          member and its supported interface; a hosting entry does not transfer another
+          producer's model identity to Cloudflare.
+        references:
+        - type: documentation
+          source:
+            url: https://developers.cloudflare.com/workers-ai/models/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/
+          purposes:
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://developers.cloudflare.com/changelog/post/2026-10-09-clef-omni-workers-ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://blog.cloudflare.com/clef-decision-models/
+          purposes:
+          - identification
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

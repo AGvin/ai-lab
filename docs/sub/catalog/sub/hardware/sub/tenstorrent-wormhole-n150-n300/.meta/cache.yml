@@ -1,0 +1,106 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:ead48b28c0c69b18f715a7417393bea58ea2ea4b
+    parent:
+      entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/hardware/tenstorrent-wormhole-n150-n300
+        type: hardware-product
+        name: Tenstorrent Wormhole n150/n300
+        identity_note: Tenstorrent's Wormhole PCIe n150/n300 family includes n150d/n150s
+          and n300d/n300s with distinct single/dual ASIC and active/passive cooling
+          configurations. Current first-party installation requirements give PCIe
+          4.0 x16 host, up to 160 W for n150 boards versus up to 300 W for n300 boards,
+          and host-airflow requirements for boards without an active cooling kit.
+          Do not transfer one card's power, HBM/ASIC count, throughput or firmware
+          support to the family or Galaxy systems. Deployment requires supported host,
+          cabling, OS, TT-Metal/TT-Forge and validated models.
+        aliases:
+        - Wormhole n150
+        - Wormhole n300
+        - Wormhole n150d
+        - Wormhole n150s
+        - Wormhole n300d
+        - Wormhole n300s
+        references:
+        - type: documentation
+          source:
+            url: https://docs.tenstorrent.com/aibs/wormhole/installation.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://open.tenstorrent.com/hardware/wormhole
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.tenstorrent.com/aibs/wormhole/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/t/tenstorrent
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

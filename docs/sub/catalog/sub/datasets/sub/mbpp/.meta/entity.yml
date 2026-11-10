@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/mbpp
+  type: dataset
+  name: "MBPP"
+  aliases:
+    - "Mostly Basic Python Problems"
+  identity_note: >-
+    Crowdsourced Python function-programming benchmark of approximately 1,000 tasks including prompts, reference solutions and three automated tests each; original and sanitized subsets are separate data variants.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/google-research/google-research
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/google-research/google-research/blob/83f1e7b59e762648c953de751d31f75720683622/mbpp/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/google-research/google-research/blob/83f1e7b59e762648c953de751d31f75720683622/LICENSE
+      purposes: [research]
+      authority: official

@@ -1,0 +1,99 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:0f7c080786d3fc3c4bd863e8f3a45f6c39f8bacd
+    parent:
+      entity.yml: gitblob:03f8eb89b4bc542dfc0c1fcab5ee7f1a6c07a658
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/v/vespa-ai
+        type: organization
+        name: Vespa.ai
+        identity_note: Vespa.ai is the company behind the self-managed Vespa search
+          platform and the separately operated Vespa Cloud service. Vespa originated
+          at Yahoo; the independent company spin-out was announced in 2023. Shared
+          search technology does not give self-managed installations the operations,
+          service commitments or commercial features of Vespa Cloud. Assess deployment,
+          release, data handling and ranking configuration for the chosen software
+          or service; performance figures require a matched workload and topology.
+        references:
+        - type: official-site
+          source:
+            url: https://vespa.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/vespa-engine
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://blog.vespa.ai/vespa-is-becoming-its-own-company/
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/data-infrastructure/vector-search/vespa
+        - type: produces
+          target: catalog/services/data-infrastructure/vector-search/vespa-cloud
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

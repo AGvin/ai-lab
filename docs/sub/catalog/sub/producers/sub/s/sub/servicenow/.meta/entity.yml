@@ -1,0 +1,68 @@
+entity:
+  id: catalog/producers/s/servicenow
+  type: organization
+  name: ServiceNow
+  identity_note: >-
+    ServiceNow publishes the represented AI Control Tower product and the WebArena-Verified and
+    WorkArena benchmark releases. It also publishes BrowserGym as a browser-environment framework and
+    AgentLab as experiment and analysis software. These are distinct product, benchmark, environment and
+    evaluation roles within the ServiceNow research ecosystem. The current product page markets the
+    control-tower offering as Super Intelligence Control Tower; the catalog retains its established AI
+    Control Tower identity. Enterprise product entitlements do not follow from access to research
+    repositories. WebArena-Verified refines the original WebArena benchmark rather than claiming its
+    original authorship, and WorkArena instance access has a separate approval process. Pin tasks,
+    evaluators, environments and agent versions, and use isolated test accounts for browser agents.
+  references:
+    - type: official-site
+      source:
+        url: https://www.servicenow.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.servicenow.com/products/ai-control-tower.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ServiceNow/webarena-verified
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ServiceNow/WorkArena
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ServiceNow/BrowserGym
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ServiceNow/AgentLab
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/services/ai-management-platforms/servicenow-ai-control-tower
+    - type: produces
+      target: catalog/datasets/webarena-verified
+    - type: produces
+      target: catalog/datasets/workarena
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/browsergym
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/agentlab

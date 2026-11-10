@@ -1,0 +1,16 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-5/models/qwen3-5-35b-a3b-base
+  type: model
+  name: Qwen3.5 35B-A3B Base
+  identity_note: pretrained-only research/development base. Exact original Qwen/Qwen3.5-35B-A3B-Base, distinct from Base/post-training siblings, GGUF packages and the separately cataloged Qwen3-Coder30B derivative.
+  references:
+  - type: documentation
+    source:
+      url: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base
+    purposes: [identification, research]
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/alibaba/qwen/qwen3-5
+  - type: has-derivative
+    target: catalog/models/alibaba/qwen/qwen3-5/models/qwen3-5-35b-a3b

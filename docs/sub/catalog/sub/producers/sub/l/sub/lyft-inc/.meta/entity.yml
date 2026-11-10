@@ -5,7 +5,7 @@ entity:
   references:
     - type: other
       source:
-        url: https://www.lyft.com/terms?country=us
+        url: https://www.lyft.com/terms
       purposes:
         - identification
       authority: official

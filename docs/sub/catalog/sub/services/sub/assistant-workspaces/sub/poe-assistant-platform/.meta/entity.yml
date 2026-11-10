@@ -1,0 +1,35 @@
+entity:
+  id: catalog/services/assistant-workspaces/poe-assistant-platform
+  type: service
+  name: Poe Assistant Platform
+  aliases:
+    - Poe
+    - Poe Creator Platform
+  identity_note: >-
+    Poe's hosted multiprovider conversational assistant and creator platform, offering prompt, server, API and script bots and external application access. Poe-operated infrastructure and account-based pricing are distinct from creators' servers, bot source, third-party models, and the underlying managed inference providers.
+  references:
+    - type: official-site
+      source:
+        url: https://poe.com/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://creator.poe.com/docs
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://creator.poe.com/docs/api-bots/overview
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://creator.poe.com/docs/server-bots/poe-protocol-specification
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://creator.poe.com/docs/external-applications/external-application-guide
+      purposes: [research]
+      authority: official

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a556935ebaa812f0552a5614cfdd8835b529009a
+      entity.yml: gitblob:c4d58afc49959bb98137043c94fc939110701487
     parent:
       entity.yml: gitblob:4551246272856e7f298993d1f6d92097ef2505df
   state:
@@ -45,6 +45,15 @@ cache:
         id: catalog/producers/w/windmill-labs-inc
         type: organization
         name: Windmill Labs, Inc.
+        identity_note: 'Windmill Labs, Inc. is the company behind the Windmill developer
+          automation platform and its hosted service. The current service terms separately
+          address hosted access; self-managed software and distributed releases have
+          their own licensing conditions. The source tree and prebuilt Community Edition
+          binaries are not interchangeable licensing units: distributed binaries include
+          proprietary components in addition to open-source portions. Deployment also
+          gives workers access to scripts, secrets and connected systems, so operating
+          permissions and selected distribution terms matter independently of company
+          identity.'
         references:
         - type: official-site
           source:

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:376fbd3d7b64180367f11ccf64910c83dbb11999
+      entity.yml: gitblob:9a0cd4901f9c848315a4b968d18f5b0595278ca8
     parent:
       entity.yml: gitblob:9068e4d23b259172e09161ab6ecec0a68da2be9c
   state:
@@ -45,6 +45,13 @@ cache:
         id: catalog/producers/m/mastra
         type: organization
         name: Mastra
+        identity_note: Mastra is the first-party organization and publishing identity
+          behind the Mastra TypeScript framework. The producer identity remains distinct
+          from the Mastra software framework and from separate hosted or commercial
+          platform surfaces. The team's official account establishes the framework's
+          provenance. Open-source framework access does not automatically include
+          hosted infrastructure, commercial support, or third-party model access;
+          each deployment and service contract must be assessed at its own scope.
         references:
         - type: official-site
           source:
@@ -56,6 +63,20 @@ cache:
         - type: repository
           source:
             url: https://github.com/mastra-ai/mastra
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://mastra.ai/about
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://cloud.mastra.ai/
           purposes:
           - identification
           - research

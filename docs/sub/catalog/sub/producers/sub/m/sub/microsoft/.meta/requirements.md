@@ -6,6 +6,10 @@
 - Preserve GitHub, Inc. as a separately represented organization owned by Microsoft without using ownership as a substitute for GitHub product provenance.
 - Keep the GitHub ownership fact distinct from production: GitHub-produced product identities remain attributed to GitHub unless independent evidence supports an additional producer.
 - Keep model-family and concrete-model details in `catalog/models/` and software details in their corresponding canonical owners rather than duplicating them on the producer page.
+- Treat Agent Lightning as separate Microsoft Research model-development/post-training software; distinguish it from Microsoft Agent Framework, PyTorch Lightning, its integrated verl backend and separately distributed agent-optimization skill. Attribute any published benchmark improvements to the publisher rather than independent AI Lab verification.
+- Attribute the independently published Microsoft GraphRAG Python research package to Microsoft, but keep its explicit maintenance-mode/no-official-product-support boundary, graph-RAG methodology and Foundry model-service identities distinct.
+- Attribute the independent released MarkItDown document-to-Markdown utility to Microsoft, while keeping its local I/O privilege and non-RAG scope on its own software page. Reuse Microsoft identity without adding a producer acceptance unit.
+- Attribute original Microsoft BitNet.cpp inference software separately from downloadable BitNet model checkpoints, source code kernels, hardware and hosted services; version and publisher-claimed performance belong to its own software documentation, not the producer identity.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Keep Azure-hosted access, third-party inference providers, quantizations, runtime integrations, and deployment guidance with their corresponding canonical owners rather than inferring them from corporate association.
 
@@ -14,6 +18,10 @@
 - Use `Microsoft` as the page title.
 - Describe Microsoft concisely as the producer organization for the represented Microsoft model and software entities.
 - Include the official Microsoft website, Microsoft Hugging Face organization, and official Microsoft acquisition record supporting the GitHub ownership fact.
+
+- Include the identity and producer-boundary context from canonical `entity.identity_note`; keep detailed product behavior with the related canonical owners.
+
+- Add the source-backed BitNet family relation and keep original model authorship distinct from hosting/runtime identity.
 
 ## Validation
 

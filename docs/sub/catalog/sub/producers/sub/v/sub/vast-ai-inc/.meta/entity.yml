@@ -2,6 +2,13 @@ entity:
   id: catalog/producers/v/vast-ai-inc
   type: organization
   name: Vast.ai Inc.
+  identity_note: >-
+    Vast.ai Inc. is the organization identified by the platform's published terms for the Vast.ai compute
+    marketplace. Customers rent capacity offered by independent hosts; the company and the hosted marketplace
+    remain separate catalog identities. Host verification concerns particular machines and operating conditions.
+    Physical security, compliance, networking and reliability can differ between offers and service tiers.
+    Review the selected host and contract instead of treating marketplace availability as a universal workload
+    or security guarantee.
   references:
     - type: official-site
       source:
@@ -23,6 +30,12 @@ entity:
         url: https://vast.ai/privacy
       purposes:
         - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.vast.ai/host/understanding-verification
+      purposes:
         - research
       authority: official
   relations:

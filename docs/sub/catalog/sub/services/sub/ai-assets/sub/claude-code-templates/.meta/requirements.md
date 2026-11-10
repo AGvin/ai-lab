@@ -17,3 +17,9 @@
 - Producer provenance does not imply authorship of third-party or community-contributed components.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
 - Official catalog, documentation, and repository destinations remain current project-owned sources.
+
+## Scoped original-source qualification — 2026-11-07
+
+- The hosted discovery catalog indexes third-party Claude Code skills, agents and integrations; its CLI and monitoring tools are separate local software surfaces. Listing a community component does not imply upstream authorship, endorsement, safety or compatibility.
+- Sources: https://aitmpl.com/ and https://github.com/davila7/claude-code-templates
+- Scoped source identity only; no installation, runtime, security, license or whole-repository clean-pass verification.

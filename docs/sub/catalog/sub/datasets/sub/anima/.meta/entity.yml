@@ -1,0 +1,14 @@
+entity:
+  id: catalog/datasets/anima
+  type: dataset
+  name: "ANIMA"
+  aliases:
+    - "Animal Norms In Moral Assessment"
+  identity_note: >-
+    Animal welfare moral reasoning with 26 prompts across 13 ethical dimensions, renamed from Animal Harm Benchmark (AHB) in May 2026; unrelated to Adversarial Humanities Benchmark.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/CompassioninMachineLearning/anima
+      purposes: [identification, research]
+      authority: official

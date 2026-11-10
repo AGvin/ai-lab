@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/bytedance
+  type: model-producer-view
+  name: ByteDance Seed Models
+  identity_note: >-
+    Catalog publishing namespace for the ByteDance Seed model families.
+    The canonical producer is the ByteDance Seed team; family, concrete model,
+    application and hosted ModelArk route identities are separate.
+  references:
+    - type: official-site
+      source:
+        url: https://seed.bytedance.com/en/models
+      purposes: [identification, research]
+      authority: official
+  relations: []

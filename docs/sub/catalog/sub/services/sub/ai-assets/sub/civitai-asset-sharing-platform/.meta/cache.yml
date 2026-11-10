@@ -1,0 +1,99 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:e856f9a0d06286776e3880743721b2028e3bb2f0
+    parent:
+      entity.yml: gitblob:db0b828c896e3369055c4053401f040f5e817f05
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/services/service
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/services/service
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/services/ai-assets/civitai-asset-sharing-platform
+        type: service
+        name: Civitai Asset Sharing Platform
+        aliases:
+        - Civitai
+        - Civitai Model Hub
+        identity_note: Civitai's publicly operated community platform for browsing,
+          uploading and sharing image-generation models and related assets. The Apache-2.0
+          application source is distinct from the operated service and does not license
+          third-party model files, datasets, images or user-contributed content.
+        references:
+        - type: official-site
+          source:
+            url: https://civitai.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/civitai/civitai
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/civitai/civitai/blob/e33d090034326331d5a250e38357bed0c3dec004/README.md
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/civitai/civitai/blob/e33d090034326331d5a250e38357bed0c3dec004/LICENSE
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

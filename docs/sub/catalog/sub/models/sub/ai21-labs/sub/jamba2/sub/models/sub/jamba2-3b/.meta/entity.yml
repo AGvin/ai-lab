@@ -1,0 +1,33 @@
+entity:
+  id: catalog/models/ai21-labs/jamba2/models/jamba2-3b
+  type: model
+  name: Jamba2 3B
+  identity_note: >-
+    Jamba2 3B is AI21 Labs' dense 3-billion-parameter model using the Jamba hybrid SSM-Transformer
+    design. AI21 publishes the AI21-Jamba2-3B weights under Apache 2.0 and documents a 256K-token
+    context window. The compact model is positioned for local and device deployments, but practical
+    context and throughput depend on runtime, precision and available memory. AI21's current model
+    table marks the 3B API endpoint N/A; downloadable weights do not imply a current hosted AI21
+    endpoint.
+  references:
+    - type: article
+      source:
+        url: https://www.ai21.com/blog/introducing-jamba2/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.ai21.com/docs/jamba-foundation-models
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/ai21labs/AI21-Jamba2-3B
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/ai21-labs/jamba2

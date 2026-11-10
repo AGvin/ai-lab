@@ -17,3 +17,13 @@
 - Open-source Shannon limitations are not generalized to the commercial platform, and commercial capabilities are not attributed to Shannon.
 - Active security testing includes an explicit authorization/isolation boundary.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Keygraph Pro and Enterprise are commercial application-security platform editions, separate from the AGPL-3.0 Shannon Open Source local white-box pentesting CLI. First-party documentation contrasts continuously managed, multi-repository finding/remediation and black-box capabilities with the narrower local/community tool.
+- Deployment boundary is plan-dependent: Community and Pro are provider-managed cloud; Enterprise can be installed within customer-controlled infrastructure or air-gapped. Model credentials are BYOK in documented editions. No single hosted-data or direct model-processing statement applies uniformly to all editions.
+- Agentic pentesting attempts active exploits. Require documented target authorization, non-production isolation, least privilege, secret control, monitoring and review of proposed fixes; vendor "verified exploit" claims do not constitute independent penetration-test or compliance certification.
+- Verified first-party source 1: https://keygraph.io/docs/explanations/keygraph-platform/
+- Verified first-party source 2: https://keygraph.io/docs/explanations/editions/
+- Verified first-party source 3: https://keygraph.io/open-source
+- Only existing Keygraph platform identity and version-scoped official service/source boundaries accepted. No exploit executed, target scanned, account linked, data processing independently audited, whole-repository schema/CI/render, clean pass or final gate.

@@ -17,6 +17,25 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://keygraph.io/docs/tutorials/quick-start/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://keygraph.io/docs/explanations/faq/
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/KeygraphHQ/shannon/discussions/405
+      purposes:
+        - research
+      authority: official
+      note: Official source for Shannon's migration to the Pi agent harness; runtime dependency does not replace product identity.
   relations:
     - type: produced-by
       target: catalog/producers/k/keygraph

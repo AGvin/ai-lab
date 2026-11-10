@@ -1,0 +1,14 @@
+entity:
+  id: catalog/datasets/judgebench
+  type: dataset
+  name: "JudgeBench"
+  aliases:
+    - "LLM Judge Correctness Benchmark"
+  identity_note: >-
+    Objective-correctness benchmark of challenging paired responses for testing LLM-as-a-judge models.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/ScalerLab/JudgeBench
+      purposes: [identification, research]
+      authority: official

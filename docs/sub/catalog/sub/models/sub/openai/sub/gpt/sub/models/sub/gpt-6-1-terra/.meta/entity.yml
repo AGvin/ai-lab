@@ -1,0 +1,21 @@
+entity:
+  id: catalog/models/openai/gpt/models/gpt-6-1-terra
+  type: model
+  name: GPT-6.1 Terra
+  identity_note: >-
+    OpenAI's October 26, 2026 released model has API ID gpt-6.1-terra. The card reports 1,050,000-token context, 128,000 maximum output, text/image input and text output; audio/video are not native supported modalities. Tool calling requires the Responses API. Visual reasoning, computer-use and writing positioning is publisher evidence, not independently validated task performance. Published model access is hosted; no open-weight license or unpublished parameter count is inferred. Treat processing tiers, prices, quotas and supported integrations as mutable service facts. Pin the documented model identity where possible, validate outputs and tool arguments, and require authorization for consequential computer actions. An available tool does not confer permission to use connected resources.
+    Ownership/control-chain review remains pending; no Russian-control assertion or adoption clearance.
+  references:
+    - type: documentation
+      source:
+        url: https://developers.openai.com/api/docs/models/gpt-6.1-terra
+      purposes: [identification, research]
+      authority: official
+    - type: release-notes
+      source:
+        url: https://developers.openai.com/api/docs/changelog
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/openai/gpt

@@ -1,0 +1,58 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-2/flux-2-klein/models/flux-2-klein-9b
+  name: FLUX.2 [klein] 9B
+  type: model
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-2/flux-2-klein
+  identity_note: FLUX.2 [klein] 9B is Black Forest Labs' separately published 9-billion-parameter 4-step distilled
+    flow-transformer model for image generation and editing. Its weights use FLUX Non-Commercial.
+  references:
+  - type: documentation
+    source:
+      url: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/black-forest-labs/flux2
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: license
+    source:
+      url: https://github.com/black-forest-labs/flux2/blob/main/model_licenses/LICENSE-FLUX-NON-COMMERICAL
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://github.com/black-forest-labs/flux2/blob/main/docs/flux2_klein_kv_cache.md
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://github.com/black-forest-labs/flux2/blob/50fe5162777813d869182b139e83b10743caef15/src/flux2/util.py
+    purposes:
+    - identification
+    - research
+    authority: official

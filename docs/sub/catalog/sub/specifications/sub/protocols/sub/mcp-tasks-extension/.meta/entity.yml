@@ -1,0 +1,29 @@
+entity:
+  id: catalog/specifications/protocols/mcp-tasks-extension
+  name: MCP Tasks Extension
+  aliases:
+    - Tasks Extension
+    - MCP Tasks
+  references:
+    - type: repository
+      source:
+        url: https://github.com/modelcontextprotocol/ext-tasks
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Official MCP Tasks extension repository; current released schema snapshot 2026-07-28 is marked Stable.
+    - type: specification
+      source:
+        url: https://github.com/modelcontextprotocol/ext-tasks/tree/main/specification/2026-07-28
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: specification
+      source:
+        url: https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/seps/2663-tasks-extension.md
+      purposes:
+        - research
+      authority: official
+      note: Final SEP establishing the Tasks extension.

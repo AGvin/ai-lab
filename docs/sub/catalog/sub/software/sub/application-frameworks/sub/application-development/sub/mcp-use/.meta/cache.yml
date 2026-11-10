@@ -1,0 +1,102 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:2b95b6822fc2367ad4604b425e9b8679bb4f11bf
+    parent:
+      entity.yml: gitblob:94df5cf52016d4c5269bb903a6a43c85fdce53b1
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/application-frameworks/application-development/mcp-use
+        type: software
+        name: mcp-use
+        references:
+        - type: repository
+          source:
+            url: https://github.com/mcp-use/mcp-use
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mcp-use.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.mcp-use.com/python/getting-started/quickstart
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: The Python SDK documents independent server, asynchronous client and
+            agent APIs.
+        - type: official-site
+          source:
+            url: https://manufact.com/mcp-use
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Manufact's product page identifies the open-source TypeScript and
+            Python SDKs separately from Manufact Cloud.
+        relations:
+        - type: produced-by
+          target: catalog/producers/m/mcp-use
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

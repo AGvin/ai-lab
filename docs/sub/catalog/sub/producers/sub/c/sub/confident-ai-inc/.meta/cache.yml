@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:702600182861bb0f17a681333e84624991f2d756
+      entity.yml: gitblob:837c2e28995e7db5f2ee13e61ee8c70977881838
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -69,9 +69,31 @@ cache:
           authority: official
           note: First-party DeepEval product/framework page identifying Confident
             AI as its creator and maintainer.
+        - type: repository
+          source:
+            url: https://github.com/confident-ai/deepteam
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://www.trydeepteam.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://deepeval.com/docs/faq
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/evaluation-and-observability/evaluation-frameworks/deepeval
+        - type: produces
+          target: catalog/software/evaluation-and-observability/evaluation-frameworks/deepteam
     aliases:
       effective:
         schema: default

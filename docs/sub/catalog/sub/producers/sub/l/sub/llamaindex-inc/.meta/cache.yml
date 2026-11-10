@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:45c592c87831aa1c95aa6365a8c6915f4fffdef2
+      entity.yml: gitblob:a8f35b997d1ef84507507eea3048eb8dda054c1f
     parent:
       entity.yml: gitblob:665e9ca01b87f5f7025e0f60f3e694be0cc71db2
   state:
@@ -67,6 +67,14 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://developers.llamaindex.ai/python/framework/llama_cloud/
+          purposes:
+          - research
+          authority: official
+          note: Current documentation identifies LlamaParse as the hosted document
+            platform formerly called LlamaCloud.
         relations:
         - type: produces
           target: catalog/software/application-frameworks/data-and-retrieval/llamaindex

@@ -1,0 +1,91 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:5f356ddfe78c8ee5b4f2a6bbf9f2860aac5ad5fa
+    parent:
+      entity.yml: gitblob:15dc07e9bdd87e7ab3d1df93b52f87c0967af325
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/flower-labs/endeavor/models/endeavor-1-0
+        type: model
+        name: Endeavor 1.0
+        identity_note: Endeavor 1.0 is Flower Labs' generalist model release for reasoning,
+          coding assistance and long-horizon agent work, described in the official
+          documentation as a production-ready preview. Production-ready refers to
+          supported managed/private operation, while preview means limited request-based
+          access. No public open-weight checkpoint or complete public API contract
+          is listed; exact deployment interfaces, model identifiers, supported limits,
+          artifacts and terms require onboarding confirmation.
+        references:
+        - type: documentation
+          source:
+            url: https://flower.ai/docs/model/endeavor.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://flower.ai/models/endeavor
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/flower-labs/endeavor
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

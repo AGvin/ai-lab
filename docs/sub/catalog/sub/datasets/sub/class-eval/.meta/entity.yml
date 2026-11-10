@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/class-eval
+  type: dataset
+  name: ClassEval
+  aliases:
+    - ClassEval Class-level Code Generation
+    - ClassEval Benchmark
+  identity_note: >-
+    2023 manually authored class-level Python code-generation benchmark comprising classes, interdependent methods and unit tests. The task data and runnable evaluation scripts are distinct from generated executable programs, tool dependencies and leaderboard scores.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/FudanSELab/ClassEval
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/FudanSELab/ClassEval/blob/eaeac44d0d5dcd8a95feec50726d66fedc73a98f/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/FudanSELab/ClassEval/blob/eaeac44d0d5dcd8a95feec50726d66fedc73a98f/LICENSE
+      purposes: [research]
+      authority: official

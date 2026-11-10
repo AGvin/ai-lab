@@ -47,3 +47,9 @@ grill-with-docs
 - Repository setup is described as a once-per-repository workflow with its current configuration scope rather than a generic mandatory global step.
 - The page does not present a copied point-in-time list as the complete current Matt Pocock Skills inventory; current full inventory is delegated to the official repository.
 - No selected skill is linked as a local standalone catalog node.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
+- Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
+- Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.

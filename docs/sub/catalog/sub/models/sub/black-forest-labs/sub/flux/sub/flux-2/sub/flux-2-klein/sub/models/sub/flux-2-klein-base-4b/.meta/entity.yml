@@ -1,0 +1,37 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-2/flux-2-klein/models/flux-2-klein-base-4b
+  name: FLUX.2 [klein] Base 4B
+  type: model
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-2/flux-2-klein
+  identity_note: FLUX.2 [klein] Base 4B is Black Forest Labs' separately published 4-billion-parameter undistilled
+    base flow-transformer model for image generation and editing. Its weights use Apache 2.0.
+  references:
+  - type: documentation
+    source:
+      url: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/black-forest-labs/flux2
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: license
+    source:
+      url: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B/blob/main/LICENSE.md
+    purposes:
+    - research
+    authority: official

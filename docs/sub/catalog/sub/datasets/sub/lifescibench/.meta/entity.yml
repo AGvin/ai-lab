@@ -1,0 +1,15 @@
+entity:
+  id: catalog/datasets/lifescibench
+  type: dataset
+  name: LifeSciBench
+  references:
+    - type: article
+      source:
+        url: https://openai.com/index/introducing-life-sci-bench/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai

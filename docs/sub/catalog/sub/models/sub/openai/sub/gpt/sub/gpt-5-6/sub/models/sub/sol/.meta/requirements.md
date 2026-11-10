@@ -18,3 +18,15 @@
 - `gpt-5.6` is not represented as a separate model.
 - Pricing is not treated as model identity.
 - Hosted feature support is distinguished from architectural facts.
+
+## Source-scoped operating boundaries
+
+- gpt-5.6 is a routing alias to gpt-5.6-sol, rather than an additional concrete model [Model reference](https://developers.openai.com/api/docs/models/gpt-5.6-sol).
+- The August 2026 ChatGPT update is distinguished from earlier releases in the system card. Its evaluation results and deployment behavior should not be assigned automatically to every use of this model name [GPT-5.6 August system card](https://deploymentsafety.openai.com/gpt-5-6-august-update).
+- Reasoning effort and tool availability are API configuration. Validate tool arguments and application permissions before executing a model-proposed action [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).
+
+## Source evidence
+
+- [gpt-5.6-sol model reference](https://developers.openai.com/api/docs/models/gpt-5.6-sol).
+- [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).
+- [GPT-5.6 August 2026 system card](https://deploymentsafety.openai.com/gpt-5-6-august-update).

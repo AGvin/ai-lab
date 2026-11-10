@@ -1,0 +1,23 @@
+entity:
+  id: catalog/specifications/standards/itu-t-f-748-93-ai-agent-interoperability
+  name: ITU-T F.748.93 — Framework and Requirements for AI Agent Interoperability
+  aliases:
+    - ITU-T F.748.93
+    - F.748.93
+    - F.AAI
+  references:
+    - type: specification
+      source:
+        url: https://www.itu.int/ITU-T/workprog/wp_item.aspx?isn=23620
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ITU-T work-programme record showing approved Recommendation F.748.93, formerly F.AAI, approved on 2026-08-29.
+    - type: documentation
+      source:
+        url: https://www.itu.int/net/itu-t/ls/ls.aspx?isn=37623
+      purposes:
+        - research
+      authority: official
+      note: ITU-T liaison statement documenting consent of the Recommendation during the 2026 approval process.

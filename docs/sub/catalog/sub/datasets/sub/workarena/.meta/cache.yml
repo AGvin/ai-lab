@@ -1,0 +1,119 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:4f8f20ce43557195d832926ff771713bfb61e6ef
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/workarena
+        type: dataset
+        name: WorkArena
+        identity_note: WorkArena is ServiceNow’s benchmark family for agents performing
+          workplace tasks through a ServiceNow browser interface. It combines task
+          definitions, generated instances and success checks for enterprise knowledge
+          work. BrowserGym supplies an environment framework and AgentLab experiment
+          tooling; neither is an alternative identity for the benchmark. WorkArena-L1
+          contains 33 atomic task types with 19,912 instances. WorkArena++ adds 682
+          compositional tasks that exercise planning and reasoning across task configurations.
+          The L1, L2 and L3 settings must be identified alongside task selection,
+          repository revision, evaluator and agent configuration. Shared source and
+          task components do not make every tier’s results directly comparable. Evaluation
+          requires a provisioned, authenticated ServiceNow instance and a defined
+          reset procedure. Current first-party instructions use gated WorkArena instance
+          assets with an approval and authentication process; access to public code
+          alone does not grant an instance. The repository uses Apache 2.0. The supplied
+          instances permit benchmarking, evaluation and research, excluding training,
+          production and sensitive, proprietary or personally identifiable data storage.
+          Availability and data persistence are not guaranteed. Use authorized benchmark
+          accounts, separate instance and model credentials, and record environment
+          state.
+        aliases:
+        - WorkArena++
+        references:
+        - type: repository
+          source:
+            url: https://github.com/ServiceNow/WorkArena
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: official-site
+          source:
+            url: https://servicenow.github.io/WorkArena/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: registry
+          source:
+            url: https://huggingface.co/datasets/ServiceNow/WorkArena-Instances
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/ServiceNow/WorkArena/blob/main/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/s/servicenow
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,23 @@
+entity:
+  id: catalog/hardware/nvidia-jetson-orin-nano-super-developer-kit
+  type: hardware
+  name: NVIDIA Jetson Orin Nano Super Developer Kit
+  identity_note: >-
+    NVIDIA Jetson Orin Nano Super Developer Kit combines an 8 GB LPDDR5 Ampere-based development module/carrier with a software-enabled Super mode (up to 67 INT8 TOPS, 102 GB/s specified memory bandwidth, 7–25 W published power modes). Eligible older Orin Nano development kits can be updated to Super; Super is not a wholly separate production-module silicon SKU. Model compatibility, available memory, JetPack/firmware, boot storage, thermals and actual throughput require current validation.
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-eu/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.nvidia.com/jetson/orin-nano-devkit/user-guide/latest/index.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

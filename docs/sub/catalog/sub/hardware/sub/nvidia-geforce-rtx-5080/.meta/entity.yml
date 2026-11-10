@@ -1,0 +1,17 @@
+entity:
+  id: catalog/hardware/nvidia-geforce-rtx-5080
+  type: hardware-product
+  name: "NVIDIA GeForce RTX 5080"
+  identity_note: >-
+    NVIDIA Blackwell GeForce consumer/creator graphics card, not a data-center B-series or
+    RTX PRO product.
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5080/
+      purposes: [identification, research]
+      authority: official
+      note: "Official manufacturer product page"
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

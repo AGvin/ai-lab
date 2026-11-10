@@ -1,0 +1,29 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-6/models/qwen3-6-27b
+  type: model
+  name: Qwen3.6-27B
+  aliases:
+    - Qwen/Qwen3.6-27B
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/Qwen/Qwen3.6-27B
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/Qwen/Qwen3.6-27B/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/QwenLM/Qwen3.8
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen3-6

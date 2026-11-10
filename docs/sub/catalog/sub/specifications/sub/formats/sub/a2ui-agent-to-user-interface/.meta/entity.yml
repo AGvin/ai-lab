@@ -1,0 +1,24 @@
+entity:
+  id: catalog/specifications/formats/a2ui-agent-to-user-interface
+  name: "A2UI — Agent-to-User Interface"
+  aliases:
+    - "A2UI"
+    - "Agent-to-User Interface"
+  identity_note: >-
+    Declarative JSON UI-description format, evolving protocol and companion renderer ecosystem.
+    Upstream README at blob 44cc25c129b05efbe5e7ba222dd0852ce6ff8be2 calls it early public
+    preview, v0.9.1 current production and v1.0 release candidate. Version/maturity checked 5
+    November 2026.
+  references:
+    - type: specification
+      source:
+        url: https://github.com/a2ui-project/a2ui
+      purposes: [identification, research]
+      authority: official
+      note: "First-party project, README content blob 44cc25c129b05efbe5e7ba222dd0852ce6ff8be2"
+    - type: specification
+      source:
+        url: https://a2ui.org/
+      purposes: [identification, research]
+      authority: official
+      note: "First-party documentation site"

@@ -1,0 +1,93 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:af971b862443ac0b78176a1631fdd59166f739d9
+    parent:
+      entity.yml: gitblob:f31139639b2edcfd2e66f7c2e44d1eef4e9a433a
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/specifications/protocols/mcp-skills-extension
+        name: MCP Skills Extension
+        aliases:
+        - Skills over MCP
+        - Skills Extension
+        references:
+        - type: specification
+          source:
+            url: https://github.com/modelcontextprotocol/ext-skills/blob/main/specification/stable/skills.mdx
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Stable MCP Skills extension based on accepted SEP-2640; re-check the
+            official stable specification before updating normative discovery or delivery
+            semantics.
+        - type: repository
+          source:
+            url: https://github.com/modelcontextprotocol/ext-skills
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: specification
+          source:
+            url: https://modelcontextprotocol.io/seps/2640-skills-extension
+          purposes:
+          - research
+          authority: official
+          note: Accepted final SEP defining the extension.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -17,13 +17,27 @@ entity:
         - identification
         - research
       authority: official
-      note: Current official EULA identifying n8n GmbH as the software provider.
+      note: Official reseller EULA identifying n8n GmbH as the software provider; direct purchase and reseller commercial agreements have separate scope.
     - type: repository
       source:
         url: https://github.com/n8n-io/n8n
       purposes:
         - research
       authority: official
+    - type: other
+      source:
+        url: https://n8n.io/legal/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/n8n-io/n8n/blob/master/LICENSE.md
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/automation/integration-automation/n8n
+  identity_note: "n8n GmbH is the software producer and a provider of n8n services; self-hosted deployments, cloud operations, reseller contracts, and edition-specific licenses are separate scopes."

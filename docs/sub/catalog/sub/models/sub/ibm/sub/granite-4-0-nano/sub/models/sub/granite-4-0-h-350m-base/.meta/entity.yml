@@ -1,0 +1,16 @@
+entity:
+  id: catalog/models/ibm/granite-4-0-nano/models/granite-4-0-h-350m-base
+  type: model
+  name: Granite 4.0 H 350M Base
+  identity_note: IBM Granite 4.0 H 350M Base is a separately released base language model for adaptation.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-4.0-h-350m-base
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/ibm/granite-4-0-nano

@@ -1,0 +1,35 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/needle-in-a-haystack-v2
+  type: software
+  name: Needle In A Haystack v2
+  aliases:
+    - needlehaystack
+    - niah
+    - Needle In A Haystack
+  identity_note: >-
+    Greg Kamradt's installable MIT-licensed Python long-context retrieval
+    evaluation runner, with context-length-by-needle-depth sweeps and
+    JSONL results. V2 supersedes earlier repository implementations as
+    one software identity. Test data, external model APIs and any separate
+    benchmark results are distinct from the evaluation tool.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/gkamradt/needle-in-a-haystack
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/gkamradt/needle-in-a-haystack/blob/021385d68d3202e37893e9d3cd29011c569abe30/README.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/gkamradt/needle-in-a-haystack/blob/021385d68d3202e37893e9d3cd29011c569abe30/pyproject.toml
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/gkamradt/needle-in-a-haystack/blob/021385d68d3202e37893e9d3cd29011c569abe30/LICENSE.txt
+      purposes: [research]
+      authority: official

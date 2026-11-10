@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/google-big-bench-original
+  type: dataset
+  name: "BIG-bench (original)"
+  aliases:
+    - "Beyond the Imitation Game Benchmark"
+  identity_note: >-
+    Original collaborative BIG-bench collection of more than 200 varied programmatic/JSON tasks, distinct from its 24-task Lite subset and the separate BIG-Bench Hard selection.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/google/BIG-bench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/google/BIG-bench/blob/092b196c1f8f14a54bbc62f24759d43bde46dd3b/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/google/BIG-bench/blob/092b196c1f8f14a54bbc62f24759d43bde46dd3b/LICENSE
+      purposes: [research]
+      authority: official

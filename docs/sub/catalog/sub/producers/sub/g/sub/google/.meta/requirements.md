@@ -15,9 +15,15 @@
 - Preserve the Google model-domain view as navigation without using that view to duplicate semantic relation membership.
 - Include official Google AI documentation and the official Google Hugging Face organization as research references.
 
+- Preserve Google's originating contribution to Kubeflow and Kubeflow Pipelines separately from current CNCF/community governance; do not turn original production into a sole-current-maintainer or exclusive-owner claim.
+
 ## Validation
 
 - The page does not duplicate concrete model, service, agent, framework, or software profile details.
 - Google DeepMind provenance is not silently collapsed into Google, and structural inclusion is not presented as ownership.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
 - Model-domain navigation resolves to its canonical catalog node.
+
+- Preserve the exact SigLIP 2 family production relation from Google's official release; component reuse does not make Google a new co-producer of downstream VLMs. [Google release](https://github.com/google-research/big_vision/blob/main/big_vision/configs/proj/image_text/README_siglip2.md).
+
+- Preserve Google Research's IFEval source-dataset production and distinguish it from checker software, MLPerf workload use and product support. [Original research source](https://github.com/google-research/google-research/tree/master/instruction_following_eval).

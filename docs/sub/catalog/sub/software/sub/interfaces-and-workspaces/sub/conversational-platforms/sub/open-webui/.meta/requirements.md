@@ -7,6 +7,7 @@
 - Preserve provider-agnostic operation through Ollama, OpenAI-compatible, Open Responses, and other supported provider surfaces without treating any one backend as required product identity.
 - Preserve Timothy Jaeryang Baek's creator/origin provenance separately from the current Open WebUI Inc. copyright/ownership layer.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
+- Preserve the current license boundary: Open WebUI branding must remain unless the deployment qualifies for the license's small-user exception, written permission, or an enterprise license expressly permitting the branding change; earlier contributions retain their applicable prior licenses.
 - Keep installation methods, provider support, feature inventory, offline behavior, licensing, and other mutable details source-backed when expanded.
 - Include current official Open WebUI documentation, repository, and license references.
 

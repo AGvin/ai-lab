@@ -1,0 +1,100 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:3f4d6cec66dbb33d7072d7d2aea2b7f9cb9246dc
+    parent:
+      entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
+      node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/agent-skills/collection
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/agent-skills/collection
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/agent-skills/collection
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/agent-skills/collections/google-skills
+        type: skill-collection
+        name: Google Agent Skills
+        aliases:
+        - Google Skills
+        identity_note: Google's Apache-2.0 collection covers Google product and Cloud
+          workflows. Its index includes entries explicitly labeled preview and links
+          additional independently maintained skill repositories; collection publication
+          does not make every contained API generally available or every linked repository
+          part of this distribution. Cloud IAM, billing and client prerequisites remain
+          external.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/google/skills
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/google/skills/blob/2194d3b8b1f31975fef2f1a0ae6b9ab55bd7ceee/README.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/google/skills/blob/2194d3b8b1f31975fef2f1a0ae6b9ab55bd7ceee/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/g/google
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

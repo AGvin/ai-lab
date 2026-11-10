@@ -1,0 +1,46 @@
+entity:
+  id: catalog/specifications/protocols/nlweb
+  name: NLWeb
+  identity_note: >-
+    An open natural-language web interaction protocol with a published v0.55 specification.
+    Microsoft originally introduced NLWeb in 2025; the protocol documentation and
+    Python reference implementation now reside with nlweb-ai. Protocol identity
+    and reference implementation are distinct; historical origin is not proof of
+    exclusive current corporate governance or production security.
+  references:
+    - type: specification
+      source:
+        url: https://nlweb.ai/docs/specification
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Published v0.55; re-check the current revision before changing wire-level requirements.
+    - type: repository
+      source:
+        url: https://github.com/nlweb-ai/website/blob/main/NLWEBSPEC.md
+      purposes:
+        - research
+      authority: official
+      note: Source specification file from the first-party website repository.
+    - type: documentation
+      source:
+        url: https://nlweb.ai/docs/intro
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/nlweb-ai/NLWeb
+      purposes:
+        - research
+      authority: official
+      note: The MIT-licensed reference implementation, separate from this protocol identity.
+    - type: article
+      source:
+        url: https://blogs.microsoft.com/blog/2025/05/19/microsoft-build-2025-the-age-of-ai-agents-and-building-the-open-agentic-web/
+      purposes:
+        - research
+      authority: official
+      note: Historical Microsoft launch, not evidence of exclusive current governance.

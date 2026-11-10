@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:48839cce3bc53ca351a2743f5277e578ca081c1f
+      entity.yml: gitblob:ff4b367b82b3bafb553adfbb91cb273389d9cd5e
     parent:
-      entity.yml: gitblob:a9a39572ff644b6c02a27e19a9eebc8bddc3c646
+      entity.yml: gitblob:6eaf4d9f8c5742dbc20baf45c802c5cc128c1e1d
       node.yml: gitblob:5da0c40104557a247c53bdc80bf68aea7d6c8c97
   state:
     node:
@@ -46,6 +46,8 @@ cache:
         id: catalog/models/google/gemma/gemma-4/models/e4b-instruct
         type: model
         name: Gemma 4 E4B Instruct
+        aliases:
+        - google/gemma-4-E4B-it
         references:
         - type: registry
           source:
@@ -66,9 +68,19 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://ai.google.dev/gemma/docs/core/model_card_4
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: member-of
           target: catalog/models/google/gemma/gemma-4
+        identity_note: Instruction-tuned Gemma 4 checkpoint google/gemma-4-E4B-it
+          with 4.5B effective parameters and 8B parameters including embeddings; QAT
+          and GGUF packages remain separate artifacts.
     aliases:
       effective:
         schema: default

@@ -16,6 +16,17 @@ entity:
       purposes:
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+      purposes: [identification, research]
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/nvidia/nemotron/nemotron-3
+  identity_note: >-
+    Released on 2026-08-11 as a 30B-total/3B-active, text-input/text-output
+    hybrid Mamba-2/Transformer LatentMoE model under OpenMDW-1.1.
+    Up to 1M-token model context is deployment-dependent; BF16 and
+    quantized NVFP4 checkpoints represent the same trained model.
+    Distinct from separately published Lightning Base.

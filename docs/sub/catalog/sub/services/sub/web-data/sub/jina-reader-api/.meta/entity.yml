@@ -1,0 +1,35 @@
+entity:
+  id: catalog/services/web-data/jina-reader-api
+  type: service
+  name: Jina Reader API
+  aliases:
+    - Jina Reader
+    - Jina Reader and Search
+  identity_note: >-
+    Jina AI's provider-operated web-to-text and search-to-text endpoints on r.jina.ai and s.jina.ai; this web-data service is separate from hosted embedding/reranking models on api.jina.ai. The Reader repository additionally contains open-source self-hostable code, which is not the operated service identity.
+  references:
+    - type: documentation
+      source:
+        url: https://docs.jina.ai/
+      purposes: [research]
+      authority: official
+    - type: official-site
+      source:
+        url: https://jina.ai/reader
+      purposes: [identification, research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/jina-ai/reader
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/jina-ai/reader/blob/1574bfd380d249c86c82db4dace0d9c8fe17e2b1/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/jina-ai/reader/blob/1574bfd380d249c86c82db4dace0d9c8fe17e2b1/LICENSE
+      purposes: [research]
+      authority: official

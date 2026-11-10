@@ -1,0 +1,53 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/benchflow
+  type: software
+  name: BenchFlow
+  aliases:
+    - BenchFlow SDK
+    - BenchFlow CLI
+  identity_note: >-
+    Independently installable Python agent-evaluation environment framework and
+    command-line tool from the BenchFlow publishing project. It drives ACP-based
+    agent rollouts against sandboxed task environments using Scenes, roles, turns,
+    verifiers, and result/trajectory capture. Separate from the SkillsBench task
+    dataset, individual agents/models, benchmark leaderboards, and experimental
+    Rust bench CLI preview. The current Git main version is a development line,
+    not the last verified public stable release. No independent incorporated
+    company or beneficial-owner identity is inferred from the publishing account.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/benchflow-ai/benchflow
+      purposes: [identification, research]
+      authority: official
+      note: Original Python SDK/CLI source, task-runtime contract and guides.
+    - type: registry
+      source:
+        url: https://pypi.org/project/benchflow/
+      purposes: [identification, research]
+      authority: official
+      note: Public Python package benchflow; pin a verified release.
+    - type: release-notes
+      source:
+        url: https://github.com/benchflow-ai/benchflow/releases/tag/v0.7.11
+      purposes: [identification, research]
+      authority: official
+      note: Verified public stable v0.7.11 as of 2026-11-02.
+    - type: documentation
+      source:
+        url: https://github.com/benchflow-ai/benchflow/blob/main/docs/concepts.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/benchflow-ai/benchflow/blob/main/docs/sandbox-hardening.md
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/benchflow-ai/benchflow/blob/main/docs/release.md
+      purposes: [research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/benchflow

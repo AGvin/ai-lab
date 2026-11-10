@@ -12,9 +12,9 @@ LM Studio also offers optional cloud-processing features such as cloud models or
 
 LM Studio supports its native REST API, OpenAI-compatible and Anthropic-compatible endpoints, Python and TypeScript SDKs, CLI/headless workflows, and MCP/tool integration.
 
-## Related
+## Relations
 
-- [Element Labs, Inc.](../../../../../../../producers/sub/e/sub/element-labs-inc/) — canonical producer organization.
+- Produced by: [Element Labs, Inc.](../../../../../../../producers/sub/e/sub/element-labs-inc/)
 
 ## Official resources
 

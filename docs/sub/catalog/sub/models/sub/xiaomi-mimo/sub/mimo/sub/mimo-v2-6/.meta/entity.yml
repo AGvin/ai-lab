@@ -1,0 +1,43 @@
+entity:
+  id: catalog/models/xiaomi-mimo/mimo/mimo-v2-6
+  type: model-series
+  name: MiMo V2.6
+  identity_note: >-
+    September 2026 Xiaomi MiMo series containing separately published original
+    Pro-RL and Flash-RL checkpoints, Qwen3.5-9B-derived Distill-Qwen-9B SFT,
+    and separately MOPD2-post-trained Pro and Flash learned checkpoints.
+    Pro UltraSpeed is an API serving mode, not a sixth trained model.
+    Publisher benchmarks and repetition-mitigation results are not AI Lab tests.
+  references:
+  - type: documentation
+    source:
+      url: https://mimo.mi.com/docs/en-US/news/latest/v2-6
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/collections/XiaomiMiMo/mimo-v26
+    purposes:
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/xiaomi-mimo/mimo
+  - type: has-member
+    target: catalog/models/xiaomi-mimo/mimo/mimo-v2-6/models/mimo-v2-6-pro-rl
+  - type: has-member
+    target: catalog/models/xiaomi-mimo/mimo/mimo-v2-6/models/mimo-v2-6-flash-rl
+  - type: has-member
+    target: catalog/models/xiaomi-mimo/mimo/mimo-v2-6/models/mimo-v2-6-distill-qwen-9b
+  - type: has-member
+    target: catalog/models/xiaomi-mimo/mimo/mimo-v2-6/models/mimo-v2-6-pro-mopd
+  - type: has-member
+    target: catalog/models/xiaomi-mimo/mimo/mimo-v2-6/models/mimo-v2-6-flash-mopd

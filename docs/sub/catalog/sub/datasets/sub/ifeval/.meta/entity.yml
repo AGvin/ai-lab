@@ -1,0 +1,44 @@
+entity:
+  id: catalog/datasets/ifeval
+  type: dataset
+  name: IFEval
+  aliases:
+    - Instruction-Following Evaluation
+  identity_note: >-
+    Google's released English prompt-and-constraint dataset for verifiable instruction-following evaluation.
+    This source dataset is distinct from its checker software, score variants, leaderboard views and
+    downstream use as an MLPerf Mobile workload. Formal constraint checks do not establish factuality or safety.
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/google/IFEval
+      purposes: [identification, research]
+      authority: official
+      note: "Original Google prompt dataset and declared Apache-2.0 data license."
+    - type: repository
+      source:
+        url: https://github.com/google-research/google-research/tree/master/instruction_following_eval
+      purposes: [identification, research]
+      authority: official
+      note: "Original research data and checker; not an officially supported Google product."
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2311.07911
+      purposes: [identification, research]
+      authority: official
+      note: "Original instruction-following evaluation research."
+    - type: repository
+      source:
+        url: https://github.com/google-research/google-research/blob/master/instruction_following_eval/evaluation_lib.py
+      purposes: [identification, research]
+      authority: official
+      note: "Strict/loose checker behavior is separate from dataset identity."
+    - type: repository
+      source:
+        url: https://github.com/google-research/google-research/blob/master/LICENSE
+      purposes: [identification, research]
+      authority: official
+      note: "Actual Apache-2.0 code license, distinct from the Hub dataset declaration."
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google

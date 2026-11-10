@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/coconot
+  type: dataset
+  name: CoCoNot
+  aliases:
+    - CoCoNot Contextual Noncompliance
+    - The Art of Saying No
+  identity_note: >-
+    Allen Institute for AI benchmark family for contextual instruction noncompliance and excessive refusal, comprising an original response/finetuning set and a contrast set. Released Hugging Face data and associated Open-Instruct evaluation scripts are distinct from model APIs and published results.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/allenai/noncompliance
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/allenai/noncompliance/blob/25bf77cc668814360405cdb8197c4368205806c7/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/allenai/noncompliance/blob/25bf77cc668814360405cdb8197c4368205806c7/LICENSE
+      purposes: [research]
+      authority: official

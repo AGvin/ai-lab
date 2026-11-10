@@ -1,0 +1,28 @@
+entity:
+  id: catalog/producers/d/docker
+  type: organization
+  name: Docker
+  references:
+    - type: official-site
+      source:
+        url: https://www.docker.com/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/docker/skills
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.docker.com/ai/skills/
+      purposes:
+      - research
+      authority: official
+      note: Official skills publishing and agent-guidance scope.
+  relations:
+    - type: produces
+      target: catalog/agent-skills/collections/docker-skills

@@ -17,3 +17,12 @@
 - Terra remains distinct from Sol and Luna.
 - Pricing is not treated as model identity.
 - Hosted capability support is distinguished from architectural facts.
+
+## Source-scoped operating boundaries
+
+- Reasoning effort and tool availability are API configuration. Validate tool arguments and application permissions before executing a model-proposed action [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).
+
+## Source evidence
+
+- [gpt-5.6-terra model reference](https://developers.openai.com/api/docs/models/gpt-5.6-terra).
+- [Latest-model guide](https://developers.openai.com/api/docs/guides/latest-model).

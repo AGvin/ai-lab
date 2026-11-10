@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:d4abd0204ca487d1c940056fe94ba08499b5dea9
+      entity.yml: gitblob:14ef0abedfb5cd88d337c55fa343b16a3641a427
     parent:
       entity.yml: gitblob:b36ca5bdc58da8f3782c6a5822573937ea2cd7d2
   state:
@@ -62,9 +62,24 @@ cache:
           authority: official
           note: Current upstream license identifies Open WebUI Inc. as the copyright
             holder while separately crediting Timothy Jaeryang Baek as creator.
+        - type: repository
+          source:
+            url: https://github.com/open-webui/open-webui/blob/main/LICENSE_NOTICE
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.openwebui.com/license/
+          purposes:
+          - research
+          authority: official
         relations:
         - type: owns
           target: catalog/software/interfaces-and-workspaces/conversational-platforms/open-webui
+        identity_note: Open WebUI Inc. is the corporate copyright attribution in the
+          current distribution license, which separately credits Timothy Jaeryang
+          Baek and preserves historical and third-party licensing boundaries.
     aliases:
       effective:
         schema: default

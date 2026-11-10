@@ -4,6 +4,10 @@ Hugging Face Datasets is an open-source library for accessing, processing, strea
 
 The library is a local/installable client-side data tool; hosted dataset repositories and viewers on the Hub remain separate service surfaces.
 
+## Relations
+
+- Produced by: [Hugging Face, Inc.](../../../../../../../producers/sub/h/sub/hugging-face-inc/).
+
 ## Official resources
 
 - [Datasets documentation](https://huggingface.co/docs/datasets/en/index)

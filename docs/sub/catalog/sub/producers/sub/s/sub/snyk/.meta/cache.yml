@@ -1,0 +1,115 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:03001940ed1c52800359e126168be7f8ba77d7a5
+    parent:
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/s/snyk
+        type: organization
+        name: Snyk
+        identity_note: Snyk is the current publisher of Agent Scan through snyk/agent-scan.
+          Its June 2025 announcement records the acquisition of Invariant Labs, preserving
+          the earlier MCP security research origin while establishing the present
+          first-party publishing organization. Agent Scan’s Apache 2.0 CLI source
+          is separate from the remote analysis service and enterprise security products.
+          The maintained README describes scanning local agent configuration, MCP
+          tools and skills and documents what discovery data is sent for analysis.
+          Review the installed version, service terms, outbound data and server-contact
+          approvals before scanning confidential environments. A security finding
+          or successful scan is not a guarantee that every agent action is safe.
+        references:
+        - type: official-site
+          source:
+            url: https://snyk.io/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/snyk/agent-scan
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://snyk.io/news/snyk-acquires-invariant-labs-to-accelerate-agentic-ai-security-innovation/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/snyk/agent-scan/blob/main/LICENSE
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: terms-of-service
+          source:
+            url: https://github.com/snyk/agent-scan/blob/main/TERMS.md
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/development-tools/testing/snyk-agent-scan
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

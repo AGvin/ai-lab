@@ -1,0 +1,105 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:f4016e649448b0997c9eb8f8c6f377e6dfeb21c6
+    parent:
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/s/sentry
+        type: organization
+        name: Sentry
+        identity_note: Sentry is the first-party developer debugging and application
+          observability platform publisher behind the getsentry organization. It separately
+          publishes Sentry Skills, a collection primarily for its engineering team,
+          and Sentry for AI, a source library built into client-specific Agent Plugins
+          for developers using Sentry. Those collections have different purposes,
+          publication lifecycles and licenses; neither is a new standalone monitored-model
+          provider.
+        references:
+        - type: official-site
+          source:
+            url: https://sentry.io/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/getsentry/sentry
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/getsentry/skills
+          purposes:
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/getsentry/sentry-for-ai
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/agent-skills/collections/sentry-skills
+        - type: produces
+          target: catalog/agent-skills/collections/sentry-for-ai
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

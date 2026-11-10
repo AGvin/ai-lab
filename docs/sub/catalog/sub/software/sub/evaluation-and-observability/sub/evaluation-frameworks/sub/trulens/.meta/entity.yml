@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/trulens
+  type: software
+  name: TruLens
+  references:
+    - type: official-site
+      source:
+        url: https://www.trulens.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/truera/trulens
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-observability/evaluate-applications-trulens
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: maintained-by
+      target: catalog/producers/s/snowflake

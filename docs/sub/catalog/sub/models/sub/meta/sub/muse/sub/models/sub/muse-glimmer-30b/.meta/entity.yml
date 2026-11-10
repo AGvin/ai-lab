@@ -1,0 +1,24 @@
+entity:
+  id: catalog/models/meta/muse/models/muse-glimmer-30b
+  type: model
+  name: Muse Glimmer 30B
+  identity_note: >-
+    Muse Glimmer 30B is Meta's open-weight 30B-class multimodal agentic model for consumer hardware. Meta's first-party publication describes a causal language model with a perception encoder for local autonomous agents, with text and image input, text output, and Apache-2.0 release terms.
+  references:
+    - type: paper
+      source:
+        url: https://ai.meta.com/research/publications/muse-glimmer-30b-an-on-device-agentic-model/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/meta-models/Muse-Glimmer-30B
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/meta/muse

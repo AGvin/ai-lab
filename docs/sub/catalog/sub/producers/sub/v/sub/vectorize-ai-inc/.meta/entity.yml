@@ -1,0 +1,57 @@
+entity:
+  id: catalog/producers/v/vectorize-ai-inc
+  type: organization
+  name: Vectorize AI, Inc.
+  identity_note: >-
+    Vectorize AI, Inc. is the organization maintaining the open-source
+    Hindsight agent memory system and operating Hindsight cloud products.
+    Its first-party trust center identifies Vectorize AI Inc., and the
+    original software license credits Vectorize AI, Inc. Corporate founding,
+    stewardship, brand, licensing and beneficial ownership are distinct:
+    published founder/investor pages do not establish an exhaustive current
+    ownership, sanctions, data-processing or security clearance. OSS storage,
+    separately hosted Cloud and third-party model processing have different
+    risk and contractual boundaries.
+  references:
+    - type: official-site
+      source:
+        url: https://vectorize.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://vectorize.io/about
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Publisher's corporate history, founders and disclosed investors; not an exhaustive ownership registry.
+    - type: official-site
+      source:
+        url: https://trust.vectorize.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: First-party trust center expressly identifies Vectorize AI Inc.
+    - type: repository
+      source:
+        url: https://github.com/vectorize-io/hindsight
+      purposes:
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/vectorize-io/hindsight/blob/main/LICENSE
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Original MIT license identifies Vectorize AI, Inc. as copyright holder; not proof of every ownership layer.
+  relations:
+    - type: produces
+      target: catalog/software/data-infrastructure/memory-and-context/hindsight
+    - type: produces
+      target: catalog/services/data-infrastructure/memory-and-context/hindsight-cloud

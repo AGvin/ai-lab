@@ -4,6 +4,8 @@ Msty Studio is a privacy-first AI workspace for using local and online models fr
 
 The stable catalog path remains `msty`, but Msty Studio is the current reader-facing product name. Legacy Msty App 1.x documentation is superseded for current features. Studio Desktop stores data locally on the device, while Studio Web stores data in the browser rather than automatically synchronizing it between devices.
 
+The free license is for personal, non-commercial use. Commercial or work use requires a paid Aurum or Enterprise license.
+
 ## Provenance
 
 - [CloudStack, LLC](../../../../../../../producers/sub/c/sub/cloudstack-llc/) — organization behind Msty Studio.

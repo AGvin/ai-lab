@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/aratrust
+  type: dataset
+  name: "AraTrust"
+  aliases:
+    - "Arabic LLM Trustworthiness Benchmark"
+  identity_note: >-
+    Arabic-language trustworthiness evaluation dataset covering multiple aspects of language-model safe and reliable behavior.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/datasets/asas-ai/AraTrust
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://arxiv.org/abs/2403.09017
+      purposes: [research]
+      authority: official

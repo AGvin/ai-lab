@@ -5,7 +5,6 @@ Phi-4 Mini Instruct is a Microsoft instruction-tuned text model in the Phi-4 ser
 ## Translations
 
 - English
-- [Українська](./l10n/uk_UA/)
 
 ## Canonical profile
 

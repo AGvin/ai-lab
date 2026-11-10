@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:757c1da1b4e10cf7dc374a5cb07af72840b2560a
+      entity.yml: gitblob:26ba08e93cedea1d919447c693ffc7cfcca3f67e
     parent:
       entity.yml: gitblob:e19a99e0dd434a1f5367191cd3671f10c26d7a46
   state:
@@ -68,7 +68,33 @@ cache:
           authority: official
           note: Argilla co-founder Daniel Vila announced the 2024 Hugging Face acquisition
             and described the Argilla team as joining Hugging Face.
+        - type: article
+          source:
+            url: https://argilla.io/blog/recognai-rubrix-evolve-into-argilla/
+          purposes:
+          - research
+          authority: official
+          note: The October 2022 account identifies Recognai as the company that built
+            Rubrix and explains the Argilla rename.
+        - type: other
+          source:
+            url: https://argilla.io/terms-of-use/
+          purposes:
+          - research
+          authority: official
+          note: Historical legal identity only; the notice states that it was last
+            modified on October 11, 2022 and identifies Recognai, S.L.U.
+        - type: article
+          source:
+            url: https://argilla.io/blog/argilla-joins-hugggingface/
+          purposes:
+          - research
+          authority: official
+          note: The June 2024 acquisition account supports Hugging Face ownership
+            separately from original production.
         relations:
+        - type: produced-by
+          target: catalog/producers/r/recognai-slu
         - type: owned-by
           target: catalog/producers/h/hugging-face-inc
     aliases:

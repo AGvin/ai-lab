@@ -27,3 +27,7 @@ entity:
       target: catalog/producers/n/nvidia
     - type: has-member
       target: catalog/models/nvidia/nemotron/nemotron-3
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/models/qwen3-nemotron-235b-a22b-genrm
+    - type: has-member
+      target: catalog/models/nvidia/nemotron/models/qwen3-nemotron-235b-a22b-genrm-2603

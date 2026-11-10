@@ -1,12 +1,14 @@
 # Applatix
 
-Applatix is the origin organization that created the Argo project and its Argo Workflows foundation before Intuit acquired Applatix in 2018. Later Intuit involvement and current CNCF governance remain distinct from that origin provenance.
+Applatix is the organization that created the Argo project before Intuit acquired the company.
 
-## Produces
+This historical origin is preserved for Argo Workflows. Later Intuit contributions, CNCF project governance, individual maintainers, and commercial operators remain separate roles; Applatix is not presented as today’s sole project maintainer.
 
-- [Argo Workflows](../../../../../software/sub/workflow-engines/sub/data-and-compute-orchestration/sub/argo-workflows/) — container-native Kubernetes workflow engine.
+## Relations
+
+- Produces: [Argo Workflows](../../../../../software/sub/workflow-engines/sub/data-and-compute-orchestration/sub/argo-workflows/)
 
 ## Official resources
 
-- [CNCF Argo project journey report](https://www.cncf.io/reports/argo-project-journey-report/)
+- [CNCF Argo project history](https://www.cncf.io/reports/argo-project-journey-report/)
 - [Intuit on Argo entering CNCF](https://www.intuit.com/blog/news-social/cloud-native-computing-foundation-accepts-argo-as-an-incubator-project/)

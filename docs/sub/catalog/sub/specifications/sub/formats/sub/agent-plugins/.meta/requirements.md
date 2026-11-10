@@ -16,3 +16,11 @@
 - Exact manifest/component/version statements are traceable to the current upstream Agent Plugins specification.
 - Vendor-specific plugin behavior is not misrepresented as portable Agent Plugins behavior.
 - Agent Skills and MCP are linked as external formal contracts rather than duplicated.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Agent Plugins is the published vendor-neutral portable plugin package specification v1.0.0. A plugin is a rooted directory with a required root `plugin.json` manifest; `$schema`, name, version and package components have normative versioned validation rules. Paths defined as plugin-relative are constrained to the root, including symlink/junction resolution.
+- The portable specification explicitly separates referenced Agent Skills and MCP artifacts from the plugin envelope. A client's custom commands, hooks, marketplace, installation, permission approvals, runtime isolation or extension namespaces are host-defined; a package conforming to the format is not inherently trusted or safe to run.
+- Verified first-party source 1: https://agent-plugins.org/specification
+- Verified first-party source 2: https://github.com/agentplugins/agent-plugins-spec
+- Existing format identity/source gate only; no plugin installed, manifest validated by a conformant runtime, client tested, security/license audit, root-wide schema/cache/CI/render, clean pass or final gate.

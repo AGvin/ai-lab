@@ -1,0 +1,28 @@
+entity:
+  id: catalog/models/ibm/granite-switch-4-1
+  type: model-family
+  name: Granite Switch 4.1
+  identity_note: IBM composed language-model family combining chat, decision and guardian adapters
+    with a speech encoder in stable 8B and 30B checkpoints.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-switch-4.1-8b
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-switch-4.1-30b
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/i/ibm
+  - type: has-member
+    target: catalog/models/ibm/granite-switch-4-1/models/granite-switch-4-1-8b
+  - type: has-member
+    target: catalog/models/ibm/granite-switch-4-1/models/granite-switch-4-1-30b

@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/or-bench
+  type: dataset
+  name: "OR-Bench"
+  aliases:
+    - "Over-Refusal Benchmark"
+    - "OR Bench"
+  identity_note: >-
+    Benchmark of language model over-refusal on superficially harmful-looking but benign requests, with adversarial prompt generation, hosted example datasets and separate inference/leaderboard services.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/justincui03/or-bench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/justincui03/or-bench/blob/4fad1f9e4d4ba368777585fa1f5b869b6d4442fa/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/justincui03/or-bench/blob/4fad1f9e4d4ba368777585fa1f5b869b6d4442fa/LICENSE
+      purposes: [research]
+      authority: official

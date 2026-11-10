@@ -1,0 +1,89 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:0498b078954d358681c9fad710058a1a47188069
+    parent:
+      entity.yml: gitblob:55f5502ec4519eb667148f9c5cfa99adcceedb2d
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/specifications/formats/a2ui-agent-to-user-interface
+        name: A2UI — Agent-to-User Interface
+        aliases:
+        - A2UI
+        - Agent-to-User Interface
+        identity_note: Declarative JSON UI-description format, evolving protocol and
+          companion renderer ecosystem. Upstream README at blob 44cc25c129b05efbe5e7ba222dd0852ce6ff8be2
+          calls it early public preview, v0.9.1 current production and v1.0 release
+          candidate. Version/maturity checked 5 November 2026.
+        references:
+        - type: specification
+          source:
+            url: https://github.com/a2ui-project/a2ui
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: First-party project, README content blob 44cc25c129b05efbe5e7ba222dd0852ce6ff8be2
+        - type: specification
+          source:
+            url: https://a2ui.org/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: First-party documentation site
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

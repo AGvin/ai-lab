@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:362ee9d87572fef4fbe9959ac38d2b045e85df1a
+      entity.yml: gitblob:3f08bb64d159ac7436787886443bacb37248b93e
     parent:
-      entity.yml: gitblob:28fec744cd39497938122b177130cc28ed1b51b6
+      entity.yml: gitblob:46fc1e53de0484d7e6d75c2f3112426063dd3bd3
       node.yml: gitblob:960c3fe8a5bb485d5602b86feeb76fb17c18d4d7
   state:
     node:
@@ -57,6 +57,8 @@ cache:
         relations:
         - type: version-of
           target: catalog/models/alibaba/qwen/qwen3/models/qwen3-30b-a3b
+        - type: has-derivative
+          target: catalog/models/perplexity-ai/browsesafe
     aliases:
       effective:
         schema: default

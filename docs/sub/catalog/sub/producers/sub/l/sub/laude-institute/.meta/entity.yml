@@ -1,0 +1,36 @@
+entity:
+  id: catalog/producers/l/laude-institute
+  type: organization
+  name: Laude Institute
+  references:
+    - type: official-site
+      source:
+        url: https://www.laude.org/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/laude-institute
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.laude.org/updates/terminal-bench
+      purposes:
+        - research
+      authority: official
+      note: Laude describes Terminal-Bench as a collaboration with Stanford researchers.
+    - type: article
+      source:
+        url: https://www.tbench.ai/news/announcement-2-0
+      purposes:
+        - research
+      authority: official
+      note: The release announcement establishes the distinct Terminal-Bench 2.0 dataset and Harbor harness and credits Stanford, Harbor, and Laude.
+  relations:
+    - type: produces
+      target: catalog/datasets/terminal-bench-2

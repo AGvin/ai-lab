@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7a0f4e711edbf67fe58ba85d91f972ecda786e2d
+      entity.yml: gitblob:baaedab455ecb915c3ebc257f1bc89236749e517
     parent:
       entity.yml: gitblob:63e72581c97234cd15a64415807ea827586ed6ee
   state:
@@ -57,7 +57,7 @@ cache:
           authority: official
         - type: other
           source:
-            url: https://www.coderabbit.ai/terms-of-service
+            url: https://www.coderabbit.ai/legal/terms-of-service
           purposes:
           - identification
           - research

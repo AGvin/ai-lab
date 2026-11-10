@@ -1,0 +1,34 @@
+entity:
+  id: catalog/models/adobe/firefly/models/image-model-4-ultra
+  type: model
+  name: Firefly Image Model 4 Ultra
+  identity_note: >-
+    Firefly Image Model 4 Ultra is Adobe's separately named image-generation model, generally
+    available from 24 April 2025. Adobe positions Ultra for detailed, complex scenes and
+    photorealistic results. The Ultra label does not establish a universal quality advantage, a
+    disclosed parameter count or a fixed credit cost. Evaluate the actual task and selected Firefly
+    surface, including rights to supplied references and review of generated assets.
+  references:
+    - type: article
+      source:
+        url: https://news.adobe.com/news/2025/04/adobe-revolutionizes-ai-assisted-creativity-firefly
+      purposes: [identification, research]
+      authority: official
+    - type: article
+      source:
+        url: https://blog.adobe.com/en/publish/2025/04/24/adobe-firefly-next-evolution-creative-ai-is-here
+      purposes: [research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://helpx.adobe.com/firefly/web/work-with-images/generate-images/generate-images-from-text-descriptions.html
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://helpx.adobe.com/firefly/web/get-started/learn-the-basics/adobe-firefly-faq.html
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/adobe/firefly

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/datasets/androidworld
+  type: dataset
+  name: AndroidWorld
+  references:
+    - type: official-site
+      source:
+        url: https://google-research.github.io/android_world/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/google-research/android_world
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google-deepmind

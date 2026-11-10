@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/ibm/granite-speech-5/models/granite-speech-5-0-2b
+  type: model
+  name: Granite Speech 5.0 2B
+  identity_note: IBM approximately 2.3B-parameter speech-language checkpoint for multilingual transcription
+    and bidirectional speech translation.
+  references:
+  - type: registry
+    source:
+      url: https://huggingface.co/ibm-granite/granite-speech-5.0-2b
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/ibm/granite-speech-5

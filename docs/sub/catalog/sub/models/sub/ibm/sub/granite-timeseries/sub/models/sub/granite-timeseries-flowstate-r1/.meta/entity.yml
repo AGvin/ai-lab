@@ -1,0 +1,24 @@
+entity:
+  id: catalog/models/ibm/granite-timeseries/models/granite-timeseries-flowstate-r1
+  type: model
+  name: Granite TimeSeries FlowState R1
+  identity_note: >-
+    FlowState R1 is represented as one concrete model identity with chronological version 1.0 and
+    version 1.1 releases. Version 1.0 is the default repository state; version 1.1 is selected
+    explicitly with the Hugging Face revision parameter. Release-specific deltas are owned by the
+    corresponding model-version nodes rather than by a model-series identity.
+  references:
+    - type: registry
+      source:
+        url: https://huggingface.co/ibm-granite/granite-timeseries-flowstate-r1
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/ibm/granite-timeseries
+    - type: has-version
+      target: catalog/models/ibm/granite-timeseries/models/granite-timeseries-flowstate-r1/versions/r1-0
+    - type: has-version
+      target: catalog/models/ibm/granite-timeseries/models/granite-timeseries-flowstate-r1/versions/r1-1

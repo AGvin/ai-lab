@@ -1,0 +1,38 @@
+entity:
+  id: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-image
+  type: model
+  name: FLUX 3 Image
+  references:
+  - type: product-page
+    source:
+      url: https://bfl.ai/models/flux-3-image
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.bfl.ai/flux_3/flux3_image_overview
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://bfl.ai/blog/flux-3
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: article
+    source:
+      url: https://bfl.ai/blog/flux-3-image-klein
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/black-forest-labs/flux/flux-3
+  identity_note: FLUX 3 Image is Black Forest Labs' named FLUX 3 image-generation and editing model, available through
+    documented hosted interfaces. It is distinct from the separately published Image Klein Base and distilled models.

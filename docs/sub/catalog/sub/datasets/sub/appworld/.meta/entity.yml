@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/appworld
+  type: dataset
+  name: "AppWorld"
+  aliases:
+    - "Controllable AppWorld Agent Benchmark"
+  identity_note: >-
+    Controllable simulated world of interconnected apps and users for assessing interactive agents' API calls and code-based task completion.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/StonyBrookNLP/appworld
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/StonyBrookNLP/appworld/blob/42b5bcf3cd334fee33f0c37c02070a9f5807add5/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/StonyBrookNLP/appworld/blob/42b5bcf3cd334fee33f0c37c02070a9f5807add5/LICENSE
+      purposes: [research]
+      authority: official

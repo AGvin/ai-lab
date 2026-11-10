@@ -20,3 +20,12 @@
 - GitHub synchronization, Cloud state, external deployment, and MCP/API integrations remain distinct data/permission boundaries.
 - Official resource links match canonical entity metadata.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
+
+## Scoped original-source qualification — 2026-11-07
+
+- Lovable is a hosted full-stack AI web-app development platform operated through managed workspaces and projects. Official documentation distinguishes editable generated frontend/backend code from platform-managed databases, auth, integrations, hosting and workspace controls.
+- Current Git sync documentation supports GitHub, GitLab and Bitbucket. Exporting or two-way synchronizing the codebase does not automatically migrate managed cloud databases, deployed secrets or external service ownership; publishing and data access require separate review. Customer output/data rights remain governed by the applicable terms, not by the code export feature alone.
+- Verified first-party source 1: https://docs.lovable.dev/introduction/welcome
+- Verified first-party source 2: https://docs.lovable.dev/integrations/git-sync-overview
+- Verified first-party source 3: https://docs.lovable.dev/integrations/github
+- This is only scoped source/identity qualification. No account, application generation, Git sync, deployment, security/contract audit, whole-catalog clean pass or final-delivery gate has been independently verified.

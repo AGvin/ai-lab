@@ -1,0 +1,37 @@
+entity:
+  id: catalog/datasets/truthfulqa
+  type: dataset
+  name: TruthfulQA
+  aliases:
+    - "TruthfulQA: Measuring How Models Mimic Human Falsehoods"
+  identity_note: >-
+    Published research question-and-reference-answer dataset developed by Stephanie Lin,
+    Jacob Hilton and Owain Evans to test common human misconceptions. The revised
+    January 2025 binary multiple-choice protocol is a setting of the same source
+    dataset, not a second dataset or a corporate OpenAI product. Research affiliations
+    do not by themselves establish institutional ownership.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/sylinrl/TruthfulQA
+      purposes: [identification, research]
+      authority: official
+      note: "Original research-author repository containing questions, reference answers and evaluation code."
+    - type: repository
+      source:
+        url: https://github.com/sylinrl/TruthfulQA/blob/main/TruthfulQA.csv
+      purposes: [identification, research]
+      authority: official
+      note: "Mutable question/answer CSV; reproducible evaluations require an exact commit."
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2109.07958
+      purposes: [identification, research]
+      authority: upstream
+      note: "Original paper describing the historical 817-question, 38-category dataset."
+    - type: repository
+      source:
+        url: https://github.com/sylinrl/TruthfulQA/blob/main/LICENSE
+      purposes: [identification, research]
+      authority: official
+      note: "Actual Apache-2.0 original-repository LICENSE; not a complete third-party source-rights audit."

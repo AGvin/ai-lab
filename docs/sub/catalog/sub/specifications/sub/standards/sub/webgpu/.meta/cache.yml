@@ -1,0 +1,96 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:85f24b1f9bf629180268d05094f6d6398798bb11
+    parent:
+      entity.yml: gitblob:0cf80df310da6a10fb2bdc28c39cf869cdb4d5e4
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/specifications/standards/webgpu
+        name: WebGPU
+        aliases:
+        - WebGPU API
+        identity_note: GPU graphics and computation API from W3C GPU for the Web Working
+          Group. Latest published Candidate Recommendation Draft 15 September 2026;
+          separate ongoing Editor's Draft observed 30 October 2026. Neither is final
+          W3C Recommendation. Hardware, browser and driver support are independent.
+        references:
+        - type: specification
+          source:
+            url: https://www.w3.org/TR/2026/CRD-webgpu-20260915/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Published Candidate Recommendation Draft, 15 September 2026
+        - type: specification
+          source:
+            url: https://www.w3.org/TR/webgpu/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: W3C latest published version entry
+        - type: specification
+          source:
+            url: https://gpuweb.github.io/gpuweb/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Separate Editor's Draft, observed 30 October 2026
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

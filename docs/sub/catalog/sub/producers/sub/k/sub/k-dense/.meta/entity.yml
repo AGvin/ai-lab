@@ -1,0 +1,27 @@
+entity:
+  id: catalog/producers/k/k-dense
+  type: organization
+  name: K-Dense
+  identity_note: >-
+    K-Dense develops agentic research tools for complex science, engineering,
+    clinical and business workflows. Its first-party product family includes
+    hosted K-Dense Web, enterprise deployments, open-source K-Dense BYOK,
+    Claude Scientific Writer and Scientific Agent Skills. This canonical
+    producer identity does not make these separately operated products one
+    application or imply a common data-residency or software license.
+  references:
+    - type: official-site
+      source:
+        url: https://www.k-dense.ai/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.k-dense.ai/about
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.k-dense.ai/faq
+      purposes: [research]
+      authority: official

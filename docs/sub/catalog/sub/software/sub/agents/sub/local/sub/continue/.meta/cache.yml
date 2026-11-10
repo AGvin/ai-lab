@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7d0fa4cd031c211693166ab435517de1aa66e9f4
+      entity.yml: gitblob:40ff60cc6ccae7ba60b00476d599204c8aef070c
     parent:
       entity.yml: gitblob:0c958ac9b06255323dd6f40493fd9f05736b939d
   state:
@@ -45,6 +45,9 @@ cache:
         id: catalog/software/agents/local/continue
         type: software
         name: Continue
+        identity_note: The official Continue site reports acquisition by Cursor. Original
+          Continue Dev, Inc. producer provenance and the upstream read-only lifecycle
+          remain distinct from that acquisition notice.
         references:
         - type: official-site
           source:

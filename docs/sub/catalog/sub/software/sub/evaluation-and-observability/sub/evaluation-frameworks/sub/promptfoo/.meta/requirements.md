@@ -10,6 +10,9 @@
 - Keep provider coverage, assertion types, red-team plugins, standards mappings, and other mutable feature details source-backed when expanded.
 - Include current official Promptfoo documentation and repository references.
 
+- Explain that local execution can use external target/generation/grading providers and hosted flows that receive prompts, responses, or setup data.
+- Remote-generation controls do not disable telemetry, sharing, Cloud sync, or all hosted features. Link the official data-handling guidance and distinguish configuration flags from network isolation.
+
 ## Validation
 
 - The page presents Promptfoo as an evaluation/red-team framework rather than a model gateway or hosted-only security service.

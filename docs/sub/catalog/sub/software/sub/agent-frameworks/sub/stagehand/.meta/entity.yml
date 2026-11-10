@@ -1,0 +1,30 @@
+entity:
+  id: catalog/software/agent-frameworks/stagehand
+  type: software
+  name: Stagehand
+  aliases:
+    - "@browserbasehq/stagehand"
+  references:
+    - type: repository
+      source:
+        url: https://github.com/browserbase/stagehand
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.stagehand.dev/
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://www.browserbase.com/changelog/stagehand-4-3
+      purposes:
+        - research
+      authority: official
+      note: Original October 2026 Stagehand 4.3 release announcement.
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/browserbase-inc

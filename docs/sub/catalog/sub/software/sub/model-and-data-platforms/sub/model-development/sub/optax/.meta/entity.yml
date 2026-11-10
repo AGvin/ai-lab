@@ -1,0 +1,29 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-development/optax
+  type: software
+  name: Optax
+  references:
+    - type: documentation
+      source:
+        url: https://optax.readthedocs.io/en/latest/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/google-deepmind/optax
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://optax.readthedocs.io/en/latest/api/combining_optimizers.html
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/g/google-deepmind

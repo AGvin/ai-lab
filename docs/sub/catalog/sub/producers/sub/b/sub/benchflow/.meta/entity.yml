@@ -1,0 +1,45 @@
+entity:
+  id: catalog/producers/b/benchflow
+  type: organization
+  name: BenchFlow
+  aliases:
+    - BenchFlow project
+    - benchflow-ai
+  identity_note: >-
+    Original open-source benchmark publisher represented by the benchflow-ai
+    GitHub organization and benchflow Hugging Face distribution account.
+    Maintains the SkillsBench task dataset and the distinct BenchFlow agent
+    evaluation SDK/CLI. This profile does not assert an independently verified
+    incorporated company or beneficial ownership of every contributed task.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/benchflow-ai
+      purposes: [identification, research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/benchflow-ai/skillsbench
+      purposes: [identification, research]
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/benchflow
+      purposes: [identification, research]
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.skillsbench.ai/
+      purposes: [research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/benchflow-ai/benchflow
+      purposes: [research]
+      authority: official
+      note: Original independently cataloged BenchFlow evaluation software, distinct from SkillsBench task data.
+  relations:
+    - type: produces
+      target: catalog/datasets/skillsbench
+    - type: produces
+      target: catalog/software/evaluation-and-observability/evaluation-frameworks/benchflow

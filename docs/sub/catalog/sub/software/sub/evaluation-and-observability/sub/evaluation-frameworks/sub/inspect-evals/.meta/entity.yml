@@ -1,0 +1,54 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/inspect-evals
+  type: software
+  name: Inspect Evals
+  identity_note: >-
+    An independently packaged and installable collection of evaluation
+    implementations and a distributed evaluation register built on Inspect AI,
+    originating with the UK AI Security Institute in 2024 and now maintained
+    by Generality Labs. It is not the Inspect AI execution framework, a
+    separately hosted model service, or one canonical software identity per
+    included or registered benchmark.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/UKGovernmentBEIS/inspect_evals
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/UKGovernmentBEIS/inspect_evals/blob/7c31cf22830c4657a3894e095b452c7d50f6f3b8/README.md
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/UKGovernmentBEIS/inspect_evals/blob/7c31cf22830c4657a3894e095b452c7d50f6f3b8/pyproject.toml
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/UKGovernmentBEIS/inspect_evals/blob/7c31cf22830c4657a3894e095b452c7d50f6f3b8/EVAL_REGISTER.md
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/UKGovernmentBEIS/inspect_evals/blob/7c31cf22830c4657a3894e095b452c7d50f6f3b8/LICENSE
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/UKGovernmentBEIS/inspect_evals/blob/7c31cf22830c4657a3894e095b452c7d50f6f3b8/NOTICE
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/u/uk-ai-security-institute
+    - type: maintained-by
+      target: catalog/producers/g/generality-labs

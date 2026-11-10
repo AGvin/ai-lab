@@ -1,6 +1,6 @@
 # OMP (Oh My Pi)
 
-OMP, also known as **Oh My Pi**, is Can Bölük's open-source terminal-first coding agent derived from [Pi](../pi/). OMP keeps Pi's session-oriented extensibility while expanding it into a more batteries-included development harness with integrated repository editing, shell execution, language-server and debugger tooling, browser/research capabilities, persistent language execution, and delegated subagents.
+OMP, also known as **Oh My Pi**, is an open-source terminal-first coding agent originally created by Can Bölük, derived from [Pi](../pi/) and now developed by Stencil Labs, Inc. OMP keeps Pi's session-oriented extensibility while expanding it into a more batteries-included development harness with integrated repository editing, shell execution, language-server and debugger tooling, browser/research capabilities, persistent language execution, and delegated subagents.
 
 ## Integration and execution surface
 
@@ -11,7 +11,8 @@ That broad tool surface is not sandboxing. Treat shell/debugger/browser access, 
 ## Lineage
 
 - [Pi](../pi/) — upstream coding-agent harness from which OMP is derived.
-- [Can Bölük](../../../../../../../producers/sub/c/sub/can-boluk/) — producer and maintainer.
+- [Can Bölük](../../../../../../../producers/sub/c/sub/can-boluk/) — original creator.
+- [Stencil Labs, Inc.](../../../../../../../producers/sub/s/sub/stencil-labs/) — current developer and publisher.
 
 ## Official resources
 

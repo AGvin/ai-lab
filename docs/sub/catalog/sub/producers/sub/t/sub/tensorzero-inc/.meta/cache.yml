@@ -1,0 +1,99 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:49a3cd2b6a57c43b20aac2b177b50723d47ac6a6
+    parent:
+      entity.yml: gitblob:28ad9dbbd921bafdc12d024f89757651c4767ef8
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/t/tensorzero-inc
+        type: organization
+        name: TensorZero, Inc.
+        aliases:
+        - TensorZero
+        references:
+        - type: terms-of-service
+          source:
+            url: https://www.tensorzero.com/terms/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: First-party enterprise terms identify TensorZero, Inc.; the April
+            2, 2026 terms establish company identity, not a current support commitment.
+        - type: official-site
+          source:
+            url: https://www.tensorzero.com/
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: The official site states that the software remains on GitHub but is
+            no longer maintained, observed October 17, 2026.
+        - type: repository
+          source:
+            url: https://github.com/tensorzero/tensorzero
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: The first-party repository was archived when checked on October 17,
+            2026; this does not establish corporate dissolution.
+        relations:
+        - type: produces
+          target: catalog/software/gateways/model-gateways/tensorzero
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

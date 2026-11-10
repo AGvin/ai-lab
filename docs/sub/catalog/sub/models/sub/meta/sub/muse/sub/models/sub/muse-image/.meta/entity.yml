@@ -1,0 +1,15 @@
+entity:
+  id: catalog/models/meta/muse/models/muse-image
+  type: model
+  name: Muse Image
+  references:
+    - type: release-notes
+      source:
+        url: https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/meta/muse

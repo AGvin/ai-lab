@@ -1,0 +1,103 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:5b8f3284ddf637d66775c1f3086d0e818baaf332
+    parent:
+      entity.yml: gitblob:5f53e694ff348f17f3d7a5216081ba794623cb03
+      node.yml: gitblob:d7770e4978fbd8cdaf3d36668bf44404b028b8c3
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/agent-skills/collection
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/agent-skills/collection
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/agent-skills/collection
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/agent-skills/collections/trail-of-bits-skills
+        type: skill-collection
+        name: Trail of Bits Skills
+        identity_note: 'Trail of Bits'' first-party repository-backed collection and
+          Claude plugin marketplace for AI-assisted security analysis, testing, and
+          development, with installation guidance for Claude Code, Codex, and ChatGPT
+          workspace imports. The collection contains multiple bundled plugin/skill
+          directories and a marketplace manifest: those entries do not automatically
+          become separately accepted independent catalog identities or a multi-publisher
+          Agent Skills registry.'
+        references:
+        - type: repository
+          source:
+            url: https://github.com/trailofbits/skills
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/trailofbits/skills/blob/711af095215ad4ecde5b90cd1d0124b3f1c4ca9e/README.md
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/trailofbits/skills/blob/711af095215ad4ecde5b90cd1d0124b3f1c4ca9e/.claude-plugin/marketplace.json
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/trailofbits/skills/blob/711af095215ad4ecde5b90cd1d0124b3f1c4ca9e/LICENSE
+          purposes:
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/t/trail-of-bits
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

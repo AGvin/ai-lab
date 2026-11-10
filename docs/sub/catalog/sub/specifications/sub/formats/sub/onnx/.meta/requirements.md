@@ -17,3 +17,12 @@
 - The page does not become an ONNX Runtime compatibility guide or converter matrix.
 - Successful serialization or validation is not presented as proof of execution support or semantic equivalence for a target runtime.
 - ONNX serialization is not presented as changing or granting source-model licensing rights.
+
+## Scoped original-source qualification — 2026-11-07
+
+- ONNX is a versioned computation-graph/intermediate-representation standard. The official IR semantics specification and Protobuf schema jointly define normative behavior; a model's `ir_version`, imported operator sets and model-version metadata serve different versioning roles.
+- Operator-set compatibility depends on `(domain, version)` imports and operator semantics; external tensor data, types, functions and graph structure are additional serializable contracts. A structurally valid ONNX file does not guarantee supported operations, device acceleration, model equivalence, safe external-data paths, or successful inference by a particular runtime.
+- Verified primary source 1: https://onnx.ai/onnx/repo-docs/IR.html
+- Verified primary source 2: https://onnx.ai/onnx/repo-docs/Versioning.html
+- Verified primary source 3: https://github.com/onnx/onnx
+- Source/identity qualification only; no model checker, runtime/provider integration, external data validation, model licensing or independent performance/security test, whole-repository clean pass or final gate.

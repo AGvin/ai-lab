@@ -16,6 +16,13 @@ entity:
       purposes:
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/meta/llama/llama-4

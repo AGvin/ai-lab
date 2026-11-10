@@ -2,6 +2,15 @@ entity:
   id: catalog/producers/s/spring
   type: organization
   name: Spring
+  identity_note: >-
+    Spring is the project and ecosystem producer identity for Spring AI, published through
+    spring-projects. The official project page and repository describe a Spring application framework
+    connecting enterprise data and APIs with AI models; this catalog identity is not a claim that Spring
+    is a separately incorporated company. The Apache 2.0 framework, Spring Boot compatibility line and
+    commercial support offerings have different scopes. Model endpoints, vector stores and tool
+    integrations retain their own licenses, credentials and service terms. Select a supported framework
+    and Boot combination, then review application permissions and the information sent to each provider.
+    Ecosystem affiliation alone does not establish a new corporate ownership relation.
   references:
     - type: official-site
       source:
@@ -21,6 +30,13 @@ entity:
       source:
         url: https://github.com/spring-projects/spring-ai
       purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/spring-projects/spring-ai/blob/main/LICENSE.txt
+      purposes:
+        - identification
         - research
       authority: official
   relations:

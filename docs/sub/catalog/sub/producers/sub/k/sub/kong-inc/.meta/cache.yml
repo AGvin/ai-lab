@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:8583e9dbcd1d8e251dbb70174685e592380cdfcd
+      entity.yml: gitblob:03e1ffc0e6023a57876e559c389c953438cd2fe8
     parent:
       entity.yml: gitblob:2f1e0b49da4e74d5be798e28b5ef97ff4b499581
   state:
@@ -69,9 +69,19 @@ cache:
           purposes:
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://developer.konghq.com/ai-gateway/architecture/
+          purposes:
+          - research
+          authority: official
+          note: AI Gateway architecture separates the Konnect-managed control plane,
+            self-managed data plane, and upstream AI providers.
         relations:
         - type: produces
           target: catalog/software/gateways/api-management-gateways/kong-gateway
+        - type: produces
+          target: catalog/services/gateways/model-gateways/kong-ai-gateway
     aliases:
       effective:
         schema: default

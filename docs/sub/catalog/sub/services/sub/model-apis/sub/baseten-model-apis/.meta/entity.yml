@@ -1,0 +1,28 @@
+entity:
+  id: catalog/services/model-apis/baseten-model-apis
+  type: service
+  name: Baseten Model APIs
+  references:
+    - type: official-site
+      source:
+        url: https://www.baseten.co/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.baseten.co/inference/model-apis/overview
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: terms-of-service
+      source:
+        url: https://www.baseten.co/terms-and-conditions/
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/b/baseten-labs-inc

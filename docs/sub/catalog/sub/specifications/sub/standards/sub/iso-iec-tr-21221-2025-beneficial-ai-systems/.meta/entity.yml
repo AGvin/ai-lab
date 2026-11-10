@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-tr-21221-2025-beneficial-ai-systems
+  name: ISO/IEC TR 21221:2025 — Beneficial AI systems
+  aliases:
+    - ISO/IEC TR 21221:2025
+    - ISO 21221
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/86690.html
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record identifying Edition 1 as a published Technical Report in September 2025.

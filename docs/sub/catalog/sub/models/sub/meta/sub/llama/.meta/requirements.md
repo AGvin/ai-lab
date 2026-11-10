@@ -6,6 +6,8 @@
 - Represent Llama 4 as a model series because Meta explicitly presents multiple distinct Llama 4 models under that generation.
 - Keep license terms, downloadable artifacts, provider hosting, benchmark conclusions, and workload recommendations separate from durable family identity unless explicitly source-scoped.
 
+- Link the reviewed Llama 3.3 70B Instruct member and retain its exact generation-specific license and access boundary on the concrete profile.
+
 ## Validation
 
 - Llama 4 remains a series within Llama rather than a second top-level family.

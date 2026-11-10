@@ -7,6 +7,7 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Keep model facts, API offerings, runtime integrations, and deployment guidance in their corresponding owners.
 - Include the official site and official Hugging Face organization as research references.
+- Keep model-domain navigation aligned to the current canonical Black Forest Labs model subtree.
 
 ## Validation
 
@@ -15,3 +16,7 @@
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.
 - Model-domain navigation resolves to its canonical catalog node.
 - Official resource links match canonical entity metadata.
+
+## Learned prompt component
+
+- Preserve the explicit produces relation to the separately owned Prompt Upsampler; original BFL post-training attribution does not erase upstream Qwen model provenance or imply FLUX generator lineage.

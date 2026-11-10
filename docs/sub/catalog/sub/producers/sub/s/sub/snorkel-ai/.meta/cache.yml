@@ -1,0 +1,100 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d13ef3274bb7a75468fbe9ff077823256abeff09
+    parent:
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/s/snorkel-ai
+        type: organization
+        name: Snorkel AI
+        identity_note: Snorkel AI is the organization producing Snorkel Flow, its
+          platform for data-centric AI development. The current enterprise page identifies
+          the product and its integration with existing data, models and infrastructure;
+          those integrations remain separate from Snorkel’s producer identity. Snorkel
+          Flow is a commercial platform with deployment options that include customer
+          infrastructure and Snorkel-hosted service. Its Kubernetes-based deployment
+          and SDK do not imply that the full product shares the license of an open-source
+          Snorkel library. Confirm the contracted deployment, data access, labeling
+          workflows, model connections and support scope. Product version, security
+          configuration and data-processing terms determine the operational boundary.
+        references:
+        - type: official-site
+          source:
+            url: https://snorkel.ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.snorkel.ai/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://snorkel.ai/enterprise-ai/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produces
+          target: catalog/software/model-and-data-platforms/dataset-curation/snorkel-flow
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

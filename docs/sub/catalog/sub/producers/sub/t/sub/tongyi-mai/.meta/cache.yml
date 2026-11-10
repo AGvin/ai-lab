@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:37c98f73a4bf342daf0ad85224e2bcab7c6adebd
+      entity.yml: gitblob:f55224929411c28046d89efed927f0ed959823e8
     parent:
       entity.yml: gitblob:28ad9dbbd921bafdc12d024f89757651c4767ef8
   state:
@@ -58,6 +58,12 @@ cache:
             url: https://huggingface.co/Tongyi-MAI
           purposes:
           - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/Tongyi-MAI/Z-Image
+          purposes:
           - research
           authority: official
         relations:

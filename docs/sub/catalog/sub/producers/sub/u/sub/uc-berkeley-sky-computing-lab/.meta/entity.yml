@@ -2,6 +2,12 @@ entity:
   id: catalog/producers/u/uc-berkeley-sky-computing-lab
   type: organization
   name: UC Berkeley Sky Computing Lab
+  identity_note: >-
+    UC Berkeley Sky Computing Lab is the research lab where vLLM originated. Its project page records the
+    original research and contributors; later PyTorch Foundation hosting and the current community are separate
+    from that origin. The producer relation records provenance, without implying sole current maintenance or a
+    lab-operated inference service. Deployment, model and accelerator support, and workload-specific performance
+    belong to the vLLM software record.
   aliases:
     - Sky Computing Lab
   references:
@@ -19,6 +25,12 @@ entity:
         - research
       authority: official
       note: Current lab project page documents vLLM and its original contributors.
+    - type: documentation
+      source:
+        url: https://pytorch.org/projects/vllm/
+      purposes:
+        - research
+      authority: official
   relations:
     - type: produces
       target: catalog/software/inference-runtimes/inference-engines/vllm

@@ -1,0 +1,29 @@
+entity:
+  id: catalog/models/flower-labs/endeavor/models/endeavor-1-0
+  type: model
+  name: Endeavor 1.0
+  identity_note: >-
+    Endeavor 1.0 is Flower Labs' generalist model release for reasoning, coding assistance and
+    long-horizon agent work, described in the official documentation as a production-ready preview.
+    Production-ready refers to supported managed/private operation, while preview means limited
+    request-based access. No public open-weight checkpoint or complete public API contract is
+    listed; exact deployment interfaces, model identifiers, supported limits, artifacts and terms
+    require onboarding confirmation.
+  references:
+    - type: documentation
+      source:
+        url: https://flower.ai/docs/model/endeavor.html
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://flower.ai/models/endeavor
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/flower-labs/endeavor

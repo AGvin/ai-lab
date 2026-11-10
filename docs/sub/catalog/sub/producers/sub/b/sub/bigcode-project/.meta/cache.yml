@@ -1,0 +1,101 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:09544e2b130d272dc4f2167379d5ce8485c0a95b
+    parent:
+      entity.yml: gitblob:14d7c5336b98da3ce14bc46c931478ee37a1776d
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/producers/profile
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/producers/profile
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/producers/b/bigcode-project
+        type: organization
+        name: BigCode Project
+        identity_note: BigCode is an open scientific research collaboration for the
+          responsible development and governance of large language models for code.
+          It was announced in September 2022 and is jointly led by Hugging Face and
+          ServiceNow, with technical governance across community research working
+          groups. The producer node represents this project collaboration, not a newly
+          incorporated legal person or an exclusive owner of every contributed dataset,
+          source-code repository or trained model.
+        references:
+        - type: official-site
+          source:
+            url: https://www.bigcode-project.org/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.bigcode-project.org/docs/about/mission/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.bigcode-project.org/docs/about/organization/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.bigcode-project.org/docs/about/ip/
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/lingoly
+  type: dataset
+  name: "LINGOLY"
+  aliases:
+    - "LingOly"
+    - "Linguistics Olympiad Reasoning Benchmark"
+  identity_note: >-
+    Linguistic-reasoning puzzle benchmark derived from UK Linguistics Olympiad questions in low-resource and extinct languages, with question-data rights separate from evaluation code.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/am-bean/lingOly
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/am-bean/lingOly/blob/ba5cfb422c0cdf6cb25a0fcd04234b411060bf28/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/am-bean/lingOly/blob/ba5cfb422c0cdf6cb25a0fcd04234b411060bf28/LICENSE
+      purposes: [research]
+      authority: official

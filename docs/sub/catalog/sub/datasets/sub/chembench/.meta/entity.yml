@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/chembench
+  type: dataset
+  name: ChemBench
+  aliases:
+    - Chemistry Benchmark Suite
+    - ChemBench Evaluation Questions
+  identity_note: >-
+    Published chemistry-oriented benchmark family and associated data collections designed for evaluating language and multimodal models on chemical knowledge and reasoning. The installable ChemBench Python package is an evaluation implementation, distinct from the benchmark data, external model providers and results.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/lamalab-org/chembench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/lamalab-org/chembench/blob/45f8bad062fe552810c52be3a328d5da8597ed30/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/lamalab-org/chembench/blob/45f8bad062fe552810c52be3a328d5da8597ed30/LICENSE
+      purposes: [research]
+      authority: official

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/models/meta/muse/muse-wonder/models/muse-wonder
+  type: model
+  name: Muse Wonder
+  identity_note: >-
+    Muse Wonder is Meta's released concrete frontier model in the Muse Wonder series. At release Meta made it available through Meta Model API and Muse Code and positioned it for coding, long-running agents, and advanced computer use; those access surfaces and commercial terms remain freshness-sensitive.
+  references:
+    - type: article
+      source:
+        url: https://research.meta.ai/blog/muse-wonder
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://dev.meta.ai/models/muse-wonder
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/meta/muse/muse-wonder

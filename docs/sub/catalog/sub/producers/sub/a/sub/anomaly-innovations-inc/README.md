@@ -1,13 +1,15 @@
 # Anomaly Innovations, Inc.
 
-Anomaly Innovations, Inc. is the organization behind OpenCode and its first-party hosted service surfaces such as OpenCode Zen.
+Anomaly Innovations, Inc. is the organization named in OpenCode’s terms and the producer behind OpenCode.
 
-## Related catalog entity
+The company, the local OpenCode client, and hosted offerings such as OpenCode Zen have separate roles. External model providers retain their own provenance and service terms.
 
-- [OpenCode](../../../../../software/sub/agents/sub/local/sub/opencode/) — canonical Local Agent profile.
+## Relations
+
+- Produces: [OpenCode](../../../../../software/sub/agents/sub/local/sub/opencode/)
 
 ## Official resources
 
 - [OpenCode](https://opencode.ai/)
-- [OpenCode Terms of Service](https://opencode.ai/legal/terms-of-service)
+- [OpenCode terms](https://opencode.ai/legal/terms-of-service)
 - [OpenCode repository](https://github.com/anomalyco/opencode)

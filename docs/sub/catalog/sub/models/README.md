@@ -1,21 +1,49 @@
 # Models
 
-Canonical AI model documentation is split between factual reference and decision-oriented selection guidance.
+Canonical factual model documentation uses producer or publisher namespaces, then families and optional series, concrete trained models, versions and artifacts. The namespace is a navigation view; canonical producer organizations remain in the producer catalog. Checkpoint properties and licenses belong to their exact model owners.
 
-## Translations
+Task comparisons, recommendations and hardware-fit decisions are separate from intrinsic model facts. Hosted APIs, access tiers and runtimes have their own service or software owners. This catalog is materialized incrementally; a listed family does not establish complete portfolio coverage or independently reproduced performance.
 
-- English
-- [Українська](./l10n/uk_UA/)
+## Child pages
 
-## Choose a path
-
-- [`reference/`](./sub/reference/) — canonical model identity, family and series structure, concrete models, versions, artifacts, producers, relations, and source-backed technical facts.
-- [`selection/`](./sub/selection/) — task-oriented model comparison, shortlists, trade-offs, evaluation criteria, and model-team decisions.
-
-## Ownership boundary
-
-Reference pages answer what a model entity is and what authoritative sources establish about it. Selection pages answer whether an exact model, version, or artifact is a good fit for a particular task or operating constraint.
-
-Do not duplicate full model profiles inside selection guidance. Link to canonical reference entities and keep workload-specific conclusions, rankings, hardware-fit judgments, cost trade-offs, and routing decisions in the selection layer.
-
-The model catalog is materialized incrementally from reviewed content. A legacy page or folder name does not determine canonical entity type or destination; useful information is reclassified and source-verified before reuse.
+- [Ai2 Models](./sub/ai2/)
+- [ai21 labs](./sub/ai21-labs/)
+- [alibaba](./sub/alibaba/)
+- [amazon](./sub/amazon/)
+- [anthropic](./sub/anthropic/)
+- [baidu](./sub/baidu/)
+- [black forest labs](./sub/black-forest-labs/)
+- [ByteDance Seed Models](./sub/bytedance/)
+- [cloudflare](./sub/cloudflare/)
+- [cohere](./sub/cohere/)
+- [cohere labs](./sub/cohere-labs/)
+- [davidau](./sub/davidau/)
+- [deepseek](./sub/deepseek/)
+- [fal](./sub/fal/)
+- [Flower Labs Models](./sub/flower-labs/)
+- [google](./sub/google/)
+- [Hugging Face Models](./sub/hugging-face/)
+- [huihui ai](./sub/huihui-ai/)
+- [ibm](./sub/ibm/)
+- [ibm nasa](./sub/ibm-nasa/)
+- [institute of foundation models](./sub/institute-of-foundation-models/)
+- [lg ai research](./sub/lg-ai-research/)
+- [meta](./sub/meta/)
+- [microsoft](./sub/microsoft/)
+- [minimax](./sub/minimax/)
+- [mistral ai](./sub/mistral-ai/)
+- [moonshot ai](./sub/moonshot-ai/)
+- [naver cloud](./sub/naver-cloud/)
+- [nvidia](./sub/nvidia/)
+- [openai](./sub/openai/)
+- [perplexity ai](./sub/perplexity-ai/)
+- [sarvam ai](./sub/sarvam-ai/)
+- [skild ai](./sub/skild-ai/)
+- [technology innovation institute](./sub/technology-innovation-institute/)
+- [tencent](./sub/tencent/)
+- [tongyi mai](./sub/tongyi-mai/)
+- [typesafe ai](./sub/typesafe-ai/)
+- [xai](./sub/xai/)
+- [xiaomi mimo](./sub/xiaomi-mimo/)
+- [yandex](./sub/yandex/)
+- [z ai](./sub/z-ai/)

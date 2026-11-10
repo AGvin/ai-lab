@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:3d489dd69a609fcf282f983181dfdec8596e18b4
+      entity.yml: gitblob:8bb5cbe822e00e6d9ae7729cc69ff37a2f629826
     parent:
       entity.yml: gitblob:487620e3ae645833061dca6b70626f158a1c9fc1
   state:
@@ -60,6 +60,12 @@ cache:
             url: https://github.com/huggingface/trl
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/docs/trl/en/usage_stats
+          purposes:
           - research
           authority: official
         relations:

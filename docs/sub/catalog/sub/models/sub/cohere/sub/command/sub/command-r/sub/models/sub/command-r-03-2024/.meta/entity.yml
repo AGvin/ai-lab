@@ -1,0 +1,31 @@
+entity:
+  id: catalog/models/cohere/command/command-r/models/command-r-03-2024
+  type: model
+  name: Command R 03-2024
+  references:
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/v1/docs/models
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://huggingface.co/CohereLabs/c4ai-command-r-v01
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://docs.cohere.com/docs/deprecations
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/cohere/command/command-r
+  - type: produced-by
+    target: catalog/producers/c/cohere-labs

@@ -1,0 +1,21 @@
+entity:
+  id: catalog/software/model-and-data-platforms/model-development/unsloth
+  type: software
+  name: Unsloth
+  references:
+    - type: repository
+      source:
+        url: https://github.com/unslothai/unsloth
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://unsloth.ai/docs
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/u/unsloth-ai

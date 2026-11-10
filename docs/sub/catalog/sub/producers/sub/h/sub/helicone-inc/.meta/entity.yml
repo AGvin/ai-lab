@@ -1,0 +1,40 @@
+entity:
+  id: catalog/producers/h/helicone-inc
+  type: organization
+  name: Helicone, Inc.
+  aliases:
+    - Helicone
+  identity_note: "Helicone's March 3, 2026 announcement reported an acquisition by Mintlify. Its official site now states that Helicone is no longer part of Mintlify, with details forthcoming; the legal transaction structure and current ownership are not specified by that notice."
+  references:
+    - type: terms-of-service
+      source:
+        url: https://www.helicone.ai/terms
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: First-party terms identify Helicone, Inc. as the company behind Helicone.
+    - type: repository
+      source:
+        url: https://github.com/Helicone/helicone
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://www.helicone.ai/blog/joining-mintlify
+      purposes:
+        - research
+      authority: official
+      note: The March 3, 2026 announcement reports acquisition by Mintlify and continued services in maintenance mode; it does not establish a new direct software producer.
+    - type: other
+      source:
+        url: https://www.helicone.ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/gateways/model-gateways/helicone

@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/writingbench
+  type: dataset
+  name: "WritingBench"
+  aliases:
+    - "WritingBench Generative Writing Evaluation"
+  identity_note: >-
+    Generative writing benchmark with evaluation dimensions, writing requests and separate critic-model-assisted grading and public leaderboard; test prompts, judge models and writing-model weights have distinct provenance.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/X-PLUG/WritingBench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/X-PLUG/WritingBench/blob/ae2d5176449b7b769815482641d35926f26793eb/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/X-PLUG/WritingBench/blob/ae2d5176449b7b769815482641d35926f26793eb/LICENSE
+      purposes: [research]
+      authority: official

@@ -8,6 +8,10 @@
 - Include current official Continue site/repository references establishing provenance.
 - Keep mutable corporate and product-state details outside this concise producer page.
 
+- Preserve Continue Dev, Inc. as the original producer identity while noting the official announcement that Continue was acquired by Cursor.
+- Do not infer the acquisition's legal transaction structure, corporate ownership edges or assignment of all customer contracts from the short site notice.
+- Keep the upstream software's read-only and no-active-maintenance status distinct from acquisition and producer provenance.
+
 ## Validation
 
 - The page does not collapse Continue Dev, Inc., Continue software, and model providers into one entity.

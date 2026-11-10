@@ -6,6 +6,7 @@
 - Preserve its primary placement under `data-infrastructure/vector-search` rather than classifying it by deployment form or by the application frameworks that may use it.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Distinguish the self-managed Qdrant software from Qdrant Cloud and other externally operated service surfaces.
+- Explain that self-hosted Qdrant does not enable authentication or transport encryption by default; require deployment-specific authentication and TLS configuration before network exposure, and do not transfer Qdrant Cloud security defaults to self-managed deployments.
 - Keep mutable performance, scale, hosted-plan, and feature-limit claims source-backed when expanded.
 - Include current official Qdrant documentation and repository references.
 
@@ -13,6 +14,7 @@
 
 - The page describes Qdrant as vector-search infrastructure rather than an application framework or generic model/data platform.
 - Hosted service identity is not conflated with the canonical software profile.
+- The self-hosted authentication and transport-encryption defaults are explicit and linked to official security guidance.
 - Official resource links match canonical entity metadata.
 - The page contains no temporary-placeholder wording.
 - The `entity-relations` block matches the validated current-entity relation projection and every rendered destination resolves to a canonical node.

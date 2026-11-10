@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:7e68cd7ff2c2963814dbc159ee7fb29f64beca08
+      entity.yml: gitblob:50b26c1db75a898ea612b6dbca5e0729d3769589
     parent:
       entity.yml: gitblob:d76916cc6208401fd85eacd3a15da3a51743c755
       node.yml: gitblob:b4d8a94d1f3d632421987198bd81e4fe6e77d118
@@ -57,6 +57,24 @@ cache:
         - type: repository
           source:
             url: https://github.com/pydantic/pydantic-ai
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://pydantic.dev/docs/ai/project/version-policy/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://pydantic.dev/docs/ai/project/changelog/
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://pydantic.dev/docs/ai/capabilities/overview/
           purposes:
           - research
           authority: official

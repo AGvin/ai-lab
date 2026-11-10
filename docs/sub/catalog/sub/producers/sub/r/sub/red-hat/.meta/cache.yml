@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:43f978a0fa7cadb5704306359126dccd67d984a9
+      entity.yml: gitblob:3f44a368a593b97908eae62afd6560b6b2115198
     parent: {}
   state:
     node:
@@ -58,8 +58,9 @@ cache:
           purposes:
           - research
           authority: official
-          note: Current llm-d project README identifies Red Hat as one of the founding
-            organizations.
+          note: The project README credits Red Hat among multiple founding organizations
+            and identifies current CNCF Sandbox status; contribution does not imply
+            sole ownership.
         relations:
         - type: produces
           target: catalog/software/inference-runtimes/distributed-serving/llm-d

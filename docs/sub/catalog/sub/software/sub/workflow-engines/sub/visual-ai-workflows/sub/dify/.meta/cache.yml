@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:878fce20f10a039ff17811a026f650fade330b6b
+      entity.yml: gitblob:060f695179c338525e43558923eb0aa7d3f57ccd
     parent:
       entity.yml: gitblob:e875948a0a0ac5c0f5e7b8d02eb76165bfa9985a
   state:
@@ -80,6 +80,15 @@ cache:
           authority: official
           note: Current marketplace agreement describes Dify as the open-source platform
             managed by LangGenius, Inc.
+        - type: repository
+          source:
+            url: https://github.com/langgenius/dify/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+          note: The modified Apache 2.0 license requires authorization for multi-tenant
+            environments and preserves frontend logo/copyright restrictions, with
+            an exception when the frontend is not used.
         relations:
         - type: produced-by
           target: catalog/producers/l/langgenius-inc

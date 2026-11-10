@@ -1,0 +1,27 @@
+entity:
+  id: catalog/producers/u/unclecode
+  type: individual
+  name: Unclecode
+  aliases:
+    - UncleCode
+    - unclecode (GitHub handle)
+  identity_note: Original pseudonymous publisher/maintainer credited by the Crawl4AI v0.9.5 Python package; actual legal name, citizenship, corporate control and beneficial ownership are not verified.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/unclecode/crawl4ai
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/unclecode/crawl4ai/blob/v0.9.5/pyproject.toml
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: Original package lists Unclecode as author, without a legal-name or corporate-ownership assertion.
+  relations:
+    - type: produces
+      target: catalog/software/application-frameworks/data-and-retrieval/crawl4ai

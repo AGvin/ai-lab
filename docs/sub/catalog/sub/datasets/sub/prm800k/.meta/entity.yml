@@ -1,0 +1,52 @@
+entity:
+  id: catalog/datasets/prm800k
+  type: dataset
+  name: PRM800K
+  identity_note: >-
+    OpenAI's May 2023 published process-supervision corpus of human step-level
+    correctness feedback on model-generated mathematical solutions to original
+    MATH competition problems. Distinct from the 12,500-question MATH source,
+    the selected MATH-500 test subset, a trained process reward model or
+    evaluation software. The original code/data repository is archived.
+  references:
+    - type: article
+      source:
+        url: https://openai.com/index/improving-mathematical-reasoning-with-process-supervision/
+      purposes: [identification, research]
+      authority: official
+      note: "Original OpenAI May 31, 2023 publication and distinct process-supervision dataset release."
+    - type: repository
+      source:
+        url: https://github.com/openai/prm800k
+      purposes: [identification, research]
+      authority: official
+      note: "Original released source dataset, Git LFS data files and labeling instructions; repository archived in 2026."
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2305.20050
+      purposes: [identification, research]
+      authority: upstream
+      note: "Original Let's Verify Step by Step research paper and data collection methodology."
+    - type: repository
+      source:
+        url: https://github.com/openai/prm800k/tree/main/prm800k/data
+      purposes: [research]
+      authority: official
+      note: "Original phase1/phase2 train/test JSONL payloads tracked with Git LFS."
+    - type: repository
+      source:
+        url: https://github.com/openai/prm800k/blob/main/LICENSE
+      purposes: [research]
+      authority: official
+      note: "MIT repository software/documentation license; underlying third-party contest-question and item-level data rights not independently cleared."
+    - type: repository
+      source:
+        url: https://github.com/hendrycks/math
+      purposes: [research]
+      authority: upstream
+      note: "Original MATH contest-problem research source, not a duplicate PRM800K dataset."
+  relations:
+    - type: produced-by
+      target: catalog/producers/o/openai
+    - type: derived-from
+      target: catalog/datasets/math

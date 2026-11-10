@@ -1,0 +1,94 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:3659ec8d253636f6e831b977f655de3eba77078f
+    parent:
+      entity.yml: gitblob:f723d228c5732e67cf1fcd08d1b3d8cfe8ea0c9e
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/family
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/family
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/flower-labs/lizzy/lizzy-7b
+        type: model
+        name: Lizzy 7B
+        identity_note: Flower Labs' 7B-class decoder-only English assistant targets
+          British English and UK-oriented knowledge. The publisher declares Apache-2.0
+          for the base checkpoint and distinguishes original BF16 Safetensors from
+          GGUF quantizations. Its up-to-65,536-token context depends on runtime and
+          serving profile. BF16 and GGUF are artifacts of one trained model, not extra
+          accepted models. Special GGUF architecture support and a publisher-tested
+          fork do not establish general llama.cpp compatibility. Review and pin the
+          chosen runtime/artifact; verify facts and cultural assumptions and sandbox
+          any generated code. Ownership/control-chain review remains pending; no Russian-control
+          finding or adoption clearance.
+        references:
+        - type: documentation
+          source:
+            url: https://flower.ai/docs/model/lizzy-7b.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://flower.ai/docs/model/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/flower-labs/lizzy
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

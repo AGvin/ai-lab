@@ -1,12 +1,14 @@
 # Block
 
-Block is the organization that originally developed and open-sourced goose. Goose is now stewarded by the Agentic AI Foundation, so current stewardship is kept separate from Block's producer/origin role.
+Block is the organization that originally developed and open-sourced goose.
 
-## Related
+The historical producer relation is separate from the Agentic AI Foundation’s current project stewardship. Foundation membership, model-provider integrations, community contributions, and Block’s other products do not become goose ownership claims.
 
-- [goose](../../../../../software/sub/agents/sub/local/sub/goose/) — open-source agent originally developed by Block.
+## Relations
+
+- Produces: [goose](../../../../../software/sub/agents/sub/local/sub/goose/)
 
 ## Official resources
 
 - [Block](https://block.xyz/)
-- [Block Open Source](https://opensource.block.xyz/)
+- [Block open-source projects and goose donation](https://opensource.block.xyz/)

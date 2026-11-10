@@ -1,0 +1,36 @@
+entity:
+  id: catalog/producers/t/thu-keg
+  type: organization
+  name: THU-KEG
+  aliases:
+    - Knowledge Engineering Group (Tsinghua University)
+  identity_note: >-
+    The Tsinghua University Knowledge Engineering Group research publishing
+    identity that maintains the original AgentIF repository and dataset
+    distribution. This academic research group is not claimed to be an
+    independently incorporated company, the entire university, or the
+    distinct THUDM GitHub publishing account.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/THU-KEG
+      purposes: [identification, research]
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/THU-KEG
+      purposes: [identification, research]
+      authority: official
+    - type: official-site
+      source:
+        url: https://keg.cs.tsinghua.edu.cn/
+      purposes: [research]
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/THU-KEG/AgentIF
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/datasets/agentif

@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:53dc3ad4fba5d533170edc79e70e9f9654078b55
+      entity.yml: gitblob:aad11ef06318ac3862dc09347a9cf2d1816e7116
     parent:
       entity.yml: gitblob:77a5459d5d17a56fe8b2b19f0e1494e3562e0255
   state:
@@ -68,6 +68,12 @@ cache:
           authority: official
           note: Current upstream license identifies Open WebUI Inc. as copyright holder
             and Timothy Jaeryang Baek as creator.
+        - type: documentation
+          source:
+            url: https://docs.openwebui.com/license/
+          purposes:
+          - research
+          authority: official
         relations:
         - type: produced-by
           target: catalog/producers/t/timothy-jaeryang-baek

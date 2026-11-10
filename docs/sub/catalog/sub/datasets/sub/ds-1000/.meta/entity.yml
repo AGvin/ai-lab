@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/ds-1000
+  type: dataset
+  name: DS-1000
+  aliases:
+    - DS1000
+    - DS-1000 Data Science Code Generation
+  identity_note: >-
+    Natural-language data-science programming benchmark with executable reference tests and a simplified Hugging Face distribution. Dataset, testing harness, original problem sources and execution runtime are distinct.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/xlang-ai/DS-1000
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/xlang-ai/DS-1000/blob/b39aab71da6d23ef8d3cac59a7c5f834516ab334/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/xlang-ai/DS-1000/blob/b39aab71da6d23ef8d3cac59a7c5f834516ab334/LICENSE
+      purposes: [identification, research]
+      authority: official

@@ -1,0 +1,124 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:32346e7a36156667088c5e3ca856c687df33b519
+    parent:
+      entity.yml: gitblob:325f339b0ed314c890959f0a8674d6ae2afc6f59
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/datasets/drop
+        type: dataset
+        name: DROP
+        aliases:
+        - Discrete Reasoning Over the content of Paragraphs
+        identity_note: Original Ai2 DROP (Discrete Reasoning Over the content of Paragraphs)
+          passage-based reading-comprehension benchmark publicly released in 2019.
+          Ai2's original publisher website documents about 96,000 question-answer
+          pairs over 6,700 passages, with train, dev and hidden test partitions. The
+          final NAACL 2019 published paper abstract separately says 55,000 questions;
+          scope/revision must remain explicit. The original data page specifies CC
+          BY-SA 4.0, whereas the Ai2-managed AWS Open Data Registry summarizes the
+          license as CC BY. DROP is not the AllenNLP evaluator, NAQANet model, hosted
+          leaderboard, or another science QA dataset.
+        references:
+        - type: official-site
+          source:
+            url: https://allenai.org/open-data
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Current Ai2 official open-data catalog lists the released DROP identity
+            and the approximately 96k-question scope.
+        - type: repository
+          source:
+            url: https://github.com/allenai/allennlp-website/blob/master/drop.html
+          purposes:
+          - identification
+          - research
+          authority: official
+          note: Archived original first-party DROP dataset page; public splits, hidden
+            test, and explicit CC BY-SA 4.0 data license.
+        - type: paper
+          source:
+            url: https://aclanthology.org/N19-1246/
+          purposes:
+          - identification
+          - research
+          authority: upstream
+          note: Final NAACL 2019 original research paper; abstract states narrower
+            55k-question scope.
+        - type: registry
+          source:
+            url: https://registry.opendata.aws/allenai-drop/
+          purposes:
+          - research
+          authority: upstream
+          note: Ai2-managed public AWS registry says 96k over 6.7k paragraphs but
+            labels the license CC BY.
+        - type: documentation
+          source:
+            url: https://www.tensorflow.org/datasets/catalog/drop
+          purposes:
+          - research
+          authority: upstream
+          note: TensorFlow Datasets 2.0.0 reports 77,409 train and 9,536 dev examples,
+            not hidden test labels.
+        relations:
+        - type: produced-by
+          target: catalog/producers/a/ai2
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

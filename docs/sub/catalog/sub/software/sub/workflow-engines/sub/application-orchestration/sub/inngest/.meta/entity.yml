@@ -24,6 +24,27 @@ entity:
         - research
       authority: official
       note: First-party history documents the open-sourcing of Inngest's core platform components.
+    - type: repository
+      source:
+        url: https://github.com/inngest/inngest/blob/main/LICENSE.md
+      purposes:
+        - research
+      authority: official
+      note: The current license heading identifies SSPL 1.0 with an Apache future-license grant.
+    - type: article
+      source:
+        url: https://www.inngest.com/blog/inngest-1-0-announcing-self-hosting-support
+      purposes:
+        - research
+      authority: official
+      note: The first-party self-hosting announcement states that the server and CLI use SSPL with Apache 2.0 licensing after three years.
+    - type: other
+      source:
+        url: https://www.inngest.com/terms
+      purposes:
+        - research
+      authority: official
+      note: Current terms identify Inngest Inc. and the managed service boundary.
   relations:
     - type: produced-by
       target: catalog/producers/i/inngest-inc

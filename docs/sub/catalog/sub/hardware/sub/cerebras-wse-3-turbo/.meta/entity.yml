@@ -1,0 +1,30 @@
+entity:
+  id: catalog/hardware/cerebras-wse-3-turbo
+  type: hardware-product
+  name: Cerebras WSE-3 Turbo
+  identity_note: >-
+    Cerebras WSE-3 Turbo is a single wafer-scale AI processor, distinct from the CS-4 rack system composed of three such wafers. Manufacturer specifications state four trillion transistors, 900,000 AI cores, 44 GB on-wafer SRAM, 250 PFLOPS peak compute and 43.2 PB/s on-chip memory bandwidth per wafer. Do not assign rack aggregate numbers or vendor inference comparisons to one processor. Availability, integration, runtime and independently measured application performance remain unverified.
+  aliases:
+    - WSE-3T
+  references:
+    - type: documentation
+      source:
+        url: https://www.cerebras.ai/press-release/cerebras-unveils-cs-4-up-to-30-times-faster-than-gpu-based-solutions-3347356
+      purposes: [research]
+      authority: official
+    - type: official-site
+      source:
+        url: https://www.cerebras.ai/chip
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: release-notes
+      source:
+        url: https://www.cerebras.ai/press-release/cerebras-announces-third-generation-wafer-scale-engine
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/c/cerebras-systems-inc

@@ -16,6 +16,22 @@ entity:
       purposes:
         - research
       authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
+      purposes:
+        - identification
+        - research
+      authority: official
   relations:
     - type: member-of
       target: catalog/models/nvidia/nemotron/nemotron-3
+    - type: has-derivative
+      target: catalog/models/nvidia/nemotron/nemotron-3/models/nemotron-3-nano-omni
+  identity_note: >-
+    NVIDIA Nemotron 3 Nano is a post-trained hybrid Mamba-2/Transformer
+    sparse MoE language model publicly released on 2025-12-15, approximately
+    30B total and 3B active parameters with up to 1M-token model context.
+    NVIDIA Nemotron Open Model License. The pretrained Nano Base and
+    multimodal Nano Omni derivative are separate trained identities;
+    BF16/FP8 model formats do not create additional trained nodes.

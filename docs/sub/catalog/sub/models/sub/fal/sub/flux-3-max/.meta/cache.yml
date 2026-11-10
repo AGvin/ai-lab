@@ -1,0 +1,119 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:cdc70a44ef195942cedd05b323aab38e97787955
+      node.yml: gitblob:55e5d56d710b11b573d38aaf32158d8d184499fd
+    parent:
+      entity.yml: gitblob:42cf97aa2d13983fe5986836e8194af50283f4f9
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/model
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/model
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/fal/flux-3-max
+        name: FLUX 3 Max
+        type: model
+        identity_note: FLUX 3 Max is fal Research's separately post-trained video
+          model, developed in collaboration with Black Forest Labs from FLUX 3 Video.
+          fal hosts text-to-video, image-to-video and keyframes-to-video workflows
+          for the same model.
+        references:
+        - type: documentation
+          source:
+            url: https://fal.ai/blog/introducing-flux-3-max-by-fal
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://fal.ai/flux-3-max
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://fal.ai/models/blackforestlabs/flux-3-max/text-to-video
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://fal.ai/models/blackforestlabs/flux-3-max/image-to-video
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://fal.ai/models/blackforestlabs/flux-3-max/keyframes-to-video
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://fal.ai/legal/terms-of-service
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/f/features-and-labels-inc
+        - type: derived-from
+          target: catalog/models/black-forest-labs/flux/flux-3/models/flux-3-video
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

@@ -1,0 +1,27 @@
+entity:
+  id: catalog/services/infrastructure/amazon-sagemaker-ai
+  type: service
+  name: Amazon SageMaker AI
+  references:
+    - type: product-page
+      source:
+        url: https://aws.amazon.com/sagemaker/ai/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model-options.html
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/amazon-web-services

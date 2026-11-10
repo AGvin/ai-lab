@@ -1,0 +1,24 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/pyrit
+  type: software
+  name: PyRIT
+  aliases:
+    - Python Risk Identification Tool for generative AI
+  references:
+    - type: documentation
+      source:
+        url: https://microsoft.github.io/PyRIT/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/microsoft/PyRIT
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

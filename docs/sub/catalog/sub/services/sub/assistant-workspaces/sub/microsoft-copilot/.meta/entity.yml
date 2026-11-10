@@ -1,0 +1,40 @@
+entity:
+  id: catalog/services/assistant-workspaces/microsoft-copilot
+  type: service
+  name: Microsoft Copilot
+  identity_note: >-
+    Microsoft Copilot is Microsoft's hosted AI assistant/workspace application across web, desktop and
+    mobile. The app supports chat and content work, including file uploads, image/document creation and
+    delegated work such as Cowork where enabled. Voice, search, library and agent capabilities are parts
+    of the product experience rather than separate services merely because they have their own
+    navigation surface. The account determines the experience: personal Microsoft accounts and Microsoft
+    Entra work/school accounts have different entitlements, grounding, administrative controls and data
+    protection. Microsoft 365 integrations, Copilot Studio, Agent 365 and underlying models remain
+    separate identities. Consult the current account-specific documentation for plans, model choices,
+    data controls, retention/training, features and regional availability.
+  aliases:
+    - Copilot
+  references:
+    - type: documentation
+      source:
+        url: https://support.microsoft.com/en-us/microsoft-365-copilot/what-is-microsoft-copilot-app
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: product-page
+      source:
+        url: https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/get-copilot
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://support.microsoft.com/en-us/privacy/microsoft-copilot/overview
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

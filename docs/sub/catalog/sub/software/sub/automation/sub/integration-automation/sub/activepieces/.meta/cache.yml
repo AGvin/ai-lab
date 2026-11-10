@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:96c47b3a5ff23d4c833cd2d0f35c13747a88ccf3
+      entity.yml: gitblob:faf2f3070dd220ecdb43a78256df67a1b6cac287
     parent:
       entity.yml: gitblob:31eaa77777f1256976b38638c9fed747ad5b9bc0
   state:
@@ -64,6 +64,12 @@ cache:
             url: https://github.com/activepieces/activepieces
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.activepieces.com/docs/about/license
+          purposes:
           - research
           authority: official
         relations:

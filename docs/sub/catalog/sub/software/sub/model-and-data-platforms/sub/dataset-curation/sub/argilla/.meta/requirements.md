@@ -5,6 +5,7 @@
 - Identify Argilla as an open-source collaboration and data-curation platform for AI engineers and domain experts to collect, review, structure, and improve training/evaluation data using human and model feedback.
 - Preserve its primary placement under `model-and-data-platforms/dataset-curation`; datasets, records, questions, responses, suggestions, and feedback workflows form the core product boundary rather than a general-purpose experiment tracker.
 - Preserve self-hosted deployment and Hugging Face Spaces deployment as software operating options while keeping any separately operated services distinct.
+- Preserve Recognai, S.L.U. as the historical company producer of Rubrix/Argilla, supported by the October 2022 rename account and the legal notice last modified on October 11, 2022; that notice does not independently establish current corporate status.
 - Preserve Hugging Face's 2024 acquisition/ownership of Argilla without inferring current maintenance responsibility from ownership alone.
 - State the current upstream lifecycle accurately when discussed: the original authors have moved on, new feature development has stopped, and the mature codebase is limited to bug fixes/patches while seeking additional maintainers.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.

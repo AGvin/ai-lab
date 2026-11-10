@@ -1,0 +1,116 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:74ae3259c5d36c12e9fbd30bcde953c443fa4e08
+    parent:
+      entity.yml: gitblob:04b9537fa67c0f12038d17f276b34ccb7bb91871
+      node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/models/series
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/models/series
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/models/black-forest-labs/flux/flux-2
+        type: model-series
+        name: FLUX.2
+        references:
+        - type: documentation
+          source:
+            url: https://docs.bfl.ai/flux_2/flux2_overview
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: repository
+          source:
+            url: https://github.com/black-forest-labs/flux2
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/black-forest-labs/FLUX.2-small-decoder
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: member-of
+          target: catalog/models/black-forest-labs/flux
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-max
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-pro
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-flex
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-dev
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-2/flux-2-klein
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-2/models/flux-2-small-decoder
+        identity_note: FLUX.2 is a Black Forest Labs image-generation and image-editing
+          model series. It groups the named max, pro, flex and dev models and the
+          specialized Klein subseries without collapsing their distinct deployment
+          or licensing boundaries. Small Decoder is a separately learned VAE component,
+          not an additional image generator.
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

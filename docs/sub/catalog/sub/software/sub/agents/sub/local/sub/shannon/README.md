@@ -10,6 +10,8 @@ The recommended self-run workflow uses an ephemeral Docker worker and mounts the
 
 Shannon's open-source identity is distinct from the broader commercial Keygraph platform. Source-aware white-box testing is useful coverage, but it should not be treated as proof that an independent external-attacker or comprehensive AppSec assessment has been completed unless the required coverage is separately verified.
 
+Current Shannon releases run the open-source agent on the Pi harness, rather than the older Claude Agent SDK, without becoming a version or derivative identity of the Pi terminal CLI. Shannon can also run in operator-configured GitHub Actions or GitLab CI workflows and produce Markdown, PDF, structured JSON and SARIF reports. These are execution and reporting surfaces of the same self-hosted pentesting agent, not evidence of managed Keygraph cloud execution. Outputs still require human review, and CI scans must target expressly authorized, ideally disposable staging systems.
+
 ## Related
 
 - [Keygraph](../../../../../../../producers/sub/k/sub/keygraph/) — producer organization and operator of the separate commercial platform.
@@ -18,3 +20,5 @@ Shannon's open-source identity is distinct from the broader commercial Keygraph 
 
 - [Shannon repository](https://github.com/KeygraphHQ/shannon)
 - [Keygraph open source](https://keygraph.io/open-source)
+- [Shannon quick start and safeguards](https://keygraph.io/docs/tutorials/quick-start/)
+- [Shannon Pi-harness migration announcement](https://github.com/KeygraphHQ/shannon/discussions/405)

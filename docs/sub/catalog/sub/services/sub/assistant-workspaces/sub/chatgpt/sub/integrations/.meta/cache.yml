@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:248eb2b3b950b1d16b80d0a0b74b409370d935bf
+      entity.yml: gitblob:bc91fa5169b5b854d102edf2aced526970775d9e
       node.yml: gitblob:9a8688f2f267daccacc471878dd142c50ffbe010
     parent:
       entity.yml: gitblob:1f4d4a1bc53fe3dada2ae6f278b32974e3ce441c
@@ -44,6 +44,7 @@ cache:
       effective:
         schema: default
         id: catalog/services/assistant-workspaces/chatgpt/integrations
+        type: catalog-index
         name: ChatGPT Integrations
     aliases:
       effective:

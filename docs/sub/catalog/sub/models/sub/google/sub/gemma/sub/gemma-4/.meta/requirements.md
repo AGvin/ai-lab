@@ -17,7 +17,7 @@
 - Preserve architecture distinctions: dense E2B/E4B/31B, encoder-free 12B Unified, and MoE 26B A4B.
 - Preserve the semantic distinction between effective parameters and total parameters including embeddings for E2B/E4B.
 - Preserve the distinction between total and active parameters for MoE models.
-- Link the concrete-model index containing E2B Instruct and E4B Instruct.
+- Link the concrete-model index containing E2B Instruct, E4B Instruct, 12B Unified Instruct, 26B A4B Instruct, and 31B Instruct.
 - Note official QAT availability without duplicating full artifact inventories.
 - Include current official Gemma 4 model-card and overview references.
 
@@ -27,3 +27,17 @@
 - E2B/E4B effective counts are not treated as complete total-parameter identity.
 - MoE active parameters are not treated as total model size or memory requirement.
 - Concrete model and artifact details are not duplicated unnecessarily on the series page.
+
+## Verified identity and provenance
+
+Apache-2.0 open-weight Gemma series with E2B, E4B, 12B Unified, 26B A4B MoE, and 31B dense variants, published in pre-trained and instruction-tuned forms.
+
+## Source-scoped operating boundaries
+
+- E2B/E4B have 128K context; 12B/26B A4B/31B have 256K. Audio input belongs to E2B, E4B, and 12B; the 26B A4B and 31B variants do not support audio. All variants generate text. [Architecture and modality matrix](https://ai.google.dev/gemma/docs/core/model_card_4).
+- Use the Gemma 4 chat template and supported thinking controls. Tool-call generation does not authorize execution, and published safety evaluations do not replace application-specific filtering, privacy handling, or output validation. [Configuration and risk guidance](https://ai.google.dev/gemma/docs/core/model_card_4).
+
+## Source evidence
+
+- <https://ai.google.dev/gemma/docs/core/model_card_4>
+- <https://ai.google.dev/gemma/docs/core>

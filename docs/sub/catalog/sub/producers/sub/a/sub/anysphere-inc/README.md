@@ -1,12 +1,14 @@
 # Anysphere, Inc.
 
-Anysphere, Inc. is the organization behind Cursor.
+Anysphere, Inc. is the organization named in Cursor’s terms and the producer behind Cursor.
 
-## Related catalog entity
+The company remains distinct from the editor, hosted agent execution, extensions, and external model providers. Product plans and service rights belong to the relevant Cursor offering.
 
-- [Cursor](../../../../../software/sub/development-tools/sub/code-editors/sub/cursor/) — canonical AI code-editor profile.
+## Relations
+
+- Produces: [Cursor](../../../../../software/sub/development-tools/sub/code-editors/sub/cursor/)
 
 ## Official resources
 
 - [Cursor](https://cursor.com/)
-- [Terms of Service](https://cursor.com/terms-of-service)
+- [Cursor terms](https://cursor.com/terms-of-service)

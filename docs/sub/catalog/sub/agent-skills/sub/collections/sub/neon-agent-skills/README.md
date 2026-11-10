@@ -1,0 +1,75 @@
+# Neon Agent Skills
+
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Publisher attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../../../project/sub/policies/sub/russia-linked-ai/).
+
+## Updated upstream feature and access boundaries
+
+The same two-revision repository comparison found **25 changed files across 282 tracked files**: eight source skill files, eight identical plugin-distribution copies, and nine plugin/package manifests increasing the advertised version from **3.0.1 to 3.0.5**. No dependency lockfile entries changed other than the package version. This distinguishes the current source from the previously retained historical revision without automatically assuming full runtime compatibility.
+
+An [independent comparison of the current upstream skill tree](https://github.com/neondatabase/agent-skills/tree/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/skills) with the previously pinned source found **8 changed files in 5 of 7 skill directories**, despite an unchanged upstream README. Treat these source changes as version-specific; the original migration and Postgres diagnostics guidance above remains valid within its cited scope.
+
+- **AI Gateway credits:** the newer [AI Gateway skill](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/skills/neon-ai-gateway/SKILL.md) permits prepaid credits on all Neon plans, including Free. A Free account needs a payment card and purchased credits before models can serve requests. The `paid_plan_required` error name does not necessarily mean the subscription must be upgraded. Treat purchases and branch credentials as separately authorized operations.
+- **Functions secrets:** the [updated configuration](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/skills/neon-functions/SKILL.md) uses `{ value, required }` for secrets, with required/optional/default-branch behavior that depends on CLI and config package versions. Empty or omitted values can modify or remove a live secret. Review the exact target and deployed configuration; do not copy older `process.env.X!` recipes as universally current.
+- **Realtime authorization:** the [newer Realtime skill](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/skills/neon-realtime/SKILL.md) states that live subscriptions reject RLS-protected tables. **Do not switch off production RLS merely to enable subscriptions** without an approved alternative user-isolation design, such as server-authorized sealed queries, and explicit testing.
+- **Logs:** the [updated Loki reference](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/skills/neon/references/logs-loki.md) adds version-sensitive CLI/SDK methods and cautions that limited log query results may be incomplete. Access and retention of production telemetry require separate permission review.
+
+No billing action, user-key access, code installation or database execution was performed during this static source review. Full rights, all live service behavior, and repository-wide renderer/CI remain outside this bounded check.
+
+## Relations
+
+- Produced by: [Neon](../../../../../producers/sub/n/sub/neon/)
+
+## Collection purpose
+
+Neon Agent Skills is Neon's published collection of portable agent instructions, scripts, and supporting resources for Neon and Lakebase Postgres workflows. The upstream collection covers database use and branches, authentication, object storage, gateways, and related developer-agent work. [Upstream collection](https://github.com/neondatabase/agent-skills).
+
+## Organization and access
+
+The repository's `skills/` directories and their `SKILL.md` entry points hold the collection's skill content. The upstream README provides the current inventory and installation choices. Optional Agent Plugins v1 packaging and client-specific manifests for Claude, Cursor, Kimi, Pi, and other clients distribute or expose that same collection; they do not create separate skill-collection identities.
+
+The Neon MCP server is an integration that can accompany the skills. A separately linked Neon-for-agent-platforms repository contains companion material with its own distribution boundary; a link from this collection does not establish common ownership of every companion workflow.
+
+## Migration, connection and diagnostic safety
+
+The collection-owned [`neon-postgres` skill](https://github.com/neondatabase/agent-skills/blob/65ee2bf7427b358e6fe1989d214065692bd01205/skills/neon-postgres/SKILL.md) makes an operational distinction important for database work:
+
+- Use pooled Neon connections (a hostname containing `-pooler`) for ordinary application requests; use the **direct, non-pooled** connection for schema migrations, `pg_dump`/`pg_restore`, replication and operations requiring session state. Verify the intended project, branch and database, and do not replace the application's pooled connection string merely to run a migration.
+- Test schema migrations on a separate branch with appropriately handled production-like data before production deployment. Record rollback/recovery options, confirm the production target and obtain explicit authorization before irreversible schema or resource changes.
+- Prefer first-party read-only database diagnostics. An `unused-indexes` result is not permission to drop an index. `EXPLAIN ANALYZE` **executes the underlying SQL**, so avoid it for any mutating query without explicit approval. Compute restarts and scale-to-zero can reset statistics; use representative workloads before drawing conclusions.
+
+Skill installation does not provide authentication, backup guarantees or permission to provision, mutate or delete a database.
+
+## Runtime and permission boundaries
+
+Installing instructions does not authenticate a database session or grant authority to change data, provision infrastructure, deploy code, or use credentials. Actual operations depend on the agent client, configured tools, account permissions, and runtime behavior. Review the underlying service's data and access conditions for the chosen workflow.
+
+Skill names, client support, plugin declarations, Neon/Databricks product branding, and service features change. Follow the current upstream inventory and [Neon documentation](https://neon.com/docs/ai/agent-skills) for supported installation and usage; collection publication alone does not validate a specific client or deployment.
+
+## Source interpretation
+
+Neon's Apache-2.0 repository bundles instruction content and client integrations for Lakebase Postgres and backend workflows. Current guidance merges the former branching and egress skills into neon-postgres and links an independently maintained agent-platforms companion. Skills, MCP authentication and cloud resources remain distinct; verify the selected database and access scope.
+
+[Reviewed original README](https://github.com/neondatabase/agent-skills/blob/65ee2bf7427b358e6fe1989d214065692bd01205/README.md). Licensing is scoped to the inspected distribution; no skill or script was installed or executed. This is not a full collection freshness audit.
+
+## Official resources
+
+- [Agent Skills repository and current inventory](https://github.com/neondatabase/agent-skills)
+- [Neon Agent Skills documentation](https://neon.com/docs/ai/agent-skills)
+
+## Installation lifecycle and connected-service controls
+
+The [Neon Skills package](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/package.json) declares an npm **`prepare` script** that changes the local Git hooks path. Installing or building the repository may therefore change local development configuration; the publisher's [CI](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/.github/workflows/validate.yml) uses `npm ci --ignore-scripts`. The [plugin synchronizer](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/scripts/sync-plugin-skills.mjs) has a nonwriting `--check` mode, whereas its normal run removes and rebuilds vendored skill directories; the [docs synchronizer](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/scripts/sync-skill-docs.mjs) can regenerate reference files. Inspect the target workspace and approve changes before invoking any of these commands.
+
+Both [root MCP metadata](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/mcp.json) and the [Postgres plugin config](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/plugins/neon-postgres/mcp.json) refer to hosted `https://mcp.neon.tech/mcp`. This service is not a local-only component: authenticated MCP tools may query logs/database records or perform branch/resource changes based on the account and agent permissions. Installing instructions alone is not consent to connect an account or access project data.
+
+Before using the individual skill families, consider branch/migration data handling, AI Gateway paid credits, identity sessions and OAuth, public serverless endpoints and deployment secrets, Realtime bearer-token sealed queries, file upload/public-read storage and production telemetry. Root repository Apache-2.0 licensing does not necessarily cover outside cloud service terms, user content or every third-party package. Source and warnings were reviewed statically; no installation, remote session or user credential was exercised.
+
+
+## License and connected-service qualification
+
+The current [publisher source license](https://github.com/neondatabase/agent-skills/blob/2b0e2b6f56d2b41c5363049e30e6ab72aa260cce/LICENSE) is Apache-2.0. Its pinned package-lock has distinct development dependencies under MIT and Python-2.0, including the third-party npm **`skills-ref@0.1.5`**, which is **not the official Python reference CLI**. A license field is not proof of tarball integrity or safe execution.
+
+The included [Neon logomark and logo assets](https://neon.com/brand) remain subject to brand/trademark presentation rules separate from the source-code grant. The [Neon platform terms](https://neon.com/platform-terms), updated October 14, 2026, govern hosted APIs, billing and customer data separately. Do not infer credential access, hosted-service permissions, trademark endorsement or rights over confidential data from the Agent Skills repository's license.
+
+Full third-party package provenance, any intended asset reuse and effective hosted-service permissions remain **unverified**; this is documented research evidence, not independent selected-rights clearance, production approval or a completed Clean gate.
+

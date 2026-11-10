@@ -1,0 +1,65 @@
+entity:
+  id: catalog/models/cohere-labs/aya/aya-vision
+  type: model-series
+  name: Aya Vision
+  identity_note: >-
+    Aya Vision is the multilingual vision-language series released on 4 March 2025. Its represented
+    8B and 32B model identities accept text and images and produce text. The two sizes have
+    different language-model parents: Command R7B for Vision 8B and Aya Expanse 32B for Vision 32B.
+    Their model-specific lineage, processor behavior and current hosted status must remain distinct.
+  references:
+    - type: official-site
+      source:
+        url: https://cohere.com/research/aya
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: registry
+      source:
+        url: https://huggingface.co/collections/CohereLabs/cohere-labs-aya-vision
+      purposes:
+        - research
+      authority: official
+    - type: article
+      source:
+        url: https://cohere.com/blog/aya-vision
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/CohereLabs/aya-vision-8b
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/CohereLabs/aya-vision-32b
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/aya-vision
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/models
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.cohere.com/docs/deprecations
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://huggingface.co/docs/transformers/model_doc/aya_vision
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/cohere-labs/aya
+    - type: has-member
+      target: catalog/models/cohere-labs/aya/aya-vision/models/aya-vision-8b
+    - type: has-member
+      target: catalog/models/cohere-labs/aya/aya-vision/models/aya-vision-32b

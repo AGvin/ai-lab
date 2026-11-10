@@ -24,3 +24,11 @@
 - Format validity is not presented as proof that a particular model/runtime combination is supported or performs acceptably.
 - GGUF serialization is not presented as changing or granting the source model/artifact license.
 - The learning node owns how to choose/convert/validate formats; this specification node owns what GGUF formally is.
+
+## Scoped original-source qualification — 2026-11-07
+
+- GGUF is ggml-org's versioned binary format for GGML-backed inference model artifacts, succeeding GGML/GGMF/GGJT; it is not the same as a model license, guaranteed tokenizer compatibility or executable runtime support.
+- Its upstream specification covers a magic/header/version and counts, typed key-value metadata, tensor descriptors, alignment/padding and serialized tensor data. It describes memory-map-friendly and self-describing design goals; metadata extensions and runtime-specific quantization support evolve separately. Structural validity does not prove model provenance, safe use, optimized speed or semantic equivalence after conversion.
+- Verified primary source 1: https://github.com/ggml-org/ggml/blob/master/docs/gguf.md
+- Verified primary source 2: https://github.com/ggml-org/ggml
+- Existing model-file format identity/source only; no binary files parsed, runtimes run, converted weights verified, license/privacy/security audit, root-wide schema/cache/CI/render, clean pass or final gate.

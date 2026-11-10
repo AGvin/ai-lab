@@ -1,0 +1,30 @@
+entity:
+  id: catalog/models/cohere/rerank/models/rerank-multilingual-v2-0
+  type: model
+  name: Rerank Multilingual v2
+  identity_note: Historical multilingual text reranker. The original Cohere hosted API model rerank-multilingual-v2.0 shut down on 2025-04-30 and is not recommended for new integrations.
+  references:
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/deprecations
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/rerank
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://cohere.com/blog/rerank
+    purposes:
+    - identification
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/cohere/rerank

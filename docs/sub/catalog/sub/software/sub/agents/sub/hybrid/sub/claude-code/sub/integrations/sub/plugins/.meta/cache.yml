@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:94760afeca04ef151f3cbab64a06c311057b7269
+      entity.yml: gitblob:33d96761ab8e3141a56872fc22a57c024173d220
     parent:
       entity.yml: gitblob:eca4b1ce34ae3c8e37d9d20f55f25b72bc071b6f
       node.yml: gitblob:9a8688f2f267daccacc471878dd142c50ffbe010
@@ -55,6 +55,18 @@ cache:
         - type: documentation
           source:
             url: https://code.claude.com/docs/en/plugin-marketplaces
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://code.claude.com/docs/en/plugins-reference
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://code.claude.com/docs/en/discover-plugins
           purposes:
           - research
           authority: official

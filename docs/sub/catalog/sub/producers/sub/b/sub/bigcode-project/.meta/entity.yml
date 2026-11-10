@@ -1,0 +1,33 @@
+entity:
+  id: catalog/producers/b/bigcode-project
+  type: organization
+  name: BigCode Project
+  identity_note: >-
+    BigCode is an open scientific research collaboration for the responsible
+    development and governance of large language models for code. It was
+    announced in September 2022 and is jointly led by Hugging Face and
+    ServiceNow, with technical governance across community research
+    working groups. The producer node represents this project collaboration,
+    not a newly incorporated legal person or an exclusive owner of every
+    contributed dataset, source-code repository or trained model.
+  references:
+    - type: official-site
+      source:
+        url: https://www.bigcode-project.org/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.bigcode-project.org/docs/about/mission/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.bigcode-project.org/docs/about/organization/
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.bigcode-project.org/docs/about/ip/
+      purposes: [research]
+      authority: official

@@ -1,0 +1,37 @@
+entity:
+  id: catalog/models/bytedance/seedance/models/seedance-2-5
+  type: model
+  name: Seedance 2.5
+  identity_note: >-
+    ByteDance Seed's separately announced audiovisual video-generation model
+    launched 2026-07-31, extending single-pass video generation to up to
+    30 seconds with multi-round continuation, multi-modal references and
+    timestamp-controlled editing. Release and provider serving IDs are distinct:
+    BytePlus lists the Dreamina route dreamina-seedance-2-5-260628. Official
+    sources do not establish public model-weight download, exact training
+    architecture, guaranteed independent benchmark performance, universal
+    country availability or user-content redistribution rights.
+  references:
+    - type: article
+      source:
+        url: https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5
+      purposes: [identification, research]
+      authority: official
+    - type: product-page
+      source:
+        url: https://seed.bytedance.com/en/seedance2_5
+      purposes: [identification, research]
+      authority: official
+    - type: official-site
+      source:
+        url: https://seed.bytedance.com/en/models
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://docs.byteplus.com/en/docs/modelark/model-release-announcement
+      purposes: [research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/bytedance/seedance

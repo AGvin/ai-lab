@@ -1,0 +1,23 @@
+entity:
+  id: catalog/models/flower-labs/lizzy
+  type: model-family
+  name: Lizzy
+  identity_note: >-
+    Lizzy is a model family published by Flower Labs. Exact trained checkpoints, licenses, distributions and runtime limits have separate model owners.
+    Ownership/control-chain review remains pending; no Russian-control finding or adoption clearance.
+  references:
+    - type: documentation
+      source:
+        url: https://flower.ai/docs/model/lizzy-7b.html
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://flower.ai/docs/model/
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/f/flower-labs
+    - type: has-member
+      target: catalog/models/flower-labs/lizzy/lizzy-7b

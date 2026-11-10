@@ -1,5 +1,7 @@
 # Anthropic Skills
 
+**PROVENANCE/OWNERSHIP REVIEW PENDING.** Publisher attribution does not complete ownership/control-chain review or establish adoption clearance. See the [provenance policy](../../../../../../../project/sub/policies/sub/russia-linked-ai/).
+
 Anthropic Skills is Anthropic's public repository of skills for Claude. AI Lab currently focuses on the source-available document skills published there.
 
 ## Producer
@@ -34,6 +36,12 @@ The XLSX skill covers spreadsheet creation and editing, data handling, formattin
 ## Installation
 
 Anthropic's repository exposes the document skills through its `document-skills` plugin flow. Runtime dependencies still vary by skill and by operation, so installing the collection does not make every listed dependency mandatory for every task.
+
+## Source interpretation
+
+Anthropic's public collection includes illustrative examples and the selected DOCX, PDF, PPTX and XLSX document skills. At upstream revision 2c5958ecac7cee2b583967a2c4981d0f4a75c579, each selected skill's LICENSE.txt contains Apache-2.0 terms; an earlier reviewed revision carried Anthropic agreement restrictions. This is source- and revision-specific; bundled dependencies, assets and hosted Claude service terms may differ. No skill was installed or executed.
+
+[Reviewed original README](https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/README.md) and the corresponding [DOCX](https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/docx/LICENSE.txt), [PDF](https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pdf/LICENSE.txt), [PPTX](https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pptx/LICENSE.txt), and [XLSX](https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/xlsx/LICENSE.txt) license files. The earlier revision used different terms; license claims are revision-specific. This is not a full collection freshness, rights or runtime audit.
 
 ## Official resources
 

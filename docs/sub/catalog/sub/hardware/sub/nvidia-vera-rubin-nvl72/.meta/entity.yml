@@ -1,0 +1,23 @@
+entity:
+  id: catalog/hardware/nvidia-vera-rubin-nvl72
+  type: hardware-product
+  name: "NVIDIA Vera Rubin NVL72"
+  identity_note: >-
+    NVIDIA integrated rack-scale AI computing system, not a single Rubin GPU, Vera CPU or
+    standalone accelerator board.
+  references:
+    - type: product-page
+      source:
+        url: https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/
+      purposes: [identification, research]
+      authority: official
+      note: "Official manufacturer product page"
+    - type: product-page
+      source:
+        url: https://developer.nvidia.com/blog/nvidia-vera-rubin-pod-seven-chips-five-rack-scale-systems-one-ai-supercomputer
+      purposes: [identification, research]
+      authority: official
+      note: "NVIDIA architecture explanation"
+  relations:
+    - type: produced-by
+      target: catalog/producers/n/nvidia

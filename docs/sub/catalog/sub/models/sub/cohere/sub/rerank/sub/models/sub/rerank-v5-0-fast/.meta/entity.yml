@@ -1,0 +1,28 @@
+entity:
+  id: catalog/models/cohere/rerank/models/rerank-v5-0-fast
+  type: model
+  name: Rerank 5 Fast
+  references:
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/rerank
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: release-notes
+    source:
+      url: https://docs.cohere.com/v2/changelog
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://docs.cohere.com/docs/reranking-best-practices
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: member-of
+    target: catalog/models/cohere/rerank

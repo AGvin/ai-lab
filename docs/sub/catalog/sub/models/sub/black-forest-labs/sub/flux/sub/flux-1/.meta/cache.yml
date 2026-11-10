@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:28a2d9ccd0f4477ef0d2fe7c7445a1dc01fbbcfc
+      entity.yml: gitblob:d61f331925cf0e194ff717c463381156d0814bb6
     parent:
-      entity.yml: gitblob:94c847c7b87658ff6d7c2b2faff1ba0721f80c17
+      entity.yml: gitblob:04b9537fa67c0f12038d17f276b34ccb7bb91871
       node.yml: gitblob:17c3f7e7c8fbcb8b2cbc6a210e0fec6705f520e9
   state:
     node:
@@ -49,9 +49,22 @@ cache:
         references:
         - type: registry
           source:
+            url: https://huggingface.co/black-forest-labs
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
             url: https://huggingface.co/black-forest-labs/FLUX.1-schnell
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://huggingface.co/black-forest-labs/FLUX.1-dev
+          purposes:
           - research
           authority: official
         relations:
@@ -59,6 +72,32 @@ cache:
           target: catalog/models/black-forest-labs/flux
         - type: has-member
           target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-schnell
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-dev
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-krea-dev
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-kontext-dev
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-kontext-pro
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-kontext-max
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-fill-dev
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-redux-dev
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-fill-pro
+        - type: has-member
+          target: catalog/models/black-forest-labs/flux/flux-1/models/flux-1-1-pro
+        identity_note: FLUX.1 is Black Forest Labs' first FLUX image-series grouping,
+          including distinct schnell, dev, Krea, Kontext, Fill and Redux checkpoints
+          and hosted Kontext [pro]/[max] and Fill [pro] offerings. It also indexes
+          the separately introduced FLUX1.1 [pro] hosted text-to-image model; Ultra
+          and Raw are FLUX1.1 serving modes rather than independent learned checkpoints.
+          Redux is a dependent learned adapter, not a standalone base generator. Downloadable
+          dev weights, hosted proprietary models and their respective licensing/usage
+          rights are not interchangeable.
     aliases:
       effective:
         schema: default

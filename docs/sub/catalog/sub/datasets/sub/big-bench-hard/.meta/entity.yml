@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/big-bench-hard
+  type: dataset
+  name: BIG-Bench Hard (BBH)
+  aliases:
+    - BIG-Bench Hard
+    - BBH
+  identity_note: >-
+    Twenty-three difficult BIG-Bench tasks collected as a reasoning evaluation subset with few-shot chain-of-thought prompts. This release is distinct from the full BIG-Bench benchmark and research-model output artifacts.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/suzgunmirac/BIG-Bench-Hard
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/suzgunmirac/BIG-Bench-Hard/blob/9ee07bd481feebf959a6b59d61ea57bdcf30964d/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/suzgunmirac/BIG-Bench-Hard/blob/9ee07bd481feebf959a6b59d61ea57bdcf30964d/LICENSE
+      purposes: [identification, research]
+      authority: official

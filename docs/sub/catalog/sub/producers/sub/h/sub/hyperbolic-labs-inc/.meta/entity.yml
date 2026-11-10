@@ -1,0 +1,45 @@
+entity:
+  id: catalog/producers/h/hyperbolic-labs-inc
+  type: organization
+  name: Hyperbolic Labs, Inc.
+  aliases:
+    - Hyperbolic
+  identity_note: >-
+    Hyperbolic Labs, Inc. is identified as owner/operator of the Hyperbolic
+    platform in official Terms of Service dated March 24, 2025. The public
+    2026 company brand is Hyperbolic and announces its October 21 Flux hosted
+    inference release and October 27 Series A1 fundraising. Older legal terms
+    do not establish the exact currently applicable supplemental Flux
+    contract, jurisdiction of all infrastructure or beneficial ownership.
+    Hosted third-party models and external inference routes remain with their
+    original publishers and actual operators; company role is API platform
+    operation, not original model authorship. No complete ownership,
+    nationality/indirect control or sanctions certification has been done.
+  references:
+    - type: documentation
+      source:
+        url: https://www.hyperbolic.ai/terms
+      purposes: [identification, research]
+      authority: official
+      note: "March 24, 2025 first-party contract names Hyperbolic Labs, Inc. as platform owner/operator and allows supplemental service terms."
+    - type: official-site
+      source:
+        url: https://www.hyperbolic.ai/
+      purposes: [identification, research]
+      authority: official
+      note: "Current company brand and separately described GPU infrastructure and inference offering."
+    - type: article
+      source:
+        url: https://www.hyperbolic.ai/blog/flux-inference-api
+      purposes: [identification, research]
+      authority: official
+      note: "October 21, 2026 current Flux hosted model API launch; distinguishes provider-hosted and externally routed models."
+    - type: article
+      source:
+        url: https://www.hyperbolic.ai/blog/a1-funding
+      purposes: [research]
+      authority: official
+      note: "October 27, 2026 company funding and company/operator identity, not a complete cap table or ownership certification."
+  relations:
+    - type: produces
+      target: catalog/services/model-apis/hyperbolic-flux-inference

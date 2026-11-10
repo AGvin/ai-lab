@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/meta/muse/models/muse-spark-1-2
+  type: model
+  name: Muse Spark 1.2
+  identity_note: >-
+    Muse Spark 1.2 is Meta's released coding-focused Muse Spark update introduced with Muse Code. Meta describes it as a coding-focused update to Muse Spark 1.1 for code generation, debugging, codebase understanding, and end-to-end developer workflows. Muse Code and Meta Model API are access/product surfaces rather than separate trained-model identities.
+  references:
+    - type: article
+      source:
+        url: https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/meta/muse

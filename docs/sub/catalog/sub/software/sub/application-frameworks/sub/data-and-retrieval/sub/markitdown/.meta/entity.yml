@@ -1,0 +1,50 @@
+entity:
+  id: catalog/software/application-frameworks/data-and-retrieval/markitdown
+  type: software
+  name: MarkItDown
+  aliases:
+    - Microsoft MarkItDown
+    - markitdown
+  identity_note: >-
+    Independently distributed Microsoft-origin, MIT-licensed Python library
+    and command-line utility for converting selected document, web, archive
+    and media inputs to structural Markdown for language-model ingestion and
+    text analysis. It is preprocessing software, not a retrieval engine,
+    document-layout renderer, AI model or Microsoft-operated hosted service.
+    Format support, transcription, OCR and image description depend on
+    optional dependencies, plugins and sometimes third-party providers.
+    Converters run with the caller process's file and network privileges.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/microsoft/markitdown
+      purposes: [identification, research]
+      authority: official
+      note: Original publisher repository and security caveats.
+    - type: registry
+      source:
+        url: https://pypi.org/project/markitdown/
+      purposes: [identification, research]
+      authority: official
+      note: Original Python package distribution.
+    - type: release-notes
+      source:
+        url: https://github.com/microsoft/markitdown/releases/tag/v0.1.9
+      purposes: [identification, research]
+      authority: official
+      note: Verified non-prerelease release v0.1.9, published 2026-10-21.
+    - type: documentation
+      source:
+        url: https://github.com/microsoft/markitdown/blob/v0.1.9/packages/markitdown/pyproject.toml
+      purposes: [research]
+      authority: official
+      note: Tagged package requires Python >=3.10,<3.15 and declares MIT license.
+    - type: documentation
+      source:
+        url: https://github.com/microsoft/markitdown/blob/v0.1.9/README.md
+      purposes: [research]
+      authority: official
+      note: Tagged converter/CLI usage, format extras and local-file/network risks.
+  relations:
+    - type: produced-by
+      target: catalog/producers/m/microsoft

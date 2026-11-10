@@ -1,0 +1,56 @@
+entity:
+  id: catalog/software/data-infrastructure/memory-and-context/hindsight
+  type: software
+  name: Hindsight
+  identity_note: >-
+    Vectorize's MIT-licensed open-source/self-hosted long-term memory system
+    for AI agents, based on retain, recall and reflect operations and memory
+    banks. Distinct from the vendor-operated Hindsight Cloud and from
+    managed data-processing, LLM provider and benchmark services.
+    Releasing memory to future agent runs requires explicit privacy,
+    authorization, tenant isolation, retention, security and data-rights checks.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/vectorize-io/hindsight
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://hindsight.vectorize.io/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/vectorize-io/hindsight/releases/tag/v1.1.0
+      purposes:
+        - research
+      authority: official
+      note: Non-prerelease GitHub release published 2026-10-21, a point-in-time version.
+    - type: documentation
+      source:
+        url: https://hindsight.vectorize.io/developer/installation
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://hindsight.vectorize.io/developer/models
+      purposes:
+        - research
+      authority: official
+      note: Model provider/processing choices can transmit retained content outside the local host.
+    - type: repository
+      source:
+        url: https://github.com/vectorize-io/hindsight/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
+      note: MIT code license with copyright Vectorize AI, Inc.; other rights separate.
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/vectorize-ai-inc

@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Identify Can Bölük (`can1357`) as the individual producer/maintainer of OMP / Oh My Pi represented by the official GitHub profile and repository.
+- Identify Can Bölük (`can1357`) as OMP / Oh My Pi's original creator and individual producer, while the current project developer/publisher is Stencil Labs, Inc., according to the official GitHub profile and repository.
 - Keep the person identity distinct from the OMP software entity and from the upstream Pi project from which OMP is derived.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official GitHub profile and OMP repository references.

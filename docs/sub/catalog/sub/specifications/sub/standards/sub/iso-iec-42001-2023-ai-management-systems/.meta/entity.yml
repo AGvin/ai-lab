@@ -1,0 +1,15 @@
+entity:
+  id: catalog/specifications/standards/iso-iec-42001-2023-ai-management-systems
+  name: ISO/IEC 42001:2023 — Artificial intelligence management system
+  aliases:
+    - ISO/IEC 42001:2023
+    - ISO 42001
+  references:
+    - type: specification
+      source:
+        url: https://www.iso.org/standard/42001
+      purposes:
+        - identification
+        - research
+      authority: official
+      note: ISO record identifying Edition 1 as a published International Standard.

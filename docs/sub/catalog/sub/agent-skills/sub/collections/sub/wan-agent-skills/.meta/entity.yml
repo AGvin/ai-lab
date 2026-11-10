@@ -1,0 +1,29 @@
+entity:
+  id: catalog/agent-skills/collections/wan-agent-skills
+  type: skill-collection
+  name: Wan Agent Skills
+  aliases:
+    - Wan-skills
+  identity_note: >-
+    Wan Team publishes Apache-2.0 instruction and script packages for Model Studio image generation/editing and slide workflows. These use remote APIs and may upload local media through OSS helpers; install does not imply local-only processing. Model licenses, account eligibility, API billing and rights in input/output content are separate.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/Wan-Video/Wan-skills
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/Wan-Video/Wan-skills/blob/3e92371e23b8d43bae0316ae2c87e496675ceb9d/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/Wan-Video/Wan-skills/blob/3e92371e23b8d43bae0316ae2c87e496675ceb9d/LICENSE.txt
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/w/wan-team

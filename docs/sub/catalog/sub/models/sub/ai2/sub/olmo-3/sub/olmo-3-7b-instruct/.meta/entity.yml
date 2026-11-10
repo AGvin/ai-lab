@@ -1,0 +1,20 @@
+entity:
+  id: catalog/models/ai2/olmo-3/olmo-3-7b-instruct
+  type: model
+  name: Olmo 3 7B Instruct
+  identity_note: >-
+    Ai2 publishes Olmo 3 7B Instruct as the final English autoregressive instruction checkpoint, distinct from its base, SFT/DPO intermediates and Think siblings. The card declares Apache-2.0 and links separate responsible-use guidance; intended research/education use is publisher guidance, not a replacement license. It reports pretraining on Dolma 3 and post-training with Dolci. Publisher examples request Transformers 4.57.0 or newer. Card training-detail prose also names Think datasets inside the Instruct page; exact stage-level dataset lineage remains unresolved rather than silently corrected. Benchmark claims are not independently reproduced. Ultimate beneficial ownership or governance/control rights have not been fully verified. This is not a finding of Russian ownership or adoption clearance. Pin the exact checkpoint and supported runtime revision; review code before loading and validate the supplied chat template. Do not infer production-safe function execution from the template. Check output facts and sandbox any tool execution.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/allenai/Olmo-3-7B-Instruct
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://allenai.org/responsible-use
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/ai2/olmo-3

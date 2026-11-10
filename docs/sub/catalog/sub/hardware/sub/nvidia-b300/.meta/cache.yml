@@ -1,0 +1,98 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:115fab73648546c144b933d6568667a121b2e19a
+    parent:
+      entity.yml: gitblob:a52d0beb971b8deb65738cf9181ebe0ad98fb583
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/domain
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/domain
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/hardware/nvidia-b300
+        type: hardware-product
+        name: NVIDIA B300 Tensor Core GPU
+        aliases:
+        - B300
+        identity_note: NVIDIA's versioned CUTLASS 4.3.1 table identifies B300 with
+          compute capability 10.3 and a CUDA 13.0 minimum for that CUTLASS support
+          table. The current HGX page states B300 systems are shipping; HGX B300 is
+          an eight-GPU system, not this individual GPU identity. Preserve Blackwell
+          Ultra versus B200 and validate exact runtime builds instead of transferring
+          a family-wide compatibility claim.
+        references:
+        - type: documentation
+          source:
+            url: https://docs.nvidia.com/cutlass/4.3.1/overview.html
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.nvidia.com/nim/large-language-models/latest/reward-model.html
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://www.nvidia.com/en-us/data-center/hgx/
+          purposes:
+          - identification
+          - research
+          authority: official
+        relations:
+        - type: produced-by
+          target: catalog/producers/n/nvidia
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

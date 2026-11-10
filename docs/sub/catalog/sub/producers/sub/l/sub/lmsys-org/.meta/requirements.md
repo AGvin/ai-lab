@@ -3,7 +3,7 @@
 ## Requirements
 
 - Identify LMSYS Org / Large Model Systems (LMSYS Corp.) as the nonprofit research organization that incubates SGLang.
-- Keep organization identity distinct from the SGLang project team and from other LMSYS projects such as Arena, FastChat, and Vicuna.
+- Keep organization identity distinct from the SGLang project team and from other LMSYS projects such as FastChat and Vicuna and from the graduated Chatbot Arena project.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current LMSYS organization and projects references.
 

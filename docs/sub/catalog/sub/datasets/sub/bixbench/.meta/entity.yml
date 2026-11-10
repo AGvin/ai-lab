@@ -1,0 +1,24 @@
+entity:
+  id: catalog/datasets/bixbench
+  type: dataset
+  name: "BixBench"
+  aliases:
+    - "Computational Biology Agent Benchmark"
+  identity_note: >-
+    Computational biology benchmark derived from published research notebooks, with distinct hosted data capsules, benchmark scoring scripts, and external research source rights.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/Future-House/BixBench
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/Future-House/BixBench/blob/49311180bdacb324c596f2e07596c126f2004008/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/Future-House/BixBench/blob/49311180bdacb324c596f2e07596c126f2004008/LICENSE
+      purposes: [research]
+      authority: official

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e861a9cb4918ee45b4bc6a4f86a9ec713c7b05cf
+      entity.yml: gitblob:8bdedcaa07120ac557d6e61b27e8e4b5794a6914
     parent:
-      entity.yml: gitblob:248eb2b3b950b1d16b80d0a0b74b409370d935bf
+      entity.yml: gitblob:bc91fa5169b5b854d102edf2aced526970775d9e
       node.yml: gitblob:9a8688f2f267daccacc471878dd142c50ffbe010
   state:
     node:
@@ -48,7 +48,7 @@ cache:
         references:
         - type: documentation
           source:
-            url: https://help.openai.com/en/articles/20001069-skills-in-chatgpt
+            url: https://help.openai.com/en/articles/20001066-skills-in-chatgpt
           purposes:
           - research
           authority: official

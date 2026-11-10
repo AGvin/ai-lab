@@ -1,0 +1,17 @@
+entity:
+  id: catalog/models/ai2/olmo-3
+  type: model-family
+  name: Olmo 3
+  identity_note: >-
+    Ai2's Olmo 3 family includes distinct Instruct and Think checkpoints; this catalog materializes only the reviewed 7B Instruct member. Do not extend one checkpoint's architecture, training details or measured performance to all siblings. Governance/control review is pending, without a verified Russian-control finding.
+  references:
+    - type: documentation
+      source:
+        url: https://huggingface.co/allenai/Olmo-3-7B-Instruct
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/ai2
+    - type: has-member
+      target: catalog/models/ai2/olmo-3/olmo-3-7b-instruct

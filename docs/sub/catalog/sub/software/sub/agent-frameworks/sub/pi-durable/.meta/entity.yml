@@ -1,0 +1,31 @@
+entity:
+  id: catalog/software/agent-frameworks/pi-durable
+  type: software
+  name: Pi Durable
+  aliases:
+    - '@earendil-works/pi-durable'
+  references:
+    - type: article
+      source:
+        url: https://earendil.com/posts/pi-durable/
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/earendil-works/pi/tree/main/packages/durable
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/earendil-works/pi/blob/main/packages/durable/package.json
+      purposes:
+        - research
+      authority: official
+      note: First-party published package metadata identifies the Pi Durable library and Earendil Works author.
+  relations:
+    - type: produced-by
+      target: catalog/producers/e/earendil-inc

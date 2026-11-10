@@ -1,0 +1,33 @@
+# Documentation Requirements
+
+## Requirements
+
+- Identify Supabase Agent Skills as Supabase's official repository-backed collection of Agent Skills for Supabase development and PostgreSQL/Supabase operational guidance.
+- Preserve the collection boundary rather than creating one canonical catalog entity per repository skill unless a later intake explicitly establishes independently durable standalone skill identity and material value.
+- Keep the exact skill inventory, per-skill versions, installation commands, supported agents, release packaging, and repository structure freshness-sensitive.
+- Preserve the distinction between broadly reusable PostgreSQL guidance and Supabase-specific product guidance as expressed by the collection itself; do not reinterpret collection scope from skill names alone.
+- Treat the skills CLI and Claude Code plugin installation paths as distribution surfaces of this collection, not independent collection identities.
+- Preserve source licensing and first-party status without treating publication as a blanket quality, safety, or applicability endorsement.
+- Render producer relations from the validated current entity; keep individual repository skills within the collection rather than inventing canonical child navigation.
+
+- Render the identity, provenance and operational context recorded in canonical `entity.identity_note`; keep version-sensitive claims and official resources aligned with the cited first-party sources.
+
+- Render the standard `entity-relations` block from validated current-entity relations, ordered by explicit numeric order, target canonical name and target ID; resolve every visible target to its reader.
+
+## Specific external MCP and database-permission boundaries
+
+- The pinned [.mcp.json](https://github.com/supabase/agent-skills/blob/c9be0e931b7930f7d02126d04774d904c381e7d7/.mcp.json) advertises hosted `https://mcp.supabase.com/mcp?features=docs`; describe it as a network documentation endpoint, not as an installed database connection or inherent project-data permission.
+- From the original [Supabase skill](https://github.com/supabase/agent-skills/blob/c9be0e931b7930f7d02126d04774d904c381e7d7/skills/supabase/SKILL.md), keep Data API grants and RLS as separate controls, never expose `service_role` secrets in public clients, avoid user-editable `user_metadata` for authorization and use properly scoped access tokens.
+- Require explicit environment/role, SQL/migration review and data-preservation checks before schema, RLS or grant changes. A static source review is not a production RLS test, database authorization or independent MCP/privacy audit.
+
+## Validation
+
+- The collection is not conflated with the Supabase hosted platform, Supabase CLI, MCP server, or individual database/product components.
+- Producer provenance resolves to Supabase, Inc.
+- Individual skill directories are not automatically duplicated as standalone canonical entities.
+
+## Scoped source interpretation — 2026-11-05
+
+- Render the source-specific licensing, lifecycle, distribution and authorization boundaries from the current entity note.
+- Use the pinned original README and applicable license paths; this bounded source qualification does not establish all contained skills, dependency versions, ownership clearance or runtime safety.
+- Keep provenance/ownership review visibly pending. No blanket redistribution or execution permission follows from catalog inclusion.

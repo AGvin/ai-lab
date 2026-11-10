@@ -4,7 +4,20 @@ Hosted conversational-assistant and workspace products that combine chat with fi
 
 ## Child pages
 
-- [`chatgpt/`](./sub/chatgpt/)
-- [`claude/`](./sub/claude/)
-- [`gemini/`](./sub/gemini/)
-- [`grok/`](./sub/grok/)
+- [Amazon Quick](./sub/amazon-quick/)
+- [ChatGPT](./sub/chatgpt/)
+- [Claude](./sub/claude/)
+- [Cohere North](./sub/cohere-north/)
+- [DeepSeek](./sub/deepseek/)
+- [Gemini](./sub/gemini/)
+- [Grok](./sub/grok/)
+- [Grok Bot](./sub/grok-bot/)
+- [Kimi](./sub/kimi/)
+- [Kimi Claw](./sub/kimi-claw/)
+- [Meta AI](./sub/meta-ai/)
+- [Microsoft Copilot](./sub/microsoft-copilot/)
+- [Muse](./sub/muse/)
+- [Perplexity](./sub/perplexity/)
+- [Perplexity Computer](./sub/perplexity-computer/)
+- [Poe Assistant Platform](./sub/poe-assistant-platform/) — hosted multiprovider chat and bot-creator platform.
+- [Qwen Studio](./sub/qwen-studio/)

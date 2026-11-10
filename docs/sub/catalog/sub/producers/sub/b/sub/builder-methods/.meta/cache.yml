@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e254884063c96c81a896c821bafec77050b12f8f
+      entity.yml: gitblob:82615eab63724ae90438bd247d9d25eac376b819
     parent:
-      entity.yml: gitblob:2f014c200c2282ae14ccd5407a676e2770042b54
+      entity.yml: gitblob:14d7c5336b98da3ce14bc46c931478ee37a1776d
   state:
     node:
       effective:
@@ -57,6 +57,13 @@ cache:
         - type: repository
           source:
             url: https://github.com/buildermethods/agent-os
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: product-page
+          source:
+            url: https://buildermethods.com/agent-os
           purposes:
           - identification
           - research

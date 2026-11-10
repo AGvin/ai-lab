@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:6431be3d0a98287a17117c5e2ebddf21f92c3f98
+      entity.yml: gitblob:c61493b58694089c022bdb097cf6befb888b080c
     parent:
-      entity.yml: gitblob:d2832a7979fe4d097b9404cc46ffd2fcc3b3eba6
+      entity.yml: gitblob:ecf823f61466fecf8fb1cde17e3895f804771cfe
   state:
     node:
       effective:
@@ -45,6 +45,16 @@ cache:
         id: catalog/producers/s/stanford-nlp-group
         type: team
         name: Stanford NLP Group
+        identity_note: Stanford NLP Group is a research group at Stanford University
+          that explicitly lists DSPy among the software it develops. DSPy is published
+          through stanfordnlp and has a wider research-author and contributor history;
+          the research group, university and software project are distinct. DSPy’s
+          MIT source distribution and its optimization methods are separate from model
+          access, evaluation data and application deployment. Its license copyright
+          names Stanford Future Data Systems, which should be preserved alongside
+          the broader research provenance rather than treated as proof of exclusive
+          group authorship. Users choose model endpoints, metrics and data; review
+          those providers’ terms and the cost and privacy of optimization runs independently.
         references:
         - type: official-site
           source:
@@ -57,6 +67,13 @@ cache:
           source:
             url: https://github.com/stanfordnlp/dspy
           purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/stanfordnlp/dspy/blob/main/LICENSE
+          purposes:
+          - identification
           - research
           authority: official
         relations:

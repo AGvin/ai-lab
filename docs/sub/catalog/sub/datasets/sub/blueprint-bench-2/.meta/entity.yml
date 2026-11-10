@@ -1,0 +1,15 @@
+entity:
+  id: catalog/datasets/blueprint-bench-2
+  type: dataset
+  name: Blueprint-Bench 2
+  references:
+    - type: official-site
+      source:
+        url: https://andonlabs.com/evals/blueprint-bench-2
+      purposes:
+        - identification
+        - research
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/andon-labs

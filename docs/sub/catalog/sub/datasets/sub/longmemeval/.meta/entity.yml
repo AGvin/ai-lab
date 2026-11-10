@@ -1,0 +1,52 @@
+entity:
+  id: catalog/datasets/longmemeval
+  type: dataset
+  name: LongMemEval
+  identity_note: >-
+    The original independently released October 2024 long-term memory
+    benchmark for conversational assistants by Di Wu and collaborators,
+    later published at ICLR 2025. It evaluates 500 curated questions across
+    information extraction, multi-session reasoning, knowledge updates,
+    temporal reasoning and abstention. Original short/medium/oracle
+    variants are different history-context settings, not independent sets
+    of 500 newly authored questions each. The original official publisher
+    released a cleaned 2025 history revision that replaces noisy source
+    sessions, not a separately authored 2026 successor. Distinct from
+    LongMemEval-V2, which evaluates agent trajectories in customized web
+    and enterprise environments. Repository and publisher Hub metadata
+    declare MIT but third-party ShareGPT/UltraChat background content
+    requires separate rights review.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/xiaowu0162/LongMemEval
+      purposes: [identification, research]
+      authority: official
+    - type: official-site
+      source:
+        url: https://xiaowu0162.github.io/long-mem-eval/
+      purposes: [identification, research]
+      authority: official
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/2410.10813
+      purposes: [identification, research]
+      authority: upstream
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned
+      purposes: [identification, research]
+      authority: official
+      note: Official 2025 cleaned release replacement; publisher Hub card declares MIT.
+    - type: repository
+      source:
+        url: https://github.com/xiaowu0162/LongMemEval/blob/main/LICENSE
+      purposes: [research]
+      authority: official
+      note: Original MIT code license, not automatic third-party corpus rights.
+    - type: repository
+      source:
+        url: https://github.com/xiaowu0162/LongMemEval-V2
+      purposes: [research]
+      authority: official
+      note: Separately published 2026 agent trajectory benchmark.

@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/winogrande
+  type: dataset
+  name: WinoGrande
+  aliases:
+    - WinoGrande v1.1
+    - Winogrande Commonsense Reasoning
+  identity_note: >-
+    Original Winograd-schema-style commonsense challenge dataset with multiple training sizes, labeled validation and withheld leaderboard test labels. Models and evaluation scripts remain separate.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/allenai/winogrande
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/allenai/winogrande/blob/727e837f77521ef38bcc56df3b275c8da43f45af/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/allenai/winogrande/blob/727e837f77521ef38bcc56df3b275c8da43f45af/LICENSE
+      purposes: [identification, research]
+      authority: official

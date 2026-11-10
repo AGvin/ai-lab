@@ -12,6 +12,8 @@
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current official Continue documentation, repository, and Visual Studio Marketplace listing.
 
+- Note the official site announcement that Continue was acquired by Cursor while preserving the original producer relation and the existing read-only/no-active-maintenance lifecycle boundary; do not infer transaction structure or universal contract assignment from the notice.
+
 ## Validation
 
 - Continue is not classified as a VS Code-only extension.

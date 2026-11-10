@@ -7,6 +7,8 @@
 - Keep the company identity distinct from the archived Flowise software codebase, Flowise Cloud, and any community-maintained forks after upstream EOL.
 - Render the standard `entity-relations` block from the validated current-entity relation projection.
 - Include current first-party Flowise legal and sunset references.
+- Attribute Workday's August 2025 acquisition announcement precisely without inferring an additional company ownership edge.
+- Keep the published August 31, 2026 end-of-life schedule distinct from observed repository archival; do not phrase that past date as an upcoming event or assert completion of every scheduled action without evidence.
 
 ## Validation
 

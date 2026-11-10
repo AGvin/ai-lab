@@ -1,0 +1,19 @@
+entity:
+  id: catalog/datasets/threecb
+  type: dataset
+  name: "Catastrophic Cyber Capabilities Benchmark (3CB)"
+  aliases:
+    - "3CB"
+  identity_note: >-
+    Apart Research cybersecurity capability evaluation suite using task configuration TOML files, Docker-based sandboxes, agent protocols and measurement scaffolding; distinct from real-world exploitation testing.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/apartresearch/3cb
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/apartresearch/3cb/blob/d87effdeaceeac153517ede88a5b57b885c7f5cc/README.md
+      purposes: [research]
+      authority: official

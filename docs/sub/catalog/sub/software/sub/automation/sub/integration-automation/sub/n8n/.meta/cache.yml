@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:b82a53b0aebd65b154706a1f0388282d4764fd88
+      entity.yml: gitblob:6dfb850af43e35798e4ef971992d88227dcd49fa
     parent:
       entity.yml: gitblob:31eaa77777f1256976b38638c9fed747ad5b9bc0
   state:
@@ -63,6 +63,18 @@ cache:
             url: https://github.com/n8n-io/n8n
           purposes:
           - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.n8n.io/n8n-community-license
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolaiagent
+          purposes:
           - research
           authority: official
         relations:

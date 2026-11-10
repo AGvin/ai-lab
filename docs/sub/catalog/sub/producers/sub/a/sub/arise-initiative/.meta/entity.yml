@@ -1,0 +1,36 @@
+entity:
+  id: catalog/producers/a/arise-initiative
+  type: organization
+  name: ARISE Initiative
+  aliases:
+    - Advancing Robot Intelligence through Simulated Environments
+  references:
+    - type: official-site
+      source:
+        url: https://github.com/ARISE-Initiative
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: repository
+      source:
+        url: https://github.com/ARISE-Initiative/robosuite
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: official-site
+      source:
+        url: https://robosuite.ai/
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://robosuite.ai/docs/overview.html
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: produces
+      target: catalog/software/physical-ai-and-robotics/robosuite

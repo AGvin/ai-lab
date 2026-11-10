@@ -2,6 +2,8 @@ entity:
   id: catalog/agent-skills/collections/anthropic-skills
   type: skill-collection
   name: Anthropic Skills
+  identity_note: >-
+    Anthropic's public collection includes illustrative examples and the selected DOCX, PDF, PPTX and XLSX document skills. At upstream revision 2c5958ecac7cee2b583967a2c4981d0f4a75c579, each selected skill's LICENSE.txt contains Apache-2.0 terms; an earlier reviewed revision carried Anthropic agreement restrictions. This is source- and revision-specific; bundled dependencies, assets and hosted Claude service terms may differ. No skill was installed or executed.
   references:
     - type: repository
       source:
@@ -9,6 +11,31 @@ entity:
       purposes:
         - identification
         - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/README.md
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/docx/LICENSE.txt
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pdf/LICENSE.txt
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pptx/LICENSE.txt
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/xlsx/LICENSE.txt
+      purposes: [identification, research]
       authority: official
   relations:
     - type: produced-by

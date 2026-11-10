@@ -1,11 +1,9 @@
 # Spec-Driven Development
 
-> **Temporary catalog summary:** This overview is a placeholder for the RC structure and will be replaced by a reviewed category description.
-
-Tools whose primary role is creating, maintaining, and applying structured specifications that guide AI-assisted software implementation.
+Tools for establishing, maintaining and applying inspectable specifications and codebase standards during AI-assisted software development. They organize intended behavior and change artifacts around a chosen coding environment.
 
 ## Child pages
 
-- [`spec-kit/`](./sub/spec-kit/)
-- [`openspec/`](./sub/openspec/)
-- [`agent-os/`](./sub/agent-os/)
+- [Agent OS](./sub/agent-os/)
+- [OpenSpec](./sub/openspec/)
+- [GitHub Spec Kit](./sub/spec-kit/)

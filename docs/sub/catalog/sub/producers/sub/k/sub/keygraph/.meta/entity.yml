@@ -18,6 +18,13 @@ entity:
         - research
       authority: official
       note: Official Keygraph GitHub organization profile.
+    - type: documentation
+      source:
+        url: https://keygraph.io/docs/
+      purposes:
+        - research
+      authority: official
+      note: Official documentation distinguishes Shannon from commercial editions and states the active-testing authorization boundary.
   relations:
     - type: produces
       target: catalog/software/agents/local/shannon

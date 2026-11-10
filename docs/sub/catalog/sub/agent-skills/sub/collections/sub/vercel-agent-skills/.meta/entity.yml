@@ -1,0 +1,24 @@
+entity:
+  id: catalog/agent-skills/collections/vercel-agent-skills
+  type: skill-collection
+  name: Vercel Agent Skills
+  aliases:
+    - vercel-labs/agent-skills
+  identity_note: >-
+    Vercel's collection contains development, optimization and deployment instructions, distinct from skills.sh, its CLI and the hosting platform. The README declares MIT but no root LICENSE file was observed in the pinned tree; verify selected-path terms before redistribution. Deployment can create remote artifacts, including temporary claimable previews, and needs task-specific authorization.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/vercel-labs/agent-skills
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/README.md
+      purposes: [identification, research]
+      authority: official
+  relations:
+    - type: produced-by
+      target: catalog/producers/v/vercel-inc

@@ -1,0 +1,99 @@
+cache:
+  schema: default
+  fingerprints:
+    self:
+      entity.yml: gitblob:d1cb018873bd99bd65011d88954e5a12a5fbea46
+    parent:
+      entity.yml: gitblob:5dba29048fdaf9c45a85446dda84063e01b508a0
+  state:
+    node:
+      effective:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      outgoing:
+        schema: default
+        requirements:
+          path: requirements.md
+        localization:
+          schema: localized
+          default_locale: en_US
+          locales:
+          - uk_UA
+        template: catalog/category
+      children:
+        outgoing:
+          schema: default
+          requirements:
+            path: requirements.md
+          localization:
+            schema: localized
+            default_locale: en_US
+            locales:
+            - uk_UA
+          template: catalog/category
+        local: {}
+    entity:
+      effective:
+        schema: default
+        id: catalog/software/evaluation-and-observability/evaluation-frameworks/harvestbench-harvest-rush
+        type: software
+        name: HarvestBench / Harvest Rush
+        aliases:
+        - HarvestBench
+        - Harvest Rush
+        identity_note: Installable Inspect AI evaluation game measuring model decisions
+          about animal stakeholders, obstacles and resource constraints in a simulated
+          farm. The engine and task implementation are software, separate from hosted
+          leaderboard results, scientific paper, model routes and private run logs.
+        references:
+        - type: repository
+          source:
+            url: https://github.com/CompassionML/harvestbench
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/CompassionML/harvestbench/blob/62c4382579c1b44375610f900387da4a630d475c/README.md
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://github.com/CompassionML/harvestbench/blob/62c4382579c1b44375610f900387da4a630d475c/pyproject.toml
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/CompassionML/harvestbench/blob/62c4382579c1b44375610f900387da4a630d475c/LICENSE
+          purposes:
+          - research
+          authority: official
+    aliases:
+      effective:
+        schema: default
+        paths:
+          producers: /docs/sub/catalog/sub/producers/sub/
+          software: /docs/sub/catalog/sub/software/sub/
+          models: /docs/sub/catalog/sub/models/sub/
+          skills: /docs/sub/catalog/sub/agent-skills/sub/
+    schemas:
+      registry:
+        aliases:
+          default: docs/.meta/schemas/aliases/default.schema.json
+        cache:
+          default: docs/.meta/schemas/cache/default.schema.json
+        entity:
+          default: docs/.meta/schemas/entity/default.schema.json
+        node:
+          default: docs/.meta/schemas/node/default.schema.json
+          localized: docs/.meta/schemas/node/localized.schema.json

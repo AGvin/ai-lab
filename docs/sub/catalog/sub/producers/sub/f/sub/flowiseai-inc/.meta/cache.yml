@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:675d92dd8867401324376fefabbed1560cfb262b
+      entity.yml: gitblob:a3b7c1d2cb59479e2d25b8ce8c19cd548978dff3
     parent:
       entity.yml: gitblob:834a848416cc4cbecc3cf2bbd5450eb5dd567415
   state:
@@ -70,6 +70,13 @@ cache:
           authority: official
           note: First-party sunset notice records the 2026 code freeze, repository
             archival, and end-of-life schedule for Flowise.
+        - type: article
+          source:
+            url: https://investor.workday.com/news-and-events/press-releases/news-details/2025/Workday-Acquires-Flowise-Bringing-Powerful-AI-Agent-Builder-Capabilities-to-the-Workday-Platform-08-14-2025/default.aspx
+          purposes:
+          - research
+          authority: official
+          note: Workday announced its acquisition of Flowise in August 2025.
         relations:
         - type: produces
           target: catalog/software/workflow-engines/visual-ai-workflows/flowise

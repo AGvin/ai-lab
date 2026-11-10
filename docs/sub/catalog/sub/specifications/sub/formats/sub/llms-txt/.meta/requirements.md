@@ -25,3 +25,11 @@
 - `llms.txt` is not presented as access-control, crawler-policy, sitemap, retrieval, or protocol functionality.
 - The `produced-by` relation resolves to Jeremy Howard and is matched by the producer's inverse `produces` relation.
 - The `entity-relations` block matches the validated current-entity relation projection.
+
+## Scoped original-source qualification — 2026-11-07
+
+- `llms.txt` is Jeremy Howard's version-2 **proposal** for publishing a concise Markdown directory to LLM-friendly website content, not a ratified IETF/W3C standard or access-control policy. The official proposal was last modified 2026-08-10 at review.
+- The proposal specifies site-root or subpath coverage, nearest applicable path, an H1 name with optional summary/details and H2-separated Markdown resource links. An `## Optional` section denotes lower-priority context; proposed link relations identify alternate Markdown pages and their describing `llms.txt`. It does **not** define `llms-full.txt` as normative and does not bypass robots, authentication or copyright.
+- Verified primary source 1: https://llmstxt.org/
+- Verified primary source 2: https://github.com/AnswerDotAI/llms-txt
+- Existing proposal/producer reciprocal identity accepted for bounded original source only; no crawler parser/adoption audit, authenticated fetch, source-content redistribution right, full repository clean pass or final gate.

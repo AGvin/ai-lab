@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:e7567948c9848fb9fd2185a96e345f58f1ea20d6
+      entity.yml: gitblob:ef356544ea6bd8531b53bc92ebb9f163e6221248
     parent:
       entity.yml: gitblob:0b23cc989bb78d79c764921e1bf1f40f02eb31a7
   state:
@@ -60,6 +60,20 @@ cache:
           - identification
           - research
           authority: official
+        - type: documentation
+          source:
+            url: https://www.windmill.dev/platform/self-host
+          purposes:
+          - research
+          authority: official
+        - type: other
+          source:
+            url: https://github.com/windmill-labs/windmill/blob/main/LICENSE
+          purposes:
+          - research
+          authority: official
+          note: Official license distinguishes source components from prebuilt Community
+            Edition distribution terms.
         relations:
         - type: produced-by
           target: catalog/producers/w/windmill-labs-inc

@@ -1,0 +1,25 @@
+entity:
+  id: catalog/datasets/pubmedqa
+  type: dataset
+  name: PubMedQA
+  aliases:
+    - PubMed Question Answering
+    - PQA-L / PQA-U / PQA-A
+  identity_note: >-
+    2019 biomedical research question-answering dataset family built from PubMed abstracts and yes/no/maybe judgments; labeled, unlabeled and artificially generated subsets are configurations of the same PubMedQA release. The underlying research articles, dataset content and evaluation scripts have different rights boundaries.
+  references:
+    - type: repository
+      source:
+        url: https://github.com/pubmedqa/pubmedqa
+      purposes: [identification, research]
+      authority: official
+    - type: documentation
+      source:
+        url: https://github.com/pubmedqa/pubmedqa/blob/1cbae8e92f72f20c8d3747cbb3bf5bc53554d997/README.md
+      purposes: [research]
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/pubmedqa/pubmedqa/blob/1cbae8e92f72f20c8d3747cbb3bf5bc53554d997/LICENSE
+      purposes: [research]
+      authority: official

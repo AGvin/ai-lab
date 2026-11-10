@@ -2,7 +2,7 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:a2c4999700868d3f26adca30e85506cbb10aab0c
+      entity.yml: gitblob:2363bc04b41a4c420cc1f077fa5702815d995f26
     parent:
       entity.yml: gitblob:8fac2314e88755b43bc622e0d92b4c5ab01c3bf8
   state:
@@ -63,6 +63,18 @@ cache:
         - type: documentation
           source:
             url: https://help.openai.com/en/articles/11369540
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://help.openai.com/en/articles/20001545-using-codex-cloud
+          purposes:
+          - research
+          authority: official
+        - type: documentation
+          source:
+            url: https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt
           purposes:
           - research
           authority: official

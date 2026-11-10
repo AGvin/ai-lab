@@ -1,0 +1,28 @@
+entity:
+  id: catalog/software/evaluation-and-observability/evaluation-frameworks/pydantic-evals
+  type: software
+  name: Pydantic Evals
+  references:
+  - type: official-site
+    source:
+      url: https://pydantic.dev/docs/ai/evals/evals/
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: repository
+    source:
+      url: https://github.com/pydantic/pydantic-ai/tree/main/pydantic_evals
+    purposes:
+    - identification
+    - research
+    authority: official
+  - type: documentation
+    source:
+      url: https://pydantic.dev/docs/ai/evals/getting-started/core-concepts/
+    purposes:
+    - research
+    authority: official
+  relations:
+  - type: produced-by
+    target: catalog/producers/p/pydantic

@@ -2,9 +2,9 @@ cache:
   schema: default
   fingerprints:
     self:
-      entity.yml: gitblob:2f7e4508396fe68cbb549bd5cd85b99ed9777116
+      entity.yml: gitblob:aa0dfdc00746dedde25825ef71b930ef1a1593ce
     parent:
-      entity.yml: gitblob:2f014c200c2282ae14ccd5407a676e2770042b54
+      entity.yml: gitblob:14d7c5336b98da3ce14bc46c931478ee37a1776d
   state:
     node:
       effective:
@@ -70,6 +70,27 @@ cache:
           authority: official
           note: Official Envoy AI Gateway introduction documenting the joint Tetrate
             and Bloomberg project origin.
+        - type: privacy-policy
+          source:
+            url: https://bloomberg.com/privacy
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://theagentrouter.ai/blog/introducing-envoy-ai-gateway/
+          purposes:
+          - identification
+          - research
+          authority: official
+        - type: article
+          source:
+            url: https://theagentrouter.ai/blog/envoy-ai-gateway-is-now-agent-router/
+          purposes:
+          - identification
+          - research
+          authority: official
         relations:
         - type: produces
           target: catalog/software/gateways/api-management-gateways/envoy-ai-gateway

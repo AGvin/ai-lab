@@ -17,6 +17,19 @@ entity:
         - identification
         - research
       authority: official
+    - type: documentation
+      source:
+        url: https://www.windmill.dev/platform/self-host
+      purposes:
+        - research
+      authority: official
+    - type: other
+      source:
+        url: https://github.com/windmill-labs/windmill/blob/main/LICENSE
+      purposes:
+        - research
+      authority: official
+      note: Official license distinguishes source components from prebuilt Community Edition distribution terms.
   relations:
     - type: produced-by
       target: catalog/producers/w/windmill-labs-inc

@@ -1,0 +1,48 @@
+entity:
+  id: catalog/datasets/ai2-reasoning-challenge
+  type: dataset
+  name: Ai2 Reasoning Challenge (ARC)
+  aliases:
+    - AI2 ARC
+    - ARC-Challenge
+    - ARC-Easy
+  identity_note: >-
+    Original 2018 Ai2 Reasoning Challenge science multiple-choice question dataset with
+    7787 grade-school questions across Easy and Challenge partitions. Challenge questions
+    were filtered for failures by both a retrieval baseline and a word co-occurrence
+    baseline. ARC here is not ARC-AGI (Abstraction and Reasoning Corpus), the ARC Prize
+    competition, a grading harness or a collection of model leaderboard scores.
+  references:
+    - type: official-site
+      source:
+        url: https://allenai.org/open-data
+      purposes: [identification, research]
+      authority: official
+      note: "Ai2's first-party open-data catalog describes ARC, its 7787 questions and two splits."
+    - type: registry
+      source:
+        url: https://huggingface.co/datasets/allenai/ai2_arc
+      purposes: [identification, research]
+      authority: official
+      note: "Ai2-published Easy/Challenge release and split metadata; declares CC-BY-SA-4.0 in Hub metadata."
+    - type: paper
+      source:
+        url: https://arxiv.org/abs/1803.05457
+      purposes: [identification, research]
+      authority: upstream
+      note: "Original paper and scientific question-answering research provenance."
+    - type: repository
+      source:
+        url: https://github.com/allenai/aristo-leaderboard
+      purposes: [research]
+      authority: official
+      note: "Original Ai2 leaderboard/tool repository for ARC and other tasks; separate from dataset distribution."
+    - type: repository
+      source:
+        url: https://github.com/allenai/aristo-leaderboard/blob/master/LICENSE
+      purposes: [research]
+      authority: official
+      note: "Apache-2.0 leaderboard software license; not a substitute for Ai2 ARC dataset-card licensing."
+  relations:
+    - type: produced-by
+      target: catalog/producers/a/ai2

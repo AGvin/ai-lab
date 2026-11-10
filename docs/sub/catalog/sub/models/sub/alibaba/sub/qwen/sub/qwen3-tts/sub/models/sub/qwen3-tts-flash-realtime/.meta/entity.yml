@@ -1,0 +1,29 @@
+entity:
+  id: catalog/models/alibaba/qwen/qwen3-tts/models/qwen3-tts-flash-realtime
+  type: model
+  name: Qwen3-TTS-Flash-Realtime
+  aliases:
+    - qwen3-tts-flash-realtime
+  references:
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/realtime-tts-user-guide
+      purposes:
+        - identification
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/tts-model
+      purposes:
+        - research
+      authority: official
+    - type: documentation
+      source:
+        url: https://www.alibabacloud.com/help/en/model-studio/qwen3-tts-flash-realtime
+      purposes:
+        - research
+      authority: official
+  relations:
+    - type: member-of
+      target: catalog/models/alibaba/qwen/qwen3-tts
