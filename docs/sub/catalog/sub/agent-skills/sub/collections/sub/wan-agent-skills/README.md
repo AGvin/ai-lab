@@ -29,3 +29,13 @@ Wan Team publishes Apache-2.0 instruction and script packages for Model Studio i
 ## Official resources
 
 - [Wan Agent Skills source and remote API use](https://github.com/Wan-Video/Wan-skills)
+
+## Source parity and regional API limitations
+
+The pinned original [Wan Skills repository](https://github.com/Wan-Video/Wan-skills/tree/3e92371e23b8d43bae0316ae2c87e496675ceb9d) has **13 tracked files**, and its inspected upstream default HEAD matches that exact revision. It contains two `SKILL.md` entrypoints, five Python scripts and two image reference files; no pinned Python dependency manifest was found. The repository's Apache-2.0 source license does not guarantee cloud model/content/asset rights or runtime safety.
+
+**Broken presentation command:** the [Wan PPTX skill](https://github.com/Wan-Video/Wan-skills/blob/3e92371e23b8d43bae0316ae2c87e496675ceb9d/skills/wan-pptx-generator/SKILL.md) points to `scripts/pptx_generator.py`, but its [only script is `scripts/pptx-generator.py`](https://github.com/Wan-Video/Wan-skills/blob/3e92371e23b8d43bae0316ae2c87e496675ceb9d/skills/wan-pptx-generator/scripts/pptx-generator.py). The documented command is not runnable as-is. This is an upstream mismatch, not a locally tested fix.
+
+**Region/data-transfer warning:** although the [README](https://github.com/Wan-Video/Wan-skills/blob/3e92371e23b8d43bae0316ae2c87e496675ceb9d/README.md) lists `DASHSCOPE_BASE_URL` choices for Beijing and Singapore, the [PPT generator](https://github.com/Wan-Video/Wan-skills/blob/3e92371e23b8d43bae0316ae2c87e496675ceb9d/skills/wan-pptx-generator/scripts/pptx-generator.py) forces a Beijing SDK endpoint and obtains file upload policies there. The [image OSS uploader](https://github.com/Wan-Video/Wan-skills/blob/3e92371e23b8d43bae0316ae2c87e496675ceb9d/skills/wan2.7-image-skill/scripts/file_to_oss.py) likewise obtains upload credentials from a hardcoded Beijing URL. Setting the Singapore environment variable alone therefore **does not guarantee the upload/slide route uses Singapore**; do not transfer regulated/confidential media before checking the actual endpoint and retention policy.
+
+The OSS image helper and PPT script can send original media/documents to a remote service, and the slide script writes generated assets, logs and presentations locally. Python libraries and model APIs require separate current dependency, account billing, input/output rights and security review. No scripts were run, files uploaded or paid model calls made for this static source assessment; producer ownership/provenance remains pending.
